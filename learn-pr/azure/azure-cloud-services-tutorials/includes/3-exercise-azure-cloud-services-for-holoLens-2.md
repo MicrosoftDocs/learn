@@ -8,13 +8,13 @@ With each consecutive chapter, you will add new **Azure Cloud** services to expa
 
 In this first module, you'll be introduced to the goals of the series and each Azure Cloud service you'll be using, as well as setting up the initial Unity project.
 
-In the second module, [Integrating Azure Storage](mr-learning-azure-02.md), you'll start off by integrating Azure Storage as the persistence solution for the demo application. You'll also learn the differences between Blob Storage and Table Storage, prepare the needed project resources, setup the scene. Finally, you'll learn how to verify the read, update, and delete data operations.
+In the second module, Integrating Azure Storage, you'll start off by integrating Azure Storage as the persistence solution for the demo application. You'll also learn the differences between Blob Storage and Table Storage, prepare the needed project resources, setup the scene. Finally, you'll learn how to verify the read, update, and delete data operations.
 
-Continuing with the module, [Integrating Azure Custom Vision](mr-learning-azure-03.md), you will use Azure Custom Vision to train and detect images in the HoloLens 2 application. The chapter starts off with setting up your own Azure Custom Vision resource, preparing the scene components and getting into action by training and detecting your own images from inside the application.
+Continuing with the module, Integrating Azure Custom Vision, you will use Azure Custom Vision to train and detect images in the HoloLens 2 application. The chapter starts off with setting up your own Azure Custom Vision resource, preparing the scene components and getting into action by training and detecting your own images from inside the application.
 
-Next you advance in the fourth module, [Integrating Azure Spatial Anchors](mr-learning-azure-04.md), with exploring Azure Spatial Anchors service to save and find locations, learn the core concepts, prepare necessary resources, setup the scene and start using the new feature in the application.
+Next you advance in the fourth module, Integrating Azure Spatial Anchors, with exploring Azure Spatial Anchors service to save and find locations, learn the core concepts, prepare necessary resources, setup the scene and start using the new feature in the application.
 
-With the fifth module, [Integrating Azure Bot Service with LUIS](mr-learning-azure-05.md), you finalize by giving the application a new method of user interaction: natural language! This feature will be realized by using the Azure Bot Framework together with Language Understanding (LUIS). This final chapter teaches you the basics of Azure Bot Service and to speed up the process you will be using the Bot Framework Composer as a zero code solution. Once the bot is created, you will integrate it into the scene and give it a run with the final stage of the HoloLens 2 application.
+With the fifth module, Integrating Azure Bot Service with LUIS, you finalize by giving the application a new method of user interaction: natural language! This feature will be realized by using the Azure Bot Framework together with Language Understanding (LUIS). This final chapter teaches you the basics of Azure Bot Service and to speed up the process you will be using the Bot Framework Composer as a zero code solution. Once the bot is created, you will integrate it into the scene and give it a run with the final stage of the HoloLens 2 application.
 
 ## Application goals
 
@@ -52,22 +52,22 @@ The application is mainly driven by traditional UI, so you use the [Azure Bot Se
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
-First, follow the [Initializing your project and first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
+First, follow the Initializing your project and first application, excluding the Build your application to your device instructions, which includes the following steps:
 
-1. [Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *Azure Cloud Tutorials*
-2. [Switching the build platform](mr-learning-base-02.md#switching-the-build-platform)
-3. [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project)
-6. [Creating and configuring the scene](mr-learning-base-02.md#creating-and-configuring-the-scene) and give the scene a suitable name, for example, *AzureCloudServices*
+1. Creating the Unity project and give it a suitable name, for example, *Azure Cloud Tutorials*
+2. Switching the build platform
+3. Importing the TextMeshPro Essential Resources
+4. Importing the Mixed Reality Toolkit
+5. Configuring the Unity project
+6. Creating and configuring the scene and give the scene a suitable name, for example, *AzureCloudServices*
 
-Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to ensure the MRTK configuration profile for your scene is **DefaultXRSDKConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
+Then follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is **DefaultXRSDKConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
 ## Installing inbuilt Unity packages
 
 1. In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** and click the **Install** button to install the package:
 
-:::image type="content" source="../media/asa-02-section2-step1-1.png" alt-text="Unity Package Manager window with AR Foundation selected." lightbox="asa-02-section2-step1-1.png":::
+![Unity Package Manager window with AR Foundation selected](../media/asa-02-section2-step1-1.png)
 
 
 > [!NOTE]
@@ -83,11 +83,11 @@ Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base
 * [MRTK.Tutorials.AzureCloudServices.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.unitypackage)
 
 > [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](mr-learning-base-02.md#importing-the-tutorial-assets) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the Importing the tutorial assets instructions.
 
 3. After you have imported the tutorial assets your Project window should look similar to this:
 
-:::image type="content" source="../media/tutorial1-section4-step1-1.png" alt-text="Unity Hierarchy, Scene, and Project windows after importing the tutorial assets." lightbox="tutorial1-section4-step1-1.png":::
+![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](../media/tutorial1-section4-step1-1.png)
 
 > [!NOTE]
 > If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' and 'WorldAnchor.GetNativeSpatialAnchorPtr()' being obsolete, you can ignore these warnings.
@@ -99,7 +99,7 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
 
 1. In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder. While holding down the CTRL button, click on **SceneController**, **RootMenu** and **DataManager** to select the three prefabs:
 
-:::image type="content" source="../media/tutorial1-section5-step1-1.png" alt-text="Unity with SceneController, RootMenu and DataManager prefabs selected." lightbox="tutorial1-section5-step1-1.png":::
+![Unity with SceneController, RootMenu and DataManager prefabs selected](../media/tutorial1-section5-step1-1.png)
 
 
 2. The **SceneController (prefab)** contains two scripts, **SceneController (script)** and **UnityDispatcher (script)**. The **SceneController** script component contains several UX functions and facilitates the photo capture functionality while **UnityDispatcher** is a helper class to allow execute actions on the Unity main thread.
@@ -110,40 +110,40 @@ The **DataManager (prefab)** is responsible for talking to Azure storage and wil
 
 3. Now with the three prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
-:::image type="content" source="../media/tutorial1-section5-step1-2.png" alt-text="Unity with newly added SceneController, RootMenu and DataManager prefabs still selected" lightbox="tutorial1-section5-step1-2.png":::
+![Unity with newly added SceneController, RootMenu and DataManager prefabs still selected](../media/tutorial1-section5-step1-2.png)
 
 4. To focus in on the objects in the scene, you can double-click on the **RootMenu** object, and then zoom slightly out again:
 
-:::image type="content" source="../media/tutorial1-section5-step1-3.png" alt-text="Unity with RootMenu object selected" lightbox="tutorial1-section5-step1-3.png":::
+![Unity with RootMenu object selected](../media/tutorial1-section5-step1-3.png)
 
 > [!TIP]
 > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position.
 
 ## Configuring the scene
 
-In this section, you will connect *SceneManager*, *DataManager* and *RootMenu* together to have a working scene to be ready for the following [Integrating Azure storage](mr-learning-azure-01.md) tutorial.
+In this section, you will connect *SceneManager*, *DataManager* and *RootMenu* together to have a working scene to be ready for the following Integrating Azure storage tutorial.
 
 ### Connect the objects
 
 1. In the Hierarchy window, select the **DataManager** object:
 
-:::image type="content" source="../media/tutorial1-section6-step1-1.png" alt-text="Unity with DataManager object selected" lightbox="tutorial1-section6-step1-1.png":::
+![Unity with DataManager object selected](../media/tutorial1-section6-step1-1.png)
 
 2. In the Inspector window, locate the **DataManager (Script)** component and you will see an empty slot on the **On Data Manager Ready ()** event. Now from the Hierarchy window drag the **SceneController** object into the **On Data Manager Ready ()** event.
 
-:::image type="content" source="../media/tutorial1-section6-step1-2.png" alt-text="Unity with DataManager event listener added" lightbox="tutorial1-section6-step1-2.png":::
+![Unity with DataManager event listener added](../media/tutorial1-section6-step1-2.png)
 
 3. You will notice that the dropdown menu of the event became active, click on the dropdown menu and navigate to **SceneController** and in the sub menu select the **Init ()** option:
 
-:::image type="content" source="../media/tutorial1-section6-step1-3.png" alt-text="Unity with DataManager event action added" lightbox="tutorial1-section6-step1-3.png":::
+![Unity with DataManager event action added](../media/tutorial1-section6-step1-3.png)
 
 4. From the Hierarchy window, select the **SceneController** object, there in the Inspector you will find the **SceneController** (script) component.
 
-:::image type="content" source="../media/tutorial1-section6-step1-4.png" alt-text="Unity with SceneController selected" lightbox="tutorial1-section6-step1-4.png":::
+![Unity with SceneController selected](../media/tutorial1-section6-step1-4.png)
 
 5. You will see that there are several unpopulated fields, let's change that. Move the **DataManager** object from the Hierarchy into the *Data Manager* field and move the **RootMenu** GameObject from the Hierarchy into the *Main Menu* field.
 
-:::image type="content" source="../media/tutorial1-section6-step1-5.png" alt-text="Unity with SceneController configured" lightbox="tutorial1-section6-step1-5.png":::
+![Unity with SceneController configured](../media/tutorial1-section6-step1-5.png)
 
 6. Now your scene is ready for the upcoming tutorials. Don't forget to save it into your project.
 
@@ -155,23 +155,23 @@ While the project yet has to be filled with content, you have to perform some pr
 
 1. In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
 
-:::image type="content" source="../media/tutorial1-section7-step1-1.png" alt-text="Unity open Project Settings" lightbox="tutorial1-section7-step1-1.png":::
+![Unity open Project Settings](../media/tutorial1-section7-step1-1.png)
 
 
 2. In the Project Settings window, select **Player** and then **Publishing Settings**:
 
-:::image type="content" source="../media/tutorial1-section7-step1-2.png" alt-text="Unity Publishing Settings" lightbox="tutorial1-section7-step1-2.png":::
+![Unity Publishing Settings](../media/tutorial1-section7-step1-2.png)
 
 3. In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone** and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, and **Webcam** capabilities:
 
-:::image type="content" source="../media/tutorial1-section7-step1-3.png" alt-text="Unity Capabilities" lightbox="tutorial1-section7-step1-3.png":::
+![Unity Capabilities](../media/tutorial1-section7-step1-3.png)
 
 ### 2. Deploy the app to your HoloLens 2
 
 Not all features that you will use in this tutorial series can run inside the Unity editor, this means that you need to be familiar with deploying the application to your HoloLens 2 device.
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Getting started tutorials - Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the Getting started tutorials - Build your application to your device instructions.
 
 ### 3. Run the app on your HoloLens 2 and follow the in-app instructions
 

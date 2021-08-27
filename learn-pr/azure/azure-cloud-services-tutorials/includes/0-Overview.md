@@ -22,10 +22,10 @@ Implement Azure Cloud services while learning the fundamentals of each **Azure C
 
 ## Prerequisites
 
-* A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)
+* A Windows 10 PC configured with the correct tools installed
 * Windows 10 SDK 10.0.18362.0 or later
 * Some basic C# programming ability
-* A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
+* A HoloLens 2 device configured for development
 * A connected webcam if you like to test from Unity editor
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS installed and the Universal Windows Platform Build Support module added
 

@@ -19,17 +19,17 @@ In this section, you will learn how to configure the scene and make the necessar
 
 1. In the Project window, navigate to the **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager**
 
-:::image type="content" source="../media/tutorial4-section1-step1-1.png" alt-text="Unity with AnchorManager prefab selected" lightbox="tutorial4-section1-step1-1.png":::
+![Unity with AnchorManager prefab selected](../media/tutorial4-section1-step1-1.png)
 
 2. From the **Manager** folder, drag and drop the prefab **Anchor Manager** into the scene Hierarchy.
 
 3. Select **Anchor Manager** GameObject in the Hierarchy, and in the Inspector section, you will find **Spatial Anchor Manager** (Script). Find account ID and key field and add the credentials which you had created in the prerequisite in the earlier stage.
 
-:::image type="content" source="../media/tutorial4-section1-step2-1.png" alt-text="Unity with newly added AnchorManager prefab still selected" lightbox="tutorial4-section1-step2-1.png":::
+![Unity with newly added AnchorManager prefab still selected](../media/tutorial4-section1-step2-1.png)
 
 4. Now find the **Scene Controller** object in your scene Hierarchy and select it. You will see the **Scene Controller** Inspector.
 
-:::image type="content" source="../media/tutorial4-section1-step3-1.png" alt-text="Unity with SceneController script component configured" lightbox="tutorial4-section1-step3-1.png":::
+![Unity with SceneController script component configured](../media/tutorial4-section1-step3-1.png)
 
 5. You will observe that the **Anchor Manager** field in the **Scene Controller** component is empty, drag and drop the **Anchor Manager** from the Hierarchy in the scene into that field and save the scene.
 
@@ -38,7 +38,7 @@ In this section, you will learn how to configure the scene and make the necessar
 Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to deploy the project to your device.
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your application to your HoloLens 2]((mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the Building your application to your HoloLens 2 instructions.
 
 ## Run the app on your HoloLens 2 and follow the in-app instructions
 

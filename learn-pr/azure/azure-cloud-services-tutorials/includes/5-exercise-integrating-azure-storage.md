@@ -13,7 +13,7 @@ Learn more about [Azure storage services](/azure/storage/blobs/storage-blobs-ove
 
 This services allows us to store data in a NoSQL fashion, in this project we will use it to store information about the *Tracked Object* such as: name, description, spatial anchor id, and more.
 
-In context of the demo application, you need two Tables, one to store information about the project with information about the state of trained models more about that in the ([Integrating Azure Custom Vision](mr-learning-azure-03.md)) tutorial and a second table to store information about *Tracked Objects*.
+In context of the demo application, you need two Tables, one to store information about the project with information about the state of trained models more about that in the (Integrating Azure Custom Vision) tutorial and a second table to store information about *Tracked Objects*.
 
 Learn more about [Azure Table storage](/azure/storage/tables/table-storage-overview).
 
@@ -44,7 +44,7 @@ While you can see and verify all data changes from the UI inside the application
 
 1. In the Hierarchy window, locate the **DataManager** object and select it.
 
-:::image type="content" source="../media/tutorial2-section4-step1-1.png" alt-text="Unity with DataManager script component configuration fields shown in Inspector" lightbox="tutorial2-section4-step1-1.png":::
+![Unity with DataManager script component configuration fields shown in Inspector](../media/tutorial2-section4-step1-1.png)
 
 From the Inspector window you will see that the **DataManager (script)** component is where all **Azure storage** related settings are kept. All relevant settings are already set, you just need to replace the *Connection String* field with the one you can retrieve from the Azure Portal. If you are using a local Azure storage emulator solution, then you can keep the already provided *Connection String*.
 

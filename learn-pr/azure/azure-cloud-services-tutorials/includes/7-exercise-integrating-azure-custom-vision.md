@@ -21,11 +21,11 @@ Follow this [quickstart tutorial](/azure/cognitive-services/custom-vision-servic
 
 1. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder.
 
-:::image type="content" source="../media/mr-learning-azure/tutorial3-section4-step1-1.png" alt-text="Unity with Project window showing path to ObjectDetectionManager prefab" lightbox="tutorial3-section4-step1-1.png":::
+![Unity with Project window showing path to ObjectDetectionManager prefab](../media/mr-learning-azure/tutorial3-section4-step1-1.png)
 
 2. From there drag the prefab **ObjectDetectionManager** into the scene Hierarchy.
 
-:::image type="content" source="../media/mr-learning-azure/tutorial3-section4-step1-2.png" alt-text="Unity with ObjectDetectionManager script component configuration fields shown in Inspector" lightbox="tutorial3-section4-step1-2.png":::
+![Unity with ObjectDetectionManager script component configuration fields shown in Inspector](../media/mr-learning-azure/tutorial3-section4-step1-2.png)
 
 3. In the Hierarchy window locate the **ObjectDetectionManager** object and select it.
 The **ObjectDetectionManager** prefab contains the **ObjectDetectionManager (script)** component and as you can see from the Inspector window it depends on Azure settings and Project settings.
@@ -44,15 +44,15 @@ In the [custom vision](https://www.customvision.ai/projects) dashboard, open the
 
 1. Now with the **ObjectDetectionManager (script)** setup correctly, find the **SceneController** object in your scene Hierarchy and select it.
 
-:::image type="content" source="../media/mr-learning-azure/tutorial3-section4-step1-3.png" alt-text="Unity with SceneController script component configuration fields shown in Inspector" lightbox="tutorial3-section4-step1-3.png":::
+![Unity with SceneController script component configuration fields shown in Inspector](../media/mr-learning-azure/tutorial3-section4-step1-3.png)
 
 2. You see *Object Detection Manager* field in the **SceneController** component is empty, drag the **ObjectDetectionManager** from the Hierarchy into that field and save the scene.
 
-:::image type="content" source="../media/mr-learning-azure/tutorial3-section4-step1-4.png" alt-text="Unity with SceneController script component configured" lightbox="tutorial3-section4-step1-4.png":::
+![Unity with SceneController script component configured](../media/mr-learning-azure/tutorial3-section4-step1-4.png)
 
 ## Take and upload images
 
-1. Run the scene and click on **Set Object**, type in the name for one of the **Tracked Objects** you have created in the [previous lesson](mr-learning-azure-02.md). Now click on **Computer Vision** button you can find at the bottom of the **Object Card**.
+1. Run the scene and click on **Set Object**, type in the name for one of the **Tracked Objects** you have created in the previous lesson. Now click on **Computer Vision** button you can find at the bottom of the **Object Card**.
 
 2. A new window will open where you have to take six photos to train the model for image recognition. Click on the **Camera** button and perform an AirTap when you look on the object you like to track, do this six times.
 
