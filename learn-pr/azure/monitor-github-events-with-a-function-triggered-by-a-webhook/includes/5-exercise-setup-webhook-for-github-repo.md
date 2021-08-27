@@ -30,17 +30,19 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
 
 1. In the **Settings** side bar, select **Webhooks**.
 
-1. Select **Add webhook** on the top-right. GitHub may ask you toconfirm your password for GitHub.
+1. Select **Add webhook** on the top-right. GitHub may ask you to confirm your password for GitHub.
 
 
 | Setting          | Value                                                                                                       |
 | ---------------- | ----------------------------------------------------------------------------------------------------------- |
-| Payload URL  | URL for your Azure function app from the previous exercise. Your URL looks similar to:   
-    https://<your-functionapp-name>.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ== |
+| Payload URL  | URL for your Azure function app from the previous exercise. For help see note blow |
 | Content type | select application/json from dropdown list |
-| Which events would you like to trigger this webhook?| Let me select individual events. In the list that appears, scroll down and select the **Wiki** checkbox. Make sure no other checkboxes are selected. |
+| Which events would you like to trigger this webhook?| Let me select individual events. In the event list that appears, scroll down and select the **Wiki** checkbox. Make sure no other checkboxes are selected. |
 | Active  | Checked|
 
+    ![NOTE] Your URL looks similar to: the text below. You can copy it from your HttpTrigger by selecting **Get function Url** from the command bar.
+    
+    https://<your-functionapp-name>.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ== 
 1. Select **Add webhook**. The **Webhooks** page appears.
 
 1. Verify that your new webhook appears. It should have *(gollum)* at the end of its name.
