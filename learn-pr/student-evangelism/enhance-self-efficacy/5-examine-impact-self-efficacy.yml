@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.enhance-self-efficacy.5-examine-impact-self-efficacy
+title: Examine the impact of self-efficacy
+metadata:
+  title: Examine the impact of self-efficacy
+  description: Examine the impact of self-efficacy.
+  ms.date: 05/13/2021
+  author: interurban
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-examine-impact-self-efficacy.md)]

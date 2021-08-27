@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.enhance-self-efficacy.11-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary.
+  ms.date: 05/13/2021
+  author: interurban
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/11-summary.md)]

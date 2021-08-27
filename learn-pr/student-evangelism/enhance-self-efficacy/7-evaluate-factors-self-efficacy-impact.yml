@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.enhance-self-efficacy.7-evaluate-factors-self-efficacy-impact
+title: Evaluate the factors that impact self-efficacy
+metadata:
+  title: Evaluate the factors that impact self-efficacy
+  description: Evaluate the factors that impact self-efficacy.
+  ms.date: 05/13/2021
+  author: interurban
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-evaluate-factors-self-efficacy-impact.md)]

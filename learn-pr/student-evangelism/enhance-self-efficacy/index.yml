@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.student-evangelism.enhance-self-efficacy
+metadata:
+  title: Enhance your self-efficacy
+  description: Learn how to enhance your self-efficacy.
+  ms.date: 05/13/2021
+  author: interurban
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Enhance your self-efficacy
+summary: Enhance your self-efficacy.
+abstract: |
+  In this module, you will:
+  - Determine how self-efficacy influences your learning and growth in tech.
+  - Distinguish between self-confidence and self-efficacy.
+  - Connect self-efficacy to mindset.
+prerequisites: >
+  - An open mind and a willingness to learn about the expectations and
+  responsibilities of mentorship in a technology workspace.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - azure
+units:
+  - learn.student-evangelism.enhance-self-efficacy.1-introduction
+  - learn.student-evangelism.enhance-self-efficacy.2-explore-concept-self-efficacy
+  - learn.student-evangelism.enhance-self-efficacy.3-differentiate-self-efficacy-self-confidence
+  - learn.student-evangelism.enhance-self-efficacy.4-exercise-differentiate
+  - learn.student-evangelism.enhance-self-efficacy.5-examine-impact-self-efficacy
+  - learn.student-evangelism.enhance-self-efficacy.6-exercise-examine
+  - learn.student-evangelism.enhance-self-efficacy.7-evaluate-factors-self-efficacy-impact
+  - learn.student-evangelism.enhance-self-efficacy.8-strategies-improve-self-efficacy-technology
+  - learn.student-evangelism.enhance-self-efficacy.9-exercise-reflect-self-efficacy
+  - learn.student-evangelism.enhance-self-efficacy.10-knowledge-check
+  - learn.student-evangelism.enhance-self-efficacy.11-summary
+badge:
+  uid: learn.student-evangelism.enhance-self-efficacy.badge
