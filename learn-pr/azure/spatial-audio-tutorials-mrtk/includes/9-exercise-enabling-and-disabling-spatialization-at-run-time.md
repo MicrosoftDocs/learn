@@ -6,8 +6,8 @@ In this module, you will learn how to Enable and disable spatialization at run t
 
 1. Right-click in the Project window and choose **Create** > **C# Script** to create a new C# script, enter a suitable name for the script, for example, _SpatializeOnOff_:
 
-:::image type="content" source="../media/spatial-audio-04-section1-step1-1.png" alt-text="Create script" lightbox="spatial-audio-04-section1-step1-1.png":::
 
+![Create script](../media/spatial-audio-04-section1-step1-1.png)
 
 2. Double-click the script in the Project window to open it in Visual Studio. Replace the default script contents with the following:
 
@@ -74,14 +74,13 @@ public class SpatializeOnOff : MonoBehaviour
 
 1. Select **Quad** in the Hierarchy and in the Inspector window, use the Add Component button to add **SpatializeOnOff(Script)**
 
-:::image type="content" source="../media/spatial-audio-04-section2-step1-1.png" alt-text="Add script to quad" lightbox="spatial-audio-04-section2-step1-1.png":::
-
+![Add script to quad](../media/spatial-audio-04-section2-step1-1.png)
 2. In the Hierarchy locate **PressableButtonHoloLens2** > **IconAndText** > **TextMeshPro**.
 
 3. With the **Quad** object still selected in the Hierarchy, in the Inspector window, locate the **Spatialize On Off (Script)** component and Drag and drop **TextMeshPro** Component of the PressableButtonHoloLens2.
 
-:::image type="content" source="../media/spatial-audio-04-section2-step1-2.png" alt-text="Find the PressableButtonHoloLens2 object in the hierarchy" lightbox="spatial-audio-04-section2-step1-2.png":::
 
+![Find the PressableButtonHoloLens2 object in the hierarchy](../media/spatial-audio-04-section2-step1-2.png)
 4. To set the button to call the **SpatializeOnOff** script when the button is released You need to configure interactable script.
 
 5. In the Hierarchy window, select the **PressableButtonHoloLens2**. In the Inspector window, locate the **Interactable (Script)** component and click on + icon under OnClick () event.
@@ -90,4 +89,5 @@ public class SpatializeOnOff : MonoBehaviour
 
 * Click the **No Function** dropdown of the same event. Then select **SpatializeOnOff** > **SwapSpatialization ()** to turn on and off the Spatial audio
 
-:::image type="content" source="../media/spatial-audio-04-section2-step1-3.png" alt-text="Button action settings" lightbox="spatial-audio-04-section2-step1-3.png":::
+
+![Button action settings](../media/spatial-audio-04-section2-step1-3.png)

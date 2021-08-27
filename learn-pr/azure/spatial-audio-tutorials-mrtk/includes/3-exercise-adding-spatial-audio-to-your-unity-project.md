@@ -10,21 +10,21 @@ For an understanding of what it means to spatialize sounds using HRTF-based spat
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
-For this, first follow the [Initializing your project and first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
+For this, first follow the Initializing your project and first application, excluding the Build your application to your device instructions, which includes the following steps:
 
-1. [Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
+1. Creating the Unity project and give it a suitable name, for example, *MRTK Tutorials*
 
-1. [Switching the build platform](mr-learning-base-02.md#configuring-the-unity-project)
+2. Switching the build platform
 
-1. [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+3. Importing the TextMeshPro Essential Resources
 
-1. [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+4. Importing the Mixed Reality Toolkit
 
-1. [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project)
+5. Configuring the Unity project
 
-1. [Creating and setting the scene](mr-learning-base-02.md#creating-and-configuring-the-scene) and give the scene a suitable name, for example, *SpatialAudio*
+6. Creating and setting the scene and give the scene a suitable name, for example, *SpatialAudio*
 
-Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to ensure the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
+Then follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
 ## Adding Microsoft Spatializer to the Project
 
@@ -35,13 +35,14 @@ Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base
 
 2. After importing the **Microsoft Spatializer** you need to enable it. Open **Edit -> Project Settings -> Audio**, and change **Spatializer Plugin** to "Microsoft Spatializer".
 
-:::image type="content" source="../media/spatial-audio-01-section3-step1-1.png" alt-text="Project Settings showing spatializer plugin" lightbox="spatial-audio-01-section3-step1-1.png":::
+
+![Project Settings showing spatializer plugin](../media/spatial-audio-01-section3-step1-1.png)
 
 ## Enable spatial audio on your workstation
 
 1. On desktop versions of Windows, spatial audio is disabled by default. Enable it by right-clicking on the volume icon in the task bar. To get the best representation of what you'll hear on HoloLens 2, choose **Spatial sound -> Windows Sonic for Headphones**.
 
-:::image type="content" source="../media/spatial-audio-01-section4-step1-1.png" alt-text="Desktop spatial audio settings" lightbox="spatial-audio-01-section4-step1-1.png":::
 
+![Desktop spatial audio settings](../media/spatial-audio-01-section4-step1-1.png)
 > [!NOTE]
 > This setting is only required if you plan to test your project in the Unity editor.

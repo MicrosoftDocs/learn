@@ -5,8 +5,8 @@ metadata:
   title: Enabling and disabling spatialization at run time
   description: Description to Enabling and disabling spatialization at run time
   ms.date: 06/23/2021
-  author: "varunsiddaraju"
-  ms.author: "v-hferrone"
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 durationInMinutes: 1
