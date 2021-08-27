@@ -53,7 +53,7 @@ units:
 - learn.azure.test-bicep-code-using-azure-pipelines.exercise-add-lint-validate-stages-pipeline
 - learn.azure.test-bicep-code-using-azure-pipelines.preview-approve-deployment
 - learn.azure.test-bicep-code-using-azure-pipelines.exercise-add-preview-stage-pipeline
-- learn.azure.test-bicep-code-using-azure-pipelines.test-resources
+- learn.azure.test-bicep-code-using-azure-pipelines.test-resources-after-deployment
 - learn.azure.test-bicep-code-using-azure-pipelines.exercise-add-test-stage-pipeline
 - learn.azure.test-bicep-code-using-azure-pipelines.knowledge-check
 - learn.azure.test-bicep-code-using-azure-pipelines.summary
