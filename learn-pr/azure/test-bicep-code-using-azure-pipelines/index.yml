@@ -3,7 +3,7 @@ uid: learn.azure.test-bicep-code-using-azure-pipelines
 metadata:
   moduleType: standard
   title: Test your Bicep code by using Azure Pipelines
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  description: Build a deployment pipeline for Bicep infrastructure as code templates. Lint, validate, preview, and test your Bicep code by using Azure DevOps and Azure Pipelines.
   ms.date: 08/22/2021
   author: vermegi
   ms.author: givermei
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Test your Bicep code by using Azure Pipelines
 summary: |
-  TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master
+  Validate and test your Bicep code in your deployment pipeline. You'll use linting, preflight validation, and the what-if operation to validate your Azure changes before you deploy, and you'll test your resources after each deployment.
 abstract: |
   After completing this module, you'll be able to:
     - Add Bicep code linting during CI
