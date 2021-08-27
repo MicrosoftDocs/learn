@@ -10,7 +10,7 @@
 
 Optimizing the storage and retrieval of IoT data is important in maximizing ingestion rates and minimizing the time to insights.
 
-Recall in the distributor scenario you are ingesting data from thousands of trucks across the country. You want to take advantage of the Azure SQL Database capabilities that can help like columnstore, indexing, JSON support and data compression. In this exercise, you will see how you can.
+Recall in the distributor scenario you are ingesting data from thousands of trucks across the country. You want to take advantage of the Azure SQL Database capabilities. In this exercise, you will see how you can configure and monitor your database for IoT scenarios.
 
 ## Confirm the configurations of the database
 
