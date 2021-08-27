@@ -9,7 +9,7 @@ metadata:
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 10
 quiz:
   questions:
   - content: "In the typical IoT solution mentioned, what is the purpose of warm storage?"

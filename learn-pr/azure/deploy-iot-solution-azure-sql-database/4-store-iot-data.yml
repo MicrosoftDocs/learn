@@ -18,10 +18,10 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. This part is a key piece of the shock absorber pattern."
     - content: "Call a natively compiled stored procedure with a memory-optimized table-valued parameter."
-      isCorrect: true
+      isCorrect: false
       explanation: "Incorrect. You can leverage load current data into a memory-optimized table by calling this configuration of stored procedure and table-valued parameter."
     - content: "Use JSON support for high ingestion."
-      isCorrect: false
+      isCorrect: true
       explanation: "Correct! Azure SQL Database supports JSON, but it is not a direct requirement for the shock absorber pattern."
     - content: "Offload historical data into a disk-based clustered columnstore table."
       isCorrect: false

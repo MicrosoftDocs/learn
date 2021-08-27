@@ -270,7 +270,7 @@ You have now deployed and configured the appropriate schema for the scenario.
     sudo docker run -it -e "IotHubConnectionString=<IoTHubConnectionString>" -e Template="{ \"deviceId\": \"$.DeviceId\", \"temp\": $.Temp, \"Ticks\": $.Ticks, \"Counter\": $.Counter, \"time\": \"$.Time\", \"engine\": \"$.Engine\" }" -e Variables="[{name: \"Temp\", \"random\": true, \"max\": 25, \"min\": 23}, {\"name\":\"Counter\", \"min\":100}, {name:\"Engine\", values: [\"on\", \"off\"]}]" -e MessageCount=0 -e DeviceCount=1000 -e Interval=100  mcr.microsoft.com/oss/azure-samples/azureiot-telemetrysimulator:latest
     ```
 
-1. To confirm everything is working properly, navigate to your Azure SQL Database called **iot-db** in the Azure portal.
+1. To confirm everything is working properly, navigate to your Azure SQL Database called **iot-db** in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
 
 1. On the left-hand menu, select **Query editor (preview)**.
 
