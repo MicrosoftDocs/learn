@@ -6,9 +6,9 @@ In this exercise, you'll update your function to parse information from the GitH
 
 1. On the **Function App** pane, in the left menu under **Functions** section, select select **Functions**, and then select the HttpTrigger you created.
 
-1. In the left menu pane for your Http Trigger function, under **Developer**, select **Code + Test**, and in the path above the code,  select **index.js** from the dropdown list.
+1. In the resource menu for your Http Trigger function select **Code + Test**, and in the path above the code, select **index.js** from the dropdown list. The javascript for your trigger displays. 
 
-1. Update the index.js file by editing the code. Replace the current `if...else` statement in the function body with the following code.
+1. Update the code by replacinge the current `if...else` statement in the function body with the following code.
 
     ```JavaScript
     if (req.body.pages[0].title){
