@@ -54,7 +54,7 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
     curl -u "elastic:$PASSWORD" -k "https://localhost:9200/_cat/nodes?v=true"
     ```
 
-    :::image type="content" source="../media/curl-output.png" alt-text="A screenshot of infomation about the cluster nodes.":::
+    :::image type="content" source="../media/curl-output.png" alt-text="A screenshot of information about the cluster nodes.":::
 
 1. Create kibana.yaml file with the following content:
 
@@ -96,4 +96,4 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
 
     :::image type="content" source="../media/elastic-welcome-screen.png" alt-text="A screenshot of the Elastic welcome screen and button to add data.":::
 
-    The deployment is up and running. You can click on Add data to add sample datasets and Kibana visualizations that are shipped with Kibana, or you can click on Explore on my own to explore Kibana further and add your data.
+    The deployment is up and running. You can select **Add data** to add sample datasets and Kibana visualizations that are shipped with Kibana, or you can select **Explore on my own** to explore Kibana further and add your data.
