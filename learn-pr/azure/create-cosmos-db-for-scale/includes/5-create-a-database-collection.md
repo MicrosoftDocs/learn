@@ -8,7 +8,7 @@ However, if you would rather create an Azure Cosmos DB database and container pr
 
 ## Creating your database and container
 
-1. You should already be signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Ths exercise will be using the Cosmos DB account you created in a previous lesson.  
+1. You should already be signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). This exercise will be using the Cosmos DB account you created in a previous lesson.  
 
 1. On the Azure portal menu, select **All services**.
 
@@ -18,7 +18,7 @@ However, if you would rather create an Azure Cosmos DB database and container pr
 
 1. In the menu for your Azure Cosmos DB account, select **Data Explorer**. 
 
-1. On the Data Explorer toolbbar or the Data Explorer pane, select **New Container**.  
+1. On the Data Explorer toolbar or the Data Explorer pane, select **New Container**.  
     
     ![The Azure portal Data Explorer, Add Container pane.](../media/5-azure-cosmosdb-data-explorer.png)
 
@@ -26,7 +26,7 @@ However, if you would rather create an Azure Cosmos DB database and container pr
 
     | Setting | Suggested value | Description |
     |---|---|---|
-    | Database id  | Products | Select *Create new*, and then enter *Products* as the name for the new database. Database names must be 1 to 255 characters in length, and must not contain /, \\, #, ?, or a trailing space. Leave *Share throughput acrosss containers* selected. |
+    | Database id  | Products | Select *Create new*, and then enter *Products* as the name for the new database. Database names must be 1 to 255 characters in length, and must not contain /, \\, #, ?, or a trailing space. Leave *Share throughput across containers* selected. |
     | Database throughput | Autoscale is selected | Database Max RU/s set to 4000 request units per second. |
     | Container id | Clothing | Enter *Clothing* as the name for your new container. Container IDs have the same character requirements as database names. |
     | Partition key | /productId | productId is a good partition key for an online retail scenario, as so many queries are based around the product ID. |
