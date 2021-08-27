@@ -92,9 +92,9 @@ After the web app is created, we can observe how it's been configured to use App
 
 1. In the left menu pane, under **Settings**, select **Application Insights**. The **Application Insights** pane appears for your web app.
 
-1. Select **Turn on Application Insights**. This allows you to enable Application Insights without redploying your code. The **Application Insights** pane reappears.
+1. Select **Turn on Application Insights**. This allows you to enable Application Insights without redeploying your code. The **Application Insights** pane reappears.
 
-    Under **Link to an Application Insights resource**, a notification states that your web app will be connected to an auto-created Application Insights resource, namely your web app. An Instrumentation key wil be added to App Settings. When your app runs in App Service, this value will be available as an environment variable, and the Application Insights SDK will use it as configuration.
+    Under **Link to an Application Insights resource**, a notification states that your web app will be connected to an auto-created Application Insights resource, namely your web app. An Instrumentation key will be added to App Settings. When your app runs in App Service, this value will be available as an environment variable, and the Application Insights SDK will use it as configuration.
 
 1. Select **Apply**.
 
