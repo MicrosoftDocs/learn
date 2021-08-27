@@ -21,7 +21,7 @@ quiz:
           explanation: Correct. That's the right place to point out the compiled app path.
         - content: Set the `executionPath` property in the _function.json_ file for the function endpoint.
           isCorrect: false
-          explanation: Incorrect. The property is called `defaultExecutionPath`.
+          explanation: Incorrect. You should set `defaultExecutablePath` in the _host.json_ file.
         - content: Set `defaultExecutablePath` in the _function.json_ file for the function endpoint.
           isCorrect: false
           explanation: Incorrect. You should set `defaultExecutablePath` in the _host.json_ file.
