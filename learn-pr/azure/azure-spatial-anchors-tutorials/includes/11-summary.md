@@ -6,7 +6,7 @@ And also you learnt how to create a UI panel that  displays the current status o
 At the end you learned how to build your project to Android and iOS devices using AR Foundation, ARCore XR Plugin, and ARKit XR Plugin.
 
 References : 
-* https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials
-* https://docs.microsoft.com/windows/mixed-reality/discover/mixed-reality
+* windows/mixed-reality/develop/unity/tutorials
+* windows/mixed-reality/discover/mixed-reality
 
 
