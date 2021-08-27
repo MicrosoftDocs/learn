@@ -43,7 +43,7 @@ The virtual network's subnet is currently defined twice: once in the `virtualNet
 
 1. Update the `virtualNetwork` resource to include an `existing` reference to the subnet, which enables you to refer to the subnet within your Bicep code without defining it again:
 
-   :::code language="bicep" source="code/5-virtual-network-nsg-fixed.bicep" highlight="25-28" :::
+   :::code language="bicep" source="code/5-virtual-network-nsg-fixed.bicep" highlight="25-27" :::
 
 1. Update the `networkInterface` resource to refer to the subnet's resource ID:
 

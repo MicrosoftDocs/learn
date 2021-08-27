@@ -6,14 +6,14 @@ The main focus of this phase is to improve the quality of your Bicep code. These
 
 The deploy phase consists of eight steps, which you complete in any order:
 
-1. Review resource API versions.
-1. Review the linter suggestions in your new Bicep file.
-1. Revise parameters, variables, and symbolic names.
-1. Simplify expressions.
-1. Review child and extension resources.
-1. Modularize.
-1. Add comments.
-1. Follow Bicep best practices.
+- Review resource API versions.
+- Review the linter suggestions in your new Bicep file.
+- Revise parameters, variables, and symbolic names.
+- Simplify expressions.
+- Review child and extension resources.
+- Modularize.
+- Add comments.
+- Follow Bicep best practices.
 
 Here's the output of a the Bicep `decompile` command against a JSON template that creates an App Service plan:
 
@@ -58,7 +58,7 @@ resource appServicePlanName 'Microsoft.Web/serverfarms@2020-12-01' = {
 output appServicePlanId string = appServicePlanName.id
 ```
 
-If you deploy this Bicep template as-is, the deployment would succeed, but there are improvements that could be made to bring it line with your template standards.
+If you deploy this Bicep template as-is, the deployment will succeed, but there are improvements that could be made to bring it line with your template standards.
 
 ### Review resource API versions
 
@@ -68,7 +68,7 @@ Consider using the [Azure ARM Template Reference](/azure/templates/?azure-portal
 
 ### Review the linter suggestions in your new Bicep file
 
-When creating Bicep files using the [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true), the linter runs automatically and highlights suggestions and errors in your code. Many of the suggestions and errors include an option to apply a quick fix of the issue. Review these recommendations and adjust your Bicep file.
+When creating Bicep files using the [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true), the linter runs automatically and highlights suggestions and errors in your code. Many of the suggestions and errors include an option to apply a quick fix to the issue. Review these recommendations and adjust your Bicep file.
 
 ### Revise parameters, variables, and symbolic names
 
@@ -80,7 +80,7 @@ For example, in the converted template above, the variable named `appServicePlan
 
 :::code language="bicep" source="code/4-app-service-plan.bicep" range="20-27" highlight="6" :::
 
-For clarity, it's a good idea to remove the `_var`. But, when you rename the variable, its new name conflicts with the symbolic name of the App Service plan resource. So, it's a good idea to rename resources first, and then rename the variables used in its definition.
+For clarity, it's a good idea to remove the `_var`. But, when you rename the variable, its new name conflicts with the symbolic name of the App Service plan resource. So, it's a good idea to rename resources first, and then rename the variables used in their definitions.
 
 [!include[Tip - How to use Visual Studio Code to rename Bicep symbols](../../includes/azure-template-bicep-tip-rename.md)]
 
