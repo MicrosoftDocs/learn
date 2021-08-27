@@ -8,12 +8,12 @@ In this module, you’ll learn about and identify fixed and growth mindsets, and
 
 ## Learning objectives
 
-After completing this module, you should know more about:
+By the end of this module, you will be able to:
 
-- The differences between a growth mindset and a fixed mindset.
-- Why a growth mindset is necessary for learning and working in technology.
-- Methods for cultivating a growth mindset rather than a fixed mindset.
-- How to help support a growth mindset in others.
+- Distinguish between a growth mindset and a fixed mindset.
+- Describe why a growth mindset is necessary for learning and working in technology.
+- Apply methods for cultivating a growth mindset rather than a fixed mindset.
+- Describe how to help support a growth mindset in others.
 
 ## Prerequisites
 

@@ -4,15 +4,15 @@ Now that you’ve learned how to identify your mindsets, you realize that you ha
 
 When you suspect you have a fixed mindset, you can consciously interrupt the fixed-mindset pattern and cultivate a growth mindset with these steps:
 
-- Become aware of your internal dialogue. As your awareness of your internal dialogue improves, you can work on changing it to better support a growth mindset. Fixed mindset self-talk often begins with judgment and evaluation. Growth mindset self-talk starts with curiosity and a desire to learn.
+- **Become aware of your internal dialogue**. As your awareness of your internal dialogue improves, you can work on changing it to better support a growth mindset. Fixed mindset self-talk often begins with judgment and evaluation. Growth mindset self-talk starts with curiosity and a desire to learn.
 
-- Strive for progress, not perfection. Recognize growth by comparing results to where you were before.
+- **Strive for progress**, not perfection. Recognize growth by comparing results to where you were before.
 
-- Learn from others as you develop your skills. Remember that every expert was once a beginner.
+- **Learn from others as you develop your skills**. Remember that every expert was once a beginner.
 
 :::image type="content" source="../media/4-expert.png" alt-text="Path with a beginner in the background and an expert in the foreground, implying the passage of time between being a beginner and becoming an expert." border="false":::
 
-### Notice your inner dialogue
+## Notice your inner dialogue
 
 As covered in the video, the first step in shifting your mindset to one of growth is to notice your inner dialogue. With awareness, you might notice self-doubts about doing things outside of your comfort zone. You might notice internal dialogue such as, “People will laugh at me,” or “I’ll just fail again.” Tell yourself, “That’s okay, I can change it,” and then adjust your inner dialogue.
 
@@ -26,7 +26,7 @@ You might then consider your skills and experience and think, “I understand ho
 
 Redirecting your thinking towards a growth mindset is giving yourself permission to try new things, learn, and grow.
 
-### Strive for progress, not perfection
+## Strive for progress, not perfection
 
 Sometimes in the middle of a project it’s difficult to get perspective on how well you’re doing. It can feel like you’ll never finish, especially if things aren’t going well, or if you have to restart or redo some tasks. Instead of waiting until the end of the project to celebrate, use small successes and accomplishments to excite and motivate you.
 
@@ -36,7 +36,7 @@ It’s important to let yourself celebrate every success, no matter how small. E
 
 Measure your progress by comparing where you are today with where you were when you started. Celebrate your growth by celebrating small successes. Recognize that you're improving.
 
-### Learn from others as you develop your skills
+## Learn from others as you develop your skills
 
 When you're frustrated or stuck and you don’t know what to do next, don’t be afraid to ask your peers or colleagues for help and guidance. There are also articles and information online that might help you develop a strategy to solve your problem.
 
