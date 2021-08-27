@@ -14,45 +14,40 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
 
 1. Select the **creating a new file** link.
 
-1. In the top menu bar, select **Wiki**. A **Welcome** page appears.
+1. In the top menu bar, select **Wiki** to display the pages in your repository (or *repo*). A  **Welcome** page appears.
 
 1. Select **Create the first page**. The **Create new page** template appears.
 
-1. Add some text, and select **Save Page**.
+1. Add some text, and select **Save Page**. The first page in a Wiki is the Home page.
 
 ## Add a webhook for the Gollum event
 
-The **Gollum** event is the name of the event in GitHub that is fired whenever a page in the repository's wiki is created or updated.
+**Gollum** is the name of a Github event that is fired whenever a page in a repository's wiki is created or updated.
 
-1. In the right **Pages** box, select **Home** to return to the home page for your repository.
+1. On the home page in the Wiki view is a **Pages** sidebar that lists the pages in your repo. Select **Home** to display the home page.
 
-1. In the top menu bar, select **Settings**.
+1. On the home page, select the **Settings** tab.
 
-1. In the left menu pane, select **Webhooks**.
+1. In the **Settings** side bar, select **Webhooks**.
 
-1. Select **Add webhook** on the top-right. You may have to confirm your password for GitHub.
+1. Select **Add webhook** on the top-right. GitHub may ask you toconfirm your password for GitHub.
 
-1. In the **Payload URL** field, enter the Function URL for your Azure function app from the previous exercise. Your URL looks similar to:
 
-    ```text
-    https://<your-functionapp-name>.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ==
-    ```
+| Setting          | Value                                                                                                       |
+| ---------------- | ----------------------------------------------------------------------------------------------------------- |
+| Payload URL  | URL for your Azure function app from the previous exercise. Your URL looks similar to:   
+    https://<your-functionapp-name>.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ== |
+| Content type | select application/json from dropdown list |
+| Which events would you like to trigger this webhook?| Let me select individual events. In the list that appears, scroll down and select the **Wiki** checkbox. Make sure no other checkboxes are selected. |
+| Active  | Checked|
 
-1. In the **Content type** dropdown list, select **application/json**.
+1. Select **Add webhook**. The **Webhooks** page appears.
 
-1. In the section **Which events would you like to trigger this webhook?**, select **Let me select individual events**.
-
-1. Scroll down and select the **Wiki** checkbox. Make sure no other checkboxes are selected.
-
-1. At the bottom of the page, ensure **Active** is checked, and select **Add webhook**.
-
-1. Verify that your new webhook appears when the **Webhooks** page reappears.
+1. Verify that your new webhook appears. It should have *(gollum)* at the end of its name.
 
 ## Test the webhook
 
-1. In the GitHub portal for your repository, in the top menu bar, select **Wiki**.
-
-1. Select the page that you created earlier.
+1. In GitHub, select the **Wiki** tab. The Home page that you created earlier should appear.
 
 1. Select **Edit**.
 
@@ -62,18 +57,18 @@ The **Gollum** event is the name of the event in GitHub that is fired whenever a
     Testing Webhook
     ```
 
-1. Select **Save Page** to save your update.
+1. Select **Save Page**.
 
-1. In the top menu bar, select **Settings**.
+1. Select the **Settings** tab.
 
-1. In the left menu pane, select **Webhooks**.
+1. In the sidebar, select **Webhooks**.
 
     > [!NOTE]
     > The webhook will indicate that the message was not processed correctly; it will generate an HTTP 400 error. The webhook is providing a payload that your function app wasn't expecting, and doesn't include a **name** parameter. You will learn how to parse the payload for a *Gollum* event in the next unit.
 
-1. Select **Edit** next to your webhook. The Webhooks/Manage webhook page appears.
+1. Select **Edit**. The **Webhooks/Manage webhook** page appears.
 
-1. Select **Recent Deliveries** tab.
+1. Select the **Recent Deliveries** tab.
 
 1. In the list, select the top (latest) delivery entry by selecting the ellipsis (**...**).
 
