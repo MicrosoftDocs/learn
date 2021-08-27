@@ -13,11 +13,11 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
 
 1. In Visual Studio Code, open the *deploy/azure-pipelines.yml* file. 
 
-1. Remove everything in the file below the `jobs:` line.
+1. Remove everything in the file below the `vmImage` line.
 
 1. At the bottom of the file, add the following:
 
-   :::code language="yaml" source="code/5-pipeline.yml" range="34-49" :::
+   :::code language="yaml" source="code/5-pipeline.yml" range="9, 34-50" :::
 
 ## Add lint and validation stages to your pipeline
 
@@ -62,13 +62,19 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 1. In your browser, navigate to your pipeline.
 
-1. TODO wait for run to finish
+1. Select the last run of your pipeline.
 
    Notice that the pipeline run now shows the three stages you defined in the YAML file. Also notice that the **Lint** stage has failed. (TODO)
 
 1. Select the **Lint** stage to see its details.
 
-   TODO notice the output has an error
+1. Select the **Lint** step to view the pipeline log.
+
+   Notice that the error displayed is similar to the following:
+
+   > Error no-unused-params: Parameter "storageAccountNameParam" is declared but never used.
+
+   This indicates that the linter found a rule violation in your Bicep file.
 
 ## Fix the linter error
 
@@ -92,15 +98,21 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 ## View the pipeline run again
 
-1. In your browser, navigate to your pipeline and open the most recent run.
+1. In your browser, navigate to your pipeline.
 
-1. TODO wait for run to finish
+1. Select the most recent run of your pipeline.
 
    Notice that the **Lint** stage completed successfully, but now the **Validate** stage has failed. (TODO)
 
 1. Select the **Validate** stage to see its details.
 
-   TODO look at error
+1. Select the **Run preflight validation** step to view the pipeline log.
+
+   Notice that the error displayed includes the following:
+
+   > mystorageresourceNameSuffix is not a valid storage account name. Storage account name must be between 3 and 24 characters in length and use numbers and lower-case letters only.
+
+   This indicates that the storage account name isn't valid.
 
 ## Fix the validation error
 
@@ -128,10 +140,10 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 ## View the successful pipeline run
 
-1. In your browser, navigate to your pipeline and open the most recent run.
+1. In your browser, navigate to your pipeline.
 
-1. TODO wait for run to finish
+1. Select the most recent run of your pipeline.
 
-   Notice that the pipeline has run successfully.
+   Notice that all three stages of the pipeline have run successfully.
 
 You now have a pipeline that successfully detects errors in your Bicep code early in your deployment process.

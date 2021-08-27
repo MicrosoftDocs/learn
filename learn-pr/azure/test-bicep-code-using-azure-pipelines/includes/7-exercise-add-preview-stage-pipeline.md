@@ -33,7 +33,7 @@ During the process, you'll:
 
    :::image type="content" source="../media/6-approvals-and-checks.png" alt-text="Screenshot of the Azure DevOps interface, Approvals and checks screen, with the Approvals option highlighted." border="false":::
 
-1. Enter own user name in the **Approvers** textbox.
+1. Select yourself in the **Approvers** textbox.
 
 1. Select the down arrow button next to **Advanced**.
 
@@ -59,7 +59,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
 1. Update the **Deploy** stage definition to the following:
 
-   :::code language="yaml" source="code/7-pipeline.yml" range="50-70" :::
+   :::code language="yaml" source="code/7-pipeline.yml" range="50-71" :::
 
    > [!NOTE]
    > TODO note the checkout step
@@ -70,7 +70,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
 1. Verify that your *azure-pipelines.yml* file looks like the following:
 
-   :::code language="yaml" source="code/7-pipeline.yml" highlight="34-48, 52-70" :::
+   :::code language="yaml" source="code/7-pipeline.yml" highlight="34-48, 52-71" :::
 
    If it doesn't, update it to match this example, then save it.
 
@@ -84,29 +84,52 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
 ## Run the pipeline and review the what-if outputs
 
-1. In your browser, navigate to your pipeline runs. 
+1. In your browser, navigate to your pipeline.
 
-<!-- TODO here down -->
+1. Select the most recent run of your pipeline.
 
-1. You will notice that your pipeline is now running multiple stages one after the other. At the **Deploy** stage execution will halt and a message will be shown asking you to **Review** the changes.  It might be that you need to refresh your page to see this message. You will also receive an email in your mailbox for this approval. 
+   Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+
+1. Notice that pipeline prompts yu to approve the pipeline. You also receive an email informing you that the pipeline needs your approval.
 
    :::image type="content" source="../media/4-approve.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run screen, with the halted Deploy stage and the Review message highlighted." border="false":::
 
-1. Select the **Preview** stage. 
+1. Select the **Preview** stage.
 
    :::image type="content" source="../media/4-what-if.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run screen, with the WhatIf stage highlighted." border="false":::
 
-1. Select the **Run what-if** step.
-
-   Inspect the changes that the what-if command reports on. 
+1. Select the **Run what-if** step to inspect the changes that the what-if command reports on.
 
    :::image type="content" source="../media/4-what-if-checks.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run details screen, with the Run what-if checks section highlighted." border="false":::
 
-   <!-- TODO note what the output means -->
+1. Notice that the pipeline log provides the following what-if results:
+
+   ```output
+   Resource and property changes are indicated with these symbols:
+     + Create
+     ~ Modify
+     = Nochange
+   
+   The deployment will update the following scope:
+   
+   Scope: /subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyWebsiteTest
+   
+     ~ Microsoft.Web/sites/toy-website-nbfnedv766snk [2021-01-15]
+       + properties.siteConfig.localMySqlEnabled:   false
+       + properties.siteConfig.netFrameworkVersion: "v4.6"
+   
+     = Microsoft.Insights/components/toywebsite [2020-02-02]
+     = Microsoft.Storage/storageAccounts/mystoragenbfnedv766snk [2021-04-01]
+     = Microsoft.Web/serverfarms/toy-website [2021-01-15]
+   
+   Resource changes: 1 to modify, 3 no change.   
+   ```
+
+   TODO explanation of what these mean
 
 ## Approve the pipeline run
 
-1. Navigate to the pipeline run details screen. 
+1. Select the left arrow to return to the pipeline run details.
 
    :::image type="content" source="../media/4-run-details.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run output screen, with the run details link highlighted." border="false":::
 
@@ -114,13 +137,17 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
    :::image type="content" source="../media/4-review.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run details screen, with the Review button highlighted." border="false":::
 
+1. In the **Comment** field, enter *Reviewed what-if results*.
+
 1. Select **Approve**.
 
    :::image type="content" source="../media/4-approve.png" alt-text="Screenshot of the Azure DevOps interface, Approval flyout, with the Approve button highlighted." border="false":::
 
 ## Observe the successful deployment
 
-1. After you've approved the pipeline run, notice the **Deploy** stage starting execution. Wait for the stage to complete.
+1. After you've approved the pipeline run, notice the **Deploy** stage starts execution.
+
+   Wait for the stage to complete.
 
    :::image type="content" source="../media/4-deploy.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run details screen, with the running Deploy stage highlighted." border="false":::
 

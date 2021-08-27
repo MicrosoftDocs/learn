@@ -26,4 +26,4 @@ jobs:
           --name $(Build.BuildNumber) \
           --resource-group $(ResourceGroupName) \
           --template-file deploy/main.bicep \
-          --parameters environmentType=$(EnvironmentType) deployToyManualsStorageAccount=$(DeployToyManualsStorageAccount)
+          --parameters environmentType=$(EnvironmentType)

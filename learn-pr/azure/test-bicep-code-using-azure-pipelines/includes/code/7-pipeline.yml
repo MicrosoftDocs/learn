@@ -7,6 +7,7 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
+
 - stage: Lint
   jobs: 
   - job: Lint
@@ -65,6 +66,7 @@ stages:
                 scriptLocation: 'inlineScript'
                 inlineScript: |
                   az deployment group create \
+                    --name $(Build.BuildNumber) \
                     --resource-group $(ResourceGroupName) \
                     --template-file deploy/main.bicep \
                     --parameters environmentType=$(EnvironmentType)
