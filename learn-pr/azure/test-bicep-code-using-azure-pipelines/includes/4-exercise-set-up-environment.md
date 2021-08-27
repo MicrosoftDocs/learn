@@ -22,7 +22,7 @@ The modules in this learning path are part of a progression. For learning purpos
 Run a template that sets up your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=deliveryplans&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=deliveryplans&azure-portal=true) <!-- TODO change the name -->
 
 On the Azure DevOps Demo Generator site, follow these steps to run the template:
 

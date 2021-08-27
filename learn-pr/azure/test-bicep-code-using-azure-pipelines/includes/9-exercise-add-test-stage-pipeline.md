@@ -27,7 +27,7 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
 1. In the **Deploy** stage, update the `inlineScript` to the following:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="68-74" :::
+   :::code language="bash" source="code/9-pipeline.yml" range="68-74" :::
 
    > [!NOTE]
    > TODO explain this
