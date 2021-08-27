@@ -15,12 +15,12 @@ In this module, you will learn how to spatialize the button interaction sounds a
 * **Rotation**: X = 0, Y = 0, Z = 0
 * **Scale**: X = 1, Y = 1, Z = 1
 
-![Button transform](../media/spatial-audio-02-section1-step1-2)
+![Button transform](../media/spatial-audio-02-section1-step1-2.png)
 To focus in on the objects in the scene, you can double-click on the **PressableButtonHoloLens2** object, and then zoom slightly in again:
 
 ## Spatialize button feedback
 
-In this step, you'll spatialize the audio feedback for the button. For related design suggestions, see [spatial sound design](../../../design/spatial-sound-design.md).
+In this step, you'll spatialize the audio feedback for the button. For related design suggestions, see spatial sound design
 
 In the **Audio Mixer** window you will define destinations called **Mixer Groups**, for audio playback from **Audio Source** components.
 
