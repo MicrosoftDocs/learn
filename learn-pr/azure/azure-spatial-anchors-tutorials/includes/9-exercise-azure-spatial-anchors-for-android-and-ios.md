@@ -106,7 +106,7 @@ Close the Player Settings window and open the **Build Settings** window again.
 
 ![Select folder](../media/asa-05-section4-step1-5.png)
 
-When the build process is complete, follow the [Export the Xcode project](azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) instructions to learn to deploy your Xcode project to your iOS device.
+When the build process is complete, follow the Export the Xcode project instructions to learn to deploy your Xcode project to your iOS device.
 
 
 
