@@ -64,7 +64,9 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
     :::image type="content" source="../media/5-start-publish-from-visual-studio.png" alt-text="Screenshot of Visual Studio, showing the Publish option for the WatchPortalFunctions project." loc-scope="vs":::
 
-1. In the **Publish** window, select **Azure**, and then select **Next**.
+    The **Publish** window appears.
+
+1. Select **Azure**, and then select **Next**.
 
     :::image type="content" source="../media/5-publish-target.png" alt-text="Screenshot of the Publish target window. The user has chosen the Azure option." loc-scope="vs":::
 
@@ -86,7 +88,7 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
     :::image type="content" source="../media/5-function-app-publish.png" alt-text="Screenshot of the Function App (Windows) window. The user to select Finish." loc-scope="vs":::
 
-    The **Publish** window appears.
+    The **Publish** window reappears again.
 
 1. Select **Publish**.
 
