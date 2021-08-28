@@ -24,6 +24,12 @@ Run a template that sets up your Azure DevOps organization.
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=testbicep&azure-portal=true) <!-- TODO finalize URL; for now, use  https://azuredevopsdemogenerator-mslearn.azurewebsites.net/ -->
 
+> [!WARNING]
+> **Note to reviewers:** During the module review process, please use the following modification to the below instructions:
+> 1. [Download this zip file.](https://1drv.ms/u/s!AjdI8rY4Mc916AATjXH-wuCesaUG?e=f6wukn)
+> 1. Open this URL: [https://azuredevopsdemogenerator-mslearn.azurewebsites.net](https://azuredevopsdemogenerator-mslearn.azurewebsites.net).
+> 1. Select **Choose template** > **Private** and upload the zip file from above.
+
 On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
@@ -166,7 +172,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ## Create a service connection in Azure Pipelines
 
-You've created a resource group. Next, create a service connection in Azure Pipelines. This automatically creates a service principal and grants the service principal the Contributor role on your resource group.
+You've created a resource group. Next, create a service connection in Azure Pipelines. This automatically creates a service principal in Azure, and it grants the service principal the Contributor role on your resource group.
 
 1. In your browser, select **Project settings** > **Service connections** > **Create service connection**.
 
