@@ -2,7 +2,7 @@ You're working on an API that connects to a database. Your API will connect to t
 
 ## Store connection strings in Azure Functions
 
-It's a good idea to avoid hard-coding connection strings. You'll likely use the connection string across different files, and there's a chance that it could change in the future.
+It's a good idea to avoid hard coding connection strings. You'll likely use the connection string across different files, and there's a chance that it could change in the future.
 
 You'll want to store the connection string as an app setting. App settings are specified in one place and referenced throughout the app. They can be easily changed at any point in the future without having to change the code. App settings are never checked in to source control.
 
