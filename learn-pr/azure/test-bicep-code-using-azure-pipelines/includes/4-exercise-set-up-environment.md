@@ -22,7 +22,7 @@ The modules in this learning path are part of a progression. For learning purpos
 Run a template that sets up your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=testbicep&azure-portal=true) <!-- TODO finalize URL; for now, use  https://azuredevopsdemogenerator-mslearn.azurewebsites.net/ -->
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=testbicep&azure-portal=true) <!-- TODO finalize URL -->
 
 > [!WARNING]
 > **Note to reviewers:** During the module review process, please use the following modification to the below instructions:
@@ -174,20 +174,30 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 You've created a resource group. Next, create a service connection in Azure Pipelines. This automatically creates a service principal in Azure, and it grants the service principal the Contributor role on your resource group.
 
-1. In your browser, select **Project settings** > **Service connections** > **Create service connection**.
+1. In your browser, select **Project settings**.
 
-   :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/5-create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the 'Create service connection' button highlighted.":::
+   :::image type="content" source="../media/4-project-settings.png" alt-text="Screenshot of Azure DevOps that shows the 'Project settings' menu item highlighted.":::
+
+1. Select **Service connections** > **Create service connection**.
+
+   :::image type="content" source="../media/4-create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the 'Create service connection' button highlighted.":::
 
 1. Select **Azure Resource Manager** > **Next**.
 
-   :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/5-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Azure Resource Manager service connection type highlighted.":::
+   :::image type="content" source="../media/4-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Azure Resource Manager service connection type highlighted.":::
 
 1. Select **Service principal (automatic)** > **Next**.
 
-1. In the **Subscription** drop-down, select your Azure subscription. A popup window may appear, asking you to sign in to Azure. If it does, enter your credentials and sign in.
+   :::image type="content" source="../media/4-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Service principal (automatic) option highlighted.":::
+
+1. In the **Subscription** drop-down, select your Azure subscription.
+
+   A popup window might appear, asking you to sign in to Azure. If it does, enter your credentials and sign in.
 
 1. In the **Resource group** drop-down, select **ToyWebsiteTest**.
 
 1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
+
+   :::image type="content" source="../media/4-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the details completed and the Next button highlighted.":::
 
 1. Select **Save**.
