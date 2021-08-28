@@ -45,26 +45,21 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 > [!IMPORTANT]
 > The final exercise in this module contains important cleanup steps. Be sure to follow the cleanup steps even if you don't complete this module.
 
-## Generate a Git password (macOS)
-
-When you work with Azure Repos in Visual Studio Code on macOS, you use a special password that's different from the password you use to sign in.
-
-> [!NOTE]
-> If you're using Windows, skip to the next section, *Clone the repository*.
-
-1. On a computer running macOS, in Azure DevOps, select **Generate Git credentials**.
-
-    Azure Repos creates a random password for you to use.
-
-1. Copy the **Password** value somewhere safe. You'll use the password in the next section.
-
 ## Clone the repository
 
-In Visual Studio Code, clone your repository.
+1. Select **Repos** > **Files**.
 
-1. In **Clone to your computer**, select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
+   :::image type="content" source="../media/4-repos-files.png" alt-text="Screenshot of Azure DevOps that shows the Repos menu, with Files highlighted.":::
 
-    :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/3-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the Clone in VS Code button highlighted.":::
+1. Select **Clone**.
+
+   :::image type="content" source="../media/4-clone.png" alt-text="Screenshot of Azure DevOps showing the repository, with the Clone button highlighted.":::
+
+1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the username and password displayed to somewhere safe.
+
+1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
+
+    :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the Clone in VS Code button highlighted.":::
 
 1. Create a folder to use for the repository, and then choose **Select Repository Location**.
 
@@ -72,11 +67,9 @@ In Visual Studio Code, clone your repository.
 
     If you're using Windows, enter the same credentials you used to sign in to Azure DevOps earlier in this exercise.
 
-    If you're using macOS, paste the password that you generated earlier in this exercise.
+    If you're using macOS, use the username and password that you generated previously.
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
-
-    :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/3-open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code that shows a prompt to open the cloned repository, with the Open button highlighted.":::
 
 ## Sign in to Azure
 
