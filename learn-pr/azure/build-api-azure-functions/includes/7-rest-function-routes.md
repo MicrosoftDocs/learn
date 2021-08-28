@@ -2,13 +2,13 @@ You've created a wonderful API. It doesn't do much, but hey, it exists, and that
 
 You have endpoints called CreateProduct, GetProducts, UpdateProduct, and DeleteProduct. Endpoints named that way follow a traditional API-naming pattern - Action/Resource.
 
-The *Action/Resource* naming pattern is fine for smaller APIs. Remember, though, that in this simulation, Tailwind Traders is an internet giant. The Products API could get unwieldy in a hurry. For instance, you could imagine that you might have a method called "GetProductByIdAndQuantityAndDate". Not only are these types of method names verbose, but they make code that consumes them look cluttered. Wordy API names also make it harder for developers to figure out how to use the API in their projects.
+The *Action/Resource* naming pattern is fine for smaller APIs. Remember, though, that in this simulation, Tailwind Traders is an internet giant. The Products API could get unwieldy in a hurry. For instance, you could imagine that you might have a method called "GetProductByIdAndQuantityAndDate." Not only are these types of method names verbose, but they make code that consumes them look cluttered. Wordy API names also make it harder for developers to figure out how to use the API in their projects.
 
 What you need to do is make this API clean and intuitive. For that, you are going to be using the REST pattern.
 
 ### Azure Functions routes and HTTP request methods
 
-By default, any HTTP trigger function will respond to GET and POST requests. It also sets the URL of your function to the name of that function prefixed by "/api". Both of these things are configurable.
+By default, any HTTP trigger function will respond to GET and POST requests. It also sets the URL of your function to the name of that function prefixed by "/api." Both of these things are configurable.
 
 #### Change which HTTP request method a function responds to
 
@@ -67,7 +67,7 @@ You can change the URL, or *route* that Azure Functions listens on for a specifi
 
 Specifying a route changes everything after the *api* section of the URL. In the previous configuration file, the route to the *GetProducts* function is now `http://localhost:7071/api/products`.
 
-You can pass parameters along with a route. Parameters take the form of *{parameterName}*. This means that to pass a parameter called *id* to the *product* endpoint, you would specify the following route.
+You can pass parameters along with a route. Parameters take the form of *{parameterName}*. This means that to pass a parameter called "id" to the "product" endpoint, you would specify the following route.
 
 ```json
 "route": "product/{id}"

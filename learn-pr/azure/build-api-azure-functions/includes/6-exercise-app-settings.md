@@ -2,7 +2,7 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 ## Get the database connection string
 
-1. Paste the following code into Azure Cloud Shell on the right and press <kbd>Enter</kbd>.
+1. Paste the following code into Azure Cloud Shell on the right, and press <kbd>Enter</kbd>.
 
    ```bash
    cd mslearn-build-api-azure-functions/DB_SETUP && ./GET_CONNECTION_STRING.sh
@@ -14,7 +14,7 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 1. Open the `local.settings.json` file.
 
-1. In the *Values* section, add a setting for "CONNECTION_STRING", and paste in the value you copied in the previous section.
+1. In the "Values" section, add a setting for "CONNECTION_STRING", and paste in the value you copied in the previous section.
 
    ```json
    {
@@ -29,7 +29,7 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 ## Examine the productsService for the connection string
 
-Open the *api/services/productsService.ts* file.
+Open the `api/services/productsService.ts` file.
 
 Look at line 3. Notice that the connection string is read from the `process.env` variable.
 

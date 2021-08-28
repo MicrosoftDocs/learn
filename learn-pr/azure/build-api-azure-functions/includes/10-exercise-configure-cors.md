@@ -4,7 +4,7 @@ In this exercise, you'll configure Cross-Origin Resource Sharing (CORS) in Azure
 
 1. Open the `api/local.settings.json` file.
 
-1. Add a *Host* section below the *Values* property. Set the *CORS* value on *Host* to "\*".
+1. Add a "Host" section below the "Values" property. Set the "CORS" value on "Host" to "\*".
 
    ```json
    {

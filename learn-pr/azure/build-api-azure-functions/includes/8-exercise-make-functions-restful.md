@@ -2,13 +2,13 @@ The Products Manager API is about to get serious style upgrade courtesy of you -
 
 1. Open the `api/GetProducts/function.json` file.
 
-1. Modify the *methods* property so that it only contains the value *get*.
+1. Modify the "methods" property so that it only contains the value "get".
 
    ```json
    "methods": ["get"]
    ```
 
-1. Below the *methods* line, add a line that specifies a route of *products* for the GetProducts method.
+1. Below the "methods" line, add a line that specifies a route of "products" for the *GetProducts* method.
 
    ```json
    "route": "products"
@@ -46,19 +46,19 @@ The Products Manager API is about to get serious style upgrade courtesy of you -
 
 1. Open the `api/CreatProduct/function.json` file.
 
-1. Restrict the allowed *methods* to just *post*.
+1. Restrict the allowed "methods" to just "post".
 
    ```json
    "methods": ["post"]
    ```
 
-1. Below the *methods* line, add a line that specifies a new route for the CreateProduct method as *product*.
+1. Below the "methods" line, add a line that specifies a new route for the *CreateProduct* method as "product".
 
    ```json
    "route": "product"
    ```
 
-   Your `function.json` file for CreateProduct should now look like this.
+   Your `function.json` file for *CreateProduct* should now look like this.
 
    ```json
    {
@@ -83,21 +83,21 @@ The Products Manager API is about to get serious style upgrade courtesy of you -
 
 ## Make the UpdateProduct function RESTful
 
-1. Open the *api/UpdateProduct/function.json* file.
+1. Open the `api/UpdateProduct/function.json` file.
 
-1. Restrict the allowed *methods* to just *put*.
+1. Restrict the allowed "methods" to just "put".
 
    ```json
     "methods": ["put"]
    ```
 
-1. Below the *methods* line, add a line that specifies a new route for the UpdateProduct method as *product*.
+1. Below the "methods" line, add a line that specifies a new route for the *UpdateProduct* method as "product".
 
    ```json
    "route": "product"
    ```
 
-   Your `function.json` file for UpdateProduct should now look like this.
+   Your `function.json` file for *UpdateProduct* should now look like this.
 
    ```json
    {
@@ -122,15 +122,15 @@ The Products Manager API is about to get serious style upgrade courtesy of you -
 
 ## Make the DeleteProduct function RESTful
 
-1. Open the *api/DeleteProduct/function.json* file.
+1. Open the `api/DeleteProduct/function.json` file.
 
-1. Restrict the allowed *methods* to just *delete*.
+1. Restrict the allowed "methods" to just "delete".
 
    ```json
     "methods": ["delete"]
    ```
 
-1. Below the *methods* line, add a line that specifies a new route for the DeleteProduct method.
+1. Below the "methods" line, add a line that specifies a new route for the *DeleteProduct* method.
 
    ```json
    "route": "product/{id}"
