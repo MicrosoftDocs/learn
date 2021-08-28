@@ -17,17 +17,17 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
 
 1. At the bottom of the file, add the following:
 
-   :::code language="yaml" source="code/5-pipeline.yml" range="9, 34-50" :::
+   :::code language="yaml" source="code/5-pipeline.yml" range="9, 35-51" :::
 
 ## Add lint and validation stages to your pipeline
 
 1. Below the line that says `stages:`, add a lint stage:
 
-   :::code language="yaml" source="code/5-pipeline.yml" range="10-16" :::
+   :::code language="yaml" source="code/5-pipeline.yml" range="11-17" :::
 
 1. Below the lines you just added, add a validation stage:
 
-   :::code language="yaml" source="code/5-pipeline.yml" range="18-32" :::
+   :::code language="yaml" source="code/5-pipeline.yml" range="19-33" :::
 
    Your pipeline definition now has three stages: one for validating your Bicep file, one to perform a preflight validation, and one to perform the deployment to Azure.
 
