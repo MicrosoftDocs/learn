@@ -4,11 +4,11 @@ In this exercise, you'll update your function to parse information from the GitH
 
 1. In the Azure portal, navigate to the Function App that you created earlier.
 
-1. On the **Function App** pane, in the left menu under **Functions** section, select select **Functions**, and then select the HttpTrigger you created.
+1. On the **Function App** pane, in the left menu under **Functions** section, select **Functions**, and then select the HttpTrigger you created.
 
-1. In the resource menu for your Http Trigger function select **Code + Test**, and in the path above the code, select **index.js** from the dropdown list. The javascript for your trigger displays. 
+1. In the resource menu for your Http Trigger function select **Code + Test**, and in the path above the code, select **index.js** from the dropdown list. The JavaScript for your trigger displays. 
 
-1. Update the code by replacing the last 3 lines in the function body with the following code.
+1. Update the code by replacing the last three lines of code in the function body with the following code.
 
     ```JavaScript
     if (req.body.pages[0].title){
@@ -20,7 +20,7 @@ In this exercise, you'll update your function to parse information from the GitH
         context.res = {
             status: 400,
             body: ("Invalid payload for Wiki event")
-        }
+        };
     }
     ```
 
@@ -48,7 +48,7 @@ In this exercise, you'll update your function to parse information from the GitH
 
 1. In the message box that appears, select **Yes, redeliver this payload**. This action simulates you changing your Wiki page again.
 
-1. Select the **Response** tab. You'll see how the webhook, has triggered your function, which then parsed the information and sent back a response similar to the following text:
+1. Select the **Response** tab. You'll see how the webhook has triggered your function, which then parsed the information and sent a response similar to the following text:
 
     ```text
     Page is Home, Action is edited, Event Type is gollum
