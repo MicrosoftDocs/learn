@@ -22,7 +22,7 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
 
 ## Add a webhook for the Gollum event
 
-**Gollum** is the name of a Github event that is fired whenever a page in a repository's wiki is created or updated.
+**Gollum** is the name of a GitHub event that is fired whenever a page in a repository's wiki is created or updated.
 
 1. On the home page in the Wiki view is a **Pages** sidebar that lists the pages in your repo. Select **Home** to display the home page.
 
