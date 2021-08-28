@@ -22,7 +22,7 @@ The modules in this learning path are part of a progression. For learning purpos
 Run a template that sets up your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=deliveryplans&azure-portal=true) <!-- TODO change the name -->
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=testbicep&azure-portal=true) <!-- TODO finalize URL; for now, use  https://azuredevopsdemogenerator-mslearn.azurewebsites.net/ -->
 
 On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
@@ -38,30 +38,6 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 > [!IMPORTANT]
 > The final exercise in this module contains important cleanup steps. Be sure to follow the cleanup steps even if you don't complete this module.
-
-### Update the pipeline settings
-
-The project created by the template needs a couple of changes so that your pipeline runs correctly.
-
-1. In the left menu, select **Pipelines**.
-
-1. Select **toy-website-test**.
-
-1. Select the **Edit** button.
-
-1. Select the button with three dots and select **Triggers** from the popup menu.
-
-1. Deselect the checkbox next to **Override the YAML continuous integration trigger from here**.
-
-1. Select the **YAML** tab.
-
-1. Select **Pipeline**.
-
-1. In the **Default agent pool for YAML**, select **Azure Pipelines**.
-
-1. Select the down arrow next to **Save and queue**, and select **Save**.
-
-1. Select **Save**.
 
 ## Generate a Git password (macOS)
 
