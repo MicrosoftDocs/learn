@@ -9,9 +9,9 @@ Now, you can be more confident that your automated deployments will succeed and 
 - [Stages](/azure/devops/pipelines/process/stages?tabs=yaml)
 - [Environments](/azure/devops/pipelines/process/environments)
 - [Deployment jobs](/azure/devops/pipelines/process/deployment-jobs)
-- Approvals and policies:
-  - [Pipeline approvals](/azure/devops/pipelines/process/approvals)
-  - [Branch policies](/azure/devops/repos/git/branch-policies)
+- [Pipeline approvals and checks](/azure/devops/pipelines/process/approvals)
+- [Branch policies](/azure/devops/repos/git/branch-policies)
+- [What-if operation](/azure/azure-resource-manager/templates/deploy-what-if)
 - Testing
   - [Pester](https://github.com/pester/Pester)
   - [Use output variables from tasks](/azure/devops/pipelines/process/variables#use-output-variables-from-tasks)
