@@ -34,7 +34,7 @@ The following illustration depicts sending an encrypted message by using Public 
 
 :::image type="content" source="../media/2-public-key-encryption.png" alt-text="diagram of a secure exchange of a message using a public key encryption process." border="false":::
 
-The process includes the following procedures
+The process includes the following procedures:
 
 - Public and private keys are generated.
 - The public keys are exchanged or placed in a publicly accessible database.
