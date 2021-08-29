@@ -15,49 +15,37 @@ content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
   questions:
-  - content: In which order will the stages be run?
-    choices:
-    - content: TODO
-      isCorrect: true
-      explanation: TODO
-    - content: TODO
-      isCorrect: false
-      explanation: TODO
-    - content: TODO
-      isCorrect: false
-      explanation: TODO
   - content: |
-      Consider the pipeline above. Currently, the pipeline deploys to the test environment, but you want to manually verify the state of the deployment before deploying to the test environment. What's the best way to achieve this?
+      What could you do to minimize the chance of this error happening again?
     choices:
-    - content: Add an approval gate to the service connection used by the test environment.
+    - content: Add an approval check to the pipeline.
+      isCorrect: false
+      explanation: Incorrect. An approval check enables you to manually check your environment or pipeline, but it doesn't help to reduce the chance of an invalid template being submitted to Azure.
+    - content: Run preflight validation within your pipeline.
       isCorrect: true
-      explanation: Correct. TODO
-    - content: Monitor the pipeline execution. Press the **Stop** button just before the deployment to the test environment begins.
+      explanation: Correct. The preflight validation process performs validation of your template. It reports errors that prevent the template deployment from being submitted to Azure.
+    - content: Add a rollback stage to your pipeline.
       isCorrect: false
-      explanation: Incorrect. TODO
-    - content: Add a variable to pipeline named **StopBeforeTestDeploy** with a value of **true**.
-      isCorrect: false
-      explanation: Incorrect. TODO
-  - content: |
-      You are designing a pipeline and want to verify the Bicep file is valid before you deploy it. Which of these should you do?
+      explanation: Incorrect. A rollback stage can run to reverse the effects of a stage that's failed, but it doesn't help to validate the Bicep file you submit.
+  - content: Your operations team asks you to verify that a database server deployed by the pipeline is configured to accept requests. How should you meet this requirement?
     choices:
-    - content: Run `az bicep check`.
+    - content: Run the Bicep linter within your pipeline.
       isCorrect: false
-      explanation: Incorrect. TODO
-    - content: Deploy the Bicep file and wait to see if there are errors.
+      explanation: Incorrect. While the Bicep linter is useful, it doesn't tell you whether your Azure resources are configured according to your requirements.
+    - content: Add the what-if operation to your pipeline.
       isCorrect: false
-      explanation: Incorrect. TODO
-    - content: Run `az deployment group validate`.
+      explanation: Incorrect. While the what-if operation is useful, it doesn't tell you whether your Azure resources are configured according to your requirements.
+    - content: Add an approval check to the stage after the deployment completes.
       isCorrect: true
-      explanation: Correct. TODO
+      explanation: Correct. A human can verify the configuration of your environment after deployment and then approve the continuation of the pipeline. You could also consider running an automated smoke test.
   - content: Which of these statements is true?
     choices:
-    - content: Every linting warning in Bicep should cause the pipeline to stop.
+    - content: A linting warning in Bicep should cause the pipeline to stop.
       isCorrect: false
-      explanation: Incorrect. TODO
+      explanation: Incorrect. Linter warnings don't automatically cause your pipeline to stop. You can configure the linter to emit errors, which cause your pipeline to stop. Also, you might choose to leave some linter checks as warnings.
     - content: A template with no linting warnings or errors is guaranteed to deploy successfully.
       isCorrect: false
-      explanation: Incorrect. TODO
+      explanation: Incorrect. The linter only verifies some basic code style checks. Your template might lint successfully but not deploy.
     - content: Linting ensures that your Bicep file meets a minimum code style quality level.
       isCorrect: true
-      explanation: Correct. TODO
+      explanation: Correct. The linter doesn't verify that your template will deploy successfully, but it checks that you've met some basic code style checks.
