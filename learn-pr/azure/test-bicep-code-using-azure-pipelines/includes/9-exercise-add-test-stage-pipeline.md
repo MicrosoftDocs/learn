@@ -21,20 +21,20 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
    > [!NOTE]
    > TODO explain the test
 
-## Add a test stage to your pipeline
+## Add a smoke test stage to your pipeline
 
 1. In Visual Studio Code, open the *deploy/azure-pipelines.yaml* file.
 
 1. In the **Deploy** stage, update the `inlineScript` to the following:
 
-   :::code language="bash" source="code/9-pipeline.yml" range="68-74" :::
+   :::code language="bash" source="code/9-pipeline.yml" range="75-81" :::
 
    > [!NOTE]
    > TODO explain this
 
-1. At the bottom of the file, add the following definition for the **Test** stage:
+1. At the bottom of the file, add the following definition for the **SmokeTest** stage:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="76-99" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="83-109" :::
 
    > [!NOTE]
    > TODO explain this
@@ -45,7 +45,7 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
 1. Verify that your *azure-pipelines.yml* file looks like the following:
 
-   :::code language="yaml" source="code/9-pipeline.yml" highlight="68-74, 76-99" :::
+   :::code language="yaml" source="code/9-pipeline.yml" highlight="75-81, 83-109" :::
 
    If it doesn't, update it to match this example, then save it.
 
@@ -69,7 +69,7 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
 1. Select **Approve**. Wait for the pipeline execution to finish.
 
-   Notice that the **Deploy** stage completes successfully. The **Test** stage completes with an error.
+   Notice that the **Deploy** stage completes successfully. The **SmokeTest** stage completes with an error.
 
 1. Select the **Tests** tab.
 
@@ -111,7 +111,7 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
 1. Select **Approve**. Wait for the pipeline execution to finish.
 
-   Notice that the entire pipeline completes successfully, including the **Test** stage. This indicates that both tests passed.
+   Notice that the entire pipeline completes successfully, including the **SmokeTest** stage. This indicates that both tests passed.
 
 ## Clean up the resources
 

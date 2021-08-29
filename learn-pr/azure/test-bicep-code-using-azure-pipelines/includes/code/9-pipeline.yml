@@ -10,17 +10,21 @@ stages:
 
 - stage: Lint
   jobs: 
-  - job: Lint
+  - job: LintCode
+    displayName: Lint code
     steps:
       - script: |
-          bicep build deploy/main.bicep
-        name: Lint
+          az bicep build deploy/main.bicep
+        name: LintBicepCode
+        displayName: Run Bicep linter
 
 - stage: Validate
-  jobs: 
-  - job: Validate
+  jobs:
+  - job: ValidateBicepCode
+    displayName: Validate Bicep code
     steps:
       - task: AzureCLI@2
+        name: RunPreflightValidation
         displayName: Run preflight validation
         inputs:
           azureSubscription: $(ServiceConnectionName)
@@ -34,9 +38,11 @@ stages:
 
 - stage: Preview
   jobs: 
-  - job: Preview
+  - job: PreviewAzureChanges
+    displayName: Preview Azure changes
     steps:
       - task: AzureCLI@2
+        name: RunWhatIf
         displayName: Run what-if
         inputs:
           azureSubscription: $(ServiceConnectionName)
@@ -50,7 +56,8 @@ stages:
 
 - stage: Deploy
   jobs:
-  - deployment: Deploy
+  - deployment: DeployWebsite
+    displayName: Deploy Website
     environment: Website
     strategy:
       runOnce:
@@ -58,8 +65,8 @@ stages:
           steps:
             - checkout: self
             - task: AzureCLI@2
-              name: Deploy
-              displayName: Deploy to Azure
+              name: DeployBicepFile
+              displayName: Deploy Bicep file
               inputs:
                 azureSubscription: $(ServiceConnectionName)
                 scriptType: 'bash'
@@ -73,14 +80,16 @@ stages:
                   appServiceAppHostName=$(echo $deploymentOutput | jq -r '.properties.outputs.appServiceAppHostName.value')
                   echo "##vso[task.setvariable variable=appServiceAppHostName;isOutput=true]$appServiceAppHostName"
 
-- stage: Test
+- stage: SmokeTest
   jobs:
-  - job: Test
+  - job: SmokeTest
+    displayName: Smoke test
     variables:
-      appServiceAppHostName: $[ stageDependencies.Deploy.Deploy.outputs['deploy.Deploy.appServiceAppHostName'] ]
+      appServiceAppHostName: $[ stageDependencies.Deploy.DeployWebsite.outputs['DeployWebsite.DeployBicepFile.appServiceAppHostName'] ]
     steps:
       - task: PowerShell@2
-        displayName: Run tests
+        name: RunSmokeTests
+        displayName: Run smoke tests
         inputs:
           targetType: inline
           script: |
@@ -92,6 +101,7 @@ stages:
               -CI
 
       - task: PublishTestResults@2
+        name: PublishTestResults
         displayName: Publish test results
         condition: always()
         inputs:

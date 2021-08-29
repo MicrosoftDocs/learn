@@ -43,7 +43,7 @@ During the process, you'll:
 
 1. Between the **Validate** and **Deploy** stages, add the following definition for the **Preview** stage:
 
-   :::code language="yaml" source="code/7-pipeline.yml" range="35-49" :::
+   :::code language="yaml" source="code/7-pipeline.yml" range="39-55" :::
 
 ## Update the pipeline definition to require an environment and approval
 
@@ -51,7 +51,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
 1. Update the **Deploy** stage definition to the following:
 
-   :::code language="yaml" source="code/7-pipeline.yml" range="51-72" :::
+   :::code language="yaml" source="code/7-pipeline.yml" range="59-79" :::
 
    > [!NOTE]
    > Notice that you define a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't do this, the deployment job won't be able to read your Bicep file.
@@ -62,7 +62,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
 1. Verify that your *azure-pipelines.yml* file looks like the following:
 
-   :::code language="yaml" source="code/7-pipeline.yml" highlight="35-49, 53-72" :::
+   :::code language="yaml" source="code/7-pipeline.yml" highlight="39-55, 59-79" :::
 
    If it doesn't, update it to match this example, then save it.
 
@@ -88,7 +88,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
 1. Select the **Run what-if** step to inspect the changes that the what-if command reports on.
 
-1. Notice that the pipeline log provides the following what-if results:
+1. Notice that the pipeline log provides what-if results similar to the following:
 
    ```output
    Resource and property changes are indicated with these symbols:
@@ -112,6 +112,8 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
    ```
 
    The what-if operation has detected a change to the website resource. However, the changes it's detected are called *noise*. They don't represent real changes to your resource. Over time, the Azure team works to reduce the noise. In the meantime, for these two specific properties, you can ignore the detected changes.
+
+   <!-- TODO might also see App Insights thing -->
 
 ## Approve the pipeline run
 

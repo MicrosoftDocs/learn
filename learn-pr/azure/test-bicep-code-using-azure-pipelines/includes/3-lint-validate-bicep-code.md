@@ -50,7 +50,7 @@ You also should check whether your Bicep template is likely to deploy to your Az
 
 Preflight validation requires communication with Azure, but it doesn't actually deploy any resources.
 
-:::image type="content" source="../media/3-stages-preflight.png" alt-text="Diagram showing a pipeline with a lint and validate stage, each containing a single job. The validate stage communicates with Azure." border="false":::
+:::image type="content" source="../media/3-stages-validate.png" alt-text="Diagram showing a pipeline with a lint and validate stage, each containing a single job. The validate stage communicates with Azure." border="false":::
 
 You use the `az deployment group validate` command to submit a Bicep file for preflight validation:
 

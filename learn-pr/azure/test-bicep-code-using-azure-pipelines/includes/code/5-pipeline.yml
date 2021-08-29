@@ -10,17 +10,21 @@ stages:
 
 - stage: Lint
   jobs: 
-  - job: Lint
+  - job: LintCode
+    displayName: Lint code
     steps:
       - script: |
-          bicep build deploy/main.bicep
-        name: Lint
+          az bicep build deploy/main.bicep
+        name: LintBicepCode
+        displayName: Run Bicep linter
 
 - stage: Validate
   jobs: 
-  - job: Validate
+  - job: ValidateBicepCode
+    displayName: Validate Bicep code
     steps:
       - task: AzureCLI@2
+        name: RunPreflightValidation
         displayName: Run preflight validation
         inputs:
           azureSubscription: $(ServiceConnectionName)
