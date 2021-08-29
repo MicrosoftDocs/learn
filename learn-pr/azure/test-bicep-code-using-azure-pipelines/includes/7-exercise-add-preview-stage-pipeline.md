@@ -94,7 +94,11 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
    Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-1. Notice that pipeline prompts you to approve the pipeline. You also receive an email informing you that the pipeline needs your approval.
+1. Notice that Azure Pipelines prompts you for an approval. You also receive an email informing you that the pipeline needs your approval.
+
+   :::image type="content" source="../media/7-pipeline-run-approval-required.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline run, with the approval requirement highlighted.":::
+
+   Before you approve the continuation of the pipeline, you'll review the what-if results to ensure they match your expectations.
 
 1. Select the **Preview** stage.
 
@@ -113,9 +117,13 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
 1. Select the left arrow to return to the pipeline run details.
 
-1. Select the **Review** button.
+   :::image type="content" source="../media/7-pipeline-run-log-back.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline log menu, with the back arrow highlighted.":::
+
+1. Select the **Review** button on the approval panel.
 
 1. In the **Comment** field, enter *Reviewed what-if results*.
+
+   :::image type="content" source="../media/7-pipeline-run-approve.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline approval page, with the 'Approve' button highlighted.":::
 
 1. Select **Approve**.
 
