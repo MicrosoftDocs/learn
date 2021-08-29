@@ -91,17 +91,21 @@ Now, you can add a smoke test stage that runs your tests.
 
    Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-1. Select the **Review** button.
+1. Select the **Review** button and then select **Approve**.
 
-1. Select **Approve**. Wait for the pipeline execution to finish.
+   Wait for the pipeline execution to finish.
 
-   Notice that the **Deploy** stage completes successfully. The **SmokeTest** stage completes with an error.
+1. Notice that the **Deploy** stage completes successfully. The **SmokeTest** stage completes with an error.
+
+   :::image type="content" source="../media/9-pipeline-run-stages-smoketest.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline run stages. The SmokeTest stage reports it failed.":::
 
 1. Select the **Tests** tab.
 
-   Notice that the test summary shows that two tests ran: one passed and one failed.
+   :::image type="content" source="../media/9-pipeline-run-test-tab.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline run, with the 'Tests' tab highlighted.":::
 
-1. Notice that the test that failed is listed as *Toy Website.Does not serve pages over HTTP*.
+1. Notice that the test summary shows that two tests ran: one passed and one failed. The test that failed is listed as *Toy Website.Does not serve pages over HTTP*.
+
+   :::image type="content" source="../media/9-pipeline-run-test-results.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline run test results, with the failed test highlighted.":::
 
    This indicates that the website hasn't been correctly configured to meet your security team's requirement.
 
@@ -125,9 +129,9 @@ Now, you can add a smoke test stage that runs your tests.
 
 ## Run the pipeline again
 
-1. In your browser, navigate to your pipeline. 
+1. In your browser, navigate to your pipeline.
 
-1. Select the most recent run of your pipeline.
+1. Select the most recent run.
 
    Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
@@ -139,11 +143,13 @@ Now, you can add a smoke test stage that runs your tests.
 
 1. Go back to the pipeline run.
 
-1. Select the **Review** button.
+1. Select the **Review** button and then select **Approve**.
 
-1. Select **Approve**. Wait for the pipeline execution to finish.
+   Wait for the pipeline execution to finish.
 
-   Notice that the entire pipeline completes successfully, including the **SmokeTest** stage. This indicates that both tests passed.
+1. Notice that the entire pipeline completes successfully, including the **SmokeTest** stage. This indicates that both tests passed.
+
+   :::image type="content" source="../media/9-pipeline-run-success.png" alt-text="Screenshot of the Azure DevOps interface showing the successful pipeline run.":::
 
 ## Clean up the resources
 
