@@ -9,7 +9,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement certifications in academic programs
-prerequisites: None
+prerequisites: |
+  None
 video:
   title: "Implement certifications in academic programs"
   url: https://www.microsoft.com/en-us/videoplayer/embed/RWK4UU
