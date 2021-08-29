@@ -37,7 +37,9 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
 
 By default, the Bicep linter provides a warning when it detects a problem with your file. Azure Pipelines doesn't treat linter warnings as issues that should stop your pipeline. To customize this behavior, you create a *bicepconfig.json* that reconfigures the linter.
 
-1. Add a new file in the *deploy* folder and name it `bicepconfig.json`.
+1. Add a new file in the *deploy* folder and name it *bicepconfig.json*.
+   
+   :::image type="content" source="../media/5-visual-studio-code-bicep-config-file.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the deploy folder and the bicepcnfig dot J S O N file shown.":::
 
 1. Copy the following into the file:    
 
