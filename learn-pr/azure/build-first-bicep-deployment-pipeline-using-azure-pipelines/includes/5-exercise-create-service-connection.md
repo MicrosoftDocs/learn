@@ -166,13 +166,17 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 You've created a resource group and a service principal. Next, create a service connection in Azure Pipelines.
 
-1. In your browser, select **Project settings** > **Service connections** > **Create service connection**.
+1. In your browser, select **Project settings**.
 
-   :::image type="content" source="../media/5-create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the 'Create service connection' button highlighted.":::
+   :::image type="content" source="../../includes/media/project-settings.png" alt-text="Screenshot of Azure DevOps that shows the menu, with the 'Project settings' item highlighted.":::
+
+1. Select **Service connections** > **Create service connection**.
+
+   :::image type="content" source="../../includes/media/create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the 'Create service connection' button highlighted.":::
 
 1. Select **Azure Resource Manager** > **Next**.
 
-   :::image type="content" source="../media/5-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Azure Resource Manager service connection type highlighted.":::
+   :::image type="content" source="../../includes/media/create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Azure Resource Manager service connection type highlighted.":::
 
 1. Select **Service principal (manual)** > **Next**.
 
