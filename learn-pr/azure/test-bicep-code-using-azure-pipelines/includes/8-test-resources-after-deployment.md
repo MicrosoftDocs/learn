@@ -19,7 +19,7 @@ These tests are sometimes called *infrastructure smoke tests*. Smoke testing is 
 It's also a good idea to perform *negative testing*. Negative testing helps you to confirm that your resources don't have undesired behavior. For example, when you deploy a virtual machine, it's good practice to use Azure Bastion to access the virtual machine securely. You could add a negative test to your pipeline to verify that you can't connect to the virtual machine directly using Remote Desktop Connection or SSH.
 
 > [!NOTE]
-> The goal of these tests isn't to verify that Bicep has actually deployed your resources correctly. By using Bicep, you're making the assumption that it will deploy the resources that you specify in your Bicep files. Instead, the goal is to verify that the resources that you've defined will actually work for your requirements.
+> The goal of these tests isn't to verify that Bicep has deployed your resources correctly. By using Bicep, you're making the assumption that it will deploy the resources that you specify in your Bicep files. Instead, the goal is to verify that the resources that you've defined will work for your requirements.
 
 ### Run tests from Azure Pipelines
 

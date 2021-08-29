@@ -14,6 +14,8 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
 1. In Visual Studio Code, create a new file in the *deploy* folder named *Website.Tests.ps1*.
 
+   :::image type="content" source="../media/9-visual-studio-code-website-tests-file.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the deploy folder and the Website dot Tests dot P S 1 file shown.":::
+
 1. Paste the following test code into the file:
 
    :::code language="powershell" source="code/9-test.ps1" :::

@@ -39,7 +39,7 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 1. Add a new file in the *deploy* folder and name it *bicepconfig.json*.
    
-   :::image type="content" source="../media/5-visual-studio-code-bicep-config-file.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the deploy folder and the bicepcnfig dot J S O N file shown.":::
+   :::image type="content" source="../media/5-visual-studio-code-bicep-config-file.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the deploy folder and the bicepconfig dot J S O N file shown.":::
 
 1. Copy the following into the file:    
 

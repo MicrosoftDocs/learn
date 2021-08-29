@@ -12,11 +12,17 @@ During the process, you'll:
 
 1. In your browser, navigate to **Pipelines** > **Environments**.
 
-1. Select **New environment**.
+   :::image type="content" source="../media/7-environments.png" alt-text="Screenshot of the Azure DevOps interface showing the Pipelines menu, with the Environments item highlighted.":::
+
+1. Select **Create environment**.
+
+   :::image type="content" source="../media/7-environments-new.png" alt-text="Screenshot of the Azure DevOps interface showing the Environments page, with the 'Create environment' button highlighted.":::
 
 1. Enter the environment name **Website**.
 
    Don't enter a description. For the **Resource**, select **None**.
+
+   :::image type="content" source="../media/7-environments-new-details.png" alt-text="Screenshot of the Azure DevOps 'New environment' page with the details completed and the 'Create' button highlighted.":::
 
    > [!NOTE]
    > In Azure Pipelines, environments are used to enable a number of deployment features. These only apply when you're deploying to Kubernetes or to virtual machines. In this module, we don't use these features and you can ignore them.
@@ -27,9 +33,15 @@ During the process, you'll:
 
 1. Near the top-right of the page, select the button with three dots and select **Approvals and checks** from the popup menu.
 
+   :::image type="content" source="../media/7-add-check.png" alt-text="Screenshot of the Azure DevOps interface showing the Website environment, with the three dots button highlighted.":::
+
 1. Select **Approvals**.
 
+   :::image type="content" source="../media/7-add-check-approval.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Add check' page, with the 'Approvals' item highlighted.":::
+
 1. Select yourself in the **Approvers** textbox.
+
+   :::image type="content" source="../media/7-add-check-approval-details.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Add approval check' page, with the details completed and the 'Create' button highlighted.":::
 
 1. Select the down arrow button next to **Advanced**.
 
