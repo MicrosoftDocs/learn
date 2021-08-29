@@ -13,7 +13,7 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
 
 1. In Visual Studio Code, open the *deploy/azure-pipelines.yml* file. 
 
-1. Remove everything in the file below the `vmImage` line.
+1. Remove everything in the file from line 9 down (where it says `jobs:`).
 
 1. At the bottom of the file, add the following:
 
@@ -25,11 +25,15 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
 
    :::code language="yaml" source="code/5-pipeline.yml" range="11-19" :::
 
+   This stage defines a single step, which runs the `az bicep build` command to lint the Bicep file.
+
 1. Below the lines you just added, add a validation stage:
 
    :::code language="yaml" source="code/5-pipeline.yml" range="21-37" :::
 
-   Your pipeline definition now has three stages: one for validating your Bicep file, one to perform a preflight validation, and one to perform the deployment to Azure.
+   This stage defines a single step, which runs the `az deployment group validate` command.
+
+   Your pipeline definition now has three stages: the first lints your Bicep file, the second performs a preflight validation, and the third performs the deployment to Azure.
 
 1. Save the file.
 
@@ -62,17 +66,25 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 ## View the pipeline run
 
-1. In your browser, navigate to your pipeline.
+1. In your browser, navigate to **Pipelines**.
 
 1. Select the most recent run of your pipeline.
 
-1. Wait until the pipeline run is finished. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   :::image type="content" source="../media/5-pipeline-last-run.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline, with the link to the latest pipeline run highlighted.":::
 
-   Notice that the pipeline run now shows the three stages you defined in the YAML file. Also notice that the **Lint** stage has failed.
+   If the pipeline is still running, wait until it's finished. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+
+1. Notice that the pipeline run now shows the three stages you defined in the YAML file. Also notice that the **Lint** stage has failed.
+
+   :::image type="content" source="../media/5-pipeline-run-stages-lint.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline run, with the Lint stage reporting failure.":::
 
 1. Select the **Lint** stage to see its details.
 
-1. Select the **Lint** step to view the pipeline log.
+   :::image type="content" source="../media/5-pipeline-run-lint-stage-select.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline run, with the name of the Lint stage highlighted.":::
+
+1. Select the **Run Bicep linter** step to view the pipeline log.
+
+   :::image type="content" source="../media/5-pipeline-run-lint-stage-step.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline log for the Lint stage, with the 'Run Bicep linter' step highlighted.":::
 
    Notice that the error displayed is similar to the following:
 
@@ -104,17 +116,21 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 1. In your browser, navigate to your pipeline.
 
-1. Select the most recent run of your pipeline.
+1. Select the most recent run.
 
-1. Wait until the pipeline run is finished. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   Wait until the pipeline run is finished. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-   Notice that the **Lint** stage completed successfully, but now the **Validate** stage has failed.
+1. Notice that the **Lint** stage completed successfully, but now the **Validate** stage has failed:
+
+   :::image type="content" source="../media/5-pipeline-run-stages-validate.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline run, with the Lint stage reporting success and the Validate stage reporting failure.":::
 
 1. Select the **Validate** stage to see its details.
 
 1. Select the **Run preflight validation** step to view the pipeline log.
 
-   Notice that the error displayed includes the following message:
+   :::image type="content" source="../media/5-pipeline-run-validate-stage-step.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline log for the Validate stage, with the 'Run preflight validation' step highlighted.":::
+
+   Notice that the error displayed in the log includes the following message:
 
    > mystorageresourceNameSuffix is not a valid storage account name. Storage account name must be between 3 and 24 characters in length and use numbers and lower-case letters only.
 
@@ -148,10 +164,12 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 1. In your browser, navigate to your pipeline.
 
-1. Select the most recent run of your pipeline.
+1. Select the most recent run.
 
-1. Wait until the pipeline run is finished. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   Wait until the pipeline run is finished. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-   Notice that all three stages of the pipeline have run successfully.
+1. Notice that all three stages of the pipeline have completed successfully:
 
-You now have a pipeline that successfully detects errors in your Bicep code early in your deployment process.
+   :::image type="content" source="../media/5-pipeline-run-stages-success.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline run, with all three stages reporting success.":::
+
+You now have a pipeline that successfully detects errors in your Bicep code early in your deployment process, and then deploys to Azure if there are no errors.
