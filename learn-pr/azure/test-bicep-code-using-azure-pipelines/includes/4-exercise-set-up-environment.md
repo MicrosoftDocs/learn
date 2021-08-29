@@ -159,7 +159,7 @@ New-AzResourceGroup -Name ToyWebsiteTest -Location westus
 
 ## Create a service connection in Azure Pipelines
 
-You've created a resource group. Next, create a service connection in Azure Pipelines. This automatically creates a service principal in Azure, and it grants the service principal the Contributor role on your resource group.
+Next, create a service connection in Azure Pipelines. This automatically creates a service principal in Azure, and it grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy to it.
 
 1. In your browser, select **Project settings**.
 
