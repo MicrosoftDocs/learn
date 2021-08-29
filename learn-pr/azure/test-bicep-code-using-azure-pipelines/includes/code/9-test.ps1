@@ -17,7 +17,7 @@ Describe 'Toy Website' {
       $request = [System.Net.WebRequest]::Create("http://$HostName/")
       $request.AllowAutoRedirect = $false
       $request.GetResponse().StatusCode | 
-        Should -BeGreaterThan 300 -Because "HTTP is not secure"
+        Should -BeGreaterOrEqual 300 -Because "HTTP is not secure"
     }
 
 }

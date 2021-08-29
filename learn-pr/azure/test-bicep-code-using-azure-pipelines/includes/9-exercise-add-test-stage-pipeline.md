@@ -1,4 +1,4 @@
-TODO
+Your toy company's security team have asked you to verify that your website is only accessible by using HTTPS. In this exercise, you configure your pipeline to run a smoke test that checks the security team's requirement.
 
 During the process, you'll: 
 
@@ -18,10 +18,16 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
    :::code language="powershell" source="code/9-test.ps1" :::
 
-   > [!NOTE]
-   > TODO explain the test
+   This is a Pester test file. It requires a parameter named `$HostName`, and when it's executed, it runs two tests against the host name:
+   - Try to connect to the website over HTTPS. The test passes if the server responds with an HTTP response status code of between 200 and 299, which indicates a successful connection.
+   - Try to connect to the website over HTTP. The test passes if the server responds with an HTTP response status code of 300 or higher.
 
-## Add a smoke test stage to your pipeline
+   > [!NOTE]
+   > It's not important that you understand the details of the test file and how it works, but we provide links in the summary so you can learn more if you're interested.
+
+## Publish your Bicep file's output as a stage output variable
+
+The test script you created in the preceding steps requires a host name to test. Your Bicep file already includes an output, but before you can use it in your smoke tests you need to publish it as a stage output variable.
 
 1. In Visual Studio Code, open the *deploy/azure-pipelines.yaml* file.
 
@@ -29,15 +35,33 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
    :::code language="bash" source="code/9-pipeline.yml" range="75-81" :::
 
-   > [!NOTE]
-   > TODO explain this
+   Now, your deployment process still uses the same Azure CLI command as it did previously, but the output of that command is stored in a script variable named `deploymentOutput`. The output of Azure CLI commands is formatted as JSON.
+
+   After the deployment completes, the script accesses the value of the `appServiceAppHostName` output from the Bicep deployment. It does this by using the `jq` tool to access the relevant part of the JSON output. Then, it publishes the value to a stage output variable named `appServiceAppHostName`.
+
+1. Save the file.
+
+## Add a smoke test stage to your pipeline
+
+Now, you can add a smoke test stage that runs your tests.
 
 1. At the bottom of the file, add the following definition for the **SmokeTest** stage:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="83-109" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="83-88" :::
 
-   > [!NOTE]
-   > TODO explain this
+   This code defines the stage and a job. It also creates a variable in the job named `appServiceAppHostName`, which takes its value from the output variable you created in the preceding section.
+
+1. At the bottom of the file, add the following step definition to the **SmokeTest** stage:
+
+   :::code language="yaml" source="code/9-pipeline.yml" range="89-101" :::
+
+   This step runs a PowerShell script to execute the test script you wrote above by using the Pester testing tool.
+
+1. At the bottom of the file, add the following step definition to the **SmokeTest** stage:
+
+   :::code language="yaml" source="code/9-pipeline.yml" range="103-109" :::
+
+   This step takes the test results file from Pester and publishes it as test results to the pipeline. You'll see how this is displayed shortly.
 
 1. Save the file.
 
@@ -105,7 +129,13 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
    Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-   <!-- TODO mention review what-if to see the new property -->
+1. Select the **Preview** stage, and review the what-if results again.
+
+   Notice that the what-if command has detected the change in the `httpsOnly` property's value:
+
+   :::code language="output" source="code/9-what-if-output.txt" highlight="13" :::
+
+1. Go back to the pipeline run.
 
 1. Select the **Review** button.
 

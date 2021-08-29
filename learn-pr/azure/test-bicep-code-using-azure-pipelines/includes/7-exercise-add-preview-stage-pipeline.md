@@ -90,30 +90,12 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
 1. Notice that the pipeline log provides what-if results similar to the following:
 
-   ```output
-   Resource and property changes are indicated with these symbols:
-     + Create
-     ~ Modify
-     = Nochange
-   
-   The deployment will update the following scope:
-   
-   Scope: /subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyWebsiteTest
-   
-     ~ Microsoft.Web/sites/toy-website-nbfnedv766snk [2021-01-15]
-       + properties.siteConfig.localMySqlEnabled:   false
-       + properties.siteConfig.netFrameworkVersion: "v4.6"
-   
-     = Microsoft.Insights/components/toywebsite [2020-02-02]
-     = Microsoft.Storage/storageAccounts/mystoragenbfnedv766snk [2021-04-01]
-     = Microsoft.Web/serverfarms/toy-website [2021-01-15]
-   
-   Resource changes: 1 to modify, 3 no change.   
-   ```
+   :::code language="output" source="code/7-what-if-output.txt" :::
 
    The what-if operation has detected a change to the website resource. However, the changes it's detected are called *noise*. They don't represent real changes to your resource. Over time, the Azure team works to reduce the noise. In the meantime, for these two specific properties, you can ignore the detected changes.
 
-   <!-- TODO might also see App Insights thing -->
+   > [!NOTE]
+   > You might also see an item in the what-if output for the resource type `microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - toywebsite`. This is a resource that's automatically created by Application Insights. The what-if command detects no change will be made to the resource.
 
 ## Approve the pipeline run
 
