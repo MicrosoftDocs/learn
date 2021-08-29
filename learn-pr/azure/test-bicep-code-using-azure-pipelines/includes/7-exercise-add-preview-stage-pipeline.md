@@ -82,7 +82,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
    Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-1. Notice that pipeline prompts yu to approve the pipeline. You also receive an email informing you that the pipeline needs your approval.
+1. Notice that pipeline prompts you to approve the pipeline. You also receive an email informing you that the pipeline needs your approval.
 
 1. Select the **Preview** stage.
 
@@ -125,7 +125,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
 ## Observe the successful deployment
 
-1. After you've approved the pipeline run, notice the **Deploy** stage starts execution.
+1. After you've approved the pipeline run, notice the **Deploy** stage starts running.
 
    Wait for the stage to complete.
 

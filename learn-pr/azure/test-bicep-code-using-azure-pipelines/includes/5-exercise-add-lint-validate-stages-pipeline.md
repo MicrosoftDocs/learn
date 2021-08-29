@@ -64,6 +64,8 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 1. Select the most recent run of your pipeline.
 
+1. Wait until the pipeline run is finished. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+
    Notice that the pipeline run now shows the three stages you defined in the YAML file. Also notice that the **Lint** stage has failed.
 
 1. Select the **Lint** stage to see its details.
@@ -101,6 +103,8 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 1. In your browser, navigate to your pipeline.
 
 1. Select the most recent run of your pipeline.
+
+1. Wait until the pipeline run is finished. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
    Notice that the **Lint** stage completed successfully, but now the **Validate** stage has failed.
 
@@ -143,6 +147,8 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 1. In your browser, navigate to your pipeline.
 
 1. Select the most recent run of your pipeline.
+
+1. Wait until the pipeline run is finished. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
    Notice that all three stages of the pipeline have run successfully.
 

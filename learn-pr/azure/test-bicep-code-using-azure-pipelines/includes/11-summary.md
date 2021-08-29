@@ -9,3 +9,4 @@ Now, you can be more confident that your automated deployments will succeed and 
 - [Pipeline approvals](/azure/devops/pipelines/process/approvals)
 - [Branch policies](/azure/devops/repos/git/branch-policies)
 - [Deployment jobs](/azure/devops/pipelines/process/deployment-jobs)
+- [Pester](https://github.com/pester/Pester)

@@ -99,8 +99,6 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
 ## Run the pipeline again
 
-1. In your browser, navigate to your pipeline runs. 
-
 1. In your browser, navigate to your pipeline. 
 
 1. Select the most recent run of your pipeline.
