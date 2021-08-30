@@ -17,10 +17,10 @@ quiz:
     choices:
     - content: "You can run the emulator on a standalone Azure Sphere developer board from Avnet or Seeed Studio."
       isCorrect: true
-      explanation: "This is correct, and it's the minimum requirement. The MikroE click panels and the Altair front panel provides a more authentic Altair experience. You can do everything you want with a standalone Azure Sphere."
-    - content: "The Altair MikroE Clicks or the MikroE Altair 8800 Retro Click."
+      explanation: "This is correct, it's the minimum requirement. The MikroE 8800 Retro Click and the Altair front panel provides a more authentic Altair experience. You can do everything you want with a standalone Azure Sphere."
+    - content: "The MikroE 8800 Retro Click."
       isCorrect: false
-      explanation: "The MikroE Clicks provide an easy way to mimic the Altair front panel and provide better visual clues as to what the Altair is doing. However, they are not a requirement, you can run the Altair emulator on a standalone Azure Sphere."
+      explanation: "The MikroE 800 Retro Click provide an easy way to mimic the Altair front panel and provide better visual clues as to what the Altair is doing. However, they are not a requirement, you can run the Altair emulator on a standalone Azure Sphere."
     - content: "The Altair 8800 Front Panel."
       isCorrect: false
       explanation: "The Altair 8800 front panel provides an authentic Altair experience. The hardware design is provided, but you must be willing to build the front panel yourself.  You can run the Altair emulator on a standalone Azure Sphere."
