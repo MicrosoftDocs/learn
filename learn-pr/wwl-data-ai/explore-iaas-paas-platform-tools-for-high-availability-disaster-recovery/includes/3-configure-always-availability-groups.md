@@ -6,7 +6,7 @@ Configuring an AG is nearly the same in Azure as it is on premises as are most o
 
 Do not place any permanent database on the ephemeral storage. All virtual machines (VMs) that are participating in an AG should have the same storage configuration. You must size disks appropriately for performance depending on the application workload.
 
-Before an AG can be configured, the AG feature must be enabled. This can be done in SQL Server Configuration Manager as shown in the image below or via PowerShell with the cmdlet [Enable-SqlAlwaysOn](https://docs.microsoft.com/powershell/module/sqlps/enable-sqlalwayson?view=sqlserver-ps). Enabling the AG feature will require a stop and start of the SQL Server service.
+Before an AG can be configured, the AG feature must be enabled. This can be done in SQL Server Configuration Manager as shown in the image below or via PowerShell with the cmdlet [Enable-SqlAlwaysOn](/powershell/module/sqlps/enable-sqlalwayson?view=sqlserver-ps). Enabling the AG feature will require a stop and start of the SQL Server service.
 
 :::image type="content" source="../media/module-77-high-availability-final-10.png" alt-text="Enabling the Availability Groups Feature in SQL Server Configuration Manager":::
 
