@@ -32,7 +32,7 @@ For Windows users either download `openssl` from [openssl.org](https://wiki.open
 
 3. Open the client.csr with your favorite text editor and copy and paste the CSR into the [test.mosquitto.org generate a TLS client certificate form](https://test.mosquitto.org/ssl/?azure-portal=true). After you submit the form, the certificate will be generated for you to download. The certificates are valid for 90 days only.
 
-4. Copy both the ```client.key``` and the ```client.crt``` into the AltairHL_emulator\certs.
+4. Copy both the `client.key` and the `client.crt` into the AltairHL_emulator\certs.
 
 When you've completed the certificate step, you should have **three** certificate files in the **AltairHL_emulator\certs** folder.
 
