@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.altair-azure-sphere-computing-fundamentals
 metadata:
-  title: Learn computing fundamentals with Altair 8800 & Azure Sphere 
+  title: Learn computing fundamentals with Altair 8800 and Azure Sphere 
   description: In this learning path, learn the computing fundamentals of the Altair 8800 and Azure Sphere by creating a cloud-enabled Altair on Azure Sphere solution.
-  ms.date: 08/18/2021
+  ms.date: 08/30/2021
   author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-title: Learn computing fundamentals with Altair 8800 & Azure Sphere
+title: Learn computing fundamentals with Altair 8800 and Azure Sphere
 summary: |
   In this learning path, learn computing fundamentals by creating a cloud-enabled Altair 8800 on Azure Sphere solution.
   
@@ -23,6 +23,8 @@ prerequisites: |
   - An Azure Sphere developer board that has one of the following kits:
     - Avnet Azure Sphere Starter Kit Rev 1 or 2
     - Seeed Studio Azure Sphere MT3620 Development Kit
+  - A GitHub account.
+  - An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
@@ -33,6 +35,8 @@ products:
 - azure
 - azure-iot-central
 - azure-sphere
+- azure-app-service-static
+- azure-virtual-machines
 modules:
 - learn.student-evangelism.altair-azure-sphere-introduction
 - learn.student-evangelism.altair-azure-sphere-setup
