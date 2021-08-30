@@ -1,6 +1,6 @@
 In this exercise, you'll get the connection information for Azure IoT Central. 
 
-## Step 1: List your IoT Central network endpoints
+## List your IoT Central network endpoints
 
 1. Open the command prompt.
 
@@ -35,7 +35,7 @@ In this exercise, you'll get the connection information for Azure IoT Central.
 
 6. Copy the output from the **ShowIoTCentralConfig** tool to Notepad, as you'll need this information soon.
 
-## Step 2: Get your Azure Sphere tenant ID
+## Get your Azure Sphere tenant ID
 
 1. From the  Windows **PowerShell command line** or Linux **Terminal**, run the following command.
 

@@ -1,17 +1,17 @@
 In this unit, you'll learn about the virtual disk sector cache-aside service.
 
-The cloud-connected Altair emulator file system supports two modes for read/write access.
+The Altair emulator file system supports read/write disks using the SD Card service or the virtual disk server.
 
 1. The SD Card service running on the Azure Sphere (Recommended).
     - The SD Card service supports read/write access for the A: and B: drives.
-    - This requires an Avnet Azure Sphere Starter Kit Rev 1 and Rev 2 plus the MikroE microSD Card Click.
+    - The SD Card service requires an Avnet Azure Sphere Starter Kit Rev 1 and Rev 2 plus the MikroE microSD Card Click.
 1. The virtual disk server running on your desktop or cloud.
     - The virtual disk server supports read/write access for the B: drive.
     - Install the virtual disk cache service on the Azure Sphere to improve the performance of the file system.
 
 ## Understand the virtual disk Cache-Aside service
 
-If you use the virtual disk server, then virtual disk Cache-Aside service improves the performance of the Altair file system.
+Install the virtual disk Cache-Aside service to improve the performance of the Altair file system.
 
 The cloud-connected Altair emulator file system redirects disk read and write requests for drive B: over [MQTT](https://en.wikipedia.org/wiki/MQTT?azure-portal=true) to a cloud-based Python virtual disk server.
 

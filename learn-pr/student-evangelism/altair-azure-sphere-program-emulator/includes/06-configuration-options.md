@@ -18,6 +18,6 @@ The Altair emulator supports several front panel configurations.
 
 1. The virtual front panel, the advantage is that no extra hardware is required. The virtual front panel works with both the Avnet and Seeed Studio Azure Sphere developer kits.
 2. If you have an Avnet Azure Sphere Starter Kit, then the MikroE 8800 Retro Click front panel is an option to simulate the front panel. The advantage is a more authentic experience programming the Altair. The LED panel also indicates the current state of the Altair and your application.
-3. The Altair front panel is the most authentic experience, you'll need to build the panel, but it operates just like the original Altair. You can find the hardware design in the [MT3620 Azure Sphere Based Altair 8800 Hardware](https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.Hardware?azure-portal=true)) repo.
+3. The Altair front panel is the most authentic experience, you'll need to build the panel, but it operates just like the original Altair. You can find the hardware design in the [MT3620 Azure Sphere Based Altair 8800 Hardware](https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.Hardware?azure-portal=true?azure-portal=true)) repo.
 
 In the following exercise, you'll learn how to program the Altair emulator using the Altair front panel.
