@@ -1,15 +1,19 @@
-In this unit, you'll learn about the virtual disk sector cache-aside server.
+In this unit, you'll learn about the virtual disk sector cache-aside service.
 
-The cloud-connected Altair emulator file system supports two models for drive B: read/write access.
+The cloud-connected Altair emulator file system supports two modes for read/write access.
 
+1. The SD Card service running on the Azure Sphere (Recommended).
+    - The SD Card service supports read/write access for the A: and B: drives.
+    - This requires an Avnet Azure Sphere Starter Kit Rev 1 and Rev 2 plus the MikroE microSD Card Click.
 1. The virtual disk server running on your desktop or cloud.
-    Install the virtual disk cache server on the Azure Sphere to improve the performance of the file system.
-1. The SD Card server running on the Azure Sphere.
-    This requires an Avnet Azure Sphere Starter Kit Rev 2 and the MikroE microSD Card Click. Files are stored on to a micro SD Cards.  
+    - The virtual disk server supports read/write access for the B: drive.
+    - Install the virtual disk cache service on the Azure Sphere to improve the performance of the file system.
 
-## Understand the virtual disk Cache-Aside server
+## Understand the virtual disk Cache-Aside service
 
-The cloud-connected Altair emulator redirects disk read and write requests for drive B: over [MQTT](https://en.wikipedia.org/wiki/MQTT?azure-portal=true) to a cloud-based Python virtual disk server.
+If you use the virtual disk server, then virtual disk Cache-Aside service improves the performance of the Altair file system.
+
+The cloud-connected Altair emulator file system redirects disk read and write requests for drive B: over [MQTT](https://en.wikipedia.org/wiki/MQTT?azure-portal=true) to a cloud-based Python virtual disk server.
 
 A [cache-aside](/azure/architecture/patterns/cache-aside?azure-portal=true) cache is used to improve the virtual disk performance and runs on one of the real-time cores.
 
@@ -29,6 +33,6 @@ Disk writes work as follows:
 1. The Altair emulator disk driver sends the disk sector to the cache manager.
 1. The disk sector is then sent to the cloud-based virtual disk manager.
 
-:::image type="content" source="../media/altair-azure-sphere-disk-cache-server.png" alt-text="Diagram that shows the architecture of the real-time disk cache server." border="false":::
+:::image type="content" source="../media/altair-on-azure-sphere-disk-cache-server.png" alt-text="The illustration shows the architecture of the real-time disk cache service.":::
 
 In the following exercise, you'll deploy the disk sector cache manager and the environment monitor real-time applications along with the Python-based Virtual Disk Server.

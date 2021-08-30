@@ -10,7 +10,8 @@ The Altair emulator would have started running before you connected to the Web T
 
 Altair BASIC will respond with the amount of memory and version information.
 
-:::image type="content" source="../media/altair-basic-init.png" alt-text="Screenshot that shows the Altair BASIC starting.":::
+> [!div class="mx-imgBorder"]
+> ![The illustration shows Altair BASIC starting.](../media/altair-basic-init.png)
 
 ## Type your first program
 

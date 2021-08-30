@@ -22,7 +22,7 @@ Follow these steps to set up an Azure Virtual Machine running Ubuntu 20.04 LTS.
 
 To minimize costs, the MQTT broker can be run on a **General purpose B1 SKU** virtual machine and the virtual machine can be stopped when not in use.
 
-The following article is a great guide to installing an [Ubuntu Server on Azure](https://k21academy.com/microsoft-azure/az-104/az-104-create-and-connect-an-ubuntu-virtual-machine-in-azure/?azure-portal=true).
+The following article is a great guide to installing an [Ubuntu Server on Azure](https://k21academy.com/microsoft-azure/az-104/az-104-create-and-connect-an-ubuntu-virtual-machine-in-azure?azure-portal=true).
 
 ### Step 1: Create an Ubuntu Virtual Server
 

@@ -19,7 +19,6 @@ In this module, you will:
 
 ## Prerequisites
 
-* You have completed the previous module of the learning path.
 * A computer with an x86-64-based processor running:
   * Windows 10 Anniversary Update or later.
   * Or, 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS.

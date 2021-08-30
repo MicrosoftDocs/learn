@@ -10,5 +10,5 @@ In this module, you learned about the hardware and software requirements for the
 
 ## Resources
 
-* [Quickstarts to set up your Azure Sphere device](/azure-sphere/install/overview?azure-portal=true)
-* [Overview of Azure Sphere CLI](/azure-sphere/reference/overview?azure-portal=true)
+* [Quickstarts to set up your Azure Sphere device](/azure-sphere/install/overview?azure-portal=true))
+* [Overview of Azure Sphere CLI](/azure-sphere/reference/overview?azure-portal=true))

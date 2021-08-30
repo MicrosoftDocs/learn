@@ -30,7 +30,8 @@ Install the Visual Studio Code Static Web Apps Extension from the [Extension Mar
 
 ## Browser the GitHub Action
 
-:::image type="content" source="../media/github-action-view.png" alt-text="Screenshot that shows an example of the GitHub action running.":::
+> [!div class="mx-imgBorder"]
+> ![The illustration shows an example of the GitHub action running.](../media/github-action-view.png)
 
 The action will take 2 or 3 minutes to run.
 
@@ -48,7 +49,8 @@ Configure the IoT Central settings using the IoT Central API Token and URL that 
 
 When completed, your **local.settings.json** file will look similar to the following.
 
-:::image type="content" source="../media/local-settings-json.png" alt-text="Screenshot that shows an example of your local.settings.json file.":::
+> [!div class="mx-imgBorder"]
+> ![The illustration shows an example of your local.settings.json file.](../media/local-settings-json.png)
 
 ## Upload the Altair Web Terminal local settings
 
@@ -67,12 +69,14 @@ The Altair Web Terminal is secure and requires authenticated users so you need t
 1. From the [Microsoft Azure Portal](https://portal.azure.com?azure-portal=true).
 1. Select **All resources**.
 
-:::image type="content" source="../media/azure-portal-all-resources.png" alt-text="Screenshot that shows how to select the all resources Azure portal blade.":::
+> [!div class="mx-imgBorder"]
+> ![The illustration shows how to select the all resources Azure portal blade.](../media/azure-portal-all-resources.png)
 
 1. Filter resources by name. Type **AltairWebTerminal** in the filter dialog box.
 1. Select on the **AltairWebTerminal** Static Web App.
 
-:::image type="content" source="../media/static-web-app-select.png" alt-text="Screenshot that shows how to select the AltairWebTerminal Static Web App.":::
+> [!div class="mx-imgBorder"]
+> ![The illustration shows how to select the AltairWebTerminal Static Web App.](../media/static-web-app-select.png)
 
 1. Select **Role management**, followed by **Invite**.
 1. Select your **Authentication provider**.
@@ -89,7 +93,8 @@ The Altair Web Terminal is secure and requires authenticated users so you need t
 
 1. If the invite link is for someone else, send the link to them to authenticate and grant consent.
 
-:::image type="content" source="../media/static-web-app-invite.png" alt-text="Screenshot that shows how to copy the invite link.":::
+> [!div class="mx-imgBorder"]
+> ![The illustration shows how to copy the invite link.](../media/static-web-app-invite.png)
 
 ## Connect the Altair Web Terminal to your Azure Sphere
 
@@ -99,6 +104,7 @@ When authenticated, you need to connect to the Altair emulator.
 
 The MQTT Broker status message changes to **Connecting...**, when it has successfully connected, the status will change to **Connected**.
 
-:::image type="content" source="../media/web-terminal-connect.png" alt-text="Screenshot that shows how to connect the web terminal to the MQTT broker.":::
+> [!div class="mx-imgBorder"]
+> ![The illustration shows how to connect the web terminal to the MQTT broker.](../media/web-terminal-connect.png)
 
 In the next unit, you'll install and run the Altair emulator virtual disk server.

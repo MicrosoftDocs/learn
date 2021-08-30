@@ -4,7 +4,8 @@ Welcome to the "Learn Computing fundamentals with Altair 8800 emulator & Azure S
 
 The Altair 8800 is considered to be the computer that kick-started the Personal Computer revolution. You can learn more about the Altair from the [Altair 8800 Wikipedia page](https://en.wikipedia.org/wiki/Altair_8800?azure-portal=true).
 
-:::image type="content" source="../media/altair-8800-smithsonian-museum.png" alt-text="Diagram that shows the Altair 8800." border="false":::
+![Diagram that shows the Altair 8800.](../media/altair-8800-smithsonian-museum.png)
+[Altair 8800 image attribution - Smithsonian Museum](https://commons.wikimedia.org/wiki/File:Altair_8800,_Smithsonian_Museum.jpg)
 
 The Altair 8800 was built on the [Intel 8080](https://en.wikipedia.org/wiki/Intel_8080?azure-portal=true) CPU, the second 8-bit microprocessor manufactured by Intel in 1974. By today's standards, it's a simple CPU design, perfect for learning computing fundamentals due to its small instruction set.
 
@@ -30,7 +31,7 @@ Azure Sphere consists of the following components:
 
 Together these components implement [The Seven Properties of Highly Secure Devices](https://www.microsoft.com/research/publication/seven-properties-highly-secure-devices?azure-portal=true).
 
-:::image type="content" source="../media/azure-sphere-end-to-end.png" alt-text="Diagram that shows Azure Sphere end-to-end." border="false":::
+![Azure Sphere end-to-end.](../media/azure-sphere-end-to-end.png)
 
 ## Introduction to the cloud-connected Altair emulator on Azure Sphere
 
@@ -45,7 +46,7 @@ The core of the system is the Open Source Intel 8080 CPU emulator that runs comp
 
 - The Altair emulator runs on the Azure Sphere Cortex A7. Depending on your hardware configuration, a virtual disk cache or SD Card server is running on one of the real-time Cortex M4 cores.
 
-:::image type="content" source="../media/altair-azure-sphere-architecture.png" alt-text="Diagram that shows the Azure Sphere architecture." border="false":::
+![Azure Sphere architecture.](../media/altair-on-azure-sphere-architecture.png)
 
 ## Introduction to Altair 8800 emulator on Azure Sphere
 

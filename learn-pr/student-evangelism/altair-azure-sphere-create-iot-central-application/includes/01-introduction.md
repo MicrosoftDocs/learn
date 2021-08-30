@@ -4,7 +4,7 @@ In this module, you will learn how to create an Azure IoT Central application.
 
 Azure IoT Central is a cloud-based Internet of Things (IoT) application platform. [Azure IoT Central](https://azure.microsoft.com/services/iot-central?azure-portal=true) provides an easy way to connect, monitor, and manage your IoT assets at scale. IoT Central is built on Azure IoT Hub, Azure Device Provisioning Service, Stream Analytics, and Time Series Insights.
 
-:::image type="content" source="../media/architecture.png" alt-text="Diagram that shows the architecture of Azure IoT Central." border="false":::
+:::image type="content" source="../media/architecture.png" alt-text="The illustration shows the architecture of Azure IoT Central." border="false":::
 
 Azure IoT Central is built on the [Eight attributes of successful IoT solutions](https://azure.microsoft.com/resources/8-attributes-of-successful-iot-solutions?azure-portal=true).
 
@@ -23,7 +23,6 @@ In this module, you will:
 
 ## Prerequisites
 
-* You have completed the previous module of the learning path.
 * A computer with an x86-64-based processor running:
   * Windows 10 Anniversary Update or later.
   * Or, 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS.

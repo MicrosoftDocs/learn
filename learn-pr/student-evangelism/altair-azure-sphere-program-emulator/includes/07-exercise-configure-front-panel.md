@@ -34,89 +34,21 @@ To access the Virtual Front panel, you must be connected to the Altair emulator 
 1. To exit CPU Monitor mode press <kbd>ctrl+M</kbd>
 1. Note, you are directly setting memory addresses and you will likely overwrite something important and crash the Altair emulator, if this happens then just reset the Azure Sphere, and experiment again.
 
-## The Avnet Click Front Panel (with the MikroE 4x4 key and 8x8 LED panel Click boards)
+## The Avnet Click Front Panel with the MikroE 8800 Retro Click
 
-The [MikroE 4x4 Key Click](https://www.mikroe.com/4x4-key-click) has two modes of operation, command mode, and input mode. The modes are selected by pressing **Button B** on the Avnet Azure Sphere starter kit. When you change modes the [MikroE 8x8 R LED Click](https://www.mikroe.com/8x8-r-click) will briefly display **C** or **I**.
-
-### Command Mode
-
-In **Command Mode**, the buttons take on the role of the command switches on the Altair. In this mode, you have access to CPU STOP, CPU RUN, SINGLE STEP, EXAMINE, EXAMINE NEXT, DEPOSIT, and DEPOSIT NEXT.
-
-:::image type="content" source="../media/altair-command-mode-buttons.png" alt-text="Photo that shows the buttons in command mode." border="false":::
-
-### Input Mode
-
-In **Input Mode**, the buttons take on the role of the 16 address/data switches on the Altair. Using the 16 buttons on the MikroE 4x4 Key Click you can set the bit values to be loaded onto the data bus or address bus.
-
-:::image type="content" source="../media/altair-input-mode-buttons.png" alt-text="Photo that shows the buttons in input mode." border="false":::
-
-## The 8x8 LED Click layout
-
-The top row of LEDs are the Altair status indicators. In **CPU STOP** mode, the middle row of LEDs displays the 8 bits on the Data Bus, the bottom two rows display the 16 bits set on the Address Bus. In **CPU RUN** mode, the Data and Address bus LEDs are sampled every 20 milliseconds and are an indicator of activity.
-
-:::image type="content" source="../media/altair-click-panel-leds.png" alt-text="Photo that shows the 8x8 LED layout." border="false":::
-
-### Loading an Intel 8080 opcode using the Click front panel
-
-Using the same example as the virtual front panel. We're going to load the 3 byte [Intel 8080 Jmp](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/8080asm.pdf?azure-portal=true) at address 0x0100.
-
-Follow along:
-
-1. Press **STOP CPU**.
-1. Press **Button B** on the Avnet Stater kit to switch to **Input** mode.
-1. Press button **8** to set address 0x0100.
-1. Press **Button B** on the Avnet Stater kit to switch to **Command** mode.
-1. Press **EXAMINE** to set the CPU instruction pointer.
-1. Press **Button B** on the Avnet Stater kit to switch to **Input** mode.
-1. Press button **8** to turn off the address just entered.
-1. Press buttons **7**, **6**, **1**, and **0** to set the Intel 8080 Jmp instruction
-
-:::image type="content" source="../media/altair-intel-8080-jmp-opcode.png" alt-text="Photo that shows the LEDS 7,6,1,0 set for the Intel opcode jmp." border="false":::
-
-1. Press **Button B** on the Avnet Stater kit to switch to **Command** mode.
-1. Press **DEPOSIT** to deposit the first byte of the Jmp instruction at address 0x0100.
-1. Press **Button B** on the Avnet Stater kit to switch to **Input** mode.
-1. Press buttons **7**, **6**, **2**, and **1** to turn off the switches set in the previous step
-1. Press **Button B** on the Avnet Stater kit to switch to **Command** mode.
-1. Press **DEPOSIT NEXT** to deposit zero into the **low** order jump address
-1. Press **DEPOSIT NEXT** again to deposit zero into the **high** order jump address
-
-Set the CPU Instruction pointer to 0x0100
-
-1. Press **Button B** on the Avnet Stater kit to switch to **Input** mode.
-1. Press button **8** to set address 0x0100.
-1. Press **Button B** on the Avnet Stater kit to switch to **Command** mode.
-
-Execute the instruction
-
-1. Press **SINGLE STEP**
-1. Press **SINGLE STEP** again and note the address on the address bus will change to zero. All of the address bus LEDS will be turned off.
-
-1. Press **CPU START** to start the CPU running again.
-
-Note, you can observe the instruction being executed in the Web Terminal as well.
-
-```text
-    Examine: Address bus: 00000001 00000000 (0x0100), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
-Single step: Address bus: 00000001 00000000 (0x0100), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
-Single step: Address bus: 00000000 00000000 (0x0000), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
-```
-
-## The Avnet Click Front Panel with the MikroE Altair 8800 Retro Click
-
-The MikroE Altair 8800 Retro Click (available soon) has two modes of operation, command mode, and input mode. The modes are selected by pressing **Button B** on the Avnet Azure Sphere starter kit. When you change modes the MikroE Altair 8800 Retro 8x8 LED panel will briefly display **C** or **I**.
+The MikroE 8800 Retro Click has two modes of operation, command mode, and input mode. The modes are selected by pressing **Button B** on the Avnet Azure Sphere starter kit. When you change modes the MikroE 8800 Retro 8x8 LED panel will briefly display **C** or **I**.
 
 ### Command Mode
 
 In **Command Mode**, the buttons take on the role of the command switches on the Altair. In this mode you have access to CPU STOP, CPU RUN, SINGLE STEP, EXAMINE, EXAMINE NEXT, DEPOSIT, and DEPOSIT NEXT.
 
-:::image type="content" source="../media/altair-retro-click-panel-command-mode.png" alt-text="Photo that shows buttons for command mode." border="false":::
+![The illustration shows buttons for command mode.](../media/altair-retro-click-panel-command-mode.png)
 
 ### Input Mode
 
 In **Input Mode**, the buttons take on the role of the 16 address/data switches on the Altair. Using the 16 buttons on the ALtair 8800 Retro Click you can set the bit values to be loaded onto the data bus or address bus.
 
-:::image type="content" source="../media/altair-retro-click-panel-input-mode.png" alt-text="Screenshot that shows input mode." border="false":::
+![The illustration shows for input mode.](../media/altair-retro-click-panel-input-mode.png)
 
 ### CPU RUN STOP Status LEDs
 
@@ -137,7 +69,7 @@ Follow along:
 1. Press button **8** to turn off the address just entered.
 1. Press buttons **7**, **6**, **1**, and **0** to set the Intel 8080 Jmp instruction
 
-:::image type="content" source="../media/altair-intel-8080-jmp-opcode.png" alt-text="Photo that show the LEDS 7,6,1,0 set for Intel opcode jmp." border="false":::
+![Image show the LEDS 7,6,1,0 set for Intel opcode jmp.](../media/altair-intel-8080-jmp-opcode.png)
 
 1. Press **Button B** on the Avnet Stater kit to switch to **Command** mode.
 1. Press **DEPOSIT** to deposit the first byte of the Jmp instruction at address 0x0100.
@@ -172,7 +104,7 @@ Single step: Address bus: 00000000 00000000 (0x0000), Data bus 11000011 (0xc3), 
 
 The Altair front panel board can be used with the Avnet Starter Kit and the Seeed Studio Reference Design Board.
 
-:::image type="content" source="../media/altair-front-panel.png" alt-text="Photo that shows the Altair front panel." border="false":::
+![Altair front panel.](../media/altair-front-panel.png)
 
 ### Loading an Intel 8080 opcode using the Altair front panel
 

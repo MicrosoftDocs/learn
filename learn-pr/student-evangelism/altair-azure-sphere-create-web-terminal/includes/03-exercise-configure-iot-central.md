@@ -18,7 +18,8 @@ Rename your device in IoT Central ensuring that the name is unique. The Web Term
 
 From the Device menu bar, select **Manage device**, then **Rename**.
 
-:::image type="content" source="../media/iot-central-device-rename.png" alt-text="Screenshot that shows how to rename a device.":::
+> [!div class="mx-imgBorder"]
+> ![The illustration shows how to rename a device.](../media/iot-central-device-rename.png)
 
 ## Customize the Altair on Azure Sphere template
 
@@ -28,7 +29,7 @@ From the Device menu bar, select **Edit template**.
 
 1. Select **Customize**, and expand the **Desired temperature** property. Update the property using the information from the table below and select **Save**.
 
-    :::image type="content" source="../media/iot-central-template-customize.png" alt-text="Screenshot that shows how to customize a device template.":::
+     :::image type="content" source="../media/iot-central-template-customize.png" alt-text="The illustration shows how to customize a device template.":::
 
     | Display name     | Initial value      | Min value | Max value | True name | False name |
     |----------------|---------------|----------------|---------------|----------------|---------------|
@@ -43,12 +44,12 @@ From the Device menu bar, select **Edit template**.
 
 1. Select **Views** and then select **Editing device and cloud data**.
 
-    :::image type="content" source="../media/iot-central-view-properties-create.png" alt-text="Screenshot that shows how to view and create properties.":::
+     :::image type="content" source="../media/iot-central-view-properties-create.png" alt-text="The illustration shows how to view and create properties.":::
 
 1. Name the properties form **Properties**.
 1. Expand **Properties**
 
-    :::image type="content" source="../media/iot-central-template-properties-select-properties.png" alt-text="Screenshot that shows selecting the Properties button.":::
+     :::image type="content" source="../media/iot-central-template-properties-select-properties.png" alt-text="The illustration shows selecting the Properties button.":::
 
 1. Select the following properties.
     * Channel ID
@@ -59,14 +60,15 @@ From the Device menu bar, select **Edit template**.
 1. Select **Add section**
 1. Select **Save**
 
-    :::image type="content" source="../media/iot-central-template-properties.png" alt-text="Screenshot that shows setting properties.":::
+     :::image type="content" source="../media/iot-central-template-properties.png" alt-text="The illustration shows setting properties.":::
 
 ### Add an environment data visualization view
 
 1. Select **Views** and then select **Visualizing the device**.
 
-    :::image type="content" source="../media/iot-central-visualize-create.png" alt-text="Screenshot that shows how to select visualizing the device.":::
-    
+    > [!div class="mx-imgBorder"]
+    > ![The illustration shows how to select visualizing the device.](../media/iot-central-visualize-create.png)
+
 1. Name the view **Environment**.
 1. From the **Start with a visual** list, select **Line chart**, scroll to the end of the list, and select **Add tile**.
 1. Select the **Configure** icon on the tile.
@@ -75,7 +77,8 @@ From the Device menu bar, select **Edit template**.
 1. Select **+ Capability**.
 1. From the capability list, select **Pressure**.
 
-    :::image type="content" source="../media/iot-central-visualize-tile-capabilities.png" alt-text="Screenshot that shows how to expand properties.":::
+    > [!div class="mx-imgBorder"]
+    > ![The illustration shows how to expand properties.](../media/iot-central-visualize-tile-capabilities.png)
 
 1. Select **Update**.
 1. Select **Save**.
@@ -84,7 +87,7 @@ From the Device menu bar, select **Edit template**.
 
 1. Finally, select **Publish** to publish the template into the IoT Central application.
 
-    :::image type="content" source="../media/iot-central-template-publish.png" alt-text="Screenshot that shows selecting the Publish button.":::
+    :::image type="content" source="../media/iot-central-template-publish.png" alt-text="The illustration shows selecting the Publish button.":::
 
 ## View your Altair on Azure Sphere device
 
@@ -92,7 +95,7 @@ From the Device menu bar, select **Edit template**.
 
 1. Navigate the tabs to explore the device views.
 
-    :::image type="content" source="../media/iot-central-device-tabs.png" alt-text="Screenshot that shows how to display measurements.":::
+    :::image type="content" source="../media/iot-central-device-tabs.png" alt-text="The illustration shows how to display measurements.":::
 
 ## Update the Device properties tab
 
@@ -114,7 +117,8 @@ The Web Terminal uses the IoT Central device name to connect to the Altair emula
 1. Select **Generate**
 1. **Copy** the generated token to notepad as you'll need for the next step.
 
-:::image type="content" source="../media/iot-central-api-token-generate.png" alt-text="Screenshot that shows the API Tokens tab.":::
+> [!div class="mx-imgBorder"]
+> ![The illustration shows the API Tokens tab.](../media/iot-central-api-token-generate.png)
 
 ## Generate the IoT Central URL
 
@@ -123,6 +127,7 @@ You need the IoT Central URL for the Altair Web Terminal.
 1. From your browser address bar, **copy** the base address of your IoT Central application to notepad as you'll need for the next step.
 1. Ensure you **remove** the trailing '**/**' from the URL.
 
-:::image type="content" source="../media/iot-central-application-url.png" alt-text="Screenshot that shows how to copy the IoT Central URL.":::
+> [!div class="mx-imgBorder"]
+> ![The illustration shows how to copy the IoT Central URL.](../media/iot-central-application-url.png)
 
 In the next unit, you will create the Altair Web Terminal.
