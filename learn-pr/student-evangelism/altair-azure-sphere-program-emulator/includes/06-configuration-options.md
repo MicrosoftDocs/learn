@@ -9,7 +9,7 @@ The original Altair 8800 was programmed directly using the front panel. It was a
 
 The Altair 8800 had a series of LEDs and switches that you used to load apps and determine the state of the Altair.
 
-![Image of the Altair 8800.](../media/altair-8800-smithsonian-museum.png)
+:::image type="content" source="../media/altair-8800-smithsonian-museum.png" alt-text="Image that shows the Altair 8800." border = "false":::
 [Altair 8800 image attribution - Smithsonian Museum](https://commons.wikimedia.org/wiki/File:Altair_8800,_Smithsonian_Museum.jpg)
 
 ## Overview
