@@ -48,7 +48,9 @@ The core of the system is the Open Source Intel 8080 CPU emulator that runs comp
 
 ![Azure Sphere architecture.](../media/altair-on-azure-sphere-architecture.png)
 
-## Introduction to Altair 8800 emulator on Azure Sphere
+## Introduction video to Altair 8800 emulator on Azure Sphere
+
+Select the following image to view an introduction to the cloud-connected Altair emulator running on Azure Sphere.
 
 [![Intro to the the Altair 8800 emulator on Azure Sphere video](../media/youtube-intro-thumbnail.png)](https://www.youtube.com/watch?v=nUMOpEOx6LI)
 
