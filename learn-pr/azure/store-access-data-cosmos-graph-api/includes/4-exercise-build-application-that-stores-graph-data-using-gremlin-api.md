@@ -62,7 +62,7 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
 
 1. Select **OK**. After the graph is built, **Data Explorer** pane appears and displays your *sample-database* under **Gremlin API**.
 
-1. In the Azure Cosmos DB account menu, under **Settings**, select **Keys**, then note the value for the **GREMLIN ENDPOINT** andcopy the value for the **PRIMARY KEY**. You'll use these values when you create your application in the next section.
+1. In the Azure Cosmos DB account menu, under **Settings**, select **Keys**, then note the value for the **GREMLIN ENDPOINT** and copy the value for the **PRIMARY KEY**. You'll use these values when you create your application in the next section.
 
    ![Screenshot showing how to copy the access key.](../media/5-copy-gremlin-key.png)
 
