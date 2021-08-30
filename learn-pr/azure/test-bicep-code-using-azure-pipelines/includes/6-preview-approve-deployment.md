@@ -1,10 +1,10 @@
-You've now learned about pipeline stages, and how you can add a pipeline stage to validate your Bicep code. The next step in building confidence with your deployment is to add another stage to check exactly what will be created, updated and deleted by your deployment. In this unit you'll learn about using what-if command in a pipeline, and adding approvals to verify its output. 
+You've now learned about pipeline stages, and how you can add a pipeline stage to validate your Bicep code. The next step in building confidence with your deployment is to add another stage to check exactly what will be created, updated and deleted by your deployment. In this unit, you'll learn about using the what-if command in a pipeline, and adding approvals so that you have the opportunity to manually verify its output before the deployment runs.
 
 ## The what-if operation
 
-A Bicep file describes the state you want your Azure environment to be in at the end of a deployment. When you deploy your Bicep template, Azure Resource Manager changes your Azure environment to match the state that's described in your Bicep template. When you deploy a Bicep file, it can result in new resources being deployed into your environment, or existing resources being updated. When you run a deployment in complete mode, it can even result in existing resources to be deleted. 
+A Bicep file describes the state you want your Azure environment to be in at the end of a deployment. When you submit a deployment, Azure Resource Manager changes your Azure environment to match the state that's described in your Bicep file. A deployment can result in new resources being deployed into your environment, or existing resources being updated. When you run a deployment in complete mode, it can even result in existing resources being deleted. 
 
-Anytime resources are created, updated or deleted, there's a risk that things could change in a way you didn't expect. It's a good practice to add an extra step to verify what exactly will be created, updated and deleted. This adds a lot of value to your automation process. And when you're deploying to a production environment, it's particularly important to confirm any changes that will happen to your environment. 
+Anytime resources are created, updated or deleted, there's a risk that things could change in a way you didn't expect. It's a good practice to add an extra step to verify what exactly will be created, updated, and deleted. This adds a lot of value to your automation process. And when you're deploying to a production environment, it's particularly important to confirm any changes that will happen to your environment.
 
 Resource Manager provides the what-if operation, which you can run on your Bicep file within your pipeline stage:
 
@@ -12,22 +12,31 @@ Resource Manager provides the what-if operation, which you can run on your Bicep
 
 You use the `az deployment group what-if` command from within your pipeline definition to run the what-if step:
 
-:::code language="yaml" source="code/6-what-if.yml" highlight="12-14" :::
+:::code language="yaml" source="code/6-what-if.yml" highlight="13-15" :::
 
-The what-if operation doesn't make any changes to your environment. Instead, it describes the resources that will get created, the properties of resources that will be updated, and lists the resources that will be deleted: 
+::: zone pivot="powershell"
 
 > [!NOTE]
-> The command gives you plain text output. If you use the `--no-pretty-print` switch, the output will be a JSON object that your can further automate on if needed. In this module, you'll work with the plain text output.
+> If you build your own PowerShell-based pipeline, you can use the `New-AzResourceGroupDeployment` cmdlet with the `-Whatif` switch, or you can use the `Get-AzResourceGroupDeploymentWhatIfResult` cmdlet.
 
-After you see the output of the what-if operation, you can determine whether to continue on to the actual deployment. This typically involves a human reviewing the output from the what-if command, and then making a decision about whether this is reasonable. Azure Pipelines provides the ability to add a manual approval step by using environments.
+::: zone-end
+
+The what-if operation doesn't make any changes to your environment. Instead, it describes the resources that will get created, the resource properties that will be updated, and the resources that will be deleted.
+
+After you see the output of the what-if operation, you can determine whether to continue on to the actual deployment. This typically involves a human reviewing the output from the what-if command, and then making a decision about whether the changes identified are reasonable.
+
+> [!NOTE]
+> The what-if operation sometimes shows that a resource will change when actually no change will happen. This is called *noise*. We're working to reduce these problems, but we need your help. [Please report these problems](https://aka.ms/whatifissues).
+
+If a human reviewer decides that the changes are reasonable, you can use Azure Pipeline's environments feature to provide manual approval to proceed with the deployment.
 
 ## Environments
 
-In Azure Pipelines, you can create a resource called an *environment*. Environments represent the environment to which your solution is deployed. In a future module, you'll learn more about how to deploy to multiple environments.
+In Azure Pipelines, an *environment* represent the place to which your solution is deployed. Environments provide a number of features that help when you work with complex deployments. In a future module, you'll learn more about the features of environments.
 
-You use *jobs* to define a sequence of steps within a pipeline stage. When you use environments, you use a special kind of job called a *deployment job*. A deployment job is similar to a normal job, but it provides some extra functionality, including defining the environment that the deployment job uses:
+As you already know, you use *jobs* to define a sequence of steps within a pipeline stage. When you include environments in your pipeline, you need to use a special kind of job called a *deployment job*. A deployment job is similar to a normal job, but it provides some extra functionality, including defining the environment that the deployment job uses:
 
-:::code language="yaml" source="code/6-environment.yml" highlight="18-33" :::
+:::code language="yaml" source="code/6-environment.yml" highlight="19-34" :::
 
 Notice that in the YAML definition for a deployment job, there are some key differences from a normal job:
 
@@ -49,11 +58,11 @@ Approvals and checks are evaluated just before a pipeline stage begins. When Azu
 > [!NOTE]
 > Agent pools and service connections can also have checks configured on them. You can also use a special step called a manual approval task. However, in this module, we'll focus on environments and the checks associated with them.
 
-After your pipeline begins and reaches a stage that requires an approval check, the pipeline execution pauses. All of the users who have been designated as approvers are sent a message in Azure DevOps and by email. They can inspect the pipeline result, including the changes that the what-if operation detects. Based on the information they see, they then approve or decline the change. If they approve the change, the pipeline resumes. If they decline, or if they don't respond within a configurable timeout period, the stage fails.
+After your pipeline begins and reaches a stage that requires an approval check, the pipeline execution pauses. All of the users who have been designated as approvers are sent a message in Azure DevOps and by email. They can inspect the pipeline logs, such as the changes that the what-if operation detects. Based on the information they see, they then approve or decline the change. If they approve the change, the pipeline resumes. If they decline, or if they don't respond within a configurable timeout period, the stage fails.
 
 :::image type="content" source="../media/6-stages-approval-check.png" alt-text="Diagram showing a pipeline that includes Lint, Validate, Preview, and Deploy stages, with an approval check before the Deploy stage." border="false":::
 
 > [!WARNING]
 > The environments feature in Azure Pipelines provides you with the ability to link your deployments to an environment, and then the deployment inherits the approvals and checks defined by the environment owner. However, there's nothing to require that new pipelines use environments. It's important that you and your organization establish good practices to review your pipeline definitions, such as by configuring your repository to require pull request reviews on any changes to your *main* branch by using branch protection policies. You'll learn more about this in a future module.
 >
-> You can also add approvals and checks to service connections. This ensures that approval is obtained before a deployment can use a service principal's credentials. However, this would also affect your pipeline's ability to run preflight validation and the what-if operation, since they require a service connection too.
+> You can also add approvals and checks to service connections. This ensures that approval is obtained before a deployment can use a service principal's credentials. However, this would also affect your pipeline's ability to run preflight validation and the what-if operation, because they require a service connection too.

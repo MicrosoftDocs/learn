@@ -1,11 +1,11 @@
-You want to further automate your deployment and build better confidence in what you deploy by adding a validation stages to your pipeline. 
+You've spoken to your team and have decided you'll further automate your deployments by using a pipeline. You want to build more confidence in what you deploy. In this exercise, you'll add validation stages to your pipeline, and run the linter and preflight validation before each deployment.
 
 During the process, you'll: 
 
 > [!div class="checklist"]
-> * Update your existing pipeline to add two validation stages. 
+> * Update your existing pipeline to add two new stages to lint and validate your Bicep code.
 > * Run your pipeline.
-> * Fix the issues detected by your pipeline.
+> * Fix any issues detected by your pipeline.
 
 ## Update your pipeline to prepare for stages
 
@@ -13,11 +13,11 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
 
 1. In Visual Studio Code, open the *deploy/azure-pipelines.yml* file. 
 
-1. Remove everything in the file from line 9 down (where it says `jobs:`).
+1. Remove everything in the file from line 9 to the bottom of the file. Make sure you remove the line that says `jobs:` as well.
 
 1. At the bottom of the file, add the following:
 
-   :::code language="yaml" source="code/5-pipeline.yml" range="9, 39-55" :::
+   :::code language="yaml" source="code/5-pipeline.yml" range="9-10, 39-55" :::
 
 ## Add lint and validation stages to your pipeline
 
@@ -31,7 +31,7 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
 
    :::code language="yaml" source="code/5-pipeline.yml" range="21-37" :::
 
-   This stage defines a single step, which runs the `az deployment group validate` command.
+   This stage defines a single step, which runs the `az deployment group validate` command. Notice that this includes a reference to your service connection, because the preflight validation process requires communicating with Azure.
 
    Your pipeline definition now has three stages: the first lints your Bicep file, the second performs a preflight validation, and the third performs the deployment to Azure.
 
@@ -48,9 +48,6 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 1. Copy the following into the file:    
 
    :::code language="json" source="code/5-bicepconfig.json" :::
-
-   > [!NOTE]
-   > The *bicepconfig.json* file also controls how Visual Studio Code shows errors and warnings in the editor. It displays red and yellow squiggly lines under misconfigured parts in your Bicep template. This gives you even quicker feedback when you're writing your Bicep code, further reducing the chance of an error.
 
 1. Save the file.
 
@@ -94,9 +91,11 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 ## Fix the linter error
 
+Now that you've identified the problem, you can fix it in your Bicep file.
+
 1. In Visual Studio Code, open the *deploy/main.bicep* file.
 
-1. Notice that the Bicep linter has detected that a parameter isn't used. In Visual Studio Code, it indicates this by displaying a squiggly line. Normally this would be yellow, but because you customized the *bicepconfig.json* file, it treats it as an error and displays the squiggly line in red.
+1. Notice that the Bicep linter has also detected that the `storageAccountNameParam` parameter isn't used. In Visual Studio Code, it indicates this by displaying a squiggly line. Normally this would be yellow to indicate a warning, but because you customized the *bicepconfig.json* file, it treats it as an error and displays the squiggly line in red.
 
    :::code language="bicep" source="code/5-template-1.bicep" range="15" :::
 
@@ -137,6 +136,8 @@ By default, the Bicep linter provides a warning when it detects a problem with y
    This indicates that the storage account name isn't valid.
 
 ## Fix the validation error
+
+You've found another problem in the Bicep file. Here, you fix the problem.
 
 1. In Visual Studio Code, open the *deploy/main.bicep* file.
 

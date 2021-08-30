@@ -1,7 +1,8 @@
 stages:
+
 - stage: Lint
   jobs: 
   - job: Lint
     steps:
       - script: |
-          bicep build deploy/main.bicep
+          az bicep build --file deploy/main.bicep

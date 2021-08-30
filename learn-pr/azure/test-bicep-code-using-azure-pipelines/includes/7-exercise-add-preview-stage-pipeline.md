@@ -1,4 +1,4 @@
-You want to add an extra stage to your pipeline so you can check what changes will be made to your Azure environment. During the process you will: 
+You want to add an extra stage to your pipeline so you can check what changes will be made to your Azure environment.
 
 During the process, you'll: 
 
@@ -20,12 +20,12 @@ During the process, you'll:
 
 1. Enter the environment name **Website**.
 
-   Don't enter a description. For the **Resource**, select **None**.
+   Leave the description blank. For the **Resource**, select **None**.
 
    :::image type="content" source="../media/7-environments-new-details.png" alt-text="Screenshot of the Azure DevOps 'New environment' page with the details completed and the 'Create' button highlighted.":::
 
    > [!NOTE]
-   > In Azure Pipelines, environments are used to enable a number of deployment features. These only apply when you're deploying to Kubernetes or to virtual machines. In this module, we don't use these features and you can ignore them.
+   > In Azure Pipelines, environments are used to enable a number of deployment features. Some of these features only apply when you're deploying to Kubernetes or to virtual machines. In this module, we don't use these features and you can ignore them.
 
 1. Select **Create**.
 
@@ -111,7 +111,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
    The what-if operation has detected a change to the website resource. However, the changes it's detected are called *noise*. They don't represent real changes to your resource. Over time, the Azure team works to reduce the noise. In the meantime, for these two specific properties, you can ignore the detected changes.
 
    > [!NOTE]
-   > You might also see an item in the what-if output for the resource type `microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - toywebsite`. This is a resource that's automatically created by Application Insights. The what-if command detects no change will be made to the resource.
+   > You might also see an item in the what-if output for the resource type `microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - toywebsite`. This is a resource that's automatically created by Application Insights. The what-if command detects that no change will be made to the resource.
 
 ## Approve the pipeline run
 

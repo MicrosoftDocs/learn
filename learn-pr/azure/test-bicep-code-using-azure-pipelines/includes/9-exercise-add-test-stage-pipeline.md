@@ -25,7 +25,7 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
    - Try to connect to the website over HTTP. The test passes if the server responds with an HTTP response status code of 300 or higher.
 
    > [!NOTE]
-   > It's not important that you understand the details of the test file and how it works, but we provide links in the summary so you can learn more if you're interested.
+   > For the purposes of this exercise, it's not important that you understand the details of the test file and how it works. However, we provide links in the summary so you can learn more if you're interested.
 
 ## Publish your Bicep file's output as a stage output variable
 
@@ -35,7 +35,7 @@ The test script you created in the preceding steps requires a host name to test.
 
 1. In the **Deploy** stage, update the `inlineScript` to the following:
 
-   :::code language="bash" source="code/9-pipeline.yml" range="75-81" :::
+   :::code language="bash" source="code/9-pipeline.yml" range="75-81" highlight="1, 6-7" :::
 
    Now, your deployment process still uses the same Azure CLI command as it did previously, but the output of that command is stored in a script variable named `deploymentOutput`. The output of Azure CLI commands is formatted as JSON.
 
@@ -63,7 +63,7 @@ Now, you can add a smoke test stage that runs your tests.
 
    :::code language="yaml" source="code/9-pipeline.yml" range="103-109" :::
 
-   This step takes the test results file from Pester and publishes it as test results to the pipeline. You'll see how this is displayed shortly.
+   This step takes the test results file that Pester creates and publishes it as pipeline test results. You'll see how this is displayed shortly.
 
 1. Save the file.
 
@@ -111,6 +111,8 @@ Now, you can add a smoke test stage that runs your tests.
 
 ## Update the Bicep file
 
+Now that you've identified that your Bicep definition doesn't meet your security team's requirement, you'll fix it.
+
 1. In Visual Studio Code, open the *deploy/main.bicep* file.
 
 1. Find the definition for the App Service app, and update it to include the `httpsOnly` property in its `properties`:
@@ -139,7 +141,7 @@ Now, you can add a smoke test stage that runs your tests.
 
    Notice that the what-if command has detected the change in the `httpsOnly` property's value:
 
-   :::code language="output" source="code/9-what-if-output.txt" highlight="13" :::
+   :::code language="text" source="code/9-what-if-output.txt" highlight="13" :::
 
 1. Go back to the pipeline run.
 

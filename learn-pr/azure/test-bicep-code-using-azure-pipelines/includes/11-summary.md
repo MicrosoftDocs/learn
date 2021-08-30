@@ -1,14 +1,20 @@
-Your website's Bicep deployments sometimes failed because of problems you'd introduced in your Bicep files. You wanted to add testing to your deployment pipeline, to reduce the likelihood of any issues impacting your production website.
+Your website's Bicep deployments sometimes failed because of problems you'd introduced in your Bicep files. You wanted to add quality control to your deployment pipeline, to reduce the likelihood of any issues impacting your production website.
 
-In this module, you learned how to add validation and tests to your Bicep deployment pipeline. You learned how to lint and validate a Bicep file in the first stage of a multistage pipeline. Then you learned how to add a preview stage to your pipeline, which runs the what-if command and asks for human verification before the pipeline continues. Finally, you learned about the importance of functional testing, and you added a test to verify your website is accessible after each deployment.
+In this module, you learned how to add validation and tests to your Bicep deployment pipeline. You learned about multistage pipelines, and how to create pipeline stages to lint and validate a Bicep file. Then you learned how to add a preview stage to your pipeline, which runs the what-if command and asks for human verification before the pipeline continues. Finally, you learned about the importance of functional testing, and you added a test to verify your website meets your security team's requirements after every deployment.
 
 Now, you can be more confident that your automated deployments will succeed and that they won't cause issues for your environments.
 
 ## References
 
-- [Stages](/azure/devops/pipelines/process/stages?tabs=yaml)
-- [Environments](/azure/devops/pipelines/process/environments)
-- [Deployment jobs](/azure/devops/pipelines/process/deployment-jobs)
+- [Shifting left](/devops/develop/shift-left-make-testing-fast-reliable)
+- Stages
+  - [Stages](/azure/devops/pipelines/process/stages?tabs=yaml)
+  - [Conditions](/azure/devops/pipelines/process/conditions&tabs=yaml)
+  - [Parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs)
+- [Bicep linter](/azure/azure-resource-manager/bicep/linter)
+- Environments
+  - [Environments](/azure/devops/pipelines/process/environments)
+  - [Deployment jobs](/azure/devops/pipelines/process/deployment-jobs)
 - [Pipeline approvals and checks](/azure/devops/pipelines/process/approvals)
 - [Branch policies](/azure/devops/repos/git/branch-policies)
 - [What-if operation](/azure/azure-resource-manager/templates/deploy-what-if)

@@ -1,11 +1,11 @@
-In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module.
+Before you start to work on your toy company's website pipeline, you need to configure your environment. In this section, you make sure that your Azure and Azure DevOps environments are set up to complete the rest of this module.
 
-To meet these objectives, you:
+To meet these objectives, you'll:
 
 > [!div class="checklist"]
 > * Set up an Azure DevOps project for this module.
 > * Clone the project's repository to your computer.
-> * Create a resource group and service principal in Azure.
+> * Create a resource group in Azure.
 > * Create a service connection in Azure Pipelines.
 
 ## Get the Azure DevOps project
@@ -15,7 +15,7 @@ Here you make sure that your Azure DevOps organization is set up to complete the
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated Azure DevOps project.
 
 > [!TIP]
-> Even if you completed the previous module in the learning path, please follow these instructions to create a new project.
+> Even if you completed the previous module in the learning path, please follow these instructions to create a new project and ensure you give it a new name.
 
 ### Run the template
 
@@ -33,13 +33,15 @@ Run a template that sets up your Azure DevOps organization.
 On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
+
 1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *toy-website-test*.
 
-    <!--:::image type="content" source="../media/4-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::-->
+    <!--:::image type="content" source="../media/4-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator."::: TODO -->
 
 1. Select **Create Project**.
 
     The template takes a few moments to run.
+
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
 > [!IMPORTANT]
@@ -67,7 +69,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
     If you're using Windows, enter the same credentials you used to sign in to Azure DevOps earlier in this exercise.
 
-    If you're using macOS, use the username and password that you generated previously.
+    If you're using macOS, enter the Git username and password that you generated a few moments ago.
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
 
@@ -159,7 +161,7 @@ New-AzResourceGroup -Name ToyWebsiteTest -Location westus
 
 ## Create a service connection in Azure Pipelines
 
-Next, create a service connection in Azure Pipelines. This automatically creates a service principal in Azure, and it grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy to it.
+Next, create a service connection in Azure Pipelines. This automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy to the resource group.
 
 1. In your browser, select **Project settings**.
 
