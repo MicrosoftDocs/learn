@@ -215,7 +215,7 @@ Features are grouped by category to make things easier to find, click on **Mixed
 
 2. Click on **Legacy XR** to enable Legacy XR and to add its required packages  into your project.
 
-![s](../../media/base-02-section5-step1-2.png)
+![Enable legacy XR](../../media/base-02-section5-step1-2.png)
 
 3. Click on next button to enable XR pipeline settings for Legacy XR.
 
