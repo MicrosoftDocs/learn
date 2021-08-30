@@ -9,7 +9,7 @@ The Altair Emulator can be programmed in two ways:
 
 ![Altair on Azure Sphere application architecture.](../media/azure-sphere-app-architecture.png)
 
-When you start the Altair emulator, it boots up CP/M. From CP/M you can program the Altair emulator using Microsoft BASIC, BD Software C, and Microsoft MACRO-80 Assembler. You can boot the Altair emulator into Altair BASIC by updating the CMakeList.txt **Boot Config** section.
+When you start the Altair emulator, it boots up CP/M. From CP/M you can program the Altair emulator using Microsoft BASIC, BD Software C, and Microsoft MACRO-80 Assembler. You can also change the boot order so the Altair emulator boots into Altair BASIC. The boot order is set from the **Boot Config** section in the CMakeLists.txt file.
 
 ## Saving files
 
@@ -32,4 +32,4 @@ In this module, you will:
 * A GitHub account.
 * An Azure Account. Sign up for a free [Student Azure account](https://azure.microsoft.com/free/students?azure-portal=true), or free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
 
-In the next unit, you'll learn how to program the Altair emulator using Altair BASIC.
+In the next unit, you'll learn how to start programming the Altair emulator from CP/M.

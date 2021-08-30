@@ -1,34 +1,207 @@
-In this exercise, you'll learn how to boot CP/M and start programming.
+In this exercise, you'll learn how to start programming.
 
-## Microsoft BASIC 80
+## Connect to the Web Terminal
 
-Microsoft BASIC 80 is also included on the A: drive.
+1. Start the Web Terminal.
+1. Authenticate the Web Terminal.
+1. The Altair emulator may have started running before you connected to the Web Terminal. So, press the **RESET** button on the Azure Sphere to restart the Altair emulator. When the Azure Sphere restarts, the CP/M **>** prompt will be displayed on the Web Terminal.
 
-To Start Microsoft Basic, type
+## Getting started with CP/M
 
-```bash
-mbasic B:TEST.BAS
-```
+For more information about CP/M, see the [CP/M Reference Manual](http://www.cpm.z80.de/manuals/cpm22-m.pdf?azure-portal=true).
 
-This will start Microsoft Basic and create a file on the B: drive called TEST.BAS. You can save and load files from Basic.
+Here are some CP/M commands to get you started.
 
-```basic
-save "B:TEST.BAS"
-```
+1. Directory listing.
 
-```basic
-load "B:TEST.BAS"
-```
+    ```cpm
+    dir
+    ```
 
-To quit Basic type
+1. Erase a file.
 
-```basic
-system
-```
+    ```cpm
+    era *.txt
+    ```
+
+1. Copy Microsoft Basic "mbasic.com" from the A: drive to the B: drive.
+
+    ```cpm
+    pip b:=a:mbasic.com
+    ```
+
+1. List the contents of a file.
+
+    ```cpm
+    type hw.c
+    ```
+
+1. Rename a file
+
+    ```cpm
+    ren hello.c=hw.c
+    ```
+
+## Get started with Microsoft BASIC 80
 
 For more information on Microsoft Basic, see [Microsoft Basic 80](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/Microsoft_BASIC-80.pdf?azure-portal=true).
 
-## Word-Master Text Editor
+Microsoft BASIC 80 is included on the A: drive.
+
+1. To Start Microsoft Basic, from the CP/M command prompt, type
+
+    ```bash
+    mbasic B:TEST.BAS
+    ```
+
+    Microsoft Basic will start and it will open or create a file called TEST.BAS on the B: drive.
+
+1. Type your first program
+
+    ```basic
+    10 for i = 1 to 1000
+    20 print i
+    30 next i
+    ```
+
+1. Save your program to disk
+
+    ```basic
+    save "B:TEST.BAS"
+    ```
+
+1. Load your program from disk.
+
+    ```basic
+    load "B:TEST.BAS"
+    ```
+
+1. To stop a program executing
+
+    Press <kbd>ctrl+c</kbd>.
+
+1. To quit Basic type
+
+    ```basic
+    system
+    ```
+
+1. You can learn more about Basic from the Basic applications included with the Altair emulator. The Basic apps included are:
+
+    * DISKRW.BAS
+    * STARTREK.BAS
+    * TICTACTOE.BAS
+    * SIMPLE.BAS
+    * LOOPY.BAS
+    * WEATHER.BAS
+    * IOT.BAS
+
+## The Altair emulator and Internet of Things
+
+The BASIC language has extensibility mechanism called ports. The Altair emulator includes support for ports and these ports are used by the **IOT.BAS** application. The IOT.BAS application calls **in** port 43 to read the temperature and port 44 to read the air pressure. These calls are routed to the C sphere_port_in in main.c of the Altair emulator.
+
+If you have an Avnet Azure Sphere Starter Kit, then the temperature and pressure data is read from the onboard sensors. If you have a SEEED Azure Sphere then random temperature and pressure data is used.
+
+The following BASIC program is a listing of IOT.BAS.
+
+```basic
+10 PRINT
+20 PRINT "Avnet onboard temperature and pressure sensor App"
+30 PRINT
+70 A$=""
+80 C=INP(43)
+90 IF C = 0 THEN GOTO 120
+100 A$=A$+CHR$(C)
+110 GOTO 80
+120 PRINT "Temperature is ";A$;" degrees Celsius."
+130 A$=""
+140 C=INP(44)
+150 IF C = 0 THEN GOTO 180
+160 A$=A$+CHR$(C)
+170 GOTO 140
+180 PRINT "Air pressure is ";A$;" hPa."
+210 PRINT
+```
+
+This is the sphere_port_in C function found in main.c of the Altair emulator application.
+
+```c
+/// <summary>
+/// Support for BASIC Port In for IOT.BAS temperature and pressure example
+/// Example shows environment temperature and pressure example
+/// </summary>
+/// <param name="port"></param>
+/// <returns></returns>
+static uint8_t sphere_port_in(uint8_t port) {
+  static bool reading_data = false;
+  static char data[10];
+  static int readPtr = 0;
+  uint8_t retVal = 0;
+  if (port == 43) {
+    if (!reading_data) {
+      readPtr = 0;
+      snprintf(data, 10, "%d", onboard_telemetry.latest.temperature);
+      publish_telemetry(onboard_telemetry.latest.temperature, onboard_telemetry.latest.pressure);
+      reading_data = true;
+    }
+    retVal = data[readPtr++];
+    if (retVal == 0x00) {
+      reading_data = false;
+    }
+  }
+  if (port == 44) {
+    if (!reading_data) {
+      readPtr = 0;
+      snprintf(data, 10, "%d", onboard_telemetry.latest.pressure);
+      reading_data = true;
+    }
+    retVal = data[readPtr++];
+    if (retVal == 0x00) {
+      reading_data = false;
+    }
+  }
+  return retVal;
+}
+```
+
+### Run the IOT.BAS application
+
+1. To Start Microsoft Basic, from the CP/M command prompt, type
+
+    ```cpm
+    mbasic A:IOT.BAS
+    ```
+
+    Microsoft Basic will start and it will open the IOT.BAS applicaion.
+
+1. Run the IoT application.
+
+    ```basic
+    run
+    ```
+
+When you run this application, temperature and pressure data will be published to IoT Central. You can view the data in the IoT Central web portal under the Environment tab for your device.
+
+> [!div class="mx-imgBorder"]
+> ![The illustration shows an IoT Central chart.](../media/iot-central-environment-chart.png)
+
+### Extend the IOT.BAS app
+
+Make the IOT.BAS application read the temperature and pressure every 5 seconds. When the temperature and pressure are read, the data is sent to IoT Central and plotted on the Environment chart.
+
+To pause the app for approximately 5 seconds, just add a loop.
+
+```basic
+250 FOR J = 0 TO 30000: NEXT J
+```
+
+Remember you can save changes you make using the Basic **Save** command.
+
+```basic
+save "B:IOT.BAS"
+```
+
+## Get started with the Word-Master Text Editor
 
 The CP/M disk image includes the Word-Master text editor. To use Word-Master, you must switch the Web Terminal to **Character Mode**. In Character Mode, the Web Terminal sends each character you type as an MQTT message to the Altair emulator.
 
@@ -79,74 +252,104 @@ Cursor Down             ^X   CURSOR DOWN LINE
 
 The CP/M disk image includes a demo assembler application. Follow these steps to edit and assemble and load the demo file.
 
-### Step 1: Copy the demo app to the B: drive
+1. Copy the demo app to the B: drive
 
-Copy the **demo.asm** file to the read/write B: drive using the **pip** command.
+    Copy the **demo.asm** file to the B: drive using the **pip** command.
 
-```bash
-pip b:=a:demo.asm
-```
+    ```bash
+    pip b:=a:demo.asm
+    ```
 
-### Step 2: Edit the demo.asm file with Word-Master
+1. Edit the demo.asm file with Word-Master. From the CP/M command prompt, type
 
-```bash
-a:wm b:demo.asm
-```
+    ```bash
+    a:wm b:demo.asm
+    ```
 
-### Step 3: Assemble the demo.asm file
+1. Switch the Web Terminal to **Character Mode**.
 
-```bash
-a:asm b:demo
-```
+    Press <kbd>ctrl+l</kbd>
 
-### Step 4: Load and Link the assembled code
+1. Make your changes to the demo.asm file.
 
-```bash
-a:load b:demo
-```
+1. Save your updates to the demo.asm file.
 
-### Step 4: Run the application
+    1. Press the **Esc** key.
+    1. Press **e** to exit, your file changes will be saved to disk.
 
-```bash
-b:demo
-```
+1. Switch the Web Terminal to **Line Mode**.
+
+    Press <kbd>ctrl+l</kbd>
+
+1. Assemble the demo.asm file.
+
+    ```bash
+    a:asm b:demo
+    ```
+
+1. Load and Link the assembled code.
+
+    ```bash
+    a:load b:demo
+    ```
+
+1. Run the demo application.
+
+    ```bash
+    b:demo
+    ```
 
 ## Compiling C applications
 
 The CP/M disk image includes a simple C application. Follow these steps to edit and compile and link the hw.c (helloworld) file.
 
-### Step 1: Copy the hw.c source code to the B: drive
+1. Copy the hw.c source code to the B: drive
 
-Copy the **hw.c** file to the read/write B: drive using the **pip** command.
+    Copy the **hw.c** file to the read/write B: drive using the **pip** command.
 
-```bash
-pip b:=a:hw.c
-```
+    ```bash
+    pip b:=a:hw.c
+    ```
 
-### Step 2: Edit the hw.c file with Word-Master
+1. Edit the hw.c file with Word-Master
 
-```bash
-a:wm b:hw.c
-```
+    ```bash
+    a:wm b:hw.c
+    ```
 
-### Step 3: Compile the hw.c file
+1. Switch the Web Terminal to **Character Mode**.
 
-```bash
-a:cc hw
-```
+    Press <kbd>ctrl+l</kbd>
 
-### Step 4: Link the hw app
+1. Make your changes to the hw.c file.
 
-```bash
-a:clink hw
-```
+1. Save your updates to the hw.c file.
 
-### Step 4: Run the application
+    1. Press the **Esc** key.
+    1. Press **e** to exit, your file changes will be saved to disk. 
 
-```bash
-b:hw
-```
+1. Switch the Web Terminal to **Line Mode**.
 
-### Step 5: Stop the hw application executing
+    Press <kbd>ctrl+l</kbd>
 
-To stop the application press <kbd>ctrl+c</kbd>
+1. Compile the hw.c file
+
+    ```bash
+    a:cc hw
+    ```
+
+1. Link the hw app
+
+    ```bash
+    a:clink hw
+    ```
+
+1. Run the application
+
+    ```bash
+    b:hw
+    ```
+
+1. Stop the hw application executing
+
+    To stop the application press <kbd>ctrl+c</kbd>

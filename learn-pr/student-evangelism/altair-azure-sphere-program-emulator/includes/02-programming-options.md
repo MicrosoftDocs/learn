@@ -1,4 +1,4 @@
-In this unit, you'll learn how to boot CP/M and start programming.
+In this unit, you'll learn how to start programming the Altair emulator from CP/M.
 
 ## A bit about CP/M
 
@@ -8,10 +8,6 @@ CP/M, originally stood for Control Program/Monitor, then later became known as C
 
 ## Programming option on CP/M
 
-From CP/M you can start **MBASIC (Microsoft Basic)**, and write and save apps to the B: drive. For **C** and **Assembler** applications you can edit with the WordStar text editor, again, you can save files to the B: drive.
+From CP/M you can start **MBASIC (Microsoft Basic)**, and write and save apps. For **C** and **Assembler** applications you can edit with the WordStar text editor.
 
-## The CP/M Reference Manual
-
-[CP/M Reference Manual](http://www.cpm.z80.de/manuals/cpm22-m.pdf?azure-portal=true)
-
-In the following exercise, you'll learn how to boot CP/M and start programming.
+In the following exercise, you'll learn how to start programming.
