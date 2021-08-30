@@ -4,17 +4,19 @@ In this exercise, you'll create an Azure Cosmos DB Gremlin API account, database
 
 ## Create an Azure Cosmos DB account
 
-Start by creating the database in <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>, by adding an Azure Cosmos DB account that uses the Graph API.
+Start by creating the database in <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> by adding an Azure Cosmos DB account that uses the Graph API.
 
 1. On the Azure portal home page, select **Create a resource**. The **Create a resource** pane appears.
 
    ![Create a resource from Azure portal menu.](../media/4-create-a-resource-azure-cosmos-db.png)
 
-1. In the left menu pane, select **Databases**, and then select **Azure Cosmos DB**.
+1. In the Create a resource menu, select **Databases**, and then select **Azure Cosmos DB**.
 
    ![Select Azure Cosmos DB.](../media/4-select-database-azure-cosmos-db.png)
 
-    The **Create Azure Cosmos DB Account** pane appears.
+    The **Select API option** page appears.
+
+1. Select **Gremlin (Graph)**. The **Create Azure Cosmos DB Account** page appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -24,9 +26,11 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
     | Subscription | Concierge Subscription |
     | Resource Group | <rgn>[Sandbox resource group]</rgn> |
     | **Instance Details** |
-    | Account Name | Use a globally unique value for your Azure Cosmos DB account. |
+    | Account Name | Enter a globally unique value for your Azure Cosmos DB account. |
     | API | Gremlin (graph) |
     | Location | Choose a region near you from the previous list. |
+    | Capacity mode | Provisioned throughput |
+    | Apply Free Tier Discount | Do Not Apply |
 
 1. Select **Next: Global Distribution**, and enter the following values for each setting.
 
@@ -35,35 +39,30 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
     | **Global Distribution** |
     | Geo-Redundancy | Disable |
     | Multi-region Writes | Disable |
-
-   Leave the default values for the remaining fields.
+    |Availability Zones | Disable |
 
 1. Select **Review + create**, and after receiving *Validation Success* notification, select **Create**.
 
-   It may take a few minutes for Azure to deploy your new Azure Cosmos DB account. A notification appears after deployment is complete.
+   A **Deployment is in progress** notification appears, displaying the details about your new resource. It may take a few minutes to deploy your new Azure Cosmos DB account. 
 
-1. Select **Go to resource**. Your Azure Cosmos DB account appears.
+1. When deployment is complete, a notification appears. Select **Go to resource**. Your Azure Cosmos DB account appears.
 
 ## Add a graph
 
-1. In the left menu pane, select **Overview**, copy the value for the **Gremlin Endpoint**; you'll use this value when you create your application in the next section.
-
-   ![Screenshot showing how to copy the Gremlin Endpoint.](../media/5-copy-gremlin-endpoint.png)
-
-1. In the left menu pane, select **Data Explorer**, and then select **New Graph** in the top menu bar. The **New Graph** pane appears.
+1. In the Azure Cosmos DB account menu, select **Data Explorer**, and then select **New Graph**. The **New Graph** pane appears.
 
 1. Enter the following values for each setting to build your new graph. Take note of the values that you choose for the **Database id** and **Graph id**. You'll use these values when you create your application in the next section.
 
    | Setting | Suggested value | Description |
    | --- | --- | --- |
-   | **Database id** | `sample-database` | Enter **sample-database** as the name for the new database. Database names must be between 1 and 255 characters, and cannot contain / \ # ? or a trailing space. |
-   | **Database throughput (autoscale)** | `4000 RU/s` | If you want to reduce latency, you can scale up the throughput later. |
+   | **Database id** | `sample-database` | Create new is selected by default. Database names must be between 1 and 255 characters, and cannot contain / \ # ? or a trailing space.  Share throughput across graphs is selected by default.|
+   | **Database throughput (autoscale)** | `4000` | Autoscale is selected by default. Accept the default of 4000 RU/s. If you want to reduce latency, you can scale up the throughput later. |
    | **Graph id** | `sample-graph` | Enter **sample-graph** as the name for your new collection. Graph names have the same character requirements as database IDs. |
    | **Partition key** | `/name` | Enter **/name** as the partition key. |
 
-1. To add the graph to your database, select **OK**. The **Data Explorer** pane shows your *sample-database* under **Gremlin API**.
+1. Select **OK**. After the graph is built, **Data Explorer** pane appears and displays your *sample-database* under **Gremlin API**.
 
-1. In the left menu pane, under **Settings**, select **Keys**, then copy the value for the **PRIMARY KEY**. You'll use this value when you create your application in the next section.
+1. In the Azure Cosmos DB account menu, under **Settings**, select **Keys**, then note the value for the **GREMLIN ENDPOINT** andcopy the value for the **PRIMARY KEY**. You'll use these values when you create your application in the next section.
 
    ![Screenshot showing how to copy the access key.](../media/5-copy-gremlin-key.png)
 
@@ -101,7 +100,7 @@ Now you'll create a .NET Core application that will allow you to run Gremlin API
    code .
    ```
 
-1. Open your appsettings.json file in the editor, and add the following syntax.
+1. Select the **appsettings.json** file to open it in the editor, and then add the following syntax.
 
    ```json
    {
@@ -115,19 +114,19 @@ Now you'll create a .NET Core application that will allow you to run Gremlin API
    }
    ```
 
-   Where:
+1. Update the following values:
 
    | Field | Description |
    |---|---|
-   | `HostName` | Replace the example value with just the domain name from your **Gremlin Endpoint** value; for example: *fabrikamgraph.gremlin.cosmos.azure.com*. |
-   | `Port` | Replace the example value with just the port from your **Gremlin Endpoint** value; this value should be *443*. |
-   | `AuthKey` | Replace the example value with your **PRIMARY KEY** value. |
-   | `Database` | Replace the example value with your **Database ID** value; for example: *sample-database*. |
-   | `Collection` | Replace the example value with your **Graph ID** value; for example: *sample-graph*. |
+   | `HostName` | Replace the placeholder with the *domain name* from your **Gremlin Endpoint**; for example: *jagremlin.gremlin.cosmos.azure.com*. |
+   | `Port` | This value should be *443*. Use port ID, or last three numbers from your **Gremlin Endpoint**. |
+   | `AuthKey` | Replace the sample value with your **PRIMARY KEY** that you copied in the previous task. |
+   | `Database` | If you used a different **Database ID** replace the default value *sample-database*. |
+   | `Collection` | If you used a different **Graph ID** replace the default value *sample-graph*. |
 
-1. To save your changes, press <kbd>Ctrl+S</kbd>.
+1. Press <kbd>Ctrl+S</kbd> to save the file.
 
-1. Open your Program.cs file in the editor, and add the following `using` statements to the beginning of the file.
+1. Open the Program.cs file in the editor, and add the following `using` statements to the beginning of the file.
 
    ```csharp
    using System.Threading.Tasks;
@@ -196,7 +195,13 @@ Now you'll create a .NET Core application that will allow you to run Gremlin API
    }
    ```
 
-1. To save your changes, press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
+1. Press <kbd>Ctrl+S</kbd> to save the file.
+ 
+1. Under obj, open **GremlinApp.csproj** in the editor.
+
+1. Change the version of **Gremlin.net** to 3.4.0
+
+1. Press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 ::: zone-end
 
@@ -255,9 +260,9 @@ Now you'll create a Node.js application that will allow you to run Gremlin API q
    | `config.database` | Replace the example value with your **Database ID** value; for example: *sample-database*. |
    | `config.collection` | Replace the example value with your **Graph ID** value; for example: *sample-graph*. |
 
-1. To save your changes, press <kbd>Ctrl+S</kbd> to save the file.
+1. Press <kbd>Ctrl+S</kbd> to save the file.
 
-1. Open your app.js file in the editor, and add the following code. This code reads your configuration settings, initializes the connection to your Azure Cosmos DB account using the Gremlin driver, sends a graph query to the server, and displays the number of items that were returned by the query.
+1. Open the app.js file in the editor, and add the following code. This code reads your configuration settings, initializes the connection to your Azure Cosmos DB account using the Gremlin driver, sends a graph query to the server, and displays the number of items that were returned by the query.
 
    ```javascript
    const Gremlin = require("gremlin");
@@ -293,7 +298,10 @@ Now you'll create a Node.js application that will allow you to run Gremlin API q
 
    ```
 
-1. To save your changes, press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
+1. Press <kbd>Ctrl+S</kbd> to save the file.
+
+
+3. , and then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 ::: zone-end
 
