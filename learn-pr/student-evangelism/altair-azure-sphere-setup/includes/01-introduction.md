@@ -51,6 +51,6 @@ In this module, you will:
   * Avnet Azure Sphere Starter Kit Rev 1 or 2
   * Seeed Studio Azure Sphere MT3620 Development Kit
 * A GitHub account.
-* An Azure Account. Sign up for a free [Student Azure account](https://azure.microsoft.com/free/students?azure-portal=true), or free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
+* An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
 
 In the next unit, you'll learn how to install the required software and deploy the Altair 8800 emulator to your Azure Sphere.
