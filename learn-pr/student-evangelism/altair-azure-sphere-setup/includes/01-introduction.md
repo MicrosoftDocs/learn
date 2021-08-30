@@ -14,7 +14,7 @@ Either an Avnet or Seeed Studio Azure Sphere.
 
 ### Avnet Azure Sphere plus MikroE 8800 Retro Click and microSD Card
 
-An Avnet Azure Sphere Starter Kit with the [MikroE 8800 Retro Click](https://www.mikroe.com/8800-retro-click) and [MikroE microSD Card Click](https://www.mikroe.com/microsd-click).
+An Avnet Azure Sphere Starter Kit with the [MikroE 8800 Retro Click](https://www.mikroe.com/8800-retro-click?azure-portal=true) and [MikroE microSD Card Click](https://www.mikroe.com/microsd-click?azure-portal=true).
 
 ![Avnet Azure Sphere plus MikroE Click panel and MikroE microSD Card.](../media/avnet-azure-sphere-rev-2-microSD-click.png)
 
