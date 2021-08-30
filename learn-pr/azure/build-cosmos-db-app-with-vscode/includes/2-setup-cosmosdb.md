@@ -30,13 +30,11 @@ In this unit, you will install the Azure Databases extension for Visual Studio, 
 
 1. In the text box at the top of the screen, enter a unique name for your Azure Cosmos DB account, and then press <kbd>Enter</kbd>. The account name can contain only lowercase letters, numbers and the '-' character, and must be between 3 and 31 characters.
 
-1. In the text box for capacity model. select **Provisioned Throughput**, and press **<kbd>Enter</kbd>.
+1. In the text box for capacity model. select **Provisioned Throughput**, and press <kbd>Enter</kbd>.
 
-1. In the text box for resource group, select **<rgn>[sandbox resource group name]</rgn>**, and press **<kbd>Enter</kbd>.
+1. In the text box for resource group, select **<rgn>[sandbox resource group name]</rgn>**, and press <kbd>Enter</kbd>.
 
-1. In the text box for location, select a location close to your from the options, and press **<kbd>Enter</kbd>.
-
-1. Select **SQL (DocumentDB)**, then select **<rgn>[sandbox resource group name]</rgn>**, and then select a location.
+1. In the text box for location, select a location close to your from the options, and press <kbd>Enter</kbd>.
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
