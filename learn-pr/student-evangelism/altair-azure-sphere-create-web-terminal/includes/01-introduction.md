@@ -4,13 +4,11 @@ In this module, you'll learn how to configure IoT Central, create the Altair Web
 
 When your Altair emulator connects to IoT Central, you can set several properties, including startup CPU State and LED brightness. You also can report memory usage and environment data.
 
-> [!div class="mx-imgBorder"]
-> ![The illustration shows the IoT Central properties view of the Altair emulator.](../media/iot-central-view-properties.png)
+:::image type="content" source="../media/iot-central-view-properties.png" alt-text="Screenshot that shows the IoT Central properties view of the Altair emulator.":::
 
 From IoT Central, you can monitor the current state of the Altair emulator including how well the virtual disk cache is working.
 
-> [!div class="mx-imgBorder"]
-> ![The illustration shows the IoT Central about view of the Altair emulator.](../media/iot-central-view-about.png)
+:::image type="content" source="../media/iot-central-view-about.png" alt-text="Screenshot that shows the IoT Central about view of the Altair emulator.":::
 
 ## Create the Altair Web Terminal
 
@@ -18,8 +16,7 @@ The Altair emulator redirects keyboard and terminal messages over MQTT, via an M
 
 The following image shows connecting to the Altair emulator from a web browser.
 
-> [!div class="mx-imgBorder"]
-> ![The illustration shows the Altair web terminal connecting to the Altair emulator.](../media/web-terminal-connect.png)
+:::image type="content" source="../media/web-terminal-connect.png" alt-text="Screenshot that shows the Altair web terminal connecting to the Altair emulator.":::
 
 ## Run the Altair virtual disk server
 
@@ -27,7 +24,7 @@ If you don't have the MikroE microSD Click, then you can run the virtual disk se
 
 Drive B: disk sector reads and writes are redirected over MQTT to an MQTT enabled Python-based virtual disk server. Drive B: disk sectors are also cached on one of the real-time cores. Caching significantly improves read/write performance.
 
-![Altair virtual disk Architecture ](../media/altair-azure-sphere-disk-cache-server.png)
+:::image type="content" source="../media/altair-azure-sphere-disk-cache-server.png" alt-text="Diagram of the Altair virtual disk architecture." border="false":::
 
 Disk reads work as follows:
 
