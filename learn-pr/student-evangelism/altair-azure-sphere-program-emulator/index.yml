@@ -37,10 +37,10 @@ products:
 - azure-sphere
 units:
 - learn.student-evangelism.altair-azure-sphere-program-emulator.introduction
-- learn.student-evangelism.altair-azure-sphere-program-emulator.altair-basic
-- learn.student-evangelism.altair-azure-sphere-program-emulator.exercise-write-altair-basic-application
 - learn.student-evangelism.altair-azure-sphere-program-emulator.programming-options
 - learn.student-evangelism.altair-azure-sphere-program-emulator.exercise-start-cpm
+- learn.student-evangelism.altair-azure-sphere-program-emulator.altair-basic
+- learn.student-evangelism.altair-azure-sphere-program-emulator.exercise-write-altair-basic-application
 - learn.student-evangelism.altair-azure-sphere-program-emulator.configuration-options
 - learn.student-evangelism.altair-azure-sphere-program-emulator.exercise-configure-front-panel
 - learn.student-evangelism.altair-azure-sphere-program-emulator.knowledge-check

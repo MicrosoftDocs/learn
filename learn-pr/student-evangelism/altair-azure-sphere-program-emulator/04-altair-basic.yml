@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-central
 durationInMinutes: 1 # dummy number at present
 content: |
-  [!include[](includes/02-altair-basic.md)]
+  [!include[](includes/04-altair-basic.md)]

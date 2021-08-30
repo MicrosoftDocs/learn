@@ -114,7 +114,7 @@ The Altair project works on Azure Sphere developer boards from Avnet and Seeed S
     ###################################################################################################################
     ```
 
-1. Enable SD Card support. This is only for the Avnet Azure Sphere Rev 2 with the MikroE microSD Click. Uncomment the **set** command to enable SD Card support.
+1. Enable SD Card support. This is only for the Avnet Azure Sphere Starter Kit with the MikroE microSD Click. Uncomment the **set** command to enable SD Card support.
 
     ```text
     # ENABLE SD CARD ##################################################################################################
