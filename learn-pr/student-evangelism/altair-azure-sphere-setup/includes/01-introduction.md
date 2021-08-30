@@ -22,7 +22,7 @@ An Avnet Azure Sphere Starter Kit with the [MikroE 8800 Retro Click](https://www
 
 The Seeed Studio or Avnet with the Altair Front Panel. Full details for building and wiring the Altair front panel can be found on the [Altair 8800 Hardware repo](https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.Hardware).
 
-![Avnet Azure Sphere with the Altair front panel.](../media/avnet-with-front-panel.png)
+![Avnet Azure Sphere with the Altair front panel.](../media/avnet-front-panel.png)
 
 ![Seeed Studio Azure Sphere with the Altair front panel.](../media/altair-front-panel.png)
 
