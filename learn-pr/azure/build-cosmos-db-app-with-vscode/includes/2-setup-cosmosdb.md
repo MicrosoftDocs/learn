@@ -34,7 +34,7 @@ In this unit, you will install the Azure Databases extension for Visual Studio, 
 
 1. In the text box for resource group, select **<rgn>[sandbox resource group name]</rgn>**, and press <kbd>Enter</kbd>.
 
-1. In the text box for location, select a location close to your from the options, and press <kbd>Enter</kbd>.
+1. In the text box for location, select a location close to yours from the options, and press <kbd>Enter</kbd>.
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
