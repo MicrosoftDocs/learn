@@ -18,7 +18,7 @@ In the previous exercise, you configured your `iot-db` using a script. Let's bre
 
 For this exercise, you'll use the Query Editor in the Azure portal to query the database from a browser.
 
-1. To confirm everything is working properly, navigate to your Azure SQL Database called **iot-db** in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
+1. To confirm everything is configured properly, navigate to your Azure SQL Database called **iot-db** in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
 
 1. On the left-hand menu, select **Query editor (preview)**.
 
@@ -29,16 +29,16 @@ For this exercise, you'll use the Query Editor in the Azure portal to query the 
     ```sql
     SELECT *
     FROM sys.database_scoped_configurations
-    WHERE name = ASYNC_STATS_UPDATE_WAIT_AT_LOW_PRIORITY;
+    WHERE name = 'ASYNC_STATS_UPDATE_WAIT_AT_LOW_PRIORITY';
     GO
     ```
 
 1. The “max degree of parallelism” (referred to as MAXDOP) configuration option controls the ability of the database engine to use parallel threads during query processing. When MAXDOP is something besides 1, the database engine may execute queries using multiple concurrent threads. This often results in shorter query duration due to additional CPU resources used for query processing. The number of concurrently executing threads, and the resulting CPU utilization, depends on the MAXDOP value. Higher values generally result in more threads and higher resource utilization. After years of analyzing customer data, MAXDOP=8 has been set as the default for Azure SQL Database and Managed Instance. Confirm this setting by running the following query.
 
     ```sql
-    SELECT name, value_in_use
-    FROM sys.configurations
-    WHERE description LIKE '%parallelism%';
+    SELECT *
+    FROM sys.database_scoped_configurations
+    WHERE name = 'MAXDOP';
     GO
     ```
 
@@ -46,6 +46,7 @@ For this exercise, you'll use the Query Editor in the Azure portal to query the 
 
     ```sql
     SELECT is_page_compressed
+    -- this query doesnt work
     FROM sys.dm_db_database_page_allocations(DB_ID(), OBJECT_ID(N'[dbo].[events]'), 0, 1, 'DETAILED');
     GO
     ```
@@ -56,10 +57,6 @@ For this exercise, you'll use the Query Editor in the Azure portal to query the 
     SELECT definition, uses_ansi_nulls, uses_quoted_identifier,is_schema_bound
     FROM sys.sql_modules
     WHERE object_id = OBJECT_ID('[dbo].[vTimeSeriesBuckets]');
-    GO
-    SELECT OBJECT_DEFINITION (OBJECT_ID('[dbo].[vTimeSeriesBuckets]')) AS ObjectDefinition;
-    GO
-    EXEC sp_helptext '[dbo].[vTimeSeriesBuckets]';
     GO
     ```
 
@@ -82,10 +79,10 @@ In future scenarios, and also for the distribution scenario, you will want to mo
     GO
     ```
 
-1. Run the following T-SQL to see latency of the data ingested.
+1. Run the following T-SQL to see latency of the data ingested. The result is the most recent piece of data inserted into the database.
 
     ```sql
-    SELECT TOP 1 * 
+    SELECT TOP 1 eventTime 
     FROM dbo.events 
     ORDER BY timestamp DESC;
     GO

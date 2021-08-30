@@ -23,7 +23,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     cat .ssh/id_rsa.pub
     ```
 
-1. Next, you need to obtain your local public IP address. Ensure that you're disconnected from any VPN service, and open a local PowerShell terminal on your device. Run the following command, and note the resulting IP address.
+1. Next, you need to obtain your local public IP address. **Ensure that you're disconnected from any VPN service**, and open a local PowerShell terminal on your device. Run the following command, and note the resulting IP address.
 
     ```powershell
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
@@ -137,6 +137,9 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 You have now deployed and configured the appropriate schema for the scenario.
 
+> [!TIP]
+> The script may result with `Nonqualified transactions are being rolled back...`. That is OK for the purposes of this exercise.
+
 ## Configure the application settings for the `iot-workload` function
 
 1. In your notes tool of choice document the connection string for your Azure SQL Database. It will be something like `Server=tcp:<your-server-name>.database.windows.net,1433;Database=iot-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
@@ -213,26 +216,11 @@ You have now deployed and configured the appropriate schema for the scenario.
 
 1. Once complete, you have deployed the code that configures the function to support the scenario.
 
-## Deploy the schema to Azure SQL Database
-
-1. Run `bash` to switch from PowerShell to bash.
-
-1. Deploy the database schema using a script from the GitHub repository. Update the code below and run the the Azure Cloud Shell (you may want to copy to a text file to easily modify). Note you'll need to add your server name and password.
-
-    ```bash
-    sqlcmd -S [server-name].database.windows.net -P [password] -U cloudadmin -d iot-db -i azure-sql-iot/sql_schema/script.sql
-    ```
-
-> [!NOTE]
-> The script may result with `Nonqualified transactions are being rolled back. Estimated rollback completion: 100%`. That is OK for the purposes of this exercise.
-
-1. Finally, select **CTRL+C** to exit sqlcmd.
-
 ## Connect to the Azure Virtual Machine and start the simulator
 
 1. Return to the Azure Cloud Shell on the right-hand side of this page.
 
-1. Using the IP address you noted earlier and replacing `0.0.0.0` with it, run the following and follow the prompts to log in to your Azure Virtual Machine.
+1. Using the IP address you noted earlier and replacing `0.0.0.0` with it, run the following and follow the prompts to log in to your Azure Virtual Machine. You'll need to say `yes` to connect.
 
     ```bash
     ssh cloudadmin@0.0.0.0
@@ -264,13 +252,21 @@ You have now deployed and configured the appropriate schema for the scenario.
     sudo docker run -it -e "IotHubConnectionString=<IoTHubConnectionString>" -e DeviceCount=1000 mcr.microsoft.com/oss/azure-samples/azureiot-simulatordeviceprovisioning:latest
     ```
 
-1. Replace <IoTHubConnectionEndpoint> with your IoT Hub connection string in the code below. Then, run it in the Azure Cloud Shell to start generating messages on the provisioned devices.
+1. Replace <IoTHubConnectionEndpoint> with your IoT Hub connection string in the code below. Then, run it in the Azure Cloud Shell to start generating messages on the provisioned devices. You should see the results in the window appearing rapidly.
 
     ```bash
     sudo docker run -it -e "IotHubConnectionString=<IoTHubConnectionString>" -e Template="{ \"deviceId\": \"$.DeviceId\", \"temp\": $.Temp, \"Ticks\": $.Ticks, \"Counter\": $.Counter, \"time\": \"$.Time\", \"engine\": \"$.Engine\" }" -e Variables="[{name: \"Temp\", \"random\": true, \"max\": 25, \"min\": 23}, {\"name\":\"Counter\", \"min\":100}, {name:\"Engine\", values: [\"on\", \"off\"]}]" -e MessageCount=0 -e DeviceCount=1000 -e Interval=100  mcr.microsoft.com/oss/azure-samples/azureiot-telemetrysimulator:latest
     ```
 
-1. To confirm everything is working properly, navigate to your Azure SQL Database called **iot-db** in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
+1. To check how the simulation is going, in a different window navigate to your Azure Function App in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
+
+1. On the left-hand menu, under *Functions* select **Functions**.
+
+1. Select **iot_workload**. If it does not appear, refresh your browser.
+
+1. In the *Overview* tab, you should be able to see a high and varying number of successful execution counts. This information means that the Azure Function App is being triggered by the devices to push data into Azure SQL Database.
+
+1. To confirm everything is connected properly, navigate to your Azure SQL Database called **iot-db** in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
 
 1. On the left-hand menu, select **Query editor (preview)**.
 
@@ -281,5 +277,8 @@ You have now deployed and configured the appropriate schema for the scenario.
     ```sql
     SELECT TOP(1000) * FROM dbo.events;
     ```
+
+> [!TIP]
+> There is a slight delay as the simulation starts up. If you don't see any data, wait 1-2 minutes and then try running the query above again. If you still don't see any data, you should check the configurations you added for your Azure Function. Most likely, something is wrong with one of your connection strings.
 
 You have now successfully deployed the template and configured the resources. You are now simulating activity on 1,000 devices and using Azure Functions to ingest the data into Azure SQL Database. Let this continue to run so the simulation continues for the rest of the module.
