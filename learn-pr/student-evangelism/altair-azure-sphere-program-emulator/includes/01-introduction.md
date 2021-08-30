@@ -4,10 +4,10 @@ The Altair emulator is running an Open Source Intel 8080 emulator. Layered on th
 
 The Altair Emulator can be programmed in two ways:
 
-1. Entering Intel 8080 [Opcodes](https://en.wikipedia.org/wiki/Opcode) using the Altair front panel switches
+1. Entering Intel 8080 [Opcodes](https://en.wikipedia.org/wiki/Opcode?azure-portal=true) using the Altair front panel switches
 1. or, using a higher-level programming language.
 
-![Altair on Azure Sphere application architecture.](../media/azure-sphere-app-architecture.png)
+:::image type="content" source="../media/azure-sphere-app-architecture.png" alt-text="Diagram that shows the Altair on Azure Sphere application architecture." border="false":::
 
 When you start the Altair emulator, it boots up CP/M. From CP/M you can program the Altair emulator using Microsoft BASIC, BD Software C, and Microsoft MACRO-80 Assembler. You can also change the boot order so the Altair emulator boots into Altair BASIC. The boot order is set from the **Boot Config** section in the CMakeLists.txt file.
 
