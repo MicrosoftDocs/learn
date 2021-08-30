@@ -42,13 +42,13 @@ The MikroE 8800 Retro Click has two modes of operation, command mode, and input 
 
 In **Command Mode**, the buttons take on the role of the command switches on the Altair. In this mode you have access to CPU STOP, CPU RUN, SINGLE STEP, EXAMINE, EXAMINE NEXT, DEPOSIT, and DEPOSIT NEXT.
 
-![The illustration shows buttons for command mode.](../media/altair-retro-click-panel-command-mode.png)
+:::image type="content" source="../media/altair-retro-click-panel-command-mode.png" alt-text="Photo that shows buttons for command mode." border="false":::
 
 ### Input Mode
 
 In **Input Mode**, the buttons take on the role of the 16 address/data switches on the Altair. Using the 16 buttons on the ALtair 8800 Retro Click you can set the bit values to be loaded onto the data bus or address bus.
 
-![The illustration shows for input mode.](../media/altair-retro-click-panel-input-mode.png)
+:::image type="content" source="../media/altair-retro-click-panel-input-mode.png" alt-text="Screenshot that shows input mode." border="false":::
 
 ### CPU RUN STOP Status LEDs
 
@@ -69,7 +69,7 @@ Follow along:
 1. Press button **8** to turn off the address just entered.
 1. Press buttons **7**, **6**, **1**, and **0** to set the Intel 8080 Jmp instruction
 
-![Image show the LEDS 7,6,1,0 set for Intel opcode jmp.](../media/altair-intel-8080-jmp-opcode.png)
+   :::image type="content" source="../media/altair-intel-8080-jmp-opcode.png" alt-text="Photo that show the LEDS 7,6,1,0 set for Intel opcode jmp." border="false":::
 
 1. Press **Button B** on the Avnet Stater kit to switch to **Command** mode.
 1. Press **DEPOSIT** to deposit the first byte of the Jmp instruction at address 0x0100.
@@ -104,7 +104,7 @@ Single step: Address bus: 00000000 00000000 (0x0000), Data bus 11000011 (0xc3), 
 
 The Altair front panel board can be used with the Avnet Starter Kit and the Seeed Studio Reference Design Board.
 
-![Altair front panel.](../media/altair-front-panel.png)
+:::image type="content" source="../media/altair-front-panel.png" alt-text="Photo that shows the Altair front panel." border="false":::
 
 ### Loading an Intel 8080 opcode using the Altair front panel
 
