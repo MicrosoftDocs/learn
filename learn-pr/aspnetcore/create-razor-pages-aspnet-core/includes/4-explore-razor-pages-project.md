@@ -50,5 +50,5 @@ The following table provides routes to be used in this module's completed projec
 |------------------------------------------------------|----------------------------------------------------|
 | *www.domain.com*                 | *Pages/Index.cshtml*           |
 | *www.domain.com/index*           | *Pages/Index.cshtml*           |
-| *www.domain.com/products*        | *Pages/Products/Index.cshtml*  |
-| *www.domain.com/products/create* | *Pages/Products/Create.cshtml* |
+| `www.domain.com/products`        | *Pages/Products/Index.cshtml*  |
+| `www.domain.com/products/create` | *Pages/Products/Create.cshtml* |
