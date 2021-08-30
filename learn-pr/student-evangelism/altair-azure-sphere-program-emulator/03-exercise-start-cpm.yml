@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-central
 durationInMinutes: 10 # dummy number at present
 content: |
-  [!include[](includes/05-exercise-start-cpm.md)]
+  [!include[](includes/03-exercise-start-cpm.md)]

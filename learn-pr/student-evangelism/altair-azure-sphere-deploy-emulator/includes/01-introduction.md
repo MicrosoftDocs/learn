@@ -1,6 +1,6 @@
 In this module, you'll learn about the architecture of the Azure Sphere and the Altair emulator. You'll also learn how to deploy the emulator to your Azure Sphere.
 
-## Azure Sphere architecture
+## Azure Sphere Architecture
 
 The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores. There is a Cortex-A7 high-level core that runs a Linux kernel and two Cortex-M4 real-time cores. The Cortex-A7 is responsible for running system services and your custom high-level application. The Cortex-M4 cores can run your custom bare-metal apps, or real-time operating systems such as Azure RTOS or FreeRTOS.
 
@@ -12,17 +12,17 @@ The Altair emulator consists of two applications, one high-level application, an
 
 :::image type="content" source="../media/azure-sphere-app-architecture.png" alt-text="Diagram that shows the Altair on Azure Sphere application architecture." border="false":::
 
-1. The **AltairHL_emulator** high-level application is responsible for running the Altair emulator and managing communications.
+1. The **Altair emulator** high-level application is responsible for running the Altair emulator and managing communications.
 
     * The Altair project is a dual communications stack project. The built-in Azure IoT C SDK is used for communications with IoT Central. The Altair emulator's stdin, stdout, and disk requests are passed over MQTT and a back-end MQTT Broker.
 
-1. The **AltairRT_disk_cache_server** real-time application.
+1. The **Altair disk cache service** real-time application.
 
-    * The disk cache server application provides Cache-Aside services using a Least Recently Used eviction policy for the Altair emulator virtual file system. The Altair emulator uses the cache to improve virtual disk performance. The cache-aside pattern is useful in a wide range of scenarios. For example, you could cache Price Look-Up codes for retail solutions.
+    * The disk cache service application provides Cache-Aside services using a Least Recently Used eviction policy for the Altair emulator virtual file system. The Altair emulator uses the cache to improve virtual disk performance. The cache-aside pattern is useful in a wide range of scenarios. For example, you could cache Price Look-Up codes for retail solutions.
 
-1. The **AltairRT_sd_card_server** real-time application.
+1. The **Altair SD Card service** real-time application.
 
-    * SD card support for the Altair emulator read/write disk drive B: is supported on the Avnet Azure Sphere **Rev 2** developer board with the MikroE microSD Click. The MikroE microSD Click must be plugged into socket 1 of the Avnet Azure Sphere Rev 2 developer board.
+    * SD card support for the Altair emulator for the Avnet Azure Sphere Starter Kits with the MikroE microSD Click. The MikroE microSD Click must be plugged into socket 1 on the Avnet Azure Sphere Starter Kit.
 
 <!-- ## IoT Central IoT Plug and Play model
 
@@ -41,11 +41,10 @@ In this module, you will:
 * Learn about the architecture of Azure Sphere.
 * Learn about the application architecture of the Altair emulator.
 * Start the app build and deployment process.
-* Understand the virtual disk cache-aside server.
+* Understand the virtual disk cache-aside service.
 
 ## Prerequisites
 
-* You have completed the previous module of the learning path.
 * A computer with an x86-64-based processor running:
   * Windows 10 Anniversary Update or later.
   * Or, 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS.
@@ -55,4 +54,4 @@ In this module, you will:
 * A GitHub account.
 * An Azure Account. Sign up for a free [Student Azure account](https://azure.microsoft.com/free/students?azure-portal=true), or free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
 
-In the next unit, you'll learn about the virtual disk sector cache-aside server.
+In the next unit, you'll learn about the virtual disk sector cache-aside service.

@@ -60,7 +60,7 @@ From the Device menu bar, select **Edit template**.
 1. Select **Save**
 
     :::image type="content" source="../media/iot-central-template-properties.png" alt-text="Screenshot that shows setting properties.":::
-
+    
 ### Add an environment data visualization view
 
 1. Select **Views** and then select **Visualizing the device**.
@@ -76,7 +76,7 @@ From the Device menu bar, select **Edit template**.
 1. From the capability list, select **Pressure**.
 
     :::image type="content" source="../media/iot-central-visualize-tile-capabilities.png" alt-text="Screenshot that shows how to expand properties.":::
-
+    
 1. Select **Update**.
 1. Select **Save**.
 
@@ -114,7 +114,7 @@ The Web Terminal uses the IoT Central device name to connect to the Altair emula
 1. Select **Generate**
 1. **Copy** the generated token to notepad as you'll need for the next step.
 
-:::image type="content" source="../media/iot-central-api-token-generate.png" alt-text="Screenshot that shows the API Tokens tab.":::
+    :::image type="content" source="../media/iot-central-api-token-generate.png" alt-text="Screenshot that shows the API Tokens tab.":::
 
 ## Generate the IoT Central URL
 
@@ -123,6 +123,6 @@ You need the IoT Central URL for the Altair Web Terminal.
 1. From your browser address bar, **copy** the base address of your IoT Central application to notepad as you'll need for the next step.
 1. Ensure you **remove** the trailing '**/**' from the URL.
 
-:::image type="content" source="../media/iot-central-application-url.png" alt-text="Screenshot that shows how to copy the IoT Central URL.":::
+    :::image type="content" source="../media/iot-central-application-url.png" alt-text="Screenshot that shows how to copy the IoT Central URL.":::
 
 In the next unit, you will create the Altair Web Terminal.

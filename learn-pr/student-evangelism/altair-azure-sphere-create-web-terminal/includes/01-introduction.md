@@ -20,7 +20,7 @@ The following image shows connecting to the Altair emulator from a web browser.
 
 ## Run the Altair virtual disk server
 
-The virtual disk server provides read/write permanent storage for your CP/M applications. The virtual disk server can run on your desktop or in a cloud-based Azure Virtual Machine.
+If you don't have the MikroE microSD Click, then you can run the virtual disk server for read/write storage for your CP/M applications. The virtual disk server can run on your desktop or in a cloud-based Azure Virtual Machine.
 
 Drive B: disk sector reads and writes are redirected over MQTT to an MQTT enabled Python-based virtual disk server. Drive B: disk sectors are also cached on one of the real-time cores. Caching significantly improves read/write performance.
 
@@ -47,7 +47,6 @@ In this module, you will:
 
 ## Prerequisites
 
-* You have completed the previous module of the learning path.
 * A computer with an x86-64-based processor running:
   * Windows 10 Anniversary Update or later.
   * Or, 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS.

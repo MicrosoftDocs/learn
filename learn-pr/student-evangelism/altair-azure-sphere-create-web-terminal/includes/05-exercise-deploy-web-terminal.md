@@ -67,12 +67,12 @@ The Altair Web Terminal is secure and requires authenticated users so you need t
 1. From the [Microsoft Azure Portal](https://portal.azure.com?azure-portal=true).
 1. Select **All resources**.
 
-:::image type="content" source="../media/azure-portal-all-resources.png" alt-text="Screenshot that shows how to select the all resources Azure portal blade.":::
+   :::image type="content" source="../media/azure-portal-all-resources.png" alt-text="Screenshot that shows how to select the all resources Azure portal blade.":::
 
 1. Filter resources by name. Type **AltairWebTerminal** in the filter dialog box.
 1. Select on the **AltairWebTerminal** Static Web App.
 
-:::image type="content" source="../media/static-web-app-select.png" alt-text="Screenshot that shows how to select the AltairWebTerminal Static Web App.":::
+   :::image type="content" source="../media/static-web-app-select.png" alt-text="Screenshot that shows how to select the AltairWebTerminal Static Web App.":::
 
 1. Select **Role management**, followed by **Invite**.
 1. Select your **Authentication provider**.
@@ -89,7 +89,7 @@ The Altair Web Terminal is secure and requires authenticated users so you need t
 
 1. If the invite link is for someone else, send the link to them to authenticate and grant consent.
 
-:::image type="content" source="../media/static-web-app-invite.png" alt-text="Screenshot that shows how to copy the invite link.":::
+   :::image type="content" source="../media/static-web-app-invite.png" alt-text="Screenshot that shows how to copy the invite link.":::
 
 ## Connect the Altair Web Terminal to your Azure Sphere
 

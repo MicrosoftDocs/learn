@@ -9,14 +9,13 @@ The Altair Emulator can be programmed in two ways:
 
 :::image type="content" source="../media/azure-sphere-app-architecture.png" alt-text="Diagram that shows the Altair on Azure Sphere application architecture." border="false":::
 
-When you start the Altair emulator, it boots up Altair BASIC ready for your first program. You can boot CP/M after the Altair emulator has started. From CP/M you can program the Altair emulator using Microsoft BASIC, BD Software C, and Microsoft MACRO-80 Assembler.
+When you start the Altair emulator, it boots up CP/M. From CP/M you can program the Altair emulator using Microsoft BASIC, BD Software C, and Microsoft MACRO-80 Assembler. You can also change the boot order so the Altair emulator boots into Altair BASIC. The boot order is set from the **Boot Config** section in the CMakeLists.txt file.
 
-## Saving files
+## Saving files to disk
 
-Files can only be saved from CP/M on the Altair emulator. You must have the virtual disk server running or an Avnet Azure Sphere Rev 2 with the MikroE microSD Click. From CP/M you can start **MBASIC (Microsoft Basic)**, and write and save apps to the virtual B: drive. For **C** and **Assembler** applications you can edit with the WordStar text editor and save files to the virtual B: drive.
+Files can only be saved to disk when the Altair emulator is running CP/M. To save files to disk, you must run the virtual disk server or have an Avnet Azure Sphere Starter Kit with the MikroE microSD Click. From CP/M you can start **MBASIC (Microsoft Basic)**, and write and save apps to the virtual B: drive. For **C** and **Assembler** applications you can edit with the WordStar text editor and save files to the virtual B: drive.
 
 In this module, you will:
-
 
 * Understand Altair BASIC and CP/M, and how to use them.
 * Learn how to program the Altair emulator using Altair BASIC.
@@ -24,7 +23,6 @@ In this module, you will:
 
 ## Prerequisites
 
-* You have completed the previous module of the learning path.
 * A computer with an x86-64-based processor running:
   * Windows 10 Anniversary Update or later.
   * Or, 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS.
@@ -34,4 +32,4 @@ In this module, you will:
 * A GitHub account.
 * An Azure Account. Sign up for a free [Student Azure account](https://azure.microsoft.com/free/students?azure-portal=true), or free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
 
-In the next unit, you'll learn how to program the Altair emulator using Altair BASIC.
+In the next unit, you'll learn how to start programming the Altair emulator from CP/M.

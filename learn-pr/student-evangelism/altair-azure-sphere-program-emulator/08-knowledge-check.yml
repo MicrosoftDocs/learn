@@ -27,11 +27,11 @@ quiz:
   - content: "The Altair emulator can run Altair BASIC and CP/M. Which option is true?"
     choices:
     - content: "When the Altair emulator starts it is running CP/M."
-      isCorrect: false
-      explanation: "When the Altair emulator starts it is running Altair BASIC. You need to manual boot up CP/M."
-    - content: "When the emulator starts it is running Altair BASIC, you can then boot CP/M"
       isCorrect: true
-      explanation: "When the Altair emulator starts it is running Altair BASIC. You need to manual boot up CP/M"
+      explanation: "When the Altair emulator starts it is running Altair CP/M."
+    - content: "When the emulator starts it is running Altair BASIC"
+      isCorrect: false
+      explanation: "When the Altair emulator starts it is running CP/M. You can config the Altair emulator to boot up Altair BASIC."
     - content: "When the Altair emulator starts you can program in Altair BASIC, Microsoft Basic, C, and Assembler."
       isCorrect: false
-      explanation: "The Altair emulator runs Altair BASIC on startup. You can then boot CP/M and then you can program with Microsoft Basic, C, and Assembler."
+      explanation: "The Altair emulator runs CP/M on startup. You can then program with Microsoft Basic, C, and Assembler."

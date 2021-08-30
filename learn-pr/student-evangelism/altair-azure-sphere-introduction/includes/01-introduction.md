@@ -6,6 +6,8 @@ The Altair 8800 is considered to be the computer that kick-started the Personal 
 
 :::image type="content" source="../media/altair-8800-smithsonian-museum.png" alt-text="Diagram that shows the Altair 8800." border="false":::
 
+[Altair 8800 image attribution - Smithsonian Museum](https://commons.wikimedia.org/wiki/File:Altair_8800,_Smithsonian_Museum.jpg)
+
 The Altair 8800 was built on the [Intel 8080](https://en.wikipedia.org/wiki/Intel_8080?azure-portal=true) CPU, the second 8-bit microprocessor manufactured by Intel in 1974. By today's standards, it's a simple CPU design, perfect for learning computing fundamentals due to its small instruction set.
 
 This learning path brings together the Open Source Altair 8800 emulator and Azure Sphere. You will learn about:
@@ -47,7 +49,9 @@ The core of the system is the Open Source Intel 8080 CPU emulator that runs comp
 
 :::image type="content" source="../media/altair-azure-sphere-architecture.png" alt-text="Diagram that shows the Azure Sphere architecture." border="false":::
 
-## Introduction to Altair 8800 emulator on Azure Sphere
+## Introduction video to Altair 8800 emulator on Azure Sphere
+
+Select the following image to view an introduction to the cloud-connected Altair emulator running on Azure Sphere.
 
 [![Intro to the the Altair 8800 emulator on Azure Sphere video](../media/youtube-intro-thumbnail.png)](https://www.youtube.com/watch?v=nUMOpEOx6LI)
 

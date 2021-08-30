@@ -1,5 +1,7 @@
 In the following exercise, you'll config and deploy the Altair emulator to your Azure Sphere.
 
+## Open the Altair emulator with Visual Studio Code
+
 1. Start Visual Studio Code.
 
 2. Select **Open folder**.
@@ -10,7 +12,7 @@ In the following exercise, you'll config and deploy the Altair emulator to your 
 
 5. Select **Select Folder** or the **OK** button to open the project.
 
-## Step 2: Configure the Azure Sphere application
+## Configure the Azure Sphere application
 
 1. From Visual Studio Code, open the **app_manifest.json** file. The resources this application requires must be declared in the **Capabilities** section.
 
@@ -51,7 +53,6 @@ In the following exercise, you'll config and deploy the Altair emulator to your 
             "$LED_BLUE"
         ],
         "Uart": [ "$MT3620_ISU3_UART" ],
-        "SpiMaster": [ "$MT3620_ISU1_SPI" ],
         "I2cMaster": [ "$ISU2" ],
         "PowerControls": [ "ForceReboot" ],
         "AllowedConnections": [
@@ -83,7 +84,7 @@ In the following exercise, you'll config and deploy the Altair emulator to your 
 
 1. Save the updated app_manifest.json file.
 
-## Step 3: Select your developer board configuration
+## Select your developer board configuration
 
 The Altair project works on Azure Sphere developer boards from Avnet and Seeed Studio. The default developer board configuration is the Avnet Azure Sphere Starter Kit Revision 1 with **no** front panel.
 
@@ -94,27 +95,34 @@ The Altair project works on Azure Sphere developer boards from Avnet and Seeed S
 1. Uncomment the **set** command that corresponds to your Azure Sphere developer board. Ensure only one developer board is enabled.
 
     ```text
-    set(AVNET TRUE "AVNET Azure Sphere Starter Kit Revision 1 ")
-    # set(AVNET_REV_2 TRUE "AVNET Azure Sphere Starter Kit Revision 2 ")
+    # SELECT DEVELOPER BOARD ##########################################################################################
+    #
+    set(AVNET TRUE "AVNET Azure Sphere Starter Kit Revision 1 ")   
+    # set(AVNET_REV_2 TRUE "AVNET Azure Sphere Starter Kit Revision 2 ")  
     # set(SEEED_STUDIO_RDB TRUE "Seeed Studio Azure Sphere MT3620 Development Kit (aka Reference Design Board or rdb)")
+    #
+    ###################################################################################################################
     ```
 
 1. Select your front panel configuration. Uncomment the **set** command that corresponds to your front panel configuration.  Ensure only one front panel configuration is enabled.
 
     ```text
+    # SELECT FRONT PANEL CONFIG #######################################################################################
+    #
     set(ALTAIR_FRONT_PANEL_NONE TRUE "Altair on Azure Sphere with no panel.")
+    # set(ALTAIR_FRONT_PANEL_RETRO_CLICK TRUE "Avnet with the MikroE 8800 Retro Click")
     # set(ALTAIR_FRONT_PANEL_KIT TRUE "Altair front panel board")
-    # set(ALTAIR_FRONT_PANEL_CLICK TRUE "Avnet with the 4x4 keypad Click and  8x8 LED Click")
-    # set(ALTAIR_FRONT_PANEL_RETRO_CLICK TRUE "Avnet with Altair 8800 Retro Click")
+    #
+    ###################################################################################################################
     ```
 
-1. Enable SD Card support. This is only for the Avnet Azure Sphere Rev 2 with the MikroE microSD Click. Uncomment the **set** command to enable SD Card support.
+1. Enable SD Card support. This is only for the Avnet Azure Sphere Starter Kit with the MikroE microSD Click. Uncomment the **set** command to enable SD Card support.
 
     ```text
     # ENABLE SD CARD ##################################################################################################
     #
-    # The MikroE microSD Click only works with the Avnet Rev 2 when in Socket 1.
-    # The MikroE microSD Click works with the Mikroe Altair 8800 Retro Click in Socket 2
+    # The MikroE microSD Click works with the Avnet Azure Sphere Starter Kit Rev 1 and Rev 2 when in Socket 1.
+    # The MikroE microSD Click works with the Mikroe 8800 Retro Click in Socket 2
     # Uncomment the "set(MICRO_SD_CLICK" line below to enable the MikroE microSD Click
     #
     # set(MICRO_SD_CLICK TRUE "MikroE microSD Click for CP/M read/write to SD Card")
@@ -122,9 +130,21 @@ The Altair project works on Azure Sphere developer boards from Avnet and Seeed S
     ###################################################################################################################
     ```
 
+1. By default, the Altair emulator boots CP/M on startup. If you would like to boot up Altair BASIC, then comment out the **add_compile_definitions(BOOT_CPM)** command. Note, you cannot save files to the SD Card or the Virtual disk server from Altair BASIC.
+
+    ```text
+    # BOOT CONFIG #####################################################################################################
+    #
+    # Comment out the "add_compile_definitions(BOOT_CPM) line below to boot Altair BASIC 4.0
+    #
+    add_compile_definitions(BOOT_CPM)
+    #
+    ###################################################################################################################
+    ```
+
 1. Save the **CMakeLists.txt** file. Saving the file will autogenerate the CMake cache.
 
-## Step 4: Deploy the application to Azure Sphere
+## Deploy the application to Azure Sphere
 
 ### Start the app build and deployment process
 
@@ -143,10 +163,10 @@ The Altair project works on Azure Sphere developer boards from Avnet and Seeed S
    > [!TIP]
    > You can open the output tab by using the Visual Studio Code **Ctrl+Shift+U** shortcut or clicking the **Output** tab.
 
-## Step 5: Expected device behavior
+### Observe expected device behavior
 
 Observe the WLAN status LED on your developer board while the device establishes a secure connection to IoT Central and the MQTT Broker
 
 1. While establishing a WiFi connection the WLAN LED will blink on for 700 ms, then off for 700 ms.
 1. While establishing a connection to IoT Central and the MQTT Broker the WLAN LED will blink on for 100 ms, then off for 1300 ms.
-1. When the connection has been established with IoT Central the WLAN LED will blink on for 1300 ms, then off for 100 ms.
+1. When the connection has been established with IoT Central the WLAN LED will blink on for 1400 ms, then off for 100 ms.

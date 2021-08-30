@@ -14,7 +14,7 @@ In this exercise, you'll create an Azure Iot Central application and link it to 
 
 1. Navigate to **Build**, select **Custom app**, and select **Create app**.
 
-    :::image type="content" source="../media/new-application.png" alt-text="Screenshot that shows how to create a custom app.":::
+    :::image type="content" source="../media/new-application.png" alt-text="Screenshot that shows how to create custom app.":::
 
 1. Specify the **Application name**, specify the **URL**.
 
@@ -46,7 +46,7 @@ In this exercise, you'll create an Azure Iot Central application and link it to 
 
 1. From IoT Central, go to **Administration** > **Device Connection**.
 
-1. Select **+ Create an enrollment group**.
+1. Select **+ New**.
 
 1. Name the enrollment group **Azure Sphere**.
 1. Leave group type set to **IoT devices**.
