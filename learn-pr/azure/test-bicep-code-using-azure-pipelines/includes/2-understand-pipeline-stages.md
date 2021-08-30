@@ -8,7 +8,7 @@ Pipelines enable you to automate the steps in your deployment process. Your proc
 
 Stages can be used in your pipeline to mark a separation of concerns. For example, when you work with Bicep code, *validating* the code is a separate concern to *deploying* your Bicep file. When you use an automated pipeline, building and testing your code are often referred to as *continuous integration*, or CI for short. Deploying code in an automated pipeline is often called *continuous deployment*, or CD for short.
 
-In CI stages you check the validity of the changes that have been made to your code. CI stages provide quality assurance, and they can be executed without impacting your live production environment.
+In CI stages, you check the validity of the changes that have been made to your code. CI stages provide quality assurance, and they can be executed without impacting your live production environment.
 
 > [!NOTE]
 > In many programming languages, code needs to be *built* before someone can run it. While Bicep code gets transpiled to JSON ARM templates, this process is usually performed automatically by tooling. So, in most situations, you don't need to build Bicep code to JSON templates within your pipeline. We still use the terms *continuous integration* and *CI* when we talk about Bicep code, though, because the other parts of CI still apply, such as validating your code.
@@ -79,7 +79,7 @@ A typical Bicep deployment pipeline contains several stages. As the pipeline mov
 
 :::image type="content" source="../media/2-stages-bicep.png" alt-text="Diagram showing a Bicep deployment pipeline with five stages: Lint, Validate, Preview, Deploy, and Smoke Test." border="false":::
 
-1. **Lint:** Use the Bicep linter to verify that the Bicep file is well-formed and doesn't contain any obvious errors.
+1. **Lint:** Use the Bicep linter to verify that the Bicep file is well formed and doesn't contain any obvious errors.
 1. **Validate:** Use the Azure Resource Manager preflight validation process to check for problems that might occur when you deploy.
 1. **Preview:** Use the what-if command to validate the list of changes that will be applied against your Azure environment. Ask a human to manually review the what-if results and approve the pipeline to proceed.
 1. **Deploy:** Submit your deployment to Resource Manager and wait for it to complete.

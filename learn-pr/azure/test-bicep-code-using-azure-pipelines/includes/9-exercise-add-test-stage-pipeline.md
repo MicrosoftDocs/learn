@@ -141,7 +141,7 @@ Now that you've identified that your Bicep definition doesn't meet your security
 
    Notice that the what-if command has detected the change in the `httpsOnly` property's value:
 
-   :::code language="text" source="code/9-what-if-output.txt" highlight="13" :::
+   :::code language="plaintext" source="code/9-what-if-output.txt" highlight="13" :::
 
 1. Go back to the pipeline run.
 

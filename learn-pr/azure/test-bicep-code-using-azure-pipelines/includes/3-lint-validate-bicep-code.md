@@ -12,7 +12,7 @@ A valid Bicep template has a greater chance of deploying successfully. You'll ge
 
 When you deploy a Bicep file, the Bicep tooling first runs some basic validation steps. These steps are the same ones that run when you modify your file using Visual Studio Code. They check that you've used Bicep's language keywords correctly and that you've defined your Azure resources according to the requirements for each resource type.
 
-In addition, Bicep runs a *linter* over your files. Linting is the process of checking your code against a set of recommendations. The Bicep linter looks at your file and verifies that you've followed best practices for maintainability, correctness, flexibility and extensibility. A linter contains a pre-defined set of rules for checking rules in each of these categories. Some example linter rules include:
+In addition, Bicep runs a *linter* over your files. Linting is the process of checking your code against a set of recommendations. The Bicep linter looks at your file and verifies that you've followed best practices for maintainability, correctness, flexibility, and extensibility. A linter contains a pre-defined set of rules for checking rules in each of these categories. Some example linter rules include:
 
 - **Unused parameters.** The linter scans for any parameters that aren't used anywhere in the Bicep file. By eliminating unused parameters, you make it easier to deploy your template because you don't have to provide unnecessary values, and reduce confusion when someone tries to work with your Bicep file.
 - **String interpolation.** The linter checks if your file uses the `concat()` function instead of Bicep string interpolation. String interpolation makes your Bicep files more readable.
@@ -51,7 +51,7 @@ You express this in your pipeline YAML file like this:
 
 By default, the linter emits a warning when it discovers a Bicep file has violated a rule. Warnings emitted by the Bicep linter aren't treated as an error, so they won't stop the execution of your pipeline or stop subsequent stages from running.
 
-You can change this behavior by configuring Bicep to treat the linter rule violations as errors instead of warnings. You do this by add a *bicepconfig.json* file to the same directory that holds your templates. You'll see how to do this later in this module.
+You can change this behavior by configuring Bicep to treat the linter rule violations as errors instead of warnings. You do this by adding a *bicepconfig.json* file to the folder that contains your Bicep file. You'll see how to do this later in this module.
 
 > [!TIP]
 > The *bicepconfig.json* file also controls how Visual Studio Code shows errors and warnings in the editor. It displays red and yellow squiggly lines under misconfigured parts in your Bicep template. This gives you even quicker feedback when you're writing your Bicep code, further reducing the chance of an error.
@@ -79,7 +79,7 @@ Preflight validation requires communication with Azure, but it doesn't actually 
 
 You use the `az deployment group validate` Azure CLI command to submit a Bicep file for preflight validation:
 
-:::code language="yaml" source="code/3-preflight.yml" highlight="13-21" :::
+:::code language="yaml" source="code/3-preflight.yml" highlight="14-22" :::
 
 This command is very similar to the `az deployment group create` command, but it doesn't actually deploy any resources. However, it performs extra checks against the resources that are being used in your template. For example, suppose your Bicep file contains a storage account. Preflight validation will check whether the name you've specified has already been taken by another storage account. It also checks whether the name you chose for the storage account complies with storage account naming conventions. 
 
