@@ -1,5 +1,7 @@
 In the following exercise, you'll config and deploy the Altair emulator to your Azure Sphere.
 
+## Open the Altair emulator with Visual Studio Code
+
 1. Start Visual Studio Code.
 
 2. Select **Open folder**.
@@ -10,7 +12,7 @@ In the following exercise, you'll config and deploy the Altair emulator to your 
 
 5. Select **Select Folder** or the **OK** button to open the project.
 
-## Step 2: Configure the Azure Sphere application
+## Configure the Azure Sphere application
 
 1. From Visual Studio Code, open the **app_manifest.json** file. The resources this application requires must be declared in the **Capabilities** section.
 
@@ -82,7 +84,7 @@ In the following exercise, you'll config and deploy the Altair emulator to your 
 
 1. Save the updated app_manifest.json file.
 
-## Step 3: Select your developer board configuration
+## Select your developer board configuration
 
 The Altair project works on Azure Sphere developer boards from Avnet and Seeed Studio. The default developer board configuration is the Avnet Azure Sphere Starter Kit Revision 1 with **no** front panel.
 
@@ -142,7 +144,7 @@ The Altair project works on Azure Sphere developer boards from Avnet and Seeed S
 
 1. Save the **CMakeLists.txt** file. Saving the file will autogenerate the CMake cache.
 
-## Step 4: Deploy the application to Azure Sphere
+## Deploy the application to Azure Sphere
 
 ### Start the app build and deployment process
 
@@ -161,7 +163,7 @@ The Altair project works on Azure Sphere developer boards from Avnet and Seeed S
    > [!TIP]
    > You can open the output tab by using the Visual Studio Code **Ctrl+Shift+U** shortcut or clicking the **Output** tab.
 
-## Step 5: Expected device behavior
+### Observe expected device behavior
 
 Observe the WLAN status LED on your developer board while the device establishes a secure connection to IoT Central and the MQTT Broker
 

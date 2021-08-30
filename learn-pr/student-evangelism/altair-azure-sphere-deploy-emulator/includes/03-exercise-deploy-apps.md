@@ -1,6 +1,6 @@
-In this exercise, you'll deploy two real-time applications to your Azure Sphere.
+In this exercise, you'll deploy real-time Altair emulator services to your Azure Sphere.
 
-You can deploy the prebuilt real-time packages to the Azure Sphere or you can compile and deploy your own packages.
+You will deploy prebuilt real-time packages to the Azure Sphere.
 
 ## Deploy the prebuilt real-time packages (recommended)
 

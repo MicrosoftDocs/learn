@@ -16,7 +16,7 @@ MQTT messages between the Web Terminal and Altair emulator need to be signed and
 
 Installing the Mosquitto MQTT Broker on Linux is the easiest option as most package managers have the latest builds included.
 
-## Installing a Mosquitto MQTT Broker on an Ubuntu Server Virtual Machine on Azure
+## Installing a Mosquitto MQTT Broker
 
 Follow these steps to set up an Azure Virtual Machine running Ubuntu 20.04 LTS.
 
@@ -24,7 +24,7 @@ To minimize costs, the MQTT broker can be run on a **General purpose B1 SKU** vi
 
 The following article is a great guide to installing an [Ubuntu Server on Azure](https://k21academy.com/microsoft-azure/az-104/az-104-create-and-connect-an-ubuntu-virtual-machine-in-azure?azure-portal=true).
 
-### Step 1: Create an Ubuntu Virtual Server
+## Create an Ubuntu Virtual Server
 
 1. Open the Azure Portal. From the main **burger menu**, select **create a resource**.
 1. Search for **Virtual machine**, and select create.
@@ -35,7 +35,7 @@ The following article is a great guide to installing an [Ubuntu Server on Azure]
 1. Download the SSH private key and store in your ~/.shh folder.
 1. It takes about a minute to deploy the Virtual Machine.
 
-### Step 2: Configure the Virtual Machine
+## Configure the Virtual Machine
 
 1. Select **Go to resource**.
 1. Select DNS name **Not configured** and set up the DNS name and set the desired **idle timeout**.
@@ -51,12 +51,12 @@ The following article is a great guide to installing an [Ubuntu Server on Azure]
     |  8884   |  TCP   | Port_8884   | 311 | MQTT, encrypted, client certificate required  |
     |  8091   |  TCP   | Port_8091   | 312 | MQTT over WebSockets, encrypted, authenticated   |
 
-### Step 3: Enable Just-in-time access
+## Enable Just-in-time access
 
 1. Select the **Configuration** blade.
 1. Select **Enable just-in-time**.
 
-### Step 4: Connect to the Virtual Machine from your desktop
+## Connect to the Virtual Machine from your desktop
 
 1. Select the **Connect** blade.
 1. Set the **Source IP** to **My IP**
@@ -69,7 +69,7 @@ The following article is a great guide to installing an [Ubuntu Server on Azure]
 
     It might take a minute or two the first time you connect.
 
-### Step 5: Configure Ubuntu
+## Configure Ubuntu
 
 1. Apply any OS updates.
 
@@ -84,7 +84,7 @@ The following article is a great guide to installing an [Ubuntu Server on Azure]
     sudo pip3 install paho-mqtt
     ```
 
-### Step 6: Secure the Mosquitto MQTT Broker
+## Secure the Mosquitto MQTT Broker
 
 The following steps are required to set up certificates to secure the communications between the Altair emulator and the Web Terminal.  The following will generate a self-signed certificate that is valid for two years (730 days).
 
@@ -140,7 +140,7 @@ The following steps are required to set up certificates to secure the communicat
     sudo cp server.key /etc/mosquitto/ca_certificates
     ```
 
-### Step 7: Install Lets Encrypt
+## Install Lets Encrypt
 
 [Let's Encrypt](https://letsencrypt.org?azure-portal=true) is a nonprofit Certificate Authority providing TLS certificates to 260 million websites. We are going to use a free Let's Encrypt certificate to secure the MQTT messages between the Web Terminal and the Mosquitto MQTT Broker.
 
@@ -173,7 +173,7 @@ The following are the [instructions for installing the Certbot on Ubuntu](https:
     sudo ls -all /etc/letsencrypt/live/$CommonName
     ```
 
-### Step 8: Create the Web Terminal username and password
+## Create the Web Terminal username and password
 
 The Web Terminal will use the Let's Encrypt certificate to encrypt MQTT traffic over the internet. The Web Terminal will also need to authenticate with the MQTT broker using username and password.
 
@@ -185,7 +185,7 @@ The following command will create the MQTT broker password file and will prompt 
     sudo mosquitto_passwd -c /etc/mosquitto/passwd WebTerminal
     ```
 
-### Step 9: Configure Mosquitto MQTT Broker
+## Configure Mosquitto MQTT Broker
 
 We need to tell the Mosquitto Broker what ports to listen on and where the certificates are.
 
@@ -223,7 +223,7 @@ We need to tell the Mosquitto Broker what ports to listen on and where the certi
     sudo sed -i "s/YOUR_DOMAIN_NAME/$CommonName/g" /etc/mosquitto/conf.d/default.conf
     ```
 
-### Step 9: Test the Mosquitto Broker
+## Test the Mosquitto Broker
 
 A useful troubleshooting tip for the Mosquitto Broker is to start up in interactive mode to ensure there are no issues.
 
@@ -251,7 +251,6 @@ A useful troubleshooting tip for the Mosquitto Broker is to start up in interact
         * "MQTT_BROKER": "THE_DNS_NAME_OF_YOUR_VIRTUAL_MACHINE",
         * "MQTT_PASSWORD": "YOUR_WebTerminal_USERNAME_PASSWORD"
 
-
     Upload the Altair Web Terminal local settings
 
     1. Still in Visual Studio Code, press <kbd>F1</kbd>
@@ -277,7 +276,7 @@ A useful troubleshooting tip for the Mosquitto Broker is to start up in interact
     1625795897: New client connected from ::ffff:133.233.133.233 as altair1625795897993 (p2, c1, k30, u'WebTerminal').
     ```
 
-### Step 10: Update the Altair emulator configuration
+## Update the Altair emulator configuration
 
 We need to update the Altair emulator to connect to our new and secured Mosquitto MQTT Broker.
 
@@ -309,7 +308,7 @@ We need to update the Altair emulator to connect to our new and secured Mosquitt
     1625797626: New connection from 133.233.133.233 on port 8884.
     1625797627: New client connected from 133.233.133.233 as altair1234567 (p2, c1, k60, u'your-domain-name.australiaeast.cloudapp.azure.com').
 
-### Step 11: Start the Mosquitto MQTT Broker in daemon/service mode
+## Start the Mosquitto MQTT Broker in daemon/service mode
 
 1. Stop the interactive instance of the Mosquitto Broker with <kbd>ctrl+c</kbd>.
 1. Start the Mosquitto broker in daemon mode.
@@ -318,7 +317,7 @@ We need to update the Altair emulator to connect to our new and secured Mosquitt
     sudo systemctl enable mosquitto && sudo systemctl start mosquitto
     ```
 
-### Step 12: Run the Python Virtual Disk Server in the Virtual Machine
+## Run the Python Virtual Disk Server in the Virtual Machine
 
 Running the Python Virtual Disk Server in the Virtual machine will significantly improve performance as it eliminates the round trip to the MQTT server from your desktop.
 
@@ -328,7 +327,7 @@ Running the Python Virtual Disk Server in the Virtual machine will significantly
     cd ~/ && git clone --depth 1 https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.git Altair8800Emulator
     ```
 
-### Step 13: Autostart the Virtual Disk Server
+## Autostart the Virtual Disk Server
 
     ```
     sudo chmod 744 ~/Altair8800Emulator/AltairPY_virtual_disk_server/pyvdisk.sh

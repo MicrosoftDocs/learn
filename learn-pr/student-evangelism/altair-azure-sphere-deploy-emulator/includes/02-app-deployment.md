@@ -35,4 +35,4 @@ Disk writes work as follows:
 
 :::image type="content" source="../media/altair-azure-sphere-disk-cache-server.png" alt-text="The illustration shows the architecture of the real-time disk cache service.":::
 
-In the following exercise, you'll deploy the disk sector cache manager and the environment monitor real-time applications along with the Python-based Virtual Disk Server.
+In the following exercise, you'll deploy real-time Altair emulator services to your Azure Sphere.

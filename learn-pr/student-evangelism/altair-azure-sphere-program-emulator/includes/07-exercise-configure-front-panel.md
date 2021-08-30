@@ -1,4 +1,4 @@
-In this exercise, you'll learn how to program the Altair emulator using the Altair front panel.
+In this exercise, you'll learn how to program the Altair emulator from the Altair front panel.
 
 ## The Virtual Front Panel
 
