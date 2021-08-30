@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
 title: Azure Arc-enabled data services fundamentals
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/3-fundamentals.md)]
 quiz:
