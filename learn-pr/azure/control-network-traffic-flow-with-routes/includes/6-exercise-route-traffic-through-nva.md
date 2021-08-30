@@ -63,7 +63,7 @@ The next steps deploy a virtual machine into the public and private subnets:
         --output table"
     ```
 
-    A **ProvisioningState** value of "Succeeded" and a **PowerState** value of "VM running" indicate a successful deployment. When all three virtual machines are running, you're ready to move on. Select Ctrl-C to stop the command and continue with the exercise.
+    A **ProvisioningState** value of "Succeeded" and a **PowerState** value of "VM running" indicate a successful deployment. When all three virtual machines are running, you're ready to move on. Press <kbd>Ctrl-C</kbd> to stop the command and continue with the exercise.
 
 1. Run the following command to save the public IP address of the **public** virtual machine to a variable named `PUBLICIP`.
 
