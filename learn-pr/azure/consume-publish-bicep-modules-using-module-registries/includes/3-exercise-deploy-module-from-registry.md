@@ -1,3 +1,7 @@
+## Sign in to Azure
+
+## Create a resource group
+
 ## Create a Bicep template
 
 ## Add a module

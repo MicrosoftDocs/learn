@@ -12,15 +12,14 @@
 
 ## Create a container registry
 
-1. TODO Generate a name
+1. Decide on a unique name for your container registry. The name can't be used by any other Azure customers. Choose a name that is between 5 and 50 characters in length and contains letters and numbers. You'll use this in subsequent steps.
 
-1. Run this command:
+1. Create a container registry by running this command in the Visual Studio Code **Terminal**. Make sure to replace the name placeholder with the name you selected in the preceding step.
 
    ```azurecli
    az acr create \
-     --resource-group TODO \
-     --name TODO \
-     --sku Standard \
+     --name YOUR_CONTAINER_REGISTRY_NAME \
+     --sku Basic \
      --location westus
    ```
 
@@ -31,7 +30,7 @@
    ```azurecli
    az bicep publish \
      --file module.bicep \
-     --target 'oci:TODO.azurecr.io/test/test:v1'
+     --target 'oci:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/test/test:v1'
    ```
 
 1. TODO look on the portal to verify it's been created?
@@ -56,7 +55,6 @@
 
    ```azurecli
    az deployment group create \
-     --resource-group TODO \
      --template-file main.bicep
    ```
 
