@@ -45,10 +45,9 @@ For this exercise, you'll use the Query Editor in the Azure portal to query the 
 1. The data compression feature exists to help reduce the size of the database. In addition to saving space, data compression can help improve performance of I/O intensive workloads, like in IoT scenarios, because the data is stored in fewer pages and queries need to read fewer pages from disk. Confirm this setting by running the following query.
 
     ```sql
-    SELECT is_page_compressed
-    -- this query doesnt work
-    FROM sys.dm_db_database_page_allocations(DB_ID(), OBJECT_ID(N'[dbo].[events]'), 0, 1, 'DETAILED');
-    GO
+    SELECT TOP 1 data_compression_desc
+    FROM sys.partitions
+    WHERE OBJECT_ID=(SELECT OBJECT_ID(N'[dbo].[events]') AS 'Object ID');  
     ```
 
 1. For the events coming in, you may want to use Views to aggregate some of the raw data into insights. Review how the view was configured with the following query.

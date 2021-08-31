@@ -28,7 +28,7 @@ quiz:
       explanation: "Incorrect. The cloud gateway has this purpose."      
   - content: "What is the advantage of using Azure SQL Database for IoT scenarios?"
     choices:
-    - content: "Azure SQL Database can ingest millions of events per second"
+    - content: "Azure SQL Database can ingest millions of events per second and while querying ingested data with sub-second latency."
       isCorrect: false
       explanation: "Azure SQL Database can ingest millions of events per second if configured properly. However, that's not the only advantage."
     - content: "Azure SQL Database can integrate with other services including Azure Functions and Azure Stream Analytics."

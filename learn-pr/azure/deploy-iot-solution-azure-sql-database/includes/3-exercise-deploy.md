@@ -51,7 +51,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     ```powershell
     # Get resource group and location and random string
-    $resourceGroupName = "[sandbox resource group name]"
+    $resourceGroupName = "<rgn>[sandbox resource group name]</rgn>"
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like $resourceGroupName
     $uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
     $location = $resourceGroup.Location
