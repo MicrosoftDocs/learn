@@ -4,7 +4,7 @@ When you automate your Bicep deployments by using Azure Pipelines, you create a 
 
 Suppose you're the Azure administrator at a toy company. You've been working with your website team to create a Bicep template that deploys and configures the Azure resources for your company's main website, and you've recently also been creating a pipeline to deploy the Bicep file automatically.
 
-Recently, there have been several situations where you and your team have made changes to your website's Bicep files that included mistakes. You're worried that, one day, this might cause a production outage. You want to add testing to your Bicep deployment pipeline to ensure that each deployment has the best chance possible of succeeding.
+Recently, there have been several situations where you and your team have made changes to your website's Bicep files that included mistakes. You're worried that one day this might cause a production outage. You want to add testing to your Bicep deployment pipeline to ensure that each deployment has the best chance possible of succeeding.
 
 ## What will you be doing?
 

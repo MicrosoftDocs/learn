@@ -2,7 +2,7 @@ Pipelines enable you to automate the steps in your deployment process. Your proc
 
 ## What are pipeline stages?
 
-*Stages* help you to divide your pipeline into multiple logical blocks. Each stage can contain one or more jobs, and as you learned previously, jobs contain an ordered list of steps to run, like running command-line scripts.
+*Stages* help you to divide your pipeline into multiple logical blocks. Each stage can contain one or more jobs. Jobs contain an ordered list of steps that should be completed, like running command-line scripts.
 
 :::image type="content" source="../media/2-stages.png" alt-text="Diagram showing a pipeline with a stage containing one job. The job contains four steps." border="false":::
 
