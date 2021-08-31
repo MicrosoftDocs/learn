@@ -22,13 +22,7 @@ The modules in this learning path are part of a progression. For learning purpos
 Run a template that sets up your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=testbicep&azure-portal=true) <!-- TODO finalize URL -->
-
-> [!WARNING]
-> **Note to reviewers:** During the module review process, please use the following modification to the below instructions:
-> 1. [Download this zip file.](https://1drv.ms/u/s!AjdI8rY4Mc916AATjXH-wuCesaUG?e=f6wukn)
-> 1. Open this URL: [https://azuredevopsdemogenerator-mslearn.azurewebsites.net](https://azuredevopsdemogenerator-mslearn.azurewebsites.net).
-> 1. Select **Choose template** > **Private** and upload the zip file from above.
+> [Run the template](https://azuredevopsdemogenerator-mslearn.azurewebsites.net/?x-ms-routing-name=self&name=testbicep&azure-portal=true) <!-- TODO finalize URL -->
 
 On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
@@ -36,7 +30,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *toy-website-test*.
 
-    <!--:::image type="content" source="../media/4-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator."::: TODO -->
+    :::image type="content" source="../media/4-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::
 
 1. Select **Create Project**.
 
