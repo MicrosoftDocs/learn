@@ -3,7 +3,7 @@ uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity.arm-templates
 title: Azure Resource Manager (ARM) templates
 metadata:
   title: Azure Resource Manager (ARM) templates
-  description: Understand how to use several Azure services together, bring data to your Digital Twin, and add two-way communication in Unity and on the HoloLens.
+  description: Understand how to use several Azure services together, bring data to your Digital Twin, and add two-way communication in Unity and in mixed reality.
   ms.date: 05/12/2021
   author: JBrentJ
   ms.author: jejacks

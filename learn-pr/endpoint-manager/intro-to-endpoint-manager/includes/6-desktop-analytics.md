@@ -10,4 +10,4 @@ Use Desktop Analytics with Configuration Manager to:
 
 The following screenshot displays the Desktop Analytics pane:
 
-![Screenshot of the Desktop Analytics pane](../media/intro-to-endpoint-manager-10.png)
+![Screenshot of the Desktop Analytics pane.](../media/intro-to-endpoint-manager-10.png)

@@ -4,7 +4,7 @@ Cybercriminals will often escalate their activity in times of national or global
 
 Here, you’ll gain a general understanding of the Azure tools that support SIEM, SOAR, and XDR in protecting your network's security perimeter.
 
-### What is security incident and event management (SIEM)?
+### What is security information and event management (SIEM)?
 
 A SIEM system is a tool that an organization uses to collect data from across the whole estate, including infrastructure, software, and resources. It does analysis, looks for correlations or anomalies, and generates alerts and incidents.
 

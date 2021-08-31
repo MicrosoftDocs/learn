@@ -9,7 +9,7 @@ The nature and properties of data typically influence the design and implementat
 
 Data can be categorized using its dynamicity and structure. Specifically, data can be broadly segmented into one of the four quadrants shown in the following figure. One categorization represents the structure of the data, which is considered either **structured** or **unstructured**.
 
-![Segment data into various types](../media/segmenting-data.png)
+![Segment data into various types.](../media/segmenting-data.png)
 
 _Figure 1: Segment data into various types_<sup>[3][^3]</sup>
 
@@ -39,7 +39,7 @@ In this regard, we touch on an often-used term to describe large volumes of data
 
 The rapidly expanding information and communications technology (ICT) that is permeating all aspects of modern life has led to a massive explosion of data over the last few decades. Major advances in the connectivity and digitization of information has led to increasing amounts of data being created on a daily basis. This data is diverse, ranging from images and videos from mobile phones being uploaded to websites such as Facebook and YouTube, to 24/7 digital TV broadcasts, to surveillance footage from hundreds of thousands of security cameras, to large scientific experiments such as the Large Hadron Collider—all of which produce many terabytes of data every day. International Data Corporation's (IDC's) latest Digital Universe Study predicts a 300-fold increase in the amount of data created globally, from 130 exabytes (10<sup>28</sup>) in 2012 to 30,000 exabytes in 2020.
 
-![Predicted growth of data from 2009 to 2020](../media/predicted-growth-data.png)
+![Predicted growth of data from 2009 to 2020.](../media/predicted-growth-data.png)
 
 _Figure 2: Predicted growth of data from 2009 to 2020_<sup>[1][^1]</sup>
 

@@ -1,6 +1,6 @@
 We're now ready to connect our first sensor!  Research and development have informed us that we will be using a modified Azure Kinect device, which will consist of a module for reading the temperature and humidity of our manufacturing floor.  This solution will allow us to easily manage operations that require explicit temperatures during our production phases.
 
-[![Azure Kinect](../media/azure-kinect.png)](../media/azure-kinect.png#lightbox)
+[![Azure Kinect.](../media/azure-kinect.png)](../media/azure-kinect.png#lightbox)
 
 In this unit, we'll configure a pre-built Downstream Device to connect to the IoT Edge Gateway. This device will be configured with the certificate we created earlier to ensure communication is secure between the downstream device and the IoT Edge Gateway.
 

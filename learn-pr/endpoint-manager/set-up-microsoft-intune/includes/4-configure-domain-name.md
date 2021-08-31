@@ -22,7 +22,7 @@ You would not rename or remove the initial *onmicrosoft.com* domain name. Howeve
 
 3. Add your domain name and then click **Use this domain**.
 
-    ![Screenshot of Microsoft 365 admin center - Add a new domain](../media/sign-up-for-intune-08.png)
+    ![Screenshot of Microsoft 365 admin center - Add a new domain.](../media/sign-up-for-intune-08.png)
 
     If you are using a common domain registrar like GoDaddy or WordPress, verifying your domain is a quick process. In this case, you'll see a 'sign in' option to verify your domain.<p>
 
@@ -32,7 +32,7 @@ You would not rename or remove the initial *onmicrosoft.com* domain name. Howeve
 
 4. If you see the options to add a TXT record, add an MX record, or add a text file to the domain's website, you'll need to choose how you want to verify your domain. 
 
-   ![Screenshot of Microsoft 365 admin center - Verify your domain](../media/sign-up-for-intune-08a.png)
+   ![Screenshot of Microsoft 365 admin center - Verify your domain.](../media/sign-up-for-intune-08a.png)
 
    The steps to add and verify a custom domain can also be [performed in Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain?azure-portal=true).
 

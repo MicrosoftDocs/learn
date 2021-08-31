@@ -16,7 +16,7 @@ Using the techniques you learned in previous modules, create a new folder for yo
 
 Inside that folder, create a file for this exercise. For example, you might create a file named `exercise1.py`.
 
-When it's time to run your code, to use the Python Tools for Visual Studio Code integration, select the green arrow. Or, you can use a command in the integrated terminal by using techniques you learned about in previous modules.
+When it's time to run your code, use the Python Tools for Visual Studio Code integration, select the green arrow. Or, you can use a command in the integrated terminal by using techniques you learned about in previous modules.
 
 ### Step 2: Add an `if` statement to the new code file
 
@@ -89,15 +89,17 @@ value = '6'
 if value == '7':
     print('The value is 7')
     
-    print('Finished!')
+   print('Finished!') # Intentional difference in indent
 ```
+
+[//]: # (Note: This indent error is intentional for the user to see a whitespace error. Be careful when adjusting tabbing as it may be automatically corrected in a way that will break unit functionality.)
 
 And then attempt to run the code again, you'll see the following error.
 
 ```output
-    File "exercise1.py", line 6
-    print('Finished!')
-                         ^
+  File "exercise1.py", line 6
+    print('Finished!') # Intentional difference in indent
+                                                       ^
 IndentationError: unindent does not match any outer indentation level
 ```
 
@@ -232,22 +234,22 @@ Secondly, and more pertinent to this code example, is the nesting of the second 
 
 This nesting structure is common when you need to test several related (but different) data values before you perform some operation.
 
-If you remove the proper indentation.
+If you remove the proper indentation...
 
 ```python
 first_value = True
 second_value = '6'
     
 if first_value:
-if second_value == '6':
+if second_value == '6': # Intentionally not enough indentation
     print('Got here!')
 ```
 
-... it's likely you would see the following error message.
+...it's likely you would see the following error message.
 
 ```output
-    File "c:/python/numeric-operations-decisions/exercise2.py", line 65
-    if second_value == '6':
+  File "c:/python/numeric-operations-decisions/exercise2.py", line 65
+    if second_value == '6': # Intentionally not enough indentation
     ^
 IndentationError: expected an indented block
 ```

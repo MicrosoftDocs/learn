@@ -97,7 +97,7 @@ By making a selection, you open a new page that shows  details about the recomme
 
 In addition, on the left side of the page under **Recommendations**, you can select a different category to quickly open a page where you can see the Advisor recommendations for that  selection.
 
-:::image type="content" source="../media/azure-advisor-cost-recommendations.png" alt-text="Screenshot of Advisor Performance window with recommendation details" lightbox="../media/azure-advisor-cost-recommendations.png":::
+:::image type="content" source="../media/azure-advisor-cost-recommendations.png" alt-text="Screenshot of Advisor Performance window with recommendation details." lightbox="../media/azure-advisor-cost-recommendations.png":::
 
 After you select a linked description for a recommendation, a window opens showing some suggestions for actions you can take. At this point in the flow, you have several options for how you want to handle the recommendation.
 

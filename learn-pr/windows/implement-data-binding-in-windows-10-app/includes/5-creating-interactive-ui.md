@@ -1,6 +1,6 @@
 ::: zone pivot="uwp"
 
-![Tech logo](../media/tech-uwp.png)
+![Tech logo.](../media/tech-uwp.png)
 
 In the previous lessons, you built a simple form UI, prompting the user to enter a name and, with a button, to display a greeting. In this lesson, you'll make the form a bit more user-friendly by disabling or hiding the **Submit** button until at least three characters have been entered. 
 
@@ -86,13 +86,13 @@ If you run the app now, you should see that the **Submit** button is disabled by
 
 While this example performs some validation, Universal Windows Platform (UWP) has a rich set of validation features that will be shown in a later module.
 
-![Screenshot of app, with Submit button disabled](../media/submit-disabled.png)
+![Screenshot of app, with Submit button disabled.](../media/submit-disabled.png)
 
 #### 9. Hide the Submit button
 
 You or your designer might decide to go one step further, and actually hide the **Submit** button until it can be pressed. This is an easy change to make. Just edit the XAML, and change `IsEnabled` to `Visibility`. 
 
-![Screenshot of app, with Submit button hidden](../media/submit-collapsed.png)
+![Screenshot of app, with Submit button hidden.](../media/submit-collapsed.png)
 
 However, if you type a few characters, you see that the whole UI jumps. This is because the surrounding `StackPanel` is horizontally centered (`HorizontalAlignment="Center"`), and the width of the `StackPanel` is smaller when the `Button` is collapsed. To remedy this issue, simply put the `Button` in a 100 unit wide `Border`, like this.
 
@@ -117,7 +117,7 @@ In the next lesson, we examine how you can use data binding to display multiple 
 
 ::: zone pivot="wpf"
 
-![Tech logo](../media/tech-wpf.png)
+![Tech logo.](../media/tech-wpf.png)
 
 In the previous lessons, you built a simple form UI, prompting the user to enter a name and, with a button, to display a greeting. In this lesson, you'll make the form a bit more user-friendly by disabling or hiding the **Submit** button until at least three characters have been entered. 
 
@@ -203,7 +203,7 @@ If you run the app now, you should see that the **Submit** button is disabled by
 
 While this example performs some validation, Windows Presentation Foundation (WPF) has a rich set of validation features that will be shown in a later module.
 
-![Screenshot of app, with Submit button disabled](../media/submit-disabled_wpf.png)
+![Screenshot of app, with Submit button disabled.](../media/submit-disabled_wpf.png)
 
 ### Summary
 

@@ -8,7 +8,7 @@ ExpressRoute is supported across all regions and locations. To implement Express
 
 The partner sets up connections to an endpoint in an ExpressRoute location (implemented by a Microsoft edge router). These connections enable you to peer your on-premises networks with the virtual networks available through the endpoint. These connections are called *circuits*.
 
-![High-level overview of the Azure ExpressRoute service](../media/3-azure-expressroute-overview.svg)
+![High-level overview of the Azure ExpressRoute service.](../media/3-azure-expressroute-overview.svg)
 
 A circuit provides a physical connection for transmitting data through the ExpressRoute provider's edge routers to the Microsoft edge routers. A circuit is established across a private wire rather than the public internet. Your on-premises network is connected to the ExpressRoute provider's edge routers. The Microsoft edge routers provide the entry point to the Microsoft cloud.
 
@@ -32,7 +32,7 @@ ExpressRoute supports two peering schemes:
 - Use private peering to connect to Azure IaaS and PaaS services deployed inside Azure virtual networks. The resources that you access must all be located in one or more Azure virtual networks with private IP addresses. You can't access resources through their public IP address over a private peering.
 - Use Microsoft peering to connect to Azure PaaS services, Office 365 services, and Dynamics 365.
 
-![Azure peering](../media/3-azure-peering.svg)
+![Azure peering.](../media/3-azure-peering.svg)
 
 > [!NOTE]
 > You can also use the Azure portal to configure public peering. This form of peering enables you to connect to the public addresses exposed by Azure services. However, this peering is deprecated and is not available for new circuits. This module does not describe public peering.
@@ -57,13 +57,13 @@ When you're using the Azure portal, select **Create a resource** > **Networking*
 | **Resource group** | The Azure resource group in which to create the circuit. |
 | **Location** | The Azure location in which to create the circuit. |
 
-![Creating a circuit by using the Azure portal](../media/3-create-connection.png)
+![Creating a circuit by using the Azure portal.](../media/3-create-connection.png)
 
 Circuit creation can take several minutes. After the circuit has been provisioned, you can use the Azure portal to view the properties. You'll see that **Circuit status** is enabled, meaning that the Microsoft side of the circuit is ready to accept connections. **Provider status** will be **Not provisioned** initially. This is because the provider hasn't configured their side of the circuit for connecting to your network. 
 
 You send the provider the value in the **Service key** field to enable them to configure the connection. This can take several days. You can revisit this page to check the provider status.
 
-![Provisioning a circuit by using the Azure portal](../media/3-provision-circuit.png)
+![Provisioning a circuit by using the Azure portal.](../media/3-provision-circuit.png)
 
 ### Create a peering configuration
 
@@ -100,7 +100,7 @@ You can configure network security groups and firewall rules to control the traf
 > [!NOTE]
 > You must create the virtual network gateway by using the type **ExpressRoute** and not **VPN**.
 >
-> ![Creating a virtual network gateway with the gateway type set to ExpressRoute](../media/3-create-virtual-network-gateway.png)
+> ![Creating a virtual network gateway with the gateway type set to ExpressRoute.](../media/3-create-virtual-network-gateway.png)
 
 Up to 10 virtual networks can be linked to an ExpressRoute circuit, but these virtual networks must be in the same geographical region as the ExpressRoute circuit. You can link a single virtual network to four ExpressRoute circuits if necessary. The ExpressRoute circuit can be in the same subscription to the virtual network, or in a different one.
 

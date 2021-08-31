@@ -22,7 +22,7 @@ To see the restart policy in action, create a container instance from the **micr
     az container create \
       --resource-group learn-deploy-aci-rg \
       --name mycontainer-restart-demo \
-      --image microsoft/aci-wordcount:latest \
+      --image mcr.microsoft.com/azuredocs/aci-wordcount:latest \
       --restart-policy OnFailure \
       --location eastus
     ```

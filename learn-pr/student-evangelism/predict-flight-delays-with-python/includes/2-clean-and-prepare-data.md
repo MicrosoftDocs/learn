@@ -4,7 +4,7 @@ A [DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Data
 
 1. Switch back to the Azure notebook that you created in the previous section. If you closed the notebook, you can sign back into the [Microsoft Azure Notebooks portal](https://notebooks.azure.com?azure-portal=true), open your notebook and use the **Cell** -> **Run All** to rerun the all of the cells in the notebook after opening it.
 
-    ![The FlightData notebook](../media/2-load-dataset.png)
+    ![The FlightData notebook.](../media/2-load-dataset.png)
 
     _The FlightData notebook_
 
@@ -16,7 +16,7 @@ A [DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Data
 
     Confirm that the DataFrame contains 11,231 rows and 26 columns:
 
-    ![Getting a row and column count](../media/2-shape-output.png)
+    ![Getting a row and column count.](../media/2-shape-output.png)
 
     _Getting a row and column count_
 
@@ -64,7 +64,7 @@ One of the most important aspects of preparing a dataset for use in machine lear
 
     Confirm that the output is "True," which indicates that there is at least one missing value somewhere in the dataset.
 
-    ![Checking for missing values](../media/2-check-for-missing-values.png)
+    ![Checking for missing values.](../media/2-check-for-missing-values.png)
 
     _Checking for missing values_
 
@@ -76,7 +76,7 @@ One of the most important aspects of preparing a dataset for use in machine lear
 
     Confirm that you see the following output listing a count of missing values in each column:
 
-    ![Number of missing values in each column](../media/2-count-missing-values.png)
+    ![Number of missing values in each column.](../media/2-count-missing-values.png)
 
     _Number of  missing values in each column_
 
@@ -89,7 +89,7 @@ One of the most important aspects of preparing a dataset for use in machine lear
 
     Inspect the output and confirm that column 26 has disappeared from the DataFrame:
 
-    ![The DataFrame with column 26 removed](../media/2-phantom-column-removed.png)
+    ![The DataFrame with column 26 removed.](../media/2-phantom-column-removed.png)
 
     _The DataFrame with column 26 removed_
 
@@ -106,7 +106,7 @@ One of the most important aspects of preparing a dataset for use in machine lear
 
     The output shows that the DataFrame now includes only the columns that are relevant to the model, and that the number of missing values is greatly reduced:
 
-    ![The filtered DataFrame](../media/2-reduced-columns.png)
+    ![The filtered DataFrame.](../media/2-reduced-columns.png)
 
     _The filtered DataFrame_
 
@@ -118,7 +118,7 @@ One of the most important aspects of preparing a dataset for use in machine lear
 
     Pandas represents missing values with `NaN`, which stands for *Not a Number*. The output shows that these rows are indeed missing values in the ARR_DEL15 column:
 
-    ![Rows with missing values](../media/2-rows-with-missing-values.png)
+    ![Rows with missing values.](../media/2-rows-with-missing-values.png)
 
     _Rows with missing values_
 
@@ -133,7 +133,7 @@ One of the most important aspects of preparing a dataset for use in machine lear
 
     Confirm that the `NaN`s in rows 177, 179, and 184 were replaced with 1s indicating that the flights arrived late:
 
-    ![NaNs replaced with 1s](../media/2-missing-values-filled.png)
+    ![NaNs replaced with 1s.](../media/2-missing-values-filled.png)
 
     _NaNs replaced with 1s_
 
@@ -153,7 +153,7 @@ In this exercise, you will "bin" the departure times in the CRS_DEP_TIME column 
 
     Observe that the CRS_DEP_TIME column contains values from 0 to 2359 representing military times.
 
-    ![The DataFrame with unbinned departure times](../media/2-unbinned-departure-times.png)
+    ![The DataFrame with unbinned departure times.](../media/2-unbinned-departure-times.png)
 
     _The DataFrame with unbinned departure times_
 
@@ -169,7 +169,7 @@ In this exercise, you will "bin" the departure times in the CRS_DEP_TIME column 
 
     Confirm that the numbers in the CRS_DEP_TIME column now fall in the range 0 to 23:
 
-    ![The DataFrame with binned departure times](../media/2-binned-departure-times.png)
+    ![The DataFrame with binned departure times.](../media/2-binned-departure-times.png)
 
     _The DataFrame with binned departure times_
 
@@ -182,7 +182,7 @@ In this exercise, you will "bin" the departure times in the CRS_DEP_TIME column 
 
     Examine the resulting DataFrame and observe that the ORIGIN and DEST columns were replaced with columns corresponding to the airport codes present in the original columns. The new columns have 1s and 0s indicating whether a given flight originated at or was destined for the corresponding airport.
   
-   ![The DataFrame with indicator columns](../media/2-categorical-columns.png)
+   ![The DataFrame with indicator columns.](../media/2-categorical-columns.png)
 
    _The DataFrame with indicator columns_
 

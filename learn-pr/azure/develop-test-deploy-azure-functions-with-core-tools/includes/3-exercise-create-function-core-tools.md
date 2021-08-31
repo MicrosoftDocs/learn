@@ -51,7 +51,7 @@ Let's create our function!
     code .
     ```
 
-    ![Viewing the simple-interest function in Cloud Shell code editor](../media/3-functions-project-view.png)
+    ![Viewing the simple-interest function in Cloud Shell code editor.](../media/3-functions-project-view.png)
 
     The wizard has created a new folder in our functions project called **simple-interest**, and generated default **index.js** and **function.json** files in it. If you like, take a moment now to explore the project files in the editor.
 

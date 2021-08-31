@@ -46,7 +46,7 @@ The logic app is triggered with an HTTP request. In the body of the request, we 
 
 1. The **Logic Apps Designer** surface will open with the visual designer displayed, and with the **When an HTTP request is received** trigger selected.
 
-    [![Logic Apps Designer with HTTP request trigger](../media/logic-apps-designer1.png)](../media/logic-apps-designer1.png#lightbox)
+    [![Logic Apps Designer with HTTP request trigger.](../media/logic-apps-designer1.png)](../media/logic-apps-designer1.png#lightbox)
 
 1. On the **When an HTTP request is received** trigger, select the **Use sample payload to generate schema** link.
 
@@ -134,13 +134,13 @@ Now we want to configure the next step of the logic app: sending an email. And w
    
      If you can't see the dynamic content, select the **Add dynamic content** hyperlink under the **Body** text box. If it doesn't show you the fields you want, select **more** on the dynamic content screen to include the fields from the previous action.
 
-    [![Fill out email information](../media/email-content.png)](../media/email-content.png#lightbox)
+    [![Fill out email information.](../media/email-content.png)](../media/email-content.png#lightbox)
 
 1. Select **Save** to save all changes to the logic app workflow.
 
 1. Expand the **When an HTTP request is received** trigger. Copy the displayed value for **HTTP POST URL**, and save it for future reference. You now have the webhook endpoint URL for the logic app that Event Grid will use to trigger the execution of the logic app workflow.
 
-    [![HTTP request info](../media/http-post.png)](../media/http-post.png#lightbox)
+    [![HTTP request info.](../media/http-post.png)](../media/http-post.png#lightbox)
 
     The **HTTP POST URL** value will be similar to this sample:
 

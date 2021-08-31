@@ -186,7 +186,7 @@ The output is:
 9 equals 3 * 3
 ```
 
-> ![Note]
+> [!NOTE]
 > In the preceding example, the `else` statement belongs to the `for` loop, not to the `if` statement.
 
 ### Try it yourself

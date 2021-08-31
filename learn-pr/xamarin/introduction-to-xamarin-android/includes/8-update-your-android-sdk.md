@@ -132,7 +132,7 @@ The Android SDK is updated frequently. It won't notify you when updates are read
 
 To target the latest versions of Android, you need to have those Android versions installed on your development machine.
 
-![A diagram showing the Android SDK components](../media/8-android-sdk-components.png)
+![A diagram showing the Android SDK components.](../media/8-android-sdk-components.png)
 
 You'll update two key pieces:
 

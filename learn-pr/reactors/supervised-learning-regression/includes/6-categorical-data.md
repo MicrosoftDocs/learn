@@ -268,7 +268,7 @@ The output is:
 > [!div class="alert is-tip"]
 > Output
 
-:::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial.svg" alt-text="Scatter plot output":::
+:::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial.svg" alt-text="Scatter plot output.":::
 
 ***
 
@@ -317,7 +317,7 @@ The output is:
 > [!div class="alert is-tip"]
 > Output
 
-:::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial-subplots.svg" alt-text="Scatter plot output":::
+:::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial-subplots.svg" alt-text="Scatter plot output.":::
 
 ***
 
@@ -447,7 +447,7 @@ Now that you have a better polynomial degree to use in the models, re-run the co
 
   The output is:
 
-  :::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial-subplots-degree.svg" alt-text="Scatter plot output":::
+  :::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial-subplots-degree.svg" alt-text="Scatter plot output.":::
 
 </details>
 

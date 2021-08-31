@@ -8,7 +8,7 @@ In this unit, you'll use the Azure portal to verify your Event Hub is working ac
 
 1. On the Overview page, view the message counts.
 
-    ![Screenshot of the Azure portal displaying the Event Hub namespace with message counts](../media/6-view-messages.png)
+    ![Screenshot of the Azure portal displaying the Event Hub namespace with message counts.](../media/6-view-messages.png)
 
 1. The SimpleSend and EventProcessorSample applications are configured to send/receive 100 messages. You'll see that the Event Hub has processed 100 messages from the SimpleSend application and has transmitted 100 messages to the EventProcessorSample application.
 
@@ -32,7 +32,7 @@ Perform the following steps to see what happens when an application sends messag
 
 1. Under **EVENT HUB STATUS**, select **Disabled**. Save the changes.
 
-    ![Disable Event Hub](../media/7-disable-event-hub.png)
+    ![Disable Event Hub.](../media/7-disable-event-hub.png)
 
     **Wait for a minimum of five minutes.**
 

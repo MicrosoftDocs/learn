@@ -2,7 +2,7 @@ Mobile devices are becoming more varied in size and shape, such as the dual-scre
 
 Suppose you're building a data-driven app where the user drills down into more details. On a single-screen device the user will typically be switching back-and-forth between screens, while a dual-screen device provides space for both the list and detail information to be shown at the same time. The `TwoPaneView` control can be used to build apps that work well for both.
 
-![Example of a dual-screen device showing a sample app](../media/1-twopaneview-small.png)
+![Example of a dual-screen device showing a sample app.](../media/1-twopaneview-small.png)
 
 In this module, you'll use `DualScreenInfo` and `TwoPaneView` to display a list of items, and navigate into more details for each item. You'll start with an existing single-screen app, and by adding a `TwoPaneView` show data in the other pane. Finally, you'll customize the behavior when the application is spanned across two screens and when it is unspanned to a single screen. By the end of this module, you'll be able to build a Xamarin.Forms application that supports both single- and dual-screen devices.
 

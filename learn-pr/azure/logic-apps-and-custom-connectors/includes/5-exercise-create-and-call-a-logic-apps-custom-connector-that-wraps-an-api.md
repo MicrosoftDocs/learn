@@ -37,7 +37,7 @@ In this exercise, you'll create a custom connector for the Print Framer API and 
 
 1. Once again, select **Add a new parameter**, then select **Relative path**, and in the **Relative path** field, enter `{height}/{width}`.
 
-    ![Configure the HTTP request for the Logic App](../media/5-configure-http-request.png)
+    ![Configure the HTTP request for the Logic App.](../media/5-configure-http-request.png)
 
 1. In the **Logic Apps Designer**, select **Save**.
 
@@ -75,7 +75,7 @@ Now let's use the OpenAPI file we saved early to define custom connector.
 
 1. On the **Overview** page, select **Edit**.
 
-    ![Edit the custom connector](../media/5-edit-logic-apps-connector.png)
+    ![Edit the custom connector.](../media/5-edit-logic-apps-connector.png)
 
 1. In the **Custom connectors** section, select **OpenAPI file**, and then select **Import**. Open the JSON file you saved in the last exercise.
 
@@ -112,7 +112,7 @@ Now, you can add the custom connector to our Logic App.
 
 1. In the **Estimate the cost of a picture frame** box, select the **Height** field, and then select **height** from the **Dynamic content** pane on the right. The following screenshot illustrates this selection.
 
-    ![Bind the height parameter to the custom connector](../media/5-bind-height-parameter.png)
+    ![Bind the height parameter to the custom connector.](../media/5-bind-height-parameter.png)
 
 1. Select the **Width** field, and under **Dynamic content**, select **width**.
 
@@ -130,7 +130,7 @@ The final thing to add to the Logic App is something to display the results. Let
 
 1. In the **Dynamic content** pane to the right, select **Body** from the **Estimate the cost of a picture frame** section. This selection is illustrated in the following screenshot.
 
-    ![Configure the HTTP response](../media/5-configure-http-response.png)
+    ![Configure the HTTP response.](../media/5-configure-http-response.png)
 
 1. Save your changes by selecting **Save** at the top of the Logic Apps designer.
 

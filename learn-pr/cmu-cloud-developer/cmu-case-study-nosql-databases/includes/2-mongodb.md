@@ -47,7 +47,7 @@ MongoDB manages collections and documents as files on a local file system. If an
 
 For small installations, MongoDB is deployed as as a single-node system. In order to scale MongoDB to multiple nodes, MongoDB support two scale-out modes: **replication** and **sharding**. In replication, multiple copies of the same data are maintained over multiple servers, allowing for MongoDB to tolerate node failures in case a node goes down. A set of mongodb nodes that has the same data is known as a **replica set**. One node in a replica-set is known as the **primary**, the remaining nodes are known as **secondaries**. By default, only the primary node responds to requests from clients for both reads and writes. The primary node sends out messages to update the replicas whenever there is an operation that writes data. In this mode, MongoDB guarantees strict consistency as all requests for data are processed only by the primary node. 
 
-![Replication in MongoDB](../media/mongodb-replica.png)
+![Replication in MongoDB.](../media/mongodb-replica.png)
 
 _Figure 5: Replication in MongoDB_
 
@@ -55,7 +55,7 @@ A MongoDB replica-set is designed for automatic failover. If a node fails to res
 
 In order to distribute data, MongoDB allows for data to be **sharded** across multiple nodes. Each shard is an independent database, and collectively, the shards make up a single logical database. The architecture of a sharded MongoDB cluster is illustrated below:
 
-![Sharding in MongoDB](../media/mongodb-shards.png)
+![Sharding in MongoDB.](../media/mongodb-shards.png)
 
 _Figure 6: Sharding in MongoDB_
 

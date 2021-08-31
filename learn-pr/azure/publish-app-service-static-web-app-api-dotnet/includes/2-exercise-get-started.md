@@ -24,7 +24,7 @@ You just created a GitHub repository named **my-static-blazor-app** in your GitH
 
 It's time to see your application running locally. Visual Studio will open the website in your default browser.
 
-:::image type="content" source="../media/my-shopping-list-app-loading.png" alt-text="Browsing to your web app":::
+:::image type="content" source="../media/my-shopping-list-app-loading.png" alt-text="Browsing to your web app.":::
 
 Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
 

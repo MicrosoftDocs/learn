@@ -56,7 +56,7 @@ In this next section, you'll configure the cache settings and show the effects o
 
 1. Next to **Query string caching behavior**, select **Cache every unique URL**, then select **Save**.
 
-![Select the Query String Caching Behavior](../media/6-caching.PNG)
+![Select the Query String Caching Behavior.](../media/6-caching.PNG)
 
 ### Add Query Strings and Check Caching Behavior
 

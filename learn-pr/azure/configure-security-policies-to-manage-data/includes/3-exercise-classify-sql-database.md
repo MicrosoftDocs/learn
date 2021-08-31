@@ -6,7 +6,7 @@ In this exercise, you will create your resource group and an Azure SQL Database 
 
 1. In the left menu pane, select **Databases**, and then select **SQL Database**. The **Create SQL Database** pane appears.
 
-    ![Screenshot of the SQL Database create page](../media/M04-L01-01-create-database-1.png)
+    ![Screenshot of the SQL Database create page.](../media/M04-L01-01-create-database-1.png)
 
 1. On the **Basics** tab, enter the following values for each setting.
 

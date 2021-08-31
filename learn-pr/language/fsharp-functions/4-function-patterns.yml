@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-functions.function-patterns
+title: Function patterns
+metadata:
+  title: Function patterns
+  description: In this unit, you'll be made familiar with several useful patterns like composition and pipeline. 
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/26/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-function-patterns.md)]

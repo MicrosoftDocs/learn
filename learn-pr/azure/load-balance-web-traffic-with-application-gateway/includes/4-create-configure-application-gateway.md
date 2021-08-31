@@ -1,6 +1,6 @@
 Application Gateway comprises a series of components that combine to route requests to a pool of web servers and to check the health of these web servers. Let's take a look at how these components are related and what role they play in an Application Gateway.
 
-![Visualization of the components of Application Gateway](../media/4-application-gateway-components.svg)
+![Visualization of the components of Application Gateway.](../media/4-application-gateway-components.svg)
 
 ### Front-end IP address
 

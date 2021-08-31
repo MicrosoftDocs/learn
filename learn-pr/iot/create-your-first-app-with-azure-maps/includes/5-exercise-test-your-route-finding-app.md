@@ -10,7 +10,7 @@ Running a new app for the first time is always an exiting moment!
 
 1. Wait a few seconds, and the green bicycle route appears.
 
-    [![Screenshot showing the cross country route app, going from Seattle to New York](../media/azure-maps-test-1.png)](../media/azure-maps-test-1.png#lightbox)
+    [![Screenshot showing the cross country route app, going from Seattle to New York.](../media/azure-maps-test-1.png)](../media/azure-maps-test-1.png#lightbox)
 
 1. If you get the image above, good work! It's all plain sailing from now on.
 
@@ -22,11 +22,11 @@ Running a new app for the first time is always an exiting moment!
 
     | Seattle | Chicago | New York |
     | ------- | ------- | -------- |
-    | [![Screenshot of truck and car routes diverging in Seattle](../media/azure-maps-hazardous-seattle.png)](../media/azure-maps-hazardous-seattle.png#lightbox) | [![Screenshot of truck and car routes diverging in Chicago](../media/azure-maps-hazardous-chicago.png)](../media/azure-maps-hazardous-chicago.png#lightbox) | [![Screenshot of truck and car routes diverging in New York](../media/azure-maps-hazardous-newyork.png)](../media/azure-maps-hazardous-newyork.png#lightbox) |
+    | [![Screenshot of truck and car routes diverging in Seattle.](../media/azure-maps-hazardous-seattle.png)](../media/azure-maps-hazardous-seattle.png#lightbox) | [![Screenshot of truck and car routes diverging in Chicago](../media/azure-maps-hazardous-chicago.png)](../media/azure-maps-hazardous-chicago.png#lightbox) | [![Screenshot of truck and car routes diverging in New York](../media/azure-maps-hazardous-newyork.png)](../media/azure-maps-hazardous-newyork.png#lightbox) |
 
 1. Now, go back to Chicago, and zoom out a bit. Are you able to see the bicycle route took the ferry! There's obviously some intelligence in the route finding algorithms.
 
-    [![Screenshot of the bicycle route taking the ferry](../media/azure-maps-bicycle-ferry.png)](../media/azure-maps-bicycle-ferry.png#lightbox)
+    [![Screenshot of the bicycle route taking the ferry.](../media/azure-maps-bicycle-ferry.png)](../media/azure-maps-bicycle-ferry.png#lightbox)
 
 1. Change the hazardous class for the truck to **USHazmatClass9**, and click **Go** again. You won't notice any difference in the truck route. However, now change the class to **USHazmatClass1** - explosives - and click **Go**. Notice the small increase in travel kilometers. Go back to Chicago, and look closely at the area around Hammond, and run the two hazardous routes again. Notice that the **USHazmatClass1** truck has to take a slightly longer route.
 

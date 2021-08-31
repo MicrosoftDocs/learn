@@ -24,15 +24,15 @@ prerequisites: |
   - Creating and deploying basic ARM templates, using either Bicep or JSON.
   - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
-  To follow along with the exercises in the module, you'll need:
-  - [Visual Studio Code](https://code.visualstudio.com) installed locally.
+  To follow along with the exercises in the module, you'll need the following items installed locally:
+  - [Visual Studio Code](https://code.visualstudio.com)
   - Either:
-    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
-    - The latest [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
+    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools
+    - The latest [Azure PowerShell](/powershell/azure/install-az-ps) version
   - Either:
-    - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed.
-    - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
-iconUrl: /learn/achievements/generic-badge.svg
+    - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
+    - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension
+iconUrl: /learn/achievements/bicep/arm-template-specs.svg
 levels:
   - advanced
 roles:

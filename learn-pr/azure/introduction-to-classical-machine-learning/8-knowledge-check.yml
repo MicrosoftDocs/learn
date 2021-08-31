@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.introduction-to-classical-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Multiple-choice questions
+  ms.date: 05/25/2021
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'What is the difference between supervised learning and unsupervised learning?'
+    choices:
+    - content: "Supervised learning requires human supervision, while unsupervised learning doesn't"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Supervised learning always uses an optimizer, but unsupervised never does"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Supervised learning trains a model by comparing estimations to correct answers. The cost function for unsupervised learning doesn't need correct answers"
+      isCorrect: true
+      explanation: "Correct."
+  - content: 'What is the role of the cost function in supervised learning?'
+    choices:
+    - content: "To maximize the cost so that the objective is reached."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "To calculate cost by comparing estimations to correct answers."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "To update model parameters."
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: 'How does gradient descent know how to update parameters?'
+    choices:
+    - content: "It compares costs for several combinations of parameters, and then selects the best option"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "It uses an internal understanding of the relationship between features and labels to make intelligent choices"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "It uses calculus to estimate the slope of the cost function"
+      isCorrect: true
+      explanation: "Correct. Once the slope it known, it's clear whether to make parameters smaller or larger."
+  - content: 'Why are there many cost functions available?'
+    choices:
+    - content: "A unique cost function is required for each processed currency or banking system"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Because cost functions help models process data, and many model types are available"
+      isCorrect: false
+      explanation: "Incorrect. Models do not rely on other components to make an estimation. That said, cost functions can need slight adjustments so that they are compatible with different types of model output"
+    - content: "Because different cost functions can arrive at different answers, and what is best depends on our goal."
+      isCorrect: true
+      explanation: "Correct."
+  - content: 'Why is learning rate important?'
+    choices:
+    - content: "It speeds up or slows down training"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "If too large or too small, it can prevent a model from being trained optimally"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Both options are correct "
+      isCorrect: true
+      explanation: "Correct."      

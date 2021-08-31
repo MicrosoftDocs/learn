@@ -5,4 +5,4 @@ In this module, you learned how to:
 - Write queries that use cross joins
 - Write queries that use self joins
 
-For more detailed information about Transact-SQL syntax, refer to the [Transact-SQL reference documentation](https://docs.microsoft.com/sql/t-sql/language-reference).
+For more detailed information about Transact-SQL syntax, refer to the [Transact-SQL reference documentation](/sql/t-sql/language-reference).

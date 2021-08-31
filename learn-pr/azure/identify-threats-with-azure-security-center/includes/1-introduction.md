@@ -4,7 +4,7 @@ Azure Security Center is one of the primary tools in Azure used to detect threat
 
 Security Center provides an easy-to-read dashboard which shows compliance, security health, and security alerts. This is available right off the main Azure portal dashboard, or through the search window.
 
-![Screenshot showing the Azure Security Center view in the Azure portal](../media/1-security-center.png)
+![Screenshot showing the Azure Security Center view in the Azure portal.](../media/1-security-center.png)
 
 > [!TIP]
 > Azure Security Center pulls data from all your created resources. The level of detail presented will vary based on the running workloads in your subscription(s). This is particularly true in the Azure Sandbox which doesn't have any data.

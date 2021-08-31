@@ -10,7 +10,7 @@ To validate the authenticity of X.509 certificates, the certificates need to be 
 
 The name "X.509" originates from the format the certificate is stored in. If you open the certificate file, it will look like the following image. In addition to the key, the certificate contains metadata such as version, encoding algorithm, issuers ID, and similar data. For most of us though, the contents of a certificate are a _black box_, and can stay that way!
 
-[![Screenshot showing a coded version of an X.509 certificate](../media/iot-hub-provisioning-certificate.png)](../media/iot-hub-provisioning-certificate.png#lightbox)
+[![Screenshot showing a coded version of an X.509 certificate.](../media/iot-hub-provisioning-certificate.png)](../media/iot-hub-provisioning-certificate.png#lightbox)
 
 With the X.509 certificates and the PKI, there's no need to distribute the public keys when creating key pairs. Another advantage is the PKI can maintain a list of invalidated certificates, so authentication can be centrally revoked.
 

@@ -6,7 +6,7 @@ We've seen this in our system: the web portal calls a web service, which works g
 
 Azure [Queue storage](https://azure.microsoft.com/services/storage/queues/) is an Azure service that implements cloud-based queues. Each queue maintains a list of messages. Application components access a queue using a REST API or an Azure-supplied client library. Typically, you will have one or more _sender_ components and one or more _receiver_ components. Sender components add messages to the queue. Receiver components retrieve messages from the front of the queue for processing. The following illustration shows multiple sender applications adding messages to the Azure Queue and one receiver application retrieving the messages.
 
-![An illustration showing a high-level architecture of Azure Queue storage](../media/2-queue-overview.png)
+![An illustration showing a high-level architecture of Azure Queue storage.](../media/2-queue-overview.png)
 
 Pricing is based on queue size and number of operations. Larger message queues cost more than smaller queues. Charges are also incurred for each operation, such as adding a message and deleting a message. For pricing details, see [Azure Queue storage pricing](https://azure.microsoft.com/pricing/details/storage/queues/).
 

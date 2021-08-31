@@ -7,7 +7,7 @@ In this module, you learned how to:
 - Add code to both apps to provide a _direct method_
 - Add code to both apps to show the role of _device twins_
 
-[![Photograph of a matured slice of cheese](../media/cheese-circle2.png)](../media/cheese-circle2.png#lightbox)
+[![Photograph of a matured slice of cheese.](../media/cheese-circle2.png)](../media/cheese-circle2.png#lightbox)
 
 ## Clean up
 

@@ -5,7 +5,7 @@ As described earlier, a virtual CPU (vCPU) acts as a proxy to a physical CPU (pC
 
 The following figure demonstrates an SMP native system VM with a width of four and a UP native system VM, both running on the same hardware.
 
-![SMP native system VM with a width of four and a UP native system VM, both running on the same hardware](../media/smp-up-vm.png)
+![SMP native system VM with a width of four and a UP native system VM, both running on the same hardware.](../media/smp-up-vm.png)
 
 _Figure 6: An SMP native system VM with a width of four and a UP native system VM, both running on the same hardware_
 

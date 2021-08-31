@@ -4,7 +4,7 @@ In this unit, you will learn how to deploy a high-level application to your Azur
 
 The following outlines how the Azure Sphere stream telemetry to IoT Central.
 
-![Azure Sphere Streaming telemetry to IoT Central](../media/azsure-sphere-telemetry-streaming.png)
+![Azure Sphere Streaming telemetry to IoT Central.](../media/azsure-sphere-telemetry-streaming.png)
 
 1. The high-level application running on the Cortex-A7 reads the environment sensors every 6 seconds, serializes the data as JSON, and sends the telemetry message to IoT Hub.
 2. Azure IoT Central subscribes to telemetry messages sent to IoT Hub by the device and displays the data to the user.

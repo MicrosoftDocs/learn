@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cna-build-basic-service.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 04/24/2021
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,8 +1,8 @@
-Azure Security Center has two available tiers: *free* and *standard*. Both provide security policy, assessment, and recommendations and connection with partner solutions.
+Azure Security Center has two available plans: Azure Security Center free (Azure Defender off) and enhanced security (Azure Defender on). Both provide security policy, assessment, and recommendations and connection with partner solutions.
 
-## Free tier
+## Free plan
 
-The free tier is automatically enabled on all Azure subscriptions and provides security policy, continuous security assessment, and actionable security recommendations to help you protect your Azure resources. It monitors the most common app resources in Azure, including:
+The free plan is automatically enabled on all Azure subscriptions and provides security policy, continuous security assessment, and actionable security recommendations to help you protect your Azure resources. It monitors the most common app resources in Azure, including:
 
 - Compute resources such as VMs, Azure Functions, and App Service.
 - Network access and endpoint security.
@@ -10,13 +10,13 @@ The free tier is automatically enabled on all Azure subscriptions and provides s
 - Identity and access, including Azure Key Vault.
 - IoT Hubs and resources.
 
-## Standard tier
+## Azure Defender plan
 
-The standard tier extends the capabilities of the free tier to workloads running in private and other public clouds to provide unified security management and threat protection across all your hybrid cloud workloads.
+The Azure Defender plan extends the capabilities of the free plan to workloads running in private and other public clouds to provide unified security management and threat protection across all your hybrid cloud workloads.
 
-The Standard tier adds advanced threat detection capabilities, using analytics and machine learning to identify attacks and zero-day exploits, access and application controls to reduce exposure to network attacks and malware, and more.
+The Azure Defender plan adds advanced threat detection capabilities, using analytics and machine learning to identify attacks and zero-day exploits, access and application controls to reduce exposure to network attacks and malware, and more.
 
-Migrating your Security Center subscription from the free tier to the standard tier enables the following features:
+Migrating your Security Center subscription from the free plan to the Azure Defender plan enables the following features:
 
 - **Security event collection**. Security Center collects logs in a central place so you can search and analyze them to identify important security events that may require your attention.
 - **Network Map**. This feature enables you to visualize the topology of your Azure network infrastructure and the traffic to your Azure VMs. It also enables you to create filters by the severity level and recommendations.
@@ -29,12 +29,12 @@ Migrating your Security Center subscription from the free tier to the standard t
 - **Threat intelligence**. This feature can help determine the nature of an attack, the attack point of origin, and more.
 - **Workflow Automation**. This collection of procedures can be executed from Security Center after a certain playbook is triggered from selected alert. Workflow automation can help to automate and orchestrate your response to a specific security alert detected by Security Center.
 
-## Switch to the Standard tier
+## Switch to Azure Defender
 
-You can try the Standard tier for free for 30 days. This enables you to evaluate the additional features, see how your current environment will benefit from them, and decide whether they’re worth the investment.
+You can try Azure Defender for free for 30 days. This enables you to evaluate the additional features, see how your current environment will benefit from them, and decide whether they’re worth the investment.
 
-You can enable Security Center on a per-subscription basis. Each subscription can choose what elements you want to enroll. Selecting the **Coverage** item under **POLICY & COMPLIANCE** will list all your available subscriptions (Not covered, Partially covered through the Free tier or partial plan; and Fully covered on the Standard tier).
+You can enable Azure Defender on a per-subscription basis. For each subscription, you can choose what elements you want to enroll. Select  **Pricing & settings** under **Management** to list all your management groups and subscriptions.
 
-Selecting a subscription enables you to control what areas you want Security Center to monitor as shown in the following image.
+Selecting a subscription enables you to view and control what resource types you want to enable for Azure Defender.
 
-![Screenshot showing the areas Security Center can cover](../media/2-pricing.png)
+![Screenshot showing the areas Security Center covers.](../media/2-pricing.png)

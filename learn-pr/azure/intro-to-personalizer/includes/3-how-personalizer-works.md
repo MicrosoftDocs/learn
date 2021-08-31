@@ -48,7 +48,7 @@ Consider the scenario presented in this table to understand the process:
 
 The following image shows the flow of an application's interaction with Personalizer.
 
-:::image type="content" source="../media/personalization-how-it-works.png" alt-text="Application flow diagram with Personalizer":::
+:::image type="content" source="../media/personalization-how-it-works.png" alt-text="Application flow diagram with Personalizer.":::
 
 The preceding image depicts the following action sequences:
 

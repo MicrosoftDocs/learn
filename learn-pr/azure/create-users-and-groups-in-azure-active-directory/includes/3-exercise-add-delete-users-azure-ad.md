@@ -12,14 +12,26 @@ To hold all of the users you create in this exercise, create a new organization.
 
 1. In the search box, search for and select **Azure Active Directory**. The **Azure Active Directory** pane appears.
 
-1. Select **Create**. The **Create tenant** pane appears.
+1. Select **Create**. The **Create a tenant** pane appears.
 
-1. Enter the following values for each setting.
+1. On the **Basics** tab, enter the following values for each setting.
 
-   - **Organization name**: _Contoso Marketing Company_
-   - **Initial domain name**: _contosomarketingXXXX_ where you replace XXXX with numbers or letters to make your domain name unique
+    | Setting | Value |
+    |---|---|
+    | **Tenant type** |
+    | Select a tenant type | Azure Active Directory |
 
-1. Select **Create**. Wait for the creation of your tenant to be completed.
+1. Select **Next : Configuration**, and enter the following values for each setting.
+
+    | Setting | Value |
+    |---|---|
+    | **Directory details** |
+    | Organization name |From the dropdown list, select *Contoso Marketing Company* |
+    | Initial domain name| *contosomarketingXXXX* where you replace XXXX with numbers or letters to make your domain name unique
+
+1. Select **Next : Review + create**.
+
+1. After validation passes, select **Create**. Wait for the creation of your tenant to be completed.
 
 1. Go to the new tenant by selecting **Click here to manage your new tenant**. The **Overview** pane for *Contoso Marketing Company* appears.
 

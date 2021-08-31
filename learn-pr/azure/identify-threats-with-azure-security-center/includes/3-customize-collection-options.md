@@ -9,7 +9,7 @@ There are four areas you can influence.
 
 Here's an image of the **Pricing & settings** screen with the **Threat detection** area selected.
 
-![Screenshot showing the threat detection option](../media/3-threat-detection.png)
+![Screenshot showing the threat detection option.](../media/3-threat-detection.png)
 
 **Data Collection** is particularly interesting. Each VM can store audit logs based on configured settings established during the VM creation process. You can collect two log sources from every VM in the subscription:
 
@@ -18,7 +18,7 @@ Here's an image of the **Pricing & settings** screen with the **Threat detection
 
 You can also activate these options when you create new VMs. Here's an image of the **Management** tab while creating a new Windows-based VM with the Azure portal that shows the Azure Security Center options being set.
 
-![Screenshot showing the VM management options in the Azure portal for Azure Security Center](../media/2-create-vm-options.png)
+![Screenshot showing the VM management options in the Azure portal for Azure Security Center.](../media/2-create-vm-options.png)
 
 By default, a storage account will be selected (or created) to hold the logs, but you can customize that on a per-VM basis as needed.
 

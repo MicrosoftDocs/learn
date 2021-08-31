@@ -24,11 +24,11 @@ You use a form to configure a sign-in risk policy in the Azure portal. You speci
 
 Make sure users are already registered for Azure AD Multi-Factor Authentication before you apply this policy.
 
-![Sign-in risk policy](../media/3-signin-risk-policy.png)
+![Sign-in risk policy.](../media/3-signin-risk-policy.png)
 
 After a sign-in risk is identified, the user is asked to take action to remediate the risk. They're told what triggered the risk, and what they need to provide to resolve the issue. For example, the user might see this notification.
 
-![Sign-in risk](../media/3-signin-risk-identified.png)
+![Sign-in risk.](../media/3-signin-risk-identified.png)
 
 ## User risk policy
 
@@ -36,11 +36,11 @@ Here, Identity Protection learns the user's normal behavioral patterns. Identity
 
 You use a form to configure a user risk policy in the Azure portal. You specify settings such as the users this policy should target, the conditions that must be met, and how you'll respond. Make sure users are already registered for self-service password reset before you apply this policy.
 
-![User risk policy](../media/3-user-risk-policy.png)
+![User risk policy.](../media/3-user-risk-policy.png)
 
 After a user risk is identified, the user is asked to take action to remediate that risk. They're told what triggered the risk, and what they need to provide to resolve the issue. For example, the user might see this notification.
 
-![User risk](../media/3-user-risk-identified.png)
+![User risk.](../media/3-user-risk-identified.png)
 
 ## Multifactor authentication (MFA) registration policy
 
@@ -50,10 +50,10 @@ You can use an MFA registration policy to make sure all users are registered for
 
 You fill in a form to configure an MFA registration policy by using the Azure portal. You'll need to provide details about which users the policy targets, and whether it should be enabled or disabled.
 
-![MFA registration policy](../media/3-mfa-registration-policy.png)
+![MFA registration policy.](../media/3-mfa-registration-policy.png)
 
 After you configure an MFA registration policy, the user is asked to register when they sign in. The user sees this notification.
 
-![MFA registration](../media/3-identity-protection-experience-more-info-mfa.png)
+![MFA registration.](../media/3-identity-protection-experience-more-info-mfa.png)
 
 Users must complete the registration within 14 days, but they can choose to skip signing in during that period. After 14 days, they'll have to complete registration before they're allowed to sign in again.

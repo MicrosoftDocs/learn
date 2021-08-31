@@ -209,14 +209,14 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
 
-    :::image type="content" source="../media/4-implement-app-insights/health-check.png" alt-text="health checks status dashboard" lightbox="../media/4-implement-app-insights/health-check.png":::
+    :::image type="content" source="../media/4-implement-app-insights/health-check.png" alt-text="health checks status dashboard." lightbox="../media/4-implement-app-insights/health-check.png":::
 
     > [!NOTE]
     > The services take several minutes to return to a healthy state.
 
 1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
-    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../../media/microservices/eshop-spa.png":::
+    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app." border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
 You've successfully verified that the app was deployed to AKS and is working properly.
 

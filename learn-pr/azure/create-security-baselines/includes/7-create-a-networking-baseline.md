@@ -12,10 +12,10 @@ The potential security problem with using these protocols over the Internet is t
 
 It's recommended that you disable direct RDP and SSH access to your Azure VMs from the Internet. After direct RDP and SSH access from the Internet is disabled, you have other options that you can use to access these VMs for remote management:
 
-    * Point-to-site VPN
-    * Site-to-site VPN
-    * Azure ExpressRoute
-    * Azure Bastion Host
+- Point-to-site VPN
+- Site-to-site VPN
+- Azure ExpressRoute
+- Azure Bastion Host
 
 1. Sign in to the Azure portal.
 
@@ -25,7 +25,7 @@ It's recommended that you disable direct RDP and SSH access to your Azure VMs fr
 
 1. Verify that the **Inbound Port Rules** does not have a rule for SSH, for example: `port=22, protocol = TCP, Source = Any or Internet`
 
-![Screenshot the VM networking pane](../media/7-rdp.png)
+    :::image type="content" source="../media/7-rdp.png" alt-text="Screenshot the VM networking pane." lightbox="../media/7-rdp.png#lightbox":::
 
 ### Restrict SQL Server access from the Internet - Level 1
 
@@ -43,7 +43,7 @@ To access an instance of the SQL Server through a firewall, you must configure t
 
 1. Select **Save**.
 
-![Screenshot the VM networking pane](../media/7-firewall.png)
+    :::image type="content" source="../media/7-firewall.png" alt-text="Screenshot of Firewalls and virtual networks pane." lightbox="../media/7-firewall.png#lightbox":::
 
 ### Configure the NSG flow log retention period for more than 90 days - Level 2
 
@@ -65,7 +65,7 @@ Network security group (NSG) flow logs are a feature of Network Watcher that all
 
 1. Select **Save**.
 
-![Screenshot the nsg flow pane](../media/7-nsg-flow.png)
+    :::image type="content" source="../media/7-nsg-flow.png" alt-text="Screenshot of the nsg flow log pane." lightbox="../media/7-nsg-flow.png":::
 
 ### Enable Network Watcher - Level 1
 
@@ -75,11 +75,11 @@ Network security group (NSG) flow logs are a feature of Network Watcher that all
 
 1. In the portal, select **All services**. In the **Filter box**, enter **Network Watcher**. When Network Watcher appears in the results, select it.
 
-1. Select **Regions** to expand it, and then select your region.
+1. Under Subscriptions, Pay-As-You_Go, select **Regions** to expand the list of available regions, and then select your region.
 
 1. Select **Enable Network Watcher**.
 
-![Screenshot the nsg flow pane](../media/7-network-watcher.png)
+    :::image type="content" source="../media/7-network-watcher.png" alt-text="Screenshot of the Network Watcher service pane." lightbox="../media/7-network-watcher.png":::
 
 > [!TIP]
 > Remember to select **Save** if you make changes to any of the settings.

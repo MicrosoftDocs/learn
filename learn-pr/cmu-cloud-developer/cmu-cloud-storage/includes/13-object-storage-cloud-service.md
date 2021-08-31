@@ -76,13 +76,13 @@ The lack of a common standard for object storage is an issue plaguing cloud obje
 
 The Storage Networking Industry Association (SNIA) is promoting an open standard for cloud objects, called **Cloud Data Management Interface (CDMI)**.
 
-![CDMI](../media/cdmi.png)
+![CDMI.](../media/cdmi.png)
 
 _Figure 22: CDMI_
 
 CDMI defines data objects and data containers with tagged metadata (as key-value pairs) and uses RESTful interfaces, with JSON as the data exchange format. CDMI can be used for accessing and managing data on a storage cloud (Figure 22). An example of a client interaction with a storage cloud using CDMI is shown in Figure 23.
 
-![CDMI client interacting with a CDMI storage cloud](../media/cdmi-cloud.png)
+![CDMI client interacting with a CDMI storage cloud.](../media/cdmi-cloud.png)
 
 _Figure 23: A CDMI client interacting with a CDMI storage cloud_
 
@@ -90,7 +90,7 @@ The CDMI client can issue requests over HTTPS. The **MimeType** indicates the ty
 
 The CDMI model is illustrated in Figure 24. A CDMI resource exists on a root location, indicated by the root URI: `https://<offering>`. The example contains two containers, A and B, that contain one object each. Note that each CDMI entity can support metadata, as indicated with the key-value tags associated with every entity.
 
-![CDMI data model](../media/cdmi-data-model.png)
+![CDMI data model.](../media/cdmi-data-model.png)
 
 _Figure 24: The CDMI data model_
 

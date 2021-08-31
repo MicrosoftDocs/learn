@@ -52,7 +52,7 @@ To set up a Blazor project to work with, we'll use Visual Studio Code. Visual St
 
 1. If Visual Studio Code prompts you to install required assets, select **Yes**.
 
-    ![Screenshot showing Visual Studio Code prompting to install assets required to build and debug](../media/missing-assets-visual-studio-code.png)
+    ![Screenshot showing Visual Studio Code prompting to install assets required to build and debug.](../media/missing-assets-visual-studio-code.png)
     
 ## Run the app
 
@@ -64,7 +64,7 @@ To set up a Blazor project to work with, we'll use Visual Studio Code. Visual St
 
     This will build and start the app, and then rebuild and restart the app whenever you make code changes.  The browser should automatically open at the address https://localhost:5000.
     
-    ![Screenshot showing the default Blazor WebAssembly client app running in a browser](../media/hello-blazor.png)
+    ![Screenshot showing the default Blazor WebAssembly client app running in a browser.](../media/hello-blazor.png)
 
 1. When you're ready to stop, return to the terminal in Visual Studio code, and press <kbd>Ctrl+C</kbd> to stop the app.
 

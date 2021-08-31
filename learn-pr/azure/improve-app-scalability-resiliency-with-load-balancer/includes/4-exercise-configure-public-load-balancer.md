@@ -40,7 +40,7 @@ Now, let's create the load balancer.
 
 1. From the ensuing list, select *Load Balancer - Microsoft*. Then, select **Create**.
 
-    ![Create a Load Balancer instance in the Azure portal](../media/4-create-lb.png)
+    ![Create a Load Balancer instance in the Azure portal.](../media/4-create-lb.png)
 
 1. On the **Basics** tab, enter the following values for each setting:
 
@@ -71,7 +71,7 @@ Now, let's create the load balancer.
 
 1. To close the dialog box, select **OK**. The **Add frontend IP address** pane reappears. Select **Add**.
 
-    ![Enter details on the Create load balancer page](../media/4-create-details-lb.png)
+    ![Enter details on the Create load balancer page.](../media/4-create-details-lb.png)
 
 1. Select **Review + create**.
 
@@ -95,7 +95,7 @@ Now, let's create the load balancer.
 
 1. In the **Virtual machines** section, select **Add**. The **Add virtual machines to backend pool** pane appears.
 
-    ![Add a new back-end pool](../media/4-backend-pool-create.png)
+    ![Add a new back-end pool.](../media/4-backend-pool-create.png)
 
 1. Select the **webVM1** and **webVM2** virtual machines and the **ipconfig1** IP addresses for both VMs.
 
@@ -145,7 +145,7 @@ Finally, let's create a rule for the load balancer.
     | Floating IP | **Disabled** (default). |
     | | |
 
-    ![Add a new load balancer rule](../media/4-new-lb-rule.png)
+    ![Add a new load balancer rule.](../media/4-new-lb-rule.png)
 
 1. Select **Add** to complete the load balancer configuration.
 

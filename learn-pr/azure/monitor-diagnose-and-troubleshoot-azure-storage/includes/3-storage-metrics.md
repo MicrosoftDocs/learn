@@ -32,7 +32,7 @@ Metrics capture for all storage types (blob, file, table, queue) is automaticall
 
 - Using the Azure portal. Select **Diagnostic settings (classic)** on the page for your storage account, select the storage type and change the **Status** to **On** or **Off** as required. By default, the data captured includes the metrics for each type of storage API call. You can also set the retention period for the metrics data. When this period expires, the metrics are deleted from table storage.
 
-    ![Screenshot of the Diagnostic Settings page in the Azure portal](../media/3-diagnostic-settings.png)
+    ![Screenshot of the Diagnostic Settings page in the Azure portal.](../media/3-diagnostic-settings.png)
 
 - Using PowerShell. The `Set-AzureStorageServiceMetricsProperty` cmdlet enables you to enable and disable metrics capture for each type of storage in your account. The snippet below shows an example
 
@@ -84,7 +84,7 @@ The **Overview** page provides a useful overview of the performance of your stor
 
 If you have chosen to capture metrics by API, you'll see aggregated data for each API for each hour (or minute, if you're collecting minute-level metrics). There are a large number of values gathered for each API, including the success and failure rate, and the reasons for failure, such as timeouts, throttling, network errors, authorization failure, and so on. This information can give you a good insight as to why the performance of your applications may be suffering. For example, frequent throttling and timeout errors can indicate a high level of contention occurring for limited resources, and you might need to rearchitect your system to the use **Premium** rather than the **Standard** tier for your storage accounts. You might also need to spread the load across multiple storage accounts or select a different organization for any blob containers and tables that your application is using.
 
- ![Screenshot of the Azure Storage Explorer showing the hourly statistics captured for the blob service in a storage account](../media/3-Azure-Storage-Explorer.png)
+ ![Screenshot of the Azure Storage Explorer showing the hourly statistics captured for the blob service in a storage account.](../media/3-Azure-Storage-Explorer.png)
 
 For a description of the metrics gathered by Storage Analytics, visit [Storage Analytics Logged Operations and Status Messages](/rest/api/storageservices/storage-analytics-logged-operations-and-status-messages).
 
@@ -168,4 +168,4 @@ The `WindowsAzure.Storage` client library is available as a Nuget package. Howev
 
 If you're monitoring the lifetimes of blobs, and are interested in when they're added and deleted, you can create an event subscription for your storage account. The subscription can post events to several types of destination, such as an Azure Storage Queue, or an Event Hub. If you select an Event Hub, you can connect it as an input to an analytics solution such as Azure Stream Analytics.
 
-![Screenshot showing the Events page for a storage account](../media/3-events.png)
+![Screenshot showing the Events page for a storage account.](../media/3-events.png)

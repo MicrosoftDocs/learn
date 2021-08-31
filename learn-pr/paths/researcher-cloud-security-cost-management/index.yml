@@ -1,6 +1,5 @@
 ### YamlMime:LearningPath
 uid: learn.researcher-cloud-security-cost-management
-hidden: true
 metadata:
   title: "Azure for Researchers part 2: Cloud Security and Cost Management"
   description: In this learning path, you'll learn how to ensure your Azure consumption is planned and predictable by using cost prediction and budgets, and how to ensure your application secrets and virtual machines are safe from unauthorized access.

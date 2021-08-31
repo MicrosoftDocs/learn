@@ -38,7 +38,7 @@ quiz:
     - content: "Ensuring there's no segmentation of your corporate network."
       isCorrect: false
       explanation: "That's incorrect. Splitting a network up into multiple sub-networks provides better layered security and is an example of defense in depth at the network layer."
-  - content: "The human resources organization want to ensure that stored employee data is encrypted. Which security mechanism would they use?"
+  - content: "The human resources organization wants to ensure that stored employee data is encrypted. Which security mechanism would they use?"
     choices:
     - content: "Hashing."
       isCorrect: false

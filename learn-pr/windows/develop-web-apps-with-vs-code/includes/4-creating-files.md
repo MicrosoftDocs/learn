@@ -30,7 +30,7 @@ In your empty editor window `index.html`, type `!` (exclamation point) then sele
 
 We've taken a direct line to creating the HTML here, skipping over optional features of Emmet. For example, when you type the exclamation point but before you type the Tab key, you'll see something like the following.
 
-![Emmet info option](../media/emmet-info.png)
+![Emmet info option.](../media/emmet-info.png)
 
 Note the little `i` in the blue circle off to the right, which you can click for more info. Also, be sure to take note of the location of the full Emmet reference at [Emmet In Visual Studio Code](https://code.visualstudio.com/docs/editor/emmet). You don't need to know all the details at this moment, but it's useful to have a feel for the scope of Emmet and what it can do to make you more efficient.
 

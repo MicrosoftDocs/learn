@@ -14,7 +14,7 @@ With Azure Static Web Apps, static assets are separated from a traditional web s
 
 The model for Azure Static Web Apps is that you get exactly what you need, no more, no less.
 
-:::image type="content" source="../media/static-web-apps-overview.png" alt-text="Static Apps overview":::
+:::image type="content" source="../media/static-web-apps-overview.png" alt-text="Static Apps overview.":::
 
 When you create an Azure Static Web Apps resource, Azure sets up a GitHub Actions or Azure DevOps workflow in the app's source code repository. The workflow monitors a branch of your choice. Every time you push commits or create pull requests into the watched branch, the workflow automatically builds and deploys your app and its API to Azure.
 
@@ -44,7 +44,7 @@ Once you choose your client application, you'll:
 1. Automatically build and deploy your web app to Azure from a GitHub repository with GitHub Actions
 1. Finally, you'll explore and launch your application, as shown below
 
-:::image type="content" source="../media/my-shopping-list-app.png" alt-text="A set of four screenshots illustrating the four sample applications":::
+:::image type="content" source="../media/my-shopping-list-app.png" alt-text="A set of four screenshots illustrating the four sample applications.":::
 
 ## Next steps
 

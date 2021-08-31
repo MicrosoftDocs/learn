@@ -1,4 +1,4 @@
 |||
 | :--- | :--- |
-| [Launch the click through demo](https://azureadmodern.z22.web.core.windows.net/#/1/0?a=true&azure-portal=true) | Click through this interactive video to learn more about how Azure AD B2B collaboration enables you to invite a guest user to share an application. Click the animated circle on each screen to proceed through the demo.|
+| [Launch the click through demo](https://mslearn.cloudguides.com/en-us/guides/Manage%20Guest%20User%20Access%20in%20Azure%20AD%20for%20B2B%20Collaboration?azure-portal=true) | In this interactive guide, you’ll learn how to manage guest user access in Azure Active Directory for business-to-business (B2B) collaboration. You’ll see how to invite external users to collaborate, assign resources to guest users, and create conditional access policies to keep data secure.|
 

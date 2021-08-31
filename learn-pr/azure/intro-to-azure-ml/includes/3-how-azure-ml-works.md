@@ -4,7 +4,7 @@ You can access Azure ML on the cloud or on your local machine through the R or P
 
 Azure ML manages all the resources you need for the ML lifecycle inside a Workspace. Workspaces can be shared by multiple people and include things like the computing resources available for your notebooks, training clusters, and pipelines. Workspaces are also the logical containers for your data stores and a repository for models and anything else within the model life cycle.
 
-![azure ml lifecycle](../media/3-people.gif)
+![azure ml lifecycle.](../media/3-people.gif)
 
 ## How to create machine learning models
 

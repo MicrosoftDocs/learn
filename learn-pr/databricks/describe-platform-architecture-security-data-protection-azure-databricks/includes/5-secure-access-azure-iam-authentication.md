@@ -4,7 +4,7 @@
 
 The following shows an example of the Access control (IAM) blade for an Azure Databricks service:
 
-![Azure Databricks access control (IAM)](../media/databricks-iam.png)
+![Azure Databricks access control (IAM).](../media/databricks-iam.png)
 
 RBAC and IAM are both enabled by Azure Active Directory (Azure AD), an enterprise identity service that provides single sign-on and multi-factor authentication, which helps users securely sign in and access resources in:
 
@@ -25,7 +25,7 @@ Customers can sync Azure Active Directory groups with Databricks groups using SC
 
 Example attribute mappings:
 
-![Attribute mappings](../media/scim-attribute-mappings.png)
+![Attribute mappings.](../media/scim-attribute-mappings.png)
 
 ## Conditional access
 

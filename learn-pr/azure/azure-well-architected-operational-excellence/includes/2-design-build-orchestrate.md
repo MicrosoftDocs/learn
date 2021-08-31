@@ -10,7 +10,7 @@ There are several services and tools that are available from Microsoft to help a
 
 Azure Boards is a part of Azure DevOps that helps teams plan and track work. Azure Boards has modern agile tools like Kanban boards, backlogs, dashboards and scrum boards to enable your team to have greater visibility into the work that is planned, and what has been delivered.
 
-:::image type="content" source="../media/2-kanban.png" alt-text="Screenshot of a Kanban board on Azure Boards":::
+:::image type="content" source="../media/2-kanban.png" alt-text="Screenshot of a Kanban board on Azure Boards.":::
 
 GitHub is the most widely-used platform to build, deliver, and share software. At its core, GitHub is a version control platform that enables a global community of individuals and teams to collaborate on software development projects, whether these projects are kept private within their organizations or shared through public communities of disparate software developers. GitHub also includes features to build and test deployments, track issues, and create custom workflows in your repositories.
 
@@ -28,7 +28,7 @@ Continuous integration and continuous delivery are often combined into a single 
 
 Azure Pipelines is a cloud service that you can use to automatically build and test your code project and make it available to others. It works with just about any language or project type, and integrates with GitHub, GitHub Enterprise, Azure Repos, and other version control systems. Azure Pipelines combines continuous integration (CI) and continuous delivery (CD) to constantly and consistently test and build your code and ship it to any target.
 
-:::image type="content" source="../media/2-agents.jpg" alt-text="Visualization of CI/CD pipeline":::
+:::image type="content" source="../media/2-agents.jpg" alt-text="Visualization of CI/CD pipeline.":::
 
 GitHub Actions can also be used to build CI/CD capabilities in your GitHub repositories. With GitHub Actions, you can build workflows that are custom automated processes to build, test, package, release, and deploy code.
 
@@ -36,7 +36,7 @@ GitHub Actions can also be used to build CI/CD capabilities in your GitHub repos
 
 A microservices architecture consists of services that are small, independent, and loosely coupled. Each service can be deployed and scaled independently. Microservice architectures are often adopted for new applications that are adopting DevOps practices.
 
-:::image type="content" source="../media/2-microservices-logical.svg" alt-text="Logical diagram of a microservices architecture":::
+:::image type="content" source="../media/2-microservices-logical.svg" alt-text="Logical diagram of a microservices architecture.":::
 
 A microservice is small enough that a single, small team of developers can write and maintain it. Because services can be deployed independently, a team can update an existing service without rebuilding and redeploying the entire application.
 

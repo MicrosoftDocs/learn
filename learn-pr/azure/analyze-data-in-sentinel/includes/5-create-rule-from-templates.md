@@ -6,7 +6,7 @@ You can use some of the existing rule templates to create a single rule and othe
 
 :::image type="content" source="../media/04-template-in-use.png" alt-text="Screenshot of the template in use." border="true":::
 
-By selecting one of the rules on the **Rule Template** tab, you can observe the properties of the rule. For each rule, you can review:
+By selecting one of the rules on the **Rule Templates** tab, you can observe the properties of the rule. For each rule, you can review:
 
 - Severity level. This indicates the importance of the alert. There are four severity levels:
   - High
@@ -14,7 +14,8 @@ By selecting one of the rules on the **Rule Template** tab, you can observe the 
   - Low
   - Informational
 - Name of the rule. This provides a meaningful name for the alert rule.
-- Rule type. This defines the type of the rule that can be one of the following four types:
+- Rule type. This defines the type of the rule, which can be one of the following types:
+  - Anomaly
   - Fusion
   - Microsoft Security
   - ML Behavior Analytics
@@ -25,23 +26,44 @@ By selecting one of the rules on the **Rule Template** tab, you can observe the 
 > [!NOTE]
 > MITRE ATT&amp;CK is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&amp;CK knowledge base provides a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
 
-When you select a rule name on the template page, the details pane of the selected rule provides more information for the rule. Depending on the type of the rule that you select, the details pane can contain different fields of information. For Fusion and ML behavior analytics rules, Microsoft doesn't provide any additional information. However, for scheduled rules, you can review the query rule used in the threat detection.
+When you select a rule from the list on either the Active rules tab or the Rule templates tab, the details pane provides more information for the selected rule. 
 
 ## Creating an analytic rule from a rule template
 
-When you select a predefined rule template, the details pane provides the **Create rule** button. By selecting this button, you can create an analytics rule from that template. The composition of the analytics rule built from the template depends on the rule type that you select.
+When you select a predefined rule template, the details pane
+ may display filters that can be used to define how that rule behaves. For Fusion and ML behavior analytics rules, Microsoft doesn't provide any editable information. However, for scheduled rules and Microsoft Security, you can view or edit the query, filters, and includes and excludes used in the threat detection. By selecting the **Create rule** button, you can define the   analytics rule logic using a wizard that helps you customize a rule from the selected template.
 
-By default, Azure Sentinel Analytics creates an alert rule using the Fusion rule template. For ML behavior analytics, you can only create a rule as enabled or disabled, and you don't have the option to further customize the rule.
+For Fusion and ML behavior analytics templates, you can only enable or disable them as active rules.
 
-A rule you create from the Microsoft security templates consists of the following elements:
+A rule that you create from a Microsoft security template consists of the following elements:
 
-- **Name**. This is prepopulated from the name of the rule template.
-- **Description**. This provides more details on the creation of the alerts.
-- **Status**. This indicates whether the analytics rule is enabled or disabled.
-- **Analytic rule logic**. This indicates the source of the alert from one of the Microsoft security services.
-- **Filter by severity**. Use to tune alerts from a source based on the severity level, which can be High, Medium, Low, or Informational.
-- **Include specific alerts**. Use to filter alerts that contain a specific text in their name.
-- **Exclude specific alerts**. Use to filter alerts that don't contain a specific text in their name.
+
+## General tab
+
+The following table lists the inputs on the **General** tab.
+
+|Field | Description |
+|---------|---------|
+| Name | This is prepopulated from the name of the rule template.  |
+| Description | Provide more details about the creation of the alerts.  |
+| Status | This indicates whether the analytics rule is enabled or disabled.  |
+| Microsoft security service | This indicates the source of the alert from one of the Microsoft security services.  |
+| Filter by severity | Use to tune alerts from a source based on the severity level; if you select custom, you can specify High, Medium, Low, or Informational.  |
+| Include specific alerts | Add one or more words to include results of alerts that contain specific text in their name.  |
+| Exclude specific alerts | Add one or more words to exclude results of alerts that contain specific text in their name.  |
+
+## Automated response
+
+On the **Automated response** tab, you can define automation rules. If you select **Add new**, the **Create new automation rule** pane opens. The following fields are inputs:
+
+|Field | Description |
+|---------|---------|
+| Automation rule name | Choose a name that uniquely describes this automation rule  |
+| Trigger | Predefined value that cannot be changed.  |
+| Conditions | Typical query filter construct that can be edited and sorted.  |
+| Actions | Selection list of actions; select which action you want to be performed if the query filter conditions are met.  |
+| Rule expiration | Date and time for rule to be disabled. Default is indefinite. |
+| Order | If multiple rules are created, select sequential numbers to reorder the incident automation rules in the left pane.  |
 
 > [!NOTE]
 > When you implement filters to include or exclude specific alerts based on a text string, these alerts will not appear in Azure Sentinel. 
@@ -50,7 +72,7 @@ The following screenshot presents an example of creating an incident from alerts
 
 :::image type="content" source="../media/04-create-analytics-rule.png" alt-text="Screenshot of the wizard used to create analytics rules from templates." border="true":::
 
-The "Creating an Analytics" rule from the wizard describes how to create an analytics rule from a scheduled template rule type.
+For instructions on how to create an analytics rule from a scheduled rule type template, see **Create an analytics rule from a scheduled rule template** in next unit (Unit 6).
 
 > [!NOTE]
 > For certain rule templates, the **Create rule** button might be disabled, which indicates that you can't create a rule from selected template because of a missing data source.

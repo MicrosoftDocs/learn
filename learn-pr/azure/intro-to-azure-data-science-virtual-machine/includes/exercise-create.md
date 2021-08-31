@@ -6,13 +6,13 @@ Referring to our scenario, let's say that you've decided to work on an Ubuntu DS
 
 1. Select the **Create a resource** option in the upper-left corner of the portal page. The Azure Marketplace pane opens.
 
-    ![Screenshot that shows Azure Marketplace with the option for creating a resource highlighted](../media/create-new-resource.png)
+    ![Screenshot that shows Azure Marketplace with the option for creating a resource highlighted.](../media/create-new-resource.png)
 
     As you can see, there are many selectable options. We want to create a DSVM running on Ubuntu.
 
 1. In the **Search the Marketplace** search bar, enter *Data Science*. Select the **Data Science Virtual Machine - Ubuntu 18.04** option. The **Data Science Virtual Machine - Ubuntu 18.04** pane appears.
 
-    ![Screenshot that shows a search box with Data Science Virtual Machine Ubuntu Server 18.04 highlighted](../media/search-dsvm.png)
+    ![Screenshot that shows a search box with Data Science Virtual Machine Ubuntu Server 18.04 highlighted.](../media/search-dsvm.png)
 
 1. Select **Create**. The **Create a virtual machine** pane appears. Notice the wizard-based approach that we can use to configure the VM.
 
@@ -36,7 +36,7 @@ Referring to our scenario, let's say that you've decided to work on an Ubuntu DS
     | Username | Enter a string from 1 to 64 characters long. |
     | Password | Enter a strong password. |
 
-    ![Screenshot that shows the details filled out for V M configuration](../media/create-new-resource.png)
+    ![Screenshot that shows the details filled out for V M configuration.](../media/create-new-resource.png)
 
 1. You can explore several other tabs to see the settings that you can influence during the VM creation. On the **Disks** tab, for example, you can specify your data disks. After you're finished exploring, select **Review + create** to review and validate the settings.
 
@@ -48,6 +48,6 @@ Referring to our scenario, let's say that you've decided to work on an Ubuntu DS
 
 1. You can see all the information and configuration options for your newly created DSVM. One of the pieces of information is the **Public IP address** value. Make note of this IP address, because you'll need it to connect.
 
-    ![Screenshot that shows the VM overview page with the public I P address to the V M highlighted](../media/dsvm-summary-started-in-portal.png)
+    ![Screenshot that shows the VM overview page with the public I P address to the V M highlighted.](../media/dsvm-summary-started-in-portal.png)
 
 Congratulations! By performing a few steps, you deployed a DSVM running on Linux. Now let's connect to it.

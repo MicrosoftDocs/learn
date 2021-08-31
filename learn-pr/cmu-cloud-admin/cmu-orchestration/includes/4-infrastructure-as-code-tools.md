@@ -64,7 +64,7 @@ _Figure 4: Simple Azure Resource Manager template for provisioning an Azure stor
 
 Azure Resource Manager templates can be executed with CLI or PowerShell commands, by applications written in C\# and other programming languages, or from the Azure portal. Figure 5 shows how the template in Figure 4 appears in the portal. The portal provides the user interface for creating a resource group or selecting an existing one, and it generates an interface for the inputs defined in the template's **parameters** section -- in this case, the storage-account name and type, the latter of which is selected from a drop-down list generated from the `allowedValues` enumeration in the template rather than entered free-form.
 
-![Figure 5: Azure Resource Manager template rendered in the Azure portal](../media/fig6-5.png)
+![Figure 5: Azure Resource Manager template rendered in the Azure portal.](../media/fig6-5.png)
 
 _Figure 5: Azure Resource Manager template rendered in the Azure portal._
 
@@ -88,7 +88,7 @@ Rather than use JSON as Azure Resource Manager templates do, Puppet uses instruc
 
 As Figure 6 illustrates, the architecture of a system running the Puppet platform is surprisingly unsophisticated. A node in Puppet, like a node in Kubernetes or in OpenStack, is a server --- a physical or a virtual one, but a participant in the collective platform. There are master nodes and agent nodes. Those servers that the master manages have active agents installed on them. Communication takes place through SSH channels. Typically, these channels are secured through a local subnet that is closed to the outside Internet. Modules for Puppet instructions may be stored in, and retrieved from, a repository, although that connection doesn't need be private, and Puppet itself doesn't recognize the repository as an agent or a node.
 
-![Figure 6: Puppet's standard deployment architecture](../media/fig6-6.png)
+![Figure 6: Puppet's standard deployment architecture.](../media/fig6-6.png)
 
 _Figure 6: Puppet's standard deployment architecture._
 
@@ -96,7 +96,7 @@ _Figure 6: Puppet's standard deployment architecture._
 
 Chef is powered by agents able to look into a system in real time and report its configuration and status. The basic deployment architecture is simple (Figure 7). The server is designed to be operated remotely from a workstation. All of the nodes including the server are loaded with Chef, although functionality is distributed among them. Client nodes receive scripted instructions from the server by way of the administrator's workstation.
 
-![Figure 7: Chef's standard deployment architecture](../media/fig6-7.png)
+![Figure 7: Chef's standard deployment architecture.](../media/fig6-7.png)
 
 _Figure 7: Chef's standard deployment architecture._
 

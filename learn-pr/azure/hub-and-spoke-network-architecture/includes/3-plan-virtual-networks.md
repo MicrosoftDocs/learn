@@ -4,7 +4,7 @@ As a lead architect on the project, you're managing the production of a virtual 
 
 In this unit, you'll explore virtual networking in the Azure platform, design considerations, and how to implement ExpressRoute for connectivity to on-premises networks.
 
-![Architectural diagram showing hub and spokes connecting to the on-premises resources](../media/3-plannning-hub.svg)
+![Architectural diagram showing hub and spokes connecting to the on-premises resources.](../media/3-plannning-hub.svg)
 
 ## Introduction to Azure virtual networking
 
@@ -18,7 +18,7 @@ Virtual networks provide networking services in Azure and enable you to extend y
 
 Two important elements of virtual networks are subnets and network security groups.
 
-![Image showing Azure Virtual Network component architecture](../media/3-azure-VNet-arch.png)
+![Image showing Azure Virtual Network component architecture.](../media/3-azure-VNet-arch.png)
 
 - **Subnets**: Each virtual network can include a number of subnets. Each subnet has its own unique properties.
 - **Network security groups**: These NSGs allow you to filter the inbound and outbound traffic through your virtual network or subnet. You can also use NSGs to filter traffic by source and destination IP address, port, or protocol.

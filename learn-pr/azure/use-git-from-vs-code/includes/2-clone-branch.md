@@ -12,7 +12,7 @@ If you clone someone else's GitHub repository and make some changes, you'll find
 
 A fork is point-in-time copy of an entire GitHub repository from the source. You can fork any repository available to you to your own GitHub account. This repository won't automatically keep up to date with the original repository but will allow you full access to the forked repository. This is a required step to creating pull requests to a repository you don't have access to.
 
-:::image type="content" source="../media/2-clone-branch-01.png" alt-text="Forking a repository from one user to another":::
+:::image type="content" source="../media/2-clone-branch-01.png" alt-text="Forking a repository from one user to another.":::
 
 > [!NOTE]
 > A fork doesn't exist in git. It is a concept that only exist in GitHub.
@@ -21,7 +21,7 @@ A fork is point-in-time copy of an entire GitHub repository from the source. You
 
 A cloned repository is an entire copy of a remote repository (including forked repositories). You can clone a repository to your machine and have access to all the commit history since the repository's creation. This repository can belong to anyone as long as they are public. From this local copy, you will be able to create commits, branches, and synchronize those changes back to the remote repository (if you have access).
 
-:::image type="content" source="../media/2-clone-branch-02.png" alt-text="Cloning a forked repository to a local computer":::
+:::image type="content" source="../media/2-clone-branch-02.png" alt-text="Cloning a forked repository to a local computer.":::
 
 ### What is a branch?
 
@@ -29,7 +29,7 @@ A branch, like the default branch is simply a pointer to a specific commit. A co
 
 Creating a new branch and committing some new code creates a new commit at the end of the chain and moving the branch pointer along.
 
-:::image type="content" source="../media/2-clone-branch-03.png" alt-text="New commit on a new branch":::
+:::image type="content" source="../media/2-clone-branch-03.png" alt-text="New commit on a new branch.":::
 
 ## Next steps
 

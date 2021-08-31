@@ -147,7 +147,7 @@ Enter the following values and then select **Add secret**:
 * **Name**: Enter **AZURE_CREDENTIALS**.
 * **Value**: Paste the JSON output that you copied earlier.
 
-![Screenshot that shows adding new service principal secret info to a GitHub secret](../media/9-create-github-sp-2.gif)
+![Screenshot that shows adding new service principal secret info to a GitHub secret.](../media/9-create-github-sp-2.gif)
 
 This is the information that you'll need to specify the authentication in the workflow.
 

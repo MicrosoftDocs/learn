@@ -20,7 +20,7 @@ A resource provisioning system on the cloud generally has the following parts:
 
 Figure 2 shows the typical end-to-end steps for a customer provisioning a virtual machine from a CSP:
 
-![Typical end-to-end IaaS provisioning steps](../media/provision-resources.png)
+![Typical end-to-end IaaS provisioning steps.](../media/provision-resources.png)
 
 _Figure 2: Typical end-to-end IaaS provisioning steps_
 

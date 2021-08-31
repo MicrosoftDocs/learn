@@ -4,13 +4,13 @@ There are many activities that are taking place behind the scenes so the exercis
 
 ## Create an echo bot in the Azure portal
 
-This exercise requires that you have an Azure subscription.  If you do not have an existing subscription, you can [create one](https://azure.microsoft.com/free). Once you have you Azure account created, you can begin the exercise steps.
+This exercise requires that you have an Azure subscription.  If you do not have an existing subscription, you can [create one](https://azure.microsoft.com/free). Once you have your Azure account created, you can begin the exercise steps.
 
 1. Sign in to the Azure portal with your account credentials.
 1. On the left toolbar, select the **+ Create a resource** option.
 1. In the **Search the Marketplace** text entry field, type in **Bot**.
 1. Select the **Web App Bot** option from the list of services.
-1. One the **Web App Bot** page, select the **Create** button.
+1. On the **Web App Bot** page, select the **Create** button.
 1. Like most Azure resources, bots require unique names.  In this case, you will create a unique **bot handle**.  Choose a unique name that will help you understand the bot's purpose.  For example, **Gerry-Echo-Bot**.
 1. When you move to the next field **Subscription**, Azure will check for naming issues.  If you see a check-mark in the **Bot handle** entry, your bot name is acceptable.
 1. In the **Subscription** entry, you can select the appropriate subscription from the drop-down menu.  If you only have one subscription, ensure that subscription is selected.

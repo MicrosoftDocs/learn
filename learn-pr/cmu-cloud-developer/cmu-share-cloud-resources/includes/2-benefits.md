@@ -1,6 +1,6 @@
 Virtualization is predominantly used by programmers to make software development and testing easier. It is used by IT datacenters to consolidate dedicated servers into more cost-effective hardware, and by the cloud to isolate users who share a single hardware layer and offer elasticity, among other features. 
 
-![Provisioning a VM on a physical system](../media/provisioning-vm.png)
+![Provisioning a VM on a physical system.](../media/provisioning-vm.png)
 
 _Figure 1: Provisioning a VM on a physical system_
 
@@ -14,7 +14,7 @@ The following six areas enable virtualization on the cloud:
 
 - **Resource sandboxing**: A system VM provides a sandbox that can isolate one environment from others, ensuring a level of security that may not be applicable with conventional operating systems (OSs). First, a user running an application on a private machine might be reluctant to move her applications to the cloud unless guarantees are provided that her applications and activities cannot be accessed and monitored by any other user on the cloud. Virtualization is an important part in creating a safe environment for every user by making it impossible for one user to observe or alter the data or activity of another user. Second, because the cloud can also execute user applications concurrently, a software failure of one application cannot generally propagate to others if all are running on different VMs. Such a property is usually called *fault containment*. Clearly, this protection increases the robustness of the system. In a nonvirtualized environment, however, erratic behavior in one application can bring down the whole system. 
 
-   ![Using virtual sandboxes to develop defenses against attacks and to monitor incoming data](../media/attacks-cloning-with-virtual-sandboxes.png)
+   ![Using virtual sandboxes to develop defenses against attacks and to monitor incoming data.](../media/attacks-cloning-with-virtual-sandboxes.png)
 
    _Figure 2: Using virtual sandboxes to develop defenses against attacks and to monitor incoming data_
 
@@ -26,7 +26,7 @@ The following six areas enable virtualization on the cloud:
 
 - **Mixed-OS environment**: As shown in Figure 3 and pointed out in the previous subsection, a single hardware platform can support multiple OSs simultaneously. This provides great flexibility for users, i.e., they can install their own OSs, libraries, and applications. For instance, a user can install one OS for office productivity tools and another OS for application development and testing, all on a single desktop computer or on the cloud (e.g., Amazon EC2).
 
-   ![Mixed-OS environment offered by system virtualization](../media/os-mixed.png)
+   ![Mixed-OS environment offered by system virtualization.](../media/os-mixed.png)
 
    _Figure 3: Mixed-OS environment offered by system virtualization_
 

@@ -37,7 +37,7 @@ Over 2000 global companies use the Databricks platform across big data & machine
 
 Spark is a unified processing engine that can analyze big data using SQL, machine learning, graph processing, or real-time stream analysis:
 
-![Spark Engines](../media/spark-4engines.png)
+![Spark Engines.](../media/spark-4engines.png)
 
 - At its core is the Spark Engine.
 - The DataFrames API provides an abstraction above Resilient Distributed Datasets (RDDs) while simultaneously improving performance 5-20x over traditional RDDs with its Catalyst Optimizer.
@@ -49,7 +49,7 @@ And it all works together seamlessly!
 
 ## Azure Databricks
 
-![Azure Databricks components](../media/azure-databricks.png)
+![Azure Databricks components.](../media/azure-databricks.png)
 
 As a compute engine, Azure Databricks sits at the center of your Azure-based software platform and provides native integration with Azure Active Directory (Azure AD) and other Azure services.
 
