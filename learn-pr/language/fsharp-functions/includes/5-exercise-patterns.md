@@ -26,7 +26,6 @@ let shuffle list =
     let random = System.Random()
     list |> List.sortBy (fun x -> random.Next())
 
-let take list = List.take list 
 let printCard card = printfn "%s of %s" (cardFace card) (suit card)
 
 let printAll list = List.iter(fun x -> printCard(x)) list

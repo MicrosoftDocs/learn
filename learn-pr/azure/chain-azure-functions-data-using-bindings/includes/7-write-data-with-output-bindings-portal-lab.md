@@ -269,7 +269,7 @@ Congratulations! Your function works as designed, but what about that queue oper
 
 Azure Queue Storage queues are hosted in a storage account. You already selected the storage account in this exercise when you created the output binding.
 
-1. In the top search box in the Azure portal, enter **storage accounts**, and in the results list, under **Services**, select **Storage accounts**.
+1. In the top search box in the Azure portal, enter **storage accounts**, and in the results list, under **Services**, select **Storage accounts**. The **Storage accounts** pane appears.
 
     [![Screenshot showing search results for Storage Account in the main search box.](../media/7-search-storage-accounts-small.png)](../media/7-search-storage-accounts.png#lightbox)
 

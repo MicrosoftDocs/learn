@@ -54,7 +54,7 @@
 
     ![Customers with most sale transaction items](../media/data-skew-2.png)
 
-    Notice the largest number of transaction items is 69 and the smallest is 16.
+    Notice the largest number of transaction items is 1715 and the smallest is 16.
 
     Let's find now the distribution of per-customer transaction item counts. Run the following query:
 

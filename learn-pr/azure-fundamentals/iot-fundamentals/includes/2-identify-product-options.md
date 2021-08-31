@@ -12,6 +12,8 @@ IoT enables devices to gather and then relay information for data analysis. Smar
  -  Mechanical sensors that detect anomalies or deformations.
  -  Flow, level, and pressure sensors for measuring gasses and liquids.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWJvRn]
+
 By using Azure IoT services, devices that are equipped with these kinds of sensors and that can connect to the internet could send their sensor readings to a specific endpoint in Azure via a message. The message's data is then collected and aggregated, and it can be converted into reports and alerts. Alternately, all devices could be updated with new firmware to fix issues or add new functionality by sending software updates from Azure IoT services to each device.
 
 Let's suppose your company manufactures and operates smart refrigerated vending machines. What kinds of information would you want to monitor? You might want to ensure that:

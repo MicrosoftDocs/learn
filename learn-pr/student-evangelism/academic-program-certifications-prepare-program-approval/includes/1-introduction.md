@@ -9,6 +9,8 @@ For examples of the terminology and roles that are part of the US program approv
 For examples at a university in the UK, see [Principles for Approval of
 Northumbria Awards](https://northumbria-cdn.azureedge.net/-/media/corporate-website/new-sitecore-gallery/services/academic-registry/documents/qte/programme-design-and-approval/principles-for-approval-of-northumbria-awards-edited.pdf?modified=20180530103151&azure-portal=true).
 
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RWK4Y7]
+
 This module includes how to prepare for a program approval meeting. During the meeting, the panel reviews the program rationale and curriculum, and its members direct questions to the program leader and key members of the teaching team. The meeting involves a rigorous review of the program learning outcomes, curriculum, and student outcomes. 
 
 When you've completed this module, you'll understand the program approval process generally and be able to identify the key stakeholders involved in program approval.

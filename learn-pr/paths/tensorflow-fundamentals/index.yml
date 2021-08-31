@@ -1,10 +1,10 @@
 ### YamlMime:LearningPath
 uid: learn.tensorflow.tensorflow-fundamentals
 title: TensorFlow fundamentals
-summary: Learn the fundamentals of deep learning with TensorFlow! This beginner friendly learning path will introduce key concepts to building machine learning models in multiple domains include speech, vision, and natural language processing. 
+summary: Learn the fundamentals of deep learning with TensorFlow! This beginner friendly learning path will introduce key concepts to building machine learning models. 
 metadata:
   title: TensorFlow fundamentals
-  description: Learn the fundamentals of deep learning with TensorFlow! This beginner friendly learning path will introduce key concepts to building machine learning models in multiple domains include speech, vision, and natural language processing.
+  description: Learn the fundamentals of deep learning with TensorFlow! This beginner friendly learning path will introduce key concepts to building machine learning models.
   ms.date: 04/09/2021
   author: cassiebreviu
   ms.author: cassieb
