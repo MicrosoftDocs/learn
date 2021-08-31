@@ -1,16 +1,45 @@
 In this exercise, you'll deploy the Altair Web Terminal Azure Static Web App.
 
-## Install the Visual Studio Static Web Apps Extension
+## Create and clone a copy of the AltairWebTerminal repository
 
-Install the Visual Studio Code Static Web Apps Extension from the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace?azure-portal=true), or in Visual Studio Code, search for Static Web Apps in the Extension Marketplace and install it.
+Create a **AltairWebTerminal** repository in your GitHub account from the **AzureSphereAltair8800.terminal** GitHub template.
+
+1. From your web browser, open the [AzureSphereAltair8800.terminal](https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.terminal) repo.
+1. Select **Use this template**.
+1. Name your repository **AltairWebTerminal**.
+1. Select **Private**.
+1. Select **Create repository from template**.
+1. Leave the web browser open on the copied repository.
+
+## Clone the AltairWebTerminal repository
+
+Clone the **AltairWebTerminal** repository from your GitHub account to your computer.
+
+1. Copy the **AltairWebTerminal** repository address to the clipboard.
+
+    1. Select **Code**.
+    1. Select the **Clipboard** icon for **AltairWebTerminal** repository.
+
+        :::image type="content" source="../media/git-clone-altair-web-terminal.png" alt-text="Screenshot that shows an example of the open AltairWebTerminal repository.":::
+
+1. Clone the **AltairWebTerminal** repository to your computer.
+    1. Open a command prompt.
+    1. Clone the **AltairWebTerminal** repository. 
+        Remember, you can paste the **AltairWebTerminal** repository address from the clipboard.
+
+        ```bash
+        git clone <AltairWebTerminal_Repository_Address>
+        ```
 
 ## Open the Altair Web Terminal project
 
 1. Start Visual Studio Code.
 1. From the Visual Studio Code main menu, select **File**, then **Open folder**.
-1. Open the **Cloud-Enabled-Altair-on-Azure-Sphere** folder you cloned or downloaded.
-1. Open the **Altair_Web_Terminal** folder.
-1. **Select Folder** or the **OK** button to open the project.
+1. Open the **AltairWebTerminal** folder you cloned to your computer.
+
+## Install the Visual Studio Static Web Apps Extension
+
+Install the Visual Studio Code Static Web Apps Extension from the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace?azure-portal=true), or in Visual Studio Code, search for Static Web Apps in the Extension Marketplace and install it.
 
 ## Deploy the Altair Web Terminal
 
@@ -23,28 +52,36 @@ Install the Visual Studio Code Static Web Apps Extension from the [Extension Mar
 1. Name the resource group **AltairWebTerminal**.
 1. Select the **Free** sku.
 1. Choose **Custom** build preset.
-1. Enter the location of your application code. Enter **/Altair_Web_Terminal**.
-1. Enter the location of your Azure Function code. Enter **/Altair_Web_Terminal/api**.
+1. Enter the location of your application code. Enter **/**.
+1. Enter the location of your Azure Function code. Enter **/api**.
 1. Enter the build output location. Ensure left **blank**.
 1. Select a location for the new resource. Select your preferred location for the Static Web App.
 
 ## Browser the GitHub Action
 
-:::image type="content" source="../media/github-action-view.png" alt-text="Screenshot that shows an example of the GitHub action running.":::
+1. Select **Open Actions in GitHub** from the Visual Studio Code popup.
+1. Wait until the GitHub action has completed. The action will take approximately 2 minutes to run. When the GitHub Action completes, the status indicator will change to a green tick.
 
-The action will take 2 or 3 minutes to run.
+    :::image type="content" source="../media/github-action-view.png" alt-text="Screenshot that shows an example of the GitHub action running.":::
 
 ## Create the Altair Web Terminal settings
 
-1. From Visual Studio Code, navigate to the Altair Web Terminal **api** folder.
+1. Close Visual Studio Code to clear the GitHub Action status.
+1. Start Visual Studio Code.
+1. From the Visual Studio Code main menu, select **File**, then **Open folder**.
+1. Open the **AltairWebTerminal** folder you cloned to your computer.
+1. Navigate to the Altair Web Terminal **api** folder.
 1. Rename the **local.settings.sample.json** file to **local.settings.json**.
 1. Open the **local.settings.json** file.
 
 The MQTT Broker configuration is prepopulated for the **test.mosquitto.org** public MQTT Broker.
 
-Configure the IoT Central settings using the IoT Central API Token and URL that you saved to notepad.
+Configure the IoT Central settings using the IoT Central API Token and URL that you saved to Notepad.
 
-* Update the **IOT_CENTRAL_API_TOKEN** and **IOT_CENTRAL_URL** property values.
+Update the following properties values:
+
+1. **IOT_CENTRAL_API_TOKEN**
+1. **IOT_CENTRAL_URL**
 
 When completed, your **local.settings.json** file will look similar to the following.
 
@@ -62,12 +99,12 @@ The setting will then be uploaded.
 
 ## Invite users to the Altair Web Terminal
 
-The Altair Web Terminal is secure and requires authenticated users so you need to invite users, including yourself to the Altair Web Terminal Static Web App.
+The Altair Web Terminal is secure and requires authenticated users so you'll need to invite users, including yourself to the Altair Web Terminal Static Web App.
 
 1. From the [Microsoft Azure Portal](https://portal.azure.com?azure-portal=true).
 1. Select **All resources**.
 
-:::image type="content" source="../media/azure-portal-all-resources.png" alt-text="Screenshot that shows how to select the all resources Azure portal blade.":::
+:::image type="content" source="../media/azure-portal-all-resources.png" alt-text="Screenshot that shows how to select the all resources in the Azure portal.":::
 
 1. Filter resources by name. Type **AltairWebTerminal** in the filter dialog box.
 1. Select on the **AltairWebTerminal** Static Web App.
@@ -89,13 +126,17 @@ The Altair Web Terminal is secure and requires authenticated users so you need t
 
 1. If the invite link is for someone else, send the link to them to authenticate and grant consent.
 
-:::image type="content" source="../media/static-web-app-invite.png" alt-text="Screenshot that shows how to copy the invite link.":::
+    :::image type="content" source="../media/static-web-app-invite.png" alt-text="Screenshot that shows how to copy the invite link.":::
 
 ## Connect the Altair Web Terminal to your Azure Sphere
 
-When authenticated, you need to connect to the Altair emulator.
+When authenticated, connect to the Altair emulator. You'll need the name of your device in IoT Central.
 
-1. Enter your **IoT Central device name**, and select **Connect**.
+1. From your web browser, navigate to the IoT Central portal.
+1. Open the Devices tab, select the **Altair on Azure Sphere** template, then select your Azure Sphere device.
+1. Copy the device name to the clipboard.
+1. Navigate to the Web Terminal tab in your web browser.
+1. Paste the device name and select **Connect**.
 
 The MQTT Broker status message changes to **Connecting...**, when it has successfully connected, the status will change to **Connected**.
 
