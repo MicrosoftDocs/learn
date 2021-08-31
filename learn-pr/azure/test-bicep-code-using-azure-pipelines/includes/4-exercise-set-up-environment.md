@@ -159,19 +159,19 @@ Next, create a service connection in Azure Pipelines. This automatically creates
 
 1. In your browser, select **Project settings**.
 
-   :::image type="content" source="../media/4-project-settings.png" alt-text="Screenshot of Azure DevOps that shows the 'Project settings' menu item highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-project-settings.png" alt-text="Screenshot of Azure DevOps that shows the menu, with the 'Project settings' item highlighted.":::
 
 1. Select **Service connections** > **Create service connection**.
 
-   :::image type="content" source="../media/4-create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the 'Create service connection' button highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the 'Create service connection' button highlighted.":::
 
 1. Select **Azure Resource Manager** > **Next**.
 
-   :::image type="content" source="../media/4-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Azure Resource Manager service connection type highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Azure Resource Manager service connection type highlighted.":::
 
 1. Select **Service principal (automatic)** > **Next**.
 
-   :::image type="content" source="../media/4-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Service principal (automatic) option highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Service principal (automatic) option highlighted.":::
 
 1. In the **Subscription** drop-down, select your Azure subscription.
 
