@@ -14,9 +14,9 @@ If you have an Avnet Azure Sphere Starter Kit and the MikroE microSD Click, then
 
 You will need a Micro SD Card.
 
-1. The Micro SD Card capacity must be at least 10 Megabytes.
-1. The existing contents of the SD Card will be destroyed the formatting process.
-1. Inserted a SD Card into the MikroE microSD Card Click.
+- The Micro SD Card capacity must be at least 10 Megabytes.
+- The existing contents of the SD Card will be destroyed by the formatting process.
+- Insert an SD Card into the MikroE microSD Card Click.
 
 The following steps prepare the Micro SD Card for use with the Altair emulator. Drive A: is formatted to boot CP/M, and also includes utilities plus compilers. Drive B: is used to save your files and is formatted to be blank.
 
