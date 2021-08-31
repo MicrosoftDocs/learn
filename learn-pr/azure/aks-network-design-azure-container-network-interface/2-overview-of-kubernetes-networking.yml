@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-network-design-with-azure-cni.2-overview-of-kubernetes-networking
-title: Overview of Kubernetes Networking
+title: Overview of kubernetes networking
 metadata:
   unitType: learning-content
-  title: Overview of Kubernetes Networking
+  title: Overview of kubernetes networking
   description: This unit provides an overview of the key components of Kubernetes networking. It will help you to understand how IP addresses are used within a cluster.
   ms.date: 8/20/2021
   author: markwme
