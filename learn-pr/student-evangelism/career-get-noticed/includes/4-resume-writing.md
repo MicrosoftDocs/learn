@@ -1,29 +1,29 @@
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NA8o]
 
-When you're applying for an internship, a strong, attractive resume is the first step in getting recruiters and hiring managers to pay attention. Whether your application gets noticed or overlooked hinges on how you present your job and life experiences.
+When you're applying for an internship, a strong, attractive resume is the first step in getting recruiters and hiring managers to notice you. Whether your application gets seen or overlooked hinges on how you present your job and life experiences.
 
 Recruiters scan hundreds of resumes daily. Although they do look at every resume submitted for a role, only those that catch their eye will get their full attention. Therefore, it's important to ensure that your resume complies in both format and content to what recruiters are looking for. 
 
 ## What to look for in the job description
 
-Before you begin, review the requirements of the position you're interested in, and make sure that your resume will address at least some of them or it might not pass the recruiter's first scan.
+Before you begin, review the requirements of the position you're interested in, and make sure that your resume will address at least some of them. If it doesn't, it might not pass the recruiter's first scan.
 
-As you're reviewing the description of a role, pay close attention to both the technical and human skills required for the job. As you tailor your resume to fit this role, be sure to provide examples that show how you exhibit both these types of skills.
+As you're reviewing the description of a role, pay close attention to both the *technical* and *human* skills that are required for the job. As you tailor your resume to fit this role, be sure to provide examples that show how you exhibit both these types of skills.
 
-## Tech skills
+## Technical skills
 
 Employers often list technical skills in two different ways:   
 
-- **Minimum requirements for the position**: If you don't meet the minimum requirements, your application might not make it past the initial screening. However, no company expects and intern to start out as an expert. Treat these minimum qualifications as guidance toward certain skills that you should develop, and then use your resume to explain how you're already gaining experience in those areas and will likely make progress on them by the time you interview.
+- **Minimum requirements for the position**: If you don't meet the minimum requirements, your application might not make it past the initial screening. However, no company expects an intern to start out as an expert. Treat these minimum qualifications as guidance toward certain skills that you should develop, and then use your resume to explain how you're already gaining experience in those areas and will likely make progress on them by the time you interview.
 
     > [!NOTE]
     > Remember, the job you definitely won't get is the one for which you don't apply. Although it's unrealistic to apply for a job or internship without any of the required skills, consider this: if you start with a basic level in a skill and work hard on it, a lot can happen in a matter of weeks and months to set you up for success.
 
-- **Technical skills that are listed as "preferred"**: Note these skills, and determine which ones you already have and which ones are achievable before you have your interview.
+- **Technical skills that are listed as "preferred"**: Note these skills, and determine which ones you already have and which ones are achievable before that first interview.
 
 ## Human skills
 
-Human skills, sometimes called "soft skills," are skills that aren't technical in nature but are important for success as part of a team. When you're reading a description for a job, it's important to identify those soft skills and demonstrate in your resume that you possess them. 
+Human skills, sometimes called *soft skills*, are those that aren't technical in nature but are important for success as part of a team. When you're reading a description for a job, it's important to identify those soft skills and demonstrate in your resume that you possess them. 
 
 It's often difficult to make out what human skills are required according to a job description. The way to spot these skills is to look for certain keywords, such as *teamwork* and *collaboration*. Consider the following sentence from a sample job description:
 
@@ -49,11 +49,13 @@ After you've analyzed the requirements listed in the job posting, your next step
 
 ## Experience as impact
 
-To stand out from among other applicants, you must be able to condense your experience into short yet insightful bullet points. However, the descriptions must delve deeper than simply what you did. It's critical to demonstrate your *impact* on the project or process. Demonstrating impact really showcases your skills and paints a vivid picture of your technical and non-technical experiences. With this knowledge in mind, let's explore how to best address your experiences and illustrate your impact. 
+To stand out from among other applicants, you must be able to condense your experience into short yet insightful bullet points. But the descriptions must delve deeper than only into what you did. It's critical to demonstrate your *impact* on the project or process. Demonstrating impact really showcases your skills and paints a vivid picture of your technical and non-technical experiences. 
+
+With this knowledge in mind, let's explore how to best address your experiences and illustrate your impact. 
 
 ### Technical experience
 
-Technical experience includes anything you had an impact on that can be related to technical skills. Examples of this type of experience can include, among many things:  
+Technical experience includes anything you had an impact on that can be related to technical skills. This type of experience can include, among many other examples:  
 
 - Personal or class projects
 - Research positions
@@ -62,7 +64,7 @@ Technical experience includes anything you had an impact on that can be related 
 
 ### Volunteer work with nonprofit organizations in and outside of school
 
-Volunteer activities are attractive to recruiters, because they're great ways to acquire, implement, and demonstrate both technical and human skills. They also provide the basis for technical chats in interviews. Therefore, it's important to record these experiences in an *efficient*, *eye-catching* way that really highlights your *impact*.
+Volunteer activities are attractive to recruiters, because they're great ways to acquire, implement, and demonstrate both technical and human skills. They also provide the basis for technical chats in interviews. Therefore, it's important to record these experiences in *efficient*, *eye-catching* ways that really highlight your impact.
 
 To illustrate, let's create a scenario with a class project:
 
@@ -73,7 +75,7 @@ Suppose you worked on a Python class project that required bug fixing for a calc
 > - Programmed a calculator program using Python.
 > - Fixed bugs that were in the original code
 
-Although this example does describe your work on the project, it sounds like a basic project and doesn't help to showcase you as an individual. 
+Although this example does describe your work on the project, it sounds like a basic project, not an important one, and fails to showcase you as an individual. 
 
 By rephrasing it to focus on your impact, however, you'll demonstrate your skills and impact far more effectively. Try something like the following:
 
@@ -95,7 +97,7 @@ Luckily, describing a non-technical experience can be similar to describing tech
 
 > You are a member of a gardening club, where you care for some of the plants at the club's nursery, participate in bi-weekly meetings, and provide assistance in some of the events held by the club.
 
-By using the description template, we could write some bullet points like the following:
+By using the description template, you could write some bullet points like the following:
 
 > - Maintained the club's nursery by monitoring and caring for X different plant species, in collaboration with X other members.
 > - Managed X club activities by attending bi-weekly club meetings, communicating and discussing ideas, and scheduling number events.
@@ -103,7 +105,7 @@ By using the description template, we could write some bullet points like the fo
 
 These points describe your experience while highlighting your interests as an individual. You emphasize your grasp of collaboration, communication, time management, dependability, and decision-making. Do not take non-technical experience lightly, because it could often help you as much as or more than your technical experience when it comes to standing out among other applicants.
 
-## Describing ongoing experiences
+## Describe your ongoing experiences
 
 Whenever you describe an ongoing experience in your resume, make sure that you write about it with action verbs in present tense. That is, write "ensure" instead of "ensured," "develop" instead of "developed," and so on. Even if the task has already been completed, if the experience is ongoing, the best practice is to keep it in present tense. For experiences that began and ended in the past, use past tense.
 
