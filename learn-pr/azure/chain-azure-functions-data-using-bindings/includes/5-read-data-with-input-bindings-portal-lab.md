@@ -21,7 +21,7 @@ A database account is a container for managing one or more databases. Before we 
 
 1. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Databases**, search for and select **Azure Cosmos DB**, and press <kbd>Enter</kbd>. The **Select API option** pane appears.
+1. In the left menu pane, select **Databases**, and in the *marketplace* search box, search for and select **Azure Cosmos DB**. The **Select API option** pane appears.
 
     Azure Cosmos DB provides five APIs to suit the needs of your application:
 
@@ -44,7 +44,7 @@ A database account is a container for managing one or more databases. Before we 
     | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
     | **Instance Details** |
     | Account Name | Enter a *globally unique name* | Enter a unique name to identify this Azure Cosmos DB account. Because `documents.azure.com` is appended to the name that you provide to create your URI, use a unique but identifiable name.<br><br>The account name can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters. |
-    | Location | Central US | Select the region nearest to you. |
+    | Location | *region* | Select the region nearest to you. |
 
 1. Accept the default values for all of the other settings in this new account pane.
 
@@ -58,33 +58,28 @@ A database account is a container for managing one or more databases. Before we 
 
 1. Select **Go to resource** to go to the database account in the portal. The **Quick start** pane for your Azure Cosmos DB account appears.
 
-Next, we'll add a collection to the database.
+Next, we'll add a container to the database.
 
 ### Add a container
 
 In Azure Cosmos DB, a *container* holds arbitrary user-generated entities. Inside a container, we store documents.
 
-Let's use the Data Explorer tool in the Azure portal to create a database and collection.
+Let's use the Data Explorer tool in the Azure portal to create a database and container.
 
 1. In the left menu pane, select **Data Explorer**. The **Data Explorer** pane appears.
 
 1. Select the **New Container** box. The **New Container** pane appears. To see it, you may need to scroll to the right.
 
-    > [!NOTE]
-    > Ensure you enter the following values precisely as documented here:
-    > - **Collection Name** = `Bookmarks` with a capital B
-    > - **Partition key** = `/id` (slash id; NOT curly brackets or any combination of curly brackets and slashes)
-
 1. Enter the following values for each setting.
 
     | Setting | Value | Description |
     |---|---|---|
-    | Database id | Select **Create new**, and enter *func-io-learn-db* in the text box | Database names must contain from 1 through 255 characters, and they cannot contain /, \\, #, ?, or a trailing space.<br><br>You're free to enter whatever you want here, but we suggest _func-io-learn-db_ as the name for the new database, and that's what we'll refer to in this unit. |
+    | Database id | Select **Create new**, and enter *func-io-learn-db* in its field | Database names must contain from 1 through 255 characters, and they cannot contain /, \\, #, ?, or a trailing space.<br><br>You're free to enter whatever you want here, but we suggest _func-io-learn-db_ as the name for the new database, and that's what we'll refer to in this unit. |
     | Database Max RU/s | 4000 |Leave the throughput to 4000 request units per second (RU/s). If you want to reduce latency, you can scale up the performance later. |
     | Container id | Bookmarks | Container IDs have the same character requirements as database names. |
     | Partition key | /id  | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. You'll use the *Partition key* setting as a convenience because you're not concerned with database performance in this module. If you would like to learn more about Azure Cosmos DB partition key strategies, explore the Microsoft Learn Azure Cosmos DB modules. |
 
-1. Select **OK**. The Data Explorer displays the new database and container under the **DATA** section of the **SQL API** pane. Inside the database, you've defined a container. Next, you'll add some data, also known as items.
+1. Select **OK**. The Data Explorer displays the new database and container under the **SQL API** section. Inside the database, you've defined a container. Next, you'll add some data, also known as items.
 
 ### Add test data
 
@@ -92,7 +87,7 @@ You've defined a container in our database called **Bookmarks**. You want to sto
 
 You'll add data to the new container using Data Explorer.
 
-1. In the **Data Explorer** pane, the new database, *func-io-learn-db*, appears under under the **DATA** section of the **SQL API** pane. Expand the **func-io-learn-db** database, then expand the **Bookmarks** collection, and select **Items**. The **Items** tab appears.
+1. In the **Data Explorer** pane, the new database, *func-io-learn-db*, appears under the **SQL API** section. Expand the **func-io-learn-db** database, then expand the **Bookmarks** container, and select **Items**. The **Items** tab appears.
 
 1. In the top menu bar of the **Data Explorer** pane, select **New Item**.
 
@@ -149,7 +144,7 @@ You'll add data to the new container using Data Explorer.
 
     [![Screenshot of the SQL API UI in the portal, showing the list of entries you added to your bookmarks container.](../media/5-db-bookmark-collection-small.png)](../media/5-db-bookmark-collection.png#lightbox)
 
-You now have a few entries in your **Bookmarks** container. Your scenario will work as follows. If a request arrives with, for example, "id=docs", you'll look up that ID in your bookmarks container, and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in this container.
+You now have a few entries in your **Bookmarks** container. Your scenario will work as follows. If a request arrives with, for example, "id=docs", you'll look up that ID in your Bookmarks container, and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in this container.
 
 ## Create your function
 
@@ -157,11 +152,11 @@ You now have a few entries in your **Bookmarks** container. Your scenario will w
 
 1. In the left menu pane, under **Functions**, select **Functions**.
 
-1. To start the function creation process, from the top menu bar, select **Add**. The **Add function** pane appears showing the complete set of supported triggers.
+1. To start the function creation process, from the top menu bar, select **Create**. The **Create function** pane appears showing the complete set of supported triggers.
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
-1. Accept every setting with the defaults, and select **Add** to create your function.
+1. Accept every setting with the defaults, and select **Create** to create your function.
 
     The **HttpTrigger2** pane for your function appears displaying a default implementation of your HTTP-triggered function.
 
@@ -194,11 +189,11 @@ To read data from the database, you need to define an input binding. As you'll s
     Next, you'll set up a connection to your database.
 
     > [!NOTE]
-    > 
+    >
     > If the following message appears in the **Azure Cosmos DB input** configuration user interface prompting you to install an extension, select **Install**. It can take a while to install an extension, so you will need to wait for the installation to complete before proceeding to the next step.
-    > 
+    >
     > ![Screenshot of error message that the integration requires the Microsoft.Azure.WebJobs.Extensions.CosmosDB extension to be installed.](../media/extension-not-installed.png)
-    > 
+    >
 
 1. To create your connection, select **OK**.
 
@@ -207,11 +202,6 @@ To read data from the database, you need to define an input binding. As you'll s
     We want to look up a bookmark with a specific ID, so let's tie an ID that we receive in the query string to the binding.
 
 1. Enter the following values for each setting in this pane. To learn more about the purpose of each setting, you can select the information icon to its right.
-
-    > [!NOTE]
-    > Ensure you enter the following values precisely as documented here:
-    > - **Collection Name** = `Bookmarks` with a capital B
-    > - **Partition key** = `/id` (slash id; NOT curly brackets or any combination of curly brackets and slashes)
 
     | Setting | Value | Description |
     |---|---|---|
@@ -224,7 +214,7 @@ To read data from the database, you need to define an input binding. As you'll s
 
     The following explanation should clarify the values that we are using: we want to look up a bookmark with a specific ID, so we tied the **Document ID** that our function receives in the query string to the binding. This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Because IDs are unique in our collection, the binding will return either 0 (not found) or 1 (found) documents.
 
-1. To save all changes to this binding configuration, select **OK**.
+1. To save all changes to this binding configuration, from the select **OK**.
 
 Now that you have your binding defined, it's time to use it in your function.
 

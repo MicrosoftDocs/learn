@@ -2,8 +2,6 @@ Azure is a cloud computing platform with an ever-expanding set of services to he
 
 In this module, you'll take an entry-level, end-to-end look at Azure and its capabilities. You'll gain a solid foundation for completing the available learning paths for Azure fundamentals.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Ibng]
-
 ## What is Azure fundamentals?
 
 Azure fundamentals is a series of six learning paths that familiarize you to Azure and its many services and features.

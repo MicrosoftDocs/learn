@@ -15,7 +15,7 @@ The following code shows example definitions for the three varieties of struct t
 
 ```rust
 // Classic struct with named fields
-struct Student { name: String, level: u8, pass: bool }
+struct Student { name: String, level: u8, remote: bool }
 
 // Tuple struct with data types only
 struct Grades(char, char, char, char, f32);
@@ -38,7 +38,7 @@ Like a function, the body of a classic struct is defined inside curly brackets `
 
 ```rust
 // Classic struct with named fields
-struct Student { name: String, level: u8, pass: bool }
+struct Student { name: String, level: u8, remote: bool }
 ```
 
 A benefit of the classic struct definition is you can access the value for a struct field by name. To access the field value, we use the syntax `<struct>.<field>`.
@@ -108,7 +108,7 @@ The enum in our example has three variants of different types:
 - `WEKeys` has two fields with data types `String` and `char`.
 - `WEMClick` contains an anonymous struct with named fields `x` and `y`, and their data types (`i64`).
 
-We define an enum with variants similar to how we define different kinds of struct types. All the variants are grouped together in the same `WebEvent` enum type. Each variant in the enum **isn't** its own type. Any function that uses a variant of the `WebEvent` enum must accept all the variants in the enum. We can't have a function that accepts only the `KeyPress` variant, but not the other variants.
+We define an enum with variants similar to how we define different kinds of struct types. All the variants are grouped together in the same `WebEvent` enum type. Each variant in the enum **isn't** its own type. Any function that uses a variant of the `WebEvent` enum must accept all the variants in the enum. We can't have a function that accepts only the `WEClick` variant, but not the other variants.
 
 
 ## Define an enum with structs

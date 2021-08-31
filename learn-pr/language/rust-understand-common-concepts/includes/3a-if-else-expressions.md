@@ -8,7 +8,7 @@ Here's an example that tests if two numbers are the same, and prints a message b
 
 ```rust
 if 1 == 2 {
-    println!("True, the numbers are equal."); // 
+    println!("True, the numbers are equal.");
 } else {
     println!("False, the numbers are not equal.");
 }
@@ -20,12 +20,12 @@ Unlike most other languages, `if` blocks in Rust can also act as expressions. Al
 
 ```rust
 let formal = true;
-let greeting = if formal { // if used here as an expression
-    "Good day to you."     // return a String
+let greeting = if formal { // "if" keyword used here as an expression
+    "Good day to you."     // Returns the string "Good day to you."
 } else {
-    "Hey!"                 // return a String
+    "Hey!"                 // Returns the string "Hey!" 
 };
-println!("{}", greeting)   // prints "Good day to you."
+println!("{}", greeting)   // Prints "Good day to you."
 ```
 
 In this example, we assign a value to the `greeting` variable based on the result of the `if formal` expression. When the expression `if formal` is true, the `greeting` value is set to the string "Good day to you." When the expression is false, the `greeting` value is set to the string "Hey!". Because we initialized the `formal` variable to true, we know the result of the expression `if formal` is also true.
@@ -37,7 +37,7 @@ If a condition expression evaluates to `true`, the corresponding action block is
 In this example, we check if a number is within an allowable range. We want to do some specific processing when the number is less than zero, equal to zero, or greater than 512. We declare the boolean variable `out_of_range`, but we don't set the variable value until the program enters the conditional test expression.
 
 ```rust
-let num = 500 // num variable can be set at some point in the program
+let num = 500 // "num" can be set at some point in the program, for now set it to 500
 let out_of_range: bool;
 if num < 0 {
     out_of_range = true;

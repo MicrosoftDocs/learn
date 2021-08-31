@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.career-growth.seek-diversity
+title: Seek a diverse experience
+metadata:
+  unitType: learning-content # stub based on selected scaffold: introduction | learning_content | exercise | summary
+  title: Seek diversity # user input: module title for browser tab and search results
+  description: Seek a diversity of opinions to enhance your experience. # user input: a description for site search and SEO
+  ms.date: 08/23/2021 # stub with today's date
+  author: jlooper # stub with GitHub ID from user settings
+  ms.author: jelooper # stub with Microsoft alias from user settings
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+durationInMinutes: 2 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/4-seek-diversity.md)]
+quiz:
+  questions:
+  - content: "To broaden your horizons, you should seek out opinions from a diverse group of people."
+    choices:
+    - content: "True. It will help you broaden your horizons."
+      isCorrect: true
+      explanation: "Gathering perspectives from people who do not look like you will serve you well in life."
+    - content: "False. It's not an important aspect of your job."
+      isCorrect: false
+      explanation: "False. Gathering diverse feedback will help improve your work experience."
+    - content: "True, but it's not a very important part of your job."
+      isCorrect: false
+      explanation: "You should prioritize gathering diverse perspectives."

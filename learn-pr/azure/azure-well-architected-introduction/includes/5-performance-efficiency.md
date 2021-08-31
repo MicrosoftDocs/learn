@@ -12,11 +12,11 @@ Let's look at some patterns and practices that can enhance the scalability and p
 
 Compute resources can be scaled in two directions:
 
-- Scaling *up* is adding more resources to a single instance.
+- Scaling *up* is adding more resources to a single instance. This is also known as *vertical scaling*.
 
     ![An illustration that shows scaling up by adding resources to a virtual machine.](../media/scale-up.png)
 
-- Scaling *out* is adding more instances.
+- Scaling *out* is adding more instances. This is also known as *horizontal scaling*.
 
     ![An illustration that shows scaling out by adding instances to increase performance.](../media/scale-out.png)
 

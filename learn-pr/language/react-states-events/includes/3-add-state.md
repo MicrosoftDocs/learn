@@ -15,7 +15,7 @@ Any JavaScript object or data type can be registered as stateful in React. The f
 > [!NOTE]
 > In React, state is *immutable*, meaning it can't be changed. To modify the value of a stateful object, replace it with a new instance that contains the appropriate values. The function returned by `useState` manages this process.
 
-1. Open the *App.jsx* file. Notice the existing `initialRecipe` object. We'll use this object as the default value for our stateful `recipe`.
+1. In VS Code Explorer, expand the src folder, and then open the *App.jsx* file. Notice the existing `initialRecipe` object. We'll use this object as the default value for our stateful `recipe`.
 1. Create the `recipe` state object and `setRecipe` function from `useState`. To do so, add the following code after the line that reads, `TODO: Create recipe state`.
 
     ```javascript

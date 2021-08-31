@@ -1,3 +1,5 @@
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWEsag]
+
 Azure is a continually expanding set of cloud services that help your organization meet your current and future business challenges. Azure gives you the freedom to build, manage, and deploy applications on a massive global network using your favorite tools and frameworks.
 
 ## What does Azure offer?
@@ -49,7 +51,6 @@ With help from Azure, you have everything you need to build your next great solu
   :::column-end:::
 :::row-end:::
 
-
 ## What can I do with Azure?
 
 Azure provides more than 100 services that enable you to do everything from running your existing applications on virtual machines, to exploring new software paradigms, such as intelligent bots and mixed reality.
@@ -60,7 +61,7 @@ For example, Azure provides AI and machine-learning services that can naturally 
 
 ## How does Azure work?
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWlzQ6]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWJKac]
 
 ## What is the Azure portal?<br>
 

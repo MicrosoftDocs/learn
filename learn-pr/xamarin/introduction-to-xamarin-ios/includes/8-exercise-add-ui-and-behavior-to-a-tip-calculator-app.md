@@ -155,7 +155,7 @@ Instantiating the `UITextField` and assign the following properties:
     {
         base.ViewDidLoad();
         ...
-        var calcButton = new UIButton(UIButtonType.Custom) {
+        calcButton = new UIButton(UIButtonType.Custom) {
            Frame = new CGRect(20, 71 + topPadding, View.Bounds.Width - 40, 45),
            BackgroundColor = UIColor.FromRGB(0, 0.5f, 0),
         };
