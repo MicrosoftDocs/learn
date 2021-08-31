@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.python-get-started-testing.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: "Introduction to Testing"
+  description: "Verifying code in an automated way is essential for robust projects. This module will go through the basics and types of testing, including Python's unittest as well as some of the challenges of testing in general."
+  ms.date: 8/30/2021
+  author: alfredodeza
+  ms.author: alfredodeza
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

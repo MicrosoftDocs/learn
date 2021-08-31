@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.python-get-started-testing.python-unittest
+title: Enter learning content title
+metadata:
+  unitType: learning-content
+  title: "Understanding unittest: Python's standard library testing tool"
+  description: "Understand the basics of Python's unittest, from its background to writing and reading existing tests. See how test classes work and how to create them."
+  ms.date: 8/30/2021
+  author: alfredodeza
+  ms.author: alfredodeza
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-python-unittest.md)]
