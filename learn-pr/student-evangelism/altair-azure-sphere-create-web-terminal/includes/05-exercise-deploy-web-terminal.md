@@ -1,8 +1,8 @@
 In this exercise, you'll deploy the Altair Web Terminal Azure Static Web App.
 
-## Create and clone a copy of the AltairWebTerminal repository
+## Create a copy of the AltairWebTerminal repository
 
-Create a **AltairWebTerminal** repository in your GitHub account from the **AzureSphereAltair8800.terminal** GitHub template.
+Create a copy of the **AltairWebTerminal** repository from the **AzureSphereAltair8800.terminal** GitHub template.
 
 1. From your web browser, open the [AzureSphereAltair8800.terminal](https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.terminal?azure-portal=true) repo.
 1. Select **Use this template**.
