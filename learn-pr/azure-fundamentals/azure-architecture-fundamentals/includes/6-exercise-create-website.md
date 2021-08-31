@@ -70,7 +70,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
         Resource Group
       :::column-end:::
       :::column:::
-        Select the **Use existing** option, and then select the  **\[sandbox resource group name\]**  resource group from the dropdown.
+        Select the **Use existing** option, and then select the **<rgn> \[sandbox resource group name\]<rgn>**  resource group from the dropdown.
       :::column-end:::
     :::row-end:::
     :::row:::
