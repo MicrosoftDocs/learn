@@ -41,9 +41,6 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --vnet-name MyVNet1
     ```
 
-    > [!NOTE]
-    > If you get an error, "partofthepassword: event not found; create a new password and avoid ! marks.
-
 1. To deploy a VM in **FrontendSubnet**, run this command. Replace `<password>` with a complex password of your choice.
 
     ```azurecli
@@ -56,6 +53,9 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --admin-username azureuser \
         --admin-password <password>
     ```
+
+    > [!NOTE]
+    > If you get an error, "partofthepassword: event not found; create a new password and avoid ! marks.
 
 1. To install IIS on **FrontendVM**, run this command.
 
@@ -134,13 +134,13 @@ Let's start by creating the problematic infrastructure, which includes a configu
 
 Now, to set up Network Watcher in the same region as the infrastructure, let's use the Azure CLI.
 
-To enable Network Watcher, run this command. Replace (match) `<location>` with the Azure region you created your resource group.
+To enable Network Watcher, run this command. Replace (match) `<location>` with the Azure region used when you created your resource group at the beginning of this session.
 
 ```azurecli
 az network watcher configure \
-    --locations <location> \
     --enabled true \
     --resource-group $RG
+    --locations <location> \
 ```
 
 ## Use Network Watcher to show the topology
@@ -149,21 +149,21 @@ Now, you can use Network Watcher to troubleshoot connectivity between two VMs in
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. On the Azure portal menu, select **All services**. Then, search for **Network Watcher**. The **Network Watcher** pane appears.
+1. In the global search enter **Network Watcher** and select that service. The **Network Watcher** pane appears.
 
-1. In the left nav bar, in the **Monitoring** section, select **Topology**. The **Network Watcher | Topology** pane appears.
+1. In the menu, under **Monitoring**, select **Topology**. The **Network Watcher | Topology** pane appears.
 
-1. In the dropdowns, select your **Subscription** and **Resource Group** for this exercise. Network Watcher displays your network topology.
+1. In the dropdown fields, select your **Subscription** and **Resource Group** for this exercise. The Network Watcher topology pane displays the network topology for the virtual network you created at the beginning of this exercise, **MyVNet1**.
 
     ![Screenshot that shows the exercise network topology.](../media/3-network-topology.png)
 
-## Use Connection Monitor to run tests from the back end to the front end
+## Use Connection Monitor to run tests from the backend to the frontend
 
-The topology appears to be correct. To get more information, let's set up some tests in Connection Monitor. Start by creating a test from the back-end VM to the front-end VM.
+The topology appears to be correct. To get more information, let's set up some tests in Connection Monitor. Start by creating a test from the backend VM to the frontend VM.
 
 1. Under **Monitoring**, select **Connection monitor**. The **Network Watcher | Connection monitor** pane appears.
 
-1. From the top menu bar, select **Create**. The **Create Connection Monitor** pane appears.
+1. From the command bar, select **Create**. The **Create Connection Monitor** page appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -172,27 +172,25 @@ The topology appears to be correct. To get more information, let's set up some t
     | Connection Monitor Name | Back-to-front-HTTP-test |
     | Subscription | From the dropdown, select your subscription |
     | Region | Select the Azure region you deployed your resources in |
+    | Workspace configuration | Use workspace created by connection monitor (default) is checked |
 
 1. Select **Next : Test groups**. The **Add test group details** pane appears.
 
-1. Enter the following values for each setting.
+1. For Test group name, enter **Back-to-front-HTTP-test-group**.
 
-    | Setting | Value |
-    | --- | --- |
-    | Test group name | Back-to-front-HTTP-test-group |
-    | Sources box | Select **Add sources** |
+1. Select **Add sources**. The **Add Sources** pane appears. 
+ 
+1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list. Note that it is associated with your resource group.
 
-1. The **Add Sources** pane appears. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list.
+1. At the bottom of the pane, expand **Selected sources (2 Azure endpoints)** and note that your enpoint *BackendVM* and *FrontendVM* Azure endpoints are listed.
 
-1. At the bottom of the pane, expand **Selected sources (2 Azure endpoints)**. The *BackendVM* and *FrontendVM* Azure endpoints appear.
-
-1. At the far right of each endpoint, select the ellipsis, and then select **Enable Network Watcher**. Wait for each endpoint to deploy.
+1. At the far right of each endpoint in the list, select the ellipsis, and then select **Enable Network Watcher**. It may take some time for each endpoint to deploy. Watch for a notification to appear in your global controls at the top right of the page header.
 
     ![Screenshot that shows enabling of Network Watcher.](../media/3-enable-network-watcher.png)
 
 1. Select **BackendVM** from the expanded Azure endpoint list.
 
-1. Select **Add endpoints**. The **Add test group details** pane reappears with the BackendSubnet identified as your source.
+1. Select **Add endpoints**. The **Add test group details** pane reappears with the BackendSubnet identified as your source. If not, rename it to be **BackendVM**.
 
 1. In the **Test configurations** box, select **Add Test configuration**. The **Add Test configuration** pane appears.
 
@@ -204,11 +202,13 @@ The topology appears to be correct. To get more information, let's set up some t
     | Protocol | HTTP |
     | Destination port | 80 |
     | Test Frequency | Every 30 seconds |
-    | *Maintain the default values for the remaining settings* |
+    | *Keep the default values for the remaining settings* |
 
-1. Select **Add Test configuration**. The **Add test group details** reappears with your test configuration identified.
+1. Select **Add Test configuration** to add this test configuration to your test group.  The **Add test group details** reappears with your test configuration identified.
 
-1. In the **Destinations** box, select **Add destinations**. The **Add Destinations** pane appears. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list.
+1. In the **Destinations** box, select **Add destinations**. The **Add Destinations** pane appears. 
+ 
+1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list.
 
 1. At the bottom of the pane, expand **Selected destinations (2 Azure endpoints)**. The *BackendVM* and *FrontendVM* Azure endpoints appear.
 
@@ -220,11 +220,11 @@ The topology appears to be correct. To get more information, let's set up some t
 
 1. On the **Test groups** tab, notice that your test group is now listed.
 
-The results should show that, because the NSG is associated with the back-end subnet, traffic flows without issues from the back-end VM to the front-end VM.
+The results should show that, because the NSG is associated with the backend subnet, traffic flows without issues from the backend VM to the frontend VM.
 
-## Use Connection Monitor to run tests from the front end to the back end
+## Use Connection Monitor to run tests from the frontend to the backend
 
-Run the same test in the opposite direction. Let's set up a test in Connection Monitor. Start by creating a test from the front-end VM to the back-end VM.
+Run the same test in the opposite direction. Let's set up a test in Connection Monitor. Start by creating a test from the frontend VM to the backend VM.
 
 1. Under **Monitoring**, select **Connection monitor**. The **Network Watcher | Connection monitor** pane appears.
 
@@ -283,7 +283,7 @@ Run the same test in the opposite direction. Let's set up a test in Connection M
 
 1. On the **Test groups** tab, notice that your test group is now listed.
 
-The results should show that, because the NSG is associated with the back-end subnet, no traffic flows from the front-end VM to the back-end VM.
+The results should show that, because the NSG is associated with the backend subnet, no traffic flows from the frontend VM to the backend VM.
 
 ## Use IP flow verify to test the connection
 
