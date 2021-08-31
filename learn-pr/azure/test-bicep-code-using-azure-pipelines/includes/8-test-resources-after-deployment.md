@@ -29,9 +29,11 @@ When you use a supported test framework, Azure Pipelines understands the results
 
 ### Pass data between steps and stages
 
-You sometimes need to pass data between pipeline stages. This is useful when you create a smoke test stage because your smoke tests need to know how to find the Azure resources that they should test. Your Bicep file deploys the resources, so it can access the resource properties and publish an `output` that your pipeline can access.
+You sometimes need to pass data between pipeline stages. This is useful when you create a smoke test stage because your smoke tests need to know how to find the Azure resources that they should test. Because your Bicep file deploys the resources, it can access the resource properties and publish an `output` that your pipeline can then read.
 
 In Azure Pipelines, there's special syntax to publish variables that are available across stages, and to access them.
+
+<!-- TODO consider removing this section -->
 
 You first need to publish a pipeline stage output variable. You do this by writing a specially formatted string to the pipeline log, which Azure Pipelines knows how to understand. In the following example, a variable named `myVariable` is set to the value `myValue`:
 
@@ -45,8 +47,10 @@ After you publish the output variable, you then need to make the variable availa
 
 Now, any steps within the smoke test job can access the `myVariable` value like any other variable, by using the syntax `$(myVariable)`. You'll try this out in the next exercise.
 
+<!-- TODO end -->
+
 > [!NOTE]
-> Passing variables between stages can be complex. We link to more information in the summary.
+> In a future module, you'll learn more about passing variables between stages.
 
 ### Other test types
 

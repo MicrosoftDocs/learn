@@ -48,6 +48,8 @@ Here's how this is defined in a pipeline YAML file:
 
 :::code language="yaml" source="code/2-stages-sequential.yml" :::
 
+<!-- TODO consider removing this section and moving to next module -->
+
 ## Control the sequence of stages
 
 By default, the stages run in the order you define them, and a stage only runs if the previous stage was successful. You can add dependencies between them to change the order. Continuing the example above, imagine you want to run both of your deployments in parallel, like this:
@@ -72,6 +74,8 @@ You use the `condition` keyword to specify a condition that should be met before
 :::code language="yaml" source="code/2-stages-condition.yml" highlight="13" :::
 
 In the preceding example, when everything goes well, Azure Pipelines runs the **Validate** stage first, then it runs the **Deploy** stage. It skips the **Rollback** stage. However, if the **Deploy** stage fails, Azure Pipelines runs the **Rollback** stage. You'll learn more about rollback later in this module.
+
+<!-- TODO end -->
 
 ## Bicep deployment stages
 
