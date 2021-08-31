@@ -26,7 +26,11 @@ Deploy the SD Card server if you have an Avnet Azure Sphere **Rev 2** Starter Ki
 
 ### Step 1: Insert Micro SD Card
 
-Ensure you have inserted a SD Card into the MikroE microSD Card Click.
+You will need an Micro SD Card.
+
+1. The Micro SD Card capacity must be at least 10 Megabytes.
+1. The existing contents of the SD Card will be destroyed the formatting process.
+1. Inserted a SD Card into the MikroE microSD Card Click.
 
 ### Step 2: Deploy the SD Card server
 

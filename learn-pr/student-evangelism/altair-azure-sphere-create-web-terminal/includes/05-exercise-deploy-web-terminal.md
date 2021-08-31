@@ -137,6 +137,7 @@ When authenticated, connect to the Altair emulator. You'll need the name of your
 1. Copy the device name to the clipboard.
 1. Navigate to the Web Terminal tab in your web browser.
 1. Paste the device name and select **Connect**.
+1. Add the Altair Web Terminal page to your web browser favorites.
 
 The MQTT Broker status message changes to **Connecting...**, when it has successfully connected, the status will change to **Connected**.
 
