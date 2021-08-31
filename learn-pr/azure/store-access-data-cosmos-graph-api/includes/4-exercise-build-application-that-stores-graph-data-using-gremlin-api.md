@@ -301,7 +301,7 @@ Now you'll create a Node.js application that will allow you to run Gremlin API q
 1. Press <kbd>Ctrl+S</kbd> to save the file.
 
 
-3. , and then press <kbd>Ctrl+Q</kbd> to exit the editor.
+3. Press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 ::: zone-end
 
