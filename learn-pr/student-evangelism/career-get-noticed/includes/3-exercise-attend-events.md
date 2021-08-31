@@ -4,9 +4,9 @@ The first step in networking is to attend functions and events within your spher
 
 Start by discovering where to meet people. Within the broad area of technology, you'll find numerous user groups, organizations whose members share a common interest in specific technologies. For example, you might want to join a group on JavaScript or Vue.js. 
 
-Next, you'll join as a member of one or more user groups. By becoming a member, you'll be notified about upcoming group events that you can sign up to participate in.
+Next, you'll join as a member of one or more user groups. By becoming a member, you'll be notified about upcoming group events that you can sign up for and participate in.
 
-To find meetup groups in your area, go to [http://www.meetup.com](http://www.meetup.com), and join at least a couple of groups that match your interests.
+To find groups in your area, go to [Meetup](http://www.meetup.com), and join one or more groups that match your interests.
 
 ## Go to an event
 
@@ -20,7 +20,7 @@ To get started, complete this exercise:
 
 1. Sign up for an event. An example might be a JavaScript event on the 15th of the month.
    
-   An event usually consists of one or more speakers or activities, with one or more breaks during that time. Now is your chance to meet people of interest.
+   An event usually consists of one or more speakers or activities, and you'll usually get one or more breaks during that time. Those breaks are your chance to meet people of interest.
 
 1. Set a goal to meet and converse with at least three different people at the event.
 
@@ -29,16 +29,16 @@ To get started, complete this exercise:
 
 ## What to say to the people you meet
 
-So now you're signed up for an event, armed with a plan to speak to many people. But what do you say? If you're like most people, it's not easy to simply go up and talk to someone you've never met. 
+So now you're signed up for an event, armed with a plan to speak to many people. But what do you say? If you're like most people, it can be a challenge to simply go up and talk to someone you've never met. 
 
-Here's a short list of questions you can use:
+Here's a simple starter list of questions you can use:
 
 - What did you think of tonight's session or speaker?
-- What did you find interesting/exciting/surprising about tonight's talk?
+- What did you find interesting/exciting/surprising/useful about tonight's talk?
 - How long have you used/been interested in this technology?
 - Where do you work/what's your role there/for how long/what's interesting about it?
 
-It's a good idea to write down in advance any questions you think you might have for the people you'll be meeting. Remember, the important thing about networking is to develop new connections.
+It's a good idea to write down in advance any questions you think you might have for the people you'll be meeting. Remember, the important thing about networking is to develop new connections&mdash;and to practice your new networking skills!
 
 Be transparent. At some point in your conversations, whether you're looking for a job, a consultancy contract, or an internship, say so. Your openness could open up some exciting opportunities. 
 
