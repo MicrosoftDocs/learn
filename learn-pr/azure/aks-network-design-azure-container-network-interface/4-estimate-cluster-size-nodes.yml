@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-estimating-cluster-size-nodes.md)]
+  [!include[](includes/4-estimate-cluster-size-nodes.md)]

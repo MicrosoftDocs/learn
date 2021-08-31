@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-sizing-the-network.md)]
+  [!include[](includes/5-size-the-network.md)]
