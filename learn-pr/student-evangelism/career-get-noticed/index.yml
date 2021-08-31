@@ -2,21 +2,19 @@
 uid: learn.career-get-noticed
 metadata:
   title: How to get noticed
-  description: Does it feel like it's hopeless to land a job or internship? Learn
-    how to stand out by networking effectively and writing a great resume.
+  description: Does it feel like it's hopeless to land a job or internship? Learn how to stand out to prospective employers by networking effectively and writing a great resume.
   ms.date: 08/19/2021
   author: gcordido
   ms.author: gcordido
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: How to get noticed
-summary: Getting noticed is the first step to land a job in tech. Learn tips and
-  strategies to get noticed by a prospective employer.
+summary: Getting noticed by prospective employers is the first step toward landing a job in tech. This module offers plenty of helpful tips and strategies.
 abstract: |
   In this module, you will: 
-  - Learn the basics of networking and some scenarios to start in
-  - Determine the value of each of your past-experiences and define their uses as you look for a job
-  - Build an eye-catching resume that not only showcases your skills, but you as a person
+  - Learn the basics of networking and some scenarios for getting started.
+  - Determine the value of each of your past experiences and describe their relevance to the job you're seeking.
+  - Build an eye-catching resume that showcases both your skills and you as a person.
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 hidden: true
