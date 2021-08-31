@@ -39,8 +39,8 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
     | Content type |Select application/json from dropdown list. |
     | Which events would you like to trigger this webhook?| Let me select individual events. In the event list that appears, scroll down and select the **Wiki** checkbox. Make sure no other checkboxes are selected. |
     | Active  | Checked.|
-    
-        > [!NOTE]
+
+    > [!TIP]
     > Copy the function URL from the Azure HttpTrigger pane by selecting **Get function Url** from the command bar. Your URL looks similar to: `https://<your-functionapp-name>.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ==` 
     
 1. Select **Add webhook**. The **Webhooks** page appears.
