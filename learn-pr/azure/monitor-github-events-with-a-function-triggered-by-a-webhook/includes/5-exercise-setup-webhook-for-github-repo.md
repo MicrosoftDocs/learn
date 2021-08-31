@@ -41,8 +41,7 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
     | Active  | Checked.|
     
         > [!NOTE]
-    > Your URL looks similar to the text below. Copy from your HttpTrigger pane in Azure by selecting **Get function Url** from the command bar.
-    > `https://<your-functionapp-name>.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ==` 
+    > Copy the function URL from the Azure HttpTrigger pane by selecting **Get function Url** from the command bar. Your URL looks similar to: `https://<your-functionapp-name>.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ==` 
     
 1. Select **Add webhook**. The **Webhooks** page appears.
 
