@@ -23,6 +23,9 @@ You use the `az deployment group what-if` command from within your pipeline defi
 
 The what-if operation doesn't make any changes to your environment. Instead, it describes the resources that will get created, the resource properties that will be updated, and the resources that will be deleted.
 
+> [!TIP]
+> To learn more about the what-if command, see the Microsoft Learn module [Preview Azure deployment changes by using what-if](/learn/modules/arm-template-whatif/).
+
 After you see the output of the what-if operation, you can determine whether to continue on to the actual deployment. This typically involves a human reviewing the output from the what-if command, and then making a decision about whether the changes identified are reasonable.
 
 > [!NOTE]
