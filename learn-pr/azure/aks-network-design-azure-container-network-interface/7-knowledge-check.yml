@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.aks-network-design-with-azure-cni.7-knowledge-check  
+uid: learn.aks-network-design-with-azure-cni.7-knowledge-check
 title: Knowledge Check
 metadata:
-  unitType: knowledge_check  
+  unitType: knowledge_check
   title: Knowledge Check
   description: Review what you've learned in this module and check your understanding.
-  ms.date: 8/20/2021  
-  author: markwme  
-  ms.author: mawhitby  
+  ms.date: 8/20/2021
+  author: markwme
+  ms.author: mawhitby
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/7-knowledge-check.md)]

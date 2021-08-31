@@ -7,6 +7,7 @@ metadata:
   author: markwme
   ms.author: mawhitby
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Exercise - Deploy an Azure Kubernetes Service cluster with Azure CNI
 durationInMinutes: 15
 interactive: bash
