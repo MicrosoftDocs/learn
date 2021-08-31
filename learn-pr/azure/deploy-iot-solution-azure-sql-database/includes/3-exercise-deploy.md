@@ -180,7 +180,7 @@ You have now deployed and configured the appropriate schema for the scenario.
 
 ## Deploy the Azure Function code with GitHub Actions
 
-1. Navigate to the *Overview* pane of your Azure Functions app in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
+1. In a separate browser window, navigate to the *Overview* pane of your Azure Functions app in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
 
 1. Select **Get publish profile** to download the Azure Function publish profile. The publish profile acts as a connection string to the function.
 
@@ -211,6 +211,9 @@ You have now deployed and configured the appropriate schema for the scenario.
 1. At the bottom of the page, select **Commit changes** to kick off the GitHub Action that will deploy the code sample to your Azure Functions app.
 
 1. Confirm the action completes successfully (takes about 2-3 minutes) by selecting **Actions** near the top of the window and reviewing the progress and completion.
+
+> [!TIP]
+> While it is processing, you can continue to the next section.
 
 1. If you face any errors, confirm you have included the right connection strings in the right places in the previous section of this exercise.
 
@@ -255,16 +258,8 @@ You have now deployed and configured the appropriate schema for the scenario.
 1. Replace <IoTHubConnectionEndpoint> with your IoT Hub connection string in the code below. Then, run it in the Azure Cloud Shell to start generating messages on the provisioned devices. You should see the results in the window appearing rapidly.
 
     ```bash
-    sudo docker run -it -e "IotHubConnectionString=<IoTHubConnectionString>" -e Template="{ \"deviceId\": \"$.DeviceId\", \"temp\": $.Temp, \"Ticks\": $.Ticks, \"Counter\": $.Counter, \"time\": \"$.Time\", \"engine\": \"$.Engine\" }" -e Variables="[{name: \"Temp\", \"random\": true, \"max\": 25, \"min\": 23}, {\"name\":\"Counter\", \"min\":100}, {name:\"Engine\", values: [\"on\", \"off\"]}]" -e MessageCount=0 -e DeviceCount=1000 -e Interval=100  mcr.microsoft.com/oss/azure-samples/azureiot-telemetrysimulator:latest
+    sudo docker run -it -e "IotHubConnectionString=<IoTHubConnectionString>" -e Template="{ \"deviceId\": \"$.DeviceId\", \"temp\": $.Temp, \"Ticks\": $.Ticks, \"Counter\": $.Counter, \"time\": \"$.Time\", \"engine\": \"$.Engine\" }" -e Variables="[{name: \"Temp\", \"random\": true, \"max\": 90, \"min\": 80}, {\"name\":\"Counter\", \"min\":100}, {name:\"Engine\", values: [\"on\", \"off\"]}]" -e MessageCount=0 -e DeviceCount=1000 -e Interval=100  mcr.microsoft.com/oss/azure-samples/azureiot-telemetrysimulator:latest
     ```
-
-1. To check how the simulation is going, in a different window navigate to your Azure Function App in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
-
-1. On the left-hand menu, under *Functions* select **Functions**.
-
-1. Select **iot_workload**. If it does not appear, refresh your browser.
-
-1. In the *Overview* tab, you should be able to see a high and varying number of successful execution counts. This information means that the Azure Function App is being triggered by the devices to push data into Azure SQL Database.
 
 1. To confirm everything is connected properly, navigate to your Azure SQL Database called **iot-db** in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
 
@@ -278,7 +273,15 @@ You have now deployed and configured the appropriate schema for the scenario.
     SELECT TOP(1000) * FROM dbo.events;
     ```
 
+1. To check the Azure Function App is processing events, in a different window navigate to your Azure Function App in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
+
+1. On the left-hand menu, under *Functions* select **Functions**.
+
+1. Select **iot_workload**. If it does not appear, refresh your browser.
+
+1. In the *Overview* tab, you should be able to see a high and varying number of successful execution counts. This information means that the Azure Function App is being triggered by the devices to push data into Azure SQL Database.
+
 > [!TIP]
-> There is a slight delay as the simulation starts up. If you don't see any data, wait 1-2 minutes and then try running the query above again. If you still don't see any data, you should check the configurations you added for your Azure Function. Most likely, something is wrong with one of your connection strings.
+> There is a slight delay in telemetry reporting for Azure Functions. If you don't see any data, wait a few minutes and refresh the page. If you still don't see any requests (or data in Azure SQL Database), you should check the configurations you added for your Azure Function. Most likely, something is wrong with one of your connection strings.
 
 You have now successfully deployed the template and configured the resources. You are now simulating activity on 1,000 devices and using Azure Functions to ingest the data into Azure SQL Database. Let this continue to run so the simulation continues for the rest of the module.

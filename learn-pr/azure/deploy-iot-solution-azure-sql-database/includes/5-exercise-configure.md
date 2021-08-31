@@ -87,7 +87,7 @@ In future scenarios, and also for the distribution scenario, you will want to mo
     GO
     ```
 
-1. Run the following T-SQL to see a typical time series query.
+1. Run the following T-SQL to see a typical time series query through the view. Note that these values are not the raw data but aggregated data per time slot.
 
     ```sql
     SELECT * 
@@ -104,3 +104,8 @@ In future scenarios, and also for the distribution scenario, you will want to mo
     ORDER BY end_time DESC;
     GO
     ```
+
+You've now seen how to configure, monitor, and query Azure SQL Database in IoT scenarios like the distributor scenario.
+
+> [!TIP]
+> Want to go deeper? you can download this **[Power BI file](https://github.com/Azure-Samples/azure-sql-iot/blob/main/power_bi/IoTDashboard.pbix)** and update the connection settings so each query points to your database. Refreshing the dashboard will then give you deeper insights into latency, trends, and resource consumption.
