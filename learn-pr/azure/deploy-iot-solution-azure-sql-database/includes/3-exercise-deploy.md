@@ -249,13 +249,13 @@ You have now deployed and configured the appropriate schema for the scenario.
     sudo apt install -y docker-ce    
     ```
 
-1. Replace <IoTHubConnectionEndpoint> with your IoT Hub connection string in the code below. Then, run it in the Azure Cloud Shell to provision the simulated devices.
+1. Replace `<IoTHubConnectionString>` with your IoT Hub connection string in the code below. Then, run it in the Azure Cloud Shell to provision the simulated devices.
 
     ```bash
     sudo docker run -it -e "IotHubConnectionString=<IoTHubConnectionString>" -e DeviceCount=1000 mcr.microsoft.com/oss/azure-samples/azureiot-simulatordeviceprovisioning:latest
     ```
 
-1. Replace <IoTHubConnectionEndpoint> with your IoT Hub connection string in the code below. Then, run it in the Azure Cloud Shell to start generating messages on the provisioned devices. You should see the results in the window appearing rapidly.
+1. Replace `<IoTHubConnectionString>` with your IoT Hub connection string in the code below. Then, run it in the Azure Cloud Shell to start generating messages on the provisioned devices. You should see the results in the window appearing rapidly.
 
     ```bash
     sudo docker run -it -e "IotHubConnectionString=<IoTHubConnectionString>" -e Template="{ \"deviceId\": \"$.DeviceId\", \"temp\": $.Temp, \"Ticks\": $.Ticks, \"Counter\": $.Counter, \"time\": \"$.Time\", \"engine\": \"$.Engine\" }" -e Variables="[{name: \"Temp\", \"random\": true, \"max\": 90, \"min\": 80}, {\"name\":\"Counter\", \"min\":100}, {name:\"Engine\", values: [\"on\", \"off\"]}]" -e MessageCount=0 -e DeviceCount=1000 -e Interval=100  mcr.microsoft.com/oss/azure-samples/azureiot-telemetrysimulator:latest
