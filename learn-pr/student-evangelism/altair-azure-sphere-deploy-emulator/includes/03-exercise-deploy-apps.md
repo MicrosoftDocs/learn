@@ -12,13 +12,13 @@ You will deploy prebuilt real-time packages to the Azure Sphere.
 
 If you have an Avnet Azure Sphere Starter Kit and the MikroE microSD Click, then deploy the SD Card service.
 
+You will need a Micro SD Card.
+
+1. The Micro SD Card capacity must be at least 10 Megabytes.
+1. The existing contents of the SD Card will be destroyed the formatting process.
+1. Inserted a SD Card into the MikroE microSD Card Click.
+
 The following steps prepare the Micro SD Card for use with the Altair emulator. Drive A: is formatted to boot CP/M, and also includes utilities plus compilers. Drive B: is used to save your files and is formatted to be blank.
-
-1. Insert Micro SD Card
-
-    - Ensure you have inserted an SD Card into the MikroE microSD Card Click.
-
-1. Deploy the SD Card service
 
     For the Avnet Azure Sphere Starter Kit Rev 1, deploy:
 

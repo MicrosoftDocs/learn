@@ -24,7 +24,7 @@ From the Device menu bar, select **Manage device**, then **Rename**.
 
 ### Customize properties
 
-From the Device menu bar, select **Edit template**.
+From the Device menu bar, select **Manage template**, then select **Edit template**.
 
 1. Select **Customize**, and expand the **Desired temperature** property. Update the property using the information from the table below and select **Save**.
 
@@ -56,8 +56,9 @@ From the Device menu bar, select **Edit template**.
     * Desired temperature
     * LED Brightness
     * Local serial output
-1. Select **Add section**
-1. Select **Save**
+1. Select **Add section**.
+1. Select **Save**.
+1. Select **Back**.
 
     :::image type="content" source="../media/iot-central-template-properties.png" alt-text="Screenshot that shows setting properties.":::
     
@@ -79,10 +80,12 @@ From the Device menu bar, select **Edit template**.
     
 1. Select **Update**.
 1. Select **Save**.
+1. 1. Select **Back**.
 
 ### Publish template
 
 1. Finally, select **Publish** to publish the template into the IoT Central application.
+1. Select **Publish**.
 
     :::image type="content" source="../media/iot-central-template-publish.png" alt-text="Screenshot that shows selecting the Publish button.":::
 
@@ -96,23 +99,24 @@ From the Device menu bar, select **Edit template**.
 
 ## Update the Device properties tab
 
-Set the initial state for the Altair emulator:
+1. Select **Properties** tab.
+1. Set the initial state for the Altair emulator:
 
-1. CPU state: Running
-1. Desired Temperature (Celsius): 30
-1. LED Brightness (Avnet with LED Click): 2
-1. Local serial output: Disabled
-1. The Channel ID is for information only.
+    * CPU state: **Running**
+    * Desired Temperature (Celsius): **30**
+    * LED Brightness (Avnet with LED Click): **2**
+    * Local serial output: **Disabled**
+    * The Channel ID is for information only.
 
 ## Create an IoT Central API Token
 
 The Web Terminal uses the IoT Central device name to connect to the Altair emulator. The Web Terminal needs an IoT Central API Token to access and set the Channel ID property for the device name. The Web Terminal and the Altair emulator use the Channel ID to form unique MQTT topics. Messages flow between the Altair emulator and the Web Terminal using these MQTT topics.
 
 1. From the IoT Central sidebar menu, navigate to **Administration**, then **API Token**.
-1. Select **Generate token**.
+1. Select **+ New**.
 1. Name your token **Altair-Web-Terminal**.
 1. Select **Generate**
-1. **Copy** the generated token to notepad as you'll need for the next step.
+1. **Copy** the generated token to Notepad as you'll need for the next step.
 
     :::image type="content" source="../media/iot-central-api-token-generate.png" alt-text="Screenshot that shows the API Tokens tab.":::
 
@@ -120,7 +124,7 @@ The Web Terminal uses the IoT Central device name to connect to the Altair emula
 
 You need the IoT Central URL for the Altair Web Terminal.
 
-1. From your browser address bar, **copy** the base address of your IoT Central application to notepad as you'll need for the next step.
+1. From your browser address bar, **copy** the base address of your IoT Central application to Notepad as you'll need for the next step.
 1. Ensure you **remove** the trailing '**/**' from the URL.
 
     :::image type="content" source="../media/iot-central-application-url.png" alt-text="Screenshot that shows how to copy the IoT Central URL.":::
