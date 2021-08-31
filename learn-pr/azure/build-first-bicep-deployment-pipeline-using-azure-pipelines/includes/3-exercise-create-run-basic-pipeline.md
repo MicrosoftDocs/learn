@@ -28,28 +28,17 @@ In this exercise, you'll:
 
 1. Select **Create project**.
 
-1. On the project page, in the left menu, select **Repos**.
+## Clone the repository
+
+1. On the left menu, select **Repos**.
 
     :::image type="content" source="../../includes/media/azure-devops-repos-menu.png" alt-text="Screenshot of Azure DevOps that shows the menu, with the Repos menu item highlighted.":::
 
-## Generate a Git password (macOS)
+1. Select **Clone to your computer**.
 
-When you work with Azure Repos in Visual Studio Code on macOS, you use a special password that's different from the password you use to sign in.
+1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the username and password displayed to somewhere safe.
 
-> [!NOTE]
-> If you're using Windows, skip to the next section, *Clone the repository*.
-
-1. On a computer running macOS, in Azure DevOps, select **Generate Git credentials**.
-
-    Azure Repos creates a random password for you to use.
-
-1. Copy the **Password** value somewhere safe. You'll use the password in the next section.
-
-## Clone the repository
-
-In Visual Studio Code, clone your repository.
-
-1. In **Clone to your computer**, select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
+1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
     :::image type="content" source="../media/3-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the Clone in VS Code button highlighted.":::
 
@@ -59,7 +48,7 @@ In Visual Studio Code, clone your repository.
 
     If you're using Windows, enter the same credentials you used to sign in to Azure DevOps earlier in this exercise.
 
-    If you're using macOS, paste the password that you generated earlier in this exercise.
+    If you're using macOS, enter the Git username and password that you generated a few moments ago.
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
 
