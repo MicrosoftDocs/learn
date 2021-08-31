@@ -1,24 +1,22 @@
-## Reflection
+In this exercise, you will look at some sitatuations and determine whether something is in your comfort zone.
+
+## Review the following tasks
 
 Review the following prompts and for each one, decide whether it’s in your comfort zone, outside your comfort zone, or if you feel neutral about it:
 
-- Onboarding to a new team or supervisor
+|Task  |In  |Outside  | Neutral |
+|---------|---------|---------|--|
+|Onboarding to a new team or supervisor     |         |         | |
+|Pitching an idea to a group     |         |         | |
+|Trying something new for the first time     |         |         | |
+|Taking a class where all your classmates seem to have been born with CS knowledge     |         |         | |
+|Creating a website     |         |         | |
+|Answering a question in class     |         |         | |
+|Introducing yourself to a new group     |         |         | |
+|Pitching your idea at a hackathon     |         |         | |
 
-- Pitching an idea to a group
-
-- Trying something new for the first time
-
-- Taking a class where all your classmates seem to have been born with CS knowledge
-
-- Creating a website
-
-- Answering a question in class
-
-- Introducing yourself to a new group
-
-- Pitching your idea at a hackathon
-
-Spend a few minutes thinking about your answers to the following questions:
+> [!NOTE]
+> Spend a few minutes thinking about your answers to the following questions:
 
 - What was interesting or surprising to you about the prompts?
 

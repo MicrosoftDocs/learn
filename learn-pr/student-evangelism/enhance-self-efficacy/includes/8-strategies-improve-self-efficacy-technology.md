@@ -1,8 +1,12 @@
 You now hopefully have a good understanding of self-efficacy and the strategies you can use to improve it. You’ve been making good progress with the presentation script with regular practice. As the competition nears, you want to reflect on your self-efficacy and identify areas you need to work on. In this unit, you’ll reflect on the strategies you’ll use to improve your self-efficacy when you’re faced with a stressful situation in computer science.
 
+## Strategies to improve self efficacy
+
 :::image type="content" source="../media/6-self-efficacy.png" alt-text="The steps to improve self-efficacy, such as improving self-talk, practicing, strategizing, consulting others, and constantly improving." border="false":::
 
 Consider this scenario as you prepare for the coding competition. One of your teammates is having trouble overcoming their anxiety. They’ve been studying the presentation script but haven’t been making much progress. The competition is next week, and the rest of the team is doing well and excited to meet the judges. You’re rehearsing with the team and your anxious teammates asks “How about I sit out the presentation? I’ll forego my lines and take on some extra code. You’ll probably do better at the presentation without me anyway. Public speaking is just not my thing.”
+
+### Analyze the situation
 
 After reviewing this situation, reflect on the following questions and note your answers:
 

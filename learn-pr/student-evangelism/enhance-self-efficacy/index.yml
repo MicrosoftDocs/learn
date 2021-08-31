@@ -3,17 +3,17 @@ uid: learn.student-evangelism.enhance-self-efficacy
 metadata:
   title: Enhance your self-efficacy
   description: Learn how to enhance your self-efficacy.
-  ms.date: 05/13/2021
-  author: interurban
+  ms.date: 08/27/2021
+  author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Enhance your self-efficacy
-summary: Enhance your self-efficacy.
+summary: Develop a mindset that will set you up for success in technology.
 abstract: |
-  In this module, you will:
+  By the end of this module you will be able to:
   - Determine how self-efficacy influences your learning and growth in tech.
-  - Distinguish between self-confidence and self-efficacy.
+  - Distinguish between self-confidence and self-efficacy
   - Connect self-efficacy to mindset.
 prerequisites: >
   - An open mind and a willingness to learn about the expectations and

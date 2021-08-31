@@ -1,8 +1,14 @@
 The team is learning more about self-efficacy and using that knowledge to start planning a strategy to create and polish their presentation. You know that you need to approach this task with a positive mindset and self-dialogue. In this unit, you’ll explore the relationship between your efficacy levels and mindset.
 
+## Low self-efficacy
+
 Low self-efficacy often occurs when you start work on a new task, experience a change in environment, or are faced with a challenge. If you’re new to something and you’re surrounded by others with more experience, it can be easy to tell yourself that you’re not as good as them. You start comparing yourself to others negatively, and this doesn’t help your mindset. You might feel hesitant to ask questions and learn, but this hesitancy will stop you from progressing.
 
 During such moments, remember that everyone has different experiences, knowledge, and skillsets, especially in tech. These differences are not apparent, but they’re important to consider. By reminding yourself of these differences, you can stop comparing yourself to others in a less than favorable light. You can collaborate with them in a positive manner, learn from each other, and become better at different tasks.
+
+To learn more about mindset and how you can cultivate a growth mindset, review the following video, which is approximately three minutes in length.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OFD7]
 
 > [!NOTE]
 > Remember from the video: You can’t know someone else’s prior experience offhand. Social comparisons can make you unfairly question your potential contributions.
@@ -33,9 +39,7 @@ Your mindset or your frame of mind is the set of beliefs and thought processes t
 > [!NOTE]
 > Research has demonstrated that having a growth mindset toward learning can improve resilience and the ability to succeed. A growth mindset is reflected through a passion for learning, not a hunger for approval. People with a growth mindset don’t think of themselves as failing, but as learning.
 
-To learn more about mindset and how you can cultivate a growth mindset, review the following video, which is approximately three minutes in length.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OFD7]
 
 ## Connect self-efficacy to mindset
 

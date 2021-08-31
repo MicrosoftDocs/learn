@@ -1,35 +1,28 @@
-## Reflection
+In this exercise, you'll look through a set of code samples. The idea is to evaluate your self-efficacy and compare it to your self-confidence.
 
-Review the following snippets of code. There are five differences between them. Spend a few minutes trying to spot these differences, and then answer the questions that follow.
+Review the following snippets of code. There are differences between them. Spend a few minutes trying to spot these differences, and then answer the questions that follow.
 
-### Snippet 1
+## Snippet 1
 
-```
-NullPointer
-
+```java
 String[] array = new String[1]; array[0] = “hello”; System.out.println(array[0].length());
-
-ArrayIndexOutOfBounds
 
 int[] array = new int[5]; array[0] = 1;
 
 for ( int i = 1; i < array.length; i++ ) array[i] = array[i-1]\*2;
 ```
 
-### Snippet 2
+## Snippet 2
 
-```NullPointer
-
+```java
 String() array = new String[1]; array[1] = “hello”; System.out.println(array[0].length[]);
-
-ArrayIndexOutOfBounds
 
 int[] array = new int[5]; array[1] = 1;
 
 for ( int i = 1; i < array\*length; i++ ) array[i] = array[i-1]\*2;
 ```
 
-### Questions
+## Evaluate snippets
 
 - What is your level of self-efficacy in creating and debugging code?
 

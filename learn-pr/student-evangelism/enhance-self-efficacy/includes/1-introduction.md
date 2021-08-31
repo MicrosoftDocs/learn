@@ -10,17 +10,11 @@ By the end of this module, you’ll be able to identify signs of low self-effica
 
 ## Learning objectives
 
-After completing this module, you should know more about:
+By the end of this module you will be able to:
 
-- Self-efficacy and its role in computer science.
-
-- How self-efficacy influences your learning and growth in tech.
-
-- The difference between self-confidence and self-efficacy.
-
-- What influences self-efficacy.
-
-- Connecting self-efficacy to mindset.
+- Determine how self-efficacy influences your learning and growth in tech.
+- Distinguish between self-confidence and self-efficacy
+- Connect self-efficacy to mindset.
 
 ## Prerequisites
 
