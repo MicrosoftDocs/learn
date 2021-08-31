@@ -189,4 +189,7 @@ Next, create a service connection in Azure Pipelines. This automatically creates
 
    :::image type="content" source="../media/4-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the details completed and the Next button highlighted.":::
 
+   > [!TIP]
+   > For simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.
+
 1. Select **Save**.
