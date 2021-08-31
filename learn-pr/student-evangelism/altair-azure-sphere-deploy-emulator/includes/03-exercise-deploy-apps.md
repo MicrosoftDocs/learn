@@ -20,13 +20,13 @@ You will need a Micro SD Card.
 
 The following steps prepare the Micro SD Card for use with the Altair emulator. Drive A: is formatted to boot CP/M, and also includes utilities plus compilers. Drive B: is used to save your files and is formatted to be blank.
 
-    For the Avnet Azure Sphere Starter Kit Rev 1, deploy:
+- For the Avnet Azure Sphere Starter Kit Rev 1, deploy:
 
     ```bash
     azsphere device sideload deploy --image-package AltairRT_sd_card_service_avnet_rev_1.imagepackage
     ```
 
-    For the Avnet Azure Sphere Starter Kit Rev 2, deploy:
+- For the Avnet Azure Sphere Starter Kit Rev 2, deploy:
 
     ```bash
     azsphere device sideload deploy --image-package AltairRT_sd_card_service_avnet_rev_2.imagepackage
