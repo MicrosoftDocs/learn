@@ -40,7 +40,7 @@ Next, try to think about impact and internally grade your notes by it. Your expe
 
 ## Create the resume
 
-Now you've laid some important ground work, you've practiced describing your experiences, arrange them to adjust to various positions, now what? Now it's time to write it all down using your favorite word processing program, for example Word. It's recommended that you find a resume template but all you really need is a program capable of 
+Now you've laid some important ground work, you've practiced describing your experiences, arrange them to adjust to various positions, now what? Now it's time to write it all down using your favorite word processing program, for example Word. It's recommended that you find a resume template but all you really need is a program capable of producing layout and adding things like headers. 
 
 1. Select and download, a resume template from a web page of your choice. Once you've made your selection, start transcribing the information from the sticky notes into the template.
 

@@ -1,4 +1,4 @@
-Recall that you build Logic Apps from triggers and actions. A trigger starts your app and then actions do the rest of the work. The social-media monitor uses actions to check if a tweet is positive or negative and then inserts a row into a database or sends an email.
+Recall that you build Logic Apps from triggers and actions. A trigger starts your app and then actions do the rest of the work. The social media monitor uses actions to check if a tweet is positive or negative and then inserts a row into a database or sends an email.
 
 In this unit, we'll do a quick survey of the types of actions. Then we'll discuss how to use actions in your app by passing parameters and processing returned values. Finally, we'll see how to use the Logic Apps Designer to add an action and configure its settings.
 
@@ -28,7 +28,7 @@ Let's look at an example. If you've used Twitter for a while, you might be famil
 https://twitter.com/[username]/status/[id]
 ```
 
-This type of link could be useful in the social-media app. You might want to store it in your database so you can access the tweet again later. Or you might want to include it in an email notification so your coworkers can see the tweet in its original form.
+This type of link could be useful in the social media app. You might want to store it in your database so you can access the tweet again later. Or you might want to include it in an email notification so your coworkers can see the tweet in its original form.
 
 The data you get from the Twitter trigger does not include this complete URL. However, it does contain the username in the **TweetedBy** field and the ID in the **TweetId** field. You can use the **Compose** data operation to put the pieces together into the URL. Conceptually, the operation would be:
 
@@ -38,7 +38,7 @@ Compose: "https://twitter.com/" + [TweetedBy] + "/status/" + [TweetId]
 
 ### Alter control flow
 
-The *control action* feature of Logic Apps lets you add control constructs like conditional statements and loops to your app. The social-media monitor app will use a control action to branch based on whether the tweet sentiment is positive or negative. We'll see how this works and discuss all the control actions later in this module.
+The *control action* feature of Logic Apps lets you add control constructs like conditional statements and loops to your app. The social media monitor app will use a control action to branch based on whether the tweet sentiment is positive or negative. We'll see how this works and discuss all the control actions later in this module.
 
 ## Action parameters and return values
 
@@ -46,7 +46,7 @@ You can think of actions as function calls that have parameters and return value
 
 Action *parameters* let you pass values to the operation. The Cognitive Services **Detect-sentiment** action has a parameter called **Text** that represents the string you want to analyze. It also has an optional parameter named **Language** that lets you provide a hint about the language of the **Text**.
 
-Action *return values* are the results of the operation. The **Detect sentiment** action returns a numeric score between 0 and 1. Scores close to 1 indicate positive sentiment, while scores close to 0 indicate negative sentiment. The following illustration summarizes the data flow for the **Detect sentiment** action as used by the social-media monitor app.
+Action *return values* are the results of the operation. The **Detect sentiment** action returns a numeric score between 0 and 1. Scores close to 1 indicate positive sentiment, while scores close to 0 indicate negative sentiment. The following illustration summarizes the data flow for the **Detect sentiment** action as used by the social media monitor app.
 
 ![An illustration showing a logic app using the **Detect sentiment** action to invoke the Text Analytics service. The app passes the tweet text to the service and gets back a numeric sentiment score.](../media/action-inputs-and-outputs.png)
 
@@ -66,7 +66,7 @@ The first step is to select the **Add an action** option at the point in your ap
 
 ![A screenshot showing the Logic Apps Designer GUI to choose an action to add to your app. The user can select an action from a list or use a search feature to locate the one they need.](../media/choose-an-action-designer.png)
 
-After you add an action, you use the designer to set configuration parameters. Again, the designer provides a GUI for you to enter the values. Static content can be added manually. For dynamic content, the designer can pop up a selection GUI that shows you data that was returned by previous steps. You choose the field you need, and the designer automatically populates that entry in your action. The following image shows the dynamic tweet data from the social-media monitor app displayed in the designer.
+After you add an action, you use the designer to set configuration parameters. Again, the designer provides a GUI for you to enter the values. Static content can be added manually. For dynamic content, the designer can pop up a selection GUI that shows you data that was returned by previous steps. You choose the field you need, and the designer automatically populates that entry in your action. The following image shows the dynamic tweet data from the social media monitor app displayed in the designer.
 
 ![A screenshot showing the Logic Apps Designer GUI for dynamic content. The example shows tweet data such as **Created at**, **Description**, and **Location** displayed in a list. The user can select an item from the list to include it in their app.](../media/dynamic-content-designer.png)
 

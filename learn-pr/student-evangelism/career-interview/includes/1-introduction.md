@@ -14,7 +14,7 @@ As an aspiring software developer, you will encounter interviews that not only t
 
 Remember, the interview process goes both ways.  While the company is assessing you through the interview process, you should also use this time to evaluate the company culture and whether the company or team is the right place for you and your career goals.
 
-## What will you learn
+## What will you learn?
 
 By the end of this module, you will be able to:
 
@@ -22,6 +22,6 @@ By the end of this module, you will be able to:
 - Develop a plan to practice for the interviews
 - Compose a follow-up email
 
-## What is the main goal
+## What is the main goal?
 
 This module is looking to provide you with strategies to best prepare for and carry out technical and non-technical interviews to increase your chances of landing an intern position at a tech company.
