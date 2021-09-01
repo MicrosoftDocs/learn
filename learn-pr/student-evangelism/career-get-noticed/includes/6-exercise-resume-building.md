@@ -46,4 +46,15 @@ For each of these experiences, consider your impact, and internally rank or grad
    >
    > University IT Support
 
-   The first two experiences are all about software development, and having actual code to show for them makes this ranking appropriate. However, depending on the nature of your job, an IT support job can be a great experience to highlight because it demonstrates that you've put service-mindedness, empathy, and other skills to the test.
+   The first two experiences are all about software development, and having actual code to show for them makes this ranking appropriate. However, depending on the nature of the role you're applying for, an IT support job can be a great experience to highlight because it demonstrates that you've put service-mindedness, empathy, and other skills to the test.
+
+## Create the resume
+
+Now that you've practiced describing your experiences and prioritized them according to the roles you might be seeking, what's next? 
+
+It's time to write it all down by using Microsoft Word or another favorite word-processing program. We recommended that you find a resume template, but all you really need is a program that's capable of producing a layout, formatting type, and adding section headings. 
+
+1. Select and download a resume template from a webpage of your choice. For example, go to the Microsoft Office [Premium templates] (https://templates.office.com/en-gb/premium-templates/resumes-and-cover-letters) page.
+1. Transcribe the handwritten information from the sticky notes to the template.
+
+Congratulations, you've organized your experiences and begun crafting an eye-catching resume.

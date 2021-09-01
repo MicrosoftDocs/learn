@@ -65,7 +65,7 @@ A skills section should look similar to the following:
 > | --- | --- | --- |
 > | Intermediate proficiency in Python, C#, Java; beginner proficiency in Swift | Visual Studio, Anaconda, XCode, Azure PowerTools | ASP.NET, Django |
 >
-> If you decide to use a table for one list, use tables for all lists. A consistent approach makes your resume easier to read and tells recruiters that you're thoughtful and well organized.
+> If you decide to use a table for one list, use them for all lists. A consistent approach makes your resume easier to read and tells recruiters that you're thoughtful and well organized.
 
 ## Experience and/or Projects
 

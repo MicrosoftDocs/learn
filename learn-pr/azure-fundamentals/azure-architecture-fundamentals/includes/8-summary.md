@@ -8,10 +8,10 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Build a cloud governance strategy on Azure](/learn/modules/build-cloud-governance-strategy-azure/)
- -  [Azure Resource Manager template documentation](/azure/azure-resource-manager/templates/)
- -  [Describe core Azure architectural components](/learn/modules/azure-architecture-fundamentals/)
- -  [Control and organize Azure resources with Azure Resource Manager](/learn/modules/control-and-organize-with-azure-resource-manager/)
- -  [Examine Azure subscriptions](/learn/modules/examine-azure-subscriptions/)
- -  [Regions and availability zones in Azure](/azure/availability-zones/az-overview)
- -  [What are Azure management groups?](/azure/governance/management-groups/overview)
+ -  [Build a cloud governance strategy on Azure](/learn/modules/build-cloud-governance-strategy-azure/?azure-portal=true)
+ -  [Azure Resource Manager template documentation](/azure/azure-resource-manager/templates/?azure-portal=true)
+ -  [Describe core Azure architectural components](/learn/modules/azure-architecture-fundamentals/?azure-portal=true)
+ -  [Control and organize Azure resources with Azure Resource Manager](/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true)
+ -  [Examine Azure subscriptions](/learn/modules/examine-azure-subscriptions/?azure-portal=true)
+ -  [Regions and availability zones in Azure](/azure/availability-zones/az-overview?azure-portal=true)
+ -  [What are Azure management groups?](/azure/governance/management-groups/overview?azure-portal=true)

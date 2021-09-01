@@ -8,7 +8,7 @@ Next, you'll join as a member of one or more user groups. By becoming a member, 
 
 To find groups in your area, go to [Meetup](http://www.meetup.com), and join one or more groups that match your interests.
 
-## Go to an event
+## Choose an event to attend
 
 Most user groups meet with a monthly cadence. By attending events on a regular basis, you'll begin to meet and get to know peers with similar interests. 
 

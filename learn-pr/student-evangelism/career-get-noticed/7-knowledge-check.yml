@@ -14,6 +14,17 @@ content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   questions:
+    - content: You meet a class mate that got the intern position you both applied for and you never heard back from. What could be the reason for this outcome?
+      choices:
+        - content: They had the better resume.
+          isCorrect: false
+          explanation: Most likely not, you both have the same education, and comparable experiences.
+        - content: They went to that hackathon you didn't have time for as you were studying for an exam.
+          isCorrect: true
+          explanation: While at the hackathon, your class mate met with representatives for several companies, including representative from the company you both applied for. That personal impression was enough to make the recruiter remember your class mate and pass their resume to the hiring manager. 
+        - content: Your class mate was just lucky in being picked over you.
+          isCorrect: false
+          explanation: While luck may play a role, you can increase the likelihood of luck by partaking in networking events. If an opportunity presents where you can meet representatives from a company, do what you can to make the most of it.
     - content: How long does a recruiter usually take to initially scan a resume?
       choices:
         - content: Up to 10 seconds
@@ -31,14 +42,13 @@ quiz:
       choices:
         - content: Education, Skills, and Experience and/or Projects
           isCorrect: true
-          explanation: When they're presented in this order, these sections provide the most important
-            information about a student.
+          explanation: When they're presented in this order, these sections provide the most important information about a student.
         - content: Education, Experience, and Honors and Affiliations
           isCorrect: false
           explanation: Although Education and Experience are two key sections, an Honors and Affiliations section is not considered a must. The other two key sections are Skills and Projects.
-        - content: Experience, Projects, Skills, and Volunteering
+        - content: Experience and/or Projects, Skills, and Volunteering
           isCorrect: false
-          explanation: The most important section in any student resume is the Education section. Replace Volunteering with an Education section, present it first, and you'll have the three key sections.
+          explanation: The most important section in any student resume is the Education section. Replace Volunteering with an Education section, list it first, and you'll have the three key sections.
     - content: Which one of the following Experience descriptions best highlights a student's impact?
       choices:
         - content: Improved route accuracy by 15% through the implementation of a real-time updating algorithm, as measured by comparing the number of real routes generated before and after the implementation
