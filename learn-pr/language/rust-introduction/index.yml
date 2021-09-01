@@ -32,7 +32,7 @@ units:
 - learn.language.rust-introduction.2-rust-overview
 - learn.language.rust-introduction.3-rust-features
 - learn.language.rust-introduction.4-rust-playground
-- learn.language.rust-introduction.exercise
+- learn.language.rust-introduction.playground-exercise
 - learn.language.rust-introduction.5-summary
 badge:
   uid: learn.language.rust-introduction.badge
