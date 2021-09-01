@@ -8,7 +8,7 @@ Some of the checks are performed on your Bicep file in isolation, like the check
 
 A valid Bicep template has a greater chance of deploying successfully. You'll get feedback without actually deploying your Bicep template. This is a good practice because, if you deploy a Bicep file that isn't valid, Azure might only deploy or change a subset of the resources described in your template. This could mean that the state of your environment is inconsistent and it might not behave the way you expect.
 
-## Linting Bicep code
+## Building and linting Bicep code
 
 When you deploy a Bicep file, the Bicep tooling first runs some basic validation steps. These steps are the same ones that run when you modify your file using Visual Studio Code. They check that you've used Bicep's language keywords correctly and that you've defined your Azure resources according to the requirements for each resource type.
 
