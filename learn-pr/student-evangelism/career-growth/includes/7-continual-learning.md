@@ -61,7 +61,7 @@ Let's think about some ways to growth-hack your learning process and thereby cul
 
 ### Self-study
 
-As an intern, you will likely run into a ton of new information that you need to learn. Find the best way that you learn, experiment with different modalities, video, text, whatever suites you.
+As an intern, you will likely run into a ton of new information that you need to learn. Find the best way that you learn, experiment with different modalities, video, text, whatever suits you.
 
 As Socrates said, "know thyself". How do you learn? Are you a visual learner? You might benefit from doodling, or drawing sketch notes as you learn a new concept. If you need structured frameworks around your learning, consider bullet-journaling as you read.  
 
