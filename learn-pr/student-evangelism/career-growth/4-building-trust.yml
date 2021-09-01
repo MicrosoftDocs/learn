@@ -10,9 +10,9 @@ metadata:
   ms.author: jelooper 
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
-  [!include[](includes/11-building-trust.md)]
+  [!include[](includes/4-building-trust.md)]
 quiz:
   questions:
   - content: "'Managing Up' includes:"
