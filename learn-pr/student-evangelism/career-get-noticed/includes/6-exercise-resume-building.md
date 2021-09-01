@@ -37,3 +37,13 @@ Next, try to think about impact and internally grade your notes by it. Your expe
    > University IT Support
 
    The two experiences at the top are all about software development and having code to show for makes this arrangement ideal. However, depending on the nature of your job, an IT support job can be a great experience to have as it shows service minded, empathy and many other skills being put to the test.
+
+## Create the resume
+
+Now you've laid some important ground work, you've practiced describing your experiences, arrange them to adjust to various positions, now what? Now it's time to write it all down using your favorite word processing program, for example Word. It's recommended that you find a resume template but all you really need is a program capable of 
+
+1. Select and download, a resume template from a web page of your choice. Once you've made your selection, start transcribing the information from the sticky notes into the template.
+
+   > For example, go to https://templates.office.com/en-gb/premium-templates/resumes-and-cover-letters and select a resume template and download it to your machine. 
+
+Congratulations, you've started to think about how to organize information on various experiences and you ended up with a resume template that you now can keep working on to craft an eye-catching resume.

@@ -30,7 +30,7 @@ An example of a properly written education section would look like this:
 > 
 > Related Coursework: Data Structures, Programming in C#, Algorithms, Web Development I
 
-## Education FAQS
+## Common FAQ's for the Education section
 
 Q: If I have attended multiple colleges, should I include every single one of them in this section?
 
@@ -56,8 +56,14 @@ A skills section should look similar to this text:
 > 
 > Frameworks: ASP.NET, Django
 
-> [!TIP]
-> Make use of columns to reduce the vertical space taken by this section
+
+Make use of columns to reduce the vertical space taken by this section. Here's how an example of how you can divide up this section:
+
+> #### Skills 
+> |Programming languages | Frameworks |
+> |----------------------|--|
+> | Python | Django, Flask |
+> | JavaScript | Express, React |
 
 ## Experience and projects
 
@@ -65,7 +71,7 @@ This section is split into two parts to differentiate professional experience fr
 
 The following guidelines can assist you in formatting both subsections:
 
-1. **Project**. Define the name of overall idea of your project, or your role in the case of experience, and write it left aligned on the first line. For example:
+1. **Project**. Define the name or overall idea of your project, or your role in the case of experience, and write it left aligned on the first line. For example:
 
     > Calculator Class Project
     >
