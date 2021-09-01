@@ -1,4 +1,4 @@
-Creating a strong resume is your central task as you're seeking an internship. A well-prepared resume can land you a job or at least spark enough interest for a company to reach out to you. 
+Creating a strong resume is your central task as you're seeking an internship. A well-prepared resume can land you a job or at least spark enough interest for a company recruiter to reach out to you. 
 
 Before you jump right into creating that resume, though, an interesting question to ask yourself might be, What experiences do I put in it, and how do I describe them? 
 
@@ -46,14 +46,7 @@ For each of these experiences, consider your impact, and internally rank or grad
    >
    > University IT Support
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-   The first two experiences are all about software development, and having code to show for them makes this ranking appropriate. However, depending on the nature of your job, an IT support job can be a great experience to highlight because it demonstrates that you've put service-mindedness, empathy, and other skills to the test.
-=======
-   The two experiences at the top are all about software development and having code to show for makes this arrangement ideal. However, depending on the nature of your job, an IT support job can be a great experience to have as it shows service minded, empathy and many other skills being put to the test.
-=======
    The first two experiences are all about software development, and having actual code to show for them makes this ranking appropriate. However, depending on the nature of the role you're applying for, an IT support job can be a great experience to highlight because it demonstrates that you've put service-mindedness, empathy, and other skills to the test.
->>>>>>> eb7f924e7ae4cc1d2d3b7b51b5e87cf83f4af55e
 
 ## Create the resume
 
@@ -64,9 +57,4 @@ It's time to write it all down by using Microsoft Word or another favorite word-
 1. Select and download a resume template from a webpage of your choice. For example, go to the Microsoft Office [Premium templates] (https://templates.office.com/en-gb/premium-templates/resumes-and-cover-letters) page.
 1. Transcribe the handwritten information from the sticky notes to the template.
 
-<<<<<<< HEAD
-Congratulations, you've started to think about how to organize information on various experiences and you ended up with a resume template that you now can keep working on to craft an eye-catching resume.
->>>>>>> f5c0e992f9eef597ffca1d51f177f664a693d5a6
-=======
-Congratulations, you've organized your experiences and begun crafting an eye-catching resume.
->>>>>>> eb7f924e7ae4cc1d2d3b7b51b5e87cf83f4af55e
+Congratulations, you've organized your experiences, applied a resume template, and begun crafting an eye-catching resume.
