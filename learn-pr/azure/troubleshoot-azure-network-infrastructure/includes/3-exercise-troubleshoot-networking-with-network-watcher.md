@@ -182,7 +182,7 @@ The topology appears to be correct. To get more information, let's set up some t
  
 1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list. Note that it is associated with your resource group.
 
-1. At the bottom of the pane, expand **Selected sources (2 Azure endpoints)** and note that your enpoint *BackendVM* and *FrontendVM* Azure endpoints are listed.
+1. At the bottom of the pane, expand **Selected sources (2 Azure endpoints)** and note that your *BackendVM* and *FrontendVM* Azure endpoints are listed.
 
 1. At the far right of each endpoint in the list, select the ellipsis, and then select **Enable Network Watcher**. It may take some time for each endpoint to deploy. Watch for a notification to appear in your global controls at the top right of the page header.
 
