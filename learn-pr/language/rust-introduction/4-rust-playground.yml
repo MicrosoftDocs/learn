@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.rust-introduction.4-rust-playground
 metadata:
-  title: Develop programs in the Rust playground
+  title: The Rust playground
   description: Discover how to work with code in the Rust playground environment.
   ms.date: 09/01/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Develop programs in the Rust playground
+title: The Rust playground
 durationInMinutes: 3
 content: |
   [!include[](includes/4-rust-playground.md)]
