@@ -1,8 +1,8 @@
-With Azure Load Balancer, you can spread user requests across multiple virtual machines or other services. That way, you can scale the app to larger sizes than a single virtual machine can support, and you ensure that users get service, even when a virtual machine fails.
+With Azure Load Balancer, you can spread user requests across multiple virtual machines or other services, enabling you to scale the app to larger sizes than a single virtual machine can support, and to ensure that users get service, even when a virtual machine fails.
 
-In your healthcare organization, you can expect large user demand. It's of vital importance to each user that they can book an appointment, even at times of peak demand or when virtual machines fail. If you use multiple virtual servers for your front end and a load balancer to distribute traffic between them, you achieve a high capacity because all the virtual servers collaborate to satisfy requests. You also improve resilience because the load balancer can automatically route traffic away when a virtual server fails.
+In your healthcare organization, you can expect large user demand. It's vitally important that each user can book an appointment, even during peak demand or when one or more virtual machines fail. If you use multiple virtual servers for your front end and a load balancer to distribute traffic between them, you achieve a high capacity because all the virtual servers collaborate to satisfy requests. You also improve resilience because the load balancer can automatically reroute traffic when a virtual server fails.
 
-Here, you will learn how the features of Load Balancer help you create robust app architectures.
+Here, you will learn how the features of Load Balancer can help you create robust app architectures.
 
 ## Distribute traffic with Azure Load Balancer
 
@@ -16,11 +16,11 @@ Azure Load Balancer is a service you can use to distribute traffic across multip
 
 :::image type="content" source="../media/2-load-balancer-distribution.svg" alt-text="Screenshot showing an overview of Azure Load Balancer." border="false":::
 
-Load Balancer supports inbound and outbound scenarios, provides low latency and high throughput, and scales up to millions of flows for all TCP and UDP applications.
+Load Balancer supports inbound and outbound scenarios, provides low latency and high throughput, and scales up to millions of flows for TCP and UDP applications.
 
 Load balancers aren't physical instances. Load balancer objects are used to express how Azure configures its infrastructure to meet your requirements.
 
-To achieve high availability with Load Balancer, you can choose to use availability sets and availability zones to ensure that virtual machines are always available:
+With Load Balancer, you can use availability sets and availability zones to ensure that virtual machines are always available:
 
 | Configuration | Service level agreement (SLA) | Information |
 | ------------- | --- | ----------- |
@@ -35,8 +35,7 @@ An availability set is a logical grouping that you use to isolate virtual machin
 
 ### Availability zones
 
-An availability zone offers groups of one or more datacenters that have indep
-ent power, cooling, and networking. The virtual machines in an availability zone are placed in different physical locations within the same region. Use this architecture when you want to ensure that, when an entire datacenter fails, you can continue to serve users.
+An availability zone offers groups of one or more datacenters that have independent power, cooling, and networking. The virtual machines in an availability zone are placed in different physical locations within the same region. Use this architecture when you want to ensure that, when an entire datacenter fails, you can continue to serve users.
 
 :::image type="content" source="../media/2-az-graphic-two.svg" alt-text="Screenshot showing an overview of availability zones in Azure." border="false":::
 
