@@ -72,7 +72,7 @@ fn change(text: &mut String) {
 }
 ```
 
-With `&` borrows, known as "immutable borrows", we can read the data but we can't change it. With `&mut` borrows, known as mutable borrows, we can both read and write the data.
+With `&` borrows, known as "immutable borrows," we can read the data but we can't change it. With `&mut` borrows, known as "mutable borrows," we can both read and write the data.
 
 ## Borrowing and mutable references
 
