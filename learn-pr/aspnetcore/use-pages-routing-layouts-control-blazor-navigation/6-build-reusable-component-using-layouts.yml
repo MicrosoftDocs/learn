@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.use-pages-routing-layouts-improve-blazor-navigation.build-reusable-component-using-layouts
+title: Build reusable Blazor components using layouts
+metadata:
+  unitType: learning-content
+  title: Build reusable Blazor components using Layouts
+  description: "Learn how to create a consistent and reusable arrangement of elements on pages in your Blazor web apps by using layouts."
+  ms.date: 24/08/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-blazor
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-build-reusable-component-using-layouts.md)]
