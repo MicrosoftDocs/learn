@@ -26,7 +26,6 @@ To achieve high availability with Load Balancer, you can choose to use availabil
 | ------------- | --- | ----------- |
 | **Availability set** |  99.95% | Protection from hardware failures within datacenters |
 | **Availability zone** |  99.99% | Protection from entire datacenter failure |
-| | |
 
 ### Availability sets
 
@@ -36,7 +35,8 @@ An availability set is a logical grouping that you use to isolate virtual machin
 
 ### Availability zones
 
-An availability zone offers groups of one or more datacenters that have independent power, cooling, and networking. The virtual machines in an availability zone are placed in different physical locations within the same region. Use this architecture when you want to ensure that, when an entire datacenter fails, you can continue to serve users.
+An availability zone offers groups of one or more datacenters that have indep
+ent power, cooling, and networking. The virtual machines in an availability zone are placed in different physical locations within the same region. Use this architecture when you want to ensure that, when an entire datacenter fails, you can continue to serve users.
 
 :::image type="content" source="../media/2-az-graphic-two.svg" alt-text="Screenshot showing an overview of availability zones in Azure." border="false":::
 
@@ -69,4 +69,4 @@ Standard load balancers support all of the basic load balancer features. They al
 
 An external load balancer operates by distributing client traffic across multiple virtual machines. An external load balancer permits traffic from the internet. The traffic might come from browsers, mobile apps, or other sources. In a healthcare organization, the balancer distributes the load of all the browsers that run the client healthcare application.
 
-An internal load balancer distributes a load from internal Azure resources to other Azure resources. For example, if you have frontend web servers that need to call business logic that's hosted on multiple middle-tier servers, you can distribute that load evenly by using an internal load balancer. No traffic is allowed from internet sources. In a healthcare organization, a load balancer distributes a load across the internal application tier.
+An internal load balancer distributes a load from internal Azure resources to other Azure resources. For example, if you have front-end web servers that need to call business logic that's hosted on multiple middle-tier servers, you can distribute that load evenly by using an internal load balancer. No traffic is allowed from internet sources. In a healthcare organization, a load balancer distributes a load across the internal application tier.
