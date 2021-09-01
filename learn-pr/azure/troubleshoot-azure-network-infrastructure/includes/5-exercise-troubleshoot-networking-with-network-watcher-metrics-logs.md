@@ -68,7 +68,7 @@ To view the NSG flow logs, you'll use Log Analytics.
     | Subscription | Select your subscription |
     | Resource group | Select your resource group |
     | **Instance details** |
-    | Name | testsworkspace |
+    | Name | `testsworkspace` |
     | Region | Select the same region as your resource group |
 
 1. Select **Next : Pricing tier**. On the **Pricing tier** tab, select the following value for **Pricing tier**  Pay-as-you-go (Per GB 2018).
@@ -94,7 +94,7 @@ To set up flow logs, you must configure the NSG to connect to the storage accoun
     | Network Security Group| MyNsg |
     | **Instance details**  |
     | Subscription | Select your subscription from the dropdown list. |
-    | Storage Accounts | Select testworkspace  |
+    | Storage Accounts | Select `testworkspace`  |
 
 1. Select **Configuration** tab.
 
@@ -104,7 +104,7 @@ To set up flow logs, you must configure the NSG to connect to the storage accoun
     | Traffic Analytics | Enable Traffic Analytics is checked. |
     | Traffic Analytics processing interval | Every 10 mins |
     | Subscription | Select your subscription from the dropdown list. |
-    | Log Analyitics Workspace | Select **testworkspace** from the dropdown list. |
+    | Log Analytics Workspace | Select `testworkspace` from the dropdown list. |
 
 1. Select **Review + create**.
 
@@ -146,13 +146,13 @@ Now, let's use log analytics to view the NSG flow logs.
 
 1. In the **FlowLog Subscriptions** dropdown list, select your subscription.
 
-1. In the **Log Analytics workspace** dropdown list, select **testworkspace**.
+1. In the **Log Analytics workspace** dropdown list, select `testworkspace`.
 
-1. Use the different views to diagnose the problem that prevents communication from the front end VM to the back end VM.
+1. Use the different views to diagnose the problem that prevents communication from the frontend VM to the backend VM.
 
 ## Fix the problem
 
-An NSG rule is blocking inbound traffic to the back end subnet from everywhere over the ports 80, 443, and 3389 instead of just blocking inbound traffic from the Internet. Let's reconfigure that rule now.
+An NSG rule is blocking inbound traffic to the backend subnet from everywhere over the ports 80, 443, and 3389 instead of just blocking inbound traffic from the Internet. Let's reconfigure that rule now.
 
 1. On the Azure portal resource menu, select **All resources**, and then select **MyNsg** from the list.
 
