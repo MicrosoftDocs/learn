@@ -1,6 +1,6 @@
-As a software developer, you're likely to encounter more than one type of interview. Depending on the type of interview, you need to prepare differently. 
+As a software developer, you're likely to encounter various types of interviews that will assess your technical skill level and analyze your ability to function on a team. How you should prepare depends on the type. 
 
-Different types of interviews assess your technical skill level and analyze your ability to function on a team. It's important to spend time honing your technical skills, but working in teams and collaborating with people from many disciplines will likely be crucial. So be prepared to demonstrate or speak about those abilities.
+It's important to spend time honing your technical skills, but working in teams and collaborating with people from many disciplines will likely be crucial. So be prepared to demonstrate or speak about those abilities.
 
 ## Types of interviews
 
@@ -18,17 +18,13 @@ Types of interviews include:
 
 ## Categories of technical knowledge
 
-No two tech companies are the same, so knowing how to prepare for different interview processes can be tricky. In general, the technical aspect of interviews can be divided into two categories:
-
-- **Algorithm focused**. This type of interview involves tasks where you're asked to implement things like binary trees and shortest-path problems.
-
-- **Enterprise focused**. Some technical interviews are focused on enterprise software, so-called line-of-business (LOB) applications. Challenges might revolve around maintaining applications and refactoring old code. The interview focus is less on performance and more on integrating systems.
+No two tech companies are the same, so knowing how to prepare for different interview processes can be tricky. In general, the technical aspect of interviews can be divided into two categories: *algorithm focused* and *enterprise focused*.
 
 So, how can you guess the kind of interview that your prospective company will assign? You can do research to discover your target position's expectations. You should also ask your recruiter what to expect and if they have materials to help you prepare.  
 
 ### Algorithm focused
 
-In an interview that focuses on algorithm challenges, you're given a specific problem. You're then expected to do two things:
+An interview that focuses on algorithm challenges involves tasks where you're asked to implement things like binary trees and shortest-path problems. You're given a specific problem. You're then expected to do two things:
 
 1. Select an appropriate algorithm for the problem. 
 2. Understand the algorithm's limitations and understand what happens when it scales. The concept of _scaling_ implies that when the input to a function increases, your algorithm should perform well. 
@@ -52,7 +48,7 @@ Many websites are dedicated to interview preparation. In fact, many recruiters r
 - [HackerEarth](https://www.hackerearth.com/)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/)
 
-These platforms offer many problems that you can try to solve in various programming languages. You're usually assessed on how well you solved something, which means a solution that simply _works_ receives a lower score than one that's optimal.
+These platforms offer problems that you can try to solve in various programming languages. You're usually assessed on how well you solved something, which means a solution that simply _works_ receives a lower score than one that's optimal.
 
 > [!TIP]
 > It's worth bookmarking some of those sites for later study.
@@ -75,17 +71,17 @@ GitHub has become a great source of knowledge on preparing for tech interviews. 
 
 ### Enterprise focused
 
-Companies more focused on LOB apps that use legacy systems have a different interview process that requires a different type of preparation.
+Some technical interviews are focused on enterprise software, so-called line-of-business (LOB) applications. Challenges might revolve around maintaining applications and refactoring old code. The interview focus is less on performance and more on integrating systems.
 
-Working as a software engineer at a company like this entails knowing how to manage code written in various styles and frameworks. You might need to change code into something more manageable, known as _refactoring_, or maintain the code as it is by fixing bugs and adding features. Integrating applications with one another by using techniques like import jobs and message queues is also an important aspect of the job.  
+Working as a software engineer at a company like this entails knowing how to manage code written in various styles and frameworks. You might need to change code into something more manageable, known as _refactoring_, or maintain the code as it is by fixing bugs and adding features. Integrating applications with one another by using techniques like import tasks and message queues is also an important aspect of the job.  
 
-The skill set needed to work with such code is different. You might not need to focus on writing the most performant algorithm, but you do need to understand architectural patterns and when to use certain patterns.
+The skill set needed to work with such code is specialized. You might not need to focus on writing the most performant algorithm, but you do need to understand architectural patterns and when to use certain patterns.
 
-#### Preparing for enterprise code interviews
+#### Preparing for an enterprise code interview
 
-To prepare for these types of interviews, you need to read up on patterns. It's also a good idea to use something called *katas*. Katas, whose name is derived from karate, are exercises that help you practice solving common problems. 
+To prepare for an enterprise-focused interview, you need to read up on patterns. It's also a good idea to use something called *katas*. Katas, whose name is derived from karate, are exercises that help you practice solving common problems. 
 
-By practicing a specific exercise, you learn the exercise, and, over time, how to solve it better. This way of practicing builds a skill that will be useful in your everyday life as a coder. Katas are not for beginners only, but for anyone looking to hone their skills in the industry.
+By practicing a specific exercise, you learn the exercise and, over time, how to solve it better. This way of practicing builds a skill that will be useful in your everyday life as a coder. Katas are not for beginners only. They're for anyone looking to hone their skills in the industry.
 
 Here are some links for those topics:
 
@@ -131,11 +127,11 @@ Now that you have some bookmarks for resources, let's focus on some general guid
 > [!NOTE]
 > Although it's important to prepare for the technical side of an interview, don't forget to mind your manners! Even if you're a star at algorithms, behaving poorly might disqualify you. You have the right to expect the same courtesy and professionalism in return. 
 
-- **Account for work history**. If you have a gap in your resume, ensure that there's a reasonable explanation for it. This is something you can bring up at the interview, and the company is likely to ask, so ensure that you have an answer prepared.
+- **Account for work history**. If you have a gap in your resume, ensure that there's a reasonable explanation for it. This is something you can bring up at the interview, and the company is likely to ask, so be sure to have an answer prepared.
 
 - **Avoid speaking ill of former employers**. Although it's understandable that there's a reason why you left a position, it's best not to bring this up in an interview. If you're asked why you left, speak about it as a moment that helped you grow as a person rather than as a negative experience.
 
-- **Be professional**. Get to your interview on time. If the traffic is bad and you're delayed, contact the interviewer to alert them.
+- **Be professional**. Get to your interview on time. If you're delayed, contact the interviewer to alert them.
 
 - **Convey being a team player**. Being a developer is about being a team player. Convey your understanding that you didn't deliver a big project by yourself. Explain your role in the project's success, but try not to boast. Be humble but confident.
 

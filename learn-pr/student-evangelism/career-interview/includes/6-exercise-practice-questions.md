@@ -4,18 +4,18 @@ In this exercise, we'll look at how to answer questions. By practicing how you a
 
 Practice makes perfect. You improve through repetition. Schedule time each day before your interview to practice some questions in front of a mirror or with a friend.
 
-> For example, decide to practice interview questions each day between 5:00 PM and 6:00 PM.
+> For example, decide to practice interview questions each day between 3:00 PM and 4:00 PM.
 
 ## Select your topic
 
-There are many types of questions you can practice. For example:
+There are many types of questions that you can practice. For example:
 
 - Code questions about algorithm or architecture
 - Questions about how you would act in a certain situation
 
 Take an example of some code you've written and challenge yourself to explain it verbally in five minutes.
 
-> For example, take a parser for a calculator and explain what the task was, what the challenges were, and how you approached them.
+> For example, take a parser for a calculator and explain what the task was, what the challenges were, and how you approached those challenges.
 
 ## Structure your answer
 
@@ -43,7 +43,7 @@ Here's an example output:
 > Knowing the input was an expression meant that I needed to divide the expression into tokens, numbers, and operators. Then I needed to encode in which order operators should be applied to solve an expression like `2 * (3+2)`. Finally, I needed to perform the calculation.
 >
 > Challenge:
-> The challenge was in realizing how to parse the tokens, selecting a data structure to store the expression and then computing said expression.
+> The challenge was in realizing how to parse the tokens, selecting a data structure to store the expression and then computing the expression.
 >
 > How I solved it:
 > I decided on a binary tree as data structure with the operators as top nodes and the values as leaves. Then I could compute the expression via recursion.

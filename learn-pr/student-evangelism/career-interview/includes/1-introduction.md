@@ -16,6 +16,6 @@ Remember, the interview process goes both ways. While the company is assessing y
 
 After you finish this module, you'll be able to:
 
-- Describe the types of interviews you might encounter.
+- Describe the types of interviews that you might encounter.
 - Prepare for your interviews by practicing.
 - Identify how and when to follow up after an interview.

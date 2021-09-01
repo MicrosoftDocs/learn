@@ -37,6 +37,6 @@ To ensure that your practice has the most effect, establish some good patterns f
 
   > What did you do differently?
    
-- Select more difficult problems to solve as you become better at solving certain type of problems and as you notice improvements.
+- Select more difficult problems to solve as you become better at solving certain types of problems and as you notice improvements.
 
   > Look back at your progress a week later and notice how you improved.
