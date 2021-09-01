@@ -21,7 +21,7 @@ The exercise also runs a client app that simulates several users issuing POST an
 1. On the **Basics** tab, enter the following values for each setting.
 
     > [!NOTE]
-    > The web app must have a unique name. We suggest using something like **\<your name or initials\>hotelsystem**. Use this name wherever you see \<your-webapp-name\> in this exercise.
+    > The web app must have a unique name. We suggest using something like **\<your name or initials\>hotelsystem**. Use this name wherever you see `<your-webapp-name>` in this exercise.
 
     | Setting  | Value  |
     |---|---|
@@ -29,7 +29,7 @@ The exercise also runs a client app that simulates several users issuing POST an
     | Subscription | Select the Azure subscription you'd like to use for this exercise  |
     | Resource Group | Select the **Create new** link, and enter a new resource group called *mslearn-scale* |
     | **Instance Details** |
-    | Name | <your-webapp-name> Enter a unique name that you can remember for later in this exercise|
+    | Name | *See Note above table.* Enter a unique name that you can remember for later in this exercise |
     | Publish | Code |
     | Runtime stack | .NET Core 3.1 (LTS)|
     | Operating System | Windows |
@@ -74,7 +74,7 @@ The exercise also runs a client app that simulates several users issuing POST an
      ```bash
     cd website
     zip website.zip *
-    az webapp deployment source config-zip --src website.zip --name YOUR-WEBAPP-NAME --resource-group mslearn-scale
+    az webapp deployment source config-zip --src website.zip --name <your-webapp-name> --resource-group mslearn-scale
     ```
 
 1. Use your web browser to go to `http://<your-webapp-name>.azurewebsites.net/api/reservations/1`. A JSON document appears that contains the details for reservation number 1.
@@ -125,9 +125,9 @@ The exercise also runs a client app that simulates several users issuing POST an
     dotnet run
     ```
 
-    :::image type="content" source="../media/3-web-client.png" alt-text="Screenshot of a running client app, showing the responses and error messages that occur." loc-scope="other"::: 
+    :::image type="content" source="../media/3-web-client.png" alt-text="Screenshot of a running client app, showing the responses and error messages that occur." loc-scope="other":::
 
-1. In the Azure portal, select **Go to resource** to open your web app. 
+1. In the Azure portal, select **Go to resource** to open your web app.
 
 1. In the left menu pane, select **Monitoring**, and then select **Metrics**.
 
