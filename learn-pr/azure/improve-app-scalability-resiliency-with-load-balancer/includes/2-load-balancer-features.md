@@ -14,7 +14,7 @@ Azure Load Balancer is a service you can use to distribute traffic across multip
 - **Destination port**: The destination port of the request.
 - **Protocol type**: The specified protocol type, TCP or UDP.
 
-:::image type="content" source="../media/2-load-balancer-distribution.svg" alt-text="Screenshot showing an overview of Azure Load Balancer.":::
+:::image type="content" source="../media/2-load-balancer-distribution.svg" alt-text="Screenshot showing an overview of Azure Load Balancer." border="false":::
 
 Load Balancer supports inbound and outbound scenarios, provides low latency and high throughput, and scales up to millions of flows for all TCP and UDP applications.
 
@@ -32,13 +32,13 @@ To achieve high availability with Load Balancer, you can choose to use availabil
 
 An availability set is a logical grouping that you use to isolate virtual machine resources from each other when they're deployed. Azure ensures that the virtual machines you put in an availability set run across multiple physical servers, compute racks, storage units, and network switches. If there's a hardware or software failure, only a subset of your virtual machines is affected. Your overall solution stays operational. Availability sets are essential for building reliable cloud solutions.
 
-:::image type="content" source="../media/2-availability-sets.svg" alt-text="Screenshot showing an overview of availability sets in Azure.":::
+:::image type="content" source="../media/2-availability-sets.svg" alt-text="Screenshot showing an overview of availability sets in Azure." border="false":::
 
 ### Availability zones
 
 An availability zone offers groups of one or more datacenters that have independent power, cooling, and networking. The virtual machines in an availability zone are placed in different physical locations within the same region. Use this architecture when you want to ensure that, when an entire datacenter fails, you can continue to serve users.
 
-:::image type="content" source="../media/2-az-graphic-two.svg" alt-text="Screenshot showing an overview of availability zones in Azure.":::
+:::image type="content" source="../media/2-az-graphic-two.svg" alt-text="Screenshot showing an overview of availability zones in Azure." border="false":::
 
 Availability zones don't support all virtual machine sizes and aren't available in all Azure regions. Check that they are supported in your region before you use them in your architecture.
 
