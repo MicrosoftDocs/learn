@@ -134,4 +134,4 @@ fn main() {
       |                        ---- immutable borrow later used here
 ```
 
-This restriction may seem harsh at first, but this aspect of borrowing prevents Rust code from a whole host of issues including never having a race condition.
+This restriction may seem harsh at first, but this aspect of borrowing prevents Rust code from a whole host of issues, including never having data races.
