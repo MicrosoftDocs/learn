@@ -3,10 +3,10 @@ uid: learn.azure.pc-holographic-remoting-tutorials-mrtk.3-exercise-getting-start
 title: Exercise Getting started with pc holographic remoting
 metadata:
   title: Exercise Getting started with pc holographic remoting
-  description: Introduction for Getting started with pc holographic remoting
+  description: Introduction to working with pc holographic remoting
   ms.date: 06/23/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
+  author: Sean-Kerawala
+  ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 durationInMinutes: 1

@@ -1,14 +1,14 @@
 # [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
 
-2. Once **MixedRealityFeatureTool** is opened, to access preview releases click on **Settings** and enable **Show preview releases** under **Feature** tab, then click on **ok** to save the settings.
+2. After you open **MixedRealityFeatureTool**, to access preview releases, click **Settings** and then enable **Show preview releases** under the **Feature** tab. Click **ok** to save the settings.
 
 ![MixedRealityFeatureTool for preview](../../media/base-02-section4-step1-2-preview.PNG)
 
-3. Next click on **Start** to get started with Mixed Reality Feature Tool.
+3. Click **Start** to get started with Mixed Reality Feature Tool.
 
 ![MixedRealityFeatureTool](../../media/base-02-section4-step1-2.PNG)
 
-4. The first step is to point the Mixed Reality Feature Tool to your **Project path** using the **ellipsis** button, click on the Three dots ellipsis button next to the Project path and browse to your project folder in the explorer for example _D:\MixedRealityLearning\MRTK Tutorials_.
+4. Click the Three dots ellipsis button next to the Project path and browse to your project folder in the explorer--for example _D:\MixedRealityLearning\MRTK Tutorials_.
 
 ![Adding Unity Path for MixedRealityFeatureTool](../../media/base-02-section4-step1-3.PNG)
 
@@ -17,15 +17,15 @@
 > [!NOTE]
 > The dialog that's displayed when browsing for the Unity project folder contains '_' as the file name. There must be a value for the file name to enable the folder to be selected.
 
-Features are grouped by category to make things easier to find, click on **Mixed Reality Toolkit** dropdown to find packages relating to the Mixed Reality Toolkit.
+Features are grouped by category to make things easier to find. Click the **Mixed Reality Toolkit** dropdown to find packages relating to the Mixed Reality Toolkit.
 
 ![MixedRealityFeatureTool Discover Features](../../media/base-02-section4-step1-4.PNG)
 
-6. check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select **MRTK 2.7.0-preview.4**, then click on **Get features** button to download the selected packages.
+6. Select the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select **MRTK 2.7.0-preview.4**, then click the **Get features** button to download the selected packages.
 
 ![MixedRealityFeatureTool Open MixedReality](../../media/base-02-section4-step1-5.PNG)
 
-7. Next click on the **Validate** button to validate the selected package, you will get a popup with message **No validation issues were detected** click on **OK** to close the popup and click on **Import** button.
+7. Next click the **Validate** button to validate the selected package. You'll get a popup with the message **No validation issues were detected**. Click on **OK** to close the popup and then click the **Import** button.
 
 ![MixedRealityFeatureTool Select required package](../../media/base-02-section4-step1-6.PNG)
 
@@ -44,17 +44,17 @@ Features are grouped by category to make things easier to find, click on **Mixed
 ![MRTK configurator tool](../../media/base-02-section5-step1-2xrsdk.PNG)
 
 > [!NOTE]
-> The above screenshot is from Unity 2020, if you using Unity 2019 please select **XR SDK/XR Management**
+> The above screenshot is from Unity 2020. If you're using Unity 2019 please select **XR SDK/XR Management**
 
-3. this imports required unity packages for XR Plugin Management, once done click on **Show Settings** in MRTK project Configurator.
+3. This imports required unity packages for XR Plugin Management. Once done click on **Show Settings** in MRTK project Configurator.
 
 ![Player settings window](../../media/base-02-section5-step1-3xrsdk.PNG)
 
-4. This opens **Project Settings window**, In the Project Settings window under **XR Plug-in Management** Ensure that you are in Universal Windows Platform settings also Ensure **Initialize XR on Startup** is checked, and check **Windows Mixed Reality** checkbox.
+4. This opens **Project Settings window**. In the Project Settings window under **XR Plug-in Management** ensure that you're in Universal Windows Platform settings. Also, ensure **Initialize XR on Startup** is selected, and select the **Windows Mixed Reality** checkbox.
 
 ![Player settings window Enable Mixed Reality 1](../../media/base-02-section5-step1-4xrsdk.PNG)
 
-5. After Unity has finished importing the Windows Mixed Reality SDK, the MRTK Project Configurator window should appear again. If it doesn't, use the Unity menu to open it.
+5. After Unity has finished importing the Windows Mixed Reality SDK, the MRTK Project Configurator window should appear again. If it doesn't, use the menu bar to open it.
 
 In the MRTK Project Configurator window, click on **next** then use the Audio spatializer dropdown to select the **MS HRTF Spatializer**, then click the **Apply** button to apply the setting:
 
@@ -80,28 +80,28 @@ In the Project Settings window, select **XR Plug-in Management** > **Windows Mix
 
 ![MixedRealityFeatureTool preview](../../media/base-02-section4-step1-2-preview.PNG)
 
-3. next click on **Start** to get started with Mixed Reality Feature Tool.
+3. Click on **Start** to get started with Mixed Reality Feature Tool.
 
 ![MixedRealityFeatureTool](../../media/base-02-section4-step1-2.png)
 
-4. The first step is to point the Mixed Reality Feature Tool to your **Project path** using the **ellipsis** button, click on the Three dots ellipsis button next to the Project path and browse to your project folder in the explorer for example _D:\MixedRealityLearning\MRTK Tutorials_.
+4. Click on the Three dots ellipsis button next to the Project path and browse to your project folder in the explorer--for example, _D:\MixedRealityLearning\MRTK Tutorials_.
 
 ![Adding Unity Path for MixedRealityFeatureTool](../../media/base-02-section4-step1-3.png)
 
-5. When you have located your project's folder, click the Open button to return to the Mixed Reality Feature Tool. Then click on **Discover Features**.
+5. When you've located your project's folder, click the Open button to return to the Mixed Reality Feature Tool. Then click on **Discover Features**.
 
 > [!NOTE]
 > The dialog that's displayed when browsing for the Unity project folder contains '_' as the file name. There must be a value for the file name to enable the folder to be selected.
 
-Features are grouped by category to make things easier to find, click on **Mixed Reality Toolkit** dropdown to find packages relating to the Mixed Reality Toolkit and click on **Platform Support** dropdown to find packages relating various supporting platforms.
+Features are grouped by category to make things easier to find. Click the **Mixed Reality Toolkit** dropdown to find packages relating to the Mixed Reality Toolkit and click the **Platform Support** dropdown to find packages related to various supporting platforms.
 
 ![MixedRealityFeatureTool Discover Features](../../media/base-02-section4-step1-4.png)
 
-6. check the **Mixed Reality Toolkit Foundation** and click on the dropdown next to it to select **MRTK 2.7.0-preview.4**, also check the **Mixed Reality OpenXR Plugin** and click on the dropdown next to it to select most recent version available, then click on **Get features** button to download the selected packages.
+6. Select the **Mixed Reality Toolkit Foundation** and click on the dropdown next to it to select **MRTK 2.7.0-preview.4**. Also, select the **Mixed Reality OpenXR Plugin** and click on the dropdown next to it to select most recent version available. Click the **Get features** button to download the selected packages.
 
 ![MixedRealityFeatureTool Open MixedReality](../../media/base-02-section4-step1-5-openxr.png)
 
-7. Next click on the **Validate** button to validate the selected package, you will get a popup with message **No validation issues were detected** click on **OK** to close the popup and click on **Import** button.
+7. Next click on the **Validate** button to validate the selected package. You'll get a popup with message **No validation issues were detected**. Click on **OK** to close the popup and then click on **Import** button.
 
 ![MixedRealityFeatureTool Select required package](../../media/base-02-section4-step1-6-OpenXR.png)
 
@@ -111,11 +111,11 @@ Features are grouped by category to make things easier to find, click on **Mixed
 
 ## Configuring the Unity project
 
-1. After Unity has finished importing the package from the previous section, a warning message appears to restart the unity editor to enable to backends for new plugin system, click on **Yes**
+1. After Unity has finished importing the package from the previous section, a warning message appears to restart the unity editor to enable to backends for new plugin system. Click on **Yes**
 
 ![Unity Restart Option](../../media/base-02-section5-step1-1-openxr.PNG)
 
-2. Once the Unity restarts MRTK Project Configurator window should appear. If it doesn't, you can manually open it by going to **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**:
+2. Once Unity restarts, the MRTK Project Configurator window should appear. If it doesn't, you can manually open it by going to **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**:
 
 ![Open MRTK project configurator window](../../media/base-02-section5-step1-2-openxr.png)
 
@@ -123,11 +123,11 @@ Features are grouped by category to make things easier to find, click on **Mixed
 
 ![Add Unity OpenXR Plugin](../../media/base-02-section5-step1-3-openxr.PNG)
 
-4. This imports required unity packages for XR Plugin Management, once done click on **Show XR Plug-In Management Settings** in MRTK project Configurator.
+4. This imports required unity packages for XR Plugin Management. Once done, click on **Show XR Plug-In Management Settings** in MRTK project Configurator.
 
 ![Show XR Plug-In Management Settings](../../media/base-02-section5-step1-4-openxr.PNG)
 
-5. This opens **Project Settings window**, In the Project Settings window  under **XR Plug-in Management** Ensure that you are in Universal Windows Platform settings also Ensure **Initialize XR on Startup** is checked, then check **Open XR** checkbox and **Microsoft HoloLens feature set** checkbox to enable them.
+5. In the Project Settings window  under **XR Plug-in Management**, ensure that you're in Universal Windows Platform settings. Ensure **Initialize XR on Startup** is checked, then check **Open XR** checkbox and **Microsoft HoloLens feature set** checkbox to enable them.
 
 ![Project Settings Window 3](../../media/base-02-section5-step1-6-openxr.PNG)
 
@@ -140,16 +140,16 @@ In the menu bar, navigate to **Mixed Reality**> **OpenXR** > **Apply recommended
 
 ![Project Settings Window 5](../../media/base-02-section5-step1-8-openxr.PNG)
 
-8. Use the Unity menu to open MRTK Project Configurator, In the MRTK Project Configurator window, click on **next**, then click the **Apply** button to apply the settings:
+8. Use the menu bar to open MRTK Project Configurator. In the MRTK Project Configurator window, click on **next**, then click the **Apply** button to apply the settings:
 
 ![Project Settings Window 6](../../media/base-02-section5-step1-9-openxr.PNG)
 
 
-9. Once you click on Apply, Unity will try to restart for the input system to take into effect, click on **Apply** to restart the Unity editor
+9. Once you click on Apply, Unity will try to restart for the input system to take into effect. Click on **Apply** to restart the Unity editor
 
 ![Project Settings Window 7](../../media/base-02-section5-step1-10-openxr.PNG)
 
-10. Once the Unity restarts open MRTK Project Configurator from the unity menu and Click on **Next** then click on **Done** finish the Unity project configuration for OpenXR.
+10. Once Unity restarts open MRTK Project Configurator from the menu bar. Click on **Next** then click on **Done** to finish the Unity project configuration for OpenXR.
 
 ### Configure additional project settings
 
@@ -173,7 +173,7 @@ In the Project Settings window, select **XR Plug-in Management** > **OpenXR**, t
 
 ![MixedRealityFeatureTool](../../media/base-02-section4-step1-2.png)
 
-4. The first step is to point the Mixed Reality Feature Tool to your **Project path** using the **ellipsis** button, click on the Three dots ellipsis button next to the Project path and browse to your project folder in the explorer for example _D:\MixedRealityLearning\MRTK Tutorials_.
+4. The first step is to point the Mixed Reality Feature Tool to your **Project path** using the **ellipsis** button. Click on the Three dots ellipsis button next to the Project path and browse to your project folder in the explorer for example _D:\MixedRealityLearning\MRTK Tutorials_.
 
 ![Adding Unity Path for MixedRealityFeatureTool](../../media/base-02-section4-step1-3.png)
 
@@ -182,7 +182,7 @@ In the Project Settings window, select **XR Plug-in Management** > **OpenXR**, t
 > [!NOTE]
 > The dialog that's displayed when browsing for the Unity project folder contains '_' as the file name. There must be a value for the file name to enable the folder to be selected.
 
-Features are grouped by category to make things easier to find, click on **Mixed Reality Toolkit** dropdown to find packages relating to the Mixed Reality Toolkit.
+Features are grouped by category to make things easier to find. Click the **Mixed Reality Toolkit** dropdown to find packages relating to the Mixed Reality Toolkit.
 
 ![MixedRealityFeatureTool Discover Features](../../media/base-02-section4-step1-4.png)
 
@@ -190,7 +190,7 @@ Features are grouped by category to make things easier to find, click on **Mixed
 
 ![MixedRealityFeatureTool Open MixedReality](../../media/base-02-section4-step1-5.png)
 
-7. Next click on the **Validate** button to validate the selected package, you will get a popup with message **No validation issues were detected** click on **OK** to close the popup and click on **Import** button.
+7. Next click on the **Validate** button to validate the selected package. You'll  get a popup with message **No validation issues were detected**. Click on **OK** to close the popup and click on **Import** button.
 
 ![MixedRealityFeatureTool Select required package](../../media/base-02-section4-step1-6.png)
 
@@ -217,7 +217,7 @@ Features are grouped by category to make things easier to find, click on **Mixed
 
 ![MRTK configuration window](../../media/base-02-section5-step1-4.png)
 
-5. Click on **Next** then click on**Done** button in MRTK Project Configurator window to finish the Unity project configuration for Legacy XR.
+5. Click on **Next** then click the **Done** button in MRTK Project Configurator window to finish the Unity project configuration for Legacy XR.
 
 ### Configure additional project settings
 

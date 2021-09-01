@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Three multiple-choice questions
   ms.date: 06/23/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
+  author: Sean-Kerawala
+  ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which of the following script is attached to Button Parent Object"
+    - content: "Which of the following scripts is attached to a Button Parent Object?"
       choices:
         - content: "View control script"
           isCorrect: false
@@ -23,7 +23,7 @@ quiz:
           isCorrect: false
         - content: "Toggle Button script"
           isCorrect: true
-    - content: "Which of the below additional capabilities are selected ?"
+    - content: "Which of the following additional capabilities are selected?"
       choices:
         - content: "PrivateNetworkClientServer"
           isCorrect: false
@@ -31,7 +31,7 @@ quiz:
           isCorrect: true
         - content: "VideosLibrary"
           isCorrect: false
-    - content: "In OpenXR feature group we check in "
+    - content: "In the OpenXR feature group we select: "
       choices:
         - content: "Holographic Editor Remoting"
           isCorrect: true

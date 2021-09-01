@@ -12,8 +12,8 @@ title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit
 summary: Import and learn about pc holographic remoting to enhance your learning experience.
 abstract: |
   By the end of this module you will be able to:
-  - you learned to build a mixed reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye-tracking features.
-  - You also learnt how to create a Holographic Remoting remote app and connect to HoloLens 2 at any point, providing a way to visualize 3D content in mixed reality.
+  - Build a mixed reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye-tracking features.
+  - Create a Holographic Remoting remote app and connect to HoloLens 2 at any point, providing a way to visualize 3D content in mixed reality.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -31,7 +31,7 @@ prerequisites: |
   - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
   - [Set up a mixed reality project in Unity module](/learn/modules/mixed-reality-toolkit-project-unity)
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
-  - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
+  - Basic familiarity with Unity: interface, scene creation, package import, addition of GameObjects to a scene
 
 
 units: 

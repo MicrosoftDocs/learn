@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.pc-holographic-remoting-tutorials-mrtk.4-creating-holographic-remoting-pc-application
-title: Creating holographic remoting pc application
+title: Creating a holographic remoting pc application
 metadata:
-  title: Creating holographic remoting pc application
-  description: Introduction to Creating holographic remoting pc application
+  title: Creating a holographic remoting pc application
+  description: Introduction to creating holographic remoting pc application
   ms.date: 06/23/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
+  author: Sean-Kerawala
+  ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 durationInMinutes: 1
