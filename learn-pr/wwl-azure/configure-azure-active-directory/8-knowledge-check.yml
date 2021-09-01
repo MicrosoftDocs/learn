@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/27/2021
+  ms.date: 08/31/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -21,10 +21,10 @@ quiz:
     - content: "Add the device in Azure Active Directory"
       isCorrect: false
       explanation: "That's incorrect. To get a device under the control of Azure AD either join or register the device."
-    - content: "Join the device to Azure Active Directory"
+    - content: "Register the device to Azure Active Directory"
       isCorrect: true
       explanation: "That's correct. Azure AD device registration provides the device with an identity that is used to authenticate the device when a user signs-in to Azure AD. The identity can be used to enable or disable a device."
-    - content: "Register a device in Azure Active Directory."
+    - content: "Join a device in Azure Active Directory."
       isCorrect: false
       explanation: "That's incorrect. Joining a device is an extension to registering a device. Joining provides the benefits of registering and changes the local state of a device. Changing the local state enables users to sign-in to a device using an organizational work or school account instead of a personal account."
   - content: "A dedicated and trusted instance of Azure Active Directory is often referred to as?"

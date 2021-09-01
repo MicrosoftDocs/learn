@@ -10,9 +10,9 @@ The first thing we need to do is create an Azure logic app. To do that, we need 
 
 1. On the Azure portal menu or from the home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the search box, enter **Logic app**. Select **Logic App (Consumption)**. The **Logic App (Consumption)** pane appears.
+1. In the search box, search for and select **Logic App**. The **Logic App** pane appears.
 
-1. Select **Create**. The **Create Logic App (Consumption)** pane appears.
+1. Select **Create**. The **Create Logic App** pane appears.
 
 ## Configure your Azure Logic App resource
 
@@ -26,7 +26,9 @@ Now that the Azure Logic Apps resource has been located, let's configure basic s
     | Subscription | Concierge Subscription |
     | Resource group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn> |
     | **Instance Details** |
+    | Type | Standard |
     | Logic app name | Enter *ShoeTracker* |
+    | Publish | Workflow |
     | Region | Select a location closest to you from the following list |
 
     [!INCLUDE [](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
