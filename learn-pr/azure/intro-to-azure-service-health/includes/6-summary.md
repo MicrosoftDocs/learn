@@ -13,8 +13,17 @@
     * Connectors"
 
 -->
-TODO: 1-2 sentences restating the module's "evaluate" goal
-TODO: bulleted list of the decision criteria
+The goal of this module was help you understand the main capabilities of Azure Service Health and know how use to be aware on what is happening from the Azure platform side. So you have learned:
+
+* What is Azure Service Health and their components
+* The kind of information available by Azure Service Health
+* How create alerts and be aware about issues and planned maintenance which may impact you
+
+References
+* [Create activity log alerts on service notifications using the Azure portal](https://docs.microsoft.com/azure/service-health/alerts-activity-log-service-notifications-portal)
+* [Use the Azure portal to view service health notifications](https://docs.microsoft.com/azure/service-health/service-health-notifications-properties)
+* [Resource types and health checks in Azure resource health](https://docs.microsoft.com/azure/service-health/resource-health-checks-resource-types)
+* [Azure Resource Health FAQ](https://docs.microsoft.com/azure/service-health/resource-health-faq)
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
@@ -25,7 +34,7 @@ TODO: bulleted list of the decision criteria
     Example: "We applied these criteria to our fictional shoe company. The analysis helped us see how difficult it would be to use Logic Apps for each process. Both the social-media monitor and the video archive utility used only the built-in connectors. This characteristic made them perfect for Logic Apps. The online sales portal required more work because it had complex conditionals and needed custom connectors."
  -->
 
-TODO: add your discussion of applying the criteria
+
 
 <!-- 3. Describe the business impact ----------------------------------------------------
 
@@ -35,7 +44,7 @@ TODO: add your discussion of applying the criteria
 
     Example: "The criteria help you evaluate whether your business processes are a good match for Logic Apps. First, they let you assess how well Logic Apps will solve your problem. Second, they give you an idea of the amount of customization effort involved in using them for your task. This process should give you enough information to choose the right product for your work."
  -->
-TODO: describe the business impact
+
 
 <!-- 4. References (optional) ----------------------------------------------------
 

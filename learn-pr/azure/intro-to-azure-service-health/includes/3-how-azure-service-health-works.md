@@ -52,9 +52,9 @@ At the page, you can set the automatic refresh period to:
 * 10 minutes
 * 30 minutes
 
-This should be useful especially if you want have this information displayed in monitors at your NOC (Network Operation Center).
+This should be useful especially if you want to have this information displayed in monitors at your NOC (Network Operation Center).
 
-This page has all products and services listed by geographies and regions, with four types of status to allows you easily identify if everything is good, if has some specific information or warning available, or a critical issue.
+This page has all products and services listed by geographies and regions, which four types of status to allow you easily identify if everything is good, if has some specific information or warning available, or a critical issue.
 
 On this page also is possible get the RSS feed to receive updates on this page, as well check the status history from services and regions.
 
@@ -62,12 +62,12 @@ On this page also is possible get the RSS feed to receive updates on this page, 
 
 ### Service Health
 
-Service Health is what you will be using to get information on outages, planned maintenance, health and security advisories.
+Service Health is what you will be using to get information on outages, planned maintenance, health, and security advisories.
 
-It allows you to create customized views, filtering among subscription, region and services. The level of details will include:
+It allows you to create customized views, filtering among subscription, region, and services. The level of details will include:
 
 * Issue Name;
-* Subscription, service and region impacted;
+* Subscription, service, and region impacted;
 * Start time;
 * Summary and issue updates;
 * Root cause analysis;
@@ -77,7 +77,7 @@ Also Service Health will allow you to create health alerts to notify you when so
 
 ### Resource Health
 
-The Resource Health execute some checks minute by minute across the resources and made the information available to you. Please note that there is a specify type of resources where resource health run those checks. You can see the [full list here](https://docs.microsoft.com/en-us/azure/service-health/resource-health-checks-resource-types).
+The Resource Health executes some checks minute by minute across the resources and made the information available to you. There is a specific type of resources where resource health runs those checks. You can see the [full list here](https://docs.microsoft.com/en-us/azure/service-health/resource-health-checks-resource-types).
 
 As an example, for Virtual Machines the type of checks executed are like below:
 

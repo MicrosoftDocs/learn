@@ -6,7 +6,7 @@
 
     Example: "Let's start with a few definitions and a quick tour of the core features of Logic Apps. This overview should help you see whether Logic Apps might be a good fit for your work."
 -->
-Let's start with a definition of "Service Health" and explore some features. This will help you understand how you can benefit from it to improve the reliability of your environment.
+Let's start with a definition of "Service Health" and explore some features. It will help you understand how you can benefit from it to improve the reliability of your environment.
 
 <!-- 2. Background-concept definitions (optional) ----------------------------------------
 
@@ -29,14 +29,13 @@ Let's start with a definition of "Service Health" and explore some features. Thi
         Lead sentence: "A business process or _workflow_ is a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification...."
 -->
 ## What is Azure Service Health?
-Azure Service Health should be comprehended as a set of services which combined will provide information about current or upcoming issues from Azure that may impact your workloads. This mean that Azure Service Health is composed by:
+Azure Service Health should be comprehended as a set of services. The services combined will provide information about current or upcoming issues from Azure that may impact your workloads. This means that Azure Service Health is composed by:
 
-* Azure Status: Brings to you information about service outages which are publicly available on  Azure Status Page.
+* Azure Status: Brings information about service outages that are publicly available on  Azure Status Page.
 * Service Health: Through an authenticated experience, gives personalized views regarding the health of Azure services and regions currently in use by your workloads.
-* Resource Health: Provides details about the health of individual resources in your environment, such as a virtual machine. 
+* Resource Health: Provides details about the health of individual resources in your environment, such as a virtual machine.
 
-Through this, you will be able to see a high level of details regarding the health of your environment.
-
+With them, you will be able to see a high level of details regarding the health of your environment.
 
 <!-- 3. Define the product -------------------------------------------------------------
 
