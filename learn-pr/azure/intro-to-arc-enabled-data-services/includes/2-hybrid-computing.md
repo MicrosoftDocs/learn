@@ -18,12 +18,12 @@ Hybrid computing systems may not always be connected. The management and control
 Microsoft provides several environments for working with hybrid computing environments, such as:
 
  - [Azure hybrid cloud solutions](https://azure.microsoft.com/solutions/hybrid-cloud-app/#overview)
- - [Azure hybrid benefit](https://docs.microsoft.com/azure/azure-sql/azure-hybrid-benefit?tabs=azure-powershell)
- - [Azure Defender](https://docs.microsoft.com/azure/security-center/azure-defender)
+ - [Azure hybrid benefit](/azure/azure-sql/azure-hybrid-benefit?tabs=azure-powershell)
+ - [Azure Defender](/azure/security-center/azure-defender)
  - [Azure VMware solution](https://azure.microsoft.com/services/azure-vmware/#product-overview)
  - [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)
- - [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)
- - [Azure VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)
+ - [Azure Sentinel](/azure/sentinel/overview)
+ - [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways)
  - [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/#overview)
  - [Azure Arc](https://azure.microsoft.com/services/azure-arc/#product-overview)
 

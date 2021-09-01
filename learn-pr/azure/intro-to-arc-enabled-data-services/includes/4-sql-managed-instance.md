@@ -26,7 +26,7 @@ To understand the capabilities of Azure Arc-enabled SQL Managed Instance, it's i
 
 ### Core features
 
-Since Azure Arc-enabled SQL Managed Instance is based on the SQL Server engine, it provides core instance [features](https://docs.microsoft.com/azure/azure-arc/data/managed-instance-features) almost 100% compatible with SQL Server and Azure SQL Managed Instance. The instance includes a compatible T-SQL language interface and all the features of security, performance, and availability.
+Since Azure Arc-enabled SQL Managed Instance is based on the SQL Server engine, it provides core instance [features](/azure/azure-arc/data/managed-instance-features) almost 100% compatible with SQL Server and Azure SQL Managed Instance. The instance includes a compatible T-SQL language interface and all the features of security, performance, and availability.
 
 Like Azure SQL Managed instance, when you deploy Azure Arc-enabled SQL Managed instance you get a pre-installed, versionless SQL Server. Azure Arc-enabled SQL Managed instance uses container images from the Microsoft Container Registry (MCR).
 
@@ -34,7 +34,7 @@ Azure SQL Managed Instance uses gateway servers to abstract the application from
 
 ### Service tiers
 
-Like Azure SQL Managed Instance, you can deploy Azure Arc-enabled SQL Managed instance with two deployment options called [service tiers](https://docs.microsoft.com/azure/azure-arc/data/service-tiers):
+Like Azure SQL Managed Instance, you can deploy Azure Arc-enabled SQL Managed instance with two deployment options called [service tiers](/azure/azure-arc/data/service-tiers):
 
 - **General purpose** - As its name implies, this service tier is for most workloads. This service tier has a limit for resources such as core and memory but comes with built-in basic high availability through Kubernetes and shared storage. Instances in the general purpose tier map to features supported in SQL Server Standard Edition.
 
@@ -110,7 +110,7 @@ The following interfaces can be used with Azure Arc-enabled SQL Managed Instance
 
 ### SQL Server Management Studio (SSMS)
 
-[SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) is fully compatible to query and manage an Azure Arc-enabled SQL Managed Instance.
+[SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) is fully compatible to query and manage an Azure Arc-enabled SQL Managed Instance.
 
 ### Azure Data Studio (ADS)
 
@@ -126,7 +126,7 @@ If you are using direct connected mode, you can create, view, and manage Azure A
 
 ### az CLI
 
-You can use the arcdata extension with the multi-platform [az](https://docs.microsoft.com/cli/azure/) command-line interface (CLI) to create, view, and manage Azure Arc-enabled data services such as SQL Managed Instance. Az CLI can only be used in indirect connected mode to deploy an Azure Arc-enabled SQL Managed Instance. The az CLI is the primary interface to upload billing, metrics, and logs when using indirect connected mode.
+You can use the arcdata extension with the multi-platform [az](/cli/azure/) command-line interface (CLI) to create, view, and manage Azure Arc-enabled data services such as SQL Managed Instance. Az CLI can only be used in indirect connected mode to deploy an Azure Arc-enabled SQL Managed Instance. The az CLI is the primary interface to upload billing, metrics, and logs when using indirect connected mode.
 
 ### kubectl
 
@@ -134,4 +134,4 @@ You can use the multi-platform [kubectl](https://kubernetes.io/docs/reference/ku
 
 ### SQL drivers
 
-You can use any supported [SQL Server driver](https://docs.microsoft.com/sql/connect/sql-connection-libraries?) for your application to connect and execute queries against an Azure Arc-enabled SQL Managed Instance. Driver support is included for popular programming languages such as C#, Java, Node.js, PHP, Python, and Ruby.
+You can use any supported [SQL Server driver](/sql/connect/sql-connection-libraries) for your application to connect and execute queries against an Azure Arc-enabled SQL Managed Instance. Driver support is included for popular programming languages such as C#, Java, Node.js, PHP, Python, and Ruby.
