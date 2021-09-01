@@ -6,7 +6,7 @@ Congratulations on landing the interview! What are your next steps? When it come
 
 An interview is usually the last step before being offered a job.
 
-You're likely to go through a number of them with an organization. Additionally, there are different types of interviews with different expectations.
+You're likely to go through many them with an organization. Additionally, there are different types of interviews with different expectations.
 
 ## Scenario: Interview for an intern position in tech
 
@@ -20,8 +20,8 @@ By the end of this module, you will be able to:
 
 - Describe what types of interviews exist
 - Develop a plan to practice for the interviews
-- Compose a follow up email
+- Compose a follow-up email
 
 ## What is the main goal
 
-This module is looking to provide you with strategies to best prepare for and carry out technical as well as non-technical interviews to increase your chances of landing an intern position at a tech company.
+This module is looking to provide you with strategies to best prepare for and carry out technical and non-technical interviews to increase your chances of landing an intern position at a tech company.
