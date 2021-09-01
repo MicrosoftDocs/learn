@@ -1,12 +1,12 @@
-Carrying out a technical task might be challenging enough but you will need to think about how you are perceived. What you want to be perceived as is someone that delivers on time and communicates well by asking the right questions. 
+Carrying out a technical task might be challenging enough but you will need to think about how you are perceived. What you want to be perceived as, is someone that delivers on time and communicates well by asking the right questions. 
 
-You are new in an organization and as such are a unknown quantity to your colleagues. By building your trust as an employee and managing your relationships proactively, you will build your personal brand as someone to be appreciated and, eventually, given responsibility and considered for promotion.
+You are new in an organization and as such are an unknown quantity to your colleagues. By building your trust as an employee and managing your relationships proactively, you will build your personal brand as someone to be appreciated and, eventually, given responsibility and considered for promotion.
 
 ## Building trust as an employee
 
 Good managers are looking for valuable, trustworthy employees who contribute to the organization by providing solid impact. Great managers also value those individuals who bring their whole selves to work, who come as they are, and who grow.
 
-Scenario: It's a common mistake to come in new and think you will impress everyone by promising to deliver a ton of work. Most likely you are setting yourself up for failure. What you want to do is find a small focused task and identify other smaller tasks you can deliver on top of that, if time permits. At this point, if you deliver on that smaller commitment everyone will see you as trustworthy and if you deliver those extra things on top of that, you will start to impress people. 
+Scenario: It's a common mistake to come in new and think you will impress everyone by promising to deliver a ton of work. Most likely you are setting yourself up for failure. What you want to do is find a small focused task and identify other smaller tasks you can deliver on top of that, if time permits. At this point, if you deliver on that smaller commitment everyone will see you as trustworthy and if you deliver those extra things on top of that, you will start to impress people.
 
 The idea is to:
 
@@ -18,14 +18,14 @@ An important part of your professional life is learning how to manage your time,
 
 ### Be on time
 
-Ensure you are on time in the morning, for meetings or whatever it is. If you know your bus is always running late, ensure you are at work 30 minutes, or more before you're supposed to.
+Ensure you are on time in the morning, for meetings or whatever the occasion is. If you know your bus is always running late, ensure you are at work 30 minutes, or more, before you're supposed to.
 
 > [!TIP]
 > It's common that managers are there early for work, and if you and them are the only ones there in the morning, it's an excellent opportunity to have a quick chat over coffee or tea.
 
 ### Your time is finite - use it well
 
-There's eight hours in day, no more, no less. That time is all you have to be as impactful as possible. Your day will most likely be filled with various activities like meetings, focus time and breaks. You need to plan for all these activities. Your company might decide when lunch is but you are likely in control of part of your day. Ensure you get a longer block of uninterrupted time to focus. 
+There's eight hours in a day, no more, no less. That time is all you have to be as impactful as possible. Your day will most likely be filled with various activities like meetings, focus time and breaks. You need to plan for all these activities. Your company might decide when lunch is, but you are likely in control of part of your day. Ensure you get a longer block of uninterrupted time to focus. 
 
 > [!TIP]
 > Also, plan for breaks. It's common to get a break through on a problem when you are not inherently focusing on it.
