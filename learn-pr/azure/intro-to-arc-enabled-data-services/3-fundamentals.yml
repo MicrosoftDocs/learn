@@ -38,7 +38,7 @@ quiz:
     - content: "direct connected mode"
       isCorrect: true
       explanation: "With direct connected mode, users can use the Azure Resource Manager through the az CLI and Azure portal"
-    - content: "azure connected mode"
+    - content: "Azure connected mode"
       isCorrect: false
       explanation: "The only connected mode options are direct or connected"
   - content: "The Azure Arc data controller requires a Kubernetes cluster to be connected to Azure"
