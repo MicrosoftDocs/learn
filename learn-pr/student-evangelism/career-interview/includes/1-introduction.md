@@ -6,16 +6,22 @@ This quick video is a good place to start:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4O7NF]
 
-An interview is usually the last step before you're offered a job. You're likely to go through a number of them with an organization. There are different types of interviews, with different expectations.
+You're likely to go through multiple interviews with an organization. There are different types of interviews, with different expectations.
 
-As a software developer, you'll encounter interviews that test not only your technical skills but also your ability to communicate clearly. Interviewers will also appraise your interpersonal skills.
+## Scenario: Interview for an intern position in tech
+
+As an aspiring software developer, you'ill encounter interviews that test not only your technical skills but also your ability to communicate in a professional way. Interviewers will also appraise your interpersonal skills.
 
 Remember, the interview process goes both ways. While the company is assessing you through the interview process, you should also use that time to evaluate whether the company or team is the right place for you and your career goals.
 
-## Learning objectives
+## What will you learn?
 
-After you finish this module, you'll be able to:
+By the end of this module, you'll be able to:
 
-- Describe the types of interviews that you might encounter.
-- Prepare for your interviews by practicing.
-- Identify how and when to follow up after an interview.
+- Describe what types of interviews exist.
+- Develop a plan to practice for interviews.
+- Compose a follow-up email.
+
+## What is the main goal?
+
+This module gives you strategies to prepare for and carry out technical and non-technical interviews to increase your chances of landing an intern position at a tech company.
