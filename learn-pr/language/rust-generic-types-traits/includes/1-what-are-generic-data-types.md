@@ -70,7 +70,7 @@ All of the preceding `Point` types have *different concrete types*. In order:
 - `Point<integer, bool>`
 - `Point<f64, &'static str>`
 - `Point<integer, f64>`
-- `Point<ingeter, integer>`
+- `Point<integer, integer>`
 - `Point<bool, bool>`
 
 So you can't really mix those values directly with each other until you've implemented that kind of interaction in your code.
