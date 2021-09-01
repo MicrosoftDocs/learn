@@ -20,6 +20,8 @@ Now, you can be more confident that your automated deployments will succeed and 
 - [What-if operation](/azure/azure-resource-manager/templates/deploy-what-if)
 - Testing
   - [Pester](https://github.com/pester/Pester)
+  - [PSRule for Azure](https://azure.github.io/PSRule.Rules.Azure/)
+  - [Software on Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted?&tabs=yaml#software)
   - [Use output variables from tasks](/azure/devops/pipelines/process/variables#use-output-variables-from-tasks)
   - [Deployment jobs - support for output variables](/azure/devops/pipelines/process/deployment-jobs#support-for-output-variables)
   - [Test results](/azure/devops/pipelines/test/review-continuous-test-results-after-build)

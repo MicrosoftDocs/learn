@@ -51,6 +51,14 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 1. Save the file.
 
+## Verify and commit your pipeline definition
+
+1. Verify that your *azure-pipelines.yaml* file looks like the following:
+
+   :::code language="yaml" source="code/5-pipeline.yml" :::
+
+   If it doesn't, update it to match this example, then save it.
+
 1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 
    ```bash

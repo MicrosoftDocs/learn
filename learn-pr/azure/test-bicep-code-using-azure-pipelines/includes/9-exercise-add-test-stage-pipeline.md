@@ -41,6 +41,9 @@ The test script you created in the preceding steps requires a host name to test.
 
    After the deployment completes, the script accesses the value of the `appServiceAppHostName` output from the Bicep deployment. It does this by using the `jq` tool to access the relevant part of the JSON output. Then, it publishes the value to a stage output variable named `appServiceAppHostName`.
 
+   > [!NOTE]
+   > Pester and jq are both pre-installed on Azure Pipelines Microsoft-hosted agents, so you don't need to do anything special to use them in a script step.
+
 1. Save the file.
 
 ## Add a smoke test stage to your pipeline

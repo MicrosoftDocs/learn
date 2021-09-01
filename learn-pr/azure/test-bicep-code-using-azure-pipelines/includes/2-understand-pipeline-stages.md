@@ -87,7 +87,7 @@ A typical Bicep deployment pipeline contains several stages. As the pipeline mov
 1. **Validate:** Use the Azure Resource Manager preflight validation process to check for problems that might occur when you deploy.
 1. **Preview:** Use the what-if command to validate the list of changes that will be applied against your Azure environment. Ask a human to manually review the what-if results and approve the pipeline to proceed.
 1. **Deploy:** Submit your deployment to Resource Manager and wait for it to complete.
-1. **Smoke Test:** Run post-deployment smoke tests against some of the important resources that you've deployed.
+1. **Smoke Test:** Run basic post-deployment checks against some of the important resources that you've deployed - these are called *infrastructure smoke tests*.
 
 > [!NOTE]
 > Your organization might have a different sequence of stages, or you might need to integrate your Bicep deployments into a pipeline that deploys other components. Once you understand how the stages above work, you can design a pipeline to suit your needs.

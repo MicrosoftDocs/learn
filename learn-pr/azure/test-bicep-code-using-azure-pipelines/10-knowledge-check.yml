@@ -40,9 +40,9 @@ quiz:
       explanation: Correct. A human can verify the configuration of your environment after deployment and then approve the continuation of the pipeline. You could also consider running an automated smoke test.
   - content: Which of these statements is true?
     choices:
-    - content: A linting warning in Bicep should cause the pipeline to stop.
+    - content: The Bicep linter needs to be installed separately to Bicep.
       isCorrect: false
-      explanation: Incorrect. Linter warnings don't automatically cause your pipeline to stop. You can configure the linter to emit errors, which cause your pipeline to stop. Also, you might choose to leave some linter checks as warnings.
+      explanation: Incorrect. The Bicep linter is part of the Bicep tooling, and it runs automatically when you build or deploy a Bicep file.
     - content: A template with no linting warnings or errors is guaranteed to deploy successfully.
       isCorrect: false
       explanation: Incorrect. The linter only verifies some basic code style checks. Your template might lint successfully but not deploy.

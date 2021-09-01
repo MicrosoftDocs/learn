@@ -25,6 +25,9 @@ It's also a good idea to perform *negative testing*. Negative testing helps you 
 
 There are many ways you can run tests in your pipeline. In this module, we use Pester, which is an open-source tool that runs tests written using PowerShell. You might choose to use a different test framework, or even to run your tests without a testing tool.
 
+> [!NOTE]
+> Another test tool to consider is PSRule for Azure, which includes a number of pre-built rules and tests for Azure. We link to PSRule in the summary.
+
 When you use a supported test framework, Azure Pipelines understands the results of each test. It displays the test results alongside the pipeline run information, and it tracks the history of each test over time. In the next exercise, you'll see how you can use Azure Pipelines with infrastructure smoke tests.
 
 ### Pass data between steps and stages
@@ -65,7 +68,7 @@ Suppose your pipeline deploys your resources successfully, but your tests fail. 
 Earlier in this module, you learned that Azure Pipelines enables you to create *rollback stages* that execute when a previous stage fails. You can use this approach to create a rollback stage when your test stage reports an unexpected result. You also could manually roll back your changes, or re-execute your entire pipeline if you think the failure was due to a temporary issue that's since been resolved.
 
 > [!NOTE]
-> When you submit a deployment to Azure Resource Manager, you can request that Resource Manager automatically re-run your last successful deployment if it fails. To do this, use the `--rollback-on-error` command.
+> When you submit a deployment to Azure Resource Manager, you can request that Resource Manager automatically re-run your last successful deployment if it fails. To do this, use the `--rollback-on-error` parameter when you submit the deployment using the Azure CLI's `az deployment group create` command.
 
 However, it's often challenging to work out the steps that a rollback stage should perform. Bicep deployments are generally quite complex, and it's not easy to roll back changes. It's especially difficult to roll back when your deployment includes other components. For example, imagine your pipeline deploys a Bicep file that defines an Azure SQL database, and then adds some data to the database. When your deployment is rolled back, should the data be deleted? Should the database be removed too? It's difficult to predict how every failure and every rollback could impact your running environment.
 
