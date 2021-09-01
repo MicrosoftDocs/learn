@@ -1,12 +1,16 @@
-Creating a strong resume is your central task as you're seeking an internship. A well-prepared resume can land you a job or at least enough interest for a company to reach out. Before you begin, though, an interesting question is, what items do you put in your resume, and how do you describe them? In this exercise, you'll learn how to recall experiences and describe them in various interesting ways.
+Creating a strong resume is your central task as you're seeking an internship. A well-prepared resume can land you a job or at least spark enough interest for a company to reach out to you. 
+
+Before you jump right into creating that resume, though, an interesting question to ask yourself might be, What experiences do I put in it, and how do I describe them? 
+
+In this exercise, you'll learn how to recall experiences and describe them in various interesting ways.
 
 ## Step 1: Get it on paper
 
-It's tempting to start writing down things in a text editor on your computer. But step back for a moment and consider taking a different approach: using physical sticky notes. By using sticky notes, you can think about each experience separately and not be distracted with formatting your text document.
+It's tempting to just start pouring words into a text editor on your computer. But step back for a moment and consider taking a different approach: using physical sticky notes. Separate sticky notes can help you think about each individual experience without the distraction of having to format your text immediately.
 
 Try this:
 
-Take out three sticky notes and, letting each one represent one of your most impactful experiences, write a descriptive title on each note. Here's an example of three experiences on three notes:
+On each of three sticky notes, write a descriptive title that represents one of your most impactful experiences. Here are three example experiences:
 
    > 3rd year project - course lab correcting software:
    >
@@ -16,7 +20,7 @@ Take out three sticky notes and, letting each one represent one of your most imp
 
 ## Step 2: Describe the experiences
 
-Now let's flesh out the notes slightly with what each experience was about and, most importantly, the impact of your work.
+Now let's flesh out the notes slightly with what each experience was about and, most importantly, the impact of your contribution.
 
 1. On one of the three notes, add a description of your experience and your impact on it. Here's how it might look:
 
@@ -32,7 +36,7 @@ Now let's flesh out the notes slightly with what each experience was about and, 
 
 For each of these experiences, consider your impact, and internally rank or grade your notes according to that impact. 
 
-   Your experiences might be of different kind, possibly a mix of IT Support, software development, and leadership. It might make sense to rank these experiences differently, depending on the job or internship you're seeking. And a project with a positive, practical outcome that has been adopted or applied by a company likely has a greater impact than a class project you undertook at school.
+   Your experiences are likely to vary quite a bit. They might be a mix of IT Support, software development, and leadership. It might make sense to rank these experiences according to the job or internship you're seeking. A project that produced, say, an app that was adopted for use by a company likely has a greater impact than a simpler class project you undertook at school.
 
    For example, if you're looking for a software developer internship, here's a possible ranking, from highest to lowest:
 
@@ -43,17 +47,26 @@ For each of these experiences, consider your impact, and internally rank or grad
    > University IT Support
 
 <<<<<<< HEAD
+<<<<<<< HEAD
    The first two experiences are all about software development, and having code to show for them makes this ranking appropriate. However, depending on the nature of your job, an IT support job can be a great experience to highlight because it demonstrates that you've put service-mindedness, empathy, and other skills to the test.
 =======
    The two experiences at the top are all about software development and having code to show for makes this arrangement ideal. However, depending on the nature of your job, an IT support job can be a great experience to have as it shows service minded, empathy and many other skills being put to the test.
+=======
+   The first two experiences are all about software development, and having actual code to show for them makes this ranking appropriate. However, depending on the nature of the role you're applying for, an IT support job can be a great experience to highlight because it demonstrates that you've put service-mindedness, empathy, and other skills to the test.
+>>>>>>> eb7f924e7ae4cc1d2d3b7b51b5e87cf83f4af55e
 
 ## Create the resume
 
-Now you've laid some important ground work, you've practiced describing your experiences, arrange them to adjust to various positions, now what? Now it's time to write it all down using your favorite word processing program, for example Word. It's recommended that you find a resume template but all you really need is a program capable of producing layout and adding things like headers. 
+Now that you've practiced describing your experiences and prioritized them according to the roles you might be seeking, what's next? 
 
-1. Select and download, a resume template from a web page of your choice. Once you've made your selection, start transcribing the information from the sticky notes into the template.
+It's time to write it all down by using Microsoft Word or another favorite word-processing program. We recommended that you find a resume template, but all you really need is a program that's capable of producing a layout, formatting type, and adding section headings. 
 
-   > For example, go to https://templates.office.com/en-gb/premium-templates/resumes-and-cover-letters and select a resume template and download it to your machine. 
+1. Select and download a resume template from a webpage of your choice. For example, go to the Microsoft Office [Premium templates] (https://templates.office.com/en-gb/premium-templates/resumes-and-cover-letters) page.
+1. Transcribe the handwritten information from the sticky notes to the template.
 
+<<<<<<< HEAD
 Congratulations, you've started to think about how to organize information on various experiences and you ended up with a resume template that you now can keep working on to craft an eye-catching resume.
 >>>>>>> f5c0e992f9eef597ffca1d51f177f664a693d5a6
+=======
+Congratulations, you've organized your experiences and begun crafting an eye-catching resume.
+>>>>>>> eb7f924e7ae4cc1d2d3b7b51b5e87cf83f4af55e
