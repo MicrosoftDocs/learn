@@ -142,7 +142,7 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. In the right menu bar, select **Pin to dashboard**. The **Pin to dashboard** pane appears.
 
-1. In the **Dashbaord name** dropdown list, enter your web app name, and then select **Create and pin**.
+1. In the **Dashboard name** dropdown list, enter your web app name, and then select **Create and pin**.
 
 1. Allow the system to run for five minutes to stabilize, and then note the CPU Time, the number of HTTP 4xx errors, and the average response time. You should see a significant number of HTTP 4xx errors (these are HTTP 408 Timeout errors), and that the average response time is several seconds. You might see the occasional HTTP server error, depending on how the webserver is coping with the burden.
 
@@ -152,7 +152,7 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 ## Scale out the web app and verify the performance improvement
 
-1. In the Azure portal, select your web app name (App service), and in the left menu pane, under **Settings**, select **Scale out (App Service plan)**. The **Scale out (App Servie plan)** pane appears.
+1. In the Azure portal, select your web app name (App service), and in the left menu pane, under **Settings**, select **Scale out (App Service plan)**. The **Scale out (App Service plan)** pane appears.
 
 1. On the **Configure** tab, set the **Instance count** to **5**, and in the top menu bar, select **Save**.
 
