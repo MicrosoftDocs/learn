@@ -224,11 +224,11 @@ The results should show that, because the NSG is associated with the backend sub
 
 ## Use Connection Monitor to run tests from the frontend to the backend
 
-Run the same test in the opposite direction. Let's set up a test in Connection Monitor. Start by creating a test from the frontend VM to the backend VM.
+Run the same test in the opposite direction. Let's set up another test in Connection Monitor. Start by creating a test from the frontend VM to the backend VM.
 
-1. Under **Monitoring**, select **Connection monitor**. The **Network Watcher | Connection monitor** pane appears.
+1. From Network Watcher pane, in resource menu under **Monitoring**, select **Connection monitor**. The **Network Watcher | Connection monitor** pane appears.
 
-1. From the top menu bar, select **Create**. The **Create Connection Monitor** pane appears.
+1. From the command bar, select **Create**. The **Create Connection Monitor** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -240,14 +240,9 @@ Run the same test in the opposite direction. Let's set up a test in Connection M
 
 1. Select **Next : Test groups**. The **Add test group details** pane appears.
 
-1. Enter the following values for each setting.
+1. In **Test group name**, enter 'Front-to-back-HTTP-test-group' and then select **Add sources**. The **Add Sources** pane appears. 
 
-    | Setting | Value |
-    | --- | --- |
-    | Test group name | Front-to-back-HTTP-test-group |
-    | Sources box | Select **Add sources** |
-
-1. The **Add Sources** pane appears. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list.
+1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, select **MyVNet1** from the list.
 
 1. At the bottom of the pane, expand **Selected sources (2 Azure endpoints)**. The *BackendVM* and *FrontendVM* Azure endpoints appear.
 
@@ -267,11 +262,13 @@ Run the same test in the opposite direction. Let's set up a test in Connection M
     | Protocol | HTTP |
     | Destination port | 80 |
     | Test Frequency | Every 30 seconds |
-    | *Maintain the default values for the remaining settings* |
+    | *Accept the default values for the remaining settings* |
 
 1. Select **Add Test configuration**. The **Add test group details** reappears with your test configuration identified.
 
-1. In the **Destinations** box, select **Add destinations**. The **Add Destinations** pane appears. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list.
+1. In the **Destinations** box, select **Add destinations**. The **Add Destinations** pane appears. 
+ 
+1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list.
 
 1. At the bottom of the pane, expand **Selected destinations (2 Azure endpoints)**. The *BackendVM* and *FrontendVM* Azure endpoints appear.
 
@@ -289,7 +286,7 @@ The results should show that, because the NSG is associated with the backend sub
 
 Let's use the IP flow verify tool to get more information.
 
-1. On the **Connection monitor** pane, in the left nav bar, under **Network diagnostic tools**, select **IP flow verify**.
+1. On the **Connection monitor** pane, in the resource menu under **Network diagnostic tools**, select **IP flow verify**.
 
 1. Configure the test by entering the following values for each setting, and then select **Check**.
 
@@ -309,6 +306,6 @@ Let's use the IP flow verify tool to get more information.
 
     ![Screenshot that shows an IP flow test.](../media/3-ip-flow-test.png)
 
-1. Examine the results. They show that access is denied because of NSG and security rules.
+1. The Result shows Access denied because of NSG and security rules.
 
 In this exercise, you have successfully used Network Watcher tools to discover the connectivity issue between the two subnets. Communication is allowed one way but blocked the other way because of NSG rules.
