@@ -16,17 +16,17 @@ quiz:
   questions:
     - content: How long does a recruiter usually take to initially scan a resume?
       choices:
-        - content: Up to 10 seconds.
+        - content: Up to 10 seconds
           isCorrect: true
           explanation: Because of the volume of resumes they receive daily,
             recruiters can afford the time to fully read only resumes that address the
             position's requirements and pique their interest.
-        - content: From 30 seconds to a minute.
+        - content: From 30 seconds to a minute
           isCorrect: false
-          explanation: Recruiters take at most 10 seconds for an initial resume scan, which, if it passes, determines whether the resume will be read in full.
-        - content: 5 minutes.
+          explanation: Recruiters take at most 10 seconds for an initial resume scan, which determines whether the resume will be read in full.
+        - content: 5 minutes
           isCorrect: false
-          explanation: Recruiters take at most 10 seconds for an initial resume scan, which, if it passes, determines whether the resume will be read in full.
+          explanation: Recruiters take at most 10 seconds for an initial resume scan, which determines whether the resume will be read in full.
     - content: What are the key sections that every student resume should have?
       choices:
         - content: Education, Skills, and Experience and/or Projects
@@ -38,15 +38,15 @@ quiz:
           explanation: Although Education and Experience are two key sections, an Honors and Affiliations section is not considered a must. The other two key sections are Skills and Projects.
         - content: Experience, Projects, Skills, and Volunteering
           isCorrect: false
-          explanation: The most important section in any student resume is the Education section. Replace Volunteering with an Education section, and you will have the key sections.
-    - content: Which one of the following Experience descriptions highlights your impact?
+          explanation: The most important section in any student resume is the Education section. Replace Volunteering with an Education section, present it first, and you'll have the three key sections.
+    - content: Which one of the following Experience descriptions best highlights a student's impact?
       choices:
         - content: Improved route accuracy by 15% through the implementation of a real-time updating algorithm, as measured by comparing the number of real routes generated before and after the implementation
           isCorrect: true
-          explanation: The statement starts by showcasing the impact by using an action verb to highlight the results, moves on to the "how," and finishes with how the impact was measured. For more guidance, follow the template mentioned in the "Write your resume" unit.
+          explanation: The statement showcases impact by using an action verb to highlight the results, moves on to the "how," and finishes with how the impact was measured. For more guidance, follow the template mentioned in the "Write your resume" unit.
         - content: Developed a real-time updating algorithm to improve route accuracy
           isCorrect: false
-          explanation: This statement focuses on explaining what was done, but lacks action verbs that relate to impact and doesn't highlight measurable results.
+          explanation: This statement explains what was done, but lacks both an action verb that relates to impact and details about the measurable results.
         - content: Tasked with improving route accuracy by implementing new algorithms and measuring the number of real routes
           isCorrect: false
           explanation: This statement describes duties and, although it includes the "how" and the measures, it doesn't tackle impact.
