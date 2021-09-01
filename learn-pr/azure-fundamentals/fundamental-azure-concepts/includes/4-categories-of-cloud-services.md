@@ -158,7 +158,7 @@ SaaS provides the same benefits as IaaS, but again there are some additional ben
 
 The following chart illustrates the various levels of responsibility between a cloud provider and a cloud tenant.<br>
 
-:::image type="content" source="../media/shared-responsibility-76efbc1e.png" alt-text="Illustration showing the cloud responsibility model.":::
+:::image type="content" source="../media/dsBuffer.bmp.png" alt-text="Illustration showing the cloud responsibility model.":::
 <br>
 
 ## What is serverless computing?
