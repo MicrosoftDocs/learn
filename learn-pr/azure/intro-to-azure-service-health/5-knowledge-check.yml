@@ -4,91 +4,43 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Knowledge check for intro to Azure Service Health."
   ms.date: 9/1/2021
   author: ricmmartins
   ms.author: ricmart
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-### Question content requirements:
-###  - Write 5 questions
-###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
-###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
-###      Example: "What differentiates an action from a control action in an Azure Logic App?"
-###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
-###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
-###      Example: "Suppose you work for a financial company. You're building a system to let your brokers trade financial instruments. Your system must monitor market conditions, detect changes, and execute trades. You'll need to handle a large volume of transactions and you'll need to do it quickly. The faster you can complete trades, the more of an advantage you'll have over your competitors. Which requirement of this system would be difficult for Logic Apps to satisfy?"
-###
-###########################################################################
+durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Which of the following statements accurately describes Azure Service Health?"
     choices:
-    - content: ""
+    - content: "A monitoring service to Azure Virtual Machines."
+      isCorrect: false
+      explanation: "Incorrect: Azure Service Health could help identify issues on Azure platform affecting your Azure Virtual Machines, but isn't a monitoring service to Azure Virtual Machines."
+    - content: "Azure Service Health is a tool that  provides personalized alerts and guidance for Azure service issues."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct: This is the statement which best describes Azure Service Health"
+    - content: "Azure Service Health is an application performance monitoring tool."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect: Azure Advisor isn't an application performance monitoring tool."
+  - content: "What's the difference between Azure Service Health and the Azure status page?"
     choices:
-    - content: ""
+    - content: "Azure Service Health keeps you informed about the health of your environment through an authenticated experience. Azure status page is where you can find public information about the health of Azure services across all regions."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct: Azure Service Health provides personalized information while the Azure status page provides public information."
+    - content: "None. Both show the same information"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect: They provide different kind of information since Azure Service Health uses an authenticated experience."
+    - content: "Azure Service Health provides planned maintenance only, while Azure status page provides health and security advisories."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect: Azure Service Health provides information about planned maintenance, current incidents, alerts, health, and security advisories. The Azure status page is a global view of the health of all Azure services in all regions. It's a quick reference for incidents with widespread impact."
+  - content: "The information provided by Azure Service Health is restricted to a single subscription."
     choices:
-    - content: ""
+    - content: "You can't choose about which subscription you would like to receive health information."
+      isCorrect: false
+      explanation: "Incorrect: It's possible to choose for which subscription you will be getting health information."
+    - content: "You can choose among which subscriptions, region, and services you would like to receive health information."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Correct: This is the correct answer."
