@@ -18,6 +18,6 @@ By the end of this module, you will be able to:
 To get the most out of this module, you should consider reviewing the following resources:
 
 - [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts): This free hands-on learning path module helps you understand the fundamentals of Azure.
-- [Introduction to Azure SQL](https://docs.microsoft.com/learn/modules/azure-sql-intro/): This free hands-on learning path module explains the options to deploy SQL in Azure.
+- [Introduction to Azure SQL](/learn/modules/azure-sql-intro/): This free hands-on learning path module explains the options to deploy SQL in Azure.
 - [Introduction to Docker containers](/learn/modules/intro-to-docker-containers/): This learning path module will teach you the fundamentals of containers.
 - [Introduction to Kubernetes](/learn/modules/intro-to-kubernetes): This free hands-on learning path module helps you understand the fundamentals of Kubernetes, a key technology for Azure Arc-enabled data services.

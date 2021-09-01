@@ -19,7 +19,7 @@ The Azure Arc-enabled data services architecture all starts with the infrastruct
 - Google Cloud Kubernetes Engine (GKE)
 - Open source, upstream Kubernetes
 
-You should carefully [plan](https://docs.microsoft.com/azure/azure-arc/data/plan-azure-arc-data-services) your resource requirements for your infrastructure and Kubernetes before you deploy Azure Arc-enabled data services.
+You should carefully [plan](/azure/azure-arc/data/plan-azure-arc-data-services) your resource requirements for your infrastructure and Kubernetes before you deploy Azure Arc-enabled data services.
 
 Microsoft has worked with several industry partners to validate specific infrastructure and Kubernetes solutions. Learn more at the Azure Arc-enabled data services [validation program](https://docs.microsoft.com/azure/azure-arc/data/validation-program).
 
