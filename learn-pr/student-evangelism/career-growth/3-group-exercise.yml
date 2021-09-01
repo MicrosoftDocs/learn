@@ -10,6 +10,6 @@ metadata:
   ms.author: jelooper 
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
-durationInMinutes: 3 # user input: the estimate time to complete the unit
+durationInMinutes: 2 # user input: the estimate time to complete the unit
 content: |
-  [!include[](includes/5-group-exercise.md)]
+  [!include[](includes/3-group-exercise.md)]

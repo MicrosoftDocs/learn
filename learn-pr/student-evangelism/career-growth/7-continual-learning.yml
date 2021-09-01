@@ -10,9 +10,9 @@ metadata:
   ms.author: jelooper
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
-  [!include[](includes/10-continual-learning.md)]
+  [!include[](includes/7-continual-learning.md)]
 quiz:
   questions:
   - content: "Is it necessary to go back to school to continue learning?"

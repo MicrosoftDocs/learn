@@ -1,6 +1,16 @@
 One way to meet people in your new organization is to join clubs and social groups. In this exercise, you will create a series of activities that will help you integrate into the group.
 
-## Make a list
+## Book 1:1s
+
+Your first three months in any position comprise an important moment.
+
+1. Make a list of 10 people in your new organization whom you'd like to meet. Write down one question you'd like to ask of each of them and schedule a coffee/tea chat with one per week.
+
+  > For example, Book 1:1 with Project Manager, question: what process does the team have for visualize what they are working on?
+
+  > Another example, Book 1:1 with Team lead, question: how many months am I expected to spend to get up to speed with how things work? 
+
+## Find new places to network - make a list of hobbies
 
 What do you like to do? Make a list of your hobbies. Try to include both indoor and outdoor activities. Think outside the box: if you had unlimited time, what's a hobby you would like to try?
 
