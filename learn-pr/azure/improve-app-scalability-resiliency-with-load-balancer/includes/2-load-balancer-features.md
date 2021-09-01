@@ -14,7 +14,7 @@ Azure Load Balancer is a service you can use to distribute traffic across multip
 - **Destination port**: The destination port of the request.
 - **Protocol type**: The specified protocol type, TCP or UDP.
 
-![A diagram that shows an overview of Azure Load Balancer.](../media/2-load-balancer-distribution.svg)
+:::image type="content" source="../media/2-load-balancer-distribution.svg" alt-text="Screenshot showing an overview of Azure Load Balancer.":::
 
 Load Balancer supports inbound and outbound scenarios, provides low latency and high throughput, and scales up to millions of flows for all TCP and UDP applications.
 
@@ -32,13 +32,13 @@ To achieve high availability with Load Balancer, you can choose to use availabil
 
 An availability set is a logical grouping that you use to isolate virtual machine resources from each other when they're deployed. Azure ensures that the virtual machines you put in an availability set run across multiple physical servers, compute racks, storage units, and network switches. If there's a hardware or software failure, only a subset of your virtual machines is affected. Your overall solution stays operational. Availability sets are essential for building reliable cloud solutions.
 
-![A diagram that shows an overview of availability sets in Azure.](../media/2-availability-sets.svg)
+:::image type="content" source="../media/2-availability-sets.svg" alt-text="Screenshot showing an overview of availability sets in Azure.":::
 
 ### Availability zones
 
 An availability zone offers groups of one or more datacenters that have independent power, cooling, and networking. The virtual machines in an availability zone are placed in different physical locations within the same region. Use this architecture when you want to ensure that, when an entire datacenter fails, you can continue to serve users.
 
-![A diagram that shows an overview of availability zones in Azure.](../media/2-az-graphic-two.svg)
+:::image type="content" source="../media/2-az-graphic-two.svg" alt-text="Screenshot showing an overview of availability zones in Azure.":::
 
 Availability zones don't support all virtual machine sizes and aren't available in all Azure regions. Check that they are supported in your region before you use them in your architecture.
 
@@ -56,7 +56,7 @@ Basic load balancers allow:
 
 Basic load balancers can be used only with availability sets.
 
-Standard load balancers support all of the basic features. They also allow:
+Standard load balancers support all of the basic load balancer features. They also allow:
 
 - HTTPS health probes
 - Availability zones
@@ -69,4 +69,4 @@ Standard load balancers support all of the basic features. They also allow:
 
 An external load balancer operates by distributing client traffic across multiple virtual machines. An external load balancer permits traffic from the internet. The traffic might come from browsers, mobile apps, or other sources. In a healthcare organization, the balancer distributes the load of all the browsers that run the client healthcare application.
 
-An internal load balancer distributes a load from internal Azure resources to other Azure resources. For example, if you have front-end web servers that need to call business logic that's hosted on multiple middle-tier servers, you can distribute that load evenly by using an internal load balancer. No traffic is allowed from internet sources. In a healthcare organization, the load balancer distributes a load across the internal application tier.
+An internal load balancer distributes a load from internal Azure resources to other Azure resources. For example, if you have frontend web servers that need to call business logic that's hosted on multiple middle-tier servers, you can distribute that load evenly by using an internal load balancer. No traffic is allowed from internet sources. In a healthcare organization, a load balancer distributes a load across the internal application tier.
