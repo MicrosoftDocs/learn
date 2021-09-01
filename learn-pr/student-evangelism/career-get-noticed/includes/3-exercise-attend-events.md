@@ -1,4 +1,4 @@
-The first step to networking, is to attend functions and events within your sphere of interest. In this exercise, you will be given ideas for how to sign up for and attend events. You will also be given some guidance on meeting people.
+The first step to networking, is to attend functions and events within your sphere of interest. In this exercise, you'll find an event to attend and create a plan to make the most out of the networking you do.
 
 ## Sign up for a user group
 
@@ -8,15 +8,13 @@ The first step to networking is to find out where to meet people. Within technol
 
    For example, join a group on JavaScript and another on Vue.js
 
-## Go to an event
+## Choose an event to attend
 
-User groups usually have meetings with a monthly cadence. By going to an event, you will be able to meet peers with a similar interest. Your goal for attending such an event should be to establish a personal connection. Sometimes the people you meet is future colleague or a recruiter. If a hiring manager has met you in person at an event, they might ask you to submit a resume there and then or keep you updated on future opportunities.
+User groups usually have meetings with a monthly cadence. By going to an event, you will be able to meet peers with a similar interest. Your goal for attending such an event should be to establish a personal connection. Sometimes the people you meet will be future colleagues or recruiters. If a hiring manager has met you in person at an event, they might ask you to submit a resume there and then or keep you updated on future opportunities.
 
-1. Sign up for an event.
+1. Sign up for an event. An event usually consists of one or more speakers and at least a break between session. Now is your chance to meet people of interest.
 
-   Join a JavaScript event on the 15th
-
-   An event usually consists of one or more speakers and at least a break between session. Now is your chance to meet people of interest.
+   > Join for example, a tech event on the 15th
 
 1. Set a goal for meeting and conversing with many people at the event.
 
