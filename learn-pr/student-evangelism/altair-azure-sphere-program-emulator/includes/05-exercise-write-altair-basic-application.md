@@ -4,7 +4,7 @@ By default, the Altair emulator boots CP/M. To change the boot order, and boot A
 
 1. From Visual studio code, open the Altair emulator CMakeList.txt file, and update the **BOOT CONFIG**.
 
-    ```text
+    ```cmake
     # BOOT CONFIG #####################################################################################################
     #
     # Comment out the "add_compile_definitions(BOOT_CPM) line below to boot Altair BASIC 4.0
@@ -22,9 +22,9 @@ By default, the Altair emulator boots CP/M. To change the boot order, and boot A
 1. If required, authenticate the Web Terminal.
 1. The Altair emulator may have started running before you connected to the Web Terminal. If so, press the **RESET** button on the Azure Sphere to restart the Altair emulator. When the Azure Sphere restarts, the Altair BASIC will prompt for the following information.
 
-* **MEMORY SIZE?** Press the Enter key to accept the default.
-* **TERMINAL  WIDTH?** Press the Enter key to accept the default.
-* **WANT SIN-COS-TAN-ATN?** Y or N
+    * **MEMORY SIZE?** Press the Enter key to accept the default.
+    * **TERMINAL  WIDTH?** Press the Enter key to accept the default.
+    * **WANT SIN-COS-TAN-ATN?** Y or N
 
 Altair BASIC will respond with the amount of memory and version information.
 
@@ -79,4 +79,4 @@ Then run the application.
 run
 ```
 
-In the following unit, you'll learn how to program the Altair emulator using the front panel.
+In the following unit, you'll learn how to program the Altair emulator from the front panel.

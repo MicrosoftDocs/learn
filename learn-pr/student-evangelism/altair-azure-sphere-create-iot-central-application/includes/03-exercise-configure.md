@@ -1,6 +1,6 @@
 In this exercise, you'll create an Azure Iot Central application and link it to your Azure Sphere tenant.
 
-## Step 1: Create a new Azure IoT Central application
+## Create a new Azure IoT Central application
 
 1. Open the IoT Central web portal by selecting this link [Azure IoT Central](https://azure.microsoft.com/services/iot-central?azure-portal=true).
 
@@ -22,7 +22,7 @@ In this exercise, you'll create an Azure Iot Central application and link it to 
 
 1. Select **Create**.
 
-## Step 2: Establish trust between IoT Central and your Azure Sphere Tenant
+## Establish trust between IoT Central and your Azure Sphere Tenant
 
 1. If you're using Windows, open a Windows **PowerShell command line**. If you're using Linux, open **Terminal**.
 
