@@ -67,7 +67,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
 
-   :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/3-open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code that shows a prompt to open the cloned repository, with the Open button highlighted.":::
+   :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code that shows a prompt to open the cloned repository, with the Open button highlighted.":::
 
 ## Sign in to Azure
 
