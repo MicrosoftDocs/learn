@@ -89,7 +89,7 @@ An easy-to-follow impact statement template can look like this:
 
 > Achieved (or any impact-driven action verb) _____ (what you achieved) by doing ____ (how you achieved it), measured by ____ (any number that serves as context for your description. Though not always necessary, metrics help bring value to your actions).
 
-## Non-technical experience
+### Non-technical experience
 
 A common misconception about technical internships is that non-technical experience has no value in a resume. Many students believe that companies care only about how good or experienced a candidate is in programming languages, software concepts, data structures, or math. However, non-technical experience provides unique ways to showcase who you are, a critical aspect to convey when you apply for a job.
 
@@ -105,9 +105,9 @@ By using the description template, you could write some bullet points like the f
 
 These points describe your experience while highlighting your interests as an individual. You emphasize your grasp of collaboration, communication, time management, dependability, and decision-making. Do not take non-technical experience lightly, because it could often help you as much as or more than your technical experience when it comes to standing out among other applicants.
 
-## Describe your ongoing experiences
+## Your ongoing experiences
 
-Whenever you describe an ongoing experience in your resume, make sure that you write about it with action verbs in present tense. That is, write "ensure" instead of "ensured," "develop" instead of "developed," and so on. Even if the task has already been completed, if the experience is ongoing, the best practice is to keep it in present tense. For experiences that began and ended in the past, use past tense.
+Whenever you describe an ongoing experience in your resume, write about it by using action verbs in present tense. For example, write "ensure" instead of "ensured," "develop" instead of "developed," and so on. Even if the task has already been completed, if the experience is ongoing, the best practice is to keep it in present tense. This approach tells recruiters that you're currently working on something. For experiences that began and ended in the past, use past tense.
 
 ## Next steps
 
