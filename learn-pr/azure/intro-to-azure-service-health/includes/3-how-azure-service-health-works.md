@@ -64,14 +64,16 @@ On this page also is possible get the RSS feed to receive updates on this page, 
 
 Service Health is what you will be using to get information on outages, planned maintenance, health and security advisories.
 
-It allows you to create customized views, filtering among subscription, region and services. See below what kind of information will be available to you for each case:
+It allows you to create customized views, filtering among subscription, region and services. The level of details will include:
 
-* Service issues: Issue name; subscription, service and region impacted; start time; last update status and root cause analysis; downloadable PDF with explanations.
-* Planned maintenance: Issue name; tracking id; service and region impacted; start and end time; summary and issue updates; downloadable PDF with explanations.
-* Health advisory: Issue name; tracking id; service and region impacted; start time; any required action from you (if needed); summary and issue updates; downloadable PDF with explanations.
-* Security advisory: Issue name; tracking id; service and region impacted; start time; any required action from you (if needed); summary and issue updates; downloadable PDF with explanations.
+* Issue Name;
+* Subscription, service and region impacted;
+* Start time;
+* Summary and issue updates;
+* Root cause analysis;
+* Downloadable PDF with explanations.
 
-Also Service Health will allow you to create health alerts to notify you when something happens. 
+Also Service Health will allow you to create health alerts to notify you when something happens.
 
 ### Resource Health
 
@@ -84,7 +86,7 @@ As an example, for Virtual Machines the type of checks executed are like below:
 * Is there ongoing planned maintenance?
 * Is the host hardware degraded and predicted to fail soon?
 
-The Resource Health is available through "Support + troubleshooting" blade at Azure Portal for some specific resource types on Azure. 
+The Resource Health is available through "Support + troubleshooting" blade at Azure Portal for some specific resource types on Azure.
 
 :::image type="content" source="../media/3-azure-resource-health.png" alt-text="Screenshot of Azure Resource Health":::
 
