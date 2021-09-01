@@ -21,6 +21,7 @@ Your Education section should include the following information:
 
 * **What you are studying**: First and foremost, you must include the subject that you're studying, that is, the degree you're aiming to obtain. The title of the degree should be written left aligned, and it may be bolded, italicized, or capitalized as a way to distinguish it from the rest of the text.
 
+<<<<<<< HEAD
 * **Graduation date**: Next, focus on your expected graduation date. This date should be written on the right, most commonly next to the degree you're studying for, and specifying that it is an expected date rather than a completion date. For example, you might write,  "Expected: May 2021".
 
 * **The program**: On the next line, specify your program of study, and just as you did for the expected graduation date, include where the program is located.
@@ -28,6 +29,15 @@ Your Education section should include the following information:
    If you've attended multiple colleges, there's usually no reason to include all of them. More often than not, listing your current school will suffice. However, if you have multiple degrees that might be applicable to a specific position, you should definitely include them. 
 
 * **Coursework**: This last part should be a concise list of *related coursework*. Although this information is optional, it can help recruiters assess your level of knowledge. Most junior and senior year internships expect some courses to be in your repertoire, such as *Data Structures and Algorithms* for Computer Science students. Be sure to read the requirements for the position to which you're applying, and tailor your course list to match the knowledge that the position requires.
+=======
+- **What you are studying**. First and foremost you must include what you are studying, that is, the degree you are aiming to obtain. The title of the degree should be written left aligned, and it may be bolded, italicized, or capitalized as a way to highlight it from the rest of the text.
+
+- **Graduation date**. Next, focus on your expected graduation date. This date should be written on the right, most commonly next to the degree you are studying for, with a prefix that specifies that it is an expected date rather than a completion date. For example,  "Expected: May 2021".
+
+- **The program**. In the following line, specify your program of study, and just like you did for the expected graduation date, include where the program is located.
+
+- **Coursework**. The last part should be a concise list of *related coursework*. While optional, this list can help a recruiter assess your level of knowledge. Most junior and senior year internships expect some courses to be in your repertoire, like *Data Structures and Algorithms* for Computer Science students. Make sure to read the requirements for the position to which you are applying, and tailor your course list to match the knowledge that the position requires.
+>>>>>>> f5c0e992f9eef597ffca1d51f177f664a693d5a6
 
    As you're discussing your related coursework, include all courses that you consider representative of your technical knowledge. This is especially important if you don't have experience or relevant projects in one of the areas covered by a course that's required for the position.    
 
@@ -41,6 +51,19 @@ An example of a properly written education section might look like this:
 > 
 > Related Coursework: Data Structures, Programming in C#, Algorithms, Web Development I
 
+<<<<<<< HEAD
+=======
+## Common FAQs for the Education section
+
+Q: If I have attended multiple colleges, should I include every single one of them in this section?
+
+A: Usually, no. More often than not, your current education will suffice. *However*, if you have multiple degrees in applicable for a specific position, you can definitely include them.  
+
+Q: How many courses should I include in the related coursework?
+
+A: As many as you deem representative of your technical knowledge, especially if you do not have experience or projects in one of the areas covered by a course that is required for the position. 
+
+>>>>>>> f5c0e992f9eef597ffca1d51f177f664a693d5a6
 ## Skills
 
 This section is usually short, consisting of specific bullet points that assess your skills. In this section, you showcase your technical skills, carefully matching the required skills that are listed in the job posting. You'll want to list your skills as subgroups and ensure that they are related to one another. For example, programming languages should be grouped together.  
@@ -57,6 +80,7 @@ A skills section should look similar to the following:
 > 
 > Frameworks: ASP.NET, Django
 
+<<<<<<< HEAD
 > [!TIP]
 > To help with organization and to reduce the amount of vertical space the information sometimes requires, you could also try formatting it in tables, like this:
 >
@@ -65,6 +89,16 @@ A skills section should look similar to the following:
 > | --- | --- | --- |
 > | Intermediate proficiency in Python, C#, Java; beginner proficiency in Swift | Visual Studio, Anaconda, XCode, Azure PowerTools | ASP.NET, Django |
 > | | |
+=======
+
+Make use of columns to reduce the vertical space taken by this section. Here's how an example of how you can divide up this section:
+
+> #### Skills 
+> |Programming languages | Frameworks |
+> |----------------------|--|
+> | Python | Django, Flask |
+> | JavaScript | Express, React |
+>>>>>>> f5c0e992f9eef597ffca1d51f177f664a693d5a6
 
 ## Experience and projects
 
@@ -72,15 +106,25 @@ This section is split into two parts to differentiate professional experience fr
 
 The following guidelines can assist you in formatting both subsections:
 
+<<<<<<< HEAD
 * **Project**: Define the name or overall idea of your project, or your role in the case of experience, and write it left aligned on the first line. For example:
+=======
+- **Project**. Define the name or overall idea of your project, or your role in the case of experience, and write it left aligned on the first line. For example:
+>>>>>>> f5c0e992f9eef597ffca1d51f177f664a693d5a6
 
     > Calculator Class Project
     >
     > Learn University Gardening Club Member
 
+<<<<<<< HEAD
 * **Dates**: Similar to how you listed your anticipated graduation date, list the dates for both projects and positions. If these projects or positions are ongoing, write the starting date followed by "- Current". This information should be right aligned on the same line as the name/role.
 
 * **Describe experience**: Following the title of your project/your role, add the bullet points that describe your experience. Doing so will incorporate the writings we described in the previous unit, under [Describe your experience](../4-resume-writing.yml). Following the examples used there, the two subsections should be similar to the following:
+=======
+- **Dates**. Similar to the expected graduation date, list the dates for both projects and positions. If these projects or positions are ongoing, write the starting date followed by "- Current". This information should be right aligned on the same line as the name/role.
+
+- **Describe experience**. Following the title of your project/your role, you will want to add the bullet points describing your experience. Doing so will incorporate the writings we described in the previous unit, under [Describing your experience](../4-resume-writing.yml). Following the examples used there, the two subsections should be similar to the below text:
+>>>>>>> f5c0e992f9eef597ffca1d51f177f664a693d5a6
 
    >#### Projects
    >
