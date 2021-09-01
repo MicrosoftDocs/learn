@@ -60,7 +60,8 @@ Here are some questions you can ask your manager to help frame conversations:
 
 Ask for specific feedback from your manager, teammates, and colleagues. What is expected of you? It's best to know this up front so that you can perform a task and then ask how you can improve in execution. Make notes of this feedback and review your documentation periodically.
 
-> [!TIP] A good idea is to ask for two things you do well and an area which you can grow in. Ask for specific examples so you understand how you could have done a situation differently.
+> [!TIP]
+> A good idea is to ask for two things you do well and an area which you can grow in. Ask for specific examples so you understand how you could have done a situation differently.
 
 You should know by the end of an internship how much you have grown and what people think of your performance.
 
