@@ -9,7 +9,9 @@ If you're new to Azure, you can sign up for a free account on the Azure website 
 
 You can purchase Azure access directly from Microsoft by signing up on the [Azure website](https://azure.microsoft.com/?azure-portal=true) or through a Microsoft representative. You can also purchase Azure access through a Microsoft partner. Cloud Solution Provider partners offer a range of complete managed-cloud solutions for Azure.
 
-For more information on how to create an Azure account, see the [Create an Azure account](/learn/modules/create-an-azure-account/) learning module.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWK1QU]
+
+For more information on how to create an Azure account, see the [Create an Azure account](/learn/modules/create-an-azure-account/?azure-portal=true) learning module.
 
 ## What is the Azure free account?
 

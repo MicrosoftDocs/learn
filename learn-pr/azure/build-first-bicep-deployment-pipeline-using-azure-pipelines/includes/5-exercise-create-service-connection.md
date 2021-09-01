@@ -108,7 +108,7 @@ Next, create a service connection in Azure Pipelines. This automatically creates
 
 1. Select **Service principal (automatic)** > **Next**.
 
-    :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Service principal (automatic) option highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Service principal (automatic) option highlighted.":::
 
 1. In the **Subscription** drop-down, select your Azure subscription.
 
@@ -116,7 +116,7 @@ Next, create a service connection in Azure Pipelines. This automatically creates
 
 1. In the **Resource group** drop-down, select **ToyWebsite**.
 
-1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
+1. In **Service connection name**, enter **ToyWebsite**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
 
    :::image type="content" source="../media/5-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the details completed and the Next button highlighted.":::
 
