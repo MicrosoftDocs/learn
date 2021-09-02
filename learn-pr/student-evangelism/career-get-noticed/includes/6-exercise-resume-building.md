@@ -1,6 +1,6 @@
 Creating a strong resume is your principal task as you're seeking an internship. A well-prepared resume can land you a job or at least spark enough interest for a company recruiter to reach out to you. 
 
-Before you jump right into creating your resume, though, an interesting question to ask yourself might be, What experiences do I put in it, and how do I describe them? 
+Before you jump right into creating your resume, though, an interesting question to ask yourself might be: What experiences do I put in it, and how do I describe them? 
 
 In this exercise, you'll learn how to recall experiences and describe them in various interesting ways.
 
