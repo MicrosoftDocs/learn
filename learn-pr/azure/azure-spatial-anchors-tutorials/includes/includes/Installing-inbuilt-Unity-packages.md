@@ -1,4 +1,4 @@
-# [Unity 2020 + Windows XR Plugin](#tab/winxr)
+## [Unity 2020 + Windows XR Plugin](#tab/winxr)
 
 In this section, you will upgrade or install the following inbuilt packages:
 
@@ -17,7 +17,7 @@ Add the above mentioned packages from the Unity package manager.
 >If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.
 
 
-# [Legacy WSA](#tab/wsa)
+## [Legacy WSA](#tab/wsa)
 
 In this section, you will upgrade or install the following inbuilt packages:
 
