@@ -12,13 +12,13 @@ This section in a student resume is important as it lists not only your areas of
 
 _How should you write your education section and what information should you include?_
 
-1. **What you are studying**. First and foremost you must include what you are studying, that is, the degree you are aiming to obtain. The title of the degree should be written left aligned, and it may be bolded, italicized, or capitalized as a way to highlight it from the rest of the text.
+- **What you are studying**. First and foremost you must include what you are studying, that is, the degree you are aiming to obtain. The title of the degree should be written left aligned, and it may be bolded, italicized, or capitalized as a way to highlight it from the rest of the text.
 
-1. **Graduation date**. Next, focus on your expected graduation date. This date should be written on the right, most commonly next to the degree you are studying for, with a prefix that specifies that it is an expected date rather than a completion date. For example,  "Expected: May 2021".
+- **Graduation date**. Next, focus on your expected graduation date. This date should be written on the right, most commonly next to the degree you are studying for, with a prefix that specifies that it is an expected date rather than a completion date. For example,  "Expected: May 2021".
 
-1. **The program**. In the following line, specify your program of study, and just like you did for the expected graduation date, include where the program is located.
+- **The program**. In the following line, specify your program of study, and just like you did for the expected graduation date, include where the program is located.
 
-1. **Coursework**. The last part should be a concise list of *related coursework*. While optional, this list can help a recruiter assess your level of knowledge. Most junior and senior year internships expect some courses to be in your repertoire, like *Data Structures and Algorithms* for Computer Science students. Make sure to read the requirements for the position to which you are applying, and tailor your course list to match the knowledge that the position requires.
+- **Coursework**. The last part should be a concise list of *related coursework*. While optional, this list can help a recruiter assess your level of knowledge. Most junior and senior year internships expect some courses to be in your repertoire, like *Data Structures and Algorithms* for Computer Science students. Make sure to read the requirements for the position to which you are applying, and tailor your course list to match the knowledge that the position requires.
 
 An example of a properly written education section would look like this:
 
@@ -30,7 +30,7 @@ An example of a properly written education section would look like this:
 > 
 > Related Coursework: Data Structures, Programming in C#, Algorithms, Web Development I
 
-## Education FAQS
+## Common FAQs for the Education section
 
 Q: If I have attended multiple colleges, should I include every single one of them in this section?
 
@@ -56,8 +56,14 @@ A skills section should look similar to this text:
 > 
 > Frameworks: ASP.NET, Django
 
-> [!TIP]
-> Make use of columns to reduce the vertical space taken by this section
+
+Make use of columns to reduce the vertical space taken by this section. Here's how an example of how you can divide up this section:
+
+> #### Skills 
+> |Programming languages | Frameworks |
+> |----------------------|--|
+> | Python | Django, Flask |
+> | JavaScript | Express, React |
 
 ## Experience and projects
 
@@ -65,15 +71,15 @@ This section is split into two parts to differentiate professional experience fr
 
 The following guidelines can assist you in formatting both subsections:
 
-1. **Project**. Define the name of overall idea of your project, or your role in the case of experience, and write it left aligned on the first line. For example:
+- **Project**. Define the name or overall idea of your project, or your role in the case of experience, and write it left aligned on the first line. For example:
 
     > Calculator Class Project
     >
     > Learn University Gardening Club Member
 
-1. **Dates**. Similar to the expected graduation date, list the dates for both projects and positions. If these projects or positions are ongoing, write the starting date followed by "- Current". This information should be right aligned on the same line as the name/role.
+- **Dates**. Similar to the expected graduation date, list the dates for both projects and positions. If these projects or positions are ongoing, write the starting date followed by "- Current". This information should be right aligned on the same line as the name/role.
 
-1. **Describe experience**. Following the title of your project/your role, you will want to add the bullet points describing your experience. Doing so will incorporate the writings we described in the previous unit, under [Describing your experience](../4-resume-writing.yml). Following the examples used there, the two subsections should be similar to the below text:
+- **Describe experience**. Following the title of your project/your role, you will want to add the bullet points describing your experience. Doing so will incorporate the writings we described in the previous unit, under [Describing your experience](../4-resume-writing.yml). Following the examples used there, the two subsections should be similar to the below text:
 
    >#### Projects
    >

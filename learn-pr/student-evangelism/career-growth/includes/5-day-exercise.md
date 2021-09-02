@@ -1,8 +1,8 @@
-You have a lot of control over the cadence of your day, more than you might realize once you get caught up in scheduled meetings and coding sprints. Take time to analyze yourself to determine how you work best, and try to align your day to your objectives.
+You have much control over the cadence of your day, more than you might realize once you get caught up in scheduled meetings and coding sprints. Take time to analyze yourself to determine how you work best, and try to align your day to your objectives.
 
 ## Make a planner
 
-Take a few minutes to think about your ideal working day. Make a small 'planner' page for yourself. Create a table with eight blocks to reflect an eight hour day.
+Take a few minutes to think about your ideal working day. Make a small 'planner' page for yourself. Create a table with eight blocks to reflect an eight-hour day.
 
 1. Map out your focus time
 
