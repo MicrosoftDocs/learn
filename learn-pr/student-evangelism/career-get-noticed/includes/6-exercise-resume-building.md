@@ -1,16 +1,17 @@
-Creating a strong resume is your central task as you're seeking an internship. A well-prepared resume can land you a job or at least spark enough interest for a company recruiter to reach out to you. 
+Creating a strong resume is your principal task as you're seeking an internship. A well-prepared resume can land you a job or at least spark enough interest for a company recruiter to reach out to you. 
 
-Before you jump right into creating that resume, though, an interesting question to ask yourself might be, What experiences do I put in it, and how do I describe them? 
+Before you jump right into creating your resume, though, an interesting question to ask yourself might be, What experiences do I put in it, and how do I describe them? 
 
 In this exercise, you'll learn how to recall experiences and describe them in various interesting ways.
 
 ## Step 1: Get it on paper
 
-It's tempting to just start pouring words into a text editor on your computer. But step back for a moment and consider taking a different approach: using physical sticky notes. Separate sticky notes can help you think about each individual experience without the distraction of having to format your text immediately.
+It's tempting to just start pouring words into a text editor on your computer. But step back for a moment and consider taking a different approach: using physical sticky notes. Individual sticky notes can help you think about each experience without the distraction of having to format your text immediately.
 
 Try this:
 
-On each of three sticky notes, write a descriptive title that represents one of your most impactful experiences. Here are three example experiences:
+1. Tear off three sticky notes.
+2. On each one, write a descriptive title that represents one of your most impactful experiences. Here are three example experiences:
 
    > 3rd year project - course lab correcting software:
    >
@@ -20,9 +21,9 @@ On each of three sticky notes, write a descriptive title that represents one of 
 
 ## Step 2: Describe the experiences
 
-Now let's flesh out the notes slightly with what each experience was about and, most importantly, the impact of your contribution.
+Flesh out each experience, describing it briefly and, most importantly, describing your impact on it.
 
-1. On one of the three notes, add a description of your experience and your impact on it. Here's how it might look:
+1. Add a description of your experience and your impact on it. Here's how one sticky note might look:
 
    > 3rd year project - course lab correcting software
    >
@@ -34,9 +35,10 @@ Now let's flesh out the notes slightly with what each experience was about and, 
 
 ## Step 3: Arrange them by impact
 
-For each of these experiences, consider your impact, and internally rank or grade your notes according to that impact. 
+1. Consider your impact on each of these experiences.
+1. Rank or grade your experiences according to their level of impact. 
 
-   Your experiences are likely to vary quite a bit. They might be a mix of IT Support, software development, and leadership. It might make sense to rank these experiences according to the job or internship you're seeking. A project that produced, say, an app that was adopted for use by a company likely has a greater impact than a simpler class project you undertook at school.
+   Your experiences are likely to vary quite a bit. They might be a mix of IT Support, software development, and leadership. It might make sense to rank these experiences according to the job or internship you're seeking. A project that produced, say, an app that was adopted for use by a company is likely to have a greater impact than a simpler project you undertook at school.
 
    For example, if you're looking for a software developer internship, here's a possible ranking, from highest to lowest:
 
