@@ -1,19 +1,58 @@
-TODO intro para
+Bicep modules enable you create composable, reusable files that define a set of related resources. You then use those modules in your deployment templates. Often, you want to share your Bicep modules with others, or reuse the work that others have shared. In this unit, you'll learn what Bicep module registries are, why they're useful for sharing your Bicep code, and how you can use the public Bicep module registry.
 
 ## Why do you share Bicep modules?
 
 TODO
 
-## Bicep modules and template specs
+A module registry is X
 
-## Public and private registries
+## How do module registries compare to template specs?
 
-TODO
+Azure Resource Manager also enables you to save an Azure Resource Manager template (ARM template) as a *template spec*. This is a way of making your templates reusable and sharing them through your organization. Bicep module registries and template specs are both ways of adding reusability to your deployment code, but they're optimized for different things:
 
-## Find modules on the Bicep public module registry
+- Template specs are stored in Azure as a resource. The Bicep module registry is a publicly accessible service, and you can create your own Bicep module registries within or outside of Azure.
+- Bicep modules are intended to be combined into a larger deployment. Template specs are designed to be deployable as a complete template, although you can use a template spec within a deployment if you want.
+- Template specs provide access control capabilities. When you work with a private module registry, you need to control the access to your modules in other ways. You'll learn more about this later in the module.
+- Bicep modules retain all of the original Bicep code, including comments, symbolic names, and whitespace. When you create a template spec by using Bicep, your Bicep code is converted to JSON and some of this information is lost. So you need to keep the source Bicep file somewhere else as well.
 
-## Configure Bicep to connect to a registry
+When you're deciding between template specs and Bicep modules, a good rule of thumb is: if the template is going to be deployed as is throughout your organization, template specs are probably a good fit. But if you're likely to reuse this template within multiple parent templates, Bicep modules might serve your needs better, and a module registry is a good way to use modules published by others and to share modules within your organization.
 
-## Download and restore Bicep modules
+## The Bicep public module registry
 
-TODO bicep restore / bicep build
+Microsoft maintains a publicly accessible module registry for all Bicep users to use. The registry contains modules for many commonly deployed Azure services, and anyone in the community can contribute a module if they think it will be useful to others. Microsoft reviews each submitted module for quality control purposes. You can also inspect each module before you use it.
+
+TODO more info on how to find modules in the registry. Apparently will use Microsoft Container Registry, and will be searchable through Docker Hub (https://hub.docker.com/publishers/microsoftowner)
+
+> [!TIP]
+> If you create a Bicep module that you think other people in the community might use, you can contribute it to the Bicep module registry. We link to more information in the summary.
+
+## Use a Bicep module
+
+When you've found a module you want to use, you create a *module definition* in your Bicep file like the following example:
+
+```bicep
+module myModule 'oci:todo.azurecr.io/modulerepo/modulename:moduleversion' = {
+  name: 'my-module'
+  params: {
+    moduleParameter1: 'value'
+  }
+}
+```
+
+Notice that the module definition is similar to that of a local module, but with one important difference. Instead of specifying the path to a Bicep file on your file system, you instead use a special format to tell Bicep that you're referencing a module from a registry:
+
+:::image type="content" source="../media/2-module-identifier.png" alt-text="The module identifier from the example above." border="false":::
+
+The identifier contains four segments:
+
+- **Module type**: When you work with module registries, the module type is `oci`. This means Open Container Initiative. You'll learn more about OCI later in this module.
+- **Registry**: The name of the registry that contains the module you want to use.
+- **Module**: The identifier of the specific module within the registry.
+- **Tag**: Tags typically represent versions of modules, because a single module can have multiple versions published. You'll learn more about versions later in this module.
+
+After you've added a reference to the module, Visual Studio Code attempts to automatically download the module from the registry. When the module is downloaded, the Bicep extension for Visual Studio Code gives you IntelliSense and other code authoring assistance as you work.
+
+When you're ready to deploy your Bicep file, you deploy it just like you normally do. Bicep downloads the module from the registry automatically.
+
+> [!NOTE]
+> You can also separate the module download process from the build by using the `bicep restore` command, and use the `bicep build` command with the `--no-restore` command-line switch to stop the build process from downloading the module. Generally, though, you don't need to do this - just let Bicep download the modules automatically.
