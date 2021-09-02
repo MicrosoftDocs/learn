@@ -31,7 +31,7 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
 The test script you created in the preceding steps requires a host name to test. Your Bicep file already includes an output, but before you can use it in your smoke tests you need to publish it as a stage output variable.
 
-1. In Visual Studio Code, open the *deploy/azure-pipelines.yaml* file.
+1. In Visual Studio Code, open the *azure-pipelines.yml* file in the *deploy* folder.
 
 1. In the **Deploy** stage, update the `inlineScript` to the following:
 
@@ -118,7 +118,7 @@ Now, you can add a smoke test stage that runs your tests.
 
 Now that you've identified that your Bicep definition doesn't meet your security team's requirement, you'll fix it.
 
-1. In Visual Studio Code, open the *deploy/main.bicep* file.
+1. In Visual Studio Code, open the *main.bicep* file in the *deploy* folder.
 
 1. Find the definition for the App Service app, and update it to include the `httpsOnly` property in its `properties`:
 

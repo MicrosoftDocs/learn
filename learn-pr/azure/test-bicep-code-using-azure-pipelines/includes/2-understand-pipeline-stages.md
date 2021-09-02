@@ -11,7 +11,7 @@ Stages can be used in your pipeline to mark a separation of concerns. For exampl
 In CI stages, you check the validity of the changes that have been made to your code. CI stages provide quality assurance, and they can be executed without impacting your live production environment.
 
 > [!NOTE]
-> In many programming languages, code needs to be *built* before someone can run it. While Bicep code gets transpiled to JSON ARM templates, this process is usually performed automatically by tooling. So, in most situations, you don't need to build Bicep code to JSON templates within your pipeline. We still use the terms *continuous integration* and *CI* when we talk about Bicep code, though, because the other parts of CI still apply, such as validating your code.
+> In many programming languages, code needs to be *built* before someone can run it. When a Bicep file is deployed, it is converted, or *transpiled*, from Bicep to JSON. This process is performed automatically by the tooling. In most situations, you don't need to manually build Bicep code to JSON templates within your pipeline. We still use the terms *continuous integration* and *CI* when we talk about Bicep code, though, because the other parts of CI still apply, such as validating your code.
 
 After your CI stages run successfully, you should have increased your confidence that the changes you've made will deploy successfully too. In CD stages, you deploy your code to each of your environments, usually starting with test and other non-production environments, and moving through to production environments.
 

@@ -51,7 +51,7 @@ During the process, you'll:
 
 ## Update the pipeline definition to add a preview stage
 
-1. In Visual Studio Code, open the *deploy/azure-pipelines.yaml* file.
+1. In Visual Studio Code, open the *azure-pipelines.yml* file in the *deploy* folder.
 
 1. Between the **Validate** and **Deploy** stages, add the following definition for the **Preview** stage:
 
@@ -61,7 +61,7 @@ During the process, you'll:
 
 Here, you configure the **Deploy** stage to run against the **Website** environment you created previously. You convert the **Deploy** stage to run a deployment job instead of a standard job, and configure it to deploy to the environment.
 
-1. Update the **Deploy** stage definition to the following:
+1. Replace the **Deploy** stage definition with the following:
 
    :::code language="yaml" source="code/7-pipeline.yml" range="59-79" :::
 

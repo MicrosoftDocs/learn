@@ -11,7 +11,7 @@ During the process, you'll:
 
 First, you need to update your pipeline file to define a stage. Azure Pipelines automatically creates a single stage for you, but because you'll add more stages soon, you need to update your pipeline to explicitly define stages.
 
-1. In Visual Studio Code, open the *deploy/azure-pipelines.yml* file. 
+1. In Visual Studio Code, open the *azure-pipelines.yml* file in the *deploy* folder.
 
 1. Remove everything in the file from line 9 to the bottom of the file. Make sure you remove the line that says `jobs:` as well.
 
@@ -101,7 +101,7 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 Now that you've identified the problem, you can fix it in your Bicep file.
 
-1. In Visual Studio Code, open the *deploy/main.bicep* file.
+1. In Visual Studio Code, open the *main.bicep* file in the *deploy* folder.
 
 1. Notice that the Bicep linter has also detected that the `storageAccountNameParam` parameter isn't used. In Visual Studio Code, it indicates this by displaying a squiggly line. Normally this would be yellow to indicate a warning, but because you customized the *bicepconfig.json* file, it treats it as an error and displays the squiggly line in red.
 
@@ -147,7 +147,7 @@ Now that you've identified the problem, you can fix it in your Bicep file.
 
 You've found another problem in the Bicep file. Here, you fix the problem.
 
-1. In Visual Studio Code, open the *deploy/main.bicep* file.
+1. In Visual Studio Code, open the *main.bicep* file in the *deploy* folder.
 
 1. Look at the definition of the `storageAccountName` variable:
 
