@@ -6,7 +6,7 @@ You're looking for a job, but how can you get noticed by an organization? As you
 
 ## Scenario: first contact
 
-You are attending your first hackathon and as you take a quick break from writing code, you notice company booths at a distance. You have heard of internships from  your peers before and have applied to multiple opportunities in the past, but this time you get to talk to a recruiter or engineer directly. You approach the table and discover that, contrary to popular opinion, recruiters, and engineers are not extraterrestrial beings, but regular people just like you! How do you make a good impression and stand out from other attendees? You want to make sure that your resume piques their interest, but most importantly, that you convey who you are as an individual in a short timeframe. 
+You are attending your first hackathon and as you take a quick break from writing code, you notice company booths at a distance. You have heard of internships from  your peers before and have applied to multiple opportunities in the past, but this time you get to talk to a recruiter or engineer directly. You approach the table and discover that, contrary to popular opinion, recruiters, and engineers are not extraterrestrial beings, but people just like you! How do you make a good impression and stand out from other attendees? You want to make sure that your resume piques their interest, but most importantly, that you convey who you are as an individual in a short timeframe. 
 
 ## What will you learn?
 
