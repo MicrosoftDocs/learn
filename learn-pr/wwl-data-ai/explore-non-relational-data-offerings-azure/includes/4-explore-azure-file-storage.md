@@ -42,7 +42,7 @@ Azure aims to provide up to 300 MB/second of throughput for a single Standard fi
 
 All data is encrypted at rest, and you can enable encryption for data in-transit between Azure File Storage and your applications.
 
-For additional information on managing and planning to use Azure File Storage, read [Planning for an Azure Files deployment](https://docs.microsoft.com/azure/storage/files/storage-files-planning).
+For additional information on managing and planning to use Azure File Storage, read [Planning for an Azure Files deployment](/azure/storage/files/storage-files-planning).
 
 ## Create an Azure storage file share using the Azure portal
 

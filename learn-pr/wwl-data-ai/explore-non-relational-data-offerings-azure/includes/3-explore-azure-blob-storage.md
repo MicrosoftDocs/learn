@@ -34,14 +34,14 @@ You can create lifecycle management policies for blobs in a storage account. A l
 
 Common uses of Azure Blob Storage include:
 
-- Serving images or documents directly to a browser, in the form of a static website. Visit [Static website hosting in Azure storage](https://docs.microsoft.com/azure/storage/blobs/storage-blob-static-website) for detailed information.
+- Serving images or documents directly to a browser, in the form of a static website. Visit [Static website hosting in Azure storage](/azure/storage/blobs/storage-blob-static-website) for detailed information.
 - Storing files for distributed access
 - Streaming video and audio
 - Storing data for backup and restore, disaster recovery, and archiving
 - Storing data for analysis by an on-premises or Azure-hosted service
 
 > [!NOTE]
-> Azure Blob storage is also used as the basis for Azure Data Lake storage. You can use Azure Data Lake storage for performing *big data analytics*. For more information, visit [Introduction to Azure Data Lake Storage Gen2.](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
+> Azure Blob storage is also used as the basis for Azure Data Lake storage. You can use Azure Data Lake storage for performing *big data analytics*. For more information, visit [Introduction to Azure Data Lake Storage Gen2.](/azure/storage/blobs/data-lake-storage-introduction)
 
 To ensure availability, Azure Blob storage provides redundancy. Blobs are always replicated three times in the region in which you created your account, but you can also select geo-redundancy, which replicates your data in a second region (at additional cost).
 

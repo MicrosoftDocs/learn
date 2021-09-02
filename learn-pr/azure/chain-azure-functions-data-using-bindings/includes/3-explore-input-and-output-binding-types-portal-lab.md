@@ -1,4 +1,6 @@
-See the following high-level illustration of what we're going to build in this exercise.
+In this exercise, we'll create a function that will start when it receives an HTTP request, and will respond to each request by sending back a message. The parameters `req` and `res` are the *trigger binding* and *output binding*, respectively. (It might help to think of those parameters as abbreviations for "request" and "response.")
+
+See the following high-level illustration of what we're going to build.
 
 ::: zone pivot="javascript"
 
@@ -12,8 +14,6 @@ See the following high-level illustration of what we're going to build in this e
 
 ::: zone-end
 
-We'll create a function that will start when it receives an HTTP request and will respond to each request by sending back a message. The parameters `req` and `res` are the *trigger binding* and *output binding*, respectively. (It might help to think of those parameters as abbreviations for "request" and "response.")
-
 ## Create a function app
 
 Let's create a function app that we'll use throughout this module. A function app lets you group functions as a logical unit for easier management, deployment, and sharing of resources.
@@ -24,38 +24,29 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and then select **Function App** from the *Featured* list in the Azure Marketplace. The **Create Function App** pane appears.
+1. In the left menu pane, select **Compute**, and then search for and select **Function App** in the search box. The **Function App** pane appears.
+
+1. Select **Create**. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each section.
 
-    - Enter the following values for the settings in the **Project Details** section.
-
-        | Setting | Value | Description |
-        |---|---|---|
-        | Subscription | Concierge Subscription | The Azure subscription that you want to use. |
-        | Resource Group | <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
-
-    - Enter the following values for the settings in the **Instance Details** section.
-
-        | Setting | Value | Description |
-        |---|---|---|
-        | Function App name | Enter a *globally unique name* | Enter a name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
-        | Publish | Code | Option to publish code files or a Docker container. |
-        | Runtime stack | Node.js | The sample code in this module is written in JavaScript. |
-        | Version | Leave *default* | The default value is sufficient for this exercise. |
-        | Region | *Central US* | Select the region nearest to you. |
+    | Setting | Value | Description |
+    |---|---|---|
+    | **Project Details** |
+    | Subscription | Concierge Subscription | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+    | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
+    | **Instance Details** |
+    | Function App name | Enter a *globally unique name* | Enter a name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
+    | Publish | Code | Option to publish code files or a Docker container. |
+    | Runtime stack | From the dropdown list, select *Node.js* | The sample code in this module is written in JavaScript. |
+    | Version | Accept *default* | The default value is sufficient for this exercise. |
+    | Region | From the dropdown list, select a *location* | Select the region nearest to you. |
 
 1. Select **Review + create**, and then select **Create** to provision and deploy the function app.
 
-1. Select the **Notifications** icon in the top toolbar of the portal, and watch for a **Deployment in progress** message similar to the following message.
+1. Deployment can take some time. In the top task bar, select the **Notifications** icon, and watch for a **Deployment succeeded** message.
 
-    ![Screenshot of a notification that function app deployment is in progress.](../media/3-func-app-deploy-progress-small.PNG)
-
-1. Deployment can take some time, so stay in the **Notifications** hub and watch for a **Deployment succeeded** message similar to the following message.
-
-    ![Screenshot of a notification that function app deployment has completed.](../media/3-func-app-deploy-success-small.PNG)
-
-1. After your function app is deployed, select **Go to resource**. The **Overview** pane for your function app appears.
+1. After your function deployment is complete, select **Go to resource**. The **Overview** pane for your function app appears.
 
 ::: zone-end
 
@@ -65,38 +56,27 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and then select **Function App** from the *Featured* list in the Azure Marketplace. The **Create Function App** pane appears.
+1. In the left menu pane, select **Compute**, and then search for and select **Function App** in the search box. The **Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each section.
 
-    - Enter the following values for the settings in the **Project Details** section.
-
-        | Setting | Value | Description |
-        |---|---|---|
-        | Subscription | Concierge Subscription | The Azure subscription that you want to use for this Azure Cosmos DB account. |
-        | Resource Group | <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
-
-    - Enter the following values for the settings in the **Instance Details** section.
-
-        | Setting | Value | Description |
-        |---|---|---|
-        | Function App name | Enter a *globally unique name* | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
-        | Publish | Code | Option to publish code files or a Docker container. |
-        | Runtime stack | PowerShell Core | The sample code in this module is written in PowerShell. |
-        | Version | Leave *default* |
-        | Region | *Central US* | Choose the region nearest to you. |
+    | Setting | Value | Description |
+    |---|---|---|
+    | **Project Details** |
+    | Subscription | Concierge Subscription | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+    | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
+    | **Instance Details** |
+    | Function App name | Enter a *globally unique name* | Enter a name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
+    | Publish | Code | Option to publish code files or a Docker container. |
+    | Runtime stack | From the dropdown list, select *PowerShell Core* | The sample code in this module is written in PowerShell. |
+    | Version | Accept *default* | The default value is sufficient for this exercise. |
+    | Region | From the dropdown list, select a *location* | Select the region nearest to you. |
 
 1. Select **Review + create**, and then select **Create** to provision and deploy the function app.
 
-1. Select the **Notifications** icon in the top toolbar of the portal, and watch for a **Deployment in progress** message similar to the following message.
+1. Deployment can take some time. In the top task bar, select the **Notifications** icon, and watch for a **Deployment succeeded** message.
 
-    ![Screenshot of a notification that function app deployment is in progress.](../media/3-func-app-deploy-progress-small.PNG)
-
-1. Deployment can take some time. So, stay in the **Notifications** hub and watch for a **Deployment succeeded** message similar to the following message.
-
-    ![Screenshot of a notification that function app deployment has completed.](../media/3-func-app-deploy-success-small.PNG)
-
-1. After your function app is deployed, select **Go to resource**. The **Overview** pane for your function app appears.
+1. After your function deployment is complete, select **Go to resource**. The **Overview** pane for your function app appears.
 
 ::: zone-end
 
@@ -111,7 +91,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane for your function app appears. This opens the function creation process.
 
-1. From the top menu bar, select **Add**. The **Add function** pane appears.
+1. In the top menu bar, select **Create**. The **Create function** pane appears.
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
@@ -119,24 +99,24 @@ Now that we have a function app, it's time to create a function. A function is a
 
     - In the **New Function** text box, leave the default name of *HttpTrigger1*.
 
-    - Leave the **Authorization level** dropdown selection as *Function*.
+    - Accept the **Authorization level** dropdown selection as *Function*.
 
         The authorization level option determines what kind of key is used to securely access your function. Choosing *Function* requires callers of your function to provide a function-specific key with their requests.
 
-        [![Screenshot for the Add Function dialog box.](../media/3-add-function-small.png)](../media/3-add-function.png#lightbox)
+        [![Screenshot for the Create Function dialog box.](../media/3-add-function-small.png)](../media/3-add-function.png#lightbox)
 
-1. Select **Add**. Your new **Function** pane for *HttpTrigger1* appears.
+1. Select **Create**. Your new **Function** pane for *HttpTrigger1* appears.
 
 1. In the top menu bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
-1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL.
+1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL, and then select **OK**.
 
 1. Paste the function URL you copied into the address bar of a new tab in your browser.
 
 1. Add the query string value `&name=Azure` to the end of the URL. Your resulting URL should resemble the following example:
- 
-    https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure 
- 
+
+    'https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure'  
+
 1. Press <kbd>Enter</kbd> to execute the request in your browser. You should see a response similar to the following example returned by your function.
 
     The response may take a couple of minutes to come back as the function app warms up for the first time. If you receive a timeout error, refresh to resend the request. After the function is able to respond, you should see a response similar to the following response returned by the function displayed in your browser.
@@ -150,7 +130,7 @@ Now that we have a function app, it's time to create a function. A function is a
 1. Return to the portal, and in the left menu pane, under **Developer**, select **Code + Test** to view the code.
 
     The **Code + Test** pane for your function appears, which should display the contents of your **index.js** file.
-    
+
     [![Illustration of default HTTP trigger, showing HTTP request and response as well as respective req and res binding parameters.](../media/3-default-http-trigger-implementation-javascript-small.png)](../media/3-default-http-trigger-implementation-javascript.png#lightbox) <!-- no-loc -->
 
     The default JavaScript code for your function should resemble the following example.
@@ -171,7 +151,7 @@ Now that we have a function app, it's time to create a function. A function is a
     }
     ```
 
-    Let's look briefly at the function's other file - the **function.json** config file. Access this file by selecting **function.json** from the filepath's dropdown list. The configuration data is shown in the following JSON listing.
+    Let's look briefly at the function's other file - the **function.json** config file. Access this file by selecting **function.json** from the dropdown list for the filepath. The configuration data is shown in the following JSON listing.
 
     ```json
     {
@@ -205,7 +185,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane for your function app appears. This opens the function creation process.
 
-1. From the top menu bar, select **Add**. The **Add function** pane appears.
+1. From the top menu bar, select **Create**. The **Create function** pane appears.
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
@@ -219,7 +199,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
         [![Screenshot for the Add Function dialog box.](../media/3-add-function-small.png)](../media/3-add-function.png#lightbox)
 
-1. Select **Add**. Your new **Function** pane for *HttpTrigger1* appears.
+1. Select **Create**. Your new **Function** pane for *HttpTrigger1* appears.
 
 1. In the top menu bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
@@ -228,8 +208,8 @@ Now that we have a function app, it's time to create a function. A function is a
 1. Paste the function URL you copied into the address bar of a new tab in your browser.
 
 1. Add the query string value `&name=Azure` to the end of the URL. Your resulting URL should resemble the following example:
- 
-    https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure 
+
+    'https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure'
 
 1. Press <kbd>Enter</kbd> to execute the request in your browser.
 
@@ -244,9 +224,9 @@ Now that we have a function app, it's time to create a function. A function is a
 1. Return to the portal, and in the left menu pane, under **Developer**, select **Code + Test** to view the code.
 
     The **Code + Test** pane for your function appears, which should display the contents of your **run.ps1** file.
-    
+
     [![Illustration of default HTTP trigger, showing HTTP request and response as well as respective req and res binding parameters.](../media/3-default-http-trigger-implementation-powershell-small.png)](../media/3-default-http-trigger-implementation-powershell.png#lightbox) <!-- no-loc -->
-    
+
     The default PowerShell code for your function should resemble the following example.
 
     ```powershell
@@ -320,7 +300,7 @@ Now that we have a function app, it's time to create a function. A function is a
 1. Select **Add input** in the **Inputs** box. The **Create Input** pane appears showing a list of all possible input **Binding Types** in a dropdown menu.
 
     ![Screen shot of the Add input options.](../media/3-function-input-bindings.png)
-    
+
     Take a moment to consider each of these input bindings, and how you might use them in a solution. There are many selections to choose from.
 
     We'll get back to adding input bindings later in this module but for now, select **Cancel** to dismiss this pane.
@@ -346,7 +326,7 @@ Now that we have a function app, it's time to create a function. A function is a
 1. Select **Add input** in the **Inputs** box. The **Create Input** pane appears showing a list of all possible input **Binding Types** in a dropdown menu.
 
     ![Screen shot of the Add input options.](../media/3-function-input-bindings.png)
-    
+
     Take a moment to consider each of these input bindings, and how you might use them in a solution. There are many selections to choose from.
 
     We'll get back to adding input bindings later in this module but for now, select **Cancel** to dismiss this pane.

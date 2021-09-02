@@ -10,6 +10,6 @@ Now that you've reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-* [Event Hubs documentation](/azure/cognitive-services/event-hubs/)
+* [Event Hubs documentation](/azure/event-hubs/)
 * [Creating an Event hub documentation](/azure/event-hubs/event-hubs-create)
 * [Event Hubs premium documentation](/azure/event-hubs/event-hubs-premium-overview)

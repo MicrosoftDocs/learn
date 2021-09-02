@@ -18,23 +18,18 @@ If necessary, log in to your Azure portal using your Azure account credentials.
 
 1. We will now fill in the available form fields:
 
-    [![Screenshot showing the iotedge-vm-deploy template.](../media/iot-edge-vm-deploy.png)](../media/iot-edge-vm-deploy.png#lightbox)
-
-    **Subscription**: Ensure "Concierge Subscription" is selected.
-
-    **DNS Label Prefix**: Enter a name in the following format `az-220-vm-edgegw-{YOUR-ID}`.
-
-    **Resource group**: Choose the pre-created entry that looks similar to  `learn-00000000-0000-0000-0000-000000000000`.
-
-    **Admin Username**: Enter a username of your choice.
-
-    **Device Connection String**: Enter the Device Connection string for the device that was created within your IoT Hub in the previous unit.
-
-    **VM Size**, **Ubuntu OS Version**, and **Location**, should be left at their default values.
-
-    **Authentication Type**: Select "password" from the dropdown.
-
-    **Admin Password or Key**: Enter a password of your choice.
+    :::image type="content" source="../media/iot-edge-vm-deploy.png" alt-text="Screenshot showing the iotedge-vm-deploy template." lightbox="../media/iot-edge-vm-deploy.png":::
+    
+    | **Setting** | **Value** |
+    |-----------|---------|
+    | **Subscription** | Ensure "Concierge Subscription" is selected. |
+    | **DNS Label Prefix** | Enter a name in the following format `az-220-vm-edgegw-{YOUR-ID}`. |
+    | **Resource group** | Choose the pre-created entry that looks similar to  `learn-00000000-0000-0000-0000-000000000000`. |
+    | **Admin Username** | Enter a username of your choice. |
+    | **Device Connection String** | Enter the Device Connection string for the device that was created within your IoT Hub in the previous unit. |
+    | **VM Size**, **Ubuntu OS Version**, and **Location** | Left at their default values. |
+    | **Authentication Type** | Select "password" from the dropdown. |
+    | **Admin Password or Key** | Enter a password of your choice. |
 
     When all fields have been filled in, select **Review + create**, then **Create**, to begin the deployment.
 
@@ -42,7 +37,6 @@ If necessary, log in to your Azure portal using your Azure account credentials.
 
     The **DNS Name** can be obtained from the **Overview** section of the newly deployed virtual machine within the Azure portal.
 
-    > [!div class="mx-imgBorder"]
-    > [![Screenshot showing the dns name of the IoT Edge virtual machine.](../media/iot-edge-vm-dns-name.png)](../media/iot-edge-vm-dns-name.png)
+    :::image type="content" source="../media/iot-edge-vm-dns-name.png" alt-text="Screenshot showing the dns name of the IoT Edge virtual machine." lightbox="../media/iot-edge-vm-dns-name.png":::
 
-Congratulations, that's the end of the unit! In the next unit, we will generate and configure IoT Edge Device CA Certificates to allow devices to securely connect to our IoT Edge Gateway.
+Congratulations, that's the end of this unit! In the next unit, we will generate and configure IoT Edge Device CA Certificates to allow devices to securely connect to our IoT Edge Gateway.

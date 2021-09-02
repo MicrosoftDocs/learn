@@ -38,7 +38,7 @@ Direct federation limitations include those described in the following table.
 Azure AD B2B can be configured to federate with identity providers that use the SAML protocol with specific requirements listed below.
 
 > [!NOTE]
-> The target domain for direct federation must not be DNS-verified on Azure AD. The authentication URL domain must match the target domain or it must be the domain of an allowed identity provider. 
+> The target domain for direct federation must not be DNS-verified on Azure AD.
 
 ### Required Security Assertion Markup Language 2.0 attributes and claims
 

@@ -83,7 +83,7 @@ Select an item in the list view to get more detailed information.
 > [!div class="mx-imgBorder"]
 > ![Screenshot shows a detailed information view.](../media/basic-sign.png)
 
-Customers can now troubleshoot Conditional Access policies through all sign-in reports. By clicking on the Conditional Access tab for a sign-in record, customers can review the Conditional Access status and dive into the details of the policies that applied to the sign-in and the result for each policy. For more information, see the [FAQ about CA information in all sign-ins](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reports-faq).
+Customers can now troubleshoot Conditional Access policies through all sign-in reports. By clicking on the Conditional Access tab for a sign-in record, customers can review the Conditional Access status and dive into the details of the policies that applied to the sign-in and the result for each policy. For more information, see the [FAQ about CA information in all sign-ins](/azure/active-directory/reports-monitoring/reports-faq).
 
 ## Filter sign-in activities
 
@@ -166,7 +166,7 @@ Click the **Download** option to create a CSV or JSON file of the most recent 25
 > ![Download](../media/download-2.png)
 
 > [!IMPORTANT]
-> The number of records you can download is constrained by the [Azure AD report retention policies](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention).
+> The number of records you can download is constrained by the [Azure AD report retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
 
 ## Sign-ins data shortcuts
 

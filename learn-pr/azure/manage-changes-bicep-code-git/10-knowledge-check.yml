@@ -25,7 +25,7 @@ quiz:
     - content: You can create smaller reusable Bicep files.
       isCorrect: false
       explanation: Incorrect. Bicep modules provide a way to create small, reusable Bicep files for specific purposes. You can then store these in a version control system like Git.
-  - content: You've been asked to try out a new Azure service, and you're going to temporarily add it to a Bicep file you've already created and added to your Git repository. What should you do?
+  - content: You've been asked to try out a new Azure service. You're going to temporarily add it to a Bicep file that you've already created and added to your Git repository. What should you do?
     choices:
     - content: Create a new branch in your existing repository and make your changes on the branch.
       isCorrect: true
@@ -51,11 +51,11 @@ quiz:
     choices:
     - content: "`git clone`"
       isCorrect: true
-      explanation: Correct. The `git clone` command enables you to make a local copy of a repository that's already been created.
+      explanation: Correct. The `git clone` command enables you to make a local copy of a repository that has already been created.
     - content: "`git pull`"
       isCorrect: false
       explanation: Incorrect. The `git pull` command retrieves the changes from a remote repository, but you have to set up your local repository first.
     - content: "`git remote upstream add`"
       isCorrect: false
-      explanation: Incorrect. Since you're making a copy of a repository that's already on GitHub, you should use the `git clone` command.
+      explanation: Incorrect. Because you're making a copy of a repository that's already on GitHub, you should use the `git clone` command.
   

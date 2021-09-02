@@ -1,8 +1,8 @@
 In Go, functions allow you to group together a set of statements that you can call from other parts of your application. Instead of creating a program with many statements, you can use functions to organize the code and make it more readable. More readable code is also more maintainable.
 
-Up to this point, we've been calling the `println()` function, and we've been writing code in the `main()` function. In this section, we'll explore how you can create custom functions. We'll also look at some other techniques you can use with functions in Go.
+Up to this point, we've been calling the `fmt.println()` function, and we've been writing code in the `main()` function. In this section, we'll explore how you can create custom functions. We'll also look at some other techniques you can use with functions in Go.
 
-## The main function
+## Main function
 
 The function you've been interacting with is the `main()` function. All executable programs in Go have this function because it's the program's starting point. You can only have one `main()` function in your program. If you're creating a Go package, you don't need to write a `main()` function. We'll look at how to create packages in an upcoming module.
 
@@ -21,7 +21,7 @@ import (
 func main() {
     number1, _ := strconv.Atoi(os.Args[1])
     number2, _ := strconv.Atoi(os.Args[2])
-    println("Sum:", number1+number2)
+    fmt.println("Sum:", number1+number2)
 }
 ```
 
@@ -65,7 +65,7 @@ import (
 
 func main() {
     sum := sum(os.Args[1], os.Args[2])
-    println("Sum:", sum)
+    fmt.println("Sum:", sum)
 }
 
 func sum(number1 string, number2 string) int {
@@ -90,7 +90,7 @@ func sum(number1 string, number2 string) (result int) {
 
 Notice that now you need to enclose the result value of the function in parenthesis. You can also use the variable inside the function, and you can simply add a `return` line at the end. Go will return the current values of those return variables. The simplicity of writing the `return` keyword at the end of the function is appealing (especially when you have more than one return value). But we don't recommend this approach because it's not very clear what the function is returning.
 
-## Returning multiple values
+## Return multiple values
 
 In Go, a function can return more than one value. You can define these values in a way that's similar to how you define the function's parameters. In other words, you specify a type and a name, but the name is optional.
 
@@ -111,8 +111,8 @@ You now need two variables to store the results of the function. (It won't compi
 ```go
 func main() {
     sum, mul := calc(os.Args[1], os.Args[2])
-    println("Sum:", sum)
-    println("Mul:", mul)
+    fmt.println("Sum:", sum)
+    fmt.println("Mul:", mul)
 }
 ```
 
@@ -121,13 +121,13 @@ Another interesting feature in Go is that if you don't need one of the return va
 ```go
 func main() {
     sum, _ := calc(os.Args[1], os.Args[2])
-    println("Sum:", sum)
+    fmt.println("Sum:", sum)
 }
 ```
 
 We'll look more at ignoring return values from functions when we explore error handling in an upcoming module.
 
-## Changing function parameter values (pointers)
+## Change function parameter values (pointers)
 
 When you pass a value to a function, every change in that function won't affect the caller. Go is a "pass by value" programming language. This means that whenever you pass a value to a function, Go takes that value and creates a local copy (a new variable in memory). Changes you make to that variable in the function don't affect the one you sent to the function.
 
@@ -139,7 +139,7 @@ package main
 func main() {
     firstName := "John"
     updateName(firstName)
-    println(firstName)
+    fmt.println(firstName)
 }
 
 func updateName(name string) {
@@ -164,7 +164,7 @@ package main
 func main() {
     firstName := "John"
     updateName(&firstName)
-    println(firstName)
+    fmt.println(firstName)
 }
 
 func updateName(name *string) {

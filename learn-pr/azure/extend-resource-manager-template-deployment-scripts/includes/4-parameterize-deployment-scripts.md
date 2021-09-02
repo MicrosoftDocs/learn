@@ -1,6 +1,8 @@
-In the previous unit, you added some custom behavior to an Azure Resource Manager (ARM) template to stage starting content in a storage account for a new application environment. This solved a specific problem for one application team. 
+In the previous unit, you added some custom behavior to an Azure Resource Manager (ARM) template to stage starting content in a storage account for a new application environment. This solved a specific problem for one application team.
 
 One way to make deployment scripts more adaptable is to provide data to the script. You have two options, command-line arguments and environment variables.
+
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
 
 ## Using command-line arguments
 

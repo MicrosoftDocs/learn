@@ -4,7 +4,7 @@ title: Automatic differentiation
 metadata:
   title: Automatic differentiation
   description: When training neural networks, the most frequently used algorithm is back propagation. In this algorithm, parameters (model weights) are adjusted according to the gradient of the loss function with respect to the given parameter.
-  author: cassieview
+  author: cassiebreviu
   ms.author: cassieb
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial

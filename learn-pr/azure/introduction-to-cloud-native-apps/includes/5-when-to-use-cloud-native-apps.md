@@ -1,4 +1,4 @@
-cloud-native apps are architecturally different to more traditional software engineering approaches. Since cloud-native is such a broad category you can easily create an architecture to serve most needs, such as speed to market, integration of new technologies like machine learning, and rapid adaptation to customer feedback.
+Cloud-native apps are architecturally different to more traditional software engineering approaches. Since cloud-native is such a broad category you can easily create an architecture to serve most needs, such as speed to market, integration of new technologies like machine learning, and rapid adaptation to customer feedback.
 
 ### Modernizing existing apps
 

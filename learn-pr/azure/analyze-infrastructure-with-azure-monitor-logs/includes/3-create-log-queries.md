@@ -6,7 +6,7 @@ In the example scenario, the operations team will use Azure Monitor log queries 
 
 You can find the Log Analytics tool in the Azure portal and use it to run sample queries or to create your own queries:
 
-1. In the Azure portal, select **Monitor** in the left pane.
+1. In the Azure portal, in the left menu pane, select **Monitor**.
 
     You see the Azure Monitor page and more options, including **Activity Log**, **Alerts**, **Metrics**, and **Logs**.
 
@@ -18,7 +18,7 @@ You can find the Log Analytics tool in the Azure portal and use it to run sample
 
 ## Write queries by using the Kusto language
 
-You use the Kusto Query Language to query log information for your services running in Azure. A Kusto query is a read-only request to process data and return results. You state the query in plain text, by using a data-flow model that's designed to make the syntax easy to read, write, and automate. The query uses schema entities that are organized in a hierarchy similar to that of Azure SQL Database: databases, tables, and columns.
+You use the Kusto Query Language to query log information for your services running in Azure. A Kusto query is a read-only request to process data and return results. You state the query in plain text by using a data-flow model that's designed to make the syntax easy to read, write, and automate. The query uses schema entities that are organized in a hierarchy similar to that of Azure SQL Database: databases, tables, and columns.
 
 A Kusto query consists of a sequence of query statements, delimited by a semicolon (`;`). At least one statement is a tabular expression statement. A tabular expression statement formats the data arranged as a table of columns and rows.
 

@@ -1,128 +1,125 @@
-Recall that our company processes video content on Windows VMs. A new city has contracted us to process their traffic cameras, but it's a model we've not worked with before. We need to create a new Windows VM and install some proprietary codecs so we can begin processing and analyzing their images.
+Your company processes video content on Windows VMs. A new city has contracted with your company to process their traffic cameras, but it's a model you haven't worked with before. You need to create a new Windows VM and install some proprietary codecs in order to process and analyze the new video content.
 
 ## Create a new Windows virtual machine
 
-We can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell. The easiest approach is the portal because it walks you through the required information and provides hints and helpful messages when creating a VM.
+You can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell. The best approach is to use the portal because the **Create a virtual machine** wizard collects all the required information and provides hints and validation messages throughout the process.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. Select the **See more in Marketplace** link next to *Popular offers*. This option displays all available images in the Azure Marketplace.
+1. In *Search services and marketplace* search box, enter **Windows Server** and press <kbd>Enter</kbd>.
 
-    Select **Microsoft** as the filter value in the *Publisher* filter options. In the search box, enter **Windows Server**, and then press <kbd>Enter</kbd>.
+1. To the right of the search box, select the filter *Publisher name:* **All** and enter **Microsoft**, and then press <kbd>Enter</kbd>.
+ 
+    :::image type="content" source="../media/3-marketplace-search.png" border="true" alt-text="Screenshot showing virtual machine image options.":::
 
-    :::image type="content" source="../media/3-marketplace-search.png" border="true" alt-text="Screenshot showing the virtual machine image search options.":::
-
-1. The result shows several *Windows Server*-related images. Select the **Windows Server** image.
+1. The result shows several *Windows Server*-related images. Select the **Windows Server** Virtual Machine images.
 
     :::image type="content" source="../media/3-marketplace-windows-server.png" border="true" alt-text="Screenshot showing the virtual machine image search result that highlights the Windows Server option.":::
 
     The **Windows Server** pane appears.
 
-1. There are several Windows Server versions we can select from to create our VM. In the **Select a plan** dropdown list, select the **[smalldisk] Windows Server 2019 Datacenter** option.
+1. There are several Windows Server options to choose from to create your VM. In the **Select a plan** dropdown list, scroll to the bottom, and select **[smalldisk] Windows Server 2019 Datacenter**.
 
-1. Select **Create** to start configuring the VM.
+1. Select **Create** to open the **Create a virtual machine** pane.
 
 ## Configure the VM settings
 
-The VM creation experience in the portal is presented in a *wizard* format to walk you through all the configuration areas for the VM. Selecting **Next** will take you to the next configurable section. However, you can move between the tabs running across the top that identify each section.
+Azure presents a *wizard* to walk you through all the configuration sections for the VM. You can select **Next** or **Previous** to move from one configuration section to another, or you can select any tab in the horizontal menu to move to a configuration section.
 
 The **Create a virtual machine** pane appears.
 
-:::image type="content" source="../media/3-azure-portal-create-vm.png" border="true" alt-text="Screenshot showing the virtual machine creation experience in the Azure portal.":::
+:::image type="content" source="../media/3-azure-portal-create-vm.png" border="true" alt-text="Screenshot showing **Basics** tab of the **Create a virtual machine** pane.":::
 
 ### Configure basic VM settings
 
 > [!NOTE]
-> As you change settings and tab out of each free-text field, Azure will validate each value automatically, and place a green check mark next to it when it validates. You can hover over error indicators to get more information about issues it discovers.
+> As you change settings in a field, Azure will validate each value and place a green check mark next to a validated field, or red error indicator below the field. You can hover over an error indicator to get more information about a validation issue.
 
 > [!NOTE]
 > It's a best practice to standardize your resource names so you can easily identify their purpose. Windows VM names are a bit limited - they must be between 1 and 15 characters, cannot contain non-ASCII or special characters, and must be unique in the current resource group.
 
-1. On the **Basics** tab, enter the following values for each setting.
+1. On the **Basics** tab, select or enter the following values.
 
     | Setting | Value |
     |---------|---------|
     | **Project details** |
     | Subscription | Concierge Subscription (the subscription that should be billed for VM hours). |
-    | Resource Group | Select ***<rgn>[sandbox resource group name]</rgn>*** |
+    | Resource Group | Select ***<rgn>[sandbox resource group name]</rgn>***. |
     | **Instance details** |
-    | Virtual machine name | Enter a name for your VM, such as **test-vp-vm2** (for Test Video Processor VM #2) |
-    | Region | Select a region close to you from the following locations. |
-    | Availability options | Select **No infrastructure redundancy required**. This option is used to ensure the VM is highly available by grouping multiple VMs together a set to deal with planned or unplanned maintenance events or outages. |
-    | Image | Ensure the image is set to "Windows Server 2019 Datacenter - Gen1". You can open the dropdown list to see all the options available. |
-    | Size | The **Size** field is not directly editable and has a DS1 default size. Select the **See all sizes** link to explore other VM sizes. The resulting dialog box allows you to filter based on # of CPUs, Name, and Disk Type. Select **Standard DS1 v2** (normally the default) when you are done. That will give the VM 1 CPU and 3.5 GB of memory. |
+    | Virtual machine name | Enter a name for your VM, such as **test-vp-vm2** (for Test Video Processor VM #2). |
+    | Region | Select a region close to you from the global regions listed below this table. |
+    | Availability options | Accept default **No infrastructure redundancy required**. This option is used to ensure the VM is highly available by grouping multiple VMs together to deal with planned or unplanned maintenance events or outages. |
+    | Image | Select **[smalldisk] Windows Server 2019 Datacenter - Gen1** from the dropdown list. |
+    | Size | The **Size** field is not directly editable. Accept the default **Standard DS1 v2**, which will give the VM 1 CPU and 3.5 GB of memory. Optionally, select the field to view recommended or recently chosen sizes; select **See all sizes** to explore filters for sizes based on vCPUs, RAM, Data disks, operations per second, and cost. Select the X in the top right of the pane to close the pane.  |
     | **Administrator account** |
     | Username | Enter a username you will use to sign in to the VM. |
-    | Password | Enter a password that's at least 12 characters long. It must have three of the following: one lower case character, one uppercase character, one number, and one special character that is not '\\' or '-'. Use something you will remember or write it down, as you will need it later. |
+    | Password | Enter a password that's at least 12 characters long and has at least three of the following four characteristics: one lower case character, one uppercase character, one number, and one special character that is not '\\' or '-'. Use something you will remember or write it down, as you will need it later. |
     | Confirm password | Confirm your password. |
     | **Inbound port rules** |
-    | Public inbound ports | Select **Allow selected ports**. Because this is a Windows VM, we want to be able to access the desktop using RDP. |
+    | Public inbound ports | Select **Allow selected ports**. We want to be able to access the desktop for this Windows VM using RDP. |
     | Select inbound ports | Select **RDP (3389)** from the dropdown list. As the note in the UI indicates, we can also adjust the network ports after we create the VM. |
     | | |
 
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
+    
+1. Select **Next : Disks**.
     > [!TIP]
-    > You can also just slide the view to the left to get back to the VM settings as it opened a new window off to the right, and slid the window over to view it.
+    > You can use the horizonal scroll bar to slide the view to the left to get back to the VM settings, which had opened a new pane to the right.
 
 ## Configure disks for the VM
 
-1. Select **Next : Disks**.
-
-1. On the **Disks** tab, enter the following values for each setting.
+1. On the **Disks** tab, select the following values.
 
     | Setting | Value |
     |---------|---------|
     | **Disk options** |
-    | OS disk type | Select *Premium SSD* |
-    | Encryption type | Select the *(Default) Encryption at-rest with a platform-managed key* from the dropdown list. |
+    | OS disk type | Accept the default **Premium SSD (locally redundant storage)**. |
+    | SSE encryption type | Accept the default **(Default) Encryption at-rest with a platform-managed key**. |
     | **Data disks** |
-    | Select **Create and attach a new disk** link. The **Create a new disk** pane appears. | Accept all the default values for the following settings: *Name*; *Source type*; *Size*; *Encryption type*; and *Enable shared disk*. Note that here is where we could use a snapshot, or Storage Blob to create a VHD. Select **OK** to create the disk, and go back to the **Data disks** section. |
+    | Select **Create and attach a new disk** link. The **Create a new disk** pane appears. | Accept all the default values for the following settings: *Name*; *Source type*; *Size*; *SSE encryption type*; and *Enable shared disk*. This is where you could use a snapshot, or Storage Blob, to create a VHD. |
+    
+1. Select **OK** to save the settings and close the pane.
 
-    ![Screenshot showing the configure disks section for the VM.](../media/3-configure-disks.png)
+    :::image type="content" source="../media/3-configure-disks.png" alt-text="Screenshot showing the configure disks section for the VM.":::
 
-1. Under **Data disks**, there should now be a new disk in the first row.
+1. On the **Create a virtual machine** pane **Disks** tab, under **Data disks**, there should now be a new row showing the newly configured disk.
 
-    ![Screenshot showing the newly added disk in the VM.](../media/3-new-disk.png)
+    :::image type="content" source="../media/3-new-disk.png" alt-text="Screenshot showing the newly added disk in the VM.":::
 
 ## Configure the network
 
 1. Select **Next : Networking**.
 
-1. In a production system, where we already have other components, we'd want to utilize an _existing_ virtual network. That way our VM can communicate with the other cloud services in our solution. If there isn't one defined in this location yet, we can create it here and configure the:
-    - **Subnet**: First subnet to subdivide the address space - it must fit within the defined address space. After the VNet is created, you can add additional subnets.
+   In a production system, where other components are already in use, it would be important to use an _existing_ virtual network so that the VM can communicate with the other cloud services in the production solution. If no virtual network has defined in this location, create it here and configure the:
+    - **Subnet**: First subnet to subdivide the address space - it must fit within the defined address space. After the VNet is created, you can add more subnets.
     - **Public IP**: Overall IPV4 space available to this network.
 
-1. On the **Networking** tab, enter the following values for each setting.
+1. On the **Networking** tab, let's change some of the settings. Under the input field for **Virtual network**, select **Create new**. The **Create virtual network** pane appears.
 
-    | Setting | Value |
-    |---------|---------|
-    | **Network interface** |
-    | Virtual network | Let's change the default ranges to use the `172.xxx` IP address space. Select the **Create new** link. The **Create virtual network** pane appears. |
-
-1. Enter the following values for each field.
+1. On the **Create virtual network** pane, enter the following values.
 
     | Field | Value |
     |---------|---------|
     | **Address space** |
-    | Address range | Enter `172.16.0.0/16` to give it the full range of addresses. |
+    | *Address range* | Select the checkbox in the row below the heading and enter `172.16.0.0/16` to give the address space a full range of addresses. If another address range row exists, select it so that it is deleted. |
     | **Subnets** |
-    | Subnet name | Set as *default*. |
-    | Address range | Enter `172.16.1.0/24` to give it 256 IP addresses of the space. |
+    | *Subnet name* | Select the checkbox in the row below the heading and enter *default* in the first input field. If another row exists, select it to delete it.|
+    | *Address range* | In the empty input field, enter `172.16.1.0/24` to give the subnet 256 IP addresses of space. |
 
-1. Select **OK**.
+1. Select **OK** to save your settings and return to the **Create a virtual machine** pane.
 
 > [!NOTE]
-> By default, Azure will create a virtual network, network interface, and public IP for your VM. It's not trivial to change the networking options after the VM has been created so always double-check the network assignments on services you create in Azure.
+> By default, Azure will create a virtual network, network interface, and public IP for your VM. It's not trivial to change networking options after the VM has been created so always double-check the network assignments for services you create in Azure.
 
 ## Finish configuring the VM and create the image
 
-The rest of the options have reasonable defaults and there's no need to change any of them. You can explore the other tabs if you like. The individual options have an `(i)` icon next to them that will show a help bubble to explain the option. This is a great way to learn about the various options you can use to configure the VM.
+On the **Create a virtual machine** pane, the rest of the tabs have reasonable defaults and there's no need to change any of them. You can explore the other tabs if you like. Each field has an `(i)` icon next to it which, if selected, will show a detailed definition of that configuration setting. Reviewing field descriptions is a great way to learn about the settings you can use to configure the VM.
 
-1. Select **Review + create**. The system will validate your options, and give you details about the VM being created.
+1. Select **Review + create**. The system will validate your options and display details about the VM being created.
 
-1. Select **Create** to create and deploy the VM. The Azure dashboard will show the VM that's being deployed. This may take several minutes.
+1. Select **Create** to deploy the VM. The Azure dashboard will show the name VM that's being deployed and details about your deployment. Deployment may take several minutes.
 
-While that's deploying, let's look at what we can do with this VM.
+While your VM is deploying, let's look at what we can do with this VM.

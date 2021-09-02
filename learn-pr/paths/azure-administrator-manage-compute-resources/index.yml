@@ -81,7 +81,7 @@ modules:
 - learn.add-and-size-disks-in-azure-virtual-machines
 - learn.secure-your-azure-virtual-machine-disks
 - learn.keep-your-virtual-machines-updated
-- learn.build-azure-vm-templates
+- learn.azure.create-resource-manager-template-vs-code
 - learn.deploy-vms-from-vhd-templates
 - learn.build-app-with-scale-sets
 - learn.azure.protect-vm-settings-with-dsc

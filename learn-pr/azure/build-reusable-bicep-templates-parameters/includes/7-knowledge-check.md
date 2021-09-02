@@ -2,7 +2,7 @@ You're deploying a template that a colleague has written. They give you a Bicep 
 
 ```bicep
 @maxLength(5)
-param projectName string = 'alpha'
+param projectName string = 'dog'
 
 @secure()
 param apiKey string
@@ -16,7 +16,7 @@ They also give you the following parameter file named *main.parameters.productio
   "contentVersion": "1.0.0.0",
   "parameters": {
     "projectName": {
-      "value": "bravo"
+      "value": "cat"
     },
     "apiKey": {
       "reference": {
@@ -38,7 +38,7 @@ You deploy the template by using this Azure CLI command:
 az deployment group create \
   --template-file main.bicep \
   --parameters main.parameters.production.json \
-               projectName=charlie
+               projectName=bird
 ```
 
 ::: zone-end
@@ -51,7 +51,7 @@ You deploy the template by using this Azure PowerShell command:
 New-AzResourceGroupDeployment `
   -TemplateFile main.bicep `
   -TemplateParameterFile main.parameters.production.json `
-  -projectName charlie
+  -projectName bird
 ```
 
 ::: zone-end

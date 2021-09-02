@@ -13,7 +13,7 @@ Personally owned devices are often referred to as Bring your own devices (BYOD).
 
 ## Device type
 
-The available device types that can be managed by Endpoint Manager include iOS/iPadOS, Windows, Android, and macOS. These device types are also known as platforms. Because each device type is different, each offers sightly different enrollment methods, devices settings, protection policy settings, configuration policy settings, custom policy settings, and remote actions.
+The available device types that can be managed by Endpoint Manager include iOS/iPadOS, Windows, Android, and macOS. These device types are also known as *platforms*. Because each device type is different, each offers slightly different enrollment methods, device settings, protection policy settings, configuration policy settings, custom policy settings, and remote actions.
 
 ## Device management requirements
 

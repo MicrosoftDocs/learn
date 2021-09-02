@@ -2,8 +2,8 @@
 uid: learn-wwl.introduction-to-azure-solutions
 metadata:
   title: Introduction to Azure solutions
-  description: Get started with your digital transformation by exploring why now is the right time to begin, why Azure is the right platform, and how Azure can bring overall value to your organization. We'll demonstrate key scenarios that illustrate how digital transformation with Azure can empower employees, engage customers, optimize operations, and transform products.
-  ms.date: 11/07/2019
+  description: "Introduction to Azure solutions"
+  ms.date: 08/03/2021
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
@@ -15,8 +15,8 @@ abstract: |
   - Explore why Azure is a great platform for digital transformation.
   - Learn about the unique value that Azure provides.
   - Review the Azure solutions.
-ratingEnabled: false
-prerequisites: "None"
+prerequisites: |
+  None
 iconUrl: /learn/achievements/intro-to-azure-areas-and-solutions.svg
 levels:
 - beginner
