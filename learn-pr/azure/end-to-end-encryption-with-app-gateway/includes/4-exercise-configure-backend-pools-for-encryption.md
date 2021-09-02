@@ -4,13 +4,13 @@ In this unit, you'll set up the web application and the application gateway. Nex
 
 The following image highlights the elements you'll configure in this exercise. You'll be setting up an application gateway by using Azure Application Gateway v2.
 
-![Diagram that highlights the elements (back-end pool, SSL certificate, and HTTP settings) created in this exercise.](../media/4-exercise-elements.svg)
+:::image type="content" source="../media/4-exercise-elements.svg" alt-text="Diagram that highlights the elements (backend pool, SSL certificate, and HTTP settings) created in this exercise.":::
 
 ## Deploy a virtual machine and an application gateway
 
-1. Open [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in.
+1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in.
 
-1. Run the following command in Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
+1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
     ```bash
     export rgName=<resource group name>
@@ -18,7 +18,7 @@ The following image highlights the elements you'll configure in this exercise. Y
     az group create --name $rgName --location <location>
     ```
 
-1. In Cloud Shell, run the following command to download the source code for the shipping portal.
+1. In Azure Cloud Shell, run the following command to download the source code for the shipping portal.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-end-to-end-encryption-with-app-gateway shippingportal
@@ -37,7 +37,7 @@ The following image highlights the elements you'll configure in this exercise. Y
     ```
 
     > [!NOTE]
-    > This script will take several minutes to finish.
+    > This script takes several minutes to finish. Allow it to work through multiple processes to unpack and configure the gateway and resources. You should see that the process succeeded with zero warnings and zero errors.
 
 ## Verify that the web server is configured correctly
 
@@ -52,17 +52,17 @@ The following image highlights the elements you'll configure in this exercise. Y
       --output tsv)"
     ```
 
-1. In your web browser, go to the URL.
+1. Copy and paste the URL into your web browser, and go to the URL.
   
-   You'll likely receive a warning message from your browser, similar to the example in the following image. This warning occurs because the web server is configured through a self-signed certificate that can't be authenticated.
+   Your browser will most likely display a warning message similar to the following image. The exact content in the warning message can vary, depending on your browser. The example image is from Microsoft Edge. 
 
    ![Warning about an unauthenticated server in Microsoft Edge.](../media/4-warning.png)
 
-    The warning message can vary, depending on your browser. The example image shows Microsoft Edge. Proceed to the website by selecting **Go on to the webpage** or the equivalent. You should see the home page for the shipping portal. This is a sample app to test that the server is configured correctly.
+    This warning occurs because the web server is configured through a self-signed certificate that can't be authenticated. On this warning page, look for and select the link to proceed to the website; for example select **Go on to the webpage** or  select **Advanced** and then **Proceed**, or the equivalent. The result will take you to the home page for the shipping portal, as shown below. This is a sample app to test that the server is configured correctly.
 
     :::image type="content" source="../media/4-shippingportal.png" alt-text="Home page for the shipping portal in Microsoft Edge." loc-scope="other"::: <!-- no-loc -->
 
-## Configure the back-end pool for encryption
+## Configure the backend pool for encryption
 
 1. Run the following command to get the private IP address of the virtual machine that's acting as the web server.
 
@@ -73,8 +73,7 @@ The following image highlights the elements you'll configure in this exercise. Y
       --query "[0].virtualMachine.network.privateIpAddresses[0]" \
       --output tsv)"
     ```
-
-1. Set up the back-end pool for Application Gateway by using the private IP address of the virtual machine.
+1. Set up the backend pool for Application Gateway by using the private IP address of the virtual machine.
 
     ```azurecli
     az network application-gateway address-pool create \
@@ -84,7 +83,7 @@ The following image highlights the elements you'll configure in this exercise. Y
       --servers $privateip
     ```
 
-1. Upload the certificate for the VM in the back-end pool to Application Gateway, as a trusted root certificate. This certificate was generated by the setup script and is stored in the *shipping-ssl.crt* file.
+1. Upload the certificate for the VM in the backend pool to Application Gateway, as a trusted root certificate. This certificate was generated by the setup script and is stored in the *shipping-ssl.crt* file.
 
     ```azurecli
     az network application-gateway root-cert create \
@@ -106,7 +105,7 @@ The following image highlights the elements you'll configure in this exercise. Y
       --host-name $privateip
     ```
 
-1. Run the following commands to set the trusted certificate for the back-end pool to the certificate installed on the back-end VM.
+1. Run the following commands to set the trusted certificate for the backend pool to the certificate installed on the backend VM.
 
     ```azurecli
     export rgID="$(az group show --name $rgName --query id --output tsv)"
