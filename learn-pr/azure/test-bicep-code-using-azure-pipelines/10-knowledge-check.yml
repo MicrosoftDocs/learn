@@ -20,14 +20,14 @@ quiz:
     choices:
     - content: Add an approval check to the pipeline.
       isCorrect: false
-      explanation: Incorrect. An approval check enables you to manually check your environment or pipeline, but it doesn't help to reduce the chance of an invalid template being submitted to Azure.
+      explanation: Incorrect. An approval check enables you to manually verify the status of your environment or pipeline, but it doesn't help to reduce the chance of an invalid template being submitted to Azure.
     - content: Run preflight validation within your pipeline.
       isCorrect: true
       explanation: Correct. The preflight validation process performs validation of your template. It reports errors that prevent the template deployment from being submitted to Azure.
     - content: Add a rollback stage to your pipeline.
       isCorrect: false
-      explanation: Incorrect. A rollback stage can run to reverse the effects of a stage that's failed, but it doesn't help to validate the Bicep file you submit.
-  - content: Your operations team asks you to verify that a database server deployed by the pipeline is configured to accept requests. How should you meet this requirement?
+      explanation: Incorrect. You can add a rollback stage to reverse the effects of a stage that's failed, but it doesn't help to validate the Bicep file you submit.
+  - content: Your operations team asks you to verify that a database server deployed by the pipeline is configured to accept requests. Which of the following actions would meet this requirement?
     choices:
     - content: Run the Bicep linter within your pipeline.
       isCorrect: false
@@ -45,7 +45,7 @@ quiz:
       explanation: Incorrect. The Bicep linter is part of the Bicep tooling, and it runs automatically when you build or deploy a Bicep file.
     - content: A template with no linting warnings or errors is guaranteed to deploy successfully.
       isCorrect: false
-      explanation: Incorrect. The linter only verifies some basic code style checks. Your template might lint successfully but not deploy.
+      explanation: Incorrect. The linter runs some basic code style checks. Your template might lint successfully but not deploy.
     - content: Linting ensures that your Bicep file meets a minimum code style quality level.
       isCorrect: true
-      explanation: Correct. The linter doesn't verify that your template will deploy successfully, but it checks that you've met some basic code style checks.
+      explanation: Correct. The linter doesn't verify that your file will deploy successfully, but it checks that your Bicep file follows some basic code style rules.
