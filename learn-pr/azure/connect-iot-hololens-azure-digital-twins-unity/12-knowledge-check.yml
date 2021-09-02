@@ -31,7 +31,7 @@ quiz:
     - content: "The simulator creates a trigger object in ADT, sets the Alert property to Sent, and immediately resumes sending telemetry data without waiting for a response."
       isCorrect: false 
       explanation: "Instead of creating a trigger object, the simulator sends a property update to ADT and sets the Alert property to True. Then, the simulator polls ADT until the Alert is set back to False."
-    - content: "The simulator stops running the app on the HoloLens until ADT sends back an Alert trigger confirmation, at which point telemetry data resumes."
+    - content: "The simulator stops running the app on the mixed reality device until ADT sends back an Alert trigger confirmation, at which point telemetry data resumes."
       isCorrect: false
       explanation: "Instead of stopping the app, the simulator sends a property update to ADT and sets the Alert property to True. Then, the simulator polls ADT until the Alert is set back to False."  
   - content: "What approach is the most efficient means to create assets in Unity that connect to ADT?"

@@ -75,14 +75,14 @@ products:
 - azure-backup
 - azure-site-recovery
 modules:
-- learn.design-monitoring-strategy-on-azure
-- learn.azure.monitor-azure-vm-using-diagnostic-data
+- learn.wwl.configure-file-folder-backups
+- learn.wwl.configure-virtual-machine-backups
+- learn.wwl.configure-azure-monitor
+- learn.wwl.configure-azure-alerts
+- learn.wwl.configure-log-analytics
+- learn.wwl.configure-network-watcher
+- learn.incident-response-with-alerting-on-azure
 - learn.analyze-infrastructure-with-azure-monitor-logs
 - learn.monitor-vm-performance-using-azure-monitor-for-vms
-- learn.incident-response-with-alerting-on-azure
-- learn.capture-page-load-times-application-insights
-- learn.protect-virtual-machines-with-azure-backup
-- learn.protect-infrastructure-with-azure-site-recovery
-- learn.azure-well-architected-reliability
 trophy:
   uid: learn.az-104-monitor-backup-resources.trophy

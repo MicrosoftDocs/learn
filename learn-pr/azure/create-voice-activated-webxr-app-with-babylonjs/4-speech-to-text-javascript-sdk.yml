@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.create-voice-activated-webxr-app-with-babylonjs.speech-to-text-javascript-sdk
+title: Azure Speech-to-text JavaScript SDK
+metadata:
+  unitType: learning-content
+  title: Azure Speech-to-text JavaScript SDK
+  description: Learn about important methods for Speech-to-text in Azure Speech JavaScript SDK
+  ms.date: 07/20/2021 
+  author: aprilspeight 
+  ms.author: apspeigh 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-speech-to-text-javascript-sdk.md)]

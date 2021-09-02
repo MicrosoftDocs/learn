@@ -7,7 +7,7 @@ In a pipeline statement, _filtering left_ means filtering for the results you wa
 Consider the following statement:
 
 ```powershell
-Get-Process | Select-Object Name | Where-Object Name -eq name-of-process
+Get-Process | Select-Object Name | Where-Object Name -eq 'name-of-process'
 ```
 
 This statement first retrieves all of the processes on the machine. It ends up formatting the response so that only the `Name` property is listed. This statement doesn't follow the _filtering left_ principle, because it operates on all the processes, attempts to format the response, and then filters at the end.
@@ -26,6 +26,67 @@ Get-Process -Name name-of-process | Select-Object Name
 
 In this version, the parameter `-Name` does the filtering for you.
 
-## Formatting right
+## Formatting right, formatting as the last thing you do
 
-Whereas _filtering left_ means to filter something as _early_ as possible in a statement, _formatting right_ means to format something as _late_ as possible in the statement. The most common cmdlets to use to format your output are `Format-Table` and `Format-List`. By default, most cmdlets format output as a table. If you want your output to display properties in columns, use the `Format-List` cmdlet to reformat them as a list.
+Whereas _filtering left_ means to filter something as _early_ as possible in a statement, _formatting right_ means to format something as _late_ as possible in the statement. Ok, but why do I need to format late? The answer is because format commands alters the object to a format object. What that means is your data is no longer found in the same properties and methods. This alteration will impact your ability to pipe commands and using `Select-Object`, looping through with `foreach` and more.
+
+ the formatting destroys the object you are dealing with. Take the following call for example:
+
+```powershell
+Get-Process 'some process' | Select-Object Name, CPU | Get-Member
+```
+
+The type you get back is `System.Diagnostics.Process`. Now, add a formatter like `Format-Table` like so:
+
+```powershell
+Get-Process 'some process' | Format-Table Name,CPU | Get-Member
+```
+
+If you only focus on the types you get back, you see you are getting back something different:
+
+```output
+TypeName: Microsoft.PowerShell.Commands.Internal.Format.FormatStartData
+TypeName: Microsoft.PowerShell.Commands.Internal.Format.GroupStartData
+TypeName: Microsoft.PowerShell.Commands.Internal.Format.FormatEntryData
+TypeName: Microsoft.PowerShell.Commands.Internal.Format.GroupEndData
+```
+
+What exactly these types are, are not important at this moment in time. What is important is to realize is that when you use any type of formatting command, your data is different and when it's different it might no longer contain the columns you care about. Let's illustrate this by an example:
+
+```powershell
+Get-Process 'some process' | Select-Object Name, Cpu
+```
+
+The above gives you a result back with columns `Name` and `CPU` looking something like the below example output:
+
+```output
+Name       CPU
+----       ---
+zsh  1.2984395
+zsh  0.2522047
+zsh  0.2486375
+zsh  0.2683466
+zsh  0.2681874
+zsh  1.6799438
+zsh  0.2909816
+zsh  0.7855272
+```
+
+Let's use formatting first and then `Select-Object`, to illustrate what might happen if you don't format last:
+
+```powershell
+Get-Process 'some process' | Format-Table Name,CPU | Select-Object Name, CPU
+```
+
+The result coming back now looks like so:
+
+```output
+Name CPU
+---- ---
+```
+
+It's empty, because `Format-Table` transformed your object to place said data into other properties. Your data isn't gone, only your properties, and PowerShell above makes an honest attempt of resolving non existing properties. Formatting commands is supposed to be the last thing you do because they are meant for formatting things nicely for screen presentation, not for you to keep massaging via commands like `Select-Object` for example.
+
+### Formatting commands
+
+The most common cmdlets to use to format your output are `Format-Table` and `Format-List`. By default, most cmdlets format output as a table. If you want your output to display properties in columns, use the `Format-List` cmdlet to reformat them as a list.

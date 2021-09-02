@@ -60,7 +60,7 @@ To compare and understand the differences, review the table below.
 
 
 | *Features*                                                                                                                                    | Standard Load Balancer                                                                                                                                  | Basic Load Balancer                                                                                     |
-|:-:|:-:|:-:|
+|:-|:-|:-|
 | [Backend pool size](/azure/azure-resource-manager/management/azure-subscription-service-limits#load-balancer)                                 | Supports up to 1000 instances.                                                                                                                          | Supports up to 300 instances.                                                                           |
 | Backend pool endpoints                                                                                                                        | Any virtual machines or virtual machine scale sets in a single virtual network.                                                                         | Virtual machines in a single availability set or virtual machine scale set.                             |
 | [Health probes](/azure/load-balancer/load-balancer-custom-probe-overview#types)                                                               | TCP, HTTP, HTTPS                                                                                                                                        | TCP, HTTP                                                                                               |
@@ -76,11 +76,9 @@ To compare and understand the differences, review the table below.
 | SLA                                                                                                                                           | [99.99%](https://azure.microsoft.com/support/legal/sla/load-balancer/v1_0/)                                                                             | Not available                                                                                           |
 
 
+**Microsoft recommends Standard load balancer. Standalone VMs, availability sets, and virtual machine scale sets can be connected to only one SKU, never both. Load balancer and the public IP address SKU must match when you use them with public IP addresses.**
 
-**Microsoft recommends Standard load balancer. Standalone VMs, availability sets, and virtual machine scale sets can be connected to only one SKU, never both. Load balancer and the public IP address SKU must match when you use them with public IP addresses. **
-
-
-**SKUs aren't mutable; therefore, you cannot change the SKU of an existing resource. **
+**SKUs aren't mutable; therefore, you cannot change the SKU of an existing resource.**
 
 
 

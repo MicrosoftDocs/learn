@@ -77,19 +77,16 @@ products:
 - azure-container-registry
 - azure-kubernetes-service
 modules:
-- learn.create-linux-vm-in-azure
-- learn.create-a-windows-vm-in-azure
+- learn.wwl.configure-virtual-machines
+- learn.wwl.configure-virtual-machine-availability
+- learn.wwl.configure-virtual-machine-extensions
+- learn.wwl.configure-app-service-plans
+- learn.wwl.configure-azure-app-services
+- learn.wwl.configure-azure-container-instances
+- learn.wwl.configure-azure-kubernetes-service
 - learn.manage-vms-with-azure-cli
-- learn.add-and-size-disks-in-azure-virtual-machines
-- learn.secure-your-azure-virtual-machine-disks
-- learn.keep-your-virtual-machines-updated
-- learn.build-azure-vm-templates
-- learn.deploy-vms-from-vhd-templates
-- learn.build-app-with-scale-sets
+- learn.create-a-windows-vm-in-azure
+- learn.host-a-web-application-with-azure-web-apps
 - learn.azure.protect-vm-settings-with-dsc
-- learn.azure.deploy-run-container-app-service
-- learn.azure.app-service-scale-up-scale-out
-- learn.run-docker-containers-aci
-- learn.intro-to-azure-kubernetes-service
 trophy:
   uid: learn.az-104-manage-compute-resources.trophy

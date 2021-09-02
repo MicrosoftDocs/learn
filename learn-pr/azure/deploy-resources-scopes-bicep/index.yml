@@ -12,8 +12,8 @@ metadata:
 title: Deploy resources to subscriptions, management groups, and tenants by using Bicep
 summary: |
   Deploy Azure resources at the subscription, management group, and tenant scope.
-  Learn what these resources are, why you would use them, and how you create Bicep code to deploy them.
-  Also learn how to create a single set of Bicep files that you can deploy across multiple scopes in one operation.
+  Understand how Azure resources are deployed at different scopes, why this is important, and how to create Bicep code to deploy them.
+  Create a single set of Bicep files that you can deploy across multiple scopes in one operation.
 abstract: |
   After completing this module, you'll be able to:
     - Explain resource scopes, including tenant-level, management group-level, and subscription-level resources
@@ -28,11 +28,11 @@ prerequisites: |
   To follow along with the exercises in the module, you'll need:
   - An Azure account, with the ability to create subscription-level resources. For one exercise, which is optional, you'll need to be able to create management groups and policies.
   - [Visual Studio Code](https://code.visualstudio.com), installed locally.  
-  - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.  
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.  
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.  
     - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/bicep/deploy-resources-scopes-bicep.svg
 levels:
   - advanced
 roles:

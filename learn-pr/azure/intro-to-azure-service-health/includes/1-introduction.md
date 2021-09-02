@@ -10,8 +10,11 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
-TODO: add your visual element
+A cloud environment is composed by different services distributed among geographies. Those geographies are composed by multiple regions and datacenters, which mean that even with all levels of abstractions, your cloud environment is powered by datacenters managed by a cloud provider.
+
+Datacenters requires planned maintenance, hardware upgrades, failover-tests and much more to improve their resiliency. So how can you be aware about the health of Azure Services within datacenters? Azure Service Health is your answer. It provides a personalized view of the status of your Azure services and regions, includes information about planned maintenance and current incidents, and offers richer functionality, including alerting, health advisories and root cause analysis. 
+
+:::image type="content" source="../media/1-azure-service-health.png" alt-text="Screenshot of Azure Service Health":::
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -24,10 +27,16 @@ TODO: add your visual element
     Recommended: an image that visualizes the scenario
 
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
- -->
+-->
 ## Example scenario
-TODO: add your scenario
-TODO: add your image
+
+As an IT Administrator you start to receive inquiries from your developer team regarding slowness on applications inside some virtual machines running on Azure.
+
+Then you start to look for issues among the application components, message queues, connectivity, logs, and alerts and you can't find anything that can explain the slowness.
+
+After spend two hours on your investigation, you discovered that there is an issue happening with your cloud service provider, which is causing a delay over the virtual machines in the region you have your resources deployed.
+
+This is an example of scenario, where the usage of Azure Service Health could have helped you to know in advance the source of the issue and start an action plan immediately to solve the issue, instead to spend two hours of investigation. A simple health alert created to track the health of your virtual machines in a specific Azure region would notify you as soon the issue started.
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -42,7 +51,7 @@ TODO: add your image
 
  -->
 ## What will we be doing?
-TODO: add your activities
+We'll evaluate what kind of information is available from Azure Service Health to understand about the health of your cloud resources.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -58,6 +67,6 @@ TODO: add your activities
 
  -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
+By the end of this session, you'll be able use Azure Service Health to be aware on service issues, planned maintenance, health, and security advisories related with your resources besides to learn how to create health alerts.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->

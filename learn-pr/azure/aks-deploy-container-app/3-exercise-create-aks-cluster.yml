@@ -9,6 +9,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Create an Azure Kubernetes Service cluster
+sandbox: true
+interactive: bash
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-aks-cluster.md)]

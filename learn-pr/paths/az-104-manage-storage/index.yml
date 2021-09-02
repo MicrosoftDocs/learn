@@ -76,13 +76,14 @@ products:
 - azure-files
 - azure-virtual-machines
 modules:
+- learn.wwl.configure-storage-accounts
+- learn.wwl.configure-blob-storage
+- learn.wwl.configure-storage-security
+- learn.wwl.configure-azure-files-file-sync
+- learn.wwl.configure-storage-tools
 - learn.create-azure-storage-account
-- learn.choose-the-right-disk-storage-for-vm-workload
-- learn.azure.provide-disaster-recovery-replicate-storage-data
-- learn.azure.secure-azure-storage-account
+- learn.control-access-to-azure-storage-with-sas
 - learn.store-and-share-with-azure-files
 - learn.upload-download-and-manage-data-with-azure-storage-explorer
-- learn.azure.export-data-with-azure-import-export
-- learn.azure.extend-share-capacity-with-azure-file-sync
 trophy:
   uid: learn.az-104-manage-storage.trophy

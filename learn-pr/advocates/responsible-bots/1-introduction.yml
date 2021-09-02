@@ -3,8 +3,8 @@ uid: learn.advocates.responsible-bots.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: In this unit, we'll get an overview of the module, including the learning objectives and the main goal of the module - to create an educational assistant for geography.
-  ms.date: 05/19/2020
+  description: An introduction to how to create an educational assistant bot for geography.
+  ms.date: 04/09/2021
   author: shwars
   ms.author: dmitryso
   ms.topic: interactive-tutorial

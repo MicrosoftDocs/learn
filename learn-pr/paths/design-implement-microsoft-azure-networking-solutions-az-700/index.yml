@@ -1,0 +1,49 @@
+### YamlMime:LearningPath
+uid: learn.wwl.designing-implementing-microsoft-azure-networking-solutions-az-700
+metadata:
+  title: AZ-700 Designing and Implementing Microsoft Azure Networking Solutions
+  description: AZ-700 Designing and Implementing Microsoft Azure Networking Solutions
+  ms.date: 07/29/2021
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: AZ-700 Designing and Implementing Microsoft Azure Networking Solutions
+prerequisites: |
+  - You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
+  - You should have experience with network connectivity methods, such as VPN or WAN
+  - You should be able to navigate the Azure portal
+  - You should have experience with the Azure portal and Azure PowerShell
+summary: |
+  Learn how to design and implement a secure network infrastructure in Azure and how to establish hybrid connectivity, routing, private access to Azure services, and monitoring in Azure.
+iconUrl: /learn/achievements/designing-implementing-microsoft-azure-networking-solutions.svg
+levels:
+- intermediate
+roles:
+- administrator
+- network-engineer
+products:
+- azure-application-gateway
+- azure-dns
+- azure-expressroute
+- azure-firewall
+- azure-firewall-manager
+- azure-front-door
+- azure-load-balancer
+- azure-network-watcher
+- azure-private-link
+- azure-traffic-manager
+- azure-virtual-network
+- azure-virtual-wan
+- azure-vpn-gateway
+modules:
+- learn.wwl.introduction-to-azure-virtual-networks
+- learn.wwl.design-implement-hybrid-networking
+- learn.wwl.design-implement-azure-expressroute
+- learn.wwl.load-balancing-non-https-traffic-azure
+- learn.wwl.load-balancing-https-traffic-azure
+- learn.wwl.design-implement-network-security-monitoring
+- learn.wwl.design-implement-private-access-to-azure-services
+- learn.wwl.design-implement-network-monitoring
+trophy:
+  uid: learn.wwl.designing-implementing-microsoft-azure-networking-solutions-az-700.trophy

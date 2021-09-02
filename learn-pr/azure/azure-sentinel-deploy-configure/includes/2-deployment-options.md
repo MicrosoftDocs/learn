@@ -47,32 +47,70 @@ Azure Sentinel runs on workspaces in any general availability region of Log Anal
 Follow these steps to enable Azure Sentinel:
 
 1. Sign in to the Azure portal.
+
 1. Select the subscription that Azure Sentinel is to be created in. This account should have:
+    
     1. Contributor permissions to the subscription where the Azure Sentinel workspace will be created.
+
     1. Contributor or Reader permissions on the resource group that the Azure Sentinel workspace will belong to.
-1. Search for and select **Azure Sentinel**, and then select **Add**. The message **No Azure Sentinel workspace to display** opens.
-1. Select **Create a new workspace**. The **Log analytics workspace** dialog box opens.
-1. Enter a name for the workspace.
-1. Use the drop-down lists to select the:
-    1. Subscription to use
-    1. Resource group
-    1. Location
-    1. Pricing tier
-1. On the Azure Sentinel **Choose a workspace** blade, select the workspace that you created, and then select the **Add Azure Sentinel** button. The Azure Sentinel dashboard opens.
+
+1. Search for and select **Azure Sentinel**, and then select **Add**. The message **No Azure Sentinel workspace to display** pane appears.
+
+1. Select **Create Azure Sentinel**. The **Add Azure Sentinel to a workspace** page appears.
+
+1. Select **Create a new workspace**. The **Create Log Analytics workspace** pane appears.
+
+1. On the **Basics** tab, use the dropdown lists to select the following values:
+
+| Setting | Value  |
+    | ------ | ------- |
+    | **Project Details**  |
+    | Subscription | The subscription that has Sentinel as a paid service |
+    | Resource group | The resource group that has Contributor or Reader permissions |
+    | **Instance Details** |
+    | Name  | A unique name you want to use for the Log Analytics workspace |
+    | Region | From the dropdown list, select the geographical location that applies to the Sentinel service subscription |
+    
+
+1. Select **Next : Pricing tier**
+      
+1. Select the Pricing tier.
+
+1. Select **Review + Create**, wait for Azure to validate the settings for your Log Analytics workspace, and then select **Create**.
+
+1. It may take some time for your workspace to be created. When the workspace has deployed to your resource group, you will receive a notification, and the name of your workspace appears in the Workspace list. Select the Notification icon in the top right of the Azure toolbar, and then select **Pin to dashboard**.
+ 
+1. On the **Pin to dashboard pane**, select **Create new**, provide a name for your dashboard, and then select **Add** at the bottom of the pane. The Azure Sentinel dashboard  for your workspace appears.
+
+1. In the left menu, select **Overview**.
 
 ### Monitor data feeds
 
-The lead system engineer at Contoso discovered that after you connect security sources, you can monitor data feeds. Monitor features include:
+The lead system engineer at Contoso discovered that after you connect security sources, you can monitor data feeds. 
 
-|Data feeds|Description|
+Let's look at the basic structure of this Sentinel workspace. Sentinel is a cloud-native real-time Security Information And Event Management (SIEM) engine with predefined charts, graphs, and automation tools. The layout provides a top row with a summary count of monitored events, alerts, and incidents and a drop-down selection to dynamically change reporting range. Below are 3 panels with predefined graphical charts for events and incidents. The left menu, described in the table below, has a rich assortment of built-in tools for customizing and configuring data connections.
+
+|Menu Item|Description|
 |---|---|
-|Workbooks|Monitor data by using Azure Sentinel with Monitor workbooks.|
-|Analytics|Azure Sentinel uses analytics to correlate alerts with incidents. Analytics help reduce noise and minimize the number of alerts to review and investigate.|
-|Security automation and orchestration|Automate common tasks and simplify security orchestration with playbooks that interoperate with Azure services. They can work with existing tools.|
-|Investigation|Use the deep investigation tools to understand the scope and find the root cause of potential security threats.|
+| **General**  |
+|Overview|The composite graphical view of events and incidents that you've configured.|
+|Logs|Predefined queries you can run for all aspects of your Azure workspace, from applications to virtual machines to virtual networks.|
+|News & guides|The starter pack for creating data connections, security alerts, and automation via built-in playbooks.|
+| **Threat management**  |
+|Incidents|Hands-on access to view all or selected the alerts and incidents you've configured.|
+|Workbooks|Monitor data by using Azure Sentinel workbooks.|
 |Hunting|Use the powerful hunting search-and-query tools that are based on the MITRE ATT&CK framework. Use these tools to proactively hunt for security threats across your organization's data sources.|
+|Notebooks|Select from dozens of community-supplied tutorials and templates in all categories of SIEM and create your own library.|
+|Entity behavior|View events based on account, host, or IP address|
+|Threat intelligence|Use the deep investigation tools to understand the scope and find the root cause of potential security threats.|
+| **Configuration**  |
+|Data connectors|Set up connections to your security sources using a wide variety of devices and platforms. For example, select **Azure Activity** to view in real time the Azure Activity log.|
+|Analytics|Azure Sentinel uses analytics to correlate alerts with incidents. Analytics help reduce noise and minimize the number of alerts to review and investigate.|
+|Watchlist|Create custom watchlists to filter or suppress alerts to provide focused incident reporting in Sentinel.|
+|Automation|Automate common tasks and simplify security orchestration with playbooks that interoperate with Azure services. They can work with existing tools.|
+|Solutions|Create and customize end-to-end solutions for your Sentinel dashboard.|
 |Community|Microsoft security analysts constantly create and add new workbooks, playbooks, hunting queries, and more. They post them to the community for all to use.|
 
-The following screenshot shows the **Azure Sentinel - Overview** page. The page contains charts and graphs to help you understand events, alerts, and incidents.
+The following screenshot shows the **Azure Sentinel - Overview** pane. Azure Sentinel can display real time charts and graphs to help you understand events, alerts, and incidents for security operations.
 
-:::image type="content" source="../media/azure-sentinel-dashboard.png" alt-text="Screenshot of Azure Sentinel - Overview page with several graphs and charts, including events and alerts over time, recent incidents, potential malicious events, and the total number of events, alerts, and incidents." border="false":::
+:::image type="content" source="../media/azure-sentinel-dashboard.png" alt-text="Screenshot of Azure Sentinel - Overview pane with several graphs and charts, including events and alerts over time, recent incidents, potential malicious events, and the total number of events, alerts, and incidents." lightbox="../media/azure-sentinel-dashboard.png"border="false":::

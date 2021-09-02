@@ -7,7 +7,7 @@ Traffic Manager uses DNS to direct the client requests to the appropriate servic
 Traffic Manager offers the several key features.
 
 | **Feature**                                | **Description**                                              |
-|:-:|:-:|
+|:-|:-|
 | Increase application availability          | Traffic Manager delivers high availability for your critical applications by monitoring your endpoints and providing automatic failover when an endpoint goes down. |
 | Improve application performance            | Azure allows you to run cloud services and websites in datacenters located around the world. Traffic Manager can improve the responsiveness of your website by directing traffic to the endpoint with the lowest latency. |
 | Service maintenance without downtime       | You can have planned maintenance done on your applications without downtime. Traffic Manager can direct traffic to alternative endpoints while the maintenance is in progress. |
@@ -35,7 +35,7 @@ Traffic Manager uses DNS to direct clients to specific service endpoints based o
 
 ### Traffic Manager example deployment
 
-Contoso Corp have developed a new partner portal. The URL for this portal is https://partners.contoso.com/login.aspx. 
+Contoso Corp have developed a new partner portal. The URL for this portal is 'https://partners.contoso.com/login.aspx'. 
 
 The application is hosted in three regions of Azure. To improve availability and maximize global performance, they use Traffic Manager to distribute client traffic to the closest available endpoint.
 
@@ -52,7 +52,7 @@ To achieve this configuration, they complete the following steps:
 
 ### Traffic Manager example client usage
 
-Following on from the deployment example above; when a client requests the page https://partners.contoso.com/login.aspx, the client performs the following steps to resolve the DNS name and establish a connection:
+Following on from the deployment example above; when a client requests the page 'https://partners.contoso.com/login.aspx', the client performs the following steps to resolve the DNS name and establish a connection:
 
 > [!div class="mx-imgBorder"]
 > ![Diagram illustrating client usage flow in Traffic Manager](../media/traffic-manager-client-usage-flow.png)
@@ -88,7 +88,7 @@ Azure Traffic Manager supports six traffic-routing methods to determine how to r
 The following traffic routing methods are available in Traffic Manager:
 
 | **Routing method** | **When to use**                                              |
-|:-:|:-:|
+|:-|:-|
 | **Priority**       | Select this routing method when you want to have a primary service endpoint for all traffic. You can provide multiple backup endpoints in case the primary or one of the backup endpoints is unavailable. |
 | **Weighted**       | Select this routing method when you want to distribute traffic across a set of endpoints based on their weight. Set the weight the same to distribute evenly across all endpoints. |
 | **Performance**    | Select the routing method when you have endpoints in different geographic locations, and you want end users to use the "closest" endpoint for the lowest network latency. |
@@ -200,7 +200,7 @@ Click **Create**.
 You need to enter the following information on the **Create Traffic Manager profile** page.
 
 | **Field**               | **Information**                                              |
-|:-:|:-:|
+|:-|:-|
 | Name                    | Enter a unique name for the Traffic Manager profile.         |
 | Routing method          | Select the routing method to use in this profile.            |
 | Subscription            | Select the subscription from the list that you want this profile to be applied to. |
@@ -230,7 +230,7 @@ On the Traffic manager profile page, under **Settings**, select **Endpoints**, t
 You then enter the required information on the **Add endpoint** page.
 
 | **Field**                                                    | **Information**                                              |
-|:-:|:-:|
+|:-|:-|
 | Type                                                         | Select the type of endpoint to add. You  can select from the following endpoint types:  **Azure endpoints**  **External endpoints**  **Nested endpoints**   Depending on which endpoint type you  select here, the remaining options will differ. |
 | Name                                                         | Enter a unique name for the endpoint.                        |
 | Target resource type    **(for Azure endpoints only)**       | If you select the **Azure endpoint** type, you can select from the  following resource types:  **Cloud service**   **App Service**   **App Service slot**   **Public IP address** |
@@ -271,7 +271,7 @@ To configure endpoint monitoring, you open the **Configuration** page for the Tr
 Then, under the **Endpoint monitor settings** section, you specify the following settings for the Traffic Manager profile:
 
 | **Setting**                  | **Description**                                              |
-|:-:|:-:|
+|:-|:-|
 | Protocol                     | Choose HTTP, HTTPS, or TCP as the  protocol that Traffic Manager uses when probing your endpoint to check its  health. HTTPS monitoring doesn't verify whether your TLS/SSL certificate is  valid; it only checks that the certificate is present. |
 | Port                         | Choose the port used for the request.                        |
 | Path                         | This configuration setting is valid only  for the HTTP and HTTPS protocols, for which specifying the path setting is  required. Providing this setting for the TCP monitoring protocol results in  an error. For HTTP and HTTPS protocol, give the relative path and the name of  the webpage or the file that the monitoring accesses. A forward slash (/) is  a valid entry for the relative path. This value implies that the file is in  the root directory (default). |

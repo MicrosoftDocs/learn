@@ -84,7 +84,7 @@ Now that we've added OrderDetails to our API, let's test it by using the API Man
 
 We can use the `curl` command-line tool to submit requests to our API. It's ideal because we can use it to include the correct subscription key with our requests. To submit requests, we also need the location of the API, which is hosted in Azure API Management and consists of the Products and Orders functions.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources**, and then select your **Azure API Management** service instance (ProductFunction Function App).
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources**, and then select your ProductFunctionNNNNN instance (ProductFunction Function App).
 
 1. In the **Overview** pane,  select the **Copy to clipboard** icon to the right of the **URL** value.
 

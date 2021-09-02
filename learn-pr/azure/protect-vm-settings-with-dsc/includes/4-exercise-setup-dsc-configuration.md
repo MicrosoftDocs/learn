@@ -167,9 +167,7 @@ If you needed to add modules, in your automation account you would go to **Share
 
     ![Screenshot of the Azure portal, showing the Nodes pane.](../media/4-nodes.png)
 
-    The **Virtual Machines** pane for your *Automation Account* appears. 
-
-1. Select the VM you created at the start of this unit: **myVM**. The **myVM** pane appears.
+1. Select the VM you created at the start of this unit: **myVM**. If the VM isn't listed, wait a few minutes and refresh the page until it appears.
 
 1. In the top menu bar, select **Connect**.
 
