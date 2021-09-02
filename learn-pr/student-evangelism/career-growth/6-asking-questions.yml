@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3 # user input: the estimate time to complete the unit
 content: |
-  [!include[](includes/3-asking-questions.md)]
+  [!include[](includes/6-asking-questions.md)]
 quiz:
   questions:
   - content: "You should limit your questions to your peers as an employee."
