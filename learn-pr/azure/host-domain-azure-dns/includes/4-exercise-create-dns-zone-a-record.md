@@ -50,11 +50,11 @@ To create your DNS zone:
 
 Now that the DNS zone exists, you need to create the necessary records to support the domain.
 
-The primary record to create is the A record. This record contains the pairing between the IP address and the domain name. The A record can have multiple entries, called record sets. In record sets, the domain name remains constant, while the IP addresses are different.
+The primary record to create is the A record. This record contains the pairing between the IP address and the domain name. An A record set can have multiple records. In a record set, the domain name remains constant, while the IP addresses are different.
 
-1. On the **wideworldimportsXXXX.com - DNS zone** pane, in the upper menu bar, select **Record set**.
+1. On the **wideworldimportsXXXX.com - DNS zone** pane, in the command bar, select **Record set**.
 
-    ![Screenshot of the DNS zone page, with + Record set highlighted.](../media/4-add-a-record.png)
+    :::image type="content" source="../media/4-add-a-record.png" alt-text="Screenshot of the DNS zone page, with + Record set highlighted." lightbox ="../media/4-add-a-record.png":::
 
 1. The **Add record set** pane appears. Enter the following values for each setting.
 
@@ -63,21 +63,22 @@ The primary record to create is the A record. This record contains the pairing b
     |Name     |   www      | The host name that you want to resolve to an IP address. |
     |Type    |     A    |  The A record is the most commonly used. If you're using IPv6, select the **AAAA** type.     |
     |Alias record set    | No   | This can only be applied to A, AAAA, and CNAME record types.  |
-    |TTL     |      1  | The time-to-live period, which specifies how long each DNS server caches the resolution before it's purged.        |
+    |TTL     |      1  | The time-to-live, which specifies the period of time each DNS server caches the resolution before it's purged.        |
     |TTL unit     |    Hours     |  This value can be seconds, minutes, hours, days, or weeks. Here, you're selecting hours.  |
     |IP Address    |    10.10.10.10     |  The IP address the record name resolves to. In a real-world scenario, you would enter the public IP address for your web server. |
 
-    ![Screenshot of Add record set.](../media/4-arecord.png)
-
 1. Select **OK** to add the record to your zone.
 
-Note that it's possible to have more than one IP address set up for your web server. In that case, you add all the associated IP addresses as part of a record set. You can update the record set after it's created with additional IP addresses.
+
+    :::image type="content" source="../media/4-arecord.png" alt-text="Screenshot of A record set." lightbox="../media/4-arecord.png":::
+
+Note that it's possible to have more than one IP address set up for your web server. In that case, you add all the associated IP addresses as part of a record set. After it's created, you can update the record set with additional IP addresses.
 
 ## Verify your global Azure DNS
 
-In a real-world scenario, after you create the public DNS zone, you update the NS records of the domain-name registrar, to delegate the domain to Azure.
+In a real-world scenario, after you create the public DNS zone, you update the NS records of the domain-name registrar to delegate the domain to Azure.
 
-Even though we don't have a registered domain, it's still possible to verify that the DNS zone works as expected, by using the nslookup tool.
+Even though we don't have a registered domain, it's still possible to verify that the DNS zone works as expected, by using the `nslookup` tool.
 
 ### Use nslookup to verify the configuration
 
