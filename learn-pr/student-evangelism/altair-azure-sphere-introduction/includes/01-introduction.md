@@ -49,17 +49,18 @@ The core of the system is the Open Source Intel 8080 CPU emulator that runs comp
 
 :::image type="content" source="../media/altair-azure-sphere-architecture.png" alt-text="Diagram that shows the Azure Sphere architecture." border="false":::
 
-## Introduction video to Altair 8800 emulator on Azure Sphere
+<!-- ## Introduction video to Altair 8800 emulator on Azure Sphere
 
 Select the following image to view an introduction to the cloud-connected Altair emulator running on Azure Sphere.
 
-[![Intro to the the Altair 8800 emulator on Azure Sphere video](../media/youtube-intro-thumbnail.png)](https://www.youtube.com/watch?v=nUMOpEOx6LI)
+[![Intro to the the Altair 8800 emulator on Azure Sphere video](../media/youtube-intro-thumbnail.png)](https://www.youtube.com/watch?v=nUMOpEOx6LI) -->
 
 In this module, you will:
 
-- Learn about the Altair 8800.
-- Learn about Azure Sphere.
-- Learn about the cloud-connected Altair emulator on Azure Sphere.
+- Learn about the history of the Altair 8800, the computer that kick-started the personal computer revolution.
+- Learn about the three components of Sphere Sphere and how together they provide a platform for secure IoT.
+- Apply the Azure IoT Services that are used to cloud-connect the Altair 8800.
+- Write Basic, C, or Assembler applications and games that run on the Altair 8800 emulator.
 
 ## Prerequisites
 
