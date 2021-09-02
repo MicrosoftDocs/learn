@@ -1,6 +1,6 @@
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NIMy]
 
-Skillful networking is one of the most important factors in jump-starting your career, yet it'is often overlooked. Networking encompasses an array of elements that can be helpful in advancing your career. These elements not only provide opportunities for you to grow and learn, but also to help improve your skills in communication and teamwork.  
+Skillful networking is one of the most important factors in jump-starting your career, yet it's often overlooked. Networking encompasses an array of elements that can be helpful in advancing your career. These elements not only provide opportunities for you to grow and learn, but also to help improve your skills in communication and teamwork.  
 
 There are many approaches to networking, each serving to advance both personal and career growth. Here are a few ideas:
 
