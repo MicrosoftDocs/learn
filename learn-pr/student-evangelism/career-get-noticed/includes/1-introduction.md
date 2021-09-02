@@ -13,7 +13,7 @@ Let a Microsoft recruiter describe a few qualities that companies are looking fo
 
 Let's say you're attending your first hackathon. As you take a quick break from writing code, you notice a few tech-company booths nearby. You've heard from your peers about internships, and you've even applied to multiple opportunities in the past, but this time you get to talk to a recruiter or engineer directly. 
 
-You approach a booth and discover that, contrary to popular opinion, the recruiters and engineers here aren't extraterrestrial beings, but regular people just like you! You might be wondering, How do I make a good impression and stand out from other attendees? You want to make sure that your resume piques the interest of the people in the booth, of course, but most importantly, you want to convey who you are as an individual and potential co-worker. 
+You approach a booth and discover that, contrary to popular opinion, the recruiters and engineers here aren't extraterrestrial beings, but regular people just like you! You might be wondering: How do I make a good impression and stand out from other attendees? You want to make sure that your resume piques the interest of the people in the booth, of course, but most importantly, you want to convey who you are as an individual and potential co-worker. 
 
 ## What will you learn?
 
