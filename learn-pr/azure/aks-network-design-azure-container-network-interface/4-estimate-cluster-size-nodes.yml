@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.aks-network-design-with-azure-cni.4-estimating-cluster-size-nodes
+uid: learn.aks-network-design-azure-container-network-interface.4-estimating-cluster-size-nodes
 title: Estimating cluster size - nodes
 metadata:
   unitType: learning-content

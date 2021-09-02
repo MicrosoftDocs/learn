@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.aks-network-design-with-azure-cni.6-exercise-deploy-aks
+uid: learn.aks-network-design-azure-container-network-interface.6-exercise-deploy-aks
 metadata:
   title: Exercise - Deploy an azure kubernetes service cluster with azure cni
   description: Exercise - Deploy an azure kubernetes service cluster with azure cni
