@@ -6,7 +6,7 @@ In this unit, we'll review some of the features and limitations of Rust:
 - Rust standard libraries and third-party crates
 - The Rust Cargo tool and dependency manager
 - The Rust playground
-- Limitations of Rust
+- Rust strengths
 
 
 ## Manage code with the Rust module system
@@ -33,7 +33,7 @@ There are tens of thousands of libraries and third-party crates available to use
    - std::fs - Functions for working with the file system.
    - std::io - Definitions and functionality for working with input/output.
    - std::path - Definitions and functions that support working with file system path data.
-- [structopt](https://crates.io/crates/structopt) - A third-party crate for easily parsing command line arguments.
+- [structopt](https://crates.io/crates/structopt) - A third-party crate for easily parsing command-line arguments.
 - [chrono](https://crates.io/crates/chrono) - A third-party crate to handle date and time data.
 - [regex](https://crates.io/crates/regex) - A third-party crate to work with regular expressions. 
 - [serde](https://crates.io/crates/serde) - A third-party crate of serialization and deserialization operations for Rust data structures.
@@ -77,22 +77,13 @@ There are some limitations in the playground that protect the site from being us
 You can read more about the features of the Rust playground on the [help page](https://play.rust-lang.org/help?azure-portal=true).
 
 
-## Understand Rust's limitations
-
-The Rust language has some limitations to consider when choosing the best language for your project:
-
-- Rust can have a somewhat steep learning curve since its features might not be familiar to some developers. Many learners of Rust report struggling at first to be productive until they eventually gain an understanding of the language.
-- Developing code with Rust may not be as fast as using a scripting language like Ruby or Python. Rust's static type checking and safety features, require developers to prove a certain level of correctness of their program before it even compiles.
-- Rust is a systems language meaning it sometimes requires developers to think about certain low-level details (such as when memory is freed) that other languages can simply abstract over (at the cost of some performance overhead). 
-- Rust is a newer language. The libraries and third-party code might not be as mature for some functionality as is available for other programming languages in certain domains.
-
 ## Understand Rust's strengths
 
-In contrast to its limitations, The Rust language also has many strengths to consider when choosing the best language for your project:
+The Rust language has many strengths to consider when choosing the best language for your project:
 
-- Rust allows for control over the performance and resource consumption of programs and libraries written in the language (on par with C and C++) while still being memory safe by default eliminating entire classes of common bugs.
-- Rust has rich abstraction features that allow developers to encode many of the invariants of their program into code which is then checked by the compiler (instead of relying on convention or documentation). This can often lead to the feeling of "if it compiles, it works".
-- Rust has built-in tools for building, testing, documenting, and sharing code as well as a rich ecosystem of third-party tools and libraries. These tools can make some tasks that are difficult in some languages (such as building dependencies) easy and productive in Rust.
+- Rust allows for control over the performance and resource consumption of programs and libraries written in the language on par with C and C++, while still being memory safe by default eliminating entire classes of common bugs.
+- Rust has rich abstraction features that allow developers to encode many of the invariants of their program into code, which is then checked by the compiler instead of relying on convention or documentation. This feature can often lead to the feeling of "if it compiles, it works."
+- Rust has built-in tools for building, testing, documenting, and sharing code as well as a rich ecosystem of third-party tools and libraries. These tools can make some tasks that are difficult in some languages, such as building dependencies, easy and productive in Rust.
 
 
 ### Check your knowledge

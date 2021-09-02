@@ -84,7 +84,7 @@ Now you can test your deployed service from a client application - in this case,
         response = urllib.request.urlopen(req)
         result = response.read()
         json_result = json.loads(result)
-        y = json_result["Results"]["WebServiceOutput0"][0]["predicted_price"]
+        y = json_result["Results"]["WebServiceOutput0"][0]["Scored Labels"]
         print('Predicted price: {:.2f}'.format(y))
         
     except urllib.error.HTTPError as error:

@@ -1,4 +1,4 @@
-In this unit, we look Azure Spring Cloud's distributed tracing mechanism, to better understand microservices issues.
+In this unit, we look Azure Spring Cloud's Application Insights features, to better understand microservices issues.
 
 We now have a complete microservices stack:
 
@@ -17,6 +17,6 @@ To solve that issue, we're going to use Application Performance Monitoring (APM)
 > [!TIP]
 > Tracing data can take a couple of minutes to be ingested by the system, so use this time to generate some load, and wait for the data to arrive.
 
-You should now have access to a full application map and to a search engine that allows to find performance bottlenecks.
+You should now have access to a full application map and to a search engine that allows you to find performance bottlenecks.
 
 ![Distributed tracing.](../media/6-distributed-tracing.png)

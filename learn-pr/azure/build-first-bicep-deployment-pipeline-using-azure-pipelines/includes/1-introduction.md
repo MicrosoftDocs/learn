@@ -22,7 +22,6 @@ You should be familiar with using:
 
 - Bicep, including creating and deploying basic Bicep files.
 - Azure, including the Azure portal, subscriptions, resource groups, and resources.
-- Service principals.
 - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
 
 To work through the exercises in the module, you'll need an Azure account that can create resource groups, Azure Active Directory (Azure AD) applications, and service principals.
