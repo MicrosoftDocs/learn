@@ -10,7 +10,7 @@ Let's use the **Azure Monitor Demo Logs pane** to practice writing queries again
 
 1. In your browser, open the [Azure Monitor Demo Logs pane](https://portal.azure.com/learn.docs.microsoft.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade?azure-portal=true) in the Azure portal. The **Logs** pane appears for *Demo*.
 
-1. On the **New Query 1** tab, in the query editor, enter a basic query in the **Type your query here or click one of the queries tp start** box. This example query retrieves the details of the ten most recent security events.
+1. On the **New Query 1** tab, in the query editor, enter a basic query in the **Type your query here or click one of the queries to start** box. This example query retrieves the details of the ten most recent security events.
 
     ```kusto
     SecurityEvent
@@ -60,8 +60,8 @@ In addition to writing queries from scratch, the operations team can also take a
 
 1. In the search box, enter *Distinct missing updates cross computers*. Select **Run**. The **Logs** pane reappears with the query's results returning a list missing Windows updates from virtual machines sending logs into the workspace.
 
-    >![NOTE}]
-    >You can also run this same query from the **Logs** pane. In the left menu pane, under **Queries**, in the **Group by** dropdown list, select **Category**, expand **IT & Management Tools**, and select **Distinct missing updates cross computers**.
+    > [!NOTE]
+    > You can also run this same query from the **Logs** pane. In the left menu pane, under **Queries**, in the **Group by** dropdown list, select **Category**, expand **IT & Management Tools**, and select **Distinct missing updates cross computers**.
 
 1. On the **Logs** pane, in the left menu pane, under **Queries**, in the **Group by** dropdown list, select **Category**, expand **Azure Monitor**, and run the query called **Computers availability today**. This query shows a time series chart with the number of unique IP addresses sending logs into the workspace each hour for the last day.
 
