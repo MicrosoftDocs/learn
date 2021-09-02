@@ -1,4 +1,4 @@
-# [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
+## [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
 
 2. Once **MixedRealityFeatureTool** is opened, to access preview releases click on **Settings** and enable **Show preview releases** under **Feature** tab, then click on **ok** to save the settings.
 
@@ -74,7 +74,7 @@ In the Project Settings window, select **XR Plug-in Management** > **Windows Mix
 
 ![Unity Publishing Settings. Package name configured](../../media/base-02-section5-step2-2.png)
 
-# [Unity 2020 + OpenXR](#tab/openxr)
+## [Unity 2020 + OpenXR](#tab/openxr)
 
 2. Once **MixedRealityFeatureTool** is opened, click on **Start** to get started with Mixed Reality Feature Tool.
 
@@ -135,8 +135,8 @@ Features are grouped by category to make things easier to find, click on **Mixed
 6. Once you check OpenXR checkbox, MRTK Project Configurator window will show
 updated message with **Apply Settings** button. Click **Apply Settings** button.
 
-7. To validate OpenXR configuration, click **OpenXR** under **XR Plug-in Management**
-and check these items:
+7. To validate OpenXR configuration, click **OpenXR** under **XR Plug-in Management** and check these items:
+
 * Depth Submission Mode: **Depth 16 Bit**
 * Interaction Profiles: **Microsoft Hand Interaction Profile**
 
@@ -170,7 +170,7 @@ effect, click on **Apply** to restart the Unity editor
 > [!TIP]
 > The 'Product Name' is the name displayed in the HoloLens Start menu. To make the app easier to locate during development, add an underscore in front of the name to sort it to the top.
 
-# [Legacy WSA](#tab/wsa)
+## [Legacy WSA](#tab/wsa)
 
 2. Once **MixedRealityFeatureTool** is opened, to access preview releases click on **Settings** and enable **Show preview releases** under **Feature** tab, then click on **ok** to save the settings.
 
