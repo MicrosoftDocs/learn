@@ -27,20 +27,20 @@ Follow this [quickstart tutorial](/azure/cognitive-services/custom-vision-servic
 
 ![Unity with ObjectDetectionManager script component configuration fields shown in Inspector](../media/tutorial3-section4-step1-2.png)
 
-3. In the Hierarchy window locate the **ObjectDetectionManager** object and select it.
+3. In the Hierarchy window, locate the **ObjectDetectionManager** object and select it.
 The **ObjectDetectionManager** prefab contains the **ObjectDetectionManager (script)** component and as you can see from the Inspector window it depends on Azure settings and Project settings.
 
 ## Retrieving Azure api resource credentials
 
-The necessary credentials for the **ObjectDetectionManager (script)** settings can be retrieve from the Azure Portal and the custom vision portal.
+The necessary credentials for the **ObjectDetectionManager (script)** settings can be retrieve from the Azure portal and the custom vision portal.
 
 ### Retrieving Azure Settings credentials
 
-Find and locate the custom vision resource of type **Cognitive Services** you have created in the *Preparing the scene* section of this tutorial (select custom vision resources name followed by *-Prediction* ). There click on *Overview* or *Keys and Endpoint* to retrieve the necessary credentials.
+Find and locate the custom vision resource of type **Cognitive Services** you have created in the *Preparing the scene* section of this tutorial (select custom vision resources name followed by *-Prediction*). There click on *Overview* or *Keys and Endpoint* to retrieve the necessary credentials.
 
 ### Retrieving Project Settings credentials
 
-In the [custom vision](https://www.customvision.ai/projects) dashboard, open the project you have created for this tutorial and click on the top right corner of the page on the gear icon to open the settings page. Here on the right hand *Resources* section you will find the necessary credentials.
+In the [custom vision](https://www.customvision.ai/projects) dashboard, open the project you have created for this tutorial and click on the top-right corner of the page on the gear icon to open the settings page. Here on the right-hand *Resources* section you will find the necessary credentials.
 
 1. Now with the **ObjectDetectionManager (script)** setup correctly, find the **SceneController** object in your scene Hierarchy and select it.
 
@@ -59,15 +59,15 @@ In the [custom vision](https://www.customvision.ai/projects) dashboard, open the
 > [!TIP]
 > To improve the model training try to take each image from different angles and lighting conditions.
 
-3. Once you have enough images click on the **Train** button to start the model training process in the cloud. Activating the training will upload all images and then start the training, this can take up to a minute or more. A message inside the menu indicates the current progress and once it indicates the completion you can stop the application
+3. Once you have enough images click on the **Train** button to start the model training process in the cloud. Activating the training will upload all images and then start the training, this process can take up to a minute or more. A message inside the menu indicates the current progress and once it indicates the completion you can stop the application
 
 > [!TIP]
 > The **ObjectDetectionManager (script)** directly uploads taken images into the Custom Vision service. As an alternative the custom vision API accepts URLs to the images, as an exercise you can modify the **ObjectDetectionManager (script)** to upload the images to a Blob storage instead.
 
 ## Detect objects
 
-1. Before detecting the objects we have to change the Api key present in  **ObjectDetectionManager (script)** under project settings that already assign with custom vision key.
+1. Before detecting the objects, we have to change the Api key present in  **ObjectDetectionManager (script)** under project settings that already assign with custom vision key.
 
-2. Find and locate the custom vision resource in Azure portal.There click on *Keys and Endpoint* to retrieve the Api key and replace with old Api key under project settings.
+2. Find and locate the custom vision resource in Azure portal. There click on *Keys and Endpoint* to retrieve the Api key and replace with old Api key under project settings.
 
 3. You can now put the trained model to the test, run the application and from the *main menu* click on **Search Object** and type the name of the **Tracked Object** in question. The **Object Card** will appear and click on the **Custom Vision** button. From here the **ObjectDetectionManager** will start taking image captures in the background from the camera and the progress will be indicated on the menu. Point the camera to the object you used to train the model and you will see that after a short while it will detect the object.

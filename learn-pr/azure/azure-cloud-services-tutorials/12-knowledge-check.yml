@@ -23,7 +23,7 @@ quiz:
           isCorrect: false
         - content: "All of the above"
           isCorrect: true
-    - content: "Which of the following element is a non relational storage system for large scale storage?"
+    - content: "Which of the following element is a non-relational storage system for large-scale storage?"
       choices:
         - content: "Application"
           isCorrect: false
