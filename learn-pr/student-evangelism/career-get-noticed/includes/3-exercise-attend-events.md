@@ -1,6 +1,6 @@
 The first step in networking is to attend functions and events within your sphere of interest. This exercise provides several ideas for how to sign up for and attend tech events, and how to approach meeting and interacting with people who might be influential in helping you land the internship or job you're seeking.
 
-## Sign up for a user group
+## Step 1: Sign up for a user group
 
 Start by discovering where to meet people. Within the broad area of technology, you'll find numerous user groups, organizations whose members share a common interest in specific technologies. For example, you might want to join a group on JavaScript or Vue.js. 
 
@@ -11,7 +11,7 @@ To get started, do the following:
  
    By becoming a group member, you'll be notified about upcoming events that you can sign up for and participate in.
 
-## Choose an event to attend
+## Step 2: Choose an event to attend
 
 Most user groups meet with a monthly cadence. By attending events, you'll begin to meet and get to know both peers with similar interests and recruiters and other company representatives. 
 
@@ -30,7 +30,7 @@ To get started, complete this exercise:
    > [!TIP]
    > At the event, it's a good idea to seek out and introduce yourself to the event organizer. That person is likely to be influential and can in turn introduce you to other group members. The organizer might even represent a company that's looking to hire people, so be sure to bring several copies of your resume.
 
-## What to say to the people you meet
+### What to say to the people you meet
 
 So now you're signed up for an event, armed with a plan to speak to many people. But what do you say? If you're like most people, it can be a challenge to simply go up and talk to someone you've never met. 
 
