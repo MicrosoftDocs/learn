@@ -1,4 +1,4 @@
-As schools around the world respond to COVID-19 and increase their use of technology in the classroom, the need for building confidence using these technologies has never been more urgent. As an educator, you want to train yourself on the latest educational tools like Microsoft Teams in order to help support your teaching and ensure the best learning outcomes for your students. Microsoft provides an excellent, free, platform to help you train to use the classroom tools called Microsoft Learn.
+ As an educator, it is important to stay up to date on the latest educational tools like Microsoft Teams, Office365, Immersive Reader, and more, in order to help support your teaching and ensure the best learning outcomes for your students. Microsoft provides an excellent, free, platform to help you train to use the classroom tools called Microsoft Learn.
 
 ## What is Microsoft Learn?
 
