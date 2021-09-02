@@ -3,7 +3,7 @@ uid: learn.machinelearning.introduction-to-classical-machine-learning.exercise-s
 title: Exercise - Separate a dataset to test a model
 metadata:
   title: Exercise - Separate a dataset to test a model
-  description: Learn how to separate a dataset to test a machine learning model
+  description: Learn how to separate a dataset to test a machine learning model.
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb
