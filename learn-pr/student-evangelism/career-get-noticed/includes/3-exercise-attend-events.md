@@ -4,9 +4,12 @@ The first step in networking is to attend functions and events within your spher
 
 Start by discovering where to meet people. Within the broad area of technology, you'll find numerous user groups, organizations whose members share a common interest in specific technologies. For example, you might want to join a group on JavaScript or Vue.js. 
 
-Next, you'll join as a member of one or more user groups. By becoming a member, you'll be notified about upcoming group events that you can sign up for and participate in.
+To get started, do the following:
 
-To find groups in your area, go to [Meetup](http://www.meetup.com), and join one or more groups that match your interests.
+1. Find user groups in your area by going to, for example, [Meetup](http://www.meetup.com).
+1. Join as a member of one or more groups. 
+ 
+   By becoming a group member, you'll be notified about upcoming events that you can sign up for and participate in.
 
 ## Choose an event to attend
 
