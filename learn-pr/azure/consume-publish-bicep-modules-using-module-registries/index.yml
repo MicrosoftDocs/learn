@@ -3,18 +3,21 @@ uid: learn.azure.consume-publish-bicep-modules-using-module-registries
 metadata:
   moduleType: standard
   title: Consume and publish Bicep modules by using module registries
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
-  ms.date: 08/15/2021
+  description: Work with reusable Bicep modules by using module registries. Consume modules by using the public Bicep module registry. Share modules within your organization by using a private module registry.
+  ms.date: 09/02/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Consume and publish Bicep modules by using module registries
-summary: "TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master"
+summary: |
+  Reuse Bicep modules to reduce code duplication and increase the quality of your deployments.
+  Use modules published to the public Bicep module registry, and work with private registries to share modules in your own organization.
 abstract: |
   After completing this module, you'll be able to:
-    - Use a module published to Microsoft's Bicep module registry
-    - Publish a module to a private registry
+    - Consume a module published to Microsoft's Bicep module registry
+    - Create a private module registry for your own organization
+    - Publish a module to, and consume a module from, a private registry
 prerequisites: |
   You should be familiar with using:
 

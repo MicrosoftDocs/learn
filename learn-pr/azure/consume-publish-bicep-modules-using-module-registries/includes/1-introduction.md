@@ -1,4 +1,4 @@
-TODO intro para
+Bicep modules enable you to easily reuse your Bicep code in multiple deployments. By using Bicep module registries, you can use modules that others have created, and you can share your own modules within your organization and, optionally, with the wider Bicep development community.
 
 ## Example scenario
 
@@ -6,11 +6,11 @@ Suppose you're responsible for deploying and configuring the Azure infrastructur
 
 ## What will we be doing?
 
-TODO
+In this module, you'll learn about public and private module registries. You'll find out how to consume modules from the public Bicep module registry. You'll also learn how to create your own private module registry, and how you publish to and consume modules from a private registry.
 
 ## What is the main goal?
 
-TODO
+By the end of this module, you'll be able to use Bicep modules from the public module registry, and you'll be able to create and use private module registries.
 
 ## Prerequisites
 

@@ -5,8 +5,8 @@ sandbox: true
 metadata:
   unitType: exercise
   title: Exercise - Deploy a module from a registry
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 08/15/2021
+  description: Create a Bicep file that uses a module from the public Bicep module registry.
+  ms.date: 09/02/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial

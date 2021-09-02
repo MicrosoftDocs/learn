@@ -3,7 +3,7 @@
 - Why would you use it?
 - ACR vs. other registries
 
-### Azure Container Registry authorization
+### Access control
 
 TODO
 
