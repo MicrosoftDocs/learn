@@ -54,13 +54,13 @@ Start by deploying a new VM from a Windows Server 2016 image.
 
 1. Use your Microsoft Learn account to sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the **Search the Marketplace** text box, enter **Automation**, and press <kbd>Enter</kbd> to view the search results.
 
 1. In the "Automation" search results, select the **Automation** Azure service published by Microsoft.
 
-1. Select **Create**. The **Add Automation Account** pane appears.
+1. Select **Create** and then select **Automation**. The **Add Automation Account** pane appears.
 
 1. Enter the following values for each setting. The automation account must have a unique name. We suggest using something like *\[*your name or initials*\]-automation-account*. Use this name wherever you see *\[your-automation-account-name\]* in this exercise.
 
@@ -68,12 +68,12 @@ Start by deploying a new VM from a Windows Server 2016 image.
     |---|---|
     | Name | *\[your-automation-account-name\]* |
     | Subscription | Concierge Subscription  |
-    | Resource group | Select existing resource group associated with Concierge Subscription |
+    | Resource group | Select the existing resource group in the dropdown list |
     | Location | Accept default location |
 
-1. Ignore the message about permissions for the **Create Azure Run As account**. You don't need it to be created as a Run As account in Azure Active Directory.
+1. Accept defaults for the remaining settings. Ignore the message about permissions for the **Create Azure Run As account**. You don't need a Run As account in Azure Active Directory.
 
-1. Select **Create**. Wait until the automation account is created before you continue.
+1. Select **Create**. Wait until the automation account is deployed before you continue.
 
 1. Select **Go to resource** when deployment completes. Your **Automation Account** pane appears.
 
@@ -85,7 +85,7 @@ Start by deploying a new VM from a Windows Server 2016 image.
     pwsh
     ```
 
-1. At the PowerShell prompt, start the code editor and run the following command to create a file named *MyDscConfiguration.ps1* in your home directory.
+1. At the PowerShell (PS) prompt,  run the following command to start the code editor and create a file named *MyDscConfiguration.ps1* in your home directory.
 
     ```powershell
     code $HOME/MyDscConfiguration.ps1
@@ -106,8 +106,8 @@ Start by deploying a new VM from a Windows Server 2016 image.
 
 1. Select <kbd>Ctrl+S</kbd> to save the file. Then, select <kbd>Ctrl+Q</kbd> to close the editor.
 
-1. Run the following PowerShell command to upload your DSC script into your Azure Automation account. Replace the placeholder automation account name with the name you used to create the automation account.
-
+1. In the coe below, replace the placeholder value for AutomationAccountName with the name you used to create the automation account. Then run this PowerShell command to upload your DSC script into your Azure Automation account. 
+ 
     ```powershell
     Import-AzAutomationDscConfiguration `
         -AutomationAccountName [your-automation-account-name] `
@@ -126,8 +126,8 @@ Start by deploying a new VM from a Windows Server 2016 image.
     State                 : Published
     Name                  : MyDscConfiguration
     Tags                  : {}
-    CreationTime          : 6/25/19 5:44:36 PM +00:00
-    LastModifiedTime      : 6/25/19 5:44:36 PM +00:00
+    CreationTime          : 6/25/21 5:44:36 PM +00:00
+    LastModifiedTime      : 6/25/21 5:44:36 PM +00:00
     Description           :
     Parameters            : {}
     LogVerbose            : False
@@ -143,21 +143,21 @@ If you needed to add modules, in your automation account you would go to **Share
 
 1. Return to your Azure Automation account in the Azure portal.
 
-1. In the left menu pane, under **Configuration Management**, select **State configuration (DSC)**. The **State configuration (DSC)** pane appears.
+1. In the Automation Account menu, under **Configuration Management**, select **State configuration (DSC)**. The **State configuration (DSC)** pane appears.
 
 1. Select the **Configurations** tab. Verify that the configuration **MyDscConfiguration** appears.
 
-    ![Screenshot of the Azure portal, showing the state configurations available on the State configuration (DSC) pane.](../media/4-state-configurations.png)
+    :::image type="content" source="../media/4-state-configurations.png" alt-text="Screenshot of the Azure portal, showing the state configurations available on the State configuration (DSC) pane.":::
 
 1. Select **MyDscConfiguration**.
   
-1. In the top menu bar, select **Compile**.
+1. In the command bar, select **Compile**.
 
 1. In the **Compile DSC Configuration** message box, select **Yes**.
 
 1. Wait for the compilation job to queue and run. The **Status** will change to **Completed**. You might need to refresh the screen to see the compilation status change.
 
-    ![Screenshot of the Azure portal, showing the state of the compilation job for the configuration.](../media/4-compilation.png)
+    :::image type="content" source="../media/4-compilation.png" alt-text="Screenshot of the Azure portal, showing the state of the compilation job for the configuration.":::
 
 1. Close the **MyDscConfiguration** pane, and return to the **State configuration (DSC)** pane.
 
@@ -165,13 +165,13 @@ If you needed to add modules, in your automation account you would go to **Share
 
 1. On the **State configuration (DSC)** pane for your *Automation Account*, select the **Nodes** tab, and in the top menu bar, select **Add**.
 
-    ![Screenshot of the Azure portal, showing the Nodes pane.](../media/4-nodes.png)
+    :::image type="content" source="../media/4-nodes.png" alt-text="Screenshot of the Azure portal, showing the Nodes pane.":::
 
 1. Select the VM you created at the start of this unit: **myVM**. If the VM isn't listed, wait a few minutes and refresh the page until it appears.
 
 1. In the top menu bar, select **Connect**.
 
-    ![Screenshot of the Azure portal, showing the Virtual Machines pane.](../media/4-add-vm.png)
+    :::image type="content" source="../media/4-add-vm.png" alt-text="Screenshot of the Azure portal, showing the Virtual Machines pane.":::
 
     The **Registration** pane appears.
 
@@ -197,7 +197,7 @@ If you needed to add modules, in your automation account you would go to **Share
 
 1. Verify that the node **myVM** appears in the list and that its status is **Compliant**.
 
-    ![Screenshot of the Azure portal, showing the Nodes pane with myVM registered.](../media/4-registered.png)
+    :::image type="content" source="../media/4-registered.png" alt-text="Screenshot of the Azure portal, showing the Nodes pane with myVM registered.":::
 
 ## Verify that IIS is installed on the VM
 
