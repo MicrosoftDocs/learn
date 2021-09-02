@@ -105,4 +105,4 @@ Ran 1 test in 0.001s
 FAILED (failures=1)
 ```
 
-The test shows an assertion failure because the strings are different. The report enhances the assertion error to show the strings are mismatched on a few characters. It's helpful to check where exactly the error happened. In this case, it's in the *test_assertions.py* file on line six.
+The test shows an assertion failure because the strings are different. The report enhances the assertion error to show the strings are mismatched on a few characters. It's helpful to check where exactly the error happened because it narrows the area where the problem is. In this case, it's in the *test_assertions.py* file on line six.

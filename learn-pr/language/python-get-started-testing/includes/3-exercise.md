@@ -129,3 +129,14 @@ Ran 3 tests in 0.000s
 
 OK
 ```
+
+## Check your work 
+
+At this point you should have a Python test file named similar to *test_exercise.py* with the following:
+
+1. A `str_to_bool()` function
+1. A `try/except` block in the `str_to_bool()` function that catches `AtributeError`
+1. A `TestStrToBool()` test class that inherits from `unittest.TestCase`
+1. At least three test methods that test inputs to the `str_to_bool()` function
+
+All tests should be passing when running them in the terminal.
