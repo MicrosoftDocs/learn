@@ -45,7 +45,7 @@ Design an Azure CNI-based network | Use the information you've gathered in the p
 
 1. **Introduction**
 
-    You're an architect working for a business that wants to offer an innovative new web-based product to your customers that will differentiate your business and give you a lead over your competitors. You want to use cloud native patterns and practices to allow you to rapidly deliver a minimum viable product and then iterate quickly to add new features. The application handles some personally identifiabel information, so ensuring the security of this data will be important.
+    You're an architect working for a business that wants to offer an innovative new web-based product to your customers that will differentiate your business and give you a lead over your competitors. You want to use cloud native patterns and practices to allow you to rapidly deliver a minimum viable product and then iterate quickly to add new features. The application handles some personally identifiable information, so ensuring the security of this data will be important.
 
     You want to build the application using containers and will be adopting DevOps practices. The application consists of multiple discrete services and some of those need to communicate with other services in Azure or with existing services running in your on-premises infrastructure.
 
@@ -131,7 +131,7 @@ Design an Azure CNI-based network | Use the information you've gathered in the p
         - Explain the options for defining a service CIDR.
         - Select a DNS service IP
         - Understanding the Docker Bridge address.
-    - Selecting an address range for 
+    - Selecting an address range for
         - Explain how services such as ingress, firewalls, private link, bastions, and on-premises access may require separate subnets
 
     **Knowledge check**
@@ -142,6 +142,6 @@ Design an Azure CNI-based network | Use the information you've gathered in the p
 1. **Summary**
 
     To design a network for an Azure Kubernetes Service cluster, you need to understand the needs of the applications that will be running on the cluster. We've reviewed Kubernetes networking concepts so we understand which components require IP addresses. We've analyze the applications that will be running on the cluster, how that affects the number of nodes and node pools that your cluster requires, what the applications network connectivity requirements are and how all of that can affect your network design. We considered our security requirements and finally we brought all of this together to create a network design for an Azure Kubernetes Service cluster using the advanced networking option.
-    
+
 
 ## Notes
