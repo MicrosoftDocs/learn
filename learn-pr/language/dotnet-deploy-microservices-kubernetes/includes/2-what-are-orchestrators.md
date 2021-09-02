@@ -12,7 +12,7 @@ If you increase the number of a shopping cart container instances and need to de
 
 Container management helps with these tasks.
 
-## Container Orchestration
+## Container orchestration
 
 A container orchestrator is a system that automatically deploys and manages containerized apps. For example, the orchestrator can dynamically respond to changes in the environment to increase or decrease the deployed instances of the managed app. Or, it can ensure all deployed container instances get updated if a new version of a service is released.
 
