@@ -106,7 +106,7 @@ Start by deploying a new VM from a Windows Server 2016 image.
 
 1. Select <kbd>Ctrl+S</kbd> to save the file. Then, select <kbd>Ctrl+Q</kbd> to close the editor.
 
-1. In the coe below, replace the placeholder value for AutomationAccountName with the name you used to create the automation account. Then run this PowerShell command to upload your DSC script into your Azure Automation account. 
+1. In the code below, replace `[your-automation-account-name]` for AutomationAccountName with the name you used when you created the automation account, and then run this PowerShell command to upload your DSC script into your Azure Automation account. 
  
     ```powershell
     Import-AzAutomationDscConfiguration `
@@ -135,13 +135,11 @@ Start by deploying a new VM from a Windows Server 2016 image.
 
 ## Add required modules
 
-After you upload your DSC configuration script, you import into your automation account any PowerShell modules that the DSC process needs. Our configuration doesn't need any additional modules, so we can skip this step.
-
-If you needed to add modules, in your automation account you would go to **Shared Resources**, and select **Modules** > **Add a module**.
+After you upload your DSC configuration script, import any PowerShell modules that the DSC process needs. Our configuration doesn't need any other modules, so we can skip this step. If you needed to import or add modules into your automation account you would go to **Shared Resources**, and then select **Modules** > **Add a module**.
 
 ## Compile the DSC script
 
-1. Return to your Azure Automation account in the Azure portal.
+1. In the Azure portal, return to your Azure Automation account.
 
 1. In the Automation Account menu, under **Configuration Management**, select **State configuration (DSC)**. The **State configuration (DSC)** pane appears.
 
@@ -155,7 +153,7 @@ If you needed to add modules, in your automation account you would go to **Share
 
 1. In the **Compile DSC Configuration** message box, select **Yes**.
 
-1. Wait for the compilation job to queue and run. The **Status** will change to **Completed**. You might need to refresh the screen to see the compilation status change.
+1. Wait for the compilation job to queue, run, and complete. The **Status** will change to **Completed**. You may need to refresh the screen to see the compilation status change.
 
     :::image type="content" source="../media/4-compilation.png" alt-text="Screenshot of the Azure portal, showing the state of the compilation job for the configuration.":::
 
@@ -167,7 +165,7 @@ If you needed to add modules, in your automation account you would go to **Share
 
     :::image type="content" source="../media/4-nodes.png" alt-text="Screenshot of the Azure portal, showing the Nodes pane.":::
 
-1. Select the VM you created at the start of this unit: **myVM**. If the VM isn't listed, wait a few minutes and refresh the page until it appears.
+1. Select the VM you created at the start of this unit: **myVM**. It may take up to 10 minutes for the configuration and VM to propagate in the network. If the VM isn't listed, wait a few minutes and refresh the page until it appears.
 
 1. In the top menu bar, select **Connect**.
 
