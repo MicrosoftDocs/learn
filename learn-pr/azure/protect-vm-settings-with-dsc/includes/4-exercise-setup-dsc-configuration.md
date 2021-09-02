@@ -151,19 +151,19 @@ After you upload your DSC configuration script, import any PowerShell modules th
 
 1. In the **Compile DSC Configuration** pane, select **Yes**.
 
-1. Wait for the compilation job to get added to the list and to show **Status** of **Completed**. This may take several minutes. You may need to refresh the screen to see the compilation status change; to refresh, select Refresh from the command bar.
+1. Wait for the compilation job to get added to the list and to show **Status** of **Completed**. This may take several minutes. You may need to refresh to see the status change; to refresh, select **Refresh** from the command bar.
 
     :::image type="content" source="../media/4-compilation.png" alt-text="Screenshot of the Azure portal, showing the state of the compilation job for the configuration.":::
 
-1. When compilation is completed, close the **MyDscConfiguration** pane, and return to your **[State configuration (DSC)** pane.
+1. When compilation is completed, close the **MyDscConfiguration** pane, and return to your **State configuration (DSC)** pane.
 
 ## Register the VM with your Azure Automation account
 
-1. On the  **State configuration (DSC)** pane for *[your-automation-account-name]*, select the **Nodes** tab. In the command bar, select **Add**. The **Virtual Machines** page appears.
+1. On the **State configuration (DSC)** pane for *[your-automation-account-name]*, select the **Nodes** tab. In the command bar, select **Add**. The **Virtual Machines** page appears.
 
     :::image type="content" source="../media/4-nodes.png" alt-text="Screenshot of the Azure portal, showing the Nodes pane.":::
 
-1. Select the VM you created at the start of this unit: **myVM**. It may take up to 10 minutes for the configuration and VM to propagate in the network. If the VM isn't listed, wait a few minutes and refresh the page until it appears.
+1. Select the VM you created at the start of this unit: **myVM**. It may take up to 10 minutes for the configuration and VM to propagate in the network. If the VM isn't listed, wait a few minutes and then select **Refresh** in the command bar the page until it appears.
 
 1. In the command bar, select **Connect**. The **Registration** pane appears.
 
@@ -183,7 +183,7 @@ After you upload your DSC configuration script, import any PowerShell modules th
 
 1. Select **OK**.
 
-1. Wait until the VM is connected. This process might take a few minutes. When your **myVM** has connected, in the breadcrumb in the top left, select your account automation name to close the **Registration** and **Virtual Machines** pane. The the **State configuration (DSC)** pane for your automation account appears. 
+1. Wait until the VM is connected. This process might take a few minutes. When your **myVM** has connected, in the breadcrumb in the top left, select your account automation name to close the **Registration** and **Virtual Machines** pane. The **State configuration (DSC)** pane for your automation account appears. 
 
 1. In the command bar, select **Refresh**.
 
