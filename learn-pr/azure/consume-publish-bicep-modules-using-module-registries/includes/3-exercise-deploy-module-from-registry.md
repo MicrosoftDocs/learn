@@ -1,13 +1,111 @@
-## Sign in to Azure
+[!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-## Create a resource group
+TODO scenario
 
-## Create a Bicep template
+In this exercise, you create a Bicep file that includes a module from the public registry. During the process, you'll:
+
+> [!div class="checklist"]
+> * Create a Bicep file that refers to the module from the registry.
+> * Build and inspect the Bicep file to understand how the module restore process works.
+> * Deploy your file to Azure.
+
+[!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
+
+## Create a Bicep file
+
+1. Open Visual Studio Code.
+
+1. Create a new file called *main.bicep*.
+
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
+ 
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 ## Add a module
 
-## Configure Bicep
+1. TODO
 
-## Build and inspect your Bicep template
+1. Save the changes to the file.
 
-## Deploy to Azure
+## Build and inspect your Bicep file
+
+::: zone pivot="cli"
+
+1. In the Visual Studio Code **Terminal**, run the following command to build the Bicep file to a JSON file.
+
+   ```azurecli
+   az bicep build --file main.bicep
+   ```
+
+   Bicep creates a file named *main.json* in the same folder as the *main.bicep* file.
+
+1. Open the *main.json* file.
+
+   Notice that TODO (look at the resources include the thing from the module)
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. In the Visual Studio Code **Terminal**, run the following command to build the Bicep file to a JSON file.
+
+   ```powershell
+   bicep build main.bicep
+   ```
+
+   Bicep creates a file named *main.json* in the same folder as the *main.bicep* file.
+
+1. Open the *main.json* file.
+
+   Notice that TODO (look at the resources include the thing from the module)
+
+::: zone-end
+
+## Deploy the Bicep template to Azure
+
+::: zone pivot="cli"
+
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-sandbox-deploy-cli.md)]
+
+### Deploy the template to Azure by using the Azure CLI
+
+In the Visual Studio Code **Terminal**, deploy the Bicep template to Azure by running the following code.
+
+```azurecli
+az deployment group create --template-file main.bicep
+```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-sandbox-deploy-powershell.md)]
+
+### Deploy the template to Azure by using Azure PowerShell
+
+In the Visual Studio Code **Terminal**, deploy the template to Azure by running the following Azure PowerShell command. This process can take a couple of minutes to complete, and then you'll have a successful deployment.
+
+```azurepowershell
+New-AzResourceGroupDeployment -TemplateFile main.bicep
+```
+
+::: zone-end
+
+You'll see `Running...` in the terminal.
+
+Wait for deployment to finish.
+
+## Verify the deployment
+
+Use the Azure portal to inspect the resources that you deploy and to inspect the results of each deployment.
+
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and make sure you're in the sandbox subscription by doing the following:
+
+   a. Select your avatar at the upper right.  
+   b. Select **Switch directory**. In the list, select the **Microsoft Learn Sandbox** directory.
+
+1. On the left pane, select **Resource groups**.
+
+1. Select **<rgn>[sandbox resource group name]</rgn>**.
+
+1. In the **Overview** section, you can see that one deployment has succeeded. TODO verify the rest of the deployment

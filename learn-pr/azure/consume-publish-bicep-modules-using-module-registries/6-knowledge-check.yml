@@ -14,17 +14,17 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: You've created a Bicep file that will be useful to people throughout the Bicep community. What's the best way to share it?
     choices:
-    - content: ""
+    - content: Publish it to a private module registry.
+      isCorrect: false
+      explanation: Incorrect. A private module registry is designed to be used within your organization.
+    - content: Publish it as a template spec.
+      isCorrect: false
+      explanation: Incorrect. Because a template spec is stored in your Azure subscription, it's only accessible within your organization.
+    - content: Publish it to the public module registry.
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: Correct. Microsoft maintains a public module registry for the Bicep community. Anyone can submit and use modules.
   - content: ""
     choices:
     - content: ""

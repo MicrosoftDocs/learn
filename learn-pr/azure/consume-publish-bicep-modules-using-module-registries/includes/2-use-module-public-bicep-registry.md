@@ -2,9 +2,11 @@ Bicep modules enable you create composable, reusable files that define a set of 
 
 ## Why do you share Bicep modules?
 
-TODO
+When you work with Bicep, you often use similar resources repeatedly. Also, it's common to create combinations of resources that you deploy in multiple places. Bicep modules provide a convenient way to create reusable Bicep files. Each module typically defines a set of resources with a predefined configuration.
 
-A module registry is X
+One of the benefits of using modules is that you can share them with others, and you can benefit from the modules that others share with you. For example, you might invest time in building and testing a Bicep file to deploy a set of resources that you often use together. When you share your file as a Bicep module, your colleagues can use the module to quickly deploy the same resources.
+
+A Bicep *module registry* is the place that modules are stored and shared. Anyone can create their own module registry. Additionally, Microsoft runs a public module registry that the Bicep community uses to share modules.
 
 ## How do module registries compare to template specs?
 
@@ -13,9 +15,8 @@ Azure Resource Manager also enables you to save an Azure Resource Manager templa
 - Template specs are stored in Azure as a resource. The Bicep module registry is a publicly accessible service, and you can create your own Bicep module registries within or outside of Azure.
 - Bicep modules are intended to be combined into a larger deployment. Template specs are designed to be deployable as a complete template, although you can use a template spec within a deployment if you want.
 - Template specs provide access control capabilities. When you work with a private module registry, you need to control the access to your modules in other ways. You'll learn more about this later in the module.
-- Bicep modules retain all of the original Bicep code, including comments, symbolic names, and whitespace. When you create a template spec by using Bicep, your Bicep code is converted to JSON and some of this information is lost. So you need to keep the source Bicep file somewhere else as well.
 
-When you're deciding between template specs and Bicep modules, a good rule of thumb is: if the template is going to be deployed as is throughout your organization, template specs are probably a good fit. But if you're likely to reuse this template within multiple parent templates, Bicep modules might serve your needs better, and a module registry is a good way to use modules published by others and to share modules within your organization.
+When you're deciding between template specs and Bicep modules, a good rule of thumb is: if the template is going to be deployed as is throughout your organization, template specs are probably a good fit. But if you're likely to reuse this template within multiple parent templates, Bicep modules might serve your needs better, and a module registry is a good way to share modules.
 
 ## The Bicep public module registry
 
@@ -31,7 +32,7 @@ TODO more info on how to find modules in the registry. Apparently will use Micro
 When you've found a module you want to use, you create a *module definition* in your Bicep file like the following example:
 
 ```bicep
-module myModule 'oci:todo.azurecr.io/modulerepo/modulename:moduleversion' = {
+module myModule 'oci:xxx.azurecr.io/modulerepo/modulename:moduleversion' = {
   name: 'my-module'
   params: {
     moduleParameter1: 'value'
