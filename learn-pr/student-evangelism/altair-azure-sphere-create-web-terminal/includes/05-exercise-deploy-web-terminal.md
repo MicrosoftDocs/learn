@@ -47,13 +47,12 @@ Install the Visual Studio Code Static Web Apps Extension from the [Extension Mar
 1. Type **create static web app**, and select **Azure Static Web Apps: Create Static Web App...(Advanced)**.
 1. Select your subscription.
 1. You may be prompted to sign in with your GitHub account.
-1. Enter the name of the static web app: Enter **AltairWebTerminal**.
 1. Select **Create a new resource group**.
 1. Name the resource group **AltairWebTerminal**.
+1. Enter the name of the static web app: Enter **AltairWebTerminal**.
 1. Select the **Free** sku.
 1. Choose **Custom** build preset.
 1. Enter the location of your application code. Enter **/**.
-1. Enter the location of your Azure Function code. Enter **/api**.
 1. Enter the build output location. Ensure left **blank**.
 1. Select a location for the new resource. Select your preferred location for the Static Web App.
 
