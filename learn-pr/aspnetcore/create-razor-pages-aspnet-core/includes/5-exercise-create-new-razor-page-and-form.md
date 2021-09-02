@@ -5,7 +5,7 @@ In this unit, you'll create a form in the *RazorPagesPizza* project using Razor 
 The *RazorPagesPizza* project directory is currently open in the Visual Studio Code. Run the following .NET Core CLI command in the command shell:
 
 ```dotnetcli
-dotnet new page --name Pizza
+dotnet new page --name Pizza --namespace RazorPagesPizza.Pages --output Pages
 ```
 
 The preceding command:
@@ -13,7 +13,7 @@ The preceding command:
 * Creates the following files in the `RazorPagesPizza.Pages` namespace:
   * *Pizza.cshtml*&mdash;The Razor page
   * *Pizza.cshtml.cs*&mdash;The accompanying `PageModel` class
-* Stores both files in the project's *Pages/Products* directory.
+* Stores both files in the project's *Pages* directory.
 
 Note that there's nothing magical about using the CLI to create these files. You can also create the files manually; the CLI command is just a shortcut for doing so.
 
