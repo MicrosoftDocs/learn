@@ -38,6 +38,14 @@ public void OnGet()
 }
 ```
 
+Add a `List<Pizza>` variable named `pizzas` to the `PizzaModel` class:
+
+```csharp
+public List<Pizza> pizzas;
+```
+
+When the `OnGet` method is called, it will assign the results of the `PizzaService.GetAll()` method to the `pizzas` variable. This variable will be accessible to the Razor page template, where it will be written to the table listing the available pizzas.
+
 ### Use a utility method to format the Gluten Free information in the list
 
 Our `IsGlutenFree` property is a boolean value. We can use a utility method to format the boolean value as a string. Add the following utility method to the `PizzaModel` class:
@@ -81,7 +89,7 @@ The `PizzaModel` class needs access to the `Pizza` model. It will validate and p
 
 ```csharp
 [BindProperty]
-public NewPizza Pizza { get; set; }
+public Pizza NewPizza { get; set; }
 ```
 
 ## Add an HTTP POST handler for the Delete buttons
