@@ -16,11 +16,14 @@
         * Conditionals
         * Connectors"
 -->
-TODO: add your topic sentences(s)
-TODO: add your bulleted list of key things covered
-* TODO
-* TODO
-* TODO
+
+In this section, let's discuss about Azure Service Health usage and their benefits such as:
+
+* Personalized dashboards
+* Configurable cloud alerts
+* Shareable documents with details about issues
+* Guidance and support during incidents
+
 
 <!-- 2. Decision criteria introduction --------------------------------------------------------------------------------
 
@@ -37,9 +40,43 @@ TODO: add your bulleted list of key things covered
     Example:
         "Decision criteria"
          "Logic Apps helps you coordinate the flow of data through disparate systems. The cases where Logic Apps might not be the best option typically involve real-time requirements, complex business rules, or use of non-standard services. Here's some discussion of each of these factors."
--->
+
 ## Decision criteria
-TODO: add your 3 lead-in sentences
+-->
+
+Your cloud environment should be monitored. On Azure, you have different tools to accomplish this monitoring strategy which complement each other and surely Azure Service Health should be included in your monitoring toolset.
+
+As important as monitor your virtual machines, security events, network connectivity, applications, databases, and so on, be aware about the health of your cloud platform should be one of your top priorities.
+
+Just as an example, if you can be alerted in advance regarding a service issue on the datacenter where your virtual machines are running on, you can act proactively and avoid issues within your workload. This is the reason why you should consider the usage of Azure Service Health and stay informed about the service issues that affect you at no costs.
+
+### Personalized dashboards
+
+At the Service Health, you can create a personalized dashboard (view) filtering subscription, region, and service. This allows you to customize the information available to you based on what is more important/critical to your environment.
+
+:::image type="content" source="../media/4-personalized-dashboard.png" alt-text="Personalized Dashboard":::
+
+### Configure cloud alerts
+
+Based on the selections you did, you can add a service health alert and choose for which type of event types you would like to be alerted.
+
+:::image type="content" source="../media/4-service-alert.png" alt-text="Service Alert":::
+
+:::image type="content" source="../media/4-create-alert.png" alt-text="Create  Alert":::
+
+
+### Shareable documents with details about issues
+
+For any service issue, planned maintenance, health, or security advisories, when selected you can see on the Summary the option to download all information as PDF. Useful when you need to share the details by e-mail as example. Among other detailed information, the PDF will contain the event type, status, service impacted, region, impacted subscriptions, update history and more.
+
+:::image type="content" source="../media/4-shareable-documents.png" alt-text="Create Alert":::
+
+### Guidance and support during incidents
+
+If there are incidents, you can find guidance and related information about workarounds or actions you can take to minimize impact as well all issue updates.
+
+:::image type="content" source="../media/4-guidance-support.png" alt-text="Guidance and Support":::
+
 
 <!-- 3a. Decision criteria (for simple criteria) ----------------------------------------------------
 
@@ -64,8 +101,9 @@ TODO: add your 3 lead-in sentences
         | **Conditionals** | Logic Apps provides control constructs like Boolean expressions, switch statements, and loops.... |
         | **Connectors** | The last consideration is whether there are pre-built connectors for all the services you need to access. |
         |   |   |
--->
+
 TODO: add your topic sentences(s)
+-->
 
 <!-- 3b. Decision criteria (for complex criteria) ----------------------------------------------------------
 
@@ -85,24 +123,25 @@ TODO: add your topic sentences(s)
         H3: "Integration"
         Prose: The key question to ask when you're considering Logic Apps is _"do I need to integrate services?"_ Logic Apps work well when you need to get multiple applications and systems to work together. That's what they were designed to do. If you're building an app with no external connections, Logic Apps is probably not the best option."
         Visual: (image preferred)
+
+### (criterion)
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list, code sample, blockquote)
+Paragraph (optional)
+
+### (criterion)
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list, code sample, blockquote)
+Paragraph (optional)
+
+### (criterion)
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list, code sample, blockquote)
+Paragraph (optional)
 -->
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
 
 <!-- 4. Apply-the-criteria introduction --------------------------------------------------------------------------------
 
@@ -119,9 +158,10 @@ Paragraph (optional)
     Example:
         "Apply the criteria"
          "Logic Apps works best when you're integrating multiple services with some added control logic. The decision is often a judgment call though. Let's think about how to apply these criteria to our example processes."
--->
+
 ## Apply the criteria
 TODO: add your 3 lead-in sentences
+-->
 
 <!-- 5. Apply the criteria examples -----------------------------------------------------------------------------
 
@@ -137,25 +177,26 @@ TODO: add your 3 lead-in sentences
         H3: "Should the video-archive utility use Logic Apps?"
         Prose: "The video archive task is a good fit for Logic Apps even though it doesn't integrate multiple systems. Logic Apps has a built-in timer trigger and an Azure blob connector that are perfect to implement this process...."
         Visual: (image preferred)
+
+
+### Should (scenario subtask) use (product)?
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list)
+Paragraph (optional)
+
+### Should (scenario subtask) use (product)?
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list)
+Paragraph (optional)
+
+### Should (scenario subtask) use (product)?
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list)
+Paragraph (optional)
 -->
-
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
 
 <!-- 6. Guidance summary (optional) ------------------------------------------------
 

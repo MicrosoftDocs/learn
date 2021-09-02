@@ -2,18 +2,18 @@
 uid: learn.intro-to-azure-service-health
 metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
-  title: intro-to-azure-service-health          # Do not edit: title must be "Introduction to (product)"
-  description: "TODO"             # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 7/15/2021             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
-  author: gerryaobrien      # GitHub ID of the Microsoft employee either authoring or project-managing this content
-  ms.author: gerryo           # Alias     of the Microsoft employee either authoring or project-managing this content
+  title: Introduction to Azure Service Health          # Do not edit: title must be "Introduction to (product)"
+  description: Introduction to Azure Service Health and how to get information from Azure Platform health.             # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 9/1/2021             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  author: ricmmartins      # GitHub ID of the Microsoft employee either authoring or project-managing this content
+  ms.author: ricmart           # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
   ms.prod: learning-azure         # Edit as appropriate for your portfolio area
 ###########################################################################
 ###
 ### Do not edit: title must be "Introduction to (product)"
 ###
-title: intro-to-azure-service-health
+title: Intro to Azure Service Health
 ###########################################################################
 ###
 ### Summary
@@ -37,7 +37,7 @@ title: intro-to-azure-service-health
 ###
 ### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master
 ###
-summary: ""
+summary: "This module introduces you to Azure Service Health and describes its characteristics, capabilities, and use cases."
 ###########################################################################
 ###
 ### Learning Objectives
@@ -64,8 +64,8 @@ summary: ""
 ###
 abstract: |
   By the end of this module, you'll be able to:
-    - Evaluate whether (product) is appropriate to (general product use case).
-    - Describe how (features) of (product) work to (solve problem).
+    - Evaluate whether Azure Service Health can provide information related to health of Azure platform.
+    - Describe how features of Azure Service Health work to provide personalized information.
 ###########################################################################
 ###
 ### Prerequisites
@@ -88,9 +88,8 @@ abstract: |
 ###   Prerequisite 2: "Basic knowledge of REST services and APIs"
 ###
 prerequisites: |
-  - # prerequisite 1
-  - # prerequisite 2
-  - # prerequisite 3
+  - Basic knowledge of navigating the Azure portal
+  - Basic knowledge of Azure resources
 ###########################################################################
 ###
 ### Do not edit: will be replaced by the module icon when available
@@ -109,6 +108,9 @@ levels:
 ###
 roles:
   - developer
+  - administrator
+  - solution-architect
+  - technology-manager
 ###########################################################################
 ###
 ### Specify the covered product.

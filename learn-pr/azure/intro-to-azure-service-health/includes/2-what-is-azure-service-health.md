@@ -6,7 +6,7 @@
 
     Example: "Let's start with a few definitions and a quick tour of the core features of Logic Apps. This overview should help you see whether Logic Apps might be a good fit for your work."
 -->
-TODO: add your topic sentences(s)
+Let's start with a definition of "Service Health" and explore some features. It will help you understand how you can benefit from it to improve the reliability of your environment.
 
 <!-- 2. Background-concept definitions (optional) ----------------------------------------
 
@@ -28,10 +28,14 @@ TODO: add your topic sentences(s)
         Heading: "What is a business process?
         Lead sentence: "A business process or _workflow_ is a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification...."
 -->
-## What is (concept)?
-TODO: Add your lead sentence
-TODO: Add your additional text
-TODO: Add your visual element
+## What is Azure Service Health?
+Azure Service Health should be comprehended as a set of services. The services combined will provide information about current or upcoming issues from Azure that may impact your workloads. This means that Azure Service Health is composed by:
+
+* Azure Status: Brings information about service outages that are publicly available on  Azure Status Page.
+* Service Health: Through an authenticated experience, gives personalized views regarding the health of Azure services and regions currently in use by your workloads.
+* Resource Health: Provides details about the health of individual resources in your environment, such as a virtual machine.
+
+With them, you will be able to see a high level of details regarding the health of your environment.
 
 <!-- 3. Define the product -------------------------------------------------------------
 
@@ -50,11 +54,12 @@ TODO: Add your visual element
     Example:
         Heading: "Azure Logic Apps definition"
         Lead sentence: "Azure Logic Apps is a cloud service that automates the execution of your business processes."
--->
+
 ## (product) definition
 TODO: Add your lead sentence
 TODO: Add your additional text
 TODO: Add your visual element
+-->
 
 <!-- 4. Solve the scenario -------------------------------------------------------------
 
@@ -74,11 +79,12 @@ TODO: Add your visual element
     Example:
         Heading: "How to implement a Twitter monitor"
         Lead sentence: "To implement a Twitter monitor, you map each task to a Logic Apps component and connect them with conditional logic."
--->
+
 ## How to (solve scenario)
 TODO: Add your lead sentence
 TODO: Add your additional text
 TODO: Add your visual element
+-->
 
 <!-- 5. Additional content (optional, as needed) ------------------------------------------------
 
@@ -101,15 +107,16 @@ TODO: Add your visual element
     [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
 -->
 
-<!-- Pattern for simple chunks (repeat as needed) -->
+<!-- Pattern for simple chunks (repeat as needed) 
 ## H2 heading
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)
 Paragraph (optional)
 Paragraph (optional)
+-->
 
-<!-- Pattern for complex chunks (repeat as needed) -->
+<!-- Pattern for complex chunks (repeat as needed) 
 ## H2 heading
 Strong lead sentence; remainder of paragraph.
 Visual (image, table, list, code sample, blockquote)
@@ -123,6 +130,7 @@ Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)
 Paragraph (optional)
+-->
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
