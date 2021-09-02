@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.navigate-microsoft-learn-for-educators-school-leaders
+uid: learn.navigate-microsoft-learn-for-microsoft-educator-center-users
 metadata:
   moduleType: standard
   title: "Navigate Microsoft Learn for Educators and School Leaders"
@@ -8,15 +8,15 @@ metadata:
   author: sadadow
   ms.author: saadad
   ms.topic: interactive-tutorial 
-title: Navigate Microsoft Learn for Educators and School Leaders
+title: Navigate Microsoft Learn for Microsoft Educator Center users
 summary: |
-  The Microsoft Educator Center is merging with Microsoft Learn to become the single training hub to empower digital classrooms, student-centered learning, and technical skilling for educators, students, institutions, and supporting education audiences. 
+  The Microsoft Educator Center will be merging with Microsoft Learn to become the single training hub to empower digital classrooms, student-centered learning, and technical skilling for educators, students, institutions, and supporting education audiences. 
   - What does that mean for your professional development? 
   - What are the benefits of moving to Learn? 
   - How will Learn grow to support education audiences? 
   - What happens to my existing progress?
 
-  This module will give you the essentials for using Microsoft Learn and provide a gateway to exciting content for the latest and greatest educator tools.  
+  This module will give you the essentials for using Microsoft Learn and provide a gateway to exciting professional development content for educator tools.  
 abstract: | 
   By the end of this module, you'll be able to:
     - Set up your Learn profile
@@ -36,12 +36,12 @@ roles:
 products:
 - m365	
 units:
-- learn.navigate-microsoft-learn-for-educators-school-leaders.introduction
-- learn.navigate-microsoft-learn-for-educators-school-leaders.find-educator-content-in-learn
-- learn.navigate-microsoft-learn-for-educators-school-leaders.create-a-collection
-- learn.navigate-microsoft-learn-for-educators-school-leaders.navigate-your-learn-profile
-- learn.navigate-microsoft-learn-for-educators-school-leaders.exercise
-- learn.navigate-microsoft-learn-for-educators-school-leaders.knowledge-check
-- learn.navigate-microsoft-learn-for-educators-school-leaders.summary
+- learn.navigate-microsoft-learn-for-microsoft-educator-center-users.introduction
+- learn.navigate-microsoft-learn-for-microsoft-educator-center-users.find-educator-content-in-learn
+- learn.navigate-microsoft-learn-for-microsoft-educator-center-users.create-a-collection
+- learn.navigate-microsoft-learn-for-microsoft-educator-center-users.navigate-your-learn-profile
+- learn.navigate-microsoft-learn-for-microsoft-educator-center-users.exercise
+- learn.navigate-microsoft-learn-for-microsoft-educator-center-users.knowledge-check
+- learn.navigate-microsoft-learn-for-microsoft-educator-center-users.summary
 badge:
-  uid: learn.navigate-microsoft-learn-for-educators-school-leaders.badge
+  uid: learn.navigate-microsoft-learn-for-microsoft-educator-center-users.badge
