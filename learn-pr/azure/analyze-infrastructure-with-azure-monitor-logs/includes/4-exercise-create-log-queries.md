@@ -8,7 +8,7 @@ In this exercise, you'll practice performing Azure Monitor log queries. You'll u
 
 Let's use the **Azure Monitor Demo Logs pane** to practice writing queries against sample data. This site is provided for demonstration with pre-populated sample data. The user interface is similar to the Azure portal, and you can use the Kusto language.
 
-1. In your browser, open the [Azure Monitor Demo Logs pane](https://portal.azure.com/learn.docs.microsoft.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade?azure-portal=true) in the Azure portal. The **Logs** pane appears for *Demo*.
+1. In your browser, open the [Azure Monitor Demo Logs pane](https://portal.azure.com/learn.docs.microsoft.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade?azure-portal=true) in the Azure portal. The **Demo Logs** pane appears.
 
 1. On the **New Query 1** tab, in the query editor, enter a basic query in the **Type your query here or click one of the queries to start** box. This example query retrieves the details of the ten most recent security events.
 
@@ -49,6 +49,8 @@ Let's use the **Azure Monitor Demo Logs pane** to practice writing queries again
         | where TimeGenerated >= startofweek(ago(21d))
         | summarize dcount(Computer) by endofweek(TimeGenerated) | render barchart kind=default
     ```
+
+## Use predefined Azure Monitor log queries to extract information from log data
 
 In addition to writing queries from scratch, the operations team can also take advantage of predefined example queries in Azure Monitor Logs that answer common questions related to the health, availability, usage, and performance of their resources.
 
