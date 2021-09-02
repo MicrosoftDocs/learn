@@ -1,5 +1,8 @@
 You can use GitHub Actions to automate Bicep deployments. GitHub Actions provides a flexible and reusable process to propagate changes to your Azure environment. A workflow enforces the process that you set to ensure the quality of your deployments and of your Azure environment. A deployment workflow also ensures that everyone who collaborates on your Bicep files uses the same process. In this module, you'll learn how to define a workflow in GitHub Actions and how to deploy your Bicep code by using the workflow.
 
+> [!NOTE]
+> If you'd prefer to use Azure Pipelines instead of GitHub Actions, see the module [Build your first Bicep deployment pipeline by using Azure Pipelines](/learn/modules/build-first-bicep-deployment-pipeline-using-azure-pipelines/).
+
 ## Example scenario
 
 Suppose you're responsible for deploying and configuring the Azure infrastructure to support a website at a toy company. You've built a Bicep template to use to deploy the website. Every time you need to reconfigure the website, you update your Bicep files and redeploy them from your computer. The website team asks for changes regularly, so the deployment process has become time-consuming. You want to find a way to automate the process so that you can focus on other tasks and initiatives.

@@ -1,5 +1,8 @@
 You can use Azure Pipelines to automate Bicep deployments. Azure Pipelines provides a flexible and reusable process to propagate changes to your Azure environment. A pipeline enforces the process that you set to ensure the quality of your deployments and of your Azure environment. A deployment pipeline also ensures that everyone who collaborates on your Bicep files uses the same process. In this module, you'll learn how to define a pipeline in Azure Pipelines and how to deploy your Bicep code by using the pipeline.
 
+> [!NOTE]
+> If you'd prefer to use GitHub Actions instead of Azure Pipelines, see the module [Build your first Bicep deployment workflow by using GitHub Actions](/learn/modules/build-first-bicep-deployment-pipeline-using-github-actions/).
+
 ## Example scenario
 
 Suppose you're responsible for deploying and configuring the Azure infrastructure to support a website at a toy company. You've built a Bicep template to use to deploy the website. Every time you need to reconfigure the website, you update your Bicep files and redeploy them from your computer. The website team asks for changes regularly, so the deployment process has become time-consuming. You want to find a way to automate the process so that you can focus on other tasks and initiatives.
