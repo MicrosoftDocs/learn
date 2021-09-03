@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.getting-started-with-object-interaction-tutorials-mrtk.5.7-Exercise-Manipulate-3D-objects-using-bounds-control
+uid: learn.azure.getting-started-with-object-interaction-tutorials-mrtk.5.7-exercise-manipulate-3D-objects-using-bounds-control
 title: Exercise - Manipulate 3D objects using bounds control
 
 metadata:
@@ -14,4 +14,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 10
 content: |
-  [!include[](includes/5.7-Exercise-Manipulate-3D-objects-using-bounds-control.md)]
+  [!include[](includes/5.7-exercise-manipulate-3D-objects-using-bounds-control.md)]

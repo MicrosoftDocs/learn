@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.getting-started-with-object-interaction-tutorials-mrtk.5.3-Exercise-panel-of-buttons-menus
+uid: learn.azure.getting-started-with-object-interaction-tutorials-mrtk.5.3-exercise-panel-of-buttons-menus
 title: Exercise -  Panel of buttons and dynamic menus
 metadata:
   title: Exercise -  Panel of buttons and dynamic menus
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 10
 content: |
-  [!include[](includes/5.3-Exercise-panel-of-buttons-menus.md)]
+  [!include[](includes/5.3-exercise-panel-of-buttons-menus.md)]
