@@ -692,8 +692,3 @@ achievements:
   title: Build a chat bot with the Azure portal
   summary: Build a chat bot with the Azure portal
   iconUrl: /learn/achievements/build-a-chat-bot-with-the-azure-portal.svg
-- uid: learn.navigate-microsoft-learn-for-educators-school-leaders.badge
-  type: badge
-  title: Navigate Microsoft Learn for Educators and School Leaders
-  summary: This module will give you the essentials for using Microsoft Learn and provide a gateway to exciting professional development content for educator tools.
-  iconUrl: /learn/achievements/mec/microsoft-learn-for-educators-pioneer.svg

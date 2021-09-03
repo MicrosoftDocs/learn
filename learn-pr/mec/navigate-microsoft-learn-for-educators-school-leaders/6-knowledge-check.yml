@@ -54,7 +54,7 @@ quiz:
     choices:
     - content: "Badge"
       isCorrect: false
-      explanation: "You will earn this for a module, but not a learning path."
+      explanation: "You will earn a badge for a module, but not a learning path."
     - content: "Trophy"
       isCorrect: true
       explanation: "Way to go! You got it!"
