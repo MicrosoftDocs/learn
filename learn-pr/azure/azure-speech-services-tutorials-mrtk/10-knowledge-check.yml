@@ -46,5 +46,5 @@ quiz:
           explanation: "A natural language understanding AI service to allow users to interact with applications."
         - content: "Azure Text Analytics"
           isCorrect: false
-          explanation: "The process of drawing meaning out of written communication".
+          explanation: "The process of drawing meaning out of written communication."
    
