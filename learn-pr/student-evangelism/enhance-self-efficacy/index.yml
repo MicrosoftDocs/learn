@@ -27,16 +27,16 @@ roles:
 products:
   - azure
 units:
-  - learn.student-evangelism.enhance-self-efficacy.1-introduction
-  - learn.student-evangelism.enhance-self-efficacy.2-explore-concept-self-efficacy
-  - learn.student-evangelism.enhance-self-efficacy.3-differentiate-self-efficacy-self-confidence
-  - learn.student-evangelism.enhance-self-efficacy.4-exercise-differentiate
-  - learn.student-evangelism.enhance-self-efficacy.5-examine-impact-self-efficacy
-  - learn.student-evangelism.enhance-self-efficacy.6-exercise-examine
-  - learn.student-evangelism.enhance-self-efficacy.7-evaluate-factors-self-efficacy-impact
-  - learn.student-evangelism.enhance-self-efficacy.8-strategies-improve-self-efficacy-technology
-  - learn.student-evangelism.enhance-self-efficacy.9-exercise-reflect-self-efficacy
-  - learn.student-evangelism.enhance-self-efficacy.10-knowledge-check
-  - learn.student-evangelism.enhance-self-efficacy.11-summary
+  - learn.student-evangelism.enhance-self-efficacy.introduction
+  - learn.student-evangelism.enhance-self-efficacy.explore-concept-self-efficacy
+  - learn.student-evangelism.enhance-self-efficacy.differentiate-self-efficacy-self-confidence
+  - learn.student-evangelism.enhance-self-efficacy.exercise-differentiate
+  - learn.student-evangelism.enhance-self-efficacy.examine-impact-self-efficacy
+  - learn.student-evangelism.enhance-self-efficacy.exercise-examine
+  - learn.student-evangelism.enhance-self-efficacy.evaluate-factors-self-efficacy-impact
+  - learn.student-evangelism.enhance-self-efficacy.improve-self-efficacy-technology-strategies
+  - learn.student-evangelism.enhance-self-efficacy.exercise-reflect-self-efficacy
+  - learn.student-evangelism.enhance-self-efficacy.knowledge-check
+  - learn.student-evangelism.enhance-self-efficacy.summary
 badge:
   uid: learn.student-evangelism.enhance-self-efficacy.badge

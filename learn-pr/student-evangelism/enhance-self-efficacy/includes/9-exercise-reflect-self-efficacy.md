@@ -1,6 +1,5 @@
 In this exercise, you will reflect on your self-efficacy in a number of situations.
 
-## Reflect on your self-efficacy
 
 Review the following questions. Spend a few minutes thinking about your responses and note your answers on a device or a paper.
 
