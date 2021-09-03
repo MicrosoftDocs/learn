@@ -4,8 +4,8 @@ title: Introduction
 metadata:
   unitType: introduction
   title: introduction
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 7/21/2021
+  description: "Introducing Blazor for web application development.  Blazor is a .NET user-interface framework that is built using components, Razor templates, and HTML to deliver applications that run on a server or with Web Assembly"
+  ms.date: 9/29/2021
   author: csharpfritz
   ms.author: jefritz
   ms.topic: interactive-tutorial

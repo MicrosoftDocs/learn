@@ -13,8 +13,15 @@
     * Connectors"
 
 -->
-TODO: 1-2 sentences restating the module's "evaluate" goal
-TODO: bulleted list of the decision criteria
+
+In this module, we learned how Blazor applications are structured, where they can run, and what technologies comprise a Blazor application.  We also learned some criteria to help decide whether to choose Blazor for your next application.
+
+* .NET Familiarity
+* Integration Requirements
+* Existing Server Configuration
+* Complexity of the Application
+* Network Requirements
+* Code Security Requirements
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
@@ -25,8 +32,6 @@ TODO: bulleted list of the decision criteria
     Example: "We applied these criteria to our fictional shoe company. The analysis helped us see how difficult it would be to use Logic Apps for each process. Both the social-media monitor and the video archive utility used only the built-in connectors. This characteristic made them perfect for Logic Apps. The online sales portal required more work because it had complex conditionals and needed custom connectors."
  -->
 
-TODO: add your discussion of applying the criteria
-
 <!-- 3. Describe the business impact ----------------------------------------------------
 
     Goal: explain how choosing the right product is important
@@ -35,25 +40,11 @@ TODO: add your discussion of applying the criteria
 
     Example: "The criteria help you evaluate whether your business processes are a good match for Logic Apps. First, they let you assess how well Logic Apps will solve your problem. Second, they give you an idea of the amount of customization effort involved in using them for your task. This process should give you enough information to choose the right product for your work."
  -->
-TODO: describe the business impact
 
-<!-- 4. References (optional) ----------------------------------------------------
+Building your next application with Blazor has the potential to save your organization time and money.  If your development team is already familiar with C# and .NET, they will find Blazor to be a comfortable choice in building their application.  Blazor will also allow the team to integrate with existing .NET investments and choose where they would like the application to run with a Web Assembly deployment option.
 
-    Goal: Provide a few recommendations for further study via a bulleted list of links. This is optional and intended to be used sparingly.
-        - use the target page title as the text for your link
-        - do not include other text such as a description
-        - prefer other first-party sites like Docs reference pages
-        - link to third-party sites only when they are trusted and authoritative
-        - do not link to other Learn content ("next steps" recommendations are generated automatically)
-        - avoid linking to opinion sites such as blog posts
+## References
 
-    Heading: "## References"
-
-    Example:
-        "References
-        * [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-        * [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-        * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
- -->
-
-<!-- Do not include any other content -->
+* [Blazor Framework](https://blazor.net)
+* [Introduce to ASP.NET Core Blazor](/aspnet/core/blazor)
+* [Blazor Hosting Models](/aspnet/core/blazor/hosting-models)
