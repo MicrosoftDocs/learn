@@ -8,7 +8,7 @@ Imagine that we want our machine learning model to draw realistic pictures of av
 
 Recall that training requires several components:
 
-![Diagram of a machine learning lifecycle.](../media/2-2-a.png)
+![Diagram of the model and objective function parts of the machine learning lifecycle.](../media/2-2-a.png)
 
 In unsupervised learning, the objective function makes its judgment purely on the model's estimate. That means the objective function often needs to be relatively sophisticated. For example, the objective function might need to contain a "dog detector" to assess if images that the model draws look realistic. The only data that we need for unsupervised learning is about features that we provide to the model.
 
@@ -19,7 +19,7 @@ Supervised learning can be thought of as learning by example. In supervised lear
 * Features that are provided as inputs to the model
 * Labels, which are the correct answers that we want the model to be able to produce
 
-![Diagram of a machine learning lifecycle with labels.](../media/2-2-b.jpg)
+![Diagram of the model and objective function parts of the machine learning lifecycle, with labels.](../media/2-2-b.jpg)
 
 For example, consider our desire to predict what the temperature will be on January 31 of a given year. For this prediction, we'll need data with two components:
 
