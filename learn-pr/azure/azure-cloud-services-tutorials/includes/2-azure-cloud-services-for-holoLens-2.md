@@ -1,4 +1,4 @@
-# 2. Azure Cloud Services for HoloLens 2
+## 2. Azure Cloud Services for HoloLens 2
 
 ## Azure cloud services
 

@@ -1,4 +1,4 @@
-# Summary
+## Summary
 
 In this module series we have learnt:
 * About the features you will implement and how **Azure Cloud** services tie in to making your *HoloLens 2* application happen. You added the required components into the project and prepared the scene for this module series.

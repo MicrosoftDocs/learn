@@ -1,5 +1,4 @@
-
-# 4. Integrating Azure storage
+## 4. Integrating Azure storage
 
 ## Azure table storage
 

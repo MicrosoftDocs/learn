@@ -1,4 +1,4 @@
-# 9. Exercise: Integrating Azure Spatial Anchors
+## 9. Exercise: Integrating Azure Spatial Anchors
 
 In this module, you will learn how to use **Azure Spatial Anchors**. You will store the location of a **Tracked Object** as an Azure Spatial Anchor. Once you query for the anchor, an arrow will appear to guide you toward the location.
 

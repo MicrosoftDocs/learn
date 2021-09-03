@@ -1,4 +1,4 @@
-# 8. Integrating Azure Spatial Anchors
+## 8. Integrating Azure Spatial Anchors
 
 ## Azure spatial anchors
 

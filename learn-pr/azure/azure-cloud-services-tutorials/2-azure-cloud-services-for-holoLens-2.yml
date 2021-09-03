@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-cloud-services-tutorials-mrtk.2-azure-cloud-services-for-holoLens-2
+uid: learn.azure.azure-cloud-services-tutorials-mrtk.2-azure-cloud-services-for-hololens-2
 title: Azure cloud services for holoLens 2
 metadata:
   title: Azure cloud services for holoLens 2
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-azure-cloud-services-for-holoLens-2.md)]
+  [!include[](includes/2-azure-cloud-services-for-hololens-2.md)]
