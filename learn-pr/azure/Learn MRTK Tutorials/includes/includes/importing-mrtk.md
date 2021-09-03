@@ -174,7 +174,7 @@ effect, click on **Apply** to restart the Unity editor
 
 2. Once **MixedRealityFeatureTool** is opened, to access preview releases click on **Settings** and enable **Show preview releases** under **Feature** tab, then click on **ok** to save the settings.
 
-![MixedRealityFeatureTool preview](../../media/base-2-section-4-step1-2-preview.png)
+![MixedRealityFeatureTool preview](../../media/base-2-section-4-step-1-2-preview.png)
 
 3. Next click on **Start** to get started with Mixed Reality Feature Tool.
 
