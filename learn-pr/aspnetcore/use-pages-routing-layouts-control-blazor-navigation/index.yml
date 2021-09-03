@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Use pages, routing, and layouts to improve Blazor navigation
   description: Learn how to optimize your app's navigation, use parameters from the URL, and create reusable layouts in a Blazor web app.
-  ms.date: 24/08/2021
+  ms.date: 8/24/2021
   author: csharpfritz
   ms.author: jefritz
   ms.topic: interactive-tutorial
@@ -36,11 +36,11 @@ products:
 units:
 - learn.use-pages-routing-layouts-improve-blazor-navigation.introduction
 - learn.use-pages-routing-layouts-improve-blazor-navigation.use-router-component-control-apps-navigation
-- learn.use-pages-routing-layouts-improve-blazor-navigation.exercise-change-navigation-app-using-page-directive
+- learn.use-pages-routing-layouts-improve-blazor-navigation.exercise-change-navigation-blazor-using-page-directive
 - learn.use-pages-routing-layouts-improve-blazor-navigation.explore-route-parameters-effect-apps-routing
 - learn.use-pages-routing-layouts-improve-blazor-navigation.exercise-route-parameters-improve-apps-navigation
 - learn.use-pages-routing-layouts-improve-blazor-navigation.build-reusable-component-using-layouts
-- learn.use-pages-routing-layouts-improve-blazor-navigation.exercise-add-layout-reduce-duplication-code
+- learn.use-pages-routing-layouts-improve-blazor-navigation.exercise-add-blazor-layouts-reduce-duplicate-code
 - learn.use-pages-routing-layouts-improve-blazor-navigation.summary
 badge:
   uid: learn.use-pages-routing-layouts-improve-blazor-navigation.badge
