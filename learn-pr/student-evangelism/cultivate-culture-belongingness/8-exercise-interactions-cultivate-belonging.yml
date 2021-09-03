@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.cultivate-culture-belong-tech.7-exercise-interactions-cultivate-belonging
+title: Exercise - examine and reflect on interactions to cultivate belonging 
+metadata:
+  title: Exercise - examine and reflect on interactions to cultivate belonging 
+  description: You want to further examine and understand what belonging will mean to you and your team.
+  ms.date: 05/13/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-exercise-interactions-cultivate-belonging.md)]
