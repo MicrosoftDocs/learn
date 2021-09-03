@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: "Learn about a scenario where developers needs to use parameters from the URL in their code and base multiple app pages on the same layout."
+  description: "Learn about a scenario where developers need to use parameters from the URL in their code and base multiple app pages on the same layout."
   ms.date: 8/24/2021
   author: csharpfritz
   ms.author: jefritz
