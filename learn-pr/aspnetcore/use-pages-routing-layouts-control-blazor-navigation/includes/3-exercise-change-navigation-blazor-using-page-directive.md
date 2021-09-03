@@ -1,8 +1,8 @@
-Blazor has a navigation state helper that helps C# code manage an app's URIs. There's also a **NavLink** component that's a drop-in replcement for the `<a>` element. One of NavLink's features is adding an active class to HTML links for an app's menus.
+Blazor has a navigation state helper that helps C# code manage an app's URIs. There's also a **NavLink** component that's a drop-in replacement for the `<a>` element. One of NavLink's features is adding an active class to HTML links for an app's menus.
 
 Your team has made a start on the Blazing Pizza app and have built Blazor components to represent pizzas and orders. The app now needs to have checkout and other order-related pages.
 
-In this exercise you'll add a new checkout page, add a top navigation to the app, and then use a Blazor NavLink component to improve your code. 
+In this exercise, you'll add a new checkout page, add a top navigation to the app, and then use a Blazor NavLink component to improve your code. 
 
 ## Clone your team's existing app 
 
@@ -13,7 +13,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
 1. Open **Visual Studio Code**.
 1. Open the integrated terminal from Visual Studio Code by selecting **View**, then select **Terminal** from the main menu.
-1. In the terminal navigate to where you'd like the project to be created. 
+1. In the terminal, navigate to where you'd like the project to be created. 
 1. Clone the app from GitHub.
 
     ```powershell
@@ -26,7 +26,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
     Visual Studio Code might prompt you about unresolved dependencies. Select **Restore**.
 
 1. Run the app to check everything is working correctly. 
-1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu, select **Start Debugging**.
 
     :::image type="content" source="../media/blazing-pizza-setup.png" alt-text="Screenshot showing the cloned version of the Blazing Pizza app.":::
     
@@ -54,7 +54,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
     The `<NotFound>` code block is what customers will see if they try to navigate to a page that doesn't exist.
 
 1. In the explorer, expand **Pages**, right-click on the folder and select **New File**.
-1. Name the new file **Checkout.razor**, and in the new file write this code.
+1. Name the new file **Checkout.razor**, and in this file write the following code.
 
     ```razor
     @page "/checkout"
@@ -127,7 +127,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
     </div>
     ```
 
-    When we are on this page it would be nice to show the customers by highlighted the link. The team have already created an `active` css class, so add that.
+    When we are on this page, it would be nice to show the customers by highlighted the link. The team have already created an `active` css class, so add that.
 
     ```html
     <div class="top-bar">
@@ -143,7 +143,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
     </div>
     ```
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu, select **Start Debugging**.
 
     The app now has a nice menu bar at the top, including the company's logo. Add some pizzas, and progress the order to the checkout page, you'll see the pizzas listed and the active indicator missing from the menu. 
 
@@ -220,7 +220,7 @@ The checkout page at the moment doesn't allow customers to place their orders. T
       }
     ```
 
-    This code adds entity framework support for for the app's order and pizza classes.
+    This code adds entity framework support for the app's order and pizza classes.
 
 1. In Visual Studio Code, in the menu, select **File**, then select **New File**.
 1. Select the C# language and enter this code.
@@ -298,7 +298,7 @@ The checkout page at the moment doesn't allow customers to place their orders. T
 
 ## Test the checkout functionality
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu, select **Start Debugging**.
 
     The app should compile, but then you'll see a runtime error. This is because our **pizza.db** SQLLite database was created before there was support for orders and pizzas. We need to delete the file so a new database can be created correctly.
 
@@ -306,7 +306,7 @@ The checkout page at the moment doesn't allow customers to place their orders. T
 
 1. In the explorer, delete the **pizza.db** file.
 
-1. Press <kbd>F5</kbd>, or in the **Run** menu select **Start Debugging**.
+1. Press <kbd>F5</kbd>, or in the **Run** menu, select **Start Debugging**.
 
     Test adding pizzas, going to the checkout, and placing an order. You'll be redirected to the home page and see that the order is now empty.
  
@@ -317,7 +317,7 @@ The app is improving. We have pizza configuration and a checkout. It would be be
 ## Add an orders page
 
 1. In the explorer, expand **Pages**, right-click on the folder and select **New File**.
-1. Name the new file **MyOrders.razor**, and in the new file write this code.
+1. Name the new file **MyOrders.razor**, and in this file write the following code.
 
     ```razor
     @page "/myorders"
@@ -449,7 +449,7 @@ The app is improving. We have pizza configuration and a checkout. It would be be
     } 
     ```
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu, select **Start Debugging**.
 
     :::image type="content" source="../media/myorder-page-example.png" alt-text="Screenshot showing the order page.":::
 
