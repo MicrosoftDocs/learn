@@ -1,16 +1,16 @@
-# 11. Exercise: Using reverb to add distance to spatial audio
+## 11. Exercise: Use reverb to add distance to spatial audio
 
-In previous module, you have added spatialization for the sounds to give them a sense of direction in this module you'll add a reverb effect to give sounds a sense of distance.
+In previous module, you've added spatialization for the sounds to give them a sense of direction in this module you'll add a reverb effect to give sounds a sense of distance.
 
 ## Add a mixer group and a reverb effect
 
 1. In Spatializing button interaction sounds Tutorial, we added a mixer. The mixer includes one **Group** by default called **Master**. Because we'll only want to apply a reverb effect to some sounds, let's add a second Group for those sounds. To add a Group, right click on the Master group in the **Audio Mixer** choose **Add child group** and give suitable name for example _Room Effect_:
 
-![Add child group](../media/spatial-audio-05-section1-step1-1.png)
+![Add child group](../media/spatial-audio-05-section-1-step-1-1.png)
 
 2. Each **Group** has its own set of effects. Add a reverb effect to the new group by clicking **Add...** on the new group, and choosing **SFX Reverb**:
 
-![Add SFX Reverb](../media/spatial-audio-05-section1-step1-2.png)
+![Add SFX Reverb](../media/spatial-audio-05-section-1-step-1-2.png)
 
 In audio terminology, the original, unreverberated audio is called the _dry path_, and the audio after filtering with the reverb filter is called the _wet path_. Both paths are sent to the audio output, and their relative strengths in this mixture is called the _wet/dry mix_. The wet/dry mix strongly affects the sense of distance.
 
@@ -19,7 +19,7 @@ In audio terminology, the original, unreverberated audio is called the _dry path
 * Set the **Dry Level** property to the lowest setting (-10000 mB)
 * Set the **Room property** to the highest setting (0 mB)
 
-![SFX Reverb properties](../media/spatial-audio-05-section1-step1-3.png)
+![SFX Reverb properties](../media/spatial-audio-05-section-1-step-1-3.png)
 
 The other settings control the feel of the simulated room. In particular, **Decay Time** is related to perceived room size.
 
@@ -30,18 +30,18 @@ There are two steps to enable reverb on an audio source:
 * Route the **Audio Source** to the appropriate **Group**
 * Set the **Microsoft Spatializer** plugin to pass audio into the **Group** for processing
 
-In the following steps, you will adjust the script to control the audio routing, and attach a control script provided with the **Microsoft Spatializer** plugin to feed data into the reverb.
+In the following steps, you'll adjust the script to control the audio routing, and attach a control script provided with the **Microsoft Spatializer** plugin to feed data into the reverb.
 
 1. With the **Quad** selected in the Hierarchy click **Add Component** On the Inspector window and add the **Room Effect Send Level(Script)**:
 
-![Add send level script](../media/spatial-audio-05-section2-step1-1.png)
+![Add send level script](../media/spatial-audio-05-section-2-step-1-1.png)
 
 > [!NOTE]
 > Unless you enable **Room Effect Send Level** feature of the **Microsoft Spatializer** plugin, it doesn't send any audio back to the Unity audio engine for effect processing.
 
 2. The **Room Effect Send Level** component includes a graph control that sets the level of the audio sent to the Unity audio engine for reverb processing. To open the graph control, click on the **Room Effect Send Level**.  Click and drag the green curve downwards to set the level to about -30dB:
 
-![Adjust reverb curve](../media/spatial-audio-05-section2-step1-2.png)
+![Adjust reverb curve](../media/spatial-audio-05-section-2-step-1-2.png)
 
 3. Next, uncomment the 4 commented lines in the **SpatializeOnOff** script. The script will now look like this:
 
@@ -107,4 +107,4 @@ public class SpatializeOnOff : MonoBehaviour
 * Set the **Room Effect Group** property to your new Room Effect mixer group
 * Set the **Master Group** property to the Master mixer group
 
-![Spatialize On Off Extended](../media/spatial-audio-05-section2-step1-3.png)
+![Spatialize On Off Extended](../media/spatial-audio-05-section-2-step-1-3.png)

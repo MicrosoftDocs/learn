@@ -1,14 +1,14 @@
-# 3. Exercise: Adding Spatial audio to your Unity project
+## 3. Exercise: Add Spatial audio to your Unity project
 
-Through this module series, you will learn how to use head-related transfer function (HRTF) offload on HoloLens 2 and How to enable reverb when using HRTF offload.
+Through this module series, you'll learn how to use head-related transfer function (HRTF) offload on HoloLens 2 and How to enable reverb when using HRTF offload.
 
 The [Microsoft Spatializer GitHub repository](https://github.com/microsoft/spatialaudio-unity) has a completed Unity project of this tutorial sequence.
 
 For an understanding of what it means to spatialize sounds using HRTF-based spatialization technologies and recommendations for when it can be helpful, see [spatial sound design](/windows/mixed-reality/spatial-sound-design).
 
-## Creating and preparing the Unity project
+## Create and prepae the Unity project
 
-In this section, you will create a new Unity project and get it ready for MRTK development.
+In this section, you'll create a new Unity project and get it ready for MRTK development.
 
 For this, first follow the Initializing your project and first application, excluding the Build your application to your device instructions, which includes the following steps:
 
@@ -26,23 +26,21 @@ For this, first follow the Initializing your project and first application, excl
 
 Then follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
-## Adding Microsoft Spatializer to the Project
+## Add Microsoft Spatializer to the Project
 
-1. Download and import the Microsoft Spatializer  <a href="https://github.com/microsoft/spatialaudio-unity/releases/download/v1.0.18/Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage" target="_blank">Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage
-</a>
-
+1. Download and import the Microsoft Spatializer [Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage](https://github.com/microsoft/spatialaudio-unity/releases/download/v1.0.18/Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage)
 ## Enable the Microsoft Spatializer plugin
 
 2. After importing the **Microsoft Spatializer** you need to enable it. Open **Edit -> Project Settings -> Audio**, and change **Spatializer Plugin** to "Microsoft Spatializer".
 
 
-![Project Settings showing spatializer plugin](../media/spatial-audio-01-section3-step1-1.png)
+![Project Settings showing spatializer plugin](../media/spatial-audio-01-section-3-step-1-1.png)
 
 ## Enable spatial audio on your workstation
 
 1. On desktop versions of Windows, spatial audio is disabled by default. Enable it by right-clicking on the volume icon in the task bar. To get the best representation of what you'll hear on HoloLens 2, choose **Spatial sound -> Windows Sonic for Headphones**.
 
 
-![Desktop spatial audio settings](../media/spatial-audio-01-section4-step1-1.png)
+![Desktop spatial audio settings](../media/spatial-audio-01-section-4-step-1-1.png)
 > [!NOTE]
 > This setting is only required if you plan to test your project in the Unity editor.

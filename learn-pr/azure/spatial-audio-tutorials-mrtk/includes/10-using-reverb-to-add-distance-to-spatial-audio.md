@@ -1,9 +1,9 @@
-# 10. Using reverb to add distance to spatial audio
+## 10. Use reverb to add distance to spatial audio
 
 ## Reverberation
-Reverberation is the phenomenon of persistence of sound after it has been stopped as a result of multiple reflections from surfaces such as furniture, people, air, etc. within a closed surface. These reflections build up with each reflection and decay gradually as they are absorbed by the surfaces of objects in the space enclosed.
+Reverberation is the phenomenon of persistence of sound after it is stopped because of multiple reflections from surfaces such as furniture, people, air, etc. In a closed surface. These reflections build up with each reflection and decay gradually as they are absorbed by the surface of objects in the space enclosed.
 
-It is the same as the echo, but the distance between the source of the sound and also the obstacle through which it gets reflected is less in case of this reverberation. The quantitative characterization of the reverberation is mainly done by using the parameter called reverberation time.
+It's the same as the echo, but the distance between the source of the sound and also the obstacle through which it gets reflected is less in case of this reverberation. The quantitative characterization of the reverberation is mainly done by using the parameter called reverberation time.
 
 ## Sfx reverb
 
@@ -11,12 +11,12 @@ The SFX Reverb Effect takes the output of an Audio Mixer group and distorts it t
 
 ## Dry level
 
-It is a mix level of dry signal in output in mB. Ranges from –10000.0 to 0.0. Default is 0 mB.
+It's a mixed level of a dry signal in output in MB. Ranges from –10000.0 to 0.0. Default is 0 MB.
 
 ## Room property
 
-Room effect level at low frequencies in mB. Ranges from –10000.0 to 0.0. Default is –10000.0 mB.
-Room effect high-frequency level in mB. Ranges from –10000.0 to 0.0. Default is 0.0 mB.
+Room effect level at low frequencies in MB. Ranges from –10000.0 to 0.0. Default is –10000.0 MB.
+Room effect high-frequency level in MB. It ranges from –10000.0 to 0.0. Default is 0.0 MB.
 
 ## Decay time
 
