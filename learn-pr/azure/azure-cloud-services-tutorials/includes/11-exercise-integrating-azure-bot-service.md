@@ -4,7 +4,7 @@ In this module, you'll learn how to use **Azure Bot Service** in the **HoloLens 
 
 ## Understanding Azure Bot Service
 
-The **Azure Bot Service** empowers developers to create intelligent bots that can maintain natural conversation with users thanks to **LUIS**. A conversational Bot is a great way to expand the ways a user can interact with your application. A Bot can act as a knowledge base with a [QnA Maker](/azure/bot-service/bot-builder-howto-qna?preserve-view=true&tabs=cs&view=azure-bot-service-4.0) to maintaining sophisticated conversation with the power of [Language Understanding (LUIS)](/azure/bot-service/bot-builder-howto-v4-luis?preserve-view=true&tabs=csharp&view=azure-bot-service-4.0).
+The **Azure Bot Service** empowers developers to create intelligent bots that can maintain natural conversation with users thanks to **LUIS**. A conversational Bot is a great way to expand the ways a user can interact with your application. A Bot can act as a knowledge base with a [QnA Maker](/azure/bot-service/bot-builder-howto-qna?preserve-view=true&tabs=cs&view=azure-bot-service-4.0) to maintain sophisticated conversation with the power of [Language Understanding (LUIS)](/azure/bot-service/bot-builder-howto-v4-luis?preserve-view=true&tabs=csharp&view=azure-bot-service-4.0).
 
 Learn more about [Azure Bot Service](/azure/bot-service/bot-service-overview-introduction?preserve-view=true&view=azure-bot-service-4.0).
 
@@ -29,7 +29,7 @@ The **Count** function queries from the **Table storage** all **TrackedObjects**
 
 ![AzureFunction_TrackedObjectsService folder](../media/tutorial-5-section-3-step-1-1.png)
 
-2. Once file loaded in visual studio, Right click over **Tracked object sevice** in solution explorer and select publish
+2. Once the file is loaded in visual studio, right click **Tracked object service** in solution explorer and select Publish.
 
 ![Publish Tracked object service](../media/tutorial-5-section-3-step-1-2.png)
 
@@ -53,13 +53,13 @@ Select Azure and click on **Next** button
 * For **Name**, enter a suitable name for the service, for example, *TrackedObjectsService*
 * For **Plan Type**, choose consumption
 * For **Location**, choose a location close to your app users' physical location, for example *(US) West US*
-* For **Resource Group** and **Storage**, choose respective azure group and storage account have been created in pervious chapters.
+* For **Resource Group** and **Storage**, choose the azure group and storage account that were created in previous chapters.
 
 7. Once Function App created click on **Finish** button 
 
 ![Finish creating Function App](../media/tutorial-5-section-3-step-1-7.png)
 
-8. A publish pop up will be opened after the finish process, click on **Publish** button to publish the function and wait for publish
+8. A publish pop up will open. Click the **Publish** button to publish the function and wait for publishing.
 
 ![Publish function](../media/tutorial-5-section-3-step-1-8.png)
 
@@ -108,7 +108,7 @@ These are the trigger phrases:
 
 Thanks to [LUIS](/composer/how-to-use-luis) the *user* doesn't have to ask the phrases in that exact way, which allows a natural conversation for the *user*.
 
-In this dialog the *bot* will also talk to the **Count** Azure Function, more about that later.
+In this dialog the *bot* will also talk to the **Count** Azure Function (more about that later).
 
 #### Unknown Intent
 
@@ -118,7 +118,7 @@ This dialogue is triggered if the input from the *user* doesn't fit any other tr
 
 #### FindEntity
 
-The last dialogue is more complex with branching and storing data in the *bots* memory.
+The last dialogue is more complex, with branching and storing data in the *bots* memory.
 It asks the user for the *name* of the **Tracked Object** it wants to know more information about, performs a query to the **Find** Azure Function, and uses the response to proceed with the conversation.
 
 ![TrackedObjectsBot project dialog trigger FindEntity](../media/tutorial-5-section-4-step-1-6.png)
@@ -129,11 +129,11 @@ If the **Tracked Object** isn't found, the user is informed and the conversation
 
 1. The **AskingForCount** and **FindEntity** trigger need to talk to the backend, this means you've to add the correct URL of the **Azure Function** you deployed previously.
 
-2. On the dialog panel click on **AskingForCount** and locate the *Send an HTTP request* action, here you can see the field **URL** which you need to change the correct URL for the **Count** function endpoint.
+2. On the dialog panel click on **AskingForCount** and locate the *Send an HTTP request* action. Here you can see the field **URL**. You need to change it to the correct URL for the **Count** function endpoint.
 
 ![TrackedObjectsBot project AskingForCount dialog trigger endpoint configuration](../media/tutorial-5-section-5-step-1-1.png)
 
-3. Finally, look for the **FindEntity** trigger and locate the *Send an HTTP request* action, in the **URL** field change the URL to the **Find** function endpoint.
+3. Finally, look for the **FindEntity** trigger and locate the *Send an HTTP request* action. In the **URL** field change the URL to the **Find** function endpoint.
 
 ![TrackedObjectsBot project FindEntity dialog trigger endpoint configuration](../media/tutorial-5-section-5-step-1-2.png)
 
@@ -172,20 +172,20 @@ In the Inspector, you'll see that there is an empty **Direct Line Secret Key** f
 
 ![Unity with ButtonChatBot configured](../media/tutorial-5-section-6-step-1-4.png)
 
-Now the chat bot can be stared from the main menu and with that the scene is ready for use.
+Now the chat bot can be started from the main menu. With that, the scene is ready for use.
 
 ### Putting the bot to a test
 
 #### Asking about the quantity of tracked objects
 
-First you test asking the bot how many **Tracked Objects** are stored in the database.
+For the first test, you ask the bot how many **Tracked Objects** are stored in the database.
 
 > [!NOTE]
 > This time you must run the application from the HoloLens 2 because services like *text-to-speech* may not be available on your system.
 
 Run the application on your HoloLens 2 and click on the *Chat Bot* button next to the main menu.
-The bot will be greeting you, now ask **how many objects do we have?**
-It should tell you the quantity and end the conversation.
+The bot will greet you. Ask **how many objects do we have?**
+It should tell you the quantity and then end the conversation.
 
 #### Asking about a tracked object
 
