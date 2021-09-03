@@ -1,4 +1,4 @@
-In this exercise, you will reflect on your self-efficacy in a number of sitauations.
+In this exercise, you will reflect on your self-efficacy in a number of situations.
 
 ## Reflect on your self-efficacy
 

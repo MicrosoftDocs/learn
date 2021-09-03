@@ -1,4 +1,4 @@
-In this exercise, you will look at some sitatuations and determine whether something is in your comfort zone.
+In this exercise, you will look at some situations and determine whether something is in your comfort zone.
 
 ## Review the following tasks
 
