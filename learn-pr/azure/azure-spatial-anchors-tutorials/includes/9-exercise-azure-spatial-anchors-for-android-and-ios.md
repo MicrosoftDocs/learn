@@ -3,7 +3,7 @@
 In this tutorial, you'll learn how to build your project to Android and iOS devices using AR Foundation, ARCore XR Plugin, and ARKit XR Plugin.
 
 ## Install inbuilt Unity packages
-[!INCLUDE](includes/installing-inbuilt-unity-packages.md)]
+[!INCLUDE[]](includes/installing-inbuilt-unity-packages.md)]
 
 ## Configure MRTK for AR Foundation Camera
 
@@ -64,7 +64,7 @@ Close the Build Settings window.
 
 6. Choose a suitable location to store your build, for example, D:\MixedRealityLearning\Builds, then give the apk a suitable name, for example, MRTKTutorials-AzureSpatialAnchors, and click the **Save** button to start the build process:
 
-![Build to android](../media/asa-05-section-3-step1-5.png)
+![Build to android](../media/asa-05-section-3-step-1-5.png)
 
 >[Note]
 >If you get any error in the Unity Console window related to Android SDK, NDK, or JDK modules, you need to open Unity Hub and install the associated Android Build Support modules.

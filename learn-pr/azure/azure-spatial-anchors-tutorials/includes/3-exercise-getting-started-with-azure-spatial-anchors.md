@@ -16,7 +16,7 @@ First, follow the Initializing your project and deploying your first application
 Then follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is DefaultHoloLens2ConfigurationProfile and change the display options for the spatial awareness mesh to Occlusion.
 
 ## Install inbuilt Unity packages and Import the tutorial assets
-[!INCLUDE](includes/switching-platform.md)]
+[!INCLUDE[]](includes/switching-platform.md)]
 
 ## Prepare the scene
 
