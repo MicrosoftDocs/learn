@@ -13,7 +13,7 @@ Learn more about [Azure storage services](/azure/storage/blobs/storage-blobs-ove
 
 This service allows us to store data in a NoSQL fashion, in this project we will use it to store information about the *Tracked Object* such as: name, description, spatial anchor ID, and more.
 
-In context of the demo application, you need two Tables, one to store information about the project with information about the state of trained models (more about that in the "Integrating Azure Custom Vision" tutorial) and a second table to store information about *Tracked Objects*.
+In context of the demo application, you need two Tables, one to store information about the project with information about the state of trained models more about that in the (Integrating Azure Custom Vision) tutorial and a second table to store information about *Tracked Objects*.
 
 Learn more about [Azure Table storage](/azure/storage/tables/table-storage-overview).
 
@@ -58,7 +58,7 @@ With everything prepared, it's time to create a *Tracked Object*.
 
 This **Object Card** is a UI representation of the *Tracked Object* and will have an important role several times in this tutorial series.
 
-2. Now click on the description *text box* and type in "Car". Click the **Save** button to save the changes. Stop the application and rerun it.
+2. Now click on the description *text box* and type in "Car", after that click on the **Save** button to save the changes. Stop the application and rerun it.
 
 3. Now this time click  **Search Object** and type in the *search bar* the name you've used before when creating the *Tracked Object*. You'll see that the **Object Card** with all the data is retrieved from the **Azure Table storage**.
 
@@ -67,7 +67,7 @@ This **Object Card** is a UI representation of the *Tracked Object* and will hav
 > [!TIP]
 > If you've installed the [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/) then look into the *objects* table and you'll see there the created *Tracked Object*.
 
-## Upload and Download an image from Azure Blob storage
+## Uploading and Download image from Azure Blob storage
 
 In this section, you'll use the Azure Blob storage to upload and download images that will be used as thumbnails for *Tracked Objects*.
 
