@@ -35,7 +35,7 @@ This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https:/
 
 ## Deploy the ARM template to Azure
 
-::: zone pivot="CLI"
+::: zone pivot="cli"
 
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed, and sign in with the same account you used to activate the sandbox.
 
@@ -114,9 +114,9 @@ You see ```Running...``` in the terminal.
 
 ::: zone-end
 
-::: zone pivot="PowerShell"
+::: zone pivot="powershell"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [installed Azure PowerShell](`/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.3.0`), and sign in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have installed Azure PowerShell from the VS Code Extensions. and sign in to the same account that activated the sandbox.
 
 1. In the command bar, select **Terminal > New Terminal** to open a PowerShell window.
 
@@ -233,7 +233,7 @@ In the previous task, you learned how to create a blank template and deploy it. 
 
 Here, you change the name of the deployment to better reflect what this deployment does.
 
-::: zone pivot="CLI"
+::: zone pivot="cli"
 
 Run the following Azure CLI commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
 
@@ -249,7 +249,7 @@ az group deployment create \
 
 ::: zone-end
 
-::: zone pivot="PowerShell"
+::: zone pivot="powershell"
 
 Run the following Azure PowerShell commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
 
