@@ -1,6 +1,6 @@
 ## Introduction
 
-Welcome to the Azure Spatial Anchors tutorials! Through this tutorial series, you will learn the fundamentals of Azure Spatial Anchors (ASA) and how to anchor a complete mixed reality experience in the real world. You will also learn how to deploy your project to Android and iOS.
+Welcome to the Azure Spatial Anchors tutorials! Through this tutorial series, you'll learn the fundamentals of Azure Spatial Anchors (ASA) and how to anchor a complete mixed reality experience in the real world. you'll also learn how to deploy your project to Android and iOS.
 
 ## Learning Objectives 
 

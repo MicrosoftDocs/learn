@@ -1,9 +1,9 @@
 ## 3. Exercise: Get started with Azure Spatial Anchors
 
-In this tutorial, you will explore the various steps required to start and stop an Azure Spatial Anchors session and to create, upload, and download Azure Spatial Anchors on a single device.
+In this tutorial, you'll explore the various steps required to start and stop an Azure Spatial Anchors session and to create, upload, and download Azure Spatial Anchors on a single device.
 
 ## Create and prepare the Unity project
-In this section, you will create a new Unity project and get it ready for MRTK development.
+In this section, you'll create a new Unity project and get it ready for MRTK development.
 
 First, follow the Initializing your project and deploying your first application in the learn introduction module, excluding the Build your application to your device instructions, which includes the following steps:
 
@@ -20,7 +20,7 @@ Then follow the Changing the Spatial Awareness Display Option instructions to en
 
 ## Prepare the scene
 
-In this section, you will prepare the scene by adding some of the tutorial prefabs.
+In this section, you'll prepare the scene by adding some of the tutorial prefabs.
 
 1. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** folder, then click-and-drag the following prefabs into the Hierarchy window to add them to your scene:
 
@@ -44,14 +44,14 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
 ![Add components to the MixedRealityToolkit](../media/asa-02-section-5-step-1-1.png)
 
 >![Warning]
->There is a known issue with ASA v2.9.0 and v2.10.0-preview.1 that requires two additional objects to be placed in the scene. Please use the Add Component button in the inspector window to add an AR Camera Manager (Script) and an AR Session (Script) to the **MixedRealityToolkit** object. Be sure to disable the Camera that is created automatically while adding the AR Camera Manager (Script) by unchecking the checkbox next to the Camera object in the inspector window. This issue will be addressed in the full release of ASA v2.10.0.
+>There's a known issue with ASA v2.9.0 and v2.10.0-preview.1 that requires two additional objects to be placed in the scene. Please use the Add Component button in the inspector window to add an AR Camera Manager (Script) and an AR Session (Script) to the **MixedRealityToolkit** object. Be sure to disable the Camera that is created automatically while adding the AR Camera Manager (Script) by unchecking the checkbox next to the Camera object in the inspector window. This issue will be addressed in the full release of ASA v2.10.0.
 
 >![Note]
->When you add the AR Anchor Manager (Script) component, the AR Session Origin (Script) component is automatically added because it is required by the AR Anchor Manager (Script) component.
+>When you add the AR Anchor Manager (Script) component, the AR Session Origin (Script) component is automatically added because it's required by the AR Anchor Manager (Script) component.
 
 ## Configure the buttons to operate the scene
 
-In this section, you will add scripts to the scene to create a series of button events that demonstrate the fundamentals of how both local anchors and Azure Spatial Anchors behave in an app.
+In this section, you'll add scripts to the scene to create a series of button events that demonstrate the fundamentals of how both local anchors and Azure Spatial Anchors behave in an app.
 
 1. In the Hierarchy window, expand the **ButtonParent** object and select the first child object named **StartAzureSession**, in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
@@ -124,14 +124,14 @@ Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors
 When the app runs on your device, follow the on-screen instructions displayed on the Azure Spatial Anchor Tutorial Instructions panel:
 
 1. Move the cube to a different location
-2. Start Azure Session
-3. Create Azure Anchor (creates an anchor at the location of the cube).
-4. Stop Azure Session
+2. Start Azure session
+3. Create Azure anchor (creates an anchor at the location of the cube).
+4. Stop Azure session
 5. Remove Local Anchor (allows the user to move the cube)
 6. Move the cube somewhere else
-7. Start Azure Session
-8. Find Azure Anchor (positions the cube at the location from step 3)
-9. Delete Azure Anchor
+7. Start Azure session
+8. Find Azure anchor (positions the cube at the location from step 3)
+9. Delete Azure anchor
 10. Stop Azure session
 
 ![Unity with Instructions object selected](../media/asa-02-section-7-step-1-1.png)
@@ -140,7 +140,7 @@ When the app runs on your device, follow the on-screen instructions displayed on
 >Azure Spatial Anchors uses the internet to save and load the anchor data, so make sure your device is connected to the internet.
 
 ## Anchor an experience
-In the previous sections, you learned the fundamentals of Azure Spatial Anchors. We used a cube to represent and visualize the parent game object with the attached anchor. In this section, you will learn how to anchor an entire experience by placing it as a child of the ParentAnchor object.
+In the previous sections, you learned the fundamentals of Azure Spatial Anchors. We used a cube to represent and visualize the parent game object with the attached anchor. In this section, you'll learn how to anchor an entire experience by placing it as a child of the ParentAnchor object.
 
 1. In the Hierarchy window, select the **ParentAnchor** object, then in the Inspector window, configure the Transform components as follows:
 

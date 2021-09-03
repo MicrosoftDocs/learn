@@ -4,5 +4,5 @@ Azure Spatial Anchors enable you to share anchors in the world across many devic
 
 ## Interactable script 
 
-Any item can be made interactable with a distinguished visual state using the Interactable script. For example, you can alter the object's color when it is in focus or enlarge it when it is focused. You can achieve intricate visual states, including shader property changes because you can have many themes that control distinct aspects of the object. External components, such as PhysicalPressEventRouter, can be used to augment interactable features by allowing press events to drive state changes in the interactable.
+Any item can be made interactable with a distinguished visual state using the Interactable script. For example, you can alter the object's color when it's in focus or enlarge it when it's focused. You can achieve intricate visual states, including shader property changes because you can have many themes that control distinct aspects of the object. External components, such as PhysicalPressEventRouter, can be used to augment interactable features by allowing press events to drive state changes in the interactable.
 

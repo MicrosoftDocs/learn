@@ -10,7 +10,7 @@
 >![Tip]
 >To make it easier to work with your scene, set the [Scene Visibility](https://docs.unity3d.com/Manual/SceneVisibility.html) for the ParentAnchor object to off by clicking the eye icon to the left of the object. This hides the object in the Scene window without changing their in-game visibility.
 
-2. Rename the newly created Text (TMP) object **Feedback**, then, in the Inspector window, change its position and size, so it is placed neatly underneath the instruction text, for example:
+2. Rename the newly created Text (TMP) object **Feedback**, then, in the Inspector window, change its position and size, so it's placed neatly underneath the instruction text, for example:
 
 * Change the Rect Transform component's **Pos Y** to -0.24.
 * Change the Rect Transform component's **Width** to 0.555.

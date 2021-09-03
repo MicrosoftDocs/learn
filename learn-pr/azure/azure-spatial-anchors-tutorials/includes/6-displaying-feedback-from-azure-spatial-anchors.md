@@ -4,4 +4,4 @@
 
 ## Scene Visibility 
 
-You may rapidly hide and expose GameObjects in the Scene view using Unity's Scene visibility controls without affecting their visibility in-game. It is important when working with large or complex Scenes where viewing and selecting specific GameObjects can be difficult. Because visibility options only affect the Scene view, using them is safer than deactivating GameObjects. This means you won't be able to mistakenly delete GameObjects from the rendered scene or start superfluous bake processes for lighting, occlusion, or other systems.
+You may rapidly hide and expose GameObjects in the Scene view using Unity's Scene visibility controls without affecting their visibility in-game. it's important when working with large or complex Scenes where viewing and selecting specific GameObjects can be difficult. Because visibility options only affect the Scene view, using them is safer than deactivating GameObjects. This means you won't be able to mistakenly delete GameObjects from the rendered scene or start superfluous bake processes for lighting, occlusion, or other systems.

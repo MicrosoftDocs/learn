@@ -46,7 +46,7 @@ Desktop PCs, mobile devices, and some IoT Core devices are all part of the Windo
 
 ## AR Foundation
 
-Within Unity, the AR Foundation lets you work with augmented reality systems across several platforms. This package provides an interface for Unity developers to use, but it does not include any AR functionality. On a target device, you'll also need separate packages for Unity's officially supported target platforms.
+Within Unity, the AR Foundation lets you work with augmented reality systems across several platforms. This package provides an interface for Unity developers to use, but it doesn't include any AR functionality. On a target device, you'll also need separate packages for Unity's officially supported target platforms.
 
 * ARCore XR Plugin on Android
 * ARKit XR Plugin on iOS
@@ -58,7 +58,7 @@ Within Unity, the AR Foundation lets you work with augmented reality systems acr
 
 A point in space that you want the devices to track is called an anchor. For each anchor, the anchor manager creates GameObjects.The device typically performs additional work to update the position and orientation of the anchor throughout its lifetime.
 
-The "Anchor Prefab" field in the ARAnchorManager is not intended for content. ARFoundation will build a new GameObject to represent an anchor built in a means other than AddComponent, such as loading an ARWorldMap with anchors. The prefab field's purpose is to extend anchors' default behavior; it is not a suggested technique to deploy content in the world.
+The "Anchor Prefab" field in the ARAnchorManager isn't intended for content. ARFoundation will build a new GameObject to represent an anchor built in a means other than AddComponent, such as loading an ARWorldMap with anchors. The prefab field's purpose is to extend anchors' default behavior; it's not a suggested technique to deploy content in the world.
 
 
 ## Button Config helper script 

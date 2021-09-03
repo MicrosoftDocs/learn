@@ -1,13 +1,13 @@
 ## 9. Exercise - Azure Spatial Anchors for Android and iOS
 
-In this tutorial, you will learn how to build your project to Android and iOS devices using AR Foundation, ARCore XR Plugin, and ARKit XR Plugin.
+In this tutorial, you'll learn how to build your project to Android and iOS devices using AR Foundation, ARCore XR Plugin, and ARKit XR Plugin.
 
 ## Install inbuilt Unity packages
 [!INCLUDE](includes/installing-inbuilt-unity-packages.md)]
 
 ## Configure MRTK for AR Foundation Camera
 
-In this section, you will learn how to configure MRTK for deploying to a mobile device.
+In this section, you'll learn how to configure MRTK for deploying to a mobile device.
 
 1. In the Hierarchy window, select the **MixedRealityToolkit** object. Then in the Inspector window, select the **Camera** tab, clone the camera profile, and give it a suitable name, for example, **AzureSpatialAnchors_ARCameraProfile**:
 
@@ -32,7 +32,7 @@ In this section, you will learn how to configure MRTK for deploying to a mobile 
 
 ## Build your application to your Android device
 
-In this section, you will learn how to configure your project to build and deploy it to an Android device.
+In this section, you'll learn how to configure your project to build and deploy it to an Android device.
 
 1. In the Unity menu, select **File** > **Build Settings**... to open the Build Settings window and then switch the platform to Android:
 
@@ -58,7 +58,7 @@ Close the Build Settings window.
 ![Run device dropdown](../media/asa-05-section-3-step-1-4.png)
 
 >[!Note]
->If your device does not appear in the Run Device dropdown, you might need to press the Refresh button next to the dropdown.
+>If your device doesn't appear in the Run Device dropdown, you might need to press the Refresh button next to the dropdown.
 
 5. In the Build Settings window, click the **Build And Run** button to open the Build Android window.
 
@@ -73,7 +73,7 @@ When the build process is complete, your apps should automatically load on your 
 
 ## Build your application to your iOS device
 
-In this section, you will learn how to configure your project, to build and deploy it to your iOS device.
+In this section, you'll learn how to configure your project, to build and deploy it to your iOS device.
 
 1. In the Unity menu, select **File** > **Build Settings**... to open the Build Settings window and switch platform to iOS:
 
