@@ -4,6 +4,6 @@ Blazor lets you re-use your C# experience and bring it to front-end web developm
 
 ## Learn more
 
-- [Introduction to ASP.NET Core Blazor](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-5.0)
-- [ASP.NET Core Blazor routing](https://docs.microsoft.com/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-5.0)
-- [ASP.NET Core Blazor layouts](https://docs.microsoft.com/aspnet/core/blazor/components/layouts?view=aspnetcore-5.0)
+- [Introduction to ASP.NET Core Blazor](/aspnet/core/blazor)
+- [ASP.NET Core Blazor routing](/aspnet/core/blazor/fundamentals/routing)
+- [ASP.NET Core Blazor layouts](/aspnet/core/blazor/components/layouts)
