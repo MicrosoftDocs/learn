@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.student-evangelism.grow-cognitive-flexibility
+metadata:
+  title: 'Grow your cognitive flexibility'
+  description: Learn how to grow your cognitive flexibility.
+  ms.date: 05/13/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Grow your cognitive flexibility'
+summary: Grow your cognitive flexibility.
+abstract:  | 
+  In this module, you will:
+  - Learn about the importance of cognitive flexibility in tech resilience.
+  - Identify ways to use cognitive flexibility to expand your outlook.
+  - Explore ways to use feedback to grow your cognitive flexibility.
+  - Learn how to apply cognitive flexibility to pivot and persist in challenging situations.
+prerequisites: |
+  - An open mind and a willingness to learn about the expectations and responsibilities of mentorship in a technology workspace.
+  
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- vs-code
+units:
+- learn.student-evangelism.grow-cognitive-flexibility.1-introduction
+- learn.student-evangelism.grow-cognitive-flexibility.2-what-is-cognitive-flexibility
+- learn.student-evangelism.grow-cognitive-flexibility.3-recognize-importance-adapt-to-change
+- learn.student-evangelism.grow-cognitive-flexibility.4-expand-outlook
+- learn.student-evangelism.grow-cognitive-flexibility.5-use-feedback
+- learn.student-evangelism.grow-cognitive-flexibility.6-pivot-persist-challenging-situations
+- learn.student-evangelism.grow-cognitive-flexibility.7-exercise-cognitive-flexibility
+- learn.student-evangelism.grow-cognitive-flexibility.8-knowledge-check
+- learn.student-evangelism.grow-cognitive-flexibility.9-summary
+badge:
+  uid: learn.student-evangelism.grow-cognitive-flexibility.badge 
