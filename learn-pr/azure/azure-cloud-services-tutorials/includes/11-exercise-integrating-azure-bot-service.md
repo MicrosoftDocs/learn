@@ -1,4 +1,4 @@
-## 11. Exercise: Integrating Azure Bot Service
+
 
 In this module, you'll learn how to use **Azure Bot Service** in the **HoloLens 2** demo application to add Language Understanding (LUIS) and letting the Bot assist the user when searching for **Tracked Objects**. This module is a two-part module where in the first part, you create the Bot with the [Bot Composer](/composer/introduction) as a code-free solution and take a quick look in the Azure Function that feeds the Bot with the needed data. Then, in the second part, you use the **BotManager (script)** in the Unity project to consume the hosted Bot Service.
 

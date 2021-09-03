@@ -1,4 +1,4 @@
-## 7. Exercise: Integrating Azure Custom Vision
+
 
 In this module, you will learn how to use **Azure Custom Vision**.You will upload a set of photos to associate it with a *Tracked Object*, upload them to the **Custom Vision** service and start the training process. Then you will use the service to detect the *Tracked Object* by capturing photos from the webcam feed.
 

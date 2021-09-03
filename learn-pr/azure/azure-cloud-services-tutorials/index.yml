@@ -2,7 +2,7 @@
 uid: learn.azure.azure-cloud-services-tutorials-mrtk
 metadata:
   title: Azure Cloud Services Tutorials
-  description: This course explores the use of azure speech services by integrating to a hololens2 application. You can also deploy your project to a HoloLens.
+  description: This course explores the use of azure speech services by integrating to a Hololens2 application. You can also deploy your project to a HoloLens.
   ms.date: 06/23/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"

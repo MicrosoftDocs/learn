@@ -1,6 +1,4 @@
-## 6. Integrating Azure Custom Vision
 
-## Azure custom vision
 Azure Custom Vision is an image recognition service that lets you build, deploy, and improve your own image identifiers. An image identifier applies labels (which represent classes or objects) to images, according to their visual characteristics. Unlike the Computer Vision service, Custom Vision allows you to specify the labels and train custom models to detect them.
 
 ## Cognitive services

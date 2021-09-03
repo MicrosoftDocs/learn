@@ -1,6 +1,3 @@
-## 2. Azure Cloud Services for HoloLens 2
-
-## Azure cloud services
 
 Azure Cloud Services is an example of a platform as a service (PaaS). Like Azure App Service, this technology is designed to support applications that are scalable, reliable, and inexpensive to operate. In the same way that App Service is hosted on virtual machines (VMs), so too is Azure Cloud Services.
 

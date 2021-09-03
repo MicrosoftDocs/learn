@@ -1,6 +1,4 @@
-## 10. Integrating Azure Bot Service
 
-## Azure bot service
 
 Azure Bot Service is Microsoft's artificial intelligence (AI) chatbot service on the Azure cloud service marketplace. By using Azure Bot Service, one can add intelligent agents without committing resources to developing their own AI. The service can be added to websites, apps, email, GroupMe, Facebook Messenger, Kik Messenger, Skype, Slack, Microsoft Teams, Telegram, SMS, Twilio, Cortana, and Skype for Business.
 

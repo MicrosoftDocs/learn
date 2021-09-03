@@ -1,4 +1,4 @@
-## 3.Exercise: Azure Cloud Services for HoloLens 2
+
 
 With each consecutive chapter, you will add new **Azure Cloud** services to expand the application features and user experience, while teaching you the fundamentals of each **Azure Cloud** service.
 

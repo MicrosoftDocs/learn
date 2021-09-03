@@ -1,4 +1,4 @@
-## 5. Exercise: Integrating Azure storage
+
 
 In this module, you'll learn how to save entity data to Azure Table storage and thumbnail images to Azure Blob storage. This feature will allow us to store and retrieve *Tracked Objects* with data like ID, Name, Thumbnail Image, etc. across sessions and devices to the cloud.
 
