@@ -8,7 +8,7 @@ metadata:
   author: sadadow
   ms.author: saadad
   ms.topic: interactive-tutorial 
-title: Navigate Microsoft Learn for Microsoft Educator Center users
+title: Navigate Microsoft Learn for Educators and School Leaders
 summary: |
   The Microsoft Educator Center will be merging with Microsoft Learn to become the single training hub to empower digital classrooms, student-centered learning, and technical skilling for educators, students, institutions, and supporting education audiences. 
   - What does that mean for your professional development? 
@@ -36,12 +36,12 @@ roles:
 products:
 - m365	
 units:
-- learn.navigate-microsoft-learn-for-microsoft-educator-center-users.introduction
-- learn.navigate-microsoft-learn-for-microsoft-educator-center-users.find-educator-content-in-learn
-- learn.navigate-microsoft-learn-for-microsoft-educator-center-users.create-a-collection
-- learn.navigate-microsoft-learn-for-microsoft-educator-center-users.navigate-your-learn-profile
-- learn.navigate-microsoft-learn-for-microsoft-educator-center-users.exercise
-- learn.navigate-microsoft-learn-for-microsoft-educator-center-users.knowledge-check
-- learn.navigate-microsoft-learn-for-microsoft-educator-center-users.summary
+- learn.navigate-microsoft-learn-for-educators-school-leaders.introduction
+- learn.navigate-microsoft-learn-for-educators-school-leaders.find-educator-content-in-learn
+- learn.navigate-microsoft-learn-for-educators-school-leaders.create-a-collection
+- learn.navigate-microsoft-learn-for-educators-school-leaders.navigate-your-learn-profile
+- learn.navigate-microsoft-learn-for-educators-school-leaders.exercise
+- learn.navigate-microsoft-learn-for-educators-school-leaders.knowledge-check
+- learn.navigate-microsoft-learn-for-educators-school-leaders.summary
 badge:
-  uid: learn.navigate-microsoft-learn-for-microsoft-educator-center-users.badge
+  uid: learn.navigate-microsoft-learn-for-educators-school-leaders.badge
