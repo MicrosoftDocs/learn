@@ -16,7 +16,7 @@ To create your DNS zone:
 
 1. Select **Create a resource**.
 
-1. Search for and select **DNS zone**. The **DNS zone** pane appears.
+1. Search for and select **DNS zone** by Microsoft. The **DNS zone** pane appears.
 
 1. Select **Create**.
 
@@ -38,9 +38,9 @@ To create your DNS zone:
 
 1. After validation passes, select **Create**. It will take a few minutes to create the DNS zone.
 
-1. Select **Go to resource**.
+1. When deployment is complete, select **Go to resource**.
 
-   By default, the NS and SOA records are automatically created. The NS record defines the Azure DNS name spaces and contains the four Azure DNS record sets. You use all four record sets when you update the registrar.
+   By default, the NS and SOA record sets are automatically created and automatically deleted whenever a DNS zone is created or deleted. The NS record set defines the Azure DNS namespaces and contains the four Azure DNS records. You use all four records when you update the registrar.
 
    The SOA record represents your domain, and is used when other DNS servers are searching for your domain.
 
@@ -50,7 +50,7 @@ To create your DNS zone:
 
 Now that the DNS zone exists, you need to create the necessary records to support the domain.
 
-The primary record to create is the A record. This record contains the pairing between the IP address and the domain name. An A record set can have multiple records. In a record set, the domain name remains constant, while the IP addresses are different.
+The primary record set to create is the A record. The A record set is used to point traffic from a logical domain name to the hosting server's IP address. An A record set can have multiple records. In a record set, the domain name remains constant, while the IP addresses differ.
 
 1. On the **wideworldimportsXXXX.com - DNS zone** pane, in the command bar, select **Record set**.
 
@@ -72,7 +72,7 @@ The primary record to create is the A record. This record contains the pairing b
 
     :::image type="content" source="../media/4-arecord.png" alt-text="Screenshot of A record set." lightbox="../media/4-arecord.png":::
 
-Note that it's possible to have more than one IP address set up for your web server. In that case, you add all the associated IP addresses as part of a record set. After it's created, you can update the record set with additional IP addresses.
+Note that it's possible to have more than one IP address set up for your web server. In that case, you add all the associated IP addresses as records in the A record set. After it's created, you can update the record set with additional IP addresses.
 
 ## Verify your global Azure DNS
 
@@ -84,7 +84,7 @@ Even though we don't have a registered domain, it's still possible to verify tha
 
 Here's how to use `nslookup` to verify the DNS zone configuration.
 
-1. Use Cloud Shell to run the following command. Replace the DNS zone name with the zone you created. Also replace the name server address with one of the NS values you copied after you created the DNS zone.
+1. Use Cloud Shell to run the following command. Replace the DNS zone name with the zone you created, and replace `<name server address>` with one of the NS values you copied after you created the DNS zone.
 
     ```bash
     nslookup www.wideworldimportsXXXX.com <name server address>
