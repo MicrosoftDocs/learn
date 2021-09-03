@@ -39,9 +39,9 @@ prerequisites: |
 
 units: 
 - learn.azure.using-eyetracking-and-voice-commands-mrtk.6.1-introduction
-- learn.azure.using-eyetracking-and-voice-commands-mrtk.6.2-Using-eye-tracking
-- learn.azure.using-eyetracking-and-voice-commands-mrtk.6.3-Exercise-Using-eye-tracking
-- learn.azure.using-eyetracking-and-voice-commands-mrtk.6.4-Using-voice-commands
+- learn.azure.using-eyetracking-and-voice-commands-mrtk.6.2-using-eye-tracking
+- learn.azure.using-eyetracking-and-voice-commands-mrtk.6.3-exercise-using-eye-tracking
+- learn.azure.using-eyetracking-and-voice-commands-mrtk.6.4-using-voice-commands
 - learn.azure.using-eyetracking-and-voice-commands-mrtk.6.5-exercise-using-voice-commands
 - learn.azure.using-eyetracking-and-voice-commands-mrtk.6.6-knowledge-check
 - learn.azure.using-eyetracking-and-voice-commands-mrtk.6.7-summary
