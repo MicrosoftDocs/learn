@@ -552,3 +552,8 @@ achievements:
   title: Describe Microsoft security and compliance principles
   summary: Describe Microsoft security and compliance principles
   iconUrl: /learn/achievements/describe-microsoft-security-and-compliance-principles.svg
+- uid: learn.navigate-microsoft-learn-for-educators-school-leaders.badge
+  type: badge
+  title: Navigate Microsoft Learn for Educators and School Leaders
+  summary: This module will give you the essentials for using Microsoft Learn and provide a gateway to exciting professional development content for educator tools.
+  iconUrl: /learn/achievements/mec/microsoft-learn-for-educators-pioneer.svg
