@@ -4,7 +4,7 @@
 
 Microsoft Learn is a place where professional development training, curriculum, hands-on experiences, and certifications come together to support technical professionals as well as educators, students, and institutions.  
 
-[!VIDEO https://www.microsoft.com/videoplayer/embed/RWFP6j]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWFP6j]
 
 > [!NOTE]
 > The Microsoft Educator Center is merging with Microsoft Learn. On Microsoft Learn, you’ll have access to the same awesome professional development content that you love from the Microsoft Educator Center, with even more features to help you on your learning journey. We'll also bring your learning history and achievements to Microsoft Learn, so you can pick up your learning journey right where you last left off!
