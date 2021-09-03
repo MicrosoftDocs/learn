@@ -33,12 +33,14 @@ products:
 units:
 - learn.student-evangelism.cultivate-culture-belong-tech.1-introduction
 - learn.student-evangelism.cultivate-culture-belong-tech.2-examine-recognize-belonging
-- learn.student-evangelism.cultivate-culture-belong-tech.3-why-belonging-matters-tech
-- learn.student-evangelism.cultivate-culture-belong-tech.4-identify-challenges-tech-environments
-- learn.student-evangelism.cultivate-culture-belong-tech.5-microaggressions-microaffirmations
-- learn.student-evangelism.cultivate-culture-belong-tech.6-interactions-cultivate-belonging
-- learn.student-evangelism.cultivate-culture-belong-tech.7-build-inclusive-environments
-- learn.student-evangelism.cultivate-culture-belong-tech.8-knowledge-check
-- learn.student-evangelism.cultivate-culture-belong-tech.9-summary
+- learn.student-evangelism.cultivate-culture-belong-tech.3-exercise-belongingness
+- learn.student-evangelism.cultivate-culture-belong-tech.4-why-belonging-matters-tech
+- learn.student-evangelism.cultivate-culture-belong-tech.5-identify-challenges-tech-environments
+- learn.student-evangelism.cultivate-culture-belong-tech.7-microaggressions-microaffirmations
+- learn.student-evangelism.cultivate-culture-belong-tech.6-exercise-challenges
+- learn.student-evangelism.cultivate-culture-belong-tech.8-exercise-interactions-cultivate-belonging
+- learn.student-evangelism.cultivate-culture-belong-tech.9-build-inclusive-environments
+- learn.student-evangelism.cultivate-culture-belong-tech.11-knowledge-check
+- learn.student-evangelism.cultivate-culture-belong-tech.11-summary
 badge:
   uid: learn.student-evangelism.cultivate-culture-belong-tech.badge 

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.cultivate-culture-belong-tech.7-exercise-interactions-cultivate-belonging
+uid: learn.student-evangelism.cultivate-culture-belong-tech.8-exercise-interactions-cultivate-belonging
 title: Exercise - examine and reflect on interactions to cultivate belonging 
 metadata:
   title: Exercise - examine and reflect on interactions to cultivate belonging 
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/7-exercise-interactions-cultivate-belonging.md)]
+  [!include[](includes/8-exercise-interactions-cultivate-belonging.md)]
