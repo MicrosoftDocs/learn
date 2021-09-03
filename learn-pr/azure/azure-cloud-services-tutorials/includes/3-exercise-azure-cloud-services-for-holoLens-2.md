@@ -66,7 +66,7 @@ Then follow the Changing the Spatial Awareness Display Option instructions to en
 
 1. In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** and click the **Install** button to install the package:
 
-![Unity Package Manager window with AR Foundation selected](../media/asa-02-section2-step1-1.png)
+![Unity Package Manager window with AR Foundation selected](../media/asa-02-section-2-step-1-1.png)
 
 
 > [!NOTE]
@@ -86,7 +86,7 @@ Then follow the Changing the Spatial Awareness Display Option instructions to en
 
 3. After you have imported the tutorial assets your Project window should look similar to this:
 
-![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](../media/tutorial1-section4-step1-1.png)
+![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](../media/tutorial-1-section-4-step-1-1.png)
 
 > [!NOTE]
 > If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' and 'WorldAnchor.GetNativeSpatialAnchorPtr()' being obsolete, you can ignore these warnings.
@@ -98,7 +98,7 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
 
 1. In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder. While holding down the CTRL button, click on **SceneController**, **RootMenu** and **DataManager** to select the three prefabs:
 
-![Unity with SceneController, RootMenu and DataManager prefabs selected](../media/tutorial1-section5-step1-1.png)
+![Unity with SceneController, RootMenu and DataManager prefabs selected](../media/tutorial-1-section-5-step-1-1.png)
 
 
 2. The **SceneController (prefab)** contains two scripts, **SceneController (script)** and **UnityDispatcher (script)**. The **SceneController** script component contains several UX functions and facilitates the photo capture functionality while **UnityDispatcher** is a helper class to allow execute actions on the Unity main thread.
@@ -109,11 +109,11 @@ The **DataManager (prefab)** is responsible for talking to Azure storage and wil
 
 3. Now with the three prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
-![Unity with newly added SceneController, RootMenu and DataManager prefabs still selected](../media/tutorial1-section5-step1-2.png)
+![Unity with newly added SceneController, RootMenu and DataManager prefabs still selected](../media/tutorial-1-section-5-step-1-2.png)
 
 4. To focus in on the objects in the scene, you can double-click on the **RootMenu** object, and then zoom slightly out again:
 
-![Unity with RootMenu object selected](../media/tutorial1-section5-step1-3.png)
+![Unity with RootMenu object selected](../media/tutorial-1-section-5-step-1-3.png)
 
 > [!TIP]
 > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position.
@@ -126,23 +126,23 @@ In this section, you will connect *SceneManager*, *DataManager* and *RootMenu* t
 
 1. In the Hierarchy window, select the **DataManager** object:
 
-![Unity with DataManager object selected](../media/tutorial1-section6-step1-1.png)
+![Unity with DataManager object selected](../media/tutorial-1-section-6-step-1-1.png)
 
 2. In the Inspector window, locate the **DataManager (Script)** component and you will see an empty slot on the **On Data Manager Ready ()** event. Now from the Hierarchy window drag the **SceneController** object into the **On Data Manager Ready ()** event.
 
-![Unity with DataManager event listener added](../media/tutorial1-section6-step1-2.png)
+![Unity with DataManager event listener added](../media/tutorial-1-section-6-step-1-2.png)
 
 3. You will notice that the dropdown menu of the event became active, click on the dropdown menu and navigate to **SceneController** and in the sub menu select the **Init ()** option:
 
-![Unity with DataManager event action added](../media/tutorial1-section6-step1-3.png)
+![Unity with DataManager event action added](../media/tutorial-1-section-6-step-1-3.png)
 
 4. From the Hierarchy window, select the **SceneController** object, there in the Inspector you will find the **SceneController** (script) component.
 
-![Unity with SceneController selected](../media/tutorial1-section6-step1-4.png)
+![Unity with SceneController selected](../media/tutorial-1-section-6-step-1-4.png)
 
 5. You will see that there are several unpopulated fields, let's change that. Move the **DataManager** object from the Hierarchy into the *Data Manager* field and move the **RootMenu** GameObject from the Hierarchy into the *Main Menu* field.
 
-![Unity with SceneController configured](../media/tutorial1-section6-step1-5.png)
+![Unity with SceneController configured](../media/tutorial-1-section-6-step-1-5.png)
 
 6. Now your scene is ready for the upcoming tutorials. Don't forget to save it into your project.
 
@@ -154,16 +154,16 @@ While the project yet has to be filled with content, you have to perform some pr
 
 1. In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
 
-![Unity open Project Settings](../media/tutorial1-section7-step1-1.png)
+![Unity open Project Settings](../media/tutorial-1-section-7-step-1-1.png)
 
 
 2. In the Project Settings window, select **Player** and then **Publishing Settings**:
 
-![Unity Publishing Settings](../media/tutorial1-section7-step1-2.png)
+![Unity Publishing Settings](../media/tutorial-1-section-7-step-1-2.png)
 
 3. In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone** and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, and **Webcam** capabilities:
 
-![Unity Capabilities](../media/tutorial1-section7-step1-3.png)
+![Unity Capabilities](../media/tutorial-1-section-7-step-1-3.png)
 
 ### 2. Deploy the app to your HoloLens 2
 
