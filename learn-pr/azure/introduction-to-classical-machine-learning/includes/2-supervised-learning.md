@@ -1,4 +1,4 @@
-The process of training a model can either supervised or unsupervised. Our goal here is to contrast these approaches and then take a deeper dive into the learning process, with a focus on supervised learning. It's worth remembering throughout this discussion that the only difference between supervised and unsupervised learning is how the objective function works.
+The process of training a model can be either supervised or unsupervised. Our goal here is to contrast these approaches and then take a deeper dive into the learning process, with a focus on supervised learning. It's worth remembering throughout this discussion that the only difference between supervised and unsupervised learning is how the objective function works.
 
 ## What is unsupervised learning?
 
