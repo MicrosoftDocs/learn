@@ -11,9 +11,9 @@ After completing this unit, you've learned how to:
 
 ## Learn more
 
-- [Introduction to ASP.NET Core Blazor](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-5.0)
-- [ASP.NET Core Razor components](https://docs.microsoft.com/aspnet/core/blazor/components/?view=aspnetcore-5.0)
-- [ASP.NET Core Blazor hosting models](https://docs.microsoft.com/aspnet/core/blazor/hosting-models?view=aspnetcore-5.0)
-- [ASP.NET Core Blazor cascading values and parameters](https://docs.microsoft.com/en-us/aspnet/core/blazor/components/cascading-values-and-parameters?view=aspnetcore-5.0)
-- [ASP.NET Core Blazor data binding](https://docs.microsoft.com/aspnet/core/blazor/components/data-binding?view=aspnetcore-5.0)
+- [Introduction to ASP.NET Core Blazor](/aspnet/core/blazor/)
+- [ASP.NET Core Razor components](/aspnet/core/blazor/components/)
+- [ASP.NET Core Blazor hosting models](/aspnet/core/blazor/hosting-models)
+- [ASP.NET Core Blazor cascading values and parameters](/aspnet/core/blazor/components/cascading-values-and-parameters)
+- [ASP.NET Core Blazor data binding](/aspnet/core/blazor/components/data-binding)
 - [Blazor - app building workshop](https://github.com/dotnet-presentations/blazor-workshop)
