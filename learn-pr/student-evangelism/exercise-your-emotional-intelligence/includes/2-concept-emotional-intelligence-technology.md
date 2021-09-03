@@ -49,4 +49,3 @@ According to research, people with high EQ display the following characteristics
 
 - Social skills. Your social skills define how well you communicate with others in your work and personal environments. You communicate with people in many different ways, such as speaking, gesturing, using your body language, and writing. When you’re socially skilled, you’re able to create a positive and inclusive environment at work and school. You can also better manage tensions between your teammates and resolve conflicts as they arise.
 
-To learn more about EQ and the importance of your emotions in a tech environment, review the following video, which is approximately three minutes in length.

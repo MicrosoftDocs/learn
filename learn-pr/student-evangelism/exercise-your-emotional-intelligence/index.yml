@@ -3,7 +3,7 @@ uid: learn.student-evangelism.exercise-your-emotional-intelligence
 metadata:
   title: 'Exercise your emotional intelligence'
   description: Learn how to exercise your emotional intelligence.
-  ms.date: 05/13/2021
+  ms.date: 09/03/2021
   author: interurban
   ms.author: jadenyer
   ms.topic: interactive-tutorial
@@ -26,13 +26,13 @@ roles:
 products:
 - azure
 units:
-- learn.student-evangelism.exercise-your-emotional-intelligence.1-introduction
-- learn.student-evangelism.exercise-your-emotional-intelligence.2-concept-emotional-intelligence-technology
-- learn.student-evangelism.exercise-your-emotional-intelligence.3-exercise-reflect-feelings
-- learn.student-evangelism.exercise-your-emotional-intelligence.4-identify-emotions
-- learn.student-evangelism.exercise-your-emotional-intelligence.5-exercise-assess-improve-emotional-intelligence
-- learn.student-evangelism.exercise-your-emotional-intelligence.6-manage-emotions-technical-environment
-- learn.student-evangelism.exercise-your-emotional-intelligence.7-knowledge-check
-- learn.student-evangelism.exercise-your-emotional-intelligence.8-summary
+- learn.student-evangelism.exercise-your-emotional-intelligence.introduction
+- learn.student-evangelism.exercise-your-emotional-intelligence.concept-emotional-intelligence-technology
+- learn.student-evangelism.exercise-your-emotional-intelligence.exercise-reflect-feelings
+- learn.student-evangelism.exercise-your-emotional-intelligence.identify-emotions
+- learn.student-evangelism.exercise-your-emotional-intelligence.exercise-assess-improve-emotional-intelligence
+- learn.student-evangelism.exercise-your-emotional-intelligence.manage-emotions-technical-environment
+- learn.student-evangelism.exercise-your-emotional-intelligence.knowledge-check
+- learn.student-evangelism.exercise-your-emotional-intelligence.summary
 badge:
   uid: learn.student-evangelism.exercise-your-emotional-intelligence.badge
