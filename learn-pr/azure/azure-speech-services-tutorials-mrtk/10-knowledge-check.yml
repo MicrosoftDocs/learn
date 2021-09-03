@@ -8,7 +8,7 @@ metadata:
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-Azure
 durationInMinutes: 3
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -26,7 +26,7 @@ quiz:
         - content: "Language Understanding"
           isCorrect: true
           explanation: "A natural language understanding AI service to allow users to interact with applications."
-    - content: "You are developing an application for tourists to use as a text based or audio based translator.Which Azure services can help?"
+    - content: "You are developing an application for tourists to use as a text based or audio based translator. Which Azure services can help?"
       choices:
         - content: "Text Analytics"
           isCorrect: false
@@ -37,15 +37,15 @@ quiz:
         - content: "Text Translate"
           isCorrect: false
           explanation: "Translates text and document in real time"
-    - content: "You wish to develop an application which can take verbal commands.Which Azure services can help?"
+    - content: "You wish to develop an application which can take verbal commands. Which Azure services can help?"
       choices:
         - content: "Speech"
           isCorrect: true
-          explanation: "The unification of speech-to-text, text-to-speech, and speech-translation into a single Azure subscription."
+          explanation: "The unification of speech-to-text, text-to-speech and speech-translation into a single Azure subscription."
         - content: "LUIS"
           isCorrect: false
           explanation: "A natural language understanding AI service to allow users to interact with applications."
         - content: "Azure Text Analytics"
           isCorrect: false
-          explanation: "The process of drawing meaning out of written communication"
+          explanation: "The process of drawing meaning out of written communication".
    
