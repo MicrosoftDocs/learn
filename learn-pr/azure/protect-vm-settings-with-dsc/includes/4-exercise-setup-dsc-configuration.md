@@ -85,7 +85,7 @@ Start by deploying a new VM from a Windows Server 2016 image.
     pwsh
     ```
 
-1. At the PowerShell (PS) prompt,  run the following command to start the code editor and create a file named *MyDscConfiguration.ps1* in your home directory.
+1. At the PowerShell prompt,  run the following command to start the code editor and create a file named *MyDscConfiguration.ps1* in your home directory.
 
     ```powershell
     code $HOME/MyDscConfiguration.ps1
