@@ -3,7 +3,7 @@ uid: learn.student-evangelism.develop-growth-mindset
 metadata:
   title: Develop a growth mindset
   description: Learn how to develop a growth mindset.
-  ms.date: 05/13/2021
+  ms.date: 09/03/2021
   author: interurban
   ms.author: jadenyer
   ms.topic: interactive-tutorial
@@ -27,15 +27,15 @@ roles:
 products:
 - azure
 units:
-- learn.student-evangelism.develop-growth-mindset.1-introduction
-- learn.student-evangelism.develop-growth-mindset.2-describe-fixed-and-growth-mindsets
-- learn.student-evangelism.develop-growth-mindset.3-exercise-reflect-mindset
-- learn.student-evangelism.develop-growth-mindset.4-differentiate-fixed-and-growth-mindsets
-- learn.student-evangelism.develop-growth-mindset.5-exercise-mindset
-- learn.student-evangelism.develop-growth-mindset.6-strategies-change-mindset
-- learn.student-evangelism.develop-growth-mindset.7-exercise-change-mindset
-- learn.student-evangelism.develop-growth-mindset.8-reflect-connection-mindset-outcomes
-- learn.student-evangelism.develop-growth-mindset.9-knowledge-check
-- learn.student-evangelism.develop-growth-mindset.10-summary
+- learn.student-evangelism.develop-growth-mindset.introduction
+- learn.student-evangelism.develop-growth-mindset.describe-fixed-growth-mindsets
+- learn.student-evangelism.develop-growth-mindset.exercise-reflect-mindset
+- learn.student-evangelism.develop-growth-mindset.differentiate-fixed-growth-mindsets
+- learn.student-evangelism.develop-growth-mindset.exercise-mindset
+- learn.student-evangelism.develop-growth-mindset.change-mindset-strategies
+- learn.student-evangelism.develop-growth-mindset.exercise-change-mindset
+- learn.student-evangelism.develop-growth-mindset.reflect-connection-mindset-outcomes
+- learn.student-evangelism.develop-growth-mindset.knowledge-check
+- learn.student-evangelism.develop-growth-mindset.summary
 badge:
   uid: learn.student-evangelism.develop-growth-mindset.badge 

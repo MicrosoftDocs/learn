@@ -6,23 +6,23 @@ Compare your answers to the suggested growth-mindset statements listed after the
 
 ## Fixed-mindset statements
 
-1. “I’m not good with user interfaces. I know I won’t understand what’s really going on in this seminar, but I figured I’d show up anyway.”
+- “I’m not good with user interfaces. I know I won’t understand what’s really going on in this seminar, but I figured I’d show up anyway.”
 
-1. “I can’t get this code right. The approach I’m trying just isn’t working.”
+- “I can’t get this code right. The approach I’m trying just isn’t working.”
 
-1. “It seems like everyone else here is a natural when it comes to programming—they just know what to do. I feel like I wasn’t born with that gene.”
+- “It seems like everyone else here is a natural when it comes to programming—they just know what to do. I feel like I wasn’t born with that gene.”
 
-1. “This colleague of mine is to blame for *X*. It’s because they’re a stubborn person.”
+- “This colleague of mine is to blame for *X*. It’s because they’re a stubborn person.”
 
 ## Suggested growth-mindset statements
 
-1. “I’m not good with user interfaces yet. I’m looking forward to learning about it in this seminar. I bet my feelings about not knowing what’s going on will fade as I participate in the seminar’s activities.”
+- “I’m not good with user interfaces yet. I’m looking forward to learning about it in this seminar. I bet my feelings about not knowing what’s going on will fade as I participate in the seminar’s activities.”
 
-1. “This code is difficult, and the approach I’ve been using isn’t working. I should pay attention to what others are doing. I also could ask the seminar facilitator to give me ideas so I can try a different approach.”
+- “This code is difficult, and the approach I’ve been using isn’t working. I should pay attention to what others are doing. I also could ask the seminar facilitator to give me ideas so I can try a different approach.”
 
-1. “Although my skills might not be as good as some of my peers, it doesn't mean that fundamentally we are different. They might have more training or experience than I do. I’m capable of learning these techniques too. Maybe I can ask some of them for help.”
+- “Although my skills might not be as good as some of my peers, it doesn't mean that fundamentally we are different. They might have more training or experience than I do. I’m capable of learning these techniques too. Maybe I can ask some of them for help.”
 
-1. “I'm able to acknowledge my colleagues’ imperfections because I have them, too. I also know that poor communication can result in conflict. It's not necessarily because they have a personality flaw.”
+- “I'm able to acknowledge my colleagues’ imperfections because I have them, too. I also know that poor communication can result in conflict. It's not necessarily because they have a personality flaw.”
 
 By embracing a growth mindset, you might surprise yourself at what you can accomplish.
 

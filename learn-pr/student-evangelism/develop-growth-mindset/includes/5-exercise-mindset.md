@@ -22,9 +22,9 @@ Imagine you presented an idea in a meeting to try to improve your site’s user 
 
 Your thoughts about this are:
 
-1. I’m proud I had the guts to put forward my idea even though only part of it was used.
-1. The feedback I got from the team was valid.
-1. I can apply the coding techniques I learned in this meeting to future projects.
+- I’m proud I had the guts to put forward my idea even though only part of it was used.
+- The feedback I got from the team was valid.
+- I can apply the coding techniques I learned in this meeting to future projects.
 
 Reflective questions:
 
@@ -48,8 +48,8 @@ Your colleague has a fixed mindset. They believe that they can’t apply for the
 
 Your growth mindset is what made you perceive the experience as a success when you could have perceived it as a failure:
 
-1. You offered ideas even though they might be rejected. Your motivation was to contribute rather than seek approval or avoid failure. You celebrated the courage it took to speak up.
+- You offered ideas even though they might be rejected. Your motivation was to contribute rather than seek approval or avoid failure. You celebrated the courage it took to speak up.
 
-1. You perceived the feedback you received as valid and not personal. With a fixed mindset, you might have taken the criticism personally and become reluctant to share in future meetings.
+- You perceived the feedback you received as valid and not personal. With a fixed mindset, you might have taken the criticism personally and become reluctant to share in future meetings.
 
-1. You're happy that you learned some important coding techniques that you can apply in the future.
+- You're happy that you learned some important coding techniques that you can apply in the future.

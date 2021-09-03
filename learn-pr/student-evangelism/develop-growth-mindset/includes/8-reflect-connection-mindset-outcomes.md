@@ -46,13 +46,13 @@ Reflect on your inner dialogue during the stressful situation. Optionally, note 
 
 Try to remember an experience from your life where mindset affected the outcome (positively or negatively). Use the following questions to consider how your internal dialogue and mindset affected the outcome of the situation. Also consider how you might manage the same situation in the future. Optionally, note your responses on a device or on paper.
 
-1. How did your inner dialogue and mindset affect your actions?
+- How did your inner dialogue and mindset affect your actions?
     - What did you do or say that was a direct consequence of what you were thinking and your fixed or growth mindset?
     - Is there anything you wish you would have said or done? Or conversely, is there anything you regret having said or done?
 
-1. How did your inner dialogue and mindset affect the outcome of the situation?
+- How did your inner dialogue and mindset affect the outcome of the situation?
 
     - What outcomes do you think were a consequence of your mindset? 
     - If you had had a different mindset, do you think the outcome would have been different?
 
-1. If you could relive the experience with a growth mindset tomorrow, how do you think the outcome of the situation might be different? What inner dialogue could you use to nudge your mindset from fixed to growth?
+- If you could relive the experience with a growth mindset tomorrow, how do you think the outcome of the situation might be different? What inner dialogue could you use to nudge your mindset from fixed to growth?
