@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/06/2021
+  ms.date: 07/20/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -35,7 +35,7 @@ quiz:
     - content: "Use a block blob for active data stored using the Hot data access tier, and a page blob for data stored using the Cool or Archive data access tiers."
       isCorrect: false
       explanation: "That's incorrect. Use a block blob for discrete objects that change rarely, and a page blob for data that requires random read and write access. The data access tier is irrelevant to the choice of which type of blob to use."
-    - content: "Use a page block for blobs that require random read and write access. Use a block blob for discrete objects that change infrequently."
+    - content: "Use a page blob for blobs that require random read and write access. Use a block blob for discrete objects that change infrequently."
       isCorrect: true
       explanation: "That's correct. Use a page block for blobs that require random read and write access. Use a block blob for discrete objects that change infrequently."
   - content: "Why might you use Azure File storage?"

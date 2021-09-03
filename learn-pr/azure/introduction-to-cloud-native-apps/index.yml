@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-cloud-native-apps
+metadata:
+  title: Introduction to cloud-native apps on Azure
+  description: This module teaches concepts and ideas associated with cloud-native apps. We cover selecting Open-Source Software (OSS) components like Kubernetes and PostgreSQL, as well as unique Azure tools like Cosmos DB. We’ll also identify situations that call for building cloud-native apps, and review selecting components in an example scenario.
+  ms.date: 10/23/2020
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to cloud-native apps on Azure
+summary: This module teaches concepts and ideas associated with cloud-native apps. We cover selecting Open-Source Software (OSS) components like Kubernetes and PostgreSQL, as well as unique Azure tools like Cosmos DB. We’ll also identify situations that call for building cloud-native apps, and review selecting components in an example scenario.
+abstract: |
+  In this module, you will:
+  - Describe the fundamental structure of a cloud-native app
+  - Identify situations where you should build a cloud-native app
+prerequisites: |
+  - A basic familiarity with Azure
+  - You should be familiar with basic cloud concepts and terminology
+  - An understanding of cloud computing is helpful, but isn't necessary
+iconUrl: /learn/achievements/intro-to-cloud-native-apps.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- azure
+units:
+- learn.azure.intro-to-cloud-native-apps.1-introduction
+- learn.azure.intro-to-cloud-native-apps.2-what-are-cloud-native-apps
+- learn.azure.intro-to-cloud-native-apps.3-containers-cloud-native
+- learn.azure.intro-to-cloud-native-apps.4-design-cloud-native-apps
+- learn.azure.intro-to-cloud-native-apps.5-when-to-use-cloud-native-apps
+- learn.azure.intro-to-cloud-native-apps.6-knowledge-check
+- learn.azure.intro-to-cloud-native-apps.7-summary
+badge:
+  uid: learn.azure.intro-to-cloud-native-apps.badge

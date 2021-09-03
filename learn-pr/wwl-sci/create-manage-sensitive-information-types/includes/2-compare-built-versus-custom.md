@@ -21,7 +21,6 @@ For example, the sensitive information type search pattern for a " U.S. social s
 
 - When a regular expression is matched and within 300 characters of a keyword from the *Keyword_ssn* list, this adds more evidence by proximity.
 
-- The confidence level defines the possible false positive rate within the found matches with more evidence.
 
 > [!TIP]
 > Whenever possible, use the built-in sensitive information types first, because your organization will benefit from the Microsoft managed data matching patterns from the start.

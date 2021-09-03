@@ -1,4 +1,4 @@
-In the previous exercise, you created a service principal for your website's deployment pipeline, and you tested that you could sign in using its key. Now you're ready to grant the service principal access to your Azure environment. In this exercise, you'll create a role assignment for the service principal, and then deploy a Bicep file by using the service principal.
+In the previous exercise, you created a service principal for your website's deployment pipeline, and you tested that you could sign in by using its key. Now you're ready to grant the service principal access to your Azure environment. In this exercise, you'll create a role assignment for the service principal, and then deploy a Bicep file by using the service principal.
 
 During the process, you'll:
 
@@ -12,7 +12,7 @@ During the process, you'll:
 
 ## Sign in as your user account
 
-In the previous exercise, you logged in using the service principal and then you logged out. You need to sign in as your own user account again so that you can follow along with the next steps in this exercise.
+In the previous exercise, you signed in by using the service principal and then signed out. You need to sign in as your own user account again so that you can follow along with the next steps in this exercise.
 
 ::: zone pivot="cli"
 
@@ -70,13 +70,13 @@ Now you'll create a resource group to contain the toy company's website resource
 
 For your website's deployment pipeline, you decide to create a role assignment with the following details:
 
-- **Assignee:** The service principal you created in the previous exercise.
-- **Role:** The **Contributor** built-in role.
-- **Scope:** The resource group created in the previous step.
+- **Assignee**: The service principal that you created in the previous exercise.
+- **Role**: The Contributor built-in role.
+- **Scope**: The resource group that you created in the previous step.
 
 ::: zone pivot="cli"
 
-Run this Azure CLI command in the Visual Studio Code terminal to create the role assignment. Make sure you replace the placeholders with the values you copied earlier:
+Run the following Azure CLI command in the Visual Studio Code terminal to create the role assignment. Replace the placeholders with the values that you copied earlier.
 
 ```azurecli
 az role assignment create \
@@ -90,7 +90,7 @@ az role assignment create \
 
 ::: zone pivot="powershell"
 
-Run this Azure CLI command in the Visual Studio Code terminal to create the role assignment. Make sure you replace the placeholders with the values you copied earlier:
+Run the following Azure CLI command in the Visual Studio Code terminal to create the role assignment. Replace the placeholders with the values that you copied earlier.
 
 ```azurepowershell
 New-AzRoleAssignment `
@@ -104,7 +104,7 @@ New-AzRoleAssignment `
 
 ## Create a Bicep file
 
-You previously created a Bicep file that deploys your website's resources. Here, you save this so that you can test it by using the service principal.
+You previously created a Bicep file that deploys your website's resources. Here, you save this file so that you can test it by using the service principal.
 
 1. Create a new file called *main.bicep*.
 
@@ -114,13 +114,13 @@ You previously created a Bicep file that deploys your website's resources. Here,
 
 1. Save the changes to the file. You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
-## Deploy the Bicep file using the service principal
+## Deploy the Bicep file by using the service principal
 
-You don't currently have a deployment pipeline, so you'll simulate what a pipeline does to deploy your Bicep file. First, you'll sign in using the service principal's credentials. Next, you'll deploy the Bicep file you just created.
+You don't currently have a deployment pipeline, so you'll simulate what a pipeline does to deploy your Bicep file. 
 
 ::: zone pivot="cli"
 
-1. Run this Azure CLI command in the Visual Studio Code terminal to sign in using the service principal's credentials. Make sure you replace the placeholders with the values you copied in the previous exercise.
+1. Run the following Azure CLI command in the Visual Studio Code terminal to sign in by using the service principal's credentials. Replace the placeholders with the values that you copied in the previous exercise.
 
    ```azurecli
    az login --service-principal \
@@ -143,13 +143,13 @@ You don't currently have a deployment pipeline, so you'll simulate what a pipeli
 
 ::: zone pivot="powershell"
 
-1. Run this Azure PowerShell command in the Visual Studio Code terminal to securely prompt you for the service principal's credentials. Use the service principal's application ID and key from the previous exercise for the username and password, respectively.
+1. Run the following Azure PowerShell command in the Visual Studio Code terminal to securely prompt you for the service principal's credentials. Use the service principal's application ID and key from the previous exercise for the username and password, respectively.
 
    ```azurepowershell
    $credential = Get-Credential
    ```
 
-1. Run this Azure PowerShell command in the Visual Studio Code terminal to sign in using the service principal's credentials. Make sure you replace the `TENANT_ID` placeholder with the value you copied earlier.
+1. Run the following Azure PowerShell command in the Visual Studio Code terminal to sign in by using the service principal's credentials. Replace the `TENANT_ID` placeholder with the value that you copied earlier.
 
    ```azurepowershell
    Connect-AzAccount -ServicePrincipal `
@@ -169,7 +169,7 @@ You don't currently have a deployment pipeline, so you'll simulate what a pipeli
 
 ## Verify the deployment
 
-Use the Azure portal to inspect the resources that you deploy and to inspect the results of the deployment.
+Use the Azure portal to inspect the resources that you deployed and to inspect the results of the deployment.
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
@@ -185,19 +185,19 @@ Use the Azure portal to inspect the resources that you deploy and to inspect the
 
     :::image type="content" source="../media/6-deployment-succeeded.png" alt-text="Screenshot of the Azure portal resource group overview pane, displaying additional details of the successful deployment." border="true":::
 
-   You might also see a deployment named **Failure-Anomalies-Alert-Rule-Deployment**. This is created automatically by Application Insights.
+   You might also see a deployment named **Failure-Anomalies-Alert-Rule-Deployment**. Application Insights creates this deployment automatically.
 
 1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand it. 
  
-   In this case, the App Service plan and app, as well as the Application Insights instance, are listed.
+   In this case, the App Service plan, the app, and the Application Insights instance are listed.
 
     :::image type="content" source="../media/6-deployment-details.png" alt-text="Screenshot of the Azure portal resource group overview pane for the specific deployment, with an App Service plan and app, and an Application Insights instance listed." border="true":::
 
-   Notice that there's nothing unusual about this deployment - even though it was initiated by a service principal, it's just like any other Bicep deployment.
+   Notice that there's nothing unusual about this deployment. Even though a service principal initiated it, it's just like any other Bicep deployment.
 
 ## Clean up the resource group and service principal
 
-You've successfully created a service principal and role assignment, and deployed your website's resources by using a Bicep file. You can now remove the resources that you've created. First, you sign out as the service principal, and sign back in as your own user account.
+You've successfully created a service principal and role assignment, and you've deployed your website's resources by using a Bicep file. You can now remove the resources that you created. 
 
 ::: zone pivot="cli"
 
@@ -207,7 +207,7 @@ You've successfully created a service principal and role assignment, and deploye
    az logout
    ```
 
-1. Sign back in to Azure using your own user account by running the following command: 
+1. Sign back in to Azure with your own user account by running the following command: 
 
     ```azurecli
     az login
@@ -223,7 +223,7 @@ You've successfully created a service principal and role assignment, and deploye
 
    When you're prompted to confirm, enter `y`.
 
-2. Run the following command to delete the service principal. Make sure you replace the `APPLICATION_ID` placeholder with the application ID you copied in the previous exercise:
+2. Run the following command to delete the service principal. Replace the `APPLICATION_ID` placeholder with the application ID that you copied in the previous exercise:
 
    ```azurecli
    az ad sp delete --id APPLICATION_ID
@@ -239,7 +239,7 @@ You've successfully created a service principal and role assignment, and deploye
    Logout-AzAccount
    ```
 
-1. Sign back in to Azure using your own user account by running the following command: 
+1. Sign back in to Azure with your own user account by running the following command: 
 
     ```azurepowershell
     Connect-AzAccount
@@ -255,7 +255,7 @@ You've successfully created a service principal and role assignment, and deploye
 
    When you're prompted to confirm, enter `y`.
 
-1. Run the following command to delete the service principal. Make sure you replace the `APPLICATION_ID` placeholder with the application ID you copied in the previous exercise:
+1. Run the following command to delete the service principal. Replace the `APPLICATION_ID` placeholder with the application ID that you copied in the previous exercise:
 
    ```azurepowershell
    Remove-AzADServicePrincipal -ApplicationId APPLICATION_ID

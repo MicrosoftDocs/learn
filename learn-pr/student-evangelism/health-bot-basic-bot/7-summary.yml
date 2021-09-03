@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-basic-bot.7-summary
+title: Summary
+metadata:
+  title: Summary
+  description: summary
+  ms.date: 07/27/2021
+  author: Meghana-ch
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-summary.md)]

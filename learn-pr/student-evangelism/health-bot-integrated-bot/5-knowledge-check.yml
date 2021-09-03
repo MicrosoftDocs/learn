@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-integrated-bot.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Answer three multiple-choice questions.
+  ms.date: 07/27/2021
+  author: Meghana-ch
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+    
+    - content: "To connect the healthcare bot and the database, three main components are required:"
+      choices:
+        - content: Azure Health Bot, SQL Server and SQL Database, and Kubernetes
+          isCorrect: false
+          explanation: Incorrect. We aren't using Kubernetes to integrate the health bot with a database.
+        - content: Logic Apps, Azure Health Bot, and SQL Server and SQL Database
+          isCorrect: true
+          explanation: Correct. We're using these three components to integrate the health bot with the database.
+        - content: SQL Server and SQL Database, Azure Functions app, and Azure Health Bot
+          isCorrect: false
+          explanation: Incorrect. We aren't using a Functions app to integrate the database with the health bot.
+    
+    - content: To insert a new row into the database, which method should we use?
+      choices:
+        - content: GET
+          isCorrect: false
+          explanation: Incorrect. We use the GET method to retrieve data, not to insert data.
+        - content: GOT
+          isCorrect: false
+          explanation: "Incorrect. There's no method called *GOT*."
+        - content: POST
+          isCorrect: true
+          explanation: Correct. The POST method is used to insert data into the database.
+        
+
+    - content: "To prevent an error when we log in to the query editor, how should we change the firewall settings?"
+      choices:
+        - content: "Enable **Allow Azure services and resources to access this server**. Enter the rule name *ALL*.Start IP: *0.0.0.0*. End IP: *255.255.255.255*."
+          isCorrect: true
+          explanation: Correct. These firewall settings will prevent an error when we log in.
+        - content: "Enable **Allow Azure services and resources to access this server**. Enter the rule name *ALL*. Start IP: *1.0.0.0*. End IP: *125.99.255.60*."
+          isCorrect: false
+          explanation: Incorrect. The values for Start IP and End IP are wrong.
+        - content: "Disable **Allow Azure services and resources to access this server**. Enter the rule name *ALL*. Start IP: *0.0.0.0*. End IP: *255.255.255.255*."
+          isCorrect: false
+          explanation: "Incorrect. Disabling **Allow Azure services and resources to access this server** won't allow us to connect to the server to log in."

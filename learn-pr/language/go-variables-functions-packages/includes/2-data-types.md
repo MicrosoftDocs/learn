@@ -13,7 +13,7 @@ Let's start by exploring the numeric data types.
 
 ## Integer numbers
 
-In general terms, the keyword to define an integer type is `int`. But Go also provides the `int8`, `int16`, `int32`, and `int64` types, which are ints with a size of 8, 16, 32, or 64 bits, respectively. When you're using a 32-bit operating system, if you just use `int`, the size is usually 32 bits. On 64-bit systems, the `int` size is usually 64 bits. But this behavior can differ from one computer to another. You can use `unit`. But only use this type if you need to represent a value as an unsigned number for a certain reason. Go also provides `uint8`, `uint16`, `uint32`, and `uint64` types.
+In general terms, the keyword to define an integer type is `int`. But Go also provides the `int8`, `int16`, `int32`, and `int64` types, which are ints with a size of 8, 16, 32, or 64 bits, respectively. When you're using a 32-bit operating system, if you just use `int`, the size is usually 32 bits. On 64-bit systems, the `int` size is usually 64 bits. But this behavior can differ from one computer to another. You can use `uint`. But only use this type if you need to represent a value as an unsigned number for a certain reason. Go also provides `uint8`, `uint16`, `uint32`, and `uint64` types.
 
 Here's an example of how to use the various integer types in Go:
 
@@ -22,7 +22,7 @@ var integer8 int8 = 127
 var integer16 int16 = 32767
 var integer32 int32 = 2147483647
 var integer64 int64 = 9223372036854775807
-println(integer8, integer16, integer32, integer64)
+fmt.println(integer8, integer16, integer32, integer64)
 ```
 
 Most of the time, you'll use `int`, but you need to know about the other integer types because, in Go, `int` isn't the same as `int32`, even if the integer's natural size is 32 bits. In other words, you'll need to cast explicitly when a cast is required. And if you try to perform a math operation between different types, you'll get an error. For example, suppose you have this code:
@@ -30,7 +30,7 @@ Most of the time, you'll use `int`, but you need to know about the other integer
 ```go
 var integer16 int16 = 127
 var integer32 int32 = 32767
-println(integer16 + integer32)
+fmt.println(integer16 + integer32)
 ```
 
 When you run the program, you'll get this error:
@@ -45,14 +45,14 @@ As you progress in your Go learning, you might hear about [runes](https://www.ge
 
 ```go
 rune := 'G'
-println(rune)
+fmt.println(rune)
 ```
 
 You might expect to see the program print `G` in the command prompt when you run the preceding code snippet. But you see the number `71`, which represents the Unicode character for `G`. We'll talk more about runes in the upcoming modules.
 
 You can learn about the ranges for each type by looking at the [Go source code](https://golang.org/src/builtin/builtin.go?azure-portal=true). Knowing the ranges of each type will help you choose the proper data type, and you'll also avoid wasting bits in memory.
 
-### Challenge 1:
+### Challenge 1
 
 Set another variable of type `int` and use the value from the `integer32` or `integer64` variable to confirm the natural size of the variable on your system. If you're on a 32-bit system and use a value higher than 2,147,483,647, you'll get an overflow error that looks like this one: `constant 9223372036854775807 overflows int`.
 
@@ -62,11 +62,11 @@ Set another variable of type `int` and use the value from the `integer32` or `in
 >
 >func main() {
 >    var integer32 int = 2147483648
->    println(integer32)
+>    fmt.println(integer32)
 >}
 >```
 
-### Challenge 2:
+### Challenge 2
 
 Declare an unsigned variable like `uint`, and initialize it with a negative value like `-10`. When you try to run the program, you should get an error like this one: `constant -10 overflows uint`.
 
@@ -76,7 +76,7 @@ Declare an unsigned variable like `uint`, and initialize it with a negative valu
 >
 >func main() {
 >    var integer uint = -10
->    println(integer)
+>    fmt.println(integer)
 >}
 >```
 
@@ -87,7 +87,7 @@ Go provides data types for two sizes of floating-point numbers: `float32` and `f
 ```go
 var float32 float32 = 2147483647
 var float64 float64 = 9223372036854775807
-println(float32, float64)
+fmt.println(float32, float64)
 ```
 
 You can find the limits of these two types by using the `math.MaxFloat32` and `math.MaxFloat64` constants, which are available in the `math` package. Use the following code to print the maximum floating-point values in the command prompt:
@@ -98,7 +98,7 @@ package main
 import "math"
 
 func main() {
-    println(math.MaxFloat32, math.MaxFloat64)
+    fmt.println(math.MaxFloat32, math.MaxFloat64)
 }
 ```
 
@@ -133,7 +133,7 @@ For example, the following code shows two ways to declare and initialize a strin
 ```go
 var firstName string = "John"
 lastName := "Doe"
-println(firstName, lastName)
+fmt.println(firstName, lastName)
 ```
 
 You'll sometimes need to escape characters. To do so in Go, you use a backslash (`\`) before the character. For instance, here are the most common examples of using escape characters:
@@ -149,7 +149,7 @@ Use the following code snippet to test escape characters:
 
 ```go
 fullName := "John Doe \t(alias \"Foo\")\n"
-println(fullName)
+fmt.println(fullName)
 ```
 
 You should see the following output (including the new line):
@@ -178,7 +178,7 @@ var defaultFloat32 float32
 var defaultFloat64 float64
 var defaultBool bool
 var defaultString string
-println(defaultInt, defaultBool, defaultFloat32, defaultFloat64, defaultString)
+fmt.println(defaultInt, defaultBool, defaultFloat32, defaultFloat64, defaultString)
 ```
 
 You could use code like this code to determine the default value for a data type we didn't explore here.
@@ -190,7 +190,7 @@ In a previous section, we confirmed that implicit casting doesn't work in Go. In
 ```go
 var integer16 int16 = 127
 var integer32 int32 = 32767
-println(int32(integer16) + integer32)
+fmt.println(int32(integer16) + integer32)
 ```
 
 Another approach for casting in Go is to use the [strconv package](https://golang.org/pkg/strconv/?azure-portal=true). For example, to convert a `string` to an `int`, and vice-versa, you could use this code:
@@ -203,7 +203,7 @@ import "strconv"
 func main() {
     i, _ := strconv.Atoi("-42")
     s := strconv.Itoa(-42)
-    println(i, s)
+    fmt.println(i, s)
 }
 ```
 

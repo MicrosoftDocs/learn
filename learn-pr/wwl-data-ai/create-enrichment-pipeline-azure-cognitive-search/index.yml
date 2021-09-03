@@ -3,7 +3,7 @@ uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search
 metadata:
   title: Create a custom skill for Azure Cognitive Search
   description: "Create a custom skill for Azure Cognitive Search"
-  ms.date: 04/01/2021
+  ms.date: 07/30/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Familiarity with with Microsoft Azure
   - Application development experience with C# or Python
-  - Experience of building a basic search solution with Azure Cognitive Search. If you have not completed the [Create an Azure Cognitive Search solution](https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/) module, you should do so before starting this module.
+  - Experience of building a basic search solution with Azure Cognitive Search. If you have not completed the [Create an Azure Cognitive Search solution](/learn/modules/create-azure-cognitive-search-solution/) module, you should do so before starting this module.
 iconUrl: /learn/achievements/create-an-enrichment-pipeline.svg
 levels:
 - intermediate

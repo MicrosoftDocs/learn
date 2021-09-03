@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.protect-virtual-desktop-deployment-azure-firewall
+metadata:
+  moduleType: standard
+  title: Protect your Azure Virtual Desktop deployment by using Azure Firewall
+  description: Learn how to deploy and configure Azure Firewall to protect outbound network traffic for Azure Virtual Desktop.
+  ms.date: 07/05/2021
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+title: Protect your Azure Virtual Desktop deployment by using Azure Firewall
+summary: Deploy Azure Firewall, route all network traffic through Azure Firewall, and configure rules. The outbound network traffic from the Azure Virtual Desktop host pool to the service routes through Azure Firewall.
+abstract: | 
+  By the end of this module, you'll be able to:
+    - Deploy and configure Azure Firewall to protect outbound network traffic for Azure Virtual Desktop
+prerequisites: |
+  - Knowledge of networking concepts, like virtual networks, virtual network peering, subnets, and IP addressing
+  - Familiarity with networking security concepts, like network security groups, firewall, service endpoints
+  - For macOS, Linux, iOS, or Android users, remote desktop client installed, like Microsoft Remote Desktop
+iconUrl: /learn/achievements/protect-virtual-desktop-deployment-azure-firewall.svg
+levels: 
+  - beginner
+roles:
+  - administrator
+products:
+- azure
+- azure-firewall
+- azure-virtual-desktop
+units:
+- learn.protect-virtual-desktop-deployment-azure-firewall.introduction
+- learn.protect-virtual-desktop-deployment-azure-firewall.use-azure-firewall
+- learn.protect-virtual-desktop-deployment-azure-firewall.exercise-set-up-host-pool
+- learn.protect-virtual-desktop-deployment-azure-firewall.plan-azure-firewall-deployment
+- learn.protect-virtual-desktop-deployment-azure-firewall.exercise-deploy-azure-firewall
+- learn.protect-virtual-desktop-deployment-azure-firewall.allow-outbound-network-access
+- learn.protect-virtual-desktop-deployment-azure-firewall.exercise-route-network-traffic
+- learn.protect-virtual-desktop-deployment-azure-firewall.knowledge-check
+- learn.protect-virtual-desktop-deployment-azure-firewall.summary
+badge:
+  uid: learn.protect-virtual-desktop-deployment-azure-firewall.badge

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-conditional.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary of F# conditional logic.
+  ms.date: 07/23/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

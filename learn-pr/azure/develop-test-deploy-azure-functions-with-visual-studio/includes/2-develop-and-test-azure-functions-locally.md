@@ -6,7 +6,7 @@ In this unit, you'll learn about the tools available with Visual Studio for buil
 
 ## Modify Visual Studio Install
 
-Upon loading Visual Studio 2019, go to **Visual Studio Installer**, and select **Modify.** The **Modifying - Visual Studio** page appears.
+Upon loading Visual Studio 2019, go to **Visual Studio Installer**, and select **Modify.**
 
 :::image type="content" source="../media/2-visual-studio-installer-modify.png" alt-text="Screenshot of the Visual Studio Installer page with Modify button." loc-scope="vs":::
 
@@ -24,18 +24,24 @@ An Azure Function App hosts one or more Azure Functions. It provides the environ
 
 An Azure Function is triggered by an event rather than being called directly from an app. You specify the type of event that will trigger the functions in your Azure Function App. The events available include:
 
-- **Blob trigger**. This type of function runs when a file is uploaded or modified in Azure Blob storage.
+- **Blob trigger**. This type of function runs when a file is uploaded or modified in Azure Blob Storage.
 - **Event Hub trigger**. An Event Hub trigger runs the function when an Event Hub receives a message.
-- **Azure Cosmos DB trigger**. This trigger runs when a document is added to, or modified in, an Azure Cosmos DB database. You can use this trigger to integrate Azure Cosmos DB with other services. For example, if a document representing a customer's order is added to a database, you could use a trigger to send a copy of the order to a queue for processing.
-- **Http trigger**. An HTTP trigger runs the function when an HTTP request occurs in a web app. You can also use this trigger to respond to webhooks. A webhook is a callback that occurs when an item hosted by a website is modified. For example, you can create an Azure Function that is fired by a webhook from a GitHub repository when an item in the repository changes.
-- **Queue trigger**. This trigger fires the function when a new item is added to an Azure Storage Queue.
-- **Service Bus Queue trigger**. Use this trigger to run the function when a new item is added to an Azure Service Bus Queue.
+- **Azure Cosmos DB trigger**. This trigger runs when a document is added to, or modified in an Azure Cosmos DB database. You can use this trigger to integrate Azure Cosmos DB with other services. For example, if a document representing a customer's order is added to a database, you could use a trigger to send a copy of the order to a queue for processing.
+- **Http trigger**. An HTTP trigger runs the function when an HTTP request occurs in a web app. You can also use this trigger to respond to webhooks. A webhook is a callback that occurs when an item hosted by a website is modified. For example, you can create an Azure Function that is started by a webhook from a GitHub repository when an item in the repository changes.
+- **Queue trigger**. This trigger starts the function when a new item is added to an Azure Storage Queue.
+- **Service Bus Queue trigger**. This trigger runs the function when a new item is added to an Azure Service Bus Queue.
 - **Service Bus Topic trigger**. This trigger runs the function in response to a new message arriving on a Service Bus Topic.
-- **Timer trigger**. Use this event to run the Azure Function at regular intervals, following a schedule that you define.
+- **Timer trigger**. This event runs the Azure Function at regular intervals, following a schedule that you define.
 
 :::image type="content" source="../media/2-function-triggers.png" alt-text="Screenshot showing the Azure Function triggers available, with HTTP Trigger highlighted." loc-scope="vs":::
 
-Azure currently provides three versions of the runtime environment required to run Azure Functions. Version 1 (v1) uses the .NET Framework 4.7; version 2 (v2x) runs using .NET Core 2; version 3  (v3x) contains JavaScript and .NET changes. Using v2 triggers enables you to develop and host the trigger in different environments. Version 1 triggers can only be created using Windows. Use v2 triggers wherever possible.
+Azure currently provides three versions of the runtime environment required to run Azure Functions:
+
+- Version 1 (v1) uses the .NET Framework 4.7
+- Version 2 (v2x) runs using .NET Core 2
+- Version 3 (v3x) contains JavaScript and .NET changes.
+
+Using v2 triggers enables you to develop and host the trigger in different environments. Version 1 triggers can only be created using Windows. Use v2 triggers wherever possible.
 
 An Azure Function App stores management information, code, and logs in Azure Storage. Create a Storage Account to hold this data. The storage account must support Azure Blob, Queue, Files, and Table storage; use a general Azure Storage account for this purpose. You specify which storage account to use for the function using the dialog previously shown.
 
@@ -45,7 +51,7 @@ An Azure Function can perform privileged or sensitive operations. An Azure Funct
 - **Function**. The HTTP request must provide a key that enables the Azure Function runtime to authorize the request. You create this key separately, and you can maintain it using the Azure portal.
 - **Admin**. This is similar to **Function** inasmuch as the user must specify a key with the HTTP request that triggers the function. The difference is that the key is an *admin* key. This key can be used to access any function in the function app. As with a function key, you create this key separately.
 
-If you're creating a function triggered by events other than HTTP requests, you're required to provide a connection string and other details necessary for the function app to access the resource triggering the event. For example, if you're writing a function triggered by a Blob storage event, you must specify the connection string for the corresponding Blob storage account.
+If you're creating a function triggered by events other than HTTP requests, you're required to provide a connection string and other details necessary for the function app to access the resource triggering the event. For example, if you're writing a function triggered by a Blob Storage event, you must specify the connection string for the corresponding Blob Storage account.
 
 ## Structure of an Azure Function
 
@@ -53,7 +59,7 @@ An Azure Function is implemented as a static class. The class provides a static,
 
 The parameters passed to the `Run` method provide the context for the trigger. In the case of an HTTP trigger, the function receives an *HttpRequest* object. This object contains the header and body of the request. You can access the data in the request using the same techniques available in any HTTP app. The attributes applied to this function specify the authorization requirements (*Anonymous* in this case), and the HTTP operations to which the Azure function responds (*GET* and *POST*).
 
-The following example code generated by Visual Studio examines the query string provided as part of the URL for the request and looks for a parameter called *name*. The code also uses a *StreamReader* to deserialize the body of the request and attempts to read the value of a property also called *name* from the request. If *name* is found either in the query string or the body of the request, it's returned in the response; otherwise, the function generates an error response with the message *Please pass a name on the query string or in the request body*.
+The following code example generated by Visual Studio examines the query string provided as part of the URL for the request, and looks for a parameter called *name*. The code also uses a *StreamReader* to deserialize the body of the request, and attempts to read the value of a property also called *name* from the request. If *name* is found either in the query string or the body of the request, it's returned in the response; otherwise, the function generates an error response with the message *Please pass a name on the query string or in the request body*.
 
 ```csharp
 public static class Function1
@@ -95,7 +101,7 @@ public static class Function2
 
 In all cases, an Azure Function is passed an *ILogger* parameter. The function can use this parameter to write log messages, which the function app will write to storage for later analysis.
 
-An Azure Function also contains metadata that specify the type of the trigger and any other specific information and security requirements. You can modify this metadata using the *HttpTrigger*, *BlobTrigger*, or other trigger attributes, as shown in the examples. The *FunctionName* attribute that precedes the function is an identifier for the function used by the function app. This name doesn't have to be the same as the name of the function, but it's good practice to keep them synchronized to avoid confusion.
+An Azure Function also contains metadata that specify the type of the trigger, and any other specific information and security requirements. You can modify this metadata using the *HttpTrigger*, *BlobTrigger*, or other trigger attributes, as shown in the examples. The *FunctionName* attribute that precedes the function is an identifier for the function used by the Function App. This name doesn't have to be the same as the name of the function, but it's good practice to keep them synchronized to avoid confusion.
 
 ## Test an Azure Function App locally
 
@@ -103,7 +109,7 @@ You can use the Visual Debugger to build and test the Azure Function App locally
 
 ![Screenshot showing the Azure Function Runtime -  example 1.](../media/2-function-runtime.png)
 
-If you open a web browser and visit this URL, you'll trigger the function. The following image shows the response generated by an HTTP GET request that doesn't include a body. You can see the message generated by the code that returns the *BadRequestObjectResult* object from the function:
+If you open a web browser and visit this URL, you'll trigger the function. The following image shows the response generated by an HTTP GET request that doesn't include a body. You can see the message generated by the code that returns the *BadRequestObjectResult* object from the function.
 
 :::image type="content" source="../media/2-bad-request.png" alt-text="Screenshot showing the Azure Function Runtime." loc-scope="other"::: <!-- no-loc -->
 

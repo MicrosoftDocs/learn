@@ -6,7 +6,7 @@ You've already implemented the necessary objects in your Azure subscription. Now
 
 In this unit, you'll build two console applications. The first application places messages into a Service Bus queue and the second retrieves them. The applications are part of a single .NET Core solution.
 
-1. Start by cloning the solution. Run the following commands in Cloud Shell.
+1. Start by cloning the solution. In Azure Cloud Shell, run the following command.
 
     ```bash
     cd ~
@@ -32,7 +32,7 @@ Both of these values can be obtained from the Azure portal in the form of a comp
 > [!NOTE]
 > For simplicity, you will hard-code the connection string in the **Program.cs** file of both console applications. In a production application, you might use a configuration file or Azure Key Vault to store the connection string.
 
-1. Run the following command in Cloud Shell to display the primary connection string for your Service Bus namespace. Replace `<namespace-name>` with the name of your Service Bus namespace.
+1. Run the following command in Cloud Shell to display the primary connection string for your Service Bus namespace. Replace `<namespace-name>` with the name of your Service Bus Namespace.
 
     ```azurecli
     az servicebus namespace authorization-rule keys list \
@@ -76,7 +76,8 @@ To complete the component that sends messages about sales, follow these steps:
     ```C#
     queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
     ```
-
+    Note that the editor automatically prepended **new** to the line of code you pasted.
+    
 1. Within the `try...catch` block, locate the following line of code.
 
     ```C#
@@ -160,7 +161,7 @@ To complete the component that sends messages about sales, follow these steps:
     }
     ```
 
-1. Save the file either through the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. Save the *Program.cs* file either through the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
 ## Send a message to the queue
 
@@ -173,9 +174,9 @@ To complete the component that sends messages about sales, follow these steps:
     > [!NOTE]
     > The apps you run during this exercise may take a moment to start up, as `dotnet` has to restore packages from remote sources and build the apps the first time they are run.
 
-    As the program executes, you'll see messages printed indicating that it's sending a message. Each time you run the app, one additional message will be added to the queue.
+    As the program executes, you'll see messages printed indicating that it's sending a message. Each time you run the app, a new message will be added to the queue.
 
-1. After it's finished, run the following command to see how many messages are in the queue.
+1. After it's finished, run the following command to see how many messages are in the queue. Replace \<namespace-name\> with the name of your Service Bus Namespace.
 
     ```azurecli
     az servicebus queue show \
@@ -184,7 +185,8 @@ To complete the component that sends messages about sales, follow these steps:
         --query messageCount \
         --namespace-name <namespace-name>
     ```
-
+    Run the dotnet command again, and then run the servicebus queue show again. You'll see the messageCount increase each time you run th dotnet command.
+    
 ## Write code that receives a message from the queue
 
 1. In the editor, open **privatemessagereceiver/Program.cs** and locate the following line of code:
@@ -335,7 +337,7 @@ To complete the component that sends messages about sales, follow these steps:
     dotnet run -p privatemessagereceiver
     ```
 
-1. When you see that the message has been received and displayed in the console, press <kbd>Enter</kbd> to stop the app. Then, run the same command as before to confirm that all of the messages have been removed from the queue.
+1. Check the notifications in Cloud Shell and your Messages chart at the bottom of your Service Bus Queue in the Azure console. When you see that the messages have received in the Cloud Shell, press <kbd>Enter</kbd> to stop the app. Then, run the following code to confirm that all of the messages have been removed from the queue. Remember to replace \<namespace-name\> with your Service Bus Namespace.
 
     ```azurecli
     az servicebus queue show \

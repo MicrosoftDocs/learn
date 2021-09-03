@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-conditional.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 07/23/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 4
+content: Choose the best response for each question. Then, select **Check your answers**.
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What construct would you use to iterate over an enumerable collection?
+      choices:
+        - content: You can use a `for...in` loop.
+          isCorrect: true
+          explanation: Correct. This loop construct is best suited to iterate over a collection.
+        - content: You can use a `for...to` loop.
+          isCorrect: false
+          explanation: Incorrect. It's possible to use a `for...to` construct, but `for...in` is a better choice.
+        - content: You can use a `while...do` loop.
+          isCorrect: false
+          explanation: Incorrect. A `while...do` construct is meant to repeat a set of statements until a condition is met. Using `for...in` is a better choice.
+    - content: Explain what's wrong with the code `let value = if condition then true else 1`.
+      choices: 
+        - content: Nothing is wrong and the code will compile.
+          explanation: Incorrect. You can't mix data types. You need both `if` and `else` to resolve either to Boolean or to int.
+          isCorrect: false
+        - content: You can't assign the result to a variable.
+          explanation: Incorrect. You can assign the result to a variable, but data type must be the same for both `if` and `else`. 
+          isCorrect: false
+        - content: The data type must be the same in both `if` and `else`. The code `let value = if condition then 2 else 1` would work.
+          explanation: Correct. The same data type must be returned from the expressions in `if` and `else`.
+          isCorrect: true
+    - content: Which numbers would the loop `for i = 0 to 5 do printfn "%i " i` print?
+      choices:
+        - content: It will print 0, 1, 2, 3, 4.
+          explanation: Incorrect. It won't print 0, 1, 2, 3, 4.
+          isCorrect: false
+        - content: It will print 0, 1, 2, 3, 4, 5.
+          explanation: Correct. It will print all numbers from the start boundary, including the ending boundary.
+          isCorrect: true
+        - content: It will print 1, 2, 3, 4, 5.
+          explanation: Incorrect. It will print all numbers from the start boundary, including the ending boundary, which is 0, 1, 2, 3, 4, 5. 
+          isCorrect: false
+

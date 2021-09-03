@@ -1,8 +1,8 @@
-Building an immersive Digital Twin Mixed Reality experience for the HoloLens 2 takes careful thought and planning.  Although the temptation may be to move directly into writing code and configuring tools, the overall user experience will be improved if you consider design elements such as contextual information requirements, Asset placement and distances, and User Interface / User Experience design elements. 
+Building an immersive Digital Twin Mixed Reality experience for the mixed reality takes careful thought and planning.  Although the temptation may be to move directly into writing code and configuring tools, the overall user experience will be improved if you consider design elements such as contextual information requirements, asset placement and distances, and user interface / user experience design elements. 
 
 Scene data can be sourced from different locations and will vary depending on many considerations ranging from data availability, currency, scalability, and so on.  For some experiences, static terrain is a logical choice, particularly when handling sensitive data or disconnected experiences.  For other experiences, you may consider data services such as Bing Maps to provide evergreen data that scales across regions and provides consistency.  
 
-Experiencing Digital Twins inside the Unity editor can be useful, but a more immersive experience can be realized when you deploy your app to the HoloLens 2 and interact with it in Mixed Reality.
+Experiencing Digital Twins inside the Unity editor can be useful, but a more immersive experience can be realized when you deploy your app to the HoloLens 2 or Mixed Reality.
 
 ## References
 

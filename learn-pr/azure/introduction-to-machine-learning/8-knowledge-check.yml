@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.introduction-to-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Multiple-choice questions
+  ms.date: 05/25/2021
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'What makes machine learning algorithms different from traditional algorithms?'
+    choices:
+    - content: "Machine learning algorithms are always more complicated to build than traditional algorithms"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Machine learning algorithms must be trained every time they are used"
+      isCorrect: false
+      explanation: "Incorrect. Machine learning algorithms only have to be trained once. Once trained, they can be used as many times as is needed"
+    - content: "Machine learning algorithms are shaped by data directly as part of development. Traditional algorithms are based almost entirely on theory or on opinions of the person writing the code"
+      isCorrect: true
+      explanation: "Correct."
+  - content: 'When do we want to perform training?'
+    choices:
+    - content: "Whenever we want to use a model"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Only when we want to improve the model"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Every time we load a model from file"
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: 'What is the relationship between a model, an objective, and training data?'
+    choices:
+    - content: "The training data is used to make changes to the model. These changes help the model get better at achieving the objective"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "The training data is used to make changes to the objective. These changes help the objective be more like the model"
+      isCorrect: false
+      explanation: "Incorrect. The training data and objective normally are not changed during training."
+    - content: "The model is used to make changes to the training data. These changes help the training data get better at achieving the objective"
+      isCorrect: false
+      explanation: "Incorrect. The training data and objective normally are not changed during training."

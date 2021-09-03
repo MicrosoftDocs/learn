@@ -10,7 +10,7 @@ After completing this module, you'll be able to:
 
 - Understand what PowerShell is and what you can use it for.
 - Use commands to automate tasks.
-- Apply the _core_ cmdlets to discover commands and learn how they work.
+
 
 ## Prerequisites
 

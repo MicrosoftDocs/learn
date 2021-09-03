@@ -16,8 +16,6 @@ By the end of this module, you’ll be able to:
 
 - Describe the core concepts of the web framework Express.
 - Configure middleware to control how a request is handled.
-- Respond to HTTP requests with different types of content like text and JSON.
-- Send data to an Express endpoint.
 
 ## Prerequisites
 

@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-hybrid-networking.connect-remote-resources-by-using-azure-virtual-wans
+title: Connect remote resources by using Azure Virtual WANs
+metadata:
+  title: Connect remote resources by using Azure Virtual WANs
+  description: "Connect remote resources by using Azure Virtual WANs"
+  ms.date: 07/15/2021
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-connect-remote-resources-by-using-azure-virtual-wans.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is an Azure Virtual WAN?"
+    choices:
+    - content: "Azure Virtual WAN is a collection of connectivity resources like VPNs, which enables organizations to use the Microsoft backbone."
+      isCorrect: true
+      explanation: "Correct, Azure Virtual WAN is a centrally managed collection of connectivity resources like VPNs, which enables organizations to use the Microsoft backbone in a self-contained, security isolated manner."
+    - content: "Azure WAN describes two or more VNets connected through peering."
+      isCorrect: false
+      explanation: "Incorrect, Azure WAN connects VNets, on-premises networks and individual computers to the Microsoft backbone."
+    - content: "Azure WAN is a collection of on-premises networks connected to each other through VPNs."
+      isCorrect: false
+      explanation: "Incorrect, Azure WAN connects VNets, on-premises networks and individual computers to the Microsoft backbone."
+  - content: "What is the purpose of associating a connection to a route table?"
+    choices:
+    - content: "Associating a connection to a route table allows the traffic to be sent to the destinations indicated as routes in the route table."
+      isCorrect: true
+      explanation: "Correct, Associating a connection to a route table allows the traffic to be sent to the destination indicated as routes in the route table. Each connection is associated to one route table."
+    - content: "Associating a connection to a route table allows the connection to dynamically propagate routes to other route tables."
+      isCorrect: false
+      explanation: "Incorrect, Connections dynamically propagate routes to a specified route table."
+    - content: "Associating a connection to a route table allows users to be authenticated."
+      isCorrect: false
+      explanation: "Incorrect, Users are not authenticated using route tables."

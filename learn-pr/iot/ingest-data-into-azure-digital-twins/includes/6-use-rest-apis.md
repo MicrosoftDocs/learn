@@ -147,7 +147,7 @@ Run the following command to update the REST API property in the GrindingStep di
 >
 
     ```azurecli
-    curl --location --request PATCH 'https://adt_hostname/digitaltwins/GrindingStep?api-version=2020-10-31' \
+    curl --location --request PATCH 'https://adt_hostname/GrindingStep?api-version=2020-10-31' \
     --header 'Authorization: Bearer aad_token' \
     --header 'Content-Type: application/json' \
     --data-raw '[

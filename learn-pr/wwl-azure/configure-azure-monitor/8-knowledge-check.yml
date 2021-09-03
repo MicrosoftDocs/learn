@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-monitor.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/26/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Someone has deleted a network security group through Azure Resource Manager. Which of the following categories would include this information?"
+    choices:
+    - content: "Administrative"
+      isCorrect: true
+      explanation: "That's correct. The administrative category create, update, delete, and action operations."
+    - content: "Service Health"
+      isCorrect: false
+      explanation: "That's incorrect. The service health category contains service health incidents."
+    - content: "Policy"
+      isCorrect: false
+      explanation: "That's incorrect. The policy category contains records for Azure policy actions."
+  - content: "What data does Azure Monitor collect?"
+    choices:
+    - content: "Data from a many different sources, such as the application event log."
+      isCorrect: true
+      explanation: "That's correct. Azure Monitor collects data from many sources. Sources include the operating system, resources, and event logs."
+    - content: "Azure billing details"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Monitor does not collect information related to billing. Azure Cost Management should be used to track this information."
+    - content: "Backups of database transaction logs"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Monitor does not backup database transaction logs. Use Azure Backup for system backup information."
+  - content: "How long are activity logs kept?"
+    choices:
+    - content: "30 days"
+      isCorrect: false
+      explanation: "That's incorrect. Activity logs are kept for a longer period of time."
+    - content: "90 days"
+      isCorrect: true
+      explanation: "That's correct. Activity logs are kept for 90 days."
+    - content: "120 days"
+      isCorrect: false
+      explanation: "That's incorrect. Activity logs are not kept for that long."

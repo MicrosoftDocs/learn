@@ -39,7 +39,7 @@ az storage container create \
 
 ### Use Azure PowerShell
 
-You can use the `New-AzStorageContainer` PowerShell cmdlet to create a new storage container. The details are available on the [New-AzStorageContainer](https://docs.microsoft.com/powershell/module/az.storage/new-azstoragecontainer) page on the Microsoft website. You must first obtain a reference to the storage account using the `Get-AzStorageAccount` command. The code below shows an example:
+You can use the `New-AzStorageContainer` PowerShell cmdlet to create a new storage container. The details are available on the [New-AzStorageContainer](/powershell/module/az.storage/new-azstoragecontainer) page on the Microsoft website. You must first obtain a reference to the storage account using the `Get-AzStorageAccount` command. The code below shows an example:
 
 ```PowerShell
 Get-AzStorageAccount `
@@ -95,10 +95,10 @@ az storage blob upload-batch \
 
 ### Use Azure PowerShell
 
-Azure PowerShell provides the [`Set-AzStorageBlobContent`](https://docs.microsoft.com/powershell/module/azure.storage/set-azurestorageblobcontent) cmdlet to upload blob data to Azure storage, as follows:
+Azure PowerShell provides the [`Set-AzStorageBlobContent`](/powershell/module/azure.storage/set-azurestorageblobcontent) cmdlet to upload blob data to Azure storage, as follows:
 
 ```PowerShell
-Set-AzStorageAccount `
+Get-AzStorageAccount `
   -ResourceGroupName "contoso-group" `
   -Name "contosodata" | Set-AzStorageBlobContent `
     -Container "images" `
@@ -131,7 +131,7 @@ az storage blob list \
 
 ### Use Azure PowerShell
 
-From Azure PowerShell, run the [`Get-AzStorageBlob`](https://docs.microsoft.com/powershell/module/az.storage/Get-AzStorageBlob) cmdlet, as illustrated in the following example:
+From Azure PowerShell, run the [`Get-AzStorageBlob`](/powershell/module/az.storage/Get-AzStorageBlob) cmdlet, as illustrated in the following example:
 
 ```PowerShell
 Get-AzStorageAccount `
@@ -164,7 +164,7 @@ az storage blob download \
 ```
 ### Use Azure PowerShell
 
-In Azure PowerShell, use the [`Get-AzStorageBlobContent`](https://docs.microsoft.com/powershell/module/az.storage/get-azstorageblobcontent) cmdlet.
+In Azure PowerShell, use the [`Get-AzStorageBlobContent`](/powershell/module/az.storage/get-azstorageblobcontent) cmdlet.
 
 ```PowerShell
 Get-AzStorageAccount `
@@ -202,15 +202,15 @@ If you've enabled soft delete for the storage account, the blobs page listing th
 You can delete a single blob with the [`az storage blob delete`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-delete) command, or a set of blobs with the [`az storage blob delete-batch`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-delete-batch) command. The command below removes the *racer-green* blob from the *bikes* folder in the *images* container:
 
 ```azurecli
-az storage blob delete \
-  --account-name contosodata \
-  --container-name "images" \
+az storage blob delete ^
+  --account-name contosodata ^
+  --container-name "images" ^
   --name "bikes\racer_green"
 ```
 
 ### Use Azure PowerShell
 
-Use the [`Remove-AzStorageBlob`](https://docs.microsoft.com/powershell/module/az.storage/remove-azstorageblob) cmdlet to delete a storage blob from Azure PowerShell. By default, deletion runs without prompts. You can add the `-Confirm` flag to prompt the user to confirm that they really want to delete the blob:
+Use the [`Remove-AzStorageBlob`](/powershell/module/az.storage/remove-azstorageblob) cmdlet to delete a storage blob from Azure PowerShell. By default, deletion is silent. You can add the `-Confirm` flag to prompt the user to confirm that they really want to delete the blob:
 
 ```PowerShell
 Get-AzStorageAccount `
@@ -244,7 +244,7 @@ az storage container delete \
 
 ### Use Azure PowerShell
 
-The [`Remove-AzStorageContainer`](https://docs.microsoft.com/powershell/module/az.storage/remove-azstoragecontainer) cmdlet deletes a storage container. The `-Confirm` flag prompts the user to confirm the delete operation. The code below shows an example:
+The [`Remove-AzStorageContainer`](/powershell/module/az.storage/remove-azstoragecontainer) cmdlet deletes a storage container. The `-Confirm` flag prompts the user to confirm the delete operation. The code below shows an example:
 
 ```PowerShell
 Get-AzStorageAccount `

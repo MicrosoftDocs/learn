@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.publish-use-language-understanding-app.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/20/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your want to ensure that intent predictions from your model are not affected by typo's in the input. Which publishing setting should you configure?"
+    choices:
+    - content: "Sentiment analysis"
+      isCorrect: false
+      explanation: "That's incorrect. Use spelling correction to correct typo's and spelling errors."
+    - content: "Spelling correction"
+      isCorrect: true
+      explanation: "That's correct. Use spelling correction to correct typo's and spelling errors."
+    - content: "Speech priming"
+      isCorrect: false
+      explanation: "That's incorrect. Use spelling correction to correct typo's and spelling errors."
+  - content: "Your want to return only the most likely intent for your natural language query. Which parameter should you use?"
+    choices:
+    - content: "log"
+      isCorrect: false
+      explanation: "That's incorrect. Set show-all-intents to false to return only the most likely intent."
+    - content: "verbose"
+      isCorrect: false
+      explanation: "That's incorrect. Set show-all-intents to false to return only the most likely intent."
+    - content: "show-all-intents"
+      isCorrect: true
+      explanation: "That's correct. Set show-all-intents to false to return only the most likely intent."

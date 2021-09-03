@@ -1,23 +1,23 @@
-## Create key vaults for your applications
+## Create Key Vaults for your applications
 
-Good practice is to create a separate vault for each deployment environment of each of your applications, such as development, test, and production. You can use a single vault to store secrets for multiple apps and environments, but the impact of an attacker gaining read access to a vault increases with the number of secrets in the vault.
+A best practice is to create a separate vault for each deployment environment of each of your applications, such as development, test, and production. You can use a single vault to store secrets for multiple apps and environments, but the impact of an attacker gaining read access to a vault increases with the number of secrets in the vault.
 
 > [!TIP]
 > If you use the same names for secrets across different environments for an application, the only environment-specific configuration that has to change in your app is the vault URL.
 
-Creating a vault requires no initial configuration. Your user identity is automatically granted the full set of secret management permissions and you can start adding secrets immediately. Once you have a vault, adding and managing secrets can be done from any Azure administrative interface, including the Azure portal, the Azure CLI, and Azure PowerShell. When you set up your application to use the vault, you'll need to assign the correct permissions to it; we'll see that in the next unit.
+Creating a vault requires no initial configuration. Your user identity is automatically granted the full set of secret management permissions and you can start adding secrets immediately. After you have a vault, adding and managing secrets can be done from any Azure administrative interface, including the Azure portal, the Azure CLI, and Azure PowerShell. When you set up your application to use the vault, you'll need to assign the correct permissions to it; we'll see that in the next unit.
 
-## Create the vault and store the secret in it
+## Create the Key vault and store the secret in it
 
 Given all the trouble the company's been having with application secrets, management has asked you to create a small starter app to set the other developers on the right path. The app needs to demonstrate best practices for managing secrets as simply and securely as possible.
 
 To start, you'll create a vault and store one secret in it.
 
-### Create the vault
+### Create the Key Vault
 
-**Key vault names must be globally unique, so you'll need to pick a unique name**. Vault names must be 3-24 characters long and contain only alphanumeric characters and dashes. Make a note of the vault name you choose, as you'll need it throughout this exercise.
+**Key Vault names must be globally unique, so you'll need to pick a unique name**. Vault names must be 3-24 characters long and contain only alphanumeric characters and dashes. Make a note of the vault name you choose, as you'll need it throughout this exercise.
 
-To create your vault, in the Cloud Shell, run the following command. Make sure to enter your unique vault name to the `--name` parameter.
+To create your vault, in Azure Cloud Shell, run the following command. Make sure to enter your unique vault name to the `--name` parameter.
 
 ```azurecli
 az keyvault create \

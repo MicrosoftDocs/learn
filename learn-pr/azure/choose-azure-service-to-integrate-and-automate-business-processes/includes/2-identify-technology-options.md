@@ -87,7 +87,7 @@ The [Azure App Service](https://azure.microsoft.com/services/app-service/) is a 
 - **Continuous.** Run in a continuous loop. For example, you could use a continuous WebJob to check a shared folder for a new photo.
 - **Triggered.** Run when you manually start them or on a schedule.
 
-To determine what actions your WebJobs takes, you can write code in several different languages. For example, you can script the WebJob by writing code in a Shell Script (Windows, PowerShell, Bash). Alternatively, you can write a program in PHP, Python, Node.js, or JavaScript.  These WebJOBS do have a few limitations, such as only supporting ASP.NET / SDK 2.x; however SDK 3.x supports .NET Core.
+To determine what actions your WebJobs takes, you can write code in several different languages. For example, you can script the WebJob by writing code in a Shell Script (Windows, PowerShell, Bash). Alternatively, you can write a program in PHP, Python, Node.js, or JavaScript.  These WebJobs do have a few limitations, such as only supporting ASP.NET / SDK 2.x; however SDK 3.x supports .NET Core.
 
 You can also program a WebJob by using the .NET Framework or the .NET Core Framework and a .NET language such as C# or VB.NET. In this case, you can also use the WebJobs SDK to make the task easier. The SDK includes a range of classes, such as `JobHostConfiguration` and `HostBuilder`, which reduce the amount of code required to interact with the Azure App Service.
 
@@ -124,7 +124,7 @@ In most cases, the simple administration and more flexible coding model provided
 | Development and testing in a browser | No | Yes |
 | Pay-per-use pricing | No | Yes |
 | Integration with Logic Apps | No | Yes |
-| Package managers | NuGet if you are using the WebJobs SDK | Nuget and NPM |
+| Package managers | NuGet if you are using the WebJobs SDK | NuGet and NPM |
 | Can be part of an App Service application | Yes | Yes (hosted under App Service plan) |
 | Provides close control of `JobHost` | Yes | No |
 
