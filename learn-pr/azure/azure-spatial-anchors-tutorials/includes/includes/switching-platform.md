@@ -4,8 +4,8 @@ In the Unity menu, select **Window** > **Package Manager** to open the Package M
 
 ![Install AR Foundation package](../../media/asa-02-section-2-step-1-1.png)
 
-## Importing the tutorial assets
-Add AzurespatialAnchors SDK V2.10 to your project, to add the packages please follow this tutorial
+## Importing The Tutorial Assets
+Add AzurespatialAnchors SDK V2.10 to your project. To add the packages, please follow this tutorial.
 
 Download and **import** the following Unity custom packages in the order they are listed:
 
@@ -19,7 +19,7 @@ After you have imported the tutorial assets your Project window should look simi
 > If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' is obsolete, you can ignore these warnings.
 
 >![Tip]
->For a reminder on how to import a Unity custom package, you can refer to the Importing the tutorial assets instructions
+>For a reminder on how to import a Unity custom package, you can refer to the Importing the tutorial assets instructions.
 
 ## [Unity 2020 + OpenXR](#tab/openxr)
 
@@ -27,8 +27,8 @@ In the Unity menu, select **Window** > **Package Manager**  to open the Package 
 
 ![install package through package manager](../../media/asa-02-section-2-step-1-1.png)
 
-## Importing the tutorial assets
-Add AzurespatialAnchors SDK V2.10 to your project, to add the packages please follow this tutorial
+## Importing The Tutorial Assets
+Add AzurespatialAnchors SDK V2.10 to your project. To add the packages, please follow this tutorial.
 
 Download and **import** the following Unity custom packages in the order they are listed:
 
@@ -42,7 +42,7 @@ After you have imported the tutorial assets your Project window should look simi
 > If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' is obsolete, you can ignore these warnings.
 
 >![Tip]
->For a reminder on how to import a Unity custom package, you can refer to the Importing the tutorial assets instructions
+>For a reminder on how to import a Unity custom package, you can refer to the Importing the tutorial assets instructions.
 
 ## [Legacy WSA](#tab/wsa)
 
@@ -52,13 +52,13 @@ In the Unity menu, select Window > Package Manager to open the Package Manager w
 ![Install AR Foundation package - Legacy WSA](../../media/asa-02-section-2-step-1-1.png)
 
 
-## Importing the tutorial assets
-Add AzurespatialAnchors SDK V2.10 to your project, to add the packages please follow this tutorial
+## Importing The Tutorial Assets
+Add AzurespatialAnchors SDK V2.10 to your project. To add the packages, please follow this tutorial.
 
 Download and **import** the following Unity custom packages in the order they are listed:
 
-* MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage
-* MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.XRplugginManagement.2.5.3.unitypackage
+* MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage.
+* MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.XRplugginManagement.2.5.3.unitypackage.
 After you have imported the tutorial assets your Project window should look similar to this:
 
 ![Import AzurespatialAnchors package - Legacy WSA](../../media/asa-02-section-3-step-1-1.png)
@@ -67,7 +67,7 @@ After you have imported the tutorial assets your Project window should look simi
 > If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' is obsolete, you can ignore these warnings.
 
 >![Tip]
->For a reminder on how to import a Unity custom package, you can refer to the Importing the tutorial assets instructions
+>For a reminder on how to import a Unity custom package, you can refer to the Importing the tutorial assets instructions.
 
 
 
