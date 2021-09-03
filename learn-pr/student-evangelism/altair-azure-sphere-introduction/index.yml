@@ -37,6 +37,9 @@ products:
 - azure-sphere
 units:
 - learn.student-evangelism.altair-azure-sphere-introduction.introduction
+- learn.student-evangelism.altair-azure-sphere-introduction.altair
+- learn.student-evangelism.altair-azure-sphere-introduction.azure-sphere
+- learn.student-evangelism.altair-azure-sphere-introduction.architecture
 - learn.student-evangelism.altair-azure-sphere-introduction.knowledge-check
 - learn.student-evangelism.altair-azure-sphere-introduction.summary
 badge:
