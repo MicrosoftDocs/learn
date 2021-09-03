@@ -18,7 +18,7 @@ In Blazor, you build the UI from self-contained portions of code called *compone
 > [!NOTE]
 > Razor syntax is used for embedding .NET code into webpages. You can use it in ASP.NET MVC applications, where files have a **.cshtml** extension. Razor syntax is used in Blazor to write components, but these have the **.razor** extension instead and there is no strict separation between controllers and views.
 
-Here's an simple example of a Blazor component:
+Here's a simple example of a Blazor component:
 
 ```razor
 @page "/index"
@@ -64,7 +64,7 @@ code Pages/PizzaBrowser
 
 ## Write code in a Blazor component
 
-When you build a user interface in Blazor, you mix static HTML and CSS markup with C# code, often in the same file. To differentiate these types of code, you use **Razor syntax**. This includes directives, prefixed with the `@` symbol, that delimit C# code, routing parameters, bound data, imported classes, and other features.
+When you build a user interface in Blazor, you mix static HTML and CSS markup with C# code, often in the same file. To differentiate these types of code, you use **Razor syntax**. Razor syntax includes directives, prefixed with the `@` symbol, that delimit C# code, routing parameters, bound data, imported classes, and other features.
 
 Let's consider this example component again:
 
@@ -80,7 +80,7 @@ Let's consider this example component again:
 }
 ```
 
-You can recognize the simple HTML markup, with `<h1>` and `<p>` tags. This is the static framework of the page, into which your code will insert dynamic content. The Razor markup consists of:
+You can recognize the HTML markup, with `<h1>` and `<p>` tags. This markup is the static framework of the page, into which your code will insert dynamic content. The Razor markup consists of:
 
 - The `@page` directive, which provides a route template to Blazor. At runtime, Blazor locates a page to render by matching this template to the URL that the user requested. In this case, it might match a URL of the form **http://yourdomain.com/index**.
 - The `@code` directive, which declares that the text in the following block is C# code. You can put as many code blocks as you need in a component. You can define component class members in these code blocks and set their values from calculation, data lookup operations, or other sources. In this case, the code defines a single component member called `welcomeMessage` and sets its string value.

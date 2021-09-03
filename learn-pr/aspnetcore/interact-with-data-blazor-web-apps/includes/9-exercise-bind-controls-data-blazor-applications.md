@@ -89,7 +89,7 @@ The first step is to update the `OrderState` service so that it can provide a me
 
 1. Press <kbd>F5</kbd> or select **Run** and then **Start Debugging**.
 
-    :::image type="content" source="../media/9-cancel-pizza-order.png" alt-text="Screenshot showing the ordering sidebar.":::
+    :::image type="content" source="../media/9-cancel-pizza-order.png" alt-text="Screenshot showing the ordering sidebar with an order":::
 
 1. Press <kbd>SHIFT</kbd>+<kbd>F5</kbd> or select **Stop Debugging**.
 
@@ -119,7 +119,7 @@ The pizza configuration dialog doesn't update when the size slider is changed. T
 
 1. Press <kbd>F5</kbd> or select **Run** and then **Start Debugging**.
 
-    :::image type="content" source="../media/blazing-pizza.gif" alt-text="Screenshot showing the ordering sidebar.":::
+    :::image type="content" source="../media/blazing-pizza.gif" alt-text="Animated screenshot showing pizza size slider":::
 
 How did adding the `@bind="Pizza.Size"` code provide so much functionality? If you examine the whole of the **ConfigurePizzaDialog.razor** code, you'll see that your team had already connected the other elements to the pizza's properties.
 
