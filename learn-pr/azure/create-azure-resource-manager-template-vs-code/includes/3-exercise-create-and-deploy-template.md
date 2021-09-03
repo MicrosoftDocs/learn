@@ -11,7 +11,7 @@ This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https:/
 
 1. The Visual Studio Code ARM template extension comes configured with snippets to help you develop templates. Let's start by adding a blank template. On the first line of the file, enter **arm**.
 
-1. The VS Code automatically displays several potential choices that start with **arm!**. Select the Azure Resource Manager (ARM) template. VS Code automatically processes the schemas and languages ofr your template.
+1. The VS Code automatically displays several potential choices that start with **arm!**. Select the Azure Resource Manager (ARM) template. VS Code automatically processes the schemas and languages for your template.
 
     :::image type="content" source="../media/3-arm-snippet.png" alt-text="Visual Studio Code azuredeploy.json file showing the snippet choices for Azure Resource Manager templates." border="true":::
 
@@ -35,7 +35,7 @@ This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https:/
 
 ## Deploy the ARM template to Azure
 
-::: zone pivot="cli"
+::: zone pivot="CLI"
 
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed, and sign in with the same account you used to activate the sandbox.
 
@@ -88,7 +88,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Set the default resource group
 
-By setting the default resource group to the one created when you activated the sandbox, you can omit that parameter from the Azure CLI commands in this exercise. To set the resource group enter this code
+By setting the default resource group to the one created when you activated the sandbox, you can omit that parameter from the Azure CLI commands in this exercise. To set the resource group, enter this code
 
 ```azurecli
 az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
@@ -108,25 +108,25 @@ az deployment group create \
  --template-file $templateFile
 ```
 
-The top section of the preceding code sets the Azure CLI variables, which include the path to the template file to deploy and the name of the deployment. The bottom section  ```az  deployment group create``` deploys the template to Azure. Notice that the deployment name is **blanktemplate** with the date as a suffix.
+The top section of the preceding code sets the Azure CLI variables, which include the path to the template file to deploy and the name of the deployment. The bottom section  ```az  deployment group create``` deploys the template to Azure. Notice that the deployment name is `**blanktemplate**` with the date as a suffix.
 
 You see ```Running...``` in the terminal.
 
 ::: zone-end
 
-::: zone pivot="powershell"
+::: zone pivot="PowerShell"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [installed Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.3.0), and sign in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [installed Azure PowerShell](`/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.3.0`), and sign in to the same account that activated the sandbox.
 
-1. In the command bar, select **Terminal > New Terminal** to open a powershell window.
+1. In the command bar, select **Terminal > New Terminal** to open a PowerShell window.
 
-1. If the command bar of the terminal window says **pwsh**, you have the right shell to work from, and you can skip to the next section.
+1. If the command bar of the terminal window shows `**pwsh**`, you have the right shell to work from, and you can skip to the next section.
 
-      :::image type="content" source="../media/3-pwsh.png" alt-text="The Visual Studio Code terminal window with pwsh in the drop-down.":::
+      :::image type="content" source="../media/3-pwsh.png" alt-text="The Visual Studio Code terminal window with pwsh terminal selected.":::
 
     1. If not, select the drop-down, and choose **Select Default Profile**.
 
-    1. Select **pwsh**.
+    1. Select `**pwsh**`.
 
           :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell drop-down.":::
 
@@ -177,7 +177,7 @@ New-AzResourceGroupDeployment `
 ```
 
 
-The top section of the preceding code sets Azure PowerShell variables, which include the path to the deployment path and the name of the deployment. Then the ```New-AzResourceGroupDeployment``` command deploys the template to Azure. Notice that the deployment name is *blanktemplate* with the date as a suffix.
+The top section of the preceding code sets Azure PowerShell variables, which include the path to the deployment path and the name of the deployment. Then the ```New-AzResourceGroupDeployment``` command deploys the template to Azure. Notice that the deployment name is `*blanktemplate*` with the date as a suffix.
 
 ::: zone-end
 
@@ -195,7 +195,7 @@ When you've deployed your ARM template to Azure, go to the [Azure portal](https:
 
     :::image type="content" source="../media/3-blanktemplate.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
-1. Select **blanktemplate** to see what resources were deployed. In this case, it will be empty because you didn't specify any resources in the template yet.
+1. Select `**blanktemplate**` to see what resources were deployed. In this case, it will be empty because you didn't specify any resources in the template yet.
 
     :::image type="content" source="../media/3-no-results.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
 
@@ -203,7 +203,7 @@ When you've deployed your ARM template to Azure, go to the [Azure portal](https:
 
 ## Add a resource to the ARM template
 
-In the previous task, you learned how to create a blank template and deploy it. Now, you're ready to deploy an actual resource. In this section, you add an Azure storage account resource to the ARM template by using a snippet from the Azure Resource Manager Tools for Visual Studio Code extension.
+In the previous task, you learned how to create a blank template and deploy it. Now, you're ready to deploy an actual resource. In this task, you add an Azure storage account resource to the ARM template by using a snippet from the Azure Resource Manager Tools extension for Visual Studio Code.
 
 1. In the *azuredeploy.json* file in Visual Studio Code, place your cursor inside the brackets in the resources block ```"resources":[],```.
 
@@ -233,7 +233,7 @@ In the previous task, you learned how to create a blank template and deploy it. 
 
 Here, you change the name of the deployment to better reflect what this deployment does.
 
-::: zone pivot="cli"
+::: zone pivot="CLI"
 
 Run the following Azure CLI commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
 
@@ -249,7 +249,7 @@ az group deployment create \
 
 ::: zone-end
 
-::: zone pivot="powershell"
+::: zone pivot="PowerShell"
 
 Run the following Azure PowerShell commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
 
@@ -272,7 +272,7 @@ New-AzResourceGroupDeployment `
 
     :::image type="content" source="../media/3-addstorage-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true":::
 
-1. Select **addstorage**.
+1. Select `**addstorage**`.
 
     :::image type="content" source="../media/3-show-resource-deployed.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true":::
 
