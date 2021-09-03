@@ -1,4 +1,4 @@
-In this exercise, you will evaluate a set of situations. The idea is to make you reflect and decide if these things is something you do often or les seldom.
+In this exercise, you will evaluate a set of situations. The idea is to make you reflect and decide if these things is something you do often or less seldom.
 
 ## Assess your belongingness
 
