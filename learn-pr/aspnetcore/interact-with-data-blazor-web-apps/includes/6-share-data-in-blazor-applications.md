@@ -126,13 +126,6 @@ public void ConfigureServices(IServiceCollection services)
 
 Now, in any component where you want to set or retrieve AppState values, inject the class and then access properties:
 
-<div style="background-color: lime">
-
-**Fritz:** Expand on this to indicate this is recreating the simple Counter example
-
-</div>
-
-
 ```razor
 @page "/"
 @inject PizzaSalesState SalesState
@@ -150,3 +143,6 @@ Now, in any component where you want to set or retrieve AppState values, inject 
 	}
 }
 ```
+
+> [!NOTE]
+> This code implements a counter that increments when the user clicks a button, much like the example in the [Blazor Tutorial - Build your first Blazor app](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro). The difference is that in this case, because we've stored the counter's value in an AppState scoped service, the count persists across page loads and can be seen by other users.

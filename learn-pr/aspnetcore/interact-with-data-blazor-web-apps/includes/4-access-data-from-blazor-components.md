@@ -35,7 +35,6 @@ namespace BlazingPizza.Data
 		public bool Vegan { get; set; }
 	}
 }
-
 ```
 
 The class defines the pizza's properties and datatypes. You must make sure these properties match the pizza schema in the data source. It makes sense to create this class in the **Data** folder of your project and use a member namespace called **Data** but you can choose other folders and namespaces if you prefer.
@@ -52,13 +51,26 @@ namespace BlazingPizza.Data
 	{
 		public Task<Pizza[]> GetPizzasAsync()
 		{
-			// Call you data access technology here
+			// Call your data access technology here
 		}
 	}
 }
 ```
 
 Notice that the service uses an asynchronous call to access data and return a collection of Pizza objects. Because the data source may be remote from the server where the Blazor code is running, it's good practice to use an asynchronous call to ensure that, if the data source responds slowly, other code can continue to run as you await the response.
+
+You must also register the service by adding a line to the `ConfigureServices` method in the **Startup.cs** file:
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+	services.AddRazorPages();
+	services.AddServerSideBlazor();
+	
+	// Register the pizzas service
+	services.AddSingleton<PizzaService>();
+}
+```
 
 ## Use a service to obtain data
 
@@ -163,13 +175,9 @@ We don't know how many pizzas will be available when we code this page, but we c
 </table>
 ```
 
-Of course, you probably want a richer display of pizzas than the plain table displayed in this example. Work with your graphic designers to develop a more engaging user interface, for example with pictures of each pizza.
+:::image type="content" source="../media/4-simple-pizza-list.png" alt-text="Screenshot showing how the list of pizzas appears on a Blazor component":::
+
+Of course, you probably want a richer display of pizzas than the plain table displayed in this example and you might want to format the price and other values. Work with your graphic designers to develop a more engaging user interface, for example with pictures of each pizza.
 
 > [!NOTE]
-> Blazor includes other looping directives, including `@for`, `@while`, and `@do while`.
-
-<div style="background-color: lime">
-
-**Fritz:** Compare to C# loops
-
-</div>
+> Blazor includes other looping directives, including `@for`, `@while`, and `@do while`. These directives return repeated blocks of markup and work in a similar way to the equivalent C# `for`, `while`, and `do...while` loops.

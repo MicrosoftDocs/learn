@@ -4,7 +4,6 @@ Suppose you're developing a page that collects information from customers about 
 
 In this unit, you'll learn how to use data binding in Blazor to tie user interface elements to data values, properties, or expressions.
 
-
 ## What is data binding?
 
 If you want an HTML element to display a value, you can write code to alter the display, but you'll need to write extra code to update the display when the value changes. In Blazor you can use data binding to connect an HTML element to a field, property, or expression. This way, when the value changes, the HTML element is automatically updated. The update usually happens quickly after the change and you don't have to write any update code.
@@ -89,15 +88,7 @@ If you're displaying dates to the user, you might want to use a localized data f
 ```
 
 > [!NOTE]
-> At the time of writing, format strings are only supported with date values. Currency formats, number formats, and others may be added in the future.
-
-
-<div style="background-color: lime">
-
-**Fritz:** Can we link back to the official documentation with Notes "for more information"?  The format feature is a bit basic right now and a link here would help 'future-proof' the content.
-
-</div>
-
+> At the time of writing, format strings are only supported with date values. Currency formats, number formats, and others may be added in the future. To check the latest information on binding formats, see [Format strings](https://docs.microsoft.com/aspnet/core/blazor/components/data-binding#format-strings-1) in the Blazor documentation.
 
 As an alternative to using the `@bind:format` directive, you can write C# code to format a bound value. Use the `get` and `set` accessors in the member definition, as in this example:
 

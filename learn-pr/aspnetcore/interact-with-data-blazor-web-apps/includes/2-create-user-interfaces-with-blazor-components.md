@@ -15,11 +15,8 @@ Blazor is a framework that developers can use to create a rich interactive user 
 
 In Blazor, you build the UI from self-contained portions of code called *components*. Each component can contain a mix of HTML and C# code. Components are written using *Razor syntax*, in which code is marked with the `@code` directive and other directives can be used to access variables, bind to values, and achieve other rendering tasks. When the app is compiled, the HTML and code are compiled into a component class. Components are written as files with a **.razor** extension.
 
-<div style="background-color: lime">
-
-**Fritz:** Let's add a note here about CSHTML vs. Razor extensions
-
-</div>
+> [!NOTE]
+> Razor syntax is used for embedding .NET code into webpages. You can use it in ASP.NET MVC applications, where files have a **.cshtml** extension. Razor syntax is used in Blazor to write components, but these have the **.razor** extension instead and there is no strict separation between controllers and views.
 
 Here's an simple example of a Blazor component:
 

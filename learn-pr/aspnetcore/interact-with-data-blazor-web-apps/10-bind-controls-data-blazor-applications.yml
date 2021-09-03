@@ -9,7 +9,7 @@ metadata:
   author: {{githubUsername}}
   ms.author: {{msUser}}
   ms.topic: interactive-tutorial
-  ms.prod: learning-blazor # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
   [!include[](includes/10-bind-controls-data-blazor-applications.md)]
