@@ -36,7 +36,7 @@ In this section, you'll create an Azure prediction resource for the Language Und
 * For **Subscription**, select **Free Trail** if you've a trial subscription, otherwise, select one of your other subscriptions
 * For the **Resource group**, click the **Create new** link, enter a suitable name, for example, *MRKT-Tutorials*, and then click on **OK**
 
-![Configure the prediction option](../media/tutorial4-section2-step1-3.png)
+![Configure the prediction option](../media/tutorial-4-section-2-step-1-3.png)
 
 > [!NOTE]
 > As of the time of this writing, you do not need to create an authoring resource because an authoring trial key will automatically be generated within LUIS when you create the Language Understanding Intelligent Service (LUIS) in the next section.
