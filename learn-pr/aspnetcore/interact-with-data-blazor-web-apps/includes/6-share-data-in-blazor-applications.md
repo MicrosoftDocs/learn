@@ -1,6 +1,6 @@
-Blazor includes several ways to share information between components. You can use component parameters or cascading parameters to send values from a parent component to a child component. Alternatively, you can use the AppState pattern to store values and access them from any component in the application.
+Blazor includes several ways to share information between components. You can use component parameters or cascading parameters to send values from a parent component to a child component. The AppState pattern is another approach you can use to store values and access them from any component in the application.
 
-Suppose you're working on the new pizza delivery website. You want to display multiple pizzas on the home page in the same way. You'd like to do this by rendering a child component for each pizza. Now, you want to pass an ID to that child component that determines the pizza it will display. You also want to store and display a value on multiple components that shows the total number of pizzas you've sold today.
+Suppose you're working on the new pizza delivery website. Multiple pizzas should be displayed on the home page in the same way. You'd like to display the pizzas by rendering a child component for each pizza. Now, you want to pass an ID to that child component that determines the pizza it will display. You also want to store and display a value on multiple components that shows the total number of pizzas you've sold today.
 
 In this unit, you'll learn three different techniques you can use to share values between two or more Blazor components.
 
@@ -28,7 +28,7 @@ Start by defining the component parameter in the child component. You define it 
 
 Notice that, because the component parameters are members of the child component, you can render them in your HTML by using Blazor's reserved `@` symbol, followed by their name. Also, the above code specifies a default value for the `PizzaDescription` parameter. This value will be rendered if the parent component doesn't pass a value. Otherwise, it will be overridden by the value passed from the parent.
 
-You can also use custom classes in your project as component parameters. Consider this simple class that describes a topping:
+You can also use custom classes in your project as component parameters. Consider this class that describes a topping:
 
 ```csharp
 public class PizzaTopping
@@ -38,7 +38,7 @@ public class PizzaTopping
 }
 ```
 
-You can use that as a component parameter in the same way as a simple value, accessing inidividual properties of the class using dot syntax:
+You can use that as a component parameter in the same way as a parameter value, accessing individual properties of the class using dot syntax:
 
 ```razor
 <h2>New Topping: @Topping.Name</h2>
@@ -96,11 +96,11 @@ So this in example, the `<h2>` tag will have the content `Deal: Throwback Thursd
 > [!NOTE]
 > As for component parameters, you can pass objects as cascading parameters if you have more complex requirements.
 
-In the above example, the cascading value is identified by the `Name` attribute in the parent, matched to the `Name` value in the `[CascadingParameter]` attribute. You can optionally omit these names, in which case the attributes will be matched by type. This works well when you only have one parameter of that type, but if, for example, you want to cascade two different string values, you must use names to avoid any ambiguity.
+In the above example, the cascading value is identified by the `Name` attribute in the parent, matched to the `Name` value in the `[CascadingParameter]` attribute. You can optionally omit these names, in which case the attributes will be matched by type. This works well when you only have one parameter of that type. If you want to cascade two different string values, you must use parameter names to avoid any ambiguity.
 
 ## Share information by using AppState
 
-Another approach to sharing information between different components is to use the AppState pattern. You create a class that defines the properties you want to store and the register it as a scoped service. In any component where you want to set or use the AppState values, you inject the service and then you can access its properties. Unlike component parameters and cascading parameters, values in AppState are available to all components in the application, even those that are not children of the component that stored the value.
+Another approach to sharing information between different components is to use the AppState pattern. You create a class that defines the properties you want to store and the register it as a scoped service. In any component where you want to set or use the AppState values, you inject the service and then you can access its properties. Unlike component parameters and cascading parameters, values in AppState are available to all components in the application, even components that are not children of the component that stored the value.
 
 As an example, let's create a class that stores a value about sales:
 

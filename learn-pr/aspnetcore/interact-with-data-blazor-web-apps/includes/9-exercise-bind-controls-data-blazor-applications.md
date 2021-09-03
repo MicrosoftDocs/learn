@@ -1,12 +1,12 @@
 The Blazing Pizza app needs to update the interface when customers amend pizzas and add them to their orders. Blazor allows you to bind HTML controls to C# properties to update when their values change.
 
-You need to show to customers what pizzas they're ordering and how the size they choose effects the price they'll pay.
+Customers should see what pizzas they're ordering and how the size they choose effects the price they'll pay.
 
-In this exercise you'll get the Blazing Pizza app in a position where orders can be updated and edited. You'll see how to bind controls to the properties of a pizza and recalculate prices on these changes.
+In this exercise, you'll get the Blazing Pizza app in a position where orders can be updated and edited. You'll see how to bind controls to the properties of a pizza and recalculate prices on these changes.
 
-## Display a customers pizzas
+## Display a customer's pizza order
 
-You're going to add a sidebar that'll display all the pizzas that a customer has added to their order. 
+You're going to add a sidebar that will display all the pizzas that a customer has added to their order. 
 
 1. In Visual Studio Code, in the explorer, expand **Pages** and then select **Index.razor**.
 1. Under the `@if` code block add this code:
@@ -44,7 +44,7 @@ You're going to add a sidebar that'll display all the pizzas that a customer has
     </div>
     ```
 
-    This HTML adds a side bar to the page, and if there are any pizzas in the OrderState.Order it displays them. If there are no orders, the customers are prompted to add some.
+    This HTML adds a side bar to the page, and if there are any pizzas in the `OrderState.Order` it displays them. If there are no orders, the customers are prompted to add some.
 
     You'll see some errors as the component doesn't know what the orders are.
 
@@ -58,7 +58,7 @@ You're going to add a sidebar that'll display all the pizzas that a customer has
 
     :::image type="content" source="../media/9-pizza-order-sidebar.png" alt-text="Screenshot showing the ordering sidebar.":::
 
-    Try ordering some pizzas and cancelling some. You'll see they get added to the basket and the order total updates.
+    Try ordering some pizzas and canceling some. You'll see they get added to the basket and the order total updates.
 
 1. Press <kbd>SHIFT</kbd>+<kbd>F5</kbd> or select **Stop Debugging**.
 
@@ -106,7 +106,7 @@ The pizza configuration dialog doesn't update when the size slider is changed. T
 
 1. Press <kbd>F5</kbd> or select **Run** and then **Start Debugging**.
 
-    Use the updated dialog to add some different sized pizzas to your order. Click on the slider bar instead of dragging. Note that the pizza size updates on the mouse-up event on the control.
+    Use the updated dialog to add some different-sized pizzas to your order. Click on the slider bar instead of dragging. Observe that the pizza size updates on the mouse-up event on the control.
 
     If you drag the slider, the size isn't changed until you release the mouse. Let's fix that.
 
@@ -131,4 +131,4 @@ Price: <span class="price">@(Pizza.GetFormattedTotalPrice())</span>
 
 The price updates as the pizza size changes because the method on the pizza `GetFormattedTotalPrice()` uses the pizza size to calculate the total price.
 
-You've made progress on the Blazing Pizza app. If you'd like to continue to improve it, complete the next the module in this learning path.
+You've made progress on the Blazing Pizza app. If you'd like to continue to improve it, complete the next module in this learning path.

@@ -1,4 +1,4 @@
-The current hard-coded pizzas in the app need to be replaced with a database. The Microsoft Entity Framework allows you to add connections to data sources. In our app we'll use a simple SQLite database to store our pizzas. 
+The current hard-coded pizzas in the app need to be replaced with a database. The Microsoft Entity Framework allows you to add connections to data sources. In our app, we'll use a  SQLite database to store our pizzas. 
 
 In this exercise, you'll add packages to support our database functionality, connect our classes to a backend database, and add a helper class to pre-load data for the companies pizzas.
 
@@ -13,7 +13,7 @@ In this exercise, you'll add packages to support our database functionality, con
     dotnet add package System.Net.Http.Json
     ```
     
-    This adds package references to your BlazingPizza.csproj file.
+    These commands add package references to your BlazingPizza.csproj file.
 
     ```xml
       <ItemGroup>
@@ -26,7 +26,7 @@ In this exercise, you'll add packages to support our database functionality, con
 ## Add a database context and controller
 
 1. In Visual Studio Code, select the **File** menu, then **New File**.
-1. For the language select C#.
+1. For the language, select C#.
 1. Enter this code for the class.
 
     ```csharp
@@ -46,11 +46,11 @@ In this exercise, you'll add packages to support our database functionality, con
     }
     ```
 
-    This class creates a database context we can use to register a database service. The context will also alow us to have a controller that will access the database.
+    This class creates a database context we can use to register a database service. The context will also allow us to have a controller that will access the database.
 
 1. Press <kbd>CTRL+S</kbd>, then in the **Save As** dialog, for **File name** enter **PizzaStoreContext.cs**, and then select **Save**.
 1. Select the **File** menu, then **New File**.
-1. For the language select **C#**.
+1. For the language, select **C#**.
 1. Enter this code for the class.
 
     ```csharp
@@ -82,16 +82,16 @@ In this exercise, you'll add packages to support our database functionality, con
     }
     ```
 
-    This class creates a controller that will alow us to query the database for pizza specials and return them as JSON at the [http://localhost:5000/specials](http://localhost:5000/specials) url.
+    This class creates a controller that will allow us to query the database for pizza specials and return them as JSON at the [http://localhost:5000/specials](http://localhost:5000/specials) url.
 
 1. Press <kbd>CTRL+S</kbd>. In the **Save As** dialog, for **File name** enter **SpecialsController.cs**, and then select **Save**.
 
 ## Load data into the database
 
-The app will check to see if there's an existing SQLite database, and if not create one with some pre-made pizzas.
+The app will check to see if there's an existing SQLite database, and create one with some pre-made pizzas.
 
 1. Select the **File** menu, then **New File**.
-1. For the language select **C#**.
+1. For the language, select **C#**.
 1. Enter this code for the class.
 
     ```csharp
@@ -166,17 +166,17 @@ The app will check to see if there's an existing SQLite database, and if not cre
     }
     ```
 
-    The class uses a passed database context, creates some `PizzaSpecial` objects in an array and then saves them.
+    The class uses a passed database context, creates some `PizzaSpecial` objects in an array, and then saves them.
 
 1. Press <kbd>CTRL+S</kbd>. In the **Save As** dialog, for **File name** enter **SeedData.cs**, then select **Save**.
 1. In the explorer, select **Program.cs**.
-1. At the top add a reference to a new package.
+1. At the top, add a reference to a new package.
 
     ```csharp
     using Microsoft.Extensions.DependencyInjection;
     ```
 
-    This allows the app to use dependency injection to register new services.
+    This statement allows the app to use dependency injection to register new services.
 
 1. Replace the whole **Main** method with this code:
 
@@ -203,7 +203,7 @@ The app will check to see if there's an existing SQLite database, and if not cre
 
     This change creates a database scope with the `PizzaStoreContext` and, if there isn't a database already created, calls the `SeedData` static class to create one.
 
-    At the moment the app won't work, as we haven't initialized the `PizzaStoreContext`. This needs to be added to **Startup.cs**.
+    At the moment, the app won't work, as we haven't initialized the `PizzaStoreContext`. This code should be added to **Startup.cs**.
 
 1. In the explorer, select **Startup.cs**.
 1. In the `ConfigureServices` method, add this code under the current services:
@@ -214,7 +214,7 @@ The app will check to see if there's an existing SQLite database, and if not cre
           options.UseSqlite("Data Source=pizza.db"));
     ```
 
-    This code registers two services. The first `AddHttpClient` will allow the app to access HTTP commands, the app will use this to get the JSON for special pizzas. The second registers the new `PizzaStoreContext` and provides the filename for the SQLite database.
+    This code registers two services. The first `AddHttpClient` statement will allow the app to access HTTP commands, the app will use an HttpClient to get the JSON for pizza specials. The second registers the new `PizzaStoreContext` and provides the filename for the SQLite database.
 
 1. Visual Studio Code will highlight `UseSqlite` as an error, so you must add a reference to the `EntityFrameworkCore` package. At the top of the file, under the existing `using` block add:
 
@@ -224,7 +224,7 @@ The app will check to see if there's an existing SQLite database, and if not cre
 
 ## Use the database to display pizzas
 
-We can now replace the hard coded pizza in the **index.razor** page. 
+We can now replace the hard-coded pizza in the **index.razor** page. 
 
 1. In the explorer, select **Index.razor**.
 1. Replace the existing `OnInitialized()` method with:
@@ -246,7 +246,7 @@ We can now replace the hard coded pizza in the **index.razor** page.
     @inject NavigationManager NavigationManager
     ```
 
-1. To fix the last error we need to make the app aware of `GetFromJsonAsync`. 
+1. To fix the last error, we need to make the app aware of `GetFromJsonAsync`. 
 1. In the explorer, select **_Imports.razor**.
 1. Add this new `@using` statement at the bottom.
 
@@ -284,7 +284,7 @@ We can now replace the hard coded pizza in the **index.razor** page.
 
     :::image type="content" source="../media/5-returned-json.png" alt-text="Screenshot of the browser showing JSON for pizzas.":::
 
-    Note that the JSON has the pizzas listed in price descending order as specified in the special pizza controller.
+    The JSON has the pizzas listed in price descending order as specified in the special pizza controller.
 
 
     :::image type="content" source="../media/5-more-blazing-pizzas.png" alt-text="Screenshot of even more blazing pizzas.":::

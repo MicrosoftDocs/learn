@@ -11,7 +11,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
 1. Open **Visual Studio code**.
 1. Open the integrated terminal from Visual Studio Code by selecting **View**, then select **Terminal** from the main menu.
-1. In the terminal navigate to where you'd like the project to be created. 
+1. In the terminal, navigate to where you'd like the project to be created. 
 1. Run the dotnet terminal command:
 
     ```dotnetcli
@@ -24,9 +24,9 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 1. Visual Studio Code will prompt you to add required assets to build and debug the project, select **Yes**.
 
     :::image type="content" source="../media/3-install-missing-components.png" alt-text="Screenshot showing the missing assets dialog.":::
-1. This will add **launch.json** and **tasks.json** in the **.vscode** folder of your project.
+1. Visual Studio Code will add **launch.json** and **tasks.json** in the **.vscode** folder of your project.
 
-These files enable you run and debug your Blazor app with Visual Studio Code's debugging tools.
+These files enable you to run and debug your Blazor app with Visual Studio Code's debugging tools.
 
 ## Test your setup
 
@@ -38,7 +38,7 @@ You can choose to use the terminal, or Visual Studio Code to run your app.
     dotnet watch run
     ```
 
-    This will build and then start the app. The **watch** command tells dotnet to watch all your project files. Any changes you make to projects files will automatically trigger a rebuild and then restart your app.
+    This command will build and then start the app. The **watch** command tells dotnet to watch all your project files. Any changes you make to projects files will automatically trigger a rebuild and then restart your app.
 
     Your computers default browser should open a new page at [http://localhost:5000](http://localhost:5000).
 
@@ -46,7 +46,7 @@ You can choose to use the terminal, or Visual Studio Code to run your app.
 
 You can also run and debug your project with Visual Studio Code.
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu, select **Start Debugging**.
 1. The app should build, and open a new browser page.
 1. Visual Studio Code will also switch to the **Run and Debug** window that allows you to restart or stop your app.
 
@@ -59,7 +59,7 @@ You'll now clone your teams existing Blazor app project files from the GitHub re
 
 1. Delete your BlazingPizza folder, with file explorer or in Visual Studio Code. 
 
-1. In the terminal clone the current working files into a new **BlazingPizza** folder.
+1. In the terminal, clone the current working files into a new **BlazingPizza** folder.
 
     ```powershell
     git clone https://github.com/PhilStollery/blazing-pizza-for-learn.git BlazingPizza
@@ -113,9 +113,9 @@ The team has also created classes to represent the models in the app. Review the
     
     ```
 
-    At the moment all there is a a single H1 tag for the title. You're going to add some code to create some pizza specials.
+    At the moment, there is only a single H1 tag for the title. You're going to add some code to create some pizza specials.
 
-1. Under the `<h1>` tag add this C# code.
+1. Under the `<h1>` tag, add this C# code.
 
     ```razor
     @code {
@@ -136,7 +136,7 @@ The team has also created classes to represent the models in the app. Review the
     }
     ```
 
-    The `@code` block creates an array to hold the pizza specials. When the page is initialized it adds six pizzas to the array.
+    The `@code` block creates an array to hold the pizza specials. When the page is initialized, it adds six pizzas to the array.
 
 1. Press <kbd>F5</kbd> or select **Run** and then **Start Debugging**.
 
@@ -168,9 +168,9 @@ The team has also created classes to represent the models in the app. Review the
 
     This code combines plain HTML alongside looping and member access directives. The `@foreach` loop creates an `<li>` tag for each pizza in the `specials` array.
 
-    Inside the loop each special pizza displays its name, description, price, and image with member directives.
+    Inside the loop, each special pizza displays its name, description, price, and image with member directives.
 1. Press <kbd>F5</kbd> or select **Run** and then **Start Debugging**.
 
     :::image type="content" source="../media/3-blazzing-pizzas.png" alt-text="Screenshot of a list of blazing pizzas.":::
 
-You now have a pizza base component, to allow customers to order a pizza. You'll improve on this in following exercises.
+You now have a pizza base component, to allow customers to order a pizza. You'll improve on this component in following exercises.
