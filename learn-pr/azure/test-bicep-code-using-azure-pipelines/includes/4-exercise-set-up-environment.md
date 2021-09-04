@@ -22,7 +22,7 @@ The modules in this learning path are part of a progression. For learning purpos
 Run a template that sets up your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator-mslearn.azurewebsites.net/?x-ms-routing-name=self&name=testbicep&azure-portal=true) <!-- TODO finalize URL -->
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=testbicep&azure-portal=true)
 
 On the Azure DevOps Demo Generator site, follow these steps to run the template:
 

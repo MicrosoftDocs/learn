@@ -35,7 +35,7 @@ If a human reviewer decides that the changes are reasonable, you can use Azure P
 
 ## Environments
 
-In Azure Pipelines, an *environment* represents the place to which your solution is deployed. Environments provide a number of features that help when you work with complex deployments. In a future module, you'll learn more environments and their features. For now, we'll focus on their ability to add manual approvals to your pipeline.
+In Azure Pipelines, an *environment* represents the place to which your solution is deployed. Environments provide a number of features that help when you work with complex deployments. In a future module, you'll learn more about environments and their features. For now, we'll focus on their ability to add manual approvals to your pipeline.
 
 As you already know, you use *jobs* to define a sequence of steps within a pipeline stage. When you include environments in your pipeline, you need to use a special kind of job called a *deployment job*. A deployment job is similar to a normal job, but it provides some extra functionality, including defining the environment that the deployment job uses:
 

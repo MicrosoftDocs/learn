@@ -39,13 +39,13 @@ During the process, you'll:
 
    :::image type="content" source="../media/7-add-check-approval.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Add check' page, with the 'Approvals' item highlighted.":::
 
-1. Select yourself in the **Approvers** textbox.
+1. In the **Approvers** textbox, type your own name and select yourself.
 
    :::image type="content" source="../media/7-add-check-approval-details.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Add approval check' page, with the details completed and the 'Create' button highlighted.":::
 
 1. Select the down arrow button next to **Advanced**.
 
-   Notice that, by default, approvers are allowed to approve the runs they've triggered. Leave this checkbox selected.
+   Notice that, by default, approvers are allowed to approve the runs they've triggered. Because you're the only person who will work with this pipeline, leave this checkbox selected.
 
 1. Select **Create**.
 
