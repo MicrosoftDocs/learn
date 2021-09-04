@@ -27,7 +27,7 @@ ARM templates are *idempotent*, which means you can deploy the same template man
 
 Resource Manager orchestrates the deployment of the resources so they're created in the correct order. When possible, resources will also be created in parallel, so ARM template deployments finish faster than scripted deployments.
 
-  :::image type="content" source="../media/2-template-processing.png" alt-text="A mapping of the template processing procedure showing that there's only one call to process a template as opposed to several calls to process scripts." border="true":::
+  :::image type="content" source="../media/2-template-processing.png" alt-text="A mapping of the template processing procedure showing that there's only one call to process a template as opposed to several calls to process scripts." border="false":::
 
 Resource Manager also has built-in validation. It checks the template before starting the deployment to make sure the deployment will succeed.
 
@@ -39,16 +39,18 @@ You can also integrate your ARM templates into continuous integration and contin
 
 ### ARM template file structure
 
-When writing an ARM template, you need to understand all the parts that make up the template and what they do. The template files are made up of the following elements:
+When writing an ARM template, you need to understand all the parts that make up the template and what they do. ARM template files are made up of the following elements:
 
-- **schema**: A required section that defines the location of the JSON schema file that describes the structure of JSON data. The version number you use depends on the scope of the deployment and your JSON editor.
-- **contentVersion**: A required section that defines the version of your template (such as 1.0.0.0). You can use this value to document significant changes in your template to ensure you're deploying the right template.
-- **apiProfile**: An optional section that defines a collection of API versions for resource types. You can use this value to avoid having to specify API versions for each resource in the template.
-- **parameters**: An optional section where you define values that are provided during deployment. These values can be provided by a parameter file, by command-line parameters, or in the Azure portal.
-- **variables**: An optional section where you define values that are used to simplify template language expressions.
-- **functions**: An optional section where you can define [user-defined functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-user-defined-functions?azure-portal=true) that are available within the template. User-defined functions can simplify your template when complicated expressions are used repeatedly in your template.
-- **resources**: A required section that defines the actual items you want to deploy or update in a resource group or a subscription.
-- **output**: An optional section where you specify the values that will be returned at the end of the deployment.
+| Element        | Description |
+| -------------- | --- |
+| **schema** | A required section that defines the location of the JSON schema file that describes the structure of JSON data. The version number you use depends on the scope of the deployment and your JSON editor. |
+| **contentVersion** | A required section that defines the version of your template (such as 1.0.0.0). You can use this value to document significant changes in your template to ensure you're deploying the right template. |
+| **apiProfile** | An optional section that defines a collection of API versions for resource types. You can use this value to avoid having to specify API versions for each resource in the template. |
+| **parameters** | An optional section where you define values that are provided during deployment. These values can be provided by a parameter file, by command-line parameters, or in the Azure portal. |
+| **variables** | An optional section where you define values that are used to simplify template language expressions. |
+| **functions** | An optional section where you can define [user-defined functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-user-defined-functions?azure-portal=true) that are available within the template. User-defined functions can simplify your template when complicated expressions are used repeatedly in your template. |
+| **resources** | A required section that defines the actual items you want to deploy or update in a resource group or a subscription. |
+| **output** | An optional section where you specify the values that will be returned at the end of the deployment. |
 
 ## Deploy an ARM template to Azure
 
@@ -78,7 +80,7 @@ Connect-AzAccount
 
 ---
 
-Next, you define your resource group for deployment. You can use an already defined resource group or create a new one with the following command:
+Next, define your resource group. You can use an already-defined resource group or create a new one with the following command. You can obtain available location values from: `az account list-locations` (CLI) or `Get-AzLocation` (PowerShell). You can configure the default location using `az configure --defaults location=<location>`.
 
 # [Azure CLI](#tab/azure-cli)
 
@@ -98,7 +100,7 @@ New-AzResourceGroup `
 
 ---
 
-To deploy the template, use either the Azure CLI command [az deployment group create](https://docs.microsoft.com/cli/azure/group/deployment?view=azure-cli-latest#az-group-deployment-create?azure-portal=true) or the Azure PowerShell command [New-AzResourceGroupDeployment](https://docs.microsoft.com/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.2.0&azure-portal=true). Specify the resource group and give a name to the deployment so you can easily identify it in the deployment history. For convenience, create a variable that stores the path to the template file. This variable makes it easier for you to run the deployment commands because you don't have to retype the path every time you deploy. Here's an example:
+To start a template deployment at the resource group, use either the Azure CLI command [az group deployment create](https://docs.microsoft.com/cli/azure/group/deployment?view=azure-cli-latest#az-group-deployment-create?azure-portal=true) or the Azure PowerShell command [New-AzResourceGroupDeployment](https://docs.microsoft.com/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.2.0&azure-portal=true). Both commands require the resource group, the region, and the name for the deployment so you can easily identify it in the deployment history. For convenience, the exercises create a variable that stores the path to the template file. This variable makes it easier for you to run deployment commands because you don't have to retype the path every time you deploy. Here's an example:
 
 # [Azure CLI](#tab/azure-cli)
 
