@@ -124,9 +124,9 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
       :::image type="content" source="../media/3-pwsh.png" alt-text="The Visual Studio Code terminal window with pwsh terminal selected.":::
 
-    1. If not, select the drop-down, and choose **Select Default Profile**.
+    1. If not, select the down arrow and in the dropdown list select PowerShell. If that option is missing, then select **Select Default Profile**.
 
-    1. Select `**pwsh**`.
+    1. In the input field, scroll down and select `**pwsh**`.
 
           :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell drop-down.":::
 
@@ -134,17 +134,17 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Sign in to Azure by using Azure PowerShell
 
-1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. A browser opens so you can sign in to your account. Use the code in the prompt.
+1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. A browser opens so you can sign in to your account.
 
     ```azurepowershell
     Az login
     ```
 
-1. After you've signed in, VS Code lists the subscriptions associated with your account in the terminal window. If you activated the sandbox, you see one called *Concierge Subscription*. Use this one for the rest of the exercise.
+1. Sign in using the account you used to activate the sandox. After you've signed in, VS Code lists the subscriptions associated with your account in the terminal window. If you activated the sandbox, you see a code block that contains `"name": "Concierge Subscription"`. This is the subsciption to use for the rest of the exercise.
 
-1. Set the default subscription for all of the Azure PowerShell commands you run in this session.
+### Set the default subscription for all PowerShell commands in this session.
 
-1. Enter the following command to obtain your subscriptions and their IDs. The subscription ID is the second column. Look for *Concierge Subscription*, and copy the value in the second column. It will look something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*
+1. Enter the following command to obtain your subscription(s) and their ID(s). The subscription ID is the second column. Look for *Concierge Subscription*, and copy the value in the second column. It will look something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*
 
     ```azurepowershell
     Get-AzSubscription
@@ -157,7 +157,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     Set-AzContext $context
     ```
 
-1. Set the default resource group to the resource group created for you in the sandbox environment. This action lets you omit that parameter from the rest of the Azure PowerShell commands in this exercise.
+1. Enter the following command to xet the default resource group to the resource group created for you in the sandbox environment. This action lets you omit that parameter from the rest of the Azure PowerShell commands in this exercise.
 
     ```azurepowershell
     Set-AzDefault -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
@@ -176,7 +176,6 @@ New-AzResourceGroupDeployment `
   -TemplateFile $templateFile
 ```
 
-
 The top section of the preceding code sets Azure PowerShell variables, which include the path to the deployment path and the name of the deployment. Then the ```New-AzResourceGroupDeployment``` command deploys the template to Azure. Notice that the deployment name is `*blanktemplate*` with the date as a suffix.
 
 ::: zone-end
@@ -189,15 +188,15 @@ When you've deployed your ARM template to Azure, go to the [Azure portal](https:
 
 1. On the **Overview** pane, you see that one deployment succeeded.
 
-    :::image type="content" source="../media/3-deployment-succeeded.png" alt-text="Azure portal interface for the resource group overview with the deployments section showing that one succeeded." border="true":::
+    :::image type="content" source="../media/3-deployment-succeeded.png" alt-text="Azure portal interface for the resource group overview with the deployments section showing that one succeeded.":::
 
 1. Select **1 Succeeded** to see the details of the deployment.
 
-    :::image type="content" source="../media/3-blanktemplate.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
+    :::image type="content" source="../media/3-blanktemplate.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status.":::
 
 1. Select `**blanktemplate**` to see what resources were deployed. In this case, it will be empty because you didn't specify any resources in the template yet.
 
-    :::image type="content" source="../media/3-no-results.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
+    :::image type="content" source="../media/3-no-results.png" alt-text="Azure portal interface for the specific deployment with no resources listed.":::
 
 1. Leave the page open in your browser. You'll check on deployments again.
 
@@ -209,7 +208,7 @@ In the previous task, you learned how to create a blank template and deploy it. 
 
 1. Enter **storage** inside the brackets. A list of related snippets appears. Select **arm-storage**.
 
-    :::image type="content" source="../media/3-arm-storage.png" alt-text="Visual Studio Code arm-storage snippet shown under the typed word storage." border="true":::
+    :::image type="content" source="../media/3-arm-storage.png" alt-text="Visual Studio Code arm-storage snippet shown under the typed word storage.":::
 
 1. Your file will look like this:
 
@@ -223,7 +222,7 @@ In the previous task, you learned how to create a blank template and deploy it. 
 
 1. Change the value of the sku *name* from **Premium_LRS** to **Standard_LRS**. Change the value of *tier* to **Standard**. Notice that Visual Studio Code gives you the proper choices for your attribute values in IntelliSense. Delete the default value including the quotation marks and type quotation marks to see this work.
 
-    :::image type="content" source="../media/3-vs-code-intellisense.png" alt-text="Visual Studio Code showing the IntelliSense choices for the name attribute of the storage SKU." border="true":::
+    :::image type="content" source="../media/3-vs-code-intellisense.png" alt-text="Visual Studio Code showing the IntelliSense choices for the name attribute of the storage SKU.":::
 
 1. The location of the resource is set to the location of the resource group where it will be deployed. Leave the default here.
 
@@ -270,10 +269,10 @@ New-AzResourceGroupDeployment `
 
 1. Notice that both deployments are in the list.
 
-    :::image type="content" source="../media/3-addstorage-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true":::
+    :::image type="content" source="../media/3-addstorage-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses.":::
 
 1. Select `**addstorage**`.
 
-    :::image type="content" source="../media/3-show-resource-deployed.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true":::
+    :::image type="content" source="../media/3-show-resource-deployed.png" alt-text="Azure portal interface for the specific deployment with one resource listed." :::
 
 1. Notice that the storage account has been deployed.
