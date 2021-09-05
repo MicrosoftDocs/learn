@@ -139,8 +139,8 @@ To enable Network Watcher, run this command. Replace (match) `<location>` with t
 ```azurecli
 az network watcher configure \
     --enabled true \
-    --resource-group $RG
-    --locations <location> \
+    --resource-group $RG \
+    --locations <location>
 ```
 
 ## Use Network Watcher to show the topology
