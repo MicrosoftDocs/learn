@@ -74,7 +74,7 @@ You can use a template spec as a module within a Bicep file:
 
 Notice that the module path uses a special format:
 
-:::image type="content" source="../media/4-template-spec-module-id.png" alt-text="Diagram showing the components of the template spec path." border="false":::
+:::image type="content" source="../media/4-template-spec-module-path.png" alt-text="Diagram showing the components of the template spec path." border="false":::
 
 There are three components to the module path, separated by the colon (`:`) character:
 
