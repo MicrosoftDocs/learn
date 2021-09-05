@@ -32,7 +32,7 @@ TODO more info on how to find modules in the registry. Apparently will use Micro
 When you've found a module you want to use, you create a *module definition* in your Bicep file like the following example:
 
 ```bicep
-module myModule 'oci:xxx.azurecr.io/modulerepo/modulename:moduleversion' = {
+module myModule 'br:xxx.azurecr.io/modulerepo/modulename:moduleversion' = {
   name: 'my-module'
   params: {
     moduleParameter1: 'value'
@@ -42,11 +42,11 @@ module myModule 'oci:xxx.azurecr.io/modulerepo/modulename:moduleversion' = {
 
 Notice that the module definition is similar to that of a local module, but with one important difference. Instead of specifying the path to a Bicep file on your file system, you instead use a special format to tell Bicep that you're referencing a module from a registry:
 
-:::image type="content" source="../media/2-module-identifier.png" alt-text="The module identifier from the example above." border="false":::
+:::image type="content" source="../media/2-module-path.png" alt-text="Diagram showing the module path from the example above." border="false":::
 
 The identifier contains four segments:
 
-- **Module type**: When you work with module registries, the module type is `oci`. This means Open Container Initiative. You'll learn more about OCI later in this module.
+- **Scheme**: Bicep supports several types of module, which are called *schemes*. When you work with Bicep registries, the scheme is `br`.
 - **Registry**: The name of the registry that contains the module you want to use.
 - **Module**: The identifier of the specific module within the registry.
 - **Tag**: Tags typically represent versions of modules, because a single module can have multiple versions published. You'll learn more about versions later in this module.
@@ -57,3 +57,5 @@ When you're ready to deploy your Bicep file, you deploy it just like you normall
 
 > [!NOTE]
 > You can also separate the module download process from the build by using the `bicep restore` command, and use the `bicep build` command with the `--no-restore` command-line switch to stop the build process from downloading the module. Generally, though, you don't need to do this - just let Bicep download the modules automatically.
+
+<!-- TODO aliases -->

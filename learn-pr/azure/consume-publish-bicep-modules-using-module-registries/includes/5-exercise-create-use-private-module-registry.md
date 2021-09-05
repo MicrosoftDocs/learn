@@ -58,7 +58,7 @@ In this exercise, you create a Bicep module and publish it to a module registry
    ```azurecli
    az bicep publish \
      --file module.bicep \
-     --target 'oci:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/test/test:v1'
+     --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/test/test:v1'
    ```
 
 1. Run the following command to list the artifacts in your registry:
@@ -78,7 +78,7 @@ In this exercise, you create a Bicep module and publish it to a module registry
 
    ```bash
    bicep publish module.bicep \
-     --target 'oci:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/test/test:v1'
+     --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/test/test:v1'
    ```
 
 1. Run the following command to list the artifacts in your registry:
@@ -98,7 +98,7 @@ In this exercise, you create a Bicep module and publish it to a module registry
 1. At the bottom of the file, add the following module definition. Make sure to replace `YOUR_CONTAINER_REGISTRY_NAME` with the name of your private registry.
 
    ```bicep
-   module todo 'oci:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/test/test:v1' = {
+   module todo 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/test/test:v1' = {
      name: 'todo'
      params: {
      }
