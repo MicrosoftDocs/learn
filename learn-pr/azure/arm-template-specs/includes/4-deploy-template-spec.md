@@ -90,3 +90,5 @@ When you have parameters to provide to the template spec, you use the `params` p
 :::code language="bicep" source="code/4-template.bicep" range="3-8" highlight="3-5" :::
 
 The template spec file is downloaded and copied (*transpiled*) into your JSON ARM template when the Bicep file is built. Normally this happens when you deploy your Bicep file, but you can also use the Bicep tooling to do this explicitly by running the `bicep build` command.
+
+::: zone-end
