@@ -78,7 +78,7 @@ Notice that the module path uses a special format:
 
 There are three components to the module path, separated by the colon (`:`) character:
 
-- **Module type:** When you use a template spec as a module, you use `ts` as the prefix of the module path.
+- **Scheme:** Bicep supports several types of module, which are called *schemes*. When you use a template spec as a module, you use `ts` as the scheme.
 - **Subscription ID, resource group name, and template spec name:** These should specify the location of the template spec resource that you previously published. You use forward slashes (`/`) to separate the subscription ID, resource group name, and template spec name. Note that this isn't the full resource ID of the template spec - it's just a few of the components of the resource ID.
 - **Version:** The template spec version needs to be included.
 
