@@ -19,7 +19,7 @@ The modules in this learning path are part of a progression. For learning purpos
 
 ### Run the template
 
-Run a template that sets up your Azure DevOps organization.
+Run a template that sets up your Azure DevOps project.
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=testbicep&azure-portal=true)
@@ -34,7 +34,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Create Project**.
 
-    The template takes a few moments to run.
+    The template takes a few moments to run. It automatically creates a pipeline and Bicep file for you to work with in the subsequent exercises.
 
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 

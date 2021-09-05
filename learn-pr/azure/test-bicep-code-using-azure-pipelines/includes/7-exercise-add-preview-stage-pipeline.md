@@ -3,10 +3,23 @@ You want to add an extra stage to your pipeline so you can check what changes wi
 During the process, you'll: 
 
 > [!div class="checklist"]
+> * Update the pipeline YAML file to add a new preview stage.
 > * Add an environment to Azure Pipelines.
 > * Configure the environment to require an approval.
-> * Update the pipeline YAML file to add a new preview stage.
+> * Update the pipeline YAML file to use the environment for the deploy stage.
 > * View the what-if results and approve a pipeline run.
+
+## Update the pipeline definition to add a preview stage
+
+Here, you add a new stage to your pipeline that runs the what-if operation.
+
+1. In Visual Studio Code, open the *azure-pipelines.yml* file in the *deploy* folder.
+
+1. Between the **Validate** and **Deploy** stages, add the following definition for the **Preview** stage:
+
+   :::code language="yaml" source="code/7-pipeline.yml" range="39-55" :::
+
+1. Save your changes to the file.
 
 ## Add an environment
 
@@ -49,24 +62,16 @@ During the process, you'll:
 
 1. Select **Create**.
 
-## Update the pipeline definition to add a preview stage
-
-1. In Visual Studio Code, open the *azure-pipelines.yml* file in the *deploy* folder.
-
-1. Between the **Validate** and **Deploy** stages, add the following definition for the **Preview** stage:
-
-   :::code language="yaml" source="code/7-pipeline.yml" range="39-55" :::
-
 ## Update the pipeline definition to require an environment and approval
 
 Here, you configure the **Deploy** stage to run against the **Website** environment you created previously. You convert the **Deploy** stage to run a deployment job instead of a standard job, and configure it to deploy to the environment.
 
-1. Replace the **Deploy** stage definition with the following:
+1. In the *azure-pipelines.yml* file in Visual Studio Code, replace the **Deploy** stage definition with the following:
 
    :::code language="yaml" source="code/7-pipeline.yml" range="59-79" :::
 
    > [!NOTE]
-   > Notice that you define a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't do this, the deployment job won't be able to read your Bicep file.
+   > Notice that you define a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't do this, the deployment job won't be able to read your Bicep file. You could instead consider using *pipeline artifacts* to send files between pipeline stages. We link to more information about artifacts in the summary.
 
 1. Save the file.
 

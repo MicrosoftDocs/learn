@@ -31,7 +31,7 @@ After you see the output of the what-if operation, you can determine whether to 
 > [!NOTE]
 > The what-if operation sometimes shows that a resource will change when actually no change will happen. This is called *noise*. We're working to reduce these problems, but we need your help. [Please report these problems](https://aka.ms/whatifissues).
 
-If a human reviewer decides that the changes are reasonable, you can use Azure Pipeline's environments feature to provide manual approval to proceed with the deployment.
+If a human reviewer decides that the changes are reasonable, they can manually approve the pipeline run.
 
 ## Environments
 
@@ -49,11 +49,11 @@ Notice that in the YAML definition for a deployment job, there are some key diff
 
 ## Stage checks and approvals
 
-After you create an environment, you can define *checks*. Checks are used to verify conditions that must be met before a pipeline can use the environment. An approval is a type of check that requires a human provide a manual approval. Checks are defined on the environment, not the pipeline. This means that authors of the pipeline YAML file cannot remove or add these approvals and checks. Only the administrators of the resources can manage the approvals and checks on them. In many organizations, the owner of an environment in Azure Pipelines is the person responsible for the environment it deploys to, so this helps to ensure the right people are involved in the deployment process.
+After you create an environment, you can define *checks*. Checks are used to verify conditions that must be met before a pipeline can use the environment. An approval is a type of check that requires a human provide a manual approval. Checks are defined on the environment, not the pipeline. This means that authors of the pipeline YAML file cannot remove or add these approvals and checks. Only the administrators of an environment can manage the approvals and checks on it. In many organizations, the owner of an environment in Azure Pipelines is the person responsible for the environment it deploys to, so this helps to ensure the right people are involved in the deployment process.
 
 ### How do checks and approvals work?
 
-Approvals and checks are evaluated just before a pipeline stage begins. When Azure Pipelines is about to run a pipeline stage, it looks at all of the resources that stage uses, including environments. These resources can have checks that need to be satisfied. An approval is one type of check. When you configure an approval check, you assign one or more users who need to approve the continuation of your pipeline.
+Approvals and checks are evaluated just before a pipeline stage begins. When Azure Pipelines is about to run a pipeline stage, it looks at all of the pipeline resources that stage uses, including environments. Environments can have checks that need to be satisfied. An approval is one type of check. When you configure an approval check, you assign one or more users who need to approve the continuation of your pipeline.
 
 > [!NOTE]
 > Azure Pipelines provides other types of check, too. For example, you can call an API to run some custom logic, control the business hours during which a stage can run, and even query Azure Monitor to ensure a deployment has succeeded. In this module we only discuss approval checks, but we provide links to more information about checks in the summary.
@@ -68,4 +68,4 @@ After your pipeline begins and reaches a stage that requires an approval check, 
 > [!WARNING]
 > The environments feature in Azure Pipelines provides you with the ability to link your deployments to an environment, and then the deployment inherits the approvals and checks defined by the owner of the environment. However, there's nothing to require that new pipelines use environments. It's important that you and your organization establish good practices to review your pipeline definitions, such as by configuring your repository to require pull request reviews on any changes to your *main* branch by using branch protection policies. You'll learn more about this in a future module.
 >
-> You can also add approvals and checks to service connections. This ensures that approval is obtained before a deployment can use a service principal's credentials. However, this would also affect your pipeline's ability to run preflight validation and the what-if operation, because they require a service connection too.
+> You can also add approvals and checks to service connections. This ensures that approval is obtained before a deployment can use a service principal's credentials. However, this would also affect your pipeline's ability to run preflight validation and the what-if operation, because they require a service connection too. You could use an additional, separate service connection for the what-if stage with its own service principal. The service principal used for the preflight and validation stages needs to have a custom Azure role defined to ensure it's got the minimum permissions it needs to do its work.

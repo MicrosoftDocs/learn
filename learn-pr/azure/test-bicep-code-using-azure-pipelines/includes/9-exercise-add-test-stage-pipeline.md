@@ -21,7 +21,7 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
    :::code language="powershell" source="code/9-test.ps1" :::
 
    This is a Pester test file. It requires a parameter named `$HostName`, and when it's executed, it runs two tests against the host name:
-   - Try to connect to the website over HTTPS. The test passes if the server responds with an HTTP response status code of between 200 and 299, which indicates a successful connection.
+   - Try to connect to the website over HTTPS. The test passes if the server responds with an HTTP response status code between 200 and 299, which indicates a successful connection.
    - Try to connect to the website over HTTP. The test passes if the server responds with an HTTP response status code of 300 or higher.
 
    > [!NOTE]

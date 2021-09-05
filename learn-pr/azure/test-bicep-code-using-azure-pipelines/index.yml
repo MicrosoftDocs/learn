@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Test your Bicep code by using Azure Pipelines
   description: Build a deployment pipeline for Bicep infrastructure as code templates. Lint, validate, preview, and test your Bicep code by using Azure DevOps and Azure Pipelines.
-  ms.date: 08/22/2021
+  ms.date: 09/05/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial

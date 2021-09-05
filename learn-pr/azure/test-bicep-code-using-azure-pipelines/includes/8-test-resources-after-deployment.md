@@ -12,13 +12,16 @@ For example, imagine that you deploy a new Azure SQL logical server by using a B
 Even when you're just deploying basic Bicep files, it's worth considering how you can validate that the resources you deploy actually work and meet your requirements. Here are some examples of how you can apply this principle:
 
 - When you deploy a website, try to reach the web application from your pipeline. Verify that your pipeline connects to the website successfully and receives a valid response code.
-- When you deploy a database server and database, try to connect to the database.
+- When you deploy a CDN, try to connect to a resource through the CDN. Verify that the pipeline connects to the CDN successfully and receives a valid response code.
 
 These tests are sometimes called *infrastructure smoke tests*. Smoke testing is a simple form of testing designed to uncover major issues in your deployment.
 
+> [!NOTE]
+> Some Azure resources aren't easy to reach from a Microsoft-hosted pipeline agent. You might need to consider using a self-hosted agent to run smoke test stages if they require access to resources through private networks. In a future Microsoft Learn module, you'll also learn about other ways to verify that your Azure resources are working correctly.
+
 It's also a good idea to perform *negative testing*. Negative testing helps you to confirm that your resources don't have undesired behavior. For example, when you deploy a virtual machine, it's good practice to use Azure Bastion to securely connect to the virtual machine. You could add a negative test to your pipeline to verify that you can't connect to a virtual machine directly using Remote Desktop Connection or SSH.
 
-> [!NOTE]
+> [!IMPORTANT]
 > The goal of these tests isn't to verify that Bicep has deployed your resources correctly. By using Bicep, you're making the assumption that it will deploy the resources that you specify in your Bicep files. Instead, the goal is to verify that the resources that you've defined will work for your situation and meet your requirements.
 
 ### Run tests from Azure Pipelines
@@ -26,7 +29,7 @@ It's also a good idea to perform *negative testing*. Negative testing helps you 
 There are many ways you can run tests in your pipeline. In this module, we use Pester, which is an open-source tool that runs tests written using PowerShell. You might choose to use a different test framework, or even to run your tests without a testing tool.
 
 > [!NOTE]
-> Another test tool to consider is PSRule for Azure, which includes a number of pre-built rules and tests for Azure. We link to PSRule in the summary.
+> Another test tool to consider is PSRule for Azure, which includes a number of pre-built rules and tests for Azure. It can run validation on your templates and also run tests against your deployed Azure resources. We link to PSRule in the summary.
 
 When you use a supported test framework, Azure Pipelines understands the results of each test. It displays the test results alongside the pipeline run information, and it tracks the history of each test over time. In the next exercise, you'll see how you can use Azure Pipelines with infrastructure smoke tests.
 

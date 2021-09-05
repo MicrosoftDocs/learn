@@ -19,6 +19,9 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
 
    :::code language="yaml" source="code/5-pipeline.yml" range="9-10, 39-55" :::
 
+   > [!TIP]
+   > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. In the next section you'll see the complete YAML pipeline definition so that you can verify your file matches.
+
 ## Add lint and validation stages to your pipeline
 
 1. Below the line that says `stages:`, add a lint stage:
@@ -118,6 +121,8 @@ Now that you've identified the problem, you can fix it in your Bicep file.
    git commit -m "Remove unused parameter"
    git push
    ```
+
+   Once again, Azure Pipelines automatically triggers a new run of your pipeline.
 
 ## View the pipeline run again
 

@@ -11,6 +11,7 @@ Now, you can be more confident that your automated deployments will succeed and 
   - [Stages](/azure/devops/pipelines/process/stages?tabs=yaml)
   - [Conditions](/azure/devops/pipelines/process/conditions&tabs=yaml)
   - [Parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs)
+- [Pipeline artifacts](/azure/devops/pipelines/artifacts/pipeline-artifacts?tabs=yaml)
 - [Bicep linter](/azure/azure-resource-manager/bicep/linter)
 - Environments
   - [Environments](/azure/devops/pipelines/process/environments)

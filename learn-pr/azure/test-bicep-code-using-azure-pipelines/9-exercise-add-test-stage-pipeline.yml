@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Add a test stage to your pipeline
   description: Add a post-deployment test stage to your Bicep deployment pipeline.
-  ms.date: 08/22/2021
+  ms.date: 09/05/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial

@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 08/22/2021
+  ms.date: 09/05/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
@@ -27,17 +27,17 @@ quiz:
     - content: Add a rollback stage to your pipeline.
       isCorrect: false
       explanation: Incorrect. You can add a rollback stage to reverse the effects of a stage that's failed, but it doesn't help to validate the Bicep file you submit.
-  - content: Your operations team asks you to verify that a database server deployed by the pipeline is configured to accept requests. Which of the following actions would meet this requirement?
+  - content: Which of these is an example of negative testing?
     choices:
-    - content: Run the Bicep linter within your pipeline.
+    - content: Manually approving a pipeline run.
       isCorrect: false
-      explanation: Incorrect. While the Bicep linter is useful, it doesn't tell you whether your Azure resources are configured according to your requirements.
-    - content: Add the what-if operation to your pipeline.
+      explanation: Incorrect. However, you might choose to manually run tests and then approve the pipeline run.
+    - content: Rolling back your deployment if something fails.
       isCorrect: false
-      explanation: Incorrect. While the what-if operation is useful, it doesn't tell you whether your Azure resources are configured according to your requirements.
-    - content: Add an approval check to the stage after the deployment completes.
+      explanation: Incorrect. However, you might choose to roll back a deployment if your negative tests fail.
+    - content: Verifying that a website is only accessible by using HTTPS, and not by HTTP.
       isCorrect: true
-      explanation: Correct. A human can verify the configuration of your environment after deployment and then approve the continuation of the pipeline. You could also consider running an automated smoke test.
+      explanation: Correct. Negative tests verify that your resource doesn't exhibit unwanted behavior, like responding on insecure protocols.
   - content: Which of these statements is true?
     choices:
     - content: The Bicep linter needs to be installed separately to Bicep.
