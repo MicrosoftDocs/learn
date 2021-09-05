@@ -24,7 +24,7 @@ Use your mouse to highlight all of the text in the code editor, then select the 
 
 ### Step 2: Use string interpolation to combine a literal string and a variable value.
 
-To interpolate two strings together, you create a literal string and prefix the string with the `$` symbol.  The literal string should contain atleast one set of curly braces `{}` and inside of those characters you use the name of a variable.
+To interpolate two strings together, you create a literal string and prefix the string with the `$` symbol.  The literal string should contain at least one set of curly braces `{}` and inside of those characters you use the name of a variable.
 
 Add the following code to the code window:
 
