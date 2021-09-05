@@ -66,11 +66,11 @@ When you have parameters to provide to the template spec deployment, you use the
 
 ::: zone pivot="biceppowershell,bicepcli"
 
-## Use a template spec within a Bicep file
+## Use a template spec as a Bicep module
 
 You can use a template spec as a module within a Bicep file:
 
-:::code language="bicep" source="code/4-template.bicep" range="3-8" :::
+:::code language="bicep" source="code/4-template.bicep" range="3-4, 8" :::
 
 Notice that the module path uses a special format:
 
@@ -79,7 +79,7 @@ Notice that the module path uses a special format:
 There are three components to the module path, separated by the colon (`:`) character:
 
 - **Module type:** When you use a template spec as a module, you use `ts` as the prefix of the module path.
-- **Subscription ID, resource group name, and template spec name:** These should specify the location of the template spec resource that you previously published. You use forward slashes (`/`) to separate the subscription ID, resource group name, and template spec name.
+- **Subscription ID, resource group name, and template spec name:** These should specify the location of the template spec resource that you previously published. You use forward slashes (`/`) to separate the subscription ID, resource group name, and template spec name. Note that this isn't the full resource ID of the template spec - it's just a few of the components of the resource ID.
 - **Version:** The template spec version needs to be included.
 
 > [!NOTE]
