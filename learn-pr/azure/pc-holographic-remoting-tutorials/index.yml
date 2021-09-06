@@ -2,14 +2,14 @@
 uid: learn.azure.pc-holographic-remoting-tutorials-mrtk
 metadata:
   title: PC Holographic Remoting 
-  description: This course explores the use of pc holographic remoting by integrating to a hololens2 application. You can also deploy your project to a HoloLens.
+  description: This course explores the use of PC holographic remoting by integrating to a HoloLens 2 application.
   ms.date: 06/23/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 title: PC Holographic Remoting 
-summary: Import and learn about pc holographic remoting to enhance your learning experience.
+summary: Learn about PC holographic remoting to enhance your learning experience.
 abstract: |
   By the end of this module you will be able to:
   - Build a mixed reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye-tracking features.

@@ -11,11 +11,6 @@ Every application that uses the high-level APIs must connect to a host server wh
 
 OpenXR is an open standard for creating high-performance VR apps that can run on different kinds of systems. It makes VR creation easier by allowing developers to use the same code across several platforms.
 
-## Depth 16
-
-In Unity, the precision of the render texture's depth buffer in bits (0, 16, 24/32, are supported).
-16 means at least a 16-bit Z-buffer and no stencil buffer.
-
 ## Eye Gaze Interaction
 
 Unity OpenXR supports the Eye Tracking Interaction extension provided by Khronos. To get the pose data that the extension returns, use this layout.

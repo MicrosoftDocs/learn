@@ -11,23 +11,19 @@ In this section, you'll create a new Unity project and get it ready for MRTK dev
 
 Go to the [Initializing your project and deploying your first application](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=openxr) article and follow the instructions there, but stop when you reach the section titled "Building your application to your HoloLens 2." As a result of completing those instructions, you'll have done the following:
 
-1. Created the Unity project and gave it a suitable name--for example, "MRTK Tutorials."
-
+1. Created the Unity project and gave it a suitable name--for example, *PC Holographic Remoting*
 2. Switched the build platform.
-
 3. Imported the TextMeshPro Essential Resources.
-
 4. Imported the Mixed Reality Toolkit and configured the Unity project.
+5. Created and set the scene and gave it a suitable name--for example, *PC Holographic Remoting*.
 
-5. Created and set the scene and gave it a suitable name--for example, "PC Holographic Remoting."
+Go to the Configuring the MRTK profiles article and follow the instructions in the "Changing the Spatial Awareness Display Option" section to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile**. Change the display options for the spatial awareness mesh to **Occlusion**.
 
-Go to the [Configuring the MRTK profiles](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-03?tabs=openxr) article and follow the instructions in the "Changing the Spatial Awareness Display Option" section to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile**. Change the display options for the spatial awareness mesh to **Occlusion**.
-
-## Import The Tutorial Assets
+## Import the tutorial assets
 
 [!INCLUDE[](includes/switching-platform.md)]
 
-## Configure And Prepare The Scene
+## Configure and prepare the scene
 
 In this section, you'll prepare the scene by adding some of the tutorial prefabs.
 
@@ -53,11 +49,11 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
     >[!Tip]
     >If you feel that the large icons in your scene are distracting (for example, the large framed 'T' icons), you can hide them by [toggling the Gizmos](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the "off" position.
 
-## Configure The Buttons To Operate The Scene
+## Configure the buttons to operate the scene
 
 In this section, you'll add scripts to the scene and create button events that demonstrate the fundamentals of model switching and clipping functionality.
 
-## Configure The Interactable (Script) Component
+## 1. Configure the Interactable (Script) component
 
 1. In the Hierarchy window, expand the **ButtonParent** object and select the next button. In the Inspector window, locate the **Interactable (Script)** component and click on plus sign icon ("+") under **OnClick ()** event.
 
@@ -71,14 +67,14 @@ In this section, you'll add scripts to the scene and create button events that d
 
     ![Interactable script](../media/h.png)
 
-## Configure The Remaining Buttons
+## 2. Configure The Remaining Buttons
 
-1. For each of the remaining buttons, complete the process outlined above to assign functions to the **OnClick ()** events:
+* For each of the remaining buttons, complete the process outlined above to assign functions to the **OnClick ()** events:
 
     * For the PreviousButton object, assign the **ViewButtonControl** > **PreviousModel ()** function.
     * For ClippingButton, select the **ToggleButton** > **ToggleClipping ()** function.
 
-## Configure The View Button Control (Script) And Toggle Button (Script) Components
+## 3. Configure the View Button Control (Script) and Toggle Button (Script) components
 
 At this point, your buttons are configured to demonstrate the model switching and clipping functionality. Next, you'll add 3D models to the scene and the clipping objects to the script.
 
@@ -103,7 +99,7 @@ We've provided six different 3D models for demonstration. Expand the **ModelPare
 
 4. In the Hierarchy window, select the ClippingObjects prefab and enable it in the Inspector window to turn on the **Clipping objects**.
 
-## Configure The Clipping Objects To Enable Clipping Feature
+## Configure the clipping objects to enable clipping feature
 
 In this section, you'll add MarsCuriosityRover object's child objects renderer into an individual **clipping object** to demonstrate the clipping of the MarsCuriosityRover model.
 
@@ -115,11 +111,11 @@ In the Hierarchy window, expand the **ClippingObjects** object to expose the thr
 
 2. In the Hierarchy window, select the ClippingObjects prefab and enable it in the Inspector window to turn on the Clipping objects.
 
-## Configure Eye-Tracking To Highlight Tooltips
+## Configure eye-tracking to highlight tooltips
 
 In this section, you'll explore how to enable eye tracking in your project. For example, you'll implement the functionality to highlight tooltips attached to MarsCuriosityRover's parts while you're looking at them and hide them while you're looking away from them.
 
-## 1. Identify Target Objects And Associated Tooltips
+## 1. Identify target objects and associated tooltips
 
 In the Hierarchy window, select the ModelParent object. Next, expand the **MarsCuriosity** -> **Rover** to find five main parts of the MarsCuriosityRover: **POI-Camera, POI-Wheels, POI-Antena, POI-Spectrometer, POI-RUHF Antenna**.
 
@@ -127,7 +123,7 @@ In the Hierarchy window, select the ModelParent object. Next, expand the **MarsC
 
     ![Target Objects](../media/m.png)
 
-## 2. Implement While Looking At Target() & On Look Away() Events
+## 2. Implement While Looking At Target() & On Look Away() events
 
 In the Hierarchy window, select the **POI-Camera** object. Then, in the Inspector window, locate the Eye Tracking Target (Script) component and configure the **While Looking At Target() & On Look Away()** events as follows:
 

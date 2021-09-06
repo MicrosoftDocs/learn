@@ -17,22 +17,22 @@ quiz:
     - content: "Which of the following scripts is attached to a Button Parent Object?"
       choices:
         - content: "View control script"
-          isCorrect: false
+          isCorrect: true
         - content: "Interactable script"
           isCorrect: false
         - content: "Toggle Button script"
-          isCorrect: true
+          isCorrect: false
     - content: "Which of the following additional capabilities are selected?"
       choices:
         - content: "PrivateNetworkClientServer"
-          isCorrect: false
-        - content: "Removable Storage"
           isCorrect: true
+        - content: "Removable Storage"
+          isCorrect: false
         - content: "VideosLibrary"
           isCorrect: false
     - content: "In the OpenXR feature group we select: "
       choices:
-        - content: "Holographic Editor Remoting"
+        - content: "Holographic App Remoting"
           isCorrect: true
         - content: "Mock Runtime"
           isCorrect: false
