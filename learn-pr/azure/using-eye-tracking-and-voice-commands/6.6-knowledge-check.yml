@@ -24,17 +24,17 @@ quiz:
     - content: "Which component handles the speech input events raised form the IMixedRealityInputSystem?"
       choices:
         - content: "Speech Input Handler Component"
-          isCorrect: false
-        - content: "Speech Component"
           isCorrect: true
+        - content: "Speech Component"
+          isCorrect: false
         - content: "Speech Confirmation Component"
           isCorrect: false
     - content: "Is eye-tracking enabled in HoloLens 1?"
       choices:
         - content: "Yes"
-          isCorrect: true
-        - content: "No"
           isCorrect: false
+        - content: "No"
+          isCorrect: true
        
       
     
