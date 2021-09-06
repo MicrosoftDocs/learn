@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.practice-active-listening.4-exercise-reflective-experiences
+uid: learn.student-evangelism.practice-active-listening.4-exercise-reflect-experiences
 title: Exercise - reflect on your experiences
 metadata:
   title: Exercise - reflect on your experiences
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-exercise-reflective-experiences.md)]
+  [!include[](includes/4-exercise-reflect-experiences.md)]

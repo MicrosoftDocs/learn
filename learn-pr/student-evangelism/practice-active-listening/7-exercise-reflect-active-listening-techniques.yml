@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.practice-active-listening.7-reflect-active-listening-techniques
+uid: learn.student-evangelism.practice-active-listening.7-exercise-reflect-active-listening-techniques
 title: Exercise - reflect on active listening techniques
 metadata:
   title: Exercise - reflect on active listening techniques
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-reflect-active-listening-techniques.md)]
+  [!include[](includes/7-exercise-reflect-active-listening-techniques.md)]
