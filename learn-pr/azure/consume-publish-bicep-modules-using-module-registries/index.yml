@@ -1,22 +1,22 @@
 ### YamlMime:Module
-uid: learn.azure.consume-publish-bicep-modules-using-module-registries
+uid: learn.azure.consume-publish-bicep-modules-using-bicep-registries
 metadata:
   moduleType: standard
-  title: Consume and publish Bicep modules by using module registries
-  description: Work with reusable Bicep modules by using module registries. Consume modules by using the public Bicep module registry. Share modules within your organization by using a private module registry.
+  title: Consume and publish Bicep modules by using bicep registries
+  description: Work with reusable Bicep modules by using Bicep registries. Consume modules by using the public Bicep registry. Share modules within your organization by using a private registry.
   ms.date: 09/02/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Consume and publish Bicep modules by using module registries
+title: Consume and publish Bicep modules by using Bicep registries
 summary: |
   Reuse Bicep modules to reduce code duplication and increase the quality of your deployments.
-  Use modules published to the public Bicep module registry, and work with private registries to share modules in your own organization.
+  Use modules published to the public Bicep registry, and work with private registries to share modules in your own organization.
 abstract: |
   After completing this module, you'll be able to:
-    - Consume a module published to Microsoft's Bicep module registry
-    - Create a private module registry for your own organization
+    - Consume a module published to Microsoft's Bicep registry
+    - Create a private registry for your own organization
     - Publish a module to, and consume a module from, a private registry
 prerequisites: |
   You should be familiar with using:
@@ -39,12 +39,12 @@ roles:
 products:
   - azure-resource-manager
 units:
-- learn.azure.consume-publish-bicep-modules-using-module-registries.introduction
-- learn.azure.consume-publish-bicep-modules-using-module-registries.use-module-public-bicep-registry
-- learn.azure.consume-publish-bicep-modules-using-module-registries.exercise-deploy-module-from-registry
-- learn.azure.consume-publish-bicep-modules-using-module-registries.create-custom-module-registry
-- learn.azure.consume-publish-bicep-modules-using-module-registries.exercise-create-use-private-module-registry
-- learn.azure.consume-publish-bicep-modules-using-module-registries.knowledge-check
-- learn.azure.consume-publish-bicep-modules-using-module-registries.summary
+- learn.azure.consume-publish-bicep-modules-using-bicep-registries.introduction
+- learn.azure.consume-publish-bicep-modules-using-bicep-registries.use-module-public-bicep-registry
+- learn.azure.consume-publish-bicep-modules-using-bicep-registries.exercise-deploy-module-from-registry
+- learn.azure.consume-publish-bicep-modules-using-bicep-registries.create-custom-registry
+- learn.azure.consume-publish-bicep-modules-using-bicep-registries.exercise-create-use-private-registry
+- learn.azure.consume-publish-bicep-modules-using-bicep-registries.knowledge-check
+- learn.azure.consume-publish-bicep-modules-using-bicep-registries.summary
 badge:
-  uid: learn.azure.consume-publish-bicep-modules-using-module-registries.badge
+  uid: learn.azure.consume-publish-bicep-modules-using-bicep-registries.badge

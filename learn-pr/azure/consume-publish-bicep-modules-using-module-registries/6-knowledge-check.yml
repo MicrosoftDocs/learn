@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.consume-publish-bicep-modules-using-module-registries.knowledge-check
+uid: learn.azure.consume-publish-bicep-modules-using-bicep-registries.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
@@ -16,15 +16,15 @@ quiz:
   questions:
   - content: You've created a Bicep file that will be useful to people throughout the Bicep community. What's the best way to share it?
     choices:
-    - content: Publish it to a private module registry.
+    - content: Publish it to a private registry.
       isCorrect: false
-      explanation: Incorrect. A private module registry is designed to be used within your organization.
+      explanation: Incorrect. A private registry is designed to be used within your organization.
     - content: Publish it as a template spec.
       isCorrect: false
       explanation: Incorrect. Because a template spec is stored in your Azure subscription, it's only accessible within your organization.
-    - content: Publish it to the public module registry.
+    - content: Publish it to the public registry.
       isCorrect: true
-      explanation: Correct. Microsoft maintains a public module registry for the Bicep community. Anyone can submit and use modules.
+      explanation: Correct. Microsoft maintains a public registry for the Bicep community. Anyone can submit and use modules.
   - content: ""
     choices:
     - content: ""

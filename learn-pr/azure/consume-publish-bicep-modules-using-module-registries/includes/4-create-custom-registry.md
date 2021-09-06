@@ -1,5 +1,5 @@
 
-## Private module registries
+## Private registries
 
 - Why would you use one?
 - ACR vs. other registries like Docker Hub
@@ -11,7 +11,7 @@ TODO
 
 ## Publish a module
 
-When you create a Bicep module, you write a Bicep file as normal. You then *publish* the file to a module registry by using the `bicep publish` command.
+When you create a Bicep module, you write a Bicep file as normal. You then *publish* the file to a registry by using the `bicep publish` command.
 
 The publish operation performs the same validation steps that happen when you build or deploy a Bicep file, including checking that your code doesn't have any syntactical errors and that you're specifying valid resource definitions. It also runs the Bicep linter to verify that your code passes a series of quality checks.
 

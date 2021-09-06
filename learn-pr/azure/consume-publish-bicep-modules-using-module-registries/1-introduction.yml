@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.consume-publish-bicep-modules-using-module-registries.introduction
+uid: learn.azure.consume-publish-bicep-modules-using-bicep-registries.introduction
 title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: Introduction to consuming and publishing Bicep modules by using module registries.
+  description: Introduction to consuming and publishing Bicep modules by using Bicep registries.
   ms.date: 09/02/2021
   author: johndowns
   ms.author: jodowns

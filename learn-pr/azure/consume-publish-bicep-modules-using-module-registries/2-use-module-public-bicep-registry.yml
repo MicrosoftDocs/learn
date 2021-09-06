@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.consume-publish-bicep-modules-using-module-registries.use-module-public-bicep-registry
+uid: learn.azure.consume-publish-bicep-modules-using-bicep-registries.use-module-public-bicep-registry
 title: Use a module from the public Bicep registry
 metadata:
   unitType: learning-content
   title: Use a module from the public Bicep registry
-  description: Learn how to use a module from the public Bicep module registry.
+  description: Learn how to use a module from the public Bicep registry.
   ms.date: 09/02/2021
   author: johndowns
   ms.author: jodowns

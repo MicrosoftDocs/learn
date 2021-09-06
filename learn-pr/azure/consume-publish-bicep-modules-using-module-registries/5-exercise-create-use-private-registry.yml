@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.consume-publish-bicep-modules-using-module-registries.exercise-create-use-private-module-registry
-title: Exercise - Create and use a private module registry
+uid: learn.azure.consume-publish-bicep-modules-using-bicep-registries.exercise-create-use-private-registry
+title: Exercise - Create and use a private registry
 sandbox: true
 metadata:
   unitType: exercise
-  title: Exercise - Create and use a private module registry
+  title: Exercise - Create and use a private registry
   description: Create an Azure Container Registry and publish a Bicep module to it, then consume the module in a deployment.
   ms.date: 09/02/2021
   author: johndowns
@@ -14,4 +14,4 @@ metadata:
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-exercise-create-use-private-module-registry.md)]
+  [!include[](includes/5-exercise-create-use-private-registry.md)]

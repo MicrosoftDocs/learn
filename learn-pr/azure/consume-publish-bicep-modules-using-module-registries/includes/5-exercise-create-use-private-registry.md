@@ -1,6 +1,6 @@
 TODO scenario
 
-In this exercise, you create a Bicep module and publish it to a module registry
+In this exercise, you create a Bicep module and publish it to a registry.
 
 > [!div class="checklist"]
 > * Deploy a new private registry.
