@@ -25,8 +25,8 @@ In previous module, you've added spatialization for the sounds to give them a se
 
 There are two steps to enable reverb on an audio source:
 
-    * Route the **Audio Source** to the appropriate **Group**
-    * Set the **Microsoft Spatializer** plugin to pass audio into the **Group** for processing
+* Route the **Audio Source** to the appropriate **Group**
+* Set the **Microsoft Spatializer** plugin to pass audio into the **Group** for processing
 
 In the following steps, you'll adjust the script to control the audio routing, and attach a control script provided with the **Microsoft Spatializer** plugin to feed data into the reverb.
 

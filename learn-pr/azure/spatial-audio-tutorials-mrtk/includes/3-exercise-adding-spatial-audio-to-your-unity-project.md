@@ -11,15 +11,10 @@ In this section, you'll create a new Unity project and get it ready for MRTK dev
 For this, first follow the Initializing your project and first application, excluding the Build your application to your device instructions, which includes the following steps:
 
 1. Creating the Unity project and give it a suitable name, for example, *MRTK Tutorials*
-
 2. Switching the build platform
-
 3. Importing the TextMeshPro Essential Resources
-
 4. Importing the Mixed Reality Toolkit
-
 5. Configuring the Unity project
-
 6. Creating and setting the scene and give the scene a suitable name, for example, *SpatialAudio*
 
 Then follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
@@ -40,5 +35,5 @@ Then follow the Changing the Spatial Awareness Display Option instructions to en
 
     ![Desktop spatial audio settings](../media/spatial-audio-01-section-4-step-1-1.png)
 
-> [!NOTE]
-> This setting is only required if you plan to test your project in the Unity editor.
+    > [!NOTE]
+    > This setting is only required if you plan to test your project in the Unity editor.

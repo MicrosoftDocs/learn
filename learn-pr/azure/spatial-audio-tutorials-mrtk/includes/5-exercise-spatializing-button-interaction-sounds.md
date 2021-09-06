@@ -35,8 +35,8 @@ In the **Audio Mixer** window you'll define destinations called **Mixer Groups**
 
    ![Button audio source](../media/spatial-audio-02-section-2-step-1-3.png)
 
-> [!NOTE]
-> If you move **Spatial Blend** to 1 (3D) without checking the **Spatialize** checkbox, Unity will use its panning spatializer, instead of the **Microsoft Spatializer** with HRTFs.
+  > [!NOTE]
+  > If you move **Spatial Blend** to 1 (3D) without checking the **Spatialize** checkbox, Unity will use its panning spatializer, instead of the **Microsoft Spatializer** with HRTFs.
 
 ## Adjust the Volume curve
 
@@ -51,7 +51,7 @@ To disable this attenuation, you need to adjust the **Volume** curve In the **Au
   * Drag the endpoint on the **Volume** curve (the red curve) from '0' on the y axis up to '1'
   * To adjust the shape of the **Volume** curve to be flat, drag the white curve shape control to be parallel to the X axis
 
-  [Button 3D sound settings](../media/spatial-audio-02-section-3-step-1-1.png)
+  ![Button 3D sound settings](../media/spatial-audio-02-section-3-step-1-1.png)
 
 ## Test the spatialize audio
 

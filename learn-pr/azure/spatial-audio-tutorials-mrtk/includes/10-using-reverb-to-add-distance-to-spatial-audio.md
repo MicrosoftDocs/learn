@@ -4,7 +4,7 @@ Reverberation is the phenomenon of persistence of sound after it is stopped beca
 
 It is the same as the echo, but the distance between the source of the sound and also the obstacle through which it gets reflected is less if there is this reverberation. The quantitative characterization of the reverberation is done by using the parameter called reverberation time.
 
-## Sfx reverb
+## SFX reverb
 
 The SFX Reverb Effect takes the output of an Audio Mixer group and distorts it to create a custom reverb effect.
 
