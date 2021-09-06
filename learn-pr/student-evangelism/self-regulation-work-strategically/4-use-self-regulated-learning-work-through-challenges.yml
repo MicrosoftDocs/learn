@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.self-regulation-work-strategically.4-use-self-regulated-learning-work-through-challenges
+title: Use self-regulated learning to work through challenges
+metadata:
+  title: Use self-regulated learning to work through challenges
+  description: You will learn about self-regulated learning to work through challenges and how you can help support such learning in others.
+  ms.date: 05/13/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-use-self-regulated-learning-work-through-challenges.md)]
