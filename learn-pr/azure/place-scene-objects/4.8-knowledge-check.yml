@@ -26,10 +26,10 @@ quiz:
         - content: "Grid Object Collection"
           isCorrect: false
         - content: "Tile Grid Object Collection"
-          isCorrect: true
-        - content: "Scattered Grid Object Collection"
           isCorrect: false
-    - content: "Given a scenario, where you need an arrow always pointing in the direction of the sun, which 1.solver will you use to implement this function?"
+        - content: "Scattered Grid Object Collection"
+          isCorrect: true
+    - content: "Given a scenario, where you need an arrow always pointing in the direction of the sun, which solver will you use to implement this function?"
       choices:
         - content: "Directional Indicator"
           isCorrect: true
