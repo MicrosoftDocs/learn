@@ -1,5 +1,3 @@
-## 3. Exercise: Add Spatial audio to your Unity project
-
 Through this module series, you'll learn how to use head-related transfer function (HRTF) offload on HoloLens 2 and How to enable reverb when using HRTF offload.
 
 The [Microsoft Spatializer GitHub repository](https://github.com/microsoft/spatialaudio-unity) has a completed Unity project of this tutorial sequence.
@@ -28,19 +26,19 @@ Then follow the Changing the Spatial Awareness Display Option instructions to en
 
 ## Add Microsoft Spatializer to the Project
 
-1. Download and import the Microsoft Spatializer [Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage](https://github.com/microsoft/spatialaudio-unity/releases/download/v1.0.18/Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage)
+* Download and import the Microsoft Spatializer [Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage](https://github.com/microsoft/spatialaudio-unity/releases/download/v1.0.18/Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage)
+
 ## Enable the Microsoft Spatializer plugin
 
-2. After importing the **Microsoft Spatializer** you need to enable it. Open **Edit -> Project Settings -> Audio**, and change **Spatializer Plugin** to "Microsoft Spatializer".
+* After importing the **Microsoft Spatializer** you need to enable it. Open **Edit -> Project Settings -> Audio**, and change **Spatializer Plugin** to "Microsoft Spatializer".
 
-
-![Project Settings showing spatializer plugin](../media/spatial-audio-01-section-3-step-1-1.png)
+    ![Project Settings showing spatializer plugin](../media/spatial-audio-01-section-3-step-1-1.png)
 
 ## Enable spatial audio on your workstation
 
-1. On desktop versions of Windows, spatial audio is disabled by default. Enable it by right-clicking on the volume icon in the task bar. To get the best representation of what you'll hear on HoloLens 2, choose **Spatial sound -> Windows Sonic for Headphones**.
+* On desktop versions of Windows, spatial audio is disabled by default. Enable it by right-clicking on the volume icon in the task bar. To get the best representation of what you'll hear on HoloLens 2, choose **Spatial sound -> Windows Sonic for Headphones**.
 
+    ![Desktop spatial audio settings](../media/spatial-audio-01-section-4-step-1-1.png)
 
-![Desktop spatial audio settings](../media/spatial-audio-01-section-4-step-1-1.png)
 > [!NOTE]
 > This setting is only required if you plan to test your project in the Unity editor.

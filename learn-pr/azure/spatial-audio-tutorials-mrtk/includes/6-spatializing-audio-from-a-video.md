@@ -1,5 +1,3 @@
-## 6. Spatialize audio from a video
-
 ## Transcode
 
 When enabled, the source is transcoded into a format that is compatible with the target platform. If disabled, the original content is used, bypassing the potentially lengthy transcoding process.

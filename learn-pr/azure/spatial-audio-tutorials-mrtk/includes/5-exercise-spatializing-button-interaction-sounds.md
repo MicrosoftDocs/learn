@@ -1,22 +1,18 @@
-## 5. Exercise: Spatialize button interaction sounds
-
-In this module, you'll learn how to spatialize the button interaction sounds and also learn how to use an audio clip to test spatialized button interaction.  
+In this module, you'll learn how to spatialize the button interaction sounds and also learn how to use an audio clip to test spatialized button interaction.
 
 ## Add a button
 
 1. To add the Button prefab, in the **Project** window, select **Packages** and type "PressableButtonHoloLens2" in the search bar.
 
-
-
-![Button prefab in Assets](../media/spatial-audio-02-section-1-step-1-1.png)
+    ![Button prefab in Assets](../media/spatial-audio-02-section-1-step-1-1.png)
 2. The button prefab is the entry represented by a blue icon. Click and drag the **PressableButtonHoloLens2** prefab into the Hierarchy. With the **PressableButtonHoloLens2** object still selected, in the Inspector window, configure the **Transform** component as follows:
 
-* **Position**: X = 0, Y = -0.4, Z = 2
-* **Rotation**: X = 0, Y = 0, Z = 0
-* **Scale**: X = 1, Y = 1, Z = 1
+    * **Position**: X = 0, Y = -0.4, Z = 2
+    * **Rotation**: X = 0, Y = 0, Z = 0
+    * **Scale**: X = 1, Y = 1, Z = 1
 
-![Button transform](../media/spatial-audio-02-section-1-step-1-2.png)
-To focus in on the objects in the scene, you can double-click on the **PressableButtonHoloLens2** object, and then zoom slightly in again:
+    ![Button transform](../media/spatial-audio-02-section-1-step-1-2.png)
+    To focus in on the objects in the scene, you can double-click on the **PressableButtonHoloLens2** object, and then zoom slightly in again:
 
 ## Spatialize button feedback
 
@@ -26,21 +22,19 @@ In the **Audio Mixer** window you'll define destinations called **Mixer Groups**
 
 1. To open the **Audio Mixer** window, In the Unity menu, select **Window** > **Audio** > **Audio Mixer**:
 
-
-![Open Audio Mixer Window](../media/spatial-audio-02-section-2-step-1-1.png)
+    ![Open Audio Mixer Window](../media/spatial-audio-02-section-2-step-1-1.png)
 2. Create a **Mixer** by clicking the '+' next to **Mixers** and enter a suitable name to the Mixer for example, _Spatial Audio Mixer_. The new mixer will include a default **Group** called **Master**.
 
-
-![Mixer panel with first mixer](../media/spatial-audio-02-section-2-step-1-2.png)
+    ![Mixer panel with first mixer](../media/spatial-audio-02-section-2-step-1-2.png)
 3. In the Hierarchy window, select the **PressableButtonHoloLens2** then in the Inspector window
-find the **Audio Source** component and Configure the Audio Source component as follows:
+  find the **Audio Source** component and Configure the Audio Source component as follows:
 
-* For the **Output** property, click the selector and choose the **Mixer** that you created.
-* Check the **Spatialize** checkbox.
-* Move the **Spatial Blend** slider to 3D (1).
+    * For the **Output** property, click the selector and choose the **Mixer** that you created.
+    * Check the **Spatialize** checkbox.
+    * Move the **Spatial Blend** slider to 3D (1).
 
+   ![Button audio source](../media/spatial-audio-02-section-2-step-1-3.png)
 
-![Button audio source](../media/spatial-audio-02-section-2-step-1-3.png)
 > [!NOTE]
 > If you move **Spatial Blend** to 1 (3D) without checking the **Spatialize** checkbox, Unity will use its panning spatializer, instead of the **Microsoft Spatializer** with HRTFs.
 
@@ -51,14 +45,14 @@ By default, Unity will attenuate spatialized sounds as they get farther from the
 To disable this attenuation, you need to adjust the **Volume** curve In the **Audio Source** component.
 
 1. In the Hierarchy window, select the **PressableButtonHoloLens2** then in the Inspector window
-navigate to  **Audio Source** > **3D Sound Settings** and Configure as follows:
+  navigate to  **Audio Source** > **3D Sound Settings** and Configure as follows:
 
-* Set the **Volume Rolloff** property to Linear Rolloff
-* Drag the endpoint on the **Volume** curve (the red curve) from '0' on the y axis up to '1'
-* To adjust the shape of the **Volume** curve to be flat, drag the white curve shape control to be parallel to the X axis
+    * Set the **Volume Rolloff** property to Linear Rolloff
+    * Drag the endpoint on the **Volume** curve (the red curve) from '0' on the y axis up to '1'
+    * To adjust the shape of the **Volume** curve to be flat, drag the white curve shape control to be parallel to the X axis
 
+   [Button 3D sound settings](../media/spatial-audio-02-section-3-step-1-1.png)
 
-![Button 3D sound settings](../media/spatial-audio-02-section-3-step-1-1.png)
 ## Test the spatialize audio
 
 To test the spatialize audio in the unity editor you've to add an audio clip in the **Audio Source** component with **Loop** option checked in on **PressableButtonHoloLens2** object.
