@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-cloud-services-tutorials-mrtk.7-exercise-integrating-azure-custom-vision
-title: Exercise - Integrating Azure custom vision
+title: Exercise - Integrate Azure custom vision
 metadata:
-  title: Exercise - Integrating Azure custom vision
-  description: Description to Integrating azure custom vision
+  title: Exercise - Integrate Azure custom vision
+  description: Description to Integrate azure custom vision
   ms.date: 06/23/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"

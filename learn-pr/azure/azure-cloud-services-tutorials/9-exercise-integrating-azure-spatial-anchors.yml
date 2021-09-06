@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-cloud-services-tutorials-mrtk.9-exercise-integrating-azure-spatial-anchors
-title: Exercise - Integrating Azure spatial anchors
+title: Exercise - Integrate Azure spatial anchors
 metadata:
-  title: Exercise - Integrating Azure spatial anchors
-  description: Exercise on Integrating azure spatial anchors
+  title: Exercise - Integrate Azure spatial anchors
+  description: Exercise on Integrate azure spatial anchors
   ms.date: 06/23/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
