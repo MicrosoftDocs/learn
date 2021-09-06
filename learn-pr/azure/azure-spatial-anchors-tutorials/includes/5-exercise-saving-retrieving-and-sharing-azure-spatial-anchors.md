@@ -12,7 +12,7 @@ In this tutorial, you'll learn how to save Azure Spatial Anchors across multiple
 
 ## Persist Azure Spatial Anchors between app sessions
 
-In this section, you'll learn how to save and retrieve the Azure Anchor ID to and from the HoloLens' local disk. This will allow you to query Azure for the same anchor ID between different app sessions. It will enable the anchored holograms to be positioned at the same location as in the previous app session.
+In this section, you'll learn how to save and retrieve the Azure Anchor ID to and from the HoloLens's local disk. This will allow you to query Azure for the same anchor ID between different app sessions. It will enable the anchored holograms to be positioned at the same location as in the previous app session.
 
 1. In the Hierarchy window, expand the **ButtonParent** object and locate the two buttons named **SaveAzureAnchorIdToDisk** and **GetAzureAnchorIdFromDisk**:
 
@@ -34,8 +34,8 @@ In this section, you'll learn how to save and retrieve the Azure Anchor ID to an
     7. Start Azure session
     8. Find Azure anchor (positions the Rover Explorer at the location from step 3)
 
-    >[!Note]
-    >To fully restart the app, after exiting the immersive app view, the app window in the mixed reality home needs to be closed before relaunching it from the Start menu. For additional details, you can refer to the Using apps on HoloLens documentation.
+    > [!Note]
+    > To fully restart the app, after exiting the immersive app view, the app window in the mixed reality home needs to be closed before relaunching it from the Start menu. For additional details, you can refer to the Using apps on HoloLens documentation.
 
 ## Share Azure Spatial Anchors between devices
 
@@ -63,5 +63,5 @@ There are many ways to transfer Azure Anchor IDs between devices. In this exampl
     7. On HoloLens device 2: Start Azure session.
     8. On HoloLens device 2: Find Azure anchor (positions the Rover Explorer at the location from step 3).
 
-    >[!Tip]
-    >If you only have one HoloLens, you can still test the functionality by restarting the app instead of using a second HoloLens device.
+    > [!Tip]
+    > If you only have one HoloLens, you can still test the functionality by restarting the app instead of using a second HoloLens device.
