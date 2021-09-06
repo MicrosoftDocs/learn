@@ -36,21 +36,21 @@ Your team members have been writing their code and submitting it to other team m
 
 Consider the following questions:
 
-1. Which of these feedback options do you think are most effective, and why?
+- Which of these feedback options do you think are most effective, and why?
 
-    a. Suggested answer: Option 3 and Option 4 are the most effective. The feedback in these options provides specific details on what’s wrong, reinforces what’s right, and provides strategies for improving the developer’s skills.
+    Suggested answer: Option 3 and Option 4 are the most effective. The feedback in these options provides specific details on what’s wrong, reinforces what’s right, and provides strategies for improving the developer’s skills.
 
-1. Which of these feedback options meets all criteria for effective and wise feedback?
+- Which of these feedback options meets all criteria for effective and wise feedback?
 
-    a. Suggested answer:
+    Suggested answer:
 
     - Option 3 meets all the criteria for effective and wise feedback. It starts by signaling the intention of the reviewer and reinforcing confidence in the recipient. It also provides specific details on the errors. Finally, it provides suggestions for next steps that the developer can take to improve their programming skills.
 
     - Option 4 also signals intention and addresses a different type of issue by displaying empathy, understanding, and a sincere desire to help the listener.
 
-1. Which of these feedback options don’t qualify as effective or wise feedback, and why?
+- Which of these feedback options don’t qualify as effective or wise feedback, and why?
 
-    a. Options 1 and 2 don’t meet all the requirements for effective feedback:
+    Options 1 and 2 don’t meet all the requirements for effective feedback:
 
     - Option 1 might put the developer on the defensive by embarrassing them in front of other team members. No one likes to be criticized in public. Moreover, the feedback doesn’t really provide any helpful direction on what was wrong, how the developer can rectify the mistakes, or the steps the developer can take to bridge their knowledge gaps.
 
@@ -58,19 +58,19 @@ Consider the following questions:
 
 Reflect on the following questions and think of the various ways in which you can provide effective and wise feedback:
 
-1. Can you come up with an example of criticism and how it could be delivered wisely?
+- Can you come up with an example of criticism and how it could be delivered wisely?
 
-1. Why does it matter how a person delivers feedback? Isn’t honesty the best policy?
+- Why does it matter how a person delivers feedback? Isn’t honesty the best policy?
 
-1. Why do you think a feedback provider might hold back negative criticism?
+- Why do you think a feedback provider might hold back negative criticism?
 
-1. Why do our identities—race, gender, or other ways we identify—impact interactions about feedback?
+- Why do our identities—race, gender, or other ways we identify—impact interactions about feedback?
 
-1. What is the potential harm to people who fail to receive specific, candid feedback?
+- What is the potential harm to people who fail to receive specific, candid feedback?
 
-1. How can a reviewer improve the quality of the feedback when the person might not yet trust them?
+- How can a reviewer improve the quality of the feedback when the person might not yet trust them?
 
-1. What strategies might help both parties to contribute to successful communication?
+- What strategies might help both parties to contribute to successful communication?
 
 ## Scenario 3
 

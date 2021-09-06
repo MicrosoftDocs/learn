@@ -3,7 +3,7 @@ uid: learn.student-evangelism.give-receive-effective-feedback
 metadata:
   title: 'Give and receive effective feedback'
   description: Learn how to give and receive effective feedback.
-  ms.date: 05/13/2021
+  ms.date: 09/07/2021
   author: interurban
   ms.author: jadenyer
   ms.topic: interactive-tutorial
@@ -27,13 +27,13 @@ products:
 - azure
 - vs-code
 units:
-- learn.student-evangelism.give-receive-effective-feedback.1-introduction
-- learn.student-evangelism.give-receive-effective-feedback.2-characteristics-components-effective-feedback
-- learn.student-evangelism.give-receive-effective-feedback.3-wise-feedback-technical-environments
-- learn.student-evangelism.give-receive-effective-feedback.4-provide-receive-wise-feedback
-- learn.student-evangelism.give-receive-effective-feedback.5-tips-effective-feedback
-- learn.student-evangelism.give-receive-effective-feedback.6-exchange-effective-feedback
-- learn.student-evangelism.give-receive-effective-feedback.7-exercise-reflect-effective-feedback
-- learn.student-evangelism.give-receive-effective-feedback.8-summary
+- learn.student-evangelism.give-receive-effective-feedback.introduction
+- learn.student-evangelism.give-receive-effective-feedback.characteristics-components-effective-feedback
+- learn.student-evangelism.give-receive-effective-feedback.wise-feedback-technical-environments
+- learn.student-evangelism.give-receive-effective-feedback.provide-receive-wise-feedback
+- learn.student-evangelism.give-receive-effective-feedback.tips-effective-feedback
+- learn.student-evangelism.give-receive-effective-feedback.exchange-effective-feedback
+- learn.student-evangelism.give-receive-effective-feedback.exercise-reflect-effective-feedback
+- learn.student-evangelism.give-receive-effective-feedback.summary
 badge:
   uid: learn.student-evangelism.give-receive-effective-feedback.badge 

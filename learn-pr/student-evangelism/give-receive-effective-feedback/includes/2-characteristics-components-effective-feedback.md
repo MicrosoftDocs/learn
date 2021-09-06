@@ -46,7 +46,9 @@ Effective feedback has the following characteristics:
 
 - It conveys your trust that person will understand and complete the task eventually.
 
-- While giving feedback, it’s easy to forget that different people might receive the feedback differently. Try to be sensitive about other people’s feelings and avoid statements that might offend them or put them in a defensive position.  Here are some examples of not-so-effective feedback: “I don't know why you're having problems with this task. It's an easy task to do.”
+While giving feedback, it’s easy to forget that different people might receive the feedback differently. Try to be sensitive about other people’s feelings and avoid statements that might offend them or put them in a defensive position.  Here are some examples of not-so-effective feedback: 
+
+- “I don't know why you're having problems with this task. It's an easy task to do.”
 
 - “I struggled with your approach to this problem.”
 

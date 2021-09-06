@@ -48,13 +48,13 @@ Framing feedback in the buffered manner helps to build trust, signals belonging,
 
 ### Be specific
 
-For feedback to be helpful and useful, you should make it specific. Providing as many details as possible helps people identify their areas of improvement and the skill sets that they need to further develop. Specific feedback also helps the recipient focus on the actual code that is being reviewed. When you receive vague feedback such as, "This was a bad way to structure this code", people are more likely to take it personally.
+For feedback to be helpful and useful, you should make it specific. Providing as many details as possible helps people identify their areas of improvement and the skillsets that they need to further develop. Specific feedback also helps the recipient focus on the actual code that is being reviewed. When you receive vague feedback such as, "This was a bad way to structure this code", people are more likely to take it personally.
 
 For example, one of the team members has submitted their code for a game feature. You are aware that although this developer has very strong programming skills in C++, they’re still new to programming in Java. Consider the following options for framing your feedback:
 
-1. This code doesn’t run and there a lot of syntax and compile errors. Can you please fix the program?
+- This code doesn’t run and there a lot of syntax and compile errors. Can you please fix the program?
 
-1. I like the way you’ve designed the program structure. This feature will be a great addition to the game. However, I noticed a few syntax and compile errors. I think you might have used some data structures and libraries from C++ that don’t work in Java. The good news is that Java provides built-in libraries that might be able to achieve similar results. I can point you to the relevant libraries. Do you want to try rewriting the code using those instead?
+- I like the way you’ve designed the program structure. This feature will be a great addition to the game. However, I noticed a few syntax and compile errors. I think you might have used some data structures and libraries from C++ that don’t work in Java. The good news is that Java provides built-in libraries that might be able to achieve similar results. I can point you to the relevant libraries. Do you want to try rewriting the code using those instead?
 
 Evaluate both options. Which feedback do you think would be more useful to the developer? Which one might directly result in improved code and achieve better results?
 

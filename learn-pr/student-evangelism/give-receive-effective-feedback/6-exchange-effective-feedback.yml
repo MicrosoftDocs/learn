@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.give-receive-effective-feedback.6-exchange-effective-feedback
+uid: learn.student-evangelism.give-receive-effective-feedback.exchange-effective-feedback
 title: Examine strategies to exchange effective feedback
 metadata:
   title: Examine strategies to exchange effective feedback
   description: This unit examines various strategies to exchange effective feedback. How to give and receive feedback and it's also looking to guide mentors and managers in feedback giving.
-  ms.date: 05/13/2021
+  ms.date: 09/07/2021
   author: interurban
   ms.author: jadenyer
   ms.topic: interactive-tutorial
@@ -24,4 +24,4 @@ quiz:
           explanation: "Incorrect. It is more important to consider the other person’s perspective while providing feedback as that indicates understanding and empathy."
         - content: "Offer to complete the program coding themselves."
           isCorrect: false
-          explanation: "Incorrect. Incorrect. By correcting the errors and finishing the task themselves, reviewers are not providing the person an opportunity to learn from mistakes and improve their skills."
+          explanation: "Incorrect. By correcting the errors and finishing the task themselves, reviewers are not providing the person an opportunity to learn from mistakes and improve their skills."
