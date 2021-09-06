@@ -1,6 +1,11 @@
-Through these series of modules,
+Through these series of modules, you have implemented speech recognition powered by Azure, run the application on our device to ensure the feature is working correctly, and implemented speech commands powered by Azure. 
+Your project can now successfully translate the words you speak into several different languages. In addition, you can run the application on our device to ensure the feature is working correctly.
 
-* We have implemented speech recognition powered by Azure. We run the application on our device to ensure the feature is working correctly.
-* We have implemented speech commands powered by Azure.  Finally, we run the application on our device to ensure the feature is working properly.
-* Our project can now successfully translate the words you speak into several different languages. In addition, we can run the application on our device to ensure the feature is working correctly.
-*Our project now has AI-powered speech commands, allowing our application to recognize the users' intent even if they do not utter precise commands. We can run the application on our device to ensure the feature is working correctly.
+## Next Steps
+Explore LUIS and integrate it in your own application. Consider trying following interactions:
+* Connect multiple devices or clients in a conversation.
+* Create custom voice fonts unique to your brand or product.
+
+## Further Reading
+* Learn more about [Speech service](https://docs.microsoft.com/azure/cognitive-services/speech-service/overview)
+* Learn more about [LUIS](https://docs.microsoft.com/azure/cognitive-services/luis/what-is-luis)

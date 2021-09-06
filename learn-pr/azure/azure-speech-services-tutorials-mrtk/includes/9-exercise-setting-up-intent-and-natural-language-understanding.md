@@ -1,6 +1,6 @@
 In this module, you'll explore the Azure Speech Service's intent recognition. The intent recognition allows you to equip our application with AI-powered speech commands, where users can say non-specific speech commands and still have their intent understood by the system.
 
-## Prepare The Scene
+## Prepare the scene
 
 1. In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Intent Recognizer (Script)** component to the Lunarcom object:
 
@@ -17,7 +17,7 @@ In this module, you'll explore the Azure Speech Service's intent recognition. Th
 
     ![Assign each of the buttons](../media/tutorial-4-section-1-step-1-3.png)
 
-## Create The Azure Language Understanding Resource
+## Create the Azure language understanding resource
 
 In this section, you'll create an Azure prediction resource for the Language Understanding Intelligent Service (LUIS) app you'll create in the next section.
 
@@ -60,7 +60,7 @@ In this section, you'll create an Azure prediction resource for the Language Und
 
     ![Message display](../media/tutorial-4-section-2-step-1-6.png)
 
-## Create The Language Understanding Intelligent Service (LUIS)
+## Create the Language Understanding Intelligent Service (LUIS)
 
 In this section, you'll create a LUIS app, configure and train its prediction model, and connect it to the Azure prediction resource you created in the previous step.
 
@@ -78,7 +78,7 @@ The main steps you will take to achieve this are:
 6. Train, test, and publish the app
 7. Assign an Azure prediction resource to the app
 
-## 1. Create A LUIS App
+## 1. Create a LUIS app
 
 Using the same user account you used when creating the Azure resource in the previous section, sign in to <a href="https://www.luis.ai" target="_blank">LUIS</a>, select your country, and agree to the terms of use. In the next step, when asked to **Link your Azure account**, choose **Continue using your trial key**, to use an Azure authoring resource instead.
 
@@ -100,7 +100,7 @@ Using the same user account you used when creating the Azure resource in the pre
 
     ![App's dashboard page](../media/tutorial-4-section-3-step-1-2.png)
 
-## 2. Create Intents
+## 2. Create intents
 
 1. From the Dashboard page, navigate to the Build > App Assets > **Intents** page, then click **Create** and enter the following value in the **Create new intent** popup window:
 
@@ -139,7 +139,7 @@ Using the same user account you used when creating the Azure resource in the pre
     > [!CAUTION]
     > For the purpose of this tutorial, your Unity project will reference the words 'hint', 'hints', 'reset', and 'launch'. Consequently, it is extremely important that you spell these words in the exact same way.
 
-## 4. Create Entities
+## 4. Create entities
 
 1. From the PressButton intent page, navigate to the Build > App Assets > **Entities** page, then click **Create** and enter the following values in the **Create new entity** popup window:
 
@@ -157,7 +157,7 @@ Using the same user account you used when creating the Azure resource in the pre
     > [!CAUTION]
     > For the purpose of this tutorial, your Unity project will reference these entities by their names, i.e. 'Action' and 'Target'. Consequently, it is extremely important that you name your entities exactly the same.
 
-## 5. Assign Entities To The Example Utterances
+## 5. Assign entities to the example utterances
 
 From the Entities page, navigate back to the **PressButton** intent page.
 
@@ -197,7 +197,7 @@ From the Entities page, navigate back to the **PressButton** intent page.
 
     ![All the example utterances have been labeled](../media/tutorial-4-section-3-step-5-5.png)
 
-## 6. Train, Test And Publish The App
+## 6. Train, test and publish the app
 
 1. To train the app, click the **Train** button and wait for the training process to complete:
 
@@ -230,7 +230,7 @@ From the Entities page, navigate back to the **PressButton** intent page.
 
     ![Azure resources page](../media/tutorial-4-section-3-step-6-6.png)
 
-## Connect The Unity Project To The LUIS App
+## Connect the unity project to the LUIS app
 
 1. On the Manage > Application Settings > **Azure Resources** page, click the **copy** icon to copy the **Example Query**:
 
@@ -242,7 +242,7 @@ From the Entities page, navigate back to the **PressButton** intent page.
 
     ![Pass the example query you copied](../media/tutorial-4-section-4-step-1-2.png)
 
-## Test And Improve The Intent Recognition
+## Test and improve the intent recognition
 
 1. To use intent recognition directly in the Unity editor, you must allow your development computer to use dictation. To verify this setting, open Windows **Settings** then choose **Privacy** > **Speech** and ensure **Online speech recognition** is turned on:
 

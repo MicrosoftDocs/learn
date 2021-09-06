@@ -1,4 +1,8 @@
-We will create a Mixed Reality application that explores the use of Azure Speech Services with the HoloLens. On completing this module series, we will use your device's microphone to transcribe speech to text in real-time. In addition, translate our speech into other languages and leverage the Intent recognition feature to understand voice commands using artificial intelligence.
+We will create a Mixed Reality application that explores the use of Azure Speech Services with the HoloLens. The Speech service is the unification of speech-to-text, text-to-speech, and speech translation into a single Azure subscription.
+
+Imagine a scenario where you are expected to build an application capable of translating your speech into other languages. It would be best if you had a brief overview of incorporating that feature in your application. Azure Speech Services helps you in similar functions.
+
+We will use your device's microphone to transcribe speech to text in real-time on completing this module series. In addition, translate our speech into other languages and leverage the Intent recognition feature to understand voice commands using artificial intelligence.
 
 ## Learning Objectives
 

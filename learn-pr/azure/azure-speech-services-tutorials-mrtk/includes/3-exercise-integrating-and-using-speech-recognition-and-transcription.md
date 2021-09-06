@@ -1,6 +1,6 @@
 In this module, you will create a Mixed Reality application that explores the use of Azure Speech Services with the HoloLens 2. When you complete this series, you will be able to use your device's microphone to transcribe speech to text in real-time, translate your speech into other languages, and you will be able to leverage the Intent recognition feature to understand voice commands using artificial intelligence.
 
-## Create And Prepare The Unity Project
+## Create and prepare the Unity project
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
@@ -15,7 +15,7 @@ For this, first follow the Initializing your project and first application, excl
 
 Then follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile**  and change the display options for the spatial awareness mesh to **Occlusion**.
 
-## Configure The Speech Commands Start Behavior
+## Configure the speech commands start behavior
 
 Because you will use the Speech SDK for speech recognition and transcription, you need to configure the MRTK Speech Commands, so they do not interfere with the Speech SDK functionality. To achieve this, you can change the speech commands start behavior from Auto Start to Manual Start.
 
@@ -23,7 +23,7 @@ Because you will use the Speech SDK for speech recognition and transcription, yo
 
     ![Change the speech commands](../media/tutorial-1-section-2-step-1-1.png)
 
-## Configure The Capabilities
+## Configure the capabilities
 
 1. In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Publishing Settings** section:
 
@@ -33,7 +33,7 @@ Because you will use the Speech SDK for speech recognition and transcription, yo
 
     ![Enable the capabilities](../media/tutorial-1-section-3-step-1-2.png)
 
-## Import The Tutorial Assets
+## Import the tutorial assets
 
 1. Download and **import** the following Unity custom packages **in the order they are listed**:
 
@@ -45,7 +45,7 @@ Because you will use the Speech SDK for speech recognition and transcription, yo
 
     ![Project window must look similar to this](../media/tutorial-1-section-4-step-1-1.png)
 
-## Prepare The Scene
+## Prepare the scene
 
 In this section, you will prepare the scene by adding the tutorial prefab and configure the Lunarcom Controller (Script) component to control your scene.
 
@@ -69,7 +69,7 @@ In this section, you will prepare the scene by adding the tutorial prefab and co
 
     ![Configure the buttons](../media/tutorial-1-section-5-step-1-5.png)
 
-## Connect The Unity Project To The Azure Resource
+## Connect the Unity project to the Azure resource
 
 To use Azure Speech Services, you need to create an Azure resource and obtain an API key for the Speech Service. Follow the [Try the Speech service for free](/azure/cognitive-services/speech-service/get-started) instructions and make a note of your service region (also known as Location) and API key (also known as Key1 or Key2).
 
@@ -80,7 +80,7 @@ To use Azure Speech Services, you need to create an Azure resource and obtain an
 
     ![Configure Speech SDK Credentials](../media/tutorial-1-section-6-step-1-1.png)
 
-## Use Speech Recognition To Transcribe Speech
+## Use speech recognition to transcribe speech
 
 1. In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Speech Recognizer (Script)** component to the Lunarcom object:
 
