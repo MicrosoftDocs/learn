@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.self-regulation-work-strategically.6-knowledge-check
+uid: learn.student-evangelism.self-regulation-work-strategically.8-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!include[](includes/8-knowledge-check.md)]
 quiz:
   questions:
   - content: 'What tool or method offers these three benefits? 1. It helps account for time spent on a project. 2. It is used to track test steps and results to troubleshoot a problem. 3. It is used to review your process with someone else to get feedback.'
