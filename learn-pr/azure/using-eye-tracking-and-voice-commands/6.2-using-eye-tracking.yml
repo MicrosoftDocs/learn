@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.using-eyetracking-and-voice-commands-mrtk.6.2-using-eye-tracking
+title: Using eye tracking
+metadata:
+  title:  Using eye tracking
+  description: Introduction for Using eye tracking
+  ms.date: 06/23/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 5
+content: |
+  [!include[](includes/6.2-using-eye-tracking.md)]
