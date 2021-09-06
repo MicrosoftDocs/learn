@@ -16,9 +16,9 @@ quiz:
   questions:
     - content: "What are the different types of services provided by the cloud?"
       choices:
-        - content: "Paas"
+        - content: "PaaS"
           isCorrect: false
-        - content: "Iaas"
+        - content: "IaaS"
           isCorrect: false
         - content: "All of the above"
           isCorrect: true

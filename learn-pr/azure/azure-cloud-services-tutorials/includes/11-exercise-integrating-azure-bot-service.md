@@ -1,12 +1,10 @@
-
-
 In this module, you'll learn how to use **Azure Bot Service** in the **HoloLens 2** demo application to add Language Understanding (LUIS) and letting the Bot assist the user when searching for **Tracked Objects**. This module is a two-part module where in the first part, you create the Bot with the [Bot Composer](/composer/introduction) as a code-free solution and take a quick look in the Azure Function that feeds the Bot with the needed data. Then, in the second part, you use the **BotManager (script)** in the Unity project to consume the hosted Bot Service.
 
 ## Understanding Azure Bot Service
 
-The **Azure Bot Service** empowers developers to create intelligent bots that can maintain natural conversation with users thanks to **LUIS**. A conversational Bot is a great way to expand the ways a user can interact with your application. A Bot can act as a knowledge base with a [QnA Maker](/azure/bot-service/bot-builder-howto-qna?preserve-view=true&tabs=cs&view=azure-bot-service-4.0) to maintaining sophisticated conversation with the power of [Language Understanding (LUIS)](/azure/bot-service/bot-builder-howto-v4-luis?preserve-view=true&tabs=csharp&view=azure-bot-service-4.0).
+The **Azure Bot Service** empowers developers to create intelligent bots that can maintain natural conversation with users thanks to **LUIS**. A conversational Bot is a great way to expand the ways a user can interact with your application. A Bot can act as a knowledge base with a [QnA Maker](/Azure/bot-service/bot-builder-howto-qna?preserve-view=true&tabs=cs&view=Azure-bot-service-4.0) to maintaining sophisticated conversation with the power of [Language Understanding (LUIS)](/Azure/bot-service/bot-builder-howto-v4-luis?preserve-view=true&tabs=csharp&view=Azure-bot-service-4.0).
 
-Learn more about [Azure Bot Service](/azure/bot-service/bot-service-overview-introduction?preserve-view=true&view=azure-bot-service-4.0).
+Learn more about [Azure Bot Service](/Azure/bot-service/bot-service-overview-introduction?preserve-view=true&view=Azure-bot-service-4.0).
 
 ## Part 1 - Creating the Bot
 
@@ -17,11 +15,11 @@ The goal of the bot is to have the abilities to tell how many *Tracked Objects* 
 
 You're about to start creating the Bot, but to make it useful you need to give it a resource from which it can pull data. Since the *Bot* can count the amount of **Tracked Objects**, find specific ones by name and tell details, you'll use a Azure Function that has access to the **Azure Table storage**.
 
-Download the Tracked Objects Azure Function project: [AzureFunction_TrackedObjectsService.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureFunction_TrackedObjectsService.zip) and extract it to your hard drive.
+Download the Tracked Objects Azure Function project: [AzureFunction_TrackedObjectsService.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/Azure-cloud-services-v2.4.0/AzureFunction_TrackedObjectsService.zip) and extract it to your hard drive.
 
 This Azure Function has two actions, **Count** and **Find** which can be invoked via basic *HTTP* *GET* calls. You can inspect the code in **Visual Studio**.
 
-Learn more about [Azure Functions](/azure/azure-functions/functions-overview).
+Learn more about [Azure Functions](/Azure/Azure-functions/functions-overview).
 
 The **Count** function queries from the **Table storage** all **TrackedObjects** from the table, simple. On the other hand, the **Find** function takes a *name* query parameter from the *GET* request and queries the **Table storage** for a matching **TrackedObject** and returns a DTO as JSON.
 
@@ -29,7 +27,7 @@ The **Count** function queries from the **Table storage** all **TrackedObjects**
 
 ![AzureFunction_TrackedObjectsService folder](../media/tutorial-5-section-3-step-1-1.png)
 
-2. Once file loaded in visual studio, Right click over **Tracked object sevice** in solution explorer and select publish
+2. Once file loaded in visual studio, Right click over **Tracked object service** in solution explorer and select publish
 
 ![Publish Tracked object service](../media/tutorial-5-section-3-step-1-2.png)
 
@@ -53,7 +51,7 @@ Select Azure and click on **Next** button
 * For **Name**, enter a suitable name for the service, for example, *TrackedObjectsService*
 * For **Plan Type**, choose consumption
 * For **Location**, choose a location close to your app users' physical location, for example *(US) West US*
-* For **Resource Group** and **Storage**, choose respective azure group and storage account have been created in pervious chapters.
+* For **Resource Group** and **Storage**, choose respective Azure group and storage account have been created in pervious chapters.
 
 7. Once Function App created click on **Finish** button 
 
@@ -63,7 +61,7 @@ Select Azure and click on **Next** button
 
 ![Publish function](../media/tutorial-5-section-3-step-1-8.png)
 
-9. Once completion of publish click on **Manage in Azure portal** under Actions section, it's take you to specific function in azure portal and click on **Configuration** which is under the *Settings* section. There on **Application Settings** you need to provide the *Connection string* to the **Azure Storage** where the **Tracked Objects** are stored. Click on **New Application setting** and use for name: **AzureStorageConnectionString** and for value provide the correct *Connection string*. After that click on **Save** and the **Azure Function** is ready to server the *Bot*, which you'll create next.
+9. Once completion of publish click on **Manage in Azure portal** under Actions section, it's take you to specific function in Azure portal and click on **Configuration** which is under the *Settings* section. There on **Application Settings** you need to provide the *Connection string* to the **Azure Storage** where the **Tracked Objects** are stored. Click on **New Application setting** and use for name: **AzureStorageConnectionString** and for value provide the correct *Connection string*. After that click on **Save** and the **Azure Function** is ready to server the *Bot*, which you'll create next.
 
 10. To get URL of count and Find, select **Functions** which is under the *Functions* section. here you can find both Count and Find function, select Count function on top side you can find the *Get Function Url* button. 
 Follow the same procedure to get Find function Url.
@@ -78,7 +76,7 @@ You can download the latest releases from the [GitHub repository](https://github
 
 ![Bot Framework Composer Home](../media/tutorial-5-section-4-step-1-1.png)
 
-2. We have prepared a bot composer project, which provides the needed dialogues and triggers for this tutorial. Download the Bot Framework Composer project: [BotComposerProject_TrackedObjectsBot.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/BotComposerProject_TrackedObjectsBot.zip) and extract it to your hard drive.
+2. We have prepared a bot composer project, which provides the needed dialogues and triggers for this tutorial. Download the Bot Framework Composer project: [BotComposerProject_TrackedObjectsBot.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/Azure-cloud-services-v2.4.0/BotComposerProject_TrackedObjectsBot.zip) and extract it to your hard drive.
 
 3. On the top bar click on **Open** and select the Bot Framework project you've downloaded which is named **TrackedObjectsBot**. After the project is fully loaded, you should see the project ready.
 

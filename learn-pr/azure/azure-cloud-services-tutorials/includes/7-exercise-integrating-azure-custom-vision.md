@@ -1,5 +1,3 @@
-
-
 In this module, you will learn how to use **Azure Custom Vision**.You will upload a set of photos to associate it with a *Tracked Object*, upload them to the **Custom Vision** service and start the training process. Then you will use the service to detect the *Tracked Object* by capturing photos from the webcam feed.
 
 ## Understanding Azure Custom Vision
@@ -66,8 +64,8 @@ In the [custom vision](https://www.customvision.ai/projects) dashboard, open the
 
 ## Detect objects
 
-1. Before detecting the objects, we have to change the Api key present in  **ObjectDetectionManager (script)** under project settings that already assign with custom vision key.
+1. Before detecting the objects, we have to change the API-key present in  **ObjectDetectionManager (script)** under project settings that already assign with custom vision key.
 
-2. Find and locate the custom vision resource in Azure portal. There click on *Keys and Endpoint* to retrieve the Api key and replace with old Api key under project settings.
+2. Find and locate the custom vision resource in Azure portal. There click on *Keys and Endpoint* to retrieve the API-key and replace with old API-key under project settings.
 
 3. You can now put the trained model to the test, run the application and from the *main menu* click on **Search Object** and type the name of the **Tracked Object** in question. The **Object Card** will appear and click on the **Custom Vision** button. From here the **ObjectDetectionManager** will start taking image captures in the background from the camera and the progress will be indicated on the menu. Point the camera to the object you used to train the model and you will see that after a short while it will detect the object.

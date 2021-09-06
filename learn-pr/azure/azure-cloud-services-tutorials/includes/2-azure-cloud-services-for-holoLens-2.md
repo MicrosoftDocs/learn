@@ -1,5 +1,4 @@
-
-Azure Cloud Services is an example of a platform as a service (PaaS). Like Azure App Service, this technology is designed to support applications that are scalable, reliable, and inexpensive to operate. In the same way that App Service is hosted on virtual machines (VMs), so too is Azure Cloud Services.
+Azure Cloud Services is an example of a Platform as a Service (PaaS). Like Azure App Service, this technology is designed to support applications that are scalable, reliable, and inexpensive to operate. In the same way that App Service is hosted on virtual machines (VMs), so too is Azure Cloud Services.
 
 ## Azure storage
 
@@ -17,7 +16,7 @@ Azure Spatial Anchors is a managed cloud service and platform that enables multi
 
 Azure Bot Service is Microsoft’s artificial intelligence (AI) chatbot offered as a service on the Azure cloud service marketplace.
 
-Azure Bot Service offers the ability to add intelligent agents that are capable of conversation without having to commit the resources to develop one’s own AI. The service can be added to websites, apps, email, GroupMe, Facebook Messenger, Kik, Skype, Slack, Microsoft Teams, Telegram, SMS, Twilio, Cortana and Skype for Business.
+Azure Bot Service offers the ability to add intelligent agents that are capable of conversation without having to commit the resources to develop one’s own AI. The service can be added to websites, apps, email, GroupMe, Facebook Messenger, Skype, Slack, Microsoft Teams, Telegram, SMS, Twilio, Cortana and Skype for Business.
 
 ## InternetClient
 
