@@ -9,10 +9,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 title: Using eye-tracking and voice commands
-summary: Use eye-tracking and voice commands in your unity project and enchance user experience
+summary: Use eye-tracking and voice commands in your unity project and enhance user experience
 abstract: |
   By the end of this module you will be able to:
-  - Learn how to enable eye-tracking for HoleLens 2
+  - Learn how to enable eye-tracking for HoloLens 2
   - Learn how to use eye-tracking to trigger action
   - Learn how to create speech commands
   - Learn how to control speech commands globally and locally
