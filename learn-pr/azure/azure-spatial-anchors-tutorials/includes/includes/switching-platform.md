@@ -7,14 +7,14 @@
 
 ## Import The Tutorial Assets
 
-1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages, please follow this [tutorial](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
+1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages,  follow this [tutorial](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
 
-2. Download and **import** the following Unity custom packages in the order they are listed:
+2. Download and **import** the following Unity custom packages in the order they're listed:
 
     * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
     * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.XRplugginManagement.2.5.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.5.3.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.XRplugginManagement.2.5.3.unitypackage)
 
-    After you have imported the tutorial assets your Project window should look similar to this:
+    After you've imported the tutorial assets your Project window should look similar to this image:
 
     ![Install AzurespatialAnchors package](../../media/asa-02-section-3-step-1-1.png)
 
@@ -32,14 +32,14 @@
 
 ## Import The Tutorial Assets
 
-1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages, please follow this [tutorial](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
+1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages, follow this [tutorial](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
 
-2. Download and **import** the following Unity custom packages in the order they are listed:
+2. Download and **import** the following Unity custom packages in the order they're listed:
 
     * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
     * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.XRplugginManagement.2.5.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.5.3.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.XRplugginManagement.2.5.3.unitypackage)
 
-    After you have imported the tutorial assets your Project window should look similar to this:
+    After you've imported the tutorial assets your Project window should look similar to this image:
 
     ![Import tutorial assests.](../../media/asa-02-section-3-step-1-1.png)
 
@@ -57,14 +57,14 @@
 
 ## Import The Tutorial Assets
 
-1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages, please follow this [tutorial](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
+1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages, follow this [tutorial](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
 
-2. Download and **import** the following Unity custom packages in the order they are listed:
+2. Download and **import** the following Unity custom packages in the order they're listed:
 
     * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage.](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
     * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.XRplugginManagement.2.5.3.unitypackage.](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
 
-    After you have imported the tutorial assets your Project window should look similar to this:
+    After you've imported the tutorial assets your Project window should look similar to this image:
 
     ![Import AzurespatialAnchors package - Legacy WSA](../../media/asa-02-section-3-step-1-1.png)
 
