@@ -28,47 +28,48 @@ Go to the [Configuring the MRTK profiles](https://docs.microsoft.com/en-us/windo
 [!INCLUDE[]](includes/switching-platform.md)]
 
 ## Configuring And Preparing The Scene
+
 In this section, you'll prepare the scene by adding some of the tutorial prefabs.
 
 1. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefabs** folder. While holding down the CTRL button, select the following six prefabs.
 
-* ButtonParent
-* ClippingObjects
-* HandSpatialMapButton
-* Instructions
-* ModelParent
-* Platform
+    * ButtonParent
+    * ClippingObjects
+    * HandSpatialMapButton
+    * Instructions
+    * ModelParent
+    * Platform
 
-![Adding prefabs 1](../media/c.png)
+    ![Adding prefabs 1](../media/c.png)
 
 2. Drag these models from the prefabs folder into the **Hierarchy** window.
 
-![Adding prefabs 2](../media/d.png)
+    ![Adding prefabs 2](../media/d.png)
 
-To focus on the objects in the scene, you can double-click the ModelParent object and then zoom in:
+    To focus on the objects in the scene, you can double-click the ModelParent object and then zoom in:
 
-![Focus objects on scene](../media/e.png)
+    ![Focus objects on scene](../media/e.png)
 
->[!Tip]
->If you feel that the large icons in your scene are distracting (for example, the large framed 'T' icons), you can hide them by [toggling the Gizmos](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the "off" position.
+    >[!Tip]
+    >If you feel that the large icons in your scene are distracting (for example, the large framed 'T' icons), you can hide them by [toggling the Gizmos](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the "off" position.
 
 ## Configuring The Buttons To Operate The Scene
 
 In this section, you'll add scripts to the scene and create button events that demonstrate the fundamentals of model switching and clipping functionality.
 
-## 1. Configuring The Interactable (Script) Component
+## Configuring The Interactable (Script) Component
 
 1. In the Hierarchy window, expand the **ButtonParent** object and select the next button. In the Inspector window, locate the **Interactable (Script)** component and click on plus sign icon ("+") under **OnClick ()** event.
 
-![Interactable script 1](../media/f.png)
+    ![Interactable script 1](../media/f.png)
 
 2. With the **NextButton** object still selected in the Hierarchy window, drag the **ButtonParent** object from the Hierarchy window into the empty **None (Object)** field of the event you just added to make the ButtonParent object listen for the button click event from this button:
 
-![Interactable script 2](../media/g.png)
+    ![Interactable script 2](../media/g.png)
 
 3. Click the **No Function**  dropdown of the same event and then select ViewButtonControl > NextModel () to set the NextModel () function as the action that is triggered when the button is pressed:
 
-![Interactable script](../media/h.png)
+    ![Interactable script](../media/h.png)
 
 ## Configuring The Remaining Buttons
 
@@ -87,18 +88,18 @@ We've provided six different 3D models for demonstration. Expand the **ModelPare
 
     In the **Size** field, enter the number of 3D models you would like to have in your scene--in this case, six. This creates fields for adding new 3D models.
 
-![Enter the number of 3D models](../media/i.png)
+    ![Enter the number of 3D models](../media/i.png)
 
 2. Drag each child object of ModelParent Object into these fields.
 
-![Drag and drop each child object](../media/j.png)
+    ![Drag and drop each child object](../media/j.png)
 
 3. Drag the **ClippingObjects** object from the Hierarchy window to the **Toggle Button (Script)** component's **Clipping Object** field.
 
-> [!Note]
-> Stay in button parent object only.
+    > [!Note]
+    > Stay in button parent object only.
 
-![Drag and drop clipping object](../media/k.png)
+    ![Drag and drop clipping object](../media/k.png)
 
 4. In the Hierarchy window, select the ClippingObjects prefab and enable it in the Inspector window to turn on the **Clipping objects**.
 
@@ -110,7 +111,7 @@ In the Hierarchy window, expand the **ClippingObjects** object to expose the thr
 
 1. To configure the **ClippingSphere** object, select it, and then in the Inspector window, locate the **Clipping Sphere (Script)** component. Next, enter the number of renderers in the **size** field that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create fields for adding renderers. Next, drag the MarsCuriosityRover object's child model objects into these fields.
 
-![Configure Clipping Objects to enable clipping feature](../media/i.png)
+    ![Configure Clipping Objects to enable clipping feature](../media/i.png)
 
 2. In the Hierarchy window, select the ClippingObjects prefab and enable it in the Inspector window to turn on the Clipping objects.
 
@@ -124,25 +125,19 @@ In the Hierarchy window, select the ModelParent object. Next, expand the **MarsC
 
 * Observe five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window.
 
-![Target Objects](../media/m.png)
+    ![Target Objects](../media/m.png)
 
 ## 2. Implement While Looking At Target() & On Look Away() Events
 
-1. In the Hierarchy window, select the **POI-Camera** object. Then, in the Inspector window, locate the Eye Tracking Target (Script) component and configure the **While Looking At Target() & On Look Away()** events as follows:
+In the Hierarchy window, select the **POI-Camera** object. Then, in the Inspector window, locate the Eye Tracking Target (Script) component and configure the **While Looking At Target() & On Look Away()** events as follows:
 
 * In the **None (Object)** field, assign the **POI-Camera ToolTip** object.
 * In the**No Function** dropdown of the **While Looking At Target ()** event, select **GameObject > SetActive (bool)**. Select the check box under it to highlight the tooltip as the triggered action when looking at the target object.
 
-
-![Confiure While Looking At Target ()](../media/n.png)
+    ![Confiure While Looking At Target ()](../media/n.png)
 
 * Click the **No Function** dropdown of the **On Look Away ()** event listener. Next, select **GameObject > SetActive (bool)** and leave the check box empty so that hiding the tooltip is the action triggered when you look away from the target object.
 
-![Confiure On Look Away ()](../media/o.png)
+    ![Confiure On Look Away ()](../media/o.png)
 
 Follow the same process and assign respective tooltip objects to their same MarsCuriosityRover parts' While Looking At Target() & On Look Away() events.
-
-
-
-
-
