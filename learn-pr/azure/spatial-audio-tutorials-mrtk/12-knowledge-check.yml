@@ -20,7 +20,7 @@ quiz:
           isCorrect: false
         - content: "Oculus XR Plugin"
           isCorrect: false
-        - content: "Micosoft spatializer plugin"
+        - content: "Microsoft spatializer plugin"
           isCorrect: true
     - content: "What do you need to adjust in the Audio Source component to disable attenuation?"
       choices:

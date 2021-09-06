@@ -4,7 +4,7 @@ The [Microsoft Spatializer GitHub repository](https://github.com/microsoft/spati
 
 For an understanding of what it means to spatialize sounds using HRTF-based spatialization technologies and recommendations for when it can be helpful, see [spatial sound design](/windows/mixed-reality/spatial-sound-design).
 
-## Create and prepae the Unity project
+## Create and prepare the Unity project
 
 In this section, you'll create a new Unity project and get it ready for MRTK development.
 
