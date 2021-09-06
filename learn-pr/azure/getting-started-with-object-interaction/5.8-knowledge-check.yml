@@ -17,25 +17,25 @@ quiz:
     - content: " What is the purpose of the ObjectManipulator script?"
       choices:
         - content: "This script makes an object movable, scalable and rotatable using one or two hands."
-          isCorrect: false
+          isCorrect: true
         - content: "This script makes an object grabbable from a close distance."
           isCorrect: false
         - content: "This script makes an object change color when a user gazes at the object."
-          isCorrect: true
+          isCorrect: false
     - content: "Which component is an all-in-one container to make any object easily interactable and responsive to input?"
       choices:
         - content: "Box Collider Component"
           isCorrect: false
         - content: "Physical Press Event Router Component"
-          isCorrect: true
-        - content: "Interactable Component"
           isCorrect: false
+        - content: "Interactable Component"
+          isCorrect: true
     - content: "What function does ToolTip provide you?"
       choices:
         - content: "Provide voice inputs to the objects"
-          isCorrect: true
-        - content: "Provide short descriptions to the objects"
           isCorrect: false
+        - content: "Provide short descriptions to the objects"
+          isCorrect: true
         - content: "Provide manipulating function to the object"
           isCorrect: false
       
