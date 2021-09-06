@@ -18,7 +18,7 @@ Metacognition is your awareness of how you’re thinking, learning, or doing som
 
 ### What is self-regulation?
 
-Self-regulation is your ability to control or redirect disruptive emotions and impulses. It enables you to remain calm in challenging situations and respond more effectively. This is an essential skill in managing challenging situations such as deadlines and problems during code development or testing. Self-regulating your emotions is a part of emotional intelligence (EQ).
+Self-regulation is your ability to control or redirect disruptive emotions and impulses. It enables you to remain calm in challenging situations and respond more effectively. It's an essential skill in managing challenging situations such as deadlines and problems during code development or testing. Self-regulating your emotions is a part of emotional intelligence (EQ).
 
 >[!NOTE]
 >*Emotional intelligence* is the ability to identify, name, and manage your emotions. You can use your EQ to recognize your own emotional responses to challenges and deadlines, such as frustration, anxiety, or panic. After you recognize these feelings, you can work towards calming down and moving forward to a solution.
@@ -92,7 +92,7 @@ If you’re stuck, find out what others have tried. Connect with someone who has
 
 ### Compare where you are now to where you began
 
-Big goals, such as finishing a project, or long-term goals, such as becoming a public speaker, are exciting. They can motivate you to take a class, start a new job, and even switch careers. Setting short-term, realistic goals can keep you motivated and on track. Give yourself ample opportunity to celebrate small successes. To accurately assess your progress, don’t compare where you are now to your future goals or to the progress of those around you. Compare where you are *now* with where you were when you *started*.
+Significant goals, such as finishing a project, or long-term goals, such as becoming a public speaker, are exciting. They can motivate you to take a class, start a new job, and even switch careers. Setting short-term, realistic goals can keep you motivated and on track. Give yourself ample opportunity to celebrate small successes. To accurately assess your progress, don’t compare where you are now to your future goals or to the progress of those around you. Compare where you are *now* with where you were when you *started*.
 
 :::image type="content" source="../media/2-long-term-goals.png" alt-text="A person thinking of a long-term goal." border="false":::
 

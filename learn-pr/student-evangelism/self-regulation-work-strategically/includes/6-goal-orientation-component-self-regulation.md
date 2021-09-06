@@ -83,7 +83,7 @@ As a mentor, you can influence the goal orientation that your learners have. To 
 
 - Give learners the opportunity to be responsible for their learning, make decisions, and assume leadership roles. 
 
-- Use a variety of assessment methods, incentives, and rewards to evaluate learners’ individual progress. 
+- Use various assessment methods, incentives, and rewards to evaluate learners’ individual progress. 
 
     > [!NOTE] 
     > Learners who have goal orientations that result in them being afraid of making mistakes will become unmotivated if they fail. You can change the stigma around failure by reinforcing that it’s an important part of the learning process. Reiterate that mistakes actually mean you’re learning.

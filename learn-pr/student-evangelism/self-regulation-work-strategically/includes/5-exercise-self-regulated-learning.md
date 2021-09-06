@@ -1,4 +1,4 @@
-In this exercise, you will go through some scenarios and reflect to what degree self regulated is being applied.
+In this exercise, you will go through some scenarios and reflect to what degree self-regulated is being applied.
 
 ## Reflect on self-regulated learning to solve problems
 
@@ -38,7 +38,7 @@ Part of the training requires that team members work in groups to develop and te
 
 1. What can you say to help them to move forward?
 
-    - Possible answer: Remind them that failure is a part of learning, and is completely normal and even expected. Suggest that they write down what they think went wrong and what they need to do to adjust the code. Then, recommend that they modify the code, run the program again, and determine whether it works. Tell them to continue taking notes and following the iterative process, making changes to the code and implementing the changes until they’re successful.
+    - Possible answer: Remind them that failure is a part of learning, and is normal and even expected. Suggest that they write down what they think went wrong and what they need to do to adjust the code. Then, recommend that they modify the code, run the program again, and determine whether it works. Tell them to continue taking notes and following the iterative process, making changes to the code and implementing the changes until they’re successful.
 
 ### Scenario 3
 

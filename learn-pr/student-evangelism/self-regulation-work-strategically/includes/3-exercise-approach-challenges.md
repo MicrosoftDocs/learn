@@ -1,4 +1,4 @@
-In this exercise, you will read a set of statements and decide if these statements applies to you to a varying degree.
+In this exercise, you will read a set of statements and decide if these statements apply to you to a varying degree.
 
 ## How do you approach challenges?
 
