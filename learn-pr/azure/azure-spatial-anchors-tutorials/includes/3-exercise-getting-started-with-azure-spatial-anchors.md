@@ -16,7 +16,7 @@ Then follow the Changing the Spatial Awareness Display Option instructions to en
 
 ## Install inbuilt Unity packages and Import the tutorial assets
 
-[!INCLUDE[]](includes/switching-platform.md)]
+[!INCLUDE[](includes/switching-platform.md)]
 
 ## Prepare the scene
 

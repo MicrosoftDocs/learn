@@ -2,7 +2,7 @@ In this tutorial, you'll learn how to build your project to Android and iOS devi
 
 ## Install inbuilt Unity packages
 
-[!INCLUDE[]](includes/installing-inbuilt-unity-packages.md)]
+[!INCLUDE[](includes/installing-inbuilt-unity-packages.md)]
 
 ## Configure MRTK for AR Foundation Camera
 
@@ -50,7 +50,7 @@ In this section, you'll learn how to configure your project to build and deploy 
 
     ![Project settings](../media/asa-05-section-3-step-1-2-1.png)
 
-    [!INCLUDE[]](includes/building-your-application-to-your-android-device.md)]
+    [!INCLUDE[](includes/building-your-application-to-your-android-device.md)]
 
 4. In the Build Settings window, click the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list. Then, use a USB cable, connect your Android device to your computer and select it from the **Run Device** dropdown:
 
@@ -87,7 +87,7 @@ In this section, you'll learn how to configure your project, to build and deploy
 
     ![MRTK project configurator](../media/asa-05-section-4-step-1-2.png)
 
-    [!INCLUDE[]](includes/building-your-application-to-your-ios-device.md)]
+    [!INCLUDE[](includes/building-your-application-to-your-ios-device.md)]
 
 3. In the Unity menu, select **Edit** > **Project Settings**... to open the Player Settings window, then locate the **Player** > **Other Settings** section, uncheck the **Strip Engine Code** checkbox to disable it:
 
