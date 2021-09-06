@@ -1,6 +1,6 @@
 ## [Unity 2020 + OpenXR](#tab/openxr)
 
-## 1. Switching Build Platform
+## 1. Switch Build Platform
 
 In the menu bar, select **File** > **Build Settings**.
 
@@ -46,8 +46,8 @@ In the menu bar, select **File** > **Build Settings**.
 
     Double-click the Executable file to open the PC Holographic Remoting Application on your PC.
 
-> [!Note]
-> Due to some known issues in building the Holographic Remoting app for UWP, we're building as Windows Standalone for OpenXR.
+    > [!Note]
+    > Due to some known issues in building the Holographic Remoting app for UWP, we're building as Windows Standalone for OpenXR.
 
 ## [Legacy WSA](#tab/wsa)
 

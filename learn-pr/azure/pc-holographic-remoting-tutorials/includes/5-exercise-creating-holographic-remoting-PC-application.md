@@ -1,6 +1,6 @@
 In this tutorial, you'll learn how to create a PC app for Holographic Remoting. That lets you connect to HoloLens 2 at any time, providing a way to visualize 3D content in Mixed Reality.
 
-## Configuring The Capabilities
+## Configure The Capabilities
 
 In the Project Settings window, expand the **Publishing Settings**, then scroll down to the Capabilities section and then select the following: 
 
@@ -15,7 +15,7 @@ In the Project Settings window, expand the **Publishing Settings**, then scroll 
 
 [!INCLUDE[](includes/build-your-application-to-pc.md)]
 
-## Testing Holographic Remoting Remote Application
+## Test Holographic Remoting Remote Application
 
 To connect your PC application to your HoloLens 2, do the following:
 
