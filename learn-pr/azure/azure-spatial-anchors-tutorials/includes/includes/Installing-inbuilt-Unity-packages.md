@@ -9,13 +9,10 @@ Add the above mentioned packages from the Unity package manager.
 
 >[Caution]
 >Not all version are compatible with MRTK and only certain version works together, so make sure you install the exact versions listed above.
-
 >[!Tip]
 >For a reminder on how to upgrade and install inbuilt packages, you can refer to the Installing inbuilt Unity packages instructions.
-
 >[Note]
 >If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.
-
 
 ## [Legacy WSA](#tab/wsa)
 
@@ -29,9 +26,7 @@ Add the above mentioned packages from the Unity package manager.
 
 >[Caution]
 >Not all version are compatible with MRTK and only certain version works together, so make sure you install the exact versions listed above.
-
 >[Tip]
 >For a reminder on how to upgrade and install inbuilt packages, you can refer to the Installing inbuilt Unity packages instructions.
-
 >[Note]
 >If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.

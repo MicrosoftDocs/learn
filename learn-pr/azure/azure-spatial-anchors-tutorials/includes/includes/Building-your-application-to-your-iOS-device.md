@@ -6,7 +6,6 @@ In the Unity menu, select **Edit** > **Project Settings**... > **XR Plug-in mana
 
 ## [Legacy WSA](#tab/wsa)
 
-Legacy WSA
 In the Unity menu, select **Edit** > **Project Settings**... >**Player**> **XR Setting**, make sure you are in Android platform and check the **Virtual Reality Supported** checkbox then click the + icon, and select None:
 
 ![Close the Player Settings and open the Build Settings window again.](../../media/asa-05-section-3-step-1-2-1-legacy-ios.png)
