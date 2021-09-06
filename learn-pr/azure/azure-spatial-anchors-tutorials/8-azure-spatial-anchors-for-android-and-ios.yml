@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.8-azure-spatial-anchors-for-android-and-ios
-title: Azure spatial anchors for android and ios
+title: Azure Spatial Anchors for android and iOS
 metadata:
-  title: Azure spatial anchors for android and ios
-  description: Description to Azure spatial anchors for android and ios
+  title: Azure Spatial Anchors for android and iOS
+  description: Description to Azure Spatial Anchors for android and iOS
   ms.date: 06/23/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"

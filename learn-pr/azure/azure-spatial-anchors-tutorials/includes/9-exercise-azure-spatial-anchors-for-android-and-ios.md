@@ -1,6 +1,6 @@
 In this tutorial, you'll learn how to build your project to Android and iOS devices using AR Foundation, ARCore XR Plugin, and ARKit XR Plugin.
 
-## Install inbuilt Unity packages
+## Install in-built Unity packages
 
 [!INCLUDE[](includes/installing-inbuilt-unity-packages.md)]
 
@@ -65,7 +65,7 @@ In this section, you'll learn how to configure your project to build and deploy 
 
     ![Build to android](../media/asa-05-section-3-step-1-5.png)
 
-    >[Note]
+    >[!Note]
     >If you get any error in the Unity Console window related to Android SDK, NDK, or JDK modules, you need to open Unity Hub and install the associated Android Build Support modules.
 
     When the build process is complete, your apps should automatically load on your Android device.
@@ -78,7 +78,7 @@ In this section, you'll learn how to configure your project, to build and deploy
 
     ![Build settings](../media/asa-05-section-4-step-1-1.png)
 
-    >[Tip]
+    >[!Tip]
     >For a reminder on how to switch build platform, you can refer to the Switching the build platform instructions.
 
     Close the Build Settings window.

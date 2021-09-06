@@ -1,15 +1,11 @@
 Azure Spatial Anchors gives developers the tools they need to create spatially aware mixed reality applications for HoloLens, iOS devices with ARKit, and Android devices with ARCore.
 Developers can use Azure Spatial Anchors to collaborate with mixed reality platforms to understand spaces, mark specific places of interest, and remember those points of interest from compatible devices.
 
-Some examples of Azure Spatial Anchors include :
+Some use-cases of Azure Spatial Anchors include :
 
-## World-Tracking
+* **World-Tracking**: Users can scan their phones to see where they are in the real world depends on what the camera sees. In addition, the application displays arrows over the environment to make navigation easier for the user.
 
-Users can scan their phones to see where they are in the real world depends on what the camera sees. In addition, the application displays arrows over the environment to make navigation easier for the user.
-
-## Internet of Things
-
-Another area where the usage of spatial anchors will be highly beneficial is the Internet of Things. For example, assume you're standing in front of a piece of factory equipment equipped with several sensors. If a part has a problem, an arrow can point straight to the problem part. Thus, you can see every piece of important information quickly and just by gazing at the piece of equipment with your device on.
+* **Internet of Things**: Another area where the usage of spatial anchors will be highly beneficial is the Internet of Things. For example, assume you're standing in front of a piece of factory equipment equipped with several sensors. If a part has a problem, an arrow can point straight to the problem part. Thus, you can see every piece of important information quickly and just by gazing at the piece of equipment with your device on.
 
 ## Mixed Reality Feature Tool
 

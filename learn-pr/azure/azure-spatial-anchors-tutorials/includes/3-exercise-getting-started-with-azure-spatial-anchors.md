@@ -14,7 +14,7 @@ First, follow the Initializing your project and deploying your first application
 
 Then follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is DefaultHoloLens2ConfigurationProfile and change the display options for the spatial awareness mesh to Occlusion.
 
-## Install inbuilt Unity packages and Import the tutorial assets
+## Install in-built Unity packages and Import the tutorial assets
 
 [!INCLUDE[](includes/switching-platform.md)]
 
@@ -31,7 +31,7 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
 
     ![Prefabs](../media/asa-02-section-4-step-1-1.png)
 
-    > ![Tip]
+    > [!Tip]
     > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by [toggling the Gizmos](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the off position, as shown in the image above.
 
 2. Select **MixedRealityToolkit** object in the Hierarchy window, use the **Add Component** button in the Inspector window to add the following components:
@@ -41,10 +41,10 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
 
     ![Add components to the MixedRealityToolkit](../media/asa-02-section-5-step-1-1.png)
 
-    > ![Warning]
+    > [!Warning]
     > There's a known issue with ASA v2.9.0 and v2.10.0-preview.1 that requires two additional objects to be placed in the scene. Please use the Add Component button in the inspector window to add an AR Camera Manager (Script) and an AR Session (Script) to the **MixedRealityToolkit** object. Be sure to disable the Camera that is created automatically while adding the AR Camera Manager (Script) by unchecking the checkbox next to the Camera object in the inspector window. This issue will be addressed in the full release of ASA v2.10.0.
 
-    > ![Note]
+    > [!Note]
     > When you add the AR Anchor Manager (Script) component, the AR Session Origin (Script) component is automatically added because it's required by the AR Anchor Manager (Script) component.
 
 ## Configure the buttons to operate the scene
@@ -110,7 +110,7 @@ In the Hierarchy window, select the **ParentAnchor** object, then in the Inspect
 
 Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to build the project and deploy the app to your device.
 
-> ![Tip]
+> [!Tip]
 > For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the Building your application to your HoloLens 2 instructions.
 
 When the app runs on your device, follow the on-screen instructions displayed on the Azure Spatial Anchor Tutorial Instructions panel:
@@ -128,7 +128,7 @@ When the app runs on your device, follow the on-screen instructions displayed on
 
 ![Unity with Instructions object selected](../media/asa-02-section-7-step-1-1.png)
 
->![Caution]
+>[!Caution]
 >Azure Spatial Anchors uses the internet to save and load the anchor data, so make sure your device is connected to the internet.
 
 ## Anchor an experience
@@ -152,5 +152,5 @@ In the previous sections, you learned the fundamentals of Azure Spatial Anchors.
 
     If you now rebuild the project and deploy the app to your device, you can now reposition the entire Rover Explorer experience by moving the resized cube.
 
-    >![Tip]
+    >[!Tip]
     >A variety of user experience flows for repositioning experiences, including the use of a repositioning object (such as the cube used in this tutorial), the use of a button to toggle a bounds control that surrounds the experience, the use of position and rotation gizmos, and more.

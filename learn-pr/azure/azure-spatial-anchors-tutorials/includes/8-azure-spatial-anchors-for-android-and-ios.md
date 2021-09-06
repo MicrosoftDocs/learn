@@ -13,7 +13,7 @@ To make creating an AR experience easier, ARKit integrates device motion trackin
 
 The Windows Mixed Reality camera settings provider detects the device on which the app is running and applies the relevant configuration settings based on the display (transparent or opaque). This allows the application's camera to be configured and optimized for usage in mixed reality apps using the Microsoft Mixed Reality Toolkit.
 
-## New Data provider
+## New data provider
 
 The Mixed Reality Toolkit input system is a modular framework that allows input device support to be added as needed. A unique input data provider may be required to enable compatibility for a new hardware platform. Data sources are available as add-ons from third parties or as part of the Microsoft Mixed Reality Toolkit. The approval process for new data providers submitting to the MRTK varies by situation and will be disclosed at the time of the initial proposal.
 

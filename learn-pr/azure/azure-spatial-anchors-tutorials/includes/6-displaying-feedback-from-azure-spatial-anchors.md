@@ -1,4 +1,4 @@
-Azure Spatial Anchors gives developers the tools they need to create spatially aware mixed reality apps. Users can give feedback on anchor discovery, events, and status (ASA). It's a tool for storing and retrieving spatial-point-cloud data. This action can be seen based on the User's feedback through a UI panel that displays essential information about the current ASA session.
+Azure Spatial Anchors gives developers the tools they need to create spatially aware mixed reality apps. Users can give feedback on anchor discovery, events, and status (ASA). It's a tool for storing and retrieving spatial-point-cloud data. This action can be seen based on the user's feedback through a UI panel that displays essential information about the current ASA session.
 
 ## Scene Visibility
 

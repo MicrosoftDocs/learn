@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.6-displaying-feedback-from-azure-spatial-anchors
-title: Displaying feedback from azure spatial anchors
+title: Displaying feedback from Azure Spatial Anchors
 metadata:
-  title: Displaying feedback from azure spatial anchors
-  description: Description to Displaying feedback from azure spatial anchor
+  title: Displaying feedback from Azure Spatial Anchors
+  description: Description to Displaying feedback from Azure Spatial Anchor
   ms.date: 06/23/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"

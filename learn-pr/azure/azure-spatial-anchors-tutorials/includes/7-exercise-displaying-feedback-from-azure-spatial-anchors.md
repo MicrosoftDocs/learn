@@ -4,7 +4,7 @@
 
     ![ASA feedback panel](../media/asa-04-section-1-step-1-1.png)
 
-    > ![Tip]
+    > [!Tip]
     > To make it easier to work with your scene, set the [Scene Visibility](https://docs.unity3d.com/Manual/SceneVisibility.html) for the ParentAnchor object to off by clicking the eye icon to the left of the object. This hides the object in the Scene window without changing their in-game visibility.
 
 2. Rename the newly created Text (TMP) object **Feedback**, then, in the Inspector window, change its position and size, so it's placed neatly underneath the instruction text, for example:
