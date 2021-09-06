@@ -1,5 +1,3 @@
-## 2. Exercise: Getting Started With PC Holographic Remoting
-
 Welcome to the HoloLens 2 tutorials. In this tutorial, you'll learn how to create a Mixed Reality experience that features UI elements, 3D model manipulation, model clipping and eye-tracking features. In the second tutorial, you'll learn how to create a PC app for Holographic Remoting that lets you connect to the HoloLens 2 at any time and visualize your app in 3D.
 
 To complete this tutorial successfully, you should've some basic knowledge of Unity and MRTK. If you don't, we recommend that you complete the Getting started tutorials before continuing.
@@ -23,11 +21,11 @@ Go to the [Initializing your project and deploying your first application](/wind
 
 5. Created and set the scene and gave it a suitable name--for example, "PC Holographic Remoting."
 
-Go to the [Configuring the MRTK profiles]{https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-03?tabs=openxr) article and follow the instructions in the "Changing the Spatial Awareness Display Option" section to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile**. Change the display options for the spatial awareness mesh to **Occlusion**.
+Go to the [Configuring the MRTK profiles](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-03?tabs=openxr) article and follow the instructions in the "Changing the Spatial Awareness Display Option" section to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile**. Change the display options for the spatial awareness mesh to **Occlusion**.
 
 ## Importing The Tutorial Assets
 
-[!INCLUDE[](includes/switching-platform.md)]
+[!INCLUDE[]](includes/switching-platform.md)]
 
 ## Configuring And Preparing The Scene
 In this section, you'll prepare the scene by adding some of the tutorial prefabs.
