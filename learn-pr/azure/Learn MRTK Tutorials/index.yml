@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azure.learn-introduction-tutorials-mrtk
 metadata:
-  title: Learn Introduction Modules 
+  title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit
   description: This course provides the user a basic understanding of all the foundational elements of MRTK.
   ms.date: 06/23/2021
   author: Sean-Kerawala
