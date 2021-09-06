@@ -1,4 +1,3 @@
-
 ## [Unity 2020 + OpenXR](#tab/openxr)
 
 * In the Unity menu, select **Window** > **Package Manager**  to open the Package Manager window, then verify that **AR Foundation** > **4.1.7** version is installed.
@@ -30,7 +29,7 @@
 
     ![Install AR Foundation package](../../media/asa-02-section-2-step-1-1.png)
 
-## Import The Tutorial Assets
+## Import the Tutorial Assets
 
 1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages, follow this [tutorial](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
 
@@ -55,7 +54,7 @@
 
     ![Install AR Foundation package - Legacy WSA](../../media/asa-02-section-2-step-1-1.png)
 
-## Import The Tutorial Assets
+## Import the Tutorial Assets
 
 1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages, follow this [tutorial](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
 
