@@ -4,7 +4,7 @@ In this module, you'll learn how to save entity data to Azure Table storage and 
 
 **Azure storage** is a Microsoft storage solution on the cloud that can cover many scenarios and requirements. It can scale massively and is easily approachable by developers. All services can be consumed under the umbrella of an **Azure storage Account**. For our use case, we will use *Table storage* and *Blob storage*.
 
-Learn more about [Azure storage services](/azure/storage/blobs/storage-blobs-overview).
+Learn more about [Azure storage services](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-overview).
 
 ### Azure Table storage
 
@@ -12,18 +12,18 @@ This service allows us to store data in a NoSQL fashion, in this project we will
 
 In context of the demo application, you need two Tables, one to store information about the project with information about the state of trained models more about that in the (Integrating Azure Custom Vision) tutorial and a second table to store information about *Tracked Objects*.
 
-Learn more about [Azure Table storage](/azure/storage/tables/table-storage-overview).
+Learn more about [Azure Table storage](https://docs.microsoft.com/azure/storage/tables/table-storage-overview).
 
 ### Azure Blob storage
 
 This service allows you to store large binary files, you'll use this to store photos taken for *Tracked Objects* as thumbnail.
 For of the demo application, you need one Blob Container to store the images.
 
-Learn more about [Azure Blob storage](/azure/storage/blobs/storage-blobs-introduction).
+Learn more about [Azure Blob storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction).
 
 ## Prepare Azure Storage
 
-To consume the Azure storage services, you'll need an Azure storage account. To create a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal). To learn more about storage accounts, see [Azure storage account overview](/azure/storage/common/storage-account-overview).
+To consume the Azure storage services, you'll need an Azure storage account. To create a storage account, see [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create). To learn more about storage accounts, see [Azure storage account overview](https://docs.microsoft.com/azure/storage/common/storage-account-overview).
 
 Once you've a storage account, you can retrieve the connection string from the **Azure portal** which will be needed in the next section of this lesson.
 

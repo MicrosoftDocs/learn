@@ -33,9 +33,9 @@ quiz:
     - content: "Which Azure Service helps developers to create intelligent bots that can maintain natural conversation with users?"
       choices:
         - content: "Azure Spatial Anchors"
-          isCorrect: true
-        - content: " Azure Bot Service"
           isCorrect: false
+        - content: " Azure Bot Service"
+          isCorrect: true
         - content: "Azure Cloud Service"
           isCorrect: false
         

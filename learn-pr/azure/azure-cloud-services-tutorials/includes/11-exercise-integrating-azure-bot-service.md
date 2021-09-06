@@ -1,10 +1,10 @@
-In this module, you'll learn how to use **Azure Bot Service** in the **HoloLens 2** demo application to add Language Understanding (LUIS) and letting the Bot assist the user when searching for **Tracked Objects**. This module is a two-part module where in the first part, you create the Bot with the [Bot Composer](/composer/introduction) as a code-free solution and take a quick look in the Azure Function that feeds the Bot with the needed data. Then, in the second part, you use the **BotManager (script)** in the Unity project to consume the hosted Bot Service.
+In this module, you'll learn how to use **Azure Bot Service** in the **HoloLens 2** demo application to add Language Understanding (LUIS) and letting the Bot assist the user when searching for **Tracked Objects**. This module is a two-part module where in the first part, you create the Bot with the [Bot Composer](https://docs.microsoft.com/composer/introduction) as a code-free solution and take a quick look in the Azure Function that feeds the Bot with the needed data. Then, in the second part, you use the **BotManager (script)** in the Unity project to consume the hosted Bot Service.
 
 ## Understand Azure Bot Service
 
-The **Azure Bot Service** empowers developers to create intelligent bots that can maintain natural conversation with users thanks to **LUIS**. A conversational Bot is a great way to expand the ways a user can interact with your application. A Bot can act as a knowledge base with a [QnA Maker](/Azure/bot-service/bot-builder-howto-qna?preserve-view=true&tabs=cs&view=Azure-bot-service-4.0) to maintaining sophisticated conversation with the power of [Language Understanding (LUIS)](/Azure/bot-service/bot-builder-howto-v4-luis?preserve-view=true&tabs=csharp&view=Azure-bot-service-4.0).
+The **Azure Bot Service** empowers developers to create intelligent bots that can maintain natural conversation with users thanks to **LUIS**. A conversational Bot is a great way to expand the ways a user can interact with your application. A Bot can act as a knowledge base with a [QnA Maker](https://docs.microsoft.com/Azure/bot-service/bot-builder-howto-qna?preserve-view=true&tabs=cs&view=Azure-bot-service-4.0) to maintaining sophisticated conversation with the power of [Language Understanding (LUIS)](https://docs.microsoft.com/Azure/bot-service/bot-builder-howto-v4-luis?preserve-view=true&tabs=csharp&view=Azure-bot-service-4.0).
 
-Learn more about [Azure Bot Service](/Azure/bot-service/bot-service-overview-introduction?preserve-view=true&view=Azure-bot-service-4.0).
+Learn more about [Azure Bot Service](https://docs.microsoft.com/Azure/bot-service/bot-service-overview-introduction?preserve-view=true&view=Azure-bot-service-4.0).
 
 ## Part 1 - Create the Bot
 
@@ -69,7 +69,7 @@ Follow the same procedure to get Find function Url.
 
 ### Create a conversation Bot
 
-There are several ways to develop a Bot Framework based conversational bot. In this lesson, you'll use the [Bot Framework Composer](/composer/) desktop application, which is a visual designer that is perfect for rapid development.
+There are several ways to develop a Bot Framework based conversational bot. In this lesson, you'll use the [Bot Framework Composer](https://docs.microsoft.com/composer/) desktop application, which is a visual designer that is perfect for rapid development.
 
 You can download the latest releases from the [GitHub repository](https://github.com/microsoft/BotFramework-Composer/releases). It's available for Windows, Mac, and Linux.
 

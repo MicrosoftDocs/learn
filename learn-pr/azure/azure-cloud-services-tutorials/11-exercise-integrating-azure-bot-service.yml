@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-cloud-services-tutorials-mrtk.11-exercise-integrating-azure-bot-service
-title: Exercise - Integrate Azure bot service
+title: Exercise - Integrate Azure Bot Service
 metadata:
-  title: Exercise - Integrate Azure bot service
-  description: Exercise on Integrate azure bot service
+  title: Exercise - Integrate Azure Bot Service
+  description: Exercise on Integrate Azure Bot Service
   ms.date: 06/23/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"

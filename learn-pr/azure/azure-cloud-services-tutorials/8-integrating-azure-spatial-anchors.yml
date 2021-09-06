@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-cloud-services-tutorials-mrtk.8-integrating-azure-spatial-anchors
-title: Integrate Azure spatial anchors
+title: Integrate Azure Spatial Anchors
 metadata:
-  title: Integrate Azure spatial anchors
-  description: Description to Integrate azure spatial anchors
+  title: Integrate Azure Spatial Anchors
+  description: Description to Integrate Azure Spatial Anchors
   ms.date: 06/23/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
