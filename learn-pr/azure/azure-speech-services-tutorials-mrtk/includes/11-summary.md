@@ -1,5 +1,3 @@
-## Summary
-
 Through these series of modules,
 
 * We have implemented speech recognition powered by Azure. We run the application on our device to ensure the feature is working correctly.

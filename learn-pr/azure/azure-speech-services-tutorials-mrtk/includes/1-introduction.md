@@ -1,5 +1,3 @@
-## Introduction
-
 We will create a Mixed Reality application that explores the use of Azure Speech Services with the HoloLens. On completing this module series, we will use your device's microphone to transcribe speech to text in real-time. In addition, translate our speech into other languages and leverage the Intent recognition feature to understand voice commands using artificial intelligence.
 
 ## Learning Objectives
@@ -18,4 +16,3 @@ We will create a Mixed Reality application that explores the use of Azure Speech
 * Unity Hub with Unity 2020.3.X or 2019.4.X installed and the Universal Windows Platform Build Support module added.
 * [Set up a mixed reality project in Unity module](/learn/modules/mixed-reality-toolkit-project-unity).
 * [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool).
-

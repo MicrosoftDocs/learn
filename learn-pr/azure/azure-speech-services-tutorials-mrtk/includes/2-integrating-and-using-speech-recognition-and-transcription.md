@@ -1,5 +1,3 @@
-## 2. Integrating And Using Speech Recognition And Transcription
-
 The Speech service is the unification of speech-to-text, text-to-speech and speech translation into a single Azure subscription. It's easy to speech enable your applications, tools and devices with the Speech CLI, Speech SDK, Speech Devices SDK, Speech Studio, or REST APIs.
 
 ## Speech Recognition
@@ -13,6 +11,7 @@ It is a set of REST API operations that enable you to transcribe much audio in s
 ## MRTK Speech Commands
 
 Like Windows Speech Input, speech input providers don't create any controllers but instead allow you to define keywords that will raise speech input events when recognized. The Speech Commands Profile in the Input System Profile is where you configure the keywords to recognize. For each command you can also:
+
 * Select an input action to map it to. This way you can for example use the keyword Select to have the same effect as a left mouse click, by mapping both to the same action.
 * Specify a key code that will produce the same speech event when pressed.
 * Add a localization key that will be used in UWP apps to obtain the localized keyword from the app resources.

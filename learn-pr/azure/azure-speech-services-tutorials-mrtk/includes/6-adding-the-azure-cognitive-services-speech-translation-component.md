@@ -1,5 +1,3 @@
-## 6. Adding The Azure Cognitive Services Speech Translation Component
-
 ## Speech Translation
 
 Speech translation is how conversational spoken phrases are instantly translated and spoken aloud in a second language. Speech translation differs from phrase translation, where the system only translates a fixed and finite set of phrases that have been manually entered into the system. Speech translation technology enables speakers of different languages to communicate. It thus is of tremendous value for humankind in terms of science, cross-cultural exchange and global business.

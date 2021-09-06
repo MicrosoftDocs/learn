@@ -1,8 +1,6 @@
-## 8. Setting Up Intent And Natural Language Understanding
-
 ## Natural Language
 
- Natural language processing (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, mainly how to program computers to process and analyze large amounts of natural language data. The result is a computer capable of "understanding" the contents of documents, including the language's contextual nuances. The technology can then accurately extract information and insights contained in the documents and categorize and organize the documents themselves.
+Natural language processing (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, mainly how to program computers to process and analyze large amounts of natural language data. The result is a computer capable of "understanding" the contents of documents, including the language's contextual nuances. The technology can then accurately extract information and insights contained in the documents and categorize and organize the documents themselves.
 
 Challenges in natural language processing frequently involve speech recognition, natural language understanding, and natural language generation.
 
@@ -25,4 +23,4 @@ An entity is an item or an element that is relevant to the user's intent. Entiti
 ## Intent Recognition
 
 Intent recognition — sometimes called intent classification — taking a written or spoken input and classifying it based on what the user wants to achieve. Intent recognition forms an essential component of chatbots and finds use in sales conversions, customer support, and many other areas.
-Intent recognition is a form of natural language processing (NLP), a subfield of artificial intelligence. NLP is concerned with computers processing and analyzing natural language, i.e., any language that has developed naturally rather than artificially, such as with computer coding languages.
+Intent recognition is a form of natural language processing (NLP), a subfield of artificial intelligence. NLP is concerned with computers processing and analyzing natural language, i.e, any language that has developed naturally rather than artificially, such as with computer coding languages.
