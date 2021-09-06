@@ -16,7 +16,7 @@ In the menu bar, select **File** > **Build Settings**.
 
 2. In the Project Settings window, select **OpenXR**. Ensure that you're in the Windows Standalone tab, and then change the **Depth submission mode** from None to **Depth 16** Bit.
 
-3. Add **Eye Gaze Interaction Profile**and **Microsoft Hand Interaction Profile** by clicking on the plus sign ("+") button in the Interaction Profiles tab.
+3. Add **Eye Gaze Interaction Profile** and **Microsoft Hand Interaction Profile** by clicking on the plus sign ("+") button in the Interaction Profiles tab.
 
     ![Eye Gaze Interaction Profile](../../media/a-5.png)
 
@@ -59,7 +59,7 @@ In the menu bar, select **File** > **Build Settings**.
 
 ## 2. Build The Unity Project
 
-1. In the menu bar, select **File** > **Build Settings**, In the Build Settings window, click the **Add Open Scenes**button to add your current scene to the Scenes. In the Build list, then click the **Build** button to open the Build Universal Windows Platform window:
+1. In the menu bar, select **File** > **Build Settings**, In the Build Settings window, click the **Add Open Scenes** button to add your current scene to the Scenes. In the Build list, then click the **Build** button to open the Build Universal Windows Platform window:
 
     ![Add Open Scenes](../../media/a-13.png)
 
@@ -84,4 +84,4 @@ In the menu bar, select **File** > **Build Settings**.
 
     ![Configure Visual Studio](../../media/a-17.png)
 
-    Click the button that says **Local Machine**. This begins the process of building the application and deploy it to your PC. The application is installed on your PC by default.
+    Click the button that says **Local Machine**. This begins the process of building the application and deploys it to your PC. The application is installed on your PC by default.

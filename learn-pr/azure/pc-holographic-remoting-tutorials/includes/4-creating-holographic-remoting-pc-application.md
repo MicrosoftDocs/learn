@@ -22,4 +22,4 @@ Unity OpenXR supports the Eye Tracking Interaction extension provided by Khronos
 
 ## Microsoft Hand Interaction
 
-Unity OpenXR supports the HoloLens 2 Hand interaction profile. Bindings that use XR Controller and are available on this device will bind appropriately because the layout is adapted from XRController.
+Unity OpenXR supports the HoloLens 2 Hand interaction profile. Bindings that use XR Controller and are available on this device will bind appropriately because the layout is adapted from XR Controller.

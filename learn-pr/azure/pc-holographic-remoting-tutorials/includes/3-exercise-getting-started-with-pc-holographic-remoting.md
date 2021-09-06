@@ -23,7 +23,7 @@ Go to the [Initializing your project and deploying your first application](/wind
 
 Go to the [Configuring the MRTK profiles](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-03?tabs=openxr) article and follow the instructions in the "Changing the Spatial Awareness Display Option" section to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile**. Change the display options for the spatial awareness mesh to **Occlusion**.
 
-## Importe The Tutorial Assets
+## Import The Tutorial Assets
 
 [!INCLUDE[](includes/switching-platform.md)]
 
