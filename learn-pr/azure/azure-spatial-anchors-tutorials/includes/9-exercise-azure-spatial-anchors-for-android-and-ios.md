@@ -10,11 +10,10 @@ In this section, you'll learn how to configure MRTK for deploying to a mobile de
 
 1. In the Hierarchy window, select the **MixedRealityToolkit** object. Then in the Inspector window, select the **Camera** tab, clone the camera profile, and give it a suitable name, for example,
 **AzureSpatialAnchors_ARCameraProfile**:
-
     ![Configure MRTK for AR camera](../media/asa-05-section-2-step-1-1.png)
 
-    >[!Tip]
-    >For a reminder on how to clone MRTK profiles, you can refer to the Configuring the Mixed Reality Toolkit profiles instructions.
+    > [!Tip]
+    > For a reminder on how to clone MRTK profiles, you can refer to the Configuring the Mixed Reality Toolkit profiles instructions.
 
 2. With the **Camera** tab still selected in the Inspector window, expand the **Camera Setting** Providers and by clicking the "-" remove the **Windows Mixed Reality Camera Setting** or **XR SDK Windows Mixed Reality Camera Setting**:
 
@@ -51,7 +50,7 @@ In this section, you'll learn how to configure your project to build and deploy 
 
     ![Project settings](../media/asa-05-section-3-step-1-2-1.png)
 
-    [!INCLUDE[](includes/building-your-application-to-your-android-device.md)]
+    [!INCLUDE[]](includes/building-your-application-to-your-android-device.md)]
 
 4. In the Build Settings window, click the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list. Then, use a USB cable, connect your Android device to your computer and select it from the **Run Device** dropdown:
 
@@ -88,7 +87,7 @@ In this section, you'll learn how to configure your project, to build and deploy
 
     ![MRTK project configurator](../media/asa-05-section-4-step-1-2.png)
 
-    [!INCLUDE[](includes/building-your-application-to-your-ios-device.md)]
+    [!INCLUDE[]](includes/building-your-application-to-your-ios-device.md)]
 
 3. In the Unity menu, select **Edit** > **Project Settings**... to open the Player Settings window, then locate the **Player** > **Other Settings** section, uncheck the **Strip Engine Code** checkbox to disable it:
 

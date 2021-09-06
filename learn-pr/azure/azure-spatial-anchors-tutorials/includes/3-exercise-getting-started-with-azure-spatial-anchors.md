@@ -31,8 +31,8 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
 
     ![Prefabs](../media/asa-02-section-4-step-1-1.png)
 
-    >![Tip]
-    >If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by [toggling the Gizmos](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the off position, as shown in the image above.
+    > ![Tip]
+    > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by [toggling the Gizmos](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the off position, as shown in the image above.
 
 2. Select **MixedRealityToolkit** object in the Hierarchy window, use the **Add Component** button in the Inspector window to add the following components:
 
@@ -41,10 +41,11 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
 
     ![Add components to the MixedRealityToolkit](../media/asa-02-section-5-step-1-1.png)
 
-    >![Warning]
-    >There's a known issue with ASA v2.9.0 and v2.10.0-preview.1 that requires two additional objects to be placed in the scene. Please use the Add Component button in the inspector window to add an AR Camera Manager (Script) and an AR Session (Script) to the **MixedRealityToolkit** object. Be sure to disable the Camera that is created automatically while adding the AR Camera Manager (Script) by unchecking the checkbox next to the Camera object in the inspector window. This issue will be addressed in the full release of ASA v2.10.0.
-    >![Note]
-    >When you add the AR Anchor Manager (Script) component, the AR Session Origin (Script) component is automatically added because it's required by the AR Anchor Manager (Script) component.
+    > ![Warning]
+    > There's a known issue with ASA v2.9.0 and v2.10.0-preview.1 that requires two additional objects to be placed in the scene. Please use the Add Component button in the inspector window to add an AR Camera Manager (Script) and an AR Session (Script) to the **MixedRealityToolkit** object. Be sure to disable the Camera that is created automatically while adding the AR Camera Manager (Script) by unchecking the checkbox next to the Camera object in the inspector window. This issue will be addressed in the full release of ASA v2.10.0.
+
+    > ![Note]
+    > When you add the AR Anchor Manager (Script) component, the AR Session Origin (Script) component is automatically added because it's required by the AR Anchor Manager (Script) component.
 
 ## Configure the buttons to operate the scene
 
@@ -109,8 +110,8 @@ In the Hierarchy window, select the **ParentAnchor** object, then in the Inspect
 
 Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to build the project and deploy the app to your device.
 
->![Tip]
->For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the Building your application to your HoloLens 2 instructions.
+> ![Tip]
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the Building your application to your HoloLens 2 instructions.
 
 When the app runs on your device, follow the on-screen instructions displayed on the Azure Spatial Anchor Tutorial Instructions panel:
 
