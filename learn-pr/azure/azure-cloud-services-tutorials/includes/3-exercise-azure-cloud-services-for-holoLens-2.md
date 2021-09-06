@@ -45,7 +45,7 @@ To store a *Tracked Object* location and give a guided directions to find it, yo
 
 The application is mainly driven by traditional UI, so you use the [Azure Bot Service](https://azure.microsoft.com/services/bot-service/) to add some personality and act as a new interaction method.
 
-## Creating and preparing the Unity project
+## Create and prepare the Unity project
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
@@ -60,17 +60,16 @@ First, follow the Initializing your project and first application, excluding the
 
 Then follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is **DefaultXRSDKConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
-## Installing inbuilt Unity packages
+## Install inbuilt Unity packages
 
 1. In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** and click the **Install** button to install the package:
 
     ![Unity Package Manager window with AR Foundation selected](../media/asa-02-section-2-step-1-1.png)
 
+    > [!NOTE]
+    > You are installing the AR Foundation package because the Azure Spatial Anchors SDK requires it, which you will import in the next section.
 
-> [!NOTE]
-> You are installing the AR Foundation package because the Azure Spatial Anchors SDK requires it, which you will import in the next section.
-
-## Importing the tutorial assets
+## Import the tutorial assets
 
 1. Add AzurespatialAnchors SDK V2.7.1 into your unity project, to add the packages please follow this [tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
 
@@ -79,17 +78,17 @@ Then follow the Changing the Spatial Awareness Display Option instructions to en
     * [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureStorageForUnity.unitypackage)
     * [MRTK.Tutorials.AzureCloudServices.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.unitypackage)
 
-> [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the Importing the tutorial assets instructions.
+    > [!TIP]
+    > For a reminder on how to import a Unity custom package, you can refer to the Importing the tutorial assets instructions.
 
 3. After you have imported the tutorial assets your Project window should look similar to this:
 
     ![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](../media/tutorial-1-section-4-step-1-1.png)
 
-> [!NOTE]
-> If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' and 'WorldAnchor.GetNativeSpatialAnchorPtr()' being obsolete, you can ignore these warnings.
+    > [!NOTE]
+    > If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' and 'WorldAnchor.GetNativeSpatialAnchorPtr()' being obsolete, you can ignore these warnings.
 
-##  Preparing the scene
+## Prepare the scene
 
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
@@ -97,12 +96,11 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
 
     ![Unity with SceneController, RootMenu and DataManager prefabs selected](../media/tutorial-1-section-5-step-1-1.png)
 
-
 2. The **SceneController (prefab)** contains two scripts, **SceneController (script)** and **UnityDispatcher (script)**. The **SceneController** script component contains several UX functions and facilitates the photo capture functionality while **UnityDispatcher** is a helper class to allow execute actions on the Unity main thread.
 
-The **RootMenu (prefab)** is the primary UI prefab that holds all UI windows that are connected to each other through various small script components and control the general UX flow of the application.
+    The **RootMenu (prefab)** is the primary UI prefab that holds all UI windows that are connected to each other through various small script components and control the general UX flow of the application.
 
-The **DataManager (prefab)** is responsible for talking to Azure storage and will be explained further in the next tutorial.
+    The **DataManager (prefab)** is responsible for talking to Azure storage and will be explained further in the next tutorial.
 
 3. Now with the three prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
@@ -112,8 +110,8 @@ The **DataManager (prefab)** is responsible for talking to Azure storage and wil
 
     ![Unity with RootMenu object selected](../media/tutorial-1-section-5-step-1-3.png)
 
-> [!TIP]
-> If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position.
+    > [!TIP]
+    > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position.
 
 ## Configuring the scene
 
@@ -152,7 +150,6 @@ While the project yet has to be filled with content, you have to perform some pr
 1. In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
 
     ![Unity open Project Settings](../media/tutorial-1-section-7-step-1-1.png)
-
 
 2. In the Project Settings window, select **Player** and then **Publishing Settings**:
 

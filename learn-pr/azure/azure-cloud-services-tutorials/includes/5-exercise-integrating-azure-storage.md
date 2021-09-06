@@ -1,7 +1,6 @@
 In this module, you'll learn how to save entity data to Azure Table storage and thumbnail images to Azure Blob storage. This feature will allow us to store and retrieve *Tracked Objects* with data like ID, Name, Thumbnail Image, etc. across sessions and devices to the cloud.
 
-
-## Understanding Azure storage
+## Understand Azure storage
 
 **Azure storage** is a Microsoft storage solution on the cloud that can cover many scenarios and requirements. It can scale massively and is easily approachable by developers. All services can be consumed under the umbrella of an **Azure storage Account**. For our use case, we will use *Table storage* and *Blob storage*.
 
@@ -22,7 +21,7 @@ For of the demo application, you need one Blob Container to store the images.
 
 Learn more about [Azure Blob storage](/azure/storage/blobs/storage-blobs-introduction).
 
-## Preparing Azure Storage
+## Prepare Azure Storage
 
 To consume the Azure storage services, you'll need an Azure storage account. To create a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal). To learn more about storage accounts, see [Azure storage account overview](/azure/storage/common/storage-account-overview).
 
@@ -38,23 +37,23 @@ While you can see and verify all data changes from the UI inside the application
 > * on Windows 10 you can use [Azure Storage Emulator](/azure/storage/common/storage-use-emulator)
 > * on MacOS/Linux you can use [Azurite Docker Image](https://hub.docker.com/_/microsoft-azure-storage-azurite) for Docker
 
-## Preparing the scene
+## Prepare the scene
 
 1. In the Hierarchy window, locate the **DataManager** object and select it.
 
-![Unity with DataManager script component configuration fields shown in Inspector](../media/tutorial-2-section-4-step-1-1.png)
+    ![Unity with DataManager script component configuration fields shown in Inspector](../media/tutorial-2-section-4-step-1-1.png)
 
-From the Inspector window, you'll see that the **DataManager (script)** component is where all **Azure storage** related settings are kept. All relevant settings are already set, you just need to replace the *Connection String* field with the one you can retrieve from the Azure portal. If you're using a local Azure storage emulator solution, then you can keep the already provided *Connection String*.
+    From the Inspector window, you'll see that the **DataManager (script)** component is where all **Azure storage** related settings are kept. All relevant settings are already set, you just need to replace the *Connection String* field with the one you can retrieve from the Azure portal. If you're using a local Azure storage emulator solution, then you can keep the already provided *Connection String*.
 
-The **DataManager (script)** is responsible for talking to the **Table storage** and **Blob storage** which is consumed by other controller scripts on the UI components.
+    The **DataManager (script)** is responsible for talking to the **Table storage** and **Blob storage** which is consumed by other controller scripts on the UI components.
 
-## Writing and reading data from Azure Table storage
+## Write and read data from Azure Table storage
 
 With everything prepared, it's time to create a *Tracked Object*.
 
 1. Open the application on your HoloLens, click on the **Set Object** and you'll see how the *EnterObjectName* object will become active in the hierarchy. In this menu click on the *search bar* and type in the name, you want to give the *Tracked Object*. After providing a name click on the **Set object** button. This will create the *Tracked Object* on the Azure Table storage and you'll see now the **Object Card**.
 
-This **Object Card** is a UI representation of the *Tracked Object* and will have an important role several times in this tutorial series.
+    This **Object Card** is a UI representation of the *Tracked Object* and will have an important role several times in this tutorial series.
 
 2. Now click on the description *text box* and type in "Car", after that click on the **Save** button to save the changes. Stop the application and rerun it.
 
@@ -62,10 +61,10 @@ This **Object Card** is a UI representation of the *Tracked Object* and will hav
 
 4. Feel free to close the **Object Card** and create new *Tracked Objects* and edit their data.
 
-> [!TIP]
-> If you've installed the [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/) then look into the *objects* table and you'll see there the created *Tracked Object*.
+    > [!TIP]
+    > If you've installed the [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/) then look into the *objects* table and you'll see there the created *Tracked Object*.
 
-## Uploading and Download image from Azure Blob storage
+## Upload and Download image from Azure Blob storage
 
 In this section, you'll use the Azure Blob storage to upload and download images that will be used as thumbnails for *Tracked Objects*.
 
@@ -76,7 +75,7 @@ In this section, you'll use the Azure Blob storage to upload and download images
 
 2. Now rerun the application and search for the *Tracked Object* and the previously uploaded image should appear as thumbnail.
 
-## Deleting image from Azure Blob storage
+## Delete image from Azure Blob storage
 
 In the previous section you uploaded new images to Azure Blob storage, in this section you'll delete an image thumbnail for *Tracked Objects*.
 

@@ -1,35 +1,33 @@
-
-
 In this module, you will learn how to use **Azure Spatial Anchors**. You will store the location of a **Tracked Object** as an Azure Spatial Anchor. Once you query for the anchor, an arrow will appear to guide you toward the location.
 
-## Understanding Azure Spatial Anchors
+## Understand Azure Spatial Anchors
 
 **Azure Spatial Anchors** is part of the Azure Cloud Services family and is used to save anchor locations. The saved anchor locations can be retrieved based on the *anchor ID* from the cloud. This anchor location can be shared and accessed by multi-platform devices like HoloLens, iOS, and Android devices.
 
 Learn more about [Azure Spatial Anchors](/azure/spatial-anchors/overview).
 
-## Preparing Azure Spatial Anchors
+## Prepare Azure Spatial Anchors
 
 Before you can start, you have to create a spatial anchor resource in your Azure portal.
 Learn how to make a [spatial anchor resource](/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource).
 
-## Preparing the scene
+## Prepare the scene
 
 In this section, you will learn how to configure the scene and make the necessary changes.
 
 1. In the Project window, navigate to the **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager**
 
-![Unity with AnchorManager prefab selected](../media/tutorial-4-section-1-step-1-1.png)
+    ![Unity with AnchorManager prefab selected](../media/tutorial-4-section-1-step-1-1.png)
 
 2. From the **Manager** folder, drag and drop the prefab **Anchor Manager** into the scene Hierarchy.
 
 3. Select **Anchor Manager** GameObject in the Hierarchy, and in the Inspector section, you will find **Spatial Anchor Manager** (Script). Find account ID and key field and add the credentials which you had created in the prerequisite in the earlier stage.
 
-![Unity with newly added AnchorManager prefab still selected](../media/tutorial-4-section-1-step-2-1.png)
+    ![Unity with newly added AnchorManager prefab still selected](../media/tutorial-4-section-1-step-2-1.png)
 
 4. Now find the **Scene Controller** object in your scene Hierarchy and select it. You will see the **Scene Controller** Inspector.
 
-![Unity with SceneController script component configured](../media/tutorial-4-section-1-step-3-1.png)
+    ![Unity with SceneController script component configured](../media/tutorial-4-section-1-step-3-1.png)
 
 5. You will observe that the **Anchor Manager** field in the **Scene Controller** component is empty, drag and drop the **Anchor Manager** from the Hierarchy in the scene into that field and save the scene.
 
