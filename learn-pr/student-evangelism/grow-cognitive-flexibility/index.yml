@@ -3,7 +3,7 @@ uid: learn.student-evangelism.grow-cognitive-flexibility
 metadata:
   title: 'Grow your cognitive flexibility'
   description: Learn how to grow your cognitive flexibility.
-  ms.date: 05/13/2021
+  ms.date: 09/07/2021
   author: interurban
   ms.author: jadenyer
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract:  |
   - Learn how to apply cognitive flexibility to pivot and persist in challenging situations.
 prerequisites: |
   - An open mind and a willingness to learn about the expectations and responsibilities of mentorship in a technology workspace.
-  
+  hidden: true
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -29,14 +29,14 @@ products:
 - azure
 - vs-code
 units:
-- learn.student-evangelism.grow-cognitive-flexibility.1-introduction
-- learn.student-evangelism.grow-cognitive-flexibility.2-what-is-cognitive-flexibility
-- learn.student-evangelism.grow-cognitive-flexibility.3-recognize-importance-adapt-to-change
-- learn.student-evangelism.grow-cognitive-flexibility.4-expand-outlook
-- learn.student-evangelism.grow-cognitive-flexibility.5-use-feedback
-- learn.student-evangelism.grow-cognitive-flexibility.6-pivot-persist-challenging-situations
-- learn.student-evangelism.grow-cognitive-flexibility.7-exercise-cognitive-flexibility
-- learn.student-evangelism.grow-cognitive-flexibility.8-knowledge-check
-- learn.student-evangelism.grow-cognitive-flexibility.9-summary
+- learn.student-evangelism.grow-cognitive-flexibility.introduction
+- learn.student-evangelism.grow-cognitive-flexibility.what-is-cognitive-flexibility
+- learn.student-evangelism.grow-cognitive-flexibility.recognize-importance-adapt-to-change
+- learn.student-evangelism.grow-cognitive-flexibility.expand-outlook
+- learn.student-evangelism.grow-cognitive-flexibility.use-feedback
+- learn.student-evangelism.grow-cognitive-flexibility.pivot-persist-challenging-situations
+- learn.student-evangelism.grow-cognitive-flexibility.exercise-cognitive-flexibility
+- learn.student-evangelism.grow-cognitive-flexibility.knowledge-check
+- learn.student-evangelism.grow-cognitive-flexibility.summary
 badge:
   uid: learn.student-evangelism.grow-cognitive-flexibility.badge 

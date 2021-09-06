@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.grow-cognitive-flexibility.8-knowledge-check
+uid: learn.student-evangelism.grow-cognitive-flexibility.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 05/13/2021
+  ms.date: 09/07/2021
   author: interurban
   ms.author: jadenyer
   ms.topic: interactive-tutorial
