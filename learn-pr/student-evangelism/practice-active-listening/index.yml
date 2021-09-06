@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.student-evangelism.practice-active-listening
+metadata:
+  title: 'Work with others by practicing active listening'
+  description: Learn how to work with others by practicing active listening.
+  ms.date: 05/13/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Work with others by practicing active listening'
+summary: Learn how to work with others by practicing active listening.
+abstract:  | 
+  After completing this module, you'll be able to:
+  - Realize how active listening creates a more effective communication.
+  - Improve relationships in your technology workplace using active listening.
+  - Set grounds rules for respectful and effective communication.
+  - Apply active listening strategies in computer science.
+  
+prerequisites: |
+  - An open mind and a willingness to learn about the expectations and responsibilities of managing, mentoring, or collaborating with others in a technology workspace or educational environment.
+  
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.student-evangelism.practice-active-listening.1-introduction
+- learn.student-evangelism.practice-active-listening.2-what-is-effective-communication
+- learn.student-evangelism.practice-active-listening.3-role-active-listening-teamwork
+- learn.student-evangelism.practice-active-listening.4-exercise-reflective-experiences
+- learn.student-evangelism.practice-active-listening.5-ground-rules-effective-communication
+- learn.student-evangelism.practice-active-listening.6-practice-active-listening-strategies
+- learn.student-evangelism.practice-active-listening.7-exercise-reflect-active-listening-techniques
+- learn.student-evangelism.practice-active-listening.8-knowledge-check
+- learn.student-evangelism.practice-active-listening.9-summary
+badge:
+  uid: learn.student-evangelism.practice-active-listening.badge
