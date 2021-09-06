@@ -44,14 +44,14 @@ By default, Unity will attenuate spatialized sounds as they get farther from the
 
 To disable this attenuation, you need to adjust the **Volume** curve In the **Audio Source** component.
 
-1. In the Hierarchy window, select the **PressableButtonHoloLens2** then in the Inspector window
+* In the Hierarchy window, select the **PressableButtonHoloLens2** then in the Inspector window
   navigate to  **Audio Source** > **3D Sound Settings** and Configure as follows:
 
-    * Set the **Volume Rolloff** property to Linear Rolloff
-    * Drag the endpoint on the **Volume** curve (the red curve) from '0' on the y axis up to '1'
-    * To adjust the shape of the **Volume** curve to be flat, drag the white curve shape control to be parallel to the X axis
+  * Set the **Volume Rolloff** property to Linear Rolloff
+  * Drag the endpoint on the **Volume** curve (the red curve) from '0' on the y axis up to '1'
+  * To adjust the shape of the **Volume** curve to be flat, drag the white curve shape control to be parallel to the X axis
 
-   [Button 3D sound settings](../media/spatial-audio-02-section-3-step-1-1.png)
+  [Button 3D sound settings](../media/spatial-audio-02-section-3-step-1-1.png)
 
 ## Test the spatialize audio
 
