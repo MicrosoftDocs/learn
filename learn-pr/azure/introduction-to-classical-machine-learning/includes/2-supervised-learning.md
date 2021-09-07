@@ -19,7 +19,7 @@ Supervised learning can be thought of as learning by example. In supervised lear
 * Features that are provided as inputs to the model
 * Labels, which are the correct answers that we want the model to be able to produce
 
-:::image type="content" source="../media/2-2-b.png" alt-text="Diagram of the model and objective function parts of the machine learning lifecycle, with labels." border="false":::
+:::image type="content" source="../media/2-2-b.jpg" alt-text="Diagram of the model and objective function parts of the machine learning lifecycle, with labels." border="false":::
 
 For example, consider our desire to predict what the temperature will be on January 31 of a given year. For this prediction, we'll need data with two components:
 
