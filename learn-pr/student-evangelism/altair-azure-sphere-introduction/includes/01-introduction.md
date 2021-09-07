@@ -1,16 +1,23 @@
 Welcome to the "Learn Computing fundamentals with Altair 8800 emulator & Azure Sphere" learning path.
 
+## Introduction
+
+Welcome to the cloud-connected Altair 8800 on Azure Sphere learning path. You’ve come to the right Microsoft Leaning Path if you are interested in secure IoT device and cloud computing. Not only do you get to learn about device and cloud computing, but you'll also get a taste of retro computing. You'll gain an understanding of the Altair 8800 personal computer, invented in the 1970s.
+
+The Altair 8800 emulator provides the perfect vehicle for learning computing fundamentals. You'll get to program apps and games in Basic and C. For the more adventurous, you can code applications in Assembly language. Or you can take a notch deeper and program the Altair 8800 in Intel 8080 machine code.
+
 ## Scenario: first contact
 
 
 ## What will you learn?
 
+In this module you'll learn about the Azure Sphere, a platform for secure IoT, and the Altair 8800. But this module will focus on the end-to-end solution architecture and how we cloud-connected the Altair 8800. The Altair 8800 was invented well before the Internet as we know it today, and you'll learn techniques that you can apply to more day to day solutions.
 
 ## What is the main goal?
 
 
 
-This learning path brings together the Open Source Altair 8800 emulator and Azure Sphere. You will learn about:
+This learning path brings together the Open Source Altair 8800 emulator and Azure Sphere. You'll learn about:
 
 - Secure IoT
 - Secure cloud services
@@ -27,7 +34,7 @@ Select the following image to view an introduction to the cloud-connected Altair
 In this module, you will:
 
 - Learn about the history of the Altair 8800, the computer that kick-started the personal computer revolution.
-- Learn about the three components of Sphere Sphere and how together they provide a platform for secure IoT.
+- Learn about the three components of Azure Sphere and how together they provide a platform for secure IoT.
 - Apply the Azure IoT Services that are used to cloud-connect the Altair 8800.
 - Write Basic, C, or Assembler applications and games that run on the Altair 8800 emulator.
 
