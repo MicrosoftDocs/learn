@@ -20,7 +20,7 @@ In the previous section you saw how Azure policies can be used to easily govern 
 
 4. Click on the **Kubernetes cluster containers should only use allowed images** policy. You will see the cluster that has the non compliant pod in it
 
-5. Click on the cluster to get more details on which pod is not compliant. Here you will see the name of the specific pod that is not compliant. You will see that it is only the first pod that was deployed that is not compliant. This is an effective way to audit compliance status of your cluster
+5. Click on the cluster to get more details on which pod is not compliant. Here you will see the name of the specific pod that is not compliant. You will see that it is only the first pod that was deployed that is not compliant. This is an effective way to audit compliance status of your cluster.
 
    ![resources not compliant ](../media/6-non-compliant-pod.png)
 
@@ -34,4 +34,6 @@ Now that we have found the pod that is not compliant, we will go ahead and delet
    kubectl delete -f nginxfromdocker.yaml
    ```
 
-2. Give it a few minutes then head back to the policy to to see if there are still any uncompliant pods under that policy. 
+2. Give it a few minutes then head back to the policy to to see if there are still any uncompliant pods under that policy. You will find that your cluster is now in compliance with the policy.
+
+   ![resources now compliant ](../media/6-cluster-now-compliant.png)

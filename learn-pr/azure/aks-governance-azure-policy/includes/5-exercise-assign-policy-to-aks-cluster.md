@@ -4,7 +4,7 @@ In this unit you'll deploy a non-compliant pod, apply the azure policies includi
 
 ## Deploy a non-compliant pod into the cluster
 
-We begin by deploying an image from dockerhub.com into the cluster. To do that we begin by logging into the cluster.
+We begin by deploying an image from dockerhub.com into the cluster. The first step would be to log into the cluster.
 
 1. In Cloud Shell, log into the AKS cluster
 
@@ -12,13 +12,13 @@ We begin by deploying an image from dockerhub.com into the cluster. To do that w
    az aks get-credentials -n videogamecluster -g videogamerg
    ```
 
-2. Create a kuberentes manifest file that file that will be used to deploy the pods into the cluster
+2. Create a kuberentes manifest file that will be used to deploy the pods into the cluster
 
    ```
    code nginxfromdocker.yaml
    ```
 
-3. Enter the following yaml code into the newly created file and save it by typing ctrl+s
+3. Enter the following yaml code into the newly created file and save it by entering Ctrl+S
 
    ```yaml
    apiVersion: apps/v1
@@ -86,11 +86,9 @@ You have successfully deployed your workload on a cluster that doesn't have any 
 
 Azure Policy is a service you can use to create, assign, and manage policies. These policies apply and enforce rules that your resources need to follow. These policies can enforce these rules when resources are created, and can be evaluated against existing resources to give visibility into compliance.
 
-Policies can enforce things such as only allowing specific types of resources to be created, or only allowing resources in specific Azure regions. You can enforce naming conventions across your Azure environment. You can also enforce that specific tags are applied to resources. You'll take a look at how policies work.
-
 ## Create a policy
 
-You'd like to ensure that all resources have the **Department** tag associated with them and block creation if it doesn't exist. You'll need to create a new policy definition and then assign it to a scope; in this case the scope will be our **videogamerg** resource group. Policies can be created and assigned through the Azure portal, Azure PowerShell, or Azure CLI. This exercise takes you through creating a policy in the portal.
+You'd like to ensure that only images from certain registries are allowed in the cluster. You'll need to create a new policy definition and then assign it to a scope; in this case the scope will be our **videogamerg** resource group. Policies can be created and assigned through the Azure portal, Azure PowerShell, or Azure CLI. This exercise takes you through creating a policy in the portal.
 
 Find the built-in policy definitions for managing your cluster using the Azure portal with the following steps. In this case we will be applying the "only trusted registry" policy.
 
@@ -102,7 +100,7 @@ Find the built-in policy definitions for managing your cluster using the Azure p
 
 1. Select the **Kubernetes cluster containers should only use allowed images** policy definition, then select the Assign button at the top left corner of the screen.
 
-1. Set the Scope to the resource group of the Kubernetes cluster you just created, in this case, the **videogamerg** resource group and fill out the rest of the form as seen in the picture below and click **Next**.
+1. Set the Scope to the resource group of the Kubernetes cluster you just created, which in this case is the **videogamerg** resource group. Fill out the rest of the form as seen in the picture below and click **Next**.
 
    ![policy assigmnet](../media/5-policy-assignment.png)
 
@@ -124,7 +122,7 @@ Your policy assignment should look like the picture below. Note that effect is s
 
 ## Test the Azure Policy
 
-Now that you have assigned the restricting policy to the cluster, you will now run a test to see if the policy works. To do this, we will create a new deployment and see if the deployment works. We begin by creating a new kubernetes manifest file and deploying it. 
+Now that you have assigned the restricting policy to the cluster, you will now run a test to see if the policy works. To do this, you will create a new deployment and see if the deployment works. We begin by creating a new kubernetes manifest file and deploying it. 
 > [!IMPORTANT]
 > Please note that the policy assignment may take up to 30 minutes to take effect. Because of this delay, in the following steps the policy validation may succeed but the deployment will still fail. If this happens, allow for additional time and retry your deployment.
 
@@ -179,7 +177,7 @@ Now that you have assigned the restricting policy to the cluster, you will now r
        app: second-nginx
    ```
 
-3. Close the code editor after saving it by entering *ctrl + q*
+3. Close the code editor after saving it by entering *Ctrl+Q *
 
 4. Deploy the new service and deployment by entering the following in the command line
 
@@ -215,12 +213,12 @@ Initiatives can be assigned the same way policies are assigned. Follow the steps
 1. From the Category dropdown list box, use Select all to clear the filter and then select Kubernetes.
 1. Select the **Kubernetes cluster pod security restricted standards for Linux-based workloads** initiative  definition. Take some time to review the various policies that are a part of the initiative.
 1. Select the **Assign** button at the top left corner of the screen.
-1. Set the Scope to the resource group of the Kubernetes cluster you just created, in this case, the **videogamerg** resource group and fill out the rest of the form as seen in the picture below and click **Next** to move on to the Parameters section
+1. Set the Scope to the resource group of the Kubernetes cluster you just created, which in this case is the **videogamerg** resource group. Fill out the rest of the form as you did in the previous step and click **Next** to move on to the Parameters section
 1. Click **Next** again to move on to the **Remediation** tab. Ensure **Create a Managed Identity** is not checked and click next again
 1. Here you have the chance to add Non-compliance messages. You can add these messages to each policy by clicking on the ellipses next to each one and then selecting **Edit message**
 1. Click **Next** then click **Create** at the bottom
 
-Here you can find the policy assignment again by going to back to **Policy** and selecting **Assignments** in the left blade. Clicking on the policy assignment you just created will show that the effect was set to Audit in this case.
+Here you can find the policy assignment again by clicking on **Policy** and selecting **Assignments** in the left blade. Clicking on the policy assignment you just created will show that the effect was set to Audit in this case.
 
 ## Redeploying the pods using an Azure Container Registry Image
 
@@ -242,7 +240,7 @@ Now that you know that the policy prevents images from Dockerhub from being crea
    az acr import --name $ACR_NAME --source docker.io/library/nginx:latest --image nginx:v1
    ```
 
-3. After the command runs check to ensure the image was imported. You should see nginx in the list of results
+3. Check to ensure the image was imported. You should see nginx in the list of results
 
    ```bash
    az acr repository list --name $ACR_NAME
@@ -254,7 +252,7 @@ Now that you know that the policy prevents images from Dockerhub from being crea
    echo $ACR_NAME
    ```
 
-5. Modify the image parameter for your *secondnginxfromdocker.yaml* file so that it now points to your container registry. Change the *image: nginx*  in line 18 to *image: <acr name>.azurecr.io/nginx*. 
+5. Modify the image parameter for your *secondnginxfromdocker.yaml* file so that it now points to your container registry. Change the *image: nginx*  in line 18 to *[acr name].azurecr.io/nginx:v1*.
 
    ```bash
    code secondnginxfromdocker.yaml
