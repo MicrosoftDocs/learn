@@ -20,10 +20,10 @@ The goal of this module was help you understand the main capabilities of Azure S
 * How create alerts and be aware about issues and planned maintenance which may impact you
 
 References
-* [Create activity log alerts on service notifications using the Azure portal](https://docs.microsoft.com/azure/service-health/alerts-activity-log-service-notifications-portal)
-* [Use the Azure portal to view service health notifications](https://docs.microsoft.com/azure/service-health/service-health-notifications-properties)
-* [Resource types and health checks in Azure resource health](https://docs.microsoft.com/azure/service-health/resource-health-checks-resource-types)
-* [Azure Resource Health FAQ](https://docs.microsoft.com/azure/service-health/resource-health-faq)
+* [Create activity log alerts on service notifications using the Azure portal](azure/service-health/alerts-activity-log-service-notifications-portal)
+* [Use the Azure portal to view service health notifications](/azure/service-health/service-health-notifications-properties)
+* [Resource types and health checks in Azure resource health](/azure/service-health/resource-health-checks-resource-types)
+* [Azure Resource Health FAQ](/azure/service-health/resource-health-faq)
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
