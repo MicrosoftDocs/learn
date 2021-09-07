@@ -5,7 +5,7 @@ In this exercise, you'll build a deck of cards for a card game that's in develop
 Begin by scaffolding a new F# project in your console. Run the command `dotnet new`:
 
 ```bash
-dotnet run console --language F# -o Loops
+dotnet new console --language F# -o Loops
 cd Loops
 ```
 
@@ -14,13 +14,13 @@ cd Loops
 Your colleagues have taken the code you wrote in the previous exercise and turned it into a function, so it's reusable. Here's what the code looks like now:
 
 ```fsharp
-let cardDescription (card: int) : string = 
-     let cardNo: int = card % 13
-     if cardNo = 1 || cardNo = 14 then "Ace"
-     elif cardNo = 11 then "Jack"
-     elif cardNo = 12 then "Queen"
-     elif cardNo = 13 then "King"
-     else string cardNo
+let cardDescription (card: int) : string =
+    let cardNo: int = card % 13
+    if cardNo = 1 then "Ace"
+    elif cardNo = 11 then "Jack"
+    elif cardNo = 12 then "Queen"
+    elif cardNo = 0 then "King"
+    else string cardNo
 ```
 
 To create a card description:
@@ -32,13 +32,13 @@ To create a card description:
     ```fsharp
     open System
         
-    let cardDescription (card: int) : string = 
-         let cardNo: int = card % 13
-         if cardNo = 1 || cardNo = 14 then "Ace"
-         elif cardNo = 11 then "Jack"
-         elif cardNo = 12 then "Queen"
-         elif cardNo = 13 then "King"
-         else string cardNo
+    let cardDescription (card: int) : string =
+        let cardNo: int = card % 13
+        if cardNo = 1 then "Ace"
+        elif cardNo = 11 then "Jack"
+        elif cardNo = 12 then "Queen"
+        elif cardNo = 0 then "King"
+        else string cardNo
     
     [<EntryPoint>]
     let main argv =
@@ -82,13 +82,13 @@ To create a card description:
         elif suitNo = 2 then "Diamonds"
         else "Clubs" 
     
-    let cardDescription (card: int) : string = 
-         let cardNo: int = card % 13
-         if cardNo = 1 || cardNo = 14 then "Ace"
-         elif cardNo = 11 then "Jack"
-         elif cardNo = 12 then "Queen"
-         elif cardNo = 13 then "King"
-         else string cardNo
+    let cardDescription (card: int) : string =
+        let cardNo: int = card % 13
+        if cardNo = 1 then "Ace"
+        elif cardNo = 11 then "Jack"
+        elif cardNo = 12 then "Queen"
+        elif cardNo = 0 then "King"
+        else string cardNo
     
     [<EntryPoint>]
     let main argv =
@@ -176,13 +176,13 @@ let suit (no:int) : string =
     elif suitNo = 2 then "Diamonds"
     else "Clubs" 
 
-let cardDescription (card: int) : string = 
-     let cardNo: int = card % 13
-     if cardNo = 1 || cardNo = 14 then "Ace"
-     elif cardNo = 11 then "Jack"
-     elif cardNo = 12 then "Queen"
-     elif cardNo = 13 then "King"
-     else string cardNo
+let cardDescription (card: int) : string =
+    let cardNo: int = card % 13
+    if cardNo = 1 then "Ace"
+    elif cardNo = 11 then "Jack"
+    elif cardNo = 12 then "Queen"
+    elif cardNo = 0 then "King"
+    else string cardNo
 
 [<EntryPoint>]
 let main argv =

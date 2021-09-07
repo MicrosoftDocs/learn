@@ -97,20 +97,11 @@ let convert (a:string) =
     int a
 ```
 
-The parameter now has the type `int` via the code `let cardType a:int`. But this code no longer compiles. The way the compiler works, it assumes the same parameter type means that the return type should be the same. You're shown an error, like so:
-
-```output
-error FS0001: This expression was expected to have type
-    'string'    
-but here has type
-    'int'
-```
-
-To make this code compile, you also need to specify a return type for the function. To do so, add another `:<type>` right after your parameter:
+The parameter now has the type `string` via the code `let convert (a:string)`. You can now be even more explicit, by adding a return type. To do so, add another `:<type>` right after your parameter:
 
 ```fsharp
 let convert (a:string):int =
     int a
 ```
 
-Now the parameter is enclosed by parentheses, as shown in `(a:string)`. The return type is the last `:<type>` annotation to happen, which is `:int`, and your code works again.
+Now the parameter is enclosed by parentheses, as shown in `(a:string)`. The return type is the last `:<type>` annotation to happen, which is `:int`. F# is clever enough to figure out most scenarios, but sometimes you need to help the code by being more explicit. Another benefit to adding types, is that it makes it easier for another developer to figure out what's going on.

@@ -76,6 +76,7 @@ modules:
 - learn.azdo.create-multi-stage-pipeline
 - learn.azdo.run-functional-tests-azure-pipelines
 - learn.azdo.run-non-functional-tests-azure-pipelines
+- learn.azdo.manage-release-cadence
 - learn.azure.protect-vm-settings-with-dsc
 - learn.github.github-actions-ci
 trophy:

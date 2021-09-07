@@ -2,11 +2,11 @@ In this exercise, we'll create a function app in Azure and publish our project.
 
 ## Create a function app
 
-Before we can use the Core Tools to publish our code to a function app, we need to create the app in Azure. We'll use the Azure CLI in Azure Cloud Shell to do that.
+Before you can publish your code to a function app using Core Tools, you need to create the app in Azure. Let's use the Azure CLI in Azure Cloud Shell to do that.
 
-This tutorial's sandbox gives you free, temporary access to Azure, and the Azure CLI in Cloud Shell pane on the right has already been signed in to your account and configured to use your free access.
+This tutorial's sandbox gives you free, temporary access to Azure, and the Azure CLI in Cloud Shell to the right has already been signed in to your account and configured to use your free access.
 
-Run the following commands in Cloud Shell to create a function app in Azure.
+To create a function app in Azure, run the following commands in Azure Cloud Shell.
 
 ```azurecli
 RESOURCEGROUP=<rgn>[sandbox resource group]</rgn>
@@ -30,7 +30,7 @@ az functionapp create \
 
 Here's what these commands do:
 
-1. The three lines at the top create shell variables with values that we use repeatedly in the following commands. For resource group, we specify the group created for you by the sandbox. The storage account and function app names include `$(openssl rand -hex 5)`, which generates a random 5-character string, to ensure that the names meet the requirement of being globally unique.
+1. The three lines at the top create shell variables with values that we use repeatedly in the following commands. For resource group, we specify the group created for you by the sandbox. The storage account and function app names include `$(openssl rand -hex 5)`, which generates a random five-character string, to ensure that the names meet the requirement of being globally unique.
 
 2. `az storage account create` creates an Azure storage account that will be used by the function app. A storage account is a separate Azure resource that needs to be created before the function app can be created.
 
@@ -54,8 +54,8 @@ Unlike the previous exercise, where you temporarily hosted your function locally
 
 ## Run the function
 
-Our function is now published to Azure and can be called from anywhere. As an HTTP-triggered function that responds to GET requests, we can run it from a browser. Let's try it:
+Your function is now published to Azure and can be called from anywhere. As an HTTP-triggered function that responds to GET requests, it can be run from any browser. Let's try it:
 
 1. Select the invoke URL from the previous command's output to open it in a new browser tab. You'll see the same output we observed when we ran the function locally without providing the right query string parameters.
 
-2. Add `&principal=5000&rate=.035&term=36` to the end of the URL (make sure you preserve the `code` parameter), and press <kbd>Enter</kbd>. The result returned is `6300`, just as before.
+1. Add `&principal=5000&rate=.035&term=36` to the end of the URL (make sure you preserve the `code` parameter), and press <kbd>Enter</kbd>. The result returned is `6300`, as expected.

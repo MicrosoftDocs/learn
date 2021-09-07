@@ -25,13 +25,14 @@ You can optionally set up virtual networks and geo-redundancy during account cre
 
    ![Create a resource from Azure portal menu.](../media/2-create-a-resource-azure-cosmos-db.png)
 
-1. In the left menu pane, select **Databases**, and then select **Azure Cosmos DB** under *Popular offers*. The **Select API option** pane appears.
+1. In the left menu pane, select **Databases**, and then under **Azure Cosmos DB** select *Create*. The **Select API option** pane appears.
 
-1. Select **Create** within the **Core (SQL) - Recommended** box. The **Create Azure Cosmos DB Account - Core (SQL)** pane appears.
+    > [!NOTE]
+    > If you do not see **Azure Cosmos DB** in the list of databases, you can use the search box to search for it.
+
+1. In the **Core (SQL) - Recommended** box, select **Create**. The **Create Azure Cosmos DB Account - Core (SQL)** pane appears.
 
    ![Select Azure Cosmos DB.](../media/2-select-database-azure-cosmos-db.png)
-
-   If you do not see **Azure Cosmos DB** in the list of databases, you can use the search box to search for it.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -60,20 +61,20 @@ You can optionally set up virtual networks and geo-redundancy during account cre
 
 1. Select **Review + create**.
 
-1. After successfully validating your settings, select **Create** to create the account.
+1. After  your settings are successfully validated, select **Create** to create your Cosmos DB account.
 
-1. The account creation takes a few minutes. Wait for the portal to display the notification that the deployment succeeded, and select the notification.
+1. Account creation takes a few minutes to deploy. Wait for the portal to display the notification that the deployment succeeded, and then select the notification.
 
-    ![Notification alert.](../media/2-azure-cosmos-db-notification.png)
+    ![Screensot of the Notification icon with an alert.](../media/2-azure-cosmos-db-notification.png)
 
-1. In the notification window, select **Go to resource**.
+1. Select **Go to resource**.
 
     ![Go to resource.](../media/2-azure-cosmos-db-go-to-resource.png)
 
     The **Quick start** pane for your Azure Cosmos DB account appears.
 
-    ![The Azure portal Notifications pane.](../media/2-azure-cosmos-db-account-created.png)
+    ![Screenshot of the Azure portal Notifications pane.](../media/2-azure-cosmos-db-account-created.png)
 
 ## Summary
 
-You have created an Azure Cosmos DB account, which is the first step in creating an Azure Cosmos DB database. You selected appropriate settings for your data types and set the account location to minimize latency for your users.
+You have created an Azure Cosmos DB account, the first step in creating an Azure Cosmos DB database. You selected appropriate settings for your data types, and set the account location to minimize latency for your users.

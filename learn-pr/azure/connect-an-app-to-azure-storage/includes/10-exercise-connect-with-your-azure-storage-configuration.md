@@ -133,8 +133,10 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
 
     ```javascript
     let blobs = containerClient.listBlobsFlat();
-    for await (const blob of blobs) {
-    console.log(`${blob.name} --> Created: ${blob.properties.createdOn}   Size: ${blob.properties.contentLength}`);
+    let blob = await blobs.next();
+    while (!blob.done) {
+        console.log(`${blob.value.name} --> Created: ${blob.value.properties.createdOn}   Size: ${blob.value.properties.contentLength}`);
+        blob = await blobs.next();
     }
     ```
 
@@ -170,8 +172,10 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
 
     // Get a list of all the blobs in the container
     let blobs = containerClient.listBlobsFlat();
-    for await (const blob of blobs) {
-      console.log(`${blob.name} --> Created: ${blob.properties.createdOn}   Size: ${blob.properties.contentLength}`)
+    let blob = await blobs.next();
+    while (!blob.done) {
+        console.log(`${blob.value.name} --> Created: ${blob.value.properties.createdOn}   Size: ${blob.value.properties.contentLength}`);
+        blob = await blobs.next();
     }
     }
     main();
