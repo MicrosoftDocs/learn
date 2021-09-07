@@ -9,6 +9,6 @@ metadata:
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/7-exercise-integrating-azure-custom-vision.md)]
