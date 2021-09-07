@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.communicate-strategically-mirror-coach.what-is-a-mirror
+uid: learn.student-evangelism.communicate-strategically-mirror-coach.what-is-mirror
 title: What is a mirror? 
 metadata:
   title: What is a mirror? 
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-what-is-a-mirror.md)]
+  [!include[](includes/2-what-is-mirror.md)]
