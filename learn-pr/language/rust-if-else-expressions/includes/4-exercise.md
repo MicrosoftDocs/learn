@@ -151,14 +151,16 @@ The function contains an if/else conditional expression to describe the car to b
 
 1. Adjust the definition for the `quality` variable. Set the value to the first element of the value returned from the call to the `car_quality(miles)` function.
 
-1. Modify the first "if" condition to check if the order is for a used car.
+1. Modify the first `if` condition to check if the order is for a used car.
 
-    > Hint: You can check the value of the `quality` variable and use the *is equal to* operator `==`.
+    > [!Tip]
+    > You can check the value of the `quality` variable and use the *is equal to* operator `==`.
 
-1. Modify both "if" conditions that examine the `roof` variable. Check if the order is for a hard top.
+1. Modify both `if` conditions that examine the `roof` variable. Check if the order is for a hard top.
 
-    > Hint: The `roof` variable is a boolean (bool), and test conditions yield a boolean result.
-
+    > [!Tip]
+    > Test conditions yield a boolean result.
+    
 1. Build the program. Make sure the code compiles before you continue to the next section.
 
 
