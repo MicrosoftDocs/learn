@@ -33,17 +33,17 @@ quiz:
     - content: "In the Azure portal, go to the resource group you want to export, select **Export template**, and then select **Download** to save a copy of the template."
       isCorrect: false
       explanation: "The **Export template** option under a resource group exports the entire resource group, not a single resource."
-    - content: "In the Azure portal, select **Create a resource**, enter **template** in the search box, and then select **Template deployment** from the Marketplace."
+    - content: "In the Azure portal, select **Create a resource**, enter **template** in the search box, and then select **Template deployment** from the Azure Marketplace."
       isCorrect: false
       explanation: "You use a template deployment in the Azure Marketplace to create and deploy an existing template into Azure, not to create a template."
   - content: "What is a true statement when exporting templates from the Azure portal?"
     choices:
     - content: "You can use the export template function to create a complete export of any Azure resource, and you can use it to redeploy resources."
       isCorrect: false
-      explanation: "Some resources can't be completely exported from the Azure portal."
+      explanation: "Some resources can't be completely exported by using the Azure portal."
     - content: "You can use the export template function to export the entire contents of your Azure subscription."
       isCorrect: false
-      explanation: "Azure doesn't have the option to export the entire contents of your subscription."
+      explanation: "In Azure, you can't export the entire contents of your subscription."
     - content: "The export template function doesn't always perform a complete export of an Azure resource. It should be used as a reference point when you build your templates."
       isCorrect: true
       explanation: "Use the export template function as a reference point to help you build your templates."

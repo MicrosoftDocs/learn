@@ -1,10 +1,10 @@
-After the convert and migrate phases of converting your templates to Bicep, you need to improve the file. This process is called _refactoring_. The third phase of the recommended workflow for migrating your JSON ARM template and Azure resources to Bicep is the _refactor_ phase:
+After the convert and migrate phases of converting your templates to Bicep, you need to improve the file. This process is called _refactoring_. The third phase of the recommended workflow for migrating your JSON ARM template and Azure resources to Bicep is the refactor phase:
 
 :::image type="content" source="../media/4-refactor-phase.png" alt-text="Diagram of the refactor phase of the recommended workflow for migrating Azure resources to Bicep." border="false":::
 
-The main focus of this phase is to improve the quality of your Bicep code. Improvements can include changes, such as adding code comments, that bring the template in line with your template standards.
+The main focus of the *refactor* phase is to improve the quality of your Bicep code. Improvements can include changes, such as adding code comments, that bring the template in line with your template standards.
 
-The deploy phase consists of eight steps, which you do in any order:
+The refactor phase consists of eight steps, which you do in any order:
 
 - Review resource API versions.
 - Review the linter suggestions in your new Bicep file.
@@ -103,9 +103,9 @@ If you're converting a template that has many resources, consider breaking the i
 
 ### Add comments
 
-Good Bicep code is _self-documenting_! In Bicep, you can add comments to your code to document your infrastructure. Comments can help your teammates understand the code and increase confidence when changes are made. Comments are ignored when the Bicep file is deployed to Azure.
+Good Bicep code is _self-documenting_. In Bicep, you can add comments to your code to document your infrastructure. Comments can help your teammates understand the code and increase confidence when changes are made. Comments are ignored when the Bicep file is deployed to Azure.
 
-Bicep supports both single-line comments using a `//` character sequence and multi-line comments that start with a `/*` and end with a `*/`. You can add comments to apply to specific lines in your code and to sections of code.
+Bicep supports both single-line comments using a `//` character sequence and multi-line comments that start with a `/*` and end with a `*/`. You can add comments to apply to specific lines in your code or to sections of code.
 
 You can add a multi-line comment at the beginning of the file:
 

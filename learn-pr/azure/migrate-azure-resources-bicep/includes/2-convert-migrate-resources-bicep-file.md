@@ -1,4 +1,4 @@
-When you begin the process of migrating to Bicep, it's important to follow a structured process to ensure that your Bicep file correctly describes your Azure resources. You want to make sure that your Bicep code follows best practices and that it's fully tested and safe to use for subsequent deployments. In this unit, you learn about the first two phases for your Bicep migration: the  _convert_ phase and the _migrate_ phase.
+When you begin the process of migrating to Bicep, it's important to follow a structured process to ensure that your Bicep file correctly describes your Azure resources. You want to make sure that your Bicep code follows best practices and that it's fully tested and safe to use for subsequent deployments. In this unit, you learn about the first two phases for your Bicep migration: the convert phase and the migrate phase.
 
 :::image type="content" source="../media/2-convert-migrate-phases.png" alt-text="Diagram of the convert and migrate phases of the recommended workflow for migrating Azure resources to Bicep." border="false":::
 
@@ -6,12 +6,12 @@ The main focus for these two phases is to prepare a new Bicep file before you la
 
 ## Convert phase
 
-In the convert phase of migrating your resources to Bicep, the goal is to capture an initial representation of your Azure resources. The Bicep file you create in this phase isn't complete, and it's not ready to be used. However, the file gives you a starting point for your migration.
+In the *convert* phase of migrating your resources to Bicep, the goal is to capture an initial representation of your Azure resources. The Bicep file you create in this phase isn't complete, and it's not ready to be used. However, the file gives you a starting point for your migration.
 
 The convert phase consists of two steps, which you complete in sequence:
 
 1. Capture a JSON representation of your Azure resources.
-2. Convert the JSON representation to Bicep by using the _decompile_ command.
+2. Convert the JSON representation to Bicep by using the `decompile` command.
 
 :::image type="content" source="../media/2-convert.png" alt-text="Diagram that shows a JSON template decompiled to JSON, and Azure resources that are exported to a J S O N template, which is then decompiled." border="false":::
 
@@ -53,7 +53,7 @@ If the deployments were created by using a compatible tool, you can access the d
 You need to consider a few things when you save your templates by using this method:
 
 - The saved template shows the state of the resources at the time of deployment. It doesn't include any changes that were made after deployment.
-- If the deployment contained multiple resources, you can't select specific resources to include and exclude. This operation downloads the definition of all resources that were part of the initial deployment. However, when you move to the *migrate* phase of the process, you can manually ignore resources you don't need.
+- If the deployment contained multiple resources, you can't select specific resources to include and exclude. This operation downloads the definition of all resources that were part of the initial deployment. However, when you move to the migrate phase of the process, you can manually ignore resources you don't need.
 - The template includes only resource properties that are needed for deployment.
 - The template might include parameters that you can use to redeploy the template in multiple environments. However, you need to confirm that these parameters suit your needs.
 - The template probably doesn't include extraneous properties, but you should still check that the template includes everything that you expect and remove any properties that shouldn't be there.
@@ -67,11 +67,11 @@ The second step in migrating your Azure resources to Bicep is to convert your JS
 
 The decompilation process is a best-effort process and doesn't guarantee a full mapping from JSON to Bicep. You might need to revise the generated Bicep file to meet your template best practices before you use the file to deploy resources. Consider it the starting point for your migration. Later in this module, you'll learn how to fix any issues you come across during the decompilation process.
 
-After you decompile your template, you've completed the *convert* phase. Now, you have a valid Bicep file to start from. However, the file you create isn't ready to use yet. The initial Bicep file is just a reference point.
+After you decompile your template, you've completed the convert phase. Now, you have a valid Bicep file to start from. However, the file you create isn't ready to use yet. The initial Bicep file is only a reference point.
 
 ## Migrate phase
 
-In the migrate phase of migrating your resources to Bicep, the goal is to create the first draft of your deployable Bicep file, and to ensure that it defines all the Azure resources that are in scope for the migration.
+In the *migrate* phase of migrating your resources to Bicep, the goal is to create the first draft of your deployable Bicep file, and to ensure that it defines all the Azure resources that are in scope for the migration.
 
 The migrate phase consists of three steps, which you complete in sequence:
 
@@ -91,9 +91,9 @@ Copy each resource individually from the converted Bicep file to the new Bicep f
 
 ### Re-create unsupported resources
 
-Not all Azure resource types can be exported through the Azure portal, the Azure CLI, or Azure PowerShell. For example, virtual machine extensions such as the DependencyAgentWindows and MMAExtension (Microsoft Monitoring Agent) are resource types that you can't export.
+Not all Azure resource types can be exported through the Azure portal, the Azure CLI, or Azure PowerShell. For example, virtual machine extensions like DependencyAgentWindows and MMAExtension (Microsoft Monitoring Agent) are resource types that you can't export.
 
-When you attempt to export a resource through the Azure portal, the Azure CLI, or Azure PowerShell and an unsupported resource type is included, a detailed error message is generated. You'll need to re-create any resource that wasn't exported, such as virtual machine extensions, in your new Bicep file. You can choose from several tools and approaches to re-create resources, including Azure Resource Explorer, the ARM template reference documentation, and the Azure Quickstart Templates site.
+When you attempt to export a resource through the Azure portal, the Azure CLI, or Azure PowerShell and an unsupported resource type is included, a detailed error message is generated. You'll need to re-create any resource that wasn't exported, such as virtual machine extensions, in your new Bicep file. You can choose from several tools and approaches to re-create resources, including Azure Resource Explorer, the ARM template reference documentation, and the Azure quickstart templates.
 
 #### Azure Resource Explorer
 
@@ -101,7 +101,7 @@ When you attempt to export a resource through the Azure portal, the Azure CLI, o
 
 :::image type="content" source="../media/2-resource-explorer-1.png" alt-text="Screenshot of the Azure portal that shows the search box with resource explorer entered.":::
 
-The results pane shows a list of the registered resource providers for your subscription and details for all the resource, resource group, and subscription that you have permission to view. To view a JSON representation of a resource, select the hierarchy on the left side of the pane:
+The results pane shows a list of the registered resource providers for your subscription and details for all the resources, resource groups, and subscriptions that you have permission to view. To view a JSON representation of a resource, select the hierarchy on the left side of the pane:
 
 :::image type="content" source="../media/2-resource-explorer-2.png" alt-text="Screenshot of the Azure portal that shows Azure Resource Explorer.":::
 
@@ -145,9 +145,9 @@ resource dependencyAgentWindows 'Microsoft.Compute/virtualMachines/extensions@20
 > [!TIP]
 > The Bicep extension for Visual Studio Code helps you define your Azure resources for Bicep. For example, the Bicep representation of the resource includes an API version, but the exported JSON version doesn't. In Visual Studio Code, when you begin to enter the resource type, an API version is automatically suggested.
 
-#### ARM template reference documentation
+#### ARM template reference
 
-The [ARM template reference](/azure/templates/?azure-portal=true) documentation is a source of information about ARM template structure, resource types, API versions, and property definitions for Azure resources. The documentation provides examples both in JSON and in Bicep examples.
+The [ARM template reference](/azure/templates/?azure-portal=true) is a source of information about ARM template structure, resource types, API versions, and property definitions for Azure resources. The documentation provides examples both in JSON and in Bicep examples.
 
 You can choose specific resource providers and resource types, like `Microsoft.Web/serverFarms`, and their API versions. You can review which resource properties are required and which are optional. Most properties are described to help you understand what they do.
 
@@ -157,6 +157,6 @@ The [Azure quickstart templates](https://azure.microsoft.com/resources/templates
 
 Suppose you want to find a template that builds an Azure App Service plan and app. Each quickstart template gives you the option to deploy the template directly to Azure or to view the template on GitHub.
 
-:::image type="content" source="../media/2-azure-quickstart-template.png" alt-text="Screenshot of an Azure quickstart template for deploying a basic Linux web app.":::
+:::image type="content" source="../media/2-azure-quickstart-template.png" alt-text="Screenshot of an Azure quickstart template that deploys a basic Linux web app.":::
 
 Keep in mind that the Azure quickstart templates are community contributions. Some of the examples can be out of date because features are regularly added to Azure services. The examples also might include resources and properties that you don't need for your use of the template. However, the repository of quickstart templates is a useful resource to help you understand how you can deploy your resources by using ARM templates.

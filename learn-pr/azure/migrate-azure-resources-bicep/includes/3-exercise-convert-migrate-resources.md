@@ -51,7 +51,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 1. On the **Management** tab, ensure that **Enable auto-shutdown** is not selected.
 
-1. Select **Review + Create**. Azure validates your settings. You might need to enter or select more information based on the requirements of the image creator.
+1. Select **Review + Create**. Azure validates your settings. You might need to enter or select more information depending on the image requirements.
 
 1. Select **Create** to deploy and create the VM.
 
@@ -63,7 +63,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
    The resource group now contains the virtual machine and its dependencies:
 
-   :::image type="content" source="../media/3-resource-group.png" alt-text="Screenshot of the Azure portal showing the resource group.":::
+   :::image type="content" source="../media/3-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group.":::
 
 ## Export the resource group contents to a JSON template
 
@@ -75,7 +75,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 1. Select the **Download** button.
 
-   :::image type="content" source="../media/3-export-template.png" alt-text="Screenshot of the Azure portal showing the exported resource group J S O N template, with the Download button highlighted.":::
+   :::image type="content" source="../media/3-export-template.png" alt-text="Screenshot of the Azure portal that shows the exported resource group J S O N template, with the Download button highlighted.":::
 
    The JSON template and parameters file are downloaded to your computer as a zip file.
 

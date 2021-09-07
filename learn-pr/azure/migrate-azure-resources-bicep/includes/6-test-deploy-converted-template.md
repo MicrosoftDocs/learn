@@ -6,7 +6,7 @@ The main focus of these two phases is to test your Bicep file by using the avail
 
 ## Test phase
 
-In the _test_ phase of migrating your resources to Bicep, the goal is to verify the integrity of your migrated templates and to perform a test deployment.
+In the _test_ phase of migrating your resources to Bicep, the goal is to verify the integrity of your migrated templates and to do a test deployment.
 
 The test phase consists of two steps, which you complete in sequence:
 
@@ -50,7 +50,7 @@ These steps help prepare for any possible issues you encounter with production d
 
 ### Prepare a rollback plan
 
-The ability to recover from a failed deployment is crucial. Spend time developing a rollback plan in the event that any breaking changes are introduced into your environments. Your plan should take into account your organization's business continuity and disaster recovery (BC/DR) strategy. Take inventory of the types of resources that are deployed, such as virtual machines, web apps, and databases. You should also consider each resource's data plane. Do you have a way to recover a virtual machine and its data? Do you have a way to recover a database after it's deleted or to recover data from a storage account? A well-developed rollback plan helps keep your downtime to a minimum if any issues arise from a deployment.
+The ability to recover from a failed deployment is crucial. Spend time developing a rollback plan to use if any breaking changes are introduced into your environments. Your plan should take into account your organization's business continuity and disaster recovery (BC/DR) strategy. Take inventory of the types of resources that are deployed, such as virtual machines, web apps, and databases. You should also consider each resource's data plane. Do you have a way to recover a virtual machine and its data? Do you have a way to recover a database after it's deleted or to recover data from a storage account? A well-developed rollback plan helps keep your downtime to a minimum if any issues arise from a deployment.
 
 ### Run the what-if operation against production
 
@@ -58,7 +58,7 @@ You have already run the what-if operation against your other environments to ve
 
 ### Deploy manually
 
-If you'll use the converted template in a pipeline, such as in Azure DevOps or GitHub Actions, consider running the deployment from your local machine first. It's better to verify the functionality of the template before you add the template to your production pipeline. When you've seen how the template works, you can respond quickly if there's a problem.
+If you'll use the converted template in a pipeline, such as in Azure DevOps or GitHub Actions, consider running the deployment from your local machine first. It's better to verify the functionality of the template before you add the template to your production pipeline. When you've seen how the template functions, you can respond quickly if there's a problem.
 
 ### Run smoke tests
 

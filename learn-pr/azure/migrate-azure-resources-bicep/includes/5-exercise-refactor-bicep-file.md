@@ -33,7 +33,7 @@ During the process, you'll:
 
 ## Remove the redundant subnet resource
 
-The virtual network's subnet currently is defined twice. It's defined once in the `virtualNetwork` resource, and again as its own child resource named `defaultSubnet`. It doesn't make sense to define it twice.
+The virtual network's subnet currently is defined twice. It's defined once in the `virtualNetwork` resource, and again as its own child resource named `defaultSubnet`. It doesn't make sense to define the subnet twice.
 
 1. Delete the `defaultSubnet` resource.
 
@@ -80,7 +80,7 @@ The parameters in the current template don't really need to be parameters. Here,
 
 All the resources currently use a hard-coded location. Here, you'll add a parameter so that the template becomes more reusable.
 
-1. At the top of the file, add a new parameter and a description decorator to make the parameter purpose clear:
+1. At the top of the file, add a new parameter and a description decorator to make the parameter's purpose clear:
 
    ```bicep
    @description('The location into which the resources should be deployed.')
@@ -198,7 +198,7 @@ The export process adds redundant properties to many resources. Here, you remove
 >
 > When you select **required-properties**, Visual Studio Code prepopulates the resource definition with the properties that are mandatory. You can refer to **required-properties** to determine whether the properties in your converted template all need to be present.
 >
-> The Azure Quickstart Templates repository is also helpful for this task. Find a quickstart template that does approximately what you're trying to do, and look at the properties it sets on the resource.
+> The Azure quickstart templates repository is also helpful for this task. Find a quickstart template that does approximately what you're trying to do, and look at the properties it sets on the resource.
 
 ## Create a parameter file
 
