@@ -22,7 +22,7 @@ To begin, open a second browser window or tab.
 1. Select **Collections**.
 1. Select **Share** and choose your method of distributing your collection.
 
-## View your achievments
+## View your achievements
 
 1. Select your avatar image and then choose **Profile**.
 1. Select **Achievements**.

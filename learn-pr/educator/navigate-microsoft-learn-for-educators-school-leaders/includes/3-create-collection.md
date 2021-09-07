@@ -2,11 +2,11 @@ Collections are a fantastic method of managing your favorite set of modules. On 
 
 Within your Collections view, you will see a default collection called “Favorites.” You may create new collections and with custom titles and descriptions to help you organize and share with other educators.
 
-:::image type="content" source="../media/Screenshot of collections page.png" alt-text="Screenshot of the Learn profile under the collections section":::
+:::image type="content" source="../media/collections-page.png" alt-text="Screenshot of the Learn profile under the collections section":::
 
 ## Creating a collection
 
-:::image type="icon" source="../media/Learn-save-icon.png" border="false":::
+:::image type="icon" source="../media/learn-save-icon.png" border="false":::
 
 To create a new collection:
 
@@ -23,7 +23,7 @@ You can find this collection by navigating to your profile (select on your avata
 ## Sharing a collection
 School leaders and educators will find great benefit in sending collections to your peers as suggested (or even required) PD training. 
 
-:::image type="icon" source="../media/Learn-share-icon.png" border="false":::
+:::image type="icon" source="../media/learn-share-icon.png" border="false":::
 
 To share your collection:
 

@@ -2,7 +2,7 @@ Your profile stores your activities, collections, achievements, and settings.
 
 Access your profile by navigating to the avatar image on the upper right corner of the browser window and then select **Profile** in the pop-up window.
 
-:::image type="icon" source="../media/Screenshot of profile icon.png" border="false":::
+:::image type="icon" source="../media/profile-icon.png" border="false":::
 
 Here are some of the main items in your profile:
 
@@ -33,7 +33,7 @@ You may wish to customize your profile to better fit your personality. You can d
     - Display name
 
 > [!IMPORTANT]
-> By default your Learn profile is public but you can use private mode to restrict what others can see. When private mode is on, Learn badges, trophies, and Q&A contributions are hidden on your public profile. 
+> By default your Learn profile is public but you can use private mode to restrict what others can see. When private mode is on, Learn badges, trophies, and Q&A contributions are hidden on your public profile.
 >
 > To enable private mode:
 >
@@ -55,7 +55,7 @@ No problem, you can do this in the account management area of your settings. To 
 
 ## Badges, trophies and reputation points
 
-:::image type="content" source="../media/Screenshot of achievements tab.png" alt-text="screenshot of achievements tab selected in Learn profile":::
+:::image type="content" source="../media/achievements-tab.png" alt-text="screenshot of achievements tab selected in Learn profile":::
  
 Badges and trophies are your reward for finishing a module or learning path. All content for educators and school leaders earns this reward upon completion and passing the knowledge check.
 

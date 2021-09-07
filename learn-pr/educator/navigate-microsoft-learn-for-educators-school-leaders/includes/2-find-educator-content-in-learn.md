@@ -1,6 +1,6 @@
 In this unit, you will learn about what content Learn offers for educators, how to find this educator content in Learn, and how to share it with your colleagues or students.
 
-:::image type="content" source="../media/Screenshot-educator-content.png" alt-text="Screenshot of the Learn browser window with Roles selected and Educator and Student roles highlighted.":::
+:::image type="content" source="../media/educator-content.png" alt-text="Screenshot of the Learn browser window with Roles selected and Educator and Student roles highlighted.":::
 
 On Microsoft Learn, you will find:
 
@@ -37,10 +37,10 @@ To help you find the content you need, filter for educator-centric content by se
 
 You can also search by keyword in the search bar displayed on the page.
 
-:::image type="content" source="../media/Screenshot of browse all page.png" alt-text="Screenshot of the Learn browse page with the search bar and filters highlighted":::
+:::image type="content" source="../media/browse-all-page.png" alt-text="Screenshot of the Learn browse page with the search bar and filters highlighted":::
 
 > [!CAUTION]
-> :::image type="content" source="../media/Learn search bar.png" alt-text="Docs search bar":::
+> :::image type="content" source="../media/learn-search-bar.png" alt-text="Docs search bar":::
 > The search bar displayed in the top right of the page header will search all of Docs.microsoft.com which includes more than just Learn. It includes Documentation, Certifications, Q&A, Code Samples and more.
 >
 >To search just educator content, make sure to use the role filters and search bar located on the "Browse all" page shown above.
