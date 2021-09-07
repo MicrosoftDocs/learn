@@ -6,7 +6,7 @@
 
 ## Import The Tutorial Assets
 
-1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages,  follow this [tutorial](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
+1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages,  follow this [tutorial](https://docs.microsoft.com/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
 
 2. Download and **import** the following Unity custom packages in the order they're listed:
 
@@ -31,7 +31,7 @@
 
 ## Import the Tutorial Assets
 
-1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages, follow this [tutorial](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
+1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages, follow this [tutorial](https://docs.microsoft.com/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
 
 2. Download and **import** the following Unity custom packages in the order they're listed:
 
@@ -56,7 +56,7 @@
 
 ## Import the Tutorial Assets
 
-1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages, follow this [tutorial](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
+1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages, follow this [tutorial](https://docs.microsoft.com/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
 
 2. Download and **import** the following Unity custom packages in the order they're listed:
 
