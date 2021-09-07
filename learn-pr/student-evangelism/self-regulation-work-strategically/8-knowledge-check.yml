@@ -15,10 +15,10 @@ content: |
 quiz:
   questions:
   - content: |
-  'What tool or method offers these three benefits?
-  - It helps account for time spent on a project.
-  - It is used to track test steps and results to troubleshoot a problem.
-  - It is used to review your process with someone else to get feedback.'
+    What tool or method offers these three benefits?
+    - It helps account for time spent on a project.
+    - It is used to track test steps and results to troubleshoot a problem.
+    - It is used to review your process with someone else to get feedback.
     choices:
     - content: 'Using the three-step iterative feedback loop.'
       isCorrect: false
