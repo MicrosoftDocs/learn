@@ -8,19 +8,21 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. From the Azure portal menu, under **Azure services**, select **Create a resource**.
+1. From the Azure portal home page, under **Azure services**, select **Create a resource**.
 
     ![Screenshot of Azure portal menu and Create a resource option.](../media/5-create-a-resource.png)
 
     The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and then select **Function App** under *Popular services*.
+1. In the left menu pane, select **Compute**, and under *Popular services*, select **Function App**.
 
     ![Screenshot of the Compute and Function App options.](../media/5-compute-function-app.png)
 
     <!-- [!include[](../../includes/functions-classic-workaround.md)] -->
 
-1. The **Create Function App** pane appears. On the **Basics** tab, enter the following values for each setting.
+    The **Create Function App** pane appears.
+
+1. On the **Basics** tab, enter the following values for each setting.
 
     > [!NOTE]
     > The function app must have a unique name. We suggest using something like **\<*your name or initials*\>watchfunctions**. In this exercise, use this name wherever you see *\<your-function-app-name\>*.
@@ -35,7 +37,7 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
     | Publish | Code |
     | Runtime stack | .NET |
     | Version     | 3.1 |
-    | Region     | *Accept the default location* |
+    | Region     | Accept the default location |
 
 1. Select **Next : Hosting**.
 
@@ -52,6 +54,8 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 1. Select **Review + create**, and then select **Create**. Wait while the Function App is created before continuing.
 
+1. After deployment completes, select **Go to resource**. Your Function App pane appears.
+
 ## Deploy the WatchInfo function to the Azure Function App
 
 1. On your desktop, return to Visual Studio.
@@ -60,46 +64,56 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
     :::image type="content" source="../media/5-start-publish-from-visual-studio.png" alt-text="Screenshot of Visual Studio, showing the Publish option for the WatchPortalFunctions project." loc-scope="vs":::
 
-1. In the **Publish** window, select **Azure**, and then select **Next**.
+    The **Publish** window appears.
+
+1. Select **Azure**, and then select **Next**.
 
     :::image type="content" source="../media/5-publish-target.png" alt-text="Screenshot of the Publish target window. The user has chosen the Azure option." loc-scope="vs":::
 
-1. The **Publish** window reappears. In the **Subscription** dropdown, select **Concierge Subscription**. In the **View** dropdown, select **Resource group**, and on top of the **Function Apps** field, select the **+** (Create a new Azure Function) icon.
+    The **Publish** window reappears.
+
+1. In the **Subscription** dropdown list, select **Concierge Subscription**. In the **View** dropdown list, select **Resource group**, and on top of the **Function Apps** field, select the **+** (Create a new Azure Function) icon.
 
     :::image type="content" source="../media/5-publish-functions-instance.png" alt-text="Screenshot of the Publish Functions instance window. The user to select Function Apps." loc-scope="vs":::
 
-1.  The **Function App (Windows)** window appears. Maintain all the default selections but ensure the **Location** field matches what you previously specified in the Azure portal, and then select **Create**.
+    The **Function App (Windows)** window appears.
+
+1. Maintain all the default selections but ensure the **Location** field matches what you previously specified in the Azure portal, and then select **Create**.
 
     :::image type="content" source="../media/5-function-app-windows.png" alt-text="Screenshot of the Function App (Windows) window. The user to select Create." loc-scope="vs":::
 
-1. The **Publish** window reappears with the Azure Function App displayed. Select **Finish**.
+    The **Publish** window reappears with the Azure Function App displayed.
+
+1. Select **Finish**.
 
     :::image type="content" source="../media/5-function-app-publish.png" alt-text="Screenshot of the Function App (Windows) window. The user to select Finish." loc-scope="vs":::
 
-1. On the **Publish** window, select **Publish**.
+    The **Publish** window reappears again.
+
+1. Select **Publish**.
 
     :::image type="content" source="../media/5-visual-studio-publish.png" alt-text="[Screenshot of Visual Studio. The user to select Finish." loc-scope="vs":::
 
-1. Wait for your functions to be deployed. The **Output** window in Visual Studio shows the progress of the build and publish processes. If everything works, the final two messages should be **Build succeeded** and **Publish succeeded**.
+    Wait for your functions to be deployed. The **Output** window in Visual Studio shows the progress of the build and publish processes. If everything works, the final two messages should be **Build succeeded** and **Publish succeeded**.
 
     :::image type="content" source="../media/5-output-window.png" alt-text="Screenshot of the Output window in Visual Studio. The final two messages indicate that the functions were published successfully." loc-scope="vs":::
 
 ## Verify the functions have been deployed
 
-1. Return to the Azure portal.
+1. Return to the Azure portal. Your Function App pane appears.
 
-1. On the Azure portal menu, or from the **Home** page, select **All resources**.
+1. In the middle menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your Function App.
 
-1. Select *\<your-function-app-name\>*.
+1. Verify that the **Function1** and  **WatchInfo** functions are listed.
 
-1. In the *\<your-function-app-name\>* panel, expand **Functions**, and verify that the **Function1** and  **WatchInfo** functions are listed. In the right pane, check that the status of the Azure Function App is **Running**.
+1. In the middle menu pane, select **Overview** and check that the **Status** of the Azure Function App is listed as **Running**.
 
     :::image type="content" source="../media/5-functions-app.png" alt-text="Screenshot of the Azure Function App in the portal, showing the Function1 and WatchInfo functions." loc-scope="other"::: <!-- no-loc -->
 
     > [!NOTE]
     > The functions are marked as *Read Only*. You cannot modify their settings or configuration from the Azure portal because you published them from Visual Studio. If you need to update either of these functions, make the changes in Visual Studio and publish them again.
 
-1. In the right pane, select the **URL** (highlighted in the previous image). A browser window opens, and confirms that the Functions app is up and running.
+1. In that same Function App pane, select the **URL** (highlighted in the previous image). A browser window opens, and confirms that the Functions app is up and running.
 
     ![Screenshot of web browser window confirming that the functions app is running.](../media/5-functions-app-running.png)
 

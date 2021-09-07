@@ -1,6 +1,6 @@
-In this exercise, you'll deploy the newly created Web Sales BFF to the existing Kubernetes cluster. You will:
+In this exercise, you'll deploy the newly created Web Sales aggregator BFF to the existing Kubernetes cluster. You will:
 
-- Enable the Web Sales Aggregator BFF.
+- Enable the Web Sales aggregator BFF.
 - Configure the BFF.
 - Publish the affected containers to Azure Container Registry.
 - Deploy the affected apps to the cluster.
@@ -8,7 +8,7 @@ In this exercise, you'll deploy the newly created Web Sales BFF to the existing 
 
 ## Web.Sales.HttpAggregator
 
-You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGateways/Aggregators/Web.Sales.HttpAggregator* directory. Locate that directory in the Cloud Shell editor. Apply the following changes to the service:
+You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGateways/Aggregators/Web.Sales.HttpAggregator* directory. Locate that directory in the Azure Cloud Shell editor. Apply the following changes to the service:
 
 1. In *Controllers/SalesController*, replace `// Add the GetSalesOfTodayByBrand code` with the following code:
 
@@ -49,7 +49,7 @@ You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGate
     - Fetches and stores all the catalog items in a `catalogItems` variable.
     - Fetches and stores the catalog brand and order information in `catalogBrands` and `orderItems`, respectively.
     - Calls the `GetSalesData()` method with those variables to process and generate aggregated sales data.
-    - Returns the Sales data as `SalesDto` object along with the HTTP 200 status code.
+    - Returns the sales data as `SalesDto` object along with the HTTP 200 status code.
 
     > [!NOTE]
     > You can review the implementation of `CatalogService` and `OrderingService` under the *Service* directory.
@@ -88,7 +88,7 @@ You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGate
                     salesDataItem.Add(new SalesData()   
                     {
                         CatalogBrandId = catalogItemObj.catalogBrandId,
-                        CatalogBrandName = catalogBrands.Find(catalogBrand => catalogBrand.Id == catalogItemObj.catalogBrandId).Brand, // Fetch the brand name based on it's id
+                        CatalogBrandName = catalogBrands.Find(catalogBrand => catalogBrand.Id == catalogItemObj.catalogBrandId).Brand, // Fetch the brand name based on its ID
                         TotalUnitOfSoldItems = eachProduct.Units
                     });
                 }
@@ -96,7 +96,7 @@ You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGate
     
         }
         
-        // Aggregate the unit of sales based on the Brand name
+        // Aggregate the unit of sales based on the brand name
         var groupedSalesData = salesDataItem.GroupBy(catalogBrand => catalogBrand.CatalogBrandName)
                                             .Select(
                                                 catalogBrand => new SalesDto() {      
@@ -115,13 +115,13 @@ You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGate
 
     - Filters the orders in `listOfOrders` to only the orders with today's date and status `Paid`.
     - Fetches order details and calculates the sales of each product.
-    - Retrieves catalog item and brand information
-    - Aggregates the data based by brand.
+    - Retrieves catalog item and brand information.
+    - Aggregates the data based on brand.
 
     > [!NOTE]
-    > The above example is not optimal when working with a large list of orders and catalog items. OLTP datastores, as used here, would not typically be used for data aggregation. It is recommended to copy data to an appropriate datastore, such as OLAP, for analytical purposes.
+    > The preceding example is not optimal when you're working with a large list of orders and catalog items. Online transaction processing (OLTP) datastores, as used here, would not typically be used for data aggregation. We recommend that you copy data to an appropriate datastore, such as online analytical processing (OLAP), for analytical purposes.
 
-1. Now that you've built the controller, take note of the following code that has been added for you.
+1. Now that you've built the controller, take note of the following code that has been added for you:
     1. In *Startup.cs*, note how real-time HTTP health checking is configured in `ConfigureServices`.
 
         ```csharp
@@ -140,9 +140,9 @@ You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGate
         In the preceding code:
 
         - Health check services are registered in the dependency injection container.
-        - As the functionality of web sales aggregator also depends Ordering and Catalog API, it's a good idea to add them too.
+        - Because the functionality of the Web Sales aggregator also depends on the Ordering and Catalog APIs, it's a good idea to add them too.
 
-    1. Also in *Startup.cs*, note the JWT authentication code in the `AddCustomAuthentication` method:
+    1. Also in *Startup.cs*, note the JSON Web Token (JWT) authentication code in the `AddCustomAuthentication` method:
 
         ```csharp
         services.AddAuthentication(options =>
@@ -159,7 +159,7 @@ You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGate
         });    
         ```
 
-    1. Finally, in the `Configure` method, note the Swagger configuration. Swagger provides the UI you'll use for testing.
+    1. Finally, in the `Configure` method, note the Swagger configuration. Swagger provides the UI that you'll use for testing.
 
         ```csharp
         app.UseSwagger().UseSwaggerUI(c =>
@@ -175,9 +175,9 @@ You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGate
 
 ### Identity.API
 
-Some changes have been made to the *src/Services/Identity/Identity.API* project to support the Web Sales Aggregator. Review them below:
+Some changes have been made to the *src/Services/Identity/Identity.API* project to support the Web Sales aggregator. Review them:
 
-1. The web sales aggregator project has been configured as `websalesaggswaggerui` client in the *Config.cs* file of the *Identity.API* project.
+1. The Web Sales aggregator project has been configured as the `websalesaggswaggerui` client in the *Config.cs* file of the *Identity.API* project.
 
     ```csharp
     // code snipped for brevity
@@ -198,7 +198,7 @@ Some changes have been made to the *src/Services/Identity/Identity.API* project 
     // code snipped for brevity 
     ```
 
-1. You'll also need a user with *Admin* privileges to access the API exposed by the controller. As such, the following user has been added. 
+1. You also need a user with admin privileges to access the API that the controller exposes. The following user has been added: 
 
     ```text
     EmailId : `adminuser@microsoft.com` 
@@ -207,10 +207,11 @@ Some changes have been made to the *src/Services/Identity/Identity.API* project 
 
 ## Configuration changes
 
-Make the following configuration changes to support the web sales aggregator code.
+Make the following configuration changes to support the Web Sales aggregator code.
+
 ### WebStatus configuration
 
-Earlier, you added health checks in the web sales aggregator's *Startup.cs*. You'll also need to configure the Web Status app to ping that health check. Uncomment the following YAML in *deploy/k8s/helm-simple/webstatus/templates/configmap.yaml*:
+Earlier, you added health checks in the Web Sales aggregator's *Startup.cs* file. You also need to configure the *Web Status* app to ping that health check. Uncomment the following YAML in *deploy/k8s/helm-simple/webstatus/templates/configmap.yaml*:
 
 ```yaml
 HealthChecksUI__HealthChecks__10__Name: Web Sales Aggregator GW HTTP Check
@@ -219,56 +220,56 @@ HealthChecksUI__HealthChecks__10__Uri: http://websalesagg/hc
 
 ### Identity.API configuration
 
-Configure *Identity.API*  with the web sales aggregator URL. Uncomment the following YAML in *deploy/k8s/helm-simple/identity/templates/configmap.yaml*:
+Configure *Identity.API*  with the Web Sales aggregator URL. Uncomment the following YAML in *deploy/k8s/helm-simple/identity/templates/configmap.yaml*:
 
 ```yaml
 WebSalesAggClient: {{ .Values.protocol }}://{{ .Values.host }}/websalesagg
 ```
-## Build the local images and push the changes in the container registry
+## Build the local images and push the changes to Azure Container Registry
 
-The setup script created an Azure Container Registry (ACR) instance for you. Push your changes to the ACR instance with the following steps:
+The setup script created an Azure Container Registry instance for you. Push your changes to the Container Registry instance by using the following steps:
 
-1. Push and build the `identity-api` image.
+1. Push and build the `identity-api` image:
 
     ```bash
     ./deploy/k8s/build-to-acr.sh --services identity-api
     ```
 
-    The script starts an [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) for the *:::no-loc text="Identity":::* app. A variation of the following line confirms the Docker image was pushed to ACR:
+    The script starts a [Container Registry quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) for the *:::no-loc text="Identity":::* app. A variation of the following line confirms that the Docker image was pushed to Container Registry:
 
     ```console
     2020/10/26 21:57:23 Successfully pushed image: eshoplearn202109999999999.azurecr.io/identity.api:linux-latest
     ```
 
     > [!IMPORTANT]
-    > The *:::no-loc text="WebSPA":::* project is built in ACR, rather than local to Cloud Shell, to take advantage of robust build hosts in ACR. If the ACR quick task fails, inspect the output for troubleshooting information. Run the above script again to attempt additional builds.
+    > The *:::no-loc text="WebSPA":::* project is built in Container Registry, rather than being local to Cloud Shell, to take advantage of robust build hosts in Container Registry. If the Container Registry quick task fails, inspect the output for troubleshooting information. Run the preceding script again to try more builds.
 
-1. Push and build the `websalesagg` image.
+1. Push and build the *:::no-loc text="websalesagg":::* image:
 
     ```bash
     ./deploy/k8s/build-to-acr.sh --services websalesagg
     ```
 
-    As with the previous step, an ACR quick task builds the *:::no-loc text="websalesagg":::* image.
+    As with the previous step, a Container Registry quick task builds the *:::no-loc text="websalesagg":::* image.
 
 ## Deploy the affected containers to the cluster
 
 Now that your modified images are published, you can deploy the affected containers.
 
-1. Fetch the external IP address of the existing nginx ingress load balancer:
+1. Fetch the external IP address of the existing NGINX ingress load balancer:
 
     ```bash
     kubectl get svc -n ingress-nginx 
     ```
 
-    Refer to the following image for an example.
+    The following image shows an example.
 
-    :::image type="content" source="../media/nginx-ingress-external-ip.png" alt-text="Nginx ingress external load balancer" lightbox="../media/nginx-ingress-external-ip.png":::
+    :::image type="content" source="../media/nginx-ingress-external-ip.png" alt-text="Screenshot that shows the NGINX ingress external load balancer." lightbox="../media/nginx-ingress-external-ip.png":::
 
     > [!NOTE]
     > In the next unit, you'll learn more about the ingress controllers in Kubernetes.
 
-1. Replace `{nginx-ingress-ip-address}` with the external IP address of the nginx ingress controller and then run the below command to deploy the affected services to the cluster.
+1. Replace `{nginx-ingress-ip-address}` with the external IP address of the NGINX ingress controller. Then run the following command to deploy the affected services to the cluster:
 
     ```bash
     ./deploy/k8s/deploy-affected-services.sh --ipAddress {nginx-ingress-ip-address}
@@ -276,13 +277,13 @@ Now that your modified images are published, you can deploy the affected contain
 
     The preceding script redeploys the following services:
 
-    - `WebStatus`
-    - `Identity.API`
-    - `WebSalesAgg`
+    - *WebStatus*
+    - *Identity.API*
+    - *WebSalesAgg*
 
-## Verify the deployed sales aggregator
+## Verify the deployed aggregator
 
-After deploying the changes and waiting a while, the *:::no-loc text="WebStatus":::* dashboard shows all the services are healthy. There's a new *:::no-loc text="websalesagg":::* service, as denoted by the health check titled *Web Shopping Aggregator GW HTTP Check*. While the *:::no-loc text="websalesagg":::* service is healthy, it can't yet be accessed from outside the cluster.
+After you deploy the changes and wait a while, the *:::no-loc text="WebStatus":::* dashboard shows that all the services are healthy. There's a new *:::no-loc text="websalesagg":::* service, as denoted by the health check titled **Web Shopping Aggregator GW HTTP Check**. Although the *:::no-loc text="websalesagg":::* service is healthy, it can't yet be accessed from outside the cluster.
 
 To verify the *:::no-loc text="websalesagg":::* service from within the cluster, complete the following steps:
 
@@ -292,9 +293,9 @@ To verify the *:::no-loc text="websalesagg":::* service from within the cluster,
     kubectl get pods --selector service=webspa
     ```
 
-    The pod name is highlighted in the example below.
+    The pod name is highlighted in the following example.
 
-    :::image type="content" source="../media/web-spa-pod-name.png" alt-text="Pod name of WebSPA" lightbox="../media/web-spa-pod-name.png":::
+    :::image type="content" source="../media/web-spa-pod-name.png" alt-text="Screenshot that shows the pod name of WebSPA." lightbox="../media/web-spa-pod-name.png":::
 
 1. Retrieve the cluster IP address of the *:::no-loc text="websalesagg":::* pod:
 
@@ -302,21 +303,21 @@ To verify the *:::no-loc text="websalesagg":::* service from within the cluster,
     kubectl get svc --selector service=websalesagg
     ```
 
-    The cluster IP address is highlighted in the example below.
+    The cluster IP address is highlighted in the following example.
 
-    :::image type="content" source="../media/websalesagg-cluster-ip.png" alt-text="Cluster IP of WebSalesAgg" lightbox="../media/websalesagg-cluster-ip.png":::
+    :::image type="content" source="../media/websalesagg-cluster-ip.png" alt-text="Screenshot that shows the cluster I P address of WebSalesAgg." lightbox="../media/websalesagg-cluster-ip.png":::
 
-1. Launch a shell inside the pod. Replace `{webspa-pod-name}` with the pod name you retrieved earlier.
+1. Open a shell inside the pod. Replace `{webspa-pod-name}` with the pod name that you retrieved earlier.
 
     ```bash
     kubectl exec -it {webspa-pod-name} /bin/bash
     ```
 
-    See the example below.
+    The following screenshot shows an example.
 
-    :::image type="content" source="../media/webspa-container-pod-bash.png" alt-text="WebSPA inside container pod" lightbox="../media/webspa-container-pod-bash.png":::
+    :::image type="content" source="../media/webspa-container-pod-bash.png" alt-text="Screenshot that shows WebSPA inside a container pod." lightbox="../media/webspa-container-pod-bash.png":::
 
-1. Within the pod, use cURL to verify the service is listening. Use the IP address you retrieved earlier.
+1. Within the pod, use cURL to verify that the service is listening. Use the IP address that you retrieved earlier.
 
     ```bash
     curl http://<clusterip-of-websalesagg-pod>/websalesagg/swagger/index.html
@@ -324,9 +325,9 @@ To verify the *:::no-loc text="websalesagg":::* service from within the cluster,
 
     We don't care about the contents of the response. We only care that the service is listening on port 80.
 
-    :::image type="content" source="../media/curl-of-internal-pod-request.png" alt-text="Curl of internal websaleagg pod request" lightbox="../media/curl-of-internal-pod-request.png":::
+    :::image type="content" source="../media/curl-of-internal-pod-request.png" alt-text="Screenshot that shows cURL for the internal websalesagg pod request." lightbox="../media/curl-of-internal-pod-request.png":::
 
-1. Use the following command to exit the shell:
+1. Use the following command to close the shell:
 
     ```bash
     exit

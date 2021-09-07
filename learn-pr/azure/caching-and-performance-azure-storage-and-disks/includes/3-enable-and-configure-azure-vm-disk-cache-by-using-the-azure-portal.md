@@ -81,7 +81,7 @@ You can configure virtual machine disk cache settings with any of the following 
 - Azure PowerShell
 - Resource Manager templates
 
-## Using the Azure portal to configure caching
+## Use Azure portal to configure caching
 
 When you provision a new VM using the Azure portal, you can't change the default caching configuration for the OS disk from read/write until the VM is deployed.
 

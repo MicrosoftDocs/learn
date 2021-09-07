@@ -42,7 +42,7 @@ Another user wants to access their organizational email on their personal Androi
 
 ## Azure AD joined devices
 
-Azure AD join is intended for organizations that want to be cloud-first or cloud-only. Any organization can deploy Azure AD joined devices no matter the size or industry. Azure AD join works even in a environment, enabling access to both cloud and on-premises apps and resources.
+Azure AD join is intended for organizations that want to be cloud-first or cloud-only. Any organization can deploy Azure AD joined devices no matter the size or industry. Azure AD join enables access to both cloud and on-premises apps and resources.
 
 | **Azure AD joined**| **Description**|
 | :--- | :--- |
@@ -92,64 +92,7 @@ The goal of Azure AD joined devices is to simplify:
     > [!div class="mx-imgBorder"]
     > ![Azure AD joined devices.](../media/azure-active-directory-joined-device.png)
 
-Azure AD Join can be deployed by using a number of different methods. The following  subsection focuses on the self-service experience method.
-
-### Self-service experience
-
-With Windows 10, it's possible for users to join a new device to Azure AD during the first-run experience (FRX), sometimes referred to as self-service experience. This capability enables you to distribute shrink-wrapped devices to your employees or students.
-
-If either Windows 10 Professional or Windows 10 Enterprise is installed on a device, the experience defaults to the setup process for company-owned devices.
-
-In the Windows out-of-box experience, joining an on-premises Active Directory (AD) domain is not supported. If you plan to allow users to join a computer to an AD domain, during setup, they should select the link Set up Windows with a local account. They can then join the domain from the settings on their computer.
-
-### Prerequisites
-
-To join a Windows 10 device, the device registration service must be configured to enable you to register devices. In addition to having permission to joining devices in your Azure AD tenant, you must have fewer devices registered than the configured maximum.
-
-In addition, if your tenant is federated, your Identity provider MUST support WS-Fed and WS-Trust username/password endpoint. This can be version 1.3 or 2005. This protocol support is required to both join the device to Azure AD and sign in to the device with a password.
-
-### Join a Windows 10 device to Azure AD
-
-1. When you turn on your new device and start the setup process, you should see the **Getting Ready** message. Follow the prompts to set up your device.
-
-2. Start by customizing your region and language. Then review and accept the Microsoft Software License Terms.
-
-    > [!div class="mx-imgBorder"]
-    > ![Customize for your region.](../media/customize-region.png)
-
-3. Select the network you want to use for connecting to the Internet.
-
-4. Click **This device belongs to my organization**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Who owns this PC screen.](../media/who-owns-device.png)
-
-5. Enter the credentials that were provided to you by your organization, and then click **Sign in**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Sign-in screen.](../media/signin-screen.png)
-
-6. Your device locates a matching tenant in Azure AD. If you are in a federated domain, you are redirected to your on-premises Secure Token Service (STS) server, for example, Active Directory Federation Services (AD FS).
-
-7. If you are a user in a non-federated domain, enter your credentials directly on the Azure AD-hosted page.
-
-8. You are prompted for a multi-factor authentication challenge.
-
-9. Azure AD checks whether an enrollment in mobile device management is required.
-
-10. Windows registers the device in the organization’s directory in Azure AD and enrolls it in mobile device management, if applicable.
-
-11. If you are:
-
-    - A managed user, Windows takes you to the desktop through the automatic sign-in process.
-    - A federated user, you are directed to the Windows sign-in screen to enter your credentials.
-
-### Verification
-
-To verify whether a device is joined to your Azure AD, review the **Access work or school** dialog on your Windows device. The dialog should indicate that you are connected to your Azure AD directory.
-
-> [!div class="mx-imgBorder"]
-> ![Access work or school screen.](../media/access-work-school.png)
+Azure AD Join can be deployed by using a number of different methods.
 
 ## Hybrid Azure AD joined devices
 

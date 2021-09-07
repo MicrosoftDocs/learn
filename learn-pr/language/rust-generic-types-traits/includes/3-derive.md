@@ -87,8 +87,8 @@ Our code will still fail to compile because Rust's standard library doesn't prov
 implementation for the `Display` trait, because it's meant for end users. But if we comment out that line, our code now produces this output:
 
 ```output
-    Point { x: 1, y: 2 }
     not equal!
+    Point { x: 1, y: 2 }
 ```
 
 Nevertheless, we can implement the `Display` trait for our type by ourselves:
@@ -106,9 +106,9 @@ impl fmt::Display for Point {
 Our code will now compile:
 
 ```output
+    not equal!
     (1, 2)
     Point { x: 1, y: 2 }
-    not equal!
 ```
 
 Check out the code of this example at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=83e972b28e9d02bd93540f9e292ad20b&azure-portal=true).

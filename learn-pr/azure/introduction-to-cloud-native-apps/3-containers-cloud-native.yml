@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-cloud-native-apps.3-containers-cloud-native
-title: Using Containers with cloud-native apps
+title: Using containers with cloud-native apps
 metadata:
-  title: Using Containers with cloud-native apps
+  title: Using containers with cloud-native apps
   description: An overview of containers and kubernetes
   ms.date: 10/23/2020
   author: tomreidnz

@@ -35,7 +35,7 @@ Latency puts a limit on IOPS. For example, if our disk can handle 5000 IOPS but 
 
 Premium Storage provides consistent low latencies and you can achieve even better latency when necessary through _caching_. 
 
-## Testing your disk performance
+## Test your disk performance
 
 You can adjust and balance the IOPS, throughput, and latency of your VM disks by selecting the right VM size and storage type. Typically, the larger or more expensive VM sizes will have higher guarantees for max IOPS and throughput. Add into that equation Standard vs. Premium storage and HDD vs. SSD choices and you have several parameters to play with.
 

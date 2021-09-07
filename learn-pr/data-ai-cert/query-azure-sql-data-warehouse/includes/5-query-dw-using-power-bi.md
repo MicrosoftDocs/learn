@@ -1,4 +1,4 @@
-Power BI is a powerful tool dedicated to data modeling, data analysis, and data visualization. As a final exercise, connect to the Azure SQL Data Warehouse database from Power BI and then query the database to generate a modern dashboard with a few clicks.
+Power BI is a powerful tool dedicated to data modeling, data analysis, and data visualization. As a final exercise, connect to the Azure Synapse Analytics database from Power BI and then query the database to generate a modern dashboard with a few selections.
 
 > [!NOTE]
 > If you don't have the Power BI tools for Windows installed, go to [Power BI](https://powerbi.microsoft.com/) to download and install them.
@@ -11,15 +11,15 @@ Power BI is a powerful tool dedicated to data modeling, data analysis, and data 
 
     ![Getting data in Power BI.](../media/5-connect-sql-server-db.png)
 
-1. In the **SQL Server database** dialog box, enter the SQL Data Warehouse server name and the sample database name. Expand the **Advanced options** node, input the last T-SQL query in the **SQL statement** box, and select **OK**.
+1. In the **SQL Server database** dialog box, enter the Azure Synapse Analytics server name and the sample database name. Expand the **Advanced options** node, input the last T-SQL query in the **SQL statement** box, and select **OK**.
 
     ![Configuration in Power BI.](../media/5-configure.png)
 
-1. Enter the SQL Data Warehouse username and password, and select **Connect**.
+1. Enter the Azure Synapse Analytics username and password, and select **Connect**.
 
-    ![Connecting to the SQL Data Warehouse database in Power BI.](../media/5-connect-asdw.png)
+    ![Connecting to the Azure Synapse Analytics database in Power BI.](../media/5-connect-asdw.png)
 
-    After the SQL Data Warehouse database and the SQL query connect, the SQL query runs immediately. The following query result appears.
+    After the Azure Synapse Analytics database and the SQL query connect, the SQL query runs immediately. The following query result appears.
 
     ![Observing query result in Power BI.](../media/5-observe-query-result.png)
 
@@ -37,4 +37,4 @@ Power BI is a powerful tool dedicated to data modeling, data analysis, and data 
 
     ![Chart visualization in Power BI.](../media/5-chart.png)
 
-You now have a modern dashboard that visualizes the query result from an Azure SQL Data Warehouse database.
+You now have a modern dashboard that visualizes the query result from an Azure Synapse Analytics database.

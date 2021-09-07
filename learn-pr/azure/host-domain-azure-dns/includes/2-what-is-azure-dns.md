@@ -1,6 +1,6 @@
 Azure DNS is a hosting service for DNS domains that provides name resolution by using Microsoft Azure infrastructure.
 
-In this unit, you'll learn what DNS is and how it works. Then learn about Azure DNS, and why you would use it.
+In this unit, you'll learn what DNS is and how it works. You will also learn about Azure DNS, and why you would use it.
 
 ## What is DNS?
 
@@ -35,7 +35,7 @@ Here's a simplified overview of the process a DNS server uses when it resolves a
 
 Every computer, server, or network-enabled device on your network has an IP address. An IP address, within your domain, is unique. There are two standards of IP address: IPv4 and IPv6.
 
-- **IPv4** is composed of four numbers, in the range 0 to 255, separated by a dot. Example: 127.0.0.1. Today, IPv4 is the most commonly used standard. Yet, with the increase in IoT devices, the IPv4 standard will eventually be unable to keep up.
+- **IPv4** is composed of four sets of numbers, in the range 0 to 255, each separated by a dot. Example: 127.0.0.1. Today, IPv4 is the most commonly used standard. Yet, with the increase in IoT devices, the IPv4 standard will eventually be unable to keep up.
 
 - **IPv6** is a relatively new standard and will eventually replace IPv4. It's made up of eight groups of hexadecimal numbers, each separated by a colon. Example: fe80:11a1:ac15:e9gf:e884:edb0:ddee:fea3.
 
@@ -49,7 +49,7 @@ As the administrator for your company, you want to set up a DNS server by using 
 
 ### DNS record types
 
-The configuration information for your DNS server is stored as a file within a zone on your DNS server. Each file is called a record. The following record types are the most commonly created and used:
+Configuration information for your DNS server is stored as a file within a zone on your DNS server. Each file is called a record. The following record types are the most commonly created and used:
 
 - **A** is the host record, and is the most common type of DNS record. It maps the domain or host name to the IP address.
 - **CNAME** is a Canonical Name record that's used to create an alias from one domain name to another domain name. If you had different domain names that all accessed the same website, you would use CNAME.

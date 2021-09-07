@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.give-receive-effective-feedback.tips-effective-feedback
+title: List the tips for giving effective feedback
+metadata:
+  title: List the tips for giving effective feedback
+  description: This unit focuses on effective feedback and how you can make if effective by providing a set of guidelines to follow.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-tips-effective-feedback.md)]

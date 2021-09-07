@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-built-in-scenarios.5-knowledge-check-2
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 07/27/2021
+  author: Dwitrisha
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check-2.md)]
+quiz:
+  
+  questions:
+    ##Question 1
+    - content: "The user wants to force an active scenario to end so they can begin a different scenario. Which built-in command should the user use to end the current scenario?"
+      choices:
+        - content: "Help"
+          isCorrect: false
+          explanation: "The Help command displays help items to the user and doesn't break the current scenario."
+        - content: "Cancel"
+          isCorrect: true
+          explanation: "The Cancel command stops the current scenario."
+        - content: "Start over"
+          isCorrect: false
+          explanation: "The Start over command restarts the current scenario."
+      
+      ##Question 2
+    - content: "Which of the following statements is true about the built-in Triage and symptom checking scenario?"
+      choices:
+        - content: "The built-in Triage and symptom checking engines are included only as part of the Azure Health Bot paid plan."
+          isCorrect: false
+          explanation: "The built-in Triage and symptom checking engines are packaged and included as part of the Azure Health Bot solution so that you can easily use them within your own Health Bot instance."
+        - content: "The built-in Triage and symptom checking scenario can be customized or extended within a custom scenario."
+          isCorrect: true
+          explanation: "The built-in Triage and symptom checking scenario can be extended within a custom scenario. For example, you could easily enable users who complete the triage flow to schedule an appointment with a doctor, speak with a live nurse, or find their nearest clinic."
+        - content: "The built-in Triage and symptom checking scenario can recommend the appropriate type of doctor to treat an illness."
+          isCorrect: false
+          explanation: "The built-in Triage and symptom checking scenario can determine the likelihood of a condition based on a set of symptoms and risk factors."
+
+    ##Question 3
+    - content: "A health company has created a custom scenario and plans to use it as an automatic welcome scenario. How can they assign a welcome scenario?"
+      choices:
+        - content: "Go to Configuration > Conversation > Interactions > Automatic Welcome > Automatic Welcome Scenario, and select the custom scenario."
+          isCorrect: true
+          explanation: "On the Interactions tab, you configure built-in scenarios that interact with users."
+        - content: "Go to Configuration > Conversation > Navigation > Automatic Welcome > Automatic Welcome Scenario, and select the custom scenario."
+          isCorrect: false
+          explanation: "On the Navigation tab, you configure the message that appears after canceling a scenario or before starting over the current scenario and the Help menu."
+        - content: "Go to Configuration > Compliance > Security > Automatic Welcome > Automatic Welcome Scenario, and select the custom scenario."
+          isCorrect: false
+          explanation: "On the Security tab, you configure security settings for your bot instance. For example, you can set timeout duration and user authentication."

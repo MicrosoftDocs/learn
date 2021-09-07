@@ -3,7 +3,7 @@ uid: learn.wwl.classify-images
 metadata:
   title: Classify images
   description: "Classify images"
-  ms.date: 07/09/2021
+  ms.date: 08/20/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - Familiarity with Azure and the Azure portal.
   - Experience programming with C# or Python.
   If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/learn/paths/csharp-first-steps/) or [Take your first steps with Python](/learn/paths/python-first-steps/) learning path first.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/images-classify.svg
 levels:
 - intermediate
 roles:

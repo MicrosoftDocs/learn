@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.structure-bicep-code-collaboration.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 08/06/2021
+  author: pazdedav
+  ms.author: dapazd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+  - content: Which of these steps should you take?
+    choices:
+    - content: Rename the `number`, `name`, and `name2` parameters.
+      isCorrect: true
+      explanation: Correct. The parameters don't have clear names, so you should rename them to more meaningful identifiers.
+    - content: Create a module for each resource.
+      isCorrect: false
+      explanation: Incorrect. The resource definitions in this template are simple, so they don't need to be put into their own modules.
+    - content: Create a new output to pass the storage account key back to the user.
+      isCorrect: false
+      explanation: Incorrect. Avoid emitting secrets as outputs. Outputs aren't designed to handle secure data.
+  - content: You want to ensure that your template's users provide valid inputs for the `number` parameter. How should you do this?
+    choices:
+    - content: Apply parameter decorators.
+      isCorrect: true
+      explanation: Correct. Parameter decorators such as `@maxLength` validate the input for each parameter.
+    - content: Apply Azure role-based access control (RBAC) on your deployment scope.
+      isCorrect: false
+      explanation: Incorrect. Azure RBAC defines the permissions that users have set to access a given resource or group of resources. It doesn't validate the parameter values that your template users provide.
+    - content: Hard-code as many values into templates as possible.
+      isCorrect: false
+      explanation: Incorrect. Although hard-coding values prevents users from providing incorrect input, you can enable your template's users to provide input through parameters, and validate it by using parameter decorators.
+  - content: What is one of the benefits of using _configuration sets_ for your Bicep templates?
+    choices:
+    - content: You can expose all of your resources' properties to your template's users as parameters.
+      isCorrect: false
+      explanation: Incorrect. When you use a configuration set, you minimize the number of parameters you expose to your template's users, and instead ask them to select a predefined set of configuration.
+    - content: You can abstract the internal complexity of the template by providing a simple set of options.
+      isCorrect: true
+      explanation: Correct. When you use a configuration set, you provide a discrete set of options for your users to choose from.
+    - content: You can structure your template and group elements in any order.
+      isCorrect: false
+      explanation: Incorrect. Although it's true that you can structure your Bicep templates in many different ways, ordering is unrelated to configuration sets.

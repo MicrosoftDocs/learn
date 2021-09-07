@@ -20,7 +20,7 @@ You'll need the following resources installed on your computer to complete the e
     cd mslearn-django-admin-site/starter
     ```
 
-    > ![NOTE]
+    > [!NOTE]
     > The solution for the exercises can be found in the *solution* directory.
 
 ## Open the project in Visual Studio Code

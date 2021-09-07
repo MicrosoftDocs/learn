@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.describe-retention-polices-retention-labels
-title: Describe retention polices and retention labels
+title: Describe retention policies and retention labels
 metadata:
-  title: Describe retention polices and retention labels
-  description: "Describe retention polices and retention labels"
-  ms.date: 06/24/2021
+  title: Describe retention policies and retention labels
+  description: "Describe retention policies and retention labels"
+  ms.date: 07/29/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial

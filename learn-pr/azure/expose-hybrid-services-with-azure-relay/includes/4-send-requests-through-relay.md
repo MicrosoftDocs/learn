@@ -58,7 +58,7 @@ listener.RequestHandler = (context) =>
 };
 ```
 
-When you've configured the listener, you open it to begin listening for messages. Because the relay, listener, and sender are all hosted in different locations, they might take some time to respond to messages. It's important to use asynchronous code for these messages to ensure that your app doesn't hang as it waits for responses. You'll notice the asynchronous `await` keyword and asynchronous method names in the following code:
+When you've configured the listener, you open it to begin listening for messages. Because the relay, listener, and sender are all hosted in different locations, they might take some time to respond to messages. It's important to use asynchronous code for these messages to ensure that your app doesn't appear to stop responding as it waits for responses. You'll notice the asynchronous `await` keyword and asynchronous method names in the following code:
 
 ```csharp
 await listener.OpenAsync()

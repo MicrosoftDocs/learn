@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-azure-resources-bicep.test-deploy-converted-template
+title: Test and deploy your converted template
+metadata:
+  unitType: learning-content
+  title: Test and deploy your converted template
+  description: Learn about the test and deploy phases of the recommended workflow for migrating your Azure resources to Bicep.
+  ms.date: 08/17/2021
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-test-deploy-converted-template.md)]

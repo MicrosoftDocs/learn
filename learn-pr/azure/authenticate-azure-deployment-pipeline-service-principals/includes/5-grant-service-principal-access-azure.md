@@ -1,5 +1,7 @@
 By itself, a service principal can't do anything in your Azure environment. It's just like how a user can't work with your Azure resources unless they're authorized to do so. In this unit, you'll learn how to authorize service principals to deploy and configure Azure resources, while avoiding granting unnecessary permissions.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Service principal authorization
 
 Until now, you've focused on what service principals are and how they can be used to prove the identity of a pipeline to Azure Active Directory (Azure AD). This is all about _authentication_.

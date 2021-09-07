@@ -1,25 +1,25 @@
 ### YamlMime:Module
 uid: learn.microservices-apigateway-aspnet-core
 metadata:
-  title: Understand API Gateways in a cloud-native ASP.NET Core microservices app
+  title: Understand API gateways in a cloud-native ASP.NET Core microservices app
   description: This module guides you through implementing BFF in an ASP.NET Core microservices app.
   author: camsoper
   ms.author: casoper
   ms.date: 05/12/2021
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
-title: Understand API Gateways in a cloud-native ASP.NET Core microservices app
-summary: Modify a cloud-native ASP.NET Core microservices app to understand API Gateways in Azure.
+title: Understand API gateways in a cloud-native ASP.NET Core microservices app
+summary: Modify a cloud-native ASP.NET Core microservices app to understand API gateways in Azure.
 abstract: |
   In this module, you will:
-  - Deploy an existing ASP.NET Core microservices e-commerce application to AKS.
-  - Implement a BFF pattern using .NET.
-  - Deploy the microservices application to an AKS that's using the Azure Application Gateway.
-  - Expose BFF API outside the Kubernetes cluster outside using Application Gateway Ingress Controller and access that external Swagger Client.
+  - Deploy an existing ASP.NET Core microservices e-commerce application to Azure Kubernetes Service (AKS).
+  - Implement a Backend for Frontend (BFF) pattern by using .NET.
+  - Deploy the microservices application to an AKS instance that's using Azure Application Gateway.
+  - Expose the BFF API outside the Kubernetes cluster by using Application Gateway Ingress Controller and access that external Swagger client.
 prerequisites: |
   - Familiarity with C# and ASP.NET Core
   - Familiarity with REST API services
-  - Access to an Azure subscription with Owner privilege
+  - Access to an Azure subscription with owner privileges
 levels:
   - advanced
 roles:

@@ -1,5 +1,6 @@
 Azure Key Vault is a *secret store*: a centralized cloud service for storing app secrets - configuration values like passwords and connection strings that must remain secure at all times. Key Vault helps you control your apps' secrets by keeping them in a single central location and providing secure access, permissions control, and access logging.
 
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LHck]
 
 The main benefits of using Key Vault are:
@@ -28,13 +29,13 @@ In Key Vault, a secret is a name-value pair of strings. Secret names must be 1-1
 
 ## Vault authentication and permissions
 
-Azure Key Vault's API uses Azure Active Directory to authenticate users and apps. Vault access policies are based on *actions* and are applied across an entire vault. For example, an app with **Get** (read secret values), **List** (list names of all secrets), and **Set** (create or update secret values) permissions to a vault can create secrets, list all secret names, and get and set all secret values in that vault.
+Key Vault's API uses Azure Active Directory to authenticate users and apps. Vault access policies are based on *actions* and are applied across an entire vault. For example, an app with **Get** (read secret values), **List** (list names of all secrets), and **Set** (create or update secret values) permissions to a vault can create secrets, list all secret names, and get and set all secret values in that vault.
 
 *All* actions performed on a vault require authentication and authorization &mdash; there is no way to grant any kind of anonymous access.
 
 > [!TIP]
 > When granting vault access to developers and apps, grant only the minimum set of permissions needed. Permissions restrictions help avoid accidents caused by code bugs and reduce the impact of stolen credentials or malicious code injected into your app.
 
-Developers will usually only need **Get** and **List** permissions to a development-environment vault. Some engineers will need full permissions to change and add secrets when necessary.
+Developers will usually only need **Get** and **List** permissions to a development-environment vault. Some engineers will need full permissions to change and add secrets, when necessary.
 
 For apps, often only **Get** permissions are required. Some apps may require **List** depending on the way the app is implemented. The app we'll implement in this module's exercise requires the **List** permission because of the technique it uses to read secrets from the vault.

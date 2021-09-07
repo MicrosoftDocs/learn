@@ -1,1 +1,0 @@
-**discover-sentiment-function**

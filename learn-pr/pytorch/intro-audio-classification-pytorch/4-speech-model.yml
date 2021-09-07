@@ -4,7 +4,7 @@ title: Build the speech model
 metadata:
   title: Build the speech model
   description: Now that we have created the spectrogram images its time to build the computer vision model. 
-  author: cassieview
+  author: cassiebreviu
   ms.author: cassieb
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial

@@ -12,7 +12,7 @@ Where the first position corresponds to the first qubit; and the second position
 
 $$|\psi\rangle=\frac1{\sqrt2}|00\rangle+\frac1{\sqrt2}|11\rangle.$$
 
-In such a state, only two outcomes are possible when you measure the state of both qubits in the standard basis: **$|00\rangle$** and **$|11\rangle**. Notice that each outcome has the same probability of $\frac12$. There's zero probability of obtaining **$|01\rangle** and **$|10\rangle**. If you measure the first qubit and you get that it is in **$|0\rangle$** state, then you can be positive that the second qubit is also in **$|0\rangle$** state, even without measuring it. The measurement outcomes are correlated, and the qubits are *entangled*.
+In such a state, only two outcomes are possible when you measure the state of both qubits in the standard basis: **$|00\rangle$** and **$|11\rangle$**. Notice that each outcome has the same probability of $\frac12$. There's zero probability of obtaining **$|01\rangle$** and **$|10\rangle$**. If you measure the first qubit and you get that it is in **$|0\rangle$** state, then you can be positive that the second qubit is also in **$|0\rangle$** state, even without measuring it. The measurement outcomes are correlated, and the qubits are *entangled*.
 
 > [!NOTE]
 > Not every correlation between the measurements of two qubits means
@@ -27,7 +27,7 @@ Similarly, you can set up a superposition state like the following:
 
 $$|\psi\rangle=\frac1{\sqrt2}|01\rangle+\frac1{\sqrt2}|10\rangle.$$
 
-In this case, only **$|01\rangle** and **$|01\rangle** are possible outcomes. Again, by measuring just one of the qubits, you already know the result of the other qubit. This
+In this case, only **$|01\rangle$** and **$|01\rangle$** are possible outcomes. Again, by measuring just one of the qubits, you already know the result of the other qubit. This
 correlation can be useful in algorithms.
 
 The states we've reviewed aren't the only entangled states. In general, we say that two systems are entangled when the state of the global system cannot be written as a linear combination of the subsystems. For example, consider the following two-qubit quantum state:
