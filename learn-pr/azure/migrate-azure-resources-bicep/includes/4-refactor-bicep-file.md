@@ -64,7 +64,7 @@ If you deploy this Bicep template as-is, the deployment will succeed, but you ca
 
 When you use Bicep to interact with your Azure resources, you specify an _API version_ to use. As Azure products change and improve, newer API versions are released to provide access to new functionality. When you export Azure resources, the exported template might not have the latest API version for a resource type. If you need specific properties for future deployments, update the API to the appropriate version. It's good practice to review the API versions for each exported resource.
 
-Consider using the [Azure ARM template reference](/azure/templates/?azure-portal=true) documentation to help verify the appropriate API versions and resource properties for your template.
+Consider using the [Azure ARM template reference](/azure/templates/?azure-portal=true) to help verify the appropriate API versions and resource properties for your template.
 
 ### Review the linter suggestions in your new Bicep file
 
@@ -173,5 +173,5 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
   kind: 'app' // Specifies a Windows App Service plan.
 }
 
-output appServicePlanId string = appServicePlan.id // Outputs the resource Id of the App Service plan.
+output appServicePlanId string = appServicePlan.id // Outputs the resource ID of the App Service plan.
 ```

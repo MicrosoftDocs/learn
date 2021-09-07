@@ -44,7 +44,7 @@ You need to consider a few things when you export existing resources:
 
 ### Save deployments to a JSON template
 
-If you've ever deployed a resource manually from the Azure portal, you might have noticed the option to **Download a template for automation** on the **Review + create** pane. This option saves a JSON ARM template that's based on the names and properties you've set while building the resource in the portal.
+If you've ever deployed a resource manually from the Azure portal, you might have noticed the option to **Download a template for automation** in the **Review + create** pane. This option saves a JSON ARM template that's based on the names and properties you've set while building the resource in the portal.
 
 Resource Manager also tracks resource *deployments*. Deployment operations include changes submitted by the Azure portal's resource creation experience and any ARM template deployments. Changes to existing resources made by using the Azure portal, Azure PowerShell cmdlets, the Azure CLI, or other tools usually don't create deployments.
 
@@ -93,7 +93,7 @@ Copy each resource individually from the converted Bicep file to the new Bicep f
 
 Not all Azure resource types can be exported through the Azure portal, the Azure CLI, or Azure PowerShell. For example, virtual machine extensions like DependencyAgentWindows and MMAExtension (Microsoft Monitoring Agent) are resource types that you can't export.
 
-When you attempt to export a resource through the Azure portal, the Azure CLI, or Azure PowerShell and an unsupported resource type is included, a detailed error message is generated. You'll need to re-create any resource that wasn't exported, such as virtual machine extensions, in your new Bicep file. You can choose from several tools and approaches to re-create resources, including Azure Resource Explorer, the ARM template reference documentation, and the Azure quickstart templates.
+When you attempt to export a resource through the Azure portal, the Azure CLI, or Azure PowerShell and an unsupported resource type is included, a detailed error message is generated. You'll need to re-create any resource that wasn't exported, such as virtual machine extensions, in your new Bicep file. You can choose from several tools and approaches to re-create resources, including Azure Resource Explorer, the ARM template reference, and the Azure quickstart templates.
 
 #### Azure Resource Explorer
 

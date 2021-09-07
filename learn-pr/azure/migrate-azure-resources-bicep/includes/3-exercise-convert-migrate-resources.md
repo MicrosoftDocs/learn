@@ -28,7 +28,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
    :::image type="content" source="../media/3-create-ubuntu.png" alt-text="Screenshot that shows the Azure Marketplace, with the Create link highlighted under the words Ubuntu Server 20.04 L T S.":::
 
    > [!IMPORTANT]
-   > If the Azure portal doesn't include the **Ubuntu Server 20.04 LTS** item, [select this link](https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-focal20_04-lts-ARM?azure-portal=true) to open the correct pane in the portal.
+   > If the Azure portal doesn't include the **Ubuntu Server 20.04 LTS** item, [open the correct pane](https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-focal20_04-lts-ARM?azure-portal=true) in the portal.
 
 1. On the **Basics** tab, enter the following values for each setting.
 

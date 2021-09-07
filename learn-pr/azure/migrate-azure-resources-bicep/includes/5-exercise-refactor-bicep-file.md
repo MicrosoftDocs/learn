@@ -1,6 +1,6 @@
 In the previous exercise, you created an initial Bicep file that contains the toy truck virtual machine and associated resources. However, the Bicep template doesn't follow best practices, and it's a little hard to read. In this unit, you'll refactor the file.
 
-During the process, you'll:
+During the refactoring process, you'll:
 
 > [!div class="checklist"]
 >
@@ -18,7 +18,7 @@ During the process, you'll:
 
    Enter the name `networkSecurityGroup` and press <kbd>Enter</kbd>. Visual Studio Code updates the name and all references inside the file.
 
-1. Repeat this process for each resource, and rename them as shown in the following table:
+1. Repeat this process for each resource. Rename the resources as shown in the following table:
 
    > [!NOTE]
    > The names of the resources in your deployment will be a little different from the names in the table. Find the resources that have names that are close to these names.
@@ -61,7 +61,7 @@ The parameters in the current template don't really need to be parameters. Here,
    var virtualNetworkName = 'ToyTruck-vnet'
    ```
 
-1. Repeat the process for each parameter, and rename them as listed in the following table:
+1. Repeat the process for each parameter. Rename the parameters as shown in the following table:
 
    | Current parameter name | New variable name |
    |-|-|
