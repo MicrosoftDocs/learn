@@ -46,7 +46,7 @@ Install [Git for Windows](https://git-scm.com/downloads?azure-portal=true).
 
 Install the latest version of PowerShell on your computer.
 
-- [PowerShell on Windows](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows)
+- [PowerShell on Windows](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows)
 
 ### Install the real-time core GNU Arm Embedded Toolchain for Windows
 
@@ -80,7 +80,7 @@ sudo apt install git
 
 Install the latest version of PowerShell on your computer.
 
-- [PowerShell on Linux](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux)
+- [PowerShell on Linux](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-linux)
 
 ### Install the real-time core GNU Arm Embedded Toolchain for Linux
 
