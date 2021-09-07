@@ -1,4 +1,4 @@
-In this module, we explore compound data types in Rust. The Rust language provides array, vector, and hash map types to store data collections. You'll discover how to implement if/else expressions to test data in collection types. As an exercise, you'll write a Rust program to build cars by processing a data collection and testing values.
+In this module, we explore compound data types in Rust. The Rust language provides array and vector types to store data collections. You'll discover how to implement if/else expressions to test data in collection types. As an exercise, you'll write a Rust program to build cars by processing a data collection and testing values.
 
 
 ## The Rust Playground
@@ -12,7 +12,7 @@ All code that runs on the Rust Playground can also compile and run in your local
 
 In this module, you'll:
 
-- Explore Rust compound data types: arrays, vectors, and hash maps
+- Explore Rust compound data types: arrays and vectors
 - Discover how to use if/else statements to test conditions in a Rust program
 - Create, compile, and run a Rust program to process compound data and test values
 

@@ -1,6 +1,6 @@
-In this module, we reviewed how Rust supports compound data types and test conditions. Data collections can be implemented by using arrays, vectors, and hash maps. You can check data values or test conditions by using if/else statements and boolean expressions. 
+In this module, we reviewed how Rust supports compound data types and test conditions. Data collections can be implemented by using arrays and vectors. You can check data values or test conditions by using if/else statements and boolean expressions. 
 
-In the exercise, you wrote a group of functions to work together to build cars. You practiced working with data stored in several types, including arrays, tuples, enums, structs, and hash maps. We used the Rust playground to modify the code, compile the program, and run the executable.
+In the exercise, you wrote a group of functions to work together to build cars. You practiced working with data stored in several types, including arrays, tuples, enums, and structs. We used the Rust playground to modify the code, compile the program, and run the executable.
 
 In the next module in this Learning Path, we explore complex conditional expressions in Rust, and discover how to iterate through data by using loops.
 
