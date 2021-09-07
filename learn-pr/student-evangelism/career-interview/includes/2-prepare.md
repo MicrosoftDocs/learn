@@ -110,7 +110,7 @@ A great way to prepare for questions about a given language or framework is to i
 
 ## Reach out
 
-Spend as much time as possible preparing by trying to solve various problems but also don't be afraid to reach out to the recruiter or recruitment team and ask for guidelines and materials. Some companies actually offer interview coaches. Having these kind of materials can help you focus on what this company believes is important. Some companies will send "how to prepare" material to the candidate; however, it is not recommended that you reach out proactively to ask for interview preparation materials if you do not receive them from the company.
+Spend as much time as possible preparing by trying to solve various problems but also don't be afraid to reach out to the recruiter or recruitment team and ask for guidelines and materials. Some companies actually offer interview coaches. Having these kind of materials can help you focus on what this company believes is important. Some companies will send "how to prepare" material to the candidate; however, it  recommended that you reach out proactively to ask for interview preparation materials if you do not receive them from the company.
 
 > [!TIP]
 > Be brave! Ask for guidance and preparation content. Doing so shows interest and might increase the likelihood that you pass the interview.

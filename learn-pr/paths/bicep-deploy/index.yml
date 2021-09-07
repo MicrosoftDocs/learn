@@ -39,7 +39,7 @@ summary: |
   :::column:::
     <img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>
 
-    [Part 2: Build Azure infrastructure in a team environment by using Bicep](/learn/paths/bicep-collaborate/)
+    [Part 2: Build Azure infrastructure in a team environment by using Bicep](xref:learn.bicep-collaborate)
   :::column-end:::
   :::row-end:::
 prerequisites: Familiarity with Azure Resource Manager and Azure resource groups is recommended, but not required.
