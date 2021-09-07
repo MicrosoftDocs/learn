@@ -25,7 +25,7 @@ You should be familiar with:
 - Azure, including the Azure portal, subscriptions, and resource groups.
 - ARM templates (both JSON and Bicep), including parameters, modules, the `existing` keyword, and child and extension resources.
 - The what-if operation.
-- Refactoring Bicep files to conform to best practices.
+- Refactoring Bicep files to align with best practices.
 
 To follow along with the exercises in the module, you'll need:
 
