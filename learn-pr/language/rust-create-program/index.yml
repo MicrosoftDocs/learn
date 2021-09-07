@@ -31,11 +31,12 @@ units:
 - learn.language.rust-create-program.0-introduction
 - learn.language.rust-create-program.1-program-structure
 - learn.language.rust-create-program.2-variables
-- learn.language.rust-create-program.3-data-types
-- learn.language.rust-create-program.4-structs-enums
-- learn.language.rust-create-program.5-functions
-- learn.language.rust-create-program.6-exercise
-- learn.language.rust-create-program.7-summary
+- learn.language.rust-create-program.3-basic-data-types
+- learn.language.rust-create-program.4-tuples-structs
+- learn.language.rust-create-program.5-enum-variants
+- learn.language.rust-create-program.6-functions
+- learn.language.rust-create-program.7-exercise
+- learn.language.rust-create-program.8-summary
 # Change badge UID value back to learn.language.rust-understand-common-concepts.badge after split is complete
 badge:
   uid: learn.language.rust-create-program.badge

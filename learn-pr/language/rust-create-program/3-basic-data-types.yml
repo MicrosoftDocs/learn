@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.rust-create-program.3-data-types
+uid: learn.language.rust-create-program.3-basic-data-types
 metadata:
-  title: 'Primary data types: Numbers, text, true/fase, and groups'
-  description: Review the primary data types in Rust. Explore how integers and floating point numbers, and characters and text strings are defined. Discover how true or false boolean values are used, and how groups of different type values are defined.
+  title: Explore data types for numbers, text, and true/fase values
+  description: Review primary data types in Rust. Explore how integers, floating point numbers characters, and text strings are defined. Discover how true or false boolean values are used.
   ms.date: 08/19/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'Primary data types: Numbers, text, true/false, and groups'
-durationInMinutes: 8
+title: Explore data types for numbers, text, and true/fase values
+durationInMinutes: 5
 content: |
-  [!include[](includes/3-data-types.md)]
+  [!include[](includes/3-basic-data-types.md)]
 
 quiz:
   questions:
@@ -39,15 +39,3 @@ quiz:
     - content: "In Rust, all text types are valid UTF-8 representations."
       isCorrect: true
       explanation: "Correct! All text types in Rust are valid UTF-8 representations." 
-
-  - content: "What's a `tuple` in Rust?"
-    choices:
-    - content: "A tuple is a collection of values of different types. The data type is based on the data types of its elements, and the length is fixed based on the number of elements."
-      isCorrect: true
-      explanation: "Correct! A tuple is a grouping of values of different data types that are collected into a compound value."
-    - content: "A tuple is a collection of values of different types. The data type is based on the data types of its elements. The length can grow and shrink as elements are added or removed."
-      isCorrect: false
-      explanation: "Incorrect. After a tuple is declared, the length is fixed based on the number of its elements. A tuple can't grow and shrink after it's declared."     
-    - content: "A tuple is a collection of values of the same data type. All elements in the tuple must have the same data type. The tuple length is fixed based on the number of its elements."
-      isCorrect: false
-      explanation: "Incorrect. A tuple combines elements of different data types together into a compound value, such as `i8`, `char`, and `boolean`." 
