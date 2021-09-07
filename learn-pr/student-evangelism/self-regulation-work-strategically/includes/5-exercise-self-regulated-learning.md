@@ -62,7 +62,7 @@ You notice a team member trying to debug a portion of code. They’re making fre
 
 - What can you suggest to the team member that’ll help them work the problem strategically?
 
-      - Possible answer: You could suggest that they keep a list or log of what they’ve tried to fix and note what the result was of each change they made.
+     - Possible answer: You could suggest that they keep a list or log of what they’ve tried to fix and note what the result was of each change they made.
 
 - Where are they in their self-regulated feedback loop? 
 
