@@ -62,7 +62,7 @@ quiz:
     - content: "It speeds up or slows down training."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "If it's too large or too small, it can prevent a model from being trained optimally."
+    - content: "If the learning rate is too large or too small, it can prevent a model from being trained optimally."
       isCorrect: false
       explanation: "Incorrect."
     - content: "Both options are correct."
