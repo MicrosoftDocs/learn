@@ -181,7 +181,7 @@ The export process adds redundant properties to many resources. Here, you remove
    - Remove the `storageProfile.osDisk.managedDisk.id` property because Azure automatically determines this property when the virtual machine is deployed.
      > [!IMPORTANT]
      > It's important to remove this property or your template won't deploy correctly.
-   - Remove the `requireGuestProvisionSignal` property because Azure sets this automatically.
+   - Remove the `requireGuestProvisionSignal` property because Azure sets this property automatically.
    - Remove the `storageProfile.dataDisks` and `osProfile.secrets` properties because they're empty.
 
 1. In the `networkInterface` resource:

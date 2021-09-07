@@ -65,7 +65,7 @@ You need to consider a few things when you save your templates by using this met
 
 The second step in migrating your Azure resources to Bicep is to convert your JSON ARM templates and Azure resources to Bicep templates. The Bicep tooling includes the `decompile` command to convert templates. You can invoke the `decompile` command from either the Azure CLI or the Bicep CLI.
 
-The decompilation process is a best-effort process and doesn't guarantee a full mapping from JSON to Bicep. You might need to revise the generated Bicep file to meet your template best practices before you use the file to deploy resources. Consider this the starting point for your migration. Later in this module, you'll learn how to fix any issues you come across during the decompilation process.
+The decompilation process is a best-effort process and doesn't guarantee a full mapping from JSON to Bicep. You might need to revise the generated Bicep file to meet your template best practices before you use the file to deploy resources. Consider it the starting point for your migration. Later in this module, you'll learn how to fix any issues you come across during the decompilation process.
 
 After you decompile your template, you've completed the *convert* phase. Now, you have a valid Bicep file to start from. However, the file you create isn't ready to use yet. The initial Bicep file is just a reference point.
 
@@ -151,9 +151,9 @@ The [ARM template reference](/azure/templates/?azure-portal=true) documentation 
 
 You can choose specific resource providers and resource types, like `Microsoft.Web/serverFarms`, and their API versions. You can review which resource properties are required and which are optional. Most properties are described to help you understand what they do.
 
-#### Azure Quickstart Templates
+#### Azure quickstart templates
 
-The [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates?azure-portal=true) repository is a collection of community-contributed templates. This repository of searchable templates provides examples of many Azure resources and solutions. In some quickstarts, both a JSON ARM template and a Bicep ARM template are available to view. These templates can be used as a reference point to help you build and verify your templates for deployment.
+The [Azure quickstart templates](https://azure.microsoft.com/resources/templates?azure-portal=true) repository is a collection of community-contributed templates. This repository of searchable templates provides examples of many Azure resources and solutions. In some quickstarts, both a JSON ARM template and a Bicep ARM template are available to view. These templates can be used as a reference point to help you build and verify your templates for deployment.
 
 Suppose you want to find a template that builds an Azure App Service plan and app. Each quickstart template gives you the option to deploy the template directly to Azure or to view the template on GitHub.
 

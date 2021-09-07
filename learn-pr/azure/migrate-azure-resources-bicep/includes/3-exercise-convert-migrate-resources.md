@@ -214,7 +214,7 @@ You'll fix these problems throughout the rest of this module.
 
    :::image type="content" source="../media/3-visual-studio-code-problems.png" alt-text="Screenshot of the Visual Studio Code editor that shows the problems pane, with no problems listed.":::
 
-You've created an initial Bicep file to represent your resources. The Bicep file isn't well-structured and it doesn't follow best practices. In the next unit, you'll learn how to improve the quality of the migrated template.
+You've created an initial Bicep file to represent your resources. The Bicep file isn't well structured and it doesn't follow best practices. In the next unit, you'll learn how to improve the quality of the migrated template.
 
 > [!TIP]
 > If you use a version control system like Git, this would be a good time to commit your work.
