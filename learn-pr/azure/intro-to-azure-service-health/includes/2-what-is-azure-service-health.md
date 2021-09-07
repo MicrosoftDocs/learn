@@ -1,41 +1,14 @@
-<!-- 1. Topic sentence(s) ---------------------------------------------------------------
 
-    Goal: briefly state that this unit will define the product.
+Let's start with a definition of "Service Health" and explore some features. It will help you understand how you can benefit from the service to improve the reliability of your environment.
 
-    Heading: none
-
-    Example: "Let's start with a few definitions and a quick tour of the core features of Logic Apps. This overview should help you see whether Logic Apps might be a good fit for your work."
--->
-Let's start with a definition of "Service Health" and explore some features. It will help you understand how you can benefit from it to improve the reliability of your environment.
-
-<!-- 2. Background-concept definitions (optional) ----------------------------------------
-
-    Goal:
-        Define any needed underlying concepts or terms the learner must know to understand the product.
-        Repeat this pattern multiple times if multiple concepts are needed.
-
-    Heading:
-        "## What is (concept)?"
-
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that gives a definition "(concept) is..." (ensure this is a definition, do not give use cases like "(concept) lets you...").
-        3. Additional text as needed (typically 1-3 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    Example:
-        (Note: the product "Logic Apps" implements business processes in the cloud; therefore, "business process" is a background concept.)
-        Heading: "What is a business process?
-        Lead sentence: "A business process or _workflow_ is a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification...."
--->
 ## What is Azure Service Health?
-Azure Service Health should be comprehended as a set of services. The services combined will provide information about current or upcoming issues from Azure that may impact your workloads. This means that Azure Service Health is composed by:
+Azure Service Health should be comprehended as a set of services. The services combined will provide information about current or upcoming issues from Azure that may impact your workloads. We can explore how Azure Service Health through its component parts:
 
-* Azure Status: Brings information about service outages that are publicly available on  Azure Status Page.
+* Azure Status: Brings information about service outages that are publicly available on the [Azure Status Page](https://status.azure.com/status).
 * Service Health: Through an authenticated experience, gives personalized views regarding the health of Azure services and regions currently in use by your workloads.
 * Resource Health: Provides details about the health of individual resources in your environment, such as a virtual machine.
 
-With them, you will be able to see a high level of details regarding the health of your environment.
+Using these aspects of Azure Service Health, you will be able to see high level of details regarding the health of your environment.
 
 <!-- 3. Define the product -------------------------------------------------------------
 
