@@ -26,8 +26,8 @@ When this module was written, Python 3.9 was the latest version available, so in
     :::image type="content" source="../media/windows-install-python-splash.png" alt-text="Screenshot of the Python Home tab in the Microsoft Store with Install highlighted.":::
 
     
-> [!NOTE]
-> If you are unable to use the installer because you don't have administrator privileges, download the embeddable package (zip file) of Python from the [Python website](https://www.python.org/getit/), and then extract the zip file to a local folder, such as C:\Python39.
+    > [!NOTE]
+    > If you are unable to use the installer because you don't have administrator privileges, download the embeddable package (zip file) of Python from the [Python website](https://www.python.org/getit/), and then extract the zip file to a local folder, such as C:\Python39.
 
     Python installs in the background. The installation may take a couple of minutes depending on the speed of your system.
 
