@@ -9,6 +9,6 @@ metadata:
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/5-exercise-creating-holographic-remoting-pc-application.md)]
