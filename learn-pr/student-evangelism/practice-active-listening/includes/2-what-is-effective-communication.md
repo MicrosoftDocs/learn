@@ -14,11 +14,11 @@ To communicate *effectively*, you need to set aside your own pre-conceived notio
 
 When you engage in active listening, you need to:
 
-1. Create space. Slow down and create space to listen with your full attention:
+- Create space. Slow down and create space to listen with your full attention:
     - Listen to what they are saying rather than thinking about what you want to say next. If you find yourself doing that, reorient your attention to what they are saying.
     - Give them time to finish their thoughts. Allow space after they finish to consider what they have said instead of jumping in to talk the moment they stop speaking.
-1. Mirror what they said. Tell the speaker what you think they said in your own words—a technique called *mirroring*. You can ask, “Can I repeat back to make sure I’m with you?” This signals that that you are listening, but also ensures that you understand correctly.
-1. Try on their perspective. Try to understand their point of view to gain a deeper sense of where they’re coming from, even when you disagree with what they’re saying.
+- Mirror what they said. Tell the speaker what you think they said in your own words—a technique called *mirroring*. You can ask, “Can I repeat back to make sure I’m with you?” This signals that that you are listening, but also ensures that you understand correctly.
+- Try on their perspective. Try to understand their point of view to gain a deeper sense of where they’re coming from, even when you disagree with what they’re saying.
 
 :::image type="content" source="../media/2-feel-heard.png" alt-text="One person asking another person if what they heard is correct. The other person is thinking - I feel heard." border="false":::
 
