@@ -1,8 +1,8 @@
-In the previous exercise, you ran a command to determine whether you had Python 3 installed. If you need to install Python 3, choose your operating system at the top of this page, and then follow the instructions.
+3-exercise-install-python3.mdIn the previous exercise, you ran a command to determine whether you had Python 3 installed. If you need to install Python 3, choose your operating system at the top of this page, and then follow the instructions.
 
 If you determined that you already have Python 3 installed, you can scroll to the bottom of this page and select **Continue**.
 
-When this module was written, Python 3.9 was the latest version available, so instructions here refer to that version. You should install the latest version of Python that is available for your operating system. If you install a different version, the button labels and the filenames that you see may differ slightly from those in these instructions.
+When this module was written, Python 3.9 was the latest version available, so instructions here refer to that version. Install the latest version of Python that is available for your operating system. If you install a different version, the button labels and the filenames that you see may differ slightly from those in these instructions.
 
 ::: zone pivot="windows"
 
@@ -79,13 +79,13 @@ If you use APT, you can use these instructions to install Python 3.
     > [!NOTE]
     > `apt-get install` locates the appropriate packages from the package index, downloads the necessary files, and installs the files into the appropriate folders.
 
-1. Run `python3`, To confirm that Python 3 installed correctly:
+1. Run the `python3`command to confirm that Python 3 installed correctly:
 
     ```bash
     python3 --version
     ```
 
-    You should see the word `Python` with a set of numbers separated by `.` characters. The following example shows the output you might see.
+   The output should contain the word `Python` with a set of numbers separated by `.` characters. The following example shows the output you might see.
 
     ```output
     Python 3.9.1
@@ -93,7 +93,7 @@ If you use APT, you can use these instructions to install Python 3.
 
     As long as the first number is `3`, Python 3 installed successfully.
 
-    If the installation failed, you might see an error message. Enter the exact error message into a search engine's search box to find possible causes and solutions.
+    If the installation failed, you might see an error message. Enter the exact error message into browser to find possible causes and solutions.
 
 ### Install by using YUM
 
@@ -121,7 +121,7 @@ The YUM package manager is used mainly by Red Hat systems, like Red Hat Enterpri
     python3 --version
     ```
 
-    You should see the word `Python` with a set of numbers separated by `.` characters. The following example shows the output you might see.
+    The output includes the word `Python` with a set of numbers separated by `.` characters, for example:
 
     ```output
     Python 3.9.1
@@ -195,7 +195,7 @@ Follow these steps to download the Python installer from the Python website.
     python3 --version
     ```
 
-    You should see the word `Python` with a set of numbers separated by `.` characters. The following example shows the output you might see.
+    The output includes the word `Python` with a set of numbers separated by `.` characters, for example:
 
     ```output
     Python 3.9.7
