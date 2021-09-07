@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-if-else-expressions.3-hash-maps
+metadata:
+  title: Work with hash maps in Rust
+  description: Explore how to work with hash maps in Rust.
+  ms.date: 08/19/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with hash maps in Rust
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-hash-maps.md)]
+
+quiz:
+  questions:
+  
+  - content: "What data type is best for representing an address book that associates people's names to their phone numbers?"
+    choices:
+    - content: "A tuple"
+      isCorrect: false
+      explanation: "With a tuple, you can only group values into one compound. We can have a combined tuple of names and phone numbers, but we can't easily map them together."
+    - content: "A vector"
+      isCorrect: false
+      explanation: "With a vector, you can only store a collection of objects. You wouldn't know how to relate a person's name to their phone number."
+    - content: "An array"
+      isCorrect: false
+      explanation: "An array is a collection of similar objects. You wouldn't know how to relate a person's name to their phone number."
+    - content: "A hash map"
+      isCorrect: true
+      explanation: "Correct. With a hash map, you can store a mapping of keys to values. So each name key could have a corresponding phone number as a value."
+  
+  - content: "What would happen if you tried to directly access an element of a vector whose index was beyond that vector's boundaries?"
+    choices:
+    - content: "The program would panic in runtime."
+      isCorrect: true
+      explanation: "Correct. The program will panic and terminate with an 'index out of bounds' error."
+    - content: "A null value would be returned."
+      isCorrect: false
+      explanation: "No value of any kind can be returned if it doesn't exist."
+    - content: "A compilation error would occur."
+      isCorrect: false
+      explanation: "Almost. The program compiles successfully, but it returns an error when the vector is accessed with an index that's not in range."
+    - content: "The last element of this vector would be returned instead."
+      isCorrect: false
+      explanation: "The vector won't successfully return an index that isn't specified or doesn't exist."
