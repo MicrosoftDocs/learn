@@ -42,6 +42,12 @@ The Git client is required to clone the Learning Path Labs and the Azure Sphere 
 
 Install [Git for Windows](https://git-scm.com/downloads?azure-portal=true).
 
+### Install PowerShell
+
+Install the latest version of PowerShell on your computer.
+
+- [PowerShell on Windows](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows)
+
 ### Install the real-time core GNU Arm Embedded Toolchain for Windows
 
 1. Download the latest [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads?azure-portal=true) for Windows.
@@ -69,6 +75,12 @@ The Git client is required to clone the Learning Path Labs and the Azure Sphere 
 ```bash
 sudo apt install git
 ```
+
+### Install PowerShell
+
+Install the latest version of PowerShell on your computer.
+
+- [PowerShell on Linux](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux)
 
 ### Install the real-time core GNU Arm Embedded Toolchain for Linux
 

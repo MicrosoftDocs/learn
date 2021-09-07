@@ -1,5 +1,22 @@
 In the following exercise, you'll config and deploy the Altair emulator to your Azure Sphere.
 
+## Update the Azure Sphere configuration
+
+When the Altair emulator project was released, it targeted version 10 of the Azure Sphere APIs and version 21.07 of the Azure Sphere SDK. It is likely you installed a more recent version of the Azure Sphere SDK. If you do install a more recent version of the Azure Sphere SDK, then you need to update the project TARGET_API_SET and TOOLS_REVISION settings. These settings are held in the **cmake/azsphere_config.cmake** file.
+
+Follow these steps to update the configuration files for all Azure Sphere projects in the **Altair8800Emulator** folder.
+
+1. Open a **Command prompt**.
+1. Navigate to the **Altair8800Emulator** folder you cloned to your computer.
+1. Run the **Update_Config** PowerShell script.
+
+    ```bash
+    pwsh ./tools/build-tools/update_config.ps1
+
+    ```
+
+1. Exit the command prompt.
+
 ## Open the Altair emulator with Visual Studio Code
 
 1. Start Visual Studio Code.
@@ -80,11 +97,13 @@ In the following exercise, you'll config and deploy the Altair emulator to your 
 
 1. Save the updated app_manifest.json file.
 
-## Select your developer board configuration
+## Set your developer board configuration
 
 The Altair project works on Azure Sphere developer boards from Avnet and Seeed Studio. The default developer board configuration is the Avnet Azure Sphere Starter Kit Revision 1 with **no** front panel.
 
-1. Open **CMakeLists.txt**.
+1. Still in Visual Studio Code, navigate to the **cmake** folder.
+
+1. Open the **altair_config.cmake** file.
 
 1. Add **#** at the beginning of the **set AVNET** line to disable it.
 
@@ -137,7 +156,7 @@ The Altair project works on Azure Sphere developer boards from Avnet and Seeed S
     ###################################################################################################################
     ```
 
-1. Save the **CMakeLists.txt** file. Saving the file will autogenerate the CMake cache.
+1. Save the **altair_config.cmake** file. Saving the file will autogenerate the CMake cache.
 
 ## Enable support the Altair front panel
 

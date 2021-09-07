@@ -1,5 +1,9 @@
 In this module, you're going to learn about the supported Altair 8800 emulator hardware configurations and how to set up the Azure Sphere development environment.
 
+## Introduction
+
+
+
 ## Scenario: first contact
 
 
