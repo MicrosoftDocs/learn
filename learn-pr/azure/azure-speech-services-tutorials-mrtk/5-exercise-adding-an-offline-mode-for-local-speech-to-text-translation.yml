@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-speech-services-tutorials-mrtk.5-exercise-adding-an-offline-mode-for-local-speech-to-text-translation
-title: Exercise - Add an offline mode for local speech to text translation
+title: Exercise - Execute commands using Azure speech recognition
 metadata:
-  title: Exercise - Add an offline mode for local speech to text translation
-  description: Introduction to Add an offline mode for local speech to text translation
+  title: Exercise - Execute commands using Azure speech recognition
+  description: Introduction to Execute commands using Azure speech recognition
   ms.date: 06/23/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/5-exercise-adding-an-offline-mode-for-local-speech-to-text-translation.md)]

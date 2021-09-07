@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-speech-services-tutorials-mrtk.4-adding-an-offline-mode-for-local-speech-to-text-translation
-title: Add an offline mode for local speech to text translation
+title: Execute commands using Azure speech recognition
 metadata:
-  title: Add an offline mode for local speech to text translation
-  description: Introduction to Add an offline mode for local speech to text translation
+  title: Execute commands using Azure speech recognition
+  description: Introduction to Execute commands using Azure speech recognition
   ms.date: 06/23/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
