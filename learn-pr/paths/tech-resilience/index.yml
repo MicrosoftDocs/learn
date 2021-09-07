@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.student-evangelism.tech-resilience
+metadata:
+  title: Develop tech resilience
+  description: Develop your tech resilience.
+  brand: azure
+  ms.date: 09/07/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+title: Develop tech resilience
+summary: |
+  In this learning path you'll:
+   - Learn how to develop a growth mindset.
+   - Enhance your self-efficacy.
+   - Cultivate a culture of belongingness.
+   - Exercise your emotional intelligence.
+   - Give and receive effective feedback.
+   - Grow your cognitive flexibility.
+   - Leverage self-regulation to work strategically.
+   - Communicate with others strategically through mirroring and coaching.
+   - Work with others by practicing active listening.
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+modules:
+- learn.student-evangelism.develop-growth-mindset
+- learn.student-evangelism.enhance-self-efficacy
+- learn.student-evangelism.cultivate-culture-belong-tech
+- learn.student-evangelism.exercise-your-emotional-intelligence
+- learn.student-evangelism.give-receive-effective-feedback
+- learn.student-evangelism.grow-cognitive-flexibility
+- learn.student-evangelism.self-regulation-work-strategically
+- learn.student-evangelism.communicate-strategically-mirror-coach
+- learn.student-evangelism.practice-active-listening
+trophy:
+  uid: learn.languages.fsharp-first-steps.trophy
