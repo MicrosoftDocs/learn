@@ -3,7 +3,7 @@ uid: learn.student-evangelism.communicate-strategically-mirror-coach
 metadata:
   title: 'Communicate with others strategically through mirroring and coaching'
   description: Learn how to communicate with others strategically by using the mirror and coach roles.
-  ms.date: 05/13/2021
+  ms.date: 09/07/2021
   author: interurban
   ms.author: jadenyer
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract:  |
   - Learn to use key listening skills to improve your understanding of work processes in technology.
 prerequisites: |
   - An open mind and a willingness to learn about the expectations and responsibilities of mentorship in a technology workspace.
-  
+  hidden: true
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -27,12 +27,12 @@ roles:
 products:
 - azure
 units:
-- learn.student-evangelism.communicate-strategically-mirror-coach.1-introduction
-- learn.student-evangelism.communicate-strategically-mirror-coach.2-what-is-a-mirror
-- learn.student-evangelism.communicate-strategically-mirror-coach.3-what-is-a-coach
-- learn.student-evangelism.communicate-strategically-mirror-coach.4-exercise-mirror-coach-support-learning
-- learn.student-evangelism.communicate-strategically-mirror-coach.5-play-role-mirror-coach
-- learn.student-evangelism.communicate-strategically-mirror-coach.6-knowledge-check
-- learn.student-evangelism.communicate-strategically-mirror-coach.7-summary
+- learn.student-evangelism.communicate-strategically-mirror-coach.introduction
+- learn.student-evangelism.communicate-strategically-mirror-coach.what-is-a-mirror
+- learn.student-evangelism.communicate-strategically-mirror-coach.what-is-a-coach
+- learn.student-evangelism.communicate-strategically-mirror-coach.exercise-mirror-coach-support-learning
+- learn.student-evangelism.communicate-strategically-mirror-coach.play-role-mirror-coach
+- learn.student-evangelism.communicate-strategically-mirror-coach.knowledge-check
+- learn.student-evangelism.communicate-strategically-mirror-coach.summary
 badge:
   uid: learn.student-evangelism.communicate-strategically-mirror-coach.badge

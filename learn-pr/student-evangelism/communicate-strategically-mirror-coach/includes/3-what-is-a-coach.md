@@ -44,6 +44,7 @@ Whether you’re playing the role of a mirror or a coach, you’ll be regularly 
 
 - Be open to different ideas and opinions, even if they differ from your own. Never put down another person’s idea by saying something like, “That’s a terrible idea; that wouldn’t work.” or “You really don’t know what you are talking about.” By staying open and gaining input from others, you might discover a way of thinking that you hadn’t considered. If you shut down other people, you can’t expect them to be receptive when you weigh in. A good way to approach such a situation would be to say, “It sounds like your experience is quite different than mine—would you be willing to share more?” or “I’m not sure I understand that perspective. Can you say more about how that would work?”
 
-**Important**: People may have had different experiences than you. It’s okay for you to disagree; you can find a way to bring your perspective forward.
+>[!Important]
+>People may have had different experiences than you. It’s okay for you to disagree; you can find a way to bring your perspective forward.
 
 :::image type="content" source="../media/3-pyramid.png" alt-text="A coach guiding a group session." border="false":::
