@@ -172,8 +172,8 @@ You have now deployed and configured the appropriate schema for the scenario.
 
 1. Select **EventHubConnectionAppSetting** and update it with your *Event Hub-compatible endpoint* for IoT Hub. Select **OK**.
 
-> [!TIP]
-> To edit a configuration item, you can either click on the name of the configuration or scroll to the right and select the pencil icon.
+    > [!TIP]
+    > To edit a configuration item, you can either click on the name of the configuration or scroll to the right and select the pencil icon.
 
 1. Select **SQLDBConnectionString** and update it with your Azure SQL Database connection string. Select **OK**.
 
@@ -215,8 +215,8 @@ You have now deployed and configured the appropriate schema for the scenario.
 
 1. Confirm the action completes successfully (takes about 2-3 minutes) by selecting **Actions** near the top of the window and reviewing the progress and completion.
 
-> [!TIP]
-> While it is processing, you can continue to the next section.
+    > [!TIP]
+    > While it is processing, you can continue to the next section.
 
 1. If you face any errors, confirm you have included the right connection strings in the right places in the previous section of this exercise.
 
