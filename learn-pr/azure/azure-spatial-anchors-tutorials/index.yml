@@ -2,14 +2,14 @@
 uid: learn.azure.azure-spatial-anchors-tutorials-mrtk
 metadata:
   title: Azure Spatial Anchors Tutorials
-  description: This course explores the use of azure spatial anchors by integrating to a hololens2 application. 
+  description: This course explores the use of azure spatial anchors by integrating it to a HoloLens 2 application. 
   ms.date: 06/23/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 title: Azure Spatial Anchors Tutorials
-summary: This course explores the use of azure spatial anchors by integrating to a HoloLens 2 application. 
+summary: This course explores the use of azure spatial anchors by integrating it to a HoloLens 2 application. 
 abstract: |
   By the end of this module you will be able to:
   - You would have  learned the fundamentals of Azure Spatial Anchors
@@ -27,7 +27,7 @@ products:
 - mrtk
 - hololens
 prerequisites: |
-  - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
+  - A Windows 10 PC configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
   - A HoloLens 2 device configured for development
   - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added

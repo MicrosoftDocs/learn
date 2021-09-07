@@ -12,7 +12,7 @@ First, follow the Initializing your project and deploying your first application
 4. Importing the Mixed Reality Toolkit and Configuring the Unity project
 5. Creating and configuring the scene and give the scene a suitable name, for example, AzureSpatialAnchors
 
-Then follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is DefaultHoloLens2ConfigurationProfile and change the display options for the spatial awareness mesh to Occlusion.
+Then changing the Spatial Awareness Display Option to ensure the MRTK configuration profile for your scene is DefaultHoloLens2ConfigurationProfile and change the display options for the spatial awareness mesh to Occlusion.
 
 ## Install in-built Unity packages and Import the tutorial assets
 

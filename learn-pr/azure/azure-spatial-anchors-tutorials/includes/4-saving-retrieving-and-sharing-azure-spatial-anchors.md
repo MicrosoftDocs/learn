@@ -1,5 +1,7 @@
 Azure Spatial Anchors enable you to share anchors in the world across many devices. It works with a variety of development environments. We can share the Azure Anchor ID between multiple devices. By saving the Azure Spatial Anchor ID to the local disc on HoloLens, you can keep Azure Spatial Anchors during app sessions and restarts. We can achieve spatial alignment across multiple app sessions.
 
-## Interactable script
+## Spatial placements
 
-Any item can be made interactable with a distinguished visual state using the Interactable script. For example, you can alter the object's color when it's in focus or enlarge it when it's focused. You can achieve intricate visual states, including shader property changes because you can have many themes that control distinct aspects of the object. External components, such as PhysicalPressEventRouter, can be used to augment interactable features by allowing press events to drive state changes in the interactable.
+Spatial mapping provides applications with the opportunity to present natural and familiar forms of interaction to the user; what could be more natural than placing down your phone on the desk?
+
+Constraining the placement of holograms (or more generally, any selection of spatial locations) to lie on surfaces provides a natural mapping from 3D (point in space) to 2D (point on surface). This reduces the amount of information the user needs to provide to the application and makes the user's interactions faster, easier, and more precise

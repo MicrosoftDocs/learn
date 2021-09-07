@@ -7,36 +7,6 @@ Some use-cases of Azure Spatial Anchors include :
 
 * **Internet of Things**: Another area where the usage of spatial anchors will be highly beneficial is the Internet of Things. For example, assume you're standing in front of a piece of factory equipment equipped with several sensors. If a part has a problem, an arrow can point straight to the problem part. Thus, you can see every piece of important information quickly and just by gazing at the piece of equipment with your device on.
 
-## Mixed Reality Feature Tool
-
-The Mixed Reality Feature Tool is a new tool that allows Unity developers to find, update, and integrate Mixed Reality feature packages into their projects. Before importing, you can search for packages by name or category, check their dependencies, and even examine proposed changes to your project's manifest file. The Mixed Reality Feature tool will download the packages you want into the project once you've validated them.
-
-## Object Manipulator
-
-The ObjectManipulator script makes an object movable, scalable, and rotatable using one or two hands. Therefore, most kinds of interaction, such as the HoloLens 2 articulated hand, HoloLens 2 hand rays, HoloLens 1 gaze and gestures, and immersive headset motion controller input, should function with the script.
-
-## Box Collider
-
-Collider components define a GameObject's shape in terms of physical collisions. For example, the cube-shaped collision primitive is the Box Collider.
-
-## Near Interaction Grabbable
-
-Near interactions, a grabbable script is used for touches and grabs interactions.
-
-## HoloLens Emulator And Windows Mixed Reality Simulator
-
-The HoloLens Emulator, which includes the HoloLens development kit, allows you to test holographic applications on your PC without using a physical HoloLens. Instead, the HoloLens emulator uses a Hyper-V virtual machine, which means that human and environmental inputs are emulated using your keyboard, mouse, or Xbox controller.
-Without a Windows Mixed Reality immersive headset, you can use the Windows Mixed Reality simulator to test mixed reality apps on your PC.
-
-## Release Or Master Configuration For HoloLens
-
-The release configuration allows optimizations, resulting in faster-compiled code.
-The Unity profiler is disabled in the Master configuration, which can make debugging more difficult.
-
-## ARM64 Configuration
-
-Desktop PCs, mobile devices, and some IoT Core devices are part of the Windows 10 on ARM64 configuration.
-
 ## AR Foundation
 
 Within Unity, the AR Foundation lets you work with augmented reality systems across several platforms. This package provides an interface for Unity developers, but it doesn't include any AR functionality. On a target device, you'll also need separate packages for Unity's officially supported target platforms.
