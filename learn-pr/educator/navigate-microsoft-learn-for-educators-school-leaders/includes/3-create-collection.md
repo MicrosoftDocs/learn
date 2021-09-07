@@ -18,8 +18,6 @@ To create a new collection:
 
 You can find this collection by navigating to your profile (select on your avatar image in the upper right corner of the Learn window)
 
-[IMAGE]
-
 ## Sharing a collection
 School leaders and educators will find great benefit in sending collections to your peers as suggested (or even required) PD training. 
 
