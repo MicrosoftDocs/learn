@@ -30,4 +30,4 @@ In the scenario, we provide the date feature to the model. The model predicts th
 
 ## Labels are only for learning
 
-It's important to remember that no matter how models are trained, they process only features. During supervised learning, the objective function is the only component that relies on access to labels. After training, we don't need labels to use our model.
+It's important to remember that no matter how models are trained, they only process features. During supervised learning, the objective function is the only component that relies on access to labels. After training, we don't need labels to use our model.

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.machinelearning.introduction-to-classical-machine-learning.supervised-learning
-title: What is supervised learning?
+title: Define supervised learning
 metadata: 
-  title: What is supervised learning?
+  title: Define supervised learning
   description: Conceptual unit that introduces what supervised learning in machine learning is.
   ms.date: 05/25/2021
   author: TomReidNZ
