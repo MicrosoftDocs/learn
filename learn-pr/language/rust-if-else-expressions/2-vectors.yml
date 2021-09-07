@@ -42,12 +42,12 @@ quiz:
 
   - content: "What happens if you try to access a vector element with an index greater than the vector size?"
     choices:
-    - content: "The program panics during runtime."
-      isCorrect: true
-      explanation: "Correct. The program panics with an *index out of bounds* error."
     - content: "A null value is returned."
       isCorrect: false
       explanation: "Incorrect. No value of any kind can be returned because a value doesn't exist at the index location."
     - content: "A compilation error occurs."
       isCorrect: false
       explanation: "Incorrect. The program compiles successfully, but it returns an error when the vector is accessed with an out-of-bounds index."
+    - content: "The program panics during runtime."
+      isCorrect: true
+      explanation: "Correct. The program panics with an *index out of bounds* error."
