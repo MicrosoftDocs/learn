@@ -56,9 +56,9 @@ Start by deploying a new VM from a Windows Server 2016 image.
 
 1. On the Azure portal resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Search services and marketplace** text box, enter **Automation**, and press <kbd>Enter</kbd> to view the search results.
+1. In the **Search services and marketplace** text box, enter *Automation*, and press <kbd>Enter</kbd> to view the search results.
 
-1. In the "Automation" search results, select the **Automation** Azure service published by Microsoft.
+1. In the *Automation* search results, select the **Automation** Azure service published by Microsoft.
 
 1. Select **Create**. The **Add Automation Account** pane appears.
 
@@ -106,11 +106,11 @@ Start by deploying a new VM from a Windows Server 2016 image.
 
 1. Select <kbd>Ctrl+S</kbd> to save the file. Then, select <kbd>Ctrl+Q</kbd> to close the editor.
 
-1. In the code below, replace `[your-automation-account-name]` for AutomationAccountName with the name you used when you created the automation account, and then run this PowerShell command to upload your DSC script into your Azure Automation account. 
+1. In the code below, replace `[your-automation-account-name]` for AutomationAccountName with the name you used when you created the automation account, and then run this PowerShell command to upload your DSC script into your Azure Automation account.
  
     ```powershell
     Import-AzAutomationDscConfiguration `
-        -Published`
+        -Published `
         -ResourceGroupName <rgn>[Sandbox resource group name]</rgn> `
         -SourcePath $HOME/MyDscConfiguration.ps1 `
         -Force `
@@ -183,7 +183,7 @@ After you upload your DSC configuration script, import any PowerShell modules th
 
 1. Select **OK**.
 
-1. Wait until the VM is connected. This process might take a few minutes. When your **myVM** has connected, in the breadcrumb in the top left, select your account automation name to close the **Registration** and **Virtual Machines** pane. The **State configuration (DSC)** pane for your automation account appears. 
+1. Wait until the VM is connected. This process might take a few minutes. When your **myVM** has connected, in the breadcrumb in the top left, select your account automation name to close the **Registration** and **Virtual Machines** pane. The **State configuration (DSC)** pane for your automation account appears.
 
 1. In the command bar, select **Refresh**.
 
