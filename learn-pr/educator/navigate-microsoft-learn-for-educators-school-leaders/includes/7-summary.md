@@ -2,6 +2,6 @@ In this module, you learned about basic functionalities and training offerings t
 
 ### Learn more
 
-1. Popular modules and learning paths we recommend for educators can be found on the [Educator role page.](/learn/roles/educator/)
-1. If you have other questions about your profile, data, or migration from MEC, [contact us here](https://aka.ms/MECSupport).
-1. We are still in the process of building the experience and want to hear from you. [Give us feedback here]().
+- Popular modules and learning paths we recommend for educators can be found on the [Educator role page.](/learn/roles/educator/)
+- If you have other questions about your profile, data, or migration from MEC, [contact us here](https://aka.ms/MECSupport).
+- We are still in the process of building the experience and want to hear from you. [Give us feedback here]().
