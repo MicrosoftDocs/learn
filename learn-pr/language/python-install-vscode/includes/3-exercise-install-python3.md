@@ -19,7 +19,7 @@ When this module was written, Python 3.9 was the latest version available, so in
 
 1. Select the most recent version of Python.
 
-    :::image type="content" source="media/../media/windows-install-python-search.png" alt-text="Screenshot of search results screen from Microsoft Store for Python showing Python 3.9 highlighted.":::
+    :::image type="content" source="../media/windows-install-python-search.png" alt-text="Screenshot of search results screen from Microsoft Store for Python showing Python 3.9 highlighted.":::
 
 1. On the Home tab, select *Install*.
 
