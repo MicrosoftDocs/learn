@@ -5,7 +5,7 @@ To complete this tutorial successfully, you should've some basic knowledge of Un
 >[!Important]
 >This tutorial series supports Unity 2020 LTS (currently 2020.3.x) if you're using Open XR and Unity 2019 LTS (currently 2019.4.x) if you're using Legacy WSA. This supersedes any Unity version requirements stated in the prerequisites linked above.
 
-## Create And prepare The Unity Project
+## Create and prepare the Unity project
 
 In this section, you'll create a new Unity project and get it ready for MRTK development.
 
@@ -67,7 +67,7 @@ In this section, you'll add scripts to the scene and create button events that d
 
     ![Interactable script](../media/h.png)
 
-## 2. Configure The Remaining Buttons
+## 2. Configure the remaining buttons
 
 * For each of the remaining buttons, complete the process outlined above to assign functions to the **OnClick ()** events:
 
