@@ -19,11 +19,11 @@ When this module was written, Python 3.9 was the latest version available, so in
 
 1. Select the most recent version of Python.
 
-    :::image type="content" source="media/image.png" alt-text="Screenshot of search results screen from Microsoft Store for Python showing Python 3.9 highlighted.](../media/windows-install-python-search.png)
+    :::image type="content" source="media/../media/windows-install-python-search.png" alt-text="Screenshot of search results screen from Microsoft Store for Python showing Python 3.9 highlighted.":::
 
 1. On the Home tab, select *Install*.
 
-    :::image type="content" source="media/image.png" alt-text="Screenshot of the Python Home tab in the Microsoft Store with Install highlighted.](../media/windows-install-python-splash.png)
+    :::image type="content" source="../media/windows-install-python-splash.png" alt-text="Screenshot of the Python Home tab in the Microsoft Store with Install highlighted.":::
 
     
 > [!NOTE]
@@ -31,7 +31,7 @@ When this module was written, Python 3.9 was the latest version available, so in
 
     Python installs in the background. The installation may take a couple of minutes depending on the speed of your system.
 
-    :::image type="content" source="media/image.png" alt-text="Screenshot of installation progress for Python from the Microsoft Store.](../media/windows-install-python-progress.png)
+    :::image type="content" source="../media/windows-install-python-progress.png" alt-text="Screenshot of installation progress for Python from the Microsoft Store.":::
 
 1. After Python installs, return to the command prompt. 
 
