@@ -4,7 +4,7 @@
 
     ![install package through package manager](../../media/asa-02-section-2-step-1-1.png)
 
-## Import The Tutorial Assets
+## Import the tutorial assets
 
 1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages,  follow this [tutorial](https://docs.microsoft.com/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
 
@@ -29,7 +29,7 @@
 
     ![Install AR Foundation package](../../media/asa-02-section-2-step-1-1.png)
 
-## Import the Tutorial Assets
+## Import the tutorial assets
 
 1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages, follow this [tutorial](https://docs.microsoft.com/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
 
@@ -54,7 +54,7 @@
 
     ![Install AR Foundation package - Legacy WSA](../../media/asa-02-section-2-step-1-1.png)
 
-## Import the Tutorial Assets
+## Import the tutorial assets
 
 1. Add AzurespatialAnchors SDK V2.10 to your project. To add the packages, follow this [tutorial](https://docs.microsoft.com/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
 

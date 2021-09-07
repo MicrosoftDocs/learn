@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 title: Azure Spatial Anchors Tutorials
-summary: This course explores the use of azure spatial anchors by integrating to a HoloLens2 application. 
+summary: This course explores the use of azure spatial anchors by integrating to a HoloLens 2 application. 
 abstract: |
   By the end of this module you will be able to:
   - You would have  learned the fundamentals of Azure Spatial Anchors
