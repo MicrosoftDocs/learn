@@ -42,11 +42,32 @@ fn car_quality (miles: u32) -> (String, u32) {
 // Build a new "Car" using the values of four input arguments
 // - color (String)
 // - motor (Transmission enum)
-// - roof (boolean, true if the car has closed roof)
+// - roof (boolean, true if the car has a hard top roof)
 // - miles (u32)
 // Call the car_quality(miles) function to get the car age
 // Return an instance of a "Car" struct with the arrow `->` syntax
 fn car_factory(color: String, motor: Transmission, roof: bool, miles: u32) -> Car {
+
+    // Use an if/else conditional expression to describe the car to build
+    // - Call the car_quality(miles) function to help identify if the order is for a new or used car
+    // TO DO:
+    // - As part of the call, set the "quality" variable to the first element of the returned value
+    // - Modify the first "if" condition to check if the order is for a used car
+    // - Modify both "if" conditions for the "roof" to check if the order is for a hard top
+    let quality = car_quality(miles);
+    if <the ordered car is Used> {
+        if <the ordered roof is a hard top> {
+            println!("Preparing a used car: {:?}, {}, Hard top", motor, color);
+        } else {
+            println!("Preparing a used car: {:?}, {}, Convertible", motor, color);
+        }
+    } else <the ordered car is New> {
+        if <the ordered roof is a hard top> {
+            println!("Building a new car: {:?}, {}, Hard top", motor, color);
+        } else {
+            println!("Building a new car: {:?}, {}, Convertible", motor, color);
+        }
+    }
 
     // Create a new "Car" instance as requested
     // - Bind first three fields to values of input arguments
@@ -70,17 +91,17 @@ fn main() {
     // TO DO: Set the values: 0 = Blue, 1 = Green, 2 = Red, 3 = Silver
     let colors;
 
-    // Initialize variables
+    // Initialize counter variable
     let mut order = 1;
     
     // Declare the car type and initial values
     // TO DO: Create "car" as a "Car" struct
     // TO DO: Create "engine" as a "Transmission" enum
     // TO DO: Initialize "roof" to the value when the car has a hard top
-    let car = Car;
+    let mut car: Car;
     let mut miles = 1000; // Start used cars with 1,000 miles
-    let mut roof;  // convertible = false | hard top = true
-    let engine = Transmission;
+    let mut engine: Transmission;
+    let roof = true;      // convertible = false | hard top = true
     
     //////////////////////////////////////////////////
 
@@ -91,7 +112,7 @@ fn main() {
     // Car order #1: Used
     engine = Transmission::Manual;
     car = car_factory(colors().to_string(), engine, roof, miles);
-    println!("{}: {}, Closed roof, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
+    println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
     
     // Car order #2: Used
     order = order + 1;
@@ -99,7 +120,7 @@ fn main() {
     // TO DO: Adjust the Transmission value syntax
     engine = Transmission.SemiAuto;
     car = car_factory(colors().to_string(), engine, roof, miles);
-    println!("{}: {}, Closed roof, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
+    println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
  
     // Car order #3: New
     order = order + 1;
@@ -107,5 +128,5 @@ fn main() {
     miles = ??;
     engine = Transmission::Automatic;
     car = car_factory(colors().to_string(), engine, roof, miles);
-    println!("{}: {}, Closed roof, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
+    println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
 }

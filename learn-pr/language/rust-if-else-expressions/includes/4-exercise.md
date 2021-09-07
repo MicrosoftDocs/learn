@@ -1,4 +1,4 @@
-In this exercise, you'll use collections and compound data types to expand on a car factory program.
+In this exercise, you'll use compound data types and if/else test conditions to expand on a car factory program.
 
 We'll use a tuple to track car quality with two values that are related, but have different data types. We'll create a function named `car_quality` that returns this tuple to the calling this function. Our `main` function will call the `car_factory` function to create each car order. Along the way, we'll use a few conditional expressions to test results and make assignments. 
 
@@ -93,22 +93,45 @@ Next, we'll add code for a new function named `car_quality`. This function will 
 
 The next step is to update the `car_factory` function. We need to support the tuple returned from the `car_quality` function. We updated the definition of the `Car` struct, so we need to adjust the function body to correctly process the data.
 
+The function contains an if/else conditional expression to describe the car to build and display the results. The expression checks if the order is for a new or used car, and also determines the roof type.
+
 1. Add the following code block to your existing code. You can add the new code at the top of the file or at the bottom.
 
     ```rust
     // Build a new "Car" using the values of four input arguments
     // - color (String)
     // - motor (Transmission enum)
-    // - roof (boolean, true if the car has closed roof)
+    // - roof (boolean, true if the car has a hard top roof)
     // - miles (u32)
     // Call the car_quality(miles) function to get the car age
     // Return an instance of a "Car" struct with the arrow `->` syntax
     fn car_factory(color: String, motor: Transmission, roof: bool, miles: u32) -> Car {
     
+        // Use an if/else conditional expression to describe the car to build
+        // - Call the car_quality(miles) function to help identify if the order is for a new or used car
+        // TO DO:
+        // - As part of the call, set the "quality" variable to the first element of the returned value
+        // - Modify the first "if" condition to check if the order is for a used car
+        // - Modify both "if" conditions for the "roof" to check if the order is for a hard top
+        let quality = car_quality(miles);
+        if <the ordered car is Used> {
+            if <the ordered roof is a hard top> {
+                println!("Preparing a used car: {:?}, {}, Hard top", motor, color);
+            } else {
+                println!("Preparing a used car: {:?}, {}, Convertible", motor, color);
+            }
+        } else <the ordered car is New> {
+            if <the ordered roof is a hard top> {
+                println!("Building a new car: {:?}, {}, Hard top", motor, color);
+            } else {
+                println!("Building a new car: {:?}, {}, Convertible", motor, color);
+            }
+        }
+
         // Create a new "Car" instance as requested
         // - Bind first three fields to values of input arguments
         // TO DO: Replace the "mileage" field from the previous exercise with an "age" field
-        // TO DO" The "age" field calls the "car_quality" function with the "miles" input argument 
+        // TO DO: The "age" field calls the "car_quality" function with the "miles" input argument 
         let car = Car {
             color: color,
             motor: motor,
@@ -125,7 +148,19 @@ The next step is to update the `car_factory` function. We need to support the tu
 
     1. Remove the `mileage` field.
     1. Add a field named `age`. This field should call the `car_quality` function with the `miles` input argument
- 
+
+1. Adjust the definition for the `quality` variable. Set the value to the first element of the value returned from the call to the `car_quality(miles)` function.
+
+1. Modify the first `if` condition to check if the order is for a used car.
+
+    > [!Tip]
+    > You can check the value of the `quality` variable and use the *is equal to* operator `==`.
+
+1. Modify both `if` conditions that examine the `roof` variable. Check if the order is for a hard top.
+
+    > [!Tip]
+    > Test conditions yield a boolean result.
+    
 1. Build the program. Make sure the code compiles before you continue to the next section.
 
 
@@ -149,16 +184,16 @@ Now we're ready to start working on our `main` function. The first step is to de
         let colors;
     
         // Initialize counter variable
-        let mut order = 0;
+        let mut order = 1;
         
         // Declare the car type and initial values
         // TO DO: Create "car" as a "Car" struct
         // TO DO: Create "engine" as a "Transmission" enum
         // TO DO: Initialize "roof" to the value when the car has a hard top
-        let car = Car;
+        let mut car: Car;
         let mut miles = 1000; // Start used cars with 1,000 miles
-        let mut roof;  // convertible = false | hard top = true
-        let engine = Transmission;
+        let mut engine: Transmission;
+        let roof = true;      // convertible = false | hard top = true
         
     }
     ```
@@ -189,7 +224,7 @@ In our `main` function, we'll call the `car_factory` function to fulfill the car
         // Car order #1: Used
         engine = Transmission::Manual;
         car = car_factory(colors().to_string(), engine, roof, miles);
-        println!("{}: {}, Closed roof, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
+        println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
     
         // Car order #2: Used
         order = order + 1;
@@ -197,7 +232,7 @@ In our `main` function, we'll call the `car_factory` function to fulfill the car
         // TO DO: Adjust the Transmission value syntax
         engine = Transmission.SemiAuto;
         car = car_factory(colors().to_string(), engine, roof, miles);
-        println!("{}: {}, Closed roof, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
+        println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
  
         // Car order #3: New
         order = order + 1;
@@ -205,7 +240,7 @@ In our `main` function, we'll call the `car_factory` function to fulfill the car
         miles = ??;
         engine = Transmission::Automatic;
         car = car_factory(colors().to_string(), engine, roof, miles);
-        println!("{}: {}, Closed roof, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
+        println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
     ```
 
 1. Fix the indexing into the `colors` array by correcting the `colors()` syntax. We need to pass a specific color like "Blue" to the `car_factory` function. The array has four elements, so we'll try to use different colors as we fulfill the orders. You can use the `order` variable to help with the indexing. We want to vary the color that we use for the orders. 
@@ -223,12 +258,17 @@ In our `main` function, we'll call the `car_factory` function to fulfill the car
 When the program is complete, you should see output similar to this example:
     
 ```output
-1: Used, Closed roof, Manual, Blue, 1000 miles
-2: Used, Closed roof, SemiAuto, Green, 2000 miles
-3: New, Closed roof, Automatic, Red, 0 miles
+Preparing a used car: Manual, Blue, Hard top
+1: Used, Hard top Manual, Blue, 1000 miles
+
+Preparing a used car: SemiAuto, Green, Hard top
+2: Used, Hard top, SemiAuto, Green, 2000 miles
+
+Building a new car: Automatic, Red, Hard top
+3: New, Hard top, Automatic, Red, 0 miles
 ```
 
-Right now, all our orders are for cars with a closed roof. In the next exercise, we'll get more creative and use some complex conditions and hash maps to add variety to our orders and output.
+Right now, all our orders are for cars with a hard top roof. In another module, <!-- [another module][Rust-loops] --> we use more complex conditions to add variety to the car orders and display output.
 
 
 ## Solution
@@ -237,6 +277,8 @@ You can compare your program output to the solution for this exercise in this [R
 
 
 <!-- Links -->
-[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=a1c1760fdbcb52c465379f0b0126b253?azure-portal=true
+<!-- [Rust-loops]: /learn/modules/rust-loop-expressions/index?azure-portal=true -->
+
+[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=acb5140cab86869af9fbed3cb35067d2?azure-portal=true
 
 [RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d348ed467e20aa2a39e5f04da0e58c3d?azure-portal=true
