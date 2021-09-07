@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.spatial-audio-tutorials-mrtk.4-spatializing-button-interaction-sounds
-title: Spatializing button interaction sounds
+title: Spatialize button interaction sounds
 metadata:
-  title: Spatializing button interaction sounds
-  description: Introduction to Spatializing button interaction sounds
+  title: Spatialize button interaction sounds
+  description: Introduction to Spatialize button interaction sounds
   ms.date: 06/23/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"

@@ -2,14 +2,14 @@
 uid: learn.azure.spatial-audio-tutorials-mrtk
 metadata:
   title: Spatial Audio Tutorials
-  description: This course explores the use of spatial audio by integrating to a hololens2 application. You can also deploy your project to a HoloLens.
+  description: This course explores the use of spatial audio by integrating to a HoloLens 2 application. You can also deploy your project to a HoloLens 2.
   ms.date: 06/23/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 title: Spatial Audio Tutorials
-summary: Learn about spatial audio to enhance your learning experience. Explores the use of spatial audio by integrating to a hololens2 application.
+summary: Learn about spatial audio to enhance your learning experience. Explores the use of spatial audio by integrating it to a Hololens 2 application.
 abstract: |
   By the end of this module you will be able to:
   - To Import and enable the Microsoft Spatializer plugin and also to enable the spatial audio on your workstation. 
