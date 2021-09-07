@@ -1,10 +1,10 @@
-When you start out as an intern, there are three major areas you need to work on at the same time, your professional reputation, your mindset, and your networking skills. 
+When you start out as an intern, there are three major areas you need to work on at the same time: your professional reputation, your mindset, and your networking skills. 
 
-Scenario: Imagine the following situation: you've been working hard on delivering on a project and no one knows about the project or have heard of you. Does that matter? If your closest manager is the only one who decides on whether to hire you full time or not, it might not be a problem. More often than not, there are many people involved in the hiring decision, and they need to know about you and your work. The solution lies in networking, while working hard to deliver on your commitments.
+Scenario: Imagine that you've been working hard to deliver on a project, but no one knows about you or your project. Does that matter? It might not, if your manager is the only one who'll decide whether to hire you for a full-time role. But more often than not, many other people are involved in a hiring decision. Unless they're familiar with you and your work, they would have little reason to bring you on board. So, how do you make yourself and your work known to others? Network as much as possible, while at the same time you work hard to deliver on your job-related commitments.
 
 > Being able to network is an important skill not only as an intern, but as you continue to grow into a full-time position.
 
-When you are a new employee or intern, you can feel like a stranger in a strange land. There are concrete steps you can take, however, to connect to people in your new company.
+When you're a new employee or intern, you can feel like a stranger in a strange land. There are concrete steps you can take, however, to connect to people and get known throughout your new company.
 
 ## Your first weeks
 
