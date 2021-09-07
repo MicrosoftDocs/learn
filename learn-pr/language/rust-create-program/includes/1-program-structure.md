@@ -1,4 +1,11 @@
-Let's examine the following code and learn how a simple Rust program is structured:
+In this unit, we review how a simple Rust program is structured.
+
+
+## Functions in Rust
+
+A function is a block of code that does a specific task. We separate the code in our program into blocks based on task. This separation makes the code easier to understand and maintain. After we define a function for a task, we can call the function when we need to do that task. 
+
+Every Rust program must have **one** function named `main`. The code in the `main` function is always the first code run in a Rust program. We can call other functions from within the `main` function, or from within other functions. 
 
 ```rust
 fn main() {
@@ -6,32 +13,7 @@ fn main() {
 }
 ```
 
-
-## The main function
-
-Our first Rust program defines a *function* named `main`. A function is a block of code that does a specific task. We separate the code in our program into blocks based on task. This separation makes the code easier to understand and maintain. After we define a function for a task, we can call the function when we need to do that task. 
-
-Every Rust program must have **one** function named `main`. The code in the `main` function is always the first code run in a Rust program. We can call other functions from within the `main` function, or from within other functions. 
-
-
-## Functions and arguments
-
-To declare a function in Rust, we use the `fn` keyword. After the function name, we tell the compiler how many parameters or *arguments* the function expects as input. The set of arguments is listed inside parentheses `()`. When the parentheses are empty, the function doesn't have any input arguments. Our `main` function is an example of a function that doesn't have any input arguments.
-
-```rust
-fn main() // Our main function has no input arguments
-```
-
-
-## The function body
-
-The code that does the task of a function is defined inside curly brackets `{}`. We call this code the *function body*. It's a best practice to format the code so the opening curly bracket for the function body appears right after the argument list in parentheses. 
-
-```rust
-fn main() {
-    // Code for the function body
-}
-```
+To declare a function in Rust, we use the `fn` keyword. After the function name, we tell the compiler how many parameters or *arguments* the function expects as input. The arguments are listed inside the parentheses `()`. The *function body* is the code that does the task of the function and is defined inside curly brackets `{}`. It's a best practice to format the code so the opening curly bracket for the function body appears right after the argument list in parentheses. 
 
 
 ## Code indentation

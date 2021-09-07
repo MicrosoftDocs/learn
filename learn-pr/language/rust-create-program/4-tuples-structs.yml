@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Define data collections by using tuples and structs
-durationInMinutes: 4
+durationInMinutes: 6
 content: |
   [!include[](includes/4-tuples-structs.md)]
 

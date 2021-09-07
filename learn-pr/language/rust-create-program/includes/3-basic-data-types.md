@@ -1,6 +1,4 @@
-Rust is a statically typed language. The compiler must know the exact data type for all variables in your code for your program to compile and run.
-
-The compiler can usually infer the data type for a variable based on the bound value. You don't always need to explicitly tell the type in your code. When many types are possible, you must inform the compiler the specific type by using *type annotations*.
+Rust is a statically typed language. The compiler must know the exact data type for all variables in your code for your program to compile and run. The compiler can usually infer the data type for a variable based on the bound value. You don't always need to explicitly tell the type in your code. When many types are possible, you must inform the compiler the specific type by using *type annotations*.
 
 In the following example, we tell the compiler to create the `number` variable as a 32-bit integer. We specify the data type `u32` after the variable name. Notice the use of the colon `:` after the variable name.
 

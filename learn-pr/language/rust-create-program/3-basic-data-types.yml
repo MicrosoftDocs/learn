@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.rust-create-program.3-basic-data-types
 metadata:
-  title: Explore data types for numbers, text, and true/fase values
+  title: Explore data types for numbers, text, and true/false values
   description: Review primary data types in Rust. Explore how integers, floating point numbers characters, and text strings are defined. Discover how true or false boolean values are used.
   ms.date: 08/19/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Explore data types for numbers, text, and true/fase values
-durationInMinutes: 5
+title: Explore data types for numbers, text, and true/false values
+durationInMinutes: 7
 content: |
   [!include[](includes/3-basic-data-types.md)]
 
