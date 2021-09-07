@@ -1,6 +1,4 @@
-Rust is a statically typed language. The compiler must know the exact data type for all variables in your code for your program to compile and run.
-
-The compiler can usually infer the data type for a variable based on the bound value. You don't always need to explicitly tell the type in your code. When many types are possible, you must inform the compiler the specific type by using *type annotations*.
+Rust is a statically typed language. The compiler must know the exact data type for all variables in your code for your program to compile and run. The compiler can usually infer the data type for a variable based on the bound value. You don't always need to explicitly tell the type in your code. When many types are possible, you must inform the compiler the specific type by using *type annotations*.
 
 In the following example, we tell the compiler to create the `number` variable as a 32-bit integer. We specify the data type `u32` after the variable name. Notice the use of the colon `:` after the variable name.
 
@@ -43,8 +41,6 @@ Rust comes with some built-in primitive data types to express numbers, text, and
 - Characters
 
 Rust also offers more complex data types to work with data series, such as string and tuple values. 
-
-We'll take a closer look at these types in the following sections.
 
 
 ## Numbers: Integers and floating point values
@@ -127,7 +123,7 @@ For these scenarios, Rust has a second string type named `String`. This type is 
 > [!NOTE]
 > If you're familiar with a garbage-collected language, you might be wondering why Rust has two string types.<sup>**1**</sup> Strings are extremely complex data types. Most languages use their garbage collectors to gloss over this complexity. Rust as a system's language exposes some of the inherent complexity of strings. With the added complexity comes a very fine-grained amount of control over how memory is used in your program.<br>
 > 
-> <sup>**1**</sup> _Actually, Rust has more than two string types. In this module, we cover only the `String` and `&str` types. You can learn more about the string types offered in the [Rust documentation][Rust-string]._
+> <sup>**1**</sup> _Actually, Rust has more than two string types. In this module, we cover only the `String` and `&str` types. You can learn more about the string types offered in the [Rust documentation][Rust-string].
 
 We won't get a full idea of the difference between `String` and `&str` until we learn about Rust's ownership and borrowing system. Until then, you can think of `String` type data as text data that can change as your program runs. The `&str` references are immutable views into the text data that don't change as your program runs.
 
@@ -169,52 +165,6 @@ Here's the output for our example:
 What happens if we don't specify the ampersand `&` before `str` in this example? To find out, try running this example in the [Rust Playground][RustPlay-text].
 
 
-## Tuples
-
-A tuple is a grouping of values of different types collected into one compound value. The individual values in a tuple are called *elements*. The values are specified as a comma-separated list enclosed in parentheses `(<value>, <value>, ...)`.
-
-A tuple has a fixed length, which is equal to its number of elements. After a tuple is declared, it can't grow or shrink in size. Elements can't be added or removed. The data type of a tuple is defined by the sequence of the data types of the elements.
-
-Here's an example of a tuple with three elements:
-
-```rust
-// Tuple of length 3
-let tuple_e = ('E', 5i32, true);
-```
-
-The following table shows the value, data type, and index for each element in the tuple:
-
-Element | Value | Data type
----|---|---
-0 | E | `char`
-1 | 5 | `i32`
-2 | true | `bool`
-
-The type signature for this tuple is defined by the sequence of the types for the three elements: `(char, i32, bool)`.
-
-The elements in a tuple can be accessed by index position starting from zero. This process is referred to as *tuple indexing*. To access an element in a tuple, we use the syntax `<tuple>.<index>`.
-
-The following example shows how to access the elements in the tuple by using indexing:
-
-```rust
-// Declare a tuple of three elements
-let tuple_e = ('E', 5i32, true);
-
-// Use tuple indexing and show the values of the elements in the tuple
-println!("Is '{}' the {}th letter of the alphabet? {}", tuple_e.0, tuple_e.1, tuple_e.2);
-```
-
-The example shows the following output:
-
-```output
-Is 'E' the 5th letter of the alphabet? true
-```
-
-You can explore this example in the [Rust Playground][RustPlay-tuple].
-
-Tuples are useful when you want to combine different types into a single value. Functions can use tuples to return multiple values because tuples can hold any number of values. 
-
-
 ### Check your knowledge
 
 Answer the following questions to see what you've learned. Choose one answer for each question, and then select **Check your answers**.
@@ -225,4 +175,3 @@ Answer the following questions to see what you've learned. Choose one answer for
 [RustPlay-compile]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d1635823974d9456858611266a32ffa6?azure-portal=true
 [RustPlay-numbers]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d683842bd8cedd949ed3c56b27f6f0eb?azure-portal=true
 [RustPlay-text]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=dafd8dfd9159b2c6db51fdf02d5cb096?azure-portal=true
-[RustPlay-tuple]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=f0c1c833543c9f58af5e49efb77a9fdd?azure-portal=true

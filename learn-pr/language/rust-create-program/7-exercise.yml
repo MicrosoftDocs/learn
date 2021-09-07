@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.rust-create-program.6-exercise
+uid: learn.language.rust-create-program.7-exercise
 metadata:
-  title: 'Exercise: Write a function to build a car with struct and enum data'
+  title: 'Exercise: Write a function to build a car'
   description: Fix problems in source code that uses functions, structs, and enums.
   ms.date: 08/19/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'Exercise: Write a function to build a car with struct and enum data'
+title: 'Exercise: Write a function to build a car'
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-exercise.md)]
+  [!include[](includes/7-exercise.md)]

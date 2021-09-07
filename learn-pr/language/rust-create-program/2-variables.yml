@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.rust-create-program.2-variables
 metadata:
-  title: Create and use variables
+  title: Create and use variables in Rust
   description: Learn about how variables work in Rust, how to declare them, and how to use their properties.
   ms.date: 08/19/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create and use variables
+title: Create and use variables in Rust
 durationInMinutes: 4
 content: |
   [!include[](includes/2-variables.md)]
