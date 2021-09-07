@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.visual-studio.visual-studio-test
+metadata:
+  title: Test your code with Visual Studio
+  description: Want to learn more about testing with .NET and Visual Studio, but don't know where to start? Start here!
+  ms.date: 07/19/2021
+  author: softchris
+  ms.author: kehavens
+  ms.topic: interactive-tutorial
+  ms.prod: learning-visual-studio
+title: Test your code with Visual Studio
+prerequisites: none
+summary: |
+  Want to learn more about testing with .NET and Visual Studio, but don't know where to start? Start here! In this learning path you'll:
+  - Explore testing concepts.
+  - Author tests for your product code.
+  - Use the test explorer in Visual Studio to manage many tests.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- student
+products:
+- azure
+modules:
+- learn.visual-studio-test-concepts
+- learn.visual-studio.visual-studio-test-tools
+trophy:
+  uid: learn.visual-studio.visual-studio-test.trophy
