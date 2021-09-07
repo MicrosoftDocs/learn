@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: 'Exercise: Work with compound types and if/else conditions'
-durationInMinutes: 10
+durationInMinutes: 12
 content: |
   [!include[](includes/4-exercise.md)]
