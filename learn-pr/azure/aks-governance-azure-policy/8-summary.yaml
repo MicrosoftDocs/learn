@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Summary Check of Azure policy concepts
   ms.date: 07/07/2021
-  author: NillsF, mosabami
-  ms.author: nilfran, aayodeji
+  author: NillsF
+  ms.author: nilfran
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
