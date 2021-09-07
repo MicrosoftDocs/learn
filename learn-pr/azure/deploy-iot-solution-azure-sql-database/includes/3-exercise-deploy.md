@@ -172,6 +172,9 @@ You have now deployed and configured the appropriate schema for the scenario.
 
 1. Select **EventHubConnectionAppSetting** and update it with your *Event Hub-compatible endpoint* for IoT Hub. Select **OK**.
 
+> [!TIP]
+> To edit a configuration item, you can either click on the name of the configuration or scroll to the right and select the pencil icon.
+
 1. Select **SQLDBConnectionString** and update it with your Azure SQL Database connection string. Select **OK**.
 
 1. Select **AzureWebJobsStorage** and update it with your Azure Storage Account connection string.
@@ -196,7 +199,7 @@ You have now deployed and configured the appropriate schema for the scenario.
 
 1. Select **Secrets** > **New repository secret** and enter the following items:
     1. *Name*: **AZURE_FUNCTIONAPP_PUBLISH_PROFILE**
-    1. *Value*: **Connection string from prior step**
+    1. *Value*: **Azure Functions publish profile which you downloaded at the beginning of this section**
 
 1. Select **Save**.
 
