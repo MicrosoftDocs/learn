@@ -105,11 +105,11 @@ As training draws closer to its end, several team members have approached you as
 
 As the developers’ team lead, you must decide how to organize your team’s training. You need to choose between three approaches to training:
 
-1. Independent study followed by evaluation by peers and experts.
+- **Approach #1**: Independent study followed by evaluation by peers and experts.
 
-1. A coding class with a test at the end.
+- **Approach #2**: A coding class with a test at the end.
 
-1. A coding workshop conducted by peers and experts.
+- **Approach #3**: A coding workshop conducted by peers and experts.
 
 You want to maximize the learning potential of your team and minimize stress levels. You met with your team members and discovered their goal orientations. The following table lists the results of those conversations:
 
