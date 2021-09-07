@@ -9,6 +9,6 @@ metadata:
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/9-exercise-azure-spatial-anchors-for-android-and-ios.md)]
