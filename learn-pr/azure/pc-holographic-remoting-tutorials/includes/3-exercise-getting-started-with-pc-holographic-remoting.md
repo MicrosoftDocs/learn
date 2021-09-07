@@ -53,7 +53,7 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
 
 In this section, you'll add scripts to the scene and create button events that demonstrate the fundamentals of model switching and clipping functionality.
 
-## 1. Configure the Interactable (Script) component
+### 1. Configure the Interactable (Script) component
 
 1. In the Hierarchy window, expand the **ButtonParent** object and select the next button. In the Inspector window, locate the **Interactable (Script)** component and click on plus sign icon ("+") under **OnClick ()** event.
 
@@ -67,9 +67,9 @@ In this section, you'll add scripts to the scene and create button events that d
 
     ![Interactable script](../media/h.png)
 
-## 2. Configure the remaining buttons
+### 2. Configure the remaining buttons
 
-* For each of the remaining buttons, complete the process outlined above to assign functions to the **OnClick ()** events:
+1. For each of the remaining buttons, complete the process outlined above to assign functions to the **OnClick ()** events:
 
     * For the PreviousButton object, assign the **ViewButtonControl** > **PreviousModel ()** function.
     * For ClippingButton, select the **ToggleButton** > **ToggleClipping ()** function.
@@ -115,7 +115,7 @@ In the Hierarchy window, expand the **ClippingObjects** object to expose the thr
 
 In this section, you'll explore how to enable eye tracking in your project. For example, you'll implement the functionality to highlight tooltips attached to MarsCuriosityRover's parts while you're looking at them and hide them while you're looking away from them.
 
-## 1. Identify target objects and associated tooltips
+### 1. Identify target objects and associated tooltips
 
 In the Hierarchy window, select the ModelParent object. Next, expand the **MarsCuriosity** -> **Rover** to find five main parts of the MarsCuriosityRover: **POI-Camera, POI-Wheels, POI-Antena, POI-Spectrometer, POI-RUHF Antenna**.
 
@@ -123,7 +123,7 @@ In the Hierarchy window, select the ModelParent object. Next, expand the **MarsC
 
     ![Target Objects](../media/m.png)
 
-## 2. Implement While Looking At Target() & On Look Away() events
+### 2. Implement While Looking At Target() & On Look Away() events
 
 In the Hierarchy window, select the **POI-Camera** object. Then, in the Inspector window, locate the Eye Tracking Target (Script) component and configure the **While Looking At Target() & On Look Away()** events as follows:
 

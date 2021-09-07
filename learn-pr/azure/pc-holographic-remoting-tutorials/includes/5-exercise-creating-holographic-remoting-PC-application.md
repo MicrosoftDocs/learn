@@ -19,13 +19,13 @@ In the Project Settings window, expand the **Publishing Settings**, then scroll 
 
 To connect your PC application to your HoloLens 2, do the following:
 
-## 1. Install the Remoting Player application on HoloLens 2 device
+### 1. Install the Remoting Player application on HoloLens 2 device
 
 * On your HoloLens 2, visit the Store app and search for **"Remoting Player."**
 * Select the **Remoting Player** app.
 * Tap **Install** to download and install the app.
 
-## 2. Connect the Holographic Remoting PC app to the Remoting Player
+### 2. Connect the Holographic Remoting PC app to the Remoting Player
 
 * Start the **Remoting Player** on your HoloLens.
 * Take note of the HoloLens **IP address**. It will be displayed as a hologram by the **Remoting Player** as soon as it launches.

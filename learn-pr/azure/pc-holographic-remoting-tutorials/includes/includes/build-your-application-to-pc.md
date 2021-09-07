@@ -1,6 +1,6 @@
 ## [Unity 2020 + OpenXR](#tab/openxr)
 
-## 1. Switch build platform
+### 1. Switch build platform
 
 In the menu bar, select **File** > **Build Settings**.
 
@@ -8,7 +8,7 @@ In the menu bar, select **File** > **Build Settings**.
 
     ![Switching Build Platform](../../media/tutorial-2-section-2-step-4-1.png)
 
-## 2. Set the project settings
+### 2. Set the project settings
 
 1. In the menu bar, select **Edit > Project Settings > XR Plug-in Management**. Ensure that you're in the Windows Standalone tab and then select **OpenXR** and **Windows Mixed Reality feature**.
 
@@ -28,7 +28,7 @@ In the menu bar, select **File** > **Build Settings**.
 
     ![Holographic App Remoting](../../media/a-7.png)
 
-## 3. Build the Unity project
+### 3. Build the Unity project
 
 In the menu bar, select **File** > **Build Settings**.
 
@@ -51,13 +51,13 @@ In the menu bar, select **File** > **Build Settings**.
 
 ## [Legacy WSA](#tab/wsa)
 
-## 1. Set the player settings
+### 1. Set the player settings
 
 1. In the **XR Settings** section, select  **WSA Holographic Remoting Supported** to enable Holographic Remoting.
 
     ![XR Settings](../../media/a-12.png)
 
-## 2. Build the Unity Project
+### 2. Build the Unity Project
 
 1. In the menu bar, select **File** > **Build Settings**, In the Build Settings window, click the **Add Open Scenes** button to add your current scene to the Scenes. In the Build list, then click the **Build** button to open the Build Universal Windows Platform window:
 
@@ -71,7 +71,7 @@ In the menu bar, select **File** > **Build Settings**.
 
     ![Wait for build process](../../media/a-15.png)
 
-## 3. Build and deploy the application
+### 3. Build and deploy the application
 
 1. After the build process has finished, Unity will prompt Windows File Explorer to open where you stored the build. Navigate to the folder and then double-click the .sln file to open it in Visual Studio:
 
