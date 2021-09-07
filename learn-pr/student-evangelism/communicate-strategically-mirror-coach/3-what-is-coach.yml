@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.communicate-strategically-mirror-coach.what-is-a-coach
+uid: learn.student-evangelism.communicate-strategically-mirror-coach.what-is-coach
 title: What is a coach? 
 metadata:
   title: What is a coach? 
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-what-is-a-coach.md)]
+  [!include[](includes/3-what-is-coach.md)]
