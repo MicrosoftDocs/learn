@@ -1,41 +1,51 @@
-The first step to networking, is to attend functions and events within your sphere of interest. In this exercise, you'll find an event to attend and create a plan to make the most out of the networking you do.
+The first step in networking is to attend functions and events within your sphere of interest. This exercise provides several ideas for how to sign up for and attend tech events, and how to approach meeting and interacting with people who might be influential in helping you land the internship or job you're seeking.
 
-## Sign up for a user group
+## Step 1: Sign up for a user group
 
-The first step to networking is to find out where to meet people. Within technology, there are user groups, groups that have members that all share a common interest about a technology for example. Next, you will become a member of such a group. Being a member means you will be notified about upcoming events that you can sign up for.
+Start by discovering where to meet people. Within the broad area of technology, you'll find numerous user groups, organizations whose members share a common interest in specific technologies. For example, you might want to join a group on JavaScript or Vue.js. 
 
-- Go to `http://www.meetup.com` and find meetup groups in your area and join at least a couple of groups that matches your interest:
+To get started, do the following:
 
-   For example, join a group on JavaScript and another on Vue.js
+1. Find user groups in your area by going to, for example, [Meetup](http://www.meetup.com).
+1. Join as a member of one or more groups. 
+ 
+   By becoming a group member, you'll be notified about upcoming events that you can sign up for and participate in.
 
-## Choose an event to attend
+## Step 2: Choose an event to attend
 
-User groups usually have meetings with a monthly cadence. By going to an event, you will be able to meet peers with a similar interest. Your goal for attending such an event should be to establish a personal connection. Sometimes the people you meet will be future colleagues or recruiters. If a hiring manager has met you in person at an event, they might ask you to submit a resume there and then or keep you updated on future opportunities.
+Most user groups meet with a monthly cadence. By attending events, you'll begin to meet and get to know both peers with similar interests and recruiters and other company representatives. 
 
-1. Sign up for an event. An event usually consists of one or more speakers and at least a break between session. Now is your chance to meet people of interest.
+Your goal in participating in such events should be to establish personal connections. Practically everyone you meet will have something valuable to offer, and you'll always learn something new. 
 
-   > Join for example, a tech event on the 15th
+Someone you meet might be a recruiter, a hiring manager, or a future colleague. The person might even ask you to submit your resume or take your contact information and offer to keep you updated on future opportunities.
 
-1. Set a goal for meeting and conversing with many people at the event.
+To get started, complete this exercise:
 
-   For example, decide to speak to at least three different people at the event.
+1. Sign up for an event. An example might be a JavaScript event on the 15th of the month.
+   
+   An event usually consists of one or more speakers or activities, and you'll usually get one or more breaks during that time. Those breaks are your chance to meet people of interest.
+
+1. Set a goal to meet and converse with at least three different people at the event.
 
    > [!TIP]
-   > It's usually a good idea to talk to the organizer at the event as they tend to know a lot of folks. Additionally, the organizer is more often than not a company looking to hiring people, so bring your resume.
+   > At the event, it's a good idea to seek out and introduce yourself to the event organizer. That person is likely to be influential and can in turn introduce you to other group members. The organizer might even represent a company that's looking to hire people, so be sure to bring several copies of your resume.
 
-## Network at the event
+### What to say to the people you meet
 
-So you are going to an event, you have a plan to speak to many people. What do you say though? It's not easy to just go up and talk to someone but here's a list of questions you can use:
+So now you're signed up for an event, armed with a plan to speak to many people. But what do you say? If you're like most people, it can be a challenge to simply go up and talk to someone you've never met. 
 
-- What did you think of tonights speaking session/speaker
-- How long have you used this tech for?
-- Where do you work?
-- Any part of the talk you found interesting?
-- Be transparent, if you are looking for a job, say so, or maybe you are looking for a consultancy contract or an internship?
+Here's a simple starter list of questions you can use:
 
-Find a time either before the talk or in the break to ask a subset of the questions above.
+- What did you think of tonight's session or speaker?
+- What did you find interesting/exciting/surprising/useful about tonight's talk?
+- How long have you used/been interested in this technology?
+- Where do you work/what's your role there/for how long/what's interesting about it?
 
-   Here's an example interaction:
+It's a good idea to write down in advance any questions you think you might have for the people you'll be meeting. Remember, the important thing about networking is to develop new connections&mdash;and to practice your new networking skills!
+
+Be transparent. At some point in your conversations, whether you're looking for a job, a consultancy contract, or an internship, say so. Your openness could open up some exciting opportunities. 
+
+Here's an example interaction:
 
    > You: What did you think of tonight's talk?
    > 
