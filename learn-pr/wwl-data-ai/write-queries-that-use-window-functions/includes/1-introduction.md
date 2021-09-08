@@ -2,6 +2,6 @@ SQL windowing operations allow you to define a subset of rows from a result set 
 
 After completing this module, you’ll be able to:
 
-- Describe window functions.
+- Describe window functions. 
 - Use the OVER clause.
 - Use RANK, AGGREGATE, and OFFSET functions.
