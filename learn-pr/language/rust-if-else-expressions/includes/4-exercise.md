@@ -66,7 +66,7 @@ Next, we'll add code for a new function named `car_quality`. This function will 
         // Declare and initialize the return tuple value
         // For a new car, set the miles to 0
         // TO DO: Correct the quality declaration so we can change the values later
-        let quality: (String, u32) = ("New".to_string(), 0);
+        let quality: (String, u32) = (String::from("New"), 0);
 
         // Use a conditional expression to check the miles
         // If the car has accumulated miles, then the car is used
@@ -223,7 +223,7 @@ In our `main` function, we'll call the `car_factory` function to fulfill the car
     
         // Car order #1: Used
         engine = Transmission::Manual;
-        car = car_factory(colors().to_string(), engine, roof, miles);
+        car = car_factory(String::from(colors(<order #>)), engine, roof, miles);
         println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
     
         // Car order #2: Used
@@ -231,7 +231,7 @@ In our `main` function, we'll call the `car_factory` function to fulfill the car
         miles = miles + 1000;
         // TO DO: Adjust the Transmission value syntax
         engine = Transmission.SemiAuto;
-        car = car_factory(colors().to_string(), engine, roof, miles);
+        car = car_factory(String::from(colors(<order #>)), engine, roof, miles);
         println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
  
         // Car order #3: New
@@ -239,7 +239,7 @@ In our `main` function, we'll call the `car_factory` function to fulfill the car
         // TO DO: Adjust the miles so the order is for a New car
         miles = ??;
         engine = Transmission::Automatic;
-        car = car_factory(colors().to_string(), engine, roof, miles);
+        car = car_factory(String::from(colors(<order #>)), engine, roof, miles);
         println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
     ```
 
@@ -279,6 +279,6 @@ You can compare your program output to the solution for this exercise in this [R
 <!-- Links -->
 <!-- [Rust-loops]: /learn/modules/rust-loop-expressions/index?azure-portal=true -->
 
-[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=acb5140cab86869af9fbed3cb35067d2?azure-portal=true
+[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=5571ff2a95a55e303b43171dd6b2b229?azure-portal=true
 
 [RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d348ed467e20aa2a39e5f04da0e58c3d?azure-portal=true
