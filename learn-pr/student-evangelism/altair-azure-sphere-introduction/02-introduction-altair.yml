@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-introduction.altair
-title: Introduction
+title: Introduction to the Altair 8800
 metadata:
-  title: Introduction
-  description: Introduction to the Altair 8800 and Azure Sphere.
+  title: Introduction to the Altair 8800
+  description: Introduction to the Altair 8800.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-introduction.introduction-altair
-title: Introduction to the Altair 8800
+title: Computing fundamentals with Altair 8800 and Azure Sphere
 metadata:
-  title: Introduction to the Altair 8800
-  description: Introduction to the Altair 8800.
+  title: Computing fundamentals with Altair 8800 and Azure Sphere
+  description: Computing fundamentals with Altair 8800 and Azure Sphere.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover
