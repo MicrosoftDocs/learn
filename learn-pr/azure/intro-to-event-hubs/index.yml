@@ -27,6 +27,7 @@ roles:
 - student
 products:
 - azure
+- azure-event-hubs
 units:
 - learn.azure.intro-to-event-hubs.introduction
 - learn.azure.intro-to-event-hubs.what-is-event-hubs

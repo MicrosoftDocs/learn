@@ -1,5 +1,7 @@
-As the first step towards starting your professional career, getting noticed can be both daunting and exciting. Through this module, you've learned the basics of networking.
+As you take first steps toward starting your professional career, getting noticed and standing out from the crowd can be both daunting and exciting. In this module, you've learned the basics of networking, which is the best way to draw the attention of recruiters, prospective managers, and others in a position to help you land an internship.
 
-Then you saw examples and learned tips on how to better describe your experiences and highlight your personal value in your resume. With this information in mind, you are ready to effectively search for and successfully apply for an internship!
+You next learned about building a resume. You saw and applied examples of good resume writing and got tips on how to better describe your experiences and highlight your personal value. 
 
-Learn more about a [career at Microsoft](https://careers.microsoft.com) about working at Microsoft.
+With this information in mind and diligently applied, you're ready to successfully search for, apply for, and get hired for an internship!
+
+Learn about [careers at Microsoft](https://careers.microsoft.com).

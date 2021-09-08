@@ -16,7 +16,7 @@ You can configure an internal load balancer in almost the same way as an externa
 
 The internal load balancer should be visible only to the web tier. All the virtual machines that host the databases are in one subnet. You can use an internal load balancer to distribute traffic to those virtual machines.
 
-![Diagram of internal load balancer.](../media/5-internal-load-balancer.svg)
+:::image type="content" source="../media/5-internal-load-balancer.svg" alt-text="Screenshot showing internal load balancer." border="false":::
 
 ## Choose the distribution mode
 

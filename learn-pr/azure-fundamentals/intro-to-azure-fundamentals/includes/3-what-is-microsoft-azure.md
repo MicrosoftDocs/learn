@@ -51,6 +51,7 @@ With help from Azure, you have everything you need to build your next great solu
   :::column-end:::
 :::row-end:::
 
+
 ## What can I do with Azure?
 
 Azure provides more than 100 services that enable you to do everything from running your existing applications on virtual machines, to exploring new software paradigms, such as intelligent bots and mixed reality.
