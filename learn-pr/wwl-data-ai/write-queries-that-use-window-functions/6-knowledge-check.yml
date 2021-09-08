@@ -41,10 +41,10 @@ quiz:
     choices:
     - content: "Analytic function"
       isCorrect: true
-      explanation: "That's correct. PERCENT_RANK is similar to the CUME_DIST function and is categorised as an Analytic function."
+      explanation: "That's correct. PERCENT_RANK is similar to the CUME_DIST function and is categorized as an Analytic function."
     - content: "Ranking function"
       isCorrect: false
-      explanation: "That's incorrect. PERCENT_RANK is similar to the CUME_DIST function and is not categorised as a Ranking function."
+      explanation: "That's incorrect. PERCENT_RANK is similar to the CUME_DIST function and is not categorized as a Ranking function."
     - content: "Aggregation function"
       isCorrect: false
-      explanation: "That's incorrect. PERCENT_RANK is similar to the CUME_DIST function and is not categorised as a Ranking function."
+      explanation: "That's incorrect. PERCENT_RANK is similar to the CUME_DIST function and is not categorized as a Ranking function."
