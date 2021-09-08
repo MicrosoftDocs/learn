@@ -53,6 +53,10 @@ Install the latest version of PowerShell on your computer.
 1. Download the latest [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads?azure-portal=true) for Windows.
 2. Install the GNU Arm Embedded Toolchain
 
+### Restart your computer
+
+When you've completed all steps then restart your computer.
+
 ## Ubuntu 18.04 or 20.04 LTS users
 
 Complete the following steps:
@@ -165,3 +169,33 @@ The Peacock extension allows you to change the color of your Visual Studio Code 
 ```bash
 git clone --recurse-submodules --depth 1 https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.git
 ```
+
+## Update and test the Azure Sphere configuration
+
+When the Altair emulator project was released, it targeted version 10 of the Azure Sphere APIs and version 21.07 of the Azure Sphere SDK. It is likely you installed a more recent version of the Azure Sphere SDK. If you do install a more recent version of the Azure Sphere SDK, then you need to update the project TARGET_API_SET and TOOLS_REVISION settings. These settings are held in the **cmake/azsphere_config.cmake** file.
+
+Follow these steps to update the configuration files for all Azure Sphere projects in the **Altair8800Emulator** folder.
+
+1. Open a **Command prompt**.
+1. Navigate to the **Altair8800Emulator** folder you cloned to your computer.
+1. Run the **Update_Config** PowerShell script.
+
+    ```pwsh
+    pwsh ./tools/build-tools/update_config.ps1
+
+    ```
+
+Test you can build the Altair 8800 projects.
+
+1. From the **command prompt**
+1. Ensure you are still in the **Altair8800Emulator** folder you cloned to your computer.
+1. Run the **Build_all** PowerShell script.
+
+    ```pwsh
+    pwsh ./tools/build-tools/build_all.ps1
+
+    ```
+
+1. Check the build completion message to confirm a successful build. The build completion message will be similar to `Build All completed successfully. Elapsed time: 00:00:17`. If the build process fails, check that you installed all the required components. On Windows, check you added Ninja and Cmake to the Path.
+
+1. Exit the command prompt.
