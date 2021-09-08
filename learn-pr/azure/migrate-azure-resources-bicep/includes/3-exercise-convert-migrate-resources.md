@@ -17,7 +17,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. On the Azure Home page, under **Azure services**, select **Create a resource**.
+1. On the Azure home page, under **Azure services**, select **Create a resource**.
 
    :::image type="content" source="../media/3-create-resource.png" alt-text="Screenshot of the Azure portal, with the Create a resource option highlighted.":::
 
