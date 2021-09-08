@@ -18,7 +18,7 @@ Visual Studio Code is a powerful code editor and a lightweight general-purpose I
 
 1. In the either Extensions panel, or in the main panel, select **Install*.
 
-    :::image type="content" source=../media/visual-studio-code-extensions-install.png" alt-text="Screenshot of the search results in the Extensions panel for Windows Python with Install highlighted.":::
+    :::image type="content" source="../media/visual-studio-code-extensions-install.png" alt-text="Screenshot of the search results in the Extensions panel for Windows Python with Install highlighted.":::
 
     When the installation is complete, the Install button changes to a **Settings** icon in the Extensions view or two buttons, **Disable** and **Uninstall** in the main panel. This message lets you know that you've successfully installed the Python extension for Windows.
 
