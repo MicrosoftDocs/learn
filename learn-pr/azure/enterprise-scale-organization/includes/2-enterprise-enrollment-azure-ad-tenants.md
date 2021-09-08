@@ -82,7 +82,7 @@ Review these design recommendations and considerations for designing your Azure 
 
 - Use Azure AD seamless single sign-on based on the selected planning topology.
 - If your organization doesn't have an identity infrastructure, start by implementing an Azure AD-only identity deployment. Such deployment with Azure Active Directory Domain Services and Microsoft Enterprise Mobility + Security provides end-to-end protection for SaaS applications, enterprise applications, and devices.
-- Multifactor authentication provides another layer of security the second barrier of authentication. Enforce multifactor authentication and conditional access policies for all privileged accounts for greater security.
+- Multifactor authentication provides another layer of security the second barrier of authentication. Enforce multifactor authentication and Conditional Access policies for all privileged accounts for greater security.
 - Plan for and implement emergency-access or break-glass accounts to prevent tenant-wide account lockout.
 - Use Azure AD Privileged Identity Management for identity and access management.
 - If dev/test and production are going to be isolated environments from an identity perspective, separate them at a tenant level via multiple tenants.
