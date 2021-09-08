@@ -37,7 +37,7 @@ Start by deploying a new VM from a Windows Server 2016 image.
     }
     ```
 
-    Copy the `publicIpAddress` in this output. You'll need this address later in the exercise to access the VM.
+1. Copy the `publicIpAddress` in this output. You'll need this address later in the exercise to access the VM.
 
 1. Run the following command in Cloud Shell to open your VM's port 80 for web traffic:
 
