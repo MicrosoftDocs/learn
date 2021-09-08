@@ -131,7 +131,37 @@ println!("{}, level {}. Remote: {}. Grades: {}, {}, {}, {}. Average: {}",
          user_2.name, user_2.level, user_2.remote, mark_2.0, mark_2.1, mark_2.2, mark_2.3, mark_2.4);
 ```
 
-You can interact with this example code in this [Rust Playground][RustPlay-structs].
+
+## Convert a string literal to a String type
+
+String data that's stored inside another data structure, such as a struct or vector, must be converted from a string literal reference (`&str`) to a `String` type. To do the conversion, we use the standard `String::from(&str)` method. Notice how we use this method in this example:
+
+```rust
+// Classic struct with named fields
+struct Student { name: String, level: u8, remote: bool }
+...
+let user_2 = Student { name: String::from("Dyson Tan"), level: 5, remote: false };
+```
+
+If we don't convert the type before we assign the value, the compiler issues an error:
+
+```output
+error[E0308]: mismatched types
+  --> src/main.rs:24:15
+   |
+24 |         name: "Dyson Tan",
+   |               ^^^^^^^^^^^
+   |               |
+   |               expected struct `String`, found `&str`
+   |               help: try using a conversion method: `"Dyson Tan".to_string()`
+
+error: aborting due to previous error
+```
+
+The compiler suggests that we can use the `.to_string()` function to make the conversion. In our examples, we use the `String::from(&str)` method.
+
+
+You can interact with the example code in this [Rust Playground][RustPlay-structs].
 
 
 ### Check your knowledge
