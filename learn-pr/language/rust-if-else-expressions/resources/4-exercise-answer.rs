@@ -18,13 +18,13 @@ fn car_quality (miles: u32) -> (String, u32) {
     // Declare and initialize the return tuple value
     // For a new car, set the miles to 0
     // Corrected code: Use the "mut" keyword so quality can be changed later
-    let mut quality: (String, u32) = ("New".to_string(), 0);
+    let mut quality: (String, u32) = (String::from("New"), 0);
 
     // Use a conditional expression to check the miles
     // If the car has accumulated miles, then the car is used
     if miles > 0 {
         // Corrected code: Set the quality value for a used car
-        quality = ("Used".to_string(), miles);
+        quality = (String::from("Used"), miles);
     }
 
     // Corrected code: Return the completed tuple, no semicolon needed
@@ -104,7 +104,7 @@ fn main() {
     
     // Car order #1: Used
     engine = Transmission::Manual;
-    car = car_factory(colors[order-1].to_string(), engine, roof, miles);
+    car = car_factory(String::from(colors[order-1]), engine, roof, miles);
     println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
     
     // Car order #2: Used
@@ -112,7 +112,7 @@ fn main() {
     miles = miles + 1000;
     // Corrected code: Transmission value syntax
     engine = Transmission::SemiAuto;
-    car = car_factory(colors[order-1].to_string(), engine, roof, miles);
+    car = car_factory(String::from(colors[order-1]), engine, roof, miles);
     println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
  
     // Car order #3: New
@@ -120,6 +120,6 @@ fn main() {
     // Corrected code: Set miles to zero to order a New car
     miles = 0;
     engine = Transmission::Automatic;
-    car = car_factory(colors[order-1].to_string(), engine, roof, miles);
+    car = car_factory(String::from(colors[order-1]), engine, roof, miles);
     println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
 }
