@@ -19,7 +19,6 @@ prerequisites: |
 #  - [Learn module on getting noticed](/learn/modules/career-get-noticed/)
 #  - [Learn module on interviewing](/learn/modules/career-interview/)
 iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
 levels:
   - beginner
 roles:
@@ -29,13 +28,11 @@ products:
 units:
 - learn.career-growth.introduction
 - learn.career-growth.networking
-- learn.career-growth.asking-questions
-- learn.career-growth.seek-diversity
 - learn.career-growth.group-exercise
-- learn.career-growth.time-management
-- learn.career-growth.day-exercise
-- learn.career-growth.continual-learning
 - learn.career-growth.building-trust
+- learn.career-growth.day-exercise
+- learn.career-growth.asking-questions
+- learn.career-growth.continual-learning
 - learn.career-growth.summary
 badge:
   uid: learn.career-growth.badge

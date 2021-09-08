@@ -75,7 +75,7 @@ How do youI pass such an interview? Generally the more interviews you do, the be
 - **Confidence**. The more certain you come across the better. You might not get it right when solving a problem but you want to avoid coming across that you have no idea. With that said, saying "I don't know" to something is better than saying something nonsensical. Keep in mind that there might be more than one way to solve a problem.
 
 > [!TIP]
-> If you get stuck, you can try asking for help.
+> If you get stuck, you can try asking for help. It should always be ok to ask clarifying questions on how to interpret a question, if there's limitations and so on.
 
 ### Standard interview
 
