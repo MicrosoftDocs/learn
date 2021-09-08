@@ -22,8 +22,8 @@ The following table illustrates the impact of self-efficacy on your inner dialog
 | Low self-efficacy                                           | High self-efficacy                                          |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | This code is going for testing in a week! I can't possibly complete it by then! | This code needs some work before it's ready for testing next week. I'm good at code and have done this before. I need to set daily targets so I can keep track of my progress and meet the deadline. |
-| How will I ever debug this program? It has so many issues and I don't know where to start. | I appreciate the testing team's effort in finding these issues with the program. I'll do a quick review of the logged bugs and plan a roadmap for resolution. I know I can count on my teammates for support if I need it. |
-| I'm nervous to meet my new team. They're experts and I hope they don't think they're better than me. | I'm excited to start my new role. I'll learn a lot from my teammates who're more experienced than me. I've done a great job so far, which is why I deserve this promotion. |
+| How will I ever debug this program? It has so many issues, and I don't know where to start. | I appreciate the testing team's effort in finding these issues with the program. I'll do a quick review of the logged bugs and plan a roadmap for resolution. I know I can count on my teammates for support if I need it. |
+| I'm nervous to meet my new team. They're experts, and I hope they don't think they're better than me. | I'm excited to start my new role. I'll learn a lot from my teammates who are more experienced than me. I've done a great job so far, which is why I deserve this promotion. |
 
 > [!IMPORTANT]
 > If you believe that you can become more capable, you'll keep going and recover from setbacks.
@@ -46,7 +46,7 @@ Your self-efficacy levels closely reflect your mindset. Together, self-efficacy 
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | When you have low self-efficacy, your attitude and thought process reflect a fixed mindset. You remain unsure of your capabilities and lack confidence in pursuing new tasks, practicing, and persevering. | When you have high levels of self-efficacy, your attitude and thought process reflect a growth mindset. You engage in positive self-talk and are more open to learning and receiving feedback from others. |
 | You try to avoid tasks or start on them with fear of judgment from your team or others that you work with. | You approach challenges and new tasks with the intention of learning and improving your skills. |
-| You tend to focus on your fear of failure. This increases your anxiety, which in turn affects your ability to think calmly and strategize a plan to move forward. This leads to poorer outcomes. | You tend to focus on feelings of accomplishment. This helps you cope and progress, even in uncertain or difficult situations in technology and leads to better outcomes. |
+| You tend to focus on your fear of failure. This negative thinking increases your anxiety, which in turn affects your ability to think calmly and make a plan to move forward. This cycle leads to poorer outcomes. | You tend to focus on feelings of accomplishment. This positive thinking helps you cope and progress, even in uncertain or difficult situations in technology and leads to better outcomes. |
 
 Consider the following scenario as you prepare for the coding competition:
 
