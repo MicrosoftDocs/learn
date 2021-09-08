@@ -21,18 +21,18 @@ quiz:
     - content: "When I want to share container images among developers of your team."
       isCorrect: false
       explanation: "GitHub Packages allow you to easily share container images with the same permissions than your GitHub repository."
-    - content: "When I want to publish a small code library as an open-source project"
+    - content: "When I want to publish a small code library as an open-source project."
       isCorrect: false
       explanation: "GitHub packages allow you to publish your libraries in public, and is free for public repositories. "
   - content: "Which tool do you need to use a package hosted in GitHub Packages in your project?"
     choices:
-    - content: "The GitHub Packages CLI."
+    - content: "The GitHub Packages CLI"
       isCorrect: false
       explanation: "GitHub Packages is fully compatible with package managers, and don't require any specific tool."
-    - content: "The package manager tooling (npm, nuget.exe, ...)."
+    - content: "The package manager tooling (npm, nuget.exe, and so on)"
       isCorrect: true
       explanation: "GitHub Packages is fully compatible with package managers, and don't require any specific tool."
-    - content: "The GitHub CLI and the package manager tooling."
+    - content: "The GitHub CLI and the package manager tooling"
       isCorrect: false
       explanation: "GitHub Packages is fully compatible with package managers, and don't require any specific tool."
   - content: "How can you authenticate to GitHub Packages from your local development environment"
