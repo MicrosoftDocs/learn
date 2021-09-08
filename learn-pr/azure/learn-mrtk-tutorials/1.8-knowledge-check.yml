@@ -10,8 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
-- content: Choose the best response for each question. Then select Check your answers.
-
+content: Choose the best response for each question. Then select Check your answers.
 quiz:
   title: Check your knowledge
   questions:
@@ -39,5 +38,4 @@ quiz:
           isCorrect: false
         - content: " The Main Camera object is deleted as it is not needed for mixed reality development."
           isCorrect: false
-      
     
