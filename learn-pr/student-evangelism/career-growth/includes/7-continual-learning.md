@@ -61,7 +61,7 @@ Let's think about some ways to growth-hack your learning process to cultivate an
 
 As an intern, you'll likely run into a ton of new information that you need to learn. Find the best way that you learn, experiment with different modalities, video, text, or whatever suits you.
 
-As Socrates said, "know thyself." How do you learn? Are you a visual learner? You might benefit from doodling or from drawing sketch notes as you learn a new concept. If you need structured frameworks around your learning, consider bullet-journaling as you read.  
+As Socrates said, "Know thyself." How do you learn? Are you a visual learner? You might benefit from doodling or from drawing sketch notes as you learn a new concept. If you need structured frameworks around your learning, consider bullet-journaling as you read.  
 
 Do you prefer learning via videos? Make a curated playlist for yourself on YouTube. Are you someone who learns with articles and books? You can get online copies and add highlights and margin notes by using various software. You're the owner of your own learning, but there are lots of helpful tools and techniques to aid your process. 
 
