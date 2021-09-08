@@ -2,7 +2,7 @@ Transact-SQL (T-SQL) is a powerful declarative language that lets you explore an
 
 Here you'll cover basic T-SQL error handling, including how you can raise errors intentionally and set up alerts to fire when errors occur.
 
-After completing this lesson, you'll be able to:
+After completing this lesson, you'll be able to: 
 
 - Raise errors using the RAISERROR statement.
 - Raise errors using the THROW statement.
