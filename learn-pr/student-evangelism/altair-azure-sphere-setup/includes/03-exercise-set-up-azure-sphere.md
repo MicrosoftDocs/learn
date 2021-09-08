@@ -166,7 +166,7 @@ The Peacock extension allows you to change the color of your Visual Studio Code 
 > [!NOTE]
 > Clone the *Altair project* to a folder close to the root folder on your computer. For example, **c:\lab**, or **~/**. The reason is that the Azure Sphere build process uses CMake which can struggle with long path and folder names.
 
-```bash
+```
 git clone --recurse-submodules https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.git
 ```
 
