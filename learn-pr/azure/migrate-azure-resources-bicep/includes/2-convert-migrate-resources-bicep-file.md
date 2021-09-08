@@ -25,7 +25,7 @@ Azure Resource Manager is the service that's used to deploy and manage resources
 
 :::image type="content" source="../../includes/media/azure-resource-manager.png" alt-text="Diagram that shows Azure Resource Manager accepting requests from all Azure clients and libraries." border="false":::
 
-There are two types of operations in Azure: control plane operations and data plane operations. Control plane operations are used to manage the resources in your subscription. Data plane operations are used to access features that are exposed by a resource. For example, you use a control plane operation to create a virtual machine, but you use a data plane operation to connect to the virtual machine by using Remote Desktop Protocol.
+There are two types of operations in Azure: control plane operations and data plane operations. Control plane operations are used to manage the resources in your subscription. Data plane operations are used to access features that are exposed by a resource. For example, you use a control plane operation to create a virtual machine, but you use a data plane operation to connect to the virtual machine by using Remote Desktop Protocol (RDP).
 
 ### Export existing resources to a JSON template
 
