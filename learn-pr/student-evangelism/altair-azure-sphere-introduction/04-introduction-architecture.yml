@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-introduction.architecture
-title: Introduction
+title: Introduction to the cloud-connected Altair architecture
 metadata:
-  title: Introduction
-  description: Introduction to the Altair 8800 and Azure Sphere.
+  title: Introduction to the cloud-connected Altair architecture
+  description: Introduction to the cloud-connected Altair architecture.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-durationInMinutes: 4 # dummy number at present
+durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/04-introduction-architecture.md)]

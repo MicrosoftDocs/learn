@@ -2,47 +2,20 @@ Welcome to the "Learn Computing fundamentals with Altair 8800 emulator & Azure S
 
 ## Introduction
 
-Welcome to the cloud-connected Altair 8800 on Azure Sphere learning path. You’ve come to the right Microsoft Leaning Path if you are interested in secure IoT device and cloud computing. Not only do you get to learn about device and cloud computing, but you'll also get a taste of retro computing. You'll gain an understanding of the Altair 8800 personal computer, invented in the 1970s.
+Welcome to the cloud-connected Altair 8800 on Azure Sphere learning path. You’ve come to the right place if you are interested in secure IoT devices and cloud computing. Not only do you get to learn about device and cloud computing, but you'll also get a taste of retro computing. You'll gain an understanding of the Altair 8800 personal computer, invented in the 1970s.
 
-The Altair 8800 emulator provides the perfect vehicle for learning computing fundamentals. You'll get to program apps and games in Basic and C. For the more adventurous, you can code applications in Assembly language. Or you can take a notch deeper and program the Altair 8800 in Intel 8080 machine code.
+## Scenario: Curiosity
 
-## Scenario: first contact
+You've just read an article on the internet about the Altair 8800 personal computer, and it has captured your attention. The article says the Altair 8800 was invented nearly 50 years ago, and it was the computer that ignited the personal computer revolution. Now you’re curious how the Altair 8800 works, and how it can be programmed. You'd love to buy an Altair 8800, but they are expensive and difficult to find.
 
+The Altair 8800 emulator running on Azure Sphere brings together retro computing, the modern world of IoT and cloud computing, and the chance to step back in time and program one of the first personal computers invented.
+
+The Altair 8800 emulator provides the perfect platform to learn about the Altair 8800, how it works, and how it can be programmed. You'll get to program apps and games in Basic and C. For the more adventurous, you can code applications in Assembly language. Or you can take a notch deeper and program the Altair 8800 with Intel 8080 machine code.
 
 ## What will you learn?
 
-In this module you'll learn about the Azure Sphere, a platform for secure IoT, and the Altair 8800. But this module will focus on the end-to-end solution architecture and how we cloud-connected the Altair 8800. The Altair 8800 was invented well before the Internet as we know it today, and you'll learn techniques that you can apply to more day to day solutions.
+In this module, you'll learn about the Azure Sphere, a platform for secure IoT, and the history of the Altair 8800, and the open-source Altair 8800 emulator. The Altair 8800 was invented well before the Internet as we know it today, and you'll learn techniques that you can apply to day-to-day IoT solutions.
 
 ## What is the main goal?
 
-
-
-This learning path brings together the Open Source Altair 8800 emulator and Azure Sphere. You'll learn about:
-
-- Secure IoT
-- Secure cloud services
-- Computing fundamentals
-- Caching strategies
-- Programing the Altair with Intel 8080 opcodes, Assembly, C, and BASIC.
-
-<!-- ## Introduction video to Altair 8800 emulator on Azure Sphere
-
-Select the following image to view an introduction to the cloud-connected Altair emulator running on Azure Sphere.
-
-[![Intro to the the Altair 8800 emulator on Azure Sphere video](../media/youtube-intro-thumbnail.png)](https://www.youtube.com/watch?v=nUMOpEOx6LI) -->
-
-In this module, you will:
-
-- Learn about the history of the Altair 8800, the computer that kick-started the personal computer revolution.
-- Learn about the three components of Azure Sphere and how together they provide a platform for secure IoT.
-- Apply the Azure IoT Services that are used to cloud-connect the Altair 8800.
-- Write Basic, C, or Assembler applications and games that run on the Altair 8800 emulator.
-
-## Prerequisites
-
-- A computer with an x86-64-based processor running:
-  - Windows 10 Anniversary Update or later.
-  - Or, 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS.
-- An Azure Sphere developer board. Either:
-  - An Avnet Azure Sphere Starter Kit Rev 1 or 2.
-  - Or, a Seeed Studio Azure Sphere MT3620 Development Kit.
+The module will focus on the end-to-end solution architecture of the Altair 8800 emulator running on Azure Sphere and how the Altair 8800 emulator is connected to Azure.
