@@ -15,7 +15,7 @@ Before you begin make sure you have the following requirements in place:
 
 ## Login to Azure and download the sample app
 
-1. Login to the [Azure portal](https://portal.azure.com) and open open the cloud shell.
+1. Login to the [Azure portal](https://portal.azure.com) and open the Cloud Shell.
 
     :::image type="content" source="../media/hdi-cloud-shell-menu.png" alt-text="The location of Cloud Shell launch button.":::
 

@@ -38,14 +38,3 @@ quiz:
     - content: "Service endpoints"
       isCorrect: false
       explanation: "That's incorrect. Service endpoints are an inbound network feature."
-  - content: "Which of the options below is not one of the steps in the authentication flow for the built-in authentication in App Service?"
-    choices:
-    - content: "Sign user in"
-      isCorrect: false
-      explanation: "That's incorrect. *Sign user in* is the first step in the authentication flow."
-    - content: "Require authentication"
-      isCorrect: true
-      explanation: "That's correct. *Require authentication* is a behavior you can configure to occur when an incoming is not authenticated."
-    - content: "Establish authenticated session"
-      isCorrect: false
-      explanation: "That's incorrect. *Establish authenticated session* is the third step in the authentication flow."
