@@ -1,4 +1,4 @@
-In this module, we explored the different loop expressions available in Rust, and discovered how to work with the hash maps.
+In this module, we explored different loop expressions available in Rust, and discovered how to work with hash maps. Data is stored in a hash map as key, value pairs. Hash maps are growable.
 
 The `loop` expression repeats actions until you manually stop the process. You can loop with the `while` expression to repeat actions as long as a condition remains true. The `for` expression is used to iterate through a data collection.
 
