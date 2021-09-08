@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.consume-publish-bicep-modules-using-bicep-registries.use-module-public-bicep-registry
+uid: learn.azure.consume-publish-bicep-modules-using-registries.use-module-public-bicep-registry
 title: Use a module from the public Bicep registry
 metadata:
   unitType: learning-content

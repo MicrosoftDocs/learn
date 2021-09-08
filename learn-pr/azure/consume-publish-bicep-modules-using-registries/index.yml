@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.consume-publish-bicep-modules-using-bicep-registries
+uid: learn.azure.consume-publish-bicep-modules-using-registries
 metadata:
   moduleType: standard
   title: Consume and publish Bicep modules by using bicep registries
@@ -39,12 +39,12 @@ roles:
 products:
   - azure-resource-manager
 units:
-- learn.azure.consume-publish-bicep-modules-using-bicep-registries.introduction
-- learn.azure.consume-publish-bicep-modules-using-bicep-registries.use-module-public-bicep-registry
-- learn.azure.consume-publish-bicep-modules-using-bicep-registries.exercise-deploy-module-from-registry
-- learn.azure.consume-publish-bicep-modules-using-bicep-registries.create-custom-registry
-- learn.azure.consume-publish-bicep-modules-using-bicep-registries.exercise-create-use-private-registry
-- learn.azure.consume-publish-bicep-modules-using-bicep-registries.knowledge-check
-- learn.azure.consume-publish-bicep-modules-using-bicep-registries.summary
+- learn.azure.consume-publish-bicep-modules-using-registries.introduction
+- learn.azure.consume-publish-bicep-modules-using-registries.use-module-public-bicep-registry
+- learn.azure.consume-publish-bicep-modules-using-registries.exercise-deploy-module-from-registry
+- learn.azure.consume-publish-bicep-modules-using-registries.create-custom-registry
+- learn.azure.consume-publish-bicep-modules-using-registries.exercise-create-use-private-registry
+- learn.azure.consume-publish-bicep-modules-using-registries.knowledge-check
+- learn.azure.consume-publish-bicep-modules-using-registries.summary
 badge:
-  uid: learn.azure.consume-publish-bicep-modules-using-bicep-registries.badge
+  uid: learn.azure.consume-publish-bicep-modules-using-registries.badge

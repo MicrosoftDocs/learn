@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.consume-publish-bicep-modules-using-bicep-registries.create-custom-registry
+uid: learn.azure.consume-publish-bicep-modules-using-registries.create-custom-registry
 title: Create a private registry
 metadata:
   unitType: learning-content

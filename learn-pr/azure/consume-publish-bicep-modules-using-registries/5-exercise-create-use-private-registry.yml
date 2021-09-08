@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.consume-publish-bicep-modules-using-bicep-registries.exercise-create-use-private-registry
+uid: learn.azure.consume-publish-bicep-modules-using-registries.exercise-create-use-private-registry
 title: Exercise - Create and use a private registry
 sandbox: true
 metadata:

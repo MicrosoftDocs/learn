@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.consume-publish-bicep-modules-using-bicep-registries.exercise-deploy-module-from-registry
+uid: learn.azure.consume-publish-bicep-modules-using-registries.exercise-deploy-module-from-registry
 title: Exercise - Deploy a module from a registry
 sandbox: true
 metadata:
