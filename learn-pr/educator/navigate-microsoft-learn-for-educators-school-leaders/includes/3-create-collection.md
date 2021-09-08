@@ -2,7 +2,7 @@ Collections are a fantastic method of managing your favorite set of modules. On 
 
 Within your Collections view, you will see a default collection called “Favorites.” You may create new collections and with custom titles and descriptions to help you organize and share with other educators.
 
-:::image type="content" source="../media/collections-page.png" alt-text="Screenshot of the Learn profile under the collections section":::
+:::image type="content" source="../media/collections-page.png" alt-text="Screenshot of the Learn profile under the collections section.":::
 
 ## Creating a collection
 

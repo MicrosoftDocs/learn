@@ -55,7 +55,7 @@ No problem, you can do this in the account management area of your settings. To 
 
 ## Badges, trophies and reputation points
 
-:::image type="content" source="../media/achievements-tab.png" alt-text="screenshot of achievements tab selected in Learn profile":::
+:::image type="content" source="../media/achievements-tab.png" alt-text="Screenshot of achievements tab selected in Learn profile.":::
  
 Badges and trophies are your reward for finishing a module or learning path. All content for educators and school leaders earns this reward upon completion and passing the knowledge check.
 
