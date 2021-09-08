@@ -1,7 +1,3 @@
-Welcome to the "Learn Computing fundamentals with Altair 8800 emulator & Azure Sphere" learning path.
-
-## Introduction
-
 Welcome to the cloud-connected Altair 8800 on Azure Sphere learning path. You’ve come to the right place if you are interested in secure IoT devices and cloud computing. Not only do you get to learn about device and cloud computing, but you'll also get a taste of retro computing. You'll gain an understanding of the Altair 8800 personal computer, invented in the 1970s.
 
 ## Scenario: Curiosity
