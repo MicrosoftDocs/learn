@@ -33,7 +33,7 @@ You should be familiar with:
 - Child and extension resources.
 
 > [!NOTE]
-> In this module, you'll build on your knowledge of extension resources. If you need a refresher, see [Deploy child and extension resources by using Bicep](/learn/modules/child-extension-bicep-templates/).
+> In this module, you'll build on your knowledge of extension resources. If you need a refresher, see [Deploy child and extension resources by using Bicep](xref:learn.azure.child-extension-bicep-templates).
 
 To follow along with the exercises in the module, you'll need:
 
