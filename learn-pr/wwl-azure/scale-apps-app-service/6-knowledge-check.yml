@@ -31,7 +31,7 @@ quiz:
     choices:
     - content: "The number of users requiring access to an application varies according to a regular schedule. For example, more users use the system on a Friday than other days of the week."
       isCorrect: true
-      explanation: "That's correct."
+      explanation: "That's correct. Changes in application load that are predictable are good candidates for autoscaling."
     - content: "The system is subject to a sudden influx of requests that grinds your system to a halt."
       isCorrect: false
       explanation: "That's incorrect. The increasing burst of activity could be caused by a Denial of Service attack that is attempting to overwhelm your system. Autoscaling wouldn't solve the problem."
