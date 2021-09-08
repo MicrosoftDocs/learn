@@ -31,8 +31,6 @@ prerequisites: |
   - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
   - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
-
-
 units: 
 - learn.azure.learn-introduction-tutorials-mrtk.1.1-introduction
 - learn.azure.learn-introduction-tutorials-mrtk.1.2-configure-unity-for-windows-mixed-reality
@@ -43,6 +41,5 @@ units:
 - learn.azure.learn-introduction-tutorials-mrtk.1.7-exercise-add-hand-interaction-with-objectmanipulator
 - learn.azure.learn-introduction-tutorials-mrtk.1.8-knowledge-check
 - learn.azure.learn-introduction-tutorials-mrtk.1.9-summary
-
 badge:
   uid: learn.azure.learn-introduction-tutorials-mrtk-badge
