@@ -1,4 +1,4 @@
-Your team may have already deployed Azure resources by using the Azure portal, JSON Azure Resource Manager templates (ARM templates), or a command-line interface (CLI). If you're used to working with JSON ARM templates, you've learned how Bicep improves the template authoring process over using JSON ARM templates without Bicep. It's worth the investment to use Bicep for your Azure resources, but migrating your existing deployments to Bicep isn't accomplished with a click of a button. The process involves a recommended workflow that includes converting, migrating, refactoring, and testing.
+Your team may have already deployed Azure resources by using the Azure portal, JSON Azure Resource Manager templates (ARM templates), or a command-line interface (CLI). If you're used to working with JSON ARM templates, you've learned how Bicep improves the template authoring process over using JSON ARM templates. It's worth the investment to use Bicep for your Azure resources, but migrating your existing deployments to Bicep isn't accomplished with a click of a button. The process involves a recommended workflow that includes converting, migrating, refactoring, and testing.
 
 ## Example scenario
 
@@ -12,7 +12,7 @@ In this module, you'll learn about the recommended workflow for migrating your A
 
 :::image type="content" source="../media/1-five-phases.png" alt-text="Diagram of the recommended workflow for migrating Azure resources to Bicep." border="false":::
 
-You'll learn how to convert your Azure resources and JSON templates to Bicep files, and then migrate the resources. You'll also learn about tools and resources that can help improve the quality of your templates. Finally, you'll learn how to do test deployments of your converted templates.
+You'll learn how to convert and migrate your Azure resources and JSON templates to Bicep files. You'll also learn about tools and resources that can help improve the quality of your templates. Finally, you'll learn how to do test deployments of your converted templates.
 
 ## What is the main goal?
 

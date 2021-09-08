@@ -59,7 +59,7 @@ You need to consider a few things when you save your templates by using this met
 - The template probably doesn't include extraneous properties, but you should still check that the template includes everything that you expect and remove any properties that shouldn't be there.
 
 > [!NOTE]
-> However you export resources, either by exporting existing resources or by saving deployments, treat the resources export as a starting point, and don't use it directly. Instead, use it as inspiration for your final template.
+> However you export resources, either by exporting existing resources or by saving deployments, treat the exported file as a starting point, and don't use it directly. Instead, use it as inspiration for your final template.
 
 ### Decompile the source JSON ARM template
 
@@ -143,11 +143,11 @@ resource dependencyAgentWindows 'Microsoft.Compute/virtualMachines/extensions@20
 > The JSON representation includes a property named `provisioningState`. The `provisioningState` property is read-only, and it's automatically set by Azure, so it's not included in the Bicep resource definition.
 
 > [!TIP]
-> The Bicep extension for Visual Studio Code helps you define your Azure resources for Bicep. For example, the Bicep representation of the resource includes an API version, but the exported JSON version doesn't. In Visual Studio Code, when you begin to enter the resource type, an API version is automatically suggested.
+> The Bicep extension for Visual Studio Code helps you define your Azure resources in Bicep. For example, the Bicep representation of the resource includes an API version, but the exported JSON version doesn't. In Visual Studio Code, when you begin to enter the resource type, an API version is automatically suggested.
 
 #### ARM template reference
 
-The [ARM template reference](/azure/templates/?azure-portal=true) is a source of information about ARM template structure, resource types, API versions, and property definitions for Azure resources. The documentation provides examples both in JSON and in Bicep examples.
+The [ARM template reference](/azure/templates/?azure-portal=true) is a source of information about ARM template structure, resource types, API versions, and property definitions for Azure resources. The documentation provides examples both in Bicep and JSON formats.
 
 You can choose specific resource providers and resource types, like `Microsoft.Web/serverFarms`, and their API versions. You can review which resource properties are required and which are optional. Most properties are described to help you understand what they do.
 

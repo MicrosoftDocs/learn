@@ -1,4 +1,4 @@
-Your company recently acquired a smaller competitor that has created a toy truck. This company uses Azure to host its application infrastructure, but it deployed its resources by using the Azure portal and JSON ARM templates. Your company standardized on Bicep for infrastructure as code, and you need to migrate all Azure resources to use Bicep for deployments.
+Your company recently acquired a smaller competitor that has created a toy truck. This company uses Azure to host its application infrastructure, but it deployed its resources by using the Azure portal and JSON ARM templates. Your company standardized on Bicep for infrastructure as code, and you needed to migrate all Azure resources to use Bicep for deployments.
 
 In this module, you learned about the process and recommended workflow for migrating your Azure resources to Bicep. The workflow consists of five phases: convert, migrate, refactor, test, and deploy. You learned about the limitations within this workflow and how to bring your templates in line with your team's code standards and best practices. You also learned about tools and resources that can help you complete the workflow.
 

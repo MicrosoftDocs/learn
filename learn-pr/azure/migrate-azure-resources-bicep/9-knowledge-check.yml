@@ -43,7 +43,7 @@ quiz:
       explanation: "Some Azure resources you can't completely export by using the Azure portal."
     - content: "You can use the export template function to export the entire contents of your Azure subscription."
       isCorrect: false
-      explanation: "In Azure, you can't export the entire contents of your subscription."
+      explanation: "In Azure, you can't export the entire contents of your subscription by using a single command."
     - content: "The export template function doesn't always perform a complete export of an Azure resource. It should be used as a reference point when you build your templates."
       isCorrect: true
       explanation: "Use the export template function as a reference point to help you build your templates."
