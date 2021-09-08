@@ -39,11 +39,6 @@ When you divide your pipeline into multiple stages, each with their own responsi
 
 Your Bicep file deploys the resources, so it can access the resource properties and publish them as deployment outputs. You can access a deployment output in your pipeline. In Azure Pipelines, there's special syntax to publish variables to make them are available across stages.
 
-> [!NOTE]
-> In a future module, you'll learn more about passing variables between stages.
-
-<!-- TODO consider removing this section -->
-
 You first need to publish a pipeline stage output variable. You do this by writing a specially formatted string to the pipeline log, which Azure Pipelines knows how to understand. In the following example, a variable named `myVariable` is set to the value `myValue`:
 
 :::code language="bash" source="code/8-output-variable.yml" range="8" :::
@@ -56,7 +51,8 @@ After you publish the output variable, you then need to make the variable availa
 
 Now, any steps within the smoke test job can access the `myVariable` value like any other variable, by using the syntax `$(myVariable)`. You'll try this out in the next exercise.
 
-<!-- TODO end -->
+> [!NOTE]
+> In a future module, you'll learn more about passing variables between stages.
 
 ### Other test types
 
