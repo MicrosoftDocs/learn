@@ -21,14 +21,14 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
    :::image type="content" source="../media/3-create-resource.png" alt-text="Screenshot of the Azure portal, with the Create a resource option highlighted.":::
 
-   The Azure Marketplace appears in the **Create a resource** pane.
+   Azure Marketplace appears in the **Create a resource** pane.
 
 1. Under **Ubuntu Server 20.04 LTS**, select **Create**.
 
-   :::image type="content" source="../media/3-create-ubuntu.png" alt-text="Screenshot that shows the Azure Marketplace, with the Create link highlighted under the words Ubuntu Server 20.04 L T S.":::
+   :::image type="content" source="../media/3-create-ubuntu.png" alt-text="Screenshot that shows Azure Marketplace, with the Create link highlighted under the words Ubuntu Server 20.04 L T S.":::
 
    > [!IMPORTANT]
-   > If you don't see the **Ubuntu Server 20.04 LTS** item, go directly to [Ubuntu Server 20.04 LTS](https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-focal20_04-lts-ARM?azure-portal=true) in the Azure Marketplace.
+   > If you don't see the **Ubuntu Server 20.04 LTS** item, go directly to [Ubuntu Server 20.04 LTS](https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-focal20_04-lts-ARM?azure-portal=true) in Azure Marketplace.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
