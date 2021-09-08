@@ -1,6 +1,6 @@
 One way to meet people in your new organization is to join clubs and social groups. In this exercise, you'll create a series of activities that can help you integrate into the group.
 
-## Book 1:1s
+## Book one-on-one meetings
 
 Your first three months are an important opportunity to set the stage for the rest of your career. Try this suggestion for meeting new people and getting yourself known.
 
@@ -8,8 +8,8 @@ Your first three months are an important opportunity to set the stage for the re
 1. Write down one question you'd like to ask of each of them, and schedule a coffee/tea chat with one per week.
 
 For example:
-* Book a 1:1 meeting with a project manager. Ask about the processes employed by the team and what approaches team members take to visualizing what they're working on.
-* Book a 1:1 meeting with a team lead. Ask about how long it ordinarily takes for a new employee to get up to speed with how things work in the organization. 
+* Book a one-on-one meeting with a project manager. Ask about the processes employed by the team and what approaches team members take to visualizing what they're working on.
+* Book a one-on-one meeting with a team lead. Ask about how long it ordinarily takes for a new employee to get up to speed with how things work in the organization. 
 
 ## Find new ways to network: Make a list of hobbies
 
@@ -52,4 +52,4 @@ When you attend a social group activity, make it a point to get to know one or m
 
 - Send a thank-you note to the activity organizer after the activity.
 
-  Organizers always appreciate polite, thankful people.
+  Organizers always appreciate courteous people.
