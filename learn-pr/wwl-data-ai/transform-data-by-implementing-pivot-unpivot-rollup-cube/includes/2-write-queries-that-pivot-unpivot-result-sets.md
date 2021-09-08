@@ -37,9 +37,9 @@ The result set is now a total of eight rows. In the pivoting process, each disti
 
 You can pivot a result set using the PIVOT operator. The Transact-SQL PIVOT table operator works on the output of the FROM clause in a SELECT statement. To use PIVOT, you need to supply three elements to the operator:
 
-- **Grouping**: in the FROM clause, you need to provide the input columns. From those columns, PIVOT will determine which column(s) will be used to group the data for aggregation. This is based on looking at which columns are not being used as other elements in the PIVOT operator.
-- **Spreading**: you need to provide a comma-delimited list of values to be used as the column headings for the pivoted data. The values need to occur in the source data.
-- **Aggregation**: you need to provide an aggregation function (SUM, and so on) to be performed on the grouped rows.
+- **Grouping**: in the FROM clause, you provide the input columns. From those columns, PIVOT will determine which column(s) will be used to group the data for aggregation. This is based on looking at which columns aren't being used as other elements in the PIVOT operator.
+- **Spreading**: you provide a comma-delimited list of values to be used as the column headings for the pivoted data. The values need to occur in the source data.
+- **Aggregation**: you provide an aggregation function (SUM, and so on) to be performed on the grouped rows.
 
 Additionally, you need to assign a table alias to the result table of the PIVOT operator. The following example shows the elements in place:
 
@@ -49,13 +49,13 @@ FROM  ( SELECT  Category, Qty, Orderyear FROM Sales.CategoryQtyYear) AS D
           PIVOT(SUM(qty) FOR orderyear IN ([2019],[2020],[2021])) AS pvt;
 ```
 
-In the example above, **Orderyear** is the column providing the spreading values, Qty is used for aggregation, and **Category** for grouping. **Orderyear** values are enclosed in delimiters to indicate that they are identifiers of columns in the result.
+In the example above, **Orderyear** is the column providing the spreading values, Qty is used for aggregation, and **Category** for grouping. **Orderyear** values are enclosed in delimiters to indicate that they're identifiers of columns in the result.
 
 ## Use UNPIVOT to unpivot a result set
 
 Unpivoting data is the logical reverse of pivoting data. Instead of turning rows into columns, unpivot turns columns into rows. This is a technique useful in taking data that has already been pivoted (with or without using a Transact-SQL PIVOT operator) and returning it to a row-oriented tabular display. You can use the UNPIVOT table operator to accomplish this.
 
-To use the UNPIVOT operator, you need to provide three elements:
+To use the UNPIVOT operator, you provide three elements:
 
 - Source columns to be unpivoted.
 - A name for the new column that will display the unpivoted values.
