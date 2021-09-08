@@ -18,7 +18,7 @@ abstract:  |
   - Learn how to apply cognitive flexibility to pivot and persist in challenging situations.
 prerequisites: |
   - An open mind and a willingness to learn about the expectations and responsibilities of mentorship in a technology workspace.
-  hidden: true
+hidden: true
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
