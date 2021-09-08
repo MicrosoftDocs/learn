@@ -1,10 +1,10 @@
 Carrying out technical tasks might be challenging enough, but it's important to think about how you're perceived by others as well. At the beginning and throughout your career, you want to be perceived as someone who delivers strong results on time and who communicates well by asking the right questions along the way. 
 
-You're new in an organization and as such are an unknown quantity to your colleagues. By building people's trust in you as an employee and managing your relationships proactively, you'll establish your personal brand as someone to be appreciated, given greater and greater responsibility, and considered for promotion to your next job level in the company.
+You're new in an organization and as such are an unknown quantity to your colleagues. By building people's trust in you as an employee and managing your relationships proactively, you'll establish your personal brand as someone to be respected, given greater and greater responsibility, and considered for promotion to your next job level in the company.
 
 ## Build trust as an employee
 
-Good managers are looking for valuable, trustworthy employees who contribute to the organization by providing solid impact. Great managers also value individuals who bring their whole selves to work, who come as they are, and who grow.
+Good managers are looking for skilled, reliable employees who contribute to the organization by providing solid impact. Great managers also value individuals who bring their whole selves to work, who come as they are, and who grow.
 
 It's a common mistake for new interns to try to impress coworkers by promising to deliver a ton of work. Most likely, you're setting yourself up for some disappointment. A smarter tactic is to focus on a single small task, complete it, and then identify other small, related tasks to deliver on top of that, if time permits. When you deliver on the smaller commitment first, teammates will begin see you as trustworthy. And when you deliver a few extras as well, you might start to impress the people around you.
 
@@ -14,9 +14,9 @@ In a nutshell, your formula for success here is to *under-promise and over-deliv
 
 An important part of your professional life is learning how to manage your time. This includes not only *where* you spend your time but *how* you think about time.
 
-### Be on time
+### Be punctual
 
-Ensure that you're on time for work, for meetings, or for whatever the occasion is. If you know your bus is always running late, aim to be at work 30 minutes or more before you're expected to be there.
+Ensure that you're on time for work, for meetings, or for whatever the occasion is. If you know your bus tends to run late, aim to be at work 30 minutes or more before your expected arrival.
 
 > [!TIP]
 > It's common for managers to arrive at work early. If you and your manager are the only ones there first thing, it's an excellent opportunity to have a quick chat over coffee or tea.
@@ -46,19 +46,20 @@ How your manager sees you is key to whether you intern position will turn into a
 
 You can help frame your conversations with your manager by asking some important questions, including:
 
-* "Where do you see me in one year? Five years? Ten years?"
-* "What can I do to better align myself with the department's strategies and goals?"
-* "What resources are available to me to grow my knowledge base and keep learning?"
-* "What do you see as my strengths? My weaknesses? How can I amplify one and improve the other?"
+* Where do you see me in one year? Five years? Ten years?
+* What can I do to better align myself with the department's strategies and goals?
+* What resources are available to me to grow my knowledge base and keep learning?
+* What do you see as my strengths? My weaknesses? How can I amplify one and improve the other?
 
 ## Ask for feedback
 
-Ask for specific feedback from your manager, teammates, and colleagues. What is expected of you? It's best to know this up front so that you can perform a task and then ask how you can improve in execution. Make notes of this feedback, and review them periodically.
+Seek specific feedback from your manager, teammates, and colleagues. What is expected of you? It's best to know this up front so that you can perform a task and then ask how you can improve in execution. Make notes of this feedback, and review them periodically.
 
 > [!TIP]
-> A good idea is to ask for two things you do well and an area which you can grow in. Ask for specific examples so you understand how you could have done a situation differently.
+> A good idea is to ask for two things you do well and an area that you can grow in. Ask for specific examples so you understand how you could have done a situation differently.
 
 You should know by the end of an internship how much you have grown and what people think of your performance.
+<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Oxol]
 > *Developer Advocate Gustavo Cordido discusses the importance of asking questions.*
