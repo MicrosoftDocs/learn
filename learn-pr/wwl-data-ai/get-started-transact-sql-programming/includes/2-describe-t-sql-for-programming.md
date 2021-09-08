@@ -1,6 +1,6 @@
-Transact-SQL (T-SQL) are a proprietary extension of the open standard Structured Query Language (SQL).  It supports declared variables, string and data processing, error and exception handling, and transaction control.  While SQL is a programming language, T-SQL adds support for procedural programming and the use of local variables.
+Transact-SQL (T-SQL) is a proprietary extension of the open standard Structured Query Language (SQL).  It supports declared variables, string and data processing, error and exception handling, and transaction control.  While SQL is a programming language, T-SQL adds support for procedural programming and the use of local variables.
 
-A Transact-SQL program will, typically, start with a BEGIN statement and terminate with an END statement.  In between will be the statements you'll want to execute.
+A T-SQL program will, typically, start with a BEGIN statement and terminate with an END statement.  In between will be the statements you'll want to execute.
 
 As you move from executing code objects to creating them, you'll need to understand how multiple statements interact with the server on execution. As you develop programs, you'll need to temporarily store values. For example, you might need to temporarily store values that will be used as parameters in stored procedures.
 
