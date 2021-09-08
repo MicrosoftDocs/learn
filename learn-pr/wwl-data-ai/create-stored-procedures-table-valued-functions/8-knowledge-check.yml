@@ -25,7 +25,7 @@ quiz:
       explanation: "Incorrect. There are no syntax errors in this batch. But one of the data values is the wrong type."
     - content: "2"
       isCorrect: true
-      explanation: "Correct. Two rows are created. There is no syntax error in this batch, so SQL can begin to execute the statement. The first two INSERT statements are executed before the error arises."
+      explanation: "Correct. Two rows are created. There's no syntax error in this batch, so SQL can begin to execute the statement. The first two INSERT statements are executed before the error arises."
   - content: "You want to populate a table by creating 15 new rows. Before you create the rows, you need to check that the table exists. From the following T-SQL keywords, choose the one that you'll NOT need to use."
     choices:
     - content: "IF"
@@ -41,10 +41,10 @@ quiz:
     choices:
     - content: "Yes"
       isCorrect: false
-      explanation: "Incorrect. Variables are local to the batch in which they are declared."
+      explanation: "Incorrect. Variables are local to the batch in which they're declared."
     - content: "No"
       isCorrect: true
-      explanation: "Correct. Variables are local to the batch in which they are declared."
+      explanation: "Correct. Variables are local to the batch in which they're declared."
     - content: "Sometimes"
       isCorrect: false
-      explanation: "Incorrect. Variables are local to the batch in which they are declared."
+      explanation: "Incorrect. Variables are local to the batch in which they're declared."
