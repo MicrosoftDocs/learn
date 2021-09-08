@@ -3,7 +3,7 @@ Use Transact-SQL to enhance your querying experience. In this module, you'll lea
 
 By the end of this module, you should be able to:
 
-- Create and query tables using Transact-SQL.
+- Create and query tables using Transact-SQL. 
 - Create and query views using Transact-SQL.
 - Create queries using Common Table Expressions (CTE).
 - Write queries that use derived tables.
