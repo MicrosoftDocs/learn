@@ -94,7 +94,7 @@ To determine if your macOS computer already has Python 3 installed:
     Python 3.8.0
     ```
 
-As long as the first number is `3` and you didn't receive an error message, Python 3 iis installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along in all of the beginner Python modules on Microsoft Learn.
+As long as the first number is `3` and you didn't receive an error message, Python 3 is installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along in all of the beginner Python modules on Microsoft Learn.
 
 If you received an error message, you'll need to install Python 3. We'll walk through installation of Python 3 in the next unit.
 
@@ -103,5 +103,5 @@ If you received an error message, you'll need to install Python 3. We'll walk th
 ## Recap
 
 The main takeaways from this unit are:
-- Python version 2 should no longer be used. Any new code should be writtine using Python version 3.
+- Python version 2 should no longer be used. Any new code should be written using Python version 3.
 - Use Python's `--version` flag to be sure you know which version of Python you're working with.
