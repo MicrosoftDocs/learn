@@ -43,13 +43,13 @@ For scenarios where you need full container orchestration, including service dis
     az container create \
       --resource-group learn-deploy-aci-rg \
       --name mycontainer \
-      --image microsoft/aci-helloworld \
+      --image mcr.microsoft.com/azuredocs/aci-helloworld \
       --ports 80 \
       --dns-name-label $DNS_NAME_LABEL \
       --location eastus
     ```
 
-    `$DNS_NAME_LABEL` specifies your DNS name. The image name, **microsoft/aci-helloworld**, refers to a Docker image hosted on Docker Hub that runs a basic Node.js web application.
+    `$DNS_NAME_LABEL` specifies your DNS name. The image name, **azuredocs/aci-helloworld**, refers to a container image hosted on Microsoft Container Registry that runs a basic Node.js web application.
 
 1. When the `az container create` command completes, run `az container show` to check its status.
 
@@ -66,7 +66,7 @@ For scenarios where you need full container orchestration, including service dis
     ```output
     FQDN                                    ProvisioningState
     --------------------------------------  -------------------
-    aci-demo.eastus.azurecontainer.io       Succeeded
+    aci-demo-0000.eastus.azurecontainer.io  Succeeded
     ````
 
     If your container is in the **Creating** state, wait a few moments and run the command again until you see the **Succeeded** state.

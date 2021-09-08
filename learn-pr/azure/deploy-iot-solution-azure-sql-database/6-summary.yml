@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-iot-solution-azure-sql-database.6-summary
+title: Summary
+metadata:
+  title: Summary
+  description: This unit summarizes what you've learned in this module.
+  ms.date: 07/19/2021
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-summary.md)]

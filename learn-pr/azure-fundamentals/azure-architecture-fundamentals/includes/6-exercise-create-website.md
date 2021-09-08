@@ -22,7 +22,7 @@ We're going to use one of the WordPress application options from Azure Marketpla
 
 Typically, the first thing we'd do is to create a *resource group* to hold all the things that we need to create. The resource group enables us to administer all the services, disks, network interfaces, and other elements that potentially make up our solution as a unit. We can use the Azure portal to create and manage our solution's resource groups. Keep in mind that you can also manage resources via a command line by using the Azure CLI. The Azure CLI is a useful option if you need to automate the process in the future.
 
-In the free Azure sandbox environment, you'll use the pre-created resource group  **\[sandbox resource group name\]** , and you don't need to do this step.
+In the free Azure sandbox environment, you'll use the pre-created resource group **<rgn>\[sandbox resource group name\]</rgn>**, and you don't need to do this step.
 
 ### Choose a location
 
@@ -37,7 +37,12 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
     <br><br>
 4.  Azure Marketplace has many services, solutions, and resources available for you to use. We know that we want to install WordPress, so we can do a quick search for it. In the **Search the Marketplace** box with the listed application options, enter **WordPress**. Select the default **WordPress** option from the list of options available.<br><br>:::image type="content" source="../media/search-select-wordpress-e9503694.png" alt-text="Screenshot of the Azure portal showing search results for the term WordPress with the WordPress option highlighted.":::
     <br><br>
-5.  In the **WordPress** pane that appears, you'll typically find more information about the item you're about to install, such as the publisher, a brief description of the resource, and links to more information. Make sure to review this information. Select **Create** to begin the process to create a WordPress app. The **WordPress/Create** pane appears.<br><br>:::image type="content" source="../media/create-site-4de939e8.png" alt-text="Screenshot of the Azure portal showing WordPress resource type summary.":::
+5.  In the **WordPress** pane that appears, you'll typically find more information about the item you're about to install, such as the publisher, a brief description of the resource, and links to more information. Make sure to review this information. Select **Create** to begin the process to create a WordPress app. The **WordPress/Create** pane appears.<br>
+    
+    > [!NOTE]
+    > Please verify that you have selected the correct (default) WordPress site above in step 4. It should match the screenshot below.<br>
+    
+    :::image type="content" source="../media/create-site-4de939e8.png" alt-text="Screenshot of the Azure portal showing WordPress resource type summary.":::
     <br><br>
 6.  Several options appear to configure your deployment. Enter the following values for each setting.<br><br>
     
@@ -70,7 +75,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
         Resource Group
       :::column-end:::
       :::column:::
-        Select the **Use existing** option, and then select the  **\[sandbox resource group name\]**  resource group from the dropdown.
+        Select the **Use existing** option, and then select the **<rgn>\[sandbox resource group name\]</rgn>** resource group from the dropdown.
       :::column-end:::
     :::row-end:::
     :::row:::
