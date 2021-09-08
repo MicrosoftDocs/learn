@@ -1,6 +1,6 @@
-You decided to follow your colleague’s suggestion to learn about mindset. Remember that *mindset* is how you perceive your abilities. The two types of mindset are *fixed* and *growth*.
+You decide to follow your colleague's suggestion to learn about mindset. Remember that *mindset* is how you perceive your abilities. The two types of mindset are *fixed* and *growth*.
 
-To learn more about how you can cultivate a growth mindset, review the following video, which is approximately 4 minutes long.
+To learn more about how you can cultivate a growth mindset, review this video, which is about four minutes long:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OFD7]
 
@@ -10,21 +10,21 @@ After reviewing the video, take a few minutes to think about your answers to the
 
 - What did you learn about growth mindset from the video that shifts your perspective?
 
-- What’s one area you’d like to work on to have a stronger growth mindset?
+- What's one area you'd like to work on to have a stronger growth mindset?
 
 ## Examine fixed mindset
 
-A *fixed mindset* is an assumption that character, intelligence, and creative ability are static givens that can’t be altered. A fixed mindset is a belief that people are born with certain abilities that they can’t change. For example, a person with a fixed mindset might think “I’m not a tech person.”
+A *fixed mindset* is an assumption that character, intelligence, and creative ability are static givens that can't be altered. A fixed mindset is a belief that people are born with certain abilities that they can't change. For example, a person with a fixed mindset might think "I'm not a tech person."
 
-With a fixed mindset, new situations reveal what those abilities are. Each situation becomes a test that reveals the skills that you were born with based on how you perform:
+With a fixed mindset, new situations reveal what your abilities are. Each situation becomes a test that reveals the skills that you were born with based on how you perform:
 
-- If you do well, you were meant to do it—you were born with it.
+- If you do well, you were meant to do it. You were born with that ability.
 
-- If you don’t do well, then you weren’t meant to do it—you weren’t born with it.
+- If you don't do well, you weren't meant to do it. You weren't born with the ability.
 
-You then categorize every situation as either something you can or can’t do. You respond to them with either, “Yes, I can do that” or “No, I can’t do that.”
+You then categorize every situation as something you either can or can't do. You respond to situations with either, "Yes, I can do that" or "No, I can’t do that."
 
-Having a fixed mindset also means that you seek validation and approval from others. Because of this, you might cling to what you’re already good at and avoid risk and spontaneity which have a higher chance of failure, and therefore, judgment. Eliminating experimentation and risk can prevent effective learning and growth. Inner dialogue such as, “Will I succeed or fail?” or “Will I seem smart or dumb?” creates a barrier to developing your potential.
+Having a fixed mindset also means that you seek validation and approval from others. Because of that mindset, you might cling to what you’re already good at and avoid risk and spontaneity, which have a higher chance of failure, and therefore, judgment. Eliminating experimentation and risk can prevent effective learning and growth. Inner dialogue like "Will I succeed or fail?" or "Will I seem smart or dumb?" creates a barrier to developing your potential.
 
 :::image type="content" source="../media/2-fixed-mindset.png" alt-text="Fixed mindset represented as a menacing figure behind an upset person who is thinking, what if I fail in front of everyone?" border="false":::
 
