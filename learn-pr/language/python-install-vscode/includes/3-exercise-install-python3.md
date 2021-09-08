@@ -1,4 +1,4 @@
-3-exercise-install-python3.mdIn the previous exercise, you ran a command to determine whether you had Python 3 installed. If you need to install Python 3, choose your operating system at the top of this page, and then follow the instructions.
+In the previous exercise, you ran a command to determine whether you had Python 3 installed. If you need to install Python 3, choose your operating system at the top of this page, and then follow the instructions below.
 
 If you determined that you already have Python 3 installed, you can scroll to the bottom of this page and select **Continue**.
 
