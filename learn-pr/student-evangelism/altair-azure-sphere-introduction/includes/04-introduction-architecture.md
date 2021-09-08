@@ -1,6 +1,3 @@
-
-## Introduction to the cloud-connected Altair emulator on Azure Sphere
-
 The core of the system is the Open Source Intel 8080 CPU emulator that runs compiled Intel 8080 binaries. Layered on the emulator is Altair BASIC and the CP/M operating system. On CP/M, three languages are available: BASIC, C, and Assembly.
 
 - The solution integrates several Azure cloud services including:
@@ -8,12 +5,11 @@ The core of the system is the Open Source Intel 8080 CPU emulator that runs comp
   - An Azure Static Web App for the Altair Web Terminal
   - An Azure Virtual Machine. The virtual machine runs the virtual disk and MQTT broker services.
 
+:::image type="content" source="../media/altair-azure-sphere-architecture.png" alt-text="Diagram that shows the Azure Sphere architecture." border="false":::
+
 - The Altair emulator running on the Azure Sphere is accessible via a web browser-based terminal.
 
 - The Altair emulator runs on the Azure Sphere Cortex A7. Depending on your hardware configuration, a virtual disk cache or SD Card server is running on one of the real-time Cortex M4 cores.
-
-:::image type="content" source="../media/altair-azure-sphere-architecture.png" alt-text="Diagram that shows the Azure Sphere architecture." border="false":::
-
 
 ## The Altair emulator application architecture
 
@@ -33,10 +29,9 @@ The Altair emulator consists of two applications, one high-level application, an
 
     - SD card support for the Altair emulator for the Avnet Azure Sphere Starter Kits with the MikroE microSD Click. The MikroE microSD Click must be plugged into socket 1 on the Avnet Azure Sphere Starter Kit.
 
-
 ## Altair Web Terminal
 
-The cloud-connected Altair on Azure Sphere project connects to the Web Terminal by redirecting standard input and output over [MQTT](https://en.wikipedia.org/wiki/MQTT?azure-portal=true). 
+The cloud-connected Altair on Azure Sphere project connects to the Web Terminal by redirecting standard input and output over [MQTT](https://en.wikipedia.org/wiki/MQTT?azure-portal=true).
 
 The Web Terminal is an HTML/CSS/JavaScript application built on the [MQTT](https://www.eclipse.org/paho/index.php?page=clients/js/index.php&azure-portal=true) and [Xterm](https://xtermjs.org?azure-portal=true) JavaScript libraries.
 
@@ -52,6 +47,6 @@ In the following exercise, you'll learn how to deploy the Altair Web Terminal St
 
 Applications running on CP/M will have read/write access to drive B: enabling you can save files when the virtual disk server running. The virtual disk server can run on your desktop, or in a cloud-based Azure Virtual Machine.
 
-Drive B: disk sector reads and writes are sent over MQTT to the Python-based virtual disk server. The disk sector **Cache-aside** cache is used to improve the performance of the virtual drive.
-
 :::image type="content" source="../media/altair-azure-sphere-disk-cache-server.png" alt-text="Diagram that shows the Altair Web Terminal architecture." border="false":::
+
+Drive B: disk sector reads and writes are sent over MQTT to the Python-based virtual disk server. The disk sector **Cache-aside** cache is used to improve the performance of the virtual drive.
