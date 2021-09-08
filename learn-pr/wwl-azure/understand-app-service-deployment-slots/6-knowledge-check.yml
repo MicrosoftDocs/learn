@@ -16,7 +16,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "By default, all client requests to the app's production URL (`http://<app_name>.azurewebsites.net`) are routed to the production slot. You can automatically route a portion of the traffic to another slot. What is the default routing rule applied to new deployment slots?"
+  - content: "By default, all client requests to the app's production URL (`http://<app_name>.azurewebsites.net`) are routed to the production slot. One can automatically route a portion of the traffic to another slot. What is the default routing rule applied to new deployment slots?"
     choices:
     - content: "0%"
       isCorrect: true
