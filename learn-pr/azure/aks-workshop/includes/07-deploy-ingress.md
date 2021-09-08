@@ -20,7 +20,7 @@ In this exercise, you will:
 
 ## Deploy a Kubernetes ingress controller running NGINX
 
-A Kubernetes ingress controller is software that provides layer 7 load balancer features. These features include reverse proxy, configurable traffic routing, and TLS termination for Kubernetes services. You install the ingress controller and configure it to replace the load balancer. With the ingress controller, you can now do all load balancing, authentication, TSL/SSL, and URL-based routing configuration without the need for extra software outside of the cluster.
+A Kubernetes ingress controller is software that provides layer 7 load balancer features. These features include reverse proxy, configurable traffic routing, and TLS termination for Kubernetes services. You install the ingress controller and configure it to replace the load balancer. With the ingress controller, you can now do all load balancing, authentication, TLS/SSL, and URL-based routing configuration without the need for extra software outside of the cluster.
 
 :::image type="content" source="../media/07-ratings-web-ingress.png" alt-text="Screenshot of the ratings-web application." loc-scope="other"::: <!-- no-loc -->
 
@@ -187,7 +187,7 @@ Let's set up an Ingress resource with a route to the ratings-web service.
 
 Open the host name you configured on the ingress in a web browser to view and interact with the application. For example, at http:\//frontend.13.68.177.68.nip.io.
 
-![Screenshot of the ratings-web application.](../media/07-ratings-web-ingress.png)
+:::image type="content" source="../media/07-ratings-web-ingress.png" border="false" alt-text="[Screenshot of the ratings-web application.":::
 
 ## Summary
 
