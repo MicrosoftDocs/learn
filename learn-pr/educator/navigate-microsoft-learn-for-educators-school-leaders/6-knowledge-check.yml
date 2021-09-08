@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.navigate-microsoft-learn-for-educators-school-leaders.knowledge-check
+title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+metadata:
+  unitType: knowledge_check
+  title: "Knowledge check" # user input: module title for browser tab and search results
+  description: "Knowledge check to assess how well you know the content of this module" # user input: a description for site search and SEO
+  ms.date: 9/1/2021
+  author: sadadow
+  ms.author: saadad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+durationInMinutes: 5 # user input: the estimate time to complete the unit
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "Where do you find your badges?"
+    choices:
+    - content: "Profile>Achievements"
+      isCorrect: true
+      explanation: "You got it! Keep taking more modules to earn more badges."
+    - content: "Profile>Settings"
+      isCorrect: false
+      explanation: "There are many great things you can do in settings, however, your badges will display elsewhere."
+    - content: "Profile>Activities"
+      isCorrect: false
+      explanation: "This is a great place to see your progress, but your badges will appear elsewhere. "
+  - content: "Why would I want to use collections?"
+    choices:
+    - content: "Collections show you what you need to do to earn trophies."
+      isCorrect: false
+      explanation: "Not quite, think more about how a collection can be shared and organized."
+    - content: "Collections show you what your badges look like."
+      isCorrect: false
+      explanation: "This will be under your achievements, not in your collections."
+    - content: "Collections allow you to easily curate and organize sets of content and share them with peers."
+      isCorrect: true
+      explanation: "Keep your knowledge organized and feel free to help out your peers by sending it to them. "
+  - content: "After completing a learning path, you will earn a ________."
+    choices:
+    - content: "Badge"
+      isCorrect: false
+      explanation: "You will earn a badge for a module, but not a learning path."
+    - content: "Trophy"
+      isCorrect: true
+      explanation: "Way to go! You got it!"
+    - content: "Certification"
+      isCorrect: false
+      explanation: "Not quite, please try again"
+  - content: "Which of these statements is false?"
+    choices:
+    - content: "All course history and badges will be migrated from the Microsoft Educator center to Microsoft Learn."
+      isCorrect: false
+      explanation: "This is true! All your achievements from MEC will be added to your Learn profile."
+    - content: "You can share your profile with others by sending them the public URL."
+      isCorrect: false
+      explanation: "This is true! Your profile URL can help connect peers and school leaders to your achievements."
+    - content: "You can't link more than one Microsoft account to your Learn profile"
+      isCorrect: true
+      explanation: "This is false. Learn allows you to combine multiple Microsoft accounts on your profile."
