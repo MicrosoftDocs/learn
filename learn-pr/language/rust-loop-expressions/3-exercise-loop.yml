@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-loop-expressions.3-exercise-loop
+metadata:
+  title: "Exercise: Use a loop to iterate on data"
+  description: Use what you've learned about loops to complete the code.
+  ms.date: 08/19/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Exercise: Use a loop to iterate on data"
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-loop.md)]
