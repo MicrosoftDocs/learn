@@ -46,7 +46,7 @@ Install [Git for Windows](https://git-scm.com/downloads?azure-portal=true).
 
 Install the latest version of PowerShell on your computer.
 
-- [PowerShell on Windows](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows)
+- [PowerShell on Windows](/powershell/scripting/install/installing-powershell-core-on-windows)
 
 ### Install the real-time core GNU Arm Embedded Toolchain for Windows
 
@@ -84,7 +84,7 @@ sudo apt install git
 
 Install the latest version of PowerShell on your computer.
 
-- [PowerShell on Linux](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-linux)
+- [PowerShell on Linux](/powershell/scripting/install/installing-powershell-core-on-linux)
 
 ### Install the real-time core GNU Arm Embedded Toolchain for Linux
 
@@ -161,13 +161,13 @@ The Peacock extension allows you to change the color of your Visual Studio Code 
    azsphere device enable-development -r
    ```
 
-## Clone the Altair on Azure Sphere git repository
+## Clone the AzureSphereAltair8800 GitHub repository
 
 > [!NOTE]
 > Clone the *Altair project* to a folder close to the root folder on your computer. For example, **c:\lab**, or **~/**. The reason is that the Azure Sphere build process uses CMake which can struggle with long path and folder names.
 
 ```bash
-git clone --recurse-submodules --depth 1 https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.git
+git clone --recurse-submodules https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.git
 ```
 
 ## Update and test your Azure Sphere installation
