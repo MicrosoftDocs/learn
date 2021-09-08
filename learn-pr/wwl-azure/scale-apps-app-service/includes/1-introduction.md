@@ -8,6 +8,3 @@ After completing this module, you'll be able to:
 * Create autoscaling rules for a web app
 * Monitor the effects of autoscaling
 
-## Prerequisites
-
-* Experience using the Azure portal to create and manage App Service web apps
