@@ -170,20 +170,24 @@ The Peacock extension allows you to change the color of your Visual Studio Code 
 git clone --recurse-submodules --depth 1 https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.git
 ```
 
-## Update and test the Azure Sphere configuration
+## Update and test your Azure Sphere installation
 
-When the Altair emulator project was released, it targeted version 10 of the Azure Sphere APIs and version 21.07 of the Azure Sphere SDK. It is likely you installed a more recent version of the Azure Sphere SDK. If you do install a more recent version of the Azure Sphere SDK, then you need to update the project TARGET_API_SET and TOOLS_REVISION settings. These settings are held in the **cmake/azsphere_config.cmake** file.
+When the Altair emulator project was released, it targeted version 10 of the Azure Sphere APIs and version 21.07 of the Azure Sphere SDK. It is likely you installed a more recent version of the Azure Sphere SDK.
 
-Follow these steps to update the configuration files for all Azure Sphere projects in the **Altair8800Emulator** folder.
+Follow these steps to update the configuration files for all high-level Azure Sphere projects in the **Altair8800Emulator** folder.
+
+The **Update_config**
 
 1. Open a **Command prompt**.
 1. Navigate to the **Altair8800Emulator** folder you cloned to your computer.
-1. Run the **Update_Config** PowerShell script.
+1. Run the **update_Config** PowerShell script.
 
     ```pwsh
     pwsh ./tools/build-tools/update_config.ps1
 
     ```
+
+> For your information. The The **update_config** updates the **cmake/azsphere_config.cmake** file for each high-level Azure Sphere project in the **Altair8800Emulator** folder you cloned.
 
 Test you can build the Altair 8800 projects.
 
