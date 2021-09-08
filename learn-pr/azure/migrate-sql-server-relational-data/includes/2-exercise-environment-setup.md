@@ -5,11 +5,11 @@ In this exercise, you lay the groundwork for using Data Migration Assistant. You
 
 This deployment will create the following resources:
 
-- A resource group.
-- A SQL Server instance.
-- An empty Azure SQL database.
-- A virtual machine running SQL Server.
-- Network and storage resources to support the previous items.
+- A resource group
+- A SQL Server instance
+- An empty Azure SQL database
+- A virtual machine running SQL Server
+- Network and storage resources to support the previous items
 
 ## Deploy the template
 
@@ -41,4 +41,4 @@ This deployment will create the following resources:
 
     Make note of the passwords that you used for the accounts, because you'll use them later. This deployment will take 10 to 15 minutes. While this is in progress, continue to the next unit to learn about the migration process.
 
-1. When deployment completes, select **Go to resource group**. The **admsdemorg** resource group that you deployed appears.
+1. When deployment completes, select **Go to resource group**. The **admsdemorg** pane for resource group that you deployed appears.

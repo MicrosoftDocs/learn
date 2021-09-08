@@ -1,12 +1,12 @@
-Control actions let your logic app make decisions. The social-media monitor will use a control action to test the sentiment score of a tweet and branch based on whether it is positive or negative. In this unit, we'll look at the four control actions that help you manage the execution path through your app. We'll also see how to use the Logic Apps Designer to add a control action and configure its settings.
+Control actions let your logic app make decisions. The social media monitor will use a control action to test the sentiment score of a tweet and branch based on whether it is positive or negative. In this unit, we'll look at the four control actions that help you manage the execution path through your app. We'll also see how to use the Logic Apps Designer to add a control action and configure its settings.
 
 ## *Condition* action
 
 A *condition* action is an *if* statement that lets your app do different things based on the data you're processing. It consists of a Boolean expression and two actions. At runtime, the execution engine evaluates the expression and chooses an action based on whether the expression is true or false.
 
-For example, you might want to route an expense report to a different manager based on the amount. If you're processing an email, you might need to test whether it is flagged as high-priority. In our social-media app, we'll use a *condition* statement to branch based on the sentiment score of the tweet. The following illustration shows the use of the *condition* control action in our app.
+For example, you might want to route an expense report to a different manager based on the amount. If you're processing an email, you might need to test whether it is flagged as high-priority. In our social media app, we'll use a *condition* statement to branch based on the sentiment score of the tweet. The following illustration shows the use of the *condition* control action in our app.
 
-![An illustration showing a conceptual view of the entire social-media monitor app. The *condition* control action is highlighted.](../media/if-statement-social-media.png)
+![An illustration showing a conceptual view of the entire social media monitor app. The *condition* control action is highlighted.](../media/if-statement-social-media.png)
 
 ### Types and operators
 
@@ -135,4 +135,4 @@ The designer gives you a GUI that lets you build complex expressions, included g
 
 ![A screenshot showing a configured **Condition** action in the Logic Apps Designer. The image contains a **Detect sentiment** action followed by a **Condition** action. The **Condition** action has a simple expression that tests whether the sentiment score is greater than 0.7.](../media/condition-action-designer.png)
 
-In our social-media monitor app, we'll be using the **Condition** action to add an if-statement to test the sentiment score.
+In our social media monitor app, we'll be using the **Condition** action to add an if-statement to test the sentiment score.
