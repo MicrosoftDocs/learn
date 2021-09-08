@@ -1,4 +1,4 @@
-Microsoft Transact-SQL (T-SQL) provides a robust programming language with features that let you temporarily store values in variables, apply conditional execution of commands, pass parameters to stored procedures, and control the flow of your programs. 
+Transact-SQL (T-SQL) provides a robust programming language with features that let you temporarily store values in variables, apply conditional execution of commands, pass parameters to stored procedures, and control the flow of your programs. 
 
 In this module, you'll learn how to enhance your T-SQL code with programming elements.
 
