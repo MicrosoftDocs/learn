@@ -2,7 +2,7 @@ In App Service, app settings are variables passed as environment variables to th
 
 Application settings can be accessed by navigating to your app's management page and selecting **Configuration > Application Settings**.
 
-:::image type="content" source="../media/config-app-settings.png" alt-text="Navigating to Configuration > Application settings":::
+:::image type="content" source="../media/configure-app-settings.png" alt-text="Navigating to Configuration > Application settings":::
 
 For ASP.NET and ASP.NET Core developers, setting app settings in App Service are like setting them in `<appSettings>` in *Web.config* or *appsettings.json*, but the values in App Service override the ones in *Web.config* or *appsettings.json*. You can keep development settings (for example, local MySQL password) in *Web.config* or *appsettings.json*, but production secrets (for example, Azure MySQL database password) safe in App Service. The same code uses your development settings when you debug locally, and it uses your production secrets when deployed to Azure.
 
@@ -12,7 +12,7 @@ App settings are always encrypted when stored (encrypted-at-rest).
 
 To add a new app setting, click **New application setting**. If you are using deployment slots you can specify if your setting is swappable or not. In the dialog, you can stick the setting to the current slot.
 
-:::image type="content" source="../media/app-config-slotsetting.png" alt-text="Selecting deployment slot setting to stick the setting to the current slot.":::
+:::image type="content" source="../media/app-configure-slotsetting.png" alt-text="Selecting deployment slot setting to stick the setting to the current slot.":::
 
 To edit a setting, click the **Edit** button on the right side.
 
