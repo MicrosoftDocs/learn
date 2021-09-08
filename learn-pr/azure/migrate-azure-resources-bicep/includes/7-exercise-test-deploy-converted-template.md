@@ -54,7 +54,7 @@ Review the what-if output, which looks like the following example:
 
 # [Screenshot](#tab/screenshot)
 
-:::image type="content" source="../media/7-whatif-output-1.png" alt-text="Screenshot of the Visual Studio Code terminal that shows the output from the what-if operation, with three changes detected..":::
+:::image type="content" source="../media/7-whatif-output-1.png" alt-text="Screenshot of the Visual Studio Code terminal that shows the output from the what-if operation, with three changes detected.":::
 
 # [Text](#tab/textoutput)
 
