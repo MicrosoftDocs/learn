@@ -4,7 +4,7 @@ In this module, you will learn how to use the set operators UNION and INTERSECT 
 
 When working with set operators, if you need the results to be sorted, add an ORDER BY statement to the final result. You should not use the ORDER BY statement with the input queries.
 
-After completing this module, you’ll be able to:
+After completing this module, you’ll be able to: 
 
 - Use the UNION operator.
 - Use the INTERSECT and EXCEPT operators.
