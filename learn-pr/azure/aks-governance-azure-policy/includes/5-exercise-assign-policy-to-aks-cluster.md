@@ -18,7 +18,10 @@ We begin by deploying an image from dockerhub.com into the cluster. The first st
    code nginxfromdocker.yaml
    ```
 
-3. Enter the following yaml code into the newly created file and save it by entering Ctrl+S
+3. Enter the following yaml code into the newly created file
+1. Save the file by selecting the **...** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
+> [!IMPORTANT]
+> Whenever you paste or change code into a file in the editor, make sure to save afterwards by selecting the **...** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
 
    ```yaml
    apiVersion: apps/v1
@@ -258,7 +261,7 @@ Now that you know that the policy prevents images from Dockerhub from being crea
    code secondnginxfromdocker.yaml
    ```
 
-   Your updated file should look like below. Save the file by typing *Ctrl+S* and close the editor by typing *Ctrl+Q*
+   Your updated file should look like below. Save the file by selecting the **...** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
 
    ```yaml
    apiVersion: apps/v1
