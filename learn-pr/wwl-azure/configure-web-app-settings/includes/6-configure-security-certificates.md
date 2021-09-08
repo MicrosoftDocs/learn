@@ -62,7 +62,7 @@ If you already have a working App Service certificate, you can:
 
 If your certificate authority gives you multiple certificates in the certificate chain, you need to merge the certificates in order. Then you can Export your merged TLS/SSL certificate with the private key that your certificate request was generated with.
 
-If you generated your certificate request using OpenSSL, then you have created a private key file. To export your certificate to PFX, run the following command. Replace the placeholders *<private-key-file>* and *<merged-certificate-file>* with the paths to your private key and your merged certificate file.
+If you generated your certificate request using OpenSSL, then you have created a private key file. To export your certificate to PFX, run the following command. Replace the placeholders `<private-key-file>` and `<merged-certificate-file>` with the paths to your private key and your merged certificate file.
 
 ```bash
 openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-certificate-file>

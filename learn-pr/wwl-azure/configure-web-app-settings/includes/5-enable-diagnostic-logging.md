@@ -12,7 +12,7 @@ Deployment logging | Windows, Linux | App Service file system | Helps determine 
 
 ## Enable application logging (Windows)
 
-1. To enable application logging for Windows apps in the Azure portal, navigate to your app and select **App Service logs**.
+1. To enable application logging for Windows apps in the Azure Portal, navigate to your app and select **App Service logs**.
 
 1. Select **On** for either **Application Logging (Filesystem)** or **Application Logging (Blob)**, or both. The **Filesystem** option is for temporary debugging purposes, and turns itself off in 12 hours. The **Blob** option is for long-term logging, and needs a blob storage container to write logs to.
 

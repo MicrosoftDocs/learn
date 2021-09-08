@@ -1,4 +1,4 @@
-You've been tasked to configure your companies app, which is hosted in Azure App Service, to correctly to align with the CI/CD pipeline.
+In App Service, app settings are variables passed as environment variables to the application code.
 
 ## Learning objectives
 
