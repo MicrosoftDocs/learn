@@ -10,6 +10,19 @@ metadata:
   ms.author: jelooper 
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/2-networking.md)]
+quiz:
+  questions:
+  - content: "Networking strategies include:"
+    choices:
+    - content: "Meetups and Conferences"
+      isCorrect: false
+      explanation: "This is a good external method of networking, but there are others."
+    - content: "ERGs or Employee Groups"
+      isCorrect: false
+      explanation: "This is a good internal networking method, but there are others."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "It's possible to network both inside and outside an organization."

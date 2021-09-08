@@ -51,7 +51,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
     ![Bash Shell and Code Editor.](../media/5-azure-cosmos-db-new-shell-editor-csharp.png)
 
-1. Click *myApp.csproj* in the Explorer pane to open the file in the code editor.
+1. Select *myApp.csproj* in the Explorer pane to open the file in the code editor.
 
     1. Add a new `<PropertyGroup>` XML element to the project configuration within the Project element. To do so, locate the existing `<PropertyGroup>` element, and add the following lines beneath it:
 
@@ -340,7 +340,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
     The Bash shell screen splits into two sections, showing you the coding interface at the top. You can maximize the screen to have more space to edit your files.
 
-    ![Bash Shell and Code Editor.](../media/5-azure-cosmos-db-new-shell-editor-java.png)
+    ![Bash Shell and Code Editor for java.](../media/5-azure-cosmos-db-new-shell-editor-java.png)
 
 1. Click *pom.xml* in the Explorer pane to open the file in the code editor. Replace the entire file with the following code:
 
@@ -408,7 +408,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
 1. In the Explorer pane of the Code Editor, expand the nodes in the tree to *src\main\java\com\mslearn*, then click *App.java* to open the file in the editor.
 
-    ![Bash Shell and Code Editor.](../media/5-azure-cosmos-db-new-shell-editor-java-app.png)
+    ![App.java in Bash shell.](../media/5-azure-cosmos-db-new-shell-editor-java-app.png)
 
 1. Below the `package com.mslearn` line, add the following imports:
 
@@ -837,7 +837,7 @@ Container Id:   Clothing
     }
     ```
 
-1. Finally, create the `Clothing` container with the `cosmosdb collection create` command in the Cloud Shell, where you will specify your partition key and throughput values:
+1. Finally, create the `Clothing` container with the `cosmosdb sql container create` command in the Cloud Shell, where you will specify your partition key and throughput values:
 
     ```azurecli
     az cosmosdb sql container create \

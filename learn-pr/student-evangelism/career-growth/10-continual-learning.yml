@@ -13,3 +13,16 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/10-continual-learning.md)]
+quiz:
+  questions:
+  - content: "Is it necessary to go back to school to continue learning?"
+    choices:
+    - content: "No, but it can be a valuable activity."
+      isCorrect: true
+      explanation: "That's correct, it can be valuable but is often not necessary."
+    - content: "Yes, accumulate as many degrees as possible."
+      isCorrect: false
+      explanation: "False, it's not necessary to accumulate degrees."
+    - content: "Yes, it is impossible to advance in a company without advanced degrees."
+      isCorrect: false
+      explanation: "False, this is rarely the case."
