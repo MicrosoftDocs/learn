@@ -7,6 +7,12 @@ The `az webapp up` command makes it easy to create and update web apps. When exe
 * Create an app with the specified name.
 * Zip deploy files from the current working directory to the web app.
 
+## Prerequisites
+
+Before you begin make sure you have the following requirements in place:
+
+* An Azure account with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free).
+
 ## Login to Azure and download the sample app
 
 1. Login to the [Azure portal](https://portal.azure.com) and open open the cloud shell.
@@ -15,7 +21,7 @@ The `az webapp up` command makes it easy to create and update web apps. When exe
 
 1. After the shell opens be sure to select the **Bash** environment.
 
-    :::image type="content" source="../media/shellbashselection.png" alt-text="Selecting the Bash environment.":::
+    :::image type="content" source="../media/shell-bash-selection.png" alt-text="Selecting the Bash environment.":::
 
 1. In the Cloud Shell, create a directory and then navigate to it.
 
