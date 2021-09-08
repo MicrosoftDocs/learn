@@ -5,11 +5,11 @@ metadata:
   unitType: summary
   title: Summary
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 8/09/2021
-  author: johndowns
-  ms.author: jodowns
+  ms.date: 09/08/2021
+  author: vermegi
+  ms.author: givermei
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-summary.md)]
+  [!include[](includes/9-summary.md)]
