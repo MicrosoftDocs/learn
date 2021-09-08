@@ -10,6 +10,13 @@ Azure Service Health should be comprehended as a set of services. The services c
 
 Using these aspects of Azure Service Health, you will be able to see high level of details regarding the health of your environment.
 
+The access to Azure Service Health is available for any subscription to which you have owner, contributor or reader access. Once you have access you will be able to:
+
+* Create personalized dashboards showing services issues affecting your environment.
+* Configure cloud alerts to be aware about active and upcoming service issues.
+* Get access to shareable documents with details and updates, including incident root cause analyses.
+* Receive guidance during service incidents.
+
 <!-- 3. Define the product -------------------------------------------------------------
 
     Goal:

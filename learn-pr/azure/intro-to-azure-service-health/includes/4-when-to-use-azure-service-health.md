@@ -1,3 +1,15 @@
+Cloud failures will happen and you must be ready for that. There are different ways to be ready for that and certainly benefit from Azure Service Health capabilities  should be one of them.
+
+As important as monitoring your virtual machines, security events, network connectivity, applications, databases, and so on, be aware that the health of your cloud platform should be a top priority.
+
+On Azure, you have different tools to accomplish this monitoring strategy that complement each other. Azure Service Health should be included in your monitoring toolset to allow you to be aware regarding any issues on Azure platform.
+
+As an example, if you can be alerted in advance, regarding a service issue on the datacenter where your virtual machines are running, you can be proactive and avoid issues within your workload. For this reason, you should consider using Azure Service Health to stay informed about service issues that affect you. The service is provided free.
+
+The answer to the question about when use Azure Service Health is always. Doesn't matter if you have other tools to monitor the performance of your virtual machines or the health of your applications. Those tools will not be able to know about planned maintenance of Azure datacenters, only Azure Service Health will be able to give this information to you.
+
+
+
 <!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
     Goal: state what's in this unit and how it aligns to the 'evaluate' learning objective.
@@ -17,14 +29,6 @@
         * Connectors"
 -->
 
-In this section, we'll discuss Azure Service Health usage and the benefits, such as:
-
-* Personalized dashboards.
-* Configurable cloud alerts.
-* Shareable documents with details about issues.
-* Guidance and support during incidents.
-
-
 <!-- 2. Decision criteria introduction --------------------------------------------------------------------------------
 
     Goal: Lead-in to the criteria discussion.
@@ -43,37 +47,6 @@ In this section, we'll discuss Azure Service Health usage and the benefits, such
 
 ## Decision criteria
 -->
-
-Your cloud environment should be monitored. On Azure, you have different tools to accomplish this monitoring strategy which complement each other. Azure Service Health should be included in your monitoring toolset.
-
-As important as monitoring your virtual machines, security events, network connectivity, applications, databases, and so on are, be aware that the health of your cloud platform should be a top priority.
-
-As an example, if you can be alerted in advance, regarding a service issue on the datacenter where your virtual machines are running, you can be proactive and avoid issues within your workload. This is the  why you should consider using Azure Service Health to stay informed about service issues that affect you. The service is provided free.
-
-### Personalized dashboards
-
-With Azure Service Health, you can create a personalized dashboard (view) that allows you to filter on subscription, region, and service. Doing so,  allows you to customize the information available for review, based on what is more important/critical to your environment.
-
-:::image type="content" source="../media/4-personalized-dashboard.png" alt-text="Screenshot depicting an example of a Personalized Dashboard with multiple subscriptions selected, across two regions.":::
-
-### Configure cloud alerts
-
-Based on the selections you make, you can add a service health alert and choose which type of events you would like to be notified about.
-
-:::image type="content" source="../media/4-create-alert.png" alt-text="Screenshot depicting configuration of an alert rule. The image shows four event types selected for a single subscription.":::
-
-### Shareable documents with details about issues
-
-For any service issue, planned maintenance, health, or security advisories, you have the option to download a PDF document containing the relevant information. Selecting the issue, you can see the Summary information along with the option to download all information as PDF. You may find this useful when you need to share the details by e-mail, for example. Among other detailed information, the PDF will contain the event type, status, service impacted, region, impacted subscriptions, update history and more.
-
-:::image type="content" source="../media/4-shareable-documents.png" alt-text="Create Alert":::
-
-### Guidance and support during incidents
-
-If there are incidents, you can find guidance and related information about workarounds or actions you can take to minimize impact as well all issue updates.
-
-:::image type="content" source="../media/4-guidance-support.png" alt-text="Guidance and Support":::
-
 
 <!-- 3a. Decision criteria (for simple criteria) ----------------------------------------------------
 
