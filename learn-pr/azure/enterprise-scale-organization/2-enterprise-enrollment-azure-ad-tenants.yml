@@ -32,7 +32,7 @@ quiz:
     choices:
     - content: Multifactor authentication provides another layer of security and a second barrier of authentication.
       isCorrect: true
-      explanation: Enforce multifactor authentication and conditional access policies for all privileged accounts for greater security.
+      explanation: Enforce multifactor authentication and Conditional Access policies for all privileged accounts for greater security.
     - content: Multiple Azure AD tenants can't function in the same enrollment.
       isCorrect: false
       explanation: Multiple Azure AD tenants can function in the same enrollment.

@@ -14,7 +14,7 @@ You can use different features of Azure AD, depending on the type of license you
 
 - **Azure Active Directory Premium P1**. You get all the features from the free tier, but you can also let users access on-premises and cloud-based services and resources. You can use self-service group management or dynamic groups, where users are added and removed automatically, based on your criteria. This tier supports on-premises identity management suites like Microsoft Identity Manager. Self-service password reset is also supported for users who are based on-premises.
 
-- **Azure Active Directory Premium P2**. You get all the features of the previous two tiers, along with Active Directory Identity Protection. This feature helps you configure risk-based conditional access to protect applications from identity risks. You can also use privileged identity management, which lets you monitor and put detailed restrictions on administrators.
+- **Azure Active Directory Premium P2**. You get all the features of the previous two tiers, along with Active Directory Identity Protection. This feature helps you configure risk-based Conditional Access to protect applications from identity risks. You can also use privileged identity management, which lets you monitor and put detailed restrictions on administrators.
 
 Choose the license type you want, based on your organization's needs.
 

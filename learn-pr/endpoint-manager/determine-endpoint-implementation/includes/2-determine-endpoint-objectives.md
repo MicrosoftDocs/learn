@@ -14,7 +14,7 @@ Users expect to work from devices using organization apps, including reading, an
 
 ## Secure access on all devices
 
-When data is stored on mobile devices, it should be protected from malicious activity. You must determine how you want to secure your devices, and minimize the impact of malicious activity. To accomplish this objective, start by determining what Anti-virus (AV) and malware, conditional access protection, software updates, and authentication you plan to use for both cloud-based devices and on-premises devices. 
+When data is stored on mobile devices, it should be protected from malicious activity. You must determine how you want to secure your devices, and minimize the impact of malicious activity. To accomplish this objective, start by determining what Anti-virus (AV) and malware, Conditional Access protection, software updates, and authentication you plan to use for both cloud-based devices and on-premises devices. 
 
 ## Distribute IT
 
