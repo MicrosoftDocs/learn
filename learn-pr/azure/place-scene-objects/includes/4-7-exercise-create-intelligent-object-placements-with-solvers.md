@@ -18,9 +18,11 @@ Solvers are one of the components of the Mixed Reality Toolkit, which provides s
 
 3. Configure the DirectionalIndicator and SolverHandler components as follows:
 
-    * Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**
-    * Assign the **RoverExplorer** to the **DirectionalIndicator** component's **Directional Target** by dragging it from the Hierarchy window into the **None (Transform)** field
-    * Change the **View Offset** to 0.2
+    a. Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**.
+
+    b. Assign the **RoverExplorer** to the **DirectionalIndicator** component's **Directional Target** by dragging it from the Hierarchy window into the **None (Transform)** field
+
+    c. Change the **View Offset** to 0.2
 
     ![Unity with DirectionalIndicator solver component configured](../media/base-5-section-2-step-1-3.png)
 
@@ -34,10 +36,13 @@ Solvers are one of the components of the Mixed Reality Toolkit, which provides s
 
 1. In the Hierarchy window, select the RoverExplorer > **RoverAssembly** object, then in the Inspector window, use the **Add Component** button to add the **Tap To Place (Script)** component, and configure it as follows:
 
-    * Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**
-    * Uncheck the **Use Default Surface Normal Offset** and ensure **Surface Normal Offset** is set to 0
-    * Check the **Keep Orientation Vertical** checkbox
-    * From the **Magnetic Surfaces** > **Element 0** dropdown, uncheck all options expect **Spatial Awareness**
+    a. Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**.
+
+    b. Uncheck the **Use Default Surface Normal Offset** and ensure **Surface Normal Offset** is set to 0.
+
+    c. Check the **Keep Orientation Vertical** checkbox.
+
+    d. From the **Magnetic Surfaces** > **Element 0** dropdown, uncheck all options expect **Spatial Awareness**.
 
     ![Unity with TapToPlace solver component added and configured](../media/base-5-section-3-step-1-1.png)
 
@@ -47,9 +52,11 @@ Solvers are one of the components of the Mixed Reality Toolkit, which provides s
 
 3. Configure the event as follows:
 
-    * Assign the **RoverAssembly** object as a listener for the On Placing Started () event by dragging it from the Hierarchy window into the **None (Object)** field
-    * From the **No Function** dropdown, select **TapToPlace** > **float SurfaceNormalOffset** to update the SurfaceNormalOffset property value when the event is triggered
-    * Verify that the argument is set to **0**
+    a. Assign the **RoverAssembly** object as a listener for the On Placing Started () event by dragging it from the Hierarchy window into the **None (Object)** field.
+
+    b. From the **No Function** dropdown, select **TapToPlace** > **float SurfaceNormalOffset** to update the SurfaceNormalOffset property value when the event is triggered.
+
+    c. Verify that the argument is set to **0**.
 
     ![Unity with TapToPlace OnPlacingStarted event configured](../media/base-5-section-3-step-1-3.png)
 
