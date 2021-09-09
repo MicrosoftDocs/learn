@@ -20,47 +20,47 @@ quiz:
     choices:
     - content: "Kubernetes API"
       isCorrect: true
-      explanation: "All services use one of the key components of the Kubernetes platform, the Kubernetes API"
+      explanation: "Correct. All services use one of the key components of the Kubernetes platform, the Kubernetes API"
     - content: "az CLI"
       isCorrect: false
-      explanation: "az CLI isn't a key component of Kubernetes"
+      explanation: "Incorrect. az CLI isn't a key component of Kubernetes"
     - content: "kubectl"
       isCorrect: false
-      explanation: "kubectl is a tool used with Kubernetes but is not a key component used by Azure Arc-enabled data services"
+      explanation: "Incorrect. kubectl is a tool used with Kubernetes but is not a key component used by Azure Arc-enabled data services"
     - content: "Azure Arc Agents"
       isCorrect: false
-      explanation: "Azure Arc Agents are deployed on the Kubernetes cluster but not a component of Kubernetes"
+      explanation: "Incorrect. Azure Arc Agents are deployed on the Kubernetes cluster but not a component of Kubernetes"
   - content: "Which connected mode supports the Azure Resource Manager?"
     choices:
     - content: "indirect connected mode"
       isCorrect: false
-      explanation: "indirect connected mode can't use the Azure Resource Manager. You can't use tools like the Azure portal to deploy or manage Azure Arc-enabled data services"
+      explanation: "Incorrect. Indirect connected mode can't use the Azure Resource Manager. You can't use tools like the Azure portal to deploy or manage Azure Arc-enabled data services"
     - content: "direct connected mode"
       isCorrect: true
-      explanation: "With direct connected mode, users can use the Azure Resource Manager through the az CLI and Azure portal"
+      explanation: "Correct. With direct connected mode, users can use the Azure Resource Manager through the az CLI and Azure portal"
     - content: "Azure connected mode"
       isCorrect: false
-      explanation: "The only connected mode options are direct or connected"
+      explanation: "Incorrect. The only connected mode options are direct or connected"
   - content: "The Azure Arc data controller requires a Kubernetes cluster to be connected to Azure"
     choices:
     - content: "true"
       isCorrect: false
-      explanation: "An Azure Arc data controller can be deployed in indirect connected mode, which doesn't require the Kubernetes cluster to be connected to Azure"
+      explanation: "Incorrect. An Azure Arc data controller can be deployed in indirect connected mode, which doesn't require the Kubernetes cluster to be connected to Azure"
     - content: "false"
       isCorrect: true
-      explanation: "An Azure Arc data controller can be deployed in indirect connected mode, which doesn't require the Kubernetes cluster to be connected to Azure"
+      explanation: "Correct. An Azure Arc data controller can be deployed in indirect connected mode, which doesn't require the Kubernetes cluster to be connected to Azure"
   - content: "What component coordinates Azure Resource Manager requests to deploy and manage Azure Arc-enabled data services on Kubernetes?"
     choices:
     - content: "Azure Arc data controller"
       isCorrect: false
-      explanation: "The Azure Arc data controller coordinates only within in the Kubernetes cluster"
+      explanation: "Incorrect. The Azure Arc data controller coordinates only within in the Kubernetes cluster"
     - content: "Azure portal"
       isCorrect: false
-      explanation: "The Azure portal is an interface that uses the Azure Resource Manager"
+      explanation: "Incorrect. The Azure portal is an interface that uses the Azure Resource Manager"
     - content: "Azure Arc resource providers"
       isCorrect: true
-      explanation: "Azure Arc resource providers will coordinate this request with Azure Arc agents and the Azure Arc data controller in the Kubernetes cluster to complete the deployment of Kubernetes pods and services"
+      explanation: "Correct. Azure Arc resource providers will coordinate this request with Azure Arc agents and the Azure Arc data controller in the Kubernetes cluster to complete the deployment of Kubernetes pods and services"
     - content: "az CLI"
       isCorrect: false
-      explanation: "The az CLI is an interface that uses the Azure Resource Manager"
+      explanation: "Incorrect. The az CLI is an interface that uses the Azure Resource Manager"
       
