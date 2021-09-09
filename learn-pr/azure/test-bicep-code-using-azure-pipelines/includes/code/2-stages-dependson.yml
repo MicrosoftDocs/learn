@@ -1,0 +1,15 @@
+stages:
+
+- stage: Test
+  jobs:
+  - job: Test
+
+- stage: DeployUS
+  dependsOn: Test
+  jobs: 
+  - job: DeployUS
+
+- stage: DeployEurope
+  dependsOn: Test
+  jobs: 
+  - job: DeployEurope

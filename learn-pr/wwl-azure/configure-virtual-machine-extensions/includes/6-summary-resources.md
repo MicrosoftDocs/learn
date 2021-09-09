@@ -10,7 +10,7 @@ You should now be able to:
 
 You can learn more by reviewing the following.
 
- -  [Virtual machine extensions and features for Windows](/azure/virtual-machines/extensions/features-windows)
+ -  [Virtual machine extensions and features for Windows](/azure/virtual-machines/extensions/features-windows?toc=%2Fazure%2Fvirtual-machines%2Fwindows%2Ftoc.json)
  -  [Virtual machine extensions and features for Linux](/azure/virtual-machines/extensions/features-linux).
  -  [Learn - Automate the configuration of Windows Server IaaS Virtual Machines](/learn/modules/automate-configuration-of-windows-server-iaas-virtual-machines/)
  -  [Learn - Protect your virtual machine settings with Azure Automation State Configuration](/learn/modules/protect-vm-settings-with-dsc/)
