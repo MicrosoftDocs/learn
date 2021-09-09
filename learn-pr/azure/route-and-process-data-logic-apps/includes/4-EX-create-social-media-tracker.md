@@ -1,6 +1,6 @@
 In this exercise, we'll create our social media logic app using the Azure portal. We'll add a Twitter trigger using the Logic Apps Designer. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
 
-:::image type="complex" source="../media/exercise-add-trigger.png" alt-text="An illustration showing the triggers and actions in the social media monitor logic app." lightbox=../media/exercise-add-trigger.png border="false"::: 
+:::image type="complex" source="../media/exercise-add-trigger.png" alt-text="An illustration showing the triggers and actions in the social media monitor logic app." lightbox="../media/exercise-add-trigger.png" border="false"::: 
    The first step is a Twitter trigger labeled When a new tweet is posted. This trigger is highlighted to indicate that is the part of the app that will be completed in this exercise.
 :::image-end:::  
  
