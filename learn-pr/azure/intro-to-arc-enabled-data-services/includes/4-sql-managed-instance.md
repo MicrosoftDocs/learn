@@ -26,7 +26,7 @@ To understand the capabilities of Azure Arc-enabled SQL Managed Instance, it's i
 
 ### Core features
 
-Since Azure Arc-enabled SQL Managed Instance is based on the SQL Server engine, it provides core instance [features](/azure/azure-arc/data/managed-instance-features) almost 100% compatible with SQL Server and Azure SQL Managed Instance. The instance includes a compatible T-SQL language interface and all the features of security, performance, and availability.
+Since Azure Arc-enabled SQL Managed Instance is based on the SQL Server engine, it provides core instance features almost 100% compatible with SQL Server and Azure SQL Managed Instance. The instance includes a compatible T-SQL language interface and all the features of security, performance, and availability. You can learn more about [features](/azure/azure-arc/data/managed-instance-features) for Azure Arc-enabled SQL Managed instance in the Microsoft documentation.
 
 Like Azure SQL Managed instance, when you deploy Azure Arc-enabled SQL Managed instance you get a pre-installed, versionless SQL Server. Azure Arc-enabled SQL Managed instance uses container images from the Microsoft Container Registry (MCR).
 
@@ -34,13 +34,13 @@ Azure SQL Managed Instance uses gateway servers to abstract the application from
 
 ### Service tiers
 
-Like Azure SQL Managed Instance, you can deploy Azure Arc-enabled SQL Managed instance with two deployment options called [service tiers](/azure/azure-arc/data/service-tiers):
+Like Azure SQL Managed Instance, you can deploy Azure Arc-enabled SQL Managed instance with two deployment options called service tiers:
 
 - **General purpose** - As its name implies, this service tier is for most workloads. This service tier has a limit for resources such as core and memory but comes with built-in basic high availability through Kubernetes and shared storage. Instances in the general purpose tier map to features supported in SQL Server Standard Edition.
 
 - **Business critical (preview)** - This service tier is designed for workloads that require the best performance and highest level of availability. This service tier has no limits for memory or cores and uses availability groups to provide high availability with read scale-out. Instances in the business critical tier map to features supported in SQL Server Enterprise Edition.
 
-Both service tiers are billed on a per core basis but also include the ability to use Azure Hybrid Benefit licensing and a developer option for no cost. Business critical service tier is currently under preview so won't incur any charges for use.
+Both service tiers are billed on a per core basis but also include the ability to use Azure Hybrid Benefit licensing and a developer option for no cost. Business critical service tier is currently under preview so won't incur any charges for use. You can learn more about [service tiers](/azure/azure-arc/data/service-tiers) in the Microsoft documentation.
 
 ### Azure integration
 
