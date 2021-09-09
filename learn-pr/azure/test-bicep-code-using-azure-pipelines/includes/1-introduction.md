@@ -8,11 +8,13 @@ Recently, there have been several situations where you and your team have made c
 
 ## What will you be doing?
 
-In this module, you'll learn how you can test your Bicep code within your Azure DevOps pipeline. When your pipeline runs, you'll immediately get feedback on the changes that were made to your Bicep files. You'll add linting to ensure the quality of your Bicep code, and preflight deployment validation to increase the chance that your deployments will succeed. You'll also use the what-if operation to add a manual approval step to your pipeline, and once deployed, you'll verify your environment by executing further tests.
+In this module, you'll learn how you can test your Bicep code within your Azure DevOps pipeline. When your pipeline runs, you'll immediately get feedback on the changes that were made to your Bicep files. 
+
+You'll add linting to ensure the quality of your Bicep code, and preflight deployment validation to increase the chance that your deployments will succeed. You'll also use the what-if operation to add a manual approval step to your pipeline, and once deployed, you'll verify your environment by executing further tests.
 
 ## What is the main goal?
 
-After completing this module, you'll be able to update your Bicep deployment pipeline with validation and tests that help to ensure the quality of your Azure environment.
+After you complete this module, you'll be able to update your Bicep deployment pipeline with validation and tests that help to ensure the quality of your Azure environment.
 
 ## Prerequisites
 
@@ -23,7 +25,7 @@ You should be familiar with using:
   - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
   - Basic YAML pipelines using Azure Pipelines, including service connections.
 
-To work through the exercises in the module, you'll need an Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
+To work through the exercises in the module, you'll need an Azure account with the ability to create resource groups, Azure Active Directory applications, and service principals.
   
 You'll also need the following installed locally:
   
