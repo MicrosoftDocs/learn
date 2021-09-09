@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
-title: Azure Arc-enabled data services fundamentals
+title: Enable hybrid computing with Azure Arc-enabled data services
 durationInMinutes: 10
 content: |
   [!include[](includes/3-fundamentals.md)]
