@@ -1,8 +1,8 @@
-In this exercise, you will learn to reflect on your mindset. It's a good idea to note your answers on a device or on paper.
+In this exercise, you'll learn to reflect on your mindset. It's a good idea to note your answers on a device or on paper.
 
 ## Reflect on your mindset
 
-Use the following questions to reflect on your own mindset. 
+Use the following prompts to reflect on your own mindset: 
 
 - In which areas of your life do you think you have a growth mindset?
 
