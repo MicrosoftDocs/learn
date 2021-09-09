@@ -20,53 +20,53 @@ quiz:
     choices:
     - content: "The data must stay on-premises"
       isCorrect: true
-      explanation: "Azure Arc-enabled data services PostgreSQL Hyperscale provides a method to retain data on-premises, and the Azure PostgreSQL Hyperscale Service is cloud-based."
+      explanation: "Correct. Azure Arc-enabled data services PostgreSQL Hyperscale provides a method to retain data on-premises, and the Azure PostgreSQL Hyperscale Service is cloud-based."
     - content: "The system should be deployed from the Azure portal"
       isCorrect: false
-      explanation: "You can create both deployments from the Azure portal."
+      explanation: "Incorrect. You can create both deployments from the Azure portal."
     - content: "The system must work with a graphical user interface (GUI)"
       isCorrect: false
-      explanation: "You can use graphical tools in both types of deployment."
+      explanation: "Incorrect. You can use graphical tools in both types of deployment."
 
   - content: " You wish to perform a complete database restore to the same PostgreSQL Hyperscale server group. What must you check to ensure this is possible?"
     choices:
     - content: "The `backup` setting in the current manifest"
       isCorrect: false
-      explanation: "Only the later versions of PostgreSQL allow this."
+      explanation: "Incorrect. Only the later versions of PostgreSQL allow this."
     - content: "HDFS-enabled backups are set"
       isCorrect: false
-      explanation: "Only the later versions of PostgreSQL allow this."
+      explanation: "Incorrect. Only the later versions of PostgreSQL allow this."
     - content: "The version"
       isCorrect: true
-      explanation: "Only the later versions of PostgreSQL allow this."
+      explanation: "Correct. Only the later versions of PostgreSQL allow this."
     - content: "A secondary-tier Kubernetes Storage Class is available"
       isCorrect: false
-      explanation: "Only the later versions of PostgreSQL allow this."
+      explanation: "Incorrect. Only the later versions of PostgreSQL allow this."
 
 
   - content: " Which of the following table types can be stored on the coordinator node?"
     choices:
     - content: "Distributed"
       isCorrect: false
-      explanation: "Local tables can only be installed on the Coordinator node."
+      explanation: "Incorrect. Local tables can only be installed on the Coordinator node."
     - content: "Reference"
       isCorrect: false
-      explanation: "Local tables can only be installed on the Coordinator node."
+      explanation: "Incorrect. Local tables can only be installed on the Coordinator node."
     - content: "Local"
       isCorrect: true
-      explanation: "Local tables can only be installed on the Coordinator node."
+      explanation: "Correct. Local tables can only be installed on the Coordinator node."
 
   - content: " Which of the following is a good candidate for an application that uses Azure Arc-enabled data services PostgreSQL Hyperscale?"
     choices:
     - content: "Azure Table storage"
       isCorrect: false
-      explanation: "Real-time tables work well for Arc-enabled data services PostgreSQL Hyperscale"
+      explanation: "Incorrect. Real-time tables work well for Arc-enabled data services PostgreSQL Hyperscale"
     - content: "Immediate"
       isCorrect: false
-      explanation: "Real-time tables work well for Arc-enabled data services PostgreSQL Hyperscale"
+      explanation: "Incorrect. Real-time tables work well for Arc-enabled data services PostgreSQL Hyperscale"
     - content: "Real-time"
       isCorrect: true
-      explanation: "Real-time tables work well for Arc-enabled data services PostgreSQL Hyperscale"
+      explanation: "Correct. Real-time tables work well for Arc-enabled data services PostgreSQL Hyperscale"
     - content: "Secondary"
       isCorrect: false
-      explanation: "Real-time tables work well for Arc-enabled data services PostgreSQL Hyperscale"
+      explanation: "Incorrect. Real-time tables work well for Arc-enabled data services PostgreSQL Hyperscale"
