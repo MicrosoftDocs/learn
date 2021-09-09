@@ -24,7 +24,7 @@ In this exercise, you'll rebuild the image for the web app and upload it to Azur
     |---|---|
     | **Project details** |
     | Subscription | Select your Azure subscription in which you are allowed to create and manage resources. |
-    | Resource group | Select Create a new resource group with the name **learn-deploy-container-aci-rg**. Remember the name you select; you will be using it in the rest of the exercises in this module. Also, remember to clean up this resources when you're finished with the module. |
+    | Resource group | Select Create a new resource group with the name **learn-deploy-container-aci-rg**. Remember the name you select; you will be using it in the rest of the exercises in this module. Also, remember to clean up this resource when you're finished with the module. |
     | **Instance details** |
     | Registry name | Select a name of your choice. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. |
     | Location | Select a location that is close to you. |
@@ -59,7 +59,7 @@ In this exercise, you'll rebuild the image for the web app and upload it to Azur
     docker image ls
     ```
 
-    The output should look similar to this.
+    The output should look similar to the following:
 
     ```console
     REPOSITORY                                    TAG                 IMAGE ID            CREATED             SIZE
@@ -74,7 +74,7 @@ In this exercise, you'll rebuild the image for the web app and upload it to Azur
     docker login <login-server>
     ```
 
-4. Upload the image to you registry in Azure Container Registry by using the `docker push` command.
+4. Upload the image to your registry in Azure Container Registry by using the `docker push` command.
 
     ```bash
     docker push <registry-name>.azurecr.io/reservationsystem:latest
@@ -132,7 +132,7 @@ For the rest of the exercise, you'll return to the Azure portal.
     | Setting  | Value  |
     |---|---|
     | Networking type | Public |
-    | DNS name label | Choose a unique name. This will be used as part of the container's URL. |
+    | DNS name label | Choose a unique name, which will be used as part of the container's URL. |
     | **Ports** |
     | Ports | 80 |
     | Ports protocol | TCP |
@@ -159,4 +159,4 @@ For the rest of the exercise, you'll return to the Azure portal.
 
 1. Using a web browser, navigate to the URL `http://\<*fqdn*\>/api/reservations/1`, where *\<fqdn\>*  is the fully qualified domain name of the container instance. The web app should respond with a JSON document containing the details for reservation 1, as in the previous exercise.
 
-Congratulatins! You uploaded the Docker image to Azure Container Registry, and you ran the image using the Azure Container Instance service.
+Congratulations! You uploaded the Docker image to Azure Container Registry, and you ran the image using the Azure Container Instance service.
