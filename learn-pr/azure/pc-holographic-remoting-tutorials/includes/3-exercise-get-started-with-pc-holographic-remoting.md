@@ -21,7 +21,7 @@ Go to the Configuring the MRTK profiles article and follow the instructions in t
 
 ## Import the tutorial assets
 
-[!INCLUDE[](includes/switching-platform.md)]
+[!INCLUDE[](includes/import-package.md)]
 
 ## Configure and prepare the scene
 

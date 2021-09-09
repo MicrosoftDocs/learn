@@ -2,7 +2,7 @@ In this tutorial, you'll learn how to create a PC app for Holographic Remoting. 
 
 ## Configure the capabilities
 
-In the Project Settings window, expand the **Publishing Settings**, then scroll down to the Capabilities section and then select the following: 
+In the Project Settings window, expand the **Publishing Settings**, then scroll down to the Capabilities section and then select the following:
 
 * Internet Clint server
 * Private Network Client Server
