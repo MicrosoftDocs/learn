@@ -27,13 +27,13 @@ Example attribute mappings:
 
 ![Attribute mappings.](../media/scim-attribute-mappings.png)
 
-## Conditional access
+## Conditional Access
 
-Azure Databricks supports Azure Active Directory conditional access, which allows administrators to control where and when users are permitted to sign in to Azure Databricks. For example, conditional access policies can restrict sign-in to your corporate network or can require multi-factor authentication.
+Azure Databricks supports Azure Active Directory Conditional Access, which allows administrators to control where and when users are permitted to sign in to Azure Databricks. For example, Conditional Access policies can restrict sign-in to your corporate network or can require multi-factor authentication.
 
 > This feature is available in the Azure Databricks premium tier only.
 
-![Conditional access.](../media/conditional-access.png)
+![Conditional Access.](../media/conditional-access.png)
 
 ## Azure Active Directory token support
 
