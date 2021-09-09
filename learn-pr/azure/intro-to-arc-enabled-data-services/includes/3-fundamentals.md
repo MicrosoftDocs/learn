@@ -19,7 +19,7 @@ The Azure Arc-enabled data services architecture all starts with the infrastruct
 - Google Cloud Kubernetes Engine (GKE)
 - Open source, upstream Kubernetes
 
-You should carefully [plan](/azure/azure-arc/data/plan-azure-arc-data-services) your resource requirements for your infrastructure and Kubernetes before you deploy Azure Arc-enabled data services.
+You should carefully plan your resource requirements for your infrastructure and Kubernetes before you deploy Azure Arc-enabled data services. You can find planning guidance on the [planning page](/azure/azure-arc/data/plan-azure-arc-data-services) in the Microsoft documentation.
 
 Microsoft has worked with several industry partners to validate specific infrastructure and Kubernetes solutions. Learn more at the Azure Arc-enabled data services [validation program](/azure/azure-arc/data/validation-program).
 
@@ -27,7 +27,7 @@ Azure arc-enabled data services are deployed as a set of pods based on Microsoft
 
 ## Connected modes
 
-Before you deploy Azure Arc-enabled data services components, you should decide which [connected mode](/azure/azure-arc/data/connectivity) you would like to use. You can choose between the following connected modes:
+Before you deploy Azure Arc-enabled data services components, you should decide which you would like to use. You can choose between the following connected modes:
 
 ### Direct connected mode
 
@@ -39,11 +39,13 @@ With indirect connected mode, all deployment and management operations for Azure
 
 After deployment, az CLI, kubectl, and Azure Data Studio can interact with the Kubernetes API to manage Azure Arc-enabled data services in both direct and indirect connected mode.
 
+You can learn more about connected modes in the Microsoft documentation on [connectivity](/azure/azure-arc/data/connectivity).
+
 ## Azure Arc data controller
 
 Once you've deployed the Kubernetes platform of your choice, you'll first deploy an Azure Arc data controller. The Azure Arc data controller is a series of Kubernetes pods that provide coordination and orchestration of Azure Arc enabled-data services using the Kubernetes API and Custom Resource Definitions (CRD).
 
-The Azure Arc data controller can be deployed in direct connected mode using the Azure portal. To deploy with direct connected mode, you must first [connect](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli) your Kubernetes cluster using Azure Arc-enabled Kubernetes. This connection will deploy Azure Arc agents on your Kubernetes cluster and connect it to Azure. Azure Arc agents are used in direct connected mode to coordinate Azure Resource Manager requests in the Kubernetes cluster and upload inventory, billing, logs, and metrics collected by the Azure Arc data controller.
+The Azure Arc data controller can be deployed in direct connected mode using the Azure portal. To deploy with direct connected mode, you must first connect your Kubernetes cluster using Azure Arc-enabled Kubernetes. This connection will deploy Azure Arc agents on your Kubernetes cluster and connect it to Azure. Azure Arc agents are used in direct connected mode to coordinate Azure Resource Manager requests in the Kubernetes cluster and upload inventory, billing, logs, and metrics collected by the Azure Arc data controller. You can learn more about how to connect your Kubernetes cluster in the Microsoft documentation on how to [connect](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli) to Azure Arc.
 
 The data controller can be deployed in indirect connected mode using the az CLI (using the arcdata extension), kubectl, or Azure Data Studio.
 
