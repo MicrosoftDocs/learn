@@ -35,7 +35,7 @@ Perform the following steps to see what happens when an application sends messag
     ![Disable Event Hub.](../media/7-disable-event-hub.png)
 
     >[!IMPORTANT]
-    >Wait for a minimum of five minutes.
+    >Wait for a minimum of five minutes before proceeding.
 
 1. Select **Active** under **EVENT HUB STATUS** to re-enable your Event Hub, and in the top menu bar, select **Save changes**.
 

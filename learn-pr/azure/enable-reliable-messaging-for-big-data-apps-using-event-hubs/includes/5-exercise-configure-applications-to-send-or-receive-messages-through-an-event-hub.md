@@ -8,7 +8,7 @@ You'll configure two separate applications; one acts as the message sender (**Si
 
 The Java receiver application, that you'll configure in this unit, stores messages in Azure Blob Storage. Blob Storage requires a storage account.
 
-1. In Cloud Shell, create a storage account (general-purpose V2) by running the following `storage account create` command. Remember we set a default resource group and location, so even though those parameters are normally _required_, we can leave them off.
+In Cloud Shell, create a storage account (general-purpose V2) by running the following `storage account create` command. Remember we set a default resource group and location, so even though those parameters are normally _required_, we can leave them off.
 
     |Parameter      |Description|
     |---------------|-----------|
@@ -16,13 +16,13 @@ The Java receiver application, that you'll configure in this unit, stores messag
     |--resource-group (required)  | The resource group owner. We'll use the pre-created sandbox resource group. |
     |--location (optional) | An optional location if you want the storage account in a specific place vs. the resource group location. |
 
-    Set the storage account name into a variable. It must be between 3 and 24 characters in length and use numbers and lower-case letters only. It also must be unique within Azure.
+1. Set the storage account name into a variable. It must be between 3 and 24 characters in length and use numbers and lower-case letters only. It also must be unique within Azure.
 
     ```azurecli
     STORAGE_NAME=storagename$RANDOM
     ```
 
-    Next, run the following command to create the storage account.
+1. Next, run the following command to create the storage account.
 
     ```azurecli
     az storage account create --name $STORAGE_NAME --sku Standard_RAGRS --encryption-service blob
@@ -37,7 +37,7 @@ The Java receiver application, that you'll configure in this unit, stores messag
     az storage account keys list --account-name $STORAGE_NAME
     ```
 
-    Access keys associated with your storage account are listed. Copy and save the value of **key** for future use. You'll need this key to access your storage account.
+1. Access keys associated with your storage account are listed. Copy and save the value of **key** for future use. You'll need this key to access your storage account.
 
 1. View the connections string for your storage account by running the following command.
 
@@ -45,7 +45,7 @@ The Java receiver application, that you'll configure in this unit, stores messag
     az storage account show-connection-string -n $STORAGE_NAME
     ```
 
-    This command returns the connection details for the storage account. Copy and save the value of **connectionString**. It should look something like.
+1. This command returns the connection details for the storage account. Copy and save the value of **connectionString**. It should look something like.
 
     ```output
     "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage_account_name;AccountKey=VZjXuMeuDqjCkT60xX6L5fmtXixYuY2wiPmsrXwYHIhwo736kSAUAj08XBockRZh7CZwYxuYBPe31hi8XfHlWw=="
@@ -59,16 +59,16 @@ The Java receiver application, that you'll configure in this unit, stores messag
 
 ## Clone the Event Hubs GitHub repository
 
-Perform the following steps to clone the Event Hubs GitHub repository with `git`. You can run these commands in Cloud Shell.
+In Cloud Shell, perform the following step to clone the Event Hubs GitHub repository with `git`.
 
-1. The source files for the applications that you'll build in this unit are located in a [GitHub repository](https://github.com/Azure/azure-event-hubs). Run the following commands to make sure that you are in your home directory in Cloud Shell, and then to clone this repository.
+The source files for the applications that you'll build in this unit are located in a [GitHub repository](https://github.com/Azure/azure-event-hubs). Run the following commands to make sure that you are in your home directory in Cloud Shell, and then to clone this repository.
 
     ```bash
     cd ~
     git clone https://github.com/Azure/azure-event-hubs.git
     ```
 
-    The repository is cloned to your home folder.
+The repository is cloned to your home folder.
 
 ## Edit SimpleSend.java
 
