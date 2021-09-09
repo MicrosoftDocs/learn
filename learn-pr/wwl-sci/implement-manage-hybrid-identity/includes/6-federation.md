@@ -53,7 +53,7 @@ Along with **Add and AD FS Server** and **Add an AD FS Web Application Proxy ser
 
 ## Device writeback
 
-Device writeback is used to enable device-based conditional access for ADFS-protected devices. This conditional access provides extra security and assurance that access to applications is granted only to trusted devices. Device writeback enables this security by synchronizing all devices registered in Azure back to the on-premises Active Directory. When configured during setup, the following operations are performed to prepare the AD forest:
+Device writeback is used to enable device-based Conditional Access for ADFS-protected devices. This Conditional Access provides extra security and assurance that access to applications is granted only to trusted devices. Device writeback enables this security by synchronizing all devices registered in Azure back to the on-premises Active Directory. When configured during setup, the following operations are performed to prepare the AD forest:
 
 - If they do not exist already, create and configure new containers and objects under: **CN=Device Registration Configuration,CN=Services,CN=Configuration,[forest dn ]**.
 - If they do not exist already, create and configure new containers and objects under: **CN=RegisteredDevices,[domain-dn]**. Device objects will be created in this container.

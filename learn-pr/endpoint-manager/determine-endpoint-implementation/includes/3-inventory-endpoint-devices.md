@@ -38,7 +38,7 @@ As an organization and as an administrator, you decide if you'll allow personal 
 
 Intune can manage desktop computers running Windows 10 and newer. The Windows 10 OS includes built-in modern device management features, and removes dependencies on local Active Directory (AD) group policy. You get the benefits of the cloud when creating rules and settings in Intune, and deploying these policies to all your Windows 10 devices, including desktop computers and PCs.
 
-If your Windows 10 devices are currently managed using Configuration Manager, you can still enroll these devices in Intune. This approach is called "co-management". Co-management offers many benefits, including running remote actions on the device (restart, remote control, factory reset), conditional access with device compliance, and more.
+If your Windows 10 devices are currently managed using Configuration Manager, you can still enroll these devices in Intune. This approach is called "co-management". Co-management offers many benefits, including running remote actions on the device (restart, remote control, factory reset), Conditional Access with device compliance, and more.
 
 ## Additional information
 
