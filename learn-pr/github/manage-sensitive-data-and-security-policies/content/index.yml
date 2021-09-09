@@ -1,37 +1,41 @@
 ### YamlMime:Module
-uid: learn.extend-your-github-workflow-with-api-access-integrations
+uid: learn.github.manage-sensitive-data-and-security-policies
 metadata:
-  moduleType: standard
-  title: "TODO" # user input: module title for browser tab and search results
-  description: "TODO" # user input: a description for site search and SEO
-  ms.date: 5/17/2021
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
-  ms.topic: interactive-tutorial # do we need ms.topic?
-title: extend-your-github-workflow-with-api-access-and-integrations
-summary: "TODO" # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
-abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
-  By the end of this module, you'll be able to:
-    - # objective 1
-    - # objective 2
-    - # objective 3 (if needed)
-prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
-  - # prerequisite 1
-  - # prerequisite 2
-  - # prerequisite 3
-iconUrl: /learn/achievements/generic-badge.svg
-levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
-  - # level
-roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
-  - # role 1
-  - # role 2
+  title: Manage sensitive data and security policies within Github
+  description: Familiarize yourself with GitHub's basic security tools, which prepare repositories for secure development and industry-standard response to threats.
+  ms.date: 09/09/2021
+  author: sterling463
+  ms.author: csterling 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage sensitive data and security policies within Github
+summary: Familiarize yourself with GitHub's basic security tools, which prepare repositories for secure development and industry-standard response to threats.
+abstract: |
+  In this module, you'll learn how to:
+  - **Create** documentation that details security guidelines and useful information for collaborators.
+  - **Set** permissions and other rules.
+  - **Automate** processes that prevent security breaches.
+  - **Respond** to security breaches.
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
 products:
-  {{products}}
+  - github
+prerequisites:
+  - A GitHub Enterprise Cloud or Enterprise Server account
+  - Working knowledge of GitHub Actions and workflows
 units:
-- learn.extend-your-github-workflow-with-api-access-integrations.introduction
-- learn.extend-your-github-workflow-with-api-access-integrations.learning-content
-- learn.extend-your-github-workflow-with-api-access-integrations.exercise
-- learn.extend-your-github-workflow-with-api-access-integrations.knowledge-check
-- learn.extend-your-github-workflow-with-api-access-integrations.summary
+  - learn.github.manage-github-actions-enterprise.introduction
+  - learn.github.manage-sensitive-data-and-security-policies.set-security-policies
+  - learn.github.manage-sensitive-data-and-security-policies.scrub-sensitive-data-from-a-repository
+  - learn.github.manage-sensitive-data-and-security-policies.report-logs
+  - learn.github.manage-sensitive-data-and-security-policies.exercise
+  - learn.github.manage-sensitive-data-and-security-policies.knowledge-check
+  - learn.learn.github.manage-sensitive-data-and-security-policies.exercise.summary
+iconUrl: /learn/achievements/github/manage-github-actions-enterprise.svg
 badge:
-  uid: learn.extend-your-github-workflow-with-api-access-integrations.badge
+  uid: learn.github.manage-github-actions-enterprise.badge

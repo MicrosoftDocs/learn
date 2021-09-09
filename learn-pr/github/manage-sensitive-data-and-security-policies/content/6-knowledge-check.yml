@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.manage-sensitive-data-and-security-policies.exercise
+uid: learn.github.manage-sensitive-data-and-security-policies.knowledge-check
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
   unitType: knowledge_check
@@ -37,7 +37,7 @@ quiz:
     - content: "Create security documentation"
       isCorrect: false
       explanation: "Access restrictions, security documentation, advisories are available for all repositories, but do not automate your security process"
-      - content: "Add advisories for your users"
+    - content: "Add advisories for your users"
       isCorrect: false
       explanation: "Access restrictions, security documentation, advisories are available for all repositories, but do not automate your security process"
   - content: "Which two pieces of information should be included in a security advisory? (Each answer presents part of the solution. Choose two.)"
