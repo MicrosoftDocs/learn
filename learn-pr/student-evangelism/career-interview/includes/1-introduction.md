@@ -10,7 +10,7 @@ You're likely to go through multiple interviews with an organization. There are 
 
 ## Scenario: Interview for an intern position in tech
 
-As an aspiring software developer, you'ill encounter interviews that test not only your technical skills but also your ability to communicate in a professional way. Interviewers will also appraise your interpersonal skills.
+As an aspiring software developer, you'll encounter interviews that test not only your technical skills but also your ability to communicate in a professional way. Interviewers will also appraise your interpersonal skills.
 
 Remember, the interview process goes both ways. While the company is assessing you through the interview process, you should also use that time to evaluate whether the company or team is the right place for you and your career goals.
 
