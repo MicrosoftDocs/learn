@@ -37,7 +37,7 @@ quiz:
           isCorrect: false
           explanation: Incorrect. Your peer believes that he either has an innate
             ability for the task or he doesn’t. His statement indicates that he
-            have a fixed mindset.
+            has a fixed mindset.
         - content: I don't know how to do it yet. Let's learn how to do it together.
           isCorrect: true
           explanation: Correct. Your peer knows that he doesn’t know how to do it yet, but
