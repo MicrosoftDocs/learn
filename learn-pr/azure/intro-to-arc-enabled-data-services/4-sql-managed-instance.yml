@@ -20,44 +20,44 @@ quiz:
     choices:
     - content: "General Purpose"
       isCorrect: false
-      explanation: "General purpose service tiers provide high availability through Kubernetes and shared storage."
+      explanation: "Incorrect. General purpose service tiers provide high availability through Kubernetes and shared storage."
     - content: "Enterprise"
       isCorrect: false
-      explanation: "Enterprise isn't a service tier deployment option"
+      explanation: "Incorrect. Enterprise isn't a service tier deployment option"
     - content: "Business Critical"
       isCorrect: true
-      explanation: "Business Critical service tiers provide high availability with replicas using Always On Availability Groups"
+      explanation: "Correct. Business Critical service tiers provide high availability with replicas using Always On Availability Groups"
   - content: "You can view billing, metrics, and logs for Azure Arc-enabled SQL Managed Instance in the Azure portal using indirect connected mode"
     choices:
     - content: "true"
       isCorrect: true
-      explanation: "If you use export and upload through the az CLI, you can view billing, metrics, and logs in the Azure portal"
+      explanation: "Correct. If you use export and upload through the az CLI, you can view billing, metrics, and logs in the Azure portal"
     - content: "false"
       isCorrect: false
-      explanation: "You can view billing, metrics, and logs in the Azure portal using indirect connected mode provided you export and upload using the az CLI"
+      explanation: "Incorrect. You can view billing, metrics, and logs in the Azure portal using indirect connected mode provided you export and upload using the az CLI"
   - content: "Users configure automated backup for Azure Arc-enabled SQL Managed Instance using what options?"
     choices:
     - content: "A server configuration setting using the T-SQL procedure sp_configure"
       isCorrect: false
-      explanation: "sp_configure doesn't provide an option to configure automated backups for Azure Arc-enabled SQL Managed Instance"
+      explanation: "Incorrect. sp_configure doesn't provide an option to configure automated backups for Azure Arc-enabled SQL Managed Instance"
     - content: "Long-term backup retention in the Azure portal"
       isCorrect: false
-      explanation: "Long-term backup retention settings in the Azure portal are used for Azure SQL Managed Instance"
+      explanation: "Incorrect. Long-term backup retention settings in the Azure portal are used for Azure SQL Managed Instance"
     - content: "Configure a desired Recovery Point Objective (RPO) and retention period"
       isCorrect: true
-      explanation: "Adjusting the RPO settings will dictate how often a transaction log backup occurs and adjusting retention period will affect how long backups are kept"
+      explanation: "Correct. Adjusting the RPO settings will dictate how often a transaction log backup occurs and adjusting retention period will affect how long backups are kept"
   - content: "Which tool can be used to manage an Azure Arc-enabled SQL Managed Instance?"
     choices:
     - content: "Azure Data Studio (ADS)"
       isCorrect: false
-      explanation: "There is more than one tool to manage an Azure Arc-enabled SQL Managed Instance"
+      explanation: "Incorrect. There is more than one tool to manage an Azure Arc-enabled SQL Managed Instance"
     - content: "kubectl"
       isCorrect: false
-      explanation: "There is more than one tool to manage an Azure Arc-enabled SQL Managed Instance"
+      explanation: "Incorrect. There is more than one tool to manage an Azure Arc-enabled SQL Managed Instance"
     - content: "az CLI"
       isCorrect: false
-      explanation: "There is more than one tool to manage an Azure Arc-enabled SQL Managed Instance"
+      explanation: "Incorrect. There is more than one tool to manage an Azure Arc-enabled SQL Managed Instance"
     - content: "All of the above"
       isCorrect: true
-      explanation: "Azure Data Studio, kubectl, and az CLI can all be used to manage an Azure Arc-enabled SQL Managed Instance"
+      explanation: "Correct. Azure Data Studio, kubectl, and az CLI can all be used to manage an Azure Arc-enabled SQL Managed Instance"
 
