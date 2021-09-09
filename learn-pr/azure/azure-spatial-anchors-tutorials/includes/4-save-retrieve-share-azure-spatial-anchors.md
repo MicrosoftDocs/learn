@@ -1,4 +1,4 @@
-Azure Spatial Anchors enable you to share anchors in the world across many devices. It works with a variety of development environments. We can share the Azure Anchor ID between multiple devices. By saving the Azure Spatial Anchor ID to the local disc on HoloLens, you can keep Azure Spatial Anchors during app sessions and restarts. We can achieve spatial alignment across multiple app sessions.
+Azure Spatial Anchors enable you to share anchors in the world across many devices. It works with various development environments. We can share the Azure Anchor ID between multiple devices By saving the Anchor ID to the local disc on HoloLens. We can achieve spatial alignment across multiple app sessions.
 
 ## Spatial placements
 

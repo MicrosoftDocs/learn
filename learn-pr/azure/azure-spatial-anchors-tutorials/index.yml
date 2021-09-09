@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.azure.azure-spatial-anchors-tutorials-mrtk
 metadata:
-  title: Azure Spatial Anchors Tutorials
-  description: This course explores the use of azure spatial anchors by integrating it to a HoloLens 2 application. 
+  title: Azure Spatial Anchors tutorials
+  description: This course explores the use of Azure spatial anchors by integrating it to a HoloLens 2 application. 
   ms.date: 06/23/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-title: Azure Spatial Anchors Tutorials
-summary: This course explores the use of azure spatial anchors by integrating it to a HoloLens 2 application. 
+title: Azure Spatial Anchors tutorials
+summary: This course explores the use of Azure spatial anchors by integrating it to a HoloLens 2 application. 
 abstract: |
   By the end of this module you will be able to:
   - You would have  learned the fundamentals of Azure Spatial Anchors
