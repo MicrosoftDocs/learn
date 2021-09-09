@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-arc-enabled-data-services.3-fundamentals
 metadata:
-  title: Azure Arc-enabled data services fundamentals
+  title: Enable hybrid computing with Azure Arc-enabled data services
   description: In this unit, you'll learn about the basics and architecture of Azure Arc-enabled data services.
   ms.date: 06/28/2021
   author: bobward
