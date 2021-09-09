@@ -32,14 +32,16 @@ This parameter defines the radius of neighboring states we can move to. As time 
 
 ## Azure Quantum optimization techniques
 
-In Azure Quantum, we make available a range of physics-inspired and quantum-inspired techniques to solve discrete and combinatorial optimization problems:
+In Azure Quantum, we make available a range of physics-inspired and quantum-inspired techniques to solve discrete and combinatorial optimization problems. The Microsoft QIO provider makes the following targets available:
 
-- [**Parallel Tempering**](xref:microsoft.quantum.optimization.parallel-tempering): A related classical optimization approach, where copies of a system are kept at different temperatures, automating the repeated heating and cooling in tempering approaches. It can be used to accelerate both classical and (simulated) quantum annealing, as well as many other heuristics. 
-- [**Simulated Annealing**](xref:microsoft.quantum.optimization.simulated-annealing): A classical stochastic simulation method that mimics the slow cooling of a material (annealing) to remove imperfections. A temperature is reduced according to a schedule. Thermal hops assist in escaping from local minima in the search space. 
-- [**Population Annealing**](xref:microsoft.quantum.optimization.population-annealing): Just as Simulated Annealing simulates a walker that, ideally, always moves downhill, Population Annealing simulates a population of *metropolis walkers*, which continuously consolidate search efforts around favorable states.
-- [**Quantum Monte Carlo**](xref:microsoft.quantum.optimization.quantum-monte-carlo): A quantum-inspired optimization that mimics the quantum annealing method by using quantum Monte-Carlo simulations. Analogous to the temperature in simulated annealing, the quantum tunneling strength is reduced over time. Quantum tunneling effects assist in escaping from local minima in the search space.
-- [**Substochastic Monte Carlo**](xref:microsoft.quantum.optimization.substochastic-monte-carlo): Substochastic Monte Carlo is a diffusion Monte Carlo algorithm inspired by adiabatic quantum computation. It simulates the diffusion of a population of walkers in the search space, where walkers are removed or duplicated based on how they perform according to the cost function.
-- [**Tabu Search**](xref:microsoft.quantum.optimization.tabu): Tabu Search looks at neighboring configurations. It can accept worsening moves if no improving moves are available and prohibits moves to previously visited solutions
+| Name | Description| 
+|------|------------|
+|**Parallel Tempering**| A related classical optimization approach, where copies of a system are kept at different temperatures, automating the repeated heating and cooling in tempering approaches. It can be used to accelerate both classical and (simulated) quantum annealing, as well as many other heuristics.|
+|**Simulated Annealing**| A classical stochastic simulation method that mimics the slow cooling of a material (annealing) to remove imperfections. A temperature is reduced according to a schedule. Thermal hops assist in escaping from local minima in the search space.| 
+|**Population Annealing**| Just as Simulated Annealing simulates a walker that, ideally, always moves downhill, Population Annealing simulates a population of *metropolis walkers*, which continuously consolidate search efforts around favorable states.|
+|**Quantum Monte Carlo**| A quantum-inspired optimization that mimics the quantum annealing method by using quantum Monte-Carlo simulations. Analogous to the temperature in simulated annealing, the quantum tunneling strength is reduced over time. Quantum tunneling effects assist in escaping from local minima in the search space.|
+|**Substochastic Monte Carlo**| Substochastic Monte Carlo is a diffusion Monte Carlo algorithm inspired by adiabatic quantum computation. It simulates the diffusion of a population of walkers in the search space, where walkers are removed or duplicated based on how they perform according to the cost function.|
+|**Tabu Search**| Tabu Search looks at neighboring configurations. It can accept worsening moves if no improving moves are available and prohibits moves to previously visited solutions.|
 
 Note that this is only a small subset of available techniques, and Microsoft continues to develop and add new solvers to the Azure Quantum service.  For more information, see the [Microsoft QIO provider list](xref:microsoft.quantum.optimization.providers.microsoft.qio).
 
