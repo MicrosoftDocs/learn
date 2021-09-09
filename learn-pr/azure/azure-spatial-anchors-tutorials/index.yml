@@ -3,7 +3,7 @@ uid: learn.azure.azure-spatial-anchors-tutorials-mrtk
 metadata:
   title: Azure Spatial Anchors tutorials
   description: This course explores the use of Azure spatial anchors by integrating it to a HoloLens 2 application. 
-  ms.date: 06/23/2021
+  ms.date: 09/09/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
