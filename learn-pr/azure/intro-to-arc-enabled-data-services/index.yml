@@ -18,10 +18,10 @@ abstract: |
   - Describe the managed capabilities and benefits of using Azure Arc-enabled SQL Managed Instance for SQL Server workloads.
   - Describe the managed capabilities and benefits of using Azure Arc-enabled PostgreSQL Hyperscale for applications wanting to use the PostgreSQL engine.
 prerequisites: |
-  - Azure Fundamentals part 1 learning Path
-  - Introduction to Azure SQL module from Azure SQL Fundamentals learning Path
-  - Introduction to Docker containers module in the Administer containers in Azure learning path
-  - Introduction to Kubernetes module in the Administer containers in Azure learning path
+  - Basic knowledge of Azure
+  - Working knowledge of deployment options for Azure SQL
+  - Basic understanding of how containers work
+  - Basic knowledge of the Kubernetes platform
   - Working knowledge of SQL Server
 iconUrl: http://via.placeholder.com/120x120
 levels:
