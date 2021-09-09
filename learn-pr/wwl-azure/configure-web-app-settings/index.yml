@@ -18,7 +18,7 @@ abstract: |
   * Create virtual app to directory mappings.
 prerequisites: |
   * You should be familiar with developer concepts and terminology.
-  * An understanding of cloud computing and some experience with the Azure Portal.
+  * An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate

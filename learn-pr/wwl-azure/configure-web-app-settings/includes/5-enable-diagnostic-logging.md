@@ -12,7 +12,7 @@ Deployment logging | Windows, Linux | App Service file system | Helps determine 
 
 ## Enable application logging (Windows)
 
-1. To enable application logging for Windows apps in the Azure Portal, navigate to your app and select **App Service logs**.
+1. To enable application logging for Windows apps in the Azure portal, navigate to your app and select **App Service logs**.
 
 1. Select **On** for either **Application Logging (Filesystem)** or **Application Logging (Blob)**, or both. The **Filesystem** option is for temporary debugging purposes, and turns itself off in 12 hours. The **Blob** option is for long-term logging, and needs a blob storage container to write logs to.
 
@@ -62,7 +62,7 @@ Before you stream logs in real time, enable the log type that you want. Any info
 
 >**Note**: Some types of logging buffer write to the log file, which can result in out of order events in the stream. For example, an application log entry that occurs when a user visits a page may be displayed in the stream before the corresponding HTTP log entry for the page request.
 
-* Azure Portal - To stream logs in the Azure portal, navigate to your app and select **Log stream**.
+* Azure portal - To stream logs in the Azure portal, navigate to your app and select **Log stream**.
 
 * Azure CLI - To stream logs live in Cloud Shell, use the following command:
     ```bash
