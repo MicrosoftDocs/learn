@@ -12,8 +12,8 @@ desktop.
 
 Open the executable file **MixedRealityFeatureTool** from the downloaded folder to launch the Mixed Reality Feature Tool.
 
-![Opening MixedRealityFeatureTool](../media/base-2-section-4-step-1-1.png)
-[!INCLUDE[](includes/importing-mrtk.md)]
+:::image type="content" source="../media/base-2-section-4-step-1-1.png" alt-text="Image alt text." lightbox="base-2-section-4-step-1-1.png":::
+[!INCLUDE[](includes/import-mrtk.md)]
 
 ## Create the scene and configure MRTK
 
