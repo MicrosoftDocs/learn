@@ -3,7 +3,7 @@ uid: learn.azure.using-eyetracking-and-voice-commands-mrtk
 metadata:
   title: Use eye-tracking and voice commands
   description: This course provides the user an overall understanding on how to use eye-tracking and voice commands
-  ms.date: 06/23/2021
+  ms.date: 09/09/2021
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: interactive-tutorial
@@ -38,13 +38,13 @@ prerequisites: |
 
 
 units: 
-- learn.azure.using-eyetracking-and-voice-commands-mrtk.6.1-introduction
-- learn.azure.using-eyetracking-and-voice-commands-mrtk.6.2-using-eye-tracking
-- learn.azure.using-eyetracking-and-voice-commands-mrtk.6.3-exercise-using-eye-tracking
-- learn.azure.using-eyetracking-and-voice-commands-mrtk.6.4-using-voice-commands
-- learn.azure.using-eyetracking-and-voice-commands-mrtk.6.5-exercise-using-voice-commands
-- learn.azure.using-eyetracking-and-voice-commands-mrtk.6.6-knowledge-check
-- learn.azure.using-eyetracking-and-voice-commands-mrtk.6.7-summary
+- learn.azure.using-eyetracking-and-voice-commands-mrtk.6-1-introduction
+- learn.azure.using-eyetracking-and-voice-commands-mrtk.6-2-eye-tracking
+- learn.azure.using-eyetracking-and-voice-commands-mrtk.6-3-exercise-eye-tracking
+- learn.azure.using-eyetracking-and-voice-commands-mrtk.6-4-voice-commands
+- learn.azure.using-eyetracking-and-voice-commands-mrtk.6-5-exercise-voice-commands
+- learn.azure.using-eyetracking-and-voice-commands-mrtk.6-6-knowledge-check
+- learn.azure.using-eyetracking-and-voice-commands-mrtk.6-7-summary
 
 
 badge:
