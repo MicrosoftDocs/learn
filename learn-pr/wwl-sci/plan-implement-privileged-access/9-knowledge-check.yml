@@ -29,9 +29,9 @@ quiz:
       explanation: "Incorrect. Discovery and insights finds privileged role assignments."
   - content: "Whether to assign a role to a group instead of to individual users is a strategic decision. When planning, consider assigning a role to a group to manage role assignments when the desired outcome is to delegate assigning the role and what else?"
     choices:
-    - content: "You want to use conditional access policies."
+    - content: "You want to use Conditional Access policies."
       isCorrect: false
-      explanation: "Incorrect. Although conditional access policies can use groups to assign a policy, it is not considered when assigned roles."
+      explanation: "Incorrect. Although Conditional Access policies can use groups to assign a policy, it is not considered when assigned roles."
     - content: "Many Azure resources need to be managed."
       isCorrect: false
       explanation: "Incorrect. Azure resources are managed by users or groups."
