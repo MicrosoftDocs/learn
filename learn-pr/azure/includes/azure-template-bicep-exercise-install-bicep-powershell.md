@@ -7,4 +7,4 @@ ms.author: jodowns
 ---
 ### Install the Bicep CLI
 
-Azure PowerShell doesn't include the tooling to understand Bicep files, so you need to [install the Bicep CLI](/azure/azure-resource-manager/templates/bicep-install?tabs=azure-powershell#install-manually).
+You can't use Azure PowerShell to work directly with Bicep files, so you need to [install the Bicep CLI](/azure/azure-resource-manager/templates/bicep-install?tabs=azure-powershell#install-manually).

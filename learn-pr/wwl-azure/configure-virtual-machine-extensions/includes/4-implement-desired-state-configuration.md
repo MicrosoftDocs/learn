@@ -14,6 +14,7 @@ WindowsFeature IIS
 Ensure = “Present”
 Name = “Web-Server”
 } } }
+
 ```
 
 The DSC script consists of a Configuration block, Node block, and one or more resource blocks.
