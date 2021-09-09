@@ -25,17 +25,17 @@ roles:
   - solution-architect
 products:
   - github
-prerequisites:
+prerequisites:  |
   - A GitHub Enterprise Cloud or Enterprise Server account
   - Working knowledge of GitHub Actions and workflows
 units:
-  - learn.github.manage-github-actions-enterprise.introduction
+  - learn.github.manage-sensitive-data-and-security-policies.introduction 
   - learn.github.manage-sensitive-data-and-security-policies.set-security-policies
   - learn.github.manage-sensitive-data-and-security-policies.scrub-sensitive-data-from-a-repository
   - learn.github.manage-sensitive-data-and-security-policies.report-logs
   - learn.github.manage-sensitive-data-and-security-policies.exercise
   - learn.github.manage-sensitive-data-and-security-policies.knowledge-check
   - learn.learn.github.manage-sensitive-data-and-security-policies.exercise.summary
-iconUrl: /learn/achievements/github/manage-github-actions-enterprise.svg
+iconUrl: /learn/achievements/github/manage-sensitive-data-and-security-policies.svg
 badge:
-  uid: learn.github.manage-github-actions-enterprise.badge
+  uid: learn.github.manage-sensitive-data-and-security-policies.badge

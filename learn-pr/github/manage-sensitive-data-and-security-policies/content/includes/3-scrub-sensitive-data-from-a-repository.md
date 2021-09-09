@@ -8,7 +8,7 @@ As a GitHub organization administrator, you may need to remove, or *scrub*, sens
 
 You may remember from the scenario in the introduction that some of the most stressful and risky problems can involve sensitive data appearing in the code base. As you administer a new project with unfamiliar collaborators, you know that it is important to prevent these kinds of security risks from happening as much as possible. You also know that these problems will happen sooner or later, and it is important to be prepared, in order to minimize time spent resolving the issue and up-front costs (like paying a ransomware actor).
 
-In this unit, you'll learn about the tools to help prevent committing sensitive data. You'll also learn what to do if you face this kind of security breach, and how to evaluate potential changes to security policies.
+In this unit, you'll learn about the tools to help prevent committing sensitive data. You'll also learn what to do if there is a security breach, and how to evaluate potential changes to security policies.
 
 ## Tools to avoid committing sensitive data
 
