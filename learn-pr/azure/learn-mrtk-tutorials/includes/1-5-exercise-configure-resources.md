@@ -11,8 +11,7 @@ desktop.
 > Before you can run the Mixed Reality Feature Tool please install [.NET 5.0 runtime](https://dotnet.microsoft.com/download/dotnet/5.0)
 
 Open the executable file **MixedRealityFeatureTool** from the downloaded folder to launch the Mixed Reality Feature Tool.
-
-:::image type="content" source="../media/base-2-section-4-step-1-1.png" alt-text="Image alt text." lightbox="base-2-section-4-step-1-1.png":::
+![Opening MixedRealityFeatureTool](../media/base-2-section-4-step-1-1.png)
 [!INCLUDE[](includes/import-mrtk.md)]
 
 ## Create the scene and configure MRTK
