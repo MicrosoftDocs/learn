@@ -26,7 +26,7 @@ You then categorize every situation as something you either can or can't do. You
 
 Having a fixed mindset also means that you seek validation and approval from others. Because of that mindset, you might cling to what you're already good at and avoid risk and spontaneity. Risk and spontaneity have a higher chance of failure, and therefore, judgment. Eliminating experimentation and risk can prevent effective learning and growth. Inner dialogue like "Will I succeed or fail?" or "Will I seem smart or dumb?" creates a barrier to developing your potential.
 
-:::image type="content" source="../media/2-fixed-mindset.png" alt-text="Drawing that represents fixed mindset as a menacing figure behind an upset person who's thinking "What if I fail in front of everyone?" border="false":::
+:::image type="content" source="../media/2-fixed-mindset.png" alt-text="Drawing that represents fixed mindset as a menacing figure behind an upset person who's thinking 'What if I fail in front of everyone?'" border="false":::
 
 > [!TIP]
 > You can recognize what kind of mindset you have in various circumstances by becoming aware of your inner dialogue, or thoughts. This dialogue is sometimes called *self-talk*.
