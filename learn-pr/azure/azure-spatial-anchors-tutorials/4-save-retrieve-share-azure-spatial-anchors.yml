@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.4-saving-retrieving-and-sharing-azure-spatial-anchors
+uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.4-save-retrieve-share-azure-spatial-anchors
 title: Save, retrieve, and share Azure Spatial Anchors
 metadata:
   title: Save, retrieve, and share Azure Spatial Anchors
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-saving-retrieving-and-sharing-azure-spatial-anchors.md)]
+  [!include[](includes/4-save-retrieve-share-azure-spatial-anchors.md)]

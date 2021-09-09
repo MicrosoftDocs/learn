@@ -37,14 +37,14 @@ prerequisites: |
   - Completed the [Create a Spatial Anchors resource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors tutorial
 units: 
 - learn.azure.azure-spatial-anchors-tutorials-mrtk.1-introduction
-- learn.azure.azure-spatial-anchors-tutorials-mrtk.2-getting-started-with-azure-spatial-anchors
-- learn.azure.azure-spatial-anchors-tutorials-mrtk.3-exercise-getting-started-with-azure-spatial-anchors
-- learn.azure.azure-spatial-anchors-tutorials-mrtk.4-saving-retrieving-and-sharing-azure-spatial-anchors
-- learn.azure.azure-spatial-anchors-tutorials-mrtk.5-exercise-saving-retrieving-and-sharing-azure-spatial-anchors
-- learn.azure.azure-spatial-anchors-tutorials-mrtk.6-displaying-feedback-from-azure-spatial-anchors
-- learn.azure.azure-spatial-anchors-tutorials-mrtk.7-exercise-displaying-feedback-from-azure-spatial-anchors
-- learn.azure.azure-spatial-anchors-tutorials-mrtk.8-azure-spatial-anchors-for-android-and-ios
-- learn.azure.azure-spatial-anchors-tutorials-mrtk.9-exercise-azure-spatial-anchors-for-android-and-ios
+- learn.azure.azure-spatial-anchors-tutorials-mrtk.2-get-started-with-azure-spatial-anchors
+- learn.azure.azure-spatial-anchors-tutorials-mrtk.3-exercise-get-started-with-azure-spatial-anchors
+- learn.azure.azure-spatial-anchors-tutorials-mrtk.4-save-retrieve-share-azure-spatial-anchors
+- learn.azure.azure-spatial-anchors-tutorials-mrtk.5-exercise-save-retrieve-share-azure-spatial-anchors
+- learn.azure.azure-spatial-anchors-tutorials-mrtk.6-display-feedback-from-azure-spatial-anchors
+- learn.azure.azure-spatial-anchors-tutorials-mrtk.7-exercise-display-feedback-from-azure-spatial-anchors
+- learn.azure.azure-spatial-anchors-tutorials-mrtk.8-azure-spatial-anchors-for-android-ios
+- learn.azure.azure-spatial-anchors-tutorials-mrtk.9-exercise-azure-spatial-anchors-for-android-ios
 - learn.azure.azure-spatial-anchors-tutorials-mrtk.10-knowledge-check
 - learn.azure.azure-spatial-anchors-tutorials-mrtk.11-summary
 

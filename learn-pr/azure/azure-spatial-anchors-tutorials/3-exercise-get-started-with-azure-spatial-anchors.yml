@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.3-exercise-getting-started-with-azure-spatial-anchors
+uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.3-exercise-get-started-with-azure-spatial-anchors
 title: Exercise - Get started with Azure Spatial Anchors
 metadata:
   title: Exercise - Get started with Azure Spatial Anchors
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-exercise-getting-started-with-azure-spatial-anchors.md)]
+  [!include[](includes/3-exercise-get-started-with-azure-spatial-anchors.md)]
