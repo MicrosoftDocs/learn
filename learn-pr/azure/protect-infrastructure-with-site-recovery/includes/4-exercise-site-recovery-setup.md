@@ -7,12 +7,12 @@ Currently, two VMs are running the company's patient and employee systems. These
 In this exercise, you'll complete the setup of Azure Site Recovery using the Azure portal.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account, you can read through the instructions to understand how to use backup virtual machines with Azure Backup.
-> If you want to complete this exercise, but you don't have an Azure subscription, or prefer not to use your account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+> This exercise is optional, but depends on resources and an environent that was created in the previous unit. If you don't have an Azure account, you can read through the instructions to understand how to use backup virtual machines with Azure Backup.
+> If you want to complete this exercise, but you don't have an Azure subscription, or prefer not to use your account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) and first complete the exercises in the previous unit.
 
 ## Create a recovery services vault
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) with your own credentials.
+1. You should already be signed in to the [Azure portal](https://portal.azure.com?azure-portal=true) with your own credentials.
 
 1. On the Azure portal **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
@@ -37,7 +37,7 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
 
 ## Enable replication
 
-In this task, you will replicate the two VMs that you created in the **Environment setup** exercise from Unit 3.
+In this task, you will replicate the two VMs that you created in the previous unit.
 
 1. In the resources menu, under **Protected items**, select **Replicated items**. The **Replicated items** pane appears.
 
@@ -54,28 +54,26 @@ In this task, you will replicate the two VMs that you created in the **Environme
     | Select both VMs | **hr-records** and **patient-records**|
     | **Replication settings** tab |
     | Target location | **East US 2** |
-    | Target subscription | Select the **Customize** link. The **Customize target subscription** pane appears. In the **Target subscription** field, select your Azure subscription, and select **OK**. The **Enable replication** pane reappears. |
+    | Target subscription | Select  **Customize**. In the **Target subscription** field, select your Azure subscription, and select **OK**. |
 
-    ![Screenshot showing the source options for replication.](../media/4-enable-replication-source.png)
+    :::image type="content" source="../media/4-enable-replication-source.png" alt-text="Screenshot showing the source options for replication.":::
 
-1. Select **Enable replication**. When deployment succeeds, select **Go to resource group**. The **Recovery Services vault** pane named *asr-vault* appears.
+1. On the **Enable replication** pane, select **Enable replication**. It may take a few moments for deploymment to the east-coast-rg to complete. 
 
 ## Monitor replication progress
 
-1. Select **Home** on the top menu to return to the portal's home page.
+You can review the progress of your site recovery job by selecting **Notifications** in the global controls in the top right corner of your Azure portal.
 
-1. Select **All resources**.
+1. In the **Notifications** pane, you will see that **Enabling replication for 2 vm(s)** is still running. Select the link. 
 
-1. In the list of resources, select the **Recovery Services vault** named **asr-vault**.
-
-1. In the left menu pane, under **Monitoring**, select **Site Recovery jobs**.
+1. The **Site Recovery jobs** lists all actions you have completed thus far in this module.
 
 1. In the jobs list, select the **In progress** link to view how the replication setup is progressing.
 
-    ![Screenshot of all the Site Recovery jobs.](../media/4-site-recovery-jobs.png)
+    :::image type="content" source="../media/4-site-recovery-jobs.png" alt-text="Screenshot of all the Site Recovery jobs.":::
 
 1. You can select any of the listed jobs to view more details.
 
-    ![Screenshot of the Enable replication job's progress.](../media/4-replication-job.png)
+    :::image type="content" source="../media/4-replication-job.png" alt-text="Screenshot of the Enable replication job's progress.":::
 
 Two of these jobs will take the most time to complete. If you select either of the **Enable replication** jobs, you'll see that the **Installing Mobility Service and preparing target** step can take between five to 10 minutes to finish.
