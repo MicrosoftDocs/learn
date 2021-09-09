@@ -74,7 +74,7 @@ You can also declare a generic interface and implement it in a class.
     }
     ```
 
-1. Define a generic class called `processIdentity` that implements the `ProcessIdentity` interface. In this case, name the variable types in the `processIdentity` interface `X` and `Y`. You can use different variable names in the interface and the class because the type value propagates up the chain and the variable name doesn't matter.
+1. Define a generic class called `processIdentity` that implements the `ProcessIdentity` interface. In this case, name the variable types in the `processIdentity` class `X` and `Y`. You can use different variable names in the interface and the class because the type value propagates up the chain and the variable name doesn't matter.
 
     ```typescript
     class processIdentity<X, Y> implements ProcessIdentity<X, Y> {
@@ -101,7 +101,7 @@ You can also declare a generic interface and implement it in a class.
 
 ## Define a generic class
 
-You can also declare a generic class without an interface. This example declares `processIdentity` as a generic class without implementing the `ProcessIdentity` class.
+You can also declare a generic class without an interface. This example declares `processIdentity` as a generic class without implementing the `ProcessIdentity` interface.
 
 ```typescript
 class processIdentity<T, U> {
