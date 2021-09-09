@@ -8,7 +8,7 @@ In the previous exercise, you completed setting up Azure Site Recovery, and now 
 
 A DR drill is a way to check if you configured your solution correctly. The drill should give you, and your company, confidence that your data and services are available even if a disaster happens. Typically, organizations set a recovery time objective (RTO), which indicates how long it will take to recover infrastructure. Your company should also define a recovery point objective (RPO), which defines the amount of data loss that is acceptable as a function of time. For example, if your company's RPO is a day, you'll need to create a backup of all your data each day. You'll also need to make sure it takes less than a day to restore this backup.
 
-:::image type="content" source="../media/5-faiover-tests.png" alt-text="A screenshot that show the run breakdown of failover tests." border="False":::
+:::image type="content" source="../media/5-failover-tests.png" alt-text="A screenshot that shows the breakdown of failover tests that have been run." border="False":::
 
 To ensure that we run our DR tests, Site Recovery actively prompts us to run them on the Site Recovery dashboard.
 
@@ -32,7 +32,7 @@ Create an isolated virtual network so that your production infrastructure isn't 
 
 1. In the resource menu, scroll to **Operations**, and then select **Disaster recovery**.
 
-    :::image type="content" source="../media/5-vm-disaster.png"" alt-text="Screenshot that shows the Operations' disaster recovery option for a selected VM." lightbox="../media/5-vm-disaster.png":::
+    :::image type="content" source="../media/5-vm-disaster.png" alt-text="Screenshot that shows the Operations' disaster recovery option for a selected VM." lightbox="../media/5-vm-disaster.png":::
 
 1. A new **Replicated items** pane appears. From the top menu bar, select **Test Failover**.
 
@@ -52,7 +52,7 @@ Site Recovery gives you the flexibility to run a full DR test scenario for all o
 
 Just like testing the single VMs, the same test cleanup is available for everything included in the recovery plan.
 
-:::image type="content" source="media/image.png" alt-text="Screenshot that shows the option to cleanup a test failover." lightbox="../media/5-test-success.png":::
+:::image type="content" source="../media/5-test-success.png" alt-text="Screenshot that shows the option to cleanup a test failover." lightbox="../media/5-test-success.png":::
 
 ## Difference between a drill and production failover
 
