@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
-title: Azure Arc-enabled PostgreSQL Hyperscale
+title: Understand Azure Arc-enabled PostgreSQL Hyperscale (Preview)
 durationInMinutes: 6
 content: |
   [!include[](includes/5-postgresql-hyperscale.md)]
