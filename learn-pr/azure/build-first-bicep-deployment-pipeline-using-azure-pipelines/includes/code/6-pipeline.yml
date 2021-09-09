@@ -6,12 +6,6 @@ pool:
 jobs:
 - job:
   steps:
-  - task: AzureCLI@2
-    inputs:
-      azureSubscription: $(ServiceConnectionName)
-      scriptType: 'bash'
-      scriptLocation: 'inlineScript'
-      inlineScript: 'az bicep upgrade'
   
   - task: AzureCLI@2
     inputs:

@@ -46,7 +46,7 @@ The `PizzaModel` class needs access to the `Pizza` model. It will validate and p
 
 ```csharp
 [BindProperty]
-public NewPizza Pizza { get; set; }
+public Pizza NewPizza { get; set; }
 ```
 
 Binding to properties can reduce the amount of code you have to write. Binding reduces code by using the same property to render fields such as in `<input asp-for="Pizza.Name">`.
