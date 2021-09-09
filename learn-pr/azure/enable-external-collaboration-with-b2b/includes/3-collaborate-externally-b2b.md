@@ -27,8 +27,8 @@ Azure AD B2B allows you to delegate guest user access to these application owner
 
 ## Protect your shared applications through policies
 
-You can use conditional access policies to intelligently grant or deny access, according to factors that aren't credential-based. Conditional access policies can add extra layers of security to your applications and resources by enforcing conditions. A user who has otherwise verified credentials is denied if they don't meet certain conditions.
+You can use Conditional Access policies to intelligently grant or deny access, according to factors that aren't credential-based. Conditional Access policies can add extra layers of security to your applications and resources by enforcing conditions. A user who has otherwise verified credentials is denied if they don't meet certain conditions.
 
 These conditions might be device-based. You can make it mandatory for users to be on specific device platforms, such as Android or Windows, before they're granted access to resources. Conditions can also be location-based. You block users if they don't meet the required location criteria when they're attempting to access your applications.
 
-You enforce policies by going to your application in the Azure AD settings in the Azure portal. Then you use the conditional access policies form to create a new policy. You select which users should be affected by the policy, and decide on the conditions you want to put in place. For example, you might only allow users to sign in from an approved location. You can enforce policies at an application level, tenant level, or user level.
+You enforce policies by going to your application in the Azure AD settings in the Azure portal. Then you use the Conditional Access policies form to create a new policy. You select which users should be affected by the policy, and decide on the conditions you want to put in place. For example, you might only allow users to sign in from an approved location. You can enforce policies at an application level, tenant level, or user level.
