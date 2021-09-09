@@ -1,10 +1,10 @@
 Solvers are one of the components of the Mixed Reality Toolkit, which provides some handy functions for your application. Here you'll learn to use two types of solvers and look at their functionalities.
 
-## Location of Solvers in the MRTK
+## Location of solvers in the MRTK
 
-* The MRTK's Solvers are located in the MRTK SDK folder. To see the available Solvers in your project, in the Project window, navigate to **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **Utilities** > **Solvers**:
+* The MRTK's solvers are located in the MRTK SDK folder. To see the available solvers in your project, in the Project window, navigate to **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **Utilities** > **Solvers**:
 
-    ![Unity Project window with Solvers folder selected](../media/base-5-section-1-step-1-1.png)
+    ![Unity Project window with solvers folder selected](../media/base-5-section-1-step-1-1.png)
 
 ## Use the Directional Indicator Solver to direct the user to objects
 

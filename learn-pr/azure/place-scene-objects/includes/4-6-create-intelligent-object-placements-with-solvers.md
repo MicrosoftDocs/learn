@@ -1,4 +1,4 @@
-It would be convenient to have some necessary menus to follow you around instead of it being stuck to a place. You would have to search for the menu every time you wanted to select some option. MRTK provides a handy feature called, Solvers that calculates an object's position and orientation using predefined algorithms.
+It would be convenient to have some necessary menus to follow you around instead of it being stuck to a place. You would have to search for the menu every time you wanted to select some option. MRTK provides a handy feature called, solvers that calculates an object's position and orientation using predefined algorithms.
 
 Solvers provide a wide range of behavior to attach objects to other objects or systems. One example would be the tag-along object that appears in front of you (based on the camera) every time you moves.
 
