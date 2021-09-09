@@ -2,7 +2,7 @@ Azure Site Recovery automates the setup of recovery from one region to another. 
 
 Currently, two VMs are running the company's patient and employee systems. These systems are running in the West US region. You've been asked to protect the infrastructure by enabling it to be recovered to the East US region. Using Azure Site Recovery, you'll enable a Recovery Services vault to replicate the current workloads.
 
-:::image type="content" source="../media/4-environment.svg" alt-text="Image showing the current Azure infrastructure and what will be set up by Azure Site Recovery.":::
+:::image type="content" source="../media/4-environment.svg" alt-text="Diagram showing resources and infrastructure of primary region with storage account, hr-records, patient-recors will be replicated in a recovery vault in a recovery region.":::
 
 In this exercise, you'll complete the setup of Azure Site Recovery using the Azure portal.
 
@@ -12,7 +12,7 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
 
 ## Create a recovery services vault
 
-1. You should already be signed in to the [Azure portal](https://portal.azure.com?azure-portal=true) with your own credentials.
+1. If not already signed in, sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) with your own credentials.
 
 1. On the Azure portal **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
@@ -23,7 +23,7 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
 1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
-    |---------|---------|
+    |---------|-------|
     | **Project Details** |
     | Subscription | *your subscription* |
     | Resource group | From the dropdown list, select **east-coast-rg**. |
@@ -37,7 +37,7 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
 
 ## Enable replication
 
-In this task, you will replicate the two VMs that you created in the previous unit.
+In this task, you'll replicate the two VMs that you created in the previous unit.
 
 1. In the resources menu, under **Protected items**, select **Replicated items**. The **Replicated items** pane appears.
 
@@ -46,7 +46,7 @@ In this task, you will replicate the two VMs that you created in the previous un
 1. Enter the following values in the specified tabs, leaving other fields at their default values. Select **Next** to advance to the next tab.
 
     | Setting | Value |
-    |---------|---------|
+    |---------|-------|
     | **Source** tab |
     | Source location | **West US 2** |
     | Source resource group | **west-coast-rg** |
@@ -58,15 +58,15 @@ In this task, you will replicate the two VMs that you created in the previous un
 
     :::image type="content" source="../media/4-enable-replication-source.png" alt-text="Screenshot showing the source options for replication.":::
 
-1. On the **Enable replication** pane, select **Enable replication**. It may take a few moments for deploymment to the east-coast-rg to complete. 
+1. On the **Enable replication** pane, select **Enable replication**. It may take a few moments for deployment to the east-coast-rg to complete. 
 
 ## Monitor replication progress
 
-You can review the progress of your site recovery job by selecting **Notifications** in the global controls in the top right corner of your Azure portal.
+You can review the progress of your site recovery job by selecting **Notifications** in the global controls in the upper right corner of your Azure portal.
 
 1. In the **Notifications** pane, you will see that **Enabling replication for 2 vm(s)** is still running. Select the link. 
 
-1. The **Site Recovery jobs** lists all actions you have completed thus far in this module.
+1. The **Site Recovery jobs** lists all site recovery actions you have completed in this module.
 
 1. In the jobs list, select the **In progress** link to view how the replication setup is progressing.
 
