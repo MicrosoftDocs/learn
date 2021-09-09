@@ -4,7 +4,7 @@ In this exercise you'll learn how to create a simple C\# function that responds 
 
 Before you begin make sure you have the following requirements in place:
 
-* An Azure account with an active subscription.
+* An Azure account with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free).
 
 * The [Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#install-the-azure-functions-core-tools) version 3.x.
 
