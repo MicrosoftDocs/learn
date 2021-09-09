@@ -11,4 +11,3 @@ You can continue to customize this application and add more spatial anchors. Con
 ## Further Reading
 
 * Learn more about [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/)
-* windows/mixed-reality/discover/mixed-reality
