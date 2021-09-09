@@ -62,9 +62,9 @@ Identify the subtasks of *Manage device identity using AD join*
         - Mobile devices, personal MS account, Windows 10, iOS, Android, and MacOS
     - Hybrid Azure AD joined devices
         - Exist on both on-premises and cloud, supports older versions of Windows and Windows server.  
-    - Managing device/user access using conditional access
-        - Conditional access policies
-        - Benefits of using conditional access
+    - Managing device/user access using Conditional Access
+        - Conditional Access policies
+        - Benefits of using Conditional Access
         - Licensing Requirements
     - Benefits of device identity management
         - Improved device security
@@ -156,7 +156,7 @@ Identify the subtasks of *Manage device identity using AD join*
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
 
-    In this module you have been introduced to device identities, and how they can be used to bring better access control to your organizations resources. You have explored using the cloud-first, mobile-first Azure AD option and how it can support self-service and BOYD. You have also explored how to use enterprise state roaming to allow for separation of corporate data from consumer data and how it can allow for settings to move with the user when they switch devices without having to go through a lengthy set-up process. You have seen how conditional access you can control when and how a user will access your corporate resources.
+    In this module you have been introduced to device identities, and how they can be used to bring better access control to your organizations resources. You have explored using the cloud-first, mobile-first Azure AD option and how it can support self-service and BOYD. You have also explored how to use enterprise state roaming to allow for separation of corporate data from consumer data and how it can allow for settings to move with the user when they switch devices without having to go through a lengthy set-up process. You have seen how Conditional Access you can control when and how a user will access your corporate resources.
 
 ## Notes
 
@@ -169,14 +169,14 @@ Conceptual content to include:
   - Supported devices
   - Non-supported environmental configurations
   - Prereqs for device identity management
-- Tools & features you'd use as best practice (MDM tool that supports Azure AD integration & conditional access for devices - right now that's only Intune)
-- If you're using MFA, user's don't have to do MFA when they're using an MDM compliant & AD joined device AND conditional access is marked as compliant. You have the option on the conditional access device settings to set AND/OR condition when you set the checkboxes for compliant, MFA, etc. If you needed to be super secure for something like a payroll app, maybe you'd require MFA AND compliant device. Need to be sure to discuss those options.
- - Discuss what settings there are for devices identity management and conditional access like local admin on devices etc. By default, **Additional local administrators on Azure AD joined devices** is enabled. This adds global admin and [device admin](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#device-administrators) roles as local admin on device.
+- Tools & features you'd use as best practice (MDM tool that supports Azure AD integration & Conditional Access for devices - right now that's only Intune)
+- If you're using MFA, user's don't have to do MFA when they're using an MDM compliant & AD joined device AND Conditional Access is marked as compliant. You have the option on the Conditional Access device settings to set AND/OR condition when you set the checkboxes for compliant, MFA, etc. If you needed to be super secure for something like a payroll app, maybe you'd require MFA AND compliant device. Need to be sure to discuss those options.
+ - Discuss what settings there are for devices identity management and Conditional Access like local admin on devices etc. By default, **Additional local administrators on Azure AD joined devices** is enabled. This adds global admin and [device admin](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#device-administrators) roles as local admin on device.
   
 - For scenario, solution is to use AD joined for Windows 10 machines. They can have on-premises AD with SSO & AD Connect set up. But that doesn't require the "Hybrid Azure AD joined" setup. They can bypass that and just join to Azure AD and not on-premises AD. It's easier to do it that way. Employees could still BYOD as long as they're Windows 10 devices and they want to sign in using their organizational account (and want to enroll/join the organization).
 
 - What is enterprise state roaming and why you'd set it up
-- What's conditional access and why you'd use this? There is some coverage as it relates to users  in module: [Secure your Azure resources with conditional access](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-conditional-access/)
+- What's Conditional Access and why you'd use this? There is some coverage as it relates to users  in module: [Secure your Azure resources with Conditional Access](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-conditional-access/)
 - End-user experience to join and then to sign in.
 
 
