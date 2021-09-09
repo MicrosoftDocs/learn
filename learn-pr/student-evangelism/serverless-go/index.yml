@@ -15,7 +15,7 @@ abstract: |
   - Understand when to use custom handlers.
   - Build serverless apps by using Go.
   - Handle different triggers like HTTP and queue.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/serverless-go.svg
 levels:
   - beginner
 roles:
