@@ -48,6 +48,6 @@ This is the result set that is returned:
 
 :::image type="content" source="../media/unionresult.png" alt-text="A screenshot that shows results from the UNION statement.":::
 
-As with all T-SQL statements, no sort order is guaranteed unless one is explicitly specified. If you require sorted output, add an ORDER BY clause at the end of the second query.
+As with all Transact-SQL statements, no sort order is guaranteed unless one is explicitly specified. If you require sorted output, add an ORDER BY clause at the end of the second query.
 
 With UNION or UNION ALL, both queries must have the same number of columns, and the columns must be of the same data type, allowing you to join rows from different queries.

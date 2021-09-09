@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/08/2021
+  ms.date: 09/09/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ quiz:
     - content: "NULLs represent unknown values and cannot be compared. UNION and UNION ALL will return an error if sets contain NULLs."
       isCorrect: false
       explanation: "That's incorrect. UNION and UNION ALL will not return an error if the result sets being compared include NULLs."
-  - content: "You have employee and customer query result sets, both of which containID(int) and country(nvarchar(20)) columns. You want to return a list of countries that appear in both result sets. Which set operator should you use?"
+  - content: "You have employee and customer query result sets, both of which containID(int) and country/region(nvarchar(20)) columns. You want to return a list of countries/regions that appear in both result sets. Which set operator should you use?"
     choices:
     - content: "INTERSECT"
       isCorrect: true
