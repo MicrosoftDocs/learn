@@ -18,7 +18,7 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
 
 1. In the left menu pane, select **IT & Management Tools**, and then search for **Backup and Site Recovery**. 
  
-31 Select **Create**. The **Create Recovery Services vault** page appears.
+1. Select **Create**. The **Create Recovery Services vault** page appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
