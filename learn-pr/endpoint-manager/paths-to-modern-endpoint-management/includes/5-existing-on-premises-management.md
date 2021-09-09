@@ -8,17 +8,17 @@ As previously mentioned in this module, Configuration Manager is the leading PC 
 
 To leverage both Configuration Manager and Microsoft Intune from Microsoft Endpoint Manager, you can add cloud-attach management. There are two steps to cloud attach your on-premises devices. The first step of attachment is called tenant attach, which is registering your Intune tenant with your Configuration Manager deployment. The second step is called co-management, which is concurrently managing Windows 10 devices with both Configuration Manager and Microsoft Intune. These are incremental steps on the journey to having full cloud attachment. You get immediate value through tenant attach and you get additional value through co-management.
 
-If you decide to move from another endpoint management solution, you should start by noting the tasks your running and the features you use. When devices unenroll, we recommend using conditional access to block devices until they enroll in the new endpoint management solution. Use a phased approach. Start with a small group of pilot users, and add more groups until you reach full scale deployment. Monitor the helpdesk load and enrollment success of each phase. When you're satisfied with the first phase of migrations, repeat the migration cycle for each following phase.
+If you decide to move from another endpoint management solution, you should start by noting the tasks your running and the features you use. When devices unenroll, we recommend using Conditional Access to block devices until they enroll in the new endpoint management solution. Use a phased approach. Start with a small group of pilot users, and add more groups until you reach full scale deployment. Monitor the helpdesk load and enrollment success of each phase. When you're satisfied with the first phase of migrations, repeat the migration cycle for each following phase.
 
 ## Benefits of co-management
 
 By moving your additional endpoint to Intune to manage your organization's endpoints, you gain the following benefits:
-- Native integration with cloud-powered security controls and risk-based conditional access for apps and data. 
+- Native integration with cloud-powered security controls and risk-based Conditional Access for apps and data. 
 - Flexible support for diverse corporate and bring-your-own-device (BYOD) scenarios while increasing productivity and collaboration.
 - Maximize your investment and accelerate time to value with fast rollout of services and devices with end-to-end integration across familiar Microsoft stack 
 
 Benefits of using co-management:
-- Conditional access with device compliance  
+- Conditional Access with device compliance  
 - Remote actions from Intune  
 - Configuration Manager client health  
 - Azure Active Directory (Azure AD)  
