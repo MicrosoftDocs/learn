@@ -35,23 +35,23 @@ quiz:
       choices:
         - content: You should ask someone else. I'm not cut out for that sort of thing.
           isCorrect: false
-          explanation: Incorrect. Your peer believes that they either have an innate
-            ability for the task or they don’t. Their statement indicates that they
+          explanation: Incorrect. Your peer believes that he either has an innate
+            ability for the task or he doesn’t. His statement indicates that he
             have a fixed mindset.
         - content: I don't know how to do it yet. Let's learn how to do it together.
           isCorrect: true
-          explanation: Correct. Your peer knows that they don’t know how to do it yet, but
-            they're sure that they can learn. Their statement indicates that they
-            have a growth mindset.
+          explanation: Correct. Your peer knows that he doesn’t know how to do it yet, but
+            he's sure he can learn. His statement indicates that he
+            has a growth mindset.
         - content: I'll never be good at writing code. I tried it once and it didn't work
             out.
           isCorrect: false
-          explanation: Incorrect. Your peer believes that they'll never be good at coding
-            because they tried previously and it didn't go well. Their statement
-            indicates that they have a fixed mindset.
+          explanation: Incorrect. Your peer believes that he'll never be good at coding
+            because he tried previously and it didn't go well. His statement
+            indicates that he has a fixed mindset.
     - content: Which one of the following statements is true?
       choices:
-        - content: Inner dialogue that implies a growth mindset like "I can do it!"
+        - content: Inner dialogue that implies a growth mindset, like "I can do it!"
             means you can't fail.
           isCorrect: false
           explanation: There's always opportunity for mistakes and failure. With a growth

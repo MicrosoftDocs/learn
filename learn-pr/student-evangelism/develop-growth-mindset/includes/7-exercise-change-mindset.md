@@ -18,7 +18,7 @@ Compare your answers to the suggested growth-mindset statements listed after the
 
 - "I'm not good with user interfaces yet. I'm looking forward to learning about them in this seminar. I bet my feelings about not knowing what's going on will fade as I participate in the seminar's activities."
 
-- "This code is difficult, and the approach I've been using isn't working. I should pay attention to what others are doing. I also could ask the seminar facilitator to give me ideas so I can try a different approach."
+- "This code is difficult, and the approach I've been using isn't working. I should pay attention to what others are doing. I could also ask the seminar facilitator to give me ideas so I can try a different approach."
 
 - "Although my skills might not be as good as the skills of some of my peers, it doesn't mean that we're fundamentally different. They might have more training or experience than I do. I'm capable of learning these techniques too. Maybe I can ask some of them for help."
 

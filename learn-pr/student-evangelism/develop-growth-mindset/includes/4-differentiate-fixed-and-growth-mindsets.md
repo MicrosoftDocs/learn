@@ -4,7 +4,7 @@ You're becoming more aware of your mindset. Your colleague was correct when they
 
 Becoming aware of your own internal dialogue can help you determine your mindset. Use the following questions to reflect on your inner dialogue. Optionally, note your responses on a device or on paper.
 
-- Think about a time when you said "no" to a task or project and then later wished you had said "yes."
+- Think about a time when you said no to a task or project and then later wished you had said yes.
 
   - What inner dialogue did you have that made you decline the opportunity, task, or project?
 
@@ -20,9 +20,9 @@ Becoming aware of your own internal dialogue can help you determine your mindset
 
 ## Examine fixed and growth mindset statements
 
-Inner dialogue indicates what your mindset is in a given situation. Examine the following table, which lists examples of fixed mindset statements and their alternate growth mindset statements.
+Inner dialogue indicates what your mindset is in a given situation. Examine the following table, which lists examples of fixed mindset statements and their alternative growth mindset statements.
 
-| **Fixed mindset statement** | **Alternate growth mindset statement** |
+| **Fixed mindset statement** | **Alternative growth mindset statement** |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | If I mess up, I'm not meant to do this.| Mistakes mean I'm learning.|
 | I don't have the skills.| I can develop the skills.|

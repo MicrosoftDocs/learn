@@ -8,7 +8,7 @@ Use the following prompts to reflect on your own mindset:
 
 - In which areas do you think you have a fixed mindset?
 
-- Think about the moments in your life when your mindset has influenced the way you approached learning.
+- Think about the moments in your life when your mindset influenced the way you approached learning.
 
 - Are there areas where you shifted from a fixed mindset to a growth mindset? What prompted the change?
 

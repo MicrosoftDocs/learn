@@ -28,7 +28,7 @@ Redirecting your thinking towards a growth mindset is giving yourself permission
 
 ## Strive for progress, not perfection
 
-Sometimes in the middle of a project it's difficult to get perspective on how well you're doing. It can feel like you'll never finish, especially if things aren't going well, or if you have to restart or redo some tasks. Instead of waiting until the end of the project to celebrate, use small successes and accomplishments to excite and motivate you.
+Sometimes in the middle of a project it's difficult to get perspective on how well you're doing. It can feel like you'll never finish, especially if things aren't going well or if you have to restart or redo some tasks. Instead of waiting until the end of the project to celebrate, use small successes and accomplishments to excite and motivate you.
 
 It's important to let yourself celebrate every success, no matter how small. Each little win means that you're getting closer to your goal. And whether it's during or after a project, you can celebrate your perseverance: when things were difficult, you kept going.
 
@@ -43,4 +43,4 @@ When you're frustrated or stuck and you don’t know what to do next, don't be a
  :::image type="content" source="../media/4-guide-me.png" alt-text="Drawing that shows a happy person asking two other people for guidance." border="false":::
 
 > [!NOTE]
-> Remember that every expert was once a beginner, and no expert became an expert without help from other people.
+> Remember that every expert was once a beginner and that no expert became an expert without help from other people.

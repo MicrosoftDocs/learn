@@ -1,4 +1,4 @@
-To change your mindset to a growth mindset, first you must differentiate a fixed mindset from a growth mindset. Read the following scenarios in which you're a coder on a web-development team. Use the reflective questions to practice identifying which mindset the inner dialogues imply. After reflecting on the mindsets, read the suggested answers after the scenarios.
+To change your mindset to a growth mindset, you must first differentiate a fixed mindset from a growth mindset. Read the following scenarios in which you're a coder on a web-development team. Use the reflective questions to practice identifying which mindset the inner dialogues imply. After reflecting on the mindsets, read the suggested answers after the scenarios.
 
 ## Scenario 1
 
