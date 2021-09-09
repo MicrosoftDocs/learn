@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.configure-virtual-machine-extensions.introduction
+uid: learn.wwl.scale-apps-app-service.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
   ms.date: 09/09/2021
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
