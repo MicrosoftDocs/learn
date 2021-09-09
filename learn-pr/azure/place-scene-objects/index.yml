@@ -39,10 +39,10 @@ prerequisites: |
 
 units: 
 - learn.azure.place-scene-objects-tutorials-mrtk.4-1-introduction
-- learn.azure.place-scene-objects-tutorials-mrtk.4-2-position-game-objects-and-set-visibility
-- learn.azure.place-scene-objects-tutorials-mrtk.4-3-exercise-position-game-objects-and-set-visibility
-- learn.azure.place-scene-objects-tutorials-mrtk.4-4-organize-and-lay-out-objects-with-collections
-- learn.azure.place-scene-objects-tutorials-mrtk.4-5-exercise-organize-and-lay-out-objects-with-collections
+- learn.azure.place-scene-objects-tutorials-mrtk.4-2-position-game-objects-set-visibility
+- learn.azure.place-scene-objects-tutorials-mrtk.4-3-exercise-position-game-objects-set-visibility
+- learn.azure.place-scene-objects-tutorials-mrtk.4-4-organize-lay-out-objects-with-collections
+- learn.azure.place-scene-objects-tutorials-mrtk.4-5-exercise-organize-lay-out-objects-with-collections
 - learn.azure.place-scene-objects-tutorials-mrtk.4-6-create-intelligent-object-placements-with-solvers
 - learn.azure.place-scene-objects-tutorials-mrtk.4-7-exercise-create-intelligent-object-placements-with-solvers
 - learn.azure.place-scene-objects-tutorials-mrtk.4-8-knowledge-check
