@@ -73,7 +73,7 @@ You can customize the list view by clicking Columns in the toolbar.
 > [!div class="mx-imgBorder"]
 > ![Screenshot shows the Columns option in the Sign-ins page.](../media/columns-option.png)
 
-The Columns dialog gives you access to the selectable attributes. In a sign-in report, you can't have fields that have more than one value for a given sign-in request as column. For example, this is true for authentication details, conditional access data, and network location.
+The Columns dialog gives you access to the selectable attributes. In a sign-in report, you can't have fields that have more than one value for a given sign-in request as column. For example, this is true for authentication details, Conditional Access data, and network location.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot shows the Columns dialog box where you can select attributes.](../media/columns-2.png)
@@ -150,11 +150,11 @@ First, narrow down the reported data to a level that works for you. Second, filt
 
 **Correlation ID** - The correlation ID of the activity.
 
-**Conditional access** - The status of the applied conditional access rules.
+**Conditional Access** - The status of the applied Conditional Access rules.
 
 - **Not applied**: No policy applied to the user and application during sign-in.
 
-- **Success**: One or more conditional access policies applied to the user and application (but not necessarily the other conditions) during sign-in.
+- **Success**: One or more Conditional Access policies applied to the user and application (but not necessarily the other conditions) during sign-in.
 
 - **Failure**: The sign-in satisfied the user and application condition of at least one Conditional Access policy, and grant controls are either not satisfied or set to block access.
 

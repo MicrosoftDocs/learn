@@ -1,4 +1,4 @@
-Your toy company has acquired a competitor that created a popular toy truck. The toys connect to a virtual machine hosted in Azure to receive firmware updates. All of the resources for the virtual machine were created manually by using the Azure portal. In this unit, you'll begin the process to migrate the resources to a Bicep file.
+Your toy company has acquired a competitor that created a popular toy truck. The toys connect to a virtual machine hosted in Azure to receive firmware updates. All the resources for the virtual machine were created manually by using the Azure portal. In this unit, you'll begin the process of migrating the resources to a Bicep file.
 
 During the process, you'll:
 
@@ -13,29 +13,29 @@ During the process, you'll:
 
 ## Create a virtual machine by using the Azure portal
 
-To simulate the situation in the example scenario, you'll first deploy a virtual machine using the Azure portal.
+To simulate the situation in the example scenario, you'll first deploy a virtual machine by using the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. On the Azure home page, under **Azure services**, select **Create a resource**.
 
-   :::image type="content" source="../media/3-create-resource.png" alt-text="Screenshot of the Azure portal with 'Create a resource' highlighted." border="true":::
+   :::image type="content" source="../media/3-create-resource.png" alt-text="Screenshot of the Azure portal, with the Create a resource option highlighted.":::
 
-   The _Azure Marketplace_ appears in the **Create a resource** pane.
+   Azure Marketplace appears in the **Create a resource** pane.
 
 1. Under **Ubuntu Server 20.04 LTS**, select **Create**.
 
-   :::image type="content" source="../media/3-create-ubuntu.png" alt-text="Screenshot that shows the Azure Marketplace with the 'Create' button highlighted below 'Ubuntu Server 20.04 LTS'." border="true":::
+   :::image type="content" source="../media/3-create-ubuntu.png" alt-text="Screenshot that shows Azure Marketplace, with the Create link highlighted under the words Ubuntu Server 20.04 L T S.":::
 
    > [!IMPORTANT]
-   > If the Azure portal doesn't include the **Ubuntu Server 20.04 LTS** item, [select this link](https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-focal20_04-lts-ARM?azure-portal=true) to open the portal to the correct place.
+   > If you don't see the **Ubuntu Server 20.04 LTS** item, go directly to [Ubuntu Server 20.04 LTS](https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-focal20_04-lts-ARM?azure-portal=true) in Azure Marketplace.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value  |
     | ------ | ------- |
     | **Project Details**  |
-    | Resource group | Select **Create new** and enter **ToyTruck** |
+    | Resource group | Select **Create new** and enter **ToyTruck**. |
     | **Instance Details** |
     | Virtual machine name  | ToyTruckServer |
     | Region | (US) West US |
@@ -51,31 +51,31 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 1. On the **Management** tab, ensure that **Enable auto-shutdown** is not selected.
 
-1. Select **Review + Create**. Azure validates your settings. You might need to supply some additional information based on the requirements of the image creator.
+1. Select **Review + Create**. Azure validates your settings. You might need to enter or select more information depending on the image requirements.
 
 1. Select **Create** to deploy and create the VM.
 
    The Azure portal shows the deployment while it's in progress.
 
-1. When the deployment is completed, select the resource group name to open the resource group.
+1. When the deployment is finished, select the resource group name to open the resource group.
 
-   :::image type="content" source="../media/3-deployment-completed.png" alt-text="Screenshot of the Azure portal showing the deployment, with the resource group name highlighted." border="true":::
+   :::image type="content" source="../media/3-deployment-completed.png" alt-text="Screenshot of the Azure portal that shows the deployment, with the resource group name highlighted.":::
 
-1. Notice that the resource group now contains the virtual machine and its dependencies.
+   The resource group now contains the virtual machine and its dependencies:
 
-   :::image type="content" source="../media/3-resource-group.png" alt-text="Screenshot of the Azure portal showing the resource group." border="true":::
+   :::image type="content" source="../media/3-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group.":::
 
 ## Export the resource group contents to a JSON template
 
 1. In the left menu, select **Export template**.
 
-   :::image type="content" source="../media/3-export-template-menu.png" alt-text="Screenshot of the Azure portal showing the Export template menu item in the resource group blade." border="true":::
+   :::image type="content" source="../media/3-export-template-menu.png" alt-text="Screenshot of the Azure portal that shows the Export template menu item in the resource group pane.":::
 
-1. A JSON template is generated. It may take a minute or two before the template generation completes.
+   A JSON template is generated. It might take a minute or two for the process to finish.
 
 1. Select the **Download** button.
 
-   :::image type="content" source="../media/3-export-template.png" alt-text="Screenshot of the Azure portal showing the exported resource group JSON template, with the Download button highlighted." border="true":::
+   :::image type="content" source="../media/3-export-template.png" alt-text="Screenshot of the Azure portal that shows the exported resource group J S O N template, with the Download button highlighted.":::
 
    The JSON template and parameters file are downloaded to your computer as a zip file.
 
@@ -109,13 +109,13 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 ::: zone pivot="cli"
 
-1. Run the following command to create a Bicep file from the template:
+- Create a Bicep file from the template:
 
    ```azurecli
    az bicep decompile --file template.json
    ```
 
-1. Notice that the decompile operation shows warnings similar to the following:
+   The decompile operation shows warnings similar to the following example:
 
    :::code language="output" source="code/3-decompile-output.txt" :::
 
@@ -123,13 +123,13 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 ::: zone pivot="powershell"
 
-1. Run the following command to create a Bicep file from the template:
+- Create a Bicep file from the template:
 
    ```powershell
    bicep decompile template.json
    ```
 
-1. Notice that the decompile operation shows warnings similar to the following:
+   The decompile operation shows warnings similar to the following example:
 
    :::code language="output" source="code/3-decompile-output.txt" :::
 
@@ -137,11 +137,11 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 ## Inspect the decompiled Bicep file
 
-Open the *template.bicep* file and look over it. Notice that it's a valid Bicep file, but it has a few issues, including:
+Open the *template.bicep* file and read through it. Notice that it's a valid Bicep file, but it has a few issues, including:
 
-- The symbolic names given to parameters and resources include underscores and aren't easy to understand.
-- The `location` property is hard-coded in all of the resource definitions.
-- The template includes hard-coded values that either should be parameters or should be set automatically by Azure.
+- The symbolic names that are given to parameters and resources include underscores and aren't easy to understand.
+- The `location` property is hard-coded in all the resource definitions.
+- The template includes hard-coded values that should either be parameters or be set automatically by Azure.
 
 You'll fix these problems throughout the rest of this module.
 
@@ -149,15 +149,15 @@ You'll fix these problems throughout the rest of this module.
 
 1. Create a new file called *main.bicep*.
 
-1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
- 
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling.
+
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS).
 
 1. Split the editor so that you can see both files at the same time.
 
    You can drag the tab titled **main.bicep** to the right side of the window to split. Alternatively, select **View** > **Editor Layout** > **Split Right**. In the left pane, select the **template.bicep** tab.
 
-   :::image type="content" source="../media/3-visual-studio-code-split-editor.png" alt-text="Screenshot of the split Visual Studio Code editor, showing the template.bicep file in the left pane and the main.bicep file in the right pane." border="true":::
+   :::image type="content" source="../media/3-visual-studio-code-split-editor.png" alt-text="Screenshot of the split Visual Studio Code editor that shows the template dot bicep file in the left pane and the main dot bicep file in the right pane.":::
 
 ## Copy each element into your new Bicep file
 
@@ -165,9 +165,9 @@ You'll fix these problems throughout the rest of this module.
 
    As you copy it, note that the `securityRules` property is empty. Later in this module, you'll refactor the file to remove redundant properties.
 
-1. Notice that Visual Studio Code indicates an error because the `networkSecurityGroups_ToyTruckServer_nsg_name` parameter is missing:
+1. Visual Studio Code indicates an error because the `networkSecurityGroups_ToyTruckServer_nsg_name` parameter is missing:
 
-   :::image type="content" source="../media/3-visual-studio-code-missing-parameter.png" alt-text="Screenshot of the Visual Studio Code editor showing the migrated resource, with a tooltip displaying an error because of the missing parameter." border="true":::
+   :::image type="content" source="../media/3-visual-studio-code-missing-parameter.png" alt-text="Screenshot of the Visual Studio Code editor that shows the migrated resource, with a tooltip displaying an error because of the missing parameter.":::
 
    Copy the parameter to the *main.bicep* file.
 
@@ -180,26 +180,26 @@ You'll fix these problems throughout the rest of this module.
    - `networkInterfaces_toytruckserver890_name_resource`
 
    > [!NOTE]
-   > The names of the resources in your deployment might be different to the ones above. Find the resources that have names that are close to the names listed here.
+   > The names of the resources in your deployment might be different from the resources listed here. Find the resources that have names that are close to these names.
 
    As you copy each resource, inspect its properties. Later in this module, you'll update each resource's properties and configuration to conform to Bicep best practices.
 
    > [!TIP]
-   > When you convert or export your own templates, you could update the resources to follow best practices as you copy them across. In this module, we will do this separately to make it easier to understand each phase of the migration process.
+   > When you convert or export your own templates, you can update the resources to follow best practices as you copy them cross. In this module, we do this separately to make it easier to understand each phase of the migration process.
 
 ## Check for missing resources
 
 1. In the Azure portal, open the **ToyTruck** resource group.
 
-1. Review the list of resources, and compare it against the list of resources in your Bicep file. Notice that the resource group contains a **Disk** resource that isn't defined in your Bicep file:
+1. Review the list of resources and compare it against the list of resources in your Bicep file. Notice that the resource group contains a **Disk** resource that isn't defined in your Bicep file:
 
-   :::image type="content" source="../media/3-resource-group-missing-disk.png" alt-text="Screenshot of the Azure portal showing the resource group, with the disk resource highlighted." border="true":::
+   :::image type="content" source="../media/3-resource-group-missing-disk.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the disk resource highlighted.":::
 
-   When you work with virtual machines in Bicep, you don't need to explicitly define the managed disk resource. Instead, you define properties of the virtual machine, and Azure creates the managed disk for you automatically. This means that, in this case, you don't need to worry about the missing resource.
+   When you work with virtual machines in Bicep, you don't need to explicitly define the managed disk resource. Instead, you define the properties of the virtual machine and Azure creates the managed disk for you automatically. This means that, in this case, you don't need to worry about the missing resource.
 
 ## Verify your template
 
-1. At the end of the _migrate_ phase, your *main.bicep* file should look similar to the following:
+1. At the end of the migrate phase, your *main.bicep* file should look similar to this example:
 
    :::code language="bicep" source="code/3-main-migrated.bicep" :::
 
@@ -212,9 +212,9 @@ You'll fix these problems throughout the rest of this module.
 
    No problems are indicated.
 
-   :::image type="content" source="../media/3-visual-studio-code-problems.png" alt-text="Screenshot of the Visual Studio Code editor showing the problems pane, with no problems listed." border="true":::
+   :::image type="content" source="../media/3-visual-studio-code-problems.png" alt-text="Screenshot of the Visual Studio Code editor that shows the problems pane, with no problems listed.":::
 
-You've now created an initial Bicep file to represent your resources. The Bicep file isn't well-structured and it doesn't follow best practices. In the next unit, you'll learn how to improve the quality of the migrated template.
+You've created an initial Bicep file to represent your resources. The Bicep file isn't well structured and it doesn't follow best practices. In the next unit, you'll learn how to improve the quality of the migrated template.
 
 > [!TIP]
 > If you use a version control system like Git, this would be a good time to commit your work.
