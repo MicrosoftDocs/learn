@@ -59,7 +59,7 @@ Perform the following steps to see what happens when an application sends messag
 
 1. From the **Metric** dropdown list, select **Outgoing Messages**, and in the taskbar, select **Add metric**.
 
-1. At the top right of the chart, select **Last 24 hours (Automatic)**, and in the dilaog box that appears, change the time period to **Last 30 minutes** to expand the data graph. Select **Apply**.
+1. At the top right of the chart, select **Last 24 hours (Automatic)**, and in the dialog box that appears, change the time period to **Last 30 minutes** to expand the data graph. Select **Apply**.
 
 You'll see that though the messages were sent before the Event Hub was taken offline for a period, all 100 messages were successfully transmitted.
 
