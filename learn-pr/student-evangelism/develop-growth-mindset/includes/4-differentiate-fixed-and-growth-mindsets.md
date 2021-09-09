@@ -40,5 +40,5 @@ Inner dialogue indicates what your mindset is in a given situation. Examine the 
 | Imperfections and setbacks are shameful and a label.| Imperfections are human and motivating.|
 | I listen to feedback on my current abilities and tune out feedback that might help me grow. | I'm keenly attentive to information that can help me expand my knowledge and skills. |
 
-:::image type="content" source="../media/3-internal-dialogue.png" alt-text="Drawing that shows person's thoughts, including 'This isn't for me' (fixed-mindset) and 'I can develop skills!'" (growth mindset)." border="false":::
+:::image type="content" source="../media/3-internal-dialogue.png" alt-text="Drawing that shows person's thoughts, including 'This is not for me' (fixed-mindset) and 'I can develop skills!' (growth mindset)." border="false":::
 
