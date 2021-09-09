@@ -39,7 +39,7 @@ With indirect connected mode, all deployment and management operations for Azure
 
 After deployment, az CLI, kubectl, and Azure Data Studio can interact with the Kubernetes API to manage Azure Arc-enabled data services in both direct and indirect connected mode.
 
-You can learn more about connected modes in the Microsoft documentation on [connectivity](azure/azure-arc/data/connectivity).
+You can learn more about connected modes in the Microsoft documentation on [connectivity](/azure/azure-arc/data/connectivity).
 
 ## Azure Arc data controller
 
