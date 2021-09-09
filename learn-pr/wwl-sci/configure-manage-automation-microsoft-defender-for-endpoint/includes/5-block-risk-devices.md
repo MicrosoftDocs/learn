@@ -7,7 +7,7 @@ You'll need a Microsoft Intune environment, with Intune managed and Azure AD joi
 
 There are steps you'll need to take in Microsoft Defender Security Center, the Intune portal, and Azure AD portal.
 
-The required roles to access these portals and implement Conditional access:
+The required roles to access these portals and implement Conditional Access:
 
 - Microsoft Defender Security Center - You'll need to sign in to the portal with a global administrator role to turn on the integration.
 

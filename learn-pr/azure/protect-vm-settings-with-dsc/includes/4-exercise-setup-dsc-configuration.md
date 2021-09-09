@@ -2,7 +2,7 @@ In this exercise, you'll create an Azure Automation account and upload a PowerSh
 
 ## Create a VM
 
-Start by deploying a new VM from a Windows Server 2016 image.
+Start by deploying a new VM from a Windows Server 2019 image.
 
 1. In Azure Cloud Shell, run the following commands to create a username and generate a random password.
 
@@ -17,7 +17,7 @@ Start by deploying a new VM from a Windows Server 2016 image.
     az vm create \
       --resource-group <rgn>[Sandbox resource group name]</rgn> \
       --name myVM \
-      --image win2016datacenter \
+      --image win2019datacenter \
       --admin-username $USERNAME \
       --admin-password $PASSWORD
     ```
@@ -106,7 +106,7 @@ Start by deploying a new VM from a Windows Server 2016 image.
 
 1. Select <kbd>Ctrl+S</kbd> to save the file. Then, select <kbd>Ctrl+Q</kbd> to close the editor.
 
-1. In the following code, replace `[your-automation-account-name]` for AutomationAccountName with the name you used when you created the automation account, and then run this PowerShell command to upload your DSC script into your Azure Automation account.
+1. Returning to Cloud Shell, in the following code, replace `[your-automation-account-name]` for AutomationAccountName with the name you used when you created the automation account, and then run this PowerShell command to upload your DSC script into your Azure Automation account.
 
     ```powershell
     Import-AzAutomationDscConfiguration `
