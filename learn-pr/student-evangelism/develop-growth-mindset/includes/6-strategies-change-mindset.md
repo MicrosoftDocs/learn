@@ -18,7 +18,7 @@ As you saw in the video, the first step in shifting your mindset to a growth min
 
 For example, you can replace "I can’t do this task, I shouldn't even try" with "I might be able to do this task. What if I did try?"
 
-:::image type="content" source="../media/4-change-mindset.png" alt-text="Drawing that illustrates a change from fixed mindset ("You shouldn't even try.") to growth mindset ("I will try!")." border="false":::
+:::image type="content" source="../media/4-change-mindset.png" alt-text="Drawing that illustrates a change from fixed mindset ('You shouldn't even try.') to growth mindset ('I will try!')." border="false":::
 
 If you tend to categorize yourself in limiting ways, challenge your assumptions. For example, suppose you're a coder and are asked to work with a graphic designer on the web user interface. You might think "I'm not a graphic designer, so I can't do that." This thought reflects that you have a fixed mindset. You believe you can't do the work because it's not an inherent part of your skillset.
 

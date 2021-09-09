@@ -35,7 +35,7 @@ Having a fixed mindset also means that you seek validation and approval from oth
 
 A *growth mindset* is a mental attitude that you can learn anything you don't know and that you can improve your abilities through dedication and hard work. With fixed mindset, you think you have an ability or you don't. With a growth mindset, the qualities and talents you develop early on are only your starting place. At the heart of growth mindset is a passion for learning, not a hunger for approval. People with this mindset aren't discouraged by failure. They see themselves as learning.
 
-:::image type="content" source="../media/2-learn-it.png" alt-text="Drawing that shows a smiling person exclaiming "I can learn it!" border="false":::
+:::image type="content" source="../media/2-learn-it.png" alt-text="Drawing that shows a smiling person exclaiming 'I can learn it!'" border="false":::
 
 When you believe your abilities can grow, you're more likely to:
 

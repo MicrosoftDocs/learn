@@ -10,7 +10,7 @@ Take a few minutes to reflect on how mindset might have affected you in previous
 
 - In general, would you conclude that you had a fixed mindset or a growth mindset?
 
-:::image type="content" source="../media/5-enjoy-challenge.png" alt-text="Drawing of a person looking at a computer that displays the word "challenge." The person looks happy and excited to begin the work." border="false":::
+:::image type="content" source="../media/5-enjoy-challenge.png" alt-text="Drawing of a person looking at a computer that displays the word 'challenge.' The person looks happy and excited to begin the work." border="false":::
 
 ## Reflect on your mindset during a challenging situation
 
