@@ -16,7 +16,7 @@ Then changing the Spatial Awareness Display Option to ensure the MRTK configurat
 
 ## Install in-built Unity packages and Import the tutorial assets
 
-[!INCLUDE[](includes/switching-platform.md)]
+[!INCLUDE[](includes/switch-platform.md)]
 
 ## Prepare the scene
 

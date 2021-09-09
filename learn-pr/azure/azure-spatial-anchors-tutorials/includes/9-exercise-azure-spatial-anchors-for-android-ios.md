@@ -87,7 +87,7 @@ In this section, you'll learn how to configure your project, to build and deploy
 
     ![MRTK project configurator](../media/asa-05-section-4-step-1-2.png)
 
-    [!INCLUDE[](includes/building-your-application-to-your-ios-device.md)]
+    [!INCLUDE[](includes/build-application-to-ios-device.md)]
 
 3. In the Unity menu, select **Edit** > **Project Settings**... to open the Player Settings window, then locate the **Player** > **Other Settings** section, uncheck the **Strip Engine Code** checkbox to disable it:
 
