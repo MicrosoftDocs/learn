@@ -21,7 +21,7 @@ its **Transform** component as follows
 
 5. To focus in on the objects in the scene, you can double-click on the **Cube** object, and then zoom slightly in again. Or you can use F key to zoom and focus on the object.
 
-5. To interact and grab an object with tracked hands, the object must have:
+6. To interact and grab an object with tracked hands, the object must have:
 
     * Collider component such as **Box Collider** (Unity's cube already has a Box Collider by default)
     * **Object Manipulator (Script)** component
@@ -32,13 +32,13 @@ using one or two hands. This script supports the direct manipulation input model
 Adding hand interaction to an object
 script enables the user to touch holograms directly with their hands.
 
-5. With the **Cube** still selected in the Hierarchy window, in the Inspector window ,click on
+7. With the **Cube** still selected in the Hierarchy window, in the Inspector window ,click on
 **Add Component** button, then search and select **Object Manipulator script** to add the
 Object Manipulator script to the cube object.
 
     ![Adding the object manipulator](../media/base-2-section-8-step-1-2.png)
 
-6. Repeat the same to add **Near Interaction Grabbable script** to the cube.
+8. Repeat the same to add **Near Interaction Grabbable script** to the cube.
 
     ![Adding the Near Interaction Grabbable](../media/base-2-section-8-step-1-3.png)
 
@@ -58,8 +58,7 @@ Using the Unity in-editor input simulation, press the space bar on your keyboard
 1. In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window.
 
      In the **Build Settings** window, click the Add Open Scenes button to add your current scene to the **Scenes In Build** list, then click the **Build** button to open the Build Universal Windows Platform window:
-
-    ![Adding Scenes in build](../media/base-2-section-9-step-1-1.png)
+   ![Adding Scenes in build](../media/base-2-section-9-step-1-1.png)
 
 2. In the Build Universal Windows Platform window, choose a suitable location to store your build, for example, *D:\MixedRealityLearning\Builds*, create a new folder and give it a suitable name, for example, GettingStarted, and then click the **Select Folder** button to start the build process:
 
@@ -67,7 +66,7 @@ Using the Unity in-editor input simulation, press the space bar on your keyboard
 
 3. Wait for Unity to finish the build process:
 
-    ![Wait for the build process to finish](../media/base-02-section9-step1-3.png)
+    ![Wait for the build process to finish](../media/base-2-section-9-step-1-3.png)
 
 ## 2. Build and deploy the application
 
