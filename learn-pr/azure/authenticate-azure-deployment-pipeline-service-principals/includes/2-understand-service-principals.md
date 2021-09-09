@@ -22,7 +22,7 @@ Azure Active Directory (Azure AD) is the service that manages identities for Azu
 
 :::image type="content" source="../media/2-security-principals.png" alt-text="Diagram that shows the four types of security principals: user, group, service principal, and managed identity." border="false":::
 
-- A *user* represents a human who usually signs in interactively by using a browser. Users often have additional security checks to perform when they sign in, such as multifactor authentication (MFA) and conditional access based on their location or network.
+- A *user* represents a human who usually signs in interactively by using a browser. Users often have additional security checks to perform when they sign in, such as multifactor authentication (MFA) and Conditional Access based on their location or network.
 - A *group* represents a collection of users. Groups don't authenticate directly, but they provide a convenient way to assign permissions to a set of users together.
 - A *service principal* represents an automated process or system that usually doesn't have a human directly running it.
 - A *managed identity* is a special type of service principal that's designed for situations where a human isn't involved in the authentication process.
