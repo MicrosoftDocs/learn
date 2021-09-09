@@ -55,7 +55,7 @@ Your organization has made the decision to move forward with the following confi
 
 ## Authentication and access
 
-Your organization's security policy requires that all sign-ins that occur outside the company's perimeter network are authenticated with an additional factor of authentication. This requirement combines two aspects of the Azure AD service: multifactor authentication and conditional access policies.
+Your organization's security policy requires that all sign-ins that occur outside the company's perimeter network are authenticated with an additional factor of authentication. This requirement combines two aspects of the Azure AD service: multifactor authentication and Conditional Access policies.
 
 ### Multifactor authentication
 
@@ -69,17 +69,17 @@ Using multifactor authentication increases the security of your identity by limi
 
 Azure AD has multifactor authentication capabilities built in and will integrate with other multifactor authentication providers. Basic multifactor authentication features are available to Microsoft 365 and Azure AD administrators for no extra cost. If you want to upgrade the features for your admins or extend multifactor authentication to the rest of your users, you can purchase more capabilities.
 
-### Conditional access policies
+### Conditional Access policies
 
 Along with multifactor authentication, ensuring that additional requirements are met before granting access can add another layer of protection. Blocking logins from a suspicious IP address, or denying access from devices without malware protection, can limit access from risky sign-ins.
 
-Azure Active Directory provides conditional access policies based on group, location, or device state. The location feature allows your organization to differentiate IP addresses that don't belong to the network, and it satisfies the security policy to require multifactor authentication from all such locations.
+Azure Active Directory provides Conditional Access policies based on group, location, or device state. The location feature allows your organization to differentiate IP addresses that don't belong to the network, and it satisfies the security policy to require multifactor authentication from all such locations.
 
-Your organization has created a conditional access policy that requires users who access the application from an IP address outside the company network to be challenged with multifactor authentication.
+Your organization has created a Conditional Access policy that requires users who access the application from an IP address outside the company network to be challenged with multifactor authentication.
 
 In the following illustration, user requests to access the on-premises and cloud applications are first checked against a list of conditions. The requests are either allowed access, forced to go through multifactor authentication, or blocked based on the conditions that they satisfy.
 
-![Illustration of a sample implementation of a conditional access policy and multifactor authentication.](../media/3-conditional-access.png)
+![Illustration of a sample implementation of a Conditional Access policy and multifactor authentication.](../media/3-conditional-access.png)
 
 ## Securing applications
 
@@ -93,7 +93,7 @@ Azure AD Application Proxy is:
   - You don't need to change or update your applications to work with Application Proxy.
   - Your users get a consistent authentication experience. They can use the MyApps portal to get single sign-on to both SaaS apps in the cloud and your apps on-premises.
 - Secure
-  - When you publish your apps by using Azure AD Application Proxy, you can take advantage of the authorization controls and security analytics in Azure. You get cloud-scale security and Azure security features like conditional access and two-step verification.
+  - When you publish your apps by using Azure AD Application Proxy, you can take advantage of the authorization controls and security analytics in Azure. You get cloud-scale security and Azure security features like Conditional Access and two-step verification.
   - You don't have to open any inbound connections through your firewall to give your users remote access.
 - Cost-effective
   - Application Proxy works in the cloud, so you can save time and money. On-premises solutions typically require you to set up and maintain perimeter networks, edge servers, or other complex infrastructures.
