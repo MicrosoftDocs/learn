@@ -31,10 +31,9 @@ products:
   - vs-code
 units:
   - learn.use-docker-container-dev-env-vs-code.1-introduction
+  - learn.use-docker-container-dev-env-vs-code.2-exercise-prepare-project
   - learn.use-docker-container-dev-env-vs-code.2-use-as-dev-env
   - learn.use-docker-container-dev-env-vs-code.3-exercise-add-dev-container
-  - learn.use-docker-container-dev-env-vs-code.4-forward-ports
-  - learn.use-docker-container-dev-env-vs-code.5-exercise-forward-ports
   - learn.use-docker-container-dev-env-vs-code.6-customize-settings
   - learn.use-docker-container-dev-env-vs-code.7-exercise-customize-settings
   - learn.use-docker-container-dev-env-vs-code.8-add-software
