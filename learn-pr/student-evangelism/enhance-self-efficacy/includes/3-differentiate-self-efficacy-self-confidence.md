@@ -8,7 +8,9 @@ Self-confidence is your belief or trust in yourself. We sometimes describe ourse
 
 You could be a confident person but still lack self-efficacy in certain areas. We talk about self-efficacy in specific areas such as math, programming, art, or music, rather than in a general sense. In contrast, self-confidence is more about your general belief in yourself.
 
-As a confident person, you could have low self-efficacy in certain tasks. These tasks could be debugging code, creating documentation, or interacting with team members on a virtual call. You could also have varying degrees of self-efficacy with the same task. For example, when you're preparing for the coding competition, you have several meetings to discuss and fine-tune your code. You have high self-efficacy when you're sharing your code and explaining its logic to your teammates. But when you present your code to a supervisor, you're anxious and question your abilities. You fear that your supervisor, who's much more experienced, might find many flaws in your code and stop respecting you.
+As a confident person, you could have low self-efficacy in certain tasks. These tasks could be debugging code, creating documentation, or interacting with team members on a virtual call. You could also have varying degrees of self-efficacy with the same task.
+
+For example, when you're preparing for the coding competition, you have several meetings to discuss and fine-tune your code. You have high self-efficacy when you share your code and explain its logic to your teammates. But when you present your code to a supervisor, you're anxious and question your abilities. You fear that your supervisor, who's much more experienced, might find many flaws in your code and stop respecting you.
 
 > [!IMPORTANT]
 > Your opinion of yourself and your abilities can have a profound impact on your progress and success.
@@ -22,7 +24,7 @@ Many people struggle to think of themselves as leaders because they might still 
 When you work on improving your self-efficacy, you can be a better leader. You can improve your self-efficacy by gaining practice and feedback on your progress. You might still be developing your self-efficacy in a particular programming area. Use your own learnings to engage with your learners, students, or peers to overcome obstacles together. Work on your own self-efficacy and that of the group, and remember that you're all learning.
 
 > [!TIP]
-> Remember that you might not always have all the answers. With honesty, bravery, and a growth mindset you can help someone shift from thinking "I don't know if I can succeed in computer science" to "I can do this!"
+> Remember that you might not always have all the answers. With honesty, bravery, and a growth mindset, you can help someone shift from thinking "I don't know if I can succeed in computer science" to "I can do this!"
 
 ## Self-efficacy and working in computer science
 

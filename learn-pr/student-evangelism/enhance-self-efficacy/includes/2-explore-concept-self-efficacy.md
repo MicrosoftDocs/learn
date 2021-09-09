@@ -2,7 +2,7 @@ You know that your team has great communication skills, but they're questioning 
 
 ## What is self-efficacy?
 
-Self-efficacy is an idea that lies at the heart of the question "How confident are you in your ability to do well?" It's the belief in your own ability to succeed in a particular task, subject, or area. Self-efficacy is an important tool for learners and also for mentors, managers, leaders, and instructors. Research indicates that self-efficacy is one of the most important influences in your ability to persist in learning and problem solving.
+Self-efficacy is an idea that lies at the heart of the question, "How confident are you in your ability to do well?" It's the belief in your own ability to succeed in a particular task, subject, or area. Self-efficacy is an important tool for learners and also for mentors, managers, leaders, and instructors. Research indicates that self-efficacy is one of the most important influences in your ability to persist in learning and problem solving.
 
 In this unit, you learn about self-efficacy and its role in achieving successful outcomes. For an introduction to this important skill, review the following short video.
 
@@ -39,7 +39,7 @@ If you avoid a task or give up easily because you don't believe you can succeed,
 
 ### How high self-efficacy improves your prospects
 
-In contrast, high self-efficacy improves your prospects of a successful outcome. When you have high self-efficacy, you believe that you can successfully accomplish the task at hand and persist through challenges. This belief makes you more interested in that task, and you engage better. 
+In contrast, high self-efficacy improves your prospects of a successful outcome. When you have high self-efficacy, you believe that you can successfully accomplish the task at hand and persist through challenges. This belief makes you more interested in that task, and you engage better.
 
 High self-efficacy makes you want to learn more about what you need to do and keeps you motivated as you do it. When you approach a task with high motivation and engagement, you tend to spend more time working at it and practicing. This effort improves your skills and your prospects for future projects and tasks.
 
@@ -59,6 +59,7 @@ When you're faced with a challenge, pause and remember that even the most experi
 - Improve your self-efficacy levels.
 - Approach challenges with enthusiasm and confidence.
 
-Remember from the video: Self-efficacy is often more important than any actual skill you might currently have.
+> [!NOTE]
+> Remember from the video: Self-efficacy is often more important than any actual skill you might currently have.
 
 :::image type="content" source="../media/2-self-efficacy-chart.png" alt-text="Graph showing that self-efficacy is more important than existing skill." border="false":::

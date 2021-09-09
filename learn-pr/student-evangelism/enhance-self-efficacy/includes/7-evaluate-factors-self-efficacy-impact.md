@@ -1,4 +1,4 @@
-The team has started using some of the strategies for improving self-efficacy. They're putting together a plan to draft their script for the presentation. Each team member has chosen their lines and everyone's working together to update the script when the team makes changes to the code. In this unit, you'll learn about the factors that affect your self-efficacy and the strategies you can use to improve it.
+The team has started using some of the strategies for improving self-efficacy. They're putting together a plan to draft their script for the presentation. Each team member has chosen their lines, and everyone's working together to update the script when the team makes changes to the code. In this unit, you'll learn about the factors that affect your self-efficacy and the strategies you can use to improve it.
 
 ## Which factors affect self-efficacy?
 
@@ -48,6 +48,6 @@ There are several effective steps you can take to improve your self-efficacy and
 
 Use the following examples to practice positive self-talk:
 
-- Instead of "I can't do public speaking," think, "I can't do public speaking *yet*."
-- Instead of "I'm not a resourceful person," think, "With time and effort, I can improve my resourcefulness."
-- Instead of "I can never reach the finals in the coding competition," think, "I can be successful if I persevere and practice with my teammates."
+- Instead of telling yourself, "I can't do public speaking," think, "I can't do public speaking *yet*."
+- Instead of telling yourself, "I'm not a resourceful person," think, "With time and effort, I can improve my resourcefulness."
+- Instead of telling yourself, "I can never reach the finals in the coding competition," think, "I can be successful if I persevere and practice with my teammates."
