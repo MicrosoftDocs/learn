@@ -1,7 +1,7 @@
 
 ## How Azure Service Health works
 
-Each one of the three services, of which Azure Service Health is composed, has different ways to work.
+Each one of the three services, of which Azure Service Health is composed, works in different ways.
 
 ### Azure Status
 
@@ -14,14 +14,14 @@ On the page, you can set the automatic refresh period to:
 * 10 minutes
 * 30 minutes
 
-This would be useful if you want to have this information displayed in monitors at your NOC (Network Operation Center). The refresh rate will allow you to customize the information displayed, based on your service review needs.
+You may find this useful if you want to have this information displayed in monitors at your NOC (Network Operation Center). The refresh rate will allow you to customize the information displayed, based on your service review needs.
 
-The status page has all products and services listed by geographies and regions. There are four types of status indicators available. These indicators allow you to easily identify the service health by determining if the service is good, if there is some specific information available on that service, or an indication of a warning or critical issue.
+The status page has all products and services listed by geographies and regions. There are four types of status indicators available. The indicators allow you to easily identify the service health by determining if the service is good, if there is some specific information available on that service, or an indication of a warning or critical issue.
 
 > [!TIP]
 > You will also notice blank areas in the table. These indicate that a service is not available in the region listed.
 
-You can also choose to get an RSS feed that will provide updates on the service health as well. You can find the RSS tag on this page in the top right section of the title area.
+You can also choose to get an RSS feed that will provide updates on the service health. You can find the RSS tag on this page in the upper right section of the title area.
 
 :::image type="content" source="../media/3-azure-status.png" alt-text="Screenshot of Azure Service Status Page displaying the public information about the health of Azure services among the different geographies.":::
 
@@ -42,7 +42,7 @@ Also Service Health will allow you to create health alerts to notify you when so
 
 ### Resource Health
 
-The Resource Health executes some checks, minute-by-minute, across the resources and makes the information available to you. There is a specific type of resource that runs the health checks. You can see the [full list here](/azure/service-health/resource-health-checks-resource-types).
+The Resource Health executes some checks, minute-by-minute, across the resources and makes the information available to you. There is a specific type of resource that runs the health checks. You can see the [full list resource types on this page](/azure/service-health/resource-health-checks-resource-types).
 
 As an example, for Virtual Machines the type of checks executed include:
 
@@ -51,17 +51,17 @@ As an example, for Virtual Machines the type of checks executed include:
 * Is there ongoing planned maintenance?
 * Is the host hardware degraded and predicted to fail soon?
 
-The Resource Health is available through the **Support + troubleshooting** blade at Azure Portal for the specific resource types on Azure.
+The Resource Health is available through the **Support + troubleshooting** blade in the Azure portal, for the specific resource types on Azure.
 
 :::image type="content" source="../media/3-azure-resource-health.png" alt-text="Screenshot of Azure Resource Health with the health history of a specific virtual machine":::
 
 ## What are the main features of Azure Service Health?
 
-The main features from Azure Service Health are listed below. We'll see in details each one.
+The main features from Azure Service Health are listed below. We'll review some details for each one.
 
 ### Personalized dashboards
 
-With Azure Service Health, you can create a personalized dashboard (view) that allows you to filter on subscription, region, and service. Doing so,  allows you to customize the information available for review, based on what is more important/critical to your environment.
+With Azure Service Health, you can create a personalized dashboard (view) that allows you to filter on subscription, region, and service. Doing so, allows you to customize the information available for review, based on what is more important/critical to your environment.
 
 :::image type="content" source="../media/4-personalized-dashboard.png" alt-text="Screenshot depicting an example of a Personalized Dashboard with multiple subscriptions selected, across two regions.":::
 
@@ -73,7 +73,7 @@ Based on the selections you make, you can add a service health alert and choose 
 
 ### Shareable documents with details about issues
 
-For any service issue, planned maintenance, health, or security advisories, you have the option to download a PDF document containing the relevant information. Selecting the issue, you can see the Summary information along with the option to download all information as PDF. You may find this useful when you need to share the details by e-mail, for example. Among other detailed information, the PDF will contain the event type, status, service impacted, region, impacted subscriptions, update history and more.
+For any service issue, planned maintenance, health, or security advisories, you can download a PDF document containing the relevant information. Selecting the issue, you can see the summary information along with the option to download all information as a PDF document. You may find it useful when you need to share the details by e-mail, for example. Among other detailed information, the PDF will contain the event type, status, service impacted, region, impacted subscriptions, update history and more.
 
 :::image type="content" source="../media/4-shareable-documents.png" alt-text="Screenshot with a summary of a Log Analytics issue showing details such as Tracking ID, Impacted regions, Impacted subscription, Last updates, Preliminary Root Cause, and a link to Download the summary as PDF.":::
 
