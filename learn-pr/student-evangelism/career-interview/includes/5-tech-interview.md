@@ -48,7 +48,7 @@ On the interview day, keep in mind that no one wants to see you fail. The compan
 
 There are generally two types of technical interviews: 
 
-- **Whiteboard**. In this interview, you'll stand in front of a whiteboard to explain the solution to a problem. This type of interview is intended is to mimic your everyday work, where you and your colleagues collaborate to solve a problem. This form of interviewing gives the interviewers a chance to hear and see your thought process. 
+- **Whiteboard**. In this interview, you'll stand in front of a whiteboard to explain the solution to a problem. This type of interview is intended to mimic your everyday work, where you and your colleagues collaborate to solve a problem. This form of interviewing gives the interviewers a chance to hear and see your thought process. 
 
 - **Standard**. In a standard interview, you might be given a large task to solve, a bug to fix, or a system to analyze. You usually get a time limit (like an hour) to solve whatever the problem might be. 
 
