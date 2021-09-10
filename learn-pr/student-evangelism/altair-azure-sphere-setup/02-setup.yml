@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-setup.setup
-title: Set up Azure Sphere
+title: Installing the Azure Sphere development software on your computer
 metadata:
-  title: Set up Azure Sphere
-  description: Learn how to set up Azure Sphere for development.
+  title: Installing the Azure Sphere development software on your computer
+  description: Installing the Azure Sphere development software on your computer.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover

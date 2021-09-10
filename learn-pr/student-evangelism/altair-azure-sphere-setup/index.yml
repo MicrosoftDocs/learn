@@ -38,6 +38,7 @@ products:
 - azure-virtual-machines
 units:
 - learn.student-evangelism.altair-azure-sphere-setup.introduction
+- learn.student-evangelism.altair-azure-sphere-setup.hardware
 - learn.student-evangelism.altair-azure-sphere-setup.setup
 - learn.student-evangelism.altair-azure-sphere-setup.exercise-set-up-azure-sphere
 - learn.student-evangelism.altair-azure-sphere-setup.knowledge-check
