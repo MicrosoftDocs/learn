@@ -16,7 +16,7 @@ To create your DNS zone:
 
 1. On the Azure **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the *Search services and marketplace* searchbox, Search for and select **DNS zone** by Microsoft. The **DNS zone** pane appears.
+1. In the *Search services and marketplace* search box, Search for and select **DNS zone** by Microsoft. The **DNS zone** pane appears.
 
 1. Select **Create**.
 
