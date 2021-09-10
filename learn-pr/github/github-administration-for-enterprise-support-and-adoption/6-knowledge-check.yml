@@ -37,16 +37,16 @@ quiz:
     - content: "Dependabot"
       isCorrect: false
       explanation: "Dependabot is not an action that can be automated."
-  - content: "GitHub support is limited to which of the following issues: (Each answer presents part of the solution. Choose three.)"
+  - content: "GitHub support is limited to which of the following issues:"
     choices:
-    - content: "Account"
+    - content: "Account, Security, and Abuse issues"
       isCorrect: true
       explanation: "GitHub Support is limited to account, security, and abuse issues"
-    - content: "Security"
-      isCorrect: true
+    - content: "Security issues"
+      isCorrect: false
       explanation: "GitHub Support is limited to account, security, and abuse issues"
     - content: "Abuse issues"
-      isCorrect: true
+      isCorrect: false
       explanation: "GitHub Support is limited to account, security, and abuse issues"
     - content: "Server setup issues"
       isCorrect: false
