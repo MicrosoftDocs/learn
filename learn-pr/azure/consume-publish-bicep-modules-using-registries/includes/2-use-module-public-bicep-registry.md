@@ -51,12 +51,12 @@ The identifier contains four segments:
 
 - **Scheme**: Bicep supports several types of module, which are called *schemes*. When you work with Bicep registries, the scheme is `br`.
 - **Registry**: The name of the registry that contains the module you want to use.
-- **Module**: The identifier of the specific module within the registry.
+- **Module identifier**: The full name of the specific module within the registry.
 - **Tag**: Tags typically represent versions of modules, because a single module can have multiple versions published. You'll learn more about versions later in this module.
 
 After you've added a reference to the module, Visual Studio Code attempts to automatically download the module from the registry. When the module is downloaded, the Bicep extension for Visual Studio Code gives you IntelliSense and other code authoring assistance as you work.
 
-When you're ready to deploy your Bicep file, you deploy it just like you normally do. Bicep downloads the module from the registry automatically.
+When you're ready to deploy your Bicep file, you deploy it just like you normally do. Bicep downloads the module from the registry automatically as part of the deployment process.
 
 > [!NOTE]
 > You can also separate the module download process from the build by using the `bicep restore` command, and use the `bicep build` command with the `--no-restore` command-line switch to stop the build process from downloading the module. Generally, though, you don't need to do this - just let Bicep download the modules automatically.
