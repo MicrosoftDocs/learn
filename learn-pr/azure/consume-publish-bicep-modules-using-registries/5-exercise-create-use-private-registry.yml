@@ -12,6 +12,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
-durationInMinutes: 1
+durationInMinutes: 1 # TODO
 content: |
   [!include[](includes/5-exercise-create-use-private-registry.md)]
