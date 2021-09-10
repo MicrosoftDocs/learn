@@ -60,5 +60,3 @@ When you're ready to deploy your Bicep file, you deploy it just like you normall
 
 > [!NOTE]
 > You can also separate the module download process from the build by using the `bicep restore` command, and use the `bicep build` command with the `--no-restore` command-line switch to stop the build process from downloading the module. Generally, though, you don't need to do this - just let Bicep download the modules automatically.
-
-<!-- TODO aliases -->
