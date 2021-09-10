@@ -42,16 +42,13 @@ quiz:
     - content: "Account, Security, and Abuse issues"
       isCorrect: true
       explanation: "GitHub Support is limited to account, security, and abuse issues"
-    - content: "Security issues"
+    - content: "Security, server, and 2FA issues"
       isCorrect: false
       explanation: "GitHub Support is limited to account, security, and abuse issues"
-    - content: "Abuse issues"
+    - content: "Account, server, and security issues"
       isCorrect: false
       explanation: "GitHub Support is limited to account, security, and abuse issues"
-    - content: "Server setup issues"
-      isCorrect: false
-      explanation: "GitHub Support is limited to account, security, and abuse issues, not server setup issues or 2FA setup"
-    - content: "2FA setup"
+    - content: "Account, 2FA, and security issues"
       isCorrect: false
       explanation: "GitHub Support is limited to account, security, and abuse issues, not server setup issues or 2FA setup"
   - content: "Which GitHub priority should you use to report critical system failures?"
