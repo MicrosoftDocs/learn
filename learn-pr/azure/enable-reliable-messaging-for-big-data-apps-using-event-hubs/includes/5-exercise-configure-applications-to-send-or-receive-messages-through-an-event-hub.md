@@ -12,10 +12,10 @@ The Java receiver application, which you'll configure in this unit, stores messa
 
     | Parameter       | Description |
     | --------------- | ----------- |
-    | --name (required) | A name for your storage account. |
-    | --resource-group (required) | The resource group owner. We'll use the pre-created sandbox resource group. |
-    | --location (optional) | An optional location if you want the storage account in a specific place vs. the resource group location. |
-    | --sku |  The SKU of the storage account defaults to 'Standard_RAGRS', but in this example, we are specifying it. |
+    | `name` (required) | A name for your storage account. |
+    | `resource-group` (required) | The resource group owner. We'll use the pre-created sandbox resource group. |
+    | `location` (optional) | An optional location if you want the storage account in a specific place vs. the resource group location. |
+    | `sku` |  The SKU of the storage account defaults to 'Standard_RAGRS', but in this example, we are specifying it. |
 
 In the previous exercise, we defined a default resource group and location, so even though one of those parameters is normally _required_, we can omit them from the actual command.
 
