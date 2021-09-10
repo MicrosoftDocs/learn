@@ -24,3 +24,4 @@ The Seeed Studio or Avnet with the Altair Front Panel. Full details for building
 
 :::image type="content" source="../media/altair-front-panel.png" alt-text="Image that shows Seeed Studio Azure Sphere with the Altair front panel." border = "false":::
 
+
