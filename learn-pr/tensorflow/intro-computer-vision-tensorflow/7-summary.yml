@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-computer-vision.summary
+title: Summary
+metadata:
+  title: Summary
+  description: In this last unit, we briefly recap what we have learned, and set directions for further learning.
+  author: shwars
+  ms.author: dmitryso
+  ms.date: 07/07/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions.exercise-add-bicep-deployment-action-workflow
+title: Exercise - Add a Bicep deployment action to the workflow
+metadata:
+  unitType: exercise
+  title: Exercise - Add a Bicep deployment action to the workflow
+  description: Deploy a Bicep infrastructure as code template by using GitHub Actions.
+  ms.date: 08/11/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-exercise-add-bicep-deployment-action-workflow.md)]
