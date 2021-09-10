@@ -20,7 +20,7 @@ A Device Provisioning Service (DPS) can be linked to one or more hubs. It's a se
     | Subscription | Concierge Subscription |
     | Resource group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn>. |
     | **Instance details** |
-    | Name | Enter a friendly name (say "CheeseCaveHub-<your ID>") |
+    | Name | Enter a friendly name (for example, *CheeseCaveHub-DPS*) |
     | Region | Choose a location close to you. |
 
     [![Screenshot showing the completed fields for a new DPS.](../media/iot-hub-provisioning-resource-name.png)](../media/iot-hub-provisioning-resource-name.png#lightbox)

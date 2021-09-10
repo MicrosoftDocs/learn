@@ -19,7 +19,7 @@ In this unit, we'll create an IoT Hub.
     | Subscription | Concierge Subscription |
     | Resource group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn>. A resource group is like a folder, it's largely there to help you organize your resources. |
     | **Instance details** |
-    | IoT hub name | Enter a friendly name (for example, "CheeseCaveHub-<your ID>") |
+    | IoT hub name | Enter a friendly name (for example, *CheeseCaveHub-XXX*, where XXX represents any ID you'll remember like your initials). |
     | Region | Choose a location close to you. |
 
     >[!IMPORTANT]
@@ -27,7 +27,7 @@ In this unit, we'll create an IoT Hub.
 
 1. Select **Review + create**. This option gives you a chance to verify your choices.
 
-1. After validation passes, select**Create**. Building your hub can take a few minutes.
+1. After validation passes, select **Create**. Building your hub can take a few minutes.
 
 1. When the IoT Hub deployment completes, select **Go to resource**. The **Overview** page for your hub appears. Alternatively, you can search for it in **All Resources** if you happen to miss the completion message.
 
