@@ -14,7 +14,7 @@ The table below shows the availability of [GitHub Enterprise Support](https://en
 
 [Premium and Premium Plus Support](https://github.com/premium-support) customers also receive other benefits.
 
-## Is this an issue for the admin or GitHub Enterprise Support?
+## Is this an issue for the administrator or GitHub Enterprise Support?
 
 :::image type="content" source="../media/support-types.png" alt-text="A graphic that represents three issues Enterprise support technicians can resolve":::
 
