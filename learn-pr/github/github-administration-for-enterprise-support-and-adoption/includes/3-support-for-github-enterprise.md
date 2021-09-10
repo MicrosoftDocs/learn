@@ -1,6 +1,4 @@
-:::image type="content" source="/media/premium-support.png" alt-text="A graphic that shows a stylized support engineer, with icons that represent different times of day":::
-
-# Support for GitHub Enterprise
+:::image type="content" source="../media/premium-support.png" alt-text="A graphic that shows a stylized support engineer, with icons that represent different times of day":::
 
 In this unit, you'll learn about the enhanced support available with GitHub Enterprise, as well as common administrator duties when interacting with GitHub Enterprise Support. You can apply this knowledge whether you're operating a private copy of GitHub contained within a virtual appliance ("GitHub Enterprise Server") or you've deployed GitHub Enterprise services in GitHub's cloud ("GitHub Enterprise Cloud").
 
@@ -20,7 +18,7 @@ The table below shows the availability of [GitHub Enterprise Support](https://en
 
 GitHub Support covers account, security, and abuse issues.
 
-:::image type="content" source="/media/support-types.png" alt-text="A graphic that represents three issues Enterprise support technicians can resolve":::
+:::image type="content" source="../media/support-types.png" alt-text="A graphic that represents three issues Enterprise support technicians can resolve":::
 
 Human error-related authentication problems are an example of account issues. When a user is locked out of their account and failed to retain keys to back up their two-factor authentication process, GitHub technical support can help you prove the user's identity.
 
@@ -57,7 +55,7 @@ Logs present in support bundles retain information from the past two days, but i
 
 Creating a basic diagnostic file from the Management Console is as simple as logging into the Console, selecting **Support**, and selecting **Download diagnostics info**. You can also obtain a support bundle by choosing **Download support bundle** instead.
 
-:::image type="content" source="/media/support-link.png" alt-text="Button to access Support area":::
+:::image type="content" source="../media/support-link.png" alt-text="Button to access Support area":::
 
 The best way to provide this support bundle to GitHub Enterprise Support as an administrator is to select the relevant enterprise from **Your enterprises**, select **Enterprise licensing** under **Settings**, and then select **Upload a support bundle** in the GitHub Enterprise Help section of the webpage. This user-friendly direct line to GitHub Support is the interface you should use first when GitHub Enterprise Support requests a support bundle in response to your issue.
 

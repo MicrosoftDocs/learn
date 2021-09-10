@@ -1,18 +1,16 @@
 <!--GitHub Administration for Enterprise support and adoption-->
 
-# GitHub Enterprise features
-
 In this unit, you'll learn the difference between the two types of GitHub Enterprise features: *upkeep* and *automation*. As an administrator, you're responsible for knowing how and when to use them to make development easier.
 
 Let's say your organization has formed a major partnership with a contractor who will help implement a new feature. As an administrator, you want to integrate each contractor employee with the internal team and help all collaborators cut down on repetitive tasks as they rapidly expand the code base. To accomplish these goals, you'll build a secure knowledge base by creating limited-access sites on GitHub Pages. You will also need to keep track of the number of GitHub Actions minutes that collaborators have used. Limited-access GitHub pages are an upkeep feature, and GitHub Actions minutes enable automation.
 
 GitHub Enterprise is the GitHub product that provides the most assistance and features to developers. This means that, in addition to unique benefits, GitHub Enterprise also has all the features included at the GitHub Team pricing level.
 
-:::image type="content" source="/media/Enterprise-features-dichotomy.png" alt-text="Graphic with title 'GitHub Enterprise features categories' that separates two lists: 'Upkeep' and 'Automation'":::
+:::image type="content" source="../media/Enterprise-features-dichotomy.png" alt-text="Graphic with title 'GitHub Enterprise features categories' that separates two lists: 'Upkeep' and 'Automation'":::
 
 ## Developer workflow basics
 
-:::image type="content" source="/media/pr-retargeting-diagram1.png" alt-text="merge-pull-request-button":::
+:::image type="content" source="../media/pr-retargeting-diagram1.png" alt-text="merge-pull-request-button":::
 
 Before we go further, you should understand the standard developer workflows that form the basis of GitHub collaboration, this will help you make sense of how GitHub Enterprise features facilitate those workflows. (A "workflow" here is distinct from "script workflows" that we'll discuss in unit 4.)
 
@@ -37,7 +35,7 @@ Some features are available to organizations running an instance of GitHub Enter
 
 ### How can you enable upkeep features?
 
-:::image type="content" source="/media/your-organizations.png" alt-text="Your organizations in the profile menu":::
+:::image type="content" source="../media/your-organizations.png" alt-text="Your organizations in the profile menu":::
 
 You'll need to prepare to use upkeep features. Start with authentication using SAML single sign-on.
 
@@ -48,7 +46,7 @@ You'll need to prepare to use upkeep features. Start with authentication using S
 
 Then, secure the knowledge base for any of your private repositories that exist on the GitHub Enterprise Cloud.
 
-:::image type="content" source="/media/github-enterprise-tools-and-features/public-or-private-visibility.png" alt-text="Drop-down to choose a visibility for your site":::
+:::image type="content" source="../media/github-enterprise-tools-and-features/public-or-private-visibility.png" alt-text="Drop-down to choose a visibility for your site":::
 
 1. Navigate to your site's repository and access its settings.
 2. Change **GitHub Pages visibility** to "Private."
@@ -56,7 +54,7 @@ Then, secure the knowledge base for any of your private repositories that exist 
 
 Finally, if you're running an instance of GitHub Enterprise Server and also using the GitHub Enterprise Cloud, use GitHub Connect to enable unified search and contributions between the two platforms.
 
-:::image type="content" source="/media/enable-github-connect-button.png" alt-text="Enable GitHub Connect button":::
+:::image type="content" source="../media/enable-github-connect-button.png" alt-text="Enable GitHub Connect button":::
 
 1. Sign in to GitHub Enterprise Server and GitHub.com.
 2. In Enterprise Server, access **Enterprise settings** and click "Enable GitHub Connect."

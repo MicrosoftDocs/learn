@@ -1,5 +1,3 @@
-# Summary
-
 The goal of this module was to help you understand how GitHub Enterprise can simplify some of your duties as a GitHub administrator. GitHub Enterprise includes tools for streamlining the operations of large organizations such as managing the increased administrative workload that comes with greater headcount.
 
 You learned about:

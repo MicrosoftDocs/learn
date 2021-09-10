@@ -1,5 +1,3 @@
-# Scale your enterprise deployment
-
 In this unit, you'll learn more about the GitHub Enterprise features that support your Enterprise organization as it grows. You will also learn how to install tools from the GitHub Marketplace to help enhance your Enterprise organization.
 
 As we discussed in unit 2, a change in your organization's headcount, like a new contractor partnership, can increase the friction between GitHub and users or administrators. Suddenly, many more people require secure access to the code base, and as an administrator, you'll be responsible for tasks like providing and revoking access to user identities during the defined work period, using GitHub APIs to query the organization's audit log for compliance purposes, and installing GitHub applications from the Marketplace Azure Pipelines to establish standard workflows for deployment.
@@ -74,7 +72,7 @@ GitHub applications are more complex tools that sacrifice customization and simp
 
 Let's say you want to reduce the workload for the DevOps teams within your organization because deadlines are getting tighter and capable users need to be able to shift to help with coding at any time. There's probably an app or action for that in the GitHub Marketplace! Here are a few tips for locating the right tools for the job.
 
-:::image type="content" source="/media/marketplace-interface.png" alt-text="A screenshot of the GitHub marketplace interface":::
+:::image type="content" source="../media/marketplace-interface.png" alt-text="A screenshot of the GitHub marketplace interface":::
 
 - **App or action?** Determine the scope of the problem you're trying to solve. If you need to automate a repetitive task in response to an event in your repository, you probably need an action. If you want to make it easier to complete a lot of related tasks, or you want to extend GitHub's functionality, you probably need an application. Filter the available tools on the Marketplace by choosing between **Apps** and **Actions** in the **Types** section of the Marketplace sidebar.
 - **Do you want to spend money?** Depending on your budget, you might seek apps that are available on a free or trial basis. Alternately, some of the most popular apps on the Marketplace have versions that you must pay for on a users-per-month basis. Narrow your results along these lines by expanding the **Filters** section of the Marketplace sidebar and choosing between **Free**, **Free Trials**, **GitHub Enterprise** (apps with special functionality for organizations with a GitHub Enterprise plan), and **Paid**. (There aren't any paid actions.)

@@ -1,8 +1,6 @@
-:::image type="content" source="/media/Intro-01.png" alt-text="A graphic that superimposes 'GitHub Administration for Enterprise support and adoption' over a stylized world map, upon which stylized keys appear":::
+:::image type="content" source="../media/Intro-01.png" alt-text="A graphic that superimposes 'GitHub Administration for Enterprise support and adoption' over a stylized world map, upon which stylized keys appear":::
 
 <!--GitHub Administration for Enterprise support and adoption-->
-
-# Introduction
 
 As your organization's GitHub administrator, one of your responsibilities is to take advantage of the tools GitHub provides to large businesses. GitHub Enterprise packages these tools in one place, with features to improve operations for organizations with hundreds or thousands of employees, rapid arrival and departure of collaborators, and international clientele.
 
