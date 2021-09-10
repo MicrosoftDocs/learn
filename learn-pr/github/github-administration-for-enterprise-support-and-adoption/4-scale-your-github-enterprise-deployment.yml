@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-scale-your-github-enterprise-deployment.md)]
+  [!include[](includes/4-scale-your-github-enterprise-deployment.md)]
