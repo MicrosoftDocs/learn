@@ -3,11 +3,24 @@ TODO scenario
 In this exercise, you create a Bicep module and publish it to a registry.
 
 > [!div class="checklist"]
+> * Create a module.
 > * Deploy a new private registry.
-> * Create a module and publish it to your registry.
+> * Publish the module to your registry.
 > * Create a new Bicep file that uses the module to test it.
 
-## Create a registry
+## Create a module
+
+1. In Visual Studio Code, create a new file named *module.bicep*.
+
+1. Paste the following Bicep code into *module.bicep*:
+
+   ```bicep
+   // TODO
+   ```
+
+## Create an Azure container registry
+
+Here, you create a new registry to store and share your Bicep modules. You'll use Azure Container Registry.
 
 ::: zone pivot="cli"
 
@@ -39,16 +52,6 @@ In this exercise, you create a Bicep module and publish it to a registry.
 
 ::: zone-end
 
-## Create a module
-
-1. In Visual Studio Code, create a new file named *module.bicep*.
-
-1. Paste the following Bicep code into *module.bicep*:
-
-   ```bicep
-   // TODO
-   ```
-
 ## Publish the module to your registry
 
 ::: zone pivot="cli"
@@ -61,6 +64,8 @@ In this exercise, you create a Bicep module and publish it to a registry.
      --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/test/test:v1'
    ```
 
+   Notice that you didn't need to sign in. Bicep uses the sign-in information from the Azure CLI to authenticate you to the registry.
+
 1. Run the following command to list the artifacts in your registry:
 
    ```azurecli
@@ -68,7 +73,13 @@ In this exercise, you create a Bicep module and publish it to a registry.
      --name YOUR_CONTAINER_REGISTRY_NAME
    ```
 
-   Notice that the list contains TODO.
+   The output shows a single entry with the name of your module:
+
+   ```output
+   [
+     "todo/todo"
+   ]
+   ```
 
 ::: zone-end
 
@@ -81,13 +92,19 @@ In this exercise, you create a Bicep module and publish it to a registry.
      --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/test/test:v1'
    ```
 
+   Notice that you didn't need to sign in. Bicep uses the sign-in information from Azure PowerShell to authenticate you to the registry.
+
 1. Run the following command to list the artifacts in your registry:
 
    ```azurepowershell
-   Get-AzContainerRegistryRepository -Name YOUR_CONTAINER_REGISTRY_NAME
+   Get-AzContainerRegistryRepository -RegistryName YOUR_CONTAINER_REGISTRY_NAME
    ```
 
-   Notice that the list contains TODO.
+   The output shows a single entry with the name of your module:
+
+   ```output
+   todo/todo
+   ```
 
 ::: zone-end
 
