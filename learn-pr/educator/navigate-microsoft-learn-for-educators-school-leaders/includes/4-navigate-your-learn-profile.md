@@ -21,12 +21,12 @@ Here are some of the main items in your profile:
 >
 >We will notify you before that takes place. Until that time, please still refer to your achievements in your Microsoft Educator Center profile for your full completion history.
 
-## Changing your personal info, username and URL
+## Changing your personal info, username, and URL
 
 You may wish to customize your profile to better fit your personality. You can do this in the Profile settings. 
 
 1. Navigate to your avatar image.
-1. Select Profile, then Settings.
+1. Select **Profile**, then **Settings**.
 1. From here you can change:
     - Profile picture
     - Username/URL
@@ -53,7 +53,7 @@ No problem, you can do this in the account management area of your settings. To 
 1. Then choose either **+Add account** or **Remove account**.
 
 
-## Badges, trophies and reputation points
+## Badges, trophies, and reputation points
 
 :::image type="content" source="../media/achievements-tab.png" alt-text="Screenshot of achievements tab selected in Learn profile.":::
  
