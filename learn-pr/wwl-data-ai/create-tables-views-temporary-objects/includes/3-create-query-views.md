@@ -19,7 +19,7 @@ AS select_statement;
 
 > [!NOTE]
 > The ORDER BY clause is not permitted in a view definition unless the view uses a TOP, OFFSET/FETCH, or FOR XML element.
->
+
 
 For example, to create a view named **Sales.CustOrders** based on a custom SELECT statement that encompasses multiple tables, you could write the following query:
 
