@@ -67,7 +67,11 @@ Here's a versioning policy that often works well:
 
 ## Publish your module
 
-When you create a Bicep module that you want to share, you author the Bicep file as normal. You then *publish* the file to a registry by using the `bicep publish` command. When you publish, you need to specify the module path to save the module to.
+When you create a Bicep module that you want to share, you author the Bicep file as normal. You then *publish* the file to a registry by using the `bicep publish` command. When you publish, you need to specify the module path to save the module to:
+
+```cmd
+bicep publish module.bicep --target 'br:toycompany.azurecr.io/modulerepo/modulename:moduleversion'
+```
 
 The publish operation performs the same validation steps that happen when you build or deploy a Bicep file, including:
 
