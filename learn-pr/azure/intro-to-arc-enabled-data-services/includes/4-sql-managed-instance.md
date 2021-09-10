@@ -92,7 +92,7 @@ Kubernetes LoadBalancers and NodePorts provide connection abstraction for the ap
 
 Since Microsoft manages the complete platform and infrastructure of Azure SQL Managed Instance, users get the benefit of a Service Level Agreement (SLA). Since customers must manage the infrastructure for Azure Arc-enabled SQL Managed Instance, any SLA is managed and owned by the customer.
 
-### Disaster Recovery
+### Disaster recovery
 
 Like Azure SQL Managed Instance, Azure Arc-enabled SQL Managed Instance provides an automatic backup system for databases including point-in-time restore. Users can manually execute COPY_ONLY backups and restore them at any time.
 
