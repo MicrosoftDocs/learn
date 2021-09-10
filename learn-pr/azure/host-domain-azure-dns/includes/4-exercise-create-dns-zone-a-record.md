@@ -16,7 +16,7 @@ To create your DNS zone:
 
 1. On the Azure **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the *Search services and marketplace* search box, Search for and select **DNS zone** by Microsoft. The **DNS zone** pane appears.
+1. In the *Search services and marketplace* search box, search for and select **DNS zone** by Microsoft. The **DNS zone** pane appears.
 
 1. Select **Create**.
 
@@ -58,7 +58,9 @@ The primary record set to create is the A record. The A record set is used to po
 
     :::image type="content" source="../media/4-add-a-record.png" alt-text="Screenshot of the DNS zone page, with + Record set highlighted." lightbox ="../media/4-add-a-record.png":::
 
-1. The **Add record set** pane appears. Enter the following values for each setting.
+    The **Add record set** pane appears.
+
+1. Enter the following values for each setting.
 
     | Setting  | Value | Description  |
     |---------|---------|---------|
@@ -70,7 +72,6 @@ The primary record set to create is the A record. The A record set is used to po
     | IP Address    |    10.10.10.10     |  The IP address the record name resolves to. In a real-world scenario, you would enter the public IP address for your web server. |
 
 1. Select **OK** to add the record to your zone.
-
 
     :::image type="content" source="../media/4-arecord.png" alt-text="Screenshot of A record set." lightbox="../media/4-arecord.png":::
 
