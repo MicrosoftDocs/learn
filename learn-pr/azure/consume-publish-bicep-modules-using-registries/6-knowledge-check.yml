@@ -37,14 +37,14 @@ quiz:
     - content: Publish it to the public registry.
       isCorrect: true
       explanation: Correct. Microsoft maintains a public registry for the Bicep community. Anyone can submit and use modules.
-  - content: ""
+  - content: In which of these situations should you publish a new version of your module to  a private registry?
     choices:
-    - content: ""
+    - content: You add some comments to your module.
+      isCorrect: false
+      explanation: Incorrect. Comments in a Bicep file don't affect how the module behaves, so you don't need to publish a new version of the module.
+    - content: You remove a mandatory parameter from the module.
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: Correct. When you modify mandatory parameters for a module, this is a breaking change. You should publish a new version of the module.
+    - content: You need to share your module with a colleague.
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: Incorrect. You don't need to publish a new version of your module to share it with your colleagues. Instead, grant them access to the registry.

@@ -44,7 +44,7 @@ It's a good idea to carefully plan how you'll version your modules. Two key deci
 
 Your versioning scheme determines how you generate version numbers. Common versioning schemes include:
 
-- *Basic integers* can be used as version numbers. For example, your first version might be called `1`, your second version `2`, and so forth.
+- *Basic integers* can be used as version numbers. For example, your first version might be called `1`, your second version `2`, and so forth. Or, you might add a prefix to each version number, such as `v1` and `v2`.
 - *Dates* also make good version numbers. For example, if you publish the first version of your module on January 16, 2021, you might name the version `2021-01-16` (using *yyyy-mm-dd* format). When you publish another version on March 3, you could name it `2021-03-03`.
 - *Semantic versioning* is a versioning system often used in software, where a single version number contains multiple parts. Each part signals different information about the nature of the change.
 
