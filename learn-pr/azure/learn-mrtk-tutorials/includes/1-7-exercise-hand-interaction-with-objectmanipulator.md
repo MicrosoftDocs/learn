@@ -64,7 +64,7 @@ Using the Unity in-editor input simulation, press the space bar on your keyboard
 
 2. In the Build Universal Windows Platform window, choose a suitable location to store your build, for example, *D:\MixedRealityLearning\Builds*, create a new folder and give it a suitable name, for example, GettingStarted, and then click the **Select Folder** button to start the build process:
 
-    :::image type="content" source="../media/base-2-section-9-step-1-2.png" alt-text="Select a Build folder." lightbox=".../media/base-2-section-9-step-1-2.png":::
+    :::image type="content" source="../media/base-2-section-9-step-1-2.png" alt-text="Select a Build folder." lightbox="../media/base-2-section-9-step-1-2.png":::
 
 3. Wait for Unity to finish the build process:
 
