@@ -39,7 +39,7 @@ In general, you can use graphical tools for discovery and exploration, and comma
 - [The PostgreSQL *pgcli* utility](https://www.pgcli.com/)
 - [The PostgreSQL *psql* utility](https://www.postgresql.org/docs/9.2/app-psql.html)
 - [The PostgreSQL *pgAdmin* tool](https://www.pgadmin.org/)
-- [The Azure Portal interface](https://azure.microsoft.com/features/azure-portal/)
+- [The Azure portal interface](https://azure.microsoft.com/features/azure-portal/)
 - [Azure Data Studio](https://azure.microsoft.com/services/developer-tools/data-studio/#overview)
 - [The Microsoft Azure *az* command utility](/cli/azure)
 - [Kubernetes native tools](https://kubernetes.io/docs/concepts/cluster-administration/)
