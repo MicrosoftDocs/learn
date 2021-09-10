@@ -4,7 +4,7 @@ Before you can get started creating an immersive experience for Windows Mixed Re
 
 1. Launch the **Unity Hub**, select the **Projects** tab, and click the **down arrow** next to the **New** button.
 
-    ![Unity Hub with New button highlighted](../media/base-2-section-1-step-1-1.png)
+    :::image type="content" source="../media/base-2-section-1-step-1-1.png" alt-text="Unity Hub with New button highlighted." lightbox="../media/base-2-section-1-step-1-1.png":::
 
 2. Select the Unity version specified in the module Prerequisites.
 
