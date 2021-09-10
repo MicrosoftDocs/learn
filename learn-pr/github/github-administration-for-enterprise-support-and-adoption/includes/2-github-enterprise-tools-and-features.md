@@ -80,7 +80,7 @@ During new feature development, collaborators across your organization will take
 
 You can track your GitHub Enterprise organization's use of GitHub Advanced Security scanning by checking in the settings for **Your enterprises**.
 
-:::image type="content" source="/media/enterprise-licensing-tab-ghas.png" alt-text="screenshot showing GitHub Advanced Security in enterprise licensing settings":::
+:::image type="content" source="../media/enterprise-licensing-tab-ghas.png" alt-text="screenshot showing GitHub Advanced Security in enterprise licensing settings":::
 
 1. Select an Enterprise organization in **Your enterprises** and access **Settings**.
 2. Check the number of seats your Enterprise organization is using. If you're near to or exceeding the limit your organization has purchased, discuss with organizational stakeholders.
@@ -88,7 +88,7 @@ You can track your GitHub Enterprise organization's use of GitHub Advanced Secur
 
 Tracking users' GitHub Actions use is even easier. Your Enterprise account allows 50,000 minutes of GitHub Actions runtime per month and 50 GB of Actions storage. Check in the settings for **Your enterprises** to learn how much of that allotment your organizations have that month.
 
-:::image type="content" source="/media/actions-minutes.png" alt-text="Details of minute usage":::
+:::image type="content" source="../media/actions-minutes.png" alt-text="Details of minute usage":::
 
 1. Select an Enterprise organization in **Your enterprises** and access **Settings**.
 2. Select "GitHub Actions" in **Billing** to see how many minutes or how much storage your organizations have used. If you're near to or exceeding the limit, discuss with organizational stakeholders.
@@ -122,7 +122,7 @@ The best way to find trustworthy tools for your Enterprise organization, and to 
 
 Although anyone can publish an action in the GitHub Marketplace, publishers must complete a verification process in order to be listed under the "Verified Creator" category in the Marketplace. This process includes establishing a line of communication between GitHub and the publisher, demonstrating that the publisher meets basic security requirements, and verifying the publisher's domain. (However, GitHub does not analyze apps and actions on the GitHub Marketplace.)
 
-:::image type="content" source="/media/apps-with-verified-publisher-badge-tooltip.png" alt-text="Marketplace badge for GitHub Apps":::
+:::image type="content" source="../media/apps-with-verified-publisher-badge-tooltip.png" alt-text="Marketplace badge for GitHub Apps":::
 
 The verified creator badge, which appears as a check mark next to the publisher's name in a listing on the GitHub Marketplace, signifies verification status.
 
