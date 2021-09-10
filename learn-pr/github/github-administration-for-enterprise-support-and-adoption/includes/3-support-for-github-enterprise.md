@@ -6,7 +6,7 @@ In this unit, you'll learn about the enhanced support available with GitHub Ente
 
 The table below shows the availability of [GitHub Enterprise Support](https://enterprise.github.com/support).
 
-|                                                     | GitHub Enterprise Support | Premium and Premium Plus Support |
+| Availability                                        | GitHub Enterprise Support | Premium and Premium Plus Support |
 | --------------------------------------------------- | ------------------------- | -------------------------------- |
 | Days of operation                                   | Monday through Friday     | Every day                        |
 | Time of initial response<br />(High-level issues)   | Within eight hours        | Within four hours                |

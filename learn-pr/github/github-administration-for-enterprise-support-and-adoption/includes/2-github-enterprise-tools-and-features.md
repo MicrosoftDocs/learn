@@ -46,7 +46,7 @@ You'll need to prepare to use upkeep features. Start with authentication using S
 
 Then, secure the knowledge base for any of your private repositories that exist on the GitHub Enterprise Cloud.
 
-:::image type="content" source="../media/github-enterprise-tools-and-features/public-or-private-visibility.png" alt-text="Drop-down to choose a visibility for your site":::
+:::image type="content" source="../media/public-or-private-visibility.png" alt-text="Drop-down to choose a visibility for your site":::
 
 1. Navigate to your site's repository and access its settings.
 2. Change **GitHub Pages visibility** to "Private."
