@@ -4,7 +4,7 @@ The ObjectManipulator script makes an object movable, scalable, and rotatable us
 
 1. In the Unity menu, select **GameObject** > **3D Object** > **Cube** to add a cube object to the scene.
 
-    ![Adding the cube](../media/base-2-section-8-step-1-1.png)
+    :::image type="content" source="../media/base-2-section-8-step-1-1.png" alt-text="Adding the cube." lightbox="../media/base-2-section-8-step-1-1.png":::
 
 2. Click the **Cube** object in the Hierarchy window, then in the Inspector window configure
 its **Transform** component as follows
@@ -40,7 +40,7 @@ Object Manipulator script to the cube object.
 
 8. Repeat the same to add **Near Interaction Grabbable script** to the cube.
 
-    ![Adding the Near Interaction Grabbable](../media/base-2-section-8-step-1-3.png)
+    :::image type="content" source="../media/base-2-section-8-step-1-3.png" alt-text="Adding the Near Interaction Grabbable." lightbox="../media/base-2-section-8-step-1-3.png":::
 
     > [!NOTE]
     > When you add a Object Manipulator (Script), in this case, the Constraint Manager (Script) is automatically added because Object Manipulator (Script) depends on it.
@@ -49,7 +49,8 @@ Object Manipulator script to the cube object.
 
 * In the Unity toolbar, click the **Play** icon to enter play mode.
 Using the Unity in-editor input simulation, press the space bar on your keyboard to simulate hand input with the right hand.
-    ![Move the cube](../media/base-2-section-8-step-1-4.gif)
+ 
+    :::image type="content" source="../media/base-2-section-8-step-1-4.gif" alt-text="Move the cube." lightbox="../media/base-2-section-8-step-1-4.gif":::
 
 ## Build your application to HoloLens 2
 
@@ -58,25 +59,26 @@ Using the Unity in-editor input simulation, press the space bar on your keyboard
 1. In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window.
 
      In the **Build Settings** window, click the Add Open Scenes button to add your current scene to the **Scenes In Build** list, then click the **Build** button to open the Build Universal Windows Platform window:
-   ![Adding Scenes in build](../media/base-2-section-9-step-1-1.png)
+     
+   :::image type="content" source="../media/base-2-section-9-step-1-1.png" alt-text="Adding Scenes in build." lightbox="../media/base-2-section-9-step-1-1.png":::
 
 2. In the Build Universal Windows Platform window, choose a suitable location to store your build, for example, *D:\MixedRealityLearning\Builds*, create a new folder and give it a suitable name, for example, GettingStarted, and then click the **Select Folder** button to start the build process:
 
-    ![Select a Build folder](../media/base-2-section-9-step-1-2.png)
+    :::image type="content" source="../media/base-2-section-9-step-1-2.png" alt-text="Select a Build folder]." lightbox=".../media/base-2-section-9-step-1-2.png":::
 
 3. Wait for Unity to finish the build process:
 
-    ![Wait for the build process to finish](../media/base-2-section-9-step-1-3.png)
+    :::image type="content" source="../media/base-2-section-9-step-1-3.png" alt-text="Wait for the build process to finish." lightbox="../media/base-2-section-9-step-1-3.png":::
 
 ## 2. Build and deploy the application
 
 1. When the build process has completed, Unity will prompt Windows File Explorer to open the location you stored the build. Navigate inside the folder, and double-click the solution file to open it in Visual Studio:
 
-    ![File Explorer](../media/base-2-section-10-step-1-1.png)
+    :::image type="content" source="../media/base-2-section-10-step-1-1.png" alt-text="File Explorer." lightbox="../media/base-2-section-10-step-1-1.png":::
 
 2. Configure Visual Studio for HoloLens by selecting the **Master** or **Release** configuration, the **ARM64** architecture, and **Device** as target:
 
-    ![Visual Studio window 1](../media/base-2-section-10-step-1-2.png)
+    :::image type="content" source="../media/base-2-section-10-step-1-2.png" alt-text="Visual Studio window 1." lightbox="../media/base-2-section-10-step-1-2.png":::
 
     > [!TIP]
     > If you're deploying to HoloLens (1st generation), select the **x86** architecture.
@@ -87,9 +89,9 @@ Using the Unity in-editor input simulation, press the space bar on your keyboard
     > [!NOTE]
     > If you don't see Device as a target option, you may need to change the startup project for the Visual Studio solution from the IL2CPP project to the UWP project. To do this, in the Solution Explorer, right-click on YourProjectName (Universal Windows) and select **Set as StartUp Project**.
 
-3. Connect your HoloLens to your computer, then select **Debug** > **Start Without Debugging** to build and deploy to your device:
+3. Connect your HoloLens to your computer, then select **Debug** >
 
-    ![Visual Studio Window 2](../media/base-2-section-10-step-1-3.png)
+    :::image type="content" source="../media/base-2-section-10-step-1-3.png" alt-text="Visual Studio Window 2." lightbox="../media/base-2-section-10-step-1-3.png":::
 
     > [!IMPORTANT]
     > Before building to your device, the device must be in Developer Mode and paired with your development computer. Both of these steps can be completed by following [these instructions](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio).
