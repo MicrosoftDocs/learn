@@ -16,9 +16,9 @@ The table below shows the availability of [GitHub Enterprise Support](https://en
 
 ## Is this an issue for the admin or GitHub Enterprise Support?
 
-GitHub Support covers account, security, and abuse issues.
-
 :::image type="content" source="../media/support-types.png" alt-text="A graphic that represents three issues Enterprise support technicians can resolve":::
+
+GitHub Support covers account, security, and abuse issues.
 
 Human error-related authentication problems are an example of account issues. When a user is locked out of their account and failed to retain keys to back up their two-factor authentication process, GitHub technical support can help you prove the user's identity.
 
