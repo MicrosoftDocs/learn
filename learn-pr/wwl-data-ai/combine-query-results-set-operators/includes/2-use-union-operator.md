@@ -3,14 +3,14 @@ The UNION operator allows two or more query result sets to be combined into a si
 * UNION – the combined result does **not** include duplicates.
 * UNION ALL – the combined result set **does** include duplicates.
 
-> [!TIP] A NULL in one set is treated as being equal to a NULL in another set.
+>[!TIP] A NULL in one set is treated as being equal to a NULL in another set.
 
 There are two rules when combining result sets using UNION:
 
 1. The number and the order of the columns must be the same in all queries.
 2. The data types must be compatible.
 
-> [!NOTE] UNION is different from JOIN. JOIN compares columns from two tables, to create a result set containing rows from two tables. UNION concatenates two result sets together: all the rows in the first result set are appended to the rows in the second result set.
+>[!NOTE] UNION is different from JOIN. JOIN compares columns from two tables, to create a result set containing rows from two tables. UNION concatenates two result sets together: all the rows in the first result set are appended to the rows in the second result set.
 
 Let’s take a simple example of two lists of customers and the result sets they return. The first query returns customers with a CustomerID between 1 and 9.
 
