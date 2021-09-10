@@ -12,8 +12,8 @@ its **Transform** component as follows
     * **Position**: X = 0, Y = -0.1, Z = 0.5
     * **Rotation**: X = 0, Y = 0, Z = 0
     * **Scale**: X = 0.1, Y = 0.1, Z = 0.1
-
-    ![Changing the transform values of the cube](../media/base-2-section-8-step-1-1b.png)
+    
+    :::image type="content" source="../media/base-2-section-8-step-1-1b.png" alt-text="Changing the transform values of the cube." lightbox="../media/base-2-section-8-step-1-1b.png":::
 
 3. Unity unit's 1 meter. We have updated cube's size to 10x10x10 cm, placed at 50cm from the headset position (0,0,0). 10cm below the eye level for comfortable interaction.
 
@@ -36,7 +36,7 @@ script enables the user to touch holograms directly with their hands.
 **Add Component** button, then search and select **Object Manipulator script** to add the
 Object Manipulator script to the cube object.
 
-    ![Adding the object manipulator](../media/base-2-section-8-step-1-2.png)
+    :::image type="content" source="../media/base-2-section-8-step-1-2.png" alt-text="Adding the object manipulator." lightbox="../media/base-2-section-8-step-1-2.png":::
 
 8. Repeat the same to add **Near Interaction Grabbable script** to the cube.
 
