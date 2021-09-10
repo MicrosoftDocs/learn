@@ -1,6 +1,6 @@
 The ability to quickly adapt to new situations increases your capacity to learn and manage your stress. Cognitive flexibility is a skill that enables you to manage ever-evolving challenges, which in turn results in improved persistence and tech resilience.
 
-In this module, you’ll learn about the importance of cognitive flexibility in tech resilience, which is the ability to recover quickly from challenges in the tech environment. You’ll learn about the benefits of stepping back and expanding your outlook and using feedback effectively. Finally, you’ll learn how to reorient and persist in challenging situations.
+In this module, you'll learn about the importance of cognitive flexibility in tech resilience, which is the ability to recover quickly from challenges in the tech environment. You'll learn about the benefits of stepping back and expanding your outlook and using feedback effectively. Finally, you'll learn how to reorient and persist in challenging situations.
 
 ## Scenario: Participating in a training workshop
 
