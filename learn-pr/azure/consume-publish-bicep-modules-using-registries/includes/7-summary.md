@@ -9,3 +9,6 @@ By using registries, you can support the sharing and reuse of Bicep code through
 - [Contribute to the public Bicep registry](TODO)
 - Private registries
     - [Azure Container Registry](https://azure.microsoft.com/services/container-registry/#overview)
+    - [Azure Container Registry service tiers](/azure/container-registry/container-registry-skus)
+    - [Authenticate with an Azure container registry](/azure/container-registry/container-registry-authentication)
+- TODO aliases

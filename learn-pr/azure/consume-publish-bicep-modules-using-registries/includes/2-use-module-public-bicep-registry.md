@@ -9,7 +9,7 @@ One of the benefits of using modules is that you can share them with others, and
 A Bicep *registry* is the place that modules are stored and shared. Anyone can create their own registry. Additionally, Microsoft runs a public registry that the Bicep community uses to share modules.
 
 > [!NOTE]
-> In future, registries will support additional types of Bicep content in addition to modules.
+> In future, registries will support more types of Bicep content in addition to modules.
 
 ## How do registries compare to template specs?
 
@@ -35,7 +35,7 @@ TODO more info on how to find modules in the registry. Apparently will use Micro
 When you've found a module you want to use, you create a *module definition* in your Bicep file like the following example:
 
 ```bicep
-module myModule 'br:xxx.azurecr.io/modulerepo/modulename:moduleversion' = {
+module myModule 'br:mcr.microsoft.com/modulerepo/modulename:moduleversion' = {
   name: 'my-module'
   params: {
     moduleParameter1: 'value'
@@ -45,7 +45,7 @@ module myModule 'br:xxx.azurecr.io/modulerepo/modulename:moduleversion' = {
 
 Notice that the module definition is similar to that of a local module, but with one important difference. Instead of specifying the path to a Bicep file on your file system, you instead use a special format to tell Bicep that you're referencing a module from a registry:
 
-:::image type="content" source="../media/2-module-path.png" alt-text="Diagram showing the module path from the example above." border="false":::
+:::image type="content" source="../media/2-mcr-module-path.png" alt-text="Diagram showing the module path from the example above." border="false":::
 
 The identifier contains four segments:
 
