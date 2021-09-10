@@ -12,8 +12,20 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
+  [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
+  - content: When you try to deploy the Bicep file above, Bicep gives you an error. What should you do to resolve the problem?
+    choices:
+    - content: Add a tag to the module path.
+      isCorrect: true
+      explanation: Correct. The module path doesn't currently include a tag, so Bicep can't find the correct module file to use. Change the module path to something like `br:toycompany.azurecr.io/mymodule:v1`.
+    - content: Sign in to Azure Container Registry.
+      isCorrect: false
+      explanation: Incorrect. Bicep uses the sign-in details from the Azure CLI when it accesses the registry.
+    - content: Add a module alias.
+      isCorrect: false
+      explanation: Incorrect. A registry alias enables you to simplify the name of the registry in the module path, but it isn't required and won't resolve the error.
   - content: You've created a Bicep file that will be useful to people throughout the Bicep community. What's the best way to share it?
     choices:
     - content: Publish it to a private registry.
@@ -25,17 +37,6 @@ quiz:
     - content: Publish it to the public registry.
       isCorrect: true
       explanation: Correct. Microsoft maintains a public registry for the Bicep community. Anyone can submit and use modules.
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
   - content: ""
     choices:
     - content: ""
