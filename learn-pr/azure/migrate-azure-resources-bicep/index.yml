@@ -13,9 +13,9 @@ title: Migrate Azure resources and JSON ARM templates to use Bicep
 summary: Export and convert your Azure resources to Bicep files, and migrate your JSON ARM templates to Bicep. Refactor your Bicep files to follow best practices. Test your Bicep files and deploy them to production.
 abstract: |
   After completing this module, you'll be able to:
-    - Convert JSON ARM templates to Bicep.
-    - Create Bicep definitions for your existing Azure resources.
-    - Verify template conversions by using the what-if operation and documentation.
+    - Convert JSON ARM templates to Bicep
+    - Create Bicep definitions for your existing Azure resources
+    - Verify template conversions by using the what-if operation and documentation
 prerequisites: |
   You should be familiar with:
   - Azure, including the Azure portal, subscriptions, and resource groups.

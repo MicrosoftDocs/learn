@@ -6,23 +6,26 @@ You'll configure two separate applications; one acts as the message sender (**Si
 
 ## Create a general-purpose, standard storage account
 
-The Java receiver application, that you'll configure in this unit, stores messages in Azure Blob Storage. Blob Storage requires a storage account.
+The Java receiver application, which you'll configure in this unit, stores messages in Azure Blob Storage. Blob Storage requires a storage account.
 
-1. In Cloud Shell, create a storage account (general-purpose V2) running the `storage account create` command. Remember we set a default resource group and location, so even though those parameters are normally _required_, we can leave them off.
+ To create a storage account (general-purpose V2), use the `storage account create` command. Among the many parameters for this command, we are going to use the following parameters: 
 
-    |Parameter      |Description|
-    |---------------|-----------|
-    |--name (required)  | A name for your storage account. |
-    |--resource-group (required)  | The resource group owner. We'll use the pre-created sandbox resource group. |
-    |--location (optional) | An optional location if you want the storage account in a specific place vs. the resource group location. |
+    | Parameter       | Description |
+    | --------------- | ----------- |
+    | `name` (required) | A name for your storage account. |
+    | `resource-group` (required) | The resource group owner. We'll use the pre-created sandbox resource group. |
+    | `location` (optional) | An optional location if you want the storage account in a specific place vs. the resource group location. |
+    | `sku` |  The SKU of the storage account defaults to 'Standard_RAGRS', but in this example, we are specifying it. |
 
-    Set the storage account name into a variable. It must be between 3 and 24 characters in length and use numbers and lower-case letters only. It also must be unique within Azure.
+In the previous exercise, we defined a default resource group and location, so even though one of those parameters is normally _required_, we can omit them from the actual command.
+
+1. In Cloud Shell, set the storage account name into a variable. The value must be between 3 and 24 characters in length and use only numbers and lower-case letters. It also must be unique within Azure.
 
     ```azurecli
     STORAGE_NAME=storagename$RANDOM
     ```
 
-    Next, run the following command to create the storage account.
+1. Run the following command to create the storage account.
 
     ```azurecli
     az storage account create --name $STORAGE_NAME --sku Standard_RAGRS --encryption-service blob
@@ -31,24 +34,24 @@ The Java receiver application, that you'll configure in this unit, stores messag
     > [!TIP]
     > If the storage account creation fails, change your environment variable, and try again.
 
-1. List all the access keys associated with your storage account by running the `account keys list` command. It takes your account name and the resource group (which is defaulted).
+1. Run the following command to list all the access keys associated with your storage account. The command uses the variable we defined earlier for your account name and the default value for resource group.
 
     ```azurecli
     az storage account keys list --account-name $STORAGE_NAME
     ```
 
-    Access keys associated with your storage account are listed. Copy and save the value of **key** for future use. You'll need this key to access your storage account.
+1. Access keys associated with your storage account are listed. Copy and save the value of **key** for future use. You'll need this key to access your storage account.
 
-1. View the connections string for your storage account running the following command.
+1. View the connections string for your storage account by running the following command.
 
     ```azurecli
     az storage account show-connection-string -n $STORAGE_NAME
     ```
 
-    This command returns the connection details for the storage account. Copy and save the _value_ of **connectionString**. It should look something like.
+1. The output contains the connection details for your storage account. Copy and save the value of **connectionString**. It should look something like.
 
     ```output
-    "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage_account_name;AccountKey=VZjXuMeuDqjCkT60xX6L5fmtXixYuY2wiPmsrXwYHIhwo736kSAUAj08XBockRZh7CZwYxuYBPe31hi8XfHlWw=="
+        "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage_account_name;AccountKey=VZjXuMeuDqjCkT60xX6L5fmtXixYuY2wiPmsrXwYHIhwo736kSAUAj08XBockRZh7CZwYxuYBPe31hi8XfHlWw=="
     ```
 
 1. Create a container called **messages** in your storage account by running the following command. Use the **connectionString** you copied in the previous step.
@@ -59,16 +62,18 @@ The Java receiver application, that you'll configure in this unit, stores messag
 
 ## Clone the Event Hubs GitHub repository
 
-Perform the following steps to clone the Event Hubs GitHub repository with `git`. You can execute this right in Cloud Shell.
+In Cloud Shell, perform the following step to clone the Event Hubs GitHub repository with `git`.
 
-1. The source files for the applications that you'll build in this unit are located in a [GitHub repository](https://github.com/Azure/azure-event-hubs). Run the following commands to make sure that you are in your home directory in Cloud Shell, and then to clone this repository.
+The source files for the applications that you'll build in this unit are located in a [GitHub repository](https://github.com/Azure/azure-event-hubs). 
+
+1. Run the following commands to make sure that you are in your home directory in Cloud Shell, and then to clone this repository.
 
     ```bash
     cd ~
     git clone https://github.com/Azure/azure-event-hubs.git
     ```
 
-    The repository is cloned to your home folder.
+The repository is cloned to your home folder.
 
 ## Edit SimpleSend.java
 
@@ -140,9 +145,9 @@ You'll now configure a **receiver** (also known as **subscribers** or **consumer
 
 For the receiver application, two classes are available: **EventHubReceiver** and **EventProcessorHost**. EventProcessorHost is built on top of EventHubReceiver, but provides simpler programmatic interface than EventHubReceiver. EventProcessorHost can automatically distribute message partitions across multiple instances of EventProcessorHost using the same storage account.
 
-In this unit, you'll use the EventProcessorHost method. You'll edit the EventProcessorSample application to add your Event Hubs namespace, Event Hub name, shared access policy name and primary key, storage account name, connection string, and container name.
+In this procedure, you'll use the EventProcessorHost method. You'll edit the EventProcessorSample application to add your Event Hubs namespace, Event Hub name, shared access policy name and primary key, storage account name, connection string, and container name.
 
-1. Change to the **EventProcessorSample** folder running the following command.
+1. Change to the **EventProcessorSample** folder by running the following command.
 
     ```bash
     cd ~/azure-event-hubs/samples/Java/Basic/EventProcessorSample/src/main/java/com/microsoft/azure/eventhubs/samples/eventprocessorsample
@@ -163,7 +168,7 @@ In this unit, you'll use the EventProcessorHost method. You'll edit the EventPro
     - `----SharedAccessSignatureKeyName----` with **RootManageSharedAccessKey**.
     - `----SharedAccessSignatureKey----` with the value of the **primaryKey** key for your Event Hubs namespace that you saved earlier.
     - `----AzureStorageConnectionString----` with your storage account connection string that you saved earlier.
-    - `----StorageContainerName----` with "messages".
+    - `----StorageContainerName----` with **messages**.
     - `----HostNamePrefix----` with the name of your storage account.
 
 1. Save **EventProcessorSample.java** either with the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
@@ -172,13 +177,13 @@ In this unit, you'll use the EventProcessorHost method. You'll edit the EventPro
 
 ## Use Maven to build EventProcessorSample.java
 
-1. Change to the main **EventProcessorSample** folder running the following command.
+1. Change to the main **EventProcessorSample** folder by running the following command.
 
     ```bash
     cd ~/azure-event-hubs/samples/Java/Basic/EventProcessorSample
     ```
 
-1. Build the Java SimpleSend application running the following command. This ensures that your application uses the connection details for your Event Hub.
+1. Build the Java SimpleSend application by running the following command. This ensures that your application uses the connection details for your Event Hub.
 
     ```bash
     mvn clean package -DskipTests
@@ -190,7 +195,7 @@ In this unit, you'll use the EventProcessorHost method. You'll edit the EventPro
 
 ## Start the sender and receiver apps
 
-1. Run Java application from the command line by running the **java** command, and specifying a .jar package. Run the following commands to start the SimpleSend application.
+1. Run Java application from the command line by running the following `java` command, and specifying a .jar package. Run the following commands to start the SimpleSend application.
 
     ```bash
     cd ~/azure-event-hubs/samples/Java/Basic/SimpleSend
@@ -207,7 +212,7 @@ In this unit, you'll use the EventProcessorHost method. You'll edit the EventPro
     2018-09-18T19:42:15.146Z: Send Complete...
     ```
 
-1. Start the EventProcessorSample application running the following command.
+1. Start the EventProcessorSample application by running the following command.
 
     ```bash
     cd ~/azure-event-hubs/samples/Java/Basic/EventProcessorSample

@@ -3,7 +3,7 @@ A cloud environment is composed of different services distributed among geograph
 
 Datacenters require planned maintenance, hardware upgrades, failover-tests and much more, to improve their resiliency. So how can you be aware of the health of Azure Services within datacenters? Azure Service Health is your answer. Service health provides a personalized view of the status of your Azure services and regions and includes information about planned maintenance and current incidents. Azure Service Health also offers rich functionality including alerting, health advisories, and root cause analysis. 
 
-:::image type="content" source="../media/1-azure-service-health.png" alt-text="Screenshot of Azure Service Health showing the overall information provided":::
+:::image type="content" source="../media/1-azure-service-health.png" alt-text="Screenshot of Azure Service Health showing the overall information provided" lightbox="../media/1-azure-service-health-expanded.png":::
 
 ## Example scenario
 
