@@ -171,6 +171,7 @@ Answer the following questions to see what you've learned. Choose one answer for
 
 
 <!-- Links -->
+
 [Rust-string]: https://doc.rust-lang.org/book/ch08-02-strings.html?azure-portal=true
 [RustPlay-compile]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d1635823974d9456858611266a32ffa6?azure-portal=true
 [RustPlay-numbers]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d683842bd8cedd949ed3c56b27f6f0eb?azure-portal=true

@@ -240,5 +240,6 @@ You can compare your program output to the solution for this exercise in this [R
 
 
 <!-- Links -->
+
 [RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=c9ec3158756966782a129ff054703864?azure-portal=true
 [RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=fd34da4d67f18f3776b7a41d936b68f4?azure-portal=true

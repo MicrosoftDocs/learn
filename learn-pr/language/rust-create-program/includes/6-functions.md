@@ -81,4 +81,5 @@ You can interact with the example code in this [Rust Playground][RustPlay-func].
 
 
 <!-- Links -->
+
 [RustPlay-func]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=370b04cadc1f78cf8fee0f09653399a1?azure-portal=true

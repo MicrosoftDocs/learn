@@ -110,5 +110,6 @@ Answer the following questions to see what you've learned. Choose one answer for
 
 
 <!-- Links -->
+
 [RustPlay-shadow]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ece8cff9611f109439db2645d75e98d6?azure-portal=true
 [RustPlay-variables]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=7619f3a57e95b1c161d410641f9e88fb?azure-portal=true

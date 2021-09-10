@@ -6,6 +6,8 @@ struct Car { color: String, motor: Transmission, roof: bool, age: (String, u32) 
 // Declare enum for Car transmission type
 enum Transmission { Manual, SemiAuto, Automatic }
 
+//////////////////////////////////////////////////
+
 // Get the car quality by testing the value of the input argument
 // - miles (u32)
 // Create a tuple for the car quality with the age ("New" or "Used") and miles
@@ -14,6 +16,7 @@ fn car_quality (miles: u32) -> (String, u32) {
 
     // Declare and initialize the return tuple value
     // For a new car, set the miles to 0
+    // Use the "mut" keyword so quality can be changed later
     let mut quality: (String, u32) = (String::from("New"), 0);
 
     // Use a conditional expression to check the miles
@@ -26,6 +29,8 @@ fn car_quality (miles: u32) -> (String, u32) {
     // Return the completed tuple, no semicolon needed
     return quality
 }
+
+//////////////////////////////////////////////////
 
 // Build a new "Car" using the values of four input arguments
 // - color (String)
@@ -50,96 +55,47 @@ fn car_factory(color: String, motor: Transmission, roof: bool, miles: u32) -> Ca
     return car
 }
 
-fn main() {
-    // Initialize a hash map for car orders, track
-    // - Keys: New or Used, Values: integer
-    // - Keys: Manual or Automatic, Values: integer
-    // Corrected code: To create a hash map, use HashMap::new()
-    use std::collections::HashMap;
-    let mut orders: HashMap<String, u32> = HashMap::new();
-    let (mut new_cars, mut used_cars) = (1, 1);
-    let (mut manual, mut auto) = (1, 1);
+//////////////////////////////////////////////////
 
+fn main() {
     // Create car color array
     // 0 = Blue, 1 = Green, 2 = Red, 3 = Silver
     let colors = ["Blue", "Green", "Red", "Silver"];
 
     // Initialize two counter variables, set to 1
+    // Corrected code: Add the "index" variable
     let (mut index, mut order) = (1, 1);
     
     // Declare the car type and initial values
+    // - Declare "car" as mutable "Car" struct
+    // - Declare "engine" as mutable "Transmission" enum
+    // - When car has hard top, "roof" = true
     let mut car: Car;
     let mut miles = 1000; // Start used cars with 1,000 miles
     let mut roof = true;  // convertible = false | hard top = true
     let mut engine: Transmission;
 
     // Order 11 cars
-    // loop a "while" to fulfill orders for 11 cars
-    // Use "order" variable, initialized to 1, loop from 1 through 11
+    // Corrected code: loop a "while" to fulfill orders for 11 cars
+    // Use "order" variable, initialized to 1, loop from 1 through 11 
     while order <= 11 {
         
-        // Set car transmission type, make some roofs convertible
-        //
-        // Corrected code: Use conditional expression
-        // Corrected code: order % 3 == 0, engine = Transmission::Automatic
-        // Corrected code: add missing "if", order % 2 == 0, Transmission::SemiAuto
-        // Corrected code: else, Transmission::Manual
-        // When order % 3, swap roof type for fun!
-        //
-        // ADD hash map functionality
-        // Corrected code: Add transmission <K, V> pairs to hash map
-        // Corrected code: Use ".insert()" method to add car info to hash map
-        if order % 3 == 0 {
-            engine = Transmission::Automatic;
-            // ADD <K, V> pair to hash map
-            orders.insert(String::from("Automatic"), auto);
-            auto = auto + 1;
-
-            roof = !roof;
-        } else if order % 2 == 0 {
-            engine = Transmission::SemiAuto;
-            // Don't track SemiAutomatic in the hash map
-        } else {
-            engine = Transmission::Manual;
-            // ADD <K, V> pair to hash map
-            orders.insert(String::from("Manual"), manual);
-            manual = manual + 1;
-        }
+        // Set car transmission type
+        engine = Transmission::Manual;
 
         // Order the cars, New are even numbers, Used are odd numbers
-        // Index into `colors` array, vary color for the orders
-        //
-        // ADD hash map functionality
-        // Corrected code: Use "String::from()" syntax for String keys
+        // Corrected code: Index into `colors` array, vary color for the orders
         if index % 2 != 0 {
             car = car_factory(String::from(colors[index-1]), engine, roof, miles);
-            // ADD <K, V> pair to hash map
-            orders.insert(String::from("Used"), used_cars);
-            used_cars = used_cars + 1;
         } else { 
             car = car_factory(String::from(colors[index-1]), engine, roof, 0);
-            // ADD <K, V> pair to hash map
-            orders.insert(String::from("New"), new_cars);
-            new_cars = new_cars + 1;
         }
 
-        // Display car order details by roof type and age of car
-        // Corrected code: Print output with four conditions: "if", "else if", "else if", "else"
-        // Corrected code: Use double ampersand && to join conditions
-        // Corrected code: car.roof = hard top (true) or convertible (false)
-        // Corrected code: car mileage = car.age.1, if miles > 0, then car is new
-        if car.roof && car.age.1 > 0 {
-            println!("{}: {}, {:?}, Hard top, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1); 
-        } else if car.roof {
-            println!("{}: {}, {:?}, Hard top, {}", order, car.age.0, car.motor, car.color); 
-        } else if car.age.1 > 0 {
-            println!("{}: {}, {:?}, Convertible, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1); 
-        } else {
-            println!("{}: {}, {:?}, Convertible, {}", order, car.age.0, car.motor, car.color); 
-        }
+        // Display car order details 
+        println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
 
         // Change values for next loop
-        // Increment "order" by 1, and "miles" by 1,000
+        // Corrected code: Increment "order" by 1, and "miles" by 1,000
         order = order + 1;
         miles = miles + 1000;
         
@@ -151,8 +107,4 @@ fn main() {
             index = 1;
         }
     }
-
-    // Display the hash map of car orders
-    // Corrected code: Just use hash map name and "{:?}" to show all <K, V> pairs
-    println!("\nCar orders: {:?}", orders);
 }

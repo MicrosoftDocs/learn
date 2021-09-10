@@ -31,8 +31,9 @@ units:
 - learn.language.rust-if-else-expressions.0-introduction
 - learn.language.rust-if-else-expressions.1-arrays
 - learn.language.rust-if-else-expressions.2-vectors
-- learn.language.rust-if-else-expressions.3-if-else-expressions
-- learn.language.rust-if-else-expressions.4-exercise
-- learn.language.rust-if-else-expressions.5-summary
+- learn.language.rust-if-else-expressions.3-exercise-data-types
+- learn.language.rust-if-else-expressions.4-if-else-expressions
+- learn.language.rust-if-else-expressions.5-exercise-if-else
+- learn.language.rust-if-else-expressions.6-summary
 badge:
   uid: learn.language.rust-if-else-expressions.badge

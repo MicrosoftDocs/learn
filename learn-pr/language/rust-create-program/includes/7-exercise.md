@@ -136,5 +136,6 @@ You can compare your code with the prepared solution in this [Rust Playground][R
 
 
 <!-- Links -->
+
 [RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=5f651f742af39ad993dc6eefbe074f11?azure-portal=true
 [RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=bb6adb96e13fc72a29587b5a84b0c551?azure-portal=true

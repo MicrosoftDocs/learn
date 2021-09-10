@@ -58,137 +58,93 @@ fn car_factory(color: String, motor: Transmission, roof: bool, miles: u32) -> Ca
 //////////////////////////////////////////////////
 
 fn main() {
-    // Initialize a hash map for car orders
-    // - Keys: New or Used, Values: integer
-    // - Keys: Manual or Automatic, Values: integer
-    // TO DO: Fix syntax to create the "orders" hash map
-    use std::collections::HashMap;
-    let mut orders: HashMap<String, u32> = HashMap;
-    let (mut new_cars, mut used_cars) = (1, 1);
-    let (mut manual, mut auto) = (1, 1);
+    // Create car color array
+    // 0 = Blue, 1 = Green, 2 = Red, 3 = Silver
+    let colors = ["Blue", "Green", "Red", "Silver"];
+
+    // Initialize counter variable
+    let mut order = 1;
+        
+    // Declare the car type and initial values
+    // - Declare "car" as mutable "Car" struct
+    // - Declare "engine" as mutable "Transmission" enum
+    // - When car has a hard top, "roof" = true
+    let mut car: Car;
+    let mut miles = 1000; // Start used cars with 1,000 miles
+    let mut engine: Transmission;
+    let roof = true;      // convertible = false | hard top = true
+
+    //////////////////////////////////////////////////
+            
+    // Order 3 cars, one car for each type of transmission
+    // Use "order" variable, initialize to 0, increment before each order
+    // Index into "colors" array, vary color for the orders
+        
+    // Car order #1: Used
+    engine = Transmission::Manual;
+    car = car_factory(String::from(colors[order-1]), engine, roof, miles);
+    println!("{}: {}, Hard top {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
+        
+    // Car order #2: Used
+    order = order + 1;
+    miles = miles + 1000;
+    engine = Transmission::SemiAuto;
+    car = car_factory(String::from(colors[order-1]), engine, roof, miles);
+    println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
+
+    // Car order #3: New
+    order = order + 1;
+    miles = 0;
+    engine = Transmission::Automatic;
+    car = car_factory(String::from(colors[order-1]), engine, roof, miles);
+    println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
+
+    //////////////////////////////////////////////////
+
+    // SECOND VERSION OF MAIN BODY
+
+    //////////////////////////////////////////////////
 
     // Create car color array
     // 0 = Blue, 1 = Green, 2 = Red, 3 = Silver
     let colors = ["Blue", "Green", "Red", "Silver"];
 
-    // Initialize two counter variables, set to 1
-    let (mut index, mut order) = (1, 1);
-    
+    // Initialize two counter variables, set both to 1
+    // TO DO: Add second variable named "index"
+    let mut order = 1;
+        
     // Declare the car type and initial values
     // - Declare "car" as mutable "Car" struct
     // - Declare "engine" as mutable "Transmission" enum
-    // - When car has hard top, "roof" = true
+    // - When car has a hard top, "roof" = true
     let mut car: Car;
     let mut miles = 1000; // Start used cars with 1,000 miles
-    let mut roof = true;  // convertible = false | hard top = true
     let mut engine: Transmission;
-
-    //////////////////////////////////////////////////
+    let roof = true;      // convertible = false | hard top = true
 
     // Order 11 cars
-    // TO DO: loop a "while" to fulfill orders for 11 cars
-    // Use "order" variable, initialized to 1, loop from 1 through 11 
-    while order <= 11 {
-        
-        //////////////////////////////////////////////////
-
-        // REPLACE
+    // TO DO: Replace "loop expression" - loop 11 times, use "order" variable
+    loop expression {
+            
         // Set car transmission type
-        // engine = Transmission::Manual;
+        engine = Transmission::Manual;
 
-        ///////////////////////
-
-        // Set car transmission type, make some roofs convertible
-        // TO DO: Add conditional expression
-        // TO DO: Check order number, set engine type, fix syntax
-        // TO DO: If order % 3 equals 0, engine is "Automatic"
-        // TO DO: If order % 2 equals 0, engine is "SemiAuto" | else, engine is "Manual"
-        // When order % 3, swap roof type for fun!
-        if order % 3 equals 0 {
-            engine = Automatic;
-            roof = !roof;
-        } else order % 2 equals 0 {
-            engine = SemiAuto;
-        } else {
-            engine = Manual;
-        }
-
-        //////////////////////
-
-        // ADD hash map functionality
-        // TO DO: Add transmission <K, V> pairs to hash map
-        // TO DO: Fix syntax to add car transmission count to hash map
-        if order % 3 == 0 {
-            engine = Transmission::Automatic;
-            // ADD <K, V> pair to hash map
-            orders(String::from("Automatic"), auto);
-            auto = auto + 1;
-
-            roof = !roof;
-        } else if order % 2 == 0 {
-            engine = Transmission::SemiAuto;
-            // Don't track SemiAutomatic in the hash map
-        } else {
-            engine = Transmission::Manual;
-            // ADD <K, V> pair to hash map
-            orders(String::from("Manual"), manual);
-            manual = manual + 1;
-        }
-
-        //////////////////////////////////////////////////
-
-        // REPLACE
         // Order the cars, New are even numbers, Used are odd numbers
-        // Corrected code: Index into `colors` array, vary color for the orders
-        // if index % 2 != 0 {
-        //     car = car_factory(String::from(colors[index-1]), engine, roof, miles);
-        // } else { 
-        //     car = car_factory(String::from(colors[index-1]), engine, roof, 0);
-        // }
-        
-        ///////////////////////
-
-        // ADD hash map functionality
-        // Order the cars, New are even numbers, Used are odd numbers
-        // Corrected code: Index into `colors` array, vary color for the orders
-        // TO DO: Fix syntax to add car age to "orders" hash map
+        // TO DO: Fix indexing into `colors` array, vary color for the orders
         if index % 2 != 0 {
-            car = car_factory(String::from(colors[index-1]), engine, roof, miles);
-            orders.insert("Used", used_cars);
-            used_cars = used_cars + 1;
+            car = car_factory(colors().to_string(), engine, roof, miles);
         } else { 
-            car = car_factory(String::from(colors[index-1]), engine, roof, 0);
-            orders.insert("New", new_cars);
-            new_cars = new_cars + 1;
+            car = car_factory(colors().to_string(), engine, roof, 0);
         }
-
-        //////////////////////////////////////////////////
-
-        // REPLACE
-        // Display car order details 
-        // println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
-
-        // Display car order details by roof type and age of car
-        // TO DO: Add conditional expressions
-        // TO DO: Print output based on four conditions, correct the syntax
-        // TO DO: Used & hard top roof, New & hard top roof, Used convertible, New convertible
-        if used cars with hard top roofs {
-            println!("{}: {}, {:?}, Hard top, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1); 
-        } if new cars with hard top roofs {
-            println!("{}: {}, {:?}, Hard top, {}", order, car.age.0, car.motor, car.color); 
-        } if convertible used cars {
-            println!("{}: {}, {:?}, Convertible, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1); 
-        } if convertible new cars {
-            println!("{}: {}, {:?}, Convertible, {}", order, car.age.0, car.motor, car.color); 
-        }
-        
-        //////////////////////////////////////////////////
+            
+        // Display car order details
+        println!("{}: {}, Closed roof, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
 
         // Change values for next loop
-        // Corrected code: Increment "order" by 1, and "miles" by 1,000
-        order = order + 1;
-        miles = miles + 1000;
-        
+        // TO DO: Increment "order" by 1, and "miles" by 1,000
+        order;
+        miles;
+            
         // Adjust the index for the car details
         // Order 11 cars, use index range of 0 -- 4, then repeat from 0
         if index < 4 {
@@ -197,8 +153,4 @@ fn main() {
             index = 1;
         }
     }
-
-    // TO DO: Display output from hash map, fix the syntax
-    // Display the hash map of car orders, show <K, V> pairs
-    println!("\nCar orders: {} {}", orders.keys, orders.values);
 }
