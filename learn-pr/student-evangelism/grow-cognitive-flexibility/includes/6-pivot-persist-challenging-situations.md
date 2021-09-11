@@ -1,14 +1,14 @@
-Now that you’ve examined the importance of enhancing cognitive flexibility when people are learning, you want to explore additional strategies to help your workshop participants pivot and persist in challenging situations.
+Now that you've examined the importance of enhancing cognitive flexibility when people are learning, you want to explore additional strategies to help your workshop participants pivot and persist in challenging situations.
 
 ## Explore strategies to pivot and persist
 
-Challenging situations are common in workplace or educational environments. This is especially true of the tech space.
+Challenging situations are common in workplace or educational environments. This is especially true in the tech space.
 
-Have you ever felt like quitting a course or a project partway through because you felt like a failure or just didn’t get it? Or have you wondered exactly how should you get started?
+Have you ever felt like quitting a course or a project partway through because you felt like a failure or just didn't get it? Or have you wondered exactly how should you get started?
 
-:::image type="content" source="../media/6-tech-res-impasse.png" alt-text="A person frustrated with the various challenges that they encounter in their path." border="false":::
+:::image type="content" source="../media/6-tech-res-impasse.png" alt-text="Drawing of a person frustrated by the challenges they meet in their path." border="false":::
 
-One of the best ways to become more cognitively flexible is to expose yourself to new experiences and ways of doing things. If you’re not sure where to start, the following table has a few steps that you can take.
+One of the best ways to become more cognitively flexible is to expose yourself to new experiences and ways of doing things. If you're not sure where to start, the following table has a few steps that you can take.
 
 | **Step** | **Description** | **Example** |
 | -------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
