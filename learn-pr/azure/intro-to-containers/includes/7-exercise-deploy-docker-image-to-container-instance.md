@@ -1,8 +1,8 @@
 Azure Container Instance enables you to run a Docker image in Azure.
 
-You previously packaged and tested your web app as a local Docker image. You now want to make the web application available globally. So, you decide to run the image as an Azure Container Instance.
+You previously packaged and tested your web app as a local Docker image. You now want to make the web application available globally. To accomplish this, you run the image as an Azure Container Instance.
 
-In this exercise, you'll rebuild the image for the web app and upload it to Azure Container Registry. You'll use the Azure Container Instance service to run the image.
+In this exercise, you'll learn how to rebuild the image for the web app and upload it to Azure Container Registry. You'll use the Azure Container Instance service to run the image.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -34,20 +34,20 @@ In this exercise, you'll rebuild the image for the web app and upload it to Azur
 
 1. Select **Go to resource**. Your *container registry* pane appears.
 
-1. In the menu, under **Settings**, select **Access keys**.
+1. In the resource menu, under **Settings**, select **Access keys**.
 
-1. If disabled, select the slider to enable the **Admin user**. 
+1. If the **Admin user** setting is disabled, select the slider to enable the **Admin user** access key. The **Username** and passwords appear for the current Container registry.
  
-1. Make a note of the **Registry name**, **Login server**, **Username**, and **passwords** for your registry. For **Admin user**, select **Enabled**.
+1. Make a note of the **Registry name**, **Login server**, **Username**, and **passwords** for your container registry.
 
     > [!NOTE]
-    > In this exercise, we enable the admin account for uploading images and testing the registry. In a production environment, you should disable the admin account, and use Azure Active Directory Identity Protection after you're satisfied that the registry is operating as expected.
+    > In this exercise, we enable the admin account access so that we can upload images and test the registry. In a production environment, you should disable the **Admin user** account access, and use Azure Active Directory Identity Protection as soon as you're satisfied that the registry is operating as expected.
 
     :::image type="content" source="../media/7-access-keys.png" alt-text="Screenshot of the Access keys details.":::
 
 ## Upload the image for the hotel reservation system app to Azure Container Registry
 
-1. In your local command prompt, run the following command to tag the `reservationsystem` image with the name of your registry, replacing `<registry-name>` with the name of your container registry.
+1. In your local command prompt, run the following command, replacing `<registry-name>` with the name of your container registry, to tag the current `reservationsystem` image with the name of your registry.
 
     ```bash
     docker tag reservationsystem:latest <registry-name>.azurecr.io/reservationsystem:latest
