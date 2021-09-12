@@ -100,7 +100,7 @@ The output includes three important pieces of information. Let's review each one
 
    :::code language="output" source="code/7-whatif-output-2.txt" :::
 
-   ---
+---
 
 ::: zone-end
 
@@ -128,7 +128,7 @@ The output includes three important pieces of information. Let's review each one
 
    :::code language="output" source="code/7-whatif-output-2.txt" :::
 
-   ---
+---
 
 ::: zone-end
 
