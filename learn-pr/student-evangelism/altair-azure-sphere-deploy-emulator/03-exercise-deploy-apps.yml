@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-deploy-emulator.exercise-deploy-apps
-title: Exercise - Deploy the Altair real-time applications
+title: Deploy the Altair emulator disk services to your Azure Sphere
 metadata:
-  title: Exercise - Deploy the Altair real-time applications
-  description: In this exercise, deploy the Altair real-time applications to Azure Sphere.
+  title: Deploy the Altair emulator disk services to your Azure Sphere
+  description: In this exercise, you'll Deploy the Altair emulator disk services to your Azure Sphere.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover

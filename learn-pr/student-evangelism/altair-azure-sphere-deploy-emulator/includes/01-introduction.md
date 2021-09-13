@@ -1,14 +1,14 @@
-In this module, you'll learn about the architecture of the Azure Sphere and the Altair emulator. You'll also learn how to deploy the emulator to your Azure Sphere.
+Welcome to the cloud-connected Altair 8800 on Azure Sphere learning path. In this module, you will learn how to deploy the Altair emulator to your Azure Sphere.
 
-## Azure Sphere Architecture
+## Scenario: Deploying applications to Azure Sphere
 
-The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores. There is a Cortex-A7 high-level core that runs a Linux kernel and two Cortex-M4 real-time cores. The Cortex-A7 is responsible for running system services and your custom high-level application. The Cortex-M4 cores can run your custom bare-metal apps, or real-time operating systems such as Azure RTOS or FreeRTOS.
+As a reminder, the Azure Sphere microcontroller unit (MCU) has three developer-accessible cores. The Cortex-A7 high-level core, that runs a Linux kernel, and two Cortex-M4 real-time cores. 
 
 :::image type="content" source="../media/azure-sphere-architecture.png" alt-text="Diagram that shows the Azure Sphere architecture." border="false":::
 
-## The Altair emulator application architecture
+The Altair emulator consists of two applications, one high-level Linux application, and one real-time core application. The applications communicate with each other by passing messages over the inter-core bridge.
 
-The Altair emulator consists of two applications, one high-level application, and one real-time core application.
+The following diagram shows what applications will be running on the Azure Sphere MCU. The blue color indicates the A7 high-level core running the Altair emulator, the red color indicates the real-time cores running the cache and SD Card services.
 
 :::image type="content" source="../media/azure-sphere-app-architecture.png" alt-text="Diagram that shows the Altair on Azure Sphere application architecture." border="false":::
 
@@ -24,34 +24,10 @@ The Altair emulator consists of two applications, one high-level application, an
 
     * SD card support for the Altair emulator for the Avnet Azure Sphere Starter Kits with the MikroE microSD Click. The MikroE microSD Click must be plugged into socket 1 on the Avnet Azure Sphere Starter Kit.
 
-<!-- ## IoT Central IoT Plug and Play model
+## What will you learn?
 
-The IoT Plug and Play model for this learning module can be found in the **IoTPlugAndPlay** folder. This model has been uploaded to the public repository of IoT Plug and Play models. To learn more about IoT Plug and Play visit "[What is IoT Plug and Play](https://docs.microsoft.com/azure/iot-pnp/overview-iot-plug-and-play?azure-portal=true)".
+In this module, you'll learn about disk drive services and how to deploy the Altair emulator and services to your Azure Sphere.
 
-The IoT Plug and Play model used by this learning module is declared in main.c.
+## What is the main goal?
 
-```c
-#define IOT_PLUG_AND_PLAY_MODEL_ID		"dtmi:com:example:azuresphere:altair;2"
-```
-
-IoT Central is an IoT Plug and Play enabled application. When your device first connects to IoT Central, the IoT Plug and Play Model ID is passed to IoT Central. IoT Central then retrieves the IoT Plug and Play model from the public repository of IoT Plug and Play models and creates a device template and default views. -->
-
-In this module, you will:
-
-* Learn about the architecture of Azure Sphere.
-* Learn about the application architecture of the Altair emulator.
-* Start the app build and deployment process.
-* Understand the virtual disk cache-aside service.
-
-## Prerequisites
-
-* A computer with an x86-64-based processor running one of the following operating systems:
-  * Windows 10 Anniversary Update or later
-  * 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
-* An Azure Sphere developer board that has one of the following kits:
-  * Avnet Azure Sphere Starter Kit Rev 1 or 2
-  * Seeed Studio Azure Sphere MT3620 Development Kit
-* A GitHub account.
-* An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
-
-In the next unit, you'll learn about the virtual disk sector cache-aside service.
+This module will focus on configuring and deploying the Altair emulator and services to your Azure Sphere.

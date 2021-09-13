@@ -1,5 +1,28 @@
 In the following exercise, you'll config and deploy the Altair emulator to your Azure Sphere.
 
+## Get your Azure Sphere tenant ID
+
+You'll need your Azure Sphere tenant ID for the next step. Follow these steps to show your tenant ID and copy it to Notepad.
+
+1. From the  Windows **PowerShell command line** or Linux **Terminal**, run the following command.
+
+   ```azsphere
+   azsphere tenant show-selected
+   ```
+
+   The output of this command will look similar to the following.
+
+    ```Output
+    ------------------------------------ -------------------
+    Id                                   Name
+    ========================================================
+    99999999-e021-43ce-9999-fa9999499994 yourSphereTenant
+    ------------------------------------ -------------------
+    ```
+
+2. Copy the Azure Sphere tenant ID to Notepad, as you'll need it soon.
+
+
 ## Open the Altair emulator with Visual Studio Code
 
 1. Start Visual Studio Code.
