@@ -73,7 +73,8 @@ Before you can publish your app, you must sign in to Azure. If you're already si
 
 In this section, you create a function app and related resources in your Azure subscription and then deploy your code.
 
->❗️ **Important:** Publishing to an existing function app overwrites the content of that app in Azure.
+> [!IMPORTANT] 
+> Publishing to an existing function app overwrites the content of that app in Azure.
 
 1. Choose the Azure icon in the Activity bar, then in the **Azure: Functions** area, choose the **Deploy to Function app...** button.
 
