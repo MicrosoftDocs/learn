@@ -2,7 +2,7 @@
 
 1. Once **MixedRealityFeatureTool** is opened, click on **Start** to get started with Mixed Reality Feature Tool.
 
-    :::image type="content" source="../media/base-2-section-4-step-1-2.png" alt-text="[MixedRealityFeatureTool." lightbox="../media/base-2-section-4-step-1-2.png":::
+    :::image type="content" source="../../media/base-2-section-4-step-1-2.png" alt-text="MixedRealityFeatureTool" lightbox="../media/base-2-section-4-step-1-2.png":::
 
 2. The first step is to point the Mixed Reality Feature Tool to your **Project path** using the **ellipsis** button, click on the Three dots ellipsis button next to the Project path and browse to your project folder in the explorer for example _D:\MixedRealityLearning\MRTK Tutorials_.
 
