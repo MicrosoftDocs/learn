@@ -7,11 +7,11 @@ There are several ways of providing inputs. Inputs are given to trigger certain 
     * **Rotation**: X = 90, Y = 0, Z = 0
     * **Scale**: X = 1, Y = 1, Z = 1
 
-    ![Unity with newly created Buttons object selected and positioned](../media/base-6-section-1-step-1-1.png)
+    :::image type="content" source="../media/base-6-section-1-step-1-1.png" alt-text="Unity with newly created Buttons object selected and positioned" lightbox="../media/base-6-section-1-step-1-1.png":::
 
 2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder, click-and-drag the **PressableRoundButton** prefab on to the **Buttons** object, then right-click on the PressableRoundButton and select **Duplicate** to create a copy, repeat until you've a total of three PressableRoundButton objects:
 
-    ![Unity with newly added PressableRoundButton prefabs](../media/base-6-section-1-step-1-2.png)
+    :::image type="content" source="../media/base-6-section-1-step-1-2.png" alt-text="Unity with newly added PressableRoundButton prefabs" lightbox="../media/base-6-section-1-step-1-2.png":::
 
 3. In the Hierarchy window, select the **Buttons** object, then in the Inspector window, use the **Add Component** button to add the **GridObjectCollection** component and configure it as follows:
 
@@ -22,32 +22,32 @@ There are several ways of providing inputs. Inputs are given to trigger certain 
 
     Then click the **Update Collection** button to update the position of the Buttons object's child objects:
 
-    ![Unity Buttons object with GridObjectCollection component added, configured, and applied](../media/base-6-section-1-step-1-3.png)
+    :::image type="content" source="../media/base-6-section-1-step-1-3.png" alt-text="Unity Buttons object with GridObjectCollection component added, configured, and applied" lightbox="../media/base-6-section-1-step-1-3..png":::
 
 4. In the Hierarchy window, name the buttons **Hints**, **Explode**, and **Reset**.For each button, select the **SeeItSayItLabel** > **TextMeshPro** child object, then in the Inspector window, change the respective **TextMeshPro - Text** component text to match the button names:
 
-    ![Unity with button text labels configured](../media/base-6-section-1-step-1-4.png)
+    :::image type="content" source="../media/base-6-section-1-step-1-4.png" alt-text="Unity with button text labels configured" lightbox="../media/base-6-section-1-step-1-4.png":::
 
 5. Once done, collapse the Buttons object's child objects.In the Hierarchy window, select the **Hints** button object, then in the Inspector window, configure the **Interactable.OnClick ()** event as follows:
 
     * Assign the **RoverAssembly** object to the **None (Object)** field
     * From the **No Function** dropdown, select **PlacementHintsController** > **TogglePlacementHints ()** to set this function as the action to be executed when the event is triggered
 
-    ![Unity with Hints button object OnClick event configured](../media/base-6-section-1-step-1-5.png)
+    :::image type="content" source="../media/base-6-section-1-step-1-5.png" alt-text="Unity with Hints button object OnClick event configured" lightbox="../media/base-6-section-1-step-1-5.png":::
 
 6. In the Hierarchy window, select the **Explode** button object, then in the Inspector window, configure the **Interactable.OnClick ()** event as follows:
     * Assign the **RoverAssembly** object to the **None (Object)** field
     * From the **No Function** dropdown, select **ExplodedViewController** > **ToggleExplodedView ()** to set this function as the action to be executed when the event is triggered
 
-    ![Unity with Explode button object OnClick event configured](../media/base-6-section-1-step-1-6.png)
+    :::image type="content" source="../media/base-6-section-1-step-1-6.png" alt-text="Unity with Explode button object OnClick event configured" lightbox="../media/base-6-section-1-step-1-6.png":::
 
 7. Press the Play button to enter Game mode, then press-and-hold the space bar button to activate the hand and use the mouse to press the **Hints** button to toggle the visibility of the placement hint objects:
 
-    ![Unity Play mode split view with Hints button being pressed](../media/base-6-section-1-step-1-7.png)
+    :::image type="content" source="../media/base-6-section-1-step-1-7.png" alt-text="Unity Play mode split view with Hints button being pressed" lightbox="../media/base-6-section-1-step-1-7.png":::
 
 8. **Explode button** will toggle the exploded view on and off:
 
-    ![Unity Play mode split view with Explode button being pressed](../media/base-6-section-1-step-1-8.png)
+    :::image type="content" source="../media/base-6-section-1-step-1-8.png" alt-text="Unity Play mode split view with Explode button being pressed" lightbox="../media/base-6-section-1-step-1-8.png":::
 
 ## Create a dynamic menu that follows the user
 
@@ -55,11 +55,11 @@ There are several ways of providing inputs. Inputs are given to trigger certain 
     * Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**
     * Check the checkbox next to the **RadialView** Solver component so it's enabled by default
 
-    ![Unity with newly added near menu prefab selected](../media/base-6-section-2-step-1-1.png)
+    :::image type="content" source="../media/base-6-section-2-step-1-1.png" alt-text="Unity with newly added near menu prefab selected" lightbox="../media/base-6-section-2-step-1-1.png":::
 
 2. In the Hierarchy window, rename the object to **Menu**, then expand its **ButtonCollection** child object to reveal the four buttons:
 
-    ![Unity with Menu object selected and ButtonCollection object expanded](../media/base-6-section-2-step-1-2.png)
+    :::image type="content" source="../media/base-6-section-2-step-1-2.png" alt-text="Unity with Menu object selected and ButtonCollection object expanded" lightbox="../media/base-6-section-2-step-1-2.png":::
 
 3. Rename the first button in the ButtonCollection to Indicator, then in the Inspector window, configure the Button Config Helper (Script) component as follows:
 
@@ -69,14 +69,14 @@ There are several ways of providing inputs. Inputs are given to trigger certain 
     * Verify that the argument checkbox is **checked**
     * Change the **Icon** to the 'search' icon
 
-    ![Unity with Indicator button object Button Config Helper configured](../media/base-6-section-2-step-1-3.png)
+    :::image type="content" source="../media/base-6-section-2-step-1-3.png" alt-text="Unity with Indicator button object Button Config Helper configured" lightbox="../media/base-6-section-2-step-1-3.png":::
 
 4. To disable the chevron Indicator object, in the Hierarchy window, select the Indicator object that looks like chevron, then in the Inspector window:
 
     * Uncheck the checkbox next to its name to make it inactive by default
     * Use the **Add Component** button to add the **Directional Indicator Controller (Script)** component
 
-    ![Unity with Indicator object selected, disabled, and DirectionalIndicatorController component added](../media/base-6-section-2-step-1-4.png)
+    :::image type="content" source="../media/base-6-section-2-step-1-4.png" alt-text="Unity with Indicator object selected, disabled, and DirectionalIndicatorController component added" lightbox="../media/base-6-section-2-step-1-4.png":::
 
 5. Rename the second button to **TapToPlace**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
 
@@ -86,7 +86,7 @@ There are several ways of providing inputs. Inputs are given to trigger certain 
     * Verify that the argument checkbox is **checked**
     * Change the **Icon** to the 'hand with ray' icon
 
-    ![Unity with TapToPlace button object Button Config Helper configured](../media/base-6-section-2-step-1-5.png)
+    :::image type="content" source="../media/base-6-section-2-step-1-5.png" alt-text="Unity with TapToPlace button object Button Config Helper configured" lightbox="../media/base-6-section-2-step-1-5.png":::
 
 6. In the Hierarchy window, select the **RoverAssembly** object, then in the Inspector window, configure the **Tap To Place (Script)** component as follows:
     * Uncheck the checkbox next to its name to make it inactive by default
@@ -95,4 +95,4 @@ There are several ways of providing inputs. Inputs are given to trigger certain 
     * From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update this property value when the event is triggered
     * Verify that the argument checkbox is **unchecked**
 
-    ![Unity with TapToPlace component reconfigured](../media/base-6-section-2-step-1-6.png)
+    :::image type="content" source="../media/base-6-section-2-step-1-6.png" alt-text="Unity with TapToPlace component reconfigured" lightbox="../media/base-6-section-2-step-1-6.png":::
