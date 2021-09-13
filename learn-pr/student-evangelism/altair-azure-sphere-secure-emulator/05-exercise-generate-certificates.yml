@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-secure-emulator.exercise-generate-certificates
-title: Create client certificates for an MQTT Broker
+title: Secure the connection to an MQTT Broker
 metadata:
-  title: Create client certificates for an MQTT Broker
-  description: In this exercise, you'll create client certificates for an MQTT Broker.
+  title: Secure the connection to an MQTT Broker
+  description: In this exercise, you'll secure the connection to an MQTT Broker.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover
