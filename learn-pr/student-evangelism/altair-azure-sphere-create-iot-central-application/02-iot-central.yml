@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-create-iot-central-application.iot-central-concept
-title: Create an IoT Central web application
+title: Learn how to create an IoT Central web application
 metadata:
-  title: Create an IoT Central web application
+  title: Learn how to create an IoT Central web application
   description: Learn how to create an IoT Central web portal for the Altair emulator.
   ms.date: 08/18/2021
   author: gloveboxes
