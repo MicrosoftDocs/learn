@@ -6,10 +6,10 @@ For this module use You can use [this video](https://github.com/microsoft/spatia
 
 1. To import Video into the unity project. in the Unity menu select **Asset** > **Import New Asset**
 
-    ![Importing Asset](../media/spatial-audio-3-section-1-step-1-1.png)
+    :::image type="content" source="../media/spatial-audio-3-section-1-step-1-1.png" alt-text="Importing Asset" lightbox="../media/spatial-audio-3-section-1-step-1-1.png":::
 2. In the **Import New Asset...** window, select the **Microsoft HoloLens - Spatial Sound-PTPvx7mDon4** file you downloaded and click the **Open** button to import the asset into the project:
 
-    ![Selecting Asset](../media/spatial-audio-3-section-1-step-1-2.png)
+    :::image type="content" source="../media/spatial-audio-3-section-1-step-1-2.png" alt-text="Selecting Asset" lightbox="../media/spatial-audio-3-section-1-step-1-2.png":::
 3. Adjusting the quality settings on the video clip can ensure smooth playback on HoloLens 2. Select the video file in the **Project** window and in the Inspector window of the video file, **override** the settings for **Windows Store Apps**, and:
 
     1) Enable **Transcode**
@@ -19,10 +19,10 @@ For this module use You can use [this video](https://github.com/microsoft/spatia
 
 4. After these adjustments, click on Apply to change the quality setting on the video clip.
 
-    ![Video property Change](../media/spatial-audio-3-section-1-step-1-3.png)
+    :::image type="content" source="../media/spatial-audio-3-section-1-step-1-3.png" alt-text="Video property Change" lightbox="../media/spatial-audio-3-section-1-step-1-3.png":::
 5. Right click on the Hierarchy, Select **Video** > **Video Player** to add Video player component.
 
-    ![Add Video Player](../media/spatial-audio-3-section-1-step-1-4.png)
+    :::image type="content" source="../media/spatial-audio-3-section-1-step-1-4.png" alt-text="Add Video Player" lightbox="../media/spatial-audio-3-section-1-step-1-4.png":::
 
 ## Play video onto a quadrangle
 
@@ -34,21 +34,21 @@ The **Video Player** object needs a textured game object to render the video.
     * **Rotation**: X = 0, Y = 0, Z = 0
     * **Scale**: X = 1.28, Y = 0.72, Z = 1
 
-    ![Add a Quad](../media/spatial-audio-3-section-2-step-1-1.png)
+    :::image type="content" source="../media/spatial-audio-3-section-2-step-1-1.png" alt-text="Add a Quad" lightbox="../media/spatial-audio-3-section-2-step-1-1.png":::
 2. Now you need to texture the **Quad** with the video, In the **Project** window, right-click and choose **Create** > **Render Texture** to create a Render Texture component, enter a suitable name to the Render Texture for example, _Spatial Audio Texture_:
 
-    ![Create Render Texture](../media/spatial-audio-3-section-2-step-1-2.png)
+    :::image type="content" source="../media/spatial-audio-3-section-2-step-1-2.png" alt-text="Create Render Texture" lightbox="../media/spatial-audio-3-section-2-step-1-2.png":::
 
 3. Select the **Render Texture** and in the Inspector window set the **Size** property to match the video's native resolution of 1280x720. Then, to ensure good rendering performance on HoloLens 2, set the **Depth Buffer** property to **At least 16 bits depth**.
 
-    ![Render Texture properties](../media/spatial-audio-3-section-2-step-1-3.png)
+    :::image type="content" source="../media/spatial-audio-3-section-2-step-1-3.png" alt-text="Render Texture properties" lightbox="../media/spatial-audio-3-section-2-step-1-3.png":::
 
 4. Next, use the created Render Texture **Spatial Audio Texture** as the texture for the **Quad**:
 
     1) Drag the **Spatial Audio Texture** from the **Project** window onto the **Quad** in the Hierarchy to add the Render Texture to the Quad
     2) To ensure good performance on HoloLens 2, select Quad in the Hierarchy and in the Inspector window for shader select the **Mixed Reality Toolkit** > **Standard** Shader.
 
-    ![Quad texture properties](../media/spatial-audio-3-section-2-step-1-4.png)
+    :::image type="content" source="../media/spatial-audio-3-section-2-step-1-4.png" alt-text="Quad texture properties" lightbox="../media/spatial-audio-3-section-2-step-1-4.png":::
 
 5. To set **Video Player** and **Render Texture** to play the video clip, select the **Video Player** in the **Hierarchy** and in the **Inspector** window,
 
@@ -56,7 +56,7 @@ The **Video Player** object needs a textured game object to render the video.
     2) Check the **Loop** checkbox
     3) Set **Target Texture** to your new render texture **Spatial Audio Texture**
 
-    ![Video player properties](../media/spatial-audio-3-section-2-step-1-5.png)
+    :::image type="content" source="../media/spatial-audio-3-section-2-step-1-5.png" alt-text="Video player properties" lightbox="../media/spatial-audio-3-section-2-step-1-5.png":::
 
 ## Spatialize the audio from the video
 
@@ -68,11 +68,11 @@ The **Video Player** object needs a textured game object to render the video.
     2) Check the **Spatialize** box
     3) Move the **Spatial Blend** slider to 1 (3D)
 
-    ![Quad audio source inspector](../media/spatial-audio-3-section-3-step-1-1.png)
+    :::image type="content" source="../media/spatial-audio-3-section-3-step-1-1.png" alt-text="Quad audio source inspector" lightbox="../media/spatial-audio-3-section-3-step-1-1.png":::
 
 2. To set the Video Player to route its audio to the **Audio Source**, select the **Video Player** In the Hierarchy window, and in Video Player object in the Inspector do the following changes.
 
     1) Set the **Audio Output Mode** to **Audio Source**
     2) Set the **Audio Source** property to the **Quad**
 
-    ![Video player set audio source](../media/spatial-audio-3-section-3-step-1-2.png)
+    :::image type="content" source="../media/spatial-audio-3-section-3-step-1-2.png" alt-text="Video player set audio source" lightbox="../media/spatial-audio-3-section-3-step-1-2.png":::

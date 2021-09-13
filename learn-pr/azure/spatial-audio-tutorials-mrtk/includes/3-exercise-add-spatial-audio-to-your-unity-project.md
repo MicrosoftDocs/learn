@@ -27,13 +27,13 @@ Then follow the Changing the Spatial Awareness Display Option instructions to en
 
 * After importing the **Microsoft Spatializer** you need to enable it. Open **Edit -> Project Settings -> Audio**, and change **Spatializer Plugin** to "Microsoft Spatializer".
 
-    ![Project Settings showing spatializer plugin](../media/spatial-audio-1-section-3-step-1-1.png)
+    :::image type="content" source="../media/spatial-audio-1-section-3-step-1-1.png" alt-text="Project Settings showing spatializer plugin" lightbox="../media/spatial-audio-1-section-3-step-1-1.png":::
 
 ## Enable Spatial audio on your workstation
 
 * On desktop versions of Windows, Spatial audio is disabled by default. Enable it by right-clicking on the volume icon in the task bar. To get the best representation of what you'll hear on HoloLens 2, choose **Spatial sound -> Windows Sonic for Headphones**.
 
-    ![Desktop spatial audio settings](../media/spatial-audio-1-section-4-step-1-1.png)
+    :::image type="content" source="../media/spatial-audio-1-section-4-step-1-1.png" alt-text="Desktop spatial audio settings" lightbox="../media/spatial-audio-1-section-4-step-1-1.png":::
 
     > [!NOTE]
     > This setting is only required if you plan to test your project in the Unity editor.
