@@ -63,7 +63,7 @@ In this exercise, You'll learn how to create speech commands and how to control 
     8) From the **No Function** dropdown, select **ObjectManipulator** > **bool enabled** to update this property value when the event is triggered
     9) Select the argument checkbox, so it's **selected**.
 
-    :::image type="content" source="../media/base-9-section-3-step-1-5.png" alt-text="Configure keyword element 1"../media/base-9-section-3-step-1-5.png":::
+    :::image type="content" source="../media/base-9-section-3-step-1-5.png" alt-text="Configure keyword element 1" lightbox="../media/base-9-section-3-step-1-5.png":::
 
 6. Expand **Element 2** and configure it as follows:
     1) In the **Keyword** field, enter **Disable Bounds Control**, to reference the Disable Bounds Control command you created in the previous section.
@@ -76,13 +76,13 @@ In this exercise, You'll learn how to create speech commands and how to control 
     8) From the **No Function** dropdown, select **ObjectManipulator** > **bool enabled** to update this property value when the event is triggered.
     9) Verify that the argument checkbox is **unselected**.
 
-    :::image type="content" source="../media/base-9-section-3-step-1-6.png" alt-text="Configure keyword element 2]"../media/base-9-section-3-step-1-6.png":::
+    :::image type="content" source="../media/base-9-section-3-step-1-6.png" alt-text="Configure keyword element 2]" lightbox="../media/base-9-section-3-step-1-6.png":::
 
 7. In the Hierarchy window, select the **RoverExplorer** > **RoverAssembly** object, and then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component and configure it as follows:
     1) Verify that the **Is Focus Required** checkbox is **selected**, so the user is required to look at the object with the SpeechInputHandler component, that is, the RoverAssembly, to trigger the speech command.
     2) From the Project window, assign the **SpeechConfirmation Tooltip** prefab to the Speech **Confirmation Tooltip Prefab** field, to have this prefab appear when a speech command is recognized.
 
-    :::image type="content" source="../media/base-9-section-3-step-1-7.png" alt-text="Add speech input handler to Rover Assembly]"../media/base-9-section-3-step-1-7.png":::
+    :::image type="content" source="../media/base-9-section-3-step-1-7.png" alt-text="Add speech input handler to Rover Assembly]" lightbox="../media/base-9-section-3-step-1-7.png":::
 
 8. On the SpeechInputHandler component, click the small + icon to add a keyword element, expand the newly created element, and then configure it as follows:
     1) In the **Keyword** field, enter **Enable Tap to Place**, to reference the Enable Tap to Place command you created in the previous section.
@@ -91,4 +91,4 @@ In this exercise, You'll learn how to create speech commands and how to control 
     4) From the **No Function** dropdown, select **TapToPlace** > **bool enabled** to update this property value when the event is triggered.
     5) Select the argument checkbox, so it's **selected**
 
-    :::image type="content" source="../media/base-9-section-3-step-1-8.png" alt-text="Configure speech input handler on Rover Assembly]"../media/base-9-section-3-step-1-8.png":::
+    :::image type="content" source="../media/base-9-section-3-step-1-8.png" alt-text="Configure speech input handler on Rover Assembly]" lightbox="../media/base-9-section-3-step-1-8.png":::
