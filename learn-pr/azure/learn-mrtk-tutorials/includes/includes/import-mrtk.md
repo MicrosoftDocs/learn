@@ -234,5 +234,5 @@ In the Project Settings window, select **Player** > **XR Settings**, then use th
 
 2. In the Project Settings window, select **Player** > **Publishing Settings**, then in the **Package name** field, enter a suitable name, for example, _MRTKTutorials-GettingStarted_:
 
-    :::image type="content" source="../../media/base-2-section-5-step-2-2.png" alt-text= "Unity Publishing Settings. Package name configured" lightbox="../../media/base-2-section-5-step-2-2":::
+    :::image type="content" source="../../media/base-2-section-5-step-2-2.png" alt-text= "Unity Publishing Settings. Package name configured" lightbox="../../media/base-2-section-5-step-2-2.png":::
 
