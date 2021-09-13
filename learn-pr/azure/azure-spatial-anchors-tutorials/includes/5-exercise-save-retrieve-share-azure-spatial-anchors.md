@@ -45,7 +45,7 @@ There are many ways to transfer Azure Anchor IDs between devices. In this exampl
 
 1. In the Hierarchy window, expand the **ButtonParent** object. Locate the two buttons named **ShareAzureAnchorIdToNetwork** and **GetAzureAnchorIdFromNetwork**:
 
-     :::image type="content" source="../media/asa-03-section-3-step-1-1.png" alt-text="ShareAzure and GetAzure"../media/asa-03-section-3-step-1-1.png":::
+     :::image type="content" source="../media/asa-03-section-3-step-1-1.png" alt-text="ShareAzure and GetAzure" lightbox="../media/asa-03-section-3-step-1-1.png":::
 
 2. Follow the same steps as in the configuring the buttons to operate the scene instructions from the previous tutorial to configure the **Interactable (Script)** component on each of the two buttons:
 
