@@ -39,15 +39,15 @@ When you use a supported test framework, Azure Pipelines understands the results
 
 When you divide your pipeline into multiple stages, each with its own responsibility, you sometimes need to pass data between these stages. For example, one stage might create an Azure resource that another stage needs to work with. To be able to pass data, the second stage needs to know the name of the resource that was created. This is the case with our smoke test stage, which needs to access the resources that the deployment stage has deployed.
 
-Your Bicep file deploys the resources, so it can access the resource properties and publish them as deployment outputs. You can access a deployment output in your pipeline. In Azure Pipelines, there's special syntax to publish variables to make them available across stages.
+Your Bicep file deploys the resources, so it can access the resource properties and publish them as deployment outputs. You can access a deployment output in your pipeline. In Azure Pipelines, there's a special syntax for publishing variables to make them available across stages.
 
-You first need to publish an output variable for a pipeline stage. You do this by writing a specially formatted string to the pipeline log, which Azure Pipelines knows how to understand. In the following example, a variable named `myVariable` is set to the value `myValue`:
+First, you need to publish an output variable for a pipeline stage. You do this by writing a specially formatted string to the pipeline log, which Azure Pipelines knows how to understand. In the following example, a variable named `myVariable` is set to the value `myValue`:
 
 :::code language="bash" source="code/8-output-variable.yml" range="8" :::
 
 Azure Pipelines reads and interprets the string from the pipeline log, and it makes the variable's value available as an output. You can combine this with more scripting to publish a Bicep deployment output's value as an output variable for a pipeline stage. You'll see how to do this scripting in the next exercise.
 
-After you publish the output variable, you then need to make the variable available to your smoke test stage's job. You do this by defining a variable for the job and using another specially formatted YAML string:
+Second, you need to make the variable available to your smoke test stage's job. You do this by defining a variable for the job and using another specially formatted YAML string:
 
 :::code language="yaml" source="code/8-output-variable.yml" range="11-15" highlight="5" :::
 
