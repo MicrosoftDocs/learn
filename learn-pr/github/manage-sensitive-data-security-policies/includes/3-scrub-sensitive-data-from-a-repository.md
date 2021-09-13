@@ -1,7 +1,5 @@
 <!--Manage sensitive data and security policies in GitHub-->
 
-# Scrub sensitive data from a repository
-
 As a GitHub organization administrator, you may need to remove, or *scrub*, sensitive data from a repository. You may also need to take additional security steps, like changing security policies in response to an incident.
 
 :::image type="content" source="../media/sensitive-data.png" alt-text="A zoomed-in screenshot that shows a block of code, heavily pixelated to be incomprehensible, with two lines of code also struck through with red horizontal lines, indicating their high sensitivity":::

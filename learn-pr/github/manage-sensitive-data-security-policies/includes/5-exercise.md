@@ -1,5 +1,3 @@
-# Exercise - Remove commit history
-
 This exercise checks your knowledge on removing a commit from the git history of a repository.
 
 This GitHub exercise is graded automatically once you have attempted a solution to the challenge. The results of your actions, as well as helpful feedback, are provided in real-time within the `grade-learner` workflow logs.

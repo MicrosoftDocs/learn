@@ -1,7 +1,5 @@
 <!--Manage sensitive data and security policies in GitHub-->
 
-# Reporting and logging
-
 Sometimes you need more details about actions performed in your organization, like who performed the action, when, and how. You may also need to check who deleted a repository, or when a workflow ran? These pieces of information can be helpful in situations where something went wrong in your organization after a specific event.
 
 Here you'll learn what your organization's audit log records, and how to access and export it.

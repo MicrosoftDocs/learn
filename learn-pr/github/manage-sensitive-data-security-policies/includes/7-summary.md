@@ -1,7 +1,5 @@
 <!--Summary-->
 
-# Summary
-
 The goal of this module was to help you understand how to protect your GitHub organization from security breaches as well as what to do in the event of a breach. 
 
 You learned how to:

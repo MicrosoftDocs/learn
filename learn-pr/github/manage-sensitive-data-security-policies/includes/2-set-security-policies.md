@@ -1,7 +1,5 @@
 <!--Manage sensitive data and security policies in GitHub-->
 
-# Setting security policies
-
 In this unit, you'll learn more about the preventative measures you can take to maintain the health of your GitHub repositories.
 
 Suppose you're an administrator who is helping to onboard many new collaborators to your organization. You need to make sure they contribute to the proper repositories and have easy access to assistance if they discover a security threat. To do this, you set security policies.

@@ -2,8 +2,6 @@
 
 <!--Manage sensitive data and security policies in GitHub-->
 
-# Introduction
-
 You need know how to protect against security breaches while collaborating in a GitHub organization, and what to do in the event of a breach. GitHub provides tools to organization members and administrators to accomplish these goals, making it easy for you to guarantee the reputation of your projects and avoid costly mitigation efforts.
 
 Imagine you've created a new GitHub repository in which your organization will work on a brand new project. In the past, projects collected technical debt or risk when access credentials appeared in the code base or when users worked on files outside the scope of their usual roles. It was also hard to know who to contact to resolve the issues when they were identified. As an administrator, you can employ built-in GitHub tools to ensure that users only make changes appropriate to their role, and that your organization protects its sensitive data from unauthorized access.
