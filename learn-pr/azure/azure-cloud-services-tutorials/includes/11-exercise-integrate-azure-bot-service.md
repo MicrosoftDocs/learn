@@ -93,36 +93,36 @@ You can download the latest releases from the [GitHub repository](https://github
 
 * Greeting is the entry point of the chat *bot* when ever a *user* initiates a conversation.
 
-:::image type="content" source="../media/tutorial-5-section-4-step-1-3.png" alt-text="TrackedObjectsBot project dialog trigger Greeting" lightbox="../media/tutorial-5-section-4-step-1-3.png":::
+    :::image type="content" source="../media/tutorial-5-section-4-step-1-3.png" alt-text="TrackedObjectsBot project dialog trigger Greeting" lightbox="../media/tutorial-5-section-4-step-1-3.png":::
 
 #### AskingForCount
 
 * This dialog is triggered when the *user* asks for counting all **Tracked Objects**.
 These are the trigger phrases:
 
->* count me all
->* how many are stored
+    >* count me all
+    >* how many are stored
 
-:::image type="content" source="../media/tutorial-5-section-4-step-1-4.png" alt-text="TrackedObjectsBot project dialog trigger AskForCount" lightbox="../media/tutorial-5-section-4-step-1-4.png":::
+    :::image type="content" source="../media/tutorial-5-section-4-step-1-4.png" alt-text="TrackedObjectsBot project dialog trigger AskForCount" lightbox="../media/tutorial-5-section-4-step-1-4.png":::
 
-Thanks to [LUIS](/composer/how-to-use-luis) the *user* doesn't have to ask the phrases in that exact way, which allows a natural conversation for the *user*.
+    Thanks to [LUIS](/composer/how-to-use-luis) the *user* doesn't have to ask the phrases in that exact way, which allows a natural conversation for the *user*.
 
-In this dialog the *bot* will also talk to the **Count** Azure Function, more about that later.
+    In this dialog the *bot* will also talk to the **Count** Azure Function, more about that later.
 
 #### Unknown Intent
 
-This dialogue is triggered if the input from the *user* doesn't fit any other trigger condition and responses the user with trying his question again.
+* This dialogue is triggered if the input from the *user* doesn't fit any other trigger condition and responses the user with trying his question again.
 
-:::image type="content" source="../media/tutorial-5-section-4-step-1-5.png" alt-text="TrackedObjectsBot project dialog trigger Unknown Intent" lightbox="../media/tutorial-5-section-4-step-1-5.png":::
+    :::image type="content" source="../media/tutorial-5-section-4-step-1-5.png" alt-text="TrackedObjectsBot project dialog trigger Unknown Intent" lightbox="../media/tutorial-5-section-4-step-1-5.png":::
 
 #### FindEntity
 
-The last dialogue is more complex with branching and storing data in the *bots* memory.
+* The last dialogue is more complex with branching and storing data in the *bots* memory.
 It asks the user for the *name* of the **Tracked Object** it wants to know more information about, performs a query to the **Find** Azure Function, and uses the response to proceed with the conversation.
 
-:::image type="content" source="../media/tutorial-5-section-4-step-1-6.png" alt-text="TrackedObjectsBot project dialog trigger FindEntity" lightbox="../media/tutorial-5-section-4-step-1-6.png":::
+    :::image type="content" source="../media/tutorial-5-section-4-step-1-6.png" alt-text="TrackedObjectsBot project dialog trigger FindEntity" lightbox="../media/tutorial-5-section-4-step-1-6.png":::
 
-If the **Tracked Object** isn't found, the user is informed and the conversation ends. When the **Tracked Object** in question is found, the boot will check what properties are available and report on them.
+    If the **Tracked Object** isn't found, the user is informed and the conversation ends. When the **Tracked Object** in question is found, the boot will check what properties are available and report on them.
 
 ### Adapt the Bot
 
@@ -171,7 +171,7 @@ In the Inspector, you'll see that there is an empty **Direct Line Secret Key** f
 
     :::image type="content" source="../media/tutorial-5-section-6-step-1-4.png" alt-text="Unity with ButtonChatBot configured" lightbox="../media/tutorial-5-section-6-step-1-4.png":::
 
-Now the chat bot can be stared from the main menu and with that the scene is ready for use.
+    Now the chat bot can be stared from the main menu and with that the scene is ready for use.
 
 ### Put the bot to a test
 
