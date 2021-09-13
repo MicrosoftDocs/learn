@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github-administration-for-enterprise-support-adoption.github-enterprise-tools-features
+title: GitHub Enterprise features
+metadata:
+  unitType: learning-content
+  title: GitHub Enterprise features
+  description: In this unit, you'll learn the difference between the two types of GitHub Enterprise features:upkeep and automation.
+  ms.date: 09/10/2021
+  author: sterling463
+  ms.author: csterling
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-github-enterprise-tools-features.md)]
