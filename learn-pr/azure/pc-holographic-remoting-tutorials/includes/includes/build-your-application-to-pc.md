@@ -82,6 +82,6 @@ In the menu bar, select **File** > **Build Settings**.
 
 2. Configure Visual Studio for PC by selecting the Release configuration, the x64 architecture, and Local Machine as target:
 
-    :::image type="content" source="../../media/tutorial-2-section-2-step-3-2.png" alt-text="Double-click the .sln file" lightbox="../../media/tutorial-2-section-2-step-3-2.png":::
+    :::image type="content" source="../../media/tutorial-2-section-2-step-3-2.png" alt-text="Select the Release configuration" lightbox="../../media/tutorial-2-section-2-step-3-2.png":::
 
     Click the button that says **Local Machine**. This begins the process of building the application and deploys it to your PC. The application is installed on your PC by default.
