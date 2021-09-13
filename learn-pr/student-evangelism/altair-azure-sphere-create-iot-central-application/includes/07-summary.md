@@ -3,8 +3,7 @@ This unit summaries the main steps you completed in this module.
 In this module, you:
 
 * You created the Altair IoT Central application.
-* You configured your IoT Central to trust messages signed by certificates generated from the Azure Sphere tenant Certificate Authority certificate.
-* Your Azure IoT Central application will automatically provision Azure Sphere devices in the trusted Azure Sphere tenant.
+* You enabled trust between your IoT Central application and your Azure Sphere tenant. With trust enabled, IoT Central will provision Azure Sphere devices in your Azure Sphere tenant when they first connect.
 
 ## Resources
 

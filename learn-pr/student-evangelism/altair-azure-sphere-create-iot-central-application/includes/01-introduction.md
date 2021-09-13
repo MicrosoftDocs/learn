@@ -1,50 +1,13 @@
-Welcome to the cloud-connected Altair 8800 on Azure Sphere learning path. In this module, you will learn about the hardware requirements for the Altair emulator and how to install the required software on your computer.
+Welcome to the cloud-connected Altair 8800 on Azure Sphere learning path. In this module, you will learn about Azure IoT Central and how to use it to create the IoT Web Portal for the Altair emulator.
 
-## Scenario: Hardware and software setup
+## Scenario: Creating an IoT Web Portal
 
-So you've read about the Altair 8800 and now you're ready to run the Altair emulator on Azure Sphere. You'll have a computer running Windows 10 (or better) or Ubuntu 20.04, and you'll have an Azure Sphere.
+It is common to build a web portal for your IoT applications and IoT Central makes this simple. IoT Central is a [Low Code](https://en.wikipedia.org/wiki/Low-code_development_platform?azure-portal=true), environment you can use to build IoT web portals. When you build an IoT Central application, you describe the data a device sends, along with device interactions, and how you want to view the data in the web portal. IoT Central uses [IoT Plug and Play](/azure/iot-develop/overview-iot-plug-and-play?azure-portal=true) to describe device data, device cloud interactions, and is also used to create default data views.
 
 ## What will you learn?
 
-In this module, you'll learn about the Azure Sphere hardware options for the Altair emulator and you'll also learn what software you need to install on your computer.
+In this module, you'll learn how to create a web portal for the Altair emulator using IoT Central and enable trust between your IoT Central application and Azure Sphere.
 
 ## What is the main goal?
 
-This module will focus on the hardware options and setting up your computer to build the deploy that Altair emulator to Azure Sphere.
-
-
-In this module, you will learn how to create an Azure IoT Central application.
-
-## Azure IoT Central
-
-Azure IoT Central is a cloud-based Internet of Things (IoT) application platform. [Azure IoT Central](https://azure.microsoft.com/services/iot-central?azure-portal=true) provides an easy way to connect, monitor, and manage your IoT assets at scale. IoT Central is built on Azure IoT Hub, Azure Device Provisioning Service, Stream Analytics, and Time Series Insights.
-
-:::image type="content" source="../media/architecture.png" alt-text="Diagram that shows the architecture of Azure IoT Central." border="false":::
-
-Azure IoT Central is built on the [Eight attributes of successful IoT solutions](https://azure.microsoft.com/resources/8-attributes-of-successful-iot-solutions?azure-portal=true).
-
-## IoT Central and Azure Sphere tenant trust
-
-Trust is established by sharing your Azure Sphere tenant Certificate Authority certificate with your IoT Central application.
-
-With trust established, your devices will be provisioned with your Altair IoT Central application. Trusted certificates are used to sign and secure network traffic between your Azure Sphere and IoT Central.
-
-In this module, you will:
-
-* Create an Azure IoT Central application. 
-* Set up a trusted relationship between your Azure Sphere tenant and Azure IoT Central.
-* Create an enrollment group.
-* Create and validate a tenant CA certificate.
-
-## Prerequisites
-
-* A computer with an x86-64-based processor running one of the following operating systems:
-  * Windows 10 Anniversary Update or later
-  * 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
-* An Azure Sphere developer board that has one of the following kits:
-  * Avnet Azure Sphere Starter Kit Rev 1 or 2
-  * Seeed Studio Azure Sphere MT3620 Development Kit
-* A GitHub account.
-* An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
-
-In the next unit, you'll learn how to create a cloud-based Azure IoT Central application for the Altair 8800 emulator.
+This module will focus on creating an IoT Central application and enabling trust between IoT Central and Azure Sphere.
