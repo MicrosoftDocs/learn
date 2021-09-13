@@ -10,13 +10,13 @@ First, let's create a condition that runs the logic app whenever a certain event
 
 1. Select the Logic app you just created. Select **Home**, then **Logic apps**, and then select the Logic app name from the Recent resources list.
 
-1. In the left menu pane, under **Development Tools**, select **Logic app designer**.
+1. In the left menu pane, under **Development Tools**, select **Logic app designer**. The **Logic app designer** pane appears for your logic app.
 
 1. In the Logic Apps Designer pane for your app, an **Event Grid** trigger **When a resource event occurs** appears. Select **+ New step**.
 
     :::image type="content" source="../media/5-choose-new-step-condition.png" alt-text="Button for a new logic app step.":::
 
-1. Under **Choose an operation**, in the search box, enter **condition** as your filter. Select **Control**.
+1. Under **Choose an operation**, in the search box, enter *condition* as your filter. Select **Control**.
 
 1. On the **Actions** tab, select **Condition** *Control*.
 
@@ -26,7 +26,7 @@ First, let's create a condition that runs the logic app whenever a certain event
 
     :::image type="content" source="../media/5-empty-condition.png" alt-text="Empty condition."::: 
 
-1. Select ellipsis on the right side of the **Condition** text box, select **Rename**, and enter **If a virtual machine in your resource group has changed**.
+1. Select **Condition** and its text box appears. Enter *If a virtual machine in your resource group has changed*.
 
     :::image type="content" source="../media/5-rename-condition.png" alt-text="Selections for renaming a condition.":::
 
@@ -40,7 +40,7 @@ First, let's create a condition that runs the logic app whenever a certain event
 
 1. Leave the middle box as **is equal to**, select the right box, and enter `Microsoft.Compute/virtualMachines/write`.
 
-    :::image type="content" source="../media/5-complete-condition.png" alt-text="Completed condition."::: 
+    :::image type="content" source="../media/5-complete-condition.png" alt-text="Completed condition.":::
 
 1. In the **Logic app designer** menu bar, select **Save**.
 
@@ -52,13 +52,13 @@ Next, we'll add an email action based on the logic app being triggered. The foll
 
     :::image type="content" source="../media/5-condition-true-add-action.png" alt-text="Add an action button.":::
 
-1. In the search box under **Choose an operation**, enter **send an email** as your filter, and select the **Office 365 Outlook** provider.
+1. In the search box under **Choose an operation**, enter *send an email* as your filter, and select the **Office 365 Outlook** provider.
 
     :::image type="content" source="../media/5-logic-app-send-email.png" alt-text="Selections for sending an email action.":::
 
 1. If you don't already have a connection for your email provider, sign in to your email account when you're asked for authentication.
 
-1. On the action's title bar to the right, rename the action to **Send email when virtual machine updated**.
+1. On the action's title bar to the right, rename the action to *Send email when virtual machine updated*.
 
     :::image type="content" source="../media/5-send-email-vm-update.png" alt-text="Selections for sending an email when vm updates.":::
 
@@ -82,7 +82,7 @@ You've created and configured a logic app to listen for virtual machine events a
 
 The final step is to test the complete workflow.
 
-1. In the search bar at the top of the Azure portal, search for **vm1**, and select the virtual machine in the results.
+1. In the search bar at the top of the Azure portal, search for **vm1**, and select the virtual machine in the results. Your **vm1** virtual machine pane appears.
 
 1. In the left menu pane, under **Settings**, select **Size**.
 

@@ -12,8 +12,8 @@ By the end of this module, you'll be able to create and maintain web apps that u
 
 In this module, you will:
 
-- Create Docker images and store them in a repository in Container Registry.
-- Use App Service to run web apps that are based on Docker images held in Container Registry.
+- Create Docker images and store them in a repository in Azure Container Registry.
+- Use App Service to run web apps that are based on Docker images held in Azure Container Registry.
 - Use webhooks to configure continuous deployment of a web app that's based on a Docker image.
 
 ## Prerequisites

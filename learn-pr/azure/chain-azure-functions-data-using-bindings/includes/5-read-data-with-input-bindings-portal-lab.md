@@ -21,7 +21,7 @@ A database account is a container for managing one or more databases. Before we 
 
 1. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Databases**, search for and select **Azure Cosmos DB**, and press <kbd>Enter</kbd>. The **Select API option** pane appears.
+1. In the left menu pane, select **Databases**, and in the *marketplace* search box, search for and select **Azure Cosmos DB**. The **Select API option** pane appears.
 
     Azure Cosmos DB provides five APIs to suit the needs of your application:
 
@@ -44,7 +44,7 @@ A database account is a container for managing one or more databases. Before we 
     | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
     | **Instance Details** |
     | Account Name | Enter a *globally unique name* | Enter a unique name to identify this Azure Cosmos DB account. Because `documents.azure.com` is appended to the name that you provide to create your URI, use a unique but identifiable name.<br><br>The account name can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters. |
-    | Location | Central US | Select the region nearest to you. |
+    | Location | *region* | Select the region nearest to you. |
 
 1. Accept the default values for all of the other settings in this new account pane.
 

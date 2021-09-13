@@ -6,7 +6,7 @@ In this exercise, you'll provision a web server to meet the requirements.
 
 ## Provision a web server
 
-You need to use several tools to provision a web server. Using an Azure Resource Manager template, you can define the environment for your web server. The Resource Manager template can also help you define a desired state configuration (DSC) for your web server. By linking to a Desired State Configuration (DSC) extension handler in the Resource Manager template, both the environment and the desired state are applied when you provision the web server. The DSC extension handler helps enforce the DSC state that you defined.
+You need to use several tools to provision a web server. Using an Azure Resource Manager template, you can define the environment for your web server. The Resource Manager template can also help you define a desired state configuration (DSC) for your web server. By linking to a DSC extension handler in the Resource Manager template, both the environment and the desired state are applied when you provision the web server. The DSC extension handler helps enforce the DSC state that you defined.
 
 In the following exercise, you'll use a Resource Manager template to provision a virtual machine. The DSC extension handler that's included in the template enforces your state on the virtual machine. You use an Azure storage account to host your DSC configuration file.
 
@@ -31,7 +31,7 @@ The State Configuration is defined in the *Webserver.ps1* file, which includes t
     code Webserver.ps1
     ```
 
-1. The configuration file includes the following code. Notice that it installs IIS, ASP.NET, and the IIS Management Console.
+    The configuration file includes the following code. Notice that it installs IIS, ASP.NET, and the IIS Management Console.
 
     ```powershell
     Configuration Webserver
@@ -96,7 +96,7 @@ The GitHub repository that you cloned also contains a Resource Manager template.
     },
     ```
 
-1. Add the default value as shown below so that it looks like this code:
+1. Add the default value as follows so that it looks like this code:
 
     ```json
     "modulesUrl": {
@@ -110,9 +110,9 @@ The GitHub repository that you cloned also contains a Resource Manager template.
 
 1. Save the template by pressing <kbd>Ctrl+S</kbd>.
 
-1. In the `<variables>` section of the *template.json* file, notice that values are stored to configure networking for a virtual machine.
+    In the `<variables>` section of the *template.json* file, notice that values are stored to configure networking for a virtual machine.
 
-1. In the `<resources>` section, notice that the template defines an IP address, a virtual network, a virtual machine, and other related resources.
+    In the `<resources>` section, notice that the template defines an IP address, a virtual network, a virtual machine, and other related resources.
 
 1. Close the code editor by pressing <kbd>Ctrl+Q</kbd>.
 
@@ -133,7 +133,7 @@ Now that you have a completed template and zipped configuration file, you can us
 
     :::image type="content" source="../media/5-error-null.png" alt-text="Screenshot of Cloud Shell showing a successful template validation with a callout highlighting the error property set to null." loc-scope="other"::: <!-- no-loc -->
 
-1. If there are no errors, your template was validated and can be deployed.
+    If there are no errors, your template was validated and can be deployed.
 
 ## Deploy your template
 

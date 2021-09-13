@@ -62,7 +62,7 @@ Next, create a Windows Server VM to simulate an on-premises machine running in t
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account you used to activate the sandbox.
 
-1. On the home page, under **Azure services** select **Virtual machines**, and then select the **2019FileServer** VM you created. The Virtual machine **2019 FileServer** *Overview* pane appears.
+1. On the home page, under **Azure services**, select **Virtual machines**, and then select the **2019FileServer** VM you created. The **2019 FileServer** Virtual machine *Overview* pane appears.
 
 1. On the top menu bar, select **Connect** > **RDP**, and then select **Download RDP File**.
 

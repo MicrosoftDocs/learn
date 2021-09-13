@@ -61,7 +61,7 @@ Each A record requires the following details:
 
 - **Name**: The name of the custom domain, for example *webserver1*.
 - **Type**: In this instance, it's A.
-- **TTL**: Represents the "time-to-live" as a whole unit, where 1 is one hour. This value indicates how long the A record lives in a DNS cache before it expires.
+- **TTL**: Represents the "time-to-live" as a whole unit, where 1 is one second. This value indicates how long the A record lives in a DNS cache before it expires.
 - **IP address**: The IP address of the server this A record should resolve to.
 
 #### CNAME record
@@ -82,7 +82,7 @@ To provide name resolution for virtual machines (VMs) within a virtual network a
 
 ### Step 1: Create private DNS zone
 
-In the Azure portal, search on *private dns zones*. To create the private zone, you need enter a resource group and the name of the zone. For example, the name might be something like private.wideworldimports.com.
+In the Azure portal, search for *private dns zones*. To create the private zone, you need enter a resource group and the name of the zone. For example, the name might be something like private.wideworldimports.com.
 
 ![Screenshot of the Create Private DNS zone page.](../media/3-create-private-dns-zone.png)
 
@@ -92,9 +92,9 @@ Let's assume that your organization has already created your VMs and virtual net
 
 ### Step 3: Link your virtual network to a private DNS zone
 
-To link the private DNS zone to a virtual network, you create a virtual network link. In the Azure portal, go to the private zone and select **Virtual network links**.
+To link the private DNS zone to a virtual network, you create a virtual network link. In the Azure portal, go to the private zone, and select **Virtual network links**.
 
-![Screenshot of the Create Private DNS zone page.](../media/3-virtual-network-link-option.png)
+![Screenshot of another Create Private DNS zone page.](../media/3-virtual-network-link-option.png)
 
 Select **Add** to pick the virtual network you want to link to the private zone.
 

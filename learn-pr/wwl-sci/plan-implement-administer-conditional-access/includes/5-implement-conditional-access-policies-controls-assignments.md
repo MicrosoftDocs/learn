@@ -227,9 +227,9 @@ Conditional Access policies are powerful tools. We recommend excluding the follo
 ## Conditional Access Terms of Use (TOU)
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the Azure AD conditional access setup page that shows adding Terms-of-Use rules for being able to access resources.](../media/sc300-terms-of-use-conditional-access.png)
+> ![Screenshot of the Azure AD Conditional Access setup page that shows adding Terms-of-Use rules for being able to access resources.](../media/sc300-terms-of-use-conditional-access.png)
 
-The linking of consent (accept terms before access) and conditional access is getting more and more traction. Organizations get the ability to enforce a user to consent to the terms of use.  Additionally, organizations can expire the consent given or change the terms of use, and request the user attest again.
+The linking of consent (accept terms before access) and Conditional Access is getting more and more traction. Organizations get the ability to enforce a user to consent to the terms of use.  Additionally, organizations can expire the consent given or change the terms of use, and request the user attest again.
 
 Before accessing certain cloud apps in your environment, you might want to get consent from users in form of accepting your terms of use (ToU). Azure Active Directory (Azure AD) Conditional Access provides you with:
 - A simple method to configure ToU
