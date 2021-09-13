@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.azure.azure-cloud-services-tutorials-mrtk
+metadata:
+  title: Azure Cloud Services for HoloLens 2
+  description: This course explores the use of Azure Cloud Services by integrating to a Hololens2 application. 
+  ms.date: 09/13/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+title: Azure Cloud Services for HoloLens 2
+summary: Learn about Azure Cloud Services to enhance your learning experience.
+abstract: |
+  By the end of this module you will be able to:
+  - Build a HoloLens 2 application that can detect objects from images and find its spatial location.
+  - Use Azure Custom Vision to train and detect images in the HoloLens 2 application
+  - Integrating Azure Storage as the persistence solution for the demo application.
+  - Learn basics of Azure Bot Service with LUIS
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- windows
+- windows-mixed-reality
+- mrtk
+- hololens
+prerequisites: |
+  - A Windows 10 PC configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
+  - Windows 10 SDK 10.0.18362.0 or later
+  - A HoloLens 2 device configured for development
+  - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
+  - [Set up a mixed reality project in Unity module](/learn/modules/mixed-reality-toolkit-project-unity)
+  - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
+  - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
+
+
+units: 
+
+- learn.azure.azure-cloud-services-tutorials-mrtk.1-introduction
+- learn.azure.azure-cloud-services-tutorials-mrtk.2-azure-cloud-services-for-hololens-2
+- learn.azure.azure-cloud-services-tutorials-mrtk.3-exercise-azure-cloud-services-for-hololens-2
+- learn.azure.azure-cloud-services-tutorials-mrtk.4-integrate-azure-storage
+- learn.azure.azure-cloud-services-tutorials-mrtk.5-exercise-integrate-azure-storage
+- learn.azure.azure-cloud-services-tutorials-mrtk.6-integrate-azure-custom-vision
+- learn.azure.azure-cloud-services-tutorials-mrtk.7-exercise-integrate-azure-custom-vision
+- learn.azure.azure-cloud-services-tutorials-mrtk.8-integrate-azure-spatial-anchors
+- learn.azure.azure-cloud-services-tutorials-mrtk.9-exercise-integrate-azure-spatial-anchors
+- learn.azure.azure-cloud-services-tutorials-mrtk.10-integrate-azure-bot-service
+- learn.azure.azure-cloud-services-tutorials-mrtk.11-exercise-integrate-azure-bot-service
+- learn.azure.azure-cloud-services-tutorials-mrtk.12-knowledge-check
+- learn.azure.azure-cloud-services-tutorials-mrtk.13-summary
+
+badge:
+  uid: learn.azure.azure-cloud-services-tutorials-mrtk.badge
