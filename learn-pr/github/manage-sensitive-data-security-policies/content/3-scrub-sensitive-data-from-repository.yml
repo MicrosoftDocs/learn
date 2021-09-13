@@ -4,7 +4,7 @@ title: Scrub sensitive data from a repository
 metadata:
   unitType: learning-content
   title: Scrub sensitive data from a repository
-  description: In this unit, you'll learn about the tools to help prevent committing sensitive data, what to do in the event of this kind of security breach, and how to evaluate potential changes to security policies.
+  description: In this unit, you'll learn about the tools to help prevent committing sensitive data.
   ms.date: 09/13/2021
   author: sterling463
   ms.author: csterling
