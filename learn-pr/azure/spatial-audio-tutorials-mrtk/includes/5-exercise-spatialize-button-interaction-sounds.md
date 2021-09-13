@@ -4,14 +4,14 @@ In this module, you'll learn how to spatialize the button interaction sounds and
 
 1. To add the Button prefab, in the **Project** window, select **Packages** and type "PressableButtonHoloLens2" in the search bar.
 
-    ![Button prefab in Assets](../media/spatial-audio-02-section-1-step-1-1.png)
+    ![Button prefab in Assets](../media/spatial-audio-2-section-1-step-1-1.png)
 2. The button prefab is the entry represented by a blue icon. Click and drag the **PressableButtonHoloLens2** prefab into the Hierarchy. With the **PressableButtonHoloLens2** object still selected, in the Inspector window, configure the **Transform** component as follows:
 
     * **Position**: X = 0, Y = -0.4, Z = 2
     * **Rotation**: X = 0, Y = 0, Z = 0
     * **Scale**: X = 1, Y = 1, Z = 1
 
-    ![Button transform](../media/spatial-audio-02-section-1-step-1-2.png)
+    ![Button transform](../media/spatial-audio-2-section-1-step-1-2.png)
     To focus in on the objects in the scene, you can double-click on the **PressableButtonHoloLens2** object, and then zoom slightly in again:
 
 ## Spatialize button feedback
@@ -22,10 +22,10 @@ In the **Audio Mixer** window you'll define destinations called **Mixer Groups**
 
 1. To open the **Audio Mixer** window, In the Unity menu, select **Window** > **Audio** > **Audio Mixer**:
 
-    ![Open Audio Mixer Window](../media/spatial-audio-02-section-2-step-1-1.png)
+    ![Open Audio Mixer Window](../media/spatial-audio-2-section-2-step-1-1.png)
 2. Create a **Mixer** by clicking the '+' next to **Mixers** and enter a suitable name to the Mixer for example, _Spatial Audio Mixer_. The new mixer will include a default **Group** called **Master**.
 
-    ![Mixer panel with first mixer](../media/spatial-audio-02-section-2-step-1-2.png)
+    ![Mixer panel with first mixer](../media/spatial-audio-2-section-2-step-1-2.png)
 3. In the Hierarchy window, select the **PressableButtonHoloLens2** then in the Inspector window
   find the **Audio Source** component and Configure the Audio Source component as follows:
 
@@ -33,7 +33,7 @@ In the **Audio Mixer** window you'll define destinations called **Mixer Groups**
     * Check the **Spatialize** checkbox.
     * Move the **Spatial Blend** slider to 3D (1).
 
-   ![Button audio source](../media/spatial-audio-02-section-2-step-1-3.png)
+   ![Button audio source](../media/spatial-audio-2-section-2-step-1-3.png)
 
   > [!NOTE]
   > If you move **Spatial Blend** to 1 (3D) without checking the **Spatialize** checkbox, Unity will use its panning spatializer, instead of the **Microsoft Spatializer** with HRTFs.
@@ -51,7 +51,7 @@ To disable this attenuation, you need to adjust the **Volume** curve In the **Au
   * Drag the endpoint on the **Volume** curve (the red curve) from '0' on the y axis up to '1'
   * To adjust the shape of the **Volume** curve to be flat, drag the white curve shape control to be parallel to the X axis
 
-  ![Button 3D sound settings](../media/spatial-audio-02-section-3-step-1-1.png)
+  ![Button 3D sound settings](../media/spatial-audio-2-section-3-step-1-1.png)
 
 ## Test the spatialize audio
 

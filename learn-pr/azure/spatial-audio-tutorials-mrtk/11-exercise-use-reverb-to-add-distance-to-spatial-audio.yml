@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.spatial-audio-tutorials-mrtk.11-exercise-using-reverb-to-add-distance-to-spatial-audio
+uid: learn.azure.spatial-audio-tutorials-mrtk.11-exercise-use-reverb-to-add-distance-to-spatial-audio
 title: Exercise - Use reverb to add distance to spatial audio
 metadata:
   title: Exercise - Use reverb to add distance to spatial audio
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 3
 content: |
-  [!include[](includes/11-exercise-using-reverb-to-add-distance-to-spatial-audio.md)]
+  [!include[](includes/11-exercise-use-reverb-to-add-distance-to-spatial-audio.md)]

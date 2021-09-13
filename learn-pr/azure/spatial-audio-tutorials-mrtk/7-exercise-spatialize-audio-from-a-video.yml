@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.spatial-audio-tutorials-mrtk.7-exercise-spatializing-audio-from-a-video
+uid: learn.azure.spatial-audio-tutorials-mrtk.7-exercise-spatialize-audio-from-a-video
 title: Exercise - Spatialize audio from a video
 metadata:
   title: Exercise - Spatialize audio from a video
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 3
 content: |
-  [!include[](includes/7-exercise-spatializing-audio-from-a-video.md)]
+  [!include[](includes/7-exercise-spatialize-audio-from-a-video.md)]

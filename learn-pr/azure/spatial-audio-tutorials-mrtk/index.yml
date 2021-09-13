@@ -3,7 +3,7 @@ uid: learn.azure.spatial-audio-tutorials-mrtk
 metadata:
   title: Spatial Audio Tutorials
   description: This course explores the use of spatial audio by integrating to a HoloLens 2 application. You can also deploy your project to a HoloLens 2.
-  ms.date: 06/23/2021
+  ms.date: 09/13/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
@@ -12,7 +12,8 @@ title: Spatial Audio Tutorials
 summary: Learn about spatial audio to enhance your learning experience. Explores the use of spatial audio by integrating it to a Hololens 2 application.
 abstract: |
   By the end of this module you will be able to:
-  - To Import and enable the Microsoft Spatializer plugin and also to enable the spatial audio on your workstation. 
+  - import Mixed Reality Toolkit (MRTK)
+  - import and enable the Microsoft Spatializer plugin and also to enable the spatial audio on your workstation. 
   - spatialize the button interaction sounds and to use an audio clip to test spatialized button interaction.
   - spatialize audio from an video source Try out your app on a HoloLens 2 or in the Unity editor. You'll see and hear the video, and the audio from the video is spatialized.
   - enable and disable spatialization at run time, test out the app on a HoloLens 2 or in the Unity editor. In the app, you can now click the button to activate and deactivate spatialization of the audio.
@@ -38,16 +39,16 @@ prerequisites: |
 
 units: 
 - learn.azure.spatial-audio-tutorials-mrtk.1-introduction
-- learn.azure.spatial-audio-tutorials-mrtk.2-adding-spatial-audio-to-your-unity-project
-- learn.azure.spatial-audio-tutorials-mrtk.3-exercise-adding-spatial-audio-to-your-unity-project
-- learn.azure.spatial-audio-tutorials-mrtk.4-spatializing-button-interaction-sounds
-- learn.azure.spatial-audio-tutorials-mrtk.5-exercise-spatializing-button-interaction-sounds
-- learn.azure.spatial-audio-tutorials-mrtk.6-spatializing-audio-from-a-video
-- learn.azure.spatial-audio-tutorials-mrtk.7-exercise-spatializing-audio-from-a-video
-- learn.azure.spatial-audio-tutorials-mrtk.8-enabling-disabling-spatialization-at-run-time
-- learn.azure.spatial-audio-tutorials-mrtk.9-exercise-enabling-disabling-spatialization-at-run-time
-- learn.azure.spatial-audio-tutorials-mrtk.10-using-reverb-to-add-distance-to-spatial-audio
-- learn.azure.spatial-audio-tutorials-mrtk.11-exercise-using-reverb-to-add-distance-to-spatial-audio
+- learn.azure.spatial-audio-tutorials-mrtk.2-add-spatial-audio-to-your-unity-project
+- learn.azure.spatial-audio-tutorials-mrtk.3-exercise-add-spatial-audio-to-your-unity-project
+- learn.azure.spatial-audio-tutorials-mrtk.4-spatialize-button-interaction-sounds
+- learn.azure.spatial-audio-tutorials-mrtk.5-exercise-spatialize-button-interaction-sounds
+- learn.azure.spatial-audio-tutorials-mrtk.6-spatialize-audio-from-a-video
+- learn.azure.spatial-audio-tutorials-mrtk.7-exercise-spatialize-audio-from-a-video
+- learn.azure.spatial-audio-tutorials-mrtk.8-enable-disable-spatialization-at-run-time
+- learn.azure.spatial-audio-tutorials-mrtk.9-exercise-enable-disable-spatialization-at-run-time
+- learn.azure.spatial-audio-tutorials-mrtk.10-use-reverb-to-add-distance-to-spatial-audio
+- learn.azure.spatial-audio-tutorials-mrtk.11-exercise-use-reverb-to-add-distance-to-spatial-audio
 - learn.azure.spatial-audio-tutorials-mrtk.12-knowledge-check
 - learn.azure.spatial-audio-tutorials-mrtk.13-summary
 

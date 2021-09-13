@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.spatial-audio-tutorials-mrtk.3-exercise-adding-spatial-audio-to-your-unity-project
+uid: learn.azure.spatial-audio-tutorials-mrtk.3-exercise-add-spatial-audio-to-your-unity-project
 title: Exercise - Add spatial audio to your unity project
 metadata:
   title: Exercise - Add spatial audio to your unity project
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-exercise-adding-spatial-audio-to-your-unity-project.md)]
+  [!include[](includes/3-exercise-add-spatial-audio-to-your-unity-project.md)]

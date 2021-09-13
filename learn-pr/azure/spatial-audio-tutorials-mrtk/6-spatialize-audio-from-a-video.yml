@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.spatial-audio-tutorials-mrtk.6-spatializing-audio-from-a-video
+uid: learn.azure.spatial-audio-tutorials-mrtk.6-spatialize-audio-from-a-video
 title: Spatialize audio from a video
 metadata:
   title: Spatialize audio from a video
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-spatializing-audio-from-a-video.md)]
+  [!include[](includes/6-spatialize-audio-from-a-video.md)]

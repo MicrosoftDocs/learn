@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.spatial-audio-tutorials-mrtk.4-spatializing-button-interaction-sounds
+uid: learn.azure.spatial-audio-tutorials-mrtk.4-spatialize-button-interaction-sounds
 title: Spatialize button interaction sounds
 metadata:
   title: Spatialize button interaction sounds
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-spatializing-button-interaction-sounds.md)]
+  [!include[](includes/4-spatialize-button-interaction-sounds.md)]
