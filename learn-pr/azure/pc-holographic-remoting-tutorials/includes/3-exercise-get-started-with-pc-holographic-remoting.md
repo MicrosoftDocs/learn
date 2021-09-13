@@ -36,15 +36,15 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
     * ModelParent
     * Platform
 
-    ![Adding prefabs 1](../media/Tutorial1-Section3-Step1-1.png)
+    ![Adding prefabs 1](../media/tutorial-1-section-3-step-1-1.png)
 
 2. Drag these models from the prefabs folder into the **Hierarchy** window.
 
-    ![Adding prefabs 2](../media/Tutorial1-Section3-Step1-2.png)
+    ![Adding prefabs 2](../media/tutorial-1-section-3-step-1-2.png)
 
     To focus on the objects in the scene, you can double-click the ModelParent object and then zoom in:
 
-    ![Focus objects on scene](../media/Tutorial1-Section3-Step1-3.png)
+    ![Focus objects on scene](../media/tutorial-1-section-3-step-1-3.png)
 
     >[!Tip]
     >If you feel that the large icons in your scene are distracting (for example, the large framed 'T' icons), you can hide them by [toggling the Gizmos](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the "off" position.
@@ -57,15 +57,15 @@ In this section, you'll add scripts to the scene and create button events that d
 
 1. In the Hierarchy window, expand the **ButtonParent** object and select the next button. In the Inspector window, locate the **Interactable (Script)** component and click on plus sign icon ("+") under **OnClick ()** event.
 
-    ![Interactable script 1](../media/Tutorial1-Section4-Step1-1.png)
+    ![Interactable script 1](../media/tutorial-1-section-4-step-1-1.png)
 
 2. With the **NextButton** object still selected in the Hierarchy window, drag the **ButtonParent** object from the Hierarchy window into the empty **None (Object)** field of the event you just added to make the ButtonParent object listen for the button click event from this button:
 
-    ![Interactable script 2](../media/Tutorial1-Section4-Step1-2.png)
+    ![Interactable script 2](../media/tutorial-1-section-4-step-1-2.png)
 
 3. Click the **No Function**  dropdown of the same event and then select ViewButtonControl > NextModel () to set the NextModel () function as the action that is triggered when the button is pressed:
 
-    ![Interactable script](../media/Tutorial1-Section4-Step1-3.png)
+    ![Interactable script](../media/tutorial-1-section-4-step-1-3.png)
 
 ### 2. Configure the remaining buttons
 
@@ -84,18 +84,18 @@ We've provided six different 3D models for demonstration. Expand the **ModelPare
 
     In the **Size** field, enter the number of 3D models you would like to have in your scene--in this case, six. This creates fields for adding new 3D models.
 
-    ![Enter the number of 3D models](../media/Tutorial1-Section4-Step3-1.png)
+    ![Enter the number of 3D models](../media/tutorial-1-section-4-step-3-1.png)
 
 2. Drag each child object of ModelParent Object into these fields.
 
-    ![Drag and drop each child object](../media/Tutorial1-Section4-Step3-2.png)
+    ![Drag and drop each child object](../media/tutorial-1-section-4-step-3-2.png)
 
 3. Drag the **ClippingObjects** object from the Hierarchy window to the **Toggle Button (Script)** component's **Clipping Object** field.
 
     > [!Note]
     > Stay in button parent object only.
 
-    ![Drag and drop clipping object](../media/Tutorial1-Section4-Step3-3.png)
+    ![Drag and drop clipping object](../media/tutorial-1-section-4-step-3-3.png)
 
 4. In the Hierarchy window, select the ClippingObjects prefab and enable it in the Inspector window to turn on the **Clipping objects**.
 
@@ -107,7 +107,7 @@ In the Hierarchy window, expand the **ClippingObjects** object to expose the thr
 
 1. To configure the **ClippingSphere** object, select it, and then in the Inspector window, locate the **Clipping Sphere (Script)** component. Next, enter the number of renderers in the **size** field that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create fields for adding renderers. Next, drag the MarsCuriosityRover object's child model objects into these fields.
 
-    ![Configure Clipping Objects to enable clipping feature](../media/Tutorial1-Section5-Step1-1.png)
+    ![Configure Clipping Objects to enable clipping feature](../media/tutorial-1-section-5-step-1-1.png)
 
 2. In the Hierarchy window, select the ClippingObjects prefab and enable it in the Inspector window to turn on the Clipping objects.
 
@@ -121,7 +121,7 @@ In the Hierarchy window, select the ModelParent object. Next, expand the **MarsC
 
 * Observe five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window.
 
-    ![Target Objects](../media/Tutorial1-Section6-Step1-1.png)
+    ![Target Objects](../media/tutorial-1-section-6-step-1-1.png)
 
 ### 2. Implement While Looking At Target() & On Look Away() events
 
@@ -130,10 +130,10 @@ In the Hierarchy window, select the **POI-Camera** object. Then, in the Inspecto
 * In the **None (Object)** field, assign the **POI-Camera ToolTip** object.
 * In the**No Function** dropdown of the **While Looking At Target ()** event, select **GameObject > SetActive (bool)**. Select the check box under it to highlight the tooltip as the triggered action when looking at the target object.
 
-    ![Confiure While Looking At Target ()](../media/Tutorial1-Section6-Step2-1.png)
+    ![Confiure While Looking At Target ()](../media/tutorial-1-section-6-step-2-1.png)
 
 * Click the **No Function** dropdown of the **On Look Away ()** event listener. Next, select **GameObject > SetActive (bool)** and leave the check box empty so that hiding the tooltip is the action triggered when you look away from the target object.
 
-    ![Confiure On Look Away ()](../media/Tutorial1-Section6-Step2-2.png)
+    ![Confiure On Look Away ()](../media/tutorial-1-section-6-step-2-2.png)
 
 Follow the same process and assign respective tooltip objects to their same MarsCuriosityRover parts' While Looking At Target() & On Look Away() events.

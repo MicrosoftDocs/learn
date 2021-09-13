@@ -7,7 +7,7 @@ In the Project Settings window, expand the **Publishing Settings**, then scroll 
 * Internet Clint server
 * Private Network Client Server
 
-![Player settings](../media/tutorial2-section0-step1-1.png)
+![Player settings](../media/tutorial-2-section-0-step-1-1.png)
 
 [!INCLUDE[](includes/switch-platform.md)]
 
