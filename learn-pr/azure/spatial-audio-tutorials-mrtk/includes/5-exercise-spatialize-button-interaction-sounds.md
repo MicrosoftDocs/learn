@@ -1,3 +1,4 @@
+
 In this module, you'll learn how to spatialize the button interaction sounds and also learn how to use an audio clip to test spatialized button interaction.
 
 ## Add a button
@@ -29,9 +30,9 @@ In the **Audio Mixer** window you'll define destinations called **Mixer Groups**
 3. In the Hierarchy window, select the **PressableButtonHoloLens2** then in the Inspector window
   find the **Audio Source** component and Configure the Audio Source component as follows:
 
-    * For the **Output** property, click the selector and choose the **Mixer** that you created.
-    * Check the **Spatialize** checkbox.
-    * Move the **Spatial Blend** slider to 3D (1).
+    1) For the **Output** property, click the selector and choose the **Mixer** that you created.
+    2) Check the **Spatialize** checkbox.
+    3) Move the **Spatial Blend** slider to 3D (1).
 
    ![Button audio source](../media/spatial-audio-2-section-2-step-1-3.png)
 
@@ -47,9 +48,9 @@ To disable this attenuation, you need to adjust the **Volume** curve In the **Au
 * In the Hierarchy window, select the **PressableButtonHoloLens2** then in the Inspector window
   navigate to  **Audio Source** > **3D Sound Settings** and Configure as follows:
 
-  * Set the **Volume Rolloff** property to Linear Rolloff
-  * Drag the endpoint on the **Volume** curve (the red curve) from '0' on the y axis up to '1'
-  * To adjust the shape of the **Volume** curve to be flat, drag the white curve shape control to be parallel to the X axis
+  1) Set the **Volume Rolloff** property to Linear Rolloff
+  2) Drag the endpoint on the **Volume** curve (the red curve) from '0' on the y axis up to '1'
+  3) To adjust the shape of the **Volume** curve to be flat, drag the white curve shape control to be parallel to the X axis
 
   ![Button 3D sound settings](../media/spatial-audio-2-section-3-step-1-1.png)
 
@@ -59,7 +60,7 @@ To test the spatialize audio in the unity editor you've to add an audio clip in 
 
 In the play mode move the **PressableButtonHoloLens2** object from left to right and compare with and without spatial audio enabled on your workstation. You can also change the Audio Source settings for testing by:
 
-* Moving the **Spatial Blend** property between 0 - 1 (2D non-spatialized and 3D spatialized sound)
-* Checking and unchecking the **Spatialize** property
+1) Moving the **Spatial Blend** property between 0 - 1 (2D non-spatialized and 3D spatialized sound)
+2) Checking and unchecking the **Spatialize** property
 
 Try out the app on HoloLens 2. In the app, you can click the button and hear the spatialized button interaction sounds.

@@ -82,8 +82,8 @@ In this module, you'll learn how to Enable and disable spatialization at run tim
 
 5. In the Hierarchy window, select the **PressableButtonHoloLens2**. In the Inspector window, locate the **Interactable (Script)** component and click on + icon under OnClick () event.
 
-    * With the **PressableButtonHoloLens2** object still selected in the Hierarchy window, click-and-drag the **Quad** object from the Hierarchy window into the empty **None (Object)** field of the event you just added to make the ButtonParent object listen for button click event from this button:
+    1) With the **PressableButtonHoloLens2** object still selected in the Hierarchy window, click-and-drag the **Quad** object from the Hierarchy window into the empty **None (Object)** field of the event you just added to make the ButtonParent object listen for button click event from this button:
 
-    * Click the **No Function** dropdown of the same event. Then select **SpatializeOnOff** > **SwapSpatialization ()** to turn on and off the Spatial audio
+    2) Click the **No Function** dropdown of the same event. Then select **SpatializeOnOff** > **SwapSpatialization ()** to turn on and off the Spatial audio
 
     ![Button action settings](../media/spatial-audio-4-section-2-step-1-3.png)
