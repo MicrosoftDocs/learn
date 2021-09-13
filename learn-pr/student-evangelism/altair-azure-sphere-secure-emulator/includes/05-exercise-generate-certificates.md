@@ -1,4 +1,4 @@
-In this exercise, you'll generate the MQTT client certificates for the test.mosquitto.org MQTT Broker.
+In this exercise, you'll create the client certificates for the test.mosquitto.org MQTT Broker.
 
 ## Install openssl
 
@@ -8,7 +8,7 @@ For Windows users either download `openssl` from [openssl.org](https://wiki.open
 
 ## Delete the existing placeholder certificates
 
-The **AltairHL_emulator\certs** folder contains three placeholder certificates. The placeholder certificates are required for the **build_all** validation process. You must delete these placeholder certificates as you will be creating new certificates for the Altair emulator.
+The **AltairHL_emulator\certs** folder contains three placeholder certificates. The placeholder certificates are required for the **build_all** validation process. Delete the placeholder certificates as you will be creating new certificates for the Altair emulator.
 
 1. From your computer file manager, navigate to the **AltairHL_emulator\certs** folder and delete the three placeholder certificates.
 

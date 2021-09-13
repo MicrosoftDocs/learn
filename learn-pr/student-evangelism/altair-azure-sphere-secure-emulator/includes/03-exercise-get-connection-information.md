@@ -1,6 +1,8 @@
-In this exercise, you'll get the connection information for Azure IoT Central. 
+In this exercise, you'll declare the IoT Central network endpoints. 
 
 ## List your IoT Central network endpoints
+
+Follow these steps to list the network endpoints of your IoT Central web application.
 
 1. Open the command prompt.
 
@@ -55,4 +57,3 @@ In this exercise, you'll get the connection information for Azure IoT Central.
 
 2. Copy the Azure Sphere tenant ID to Notepad, as you'll need it soon.
 
-In the next unit, you'll learn how to create the certificates required to secure the communications to the test.mosquitto.org MQTT broker.
