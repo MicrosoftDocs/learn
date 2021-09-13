@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github-administration-for-enterprise-support-and-adoption.github-enterprise-tools-and-features
+uid: learn.github-administration-for-enterprise-support-adoption.github-enterprise-tools-features
 title: GitHub Enterprise features
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-github-enterprise-tools-and-features.md)]
+  [!include[](includes/2-github-enterprise-tools-features.md)]

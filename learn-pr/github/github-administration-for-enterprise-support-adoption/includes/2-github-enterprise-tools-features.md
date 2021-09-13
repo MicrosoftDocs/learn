@@ -6,11 +6,11 @@ Let's say your organization has formed a major partnership with a contractor who
 
 GitHub Enterprise is the GitHub product that provides the most assistance and features to developers. This means that, in addition to unique benefits, GitHub Enterprise also has all the features included at the GitHub Team pricing level.
 
-:::image type="content" source="../media/Enterprise-features-dichotomy.png" alt-text="Graphic with title 'GitHub Enterprise features categories' that separates two lists: 'Upkeep' and 'Automation'":::
+:::image type="content" source="../media/enterprise-features-dichotomy.png" alt-text="Graphic with title 'GitHub Enterprise features categories' that separates two lists: 'Upkeep' and 'Automation'":::
 
 ## Developer workflow basics
 
-:::image type="content" source="../media/pr-retargeting-diagram1.png" alt-text="merge-pull-request-button":::
+:::image type="content" source="../media/pr-retargeting-diagram.png" alt-text="merge-pull-request-button":::
 
 Before we go further, you should understand the standard developer workflows that form the basis of GitHub collaboration, this will help you make sense of how GitHub Enterprise features facilitate those workflows. (A "workflow" here is distinct from "script workflows" that we'll discuss in unit 4.)
 
@@ -92,7 +92,7 @@ Tracking users' GitHub Actions use is even easier. Your Enterprise account allow
 
 1. Select an Enterprise organization in **Your enterprises** and access **Settings**.
 2. Select "GitHub Actions" in **Billing** to see how many minutes or how much storage your organizations have used. If you're near to or exceeding the limit, discuss with organizational stakeholders.
-3. Keep your collaborators' operating systems in mind; Windows runners use minutes at twice the rate of Linux runners, and Mac OS runners use minutes at 10 times the rate of Linux runners.
+3. Keep your collaborators' operating systems in mind; Windows runners use minutes at twice the rate of Linux runners, and macOS runners use minutes at 10 times the rate of Linux runners.
 
 ### Identify organization strengths with activity statistics
 

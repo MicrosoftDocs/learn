@@ -1,4 +1,4 @@
-:::image type="content" source="../media/Intro-01.png" alt-text="A graphic that superimposes 'GitHub Administration for Enterprise support and adoption' over a stylized world map, upon which stylized keys appear":::
+:::image type="content" source="../media/intro-01.png" alt-text="A graphic that superimposes 'GitHub Administration for Enterprise support and adoption' over a stylized world map, upon which stylized keys appear":::
 
 <!--GitHub Administration for Enterprise support and adoption-->
 

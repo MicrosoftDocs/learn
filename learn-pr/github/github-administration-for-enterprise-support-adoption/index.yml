@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.github-administration-for-enterprise-support-and-adoption
+uid: learn.github-administration-for-enterprise-support-adoption
 metadata:
   title: GitHub administration for enterprise support and adoption
   description: Learn how GitHub Enterprise can make your administrative duties easier.
@@ -8,7 +8,7 @@ metadata:
   ms.author: csterling
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: GitHub administration for Enterprise support and adoption
+title: GitHub administration for enterprise support and adoption
 summary: In this module, you will implement GitHub features that improve the operations of a large organization.
 abstract: |
   By the end of this module, you'll be able to:
@@ -30,12 +30,12 @@ roles:
 products:
 - github
 units:
-- learn.github-administration-for-enterprise-support-and-adoption.introduction
-- learn.github-administration-for-enterprise-support-and-adoption.github-enterprise-tools-and-features
-- learn.github-administration-for-enterprise-support-and-adoption.support-for-github-enterprise
-- learn.github-administration-for-enterprise-support-and-adoption.scale-your-github-enterprise-deployment
-- learn.github-administration-for-enterprise-support-and-adoption.summary
-- learn.github-administration-for-enterprise-support-and-adoption.knowledge-check
+- learn.github-administration-for-enterprise-support-adoption.introduction
+- learn.github-administration-for-enterprise-support-adoption.github-enterprise-tools-features
+- learn.github-administration-for-enterprise-support-adoption.support-for-github-enterprise
+- learn.github-administration-for-enterprise-support-adoption.scale-your-github-enterprise-deployment
+- learn.github-administration-for-enterprise-support-adoption.summary
+- learn.github-administration-for-enterprise-support-adoption.knowledge-check
 
 badge:
-  uid: learn.github-administration-for-enterprise-support-and-adoption.badge
+  uid: learn.github-administration-for-enterprise-support-adoption.badge
