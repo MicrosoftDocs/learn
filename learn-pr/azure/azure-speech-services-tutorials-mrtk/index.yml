@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.azure.azure-speech-services-tutorials-mrtk
 metadata:
-  title: Azure Speech Services Tutorials
+  title: Azure Speech Services tutorials
   description: This course explores the use of Azure speech services by integrating to a hololens2 application. You can also deploy your project to a HoloLens.
   ms.date: 09/13/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-title: Azure Speech Services Tutorials
+title: Azure Speech Services tutorials
 summary: Import and learn about Azure Speech Services to enhance your learning experience.
 abstract: |
   By the end of this module you will be able to:
-  - You would have implemented speech recognition powered by Azure.
+  - You would have implemented speech recognition powered by Azure with Mixed Reality ToolKit(MRTK).
   - Implemented speech commands powered by Azure.
   - Our project can now successfully translate the words you speak into several different languages.
   - Our project now have AI-powered speech commands, allowing our application to recognize the users' intent even if they do not utter precise commands.

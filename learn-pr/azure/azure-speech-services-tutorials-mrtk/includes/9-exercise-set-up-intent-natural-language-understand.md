@@ -176,7 +176,7 @@ From the Entities page, navigate back to the **PressButton** intent page.
 
     ![Click on the word launch](../media/tutorial-4-section-3-step-5-3.png)
 
-4. The **launch** word is now defined as a **Target** entity value. Now you can notice the Target entity value under the word launch :
+4. The **launch** word is now defined as a **Target** entity value. Now you can notice the Target entity value under the word launch:
 
     ![Notice the Target entity value under the word launch](../media/tutorial-4-section-3-step-5-4.png)
 
