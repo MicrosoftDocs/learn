@@ -1,15 +1,15 @@
 ### YamlMime:LearningPath
 uid: learn.django-create-data-driven-websites
 metadata:
-  title: Create data-driven websites by using Django
-  description: Use Django to create data-driven websites.
+  title: Create data-driven websites by using the Python framework Django
+  description: Use the Python framework Django to create data-driven websites.
   brand: azure
   ms.date: 03/11/2021
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create data-driven websites by using Django
+title: Create data-driven websites by using the Python framework Django
 summary: |
   Use Django to create data-driven websites.
   

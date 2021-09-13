@@ -35,7 +35,7 @@ Traffic Manager uses DNS to direct clients to specific service endpoints based o
 
 ### Traffic Manager example deployment
 
-Contoso Corp have developed a new partner portal. The URL for this portal is https://partners.contoso.com/login.aspx. 
+Contoso Corp have developed a new partner portal. The URL for this portal is 'https://partners.contoso.com/login.aspx'. 
 
 The application is hosted in three regions of Azure. To improve availability and maximize global performance, they use Traffic Manager to distribute client traffic to the closest available endpoint.
 
@@ -52,7 +52,7 @@ To achieve this configuration, they complete the following steps:
 
 ### Traffic Manager example client usage
 
-Following on from the deployment example above; when a client requests the page https://partners.contoso.com/login.aspx, the client performs the following steps to resolve the DNS name and establish a connection:
+Following on from the deployment example above; when a client requests the page 'https://partners.contoso.com/login.aspx', the client performs the following steps to resolve the DNS name and establish a connection:
 
 > [!div class="mx-imgBorder"]
 > ![Diagram illustrating client usage flow in Traffic Manager](../media/traffic-manager-client-usage-flow.png)

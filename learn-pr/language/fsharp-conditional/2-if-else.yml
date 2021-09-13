@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-conditional.if-else
+title: Use conditional logic to create multiple execution paths
+metadata:
+  title: Use conditional logic to create multiple execution paths
+  description: Learn why you might use conditional logic and how to apply it by using `if...elif...else`.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/23/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-if-else.md)]

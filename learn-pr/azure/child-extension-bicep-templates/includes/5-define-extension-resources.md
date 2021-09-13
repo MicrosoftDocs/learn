@@ -12,6 +12,8 @@ Some examples of common extension resources are:
 
 For example, consider a lock, which can be used to prevent the deletion or modification of an Azure resource. It doesn't make sense to deploy a lock by itself. It always has to be deployed onto another resource.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## How are extension resources defined?
 
 In Bicep, you define an extension resource in mostly the same way as a normal resource. However, you add the `scope` property to tell Bicep that the resource should be attached to another resource that's defined elsewhere in the Bicep file. You use the resource's symbolic name to refer to it. For example, here's the definition of an Azure Cosmos DB account that we've previously created:

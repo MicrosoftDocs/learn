@@ -3,12 +3,11 @@ uid: learn.azure.fundamental-azure-concepts
 metadata:
   title: Discuss Azure fundamental concepts
   description: "Learn about the different types and categories of cloud computing. Prepare for AZ-900."
-  ms.date: 05/31/2021
+  ms.date: 09/13/2021
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  adobe-target: true
 title: Discuss Azure fundamental concepts
 summary: Are you interested in the cloud, but aren't sure what it can do for you? In this module, you'll learn about the advantages of using cloud computing services, and you'll learn to differentiate between the categories and types of cloud computing.
 abstract: |

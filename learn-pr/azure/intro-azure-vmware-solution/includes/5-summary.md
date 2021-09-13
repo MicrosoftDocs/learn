@@ -1,24 +1,22 @@
-In this module you learned about the Azure VMware Solution, an Azure service to redeploy and extend your VMware environment in the cloud.
+In this module, you learned about Azure VMware Solution, an Azure service to redeploy and extend VMware environments in the cloud.
 
-Specifically you learned:
+Specifically, you learned:
 
-- The business value of Azure VMware Solution
-    - VMware tools and technology you know
-    - Azure Native Integration 
+- The business value of Azure VMware Solution:
+    - VMware tools and technology that you know
+    - Azure native integration 
     - High-performance cloud infrastructure
-
-- The basic components of the Azure VMware Solution and how it works in Azure.
+- The basic components of Azure VMware Solution and how it works in Azure:
     - What Microsoft manages with the solution
-    - Private Cloud concepts
-    - Private Cloud Storage
-    - Azure VMware Solution interconnectivity into Azure
-    - Security and compliance with Azure VMware Solutions
-- Use cases that drive its adoption
-    - Migrate existing assets “as is” 
+    - Private-cloud concepts and storage
+    - Interconnectivity in Azure
+    - Security and compliance
+- Use cases that drive adoption of Azure VMware Solution:
+    - Migrate existing assets "as is" 
     - Reduce your datacenter footprint 
     - Prepare for disaster recovery and business continuity
     - Modernize your workloads
-- Azure pricing benefits for Azure VMware Solution
+- Pricing for Azure VMware Solution
 
 
 Continue on this path to learn about how to deploy and migrate VMs to Azure VMware Solution.

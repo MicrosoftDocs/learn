@@ -26,13 +26,13 @@ The following table lists the provider-specific login route you can use in your 
 | GitHub                 | `/.auth/login/github`   |
 | Twitter                | `/.auth/login/twitter`  |
 
-For example, to log in with GitHub you can include a login link in your web app with the following snippet:
+For example, to log in with GitHub, you can include a login link in your web app with the following snippet:
 
 ```html
 <a href="/.auth/login/github">Login</a>
 ```
 
-If you want a user to return to a specific page after login, you can also provide a URL in `post_login_redirect_uri` query string parameter, for example:
+If you want a user to return to a specific page after login, you can also provide a URL in `post_login_redirect_uri` query string parameter. For example:
 
 ```html
 <a href="/.auth/login/github?post_login_redirect_uri=/products">Login</a>
@@ -40,7 +40,7 @@ If you want a user to return to a specific page after login, you can also provid
 
 ### Logout
 
-The `/.auth/logout` route logs users out from the web app. You can add a link to your site navigation to allow the user to log out as shown in the following example.
+The `/.auth/logout` route logs out users from the web app. You can add a link to your site navigation to allow the user to log out as shown in the following example.
 
 ```html
 <a href="/.auth/logout">Log out</a>
@@ -58,7 +58,7 @@ You can access authentication-related user information either via a direct-acces
 
 If you send a `GET` request to the `/.auth/me` route, you'll receive a JSON object with the data for the currently logged in user. Requests from unauthenticated users returns `null`.
 
-The following example is an example response object:
+The following example is an example response object.
 
 ```json
 {
@@ -91,4 +91,4 @@ module.exports = async function (context, req) {
 
 ## Next steps
 
-Next we'll implement a complete authentication workflow in our app.
+Next, we'll implement a complete authentication workflow in our app.

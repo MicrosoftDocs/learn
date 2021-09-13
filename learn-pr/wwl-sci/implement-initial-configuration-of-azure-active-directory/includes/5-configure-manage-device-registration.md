@@ -42,7 +42,7 @@ Another user wants to access their organizational email on their personal Androi
 
 ## Azure AD joined devices
 
-Azure AD join is intended for organizations that want to be cloud-first or cloud-only. Any organization can deploy Azure AD joined devices no matter the size or industry. Azure AD join works even in a environment, enabling access to both cloud and on-premises apps and resources.
+Azure AD join is intended for organizations that want to be cloud-first or cloud-only. Any organization can deploy Azure AD joined devices no matter the size or industry. Azure AD join enables access to both cloud and on-premises apps and resources.
 
 | **Azure AD joined**| **Description**|
 | :--- | :--- |

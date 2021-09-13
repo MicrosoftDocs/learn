@@ -15,15 +15,15 @@ quiz:
   questions:
   - content: 'What does it mean to have an imbalanced dataset?'
     choices:
-    - content: "The number of samples is much smaller or greater than is required "
+    - content: "The number of samples is much smaller or greater than is required"
       isCorrect: false
       explanation: "Incorrect."
     - content: "The feature columns contain many missing values"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "The feature columns contain many missing values"
+    - content: "There are many more training examples that correspond to some outputs (categories) than others"
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct. This can lead to the model learning to improve loss metrics by 'cheating.'"
   - content: 'What information can we extract from a single confusion matrix?'
     choices:
     - content: "Log loss, and/or mean squared error"

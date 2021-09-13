@@ -386,7 +386,7 @@ After the deployment is complete, you'll be given a URL that points to the file 
 1. Retrieve that file by using the URL output from the template deployment to confirm that the deployment script worked properly.
 
     ```azurepowershell
-    $fileUri = (Get-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -Name $reploymentName).Outputs.fileUri.Value
+    $fileUri = (Get-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -Name $deploymentName).Outputs.fileUri.Value
     Invoke-RestMethod $fileUri
     ```
 

@@ -4,7 +4,7 @@ After you've used data transformations to prepare the data, you can use it to tr
 
 To train a clustering model, you need to apply a clustering algorithm to the data, using only the features that you have selected for clustering. You'll train the model with a subset of the data, and use the rest to test the trained model.
 
-In this exercise, you're going to extend the **Train Penguin Clustering** pipeline as shown here:
+In this exercise, you're going to work through steps to extend the **Train Penguin Clustering** pipeline as shown here:
 
 > [!div class="centered"]
 > ![split data, then use the K-Means Clustering algorithm to train a model and the Assign Data to Modules module to test it](../media/k-means.png)

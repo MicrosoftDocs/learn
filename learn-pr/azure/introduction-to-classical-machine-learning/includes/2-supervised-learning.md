@@ -28,7 +28,7 @@ For example, consider our desire to predict what the temperature will be on Janu
 * Feature: Date
 * Label: Daily temperature (for example, from historical records)
 
-In the scenario, we would provide the date feature to the model. The model would predict the temperature and we would compare this to the datasets ‘correct’ temperature. The objective function can then calculate how well the model worked, and adjustments can then be made to the model.
+In the scenario, we would provide the date feature to the model. The model would predict the temperature and we would compare this to the dataset's ‘correct’ temperature. The objective function can then calculate how well the model worked, and adjustments can then be made to the model.
 
 ## Labels are only for learning
 

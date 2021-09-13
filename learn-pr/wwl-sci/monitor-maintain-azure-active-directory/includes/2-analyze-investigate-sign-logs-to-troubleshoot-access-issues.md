@@ -73,7 +73,7 @@ You can customize the list view by clicking Columns in the toolbar.
 > [!div class="mx-imgBorder"]
 > ![Screenshot shows the Columns option in the Sign-ins page.](../media/columns-option.png)
 
-The Columns dialog gives you access to the selectable attributes. In a sign-in report, you can't have fields that have more than one value for a given sign-in request as column. For example, this is true for authentication details, conditional access data, and network location.
+The Columns dialog gives you access to the selectable attributes. In a sign-in report, you can't have fields that have more than one value for a given sign-in request as column. For example, this is true for authentication details, Conditional Access data, and network location.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot shows the Columns dialog box where you can select attributes.](../media/columns-2.png)
@@ -83,7 +83,7 @@ Select an item in the list view to get more detailed information.
 > [!div class="mx-imgBorder"]
 > ![Screenshot shows a detailed information view.](../media/basic-sign.png)
 
-Customers can now troubleshoot Conditional Access policies through all sign-in reports. By clicking on the Conditional Access tab for a sign-in record, customers can review the Conditional Access status and dive into the details of the policies that applied to the sign-in and the result for each policy. For more information, see the [FAQ about CA information in all sign-ins](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reports-faq).
+Customers can now troubleshoot Conditional Access policies through all sign-in reports. By clicking on the Conditional Access tab for a sign-in record, customers can review the Conditional Access status and dive into the details of the policies that applied to the sign-in and the result for each policy. For more information, see the [FAQ about CA information in all sign-ins](/azure/active-directory/reports-monitoring/reports-faq).
 
 ## Filter sign-in activities
 
@@ -150,11 +150,11 @@ First, narrow down the reported data to a level that works for you. Second, filt
 
 **Correlation ID** - The correlation ID of the activity.
 
-**Conditional access** - The status of the applied conditional access rules.
+**Conditional Access** - The status of the applied Conditional Access rules.
 
 - **Not applied**: No policy applied to the user and application during sign-in.
 
-- **Success**: One or more conditional access policies applied to the user and application (but not necessarily the other conditions) during sign-in.
+- **Success**: One or more Conditional Access policies applied to the user and application (but not necessarily the other conditions) during sign-in.
 
 - **Failure**: The sign-in satisfied the user and application condition of at least one Conditional Access policy, and grant controls are either not satisfied or set to block access.
 
@@ -166,7 +166,7 @@ Click the **Download** option to create a CSV or JSON file of the most recent 25
 > ![Download](../media/download-2.png)
 
 > [!IMPORTANT]
-> The number of records you can download is constrained by the [Azure AD report retention policies](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention).
+> The number of records you can download is constrained by the [Azure AD report retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
 
 ## Sign-ins data shortcuts
 

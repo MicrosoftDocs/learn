@@ -32,7 +32,7 @@ The image below shows the **Firewalls and virtual networks** page for an Azure S
 
 ### Configure connectivity from private endpoints.
 
-**Azure Private Endpoint** is a network interface that connects you privately and securely to a service powered by Azure Private Link. Private Endpoint uses a private IP address from your virtual network, effectively bringing the service into your virtual network. The service could be an Azure service such as Azure App Service, or your own Private Link Service. For detailed information, read [What is Azure Private Endpoint?](https://docs.microsoft.com/azure/private-link/private-endpoint-overview).
+**Azure Private Endpoint** is a network interface that connects you privately and securely to a service powered by Azure Private Link. Private Endpoint uses a private IP address from your virtual network, effectively bringing the service into your virtual network. The service could be an Azure service such as Azure App Service, or your own Private Link Service. For detailed information, read [What is Azure Private Endpoint?](/azure/private-link/private-endpoint-overview).
 
 The  **Private endpoint connections** page for a service allows you to specify which private endpoints, if any, are permitted access to your service. You can use the settings on this page, together with the **Firewalls and virtual networks** page, to completely lock down users and applications from accessing public endpoints to connect to your Azure SQL Database account. 
 
@@ -42,7 +42,7 @@ With Azure Active Directory (AD) authentication, you can centrally manage the id
 
 You can use these identities and configure access to your relational data services.
 
-For detailed information on using Azure AD with Azure SQL database, visit the page [What is Azure Active Directory authentication for SQL database](https://docs.microsoft.com/azure/sql-database/sql-database-aad-authentication) on the Microsoft website. You can also authenticate users connecting to [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql/concepts-aad-authentication) and [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/concepts-azure-ad-authentication) with AD.
+For detailed information on using Azure AD with Azure SQL database, visit the page [What is Azure Active Directory authentication for SQL database](/azure/sql-database/sql-database-aad-authentication) on the Microsoft website. You can also authenticate users connecting to [Azure Database for PostgreSQL](/azure/postgresql/concepts-aad-authentication) and [Azure Database for MySQL](/azure/mysql/concepts-azure-ad-authentication) with AD.
 
 ## Configure access control
 
@@ -69,11 +69,11 @@ You control access to resources using Azure RBAC to create role assignments. A r
 
     - **User Access Administrator** - Lets you manage user access to Azure resources.
 
-    You can also create your own custom roles. For detailed information, see [Create or update Azure custom roles using the Azure portal](https://docs.microsoft.com/azure/role-based-access-control/custom-roles-portal) on the Microsoft website.
+    You can also create your own custom roles. For detailed information, see [Create or update Azure custom roles using the Azure portal](/azure/role-based-access-control/custom-roles-portal) on the Microsoft website.
 
 - A **scope** lists the set of resources that the access applies to. When you assign a role, you can further limit the actions allowed by defining a scope. This is helpful if, for example, you want to make someone a Website Contributor, but only for one resource group.
 
-You add role assignments to a resource in the Azure portal using the **Access control (IAM)** page. The **Role assignments** tab enables you to associate a role with a security principal, defining the level of access the role has to the resource. For further information, read [Add or remove Azure role assignments using the Azure portal](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
+You add role assignments to a resource in the Azure portal using the **Access control (IAM)** page. The **Role assignments** tab enables you to associate a role with a security principal, defining the level of access the role has to the resource. For further information, read [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 
 > [!div class="mx-imgBorder"]
 > ![Image of the **Access control (IAM)** page for a storage account in the Azure portal](../media/5-access-control-page.png)

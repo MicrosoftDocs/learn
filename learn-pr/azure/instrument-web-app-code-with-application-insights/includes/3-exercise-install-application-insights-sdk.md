@@ -1,4 +1,4 @@
-Business stakeholders have given you permission to add the SDK to your video sharing app, with the expectation that the app will begin generating more interesting and useful telemetry.
+Business stakeholders have given you permission to add the Application Insights SDK to your video sharing app, with the expectation that the app will begin generating more interesting and useful telemetry.
 
 In this unit, we'll create a web app and add the Application Insights SDK to it. We'll also create an App Service instance for deploying our web app, and configure it to use Application Insights.
 
@@ -38,7 +38,7 @@ To initialize the Application Insights SDK, you need to call the `UseApplication
     code .
     ```
 
-1. Add a call to the `UseApplicationInsights` method in *Startup.cs* in the *ConfigureServices()* function. The call should look like this.
+ 1. In the *Startup.cs* file, add a call to `UseApplicationInsights`in the *ConfigureServices()* method. The call should look like this.
 
     ```csharp
     services.AddApplicationInsightsTelemetry();
@@ -57,7 +57,7 @@ We'll host our app in Azure App Service. Instead of manually creating an Applica
 
 1. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Web**, then search for and select **Web App**, and select **Create**. The **Create Web App** pane appears.
+1. In the left menu pane, under **Categories**, select **Web**, and under *Popular products*, select **Web App**. The **Create Web App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -67,36 +67,35 @@ We'll host our app in Azure App Service. Instead of manually creating an Applica
     | Subscription              | Concierge Subscription   |
     | Resource Group            | Select **<rgn>Sandbox resource group</rgn>** |
     | **Instance Details** |
-    | Name                      | Choose a unique name. Make a note of it. You'll need it later on. |
-    | Publish                   | **Code** |
-    | Runtime stack             | **.NET Core 2.1 (LTS)**  |
-    | Operating System          | **Windows** |
+    | Name                      | Enter a unique name. Make a note of it. You'll need it later on. |
+    | Publish                   | Code |
+    | Runtime stack             | .NET Core 3.1 (LTS)  |
+    | Operating System          | Windows |
     | Region                    | Choose location close to you. |
     | **App Service Plan** |
-    | Windows Plan              | Select **<rgn>Sandbox resource group</rgn>** |
-    | Sku and size              | Select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1**, and then select **Apply**.    |
+    | Windows Plan              | Accept the default: **ASP-<rgn>Sandbox resource group</rgn>** |
+    | Sku and size              | Select **Change size** to open the Spec Picker wizard. Select **Dev / Test**, then select **F1**, and then select **Apply**. |
 
-1. Select the **Monitoring** tab, and enter the following values for each setting.
+1. On the **Create Web App** pane, select **Next : Deployment**, and then select **Next : Monitoring**. On the **Monitoring** tab, under **Application Insights**, for **Enable Application Insights**, select **Yes**.
 
-    | Setting                   | Value    |
-    |---------------------------|------------------|
-    | **Application Insights**  |
-    | Enable Application Insights | **Yes**. An alert will appear indicating that your app will be connected to an automatically created Application Insights resource with the same name as the app. |
+    An alert will appear indicating that your app will be connected to an automatically created Application Insights resource with the same name as the app.
 
-1. Select **Review + create** > **Create**.
+1. Select **Review + create** and after the input values have been verified, select **Create**.
 
     Creating your App Service web app will take a minute or two. The portal will notify you when it's finished.
 
 ## Confirm the Application Insights configuration
 
-After the web app is created, we can see how it's been configured to use Application Insights.
+After the web app is created, we can observe how it's been configured to use Application Insights.
 
-1. In the Azure portal, go to the App Service web app you created. Select **All Resources** to do this.
+1. When deployment is complete, select **Go to resource**. Your App Service pane appears.
 
-1. In the left menu pane, under **Settings**, select the application settings that are listed and select the `APPINSIGHTS_INSTRUMENTATIONKEY` setting to see its value. When your app runs in App Service, this value will be available as an environment variable, and the Application Insights SDK will use it as configuration.
+1. In the left menu pane, under **Settings**, select **Application Insights**. The **Application Insights** pane appears for your web app.
 
-1. In the left menu pane, select **Application Insights**. At the top of the Application Insights pane, see **Link to an Application Insights resource** to collect to the Application Insights resource linked to the web app.
+1. Select **Turn on Application Insights**. This allows you to enable Application Insights without redeploying your code. The **Application Insights** pane reappears.
 
-1. The instrumentation key for the Application Insights resource appears near the top of the pane. Note that it's the same as the one shown in the app's settings.
+    Under **Link to an Application Insights resource**, a notification states that your web app will be connected to an auto-created Application Insights resource, namely your web app. An Instrumentation key will be added to App Settings. When your app runs in App Service, this value will be available as an environment variable, and the Application Insights SDK will use it as configuration.
 
-We've set up our app and deployment environment, but we're not going to deploy the app quite yet. First, we're going to add some custom event telemetry.
+1. Select **Apply**, and select **Yes** in the **Apply monitoring settings** dialog box that appears.
+
+We've set up our app and deployment environment, but we're not going to deploy the app yet. First, we're going to add some custom event telemetry.

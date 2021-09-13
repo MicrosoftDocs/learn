@@ -8,7 +8,7 @@ Code is how we tell the Moon rovers where to go and rockets how to fly. Without 
 
 ## How do we code?
 
-To code, or write instructions for computers, we need to write in a language that computers understand. This communication takes the form of programming languages. The code that is written in these languages is translated further into ones and zeros, called binary, that computers can read and run as actions. There are many programming languages throughout the world, all specializing in something different. In the NASA-themed learning paths, we're going to focus on Python - a language that works well with large data problems.
+To code, or write instructions for computers, we need to write in a language that computers understand. This communication takes the form of programming languages. The code that is written in these languages is translated further into ones and zeros, called binary, that computers can read and run as actions. There are many programming languages throughout the world, all specializing in something different. In this learning path, we're going to focus on Python - a language that works well with large data problems.
 
 > [!NOTE]
 > The people who code have many names. Some names imply different specialties. But some of the common names you might encounter are: developer, coder, and programmer. During these modules, you'll see us refer to people who write code as "developers".
