@@ -8,7 +8,7 @@ metadata:
   author: burkeholland
   ms.author: buhollan
   ms.topic: interactive-tutorial
-  ms.prod: learning
+  ms.prod: learning-vs-code
 durationInMinutes: 4
 content: |
   [!include[](includes/2-exercise-prepare-project.md)]

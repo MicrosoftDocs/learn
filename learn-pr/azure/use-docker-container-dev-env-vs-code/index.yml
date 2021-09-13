@@ -7,7 +7,7 @@ metadata:
   author: burkeholland
   ms.author: buhollan
   ms.topic: interactive-tutorial
-  ms.prod: learning
+  ms.prod: learning-vs-code
 title: Use a Docker container as a development environment with Visual Studio Code
 summary: Get, create, and configure a container-based development environment with the Visual Studio Code Remote - Containers extension
 abstract: |
