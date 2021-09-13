@@ -25,7 +25,8 @@ In this section, you use Visual Studio Code to create a local Azure Functions pr
 
 1. Choose a directory location for your project workspace and choose **Select**.
 
-    >✔️ **Note:** Be sure to select a project folder that is outside of a workspace.
+    > [!NOTE] 
+    > Be sure to select a project folder that is outside of a workspace.
 
 1. Provide the following information at the prompts:
 
