@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.getting-started-eith-object-interaction-tutorials-mrtk
+uid: learn.azure.get-started-eith-object-interaction-tutorials-mrtk
 metadata:
   title: Get started with object interaction 
   description: This course will provide steps and procedures to follow on how to manipulate and interact with 3D objects. 
@@ -40,15 +40,15 @@ prerequisites: |
 
 
 units: 
-- learn.azure.getting-started-with-object-interaction-tutorials-mrtk.5-1-introduction
-- learn.azure.getting-started-with-object-interaction-tutorials-mrtk.5-2-panel-of-buttons-dynamic-menus
-- learn.azure.getting-started-with-object-interaction-tutorials-mrtk.5-3-exercise-panel-of-buttons-menus
-- learn.azure.getting-started-with-object-interaction-tutorials-mrtk.5-4-provide-description-to-objects-using-text-on-scene-tooltips
-- learn.azure.getting-started-with-object-interaction-tutorials-mrtk.5-5-exercise-provide-description-to-objects-using-text-on-scene-tooltips
-- learn.azure.getting-started-with-object-interaction-tutorials-mrtk.5-6-manipulate-3d-objects-with-bounds-control
-- learn.azure.getting-started-with-object-interaction-tutorials-mrtk.5-7-exercise-manipulate-3d-objects-with-bounds-control
-- learn.azure.getting-started-with-object-interaction-tutorials-mrtk.5-8-knowledge-check
-- learn.azure.getting-started-with-object-interaction-tutorials-mrtk.5-9-summary
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-1-introduction
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-2-panel-of-buttons-dynamic-menus
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-3-exercise-panel-of-buttons-menus
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-4-provide-description-to-objects-using-text-on-scene-tooltips
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-5-exercise-provide-description-to-objects-using-text-on-scene-tooltips
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-6-manipulate-3d-objects-with-bounds-control
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-7-exercise-manipulate-3d-objects-with-bounds-control
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-8-knowledge-check
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-9-summary
 
 badge:
-  uid: learn.azure.getting-started-with-object-interaction-tutorials-mrtk-badge
+  uid: learn.azure.get-started-with-object-interaction-tutorials-mrtk-badge
