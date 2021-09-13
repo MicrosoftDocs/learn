@@ -53,14 +53,14 @@ You express this in your pipeline YAML file like this:
 
 ### Linter warnings and errors
 
-By default, the linter emits a warning when it discovers that a Bicep file has violated a rule. Warnings that the Bicep linter emits aren't treated as an error, so they won't stop the execution of your pipeline or stop subsequent stages from running.
+By default, the linter emits a warning when it discovers that a Bicep file has violated a rule. Warnings that the Bicep linter emits aren't treated as an error, so they won't stop the pipeline run or stop subsequent stages from running.
 
 You can change this behavior by configuring Bicep to treat the linter rule violations as errors instead of warnings. You do this by adding a *bicepconfig.json* file to the folder that contains your Bicep file. You can decide which linter issues should be treated as errors and which should remain as warnings. You'll see how to do this later in this module.
 
 > [!TIP]
 > The *bicepconfig.json* file also controls how Visual Studio Code shows errors and warnings in the editor. It displays red and yellow squiggly lines under misconfigured parts in your Bicep template. These indicators give you even quicker feedback when you're writing your Bicep code, further reducing the chance of an error.
 
-After you reconfigure the linter to emit errors, whenever the linter detects a problem, your pipeline stops execution and subsequent jobs or stages don't run. This helps to ensure that problematic Bicep code won't be deployed.
+After you reconfigure the linter to emit errors, whenever the linter detects a problem, your pipeline stops running and subsequent jobs or stages don't run. This helps to ensure that problematic Bicep code won't be deployed.
 
 ## Preflight validation
 
