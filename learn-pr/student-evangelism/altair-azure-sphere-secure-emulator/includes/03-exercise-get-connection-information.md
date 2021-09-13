@@ -36,24 +36,3 @@ Follow these steps to list the network endpoints of your IoT Central web applica
    ```
 
 6. Copy the output from the **ShowIoTCentralConfig** tool to Notepad, as you'll need this information soon.
-
-## Get your Azure Sphere tenant ID
-
-1. From the  Windows **PowerShell command line** or Linux **Terminal**, run the following command.
-
-   ```azsphere
-   azsphere tenant show-selected
-   ```
-
-   The output of this command will look similar to the following.
-
-    ```Output
-    ------------------------------------ -------------------
-    Id                                   Name
-    ========================================================
-    99999999-e021-43ce-9999-fa9999499994 yourSphereTenant
-    ------------------------------------ -------------------
-    ```
-
-2. Copy the Azure Sphere tenant ID to Notepad, as you'll need it soon.
-
