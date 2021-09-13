@@ -1,4 +1,4 @@
-Some of your peers have joined the workshop because they've been struggling with new software tools that their organization has recently introduced. They share their apprehensions about not being able to do their jobs as efficiently as before because they might never be able to master the new tools. You need to help them overcome their mental block about their capabilities by expanding their cognitive flexibility.
+Some of your peers have joined the workshop because they've been struggling with new software tools that their organization has recently introduced. They share their apprehensions about not being able to do their jobs as efficiently as before because they might never be able to master the new tools. You need to help them overcome their mental blocks about their capabilities by expanding their cognitive flexibility.
 
 ## Step back
 
@@ -8,7 +8,7 @@ Creating a plan requires a great deal of mental energy, focus, and direction. So
 
 :::image type="content" source="../media/4-program-dead.png" alt-text="Drawing of a person who's disappointed when the program they've been working on fails." border="false":::
 
-Viewing a problem from different perspectives can help you generate multiple paths forward or even reveal a flaw in your approach.
+Viewing a problem from various perspectives can help you generate multiple paths forward or even reveal a flaw in your approach.
 
 ## Expand your outlook
 
@@ -78,6 +78,6 @@ When you're in a position of helping your peers, you can use the following strat
 
 - Practice active listening. Focus on how you can best support your peers by being present and interested in helping them make progress in their goals. For all content, use the following prompt to invite others to share: "Would you be willing to take a minute to share? You can always pass if you’d like."
 
-- Assume positive intentions. Not everyone expresses their enthusiasm or interest in the same way. Try not to assume you know why some people aren't as engaged as others. Instead, do your best to match your guidance with each of your participants' personal styles and needs.
+- Assume positive intentions. Not everyone expresses their enthusiasm or interest in the same way. Try not to assume you know why some people aren't as engaged as others. Instead, do your best to match your guidance with each of your peers' personal styles and needs.
 
 - Provide effective feedback. Ensure your feedback reinforces the recipient's self-confidence and provides the tools they need to overcome their hurdles.

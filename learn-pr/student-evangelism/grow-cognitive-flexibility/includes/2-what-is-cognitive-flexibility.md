@@ -1,12 +1,12 @@
 As the first step in facing the challenges of participating in the training workshop, you realize you need to enhance your cognitive flexibility. You first need to understand what cognitive flexibility is and why it's important.
 
-## Define cognitive flexibility
+## Defining cognitive flexibility
 
 Have you found yourself thinking about a concept or approaching a task in one specific way every time? Do you face challenges if you need to change your approach and use a different problem-solving strategy?
 
 People often encounter situations in which they're required to do something different than they're used to. How they react in such situations depends on how rigid they are in their thinking.
 
-The ability to pivot and adapt to change is called *cognitive flexibility*. *Pivoting* refers to the ability to rebound or *bounce back* from an unexpected situation or failure. According to experts, developing your cognitive flexibility can help you pivot and adapt to change more easily.
+The ability to pivot and adapt to change is called *cognitive flexibility*. *Pivoting* refers to the ability to rebound or bounce back from an unexpected situation or failure. According to experts, developing your cognitive flexibility can help you pivot and adapt to change more easily.
 
 Cognitive flexibility goes beyond pivoting though. It includes:
 
@@ -16,9 +16,9 @@ Cognitive flexibility goes beyond pivoting though. It includes:
 
 - Expanding your imagination to visualize yourself and others in your environment in new ways.
 
-Challenges or setbacks in the field of computer science (CS) are common. You can easily be overwhelmed with the rapid advancements in tools and technologies. The following sections will explore the importance of developing cognitive flexibility to enhance your tech resilience.
+Challenges or setbacks in the field of computer science (CS) are common. You can easily be overwhelmed by rapid advancements in tools and technologies. The following sections will explore the importance of developing cognitive flexibility to enhance your tech resilience.
 
-## Importance of cognitive flexibility
+## The importance of cognitive flexibility
 
 Cognitive flexibility is important in educational settings and in the workplace. People who are cognitively flexible learn more quickly, solve problems more creatively, and adapt and respond to new situations more effectively.
 
@@ -38,7 +38,7 @@ After you watch the video, reflect on your experience when you first started out
 
   - What was the topic?
 
-- Has there been a training session that you found less engaging or difficult to understand?
+- Has there been a training session that you found less engaging or more difficult to understand?
 
   - Is there something about how that session was conducted that contributed to that feeling?
 
@@ -59,7 +59,7 @@ After you watch the video, reflect on your experience when you first started out
 
 :::image type="content" source="../media/2-techland.png" alt-text="Drawing that shows a person feeling apprehensive about the challenges they might come across in the tech industry." border="false":::
 
-In the CS field, technology changes rapidly. It can be hard to keep abreast of all the latest updates. For example, maybe some of the peers in your workshop need to use newer tools to perform tasks they had previously been doing manually. Learning new software or computer skills can be intimidating for some people.
+In the CS field, technology changes rapidly. It can be hard to keep abreast of all the latest updates. For example, maybe some of your peers in your workshop need to use newer tools to perform tasks they had previously been doing manually. Learning new software or computer skills can be intimidating for some people.
 
 Cognitive flexibility indicates nimble and divergent thinking and an interest in developing new approaches. It also indicates the ability to discover and use new connections, and the propensity to work well across an organization. People with a high level of cognitive flexibility readily learn from experience and recognize when old approaches don't work anymore.
 

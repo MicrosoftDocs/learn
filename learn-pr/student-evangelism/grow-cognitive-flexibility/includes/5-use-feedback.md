@@ -16,7 +16,7 @@ You can share what you noticed about the other person's goals and provide specif
 
 | **Feedback objective** | **Example questions and statements** |
 | ------------------------------------ | ------------------------------------------------------------ |
-| Reorient their goals. | What is your overarching objective? Do you want to learn this concept to master a skill? Or are you just interested in completing the task so that you can move on to the next one? |
+| Reorient their goals. | What's your overarching objective? Do you want to learn this concept to master a skill? Or are you just interested in completing the task so that you can move on to the next one? |
 | Invite them to ask questions. | I'd love to just open this up to any questions you have about the field. What's next for you? |
 | Evaluate different perspectives. | What stood out about your experience? What did you find most useful or interesting? What would you have liked to change? Is there anything you would have liked to approach differently? |
 | Ask them to rethink their strategy. | You haven't tried this strategy yet. Notice how you tried this new way, and you got closer? You just haven't quite got it yet. You'll get there if you're willing to keep learning and trying. |

@@ -1,4 +1,4 @@
-Your workshop includes people who want to incorporate technical skills into their jobs because their tasks are being computerized. They need to familiarize themselves with new software so they can continue doing their jobs by using technology. You need to work with them to ensure they feel comfortable with the technical complexities of their jobs.
+Your workshop includes people who want to incorporate technical skills into their jobs because their tasks are being computerized. They need to familiarize themselves with new software so they can continue doing their jobs by using technology. You want to work with them to ensure they feel comfortable with the technical complexities of their jobs.
 
 ## Adapt to change
 
@@ -63,10 +63,9 @@ The inability to adapt to change leads to inflexibility, which can impede a pers
 
    > [!NOTE]
    > *Active listening* is the process of listening with the purpose of understanding other people's perspectives by giving them your complete attention when they're communicating. To do this, you should:
-
-- Change phrases from "It's" or "It must be" to "Could it be…?" to "Might it be…?"
-
-- Articulate your approach. Explicitly name what's difficult, which might be the activity itself.
+   >
+   > - Change phrases from "It's" or "It must be" to "Could it be…?" to "Might it be…?"
+   > - Articulate your approach. Explicitly name what's difficult, which might be the activity itself.
 
 Remember, cognitive flexibility is all about stretching your approach and your thinking. It's not about finding what you think the right solution is. Can you think of other situations where a different vantage point has moved you past an obstacle?
 

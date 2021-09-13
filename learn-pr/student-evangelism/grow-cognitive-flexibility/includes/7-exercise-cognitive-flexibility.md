@@ -8,7 +8,7 @@ How can you guide him to increase his cognitive flexibility so that he's better 
 
 Suggested answers:
 
-- You acknowledge the participant's feelings about the complexity of the tool. You tell him you felt the same way initially, but with practice and the help of some tutorials, you were able to quickly grasp the various options. You mention that online forums also had helpful tips, which made it easier for you to complete your tasks. You share the links to the tutorials with the participant and offer to demonstrate how to navigate the tool's user interface (UI) to go through some of the tasks.
+- You acknowledge the participant's feelings about the complexity of the tool. You tell him you felt the same way initially, but with practice and the help of some tutorials, you were able to quickly grasp the various options. You mention that online forums also had helpful tips, which made it easier for you to complete your tasks. You share the links to the tutorials with him and offer to demonstrate how to navigate the tool's user interface (UI) to go through some of the tasks.
 
 - You reinforce your confidence in the participant that he'll be able to learn and master the tool to continue to do his tasks well. You explain that the migration to new software tools is an ongoing exercise and that there will be other upgrades or tools introduced in the future.
 

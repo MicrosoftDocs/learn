@@ -19,7 +19,7 @@ One of the best ways to become more cognitively flexible is to expose yourself t
 
 ### Pivot rather than panic in the face of difficulty
 
-People have their own unique ways of reacting to problems. Some people might get stuck when attempting to solve a problem. If you're helping a person who seems stuck, try to give them a few moments before nudging with them with a tip. Encourage them to ask for clarification on the problem given to them. You can ask them to articulate their thought process to help clarify where they're stuck. And they can benefit greatly by collaborating with others and brainstorming new ideas.
+People have their own unique ways of reacting to problems. Some people might get stuck when attempting to solve a problem. If you're helping a person who seems stuck, try to give them a moment before nudging with them with a tip. Encourage them to ask for clarification on the problem given to them. You can ask them to articulate their thought process to help clarify where they're stuck. And they can benefit greatly by collaborating with others and brainstorming new ideas.
 
 :::image type="content" source="../media/6-collaboration-product.png" alt-text="Drawing that shows a team collaborating on a new product." border="false":::
 
@@ -43,7 +43,7 @@ How do you react when you're faced with a setback or disruption? Explore the fol
 
 - I ask for help from someone else without specifying how the person can help.
 
-- I spend more time rehashing an exchange with difficult feedback rather than revising my work.
+- I spend more time rehashing an exchange with difficult feedback than I do revising my work.
 
 Do any of the preceding reactions to an unexpected obstacle feel familiar to you? Which of these reactions indicate a higher level of cognitive flexibility? Do you seek feedback from others? Do you have a strategy for unpacking the feedback?
 
@@ -59,7 +59,7 @@ What kind of situations might you face where cognitive flexibility could be a us
 
 - Pivoting on a plan when your team faces a setback on a group project
 
-- Knowing how to reset when your teams' motivation is declining
+- Knowing how to reset when your team's motivation is declining
 
 - Asking for clarifying feedback from an instructor, supervisor, or peer when the feedback isn't specific or clear
 

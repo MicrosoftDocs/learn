@@ -6,7 +6,7 @@ In this module, you'll learn about the importance of cognitive flexibility in te
 
 Imagine you're participating in a training workshop for people interested in learning new computer skills or improving their existing technical knowledge to help them in their careers. The group consists of individuals from different age groups and backgrounds, and varying experience levels.
 
-You know that people working in tech need to be quick to adapt to various situations and be ready to troubleshoot problems as they arise. Some people have more experience and knowledge but might underestimate their own capabilities and potential. Others are more open to the idea of facing challenges and learning on the job. You realize you need to orient your thinking to increase your cognitive flexibility. You also want to help your peers do the same so that you’re better equipped to adapt to changes and issues as they arise.
+You know that people working in tech need to be quick to adapt to various situations and be ready to troubleshoot problems as they arise. Some people have more experience and knowledge but might underestimate their own capabilities and potential. Others are more open to the idea of facing challenges and learning on the job. You realize you need to orient your thinking to increase your cognitive flexibility. You also want to help your peers do the same so that you're better equipped to adapt to changes and issues as they arise.
 
 ## What will you learn?
 

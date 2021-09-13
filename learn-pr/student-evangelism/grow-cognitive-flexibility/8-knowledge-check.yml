@@ -25,15 +25,15 @@ quiz:
         - content: "Finding the one right solution for every problem."
           isCorrect: false
           explanation: "Incorrect. By trying to arrive at a single right solution for every problem, you'll be limiting the options available. There might be alternative ways of approaching and solving a problem."
-    - content: "One of the participants in your workshop is intimidated about the new software that he'll be working with in his job. Although he's experienced, he's not comfortable with technology. As part of enhancing his cognitive flexibility, which of the following strategies would you recommend?"
+    - content: "One of the participants in your workshop is intimidated about the new software that she'll be working with in her job. Although she's experienced, she's not comfortable with technology. As part of enhancing her cognitive flexibility, which of the following strategies would you recommend?"
       choices:
         - content: "Stay in your comfort zone."
           isCorrect: false
-          explanation: "Incorrect. If he stays in his comfort zone, he won't seek out new experiences or visualize alternative ways of approaching a problem. Stepping out of his comfort zone is one way to improve his cognitive flexibility."
-        - content: "Continue his original methods of approach."
+          explanation: "Incorrect. If she stays in her comfort zone, she won't seek out new experiences or visualize alternative ways of approaching a problem. Stepping out of her comfort zone is one way to improve her cognitive flexibility."
+        - content: "Continue her original methods of approach."
           isCorrect: false
-          explanation: "Incorrect. If he continues to pursue his original methods of approach, he's blocking himself to innovations or improvements to his existing process."
-        - content: "Reevaluate his goals and mindset."
+          explanation: "Incorrect. If she continues to pursue her original methods of approach, she's blocking herself to innovations or improvements to her existing process."
+        - content: "Reevaluate her goals and mindset."
           isCorrect: true
-          explanation: "Correct. If he reevaluates his individual goals and mindset, he'll be in a better position to overcome challenges and do better with the new technology."
+          explanation: "Correct. If she reevaluates her individual goals and mindset, she'll be in a better position to overcome challenges and do better with the new technology."
   
