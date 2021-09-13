@@ -22,4 +22,4 @@ Name resolution across multiple virtual networks is probably the most common usa
 In this configuration:
 
  -  **DNS queries across the virtual networks are resolved**. A DNS query from a VM in the Resolution VNet, for a VM in the Registration VNet, will receive a DNS response containing the Private IP of VM.
- -  **Reverse DNS queries are scoped to the same virtual network**. A Reverse DNS (PTR) query from a VM in the Resolution virtual network, for a VM in the Registration VNet, will receive a DNS response containing the FQDN of the VM. But, a reverse DNS query from a VM in the Resolution VNet, for a VM in the same VNet, will receive NXDOMAIN.
+ -  **Reverse DNS queries are scoped to the same virtual network**. A Reverse DNS (PTR) query from a VM in the Resolution virtual network, for a VM in the Registration VNet, will receive a DNS response containing the NXDOMAIN of the VM. But, a reverse DNS query from a VM in the Resolution VNet, for a VM in the same VNet, will receive the FQDN.

@@ -1,4 +1,4 @@
-The health of an Azure Active Directory Domain Services (Azure AD DS) managed domain is monitored by the Azure platform. The health status page in the Azure portal shows any alerts for the managed domain. To ensure issues are responded to in a timely manner, email notifications can be configured to report on health alerts as soon as they're detected in the Azure AD DS managed domain.
+The health of an Azure Active Directory is monitored by the Azure platform. The health status page in the Azure portal shows any alerts for the managed domain. To ensure issues are responded to in a timely manner, email notifications can be configured to report on health alerts as soon as they're detected.
 
 ## Email notification overview
 

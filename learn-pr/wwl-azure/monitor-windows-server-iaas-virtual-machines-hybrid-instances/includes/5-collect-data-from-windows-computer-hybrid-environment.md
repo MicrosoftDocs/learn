@@ -9,6 +9,6 @@ In this demonstration, you'll learn to:
 
 ## Next steps
 
-Review the steps for this demonstration: [Collect data from a Windows computer in a hybrid environment with Azure Monitor](https://aka.ms/quick-collect-windows-computer?azure-portal=true).
+Review the steps for this demonstration: Collect data from a Windows computer in a hybrid environment with Azure Monitor.
 
 If you want to repeat these steps, [get a free trial Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). After completing the steps, delete any resource groups you created.

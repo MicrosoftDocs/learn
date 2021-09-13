@@ -4,8 +4,8 @@ title: Exercise - Create and run a basic pipeline
 metadata:
   unitType: exercise
   title: Exercise - Create and run a basic pipeline
-  description: Learn about pipelines, steps, and agents.
-  ms.date: 07/20/2021
+  description: Create a basic pipeline to run deployments.
+  ms.date: 08/30/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial

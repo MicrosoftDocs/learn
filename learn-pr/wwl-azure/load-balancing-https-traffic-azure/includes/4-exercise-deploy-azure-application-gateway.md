@@ -174,21 +174,13 @@ In this example, you install IIS on the virtual machines to verify Azure created
 
    ```Azure PowerShell
    Set-AzVMExtension `
-
    -ResourceGroupName ContosoResourceGroup `
-
    -ExtensionName IIS `
-
    -VMName BackendVM1 `
-
    -Publisher Microsoft.Compute `
-
    -ExtensionType CustomScriptExtension `
-
    -TypeHandlerVersion 1.4 `
-
    -SettingString '{"commandToExecute":"powershell Add-WindowsFeature Web-Server; powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $($env:computername)"}' `
-
    -Location WestUS
    ```
 

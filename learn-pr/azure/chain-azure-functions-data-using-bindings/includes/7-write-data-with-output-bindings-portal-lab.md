@@ -25,9 +25,9 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. In the left menu pane, under **Functions**, select **Functions**.
 
-1. In the top menu bar, select **Add**. The **Add function** pane appears.
+1. In the top menu bar, select **Create**. The **Create function** pane appears.
 
-1. The pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Add**. The **HttpTrigger3** pane for your function appears, showing a default implementation of your HTTP-triggered function.
+1. The pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The **HttpTrigger3** pane for your function appears, showing a default implementation of your HTTP-triggered function.
 
 ::: zone-end
 
@@ -39,9 +39,9 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. In the left menu pane, under **Functions**, select **Functions**.
 
-1. In the top menu bar, select **Add**. The **Add function** pane appears.
+1. In the top menu bar, select **Create**. The **Create function** pane appears.
 
-1. The pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Add**. The **HttpTrigger3** pane appears, showing a default implementation of your HTTP-triggered function.
+1. The pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The **HttpTrigger3** pane appears, showing a default implementation of your HTTP-triggered function.
 
 ::: zone-end
 
@@ -69,11 +69,6 @@ Let's repeat what we did in the preceding exercise to add another Azure Cosmos D
 
 1. Enter the following remaining values for each setting in this pane. At any time, to learn more about the purpose of each setting, you can select the information icon to its right.
 
-    > [!NOTE]
-    > Ensure you enter the following values precisely as documented here:
-    > - **Collection Name** = `Bookmarks` with a capital B
-    > - **Partition key** = `/id` (slash id; NOT curly brackets or any combination of curly brackets and slashes)
-
     | Setting | Value | Description |
     |---|---|---|
     | **Document parameter name** | `bookmark` | The name used to identify this binding in your code. |
@@ -100,11 +95,6 @@ We now have an Azure Cosmos DB input binding. It's time to add an output binding
 1. The **Cosmos DB account connection** setting should be pre-populated with the connection you created when you added the Azure Cosmos DB input binding.
 
 1. Enter the following remaining values for each setting in this pane. At any time, to learn more about the purpose of each setting, you can select the information icon to its right.
-
-    > [!NOTE]
-    > Ensure you enter the following values precisely as documented here:
-    > - **Collection Name** = `Bookmarks` with a capital B
-    > - **Partition key** = `/id` (slash id; NOT curly brackets or any combination of curly brackets and slashes)
 
     | Setting | Value | Description |
     |---|---|---|
@@ -139,14 +129,14 @@ For example, here you can see that a function named **add-bookmark** adds messag
 
 1. Select **OK**. The Storage account connection setting is populated with the name of a connection.
 
-1. Although we could keep the default values in all the other settings, let's change the following values for each setting to lend more meaning to the properties. Re-open the *Azure Queue Storage* binding from the **Outputs** box. The **Edit Output** pane appears.
+1. Although we could keep the default values in all the other settings, let's change the following values for each setting to lend more meaning to the properties. In the **Create Output** pane, enter the following new values for each setting. replacing the old values.
 
     | Setting | Old value | New value | Description |
     |---|---|---|---|
     | **Message parameter name** | outputQueueItem | newmessage | The binding property we'll use in code. |
     | **Queue name** | outqueue | bookmarks-post-process | The name of the queue where we're placing bookmarks so that they can be processed further by another function. |
 
-1. To save your changes, from the top menu bar, select **Save**. The **Storage account connection** setting is populated with the name of a connection.
+1. To save your changes, select **OK**. The **Storage account connection** setting is populated with the name of a connection.
 
 ## Update function implementation
 
@@ -279,7 +269,7 @@ Congratulations! Your function works as designed, but what about that queue oper
 
 Azure Queue Storage queues are hosted in a storage account. You already selected the storage account in this exercise when you created the output binding.
 
-1. In the top search box in the Azure portal, enter **storage accounts**, and in the results list, under **Services**, select **Storage accounts**.
+1. In the top search box in the Azure portal, enter **storage accounts**, and in the results list, under **Services**, select **Storage accounts**. The **Storage accounts** pane appears.
 
     [![Screenshot showing search results for Storage Account in the main search box.](../media/7-search-storage-accounts-small.png)](../media/7-search-storage-accounts.png#lightbox)
 

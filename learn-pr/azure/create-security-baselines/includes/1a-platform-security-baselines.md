@@ -1,4 +1,4 @@
-Microsoft's cybersecurity group in conjunction with the Center for Internet Security ([CIS](https://www.cisecurity.org/)) developed best practices to help establish security baselines for the Azure platform.
+Microsoft's cybersecurity group, in conjunction with the Center for Internet Security ([CIS](https://www.cisecurity.org/)), developed best practices to help establish security baselines for the Azure platform.
 
 ![A diagram of the workflow for securing Azure workloads with CIS benchmark.](../media/1-cis-benchmark.png)
 
@@ -9,7 +9,7 @@ Microsoft initially partnered with CIS for the development of an off-the-shelf [
 
 ## Create a platform security baseline
 
-A variety of security standards can help cloud service customers to achieve workload security when using cloud services. The following are recommended technology groupings to help create secure cloud-enabled workloads. These recommendations should not be considered an exhaustive list of all possible security configurations and architectures but just as a starting point.
+A variety of security standards can help cloud service customers to achieve workload security when using cloud services. The following recommended technology groupings help create secure cloud-enabled workloads. These recommendations should not be considered as an exhaustive list of all possible security configurations and architectures; rather, as a starting point.
 
 CIS has two implementation levels, and several categories of recommendations.
 
@@ -17,7 +17,7 @@ CIS has two implementation levels, and several categories of recommendations.
     - These should be configured on all systems.
     - These should cause little or no interruption of services nor reduced functionality.
     
-* **Level 2** - Recommendations for highly secure environments:
+* **Level 2** - Recommendations for highly secure environments
     - These might result in reduced functionality.
 
 The following table provides the categories and number of recommendations made for each.

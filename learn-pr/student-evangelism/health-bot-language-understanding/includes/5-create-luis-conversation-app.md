@@ -20,6 +20,31 @@ Alternatively, you can use a dedicated Language Understanding resource for autho
 
 In this module, you'll use the Language Understanding resource.
 
+## Create a LUIS resource in Azure
+
+1. Go to the Azure portal. Select the hamburger button on the top left corner of the screen and then choose **Create a resource**.
+
+   :::image type="content" source="../media/4-create-resource.png" alt-text="Screenshot that shows creating the LUIS resource group." lightbox="../media/4-create-resource.png":::
+
+1. In the search bar, type **Language Understanding** and select the Language Understanding resource that appears. Choose the **Create** option in the resource page.
+
+   :::image type="content" source="../media/4-create-luis.png" alt-text="Screenshot that shows creating a LUIS resource." lightbox="../media/4-create-luis.png":::
+
+1. On the page that appears, fill in the details for your **LUIS Application**. For Create options, choose **Both**.
+
+   :::image type="content" source="../media/4-create-luis-options.png" alt-text="Screenshot that shows selecting a the options in the LUIS configuration." lightbox="../media/4-create-luis-options.png":::
+
+1. Make sure you select the same **resource group** where you created your Azure Health Bot earlier and then enter a name for your **LUIS** resource. Select your **location** and **pricing tier** of choice for both Authoring and Prediction resources.  You will use the location of the Prediction resource when you integrate your LUIS application into the Azure Health Bot later. Once done, select **Review + create.**
+
+   :::image type="content" source="../media/4-review-create-luis.png" alt-text="Screenshot that shows reviewing the LUIS resources created." lightbox="../media/4-review-create-luis.png":::
+
+1. Select the **Create** option once the review is done.
+
+   :::image type="content" source="../media/4-create-luis-all.png" alt-text="Screenshot that shows selecting the review and create LUIS service." lightbox="../media/4-create-luis-all.png":::
+
+   > [!NOTE]
+   > You can alternatively create Prediction and Authoring resources on the LUIS portal after creating your LUIS app.
+
 ## Sign in to the LUIS portal
 
 1. Open your browser, and go to the [Language Understanding](https://luis.ai) page. Select the **Sign in** option in the upper-right corner, and then sign in to LUIS with your Microsoft account.
@@ -62,7 +87,7 @@ You've finished creating your authoring resource for LUIS. Now you can begin to 
 
    :::image type="content" source="../media/4-new-luis-app.png" alt-text="Screenshot that shows the New app option.":::
 
-1. On the pop-up menu that appears, fill in appropriate details about the app that you want to create. For example, to create an app to book appointments, fill in the details as shown in the following image. For the **Prediction resource** option, select the Cognitive Services resource that you created earlier when you provisioned your health bot in the Azure portal.
+1. On the pop-up menu that appears, fill in appropriate details about the app that you want to create. For example, to create an app to book appointments, fill in the details as shown in the following image. For the **Prediction resource** option, select the LUIS resource you created earlier.
 
    :::image type="content" source="../media/4-luis-app-details.png" alt-text="Screenshot that shows LUIS app details.":::
 

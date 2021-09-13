@@ -8,13 +8,13 @@ Your family have managed Washington State’s longest-running elk farm for sever
 
 ## Prerequisites
 
-A basic familiarity with inputs, outputs, and models
+A basic familiarity with inputs, outputs, and models.
 
 ## Learning objectives
 
 In this module, you will:
 
-* Define supervised and unsupervised learning
-* Explore how cost functions affect the learning process
-* Discover how models are optimized by gradient descent
-* Experiment with learning rates, and see how they can affect training
+* Define supervised and unsupervised learning.
+* Explore how cost functions affect the learning process.
+* Discover how models are optimized by gradient descent.
+* Experiment with learning rates, and see how they can affect training.

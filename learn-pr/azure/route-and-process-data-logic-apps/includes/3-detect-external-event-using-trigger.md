@@ -12,7 +12,7 @@ Suppose you wanted to launch your logic app every Saturday at midnight? This tri
 
 There's one more case to consider: Suppose you wanted total control? Imagine you need to launch your logic app using code in your web or mobile applications? You can use the built-in *manual request* trigger to do this action.
 
-This discussion shows that we have three broad categories of triggers: data, time, and manual. Data triggers use two different techniques to detect that new data is available: some use *polling* and some rely on the external service to *push* a notification. These two types of data triggers are so different, that we should think of them as separate categories. Altogether, we have four types of triggers, the following illustration shows a summary of the cases.
+This description shows that we have three broad categories of triggers: data, time, and manual. Data triggers use two different techniques to detect that new data is available: some use *polling* and some rely on the external service to *push* a notification. These two types of data triggers are so different, that we should think of them as separate categories. Altogether, we have four types of triggers, the following illustration shows a summary of the cases.
 
 ![An illustration showing the four types of triggers: polling, push, recurrence, and manual.](../media/trigger-types.png)
 
@@ -35,7 +35,7 @@ A *push trigger* subscribes to an event offered by the external service to get n
 > [!NOTE]
 > Push triggers are implemented using webhooks. The Logic Apps infrastructure generates a callback URL for you and registers it with the external service. This registration happens when you first create your app and again when you make changes to your app's configuration. Similarly, Logic Apps de-registers the callback for you as needed (for example, if you disable or delete your app).
 
-The nice thing about push triggers is that they don't incur any costs polling for data when none is available. They also respond immediately when new data is ready. The following illustration shows this immediate response.
+The favorable thing about push triggers is that they don't incur any costs polling for data when none is available. They also respond immediately when new data is ready. The following illustration shows this immediate response.
 
 ![An illustration showing a timeline with a marker indicating when new data becomes available. A push trigger notifies the logic app immediately when the data is ready.](../media/push-trigger.png)
 
@@ -55,7 +55,7 @@ Trigger *return values* are the results of the operation. The bitbucket connecto
 
 You can use a loop to process each item or you can ask the trigger to split the array up for you. The default behavior for most triggers, including the Twitter trigger, is to automatically split the array. The Logic Apps execution engine will create one instance of your logic app for each data item and the instances will run in parallel. The following illustration shows how each item in the returned array is sent to a different instance of the logic app.
 
-![An illustration showing three tweets returned from the Twitter trigger and three instances of the social-media monitor logic app. An arrow connects each tweet in the array with one of the instances of the logic app.](../media/trigger-splitting-an-array.png)
+![An illustration showing three tweets returned from the Twitter trigger and three instances of the social media monitor logic app. An arrow connects each tweet in the array with one of the instances of the logic app.](../media/trigger-splitting-an-array.png)
 
 ## How to create a logic app in the Azure portal
 
@@ -71,6 +71,6 @@ After you select a starting template, you'll automatically navigate to the Logic
 
 The Logic Apps Designer lets you pick from a gallery of connectors that contain the triggers and actions you can use in your app. The typical strategy is to use the search feature to locate the connector you are interested in. Then you look through the triggers supplied by the connector to find the one you want. In our case, we will use Twitter's **When-a-new-tweet-is-posted** trigger.
 
-Once you've added the trigger, the designer gives you a GUI to set its properties. We'll set the **Search text**, **Frequency**, and **Interval** parameters. The following screenshot shows the social-media monitor logic app displayed in the designer; notice that it begins with the Twitter trigger.
+Once you've added the trigger, the designer gives you a GUI to set its properties. We'll set the **Search text**, **Frequency**, and **Interval** parameters. The following screenshot shows the social media monitor logic app displayed in the designer; notice that it begins with the Twitter trigger.
 
 ![A screenshot showing an example logic app in the Logic Apps Designer. The app is displayed using rectangular areas to represent the starting trigger and each of the actions. Arrows connect the rectangles to show the execution flow through the app.](../media/social-media-complete-in-the-designer.png)

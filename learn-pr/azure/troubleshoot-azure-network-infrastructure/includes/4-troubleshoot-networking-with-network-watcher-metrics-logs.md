@@ -41,7 +41,7 @@ In flow logs, you can view information about ingress and egress IP traffic on ne
 
 This diagram shows the workflow that the NSG follows.
 
-![Diagram showing the workflow that the NSG follows from inbound traffic to rule matches to allowing or denying a packet.](../media/4-nsg-rule-flow.png)
+:::image type="content" source="../media/4-nsg-rule-flow.png" alt-text="Screenshot showing the workflow that the NSG follows from inbound traffic to rule matches to allowing or denying a packet.":::
 
 Flow logs store data in a JSON file. It can be difficult to gain insights into this data by manually searching the log files, especially if you have a large infrastructure deployment in Azure. You can solve this problem by using Power BI.
 

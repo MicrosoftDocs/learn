@@ -4,8 +4,8 @@ You've come to a point in your program where you need to carry out a group of st
 
 A loop iterates over a range of values. For each value, the code does something, like printing results on a screen or using the value in an operation. F# has three types of loops you can use:
 
-- **`for...to`**: The `for...to` construct assumes that you have an enumerable collection you can iterate over. It iterates over each value in a collection.
-- **`for...in`**: The `for...in` loop starts and ends where this loop iterates. It iterates until it reaches the value of a loop variable.
+- **`for...in`**: The `for...in` construct assumes that you have an enumerable collection you can iterate over. It iterates over each value in a collection.
+- **`for...to`**: The `for...to` loop starts and ends where this loop iterates. It iterates until it reaches the value of a loop variable.
 - **`while...do`**: The `while...do` loop isn't centered on an enumerable collection like two first constructs, but instead loops until a condition is met.
 
 ### Use a for...in loop for every value in a collection

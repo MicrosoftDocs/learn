@@ -29,7 +29,7 @@ Every request to a queue must be authorized and there are several options to cho
 
 ### Retrieve the account key
 
-Your account key is available in the **Settings > Access keys** section of your storage account in the Azure portal, or you can retrieve it through the command line:
+Your account key is available in the **Security + Networking** > **Access keys** section of your storage account in the Azure portal, or you can retrieve it through the command line:
 
 ```azurecli
 az storage account keys list --account-name <your storage account name>
@@ -47,7 +47,7 @@ You access a queue using a REST API. To do this, you'll use a URL that combines 
 
 The Azure Storage Client Library for .NET is a library provided by Microsoft that formulates REST requests and parses REST responses for you. This greatly reduces the amount of code you need to write. Access using the client library still requires the same pieces of information (storage account name, queue name, and account key); however, they are organized differently.
 
-The client library uses a **connection string** to establish your connection. Your connection string is available in the **Settings** section of your Storage Account in the Azure portal, or through the Azure CLI and PowerShell.
+The client library uses a **connection string** to establish your connection. Your connection string is available in the **Security + Networking** section of your Storage Account in the Azure portal, or through the Azure CLI and PowerShell.
 
 A connection string is a string that combines a storage account name and account key and must be known to the application to access the storage account. The format looks like this:
 

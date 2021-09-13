@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-service-health.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "Knowledge check for intro to Azure Service Health."
+  ms.date: 9/1/2021
+  author: ricmmartins
+  ms.author: ricmart
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Which of the following statements accurately describes Azure Service Health?"
+    choices:
+    - content: "A monitoring service to Azure Virtual Machines."
+      isCorrect: false
+      explanation: "Incorrect: Azure Service Health could help identify issues on Azure platform affecting your Azure Virtual Machines, but isn't a monitoring service to Azure Virtual Machines."
+    - content: "Azure Service Health is a tool that  provides personalized alerts and guidance for Azure service issues."
+      isCorrect: true
+      explanation: "Correct: This is the statement which best describes Azure Service Health"
+    - content: "Azure Service Health is an application performance monitoring tool."
+      isCorrect: false
+      explanation: "Incorrect: Azure Advisor isn't an application performance monitoring tool."
+  - content: "What's the difference between Azure Service Health and the Azure status page?"
+    choices:
+    - content: "Azure Service Health keeps you informed about the health of your environment through an authenticated experience. Azure status page is where you can find public information about the health of Azure services across all regions."
+      isCorrect: true
+      explanation: "Correct: Azure Service Health provides personalized information while the Azure status page provides public information."
+    - content: "None. Both show the same information"
+      isCorrect: false
+      explanation: "Incorrect: They provide different kind of information since Azure Service Health uses an authenticated experience."
+    - content: "Azure Service Health provides planned maintenance only, while Azure status page provides health and security advisories."
+      isCorrect: false
+      explanation: "Incorrect: Azure Service Health provides information about planned maintenance, current incidents, alerts, health, and security advisories. The Azure status page is a global view of the health of all Azure services in all regions. It's a quick reference for incidents with widespread impact."
+  - content: "The information provided by Azure Service Health is restricted to a single subscription."
+    choices:
+    - content: "You can't choose about which subscription you would like to receive health information."
+      isCorrect: false
+      explanation: "Incorrect: It's possible to choose for which subscription you will be getting health information."
+    - content: "You can choose among which subscriptions, region, and services you would like to receive health information."
+      isCorrect: true
+      explanation: "Correct: This is the correct answer."

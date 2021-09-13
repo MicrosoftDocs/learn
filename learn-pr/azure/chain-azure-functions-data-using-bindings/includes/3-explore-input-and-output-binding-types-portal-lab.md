@@ -91,7 +91,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane for your function app appears. This opens the function creation process.
 
-1. In the top menu bar, select **Add**. The **Add function** pane appears.
+1. In the top menu bar, select **Create**. The **Create function** pane appears.
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
@@ -103,18 +103,18 @@ Now that we have a function app, it's time to create a function. A function is a
 
         The authorization level option determines what kind of key is used to securely access your function. Choosing *Function* requires callers of your function to provide a function-specific key with their requests.
 
-        [![Screenshot for the Add Function dialog box.](../media/3-add-function-small.png)](../media/3-add-function.png#lightbox)
+        [![Screenshot for the Create Function dialog box.](../media/3-add-function-small.png)](../media/3-add-function.png#lightbox)
 
-1. Select **Add**. Your new **Function** pane for *HttpTrigger1* appears.
+1. Select **Create**. Your new **Function** pane for *HttpTrigger1* appears.
 
 1. In the top menu bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
-1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL.
+1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL, and then select **OK**.
 
 1. Paste the function URL you copied into the address bar of a new tab in your browser.
 
 1. Add the query string value `&name=Azure` to the end of the URL. Your resulting URL should resemble the following example:
- 
+
     'https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure'  
 
 1. Press <kbd>Enter</kbd> to execute the request in your browser. You should see a response similar to the following example returned by your function.
@@ -185,7 +185,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane for your function app appears. This opens the function creation process.
 
-1. From the top menu bar, select **Add**. The **Add function** pane appears.
+1. From the top menu bar, select **Create**. The **Create function** pane appears.
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
@@ -199,7 +199,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
         [![Screenshot for the Add Function dialog box.](../media/3-add-function-small.png)](../media/3-add-function.png#lightbox)
 
-1. Select **Add**. Your new **Function** pane for *HttpTrigger1* appears.
+1. Select **Create**. Your new **Function** pane for *HttpTrigger1* appears.
 
 1. In the top menu bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
@@ -208,8 +208,8 @@ Now that we have a function app, it's time to create a function. A function is a
 1. Paste the function URL you copied into the address bar of a new tab in your browser.
 
 1. Add the query string value `&name=Azure` to the end of the URL. Your resulting URL should resemble the following example:
- 
-    'https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure' 
+
+    'https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure'
 
 1. Press <kbd>Enter</kbd> to execute the request in your browser.
 

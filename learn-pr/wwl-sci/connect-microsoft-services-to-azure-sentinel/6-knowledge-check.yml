@@ -38,7 +38,7 @@ quiz:
     - content: "SigninLogs"
       isCorrect: false
       explanation: "Incorrect.  This connector doesn't write to the SigninLogs table."
-  - content: "Which table (data type) would you query for the Azure Active Directory Information Protection data?"
+  - content: "Which table (data type) would you query for the Azure Active Directory Identity Protection data?"
     choices:
     - content: "OfficeActivity"
       isCorrect: false
