@@ -29,7 +29,7 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
     * **Instructions** prefabs
     * **ParentAnchor** prefabs
 
-    ![Prefabs](../media/asa-02-section-4-step-1-1.png)
+    :::image type="content" source="../media/asa-02-section-4-step-1-1.png" alt-text="Prefabs" lightbox="../media/asa-02-section-4-step-1-1.png":::
 
     > [!Tip]
     > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by [toggling the Gizmos](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the off position, as shown in the image above.
@@ -39,7 +39,7 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
     * AR Anchor Manager (Script)
     * DisableDiagnosticsSystem (Script)
 
-    ![Add components to the MixedRealityToolkit](../media/asa-02-section-5-step-1-1.png)
+    :::image type="content" source="../media/asa-02-section-5-step-1-1.png" alt-text="Add components to the MixedRealityToolkit" lightbox="../media/asa-02-section-5-step-1-1.png":::
 
     > [!Warning]
     > There's a known issue with ASA v2.9.0 and v2.10.0-preview.1 that requires two additional objects to be placed in the scene. Please use the Add Component button in the inspector window to add an AR Camera Manager (Script) and an AR Session (Script) to the **MixedRealityToolkit** object. Be sure to disable the Camera that is created automatically while adding the AR Camera Manager (Script) by unchecking the checkbox next to the Camera object in the inspector window. This issue will be addressed in the full release of ASA v2.10.0.
@@ -56,14 +56,14 @@ In this section, you'll add scripts to the scene to create a series of button ev
     * Assign the **ParentAnchor** object to the **None (Object)** field
     * From the **No Function** dropdown, select **AnchorModuleScript** > **StartAzureSession** () to set this function as the action to be executed when the event is triggered
 
-    ![Unity with StartAzureSession button OnClick event configured](../media/asa-02-section-5-step-1-2.png)
+    :::image type="content" source="../media/asa-02-section-5-step-1-2.png" alt-text="Unity with StartAzureSession button OnClick event configured" lightbox="../media/asa-02-section-5-step-1-2.png":::
 
 2. In the Hierarchy window, select the next button named **StopAzureSession**, then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
     * Assign the **ParentAnchor** object to the **None (Object)** field
     * From the **No Function** dropdown, select **AnchorModuleScript** > **StopAzureSession** () to set this function as the action to be executed when the event is triggered
 
-    ![Unity with StopAzureSession button OnClick event configured](../media/asa-02-section-5-step-1-3.png)
+    :::image type="content" source="../media/asa-02-section-5-step-1-3.png" alt-text="Unity with StopAzureSession button OnClick event configured" lightbox="../media/asa-02-section-5-step-1-3.png":::
 
 3. In the Hierarchy window, select the next button named **CreateAzureAnchor**, then in the Inspector window, configure the **Button Config Helper(Script)** component's **On Click ()** event as follows:
 
@@ -71,7 +71,7 @@ In this section, you'll add scripts to the scene to create a series of button ev
     * From the **No Function** dropdown, select **AnchorModuleScript** > **CreateAzureAnchor** () to set this function as the action to be executed when the event is triggered
     * Assign the **ParentAnchor** object to the empty **None (Game Object)** field to make it the argument for the **CreateAzureAnchor ()** function
 
-    ![Unity with CreateAzureAnchor button OnClick event configured](../media/asa-02-section-5-step-1-4.png)
+    :::image type="content" source="../media/asa-02-section-5-step-1-4.png" alt-text="Unity with CreateAzureAnchor button OnClick event configured" lightbox="../media/asa-02-section-5-step-1-4.png":::
 
 4. In the Hierarchy window, select the next button named **RemoveLocalAnchor**,then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
@@ -80,21 +80,21 @@ In this section, you'll add scripts to the scene to create a series of button ev
     * Assign the **ParentAnchor** object to the empty **None (Game Object)** field to make it the argument for the **RemoveLocalAnchor** () function
     Unity with **RemoveLocalAnchor** button **OnClick** event configured
 
-    ![Unity with RemoveLocalAnchor button OnClick event configured](../media/asa-02-section-5-step-1-5.png)
+    :::image type="content" source="../media/asa-02-section-5-step-1-5.png" alt-text="Unity with RemoveLocalAnchor button OnClick event configured" lightbox="../media/asa-02-section-5-step-1-5.png":::
 
 5. In the Hierarchy window, select the next button named **FindAzureAnchor**,then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
     * Assign the **ParentAnchor** object to the **None (Object)** field
     * From the No Function dropdown, select **AnchorModuleScript** > **FindAzureAnchor** () to set this function as the action to be executed when the event is triggered
 
-    ![Unity with FindAzureAnchor button OnClick event configured](../media/asa-02-section-5-step-1-6.png)
+     :::image type="content" source="../media/asa-02-section-5-step-1-6.png" alt-text="Unity with FindAzureAnchor button OnClick event configured" lightbox="../media/asa-02-section-5-step-1-6.png":::
 
 6. In the Hierarchy window, select the next button named **DeleteAzureAnchor**, then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click** () event as follows:
 
     * Assign the **ParentAnchor** object to the **None (Object)** field
     * From the No Function dropdown, select **AnchorModuleScript** > **DeleteAzureAnchor** () to set this function as the action to be executed when the event is triggered
 
-    ![Unity with DeleteAzureAnchor button OnClick event configured](../media/asa-02-section-6-step-1-1.png)
+    :::image type="content" source="../media/asa-02-section-6-step-1-1.png" alt-text="Unity with DeleteAzureAnchor button OnClick event configured" lightbox="../media/asa-02-section-6-step-1-1.png":::
 
 ## Connect the scene to the Azure resource
 
@@ -104,7 +104,7 @@ In the Hierarchy window, select the **ParentAnchor** object, then in the Inspect
 * In the **Spatial Anchors Account Key** field, paste the primary or secondary **Access Key** from your Azure Spatial Anchors account
 * In the **Spatial Anchors Account Domain** field, paste the **Account Domain** from your Azure Spatial Anchors account
 
-![Unity with Spatial Anchor Manager configured](../media/asa-02-section-7-step-1-1.png)
+    :::image type="content" source="../media/asa-02-section-7-step-1-1.png" alt-text="Unity with Spatial Anchor Manager configured" lightbox="../media/asa-02-section-7-step-1-1.png":::
 
 ## Try the basic behaviors of Azure Spatial Anchors
 
@@ -126,8 +126,6 @@ When the app runs on your device, follow the on-screen instructions displayed on
 9. Delete Azure anchor
 10. Stop Azure session
 
-![Unity with Instructions object selected](../media/asa-02-section-7-step-1-1.png)
-
 >[!Caution]
 >Azure Spatial Anchors uses the internet to save and load the anchor data, so make sure your device is connected to the internet.
 
@@ -140,15 +138,15 @@ In the previous sections, you learned the fundamentals of Azure Spatial Anchors.
     * Change **Scale X** to 1.1
     * Change **Scale Z** to 1.1
 
-    ![Unity with ParentAnchor object selected, positioned, and scaled](../media/asa-02-section-8-step-1-1.png)
+    :::image type="content" source="../media/asa-02-section-8-step-1-1.png" alt-text="Unity with ParentAnchor object selected, positioned, and scaled" lightbox="../media/asa-02-section-8-step-1-1.png":::
 
 2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **Rover** folder, then click-and-drag the **RoverExplorer_Complete** prefab into the Hierarchy window to add it to the scene:
 
-    ![Unity with newly added RoverExplorer Complete prefab selected](../media/asa-02-section-8-step-1-2.png)
+    :::image type="content" source="../media/asa-02-section-8-step-1-2.png" alt-text="Unity with ParentAnchor object selected, positioned, and scaled" lightbox="../media/asa-02-section-8-step-1-2.png":::
 
 3. With the newly added RoverModule_Complete object still selected in the Hierarchy window, drag it onto the **ParentAnchor** object to make it a child of the ParentAnchor object:
 
-    ![Unity with RoverExplorer_Complete object set as child of ParentAnchor](../media/asa-02-section-8-step-1-3.png)
+    :::image type="content" source="../media/asa-02-section-8-step-1-3.png" alt-text="Unity with RoverExplorer_Complete object set as child of ParentAnchor" lightbox="../media/asa-02-section-8-step-1-3.png":::
 
     If you now rebuild the project and deploy the app to your device, you can now reposition the entire Rover Explorer experience by moving the resized cube.
 
