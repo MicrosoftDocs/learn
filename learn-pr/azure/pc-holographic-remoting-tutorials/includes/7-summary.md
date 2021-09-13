@@ -4,7 +4,7 @@ This module taught you to build a Mixed Reality experience that demonstrates UI 
 
 Consider trying the following interactions:
 
-* Develop an application to experience on HoloLens, but actually runs on PC.
+* Develop an application to experience on HoloLens 2, but actually runs on PC.
 * Include voice commands in your application
 
 ## Further Reading

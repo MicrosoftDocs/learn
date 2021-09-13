@@ -5,6 +5,7 @@ Imagine a scenario where you want to preview and debug your application during t
 In this module, you'll learn how to create a mixed reality experience demonstration and a PC app for Holographic Remoting.
 
 ## Learning Objectives
+
 * Import assets and set up the scene.
 * Interact with holograms using UI elements and buttons.
 * Configure 3D objects for the clipping feature.
