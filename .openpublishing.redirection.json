@@ -3218,7 +3218,7 @@
     {
       "source_path": "learn-pr/data-ai/build-chat-bot-azure-portal/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-chat-bot-azure-portal",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai/build-chat-bot-azure-portal/3-create-basic-bot.md",
@@ -3363,12 +3363,12 @@
     {
       "source_path": "learn-pr/paths/classify-images-with-vision-services/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/process-classify-images-with-azure-cognitive-vision-services",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/paths/explore-microsoft-azure-cloud-concepts/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/paths/distinguish-microsoft-azure-core-services/index.md",
@@ -5683,7 +5683,7 @@
     {
       "source_path": "learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/9-transfer-data-outside-synapse-workspace-using-sql-authentication.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/integrate-sql-apache-spark-pools-azure-synapse-analytics",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-lighthouse/5-video-cross-tenant-management.md",
@@ -7473,7 +7473,7 @@
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/1-introduction.md",
@@ -7533,7 +7533,7 @@
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/ingest-data-into-azure-digital-twins",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/1-introduction.md",
@@ -7583,7 +7583,7 @@
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-digital-twins",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/1-introduction.md",
@@ -7628,7 +7628,7 @@
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/route-output-from-azure-digital-twins-to-downstream-services/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/route-output-from-azure-digital-twins-to-downstream-services",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/route-output-from-azure-digital-twins-to-downstream-services/1-introduction.md",
@@ -7673,7 +7673,7 @@
     {
       "source_path": "learn-pr/student-evangelism/web-development-101/introduction-programming/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/web-development-101-introduction-programming",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/student-evangelism/web-development-101/introduction-programming/1-introduction.md",
@@ -7728,7 +7728,7 @@
     {
       "source_path": "learn-pr/student-evangelism/web-development-101/accessibility/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/web-development-101-accessibility",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/student-evangelism/web-development-101/accessibility/1-introduction.md",
@@ -7908,7 +7908,7 @@
     {
       "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/5-describe-cloud-adoption-framework.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-resource-governance-capabilities-azure",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-sci/describe-security-concepts-methodologies/6-describe-ways-encryption-hashing-signing-secure-data.md",
@@ -8883,7 +8883,7 @@
     {
       "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-first-bicep-template",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/1-introduction.md",
