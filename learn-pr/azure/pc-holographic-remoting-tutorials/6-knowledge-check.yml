@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.pc-holographic-remoting-tutorials-mrtk.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Three multiple-choice questions
+  ms.date: 09/09/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: Choose the best response for each question. Then select Check your answers.
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which of the following scripts is attached to a Button Parent Object?"
+      choices:
+        - content: "View control script"
+          isCorrect: true
+        - content: "Interactable script"
+          isCorrect: false
+        - content: "Toggle Button script"
+          isCorrect: false
+    - content: "Which of the following additional capabilities are selected?"
+      choices:
+        - content: "PrivateNetworkClientServer"
+          isCorrect: true
+        - content: "Removable Storage"
+          isCorrect: false
+        - content: "VideosLibrary"
+          isCorrect: false
+    - content: "In the OpenXR feature group we select: "
+      choices:
+        - content: "Holographic App Remoting"
+          isCorrect: true
+        - content: "Mock Runtime"
+          isCorrect: false
+        - content: "Runtime Debugger"
+          isCorrect: false
+
+   
