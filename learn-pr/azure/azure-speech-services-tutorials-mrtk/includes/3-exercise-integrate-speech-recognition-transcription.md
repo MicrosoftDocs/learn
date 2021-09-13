@@ -21,17 +21,17 @@ Because you will use the Speech SDK for speech recognition and transcription, yo
 
 1. With the **MixedRealityToolkit** object selected in the Hierarchy window, in the Inspector window, select the **Input** tab, clone the **DefaultHoloLens2InputSystemProfile** and the **DefaultMixedRealitySpeechCommandsProfile**, and then change the speech commands **Start Behavior** to **Manual Start**:
 
-    ![Change the speech commands](../media/tutorial-1-section-2-step-1-1.png)
+    :::image type="content" source="../media/tutorial-1-section-2-step-1-1.png" alt-text="Change the speech commands" lightbox="../media/tutorial-1-section-2-step-1-1.png":::
 
 ## Configure the capabilities
 
 1. In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Publishing Settings** section:
 
-    ![Configuring capabilities](../media/tutorial-1-section-3-step-1-1.png)
+    :::image type="content" source="../media/tutorial-1-section-3-step-1-1.png" alt-text="Configuring capabilities" lightbox="../media/tutorial-1-section-3-step-1-1.png":::
 
 2. In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer** and **PrivateNetworkClientServer** capabilities:
 
-    ![Enable the capabilities](../media/tutorial-1-section-3-step-1-2.png)
+    :::image type="content" source="../media/tutorial-1-section-3-step-1-2.png" alt-text="Enable the capabilities" lightbox="../media/tutorial-1-section-3-step-1-2.png":::
 
 ## Import the tutorial assets
 
@@ -43,7 +43,7 @@ Because you will use the Speech SDK for speech recognition and transcription, yo
 
 2. After you have imported the tutorial assets your Project window should look similar to this:
 
-    ![Project window must look similar to this](../media/tutorial-1-section-4-step-1-1.png)
+    :::image type="content" source="../media/tutorial-1-section-4-step-1-1.png" alt-text="Project window must look similar to this" lightbox="../media/tutorial-1-section-4-step-1-1.png":::
 
 ## Prepare the scene
 
@@ -51,23 +51,23 @@ In this section, you will prepare the scene by adding the tutorial prefab and co
 
 1. In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureSpeechServices** > **Prefabs** folder and drag the **Lunarcom** prefab into the Hierarchy window to add it to your scene:
 
-    ![Preparing the scene](../media/tutorial-1-section-5-step-1-1.png)
+    :::image type="content" source="../media/tutorial-1-section-5-step-1-1.png" alt-text="Preparing the scene" lightbox="../media/tutorial-1-section-5-step-1-1.png":::
 
 2. With the **Lunarcom** object still selected in the Hierarchy window, in the Inspector window, use the **Add Component** button to add the **Lunarcom Controller (Script)** component to the Lunarcom object:
 
-    ![Add Lunarcom controller (Script)](../media/tutorial-1-section-5-step-1-2.png)
+    :::image type="content" source="../media/tutorial-1-section-5-step-1-2.png" alt-text="Add Lunarcom controller (Script)" lightbox="../media/tutorial-1-section-5-step-1-2.png":::
 
 3. With the **Lunarcom** object still selected, expand it to reveal its child objects, then drag the **Terminal** object into the Lunarcom Controller (Script) component's **Terminal** field:
 
-    ![Terminal field](../media/tutorial-1-section-5-step-1-3.png)
+    :::image type="content" source="../media/tutorial-1-section-5-step-1-3.png" alt-text="Terminal field" lightbox="../media/tutorial-1-section-5-step-1-3.png":::
 
 4. With the **Lunarcom** object still selected, expand the Terminal object to reveal its child objects, then drag the **ConnectionLight** object into the Lunarcom Controller (Script) component's **Connection Light** field and the **OutputText** object into the **Output Text** field:
 
-    ![Output text field](../media/tutorial-1-section-5-step-1-4.png)
+    :::image type="content" source="../media/tutorial-1-section-5-step-1-4.png" alt-text="Output text field" lightbox="../media/tutorial-1-section-5-step-1-4.png":::
 
 5. With the **Lunarcom** object still selected, expand the Buttons object to reveal its child objects, and then in the Inspector window, expand the **Buttons** list, set its **Size** to 3, and drag the **MicButton**, **SatelliteButton**, and **RocketButton** objects into the **Element** 0, 1, and 2 fields respectively:
 
-    ![Configure the buttons](../media/tutorial-1-section-5-step-1-5.png)
+    :::image type="content" source="../media/tutorial-1-section-5-step-1-5.png" alt-text="Configure the buttons" lightbox="../media/tutorial-1-section-5-step-1-5.png":::
 
 ## Connect the Unity project to the Azure resource
 
@@ -78,21 +78,21 @@ To use Azure Speech Services, you need to create an Azure resource and obtain an
     * In the **Speech Service API Key** field, enter your API key (Key1 or Key2)
     * In the **Speech Service Region** field, enter your service region (Location) using lowercase letters and spaces removed
 
-    ![Configure Speech SDK Credentials](../media/tutorial-1-section-6-step-1-1.png)
+    :::image type="content" source="../media/tutorial-1-section-6-step-1-1.png" alt-text="Configure Speech SDK Credentials" lightbox="../media/tutorial-1-section-6-step-1-1.png":::
 
 ## Use speech recognition to transcribe speech
 
 1. In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Speech Recognizer (Script)** component to the Lunarcom object:
 
-    ![Add Lunarcom Speech Recognizer (Script)](../media/tutorial-1-section-7-step-1-1.png)
+    :::image type="content" source="../media/tutorial-1-section-7-step-1-1.png" alt-text="Add Lunarcom Speech Recognizer (Script)" lightbox="../media/tutorial-1-section-7-step-1-1.png":::
 
 2. If you now enter Game mode, you can test the speech recognition by first pressing the microphone button:
 
-    ![Enter game mode](../media/tutorial-1-section-7-step-1-2.png)
+    :::image type="content" source="../media/tutorial-1-section-7-step-1-2.png" alt-text="Enter game mode" lightbox="../media/tutorial-1-section-7-step-1-2.png":::
 
 3. Then, assuming your computer has a microphone, when you say something, your speech will be transcribed on the terminal panel:
 
-    ![Speech will be transcribed on the terminal panel](../media/tutorial-1-section-7-step-1-3.png)
+    :::image type="content" source="../media/tutorial-1-section-7-step-1-3.png" alt-text="Speech will be transcribed on the terminal panel" lightbox="../media/tutorial-1-section-7-step-1-3.png":::
 
     > [!CAUTION]
     > The application needs to connect to Azure, so make sure your computer/device is connected to the internet.
