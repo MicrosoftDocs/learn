@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-speech-services-tutorials-mrtk.9-exercise-setting-up-intent-and-natural-language-understanding
+uid: learn.azure.azure-speech-services-tutorials-mrtk.9-exercise-set-up-intent-natural-language-understand
 title: Exercise - Set up intent and natural language understanding
 metadata:
   title: Exercise - Set up intent and natural language understanding
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 9
 content: |
-  [!include[](includes/9-exercise-setting-up-intent-and-natural-language-understanding.md)]
+  [!include[](includes/9-exercise-set-up-intent-natural-language-understand.md)]
