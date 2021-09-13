@@ -87,7 +87,7 @@ Changing security settings at the organization level or for all organizations co
 > Available settings and tools differ based on the type of repository. In addition,
 > these settings and features differ in their level of required user interaction.
 
-:::image type="content" source="../media/availability-interaction.png.png" alt-text="A four-quadrant graph, divided by x and y axes, which categorizes security settings by availability to users (x axis) and required level of interaction (y axis)":::
+:::image type="content" source="../media/availability-interaction.png" alt-text="A four-quadrant graph, divided by x and y axes, which categorizes security settings by availability to users (x axis) and required level of interaction (y axis)":::
 
 ### What kinds of security settings are available to administrators?
 
