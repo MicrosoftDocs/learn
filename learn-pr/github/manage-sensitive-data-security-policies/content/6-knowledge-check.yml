@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.manage-sensitive-data-and-security-policies.knowledge-check
+uid: learn.github.manage-sensitive-data-security-policies.knowledge-check
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
   unitType: knowledge_check
   title: Knowledge check - Manage sensitive data and security policies 
   description: Knowledge check - Manage sensitive data and security policies module
-  ms.date: 09/09/2021
+  ms.date: 09/13/2021
   author: sterling463
   ms.author: csterling
   ms.topic: interactive-tutorial
@@ -40,31 +40,31 @@ quiz:
     - content: "Add advisories for your users"
       isCorrect: false
       explanation: "Access restrictions, security documentation, advisories are available for all repositories, but do not automate your security process"
-  - content: "Which two pieces of information should be included in a security advisory? (Each answer presents part of the solution. Choose two.)"
+  - content: "Which two pieces of information should be included in a security advisory?"
     choices:
-    - content: "Product affected"
+    - content: "Product affected and severity"
       isCorrect: true
       explanation: "A security advisory should be comprehensive, including the following information: Product and versions affected, Severity, Types of security weaknesses addressed by the project owners' actions, Impact, status of patches, and workarounds"
-    - content: "Severity"
-      isCorrect: true
-      explanation: "A security advisory should be comprehensive, including the following information: Product and versions affected, Severity, Types of security weaknesses addressed by the project owners' actions, Impact, status of patches, and workarounds"
-    - content: "Administrator name"
-      isCorrect: false
-      explanation: "The administrator name would be unneeded and a security risk if provided publicly."
-    - content: "Exposures list"
+    - content: "Severity and exposure list"
       isCorrect: false
       explanation: "Exposure list research can help to determine if the vulnerability you're patching matches an existing entry, but not needed for the security advisory."
-  - content: "What two pieces of information are included in your organization’s log? (Each answer presents part of the solution. Choose two.)"
+    - content: "Administrator name and severity"
+      isCorrect: false
+      explanation: "The administrator name would be unneeded and a security risk if provided publicly.Exposure list research can help to determine if the vulnerability you're patching matches an existing entry, but not needed for the security advisory."
+    - content: "Exposures list and administrator name"
+      isCorrect: false
+      explanation: "Exposure list research can help to determine if the vulnerability you're patching matches an existing entry, but not needed for the security advisory.The administrator name would be unneeded and a security risk if provided publicly."
+  - content: "What two pieces of information are included in your organization’s log?"
     choices:
-    - content: "The user that performed the action"
+    - content: "The user that performed the action and the date and time of the action"
       isCorrect: true
       explanation: "The log is available to organization owners, and records information about actions that affect the organization including: which repository an action was performed in, the user that performed the action, the action that was performed, which country the action took place in, and the date and time the action occurred"
-    - content: "The date and time of the action"
-      isCorrect: true
-      explanation: "The GraphQL API is available for organizations using GitHub Enterprise, and can retrieve information about actions up to 120 days ago. It can monitor: access to your organization or repository settings, changes in permissions, added or removed users in an organization, repository, or team, users being promoted to admin, and changes to permissions of a GitHub App"
-    - content: "Changes in permissions"
+    - content: "The date and time of the action and changes in permissions"
       isCorrect: false
       explanation: "The GraphQL API is available for organizations using GitHub Enterprise, and can retrieve information about actions up to 120 days ago. It can monitor: access to your organization or repository settings, changes in permissions, added or removed users in an organization, repository, or team, users being promoted to admin, and changes to permissions of a GitHub App"
-    - content: "Users being promoted to administrators"
+    - content: "Changes in permissions and users being promoted to administrators"
+      isCorrect: false
+      explanation: "The GraphQL API is available for organizations using GitHub Enterprise, and can retrieve information about actions up to 120 days ago. It can monitor: access to your organization or repository settings, changes in permissions, added or removed users in an organization, repository, or team, users being promoted to admin, and changes to permissions of a GitHub App"
+    - content: "Users being promoted to administrators and the user that performed the action"
       isCorrect: false
       explanation: "The GraphQL API is available for organizations using GitHub Enterprise, and can retrieve information about actions up to 120 days ago. It can monitor: access to your organization or repository settings, changes in permissions, added or removed users in an organization, repository, or team, users being promoted to admin, and changes to permissions of a GitHub App"

@@ -1,4 +1,4 @@
-:::image type="content" source="/media/introduction/security-md.png" alt-text="A screenshot of SECURITY.md from the git repository on GitHub.com with a large, encircled padlock icon superimposed":::
+:::image type="content" source="../media/security-md.png" alt-text="A screenshot of SECURITY.md from the git repository on GitHub.com with a large, encircled padlock icon superimposed":::
 
 <!--Manage sensitive data and security policies in GitHub-->
 

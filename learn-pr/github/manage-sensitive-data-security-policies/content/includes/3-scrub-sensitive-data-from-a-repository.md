@@ -4,7 +4,7 @@
 
 As a GitHub organization administrator, you may need to remove, or *scrub*, sensitive data from a repository. You may also need to take additional security steps, like changing security policies in response to an incident.
 
-:::image type="content" source="/media/scrubbing-sensitive-data-from-a-repository/sensitive-data.png" alt-text="A zoomed-in screenshot that shows a block of code, heavily pixelated to be incomprehensible, with two lines of code also struck through with red horizontal lines, indicating their high sensitivity":::
+:::image type="content" source="../media/sensitive-data.png" alt-text="A zoomed-in screenshot that shows a block of code, heavily pixelated to be incomprehensible, with two lines of code also struck through with red horizontal lines, indicating their high sensitivity":::
 
 You may remember from the scenario in the introduction that some of the most stressful and risky problems can involve sensitive data appearing in the code base. As you administer a new project with unfamiliar collaborators, you know that it is important to prevent these kinds of security risks from happening as much as possible. You also know that these problems will happen sooner or later, and it is important to be prepared, in order to minimize time spent resolving the issue and up-front costs (like paying a ransomware actor).
 
@@ -18,7 +18,7 @@ This section discusses the best way to deal with interactions between sensitive 
 
 It's possible to automate this process with freely available pre-commit hooks (scripts that Git executes prior to the commit event) that scan for sensitive data.
 
-:::image type="content" source="/media/scrubbing-sensitive-data-from-a-repository/pre-commit-hooks.png" alt-text="A flowchart with three stages, where the first and third stages are circles formed of dotted lines and the second stage is a large rectangle; red arrows point in sequence between the stages from left to right, and the stages are named 1. code edit, 2. pre-commit hooks, and 3. commit; the second stage shows the names of popular pre-commit hooks":::
+:::image type="content" source="../media/pre-commit-hooks.png" alt-text="A flowchart with three stages, where the first and third stages are circles formed of dotted lines and the second stage is a large rectangle; red arrows point in sequence between the stages from left to right, and the stages are named 1. code edit, 2. pre-commit hooks, and 3. commit; the second stage shows the names of popular pre-commit hooks":::
 
 Some of the most popular pre-commit hooks that serve this purpose include:
 

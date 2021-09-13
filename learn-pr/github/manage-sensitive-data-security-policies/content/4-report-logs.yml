@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.manage-sensitive-data-and-security-policies.report-logs
+uid: learn.github.manage-sensitive-data-security-policies.report-logs
 title: Reporting and logging
 metadata:
   unitType: learning-content
   title: Reporting and logging 
   description: Here you'll learn what your organization's audit log records, as well as how to access and export it.
-  ms.date: 09/09/2021
+  ms.date: 09/13/2021
   author: sterling463
   ms.author: csterling
   ms.topic: interactive-tutorial
