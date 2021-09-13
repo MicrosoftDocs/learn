@@ -37,7 +37,7 @@ units:
   - learn.github.manage-sensitive-data-security-policies.report-logs
   - learn.github.manage-sensitive-data-security-policies.exercise
   - learn.github.manage-sensitive-data-security-policies.knowledge-check
-  - learn.learn.github.manage-sensitive-data-security-policies.exercise.summary
+  - learn.learn.github.manage-sensitive-data-security-policies.summary
 
 badge:
   uid: learn.github.manage-sensitive-data-security-policies.badge
