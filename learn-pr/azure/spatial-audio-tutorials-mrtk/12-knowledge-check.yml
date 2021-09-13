@@ -30,7 +30,7 @@ quiz:
           isCorrect: true
         - content: "Doppler Level"
           isCorrect: false
-    - content: "Unreververated audio is called __________, and the audio after filtering with the reverb filter is called the __________"
+    - content: "Unreverberated audio is called __________, and the audio after filtering with the reverb filter is called the __________"
       choices:
         - content: "dry path, wet path"
           isCorrect: true
