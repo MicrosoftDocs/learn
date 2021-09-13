@@ -22,7 +22,7 @@ There are several ways of providing inputs. Inputs are given to trigger certain 
 
     Then click the **Update Collection** button to update the position of the Buttons object's child objects:
 
-    :::image type="content" source="../media/base-6-section-1-step-1-3.png" alt-text="Unity Buttons object with GridObjectCollection component added, configured, and applied" lightbox="../media/base-6-section-1-step-1-3..png":::
+    :::image type="content" source="../media/base-6-section-1-step-1-3.png" alt-text="Unity Buttons object with GridObjectCollection component added, configured, and applied" lightbox="../media/base-6-section-1-step-1-3.png":::
 
 4. In the Hierarchy window, name the buttons **Hints**, **Explode**, and **Reset**.For each button, select the **SeeItSayItLabel** > **TextMeshPro** child object, then in the Inspector window, change the respective **TextMeshPro - Text** component text to match the button names:
 
