@@ -4,7 +4,7 @@ In this exercise, You'll learn how to create speech commands and how to control 
 
 * In the Unity menu, select Mixed Reality > Toolkit > Utilities > **Configure Project for MRTK** to open the **MRTK Project Configurator window**. Then, in the **UWP Capabilities** section, verify that **Enable Microphone Capability** is greyed out:
 
-    ![Enable microphone capability](../media/base-9-section-1-step-1-1.png)
+    :::image type="content" source="../media/base-9-section-1-step-1-1.png" alt-text="Unity with Hints TextMeshPro object selected and EyeTrackingTarget component configured" lightbox="../media/base-9-section-1-step-1-1.png":::
 
 ## Create speech commands
 
@@ -14,7 +14,7 @@ In this exercise, You'll learn how to create speech commands and how to control 
     2) Clone the **DefaultMixedRealitySpeechCommandsProfile** and give it a suitable name for example, GettingStarted_MixedRealitySpeechCommandsProfile
     3) Verify that **Start Behavior** is set to **Auto Start**
 
-    ![Configure DefaultMixedRealitySpeechCommandsProfile](../media/base-9-section-2-step-1-1.png)
+    :::image type="content" source="../media/base-9-section-2-step-1-1.png" alt-text="Configure DefaultMixedRealitySpeechCommandsProfile" lightbox="../media/base-9-section-2-step-1-1.png":::
 
 2. In the Speech > **Speech Commands** section, click the **+ Add a New Speech Command** button four times to add four new speech commands to the list of the existing speech commands, and then in the **Keyword** fields enter the following phrases:
 
@@ -23,24 +23,24 @@ In this exercise, You'll learn how to create speech commands and how to control 
     3) Enable Bounds Control
     4) Disable Bounds Control
 
-    ![Add speech commands](../media/base-9-section-2-step-1-2.png)
+    :::image type="content" source="../media/base-9-section-2-step-1-2.png" alt-text="Add speech commands" lightbox="../media/base-9-section-2-step-1-2.png":::
 
 ## Control speech commands
 
 1. In the Project window, navigate to the **Package** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
 
-    ![Opening tooltip folder](../media/base-9-section-3-step-1-1.png)
+    :::image type="content" source="../media/base-9-section-3-step-1-1.png" alt-text="Opening tooltip folder" lightbox="../media/base-9-section-3-step-1-1.png":::
 
 2. In the Hierarchy window, right-click on an **empty spot** and select Create Empty to add an empty object to your scene. Name the object **SpeechInputHandler_Global**, and then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component and configure it as follows:
 
     1) **Unselect** the **Is Focus Required** checkbox, so the user isn't required to look at the object with the SpeechInputHandler component to trigger the speech command.
     2) From the Project window, assign the **SpeechConfirmation Tooltip** prefab to the **Speech Confirmation Tooltip** Prefab field, to have this prefab appear when a speech command is recognized.
 
-    ![Configuring speech input handler component](../media/base-9-section-3-step-1-2.png)
+    :::image type="content" source="../media/base-9-section-3-step-1-2.png" alt-text="Configuring speech input handler component" lightbox="../media/base-9-section-3-step-1-2.png":::
 
 3. On the SpeechInputHandler component, click the small + icon three times to add three keyword elements:
 
-    ![Adding keyword elements to speech input handler](../media/base-9-section-3-step-1-3.png)
+    :::image type="content" source="../media/base-9-section-3-step-1-3.png" alt-text="Adding keyword elements to speech input handler" lightbox="../media/base-9-section-3-step-1-3.png":::
 
 4. Expand **Element 0** and configure it as follows:
     1) In the **Keyword** field, enter **Enable Indicator**, to reference the Enable Indicator speech command you created in the previous section.
@@ -49,7 +49,7 @@ In this exercise, You'll learn how to create speech commands and how to control 
     4) From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set this function as the action to be executed when the event is triggered.
     5) Select the argument checkbox, so it's **selected**
 
-    ![Configure keyword element 0](../media/base-9-section-3-step-1-4.png)
+    :::image type="content" source="../media/base-9-section-3-step-1-4.png" alt-text="Configure keyword element 0" lightbox="../media/base-9-section-3-step-1-4.png":::
 
 5. Expand **Element 1** and configure it as follows:
 
@@ -63,7 +63,7 @@ In this exercise, You'll learn how to create speech commands and how to control 
     8) From the **No Function** dropdown, select **ObjectManipulator** > **bool enabled** to update this property value when the event is triggered
     9) Select the argument checkbox, so it's **selected**.
 
-    ![Configure keyword element 1](../media/base-9-section-3-step-1-5.png)
+    :::image type="content" source="../media/base-9-section-3-step-1-5.png" alt-text="Configure keyword element 1"../media/base-9-section-3-step-1-5.png":::
 
 6. Expand **Element 2** and configure it as follows:
     1) In the **Keyword** field, enter **Disable Bounds Control**, to reference the Disable Bounds Control command you created in the previous section.
@@ -76,13 +76,13 @@ In this exercise, You'll learn how to create speech commands and how to control 
     8) From the **No Function** dropdown, select **ObjectManipulator** > **bool enabled** to update this property value when the event is triggered.
     9) Verify that the argument checkbox is **unselected**.
 
-    ![Configure keyword element 2](../media/base-9-section-3-step-1-6.png)
+    :::image type="content" source="../media/base-9-section-3-step-1-6.png" alt-text="Configure keyword element 2]"../media/base-9-section-3-step-1-6.png":::
 
 7. In the Hierarchy window, select the **RoverExplorer** > **RoverAssembly** object, and then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component and configure it as follows:
     1) Verify that the **Is Focus Required** checkbox is **selected**, so the user is required to look at the object with the SpeechInputHandler component, that is, the RoverAssembly, to trigger the speech command.
     2) From the Project window, assign the **SpeechConfirmation Tooltip** prefab to the Speech **Confirmation Tooltip Prefab** field, to have this prefab appear when a speech command is recognized.
 
-    ![Add speech input handler to Rover Assembly](../media/base-9-section-3-step-1-7.png)
+    :::image type="content" source="../media/base-9-section-3-step-1-7.png" alt-text="Add speech input handler to Rover Assembly]"../media/base-9-section-3-step-1-7.png":::
 
 8. On the SpeechInputHandler component, click the small + icon to add a keyword element, expand the newly created element, and then configure it as follows:
     1) In the **Keyword** field, enter **Enable Tap to Place**, to reference the Enable Tap to Place command you created in the previous section.
@@ -91,4 +91,4 @@ In this exercise, You'll learn how to create speech commands and how to control 
     4) From the **No Function** dropdown, select **TapToPlace** > **bool enabled** to update this property value when the event is triggered.
     5) Select the argument checkbox, so it's **selected**
 
-    ![Configure speech input handler on Rover Assembly](../media/base-9-section-3-step-1-8.png)
+    :::image type="content" source="../media/base-9-section-3-step-1-8.png" alt-text="Configure speech input handler on Rover Assembly]"../media/base-9-section-3-step-1-8.png":::
