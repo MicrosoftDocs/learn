@@ -7,7 +7,7 @@ Download and import the [MRTK.Tutorials.PCHolographicRemoting.unitypackage](http
 
 After importing the tutorial assets, your Project window should look similar to this:
 
-![Project window](../../media/a.png)
+![Project window](../../media/Tutorial1-Section2-Step1-1.png)
 
 ## [Legacy WSA](#tab/wsa)
 
@@ -18,4 +18,4 @@ Download and import the [MRTK.Tutorials.PCHolographicRemoting.unitypackage](http
 
 After importing the tutorial assets, your Project window should look similar to this:
 
-![After importing the tutorial assets](../../media/b.png)
+![After importing the tutorial assets](../../media/Tutorial1-Section2-Step1-1.png)
