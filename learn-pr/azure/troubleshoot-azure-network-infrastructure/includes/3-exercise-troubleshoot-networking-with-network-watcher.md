@@ -139,8 +139,8 @@ To enable Network Watcher, run this command. Replace (match) `<location>` with t
 ```azurecli
 az network watcher configure \
     --enabled true \
-    --resource-group $RG
-    --locations <location> \
+    --resource-group $RG \
+    --locations <location>
 ```
 
 ## Use Network Watcher to show the topology
@@ -155,7 +155,7 @@ Now, you can use Network Watcher to troubleshoot connectivity between two VMs in
 
 1. In the dropdown fields, select your **Subscription** and **Resource Group** for this exercise. The Network Watcher topology pane displays the network topology for the virtual network you created at the beginning of this exercise, **MyVNet1**.
 
-    ![Screenshot that shows the exercise network topology.](../media/3-network-topology.png)
+   :::image type="content" source="../media/3-network-topology.png" alt-text="Screenshot showing the exercise network topology.":::
 
 ## Use Connection Monitor to run tests from the backend to the frontend
 
@@ -186,7 +186,7 @@ The topology appears to be correct. To get more information, let's set up some t
 
 1. At the far right of each endpoint in the list, select the ellipsis, and then select **Enable Network Watcher**. It may take some time for each endpoint to deploy. Watch for a notification to appear in your global controls at the top right of the page header.
 
-    ![Screenshot that shows enabling of Network Watcher.](../media/3-enable-network-watcher.png)
+    :::image type="content" source="../media/3-enable-network-watcher.png" alt-text="Screenshot that shows enabling of Network Watcher.":::
 
 1. Select **BackendVM** from the expanded Azure endpoint list.
 
@@ -304,7 +304,7 @@ Let's use the IP flow verify tool to get more information.
     | Remote port | 3389 |
     | | |
 
-    ![Screenshot that shows an IP flow test.](../media/3-ip-flow-test.png)
+    :::image type="content" source="../media/3-ip-flow-test.png" alt-text="Screenshot showing an IP flow test.":::
 
 1. The Result shows Access denied because of NSG and security rules.
 

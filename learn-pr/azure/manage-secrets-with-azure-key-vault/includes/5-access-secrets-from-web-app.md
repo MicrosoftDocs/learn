@@ -60,7 +60,8 @@ cd KeyVaultDemoApp
 code .
 ```
 
-After the editor loads, to add the NuGet package containing `AddAzureKeyVault` and restore all of the app's dependencies, in Azure Cloud Shell, run the following commands.
+After the editor loads, add the NuGet package containing `AddAzureKeyVault` and restore all of the app's dependencies.
+In Azure Cloud Shell, run the following commands.
 
 ```console
 dotnet add package Azure.Identity
@@ -70,9 +71,17 @@ dotnet restore
 
 ### Add code to load and use secrets
 
-To demonstrate good usage of Key Vault, we will modify our app to load secrets from the vault at startup. We'll also add a new controller with an endpoint that gets our **SecretPassword** secret from the vault.
+To demonstrate good usage of Key Vault, modify your app to load secrets from the vault at startup. You'll also add a new controller with an endpoint that gets your **SecretPassword** secret from the vault.
 
-First, the app startup: Open `Program.cs`, delete the contents and replace them with the following code:
+First, the app startup: 
+
+Enter the following command to launch the editor
+
+```console
+code .
+```
+
+Open `Program.cs`, delete the contents and replace them with the following code:
 
 ```csharp
 using System;

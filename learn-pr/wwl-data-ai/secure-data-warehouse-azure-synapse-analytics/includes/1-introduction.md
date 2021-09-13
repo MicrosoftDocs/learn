@@ -3,7 +3,7 @@ In this module, you will learn how to approach and implement security to protect
 In this module, you will:
 
 - Understand network security options for Azure Synapse Analytics
-- Configure conditional access
+- Configure Conditional Access
 - Configure Authentication
 - Manage authorization through column and row level security
 - Manage sensitive data with Dynamic Data masking
