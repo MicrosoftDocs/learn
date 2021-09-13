@@ -20,7 +20,7 @@ In this exercise, you'll:
 1. In the **Create a project to get started** pane, enter the following details for your new project:
 
     * **Project name**: Use a meaningful but short name. For this exercise, enter **toy-website**.
-    * **Visibility**: You can use Azure DevOps to create public and private repositories. You create a private repository because your toy company website files should be accessed only by people inside your organization. You can grant access to other users later.
+    * **Visibility**: You can use Azure DevOps to create public and private repositories. In this case, the repository should be private because your company website files should be accessed only by people within your organization. You can grant access to other users later.
 
     Your project configuration should look like this example:
 
@@ -32,15 +32,15 @@ In this exercise, you'll:
 
 1. In the Welcome pane, or on the resource menu, select **Repos**.
 
-    :::image type="content" source="../../includes/media/azure-devops-repos-menu.png" alt-text="Screenshot of Azure DevOps that shows the Repos icon highlighted on Welcome pane and in resource menu.":::
+    :::image type="content" source="../../includes/media/azure-devops-repos-menu.png" alt-text="Screenshot of Welcome pane that shows the Repos icons highlighted on pane and in resource menu.":::
 
 1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the username and password displayed to somewhere safe.
 
 1. In the **Clone to your computer** section, select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open in Visual Studio Code**.
 
-    :::image type="content" source="../media/3-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps showing repository settings with the Clone in VS Code button highlighted.":::
+    :::image type="content" source="../media/3-clone-visual-studio-code.png" alt-text="Screenshot showing repository settings with the Clone in VS Code button highlighted.":::
 
-1. If prompted to allow an extension to open the repository URI, select **Open**.
+1. If a dialog box appears, prompting you to allow an extension to open the repository URI, select **Open**.
  
 1. Create a folder on your local device to use for this repository, and then select **Select Repository Location**.
 
@@ -52,7 +52,7 @@ In this exercise, you'll:
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
 
-    :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code prompt to open the cloned repository, with the Open button highlighted.":::
+    :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code dialog box to open the cloned repository, with the Open button highlighted.":::
 
 ## Install the Azure Pipelines extension
 
@@ -76,7 +76,7 @@ Now that you've created your organization, project, and repository, you're ready
 
     :::image type="content" source="../media/3-visual-studio-code-pipeline-file.png" alt-text="Screenshot of Visual Studio Code Explorer showing the deploy folder and the azure-pipelines dot Y M L file that was just created.":::
 
-1. The YML fie is open in the main panel. Paste the following pipeline definition code into the file:
+1. The YML file is open in the main panel. Paste the following pipeline definition code into the file:
 
     :::code language="yaml" source="code/3-pipeline.yml":::
 
@@ -92,11 +92,11 @@ Now that you've created your organization, project, and repository, you're ready
 
 ## Set up the pipeline in Azure Pipelines
 
-You've created a pipeline definition. Next, register the pipeline with Azure Pipelines. This procedure follows the Create Pipeline worflow built into Azure.
+You've created a pipeline definition. Next, register the pipeline with Azure Pipelines. This procedure follows the Create Pipeline workflow built into Azure.
 
 1. In the resource menu of your Azure DevOps session, select **Pipelines**, and in the resulting **Create your first Pipeline** pane, select **Create Pipeline**.
 
-    :::image type="content" source="../media/3-create-pipeline.png" alt-text="Screenshot of Azure DevOps with Pipelines highlighted in resource menu and create your first pipeline pane with Create Pipeline button highlighted.":::
+    :::image type="content" source="../media/3-create-pipeline.png" alt-text="Screenshot of create your first pipeline pane with Pipelines highlighted in resource menu Create Pipeline button highlighted.":::
 
 1. On the **Connect** tab (**Where is your code?** pane), select **Azure Repos Git**.
 
@@ -104,24 +104,24 @@ You've created a pipeline definition. Next, register the pipeline with Azure Pip
 
 1. On the **Select** tab (**Select a repository** pane), select **toy-website**.
 
-    :::image type="content" source="../media/3-create-pipeline-repo.png" alt-text="Screenshot of Azure DevOps that shows Configure your pipeline tab with the toy-website repository selected.":::
+    :::image type="content" source="../media/3-create-pipeline-repo.png" alt-text="Screenshot that shows Configure your pipeline tab with the toy-website repository selected.":::
 
 1. On the **Configure** tab (**Configure your pipeline** pane), select **Existing Azure Pipelines YAML file**.
 
-    :::image type="content" source="../media/3-create-pipeline-configure.png" alt-text="Screenshot of Azure DevOps that shows Existing Azure Pipelines YAML File option highlighted.":::
+    :::image type="content" source="../media/3-create-pipeline-configure.png" alt-text="Screenshot that shows Existing Azure Pipelines YAML File option highlighted.":::
 
 1. On **Select an existing YAML file** pane, in **Path** dropdown, select */deploy/azure-pipelines.yml*, and then select **Continue**.
 
     :::image type="content" source="../media/3-create-pipeline-yaml-file.png" alt-text="Screenshot of the Azure DevOps 'Select an existing YAML file' pane, with Path set to the pipeline file and the Continue button highlighted.":::
 
-    The Review tab (**Review yur Pipeline YAML** pane) shows your YAML pipeline definition as a new pipeline.
+    The Review tab (**Review your Pipeline YAML** pane) shows your YAML pipeline definition as a new pipeline.
 
     > [!TIP]
     > The Azure Pipelines web interface provides an editor that you can use to manage your pipeline definition. In this module, you work with the definition file in Visual Studio Code, but you can explore the Azure Pipelines editor to see how it works.
 
 1. Select **Run**.
 
-    :::image type="content" source="../media/3-create-pipeline-run.png" alt-text="Screenshot of Azure DevOps that shows the Create Pipeline flow's Review step, with the Run button highlighted.":::
+    :::image type="content" source="../media/3-create-pipeline-run.png" alt-text="Screenshot that shows the Create Pipeline flow's Review step, with the Run button highlighted.":::
 
     Azure Pipelines creates the pipeline and starts a first run.
 
@@ -129,7 +129,7 @@ You've created a pipeline definition. Next, register the pipeline with Azure Pip
 
 1. When the pipeline run starts, a page displays information about the run.
 
-    :::image type="content" source="../media/3-pipeline-run-queued.png" alt-text="Screenshot of Azure DevOps that shows the pipeline, with the job in the queued state.":::
+    :::image type="content" source="../media/3-pipeline-run-queued.png" alt-text="Screenshot that shows the pipeline, with the job in the queued state.":::
 
     Each pipeline run includes an identifier. You can use this identifier to help you find a specific pipeline run.
 
@@ -139,17 +139,17 @@ You've created a pipeline definition. Next, register the pipeline with Azure Pip
 
 1. Refresh the page until the job status changes to **Success**. Then, under **Jobs**, select **Job**.
 
-    :::image type="content" source="../media/3-pipeline-run-success.png" alt-text="Screenshot of Azure DevOps that shows the pipeline, with the job with a Success status and the job name highlighted.":::
+    :::image type="content" source="../media/3-pipeline-run-success.png" alt-text="Screenshot that shows the pipeline, with the job with a Success status and the job name highlighted.":::
 
 1. The job information page shows the log of the steps that the pipeline ran. Your **Placeholder step** is listed in the steps in the left menu.
 
-    :::image type="content" source="../media/3-pipeline-job-summary.png" alt-text="Screenshot of Azure DevOps that shows the pipeline job log, with the 'Placeholder step' highlighted.":::
+    :::image type="content" source="../media/3-pipeline-job-summary.png" alt-text="Screenshot that shows the pipeline job log, with the 'Placeholder step' highlighted.":::
 
     The list of steps in the job includes steps that you didn't create. These steps are created automatically by Azure Pipelines. In some organizations, you might also see steps that your organization automatically includes in all its pipelines. You can select any step to view the log file of that step.
 
 1. Select the **Checkout toy-website@main to s**.
 
-    :::image type="content" source="../media/3-pipeline-job-checkout-log.png" alt-text="Screenshot of Azure DevOps that shows the pipeline job log, with the 'Checkout' step highlighted.":::
+    :::image type="content" source="../media/3-pipeline-job-checkout-log.png" alt-text="Screenshot that shows the pipeline job log, with the 'Checkout' step highlighted.":::
 
     The log for each step provides details about exactly what happened during the pipeline run. Log information is helpful if you need to diagnose a problem with a pipeline. You don't have direct access to the agent that ran your steps.
 
@@ -157,9 +157,9 @@ You've created a pipeline definition. Next, register the pipeline with Azure Pip
 
 1. Select **Placeholder step**.
 
-   :::image type="content" source="../media/3-pipeline-job-placeholder-log.png" alt-text="Screenshot of Azure DevOps that shows the pipeline job log, with the 'Placeholder step' step highlighted and details shown.":::
+   :::image type="content" source="../media/3-pipeline-job-placeholder-log.png" alt-text="Screenshot that shows the pipeline job log, with the 'Placeholder step' step highlighted and details shown.":::
 
-   The log for this step include the contents of the script as you created it in your pipeline's YAML file and the `Hello world!` text output from running the script.
+   The log for this step includes the contents of the script as you created it in your pipeline's YAML file and the `Hello world!` text output from running the script.
 
 ## Link pipeline execution to a commit
 
@@ -167,7 +167,7 @@ It's good to understand how to cross-reference a pipeline run to the commit that
 
 1. To return to the repository overview, in the DevOps resource menu, select **Repos** > **Commits**.
 
-   :::image type="content" source="../media/3-pipeline-commit.png" alt-text="Screenshot of Azure DevOps that shows the commits pane, with the commit identifier and succeeded state highlighted.":::
+   :::image type="content" source="../media/3-pipeline-commit.png" alt-text="Screenshot that shows the commits pane, with the commit identifier and succeeded state highlighted.":::
 
     The commit identifier is the same as the commit identifier you noted from your pipeline run. Also, Azure Pipelines displays the status of the pipeline run that's associated with the commit.
 
