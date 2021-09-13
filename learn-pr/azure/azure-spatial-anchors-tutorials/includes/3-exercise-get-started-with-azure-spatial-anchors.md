@@ -142,7 +142,7 @@ In the previous sections, you learned the fundamentals of Azure Spatial Anchors.
 
 2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **Rover** folder, then click-and-drag the **RoverExplorer_Complete** prefab into the Hierarchy window to add it to the scene:
 
-    :::image type="content" source="../media/asa-02-section-8-step-1-2.png" alt-text="Adding object to the Scene"../media/asa-02-section-8-step-1-2.png":::
+    :::image type="content" source="../media/asa-02-section-8-step-1-2.png" alt-text="Adding object to the Scene" lightbox="../media/asa-02-section-8-step-1-2.png":::
 
 3. With the newly added RoverModule_Complete object still selected in the Hierarchy window, drag it onto the **ParentAnchor** object to make it a child of the ParentAnchor object:
 
