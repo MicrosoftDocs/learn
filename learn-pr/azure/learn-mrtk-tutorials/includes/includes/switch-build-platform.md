@@ -49,5 +49,5 @@
 
 3. When Unity has finished switching the platform, click the red **x** icon to close the Build Settings window:
 
-    :::image type="content" source="../../media/base-2-section-2-step-1-4..png" alt-text="Unity Build Window with close icon highlighted" lightbox="../../media/base-2-section-2-step-1-4..png":::
+    :::image type="content" source="../../media/base-2-section-2-step-1-4.png" alt-text="Unity Build Window with close icon highlighted" lightbox="../../media/base-2-section-2-step-1-4.png":::
   

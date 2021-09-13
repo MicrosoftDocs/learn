@@ -84,7 +84,7 @@ effect, click on **Apply** to restart the Unity editor
 
 2. In the Project Settings window, select **Player** > **Publishing Settings**, then in the **Package name** field, enter a suitable name, for example, _MRTKTutorials-GettingStarted_:
 
-    :::image type="content" source="../../media/base-2-section-5-step-2-2.png" alt-text=Unity Publishing Settings. Package name configured" lightbox="../../media/base-2-section-5-step-2-2.png":::
+    :::image type="content" source="../../media/base-2-section-5-step-2-2.png" alt-text="Unity Publishing Settings. Package name configured" lightbox="../../media/base-2-section-5-step-2-2.png":::
 
     > [!NOTE]
     > The 'Package name' is the unique identifier for the app. You should change this identifier before deploying the app to avoid overwriting previously installed apps.
@@ -125,7 +125,7 @@ effect, click on **Apply** to restart the Unity editor
 
 8. Click on **Approve** Button to add the **Mixed Reality Toolkit** into the project.
 
-    :::image type="content" source="../../media/base-2-section-4-step-1-7.png" alt-text="MixedRealityFeatureTool Validate package" lightbox=../../media/base-2-section-4-step-1-7.png":::
+    :::image type="content" source="../../media/base-2-section-4-step-1-7.png" alt-text="MixedRealityFeatureTool Validate package" lightbox="../../media/base-2-section-4-step-1-7.png":::
 
 ## Configure the Unity project
 
@@ -135,14 +135,14 @@ effect, click on **Apply** to restart the Unity editor
 
 2. Click on **Built-in Unity Plugin(non-OpenXR)** to Enable XR Plugin Management and add its required packages into your project.
 
-    :::image type="content" source="../../media/base-2-section-5-step-1-2-xr-sdk.png" alt-text="MRTK configurator tool"../../media/base-2-section-5-step-1-2-xr-sdk.png":::
+    :::image type="content" source="../../media/base-2-section-5-step-1-2-xr-sdk.png" alt-text="MRTK configurator tool" lightbox="../../media/base-2-section-5-step-1-2-xr-sdk.png":::
 
     > [!NOTE]
     > The above screenshot is from Unity 2020, if you using Unity 2019 please select **XR SDK/XR Management**
 
 3. this imports required unity packages for XR Plugin Management, once done click on **Show Settings** in MRTK project Configurator.
 
-    :::image type="content" source="../../media/base-2-section-5-step-1-3-xr-sdk.png" alt-text="Player settings window" lightbox=../../media/base-2-section-5-step-1-3-xr-sdk.png":::
+    :::image type="content" source="../../media/base-2-section-5-step-1-3-xr-sdk.png" alt-text="Player settings window" lightbox="../../media/base-2-section-5-step-1-3-xr-sdk.png":::
 
 4. This opens **Project Settings window**, In the Project Settings window under **XR Plug-in Management** Ensure that you are in Universal Windows Platform settings also Ensure **Initialize XR on Startup** is checked, and check **Windows Mixed Reality** checkbox.
 
@@ -216,11 +216,11 @@ effect, click on **Apply** to restart the Unity editor
 
 3. Click on next button to enable XR pipeline settings for Legacy XR.
 
-    :::image type="content" source="../../media/base-2-section-5-step-1-3.png" alt-text= "Unity Configure Unity Project menu path 2="../../media/base-2-section-5-step-1-3.png":::
+    :::image type="content" source="../../media/base-2-section-5-step-1-3.png" alt-text= "Unity Configure Unity Project menu path 2=" lightbox="../../media/base-2-section-5-step-1-3.png":::
 
 4. In the MRTK Project Configurator window, ensure all options are checked and also use the **Audio spatializer** dropdown to select the **MS HRTF Spatializer**, then click the **Apply** button to apply the setting:
 
-    :::image type="content" source="../../media/base-2-section-5-step-1-4.png" alt-text= "MRTK configuration window"../../media/base-2-section-5-step-1-4.png":::
+    :::image type="content" source="../../media/base-2-section-5-step-1-4.png" alt-text= "MRTK configuration window" lightbox="../../media/base-2-section-5-step-1-4.png":::
     
 5. Click on **Next** then click on**Done** button in MRTK Project Configurator window to finish the Unity project configuration for Legacy XR.
 
@@ -229,10 +229,10 @@ effect, click on **Apply** to restart the Unity editor
 1. In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
 In the Project Settings window, select **Player** > **XR Settings**, then use the **Depth Format** dropdown to select **16-bit depth**:
 
-    :::image type="content" source="../../media/base-2-section-5-step-2-1.png" alt-text= "Unity Enable 16 Depth"../../media/base-2-section-5-step-2-1.png":::
+    :::image type="content" source="../../media/base-2-section-5-step-2-1.png" alt-text= "Unity Enable 16 Depth" lightbox="../../media/base-2-section-5-step-2-1.png":::
    
 
 2. In the Project Settings window, select **Player** > **Publishing Settings**, then in the **Package name** field, enter a suitable name, for example, _MRTKTutorials-GettingStarted_:
 
-    :::image type="content" source="../../media/base-2-section-5-step-2-2.png" alt-text= "Unity Publishing Settings. Package name configured"../../media/base-2-section-5-step-2-2":::
+    :::image type="content" source="../../media/base-2-section-5-step-2-2.png" alt-text= "Unity Publishing Settings. Package name configured" lightbox="../../media/base-2-section-5-step-2-2":::
 
