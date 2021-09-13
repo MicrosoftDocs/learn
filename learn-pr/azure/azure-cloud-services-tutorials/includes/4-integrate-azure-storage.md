@@ -10,4 +10,4 @@ Azure Blob storage is Microsoft's object storage solution for the cloud. Blob st
 
 ## Azure Storage Explorer
 
-Azure Storage Explorer is an application which helps you to easily access the Azure storage account through any device on any platform, be it Windows, MacOS, or Linux. You can easily connect to your subscription and manipulate your tables, blobs, queues, and files. In addition to these, you can connect to and manipulate Azure Cosmos DB Storage and Azure Data Lake Storage as well.
+Azure Storage Explorer is an application which helps you to easily access the Azure storage account through any device on any platform, be it Windows, macOS, or Linux. You can easily connect to your subscription and manipulate your tables, blobs, queues, and files. In addition to these, you can connect to and manipulate Azure Cosmos DB Storage and Azure Data Lake Storage as well.
