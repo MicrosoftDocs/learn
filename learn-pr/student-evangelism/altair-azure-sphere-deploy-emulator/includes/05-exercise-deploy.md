@@ -192,8 +192,8 @@ Ignore this step unless you have built the Altair front panel kit.
 
 ## Expected device behavior
 
-Observe the WLAN status LED on your developer board while the device establishes a secure connection to IoT Central and the MQTT Broker
+Observe the WLAN status LED on your developer board while the device establishes a secure connection to IoT Central and the MQTT broker
 
 1. While establishing a WiFi connection the WLAN LED will blink on for 700 ms, then off for 700 ms.
-1. While establishing a connection to IoT Central and the MQTT Broker the WLAN LED will blink on for 100 ms, then off for 1300 ms.
+1. While establishing a connection to IoT Central and the MQTT broker the WLAN LED will blink on for 100 ms, then off for 1300 ms.
 1. When the connection has been established with IoT Central the WLAN LED will blink on for 1400 ms, then off for 100 ms.

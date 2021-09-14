@@ -1,4 +1,4 @@
-In this exercise, you'll create the client certificates for the test.mosquitto.org MQTT Broker.
+In this exercise, you'll create the client certificates for the test.mosquitto.org MQTT broker.
 
 ## Install openssl
 

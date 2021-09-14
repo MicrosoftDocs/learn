@@ -2,7 +2,7 @@ This unit summaries the main steps completed in this module.
 
 In this module, you learned how to:
 
-1. Deploy an MQTT Broker.
+1. Deploy an MQTT broker.
 1. Install Let's Encrypt.
 1. Install the virtual disk server.
 

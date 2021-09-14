@@ -19,7 +19,7 @@ The Altair emulator consists of two applications, one high-level application, an
 
 1. The **Altair emulator** high-level application is responsible for running the Altair emulator and managing communications.
 
-    - The Altair project is a dual communications stack project. The built-in Azure IoT C SDK is used for communications with IoT Central. The Altair emulator's stdin, stdout, and disk requests are passed over MQTT and a back-end MQTT Broker.
+    - The Altair project is a dual communications stack project. The built-in Azure IoT C SDK is used for communications with IoT Central. The Altair emulator's stdin, stdout, and disk requests are passed over MQTT and a back-end MQTT broker.
 
 1. The **Altair disk cache service** real-time application.
 

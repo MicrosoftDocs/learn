@@ -73,7 +73,7 @@ Install the Visual Studio Code Static Web Apps Extension from the [Extension Mar
 1. Rename the **local.settings.sample.json** file to **local.settings.json**.
 1. Open the **local.settings.json** file.
 
-The MQTT Broker configuration is prepopulated for the **test.mosquitto.org** public MQTT Broker.
+The MQTT broker configuration is prepopulated for the **test.mosquitto.org** public MQTT broker.
 
 Configure the IoT Central settings using the IoT Central API Token and URL that you saved to Notepad.
 
@@ -138,6 +138,6 @@ When authenticated, connect to the Altair emulator. You'll need the name of your
 1. Paste the device name and select **Connect**.
 1. Add the Altair Web Terminal page to your web browser favorites.
 
-The MQTT Broker status message changes to **Connecting...**, when it has successfully connected, the status will change to **Connected**.
+The MQTT broker status message changes to **Connecting...**, when it has successfully connected, the status will change to **Connected**.
 
 :::image type="content" source="../media/web-terminal-connect.png" alt-text="Screenshot that shows how to connect the web terminal to the MQTT broker.":::
