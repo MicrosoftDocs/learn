@@ -5,7 +5,7 @@ You should now be able to:
 - Configure and deploy Azure AD Connect.
 - Configure password had synchronization.
 - Implement pass-through authentication.
-- Select and configure the optimal authentication medthod based on your security posture.
+- Select and configure the optimal authentication method based on your security posture.
 - Deploy password writeback.
 
 
