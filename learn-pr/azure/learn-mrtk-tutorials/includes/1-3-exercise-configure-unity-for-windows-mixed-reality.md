@@ -1,6 +1,6 @@
 Before you can get started creating an immersive experience for Windows Mixed Reality, you must configure your Unity Project for Windows Mixed Reality development. Unity offers some behaviors specific to mixed reality that can be modified through project settings. Here you'll create a new Unity project and configure it for Windows Mixed Reality development.
 
-## Create a new Unity project
+## Create a new unity project
 
 1. Launch the **Unity Hub**, select the **Projects** tab, and click the **down arrow** next to the **New** button.
 

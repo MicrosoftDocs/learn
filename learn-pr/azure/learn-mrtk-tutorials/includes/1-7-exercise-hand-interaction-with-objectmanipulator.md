@@ -1,6 +1,6 @@
 The ObjectManipulator script makes an object movable, scalable, and rotatable using one or two hands. This script supports the direct manipulation input model as the script enables the user to touch holograms directly with their hands. Here you'll create a cube and use ObjectManipulator to enable hand interactions so that you can move, scale, and rotate the cube.
 
-## Add a Cube to the scene
+## Add a cube to the scene
 
 1. In the Unity menu, select **GameObject** > **3D Object** > **Cube** to add a cube object to the scene.
 
@@ -45,16 +45,16 @@ Object Manipulator script to the cube object.
     > [!NOTE]
     > When you add a Object Manipulator (Script), in this case, the Constraint Manager (Script) is automatically added because Object Manipulator (Script) depends on it.
 
-## Move the Cube in play mode
+## Move the cube in play mode
 
 * In the Unity toolbar, click the **Play** icon to enter play mode.
 Using the Unity in-editor input simulation, press the space bar on your keyboard to simulate hand input with the right hand.
  
     :::image type="content" source="../media/base-2-section-8-step-1-4.gif" alt-text="Move the cube." lightbox="../media/base-2-section-8-step-1-4.gif":::
 
-## Build your application to HoloLens 2
+## Build your application to holoLens 2
 
-## 1. Build the Unity project
+## 1. Build the unity project
 
 1. In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window.
 

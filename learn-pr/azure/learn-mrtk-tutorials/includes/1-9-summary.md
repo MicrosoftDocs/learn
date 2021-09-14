@@ -2,7 +2,7 @@ In this module, you imported the Mixed Reality Toolkit into your Unity Windows M
 
 Using scripts included with the Mixed Reality Toolkit, you can configure basic object interactions without the need to create your own custom scripts. This can accelerate your mixed reality development and get you from concept to a finished mixed reality experience faster.
 
-## Next Steps
+## Next steps
 
 You can continue to add objects to your scene and try different interaction models to manipulate various 2D and 3D objects with scripts included with the MRTK Foundation package. Consider trying the following interactions:
 
@@ -13,7 +13,7 @@ You can continue to add objects to your scene and try different interaction mode
 
 You can complete your mixed reality experience by building the Unity project and deploying to your preferred device. In Unity, ensure that you first save the scene and add to the Scenes in Build window within Build Settings.
 
-## Further Reading
+## Further reading
 
 * Sign up for the [Mixed Reality Developer](https://mixedreality.microsoftcrmportals.com/signup/?Place=APRIL) Program to receive the latest on mixed reality developer tools, events, and early access offers.
 
