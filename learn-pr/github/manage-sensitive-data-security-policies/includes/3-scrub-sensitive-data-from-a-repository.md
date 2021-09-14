@@ -22,10 +22,10 @@ Some of the most popular pre-commit hooks that serve this purpose include:
 
 - Gitleaks
 - pre-commit plugins
-  - `detect-aws-credentials` 
+  - `detect-aws-credentials`
   - `detect-private-key`
   - `secrets_filename`
-s
+
 ## Scrub the repository
 
 This section explains the two primary methods for removing unwanted files from a repository's history: the `git filter-repo` command and the BFG Repo-Cleaner open source tool. It also covers what GitHub support technicians can do if you determine that high-risk data has made its way into a repository.
@@ -70,10 +70,10 @@ See the [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/)'s documen
 ### git filter-repo
 
 > [!Warning]
-> If you run `git filter-repo` after stashing changes, you won't be 
-> able to retrieve your changes with other stash commands. Before 
-> running `git filter-repo`, we recommend unstashing any changes 
-> you've made. To unstash the last set of changes you've stashed, 
+> If you run `git filter-repo` after stashing changes, you won't be
+> able to retrieve your changes with other stash commands. Before
+> running `git filter-repo`, we recommend unstashing any changes
+> you've made. To unstash the last set of changes you've stashed,
 > run `git stash show -p | git apply -R`
 
 To illustrate how `git filter-repo` works, we'll show you how to remove your file with sensitive data from the history of your repository and add it to `.gitignore` to ensure that it is not accidentally re-committed.
