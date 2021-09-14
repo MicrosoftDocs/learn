@@ -2,7 +2,7 @@
 uid: learn.create-iot-device-dotnet
 metadata:
   moduleType: standard
-  title: create-iot-device-dotnet
+  title: Construct Internet of Things devices using the .NET IoT Libraries
   description: "In this module, you'll learn how to read environmental sensors and activate relays using the .NET IoT Libraries."
   ms.date: 9/13/2021
   author: CamSoper
