@@ -1,12 +1,12 @@
 {
   "redirections": [
     {
-      "source_path": "learn-pr/azure/use-container-dev-env-vs-code/4-forward-ports.md",
+      "source_path": "learn-pr/azure/use-docker-container-dev-env-vs-code/4-forward-ports.md",
       "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/use-docker-container-dev-env-vs-code",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/use-container-dev-env-vs-code/5-exercise-forward-ports.md",
+      "source_path": "learn-pr/azure/use-docker-container-dev-env-vs-code/5-exercise-forward-ports.md",
       "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/use-docker-container-dev-env-vs-code",
       "redirect_document_id": false
     },
