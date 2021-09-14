@@ -9,7 +9,7 @@ metadata:
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: dotnet # Edit as appropriate for your portfolio area
-title: create-iot-device-dotnet
+title: Construct Internet of Things devices using the .NET IoT Libraries
 summary: "Read environmental sensors and activate relays using the .NET IoT Libraries."
 abstract: |
   By the end of this module, you'll be able to:
@@ -23,7 +23,7 @@ prerequisites: |
   - Basic understanding of Raspberry Pi.
   - .NET SDK 5 or greater.
   - The following hardware components:
-    - A Raspberry Pi device (2 or greater) configured as described in the introduction unit.
+    - A Raspberry Pi device (2 or greater).
     - BME280 humidity/barometric pressure/temperature sensor breakout ([example](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout)).
     - 5 mm LED ([example](https://www.adafruit.com/product/4203)).
     - 1.0K Ω resistor ([example](https://www.adafruit.com/product/4294)).
