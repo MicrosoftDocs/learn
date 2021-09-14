@@ -41,7 +41,7 @@ bicep build main.bicep
 ::: zone-end
 
 > [!NOTE]
-> When you run the `build` command, Bicep also transpiles your Bicep code to a JSON Resource Manager template. You generally don't need the file that it outputs, so you can ignore it.
+> When you run the `build` command, Bicep also transpiles your Bicep code to a JSON ARM template. You generally don't need the file that it outputs, so you can ignore it.
 
 Because you want your Bicep templates to be linted each time anyone checks in code to your repository, you can add a lint stage and job to your pipeline:
 
