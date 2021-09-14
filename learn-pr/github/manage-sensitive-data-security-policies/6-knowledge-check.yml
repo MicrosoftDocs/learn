@@ -13,7 +13,6 @@ metadata:
 durationInMinutes: 5
 content: |
 quiz:
-  title: Check your knowledge
   questions:
   - content: "What file should you use to create documentation for collaborators that lists supported versions of the project?"
     choices:

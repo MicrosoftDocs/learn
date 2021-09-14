@@ -105,7 +105,7 @@ When you identify a security threat, your team's response will go beyond patchin
 
 GitHub security advisories provide a historical narrative for users that demonstrates that you understand the nature of the threat, have addressed the immediate threat, and have taken steps to prevent similar threats in the future.
 
-:::image type="content" source="../media/security-advisories-goals.png" alt-text="A flowchart showing three steps: 1. understanding, 2. action, and 3. practices revision; arrows point in sequence between the numbers, and from step 3 to step 1 again":::
+:::image type="content" source="../media/security-advisories-goals.png" alt-text="An image showing three steps to security advisories.":::
 
 In service of these goals, a security advisory should be comprehensive and include following information:
 
