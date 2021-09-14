@@ -1,3 +1,10 @@
+
+## What is an access review?
+
+An **Access Review** as the name implies, is a planned review of the access needs, rights, and history of user access.  Access Reviews help users ensure that the right people have the right access to the right resources
+They mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity.  Finally, the access review is performed in Azure AD Identity Governance.  An Azure AD premium P2 license is required.
+
+
 Consider your organizational needs to determine the strategy for deploying access reviews in your environment.
 
 ## Engage the right stakeholders
@@ -156,7 +163,7 @@ We recommend that group owners review membership, as they're best situated to kn
 
 ### Review membership of exclusion groups in CA policies
 
-There are times when Conditional Access (CA) policies designed to keep your network secure shouldn't apply to all users. For example, a CA policy that only allows users to sign in while on the corporate network may not apply to the sales team, which travels extensively. In that case, the sales team members would be put into a group and that group would be excluded from the CA policy.
+There are times when Conditional Access policies designed to keep your network secure shouldn't apply to all users. For example, a CA policy that only allows users to sign in while on the corporate network may not apply to the sales team, which travels extensively. In that case, the sales team members would be put into a group and that group would be excluded from the CA policy.
 
 ### Review external users' group memberships
 

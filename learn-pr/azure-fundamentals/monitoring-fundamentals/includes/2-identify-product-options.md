@@ -8,6 +8,8 @@ Several basic questions or concerns face all companies that use the cloud.
 - How can we quickly determine the cause of an outage?
 - How can we learn about planned downtime?
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWHb7u]
+
 Fortunately, by using a combination of monitoring solutions on Azure, you can:
 - Gain answers, insights, and alerts to help ensure that you've optimized your cloud usage.
 - Ascertain the root cause of unplanned issues.

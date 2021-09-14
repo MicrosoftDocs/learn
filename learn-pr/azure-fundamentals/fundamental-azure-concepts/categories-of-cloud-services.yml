@@ -4,13 +4,14 @@ title: Describe different cloud services
 metadata:
   title: Describe different cloud services
   description: "In this unit, you'll learn about the different categories of cloud services."
-  ms.date: 05/31/2021
+  ms.date: 09/13/2021
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  adobe-target: true
 azureSandbox: false
+sandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/4-categories-of-cloud-services.md)]

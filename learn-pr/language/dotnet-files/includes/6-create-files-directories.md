@@ -21,7 +21,7 @@ Sometimes, you'll need to check if a directory already exists. For example, you 
 To see if a directory exists, you use the `Directory.Exists` method.
 
 ```csharp
-bool doesDirectoryExists = Directory.Exists(filePath);
+bool doesDirectoryExist = Directory.Exists(filePath);
 ```
 
 ## Create files

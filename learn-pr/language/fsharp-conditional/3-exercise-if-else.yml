@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-conditional.exercise-if-else
+title: Exercise - Apply conditional logic
+metadata:
+  title: Exercise - Apply conditional logic
+  description: Apply conditional logic to describe different playing cards.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/23/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-exercise-if-else.md)]

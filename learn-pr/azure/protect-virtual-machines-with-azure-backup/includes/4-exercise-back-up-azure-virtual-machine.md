@@ -42,6 +42,7 @@ az vm create \
     --resource-group $RGROUP \
     --name NW-APP01 \
     --size Standard_DS1_v2 \
+    --public-ip-sku Standard \
     --vnet-name NorthwindInternal \
     --subnet NorthwindInternal1 \
     --image Win2016Datacenter \
@@ -74,16 +75,20 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
     ![Screenshot that shows searching for virtual machines.](../media/4-portal-vms.png)
 
+    The **Virtual machines** pane appears.
+
 1. From the list, select the **NW-RHEL01** virtual machine that you created.
 
     ![Screenshot that shows selecting a virtual machine.](../media/4-portal-select-linux-vm.png)
 
-1. In the middle menu pane, scroll down to **Operations**, and select **Backup**. The **Backup** pane for NW-RHEL01 appears.
+    The **NW-RHEL01** virtual machine pane appears.
+
+1. In the middle menu pane, scroll down to **Operations**, and select **Backup**. The **Backup** pane for the NW-RHEL01 virtual machine appears.
 
 1. Under the **Summary** section, ensure the following information exists for creating a backup.
 
     - **Recovery services vault**: **azure-backup** for the name.
-    - **Backup policy**: **DailyPolicy**, which is a daily backup at 12:00 PM UTC, and a retention range of 180 days.
+    - **Backup policy**: **DailyPolicy-xxxxxxxx**, which creates a daily backup at 12:00 PM UTC with a retention range of 180 days.
 
     ![Screenshot that shows the backup options.](../media/4-portal-azure-backup.png)
 
@@ -144,26 +149,24 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 ### View the status of a backup for a single virtual machine
 
-1. Sign in to the [Azure portal](https://portal.azure.com/).
-
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
 
-1. Select the **NW-APP01** virtual machine.
+1. If the list is long, select **Add filter**. For Filter, selectTtype, for **Value**, select **Select all** to clear all selections, then select  **Virtual machine**, and select **Apply**.
 
-1. In the middle menu pane, under **Operations**, select **Backup**.
+1. Select the **NW-APP01** virtual machine. The **NW-APP01** virtual machine pane appears.
 
-    **Last backup status** displays the current status of the backup.
+1. In the middle menu pane, scroll to **Operations**, and select **Backup**. The **Backup** pane for the NW-APP01 virtual machine appears.
+
+    Under the **Backup status** section, the **Last backup status** field displays the current status of the backup.
 
     ![Screenshot of the Backup page after it has been set up.](../media/4-portal-backup-setup.png)
 
 ### View the status of backups in the Recovery Services vault
 
-1. Sign in to the [Azure portal](https://portal.azure.com/).
-
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
 
-1. Select the **azure-backup** Recovery Services vault.
+1. Sort the list by *Type*, and then select the **azure-backup** Recovery Services vault. The **Azure-backup** recovery services vault pane appears.
 
-1. Select the **Backup** tab on the **Overview** page to see a summary of all the backup items, the storage being used, and the current status of any backup jobs.
+1. On the **Overview** pane, select the interior **Backup** tab to display a summary of all the backup items, the storage being used, and the current status of any backup jobs.
 
     ![Screenshot of the Backup dashboard.](../media/4-recovery-services-vault.png)

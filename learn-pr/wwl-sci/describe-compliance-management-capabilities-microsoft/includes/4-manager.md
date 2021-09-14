@@ -27,6 +27,8 @@ Compliance Manager tracks the following types of controls:
 - **Your controls**: sometimes referred to as customer-managed controls, these are implemented and managed by the organization.
 - **Shared controls**: responsibility for implementing these controls is shared by the organization and Microsoft.
 
+Compliance Manager continuously assesses controls by scanning through your Microsoft 365 environment and detecting your system settings, continuously and automatically updating your technical action status.
+
 ## Assessments
 
 An assessment is a grouping of controls from a specific regulation, standard, or policy. Completing the actions within an assessment helps to meet the requirements of a standard, regulation, or law. For example, an organization may have an assessment that, when the admin completes all actions within it, it helps to bring the organization’s Microsoft 365 settings in line with ISO 27001 requirements.
@@ -39,7 +41,7 @@ Assessments have several components:
 - **Shared controls**: responsibility for implementing these controls is shared by the organization and Microsoft.
 - **Assessment score**: shows the progress in achieving total possible points from actions within the assessment that are managed by the organization and by Microsoft.
 
-When creating assessments, an admin will assign them to a group. The admin can configure groups in whatever way is most logical for the organization. For example, they might group assessments by audit year, region, solution, teams within the organization, or some other way. Once the admin has created groups, the admin can [filter the Compliance Manager dashboard](/microsoft-365/compliance/compliance-manager-setup#filtering-your-dashboard-view) to view the score by one or more groups.
+When creating assessments, an admin will assign them to a group. The admin can configure groups in whatever way is most logical for the organization. For example, they might group assessments by audit year, region, solution, teams within the organization, or some other way. Once the admin has created groups, the admin can [filter the Compliance Manager dashboard](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-setup?view=o365-worldwide#filtering-your-dashboard-view) to view the score by one or more groups.
 
 ## Templates
 

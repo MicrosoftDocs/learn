@@ -24,11 +24,11 @@ Memory and I/O resources are virtualized in Xen in a way similar to that describ
 3. _[Xen Open Source Community](http://www.xen.org)_
 4. _[Amazon Elastic Compute Cloud](https://aws.amazon.com/ec2/)_
 5. _F. Zhou, M. Goel, P. Desnoyers, and R. Sundaram (March 2011). [Scheduler Vulnerabilities and Attacks in Cloud Computing](https://www.researchgate.net/publication/50251994_Scheduler_Vulnerabilities_and_Attacks_in_Cloud_Computing)_
-6. _C. Boulton (Serverwatch, 2007). [Novell Microsoft Outline Virtual Collaboration](http://www.internetnews.com/dev-news/article.php/3659331)_
+6. _C. Boulton (Serverwatch, 2007). [Novell Microsoft Outline Virtual Collaboration](https://www.internetnews.com/developer/novell-microsoft-outline-virtual-collaboration/)_
 
 [^1]: <https://huanliu.wordpress.com/2012/03/13/amazon-data-center-size/> "H. Liu (2012). *Amazon Data Center Size*"
 [^2]: <https://ce.guilan.ac.ir/images/other/soft/distribdystems.pdf> "G. Coulouris, J. Dollimore, T. Kindberg, and G. Blair (May 2011). *Distributed Systems: Concepts and Design*"
 [^3]: <http://www.xen.org> "Xen Open Source Community"
 [^4]: <https://aws.amazon.com/ec2/> "Amazon Elastic Compute Cloud"
 [^5]: <https://www.researchgate.net/publication/50251994_Scheduler_Vulnerabilities_and_Attacks_in_Cloud_Computing>  "F. Zhou, M. Goel, P. Desnoyers, and R. Sundaram (March 2011). *Scheduler Vulnerabilities and Attacks in Cloud Computing*"
-[^6]: <http://www.internetnews.com/dev-news/article.php/3659331> "C. Boulton (Serverwatch, 2007). *Novell Microsoft Outline Virtual Collaboration*"
+[^6]: <https://www.internetnews.com/developer/novell-microsoft-outline-virtual-collaboration/> "C. Boulton (Serverwatch, 2007). *Novell Microsoft Outline Virtual Collaboration*"

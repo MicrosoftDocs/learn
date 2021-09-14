@@ -18,7 +18,7 @@ One part of pre-deployment planning is determining which service tier and size a
 
 The hands-on exercises focused on Azure SQL Database. If you want to try out your new deployment and configuration toolbox in Azure SQL Managed Instance, see:
 
-- [Migrate to Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance-migrate?azure-portal=true)
+- [Migrate to Azure SQL Managed Instance](/azure/dms/tutorial-sql-server-managed-instance-online)
 - [Quickstart: Create a managed instance](/azure/sql-database/sql-database-managed-instance-get-started?azure-portal=true)
 - [Azure SQL Managed Instance pools](/azure/sql-database/sql-database-instance-pools-how-to#create-an-instance-pool?azure-portal=true)
 

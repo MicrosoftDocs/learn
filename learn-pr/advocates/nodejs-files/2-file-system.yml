@@ -19,7 +19,7 @@ quiz:
       choices:
         - content: "List the contents of a folder"
           isCorrect: true
-          explanation: "The `readdir` and `readdirasync` methods list items in a directory"
+          explanation: "The `readdir` and `readdirasync` methods list items in a directory."
         - content: "Compose file and folder paths"
           isCorrect: false
-          explanation: "The fs module is for reading files and folders, not for manipulating paths"
+          explanation: "The fs module is for reading files and folders, not for manipulating paths."

@@ -672,3 +672,23 @@ achievements:
   title: Extract insights from videos with the Video Indexer service
   summary: Extract insights from videos with the Video Indexer service
   iconUrl: /learn/achievements/extract-insights-from-videos-with-the-video-indexer-service.svg
+- uid: learn.data-ai.evaluate-text-with-language-services.trophy
+  type: trophy
+  title: Evaluate text with Azure Cognitive Language Services
+  summary: Learn how to use Cognitive Language Services to analyze text, determine intent, detect adult themes, and process natural language input.
+  iconUrl: /learn/achievements/data-ai/evaluate-text-with-language-services.svg
+- uid: learn.data-ai.create-bots-with-the-azure-bot-service.trophy
+  type: trophy
+  title: Create Intelligent Bots with the Azure Bot Service
+  summary: Allowing customers to interact with computer applications in a conversational way using text, graphics, or speech, can be realized using Bots. It may be a simple question and answer dialog, or a sophisticated bot that allows people to interact with services in an intelligent manner using pattern matching, state tracking and artificial intelligence techniques well integrated with existing business services. Learn how to build a chat bot and add intelligence to the Bot by integrating QnA Maker and LUIS.
+  iconUrl: /learn/achievements/data-ai/create-bots-with-the-azure-bot-service.svg
+- uid: learn.data-ai.create-and-publish-a-luis-model.badge
+  type: badge
+  title: Add conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
+  summary: In this module, we'll introduce you to Language Understanding Intelligent Service (LUIS) and show how to create a LUIS application.
+  iconUrl: /learn/achievements/data-ai/create-and-publish-a-luis-model.svg
+- uid: learn.wwl.build-chat-bot-with-azure-portal.badge
+  type: badge
+  title: Build a chat bot with the Azure portal
+  summary: Build a chat bot with the Azure portal
+  iconUrl: /learn/achievements/build-a-chat-bot-with-the-azure-portal.svg

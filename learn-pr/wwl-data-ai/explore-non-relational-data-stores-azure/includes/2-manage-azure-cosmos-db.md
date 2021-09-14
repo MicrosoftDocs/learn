@@ -102,7 +102,7 @@ You can use the Data Migration tool to import data to Azure Cosmos DB from a var
 - HBase
 - Azure Cosmos containers
 
-The Data Migration tool is available as a [download from GitHub](https://github.com/Azure/azure-documentdb-datamigrationtool). The tool guides you through the process of migrating data into a Cosmos DB database. You're prompted for the source of the data (one of the items listed above), and the destination (the Cosmos DB database and container). The tool can either populate an existing container, or create a new one if the specified container doesn't already exist.
+The Data Migration tool is available as a [download from GitHub](https://github.com/Azure/azure-documentdb-datamigrationtool	). The tool guides you through the process of migrating data into a Cosmos DB database. You're prompted for the source of the data (one of the items listed above), and the destination (the Cosmos DB database and container). The tool can either populate an existing container, or create a new one if the specified container doesn't already exist.
 
 > [!NOTE]
 > You can also use the Data Migration tool to export data from a Cosmos DB container to a JSON file, either held locally or in Azure Blob storage

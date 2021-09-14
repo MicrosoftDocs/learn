@@ -15,4 +15,4 @@ resource myFirstDeploymentScript 'Microsoft.Resources/deploymentScripts@2019-10-
   }
 }
 
-output scriptResult string = reference('myFirstDeploymentScript').outputs.text
+output scriptResult string = myFirstDeploymentScript.properties.outputs.text

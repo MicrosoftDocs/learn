@@ -12,7 +12,7 @@ Let's start by creating a new virtual machine in the Azure portal.
 
 1. On the home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and in the *Popular offers* list, select **Create**  under **Virtual machine**. The **Create a virtual machine** pane appears.
+1. In the left menu pane, select **Compute**, and in the *Popular offers* list, under **Virtual machine**, select **Create**. The **Create a virtual machine** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -44,9 +44,7 @@ The next step is to create the logic app that will run when a virtual machine ch
 
 1. In the top left, select **Home** to open **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Integration**, select **Logic App (Consumption)** from the Popular Offers in Marketplace. The **Logic App (Consumption)** pane appears.
-
-1. Select **Create**. The **Create a logic app** pane appears.
+1. In the left menu pane, select **Integration**, and in the *Popular offers* list, under **Logic App (Consumption)**, select **Create**. The **Create a logic app** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -71,13 +69,13 @@ The next step is to create the logic app that will run when a virtual machine ch
 
     :::image type="content" source="../media/3-choose-logic-app-template.png" alt-text="Template for a blank logic app."::: 
 
-1. Within the designer, in the search box, enter **event grid** as your filter. From the list of triggers, select **When a resource event occurs**.
+1. Within the designer, in the search box, enter *event grid* as your filter. From the list of triggers, select **When a resource event occurs**.
 
     :::image type="content" source="../media/3-logic-app-event-grid-trigger.png" alt-text="Selections for adding an Event Grid trigger.":::
 
 1. When prompted, sign in to the **Microsoft Learn Sandbox** organization using your Azure account credentials.
 
-1. On the Apps Designer in **When a resource event occurs** select the following values from the dropdown lists to subscribe your logic app to publisher events:
+1. On the Apps Designer in **When a resource event occurs**, select the following values from the dropdown lists to subscribe your logic app to publisher events:
 
     | Field | Value |
     | --- | --- |
