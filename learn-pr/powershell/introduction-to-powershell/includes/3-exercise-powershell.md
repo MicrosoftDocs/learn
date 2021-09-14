@@ -1,8 +1,8 @@
-In this unit, you'll use Azure Cloud Shell as a Linux terminal. You also can access the Cloud Shell through the Azure portal or at [Cloud Shell sign-in](https://shell.azure.com). You don't need to install anything on your PC or laptop to use the Azure Cloud shell.
+In this unit, you'll use Azure Cloud Shell as a Linux terminal. You also can access the Cloud Shell through the Azure portal or at [Cloud Shell sign-in](https://shell.azure.com). You don't need to install anything on your PC or laptop to use the Azure Cloud Shell.
 
 Before beginning this exercise, be sure to activate the sandbox.
 
-1. Run the following command to verify that your system is set up to use PowerShell. The `$PSVersionTable verifies your installation. Copy the following command and paste it into the Azure Cloud Shell on the right, and then press <kbd>Enter</kbd>.
+1. Run the following command to verify that your system is set up to use PowerShell. The `$PSVersionTable` verifies your installation. Copy the following command and paste it into the Azure Cloud Shell on the right, and then press <kbd>Enter</kbd>.
 
    ```powershell
    $PSVersionTable
