@@ -32,7 +32,7 @@ Before we add the Orders function app to the API, let's test the function it hos
     
 1. Select **Close** to close the Input Output tabs for Code + Test.
 
-1. On the commans bar of the  OrderDetails Code + Test pane, select **Get function URL**. Notice that the URL is the name of the function within the **azurewebsites.net** domain. Copy and save this URL for later in this exercise.
+1. On the command bar of the  OrderDetails Code + Test pane, select **Get function URL**. Notice that the URL is the name of the function within the **azurewebsites.net** domain. Copy and save this URL for later in this exercise.
 
 ## Add another function to an existing API
 
@@ -58,7 +58,7 @@ In this step, we'll add the Order function to the API Management resource that w
     | Administrator email | Accept the default value |
     | Pricing tier | Consumption |
 
-1. Select **Export** to provision a linked API Management instance. This may take several minutes.
+1. Select **Export** to provision a linked API Management instance. This operation may take several minutes.
 
 1. On the command bar, select **Go to API Management**. The **API Management service** Overview pane appears.
 
@@ -86,7 +86,7 @@ In this step, we'll add the Order function to the API Management resource that w
 
     ![Screenshot of the Create from Function App dialog populated with details of the Orders function.](../media/5-complete-function-import.png)
 
-    The Orderfunction API Management service **APIs** pane  displays the OrderFunctionnnnn api with the Deisgn tab selected.
+    The OrderFunction API Management service **APIs** pane displays the Design tab of OrderFunctionnnnn api.
 
 ## Test the OnlineStore orders endpoint in the portal
 
@@ -104,7 +104,7 @@ Now that we've added OrderDetails to our API, let's test it by using the API Man
 
 ## Test the combined API
 
-We can use the `curl` command-line tool to submit requests to our API. It's ideal because we can use it to include the correct subscription key with our requests. To submit requests, we also need the location of the API, which is hosted in Azure API Management and consists of the Products and Orders functions.
+We can use the `curl` command-line tool to submit requests to our API. cURL is ideal because we can include the correct subscription key with a request. A request also needs the location of the API, which is hosted in Azure API Management and, in this case consists of the Products and Orders functions.
 
 1. In the Azure resource menu or from home, select **All resources**.
  
@@ -112,13 +112,13 @@ We can use the `curl` command-line tool to submit requests to our API. It's idea
 
 1. In the **Essentials** section of the **Overview** pane, hover over the **URL** and select the **Copy to clipboard** icon.
 
-1. In The Azure Cloud Shell to the right, run the following command, pasting the **URL** value that you just copied in place of the token, and then press <kbd>Enter</kbd>.
+1. In The Azure Cloud Shell to the right, run the following command, replacing the URL placeholder with the **URL** value that you copied to your clipboard, and then press <kbd>Enter</kbd>.
 
     ```bash
     GATEWAY_URL=<paste the URL here>
     ```
 
-1. In the Azure portal, On the OrderFunction API Management service mneu, scroll down to **API**, and select **API Management**. The **API Management** pane appears for your **OrderFunction** function app.
+1. In Azure, on the OrderFunction API Management service menu, scroll down to **API**, and select **API Management**. The **API Management** pane appears for your **OrderFunction** function app.
 
 1. In the command bar, select **Go to API Management**. The **API Management service** pane appears.
 
@@ -150,4 +150,4 @@ We can use the `curl` command-line tool to submit requests to our API. It's idea
 
     The command returns the details of a product. You can also try the command with IDs 1 and 3 for different results.
 
-Notice that both the functions can now be called through endpoints within the **azure-api.net** domain, which is the domain used by Azure API Management. We can also access them both by using the same subscription key, because that key grants access to the API Management gateway. In other Learn modules, you can learn how to apply policies, security settings, external caches, and other features to all the functions in an API Management Gateway. The gateway provides you with a central control point, where you can manage multiple microservices without altering their code.
+Notice that both the functions can now be called through endpoints within the **azure-api.net** domain, which is the domain used by Azure API Management. We can also access them both by using the same subscription key, because that key grants access to the API Management gateway. In other Learn modules, you can learn how to apply policies, security settings, external caches, and other features to the functions in an API Management Gateway. A gateway provides you with a central control point, where you can manage multiple microservices without altering their code.
