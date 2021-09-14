@@ -19,21 +19,21 @@ quiz:
     choices:
     - content: "Add a reference to the target project."
       isCorrect: false
-      explanation: "Incorrect, you need to import both the namespace and add a reference to the project you'd like to test."
-    - content: "Both import the namespace and add a project reference"
+      explanation: "Incorrect. That's only one of the necessary tasks."
+    - content: "Both import the namespace and add a project reference".
       isCorrect: true
-      explanation: "Correct! You need to import both the namespace and add a reference to the project you'd like to test."
-    - content: "Import the namespace, add a project reference, and add @test decorator on the test method."
+      explanation: "Correct! You need to both import the namespace and add a reference to the project that you want to test."
+    - content: "Import the namespace, add a project reference, and add the @test decorator on the test method."
       isCorrect: false
-      explanation: "Incorrect, the @test decorator is a java idiom. .NET uses [TestMethod], but this decorator is normally already included as part of the template."
-  - content: Which of the following cause a test to fail?
+      explanation: "Incorrect. The @test decorator is a Java idiom. .NET uses [TestMethod], but this decorator is normally included as part of the template."
+  - content: Which of the following causes a test to fail?
     choices:
     - content: "A failing assert statement is the only reason a test would fail."
       isCorrect: false
-      explanation: "Incorrect, tests can fail even if all the assert statements are passing."
-    - content: "A test fails when **most** asserts in the test are failing."
+      explanation: "Incorrect. Tests can fail even if all the assert statements are passing."
+    - content: "A test fails when *most* asserts in the test are failing."
       isCorrect: false
-      explanation: "Tests will fail if there is at least one failing assert."
-    - content: "Tests can fail for various reasons including at least one failing assert, an uncaught exception, or if the test times out."
+      explanation: "Incorrect. Tests will fail if there is at least one failing assert."
+    - content: "Tests can fail for various reasons, including at least one failing assert, an uncaught exception, or test time-out."
       isCorrect: true
       explanation: "Correct! There are several reasons a test may fail. Always check the test output to determine the cause of a failure."

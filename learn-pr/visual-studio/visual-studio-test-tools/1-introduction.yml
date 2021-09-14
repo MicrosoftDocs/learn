@@ -3,7 +3,7 @@ uid: learn.visual-studio.visual-studio-test-tools.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Learn how to write a test in C# and .NET and use the Visual Studio Test Explorer. Sharpen your test writing skills with fluent assertions, data driven tests, and mocking.
+  description: Learn how to write a test in C# and .NET, and how to use Visual Studio Test Explorer. Sharpen your test-writing skills with Fluent Assertions, data-driven tests, and mocking.
   author: kendrahavens
   ms.author: kehavens
   ms.date: 07/19/2021
