@@ -31,16 +31,16 @@ Here, you add a new stage to your pipeline that runs the what-if operation.
 
    :::image type="content" source="../media/7-environments-new.png" alt-text="Screenshot of the Azure DevOps interface that shows the Environments page, with the button for creating an environment highlighted.":::
 
-1. Enter the environment name **Website**.
+1. Enter **Website** as the environment name.
 
-   Leave the description blank. For the **Resource**, select **None**.
-
-   :::image type="content" source="../media/7-environments-new-details.png" alt-text="Screenshot of the Azure DevOps page for a new environment, with the details completed and the Create button highlighted.":::
+   Leave the description blank. For **Resource**, select **None**.
 
    > [!NOTE]
    > In Azure Pipelines, environments are used to enable deployment features. Some of these features apply only when you're deploying to Kubernetes or to virtual machines. In this module, we don't use these features and you can ignore them.
 
 1. Select **Create**.
+
+   :::image type="content" source="../media/7-environments-new-details.png" alt-text="Screenshot of the Azure DevOps page for a new environment, with the details completed and the Create button highlighted.":::
 
 ## Add an approval check to the environment
 
@@ -54,17 +54,17 @@ Here, you add a new stage to your pipeline that runs the what-if operation.
 
 1. In the **Approvers** text box, type your own name and select yourself.
 
-   :::image type="content" source="../media/7-add-check-approval-details.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding an approval check, with the details completed and the Create button highlighted.":::
-
 1. Select the arrow button next to **Advanced**.
 
    Notice that, by default, approvers are allowed to approve the runs that they've triggered. Because you're the only person who will work with this pipeline, leave this checkbox selected.
 
 1. Select **Create**.
 
+   :::image type="content" source="../media/7-add-check-approval-details.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding an approval check, with the details completed and the Create button highlighted.":::
+
 ## Update the pipeline definition to require an environment and approval
 
-Here, you configure the **Deploy** stage to run against the **Website** environment that you created previously. You convert the **Deploy** stage to run a deployment job instead of a standard job, and configure it to deploy to the environment.
+Here, you configure the **Deploy** stage to run against the **Website** environment that you created previously. You convert the **Deploy** stage to run a deployment job instead of a standard job, and you configure it to deploy to the environment.
 
 1. In the *azure-pipelines.yml* file in Visual Studio Code, replace the **Deploy** stage definition with the following code:
 
@@ -113,7 +113,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
    :::code language="output" source="code/7-what-if-output.txt" :::
 
-   The what-if operation has detected a change to the website resource. However, the changes that it has detected are *noise*. They don't represent real changes to your resource. Over time, the Azure team works to reduce noise. In the meantime, for these two specific properties, you can ignore the detected changes.
+   The what-if operation has detected a change to the website resource. However, the changes that it has detected are noise. They don't represent real changes to your resource. Over time, the Azure team works to reduce noise. In the meantime, for these two specific properties, you can ignore the detected changes.
 
    > [!NOTE]
    > You might also see an item in the what-if output for the resource type `microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - toywebsite`. This is a resource that Application Insights creates automatically. The what-if command detects that no change will be made to the resource.
@@ -126,11 +126,11 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
 1. Select the **Review** button on the approval panel.
 
-1. In the **Comment** field, enter **Reviewed what-if results**.
-
-   :::image type="content" source="../media/7-pipeline-run-approve.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline approval page, with the Approve button highlighted.":::
+1. In the **Comment** box, enter **Reviewed what-if results**.
 
 1. Select **Approve**.
+
+   :::image type="content" source="../media/7-pipeline-run-approve.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline approval page, with the Approve button highlighted.":::
 
 ## Observe the successful deployment
 

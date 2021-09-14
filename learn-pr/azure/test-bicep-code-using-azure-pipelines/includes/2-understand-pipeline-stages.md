@@ -40,7 +40,7 @@ So, the goal is to shift the discovery of problems toward the left of the preced
 > If the validation succeeds, you have some confidence that the change won't cause problems when it's merged to your main branch. If the check fails, you know there's more work to do to before the pull request is ready to merge.
 
 > [!IMPORTANT]
-> Automated validation and tests are only as effective as the tests that you write. It's important to consider the things you need to test and the steps you need to perform to be confident that your deployment is OK.
+> Automated validation and tests are only as effective as the tests you write. It's important to consider the things you need to test and the steps you need to perform to be confident that your deployment is OK.
 
 ## Define a pipeline stage
 

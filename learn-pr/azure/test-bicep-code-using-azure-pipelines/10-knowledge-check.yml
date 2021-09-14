@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: Add an approval check to the pipeline.
       isCorrect: false
-      explanation: Incorrect. An approval check enables you to manually verify the status of your environment or pipeline. It doesn't help to reduce the chance of an invalid template being submitted to Azure.
+      explanation: Incorrect. An approval check enables you to manually verify the status of your environment or pipeline. It doesn't reduce the chance of an invalid template being submitted to Azure.
     - content: Run preflight validation within your pipeline.
       isCorrect: true
       explanation: Correct. The preflight validation process performs validation of your template. It reports errors that prevent the template deployment from being submitted to Azure.
     - content: Add a rollback stage to your pipeline.
       isCorrect: false
-      explanation: Incorrect. You can add a rollback stage to reverse the effects of a stage that's failed, but it doesn't help to validate the Bicep file that you submit.
+      explanation: Incorrect. You can add a rollback stage to reverse the effects of a stage that's failed, but it doesn't validate the Bicep file that you submit.
   - content: Which of these is an example of negative testing?
     choices:
     - content: Manually approving a pipeline run.

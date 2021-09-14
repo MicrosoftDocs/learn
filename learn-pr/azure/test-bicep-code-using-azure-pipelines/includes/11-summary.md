@@ -7,14 +7,12 @@ Now, you can be more confident that your automated deployments will succeed and 
 ## References
 
 - [Shifting left](/devops/develop/shift-left-make-testing-fast-reliable)
-- Stages
-  - [Stages](/azure/devops/pipelines/process/stages?tabs=yaml)
+- [Stages](/azure/devops/pipelines/process/stages?tabs=yaml)
   - [Conditions](/azure/devops/pipelines/process/stages?tabs=yaml#conditions)
   - [Parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs)
 - [Pipeline artifacts](/azure/devops/pipelines/artifacts/pipeline-artifacts?tabs=yaml)
 - [Bicep linter](/azure/azure-resource-manager/bicep/linter)
-- Environments
-  - [Environments](/azure/devops/pipelines/process/environments)
+- [Environments](/azure/devops/pipelines/process/environments)
   - [Deployment jobs](/azure/devops/pipelines/process/deployment-jobs)
 - [Pipeline approvals and checks](/azure/devops/pipelines/process/approvals)
 - [Branch policies](/azure/devops/repos/git/branch-policies)

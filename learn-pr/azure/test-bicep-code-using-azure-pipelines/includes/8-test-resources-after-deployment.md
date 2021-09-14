@@ -2,7 +2,7 @@ By validating and previewing your Bicep deployment, you've been able to build co
 
 In this unit, you'll learn about tests that you can run after your deployment finishes. You'll also learn about rolling back your deployment, if things don't turn out as you expected.
 
-## Testing your resources after they're deployed
+## Run smoke tests and negative tests
 
 When you define resources in a Bicep file, your goal isn't just to create resources in Azure. It's to deliver value to your organization, while meeting your organization's requirements. When you validate and preview your Bicep files, you gain confidence that the resource definitions are valid. But you don't necessarily know that the resources will actually do what you want.
 
@@ -16,7 +16,7 @@ Even when you're just deploying basic Bicep files, it's worth considering how yo
 - When you deploy a website, try to reach the web application from your pipeline. Verify that your pipeline connects to the website successfully and receives a valid response code.
 - When you deploy a content delivery network (CDN), try to connect to a resource through the CDN. Verify that the pipeline connects to the CDN successfully and receives a valid response code.
 
-These tests are sometimes called *infrastructure smoke tests*. Smoke testing is a simple form of testing designed to uncover major issues in your deployment.
+These tests are sometimes called *infrastructure smoke tests*. Smoke testing is a simple form of testing designed to uncover major problems in your deployment.
 
 > [!NOTE]
 > Some Azure resources aren't easy to reach from a Microsoft-hosted pipeline agent. You might need to consider using a self-hosted agent to run smoke test stages if they require access to resources through private networks. 
@@ -28,7 +28,7 @@ It's also a good idea to perform *negative testing*. Negative testing helps you 
 
 ### Run tests from Azure Pipelines
 
-There are many ways you can run tests in your pipeline. In this module, we use Pester, which is an open-source tool that runs tests written through PowerShell. You might choose to use a different test framework, or even choose to run your tests without a test tool.
+There are many ways you can run tests in your pipeline. In this module, we use Pester, which is an open-source tool that runs tests written through PowerShell. You might choose to use a different test framework or even choose to run your tests without a test tool.
 
 > [!NOTE]
 > Another test tool to consider is PSRule for Azure, which includes prebuilt rules and tests for Azure. It can run validation on your templates and also run tests against your deployed Azure resources. We link to PSRule in the summary.
@@ -59,7 +59,7 @@ Now, any steps within the smoke test job can access the `myVariable` value like 
 
 It's also possible to run other types of tests from a deployment pipeline, including performance tests and security penetration tests. These are outside the scope of this module, but they can add a lot of value to an automated deployment process.
 
-## Rolling back and rolling forward
+## Roll back or roll forward
 
 Suppose your pipeline deploys your resources successfully, but your tests fail. What should you do then?
 
