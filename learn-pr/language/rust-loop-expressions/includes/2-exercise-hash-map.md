@@ -126,9 +126,9 @@ You should see the following output:
 
 The current program fulfills each car order and prints a summary after each order is complete. Each call to the `car_factory` function fulfills an order by returning a `Car` struct with the order details. The result is stored in the `car` variable. 
 
-As you probably noticed, the program lacks some important functionality. We're aren't keeping track of all the orders. The `car` variable holds only the details for the current order. Whenever the `car` variable is updated with the result from the `car_factory` function, details for the previous order are overwritten. 
+As you probably noticed, the program lacks some important functionality. We aren't keeping track of all orders. The `car` variable holds only the details for the current order. Whenever the `car` variable is updated with the result from the `car_factory` function, details for the previous order are overwritten. 
 
-We need to update the program to keep track of all the orders like in a filing system. For this purpose, we'll define a hash map with \<K, V> pairs. The hash map keys will correspond to the car order numbers. The hash map values will be the order details for each each as defined in a `Car` struct.
+We need to update the program to keep track of all the orders like in a filing system. For this purpose, we'll define a hash map with \<K, V> pairs. The hash map keys will correspond to the car order numbers. The hash map values will be the order details for each as defined in a `Car` struct.
 
 1. To define the hash map, add the following code at the beginning of the `main` function, right after the opening curly brace `{`:
 
@@ -154,18 +154,18 @@ The next step is to add each fulfilled car order to the hash map.
 
 In the `main` function, we call the `car_factory` function for each car order. After the order is fulfilled, we call the `println!` macro to show the order details stored in the `car` variable:
 
-    ```rust
-        // Car order #1: Used, Hard top
-        car = car_factory(order, 1000);
-        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
+```rust
+    // Car order #1: Used, Hard top
+    car = car_factory(order, 1000);
+    println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
 
-        ...
+    ...
 
-        // Car order #6: Used, Hard top
-        order = order + 1;
-        car = car_factory(order, 4000);
-        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
-    ```
+    // Car order #6: Used, Hard top
+    order = order + 1;
+    car = car_factory(order, 4000);
+    println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
+```
 
 We're going to revise these code statements to work with our new hash map:
 
@@ -245,7 +245,7 @@ Car order 5: Some(Car { color: "Blue", motor: Manual, roof: true, age: ("Used", 
 Car order 6: Some(Car { color: "Green", motor: Automatic, roof: true, age: ("Used", 4000) })
 ```
 
-Notice the output for the revised code is quite different. The `println!` macro displays the contents of the `Car` struct by showing each value and the corresponding field name.
+Notice the output for the revised code is different. The `println!` macro displays the contents of the `Car` struct by showing each value and the corresponding field name.
 
 In the next exercise, we'll use loop expressions to reduce the redundancy in the code.
 
