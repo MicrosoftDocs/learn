@@ -9,7 +9,7 @@ The Advanced Features area in the General Settings area provides many on/off swi
 | Microsoft Cloud App Security| Forwards Microsoft Defender for Endpoint signals to Cloud App Security, giving administrators deeper visibility into both sanctioned cloud apps and shadow IT. It also gives them the ability to block unauthorized applications when the custom network indicators setting is turned on. Forwarded data is stored and processed in the same location as your Cloud App Security data.|
 | Azure Information Protection| Forwards signals to Azure Information Protection, giving data owners and administrators visibility into protected data on onboarded devices and device risk ratings. Forwarded data is stored and processed in the same location as your Azure Information Protection data.|
 | Microsoft Secure Score| Forwards Microsoft Defender for Endpoint signals, giving Microsoft Secure Score visibility into the device security posture. Forwarded data is stored and processed in the same location as your Microsoft Secure Score data.|
-| Microsoft Intune connection| Connects to Microsoft Intune to enable sharing of device information and enhanced policy enforcement.  Intune provides additional information about managed devices for secure score. It can use risk information to enforce conditional access and other security policies.|
+| Microsoft Intune connection| Connects to Microsoft Intune to enable sharing of device information and enhanced policy enforcement.  Intune provides additional information about managed devices for secure score. It can use risk information to enforce Conditional Access and other security policies.|
 | Preview features| Allow access to preview features. Turn on to be among the first to try upcoming features.|
 
 ### Show user details
@@ -48,11 +48,11 @@ Turning on this setting allows signals to be forwarded to Azure Information Prot
 
 ### Microsoft Intune connection
 
-Defender for Endpoint can be integrated with Microsoft Intune to enable device risk-based conditional access. When you turn on this feature, you can share Defender for Endpoint device information with Intune, enhancing policy enforcement.  You'll need to enable the integration on both Intune and Defender for Endpoint to use this feature.
+Defender for Endpoint can be integrated with Microsoft Intune to enable device risk-based Conditional Access. When you turn on this feature, you can share Defender for Endpoint device information with Intune, enhancing policy enforcement.  You'll need to enable the integration on both Intune and Defender for Endpoint to use this feature.
 
 ### Conditional Access policy
 
-When you enable Intune integration, Intune will automatically create a classic Conditional Access (CA) policy. This classic CA policy is a prerequisite for setting up status reports to Intune. It should not be deleted.
+When you enable Intune integration, Intune will automatically create a classic Conditional Access policy. This classic Conditional Access policy is a prerequisite for setting up status reports to Intune. It should not be deleted.
 
 ### Preview features
 
