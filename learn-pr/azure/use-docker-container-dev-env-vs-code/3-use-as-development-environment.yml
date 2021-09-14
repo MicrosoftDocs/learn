@@ -8,7 +8,7 @@ metadata:
   author: bamurtaugh
   ms.author: brmurtau
   ms.topic: interactive-tutorial
-  ms.prod: learning
-durationInMinutes: 4
+  ms.prod: learning-vs-code
+durationInMinutes: 2
 content: |
-  [!include[](includes/2-use-as-development-environment.md)]
+  [!include[](includes/3-use-as-development-environment.md)]
