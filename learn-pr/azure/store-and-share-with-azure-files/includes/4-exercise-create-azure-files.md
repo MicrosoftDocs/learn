@@ -68,12 +68,12 @@ Create a Windows Server VM to simulate an on-premises machine running in the fin
 
 1. When the RDP file has downloaded, select it to run the program, and then select **Connect** when you're prompted.
 
-1. On the **Enter your credentials** Windows Securitry prompt, select **More choices**, and then scroll down and select **Use a different account**. In the **Email address** field, enter *azureuser*, and then in the **Password** field, enter the password you created earlier, and then select **OK**.
+1. On the **Enter your credentials** Windows Security prompt, select **More choices**, and then scroll down and select **Use a different account**. In the **Email address** field, enter *azureuser*, and then in the **Password** field, enter the password you created earlier, and then select **OK**.
 
 >!NOTE
 >If you forgot the password, go oto the VM (2019Fileserver) and select **Reset password** under **Help + support > Help** and then select Update in the command bar to update. Restart this task at step 3 to connect and download the RDP file. Alternatively, restart this task. If you encounter any issues, check the sandbox--if it is not still activated, you've lost the resources necessary to complete this exercise. 
 
-1. If prompted to verify the remote connection, select **Yes**.
+1. If you are prompted to verify the remote connection, select **Yes**.
 
 ## Map drives to the Azure file shares
 
@@ -81,7 +81,7 @@ Create a Windows Server VM to simulate an on-premises machine running in the fin
 
 1. Select the storage account that you created, which should be named **learnazurefileshare** followed by random numbers.
 
-1. In the resource menu for your storage accunt, under **Data storage**, select **File shares**.
+1. In the resource menu for your storage account, under **Data storage**, select **File shares**.
 
     :::image type="content" source="../media/4-select-file-shares.png" alt-text="Screenshot of the Azure portal showing the storage account overview." lightbox="../media/4-select-file-shares.png#lightbox":::
 
@@ -99,14 +99,14 @@ Create a Windows Server VM to simulate an on-premises machine running in the fin
 
     :::image type="content" source="../media/4-connect-share.png" alt-text="Screenshot of the data file share and its connection commands." lightbox="../media/4-connect-share.png#lightbox":::
 
-1. On your virtual machine, in the system tray, right-click **Start**, and select **Windows PowerShell** folder to expand it, and then select **Windows Powershell (Admin)**.
+1. On your virtual machine, in the system tray, select **Start**, scroll to **Windows PowerShell (Admin)**, or if you don't see **(Amin)**, then right click **Windows PowerShell** and select **Run as Administrator**. 
 
-    :::image type="content" source="../media/4-connect-powershell-admin.png" alt-text="Screenshot of the Windows virtual machine showing the contextual menu of the Start menu with Windows PowerShell (Admin) highlighted." lightbox="../media/4-connect-powershell-admin.png#lightbox":::
+    :::image type="content" source="../media/4-connect-powershell-admin.png" alt-text="Screenshot of the Windows virtual machine showing Start menu with Windows PowerShell (Admin) selected and contex menu highlighted." lightbox="../media/4-connect-powershell-admin.png#lightbox":::
 
 1. At the command prompt in the PowerShell console, paste the script you copied, and press <kbd>Enter</kbd>. 
 
     >!NOTE
-    >If <kbd>Ctrl+V</kbd> is not recognized in your VM, right-click the PowerShell icon in the PowerShell console, and select **Properties**. On the Options tab, ensure that **Use Ctrl+Shift+C/V as Copy/Paste** is selected, and then select **OK**. Now you can use <kbd>Ctrl+Shift+V</kbd>
+    >If <kbd>Ctrl+V</kbd> is not recognized in your VM, right-click the PowerShell icon in the PowerShell console title bar, and select **Properties**. On the Options tab, ensure that **Use Ctrl+Shift+C/V as Copy/Paste** is selected, and then select **OK**. Now you can use <kbd>Ctrl+Shift+V</kbd> to paste content into your VM PowerShell console.
 
 1. Return to the Azure portal, go back to the **File shares** pane, and select the **reports**.
 
