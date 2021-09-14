@@ -18,24 +18,33 @@ quiz:
       choices:
         - content: "DefaultHoloLens1ConfigurationProfile "
           isCorrect: false
+          explanation: A default profile that is optimized for deployment and testing on the HoloLens 1.
         - content: "DefaultHoloLens2ConfigurationProfile"
           isCorrect: true
-        - content: "HandMenuConfigurationProfile"
+          explanation: A default profile that is optimized for deployment and testing on the HoloLens 2.
+        - content: "DefaultMixedRealityToolkitConfigurationProfile"
           isCorrect: false
+          explanation: When using this profile, you will be able to try out scenarios on VR (OpenVR, WMR) and HoloLens (1 and 2).
     - content: "We transfer __________ between multiple devices to achieve spatial alignment. "
       choices:
-        - content: "Access Key"
+        - content: "Access Keys"
           isCorrect: false
+          explanation: Access Keys contains both primary key and secondary key to access your Spatial Anchors account.
         - content: "Anchor ID"
           isCorrect: true
+          explanation: Unique IDs assigned to the created Spatial Anchors.
         - content: "Account Domain"
           isCorrect: false
-    - content: "UI panel that displays essential information about ?"
+          explanation: Name of the domain that you want to be the primary domain in Azure portal.
+    - content: "In this module, UI panel displays essential information about ___________?"
       choices:
         - content: "Upcoming ASA session"
           isCorrect: false
+          explanation: The ASA session that is likely to happen in future.
         - content: "Previous ASA session"
           isCorrect: false
+          explanation: The ASA session that has already happened.
         - content: "Current ASA session"
           isCorrect: true
+          explanation: The ASA session that is currently taking place.
    
