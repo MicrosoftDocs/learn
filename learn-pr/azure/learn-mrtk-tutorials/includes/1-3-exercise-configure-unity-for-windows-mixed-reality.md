@@ -4,11 +4,11 @@ Before you can get started creating an immersive experience for Windows Mixed Re
 
 1. Launch the **Unity Hub**, select the **Projects** tab, and click the **down arrow** next to the **New** button.
 
-    :::image type="content" source="../media/base-2-section-1-step-1-1.png" alt-text="Screenshot of Unity Hub with New button highlighted." lightbox="../media/base-2-section-1-step-1-1.png":::
+    :::image type="content" source="../media/unity-hub-with-new-button.png" alt-text="Screenshot of Unity Hub with New button highlighted." lightbox="../media/unity-hub-with-new-button.png":::
 
 2. Select the Unity version specified in the module Prerequisites.
 
-    :::image type="content" source="../media/base-2-section-1-step-1-2.png" alt-text="Screenshot of Unity Hub with NEW version selector dropdown." lightbox="../media/base-2-section-1-step-1-2.png":::
+    :::image type="content" source="../media/unity-hub-with-new-version-selector-dropdown.png" alt-text="Screenshot of Unity Hub with NEW version selector dropdown." lightbox="../media/unity-hub-with-new-version-selector-dropdown.png":::
 
 3. In the **Create a new project** window:
 
@@ -17,14 +17,14 @@ Before you can get started creating an immersive experience for Windows Mixed Re
     * Choose a suitable **Location** to store your project, for example, *D:\MixedRealityLearning*
     * Click the **Create** button to create and launch your new Unity project
 
-    :::image type="content" source="../media/base-2-section-1-step-1-3.png" alt-text="Screenshot of Unity Hub with Create a new project window filled out." lightbox="../media/base-2-section-1-step-1-3.png":::
+    :::image type="content" source="../media/create-a-new-project-window-filled-out.png" alt-text="Screenshot of Unity Hub with Create a new project window filled out." lightbox="../media/create-a-new-project-window-filled-out.png":::
 
     > [!CAUTION]
     > When working on Windows, there's a MAX_PATH limit of 255 characters. Unity is affected by these limits and may fail to compile if any file path is longer than 255 characters. Therefore, it's strongly recommended to store your Unity project as close to the root of the drive as possible.
 
     Wait for Unity to create the project:
 
-    :::image type="content" source="../media/base-2-section-1-step-1-4.png" alt-text="Screenshot of Unity create new project in progress." lightbox="../media/base-2-section-1-step-1-4.png":::
+    :::image type="content" source="../media/new-project-in-progress.png" alt-text="Screenshot of Unity create new project in progress." lightbox="../media/new-project-in-progress.png":::
 
 ## Switch the build platform
 
