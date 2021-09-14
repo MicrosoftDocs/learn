@@ -82,26 +82,37 @@ We can simplify the structure by using a loop expression to repeat the actions t
 1. Build the program. Make sure the code compiles without any errors.
 
 You should see output similar to this example:
-        
-    ```output
-    Car order 1: Some(Car { color: "Blue", motor: Manual, roof: true, age: ("New", 0) })
-    Car order 2: Some(Car { color: "Green", motor: SemiAuto, roof: false, age: ("Used", 700) })
-    Car order 3: Some(Car { color: "Red", motor: Automatic, roof: true, age: ("Used", 1400) })
-    Car order 4: Some(Car { color: "Silver", motor: SemiAuto, roof: false, age: ("Used", 2100) })
-    Car order 5: Some(Car { color: "Blue", motor: Manual, roof: true, age: ("New", 0) })
-    Car order 6: Some(Car { color: "Green", motor: Automatic, roof: true, age: ("Used", 700) })
+            
+```output
+Car order 1: Some(Car { color: "Blue", motor: Manual, roof: true, age: ("New", 0) })
+Car order 2: Some(Car { color: "Green", motor: SemiAuto, roof: false, age: ("Used", 700) })
+Car order 3: Some(Car { color: "Red", motor: Automatic, roof: true, age: ("Used", 1400) })
+Car order 4: Some(Car { color: "Silver", motor: SemiAuto, roof: false, age: ("Used", 2100) })
+Car order 5: Some(Car { color: "Blue", motor: Manual, roof: true, age: ("New", 0) })
+Car order 6: Some(Car { color: "Green", motor: Automatic, roof: true, age: ("Used", 700) })
+```
+
+
+## Increase car orders to 11
+
+The program now uses a loop to fulfill orders for six cars. What happens if we order more than six cars?
+    
+1. Update the loop expression in the `main` function to order 11 cars:
+
+    ```rust
+        <loop to create 11 cars> ...
     ```
 
-The program now uses a loop to fulfill orders for six cars. What happens if we order more than six cars? You can modify the loop expression in the `main` function to order 11 cars, and then rebuild the program.
+1. Rebuild the program. During runtime, the program panics!
 
-The program panics! We'll solve this problem in the next section.
+    ```output
+    Compiling playground v0.0.1 (/playground)
+        Finished dev [unoptimized + debuginfo] target(s) in 1.26s
+        Running `target/debug/playground`
+    thread 'main' panicked at 'index out of bounds: the len is 4 but the index is 4', src/main.rs:34:29
+    ```
 
-```output
-   Compiling playground v0.0.1 (/playground)
-    Finished dev [unoptimized + debuginfo] target(s) in 1.26s
-     Running `target/debug/playground`
-thread 'main' panicked at 'index out of bounds: the len is 4 but the index is 4', src/main.rs:34:29
-```
+Let's see how to solve this problem.
 
 
 ## Prevent run-time panic with a loop expression
@@ -119,11 +130,9 @@ In the `car_factory` function, we use an if/else expression to check the value o
     }
 ```
 
-The `colors` array has four elements, and the valid `color` index range for this function is 0 to 3. The conditional expression checks if the `color` index is greater than 4. (We don't check for `color` index equal to 4. Later in the function, when we index into the array to assign the car color, we subtract one from the index value: `color - 1`. A `color` value of 4 is processed as `colors[3]` into the array.)
+The `colors` array has four elements, and the valid `color` index range is 0 to 3. The conditional expression checks if the `color` index is greater than 4. (We don't check for `color` index equal to 4. Later in the function, when we index into the array to assign the car color, we subtract one from the index value: `color - 1`. A `color` value of 4 is processed as `colors[3]` into the array.)
 
-The current if/else expression works well to prevent run-time panics when we order eight or fewer cars. But if we order 11 cars, the program panics on the ninth order. 
-
-We need to adjust the expression to be more robust. To make this improvement, we'll use another loop expression.
+The current if/else expression works well to prevent run-time panics when we order eight or fewer cars. But if we order 11 cars, the program panics on the ninth order. We need to adjust the expression to be more robust. To make this improvement, we'll use another loop expression.
 
 1. In the `car_factory` function, replace the if/else conditional statement with a loop expression. Revise the following pseudocode statements to prevent a run-time panic if the `color` index value is greater than 4.
 
@@ -141,20 +150,9 @@ We need to adjust the expression to be more robust. To make this improvement, we
     > [!Tip]
     > In this case, the change from an if/else condition to a loop expression is actually very simple.
 
-1. Build the program. Make sure the code compiles without any errors. The output should be unchanged.
+1. Build the program. Make sure the code compiles without any errors.
 
-1. To verify the panic scenario is handled, increase the number of car orders. Update the loop expression in the `main` function to order 11 cars:
-
-    ```rust
-        <loop to create 11 cars> {
-            ...
-        }
-    ```
-
-
-## Run the program
-
-After you rebuild the program to fulfill orders for 11 cars, you should see the following output:
+You should see the following output:
 
 ```output
 Car order 1: Some(Car { color: "Blue", motor: Manual, roof: true, age: ("New", 0) })
