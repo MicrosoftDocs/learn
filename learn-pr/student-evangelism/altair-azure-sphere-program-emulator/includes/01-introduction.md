@@ -1,35 +1,20 @@
-In this module, you'll learn how to program the Altair 8800 emulator.
+Welcome to the cloud-connected Altair 8800 on Azure Sphere learning path. In this module, you'll learn how to program the Altair 8800 emulator.
+
+## Scenario: Programming
 
 The Altair emulator is running an Open Source Intel 8080 emulator. Layered on the Intel 8080 emulator is Altair BASIC and CP/M.
 
 The Altair Emulator can be programmed in two ways:
 
 1. Entering Intel 8080 [Opcodes](https://en.wikipedia.org/wiki/Opcode?azure-portal=true) using the Altair front panel switches
-1. or, using a higher-level programming language.
+1. or, using a higher-level programming language such as C and BASIC.
 
 :::image type="content" source="../media/azure-sphere-app-architecture.png" alt-text="Diagram that shows the Altair on Azure Sphere application architecture." border="false":::
 
-When you start the Altair emulator, it boots up CP/M. From CP/M you can program the Altair emulator using Microsoft BASIC, BD Software C, and Microsoft MACRO-80 Assembler. You can also change the boot order so the Altair emulator boots into Altair BASIC. The boot order is set from the **Boot Config** section in the **cmake/altair_config.cmake** file.
+## What will you learn?
 
-## Saving files to disk
+In this module, you'll learn about the CP/M operating system, Altair BASIC, and you'll learn how to program the Altair emulator.
 
-Files can only be saved to disk when the Altair emulator is running CP/M. To save files to disk, you must run the virtual disk server or have an Avnet Azure Sphere Starter Kit with the MikroE microSD Click. From CP/M you can start **MBASIC (Microsoft Basic)**, and write and save apps to the virtual B: drive. For **C** and **Assembler** applications you can edit with the WordStar text editor and save files to the virtual B: drive.
+## What is the main goal?
 
-In this module, you will:
-
-* Understand Altair BASIC and CP/M, and how to use them.
-* Learn how to program the Altair emulator using Altair BASIC.
-* Learn about programming options and configurations for the Altair emulator.
-
-## Prerequisites
-
-* A computer with an x86-64-based processor running one of the following operating systems:
-  * Windows 10 Anniversary Update or later
-  * 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
-* An Azure Sphere developer board that has one of the following kits:
-  * Avnet Azure Sphere Starter Kit Rev 1 or 2
-  * Seeed Studio Azure Sphere MT3620 Development Kit
-* A GitHub account.
-* An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
-
-In the next unit, you'll learn how to start programming the Altair emulator from CP/M.
+This module will focus on programming the Altair Emulator.
