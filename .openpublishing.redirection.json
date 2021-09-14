@@ -9019,6 +9019,51 @@
       "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/7-manage-concurrent-access.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/use-data-loading-best-practices-azure-synapse-analytics/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/load-test-web-app-azure-devops/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/load-test-web-app-azure-devops/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/load-test-web-app-azure-devops/2-test-the-performance-of-a-web-app-using-the-azure-portal.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/load-test-web-app-azure-devops/3-create-a-quick-performance-test-for-a-web-app-using-the-azure-portal.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/load-test-web-app-azure-devops/4-identify-web-app-performance-issues-using-load-test-metrics.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/load-test-web-app-azure-devops/5-customize-web-app-load-tests-with-azure-devops.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/load-test-web-app-azure-devops/6-use-azure-devops-to-customize-and-reconfigure-web-app-load-tests.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/load-test-web-app-azure-devops/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/load-test-web-app-azure-devops/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
     }
   ]
 }
