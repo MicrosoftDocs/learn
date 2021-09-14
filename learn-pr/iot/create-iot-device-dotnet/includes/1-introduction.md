@@ -52,7 +52,7 @@ Suppose you manage a gourmet cheese making company in a southern location. The c
 
 Your company's accepted ideal temperature for aging cheese is 50°F (10°C), with up to ±5°F (2.78°C) acceptable variance. Humidity is also important. A humidity level between 75-95% is acceptable.
 
-You've decided to build the device to monitor the environmental conditions and activate the fan using a Raspberry Pi and .NET.
+You've decided to build the device to monitor the environmental conditions and activate the fan using a Raspberry Pi. To leverage your existing development skills, you decide to use .NET.
 
   [![Photograph of matured blue cheese.](../media/cheese-circle1.png)](../media/cheese-circle1.png#lightbox)
 
