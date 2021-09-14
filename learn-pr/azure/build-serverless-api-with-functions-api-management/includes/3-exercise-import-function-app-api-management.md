@@ -56,7 +56,7 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
 1. The **Output** tab displays the results.
 
-    :::image type="content" source=../media/3-test-output.png" alt-text="Screenshot of the output of a pane for Test + Run with response results of running the GET method.":::
+    :::image type="content" source="../media/3-test-output.png" alt-text="Screenshot of the output of a pane for Test + Run with response results of running the GET method.":::
 
     The output pane displays the details of product ID 2 in JSON format. Optionally, you can also test the function by inputting ID values 1 and 2.
 
@@ -69,7 +69,7 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
 ## Expose function app as an API using Azure API Management
 
-Now that the ProductDetails function app is deployed and tested, we'll expose the functionality as an API using Azure API Management so that it can be called from other apps and services.
+After the function app has been deployed and tested, let's export it as an API using Azure API Management so that it can be called from other apps and services.
 
 1. In the Azure menu, select **All resources**. The **All resources** pane appears.
 
@@ -97,11 +97,11 @@ Now that the ProductDetails function app is deployed and tested, we'll expose th
     | Administrator email | Accept the default value |
     | Pricing tier | Consumption 
 
-1. Select **Export** to provision a linked API Management instance. This may take several minutes.
+1. Select **Export** to provision a linked API Management instance. Allow several minutes for the export to complete.
 
-1. When the API Management instance has been provisioned, select **Link API**.
+1. When the API Management instance has been completed, select **Link API**.
 
-    :::image type="content" source="../media/3-link-api.png" alt-text="Screenshot of API Managment highlighting the Link API button.":::
+    :::image type="content" source="../media/3-link-api.png" alt-text="Screenshot of API Management highlighting the Link API button.":::
 
     The **Import Azure Functions** pane appears with the **ProductDetails** function highlighted.
 
@@ -111,9 +111,9 @@ Now that the ProductDetails function app is deployed and tested, we'll expose th
 
     :::image type="content" source="../media/3-create-from-function-app.png" alt-text="Screenshot showing the Create from Function app dialog box.":::
 
-1. Change the **API URL suffix** valuepr to *products*, and then select **Create**. Azure creates the API for the **ProductDetails** function. The Design tab for **API Management** pane for your function app appears.
+1. Change the **API URL suffix** value to *products*, and then select **Create**. Azure creates the API for the **ProductDetails** function. The Design tab for **API Management** pane for your function app appears.
 
-Note that you were able to define your API, all from within the Azure Function App service.
+This exercise shows that you were able to define your API, all from within the Azure Function App service.
 
 ## Test the OnlineStore products endpoint
 
@@ -125,8 +125,8 @@ You now have a functional product details API in the API Management instance tha
 
 1. Under **Query parameters**, select **Add parameter**.
 
-    :::image type="content" source="../media/3-complete-product-details-test.png" alt-text="Screenshot of the API Management tool with the ProductDetails Console showing the GET HTTP request selected and the query parameter values highlighted.":::
+    :::image type="content" source="../media/3-complete-product-details-test.png" alt-text="Screenshot showing ProductDetails Console with query parameter values highlighted for the GET HTTP request.":::
 
 1. In the **NAME** field, enter *id*, and in the **VALUE** field, enter *1*, and then select **Send** to generate a GET request.
 
-    The **HTTP response** section of the console has two tabs. The Message tab is populated with the details of the response. The product details is in JSON format at the end of the response and includes the query parameter value (\"ID\": 2). Scroll up to the **HTTP request** section and notice the format of the request. The request was sent to a destination in the **azure-api.net** domain. This location is different from the **azurewebsites.net** domain where the function app is hosted. You can test this API with other query parameters, such as *id=2* or *id=3*.
+    The **HTTP response** section of the console has two tabs. The Message tab is populated with the details of the response. The product details appear in JSON format at the end of the response. Scroll up to the **HTTP request** section and notice the format of the request. The request was sent to a destination in the **azure-api.net** domain. This location is different from the **azurewebsites.net** domain where the function app is hosted. You can test this API with other query parameters, such as *id=2* or *id=3*.
