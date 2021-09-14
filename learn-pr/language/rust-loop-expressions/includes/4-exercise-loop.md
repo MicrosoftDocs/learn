@@ -1,8 +1,8 @@
-In this exercise, you'll modify a car factory program to use a loop to iterate through the car orders.
+In this exercise, you'll modify the car factory program to use a loop to iterate through the car orders.
 
-The program declares several types of data to track information about the car orders. The `car_quality` function takes the car mileage as an input argument and determines if the car is new or used. The `main` function calls the `car_factory` function to fulfill orders for three cars. The program uses a few `if/else` conditions to prepare the orders. 
+We'll update the `main` function to add a loop expression to process the full set of orders. The loop structure helps to reduce redundancy in the code. By simplifying the code, we can easily increase the order amount.
 
-We'll update the `main` function to use a loop to process orders for 11 cars. To support greater variety in the orders, we'll add more `if/else` conditions.
+In the `car_factory` function, we'll add another loop to avoid a run-time panic on an out-of-bounds value.
 
 Your challenge is to finish the sample code so it compiles and runs.
 
@@ -15,211 +15,173 @@ In the sample code, look for the words `TO DO` to locate the sections to update.
 
 ## Load the current program
 
-The first step is to get the existing program code.
+We'll use the completed code from the last exercise. If you're starting fresh, you can copy the code in this prepared [Rust Playground][RustPlay-exercise].
 
-1. Open the existing program code for editing. The code includes data type declarations, and definitions for the `car_quality`, `car_factory`, and `main` functions.
+Build and run the program to ensure there are no errors. You can ignore any warning messages.
 
-    Copy the following code and edit it in your local development environment,<br>
-    or open the code in this prepared [Rust Playground][RustPlay-exercise].
+
+## Repeat actions with a loop expression
+
+We need to update the program to support more orders. The current code structure uses redundant statements to support six orders. The redudancy is awkward and difficult to maintain. 
+
+We can simplify the structure by using a loop expression to repeat the actions to create each order. With the simplified code, we can quickly create a large number of orders.
+
+1. In the `main` function, **remove** the following statements. This code block defines and sets the `order` variable, calls the `car_factory` function and `println!` macro for the car orders, and inserts each order into the `orders` hash map.
 
     ```rust
-    #[derive(PartialEq, Debug)]
-    // Declare Car struct to describe vehicle with four named fields
-    struct Car { color: String, motor: Transmission, roof: bool, age: (String, u32) }
-
-    #[derive(PartialEq, Debug)]
-    // Declare enum for Car transmission type
-    enum Transmission { Manual, SemiAuto, Automatic }
-
-    //////////////////////////////////////////////////
-
-    // Get the car quality by testing the value of the input argument
-    // - miles (u32)
-    // Create a tuple for the car quality with the age ("New" or "Used") and miles
-    // Return a tuple with the arrow `->` syntax
-    fn car_quality (miles: u32) -> (String, u32) {
-
-        // Declare and initialize the return tuple value
-        // For a new car, set the miles to 0
-        // Use the "mut" keyword so quality can be changed later
-        let mut quality: (String, u32) = (String::from("New"), 0);
-
-        // Use a conditional expression to check the miles
-        // If the car has accumulated miles, then the car is used
-        if miles > 0 {
-            // Set the quality value for a used car
-            quality = (String::from("Used"), miles);
-        }
-
-        // Return the completed tuple, no semicolon needed
-        return quality
-    }
-
-    //////////////////////////////////////////////////
-
-    // Build a new "Car" using the values of four input arguments
-    // - color (String)
-    // - motor (Transmission enum)
-    // - roof (boolean, true if the car has a hard top roof)
-    // - miles (u32)
-    // Call the car_quality(miles) function to get the car age
-    // Return an instance of a "Car" struct with the arrow `->` syntax
-    fn car_factory(color: String, motor: Transmission, roof: bool, miles: u32) -> Car {
-
-        // Create a new "Car" instance as requested
-        // - Bind first three fields to values of input arguments
-        // - Bind "age" to tuple returned from car_quality(miles)
-        let car = Car {
-            color: color,
-            motor: motor,
-            roof: roof,
-            age: car_quality(miles)
-        };
-
-        // Return new instance of "Car" struct, no semicolon needed
-        return car
-    }
-
-    //////////////////////////////////////////////////
-
-    fn main() {
-        // Create car color array
-        // 0 = Blue, 1 = Green, 2 = Red, 3 = Silver
-        let colors = ["Blue", "Green", "Red", "Silver"];
-
-        // Initialize counter variable
+        // Order 6 cars
+        // - Increment "order" after each request
+        // - Add each order <K, V> pair to "orders" hash map
+        // - Call println! to show order details from the hash map
+                
+        // Initialize order variable
         let mut order = 1;
-        
-        // Declare the car type and initial values
-        // - Declare "car" as mutable "Car" struct
-        // - Declare "engine" as mutable "Transmission" enum
-        // - When car has a hard top, "roof" = true
-        let mut car: Car;
-        let mut miles = 1000; // Start used cars with 1,000 miles
-        let mut engine: Transmission;
-        let roof = true;      // convertible = false | hard top = true
-
-        //////////////////////////////////////////////////
             
-        // Order 3 cars, one car for each type of transmission
-        // Use "order" variable, initialize to 1, increment before each order
-        // Index into "colors" array, vary color for the orders
+        // Car order #1: Used, Hard top
+        car = car_factory(order, 1000);
+        orders.insert(order, car);
+        println!("Car order {}: {:?}", order, orders.get(&order));
         
-        // Car order #1: Used
-        engine = Transmission::Manual;
-        car = car_factory(String::from(colors[order-1]), engine, roof, miles);
-        println!("{}: {}, Hard top {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
-        
-        // Car order #2: Used
+        // Car order #2: Used, Convertible
         order = order + 1;
-        miles = miles + 1000;
-        engine = Transmission::SemiAuto;
-        car = car_factory(String::from(colors[order-1]), engine, roof, miles);
-        println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
-    
-        // Car order #3: New
+        car = car_factory(order, 2000);
+        orders.insert(order, car);
+        println!("Car order {}: {:?}", order, orders.get(&order));
+
+        // Car order #3: New, Hard top
         order = order + 1;
-        miles = 0;
-        engine = Transmission::Automatic;
-        car = car_factory(String::from(colors[order-1]), engine, roof, miles);
-        println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
+        car = car_factory(order, 0);
+        orders.insert(order, car);
+        println!("Car order {}: {:?}", order, orders.get(&order));
 
-        //////////////////////////////////////////////////
+        // Car order #4: New, Convertible
+        order = order + 1;
+        car = car_factory(order, 0);
+        orders.insert(order, car);
+        println!("Car order {}: {:?}", order, orders.get(&order));
 
-    }
+        // Car order #5: Used, Hard top
+        order = order + 1;
+        car = car_factory(order, 3000);
+        orders.insert(order, car);
+        println!("Car order {}: {:?}", order, orders.get(&order));
 
+        // Car order #6: Used, Hard top
+        order = order + 1;
+        car = car_factory(order, 4000);
+        orders.insert(order, car);
+        println!("Car order {}: {:?}", order, orders.get(&order));
     ```
 
-1. Build the program. Make sure the code compiles and runs before you continue to the next section. You can ignore *warning* messages from the compiler.
+1. Replace the removed statements with the following code block:
 
-You should see the following output:
+    ```rust
+        // Start with zero miles
+        let mut miles = 0;
+        
+        // TO DO: Add loop to fulfill orders for 6 cars
+        // TO DO: Initialize "order" variable to 1
+        <loop expression> {
+        
+            // Call car_factory to fulfill order
+            // Add order <K, V> pair to "orders" hash map
+            // Call println! to show order details from the hash map        
+            car = car_factory(order, miles);
+            orders.insert(order, car);
+            println!("Car order {}: {:?}", order, orders.get(&order));
+            
+            // Reset miles for order variety
+            if miles == 2100 {
+                miles = 0;
+            } else {
+                miles = miles + 700;
+            }
+        }
+    ```
 
+1. Replace the `<loop expression>` pseucode with a loop statement that repeats the actions to create orders for six cars. You'll need an `order` variable that's initialized to 1.
+
+1. Build the program. Make sure the code compiles without any errors.
+
+You should see output similar to this example:
+    
 ```output
-1: Used, Hard top Manual, Blue, 1000 miles
-2: Used, Hard top, SemiAuto, Green, 2000 miles
-3: New, Hard top, Automatic, Red, 0 miles
+Car order 1: Some(Car { color: "Blue", motor: Manual, roof: true, age: ("New", 0) })
+Car order 2: Some(Car { color: "Green", motor: SemiAuto, roof: false, age: ("Used", 700) })
+Car order 3: Some(Car { color: "Red", motor: Automatic, roof: true, age: ("Used", 1400) })
+Car order 4: Some(Car { color: "Silver", motor: SemiAuto, roof: false, age: ("Used", 2100) })
+Car order 5: Some(Car { color: "Blue", motor: Manual, roof: true, age: ("New", 0) })
+Car order 6: Some(Car { color: "Green", motor: Automatic, roof: true, age: ("Used", 700) })
 ```
 
+The program now uses a loop to fulfill orders for six cars. What happens if we try to order more than six cars?
 
-## Use a loop expression to repeat actions
 
-The current program fulfills orders for three cars, and all cars have a hard top roof. Now we'll update the program to support more orders and use a greater variety of car options.
+## Prevent run-time panic with a loop expression
 
-Our `main` function needs a loop expression to repeat actions to create each car order. We're going to order a total of 11 cars.
+In the `car_factory` function, we use an if/else expression to check the value of the `color` index for the `colors` array:
 
-The primary action is to call the `car_factory` function to create each order. The function call expects a color for the car. We need to correct how we're indexing into the `colors` array, so we actually pass a color as expected.
+```rust
+    // Prevent panic: Check color index for colors array, reset as needed
+    // Valid color = 1, 2, 3, or 4
+    // If color > 4, reduce color to valid index
+    let mut color = (order) as usize;
+    if color > 4 {        
+        // color = 5 --> index 1, 6 --> 2, 7 --> 3, 8 --> 4
+        color = color - 4;
+    }
+```
 
-Near the end of the loop, we'll adjust the values for some of the counting variables. 
+The `colors` array has four elements, and the valid `color` index range for this function is 0 to 3. The conditional expression checks if the `color` index is greater than 4. (We don't check for `color` index equal to 4. Later in the function, when we index into the array to assign the car color, we subtract one from the index value: `color - 1`. A `color` value of 4 is processed as `colors[3]` into the array.)
 
-1. In the `main` function, replace the statements between the lines of slashes `/////` with the following code:
+The current if/else expression works well to prevent run-time panics when we order eight or fewer cars. But if we order 11 cars, the program panics on the nineth order. 
+
+We need to adjust the expression to be more robust. To make this improvement, we'll use another loop expression.
+
+1. In the `car_factory` function, replace the if/else conditional statement with a loop expression. Revise the following pseudcode statements to prevent a run-time panic if the `color` index value is greater than 4.
 
     ```rust
-        // Order 11 cars
-        // TO DO: Replace "loop expression" - loop 11 times, use "order" variable
-        loop expression {
-            
-            // Set car transmission type
-            engine = Transmission::Manual;
-
-            // Order the cars, New are even numbers, Used are odd numbers
-            // TO DO: Fix indexing into `colors` array, vary color for the orders
-            if index % 2 != 0 {
-                car = car_factory(String::from(colors()), engine, roof, miles);
-            } else { 
-                car = car_factory(String::from(colors()), engine, roof, 0);
-            }
-            
-            // Display car order details
-            println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
-
-            // Change values for next loop
-            // TO DO: Increment "order" by 1, and "miles" by 1,000
-            order;
-            miles;
-            
-            // Adjust the index for the car details
-            // Order 11 cars, use index range of 0 -- 4, then repeat from 0
-            if index < 4 {
-                index = index + 1;
-            } else {
-                index = 1;
-            }
+        // Prevent panic: Check color index, reset as needed
+        // If color = 1, 2, 3, or 4 - no change needed
+        // If color > 4, reduce to valid index
+        let mut color = (order) as usize;
+        // TO DO: Replace if/else with loop to prevent run-time panic for color > 4
+        <loop expression> {        
+            <update the color value>
         }
     ```
 
-1. We need a second counting variable to support our loop processing. Find the statement that initializes the `order` variable. Initialize a second variable named `index` and set it to 1.
-
-1. Replace the `loop expression` with a loop statement to repeat the actions in the loop expression body 11 times. Use the `order` variable that you defined at the beginning of the `main` function, which is initialized to 1.
-
-1. Fix the indexing into the `colors` array by correcting the `colors()` syntax. We need to pass a specific color like "Blue" to the `car_factory` function. The array has four elements, so we'll try to loop through them as we fulfill the orders. Use the `index` variable. We want to vary the color that we use for the orders. 
-
     > [!Tip]
-    > Elements in an array start from index location 0. The value for the first element is at index location 0.
+    > In this case, the change from an if/else condition to a loop expression is actually very simple.
 
-1. Near the end of the loop, increment the `order` variable by 1, and the `miles` variable by 1,000. Depending on how you specify numbers over 100, you might discover that in Rust, you can't use a comma `,` in an integer value.
-        
-1. Build your program. Make sure the code compiles without any errors. You can ignore any warning messages.
+1. Build the program. Make sure the code compiles without any errors. The output should be unchanged.
+
+1. To verify the panic scenario is handled, increase the number of car orders. Update the loop expression in the `main` function to order 11 cars:
+
+    ```rust
+        <loop to create 11 cars> {
+            ...
+        }
+    ```
 
 
 ## Run the program
 
-When the program is complete, you should see output similar to this example:
-    
- ```output
-1: Used, Hard top, Manual, Blue, 1000 miles
-2: New, Hard top, Manual, Green, 0 miles
-3: Used, Hard top, Manual, Red, 3000 miles
-4: New, Hard top, Manual, Silver, 0 miles
-5: Used, Hard top, Manual, Blue, 5000 miles
-6: New, Hard top, Manual, Green, 0 miles
-7: Used, Hard top, Manual, Red, 7000 miles
-8: New, Hard top, Manual, Silver, 0 miles
-9: Used, Hard top, Manual, Blue, 9000 miles
-10: New, Hard top, Manual, Green, 0 miles
-11: Used, Hard top, Manual, Red, 11000 miles
-```
+After you rebuild the program to fulfill orders for 11 cars, you should see the following output:
 
-Right now, all the car orders are for manual transmission and a hard top roof. In the next exercise, we'll get more creative. We'll use more complex conditions, and implement a hash map to add variety to our orders and output.
+```output
+Car order 1: Some(Car { color: "Blue", motor: Manual, roof: true, age: ("New", 0) })
+Car order 2: Some(Car { color: "Green", motor: SemiAuto, roof: false, age: ("Used", 700) })
+Car order 3: Some(Car { color: "Red", motor: Automatic, roof: true, age: ("Used", 1400) })
+Car order 4: Some(Car { color: "Silver", motor: SemiAuto, roof: false, age: ("Used", 2100) })
+Car order 5: Some(Car { color: "Blue", motor: Manual, roof: true, age: ("New", 0) })
+Car order 6: Some(Car { color: "Green", motor: Automatic, roof: true, age: ("Used", 700) })
+Car order 7: Some(Car { color: "Red", motor: Manual, roof: true, age: ("Used", 1400) })
+Car order 8: Some(Car { color: "Silver", motor: SemiAuto, roof: false, age: ("Used", 2100) })
+Car order 9: Some(Car { color: "Blue", motor: Automatic, roof: true, age: ("New", 0) })
+Car order 10: Some(Car { color: "Green", motor: SemiAuto, roof: false, age: ("Used", 700) })
+Car order 11: Some(Car { color: "Red", motor: Manual, roof: true, age: ("Used", 1400) })
+```
 
 
 ## Solution
@@ -229,5 +191,5 @@ You can compare your program output to the solution for this exercise in this [R
 
 <!-- Links -->
 
-[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=15708589114431702e84136d7dc09626?azure-portal=true
-[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=856d172a4d546ea39087e30f11593e42?azure-portal=true
+[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1cbdb3193d8d0231f574747ba9911122?azure-portal=true
+[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=7416ed5585f9c7935fc9dc1601b0afeb?azure-portal=true

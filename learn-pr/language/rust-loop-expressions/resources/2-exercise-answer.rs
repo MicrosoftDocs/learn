@@ -1,158 +1,104 @@
 #[derive(PartialEq, Debug)]
-// Declare Car struct to describe vehicle with four named fields
 struct Car { color: String, motor: Transmission, roof: bool, age: (String, u32) }
 
 #[derive(PartialEq, Debug)]
-// Declare enum for Car transmission type
 enum Transmission { Manual, SemiAuto, Automatic }
 
-// Get the car quality by testing the value of the input argument
-// - miles (u32)
-// Create a tuple for the car quality with the age ("New" or "Used") and miles
-// Return a tuple with the arrow `->` syntax
+// Get car quality by testing input argument
 fn car_quality (miles: u32) -> (String, u32) {
-
-    // Declare and initialize the return tuple value
-    // For a new car, set the miles to 0
     let mut quality: (String, u32) = (String::from("New"), 0);
 
-    // Use a conditional expression to check the miles
-    // If the car has accumulated miles, then the car is used
+    // If car has accumulated miles, car is used
     if miles > 0 {
-        // Set the quality value for a used car
         quality = (String::from("Used"), miles);
     }
 
-    // Return the completed tuple, no semicolon needed
     return quality
 }
 
-// Build a new "Car" using the values of four input arguments
-// - color (String)
-// - motor (Transmission enum)
-// - roof (boolean, true if the car has a hard top roof)
-// - miles (u32)
-// Call the car_quality(miles) function to get the car age
-// Return an instance of a "Car" struct with the arrow `->` syntax
-fn car_factory(color: String, motor: Transmission, roof: bool, miles: u32) -> Car {
+// Build "Car" using input arguments
+fn car_factory(order: i32, miles: u32) -> Car {
+    let colors = ["Blue", "Green", "Red", "Silver"];
 
-    // Create a new "Car" instance as requested
-    // - Bind first three fields to values of input arguments
-    // - Bind "age" to tuple returned from car_quality(miles)
-    let car = Car {
-        color: color,
-        motor: motor,
-        roof: roof,
+    // Prevent panic: Check color value, reset as needed
+    let mut color = (order) as usize;
+    if color > 4 {
+        color = color - 4;
+    }
+
+    // Create "Car" instance as requested
+    let mut car = Car {
+        color: String::from(colors[(color-1) as usize]),
+        motor: Transmission::Automatic,
+        roof: true,
         age: car_quality(miles)
     };
+        
+    // Add variety to orders for motor type and roof type
+    if order % 3 == 0 {          // 3, 6, 9
+        car.motor = Transmission::Automatic;
+    } else if order % 2 == 0 {   // 2, 4, 8, 10
+        car.motor = Transmission::SemiAuto;
+        car.roof = false;
+    } else {                     // 1, 5, 7, 11
+        car.motor = Transmission::Manual;
+    }
 
-    // Return new instance of "Car" struct, no semicolon needed
     return car
 }
 
 fn main() {
-    // Initialize a hash map for car orders, track
-    // - Keys: New or Used, Values: integer
-    // - Keys: Manual or Automatic, Values: integer
+
+    // Initialize a hash map for the car orders
+    // - Key: Car order number, i32
+    // - Value: Car order details, Car struct
     // Corrected code: To create a hash map, use HashMap::new()
     use std::collections::HashMap;
-    let mut orders: HashMap<String, u32> = HashMap::new();
-    let (mut new_cars, mut used_cars) = (1, 1);
-    let (mut manual, mut auto) = (1, 1);
-
-    // Create car color array
-    // 0 = Blue, 1 = Green, 2 = Red, 3 = Silver
-    let colors = ["Blue", "Green", "Red", "Silver"];
-
-    // Initialize two counter variables, set to 1
-    let (mut index, mut order) = (1, 1);
+    let mut orders: HashMap<i32, Car> = HashMap::new();
     
-    // Declare the car type and initial values
+    // Initialize counter variable
+    let mut order = 1;
+    // Declare a car as mutable "Car" struct
     let mut car: Car;
-    let mut miles = 1000; // Start used cars with 1,000 miles
-    let mut roof = true;  // convertible = false | hard top = true
-    let mut engine: Transmission;
-
-    // Order 11 cars
-    // loop a "while" to fulfill orders for 11 cars
-    // Use "order" variable, initialized to 1, loop from 1 through 11
-    while order <= 11 {
         
-        // Set car transmission type, make some roofs convertible
-        //
-        // Corrected code: Use conditional expression
-        // Corrected code: order % 3 == 0, engine = Transmission::Automatic
-        // Corrected code: add missing "if", order % 2 == 0, Transmission::SemiAuto
-        // Corrected code: else, Transmission::Manual
-        // When order % 3, swap roof type for fun!
-        //
-        // ADD hash map functionality
-        // Corrected code: Add transmission <K, V> pairs to hash map
-        // Corrected code: Use ".insert()" method to add car info to hash map
-        if order % 3 == 0 {
-            engine = Transmission::Automatic;
-            // ADD <K, V> pair to hash map
-            orders.insert(String::from("Automatic"), auto);
-            auto = auto + 1;
+    // Order 6 cars
+    // - Increment "order" after each request
+    // - Add each order <K, V> pair to "orders" hash map
+    // - Corrected code: Use ".insert()" method to add each order
+    // - Adjust println call to show order details from the hash map
+    
+    // Car order #1: Used, Hard top
+    car = car_factory(order, 1000);
+    orders.insert(order, car);
+    println!("Car order {}: {:?}", order, orders.get(&order));
+    
+    // Car order #2: Used, Convertible
+    order = order + 1;
+    car = car_factory(order, 2000);
+    orders.insert(order, car);
+    println!("Car order {}: {:?}", order, orders.get(&order));
 
-            roof = !roof;
-        } else if order % 2 == 0 {
-            engine = Transmission::SemiAuto;
-            // Don't track SemiAutomatic in the hash map
-        } else {
-            engine = Transmission::Manual;
-            // ADD <K, V> pair to hash map
-            orders.insert(String::from("Manual"), manual);
-            manual = manual + 1;
-        }
+    // Car order #3: New, Hard top
+    order = order + 1;
+    car = car_factory(order, 0);
+    orders.insert(order, car);
+    println!("Car order {}: {:?}", order, orders.get(&order));
 
-        // Order the cars, New are even numbers, Used are odd numbers
-        // Index into `colors` array, vary color for the orders
-        //
-        // ADD hash map functionality
-        // Corrected code: Use "String::from()" syntax for String keys
-        if index % 2 != 0 {
-            car = car_factory(String::from(colors[index-1]), engine, roof, miles);
-            // ADD <K, V> pair to hash map
-            orders.insert(String::from("Used"), used_cars);
-            used_cars = used_cars + 1;
-        } else { 
-            car = car_factory(String::from(colors[index-1]), engine, roof, 0);
-            // ADD <K, V> pair to hash map
-            orders.insert(String::from("New"), new_cars);
-            new_cars = new_cars + 1;
-        }
+    // Car order #4: New, Convertible
+    order = order + 1;
+    car = car_factory(order, 0);
+    orders.insert(order, car);
+    println!("Car order {}: {:?}", order, orders.get(&order));
 
-        // Display car order details by roof type and age of car
-        // Corrected code: Print output with four conditions: "if", "else if", "else if", "else"
-        // Corrected code: Use double ampersand && to join conditions
-        // Corrected code: car.roof = hard top (true) or convertible (false)
-        // Corrected code: car mileage = car.age.1, if miles > 0, then car is new
-        if car.roof && car.age.1 > 0 {
-            println!("{}: {}, {:?}, Hard top, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1); 
-        } else if car.roof {
-            println!("{}: {}, {:?}, Hard top, {}", order, car.age.0, car.motor, car.color); 
-        } else if car.age.1 > 0 {
-            println!("{}: {}, {:?}, Convertible, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1); 
-        } else {
-            println!("{}: {}, {:?}, Convertible, {}", order, car.age.0, car.motor, car.color); 
-        }
+    // Car order #5: Used, Hard top
+    order = order + 1;
+    car = car_factory(order, 3000);
+    orders.insert(order, car);
+    println!("Car order {}: {:?}", order, orders.get(&order));
 
-        // Change values for next loop
-        // Increment "order" by 1, and "miles" by 1,000
-        order = order + 1;
-        miles = miles + 1000;
-        
-        // Adjust the index for the car details
-        // Order 11 cars, use index range of 0 -- 4, then repeat from 0
-        if index < 4 {
-            index = index + 1;
-        } else {
-            index = 1;
-        }
-    }
-
-    // Display the hash map of car orders
-    // Corrected code: Just use hash map name and "{:?}" to show all <K, V> pairs
-    println!("\nCar orders: {:?}", orders);
+    // Car order #6: Used, Hard top
+    order = order + 1;
+    car = car_factory(order, 4000);
+    orders.insert(order, car);
+    println!("Car order {}: {:?}", order, orders.get(&order));
 }

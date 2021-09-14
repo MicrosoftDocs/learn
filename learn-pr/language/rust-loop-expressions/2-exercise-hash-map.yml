@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Exercise: Use a hash map to track orders"
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/2-exercise-hash-map.md)]

@@ -1,37 +1,143 @@
-Now we'll add a bit more complexity to the car factory program.
+In this exercise, you'll modify a car factory program to use a hash map.
 
-We'll use a hash map with key, value pairs to track some details about the car orders, and also use that structure to display output. We'll expand on the use of conditional expressions and learn how to combine conditions. Once again, your challenge is to finish the sample code so it compiles and runs.
+We'll use hash map key, value pairs to track details about the car orders and to display output. Once again, your challenge is to finish the sample code so it compiles and runs.
 
 To work on the sample code for this exercise, you have two options:
 - Copy the code and edit it in your local development environment. 
 - Open the code in a prepared Rust Playground.
-
-In the sample code, look for the words `TO DO` to locate the sections to update.
 
 > [!Note]
 > If you closed your program code from the last exercise, you can re-open the code in this prepared [Rust Playground][RustPlay-exercise].
 > Be sure to rebuild your program and make sure it still runs without any compiler errors.
 
 
-## Add a hash map to track order details
+## Load the current program
 
-The first change we'll make is to add a hash map with <K, V> pairs. We'll track how many orders we have for new versus used cars. The hash map will show how many customers request manual versus automatic transmission. 
+The first step is to get the existing program code.
 
-We define the hash map at the beginning of our `main` function, and initialize some variables for tracking the counts.
+1. Open the existing program code for editing. The code includes data type declarations, and definitions for the `car_quality`, `car_factory`, and `main` functions.
 
-1. In the code from the last exercise, locate the beginning of the `main` function.
-
-1. Copy the following code to the very beginning of the function, right after the opening curly brace `{`:
+    Copy the following code and edit it in your local development environment,<br>
+    or open the code in this prepared [Rust Playground][RustPlay-exercise].
 
     ```rust
-        // Initialize a hash map for car orders
-        // - Keys: New or Used, Values: integer
-        // - Keys: Manual or Automatic, Values: integer
-        // TO DO: Fix syntax to create the "orders" hash map
+    #[derive(PartialEq, Debug)]
+    struct Car { color: String, motor: Transmission, roof: bool, age: (String, u32) }
+
+    #[derive(PartialEq, Debug)]
+    enum Transmission { Manual, SemiAuto, Automatic }
+
+    // Get car quality by testing input argument
+    fn car_quality (miles: u32) -> (String, u32) {
+        let mut quality: (String, u32) = (String::from("New"), 0);
+
+        // If car has accumulated miles, car is used
+        if miles > 0 {
+            quality = (String::from("Used"), miles);
+        }
+
+        return quality
+    }
+
+    // Build "Car" using input arguments
+    fn car_factory(order: i32, miles: u32) -> Car {
+        let colors = ["Blue", "Green", "Red", "Silver"];
+
+        // Prevent panic: Check color index, reset as needed
+        let mut color = (order) as usize;
+        if color > 4 {
+            color = color - 4;
+        }
+
+        // Create "Car" instance as requested
+        let mut car = Car {
+            color: String::from(colors[(color-1) as usize]),
+            motor: Transmission::Automatic,
+            roof: true,
+            age: car_quality(miles)
+        };
+            
+        // Add variety to orders for motor type and roof type
+        if order % 3 == 0 {          // 3, 6, 9
+            car.motor = Transmission::Automatic;
+        } else if order % 2 == 0 {   // 2, 4, 8, 10
+            car.motor = Transmission::SemiAuto;
+            car.roof = false;
+        } else {                     // 1, 5, 7, 11
+            car.motor = Transmission::Manual;
+        }
+
+        return car
+    }
+
+    fn main() {
+        // Initialize counter variable
+        let mut order = 1;
+        // Declare a car as mutable "Car" struct
+        let mut car: Car;
+            
+        // Order 6 cars, increment "order" for each request
+        // Car order #1: Used, Hard top
+        car = car_factory(order, 1000);
+        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
+        
+        // Car order #2: Used, Convertible
+        order = order + 1;
+        car = car_factory(order, 2000);
+        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);    
+    
+        // Car order #3: New, Hard top
+        order = order + 1;
+        car = car_factory(order, 0);
+        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
+
+        // Car order #4: New, Convertible
+        order = order + 1;
+        car = car_factory(order, 0);
+        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
+
+        // Car order #5: Used, Hard top
+        order = order + 1;
+        car = car_factory(order, 3000);
+        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
+
+        // Car order #6: Used, Hard top
+        order = order + 1;
+        car = car_factory(order, 4000);
+        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
+    }
+    ```
+
+1. Build the program. Make sure the code compiles and runs before you continue to the next section.
+
+You should see the following output:
+
+```output
+1: Used, Hard top = true, Manual, Blue, 1000 miles
+2: Used, Hard top = false, SemiAuto, Green, 2000 miles
+3: New, Hard top = true, Automatic, Red, 0 miles
+4: New, Hard top = false, SemiAuto, Silver, 0 miles
+5: Used, Hard top = true, Manual, Blue, 3000 miles
+6: Used, Hard top = true, Automatic, Green, 4000 miles
+```
+
+
+## Add a hash map to track order details
+
+The current program fulfills each car order and prints a summary after each order is complete. Each call to the `car_factory` function fulfills an order by returning a `Car` struct with the order details. The result is stored in the `car` variable. 
+
+As you probably noticed, the program lacks some important functionality. We're aren't keeping track of all the orders. The `car` variable holds only the details for the current order. Whenever the `car` variable is updated with the result from the `car_factory` function, details for the previous order are overwritten. 
+
+We need to update the program to keep track of all the orders like in a filing system. For this purpose, we'll define a hash map with \<K, V> pairs. The hash map keys will correspond to the car order numbers. The hash map values will be the order details for each each as defined in a `Car` struct.
+
+1. To define the hash map, add the following code at the beginning of the `main` function, right after the opening curly brace `{`:
+
+    ```rust
+        // Initialize a hash map for the car orders
+        // - Key: Car order number, i32
+        // - Value: Car order details, Car struct
         use std::collections::HashMap;
-        let mut orders: HashMap<String, u32> = HashMap;
-        let (mut new_cars, mut used_cars) = (1, 1);
-        let (mut manual, mut auto) = (1, 1);
+        let mut orders: HashMap<i32, Car> = HashMap;
     ```
 
 1. Fix the syntax issues in the statement that creates the `orders` hash map.
@@ -42,196 +148,106 @@ We define the hash map at the beginning of our `main` function, and initialize s
 1. Build the program. Make sure the code compiles before you continue to the next section. You can ignore warning messages from the compiler.
 
 
-## Add conditional expression to assign engine type
-
-Next, we'll add a more robust way to assign the engine type based on the current order number. We'll also set up a condition where we can swap the roof value from "Hard top" (true) to "Convertible" (false). By using these constructs, we can add a little variety to our car orders.
-
-1. Locate the `engine = Transmission::Manual;` statement and associated comment in the `main` function:
-
-    ```rust
-        // Set car transmission type
-        engine = Transmission::Manual;
-    ```
-
-1. Replace the two lines of code with the following code block:
-
-    ```rust
-        // Set car transmission type, make some roofs convertible
-        // TO DO: Add conditional expression
-        // TO DO: Check order number, set engine type, fix syntax
-        // TO DO: If order % 3 equals 0, engine is "Automatic"
-        // TO DO: If order % 2 equals 0, engine is "SemiAuto" | else, engine is "Manual"
-        // When order % 3, swap roof type for fun!
-        if order % 3 equals 0 {
-            engine = Automatic;
-            roof = !roof;
-        } else order % 2 equals 0 {
-            engine = SemiAuto;
-        } else {
-            engine = Manual;
-        }
-    ```
-
-    This new code uses a conditional expression to check the current order number. We'll test if the current order number is evenly divisible by 3 or 2. Depending on the result, in the expression body, we'll assign a different engine transmission type. When the order number is evenly divisible by 3, we'll also swap the roof value (true -> false, or false -> true).
-
-1. There are a few corrections to make in this new code so it will pass compilation.
-
-    1. Check the syntax in the conditional expressions. Is `equals` a valid keyword in this context?
-    1. Make sure all required keywords are present. Any condition before a final `else` condition must begin with the `if` keyword.
-    1. The way in which the `engine` value is set isn't correct. In which enum are these values defined?
-
-1. Rebuild the program. If there are no compiler errors, you should see output similar to the following example. Your orders should now have a variety of transmission types.
-
-    ```output
-    1: Used, Hard top, Manual, Blue, 1000 miles
-    2: New, Hard top, SemiAuto, Green, 0 miles
-    3: Used, Hard top, Automatic, Red, 3000 miles
-    ...
-    10: New, Hard top, SemiAuto, Green, 0 miles
-    11: Used, Hard top, Manual, Red, 11000 miles
-    ```
-
-
 ## Add values to the hash map
 
-The next step is to actually use our hash map to track data. We'll add several statements throughout the program.
+The next step is to add each fulfilled car order to the hash map. 
 
-1. We'll add a few statements in the code block where we assigned the engine type.
+In the `main` function, we call the `car_factory` function for each car order. After the order is fulfilled, we call the `println!` macro to show the order details stored in the `car` variable:
 
-    1. For the first condition, where we test `order % 3`, add the following statements inside the expression body. Place these statements after the `engine` assignment and before the `roof` value swap:
+    ```rust
+        // Car order #1: Used, Hard top
+        car = car_factory(order, 1000);
+        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
+
+        ...
+
+        // Car order #6: Used, Hard top
+        order = order + 1;
+        car = car_factory(order, 4000);
+        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
+    ```
+
+We're going to revise these code statements to work with our new hash map:
+
+- We'll keep the calls to the `car_factory` function. Each returned `Car` struct will be stored as part of the \<K, V> pair in the hash map.
+- We'll update the calls to the `println!` macro to show the order details as they're stored in the hash map.
+
+1. In the `main` function, locate the calls to the `car_factory` function, and the accompanying calls to the `println!` macro:
+
+    ```rust
+        // Car order #1: Used, Hard top
+        car = car_factory(order, 1000);
+        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
+
+        ...
+
+        // Car order #6: Used, Hard top
+        order = order + 1;
+        car = car_factory(order, 4000);
+        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
+    ```
+
+1. Replace the full set of statements for all car orders with the following revised code:
+
+    ```rust
+        // Car order #1: Used, Hard top
+        car = car_factory(order, 1000);
+        orders(order, car);
+        println!("Car order {}: {:?}", order, orders.get(&order));
+        
+        // Car order #2: Used, Convertible
+        order = order + 1;
+        car = car_factory(order, 2000);
+        orders(order, car);
+        println!("Car order {}: {:?}", order, orders.get(&order));
     
-        ```rust
-            // ADD <K, V> pair to hash map
-            orders(String::from("Automatic"), auto);
-            auto = auto + 1;
-        ```
+        // Car order #3: New, Hard top
+        order = order + 1;
+        car = car_factory(order, 0);
+        orders(order, car);
+        println!("Car order {}: {:?}", order, orders.get(&order));
 
-    1. Inside the expression body for the final `else` condition, add the following statements after the `engine` assignment:
+        // Car order #4: New, Convertible
+        order = order + 1;
+        car = car_factory(order, 0);
+        orders(order, car);
+        println!("Car order {}: {:?}", order, orders.get(&order));
+
+        // Car order #5: Used, Hard top
+        order = order + 1;
+        car = car_factory(order, 3000);
+        orders(order, car);
+        println!("Car order {}: {:?}", order, orders.get(&order));
+
+        // Car order #6: Used, Hard top
+        order = order + 1;
+        car = car_factory(order, 4000);
+        orders(order, car);
+        println!("Car order {}: {:?}", order, orders.get(&order));
+    ```
     
-        ```rust
-            // ADD <K, V> pair to hash map
-            orders(String::from("Manual"), manual);
-            manual = manual + 1;
-        ```
-
-1. If you try to build your program now, you'd see some compiler errors. There's a syntax problem in each statement that adds the <K, V> pair to the `orders` hash map. Do you see it? Go ahead and fix the issue in both statements.
+1. If you try to build your program now, you'll see compilation errors. There's a syntax problem in the statements that add the \<K, V> pairs to the `orders` hash map. Do you see the problem? Go ahead and fix the issue in each statement that adds an order to the hash map.
 
     > [!Tip]
     > We can't assign values to the `orders` hash map directly. We need to use a method to do the insertions.
 
-1. Now we'll add a few more hash map assignment statements. Locate the `if index % 2 != 0` statement in the `main` function. We'll substitute several statements with the code block in the next step.
-
-    Locate these statements:
-
-    ```rust
-        // Order the cars, New are even numbers, Used are odd numbers
-        // Corrected code: Index into `colors` array, vary color for the orders
-        if index % 2 != 0 {
-            car = car_factory(String::from(colors[index-1]), engine, roof, miles);
-        } else { 
-            car = car_factory(String::from(colors[index-1]), engine, roof, 0);
-        }
-    ```
-
-1. Replace the statements shown in the previous step with the following code block:
-
-    ```rust
-        // ADD hash map functionality
-        // Order the cars, New are even numbers, Used are odd numbers
-        // Corrected code: Index into `colors` array, vary color for the orders
-        // TO DO: Fix syntax to add car age to "orders" hash map
-        if index % 2 != 0 {
-            car = car_factory(String::from(colors[index-1]), engine, roof, miles);
-            // ADD <K, V> pair to hash map
-            orders.insert("Used", used_cars);
-            used_cars = used_cars + 1;
-        } else { 
-            car = car_factory(String::from(colors[index-1]), engine, roof, 0);
-            // ADD <K, V> pair to hash map
-            orders.insert("New", new_cars);
-            new_cars = new_cars + 1;
-        }
-    ```
-
-1. There's another syntax problem in each statement that adds the <K, V> pair to the `orders` hash map. This issue's a little different than last time. It has to do with how the keys are provided to the `.insert()` method. Be sure to fix the issue in both statements.
-
-Now your program should compile without errors, but the output hasn't changed yet. We added data to our hash map, but we haven't added statements to show the hash map output. Let's do that next.
-
-
-## Print car details and hash map values
-
-Our last step is to print the details of our car orders and view the values we stored in the hash map. We'll add another complex conditional expression to help us parse the data for printing.
-
-1. Locate the following `println!` statement and comment in the `main` function:
-
-    ```rust
-        // Display car order details
-        println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
-    ```
-
-1. Replace these two lines of code with the following code block:
-
-    ```rust
-        // Display car order details by roof type and age of car
-        // TO DO: Add conditional expressions
-        // TO DO: Print output based on four conditions, correct the syntax
-        // TO DO: Used & hard top, New & hard top, Used convertible, New convertible
-        if used cars with hard top roofs {
-            println!("{}: {}, {:?}, Hard top, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1); 
-        } if new cars with hard top roofs {
-            println!("{}: {}, {:?}, Hard top, {}", order, car.age.0, car.motor, car.color); 
-        } if convertible used cars {
-            println!("{}: {}, {:?}, Convertible, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1); 
-        } if convertible new cars {
-            println!("{}: {}, {:?}, Convertible, {}", order, car.age.0, car.motor, car.color); 
-        }
-    ```
-
-    In this code block, we add a complex conditional expression to parse the car values for printing. However, the expressions are written in pseudo code!
-
-1. Replace each pseudo code expression, such as "used cars with hard top roofs," with the correct Rust keywords and syntax.
-
-    > [!Tip]
-    > To figure out the type of roof, you'll want to examine the value of the `roof` field in the `car` struct.
-    > To know if the order is for a used or new car, you can check the mileage in the `age` field of the `car` struct.
-
-1. Finally, let's add a statement at the very end of our program to view the values in our hash map:
-
-   ```rust
-        // TO DO: Display output from hash map, fix the syntax
-        // Display the hash map of car orders, show <K, V> pairs
-        println!("\nCar orders: {} {}", orders.keys, orders.values);
-    }
-    ```
-
-1. Unsurprisingly, there are a few more syntax issues to fix in this last statement. Do you see them?
-
-    > [!Tip]
-    > How do we access keys and values in a hash map?<br>
-    > Do we need to use special notation in the `println!` macro to show the values?
-
-1. After you finish the corrections, rebuild the program. Make sure there are no compiler errors. You're ready to test your car factory!
-
 
 ## Run the program
 
-When the program is complete, you should see output similar to this example:
+After your program builds successfully, you should see the following output:
 
 ```output
-1: Used, Manual, Hard top, Blue, 1000 miles
-2: New, SemiAuto, Hard top, Green
-3: Used, Automatic, Convertible, Red, 3000 miles
-4: New, SemiAuto, Convertible, Silver
-5: Used, Manual, Convertible, Blue, 5000 miles
-6: New, Automatic, Hard top, Green
-7: Used, Manual, Hard top, Red, 7000 miles
-8: New, SemiAuto, Hard top, Silver
-9: Used, Automatic, Convertible, Blue, 9000 miles
-10: New, SemiAuto, Convertible, Green
-11: Used, Manual, Convertible, Red, 11000 miles
-
-Car orders: {"Automatic": 3, "New": 5, "Used": 6, "Manual": 4}
+Car order 1: Some(Car { color: "Blue", motor: Manual, roof: true, age: ("Used", 1000) })
+Car order 2: Some(Car { color: "Green", motor: SemiAuto, roof: false, age: ("Used", 2000) })
+Car order 3: Some(Car { color: "Red", motor: Automatic, roof: true, age: ("New", 0) })
+Car order 4: Some(Car { color: "Silver", motor: SemiAuto, roof: false, age: ("New", 0) })
+Car order 5: Some(Car { color: "Blue", motor: Manual, roof: true, age: ("Used", 3000) })
+Car order 6: Some(Car { color: "Green", motor: Automatic, roof: true, age: ("Used", 4000) })
 ```
+
+Notice the output for the revised code is quite different. The `println!` macro displays the contents of the `Car` struct by showing each value and the corresponding field name.
+
+In the next exercise, we'll use loop expressions to reduce the redundancy in the code.
 
 
 ## Solution
@@ -241,5 +257,5 @@ You can compare your program output to the solution for this exercise in this [R
 
 <!-- Links -->
 
-[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=c9ec3158756966782a129ff054703864?azure-portal=true
-[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=fd34da4d67f18f3776b7a41d936b68f4?azure-portal=true
+[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1ee7c7a56ae1ba25a7cb382d871d53a3?azure-portal=true
+[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=60284ce4e0ea5510d9866c4093c78e60?azure-portal=true

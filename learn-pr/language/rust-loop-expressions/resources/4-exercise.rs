@@ -1,156 +1,106 @@
 #[derive(PartialEq, Debug)]
-// Declare Car struct to describe vehicle with four named fields
 struct Car { color: String, motor: Transmission, roof: bool, age: (String, u32) }
 
 #[derive(PartialEq, Debug)]
-// Declare enum for Car transmission type
 enum Transmission { Manual, SemiAuto, Automatic }
 
-//////////////////////////////////////////////////
-
-// Get the car quality by testing the value of the input argument
-// - miles (u32)
-// Create a tuple for the car quality with the age ("New" or "Used") and miles
-// Return a tuple with the arrow `->` syntax
+// Get car quality by testing input argument
 fn car_quality (miles: u32) -> (String, u32) {
-
-    // Declare and initialize the return tuple value
-    // For a new car, set the miles to 0
-    // Use the "mut" keyword so quality can be changed later
     let mut quality: (String, u32) = (String::from("New"), 0);
 
-    // Use a conditional expression to check the miles
-    // If the car has accumulated miles, then the car is used
+    // If car has accumulated miles, car is used
     if miles > 0 {
-        // Set the quality value for a used car
         quality = (String::from("Used"), miles);
     }
 
-    // Return the completed tuple, no semicolon needed
     return quality
 }
 
-//////////////////////////////////////////////////
+// Build "Car" using input arguments
+fn car_factory(order: i32, miles: u32) -> Car {
+    let colors = ["Blue", "Green", "Red", "Silver"];
 
-// Build a new "Car" using the values of four input arguments
-// - color (String)
-// - motor (Transmission enum)
-// - roof (boolean, true if the car has a hard top roof)
-// - miles (u32)
-// Call the car_quality(miles) function to get the car age
-// Return an instance of a "Car" struct with the arrow `->` syntax
-fn car_factory(color: String, motor: Transmission, roof: bool, miles: u32) -> Car {
+    // Prevent panic: Check color index for colors array, reset as needed
+    // Valid color = 1, 2, 3, or 4
+    // If color > 4, reduce color to valid index
+    let mut color = (order) as usize;
+    if color > 4 {        
+        // color = 5 --> index 1, 6 --> 2, 7 --> 3, 8 --> 4
+        color = color - 4;
+    }
 
-    // Create a new "Car" instance as requested
-    // - Bind first three fields to values of input arguments
-    // - Bind "age" to tuple returned from car_quality(miles)
-    let car = Car {
-        color: color,
-        motor: motor,
-        roof: roof,
+    // Create "Car" instance as requested
+    let mut car = Car {
+        color: String::from(colors[(color-1) as usize]),
+        motor: Transmission::Automatic,
+        roof: true,
         age: car_quality(miles)
     };
+        
+    // Add variety to orders for motor type and roof type
+    if order % 3 == 0 {          // 3, 6, 9
+        car.motor = Transmission::Automatic;
+    } else if order % 2 == 0 {   // 2, 4, 8, 10
+        car.motor = Transmission::SemiAuto;
+        car.roof = false;
+    } else {                     // 1, 5, 7, 11
+        car.motor = Transmission::Manual;
+    }
 
-    // Return new instance of "Car" struct, no semicolon needed
     return car
 }
 
-//////////////////////////////////////////////////
-
 fn main() {
-    // Create car color array
-    // 0 = Blue, 1 = Green, 2 = Red, 3 = Silver
-    let colors = ["Blue", "Green", "Red", "Silver"];
 
-    // Initialize counter variable
+    // Initialize a hash map for the car orders
+    // - Key: Car order number, i32
+    // - Value: Car order details, Car struct
+    use std::collections::HashMap;
+    let mut orders: HashMap<i32, Car> = HashMap::new();
+    
+    // Declare a car as mutable "Car" struct
+    let mut car: Car;
+
+    // Order 6 cars
+    // - Increment "order" after each request
+    // - Add each order <K, V> pair to "orders" hash map
+    // - Call println! to show order details from the hash map
+            
+    // Initialize order variable
     let mut order = 1;
         
-    // Declare the car type and initial values
-    // - Declare "car" as mutable "Car" struct
-    // - Declare "engine" as mutable "Transmission" enum
-    // - When car has a hard top, "roof" = true
-    let mut car: Car;
-    let mut miles = 1000; // Start used cars with 1,000 miles
-    let mut engine: Transmission;
-    let roof = true;      // convertible = false | hard top = true
-
-    //////////////////////////////////////////////////
-            
-    // Order 3 cars, one car for each type of transmission
-    // Use "order" variable, initialize to 0, increment before each order
-    // Index into "colors" array, vary color for the orders
-        
-    // Car order #1: Used
-    engine = Transmission::Manual;
-    car = car_factory(String::from(colors[order-1]), engine, roof, miles);
-    println!("{}: {}, Hard top {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
-        
-    // Car order #2: Used
+    // Car order #1: Used, Hard top
+    car = car_factory(order, 1000);
+    orders.insert(order, car);
+    println!("Car order {}: {:?}", order, orders.get(&order));
+    
+    // Car order #2: Used, Convertible
     order = order + 1;
-    miles = miles + 1000;
-    engine = Transmission::SemiAuto;
-    car = car_factory(String::from(colors[order-1]), engine, roof, miles);
-    println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
+    car = car_factory(order, 2000);
+    orders.insert(order, car);
+    println!("Car order {}: {:?}", order, orders.get(&order));
 
-    // Car order #3: New
+    // Car order #3: New, Hard top
     order = order + 1;
-    miles = 0;
-    engine = Transmission::Automatic;
-    car = car_factory(String::from(colors[order-1]), engine, roof, miles);
-    println!("{}: {}, Hard top, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
+    car = car_factory(order, 0);
+    orders.insert(order, car);
+    println!("Car order {}: {:?}", order, orders.get(&order));
 
-    //////////////////////////////////////////////////
+    // Car order #4: New, Convertible
+    order = order + 1;
+    car = car_factory(order, 0);
+    orders.insert(order, car);
+    println!("Car order {}: {:?}", order, orders.get(&order));
 
-    // SECOND VERSION OF MAIN BODY
+    // Car order #5: Used, Hard top
+    order = order + 1;
+    car = car_factory(order, 3000);
+    orders.insert(order, car);
+    println!("Car order {}: {:?}", order, orders.get(&order));
 
-    //////////////////////////////////////////////////
-
-    // Create car color array
-    // 0 = Blue, 1 = Green, 2 = Red, 3 = Silver
-    let colors = ["Blue", "Green", "Red", "Silver"];
-
-    // Initialize two counter variables, set both to 1
-    // TO DO: Add second variable named "index"
-    let mut order = 1;
-        
-    // Declare the car type and initial values
-    // - Declare "car" as mutable "Car" struct
-    // - Declare "engine" as mutable "Transmission" enum
-    // - When car has a hard top, "roof" = true
-    let mut car: Car;
-    let mut miles = 1000; // Start used cars with 1,000 miles
-    let mut engine: Transmission;
-    let roof = true;      // convertible = false | hard top = true
-
-    // Order 11 cars
-    // TO DO: Replace "loop expression" - loop 11 times, use "order" variable
-    loop expression {
-            
-        // Set car transmission type
-        engine = Transmission::Manual;
-
-        // Order the cars, New are even numbers, Used are odd numbers
-        // TO DO: Fix indexing into `colors` array, vary color for the orders
-        if index % 2 != 0 {
-            car = car_factory(colors().to_string(), engine, roof, miles);
-        } else { 
-            car = car_factory(colors().to_string(), engine, roof, 0);
-        }
-            
-        // Display car order details
-        println!("{}: {}, Closed roof, {:?}, {}, {} miles", order, car.age.0, car.motor, car.color, car.age.1);
-
-        // Change values for next loop
-        // TO DO: Increment "order" by 1, and "miles" by 1,000
-        order;
-        miles;
-            
-        // Adjust the index for the car details
-        // Order 11 cars, use index range of 0 -- 4, then repeat from 0
-        if index < 4 {
-            index = index + 1;
-        } else {
-            index = 1;
-        }
-    }
+    // Car order #6: Used, Hard top
+    order = order + 1;
+    car = car_factory(order, 4000);
+    orders.insert(order, car);
+    println!("Car order {}: {:?}", order, orders.get(&order));
 }

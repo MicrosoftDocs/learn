@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Exercise: Use a loop to iterate on data"
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/4-exercise-loop.md)]
