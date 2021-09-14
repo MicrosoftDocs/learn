@@ -2,7 +2,7 @@ In this unit, you'll use Azure Cloud Shell as a Linux terminal. You also can acc
 
 Before beginning this exercise, be sure to activate the sandbox.
 
-1. Run the following command to verify that your system is set up to use PowerShell. The `$PSVersionTable verifies your installation. Copy the folowing command and paste it into the Azure Cloud Shell on the right, and then press <kbd>Enter</kbd>.
+1. Run the following command to verify that your system is set up to use PowerShell. The `$PSVersionTable verifies your installation. Copy the following command and paste it into the Azure Cloud Shell on the right, and then press <kbd>Enter</kbd>.
 
    ```powershell
    $PSVersionTable
@@ -34,7 +34,7 @@ Before beginning this exercise, be sure to activate the sandbox.
    $PSVersionTable.PSVersion
    ```
 
-    Your output now resembles the foloowing table:
+    Your output now resembles the following table:
 
     ```output
     Major  Minor  Patch  PreReleaseLabel BuildLabel
