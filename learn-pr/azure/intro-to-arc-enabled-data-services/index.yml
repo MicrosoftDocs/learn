@@ -23,7 +23,7 @@ prerequisites: |
   - Basic understanding of how containers work
   - Basic knowledge of the Kubernetes platform
   - Working knowledge of SQL Server
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
