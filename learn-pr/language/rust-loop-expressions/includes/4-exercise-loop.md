@@ -79,7 +79,9 @@ We can simplify the structure by using a loop expression to repeat the actions t
 
 1. Replace the `<loop expression>` pseudocode with a loop statement that repeats the actions to create orders for six cars. You'll need an `order` variable that's initialized to 1.
 
-1. Build the program. Make sure the code compiles without any errors. You should see output similar to this example:
+1. Build the program. Make sure the code compiles without any errors.
+
+You should see output similar to this example:
         
     ```output
     Car order 1: Some(Car { color: "Blue", motor: Manual, roof: true, age: ("New", 0) })
