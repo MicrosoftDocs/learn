@@ -101,7 +101,7 @@ Create a Windows Server VM to simulate an on-premises machine running in the fin
 
 1. On your virtual machine, in the system tray, select **Start**, scroll to **Windows PowerShell (Admin)**, or if you don't see **(Amin)**, then right click **Windows PowerShell** and select **Run as Administrator**. 
 
-    :::image type="content" source="../media/4-connect-powershell-admin.png" alt-text="Screenshot of the Windows virtual machine showing Start menu with Windows PowerShell (Admin) selected and contex menu highlighted." lightbox="../media/4-connect-powershell-admin.png#lightbox":::
+    :::image type="content" source="../media/4-connect-powershell-admin.png" alt-text="Screenshot of the Windows virtual machine showing Start menu with Windows PowerShell (Admin) selected." lightbox="../media/4-connect-powershell-admin.png#lightbox":::
 
 1. At the command prompt in the PowerShell console, paste the script you copied, and press <kbd>Enter</kbd>. 
 
