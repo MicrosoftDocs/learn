@@ -45,22 +45,21 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
     :::image type="content" source="../media/3-code-test-product-details-function.png" alt-text="Screenshot of the ProductDetails Code and Test pane, with Test/Run selected in the command bar.":::
 
+1. On the command bar, select **Test/Run**.  The JSON code for your function displays and the Input pane for Code + Test appears.
 
-1. On the command bar, select **Test/Run**. The *Test* (Input/Output) pane appears.
-
-1. On the **Input** tab, in the **HTTP method** field dropdown list, select **GET**, and then under **Query**, select **Add parameter**.
+1. On the **Input** tab, in the **HTTP method** field dropdown list, select **GET**, and then under **Query**, select **Add parameter**. The name and value fields for a new query parameter appear.
 
 1. In the **Name** field, enter *id*, and in the **Value** field, enter *3*, and then select **Run**.
 
     :::image type="content" source="../media/3-test-input.png" alt-text="Screenshot of the input pane for Test + Run, with the input parameter for the HTTP GET method highlighted.":::
 
-1. The **Output** tab displays the results.
+1. The **Output** tab displays the HTTP response.
 
     :::image type="content" source="../media/3-test-output.png" alt-text="Screenshot of the output of a pane for Test + Run with response results of running the GET method.":::
 
-    The output pane displays the details of product ID 2 in JSON format. Optionally, you can also test the function by inputting ID values 1 and 2.
+    The output tab displays the details of an HTTP response in JSON format. Optionally, you can also test the function by inputting ID values 1 and 2.
 
-1. Select **Close** to close the Input Output pane.
+1. Select **Close** to close the Input Output tabs for Code + Test.
 
 1. On the command bar of the ProductDetails Code + Test pane, select **Get function URL**. Notice that the URL subdomain is the name of your function app, followed by the  **azurewebsites.net** domain. Copy and save the URL for later in this exercise.
 
@@ -89,7 +88,7 @@ After the function app has been deployed and tested, let's export it as an API u
 
     | Setting | Value |
     | --- | --- |
-    | Name | Use name that is unique within the **azure-api.net** domain |
+    | Name | The default value ProductFunctionnnnnnnnnnn-apim should be OK. Use name that is unique within the **azure-api.net** domain |
     | Subscription | Concierge Subscription |
     | Resource group | <rgn>[sandbox resource group name]</rgn> |
     | Location | Choose one of the following locations that supports the Consumption Plan: **West US**, **North Central US**, **West Europe**, **North Europe**, **Southeast Asia**, **Australia East**  | 
