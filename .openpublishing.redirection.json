@@ -8876,11 +8876,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-stores-azure/6-exercise.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-non-relational-data-stores-azure",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-first-bicep-template",
       "redirect_document_id": false
