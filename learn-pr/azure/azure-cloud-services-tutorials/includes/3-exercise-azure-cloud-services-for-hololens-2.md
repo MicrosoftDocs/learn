@@ -15,27 +15,27 @@ The user can create a **Tracked Object** to either or both associate a set of im
 * Storing a spatial location and guidance to it
 * Bot assistant to use some features via natural language
 
-## Azure Cloud services
+## Azure cloud services
 
 You'll use the following **Azure Cloud** services to implement the above features:
 
-### Azure Storage
+### Azure storage
 
 You will use [Azure Storage](https://azure.microsoft.com/services/storage/) for the persistence solution. It allows you to store data on a table and upload large binaries like images.
 
-### Azure Custom Vision
+### Azure custom vision
 
 With [Azure Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) (part of the [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/)) you can associate to *Tracked Objects* a set of images, train a machine learning model on the set and detect the *Tracked Object*.
 
-### Azure Spatial Anchors
+### Azure spatial anchors
 
 To store a *Tracked Object* location and give a guided directions to find it, you use [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors/).
 
-### Azure Bot Service
+### Azure bot service
 
 The application is mainly driven by traditional UI, so you use the [Azure Bot Service](https://azure.microsoft.com/services/bot-service/) to add some personality and act as a new interaction method.
 
-## Create and prepare the Unity project
+## Create and prepare the unity project
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
@@ -50,11 +50,11 @@ First, follow the Initializing your project and first application, excluding the
 
 Then follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is **DefaultXRSDKConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
-## Install in-built Unity packages
+## Install in-built unity packages
 
 1. In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** and click the **Install** button to install the package:
 
-    :::image type="content" source="../media/asa-02-section-2-step-1-1.png" alt-text="Unity Package Manager window with AR Foundation selected" lightbox="../media/asa-02-section-2-step-1-1.png":::
+    :::image type="content" source="../media/installaion-of-AR-foundation.png" alt-text="Screenshot of Unity Package Manager window with AR Foundation selected" lightbox="../media/installaion-of-AR-foundation.png":::
 
     > [!NOTE]
     > You are installing the AR Foundation package because the Azure Spatial Anchors SDK requires it, which you will import in the next section.
@@ -73,7 +73,7 @@ Then follow the Changing the Spatial Awareness Display Option instructions to en
 
 3. After you have imported the tutorial assets your Project window should look similar to this:
 
-    :::image type="content" source="../media/tutorial-1-section-4-step-1-1.png" alt-text="Unity Hierarchy, Scene, and Project windows after importing the tutorial assets" lightbox="../media/tutorial-1-section-4-step-1-1.png":::
+    :::image type="content" source="../media/after-importing-the-tutorial-assets.png" alt-text="Screenshot of Unity Hierarchy, Scene, and Project windows after importing the tutorial assets" lightbox="../media/after-importing-the-tutorial-assets.png":::
 
     > [!NOTE]
     > If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' and 'WorldAnchor.GetNativeSpatialAnchorPtr()' being obsolete, you can ignore these warnings.
@@ -84,7 +84,7 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
 
 1. In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder. While holding down the CTRL button, click on **SceneController**, **RootMenu** and **DataManager** to select the three prefabs:
 
-    :::image type="content" source="../media/tutorial-1-section-5-step-1-1.png" alt-text="Unity with SceneController, RootMenu and DataManager prefabs selected" lightbox="../media/tutorial-1-section-5-step-1-1.png":::
+    :::image type="content" source="../media/selecting-the-scenecontroller-rootmenu-datamanager.png" alt-text="Screenshot of Unity with SceneController, RootMenu and DataManager prefabs selected" lightbox="../media/selecting-the-scenecontroller-rootmenu-datamanager.png":::
 
 2. The **SceneController (prefab)** contains two scripts, **SceneController (script)** and **UnityDispatcher (script)**. The **SceneController** script component contains several UX functions and facilitates the photo capture functionality while **UnityDispatcher** is a helper class to allow execute actions on the Unity main thread.
 
@@ -94,11 +94,11 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
 
 3. Now with the three prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
-    :::image type="content" source="../media/tutorial-1-section-5-step-1-2.png" alt-text="Unity with newly added SceneController, RootMenu and DataManager prefabs still selected" lightbox="../media/tutorial-1-section-5-step-1-2.png":::
+    :::image type="content" source="../media/draging-the-scenecontroller-rootmenu-datamanager-to-hierarchy.png" alt-text="Screenshot of Unity with newly added SceneController, RootMenu and DataManager prefabs still selected" lightbox="../media/draging-the-scenecontroller-rootmenu-datamanager-to-hierarchy.png":::
 
 4. To focus in on the objects in the scene, you can double-click on the **RootMenu** object, and then zoom slightly out again:
 
-    :::image type="content" source="../media/tutorial-1-section-5-step-1-3.png" alt-text="Unity with RootMenu object selected" lightbox="../media/tutorial-1-section-5-step-1-3.png":::
+    :::image type="content" source="../media/unity-with-rootmenu-object-selected.png" alt-text="Screenshot of Unity with RootMenu object selected" lightbox="../media/unity-with-rootmenu-object-selected.png":::
 
     > [!TIP]
     > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position.
@@ -111,23 +111,23 @@ In this section, you will connect *SceneManager*, *DataManager* and *RootMenu* t
 
 1. In the Hierarchy window, select the **DataManager** object:
 
-    :::image type="content" source="../media/tutorial-1-section-6-step-1-1.png" alt-text="Unity with DataManager object selected" lightbox="../media/tutorial-1-section-6-step-1-1.png":::
+    :::image type="content" source="../media/unity-with-datamanager-object-selected.png" alt-text="Screenshot of Unity with DataManager object selected" lightbox="../media/unity-with-datamanager-object-selected.png":::
 
 2. In the Inspector window, locate the **DataManager (Script)** component and you will see an empty slot on the **On Data Manager Ready ()** event. Now from the Hierarchy window drag the **SceneController** object into the **On Data Manager Ready ()** event.
 
-    :::image type="content" source="../media/tutorial-1-section-6-step-1-2.png" alt-text="Unity with DataManager event listener added" lightbox="../media/tutorial-1-section-6-step-1-2.png":::
+    :::image type="content" source="../media/unity-with-datamanger-event-listener-added.png" alt-text="Screenshot of Unity with DataManager event listener added" lightbox="../media/unity-with-datamanger-event-listener-added.png":::
 
 3. You will notice that the dropdown menu of the event became active, click on the dropdown menu and navigate to **SceneController** and in the sub menu select the **Init ()** option:
 
-    :::image type="content" source="../media/tutorial-1-section-6-step-1-3.png" alt-text="Unity with DataManager event action added" lightbox="../media/tutorial-1-section-6-step-1-3.png":::
+    :::image type="content" source="../media/unity-with-datamanger-event-action-added.png" alt-text="Screenshot of Unity with DataManager event action added" lightbox="../media/unity-with-datamanger-event-action-added3.png":::
 
 4. From the Hierarchy window, select the **SceneController** object, there in the Inspector you will find the **SceneController** (script) component.
 
-    :::image type="content" source="../media/tutorial-1-section-6-step-1-4.png" alt-text="Unity with SceneController selected" lightbox="../media/tutorial-1-section-6-step-1-4.png":::
+    :::image type="content" source="../media/scenecontroller-selected.png" alt-text="Screenshot of Unity with SceneController selected" lightbox="../media/scenecontroller-selected.png":::
 
 5. You will see that there are several unpopulated fields, let's change that. Move the **DataManager** object from the Hierarchy into the *Data Manager* field and move the **RootMenu** GameObject from the Hierarchy into the *Main Menu* field.
 
-    :::image type="content" source="../media/tutorial-1-section-6-step-1-5.png" alt-text="Unity with SceneController configured" lightbox="../media/tutorial-1-section-6-step-1-5.png":::
+    :::image type="content" source="../media/scenecontroller-configured.png" alt-text="Screenshot of Unity with SceneController configured" lightbox="../media/scenecontroller-configured.png":::
 
 6. Now your scene is ready for the upcoming tutorials. Don't forget to save it into your project.
 
@@ -139,24 +139,24 @@ While the project yet has to be filled with content, you have to perform some pr
 
 1. In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
 
-    :::image type="content" source="../media/tutorial-1-section-7-step-1-1.png" alt-text="Unity open Project Settings" lightbox="../media/tutorial-1-section-7-step-1-1.png":::
+    :::image type="content" source="../media/open-project-settings.png" alt-text="Screenshot of Unity open Project Settings" lightbox="../media/open-project-settings.png":::
 
 2. In the Project Settings window, select **Player** and then **Publishing Settings**:
 
-    :::image type="content" source="../media/tutorial-1-section-7-step-1-2.png" alt-text="Unity Publishing Settings" lightbox="../media/tutorial-1-section-7-step-1-2.png":::
+    :::image type="content" source="../media/publishing-settings.png" alt-text="Screenshot of Unity Publishing Settings" lightbox="../media/publishing-settings.png":::
 
 3. In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone** and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, and **Webcam** capabilities:
 
-    :::image type="content" source="../media/tutorial-1-section-7-step-1-3.png" alt-text="Unity Capabilities" lightbox="../media/tutorial-1-section-7-step-1-3.png":::
+    :::image type="content" source="../media/unity-capabilty.png" alt-text="Screenshot of Unity Capabilities" lightbox="../media/unity-capabilty.png":::
 
-### 2. Deploy the app to your HoloLens 2
+### 2. Deploy the app to your holoLens 2
 
 Not all features that you will use in this tutorial series can run inside the Unity editor, this means that you need to be familiar with deploying the application to your HoloLens 2 device.
 
 > [!TIP]
 > For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the Getting started tutorials - Build your application to your device instructions.
 
-### 3. Run the app on your HoloLens 2 and follow the in-app instructions
+### 3. Run the app on your holoLens 2 and follow the in-app instructions
 
 > [!CAUTION]
 > All Azure Services uses the internet, so make sure your device is connected to the internet.
