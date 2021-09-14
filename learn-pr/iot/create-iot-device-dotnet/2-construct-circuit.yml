@@ -6,7 +6,7 @@ metadata:
   title: Construct the circuit
   description: "Construct a hardware device to monitor temperatures and activate relays."
   ms.date: 9/13/2021
-  author: CamSoper
+  author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
