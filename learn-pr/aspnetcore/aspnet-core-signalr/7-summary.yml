@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.aspnet-core-signalr.7-summary
+metadata:
+  title: Summary
+  description: A summary of ASP.NET Core SignalR with links to resources and additional references.
+  ms.date: 09/14/2021
+  author: IEvangelist
+  ms.author: dapine
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

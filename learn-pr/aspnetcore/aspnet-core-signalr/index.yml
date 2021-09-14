@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.languages.aspnet-core-signalr
+metadata:
+  title: Realtime web functionality with ASP.NET Core SignalR
+  description: Learn how to use realtime web functionality with ASP.NET Core SignalR.
+  ms.date: 09/14/2021
+  author: IEvangelist
+  ms.author: dapine
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Realtime web functionality with ASP.NET Core SignalR
+summary: Learn how to use realtime web functionality with ASP.NET Core SignalR.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand the various terminology specific to ASP.NET Core SignalR
+  - Implement a server: create a `Hub` subclass and register it as an endpoint
+  - Implement a client: connect to an endpoint through a `HubConnection`, enabling RPC and eventing
+prerequisites: |
+  - Familiarity with building and deploying ASP.NET Core apps
+  - Ability to write C# at the beginner level
+  - Local installations of the [.NET SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/)
+  - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
+  - Experience with using the command line
+iconUrl: /learn/achievements/aspnet-core-signalr.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- aspnet-core
+- dotnet
+units:
+- learn.languages.aspnet-core-signalr.1-introduction
+- learn.languages.aspnet-core-signalr.2-signalr-fundamentals
+- learn.languages.aspnet-core-signalr.3-server
+- learn.languages.aspnet-core-signalr.4-client
+- learn.languages.aspnet-core-signalr.5-realtime-web
+- learn.languages.aspnet-core-signalr.6-exercise-realtime-web
+- learn.languages.aspnet-core-signalr.7-summary
+
+badge:
+  uid: learn.languages.aspnet-core-signalr.badge

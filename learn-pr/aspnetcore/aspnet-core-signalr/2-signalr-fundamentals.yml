@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.aspnet-core-signalr.2-signalr-fundamentals
+metadata:
+  title: SignalR fundamentals
+  description: Learn the various ASP.NET Core SignalR terminology, such as hub, transports and protocols.
+  ms.date: 09/14/2021
+  author: IEvangelist
+  ms.author: dapine
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+
+title: SignalR fundamentals
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-signalr-fundamentals.md)]
