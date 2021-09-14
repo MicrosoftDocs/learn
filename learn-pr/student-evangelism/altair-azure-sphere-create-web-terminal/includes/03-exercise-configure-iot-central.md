@@ -1,16 +1,18 @@
 In this exercise, you'll configure your Altair IoT Central application.
 
+## Open IoT Central device explorer
+
 1. Switch back to the **IoT Central** [web portal](https://azure.microsoft.com/services/iot-central?azure-portal=true).
 
 1. From the sidebar menu, select **Devices**, then the **Altair on Azure Sphere** template, then your **device**.
+
+    It may take a minute or two from when your device started to it appearing in the devices section of IoT Central.
 
     The device name is your Azure Sphere Device ID. You can display your Device ID by running the following command from the Windows **PowerShell command line** or Linux **Terminal**.
 
    ```azsphere
    azsphere device show-attached
    ```
-
-    Note, it may take a minute for your device is displayed in the devices section.
 
 ## Rename your device
 

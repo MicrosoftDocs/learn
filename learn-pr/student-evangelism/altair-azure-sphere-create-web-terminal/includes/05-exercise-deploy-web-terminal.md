@@ -100,7 +100,7 @@ The setting will then be uploaded.
 
 The Altair Web Terminal is secure and requires authenticated users so you'll need to invite users, including yourself to the Altair Web Terminal Static Web App.
 
-1. From the [Microsoft Azure Portal](https://portal.azure.com?azure-portal=true).
+1. From the [Azure portal](https://portal.azure.com?azure-portal=true).
 1. Select **All resources**.
 
 :::image type="content" source="../media/azure-portal-all-resources.png" alt-text="Screenshot that shows how to select the all resources in the Azure portal.":::
@@ -141,5 +141,3 @@ When authenticated, connect to the Altair emulator. You'll need the name of your
 The MQTT Broker status message changes to **Connecting...**, when it has successfully connected, the status will change to **Connected**.
 
 :::image type="content" source="../media/web-terminal-connect.png" alt-text="Screenshot that shows how to connect the web terminal to the MQTT broker.":::
-
-In the next unit, you'll install and run the Altair emulator virtual disk server.

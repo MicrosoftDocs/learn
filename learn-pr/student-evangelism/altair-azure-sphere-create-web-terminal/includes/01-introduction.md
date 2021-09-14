@@ -1,59 +1,13 @@
-In this module, you'll learn how to configure IoT Central, create the Altair Web Terminal, and run the Altair virtual disk server.
+Welcome to the cloud-connected Altair 8800 on Azure Sphere learning path. In this module, you'll learn how to configure IoT Central, create the Altair Web Terminal, and run the Altair virtual disk server.
 
-## Configure IoT Central
+## Scenario: Cloud services
 
-When your Altair emulator connects to IoT Central, you can set several properties, including startup CPU State and LED brightness. You also can report memory usage and environment data.
+Most IoT solutions include cloud services to report and interact with IoT devices, and the Altair emulator is no different. The Altair emulator relies on cloud services for the Web Terminal and IoT Central for customization and reporting.
 
-:::image type="content" source="../media/iot-central-view-properties.png" alt-text="Screenshot that shows the IoT Central properties view of the Altair emulator.":::
+## What will you learn?
 
-From IoT Central, you can monitor the current state of the Altair emulator including how well the virtual disk cache is working.
+In this module, you'll learn how to customize your IoT Central web application, create an Azure Static Web App that will host the Altair Web Terminal, and finally, how to run the virtual disk server.
 
-:::image type="content" source="../media/iot-central-view-about.png" alt-text="Screenshot that shows the IoT Central about view of the Altair emulator.":::
+## What is the main goal?
 
-## Create the Altair Web Terminal
-
-The Altair emulator redirects keyboard and terminal messages over MQTT, via an MQTT broker to the MQTT enabled web terminal. The Altair web terminal is how you'll connect to the Altair emulator.
-
-The following image shows connecting to the Altair emulator from a web browser.
-
-:::image type="content" source="../media/web-terminal-connect.png" alt-text="Screenshot that shows the Altair web terminal connecting to the Altair emulator.":::
-
-## Run the Altair virtual disk server
-
-If you don't have the MikroE microSD Click, then you can run the virtual disk server for read/write storage for your CP/M applications. The virtual disk server can run on your desktop or in a cloud-based Azure Virtual Machine.
-
-Drive B: disk sector reads and writes are redirected over MQTT to an MQTT enabled Python-based virtual disk server. Drive B: disk sectors are also cached on one of the real-time cores. Caching significantly improves read/write performance.
-
-:::image type="content" source="../media/altair-azure-sphere-disk-cache-server.png" alt-text="Diagram of the Altair virtual disk architecture." border="false":::
-
-Disk reads work as follows:
-
-1. The Altair emulator first checks if the disk sector is available from the disk sector cache.
-1. If the disk sector is found in the cache, then the sector is returned to the Altair emulator. Getting sectors from the cache is much faster than requesting the sector from the virtual disk server.
-1. If the disk sector is not found in the cache, then the sector is requested from the virtual disk server.
-1. When the virtual disk server returns the disk sector, it is added to the disk sector cache. The sector is then returned to the Altair emulator for processing.
-
-Disk writes work as follows:
-
-1. The Altair emulator disk driver sends the disk sector to the cache manager.
-1. The disk sector is then sent to the cloud-based virtual disk manager.
-
-In this module, you will:
-
-* Set up IoT Central to run with the Altair 8800 emulator.
-* Customize the Altair emulator in an Azure Sphere template.
-* Create an Altair Web Terminal as an Azure static web app.
-* Install and run the Altair Python virtual disk server.
-
-## Prerequisites
-
-* A computer with an x86-64-based processor running one of the following operating systems:
-  * Windows 10 Anniversary Update or later
-  * 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
-* An Azure Sphere developer board that has one of the following kits:
-  * Avnet Azure Sphere Starter Kit Rev 1 or 2
-  * Seeed Studio Azure Sphere MT3620 Development Kit
-* A GitHub account.
-* An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
-
-In the next unit, you'll learn how to customize an IoT Central application for the Altair emulator.
+This module will focus on configuring and deploying the cloud services for the Altair emulator.
