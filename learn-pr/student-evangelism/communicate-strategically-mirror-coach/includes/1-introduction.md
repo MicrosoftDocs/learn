@@ -6,7 +6,7 @@ In this module, you'll learn about the responsibilities of the mirror and coach 
 
 Imagine that one of your peers has approached you with a request to help some friends who are planning to enroll in an upcoming hackathon. They have some knowledge in coding but want to learn more about the computer science field.
 
-The friends want to enroll in programming courses that they'll pursue in their free time. They're seeking guidance from someone who will help them select the correct courses and also help them with coding as they prepare for the hackathon. Your peer thinks this is a great opportunity for you to practice your leadership skills.
+The group of friends wants to enroll in programming courses that they'll pursue in their free time. They're seeking guidance from someone who will help them select the correct courses and also help them with coding as they prepare for the hackathon. Your peer thinks this is a great opportunity for you to practice your leadership skills.
 
 You meet the team and start by helping them select advanced programming courses that will aid them with the hackathon challenge. After you've worked with the team for a few weeks, you've noticed a pattern in your interactions with them.
 
