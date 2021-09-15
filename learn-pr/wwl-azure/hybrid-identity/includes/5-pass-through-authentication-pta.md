@@ -1,6 +1,8 @@
+
 **Azure AD Pass-through Authentication** (PTA) is an alternative to Azure AD Password Hash Synchronization, and provides the same benefit of cloud authentication to organizations. PTA allows users to sign in to both on-premises and cloud-based applications using the same user account and passwords. When users sign-in using Azure AD, Pass-through authentication validates the users’ passwords directly against an organizations on-premise Active Directory. 
 
-![PTA diagram showing a user device with the PTA agent authenticating to AD and then to Azure AD.](../media/az500-pass-through-authentication.png)
+> [!div class="mx-imgBorder"]
+> ![PTA diagram showing a user device with the PTA agent authenticating to AD and then to Azure AD.](../media/az500-pass-through-authentication.png)
 
 **Feature benefits**
 
@@ -15,5 +17,6 @@
 + Installing multiple agents provides high availability of sign-in requests.
 + PTA protects your on-premises accounts against brute force password attacks in the cloud.
 
-✔️ This feature can be configured without using a federation service so that any organization, regardless of size, can implement a hybrid identity solution. Pass-through authentication is not only for user sign-in but allows an organization to use other Azure AD features, such as password management, role-based access control, published applications, and conditional access policies. 
+>[!IMPORTANT]
+>This feature can be configured without using a federation service so that any organization, regardless of size, can implement a hybrid identity solution. Pass-through authentication is not only for user sign-in but allows an organization to use other Azure AD features, such as password management, role-based access control, published applications, and conditional access policies. 
 

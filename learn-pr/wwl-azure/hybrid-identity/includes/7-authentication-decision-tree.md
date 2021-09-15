@@ -17,7 +17,8 @@ Identity is the new control plane of IT security, so authentication is an organi
 
 ### Decision Tree
 
-![Authentication decision tree described in the text.](../media/az500-auth_decision_tree.png)
+> [!div class="mx-imgBorder"]
+> ![Authentication decision tree described in the text.](../media/az500-auth_decision_tree.png)
 
 Details on decision questions:
 
@@ -32,4 +33,5 @@ Details on decision questions:
 5. Azure AD Identity Protection requires Password Hash Sync regardless of which sign-in method you choose, to provide the Users with leaked credentials report. Organizations can fail over to Password Hash Sync if their primary sign-in method fails and it was configured before the failure event.
 
 
-✔️ This decision tree is intended as a starting point to understand your options, but there can be others or even combinations of different options. For example, you can use Azure AD B2C and configure it to allow user sign-in for multi-tenant Azure AD tenants - with or without the traditional support for self-service sign up and social identity providers.
+>[!IMPORTANT]
+>This decision tree is intended as a starting point to understand your options, but there can be others or even combinations of different options. For example, you can use Azure AD B2C and configure it to allow user sign-in for multi-tenant Azure AD tenants - with or without the traditional support for self-service sign up and social identity providers.

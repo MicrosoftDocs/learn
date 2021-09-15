@@ -1,6 +1,8 @@
+
 Azure AD Connect will integrate your on-premises directories with Azure Active Directory. This allows you to provide a common identity for your users for Microsoft 365, Azure, and SaaS applications integrated with Azure AD.
 
-![Azure AD Connect is shown connecting on-premises AD to Azure AD.](../media/az500-ad_connect.png)
+> [!div class="mx-imgBorder"]
+> ![Azure AD Connect is shown connecting on-premises AD to Azure AD.](../media/az500-ad_connect.png)
 
 Azure AD Connect provides the following features:
 
@@ -16,7 +18,8 @@ Azure AD Connect provides the following features:
 
 When you integrate your on-premises directories with Azure AD, your users are more productive because there's a common identity to access both cloud and on-premises resources. However, this integration creates the challenge of ensuring that this environment is healthy so that users can reliably access resources both on premises and in the cloud from any device. 
 
-![Screenshot of the Azure AD Health page. Active alerts, resolved alerts, and notifications are shown. ](../media/az500-ad_connect_health.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Azure AD Health page. Active alerts, resolved alerts, and notifications are shown. ](../media/az500-ad_connect_health.png)
 
 
 **Azure Active Directory (Azure AD) Connect Health** provides robust monitoring of your on-premises identity infrastructure. It enables you to maintain a reliable connection to Microsoft 365 and Microsoft Online Services. This reliability is achieved by providing monitoring capabilities for your key identity components. Also, it makes the key data points about these components easily accessible.
@@ -30,5 +33,5 @@ Azure AD Connect Health helps you:
 
 With Azure AD Connect the key data you need is easily accessible. You can view and act on alerts, setup email notifications for critical alerts, and view performance data. 
  
-✔️ Using AD Connect Health works by installing an agent on each of your on-premises sync servers.
-
+>[!IMPORTANT]
+>Using AD Connect Health works by installing an agent on each of your on-premises sync servers.

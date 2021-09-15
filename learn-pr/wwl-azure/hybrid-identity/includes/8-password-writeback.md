@@ -1,8 +1,10 @@
+
 Having a cloud-based password reset utility is great but most companies still have an on-premises directory where their users exist. How does Microsoft support keeping traditional on-premises Active Directory Domain Services (AD DS) in sync with password changes in the cloud? 
 
 **Password writeback** is a feature enabled with Azure AD Connect that allows password changes in the cloud to be written back to an existing on-premises directory in real time. 
 
-![Screenshot of Azure AD Connect Optional Features. The Password Writeback checkbox is selected.](../media/az500-password_writeback.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Azure AD Connect Optional Features. The Password Writeback checkbox is selected.](../media/az500-password_writeback.png)
 
 Password writeback provides:
 
@@ -17,5 +19,6 @@ Password writeback provides:
 + **Doesn’t require any inbound firewall rules**. Password writeback uses an Azure Service Bus relay as an underlying communication channel. All communication is outbound over port 443.
 
 
-✔️ To use SSPR you must have already configured Azure AD Connect in your environment.
+>[!IMPORTANT]
+>To use SSPR you must have already configured Azure AD Connect in your environment.
 
