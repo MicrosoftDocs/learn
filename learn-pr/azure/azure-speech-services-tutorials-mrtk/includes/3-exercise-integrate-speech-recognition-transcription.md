@@ -51,7 +51,7 @@ In this section, you will prepare the scene by adding the tutorial prefab and co
 
 1. In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureSpeechServices** > **Prefabs** folder and drag the **Lunarcom** prefab into the Hierarchy window to add it to your scene:
 
-    :::image type="content" source="../preparing-scene.png" alt-text="Screenshot of Preparing the scene" lightbox="../media/preparing-scene.png":::
+    :::image type="content" source="../media/preparing-scene.png" alt-text="Screenshot of Preparing the scene" lightbox="../media/preparing-scene.png":::
 
 2. With the **Lunarcom** object still selected in the Hierarchy window, in the Inspector window, use the **Add Component** button to add the **Lunarcom Controller (Script)** component to the Lunarcom object:
 
