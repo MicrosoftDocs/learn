@@ -33,8 +33,11 @@ products:
 units:
 - learn.aspnet-core-signalr.introduction
 - learn.aspnet-core-signalr.fundamentals
+- learn.aspnet-core-signalr.knowledge-check-fundamentals
 - learn.aspnet-core-signalr.create-server
+- learn.aspnet-core-signalr.exercise-create-server
 - learn.aspnet-core-signalr.use-client
+- learn.aspnet-core-signalr.exercise-use-client
 - learn.aspnet-core-signalr.knowledge-check
 - learn.aspnet-core-signalr.summary
 badge:

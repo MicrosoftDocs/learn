@@ -2,7 +2,7 @@
 uid: learn.aspnet-core-signalr.create-server
 title: Create a SignalR server
 metadata:
-  unitType: exercise
+  unitType: learning-content
   title: Create a SignalR server
   description:  Learn how to create an ASP.NET Core SignalR server application.
   ms.date: 9/15/2021
@@ -11,4 +11,4 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 5 # user input: the estimate time to complete the unit
 content: |
-  [!include[](includes/3-create-server.md)]
+  [!include[](includes/4-create-server.md)]

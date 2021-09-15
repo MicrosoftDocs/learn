@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.aspnet-core-signalr.use-client
-title: Use a SignalR client
+uid: learn.aspnet-core-signalr.exercise-use-client
+title: exercise-use-client 
 metadata:
   unitType: {{patternType}} 
   title: "TODO" # user input: module title for browser tab and search results
@@ -9,6 +9,6 @@ metadata:
   author: IEvangelist 
   ms.author: dapine 
   ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 5 # user input: the estimate time to complete the unit
+durationInMinutes: 1 # user input: the estimate time to complete the unit
 content: |
-  [!include[](includes/4-use-client.md)]
+  [!include[](includes/7-exercise-use-client.md)]
