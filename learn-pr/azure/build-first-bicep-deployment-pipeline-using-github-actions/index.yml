@@ -32,7 +32,7 @@ prerequisites: |
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).
   - [Git](https://git-scm.com/download?azure-portal=true).
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/bicep/build-first-bicep-deployment-workflow-using-github-actions.svg
 levels:
   - intermediate
 roles:
