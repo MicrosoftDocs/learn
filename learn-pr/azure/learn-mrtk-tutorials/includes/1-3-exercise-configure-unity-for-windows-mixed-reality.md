@@ -24,7 +24,7 @@ Before you can get started creating an immersive experience for Windows Mixed Re
 
     Wait for Unity to create the project:
 
-    :::image type="content" source="../media/new-project-in-progress.png" alt-text="Screenshot of Unity create new project in progress." lightbox="../media/new-project-in-progress.png":::
+    :::image type="content" source="../media/new-project-progress.png" alt-text="Screenshot of Unity create new project in progress." lightbox="../media/new-project-in-progress.png":::
 
 ## Switch the build platform
 
