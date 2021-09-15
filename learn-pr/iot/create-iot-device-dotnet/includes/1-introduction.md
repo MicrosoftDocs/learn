@@ -32,6 +32,8 @@ In this module you will:
   - Full-sized breadboard ([example](https://www.adafruit.com/product/239))
   - Raspberry Pi GPIO breakout board ([example](https://www.adafruit.com/product/2028))
 
+All of the required hardware components are available from a variety of retailers. Most of the components can be found bundled in convenient kits.
+
 > [!IMPORTANT]
 > The .NET IoT Libraries support a wide range of hardware platforms. Raspberry Pi was selected for this module due to its wide availability and affordable price point.
 >
@@ -58,4 +60,4 @@ You've decided to build the device using a Raspberry Pi to monitor the environme
 
 ## The first step
 
-The first step to building our device is constructing the circuit.
+The first step to building your device is constructing the circuit.
