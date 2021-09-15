@@ -6,7 +6,7 @@ This array of pins on the Raspberry Pi is called the General Purpose Input/Outpu
 
 ![A Raspberry Pi 3 with the GPIO header highlighted.](../media/gpio-header.png#lightbox)
 
-This versatile pin header supports communication using a variety of protocols. We'll talk more about the supported protocols in the next unit.
+This versatile pin header supports communication using a variety of protocols. You'll learn more about the supported protocols in the next unit.
 
 A GPIO breakout board combined with a breadboard streamlines connecting sensors and other components to the GPIO header.
 ## Measuring environmental conditions
