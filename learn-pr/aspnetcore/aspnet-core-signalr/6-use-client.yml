@@ -2,13 +2,13 @@
 uid: learn.aspnet-core-signalr.use-client
 title: Use a SignalR client
 metadata:
-  unitType: {{patternType}} 
+  unitType: learning-content
   title: Use a SignalR client
   description: Learn how to create an ASP.NET Core SignalR client application.
-  ms.date: 9/15/2021 
-  author: IEvangelist 
-  ms.author: dapine 
+  ms.date: 9/15/2021
+  author: IEvangelist
+  ms.author: dapine
   ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 5 # user input: the estimate time to complete the unit
+durationInMinutes: 3 # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/6-use-client.md)]

@@ -24,21 +24,21 @@ prerequisites: |
   - Experience with using the command line
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- developer
+  - developer
 products:
-- aspnet-core
-- dotnet
+  - aspnet-core
+  - dotnet
 units:
-- learn.aspnet-core-signalr.introduction
-- learn.aspnet-core-signalr.fundamentals
-- learn.aspnet-core-signalr.knowledge-check-fundamentals
-- learn.aspnet-core-signalr.create-server
-- learn.aspnet-core-signalr.exercise-create-server
-- learn.aspnet-core-signalr.use-client
-- learn.aspnet-core-signalr.exercise-use-client
-- learn.aspnet-core-signalr.knowledge-check
-- learn.aspnet-core-signalr.summary
+  - learn.aspnet-core-signalr.introduction
+  - learn.aspnet-core-signalr.fundamentals
+  - learn.aspnet-core-signalr.knowledge-check-fundamentals
+  - learn.aspnet-core-signalr.create-server
+  - learn.aspnet-core-signalr.exercise-create-server
+  - learn.aspnet-core-signalr.use-client
+  - learn.aspnet-core-signalr.exercise-use-client
+  - learn.aspnet-core-signalr.knowledge-check
+  - learn.aspnet-core-signalr.summary
 badge:
   uid: learn.aspnet-core-signalr.badge
