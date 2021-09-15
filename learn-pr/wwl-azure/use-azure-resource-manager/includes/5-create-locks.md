@@ -3,15 +3,15 @@ A common concern with resources provisioned in Azure is the ease with which they
  -  You can associate the lock with a subscription, resource group, or resource.
  -  Locks are inherited by child resources.
 
-:::image type="content" source="../media/resource-manager-locks-853635fd.png" alt-text="Screenshot of the Resource Manager Locks page with Locks highlighted in the resource menu and in the Add Lock pane, with Lock type dropdown open.":::
+:::image type="content" source="../media/resource-manager-locks-853635fd.png" alt-text="Screenshot of the Management locks page. In the Settings options, Locks are highlighted and in the Add Lock page, the Lock type, Ready-only, and Delete option are displayed and highlighted.":::
 
 
 ## Lock types
 
-There are two types of Resource Manager locks.
+There are two types of resource locks.
 
- -  **Read-Only lock**: This type of lock prevents any changes to the resource, resource group, or subscription.
- -  **Delete lock**: This type of lock prevents the resource, resource group, or subscription from being deleted.
+ -  **Read-Only locks**, which prevent any changes to the resource.
+ -  **Delete locks**, which prevent deletion.
 
 > [!NOTE]
-> Only Owner and User Access Administrator roles can create, edit, or delete Resource Manager locks.
+> Only the Owner and User Access Administrator roles can create or delete management locks.
