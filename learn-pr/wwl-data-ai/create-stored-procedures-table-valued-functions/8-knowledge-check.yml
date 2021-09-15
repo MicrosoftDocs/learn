@@ -15,7 +15,7 @@ labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Suppose you run this T-SQL batch script to insert three rows. After execution you get an error, how many rows will be created?```sqlINSERT INTO HumanResources.PossibleSkills (SkillName, Category, Credit) VALUES('Database Administration', 'IT Professional', 5);INSERT INTO HumanResources.PossibleSkills (SkillName, Category, Credit) VALUES('C#.NET', 'Developer', 4);INSERT INTO HumanResources.PossibleSkills (SkillName, Category, Credit) VALUES('Project Management', 'Management', 'Two');GO```"
+  - content: "Suppose someone runs this T-SQL batch script to insert three rows. After execution they get an error, how many rows will be created?```sqlINSERT INTO HumanResources.PossibleSkills (SkillName, Category, Credit) VALUES('Database Administration', 'IT Professional', 5);INSERT INTO HumanResources.PossibleSkills (SkillName, Category, Credit) VALUES('C#.NET', 'Developer', 4);INSERT INTO HumanResources.PossibleSkills (SkillName, Category, Credit) VALUES('Project Management', 'Management', 'Two');GO```"
     choices:
     - content: "0"
       isCorrect: false
@@ -26,18 +26,18 @@ quiz:
     - content: "2"
       isCorrect: true
       explanation: "Correct. Two rows are created. There's no syntax error in this batch, so SQL can begin to execute the statement. The first two INSERT statements are executed before the error arises."
-  - content: "You want to populate a table by creating 15 new rows. Before you create the rows, you need to check that the table exists. From the following T-SQL keywords, choose the one that you'll NOT need to use."
+  - content: "Someone want to populate a table by creating 15 new rows. Before they create the rows, they need to check that the table exists. From the following T-SQL keywords, choose the one that they'll NOT need to use."
     choices:
     - content: "IF"
       isCorrect: false
-      explanation: "Incorrect. You might use the IF statement to check if the table exists before inserting 15 rows."
+      explanation: "Incorrect. They might use the IF statement to check if the table exists before inserting 15 rows."
     - content: "WHILE"
       isCorrect: true
-      explanation: "Correct. The WHILE statement is a loop construct, and would bot be used in this context."
+      explanation: "Correct. The WHILE statement is a loop construct, and would not be used in this context."
     - content: "INSERT"
       isCorrect: false
       explanation: "Incorrect. The INSERT statement is used to insert the 15 rows into the table."
-  - content: "Can you declare a variable in one batch and reference it multiple batches?"
+  - content: "Can a variable be declared in one batch and referenced it multiple batches?"
     choices:
     - content: "Yes"
       isCorrect: false

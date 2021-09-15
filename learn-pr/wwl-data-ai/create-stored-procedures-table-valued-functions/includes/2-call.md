@@ -1,6 +1,6 @@
 Stored procedures may be called by an application, by a user, or when SQL Server starts.
 
-## Executing a stored procedure by a user 
+## Execute a stored procedure by a user 
 
 When an application or user executes a stored procedure, the EXECUTE command or its shortcut, EXEC is used, followed by the two-part name of the procedure. For example:
 
@@ -20,7 +20,7 @@ System stored procedures are prefixed with **sp_**. System stored procedures are
 
 `EXEC sys.sp_who;`
 
-## Automatically executing a stored procedure
+## Automatically execute a stored procedure
 
 You can run a stored procedure every time SQL Server starts. You might want to carry out database maintenance operations, or run a procedure as a background process. Stored procedures that run automatically cannot contain input or output parameters.
 
