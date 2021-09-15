@@ -692,3 +692,8 @@ achievements:
   title: Build a chat bot with the Azure portal
   summary: Build a chat bot with the Azure portal
   iconUrl: /learn/achievements/build-a-chat-bot-with-the-azure-portal.svg
+- uid: learn.load-test-web-app-azure-devops.badge
+  type: badge
+  title: Load test Azure web apps by using Azure DevOps
+  summary: Create a simple load test via the Azure portal, run it and check the results, and then customize the test in Azure DevOps.
+  iconUrl: /learn/achievements/load-test-web-app-azure-devops.svg

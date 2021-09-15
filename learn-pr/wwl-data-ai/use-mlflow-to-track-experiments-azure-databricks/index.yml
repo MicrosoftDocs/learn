@@ -3,7 +3,7 @@ uid: learn.wwl.use-mlflow-to-track-experiments-azure-databricks
 metadata:
   title: Use MLflow to track experiments in Azure Databricks
   description: "Use MLflow to track experiments in Azure Databricks"
-  ms.date: 08/20/2021
+  ms.date: 09/15/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Run experiments
 prerequisites: |
   Before starting this module, you should be familiar with using Python to train machine learning models in Azure Databricks.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/use-mlflow-to-track-experiments-in-azure-databricks.svg
 levels:
 - intermediate
 roles:
