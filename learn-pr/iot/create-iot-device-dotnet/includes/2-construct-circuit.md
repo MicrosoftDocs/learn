@@ -20,10 +20,7 @@ A relay is an electromagnetic switch that allows you to use small currents to co
 
 A real-world device might use this relay to control the power to the fan. A fan large enough to maintain humidity in a cave would generally require a large AC current. For safety purposes, and to keep our focus on the code, our device is going to use an LED to represent a relay. An illuminated LED will indicate that our relay is "on."
 
-To activate the LED, our code will activate a GPIO pin for output, which will send current to the LED. This is the same process you'd use to activate many relays.
-
-> [!NOTE]
-> The resistor is required to ensure we don't burn out the LED. You don't need a resistor in a real-world relay scenario.
+To activate the LED, our code will activate a General Purpose Input/Output (GPIO) pin for output, which will send current to the LED. This is the same process you'd use to activate many relays.
 
 ## Construct the device
 
@@ -47,6 +44,16 @@ Refer to the diagram above as you construct your device.
     - LED cathode (shorter, negative lead) to 330 Ω resistor (either end)
     - 330 Ω resistor (other end) to ground
 
+    > [!NOTE]
+    > The resistor is required to ensure we don't burn out the LED. You don't need a resistor in a real-world relay scenario.
+
 ### TODO: Completed breadboard image
+
+## Connect the Raspberry Pi
+
+While the Raspberry Pi is powered off, use a ribbon cable to connect the GPIO breakout to the Raspberry Pi's GPIO header. Power on the Raspberry Pi.
+
+> [!IMPORTANT]
+> If you haven't already, ensure the **I2C** and **SSH** services are enabled on the Raspberry Pi. Use the `raspi-config` command as described in the Introduction unit.
 
 In the next unit, we'll learn about the .NET IoT Libraries.
