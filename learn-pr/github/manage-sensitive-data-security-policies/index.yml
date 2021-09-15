@@ -33,7 +33,7 @@ products:
 units:
   - learn.github.manage-sensitive-data-security-policies.introduction 
   - learn.github.manage-sensitive-data-security-policies.set-security-policies
-  - learn.github.manage-sensitive-data-security-policies.scrub-sensitive-data-from-a-repository
+  - learn.github.manage-sensitive-data-security-policies.scrub-sensitive-data-from-repository
   - learn.github.manage-sensitive-data-security-policies.report-logs
   - learn.github.manage-sensitive-data-security-policies.exercise
   - learn.github.manage-sensitive-data-security-policies.knowledge-check
