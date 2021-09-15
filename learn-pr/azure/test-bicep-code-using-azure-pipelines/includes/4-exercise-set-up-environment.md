@@ -15,7 +15,7 @@ Here you make sure that your Azure DevOps organization is set up to complete the
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated Azure DevOps project.
 
 > [!TIP]
-> Even if you completed the previous module in the learning path, please follow these instructions to create a new project and ensure you give it a new name.
+> Even if you completed the previous module in the learning path, please follow these instructions to create a new project and ensure that you give it a new name.
 
 ### Run the template
 
@@ -28,9 +28,9 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
 
-1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *toy-website-test*.
+1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as **toy-website-test**.
 
-    :::image type="content" source="../media/4-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::
+    :::image type="content" source="../media/4-create-new-project.png" alt-text="Screenshot that shows creating a project through the Azure DevOps Demo Generator.":::
 
 1. Select **Create Project**.
 
@@ -49,19 +49,19 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Clone**.
 
-   :::image type="content" source="../media/4-clone.png" alt-text="Screenshot of Azure DevOps showing the repository, with the Clone button highlighted.":::
+   :::image type="content" source="../media/4-clone.png" alt-text="Screenshot of Azure DevOps that shows the repository, with the Clone button highlighted.":::
 
-1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the username and password displayed to somewhere safe.
+1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the displayed username and password to somewhere safe.
 
 1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
-    :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the Clone in VS Code button highlighted.":::
+    :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the button for cloning in Visual Studio Code highlighted.":::
 
 1. Create a folder to use for the repository, and then choose **Select Repository Location**.
 
 1. You're using this repository for the first time, so you're prompted to sign in.
 
-    If you're using Windows, enter the same credentials you used to sign in to Azure DevOps earlier in this exercise.
+    If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
 
     If you're using macOS, enter the Git username and password that you generated a few moments ago.
 
@@ -109,7 +109,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 1. If the dropdown control at the right displays **pwsh** or **PowerShell**, the correct shell is open and you can skip to the next section.
 
-   :::image type="content" source="../../includes/media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with 'pwsh' displayed in the dropdown control.":::
+   :::image type="content" source="../../includes/media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with text signifying PowerShell displayed in the dropdown control.":::
 
    If **pwsh** or **PowerShell** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **pwsh** or **PowerShell**.
 
@@ -155,33 +155,33 @@ New-AzResourceGroup -Name ToyWebsiteTest -Location westus
 
 ## Create a service connection in Azure Pipelines
 
-Next, create a service connection in Azure Pipelines. This automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy to the resource group.
+Next, create a service connection in Azure Pipelines. This connection automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy to the resource group.
 
 1. In your browser, select **Project settings**.
 
-   :::image type="content" source="../../includes/media/azure-devops-project-settings.png" alt-text="Screenshot of Azure DevOps that shows the menu, with the 'Project settings' item highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-project-settings.png" alt-text="Screenshot of Azure DevOps that shows the menu item for project settings highlighted.":::
 
 1. Select **Service connections** > **Create service connection**.
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the 'Create service connection' button highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows selections for creating a service connection.":::
 
 1. Select **Azure Resource Manager** > **Next**.
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Azure Resource Manager service connection type highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the Azure Resource Manager service connection type highlighted.":::
 
 1. Select **Service principal (automatic)** > **Next**.
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Service principal (automatic) option highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the service principal option highlighted.":::
 
-1. In the **Subscription** drop-down, select your Azure subscription.
+1. In the **Subscription** dropdown list, select your Azure subscription.
 
-   A popup window might appear, asking you to sign in to Azure. If it does, enter your credentials and sign in.
+   A pop-up window might appear, asking you to sign in to Azure. If it does, enter your credentials and sign in.
 
-1. In the **Resource group** drop-down, select **ToyWebsiteTest**.
+1. In the **Resource group** dropdown list, select **ToyWebsiteTest**.
 
 1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
 
-   :::image type="content" source="../media/4-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the details completed and the Next button highlighted.":::
+   :::image type="content" source="../media/4-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the details completed for creating a service connection, with the Save button highlighted.":::
 
    > [!TIP]
    > For simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.

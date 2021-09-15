@@ -16,4 +16,4 @@ The following display options are available:
 [![Plot Options](../media/01-02-08-spark-dataframe-view-plot-options.png)](../media/01-02-08-spark-dataframe-view-plot-options.png#lightbox)
 
 > [!NOTE]
-> **More information:** for more information about the available visualizations, see [Visualizations](/azure/databricks/notebooks/visualizations) in the Azure Databricks documentation.
+> **More information:** for more information about the available visualizations, see [Visualizations](/azure/databricks/notebooks/visualizations?azure-portal=true) in the Azure Databricks documentation.
