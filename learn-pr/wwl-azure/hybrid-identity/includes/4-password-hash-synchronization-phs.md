@@ -2,7 +2,7 @@
 The probability that you're blocked from getting your work done due to a forgotten password is related to the number of different passwords you need to remember. The more passwords you need to remember, the higher the probability to forget one. Questions and calls about password resets and other password-related issues demand the most helpdesk resources.
  
 > [!div class="mx-imgBorder"]
-> ![Users and devices are shown connecting to the on-premises AD, Azure AD, Microsoft 365, and SaaS Apps. Password1 is being used to connect. ](../media/az500-password_hash_sync.png)
+> ![Users and devices are shown connecting to the on-premises AD, Azure AD, Microsoft 365, and SaaS Apps. Password1 is being used to connect. ](../media/az500-password-hash-sync.png)
 
 **Password hash synchronization** (PHS) is a feature used to synchronize user passwords from an on-premises Active Directory instance to a cloud-based Azure AD instance. Use this feature to sign in to Azure AD services like Microsoft 365, Microsoft Intune, CRM Online, and Azure Active Directory Domain Services (Azure AD DS). You sign in to the service by using the same password you use to sign in to your on-premises Active Directory instance. Password hash synchronization helps you to:
 

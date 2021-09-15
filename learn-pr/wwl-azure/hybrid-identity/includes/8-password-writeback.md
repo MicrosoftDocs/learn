@@ -4,7 +4,7 @@ Having a cloud-based password reset utility is great but most companies still ha
 **Password writeback** is a feature enabled with Azure AD Connect that allows password changes in the cloud to be written back to an existing on-premises directory in real time. 
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Optional Features. The Password Writeback checkbox is selected.](../media/az500-password_writeback.png)
+> ![Screenshot of Azure AD Connect Optional Features. The Password Writeback checkbox is selected.](../media/az500-password-writeback.png)
 
 Password writeback provides:
 

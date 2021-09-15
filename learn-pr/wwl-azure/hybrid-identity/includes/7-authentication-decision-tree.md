@@ -18,7 +18,7 @@ Identity is the new control plane of IT security, so authentication is an organi
 ### Decision Tree
 
 > [!div class="mx-imgBorder"]
-> ![Authentication decision tree described in the text.](../media/az500-auth_decision_tree.png)
+> ![Authentication decision tree described in the text.](../media/az500-authentication-decision-tree.png)
 
 Details on decision questions:
 

@@ -36,7 +36,7 @@ quiz:
       explanation: "Azure AD Connect. Azure AD Connect sync is a main component of Azure AD Connect. It takes care of all the operations that are related to synchronize identity data between your on-premises environment and Azure AD."
     - content: "Active Directory Federation Services"
       isCorrect: false
-      explanation: "This is an authentication and authorization service for Windows Server."
+      explanation: "Active Directory Federation Services is an authentication and authorization service for Windows Server."
     - content: "Password writeback"
       isCorrect: false
       explanation: "This service is used after the synchronization is complete to maintain your passwords."
@@ -55,10 +55,10 @@ quiz:
     choices:
     - content: "FIDO2 security keys"
       isCorrect: false
-      explanation: "FIDO2 security keys is an available passwordless authentication method in Azure."
+      explanation: "FIDO2 security keys are an available passwordless authentication method in Azure."
     - content: "Microsoft Authenticator app"
       isCorrect: false
       explanation: "You can use the Authenticator app for passwordless connections to Azure."
-    - content: "Multi-Factor Authentication"
+    - content: "Azure Multi-Factor Authentication"
       isCorrect: true
-      explanation: "Multi-Factor Authentication. Multi-factor authentication (MFA) is a great way to secure your organization, but users often get frustrated with the additional security layer on top of having to remember their passwords. Passwordless authentication methods are more convenient because the password is removed and replaced with something you have, plus something you are or something you know. The other choices are passwordless authentication options that integrate with Azure AD. Azure AD DS) enables the use of ciphers such as NTLM v1 and TLS v1."
+      explanation: "Azure Multi-Factor Authentication (MFA) is a great way to secure your organization, but users often get frustrated with the extra security layer on top of having to remember their passwords. Passwordless authentication methods are more convenient because the password is removed and replaced with something you have, plus something you are or something you know. The other choices are passwordless authentication options that integrate with Azure AD. Azure AD DS) enables the use of ciphers such as NTLM v1 and TLS v1."
