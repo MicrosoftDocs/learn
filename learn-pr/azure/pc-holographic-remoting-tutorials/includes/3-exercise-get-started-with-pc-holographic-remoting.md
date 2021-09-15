@@ -95,7 +95,7 @@ We've provided six different 3D models for demonstration. Expand the **ModelPare
     > [!Note]
     > Stay in button parent object only.
 
-    :::image type="content" source="../media/clipping-object" alt-text="Screenshot of Drag and drop clipping object" lightbox="../media/clipping-object.png":::
+    :::image type="content" source="../media/clipping-object.png" alt-text="Screenshot of Drag and drop clipping object" lightbox="../media/clipping-object.png":::
 
 4. In the Hierarchy window, select the ClippingObjects prefab and enable it in the Inspector window to turn on the **Clipping objects**.
 
