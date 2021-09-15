@@ -1,5 +1,7 @@
 ## [Unity 2020 + OpenXR](#tab/openxr)
 
+Your Holographic Remoting app is now ready to build on your PC. Follow the below steps and make these changes to build this application on to your PC.
+
 ### 1. Switch build platform
 
 In the menu bar, select **File** > **Build Settings**.
@@ -50,6 +52,8 @@ In the menu bar, select **File** > **Build Settings**.
     > Due to some known issues in building the Holographic Remoting app for UWP, we're building as Windows Standalone for OpenXR.
 
 ## [Legacy WSA](#tab/wsa)
+
+Your Holographic Remoting app is now ready to build on your PC. Follow the below steps and make these changes to build this application on to your PC.
 
 ### 1. Set the player settings
 
