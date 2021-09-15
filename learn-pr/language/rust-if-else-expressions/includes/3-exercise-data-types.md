@@ -24,7 +24,7 @@ Your first task is to change the `Car` struct definition. We're going to move th
     #[derive(PartialEq, Debug)]
     // Declare Car struct to describe vehicle with four named fields
     // TO DO: Replace the "mileage" field from the previous exercise with an "age" field
-    // TO DO" The "age" field should hold tuple value of two fields: String, u32
+    // TO DO: The "age" field should hold tuple value of two fields: String, u32
     struct Car {
         color: String,
         motor: Transmission,

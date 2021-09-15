@@ -12,12 +12,9 @@ To work on the sample code for this exercise, you have two options:
 
 In the sample code, look for the words `TO DO` to locate the sections to update.
 
-
-## Load the current program
-
-We'll use the completed code from the last exercise. If you're starting fresh, you can copy the code in this prepared [Rust Playground][RustPlay-exercise].
-
-Build and run the program to ensure there are no errors. You can ignore any warning messages.
+> [!Note]
+> If you closed your program code from the last exercise, you can re-open the code in this prepared [Rust Playground][RustPlay-exercise].
+> Be sure to rebuild your program and make sure it still runs without any compiler errors.
 
 
 ## Repeat actions with a loop expression

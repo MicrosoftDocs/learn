@@ -6,10 +6,6 @@ To work on the sample code for this exercise, you have two options:
 - Copy the code and edit it in your local development environment. 
 - Open the code in a prepared Rust Playground.
 
-> [!Note]
-> If you closed your program code from the last exercise, you can re-open the code in this prepared [Rust Playground][RustPlay-exercise].
-> Be sure to rebuild your program and make sure it still runs without any compiler errors.
-
 
 ## Load the current program
 
