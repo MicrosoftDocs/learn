@@ -15,4 +15,4 @@ labId: 105119
 labModal: true
 durationInMinutes: 30
 content: |
-  [!include[](includes/6-exercise-program-t-sql.md)]
+  [!include[](includes/6-exercise-program-transact-sql.md)]

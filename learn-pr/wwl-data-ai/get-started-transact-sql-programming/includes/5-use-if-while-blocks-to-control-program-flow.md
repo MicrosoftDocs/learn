@@ -20,7 +20,7 @@ IF OBJECT_ID('dbo.tl') IS NOT NULL
 GO
 ```
 
-## Use conditional logic in your programs using IF..ELSE
+## Use conditional logic in your programs using IF...ELSE
 
 The IF...ELSE structure is used in T-SQL to conditionally execute a block of code based on a predicate. The IF statement determines whether or not the following statement or block (if BEGIN...END is used) executes. If the predicate evaluates to TRUE, the code in the block is executed. When the predicate evaluates to FALSE or UNKNOWN, the block is not executed, unless the optional ELSE keyword is used to identify another block of code.
 
