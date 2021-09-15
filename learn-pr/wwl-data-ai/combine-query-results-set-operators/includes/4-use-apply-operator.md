@@ -42,4 +42,4 @@ CROSS APPLY (SELECT productid, unitprice, Orderqty
 
 In both cases, the result set is the same:
 
-:::image type="content" source="../media/crossapply.png" alt-text="A screenshot showing the result set from the CROSS APPLY operator.":::
+:::image type="content" source="../media/cross-apply.png" alt-text="A screenshot showing the result set from the CROSS APPLY operator.":::

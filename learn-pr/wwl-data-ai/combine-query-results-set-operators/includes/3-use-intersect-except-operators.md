@@ -5,11 +5,11 @@ The circles in the diagrams below represent two result sets from the products ta
 
 **INTERSECT** Returns rows that are present in both sets.
 
-:::image type="content" source="../media/intersectcolors.png" alt-text="An image of a Venn diagram showing INTERSECT results.":::
+:::image type="content" source="../media/intersect-colors.png" alt-text="An image of a Venn diagram showing INTERSECT results.":::
 
 **EXCEPT** Returns returns distinct rows from the left input query that aren't output by the right input query.
 
-:::image type="content" source="../media/exceptcolors.png" alt-text="An image of a Venn diagram showing EXCEPT results.":::
+:::image type="content" source="../media/except-colors.png" alt-text="An image of a Venn diagram showing EXCEPT results.":::
 
 In the following code example, you want to know which colors appear in both result sets from the products table:
 
