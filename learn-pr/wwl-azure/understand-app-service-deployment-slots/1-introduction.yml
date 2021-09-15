@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.configure-azure-policy.introduction
+uid: learn.wwl.understand-app-service-deployment-slots.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
   ms.date: 09/15/2021
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
