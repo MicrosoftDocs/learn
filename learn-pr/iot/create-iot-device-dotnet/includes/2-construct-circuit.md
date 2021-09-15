@@ -1,20 +1,33 @@
 In this unit, we'll construct the circuits used to monitor environmental conditions and control the fan in the cheese cave.
 
+## The GPIO header
+
+This array of pins on the Raspberry Pi is called the General Purpose Input/Output (GPIO) header.
+
+![A Raspberry Pi 3 with the GPIO header highlighted.](../media/gpio-header.png#lightbox)
+
+This versatile pin header supports communication using a variety of protocols. We'll talk more about the supported protocols in the next unit.
+
+A GPIO breakout board combined with a breadboard streamlines connecting sensors and other components to the GPIO header.
 ## Measuring environmental conditions
 
-To measure temperature and humidity, we'll use a commonly available low-cost environmental sensor, the BME280. Your BME280 is already installed on a breakout board. All we need to do is connect the breakout board to the Inter-Integrated Circuit (I2C) bus on the Raspberry Pi. The I2C bus is accessible on the General Purpose Input/Output (GPIO) header.
+To measure temperature and humidity, you'll use a commonly available low-cost environmental sensor, the BME280.
+
+![Two examples of available BME280 breakouts.](../media/bme280-examples.png#lightbox)
+
+Your BME280 is already installed on a breakout board. All we need to do is connect the breakout board to the Inter-Integrated Circuit (I2C) bus on the Raspberry Pi. The I2C bus is accessible on the GPIO header.
 
 > [!NOTE]
 > There are many manufacturers of BME280 breakouts. Most designs are similar, and the manufacturer shouldn't make any difference to the functionality. This module was built with the Adafruit example in the prerequisites. Ensure your BME280 breakout includes an Inter-Integrated Circuit (I2C) interface.
 
 > [!TIP]
-> Most BME280 breakouts are sold unassembled and require soldering to assemble. If you don't know how to solder, don't be discouraged! Soldering isn't as hard as you might think! There are a plethora of tutorials and videos to get you started. [Here's a good example](https://www.youtube.com/watch?v=ZwU9SqO0udU).
+> Most BME280 breakouts are sold with the pin header unattached. As a consequence, most require soldering to assemble. If you don't know how to solder, don't be discouraged! Soldering isn't as hard as you might think! There are a plethora of tutorials and videos to get you started. [Here's a good example](https://www.youtube.com/watch?v=ZwU9SqO0udU).
 
 ## Controlling fans
 
 In a real-world scenario, you would use a relay module like this to control power to the fan.
 
-![An example of a generic 5V relay module.](../media/relay-module.png)
+![An example of a generic 5V relay module.](../media/relay-module.png#lightbox)
 
 A relay is an electromagnetic switch that allows you to use small currents to control larger currents. When a small current is passed through the low-voltage input on the relay, it activates the switch. Activating the switch completes a different circuit.
 
@@ -33,16 +46,20 @@ Refer to the diagram above as you construct your device.
 1. Position the GPIO breakout, BME280 breakout, LED, and resistor as shown.
 1. Use jumper wires to connect the BME280 to the GPIO breakout.
 
-    - 3.3V to VIN (sometimes labeled 3V3) (shown in red)  
-    - Ground to GND (black)
-    - SDA (GPIO 2) to SDI (sometimes labeled SDA)  (blue)
-    - SCL (GPIO 3) to SCK (sometimes labeled SCL) (orange)
+    | GPIO pin | BME280 breakout pin         | Diagram color |
+    |----------|-----------------------------|---------------|
+    | 3.3V     | VIN (sometimes labeled 3V3) | Red           |
+    | Ground   | GND                         | Black         |
+    | SDA      | SDI (sometimes labeled SDA) | Blue          |
+    | SCL      | SCL (sometimes labeled SCL) | Orange        |
 
 1. Use jumper wires to connect the LED to the GPIO breakout.
 
-    - GPIO 18 to LED anode (longer, positive lead)
-    - LED cathode (shorter, negative lead) to 330 Ω resistor (either end)
-    - 330 Ω resistor (other end) to ground
+    | Connect this...                         | ...to this                           | Diagram color |
+    |-----------------------------------------|--------------------------------------|---------------|
+    | GPIO pin 21                             | LED anode<br>(longer, positive lead) | Green         |
+    | LED cathode<br>(shorter, negative lead) | 1.0K Ω resistor<br>(either end)      | N/A           |
+    | 1.0K Ω resistor<br>(other end)          | Ground                               | N/A           |
 
     > [!NOTE]
     > The resistor is required to ensure the LED isn't burnt out due to excessive current. You don't need a resistor in a real-world relay scenario.
