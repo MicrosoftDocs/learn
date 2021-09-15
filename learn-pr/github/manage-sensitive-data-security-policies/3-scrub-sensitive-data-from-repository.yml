@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.manage-sensitive-data-security-policies.scrub-sensitive-data-from-a-repository
+uid: learn.github.manage-sensitive-data-security-policies.scrub-sensitive-data-from-repository
 title: Scrub sensitive data from a repository
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 25
 content: |
-  [!include[](includes/3-scrub-sensitive-data-from-a-repository.md)]
+  [!include[](includes/3-scrub-sensitive-data-from-repository.md)]

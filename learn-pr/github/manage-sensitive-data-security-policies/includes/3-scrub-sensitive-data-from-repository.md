@@ -2,8 +2,6 @@
 
 As a GitHub organization administrator, you may need to remove, or *scrub*, sensitive data from a repository. You may also need to take additional security steps, like changing security policies in response to an incident.
 
-:::image type="content" source="../media/sensitive-data.png" alt-text="A zoomed-in screenshot that shows a block of code, heavily pixelated to be incomprehensible, with two lines of code also struck through with red horizontal lines, indicating their high sensitivity":::
-
 You may remember from the scenario in the introduction that some of the most stressful and risky problems can involve sensitive data appearing in the code base. As you administer a new project with unfamiliar collaborators, you know that it is important to prevent these kinds of security risks from happening as much as possible. You also know that these problems will happen sooner or later, and it is important to be prepared, in order to minimize time spent resolving the issue and up-front costs (like paying a ransomware actor).
 
 In this unit, you'll learn about the tools to help prevent committing sensitive data. You'll also learn what to do if there is a security breach, and how to evaluate potential changes to security policies.
@@ -45,7 +43,7 @@ The `git filter-repo` command and the BFG Repo-Cleaner rewrite your repository's
 
 You can remove the file from the latest commit with `git rm`. 
 
-### Using the BFG
+### Use the BFG Repo-Cleaner tool
 
 To remove your file with sensitive data and leave your latest commit untouched, run:
 
@@ -67,7 +65,7 @@ $ git push --force
 
 See the [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/)'s documentation for full usage and download instructions.
 
-### git filter-repo
+### Use git filter-repo tool
 
 > [!Warning]
 > If you run `git filter-repo` after stashing changes, you won't be
@@ -165,7 +163,7 @@ To illustrate how `git filter-repo` works, we'll show you how to remove your fil
     >  + 48dc599...051452f main -> main (forced update)
     ```
 
-### Request help from GitHub Support
+### Request help from GitHub support
 
 GitHub support technicians can assist you in removing confidential information that poses a security risk to you or your organization from a repository that you or another organization owns. For instance, you might have removed access credentials from your organization's repository, but you need to make sure they don't appear in forks of that repository (you should also change the access credentials to invalidate them as soon as possible).
 
@@ -183,7 +181,7 @@ GitHub needs you to fulfill other conditions before asking for the help of suppo
 - **Send In The Correct Request.** This process works best when you only send requests related to the types of private information listed above, and when they're the only requests from you that GitHub is handling at the time.
 - **Processing Time.** If you make a request to GitHub to remove private information, please be patient and send only one request for each discrete issue.
 
-#### Your Request Must Include:
+#### Request requirements
 
 When you're ready to make your request, assemble the following information.
 
