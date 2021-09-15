@@ -22,7 +22,7 @@ ORDER BY ProductNumber;
 
 This returns a column called WeightByColor which contains the total weight for all products of the same color as show in the partial result set below.
 
-:::image type="content" source="../media/aggregatefunctionresults.png" alt-text="A screenshot showing results from the OVER and PARTITION BY Color clause.":::
+:::image type="content" source="../media/aggregate-function-results.png" alt-text="A screenshot showing results from the OVER and PARTITION BY Color clause.":::
 
 ## Ranking functions
 
@@ -41,7 +41,7 @@ FROM SalesLT.Product
 
 This returns a column for each of the function, with the appropriate ranking number.
 
-:::image type="content" source="../media/rankingfunctionresults.png" alt-text="A screenshot showing results from ranking functions.":::
+:::image type="content" source="../media/rank-function-results.png" alt-text="A screenshot showing results from ranking functions.":::
 
 ## Analytic functions
 
