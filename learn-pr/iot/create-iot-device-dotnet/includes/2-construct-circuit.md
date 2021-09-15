@@ -2,7 +2,7 @@ In this unit, we'll construct the circuits used to monitor environmental conditi
 
 ## Measuring environmental conditions
 
-To measure temperature and humidity, we'll use a commonly available low-cost environmental sensor, the BME280. Our BME280 is already implemented on a breakout board. All we need to do is connect the breakout board to the Inter-Integrated Circuit (I2C) bus on the Raspberry Pi.
+To measure temperature and humidity, we'll use a commonly available low-cost environmental sensor, the BME280. Our BME280 is already installed on a breakout board. All we need to do is connect the breakout board to the Inter-Integrated Circuit (I2C) bus on the Raspberry Pi. The I2C bus is accessible on the General Purpose Input/Output (GPIO) header.
 
 > [!NOTE]
 > There are many manufacturers of BME280 breakouts. Most designs are similar, and the manufacturer shouldn't make any difference to the functionality. This module was built with the Adafruit example in the prerequisites. Ensure your BME280 breakout includes an Inter-Integrated Circuit (I2C) interface.
@@ -20,7 +20,7 @@ A relay is an electromagnetic switch that allows you to use small currents to co
 
 A real-world device might use this relay to control the power to the fan. A fan large enough to maintain humidity in a cave would generally require a large AC current. For safety purposes, and to keep our focus on the code, our device is going to use an LED to represent a relay. An illuminated LED will indicate that our relay is "on."
 
-To activate the LED, our code will activate a General Purpose Input/Output (GPIO) pin for output, which will send current to the LED. This is the same process you'd use to activate many relays.
+To activate the LED, our code will activate a GPIO pin for output, which will send current to the LED. This is the same process you'd use to activate many relays.
 
 ## Construct the device
 
