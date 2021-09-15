@@ -43,7 +43,7 @@ We're going to use a breadboard to build the device. A breadboard is a rapid pro
 
 Refer to the diagram above as you construct your device.
 
-1. Position the GPIO breakout, BME280 breakout, LED, and resistor as shown.
+1. Position the GPIO breakout and BME280 breakout on the breadboard as shown.
 1. Use jumper wires to connect the BME280 to the GPIO breakout.
 
     | GPIO pin | BME280 breakout pin         | Diagram color |
