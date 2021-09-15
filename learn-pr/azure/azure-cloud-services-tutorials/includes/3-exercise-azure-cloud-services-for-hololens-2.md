@@ -143,7 +143,7 @@ While the project yet has to be filled with content, you have to perform some pr
 
 2. In the Project Settings window, select **Player** and then **Publishing Settings**:
 
-    :::image type="content" source="../media/publish-setting.png" alt-text="Screenshot of Unity Publishing Settings" lightbox="../media/publish-setting.png":::
+    :::image type="content" source="../media/publish-settings.png" alt-text="Screenshot of Unity Publishing Settings" lightbox="../media/publish-setting.png":::
 
 3. In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone** and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, and **Webcam** capabilities:
 
