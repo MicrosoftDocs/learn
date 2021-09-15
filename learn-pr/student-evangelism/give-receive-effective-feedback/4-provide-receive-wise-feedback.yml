@@ -14,7 +14,7 @@ content: |
   [!include[](includes/4-provide-receive-wise-feedback.md)]
 quiz:
   questions:
-  - content: 'Which of the following examples of feedback meet the criteria for wise feedback?'
+  - content: 'Which one of the following examples of feedback meets the criteria for wise feedback?'
     choices:
     - content: 'I like the names that you gave for the variables. They’re very innovative.'
       isCorrect: false

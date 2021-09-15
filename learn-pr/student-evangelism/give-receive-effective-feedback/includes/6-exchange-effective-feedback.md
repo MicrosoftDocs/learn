@@ -1,16 +1,18 @@
-When you started providing feedback to your team, you noticed that some people were more receptive than others, and they had a marked improvement in their coding skills. However, some of the developers have let you know that your feedback wasn’t very useful, and they were hesitant to submit their code for further reviews. In this unit, you’ll explore ways of providing and receiving feedback more effectively.
+When you started providing feedback to your team, you noticed that some people were more receptive than others, and they had a marked improvement in their coding skills. However, some of the developers have let you know that your feedback wasn’t very useful, and they were hesitant to submit their code for further reviews. 
+
+In this unit, you’ll explore ways of providing and receiving feedback more effectively.
 
 ## Deliver feedback respectfully
 
 Feedback can sometimes be difficult to deliver. How you deliver feedback is a key factor in how it’s received and implemented. You might be tempted to soften criticisms with positive words or praise, or to omit negative feedback altogether. Then again, you might feel that instead of underplaying the mistakes, you can benefit the person more by being blunt and honest.
 
-:::image type="content" source="../media/6-deliver-feedback.png" alt-text="A person giving an empty box to denote ineffective feedback and tools and guidance to denote effective feedback." border="false":::
+:::image type="content" source="../media/6-deliver-feedback.png" alt-text="Two-panel drawing of a reviewer, recipient, and box, one empty to denote ineffective feedback, and the other with tools to denote effective feedback." border="false":::
 
-By being specific and giving them concrete steps to try next, you pass on actionable goals to the recipient while facilitating their path to success. You can implement the following strategies to exchange feedback in a constructive manner.
+By being specific and giving recipients concrete steps to try next, you pass on actionable goals while facilitating their path to success. You can implement the following strategies to exchange feedback in a constructive manner.
 
 ## Learn by giving and receiving feedback
 
-It’s helpful to consider the role that feedback plays in a person’s process. When you formulate your feedback in a wise manner, you include specific points that convey both your intention and your belief that the person can meet a high standard. By doing this, you can effectively facilitate someone’s learning and help them move forward. Remember that feedback isn’t given in a vacuum—there are many factors that can impact how the person might receive the feedback. Therefore, you must be intentional in gaining their trust and conveying that you want them to succeed.
+It’s helpful to consider the role that feedback plays in someone's personal process. When you formulate your feedback in a wise manner, you include specific points that convey both your intention and your belief that the person can meet a high standard. By doing this, you can effectively facilitate someone’s learning and help them move forward. Remember that feedback isn’t given in a vacuum. Many factors can affect how the person might receive the feedback. Therefore, you must be intentional in gaining their trust and conveying that you want them to succeed.
 
 ### Give feedback
 
@@ -20,17 +22,19 @@ When you provide feedback, you can:
 
 - Ask others how they’d like to receive feedback: written, live, privately, or in a group.
 
-- Reassure the person that you have confidence in their abilities to progress and improve their skills.
+- Reassure them that you have confidence in their abilities to progress and improve their skills.
 
 - Provide specific feedback on areas of improvement.
 
 - Give directions and guidance on the next steps.
 
-Setbacks are a natural step in the path of learning. Recovering from a setback involves understanding your areas of weakness and applying corrective measures. The feedback you provide should give the tools needed to bridge any skill or knowledge gaps.
+Setbacks are a natural step in the path of learning. To recover from a setback, recipients must accept and understand their areas of weakness and then apply corrective measures. The feedback you provide should give them the tools they need to bridge any skill or knowledge gaps.
 
 ### Receive feedback
 
-Just as you need to do a bit of digging to understand the root causes of error messages, you might need to unpack feedback you receive from others to extract the contribution. Sometimes the feedback you get:
+Just as you need to do a bit of digging to understand the root causes of error messages, you might need to unpack feedback you receive from others to extract the underlying meaning. 
+
+Sometimes the feedback you get:
 
 - Isn’t packaged or worded in a way that helps you know how to act.
 
@@ -44,19 +48,19 @@ When you receive feedback, you can:
 
 - Seek another opinion or have someone help unpack the feedback with you.
 
-- Reset expectations when it’s clear you volunteered for something that you no longer can commit to.
+- Reset expectations when it’s clear that you took on a task or project that you no longer can commit to.
 
-:::image type="content" source="../media/6-take-steps.png" alt-text="Example of a learner asking the reviewer a clarifying question. Is there another step I could take?" border="false":::
+:::image type="content" source="../media/6-take-steps.png" alt-text="Cartoon-style drawing of a feedback recipient asking the reviewer a clarifying question, 'Is there another step I could take?'" border="false":::
 
-Learning how to ask clarifying questions and the art of separating ideas (what you’ve created) from identity (who you are) is important to realizing that issues in your work aren’t a reflection of your own worth. Remember from the video, sometimes feedback might seem biased, unjustified, or excessively negative.
+It's important to recognize that issues in your work aren’t a reflection of your personal worth. So it's critical to ask clarifying questions that help you separate *ideas* (what you’ve created) from *identity* (who you are). Remember from the video, feedback might sometimes seem biased, unjustified, or excessively negative.
 
 Negative feedback can sometimes just be a metaphorical box of thorns and “terrible in every way.” Apart from undermining your confidence, it might not provide any encouragement or helpful guidance on next steps for improvement. In such situations, the only option available to you is to move away from the feedback altogether.
 
-:::image type="content" source="../media/6-ignore-negative-feedback.png" alt-text="Example of a learner ignoring negative and ineffective feedback." border="false":::
+:::image type="content" source="../media/6-ignore-negative-feedback.png" alt-text="Cartoon-style drawing of a feedback recipient ignoring negative, ineffective feedback as represented by a box of thorns." border="false":::
 
 ## Exchange feedback by using various methods
 
-You can use several methods for exchanging feedback with other persons. You could schedule a one-on-one meeting with them to give them verbal feedback. You could provide feedback to a group of persons in a group setting.
+You can use several methods for exchanging feedback with other people. You could schedule a one-on-one meeting with them to give them verbal feedback. You could provide feedback to several individuals in a group setting.
 
 You could also have an informal chat with the employee, mentee, or developer. For example, you could offer to sit with them and run their program together. Then you could go over the errors, explain the error messages, and do a step-by-step debug of the code to demonstrate how to resolve programming errors.
 
@@ -64,13 +68,13 @@ If you’re in a situation where you need to send your feedback immediately and 
 
 ## Tips for leaders, mentors, and managers
 
-You have explored how providing effective and wise feedback is an essential skill. You now want to enhance your skills in providing effective feedback. Some tips that you can follow are:
+You've seen how providing effective, wise feedback is an essential skill. You now want to improve such skills. Some tips that you can follow are:
 
-- Ask if this is a good time. Recognize that feedback that’s not timely (or too late) isn’t as useful.
+- Ask whether this is a good time to meet. Recognize that feedback that’s untimely isn’t as useful.
 
-- Ask if they prefer to receive feedback in a specific form. Some might prefer one-on-one "live" feedback while others might find asynchronous written feedback preferable. For instance, a neurodiverse developer might want time to sit and process feedback on their own before discussing it with the reviewer.
+- Ask whether they prefer to receive feedback in a specific form. Some might prefer one-on-one "live" feedback, and others might find asynchronous written feedback preferable. For instance, a neurodiverse developer might want time to sit and process feedback on their own before discussing it with the reviewer.
 
-- Ask if they’re open to other strategies.
+- Ask whether they’re open to other strategies.
 
 - Remember to provide specifics. Feedback that’s too vague is often unhelpful.
 
@@ -84,12 +88,12 @@ You have explored how providing effective and wise feedback is an essential skil
 
 - Remind them that they have the potential to continue, they do belong, and they can shape their future.
 
-- Think about the other person’s perspective by considering other factors that could impact their energy and engagement.
+- Think about the other person’s perspective by considering other factors that could affect their energy and engagement.
 
-- Be courteous and kind. Remember to focus your review comments on the task and don’t make it about the person.
+- Be courteous and kind. Remember to focus your review comments on the task or behavior and not the person.
 
 - Explain your reasoning. This is especially important in code reviews when you provide feedback about logical or functional errors.
 
-Wise feedback is the first step toward encouraging persons to be open to your comments. Reinforce the high expectations that you have for them and emphasize your confidence that they can meet those high expectations.
+Wise feedback is the first step toward encouraging people to be open to your comments. Reinforce the high expectations that you have for them and emphasize your confidence that they can meet those high expectations.
 
-:::image type="content" source="../media/6-provide-guidance.png" alt-text="Example of a recipient with a box of effective feedback containing tools and guidance for next steps." border="false":::
+:::image type="content" source="../media/6-provide-guidance.png" alt-text="Cartoon-style drawing of a feedback recipient with a box of tools and guidance for next steps, representing effective feedback." border="false":::
