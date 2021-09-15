@@ -4,7 +4,7 @@ The learning process repeatedly alters a model until it can make high-quality es
 
 In supervised learning, error, cost, and loss all refer to the number of mistakes that a model makes in predicting one or more labels.
 
-These three terms are used somewhat loosely in machine learning, which can cause some confusion when a model is reading from multiple sources. For the sake of simplicity, we'll use them interchangeably here. Cost is calculated through mathematics; it isn't a qualitative judgment. For example, if a model predicts that a daily temperature will be 40°F, but the actual value is 35°F, we might say it has an error of 5°F.
+These three terms are used somewhat loosely in machine learning, which can cause some confusion. For the sake of simplicity, we'll use them interchangeably here. Cost is calculated through mathematics; it isn't a qualitative judgment. For example, if a model predicts that a daily temperature will be 40°F, but the actual value is 35°F, we might say it has an error of 5°F.
 
 ## Minimizing cost is our goal
 
