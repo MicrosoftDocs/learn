@@ -79,7 +79,7 @@ Your Holographic Remoting app is now ready to build on your PC. Follow the below
 
 1. After the build process has finished, Unity will prompt Windows File Explorer to open where you stored the build. Navigate to the folder and then double-click the .sln file to open it in Visual Studio:
 
-    :::image type="content" source="../../media/sln-file.png" alt-text="Screenshot of Double-click the .sln file" lightbox="../../media/sln-file.jpg":::
+    :::image type="content" source="../../media/sln-file.png" alt-text="Screenshot of the sln file" lightbox="../../media/sln-file.png":::
 
     > [!Note]
     > If Visual Studio asks you to install new components, take a moment to ensure that all prerequisite components are installed as specified in the Install the Tools documentation.
