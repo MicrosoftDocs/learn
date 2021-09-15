@@ -2,7 +2,7 @@ In this module, you learned how to create a simple user interface using MRTK's p
 
 User experience plays a vital role in any application, you can improve the user experience of any project by making use of MRTK's UI components.
 
-## Next Steps
+## Next steps
 
 You can continue to include other UI elements provided by MRTK and try out new options under them. Consider trying out the following interactions:
 
@@ -10,7 +10,7 @@ You can continue to include other UI elements provided by MRTK and try out new o
 * Use the Progress Indicator component to load a new scene.
 * Use Slate to display some bulk information.
 
-## Further Reading
+## Further reading
 
 * Learn more about the other [UX components](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/#ux-building-blocks) in MRTK.
 

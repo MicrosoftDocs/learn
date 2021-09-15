@@ -47,7 +47,7 @@ The ObjectManipulator script makes an object movable, scalable, and rotatable us
 
     :::image type="content" source="../media/base-7-section-1-step-1-7.png" alt-text="Unity Play mode split view with Reset button being pressed" lightbox="../media/base-7-section-1-step-1-7.png":::
 
-## Add Bounds Control
+## Add bounds control
 
 1. In the Hierarchy window, select the **RoverExplorer** object, then in the Inspector window, use the **Add Component** button to add the following components:
     * **BoundsControl** component
