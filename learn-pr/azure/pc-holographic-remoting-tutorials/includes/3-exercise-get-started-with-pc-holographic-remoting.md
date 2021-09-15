@@ -36,11 +36,11 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
     * ModelParent
     * Platform
 
-    :::image type="content" source="../media/adding-prefab-1.png" alt-text="Screenshot of Adding prefabs 1" lightbox="../media/adding-prefab-1.png":::
+    :::image type="content" source="../media/add-prefab-1.png" alt-text="Screenshot of Adding prefabs 1" lightbox="../media/add-prefab-1.png":::
 
 2. Drag these models from the prefabs folder into the **Hierarchy** window.
 
-    :::image type="content" source="../media/adding-prefab-2.png" alt-text="Screenshot of Adding prefabs 2" lightbox="../media/adding-prefab-2.png":::
+    :::image type="content" source="../media/add-prefab-2.png" alt-text="Screenshot of Adding prefabs 2" lightbox="../media/add-prefab-2.png":::
 
     To focus on the objects in the scene, you can double-click the ModelParent object and then zoom in:
 
@@ -57,11 +57,11 @@ In this section, you'll add scripts to the scene and create button events that d
 
 1. In the Hierarchy window, expand the **ButtonParent** object and select the next button. In the Inspector window, locate the **Interactable (Script)** component and click on plus sign icon ("+") under **OnClick ()** event.
 
-    :::image type="content" source="../media/adding-interactable.png" alt-text="Screenshot of expanding the Interactable script" lightbox="../media/adding-interactable.png":::
+    :::image type="content" source="../media/add-interactable.png" alt-text="Screenshot of expanding the Interactable script" lightbox="../media/add-interactable.png":::
 
 2. With the **NextButton** object still selected in the Hierarchy window, drag the **ButtonParent** object from the Hierarchy window into the empty **None (Object)** field of the event you just added to make the ButtonParent object listen for the button click event from this button:
 
-    :::image type="content" source="../media/adding-button-parent.png" alt-text="Screenshot of Adding ButtonParent to the None Object" lightbox="../media/adding-button-parent.png":::
+    :::image type="content" source="../media/add-button-parent.png" alt-text="Screenshot of Adding ButtonParent to the None Object" lightbox="../media/add-button-parent.png":::
 
 3. Click the **No Function**  dropdown of the same event and then select ViewButtonControl > NextModel () to set the NextModel () function as the action that is triggered when the button is pressed:
 
@@ -95,7 +95,7 @@ We've provided six different 3D models for demonstration. Expand the **ModelPare
     > [!Note]
     > Stay in button parent object only.
 
-    :::image type="content" source="../media/clipping-object.png" alt-text="Screenshot of Drag and drop clipping object" lightbox="../media/clipping-object.png":::
+    :::image type="content" source="../media/clip-object.png" alt-text="Screenshot of Drag and drop clipping object" lightbox="../media/clip-object.png":::
 
 4. In the Hierarchy window, select the ClippingObjects prefab and enable it in the Inspector window to turn on the **Clipping objects**.
 
@@ -107,7 +107,7 @@ In the Hierarchy window, expand the **ClippingObjects** object to expose the thr
 
 1. To configure the **ClippingSphere** object, select it, and then in the Inspector window, locate the **Clipping Sphere (Script)** component. Next, enter the number of renderers in the **size** field that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create fields for adding renderers. Next, drag the MarsCuriosityRover object's child model objects into these fields.
 
-    :::image type="content" source="../media/enable-clipping-feature.png" alt-text="Screenshot of Configure Clipping Objects to enable clipping feature" lightbox="../media/enable-clipping-feature.png":::
+    :::image type="content" source="../media/enable-clip-feature.png" alt-text="Screenshot of Configure Clipping Objects to enable clipping feature" lightbox="../media/enable-clip-feature.png":::
 
 2. In the Hierarchy window, select the ClippingObjects prefab and enable it in the Inspector window to turn on the Clipping objects.
 

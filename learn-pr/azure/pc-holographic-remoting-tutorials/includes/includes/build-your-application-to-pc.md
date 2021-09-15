@@ -8,13 +8,13 @@ In the menu bar, select **File** > **Build Settings**.
 
 1. In the Build Settings window, select PC, Mac & Linux Standalone Platform and click the Switch Platform button to change the Build Platform:
 
-    :::image type="content" source="../../media/switching-build-platform.png" alt-text="Screenshot of Switching Build Platform" lightbox="../../media/switching-build-platform.png":::
+    :::image type="content" source="../../media/switch-build-platform.png" alt-text="Screenshot of Switching Build Platform" lightbox="../../media/switch-build-platform.png":::
 
 ### 2. Set the project settings
 
 1. In the menu bar, select **Edit > Project Settings > XR Plug-in Management**. Ensure that you're in the Windows Standalone tab and then select **OpenXR** and **Windows Mixed Reality feature**.
 
-    :::image type="content" source="../../media/project-setting.png" alt-text="Screenshot of Project settings" lightbox="../../media/project-setting.png":::
+    :::image type="content" source="../../media/project-settings.png" alt-text="Screenshot of Project settings" lightbox="../../media/project-settings.png":::
 
 2. In the Project Settings window, select **OpenXR**. Ensure that you're in the Windows Standalone tab, and then change the **Depth submission mode** from None to **Depth 16** Bit.
 
@@ -59,7 +59,7 @@ Your Holographic Remoting app is now ready to build on your PC. Follow the below
 
 1. In the **XR Settings** section, select  **WSA Holographic Remoting Supported** to enable Holographic Remoting.
 
-    :::image type="content" source="../../media/xr-setting.png" alt-text="Screenshot of XR Settings" lightbox="../../media/xr-setting.png":::
+    :::image type="content" source="../../media/xr-settings.png" alt-text="Screenshot of XR Settings" lightbox="../../media/xr-settings.png":::
 
 ### 2. Build the unity project
 
@@ -79,7 +79,7 @@ Your Holographic Remoting app is now ready to build on your PC. Follow the below
 
 1. After the build process has finished, Unity will prompt Windows File Explorer to open where you stored the build. Navigate to the folder and then double-click the .sln file to open it in Visual Studio:
 
-    :::image type="content" source="../../media/sln-file.png" alt-text="Screenshot of Double-click the .sln file" lightbox="../../media/sln-file":::
+    :::image type="content" source="../../media/sln-file.png" alt-text="Screenshot of Double-click the .sln file" lightbox="../../media/sln-file.jpg":::
 
     > [!Note]
     > If Visual Studio asks you to install new components, take a moment to ensure that all prerequisite components are installed as specified in the Install the Tools documentation.
