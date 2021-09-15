@@ -8,9 +8,7 @@ To swap deployment slots:
 
 1. Select the desired **Source** and **Target** slots. Usually, the target is the production slot. Also, select the **Source Changes** and **Target Changes** tabs and verify that the configuration changes are expected. When you're finished, you can swap the slots immediately by selecting **Swap**.
 
-    :::image type="content" source="../media/swap-immediately.png" alt-text="Selecting **Deployment slots** and then selecting **Swap**.":::
-
-    To see how your target slot would run with the new settings before the swap actually happens, don't select Swap, but follow the instructions in *Swap with preview* below.
+     To see how your target slot would run with the new settings before the swap actually happens, don't select Swap, but follow the instructions in *Swap with preview* below.
 
 1. When you're finished, close the dialog box by selecting Close.
 
@@ -24,11 +22,7 @@ If you cancel the swap, App Service reapplies configuration elements to the sour
 
 To swap with preview:
 
-1. Follow the steps above in Swap deployment slots but select **Perform swap with preview**.
-
-    :::image type="content" source="../media/swap-with-preview.png" alt-text="Swap operations dialog box with Swap with preview selected showing the Phase One and Phase Two changes.":::
-    
-    The dialog box shows you how the configuration in the source slot changes in phase 1, and how the source and target slot change in phase 2.
+1. Follow the steps above in Swap deployment slots but select **Perform swap with preview**. The dialog box shows you how the configuration in the source slot changes in phase 1, and how the source and target slot change in phase 2.
 
 1. When you're ready to start the swap, select **Start Swap**.
 
