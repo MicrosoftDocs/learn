@@ -3,7 +3,7 @@ uid: learn.wwl.implement-durable-functions
 metadata:
   title: Implement Durable Functions
   description: "Learn how Durable Functions can simplify complex, stateful coordination requirements in serverless applications."
-  ms.date: 09/14/2021
+  ms.date: 09/15/2021
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
