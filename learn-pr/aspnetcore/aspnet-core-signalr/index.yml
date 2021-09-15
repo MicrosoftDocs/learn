@@ -1,9 +1,10 @@
 ### YamlMime:Module
-uid: learn.languages.aspnet-core-signalr
+uid: learn.aspnet-core-signalr
 metadata:
+  moduleType: standard
   title: Realtime web functionality with ASP.NET Core SignalR
   description: Learn how to use realtime web functionality with ASP.NET Core SignalR.
-  ms.date: 09/14/2021
+  ms.date: 9/15/2021
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
@@ -21,7 +22,7 @@ prerequisites: |
   - Local installations of the [.NET SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/)
   - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
   - Experience with using the command line
-iconUrl: /learn/achievements/aspnet-core-signalr.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
@@ -30,13 +31,11 @@ products:
 - aspnet-core
 - dotnet
 units:
-- learn.languages.aspnet-core-signalr.1-introduction
-- learn.languages.aspnet-core-signalr.2-signalr-fundamentals
-- learn.languages.aspnet-core-signalr.3-server
-- learn.languages.aspnet-core-signalr.4-client
-- learn.languages.aspnet-core-signalr.5-realtime-web
-- learn.languages.aspnet-core-signalr.6-exercise-realtime-web
-- learn.languages.aspnet-core-signalr.7-summary
-
+- learn.aspnet-core-signalr.introduction
+- learn.aspnet-core-signalr.fundamentals
+- learn.aspnet-core-signalr.create-server
+- learn.aspnet-core-signalr.use-client
+- learn.aspnet-core-signalr.knowledge-check
+- learn.aspnet-core-signalr.summary
 badge:
-  uid: learn.languages.aspnet-core-signalr.badge
+  uid: learn.aspnet-core-signalr.badge
