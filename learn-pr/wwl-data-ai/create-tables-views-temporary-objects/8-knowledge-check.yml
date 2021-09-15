@@ -15,7 +15,7 @@ labModal: false
 durationInMinutes: 4
 quiz:
   questions:
-  - content: "Which permissions do you need be able to create a table using Transact-SQL?"
+  - content: "Which permissions are needed to be able to create a table using Transact-SQL?"
     choices:
     - content: "The ALTER TABLE, and CREATE SCHEMA permissions"
       isCorrect: false
