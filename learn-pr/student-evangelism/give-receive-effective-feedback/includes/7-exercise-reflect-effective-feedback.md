@@ -13,15 +13,10 @@ The team member is also upset because they received the following feedback from 
 Analyze this scenario and note down your answers to the following questions:
 
 - How would you feel if you received this feedback?
-
 - What signals do you think your reviewer is sending? Do you feel that your proficiency in English is being questioned?
-
 - Is this feedback effective, in your opinion? If not, why?
-
 - Do you think this feedback can help the developer improve? If not, how could the reviewer have worded the feedback more constructively?
-
 - If you were the reviewer in this scenario, how would you make the feedback more effective?
-
 - What role do you think identity might play in how the feedback was perceived? If you were the recipient, do you think the feedback would reinforce your trust that the reviewer wants to facilitate your learning process?
 
 ## Scenario 2
@@ -61,17 +56,11 @@ Consider the following questions:
 Reflect on the following questions and think of the various ways in which you can provide effective and wise feedback:
 
 - Can you come up with an example of criticism and how it could be delivered wisely?
-
 - Why does it matter how a person delivers feedback? Isn’t honesty the best policy?
-
 - Why do you think a feedback provider might hold back negative criticism?
-
 - Why do our identities&mdash;race, gender, or other ways we think about ourselves and others&mdash;affect interactions about feedback?
-
 - What is the potential harm to people who fail to receive specific, candid feedback?
-
 - How can a reviewer improve the quality of the feedback when the recipient might not yet trust them?
-
 - What strategies might help both parties to contribute to successful communication?
 
 ## Scenario 3
@@ -83,11 +72,8 @@ During your review of the code, you find that your colleague has made errors in 
 Reflect on the following questions, and think about what you should do to ensure that your feedback is constructive and effective:
 
 - What do you think would be different about communicating this feedback to your colleague through conversation versus in writing?
-
 - Would the method you choose depend on whether the feedback was positive or negative, specific or general?
-
 - Consider how you would react if you were the one receiving the feedback. How do you prevent letting the fear of receiving feedback or the sting of receiving difficult feedback from improving your work?
-
 - When you're unpacking feedback you've received, what strategies can you use to understand which parts of your plan are strong and which could benefit from revision?
 
 > [!TIP]
