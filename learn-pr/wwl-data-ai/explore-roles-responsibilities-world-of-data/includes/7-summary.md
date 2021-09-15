@@ -7,9 +7,9 @@ In this module you have learned:
 
 ## Learn more
 
-- [Overview of Azure Databricks](https://docs.microsoft.com/azure/azure-databricks/what-is-azure-databricks)
-- [Overview of Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/hdinsight-overview)
-- [Introduction to Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)
-- [Overview of Power BI](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview)
-- [SQL Server Technical Documentation](https://docs.microsoft.com/sql/sql-server/?view=sql-server-ver15)
-- [Introduction to Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction)
+- [Overview of Azure Databricks](/azure/azure-databricks/what-is-azure-databricks)
+- [Overview of Azure HDInsight](/azure/hdinsight/hdinsight-overview)
+- [Introduction to Azure Cosmos DB](/azure/cosmos-db/introduction)
+- [Overview of Power BI](/power-bi/fundamentals/power-bi-overview)
+- [SQL Server Technical Documentation](/sql/sql-server/?view=sql-server-ver15)
+- [Introduction to Azure Data Factory](/azure/data-factory/introduction)

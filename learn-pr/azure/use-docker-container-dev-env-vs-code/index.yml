@@ -7,7 +7,7 @@ metadata:
   author: burkeholland
   ms.author: buhollan
   ms.topic: interactive-tutorial
-  ms.prod: learning
+  ms.prod: learning-vs-code
 title: Use a Docker container as a development environment with Visual Studio Code
 summary: Get, create, and configure a container-based development environment with the Visual Studio Code Remote - Containers extension
 abstract: |
@@ -31,10 +31,9 @@ products:
   - vs-code
 units:
   - learn.use-docker-container-dev-env-vs-code.1-introduction
+  - learn.use-docker-container-dev-env-vs-code.2-exercise-prepare-project
   - learn.use-docker-container-dev-env-vs-code.2-use-as-dev-env
   - learn.use-docker-container-dev-env-vs-code.3-exercise-add-dev-container
-  - learn.use-docker-container-dev-env-vs-code.4-forward-ports
-  - learn.use-docker-container-dev-env-vs-code.5-exercise-forward-ports
   - learn.use-docker-container-dev-env-vs-code.6-customize-settings
   - learn.use-docker-container-dev-env-vs-code.7-exercise-customize-settings
   - learn.use-docker-container-dev-env-vs-code.8-add-software
