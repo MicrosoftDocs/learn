@@ -8,8 +8,8 @@ In this module, you have learned how to:
 
 ## Learn more
 
-- [Pipelines and activities in Azure Data Factory](https://docs.microsoft.com/azure/data-factory/concepts-pipelines-activities)
-- [Quickstart: Create a data factory by using the Azure Data Factory UI](https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-portal)
+- [Pipelines and activities in Azure Data Factory](/azure/data-factory/concepts-pipelines-activities)
+- [Quickstart: Create a data factory by using the Azure Data Factory UI](/azure/data-factory/quickstart-create-data-factory-portal)
 - [Azure SQL Data Warehouse is now Azure Synapse Analytics](https://azure.microsoft.com/blog/azure-sql-data-warehouse-is-now-azure-synapse-analytics/)
-- [Automated enterprise BI with Azure Synapse Analytics and Azure Data Factory](https://docs.microsoft.com/azure/architecture/reference-architectures/data/enterprise-bi-adf)
+- [Automated enterprise BI with Azure Synapse Analytics and Azure Data Factory](/azure/architecture/reference-architectures/data/enterprise-bi-adf)
 
