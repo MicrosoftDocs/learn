@@ -15,7 +15,7 @@ In this module, you'll explore the Azure Speech Service's intent recognition. Th
 
 3. In the Hierarchy window, select the **Lunarcom** object again, then expand the **RocketLauncher_Complete** > **Button** object and assign each of the **Buttons** object's child objects to the corresponding **Lunar Launcher Buttons** field:
 
-    :::image type="content" source="../media/assign-buttons.png" alt-text="Screenshot of Assigning each of the buttons" lightbox="../media/assigning-buttons.png":::
+    :::image type="content" source="../media/assign-buttons.png" alt-text="Screenshot of Assigning each of the buttons" lightbox="../media/assign-buttons.png":::
 
 ## Create the azure language understanding resource
 
