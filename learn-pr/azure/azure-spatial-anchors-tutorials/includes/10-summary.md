@@ -4,7 +4,9 @@ Later you learned how to persist Azure Spatial Anchors between app sessions and 
 In the end, you learned how to build your project to Android and iOS devices using AR Foundation, ARCore XR Plugin, and ARKit XR Plugin.
 
 ## Next steps
+
 You can continue to customize this application and add more spatial anchors. Consider trying the following interactions:
+
 * Add a global spatial anchor.
 * Integrate Azure Spatial Anchors in any of the previously built application.
 
