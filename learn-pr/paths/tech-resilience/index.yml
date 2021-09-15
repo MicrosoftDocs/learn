@@ -1,16 +1,18 @@
 ### YamlMime:LearningPath
 uid: learn.student-evangelism.tech-resilience
 metadata:
-  title: Develop tech resilience
-  description: Develop your tech resilience.
+  title: Build your tech resilience
+  description: Resilience, or the ability to recover quickly from challenges, is an essential part of success in any field. Help build a more inclusive future for the tech industry.
   brand: azure
   ms.date: 09/07/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
-title: Develop tech resilience
+title: Build your tech resilience
 summary: |
+  Far too many talented people avoid choosing or actively decide to leave tech because it can be unwelcoming. Our mission? To help build a more inclusive future for the tech industry by fostering confidence, a growth mindset, resilience, and a sense of belonging. Start here to grow more as an individual and team and learn useful strategies that have a strong research base of evidence for improving effectiveness in the workplace. By the end of this series, we hope you have a new way of taking ownership over your problem-solving process, which you can apply when debugging code or when working with a team under a tight deadline.
+  
   In this learning path you'll:
    - Learn how to develop a growth mindset.
    - Enhance your self-efficacy.
@@ -22,8 +24,7 @@ summary: |
    - Communicate with others strategically through mirroring and coaching.
    - Work with others by practicing active listening.
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
+iconUrl: /learn/achievements/tech-resilience/path.svg
 levels:
 - beginner
 roles:
