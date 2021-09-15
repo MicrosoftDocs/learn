@@ -27,7 +27,6 @@ if ( (5 < 9) && (4 > 1) )
 Which of the following examples of feedback would you choose?
 
 - “Oh, it’s just a simple issue of a missing parenthesis. Let me fix that for you.”
-
 - “The logic of your code is great. But the error you’re getting is because of a missing parenthesis. Every opening parenthesis should have a corresponding closing parenthesis. Otherwise, it’s considered a syntax error. I’ll share with you how to check the help file to identify issues like this one if you encounter them again.”
 
 Through building a relationship with the new team member, you learn that this person welcomes educational information and that they need coaching on troubleshooting errors. By reinforcing what the developer got right and providing detailed feedback on the error, such as giving the short-term solution (how to fix) and the long-term solution (how to avoid), you encourage the developer to become a better coder.
@@ -67,4 +66,4 @@ To review code efficiently and to provide constructive and effective feedback fo
 
 - If the code has few errors, comments about organization or design might be more appropriate. The code might not have any errors and might run and compile successfully. However, you might still find issues in the code style design, where the data structures or created variables might not comply with the project guidelines. In such cases, you can provide comments to explain where the code deviates from the project specifications and provide additional references for the developer.
 
-- Use code review checklists. Code review checklists are key to maintaining consistency, especially when multiple teams are working together on a project. Both developers and reviewers can check for the same items to ensure that all code is written with the same style and design.
+- Use code review checklists. Code review checklists are key to maintaining consistency, especially when multiple teams are working together on a single project. Both developers and reviewers can check for the same items to ensure that all code is written with the same style and design.
