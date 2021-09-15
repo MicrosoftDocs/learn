@@ -14,9 +14,9 @@ To measure temperature and humidity, we'll use a commonly available low-cost env
 
 In a real-world scenario, you would use a relay module like this to control power to the fan.
 
-### TODO: Relay image
+![An example of a generic 5V relay module.](../media/relay-module.png)
 
-A relay is an electromagnetic switch that allows you to use small currents to control larger currents. When a small current is passed through the input on the relay, it activates the switch. Activating the switch completes a different circuit.
+A relay is an electromagnetic switch that allows you to use small currents to control larger currents. When a small current is passed through the low-voltage input on the relay, it activates the switch. Activating the switch completes a different circuit.
 
 A real-world device might use this relay to control the power to the fan. A fan large enough to maintain humidity in a cave would generally require a large AC current. For safety purposes, and to keep focus on the code, your device is going to use an LED to represent a relay. An illuminated LED will indicate that the relay is "on."
 
@@ -26,14 +26,14 @@ To activate the LED, your code will activate a GPIO pin for output, which will s
 
 We're going to use a breadboard to build the device. A breadboard is a rapid prototyping tool for circuits. The completed breadboard should look like the following diagram.
 
-### TODO: Diagram
+![A Fritzing diagram illustrating the breadboard solution.](../media/breadboard.png#lightbox)
 
 Refer to the diagram above as you construct your device.
 
 1. Position the GPIO breakout, BME280 breakout, LED, and resistor as shown.
 1. Use jumper wires to connect the BME280 to the GPIO breakout.
 
-    - 3.3V to VIN (sometimes labeled 3V3) (shown in red)
+    - 3.3V to VIN (sometimes labeled 3V3) (shown in red)  
     - Ground to GND (black)
     - SDA (GPIO 2) to SDI (sometimes labeled SDA)  (blue)
     - SCL (GPIO 3) to SCK (sometimes labeled SCL) (orange)
@@ -47,7 +47,7 @@ Refer to the diagram above as you construct your device.
     > [!NOTE]
     > The resistor is required to ensure the LED isn't burnt out due to excessive current. You don't need a resistor in a real-world relay scenario.
 
-### TODO: Completed breadboard image
+![An image depicting a completed breadboard prototype.](../media/breadboard-complete.jpg#lightbox)
 
 ## Connect the Raspberry Pi
 

@@ -4,12 +4,11 @@ In the previous unit, you used common hardware components to construct a prototy
 
 The .NET IoT Libraries are composed of two NuGet packages:
 
-- System.Device.Gpio
-- Iot.Device.Bindings
-
+- `System.Device.Gpio`
+- `Iot.Device.Bindings`
 ### System.Device.Gpio
 
-`System.Device.Gpio` supports a variety of protocols for interacting with low-level hardware pins to control devices. These include:
+The `System.Device.Gpio` package implements a variety of protocols for interacting with low-level hardware pins to control devices. These include:
 
 - General-purpose I/O (GPIO)
 - Inter-Integrated Circuit (I2C)
@@ -17,21 +16,13 @@ The .NET IoT Libraries are composed of two NuGet packages:
 - Pulse Width Modulation (PWM)
 - Serial port
 
+`System.Device.Gpio` doesn't provide any device-specific features. It just provides the foundations for communicating using the supported protocols. For example, the BME280 sensor used in this module uses the I2C bus to communicate. `System.Device.Gpio` provides abstractions to interact via I2C, but it doesn't provide any functionality specific to the functions of the BME280. If you were to write code interacting with the BME280 using using just `System.Device.Gpio`, your code would need to understand the functions of the BME280, including how to serialize/deserialize messages to/from the sensor over the I2C bus.
+
 ### Iot.Device.Bindings
 
-The `Iot.Device.Bindings` package:
+The `Iot.Device.Bindings` package contains device bindings to streamline app development by wrapping `System.Device.Gpio`. It contains abstractions representing a wide array of common IoT sensors and other devices. It's a community-driven, open-source project, and anybody can add additional device support.
 
-- Contains [device bindings](https://github.com/dotnet/iot/blob/main/src/devices/README.md) to streamline app development by wrapping System.Device.Gpio.
-- Is community-supported, and additional bindings are added continually.
-
-Commonly used device bindings include:
-
-- [CharacterLcd - LCD character display](https://github.com/dotnet/iot/tree/main/src/devices/CharacterLcd)
-- [SN74HC595 - 8-bit shift register](https://github.com/dotnet/iot/tree/main/src/devices/Sn74hc595)
-- [BrickPi3](https://github.com/dotnet/iot/tree/main/src/devices/BrickPi3)
-- [Max7219 - LED Matrix driver](https://github.com/dotnet/iot/tree/main/src/devices/Max7219)
-- [RGBLedMatrix - RGB LED Matrix](https://github.com/dotnet/iot/tree/main/src/devices/RGBLedMatrix)
-
+Using `Iot.Device.Bindings` enables the developer to work directly with device abstractions without worrying about low-level communication. For example, the developer can  
 ## Supported operating systems
 
 `System.Device.Gpio` is supported on most versions of Linux that support ARM/ARM64 and Windows 10 IoT Core.
