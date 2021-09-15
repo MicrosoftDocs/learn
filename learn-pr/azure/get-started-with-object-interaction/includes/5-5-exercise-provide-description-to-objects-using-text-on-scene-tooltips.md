@@ -8,7 +8,7 @@ Adding text to the scene can be very informative and can guide the users. Here y
     * Change **Height** to 1
     * Change **Rotation X** to 90
 
-    :::image type="content" source="../media/base-6-section-3-step-1-1.png" alt-text="Unity with newly created TextMeshPro object selected" lightbox="../media/base-6-section-3-step-1-1.png":::
+    :::image type="content" source="../media/base-6-section-3-step-1-1.png" alt-text="Screenshot of Unity with newly created TextMeshPro object selected" lightbox="../media/base-6-section-3-step-1-1.png":::
 
 2. Then configure the **TextMeshPro - Text** component as follows:
     * Change **Text** to Rover Explorer
@@ -16,13 +16,13 @@ Adding text to the scene can be very informative and can guide the users. Here y
     * Change **Font Size** to 1
     * Change Extra Settings > **Margins** to 0.03
 
-    :::image type="content" source="../media/base-6-section-3-step-1-2.png" alt-text="Unity with TextMeshPro component configured" lightbox="../media/base-6-section-3-step-1-2.png":::
+    :::image type="content" source="../media/base-6-section-3-step-1-2.png" alt-text="Screenshot of Unity with TextMeshPro component configured" lightbox="../media/base-6-section-3-step-1-2.png":::
 
 ## Add tooltips
 
 1. In the Project window, navigate to the **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > ToolTip folder to locate the tooltip prefabs:
 
-    :::image type="content" source="../media/base-6-section-4-step-1-1.png" alt-text="Unity Project window with ToolTips folder selected" lightbox="../media/base-6-section-4-step-1-1.png":::
+    :::image type="content" source="../media/base-6-section-4-step-1-1.png" alt-text="Screenshot of Unity Project window with ToolTips folder selected" lightbox="../media/base-6-section-4-step-1-1.png":::
 
 2. In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and select all its child rover part objects, then in the Inspector window, use the **Add Component** button to add the **ToolTipSpawner** component and configure it as follows:
     * Ensure the **Focus Enabled** checkbox is checked to require the user to look at the part for the tooltip to appear
@@ -30,13 +30,13 @@ Adding text to the scene can be very informative and can guide the users. Here y
     * Change the ToolTip Override Settings > **Settings Mode** to **Override**
     * Change the ToolTip Override Settings > **Manual Pivot Local Position Y** to **1.5**
 
-    :::image type="content" source="../media/base-6-section-4-step-1-2.png" alt-text="Unity with all rover part objects selected and ToolTipSpawner component added and configured" lightbox="../media/base-6-section-4-step-1-2.png":::
+    :::image type="content" source="../media/base-6-section-4-step-1-2.png" alt-text="Screenshot of Unity with all rover part objects selected and ToolTipSpawner component added and configured" lightbox="../media/base-6-section-4-step-1-2.png":::
 
 3. In the Hierarchy window, select the first rover part, RoverParts > **Camera_Part**, and configure the **ToolTipSpawner** component as follows:
 
     * Change **Tool Tip Text** to reflect the name of the part, that is, **Camera**
 
-    :::image type="content" source="../media/base-6-section-4-step-1-3.png" alt-text="Unity with Camera ToolTipText configured" lightbox="../media/base-6-section-4-step-1-3.png":::
+    :::image type="content" source="../media/base-6-section-4-step-1-3.png" alt-text="Screenshot of Unity with Camera ToolTipText configured" lightbox="../media/base-6-section-4-step-1-3.png":::
 
 4. **Repeat** this step for each of the rover part objects to configure the **ToolTipSpawner** component as follows:
     * For the **Generator_Part**, change the **Tool Tip Text** to **Generator**
@@ -46,4 +46,4 @@ Adding text to the scene can be very informative and can guide the users. Here y
 
 5. Press the Play button to enter Game mode, then press-and-hold the right mouse button while moving your mouse until the gaze hit's one of the parts and the tooltip for that part will be displayed:
 
-    :::image type="content" source="../media/base-6-section-4-step-1-4.png" alt-text="Unity Play mode split view with tooltip triggered by gaze" lightbox="../media/base-6-section-4-step-1-4.png":::
+    :::image type="content" source="../media/base-6-section-4-step-1-4.png" alt-text="Screenshot of Unity Play mode split view with tooltip triggered by gaze" lightbox="../media/base-6-section-4-step-1-4.png":::
