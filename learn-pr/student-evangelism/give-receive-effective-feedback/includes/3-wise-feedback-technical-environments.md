@@ -47,7 +47,6 @@ For feedback to be helpful and useful, it must be specific. When you provide as 
 For example, let's say that a team member has submitted some code for a game feature. You're aware that this developer has very strong programming skills in C++ but is still new to programming in Java. Consider the following options for framing your feedback:
 
 - This code doesn’t run and there a lot of syntax and compile errors. Can you please fix the program?
-
 - I like the way you’ve designed the program structure. This feature will be a great addition to the game. However, I noticed a few syntax and compile errors. I think you might have used some data structures and libraries from C++ that don’t work in Java. The good news is that Java provides built-in libraries that might be able to achieve similar results. I can point you to the relevant libraries. Do you want to try rewriting the code using those instead?
 
 Evaluate both options. Which feedback do you think would be more useful to the developer? Which one might directly result in improved code and achieve better results?
