@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.give-receive-effective-feedback.provide-receive-wise-feedback
-title: Provide and receive wise feedback
+title: Give and receive wise feedback
 metadata:
-  title: Provide and receive wise feedback
+  title: Give and receive wise feedback
   description: This unit explores how to give feedback in the context of code reviews. It shows a process and some guidelines for conducting an inclusive code review.
   ms.date: 09/07/2021
   author: interurban
