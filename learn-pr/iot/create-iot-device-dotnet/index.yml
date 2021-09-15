@@ -40,6 +40,7 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
 units:
 - learn.create-iot-device-dotnet.introduction
 - learn.create-iot-device-dotnet.construct-circuit
+- learn.create-iot-device-dotnet.dotnet-iot-libraries
 - learn.create-iot-device-dotnet.knowledge-check
 - learn.create-iot-device-dotnet.summary
 badge:
