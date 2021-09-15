@@ -55,7 +55,7 @@ Then follow the Changing the Spatial Awareness Display Option instructions to en
 1. In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** and click the **Install** button to install the package:
 
     :::image type="content" source="../media/ar-foundation.png" alt-text="Screenshot of Unity Package Manager window with AR Foundation selected" lightbox="../media/ar-foundation.png":::
-
+b
     > [!NOTE]
     > You are installing the AR Foundation package because the Azure Spatial Anchors SDK requires it, which you will import in the next section.
 
@@ -94,7 +94,7 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
 
 3. Now with the three prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
-    :::image type="content" source="../media/drag-to-hierarchy.png" alt-text="Screenshot of Unity with newly added SceneController, RootMenu and DataManager prefabs still selected" lightbox="../media/drag-to-hierarchy.png":::
+    :::image type="content" source="../media/drag-hierarchy.png" alt-text="Screenshot of Unity with newly added SceneController, RootMenu and DataManager prefabs still selected" lightbox="../media/drag-hierarchy.png":::
 
 4. To focus in on the objects in the scene, you can double-click on the **RootMenu** object, and then zoom slightly out again:
 
@@ -127,7 +127,7 @@ In this section, you will connect *SceneManager*, *DataManager* and *RootMenu* t
 
 5. You will see that there are several unpopulated fields, let's change that. Move the **DataManager** object from the Hierarchy into the *Data Manager* field and move the **RootMenu** GameObject from the Hierarchy into the *Main Menu* field.
 
-    :::image type="content" source="../media/scene-controller-configure.png" alt-text="Screenshot of Unity with SceneController configured" lightbox="../media/scene-controller-configure.png":::
+    :::image type="content" source="../media/scene-controller.png" alt-text="Screenshot of Unity with SceneController configured" lightbox="../media/scene-controller.png":::
 
 6. Now your scene is ready for the upcoming tutorials. Don't forget to save it into your project.
 

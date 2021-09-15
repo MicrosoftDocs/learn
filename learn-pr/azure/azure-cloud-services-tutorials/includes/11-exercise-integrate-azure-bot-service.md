@@ -1,6 +1,6 @@
 In this module, you'll learn how to use **Azure Bot Service** in the **HoloLens 2** demo application to add Language Understanding (LUIS) and letting the Bot assist the user when searching for **Tracked Objects**. This module is a two-part module where in the first part, you create the Bot with the [Bot Composer](https://docs.microsoft.com/composer/introduction) as a code-free solution and take a quick look in the Azure Function that feeds the Bot with the needed data. Then, in the second part, you use the **BotManager (script)** in the Unity project to consume the hosted Bot Service.
 
-## Understand Azure bot service
+## Understand azure bot service
 
 The **Azure Bot Service** empowers developers to create intelligent bots that can maintain natural conversation with users thanks to **LUIS**. A conversational Bot is a great way to expand the ways a user can interact with your application. A Bot can act as a knowledge base with a [QnA Maker](https://docs.microsoft.com/Azure/bot-service/bot-builder-howto-qna?preserve-view=true&tabs=cs&view=Azure-bot-service-4.0) to maintaining sophisticated conversation with the power of [Language Understanding (LUIS)](https://docs.microsoft.com/Azure/bot-service/bot-builder-howto-v4-luis?preserve-view=true&tabs=csharp&view=Azure-bot-service-4.0).
 
@@ -11,7 +11,7 @@ Learn more about [Azure Bot Service](https://docs.microsoft.com/Azure/bot-servic
 Before you can use the bot in the Unity application, you need to develop it, provide it with data and host it on **Azure**.
 The goal of the bot is to have the abilities to tell how many *Tracked Objects* are stored in the database, find a *Tracked Object* by its name, and tell the user some basic information about it.
 
-### A quick look into tracked objects Azure function
+### A quick look into tracked objects azure function
 
 You're about to start creating the Bot, but to make it useful you need to give it a resource from which it can pull data. Since the *Bot* can count the amount of **Tracked Objects**, find specific ones by name and tell details, you'll use a Azure Function that has access to the **Azure Table storage**.
 
@@ -103,7 +103,7 @@ These are the trigger phrases:
     >* count me all
     >* how many are stored
 
-    :::image type="content" source="../media/ask-for-count.png" alt-text="Screenshot of TrackedObjectsBot project dialog trigger AskForCount" lightbox="../media/ask-for-count.png":::
+    :::image type="content" source="../media/ask-count.png" alt-text="Screenshot of TrackedObjectsBot project dialog trigger AskForCount" lightbox="../media/ask-count.png":::
 
     Thanks to [LUIS](/composer/how-to-use-luis) the *user* doesn't have to ask the phrases in that exact way, which allows a natural conversation for the *user*.
 
@@ -130,7 +130,7 @@ It asks the user for the *name* of the **Tracked Object** it wants to know more 
 
 2. On the dialog panel click on **AskingForCount** and locate the *Send an HTTP request* action, here you can see the field **URL** which you need to change the correct URL for the **Count** function endpoint.
 
-    :::image type="content" source="../media/ask-for-count-end-point.png" alt-text="Screenshot of TrackedObjectsBot project AskingForCount dialog trigger endpoint configuration" lightbox="../media/ask-for-count-end-point.png":::
+    :::image type="content" source="../media/ask-count-end-point.png" alt-text="Screenshot of TrackedObjectsBot project AskingForCount dialog trigger endpoint configuration" lightbox="../media/ask-count-end-point.png":::
 
 3. Finally, look for the **FindEntity** trigger and locate the *Send an HTTP request* action, in the **URL** field change the URL to the **Find** function endpoint.
 

@@ -1,12 +1,12 @@
 In this module, you will learn how to use **Azure Custom Vision**.You will upload a set of photos to associate it with a *Tracked Object*, upload them to the **Custom Vision** service and start the training process. Then you will use the service to detect the *Tracked Object* by capturing photos from the webcam feed.
 
-## Understand Azure custom vision
+## Understand azure custom vision
 
 **Azure Custom Vision** is part of the **Cognitive Services** family and is used to train image classifiers. The image classifier is an AI service that uses the trained model to apply matching tags. This classification feature will be used by our application to detect *Tracked Objects*.
 
 Learn more about [Azure Custom Vision](/https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home).
 
-## Prepare Azure custom vision
+## Prepare azure custom vision
 
 Before you can start, you have to create a custom vision project, the fastest way is by using the web portal.
 
@@ -28,11 +28,11 @@ Follow this [quickstart tutorial](https://docs.microsoft.com/azure/cognitive-ser
 3. In the Hierarchy window, locate the **ObjectDetectionManager** object and select it.
 The **ObjectDetectionManager** prefab contains the **ObjectDetectionManager (script)** component and as you can see from the Inspector window it depends on Azure settings and Project settings.
 
-## Retrieve Azure api resource credentials
+## Retrieve azure api resource credentials
 
 The necessary credentials for the **ObjectDetectionManager (script)** settings can be retrieve from the Azure portal and the custom vision portal.
 
-## Retrieve Azure settings credentials
+## Retrieve azure settings credentials
 
 Find and locate the custom vision resource of type **Cognitive Services** you have created in the *Preparing the scene* section of this tutorial (select custom vision resources name followed by *-Prediction*). There click on *Overview* or *Keys and Endpoint* to retrieve the necessary credentials.
 
