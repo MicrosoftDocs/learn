@@ -38,13 +38,9 @@ Effective feedback helps to enhance the growth mindset of individuals by stimula
 Effective feedback has the following characteristics:
 
 - It’s specific and timely.
-
 - It focuses on what went wrong, what’s going right, and why.
-
 - It points the person toward options and strategies instead of just providing them with the expected end states.
-
 - It conveys appreciation of the person’s effort.
-
 - It conveys your trust that the person will understand and complete the task eventually.
 
 When you give feedback, it’s easy to forget that different people might receive the feedback differently. Try to be sensitive about other people’s feelings and avoid statements that might offend them or put them in a defensive position.  Here are some examples of not-so-effective feedback: 
@@ -58,11 +54,8 @@ When you give feedback, it’s easy to forget that different people might receiv
 Feedback can come in written or oral form, or a combination of the two. You can also provide feedback in a group setting or one-on-one. As you're determining the mode of communicating your feedback to someone, consider the following questions:
 
 - How positive or negative is the feedback? Will the recipient be put on the spot and feel compelled to accept or respond to certain details in real time, or might they need time to process the feedback in private?
-
 - How will the written feedback be received? Written feedback is usually received privately and, unless skillfully written, it can easily fail to convey your intended tone. Will it affect inclusiveness? Will your intent be clear to the recipient?
-
 - What is needed to help the recipient understand the message?
-
 - How does it establish your trust in the person and the person's trust in you?
 
 > [!TIP]
