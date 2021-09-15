@@ -74,7 +74,7 @@ As a mentor, you can influence the goal orientations that your learners have. To
 
 - Create tasks that focus on a higher level of thinking, like analyzing and creating.
 
-- Use a variety of learning activities that are challenging, organized, and perceived as useful and interesting to learners. 
+- Use different kinds of learning activities that are challenging, organized, and perceived as useful and interesting to learners. 
 
 - Allow learners to learn at their own pace.
 
@@ -103,7 +103,7 @@ As training draws closer to its end, several team members have approached you as
 
 ## Examine your team's goal orientation
 
-As the developer team lead, you need to decide how to organize your team’s training. You need to choose between three approaches to training:
+As the developer team lead, you need to decide how to organize your team's training. You need to choose between three approaches to training:
 
 - **Approach #1**: Independent study followed by evaluation by peers and experts.
 
@@ -111,14 +111,14 @@ As the developer team lead, you need to decide how to organize your team’s tra
 
 - **Approach #3**: A coding workshop conducted by peers and experts.
 
-You want to maximize the learning potential of your team and minimize stress levels. You met with your team members and discovered their goal orientations. The following table lists the results of those conversations:
+You want to maximize the learning potential of your team and minimize stress levels. You met with your team members and discovered their goal orientations. This table lists the results of those conversations:
 
 
 | **Training approach**                          | **Description**                                              | **Responses of team members who   have performance goal orientation** | **Responses   of team members who have mastery goal orientation** |
 | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **#1: Independent  study and then evaluation** | Team members will learn by  completing assignments on their own. Everyone then will meet and evaluate  each other’s work. Senior developers will offer their evaluations, too,  because they know the topics well. | They want to perform well  so they can impress their teammates and the senior developers with their  work. | They’re looking forward to the challenge of  learning new code.  They want to get feedback  (good or bad) from the team and senior developers because it’ll help them  improve. |
-| **#2: Coding  class with a test**              | Team members will  participate in a coding class. Everyone will work on assignments and turn  them in for a grade. There will be a test at the end. The person with the  highest grade will get special recognition. | It’s important to them that they do better than their  teammates.   They hope the subject  matter will be easy because they hate to fail.   They’re already stressed  out about a possible test. | Learning how to write code well is most  important to them. It’s more important than a test score.  They’re not stressed out about tests  because they enjoy evaluating what they’ve learned. |
-| **#3: Coding  workshop**                       | The team will learn  together in a workshop setting. There won’t be any grading.   Experienced developers will  be there to help write, run, and troubleshoot the code.   Everyone will work in  groups to learn from each other’s code.   Participants will be asked  to volunteer their code samples as solutions to problems. The group will  evaluate these submissions. | They’re motivated to impress their  teammates and senior developers by being the first to think of elegant ways  to solve problems.   They might avoid volunteering solutions  that they think are less than perfect, so they aren’t criticized. | They want to learn as much as they can from  their teammates and senior developers.  They’ll enthusiastically share their work  with the group, even if it’s incomplete or has problems. Criticism doesn’t bother  them as long as they’re learning. |
+| **#1: Independent  study and then evaluation** | Team members will learn by  completing assignments on their own. Everyone will then meet and evaluate each other's work. Senior developers will offer their evaluations too,  because they know the topics well. | They want to do well  so they can impress their teammates and the senior developers with their  work. | They're looking forward to the challenge of  learning new code.  They want to get feedback (good or bad) from the team and senior developers because it will help them  improve. |
+| **#2: Coding  class with a test**              | Team members will  participate in a coding class. Everyone will work on assignments and turn  them in for a grade. There will be a test at the end. The person with the highest grade will get special recognition. | It's important to them that they do better than their  teammates.   They hope the subject  matter will be easy because they hate to fail. They're already stressed  out about a possible test. | Learning how to write code well is most important to them. It's more important than a test score. They're not stressed out about tests because they enjoy evaluating what they've learned. |
+| **#3: Coding  workshop**                       | The team will learn  together in a workshop setting. There won't be any grading. Experienced developers will  be there to help write, run, and troubleshoot the code. Everyone will work in  groups to learn from each other's code. Participants will be asked  to volunteer their code samples as solutions to problems. The group will  evaluate these submissions. | They're motivated to impress their teammates and senior developers by being the first to think of elegant ways to solve problems. They might avoid volunteering solutions  that they think are less than perfect so they aren't criticized. | They want to learn as much as they can from  their teammates and senior developers.  They'll enthusiastically share their work with the group, even if it's incomplete or has problems. Criticism doesn't bother them as long as they're learning. |
 
 ## Reflection
 
@@ -126,6 +126,6 @@ Based on the responses you received from your team:
 
 - Assuming an equal number of respondents have performance and mastery orientations, what training approach would be most effective?
 
-- If there were more respondents who have performance orientations, which approach would be most effective?
+- If there are more respondents who have performance orientations, which approach would be most effective?
 
-- If there were more respondents who have a mastery orientation, which approach would be most effective?
+- If there are more respondents who have a mastery orientation, which approach would be most effective?
