@@ -2,12 +2,12 @@ The Speech CLI is a command-line tool for using the Speech service without writi
 
 Most features in the Speech SDK are available in the Speech CLI, and some advanced features and customizations are simplified in the Speech CLI. Consider the following guidelines to decide when to use the Speech CLI or the Speech SDK.
 
-Use the Speech CLI when:
+Use the speech CLI when:
 
 * You want to experiment with Speech service features with minimal setup and no code.
 * You have relatively simple requirements for a production application using the Speech service.
 
-Use the Speech SDK when:
+Use the speech SDK when:
 
 * You want to integrate Speech service functionality within a specific language or platform (for example, C#, Python, C++).
 * You have complex requirements that may require advanced service requests, or developing custom behavior including response streaming.

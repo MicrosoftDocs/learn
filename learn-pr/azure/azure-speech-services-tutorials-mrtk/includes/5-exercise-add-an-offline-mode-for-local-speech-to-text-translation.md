@@ -5,15 +5,15 @@ In this module, you will add the ability to execute commands using Azure speech 
     * In the **Wake Word** field, enter a suitable phrase, for example, _Activate terminal_.
     * In the **Dismiss Word** field, enter a suitable phrase, for example, _Dismiss terminal_.
 
-    :::image type="content" source="../media/tutorial-2-section-1-step-1-1.png" alt-text="Unity editor with Lunarcom Wake Word Recognizer script component highlighted" lightbox="../media/tutorial-2-section-1-step-1-1.png":::
+    :::image type="content" source="../media/wake-word-recognizer.png" alt-text="Screenshot of Unity editor with Lunarcom Wake Word Recognizer script component highlighted" lightbox="../media/wake-word-recognizer.png":::
 
 2. If you now enter Game mode, as in the previous tutorial, the terminal panel is enabled by default, but you can now disable it by saying the Dismiss Word, **Dismiss terminal**:
 
-    :::image type="content" source="../media/tutorial-2-section-1-step-1-2.png" alt-text="Unity editor in play mode with speech recognizer feature in use" lightbox="../media/tutorial-2-section-1-step-1-2.png":::
+    :::image type="content" source="../media/speech-recognizer-feature.png" alt-text="Screenshot of Unity editor in play mode with speech recognizer feature in use" lightbox="../media/speech-recognizer-feature.png":::
 
 3. And enable it again by saying the Wake Word, **Activate terminal**:
 
-    :::image type="content" source="../media/tutorial-2-section-1-step-1-3.png" alt-text="Unity editor in play mode with active terminal" lightbox="../media/tutorial-2-section-1-step-1-3.png":::
+    :::image type="content" source="../media/active-terminal.png" alt-text="Screenshot of Unity editor in play mode with active terminal" lightbox="../media/active-terminal.png":::
 
     > [!CAUTION]
     > The application needs to connect to Azure, so make sure your computer/device is connected to the internet.

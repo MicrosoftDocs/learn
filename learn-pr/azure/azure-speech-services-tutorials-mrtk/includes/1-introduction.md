@@ -4,7 +4,7 @@ Imagine a scenario where you are expected to build an application capable of tra
 
 We will use your device's microphone to transcribe speech to text in real-time on completing this module series. In addition, translate our speech into other languages and leverage the Intent recognition feature to understand voice commands using artificial intelligence.
 
-## Learning Objectives
+## Learning objectives
 
 * Learn how to integrate Azure Speech Services with a HoloLens 2 application.
 * Learn how to use speech recognition to transcribe text.
