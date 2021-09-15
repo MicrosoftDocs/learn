@@ -112,7 +112,7 @@ By default, Blazor event handlers are synchronous. If an event handler performs 
 ```
 
 > [!NOTE]
-> For detailed information about creating asynchronous methods in C#, read [Asynchronous programming with async and await](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/).
+> For detailed information about creating asynchronous methods in C#, read [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
 
 ## Use an event to set the focus to a DOM element
 
@@ -175,7 +175,7 @@ C# supports lambda expressions. A lambda expression enables you create an anonym
 ```
 
 > [!NOTE]
-> For details on how lambda expressions work, read [Lambda expressions (C# reference)](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/lambda-expressions)
+> For details on how lambda expressions work, read [Lambda expressions (C# reference)](/dotnet/csharp/language-reference/operators/lambda-expressions)
 
 This approach is also useful if you want to provide other arguments to an event handling method. In the example below, the method `HandleClick` takes a `MouseEventArgs` parameter in the same way as an ordinary click event handler, but it also accepts a string parameter. The method processes the click event as before, but also displays the message in the user has pressed the <kbd>Ctrl</kbd> key. The lambda expression calls the `HandleCLick` method, passing in the `MouseEventArgs` parameter (`mouseEvent`), and a string.
 

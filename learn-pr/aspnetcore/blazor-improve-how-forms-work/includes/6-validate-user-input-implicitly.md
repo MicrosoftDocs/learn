@@ -63,7 +63,7 @@ Other annotations that you can use in a model include:
 - `[Url]`. Use this annotation when you want to record a valid URL from the user.
 
 > [!NOTE]
-> Regular expressions are widely used to compare strings against patterns and also to modify strings. You can use them to define custom formats that form values must conform to. To learn more about regular expressions in .NET, see [.NET regular expressions](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions)
+> Regular expressions are widely used to compare strings against patterns and also to modify strings. You can use them to define custom formats that form values must conform to. To learn more about regular expressions in .NET, see [.NET regular expressions](/dotnet/standard/base-types/regular-expressions)
 
 ## Add validation components to the form
 

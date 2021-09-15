@@ -8,6 +8,6 @@ In this module, you've learned how to:
 
 ## Learn more
 
-- [ASP.NET Core Blazor event handling](https://docs.microsoft.com/aspnet/core/blazor/components/event-handling)
-- [Lambda expressions (C# reference)](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/lambda-expressions)
-- [Forms and validation](https://docs.microsoft.com/aspnet/core/blazor/forms-validation)
+- [ASP.NET Core Blazor event handling](/aspnet/core/blazor/components/event-handling)
+- [Lambda expressions (C# reference)](/dotnet/csharp/language-reference/operators/lambda-expressions)
+- [Forms and validation](/aspnet/core/blazor/forms-validation)
