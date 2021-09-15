@@ -53,7 +53,7 @@ Mastery goal orientation is often described as loving learning for its own sake.
     > [!NOTE]
     > The characteristics of mastery goal orientation and growth mindset are similar. A *growth mindset* is a mental attitude that you can learn anything you don't know, and that you can improve your abilities through dedication and hard work. 
 
-:::image type="content" source="../media/4-challenge.png" alt-text="Drawing that shows a person at computer screen that displays the word 'challenge." The person seems excited to begin working." border="false":::
+:::image type="content" source="../media/4-challenge.png" alt-text="Drawing that shows a person at computer screen that displays the word 'challenge.' The person seems excited to begin working." border="false":::
 
 Mastery orientation can be divided further into:
 
