@@ -26,7 +26,7 @@ quiz:
     - content: "A NULL in one set is treated as being equal to a NULL in another set."
       isCorrect: true
       explanation: "That's correct. NULLs are compared and treated as duplicates if they appear in both sets."
-  - content: "You have employee and customer query result sets, both of which containID(int) and country/region(nvarchar(20)) columns. You want to return a list of countries/regions that appear in both result sets. Which set operator should you use?"
+  - content: "There are employee and customer query result sets, both of which containID(int) and country/region(nvarchar(20)) columns. Someone wants to return a list of countries/regions that appear in both result sets. Which set operator should they use?"
     choices:
     - content: "EXCEPT"
       isCorrect: false
