@@ -10,15 +10,11 @@ Stages can be used in your pipeline to mark a separation of concerns. For exampl
 
 In CI stages, you check the validity of the changes that have been made to your code. CI stages provide quality assurance. They can be run without affecting your live production environment.
 
-> [!NOTE]
-> In many programming languages, code needs to be *built* before someone can run it. When a Bicep file is deployed, it's converted, or *transpiled*, from Bicep to JSON. The tooling performs this process automatically. 
->
-> In most situations, you don't need to manually build Bicep code to JSON templates within your pipeline. We still use the term *continuous integration* when we talk about Bicep code, though, because the other parts of CI still apply, such as validating your code.
+In many programming languages, code needs to be *built* before someone can run it. When a Bicep file is deployed, it's converted, or *transpiled*, from Bicep to JSON. The tooling performs this process automatically. 
 
-After your CI stages run successfully, you should have increased your confidence that the changes you've made will deploy successfully too. In CD stages, you deploy your code to each of your environments. You usually start with test and other non-production environments, and then move through to production environments.
+In most situations, you don't need to manually build Bicep code to JSON templates within your pipeline. We still use the term *continuous integration* when we talk about Bicep code, though, because the other parts of CI still apply, such as validating your code.
 
-> [!NOTE]
-> In this module, we'll deploy to a single environment. In a future module, you'll learn how to extend your deployment pipeline to deploy to multiple environments, such as non-production and production environments.
+After your CI stages run successfully, you should have increased your confidence that the changes you've made will deploy successfully too. In CD stages, you deploy your code to each of your environments. You usually start with test and other non-production environments, and then move through to production environments. In this module, we'll deploy to a single environment. In a future module, you'll learn how to extend your deployment pipeline to deploy to multiple environments, such as non-production and production environments.
 
 Stages run in a sequence. You can control how and when each stage runs. For example, you can configure your CD stages to run only after your CI stages successfully run. Or, you might have multiple CI stages that need to run in sequence, such as to build your code and then test it. You might also include a *rollback* stage that runs only if previous deployment stages failed.
 
@@ -34,10 +30,9 @@ It's a well-understood rule in software development that the earlier in the proc
 
 So, the goal is to shift the discovery of problems toward the left of the preceding diagram. Throughout this module, you'll see how you can add more validation and testing to your pipeline as it progresses.
 
-> [!TIP]
-> When you work with tools like Azure DevOps, *pull requests* typically represent changes that someone on your team wants to make to the code on your main branch. It's helpful to create another pipeline that automatically runs your CI steps during the review process for the pull request. This technique helps validate that the code still works, even with the proposed changes. 
->
-> If the validation succeeds, you have some confidence that the change won't cause problems when it's merged to your main branch. If the check fails, you know there's more work to do to before the pull request is ready to merge.
+When you work with tools like Azure DevOps, *pull requests* typically represent changes that someone on your team wants to make to the code on your main branch. It's helpful to create another pipeline that automatically runs your CI steps during the review process for the pull request. This technique helps validate that the code still works, even with the proposed changes. 
+
+If the validation succeeds, you have some confidence that the change won't cause problems when it's merged to your main branch. If the check fails, you know there's more work to do to before the pull request is ready to merge.
 
 > [!IMPORTANT]
 > Automated validation and tests are only as effective as the tests you write. It's important to consider the things you need to test and the steps you need to perform to be confident that your deployment is OK.
@@ -70,7 +65,7 @@ You can specify the dependencies between stages by using the `dependsOn` keyword
 
 When you use the `dependsOn` keyword, Azure Pipelines waits for the dependent stage to finish successfully before it starts the next stage. If Azure Pipelines detects that all of the dependencies for multiple stages have been satisfied, it can run those stages in parallel.
 
-> [!IMPORTANT]
+> [!NOTE]
 > In reality, stages and jobs run in parallel only if you have enough agents to run multiple jobs at the same time. When you use Microsoft-hosted agents, you might need to purchase additional *parallel jobs* to achieve this.
 
 Sometimes, you want to run a stage when a previous stage fails. For example, here's a different pipeline. If the deployment fails, a stage called **Rollback** runs immediately afterward:
@@ -95,8 +90,7 @@ A typical Bicep deployment pipeline contains several stages. As the pipeline mov
 1. **Deploy**: Submit your deployment to Resource Manager and wait for it to finish.
 1. **Smoke Test**: Run basic post-deployment checks against some of the important resources that you've deployed. These are called *infrastructure smoke tests*.
 
-> [!NOTE]
-> Your organization might have a different sequence of stages, or you might need to integrate your Bicep deployments into a pipeline that deploys other components. After you understand how the stages work, you can design a pipeline to suit your needs.
+Your organization might have a different sequence of stages, or you might need to integrate your Bicep deployments into a pipeline that deploys other components. After you understand how the stages work, you can design a pipeline to suit your needs.
 
 Throughout this module, you'll learn more about these stages and progressively build a pipeline that includes each stage. You'll also learn:
 

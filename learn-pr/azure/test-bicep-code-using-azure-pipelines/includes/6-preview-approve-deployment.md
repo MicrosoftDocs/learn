@@ -20,19 +20,15 @@ You use the `az deployment group what-if` command from within your pipeline defi
 
 ::: zone pivot="powershell"
 
-> [!NOTE]
-> If you build your own PowerShell-based pipeline, you can use the `New-AzResourceGroupDeployment` cmdlet with the `-Whatif` switch, or you can use the `Get-AzResourceGroupDeploymentWhatIfResult` cmdlet.
+If you build your own PowerShell-based pipeline, you can use the `New-AzResourceGroupDeployment` cmdlet with the `-Whatif` switch, or you can use the `Get-AzResourceGroupDeploymentWhatIfResult` cmdlet.
 
 ::: zone-end
 
 The what-if operation doesn't make any changes to your environment. Instead, it describes the resources that will be created, the resource properties that will be updated, and the resources that will be deleted.
 
-After you see the output of the what-if operation, you can determine whether to continue on to the deployment. This step typically involves a human reviewing the output from the what-if command, and then making a decision about whether the identified changes are reasonable.
+What-if sometimes shows that a resource will change when actually no change will happen. This is called *noise*. We're working to reduce these problems, but we need your help. [Please report these problems](https://aka.ms/whatifissues).
 
-> [!NOTE]
-> The what-if operation sometimes shows that a resource will change when actually no change will happen. This is called *noise*. We're working to reduce these problems, but we need your help. [Please report these problems](https://aka.ms/whatifissues).
-
-If a human reviewer decides that the changes are reasonable, they can manually approve the pipeline run.
+After you see the output of the what-if operation, you can determine whether to continue on to the deployment. This step typically involves a human reviewing the output from the what-if command, and then making a decision about whether the identified changes are reasonable. If a human reviewer decides that the changes are reasonable, they can manually approve the pipeline run.
 
 To learn more about the what-if command, see the Microsoft Learn module [Preview Azure deployment changes by using what-if](/learn/modules/arm-template-whatif/).
 
@@ -64,8 +60,7 @@ Checks and approvals are evaluated just before a pipeline stage begins. When Azu
 
 An approval is one type of check. When you configure an approval check, you assign one or more users who need to approve the continuation of your pipeline.
 
-> [!NOTE]
-> Azure Pipelines provides other types of checks, too. For example, you can call an API to run some custom logic, control the business hours during which a stage can run, and even query Azure Monitor to ensure that a deployment has succeeded. We discuss only approval checks in this module, but we provide links to more information about checks in the summary.
+Azure Pipelines provides other types of checks, too. For example, you can call an API to run some custom logic, control the business hours during which a stage can run, and even query Azure Monitor to ensure that a deployment has succeeded. We discuss only approval checks in this module, but we provide links to more information about checks in the summary.
 
 > [!NOTE]
 > Agent pools and service connections can also have checks configured on them. You can also use a special step called a manual approval task. However, in this module, we'll focus on environments and the checks associated with them.
