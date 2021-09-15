@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Test your resources after deployment
   description: Learn about testing your Azure resources in your deployment pipeline.
-  ms.date: 09/08/2021
+  ms.date: 09/15/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial

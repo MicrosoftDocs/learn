@@ -89,8 +89,7 @@ This command is similar to the `az deployment group create` command, but it does
 
 For example, suppose your Bicep file contains a storage account. Preflight validation will check whether another storage account has already taken the name you chose. It also checks whether the name you chose for the storage account complies with naming conventions. 
 
-> [!TIP]
-> The preflight validation command runs the Bicep linter too. However, it's usually a good idea to run the linter separately. That way, if there are any linter errors, you'll detect them quickly instead of waiting for the validation process to finish. Validation takes longer.
+The preflight validation command runs the Bicep linter too. However, it's usually a good idea to run the linter separately. That way, if there are any linter errors, you'll detect them quickly instead of waiting for the validation process to finish. Validation takes longer.
 
 > [!IMPORTANT]
 > When you run a preflight validation, each of the Azure resource providers performs its own checks. Some resource providers don't run many checks, whereas others do. So you can't rely on preflight validation to be certain that your file is valid. Nevertheless, it's a useful tool and is worth including in your pipeline.
