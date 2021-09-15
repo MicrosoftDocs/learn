@@ -26,7 +26,7 @@ Belonging is also not your aptitude. Meaning that, it's not about how skilled yo
 
 There are many factors that contribute to whether you feel you have a place or a sense of belonging. Your mindset and your sense of self-efficacy influence your sense of belonging. The messages you receive from your environment, including whether you feel respected and valued, largely determine whether you feel you belong.
 
-:::image type="content" source="../media/2-belonging.png" alt-text="Happy people interacting, with a large sense of belonging. Sad people who aren't interacting, with a small sense of belonging." border="false":::
+:::image type="content" source="../media/2-belonging.png" alt-text="Illustration of happy people interacting, with a large sense of belonging. Sad people who aren't interacting, with a small sense of belonging." border="false":::
 
 ## Situations that affect your sense of belonging
 
