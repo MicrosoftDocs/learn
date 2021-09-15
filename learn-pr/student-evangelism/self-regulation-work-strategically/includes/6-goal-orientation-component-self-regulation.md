@@ -24,7 +24,7 @@ Learners who set performance goals are motivated by activities and learning meth
 
 The downside for performance-oriented learners is they can become stressed when it's exam time, to the point of near panic. This stress can affect everyone around them. High stress levels aren't conducive to effective learning or to mental health. 
 
-:::image type="content" source="../media/4-bad-grade.png" alt-text="Drawing that shows person at a computer who's thinking "I hope I don't get a bad grade on this test."" border="false":::
+:::image type="content" source="../media/4-bad-grade.png" alt-text="Drawing that shows person at a computer who's thinking 'I hope I don't get a bad grade on this test.'" border="false":::
 
 Performance orientation can be divided further into:
 
@@ -53,7 +53,7 @@ Mastery goal orientation is often described as loving learning for its own sake.
     > [!NOTE]
     > The characteristics of mastery goal orientation and growth mindset are similar. A *growth mindset* is a mental attitude that you can learn anything you don't know, and that you can improve your abilities through dedication and hard work. 
 
-:::image type="content" source="../media/4-challenge.png" alt-text="Drawing that shows a person at computer screen that displays the word "challenge." The person seems excited to begin working." border="false":::
+:::image type="content" source="../media/4-challenge.png" alt-text="Drawing that shows a person at computer screen that displays the word 'challenge." The person seems excited to begin working." border="false":::
 
 Mastery orientation can be divided further into:
 

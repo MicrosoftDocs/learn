@@ -88,7 +88,7 @@ Keeping a log or a record can help you organize and track your approach to solvi
 
 If you're stuck, find out what others have tried. Connect with someone who has more experience and get that person's perspective. The person could be a peer, a teacher, or a mentor. Maybe they'll have some steps you can practice, research, or try differently. Do some research on your own by searching online and reading publications or books.
 
-:::image type="content" source="../media/2-can-you-help-me.png" alt-text="Drawing that shows one person asking two other people, "Can you help me?" Self-regulation stands by, smiling." border="false":::
+:::image type="content" source="../media/2-can-you-help-me.png" alt-text="Drawing that shows one person asking two other people, 'Can you help me?' Self-regulation stands by, smiling." border="false":::
 
 ### Compare where you are now to where you began
 
