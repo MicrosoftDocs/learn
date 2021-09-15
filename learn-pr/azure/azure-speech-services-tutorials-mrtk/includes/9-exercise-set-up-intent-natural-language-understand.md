@@ -9,13 +9,13 @@ In this module, you'll explore the Azure Speech Service's intent recognition. Th
 2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **RocketLauncher** folder, drag the **RocketLauncher_Complete** prefab into your Hierarchy window, and place it at a suitable location in front of the camera, for example:
 
     * Transform **Position** X = 0, Y = -0.4, Z = 1
-    * Transform **Rotation** X = 0, Y = 90, Z = 0 
+    * Transform **Rotation** X = 0, Y = 90, Z = 0
 
     :::image type="content" source="../media/rocket-launcher-prefab.png" alt-text="Screenshot of Add the RocketLauncher_Complete prefab" lightbox="../media/rocket-launcher-prefab.png":::
 
 3. In the Hierarchy window, select the **Lunarcom** object again, then expand the **RocketLauncher_Complete** > **Button** object and assign each of the **Buttons** object's child objects to the corresponding **Lunar Launcher Buttons** field:
 
-    :::image type="content" source="../media/assigning-buttons.png" alt-text="Screenshot of Assigning each of the buttons" lightbox="../media/assigning-buttons.png":::
+    :::image type="content" source="../media/assign-buttons.png" alt-text="Screenshot of Assigning each of the buttons" lightbox="../media/assigning-buttons.png":::
 
 ## Create the azure language understanding resource
 
@@ -224,7 +224,7 @@ From the Entities page, navigate back to the **PressButton** intent page.
 
 5. Wait for the publishing process to complete:
 
-    :::image type="content" source="../media/ publishing-process.png" alt-text="Screenshot of Wait for the publishing process to complete" lightbox="../media/ publishing-process.png":::
+    :::image type="content" source="../media/publish-process.png" alt-text="Screenshot of Wait for the publishing process to complete" lightbox="../media/publish-process.png":::
 
 6. Navigate to the Manage > Application Settings > **Azure Resources** page, your Azure Resources page should look similar to this:
 

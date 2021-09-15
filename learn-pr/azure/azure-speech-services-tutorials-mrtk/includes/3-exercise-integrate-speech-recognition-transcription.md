@@ -27,7 +27,7 @@ Because you will use the Speech SDK for speech recognition and transcription, yo
 
 1. In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Publishing Settings** section:
 
-    :::image type="content" source="../media/configuring-capabilities.png" alt-text="Screenshot of Configuring capabilities" lightbox="../media/configuring-capabilities.png":::
+    :::image type="content" source="../media/configure-capabilities.png" alt-text="Screenshot of Configuring capabilities" lightbox="../media/configure-capabilities.png":::
 
 2. In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer** and **PrivateNetworkClientServer** capabilities:
 
@@ -51,7 +51,7 @@ In this section, you will prepare the scene by adding the tutorial prefab and co
 
 1. In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureSpeechServices** > **Prefabs** folder and drag the **Lunarcom** prefab into the Hierarchy window to add it to your scene:
 
-    :::image type="content" source="../media/preparing-scene.png" alt-text="Screenshot of Preparing the scene" lightbox="../media/preparing-scene.png":::
+    :::image type="content" source="../media/prepare-scene.png" alt-text="Screenshot of Preparing the scene" lightbox="../media/prepare-scene.png":::
 
 2. With the **Lunarcom** object still selected in the Hierarchy window, in the Inspector window, use the **Add Component** button to add the **Lunarcom Controller (Script)** component to the Lunarcom object:
 
@@ -84,7 +84,7 @@ To use Azure Speech Services, you need to create an Azure resource and obtain an
 
 1. In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Speech Recognizer (Script)** component to the Lunarcom object:
 
-    :::image type="content" source="../media/lunarcom-speech-recognize.png" alt-text="Screenshot of Add Lunarcom Speech Recognizer (Script)" lightbox="../media/ lunarcom-speech-recognize.png":::
+    :::image type="content" source="../media/lunarcom-speech-recognize.png" alt-text="Screenshot of Add Lunarcom Speech Recognizer (Script)" lightbox="../media/lunarcom-speech-recognize.png":::
 
 2. If you now enter Game mode, you can test the speech recognition by first pressing the microphone button:
 
