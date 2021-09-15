@@ -2,7 +2,7 @@
 
 1. In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window:
 
-    :::image type="content" source="../../media/unity-build-settings.png" alt-text="Screenshot of Unity Build Settings... menu path" lightbox="../../media/unity-build-settings.png":::
+    :::image type="content" source="../../media/new-project-progress.png" alt-text="Screenshot of Unity Build Settings... menu path" lightbox="../../media/new-project-progress.png":::
 
 2. In the Build Settings window, select **Universal Windows Platform** and:
 
@@ -16,11 +16,11 @@
     * Set **Build configuration** to **Release** because there are known performance issues with Debug
     * Click the Switch Platform button
 
-    :::image type="content" source="../../media/universal-windows-platform-settings.png" alt-text="Screenshot of Unity Build Settings with Universal Windows Platform settings settings" lightbox="../../media/universal-windows-platform-settings.png":::
+    :::image type="content" source="../../media/universal-windows-platform-settings-switch.png" alt-text="Screenshot of Unity Build Settings with Universal Windows Platform settings settings" lightbox="../../media/universal-windows-platform-settings-switch.png":::
 
 3. When Unity has finished switching the platform, click the  **x** icon to close the Build Settings window:
 
-    :::image type="content" source="../../media/unity-build-window.png" alt-text="Screenshot of Unity Build Window with close icon highlighted" lightbox="../../media/unity-build-window.png":::
+    :::image type="content" source="../../media/build-window-with-close-icon.png" alt-text="Screenshot of Unity Build Window with close icon highlighted" lightbox="../../media/build-window-with-close-icon.png":::
 
 ## [Unity 2019/2020 + windows xr plugin](#tab/winxr)
 

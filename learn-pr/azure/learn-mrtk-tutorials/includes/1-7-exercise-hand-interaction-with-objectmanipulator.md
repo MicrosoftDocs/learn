@@ -4,16 +4,15 @@ The ObjectManipulator script makes an object movable, scalable, and rotatable us
 
 1. In the Unity menu, select **GameObject** > **3D Object** > **Cube** to add a cube object to the scene.
 
-    :::image type="content" source="../media/adding-the-cube.png" alt-text="Screenshot of Adding the cube." lightbox="../media/adding-the-cube.png":::
+    :::image type="content" source="../media/add-cube.png" alt-text="Screenshot of Adding the cube." lightbox="../media/add-cube.png":::
 
 2. Click the **Cube** object in the Hierarchy window, then in the Inspector window configure
 its **Transform** component as follows
 
     * **Position**: X = 0, Y = -0.1, Z = 0.5
     * **Rotation**: X = 0, Y = 0, Z = 0
-    * **Scale**: X = 0.1, Y = 0.1, Z = 0.1
-    
-    :::image type="content" source="../media/changing-the-transform-values-of-the-cube.png" alt-text="Screenshot of Changing the transform values of the cube." lightbox="../media/changing-the-transform-values-of-the-cube.png":::
+    * **Scale**: X = 0.1, Y = 0.1, Z = 0.1  
+    :::image type="content" source="../media/cube-transform-values.png" alt-text="Screenshot of Changing the transform values of the cube." lightbox="../media/cube-transform-values.png":::
 
 3. Unity unit's 1 meter. We have updated cube's size to 10x10x10 cm, placed at 50cm from the headset position (0,0,0). 10cm below the eye level for comfortable interaction.
 
@@ -27,20 +26,15 @@ its **Transform** component as follows
     * **Object Manipulator (Script)** component
     * **NearInteractionGrabbable(Script)** component
 
-    MRTK's **ObjectManipulator** script makes an object movable, scalable, and rotatable
-using one or two hands. This script supports the direct manipulation input model as the
-Adding hand interaction to an object
-script enables the user to touch holograms directly with their hands.
+    MRTK's **ObjectManipulator** script makes an object movable, scalable, and rotatable using one or two hands. This script supports the direct manipulation input model as the Adding hand interaction to an object script enables the user to touch holograms directly with their hands.
 
-7. With the **Cube** still selected in the Hierarchy window, in the Inspector window ,click on
-**Add Component** button, then search and select **Object Manipulator script** to add the
-Object Manipulator script to the cube object.
+7. With the **Cube** still selected in the Hierarchy window, in the Inspector window ,click on **Add Component** button, then search and select **Object Manipulator script** to add the Object Manipulator script to the cube object.
 
-    :::image type="content" source="../media/adding-the-object-manipulator.png" alt-text="Screenshot of Adding the object manipulator." lightbox="../media/adding-the-object-manipulator.png":::
+    :::image type="content" source="../media/add-object-manipulator.png" alt-text="Screenshot of Adding the object manipulator." lightbox="../media/add-object-manipulator.png":::
 
 8. Repeat the same to add **Near Interaction Grabbable script** to the cube.
 
-    :::image type="content" source="../media/adding-the-near-interaction-grabbable.png" alt-text="Screenshot of Adding the Near Interaction Grabbable." lightbox="../media/adding-the-near-interaction-grabbable.png":::
+    :::image type="content" source="../media/add-near-interaction-grabbable.png" alt-text="Screenshot of Adding the Near Interaction Grabbable." lightbox="../media/add-near-interaction-grabbable.png":::
 
     > [!NOTE]
     > When you add a Object Manipulator (Script), in this case, the Constraint Manager (Script) is automatically added because Object Manipulator (Script) depends on it.
@@ -48,8 +42,7 @@ Object Manipulator script to the cube object.
 ## Move the cube in play mode
 
 * In the Unity toolbar, click the **Play** icon to enter play mode.
-Using the Unity in-editor input simulation, press the space bar on your keyboard to simulate hand input with the right hand.
- 
+    Using the Unity in-editor input simulation, press the space bar on your keyboard to simulate hand input with the right hand.
     :::image type="content" source="../media/move-the-cube.gif" alt-text="Screenshot of Move the cube." lightbox="../media/move-the-cube.gif":::
 
 ## Build your application to holoLens 2
@@ -59,8 +52,8 @@ Using the Unity in-editor input simulation, press the space bar on your keyboard
 1. In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window.
 
      In the **Build Settings** window, click the Add Open Scenes button to add your current scene to the **Scenes In Build** list, then click the **Build** button to open the Build Universal Windows Platform window:
-     
-   :::image type="content" source="../media/adding-scenes-in-build.png" alt-text="Screenshot of Adding Scenes in build." lightbox="../media/adding-scenes-in-build.png":::
+
+   :::image type="content" source="../media/add-scenes.png" alt-text="Screenshot of Adding Scenes in build." lightbox="../media/add-scenes.png":::
 
 2. In the Build Universal Windows Platform window, choose a suitable location to store your build, for example, *D:\MixedRealityLearning\Builds*, create a new folder and give it a suitable name, for example, GettingStarted, and then click the **Select Folder** button to start the build process:
 
@@ -82,10 +75,8 @@ Using the Unity in-editor input simulation, press the space bar on your keyboard
 
     > [!TIP]
     > If you're deploying to HoloLens (1st generation), select the **x86** architecture.
-
     > [!NOTE]
     > For HoloLens, you'll typically build for the ARM architecture. However, there's a [known issue](https://github.com/microsoft/MixedRealityToolkit-Unity) in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. The recommended workaround is to build for ARM64. If that isn't an option, go to **Edit** > **Project Settings** > **Player** > **Other Settings** and disable **Graphics Jobs**.
-
     > [!NOTE]
     > If you don't see Device as a target option, you may need to change the startup project for the Visual Studio solution from the IL2CPP project to the UWP project. To do this, in the Solution Explorer, right-click on YourProjectName (Universal Windows) and select **Set as StartUp Project**.
 
@@ -95,7 +86,6 @@ Using the Unity in-editor input simulation, press the space bar on your keyboard
 
     > [!IMPORTANT]
     > Before building to your device, the device must be in Developer Mode and paired with your development computer. Both of these steps can be completed by following [these instructions](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio).
-
     > [!TIP]
     > You can also deploy to the [HoloLens Emulator](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator) or create an [App Package](https://docs.microsoft.com/windows/uwp/packaging/packaging-uwp-apps) for sideloading.
 

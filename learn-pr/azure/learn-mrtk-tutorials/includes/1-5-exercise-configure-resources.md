@@ -12,7 +12,7 @@ desktop.
 
 Open the executable file **MixedRealityFeatureTool** from the downloaded folder to launch the Mixed Reality Feature Tool.
 
-:::image type="content" source="../media/opening-mixed-reality-feature-tool.png" alt-text="Screenshot of Opening MixedRealityFeatureTool." lightbox="../media/opening-mixed-reality-feature-tool.png":::
+:::image type="content" source="../media/open-mixed-reality-feature-tool.png" alt-text="Screenshot of Opening MixedRealityFeatureTool." lightbox="../media/open-mixed-reality-feature-tool.png":::
 
 [!INCLUDE[](includes/import-mrtk.md)]
 
