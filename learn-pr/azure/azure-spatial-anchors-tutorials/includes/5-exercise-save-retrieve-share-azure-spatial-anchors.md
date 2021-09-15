@@ -4,19 +4,19 @@ In this tutorial, you'll learn how to save Azure Spatial Anchors across multiple
 
 1. In the Hierarchy window, expand the **ButtonParent** object. Select the last four child button objects. In the Inspector window, check the checkbox next to the name field to make all the objects active.
 
-    :::image type="content" source="../media/asa-03-section-1-step-1-1.png" alt-text="Activating Objects" lightbox="../media/asa-03-section-1-step-1-1.png":::
+    :::image type="content" source="../media/activate-object.png" alt-text="Screenshot of Activating Objects" lightbox="../media/activate-object.png":::
 
 2. In the Hierarchy window, select the **ButtonParent** objects. Then in the Inspector window, locate the **GridObjectCollection** component and click the **Update Collection** button to update the position of all the ButtonParent object's child objects.
 
-    :::image type="content" source="../media/asa-03-section-1-step-1-2.png" alt-text="update position of ButtonParent" lightbox="../media/asa-03-section-1-step-1-2.png":::
+    :::image type="content" source="../media/update-position.png" alt-text="Screenshot of updating position of ButtonParent" lightbox="../media/update-position.png":::
 
-## Persist Azure Spatial Anchors between app sessions
+## Persist azure spatial anchors between app sessions
 
 In this section, you'll learn how to save and retrieve the Azure Anchor ID to and from the HoloLens's local disk. This will allow you to query Azure for the same anchor ID between different app sessions. It will enable the anchored holograms to be positioned at the same location as in the previous app session.
 
 1. In the Hierarchy window, expand the **ButtonParent** object and locate the two buttons named **SaveAzureAnchorIdToDisk** and **GetAzureAnchorIdFromDisk**:
 
-    :::image type="content" source="../media/asa-03-section-2-step-1-1.png" alt-text="Locate SaveAzure and GetAzure" lightbox="../media/asa-03-section-2-step-1-1.png":::
+    :::image type="content" source="../media/locate.png" alt-text="Screenshot describing Locate SaveAzure and GetAzure" lightbox="../media/locate.png":::
 
 2. Follow the same steps as in the configuring the buttons to operate the scene instructions from the previous tutorial to configure the **Interactable (Script)** component on each of the two buttons:
 
@@ -37,7 +37,7 @@ In this section, you'll learn how to save and retrieve the Azure Anchor ID to an
     > [!Note]
     > To fully restart the app, after exiting the immersive app view, the app window in the mixed reality home needs to be closed before relaunching it from the Start menu. For additional details, you can refer to the Using apps on HoloLens documentation.
 
-## Share Azure Spatial Anchors between devices
+## Share azure spatial anchors between devices
 
 In this section, you'll learn how to share the Azure Anchor ID between multiple devices. This will allow multiple devices to query Azure for the same anchor ID, allowing the anchored holograms to be spatially aligned. Spatial alignment, i.e., seeing the same holograms in the same physical location between multiple devices, is key to local shared experiences in the HoloLens 2.
 
@@ -45,7 +45,7 @@ There are many ways to transfer Azure Anchor IDs between devices. In this exampl
 
 1. In the Hierarchy window, expand the **ButtonParent** object. Locate the two buttons named **ShareAzureAnchorIdToNetwork** and **GetAzureAnchorIdFromNetwork**:
 
-     :::image type="content" source="../media/asa-03-section-3-step-1-1.png" alt-text="ShareAzure and GetAzure" lightbox="../media/asa-03-section-3-step-1-1.png":::
+     :::image type="content" source="../media/share-get-azure.png" alt-text="Screenshot of ShareAzure and GetAzure" lightbox="../media/share-get-azure.png":::
 
 2. Follow the same steps as in the configuring the buttons to operate the scene instructions from the previous tutorial to configure the **Interactable (Script)** component on each of the two buttons:
 

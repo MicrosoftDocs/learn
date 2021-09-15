@@ -1,6 +1,6 @@
 In this tutorial, you'll explore the various steps required to start and stop an Azure Spatial Anchors session and to create, upload, and download Azure Spatial Anchors on a single device.
 
-## Create and prepare the Unity project
+## Create and prepare the unity project
 
 In this section, you'll create a new Unity project and get it ready for MRTK development.
 
@@ -14,7 +14,7 @@ First, follow the Initializing your project and deploying your first application
 
 Then changing the Spatial Awareness Display Option to ensure the MRTK configuration profile for your scene is DefaultHoloLens2ConfigurationProfile and change the display options for the spatial awareness mesh to Occlusion.
 
-## Install in-built Unity packages and Import the tutorial assets
+## Install in-built unity packages and import the tutorial assets
 
 [!INCLUDE[](includes/switch-platform.md)]
 
@@ -29,7 +29,7 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
     * **Instructions** prefabs
     * **ParentAnchor** prefabs
 
-    :::image type="content" source="../media/asa-02-section-4-step-1-1.png" alt-text="Prefabs" lightbox="../media/asa-02-section-4-step-1-1.png":::
+    :::image type="content" source="../media/prefabs.png" alt-text="Screenshot of Prefabs" lightbox="../media/prefabs.png":::
 
     > [!Tip]
     > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by [toggling the Gizmos](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the off position, as shown in the image above.
@@ -39,7 +39,7 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
     * AR Anchor Manager (Script)
     * DisableDiagnosticsSystem (Script)
 
-    :::image type="content" source="../media/asa-02-section-5-step-1-1.png" alt-text="Add components to the MixedRealityToolkit" lightbox="../media/asa-02-section-5-step-1-1.png":::
+    :::image type="content" source="../media/add-component.png" alt-text="Screenshot of Adding components to the MixedRealityToolkit" lightbox="../media/add-component.png":::
 
     > [!Warning]
     > There's a known issue with ASA v2.9.0 and v2.10.0-preview.1 that requires two additional objects to be placed in the scene. Please use the Add Component button in the inspector window to add an AR Camera Manager (Script) and an AR Session (Script) to the **MixedRealityToolkit** object. Be sure to disable the Camera that is created automatically while adding the AR Camera Manager (Script) by unchecking the checkbox next to the Camera object in the inspector window. This issue will be addressed in the full release of ASA v2.10.0.
@@ -56,14 +56,14 @@ In this section, you'll add scripts to the scene to create a series of button ev
     * Assign the **ParentAnchor** object to the **None (Object)** field
     * From the **No Function** dropdown, select **AnchorModuleScript** > **StartAzureSession** () to set this function as the action to be executed when the event is triggered
 
-    :::image type="content" source="../media/asa-02-section-5-step-1-2.png" alt-text="Unity with StartAzureSession button OnClick event configured" lightbox="../media/asa-02-section-5-step-1-2.png":::
+    :::image type="content" source="../media/start-azure-session.png" alt-text="Screenshot of Unity with StartAzureSession button OnClick event configured" lightbox="../media/start-azure-session.png":::
 
 2. In the Hierarchy window, select the next button named **StopAzureSession**, then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
     * Assign the **ParentAnchor** object to the **None (Object)** field
     * From the **No Function** dropdown, select **AnchorModuleScript** > **StopAzureSession** () to set this function as the action to be executed when the event is triggered
 
-    :::image type="content" source="../media/asa-02-section-5-step-1-3.png" alt-text="Unity with StopAzureSession button OnClick event configured" lightbox="../media/asa-02-section-5-step-1-3.png":::
+    :::image type="content" source="../media/stop-azure-session.png" alt-text="Screenshot of Unity with StopAzureSession button OnClick event configured" lightbox="../media/stop-azure-session.png":::
 
 3. In the Hierarchy window, select the next button named **CreateAzureAnchor**, then in the Inspector window, configure the **Button Config Helper(Script)** component's **On Click ()** event as follows:
 
@@ -71,7 +71,7 @@ In this section, you'll add scripts to the scene to create a series of button ev
     * From the **No Function** dropdown, select **AnchorModuleScript** > **CreateAzureAnchor** () to set this function as the action to be executed when the event is triggered
     * Assign the **ParentAnchor** object to the empty **None (Game Object)** field to make it the argument for the **CreateAzureAnchor ()** function
 
-    :::image type="content" source="../media/asa-02-section-5-step-1-4.png" alt-text="Unity with CreateAzureAnchor button OnClick event configured" lightbox="../media/asa-02-section-5-step-1-4.png":::
+    :::image type="content" source="../media/create-azure-anchor.png" alt-text="Screenshot of Unity with CreateAzureAnchor button OnClick event configured" lightbox="../media/create-azure-anchor.png":::
 
 4. In the Hierarchy window, select the next button named **RemoveLocalAnchor**,then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
@@ -80,23 +80,23 @@ In this section, you'll add scripts to the scene to create a series of button ev
     * Assign the **ParentAnchor** object to the empty **None (Game Object)** field to make it the argument for the **RemoveLocalAnchor** () function
     Unity with **RemoveLocalAnchor** button **OnClick** event configured
 
-    :::image type="content" source="../media/asa-02-section-5-step-1-5.png" alt-text="Unity with RemoveLocalAnchor button OnClick event configured" lightbox="../media/asa-02-section-5-step-1-5.png":::
+    :::image type="content" source="../media/remove-local-anchor.png" alt-text="Screenshot of Unity with RemoveLocalAnchor button OnClick event configured" lightbox="../media/remove-local-anchor.png":::
 
 5. In the Hierarchy window, select the next button named **FindAzureAnchor**,then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
     * Assign the **ParentAnchor** object to the **None (Object)** field
     * From the No Function dropdown, select **AnchorModuleScript** > **FindAzureAnchor** () to set this function as the action to be executed when the event is triggered
 
-     :::image type="content" source="../media/asa-02-section-5-step-1-6.png" alt-text="Unity with FindAzureAnchor button OnClick event configured" lightbox="../media/asa-02-section-5-step-1-6.png":::
+     :::image type="content" source="../media/find-azure-anchor.png" alt-text="Screenshot of Unity with FindAzureAnchor button OnClick event configured" lightbox="../media/find-azure-anchor.png":::
 
 6. In the Hierarchy window, select the next button named **DeleteAzureAnchor**, then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click** () event as follows:
 
     * Assign the **ParentAnchor** object to the **None (Object)** field
     * From the No Function dropdown, select **AnchorModuleScript** > **DeleteAzureAnchor** () to set this function as the action to be executed when the event is triggered
 
-    :::image type="content" source="../media/asa-02-section-6-step-1-1.png" alt-text="Unity with DeleteAzureAnchor button OnClick event configured" lightbox="../media/asa-02-section-6-step-1-1.png":::
+    :::image type="content" source="../media/delete-azure-anchor.png" alt-text="Screenshot of Unity with DeleteAzureAnchor button OnClick event configured" lightbox="../media/delete-azure-anchor.png":::
 
-## Connect the scene to the Azure resource
+## Connect the scene to the azure resource
 
 In the Hierarchy window, select the **ParentAnchor** object, then in the Inspector window, locate the **Spatial Anchor Manager** (Script) component. Configure the **Credentials** section with the credentials from the Azure Spatial Anchors account created as part of the Prerequisites for this tutorial series:
 
@@ -104,9 +104,9 @@ In the Hierarchy window, select the **ParentAnchor** object, then in the Inspect
 * In the **Spatial Anchors Account Key** field, paste the primary or secondary **Access Key** from your Azure Spatial Anchors account
 * In the **Spatial Anchors Account Domain** field, paste the **Account Domain** from your Azure Spatial Anchors account
 
-    :::image type="content" source="../media/asa-02-section-7-step-1-1.png" alt-text="Unity with Spatial Anchor Manager configured" lightbox="../media/asa-02-section-7-step-1-1.png":::
+    :::image type="content" source="../media/spatial-anchor-manager.png" alt-text="Screenshot of Unity with Spatial Anchor Manager configured" lightbox="../media/spatial-anchor-manager.png":::
 
-## Try the basic behaviors of Azure Spatial Anchors
+## Try the basic behaviors of azure spatial anchors
 
 Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to build the project and deploy the app to your device.
 
@@ -138,15 +138,15 @@ In the previous sections, you learned the fundamentals of Azure Spatial Anchors.
     * Change **Scale X** to 1.1
     * Change **Scale Z** to 1.1
 
-    :::image type="content" source="../media/asa-02-section-8-step-1-1.png" alt-text="Position Parent Anchor" lightbox="../media/asa-02-section-8-step-1-1.png":::
+    :::image type="content" source="../media/parent-anchor.png" alt-text="Screenshot of Positioning Parent Anchor" lightbox="../media/parent-anchor.png":::
 
 2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **Rover** folder, then click-and-drag the **RoverExplorer_Complete** prefab into the Hierarchy window to add it to the scene:
 
-    :::image type="content" source="../media/asa-02-section-8-step-1-2.png" alt-text="Adding object to the Scene" lightbox="../media/asa-02-section-8-step-1-2.png":::
+    :::image type="content" source="../media/add-object.png" alt-text="Screenshot of Adding object to the Scene" lightbox="../media/add-object.png":::
 
 3. With the newly added RoverModule_Complete object still selected in the Hierarchy window, drag it onto the **ParentAnchor** object to make it a child of the ParentAnchor object:
 
-    :::image type="content" source="../media/asa-02-section-8-step-1-3.png" alt-text="Unity with RoverExplorer_Complete object set as child of ParentAnchor" lightbox="../media/asa-02-section-8-step-1-3.png":::
+    :::image type="content" source="../media/rover-explorer.png" alt-text="Screenshot of Unity with RoverExplorer_Complete object set as child of ParentAnchor" lightbox="../media/rover-explorer.png":::
 
     If you now rebuild the project and deploy the app to your device, you can now reposition the entire Rover Explorer experience by moving the resized cube.
 

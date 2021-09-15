@@ -4,4 +4,4 @@ Azure Spatial Anchors enable you to share anchors in the world across many devic
 
 Spatial mapping provides applications with the opportunity to present natural and familiar forms of interaction to the user; what could be more natural than placing down your phone on the desk?
 
-Constraining the placement of holograms (or more generally, any selection of spatial locations) to lie on surfaces provides a natural mapping from 3D (point in space) to 2D (point on surface). This reduces the amount of information the user needs to provide to the application and makes the user's interactions faster, easier, and more precise
+Constraining the placement of holograms (or more generally, any selection of spatial locations) to lie on surfaces provides a natural mapping from 3D (point in space) to 2D (point on surface). This reduces the amount of information the user needs to provide to the application and makes the user's interactions faster, easier, and more precise.
