@@ -2,7 +2,7 @@ In this module you learned how to position objects on the scene using transform,
 
 There are pre-configured components and features present in Mixed Reality Toolkit that can be used to automate a tedious task. Using these components can save up some of your time and assist you to reach your goal swiftly.
 
-## Next Steps
+## Next steps
 
 You can try placing objects on scene using transform or the shortcut symbols. You can also try to configure various types of solver and get to know how those work. Consider trying following interactions:
 
@@ -11,7 +11,7 @@ You can try placing objects on scene using transform or the shortcut symbols. Yo
 
 You can complete your mixed reality experience by building the Unity project and deploying to your preferred device. In Unity, ensure that you first save the scene and add to the Scenes in Build window within Build Settings.
 
-## Further Reading
+## Further reading
 
 * Learn more about different types of [Solvers](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver).
 * Explore various types of [Object Collection](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection).

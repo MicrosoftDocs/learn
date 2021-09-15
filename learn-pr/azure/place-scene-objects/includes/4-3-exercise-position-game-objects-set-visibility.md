@@ -7,7 +7,7 @@ Download the following Unity custom package:
 
 1. To Import a Unity custom package, In the Unity menu, select Assets > Import Package > Custom Package... to open the Import package... window:
 
-    ![Import custom package](../media/base-2-section-7-step-1-1.png)
+    :::image type="content" source="../media/base-2-section-7-step-1-1.png" alt-text="Import custom package" lightbox="../media/base-2-section-7-step-1-1.png":::
 
 2. In the Import package... window, select the MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unity package you downloaded and click the Open button:
 

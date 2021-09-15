@@ -1,12 +1,12 @@
 Solvers are one of the components of the Mixed Reality Toolkit, which provides some handy functions for your application. Here you'll learn to use two types of solvers and look at their functionalities.
 
-## Location of solvers in the MRTK
+## Location of solvers in the mrtk
 
 * The MRTK's solvers are located in the MRTK SDK folder. To see the available solvers in your project, in the Project window, navigate to **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **Utilities** > **Solvers**:
 
     ![Unity Project window with solvers folder selected](../media/base-5-section-1-step-1-1.png)
 
-## Use the Directional Indicator Solver to direct the user to objects
+## Use the directional indicator solver to direct the user to objects
 
 1. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder, click-and-drag the **Chevron** prefab into the Hierarchy window, and set it's Transform **Position** to X = 0, Y = 0, Z = 2 to position it near the RoverExplorer object:
 
@@ -32,7 +32,7 @@ Solvers are one of the components of the Mixed Reality Toolkit, which provides s
 
     ![Unity Play mode split view with DirectionalIndicator solver in use](../media/base-5-section-2-step-1-4.png)
 
-## Use the Tap to Place Solver to reposition objects
+## Use the tap to place solver to reposition objects
 
 1. In the Hierarchy window, select the RoverExplorer > **RoverAssembly** object, then in the Inspector window, use the **Add Component** button to add the **Tap To Place (Script)** component, and configure it as follows:
 
