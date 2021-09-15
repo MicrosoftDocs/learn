@@ -9074,6 +9074,46 @@
       "source_path": "learn-pr/azure/load-test-web-app-azure-devops/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn",
       "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/learn-publish-process/index.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/learn-publish-process/1-introduction.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/1-introduction",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/learn-publish-process/2-overview-of-luis.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/2-azure-function-development-overview",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/learn-publish-process/3-exercise-create-luis-service.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/3-create-triggers-bindings",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/learn-publish-process/4-exercise-add-intents-and-entities.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/4-connect-azure-services",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/learn-publish-process/5-exercise-train-luis-model.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/5-create-function-visual-studio-code",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/learn-publish-process/6-knowledge-check.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/6-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/learn-publish-process/7-summary.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/7-summary",
+    "redirect_document_id": false
     }
   ]
 }
