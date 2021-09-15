@@ -32,9 +32,9 @@ public void AddTestFluentassertion()
 
 :::image type="content" source="../media/fluent-assertion.png" alt-text="Screenshot in Visual Studio of AddTest method. A hover tip on the fluent assertion describes the And constraint of fluent assertions with a generic type of int. The description reads the integral number value is exactly the same as the expected value.":::
 
-## Data driven tests
+## Data-driven tests
 
-[Data driven tests](/visualstudio/test/how-to-create-a-data-driven-unit-test) allows you to run the same test method many times with various parameters. This test may also be referred to as parameterized testing or DDT. This ability allows you to avoid repetition in your code while also checking the same function with a whole set of different data inputs. You can input data in-line as shown in the example below or even connect to a database to get input.
+[Data-driven tests](/visualstudio/test/how-to-create-a-data-driven-unit-test) allow you to run the same test method many times with various parameters. This test may also be referred to as parameterized testing or DDT. This ability allows you to avoid repetition in your code while also checking the same function with a whole set of different data inputs. You can input data in-line as shown in the example below or even connect to a database to get input.
 
 ```csharp
 [DataTestMethod]
@@ -54,41 +54,44 @@ public void AddDataTests(int x, int y, int expected)
 
 ## Mocking
 
-* Sometimes the architecture of your code isn't modular enough to unit test it well. In order to isolate the parts of your code that you're testing without rewriting it you may want to use a mocking framework. Mocking helps you isolate the code you're trying to test by creating stubs or shims of that code's dependencies. Stubs and shims allow the code you're testing to make the required calls to its dependencies without actually testing the dependencies. This ability helps you focus a unit test down to precisely the behavior you want to test. There are many popular mocking frameworks available including [MOQ](https://github.com/Moq/moq4/wiki/Quickstart) and [Microsoft Fakes](/visualstudio/test/isolating-code-under-test-with-microsoft-fakes).
-* You can find a [full tutorial for Microsoft Fakes here](/visualstudio/test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing), but let's explore a short overview.
-  * Microsoft Fakes is only available with Visual Studio Enterprise.
-  * Navigate to the test project you want to isolate in the Solution Explorer. Right-click on the project under the Project node that you want to mock and select 'Add Fakes Assembly'.
+Sometimes the architecture of your code isn't modular enough to unit test it well. In order to isolate the parts of your code that you're testing without rewriting it you may want to use a mocking framework. Mocking helps you isolate the code you're trying to test by creating stubs or shims of that code's dependencies. Stubs and shims allow the code you're testing to make the required calls to its dependencies without actually testing the dependencies. This ability helps you focus a unit test down to precisely the behavior you want to test. There are many popular mocking frameworks available including [MOQ](https://github.com/Moq/moq4/wiki/Quickstart) and [Microsoft Fakes](/visualstudio/test/isolating-code-under-test-with-microsoft-fakes).
 
-   :::image type="content" source="../media/add-fakes.png" alt-text="Screenshot in Visual Studio of Solution Explorer showing the projects node under the LearnMyCalculator.Tests project expanded. The right-click menu s open on the LearnMyCalculatorApp node underneath projects. The command Add Fakes Assembly is selected.":::
+You can find a [full tutorial for Microsoft Fakes here](/visualstudio/test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing), but let's explore a short overview.
 
-  * Add the using statements to the test file in which you'd like to use shims and stubs.
+Microsoft Fakes is only available with Visual Studio Enterprise.
 
-    ```csharp
-    using LearnMyCalculatorApp.Fakes;
-    using Microsoft.QualityTools.Testing.Fakes;
-    ```
+Navigate to the test project you want to isolate in the Solution Explorer. Right-click on the project under the Project node that you want to mock and select 'Add Fakes Assembly'.
 
-  * Now you can create stubs or shims for different parts of your code like the example below. In the below test I don't want to really call the Calculator's `Divide` method, I just want to pretend for now that it always returns `1` so I can focus on testing other parts of my code. The shim allows me to do that.
+:::image type="content" source="../media/add-fakes.png" alt-text="Screenshot in Visual Studio of Solution Explorer showing the projects node under the LearnMyCalculator.Tests project expanded. The right-click menu s open on the LearnMyCalculatorApp node underneath projects. The command Add Fakes Assembly is selected.":::
 
-    ```csharp
-    [TestMethod]
-    public void DivideByZeroWithFakesShim()
+Add the using statements to the test file in which you'd like to use shims and stubs.
+
+```csharp
+using LearnMyCalculatorApp.Fakes;
+using Microsoft.QualityTools.Testing.Fakes;
+```
+
+Now you can create stubs or shims for different parts of your code like the example below. In the below test I don't want to really call the Calculator's `Divide` method, I just want to pretend for now that it always returns `1` so I can focus on testing other parts of my code. The shim allows me to do that.
+
+```csharp
+[TestMethod]
+public void DivideByZeroWithFakesShim()
+{
+    using (ShimsContext.Create())
     {
-        using (ShimsContext.Create())
-        {
-            // Define what the Divide shim should return
-            ShimCalculator.AllInstances.DivideInt32Int32 = (x, y, z) => { return 1; };
-    
-            var calculator = new Calculator();
+        // Define what the Divide shim should return
+        ShimCalculator.AllInstances.DivideInt32Int32 = (x, y, z) => { return 1; };
+
+        var calculator = new Calculator();
             
-            // This really calls the DivideInt32Int32
-            // defined above to always return 1
-            // instead of actually calling Divide
-            var actual = calculator.Divide(1, 0); 
-            Assert.AreEqual(1, actual); // This assert will pass since the Divide method above is a shim that will return 1
-        }
+        // This really calls the DivideInt32Int32
+        // defined above to always return 1
+        // instead of actually calling Divide
+        var actual = calculator.Divide(1, 0); 
+        Assert.AreEqual(1, actual); // This assert will pass since the Divide method above is a shim that will return 1
     }
+}
     
-    ```
+```
 
 Writing good tests can take a while to learn, just like writing good code. If you would like to learn more about different testing schools of thought, see the [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/).

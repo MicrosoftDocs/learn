@@ -1,16 +1,8 @@
-In the last exercise, you added product code for the calculator app and a first test method. Now you'll keep building out your test project.
-
-In this exercise, we'll build out a test suite and exercise the Test Explorer.
-
-* Add more tests
-* Filter to failing test in Test Explorer
-* Use the Group By options to customize the test view
-* Debug a test
-* Red, green, refactor
+In the last exercise, you added product code for the calculator app and a first test method. Now you'll keep building out your test project with a test suite.
 
 ## Add more tests
 
-Next, you are looking to add more tests to ensure you test all the functionality of your calculator product code.
+Add more tests to ensure that you test all the functionality of your calculator product code.
 
 1. Add the following test method to your test class:
 
@@ -29,61 +21,65 @@ Next, you are looking to add more tests to ensure you test all the functionality
     }
     ```
 
-   The code above demonstrates a simple test for inputting two numbers into the `Add` method and asserting a result.
+   The preceding code demonstrates a simple test for entering two numbers into the `Add` method and asserting a result.
 
    **Challenge**: Can you create similar tests for the `Subtract`, `Multiply`, and `Divide` methods?
-   Now you should have tests for the `Subtract`, `Multiply`, and `Divide` methods.
-
+   
    > [!NOTE]
-   > If you want to check your code, see the [expected examples](#expected-examples-for-subtract-multiply-and-divide-tests) section at the end of this page.
+   > If you want to check your code, see the section about [expected examples](#expected-examples-for-subtract-multiply-and-divide-tests) later in this unit.
 
-1. Add another test for the `Divide` method that fails. The `Divide` method in our calculator cannot yet handle dividing by zero. Create a test method that inputs zero as the divisor. Run the new test to confirm it fails.
-   It doesn't matter what is in your assert statement since an uncaught exception fails the test. For now, let's say the `Divide` method should return null when dividing by zero. What assert should you use?
+1. Add another test for the `Divide` method that fails. The `Divide` method in our calculator can't yet handle dividing by zero. Create a test method that enters zero as the divisor. Run the new test to confirm that it fails.
+
+   It doesn't matter what's in your assert statement, because an uncaught exception fails the test. For now, let's say the `Divide` method should return null when dividing by zero. What assertion should you use?
+   
    > [!NOTE]
-   > If you want to check your code, see the [expected divide by zero test](#expected-divide-by-zero-test) at the end of this page.
+   > If you want to check your code, see the [expected divide-by-zero test](#expected-divide-by-zero-test) later in this unit.
 
-Now that you're accumulating a test suite, let's learn more about managing multiple tests with the Visual Studio Test Explorer.
+Now that you're accumulating a test suite, let's learn more about managing multiple tests by using Visual Studio Test Explorer.
 
 ## Filter to failing tests
 
-In a larger project, you might have hundreds of tests running in the Test Explorer, to quickly identify which tests failed, you can use the filter functionality.
+In a larger project, you might have hundreds of tests running in Test Explorer. To quickly identify which tests failed, you can use the filter functionality.
 
-1. Select the "failed test button" in the Test Explorer toolbar, to show only failed tests. This button also summarizes how many tests are failing in the current view.
+1. On the Test Explorer toolbar, select the button for failed tests (the one that has a red X). This button also summarizes how many tests are failing in the current view. In the following example, the failed test filter button has the number 2 on it to indicate there are 2 failed tests in the current view.
 
-   :::image type="content" source="../media/test-explorer-filter.png" alt-text="Screenshot in Visual Studio of Test Explorer with the top failed test filter button highlighted, but not depressed. The failed test filter button also has the number 2 on it to indicate there are 2 failed tests in the current view.":::
+   :::image type="content" source="../media/test-explorer-filter.png" alt-text="Screenshot that shows the button for failed tests in Test Explorer.":::
 
-   The test view will filter down to only the failing tests.
+   The test view is filtered to show only the failing tests. In the following example, only two tests appear in the list of tests because the other four tests (the passing ones) are now filtered out.
 
-   :::image type="content" source="../media/test-explorer-filter-fail.png" alt-text="Screenshot in Visual Studio of Test Explorer with the top failed test filter button selected. Only two failing tests show in the test list view since the other four passing tests are now filtered.":::
+   :::image type="content" source="../media/test-explorer-filter-fail.png" alt-text="Screenshot that shows a list of tests filtered to include only failed tests.":::
 
-1. Select the "test flask button" to go back to viewing tests with all outcomes. This button also lists the total number of tests and how many tests are visible in the current view as a fraction. There are only two tests visible out of a total of six tests with the current filtering.
+1. Select the flask button to go back to viewing tests with all outcomes. This button also lists the total number of tests and how many tests are visible in the current view as a fraction. There are only two tests visible out of a total of six tests with the current filtering.
 
-   :::image type="content" source="../media/test-explorer-total-summary.png" alt-text="Screenshot in Visual Studio of Test Explorer with the top total test filter button highlighted. This button shows the total number of tests and how many are appearing in the display with a fraction that says 2/6.":::
+   :::image type="content" source="../media/test-explorer-total-summary.png" alt-text="Screenshot that shows the flask button with a fraction that indicates two out of six."
 
 ## Use the Group By options
 
-By using groupings it makes it easier to work with large amount of tests. Let's explore some of the Group By settings.
+Using grouping makes it easier to work with a large number of tests. Let's explore some of the settings for grouping.
 
-1. Try a new grouping by de-selecting the presets and only grouping by State (passed, failed, not run, and so on) and then Class.
+1. Select **Group By**.
+1. Try a new grouping by clearing the presets and only grouping by state (passed, failed, not run, and so on) and then class.
 
-   :::image type="content" source="../media/test-explorer-groupby-state.png" alt-text="Screenshot in Visual Studio of Test Explorer with the top Group By button highlighted. The Group By menu is open and State is selected as the first hierarchy level of the test list and then Class.":::
+   :::image type="content" source="../media/test-explorer-groupby-state.png" alt-text="Screenshot that shows Group By button in Test Explorer, with hierarchy levels selected.":::
 
-   Once you click outside the menu, the new Group By selection is applied to the test view.
+1. Click outside the menu. The new **Group By** selection is applied to the test view. 
 
-   :::image type="content" source="../media/test-explorer-groupby-state-class.png" alt-text="Screenshot in Visual Studio of Test Explorer where the test list now organizes tests into a hierarchy of the State grouping and then the class grouping. The first group is of failed tests and then it's organized by class within that group. The second group is passed tests that are also then organized within that group by class.":::
+   In the following example, the first group is of failed tests, and then it's organized by class within that group. The second group is passed tests that are also then organized within that group by class.
+
+   :::image type="content" source="../media/test-explorer-groupby-state-class.png" alt-text="Screenshot that shows the tests in Test Explorer organized into a hierarchy of state grouping and then class grouping.":::
 
 ## Debug a test
 
-Sometimes, it's not obvious why a test fails. You might need to do a closer inspection by setting a breakpoint and _debug_ the test while it's running.
+Sometimes, it's not obvious why a test fails. You might need to do a closer inspection by setting a breakpoint and debug the test while it's running.
 
 1. Set a breakpoint in `DivideByZeroTest` at the `Assert` line by clicking in the margin of the code editor.
 1. Right-click in the test method in the code editor and select **Debug Test**.
 
-   :::image type="content" source="../media/debug-divide-zero.png" alt-text="Screenshot in Visual Studio of editor window inside DivideByZero test method. A breakpoint is set on the Assert statement. The right-click menu is open and debug test is selected.":::
+   :::image type="content" source="../media/debug-divide-zero.png" alt-text="Screenshot of the editor window with a breakpoint set on the Assert statement, and with Debug Test selected on the right-click menu.":::
 
-   You'll notice the debugger doesn't reach your breakpoint because it fails on the `System.DivideByZeroException` as expected.
+   The debugger doesn't reach your breakpoint because it fails on the `System.DivideByZeroException`, as expected. The following screenshot shows a divide by zero system exception in the midst of debugging. The exception appears in a callout above the Divide method on the return statement.
 
-   :::image type="content" source="../media/debug-exception.png" alt-text="Screenshot in Visual Studio throwing a divide by zero system exception in the midst of debugging. The exception appears in a call out above the Divide method on the return statement.":::
+   :::image type="content" source="../media/debug-exception.png" alt-text="Screenshot of Visual Studio throwing a divide by zero system exception.":::
 
 ## Red, green, refactor
 
@@ -109,12 +105,13 @@ Red, green, refactor is all about starting with a failing test, to see the test 
     }
     ```
 
-1. Rerun your `DivideByZero` test to confirm it now passes! The `Divide` method now returns null when the divisor is zero. Note the output that warns the user they cannot divide by zero appears in the test detail summary in the Test Explorer.
+1. Rerun your `DivideByZero` test to confirm it now passes! The `Divide` method now returns null when the divisor is zero. Note the output that warns the user they cannot divide by zero appears in the test detail summary in the Test Explorer. The test details include the Console.Writeline output.
 
-   :::image type="content" source="../media/test-explorer-output.png" alt-text="Screenshot in Visual Studio of Test Explorer showing passing Divide By Zero Test. The lower pane of the Test Explorer window shows the test details including the Console.Writeline output.":::
+   :::image type="content" source="../media/test-explorer-output.png" alt-text="Screenshot of Test Explorer showing passing Divide By Zero Test and the test details.":::
 
-   Thereby your test went from "Red" to "Green" as you added  product code to get the test to pass.
-   Now that you have working product code, and a test, it's time to refactor your product code to create an even better and more robust solution, if possible.
+   Your test went from "Red" to "Green" as you added  product code to get the test to pass.
+
+1. Now that you have working product code and a test, it's time to refactor your product code to create an even better and more robust solution, if possible.
 
   > [!TIP]
   > Consider scenarios that might need to be updated because of your recent changes. Feel free to add comments to describe new functionality.
@@ -164,7 +161,7 @@ public void DivideTest()
 }
 ```
 
-## Expected divide by zero test
+## Expected divide-by-zero test
 
 ```csharp
 [TestMethod]
