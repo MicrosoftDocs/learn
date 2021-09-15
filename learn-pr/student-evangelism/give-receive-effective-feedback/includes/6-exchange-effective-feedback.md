@@ -21,14 +21,11 @@ Framing feedback appropriately is important if you want to create a culture of t
 When you provide feedback, you can:
 
 - Ask others how they’d like to receive feedback: written, live, privately, or in a group.
-
 - Reassure them that you have confidence in their ability to progress and improve their skills.
-
 - Provide specific feedback on areas of improvement.
-
 - Give directions and guidance on the next steps.
 
-Setbacks are a natural step in the path of learning. To recover from a setback, recipients must accept and understand their areas of weakness and then apply corrective measures. The feedback you provide should give them the tools they need to bridge any skill or knowledge gaps.
+Setbacks are natural occurrences in the path of learning. To recover from a setback, people must accept and understand their areas of weakness and then apply corrective measures. The feedback you provide should give them the tools they need to bridge any skill or knowledge gaps.
 
 ### Receive feedback
 
@@ -37,17 +34,13 @@ Just as you need to do a bit of digging to understand the root causes of error m
 Sometimes the feedback you get:
 
 - Isn’t packaged or worded in a way that helps you know how to act.
-
 - Causes you to feel defensive or discouraged.
-
 - Reinforces your feelings of not belonging.
 
 When you receive feedback, you can:
 
 - Ask for clarifying feedback when it isn’t specific or clear enough for you.
-
 - Seek another opinion or have someone help unpack the feedback with you.
-
 - Reset expectations when it’s clear that you took on a task or project that you no longer can commit to.
 
 :::image type="content" source="../media/6-take-steps.png" alt-text="Cartoon-style drawing of a feedback recipient asking the reviewer a clarifying question, 'Is there another step I could take?'" border="false":::
@@ -70,28 +63,17 @@ If you’re in a situation where you need to send your feedback immediately and 
 
 You've seen how providing effective, wise feedback is an essential skill. You now want to improve such skills. Some tips that you can follow are:
 
-- Ask whether this is a good time to meet. Recognize that feedback that’s untimely isn’t as useful.
-
+- Ask whether this is a good time to meet. Recognize that untimely feedback might be neither welcome nor useful.
 - Ask whether they prefer to receive feedback in a specific form. Some might prefer one-on-one "live" feedback, and others might find asynchronous written feedback preferable. For instance, a neurodiverse developer might want time to sit and process feedback on their own before discussing it with the reviewer.
-
 - Ask whether they’re open to other strategies.
-
 - Remember to provide specifics. Feedback that’s too vague is often unhelpful.
-
 - Focus on how to change the process, not just what’s wrong with the outcome.
-
 - Be inclusive, positive, and constructive.
-
 - Help the person reflect on the areas of improvement at an individual level.
-
 - Act as a mirror to the person to give perspective on the experience.
-
 - Remind them that they have the potential to continue, they do belong, and they can shape their future.
-
 - Think about the other person’s perspective by considering other factors that could affect their energy and engagement.
-
 - Be courteous and kind. Remember to focus your review comments on the task or behavior and not the person.
-
 - Explain your reasoning. This is especially important in code reviews when you provide feedback about logical or functional errors.
 
 Wise feedback is the first step toward encouraging people to be open to your comments. Reinforce the high expectations that you have for them and emphasize your confidence that they can meet those high expectations.
