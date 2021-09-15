@@ -1,4 +1,4 @@
-When you started providing feedback to your team, you noticed that some people were more receptive than others, and they had a marked improvement in their coding skills. However, some of the developers have let you know that your feedback wasn’t very useful, and they were hesitant to submit their code for further reviews. 
+In our scenario, when you started giving your team feedback, you noticed that some people were more receptive than others. And you noticed that the more receptive people had a marked improvement in their coding skills. By contrast, some team members let you know that your feedback wasn’t very useful, and they've been hesitant to submit their code for further reviews. 
 
 In this unit, you’ll explore ways of providing and receiving feedback more effectively.
 
@@ -6,7 +6,7 @@ In this unit, you’ll explore ways of providing and receiving feedback more eff
 
 Feedback can sometimes be difficult to deliver. How you deliver feedback is a key factor in how it’s received and implemented. You might be tempted to soften criticisms with positive words or praise, or to omit negative feedback altogether. Then again, you might feel that instead of underplaying the mistakes, you can benefit the person more by being blunt and honest.
 
-:::image type="content" source="../media/6-deliver-feedback.png" alt-text="Two-panel drawing of a reviewer, recipient, and box, one empty to denote ineffective feedback, and the other with tools to denote effective feedback." border="false":::
+:::image type="content" source="../media/6-deliver-feedback.png" alt-text="Two-panel drawing, each with a reviewer, recipient, and box. Empty box denotes ineffective feedback; box full of tools denotes effective feedback." border="false":::
 
 By being specific and giving recipients concrete steps to try next, you pass on actionable goals while facilitating their path to success. You can implement the following strategies to exchange feedback in a constructive manner.
 
@@ -22,7 +22,7 @@ When you provide feedback, you can:
 
 - Ask others how they’d like to receive feedback: written, live, privately, or in a group.
 
-- Reassure them that you have confidence in their abilities to progress and improve their skills.
+- Reassure them that you have confidence in their ability to progress and improve their skills.
 
 - Provide specific feedback on areas of improvement.
 
@@ -32,7 +32,7 @@ Setbacks are a natural step in the path of learning. To recover from a setback, 
 
 ### Receive feedback
 
-Just as you need to do a bit of digging to understand the root causes of error messages, you might need to unpack feedback you receive from others to extract the underlying meaning. 
+Just as you need to do a bit of digging to understand the root causes of error messages, you might need to unpack the feedback you receive from others to extract the underlying meaning. 
 
 Sometimes the feedback you get:
 
