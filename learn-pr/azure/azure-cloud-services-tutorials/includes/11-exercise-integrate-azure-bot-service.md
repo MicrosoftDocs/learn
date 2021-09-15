@@ -25,20 +25,20 @@ The **Count** function queries from the **Table storage** all **TrackedObjects**
 
 1. To deploy this **Azure Function** directly from **Visual Studio**, open the downloaded AzureFunction_TrackedObjectsService folder and open the present **.sln** file with visual studio
 
-    :::image type="content" source="../media/azurefunction-trackobjectsservice-folder.png" alt-text="Screenshot of AzureFunction_TrackedObjectsService folder" lightbox="../media/azurefunction-trackobjectsservice-folder.png":::
+    :::image type="content" source="../media/azure-track-object.png" alt-text="Screenshot of AzureFunction_TrackedObjectsService folder" lightbox="../media/azure-track-object.png":::
 
 2. Once file loaded in visual studio, Right click over **Tracked object service** in solution explorer and select publish
 
-    :::image type="content" source="../media/publish-tracked-object-service.png" alt-text="Screenshot of Publish Tracked object service" lightbox="../media/publish-tracked-object-service.png":::
+    :::image type="content" source="../media/publish-track-object.png" alt-text="Screenshot of Publish Tracked object service" lightbox="../media/publish-track-object.png":::
 
 3. The publish pop up will be displayed and ask for target platform
 Select Azure and click on **Next** button
 
-    :::image type="content" source="../media/selcting-target-platform.png" alt-text="Screenshot of Select target platform" lightbox="../media/selcting-target-platform.png":::
+    :::image type="content" source="../media/select-target-platform.png" alt-text="Screenshot of Select target platform" lightbox="../media/select-target-platform.png":::
 
 4. In specific target, select **Azure Function App(Windows)** and click on **Next** button
 
-    :::image type="content" source="../media/selcting-target-host.png" alt-text="Screenshot of Select target host" lightbox="../media/selcting-target-host.png":::
+    :::image type="content" source="../media/select-target-host.png" alt-text="Screenshot of Select target host" lightbox="../media/select-target-host.png":::
 
 5. If you're not logged in to Azure, login through visual studio and the window look like
 
@@ -55,7 +55,7 @@ Select Azure and click on **Next** button
 
 7. Once Function App created click on **Finish** button
 
-    :::image type="content" source="../media/finish-creating-function-app.png" alt-text="Screenshot of Finish creating Function App" lightbox="../media/finish-creating-function-app.png":::
+    :::image type="content" source="../media/finish-create-function-app.png" alt-text="Screenshot of Finish creating Function App" lightbox="../media/finish-create-function-app.png":::
 
 8. A publish pop up will be opened after the finish process, click on **Publish** button to publish the function and wait for publish
 
@@ -75,13 +75,13 @@ You can download the latest releases from the [GitHub repository](https://github
 
 1. Once the **Bot Framework Composer** is installed, start the application and you should see this interface:
 
-    :::image type="content" source="../media/bot-framwork-composer-home.png" alt-text="Screenshot of Bot Framework Composer Home" lightbox="../media/bot-framwork-composer-home.png":::
+    :::image type="content" source="../media/bot-frame-work-composer.png" alt-text="Screenshot of Bot Framework Composer Home" lightbox="../media/bot-frame-work-composer.png":::
 
 2. We have prepared a bot composer project, which provides the needed dialogues and triggers for this tutorial. Download the Bot Framework Composer project: [BotComposerProject_TrackedObjectsBot.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/Azure-cloud-services-v2.4.0/BotComposerProject_TrackedObjectsBot.zip) and extract it to your hard drive.
 
 3. On the top bar click on **Open** and select the Bot Framework project you've downloaded which is named **TrackedObjectsBot**. After the project is fully loaded, you should see the project ready.
 
-    :::image type="content" source="../media/bot-framwork-composer-and-trackedobjectbot-project.png" alt-text="Screenshot of Bot Framework Composer with TrackedObjectsBot project opened" lightbox="../media/bot-framwork-composer-and-trackedobjectbot-project.png":::
+    :::image type="content" source="../media/track-object-bot.png" alt-text="Screenshot of Bot Framework Composer with TrackedObjectsBot project opened" lightbox="../media/track-object-bot.png":::
 
     Let's focus on the left side where you can see the **Dialogs Panel**. There you've one dialog named **TrackedObjectsBot** under which you can see several **Triggers**.
 
@@ -93,7 +93,7 @@ You can download the latest releases from the [GitHub repository](https://github
 
 * Greeting is the entry point of the chat *bot* when ever a *user* initiates a conversation.
 
-    :::image type="content" source="../media/trackedobjectbot-project-dialog-trigger.png" alt-text="Screenshot of TrackedObjectsBot project dialog trigger Greeting" lightbox="../media/trackedobjectbot-project-dialog-trigger.png":::
+    :::image type="content" source="../media/track-object-bot-greet.png" alt-text="Screenshot of TrackedObjectsBot project dialog trigger Greeting" lightbox="../media/track-object-bot-greet.png":::
 
 #### AskingForCount
 
@@ -103,7 +103,7 @@ These are the trigger phrases:
     >* count me all
     >* how many are stored
 
-    :::image type="content" source="../media/trackedobjectbot-project-dialog-trigger-askforcount.png" alt-text="Screenshot of TrackedObjectsBot project dialog trigger AskForCount" lightbox="../media/trackedobjectbot-project-dialog-trigger-askforcount.png":::
+    :::image type="content" source="../media/ask-for-count.png" alt-text="Screenshot of TrackedObjectsBot project dialog trigger AskForCount" lightbox="../media/ask-for-count.png":::
 
     Thanks to [LUIS](/composer/how-to-use-luis) the *user* doesn't have to ask the phrases in that exact way, which allows a natural conversation for the *user*.
 
@@ -113,14 +113,14 @@ These are the trigger phrases:
 
 * This dialogue is triggered if the input from the *user* doesn't fit any other trigger condition and responses the user with trying his question again.
 
-    :::image type="content" source="../media/trackedobjectbot-project-dialog-trigger-unknown-intent.png" alt-text="Screenshot of TrackedObjectsBot project dialog trigger Unknown Intent" lightbox="../media/trackedobjectbot-project-dialog-trigger-unknown-intent.png":::
+    :::image type="content" source="../media/unknown-intent.png" alt-text="Screenshot of TrackedObjectsBot project dialog trigger Unknown Intent" lightbox="../media/unknown-intent.png":::
 
 #### FindEntity
 
 * The last dialogue is more complex with branching and storing data in the *bots* memory.
 It asks the user for the *name* of the **Tracked Object** it wants to know more information about, performs a query to the **Find** Azure Function, and uses the response to proceed with the conversation.
 
-    :::image type="content" source="../media/trackedobjectbot-project-dialog-trigger-findentity.png" alt-text="Screenshot of TrackedObjectsBot project dialog trigger FindEntity" lightbox="../media/trackedobjectbot-project-dialog-trigger-findentity.png":::
+    :::image type="content" source="../media/find-entity.png" alt-text="Screenshot of TrackedObjectsBot project dialog trigger FindEntity" lightbox="../media/find-entity.png":::
 
     If the **Tracked Object** isn't found, the user is informed and the conversation ends. When the **Tracked Object** in question is found, the boot will check what properties are available and report on them.
 
@@ -130,11 +130,11 @@ It asks the user for the *name* of the **Tracked Object** it wants to know more 
 
 2. On the dialog panel click on **AskingForCount** and locate the *Send an HTTP request* action, here you can see the field **URL** which you need to change the correct URL for the **Count** function endpoint.
 
-    :::image type="content" source="../media/trackedobjectbot-project-dialog-trigger-askingforcount-endpoint-configuration.png" alt-text="Screenshot of TrackedObjectsBot project AskingForCount dialog trigger endpoint configuration" lightbox="../media/trackedobjectbot-project-dialog-trigger-askingforcount-endpoint-configuration.png":::
+    :::image type="content" source="../media/ask-for-count-end-point.png" alt-text="Screenshot of TrackedObjectsBot project AskingForCount dialog trigger endpoint configuration" lightbox="../media/ask-for-count-end-point.png":::
 
 3. Finally, look for the **FindEntity** trigger and locate the *Send an HTTP request* action, in the **URL** field change the URL to the **Find** function endpoint.
 
-    :::image type="content" source="../media/trackedobjectbot-project-dialog-trigger-findentity-endpoint-configuration.png" alt-text="Screenshot of TrackedObjectsBot project FindEntity dialog trigger endpoint configuration" lightbox="../media/trackedobjectbot-project-dialog-trigger-findentity-endpoint-configuration.png":::
+    :::image type="content" source="../media/find-entity-end-point.png" alt-text="Screenshot of TrackedObjectsBot project FindEntity dialog trigger endpoint configuration" lightbox="../media/find-entity-end-point.png":::
 
     With everything set you're now ready to deploy the Bot. Since you've Bot Framework composer installed, you can publish it directly from there.
 
@@ -149,7 +149,7 @@ It asks the user for the *name* of the **Tracked Object** it wants to know more 
 
 1. In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder.
 
-    :::image type="content" source="../media/chatbotmanager-prefab-selected.png" alt-text="Screenshot of Unity Project window with ChatBotManager prefab selected" lightbox="../media/chatbotmanager-prefab-selected.png":::
+    :::image type="content" source="../media/chat-bot-manager-prefab.png" alt-text="Screenshot of Unity Project window with ChatBotManager prefab selected" lightbox="../media/chat-bot-manager-prefab.png":::
 
 2. From there move the prefab **ChatBotManager** into the scene Hierarchy.
 
@@ -159,17 +159,17 @@ In the Inspector, you'll see that there is an empty **Direct Line Secret Key** f
     > [!TIP]
     > You can retrieve the *secret key* from the Azure portal by looking for the resource of type **Bot Channels Registration** you've created in the first part of this tutorial.
 
-    :::image type="content" source="../media/newly-added-chatbotmanager-prefab-selected.png" alt-text="Screenshot of Unity with newly added ChatBotManager prefab still selected" lightbox="../media/newly-added-chatbotmanager-prefab-selected.png":::
+    :::image type="content" source="../media/add-chat-bot-manager.png" alt-text="Screenshot of Unity with newly added ChatBotManager prefab still selected" lightbox="../media/add-chat-bot-manager.png":::
 
 4. Now you'll connect the **ChatBotManager** object with the **ChatBotController** component that is attached to the **ChatBotPanel** object. In the Hierarchy select the **ChatBotPanel** and you'll see an empty **Chat Bot Manager** field, drag from the Hierarchy the **ChatBotManager** object into the empty **Chat Bot Manager** field.
 
-    :::image type="content" source="../media/chatbotpanel-configured.png" alt-text="Screenshot of Unity with ChatBotPanel configured" lightbox="../media/chatbotpanel-configured.png":::
+    :::image type="content" source="../media/chat-bot-panel-configure.png" alt-text="Screenshot of Unity with ChatBotPanel configured" lightbox="../media/chat-bot-panel-configure.png":::
 
 5. Next you need a way to open the **ChatBotPanel** so that the user can interact with it. From the Scene window, you may have noticed that there is a *Chat Bot* side button on the **MainMenu** object, you'll use it to solve this problem.
 
 6. In the Hierarchy locate **RootMenu** > **MainMenu** > **SideButtonCollection** > **ButtonChatBot** and locate in the Inspector the *ButtonConfigHelper* script. There you'll see an empty slot on the **OnClick()** event callback. Drag and drop the **ChatBotPanel** to the event slot, from the dropdown list navigate *GameObject*, then select in the sub menu *SetActive (bool)* and enable the checkbox.
 
-    :::image type="content" source="../media/buttonchatbot-configured.png" alt-text="Screenshot of Unity with ButtonChatBot configured" lightbox="../media/buttonchatbot-configured.png":::
+    :::image type="content" source="../media/button-chat-bot-configure.png" alt-text="Screenshot of Unity with ButtonChatBot configured" lightbox="../media/button-chat-bot-configure.png":::
 
     Now the chat bot can be stared from the main menu and with that the scene is ready for use.
 
