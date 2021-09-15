@@ -33,7 +33,7 @@ To author a JSON device capability model file, use the [Digital Twins Definition
 
 If the device model already exists in the [device model repository](https://github.com/Azure/iot-plugandplay-models), then IoT Central can download the model and generate a device template the first time a device connects. In this scenario, you'll still need to create any cloud properties, custom device dashboards, and forms that your application needs.
 
-The REST API doesn't use a standard device model when it creates a device template. The REST API uses an extended version that lets you include IoT Central specific definitions such as cloud properties. To learn more about the format of the JSON file the REST API uses, see the [Device Templates - Create](/rest/api/iotcentral/1.0/devicetemplates/create) documentation.
+The REST API doesn't use a standard device model when it creates a device template. The REST API uses an extended version that lets you include IoT Central specific definitions such as cloud properties. To learn more about the format of the JSON file the REST API uses, see the [Device Templates - Create](/rest/api/iotcentral/1.0dataplane/device-templates/create) documentation.
 
 ## Publish a device template
 
@@ -83,7 +83,7 @@ IoT Central can generate simulated devices from a device template. These simulat
 
 ## Use the REST API to manage your devices
 
-The [IoT Central REST API for devices](/rest/api/iotcentral/1.0/devices) lets you:
+The [IoT Central REST API for devices](/rest/api/iotcentral/1.0dataplane/devices) lets you:
 
 - Get a list of the devices in the application
 - Get a device by ID
