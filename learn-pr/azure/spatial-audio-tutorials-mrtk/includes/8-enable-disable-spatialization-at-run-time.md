@@ -2,7 +2,7 @@
 
 An essential element of VR audio is spatialization: the ability to play a sound as if it's positioned at a specific point in three-dimensional space. Spatial audio is essential to deliver an immersive experience because it provides powerful cues that make the user feel they're actually in the 3D environment. The two major components to spatialization are direction and distance
 
-## Spatial Blend
+## Spatial blend
 
 It sets how much this AudioSource is affected by 3D spatialization calculations (attenuation, doppler, and so on.). 0.0 makes the sound full 2D, 1.0 makes it full 3D.
 

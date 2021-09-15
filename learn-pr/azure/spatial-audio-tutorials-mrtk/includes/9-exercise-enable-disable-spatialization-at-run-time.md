@@ -4,7 +4,7 @@ In this module, you'll learn how to Enable and disable spatialization at run tim
 
 1. Right-click in the Project window and choose **Create** > **C# Script** to create a new C# script, enter a suitable name for the script, for example, _SpatializeOnOff_:
 
-    :::image type="content" source="../media/spatial-audio-4-section-1-step-1-1.png" alt-text="Create script" lightbox="../media/spatial-audio-4-section-1-step-1-1.png":::
+    :::image type="content" source="../media/create-script.png" alt-text="Screenshot of Create script" lightbox="../media/create-script.png":::
 
 2. Double-click the script in the Project window to open it in Visual Studio. Replace the default script contents with the following:
 
@@ -70,13 +70,13 @@ In this module, you'll learn how to Enable and disable spatialization at run tim
 
 1. Select **Quad** in the Hierarchy and in the Inspector window, use the Add Component button to add **SpatializeOnOff(Script)**
 
-    :::image type="content" source="../media/spatial-audio-4-section-2-step-1-1.png" alt-text="Add script to quad" lightbox="../media/spatial-audio-4-section-2-step-1-1.png":::
+    :::image type="content" source="../media/script-quad.png" alt-text="Screenshot of Add script to quad" lightbox="../media/script-quad.png":::
 
 2. In the Hierarchy locate **PressableButtonHoloLens2** > **IconAndText** > **TextMeshPro**.
 
 3. With the **Quad** object still selected in the Hierarchy, in the Inspector window, locate the **Spatialize On Off (Script)** component and Drag and drop **TextMeshPro** Component of the PressableButtonHoloLens2.
 
-    :::image type="content" source="../media/spatial-audio-4-section-2-step-1-2.png" alt-text="Find the PressableButtonHoloLens2 object in the hierarchy" lightbox="../media/spatial-audio-4-section-2-step-1-2.png":::
+    :::image type="content" source="../media/pressable-button-hololens-2.png" alt-text="Screenshot of Find the PressableButtonHoloLens2 object in the hierarchy" lightbox="../media/pressable-button-hololens-2.png":::
 
 4. To set the button to call the **SpatializeOnOff** script when the button is released You need to configure interactable script.
 
@@ -86,4 +86,4 @@ In this module, you'll learn how to Enable and disable spatialization at run tim
 
     2) Click the **No Function** dropdown of the same event. Then select **SpatializeOnOff** > **SwapSpatialization ()** to turn on and off the Spatial audio
 
-    :::image type="content" source="../media/spatial-audio-4-section-2-step-1-3.png" alt-text="Button action settings" lightbox="../media/spatial-audio-4-section-2-step-1-3.png":::
+    :::image type="content" source="../media/button-action-setting.png" alt-text="Screenshot of Button action settings" lightbox="../media/button-action-setting.png":::
