@@ -1,6 +1,6 @@
-In this unit, we need to create one leaf certificate for each device that we want to send telemetry to the hub. Two is company, three is a crowd. So, let's create code for a "crowd" of devices. Remember, in our scenario description we stated that there were now 30 cheese caves, requiring 30 sensor devices. Let's limit this number to three for the sake of explanation and testing!
+In this unit, we need to create one leaf certificate for each device that we want to send telemetry to the hub. As the saying goes, "two is company, three is a crowd." So, let's create code for a *crowd* of devices. Remember, in our scenario description we stated that there were now 30 cheese caves, requiring 30 sensor devices. Let's limit this number to three for the sake of explanation and testing!
 
-1. In the Microsoft Azure Cloud Shell, make sure you're in the **certificates** folder.
+1. In Cloud Shell, make sure you're in the **certificates** folder.
 
 1. Run the following command:
 
@@ -20,15 +20,15 @@ In this unit, we need to create one leaf certificate for each device that we wan
 
     ```
 
-1. Copy the **new-device.cert.pfx** file from its downloaded location, in your `Downloads` folder, into the **cheese cave certs** folder, and rename it **new-device.cert1.pfx**.
+1. Copy the **new-device.cert.pfx** file, from its downloaded location in your `Downloads` folder, into the **cheese cave certs** folder, and rename it **new-device.cert1.pfx**.
 
-1. In the Cloud Shell, delete the **new-device.cert** files. This step is important so the tools can be used to create further certificates. You can delete the file, in the **certificates/certs** folder, by going through the following procedure:
-    1. Type `cd certs`.
-    1. Type `rm new*`.
+1. In Cloud Shell, delete the **new-device.cert** files. This step is important so the tools can be used to create further certificates. You can delete the file in the **certificates/certs** folder, by going through the following procedure:
+    1. Enter `cd certs`.
+    1. Enter `rm new*`.
     1. Answer `y` to the question on the protected file.
-    1. Type `cd ..`.
+    1. Enter `cd ..`.
 
-1. In the Cloud Shell, create a second leaf certificate:
+1. In Cloud Shell, create a second leaf certificate:
 
     ```azurecli
      ./certGen.sh create_device_certificate cheesecave-device2
@@ -39,7 +39,7 @@ In this unit, we need to create one leaf certificate for each device that we wan
 
     [![Console output showing a leaf certificate was not created.](../media/iot-hub-provisioning-cert-denied.png)](../media/iot-hub-provisioning-cert-denied.png#lightbox)
 
-1. Download the second certificate to your local machine, enter:
+1. To download the second certificate to your local machine, enter:
 
     ```azurecli
     download ~/certificates/certs/new-device.cert.pfx
@@ -48,20 +48,20 @@ In this unit, we need to create one leaf certificate for each device that we wan
 
 1. Copy the **new-device.cert.pfx** file from its downloaded location into the **cheese cave certs** folder, and rename it **new-device.cert2.pfx**.
 
-1. In the Cloud Shell, delete the **new-device.cert** files:
+1. In Cloud Shell, delete the **new-device.cert** files:
     1. Type `cd certs`.
     1. Type `rm new*`.
     1. Answer `y` to the question on the protected file.
     1. Type `cd ..`.
 
-1. In the Cloud Shell, create a third leaf certificate:
+1. In Cloud Shell, create a third leaf certificate:
 
     ```azurecli
      ./certGen.sh create_device_certificate cheesecave-device3
 
     ```
 
-1. Download the third certificate to your local machine, enter:
+1. Tp download the third certificate to your local machine, enter:
 
     ```azurecli
     download ~/certificates/certs/new-device.cert.pfx
@@ -70,4 +70,4 @@ In this unit, we need to create one leaf certificate for each device that we wan
 
 1. Copy the **new-device.cert.pfx** file from its downloaded location into the **cheese cave certs** folder, and rename it **new-device.cert3.pfx**.
 
-Great, you now have three leaf certificates. The next step is to write some code to simulate each device.
+Great! You now have three leaf certificates. The next step is to write some code to simulate each device.
