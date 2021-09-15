@@ -58,7 +58,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 
 1. On the Azure resource menu, or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the search bar, enter **API Management**, and press <kbd>Enter</kbd>. Select **Create** on the API Management serviece published by Microsoft. The **Create API Management** pane appears.
+1. In the search bar, enter **API Management**, and press <kbd>Enter</kbd>. Select **Create** on the API Management service published by Microsoft. The **Create API Management** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -89,7 +89,7 @@ After deployment has completed, import the Weather API into the API Management g
 
 1. Select **Go to resource**. The Overview pane of the **API Management service** for your resource appears.
 
-1. In the API Management servie resource menu, under **APIs**, select **APIs**. The **APIs** pane for your API Management service appears, with template selections for creating an API.
+1. In the API Management service resource menu, under **APIs**, select **APIs**. The **APIs** pane for your API Management service appears, with template selections for creating an API.
 
 1. Under **Create from definition**, select **OpenAPI**. The **Create from OpenAPI specification** dialog box appears.
 
@@ -143,7 +143,7 @@ The API is secured with a key, and we can test the API without the key, and with
    { "statusCode": 401, "message": "Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API." }
    ```
 
-1. Now, run the following command, substituting the resource name for the *Name Of Gateway* placeholder, and substitutind the primary key you copied from the show/hide step for the *Primary Key* placeholder. 
+1. Now, run the following command, substituting the resource name for the *Name Of Gateway* placeholder, and substituting the primary key you copied from the show/hide step for the *Primary Key* placeholder. 
 
    ```Azure Cloud Shell
    curl -X GET https://[Name Of Gateway].azure-api.net/api/Weather/53/-1 \
