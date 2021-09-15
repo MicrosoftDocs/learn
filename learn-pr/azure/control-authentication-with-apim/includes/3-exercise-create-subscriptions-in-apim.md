@@ -120,9 +120,7 @@ The final step is to add a subscription key for the weather API.
     | Allow tracing | No checkmark |
     | Scope | From the dropdown list, select **API**. |
     | API | From the dropdown list, select **Weather Data**. |
-
-    :::image type="content" source="../media/3-add-subscription.png" alt-text="Screenshot showing how to add a new subscription.":::
-
+   
 1. Select **Create**. The **Subscriptions** pane reappears with your *Weather Data Subscription* in the list.
 
 1. At the end of the *Weather Data Subscription* row, select the ellipsis, and in the context menu select **Show/hide keys**. The Primary and Secondary key values display.
@@ -139,13 +137,13 @@ The API is secured with a key, and we can test the API without the key, and with
    curl -X GET https://[Name Of Gateway].azure-api.net/api/Weather/53/-1
    ```
 
-   This command should return a 401 Access Denied error, similar to the following.
+   This command has no subscription key and should return a 401 Access Denied error, similar to the following.
 
    ```json
    { "statusCode": 401, "message": "Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API." }
    ```
 
-1. Now, run the following command, substituting the API gateway for [Name Of Gateway] placeholder and the primary key you copied from the show/hide step for the [Primary Key] placeholder. 
+1. Now, run the following command, substituting the resource name for the *Name Of Gateway* placeholder, and substitutind the primary key you copied from the show/hide step for the *Primary Key* placeholder. 
 
    ```Azure Cloud Shell
    curl -X GET https://[Name Of Gateway].azure-api.net/api/Weather/53/-1 \
