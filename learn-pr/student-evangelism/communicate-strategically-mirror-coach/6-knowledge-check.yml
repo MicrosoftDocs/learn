@@ -16,13 +16,13 @@ quiz:
   questions:
   - content: "What's the first step in approaching and solving problems strategically?"
     choices:
-    - content: 'Creating a plan'
+    - content: 'Create a plan.'
       isCorrect: false
       explanation: "Incorrect. Creating a plan is an important part of strategic problem-solving, but it isn't the first step."
-    - content: 'Developing metacognition'
+    - content: 'Develop metacognition.'
       isCorrect: true
       explanation: 'Correct. To approach and solve problems strategically, a crucial first step is to develop your metacognition, which is the awareness and understanding you have of your own thought processes.'
-    - content: 'Evaluating your actions'
+    - content: 'Evaluate your actions.'
       isCorrect: false
       explanation: "Incorrect. Evaluating your actions is an important part of strategic problem-solving, but it isn't the first step."
   - content: 'What should a coach do to support their peers?'
