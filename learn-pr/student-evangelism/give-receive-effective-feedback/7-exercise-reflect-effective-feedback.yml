@@ -24,4 +24,4 @@ quiz:
           explanation: "Incorrect. By fixing developers' errors for them, you're not helping them learn how to prevent similar errors in the future."
         - content: "You can assign an easier task to the developer and indicate that they should leave the more complicated programs to more experienced team members."
           isCorrect: false
-          explanation: "Incorrect. By reassigning the task to other team members, you're indicating to the developer that you don't trust them to complete the program. This can undermine the developer’s self-confidence and might adversely affect their growth mindset."
+          explanation: "Incorrect. By reassigning someone's task to another team member, you're indicating that you don't trust them to complete the program. This can undermine the person’s self-confidence and adversely affect their growth mindset."
