@@ -25,7 +25,7 @@ az functionapp create \
   --storage-account "$STORAGEACCT" \
   --runtime node \
   --consumption-plan-location centralus \
-  --functions-version 2
+  --functions-version 3
 ```
 
 Here's what these commands do:

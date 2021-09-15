@@ -4,12 +4,14 @@ title: Describe provisioning Azure SQL Database
 metadata:
   title: Describe provisioning Azure SQL Database
   description: "Describe provisioning Azure SQL Database"
-  ms.date: 04/12/2021
+  ms.date: 09/13/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/3-describe-provision-sql-database.md)]

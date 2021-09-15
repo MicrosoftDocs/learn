@@ -1,4 +1,4 @@
-After creating and running a pipeline to train the model, you need a second pipeline that performs the same data transformations for new data, and then uses the trained model to *inference* (in other words, predict) label values based on its features. This will form the basis for a predictive service that you can publish for applications to use.
+After creating and running a pipeline to train the model, you need a second pipeline that performs the same data transformations for new data, and then uses the trained model to *infer* (in other words, predict) label values based on its features. This will form the basis for a predictive service that you can publish for applications to use.
 
 ## Create and run an inference pipeline
 
