@@ -13,4 +13,4 @@ durationInMinutes: 10
 azureSandbox: true
 interactive: bash
 content: |
-  [!include[](includes/3-exercise-fix-mistakes.md)]
+  [!include[](includes/5-exercise-fix-mistakes.md)]
