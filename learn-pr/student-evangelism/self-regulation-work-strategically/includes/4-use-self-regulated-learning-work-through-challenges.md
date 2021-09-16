@@ -1,4 +1,4 @@
-To work through the challenges of training and your project, you and your team need a process to plan and test and revise your approach. As a team lead, you want to know how to support your team members while they're in training. 
+To work through the challenges of training and your project, you and your team need a process to plan, test, and revise your approach. As a team lead, you want to know how to support your team members while they're in training. 
 
 ## Self-regulated learning
 
