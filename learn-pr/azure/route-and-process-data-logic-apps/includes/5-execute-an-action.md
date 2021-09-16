@@ -44,7 +44,7 @@ The *control action* feature of Logic Apps lets you add control constructs like 
 
 You can think of actions as function calls that have parameters and return values.
 
-Action *parameters* lets you pass values to the operation. The Cognitive Services **Detect-sentiment** action has a parameter called **Text** that represents the string you want to analyze. It also has an optional parameter named **Language** that lets you provide a hint about the language of the **Text**.
+Action *parameters* let you pass values to the operation. The Cognitive Services **Detect-sentiment** action has a parameter called **Text** that represents the string you want to analyze. It also has an optional parameter named **Language** that lets you provide a hint about the language of the **Text**.
 
 Action *return values* are the results of the operation. The **Detect sentiment** action returns a numeric score between 0 and 1. Scores close to 1 indicate positive sentiment, while scores close to 0 indicate negative sentiment. The following illustration summarizes the data flow for the **Detect sentiment** action as used by the social media monitor app.
 
