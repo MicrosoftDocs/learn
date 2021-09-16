@@ -15,7 +15,7 @@ abstract: |
   By the end of this module, you'll be able to:
   - Understand the various terminology specific to ASP.NET Core SignalR
   - Implement a server: create a `Hub` subclass and register it as an endpoint
-  - Implement a client: connect to an endpoint through a `HubConnection`, enabling RPC and eventing
+  - Implement a client: connect to an endpoint through a `HubConnection`, enabling remote procedure calls (RPC) and eventing
 prerequisites: |
   - Familiarity with building and deploying ASP.NET Core apps
   - Ability to write C# at the beginner level
