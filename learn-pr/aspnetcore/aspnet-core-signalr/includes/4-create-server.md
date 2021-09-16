@@ -8,7 +8,7 @@
 
     [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+An ASP.NET Core Minimal API application will be our server app.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -20,6 +20,8 @@ TODO: add your topic sentences(s)
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
+Recall that the notification system needs to function for all employees in the warehouse. There were two key requirements for this implementation: geographically-redundant storage because the data is business-critical and at least one location close to the main factory.
+
 TODO: add your scenario sub-task
 TODO: add your scenario image
 
@@ -103,6 +105,14 @@ TODO: describe the end-state
 1. <!-- Step n (if multiple steps are needed) -->
 Optional "exercise-solution" video
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- 
+
+NOTES:
+
+dotnet new web -n SignalR.Server
+dotnet add SignalR.Server/SignalR.Server.csproj  package Microsoft.Identity.Web
+
+ -->
 
 <!-- Do not add a unit summary or references/links -->
+
