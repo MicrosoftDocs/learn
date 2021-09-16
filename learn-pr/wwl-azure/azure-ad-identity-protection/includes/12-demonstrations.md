@@ -1,5 +1,5 @@
 
-In this set of try this exercises, you will test conditonal access. 
+In this set of try this exercises, you will test conditional access. 
 
 ## Task 1 - Configure Conditional Access (require MFA)
 

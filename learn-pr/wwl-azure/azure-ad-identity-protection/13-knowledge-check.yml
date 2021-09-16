@@ -25,7 +25,7 @@ quiz:
       explanation: "Access reviews. Access reviews enable organizations to efficiently manage group memberships, access to enterprise applications, and role assignments. User's access can be reviewed on a regular basis to make sure only the right people have continued access."
     - content: "Azure time-based policies"
       isCorrect: false
-      explanation: "Time-based polocies work on during a specific time peroid, they don't check to see if a user is still valid and allowed to use the policy to gain access."
+      explanation: "Time-based policies work on during a specific time period, they don't check to see if a user is still valid and allowed to use the policy to gain access."
     - content: "JIT virtual machine access"
       isCorrect: false
       explanation: "JIT VM access would just restrict when a user could access a VM, not validate if they should still be allowed access"
@@ -33,7 +33,7 @@ quiz:
     choices:
     - content: "Global Administrator"
       isCorrect: true
-      explanation: "Global Administrator. To use Identity Protection a user must bein one of these roles. Each role has different privileges but only the Global Administrator can reset a user’s password."
+      explanation: "Global Administrator. To use Identity Protection a user must be in one of these roles. Each role has different privileges but only the Global Administrator can reset a user’s password."
     - content: "Security Administrator"
       isCorrect: false
       explanation: "The security administrator cannot enforce a password reset."
@@ -70,7 +70,7 @@ quiz:
     - content: "Designate privileged user accounts."
       isCorrect: true
       explanation: "Designate privileged user accounts. Conditional Access policies at their simplest are if-then statements, if a user wants to access a resource, then they must complete an action."
-    - content: "Require multi-factor authentication."
+    - content: "Require multifactor authentication."
       isCorrect: false
       explanation: "It is possible to force a user, group or users, or all users to use MFA with a conditional access policy."
   - content: "Which licensing plan supports Identity Protection?"
