@@ -15,7 +15,7 @@ content: |
   [!include[](includes/6-sharpen-test-skills.md)]
 quiz:
   questions:
-  - content: Say you have one method that you want to test with multiple inputs. What testing tool can help you?
+  - content: Say you have one method that you want to test with multiple inputs. What test tool can help you?
     choices:
     - content: "Data-driven tests"
       isCorrect: true
@@ -23,10 +23,10 @@ quiz:
     - content: "Mocking"
       isCorrect: false
       explanation: "Not quite! Try again."
-    - content: "No framework is needed. You should copy and paste the test multiple times and change only the parameters."
+    - content: "No framework is needed. I should copy and paste the test multiple times and change only the parameters."
       isCorrect: false
       explanation: "Not quite! Try again."
-  - content: Stubs and shims are found in what testing tool?
+  - content: Stubs and shims are found in what test tool?
     choices:
     - content: "Fluent Assertions"
       isCorrect: false

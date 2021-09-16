@@ -46,7 +46,7 @@ To hit a breakpoint, right-click the `AddTest` method in the Visual Studio edito
 
 :::image type="content" source="../media/debug.png" alt-text="Screenshot of the Visual Studio editor with the right-click menu open inside the AddTest method and Debug Tests selected.":::
 
-As in debugging a regular app, when you debug a test, you can hover over or pin variables to see their values and step through the execution of the code. In the following example, Visual Studio is paused during debugging at a breakpoint set inside the AddTest method on the Assert line. Debugger windows are visible, along with a window that shows the value of the variable in the test.
+As in debugging a regular app, when you debug a test, you can hover over or pin variables to see their values and step through the execution of the code. In the following example, Visual Studio is paused during debugging at a breakpoint set inside the `AddTest` method on the `Assert` line. Debugger windows are visible, along with a window that shows the value of the variable in the test.
 
 :::image type="content" source="../media/breakpoint.png" alt-text="Screenshot that shows Visual Studio paused during debugging, with debugger windows visible.":::
 

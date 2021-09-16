@@ -28,7 +28,7 @@ Add more tests to ensure that you test all the functionality of your calculator 
    > [!NOTE]
    > If you want to check your code, see the section about [expected examples](#expected-examples-for-subtract-multiply-and-divide-tests) later in this unit.
 
-1. Add another test for the `Divide` method that fails. The `Divide` method in our calculator can't yet handle dividing by zero. Create a test method that enters zero as the divisor. Run the new test to confirm that it fails.
+1. Add another test for the `Divide` method that fails. The `Divide` method in your calculator can't yet handle dividing by zero. Create a test method that enters zero as the divisor. Run the new test to confirm that it fails.
 
    It doesn't matter what's in your assert statement, because an uncaught exception fails the test. For now, let's say the `Divide` method should return null when dividing by zero. What assertion should you use?
    
@@ -73,9 +73,9 @@ Using grouping makes it easier to work with a large number of tests. Let's explo
 Sometimes, it's not obvious why a test fails. You might need to do a closer inspection by setting a breakpoint and debug the test while it's running.
 
 1. Set a breakpoint in `DivideByZeroTest` at the `Assert` line by clicking in the margin of the code editor.
-1. Right-click the test method in the code editor and select **Debug Test**.
+1. Right-click the test method in the code editor and select **Debug Test(s)**.
 
-   :::image type="content" source="../media/debug-divide-zero.png" alt-text="Screenshot of the editor window with a breakpoint set on the Assert statement, and with Debug Test selected on the right-click menu.":::
+   :::image type="content" source="../media/debug-divide-zero.png" alt-text="Screenshot of the editor window with a breakpoint set on the Assert statement, and with Debug Tests selected on the right-click menu.":::
 
    The debugger doesn't reach your breakpoint because it fails on `System.DivideByZeroException`, as expected. The following screenshot shows a divide-by-zero system exception in the midst of debugging. The exception appears in a callout above the `Divide` method on the return statement.
 
@@ -87,7 +87,7 @@ Red, green, refactor is all about starting with a failing test, to see that the 
 
 `DivideByZeroTest` will fail until you update the `Divide` method in *Calculator.cs* to gracefully handle when the divisor is zero. So this test is on "red," because it's waiting for you to write missing product code.
 
-1. Write some code to catch the exception if the divisor is zero, and notify the user with a console message such as "Cannot divide by zero." After catching the exception, the `Divide` method can return null. Edit the `Divide` method signature to allow a nullable `int` return type.
+1. Write some code to catch the exception if the divisor is zero, and notify the user with a console message such as "Cannot divide by zero." After catching the exception, the `Divide` method can return `null`. Edit the `Divide` method signature to allow a nullable `int` return type.
 
     Your `Divide` method should now look similar to the following code.
 

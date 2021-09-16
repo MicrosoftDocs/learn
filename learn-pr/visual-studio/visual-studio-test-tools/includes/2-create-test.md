@@ -26,11 +26,11 @@ public class CalculatorTests
 }
 ```
 
-This test class is a part of a test project that references the app that needs to be tested. In this case, it's the LearnMyCalculatorApp project.
+This test class is part of a test project that references the app that needs to be tested. In this case, it's the *LearnMyCalculatorApp* project.
 
 :::image type="content" source="../media/solution-explorer.png" alt-text="Screenshot of a test project and a calculator project in Visual Studio Solution Explorer.":::
 
-Tests reference and call your product code (that is, your non-test code). For example, let's say that you need to test an `Add` method in the calculator class.
+Tests reference and call your product code (that is, your non-test code). For example, let's say that you need to test an `Add` method in the `Calculator` class.
 
 ```csharp
 public class Calculator
@@ -63,9 +63,9 @@ public void AddTest()
 
 You can use two approaches to add tests to your production code:
 
-* The easiest way to add a test project for testing a specific method in your code is to right-click in that method and select **Create unit tests**. This option to autogenerate test methods is available for most .NET projects.
+* The easiest way to add a test project for testing a specific method in your code is to right-click that method and select **Create Unit Tests**. This option to autogenerate test methods is available for most .NET projects.
 
-   :::image type="content" source="../media/create-unit-tests-generation.png" alt-text="Screenshot in Visual Studio that shows a right-click menu inside an editor, with the Calculator class open and the Create Unit Test command selected.":::
+   :::image type="content" source="../media/create-unit-tests-generation.png" alt-text="Screenshot in Visual Studio that shows a right-click menu inside an editor, with the Calculator class open and the Create Unit Tests command selected.":::
 
 * You can manually create a test project, add tests, and add the product code reference. You can do this at the command line or with Visual Studio tooling, as described in the next unit.
 
@@ -75,13 +75,13 @@ The three A's in the comments provide basic guidelines for your testing structur
 
 * **Arrange** is where you declare any variables that the test might need. In this example, we must declare a `calculator` object to call its `Add` method.
 * **Act** is where you call the code that you want to test. In this step, you can insert parameters and exercise the code.
-* **Assert** is where you check if the outcome of the action is expected. You can add multiple asserts to any test. If one assertion fails, the test will fail.
+* **Assert** is where you check if the outcome of the action is expected. You can add multiple assertions to any test. If one assertion fails, the test will fail.
 
 ## Running a test
 
 Now that you understand the basic setup of a test and test project, the next step is running your tests. Visual Studio provides a few helpful ways to run tests from whatever context you're working in.
 
-* **Right-click**: You can right-click to run tests from the shortcut menu. This command will run tests according to the scope that your cursor is in. For example, if you right-click in a test class and select **Run Test(s)**, the command will run all the tests in that class. If you right-click in a test namespace, the command will run all the tests in that namespace.
+* **Right-click**: You can right-click to run tests from the shortcut menu. This command will run tests according to the scope that your cursor is in. For example, if you right-click a test class and select **Run Test(s)**, the command will run all the tests in that class. If you right-click a test namespace, the command will run all the tests in that namespace.
 
    :::image type="content" source="../media/right-click-run.png" alt-text="Screenshot of Visual Studio with the right-click menu open in an editor inside a test method.":::
 
@@ -100,7 +100,7 @@ Now that you understand the basic setup of a test and test project, the next ste
 We recommend the *red, green, refactor* pattern for testing: 
 
 * **Red**: Write a failing "red" test.
-* **Green**: Add the necessary product code to make the test pass or turn "green".
+* **Green**: Add the necessary product code to make the test pass or turn "green."
 * **Refactor**: Make use of your new code knowledge, now that you have the correct functionality.
 
 When you're writing a test, it's good to see it fail at least once so that you know it *can* fail. A common problem is believing a test covers a certain scenario, only to find a bug in production. It's no fun to realize that your test wasn't making the right calls or never correctly asserted the expected outcome.

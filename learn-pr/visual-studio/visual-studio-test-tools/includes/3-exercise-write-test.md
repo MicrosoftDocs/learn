@@ -1,6 +1,6 @@
 Let's put that test-creation knowledge to use. Imagine that you're developing the calculator app mentioned at the beginning of this module. As part of development, you now need to set up your test project and write your first test.
 
-In this exercise, you'll write tests in a few basic steps.
+In this exercise, you'll write a test in a few basic steps.
 
 ## Set up product code to be tested
 
@@ -44,7 +44,7 @@ You can leave the *Program.cs* file unchanged for this minimal example.
 As mentioned in the previous unit, the easiest way to add a test project for testing a specific method in your code is to right-click that method and select **Create unit tests**. However, for this exercise, let's manually set up test projects to better understand the relationship between tests and the code that's being tested.
 
 1. Right-click the solution and select **Add project**, to add a test project template and open Solution Explorer.
-1. Select an MSTest project template from the **Add New Project** dialog. There are multiple popular test frameworks in .NET. [MSTest](/visualstudio/test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests) is the built-in option for .NET produced by the .NET team.
+1. Select an MSTest project template from the **Add a new project** dialog. There are multiple popular test frameworks in .NET. [MSTest](/visualstudio/test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests) is the built-in option for .NET produced by the .NET team.
 
    :::image type="content" source="../media/add-new-test-project.png" alt-text="Screenshot of the Add New Project dialog in Visual Studio, with MSTest Test Project selected.":::
 
@@ -60,7 +60,7 @@ As mentioned in the previous unit, the easiest way to add a test project for tes
 
 Now that you have a test project, it needs to reference the code that you want to test. With a reference, you can make calls to your app from within your tests.
 
-1. Right-click the test project in Solution Explorer and select **Add Reference**. Select the project that you want to test. In this case, select the console project you created that contains `Calculator.cs`.
+1. Right-click the test project in Solution Explorer and select **Add Project Reference**. Select the project that you want to test. In this case, select the console project you created that contains *Calculator.cs*.
 
    :::image type="content" source="../media/add-project-reference.png" alt-text="Screenshot of Solution Explorer in Visual Studio, with the right-click menu of the dependencies node open and Add Project Reference selected.":::
 
@@ -86,14 +86,14 @@ Now let's add an assert statement to instruct the test runner under what conditi
     }
     ```
 
-1. Run your test by right-clicking and selecting **Run Tests**. Your test should pass because the `calculator` variable isn't null.
+1. Run your test by right-clicking and selecting **Run Test(s)**. Your test should pass because the `calculator` variable isn't null.
 1. Add an assert statement to the end of the method `CalculatorNullTest` that causes your test to fail. You can use the following example, which asserts `IsTrue` on a false Boolean.
 
     ```csharp
     Assert.IsTrue(false); // Will fail the test
     ```
 
-1. Confirm that your test fails by running again.
+1. Confirm that your test fails by running it again.
 
    :::image type="content" source="../media/run-first-test.png" alt-text="Screenshot of the editor window in Visual Studio, with Run Tests selected by right-clicking a test method.":::
 

@@ -26,7 +26,7 @@ quiz:
     - content: "You can run tests by using the right-click menu, keyboard shortcuts, or CodeLens icons."
       isCorrect: true
       explanation: "Correct! You can run tests from several locations in Visual Studio. Use whatever feels natural to you and helps you get into your most productive coding flow."
-  - content: How does the Test Explorer group-by setting allow you to view test groupings?
+  - content: How does the Group By setting in Test Explorer allow you to view test groupings?
     choices:
     - content: "By project"
       isCorrect: false
@@ -39,5 +39,5 @@ quiz:
       explanation: "Not quite! Try again."
     - content: "All of the above, in any order"
       isCorrect: true
-      explanation: "Correct! The Test Explorer group-by setting is customizable and can help you organize viewing your tests with any of the preceding combinations and more."
+      explanation: "Correct! The Group By setting in Test Explorer is customizable and can help you organize viewing your tests with any of the preceding combinations and more."
       

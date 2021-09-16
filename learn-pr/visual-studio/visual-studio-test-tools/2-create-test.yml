@@ -31,9 +31,9 @@ quiz:
     - content: "A failing assert statement is the only reason a test would fail."
       isCorrect: false
       explanation: "Incorrect. Tests can fail even if all the assert statements are passing."
-    - content: "A test fails when *most* asserts in the test are failing."
+    - content: "A test fails when *most* assertions in the test are failing."
       isCorrect: false
-      explanation: "Incorrect. Tests will fail if there is at least one failing assert."
-    - content: "Tests can fail for various reasons, including at least one failing assert, an uncaught exception, or test time-out."
+      explanation: "Incorrect. Tests will fail if there's at least one failing assertion."
+    - content: "Tests can fail for various reasons, including at least one failing assertion, an uncaught exception, or test time-out."
       isCorrect: true
       explanation: "Correct! There are several reasons a test may fail. Always check the test output to determine the cause of a failure."

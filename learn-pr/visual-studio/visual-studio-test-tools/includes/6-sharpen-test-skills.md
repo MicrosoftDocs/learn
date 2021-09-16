@@ -2,13 +2,13 @@ Being able to write tests and applying a red, green, refactor pattern are a good
 
 Another difficult thing about testing is that you want to test in isolation. You probably don't want a unit test to make a network call or write files to a disk or a database.
 
-In this unit, we'll cover the following topics to try to address these challenges:
+In this unit, we'll cover the following topics to address these challenges:
 
 * **Fluent Assertions**: Use assert statements that are more human-readable.
 * **Data-driven tests**: Run the same test repeatedly with different parameters.
 * **Mocking**: Isolate your test by mocking parts of your code that don't affect the test outcome.
 
-You can learn about the types of tests and more testing concepts in [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/). There are many tools to help make tests easy to understand, avoid repetition, and get coverage for any architecture. Let's go over some popular ones and their advantages.
+There are many tools to help make tests easy to understand, avoid repetition, and get coverage for any architecture. Let's go over some popular ones and their advantages.
 
 ## Fluent Assertions
 
@@ -75,7 +75,7 @@ Many popular mocking frameworks are available, including [MOQ](https://github.co
 
 1. Right-click the project under the project node that you want to mock, and then select **Add Fakes Assembly**.
 
-   The following example uses the **LearnMyCalculatorApp** node under the **LearnMyCalculator.Tests** project.
+   The following example uses the **LearnMyCalculatorApp** node under the **LearnMyCalculatorApp.Tests** project.
 
    :::image type="content" source="../media/add-fakes.png" alt-text="Screenshot of Solution Explorer that shows a node selected for adding a Fakes assembly.":::
 
