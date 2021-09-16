@@ -12,6 +12,6 @@ You can continue to include other UI elements provided by MRTK and try out new o
 
 ## Further reading
 
-* Learn more about the other [UX components](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/#ux-building-blocks) in MRTK.
+* Learn more about the other [UX components](/windows/mixed-reality/mrtk-unity/#ux-building-blocks) in MRTK.
 
-* Learn more about [Bounds Control](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounds-control).
+* Learn more about [Bounds Control](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounds-control).
