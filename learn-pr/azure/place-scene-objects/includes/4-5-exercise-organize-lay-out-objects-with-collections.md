@@ -8,7 +8,7 @@ The Mixed Reality Toolkit provides a set of tools and components to accelerate y
     * **Rotation**: X = 0, Y = 90, Z = 0
     * **Scale**: X = 1, Y = 1, Z = 1
 
-    :::image type="content" source="../media/position-rover-parts-object.png" alt-text="Screenshot of Unity with newly created RoverParts object selected and positioned" lightbox="../media/position-rover-parts-object.png":::
+    :::image type="content" source="../media/position-rover-parts.png" alt-text="Screenshot of Unity with newly created RoverParts object selected and positioned" lightbox="../media/position-rover-parts.png":::
 
 2. In the Hierarchy window, select all the RoverExplorer > RoverAssembly > RoverModel > **Parts** child objects, right-click on them and select **Duplicate** to create a copy of each of the parts:
 
@@ -16,19 +16,19 @@ The Mixed Reality Toolkit provides a set of tools and components to accelerate y
 
 3. With the newly duplicated Parts child objects still selected, click-and-drag them on to the **RoverParts** object to make them child objects of the RoverParts object:
 
-    :::image type="content" source="../media/move-duplicated-parts-as-childrent.png" alt-text="Screenshot of Unity with newly duplicated parts as children of RoverParts object." lightbox="../media/move-duplicated-parts-as-childrent.png":::
+    :::image type="content" source="../media/child-part.png" alt-text="Screenshot of Unity with newly duplicated parts as children of RoverParts object." lightbox="../media/child-part.png":::
 
 4. To make it easier to work with your scene, in the Hierarchy window, click the **eye** icon to the left of the object to toggle the **scene visibility** for the **RoverAssembly** object off. This hides the object in the Scene window without changing its in-game visibility:
 
-    :::image type="content" source="../media/off-rover-assembly-visibility.png" alt-text="Screenshot of Unity with RoverAssembly scene visibility off." lightbox="../media/off-rover-assembly-visibility.png":::
+    :::image type="content" source="../media/rover-assembly-visibility.png" alt-text="Screenshot of Unity with RoverAssembly scene visibility off." lightbox="../media/rover-assembly-visibility.png":::
 
 5. In the Hierarchy window, clean up the RoverParts child objects' names by replacing the appended **(1)** with **_Part**:
 
-    :::image type="content" source="../media/duplicated-parts-name-cleaned-up.png" alt-text="Screenshot of Unity with duplicated parts name cleaned up." lightbox="../media/duplicated-parts-name-cleaned-up.png":::
+    :::image type="content" source="../media/name-clean-up.png" alt-text="Screenshot of Unity with duplicated parts name cleaned up." lightbox="../media/name-clean-up.png":::
 
 6. In the Hierarchy window, select the **RoverParts** object, then in the Inspector window, click the **Add Component** button, and search for and select **GridObjectCollection** to add the GridObjectCollection component to the RoverParts object:
 
-    :::image type="content" source="../media/component-grid-object-collection-progress.png" alt-text="Screenshot of Unity RoverParts object with Add Component Grid Object Collection in progress." lightbox="../media/component-grid-object-collection-progress.png":::
+    :::image type="content" source="../media/grid-object-collection-progress.png" alt-text="Screenshot of Unity RoverParts object with Add Component Grid Object Collection in progress." lightbox="../media/grid-object-collection-progress.png":::
 
 7. Configure the **GridObjectCollection** component values as follows:
 
@@ -37,6 +37,6 @@ The Mixed Reality Toolkit provides a set of tools and components to accelerate y
     * **Cell Width**: 0.25
     * **Distance from parent**: 0.38
 
-    :::image type="content" source="../media/grid-object-collection-component-configured.png" alt-text="Unity Hub with New button highlighted." lightbox="../media/grid-object-collection-component-configured.png":::
+    :::image type="content" source="../media/grid-object-collection-configure.png" alt-text="Unity Hub with New button highlighted." lightbox="../media/grid-object-collection-configure.png":::
 
     Then click the **Update Collection** button to update the position of the RoverParts child objects.

@@ -14,7 +14,7 @@ Solvers are one of the components of the Mixed Reality Toolkit, which provides s
 
 2. Rename the newly added Chevron object to **Indicator**, then in the Inspector window, use the **Add Component** button to add the **DirectionalIndicator**:
 
-    :::image type="content" source="../media/add-directional-indicator-solver-component.png" alt-text="Screenshot of Unity with DirectionalIndicator solver component added." lightbox="../media/add-directional-indicator-solver-component.png":::
+    :::image type="content" source="../media/add-directional-indicator.png" alt-text="Screenshot of Unity with DirectionalIndicator solver component added." lightbox="../media/add-directional-indicator.png":::
 
 3. Configure the DirectionalIndicator and SolverHandler components as follows:
 
@@ -24,7 +24,7 @@ Solvers are one of the components of the Mixed Reality Toolkit, which provides s
 
     c. Change the **View Offset** to 0.2
 
-    :::image type="content" source="../media/configure-directional-indicator-solver-component.png" alt-text="Screenshot of Unity with DirectionalIndicator solver component configured." lightbox="../media/configure-directional-indicator-solver-component.png":::
+    :::image type="content" source="../media/configure-directional-indicator.png" alt-text="Screenshot of Unity with DirectionalIndicator solver component configured." lightbox="../media/configure-directional-indicator.png":::
 
 4. Press the Play button to enter Game mode, press-and-hold the right mouse button while moving your mouse to the left or right to rotate your gaze direction, and notice the following:
 
@@ -44,11 +44,11 @@ Solvers are one of the components of the Mixed Reality Toolkit, which provides s
 
     d. From the **Magnetic Surfaces** > **Element 0** dropdown, uncheck all options expect **Spatial Awareness**.
 
-    :::image type="content" source="../media/add-tap-to-place-solver-component.png" alt-text="Screenshot of Unity with TapToPlace solver component added and configured." lightbox="../media/add-tap-to-place-solver-component.png":::
+    :::image type="content" source="../media/add-solver.png" alt-text="Screenshot of Unity with TapToPlace solver component added and configured." lightbox="../media/add-solver.png":::
 
 2. With the RoverAssembly object still selected in the Hierarchy window, in the Inspector window, locate the **On Placing Started ()** event and click the **+** icon to add a new event:
 
-    :::image type="content" source="../media/add-tap-to-place-on-placing-started-event.png" alt-text="Screenshot of Unity with TapToPlace OnPlacingStarted event added." lightbox="../media/add-tap-to-place-on-placing-started-event.png":::
+    :::image type="content" source="../media/add-start-event.png" alt-text="Screenshot of Unity with TapToPlace OnPlacingStarted event added." lightbox="../media/add-start-event.png":::
 
 3. Configure the event as follows:
 
@@ -58,7 +58,7 @@ Solvers are one of the components of the Mixed Reality Toolkit, which provides s
 
     c. Verify that the argument is set to **0**.
 
-    :::image type="content" source="../media/configure-tap-to-place-on-placing-started-event.png" alt-text="Screenshot of Unity with TapToPlace OnPlacingStarted event configured." lightbox="../media/configure-tap-to-place-on-placing-started-event.png":::
+    :::image type="content" source="../media/configure-start-event.png" alt-text="Screenshot of Unity with TapToPlace OnPlacingStarted event configured." lightbox="../media/configure-start-event.png":::
 
 4. In the Hierarchy window, right-click on an empty spot and select **3D Object** > **Cube**, to create a temporary object representing the ground, and configure the **Transform** component as follows:
 
@@ -66,23 +66,23 @@ Solvers are one of the components of the Mixed Reality Toolkit, which provides s
     * **Rotation**: X = 0, Y = 0, Z = 0
     * **Scale**: X = 10, Y = 0.2, Z = 10
 
-    :::image type="content" source="../media/position-temporary-ground cube object.png" alt-text="Screenshot of Unity with temporary ground cube object added and positioned." lightbox="../media/position-temporary-ground cube object.png":::
+    :::image type="content" source="../media/position-ground-cube.png" alt-text="Screenshot of Unity with temporary ground cube object added and positioned." lightbox="../media/position-ground-cube.png":::
 
 5. With the temporary Cube still selected in the Hierarchy window, in the Inspector window, use the **Layers** dropdown to change the Cube's Layer setting only to include the **Spatial Awareness** layer:
 
-    :::image type="content" source="../media/temporary-ground-cube-object-layer-with-spatial-awareness.png" alt-text="Screenshot of Unity with temporary ground cube object Layer set to Spatial Awareness." lightbox="../media/temporary-ground-cube-object-layer-with-spatial-awareness.png":::
+    :::image type="content" source="../media/spatial-awareness.png" alt-text="Screenshot of Unity with temporary ground cube object Layer set to Spatial Awareness." lightbox="../media/spatial-awareness.png":::
 
 6. Press the Play button to enter Game mode, then press-and-hold the right mouse button while moving down your mouse until the gaze hit's the RoverAssembly object:
 
-    :::image type="content" source="../media/gaze-hitting-rover-assembly-object.png" alt-text="Screenshot of Unity Play mode split view with gaze hitting RoverAssembly object." lightbox="../media/gaze-hitting-rover-assembly-object.png":::
+    :::image type="content" source="../media/gaze-hit-rover-assembly.png" alt-text="Screenshot of Unity Play mode split view with gaze hitting RoverAssembly object." lightbox="../media/gaze-hit-rover-assembly.png":::
 
 7. Click the left mouse button to start the tap-to-place process:
 
-    :::image type="content" source="../media/tap-to-place-started-with-split-view.png" alt-text="Screenshot of Unity Play mode split view with TapToPlace placing started." lightbox="../media/tap-to-place-started-with-split-view.png":::
+    :::image type="content" source="../media/split-view.png" alt-text="Screenshot of Unity Play mode split view with TapToPlace placing started." lightbox="../media/split-view.png":::
 
 8. Press-and-hold the right mouse button while moving your mouse to the left or right to rotate your gaze direction, when you're happy with the placement, click the left mouse button:
 
-    :::image type="content" source="../media/tap-to-place-started-with-split-view-end.png" alt-text="Screenshot of Unity Play mode split view with TapToPlace placing ended." lightbox="../media/tap-to-place-started-with-split-view-end.png":::
+    :::image type="content" source="../media/split-view-end.png" alt-text="Screenshot of Unity Play mode split view with TapToPlace placing ended." lightbox="../media/split-view-end.png":::
 
 9. Once you're done testing the feature in the Game mode, right-click on the Cube object and select **Delete** to remove it from the scene:
 

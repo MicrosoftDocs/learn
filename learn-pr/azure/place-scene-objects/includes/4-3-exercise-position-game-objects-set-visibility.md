@@ -21,7 +21,7 @@ Download the following Unity custom package:
 
 1. In the Hierarchy window, right-click on an empty spot, and select **Create Empty** to add an empty object to your scene:
 
-    :::image type="content" source="../media/create-empty-contextual-popup-menu.png" alt-text="Screenshot of Unity Create Empty contextual popup menu" lightbox="../media/create-empty-contextual-popup-menu.png":::
+    :::image type="content" source="../media/contextual-popup-menu.png" alt-text="Screenshot of Unity Create Empty contextual popup menu" lightbox="../media/contextual-popup-menu.png":::
 
 2. Right-click on the newly created object, select **Rename**, and change the name to **RoverExplorer**:
 
@@ -33,7 +33,7 @@ Download the following Unity custom package:
     * **Rotation**: X = 0, Y = 0, Z = 0
     * **Scale**: X = 1, Y = 1, Z = 1
 
-    :::image type="content" source="../media/position-rover-explorer-object.png" alt-text="Screenshot of Unity with RoverExplorer object selected and positioned" lightbox="../media/position-rover-explorer-object.png":::
+    :::image type="content" source="../media/position-rover-explorer.png" alt-text="Screenshot of Unity with RoverExplorer object selected and positioned" lightbox="../media/position-rover-explorer.png":::
 
 ## Add the tutorial prefabs
 
