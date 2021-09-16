@@ -31,7 +31,7 @@ In a real-world scenario, you would use a relay module like this to control powe
 
 A relay is an electromagnetic switch that allows you to use small currents to control larger currents. When a small current is passed through the low-voltage input on the relay, it activates the switch. Activating the switch completes a different circuit.
 
-A real-world device might use this relay to control the power to the fan. A fan large enough to maintain humidity in a cave would generally require a large AC current. For safety purposes, and to keep focus on the code, your device is going to use an LED to represent a relay. An illuminated LED will indicate that the relay is "on."
+A real-world device might use this relay to control power to a fan. A fan large enough to maintain humidity in a cave would generally require a large AC current. For safety purposes, and to keep focus on the code, your device is going to use an LED to represent a relay. An illuminated LED will indicate that the relay is "on."
 
 To activate the LED, your code will activate a GPIO pin for output, which will send current to the LED. This is the same process you'd use to activate many relays.
 
