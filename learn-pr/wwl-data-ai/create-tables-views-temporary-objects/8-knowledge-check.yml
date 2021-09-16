@@ -37,14 +37,14 @@ quiz:
     - content: "The query must include a CREATE FUNCTION statement."
       isCorrect: false
       explanation: "Incorrect. This clause isn't required to create a query."
-  - content: "You want to create a global temporary table, what will you need to do?"
+  - content: "Someone wants to create a global temporary table, what will they need to do?"
     choices:
-    - content: "Add a single # in front of the table name in your CREATE TABLE statement."
+    - content: "Add a single # in front of the table name in the CREATE TABLE statement."
       isCorrect: false
       explanation: "Incorrect. This would create local temporary table."
-    - content: "Add ## in front of the table name in your CREATE TABLE statement."
+    - content: "Add ## in front of the table name in the CREATE TABLE statement."
       isCorrect: true
       explanation: "Correct. Prefix your table name with two #'s to create a temporary global table."
-    - content: "Add a Global# in front of the table name in your CREATE TABLE statement."
+    - content: "Add a Global# in front of the table name in the CREATE TABLE statement."
       isCorrect: false
       explanation: "Incorrect. This would result in an invalid statement."
