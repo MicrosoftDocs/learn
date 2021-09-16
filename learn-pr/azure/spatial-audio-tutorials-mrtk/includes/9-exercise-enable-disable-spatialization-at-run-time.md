@@ -86,4 +86,4 @@ In this module, you'll learn how to Enable and disable spatialization at run tim
 
     2) Click the **No Function** dropdown of the same event. Then select **SpatializeOnOff** > **SwapSpatialization ()** to turn on and off the Spatial audio
 
-    :::image type="content" source="../media/button-action-setting.png" alt-text="Screenshot of Button action settings" lightbox="../media/button-action-setting.png":::
+    :::image type="content" source="../media/button-action-settings.png" alt-text="Screenshot of Button action settings" lightbox="../media/button-action-settings.png":::

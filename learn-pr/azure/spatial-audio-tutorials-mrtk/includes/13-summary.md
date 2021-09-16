@@ -10,4 +10,4 @@ You can continue working on different types of audio. Consider trying the follow
 ## Further reading
 
 * Learn more about [Audio Spatializer SDK](https://docs.unity3d.com/Manual/AudioSpatializerSDK.html)
-* Learn more about [Spatial sound in Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/spatial-sound-in-unity)
+* Learn more about [Spatial sound in Unity](/windows/mixed-reality/develop/unity/spatial-sound-in-unity)

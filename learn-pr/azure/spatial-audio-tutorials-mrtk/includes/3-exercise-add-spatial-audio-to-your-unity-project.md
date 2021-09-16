@@ -33,7 +33,7 @@ Then follow the Changing the Spatial Awareness Display Option instructions to en
 
 * On desktop versions of Windows, Spatial audio is disabled by default. Enable it by right-clicking on the volume icon in the task bar. To get the best representation of what you'll hear on HoloLens 2, choose **Spatial sound -> Windows Sonic for Headphones**.
 
-    :::image type="content" source="../media/spatial-audio-setting.png" alt-text="Screenshot of Desktop spatial audio settings" lightbox="../media/spatial-audio-setting.png":::
+    :::image type="content" source="../media/spatial-audio-settings.png" alt-text="Screenshot of Desktop spatial audio settings" lightbox="../media/spatial-audio-settings.png":::
 
     > [!NOTE]
     > This setting is only required if you plan to test your project in the Unity editor.

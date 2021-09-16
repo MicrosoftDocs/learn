@@ -4,7 +4,7 @@ In previous module, you've added spatialization for the sounds to give them a se
 
 1. In Spatializing button interaction sounds Tutorial, we added a mixer. The mixer includes one **Group** by default called **Master**. Because we'll only want to apply a reverb effect to some sounds, let's add a second Group for those sounds. To add a Group, right click on the Master group in the **Audio Mixer** choose **Add child group** and give suitable name for example _Room Effect_:
 
-    :::image type="content" source="../media/add-child-group.png" alt-text="Screenshot of Add child group" lightbox="../media/add-child-group":::
+    :::image type="content" source="../media/add-child-group.png" alt-text="Screenshot of Add child group" lightbox="../media/add-child-group.png":::
 
 2. Each **Group** has its own set of effects. Add a reverb effect to the new group by clicking **Add...** on the new group, and choosing **SFX Reverb**:
 
