@@ -71,7 +71,7 @@ In this section, you'll learn how to configure your project to build and deploy 
 
     When the build process is complete, your apps should automatically load on your Android device.
 
-## Build your application to your iOS device
+## Build your application to your ios device
 
 In this section, you'll learn how to configure your project, to build and deploy it to your iOS device.
 

@@ -19,7 +19,6 @@
 
     > [!Note]
     > If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' is obsolete, you can ignore these warnings.
-
     > [!Tip]
     >For a reminder on how to import a Unity custom package, you can refer to the Importing the tutorial assets instructions.
 
@@ -44,7 +43,6 @@
 
     > [!Note]
     > If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' is obsolete, you can ignore these warnings.
-
     > [!Tip]
     > For a reminder on how to import a Unity custom package, you can refer to the Importing the tutorial assets instructions.
 
@@ -69,6 +67,5 @@
 
     > [!Note]
     > If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' is obsolete, you can ignore these warnings.
-
     > [!Tip]
     > For a reminder on how to import a Unity custom package, you can refer to the Importing the tutorial assets instructions.

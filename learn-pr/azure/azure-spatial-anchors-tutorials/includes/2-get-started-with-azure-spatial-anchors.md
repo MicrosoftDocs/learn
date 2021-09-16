@@ -16,7 +16,7 @@ Within Unity, the AR Foundation lets you work with augmented reality systems acr
 * Magic Leap XR Plugin on Magic Leap
 * Windows XR Plugin on HoloLens
 
-## AR Anchor manager script
+## AR anchor manager script
 
 A point in space that you want the devices to track is called an anchor. For each anchor, the anchor manager creates GameObjects. Then, the device typically performs additional work to update the position and orientation of the anchor throughout its lifetime.
 

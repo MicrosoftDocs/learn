@@ -43,7 +43,6 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
 
     > [!Warning]
     > There's a known issue with ASA v2.9.0 and v2.10.0-preview.1 that requires two additional objects to be placed in the scene. Please use the Add Component button in the inspector window to add an AR Camera Manager (Script) and an AR Session (Script) to the **MixedRealityToolkit** object. Be sure to disable the Camera that is created automatically while adding the AR Camera Manager (Script) by unchecking the checkbox next to the Camera object in the inspector window. This issue will be addressed in the full release of ASA v2.10.0.
-
     > [!Note]
     > When you add the AR Anchor Manager (Script) component, the AR Session Origin (Script) component is automatically added because it's required by the AR Anchor Manager (Script) component.
 
