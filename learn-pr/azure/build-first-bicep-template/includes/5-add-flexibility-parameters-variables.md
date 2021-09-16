@@ -175,7 +175,6 @@ Next, you can create variables that determine the SKUs to use for the storage ac
 ```bicep
 var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
 var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'F1'
-var appServicePlanTierName = (environmentType == 'prod') ? 'PremiumV3' : 'Free'
 ```
 
 Notice some new syntax here too. Let's break it down:

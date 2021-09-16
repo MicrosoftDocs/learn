@@ -23,7 +23,7 @@ During the process, you'll:
 
 1. Find the places within the resource definitions where the `location` and `name` properties are set, and update them to use the parameter values. After you're finished, the resource definitions within your Bicep file should look like this:
 
-   :::code language="bicep" source="code/6-template-1.bicep" range="7-35" highlight="2-3, 14-15, 23-24":::
+   :::code language="bicep" source="code/6-template-1.bicep" range="7-34" highlight="2-3, 14-15, 22-23":::
 
 1. Save the changes to the file.
 
@@ -37,13 +37,13 @@ During the process, you'll:
 
 1. Below the line that declares the `appServicePlanName` variable, add the following variable definitions:
 
-   :::code language="bicep" source="code/6-template-2.bicep" range="12-14" :::
+   :::code language="bicep" source="code/6-template-2.bicep" range="12-13" :::
 
    Notice that you're setting these variables' values by using the ternary operator to express some if/then/else logic.
 
 1. Find the places within the resource definitions where the  `sku` properties are set, and update them to use the parameter values. After you're finished, the resource definitions in your Bicep file should look like this:
 
-   :::code language="bicep" source="code/6-template-2.bicep" range="16-44" highlight="5, 17-18":::
+   :::code language="bicep" source="code/6-template-2.bicep" range="15-42" highlight="5, 17":::
 
    Notice that you haven't parameterized everything. You've set some properties right in the resource definitions where you know these aren't going to change between deployments.
 

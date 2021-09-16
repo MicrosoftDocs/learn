@@ -49,7 +49,6 @@ resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
   location: 'eastus'
   sku: {
     name: 'F1'
-    tier: 'Free'
   }
 }
 ```
