@@ -85,13 +85,13 @@ its **Transform** component as follows
     :::image type="content" source="../media/visual-studio-window-2-debug.png" alt-text="Screenshot of Visual Studio Window 2." lightbox="../media/visual-studio-window-2-debug.png":::
 
     > [!IMPORTANT]
-    > Before building to your device, the device must be in Developer Mode and paired with your development computer. Both of these steps can be completed by following [these instructions](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio).
+    > Before building to your device, the device must be in Developer Mode and paired with your development computer. Both of these steps can be completed by following [these instructions](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio).
     > [!TIP]
-    > You can also deploy to the [HoloLens Emulator](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator) or create an [App Package](https://docs.microsoft.com/windows/uwp/packaging/packaging-uwp-apps) for sideloading.
+    > You can also deploy to the [HoloLens Emulator](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator) or create an [App Package](/windows/uwp/packaging/packaging-uwp-apps) for sideloading.
 
 4. Using Start Without Debugging automatically starts the app on your device without the Visual Studio debugger attached.
 
 5. Select **Build** > **Deploy Solution** to deploy to your device without having the app start automatically.
 
     > [!NOTE]
-    > You may notice the Diagnostics profiler in the app, which you can toggle on or off by using the speech command **"Toggle Diagnostics"**. It's recommended that you keep the profiler visible most of the time during development to understand when changes to the app may impact performance. For example, HoloLens apps should [continuously run at 60 FPS](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality).
+    > You may notice the Diagnostics profiler in the app, which you can toggle on or off by using the speech command **"Toggle Diagnostics"**. It's recommended that you keep the profiler visible most of the time during development to understand when changes to the app may impact performance. For example, HoloLens apps should [continuously run at 60 FPS](/windows/mixed-reality/develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality).
