@@ -22,7 +22,7 @@ During the process, you'll:
 
 ### Add a reference to the module from the parent template
 
-Now that you have a complete module to deploy the App Service resources, you can refer to the module within the parent template. Because the module now deploys the App Service resources, you can delete the associated resources and variables from the parent template.
+Now that you have a complete module to deploy the App Service resources, you can refer to the module within the parent template. Because the module deploys the App Service resources, you can delete the associated resources and variables from the parent template.
 
 1. In the *main.bicep* file, delete the App Service resources and the `appServicePlanName` and `appServicePlanSkuName` variable definitions. Don't delete the App Service-related parameters, because you still need them. Also, don't delete the storage account parameters, variable, or resources.
 
