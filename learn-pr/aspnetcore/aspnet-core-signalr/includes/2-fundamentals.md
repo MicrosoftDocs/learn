@@ -4,7 +4,7 @@ As a .NET developer tasked with implementing real-time web functionality, ASP.NE
 
 ## Fundamentals
 
-Familiarizing yourself with the common nomenclature of SignalR is very helpful. You will learn what components are required in a server application, versus those in client applications. Additionally, you'll gain an understanding of the various communication mechanisms.
+Familiarizing yourself with the common nomenclature of SignalR is very helpful. You will learn what components are required in a server application, versus those in client applications. Additionally, you'll gain an understanding of the various duplex communication mechanisms.
 
 ### Transports
 

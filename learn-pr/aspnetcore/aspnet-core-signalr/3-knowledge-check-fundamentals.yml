@@ -21,7 +21,7 @@ quiz:
           explanation: "The MessagePack hub protocol provides an alternative to the default JSON protocol, and produces smaller messages."
         - content: "JSON"
           isCorrect: false
-          explanation: "The JSON hub protocol is the default protocol, and is human readable, however; is is uncompressed and has larger messages compared to its binary counterpart."
+          explanation: "The JSON hub protocol is the default protocol, and is human readable, however; it's uncompressed and has larger messages compared to its binary counterpart."
         - content: "BlazorPack"
           isCorrect: false
           explanation: "While BlazorPack is a binary protocol, it is only available with the Blazor server hosting model."
@@ -47,14 +47,14 @@ quiz:
         - content: "Long Polling"
           isCorrect: true
           explanation: "Long Polling is used since its the lowest common denominator of potential transports."
-    - content: ""
+    - content: "With a SignalR connection which of the following statements is true?"
       choices:
-        - content: ""
+        - content: "Only clients can send messages to the server"
+          isCorrect: false
+          explanation: "While clients can send message to the server, the server can also send messages to clients."
+        - content: "Only servers can send messages to clients"
+          isCorrect: false
+          explanation: "While servers can send message to clients, clients can also send messages to the server."
+        - content: "Both client and server can send messages (duplex communication)"
           isCorrect: true
-          explanation: ""
-        - content: ""
-          isCorrect: false
-          explanation: ""
-        - content: ""
-          isCorrect: false
-          explanation: ""
+          explanation: "SignalR creates a duplex communication, in which both the server and client's alike can send messages to each other."
