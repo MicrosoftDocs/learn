@@ -60,7 +60,7 @@ To define the full operation:
 
     [!code-qsharp[](code/4-program-3.qs?highlight=9-16)]
 
-    `EntryPoint` tells the Q# compiler to begin executing the program here. In Q#, qubits are allocated through the `use` keyword. When it gets allocated, a qubit is always in the `Zero` state. The `H` operation places the qubit in superposition. The `M` operation measures the qubit and returns the measured value (a zero or a one).
+    `EntryPoint` tells the Q# compiler to begin executing the program here. In Q#, qubits are allocated through the `use` keyword. When a qubit is allocated, it is always in the `Zero` state. The `H` operation places the qubit in superposition. The `M` operation measures the qubit and returns the measured value (a zero or a one).
 
 ## Run the program
 
