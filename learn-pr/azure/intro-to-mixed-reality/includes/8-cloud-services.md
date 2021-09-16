@@ -36,20 +36,20 @@ Here are some common use cases for Microsoft Mesh:
 
 - **Virtual collaboration:** Colleagues working time zones apart can collaborate as if they’re physically in the same room.  Mesh integrates with Microsoft 365, so connections, calendars, content, and workflows naturally transition to mixed reality. These shared experiences help deepen understanding, increase employee engagement and improve productivity.    
 
-     :::image type="content" source="../media/Microsoft-Mesh-Hero-Film-Images.02425.jpg" alt-text="Photo of a virtual collaboration experience of Microsoft Mesh: people collaborating on the hologram of a car.":::    
+     :::image type="content" source="../media/Microsoft-Mesh-Hero-Film-Images-02425.jpg" alt-text="Photo of a virtual collaboration experience of Microsoft Mesh: people collaborating on the hologram of a car.":::    
 
 - **Spatially aware design reviews:** Mesh enhances 3D design reviews by enabling users to join from anywhere using any device. Whether physically present or holoported, colleagues can see and annotate 3D models in real-time.  All content persists between design sessions so teams can quickly start where they left off. This common understanding ignites ideas, sparks creativity, and forms powerful bonds.    
 
-     :::image type="content" source="../media/Microsoft-Mesh-Hero-Film-Images.01509.jpg" alt-text="Photo of a spatially aware design experience of Microsoft Mesh: two people collaborating on th 3D hologram of product assembly.":::    
+     :::image type="content" source="../media/Microsoft-Mesh-Hero-Film-Images-01509.jpg" alt-text="Photo of a spatially aware design experience of Microsoft Mesh: two people collaborating on th 3D hologram of product assembly.":::    
 
 - **Help others remotely:** When employees need help, there is nothing like having an expert right next to them to provide guidance and offer new perspectives. Mesh enables remote experts to be present wherever they are needed. They can overlay contextual data and help share insights quickly and effectively, resolving issues faster.   
 
-    :::image type="content" source="../media/Microsoft-Mesh-Hero-Film-Images.00917.jpg" alt-text="Photo of remote assistance experience of Microsoft Mesh: two people across the globe visualizing 3D holographic image of data as shown on global scale.":::    
+    :::image type="content" source="../media/Microsoft-Mesh-Hero-Film-Images-00917.jpg" alt-text="Photo of remote assistance experience of Microsoft Mesh: two people across the globe visualizing 3D holographic image of data as shown on global scale.":::    
 
 - **Train and learn together:** Training, especially on complex topics such as surgery, equipment maintenance, and traffic control, is hard to do without being in the same room with the instructor and looking at the same set of objects from multiple perspectives.  With Mesh, employees can learn together from anywhere thanks to holoportation, holographic sharing, and visualization. Mesh helps improve the efficacy of virtual training while reducing travel and logistics costs.    
 
-     :::image type="content" source="../media/Microsoft-Mesh-Hero-Film-Images.01220.jpg" alt-text="Photo of remote learning experience of Microsoft Mesh: remote training of calligraphy techniques using paint brushes.":::   
+     :::image type="content" source="../media/Microsoft-Mesh-Hero-Film-Images-01220.jpg" alt-text="Photo of remote learning experience of Microsoft Mesh: remote training of calligraphy techniques using paint brushes.":::   
 
 - **Host virtual meet-ups:** Foster a deeper sense of connection and community by hosting virtual meet-ups in Mesh-powered mixed reality experiences. Form powerful bonds with others by letting your personality shine through as technology fades away.   
 
-     :::image type="content" source="../media/Microsoft-Mesh-Hero-Film-Images.02794.jpg" alt-text="Photo of virtual meet-up experience of Microsoft Mesh: doctor and patient meeting remotely to check on rehabilitation progress.":::   
+     :::image type="content" source="../media/Microsoft-Mesh-Hero-Film-Images-02794.jpg" alt-text="Photo of virtual meet-up experience of Microsoft Mesh: doctor and patient meeting remotely to check on rehabilitation progress.":::   
