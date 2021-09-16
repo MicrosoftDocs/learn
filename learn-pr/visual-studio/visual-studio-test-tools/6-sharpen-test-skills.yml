@@ -4,7 +4,7 @@ title: Sharpen your test skills
 metadata:
   unitType: learning-content
   title: sharpen-test-skills
-  description: Sharpen your test-writing skills by getting familiar with fluent assertions, data-driven tests, and mocking.
+  description: Sharpen your test-writing skills by getting familiar with Fluent Assertions, data-driven tests, and mocking.
   author: kendrahavens
   ms.author: kehavens
   ms.date: 07/19/2021
