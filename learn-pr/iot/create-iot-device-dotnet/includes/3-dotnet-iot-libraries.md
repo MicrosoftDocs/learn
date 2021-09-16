@@ -1,5 +1,8 @@
 In the previous unit, you used common hardware components to construct a prototype device for measuring and maintaining environmental conditions in a cave. In this unit, you'll learn about the .NET IoT Libraries, which enable interaction with your device.
 
+> [!NOTE]
+> This unit is a rough draft in progress. Don't expect it to make sense yet. 😉
+
 ## Libraries
 
 The .NET IoT Libraries are composed of two NuGet packages:

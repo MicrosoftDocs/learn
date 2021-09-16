@@ -8,7 +8,17 @@ This array of pins on the Raspberry Pi is called the General Purpose Input/Outpu
 
 This versatile pin header supports communication using a variety of protocols. You'll learn more about the supported protocols in the next unit.
 
-A GPIO breakout board combined with a breadboard streamlines connecting sensors and other components to the GPIO header.
+## Breadboards
+
+A breadboard is a rapid prototyping tool for circuits.
+
+:::image type="content" source="../media/breadboard-highlighted.jpg" alt-text="An image of a half-sized breadboard with the bus strips and socket strips highlighted." lightbox="../media/breadboard-highlighted.jpg":::
+
+The breadboard is organized in rows and columns called *strips*. The bus strips on the edges (indicated in red) provide a continuous connection over the length of the breadboard. They are generally used to supply power for the circuit. The socket strips toward the middle of the breadboard (in cyan) allow components to be connected together without soldering or wires.
+
+:::image type="content" source="../media/breadboard-close-up.jpg" alt-text="A close-up image of a breadboard illustrating how connections work in socket strips." lightbox="../media/breadboard-close-up.jpg":::
+
+For example, any pin plugged into row *1*, column *a* in the previous image would also be connected to any pin plugged into row *1*, columns *b-e*. On the other side of the divider, row *1* columns *f-j* are similarly connected.
 
 ## Measuring environmental conditions
 
@@ -38,14 +48,14 @@ To activate the LED, your code will activate a GPIO pin for output, which will s
 
 ## Exercise: Construct the IoT device
 
-We're going to use a breadboard to build the device. A breadboard is a rapid prototyping tool for circuits. The completed breadboard should look like the following diagram.
+We're going to use a breadboard to build the device. The completed breadboard should look like the following diagram.
 
 :::image type="content" source="../media/breadboard.png" alt-text="A Fritzing diagram illustrating the breadboard solution." lightbox="../media/breadboard.png":::
 
 Refer to the diagram above as you construct your device.
 
 1. Position the GPIO breakout and BME280 breakout on the breadboard as shown.
-1. Use jumper wires to connect the BME280 to the GPIO breakout.
+1. Position jumper wires on the breadboard to connect the BME280 to the GPIO breakout.
 
     | GPIO pin | BME280 breakout pin         | Diagram color |
     |----------|-----------------------------|---------------|
@@ -54,7 +64,7 @@ Refer to the diagram above as you construct your device.
     | SDA      | SDI (sometimes labeled SDA) | Blue          |
     | SCL      | SCL (sometimes labeled SCL) | Orange        |
 
-1. Use jumper wires to connect the LED to the GPIO breakout.
+1. Position jumper wires on the breadboard to connect the LED to the GPIO breakout.
 
     | Connect this...                         | ...to this                           | Diagram color |
     |-----------------------------------------|--------------------------------------|---------------|

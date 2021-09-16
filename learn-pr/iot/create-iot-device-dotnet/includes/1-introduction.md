@@ -12,10 +12,11 @@ In this module, you'll learn about the .NET IoT Libraries by implementing a devi
 
 In this module you will:
 
-- Construct a sensor circuit.
+- Construct circuits to implement:
+  - An environmental sensor.
+  - A switched circuit to control LEDs or relay modules.
 - Write code to read temperature and humidity from a sensor.
-- Construct an LED circuit.
-- Write code to use GPIO pins to activate the LED.
+- Write code to use GPIO pins to activate an LED or relay module.
 - Deploy and test the code.
 
 ## Prerequisites
