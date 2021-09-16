@@ -9,4 +9,4 @@ Consider trying the following interactions:
 
 ## Further reading
 
-* Learn more about [Holographic Remoting](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/holographic-remoting-overview)
+* Learn more about [Holographic Remoting](/windows/mixed-reality/develop/platform-capabilities-and-apis/holographic-remoting-overview)
