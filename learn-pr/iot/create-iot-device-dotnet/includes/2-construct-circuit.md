@@ -4,7 +4,7 @@ In this unit, we'll construct the circuits used to monitor environmental conditi
 
 This array of pins on the Raspberry Pi is called the General Purpose Input/Output (GPIO) header.
 
-![A Raspberry Pi 3 with the GPIO header highlighted.](../media/gpio-header.png#lightbox)
+:::image type="content" source="../media/gpio-header.png" alt-text="A Raspberry Pi 3 with the GPIO header highlighted." lightbox="../media/gpio-header.png":::
 
 This versatile pin header supports communication using a variety of protocols. You'll learn more about the supported protocols in the next unit.
 
@@ -13,7 +13,7 @@ A GPIO breakout board combined with a breadboard streamlines connecting sensors 
 
 To measure temperature and humidity, you'll use a commonly available low-cost environmental sensor, the BME280.
 
-![Two examples of available BME280 breakouts.](../media/bme280-examples.png#lightbox)
+:::image type="content" source="../media/bme280-examples.png" alt-text="Two examples of available BME280 breakouts." lightbox="../media/bme280-examples.png":::
 
 Your BME280 is already installed on a breakout board. All we need to do is connect the breakout board to the Inter-Integrated Circuit (I2C) bus on the Raspberry Pi. The I2C bus is accessible on the GPIO header.
 
@@ -27,7 +27,7 @@ Your BME280 is already installed on a breakout board. All we need to do is conne
 
 In a real-world scenario, you would use a relay module like this to control power to the fan.
 
-![An example of a generic 5V relay module.](../media/relay-module.png#lightbox)
+:::image type="content" source="../media/relay-module.png" alt-text="An example of a generic 5V relay module." lightbox="../media/relay-module.png":::
 
 A relay is an electromagnetic switch that allows you to use small currents to control larger currents. When a small current is passed through the low-voltage input on the relay, it activates the switch. Activating the switch completes a different circuit.
 
@@ -39,7 +39,7 @@ To activate the LED, your code will activate a GPIO pin for output, which will s
 
 We're going to use a breadboard to build the device. A breadboard is a rapid prototyping tool for circuits. The completed breadboard should look like the following diagram.
 
-![A Fritzing diagram illustrating the breadboard solution.](../media/breadboard.png#lightbox)
+:::image type="content" source="../media/breadboard.png" alt-text="A Fritzing diagram illustrating the breadboard solution." lightbox="../media/breadboard.png":::
 
 Refer to the diagram above as you construct your device.
 
@@ -64,7 +64,7 @@ Refer to the diagram above as you construct your device.
     > [!NOTE]
     > The resistor is required to ensure the LED isn't burnt out due to excessive current. You don't need a resistor in a real-world relay scenario.
 
-![An image depicting a completed breadboard prototype.](../media/breadboard-complete.jpg#lightbox)
+:::image type="content" source="../media/breadboard-complete.jpg" alt-text="An image depicting a completed breadboard prototype." lightbox="../media/breadboard-complete.jpg":::
 
 ## Connect the Raspberry Pi
 
