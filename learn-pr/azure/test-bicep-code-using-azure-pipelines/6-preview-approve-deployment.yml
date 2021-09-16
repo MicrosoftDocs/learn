@@ -4,8 +4,8 @@ title: Preview and approve your deployment
 metadata:
   unitType: learning-content
   title: Preview and approve your deployment
-  description: Learn about previewing the changes your Bicep code will make to your Azure environment by using the what-if operation in a deployment pipeline.
-  ms.date: 09/08/2021
+  description: Learn about previewing the changes that your Bicep code will make to your Azure environment by using the what-if operation in a deployment pipeline.
+  ms.date: 09/15/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
