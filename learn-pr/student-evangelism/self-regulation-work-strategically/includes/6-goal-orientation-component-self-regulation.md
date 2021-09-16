@@ -1,4 +1,4 @@
-For your team members to do well in training and the upcoming project, they need to learn effectively. You realize that the team consists of different types of learners with various motivations. In this unit, you'll learn to recognize your team's goal orientations. This recognition will help you identify which method of training and evaluation will work best for your team members based on their goal orientations. You'll also discover that mastery-based goals are the most effective goals for learning and retention.
+For your team members to do well in training and the upcoming project, they need to learn effectively. You realize that the team consists of different types of learners with various motivations. In this unit, you'll learn to recognize your team's goal orientations. This recognition will help you identify which method of training and evaluation will work best for your team based on the team members' goal orientations. You'll also discover that mastery-based goals are the most effective goals for learning and retention.
 
 ## Goal orientation theory
 
@@ -36,7 +36,7 @@ Performance orientation can be divided further into:
 
 Mastery goal orientation is often described as loving learning for its own sake. Mastery-based goals are considered the most effective goals for learning and retention. Learners who have mastery goal orientations:
 
-- Have a fundamental interest in, and a positive attitude toward, learning.
+- Have a fundamental interest in learning and a positive attitude toward it.
 
 - Are actively engaged in their learning.
 
@@ -51,7 +51,7 @@ Mastery goal orientation is often described as loving learning for its own sake.
 - Persist in the face of difficulty.
  
     > [!NOTE]
-    > The characteristics of mastery goal orientation and growth mindset are similar. A *growth mindset* is a mental attitude that you can learn anything you don't know, and that you can improve your abilities through dedication and hard work. 
+    > The characteristics of mastery goal orientation and growth mindset are similar. A *growth mindset* is a mental attitude that you can learn anything you don't know and that you can improve your abilities through dedication and hard work. 
 
 :::image type="content" source="../media/4-challenge.png" alt-text="Drawing that shows a person at computer screen that displays the word 'challenge.' The person seems excited to begin working." border="false":::
 
@@ -79,7 +79,7 @@ As a mentor, you can influence the goal orientations that your learners have. To
 - Allow learners to learn at their own pace.
 
     > [!TIP]
-    > Mastery goals can take pressure off learners who are struggling, disengaged, or have a learning difficulty. When these learners set mastery goals, it helps them achieve success with their current abilities.
+    > Mastery goals can take pressure off learners who are struggling or disengaged or have a learning difficulty. When these learners set mastery goals, it helps them achieve success with their current abilities.
 
 - Give learners the opportunity to be responsible for their learning, make decisions, and assume leadership roles. 
 
@@ -97,7 +97,7 @@ As a mentor, you can influence the goal orientations that your learners have. To
 
 ## What's motivating your team?
 
-You've noticed that your team members seem motivated by various things. One person is eager to present a code idea to the team, while another happily works alone. Some team members like to work in groups. They like to propose ideas and receive critiques and seem to thrive on feedback. Others are reluctant to share their work. They're concerned they made a mistake that makes them look bad to the team. 
+You've noticed that your team members seem motivated by various things. One person is eager to present a code idea to the team, while another happily works alone. Some team members like to work in groups. They like to propose ideas and receive critiques and seem to thrive on feedback. Others are reluctant to share their work. They're concerned they might make a mistake that will make them look bad to the team. 
 
 As training draws closer to its end, several team members have approached you asking if there will be a test or evaluation. For some, a test would be a challenge and possible learning experience. For others, the possibility that they'll have to take a test is terrifying. What will everyone think of them if they do poorly?
 
@@ -111,20 +111,20 @@ As the developer team lead, you need to decide how to organize your team's train
 
 - **Approach #3**: A coding workshop conducted by peers and experts.
 
-You want to maximize the learning potential of your team and minimize stress levels. You met with your team members and discovered their goal orientations. This table lists the results of those conversations:
+You want to maximize the learning potential of your team and minimize stress levels. You meet with your team members and discover their goal orientations. This table lists the results of those conversations:
 
 
 | **Training approach**                          | **Description**                                              | **Responses of team members who   have performance goal orientation** | **Responses   of team members who have mastery goal orientation** |
 | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **#1: Independent  study and then evaluation** | Team members will learn by  completing assignments on their own. Everyone will then meet and evaluate each other's work. Senior developers will offer their evaluations too,  because they know the topics well. | They want to do well  so they can impress their teammates and the senior developers with their  work. | They're looking forward to the challenge of  learning new code.  They want to get feedback (good or bad) from the team and senior developers because it will help them  improve. |
 | **#2: Coding  class with a test**              | Team members will  participate in a coding class. Everyone will work on assignments and turn  them in for a grade. There will be a test at the end. The person with the highest grade will get special recognition. | It's important to them that they do better than their  teammates.   They hope the subject  matter will be easy because they hate to fail. They're already stressed  out about a possible test. | Learning how to write code well is most important to them. It's more important than a test score. They're not stressed out about tests because they enjoy evaluating what they've learned. |
-| **#3: Coding  workshop**                       | The team will learn  together in a workshop setting. There won't be any grading. Experienced developers will  be there to help write, run, and troubleshoot the code. Everyone will work in  groups to learn from each other's code. Participants will be asked  to volunteer their code samples as solutions to problems. The group will  evaluate these submissions. | They're motivated to impress their teammates and senior developers by being the first to think of elegant ways to solve problems. They might avoid volunteering solutions  that they think are less than perfect so they aren't criticized. | They want to learn as much as they can from  their teammates and senior developers.  They'll enthusiastically share their work with the group, even if it's incomplete or has problems. Criticism doesn't bother them as long as they're learning. |
+| **#3: Coding  workshop**                       | The team will learn  together in a workshop setting. There won't be any grading. Experienced developers will  be there to help write, run, and troubleshoot the code. Everyone will work in  groups to learn from each other's code. Participants will be asked  to volunteer their code samples as solutions to problems. The group will  evaluate these samples. | They're motivated to impress their teammates and senior developers by being the first to think of elegant ways to solve problems. They might avoid volunteering solutions  that they think are less than perfect so they aren't criticized. | They want to learn as much as they can from  their teammates and senior developers.  They'll enthusiastically share their work with the group, even if it's incomplete or has problems. Criticism doesn't bother them as long as they're learning. |
 
 ## Reflection
 
 Based on the responses you received from your team:
 
-- Assuming an equal number of respondents have performance and mastery orientations, what training approach would be most effective?
+- Assuming an equal number of respondents have performance and mastery orientations, which training approach would be most effective?
 
 - If there are more respondents who have performance orientations, which approach would be most effective?
 

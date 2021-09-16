@@ -52,7 +52,7 @@ A team member participating in training is struggling with an in-course task. Sh
 
 - What can you say to help her work more strategically?
 
-    - Possible answer: You could reassure her that plans are rarely 100 percent correct. Explain that most plans change a little (or a lot) during development. Remind them of the three-step iterative feedback loop. The pseudocode is only a starting plan that they'll typically adjust if or when parts of it don't work.
+    - Possible answer: You could reassure her that plans are rarely 100 percent correct. Explain that most plans change a little (or a lot) during development. Remind her of the three-step iterative feedback loop. The pseudocode is only a starting plan that she'll typically adjust if or when parts of it don't work.
 
 ### Scenario 4
 

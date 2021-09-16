@@ -1,4 +1,4 @@
-To work through the challenges of training and your project, you and your team need a process to plan, test, and revise your approach. As a team lead, you want to know how to support your team members while they're in training. 
+To work through the challenges of training and your project, you and your team need a process to plan and test and revise your approach. As a team lead, you want to know how to support your team members while they're in training. 
 
 ## Self-regulated learning
 
@@ -6,7 +6,7 @@ Imagine you're working on a project. You realize you've tried the same solution,
 
 :::image type="content" source="../media/3-plan-do-evaluate.png" alt-text="Diagram that shows a 3-step process: Plan, Do, Evaluate. A person next to the evaluate step is saying 'Did it work?'" border="false":::
 
-*Self-regulated learning* is a systematic, goal-oriented, behavior-based learning strategy. When you practice self-regulated learning, you can become a strategic and effective learner. Its approach is similar to the scientific method. It uses a three-phase iterative feedback loop:
+*Self-regulated learning* is a systematic, goal-oriented, behavior-based learning strategy. When you practice self-regulated learning, you can become a strategic and effective learner. The approach is similar to the scientific method. It uses a three-phase iterative feedback loop:
 
 1. Plan. Set a goal and figure out how to approach it. Ask yourself "What’s my goal? What strategy will I use?"
 
@@ -19,7 +19,7 @@ Imagine you're working on a project. You realize you've tried the same solution,
 
 ## Supporting self-regulated learning in others
 
-When you're in a role of mentor or leader, you can encourage self-regulated learning in others. Doing so can help them be more successful learners. You can act as a *mirror* or a coach, give them feedback on their work, and help them strategize about their process. 
+When you're in a role of mentor or leader, you can encourage self-regulated learning in others. Doing so can help them be more successful learners. You can act as a *mirror* or a coach, give them feedback on their work, and help them strategize about their processes. 
 
 > [!TIP] 
 > To act as a mirror when you mentor, be fully present to the person talking to you and actively listen to them. Confirm your understanding of what they said by telling them what they said. This process also helps the other person clarify their perspective.

@@ -44,7 +44,7 @@ After you review the video, consider these questions:
 When you approach a challenging task, you might not know where to start. Or you might want to give up after your first try because your plans didn't work. But plans rarely work perfectly the first time you try them. Usually, you need to rethink and revise them.
 
 > [!NOTE] 
-> A central idea in self-regulation is that you should set realistic expectations when you start a project. Assume that you might not be completely successful on your first attempt, and that you might need to revise your plans. Otherwise, you might quit if your plan doesn't work the first time.
+> A central idea in self-regulation is that you should set realistic expectations when you start a project. Assume that you might not be completely successful on your first attempt and that you might need to revise your plans. Otherwise, you might quit if your plan doesn't work the first time.
 
 One way you can push through a challenging task is to be *strategic* by creating a plan to solve a problem or work on a task. Strategically approaching challenges can help you avoid common learning pitfalls that can make you want to quit a task. These pitfalls include not knowing where to start when faced with a large task and the tendency to give up on a task when you're frustrated.
 
@@ -55,7 +55,7 @@ When you work through a problem or learn something new, having a plan allows you
 Strategized approaches start with metacognition. Your metacognition is what allows you to be strategic and self-regulate. When you become aware of your thinking and actions, you'll be less likely to quit. You won't waste time trying solutions that aren't working or feel as though you failed. 
 
 > [!TIP]
-> Exercise your metacognition by tuning into your thought processes. Pay attention to any negative or self-defeating internal dialogue and replace it with positive, self-supportive internal dialogue.
+> Exercise your metacognition by tuning in to your thought processes. Pay attention to any negative or self-defeating internal dialogue and replace it with positive, self-supportive internal dialogue.
 
  Without metacognition, you're more likely to:
 
@@ -75,9 +75,9 @@ A large challenge can be overwhelming. Consider breaking large challenges into s
 
 ### Keep a log or record
 
-When faced with a difficult task, you might try approaches arbitrarily, hoping that one of them works. This is sometimes referred to as *spinning your wheels*. It means performing an activity without structure or results. Also, you might not keep track of the approaches you try and what worked or didn't. Without knowing what you've already done and whether it was successful, it's difficult to develop a strategized approach.
+When faced with a difficult task, you might try approaches arbitrarily, hoping one of them works. This is sometimes referred to as *spinning your wheels*. It means performing an activity without structure or results. Also, you might not keep track of the approaches you try and what worked or didn't. Without knowing what you've already done and whether it was successful, it's difficult to develop a strategized approach.
 
-Keeping a log or a record can help you organize and track your approach to solving a problem. Tracking your progress helps you avoid guessing what a solution is and working for an extended period without recognizing your accomplishments. Make a note or write down the steps you try, including what works and what doesn't. Use your log to review the work you've been doing and recognize the progress you've made. You can also share your log with someone who has experience, like a mentor, colleague, or peer. They should be able to provide feedback about your approach and advice for what your next steps should be.
+Keeping a log or a record can help you organize and track your approach to solving a problem. Tracking your progress helps you avoid guessing what a solution is and working for an extended period without recognizing your accomplishments. Make a note or write down the steps you try, including what works and what doesn't. Use your log to review the work you've been doing and recognize the progress you've made. You can also share your log with someone who has experience, like a mentor, colleague, or peer. That person should be able to provide feedback about your approach and advice for what your next steps should be.
 
 >[!TIP]
 > One purpose of a log is to have a record you can refer to later. That record is helpful when you're troubleshooting issues. It's also useful for people who tend to judge progress by the time that has passed rather than actual results. With a log, there's an answer to the question "What have I been doing for the last three hours?" It's right there in the log.

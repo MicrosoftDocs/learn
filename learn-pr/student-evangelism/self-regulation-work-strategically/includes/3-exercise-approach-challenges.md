@@ -1,4 +1,4 @@
-In this exercise, you'll read a set of statements and decide how much they apply to you.
+In this exercise, you'll read a set of statements and decide how much each one applies to you.
 
 ## How do you approach challenges?
 

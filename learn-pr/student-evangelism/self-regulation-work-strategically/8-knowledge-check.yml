@@ -21,7 +21,7 @@ quiz:
       explanation: "Incorrect. This process is useful, but it doesn't directly provide the preceding benefits."
     - content: "Having a mentor."
       isCorrect: false
-      explanation: "Incorrect. Having a mentor is useful, but doesn't provide all three of the preceding benefits."
+      explanation: "Incorrect. Having a mentor is useful, but it doesn't provide all three of the preceding benefits."
     - content: "Keeping a log or record."
       isCorrect: true
       explanation: "Correct. Keeping a log helps you account for the time you spend, track test steps and results, and get feedback when you review your process with a mentor or adviser."
