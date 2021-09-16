@@ -3,7 +3,7 @@
 With the .NET IoT Libraries, you can build devices that perform tasks such as:
 
 - Reading environmental conditions.
-- Accepting input from buttons, and dials.
+- Accepting input from physical buttons and dials.
 - Controlling electrical activity in other devices with relays.
 
 In this module, you'll learn about the .NET IoT Libraries by implementing a device to monitor environmental conditions and control a relay.

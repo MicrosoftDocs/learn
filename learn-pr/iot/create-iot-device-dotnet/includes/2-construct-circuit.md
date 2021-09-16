@@ -9,13 +9,14 @@ This array of pins on the Raspberry Pi is called the General Purpose Input/Outpu
 This versatile pin header supports communication using a variety of protocols. You'll learn more about the supported protocols in the next unit.
 
 A GPIO breakout board combined with a breadboard streamlines connecting sensors and other components to the GPIO header.
+
 ## Measuring environmental conditions
 
 To measure temperature and humidity, you'll use a commonly available low-cost environmental sensor, the BME280.
 
 :::image type="content" source="../media/bme280-examples.png" alt-text="Two examples of available BME280 breakouts." lightbox="../media/bme280-examples.png":::
 
-Your BME280 is already installed on a breakout board. All we need to do is connect the breakout board to the Inter-Integrated Circuit (I2C) bus on the Raspberry Pi. The I2C bus is accessible on the GPIO header.
+Your BME280 sensor chip is already installed on a breakout board. All you need to do is connect the breakout board to the Inter-Integrated Circuit (I2C) bus on the Raspberry Pi. The I2C bus is accessible on the GPIO header.
 
 > [!NOTE]
 > There are many manufacturers of BME280 breakouts. Most designs are similar, and the manufacturer shouldn't make any difference to the functionality. This module was built with the Adafruit example in the prerequisites. Ensure your BME280 breakout includes an Inter-Integrated Circuit (I2C) interface.
@@ -25,7 +26,7 @@ Your BME280 is already installed on a breakout board. All we need to do is conne
 
 ## Controlling fans
 
-In a real-world scenario, you would use a relay module like this to control power to the fan.
+In a real-world scenario, you'd use a relay module like this to control power to the fan.
 
 :::image type="content" source="../media/relay-module.png" alt-text="An example of a generic 5V relay module." lightbox="../media/relay-module.png":::
 
@@ -33,7 +34,7 @@ A relay is an electromagnetic switch that allows you to use small currents to co
 
 A real-world device might use this relay to control power to a fan. A fan large enough to maintain humidity in a cave would generally require a large AC current. For safety purposes, and to keep focus on the code, your device is going to use an LED to represent a relay. An illuminated LED will indicate that the relay is "on."
 
-To activate the LED, your code will activate a GPIO pin for output, which will send current to the LED. This is the same process you'd use to activate many relays.
+To activate the LED, your code will activate a GPIO pin for output, which will send current to the LED. This is the same process you'd use to send current to a relay and activate the switch.
 
 ## Exercise: Construct the IoT device
 
