@@ -41,7 +41,7 @@ The team is getting ready to take their first steps toward adopting Agile. Here 
 
 For most organizations, adopting Agile can be difficult. It requires a mind-shift and a culture-shift that challenges many existing policies and processes within the organization. Traditionally, most companies use a horizontal team structure. In practice, this means teams correspond to the software architecture. For example, there might be a team responsible for an application's user interface, another team responsible for data, and another team responsible for the service-oriented architecture.
 
-However, vertical teams provide better results for Agile projects. Vertical teams span the architecture and are aligned with product outcomes. For example, there might be a team responsible for the email portion of the app and team members come from all three of the abovementioned disciplines. Another benefit of the vertical team structure is that scaling occurs by adding teams. 
+However, vertical teams provide better results for Agile projects. Vertical teams span the architecture and are aligned with product outcomes. For example, there might be a team responsible for the email portion of the app and team members come from all three of the above mentioned disciplines. Another benefit of the vertical team structure is that scaling occurs by adding teams. 
 
 ### Mentor team members on Agile techniques and practices
 
