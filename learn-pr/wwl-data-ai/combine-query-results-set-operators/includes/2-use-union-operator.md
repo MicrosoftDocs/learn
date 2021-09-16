@@ -8,8 +8,8 @@ The UNION operator allows two or more query result sets to be combined into a si
 
 There are two rules when combining result sets using UNION:
 
-1. The number and the order of the columns must be the same in all queries.
-2. The data types must be compatible.
+* The number and the order of the columns must be the same in all queries.
+* The data types must be compatible.
 
 > [!NOTE] 
 > UNION is different from JOIN. JOIN compares columns from two tables, to create a result set containing rows from two tables. UNION concatenates two result sets together: all the rows in the first result set are appended to the rows in the second result set.
