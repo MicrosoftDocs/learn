@@ -16,10 +16,10 @@ How can you optimize the distribution of the mineral and avert an intergalactic 
 
 ## Learning objectives
 
-After completing this module, you'll be able to:
+After completing this module, you'll understand:
 
-* Learn about the origins of quantum-inspired optimization.
-* See which kinds of problems are best suited to this method.
+* The origins of quantum-inspired optimization.
+* Which kinds of problems are best suited to this method.
 * Understand how algorithms inspired by physical processes are used to solve difficult problems.
 * Solve a combinatorial optimization problem by using the Azure Quantum optimization service.
 
