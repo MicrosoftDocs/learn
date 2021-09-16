@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.create-git-project
 metadata:
-  title: How to Create A Git Project
-  description: Learn how to us Git to create a new project and track changes
+  title: How to Create and Modify A Git Project
+  description: Learn how to us Git to create and modify a new project in Git
   ms.date: 06/04/2020
   author: mshumba
   ms.author: mufaroshumba
@@ -26,7 +26,9 @@ units:
   - learn.student-evangelism.create-git-project.1-introduction
   - learn.student-evangelism.create-git-project.2-exercise-start-a-project
   - learn.student-evangelism.create-git-project.3-exercise-make-and-track-changes
-  - learn.student-evangelism.create-git-project.4-knowledge-check
-  - learn.student-evangelism.create-git-project.5-summary
+  - learn.student-evangelism.create-git-project.4-fix-simple-mistakes
+  - learn.student-evangelism.create-git-project.5-exercise-fix-mistakes
+  - learn.student-evangelism.create-git-project.6-knowledge-check
+  - learn.student-evangelism.create-git-project.7-summary
 badge:
   uid: learn.create-git-project.badge

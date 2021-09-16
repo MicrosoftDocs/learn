@@ -1,10 +1,13 @@
-Congratulations! In this module, you learned how to create a git project.
+Congratulations! In this module, you learned how to create a git project and edit errors that existed within it.
 
 You learned:
 
 - How to create a new project in Git
 - How to make commits to your Git workspace
 - How to track changes and modify files in your Git workspace
+- How to edit past commits in your Git workspace
+- How to recover deleted files in your Git workspace
+- How to undo a commit in Git
 
 
 At this point, you know enough about Git to use to make and modify a project. Collaboration with other developers is where version control shines. Check out the other modules in this learning path for more about using Git with others!
