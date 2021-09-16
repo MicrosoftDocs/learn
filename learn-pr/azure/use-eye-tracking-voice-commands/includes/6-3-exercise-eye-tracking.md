@@ -25,7 +25,7 @@ In this exercise, you'll learn how to enable eye-tracking for HoloLens 2 and add
     2) Clone the **DefaultMixedRealityInputSimulationProfile** and give it a suitable name for example, GettingStarted_MixedRealityInputSimulationProfile
     3) Locate **Eye Gaze Simulation** and set the **Default Eye Gaze Simulation Mode** to **Camera Forward Axis**
 
-    :::image type="content" source="../media/camera-forward-axis.png" alt-text="Screenshot of setting Default Eye Gaze Simulation Mode to Camera Forward Axis" lightbox="../camera-forward-axis.png":::
+    :::image type="content" source="../media/camera-forward-axis.png" alt-text="Screenshot of setting Default Eye Gaze Simulation Mode to Camera Forward Axis" lightbox="../media/camera-forward-axis.png":::
 
 ## Add eye-tracking to objects
 

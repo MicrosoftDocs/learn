@@ -12,6 +12,6 @@ You can continue to add eye-tracking and voice commands to your applications. Co
 
 ## Further reading
 
-* Learn more about [Eye-Tracking](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-basic-setup)
+* Learn more about [Eye-Tracking](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-basic-setup)
 
-* Learn more about [Voice Commands](https://docs.microsoft.com/windows/mixed-reality/design/voice-input)
+* Learn more about [Voice Commands](/windows/mixed-reality/design/voice-input)
