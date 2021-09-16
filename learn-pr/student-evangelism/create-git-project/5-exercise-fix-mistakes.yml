@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.create-and-edit-a-git-project.4-fix-simple-mistakes
-title: Fix simple mistakes
+uid: learn.student-evangelism.create-git-project.5-exercise-fix-mistakes
+title: Exercise - Fix mistakes using Git
 metadata:
-  title: Fix simple mistakes
+  title: Exercise - Fix mistakes using Git
   description: Use some of the Git tools for correcting mistakes.
   ms.date: 03/05/2021
   author: mshumba
@@ -10,5 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-git
 durationInMinutes: 10
+azureSandbox: true
+interactive: bash
 content: |
-  [!include[](includes/4-fix-simple-mistakes.md)]
+  [!include[](includes/5-exercise-fix-mistakes.md)]
