@@ -14,7 +14,7 @@ A breadboard is a rapid prototyping tool for circuits.
 
 :::image type="content" source="../media/breadboard-highlighted.jpg" alt-text="An image of a half-sized breadboard with the bus strips and socket strips highlighted." lightbox="../media/breadboard-highlighted.jpg":::
 
-The breadboard is organized in rows and columns called *strips*. The bus strips on the edges (indicated in red) provide a continuous connection over the length of the breadboard. They are generally used to supply power for the circuit. The socket strips toward the middle of the breadboard (in cyan) allow components to be connected together without soldering or wires.
+The breadboard is organized in rows and columns called *strips*. The bus strips on the edges (indicated above in red) provide a continuous connection over the length of the breadboard. They are generally used to supply power for the circuit. The socket strips toward the middle of the breadboard (cyan) allow components to be connected together without soldering or wires.
 
 :::image type="content" source="../media/breadboard-close-up.jpg" alt-text="A close-up image of a breadboard illustrating how connections work in socket strips." lightbox="../media/breadboard-close-up.jpg":::
 
