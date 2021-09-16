@@ -20,7 +20,7 @@ quiz:
     - content: "Add a reference to the target project."
       isCorrect: false
       explanation: "Incorrect. That's only one of the necessary tasks."
-    - content: "Both import the namespace and add a project reference".
+    - content: "Both import the namespace and add a project reference."
       isCorrect: true
       explanation: "Correct! You need to both import the namespace and add a reference to the project that you want to test."
     - content: "Import the namespace, add a project reference, and add the @test decorator on the test method."
