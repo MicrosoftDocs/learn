@@ -70,8 +70,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
    :::code language="yaml" source="code/7-pipeline.yml" range="59-79" :::
 
-   > [!NOTE]
-   > Notice that you define a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't do this, the deployment job won't be able to read your Bicep file. You could instead consider using *pipeline artifacts* to send files between pipeline stages. We link to more information about artifacts in the summary.
+   Notice that you define a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't do this, the deployment job won't be able to read your Bicep file. You could instead consider using *pipeline artifacts* to send files between pipeline stages. We link to more information about artifacts in the summary.
 
 1. Save the file.
 
@@ -115,8 +114,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
    The what-if operation has detected a change to the website resource. However, the changes that it has detected are noise. They don't represent real changes to your resource. Over time, the Azure team works to reduce noise. In the meantime, for these two specific properties, you can ignore the detected changes.
 
-   > [!NOTE]
-   > You might also see an item in the what-if output for the resource type `microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - toywebsite`. This is a resource that Application Insights creates automatically. The what-if command detects that no change will be made to the resource.
+   You might also see an item in the what-if output for the resource type `microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - toywebsite`. This is a resource that Application Insights creates automatically. The what-if command detects that no change will be made to the resource.
 
 ## Approve the pipeline run
 
