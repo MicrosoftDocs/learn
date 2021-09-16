@@ -20,6 +20,8 @@ The breadboard is organized in rows and columns called *strips*. The bus strips 
 
 For example, any pin plugged into row *1*, column *a* in the previous image would also be connected to any pin plugged into row *1*, columns *b-e*. On the other side of the divider, row *1* columns *f-j* are similarly connected.
 
+A breadboard can be paired with a GPIO breakout board to simplify prototyping with GPIO pins.
+
 ## Measuring environmental conditions
 
 To measure temperature and humidity, you'll use a commonly available low-cost environmental sensor, the BME280.
