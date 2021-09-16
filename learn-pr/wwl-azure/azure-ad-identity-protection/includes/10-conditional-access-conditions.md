@@ -18,5 +18,5 @@ With access controls, you can either Block Access altogether or Grant Access wit
 
 Requiring additional account verification through MFA is a common conditional access scenario. While users may be able to sign-in to most of your organization’s cloud apps, you may want that additional verification for things like your email system, or apps that contain personnel records or sensitive information. In Azure AD, you can accomplish this with a conditional access policy
 
->[IMPORTANT]
+>[!IMPORTANT]
 >The Users and Groups condition is mandatory in a conditional access policy. In your policy, you can either select All users or select specific users and groups.
