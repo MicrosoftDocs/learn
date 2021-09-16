@@ -36,7 +36,7 @@ In this section, you'll learn how to configure your project to build and deploy 
 
 1. In the Unity menu, select **File** > **Build Settings**... to open the Build Settings window and then switch the platform to Android:
 
-    :::image type="content" source="../media/change-build-settings.png" alt-text="Screenshot of Change build settings" lightbox="../media/change-build-settings1.png":::
+    :::image type="content" source="../media/change-build-settings.png" alt-text="Screenshot of Change build settings" lightbox="../media/change-build-settings.png":::
 
     >[!Tip]
     >For a reminder on how to switch build platform, you can refer to the Switching the build platform instructions.
@@ -45,7 +45,7 @@ In this section, you'll learn how to configure your project to build and deploy 
 
 2. In the Unity menu, select **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK** to open the **MRTK Project Configurator** window, ensure all options are selected, then click the **Apply** button to apply the settings:
 
-    :::image type="content" source="../media/mrtk-project-configurator-window" alt-text="Screenshot of MRTK project configurator window" lightbox="../media/mrtk-project-configurator-window.png":::
+    :::image type="content" source="../media/mrtk-project-configurator-window.png" alt-text="Screenshot of MRTK project configurator window" lightbox="../media/mrtk-project-configurator-window.png":::
 
 3. In the Unity menu, select **Edit** > **Project Settings**... to open the Player Settings window, then locate the **Player** > **Other Settings** section, select **Vulkan** and remove it by clicking the "-" symbol:
 
@@ -55,7 +55,7 @@ In this section, you'll learn how to configure your project to build and deploy 
 
 4. In the Build Settings window, click the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list. Then, use a USB cable, connect your Android device to your computer and select it from the **Run Device** dropdown:
 
-    :::image type="content" source="../media/ run-device-dropdown.png" alt-text="Screenshot of Run device dropdown" lightbox="../media/ run-device-dropdown.png":::
+    :::image type="content" source="../media/run-device-dropdown.png" alt-text="Screenshot of Run device dropdown" lightbox="../media/run-device-dropdown.png":::
 
     >[!Note]
     >If your device doesn't appear in the Run Device dropdown, you might need to press the Refresh button next to the dropdown.

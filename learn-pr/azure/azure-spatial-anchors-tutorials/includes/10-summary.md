@@ -12,4 +12,4 @@ You can continue to customize this application and add more spatial anchors. Con
 
 ## Further reading
 
-* Learn more about [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/)
+* Learn more about [Azure Spatial Anchors](/azure/spatial-anchors/)

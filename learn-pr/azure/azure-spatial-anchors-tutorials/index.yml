@@ -27,14 +27,14 @@ products:
 - mrtk
 - hololens
 prerequisites: |
-  - A Windows 10 PC configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools)
+  - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
   - A HoloLens 2 device configured for development
   - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
   - [Set up a mixed reality project in Unity module](/learn/modules/mixed-reality-toolkit-project-unity)
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
   - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
-  - Completed the [Create a Spatial Anchors resource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors tutorial
+  - Completed the [Create a Spatial Anchors resource](/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors tutorial
 units: 
 - learn.azure.azure-spatial-anchors-tutorials-mrtk.1-introduction
 - learn.azure.azure-spatial-anchors-tutorials-mrtk.2-get-started-with-azure-spatial-anchors
