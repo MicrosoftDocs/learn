@@ -1,4 +1,4 @@
-In this unit, we'll construct the circuits used to monitor environmental conditions and control the fan in the cheese cave.
+In this unit, you'll learn about the hardware you're going to use in this module. After that, you'll construct the circuits used to monitor environmental conditions and control the fan in the cheese cave.
 
 ## The GPIO header
 
@@ -50,7 +50,7 @@ To activate the LED, your code will activate a GPIO pin for output, which will s
 
 ## Exercise: Construct the IoT device
 
-We're going to use a breadboard to build the device. The completed breadboard should look like the following diagram.
+You're going to use a breadboard to build the device. The completed breadboard should look like the following diagram.
 
 :::image type="content" source="../media/breadboard.png" alt-text="A Fritzing diagram illustrating the breadboard solution." lightbox="../media/breadboard.png":::
 
