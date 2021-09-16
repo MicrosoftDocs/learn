@@ -78,11 +78,11 @@ Solvers are one of the components of the Mixed Reality Toolkit, which provides s
 
 7. Click the left mouse button to start the tap-to-place process:
 
-    :::image type="content" source="../media/tap-to-place-placing-started-with-split-view.png" alt-text="Screenshot of Unity Play mode split view with TapToPlace placing started." lightbox="../media/tap-to-place-placing-started-with-split-view.png":::
+    :::image type="content" source="../media/tap-to-place-started-with-split-view.png" alt-text="Screenshot of Unity Play mode split view with TapToPlace placing started." lightbox="../media/tap-to-place-placing-started-with-split-view.png":::
 
 8. Press-and-hold the right mouse button while moving your mouse to the left or right to rotate your gaze direction, when you're happy with the placement, click the left mouse button:
 
-    :::image type="content" source="../media/tap-to-place-placing-started-with-split-view-end.png" alt-text="Screenshot of Unity Play mode split view with TapToPlace placing ended." lightbox="../media/tap-to-place-placing-started-with-split-view-end.png":::
+    :::image type="content" source="../media/tap-to-place-started-with-split-view-end.png" alt-text="Screenshot of Unity Play mode split view with TapToPlace placing ended." lightbox="../media/tap-to-place-placing-started-with-split-view-end.png":::
 
 9. Once you're done testing the feature in the Game mode, right-click on the Cube object and select **Delete** to remove it from the scene:
 

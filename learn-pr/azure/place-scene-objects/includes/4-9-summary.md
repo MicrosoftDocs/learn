@@ -13,5 +13,5 @@ You can complete your mixed reality experience by building the Unity project and
 
 ## Further reading
 
-* Learn more about different types of [Solvers](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver).
-* Explore various types of [Object Collection](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection).
+* Learn more about different types of [Solvers](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver).
+* Explore various types of [Object Collection](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection).
