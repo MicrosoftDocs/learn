@@ -102,7 +102,7 @@ effect, click on **Apply** to restart the Unity editor
 
 3. The first step is to point the Mixed Reality Feature Tool to your **Project path** using the **ellipsis** button, click on the Three dots ellipsis button next to the Project path and browse to your project folder in the explorer for example _D:\MixedRealityLearning\MRTK Tutorials_.
 
-    :::image type="content" source="../../media/mixed-reality-feature-tool-path.png" alt-text="Screenshot of Adding Unity Path for MixedRealityFeatureTool" lightbox="../../media/mixed-reality-feature-tool-path.png":::
+    :::image type="content" source="../../media/path.png" alt-text="Screenshot of Adding Unity Path for MixedRealityFeatureTool" lightbox="../../media/path.png":::
 
 4. When you have located your project's folder, click the Open button to return to the Mixed Reality Feature Tool. Then click on **Discover Features**. The Mixed Reality Feature Tool performs validation to ensure that it has been directed to a Unity project folder. The folder must contain Assets, Packages and Project Settings folders.
 
@@ -178,7 +178,7 @@ effect, click on **Apply** to restart the Unity editor
 
 3. The first step is to point the Mixed Reality Feature Tool to your **Project path** using the **ellipsis** button, click on the Three dots ellipsis button next to the Project path and browse to your project folder in the explorer for example _D:\MixedRealityLearning\MRTK Tutorials_.
 
-    :::image type="content" source="../../media/mixed-reality-feature-tool-path.png" alt-text= "Screenshot of Adding Unity Path for MixedRealityFeatureTool" lightbox="../../media/mixed-reality-feature-tool-path.png":::
+    :::image type="content" source="../../media/path.png" alt-text= "Screenshot of Adding Unity Path for MixedRealityFeatureTool" lightbox="../../media/path.png":::
 
 4. When you have located your project's folder, click the Open button to return to the Mixed Reality Feature Tool. Then click on **Discover Features**.
 

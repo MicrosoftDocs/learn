@@ -30,7 +30,7 @@
 
 2. In the Build Settings window, select **Universal Windows Platform** and click the **Switch Platform** button:
 
-    :::image type="content" source="../../media/switch-platform-from-standalone.png" alt-text="Screenshot of Unity Build Settings window with UWP selected to switch platform from Standalone" lightbox="../../media/switch-platform-from-standalone.png":::
+    :::image type="content" source="../../media/switch-platform.png" alt-text="Screenshot of Unity Build Settings window with UWP selected to switch platform from Standalone" lightbox="../../media/switch-platform.png":::
 
 3. When Unity has finished switching the platform, click the **x** icon to close the Build Settings window:
 
