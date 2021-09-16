@@ -6,7 +6,7 @@
 
 2. The first step is to point the Mixed Reality Feature Tool to your **Project path** using the **ellipsis** button, click on the Three dots ellipsis button next to the Project path and browse to your project folder in the explorer for example _D:\MixedRealityLearning\MRTK Tutorials_.
 
-    :::image type="content" source="../../media/mixed-reality-feature-tool-path.png" alt-text="Screenshot of Adding Unity Path for MixedRealityFeatureTool" lightbox="../../media/mixed-reality-feature-tool-path.png":::
+    :::image type="content" source="../../media/path.png" alt-text="Screenshot of Adding Unity Path for MixedRealityFeatureTool" lightbox="../../media/path.png":::
 
 3. When you have located your project's folder, click the Open button to return to the Mixed Reality Feature Tool. Then click on **Discover Features**.
 
@@ -18,7 +18,7 @@
 
     Features are grouped by category to make things easier to find, click on **Mixed Reality Toolkit** dropdown to find packages relating to the Mixed Reality Toolkit and click on **Platform Support** dropdown to find packages relating various supporting platforms.
 
-    :::image type="content" source="../../media/mixed-reality-feature-tool-discover-features.png" alt-text="Screenshot of MixedRealityFeatureTool Discover Features" lightbox="../../media/mixed-reality-feature-tool-discover-features.png":::
+    :::image type="content" source="../../media/discover-features.png" alt-text="Screenshot of MixedRealityFeatureTool Discover Features" lightbox="../../media/discover-features.png":::
 
 4. check the **Mixed Reality Toolkit Foundation** and click on the dropdown next to it to select **MRTK 2.7.0**, also check the **Mixed Reality OpenXR Plugin** and click on the dropdown next to it to select most recent version available, then click on **Get features** button to download the selected packages.
 
@@ -42,7 +42,7 @@
     :::image type="content" source="../../media/mrtk-project-configurator-window.png" alt-text="Screenshot of Open MRTK project configurator window" lightbox="../../media/mrtk-project-configurator-window.png":::
 3. Click on **Unity OpenXR Plugin** to Enable XR Plugin Management and add its required packages into your project.
 
-    :::image type="content" source="../../media/unity-open-xr-plugin.png" alt-text="Screenshot of Add Unity OpenXR Plugin" lightbox="../../media/unity-open-xr-plugin.png":::
+    :::image type="content" source="../../media/open-xr-plug-in.png" alt-text="Screenshot of Add Unity OpenXR Plugin" lightbox="../../media/open-xr-plug-in.png":::
 
 4. This imports required unity packages for XR Plugin Management, once done click on **Show XR Plug-In Management Settings** in MRTK project Configurator.
 

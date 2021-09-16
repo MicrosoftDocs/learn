@@ -43,7 +43,7 @@ its **Transform** component as follows
 
 * In the Unity toolbar, click the **Play** icon to enter play mode.
     Using the Unity in-editor input simulation, press the space bar on your keyboard to simulate hand input with the right hand.
-    :::image type="content" source="../media/move-the-cube.gif" alt-text="Screenshot of Move the cube." lightbox="../media/move-the-cube.gif":::
+    :::image type="content" source="../media/move-cube.gif" alt-text="Screenshot of Move the cube." lightbox="../media/move-cube.gif":::
 
 ## Build your application to holoLens 2
 
@@ -51,7 +51,7 @@ its **Transform** component as follows
 
 1. In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window.
 
-     In the **Build Settings** window, click the Add Open Scenes button to add your current scene to the **Scenes In Build** list, then click the **Build** button to open the Build Universal Windows Platform window:
+    In the **Build Settings** window, click the Add Open Scenes button to add your current scene to the **Scenes In Build** list, then click the **Build** button to open the Build Universal Windows Platform window:
 
    :::image type="content" source="../media/add-scenes.png" alt-text="Screenshot of Adding Scenes in build." lightbox="../media/add-scenes.png":::
 
@@ -61,7 +61,7 @@ its **Transform** component as follows
 
 3. Wait for Unity to finish the build process:
 
-    :::image type="content" source="../media/build-process-to-finish.png" alt-text="Screenshot of Wait for the build process to finish." lightbox="../media/build-process-to-finish.png":::
+    :::image type="content" source="../media/build-process.png" alt-text="Screenshot of Wait for the build process to finish." lightbox="../media/build-process.png":::
 
 ## 2. Build and deploy the application
 

@@ -1,6 +1,6 @@
 The Mixed Reality Toolkit provides a set of components and features which could be used to accelerate your Windows Mixed Reality app development. To use the toolkit in your mixed reality project, you must import the package and configure the resources added to the project. Here you'll import and configure resources to add the Mixed Reality Toolkit to your project.
 
-## Import the mrtk unity foundation package
+## Import the MRTK unity foundation package
 
 To Import Mixed Reality Toolkit into the Unity Project you'll have to use Mixed Reality Feature Tool, which allows developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing.
 
@@ -16,7 +16,7 @@ Open the executable file **MixedRealityFeatureTool** from the downloaded folder 
 
 [!INCLUDE[](includes/import-mrtk.md)]
 
-## Create the scene and configure mrtk
+## Create the scene and configure MRTK
 
 1. In the Unity menu, select **File** > **New Scene**:
 
