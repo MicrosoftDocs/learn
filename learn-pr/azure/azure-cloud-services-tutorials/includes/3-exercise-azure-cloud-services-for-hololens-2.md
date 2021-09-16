@@ -61,7 +61,7 @@ b
 
 ## Import the tutorial assets
 
-1. Add AzurespatialAnchors SDK V2.7.1 into your unity project, to add the packages please follow this [tutorial](https://docs.microsoft.com/azure/spatial-anchors/how-tos/setup-unity-project)
+1. Add AzurespatialAnchors SDK V2.7.1 into your unity project, to add the packages please follow this [tutorial](/azure/spatial-anchors/how-tos/setup-unity-project)
 
 2. Download and **import** the following Unity custom packages **in the order they are listed**:
 
