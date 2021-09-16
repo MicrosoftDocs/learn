@@ -92,7 +92,7 @@ To use Azure Speech Services, you need to create an Azure resource and obtain an
 
 3. Then, assuming your computer has a microphone, when you say something, your speech will be transcribed on the terminal panel:
 
-    :::image type="content" source="../media/speech-transcribed.png" alt-text="Screenshot of Speech will be transcribed on the terminal panel" lightbox="../media/speech-transcribed.png":::
+    :::image type="content" source="../media/speech-transcribe.png" alt-text="Screenshot of Speech will be transcribed on the terminal panel" lightbox="../media/speech-transcribe.png":::
 
     > [!CAUTION]
     > The application needs to connect to Azure, so make sure your computer/device is connected to the internet.

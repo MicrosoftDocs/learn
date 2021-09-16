@@ -195,7 +195,7 @@ From the Entities page, navigate back to the **PressButton** intent page.
 
 7. When all the example utterances have been labeled, your PressButton intent page should look similar to this:
 
-    :::image type="content" source="../media/utterances-labeled.png" alt-text="Screenshot of All the example utterances have been labeled" lightbox="../media/utterances-labeled.png":::
+    :::image type="content" source="../media/utterances-label.png" alt-text="Screenshot of All the example utterances have been labeled" lightbox="../media/utterances-label.png":::
 
 ## 6. Train, test and publish the app
 
