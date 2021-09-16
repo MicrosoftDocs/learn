@@ -9086,22 +9086,22 @@
     "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/wwl-azure/learn-publish-process/2-overview-of-luis.md",
+    "source_path": "learn-pr/wwl-azure/learn-publish-process/2-azure-function-development-overview.md",
     "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/2-azure-function-development-overview",
     "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/wwl-azure/learn-publish-process/3-exercise-create-luis-service.md",
+    "source_path": "learn-pr/wwl-azure/learn-publish-process/3-create-triggers-bindings.md",
     "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/3-create-triggers-bindings",
     "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/wwl-azure/learn-publish-process/4-exercise-add-intents-and-entities.md",
+    "source_path": "learn-pr/wwl-azure/learn-publish-process/4-connect-azure-services.md",
     "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/4-connect-azure-services",
     "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/wwl-azure/learn-publish-process/5-exercise-train-luis-model.md",
+    "source_path": "learn-pr/wwl-azure/learn-publish-process/5-create-function-visual-studio-code.md",
     "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/5-create-function-visual-studio-code",
     "redirect_document_id": false
     },
