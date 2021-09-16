@@ -15,7 +15,7 @@ We will use your device's microphone to transcribe speech to text in real-time o
 
 ## Prerequisites
 
-* A Windows 10 PC configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools).
+* A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/develop/install-the-tools).
 * Windows 10 SDK 10.0.18362.0 or later.
 * Unity Hub with Unity 2020.3.X or 2019.4.X installed and the Universal Windows Platform Build Support module added.
 * [Set up a mixed reality project in Unity module](/learn/modules/mixed-reality-toolkit-project-unity).
