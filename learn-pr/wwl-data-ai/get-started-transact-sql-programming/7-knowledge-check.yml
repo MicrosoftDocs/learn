@@ -26,7 +26,7 @@ quiz:
     - content: "2"
       isCorrect: true
       explanation: "Correct. Two rows are created. There's no syntax error in this batch, so SQL can begin to execute the statement. The first two INSERT statements are executed before the error arises."
-  - content: "Someone wants to populate a table by creating 15 new rows. Before they create the rows, they need to check that the table exists. From the following T-SQL keywords, choose the one that they'd need to use."
+  - content: "Someone wants to populate a table by creating 15 new rows. Before they create the rows, they need to check that the table exists. From the following T-SQL keywords, which one will they need to use?"
     choices:
     - content: "IF"
       isCorrect: true
