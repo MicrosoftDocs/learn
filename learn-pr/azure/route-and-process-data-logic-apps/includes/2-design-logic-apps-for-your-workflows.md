@@ -1,12 +1,12 @@
 Implementing any business process is difficult because you need to make diverse services work together. Think about everything your company uses to store and process data: Salesforce, Office 365, Oracle, Twitter, YouTube, Dropbox, Google services, Azure Cognitive Services, and so on. How do you integrate all these products?
 
-Azure Logic Apps gives you pre-built components to connect to hundreds of services. You put the pieces together in any combination you need. For example, in this athletic shoe company scenario, we want to monitor social media reaction to our new baksetball shoe product. We'll build a logic app to integrate Twitter, Azure Cognitive Services, SQL Server, and Outlook email.
+Azure Logic Apps gives you pre-built components to connect to hundreds of services. You put the pieces together in any combination you need. For example, in this athletic shoe company scenario, we want to monitor social media reaction to our new basketball shoe product. We'll build a logic app to integrate Twitter, Azure Cognitive Services, SQL Server, and Outlook email.
 
 In this unit, we'll plan the sequence of steps needed to implement a business process. Then we'll map those steps to the pre-built components in Azure Logic Apps. Finally, we'll assemble the parts into an app using the Logic Apps Designer. The following illustration shows an overview of the app-development process.
 
 :::image type="content" source="../media/app-design-process.png" alt-text="An illustration showing the typical sequence of activities used to create a logic app. The process has five steps. First, you plan your business process. Second, you identify the type of each step in your process. Third, you decide which pre-built component will implement each step. Fourth, you use the design tool to build your workflow from the components. Fifth, you save your design. Your app will now run automatically in the cloud." border="false":::
 
-Each of these five steps in the app-development process are described in the following sections.
+Each of these five steps in the app-development process is described in the following sections.
 
 ## Plan your business process
 
@@ -31,7 +31,7 @@ For example, in our social media monitor scenario, we *trigger* the process when
 
 ## Map your steps to Logic Apps components
 
-When deciding which pre-built compnenent to implement, we need to be clear about component types. Let's be more formal about the definitions of the component types:
+When deciding which pre-built component to implement, we need to be clear about component types. Let's be more formal about the definitions of the component types:
 
 - A *trigger* is an event that occurs when a specific set of conditions is satisfied. Triggers activate automatically when the conditions are right (for example, when a timer expires or data becomes available). Every logic app must start with a trigger. In our example, we'll trigger the app when a new tweet mentions our product.
 
