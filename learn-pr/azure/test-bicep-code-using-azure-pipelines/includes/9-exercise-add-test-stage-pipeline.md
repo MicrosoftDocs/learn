@@ -24,8 +24,7 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
    - Try to connect to the website over HTTPS. The test passes if the server responds with an HTTP response status code between 200 and 299, which indicates a successful connection.
    - Try to connect to the website over HTTP. The test passes if the server responds with an HTTP response status code of 300 or higher.
 
-   > [!NOTE]
-   > For the purposes of this exercise, it's not important that you understand the details of the test file and how it works. We provide links in the summary so you can learn more if you're interested.
+   For the purposes of this exercise, it's not important that you understand the details of the test file and how it works. We provide links in the summary so you can learn more if you're interested.
 
 ## Publish your Bicep file's output as a stage output variable
 
