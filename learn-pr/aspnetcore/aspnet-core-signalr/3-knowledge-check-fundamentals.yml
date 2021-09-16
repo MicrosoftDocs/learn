@@ -4,13 +4,13 @@ title: Fundamentals knowledge check
 metadata:
   unitType: knowledge_check
   title: "Fundamentals knowledge check"
-  description: Assert your knowledge of ASP.NET Core SignalR.
+  description: Assert your knowledge of ASP.NET Core SignalR fundamentals.
   ms.date: 9/15/2021
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
-  ms.prod: "TODO"
-durationInMinutes: 1 # user input: the estimate time to complete the unit
+  ms.prod: learning-aspnetcore
+durationInMinutes: 2 # user input: the estimate time to complete the unit
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
@@ -28,50 +28,39 @@ durationInMinutes: 1 # user input: the estimate time to complete the unit
 content: |
 quiz:
   questions:
-    - content: ""
+    - content: "Which built-in SignalR hub protocol should be used to reduce message sizes?"
       choices:
-        - content: ""
+        - content: "MessagePack"
           isCorrect: true
-          explanation: ""
-        - content: ""
+          explanation: "The MessagePack hub protocol provides an alternative to the default JSON protocol, and produces smaller messages."
+        - content: "JSON"
           isCorrect: false
-          explanation: ""
-        - content: ""
+          explanation: "The JSON hub protocol is the default protocol, and is human readable, however; is is uncompressed and has larger messages compared to its binary counterpart."
+        - content: "BlazorPack"
           isCorrect: false
-          explanation: ""
-    - content: ""
+          explanation: "While BlazorPack is a binary protocol, it is only available with the Blazor server hosting model."
+    - content: "A client can send and receive messages to and from the server with what SignalR type?"
       choices:
-        - content: ""
+        - content: "HubContext"
+          isCorrect: false
+          explanation: "The `HubContext` type is a server concept to represent a specific `Hub`, outside the hub instance itself."
+        - content: "HubConnection"
           isCorrect: true
-          explanation: ""
-        - content: ""
+          explanation: "The `HubConnection` is built from a `HubConnectionBuilder`, and its connection enables clients to send and receive messages."
+        - content: "SynchronizationContext"
           isCorrect: false
-          explanation: ""
-        - content: ""
-          isCorrect: false
-          explanation: ""
-    - content: ""
+          explanation: "The `SynchronizationContext` provides the basic functionality for propagating a synchronization context in various synchronization models, but is not related to SignalR."
+    - content: "When the server supports WebSockets, but the connected client only supports Long Polling which transport is used?"
       choices:
-        - content: ""
+        - content: "WebSockets"
+          isCorrect: false
+          explanation: "If the connected client doesn't support WebSockets, graceful fallback attempts Server-Sent Events then Long Polling."
+        - content: "Server-Sent Events"
+          isCorrect: false
+          explanation: "If the connected client doesn't support WebSockets or Server-Sent Events, then only Long Polling is available."
+        - content: "Long Polling"
           isCorrect: true
-          explanation: ""
-        - content: ""
-          isCorrect: false
-          explanation: ""
-        - content: ""
-          isCorrect: false
-          explanation: ""
-    - content: ""
-      choices:
-        - content: ""
-          isCorrect: true
-          explanation: ""
-        - content: ""
-          isCorrect: false
-          explanation: ""
-        - content: ""
-          isCorrect: false
-          explanation: ""
+          explanation: "Long Polling is used since its the lowest common denominator of potential transports."
     - content: ""
       choices:
         - content: ""

@@ -9,8 +9,8 @@ metadata:
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
-  ms.prod: "TODO"
-durationInMinutes: 1 # user input: the estimate time to complete the unit
+  ms.prod: learning-aspnetcore
+durationInMinutes: 2 # user input: the estimate time to complete the unit
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)

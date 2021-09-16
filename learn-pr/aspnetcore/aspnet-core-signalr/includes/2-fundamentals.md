@@ -1,78 +1,47 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+As a .NET developer tasked with implementing real-time web functionality, ASP.NET Core SignalR is the most viable option. In the **MilesLong (&trade;) Warehouse Incorporated** notification scenario, we will use SignalR to implement a real-time notification system that all employees will leverage. Here, you will learn the terminology associated with SignalR.
 
-    Goal: briefly summarize the key skill this unit will teach
+:::image type="content" source="../media/2-fundamentals/server-client-user-diagram.png" alt-text="ASP.NET Core SignalR: Server to client and user relationship.":::
 
-    Heading: none
+## Fundamentals
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+Familiarizing yourself with the common nomenclature of SignalR is very helpful. You will learn what components are required in a server application, versus those in client applications. Additionally, you'll gain an understanding of the various communication mechanisms.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+### Transports
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+SignalR supports the following techniques (*transports*) for handling real-time communication (in order of graceful fallback):
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+- WebSockets
+- Server-Sent Events
+- Long Polling
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+SignalR automatically chooses the best transport method that is within the capabilities of the server and client.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+For more information, see the official specification for [SignalR Transport Protocols](https://github.com/dotnet/aspnetcore/blob/068797e16a1bfe66461e15c8a2ffa864369d384d/src/SignalR/docs/specs/TransportProtocols.md).
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+### Server
 
-    Goal: State concisely what's covered in this unit
+The server is responsible for exposing an endpoint. The endpoint maps to a <xref:Microsoft.AspNetCore.SignalR.Hub?displayProperty=nameWithType> or <xref:Microsoft.AspNetCore.SignalR.Hub%601?displayProperty=nameWithType> subclass. The server can exist on-premises, in a cloud provider (such as Azure), or with the [Azure SignalR Service](/azure/azure-signalr).
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+#### Hub
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+SignalR uses *hubs* to communicate between clients and servers. A hub is a high-level pipeline that allows a client and server to call methods on each other. SignalR handles the dispatching across machine boundaries automatically, allowing clients to call methods on the server and vice versa. You can think of a hub as a proxy betwixt all connected clients and the server.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+#### Protocols
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+SignalR provides two built-in hub protocols:
 
-    Heading: none
--->
-TODO: add a visual element
+- A text protocol based on JSON (default)
+- A binary protocol based on *MessagePack* (*MessagePack* generally creates smaller messages compared to JSON).
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+> [!NOTE]
+> There is a third built-in hub protocol named *BlazorPack*, and it is used exclusively with Blazor server applications. It cannot be used without the Blazor server hosting model.
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+For more information, see the official specification for [SignalR Hub Protocol](https://github.com/dotnet/aspnetcore/blob/068797e16a1bfe66461e15c8a2ffa864369d384d/src/SignalR/docs/specs/HubProtocol.md).
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+### Clients
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
+The client is responsible for establishing a connection to the server's endpoint through a `HubConnection`. With a hub connection instance that's started successfully, messages flow freely in both directions. Users are free to communicate notifications to the server, as well as receive notifications from the server. Clients are *not* limited to web browsers. For more information, see [ASP.NET Core SignalR supported platforms](/aspnet/core/signalr/supported-platforms).
 
-<!-- Pattern for simple topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+#### Users
 
-<!-- Pattern for complex topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+A user in the system acts as an individual, but they can also be part of a group. Messages can be sent to groups, an all group members will be notified.
