@@ -16,7 +16,7 @@ By the end of this module, you'll know more about how to incorporate active list
 
 After completing this module, you'll be able to:
 
-- Realize how active listening creates a more effective communication.
+- Realize how active listening creates more effective communication.
 - Improve relationships in your technology workplace by using active listening.
 - Set ground rules for respectful and effective communication.
 - Apply active listening strategies in computer science.
