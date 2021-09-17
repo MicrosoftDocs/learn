@@ -25,10 +25,10 @@ roles:
 - student
 - technology-manager
 products:
-- Azure
-- Windows Mixed Reality
-- Mixed Reality Toolkit
-- HoloLens
+- azure
+- windowsmixedreality
+- mixedrealitytoolkit
+- hololens
 modules:
 - learn.azure.learn-introduction-tutorials-mrtk
 - learn.azure.place-scene-objects-tutorials-mrtk
