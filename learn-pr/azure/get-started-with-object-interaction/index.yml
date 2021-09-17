@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.get-started-with-object-interaction-tutorials-mrtk
 metadata:
-  title: Get started with object interaction 
+  title: Getting started with 3D object interaction
   description: This course will provide steps and procedures to follow on how to manipulate and interact with 3D objects. 
   ms.date: 09/09/2021
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-title: Get started with object interaction 
+title: Getting started with 3D object interaction
 summary: Learn to manipulate and interact with 3D objects
 abstract: |
   By the end of this module you will be able to:
