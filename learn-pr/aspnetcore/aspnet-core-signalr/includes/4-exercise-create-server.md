@@ -22,16 +22,16 @@ The template is a great starting point, but we'll need to add a bit more functio
 1. Add a new C# file to the *Hubs* folder, named *NotificationHub.cs*.
 1. Add the following C# code to the *NotificationHub.cs* file:
 
-    :::code source="code/src/SignalR.Server/Hubs/NotificationHub.cs":::
+    :::code source="../code/src/SignalR.Server/Hubs/NotificationHub.cs":::
 
 1. Add a new C# file to the root folder, named *GlobalUsings.cs*.
 1. Add the following C# code to the *GlobalUsings.cs* file:
 
-    :::code source="code/src/SignalR.Server/GlobalUsings.cs":::
+    :::code source="../code/src/SignalR.Server/GlobalUsings.cs":::
 
 1. Replace the template content in the *Program.cs* file, with the following C# code:
 
-    :::code source="code/src/SignalR.Server/Program.cs":::
+    :::code source="../code/src/SignalR.Server/Program.cs":::
 
 ## New shared project
 
@@ -46,7 +46,7 @@ Now that we have the basic structure in place for our Minimal API project, we ca
 1. Rename the *Class1.cs* file to *Notification.cs*.
 1. Replace the contents of this file, with the following C# code:
 
-    :::code source="code/src/SignalR.Models/Notification.cs":::
+    :::code source="../code/src/SignalR.Models/Notification.cs":::
 
 1. Add the `SignalR.Models` as a project reference to the `SignalR.Server` project:
 
