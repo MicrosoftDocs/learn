@@ -1,12 +1,12 @@
-Carrying out technical tasks might be challenging enough, but it's important to think about how you're perceived by others as well. At the beginning and throughout your career, you want to be perceived as someone who delivers strong results on time and who communicates well by asking the right questions along the way. 
+To carry out technical tasks might be challenging enough for you but, at the same time, it's important to think about how you're perceived by others. When you're just getting started and throughout your career, you want to be perceived as someone who delivers strong results on time and who communicates well by asking the right questions along the way. 
 
-You're new in an organization and as such are an unknown quantity to your colleagues. By building people's trust in you as an employee and managing your relationships proactively, you'll establish your personal brand as someone to be respected, given greater and greater responsibility, and considered for promotion to your next job level in the company.
+Because you're new to the organization, you start out as an unknown quantity to your colleagues. By building people's trust in you as an employee and a colleague, and by managing your relationships proactively, you'll establish your personal brand as someone to be respected. You're more likely to be given greater and greater responsibility, and to be considered for promotion to your next job level in the company.
 
 ## Build trust as an employee
 
-Good managers are looking for skilled, reliable employees who contribute to the organization by providing solid impact. Great managers also value individuals who bring their whole selves to work, who come as they are, and who grow.
+Good managers are looking for skilled, reliable employees who contribute to the organization by providing solid impact. Great managers also value individuals who bring their whole selves to work, who come as they are, and who are willing to grow.
 
-It's a common mistake for new interns to try to impress coworkers by promising to deliver a ton of work. Most likely, you're setting yourself up for some disappointment. A smarter tactic is to focus on a single small task, complete it, and then identify other small, related tasks to deliver on top of that, if time permits. When you deliver on the smaller commitment first, teammates will begin see you as trustworthy. And when you deliver a few extras as well, you might start to impress the people around you.
+It's a common mistake for new interns to try to impress co-workers by promising to deliver a ton of work. In so doing, you're likely setting yourself up for some disappointment. A smarter tactic is to focus on a single small task, complete it, and then identify other small, related tasks to deliver next, as time permits. When you deliver on the smaller commitment first, teammates will begin see you as trustworthy. And when you deliver a few extras as well, you might start to impress the people around you.
 
 In a nutshell, your formula for success here is to *under-promise and over-deliver*.
 
