@@ -15,7 +15,7 @@ There are many approaches to networking, each serving to advance both personal a
 
 ## Is networking only for in-person situations?
 
-Not at all! Connecting with others online is a well-established and very common way to network. For example, try asking or answering questions on forums or collaborating on websites, such as GitHub, or on other types of open-source projects. These virtual activities provide the same learning and professional growth opportunities as any in-person activities. 
+Not at all! Connecting with others online is a well-established and common way to network. For example, try asking or answering questions on forums or collaborating on websites, such as GitHub, or on other types of open-source projects. These virtual activities provide the same learning and professional growth opportunities as any in-person activities. 
 
 > [!TIP]
 > A good site for connecting with people is LinkedIn, an online platform for building your professional network, thoughtfully engaging with your peers, and learning new skills.
@@ -34,7 +34,7 @@ Participating and collaborating in student organizations will help you develop i
 
 ### Join the Microsoft LEARN student ambassador program
 
-The student ambassadors is globally distributed cohort of more than 5000 individuals and growing year over year. It has sometimes been known as the _MVP program for students_, just to give you an idea of what it does.
+The student ambassadors are globally distributed cohort of more than 5000 individuals and growing year over year. It has sometimes been known as the _MVP program for students_, just to give you an idea of what it does.
 
 :::image type="content" source="../media/ambassador1.png" alt-text="network with your peers":::
 
@@ -49,9 +49,9 @@ What you'll do:
 :::image type="content" source="../media/ambassador2.png" alt-text="Educate your community":::
 
 - **Host events**: Host tech events with other student ambassadors but also with folks at Microsoft. Ambassadors have been known to participate as speakers for things like LEARN Live, Microsoft Ignite and many other events.
-- **Create content**: You will create various content like blog posts, videos and even [LEARN modules](aka.ms/learn).
+- **Create content**: You will create various content like blog posts, videos, and even [LEARN modules](aka.ms/learn).
 - **Build your network**: Collaborate with your student ambassadors peers and Microsoft employees.
-- **Participate in mentoring sessions**: Get guidance on your career as well as your resume among other things.
+- **Participate in mentoring sessions**: Get guidance on your career and your resume among other things.
 
  [Apply as Microsoft LEARN Student Ambassador](https://studentambassadors.microsoft.com/en-US/apply) it might be the best decision you ever make, to take your career into a place you never thought possible.
 
@@ -87,5 +87,5 @@ Learn more about 2021 years winner [team Reweba](https://imaginecup.microsoft.co
 
 :::image type="content" source="../media/imaginecup2.png" alt-text="2021 winner, Team Reweba":::
 
-Register for [Imagine cup 2022](https://imaginecup.microsoft.com/category/register/22)
+Register for [Imagine cup 2022](https://imaginecup.microsoft.com/category/register/22) 
 
