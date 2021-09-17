@@ -1,6 +1,6 @@
 Reviewing and providing feedback are important components of the software development lifecycle. It's critical to understand the characteristics of effective feedback so that you can constructively frame input for others and unpack or deconstruct any feedback you receive.
 
-In this module, you’ll learn about the impact of providing effective and encouraging feedback, also referred to as wise feedback, in the technical workspace or educational environment. You’ll learn about the characteristics of wise feedback, and the dos and don’ts of providing feedback. Finally, you’ll learn about the methods of developing qualities that are associated with effective feedback.
+In this module, you'll learn about the impact of providing effective and encouraging feedback, also referred to as wise feedback, in the technical workspace or educational environment. You'll learn about the characteristics of wise feedback, and the dos and don'ts of providing feedback. Finally, you'll learn about the methods of developing qualities that are associated with effective feedback.
 
 ## Scenario: You're a developer on a team that's working on a new online strategy game
 
@@ -19,7 +19,7 @@ By the end of this module, you'll be able to:
 
 ## What is the main goal?
 
-By the end of this module, you’ll be able to provide and receive feedback effectively to achieve a positive impact in your work or school environment.
+By the end of this module, you'll be able to provide and receive feedback effectively to achieve a positive impact in your work or school environment.
 
 ## Prerequisites
 
