@@ -10,10 +10,10 @@ metadata:
   ms.prod: learning-azure
 title: 'HoloLens 2 Fundamentals: develop mixed reality applications'
 prerequisites: |
-- A Windows 10 PC configured with the correct tools installed
-- Windows 10 SDK 10.0.18362.0 or later
-- A HoloLens 2 device configured for development
-- Unity Hub with Unity 2020.3 LTS or Unity 2019.4 LTS installed (OpenXR requires 2020.3.8 or later to prevent bugs)
+ - A Windows 10 PC configured with the correct tools installed
+ - Windows 10 SDK 10.0.18362.0 or later
+ - A HoloLens 2 device configured for development
+ - Unity Hub with Unity 2020.3 LTS or Unity 2019.4 LTS installed (OpenXR requires 2020.3.8 or later to prevent bugs)
 summary: |
  Learn the techniques and best practices for developing mixed reality applications.You will identify and describe some of the core concepts like Mixed Reality Toolkit (MRTK), Azure Spatial Anchors, Azure Services, PC Holographic Remoting, and so on.
 iconUrl: /learn/achievements/generic-trophy.svg
@@ -26,8 +26,8 @@ roles:
 - technology-manager
 products:
 - azure
-- windowsmixedreality
-- mixedrealitytoolkit
+- windows-mixed-reality
+- mixed-reality-toolkit
 - hololens
 modules:
 - learn.azure.learn-introduction-tutorials-mrtk
