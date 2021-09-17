@@ -1,4 +1,4 @@
-In this exercise, we'll create a function that will start when it receives an HTTP request, and will respond to each request by sending back a message. The parameters `req` and `res` are the *trigger binding* and *output binding*, respectively. (It might help to think of those parameters as abbreviations for "request" and "response.")
+In this exercise, we'll create a function that will run when it receives an HTTP request, and will respond to each request by returning a message. The parameters `req` and `res` are the *trigger binding* and *output binding*, respectively. (It might help to think of those parameters as abbreviations for "request" and "response.")
 
 See the following high-level illustration of what we're going to build.
 
@@ -44,9 +44,9 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. Select **Review + create**, and then select **Create** to provision and deploy the function app.
 
-1. Deployment can take some time. In the top task bar, select the **Notifications** icon, and watch for a **Deployment succeeded** message.
+1. Deployment can take some time. In the command bar, select the **Notifications** icon, and watch for a **Deployment succeeded** message.
 
-1. Wehn your function deployment is complete, select **Go to resource**. The **Overview** pane for your function app appears.
+1. When your function deployment is complete, select **Go to resource**. The **Overview** pane for your function app appears.
 
 ::: zone-end
 
@@ -56,7 +56,7 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the resource menu, select **Compute**, and then search for and select **Function App** in the search box. The **Function App** pane appears.
+1. In the resource menu, select **Compute**, and then search for and select **Function App**. The **Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each section.
 
@@ -97,11 +97,11 @@ Now that we have a function app, it's time to create a function. A function is a
         
 1. In the **Select a template** section, select **HTTP trigger**.
 
-1. In the **Template details** section, enter the following information.
+1. Scroll down to the **Template details** section, and then enter the following information.
 
-    - In the **New Function** text box, leave the default name of *HttpTrigger1*.
+    - In the **New Function** text box, accept the default name *HttpTrigger1*.
 
-    - Accept the **Authorization level** default value *Function*.
+    - In the **Authorization level** text box, accept default value *Function*.
 
         The authorization level determines what keys need to be present on the request in order to invoke the function. *Function* requires a function-specific key.
 
@@ -117,7 +117,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
     'https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure'  
 
-1. Press <kbd>Enter</kbd> to execute the request in your browser. The response may take a couple of minutes as the function app initializes. If you receive a timeout error, refresh to resend the request. When the function responds, you should see output similar to the following example displayed in your browser.
+1. Press <kbd>Enter</kbd> to run the request in your browser. The response may take a couple of minutes as the function app initializes. If you receive a timeout error, refresh to resend the request. When the function responds, you should see output similar to the following example displayed in your browser.
 
     ```output
     Hello, Azure. This HTTP triggered function executed successfully.
@@ -189,9 +189,9 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. Scroll down to the **Template details** section, and enter the following information.
 
-    - In the **New Function** text box, leave the default name of *HttpTrigger1*.
+    - In the **New Function** text box, accept the default name *HttpTrigger1*.
 
-    - In the **Authorization level** text box, leave the default value of *Function*.
+    - In the **Authorization level** text box, accept  the default value *Function*.
 
         The authorization level determines what keys need to be present on the request in order to invoke the function. *Function* requires a function-specific key.
 
@@ -203,19 +203,19 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL.
 
-1. Paste the function URL you copied into the address bar of your browser.
+1. In your browser, create a new tab, and then paste the function URL you copied into the address bar.
 
 1. Add the query string value `&name=Azure` to the end of the URL. Your resulting URL should resemble the following example:
 
     'https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure'
 
-1. Press <kbd>Enter</kbd> to execute the request in your browser. The response may take a couple of minutes to process the function app for the first time. If you receive a timeout error, refresh to resend the request. When the function responds, you should see a response similar to the following output displayed in your browser.
+1. Press <kbd>Enter</kbd> to execute the request in your browser. It may take a couple of minutes to process the function app for the first time. If you receive a timeout error, refresh to resend the request. When the function responds, you should see output similar to the following example displayed in your browser.
 
     ```output
     Hello, Azure. This HTTP triggered function executed successfully.
     ```
 
-    As you can see from this exercise so far, you have to select a trigger type when you create a function. Every function has a single trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation, shown in the following image in PowerShell, uses the `Push-OutputBinding` cmdlet to respond with the value of the parameter *name* it received in the query string or body of the request. If no string was provided, the function responds with a message that prompts whomever is calling to supply a name value.
+    As you can see from this exercise so far, you must select a trigger type when you create a function. Each function has a single trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation, shown in the following image in PowerShell, uses the `Push-OutputBinding` cmdlet to respond with the value of the parameter *name* it received in the query string or body of the request. If no string was provided, the function responds with a message that prompts whomever is calling to supply a name value.
 
 1. In the Azure portal resource menu, under **Developer**, select **Code + Test** to view the code.
 
@@ -253,7 +253,7 @@ Now that we have a function app, it's time to create a function. A function is a
     })
     ```
 
-    Let's look briefly at the function's other file, the **function.json** config file. Access this file by selecting **function.json** from the filepath's dropdown list. The configuration data is shown in the following JSON listing.
+    Let's look briefly at the function's other file, the **function.json** config file. Open this file by selecting **function.json** from the filepath's dropdown list. The configuration data is shown in the following JSON listing.
 
     ```json
     {
