@@ -28,10 +28,10 @@ By adopting and maintaining a growth mindset, you can go farther in life than yo
 
 ## How to respond to varying situations
 
-A growth mindset can be helpful in a variety situations. By knowing how to respond in those situations, you emerge stronger as a worker and a person.
+A growth mindset can be helpful in a variety of situations. By knowing how to respond in those situations, you emerge stronger as a worker and a person.
 
 - **Feedback**: In the course of your career, you'll often get feedback, both good and bad. Depending on how you see it, you might have a growth moment. Be open to it, especially the bad feedback. Is it critiquing how you did things or you personally? Can you grow from it?
-- **Skills**: Working in tech means that you must learn new things constantly. A way to ensure that this process becomes natural is to understand how you learn. Some people find out quickly how they learn best, and others might a bit longer.
+- **Skills**: Working in tech means that you must learn new things constantly. A way to ensure that this process becomes natural is to understand how you learn. Some people find out quickly how they learn best, and others might take a bit longer.
 
 ## Dealing with feedback
 
