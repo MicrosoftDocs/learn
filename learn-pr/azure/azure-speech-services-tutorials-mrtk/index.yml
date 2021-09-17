@@ -26,6 +26,8 @@ products:
 - windows-mixed-reality
 - mrtk
 - hololens
+- Azure
+- Mixed Reality Toolkit
 prerequisites: |
   - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/develop/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
