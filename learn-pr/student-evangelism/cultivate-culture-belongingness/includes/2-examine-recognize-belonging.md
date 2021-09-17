@@ -1,4 +1,4 @@
-You want the ability to recognize when your team members feel out of place, disrespected, or like they don't belong. To give your team members the best opportunity to contribute fully to the project, you'll examine the concept of belonging, and explore how to recognize it in your team and yourself.
+You want the ability to recognize when your team members feel out of place, disrespected, or like they don't belong. To give your team members the best opportunity to contribute fully to the project, you'll examine the concept of belonging and explore how to recognize it in your team and yourself.
 
 Exploring what it means to belong is an essential step on the path to living and learning authentically. To further explore the concept of belonging, watch this two-minute video.
 
@@ -6,13 +6,13 @@ Exploring what it means to belong is an essential step on the path to living and
 
 ## Explore the concept of belonging
 
-Many people wonder, "Am I a tech person? Do I belong here?", or they might ask themselves, "When do I get to call myself a developer?" Exploring what it means to belong is essential on the path to living and learning authentically. Although the tech industry is changing to become more accessible and inclusive, there is still work to be done. There are many factors that contribute to whether people in tech feel they have a place or a sense of belonging.
+Many people wonder, "Am I a tech person? Do I belong here?". Or they might ask themselves, "When do I get to call myself a developer?" Exploring what it means to belong is an essential step on the path to living and learning authentically. Although the tech industry is changing to become more accessible and inclusive, there's still work to be done. There are many factors that contribute to whether people in tech feel they have a place or a sense of belonging.
 
 Typically, people don't contribute fully when they feel they don't belong. To cultivate a climate of belonging in tech, you must proactively include and welcome people from a diverse range of backgrounds and lived experiences. You must also be aware of how your own subconscious biases, words, and actions affect feelings of belonging in others.
 
-*Belonging* is the basic human need to be a part of something larger than us. Psychologists have studied what a "sense of belonging" is for decades and have concluded that its importance follows just behind needs for food, shelter, and safety.
+*Belonging* is the basic human need to be a part of something larger than ourselves. Psychologists have studied what a "sense of belonging" is for decades. They've concluded that its importance ranks just behind our basic needs like food, shelter, and safety.
 
-Belonging is different than "fitting in" and seeking approval from a group. Fitting in is about assessing a space and becoming who you need to be so that you're accepted in that space. Belonging doesn't require that you change who you are: it requires only that you be who you are.
+Belonging is different than "fitting in" and seeking approval from a group. Fitting in is about assessing a space and becoming who you need to be so that you're accepted in that space. Belonging doesn't require you to change who you are: it only requires you to _be_ who you are.
 
 Belonging is also not your aptitude. Meaning that, it's not about how skilled you are at your job or what kind of grades you have in school. Belonging means:
 

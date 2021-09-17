@@ -1,18 +1,18 @@
-You want to make sure everyone on your team feels included as the next step to developing a sense of belonging in the team. You'll examine some of the challenges that tech spaces have when it comes to climate, biases, and inclusivity.
+The next step to developing a sense of belonging in your team, you'll want to make sure everyone on your team feels included. You'll examine some of the challenges for tech spaces when it comes to climate, biases, and inclusivity.
 
 ## How climate influences a sense of belonging
 
-The messages that your surrounding environment send you contribute to your sense of belonging. The *climate* is a way of evaluating, or *taking the temperature* of a space, whether that's at home, work, or school. The climate, or temperature, of tech influences who has a sense of belonging. Some find the tech environment chilly and uninviting, while others find it warm and welcoming.
+Your surrounding environment sends you messages that contribute to your sense of belonging. The *climate* is a way of evaluating, or *taking the temperature* of a space, whether that's at home, work, or school. The climate, or temperature, of tech influences who has a sense of belonging. Some find the tech environment chilly and uninviting, while others find it warm and welcoming.
 
 ### What influences climate?
 
-The people who occupy a space, and how they behave and treat each other, can impact the climate of a space. Climate is also influenced by who's absent and who it ultimately impacts.
+The people who occupy a space, and how they behave and treat each other, can affect the climate of a space. Climate is also influenced by who's absent and who is ultimately impacted.
 
 :::image type="content" source="../media/4-different-idea.png" alt-text="Illustration showing a person tentatively approaching a group with their idea, which is different from the ideas of the people in the group." border="false":::
 
 ## Historical challenges in tech
 
-If you recognize that there are people similar to you in a space, you may feel invited and have a sense of belonging. It's challenging to have a sense of belonging when there aren't others similar to you in tech. Although changes are being made to make computer science more accessible and inclusive, there is still work to be done. Historically, certain groups have been excluded from tech fields. Learning about the past and present realities of others might help you think critically about how you want to build the future. When you better understand what challenges you and others might be faced with, you can be proactive to invite, welcome, and include people from a diverse range of backgrounds and lived experiences.
+If you recognize that there are people similar to you in a space, you may feel invited and have a sense of belonging. It's challenging to have a sense of belonging when there aren't others similar to you in tech. Although changes are being made to make computer science more accessible and inclusive, there's still work to be done. Historically, certain groups have been excluded from tech fields. Learning about the past and present realities of others might help you think critically about how you want to build the future. When you better understand what challenges you and others might be faced with, you can proactively invite, welcome, and include people from a diverse range of backgrounds and lived experiences.
 
 In the past, the field of tech has had many challenges when it comes to creating a culture of inclusion and belonging. For example, historically there have been:
 
@@ -20,7 +20,7 @@ In the past, the field of tech has had many challenges when it comes to creating
 
 - Far fewer percentages of people who are Black or Latinx than people who are white.
 
-Challenges like these narrow the range of backgrounds and lived experiences in tech. This is a problem because diverse teams are essential.
+Challenges like these narrow the range of backgrounds and lived experiences in tech. This fact is a problem because diverse teams are essential.
 
 ## Preconceptions about who is in tech
 
@@ -59,7 +59,7 @@ Reflect on the following questions that pertain to diversity in tech. Optionally
 
 - What value does diversity add to computer science as a field?
 
-- What is the cost or benefit to the field if computer science does not improve its diversity? Why isn't the status quo advantageous?
+- What's the cost or benefit to the computer science field if it doesn't increase diversity? Why isn't the status quo advantageous?
 
 - What are some barriers to diversity in computer science? What kinds of initiatives are being developed to address these barriers?
 
@@ -73,7 +73,7 @@ While changes are being made to make computer science more accessible and inclus
 
 - Be brave to stick up for, or stand up to, others.
 
-- Take time to continue researching this topic.
+- Take time to continue researching this subject.
 
 ### Change the climate
 
@@ -87,7 +87,7 @@ To change the climate in your collaborations and community, you can:
 
 - Notice who is being taken seriously and ask yourself, "Are there missing perspectives?"
 
-- Take on the perspectives of those around you and ask yourself, "Do they feel respected and valued?"
+- Take on the perspectives of others around you and ask yourself, "Do they feel respected and valued?"
 
 - Be proactive to consider the messages and signals you're sending in your interactions.
 

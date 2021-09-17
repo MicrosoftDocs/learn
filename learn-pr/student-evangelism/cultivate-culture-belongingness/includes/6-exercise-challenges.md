@@ -18,7 +18,7 @@ Reflect on the following questions that pertain to diversity in tech. Optionally
 
 - What value does diversity add to computer science as a field?
 
-- What is the cost or benefit to the field if computer science does not improve its diversity? Why isn't the status quo advantageous?
+- 'What is the cost or benefit to the field if computer science doesn't improve its diversity'? Why isn't the status quo advantageous?
 
 - What are some barriers to diversity in computer science? What kinds of initiatives are being developed to address these barriers?
 

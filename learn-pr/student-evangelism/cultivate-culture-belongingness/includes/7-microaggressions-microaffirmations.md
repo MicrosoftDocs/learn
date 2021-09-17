@@ -1,8 +1,8 @@
-You've been trying to assess why some of your team seem withdrawn, don't participate in group discussions, and aren't performing as well as they could be. Some team members have revealed that they're teased by other team members, while others have made seemingly innocent remarks that were hurtful or reinforced negative stereotypes. For example, one young developer gets teased frequently about his age, and one female developer complained to you that she's reminded almost every day that she's a woman in a "man's industry." You'll learn more about how to spot microaggressions like these, and as a team leader and mentor, how to interrupt and counter them.
+You've been trying to assess why some of your team seem withdrawn, don't participate in group discussions, and aren't performing as well as they could be. Some team members have revealed that they've been teased by peer, while others have made seemingly innocent remarks that were hurtful or reinforced negative stereotypes. For example, one young developer gets teased frequently about his age, and one female developer is reminded almost every day that she's a woman in a "man's industry." You'll learn how to spot microaggressions like these. You'll also get some tips for how to interrupt and counter them as a team leader and mentor.
 
 ## What are microaggressions?
 
-*Microaggressions* are casual exchanges that cause a sense of subordination in the recipient. Microaggressions often appear to be a compliment or a joke. However, they contain a hidden insult about a group of people based on any one of a number of social identities, including:
+*Microaggressions* are casual exchanges that cause a sense of subordination in the recipient. Microaggressions often appear to be a compliment or a joke. However, they contain hidden insults about a group of people with one of many possible social identities. These can include:
 
 - Race
 
@@ -20,7 +20,7 @@ You've been trying to assess why some of your team seem withdrawn, don't partici
 
 - Disability
 
-Microaggressions originate from some of the same core ideas discussed earlier about minorities or marginalized people, such as they're not smart or don't belong in tech. But microaggressions are different from overtly racist, sexist, or homophobic acts or comments because they typically don't have any negative intent or hostility behind them. In fact, the person who makes the comment usually isn't consciously aware that their comment is a microaggression because they're unaware of their own biases.
+Microaggressions originate from some of the same core ideas discussed earlier about minorities or marginalized people. For example, that they're not smart or don't belong in tech. But microaggressions are different from overtly racist, sexist, or homophobic acts or comments because they typically don't have any negative intent or hostility behind them. In fact, the person who makes the comment usually isn't consciously aware that their comment is a microaggression because they're unaware of their own biases.
 
 Some example microaggressions are:
 
@@ -52,11 +52,11 @@ Microaggressions can make the climate at work or school seem cold and uninviting
 
 Microaggressions are implicit biases manifesting themselves in interactions with other people. Even if you aren't actively making comments to someone, your subconscious biases still affect how you think about and interact with another person. When you have implicit bias against someone, you might have trouble imagining that person positively.
 
-For example, say a new person assigned to your coding team is young. You subconsciously assume someone of that age won't have much experience coding. Because of this, you might not bother checking with the person to find out what their experience is as you would do with an older coder who has more experience.
+For example, say a new person assigned to your coding team is young. You subconsciously assume someone of that age won't have much experience coding. Because of this assumption, you might not bother to ask about the depth of their experience like you would with an older coder.
 
 When the new coder's first coding assignment surpasses your expectations, you respond with pleasant surprise, and say, "Wow, this is really good. I wasn't expecting this much from you on your first week. You must have starting coding when you were five years old to get this good."
 
-You might be trying to give a compliment, but to them, it's offensive. It's not the first time they've been underestimated for their abilities, and repeatedly needing to "prove themselves" is emotionally exhausting for them. This exchange makes them feel more like an outsider — someone who is different from the rest of the team. It certainly doesn't reinforce their feeling of belonging. They're unable to counter the microaggression because it was said as a compliment. How can they complain about it? Instead, they leave the interaction feeling dejected, frustrated, even angry.
+You might be trying to give a compliment, but to them, it's offensive. It's not the first time they've been underestimated for their abilities. It's emotionally exhausting for them to have to repeatedly "prove themselves." This exchange makes them feel more like an outsider - someone who is different from the rest of the team. It certainly doesn't reinforce their feeling of belonging. They're unable to counter the microaggression because it was said as a compliment. How can they complain about it? Instead, they leave the interaction feeling dejected, frustrated, even angry.
 
 Examining this exchange later, you realize that:
 
@@ -68,7 +68,7 @@ Examining this exchange later, you realize that:
 
 Micro-affirmations are small acts of inclusion that add up to an overall feeling of inclusion for everyone. They're the private or public actions or words that occur when you want to demonstrate to others that you care about their well-being, that you want to include them, and that you want them to succeed.
 
-:::image type="content" source="../media/5-join-us.png" alt-text="Illustration of a person saying "Come join us!" to another person to welcome them into a group." border="false":::
+:::image type="content" source="../media/5-join-us.png" alt-text="Illustration of a person saying, 'Come join us!' to another person to welcome them into a group." border="false":::
 
 Micro-affirmations come from a place of generosity, and often occur when others need support. Some examples of micro-affirmation include:
 
@@ -86,7 +86,7 @@ Micro-affirmations come from a place of generosity, and often occur when others 
 
 - Creating opportunity for someone.
 
-Many experts on the subject think that practicing micro-affirmations might help block microaggressions. This is based on the belief that behavior and attitude follow one another. Said another way, just as your unconscious biases affect your actions, when you mindfully treat others with care and respect, your unconscious biases about them will adopt those same perspectives.
+Many experts on the subject think that practicing micro-affirmations might help block microaggressions. They believe that behavior and attitude follow one another. Said another way, just as your unconscious biases affect your actions, when you mindfully treat others with care and respect, your unconscious biases about them will adopt those same perspectives.
 
 ## Employ micro-affirmations as a peer, manager, or mentor
 
@@ -94,9 +94,9 @@ As a peer, manager, or mentor, you can use techniques involving micro-affirmatio
 
 ### Interrupt a microaggression
 
-Imagine that one of your team members (team member A) makes a remark that is perceived by another team member (team member B) as a microaggression. To interrupt and diffuse the situation, start by asking team member A about the intent and meaning of the remark. For example, ask them, "Tell me more about what you mean by that statement." Saying this creates space for team member A to clarify their thoughts.
+Imagine that one of your team members (team member A) makes a remark that is perceived by another team member (team member B) as a microaggression. To interrupt and diffuse the situation, start by asking team member A about the intent and meaning of the remark. For example, ask them, "Tell me more about what you mean by that statement." By using such language, you can create space for team member A to clarify their thoughts.
 
-An inquisitive question creates an opportunity for dialogue so everyone can discover the intent of the remark. It also creates space for team member B to evaluate the impact it had on them. They can then share their thoughts about this along with any other related questions or concerns with team member A.
+An inquisitive question creates an opportunity for dialogue so everyone can discover the intent of the remark. It also creates space for team member B to evaluate the impact it had on them. They can then share their thoughts about what happened along with any other related questions or concerns with team member A.
 
 > [!IMPORTANT]
 > The intent of the discussion should always be to cultivate understanding of the speaker's intent and the reactions of their teammates.

@@ -2,7 +2,7 @@ With all the knowledge you now have about belongingness in tech, you can think a
 
 ## Foster an inclusive environment
 
-No one can change the composition of the people already in tech. However, everyone can change their behavior to foster an inclusive environment and create a greater sense of belonging for all participants. The goal is to ensure that everyone with varying backgrounds, experiences, and knowledge, can contribute.
+No one can change the composition of the people already in tech. However, everyone can alter their behavior to foster an inclusive environment and create a greater sense of belonging for all participants. The goal is to ensure that everyone with varying backgrounds, experiences, and knowledge, can contribute.
 
 > [!NOTE]
 > Remember that you cannot know someone else's prior experience offhand. Social comparisons can make you unfairly question the potential contributions of others.
@@ -29,11 +29,11 @@ You can implement the following recommendations to begin using micro-affirmation
 
 - Be specific with praise. For example, don't give generic praise like, "That code you wrote was good." Instead, you could say, "The code you wrote was well-written and easy to understand. Also, thanks for leaving comments so the other developers can understand your design approach and decisions."
 
-- Practice active listening. Focus on listening clearly to what is being shared. Demonstrate that you're listening by creating eye contact and retaining an open body posture. For example, don't cross your arms. Summarize statements and ask clarifying questions to ensure understanding, such as "It sounds like a big accomplishment" or "I hear why that matters to you."
+- Practice active listening. Focus on listening clearly to what is being shared. Demonstrate that you're listening by creating eye contact and by using an open body posture. For example, don't cross your arms. Summarize statements and ask clarifying questions to ensure understanding. Examples include, "It sounds like a big accomplishment" or "I hear why that matters to you."
 
-- Echo what was said and extend it to reassure that their idea is valuable. For example, "Could we return to what you just said? I thought that was an important idea. I'd like to add to that with another thought."
+- Echo what was said and extend it to reassure that their idea is valuable. For example, "Could we return to what you just said? I thought it was an important idea. I'd like to add to it with another thought."
 
-- Recognize and validate their experiences. It's helpful to identify and validate the constructive behaviors a learner demonstrates. Do this by responding to the experience, expressing care about the effect of the event, and helping them envision a productive path forward. For example, "You made that happen. I appreciate how you stepped in at the right moment."
+- Recognize and validate their experiences. It's helpful to identify and validate the constructive behaviors a learner demonstrates. Respond to the experience, express care about the effect of the event, and help them envision a productive path forward. For example, "You made that happen. I appreciate how you stepped in at the right moment."
 
 - Hold the door open. Bring someone along with you to demonstrate that successes can be shared. For example, introduce someone in a group.
 
@@ -41,13 +41,13 @@ You can implement the following recommendations to begin using micro-affirmation
 
 ## Build inclusive environments
 
-You can start building inclusive environments by creating a welcoming space. You do this by inviting others to participate, being open to different perspectives, practicing active listening, and sharing the air. By doing all these things, you also set an example for the rest of the team, class, or group.
+You can start building inclusive environments by creating a welcoming space. Invite others to participate, be open to different perspectives, practice active listening, and share the air. By doing all these things, you also set an example for the rest of the team, class, or group.
 
 ### Welcome and invite participation
 
 Create a welcoming space by intentionally welcoming others and inviting them to join you. Even if you feel at home and valued in tech, others might not be having the same experience.
 
-You might get an opportunity to help someone navigate a new situation who doesn't feel they belong in the same space where you felt comfortable. This could be as simple as reaching out to a peer who doesn't feel they belong. You could ask them how they're doing, or ask about what projects they're working on. You could also ask them join in a conversation, or invite them to a meeting about a topic you know they're interested in.
+You might get an opportunity to help someone navigate a new situation when they feel they don't belong in the same space where you felt comfortable. This opportunity could be as simple as reaching out to a peer who doesn't feel they belong. Maybe you ask them how they're doing, or ask about what projects they're working on. You could also ask them join in a conversation, or invite them to a meeting about a subject you know they're interested in.
 
 :::image type="content" source="../media/7-tell-me-about-you.png" alt-text="Illustration of one person asking another person 'Tell me about your work!'" border="false":::
 
@@ -55,7 +55,7 @@ In groups, you can be cognizant of people who aren't sharing, or who aren't bein
 
 ### Be open to different perspectives
 
-Recognize the value of others' perspectives and ideas. Collaborating with people who have diverse opinions and a variety of perspectives fosters an environment of different viewpoints and ideas. Having diversity and differences of opinion is necessary to create impactful solutions.
+Recognize the value of others' perspectives and ideas. Collaborating with people who have diverse opinions and various perspectives fosters an environment of different viewpoints and ideas. Having diversity and differences of opinion is necessary to create impactful solutions.
 
 :::image type="content" source="../media/7-solution-box.png" alt-text="Illustration of many people contributing their ideas and specialties to a box labeled 'solution box.'" border="false":::
 

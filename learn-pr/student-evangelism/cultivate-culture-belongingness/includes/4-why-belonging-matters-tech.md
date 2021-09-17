@@ -15,7 +15,7 @@ To further explore the concept of belonging in tech, review the following video,
 
 ### Check in with yourself
 
-A community that invites you in and provides support can make a big difference in whether you decide to persevere. Evaluate yourself using these questions and statements as a starting point:
+A community that invites you in and provides support can make a significant difference in whether you decide to persevere. Evaluate yourself using these questions and statements as a starting point:
 
 - Do I fit in?
 
@@ -35,16 +35,16 @@ A community that invites you in and provides support can make a big difference i
 
 ## Belonging is not aptitude
 
-Belonging isn't about aptitude, or whether you believe you can do something. Belonging is about how you feel about yourself, and whether you think of yourself as a "tech person" or as part of the "tech community."
+Belonging isn't about aptitude, or whether you believe you can do something. Belonging is about how you feel about yourself. It's also about whether you think of yourself as a "tech person" or as part of the "tech community."
 
-This component of belonging is related to mindset. The idea that a person is a "tech person", or there exists a community that is "the tech community" can indicate a fixed mindset about who is in tech.
+This component of belonging is related to mindset. The idea that someone can be "tech person", or that a defined "tech community" exists, can indicate a fixed mindset about who is in tech.
 
 > [!NOTE]
 > A *fixed mindset* is a mental attitude that dictates that you can only do certain things. With a fixed mindset, you believe that basic abilities such as intelligence and talent are fixed traits that you were born with and cannot change.
 
 ### Using tech tools to determine belongingness in tech
 
-The field of tech is constantly changing and growing. For example, tech tools are always evolving and new ones are frequently being introduced. Computer science students and people who work in tech will often encounter new challenges and the need to learn new tools. When they encounter new technology, two questions can come up:
+The field of tech is constantly changing and growing. For example, tech tools are always evolving and new ones are frequently being introduced. Computer science students and people who work in tech will often come across new challenges and the need to learn new tools. When they're presented with new technology, two questions can come up:
 
 - Self-efficacy. "Can I do it?"
 
@@ -52,9 +52,9 @@ The field of tech is constantly changing and growing. For example, tech tools ar
 
 Sometimes these lead to the additional questions, "Do I belong in tech?" or "Am I a tech person?"
 
-Interacting with the tech environment might affect your attitude about working in tech, and your feelings of belonging in tech. When you try a new tech tool, your interactions with its supporting documentation and community can impact whether you continue to use the tool.
+Interacting with the tech environment might affect your attitude about working in tech, and your feelings of belonging in tech. When you try a new tech tool, your interactions with its supporting documentation and community can affect whether you continue to use the tool.
 
-Think back to the last time you tried a new app, tech tool, or a new technique such as learning a new coding language. Was it easy or frustrating to figure out how to use?
+Think back to the last time you tried a new app, tech tool, or a new technique. Maybe you learned a new coding language. Was it easy or frustrating to figure out how to use?
 
 If you found the new tool or skill easy to learn:
 
