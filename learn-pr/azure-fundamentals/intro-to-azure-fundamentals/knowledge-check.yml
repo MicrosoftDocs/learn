@@ -35,7 +35,7 @@ quiz:
     - content: "Using the internet"
       isCorrect: false
       explanation: "That's incorrect. Cloud computing is the delivery of computing services over the internet."
-  - content: "Which of the following _not_ a feature of Cloud computing?"
+  - content: "Which of the following is _not_ a feature of Cloud computing?"
     choices:
     - content: "Faster innovation"
       isCorrect: false
