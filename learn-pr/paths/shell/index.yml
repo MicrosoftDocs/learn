@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.shell.linux-command-line
 metadata:
-  title: Get started with the Linux command-line and the Shell
-  description: In this learning path, find out more about the Linux command-line, the shell and Bash.
+  title: Get started with the Linux command line and the Shell
+  description: In this learning path, find out more about the Linux command line, the shell, and Bash.
   brand: azure
   ms.date: 11/17/2021
   author: softchris
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: René
 summary: |
-  In this learning path, you will get started with the Linux command-line. You will:
+  In this learning path, you will get started with the Linux command line. You will:
     - Navigate the file system
     - Handle processes
     - Search text files
