@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.spatial-audio-tutorials-mrtk
 metadata:
-  title: Spatial Audio Tutorials
-  description: This course explores the use of spatial audio by integrating to a HoloLens 2 application. You can also deploy your project to a HoloLens 2.
+  title: Activate spatial audio for your HoloLens 2 application
+  description: Activate spatial audio for your HoloLens 2 application
   ms.date: 09/13/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-title: Spatial Audio Tutorials
+title: Activate spatial audio for your HoloLens 2 application
 summary: Learn about spatial audio to enhance your learning experience. Explores the use of spatial audio by integrating it to a HoloLens 2 application.
 abstract: |
   By the end of this module you will be able to:
