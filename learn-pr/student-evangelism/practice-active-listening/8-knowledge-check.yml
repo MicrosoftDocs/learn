@@ -25,7 +25,7 @@ quiz:
     - content: 'Assume that what you hear and understand always reflects the true intent of the speaker.'
       isCorrect: false
       explanation: "Incorrect. Intent and impact aren't always the same. People often say things in a way that doesn't accurately reflect their intentions or might be received incorrectly. Always assume positive intent."
-  - content: 'When a person repeats in their own words what someone is telling them, what communication technique are they using?"
+  - content: 'When a person repeats in their own words what someone is telling them, what communication technique are they using?'
     choices:
     - content: 'Active listening'
       isCorrect: false
