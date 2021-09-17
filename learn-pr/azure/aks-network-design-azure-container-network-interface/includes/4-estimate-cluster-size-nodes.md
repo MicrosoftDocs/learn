@@ -54,7 +54,7 @@ Locations API | 100 m - 500 m | 100 Mi / 500 Mi
 >
 > Memory can be measured in a number of ways, the above examples are using Mi and Gi, which are the power of two equivalents of Megabyte and Gigabyte. So, 500Mi will generally be referred to as 500 Megabytes and 1Gi is normally referred to as 1 Gigabyte.
 
-## Sizing Your Nodes
+## Sizing your nodes
 
 We've determined the minimum number of replicas each service will be running. We also know the minimum number of processor cores and memory that each service requires. Summing up gives us a figure of 1.5 cores and 2.8Gi of memory as our starting point. When our applications scale up to their maximum number of replicas and are using their maximum amounts of processor cores and memory, they're going to need 53 cores and 50 GB of memory.
 
