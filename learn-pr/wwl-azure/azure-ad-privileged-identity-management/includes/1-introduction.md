@@ -1,9 +1,9 @@
 
-Azure AD Priviledged Identity Management (PIM) allows you to manage, control, and monitor access to the most important resources in your organization.  You can give just-in-time access and just-enough-access to users to allow them to do their tasks.
+Azure AD Privileged Identity Management (PIM) allows you to manage, control, and monitor access to the most important resources in your organization.  You can give just-in-time access and just-enough-access to users to allow them to do their tasks.
 
 ## Scenario
 
-A security engineer uses Privileged Identity Management protect administrator priviliges and mitigate the risk of excessive or misused access rights; some common tasks are:
+A security engineer uses Privileged Identity Management protect administrator privileges and mitigate the risk of excessive or misused access rights; some common tasks are:
 - Configuring the scope of users and roles based on zero trust.
 - Setting up a PIM workflow to enforce approval for role usage, and monitor the access.
 - Implement just-in-time access.

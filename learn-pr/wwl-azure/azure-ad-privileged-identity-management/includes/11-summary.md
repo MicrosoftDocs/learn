@@ -1,5 +1,5 @@
 
-You have learned how PIM (privileged identity management) will protect your resources, roles, and data from risk by controling, managing, and monitoring access to privileged resources.
+You have learned how PIM (privileged identity management) will protect your resources, roles, and data from risk by controlling, managing, and monitoring access to privileged resources.
 
 You should be able to:
 
