@@ -36,7 +36,9 @@ The Logic Apps Designer command bar has two views of a logic app; both views can
 
 :::image type="content" source="../media/4-code-designer-view.png" alt-text="Choice of two views for a logic app.":::
 
-In the Logic Apps Designer command bar, select **Code view** to see the JSON configuration for the Event Grid trigger you've created.Review the JSON configuration code for your event triggers, and you'll recognize the settings and concepts we've completed thus far. As you become more familiar with JSON, you will be able to confidently edit the JSON configuration directly.
+In the Logic Apps Designer command bar, select **Code view** to see the JSON configuration for the Event Grid trigger you've created.
+
+Review the JSON configuration code for your event triggers, and you'll recognize the settings and concepts we've completed thus far. As you become more familiar with JSON, you will be able to confidently edit the JSON configuration directly.
 
 ``` json
 {
