@@ -37,7 +37,7 @@ A growth mindset can be helpful in a variety of situations. By knowing how to re
 
 To grow, it's important to learn how to accept feedback from others. Whether the feedback is good or bad, it's most useful when it's detailed and actionable. Here's an example of feedback that's hard to deal with but that you can learn from if you ask the right questions:
 
-> This presentation was bad
+> This presentation was bad.
 
 You're most likely thinking, OK, but I'm not sure what to do about it. 
 
