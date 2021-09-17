@@ -51,16 +51,16 @@ The template is a great starting point, but we'll need to add a bit more functio
 
 1. Create a new folder named *Hubs*.
 1. Add a new C# file to the *Hubs* folder, named *NotificationHub.cs*.
-1. Add the following C# code to the *NotificationHub.cs* file:
+1. Replace the *NotificationHub.cs* contents with the following C# code:
 
     :::code source="../code/src/SignalR.Server/Hubs/NotificationHub.cs":::
 
 1. Add a new C# file to the root folder, named *GlobalUsings.cs*.
-1. Add the following C# code to the *GlobalUsings.cs* file:
+1. Replace the *GlobalUsings.cs* contents with the following C# code:
 
     :::code source="../code/src/SignalR.Server/GlobalUsings.cs":::
 
-1. Replace the template content in the *Program.cs* file, with the following C# code:
+1. Replace the template content in the *Program.cs* file with the following C# code:
 
     :::code source="../code/src/SignalR.Server/Program.cs":::
 
@@ -70,41 +70,12 @@ The template is a great starting point, but we'll need to add a bit more functio
     dotnet add SignalR.Server/SignalR.Server.csproj reference SignalR.Models/SignalR.Models.csproj
     ```
 
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
 ## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
 
-<!-- 
+To verify that you're projects are correct, compile them using the `dotnet build` command. From Visual Studio Code's **Integrated Terminal** window, change directories to the *SignalR.Server* folder, and run the following command:
 
-NOTES:
+```dotnetcli
+dotnet build
+```
 
-dotnet add SignalR.Server/SignalR.Server.csproj  package Microsoft.Identity.Web
-
- -->
-
-<!-- Do not add a unit summary or references/links -->
+You should the "Build succeeded." message in the output.
