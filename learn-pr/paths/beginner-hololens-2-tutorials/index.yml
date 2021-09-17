@@ -27,7 +27,7 @@ roles:
 products:
 - azure
 - windows-mixed-reality
-- mixedrealitytoolkit
+- mixed-reality-tool-kit
 - hololens
 modules:
 - learn.azure.learn-introduction-tutorials-mrtk
