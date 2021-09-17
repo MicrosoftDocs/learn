@@ -1,10 +1,9 @@
 ﻿namespace SignalR.Models;
 
 public record Notification(
-    string Message,
-    DateTime IssuedAt,
-    DateOnly DueDate,
-    TimeOnly ExpectedTime)
+    string Text,
+    DateTime IssuedOn,
+    Package Package)
 {
     public Guid Id { get; init; } = Guid.NewGuid();
 }
