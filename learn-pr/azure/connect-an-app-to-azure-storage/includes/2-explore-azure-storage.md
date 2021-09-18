@@ -56,7 +56,7 @@ You can use queues to loosely connect different parts of your application togeth
 
 ### Table Storage
 
-For more informationabout Azure Table Storage, see https://docs.microsoft.com/en-us/azure/storage/tables/table-storage-overview
+For more information about Azure Table Storage, see ../../azure/storage/tables/table-storage-overview
 
 ## Azure storage accounts
 
