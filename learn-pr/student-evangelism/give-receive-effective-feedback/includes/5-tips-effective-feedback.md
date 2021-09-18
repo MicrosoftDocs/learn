@@ -14,14 +14,14 @@ Here are a few guidelines to follow as you provide feedback:
 
 | Guideline | Description | Example |
 | --- | --- | --- |
-| Ask | Ask whether they’re willing to try a new strategy. | "I can tell that learning to program is very important to you, and I want to help you in your goal. That’s why I’m suggesting that your approach to this assignment doesn’t demonstrate understanding of the  material. Would you be willing to try a different method to complete this assignment?" |
-| Signal intention | Explain why you’re giving this feedback. You believe they can reach a higher standard and you take them seriously. | "Although your code  passes all the unit tests, you didn’t use a for loop as required. Instead, you have copied, pasted, and modified the same piece of code five times." |
+| Ask | Ask whether they're willing to try a new strategy. | "I can tell that learning to program is very important to you, and I want to help you in your goal. That's why I'm suggesting that your approach to this assignment doesn't demonstrate understanding of the  material. Would you be willing to try a different method to complete this assignment?" |
+| Signal intention | Explain why you're giving this feedback. You believe they can reach a higher standard and you take them seriously. | "Although your code  passes all the unit tests, you didn't use a for loop as required. Instead, you have copied, pasted, and modified the same piece of code five times." |
 | Be specific      | Identify something specific to improve. Vague feedback can be unhelpful and intimidating. | "Are you willing to try to revise your program? If so, I suggest that you review your notes about for loops and run the sample code. Then come back to this program and try to replace this part with a for loop. In the future, you could try attending office hours to ask for some additional help." |
-| Offer | Offer a suggestion for a way forward so they leave with more than criticism. | "I’m happy to review a second attempt or brainstorm about other things to do when you’re working on an assignment and you get stuck." |
+| Offer | Offer a suggestion for a way forward so they leave with more than criticism. | "I'm happy to review a second attempt or brainstorm about other things to do when you're working on an assignment and you get stuck." |
 
 Additionally, you should try to:
 
-- Resist evaluating a person’s ability. Instead, focus on their performance or the approaches they used.
+- Resist evaluating a person's ability. Instead, focus on their performance or the approaches they used.
 - Emphasize their potential to improve, and support their motivation to undertake the challenge.
 - Use rubrics so that your team members can review your priorities and better understand how you think about the process.
 - Share certain feedback ahead of time with the whole group to reduce any sense that different people are receiving different messages.
