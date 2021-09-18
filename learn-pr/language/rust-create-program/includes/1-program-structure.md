@@ -40,13 +40,27 @@ fn main() { // The function declaration is not indented
 ```
 
 
-## The println! macro
+## The todo! macro
 
-Our `main` function does one task. It calls the `println!` macro that's predefined in Rust. A macro is a like a function, and it takes a variable number of input arguments. The `println!` macro expects one or more input arguments, which it displays to the screen or *standard output*. In our example, we pass one input argument to the macro, the text string "Hello, world!"
+When you work on exercises in the Rust modules, you'll notice the sample program often uses the `todo!` macro. A macro in Rust is a like a function, and they take a variable number of input arguments. The `todo!` macro is used to identify unfinished code in the Rust program. The macro is helpful for prototyping, or when you want to indicate behavior that isn't complete.
+
+Here's an example of how we use the `todo!` macro in the exercises:
 
 ```rust
 fn main() {
-    // Our main function does one task: call the println! macro
+    // Display the message "Hello, world!"
+    // todo!("Display the message by using the println!() macro");
+}
+```
+
+
+## The println! macro
+
+Our `main` function does one task. It calls the `println!` macro that's predefined in Rust. The `println!` macro expects one or more input arguments, which it displays to the screen or *standard output*. In our example, we pass one input argument to the macro, the text string "Hello, world!"
+
+```rust
+fn main() {
+    // Our main function does one task: show a message
     // println! displays the input "Hello, world!" to the screen
     println!("Hello, world!");
 }

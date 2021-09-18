@@ -1,19 +1,25 @@
 #[derive(PartialEq, Debug)]
-struct Car { color: String, motor: Transmission, roof: bool, age: (String, u32) }
+struct Car { color: String, motor: Transmission, roof: bool, age: (Age, u32) }
 
 #[derive(PartialEq, Debug)]
 enum Transmission { Manual, SemiAuto, Automatic }
 
-// Get car quality by testing input argument
-fn car_quality (miles: u32) -> (String, u32) {
-    let mut quality: (String, u32) = (String::from("New"), 0);
+#[derive(PartialEq, Debug)]
+enum Age { New, Used }
 
-    // If car has accumulated miles, car is used
+// Get the car quality by testing the value of the input argument
+// - miles (u32)
+// Return tuple with car age ("New" or "Used") and mileage
+fn car_quality (miles: u32) -> (Age, u32) {
+
+    // Check if car has accumulated miles
+    // Return tuple early for Used car
     if miles > 0 {
-        quality = (String::from("Used"), miles);
+        return (Age::Used, miles);
     }
-
-    return quality
+    
+    // Return tuple for New car, no need for "return" keyword or semicolon
+    (Age::New, miles)
 }
 
 // Build "Car" using input arguments
@@ -23,31 +29,29 @@ fn car_factory(order: i32, miles: u32) -> Car {
     // Prevent panic: Check color index for colors array, reset as needed
     // Valid color = 1, 2, 3, or 4
     // If color > 4, reduce color to valid index
-    let mut color = (order) as usize;
+    let mut color = order as usize;
     if color > 4 {        
         // color = 5 --> index 1, 6 --> 2, 7 --> 3, 8 --> 4
         color = color - 4;
     }
 
-    // Create "Car" instance as requested
-    let mut car = Car {
-        color: String::from(colors[(color-1) as usize]),
-        motor: Transmission::Automatic,
-        roof: true,
-        age: car_quality(miles)
-    };
-        
     // Add variety to orders for motor type and roof type
+    let mut motor = Transmission::Manual;
+    let mut roof = true;
     if order % 3 == 0 {          // 3, 6, 9
-        car.motor = Transmission::Automatic;
+        motor = Transmission::Automatic;
     } else if order % 2 == 0 {   // 2, 4, 8, 10
-        car.motor = Transmission::SemiAuto;
-        car.roof = false;
-    } else {                     // 1, 5, 7, 11
-        car.motor = Transmission::Manual;
-    }
+        motor = Transmission::SemiAuto;
+        roof = false;
+    }                            // 1, 5, 7, 11
 
-    return car
+    // Return requested "Car"
+    Car {
+        color: String::from(colors[(color-1) as usize]),
+        motor: motor,
+        roof: roof,
+        age: car_quality(miles)
+    }
 }
 
 fn main() {

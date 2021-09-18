@@ -25,7 +25,7 @@ You might have noticed that we defined the `goodbye` function after the `main` f
 
 When a function has input arguments, we name each argument and specify the data type at the start of the function declaration. Because arguments are named like variables, we can access the arguments in the function body.
 
-Let's modify our goodbye function to take a pointer to some string data as an input argument.
+Let's modify our `goodbye` function to take a pointer to some string data as an input argument.
 
 ```rust
 fn goodbye(message: &str) {
@@ -50,18 +50,42 @@ Casual: See you later!
 
 ## Return a value
 
-When a function returns a value, we add the syntax `-> <type>` after the list of function arguments and before the opening curly bracket for the function body. The arrow syntax `->` indicates that the function returns a value. The `<type>` portion lets the complier know the type of the value returned.
+When a function returns a value, we add the syntax `-> <type>` after the list of function arguments and before the opening curly bracket for the function body. The arrow syntax `->` indicates that the function returns a value to the caller. The `<type>` portion lets the complier know the data type of the value returned.
 
-Let's modify our goodbye function to take a pointer to return a boolean value:
+In Rust, the common practice is to return a value at the end of a function by having the last line of code in the function be equal to the value to return. The following example shows this behavior. The `divide_by_5` function returns the result of dividing the input number by 5 to the calling function:
 
 ```rust
-fn goodbye(message: &str) -> bool {
-    println!("\n{}", message);
-    return true
+fn divide_by_5(num: u32) -> u32 {
+    num / 5
+}
+
+fn main() {
+    let num = 25;
+    println!("25 divided by 5 = {}", num, divide_by_5(25));
 }
 ```
 
-The return functionality can be used at any point in the function to halt execution and send a value back to the caller. When you explicitly use the `return` keyword, you end the statement with a semicolon. When you create and send back a return value without using the `return` keyword, don't end the statement with a semicolon.
+Here's the output:
+
+```output
+25 divided by 5 = 5
+```
+
+We can use the `return` keyword at any point in the function to halt execution and send a value back to the caller. Usually, the use of the `return` keyword is used in combination with a conditional test.
+
+Here's an example that explicitly uses the `return` keyword to return early from a function if the value of `num` is 0:
+
+```rust
+fn divide_by_5(num: u32) -> u32 {
+    todo!("Check if num is 0") {
+        // Return early
+        return 0;
+    }
+    num / 5
+}
+```
+
+When you explicitly use the `return` keyword, you end the statement with a semicolon. If you send back a return value without using the `return` keyword, you don't end the statement with a semicolon. You might have noticed that we didn't use the ending semicolon for the `num / 5` return value statement.
 
 
 ## Review the signature
@@ -82,4 +106,4 @@ You can interact with the example code in this [Rust Playground][RustPlay-func].
 
 <!-- Links -->
 
-[RustPlay-func]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=370b04cadc1f78cf8fee0f09653399a1?azure-portal=true
+[RustPlay-func]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=6552e6c4f12e51521bdf4654e8971fa7?azure-portal=true

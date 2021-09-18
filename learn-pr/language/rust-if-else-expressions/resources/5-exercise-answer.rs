@@ -1,33 +1,30 @@
 #[derive(PartialEq, Debug)]
 // Declare Car struct to describe vehicle with four named fields
-struct Car { color: String, motor: Transmission, roof: bool, age: (String, u32) }
+struct Car { color: String, motor: Transmission, roof: bool, age: (Age, u32) }
 
 #[derive(PartialEq, Debug)]
 // Declare enum for Car transmission type
 enum Transmission { Manual, SemiAuto, Automatic }
 
+#[derive(PartialEq, Debug)]
+// Declare enum for Car age
+enum Age { New, Used }
+
 //////////////////////////////////////////////////
 
 // Get the car quality by testing the value of the input argument
 // - miles (u32)
-// Create a tuple for the car quality with the age ("New" or "Used") and miles
-// Return a tuple with the arrow `->` syntax
-fn car_quality (miles: u32) -> (String, u32) {
+// Return tuple with car age ("New" or "Used") and mileage
+fn car_quality (miles: u32) -> (Age, u32) {
 
-    // Declare and initialize the return tuple value
-    // For a new car, set the miles to 0
-    // Corrected code: Use the "mut" keyword so "quality" can be changed later
-    let mut quality: (String, u32) = (String::from("New"), miles);
-
-    // Corrected code: Check if the car has accumulated miles
-    // If the car has some miles, then the car is used
+    // Corrected code: Check if car has accumulated miles
+    // Corrected code: Return tuple early for Used car
     if miles > 0 {
-        // Corrected code: Set the "quality" value to a "Used" car
-        quality = (String::from("Used"), miles);
+        return (Age::Used, miles);
     }
-
-    // Return the completed tuple, no semicolon needed
-    return quality
+    
+    // Corrected code: Return tuple for New car, no need for "return" keyword or semicolon
+    (Age::New, miles)
 }
 
 //////////////////////////////////////////////////
@@ -41,39 +38,33 @@ fn car_quality (miles: u32) -> (String, u32) {
 // Return an instance of a "Car" struct with the arrow `->` syntax
 fn car_factory(color: String, motor: Transmission, roof: bool, miles: u32) -> Car {
 
-    // Call car_quality(miles) to help determine if order is for a new or used car
-    // Corrected code: Assign "quality" to the first element of the return value
-    let quality = car_quality(miles).0;
-
-    // Add an if/else conditional expression to describe the car to build
-    // Corrected code: Check if the order is for a new or used car
-    // Corrected code: Check if the "roof" is hard top or convertible
-    if quality == "Used" {
+    // Show details about car order
+    // Corrected code: If order is for Used car, check roof type, print details
+    // Corrected code: Else, order is for New car, check roof tye, print details
+    // Call the `println!` macro to show the car order details
+    if quality == Age::Used {
         if roof {
-            println!("Preparing a used car: {:?}, {}, Hard top, {} miles", motor, color, miles);
+            println!("Preparing a used car: {:?}, {}, Hard top, {} miles\n", motor, color, miles);
         } else {
-            println!("Preparing a used car: {:?}, {}, Convertible, {} miles", motor, color, miles);
+            println!("Preparing a used car: {:?}, {}, Convertible, {} miles\n", motor, color, miles);
         }
     } else {
         if roof {
-            println!("Building a new car: {:?}, {}, Hard top, {} miles", motor, color, miles);
+            println!("Building a new car: {:?}, {}, Hard top, {} miles\n", motor, color, miles);
         } else {
-            println!("Building a new car: {:?}, {}, Convertible, {} miles", motor, color, miles);
+            println!("Building a new car: {:?}, {}, Convertible, {} miles\n", motor, color, miles);
         }
     }
 
     // Create a new "Car" instance as requested
     // - Bind first three fields to values of input arguments
     // - Bind "age" to tuple returned from car_quality(miles)
-    let car = Car {
+    Car {
         color: color,
         motor: motor,
         roof: roof,
         age: car_quality(miles)
-    };
-
-    // Return new instance of "Car" struct, no semicolon needed
-    return car
+    }
 }
 
 //////////////////////////////////////////////////

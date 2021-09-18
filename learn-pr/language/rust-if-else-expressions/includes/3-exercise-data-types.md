@@ -8,12 +8,13 @@ To work on the sample code for this exercise, you have two options:
 - Copy the code and edit it in your local development environment. 
 - Open the code in a prepared Rust Playground.
 
-In the sample code, look for the words `TO DO` to locate the sections to update.
+> [!Note]
+> In the sample code, look for the `todo!` macro. This macro indicates code that needs to be completed or updated.
 
 
 ## Update the Car struct to have a tuple field
 
-Your first task is to change the `Car` struct definition. We're going to move the `mileage` field into a tuple field named `age`. Along with the mileage value, the `age` tuple needs another field to identify if the car is new or used.
+Your first task is to change the `Car` struct definition. We're going to move the `mileage` field into a tuple field named `age`. Along with the mileage value, the `age` tuple needs another field to identify if the car is "New" or "Used."
 
 1. Open the first block of sample code.
 
@@ -23,13 +24,11 @@ Your first task is to change the `Car` struct definition. We're going to move th
     ```rust
     #[derive(PartialEq, Debug)]
     // Declare Car struct to describe vehicle with four named fields
-    // TO DO: Replace the "mileage" field from the previous exercise with an "age" field
-    // TO DO: The "age" field should hold tuple value of two fields: String, u32
     struct Car {
         color: String,
         motor: Transmission,
         roof: bool,
-        mileage: u32,
+        mileage: u32, // todo!("Move `mileage: u32` field into `age` field - a tuple with two fields: an `Age` enum, u32");
     }
 
     #[derive(PartialEq, Debug)]
@@ -37,13 +36,12 @@ Your first task is to change the `Car` struct definition. We're going to move th
     enum Transmission { Manual, SemiAuto, Automatic }
     ```
 
+1. Add an enum named `Age` with the values "New" and "Used" to describe the car quality.
+    
 1. Correct the declaration of the `Car` struct.
 
-    1. Remove the `mileage` field.
-    1. Add a tuple field named `age` to hold the car mileage and the text "New" or "Used" to describe the car quality.
-    
-    > [!Tip]
-    > The `String` data type can be used for the "New" and "Used" values.
+    1. Replace the `mileage: u32` field with a tuple field named `age`. 
+    1. Define the `age` tuple to have two fields: an `Age` enum value and the car mileage.
  
 1. Build the program. Make sure the code compiles before you continue to the next section.
 
@@ -52,26 +50,23 @@ Your first task is to change the `Car` struct definition. We're going to move th
 
 ## Create the car_quality function
 
-Next, we'll add code for a new function named `car_quality`. This function will take the car mileage as an input argument. We'll create a tuple to hold the mileage and car quality. The function will return the tuple to the caller.
+Next, we'll add code for a new function named `car_quality`. This function will take the car miles as an input argument. We'll create a tuple to hold the mileage and car age. The function will return the tuple to the caller.
 
 1. Add the following code block to your existing code. You can add the new code at the top of the file or at the bottom.
 
     ```rust
     // Get the car quality by testing the value of the input argument
     // - miles (u32)
-    // Create a tuple for the car quality with the age ("New" or "Used") and miles
+    // Create a tuple for the car quality with the Age ("New" or "Used") and mileage
     // Return a tuple with the arrow `->` syntax
-    fn car_quality (miles: u32) -> (String, u32) {
+    fn car_quality (miles: u32) -> (Age, u32) {
 
         // Declare and initialize the return tuple value
         // For a new car, set the miles to 0
-        // TO DO: Define "quality"
-        // - Set the value to a "New" car
-        // - Set the mileage using the "miles" input argument
-        let quality: (String, u32);
+        let quality: (Age, u32) = todo!("Set the `Age` value to \"New\", set the mileage using the `miles` input argument");
 
-        // TO DO: Return the completed tuple
-        return 
+        // Return the completed tuple to the caller
+        todo!("Return the tuple");
     }
     ```
  
@@ -99,24 +94,20 @@ The next step is to update the `car_factory` function. We need to support the tu
     fn car_factory(color: String, motor: Transmission, roof: bool, miles: u32) -> Car {
         // Create a new "Car" instance as requested
         // - Bind first three fields to values of input arguments
-        // TO DO: Replace the "mileage" field from the previous exercise with an "age" field
-        // TO DO: The "age" field calls the "car_quality" function with the "miles" input argument 
-        let car = Car {
+        // - "age" field calls "car_quality" function with "miles" input argument 
+        Car {
             color: color,
             motor: motor,
             roof: roof,
-            mileage: miles
-        };
-    
-        // Return new instance of "Car" struct
-        return car
+            mileage: miles, // todo!("Replace `mileage: miles` with `age` tuple field, call `car_quality()` with `miles` as input argument");
+        }
     }
     ```
 
 1. Correct the initialization of the `car` variable.
 
-    1. Remove the `mileage` field.
-    1. Add a field named `age`. This field should call the `car_quality` function with the `miles` input argument.
+    1. Replace the `mileage: miles` field with a tuple field named `age`. 
+    1. The `age` field should call the `car_quality` function with the `miles` input argument.
 
 1. Build the program. Make sure the code compiles before you continue to the next section.
 
@@ -134,20 +125,17 @@ Now we're ready to start working on our `main` function. The first step is to de
     ```rust
     fn main() {
         // Create car color array
-        // TO DO: Set the values: 0 = Blue, 1 = Green, 2 = Red, 3 = Silver
-        let colors;
+        let colors = todo!("Set the enum values: 0 = Blue, 1 = Green, 2 = Red, 3 = Silver");
         
         // Declare the car type and initial values
-        // TO DO: Create "car" as a "Car" struct
-        // TO DO: Create "engine" as a "Transmission" enum
-        let mut car: Car;        
-        let mut engine: Transmission;
+        let mut car: Car = todo!("Create `car` as a `Car` struct");     
+        let mut engine: Transmission = todo!("Declare `engine` as a `Transmission` enum, initialize to `Manual`");
     }
     ```
 
 1. Complete the definition for the `colors` array variable. A car can be one of four colors: Blue, Green, Red, or Silver.
 
-1. Fix the declaration syntax for the `car` struct and `engine` enum variables. At this point in the program, we need to define the data type structure, but not add any specific values.
+1. Fix the declaration syntax for the `car` struct and `engine` enum variables. Initialize the `engine` enum to "Manual."
 
     > [!Tip]
     > Don't forget to create both variables as changeable.
@@ -163,26 +151,23 @@ In our `main` function, we'll call the `car_factory` function to fulfill the car
 
     ```rust
         // Order 3 cars, one car for each type of transmission
-        // TO DO: Fix indexing into `colors` array to vary the color for each order
     
         // Car order #1: New, Manual, Hard top
-        engine = Transmission::Manual;
-        car = car_factory(String::from(colors<index>), engine, true, 0);
-        println!("Car order 1: {}, Hard top = {}, {:?}, {}, {} miles", car.age.0, car.roof, car.motor, car.color, car.age.1);
+        car = car_factory(String::from(todo!("Index into the `colors()` array")), engine, true, 0);
+        println!("Car order 1: {:?}, Hard top = {}, {:?}, {}, {} miles", car.age.0, car.roof, car.motor, car.color, car.age.1);
         
-        // Car order #2: New, Semi-automatic, Convertible
-        // TO DO: Adjust the Transmission value syntax
+        // Car order #2: Used, Semi-automatic, Convertible
         engine = Transmission.SemiAuto;
-        car = car_factory(String::from(colors<index>), engine, false, 100);
-        println!("Car order 2: {}, Hard top = {}, {:?}, {}, {} miles", car.age.0, car.roof, car.motor, car.color, car.age.1);
+        car = car_factory(String::from(todo!("Index into the `colors()` array")), engine, false, 100);
+        println!("Car order 2: {:?}, Hard top = {}, {:?}, {}, {} miles", car.age.1, car.roof, car.motor, car.color, car.age.1);
 
-        // Car order #3: New, Automatic, Hard top
+        // Car order #3: Used, Automatic, Hard top
         engine = Transmission::Automatic;
-        car = car_factory(String::from(colors<index>), engine, true, 200);
-        println!("Car order 3: {}, Hard top = {}, {:?}, {}, {} miles", car.age.0, car.roof, car.motor, car.color, car.age.1);
+        car = car_factory(String::from(todo!("Index into the `colors()` array")), engine, true, 200);
+        println!("Car order 3: {:?}, Hard top = {}, {:?}, {}, {} miles", car.age.1, car.roof, car.motor, car.color, car.age.1);
     ```
 
-1. Fix the indexing into the `colors` array by correcting the `colors()` syntax. The array has four elements, so we'll try to use different colors as we fulfill the orders.
+1. Fix the indexing into the `colors` array in the calls to `String::from`. The `colors` array has four elements, so try to use a different color for each order.
 
     > [!Tip]
     > Elements in an array start from index location 0. The value for the first element is at index location 0.
@@ -196,9 +181,11 @@ When the program is complete, you should see output similar to this example:
     
 ```output
 Car order 1: New, Hard top = true, Manual, Blue, 0 miles
-Car order 2: New, Hard top = false, SemiAuto, Green, 100 miles
-Car order 3: New, Hard top = true, Automatic, Red, 200 miles
+Car order 2: Used, Hard top = false, SemiAuto, Green, 100 miles
+Car order 3: Used, Hard top = true, Automatic, Red, 200 miles
 ```
+
+In a later exercise, we'll see how we can use conditional expressions to vary the orders.
 
 
 ## Solution
@@ -209,6 +196,6 @@ You can compare your program output to the solution for this exercise in this [R
 <!-- Links -->
 <!-- [Rust-loops]: /learn/modules/rust-loop-expressions/index?azure-portal=true -->
 
-[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=a765aeb7a68eff0508698398ec127c32?azure-portal=true
+[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=713ad42aab739f31e3a5dec8eacc56db?azure-portal=true
 
-[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d348ed467e20aa2a39e5f04da0e58c3d?azure-portal=true
+[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=eab57e76d363a904005f96c501148f22?azure-portal=true

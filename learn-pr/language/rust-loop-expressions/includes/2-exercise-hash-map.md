@@ -6,6 +6,9 @@ To work on the sample code for this exercise, you have two options:
 - Copy the code and edit it in your local development environment. 
 - Open the code in a prepared Rust Playground.
 
+> [!Note]
+> In the sample code, look for the `todo!` macro. This macro indicates code that needs to be completed or updated.
+
 
 ## Load the current program
 
@@ -18,52 +21,59 @@ The first step is to get the existing program code.
 
     ```rust
     #[derive(PartialEq, Debug)]
-    struct Car { color: String, motor: Transmission, roof: bool, age: (String, u32) }
+    struct Car { color: String, motor: Transmission, roof: bool, age: (Age, u32) }
 
     #[derive(PartialEq, Debug)]
     enum Transmission { Manual, SemiAuto, Automatic }
 
-    // Get car quality by testing input argument
-    fn car_quality (miles: u32) -> (String, u32) {
-        let mut quality: (String, u32) = (String::from("New"), 0);
+    #[derive(PartialEq, Debug)]
+    enum Age { New, Used }
 
-        // If car has accumulated miles, car is used
+    // Get the car quality by testing the value of the input argument
+    // - miles (u32)
+    // Return tuple with car age ("New" or "Used") and mileage
+    fn car_quality (miles: u32) -> (Age, u32) {
+
+        // Check if car has accumulated miles
+        // Return tuple early for Used car
         if miles > 0 {
-            quality = (String::from("Used"), miles);
+            return (Age::Used, miles);
         }
-
-        return quality
+        
+        // Return tuple for New car, no need for "return" keyword or semicolon
+        (Age::New, miles)
     }
 
     // Build "Car" using input arguments
     fn car_factory(order: i32, miles: u32) -> Car {
         let colors = ["Blue", "Green", "Red", "Silver"];
 
-        // Prevent panic: Check color index, reset as needed
-        let mut color = (order) as usize;
-        if color > 4 {
+        // Prevent panic: Check color index for colors array, reset as needed
+        // Valid color = 1, 2, 3, or 4
+        // If color > 4, reduce color to valid index
+        let mut color = order as usize;
+        if color > 4 {        
+            // color = 5 --> index 1, 6 --> 2, 7 --> 3, 8 --> 4
             color = color - 4;
         }
-
-        // Create "Car" instance as requested
-        let mut car = Car {
-            color: String::from(colors[(color-1) as usize]),
-            motor: Transmission::Automatic,
-            roof: true,
-            age: car_quality(miles)
-        };
             
         // Add variety to orders for motor type and roof type
+        let mut motor = Transmission::Manual;
+        let mut roof = true;
         if order % 3 == 0 {          // 3, 6, 9
-            car.motor = Transmission::Automatic;
+            motor = Transmission::Automatic;
         } else if order % 2 == 0 {   // 2, 4, 8, 10
-            car.motor = Transmission::SemiAuto;
-            car.roof = false;
-        } else {                     // 1, 5, 7, 11
-            car.motor = Transmission::Manual;
-        }
+            motor = Transmission::SemiAuto;
+            roof = false;
+        }                            // 1, 5, 7, 11
 
-        return car
+        // Return requested "Car"
+        Car {
+            color: String::from(colors[(color-1) as usize]),
+            motor: motor,
+            roof: roof,
+            age: car_quality(miles)
+        }
     }
 
     fn main() {
@@ -75,32 +85,32 @@ The first step is to get the existing program code.
         // Order 6 cars, increment "order" for each request
         // Car order #1: Used, Hard top
         car = car_factory(order, 1000);
-        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
+        println!("{}: {:?}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
         
         // Car order #2: Used, Convertible
         order = order + 1;
         car = car_factory(order, 2000);
-        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);    
-    
+        println!("{}: {:?}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);    
+
         // Car order #3: New, Hard top
         order = order + 1;
         car = car_factory(order, 0);
-        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
+        println!("{}: {:?}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
 
         // Car order #4: New, Convertible
         order = order + 1;
         car = car_factory(order, 0);
-        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
+        println!("{}: {:?}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
 
         // Car order #5: Used, Hard top
         order = order + 1;
         car = car_factory(order, 3000);
-        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
+        println!("{}: {:?}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
 
         // Car order #6: Used, Hard top
         order = order + 1;
         car = car_factory(order, 4000);
-        println!("{}: {}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
+        println!("{}: {:?}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
     }
     ```
 
@@ -253,5 +263,7 @@ You can compare your program output to the solution for this exercise in this [R
 
 <!-- Links -->
 
-[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1ee7c7a56ae1ba25a7cb382d871d53a3?azure-portal=true
-[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=60284ce4e0ea5510d9866c4093c78e60?azure-portal=true
+[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1beae42faca82582685832194ee83195?azure-portal=true
+
+[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=a33ead60a515eb2de50334c6b85d3858?azure-portal=true
+

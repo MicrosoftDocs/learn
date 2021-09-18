@@ -23,18 +23,15 @@ enum Transmission {
 fn car_factory(color: String, transmission: Transmission, convertible: bool) -> Car {
 
     // Create a new "Car" instance with requested characteristics
-    // - Corrected code: Remove "car: Car " and use "car = Car {...}" to assign
+    // - Corrected code: return a "Car" struct
     // - Bind first three fields to value of corresponding input argument
     // - Set mileage to 0
-    let car = Car {
+    Car {
         color: color,
         transmission: transmission,
         convertible: convertible,
         mileage: 0
-    };
-
-    // Return new instance of "Car" struct
-    return car;
+    }
 }
 
 fn main() {
@@ -48,4 +45,3 @@ fn main() {
     car = car_factory(String::from("Yellow"), Transmission::SemiAuto, false);
     println!("Car 3 = {}, {:?} transmission, convertible: {}, mileage: {}", car.color, car.transmission, car.convertible, car.mileage);    
 }
-

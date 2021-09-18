@@ -10,11 +10,15 @@ To work on the sample code for this exercise, you have two options:
 - Copy the code and edit it in your local development environment. 
 - Open the code in a prepared Rust Playground.
 
-In the sample code, look for the words `TO DO` to locate the sections to update.
-
 > [!Note]
-> If you closed your program code from the last exercise, you can re-open the code in this prepared [Rust Playground][RustPlay-exercise].
-> Be sure to rebuild your program and make sure it still runs without any compiler errors.
+> In the sample code, look for the `todo!` macro. This macro indicates code that needs to be completed or updated.
+
+
+## Load the program
+
+If you closed your program code from the last exercise, you can reopen the code in this prepared [Rust Playground][RustPlay-exercise].
+
+Be sure to rebuild your program and make sure it still runs without any compiler errors.
 
 
 ## Repeat actions with a loop expression
@@ -54,9 +58,7 @@ We can simplify the structure by using a loop expression to repeat the actions t
         // Start with zero miles
         let mut miles = 0;
         
-        // TO DO: Add loop to fulfill orders for 6 cars
-        // TO DO: Initialize "order" variable to 1
-        <loop expression> {
+        todo!("Add a loop expression to fulfill orders for 6 cars, initialize `order` variable to 1") {
         
             // Call car_factory to fulfill order
             // Add order <K, V> pair to "orders" hash map
@@ -74,7 +76,7 @@ We can simplify the structure by using a loop expression to repeat the actions t
         }
     ```
 
-1. Replace the `<loop expression>` pseudocode with a loop statement that repeats the actions to create orders for six cars. You'll need an `order` variable that's initialized to 1.
+1. Add a loop expression that repeats the actions to create orders for six cars. You'll need an `order` variable that's initialized to 1.
 
 1. Build the program. Make sure the code compiles without any errors.
 
@@ -97,7 +99,7 @@ The program now uses a loop to fulfill orders for six cars. What happens if we o
 1. Update the loop expression in the `main` function to order 11 cars:
 
     ```rust
-        <loop to create 11 cars> ...
+        todo!("Update the loop expression to create 11 cars");
     ```
 
 1. Rebuild the program. During runtime, the program panics!
@@ -120,7 +122,7 @@ In the `car_factory` function, we use an if/else expression to check the value o
     // Prevent panic: Check color index for colors array, reset as needed
     // Valid color = 1, 2, 3, or 4
     // If color > 4, reduce color to valid index
-    let mut color = (order) as usize;
+    let mut color = order as usize;
     if color > 4 {        
         // color = 5 --> index 1, 6 --> 2, 7 --> 3, 8 --> 4
         color = color - 4;
@@ -136,12 +138,9 @@ The current if/else expression works well to prevent run-time panics when we ord
     ```rust
         // Prevent panic: Check color index, reset as needed
         // If color = 1, 2, 3, or 4 - no change needed
-        // If color > 4, reduce to valid index
-        let mut color = (order) as usize;
-        // TO DO: Replace if/else with loop to prevent run-time panic for color > 4
-        <loop expression> {        
-            <update the color value>
-        }
+        // If color > 4, reduce to color to a valid index
+        let mut color = order as usize;
+        todo!("Replace `if/else` condition with a loop to prevent run-time panic for color > 4");
     ```
 
     > [!Tip]
@@ -173,5 +172,5 @@ You can compare your program output to the solution for this exercise in this [R
 
 <!-- Links -->
 
-[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1cbdb3193d8d0231f574747ba9911122?azure-portal=true
-[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=7416ed5585f9c7935fc9dc1601b0afeb?azure-portal=true
+[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=7037678c198874159604c3519030f811?azure-portal=true
+[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=aedf6dccc1a53459e39075e53b5b69c0?azure-portal=true

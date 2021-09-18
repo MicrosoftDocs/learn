@@ -5,7 +5,8 @@ To work on the sample code for this exercise, you have two options:
 - Copy the code and edit it in your local development environment. 
 - Open the code in a prepared Rust Playground.
 
-In the sample code, look for the words `TO DO` to locate the sections to update.
+> [!Note]
+> In the sample code, look for the `todo!` macro. This macro indicates code that needs to be completed or updated.
 
 
 ## Define an enum
@@ -28,8 +29,8 @@ Your first task is to fix syntax issues in the enum definition, so the code comp
     
     #[derive(PartialEq, Debug)]
     // Declare enum for Car transmission type
-    // TO DO: Fix enum definition so code compiles
     enum Transmission {
+        // todo!("Fix enum definition so code compiles");
         Manual;
         SemiAuto;
         Automatic;
@@ -56,11 +57,9 @@ Next, add code for the `car_factory` function to create an instance of a `Car` s
     // - Convertible (boolean, true if car is a convertible)
     fn car_factory(color: String, transmission: Transmission, convertible: bool) {
 
-        // TO DO: Complete "car" declaration to be an instance of a "Car" struct
         // Use the values of the input arguments
         // All new cars always have zero mileage
-        let car: Car;
-
+        let car: Car = todo!("Create an instance of a `Car` struct");
     }
     ```
 
@@ -76,26 +75,26 @@ Next, add code for the `car_factory` function to create an instance of a `Car` s
 
 ## Return a value from a function
 
-Now, update the `car_factory` function to return a `Car` struct. To return a value, the function signature needs to declare the value type, and the function body needs to provide the value.
+Now, update the `car_factory` function to return the created `Car` struct. To return a value, the function signature needs to declare the value type, and the function body needs to provide the value.
 
 1. Modify the function signature to declare the return value type as a `Car` struct. You'll change the following line of code in your file:
 
     ```rust
-    fn car_factory(color: String, transmission: Transmission, convertible: bool) {
+    fn car_factory(color: String, transmission: Transmission, convertible: bool) = todo!("Return a `Car` struct") {
     ```
 
     > [!Tip]
-    > Watch for case sensitivity. Don't try to compile your code yet.
+    > Watch for case sensitivity. Don't try to compile your code yet!
 
-1. Add a statement near the end of the function body to provide the return value. Add the statement after the code that creates the `Car` struct.
+1. To return the newly created car, adjust the statement where you instantiated the `Car` struct. 
 
     ```rust
-    fn car_factory(color: String, transmission: Transmission, convertible: bool) {
-        ...
-
-        // Provide the return value here
+        let car: Car = todo!("An instance of a `Car` struct", "Set the function return value");
     }
     ```
+
+    > [!Tip]
+    > In the previous section, you changed the statement `let car: Car =` to correctly create an instance of the `Car` struct. To complete this step, you can simplify this code. You can create the `Car` struct and return the newly created car in a single statement. You won't need to use the `let` or `return` keywords.
 
 1. Rebuild your code and make sure it compiles without any errors.
 
@@ -137,5 +136,5 @@ You can compare your code with the prepared solution in this [Rust Playground][R
 
 <!-- Links -->
 
-[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=5f651f742af39ad993dc6eefbe074f11?azure-portal=true
-[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=bb6adb96e13fc72a29587b5a84b0c551?azure-portal=true
+[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=559a5739b8980054825099fc1c1c5c84?azure-portal=true
+[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=74285b6b784df60101a632314f547b18?azure-portal=true

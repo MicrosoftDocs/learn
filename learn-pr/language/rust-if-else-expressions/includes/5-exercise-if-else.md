@@ -8,7 +8,8 @@ To work on the sample code for this exercise, you have two options:
 - Copy the code and edit it in your local development environment. 
 - Open the code in a prepared Rust Playground.
 
-In the sample code, look for the words `TO DO` to locate the sections to update.
+> [!Note]
+> In the sample code, look for the `todo!` macro. This macro indicates code that needs to be completed or updated.
 
 
 ## Get the sample code
@@ -20,30 +21,26 @@ Start by opening the existing sample code in an editor.
     ```rust
     #[derive(PartialEq, Debug)]
     // Declare Car struct to describe vehicle with four named fields
-    struct Car { color: String, motor: Transmission, roof: bool, age: (String, u32) }
+    struct Car { color: String, motor: Transmission, roof: bool, age: (Age, u32) }
 
     #[derive(PartialEq, Debug)]
     // Declare enum for Car transmission type
     enum Transmission { Manual, SemiAuto, Automatic }
 
+    #[derive(PartialEq, Debug)]
+    // Declare enum for Car age
+    enum Age { New, Used }
+
     //////////////////////////////////////////////////
 
     // Get the car quality by testing the value of the input argument
     // - miles (u32)
-    // Create a tuple for the car quality with the age ("New" or "Used") and miles
-    // Return a tuple with the arrow `->` syntax
-    fn car_quality (miles: u32) -> (String, u32) {
+    // Return tuple with car age ("New" or "Used") and mileage
+    fn car_quality (miles: u32) -> (Age, u32) {
 
-        // Declare and initialize the return tuple value
-        // For a new car, set the miles to 0
-        // TO DO: Correct the "quality" declaration so the value is changeable    
-        let quality: (String, u32) = (String::from("New"), miles);
-
-        // TO DO: Add a conditional expression to check the miles
-        // If the car has accumulated miles, then the car is used
-
-        // Return the completed tuple
-        return quality
+        todo!("Add conditional expression: If car has accumulated miles, return tuple for Used car with current mileage");
+        
+        todo!("Return tuple for New car with zero miles");
     }
 
     //////////////////////////////////////////////////
@@ -57,26 +54,23 @@ Start by opening the existing sample code in an editor.
     // Return an instance of a "Car" struct with the arrow `->` syntax
     fn car_factory(color: String, motor: Transmission, roof: bool, miles: u32) -> Car {
 
-        // TO DO: Call the car_quality(miles) function to help identify if the order is for a new or used car
-        // - As part of the call, set the "quality" variable to the first element of the returned value
-        let quality = car_quality(miles);
-
-        // TO DO: Use an if/else conditional expression to describe the car to build
-        // - Modify the first "if" condition to check if the order is for a used car
-        // - Modify both "if" conditions for the "roof" to check if the order is for a hard top
+        // Show details about car order
+        // - Check if order is for Used or New car, then check the roof type 
+        // - Print details for New or Used car based on roof type
+        todo!("Add conditional expression: If car is Used age, then check roof type");
+            todo!("Add conditional expression: If roof is a hard top, print details");
+                // Call the `println!` macro to show the car order details
+                println!("Prepare a used car: {:?}, {}, Hard top, {} miles\n", motor, color, miles);  
 
         // Create a new "Car" instance as requested
         // - Bind first three fields to values of input arguments
         // - Bind "age" to tuple returned from car_quality(miles)
-        let car = Car {
+        Car {
             color: color,
             motor: motor,
             roof: roof,
             age: car_quality(miles)
-        };
-
-        // Return new instance of "Car" struct, no semicolon needed
-        return car
+        }
     }
 
     fn main() {
@@ -98,34 +92,23 @@ Start by opening the existing sample code in an editor.
 
 ## Update the car_quality function
 
-The `car_quality` function takes car mileage as an input argument. The function creates a `quality` tuple value for a "New" car and stores the miles. It returns the tuple to the caller.
+The `car_quality` function takes car mileage as an input argument. In the previous exercise, we created a tuple named `quality` for a "New" car with zero miles, and returned the tuple to the calling function.
 
-We need to update this function to set the `quality` value with the age of the ordered car: "New" or "Used." We'll add a conditional expression to check the mileage and update how the tuple value is assigned.
+We'll update the function to use a conditional expression to check the mileage and set the tuple based on the condition. Rather than storing the tuple in a declared variable, we'll simply send the correct tuple back to the calling function.
 
-1. Fix the declaration of the `quality` tuple so the variable value can be changed.
-
-    ```rust
-        // TO DO: Correct the "quality" declaration so the value is changeable   
-        let quality: (String, u32) = (String::from("New"), 0);
-    ```
-
-1. Add a conditional expression to check if the ordered car can have accumulated miles. You can use the following pseudocode as an example. Replace the `if <car has miles>` expression with valid `if/else` condition syntax.
+1. Add an `if/else` conditional expression to check if the ordered car can have accumulated miles. Return the correct tuple value based on the result of the condition.
 
     ```rust
-        // TO DO: Add a conditional expression to check the miles
-        // If the car has accumulated miles, then the car is used
-        if <car has miles> {
-            ...
-        }
+        todo!("Add conditional expression: If car has accumulated miles, return tuple for Used car with current mileage");
     ``` 
 
-1. Complete the code to set the `quality` tuple values for a "Used" car. When a car is "New," we set the mileage to 0. When the car is "Used," we get the value from the `miles` input argument.
+    > [!Tip]
+    > When the car has accumulated miles, we can return the tuple value early to the calling function. 
+
+1. When the car order is for a "New" car, the returned tuple value has mileage set to 0.
 
     ```rust
-        if <car has miles> {
-            // TO DO: Set the "quality" value to a "Used" car
-            quality;
-        }
+        todo!("Return tuple for New car with zero miles");
     ```
 
 1. Build the program. Make sure the code compiles before you continue to the next section.
@@ -133,45 +116,22 @@ We need to update this function to set the `quality` value with the age of the o
 
 ## Update the car_factory function
 
-The next step is to update the `car_factory` function. We'll use an if/else conditional expression to describe the car to build and display the results. The expression checks if the order is for a new or used car, and also determines the roof type.
+Now we'll update the `car_factory` function. Use an if/else conditional expression to describe the car to build and display the results. The expression checks if the order is for a new or used car, and also determines the roof type.
 
-1. In the `car_factory` function, adjust the definition for the `quality` variable. Set the value to the first element of the value returned from the call to the `car_quality(miles)` function.
-
-    ```rust
-            let quality = car_quality(miles);
-    ```
-
-1. Add a conditional expression to check if the order is for a used or new car. You can use the following pseudocode as an example. Replace the `if <the ordered car is Used or New>` expressions with valid `if/else` condition syntax.
+1. Add an `if/else` conditional expression to check if the order is for a new or used car, and then check the `roof` type. Print the details of the ordered car.
 
     ```rust
-        if <the ordered car is Used> {
-            ...
-        } else <the ordered car is New> {
-            ...
-        }
+        // Show details about car order
+        // - Check if order is for Used or New car, then check the roof type 
+        // - Print details for New or Used car based on roof type
+        todo!("Add conditional expression: If car is Used age, then check roof type");
+            todo!("Add conditional expression: If roof is a hard top, print details");
+                // Call the `println!` macro to show the car order details
+                println!("Prepare a used car: {:?}, {}, Hard top, {} miles\n", motor, color, miles);                
     ```
 
     > [!Tip]
     > You can check the value of the `quality` variable and use the *is equal to* operator `==`.
-
-1. Inside each `if` expression, add a second conditional expression to check if the order is for a hard top roof. Start with the following code snippet and complete the pseudocode sections. You'll want to examine the `roof` variable. Replace the two `if <the ordered roof is a hard top>` expressions with valid `if/else` condition syntax.
-
-    ```rust
-            if <the ordered roof is a hard top> {
-                println!("Prepare a used car: {:?}, {}, Hard top, {} miles", motor, color, miles);
-            } else {
-                println!("Prepare a used car: {:?}, {}, Convertible, {} miles", motor, color, miles);
-            }
-        ...
-            if <the ordered roof is a hard top> {
-                println!("Build a new car: {:?}, {}, Hard top, {} miles", motor, color, miles);
-            } else {
-                println!("Build a new car: {:?}, {}, Convertible, {} miles", motor, color, miles);
-            }
-    ```
-
-    > [!Tip]
-    > Test conditions yield a boolean result.
 
 1. Build your program. Make sure the code compiles without any errors. You can ignore any warning messages.
 
@@ -193,8 +153,7 @@ You can compare your program output to the solution for this exercise in this [R
 
 
 <!-- Links -->
-<!-- [Rust-loops]: /learn/modules/rust-loop-expressions/index?azure-portal=true -->
 
-[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=45ca994a26aceaec69453e81b8de78b8?azure-portal=true
+[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=42b67ec94ff35db57295858e8a837804?azure-portal=true
 
-[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d348ed467e20aa2a39e5f04da0e58c3d?azure-portal=true
+[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=69aebf7d2872c8803fe09568aed15a12?azure-portal=true
