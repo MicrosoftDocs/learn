@@ -21,7 +21,7 @@ Analyze this scenario and note down your answers to the following questions:
 
 ## Scenario 2
 
-Each team member has been writing code and submitting it to the other team members for peer reviews. When you review one team member’s code, you find several syntax and logical errors. As a result, the program won't compile. You know that this team member has a shy, reserved nature and hesitates to speak up in front of other team members. You need to help the team member build confidence so that they feel encouraged to contribute their ideas actively. Consider the following options for providing feedback:
+Each team member has been writing code and submitting it to the other team members for peer reviews. When you review one team member's code, you find several syntax and logical errors. As a result, the program won't compile. You know that this team member has a shy, reserved nature and hesitates to speak up in front of other team members. You need to help the team member build confidence so that they feel encouraged to contribute their ideas actively. Consider the following options for providing feedback:
 
 * Option 1: You approach the team member and provide your feedback in the presence of other people. You mention, "The code doesn't work. There are several errors. You need to review your knowledge of the Java programming language." You ask the team member to rework the entire code and to submit it again for your review.
 
