@@ -161,7 +161,7 @@ Let's add support to our Node.js application to retrieve a connection string fro
 
 1.  Save the file using either keyboard shortcut (<kbd>Ctrl+S</kbd>) or context menu of Cloud Shell editor (select the ellipsis `...` in the top right corner). 
 
-1. Now we need use an Azure command to get the actual storage account connection string and replace the placeholder <value>. In Cloud Shell, run the following command, replacing `<name>` with the unique storage account name you created in the previous exercise.
+1. Now we need use an Azure command to get the actual storage account connection string and replace the placeholder `<value>`. In Cloud Shell, run the following command, replacing `<name>` with the unique storage account name you created in the previous exercise.
 
     ```azurecli
     az storage account show-connection-string \
