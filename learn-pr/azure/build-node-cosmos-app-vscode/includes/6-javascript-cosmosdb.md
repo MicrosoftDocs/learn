@@ -8,9 +8,9 @@ The JavaScript API for Azure Databases extension is supplied in a package named 
 
 ## Connect to an Azure Databases extension account
 
-The JavaScript API exposes a class named `AzureClient` that acts as the access point to Azure Databases extension. You use a `AzureClient` object to obtain a handle on databases and containers. When you have access to a container, you can query and manipulate documents.
+The JavaScript API exposes a class named `CosmosClient` that acts as the access point to Azure Databases extension. You use a `CosmosClient` object to obtain a handle on databases and containers. When you have access to a container, you can query and manipulate documents.
 
-You use the constructor to create an `AzureClient` object. The constructor takes an Azure Databases extension connection string as its parameter. The connection string contains the address of your Azure Databases extension account, and the security key needed to access the account. You obtain the connection string for an account using the Azure Databases extension pane in Visual Studio Code. Right-click the account, and select **Copy Connection String**.
+You use the constructor to create an `CosmosClient` object. The constructor takes an Azure Databases extension connection string as its parameter. The connection string contains the address of your Azure Databases extension account, and the security key needed to access the account. You obtain the connection string for an account using the Azure Databases extension pane in Visual Studio Code. Right-click the account, and select **Copy Connection String**.
 
 :::image type="content" source="../media/6-connection.png" alt-text="Screenshot of Azure Databases extension pane in Visual Studio Code. The user is copying the connection string for the Azure Databases extension account to the clipboard." loc-scope="vs-code":::
 
@@ -19,10 +19,10 @@ In your JavaScript application, run the following code to connect to an Azure Da
 ```javascript
 var cosmos = require("@azure/cosmos");
 
-const client = new cosmos.AzureClient("Connection string goes here");
+const client = new cosmos.CosmosClient("Connection string goes here");
 ```
 
-You can use the **client** object to retrieve, create, update, and delete documents in a container. These operations all require a reference to the container. You obtain this reference through the **database** function of a `AzureClient` object, as follows.
+You can use the **client** object to retrieve, create, update, and delete documents in a container. These operations all require a reference to the container. You obtain this reference through the **database** function of a `CosmosClient` object, as follows.
 
 ```javascript
 const databaseid = "Your database name";
