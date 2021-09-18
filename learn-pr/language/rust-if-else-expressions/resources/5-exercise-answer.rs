@@ -44,15 +44,15 @@ fn car_factory(color: String, motor: Transmission, roof: bool, miles: u32) -> Ca
     // Call the `println!` macro to show the car order details
     if quality == Age::Used {
         if roof {
-            println!("Preparing a used car: {:?}, {}, Hard top, {} miles\n", motor, color, miles);
+            println!("Preparing a used car: {:?}, {}, Hard top, {} miles", motor, color, miles);
         } else {
-            println!("Preparing a used car: {:?}, {}, Convertible, {} miles\n", motor, color, miles);
+            println!("Preparing a used car: {:?}, {}, Convertible, {} miles", motor, color, miles);
         }
     } else {
         if roof {
-            println!("Building a new car: {:?}, {}, Hard top, {} miles\n", motor, color, miles);
+            println!("Building a new car: {:?}, {}, Hard top, {} miles", motor, color, miles);
         } else {
-            println!("Building a new car: {:?}, {}, Convertible, {} miles\n", motor, color, miles);
+            println!("Building a new car: {:?}, {}, Convertible, {} miles", motor, color, miles);
         }
     }
 

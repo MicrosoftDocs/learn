@@ -154,6 +154,6 @@ You can compare your program output to the solution for this exercise in this [R
 
 <!-- Links -->
 
-[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=42b67ec94ff35db57295858e8a837804?azure-portal=true
+[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=a40675affa0ba94e277c9130c3718138?azure-portal=true
 
 [RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=69aebf7d2872c8803fe09568aed15a12?azure-portal=true
