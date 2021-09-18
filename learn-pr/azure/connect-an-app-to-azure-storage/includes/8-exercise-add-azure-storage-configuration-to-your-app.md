@@ -28,7 +28,7 @@ Let's add support to our .NET core application to retrieve a connection string f
     }
     ```
 
-1. Now we need to get the storage account connection string, and place it into the configuration for our app. In Cloud Shell, run the following command. Replace `<name>` with your unique storage account name.
+1. Now we need to get the storage account connection string for for the storage account placeholder <value>. In Cloud Shell, run the following command, replacing `<name>` with your unique storage account name.
 
     ```azurecli
     az storage account show-connection-string \
@@ -37,9 +37,17 @@ Let's add support to our .NET core application to retrieve a connection string f
       --name <name>
     ```
 
-1. Copy the connection string that is returned from that command, and replace `<value>` in the **appsettings.json** file with this connection string. Save the file.
+1. The response is a very long connection string bounded by quotes, for example:
+    
+    ```text
+    "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage1ab;AccountKey=QtSCGB...7AeoW0Hw=="
+    ```
+    
+1. Copy the connection string, and in the **appsettings.json** file in the edior, replace the <value> placeholder with this connection string. 
+    
+1. Press <kbd>Ctrl+S</kbd> to save the file.
 
-1. Next, open the project file, **PhotoSharingApp.csproj**, in the editor.
+1. In the editor, open the project file **PhotoSharingApp.csproj**.
 
 1. Add the following configuration block to the file in the project. Add `<ItemGroup>` from the existing code.
 
