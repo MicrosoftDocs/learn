@@ -42,23 +42,25 @@ fn main() { // The function declaration is not indented
 
 ## The todo! macro
 
-When you work on exercises in the Rust modules, you'll notice the sample code often uses the `todo!` macro. A macro in Rust is a like a function, and it takes a variable number of input arguments. The `todo!` macro is used to identify unfinished code in the Rust program. The macro is helpful for prototyping, or when you want to indicate behavior that isn't complete.
+When you work on exercises in the Rust modules, you'll notice the sample code often uses the `todo!` macro. A macro in Rust is a like a function that takes a variable number of input arguments. The `todo!` macro is used to identify unfinished code in the Rust program. The macro is helpful for prototyping, or when you want to indicate behavior that isn't complete.
 
 Here's an example of how we use the `todo!` macro in the exercises:
 
 ```rust
 fn main() {
     // Display the message "Hello, world!"
-    // todo!("Display the message by using the println!() macro");
+    todo!("Display the message by using the println!() macro");
 }
 ```
 
-When you compile code that uses the `todo!` macro, the compiler can return a panic message where it expects to find completed functionality. Here's an example:
+When you compile code that uses the `todo!` macro, the compiler can return a panic message where it expects to find completed functionality:
 
 ```output
-    Finished dev [unoptimized + debuginfo] target(s) in 1.64s
+   Compiling playground v0.0.1 (/playground)
+    Finished dev [unoptimized + debuginfo] target(s) in 1.50s
      Running `target/debug/playground`
-thread 'main' panicked at 'not yet implemented: Add conditional expression: ...', src/main.rs:39:5
+thread 'main' panicked at 'not yet implemented: Display the message by using the println!() macro', src/main.rs:3:5
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
 
 
