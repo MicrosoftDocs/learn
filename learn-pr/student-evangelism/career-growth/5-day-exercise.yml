@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.career-growth.day-exercise
-title: Exercise - Compare your ideal work day to a regular day
+title: Exercise - Build a model of your ideal workday
 metadata:
   unitType: exercise
-  title: Apply what you've learned by building a model of your ideal work day. # user input: module title for browser tab and search results
+  title: Apply what you've learned by building a model of your ideal workday. # user input: module title for browser tab and search results
   description: Compare your ideal work day to a regular day and configure your calendar to optimize your productivity. # user input: a description for site search and SEO
   ms.date: 08/23/2021 
   author: jlooper 

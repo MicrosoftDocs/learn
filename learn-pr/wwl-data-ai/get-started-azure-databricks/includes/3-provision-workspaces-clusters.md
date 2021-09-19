@@ -114,7 +114,7 @@ Azure Databricks will generate Spark code that loads your data (and we can custo
 ### Using DBFS mounted data
 
 Databricks File System (DBFS) is a distributed file system mounted into a Databricks workspace and available on Databricks clusters. DBFS is an abstraction on top of scalable object storage and offers the following benefits:
-- DBFS allows to you mount storage objects so that you can seamlessly access data without requiring credentials.
+- Allows to you mount storage objects so that you can seamlessly access data without requiring credentials.
 - Allows you to interact with object storage using directory and file semantics instead of storage URLs.
 - Persists files to object storage, so you won’t lose data after you terminate a cluster.
 
