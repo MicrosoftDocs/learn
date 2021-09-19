@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-azure-databricks-models-azure-machine-learning.plan-for-deployment-endpoints
+title: Plan for Azure Machine Learning deployment endpoints
+metadata:
+  title: Plan for Azure Machine Learning deployment endpoints
+  description: "Plan for Azure Machine Learning deployment endpoints"
+  ms.date: 09/15/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-plan-for-deployment-endpoints.md)]

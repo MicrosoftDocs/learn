@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-azure-databricks-models-azure-machine-learning
+metadata:
+  title: Deploy Azure Databricks models in Azure Machine Learning
+  description: "Deploy Azure Databricks models in Azure Machine Learning"
+  ms.date: 09/15/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy Azure Databricks models in Azure Machine Learning
+summary: You can use Azure Databricks to train machine learning models, and deploy the trained models in Azure Machine Learning endpoints.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe considerations for model deployment
+  - Plan for Azure Machine Learning deployment endpoints
+  - Deploy a model to Azure Machine Learning
+  - Troubleshoot model deployment
+prerequisites: |
+  Before starting this module, you should be familiar with using Python to train machine learning models in Azure Databricks.
+iconUrl: /learn/achievements/deploy-azure-databricks-models-in-azure-machine-learning.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+products:
+- azure-databricks
+units:
+- learn.wwl.deploy-azure-databricks-models-azure-machine-learning.introduction
+- learn.wwl.deploy-azure-databricks-models-azure-machine-learning.describe-considerations-for-model-deployment
+- learn.wwl.deploy-azure-databricks-models-azure-machine-learning.plan-for-deployment-endpoints
+- learn.wwl.deploy-azure-databricks-models-azure-machine-learning.deploy-model-to
+- learn.wwl.deploy-azure-databricks-models-azure-machine-learning.troubleshoot-model-deployment
+- learn.wwl.deploy-azure-databricks-models-azure-machine-learning.exercise-deploy-azure-databricks-model
+- learn.wwl.deploy-azure-databricks-models-azure-machine-learning.knowledge-check
+- learn.wwl.deploy-azure-databricks-models-azure-machine-learning.summary
+badge:
+  uid: learn.wwl.deploy-azure-databricks-models-azure-machine-learning.badge

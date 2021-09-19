@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prepare-data-for-machine-learning-azure-databricks.understand-concepts
+title: Understand machine learning concepts
+metadata:
+  title: Understand machine learning concepts
+  description: "Understand machine learning concepts"
+  ms.date: 09/18/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-concepts.md)]

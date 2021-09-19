@@ -4,12 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/21/2021
+  ms.date: 09/16/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
+labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -38,17 +40,17 @@ quiz:
     - content: "Advanced."
       isCorrect: false
       explanation: "That's incorrect. Azure DDoS Protection is available in only two tiers. Advanced is not a valid tier."
-  - content: "An organization has several virtual machines in Azure. The security admin wants to deploy Azure Bastion to get secure access to those VMs. What limitation should the admin keep in mind?"
+  - content: "An organization has several virtual machines in Azure. The security admin wants to deploy Azure Bastion to get secure access to those VMs. What should the admin keep in mind?"
     choices:
-    - content: "Azure Bastion is deployed per virtual network."
+    - content: "Azure Bastion is deployed per virtual network, with support for virtual network peering."
       isCorrect: true
-      explanation: "That's correct. Azure Bastion deployment is per virtual network, not per subscription/account or virtual machine."
+      explanation: "That's correct. Azure Bastion deployment is per virtual network with support for virtual network peering, not per subscription/account or virtual machine."
     - content: "Azure Bastion is deployed per subscription."
       isCorrect: false
-      explanation: "That's incorrect. Azure Bastion deployment isn't limited by subscription/account."
+      explanation: "That's incorrect. Azure Bastion deployment isn't per subscription/account."
     - content: "Azure Bastion is deployed per virtual machine."
       isCorrect: false
-      explanation: "That's incorrect. Azure Bastion deployment isn't limited by virtual machine."
+      explanation: "That's incorrect. Azure Bastion deployment isn't per virtual machine."
   - content: "An organization has much of its application data in Azure. The security admin wants to use the encryption capabilities in Azure. Which service would the admin use to store the application’s secrets?"
     choices:
     - content: "Transparent data encryption."

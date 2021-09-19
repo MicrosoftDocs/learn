@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-machine-learning-model-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/18/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Daniel is new to Azure Databricks and wants to use a library for machine learning that is native to Apache Spark. Which library should be used?"
+    choices:
+    - content: "MLLib"
+      isCorrect: false
+      explanation: "That's incorrect. MLLib is a legacy approach. It would be best not to use this library if you're new to Azure Databricks."
+    - content: "Spark ML"
+      isCorrect: true
+      explanation: "That's correct. Spark ML is the primary library for machine learning development in Apache Spark."
+    - content: "RDD"
+      isCorrect: false
+      explanation: "That's incorrect. RDD stands for Spark's Resilient Distributed Dataset data structure. Although libraries can be build off of it, it doesn't provide machine learning capabilities."
+  - content: "Which of the following options is a key abstraction for model training in Spark ML?"
+    choices:
+    - content: "Iterator"
+      isCorrect: false
+      explanation: "That's incorrect. An iterator is not an abstraction for model training in Spark ML."
+    - content: "Processor"
+      isCorrect: false
+      explanation: "That's incorrect. A processor is not an abstraction for model training in Spark ML."
+    - content: "Transformer"
+      isCorrect: true
+      explanation: "That's correct. Transformers, estimators, and pipelines are the three key abstractions in Spark ML. Transformers change the shape of DataFrames, estimators convert DataFrames to objects like trained models, and pipelines connect together chains of transformers and estimators."
+  - content: "Alexandra has trained a linear regression model, which is named lrModel, and now wants to validate it. Which code should be run?"
+    choices:
+    - content: "`predictions = lrModel.transform(testData)`"
+      isCorrect: true
+      explanation: "That's correct. The model's `transform()` function should be used against the validation dataset."
+    - content: "`predictons = lrModel.fit(testData)`"
+      isCorrect: false
+      explanation: "That's incorrect. The `fit()` method is used when running an estimator, which takes a DataFrame as input and returns a model."
+    - content: "`predictions = lrModel.fit(trainingData)`"
+      isCorrect: false
+      explanation: "That's incorrect. The `fit()` method and the training dataset are used to train a model, not to validate it."

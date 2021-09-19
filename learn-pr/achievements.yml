@@ -687,3 +687,13 @@ achievements:
   title: Add conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
   summary: In this module, we'll introduce you to Language Understanding Intelligent Service (LUIS) and show how to create a LUIS application.
   iconUrl: /learn/achievements/data-ai/create-and-publish-a-luis-model.svg
+- uid: learn.wwl.build-chat-bot-with-azure-portal.badge
+  type: badge
+  title: Build a chat bot with the Azure portal
+  summary: Build a chat bot with the Azure portal
+  iconUrl: /learn/achievements/build-a-chat-bot-with-the-azure-portal.svg
+- uid: learn.load-test-web-app-azure-devops.badge
+  type: badge
+  title: Load test Azure web apps by using Azure DevOps
+  summary: Create a simple load test via the Azure portal, run it and check the results, and then customize the test in Azure DevOps.
+  iconUrl: /learn/achievements/load-test-web-app-azure-devops.svg

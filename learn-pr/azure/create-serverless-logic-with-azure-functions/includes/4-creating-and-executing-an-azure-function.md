@@ -92,10 +92,10 @@ As you can see, the pane on the right has tabs for **Input** and **Output**. Sel
 
 After you've created a function, you'll want to test it. There are two approaches:
 
-- Manual execution
-- Testing from within the Azure portal itself
+- Running it manually
+- Testing it from within the Azure portal itself
 
-### Manual execution
+### Run function manually
 
 You can start a function by manually triggering the configured trigger. For instance, if you are using an HTTP trigger, you can use a tool, such as Postman or cURL, to initiate an HTTP request to your function endpoint URL, which is available from the function definition (**Get function URL**).
 

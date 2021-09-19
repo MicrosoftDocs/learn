@@ -40,6 +40,7 @@ Let's start by creating a virtual machine using Azure Cloud Shell.
     az vm create \
         --name SRVDC01 \
         --image win2016datacenter \
+        --resource-group mslearnDeleteMe \
         --admin-username azureuser \
         --admin-password <your-password-here>
     ```
@@ -76,17 +77,17 @@ You should be able to connect and administer the VM. Let's fix that!
 
 1. Select the virtual machine from the resource group, MSLEARNDELETEME.
 
-1. Select **Enable JIT on 1 VM** with your selected VM, as shown in the following screenshot. The **JIT VM access configuration** pane appears for your VM.
+1. Select **Enable JIT on 1 VM** with your selected VM, as shown in the following screenshot.
 
     ![Screenshot that depicts how you can enable JIT VM Access for a selected VM.](../media/M3-RDP02.png)
 
-Once you enable the JIT rules, you can examine the Network Security Group for the VM. It will have a new set of rules applied to block remote management access, as shown in the following image:
+    The **JIT VM access configuration** pane appears for your VM. After you enable the JIT rules, you can examine the Network Security Group for the VM. It will have a new set of rules applied to block remote management access, as shown in the following image:
 
-![Screenshot that depicts rules to block remote management access.](../media/M3-RDP03.png)
+    ![Screenshot that depicts rules to block remote management access.](../media/M3-RDP03.png)
 
-Notice that the rules are applied to the internal address, and all management ports are included - both Remote Desktop Protocol (3389) and SSH (22).
+    Notice that the rules are applied to the internal address, and all management ports are included - both Remote Desktop Protocol (3389) and SSH (22).
 
-1. On the upper menu bar, select **Save**. The **Just-in-time VM access** pane reappears.
+1. On the top menu bar, select **Save**. The **Just-in-time VM access** pane reappears.
 
 ## Request Remote Desktop Access
 
@@ -98,10 +99,12 @@ If you try to RDP into the Windows VM at this point, you will find that access i
 
     ![Screenshot that depicts how you can request access to a VM.](../media/M3-RDP04.png)
 
-1. Select the ports you want to open - in this case, the Remote Desktop port (3389).
+    The **Request access** pane appears for SRVD01.
+
+1. Select the ports you want to open; in this case, the Remote Desktop port (3389).
 
     ![Screenshot that depicts opening a port by selecting On for its toggle.](../media/M3-RDP05.png)
 
-1. Select **Open ports** to finalize the request. You can set the number of hours to keep the port open from this pane as well. Once the time has expired, the port(s) will be closed, and access will be denied.
+1. Select **Open ports** to finalize the request. You can set the number of hours to keep the port open from this pane as well. After the time has expired, the port(s) will be closed, and access will be denied.
 
 Now, your Remote Desktop client should be able to connect successfully - at least for the time period you've allotted through Security Center.

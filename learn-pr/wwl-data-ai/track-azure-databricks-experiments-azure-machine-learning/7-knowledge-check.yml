@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.track-azure-databricks-experiments-azure-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/15/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "What is the correct method to log a model metric, `_rmse`, in MLflow?"
+    choices:
+    - content: "`mlflow.log(\"RMSE\", _rmse)`"
+      isCorrect: false
+      explanation: "That's incorrect. MLflow module provides “fluent” APIs and log_metric() is the correct method to log a model metric."
+    - content: "`mlflow.log_artifact(\"RMSE\", _rmse)`"
+      isCorrect: false
+      explanation: "That's incorrect. MLflow module provides “fluent” APIs and log_metric() is the correct method to log a model metric."
+    - content: "`mlflow.log_metric(\"RMSE\", _rmse)`"
+      isCorrect: true
+      explanation: "That's correct. MLflow module provides “fluent” APIs and log_metric() is the correct method to log a model metric."
+  - content: "Leon wants to run an Azure Machine Learning experiment in Azure Databricks. An MLflow experiment is configured and Leon is about to run it. He realizes he forgot a step. What should have been done first?"
+    choices:
+    - content: "Register the model in Azure Machine Learning."
+      isCorrect: false
+      explanation: "That's incorrect. A model doesn't need to be registered to run an experiment."
+    - content: "Log the experiment metrics with MLflow."
+      isCorrect: false
+      explanation: "That's incorrect. Metrics don't need to be logged to run an experiment."
+    - content: "Configure MLflow tracking URI to use Azure Machine Learning."
+      isCorrect: true
+      explanation: "That's correct. First, the MLflow tracking URI needs to be configured to use AML."
+  - content: "You want to run an Azure Machine Learning Pipeline. The first step of the pipeline is to preprocess the data by running a Python script on Azure Databricks Compute. The configuration is defined and now you need to create the compute. Which type of object should you use?"
+    choices:
+    - content: "DatabricksAttachConfiguration"
+      isCorrect: false
+      explanation: "That's incorrect. DatabricksAttachConfiguration is used to define the configuration parameters for attaching Databricks Compute targets but doesn't create the compute."
+    - content: "ComputeTarget"
+      isCorrect: true
+      explanation: "That's correct. After defining the configuration, ComputeTarget should be used to create the compute."
+    - content: "DatabricksCompute"
+      isCorrect: false
+      explanation: "That's incorrect. DatabricksCompute is used to manage a Databricks compute target, not create it."

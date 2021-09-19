@@ -2,7 +2,7 @@ The following video shows what you'll be building in this module.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Learn/Intro-to-Logic-Apps/player?format=ny]
 
-In this module, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets. Your workflow will trigger when a new tweet is available. It will use cloud services to determine if the content is positive or negative and take different steps based on the results. After processing, it will save the data in a cloud-hosted database. By the end of this module, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors.
+In this module, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets for the basketball shoes produced by an athletic shoe company. Your workflow will trigger when a new tweet is available. It will use cloud services to determine if the content is positive or negative and take different steps based on the results. After processing, it will save the data in a cloud-hosted database. By the end of this module, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors.
 
 ## Learning objectives
 

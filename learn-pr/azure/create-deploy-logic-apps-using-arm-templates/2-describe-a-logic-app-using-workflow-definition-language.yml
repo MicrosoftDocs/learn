@@ -9,6 +9,7 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: INDEX,FOLLOW
 durationInMinutes: 12
 content: |
   [!include[](includes/2-describe-a-logic-app-using-workflow-definition-language.md)]

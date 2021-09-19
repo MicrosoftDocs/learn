@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.manage-machine-learning-models-azure-databricks
+metadata:
+  title: Manage machine learning models in Azure Databricks
+  description: "Manage machine learning models in Azure Databricks"
+  ms.date: 09/18/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage machine learning models in Azure Databricks
+summary: In Azure Databricks, you can deploy and manage machine learning models that you have trained.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe considerations for model management
+  - Register models
+  - Manage model versioning
+prerequisites: |
+  Before starting this module, you should be familiar with using Python to train machine learning models in Azure Databricks.
+iconUrl: /learn/achievements/manage-machine-learning-models-in-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+products:
+- azure-databricks
+units:
+- learn.wwl.manage-machine-learning-models-azure-databricks.introduction
+- learn.wwl.manage-machine-learning-models-azure-databricks.describe-considerations-for-model-management
+- learn.wwl.manage-machine-learning-models-azure-databricks.register-models
+- learn.wwl.manage-machine-learning-models-azure-databricks.manage-model-versioning
+- learn.wwl.manage-machine-learning-models-azure-databricks.exercise-manage
+- learn.wwl.manage-machine-learning-models-azure-databricks.knowledge-check
+- learn.wwl.manage-machine-learning-models-azure-databricks.summary
+badge:
+  uid: learn.wwl.manage-machine-learning-models-azure-databricks.badge

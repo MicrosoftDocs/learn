@@ -3,7 +3,7 @@ uid: learn.fsharp-lists.collection
 title: Collections and lists
 metadata:
   title: Collections and lists
-  description: In this unit we cover collections in F# and also focus on lists and list properties.
+  description: This unit covers collections in F#, with a focus on lists and list properties.
   author: softchris
   ms.author: chnoring
   ms.date: 07/28/2021

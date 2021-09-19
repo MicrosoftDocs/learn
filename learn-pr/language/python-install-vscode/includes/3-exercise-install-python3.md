@@ -1,38 +1,39 @@
-Previously you ran a command to determine whether you had Python 3 installed. If you need to install Python 3, choose your operating system at the top of this page, and then follow the instructions.
+In the previous exercise, you ran a command to determine whether you had Python 3 installed. If you need to install Python 3, choose your operating system at the top of this page, and then follow the instructions below.
 
-If you determine you already have Python 3 installed, you can scroll to the bottom of this page and select **Continue**.
+If you determined that you already have Python 3 installed, you can scroll to the bottom of this page and select **Continue**.
+
+When this module was written, Python 3.9 was the latest version available, so instructions here refer to that version. Install the latest version of Python that is available for your operating system. If you install a different version, the button labels and the filenames that you see may differ slightly from those in these instructions.
 
 ::: zone pivot="windows"
 
+> [!NOTE]
+> These instructions are specifically for Windows 10. If you're using a different version of Windows, refer to the [official Python downloads page](https://www.python.org/downloads/?azure-portal=true) for more information. 
+
 ## Install Python on Windows from the Microsoft Store
 
-When this module was written, Python 3.9 was the latest version of Python available, so we'll be referring to that version in the following instructions.
-
-> [!NOTE]
-> These instructions are specifically for Windows 10. If you're using a previous version of Windows, refer to the [official Python downloads page](https://www.python.org/downloads/?azure-portal=true) for more information.
-
-> [!NOTE]
-> At the time of this writing, Python 3.9.0 is the most current version of Python, so we refer to that version in these instructions. You should install the latest version available. If you install a different version, the text on buttons and the filenames that you see might be slightly different from the ones in these instructions.
-
-1. Open the Microsoft Store by selecting *Start*, typing *start* and *Microsoft Store*. 
+1. Open the Microsoft Store by selecting *Start*, and then typing *start Microsoft Store*. 
 
 1. Once open, search for **Python**.
 
     You'll be presented with a list of various options.
 
-1. Select the most recent version of Python, which at the time of this writing is Python 3.9.
+1. Select the most recent version of Python.
 
-    ![Screenshot of search results screen from Microsoft store for Python showing Python 3.9 highlighted.](../media/windows-install-python-search.png)
+    :::image type="content" source="../media/windows-install-python-search.png" alt-text="Screenshot of search results screen from Microsoft Store for Python showing Python 3.9 highlighted.":::
 
-1. Select *Install*, on the details screen.
+1. On the Home tab, select *Install*.
 
-    ![Screenshot of the Python details screen in the Microsoft Store with Install highlighted.](../media/windows-install-python-splash.png)
+    :::image type="content" source="../media/windows-install-python-splash.png" alt-text="Screenshot of the Python Home tab in the Microsoft Store with Install highlighted.":::
 
-    Python will be installed in the background. The installation may take a couple of minutes depending on the speed of your system.
+    
+    > [!NOTE]
+    > If you are unable to use the installer because you don't have administrator privileges, download the embeddable package (zip file) of Python from the [Python website](https://www.python.org/getit/), and then extract the zip file to a local folder, such as C:\Python39.
 
-    ![Screenshot of installation progress for Python from the Microsoft Store.](../media/windows-install-python-progress.png)
+    Python installs in the background. The installation may take a couple of minutes depending on the speed of your system.
 
-    After Python installs, return to the command prompt. 
+    :::image type="content" source="../media/windows-install-python-progress.png" alt-text="Screenshot of installation progress for Python from the Microsoft Store.":::
+
+1. After Python installs, return to the command prompt. 
 
 1. Enter the following command `python --version` and then select <kbd>Enter</kbd> to see the version of Python:
 
@@ -45,8 +46,6 @@ When this module was written, Python 3.9 was the latest version of Python availa
 ::: zone pivot="linux"
 
 ## Install Python on Linux
-
-When this module was written, Python 3.9 was the latest version of Python available, so we'll be referring to that version in the following instructions.
 
 The package manager you use depends on the version of Linux. Most popular Linux distributions include either APT (an acronym for "Advanced Packaging Tool") or YUM (an acronym for "Yellowdog Updater, Modified").
 
@@ -80,13 +79,13 @@ If you use APT, you can use these instructions to install Python 3.
     > [!NOTE]
     > `apt-get install` locates the appropriate packages from the package index, downloads the necessary files, and installs the files into the appropriate folders.
 
-1. Run `python3`, To confirm that Python 3 installed correctly:
+1. Run the `python3`command to confirm that Python 3 installed correctly:
 
     ```bash
     python3 --version
     ```
 
-    You should see the word `Python` with a set of numbers separated by `.` characters. The following example shows the output you might see.
+   The output should contain the word `Python` with a set of numbers separated by `.` characters. The following example shows the output you might see.
 
     ```output
     Python 3.9.1
@@ -94,7 +93,7 @@ If you use APT, you can use these instructions to install Python 3.
 
     As long as the first number is `3`, Python 3 installed successfully.
 
-    If the installation failed, you might see an error message. Enter the exact error message into a search engine's search box to find possible causes and solutions.
+    If the installation failed, you might see an error message. Enter the exact error message into browser to find possible causes and solutions.
 
 ### Install by using YUM
 
@@ -122,7 +121,7 @@ The YUM package manager is used mainly by Red Hat systems, like Red Hat Enterpri
     python3 --version
     ```
 
-    You should see the word `Python` with a set of numbers separated by `.` characters. The following example shows the output you might see.
+    The output includes the word `Python` with a set of numbers separated by `.` characters, for example:
 
     ```output
     Python 3.9.1
@@ -134,21 +133,21 @@ The YUM package manager is used mainly by Red Hat systems, like Red Hat Enterpri
 
 #### (Optional) Enable the Software Collections feature in Bash
 
-Software Collections enables you to install multiple versions of the same software components on your system. You need to specify which version of Python you want to run in the shell.
+Software Collections enables you to install multiple versions of the same software components on your Red Hat system. When you run the scl tool, it creates a child process (subshell) of the current shell. Running the command again then creates a subshell of the subshell. When the Software Collections tool is enabled, you need to specify which version of Python you want to run in the shell.
 
-1. Run the following command `scl enable` at a Bash prompt:
+1. Run the `scl enable` command at a Bash prompt:
 
     ```bash
     scl enable rh-python39 bash
     ```
 
-1. Again, verify that everything is ok by running `python3 --version`.
+1. Again, verify that everything is OK by running `python3 --version`.
 
     ```bash
     python3 --version
     ```
 
-    You will see an output resembling the following:
+    The output of that command should resemble the following:
 
     ```output
     Python 3.9.1
@@ -156,7 +155,7 @@ Software Collections enables you to install multiple versions of the same softwa
 
     As long as the first number is `3`, Python 3 installed successfully, in the context of a Software Collection.
 
-    `scl enable` starts a new Bash session, setting Python 3.6 as the default Python version. But Python 3.6 is the default version only for the current shell session. If you exit the session or open a new session from another terminal, Bash will revert to Python 2.7 as the default Python version.
+    `scl enable python36` starts a new Bash session, setting Python 3.6 as the default Python version. But Python 3.6 is the default version only for the current shell session. If you exit the session or open a new session from another terminal, Bash will revert to the default Python version.
 
     For more information, see
     [Red Hat Software Collections 2.4](https://access.redhat.com/documentation/en-us/red_hat_software_collections/2/html/2.4_release_notes/chap-rhscl?azure-portal=true).
@@ -173,26 +172,20 @@ Software Collections enables you to install multiple versions of the same softwa
 Follow these steps to download the Python installer from the Python website.
 
 > [!NOTE]
-> At the time of this writing, Python 3.9.0 was the most current version, so we refer to that version in these instructions. You should install the latest version available. If you install a different version, the text on buttons and the filenames that you see might be slightly different from the ones in these instructions.
-
-> [!NOTE]
-> Alternatively, you can use Homebrew to install Python and Visual Studio Code. For instructions, see 
+> You can use Homebrew to install Python and Visual Studio Code. For instructions, see 
 [Homebrew documentation](https://docs.brew.sh/Homebrew-and-Python?azure-portal=true).
 
-1. Download installer from [Python download page](https://www.python.org/downloads/?azure-portal=true).
+1. Download the installer from [Python download page](https://www.python.org/downloads/macos).
 
-    The website should automatically direct you to a page specifically for macOS. Select **Download Python 3.9.0**.
+    The website should automatically direct you to a page specifically for macOS. Select the latest release.
 
-    You might see a window prompting you to allow downloads from python.org. Select **Allow**.
+    You may see a dialog box prompting you to allow downloads from python.org. Select **Allow**.
 
-    After a moment, a file named _python-3.9.0-mascosx10.9.pkg_ should download to the Downloads stack in your Dock.
+    After a moment, a file named _python-3.9.0-mascosx10.9.pkg_ (or similar) should download to the Downloads stack in your Dock.
 
-    > [!NOTE]
-    > the name of the downloaded file varies depending on what's the latest version of Python.
+1. To start the installer, double-click the _.pkg_ file that you downloaded. The Python installer prompts you to install, verify, and accept various options and license agreements. Take the time to read through these prompts to understand what the installer will do to your computer.
 
-1. Double-click the _.pkg_ file that you downloaded to start the installer. The Python installer will prompt you to install, verify, and accept various options and license agreements. Take the time to read through these prompts to understand what the installer will do to your computer.
-
-    When the installation process finishes, a Finder window showing the contents of the Python folder will appear. You also should see a congratulations screen when the installation finishes. At that point, you can select **Close**.
+    When the installation process finishes, a Finder window showing the contents of the Python folder and a congratulations screen appear. Select **Close** to close these windows.
 
     If you're prompted to move the Python installer to the trash, you can do so.
 
@@ -202,10 +195,10 @@ Follow these steps to download the Python installer from the Python website.
     python3 --version
     ```
 
-    You should see the word `Python` with a set of numbers separated by `.` characters. The following example shows the output you might see.
+    The output includes the word `Python` with a set of numbers separated by `.` characters, for example:
 
     ```output
-    Python 3.9.0
+    Python 3.9.7
     ```
 
     As long as the first number is `3`, Python 3 installed successfully.

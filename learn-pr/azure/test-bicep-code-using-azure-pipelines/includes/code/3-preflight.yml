@@ -1,0 +1,22 @@
+stages:
+
+- stage: Lint
+  jobs: 
+  - job: Lint
+    steps:
+      - script: |
+          az bicep build --file deploy/main.bicep
+
+- stage: Validate
+  jobs: 
+  - job: Validate
+    steps:
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: 'MyServiceConnection'
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        inlineScript: |
+          az deployment group validate \
+            --resource-group $(ResourceGroupName) \
+            --template-file deploy/main.bicep

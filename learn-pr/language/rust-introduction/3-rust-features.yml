@@ -3,13 +3,13 @@ uid: learn.language.rust-introduction.3-rust-features
 metadata:
   title: Unique features of Rust
   description: Learn about some of the unique features of the Rust programming language.
-  ms.date: 08/08/2021
+  ms.date: 09/01/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Unique features of Rust
-durationInMinutes: 8
+durationInMinutes: 6
 content: |
   [!include[](includes/3-rust-features.md)]
 
@@ -39,15 +39,3 @@ quiz:
     - content: "Publish a library to *Crates.io*."
       isCorrect: false
       explanation: "You can publish a library with Cargo by using the command `cargo publish`."
-   
-  - content: "What Rust playground tool can you use to find mistakes in your code?"
-    choices:
-    - content: "rustfmt"
-      isCorrect: false
-      explanation: "Incorrect. You can use the rustfmt tool to format your Rust code to use official Rust styles."
-    - content: "Clippy"
-      isCorrect: true
-      explanation: "Correct. You can use the Clippy collection of lints to find mistakes in your code and see suggestions for how to improve your code."
-    - content: "Debug"
-      isCorrect: false
-      explanation: "Incorrect. Debug is a compile option."

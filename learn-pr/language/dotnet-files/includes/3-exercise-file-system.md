@@ -16,6 +16,9 @@ A starter project has already been created and you'll clone it using the integra
 1. (Optional) Change to a directory you want to copy the files to, such as `c:\MyProjects`.
 1. Run the following command to clone the example project for this module.
 
+    > [!IMPORTANT]
+    > Make sure you use the **Bash** shell in VS Code for this command.
+
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-dotnet-files && cd mslearn-dotnet-files
     ```
