@@ -384,7 +384,8 @@ The app is improving. We have pizza configuration and a checkout. It would be be
     
         protected override async Task OnParametersSetAsync()
         {
-          ordersWithStatus = await HttpClient.GetFromJsonAsync<List<OrderWithStatus>>(NavigationManager.BaseUri + "orders");
+          ordersWithStatus = await HttpClient.GetFromJsonAsync<List<OrderWithStatus>>(
+              $"{NavigationManager.BaseUri}orders");
         }
     }
     ```
