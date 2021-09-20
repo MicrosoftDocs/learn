@@ -10,7 +10,7 @@ To run actions in your logic app after events pass a specified condition, you ad
 
 The following image shows an example of a filter that checks whether a filename in a directory has the .pdf extension.
 
-:::image type="content" source="../media/4-logic-apps-filter-array.png" alt-text="Condition for a .pdf extension.":::
+:::image type="content" source="../media/4-logic-apps-filter-array.png" alt-text="Condition filter for a .pdf file in a folder.":::
 
 For example, suppose you have a logic app that needs to send an email based on certain fields being found in an Event Grid trigger. You'd create a condition in your logic app that could check the event data, and conditionally call an action.
 
@@ -29,14 +29,16 @@ Suppose you have a logic app that needs to send an email in response to an event
 
 ## JSON configuration
 
-The Logic Apps Designer menu bar has two views of a logic app; both can be used for development and configuration:
+The Logic Apps Designer command bar has two views of a logic app; both views can be used for development and configuration:
 
-- **Designer**: User interface that visually maps all triggers, actions, and connectors.
-- **Code view**: JSON configuration that enables you to edit any field you've mapped by editing the code.
+- **Designer**: Graphical interface for mapping all triggers, actions, and connectors.
+- **Code view**: JSON format of your logic app configuration, which enables you to edit any trigger, event, connection or related field you've mapped.
 
 :::image type="content" source="../media/4-code-designer-view.png" alt-text="Choice of two views for a logic app.":::
 
-In the Logic Apps Designer menu bar, select **Code view** to see the JSON configuration for the Event Grid trigger you've created. By reviewing the JSON configuration code for your event triggers, you'll recognize the settings and concepts we've completed thus far. As you become more familiar with JSON, you will be able to confidently edit the JSON configuration directly.
+In the Logic Apps Designer command bar, select **Code view** to see the JSON configuration for the Event Grid trigger you've created.
+
+Review the JSON configuration code for your event triggers, and you'll recognize the settings and concepts we've completed thus far. As you become more familiar with JSON, you will be able to confidently edit the JSON configuration directly.
 
 ``` json
 {
@@ -105,4 +107,4 @@ An extension is also available to enable you to edit your logic apps in Visual S
 
 :::image type="content" source="../media/4-find-install-logic-apps-extension.png" alt-text="Azure Logic Apps in a list of Visual Studio Code extensions." loc-scope="vs-code":::
 
-Let's use the **Designer view** in the Azure portal to update the logic app to respond to triggers.
+Let's use the **Designer view** in the Azure portal to configure the logic app to respond to triggers.

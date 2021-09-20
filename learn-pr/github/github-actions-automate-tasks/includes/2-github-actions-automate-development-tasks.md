@@ -87,7 +87,7 @@ inputs:
     default: "World"
 
 runs:
-    using: "docker"
+    uses: "docker"
     image: "Dockerfile"
 
 branding:
@@ -97,7 +97,7 @@ branding:
 
 Notice the ```inputs``` section. Here you are getting the value of a variable called MY_NAME. This variable will be set in the workflow that runs this action.
 
-In the ```runs``` section, notice you specify *docker* in the ```using``` attribute. When you do this, you'll need to provide the path to the docker image file. Here, it's called *Dockerfile*. We won't get into the specifics of Docker here, but if you would like more information, check out the [Introduction to Docker Containers](/learn/modules/intro-to-docker-containers/?azure-portal=true) module.
+In the ```runs``` section, notice you specify *docker* in the ```uses``` attribute. When you do this, you'll need to provide the path to the docker image file. Here, it's called *Dockerfile*. We won't get into the specifics of Docker here, but if you would like more information, check out the [Introduction to Docker Containers](/learn/modules/intro-to-docker-containers/?azure-portal=true) module.
 
 The last section, *branding*, personalizes your action in the GitHub Marketplace if you decide to publish it there.
 
@@ -148,7 +148,7 @@ An event will trigger on all activity types for the event unless you specify the
 
 A workflow must have at least one *job*. A job is a section of the workflow that will be associated with a *runner*. A runner can be GitHub-hosted or self-hosted and the job can run on a machine or in a container. You specify the runner with the ```runs-on:``` attribute. Here, you are telling the workflow to run this job on ```ubuntu-latest```.
 
-Each job will have steps to complete. In our example, the step uses the action *actions/checkout@v1* to checkout the repository. What's interesting is the ```using: ./action-a``` value. This is the path to the container action that you build in an *action.yml* file. We went over the contents of this file in the **What is GitHub Actions?** section above.
+Each job will have steps to complete. In our example, the step uses the action *actions/checkout@v1* to checkout the repository. What's interesting is the ```uses: ./action-a``` value. This is the path to the container action that you build in an *action.yml* file. We went over the contents of this file in the **What is GitHub Actions?** section above.
 
 The last part of this workflow file sets the MY_NAME variable value for this workflow. Recall the container action took an input called MY_NAME.
 

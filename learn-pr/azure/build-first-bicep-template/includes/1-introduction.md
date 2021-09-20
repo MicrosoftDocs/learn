@@ -4,7 +4,7 @@ Bicep enables you to define your Azure resources in a simple templating language
 
 Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your company is launching a new toy. You've been asked to deploy a new marketing website in preparation for the launch. The marketing team has also told you that many new toys will be released this year, and it will need a website deployed for each one. You know from past experience that you're not always given much time to get new websites up and running before a toy launches.
 
-You'll host the website in Azure by using Azure App Service. You'll incorporate a storage account for files such as manuals and specifications for each toy.
+You'll host the website in Azure by using Azure App Service. You'll incorporate a storage account for files such as manuals and specifications for the toy.
 
 :::image type="content" source="../media/1-architecture-diagram.png" alt-text="Architecture diagram that shows a resource group containing an App Service plan, App Service app, and storage account." border="false":::
 
@@ -31,10 +31,10 @@ You should be familiar with:
 - What infrastructure as code is, and what its benefits are.
 - Azure, including the Azure portal, subscriptions, resource groups, and resources.
 
-To follow along with the exercises in the module, you'll need:
+To follow along with the exercises in the module, you'll need the following installed locally:
 
-- [Visual Studio Code](https://code.visualstudio.com) installed locally.
-- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed locally.
+- [Visual Studio Code](https://code.visualstudio.com).
+- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
 - Either:
-  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
-  - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools.
+  - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps).
