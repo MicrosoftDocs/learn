@@ -282,7 +282,7 @@ The checkout page at the moment doesn't allow customers to place their orders. T
     }
     ```
 
-    The above code allows our app to get all the current orders, and place an order. The `Route("orders")]` Blazor attribute allows this class to handle incoming HTTP requests for **/orders** and **/orders/{orderId}**.
+    The above code allows our app to get all the current orders, and place an order. The `[Route("orders")]` Blazor attribute allows this class to handle incoming HTTP requests for **/orders** and **/orders/{orderId}**.
 
 1. Save your changes with <kbd>CTRL</kbd>+<kbd>S</kbd>.
 1. For the filename, use **OrderController.cs**. Make sure you save the file in the same directory as **OrderState.cs**.
