@@ -28,7 +28,7 @@ quiz:
             learning process.
         - content: Completing tasks correctly the first time you attempt them.
           isCorrect: false
-          explanation: Incorrect. To learn from an experience, you don’t have to complete tasks correctly the first time you attempt them.
+          explanation: Incorrect. To learn from an experience, you don't have to complete tasks correctly the first time you attempt them.
     - content: You ask a peer to help you with a section of code. To write the code,
         both of you need to learn new skills. Which of the following responses
         indicate that your peer has a growth mindset?
@@ -36,11 +36,11 @@ quiz:
         - content: You should ask someone else. I'm not cut out for that sort of thing.
           isCorrect: false
           explanation: Incorrect. Your peer believes that he either has an innate
-            ability for the task or he doesn’t. His statement indicates that he
+            ability for the task or he doesn't. His statement indicates that he
             has a fixed mindset.
         - content: I don't know how to do it yet. Let's learn how to do it together.
           isCorrect: true
-          explanation: Correct. Your peer knows that he doesn’t know how to do it yet, but
+          explanation: Correct. Your peer knows that he doesn't know how to do it yet, but
             he's sure he can learn. His statement indicates that he
             has a growth mindset.
         - content: I'll never be good at writing code. I tried it once and it didn't work
@@ -51,18 +51,18 @@ quiz:
             indicates that he has a fixed mindset.
     - content: Which one of the following statements is true?
       choices:
-        - content: Inner dialogue that implies a growth mindset, like "I can do it!"
+        - content: Inner dialogue that implies a growth mindset, like "I can do it,"
             means you can't fail.
           isCorrect: false
           explanation: There's always opportunity for mistakes and failure. With a growth
             mindset, you recognize that failure is possible as part of the
             learning process. The risk of failure doesn't stop you from trying.
-        - content: Inner dialogue that implies a fixed mindset, like "I’ll never be
+        - content: Inner dialogue that implies a fixed mindset, like "I'll never be
             able to do it," means you should give up. The thought will prevent
             you from completing the activity.
           isCorrect: false
           explanation: Although giving up is an option, it's not the only option or the best option. Change your inner dialogue to allow for the learning of new skills necessary for the activity.
-        - content: Changing your inner dialogue from "I can’t do it" to "I can’t do it
+        - content: Changing your inner dialogue from "I can't do it" to "I can't do it
             yet, but I can learn how" is an example of changing from a fixed to
             a growth mindset.
           isCorrect: true
