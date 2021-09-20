@@ -135,5 +135,6 @@ Answer the following questions to see what you've learned. Choose one answer for
 
 
 <!-- Links -->
+
 [RustPlay-enums]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=f81139b1fc896ac6f3e5840f2661dd2f?azure-portal=true
 [Wikipedia-algebraic]: https://wikipedia.org/wiki/Algebraic_data_type?azure-portal=true

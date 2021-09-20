@@ -170,6 +170,7 @@ Answer the following questions to see what you've learned. Choose one answer for
 
 
 <!-- Links -->
+
 [RustPlay-tuple]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=f0c1c833543c9f58af5e49efb77a9fdd?azure-portal=true
 [RustPlay-structs]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1a09be796adc0020c4f868a92b4084f4?azure-portal=true
 [Wikipedia-C]: https://wikipedia.org/wiki/Struct_(C_programming_language)

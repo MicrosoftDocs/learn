@@ -2,7 +2,7 @@ In this module, you reviewed the basic structure of a Rust program. The `main` f
 
 We explored core Rust language concepts, including many primary and compound data types. You studied how to work with integer and floating point numbers, characters and text strings, and boolean true/false values. The Rust language strictly interprets data types. A program only compiles and runs successfully when data types are correctly defined and used.
 
-In the exercise, you wrote a function to build a car by using data stored in a `struct` and an `enum`. We used the Rust playground to modify the code, compile the program, and run the executable.
+In the exercise, you wrote a function to build a car by using data stored in a `struct` and an `enum`. You looked for instances of the `todo!` macro in the sample program and completed the code. You used the Rust playground to modify the code, compile the program, and run the executable.
 
 In the next module in this Learning Path, you'll discover more Rust data types, and how to use if/else conditional expressions in a program.
 
@@ -37,11 +37,13 @@ Visit the following links to learn more about some of the items we explored in t
 - [Understand variables, mutability, and shadowing][Rust-vars]
 - [Learn about functions][Rust-func]
 - [Show output with the println! macro][Rust-println]
+- [Indicate unfinished code with the todo! macro][Rust-todo]
 
 
 <!-- Links -->
 
 [Get-started]: /learn/modules/rust-get-started/?azure-portal=true
+
 [Wikipedia-algebraic]: https://wikipedia.org/wiki/Algebraic_data_type?azure-portal=true
 [Wikipedia-C]: https://wikipedia.org/wiki/Struct_(C_programming_language)?azure-portal=true
 
@@ -61,3 +63,4 @@ Visit the following links to learn more about some of the items we explored in t
 [Rust-vars]: https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html?azure-portal=true
 [Rust-func]: https://doc.rust-lang.org/book/ch03-03-how-functions-work.html?azure-portal=true
 [Rust-println]: https://doc.rust-lang.org/std/macro.println.html?azure-portal=true
+[Rust-todo]: https://doc.rust-lang.org/stable/std/macro.todo.html?azure-portal=true

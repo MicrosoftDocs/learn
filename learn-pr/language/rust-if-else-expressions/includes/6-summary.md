@@ -2,7 +2,7 @@ In this module, we reviewed how Rust supports compound data types and test condi
 
 In the exercise, you wrote a group of functions to work together to build cars. You practiced working with data stored in several types, including arrays, tuples, enums, and structs. We used the Rust playground to modify the code, compile the program, and run the executable.
 
-In the next module in this Learning Path, we explore complex conditional expressions in Rust, and discover how to iterate through data by using loops.
+In the next module in this Learning Path, we explore how to iterate through data by using loops.
 
 
 ## Learn more

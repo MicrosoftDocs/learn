@@ -34,7 +34,7 @@ fn car_factory(order: i32, miles: u32) -> Car {
         // color = 5 --> index 1, 6 --> 2, 7 --> 3, 8 --> 4
         color = color - 4;
     }
-
+        
     // Add variety to orders for motor type and roof type
     let mut motor = Transmission::Manual;
     let mut roof = true;
@@ -55,56 +55,38 @@ fn car_factory(order: i32, miles: u32) -> Car {
 }
 
 fn main() {
-
-    // Initialize a hash map for the car orders
-    // - Key: Car order number, i32
-    // - Value: Car order details, Car struct
-    use std::collections::HashMap;
-    let mut orders: HashMap<i32, Car> = HashMap::new();
-    
+    // Initialize counter variable
+    let mut order = 1;
     // Declare a car as mutable "Car" struct
     let mut car: Car;
-
-    // Order 6 cars
-    // - Increment "order" after each request
-    // - Add each order <K, V> pair to "orders" hash map
-    // - Call println! to show order details from the hash map
-            
-    // Initialize order variable
-    let mut order = 1;
         
+    // Order 6 cars, increment "order" for each request
     // Car order #1: Used, Hard top
     car = car_factory(order, 1000);
-    orders.insert(order, car);
-    println!("Car order {}: {:?}", order, orders.get(&order));
+    println!("{}: {:?}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
     
     // Car order #2: Used, Convertible
     order = order + 1;
     car = car_factory(order, 2000);
-    orders.insert(order, car);
-    println!("Car order {}: {:?}", order, orders.get(&order));
+    println!("{}: {:?}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);    
 
     // Car order #3: New, Hard top
     order = order + 1;
     car = car_factory(order, 0);
-    orders.insert(order, car);
-    println!("Car order {}: {:?}", order, orders.get(&order));
+    println!("{}: {:?}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
 
     // Car order #4: New, Convertible
     order = order + 1;
     car = car_factory(order, 0);
-    orders.insert(order, car);
-    println!("Car order {}: {:?}", order, orders.get(&order));
+    println!("{}: {:?}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
 
     // Car order #5: Used, Hard top
     order = order + 1;
     car = car_factory(order, 3000);
-    orders.insert(order, car);
-    println!("Car order {}: {:?}", order, orders.get(&order));
+    println!("{}: {:?}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
 
     // Car order #6: Used, Hard top
     order = order + 1;
     car = car_factory(order, 4000);
-    orders.insert(order, car);
-    println!("Car order {}: {:?}", order, orders.get(&order));
+    println!("{}: {:?}, Hard top = {}, {:?}, {}, {} miles", order, car.age.0, car.roof, car.motor, car.color, car.age.1);
 }

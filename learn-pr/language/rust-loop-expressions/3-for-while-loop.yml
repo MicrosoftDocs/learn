@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.rust-loop-expressions.2-for-while-loop
+uid: learn.language.rust-loop-expressions.3-for-while-loop
 metadata:
   title: Use for, while, and loop expressions
   description: Learn how to use for, while, and loop expressions to iterate through data.
-  ms.date: 08/19/2021
+  ms.date: 09/10/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -11,7 +11,7 @@ metadata:
 title: Use for, while, and loop expressions
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-for-while-loop.md)]
+  [!include[](includes/3-for-while-loop.md)]
 
 quiz:
   questions:
