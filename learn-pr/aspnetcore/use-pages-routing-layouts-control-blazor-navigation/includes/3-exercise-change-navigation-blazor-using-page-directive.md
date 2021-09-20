@@ -237,7 +237,6 @@ The checkout page at the moment doesn't allow customers to place their orders. T
     {
         [Route("orders")]
         [ApiController]
-    
         public class OrdersController : Controller
         {
             private readonly PizzaStoreContext _db;
