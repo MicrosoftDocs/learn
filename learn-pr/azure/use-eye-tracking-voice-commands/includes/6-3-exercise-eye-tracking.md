@@ -17,6 +17,7 @@ In this exercise, you'll learn how to enable eye-tracking for HoloLens 2 and add
 
     :::image type="content" source="../media/enable-eye-tracking.png" alt-text="Screenshot of Unity MixedRealityToolkit component with newly created profiles applied and eye tracking enabled" lightbox="../media/enable-eye-tracking.png":::
 
+
 ## Enable simulated eye-tracking for the Unity editor
 
 * In the Hierarchy window, select the MixedRealityToolkit object, then in the Inspector window, navigate to the Input tab, and then:
@@ -27,6 +28,7 @@ In this exercise, you'll learn how to enable eye-tracking for HoloLens 2 and add
 
     :::image type="content" source="../media/set-to-camera-forward-axis.png" alt-text="Screenshot of setting Default Eye Gaze Simulation Mode to Camera Forward Axis" lightbox="../set-to-camera-forward-axis.png":::
 
+
 ## Add eye-tracking to objects
 
 1. In the Hierarchy window, expand the **RoverExplorer** > **Buttons**, and then select all three of the child button objects:
@@ -36,6 +38,7 @@ In this exercise, you'll learn how to enable eye-tracking for HoloLens 2 and add
 2. With all three Button objects still selected, in the Inspector window use the **Add Component** button to add the **EyeTrackingTarget** component to all the selected objects:
 
     :::image type="content" source="../media/adding-eye-tracking-target-component.png" alt-text="Screenshot of adding EyeTrackingTarget component" lightbox="../media/adding-eye-tracking-target-component.png":::
+
 
 3. In the Hierarchy window, expand **RoverExplorer** > **Buttons** > **Hints** > **SeeItSayItLabel** > **TextMeshPro**. Then in the Hierarchy window, select the Hints button object, and configure the **EyeTrackingTarget** component as follows:
 
@@ -52,5 +55,6 @@ In this exercise, you'll learn how to enable eye-tracking for HoloLens 2 and add
         4) Set the argument to **0.04** to reset the font size back to 0.04
 
     :::image type="content" source="../media/text-mesh-pro-object-selected.png" alt-text="Screenshot of Unity with Hints TextMeshPro object selected and EyeTrackingTarget component configured" lightbox="../media/text-mesh-pro-object-selected.png":::
+
 
 4. Repeat this step for the **Explode** and **Reset** button object to configure eye tracking for remaining buttons. If you now enter Game mode and then press-and-hold the right mouse button while moving your mouse until the gaze hit's one of the buttons, you'll see the text font size increase by 50% and reset back to its original size when looking away:

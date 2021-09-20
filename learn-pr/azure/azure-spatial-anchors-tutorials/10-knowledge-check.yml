@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.10-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Three multiple-choice questions
+  ms.date: 09/09/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: Choose the best response for each question. Then select Check your answers.
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "MRTK configuration profile for a scene should be set to ?"
+      choices:
+        - content: "DefaultHoloLens1ConfigurationProfile "
+          isCorrect: false
+        - content: "DefaultHoloLens2ConfigurationProfile"
+          isCorrect: true
+        - content: "HandMenuConfigurationProfile"
+          isCorrect: false
+    - content: "We transfer __________ between multiple devices to achieve spatial alignment. "
+      choices:
+        - content: "Access Key"
+          isCorrect: false
+        - content: "Anchor ID"
+          isCorrect: true
+        - content: "Account Domain"
+          isCorrect: false
+    - content: "UI panel that displays essential information about ?"
+      choices:
+        - content: "Upcoming ASA session"
+          isCorrect: false
+        - content: "Previous ASA session"
+          isCorrect: false
+        - content: "Current ASA session"
+          isCorrect: true
+   

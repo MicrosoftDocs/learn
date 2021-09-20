@@ -16,7 +16,7 @@ abstract: |
   - Define and use functions.
   - Use pipelines to operate on data.
   - Compose functions to create larger functions.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/fsharp-functions.svg
 levels:
   - beginner
 roles:

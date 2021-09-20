@@ -15,7 +15,7 @@ abstract: |
   - Use `if...elif...else` to add conditional logic to your code.
   - Create repeat statements by using various loop constructs.
   - Understand the difference between various loop constructs and when to use them.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/fsharp-conditionals.svg
 levels:
   - beginner
 roles:

@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.use-eye-tracking-voice-commands-mrtk.6-6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Three multiple-choice questions
+  ms.date: 09/09/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: Choose the best response for each question. Then select Check your answers.
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: " Which of the following option enables simulated eye-tracking for the Unity editor"
+      choices:
+        - content: "Set the Default Eye Gaze Simulation Mode to Camera Forward Axis"
+          isCorrect: false
+        - content: " Locate the Gaze Settings section and check the Is Eye Tracking Enabled checkbox"
+          isCorrect: false
+        - content: "Enable Eye Gaze Input Capability is greyed out"
+          isCorrect: true
+    - content: "Which component handles the speech input events raised form the IMixedRealityInputSystem?"
+      choices:
+        - content: "Speech Input Handler Component"
+          isCorrect: true
+        - content: "Speech Component"
+          isCorrect: false
+        - content: "Speech Confirmation Component"
+          isCorrect: false
+    - content: "Is eye-tracking enabled in HoloLens 1?"
+      choices:
+        - content: "Yes"
+          isCorrect: false
+        - content: "No"
+          isCorrect: true
+       
+      
+    

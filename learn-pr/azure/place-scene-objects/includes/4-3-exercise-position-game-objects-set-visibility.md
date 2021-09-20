@@ -1,0 +1,58 @@
+Before we move on the solvers we will learn how to create parent objects, add prefabs to the scene, and use transform to place them in particular positions
+
+## Import the tutorial assets
+
+Download the following Unity custom package:
+[MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.5.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage)
+
+1. To Import a Unity custom package, In the Unity menu, select Assets > Import Package > Custom Package... to open the Import package... window:
+
+    ![Import custom package](../media/base-2-section-7-step-1-1.png)
+
+2. In the Import package... window, select the MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unity package you downloaded and click the Open button:
+
+    ![Import tutorial package](../media/base-2-section-7-step-1-2.png)
+
+3. In the Import Unity Package window, click the All button to ensure all the assets are selected, then click the Import button to import the assets:
+
+    ![Click the all button to ensure all the assets are selected](../media/base-2-section-7-step-1-3.png)
+
+## Create the parent object
+
+1. In the Hierarchy window, right-click on an empty spot, and select **Create Empty** to add an empty object to your scene:
+
+    ![Unity Create Empty contextual popup menu](../media/base-4-section-1-step-1-1.png)
+
+2. Right-click on the newly created object, select **Rename**, and change the name to **RoverExplorer**:
+
+    ![Unity Rename contextual popup menu](../media/base-4-section-1-step-1-2.png)
+
+3. With the RoverExplorer object still selected, in the Inspector window, configure the **Transform** component as follows:
+
+    * **Position**: X = 0, Y = -0.6, Z = 2
+    * **Rotation**: X = 0, Y = 0, Z = 0
+    * **Scale**: X = 1, Y = 1, Z = 1
+
+    ![Unity with RoverExplorer object selected and positioned](../media/base-4-section-1-step-1-3.png)
+
+## Add the tutorial prefabs
+
+1. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder:
+
+    ![Unity Project window with Prefabs folder selected](../media/base-4-section-2-step-1-1.png)
+
+2. From the Project window, click-and-drag the **Table** prefab on to the **RoverExplorer** object to make it a child of the RoverExplorer object, then in the Inspector window, configure the **Transform** component as follows:
+
+    * **Position**: X = 0, Y = -0.005, Z = 0
+    * **Rotation**: X = 0, Y = 0, Z = 0
+    * **Scale**: X = 1.2, Y = 0.01, Z = 1.2
+
+    ![Unity with newly added Table prefab selected and positioned](../media/base-4-section-2-step-1-2.png)
+
+3. From the Project window, click-and-drag the **RoverAssembly** prefab on to the **RoverExplorer** object to make it a child of the RoverExplorer object, then in the Inspector window, configure the **Transform** component as follows:
+
+    * **Position**: X = -0.1, Y = 0, Z = 0
+    * **Rotation**: X = 0, Y = -135, Z = 0
+    * **Scale**: X = 1, Y = 1, Z = 1
+
+    ![Unity with newly added RoverAssembly prefab selected and positioned](../media/base-4-section-2-step-1-3.png)
