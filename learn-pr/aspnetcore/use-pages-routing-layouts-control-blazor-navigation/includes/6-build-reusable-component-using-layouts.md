@@ -36,11 +36,11 @@ There are two requirements that unique to layout components:
 @Body
 
 <footer>
-	@TrademarkMessage
+	@new MarkdownString(TrademarkMessage)
 </footer>
 
 @code {
-	public string TrademarkMessage { get; set; } = "All content is copyright Blazing Pizzas 2021";
+	public string TrademarkMessage { get; set; } = "All content is &copy; Blazing Pizzas 2021";
 }
 ```
 
