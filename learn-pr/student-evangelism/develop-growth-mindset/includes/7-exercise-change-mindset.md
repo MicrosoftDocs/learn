@@ -28,7 +28,7 @@ If you embrace a growth mindset, you might be surprised about how much you can a
 
 ## How you can help support growth mindsets
 
-You can help others develop a growth mindset by framing feedback so it supports a growth mindset. Here are two examples of feedback that support a fixed mindset and a growth mindset:
+You can help others develop a growth mindset by framing feedback so it supports a growth mindset. Here are two examples of feedback that support a fixed mindset and a growth mindset.
 
 ### Example 1
 
