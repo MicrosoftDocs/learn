@@ -74,7 +74,7 @@ Hackathons are reliable opportunities to network with peers and meet representat
 
 Microsoft Imagine Cup is a global technology competition just for students. Over the twenty-year history, over 2 million students from more than 160 countries have participated to create innovative and life changing solutions. Some have even turned their projects into a business.
 
-:::image type="content" source="../media/imaginecup.png" alt-text="Dream it, build it, live it, Imagine Cup":::
+:::image type="content" source="../media/imagine-cup.png" alt-text="Dream it, build it, live it, Imagine Cup":::
 
 Why participate:
 
