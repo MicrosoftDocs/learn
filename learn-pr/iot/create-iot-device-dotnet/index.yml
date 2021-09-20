@@ -13,23 +13,24 @@ title: Construct Internet of Things devices using the .NET IoT Libraries
 summary: "Read environmental sensors and activate relays using the .NET IoT Libraries."
 abstract: |
   By the end of this module, you'll be able to:
-  - Construct a sensor circuit.
+  - Construct circuits to implement:
+    - An environmental sensor.
+    - A switched circuit to control LEDs or relay modules.
   - Write code to read temperature and humidity from a sensor.
-  - Construct an LED circuit.
-  - Write code to use GPIO pins to activate the LED.
+  - Write code to use GPIO pins to activate an LED or relay module.
   - Deploy and test the code.
 prerequisites: |
-  - Basic understanding of ASP.NET Core Web API.
-  - Basic understanding of Raspberry Pi.
+  - Intermediate knowledge of .NET.
+  - Basic understanding of Raspberry Pi and Raspberry Pi OS.
   - .NET SDK 5 or greater.
   - The following hardware components:
-    - A Raspberry Pi device (2 or greater).
-    - BME280 humidity/barometric pressure/temperature sensor breakout ([example](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout)).
-    - 5 mm LED ([example](https://www.adafruit.com/product/4203)).
-    - 1.0K Ω resistor ([example](https://www.adafruit.com/product/4294)).
-    - Jumper wires ([example](https://www.adafruit.com/product/758)).
-    - Full-sized breadboard ([example](https://www.adafruit.com/product/239)).
-    - Raspberry Pi GPIO breakout board ([example](https://www.adafruit.com/product/2028)).
+    - A Raspberry Pi device (2 or greater) configured as described in the *Important* callout below.
+    - BME280 humidity/barometric pressure/temperature sensor breakout ([example](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout))
+    - 5 mm LED ([example](https://www.adafruit.com/product/4203))
+    - 1.0K Ω resistor ([example](https://www.adafruit.com/product/4294))
+    - Jumper wires ([example](https://www.adafruit.com/product/758))
+    - Full-sized breadboard ([example](https://www.adafruit.com/product/239))
+    - Raspberry Pi GPIO breakout board ([example](https://www.adafruit.com/product/2028))
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
   - intermediate
@@ -39,7 +40,7 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - dotnet
 units:
 - learn.create-iot-device-dotnet.introduction
-- learn.create-iot-device-dotnet.construct-circuit
+- learn.create-iot-device-dotnet.construct-iot-hardware
 - learn.create-iot-device-dotnet.dotnet-iot-libraries
 - learn.create-iot-device-dotnet.knowledge-check
 - learn.create-iot-device-dotnet.summary

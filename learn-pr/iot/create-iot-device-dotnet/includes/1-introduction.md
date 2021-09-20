@@ -21,8 +21,8 @@ In this module you will:
 
 ## Prerequisites
 
-- Basic understanding of ASP.NET Core Web API.
-- Basic understanding of Raspberry Pi.
+- Intermediate knowledge of .NET.
+- Basic understanding of Raspberry Pi and Raspberry Pi OS.
 - .NET SDK 5 or greater.
 - The following hardware components:
   - A Raspberry Pi device (2 or greater) configured as described in the *Important* callout below.
@@ -61,4 +61,4 @@ You've decided to build the device using a Raspberry Pi to monitor the environme
 
 ## The first step
 
-The first step to building your device is constructing the circuit.
+The first step to building your device is constructing the circuit. In the next unit, you'll use common hardware components to build a prototype device for monitoring and controlling conditions in the cave.

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-iot-device-dotnet.dotnet-iot-libraries
-title: dotnet-iot-libraries
+title: Understand the .NET IoT Libraries
 metadata:
-  title: dotnet-iot-libraries
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Understand the .NET IoT Libraries
+  description: "This unit introduces the student to the .NET IoT Libraries, System.Device.Gpio and IoT.Device.Bindings."
   ms.date: 9/15/2021
   author: camsoper
   ms.author: casoper

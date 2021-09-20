@@ -1,14 +1,12 @@
 In the previous unit, you used common hardware components to construct a prototype device for measuring and maintaining environmental conditions in a cave. In this unit, you'll learn about the .NET IoT Libraries, which enable interaction with your device.
 
-> [!NOTE]
-> This unit is a rough draft in progress. Don't expect it to make sense yet. 😉
-
 ## Libraries
 
 The .NET IoT Libraries are composed of two NuGet packages:
 
 - `System.Device.Gpio`
 - `Iot.Device.Bindings`
+
 ### System.Device.Gpio
 
 The `System.Device.Gpio` package implements a variety of protocols for interacting with low-level hardware pins to control devices. These include:
@@ -23,21 +21,21 @@ The `System.Device.Gpio` package implements a variety of protocols for interacti
 
 ### Iot.Device.Bindings
 
-The `Iot.Device.Bindings` package contains device bindings to streamline app development by wrapping `System.Device.Gpio`. It contains abstractions representing a wide array of common IoT sensors and other devices. It's a community-driven, open-source project, and anybody can add additional device support.
+The `Iot.Device.Bindings` package contains device bindings to streamline app development by wrapping `System.Device.Gpio`. It contains classes representing a wide array of common IoT sensors and other devices. It's a community-driven, open-source project, and anybody can add additional device support.
 
-Using `Iot.Device.Bindings` enables the developer to work directly with device abstractions without worrying about low-level communication. For example, the developer can  
+Using `Iot.Device.Bindings` enables the developer to work directly with device abstractions without worrying about low-level communication. Consider the example of the BME280 sensor. To communicate with the sensor, your app must send and receive messages in binary on the I2C bus. The classes in `Iot.Device.Bindings` provide abstractions using classes in `System.Device.Gpio` to handle the binary communication for you. This enables you to focus on what you intend to do with the sensor, not on low-level communication.
+
 ## Supported operating systems
 
-`System.Device.Gpio` is supported on most versions of Linux that support ARM/ARM64 and Windows 10 IoT Core.
-
-> [!TIP]
-> For Raspberry Pi, [Raspberry Pi OS](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)  (formerly Raspbian) is recommended.
+The .NET IoT Libraries run anywhere .NET is supported. This includes most versions of Linux that support ARM/ARM64 and Windows 10 IoT Core. Raspberry Pi OS is recommended for most Raspberry Pi projects.
 
 ## Supported hardware platforms
 
-`System.Device.Gpio` is compatible with most single-board platforms. Recommended platforms are Raspberry Pi (2 and greater) and Hummingboard. Other platforms known to be compatible are BeagleBoard and ODROID.
+The .NET IoT Libraries are compatible with most single-board platforms. Recommended platforms are Raspberry Pi (2 and greater) and Hummingboard. Other platforms known to be compatible are BeagleBoard and ODROID.
 
 PC platforms are supported via the use of a USB to SPI/I2C bridge.
 
-> [!IMPORTANT]
+> [!NOTE]
 > .NET is not supported on ARMv6 architecture devices, including Raspberry Pi Zero and Raspberry Pi devices prior to Raspberry Pi 2.
+
+In the next unit, you'll use the .NET IoT Libraries to read the BME280 sensor and trigger the LED that represents your relay.
