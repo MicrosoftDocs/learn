@@ -3,7 +3,7 @@ uid: learn.language.rust-loop-expressions
 metadata:
   title: Use loops to iterate through data in Rust
   description: Explore how to use hash maps in Rust. Discover how to use loop expressions to iterate through data.
-  ms.date: 09/10/2021
+  ms.date: 09/20/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
