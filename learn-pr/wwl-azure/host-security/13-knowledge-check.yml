@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.host-security.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/20/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/13-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your organization has a security policy that prohibits exposing SSH ports to the outside world. You need to connect to an Azure Linux virtual machine to install software. What should you do? Select one."
+    choices:
+    - content: "Configure the Bastion service"
+      isCorrect: true
+      explanation: "Configure the Bastion service. The Azure Bastion service provides secure and seamless RDP and SSH connectivity to your virtual machines directly in the Azure portal over SSL. When you connect via Azure Bastion, your virtual machines do not need a public IP address."
+    - content: "Configure a Guest configuration on the virtual machine"
+      isCorrect: false
+      explanation: "A guest configuration would not be a secure solution."
+    - content: "Create a custom script extension"
+      isCorrect: false
+      explanation: "Custom extensions would not allow access to the Linux virtual machine."
+  - content: "What type of disk encryption is used for Linux disks?"
+    choices:
+    - content: "Bitlocker"
+      isCorrect: false
+      explanation: "Bitlocker is for Windows based machines."
+    - content: "DM-Crypt"
+      isCorrect: true
+      explanation: "DM-Crypt . Azure Disk Encryption is a capability that lets you encrypt your Windows and Linux IaaS VM disks. Azure Disk Encryption leverages the industry standard BitLocker feature of Windows and the DM-Crypt feature of Linux to provide OS and data disk encryption to help protect and safeguard your data."
+    - content: "FileVault"
+      isCorrect: false
+      explanation: "FireVault is for encrypting Mac machines."
+  - content: "You need to ensure your virtual machines are kept up to date with security patches. Update Management includes all of the following except? Select one."
+    choices:
+    - content: "The Microsoft Monitoring Agent must be installed for both Windows and Linux virtual machines."
+      isCorrect: false
+      explanation: "The monitoring agent is required to see what updates are deployed."
+    - content: "Update Management is available at no additional cost (except log data storage)."
+      isCorrect: false
+      explanation: "Update management is a free service."
+    - content: "Update Management only pertains to cloud deployed virtual machines."
+      isCorrect: true
+      explanation: "Update Management only pertains to cloud deployed virtual machines. Update Management pertains to virtual machines in on-premises environments, and in other cloud environments."
+  - content: "Which of the following is not a High severity Security Center recommendation for virtual machines and servers? Select one."
+    choices:
+    - content: "Disk encryption should be applied on virtual machines"
+      isCorrect: false
+      explanation: "Encryption is always valuable but not high severity."
+    - content: "Install endpoint protection solution on virtual machines"
+      isCorrect: true
+      explanation: "Install endpoint protection solution on virtual machines. This is a Medium severity recommendation."
+    - content: "System updates should be installed on your machines."
+      isCorrect: false
+      explanation: "System updates is not a high severity warning."
+  - content: "Privileged access workstations provide all the following, except? Select one."
+    choices:
+    - content: "Protects against attackers who have gained administrative access."
+      isCorrect: true
+      explanation: "Protects against attackers who have gained adminstrative access. PAWs cannot protect against an attacker that has already gained access."
+    - content: "Protects against phishing attacks, various impersonation attacks, and credential theft attacks such as keystroke logging."
+      isCorrect: false
+      explanation: "Using a PAW would help block phishing and other types of attacks on the host."
+    - content: "Protects high impact IT administrative roles and tasks."
+      isCorrect: false
+      explanation: "A PAW would protect IT administrative roles, by having them only use a dedicated machine for access."
