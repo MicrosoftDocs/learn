@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.learn-introduction-tutorials-mrtk
 metadata:
-  title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit
+  title: Introduction to Mixed Reality Toolkit - Create a Mars Curiosity Rover hologram
   description: This course provides the user a basic understanding of all the foundational elements of MRTK.
   ms.date: 09/09/2021
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit
+title: Introduction to Mixed Reality Toolkit - Create a Mars Curiosity Rover hologram
 summary: Import and learn about foundational elements of MRTK
 abstract: |
   By the end of this module you will be able to:
@@ -24,8 +24,10 @@ products:
 - windows-mixed-reality
 - mrtk
 - hololens
+- azure
+- mrtk
 prerequisites: |
-  - A Windows 10 PC configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools)
+  - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
   - A HoloLens 2 device configured for development
   - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added

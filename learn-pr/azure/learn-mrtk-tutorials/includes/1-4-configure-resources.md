@@ -1,10 +1,10 @@
 The Mixed Reality Toolkit's an open-source toolkit, which can be imported into your Unity mixed reality project. Although you could create Windows Mixed Reality apps without the Mixed Reality Toolkit, consider importing the toolkit to accelerate your development. Here you'll learn about the contents of the Mixed Reality Toolkit.
 
-## What is the Mixed Reality Toolkit?
+## What is the mixed reality toolkit?
 
 The MRTK v2 with Unity is an open-source cross-platform development kit for mixed reality applications. MRTK version 2 is intended to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. Android and iOS device support is also available.
 
-## MRTK Unity
+## MRTK unity
 
 MRTK-Unity is a Microsoft-driven project that provides a set of components and features, used to accelerate cross-platform MR app development in Unity. Here are some of its functions:
 
@@ -18,7 +18,7 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
   * OpenVR headsets (HTC Vive / Oculus Rift)
   * Ultra leap Hand Tracking
 
-## MRTK Unity Foundation Package
+## MRTK unity foundation package
 
 MRTK provides four MRTK Unity packages which can be imported into your Unity project. The latest version of the packages can be found in the Mixed Reality Feature Tool. The **Mixed Reality Toolkit Foundation** package is the only **required package** that must be imported and configured to use MRTK with your project. You can use Mixed Reality Toolkit Foundation 2.5.x or newer. This package includes the core components required to create a mixed reality application.
 
@@ -34,16 +34,16 @@ The **Main Camera** object is moved as a child to the **MixedRealityPlayspace** 
 > [!NOTE]
 > The Mixed Reality Feature Tool enables developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing. If you've never worked with a manifest file before, it's a JSON file containing all your projects packages. Once you've validated the packages you want, the Mixed Reality Feature tool will download them into the project of your choice.
 
-## Configuration Profile
+## Configuration profile
 
 One of the main ways that MRTK is configured is through the many profiles available in the Foundation package. Profiles configure the behavior of MRTK core components. The **MixedRealityToolkit** object contains the active profile and can be viewed in the Inspector window. When MRTK is added to the scene, the **DefaultMixedRealityToolkitConfigurationProfile** is preselected.
 
 MRTK provides additional default profiles, which cover most platforms and scenarios that MRTK supports. Because **DefaultMixedRealityToolkitConfigurationProfile** is a general use profile, it'sn't optimized for any particular use case. If you want to use settings optimized for a specific platform, consider selecting the respective default profile.
 
-## How are Configuration Profiles organized
+## How are configuration profiles organized
 
 there's essentially an entire tree of connected profiles that make up the configuration information for how to start the MRTK subsystems and features. The top-level MRTK Configuration Profile contains sub-profile data for each of the primary core systems. Each primary core system is designed to configure the behavior of their corresponding subsystems. Furthermore, these sub-profiles can contain references to other profile objects one level below them.
 
-## How to customize and configure the default MRTK Profiles
+## How to customize and configure the default MRTK profiles
 
 The default MRTK profiles can't be modified. Instead, you must clone the profile if you would like to make a change. Cloning an MRTK profile creates a new profile with the same settings and assigns the profile as the Configuration Profile for the scene. Given the format of how Configuration Profiles are organized, you must also clone the sub-profiles if you would like to modify sub-profile settings.

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.learn-introduction-tutorials-mrtk.1-2-configure-unity-for-windows-mixed-reality
-title: Configure Unity for Windows Mixed Reality
+title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit
 metadata:
-  title:  Configure Unity for Windows Mixed Reality
+  title:  Set up a mixed reality project in Unity with the Mixed Reality Toolkit
   description: Introduction for Configure Unity for Windows Mixed Reality
   ms.date: 09/09/2021
   author: Sean-Kerawala
