@@ -3,7 +3,7 @@ uid: learn.wwl.prepare-data-for-machine-learning-azure-databricks
 metadata:
   title: Prepare data for machine learning with Azure Databricks
   description: "Prepare data for machine learning with Azure Databricks"
-  ms.date: 08/20/2021
+  ms.date: 09/18/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
   - Perform data encoding
 prerequisites: |
   Before starting this module, you should have some experience of using Python to train machine learning models using a framework such a Scikit-Learn.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/prepare-data-for-machine-learning-with-azure-databricks.svg
 levels:
 - intermediate
 roles:

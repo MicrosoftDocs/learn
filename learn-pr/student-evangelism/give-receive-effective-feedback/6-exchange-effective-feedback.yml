@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.give-receive-effective-feedback.exchange-effective-feedback
-title: Examine strategies to exchange effective feedback
+title: Develop strategies for giving and receiving effective feedback
 metadata:
-  title: Examine strategies to exchange effective feedback
-  description: This unit examines various strategies to exchange effective feedback. How to give and receive feedback and it's also looking to guide mentors and managers in feedback giving.
+  title: Develop strategies for giving and receiving effective feedback
+  description: This unit offers mentors and managers various strategies for giving and receiving effective feedback.
   ms.date: 09/07/2021
   author: interurban
   ms.author: jadenyer
@@ -14,14 +14,14 @@ content: |
   [!include[](includes/6-exchange-effective-feedback.md)]
 quiz:
   questions:
-    - content: "Which of the following tips can reviewers follow while providing feedback?"
+    - content: "Which one of the following tips should you follow when you provide feedback?"
       choices:
         - content: "Be inclusive, positive, and constructive."
           isCorrect: true
-          explanation: "Correct. Effective feedback should be inclusive, positive, and constructive so that the person feels encouraged and motivated to try harder and perform better."
-        - content: "Provide their own perspective on the experience."
+          explanation: "Correct. Effective feedback should be inclusive, positive, and constructive so that recipients feel encouraged and motivated to try harder and perform better."
+        - content: "Provide your own perspective about the experience."
           isCorrect: false
-          explanation: "Incorrect. It is more important to consider the other person’s perspective while providing feedback as that indicates understanding and empathy."
-        - content: "Offer to complete the program coding themselves."
+          explanation: "Incorrect. Considering your feedback recipient's perspective rather than your own helps project understanding and empathy."
+        - content: "Offer to fix the incorrect coding yourself."
           isCorrect: false
-          explanation: "Incorrect. By correcting the errors and finishing the task themselves, reviewers are not providing the person an opportunity to learn from mistakes and improve their skills."
+          explanation: "Incorrect. By correcting feedback recipients' errors and finishing the task yourself, you're not giving them an opportunity to learn from their mistakes and improve their skills."

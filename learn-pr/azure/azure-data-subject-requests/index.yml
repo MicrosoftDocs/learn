@@ -19,7 +19,7 @@ abstract: |
   - How to use a DSR for consumer data and logs.
 prerequisites: |
   - Basic experience with Azure services
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-data-subject-requests.svg
 levels:
 - beginner
 roles:
