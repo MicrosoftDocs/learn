@@ -12,7 +12,7 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
 
    The **Create a resource** pane appears.
 
-1. In the left menu pane, under **Categoris**, select **Databases**, and then select **Azure Cosmos DB**.
+1. In the left menu pane, under **Categories**, select **Databases**, and then select **Azure Cosmos DB**.
 
    ![Select Azure Cosmos DB.](../media/4-select-database-azure-cosmos-db.png)
 
@@ -52,7 +52,7 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
 
 1. In the Azure Cosmos DB account left menu pane, select **Data Explorer**. The **Data Explorer** pane appears.
 
-1. In the upper taske bar, select **New Graph**. The **New Graph** pane appears.
+1. In the upper task bar, select **New Graph**. The **New Graph** pane appears.
 
 1. Enter the following values for each setting to build your new graph. Take note of the values that you choose for the **Database id** and **Graph id**. You'll use these values when you create your application in the next section.
 
