@@ -45,7 +45,7 @@ its **Transform** component as follows
     Using the Unity in-editor input simulation, press the space bar on your keyboard to simulate hand input with the right hand.
     :::image type="content" source="../media/move-cube.gif" alt-text="Screenshot of Move the cube." lightbox="../media/move-cube.gif":::
 
-## Build your application to holoLens 2
+## Build your application to HoloLens 2
 
 ## 1. Build the unity project
 
