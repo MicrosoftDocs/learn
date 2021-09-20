@@ -36,7 +36,7 @@ Participating and collaborating in student organizations will help you develop i
 
 The Student Ambassadors are a global community of like minded students that share a passion for technology and making an impact. You’ll find a diverse and inclusive group that is focused on socially significant issues and technologies, Microsoft experts and mentors who can offer guidance, and resources to help you learn the skills that will help you land your dream job and create opportunities for others. 
 
-:::image type="content" source="../media/ambassador1.png" alt-text="network with your peers":::
+:::image type="content" source="../media/ambassador-1.png" alt-text="network with your peers":::
 
 The reasons to join are many:
 
@@ -48,7 +48,7 @@ The reasons to join are many:
 
 What you'll do:
 
-:::image type="content" source="../media/ambassador2.png" alt-text="Educate your community":::
+:::image type="content" source="../media/ambassador-2.png" alt-text="Educate your community":::
 
 - **Host events**: Host tech events with other student ambassadors but also with folks at Microsoft. Ambassadors have been known to participate as speakers for things like Learn live, Microsoft Ignite, and Microsoft Reactor events.
 
