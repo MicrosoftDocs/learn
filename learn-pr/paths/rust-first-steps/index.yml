@@ -34,7 +34,6 @@ products:
 modules:
 - learn.language.rust-introduction
 - learn.language.rust-set-up-environment
-# learn.language.rust-understand-common-concepts
 - learn.language.rust-create-program
 - learn.language.rust-if-else-expressions
 - learn.language.rust-loop-expressions
