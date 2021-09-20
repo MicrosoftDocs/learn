@@ -49,7 +49,7 @@ In the above example, the `{favorite}` parameter is required. To make the route 
 	
 	protected override void OnInitialized()
 	{
-		Favorite = Favorite ?? "Fiorentina";
+		Favorite ??= "Fiorentina";
 	}
 }
 ```
