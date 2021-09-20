@@ -36,14 +36,14 @@ quiz:
         - content: "SynchronizationContext"
           isCorrect: false
           explanation: "The `SynchronizationContext` provides the basic functionality for propagating a synchronization context in various synchronization models, but is not related to SignalR."
-    - content: "When the server supports WebSockets, but the connected client only supports Long Polling which transport is used?"
+    - content: "When the server supports WebSockets, but the client only supports Long Polling which transport is used?"
       choices:
         - content: "WebSockets"
           isCorrect: false
-          explanation: "If the connected client doesn't support WebSockets, graceful fallback attempts Server-Sent Events then Long Polling."
+          explanation: "If the client doesn't support WebSockets, graceful fallback attempts Server-Sent Events then Long Polling."
         - content: "Server-Sent Events"
           isCorrect: false
-          explanation: "If the connected client doesn't support WebSockets or Server-Sent Events, then only Long Polling is available."
+          explanation: "If the client doesn't support WebSockets or Server-Sent Events, then only Long Polling is available."
         - content: "Long Polling"
           isCorrect: true
           explanation: "Long Polling is used since its the lowest common denominator of potential transports."

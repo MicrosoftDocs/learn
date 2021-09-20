@@ -26,6 +26,8 @@ The server is responsible for exposing an endpoint. The endpoint maps to a <xref
 
 SignalR uses *hubs* to communicate between clients and servers. A hub is a high-level pipeline that allows a client and server to call methods on each other. SignalR handles the dispatching across machine boundaries automatically, allowing clients to call methods on the server and vice versa. You can think of a hub as a proxy betwixt all connected clients and the server.
 
+- <xref:Microsoft.AspNetCore.SignalR.Hub?displayProperty=nameWithType>
+
 #### Protocols
 
 SignalR provides two built-in hub protocols:
@@ -33,14 +35,21 @@ SignalR provides two built-in hub protocols:
 - A text protocol based on JSON (default)
 - A binary protocol based on *MessagePack* (*MessagePack* generally creates smaller messages compared to JSON).
 
-> [!NOTE]
-> There is a third hub protocol named *BlazorPack*, but it is used exclusively with Blazor-Server applications. It cannot be used *without* the Blazor-Server hosting model.
+In order to use the *MessagePack* protocol, both server and client need to opt-in to configuring it. There is a third hub protocol named *BlazorPack*, but it is used exclusively with Blazor-Server applications. It cannot be used *without* the Blazor-Server hosting model.
 
 For more information, see the official specification for [SignalR Hub Protocol](https://github.com/dotnet/aspnetcore/blob/068797e16a1bfe66461e15c8a2ffa864369d384d/src/SignalR/docs/specs/HubProtocol.md).
 
 ### Clients
 
-The client is responsible for establishing a connection to the server's endpoint through a `HubConnection`. With a hub connection instance that's started successfully, messages flow freely in both directions. Users are free to communicate notifications to the server, as well as receive notifications from the server. Clients are *not* limited to web browsers. For more information, see [ASP.NET Core SignalR supported platforms](/aspnet/core/signalr/supported-platforms).
+The client is responsible for establishing a connection to the server's endpoint through a `HubConnection`. The hub connection object is represented within each target platform:
+
+- [.NET Client](xref:signalr/dotnet-client): <xref:Microsoft.AspNetCore.SignalR.Client.HubConnection?displayProperty=nameWithType>
+- [JavaScript Client](xref:signalr/javascript-client): <xref:@microsoft/signalr.HubConnection?displayProperty=nameWithType>
+- [Java Client](xref:signalr/java-client): <xref:com.microsoft.signalr.HubConnection?displayProperty=nameWithType>
+
+For more information, see [ASP.NET Core SignalR supported platforms](/aspnet/core/signalr/supported-platforms).
+
+With a hub connection instance that's started successfully, messages flow freely in both directions. Users are free to communicate notifications to the server, as well as receive notifications from the server. Clients are *not* limited to web browsers.
 
 #### Users
 

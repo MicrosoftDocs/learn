@@ -1,5 +1,4 @@
 var builder = WebApplication.CreateBuilder(args);
-
 var (services, configuration) = (builder.Services, builder.Configuration);
 
 services.AddCors(

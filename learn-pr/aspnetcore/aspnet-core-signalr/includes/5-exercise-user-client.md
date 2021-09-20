@@ -4,7 +4,7 @@ Here, you will create an ASP.NET Core Blazor WebAssembly project that will act a
 
 ## New Blazor WebAssembly project
 
-ASP.NET Core Blazor WebAssembly can be deployed as a static web application, and as a progressive web application (PWA). It offers many benefits, and simplifies .NET web development. The web application will use a `HubConnection` object instance to establish a connection to the server, thus enabling real-time functionality.
+ASP.NET Core Blazor WebAssembly can be deployed as a static web application, and as a progressive web application (PWA). It offers many benefits, and simplifies .NET web development. The web application will use a `HubConnection` instance to establish a connection to the server, thus enabling real-time functionality.
 
 Open the [**Integrated Terminal** in Visual Studio Code](https://code.visualstudio.com/docs/editor/integrated-terminal), and run the following command:
 
@@ -41,7 +41,7 @@ Our client application needs to rely on the shared models project, to understand
     dotnet add SignalR.Client/SignalR.Client.csproj package Microsoft.AspNetCore.SignalR.Client
     ```
 
-1. Add the `Microsoft.AspNetCore.SignalR.Protocols.MessagePack` NuGet package reference to the `SignalR.Server` project:
+1. Add the `Microsoft.AspNetCore.SignalR.Protocols.MessagePack` NuGet package reference to the `SignalR.Client` project:
 
     ```dotnetcli
     dotnet add SignalR.Client/SignalR.Client.csproj package Microsoft.AspNetCore.SignalR.Protocols.MessagePack

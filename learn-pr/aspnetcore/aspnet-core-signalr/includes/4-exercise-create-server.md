@@ -1,6 +1,6 @@
 An ASP.NET Core Minimal API application will be our server app. Recall that the notification system needs to function for all employees in the warehouse. There were a fey requirements for this implementation: real-time functionality, and connectivity regardless of client app type.
 
-Here, you will create two projects. The first is a shared class library that will hold the abstractions that can later be shared with clients. The second is an ASP.NET Core Minimal API app that maps the notification hub to an endpoint.
+Here, you will create two projects. The first is a shared class library that will hold the abstractions that can be shared with .NET clients. The second is an ASP.NET Core Minimal API app that maps the notification hub to an endpoint.
 
 ## New shared project
 
@@ -68,6 +68,12 @@ The template is a great starting point, but we'll need to add a bit more functio
 
     ```dotnetcli
     dotnet add SignalR.Server/SignalR.Server.csproj reference SignalR.Models/SignalR.Models.csproj
+    ```
+
+1. Add the `Microsoft.AspNetCore.SignalR.Protocols.MessagePack` NuGet package reference to the `SignalR.Server` project:
+
+    ```dotnetcli
+    dotnet add SignalR.Client/SignalR.Server.csproj package Microsoft.AspNetCore.SignalR.Protocols.MessagePack
     ```
 
 ## Check your work
