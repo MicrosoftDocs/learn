@@ -1,8 +1,8 @@
 The Azure Functions Core Tools let you develop and run functions on your local computer from the command line.
 
-You've decided you'd like to try building your first function, the simple interest calculator, by developing it locally on your own computer and not in the Azure portal's functions editor. You aren't sure whether you want to use a development environment like Visual Studio or Visual Studio Code that can be extended to support Azure Functions directly, so you'll use the Core Tools from the command line and a basic text editor.
+You've decided you'd like to try building your first function, a simple interest calculator, by developing it locally on your own computer and not in the Azure portal's functions editor. You aren't sure whether you want to use a development environment like Visual Studio or Visual Studio Code, both of which can be extended to support Azure Functions directly, so you decide to use the Core Tools from the command line and a basic text editor.
 
-Here, you'll learn how to use the Core Tools to create and run functions locally.
+In this module, you'll learn how to use the Core Tools to create and run functions locally. Let's learn more about Core Tools before we use them in the exercise in the next unit, which walks you through these concepts using the Azure Cloud Shell.
 
 ## What are the Azure Functions Core Tools?
 
@@ -24,25 +24,29 @@ Other Functions development tools, such as the Functions-related features in Vis
 
 ### Core Tools versions
 
-In other documentation, you may see references to two different versions of the Core Tools: versions **1.x** and **2.x**. We recommend using the newest available revision of version 2.x, as it offers the best support for most scenarios, and it can be installed on Windows, macOS, and Linux computers.
+You may see references to two different versions of the Core Tools as you peruse learn content: versions **1.x** and **2.x**. We recommend using the newest available revision of version 2.x, as it offers the best support for most scenarios, and it can be installed on Windows, macOS, and Linux computers.
 
-We'll be discussing and using version 2.x in this tutorial, but you won't need to install anything on your own computer to complete it. We'll use the in-browser Cloud Shell environment for development, and the Core Tools are already installed there, along with the Azure CLI and a code editor.
+We'll be discussing and using version 2.x throughout this tutorial, but you won't need to install anything on your own computer. This tutorial uses the in-browser Cloud Shell environment, and Core Tools are already installed, along with the Azure CLI and a code editor.
 
 ### Local development vs. Azure portal development
 
-The Azure portal features a functions editor experience, but in most cases it does not support working with functions that were developed locally. Once you start using a local development workflow based on the Core Tools, don't expect to be able to use the portal to make changes to your functions.
-
-Let's start with the Core Tools by taking a closer look at how to create functions and run them locally. We'll look at how to publish to Azure later on in this tutorial.
+The Azure portal has a powerful functions editor experience, but in most cases it does not support modifying functions that were developed locally. Once you start using a local development workflow based on Core Tools, don't expect to be able to use the portal to make changes to your functions.
 
 ## Create functions locally
 
+So, let's take a closer look at how to create functions with Core Tools and run them locally. We'll look at how to publish to Azure later on in this tutorial.
+
+Here are some fundamental concepts about functions.
+
 ### Function apps and functions projects
 
-Every function published to Azure belongs to a *function app*: a collection of functions that are published together into the same environment. All of the functions in an app share a common set of configuration values, and must all be built for the same language runtime. Each function app is an Azure resource that can be configured and managed independently.
+Every function published to Azure belongs to a *function app*, which is a collection of one or more functions that are published together into the same environment. All of the functions in a function app share a common set of configuration values, and must all be built for the same language runtime. A function app is an Azure resource that can be configured and managed independently.
 
-When you develop functions locally, you work within a *functions project*: a folder that contains the code and configuration files that define your functions. A functions project on your computer is equivalent to a function app in Azure, and can contain multiple functions that use the same language runtime.
+When you develop functions locally, you work within a *functions project*, which is a folder that contains the code and configuration files that define your functions. A functions project on your computer is equivalent to a function app in Azure, and can contain multiple functions that use the same language runtime.
 
-To get started developing, you need to create a functions project folder that's organized correctly. Every new function you add to the project requires additional code and a configuration that must be complete and correctly structured, or your functions will not be able to run. If you wanted to, you could become familiar with the names and contents of the files needed in a functions project folder and create them yourself, but doing so would be time-consuming and error-prone.
+To start developing locally on your computer, you need to create a functions project folder that's organized correctly. Every new function you add to the project requires additional code and a configuration that must be complete and correctly structured, or your functions will not be able to run. 
+
+If you wanted to, you could become familiar with the names, contents, and structure of the files needed in a functions project folder and create them yourself, but doing so would be time-consuming and error-prone.
 
 With the Azure Functions Core Tools, you'll never need to do this! You can use Core Tools to generate function projects and functions from scratch.
 
