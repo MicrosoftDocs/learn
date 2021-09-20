@@ -34,7 +34,7 @@ SignalR provides two built-in hub protocols:
 - A binary protocol based on *MessagePack* (*MessagePack* generally creates smaller messages compared to JSON).
 
 > [!NOTE]
-> There is a third built-in hub protocol named *BlazorPack*, and it is used exclusively with Blazor server applications. It cannot be used without the Blazor server hosting model.
+> There is a third hub protocol named *BlazorPack*, but it is used exclusively with Blazor-Server applications. It cannot be used *without* the Blazor-Server hosting model.
 
 For more information, see the official specification for [SignalR Hub Protocol](https://github.com/dotnet/aspnetcore/blob/068797e16a1bfe66461e15c8a2ffa864369d384d/src/SignalR/docs/specs/HubProtocol.md).
 

@@ -1,80 +1,81 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+ASP.NET Core SignalR [supports several platforms](xref:signalr/supported-platforms), enabling clients for nearly every scenario. To make use of the `SignalR.Models` library we created earlier, let's use .NET as our platform.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+Here, you will create an ASP.NET Core Blazor WebAssembly project that will act as a client. This web application can be accessed by all of the employees, from anywhere within the warehouse.
 
-    Heading: none
+## New Blazor WebAssembly project
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+ASP.NET Core Blazor WebAssembly can be deployed as a static web application, and as a progressive web application (PWA). It offers many benefits, and simplifies .NET web development. The web application will use a `HubConnection` object instance to establish a connection to the server, thus enabling real-time functionality.
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Open the [**Integrated Terminal** in Visual Studio Code](https://code.visualstudio.com/docs/editor/integrated-terminal), and run the following command:
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+```dotnetcli
+dotnet new blazorwasm -n SignalR.Client
+```
 
-    Goal: Describe the part of the scenario covered in this exercise
+## Remove unnecessary parts
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+The template for the client application has a few things we do *not* need, so let's start by deleting them.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+1. Delete the *sample-data* folder, which contains the *weather.json*.
+1. Delete the *SurveyPrompt.razor* component, in the *Shared* folder.
+1. Delete the reference to the `SurveyPrompt` component, in the *Pages/Index.razor* file.
+1. Ensure that the application still compiles, but running the following command:
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+    ```dotnetcli
+    dotnet build SignalR.Client/SignalR.Client.csproj
+    ```
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+## Add references
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+Our client application needs to rely on the shared models project, to understand the shape of the notifications. Additionally, the client needs to reference the SignalR client SDK and corresponding MessagePack protocol package.
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+1. Add the `SignalR.Models` as a project reference to the `SignalR.Server` project:
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+    ```dotnetcli
+    dotnet add SignalR.Client/SignalR.Client.csproj reference SignalR.Models/SignalR.Models.csproj
+    ```
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+1. Add the `Microsoft.AspNetCore.SignalR.Client` NuGet package reference to the `SignalR.Server` project:
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+    ```dotnetcli
+    dotnet add SignalR.Client/SignalR.Client.csproj package Microsoft.AspNetCore.SignalR.Client
+    ```
 
-    Goal: List the steps they'll do to complete the exercise.
+1. Add the `Microsoft.AspNetCore.SignalR.Protocols.MessagePack` NuGet package reference to the `SignalR.Server` project:
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+    ```dotnetcli
+    dotnet add SignalR.Client/SignalR.Client.csproj package Microsoft.AspNetCore.SignalR.Protocols.MessagePack
+    ```
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+## Repurpose the `FetchData` component
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+The `FetchData` component will be repurposed, to serve as our notifications page.
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. Rename the *FetchData.razor* file to *Notifications.razor*.
+1. Replace the contents of the *Notifications.razor* with the following Razor markup:
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+    :::code source="../code/src/SignalR.Client/Pages/Notifications.razor":::
+
+1. Create a new C# file named *Notifications.razor.cs*, which will shadow the Razor component markup.
+1. Replace the contents of the *Notifications.razor.cs* with the following C# code:
+
+    :::code source="../code/src/SignalR.Client/Pages/Notifications.razor.cs":::
+
+1. Update the *NavMenu.razor* markup, replacing the entire `<NavLink href="fetchdata">` element node with the following Razor markup:
+
+    ```razor
+    <NavLink class="nav-link" href="notifications">
+        <span class="oi oi-bolt" aria-hidden="true"></span> Notifications
+    </NavLink>
+    ```
 
 <!-- 5. Validation chunk -------------------------------------------------------------------------------------
+
+1. Add the `SignalR.Models` as a project reference to the `SignalR.Server` project:
+
+    ```dotnetcli
+    dotnet add SignalR.Server/SignalR.Server.csproj reference SignalR.Models/SignalR.Models.csproj
+    ```
 
     Goal: Helps the learner to evaluate if they completed the exercise correctly.
 
