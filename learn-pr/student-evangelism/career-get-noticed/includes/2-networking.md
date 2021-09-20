@@ -34,26 +34,31 @@ Participating and collaborating in student organizations will help you develop i
 
 ### Join the Microsoft LEARN student ambassador program
 
-The student ambassadors are globally distributed cohort of more than 5000 individuals and growing year over year. It has sometimes been known as the _MVP program for students_, just to give you an idea of what it does.
+The Student Ambassadors are a global community of like minded students that share a passion for technology and making an impact. You’ll find a diverse and inclusive group that is focused on socially significant issues and technologies, Microsoft experts and mentors who can offer guidance, and resources to help you learn the skills that will help you land your dream job and create opportunities for others. 
 
 :::image type="content" source="../media/ambassador1.png" alt-text="network with your peers":::
 
-The reason to join are many:
+The reasons to join are many:
 
-- **Make a difference:** Connect with other students who share your passion in focused Leagues and use tech to solve real-world challenges together.
-- **Grow your skills:** Kick-start your career with training and certifications, support for virtual events, and unique access to experts and mentors.
-- **Become a leader in your local tech community:** Host digital events, offer guidance to other students, and earn recognition that separates your résumé from the pack.
+- **Make a difference**: Connect with other students who share your passion in focused Leagues and use tech to solve real-world challenges together.
+
+- **Grow your skills**: Kick-start your career with training and certifications, support for virtual events, and unique access to experts and mentors.
+
+- **Become a leader in your local tech community**: Host digital events, offer guidance to other students, and earn recognition that separates your resume from the pack. 
 
 What you'll do:
 
 :::image type="content" source="../media/ambassador2.png" alt-text="Educate your community":::
 
-- **Host events**: Host tech events with other student ambassadors but also with folks at Microsoft. Ambassadors have been known to participate as speakers for things like LEARN Live, Microsoft Ignite and many other events.
-- **Create content**: You will create various content like blog posts, videos, and even [LEARN modules](aka.ms/learn).
-- **Build your network**: Collaborate with your student ambassadors peers and Microsoft employees.
-- **Participate in mentoring sessions**: Get guidance on your career and your resume among other things.
+- **Host events**: Host tech events with other student ambassadors but also with folks at Microsoft. Ambassadors have been known to participate as speakers for things like Learn live, Microsoft Ignite, and Microsoft Reactor events.
 
- [Apply as Microsoft LEARN Student Ambassador](https://studentambassadors.microsoft.com/en-US/apply) it might be the best decision you ever make, to take your career into a place you never thought possible.
+- **Create content**: You will create various content like blog posts, videos and even [Learn modules](https://aka.ms/learn).
+
+- **Build your network**: Collaborate with your student ambassadors' peers and Microsoft employees.
+
+- **Participate in mentoring sessions**: Get guidance on tech skills, your resume, and the next steps as you prepare for your career.
+
+[Apply to become a Microsoft Learn Student Ambassador](https://studentambassadors.microsoft.com/apply) — new students are accepted quarterly.
 
 ### Collaborate in open-source projects that interest you
 
@@ -67,25 +72,28 @@ Hackathons are reliable opportunities to network with peers and meet representat
 
 ### Participate in Microsoft Imagine Cup
 
-Microsoft Imagine Cup is the biggest Hackathon in the world. Every year, more than 2 million student from over 100 countries participate to create the most innovative solutions and life changing solutions.
+Microsoft Imagine Cup is a global technology competition just for students. Over the twenty-year history, over 2 million students from more than 160 countries have participated to create innovative and life changing solutions. Some have even turned their projects into a business.
 
 :::image type="content" source="../media/imaginecup.png" alt-text="Dream it, build it, live it, Imagine Cup":::
 
 Why participate:
-- **Shape our world**. The ideas you come up with can change and shape our world. 2021 years finalists addressed everything from child mortality to live stock monitoring.
-- **Nurture your curiosity**. Participating might be just the motivation to learn more tech and more about the area you are passionate about.
-- **Realize your passion**. The best ideas are the ones that are built. Don't let your great ideas stay in your head, realize it, who knows, you might win.
 
-You could win:
+- **Shape our world**. Reimagine solutions to solve pressing community challenges and create a project to take forward in your career portfolio. Finalists in the 2021 competition addressed everything from child mortality to livestock monitoring. 
+
+- **Nurture your curiosity**. Learn more about an area you’re passionate about and unlock curated training and mentorship from Microsoft experts.
+
+- **Realize your passion**. The best ideas are the ones that are built. Transform your ideas into solutions with help along the way.  You never know, your idea could be the winning project.  
+
+You could win: 
 
 - Mentorship from Microsoft experts
 - Networking with industry pros
 - The chance to showcase your idea
-- Cash to continue taking your project to next level
+- Cash and Azure credit to continue taking your project to next level
 
-Learn more about 2021 years winner [team Reweba](https://imaginecup.microsoft.com/en-us/Team/6a97eb39-e9d5-4b3f-8c78-14d372c70f17) - this could be you.
+:::image type="content" source="../media/team-reweba.png" alt-text="Team Reweba, winning team 2021":::
 
-:::image type="content" source="../media/imaginecup2.png" alt-text="2021 winner, Team Reweba":::
+*Learn more about 2021 years winner [team Reweba](https://imaginecup.microsoft.com/en-us/Team/6a97eb39-e9d5-4b3f-8c78-14d372c70f17) - this could be you.*
 
 Register for [Imagine cup 2022](https://imaginecup.microsoft.com/category/register/22) 
 
