@@ -44,7 +44,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Enable hierarchical namespace | *Uncheck*. This is for big-data applications that aren't relevant to this module. |
     | **Blob storage** | |
     | Enable network file share | *Uncheck* (default). |
-    | Allow cross-tenant replication | *Unheck*. Active Directory is not checking user access. |
+    | Allow cross-tenant replication | *Uncheck*. Active Directory is not checking user access. |
     | Access tier | *Hot*. This setting is only used for Blob storage. The *Hot* access tier is ideal for frequently accessed data; the *Cool* access tier is better for infrequently accessed data. This setting only sets the _default_ value. When you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so we'll use the high-performance option for our blobs. |
     | **Azure Files**| |
     | Enable large file shares | *Uncheck*. Large file shares provide support up to a 100 TiB, however this type of storage account can't convert to a Geo-redundant storage offering, and upgrades are permanent. |
