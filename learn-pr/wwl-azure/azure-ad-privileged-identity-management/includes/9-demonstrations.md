@@ -47,7 +47,7 @@ In this task, we will add the Billing Administrator role to PIM.
 
 **Activate a role**
 
-In this task, we will activate the Billing Adminstrator role. 
+In this task, we will activate the Billing Administrator role. 
 
 1. In the **Portal**, search for and select **Azure Active Directory**.
 1. Under **Manage** click **Users**.
