@@ -2,7 +2,7 @@ In this module, you've learned how to enable eye-tracking for HoloLens 2 and add
 
 Including voice commands and eye-tracking can benefit some applications and some users, reducing the movement required for interactions.
 
-## Next Steps
+## Next steps
 
 You can continue to add eye-tracking and voice commands to your applications. Consider trying following interactions:
 
@@ -10,8 +10,8 @@ You can continue to add eye-tracking and voice commands to your applications. Co
 * Change the color of an object by saying "Change color"
 * Add multiple voice commands on a single object.
 
-## Further Reading
+## Further reading
 
-* Learn more about [Eye-Tracking](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-basic-setup)
+* Learn more about [Eye-Tracking](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-basic-setup)
 
-* Learn more about [Voice Commands](https://docs.microsoft.com/windows/mixed-reality/design/voice-input)
+* Learn more about [Voice Commands](/windows/mixed-reality/design/voice-input)
