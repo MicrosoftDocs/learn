@@ -14,7 +14,7 @@ We'll start by creating a web app to monitor. Follow these steps:
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the *Search services and marketplace* search box, enter **Web App**, and press <kbd>Enter</kbd>.
+1. In the *Search services and marketplace* search box, enter *Web App*, and press <kbd>Enter</kbd>.
 
 1. In the list of results, select **Web App**. The **Web App** from Microsoft appears.
 
@@ -84,7 +84,7 @@ Because you can inject the Application Insights JavaScript SDK into the video we
 
 1. If the web app's pane isn't already visible, in the Azure portal, search for and select the App Service you created earlier. Your **App Service** pane appears.
 
-1. In the left menu pane, under **Settings**, select **Configuration**. The **Configuration** pane appears for yoru *App Service*. You will be on the **Application settings** tab.
+1. In the left menu pane, under **Settings**, select **Configuration**. The **Configuration** pane appears for your *App Service*. You will be on the **Application settings** tab.
 
 1. Under **Application settings**, select **New application setting**.
 

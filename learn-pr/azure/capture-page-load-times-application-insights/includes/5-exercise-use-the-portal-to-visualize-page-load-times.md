@@ -15,7 +15,7 @@ To generate some data to view in Application Insights, we'll simulate some user 
 
 1. Switch back to the browser tab that displays the Azure portal. On the **Overview** page, in the top menu bar, select **Refresh**. The charts on this page should show some requests and responses.
 
-1. On the **Overview** page, select the **Application Insights** box. The **Application Insights** pane appaears for your *App Service*.
+1. On the **Overview** page, select the **Application Insights** box. The **Application Insights** pane appears for your *App Service*.
 
 1. Select **View Application Insights data**. The portal displays the **Application Insights** resource.
 
@@ -35,11 +35,11 @@ Now you'll examine page load times for the previous thirty minutes in a scatter 
 
     The **Application Insights** pane appears.
 
-1. In the left menu pane, under **Monitoring**, select **Metrics**. The **Metrics** pane appears for your *Applicaiton Insights*.
+1. In the left menu pane, under **Monitoring**, select **Metrics**. The **Metrics** pane appears for your *Application Insights*.
 
 1. In the top menu bar to the far right, select **Last 24 hours (Automatic)**.
 
-1. In the dropddown dialog box, select **Last 30 minutes** and then select **Apply**.
+1. In the dropdown dialog box, select **Last 30 minutes** and then select **Apply**.
 
 1. In the **Metric Namespace** dropdown list, under **STANDARD**, select **Application Insights standard metrics**.
 
