@@ -90,7 +90,8 @@ In this exercise you'll add a new order detail page that makes use of route para
         {
           try
           {
-              orderWithStatus = await HttpClient.GetFromJsonAsync<OrderWithStatus>(NavigationManager.BaseUri + $"orders/{OrderId}");
+              orderWithStatus = await HttpClient.GetFromJsonAsync<OrderWithStatus>(
+                  $"{NavigationManager.BaseUri}orders/{OrderId}");
           }
           catch (Exception ex)
           {
