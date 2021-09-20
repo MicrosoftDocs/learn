@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Test your Bicep code by using Azure Pipelines
   description: Build a deployment pipeline for Bicep infrastructure as code templates. Lint, validate, preview, and test your Bicep code by using Azure DevOps and Azure Pipelines.
-  ms.date: 09/08/2021
+  ms.date: 09/15/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
@@ -35,7 +35,7 @@ prerequisites: |
   - The [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines)
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version
   - [Git](https://git-scm.com/download?azure-portal=true)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/bicep/test-bicep-code-using-azure-pipelines.svg
 levels:
   - intermediate
 roles:
