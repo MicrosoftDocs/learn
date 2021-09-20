@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.career-growth.networking
-title: Use networking to land a job 
+title: Apply networking skills to land a job 
 metadata:
   unitType: learning-content
-  title: Use networking to land a job
+  title: Apply networking skills to land a job
   description: Learn network strategies to growth-hack your career.
   ms.date: 08/23/2021
   author: jlooper 
@@ -17,10 +17,10 @@ quiz:
   questions:
   - content: "Networking strategies include:"
     choices:
-    - content: "Meetups and Conferences"
+    - content: "Attending external meetups and conferences"
       isCorrect: false
       explanation: "This is a good external method of networking, but there are others."
-    - content: "ERGs or Employee Groups"
+    - content: "Joining internal ERGs or employee groups"
       isCorrect: false
       explanation: "This is a good internal networking method, but there are others."
     - content: "All of the above"

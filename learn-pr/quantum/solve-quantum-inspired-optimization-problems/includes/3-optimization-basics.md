@@ -5,7 +5,7 @@ To understand optimization problems, you first need to learn some terminology:
 
 Together, the cost function and the search space are often referred to as an *optimization landscape*. In the case of a problem that involves two continuous variables, the analogy to a landscape is quite direct.
 
-Let's explore a few landscapes and see which are good candidates for QIO.
+Let's explore a few landscapes and see which are good candidates for quantum-inspired optimization.
 
 ## A single, smooth landscape
 
@@ -13,11 +13,11 @@ Consider the following plot of a cost function, which looks like a single, smoot
 
 ![A plot of an optimization landscape that looks like a single smooth valley.](../media/plot-simple.png)
 
-This kind of problem is easily solved with techniques such as *gradient descent*, where you begin from an initial starting point and greedily move to any solution with a lower cost. After a few moves, the solution converges to the *global minimum*. The global minimum is the lowest point in the optimization landscape. QIO offers no advantages over other techniques to solve these straightforward problems.
+This kind of problem is easily solved with techniques such as *gradient descent*, where you begin from an initial starting point and greedily move to any solution with a lower cost. After a few moves, the solution converges to the *global minimum*. The global minimum is the lowest point in the optimization landscape. Quantum-inspired optimization offers no advantages over other techniques to solve these straightforward problems.
 
 ## A structured, rugged landscape
 
-QIO works best with problems where the landscape is rugged, with many hills and valleys. Here's an example that considers two continuous variables:
+Quantum-inspired optimization works best with problems where the landscape is rugged, with many hills and valleys. Here's an example that considers two continuous variables:
 
 ![A plot of an optimization landscape that shows many peaks and valleys.](../media/plot-rugged.png)
 
@@ -55,8 +55,8 @@ You might also have come across problems referred to as *Ising* problems. It's s
 
 ![A summary that shows how a complex, structured landscape works best for Q I O.](../media/plot-summary.png)
 
-To summarize, here are the necessary conditions for QIO to perform well, compared to other classical optimization algorithms:
+To summarize, here are the necessary conditions for quantum-inspired optimization algorithms to perform well, compared to other classical optimization algorithms:
 
 * Optimization landscapes should be rugged but structured. Such landscapes occur frequently in real-world problems.
-* If the number of variables is too small, simplistic algorithms are already sufficient. For problems that have hundreds of variables, QIO has achieved orders of magnitude improvement over previously used methods.
+* If the number of variables is too small, simplistic algorithms are already sufficient. For problems that have hundreds of variables, quantum-inspired optimization has achieved orders of magnitude improvement over previously used methods.
 * Problem parameters that affect the chosen cost metric must be represented via the variables of a cost function. Express cost functions as polynomials over binary variables to obtain a PUBO problem.
