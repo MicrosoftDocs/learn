@@ -3,7 +3,7 @@ uid: learn.language.rust-loop-expressions.2-exercise-hash-map
 metadata:
   title: "Exercise: Use a hash map to track orders"
   description: Use what you've learned about hash maps to complete the code.
-  ms.date: 09/10/2021
+  ms.date: 09/20/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial

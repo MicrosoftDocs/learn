@@ -3,7 +3,7 @@ uid: learn.language.rust-loop-expressions.3-for-while-loop
 metadata:
   title: Use for, while, and loop expressions
   description: Learn how to use for, while, and loop expressions to iterate through data.
-  ms.date: 09/10/2021
+  ms.date: 09/20/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
