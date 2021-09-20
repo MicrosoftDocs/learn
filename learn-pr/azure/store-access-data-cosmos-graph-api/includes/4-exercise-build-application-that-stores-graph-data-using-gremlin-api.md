@@ -46,7 +46,7 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
 
    A *Deployment is in progress* notification appears, displaying the details about your new resource. It may take a few minutes to deploy your new Azure Cosmos DB account.
 
-1. When deployment is complete, a notification appears. Select **Go to resource**. Your Azure Cosmos DB account **Quick strat** pane appears.
+1. When deployment is complete, a notification appears. Select **Go to resource**. Your Azure Cosmos DB account **Quick start** pane appears.
 
 ## Add a graph
 
