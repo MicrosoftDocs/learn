@@ -6,7 +6,7 @@ Let's add support to our .NET core application to retrieve a connection string f
 
 1. Change the directory to the PhotoSharingApp directory, if you aren't already there.
 
- ```bash
+    ```bash
     cd PhotoSharingApp
     ```
 
@@ -44,13 +44,13 @@ Let's add support to our .NET core application to retrieve a connection string f
     ```
 
 1. The response is a very long connection string bounded by quotes, which looks much like the following example:
-    
+
     ```text
     "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage1ab;AccountKey=QtSCGB...7AeoW0Hw=="
     ```
-    
+
 1. Copy the connection string, and in the **appsettings.json** file in the editor, replace the <value> placeholder with this connection string. 
-    
+
 1. Press <kbd>Ctrl+S</kbd> to save the file.
 
 1. In the editor, open the project file **PhotoSharingApp.csproj**.
