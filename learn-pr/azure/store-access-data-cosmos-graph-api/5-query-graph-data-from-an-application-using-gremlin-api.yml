@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.store-access-data-cosmos-graph-api.query-graph-data-from-an-application-using-gremlin-api
-title: Query graph data from an application using gremlin api
+title: Query graph data from an application using Gremlin API
 metadata:
-  title: Query graph data from an application using gremlin api
-  description: Query graph data from an application using gremlin api
+  title: Query graph data from an application using Gremlin API
+  description: Query graph data from an application using Gremlin API
   ms.date: 05/03/2019
   author: rmcmurray
   ms.author: robmcm
