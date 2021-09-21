@@ -69,7 +69,7 @@ In this section, you will prepare the scene by adding the tutorial prefab and co
 
     :::image type="content" source="../media/configure-buttons.png" alt-text="Screenshot of Configure the buttons" lightbox="../media/configure-buttons.png":::
 
-## Connect the unity project to the azure resource
+## Connect the unity project to the Azure resource
 
 To use Azure Speech Services, you need to create an Azure resource and obtain an API key for the Speech Service. Follow the [Try the Speech service for free](/azure/cognitive-services/speech-service/get-started) instructions and make a note of your service region (also known as Location) and API key (also known as Key1 or Key2).
 

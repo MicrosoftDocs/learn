@@ -17,7 +17,7 @@ In this module, you'll explore the Azure Speech Service's intent recognition. Th
 
     :::image type="content" source="../media/assign-buttons.png" alt-text="Screenshot of Assigning each of the buttons" lightbox="../media/assign-buttons.png":::
 
-## Create the azure language understanding resource
+## Create the Azure language understanding resource
 
 In this section, you'll create an Azure prediction resource for the Language Understanding Intelligent Service (LUIS) app you'll create in the next section.
 
