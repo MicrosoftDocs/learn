@@ -106,7 +106,7 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
 
 1. In the top menu bar, select **Get function URL**.
 
-1. In the **Get function URL** dialog box, in the **Key** dropdown list, under **Function key**, select **default**. In the **URL** field,  select the **Copy to clipboard** icon. The URL will look something like this: `https://jafunctionapp.azurewebsites.net/api/HttpTrigger1?code=56/KXqbkP2Qrqqh4q6CPlDTRtQmkNg3maA1H20aRblw9v87/Wwc9ew==`
+1. In the **Get function URL** dialog box, in the **Key** dropdown list, under **Function key**, select **default**. In the **URL** field,  select the **Copy to clipboard** icon. The URL will look something like this:
 
     ```text
     https://<your-functionapp-name>.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ==

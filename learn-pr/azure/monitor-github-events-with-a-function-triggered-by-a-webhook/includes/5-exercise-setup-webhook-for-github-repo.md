@@ -28,7 +28,7 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
 
 1. On the home page, in the top menu bar, select **Settings**. The **Settings** pane appears.
 
-1. In the **Settings** side bar, select **Webhooks**. The **Webhooks** pane appears.
+1. In the **Settings** sidebar, select **Webhooks**. The **Webhooks** pane appears.
 
 1. On the top right, select **Add webhook**. GitHub may ask you to confirm your password for GitHub.
 
