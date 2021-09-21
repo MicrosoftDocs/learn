@@ -21,13 +21,13 @@ For of the demo application, you need one Blob Container to store the images.
 
 Learn more about [Azure Blob storage](/azure/storage/blobs/storage-blobs-introduction).
 
-## Prepare Azure storage
+## Prepare Azure Storage
 
 To consume the Azure storage services, you'll need an Azure storage account. To create a storage account, see [Create a storage account](/azure/storage/common/storage-account-create). To learn more about storage accounts, see [Azure storage account overview](/azure/storage/common/storage-account-overview).
 
 Once you've a storage account, you can retrieve the connection string from the **Azure portal** which will be needed in the next section of this lesson.
 
-### Optional Azure storage explorer
+### Optional Azure Storage Explorer
 
 While you can see and verify all data changes from the UI inside the application, we recommend installing [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/). This tool allows you to visually see the data in the Azure storage and is of great help when debugging and learning.
 

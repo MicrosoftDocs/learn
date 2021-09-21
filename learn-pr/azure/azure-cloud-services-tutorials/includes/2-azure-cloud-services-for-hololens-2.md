@@ -1,10 +1,10 @@
 Azure Cloud Services is an example of a Platform as a Service (PaaS). Like Azure App Service, this technology is designed to support applications that are scalable, reliable, and inexpensive to operate. In the same way that App Service is hosted on virtual machines (VMs), so too is Azure Cloud Services.
 
-## Azure storage
+## Azure Storage
 
 Azure Storage includes object, file, disk, queue, and table storage. There are also services for hybrid storage solutions, and services to transfer, share, and back up data.
 
-## Azure custom vision
+## Azure Custom Vision
 
 With Azure Custom Vision (part of the Azure Cognitive Services) you can associate to Tracked Objects a set of images, train a machine learning model on the set and detect the Tracked Object.
 
@@ -12,7 +12,7 @@ With Azure Custom Vision (part of the Azure Cognitive Services) you can associat
 
 Azure Spatial Anchors is a managed cloud service and platform that enables multi-user, spatially aware mixed reality and augmented reality (MR/AR) apps for HoloLens, iOS devices with ARKit, and Android devices with ARCore.
 
-## Azure bot service
+## Azure Bot Service
 
 Azure Bot Service is Microsoft’s artificial intelligence (AI) chatbot offered as a service on the Azure cloud service marketplace.
 

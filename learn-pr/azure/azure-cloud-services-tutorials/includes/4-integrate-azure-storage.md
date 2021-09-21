@@ -8,6 +8,6 @@ You can use Table storage to store flexible datasets like user data for web appl
 
 Azure Blob storage is Microsoft's object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn't adhere to a particular data model or definition, such as text or binary data.
 
-## Azure storage explorer
+## Azure Storage Explorer
 
 Azure Storage Explorer is an application which helps you to easily access the Azure storage account through any device on any platform, be it Windows, macOS, or Linux. You can easily connect to your subscription and manipulate your tables, blobs, queues, and files. In addition to these, you can connect to and manipulate Azure Cosmos DB Storage and Azure Data Lake Storage as well.

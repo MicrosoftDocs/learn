@@ -15,11 +15,11 @@ The user can create a **Tracked Object** to either or both associate a set of im
 * Storing a spatial location and guidance to it
 * Bot assistant to use some features via natural language
 
-## Azure cloud services
+## Azure Cloud Services
 
 You'll use the following **Azure Cloud** services to implement the above features:
 
-### Azure storage
+### Azure Storage
 
 You will use [Azure Storage](https://azure.microsoft.com/services/storage/) for the persistence solution. It allows you to store data on a table and upload large binaries like images.
 
@@ -31,7 +31,7 @@ With [Azure Custom Vision](https://azure.microsoft.com/services/cognitive-servic
 
 To store a *Tracked Object* location and give a guided directions to find it, you use [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors/).
 
-### Azure bot service
+### Azure Bot Service
 
 The application is mainly driven by traditional UI, so you use the [Azure Bot Service](https://azure.microsoft.com/services/bot-service/) to add some personality and act as a new interaction method.
 
