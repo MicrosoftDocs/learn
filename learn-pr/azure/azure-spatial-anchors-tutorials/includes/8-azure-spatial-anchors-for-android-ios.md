@@ -9,7 +9,7 @@ You may create augmented reality apps for Android smartphones with the ARCore XR
 ARKit is a high-level augmented reality development platform that allows developers to create AR Apps and Experiences by leveraging the CPU power of highly efficient yet capable iOS devices and their cameras.
 To make creating an AR experience easier, ARKit integrates device motion tracking, camera scene capture, powerful image processing, and display conveniences. Using these technologies and an iOS device's front or rear camera, you may create a variety of AR experiences.
 
-## Windows mixed reality camera setting
+## Windows Mixed Reality Camera Setting
 
 The Windows Mixed Reality camera settings provider detects the device on which the app is running and applies the relevant configuration settings based on the display (transparent or opaque). This allows the application's camera to be configured and optimized for usage in mixed reality apps using the Microsoft Mixed Reality Toolkit.
 
@@ -22,6 +22,6 @@ The Mixed Reality Toolkit input system is a modular framework that allows input 
 The Unity AR camera settings provider is a beta MRTK component that lets you run mixed reality apps on Android and iOS devices.
 The Unity AR camera settings provider offers a variety of tracking configuration options. These options are exclusive to Unity's version of the Unity AR camera settings provider.
 
-## Strip engine Code
+## Strip Engine Code
 
 Strip Engine Code is enabled by default in Unity's Player Settings, as is native code stripping. Remove unnecessary modules and classes from the native Unity engine code by enabling Strip Engine Code. To keep all of the modules in the native Unity engine code, disable Strip Engine Code.

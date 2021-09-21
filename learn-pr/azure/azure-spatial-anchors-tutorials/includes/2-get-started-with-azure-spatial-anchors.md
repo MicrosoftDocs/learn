@@ -7,7 +7,7 @@ Some use-cases of Azure Spatial Anchors include :
 
 * **Internet of Things**: Another area where the usage of spatial anchors will be highly beneficial is the Internet of Things. For example, assume you're standing in front of a piece of factory equipment equipped with several sensors. If a part has a problem, an arrow can point straight to the problem part. Thus, you can see every piece of important information quickly and just by gazing at the piece of equipment with your device on.
 
-## AR foundation
+## AR Foundation
 
 Within Unity, the AR Foundation lets you work with augmented reality systems across several platforms. This package provides an interface for Unity developers, but it doesn't include any AR functionality. On a target device, you'll also need separate packages for Unity's officially supported target platforms.
 

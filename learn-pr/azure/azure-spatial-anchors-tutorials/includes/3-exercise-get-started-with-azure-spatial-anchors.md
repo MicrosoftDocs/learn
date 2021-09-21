@@ -95,7 +95,7 @@ In this section, you'll add scripts to the scene to create a series of button ev
 
     :::image type="content" source="../media/delete-azure-anchor.png" alt-text="Screenshot of Unity with DeleteAzureAnchor button OnClick event configured" lightbox="../media/delete-azure-anchor.png":::
 
-## Connect the scene to the azure resource
+## Connect the scene to the Azure resource
 
 In the Hierarchy window, select the **ParentAnchor** object, then in the Inspector window, locate the **Spatial Anchor Manager** (Script) component. Configure the **Credentials** section with the credentials from the Azure Spatial Anchors account created as part of the Prerequisites for this tutorial series:
 
@@ -105,7 +105,7 @@ In the Hierarchy window, select the **ParentAnchor** object, then in the Inspect
 
     :::image type="content" source="../media/spatial-anchor-manager.png" alt-text="Screenshot of Unity with Spatial Anchor Manager configured" lightbox="../media/spatial-anchor-manager.png":::
 
-## Try the basic behaviors of azure spatial anchors
+## Try the basic behaviors of Azure Spatial Anchors
 
 Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to build the project and deploy the app to your device.
 

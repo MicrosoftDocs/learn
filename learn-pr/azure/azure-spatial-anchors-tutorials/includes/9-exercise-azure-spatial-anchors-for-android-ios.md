@@ -4,7 +4,7 @@ In this tutorial, you'll learn how to build your project to Android and iOS devi
 
 [!INCLUDE[](includes/install-inbuilt-unity-packages.md)]
 
-## Configure MRTK for AR foundation camera
+## Configure MRTK for AR Foundation camera
 
 In this section, you'll learn how to configure MRTK for deploying to a mobile device.
 
@@ -71,7 +71,7 @@ In this section, you'll learn how to configure your project to build and deploy 
 
     When the build process is complete, your apps should automatically load on your Android device.
 
-## Build your application to your ios device
+## Build your application to your iOS device
 
 In this section, you'll learn how to configure your project, to build and deploy it to your iOS device.
 

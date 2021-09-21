@@ -10,7 +10,7 @@ In this tutorial, you'll learn how to save Azure Spatial Anchors across multiple
 
     :::image type="content" source="../media/update-position.png" alt-text="Screenshot of updating position of ButtonParent" lightbox="../media/update-position.png":::
 
-## Persist azure spatial anchors between app sessions
+## Persist Azure Spatial Anchors between app sessions
 
 In this section, you'll learn how to save and retrieve the Azure Anchor ID to and from the HoloLens's local disk. This will allow you to query Azure for the same anchor ID between different app sessions. It will enable the anchored holograms to be positioned at the same location as in the previous app session.
 
@@ -37,7 +37,7 @@ In this section, you'll learn how to save and retrieve the Azure Anchor ID to an
     > [!Note]
     > To fully restart the app, after exiting the immersive app view, the app window in the mixed reality home needs to be closed before relaunching it from the Start menu. For additional details, you can refer to the Using apps on HoloLens documentation.
 
-## Share azure spatial anchors between devices
+## Share Azure Spatial Anchors between devices
 
 In this section, you'll learn how to share the Azure Anchor ID between multiple devices. This will allow multiple devices to query Azure for the same anchor ID, allowing the anchored holograms to be spatially aligned. Spatial alignment, i.e., seeing the same holograms in the same physical location between multiple devices, is key to local shared experiences in the HoloLens 2.
 
