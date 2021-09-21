@@ -76,7 +76,7 @@ Let's start by creating the infrastructure. We will also purposely be creating a
         --no-wait
     ```
 
-1. Dploy a virtual machine in **BackendSubnet** by running this command, replacing `<password>` with a complex password of your choice.
+1. Deploy a virtual machine in **BackendSubnet** by running this command, replacing `<password>` with a complex password of your choice.
 
     ```azurecli
     az vm create \
