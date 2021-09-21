@@ -1,6 +1,6 @@
 Knowing the number of pods and nodes is essential before we can assess how many IP addresses we need. So now that we know the number of pods and nodes, let's look at sizing the network.
 
-## Sizing the Virtual Network Subnet
+## Sizing the virtual network subnet
 
 We now know that we want a maximum of seven virtual machines for our Kubernetes cluster nodes. When you upgrade an Azure Kubernetes Service cluster, an extra node gets added to the cluster temporarily. So, we need to add that to our total and make our network sizing calculations based on eight virtual machines.
 
@@ -21,7 +21,7 @@ In this design, we've decided to stay with the default node pool configuration. 
 
 So, you can now approach the team responsible for network allocation in your organization and request a subnet supporting 248 IP addresses. When you create a subnet in an Azure Virtual Network, five IP addresses are reserved for system use. A /24 address range would have 251 usable IP addresses, which would make it a good fit for our cluster.
 
-## Selecting a Kubernetes Service Address Range
+## Selecting a Kubernetes service address range
 
 With the node and pod subnet selected there's only one more address range to select and that's the address range used by Kubernetes Services. As described previously, services provide a static virtual IP address that allows traffic to be routed to your pods. This address range is only ever used for routing traffic inside your cluster. It's never used or exposed outside of the cluster. So you need to select a private network address range that's not in use elsewhere in Azure or your on-premises networks.
 
@@ -41,7 +41,7 @@ Other services running in your cluster, such as an Ingress Controller or a Servi
 
 The service address range is only ever used within the cluster. It's safe and generally a good idea to use a fairly generous address range. A /24 address range will provide plenty of space for the cluster to work with.
 
-## Selecting a DNS Service IP address
+## Selecting a DNS service IP address
 
 Kubernetes uses a built-in DNS service to provide service discovery features within the cluster. The DNS service needs an IP address that should be within the Kubernetes Service address range described above. The only other rule is that you can't use the first IP address from the Kubernetes Service Address range. But any other value will do.
 
