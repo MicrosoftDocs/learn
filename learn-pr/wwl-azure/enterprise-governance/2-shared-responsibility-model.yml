@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.enterprise-governance.shared-responsibility-model
-title: Revew the shared responsibility model
+title: Review the shared responsibility model
 metadata:
-  title: Revew the shared responsibility model
-  description: "Revew the shared responsibility model"
-  ms.date: 09/20/2021
+  title: Review the shared responsibility model
+  description: "Review the shared responsibility model"
+  ms.date: 09/21/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial

@@ -6,7 +6,7 @@ The first part of your organization's secure Azure tenant is set up, but you nee
 A security engineer uses enterprise governance tools and policies to manage and maintain a secure Azure solution; some common tasks are:
 - Designing an Azure secure access hierarchy.
 - Using RBAC and Azure Policy to control and manage access.
-- Creatining blueprints of secure deployments that can be reused.
+- Creating blueprints of secure deployments that can be reused.
 
 ## Skills measured
 
