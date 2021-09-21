@@ -1,6 +1,6 @@
 Solvers are one of the components of the Mixed Reality Toolkit, which provides some handy functions for your application. Here you'll learn to use two types of solvers and look at their functionalities.
 
-## Location of solvers in the mrtk
+## Location of solvers in the MRTK
 
 * The MRTK's solvers are located in the MRTK SDK folder. To see the available solvers in your project, in the Project window, navigate to **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **Utilities** > **Solvers**:
 
