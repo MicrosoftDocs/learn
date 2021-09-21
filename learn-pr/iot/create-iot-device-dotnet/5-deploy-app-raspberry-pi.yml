@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-iot-device-dotnet.deploy-app-raspberry-pi
-title: Deploy App to Raspberry Pi
+title: "Exercise: Deploy App to Raspberry Pi"
 metadata:
-  title: Deploy App to Raspberry Pi
+  title: "Exercise: Deploy App to Raspberry Pi"
   description: "In this unit, you'll deploy the completed app to your Raspberry Pi."
   ms.date: 9/21/2021
   author: camsoper

@@ -137,8 +137,9 @@ Complete the following steps from a command shell on your development machine.
     - Pin 21 is opened with `gpio.OpenPin()`. The pin is opened for output with `PinMode.Output`.
     - The value of Pin 21 is set to `PinValue.Low`. This is the lowest amount of voltage the pin can emit. For purposes of illuminating the LED, `PinValue.Low` represents *off*, and `PinValue.High` represents *on*. As a result, the LED representing the fan is turned off.
     - The code toggles the fan/LED on and off by writing `PinValue.Low` and `PinValue.High`.
-        > [!WARNING]
+        > [!TIP]
         > Many real-world relays use `PinValue.High` for *off* and `PinValue.Low` for *on*. That's the opposite of what you're implementing for the LED that's representing the fan in this exercise.
+
     - Before the code exits, Pin 21 is closed with `gpio.ClosePin()`.
 
 1. Examine the code to understand how it interacts with the BME280. In the preceding code:
@@ -146,6 +147,7 @@ Complete the following steps from a command shell on your development machine.
     - An instance of `I2cConnectionSettings` is created. The first constructor parameter, `busId`, is set to `1`, the I2C bus ID on the Raspberry Pi. The second constructor parameter, `deviceAddress`, is set to `Bme280.DefaultI2cAddress`.
         > [!WARNING]
         > Some BME280 breakouts use `Bme280.SecondaryI2cAddress` for the device address. If your app throws `System.IO.IOException: Error 121 performing I2C data transfer.`, try this value instead.
+
     - An instance of `I2cDevice` is created using the `I2cConnectionSettings` object.
     - An instance of `Bme280` is created using the `I2cDevice` object. This represents the physical BME280.
     - In the `WriteStatus()` method, a `Bme280ReadResult` object is created by calling `Bme280.Read()`.
@@ -154,7 +156,7 @@ Complete the following steps from a command shell on your development machine.
         - The `Value` properties expose properties that perform automatic unit conversions, such as `DegreesFahrenheit` and `Percent`.
 
 ## Build the app
-    
+
 Build the app.
 
 ```dotnetcli
