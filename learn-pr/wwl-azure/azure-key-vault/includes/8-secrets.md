@@ -1,0 +1,53 @@
+
+Key Vault provides secure storage of secrets, such as passwords and database connection strings.
+
+From a developer's perspective, Key Vault APIs accept and return secret values as strings. Internally, Key Vault stores and manages secrets as sequences of octets (8-bit bytes), with a maximum size of 25k bytes each. The Key Vault service doesn't provide semantics for secrets. It merely accepts the data, encrypts it, stores it, and returns a secret identifier ("id"). The identifier can be used to retrieve the secret at a later time.
+
+For highly sensitive data, clients should consider additional layers of protection for data. Encrypting data using a separate protection key prior to storage in Key Vault is one example.
+
+Key Vault also supports a contentType field for secrets. Clients may specify the content type of a secret to assist in interpreting the secret data when it's retrieved. The maximum length of this field is 255 characters. There are no pre-defined values. The suggested usage is as a hint for interpreting the secret data. For instance, an implementation may store both passwords and certificates as secrets, then use this field to differentiate. There are no predefined values.
+
+> [!div class="mx-imgBorder"]
+> ![Key Vault Secrets Create a secret form](../media/az500-key-vault-secrets.png)
+
+As shown above, the values for Key Vault Secrets are:
+* Name-vaule pair - **Name must be unique in the Vault**
+* Value can ve any UTF-8 string - max of 25 KB in size
+* Manual or certificate creation
+* Activation date
+* Expiration date
+
+## Encryption
+
+All secrets in your Key Vault are stored encrypted. This encryption is transparent, and requires no action from the user. The Azure Key Vault service encrypts your secrets when you add them, and decrypts them automatically when you read them. The encryption key is unique to each key vault.
+
+## Azure Storage account key management
+
+Key Vault can manage Azure storage account keys:
+* Internally, Key Vault can list (sync) keys with an Azure storage account.
+* Key Vault regenerates (rotates) the keys periodically.
+* Key values are never returned in response to caller.
+* Key Vault manages keys of both storage accounts and classic storage accounts.
+
+## Storage account access control
+
+The following permissions can be used when authorizing a user or application principal to perform operations on a managed storage account:
+
+**Permissions for managed storage account and SaS-definition operations:**
+*  _get_: Gets information about a storage account
+*  _list_: List storage accounts managed by a Key Vault
+*  _update_: Update a storage account
+*  _delete_: Delete a storage account
+*  _recover_: Recover a deleted storage account
+*  _backup_: Back up a storage account
+*  _restore_: Restore a backed-up storage account to a Key Vault
+*  _set_: Create or update a storage account
+*  _regeneratekey_: Regenerate a specified key value for a storage account
+*  _getsas_: Get information about a SAS definition for a storage account
+*  _listsas_: List storage SAS definitions for a storage account
+*  _deletesas_: Delete a SAS definition from a storage account
+*  _setsas_: Create or update a new SAS definition/attributes for a storage account
+
+**Permissions for privileged operations**
+*  _purge_: Purge (permanently delete) a managed storage account
+
