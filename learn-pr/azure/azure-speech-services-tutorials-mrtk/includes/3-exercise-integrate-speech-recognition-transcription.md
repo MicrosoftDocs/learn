@@ -1,6 +1,6 @@
 In this module, you will create a Mixed Reality application that explores the use of Azure Speech Services with the HoloLens 2. When you complete this series, you will be able to use your device's microphone to transcribe speech to text in real-time, translate your speech into other languages, and you will be able to leverage the Intent recognition feature to understand voice commands using artificial intelligence.
 
-## Create and prepare the unity project
+## Create and prepare the Unity project
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
@@ -21,17 +21,17 @@ Because you will use the Speech SDK for speech recognition and transcription, yo
 
 1. With the **MixedRealityToolkit** object selected in the Hierarchy window, in the Inspector window, select the **Input** tab, clone the **DefaultHoloLens2InputSystemProfile** and the **DefaultMixedRealitySpeechCommandsProfile**, and then change the speech commands **Start Behavior** to **Manual Start**:
 
-    :::image type="content" source="../media/change-speech-commands.png" alt-text="Screenshot that describes Change the speech commands" lightbox="../media/change-speech-commands.png":::
+    :::image type="content" source="../media/change-speech-commands.png" alt-text="Screenshot that describes Change the speech commands." lightbox="../media/change-speech-commands.png":::
 
 ## Configure the capabilities
 
 1. In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Publishing Settings** section:
 
-    :::image type="content" source="../media/configure-capabilities.png" alt-text="Screenshot of Configuring capabilities" lightbox="../media/configure-capabilities.png":::
+    :::image type="content" source="../media/configure-capabilities.png" alt-text="Screenshot of Configuring capabilities." lightbox="../media/configure-capabilities.png":::
 
 2. In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer** and **PrivateNetworkClientServer** capabilities:
 
-    :::image type="content" source="../media/enable-capabilities.png" alt-text="Screenshot of Enable the capabilities" lightbox="../media/enable-capabilities.png":::
+    :::image type="content" source="../media/enable-capabilities.png" alt-text="Screenshot of Enable the capabilities." lightbox="../media/enable-capabilities.png":::
 
 ## Import the tutorial assets
 
@@ -43,7 +43,7 @@ Because you will use the Speech SDK for speech recognition and transcription, yo
 
 2. After you have imported the tutorial assets your Project window should look similar to this:
 
-    :::image type="content" source="../media/project-window.png" alt-text="Screenshot of Project window must look similar to this" lightbox="../media/project-window.png":::
+    :::image type="content" source="../media/project-window.png" alt-text="Screenshot of Project window must look similar to this." lightbox="../media/project-window.png":::
 
 ## Prepare the scene
 
@@ -51,25 +51,25 @@ In this section, you will prepare the scene by adding the tutorial prefab and co
 
 1. In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureSpeechServices** > **Prefabs** folder and drag the **Lunarcom** prefab into the Hierarchy window to add it to your scene:
 
-    :::image type="content" source="../media/prepare-scene.png" alt-text="Screenshot of Preparing the scene" lightbox="../media/prepare-scene.png":::
+    :::image type="content" source="../media/prepare-scene.png" alt-text="Screenshot of Preparing the scene." lightbox="../media/prepare-scene.png":::
 
 2. With the **Lunarcom** object still selected in the Hierarchy window, in the Inspector window, use the **Add Component** button to add the **Lunarcom Controller (Script)** component to the Lunarcom object:
 
-    :::image type="content" source="../media/lunarcom-controller.png" alt-text="Screenshot of Adding Lunarcom controller (Script)" lightbox="../media/lunarcom-controller.png":::
+    :::image type="content" source="../media/lunarcom-controller.png" alt-text="Screenshot of Adding Lunarcom controller (Script)." lightbox="../media/lunarcom-controller.png":::
 
 3. With the **Lunarcom** object still selected, expand it to reveal its child objects, then drag the **Terminal** object into the Lunarcom Controller (Script) component's **Terminal** field:
 
-    :::image type="content" source="../media/terminal-field.png" alt-text="Screenshot of Terminal field" lightbox="../media/terminal-field.png":::
+    :::image type="content" source="../media/terminal-field.png" alt-text="Screenshot of Terminal field." lightbox="../media/terminal-field.png":::
 
 4. With the **Lunarcom** object still selected, expand the Terminal object to reveal its child objects, then drag the **ConnectionLight** object into the Lunarcom Controller (Script) component's **Connection Light** field and the **OutputText** object into the **Output Text** field:
 
-    :::image type="content" source="../media/output-text-field.png" alt-text="Screenshot of Output text field" lightbox="../media/output-text-field.png":::
+    :::image type="content" source="../media/output-text-field.png" alt-text="Screenshot of Output text field." lightbox="../media/output-text-field.png":::
 
 5. With the **Lunarcom** object still selected, expand the Buttons object to reveal its child objects, and then in the Inspector window, expand the **Buttons** list, set its **Size** to 3, and drag the **MicButton**, **SatelliteButton**, and **RocketButton** objects into the **Element** 0, 1, and 2 fields respectively:
 
-    :::image type="content" source="../media/configure-buttons.png" alt-text="Screenshot of Configure the buttons" lightbox="../media/configure-buttons.png":::
+    :::image type="content" source="../media/configure-buttons.png" alt-text="Screenshot of Configure the buttons." lightbox="../media/configure-buttons.png":::
 
-## Connect the unity project to the Azure resource
+## Connect the Unity project to the Azure resource
 
 To use Azure Speech Services, you need to create an Azure resource and obtain an API key for the Speech Service. Follow the [Try the Speech service for free](/azure/cognitive-services/speech-service/get-started) instructions and make a note of your service region (also known as Location) and API key (also known as Key1 or Key2).
 
@@ -78,21 +78,21 @@ To use Azure Speech Services, you need to create an Azure resource and obtain an
     * In the **Speech Service API Key** field, enter your API key (Key1 or Key2)
     * In the **Speech Service Region** field, enter your service region (Location) using lowercase letters and spaces removed
 
-    :::image type="content" source="../media/configure-speech-sdk-credentials.png" alt-text="Screenshot of Configure Speech SDK Credentials" lightbox="../media/configure-speech-sdk-credentials.png":::
+    :::image type="content" source="../media/configure-speech-sdk-credentials.png" alt-text="Screenshot of Configure Speech SDK Credentials." lightbox="../media/configure-speech-sdk-credentials.png":::
 
 ## Use speech recognition to transcribe speech
 
 1. In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Speech Recognizer (Script)** component to the Lunarcom object:
 
-    :::image type="content" source="../media/lunarcom-speech-recognize.png" alt-text="Screenshot of Add Lunarcom Speech Recognizer (Script)" lightbox="../media/lunarcom-speech-recognize.png":::
+    :::image type="content" source="../media/lunarcom-speech-recognize.png" alt-text="Screenshot of Add Lunarcom Speech Recognizer (Script)." lightbox="../media/lunarcom-speech-recognize.png":::
 
 2. If you now enter Game mode, you can test the speech recognition by first pressing the microphone button:
 
-    :::image type="content" source="../media/enter-game-mode.png" alt-text="Screenshot of Enter game mode" lightbox="../media/enter-game-mode.png":::
+    :::image type="content" source="../media/enter-game-mode.png" alt-text="Screenshot of Enter game mode." lightbox="../media/enter-game-mode.png":::
 
 3. Then, assuming your computer has a microphone, when you say something, your speech will be transcribed on the terminal panel:
 
-    :::image type="content" source="../media/speech-transcribe.png" alt-text="Screenshot of Speech will be transcribed on the terminal panel" lightbox="../media/speech-transcribe.png":::
+    :::image type="content" source="../media/speech-transcribe.png" alt-text="Screenshot of Speech will be transcribed on the terminal panel." lightbox="../media/speech-transcribe.png":::
 
     > [!CAUTION]
     > The application needs to connect to Azure, so make sure your computer/device is connected to the internet.
