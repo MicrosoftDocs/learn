@@ -1,10 +1,10 @@
-To get started using Visual Studio App Center, you'll need an App Center account. By following through the steps in this exercise, you'll create an App Center account and explore some of the features offered by the App Center portal.
+To get started using Visual Studio App Center, you'll need an App Center account. By following the steps in this exercise, you'll create an App Center account and explore some of the features offered by the App Center portal.
 
 ## Navigate to App Center
 
 * In a new browser tab or window, navigate to the [App Center portal](https://appcenter.ms?utm_source=MSLearn).
 
-If you aren't already signed in to App Center, a welcome page appears, describing what App Center offers with links to pages about pricing, documentation, and support.
+If you aren't already signed in to App Center, a welcome page describes App Center features, with links to additional pages about pricing, documentation, and support.
 
 ## Create an App Center account
 Creating an App Center account is free, and App Center allows you to sign in with the following accounts to get started:
@@ -21,7 +21,7 @@ Creating an App Center account is free, and App Center allows you to sign in wit
 
 1. Proceed through whatever authentication system you selected. When you complete authentication with one of the providers, you are redirected to the Visual Studio App Center.
 
-1. When prompted for a username, enter a username you want to use for App Center, or use the suggestion that App Center provides. 
+1. When prompted, enter a username you want to use for App Center, or use the suggestion that App Center provides. 
 
     You'll be able to change your username later from your App Center profile. 
 
@@ -83,7 +83,7 @@ You might also create a device set that represents the devices that seem to prod
 
   * In **Releases** subsection of Distribute, you can distribute a release. You can either upload a build manually or specify which build you want to distribute. 
   
-  * You can create distribution groups in **Groups** subsection. You'll be able to pick which release group or app store to send your build to in the new release steps, or in the destinations you set up in the Distribute subsections. For each release you distribute, you will be able to view the distribution group that was used, as well as the download count of that release.
+  * You can create distribution groups in **Groups** subsection. You'll be able to pick which release group or app store to send your build to in the new release steps, or in the destinations you set up in the Distribute subsections. For each release you distribute, you will be able to view the distribution group that was used and the download count of that release.
 
   * In **Groups** subsection of Distribute, you can create and manage your distribution groups. You set up these groups to reach predefined sets of users, such as users who handle app testing or pre-publish approval reviews.
 
@@ -91,7 +91,7 @@ You might also create a device set that represents the devices that seem to prod
 
 ### Diagnostics
 
-* Select **Diagnostics** from the App Center menu. After you have incorporated the App Center SDK into your app, you will be able to view crash information. These data points  reflect crashes reported by your app users. Charts of crash counts, as well as a list of error groups, will be available to view.
+* Select **Diagnostics** from the App Center menu. After you have incorporated the App Center SDK into your app, you will be able to view crash information. These data points  reflect crashes reported by your app users. Charts of crash counts and a list of error groups will be available to view.
 
 ### Analytics
 
