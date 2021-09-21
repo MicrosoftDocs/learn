@@ -1,6 +1,6 @@
 In this tutorial, you'll learn how to build your project to Android and iOS devices using AR Foundation, ARCore XR Plugin, and ARKit XR Plugin.
 
-## Install in-built unity packages
+## Install in-built Unity packages
 
 [!INCLUDE[](includes/install-inbuilt-unity-packages.md)]
 

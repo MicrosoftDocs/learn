@@ -9,7 +9,7 @@ You may create augmented reality apps for Android smartphones with the ARCore XR
 ARKit is a high-level augmented reality development platform that allows developers to create AR Apps and Experiences by leveraging the CPU power of highly efficient yet capable iOS devices and their cameras.
 To make creating an AR experience easier, ARKit integrates device motion tracking, camera scene capture, powerful image processing, and display conveniences. Using these technologies and an iOS device's front or rear camera, you may create a variety of AR experiences.
 
-## Windows Mixed Reality Camera Setting
+## Windows Mixed Reality camera setting
 
 The Windows Mixed Reality camera settings provider detects the device on which the app is running and applies the relevant configuration settings based on the display (transparent or opaque). This allows the application's camera to be configured and optimized for usage in mixed reality apps using the Microsoft Mixed Reality Toolkit.
 
