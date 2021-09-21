@@ -78,5 +78,5 @@ quiz:
       explanation: "Incorrect. You are able to use the amend tag to add a new file to your commit."
     - content: "When you want to change the not most recent commit."
       isCorrect: false
-      explanation: "Incorrect. Git amend only works on the most recent commit."
+      explanation: "Incorrect. Git amend only works on your most recent commit."
         
