@@ -19,7 +19,7 @@ Creating an App Center account is free, and App Center allows you to sign in wit
 
 1. Associate your App Center use with that account. 
 
-1. Proceed through whatever authentication system you selected. When you complete authentication with one of the providers, you are redirected to the Visual Studo App Center.
+1. Proceed through whatever authentication system you selected. When you complete authentication with one of the providers, you are redirected to the Visual Studio App Center.
 
 1. When prompted for a username, enter a username you want to use for App Center, or use the suggestion that App Center provides. 
 
@@ -41,7 +41,7 @@ After signing in, create a temporary app so that we can explore the App Center s
 
 1. Select the different **OS** options, and notice which platforms and languages are supported. For example, the platform options change between iOS and Android.
 
-1. Select an **OS** value of your choice for this app.
+1. Select an **OS** value of your choice for this app.fd
 
 1. Select a **Platform** value of your choice.
 
@@ -49,11 +49,11 @@ After signing in, create a temporary app so that we can explore the App Center s
 
     ![Screenshot of the new App Center app with arbitrary values entered and chosen.](../media/8-app-center-new-app-form.png)
 
-The navigation menu for App Center presents the various service options available. **Overview** pane displays the workflow for the platform you selected. Because this is a new app, **Overview** displays instructions and additional links to documentation for integrating the App Center SDK with the OS and platform you selected for your temporary app.
+The navigation menu for App Center presents the various service options available. **Overview** pane displays the workflow for the platform you selected. Because you're creating a new app, **Overview** displays instructions, along with links to additional documentation, for integrating the App Center SDK with the OS and platform you selected for your temporary app.
 
 ## Explore the App Center services
 
-Let's explore the services represented in the navigation menu. Select a heading and then click through the App Center services for that section. Selections may vary, based on which OS platform you chose for your temporary app. The following is an overview of the main headings and the menu items available under each heading.
+Let's explore the services represented in the navigation menu. Select a heading and then click through the App Center services for that section. Selections may vary, based on which OS platform you chose for your temporary app. The following overview of the main headings identifies the menu items available under each section headingfsub=.
 
 ### Build
 
@@ -67,23 +67,23 @@ You can configure App Center to retrieve your app's code from several different 
 
 ### Test
 
-* Select **Test** from the App Center menu. The **Test** section offers two sub-sections: **Test runs** and **Device sets**.
+* Select **Test** from the App Center menu. The **Test** section offers two subsections: **Test runs** and **Device sets**.
 
   * Creating a **test run** enables you to select the real, physical devices on which to run your tests. After you have created some preferred device sets, you can quickly pick a set of devices. From there, you will be given instructions to install and run the **appcenter-cli** npm package to allow you to run tests on the selected devices on-demand.
 
   * Creating a **device set** enables you to pre-select representative devices for testing your app. If you know most of your users are on fairly new Android devices, for example, you could pick a few of the most recent Android models. Alternatively, if you create an app specific to iPad tablets, you could pick out several iPad, iPad Mini, and iPad Pro devices. You would give the set of devices a name and be able to reference that set easily for your test runs.
 
-You might also create a device set that represents the devices that seem to produce the most problems for your app's users. This would allow you to run test for known issues before releasing a new build to make sure you haven't introduced any regressions to those users.
+You might also create a device set that represents the devices that seem to produce the most problems for your app's users. A problem device set would enable you to run tests for known issues before releasing a new build, ensuring you haven't introduced any regressions to those users.
 
 ### Distribute
 
-* Select **Distribute** from the App Center menu. From the **Distribute** section, you can send previous builds to your distribution groups or directly to an app store. If you've already used Visual Studio App Center, you see have several sub-sections: **Release**, **Groups**, and **Stores**.
+* Select **Distribute** from the App Center menu. From the **Distribute** section, you can send previous builds to your distribution groups or directly to an app store. If you've already used Visual Studio App Center, you see have several subsections: **Release**, **Groups**, and **Stores**.
 
-  ![Screenshot of the App Center app navigation showing the Distribute section and its sub-sections.](../media/8-app-center-navigation-distribute-release.png)
+  ![Screenshot of the App Center app navigation showing Distribute and its subsections.](../media/8-app-center-navigation-distribute-release.png)
 
   * In **Releases** subsection of Distribute, you can distribute a release. You can either upload a build manually or specify which build you want to distribute. 
   
-  * You can create distribution groups in **Groups** subection. You'll be able to pick which release group or app store to send your build to in the new release steps, or in the destinations you set up in the Distribute subsections. For each release you distribute, you will be able to view the distribution group that was used, as well as the download count of that release.
+  * You can create distribution groups in **Groups** subsection. You'll be able to pick which release group or app store to send your build to in the new release steps, or in the destinations you set up in the Distribute subsections. For each release you distribute, you will be able to view the distribution group that was used, as well as the download count of that release.
 
   * In **Groups** subsection of Distribute, you can create and manage your distribution groups. You set up these groups to reach predefined sets of users, such as users who handle app testing or pre-publish approval reviews.
 
@@ -95,7 +95,7 @@ You might also create a device set that represents the devices that seem to prod
 
 ### Analytics
 
-* Select **Analytics** from the App Center menu. The **Analytics** sectionhas several subsections: **Overview**, **Events**, and **Log flow**.
+* Select **Analytics** from the App Center menu. **Analytics** has several subsections: **Overview**, **Events**, and **Log flow**.
 
   ![Screenshot of the App Center app navigation showing the Analytics section and its sub-sections.](../media/8-app-center-navigation-analytics-overview.png)
 
@@ -103,4 +103,4 @@ You might also create a device set that represents the devices that seem to prod
 
   * The **Events** subsection of Analytics displays a table of the events that your app has reported, after you have incorporated the App Center SDK into your app. When implemented, you can sort events by overall count, trending movement, number of users, trend in user count, and the average per user.
 
-  * The **Log flow** subsection of Analytics displays real-time events coming in from your app. This log flow datga can help you confirm data is coming in correctly from your app after you set it up. If you know a particular event should be showing up, you can use this view to can verify your app is sending event information.
+  * The **Log flow** subsection of Analytics displays real-time events coming in from your app. This log flow data can help you confirm data is coming in correctly from your app after you set it up. If you know a particular event should be showing up, you can use this view to can verify your app is sending event information.
