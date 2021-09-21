@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.azure-speech-services-tutorials-mrtk
 metadata:
-  title: Azure Speech Services tutorials
+  title: Add Azure Cognitive Services to your mixed reality project
   description: This course explores the use of Azure speech services by integrating to a hololens2 application. You can also deploy your project to a HoloLens.
   ms.date: 09/13/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-title: Azure Speech Services tutorials
+title: Add Azure Cognitive Services to your mixed reality project
 summary: Import and learn about Azure Speech Services to enhance your learning experience.
 abstract: |
   By the end of this module you will be able to:
@@ -26,8 +26,10 @@ products:
 - windows-mixed-reality
 - mrtk
 - hololens
+- azure
+- mrtk
 prerequisites: |
-  - A Windows 10 PC configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
+  - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/develop/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
   - A HoloLens 2 device configured for development
   - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
@@ -40,10 +42,10 @@ units:
 - learn.azure.azure-speech-services-tutorials-mrtk.1-introduction
 - learn.azure.azure-speech-services-tutorials-mrtk.2-integrate-speech-recognition-transcription
 - learn.azure.azure-speech-services-tutorials-mrtk.3-exercise-integrate-speech-recognition-transcription
-- learn.azure.azure-speech-services-tutorials-mrtk.4-add-an-offline-mode-for-local-speech-to-text-translation
-- learn.azure.azure-speech-services-tutorials-mrtk.5-exercise-add-an-offline-mode-for-local-speech-to-text-translation
-- learn.azure.azure-speech-services-tutorials-mrtk.6-add-the-azure-cognitive-services-speech-translation-component
-- learn.azure.azure-speech-services-tutorials-mrtk.7-exercise-add-the-azure-cognitive-services-speech-translation-component
+- learn.azure.azure-speech-services-tutorials-mrtk.4-add-offline-mode-local-speech-to-text-translation
+- learn.azure.azure-speech-services-tutorials-mrtk.5-exercise-add-offline-mode-local-speech-to-text-translation
+- learn.azure.azure-speech-services-tutorials-mrtk.6-add-cognitive-services-speech-translation
+- learn.azure.azure-speech-services-tutorials-mrtk.7-exercise-add-cognitive-services-speech-translation
 - learn.azure.azure-speech-services-tutorials-mrtk.8-set-up-intent-natural-language-understand
 - learn.azure.azure-speech-services-tutorials-mrtk.9-exercise-set-up-intent-natural-language-understand
 - learn.azure.azure-speech-services-tutorials-mrtk.10-knowledge-check
