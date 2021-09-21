@@ -13,7 +13,7 @@ OpenXR is an open standard for creating high-performance VR apps that can run on
 
 ## Eye gaze interaction
 
-Unity OpenXR supports the Eye Tracking Interaction extension provided by Khronos. To get the pose data that the extension returns, use this layout.
+Unity OpenXR supports the Eye Tracking Interaction extension provided by Kronos. To get the pose data that the extension returns, use this layout.
 
 ## Microsoft hand interaction
 
