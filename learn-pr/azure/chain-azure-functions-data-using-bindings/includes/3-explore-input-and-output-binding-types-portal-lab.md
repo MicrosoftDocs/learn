@@ -93,8 +93,8 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. In the command bar, select **Create**. The **Create function** pane appears.
 
-        [![Screenshot for the Create Function dialog box.](../media/3-add-function-small.png)](../media/3-add-function.png#lightbox)
-        
+    [![Screenshot for the Create Function dialog box.](../media/3-add-function-small.png)](../media/3-add-function.png#lightbox)
+
 1. In the **Select a template** section, select **HTTP trigger**.
 
 1. Scroll down to the **Template details** section, and then enter the following information.
