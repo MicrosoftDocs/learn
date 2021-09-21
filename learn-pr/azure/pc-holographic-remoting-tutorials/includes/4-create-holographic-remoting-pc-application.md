@@ -7,7 +7,7 @@ You can only use PC apps that intend to support Holographic Remoting with the Ho
 The Network Client-server manager is used to manage the connections in many multiuser applications. But you can also use the lower-level NetworkServer and NetworkClient classes directly.
 Every application that uses the high-level APIs must connect to a host server where each user can act as a client, a dedicated server or, a server and client simultaneously.
 
-## Open xr
+## OpenXR
 
 OpenXR is an open standard for creating high-performance VR apps that can run on different kinds of systems. It makes VR creation easier by allowing developers to use the same code across several platforms.
 

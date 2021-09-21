@@ -19,7 +19,7 @@ In the Project Settings window, expand the **Publishing Settings**, then scroll 
 
 To connect your PC application to your HoloLens 2, do the following:
 
-### 1. Install the remoting player application on holoLens 2 device
+### 1. Install the remoting player application on HoloLens 2 device
 
 * On your HoloLens 2, visit the Store app and search for **"Remoting Player."**
 * Select the **Remoting Player** app.

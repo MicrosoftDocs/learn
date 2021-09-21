@@ -5,7 +5,7 @@ To complete this tutorial successfully, you should've some basic knowledge of Un
 >[!Important]
 >This tutorial series supports Unity 2020 LTS (currently 2020.3.x) if you're using Open XR and Unity 2019 LTS (currently 2019.4.x) if you're using Legacy WSA. This supersedes any Unity version requirements stated in the prerequisites linked above.
 
-## Create and prepare the unity project
+## Create and prepare the Unity project
 
 In this section, you'll create a new Unity project and get it ready for MRTK development.
 
