@@ -10,35 +10,33 @@ You can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell
 
 1. In *Search services and marketplace* search box, enter **Windows Server** and press <kbd>Enter</kbd>.
 
-1. To the right of the search box, select the filter *Publisher name:* **All** and enter **Microsoft**, and then press <kbd>Enter</kbd>.
+1. To the right of the search box, select the filter *Publisher name:* **All**, enter **Microsoft**, and then press <kbd>Enter</kbd>.
  
     :::image type="content" source="../media/3-marketplace-search.png" border="true" alt-text="Screenshot showing virtual machine image options.":::
 
-1. The result shows several *Windows Server*-related images. Select the **Windows Server** Virtual Machine images.
+1. The result shows several *Windows Server*-related images. Select the **Windows Server** Virtual Machine image.
 
-    :::image type="content" source="../media/3-marketplace-windows-server.png" border="true" alt-text="Screenshot showing the virtual machine image search result that highlights the Windows Server option.":::
+    :::image type="content" source="../media/3-marketplace-windows-server.png" border="true" alt-text="Screenshot showing the Windows Server virtual machine image highlighted.":::
 
     The **Windows Server** pane appears.
 
 1. There are several Windows Server options to choose from to create your VM. In the **Select a plan** dropdown list, scroll to the bottom, and select **[smalldisk] Windows Server 2019 Datacenter**.
 
-1. Select **Create** to open the **Create a virtual machine** pane.
+1. Select **Create**. Thehe **Create a virtual machine** pane appears.
 
 ## Configure the VM settings
 
-Azure presents a *wizard* to walk you through all the configuration sections for the VM. You can select **Next** or **Previous** to move from one configuration section to another, or you can select any tab in the horizontal menu to move to a configuration section.
-
-The **Create a virtual machine** pane appears.
+Azure presents a *wizard* as a series of tabs to walk you through all the configuration details for creating the VM. The first tab is **Basics**. You can select **Next** or **Previous** to move from one tab to another, or you can select any tab in the horizontal menu to move to a  customizable configuration section.
 
 :::image type="content" source="../media/3-azure-portal-create-vm.png" border="true" alt-text="Screenshot showing **Basics** tab of the **Create a virtual machine** pane.":::
 
 ### Configure basic VM settings
 
 > [!NOTE]
-> As you change settings in a field, Azure will validate each value and place a green check mark next to a validated field, or red error indicator below the field. You can hover over an error indicator to get more information about a validation issue.
+> As you add or change settings in the wizard, Azure validates each value and places a green check mark next to a validated field, or red error indicator below the field. You can hover over an error indicator to get more information about a validation issue.
 
 > [!NOTE]
-> It's a best practice to standardize your resource names so you can easily identify their purpose. Windows VM names are a bit limited - they must be between 1 and 15 characters, cannot contain non-ASCII or special characters, and must be unique in the current resource group.
+> It's a best practice to use a standard naming convention for resource names so you can easily identify their purpose. Windows VM names are a bit limited - they must be between 1 and 15 characters, cannot contain non-ASCII or special characters, and must be unique in the current resource group.
 
 1. On the **Basics** tab, select or enter the following values.
 
@@ -52,7 +50,8 @@ The **Create a virtual machine** pane appears.
     | Region | Select a region close to you from the global regions listed below this table. |
     | Availability options | Accept default **No infrastructure redundancy required**. This option is used to ensure the VM is highly available by grouping multiple VMs together to deal with planned or unplanned maintenance events or outages. |
     | Image | Select **[smalldisk] Windows Server 2019 Datacenter - Gen1** from the dropdown list. |
-    | Size | The **Size** field is not directly editable. Accept the default **Standard DS1 v2**, which will give the VM 1 CPU and 3.5 GB of memory. Optionally, select the field to view recommended or recently chosen sizes; select **See all sizes** to explore filters for sizes based on vCPUs, RAM, Data disks, operations per second, and cost. Select the X in the top right of the pane to close the pane.  |
+    | Azure Spot instance| Accept default (unchecked). |
+    | Size | The **Size** field is not directly editable. Select or accept the default **Standard DS1 v2**, which will give the VM 1 CPU and 3.5 GB of memory. Optionally, select the field to view recommended or recently chosen sizes; select **See all sizes** to explore filters for sizes based on vCPUs, RAM, Data disks, operations per second, and cost. Select the X in the top right of the pane to close the pane.  |
     | **Administrator account** |
     | Username | Enter a username you will use to sign in to the VM. |
     | Password | Enter a password that's at least 12 characters long and has at least three of the following four characteristics: one lower case character, one uppercase character, one number, and one special character that is not '\\' or '-'. Use something you will remember or write it down, as you will need it later. |
@@ -60,10 +59,11 @@ The **Create a virtual machine** pane appears.
     | **Inbound port rules** |
     | Public inbound ports | Select **Allow selected ports**. We want to be able to access the desktop for this Windows VM using RDP. |
     | Select inbound ports | Select **RDP (3389)** from the dropdown list. As the note in the UI indicates, we can also adjust the network ports after we create the VM. |
+    | **Licensing** |
+    | Would you like to use an eisting Windows Server License | Leave unchecked | 
     | | |
 
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-
     
 1. Select **Next : Disks**.
     > [!TIP]
@@ -78,8 +78,9 @@ The **Create a virtual machine** pane appears.
     | **Disk options** |
     | OS disk type | Accept the default **Premium SSD (locally redundant storage)**. |
     | SSE encryption type | Accept the default **(Default) Encryption at-rest with a platform-managed key**. |
+    | Enable Ultra Disk compatibility | Accept default (unchecked) |
     | **Data disks** |
-    | Select **Create and attach a new disk** link. The **Create a new disk** pane appears. | Accept all the default values for the following settings: *Name*; *Source type*; *Size*; *SSE encryption type*; and *Enable shared disk*. This is where you could use a snapshot, or Storage Blob, to create a VHD. |
+    | Select **Create and attach a new disk** link. The **Create a new disk** pane appears. | Accept all the default values for the following settings: *Name*; *Source type*; *Size*; *Encryption type*; and *Enable shared disk*. This is where you could use a snapshot, or Storage Blob, to create a VHD. |
     
 1. Select **OK** to save the settings and close the pane.
 
