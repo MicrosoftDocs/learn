@@ -64,7 +64,7 @@ Refer to the diagram above as you construct your device.
     | 3.3V     | VIN (sometimes labeled 3V3) | Red           |
     | Ground   | GND                         | Black         |
     | SDA      | SDI (sometimes labeled SDA) | Blue          |
-    | SCL      | SCL (sometimes labeled SCL) | Orange        |
+    | SCL      | SCK (sometimes labeled SCL) | Orange        |
 
 1. Position jumper wires on the breadboard to connect the LED to the GPIO breakout.
 
