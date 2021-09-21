@@ -4,7 +4,7 @@ In this unit, you'll learn about Azure Policy and Azure Policy for Kubernetes.
 
 ## Introducing Azure Policy
 
-Azure policy allows you to manage the compliance state of your Azure services. It does this by comparing the state of your Azure resources to business rules you define. Common rules are the limitation of certain regions, the requirement for resource tags or limiting which Azure services can be used.
+Azure Policy allows you to manage the compliance state of your Azure services. It does this by comparing the state of your Azure resources to business rules you define. Common rules are the limitation of certain regions, the requirement for resource tags or limiting which Azure services can be used.
 
 The way you define these business rules in Azure policy is by using policy definitions. There are many built-in policies that cover a range of common scenarios. If one of the built-in policies doesn't meet your needs, you can also define a custom policy using a JSON-based language. You can also group multiple policy definitions togethers into an initiative.
 
