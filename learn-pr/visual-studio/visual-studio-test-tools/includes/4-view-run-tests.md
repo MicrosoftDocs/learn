@@ -12,7 +12,7 @@ The name of each test appears in an easily browsable list. The following example
 
 :::image type="content" source="../media/test-explorer.png" alt-text="Screenshot of the Test Explorer window in Visual Studio, with a list of tests.":::
 
-You can use the search box to search for a specific test or substring. The following example shows the word *null* typed into the search box. The text list is filtered to only the test names that contain the substring `null`.
+You can use the search box to search for a specific test or substring. The following example shows the word *null* typed into the search box. The test list is filtered to only the test names that contain the substring `null`.
 
 :::image type="content" source="../media/test-explorer-search.png" alt-text="Screenshot of Test Explorer with the test names filtered based on a word in the search box.":::
 
