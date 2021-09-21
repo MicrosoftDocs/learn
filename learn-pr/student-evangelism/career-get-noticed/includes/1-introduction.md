@@ -4,7 +4,7 @@ You're looking for a job, but how can you get noticed by an organization? As you
 
 One key job-search element often left unmentioned, is how to get your application noticed in the first place. To land an interview, you'll be *screened* by a recruiter or someone who's responsible for hiring the job role you're seeking. But this screening will happen _only_ if you're able to stand out from other applicants during this process.
 
-How do you stand out? The short answer is, make sure the company know of you, either from an email, phone all or having met you in person.
+How do you stand out? The short answer is, make sure the company know of you, either from an email, phone call or having met you in person.
 
 Let a Microsoft recruiter describe a few qualities that companies are looking for in a tech employee:
 
