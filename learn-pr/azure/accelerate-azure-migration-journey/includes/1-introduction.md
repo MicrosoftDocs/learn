@@ -9,10 +9,10 @@ Suppose, for example, that you're a solution architect for Tailwind Traders. The
 Your role is to evaluate the:
 
 - Benefits of moving to Azure.
-- Migration drivers for Tailwind Traders.
+- Migration and modernization drivers for Tailwind Traders.
 - Phases of the cloud journey.
-- Common migration projects that Tailwind Traders will complete.
-- Tools available for planning and implementing the migration.
+- Common migration and modernization projects that Tailwind Traders will complete.
+- Tools available for planning and implementing the migration and modernization.
 - Programs providing expert advice to Tailwind Traders.
 
 ## Learning objectives
@@ -20,10 +20,10 @@ Your role is to evaluate the:
 At the end of this module, you'll be able to:
 
 - List the drivers and benefits of moving to Azure.
-- Describe the phases of a cloud migration journey and common migration projects.
-- List the Azure migration tools and programs that enable successful migrations.
+- Describe the phases of a cloud migration and modernization journey and common migration and modernization projects.
+- List the Azure migration and modernization tools and programs that enable successful move to Azure.
 
 ## Prerequisites
 
 - General understanding of cloud platforms
-- Understanding of your organization's migration plan and the types of workloads you'll need to migrate
+- Understanding of your organization's migration and modernization plan and the types of workloads you'll need to migrate and modernization.

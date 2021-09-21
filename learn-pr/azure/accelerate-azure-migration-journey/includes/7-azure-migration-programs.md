@@ -1,6 +1,6 @@
-Microsoft provides expert migration guidance and assistance via programs made available to customers and partners. You can accelerate Azure deployments while building cloud skills and learning from Azure engineers.
+Microsoft provides expert migration and modernization guidance and assistance via programs made available to customers and partners. You can accelerate Azure deployments while building cloud skills and learning from Azure engineers.
 
-As a part of the migration team at Tailwind Traders, it's essential to learn the programs available to support your Azure migration:
+As a part of the migration and modernization team at Tailwind Traders, it's essential to learn the programs available to support your Azure migration:
 
 - Azure Migration and Modernization Program
 - FastTrack for Azure
@@ -19,15 +19,15 @@ Here are some of the benefits available from the Azure Migration and Modernizati
 - Free Azure migration tools, including Azure Migrate to assess and migrate workloads and Azure Cost Management to optimize costs.
 - Offers and incentives to offset transition costs, including Azure Hybrid Benefit and free Extended Security Updates for Windows Server and SQL Server 2008.
 
-![Graphic showing the Azure Migration Program project phases.](../media/amp-phases.png)
+![Graphic showing the Azure Migration and Modernization Program project phases.](../media/amp-phases.png)
 
 ### Self-guided digital support
 
-As a part of the Azure Migration and Modernization Program, Microsoft provides self-guided support, which will put your team on a path to success. You'll gain immediate access to curated resources designed to support your migration efforts. A call from an Azure sales specialist will help answer questions about Azure and your migration plans. A short email series will provide guidance and access to learning cloud skills with Azure technical training through Microsoft Learn and accredited partners.
+As a part of the Azure Migration and Modernization Program, Microsoft provides self-guided support, which will put your team on a path to success. You'll gain immediate access to curated resources designed to support your migration and modernization efforts. A call from an Azure sales specialist will help answer questions about Azure and your migration and modernization plans. A short email series will provide guidance and access to learning cloud skills with Azure technical training through Microsoft Learn and accredited partners.
 
 ### Guided deployments
 
-The Azure Migration and Modernization Program includes guided deployments that include expert help from FastTrack for Azure engineers and specialized migration partners. Assistance to deliver your project, including assessment, planning, design, and migrating and modernizing your workloads to AzurE, is included. There are also offers to help offset your transition costs, based on eligibility. Your team can learn Azure with included technical training and certifications tailored to your organization's needs.
+The Azure Migration and Modernization Program includes guided deployments that include expert help from FastTrack for Azure engineers and specialized migration partners. Assistance to deliver your project, including assessment, planning, design, and migrating and modernizing your workloads to Azure, is included. There are also offers to help offset your transition costs, based on eligibility. Your team can learn Azure with included technical training and certifications tailored to your organization's needs.
 
 > [!NOTE]
 > Guided deployments have a minimum project size to qualify. See the application form for details.

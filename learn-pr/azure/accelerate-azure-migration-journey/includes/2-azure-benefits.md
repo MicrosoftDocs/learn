@@ -1,15 +1,17 @@
-Many organizations are interested in moving to the cloud, but the benefits aren't always clear. Moving to the cloud is a fundamental shift in how systems are purchased, designed, deployed, and secured. As a solution architect for Tailwind Traders, you need to understand the cloud's benefits and align your business and technical goals to enjoy them.
+Many organizations are interested in moving to the cloud, but the benefits aren't always clear. Moving to the cloud is a fundamental shift in how systems are purchased, designed, deployed, and secured. As a solution architect for Tailwind Traders, you need to understand the cloud's benefits and align your business and technical goals to enjoy them. 
 
 The cloud delivers fundamental technology benefits that can help your enterprise execute on multiple goals:
 
 - Optimize costs
 - Build resilience and security
+- Move what you want, when you with hybrid flexibility
 - Scale applications and workloads on demand
-- Application innovation
+- Application modernization
+- Faster innovation with a managed platform
 
 ## Optimize costs
 
-Datacenters are expensive. The costs of real estate, power, servers, storage, networks, and operations staff affect a company's bottom line. When customers migrate to Azure, they convert upfront capital expenditures to operating expenditures that can be paid over time. Your cash flow is improved by only paying for what you need. You can also achieve cost savings and efficiency.
+Datacenters are expensive. The costs of real estate, power, servers, storage, networks, and operations staff affect a company's bottom line. When customers migrate to Azure and modernizing workloads, they convert upfront capital expenditures to operating expenditures that can be paid over time. Your cash flow is improved by only paying for what you need. You can also achieve cost savings and efficiency.
 
 ![Graph showing the difference between pay as you go Azure resources and Reserved Instance pricing.](../media/optimize-it-spend.png)
 
@@ -82,6 +84,10 @@ Protect your workloads quickly with built-in controls and services in Azure acro
 #### Detect threats early with unique intelligence
 
 Identify new threats and respond quickly with services that are informed by real-time global cybersecurity intelligence delivered at cloud scale. These actionable insights are developed by analyzing vast sources including 18 billion Bing web pages, 400 billion emails, 1 billion Windows device updates, and 450 billion monthly authentications. Using machine learning, behavioral analytics, and application-based intelligence, Microsoft data scientists analyze the flood of data in the Microsoft Intelligent Security Graph. The resulting insights inform services in Azure and help you detect threats faster.
+
+## Hybrid flexibility
+
+Hybrid configurations within Azure provide flexibility in when you move your various workloads to Azure. You aren't always able to do everything at once and may have both an on-premises and Azure environment running side-by-side for the foreseeable future. With the hybrid tools available you can not only start to migrate workloads to Azure and modernizing those workloads. You can also gain better management and governance of your workloads on-premises using the hybrid flexibility of Azure. This will better position you to gradually continuing to move those workloads to Azure over an extended period of time as well as to manage both on-premises and Azure workloads within a single, modern environment.
 
 ## Scale applications and workloads on demand
 

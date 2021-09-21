@@ -1,6 +1,6 @@
-Microsoft has developed tools and services that support Azure migrations. These resources include expert guidance, technical tools to move your workloads and databases, and business-focused tools to help with the cloud's economics.
+Microsoft has developed tools and services that support Azure migrations and modernization. These resources include expert guidance, technical tools to move your workloads and databases, and business-focused tools to help with the cloud's economics.
 
-Tools available to support successful Azure migrations:
+Tools available to support successful Azure migrations and modernizations:
 
 - Cloud Adoption Framework for Azure
 - Azure Migrate
@@ -11,13 +11,13 @@ Tools available to support successful Azure migrations:
 
 ## Cloud Adoption Framework for Azure
 
-The [Cloud Adoption Framework](/azure/cloud-adoption-framework/?azure-portal=true) is a collection of documentation, implementation guidance, best practices, and tools that are proven advice from Microsoft designed to accelerate your cloud adoption journey.
+The [Cloud Adoption Framework](/azure/cloud-adoption-framework/?azure-portal=true)(CAF) is a collection of documentation, implementation guidance, best practices, and tools that are proven advice from Microsoft designed to accelerate your cloud adoption journey.
 
 The Cloud Adoption Framework helps you create and implement the business and technology strategies necessary for your organization to succeed in the cloud. It provides best practices, documentation, and tools that cloud architects, IT professionals, and business decision-makers need to achieve short-term and long-term objectives successfully.
 
 ![Graphic showing the Cloud Adoption Framework process.](../media/cloud-adoption-framework-overview-new.png)
 
-By using the Cloud Adoption Framework, organizations can better align their business and technical strategies to ensure success. Watch the following video to learn more.
+By using the Cloud Adoption Framework, organizations can better align their business and technical strategies to ensure success.
 
 The Cloud Adoption Framework brings together cloud adoption methodologies based on input from Microsoft employees, partners, and customers. It provides a set of tools, guidance, and narratives that help shape technology, business, and people strategies for driving desired business outcomes during your cloud adoption effort. Review the guidance for each methodology:
 
@@ -30,7 +30,7 @@ The Cloud Adoption Framework brings together cloud adoption methodologies based 
 
 ![Azure portal shows the Azure Migrate dashboard.](../media/azure-migrate.png)
 
-Tailwind Traders can use a comprehensive approach to migrating its application and datacenter estate. Get support for critical migration workloads like Windows, SQL Server, and Linux Server, databases, data, web apps, and virtual desktops. Migrate to destinations like Azure Virtual Machines, Azure VMware Solution, Azure App Service, and Azure SQL Database. Migrations are holistic across VMware, Hyper-V, physical servers, and cloud-to-cloud migration.
+Tailwind Traders can use a comprehensive approach to migrating its application and datacenter estate. Get support for critical migration workloads like Windows Server, SQL Server, and Linux Server, databases, data, web apps, and virtual desktops. Migrate to destinations like Azure Virtual Machines, Azure VMware Solution, Azure App Service, and Azure SQL Database. Migrations are holistic across VMware, Hyper-V, physical servers, and cloud-to-cloud migration.
 
 Azure Migrate provides the following benefits:
 
