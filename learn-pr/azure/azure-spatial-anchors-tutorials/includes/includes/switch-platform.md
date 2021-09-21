@@ -2,7 +2,7 @@
 
 * In the Unity menu, select **Window** > **Package Manager**  to open the Package Manager window, then verify that **AR Foundation** > **4.1.7** version is installed.
 
-    :::image type="content" source="../../media/install-package.png" alt-text="Screenshot of install package through package manager" lightbox="../../media/install-package.png":::
+    :::image type="content" source="../../media/install-package.png" alt-text="Screenshot of install package through package manager." lightbox="../../media/install-package.png":::
 
 ## Import the tutorial assets
 
@@ -15,7 +15,7 @@
 
     After you've imported the tutorial assets your Project window should look similar to this image:
 
-    :::image type="content" source="../../media/install-azure-spatial-anchors.png" alt-text="Screenshot of Install Azure Spatial Anchors package" lightbox="../../media/install-azure-spatial-anchors.png":::
+    :::image type="content" source="../../media/install-azure-spatial-anchors.png" alt-text="Screenshot of Install Azure Spatial Anchors package." lightbox="../../media/install-azure-spatial-anchors.png":::
 
     > [!Note]
     > If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' is obsolete, you can ignore these warnings.
@@ -26,7 +26,7 @@
 
 * In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** > **4.0.12** version and click the Install button to install the package:
 
-    :::image type="content" source="../../media/install-ar-foundation.png" alt-text="Screenshot of Install AR Foundation package" lightbox="../../media/install-ar-foundation.png":::
+    :::image type="content" source="../../media/install-ar-foundation.png" alt-text="Screenshot of Install AR Foundation package." lightbox="../../media/install-ar-foundation.png":::
 
 ## Import the tutorial assets
 
@@ -39,7 +39,7 @@
 
     After you've imported the tutorial assets your Project window should look similar to this image:
 
-    :::image type="content" source="../../media/import-tutorial-assests.png" alt-text="Screenshot of Import tutorial assests" lightbox="../../media/import-tutorial-assests.png":::
+    :::image type="content" source="../../media/import-tutorial-assests.png" alt-text="Screenshot of Import tutorial assests." lightbox="../../media/import-tutorial-assests.png":::
 
     > [!Note]
     > If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' is obsolete, you can ignore these warnings.
@@ -50,7 +50,7 @@
 
 * In the Unity menu, select Window > Package Manager to open the Package Manager window, then select AR Foundation > 3.1.3 version and click the Install button to install the package:
 
-    :::image type="content" source="../../media/install-ar-foundation-package.png" alt-text="Screenshot of Install AR Foundation package - Legacy WSA" lightbox="../../media/install-ar-foundation-package.png":::
+    :::image type="content" source="../../media/install-ar-foundation-package.png" alt-text="Screenshot of Install AR Foundation package - Legacy WSA." lightbox="../../media/install-ar-foundation-package.png":::
 
 ## Import the tutorial assets
 
@@ -63,7 +63,7 @@
 
     After you've imported the tutorial assets your Project window should look similar to this image:
 
-    :::image type="content" source="../../media/import-azure-spatial-anchors-package.png" alt-text="Screenshot of Import AzurespatialAnchors package - Legacy WSA" lightbox="../../media/import-azure-spatial-anchors-package.png":::
+    :::image type="content" source="../../media/import-azure-spatial-anchors-package.png" alt-text="Screenshot of Import AzurespatialAnchors package - Legacy WSA." lightbox="../../media/import-azure-spatial-anchors-package.png":::
 
     > [!Note]
     > If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' is obsolete, you can ignore these warnings.

@@ -4,11 +4,11 @@ In this tutorial, you'll learn how to save Azure Spatial Anchors across multiple
 
 1. In the Hierarchy window, expand the **ButtonParent** object. Select the last four child button objects. In the Inspector window, check the checkbox next to the name field to make all the objects active.
 
-    :::image type="content" source="../media/activate-object.png" alt-text="Screenshot of Activating Objects" lightbox="../media/activate-object.png":::
+    :::image type="content" source="../media/activate-object.png" alt-text="Screenshot of Activating Objects." lightbox="../media/activate-object.png":::
 
 2. In the Hierarchy window, select the **ButtonParent** objects. Then in the Inspector window, locate the **GridObjectCollection** component and click the **Update Collection** button to update the position of all the ButtonParent object's child objects.
 
-    :::image type="content" source="../media/update-position.png" alt-text="Screenshot of updating position of ButtonParent" lightbox="../media/update-position.png":::
+    :::image type="content" source="../media/update-position.png" alt-text="Screenshot of updating position of ButtonParent." lightbox="../media/update-position.png":::
 
 ## Persist Azure Spatial Anchors between app sessions
 
@@ -16,7 +16,7 @@ In this section, you'll learn how to save and retrieve the Azure Anchor ID to an
 
 1. In the Hierarchy window, expand the **ButtonParent** object and locate the two buttons named **SaveAzureAnchorIdToDisk** and **GetAzureAnchorIdFromDisk**:
 
-    :::image type="content" source="../media/locate.png" alt-text="Screenshot describing Locate SaveAzure and GetAzure" lightbox="../media/locate.png":::
+    :::image type="content" source="../media/locate.png" alt-text="Screenshot describing Locate SaveAzure and GetAzure." lightbox="../media/locate.png":::
 
 2. Follow the same steps as in the configuring the buttons to operate the scene instructions from the previous tutorial to configure the **Interactable (Script)** component on each of the two buttons:
 
@@ -45,7 +45,7 @@ There are many ways to transfer Azure Anchor IDs between devices. In this exampl
 
 1. In the Hierarchy window, expand the **ButtonParent** object. Locate the two buttons named **ShareAzureAnchorIdToNetwork** and **GetAzureAnchorIdFromNetwork**:
 
-     :::image type="content" source="../media/share-get-azure.png" alt-text="Screenshot of ShareAzure and GetAzure" lightbox="../media/share-get-azure.png":::
+     :::image type="content" source="../media/share-get-azure.png" alt-text="Screenshot of ShareAzure and GetAzure." lightbox="../media/share-get-azure.png":::
 
 2. Follow the same steps as in the configuring the buttons to operate the scene instructions from the previous tutorial to configure the **Interactable (Script)** component on each of the two buttons:
 
