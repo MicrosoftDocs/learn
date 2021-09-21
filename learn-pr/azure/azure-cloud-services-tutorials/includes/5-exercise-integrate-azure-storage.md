@@ -1,6 +1,6 @@
 In this module, you'll learn how to save entity data to Azure Table storage and thumbnail images to Azure Blob storage. This feature will allow us to store and retrieve *Tracked Objects* with data like ID, Name, Thumbnail Image, etc. across sessions and devices to the cloud.
 
-## Understand azure storage
+## Understand Azure storage
 
 **Azure storage** is a Microsoft storage solution on the cloud that can cover many scenarios and requirements. It can scale massively and is easily approachable by developers. All services can be consumed under the umbrella of an **Azure storage Account**. For our use case, we will use *Table storage* and *Blob storage*.
 
@@ -21,13 +21,13 @@ For of the demo application, you need one Blob Container to store the images.
 
 Learn more about [Azure Blob storage](/azure/storage/blobs/storage-blobs-introduction).
 
-## Prepare azure storage
+## Prepare Azure storage
 
 To consume the Azure storage services, you'll need an Azure storage account. To create a storage account, see [Create a storage account](/azure/storage/common/storage-account-create). To learn more about storage accounts, see [Azure storage account overview](/azure/storage/common/storage-account-overview).
 
 Once you've a storage account, you can retrieve the connection string from the **Azure portal** which will be needed in the next section of this lesson.
 
-### Optional azure storage explorer
+### Optional Azure storage explorer
 
 While you can see and verify all data changes from the UI inside the application, we recommend installing [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/). This tool allows you to visually see the data in the Azure storage and is of great help when debugging and learning.
 
@@ -47,7 +47,7 @@ While you can see and verify all data changes from the UI inside the application
 
     The **DataManager (script)** is responsible for talking to the **Table storage** and **Blob storage** which is consumed by other controller scripts on the UI components.
 
-## Write and read data from azure table storage
+## Write and read data from Azure table storage
 
 With everything prepared, it's time to create a *Tracked Object*.
 
@@ -64,7 +64,7 @@ With everything prepared, it's time to create a *Tracked Object*.
     > [!TIP]
     > If you've installed the [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/) then look into the *objects* table and you'll see there the created *Tracked Object*.
 
-## Upload and download image from azure blob storage
+## Upload and download image from Azure blob storage
 
 In this section, you'll use the Azure Blob storage to upload and download images that will be used as thumbnails for *Tracked Objects*.
 
@@ -75,7 +75,7 @@ In this section, you'll use the Azure Blob storage to upload and download images
 
 2. Now rerun the application and search for the *Tracked Object* and the previously uploaded image should appear as thumbnail.
 
-## Delete image from azure blob storage
+## Delete image from Azure blob storage
 
 In the previous section you uploaded new images to Azure Blob storage, in this section you'll delete an image thumbnail for *Tracked Objects*.
 

@@ -1,6 +1,6 @@
 In this module, you'll learn how to use **Azure Bot Service** in the **HoloLens 2** demo application to add Language Understanding (LUIS) and letting the Bot assist the user when searching for **Tracked Objects**. This module is a two-part module where in the first part, you create the Bot with the [Bot Composer](/composer/introduction) as a code-free solution and take a quick look in the Azure Function that feeds the Bot with the needed data. Then, in the second part, you use the **BotManager (script)** in the Unity project to consume the hosted Bot Service.
 
-## Understand azure bot service
+## Understand Azure Bot Service
 
 The **Azure Bot Service** empowers developers to create intelligent bots that can maintain natural conversation with users thanks to **LUIS**. A conversational Bot is a great way to expand the ways a user can interact with your application. A Bot can act as a knowledge base with a [QnA Maker](/Azure/bot-service/bot-builder-howto-qna?preserve-view=true&tabs=cs&view=Azure-bot-service-4.0) to maintaining sophisticated conversation with the power of [Language Understanding (LUIS)](/Azure/bot-service/bot-builder-howto-v4-luis?preserve-view=true&tabs=csharp&view=Azure-bot-service-4.0).
 
@@ -11,7 +11,7 @@ Learn more about [Azure Bot Service](/Azure/bot-service/bot-service-overview-int
 Before you can use the bot in the Unity application, you need to develop it, provide it with data and host it on **Azure**.
 The goal of the bot is to have the abilities to tell how many *Tracked Objects* are stored in the database, find a *Tracked Object* by its name, and tell the user some basic information about it.
 
-### A quick look into tracked objects azure function
+### A quick look into tracked objects Azure function
 
 You're about to start creating the Bot, but to make it useful you need to give it a resource from which it can pull data. Since the *Bot* can count the amount of **Tracked Objects**, find specific ones by name and tell details, you'll use a Azure Function that has access to the **Azure Table storage**.
 
@@ -143,7 +143,7 @@ It asks the user for the *name* of the **Tracked Object** it wants to know more 
     > [!TIP]
     > Feel free playing around with Bot by adding more trigger phrases, new responses or conversation branching.
 
-## Part 2 - Put everything together in unity
+## Part 2 - Put everything together in Unity
 
 ### Prepare the scene
 

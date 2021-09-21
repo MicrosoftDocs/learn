@@ -27,7 +27,7 @@ You will use [Azure Storage](https://azure.microsoft.com/services/storage/) for 
 
 With [Azure Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) (part of the [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/)) you can associate to *Tracked Objects* a set of images, train a machine learning model on the set and detect the *Tracked Object*.
 
-### Azure spatial anchors
+### Azure Spatial Anchors
 
 To store a *Tracked Object* location and give a guided directions to find it, you use [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors/).
 
@@ -35,7 +35,7 @@ To store a *Tracked Object* location and give a guided directions to find it, yo
 
 The application is mainly driven by traditional UI, so you use the [Azure Bot Service](https://azure.microsoft.com/services/bot-service/) to add some personality and act as a new interaction method.
 
-## Create and prepare the unity project
+## Create and prepare the Unity project
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
@@ -50,12 +50,12 @@ First, follow the Initializing your project and first application, excluding the
 
 Then follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is **DefaultXRSDKConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
-## Install in-built unity packages
+## Install in-built Unity packages
 
 1. In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** and click the **Install** button to install the package:
 
     :::image type="content" source="../media/ar-foundation.png" alt-text="Screenshot of Unity Package Manager window with AR Foundation selected" lightbox="../media/ar-foundation.png":::
-b
+
     > [!NOTE]
     > You are installing the AR Foundation package because the Azure Spatial Anchors SDK requires it, which you will import in the next section.
 
@@ -149,14 +149,14 @@ While the project yet has to be filled with content, you have to perform some pr
 
     :::image type="content" source="../media/capabilty.png" alt-text="Screenshot of Unity Capabilities" lightbox="../media/capabilty.png":::
 
-### 2. Deploy the app to your holoLens 2
+### 2. Deploy the app to your HoloLens 2
 
 Not all features that you will use in this tutorial series can run inside the Unity editor, this means that you need to be familiar with deploying the application to your HoloLens 2 device.
 
 > [!TIP]
 > For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the Getting started tutorials - Build your application to your device instructions.
 
-### 3. Run the app on your holoLens 2 and follow the in-app instructions
+### 3. Run the app on your HoloLens 2 and follow the in-app instructions
 
 > [!CAUTION]
 > All Azure Services uses the internet, so make sure your device is connected to the internet.
