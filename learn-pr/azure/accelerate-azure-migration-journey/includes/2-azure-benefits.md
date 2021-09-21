@@ -1,17 +1,17 @@
-Many organizations are interested in moving to the cloud, but the benefits aren't always clear. Moving to the cloud is a fundamental shift in how systems are purchased, designed, deployed, and secured. As a solution architect for Tailwind Traders, you need to understand the cloud's benefits and align your business and technical goals to enjoy them. 
+Many organizations are interested in moving to the cloud, but the benefits aren't always clear. Moving to the cloud is a fundamental shift in how systems are purchased, designed, deployed, and secured. As a solution architect for Tailwind Traders, you need to understand the cloud's benefits and align your business and technical goals to enjoy them.
 
 The cloud delivers fundamental technology benefits that can help your enterprise execute on multiple goals:
 
+- Application modernization
 - Optimize costs
 - Build resilience and security
 - Move what you want, when you with hybrid flexibility
 - Scale applications and workloads on demand
-- Application modernization
 - Faster innovation with a managed platform
 
 ## Optimize costs
 
-Datacenters are expensive. The costs of real estate, power, servers, storage, networks, and operations staff affect a company's bottom line. When customers migrate to Azure and modernizing workloads, they convert upfront capital expenditures to operating expenditures that can be paid over time. Your cash flow is improved by only paying for what you need. You can also achieve cost savings and efficiency.
+Datacenters are expensive. The costs of real estate, power, servers, storage, networks, and operations staff affect a company's bottom line. When customers migrate to modernize workloads in Azure, they convert upfront capital expenditures to operating expenditures that can be paid over time. Your cash flow is improved by only paying for what you need. You can also achieve cost savings and efficiency.
 
 ![Graph showing the difference between pay as you go Azure resources and Reserved Instance pricing.](../media/optimize-it-spend.png)
 
@@ -87,7 +87,7 @@ Identify new threats and respond quickly with services that are informed by real
 
 ## Hybrid flexibility
 
-Hybrid configurations within Azure provide flexibility in when you move your various workloads to Azure. You aren't always able to do everything at once and may have both an on-premises and Azure environment running side-by-side for the foreseeable future. With the hybrid tools available you can not only start to migrate workloads to Azure and modernizing those workloads. You can also gain better management and governance of your workloads on-premises using the hybrid flexibility of Azure. This will better position you to gradually continuing to move those workloads to Azure over an extended period of time as well as to manage both on-premises and Azure workloads within a single, modern environment.
+Hybrid configurations deployed to Azure provide flexibility in the timing of migration or moderization of workloads. Tailwind Traders isn't required to move everything at once and may have both an on-premises and Azure environment running side-by-side for the foreseeable future. With the hybrid tools available you can not only start to migrate workloads to Azure and modernizing those workloads. You can also gain better management and governance of your workloads on-premises using the hybrid flexibility of Azure. This will better position you to gradually continue updating workloads over an extended period of time as well as to manage both on-premises and Azure workloads within a single, modern environment.
 
 ## Scale applications and workloads on demand
 
