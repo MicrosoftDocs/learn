@@ -17,7 +17,7 @@ In this exercise, you'll learn how to enable eye-tracking for HoloLens 2 and add
 
     :::image type="content" source="../media/base-8-section-2-step-1-1.png" alt-text="Screenshot of Unity MixedRealityToolkit component with newly created profiles applied and eye tracking enabled" lightbox="../media/base-8-section-2-step-1-1.png":::
 
-## Enable simulated eye-tracking for the Unity editor
+## Enable simulated eye-tracking for the unity editor
 
 * In the Hierarchy window, select the MixedRealityToolkit object, then in the Inspector window, navigate to the Input tab, and then:
 
@@ -26,6 +26,7 @@ In this exercise, you'll learn how to enable eye-tracking for HoloLens 2 and add
     3) Locate **Eye Gaze Simulation** and set the **Default Eye Gaze Simulation Mode** to **Camera Forward Axis**
 
     :::image type="content" source="../media/base-8-section-3-step-1-1.png" alt-text="Screenshot of setting Default Eye Gaze Simulation Mode to Camera Forward Axis" lightbox="../media/base-8-section-3-step-1-1.png":::
+
 
 ## Add eye-tracking to objects
 
@@ -36,6 +37,7 @@ In this exercise, you'll learn how to enable eye-tracking for HoloLens 2 and add
 2. With all three Button objects still selected, in the Inspector window use the **Add Component** button to add the **EyeTrackingTarget** component to all the selected objects:
 
     :::image type="content" source="../media/base-8-section-4-step-1-2.png" alt-text="Screenshot of adding EyeTrackingTarget component" lightbox="../media/base-8-section-4-step-1-2.png":::
+
 
 3. In the Hierarchy window, expand **RoverExplorer** > **Buttons** > **Hints** > **SeeItSayItLabel** > **TextMeshPro**. Then in the Hierarchy window, select the Hints button object, and configure the **EyeTrackingTarget** component as follows:
 

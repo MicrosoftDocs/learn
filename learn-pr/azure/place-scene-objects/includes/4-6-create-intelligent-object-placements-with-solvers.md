@@ -2,11 +2,11 @@ It would be convenient to have some necessary menus to follow you around instead
 
 Solvers provide a wide range of behavior to attach objects to other objects or systems. One example would be the tag-along object that appears in front of you (based on the camera) every time you moves.
 
-## DirectionalIndicator
+## Directional indicator
 
 Type of solver that helps tag-along components that orient themselves to the wanted direction of the object in space.
 
-## TapToPlace
+## Tap to place
 
 TapToPlace is a far component that helps in placing an object over a surface. This component is valuable when you want to place objects on the spatial mesh.
 

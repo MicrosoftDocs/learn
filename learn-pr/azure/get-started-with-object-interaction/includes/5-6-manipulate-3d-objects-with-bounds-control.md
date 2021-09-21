@@ -6,6 +6,6 @@ What fun would it be when you place holograms in the surrounding, but things get
 
 * **NearInteractionGrabbable**: The NearInteractionGrabbable component helps you grab the object near his/her tracked hands.
 
-## Bounds Control
+## Bounds control
 
 The BoundsControl presents a simple capability for remodeling objects in mixed reality. A bounds control will display a container across the hologram to suggest that it can be interacted with. Handles at the corners and edges of the box will permit scaling, rotating, or translating the object. The bounds control additionally reacts to your input. On HoloLens 2, for example, the bounds control responds to finger proximity, offering visible remarks to help understand the space from the object. All interactions and visuals may be effortlessly customized.
