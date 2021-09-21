@@ -7,27 +7,27 @@ In the Project Settings window, expand the **Publishing Settings**, then scroll 
 * Internet Clint server
 * Private Network Client Server
 
-:::image type="content" source="../media/tutorial-2-section-0-step-1-1.png" alt-text="Player settings" lightbox="../media/tutorial-2-section-0-step-1-1.png":::
+:::image type="content" source="../media/player-settings.png" alt-text="Screenshot of Player settings." lightbox="../media/player-settings.png":::
 
 [!INCLUDE[](includes/switch-platform.md)]
 
-## Build your application to PC
+## Build your application to pc
 
 [!INCLUDE[](includes/build-your-application-to-pc.md)]
 
-## Test Holographic Remoting remote application
+## Test holographic remoting remote application
 
 To connect your PC application to your HoloLens 2, do the following:
 
-### 1. Install the Remoting Player application on HoloLens 2 device
+### 1. Install the remoting player application on HoloLens 2 device
 
-* On your HoloLens 2, visit the Store app and search for **"Remoting Player."**
-* Select the **Remoting Player** app.
-* Tap **Install** to download and install the app.
+1. On your HoloLens 2, visit the Store app and search for **"Remoting Player."**
+2. Select the **Remoting Player** app.
+3. Tap **Install** to download and install the app.
 
-### 2. Connect the Holographic Remoting PC app to the Remoting Player
+### 2. Connect the holographic remoting pc app to the remoting player
 
-* Start the **Remoting Player** on your HoloLens.
-* Take note of the HoloLens **IP address**. It will be displayed as a hologram by the **Remoting Player** as soon as it launches.
-* Open the Holographic Remoting PC application on your PC.
-* Once the application is launched, enter the **IP address** and click the **Connect** button to connect.
+1. Start the **Remoting Player** on your HoloLens.
+2. Take note of the HoloLens **IP address**. It will be displayed as a hologram by the **Remoting Player** as soon as it launches.
+3. Open the Holographic Remoting PC application on your PC.
+4. Once the application is launched, enter the **IP address** and click the **Connect** button to connect.
