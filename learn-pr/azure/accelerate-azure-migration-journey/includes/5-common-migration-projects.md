@@ -138,7 +138,7 @@ Learn more about [deploying Azure VMware Solutions](https://docs.microsoft.com/a
 
 Azure is SAP-certified to run your mission-critical SAP applications. Azure is the industry's most performant and scalable SAP cloud infrastructure, offering 192-gigabyte to 12-terabyte SAP HANA–certified virtual machines in more regions than any other public cloud provider.
 
-![Graphic showing how to migrate to SAP to Azure.](../media/migrate-modernize-SAP.png)
+![Graphic showing how to migrate to SAP to Azure.](../media/migrate-modernize-sap.png)
 
 A commissioned [Forrester Consulting TEI study](https://azure.microsoft.com/resources/sap-on-azure-forrester-tei/?azure-portal=true) showed that organizations can experience a three-year ROI of more than 100 percent after moving their legacy SAP infrastructure to Azure, with investment payback in nine months.
 

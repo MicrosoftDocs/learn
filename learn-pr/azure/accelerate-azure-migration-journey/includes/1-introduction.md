@@ -20,10 +20,10 @@ Your role is to evaluate the following:
 At the end of this module, you will be able to:
 
 - List the drivers and benefits of moving to Azure.
-- Describe the phases of a cloud migration and modernization journey and common migration and modernization projects.
-- List the Azure migration and modernization tools and programs that enable successful move to Azure.
+- Describe the phases of a cloud migration and modernization journey along with common migration and modernization projects.
+- List the Azure migration and modernization tools and programs that enable a successful move to Azure.
 
 ## Prerequisites
 
-- General understanding of Cloud platforms.
-- Understanding of your organization’s migration and modernization plan and the types of workloads you will need to migrate and modernization.
+- General understanding of cloud platforms
+- Understanding your organization's migration and modernization plan and the types of workloads you'll need to migrate and modernize.

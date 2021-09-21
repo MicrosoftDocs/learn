@@ -1,6 +1,6 @@
 One crucial part of building a cloud migration and modernization strategy for an organization is identifying what is triggering cloud adoption. Some triggers may prompt quick action, while others may call for a more active, hands-on approach.
 
-Business and IT driven goals point to migration and modernization triggers, which determine the strategy for moving applications to the cloud. For IT based triggers **migration** of your workloads is best. When presented with Business focused goals replatforming or **modernization** of your applications is recommend.
+Business and IT-driven goals point to migration and modernization triggers, which determine the strategy for moving applications to the cloud. For IT-based triggers *migration* of your workloads is best. When you're presented with business-focused goals, we recommend *modernizating* your applications.
 
 ![Graphic showing the two migration paths of Migration or Modernization.](../media/migrate-or-modern-2.png)
 
@@ -101,8 +101,8 @@ Modernization triggers are business-oriented and focused on future development o
 
 These triggers include:
 
-- Scale web apps and infrastructure
-- Application innovation
+- Scaling web apps and infrastructure
+- Focus on innovation
 - Faster time to market
 - Cost-optimizing applications
 - Focus on innovation
@@ -123,9 +123,12 @@ By moving to managed services in the cloud, organizations can modernize their bu
 
 ### Application innovation
 
-Here are some of the opportunities that the cloud gives embarking on application innovation:
+Here are some of the opportunities that the cloud presents when embarking on innovation:
 
-- Moving to the cloud can help to significantly reduce or eliminate operational responsibilities, allowing you to focus on innovating your products and unlocking new capabilities for customers.
+- Moving to the cloud can help to significantly reduce or eliminate operational responsibilities significantly. For this reason, you can focus on innovating your products and offering new capabilities for customers.
+- Azure can help you better understand and anticipate users' needs with a full set of AI services and capabilities. You can use these capabilities to infuse your apps, websites, and bots with intelligent algorithms. You can also gain instant and continuous insights that can help inform your decisions by taking advantage of cloud-native analytics services.
+- With cloud-native applications, you can develop and deploy quickly, test safely, and iterate rapidly.
+- You can gain time and resources by letting Microsoft take care of patching operating systems, upgrading operating system, and monitoring for vulnerabilities while you focus on innovation and performing tasks that can bring value to your business.
 
 - Azure can help you better understand and anticipate users’ needs with a full set of AI services and capabilities, allowing you to infuse your apps, websites, and bots with intelligent algorithms. You can also gain instant and continuous insights that can help 
 inform your decisions by taking advantage of cloud-native analytics services.
@@ -134,22 +137,15 @@ inform your decisions by taking advantage of cloud-native analytics services.
 
 ### Faster time to market
 
-Application modernization ofter types provide the ability to provide a much faster time to market as well as being able to more quickly update applications. By modernizing on the cloud, you aren't constrained by resources that in the past may have slowed down your development efforts. You also can take advantages of service that would have taken significantly more time and resources to stand up in the past. Some examples of this may be:
+Application modernization enables Tailwind Traders to develop and bring applications to market much faster.  Developing on a modern cloud, like Azure, means developers are not constrained by the lead time to procure and build on-premises systems and databases. These extended lead times for infrastructure slowed down your development efforts in the past. Some examples of this may be:
 
-- You can stand up Azure App Service in a matter of minutes to start developing a website once modernized on the platform. Previously you may have had to create a new server, patch the servers, install Internet Information Services (IIS), and make any necessary configuration changes. Now you can get to developing your application immediately rather than waiting for days to be able to start.
+- You can stand up Azure App Service in a matter of minutes to start developing a website. Previously you may have had to create a new server, patch the servers, install Internet Information Services (IIS), and make any necessary configuration changes. Now you can get to developing your application immediately rather than waiting for days to start.
+- Modernizing applications using serverless in Azure once again provides the ability to bring solutions and updates to the market with even less infrastructure.  Leveraging services like Azure Kubernetes Services, Azure Functions, Azure Logic Apps, Azure Cognitive Services, developers have many options for building applications. 
+Azure supports the use of DevOps tools, including GitHub, to build and deploy modern applications. Using GitHub actions, you build and release applications and updates faster to get ahead of the competition and keep your customers happy.
 
-- Modernizing on serverless service in Azure once again provides the ability to bring solutions and updates to market much quicker by being able to quickly leverage services like Kubernetes, Functions, Logic Apps, Azure Cognitive Services, Cosmos DB and other services. Before modernizing applications on these services, it may have taken weeks of programing to implement the functionality you can gain by modernizing on these services. By rewriting your applications to take advantage of Azure serverless, you can bring an application to market it significantly less time than before.
-
-Modernizing on Azure allows you to release applications and updates faster to keep up with or even get ahead of the competition and keep your customers happy.
 
 ### Cost-optimizing applications
 
-While simply migrating to the cloud can help with some cash flow challenges like CAPEX and OPEX or data center renewals. Modernizing your applications can help bring cost optimization those applications. Simple moving a web server from on-premises to Azure helps CAPEX or data center contracts, but modernizing an application from a web server to Azure App Service or from SQL to Azure SQL, or servers to containers can help with being able to scale your application up and down, or better sizing your hosting to your application.
+Modernizing your applications changes the cost structure of your applications. In traditional development, the infrastructure that services the application must be purchased and scaled for the busiest day possible for that application. With modernized cloud applications, the infrastructure is scaled by Azure to meet the demand. Tailwind Traders will only have to pay for the services consumed, thus optimizing the costs associated with delivering the service to customers.
 
-Modernizing leads to cost savings on and application-by-application basis by only paying for the resources that you need when you need them.
-
-### Focus on innovation
-
-Maintaining an infrastructure, whether that be servers in your own data center or servers in Azure, requires a certain level of maintenance. You need to patch operating systems, upgrade operating system, monitor for vulnerabilities, and spend time an effort on those traditional maintenance activities.
-
-By modernizing your applications, you can gain time and resources by letting Microsoft take care of those things for you while you focus on innovation and performing tasks that can bring value to your business.
+Modernizing leads to cost savings on an application-by-application basis by only paying for the resources that you need when you need them.
