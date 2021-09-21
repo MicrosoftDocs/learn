@@ -136,7 +136,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
 1. Select the latest (top) delivery entry by selecting the ellipsis (**...**) button.
 
-1. Select **Redeliver**. In the **Redliver payload?** dialog box that appears, select **Yes, redeliver this payload**.
+1. Select **Redeliver**. In the **Redeliver payload?** dialog box that appears, select **Yes, redeliver this payload**.
 
     This action simulates you changing your Wiki page again.
 

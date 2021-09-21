@@ -32,7 +32,7 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
 
 1. On the top right, select **Add webhook**. GitHub may ask you to confirm your password for GitHub.
 
-1. On the **Webhooks/ Add webhook** pane, eenter the following values for each setting.
+1. On the **Webhooks/ Add webhook** pane, enter the following values for each setting.
 
     | Setting  | Value |
     | ---------------- |
