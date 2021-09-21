@@ -17,17 +17,17 @@ In this section, you will learn how to configure the scene and make the necessar
 
 1. In the Project window, navigate to the **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager**
 
-    :::image type="content" source="../media/anchor-manager-prefab.png" alt-text="Screenshot of Unity with AnchorManager prefab selected" lightbox="../media/anchor-manager-prefab.png":::
+    :::image type="content" source="../media/anchor-manager-prefab.png" alt-text="Screenshot of Unity with AnchorManager prefab selected." lightbox="../media/anchor-manager-prefab.png":::
 
 2. From the **Manager** folder, drag and drop the prefab **Anchor Manager** into the scene Hierarchy.
 
 3. Select **Anchor Manager** GameObject in the Hierarchy, and in the Inspector section, you will find **Spatial Anchor Manager** (Script). Find account ID and key field and add the credentials which you had created in the prerequisite in the earlier stage.
 
-    :::image type="content" source="../media/add-anchro-manager-prefab.png" alt-text="Screenshot of Unity with newly added AnchorManager prefab still selected" lightbox="../media/add-anchro-manager-prefab.png":::
+    :::image type="content" source="../media/add-anchro-manager-prefab.png" alt-text="Screenshot of Unity with newly added AnchorManager prefab still selected." lightbox="../media/add-anchro-manager-prefab.png":::
 
 4. Now find the **Scene Controller** object in your scene Hierarchy and select it. You will see the **Scene Controller** Inspector.
 
-    :::image type="content" source="../media/scene-controller-inspector.png" alt-text="Screenshot of Unity with SceneController script component configured" lightbox="../media/scene-controller-inspector.png":::
+    :::image type="content" source="../media/scene-controller-inspector.png" alt-text="Screenshot of Unity with SceneController script component configured." lightbox="../media/scene-controller-inspector.png":::
 
 5. You will observe that the **Anchor Manager** field in the **Scene Controller** component is empty, drag and drop the **Anchor Manager** from the Hierarchy in the scene into that field and save the scene.
 

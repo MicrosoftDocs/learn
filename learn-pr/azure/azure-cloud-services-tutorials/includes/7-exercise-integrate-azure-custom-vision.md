@@ -19,11 +19,11 @@ Follow this [quickstart tutorial](/azure/cognitive-services/custom-vision-servic
 
 1. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder.
 
-    :::image type="content" source="../media/object-detection-manager-prefab.png" alt-text="Screenshot of Unity with Project window showing path to ObjectDetectionManager prefab" lightbox="../media/object-detection-manager-prefab.png":::
+    :::image type="content" source="../media/object-detection-manager-prefab.png" alt-text="Screenshot of Unity with Project window showing path to ObjectDetectionManager prefab." lightbox="../media/object-detection-manager-prefab.png":::
 
 2. From there drag the prefab **ObjectDetectionManager** into the scene Hierarchy.
 
-    :::image type="content" source="../media/object-detection-manager-configure.png" alt-text="Screenshot of Unity with ObjectDetectionManager script component configuration fields shown in Inspector" lightbox="../media/object-detection-manager-configure.png":::
+    :::image type="content" source="../media/object-detection-manager-configure.png" alt-text="Screenshot of Unity with ObjectDetectionManager script component configuration fields shown in Inspector." lightbox="../media/object-detection-manager-configure.png":::
 
 3. In the Hierarchy window, locate the **ObjectDetectionManager** object and select it.
 The **ObjectDetectionManager** prefab contains the **ObjectDetectionManager (script)** component and as you can see from the Inspector window it depends on Azure settings and Project settings.
@@ -42,11 +42,11 @@ In the [custom vision](https://www.customvision.ai/projects) dashboard, open the
 
 1. Now with the **ObjectDetectionManager (script)** setup correctly, find the **SceneController** object in your scene Hierarchy and select it.
 
-    :::image type="content" source="../media/configure-scene-contoller.png" alt-text="Screenshot of Unity with SceneController script component configuration fields shown in Inspector" lightbox="../media/configure-scene-contoller.png":::
+    :::image type="content" source="../media/configure-scene-contoller.png" alt-text="Screenshot of Unity with SceneController script component configuration fields shown in Inspector." lightbox="../media/configure-scene-contoller.png":::
 
 2. You see *Object Detection Manager* field in the **SceneController** component is empty, drag the **ObjectDetectionManager** from the Hierarchy into that field and save the scene.
 
-    :::image type="content" source="../media/configure-scene.png" alt-text="Screenshot of Unity with SceneController script component configured" lightbox="../media/configure-scene.png":::
+    :::image type="content" source="../media/configure-scene.png" alt-text="Screenshot of Unity with SceneController script component configured." lightbox="../media/configure-scene.png":::
 
 ## Take and upload images
 

@@ -8,7 +8,7 @@ Azure Storage includes object, file, disk, queue, and table storage. There are a
 
 With Azure Custom Vision (part of the Azure Cognitive Services) you can associate to Tracked Objects a set of images, train a machine learning model on the set and detect the Tracked Object.
 
-## Azure spatial anchors
+## Azure Spatial Anchors
 
 Azure Spatial Anchors is a managed cloud service and platform that enables multi-user, spatially aware mixed reality and augmented reality (MR/AR) apps for HoloLens, iOS devices with ARKit, and Android devices with ARCore.
 
