@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.azure.beginner-hololens-2-tutorials
 metadata:
-  title: 'HoloLens 2 Fundamentals: develop mixed reality applications'
+  title: 'HoloLens 2 fundamentals: develop mixed reality applications'
   description: 'Explore best practices for developing Azure-enabled mixed reality applications with the Mixed Reality Toolkit.'
   ms.date: 09/13/2021
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'HoloLens 2 Fundamentals: develop mixed reality applications'
+title: 'HoloLens 2 fundamentals: develop mixed reality applications'
 prerequisites: |
  - A Windows 10 PC configured with the correct tools installed
  - Windows 10 SDK 10.0.18362.0 or later
