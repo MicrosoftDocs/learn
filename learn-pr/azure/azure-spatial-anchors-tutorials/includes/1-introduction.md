@@ -3,6 +3,7 @@ Welcome to the Azure Spatial Anchors module! Through this module series, you'll 
 Imagine a scenario where you're expected to build an AR+GPS application that gives you detailed information on a real-world object when tracked. To do so, you must have a clear understanding of Spatial Anchors and other resources.
 
 In this module series you'll learn:
+
 * Learn the fundamentals of developing with Azure Spatial Anchors for HoloLens 2
 * Learn how to create spatial anchors and fetch them from Azure
 * Learn how to achieve spatial alignment across multiple app sessions.
