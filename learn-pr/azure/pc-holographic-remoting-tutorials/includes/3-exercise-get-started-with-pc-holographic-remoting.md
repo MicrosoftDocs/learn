@@ -69,7 +69,7 @@ In this section, you'll add scripts to the scene and create button events that d
 
 ### 2. Configure the remaining buttons
 
-1. For each of the remaining buttons, complete the process outlined above to assign functions to the **OnClick ()** events:
+* For each of the remaining buttons, complete the process outlined above to assign functions to the **OnClick ()** events:
 
     * For the PreviousButton object, assign the **ViewButtonControl** > **PreviousModel ()** function.
     * For ClippingButton, select the **ToggleButton** > **ToggleClipping ()** function.
@@ -127,13 +127,13 @@ In the Hierarchy window, select the ModelParent object. Next, expand the **MarsC
 
 In the Hierarchy window, select the **POI-Camera** object. Then, in the Inspector window, locate the Eye Tracking Target (Script) component and configure the **While Looking At Target() & On Look Away()** events as follows:
 
-* In the **None (Object)** field, assign the **POI-Camera ToolTip** object.
-* In the**No Function** dropdown of the **While Looking At Target ()** event, select **GameObject > SetActive (bool)**. Select the check box under it to highlight the tooltip as the triggered action when looking at the target object.
+1. In the **None (Object)** field, assign the **POI-Camera ToolTip** object.
+2. In the**No Function** dropdown of the **While Looking At Target ()** event, select **GameObject > SetActive (bool)**. Select the check box under it to highlight the tooltip as the triggered action when looking at the target object.
 
-    :::image type="content" source="../media/looking-at-target.png" alt-text="Screenshot of Confiure While Looking At Target ()." lightbox="../media/looking-at-target.png":::
+    :::image type="content" source="../media/looking-at-target.png" alt-text="Screenshot of Configure While Looking At Target ()." lightbox="../media/looking-at-target.png":::
 
-* Click the **No Function** dropdown of the **On Look Away ()** event listener. Next, select **GameObject > SetActive (bool)** and leave the check box empty so that hiding the tooltip is the action triggered when you look away from the target object.
+3. Click the **No Function** dropdown of the **On Look Away ()** event listener. Next, select **GameObject > SetActive (bool)** and leave the check box empty so that hiding the tooltip is the action triggered when you look away from the target object.
 
-    :::image type="content" source="../media/looking-at-away.png" alt-text="Screenshot of Confiure On Look Away ()." lightbox="../media/looking-at-away.png":::
+    :::image type="content" source="../media/looking-at-away.png" alt-text="Screenshot of Configure On Look Away ()." lightbox="../media/looking-at-away.png":::
 
 Follow the same process and assign respective tooltip objects to their same MarsCuriosityRover parts' While Looking At Target() & On Look Away() events.
