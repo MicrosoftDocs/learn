@@ -36,15 +36,15 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
     * ModelParent
     * Platform
 
-    :::image type="content" source="../media/add-prefab-1.png" alt-text="Screenshot of Adding prefabs 1" lightbox="../media/add-prefab-1.png":::
+    :::image type="content" source="../media/add-prefab-1.png" alt-text="Screenshot of Adding prefabs 1." lightbox="../media/add-prefab-1.png":::
 
 2. Drag these models from the prefabs folder into the **Hierarchy** window.
 
-    :::image type="content" source="../media/add-prefab-2.png" alt-text="Screenshot of Adding prefabs 2" lightbox="../media/add-prefab-2.png":::
+    :::image type="content" source="../media/add-prefab-2.png" alt-text="Screenshot of Adding prefabs 2." lightbox="../media/add-prefab-2.png":::
 
     To focus on the objects in the scene, you can double-click the ModelParent object and then zoom in:
 
-    :::image type="content" source="../media/focus-objects-scene.png" alt-text="Screenshot of Focus objects on scene" lightbox="../media/focus-objects-scene.png":::
+    :::image type="content" source="../media/focus-objects-scene.png" alt-text="Screenshot of Focus objects on scene." lightbox="../media/focus-objects-scene.png":::
 
     >[!Tip]
     >If you feel that the large icons in your scene are distracting (for example, the large framed 'T' icons), you can hide them by [toggling the Gizmos](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the "off" position.
@@ -57,15 +57,15 @@ In this section, you'll add scripts to the scene and create button events that d
 
 1. In the Hierarchy window, expand the **ButtonParent** object and select the next button. In the Inspector window, locate the **Interactable (Script)** component and click on plus sign icon ("+") under **OnClick ()** event.
 
-    :::image type="content" source="../media/add-interactable.png" alt-text="Screenshot of expanding the Interactable script" lightbox="../media/add-interactable.png":::
+    :::image type="content" source="../media/add-interactable.png" alt-text="Screenshot of expanding the Interactable script." lightbox="../media/add-interactable.png":::
 
 2. With the **NextButton** object still selected in the Hierarchy window, drag the **ButtonParent** object from the Hierarchy window into the empty **None (Object)** field of the event you just added to make the ButtonParent object listen for the button click event from this button:
 
-    :::image type="content" source="../media/add-button-parent.png" alt-text="Screenshot of Adding ButtonParent to the None Object" lightbox="../media/add-button-parent.png":::
+    :::image type="content" source="../media/add-button-parent.png" alt-text="Screenshot of Adding ButtonParent to the None Object." lightbox="../media/add-button-parent.png":::
 
 3. Click the **No Function**  dropdown of the same event and then select ViewButtonControl > NextModel () to set the NextModel () function as the action that is triggered when the button is pressed:
 
-    :::image type="content" source="../media/event-to-next-model.png" alt-text="Screenshot of SelectingViewButtonControl and NextModel" lightbox="../media/event-to-next-model.png":::
+    :::image type="content" source="../media/event-to-next-model.png" alt-text="Screenshot of SelectingViewButtonControl and NextModel." lightbox="../media/event-to-next-model.png":::
 
 ### 2. Configure the remaining buttons
 
@@ -84,18 +84,18 @@ We've provided six different 3D models for demonstration. Expand the **ModelPare
 
     In the **Size** field, enter the number of 3D models you would like to have in your scene--in this case, six. This creates fields for adding new 3D models.
 
-    :::image type="content" source="../media/3d-models.png" alt-text="Screenshot of Enter the number of 3D models" lightbox="../media/3d-models.png":::
+    :::image type="content" source="../media/3d-models.png" alt-text="Screenshot of Enter the number of 3D models." lightbox="../media/3d-models.png":::
 
 2. Drag each child object of ModelParent Object into these fields.
 
-    :::image type="content" source="../media/child-object.png" alt-text="Screenshot of Drag and drop each child object" lightbox="../media/child-object.png":::
+    :::image type="content" source="../media/child-object.png" alt-text="Screenshot of Drag and drop each child object." lightbox="../media/child-object.png":::
 
 3. Drag the **ClippingObjects** object from the Hierarchy window to the **Toggle Button (Script)** component's **Clipping Object** field.
 
     > [!Note]
     > Stay in button parent object only.
 
-    :::image type="content" source="../media/clip-object.png" alt-text="Screenshot of Drag and drop clipping object" lightbox="../media/clip-object.png":::
+    :::image type="content" source="../media/clip-object.png" alt-text="Screenshot of Drag and drop clipping object." lightbox="../media/clip-object.png":::
 
 4. In the Hierarchy window, select the ClippingObjects prefab and enable it in the Inspector window to turn on the **Clipping objects**.
 
@@ -107,7 +107,7 @@ In the Hierarchy window, expand the **ClippingObjects** object to expose the thr
 
 1. To configure the **ClippingSphere** object, select it, and then in the Inspector window, locate the **Clipping Sphere (Script)** component. Next, enter the number of renderers in the **size** field that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create fields for adding renderers. Next, drag the MarsCuriosityRover object's child model objects into these fields.
 
-    :::image type="content" source="../media/enable-clip-feature.png" alt-text="Screenshot of Configure Clipping Objects to enable clipping feature" lightbox="../media/enable-clip-feature.png":::
+    :::image type="content" source="../media/enable-clip-feature.png" alt-text="Screenshot of Configure Clipping Objects to enable clipping feature." lightbox="../media/enable-clip-feature.png":::
 
 2. In the Hierarchy window, select the ClippingObjects prefab and enable it in the Inspector window to turn on the Clipping objects.
 
@@ -121,7 +121,7 @@ In the Hierarchy window, select the ModelParent object. Next, expand the **MarsC
 
 * Observe five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window.
 
-    :::image type="content" source="../media/target-objects.png" alt-text="Screenshot of Target Objects" lightbox="../media/target-objects.png":::
+    :::image type="content" source="../media/target-objects.png" alt-text="Screenshot of Target Objects." lightbox="../media/target-objects.png":::
 
 ### 2. Implement while looking at target() & on look away() events
 
@@ -130,10 +130,10 @@ In the Hierarchy window, select the **POI-Camera** object. Then, in the Inspecto
 * In the **None (Object)** field, assign the **POI-Camera ToolTip** object.
 * In the**No Function** dropdown of the **While Looking At Target ()** event, select **GameObject > SetActive (bool)**. Select the check box under it to highlight the tooltip as the triggered action when looking at the target object.
 
-    :::image type="content" source="../media/looking-at-target.png" alt-text="Screenshot of Confiure While Looking At Target ()" lightbox="../media/looking-at-target.png":::
+    :::image type="content" source="../media/looking-at-target.png" alt-text="Screenshot of Confiure While Looking At Target ()." lightbox="../media/looking-at-target.png":::
 
 * Click the **No Function** dropdown of the **On Look Away ()** event listener. Next, select **GameObject > SetActive (bool)** and leave the check box empty so that hiding the tooltip is the action triggered when you look away from the target object.
 
-    :::image type="content" source="../media/looking-at-away.png" alt-text="Screenshot of Confiure On Look Away ()" lightbox="../media/looking-at-away.png":::
+    :::image type="content" source="../media/looking-at-away.png" alt-text="Screenshot of Confiure On Look Away ()." lightbox="../media/looking-at-away.png":::
 
 Follow the same process and assign respective tooltip objects to their same MarsCuriosityRover parts' While Looking At Target() & On Look Away() events.

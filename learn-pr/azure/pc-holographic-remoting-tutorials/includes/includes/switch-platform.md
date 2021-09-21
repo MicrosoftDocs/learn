@@ -6,7 +6,7 @@ In this section, you'll configure your project to stream your Mixed Reality expe
 
 * In the Project window, navigate to the **Assets > MRTK.Tutorials.PCHolograhicRemoting > Prefabs** folder, and click and drag **HolographicRemoting** prefab into your scene.
 
-    :::image type="content" source="../../media/holographic-remoting.png" alt-text="Screenshot of Configuring your scene for Holographic Remoting - Unity 2020 + OpenXR" lightbox="../../media/holographic-remoting.png":::
+    :::image type="content" source="../../media/holographic-remoting.png" alt-text="Screenshot of Configuring your scene for Holographic Remoting - Unity 2020 + OpenXR." lightbox="../../media/holographic-remoting.png":::
 
 ## [Legacy WSA](#tab/wsa)
 
@@ -16,4 +16,4 @@ In this section, you'll configure your project to stream your Mixed Reality expe
 
 * In the Project window, navigate to the **Assets > MRTK.Tutorials.PCHolograhicRemoting > Prefabs** folder, and click and drag **HolographicRemoting** prefab into your scene.
 
-    :::image type="content" source="../../media/holographic-remoting-legacy.png" alt-text="Screenshot of Configuring your scene for Holographic Remoting - Legacy WSA" lightbox="../../media/holographic-remoting-legacy.png":::
+    :::image type="content" source="../../media/holographic-remoting-legacy.png" alt-text="Screenshot of Configuring your scene for Holographic Remoting - Legacy WSA." lightbox="../../media/holographic-remoting-legacy.png":::

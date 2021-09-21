@@ -7,7 +7,7 @@ In the Project Settings window, expand the **Publishing Settings**, then scroll 
 * Internet Clint server
 * Private Network Client Server
 
-:::image type="content" source="../media/player-settings.png" alt-text="Screenshot of Player settings" lightbox="../media/player-settings.png":::
+:::image type="content" source="../media/player-settings.png" alt-text="Screenshot of Player settings." lightbox="../media/player-settings.png":::
 
 [!INCLUDE[](includes/switch-platform.md)]
 
