@@ -47,7 +47,7 @@ its **Transform** component as follows
 
 ## Build your application to HoloLens 2
 
-## 1. Build the unity project
+## 1. Build the Unity project
 
 1. In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window.
 

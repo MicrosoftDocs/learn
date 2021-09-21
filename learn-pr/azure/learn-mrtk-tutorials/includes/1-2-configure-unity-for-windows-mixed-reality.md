@@ -22,6 +22,6 @@ To achieve better hologram stability from the perception of the user, **Depth Bu
 
 With regard to performance, selecting the **16-bit depth** format compared to 24-bit will significantly reduce the bandwidth requirements as less data will need to be moved/processed.
 
-## How to port an existing unity app to windows mixed reality
+## How to port an existing Unity app to windows mixed reality
 
 If you've an existing Unity project that you're porting to Windows Mixed Reality, refer to the Unity porting guide to get started. Bringing existing content over to Windows Mixed Reality involves re-targeting the usage of other platform SDKs to the Windows APIs. If your app isn't already built for the Universal Windows Platform, changing over to the platform will be part of the porting experience.
