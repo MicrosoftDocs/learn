@@ -1,4 +1,12 @@
 
+Stopping at attack at the perimeter is the most secure and cost effective way to keep your Azure solutions secure.  Azure provides several perimeter level security tools to support your business.
+
+You should be able to:
+
+- Define defense in depth
+- Protect your environment from denial-of-service attacks
+- Secure your solutions using firewalls and VPNs
+- Explore your end-to-end perimeter security configuration based on your security posture
 
 ## Learn more
 
