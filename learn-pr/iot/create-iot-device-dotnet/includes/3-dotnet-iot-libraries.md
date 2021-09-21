@@ -2,7 +2,7 @@ In the previous unit, you used common hardware components to construct a prototy
 
 ## Libraries
 
-The .NET IoT Libraries are composed of two NuGet packages:
+The .NET IoT Libraries are composed of two open-source NuGet packages:
 
 - `System.Device.Gpio`
 - `Iot.Device.Bindings`
