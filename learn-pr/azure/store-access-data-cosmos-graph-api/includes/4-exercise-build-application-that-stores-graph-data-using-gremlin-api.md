@@ -6,7 +6,7 @@ In this exercise, you'll create an Azure Cosmos DB Gremlin API account, database
 
 Start by creating the database in <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> by adding an Azure Cosmos DB account that uses the Graph API.
 
-1. On the Azure portal home page, select **Create a resource**.
+1. On the Azure portal home page, under **Azure services**, select **Create a resource**.
 
    ![Create a resource from Azure portal menu.](../media/4-create-a-resource-azure-cosmos-db.png)
 
@@ -50,7 +50,7 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
 
 ## Add a graph
 
-1. In the Azure Cosmos DB account left menu pane, select **Data Explorer**. The **Data Explorer** pane appears.
+1. In the left menu pane, select **Data Explorer**. The **Data Explorer** pane appears.
 
 1. In the upper task bar, select **New Graph**. The **New Graph** pane appears.
 
@@ -65,7 +65,7 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
 
 1. Select **OK**. After the graph is built, the **Data Explorer** pane appears and displays your *sample-database* under **Gremlin API**.
 
-1. In the Azure Cosmos DB account left menu pane, under **Settings**, select **Keys**. The **Keys** pane appears.
+1. In the left menu pane, under **Settings**, select **Keys**. The **Keys** pane appears for your *Azure Cosmos DB account*.
 
 1. Note the value for the **GREMLIN ENDPOINT**, and copy the value for the **PRIMARY KEY**. You'll use these values when you create your application in the next section.
 
@@ -183,7 +183,7 @@ Now, you'll create a .NET Core application that will allow you to run Gremlin AP
    }
    ```
 
-1. Add a new `AzureAsync()` method after `Main()` method with the following code. This method will execute the query and return a result set that the `Main()` method will use to determine the number of nodes that were returned by the query.
+1. Add a new `AzureAsync()` method after `Main()` method with the following code. This method will execute the query, and return a result set that the `Main()` method will use to determine the number of nodes that were returned by the query.
 
    ```csharp
    private static Task<ResultSet<dynamic>> AzureAsync(GremlinClient gremlinClient, string query)
@@ -377,7 +377,7 @@ Now, you'll create a Node.js application that will allow you to run Gremlin API 
    {"Returned": "5"}
    ```
 
-1. Now add some product to category relationships to your database. To do so, run the following commands:
+1. Now, add some product to category relationships to your database. To do so, run the following commands:
 
    ```bash
    dotnet run "g.V('p1').addE('belongsto').to(g.V('c1'))"
