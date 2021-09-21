@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.azure-cloud-services-tutorials-mrtk
 metadata:
-  title: Azure Cloud Services for HoloLens 2
-  description: This course explores the use of Azure Cloud Services by integrating to a Hololens2 application. 
+  title: Integrate Azure Cloud Services to your Unity project on HoloLens 2
+  description: Add Azure Cloud Services such as Azure Storage, Azure Custom Vision, Azure Spatial Anchors, and Azure Bot Service for your mixed reality application.
   ms.date: 09/13/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-title: Azure Cloud Services for HoloLens 2
+title: Integrate Azure Cloud Services to your Unity project on HoloLens 2
 summary: Learn about Azure Cloud Services to enhance your learning experience.
 abstract: |
   By the end of this module you will be able to:
@@ -26,8 +26,10 @@ products:
 - windows-mixed-reality
 - mrtk
 - hololens
+- azure
+- mrtk
 prerequisites: |
-  - A Windows 10 PC configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
+  - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/develop/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
   - A HoloLens 2 device configured for development
   - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added

@@ -4,12 +4,12 @@ In this module, you will learn how to use **Azure Spatial Anchors**. You will st
 
 **Azure Spatial Anchors** is part of the Azure Cloud Services family and is used to save anchor locations. The saved anchor locations can be retrieved based on the *anchor ID* from the cloud. This anchor location can be shared and accessed by multi-platform devices like HoloLens, iOS, and Android devices.
 
-Learn more about [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview).
+Learn more about [Azure Spatial Anchors](/azure/spatial-anchors/overview).
 
 ## Prepare Azure Spatial Anchors
 
 Before you can start, you have to create a spatial anchor resource in your Azure portal.
-Learn how to make a [spatial anchor resource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource).
+Learn how to make a [spatial anchor resource](/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource).
 
 ## Prepare the scene
 
@@ -17,21 +17,21 @@ In this section, you will learn how to configure the scene and make the necessar
 
 1. In the Project window, navigate to the **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager**
 
-    :::image type="content" source="../media/tutorial-4-section-1-step-1-1.png" alt-text="Unity with AnchorManager prefab selected" lightbox="../media/tutorial-4-section-1-step-1-1.png":::
+    :::image type="content" source="../media/anchor-manager-prefab.png" alt-text="Screenshot of Unity with AnchorManager prefab selected." lightbox="../media/anchor-manager-prefab.png":::
 
 2. From the **Manager** folder, drag and drop the prefab **Anchor Manager** into the scene Hierarchy.
 
 3. Select **Anchor Manager** GameObject in the Hierarchy, and in the Inspector section, you will find **Spatial Anchor Manager** (Script). Find account ID and key field and add the credentials which you had created in the prerequisite in the earlier stage.
 
-    :::image type="content" source="../media/tutorial-4-section-1-step-2-1.png" alt-text="Unity with newly added AnchorManager prefab still selected" lightbox="../media/tutorial-4-section-1-step-2-1.png":::
+    :::image type="content" source="../media/add-anchro-manager-prefab.png" alt-text="Screenshot of Unity with newly added AnchorManager prefab still selected." lightbox="../media/add-anchro-manager-prefab.png":::
 
 4. Now find the **Scene Controller** object in your scene Hierarchy and select it. You will see the **Scene Controller** Inspector.
 
-    :::image type="content" source="../media/tutorial-4-section-1-step-3-1.png" alt-text="Unity with SceneController script component configured" lightbox="../media/tutorial-4-section-1-step-3-1.png":::
+    :::image type="content" source="../media/scene-controller-inspector.png" alt-text="Screenshot of Unity with SceneController script component configured." lightbox="../media/scene-controller-inspector.png":::
 
 5. You will observe that the **Anchor Manager** field in the **Scene Controller** component is empty, drag and drop the **Anchor Manager** from the Hierarchy in the scene into that field and save the scene.
 
-## Build and Deploy the app to your HoloLens 2
+## Build and deploy the app to your HoloLens 2
 
 Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to deploy the project to your device.
 

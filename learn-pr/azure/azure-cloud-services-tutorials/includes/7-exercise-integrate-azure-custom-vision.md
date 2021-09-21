@@ -4,13 +4,13 @@ In this module, you will learn how to use **Azure Custom Vision**.You will uploa
 
 **Azure Custom Vision** is part of the **Cognitive Services** family and is used to train image classifiers. The image classifier is an AI service that uses the trained model to apply matching tags. This classification feature will be used by our application to detect *Tracked Objects*.
 
-Learn more about [Azure Custom Vision](/https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home).
+Learn more about [Azure Custom Vision](/azure/cognitive-services/custom-vision-service/home).
 
 ## Prepare Azure Custom Vision
 
 Before you can start, you have to create a custom vision project, the fastest way is by using the web portal.
 
-Follow this [quickstart tutorial](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier) to setup your account and project until section *Upload and tag images*.
+Follow this [quickstart tutorial](/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier) to setup your account and project until section *Upload and tag images*.
 
 > [!WARNING]
 > To train a model you need to have at least 2 tags and 5 images per tag. To use this application you should at least create one tag with 5 images, so that the training process later won't fail.
@@ -19,11 +19,11 @@ Follow this [quickstart tutorial](https://docs.microsoft.com/azure/cognitive-ser
 
 1. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder.
 
-    :::image type="content" source="../media/tutorial-3-section-4-step-1-1.png" alt-text="Unity with Project window showing path to ObjectDetectionManager prefab" lightbox="../media/tutorial-3-section-4-step-1-1.png":::
+    :::image type="content" source="../media/object-detection-manager-prefab.png" alt-text="Screenshot of Unity with Project window showing path to ObjectDetectionManager prefab." lightbox="../media/object-detection-manager-prefab.png":::
 
 2. From there drag the prefab **ObjectDetectionManager** into the scene Hierarchy.
 
-    :::image type="content" source="../media/tutorial-3-section-4-step-1-2.png" alt-text="Unity with ObjectDetectionManager script component configuration fields shown in Inspector" lightbox="../media/tutorial-3-section-4-step-1-2.png":::
+    :::image type="content" source="../media/object-detection-manager-configure.png" alt-text="Screenshot of Unity with ObjectDetectionManager script component configuration fields shown in Inspector." lightbox="../media/object-detection-manager-configure.png":::
 
 3. In the Hierarchy window, locate the **ObjectDetectionManager** object and select it.
 The **ObjectDetectionManager** prefab contains the **ObjectDetectionManager (script)** component and as you can see from the Inspector window it depends on Azure settings and Project settings.
@@ -32,21 +32,21 @@ The **ObjectDetectionManager** prefab contains the **ObjectDetectionManager (scr
 
 The necessary credentials for the **ObjectDetectionManager (script)** settings can be retrieve from the Azure portal and the custom vision portal.
 
-## Retrieve Azure Settings credentials
+## Retrieve Azure settings credentials
 
 Find and locate the custom vision resource of type **Cognitive Services** you have created in the *Preparing the scene* section of this tutorial (select custom vision resources name followed by *-Prediction*). There click on *Overview* or *Keys and Endpoint* to retrieve the necessary credentials.
 
-## Retrieve Project Settings credentials
+## Retrieve project settings credentials
 
 In the [custom vision](https://www.customvision.ai/projects) dashboard, open the project you have created for this tutorial and click on the top-right corner of the page on the gear icon to open the settings page. Here on the right-hand *Resources* section you will find the necessary credentials.
 
 1. Now with the **ObjectDetectionManager (script)** setup correctly, find the **SceneController** object in your scene Hierarchy and select it.
 
-    :::image type="content" source="../media/tutorial-3-section-4-step-1-3.png" alt-text="Unity with SceneController script component configuration fields shown in Inspector" lightbox="../media/tutorial-3-section-4-step-1-3.png":::
+    :::image type="content" source="../media/configure-scene-contoller.png" alt-text="Screenshot of Unity with SceneController script component configuration fields shown in Inspector." lightbox="../media/configure-scene-contoller.png":::
 
 2. You see *Object Detection Manager* field in the **SceneController** component is empty, drag the **ObjectDetectionManager** from the Hierarchy into that field and save the scene.
 
-    :::image type="content" source="../media/tutorial-3-section-4-step-1-4.png" alt-text="Unity with SceneController script component configured" lightbox="../media/tutorial-3-section-4-step-1-4.png":::
+    :::image type="content" source="../media/configure-scene.png" alt-text="Screenshot of Unity with SceneController script component configured." lightbox="../media/configure-scene.png":::
 
 ## Take and upload images
 
