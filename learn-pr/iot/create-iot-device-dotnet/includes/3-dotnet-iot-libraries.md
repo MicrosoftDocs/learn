@@ -38,4 +38,4 @@ PC platforms are supported via the use of a USB to SPI/I2C bridge.
 > [!NOTE]
 > .NET is not supported on ARMv6 architecture devices, including Raspberry Pi Zero and Raspberry Pi devices prior to Raspberry Pi 2.
 
-In the next unit, you'll use the .NET IoT Libraries to read the BME280 sensor and trigger the LED that represents your relay.
+In the next unit, you'll use the .NET IoT Libraries to read the BME280 sensor and trigger the LED that represents your fan relay.

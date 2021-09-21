@@ -43,6 +43,7 @@ units:
 - learn.create-iot-device-dotnet.construct-iot-hardware
 - learn.create-iot-device-dotnet.dotnet-iot-libraries
 - learn.create-iot-device-dotnet.use-dotnet-iot-libraries
+- learn.create-iot-device-dotnet.deploy-app-raspberry-pi
 - learn.create-iot-device-dotnet.knowledge-check
 - learn.create-iot-device-dotnet.summary
 badge:
