@@ -1,6 +1,6 @@
 One crucial part of building a cloud migration and modernization strategy for an organization is identifying what is triggering cloud adoption. Some triggers may prompt quick action, while others may call for a more active, hands-on approach.
 
-Business and IT-driven goals point to migration and modernization triggers, which determine the strategy for moving applications to the cloud. For IT-based triggers *migration* of your workloads is best. When you're presented with business-focused goals, we recommend *modernizating* your applications.
+Business and IT-driven goals point to migration and modernization triggers, which determine the strategy for moving applications to the cloud. For IT-based triggers *migration* of your workloads is best. When you're presented with business-focused goals, we recommend *modernizing* your applications.
 
 ![Graphic showing the two migration paths of Migration or Modernization.](../media/migrate-or-modern-2.png)
 
@@ -25,12 +25,12 @@ Migration triggers are typically IT-oriented or based on timelines. The migratio
 
 ### Datacenter contract expiration
 
-The expiration of datacenter contracts is an excellent opportunity for beginning the cloud migration journey since many organizations may consider if it’s worth continuing to run their datacenter if they’re facing resource and cash flow challenges. datacenters are expensive to build and maintain.
+The expiration of datacenter contracts is an excellent opportunity for beginning the cloud migration journey since many organizations may consider if it’s worth continuing to run their datacenter if they’re facing resource and cash flow challenges.
 
 #### Eliminate recurring expenses
 
 - Owning and managing physical datacenters can be expensive, both in terms of financial cost and effort.
-- datacenter contract expiration can be an inflection point to consider cloud migration, as it can provide almost immediate benefits in the form of cost reductions, better performance, and simpler management.
+- Datacenter contract expiration can be an inflection point to consider cloud migration, as it can provide almost immediate benefits in the form of cost reductions, better performance, and simpler management.
 - Moving datacenter operations to the cloud frees you from recurring contract expenses, and provides built-in scalability and other key
 management features that make it much easier to run your datacenter efficiently.
 
@@ -142,7 +142,6 @@ Application modernization enables Tailwind Traders to develop and bring applicat
 - You can stand up Azure App Service in a matter of minutes to start developing a website. Previously you may have had to create a new server, patch the servers, install Internet Information Services (IIS), and make any necessary configuration changes. Now you can get to developing your application immediately rather than waiting for days to start.
 - Modernizing applications using serverless in Azure once again provides the ability to bring solutions and updates to the market with even less infrastructure.  Leveraging services like Azure Kubernetes Services, Azure Functions, Azure Logic Apps, Azure Cognitive Services, developers have many options for building applications. 
 Azure supports the use of DevOps tools, including GitHub, to build and deploy modern applications. Using GitHub actions, you build and release applications and updates faster to get ahead of the competition and keep your customers happy.
-
 
 ### Cost-optimizing applications
 

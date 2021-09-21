@@ -1,5 +1,4 @@
-Microsoft provides expert migration and modernization guidance and assistance via programs made available to customers and partners. You can 
-accelerate Azure deployments while building cloud skills and learning from Azure engineers.
+Microsoft provides expert migration and modernization guidance and assistance via programs made available to customers and partners. You can accelerate Azure deployments while building cloud skills and learning from Azure engineers.
 
 As a part of the migration and modernization team at Tailwind Traders, it is essential to learn the programs available to support your Azure migration:
 
@@ -60,7 +59,7 @@ FastTrack for Azure can help with many solutions including:
 - SAP migration
 - App modernization
 - Data analytics
-- Windows Virtual Desktop
+- Azure Virtual Desktop
 
 For a complete list of supported solutions, visit azure.com/FastTrack
 
@@ -70,7 +69,7 @@ As production systems are migrated to Azure, operations will become critical. Mi
 
 ### MSP qualifications
 
-When you see the Azure Expert MSP logo, this means Microsoft has validated that you are connecting with one of our most capable Azure Managed Service Providers. Whether you are working on mission-critical apps, entire datacenter footprints, or hybrid environments, Azure Expert MSPs have proven their capabilities to help you. These MSPs must meet the following requirements to be a part of the program:
+When you see the Azure Expert MSP logo, this means Microsoft has validated that you are connecting with one of our most capable Azure Managed Service Providers. Whether you are working on mission-critical apps, entire data center footprints, or hybrid environments, Azure Expert MSPs have proven their capabilities to help you. These MSPs must meet the following requirements to be a part of the program:
 
 - Microsoft Gold Cloud Platform Partner
 - Pass an intensive audit performed by Microsoft

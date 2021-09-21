@@ -16,17 +16,17 @@ Some of the common projects that Tailwind Traders will encounter include:
 
 For all workloads, the decision to **migrate** or **modernize** will drive the solution that is chosen. When doing a **migration** the workload will be moved into an IaaS running on virtual machines (VM) in Azure. When using a **modernize** approach PaaS components will be used to deploy the application after changes are made to the code base or architecture.
 
-## Migrate and modernize .NET and Java applications
+## Migrate and Modernize .NET and Java applications
 
 Custom applications are a common workload to migrate and modernize on Azure. In the case of .NET and Java applications, modernization is the most common approach, however, sometimes a migration is still necessary.
 
 ### Migrate
 
-when migrating a .NET or Java application it is actually more of a virtual machine migration. In this scenario your just taking the server the application is hosted on and rehosting that server as a virtual machine in Azure.
+When migrating a .NET or Java application it is actually more of a virtual machine migration. In this scenario your just taking the server the application is hosted on and rehosting that server as a virtual machine in Azure.
 
 ### Modernize
 
-When modernizing an application, you will be using additional cloud provider services to optimize the cost, reliability, and performance. Your application can take advantage of PaaS products such as Azure App Service, Azure SQL Database Managed Instance, and containers. When looking to modernize, it will almost always lead to at least minor updates to your application.
+When modernizing an application, you will be using additional cloud provider services to optimize the cost, reliability, and performance. Your application can take advantage of PaaS products such as Azure App Service, Azure SQL Database Managed Instance, and containers. When looking to modernize, it will almost always lead to at least updates to your application.
 
 If you are looking to modernize a .NET or Java web application you can migrate to Azure App Services which usually involved very minor if any changes to your codebase. The advantages of employing modernized services in this scenario include: lower cost and management, using your current application as-is or with some minor code or configuration changes, and connecting to new infrastructure services.
 
@@ -50,7 +50,7 @@ Azure is the cloud that knows SQL Server best. There are many options for the mi
 
 ![Graphic showing how to migrate Window & SQL Server to Azure.](../media/migrate-sql.png)
 
-### SQl Server ona  virtual machine
+### SQL Server on a virtual machine
 
 A typical reason for migrating SQL to Azure is that a two-tier application is being moved, a Windows .NET front-end application connected to SQL Server running on VMs. When migrating these applications by simply moving the servers to Azure and hosting them using Infrastructure as a Service (IaaS), they can be moved using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and will run just as they do today in the data center only now they are connected to a virtual network running in Azure.
 

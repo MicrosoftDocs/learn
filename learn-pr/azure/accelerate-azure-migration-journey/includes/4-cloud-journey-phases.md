@@ -77,7 +77,7 @@ Next, break up your overall plan into migration waves, each with a group of rela
 
 ## Implementation
 
-Executing on the plan is where the act of moving to the cloud starts to unfold. Three main workstreams take place during the execution phase of an Azure migration:
+Executing on the plan is where the act of moving to the cloud starts to unfold. Three main work-streams take place during the execution phase of an Azure migration:
 
 - Building cloud skills
 - Landing Zone
@@ -85,7 +85,7 @@ Executing on the plan is where the act of moving to the cloud starts to unfold. 
 
 ### Migration and Modernization Waves
 
-During the move to the cloud use a wave-based approach to execute a manageable set of workloads. **Migrate** and **modernize** in waves with an iterative approach. Pick a manageable-sized cohort of workloads for each wave and perform the move using automated tools. Select the target cloud services to move your workloads into—like Azure IaaS for infrastructure or Azure App Service for web apps.
+During the move to the cloud use a wave-based approach to execute a manageable set of workloads. **Migrate** and **Modernize** in waves with an iterative approach. Pick a manageable-sized cohort of workloads for each wave and perform the move using automated tools. Select the target cloud services to move your workloads into—like Azure IaaS for infrastructure or Azure App Service for web apps.
 
 ![Graphic showing a migration and modernization wave.](../media/migration-modernization-waves.png)
 

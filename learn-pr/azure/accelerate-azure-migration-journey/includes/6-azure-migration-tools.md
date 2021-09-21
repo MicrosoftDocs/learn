@@ -26,11 +26,11 @@ The Cloud Adoption Framework brings together cloud adoption best practices from 
 
 ## Azure Migrate
 
-[Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) is the central hub of Azure cloud migration services and tools to discover, assess, and migrate workloads to the cloud. Tailwind Traders can get all of the Azure migration tools and guidance you need to plan and implement your move to the cloud—and track your progress using a central dashboard that provides intelligent insights.
+[Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) is the central hub of Azure cloud migration services and tools to discover, assess, and migrate workloads to the cloud. Tailwind Traders can get all of the Azure migration tools and guidance you need to plan and implement your move to the cloud and track your progress using a central dashboard that provides intelligent insights.
 
 ![Azure portal shows the Azure Migrate dashboard.](../media/azure-migrate.png)
 
-Tailwind Traders can use a comprehensive approach to migrating your application and datacenter estate. Get support for critical migration workloads like Windows, SQL, and Linux Server, databases, data, web apps, and virtual desktops. Migrate to destinations including Azure Virtual Machines, Azure VMware Solution, Azure App Service, and Azure SQL Database. Migrations are holistic across VMware, Hyper-V, physical server, and cloud-to-cloud migration.
+Tailwind Traders can use a comprehensive approach to migrating your application and data center estate. Get support for critical migration workloads like Windows, SQL, and Linux Server, databases, data, web apps, and virtual desktops. Migrate to destinations including Azure Virtual Machines, Azure VMware Solution, Azure App Service, and Azure SQL Database. Migrations are holistic across VMware, Hyper-V, physical server, and cloud-to-cloud migration.
 
 Azure Migrate provides the following benefits:
 
@@ -44,15 +44,15 @@ The guided experience and progress dashboard walk you through discovery, assessm
 
 ### Diverse Capabilities
 
-Take advantage of free Azure tools with features like agentless datacenter discovery, Azure readiness analysis, cost estimation, app modernization, and app dependency visualization—or choose from a collection of integrated partner tools for additional capabilities.
+Take advantage of free Azure tools with features like agentless data center discovery, Azure readiness analysis, cost estimation, app modernization, and app dependency visualization or choose from a collection of integrated partner tools for additional capabilities.
 
 ### Save money
 
-Migrate efficiently with rapid lift-and-shift migration tools, all included in your Azure subscription at no additional cost—right-size resources in the cloud based on performance insights and fluctuating demand. Avoid sunk infrastructure costs from on-premises resources.
+Migrate efficiently with rapid lift-and-shift migration tools, all included in your Azure subscription at no additional cost, right-size resources in the cloud based on performance insights and fluctuating demand. Avoid sunk infrastructure costs from on-premises resources.
 
 ## Azure Database Migration Service
 
-[Azure Database Migration Service](https://azure.microsoft.com/services/database-migration/?azure-portal=true) is a tool that helps you simplify, guide, and automate your database migration to Azure. Easily migrate your data, schema, and objects from multiple sources to the cloud at scale. Migrate your database and server objects—including user accounts, agent jobs, and SQL Server Integration Services (SSIS) packages—all at once with almost no downtime.
+[Azure Database Migration Service](https://azure.microsoft.com/services/database-migration/?azure-portal=true) is a tool that helps you simplify, guide, and automate your database migration to Azure. Easily migrate your data, schema, and objects from multiple sources to the cloud at scale. Migrate your database and server objects—including user accounts, agent jobs, and SQL Server Integration Services (SSIS), packages all at once with almost no downtime.
 
 Execute a complete migration with near-zero downtime:
 
@@ -67,13 +67,13 @@ Execute a complete migration with near-zero downtime:
 
 Bring your web apps to the cloud with minimal or no code changes using the[Azure App Service Migration Assistant](https://azure.microsoft.com/services/app-service/migration-assistant/?azure-portal=true) - a free and simple tool to migrate .NET web applications from on-premises to the cloud automatically.
 
-This tool can assess and migrate your on-premises .NET, Java, and Linux web apps to Azure. Download the App Service migration assistant — a fast, free, and automated way to migrate web apps with minimal or no code changes. Run readiness checks and get potential remediation steps for common issues. Receive step-by-step guidance for moving your web app to App Service.
+This tool can assess and migrate your on-premises .NET, Java, and Linux web apps to Azure. Download the App Service migration assistant a fast, free, and automated way to migrate web apps with minimal or no code changes. Run readiness checks and get potential remediation steps for common issues. Receive step-by-step guidance for moving your web app to App Service.
 
 Versions of the Azure App Service Migration Assistant:
 
 - Migrate .NET web apps from Windows OS to App Service
-- App Service migration assistant—for Java on Apache Tomcat Preview (Linux)
-- App Service migration assistant—for Java on Apache Tomcat Preview (Windows)
+- App Service migration assistant for Java on Apache Tomcat Preview (Linux)
+- App Service migration assistant for Java on Apache Tomcat Preview (Windows)
 
 Tailwind Traders can get a free compatibility report for your external app. The tool allows you to run a scan on your web app’s public URL to report the technologies it uses and whether App Service fully supports them. If compatible, you’ll be guided to download the migration assistant to simplify your migration.
 

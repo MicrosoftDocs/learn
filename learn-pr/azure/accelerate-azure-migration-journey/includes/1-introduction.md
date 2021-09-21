@@ -1,4 +1,4 @@
-Microsoft Azure provides access to a comprehensive set of cloud services that, as developers and IT professionals, you use to build, deploy, and manage applications, through a global network of datacenters. 
+Microsoft Azure provides access to a comprehensive set of cloud services that, as developers and IT professionals, you use to build, deploy, and manage applications, through a global network of data centers. 
 
 Migrating to Azure and modernization of those workloads can help you optimize costs, stay secure and resilient by avoiding costly business interruptions. You can take advantage of fully managed services in Azure to reduce operational burden, scale on demand and focus on more critical tasks.
 

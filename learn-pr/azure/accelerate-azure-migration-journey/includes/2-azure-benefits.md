@@ -87,7 +87,7 @@ Identify new threats and respond quickly with services that are informed by real
 
 ## Hybrid flexibility
 
-Hybrid configurations deployed to Azure provide flexibility in the timing of migration or moderization of workloads. Tailwind Traders isn't required to move everything at once and may have both an on-premises and Azure environment running side-by-side for the foreseeable future. With the hybrid tools available you can not only start to migrate workloads to Azure and modernizing those workloads. You can also gain better management and governance of your workloads on-premises using the hybrid flexibility of Azure. This will better position you to gradually continue updating workloads over an extended period of time as well as to manage both on-premises and Azure workloads within a single, modern environment.
+Hybrid configurations deployed to Azure provide flexibility in the timing of migration or modernization of workloads. Tailwind Traders isn't required to move everything at once and may have both an on-premises and Azure environment running side-by-side for the foreseeable future. With the hybrid tools available you can not only start to migrate workloads to Azure and modernizing those workloads. You can also gain better management and governance of your workloads on-premises using the hybrid flexibility of Azure. This will better position you to gradually continue updating workloads over an extended period of time as well as to manage both on-premises and Azure workloads within a single, modern environment.
 
 ## Scale Applications and Workloads on demand
 
