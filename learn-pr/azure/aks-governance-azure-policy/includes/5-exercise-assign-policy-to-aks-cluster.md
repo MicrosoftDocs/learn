@@ -1,6 +1,6 @@
 You are now ready to configure Azure policies and initiatives for your AKS cluster. 
 
-In this unit you'll deploy a non-compliant pod, apply the azure policies including the use of only trusted registries, deploy a non compliant pod to see the effect of the policy and troubleshoot steps to see why the pods are not being created. 
+In this unit you'll deploy a non-compliant pod, apply the Azure Policies including the use of only trusted registries, deploy a non-compliant pod to see the effect of the policy and troubleshoot steps to see why the pods are not being created. 
 
 ## Deploy a non-compliant pod into the cluster
 
