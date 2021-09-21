@@ -1,12 +1,12 @@
 
-Think of security in layers.  You need to lock down the perimeter first, and then work your way inward locking down each layer.  The more work and cost a bad-actor has to invsest to get to valuable information the more likely they are to leave you alone.
+Think of security in layers.  You need to lock down the perimeter first, and then work your way inward locking down each layer.  The more work and cost a bad-actor has to invest to get to valuable information the more likely they are to leave you alone.
 
 ## Scenario
 
 A security engineer uses perimeter security features to block network traffic away from your primary network resources; you will work on such tasks as:
 - Setup DDoS (denial-of-service) Protection.
 - Configure and maintain firewalls.
-- Use dedicated routes and network applicance to protect your network.
+- Use dedicated routes and network appliance to protect your network.
 
 ## Skills measured
 
@@ -17,7 +17,7 @@ Implement platform protection (15-20%)
    - create and configure Azure Firewall
    - implement Azure Firewall Manager
    - configure a firewall on a storage account, Azure SQL, Key Vault, or App Service
-   - implement DDos protection
+   - implement DDoS protection
 
 ## Learning objectives
 
