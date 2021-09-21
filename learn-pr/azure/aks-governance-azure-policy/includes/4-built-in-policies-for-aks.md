@@ -3,7 +3,7 @@
     - Explain workload policy, like only allow trusted registry
 - Explain the two secure baseline initiatives
 
-Now that you created an Azure Kubernetes Service cluster with the policy add-on enabled, you'll need to find the policies definitions that you want to assign to your environment. In this section you'll learn how to discover policies and the next section will walk you through an example on how to assign those policies.
+Now that you created an Azure Kubernetes Service cluster with the policy add-on enabled, you'll need to find the policy definitions that you want to assign to your environment. In this section you'll learn how to discover policies and the next section will walk you through an example on how to assign those policies.
 
 ## Discovering built-in Azure policies for Kubernetes
 
