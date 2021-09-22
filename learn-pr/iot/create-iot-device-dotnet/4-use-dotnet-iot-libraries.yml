@@ -8,7 +8,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
-  ms.prod: dotnet
+  ms.prod: learning-dotnet
 durationInMinutes: 6
 content: |
   [!include[](includes/4-use-dotnet-iot-libraries.md)]

@@ -51,13 +51,13 @@ All of the required hardware components are available from various retailers. Mo
 
 Suppose you manage a gourmet cheese making company in a southern location. The company is proud of its cheese, and is careful to maintain the perfect temperature and humidity as it ages. To maintain the perfect conditions, they age the cheese in a natural cave.
 
-  [![Close up photograph of matured cheese.](../media/cheese-rect8.png)](../media/cheese-rect8.png#lightbox)
+  [![Close up photograph of matured cheese.](../media/cheese-rect.png)](../media/cheese-rect.png#lightbox)
 
 Your company's accepted ideal temperature for aging cheese is 50°F (10°C), with up to ±5°F (2.78°C) acceptable variance. Humidity is also important. A humidity level between 75-95% is acceptable.
 
-You've decided to build the device using a Raspberry Pi to monitor the environmental conditions in the cave. The device will also activate the fan to control humidity as needed. To take advantage of your existing development skills, you decide to use .NET.
+You've decided to build a device using a Raspberry Pi to monitor the environmental conditions in the cave. The device will also activate the fan to control humidity as needed. To take advantage of your existing development skills, you decide to use .NET.
 
-  [![Photograph of matured blue cheese.](../media/cheese-circle1.png)](../media/cheese-circle1.png#lightbox)
+  [![Photograph of matured blue cheese.](../media/cheese-circle.png)](../media/cheese-circle.png#lightbox)
 
 ## The first step
 
