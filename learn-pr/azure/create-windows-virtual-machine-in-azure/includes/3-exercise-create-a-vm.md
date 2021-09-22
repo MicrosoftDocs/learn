@@ -22,7 +22,7 @@ You can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell
 
 1. There are several Windows Server options to choose from to create your VM. In the **Select a plan** dropdown list, scroll to the bottom, and select **[smalldisk] Windows Server 2019 Datacenter**.
 
-1. Select **Create**. Thehe **Create a virtual machine** pane appears.
+1. Select **Create**. The **Create a virtual machine** pane appears.
 
 ## Configure the VM settings
 
@@ -60,7 +60,7 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
     | Public inbound ports | Select **Allow selected ports**. We want to be able to access the desktop for this Windows VM using RDP. |
     | Select inbound ports | Select **RDP (3389)** from the dropdown list. As the note in the UI indicates, we can also adjust the network ports after we create the VM. |
     | **Licensing** |
-    | Would you like to use an eisting Windows Server License | Leave unchecked | 
+    | Would you like to use an existing Windows Server License | Leave unchecked | 
     | | |
 
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
