@@ -101,7 +101,7 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
     :::image type="content" source="../media/root-menu-object.png" alt-text="Screenshot of Unity with RootMenu object selected." lightbox="../media/root-menu-object.png":::
 
     > [!TIP]
-    > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position.
+    > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by [toggling the Gizmos](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) toggling the Gizmos to the off position.
 
 ## Configuring the scene
 

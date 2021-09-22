@@ -23,7 +23,7 @@ In this section, you will learn how to configure the scene and make the necessar
 
 3. Select **Anchor Manager** GameObject in the Hierarchy, and in the Inspector section, you will find **Spatial Anchor Manager** (Script). Find account ID and key field and add the credentials which you had created in the prerequisite in the earlier stage.
 
-    :::image type="content" source="../media/add-anchro-manager-prefab.png" alt-text="Screenshot of Unity with newly added AnchorManager prefab still selected." lightbox="../media/add-anchro-manager-prefab.png":::
+    :::image type="content" source="../media/add-anchor-manager-prefab.png" alt-text="Screenshot of Unity with newly added AnchorManager prefab still selected." lightbox="../media/add-anchor-manager-prefab.png":::
 
 4. Now find the **Scene Controller** object in your scene Hierarchy and select it. You will see the **Scene Controller** Inspector.
 
