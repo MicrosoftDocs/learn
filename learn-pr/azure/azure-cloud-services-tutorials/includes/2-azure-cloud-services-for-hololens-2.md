@@ -41,4 +41,6 @@ Provides inbound and outbound access to home and work networks through the firew
 ## WebCam
 
 Accesses the video feed of a built-in camera or external webcam, which allows the app to capture photos and videos.
-Note: This only grants access to the video stream. In order to grant access to the audio stream as well, the Microphone capability must be added.
+
+> [!NOTE]
+> This only grants access to the video stream. In order to grant access to the audio stream as well, the Microphone capability must be added..
