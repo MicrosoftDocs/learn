@@ -11,7 +11,7 @@ In this module, you learned how to:
 
 Learn more about IoT and .NET!
 
-- [.NET IoT Libraries documentation hub](https://docs.microsoft.com/dotnet/iot)
+- [.NET IoT Libraries documentation hub](/dotnet/iot)
 - [.NET IoT Libraries GitHub](https://github.com/dotnet/iot)
 - [Supported device bindings](https://github.com/dotnet/iot/blob/main/src/devices/README.md)
 

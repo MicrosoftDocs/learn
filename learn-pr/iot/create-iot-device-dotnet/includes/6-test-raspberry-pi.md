@@ -34,5 +34,5 @@ If your app doesn't work right or throws an exception, don't panic! Check the fo
 1. Double-check the connections on your breadboard. Use the tables and diagrams in unit 2 for reference.
 1. Did you enable the I2C service using `raspi-config`?
 1. Did you include the right device address for your BME280? If `Bme280.DefaultI2cAddress` doesn't work, try `Bme280.SecondaryI2cAddress` instead.
-1. Debug the code remotely, if needed. See the [.NET IoT Libraries documentation](https://docs.microsoft.com/dotnet/iot/debugging) for details.
+1. Debug the code remotely, if needed. See the [.NET IoT Libraries documentation](/dotnet/iot/debugging) for details.
 1. Use the `i2cdetect` tool [as described here](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c) to verify your I2C bus and BME280 breakout are functioning.
