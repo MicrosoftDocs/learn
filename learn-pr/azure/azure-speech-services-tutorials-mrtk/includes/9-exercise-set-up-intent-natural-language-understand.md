@@ -21,7 +21,7 @@ In this module, you'll explore the Azure Speech Service's intent recognition. Th
 
 In this section, you'll create an Azure prediction resource for the Language Understanding Intelligent Service (LUIS) app you'll create in the next section.
 
-1. Sign in to <a href="https://portal.azure.com" target="_blank">Azure</a> and click **Create a resource**. Then search for and select **Language Understanding**:
+1. Sign in to [Azure](https://portal.azure.com) and click **Create a resource**. Then search for and select **Language Understanding**:
 
     :::image type="content" source="../media/azure-prediction-resource.png" alt-text="Screenshot of Azure prediction resource." lightbox="../media/azure-prediction-resource.png":::
 
@@ -80,7 +80,7 @@ The main steps you will take to achieve this are:
 
 ## 1. Create a LUIS app
 
-Using the same user account you used when creating the Azure resource in the previous section, sign in to <a href="https://www.luis.ai" target="_blank">LUIS</a>, select your country, and agree to the terms of use. In the next step, when asked to **Link your Azure account**, choose **Continue using your trial key**, to use an Azure authoring resource instead.
+Using the same user account you used when creating the Azure resource in the previous section, sign in to [LUIS](https://www.luis.ai), select your country, and agree to the terms of use. In the next step, when asked to **Link your Azure account**, choose **Continue using your trial key**, to use an Azure authoring resource instead.
 
 > [!NOTE]
 > If you've already signed up for LUIS and your authoring trial key has expired, you can refer to the [Migrate to an Azure resource authoring key](/azure/cognitive-services/luis/luis-migration-authoring) documentation to switch your LUIS authoring resource to Azure.
@@ -254,7 +254,7 @@ From the Entities page, navigate back to the **PressButton** intent page.
 
 3. Try all the **example utterances**, then some **variation of the example utterances**, as well as, a few **random utterances**.
 
-4. Next, return to <a href="https://www.luis.ai" target="_blank">LUIS</a> and navigate to Build > Improve app performance > **Review endpoint utterances** page, use the **toggle** button to switch from the default Entities View to **Tokens View**, and then review the utterances:
+4. Next, return to [LUIS](https://www.luis.ai) and navigate to Build > Improve app performance > **Review endpoint utterances** page, use the **toggle** button to switch from the default Entities View to **Tokens View**, and then review the utterances:
 
     * In the **Utterance** column, change and remove the assigned labels as needed so they align with your intent.
     * In the **Aligned intent** column, verify that the intent is correct.
