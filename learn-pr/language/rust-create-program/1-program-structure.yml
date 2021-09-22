@@ -43,7 +43,7 @@ quiz:
   - content: "What's the output from this call to the `println!` macro?<br>
              `println!(\"{} is number. {} is a word.\", 1, \"Two\");`"
     choices:
-    - content: "1 Two"
+    - content: "1 is number. Two is a word."
       isCorrect: true
       explanation: "Correct! The `println!` macro replaces each instance of curly brackets `{}` with the next argument value."      
     - content: "{} is number. {} is a word."
