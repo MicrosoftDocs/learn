@@ -44,13 +44,13 @@ In this task, we will test the app registration.
 1. Wait for it to execution to finish
 1. Click **Params** tab, and review the **access_token** value (usually displayed on line 5)
 1. Switch to the Azure portal and in Az500 app (same place you finished on Task 1), under **Manage** select **API Permissions** on the left column
-1. Click **Add a permission**, and **Resquest API permissions** blade will come up
-	* Inside the **Resquest API permissions** blade, select **Microsoft Graph**
+1. Click **Add a permission**, and **Request API permissions** blade will come up
+	* Inside the **Request API permissions** blade, select **Microsoft Graph**
 	* Select **Application permissions**
 	* Scroll down inside the same blade and select **User** category
 	* Checkbox by **User.Read.All**
 	* Click **Add permissions**
-1. Once the change has been commited click on **User.Read.All** entry
+1. Once the change has been committed click on **User.Read.All** entry
 	* Show that **Admin consent required** is set to "Yes"
 	* Close that window
 	* Select **Grant admin consent for az500...**

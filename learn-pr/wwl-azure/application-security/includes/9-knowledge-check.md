@@ -1,5 +1,6 @@
-Check your knowledge and comprehension with this questions.
-### Knowledge check
+
+Answer these review questions to test your knowledge of securing databases in Azure.
+### Answer the questions
 
 
 ## Multiple Choice 

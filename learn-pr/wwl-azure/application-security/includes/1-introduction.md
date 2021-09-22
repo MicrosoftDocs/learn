@@ -1,12 +1,12 @@
 
-Application security is one extra layer in the defence in depth strategy.  You ensure that your application is registered, so it has a unique identity in Azure AD, then you can manage and control both access to the application and what the application can do.
+Application security is one extra layer in the defense in depth strategy.  You ensure that your application is registered, so it has a unique identity in Azure AD, then you can manage and control both access to the application and what the application can do.
 
 ## Scenario
 
 A security engineer uses application security to protect the usage of your application and prevent the loss of data, you will work on such tasks as:
 - Register applications with Azure AD.
 - Assign permissions for the application and the users to access it.
-- Use certificates and secrets to protect operations and adata.
+- Use certificates and secrets to protect operations and data.
 
 ## Skills measured
 
