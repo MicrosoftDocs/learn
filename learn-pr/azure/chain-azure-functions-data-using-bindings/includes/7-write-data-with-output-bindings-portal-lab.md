@@ -23,7 +23,7 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. In the portal, go to the function app that you created in this module.
 
-1. In the left menu pane, under **Functions**, select **Functions**.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
 
 1. In the top menu bar, select **Create**. The **Create function** pane appears.
 
@@ -37,7 +37,7 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. In the portal, go to the function app that you created in this module.
 
-1. In the left menu pane, under **Functions**, select **Functions**.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
 
 1. In the top menu bar, select **Create**. The **Create function** pane appears.
 
