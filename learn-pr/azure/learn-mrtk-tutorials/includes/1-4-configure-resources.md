@@ -1,6 +1,6 @@
 The Mixed Reality Toolkit's an open-source toolkit, which can be imported into your Unity mixed reality project. Although you could create Windows Mixed Reality apps without the Mixed Reality Toolkit, consider importing the toolkit to accelerate your development. Here you'll learn about the contents of the Mixed Reality Toolkit.
 
-## What is the mixed reality toolkit?
+## What is the Mixed Reality Toolkit?
 
 The MRTK v2 with Unity is an open-source cross-platform development kit for mixed reality applications. MRTK version 2 is intended to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. Android and iOS device support is also available.
 
