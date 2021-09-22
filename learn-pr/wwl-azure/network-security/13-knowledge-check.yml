@@ -51,7 +51,7 @@ quiz:
     - content: "Allow Internet inbound"
       isCorrect: true
       explanation: "Allow Internet inbound. NSGs have default inbound and outbound rules. There is a default allow Internet outbound rule, but not an allow Internet inbound rule."
-  - content: "Your organization has web servers in different regions and you want to optimize the availability of the servers. Which of the following is best suited for this purposed? Select one."
+  - content: "Your organization has web servers in different regions and you want to optimize the availability of the servers. Which of the following is best suited for this purpose? Select one."
     choices:
     - content: "Azure Application Gateway"
       isCorrect: false
@@ -61,4 +61,4 @@ quiz:
       explanation: "Azure Front Door. Azure Front Door lets you define, manage, and monitor the global routing for your web traffic by optimizing for best performance and instant global failover for high availability."
     - content: "Custom routing"
       isCorrect: false
-      explanation: "This might work, but would be difficult to set up and maintain reliabily and securely."
+      explanation: "This might work, but would be difficult to set up and maintain reliably and securely."

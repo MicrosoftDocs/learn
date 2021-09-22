@@ -1,5 +1,5 @@
 
-Think of security in layers, and the network layer is very important.  You need to lock down the network with tools like security groups, Bastion, and Front Door. Whan a bad-actor has to invsest time and effort to break into your network or gain access to resources if they break in the more likely they are to leave you alone.
+Think of security in layers, and the network layer is very important.  You need to lock down the network with tools like security groups, Bastion, and Front Door. When a bad-actor has to invest time and effort to break into your network or gain access to resources if they break in the more likely they are to leave you alone.
 
 ## Scenario
 

@@ -1,5 +1,5 @@
 
-Servcie endpoints would provide benefits in the following Scenarios.
+Service endpoints would provide benefits in the following Scenarios.
 
 ### Scenarios
 
