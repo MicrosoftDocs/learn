@@ -1,6 +1,6 @@
 The first step to creating an immersive experience for Windows Mixed Reality requires configuring your Unity project for Windows Mixed Reality development. Configuring Unity for Windows Mixed Reality development is a manual process, which must be completed whenever you create a new Unity project or open a project shared with you. Once your project is configured, your app will be able to do basic holographic rendering and spatial input. Here you'll learn the specifics of configuring your Unity project for Windows Mixed Reality development.
 
-## Universal windows platform
+## Universal Windows Platform
 
 To target Windows Mixed Reality, your Unity project must be set to export as a Universal Windows Platform app. By default, the build settings for the Universal Windows Platform target any device - this includes support for immersive headsets. However, you could select the appropriate device by changing the setting for Target device.
 
@@ -22,6 +22,6 @@ To achieve better hologram stability from the perception of the user, **Depth Bu
 
 With regard to performance, selecting the **16-bit depth** format compared to 24-bit will significantly reduce the bandwidth requirements as less data will need to be moved/processed.
 
-## How to port an existing unity app to windows mixed reality
+## How to port an existing Unity app to windows Mixed Reality
 
 If you've an existing Unity project that you're porting to Windows Mixed Reality, refer to the Unity porting guide to get started. Bringing existing content over to Windows Mixed Reality involves re-targeting the usage of other platform SDKs to the Windows APIs. If your app isn't already built for the Universal Windows Platform, changing over to the platform will be part of the porting experience.

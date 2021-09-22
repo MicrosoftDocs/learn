@@ -1,10 +1,10 @@
 The Mixed Reality Toolkit's an open-source toolkit, which can be imported into your Unity mixed reality project. Although you could create Windows Mixed Reality apps without the Mixed Reality Toolkit, consider importing the toolkit to accelerate your development. Here you'll learn about the contents of the Mixed Reality Toolkit.
 
-## What is the mixed reality toolkit?
+## What is the Mixed Reality Toolkit?
 
 The MRTK v2 with Unity is an open-source cross-platform development kit for mixed reality applications. MRTK version 2 is intended to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. Android and iOS device support is also available.
 
-## MRTK unity
+## MRTK Unity
 
 MRTK-Unity is a Microsoft-driven project that provides a set of components and features, used to accelerate cross-platform MR app development in Unity. Here are some of its functions:
 
@@ -18,7 +18,7 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
   * OpenVR headsets (HTC Vive / Oculus Rift)
   * Ultra leap Hand Tracking
 
-## MRTK unity foundation package
+## MRTK Unity foundation package
 
 MRTK provides four MRTK Unity packages which can be imported into your Unity project. The latest version of the packages can be found in the Mixed Reality Feature Tool. The **Mixed Reality Toolkit Foundation** package is the only **required package** that must be imported and configured to use MRTK with your project. You can use Mixed Reality Toolkit Foundation 2.5.x or newer. This package includes the core components required to create a mixed reality application.
 
