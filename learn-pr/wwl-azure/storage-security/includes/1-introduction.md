@@ -3,7 +3,7 @@ Every organization has data.  That data needs to be protected at rest, in transi
 
 ## Scenario
 
-A security engineer will protect data within databases, file shares, or whereever it resides, you will work on such tasks as:
+A security engineer will protect data within databases, file shares, or anywhere it resides, you will work on such tasks as:
 - Lock down access to storage to specific users and applications.
 - Encrypt data where it is stored and while it is moved around.
 - Use identity to protect data when it is accessed and used.

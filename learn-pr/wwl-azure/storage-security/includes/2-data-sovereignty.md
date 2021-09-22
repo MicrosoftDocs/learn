@@ -1,5 +1,5 @@
 
-**What is Data Sovereignty?** - Data sovereignty is the concept that information which has been converted and stored in binary digital form is subject to the laws of the country or region in which it is located. Many of the current concerns that surround data sovereignty relate to enforcing privacy regulations and preventing data that is stored in a foreign country or region from being subpoenaed by the host country or region’s government.
+**What is Data Sovereignty?** - Data sovereignty is the concept that information, which has been converted and stored in binary digital form, is subject to the laws of the country or region in which it is located. Many of the current concerns that surround data sovereignty relate to enforcing privacy regulations and preventing data stored in a foreign country or region from being subpoenaed by the host country or region’s government.
 
 In Azure, customer data might be replicated within a selected geographic area for enhanced data durability in case of a major data center disaster, and in some cases will not be replicated outside it.
 
@@ -16,7 +16,7 @@ We recommend that you configure business continuity and disaster recovery (BCDR)
 
 ### Benefits of Azure paired regions
 
-* **Physical isolation** - When possible, Azure services prefers at least 300 miles of separation between datacenters in a regional pair (although this isn't practical or possible in all geographies). Physical datacenter separation reduces the likelihood of both regions being affected simultaneously as a result of natural disasters, civil unrest, power outages, or physical network outages. Isolation is subject to the constraints within the geography, such as geography size, power and network infrastructure availability, and regulations.
+* **Physical isolation** - When possible, Azure services prefer at least 300 miles of separation between datacenters in a regional pair (although this isn't practical or possible in all geographies). Physical datacenter separation reduces the likelihood of both regions being affected simultaneously as a result of natural disasters, civil unrest, power outages, or physical network outages. Isolation is subject to the constraints within the geography, such as geography size, power and network infrastructure availability, and regulations.
 
 * **Platform-provided replication** - Some services such as geo-redundant storage provide automatic replication to the paired region.
 

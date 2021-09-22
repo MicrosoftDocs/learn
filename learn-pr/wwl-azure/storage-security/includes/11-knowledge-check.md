@@ -1,6 +1,6 @@
-Complete the following question to test your knowledge of the topics covered in this module.
-### Review questions
 
+Answer these review questions to test your knowledge of securing databases in Azure.
+### Answer the questions
 
 ## Multiple Choice 
 You need to provide a contingent staff employee temporary read-only access to the contents of an Azure storage account container named “Media”. It is important that you grant access while adhering to the security principle of least-privilege. What should you do? Select one.  
