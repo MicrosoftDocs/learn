@@ -5,8 +5,8 @@ metadata:
   title: Explore different methods to onboard servers at scale to Azure Arc
   description: TBD
   ms.date: 09/21/2021
-  author: TBD
-  ms.author: TBD
+  author: aurnovcy
+  ms.author: aurnovc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

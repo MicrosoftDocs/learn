@@ -8,7 +8,7 @@ Given the complexity, global presence, and hybrid nature of Wide World Importers
 
 You can learn more by visiting the following webpages:
 
-- [Azure Arc overview](https://docs.microsoft.com/en-us/azure/azure-arc/overview)
-- [What is Azure Arc enabled servers?](https://docs.microsoft.com/en-us/azure/azure-arc/servers/overview)
-- [Virtual machine extension management with Azure Arc enabled servers](https://docs.microsoft.com/en-us/azure/azure-arc/servers/manage-vm-extensions)
+- [Azure Arc overview](https://docs.microsoft.com/azure/azure-arc/overview)
+- [What is Azure Arc enabled servers?](https://docs.microsoft.com/azure/azure-arc/servers/overview)
+- [Virtual machine extension management with Azure Arc enabled servers](https://docs.microsoft.com/azure/azure-arc/servers/manage-vm-extensions)
 - [Azure Arc-enabled servers | Azure Arc Jumpstart](https://azurearcjumpstart.io/azure_arc_jumpstart/azure_arc_servers/)

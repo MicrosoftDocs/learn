@@ -5,8 +5,8 @@ metadata:
   title: What is Azure Arc-enabled Servers and their capabilities? 
   description: TBD
   ms.date: 09/21/2021
-  author: TBD
-  ms.author: TBD
+  author: aurnovcy
+  ms.author: aurnovc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

@@ -4,8 +4,8 @@ metadata:
   title: Plan and Deploy Azure Arc-enabled Servers at Scale 
   description: TBD
   ms.date: 09/21/2021
-  author: TBD
-  ms.author: TBD
+  author: aurnovcy
+  ms.author: aurnovc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan and Deploy Azure Arc-enabled Servers at Scale 
@@ -34,8 +34,6 @@ units:
 - learn.azure.plan-deploy-azure-arc-enabled-servers.planning-for-secure-configuration
 - learn.azure.plan-deploy-azure-arc-enabled-servers.explore-methods-to-onboard-servers
 - learn.azure.plan-deploy-azure-arc-enabled-servers.best-practices-for-server-management
-- learn.azure.plan-deploy-azure-arc-enabled-servers.exercise-three
-- learn.azure.plan-deploy-azure-arc-enabled-servers.knowledge-check
 - learn.azure.plan-deploy-azure-arc-enabled-servers.summary
 badge:
   uid: learn.azure.plan-deploy-azure-arc-enabled-servers.badge
