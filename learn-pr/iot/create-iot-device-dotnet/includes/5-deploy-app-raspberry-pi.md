@@ -7,7 +7,7 @@ You've constructed the prototype device and written the console app that drives 
 
 ## Deployment types
 
-.NET provides two publishing modes, **framework-dependent** and **self-contained**. In a framework-dependent deployment, the app relies on an installation of the .NET runtime on the target device. In a self-contained deployment, the app includes all of the .NET runtime dependencies with the compiled assemblies. There are advantages to each approach. For this module, you'll deploy your app as a self-contained app.
+.NET provides two publishing modes: **framework-dependent** and **self-contained**. In a framework-dependent deployment, the app relies on an installation of the .NET runtime on the target device. In a self-contained deployment, the app includes all of the .NET runtime dependencies with the compiled assemblies. There are advantages to each approach. For this module, you'll deploy your app as a self-contained app.
 
 ## Create a destination directory on the Raspberry Pi
 
@@ -79,4 +79,4 @@ chmod +x ./cheesecave.net
 
 The `cheesecave.net` executable file now has permission to execute.
 
-In the next unit, you'll test the code on your device!
+In the next unit, you'll test the code on your device.

@@ -1,4 +1,4 @@
-The only thing left is to test the app!
+The only thing left is to test the app.
 
 ## Test the app
 
@@ -29,7 +29,7 @@ Congratulations! You've built and coded a working IoT device prototype!
 
 ## What to do if something doesn't work
 
-If your app doesn't work right or throws an exception, don't panic! Check the following things:
+If your app doesn't work right or throws an exception, don't panic. Check the following things:
 
 1. Double-check the connections on your breadboard. Use the tables and diagrams in unit 2 for reference.
 1. Did you enable the I2C service using `raspi-config`?

@@ -22,7 +22,7 @@ For example, any pin plugged into row `1`, column `a` in the previous image woul
 
 A breadboard can be paired with a GPIO breakout board to simplify prototyping with GPIO pins.
 
-## Measuring environmental conditions
+## Measure environmental conditions
 
 To measure temperature and humidity, you'll use a commonly available low-cost environmental sensor, the BME280.
 
@@ -34,9 +34,9 @@ Your BME280 sensor chip is already installed on a breakout board. All you need t
 > There are many manufacturers of BME280 breakouts. Most designs are similar, and the manufacturer shouldn't make any difference to the functionality. This module was built with the Adafruit example in the prerequisites. Ensure your BME280 breakout includes an Inter-Integrated Circuit (I2C) interface.
 
 > [!TIP]
-> Most BME280 breakouts are sold with the pin header unattached. As a consequence, most require soldering to assemble. If you don't know how to solder, don't be discouraged! Soldering isn't as hard as you might think! There are a plethora of tutorials and videos to get you started. [Here's a good example](https://www.youtube.com/watch?v=ZwU9SqO0udU).
+> Most BME280 breakouts are sold with the pin header unattached. As a consequence, most require soldering to assemble. If you don't know how to solder, don't be discouraged! Soldering isn't as hard as you might think! There's a plethora of tutorials and videos to get you started. [Here's a good example](https://www.youtube.com/watch?v=ZwU9SqO0udU).
 
-## Controlling fans
+## Control fans
 
 In a real-world scenario, you'd use a relay module like this to control power to the fan.
 
@@ -71,8 +71,8 @@ Refer to the diagram above as you construct your device.
     | Connect this...                         | ...to this                           | Diagram color |
     |-----------------------------------------|--------------------------------------|---------------|
     | GPIO pin 21                             | LED anode<br>(longer, positive lead) | Green         |
-    | LED cathode<br>(shorter, negative lead) | 1.0K Ω resistor<br>(either end)      | N/A           |
-    | 1.0K Ω resistor<br>(other end)          | Ground                               | N/A           |
+    | LED cathode<br>(shorter, negative lead) | 1.0K ohm resistor<br>(either end)      | N/A           |
+    | 1.0K ohm resistor<br>(other end)          | Ground                               | N/A           |
 
     > [!NOTE]
     > The resistor is required to ensure the LED isn't burnt out due to excessive current. You don't need a resistor in a real-world relay scenario.

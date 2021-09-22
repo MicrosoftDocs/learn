@@ -22,12 +22,12 @@ abstract: |
 prerequisites: |
   - Intermediate knowledge of .NET.
   - Basic understanding of Raspberry Pi and Raspberry Pi OS.
-  - .NET SDK 5 or greater.
+  - .NET SDK 5 or later.
   - The following hardware components:
     - A Raspberry Pi device (2 or greater) configured with Raspberry Pi OS.
     - BME280 humidity/barometric pressure/temperature sensor breakout ([example](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout))
     - 5 mm LED ([example](https://www.adafruit.com/product/4203))
-    - 1.0K Ω resistor ([example](https://www.adafruit.com/product/4294))
+    - 1.0K ohm resistor ([example](https://www.adafruit.com/product/4294))
     - Jumper wires ([example](https://www.adafruit.com/product/758))
     - Full-sized breadboard ([example](https://www.adafruit.com/product/239))
     - Raspberry Pi GPIO breakout board ([example](https://www.adafruit.com/product/2028))
