@@ -38,7 +38,7 @@ All of the required hardware components are available from various retailers. Mo
 > [!IMPORTANT]
 > The .NET IoT Libraries support a wide range of hardware platforms. Raspberry Pi was selected for this module due to its wide availability and affordable price point.
 >
-> Ensure your device has the latest version of [Raspberry Pi OS](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) installed. Since we won't be using the Raspberry Pi desktop, it isn't necessary to do the full install. If you prefer the "Lite" image, it's found under **Raspberry Pi OS (Other*)* in the Raspberry Pi OS Installer.
+> Ensure your device has the latest version of [Raspberry Pi OS](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) installed. Since we won't be using the Raspberry Pi desktop, it's unnecessary to do the full install. If you prefer the "Lite" image, it's found under **Raspberry Pi OS (Other*)* in the Raspberry Pi OS Installer.
 >
 > After installing Raspberry Pi OS, use the `raspi-config` command to ensure the following two services are enabled:
 >
