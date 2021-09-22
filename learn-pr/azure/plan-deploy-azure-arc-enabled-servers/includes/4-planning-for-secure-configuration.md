@@ -4,7 +4,7 @@ Arc-enabled servers not only benefit from built in-security with careful encrypt
 
 1.	Configure Role based access control (RBAC): Develop an access plan to control who has access to manage Azure Arc-enabled servers and ability to view their data from other Azure services.
 
-1.	Develop an Azure Policy governance plan: Determine how you will implement governance of hybrid servers and machines at the subscription or resource group scope with Azure Policy.	
+1.	Develop an Azure Policy governance plan: Determine how you'll implement governance of hybrid servers and machines at the subscription or resource group scope with Azure Policy.	
 
 1.	Select Advanced Networking options: Evaluate whether Proxy Server or Azure Private Link will be necessary for your Arc-enabled server deployment
 
@@ -44,7 +44,7 @@ Before deploying Arc-enabled servers to a resource group, you can systemically d
 
 Beyond public endpoint, two other secure networking options for Arc-enabled Servers are Proxy Server and Azure Private Link. 
 
-If your machine is communicating through a proxy server to connect to the internet, you can specify the proxy server IP address or the name and port number that the machine will use to communicate with the proxy server. This specification can be made directly in Azure Portal when generating a script for onboarding multiple machines to Arc.
+If your machine is communicating through a proxy server to connect to the internet, you can specify the proxy server IP address or the name and port number that the machine will use to communicate with the proxy server. This specification can be made directly in Azure portal when generating a script for onboarding multiple machines to Arc.
 
 For high security scenarios, Azure Private Link allows you to securely link Azure PaaS services to your virtual network using private endpoints. For many services, you just set up an endpoint per resource. This means you can connect your on-premises or multi-cloud servers with Azure Arc and send all traffic over an Azure ExpressRoute or site-to-site VPN connection instead of using public networks. By utilizing Private Link with Arc-enabled servers, you can:
 

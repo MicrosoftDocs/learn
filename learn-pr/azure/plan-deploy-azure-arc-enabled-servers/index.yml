@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan and Deploy Azure Arc-enabled Servers at Scale 
-summary: Azure Arc promises to bridge the gap between on-premises and cloud environments by providing consistent operational approach, agility, automation, and hyperscale of the Azure platform and its services. In this module, you will learn about planning and securely deploying Arc-enabled servers at scale to realize Azure Arc's capabilities.
+summary: Azure Arc promises to bridge the gap between on-premises and cloud environments by providing consistent operational approach, agility, automation, and hyperscale of the Azure platform and its services. In this module, you'll learn about planning and securely deploying Arc-enabled servers at scale to realize Azure Arc's capabilities.
 abstract: | 
   After completing this module, you'll be able to:
   - Understand Azure Arc's built-in and supplemental security functions  

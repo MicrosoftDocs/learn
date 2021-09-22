@@ -1,4 +1,4 @@
-Azure Arc promises to bridge the gap between on-premises and cloud environments by providing consistent operational approach, agility, automation, and hyperscale of the Azure platform and its services. In this module, you will learn about planning and securely deploying Arc-enabled servers at scale to realize Azure Arc's capabilities.  
+Azure Arc promises to bridge the gap between on-premises and cloud environments by providing consistent operational approach, agility, automation, and hyperscale of the Azure platform and its services. In this module, you'll learn about planning and securely deploying Arc-enabled servers at scale to realize Azure Arc's capabilities.  
 
 Suppose you are an IT administrator at Wide World Importers, a leading import-export business specializing in trans-Atlantic routes. The company is organized around 6 regional offices based in key port cities. While you work at Headquarters, each regional office has its own IT infrastructure, running unique inventory and logistics software. While some regional offices rely on Azure, others have their own on-premises datacenter and resources in other public clouds.  
 
