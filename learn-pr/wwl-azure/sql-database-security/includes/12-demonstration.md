@@ -4,7 +4,7 @@ Give these Try-This exercises a test to gain some experience using Azure.
 
 ## Task 1 - Azure SQL: Advanced Data Security and Auditing
 
-In this task, we will explore vulnerability assessments, data dicscovery and classification, and audting.
+In this task, we will explore vulnerability assessments, data discovery and classification, and auditing.
 
 **Install the AdventureWorks sample database** 
 
@@ -78,7 +78,7 @@ In this task, we will review and configure SQL database diagnostics.
 1. In the **Portal**, search for and launch the **Log Analytics workspace**. 
 1. Select the workspace that is being using for your database diagnostics.
 1. Under **General** select **Usage and estimated costs**. 
-1. Click **Data retention**. Use the slider to show how to increse the data retention time. Discuss how additional charges can incur, depending on the pricing plan.
+1. Click **Data retention**. Use the slider to show how to increase the data retention time. Discuss how additional charges can incur, depending on the pricing plan.
 1. Under **General** select **Workspace summary**.
 1. Click **Add** and then search the Marketplace for **Azure SQL**. This feature may be in Preview. Explain the benefits of using this product. 
 1. Select and then create **Azure SQL Analytics**. 
