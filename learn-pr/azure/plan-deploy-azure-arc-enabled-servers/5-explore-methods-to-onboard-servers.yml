@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.plan-deploy-azure-arc-enabled-servers.explore-methods-to-onboard-servers
+title: Explore different methods to onboard servers at scale to Azure Arc
+metadata:
+  title: Explore different methods to onboard servers at scale to Azure Arc
+  description: TBD
+  ms.date: 09/21/2021
+  author: TBD
+  ms.author: TBD
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-explore-methods-to-onboard-servers.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following cannot be used to automate deployment of the Connected Machine Agent to multiple machines?"
+    choices:
+    - content: "Azure Policy"
+      isCorrect: true
+      explanation: "That's correct. TBD."
+    - content: "Group Policy"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+    - content: "Systems Center Configuration Manager"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+    - content: "Service Principal"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
