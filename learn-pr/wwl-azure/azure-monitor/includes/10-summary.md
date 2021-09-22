@@ -1,5 +1,5 @@
 
-Monitoring and maintaining your secure Azure solutions with Azure Monitor is a common and necessary practice to keeping your solutions and data secure.
+Monitoring and maintaining your secure Azure solutions with Azure Monitor is a common and necessary practice to keep your solutions and data secure.
 
 You should be able to:
 
