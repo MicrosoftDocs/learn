@@ -2,7 +2,7 @@ The Holographic Remoting Player is a companion program that links to Holographic
 
 You can only use PC apps that intend to support Holographic Remoting with the Holographic Remoting Player.
 
-## InternetClient - server capabilities
+## InternetClientServer capabilities
 
 The Network Client-server manager is used to manage the connections in many multiuser applications. But you can also use the lower-level NetworkServer and NetworkClient classes directly.
 Every application that uses the high-level APIs must connect to a host server where each user can act as a client, a dedicated server or, a server and client simultaneously.
