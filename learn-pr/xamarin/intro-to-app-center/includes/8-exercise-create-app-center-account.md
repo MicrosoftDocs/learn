@@ -53,7 +53,7 @@ The navigation menu for App Center presents the various service options availabl
 
 ## Explore the App Center services
 
-Let's explore the services represented in the navigation menu. Select a heading and then click through the App Center services for that section. Selections may vary, based on which OS platform you chose for your temporary app. The following overview of the main headings identifies the menu items available under each section headingfsub=.
+Let's explore the services represented in the navigation menu. Select a heading and then click through the App Center services for that section. Selections may vary, based on which OS platform you chose for your temporary app. The following overview of the main headings identifies the menu items available under each section heading.
 
 ### Build
 
