@@ -8,11 +8,11 @@ The Mixed Reality Toolkit provides a set of tools and components to accelerate y
     * **Rotation**: X = 0, Y = 90, Z = 0
     * **Scale**: X = 1, Y = 1, Z = 1
 
-    :::image type="content" source="../media/position-rover-parts.png" alt-text="Screenshot of Unity with newly created RoverParts object selected and positioned" lightbox="../media/position-rover-parts.png":::
+    :::image type="content" source="../media/position-rover-parts.png" alt-text="Screenshot of Unity with newly created RoverParts object selected and positioned." lightbox="../media/position-rover-parts.png":::
 
 2. In the Hierarchy window, select all the RoverExplorer > RoverAssembly > RoverModel > **Parts** child objects, right-click on them and select **Duplicate** to create a copy of each of the parts:
 
-    :::image type="content" source="../media/duplicate-parts.png" alt-text="Screenshot of Unity with all Parts selected and Duplicate contextual popup menu" lightbox="../media/duplicate-parts.png":::
+    :::image type="content" source="../media/duplicate-parts.png" alt-text="Screenshot of Unity with all Parts selected and Duplicate contextual popup menu." lightbox="../media/duplicate-parts.png":::
 
 3. With the newly duplicated Parts child objects still selected, click-and-drag them on to the **RoverParts** object to make them child objects of the RoverParts object:
 
