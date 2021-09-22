@@ -1,9 +1,9 @@
 
-Think of security in layers, and the network layer is very important.  You need to lock down the network with tools like security groups, Bastion, and Front Door. When a bad-actor has to invest time and effort to break into your network or gain access to resources if they break in the more likely they are to leave you alone.
+Think of security in layers, and the network layer is important.  You need to lock down the network with tools like security groups, Bastion, and Front Door. When, a bad-actor has to invest time and effort to break into your network or gain access to resources if they break in the more likely they are to leave you alone.
 
 ## Scenario
 
-A security engineer uses network security features to restrict, monitor and manage network traffic once it reaches your Azure network; you will work on such tasks as:
+A security engineer uses network security features to restrict, monitor, and manage network traffic once it reaches your Azure network; you will work on such tasks as:
 - Setup network security groups and application security groups.
 - Deploy Service Endpoints and Private Links.
 - Configure Front Door and ExpressRoute.
