@@ -14,4 +14,4 @@ Behind the scenes, Resource Manager still operates based on the same JSON templa
 
 To get started with Bicep, you need to install some tooling. The easiest way is to install the latest version of the Azure CLI or Azure PowerShell. Both of these tools support Bicep templates.
 
-You also need a text editor to write your Bicep templates in. [Visual Studio Code](https://code.visualstudio.com/) is a great text editor, and it has an [extension for writing Bicep templates](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). These tools provide language support and resource autocompletion. They help you to create and validate Bicep files.
+You also need a text editor to write your Bicep templates in. [Visual Studio Code](https://code.visualstudio.com/) is a great text editor, and it has an [extension for writing Bicep templates](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). These tools provide language support and resource autocompletion. They help you to create and validate Bicep files, and they tell you when your code doesn't follow recommended practices.
