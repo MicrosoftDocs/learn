@@ -2,7 +2,7 @@ Azure Bot Service is Microsoft's artificial intelligence (AI) chatbot service on
 
 The platform gives bot developers a software development kit (SDK) and tools to add bots to sites in the form of Azure Bot Builder. Bots made with the Azure Bot Builder are automatically added to Microsoft’s directory. Azure Bot services also support bots coded in Python, Java, JavaScript, and #C.
 
-## Bot framework composer
+## Bot Framework Composer
 
 Bot Framework Composer, built on the Bot Framework SDK, is an open-source IDE for developers to author, test, provision, and manage conversational experiences. It provides a powerful visual authoring canvas enabling dialogs, language-understanding models, QnAMaker knowledgebases, and language generation responses to be authored from within one canvas and crucially, enables these experiences to be extended with code for more complex tasks such as system integration. Resulting experiences can then be tested within Composer and provisioned into Azure along with any dependent resources.
 

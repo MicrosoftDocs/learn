@@ -28,7 +28,7 @@ Follow this [quickstart tutorial](/azure/cognitive-services/custom-vision-servic
 3. In the Hierarchy window, locate the **ObjectDetectionManager** object and select it.
 The **ObjectDetectionManager** prefab contains the **ObjectDetectionManager (script)** component and as you can see from the Inspector window it depends on Azure settings and Project settings.
 
-## Retrieve Azure api resource credentials
+## Retrieve Azure API resource credentials
 
 The necessary credentials for the **ObjectDetectionManager (script)** settings can be retrieve from the Azure portal and the custom vision portal.
 
