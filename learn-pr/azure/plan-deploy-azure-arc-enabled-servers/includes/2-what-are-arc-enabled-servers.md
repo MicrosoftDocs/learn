@@ -1,6 +1,6 @@
-Using Azure Security Center to improve security posture across one’s entire digital estate, Azure Sentinel for vulnerability and threat intelligence in other clouds, and Azure Monitoring for performance analytics on-premise, Azure Arc-enabled servers offers customers immense value: delivered through a simple architecture. 
+Using Azure Security Center to improve security posture across one's entire digital estate, Azure Sentinel for vulnerability and threat intelligence in other clouds, and Azure Monitoring for performance analytics on-premise, Azure Arc-enabled servers offers customers immense value: delivered through a simple architecture. 
 
-As Wide World Importers has prioritized its deployment of Arc-enabled servers, you want to first understand how Arc is able to extend Azure’s management plane to servers outside Azure and learn about what capabilities Arc-enabled servers could deliver for the firm.  
+As Wide World Importers has prioritized its deployment of Arc-enabled servers, you want to first understand how Arc is able to extend Azure's management plane to servers outside Azure and learn about what capabilities Arc-enabled servers could deliver for the firm.  
 
 ## Overview of the Azure Arc Connected Machine agent  
 
@@ -12,7 +12,7 @@ Azure Arc relies on a locally installed agent to establish a logical connection 
 
 - The Extension agent manages VM extensions, including install, uninstall, and upgrade. 
 
-By establishing a connection between Azure and a local resource, the Azure Connected Machine Agent effectively “arc-enables” the resource. Consequently, the non-Azure resource automatically becomes a hybrid Azure resource, as part of the Azure Resource Manager plane. Azure Resource Manager serves as the management interface that allows you to create, modify, and delete Azure resources. Beyond organizational and inventory capabilities, the Azure Connected Machine Agent facilitates a myriad of additional scenarios that use Azure services to optimize server management and monitoring. 
+By establishing a connection between Azure and a local resource, the Azure Connected Machine Agent effectively "arc-enables" the resource. Consequently, the non-Azure resource automatically becomes a hybrid Azure resource, as part of the Azure Resource Manager plane. Azure Resource Manager serves as the management interface that allows you to create, modify, and delete Azure resources. Beyond organizational and inventory capabilities, the Azure Connected Machine Agent facilitates a myriad of additional scenarios that use Azure services to optimize server management and monitoring. 
 
 ![TBD](../media/image-2-1.png)
 
@@ -22,7 +22,7 @@ Arc-enabled servers can leverage a breadth of capabilities, so you can bring Azu
 
 | Service | Description |
 |---|---|
-| **Azure Resource** | Azure Arc-enabled servers benefit from Azure’s robust resource management functions including:<ul><li>The ability to organize all organizational resources by using Azure management groups, subscriptions, resource groups, and tags.</li><li>A single, comprehensive inventory of organizational assets across multi-clouds and on-premises, including support for searching and indexing by using Azure Resource Graph.</li><li>A consolidated view of Azure and Azure Arc enabled resources via the Azure portal, Azure Command Line Interface (CLI), Azure PowerShell, and Representational state transfer (REST) Application Programming Interface (API).</li></ul> |
+| **Azure Resource** | Azure Arc-enabled servers benefit from Azure's robust resource management functions including:<ul><li>The ability to organize all organizational resources by using Azure management groups, subscriptions, resource groups, and tags.</li><li>A single, comprehensive inventory of organizational assets across multi-clouds and on-premises, including support for searching and indexing by using Azure Resource Graph.</li><li>A consolidated view of Azure and Azure Arc enabled resources via the Azure portal, Azure Command Line Interface (CLI), Azure PowerShell, and Representational state transfer (REST) Application Programming Interface (API).</li></ul> |
 | **Azure Policy** | Azure Policy enables customers to manage and evaluate internal and regulatory compliance of their Arc enabled servers. Users can define, assign, and remediate based on Azure Policy guest configurations to audit settings inside the machine like their time zone or security vulnerabilities. |
 | **Azure Security Center** | Azure Security Center enables customers to protect non-Azure servers with Microsoft Defender for Endpoint, included through Azure Defender, for threat detection, for vulnerability management, and to proactively monitor for potential security threats. Azure Security Center presents the alerts and remediation suggestions from the threats detected, and consolidates security posture with a high-level security score. |
 | **Azure Sentinel** | Machines connected to Arc-enabled servers can be configured with Azure Sentinel to collect security-related events and correlate them with other data sources. |
@@ -40,4 +40,4 @@ Arc-enabled servers can leverage VM Extensions. VM extensions are lightweight so
 | Log Analytics agent | Installs the Log Analytics agent on the target Arc enabled server and configures it for log forwarding to a Log Analytics workspace. |
 | Dependency agent | Installs the Dependency agent on the target Arc enabled server to facilitate identifying internal and external dependencies of server workloads. |
 | Azure Key Vault agent | Synchronizes certificates from an Azure Key Vault instance to the Arc enabled server. |
-| Qualys extension | Azure Defender for servers’ vulnerability assessment scanning solution. |
+| Qualys extension | Azure Defender for servers' vulnerability assessment scanning solution. |

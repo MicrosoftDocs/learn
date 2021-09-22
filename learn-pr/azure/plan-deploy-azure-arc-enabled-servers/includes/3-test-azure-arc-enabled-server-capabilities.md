@@ -1,4 +1,4 @@
-As you plan for deployment across Wide World Importers’ thousands of servers, you are first interested in sandboxed testing of Arc-enabled servers and their capabilities. While you cannot install Azure Arc-enabled servers on an Azure VM for production scenarios, it is possible to configure Azure Arc-enabled servers to run on an Azure VM for evaluation and testing purposes only. In this walkthrough, we showcase how Azure VM’s can be used to test Arc-enabled server functionalities. 
+As you plan for deployment across Wide World Importers' thousands of servers, you are first interested in sandboxed testing of Arc-enabled servers and their capabilities. While you cannot install Azure Arc-enabled servers on an Azure VM for production scenarios, it is possible to configure Azure Arc-enabled servers to run on an Azure VM for evaluation and testing purposes only. In this walkthrough, we showcase how Azure VMs can be used to test Arc-enabled server functionalities. 
 
 ## Pre-requisites for Arc-enablement 
 
@@ -72,6 +72,6 @@ To install with the script, you must run the downloaded script from PowerShell i
 
 1. Open an elevated PowerShell command prompt. Note: The script only supports running from a 64-bit version of Windows PowerShell.
 
-1. Change to the folder or share that you copied the script to, and execute it on the server by running the ./OnboardingScript.ps1 script.
+1. Change to the folder or share that you copied the script to, and execute it on the server by running the `./OnboardingScript.ps1` script.
 
 Now that you have an Azure Arc-enabled server, you can begin to test Azure Security Center, Azure Monitor, Azure Policies, VM Extensions and the range of Azure Arc-enabled server capabilities. 
