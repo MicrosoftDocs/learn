@@ -13,20 +13,3 @@ azureSandbox: false
 durationInMinutes: 5
 content: |
   [!include[](includes/6-best-practices-for-server-management.md)]
-quiz:
-  title: "Check your knowledge"
-  questions:
-  - content: "Which of the following Azure services is not part of Azure Automanage's automatic onboarding?"
-    choices:
-    - content: "Log Analytics Workspace"
-      isCorrect: false
-      explanation: "That's incorrect. TBD."
-    - content: "Resource Health Alerts"
-      isCorrect: true
-      explanation: "That's correct. TBD."
-    - content: "Update Management"
-      isCorrect: false
-      explanation: "That's incorrect. TBD."
-    - content: "Azure Guest Configuration"
-      isCorrect: false
-      explanation: "That's incorrect. TBD."
