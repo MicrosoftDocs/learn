@@ -1,4 +1,4 @@
-In this unit, you'll learn about the hardware you're going to use in this module. After that, you'll construct the circuits used to monitor environmental conditions and control the fan in the cheese cave.
+In this unit, you'll learn about the hardware used in this module. You'll then construct the device used to monitor cave conditions and control the fan.
 
 ## The GPIO header
 
@@ -6,19 +6,19 @@ This array of pins on the Raspberry Pi is called the General Purpose Input/Outpu
 
 :::image type="content" source="../media/gpio-header.png" alt-text="A Raspberry Pi 3 with the GPIO header highlighted." lightbox="../media/gpio-header.png":::
 
-This versatile pin header supports communication using a variety of protocols. You'll learn more about the supported protocols in the next unit.
+This versatile pin header supports communication using various protocols. You'll learn more about the supported protocols in the next unit.
 
 ## Breadboards
 
 A breadboard is a rapid prototyping tool for circuits.
 
-:::image type="content" source="../media/breadboard-highlighted.jpg" alt-text="An image of a half-sized breadboard with the bus strips and socket strips highlighted." lightbox="../media/breadboard-highlighted.jpg":::
+:::image type="content" source="../media/breadboard-highlighted.jpg" alt-text="A half-sized breadboard with the bus strips (red) and socket strips (cyan) highlighted." lightbox="../media/breadboard-highlighted.jpg":::
 
-The breadboard is organized in rows and columns called *strips*. The bus strips on the edges (indicated above in red) provide a continuous connection over the length of the breadboard. They are generally used to supply power for the circuit. The socket strips toward the middle of the breadboard (cyan) allow components to be connected together without soldering or wires.
+The breadboard is organized in rows and columns called *strips*. The bus strips on the edges (indicated above in red) provide a continuous connection over the length of the breadboard. They're used to supply power for the circuit. The socket strips toward the middle of the breadboard (cyan) allow components to be connected together without soldering or wires.
 
 :::image type="content" source="../media/breadboard-close-up.jpg" alt-text="A close-up image of a breadboard illustrating how connections work in socket strips." lightbox="../media/breadboard-close-up.jpg":::
 
-For example, any pin plugged into row *1*, column *a* in the previous image would also be connected to any pin plugged into row *1*, columns *b-e*. On the other side of the divider, row *1* columns *f-j* are similarly connected.
+For example, any pin plugged into row `1`, column `a` in the previous image would also be connected to any pin plugged into row `1`, columns `b-e`. On the other side of the divider, row `1` columns `f-j` are similarly connected.
 
 A breadboard can be paired with a GPIO breakout board to simplify prototyping with GPIO pins.
 
@@ -46,7 +46,7 @@ A relay is an electromagnetic switch that allows you to use small currents to co
 
 A real-world device might use this relay to control power to a fan. A fan large enough to maintain humidity in a cave would generally require a large AC current. For safety purposes, and to keep focus on the code, your device is going to use an LED to represent a relay. An illuminated LED will indicate that the relay is "on."
 
-To activate the LED, your code will activate a GPIO pin for output, which will send current to the LED. This is the same process you'd use to send current to a relay and activate the switch.
+To activate the LED, your code will activate a GPIO pin for output. The GPIO pin will send current to the LED, which will illuminate. This is the same process you'd use to send current to a relay and activate the switch.
 
 ## Exercise: Construct the IoT device
 
@@ -77,7 +77,7 @@ Refer to the diagram above as you construct your device.
     > [!NOTE]
     > The resistor is required to ensure the LED isn't burnt out due to excessive current. You don't need a resistor in a real-world relay scenario.
 
-:::image type="content" source="../media/breadboard-complete.jpg" alt-text="An image depicting a completed breadboard prototype." lightbox="../media/breadboard-complete.jpg":::
+:::image type="content" source="../media/breadboard-complete.jpg" alt-text="A completed breadboard prototype." lightbox="../media/breadboard-complete.jpg":::
 
 ## Connect the Raspberry Pi
 

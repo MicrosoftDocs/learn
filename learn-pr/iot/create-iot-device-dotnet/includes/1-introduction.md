@@ -1,6 +1,6 @@
-.NET runs on a variety of platforms and architectures. Common Internet of things (IoT) boards, such as Raspberry Pi and Hummingboard, are supported. These small, low-power platforms enable interaction with specialized hardware, such as sensors, analog-to-digital converters, and LCD devices.
+.NET runs on many different platforms and architectures. One of the most exciting places to run .NET is on IoT devices like Raspberry Pi. These devices enable new scenarios making use of sensors, analog-to-digital converters, and LCD devices.
 
-With the .NET IoT Libraries, you can build devices that perform tasks such as:
+With the .NET IoT Libraries, you can build devices for tasks such as:
 
 - Reading environmental conditions.
 - Accepting input from physical buttons and dials.
@@ -33,7 +33,7 @@ In this module you will:
   - Full-sized breadboard ([example](https://www.adafruit.com/product/239))
   - Raspberry Pi GPIO breakout board ([example](https://www.adafruit.com/product/2028))
 
-All of the required hardware components are available from a variety of retailers. Most of the components can be found bundled in convenient kits.
+All of the required hardware components are available from various retailers. Most of the components can be found bundled in convenient kits.
 
 > [!IMPORTANT]
 > The .NET IoT Libraries support a wide range of hardware platforms. Raspberry Pi was selected for this module due to its wide availability and affordable price point.
@@ -45,17 +45,17 @@ All of the required hardware components are available from a variety of retailer
 > - SSH
 > - I2C
 >
-> For more information on `raspi-config`, refer to the [Raspberry Pi documentation](https://www.raspberrypi.org/documentation/configuration/raspi-config.md).
+> For more information, see the [Raspberry Pi documentation](https://www.raspberrypi.org/documentation/configuration/raspi-config.md).
 
 ## Learn the scenario
 
-Suppose you manage a gourmet cheese making company in a southern location. The company is proud of its cheese, and is careful to maintain the perfect temperature and humidity of a natural cave that is used to age the cheese.
+Suppose you manage a gourmet cheese making company in a southern location. The company is proud of its cheese, and is careful to maintain the perfect temperature and humidity as it ages. To maintain the perfect conditions, they age the cheese in a natural cave.
 
   [![Close up photograph of matured cheese.](../media/cheese-rect8.png)](../media/cheese-rect8.png#lightbox)
 
 Your company's accepted ideal temperature for aging cheese is 50°F (10°C), with up to ±5°F (2.78°C) acceptable variance. Humidity is also important. A humidity level between 75-95% is acceptable.
 
-You've decided to build the device using a Raspberry Pi to monitor the environmental conditions in the cave. The device will also activate the fan to control humidity as needed. To leverage your existing development skills, you decide to use .NET.
+You've decided to build the device using a Raspberry Pi to monitor the environmental conditions in the cave. The device will also activate the fan to control humidity as needed. To take advantage of your existing development skills, you decide to use .NET.
 
   [![Photograph of matured blue cheese.](../media/cheese-circle1.png)](../media/cheese-circle1.png#lightbox)
 

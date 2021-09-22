@@ -1,6 +1,4 @@
-You've built a prototype device to monitor and control environmental conditions in the cave. In this unit, you'll use the .NET IoT Libraries to write code that interacts with the hardware.
-
-Even though the .NET SDK is supported on Raspberry Pi and other ARM-based boards, the best experience for developing .NET apps for IoT devices is found on a development workstation or laptop. Using a computer for development enables you to use full-featured IDEs like Visual Studio and Visual Studio Code.
+In this unit, you'll use the .NET IoT Libraries to write code that interacts with your cave monitor device. Although the .NET SDK is supported on Raspberry Pi and other IoT boards, using a computer is recommended. Using a computer enables you to use full-featured IDEs like Visual Studio and Visual Studio Code.
 
 ## Create the app
 
@@ -135,10 +133,10 @@ Complete the following steps from a command shell on your development machine.
 
     - An instance of `GpioController` is created for use in GPIO operations.
     - Pin 21 is opened with `gpio.OpenPin()`. The pin is opened for output with `PinMode.Output`.
-    - The value of Pin 21 is set to `PinValue.Low`. This is the lowest amount of voltage the pin can emit. For purposes of illuminating the LED, `PinValue.Low` represents *off*, and `PinValue.High` represents *on*. As a result, the LED representing the fan is turned off.
+    - The value of Pin 21 is set to `PinValue.Low`. This value represents the lowest amount of voltage the pin can emit. For purposes of illuminating the LED, `PinValue.Low` represents *off*, and `PinValue.High` represents *on*. As a result, the LED representing the fan is turned off.
     - The code toggles the fan/LED on and off by writing `PinValue.Low` and `PinValue.High`.
         > [!TIP]
-        > Many real-world relays use `PinValue.High` for *off* and `PinValue.Low` for *on*. That's the opposite of what you're implementing for the LED that's representing the fan in this exercise.
+        > Many real-world relays use `PinValue.High` for *off* and `PinValue.Low` for *on*. That's the opposite of what you're implementing for the LED that's representing the fan relay in this exercise.
 
     - Before the code exits, Pin 21 is closed with `gpio.ClosePin()`.
 
@@ -149,15 +147,15 @@ Complete the following steps from a command shell on your development machine.
         > Some BME280 breakouts use `Bme280.SecondaryI2cAddress` for the device address. If your app throws `System.IO.IOException: Error 121 performing I2C data transfer.`, try this value instead.
 
     - An instance of `I2cDevice` is created using the `I2cConnectionSettings` object.
-    - An instance of `Bme280` is created using the `I2cDevice` object. This represents the physical BME280.
+    - An instance of `Bme280` is created using the `I2cDevice` object. This object represents the physical BME280.
     - In the `WriteStatus()` method, a `Bme280ReadResult` object is created by calling `Bme280.Read()`.
     - The `Bme280ReadResult` object contains `Temperature` and `Humidity` properties.
         - Those properties each expose a property named `Value`.
-        - The `Value` properties expose properties that perform automatic unit conversions, such as `DegreesFahrenheit` and `Percent`.
+        - The `Value` properties expose properties that do automatic unit conversions, such as `DegreesFahrenheit` and `Percent`.
 
 ## Build the app
 
-Build the app.
+Run the following command to build the app.
 
 ```dotnetcli
 dotnet build

@@ -3,7 +3,7 @@ You've constructed the prototype device and written the console app that drives 
 > [!IMPORTANT]
 > Ensure your Raspberry Pi is configured as described in the introduction unit. The SSH service must be enabled for secure shell access from your development machine. The I2C service must be enabled to allow your code to access the I2C bus. Ensure your Raspberry Pi is connected to your network via WiFi or Ethernet.
 >
-> Refer to the [Raspberry Pi documentation](https://www.raspberrypi.org/documentation/configuration/raspi-config.md) for more information. 
+> For more information about Raspberry Pi configuration, see the [Raspberry Pi documentation](https://www.raspberrypi.org/documentation/configuration/raspi-config.md). 
 
 ## Deployment types
 
@@ -23,7 +23,7 @@ Complete the following steps **in a new terminal window**:
 
     - `ssh` is the command to launch OpenSSH.
     - `pi` is the username on the Raspberry Pi.
-    - `raspberrypi` is the host name for the Raspberry Pi. If you've changed this on your device, use the device's host name or IP address.
+    - `raspberrypi` is the host name for the Raspberry Pi. If you've changed the host name on your device, use the device's host name or IP address.
 
     > [!NOTE]
     > Most modern operating systems have OpenSSH preinstalled. If the `ssh` command doesn't resolve, install OpenSSH.
