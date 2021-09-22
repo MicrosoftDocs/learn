@@ -4,12 +4,14 @@ title: Send and Receive data using Azure Data Share and transform data using Azu
 metadata:
   title: Send and Receive data using Azure Data Share and transform data using Azure Data Factory
   description: "Send and Receive data using Azure Data Share and transform data using Azure Data Factory"
-  ms.date: 07/19/2021
+  ms.date: 09/16/2021
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-receive-data-share-transform-data.md)]

@@ -18,7 +18,7 @@ NSG flow logging requires the *Microsoft.Insights* provider. To register for tha
 
 1. If the status of the **microsoft.insights** provider is **NotRegistered**, in command bar, select **Register**.
 
-    ![A screenshot that shows the registered Microsoft.Insights provider.](../media/5-microsoft-insights.png)
+    :::image type="content" source="../media/5-microsoft-insights.png" alt-text="Screenshot showing the registered Microsoft.Insights provider.":::
 
 ## Create a storage account
 
