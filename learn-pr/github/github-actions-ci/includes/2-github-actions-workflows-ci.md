@@ -86,8 +86,7 @@ matrix:
     node-version: [8.x, 10.x]
 ```
 
-Here, we configured a [build matrix](https://github.com/actions/learn-github-actions/managing-complex-workflows
-) for testing across multiple operating systems and language versions. This matrix will produce four builds, one for each operating system paired with each version of Node.
+Here, we configured a [build matrix](https://docs.github.com/en/enterprise-server@3.1/actions/learn-github-actions/managing-complex-workflows) for testing across multiple operating systems and language versions. This matrix will produce four builds, one for each operating system paired with each version of Node.
 
 Four builds along with all their tests will produce quite a bit of log information. It might be difficult to sort through it all. In the sample below, we show you how to move the test step to a dedicated test job. This job tests against multiple targets. Making the build and test steps separate will make it easier to understand the log.
 
