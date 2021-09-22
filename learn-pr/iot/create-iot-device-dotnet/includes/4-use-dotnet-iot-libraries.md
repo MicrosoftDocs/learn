@@ -1,4 +1,4 @@
-In this unit, you'll use the .NET IoT Libraries to write code that interacts with your cave monitor device. Although the .NET SDK is supported on Raspberry Pi and other IoT boards, using a computer is recommended. Using a computer enables you to use full-featured IDEs like Visual Studio and Visual Studio Code.
+In this unit, you'll use the .NET IoT Libraries to write code that interacts with your cave monitor device. Although the .NET SDK is supported on Raspberry Pi and other IoT boards, using a computer is recommended. Using a computer enables you to use fully featured IDEs and editors like Visual Studio and Visual Studio Code.
 
 ## Create the app
 
