@@ -7,13 +7,13 @@ You've constructed the prototype device and written the console app that drives 
 
 ## Deployment types
 
-.NET provides two publishing modes, **framework-dependent** and **self-contained**. In a *framework-dependent* deployment, the app relies on an installation of the .NET runtime on the target device. In a self-contained deployment, the app includes all of the .NET runtime dependencies with the compiled assemblies. There are advantages to each approach. For this module, you'll deploy your app as a self-contained app.
+.NET provides two publishing modes, **framework-dependent** and **self-contained**. In a framework-dependent deployment, the app relies on an installation of the .NET runtime on the target device. In a self-contained deployment, the app includes all of the .NET runtime dependencies with the compiled assemblies. There are advantages to each approach. For this module, you'll deploy your app as a self-contained app.
 
 ## Create a destination directory on the Raspberry Pi
 
 Complete the following steps **in a new terminal window**:
 
-1. Create a secure shell session on your Raspberry Pi.
+1. Open a secure shell session to your Raspberry Pi.
 
     ```bash
     ssh pi@raspberrypi
