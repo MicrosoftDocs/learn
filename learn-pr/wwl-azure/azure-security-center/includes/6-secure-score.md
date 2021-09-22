@@ -20,7 +20,7 @@ To immediately determine how well your organization is securing each individual 
 The contribution of each security control towards the overall secure score is shown clearly on the recommendations page.
 
 > [!div class="mx-imgBorder"]
-> ![Security Center - Recommendations page](../../media/az500-secure-score-2.png)
+> ![Security Center - Recommendations page](../media/az500-secure-score-2.png)
 
 To get all the possible points for a security control, all your resources must comply with all of the security recommendations within the security control. For example, Security Center has multiple recommendations regarding how to secure your management ports. In the past, you could remediate some of those related and interdependent recommendations while leaving others unsolved, and your secure score would improve. When looked at objectively, it's easy to argue that your security hadn't improved until you had resolved them all. Now, you must remediate them all to make a difference to your secure score.
 

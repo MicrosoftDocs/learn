@@ -1,21 +1,21 @@
 
-Just-in-time (JIT) virtual machine (VM) access can be used to lock down inbound traffic to your Azure VMs, reducing exposure to attacks while providing easy access to connect to VMs when needed.
+Just-in-time (JIT) virtual machine (VM) access is used to lock down inbound traffic to your Azure VMs, reducing exposure to attacks while providing easy access to connect to VMs when needed.
 
-When you enable JIT VM Access for your VMs, you can create a policy that determines the ports to help protect, how long ports should remain open, and the approved IP addresses that can access these ports. The policy helps you stay in control of what users can do when they request access. Requests are logged in the Azure activity log, so you can easily monitor and audit access. The policy will also help you quickly identify the existing VMs that have JIT VM Access enabled and the VMs where JIT VM Access is recommended.
+When you enable JIT VM Access for your VMs, you next create a policy that determines the ports to help protect, how long ports should remain open, and the approved IP addresses that can access these ports. The policy helps you stay in control of what users can do when they request access. Requests are logged in the Azure activity log, so you can easily monitor and audit access. The policy will also help you quickly identify the existing VMs that have JIT VM Access enabled and the VMs where JIT VM Access is recommended.
 
 ### How JIT VM Access works
 
-To use Just in time VM access you must enable Azure Defender.
+To use Just-in-Time VM access, you must enable Azure Defender.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Azure Defender features.](../media/az500-just-in-time.png)
 
-After you enable Defender, you can view which virtual machines have JIT configured. You should enable JIT on any virtual machine that is not Healthy.  
+After you enable Defender, you can view which virtual machines have JIT configured. Enable JIT on any virtual machine that is not Healthy.  
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the recommended virtual machines page.](../media/az500-just-in-time-2.png)
 
-For each virtual machine, you are provided recommend ports and access. 
+For each virtual machine, you are recommended specific ports and access. 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshots of port recommendations.](../media/az500-just-in-time-3.png)
