@@ -27,7 +27,7 @@ To save time, let's start by running a script to host our API in Azure. The scri
     git clone https://github.com/MicrosoftDocs/mslearn-control-authentication-with-apim.git
     ```
 
-1. Navigate into the repo folder locally by running the following cd command.
+1. Go to the repo folder locally by running the following cd command.
 
     ```bash
     cd mslearn-control-authentication-with-apim
@@ -56,9 +56,11 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure resource menu, or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure resource menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the search bar, enter **API Management**, and press <kbd>Enter</kbd>. Select **Create** on the API Management service published by Microsoft. The **Create API Management** pane appears.
+1. In the *Search services and marketplace* search bar, enter **API Management**, and press <kbd>Enter</kbd>. The **API Management** pane appears.
+
+1. Select **Create**. The **Create API Management** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -73,7 +75,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
     | Organization name | Enter `Weather-Company`. |
     | Administrator email | Enter your own email address. |
     | **Pricing tier** |
-    | Pricing tier | From the dropdown, select `Consumption`. |
+    | Pricing tier | From the dropdown list, select `Consumption`. |
     | | |
 
 1. Select **Review + create**, and after validation passes, select **Create**.
@@ -89,7 +91,7 @@ After deployment has completed, import the Weather API into the API Management g
 
 1. Select **Go to resource**. The Overview pane of the **API Management service** for your resource appears.
 
-1. In the API Management service resource menu, under **APIs**, select **APIs**. The **APIs** pane for your API Management service appears, with template selections for creating an API.
+1. In the left menu pane, under **APIs**, select **APIs**. The **APIs** pane for your API Management service appears, with template selections for creating an API.
 
 1. Under **Create from definition**, select **OpenAPI**. The **Create from OpenAPI specification** dialog box appears.
 
@@ -99,15 +101,15 @@ After deployment has completed, import the Weather API into the API Management g
 
     :::image type="content" source="../media/3-import-the-api.png" alt-text=" Screenshot of dialog ox with swagger.json url highlighted.":::
 
-The Design tab of the Weather Data api displays all operations (two GET requests). 
+The Design tab of the Weather Data api displays all operations (two GET requests).
 
 ## Add a subscription key to access the Weather API
 
 The final step is to add a subscription key for the weather API.
 
-1. In the apim-WeatherData.... APIs menu, under **APIs**, select **Subscriptions**. The **Subscriptions** pane for your API Management service appears.
+1. In the left menu pane, under **APIs**, select **Subscriptions**. The **Subscriptions** pane for your API Management service appears.
 
-1. On the command bar, select **Add subscription**. The **New subscription** pane appears.
+1. On the top menu bar, select **Add subscription**. The **New subscription** pane appears.
 
     :::image type="content" source="../media/3-subscriptions.png" alt-text="Screenshot showing how to add a new subscription.":::
 
@@ -120,7 +122,7 @@ The final step is to add a subscription key for the weather API.
     | Allow tracing | No checkmark |
     | Scope | From the dropdown list, select **API**. |
     | API | From the dropdown list, select **Weather Data**. |
-   
+
 1. Select **Create**. The **Subscriptions** pane reappears with your *Weather Data Subscription* in the list.
 
 1. At the end of the *Weather Data Subscription* row, select the ellipsis, and in the context menu select **Show/hide keys**. The Primary and Secondary key values display.
