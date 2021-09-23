@@ -78,7 +78,7 @@ Synapse pipelines use the same Data Integration engine used by Azure Data Factor
 > [!div class="mx-imgBorder"]
 > ![Screenshot of a simple pipeline containing three activities](../media/3-pipeline.png)
 
-For more information, read [Pipelines and activities in Azure Data Factory](https://docs.microsoft.com/azure/data-factory/concepts-pipelines-activities).
+For more information, read [Pipelines and activities in Azure Data Factory](/azure/data-factory/concepts-pipelines-activities).
 
 ### What is Synapse Link?
 

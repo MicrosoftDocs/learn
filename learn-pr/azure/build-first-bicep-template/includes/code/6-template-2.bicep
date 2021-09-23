@@ -11,7 +11,6 @@ param environmentType string
 var appServicePlanName = 'toy-product-launch-plan'
 var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
 var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'F1'
-var appServicePlanTierName = (environmentType == 'prod') ? 'PremiumV3' : 'Free'
 
 resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
   name: storageAccountName
@@ -30,7 +29,6 @@ resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
   location: location
   sku: {
     name: appServicePlanSkuName
-    tier: appServicePlanTierName
   }
 }
 
