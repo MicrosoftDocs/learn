@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-containers-security.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/23/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/13-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "To interact with Azure APIs, an Azure Kubernetes Service (AKS) cluster requires which of following?"
+    choices:
+    - content: "AKS contributor"
+      isCorrect: false
+      explanation: "AKS Contributor does not have enough rights to access the APIs."
+    - content: "Azure AD service principal"
+      isCorrect: true
+      explanation: "Service principal, managed identity. To interact with Azure APIs, an AKS cluster requires either an Azure Active Directory (AD) service principal or a managed identity. A service principal or managed identity is needed to dynamically create and manage other Azure resources such as an Azure load balancer or Azure container registry."
+    - content: "Global Administrator permissions"
+      isCorrect: false
+      explanation: "You do not need global admin privileges for AKS."
+  - content: "You are using Azure Kubernetes Service (AKS) and need to control the flow of traffic between pods and block traffic directly to the backend application. What should you do? Select one."
+    choices:
+    - content: "Create a AKS network policy"
+      isCorrect: true
+      explanation: "Create a AKS network policy. The principle of least privilege should be applied to how traffic can flow between pods in an Azure Kubernetes Service (AKS) cluster. The Network Policy feature in Kubernetes lets you define rules for ingress and egress traffic between pods in a cluster."
+    - content: "Create an application gateway"
+      isCorrect: false
+      explanation: "{You need to use a network policy to block traffic between pods.}"
+    - content: "Create a Azure firewall"
+      isCorrect: false
+      explanation: "The Azure Firewall does not block access between pods."
+  - content: "You are defining RBAC rules for the Azure Kubernetes security team. You need to grant permissions across the entire cluster. Which two items would you define? Select two."
+    choices:
+    - content: "ClusterRoles and RoleBindings"
+      isCorrect: false
+      explanation: "Roles are used to grant permissions within a namespace. If you need to grant permissions across the entire cluster, or to cluster resources outside a given namespace, you can instead use a ClusterRole. Once roles are defined to grant permissions to resources, you assign those Kubernetes RBAC permissions with a RoleBinding. Role bindings are used to assign roles for a given namespace. If you need to bind roles across the entire cluster, or to cluster resources outside a given namespace, you can instead use ClusterRoleBindings."
+    - content: "ClusterRoles and ClusterRoleBindings"
+      isCorrect: true
+      explanation: "ClusterRole, ClusterRoleBinding. Roles are used to grant permissions within a namespace. If you need to grant permissions across the entire cluster, or to cluster resources outside a given namespace, you can instead use a ClusterRole. Once roles are defined to grant permissions to resources, you assign those Kubernetes RBAC permissions with a RoleBinding. Role bindings are used to assign roles for a given namespace. If you need to bind roles across the entire cluster, or to cluster resources outside a given namespace, you can instead use ClusterRoleBindings."
+    - content: "Roles and RoleBindings"
+      isCorrect: false
+      explanation: "Roles are used to grant permissions within a namespace. If you need to grant permissions across the entire cluster, or to cluster resources outside a given namespace, you can instead use a ClusterRole. Once roles are defined to grant permissions to resources, you assign those Kubernetes RBAC permissions with a RoleBinding. Role bindings are used to assign roles for a given namespace. If you need to bind roles across the entire cluster, or to cluster resources outside a given namespace, you can instead use ClusterRoleBindings."
