@@ -11,7 +11,7 @@ const number = 3;
 console.log(number % 2 ? 'The number is even' : 'The number is odd');
 ```
 
-You start the expression with your Boolean value (`number % 2`). If the number is even, the Boolean value is true; the first value (`The number is even`) will be used. If the number is odd, the Boolean value is false, and the second value will be used (`The number is odd`). The previous code results in the message, `The number is odd`.
+You start the expression with your Boolean value (`number % 2`). If the number is even, the Boolean value is true; the first value (`The number is even`) will be used. If the number is odd, the Boolean value is false, and the second value will be used (`The number is odd`). The previous code results in the message, `The number is even`.
 
 ## Ternary and JSX
 
