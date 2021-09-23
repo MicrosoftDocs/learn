@@ -131,6 +131,6 @@ az keyvault set-policy \
 
 ::: zone-end
 
-1. The deployment may take a minute or two to complete. After you get a result that indicates the site has deployed, open `https://<your-unique-app-name>.azurewebsites.net/api/SecretTest` in a browser. The app will take a moment to start up for the first time on the server, but after it does, you should see the secret value, **reindeer_flotilla**.
+2. The deployment may take a minute or two to complete. After you get a result that indicates the site has deployed, open `https://<your-unique-app-name>.azurewebsites.net/api/SecretTest` in a browser. The app will take a moment to start up for the first time on the server, but after it does, you should see the secret value, **reindeer_flotilla**.
 
 Your app is finished and deployed!
