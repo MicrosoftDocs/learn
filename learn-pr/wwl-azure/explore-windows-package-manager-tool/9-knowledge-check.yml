@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-windows-package-manager-tool.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 09/23/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which operation system is the minimum version that will support using Windows Package Manager?"
+    choices:
+    - content: "Windows 10 version 1809 \n() Windows 11"
+      isCorrect: true
+      explanation: "correct choice"
+    - content: "Windows 10 Enterprise"
+      isCorrect: false
+      explanation: "incorrect choice"
+  - content: "What command would you use to install Microsoft Teams for everyone using the computer?"
+    choices:
+    - content: "winget install microsoft.teams --location"
+      isCorrect: false
+      explanation: "incorrect choice"
+    - content: "winget install microsoft.teams --scope machine"
+      isCorrect: true
+      explanation: "correct choice"
+    - content: "winget install microsoft.teams --machine"
+      isCorrect: false
+      explanation: "incorrect choice"
+  - content: "Which command would you use to install Windows Admin Center to a custom location?"
+    choices:
+    - content: "winget install microsoft.windowsadmincentre --log \"M:\\Program Testing\\WindowsAdminCentre\""
+      isCorrect: false
+      explanation: "incorrect choice"
+    - content: "winget install microsoft.windowsadmincentre --source \"M:\\Program Testing\\WindowsAdminCentre\""
+      isCorrect: false
+      explanation: "incorrect choice"
+    - content: "winget install microsoft.windowsadmincentre --location \"M:\\Program Testing\\WindowsAdminCentre\""
+      isCorrect: true
+      explanation: "correct choice"
