@@ -29,7 +29,7 @@ products:
 - azure-sentinel
 units:
 - learn.wwl.azure-sentinel.introduction
-- learn.wwl.azure-sentinel.azure-sentinel
+- learn.wwl.azure-sentinel.enable-azure-sentinel
 - learn.wwl.azure-sentinel.data-connections
 - learn.wwl.azure-sentinel.workbooks
 - learn.wwl.azure-sentinel.incidents

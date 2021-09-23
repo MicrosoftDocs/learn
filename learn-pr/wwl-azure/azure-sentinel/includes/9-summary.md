@@ -8,7 +8,7 @@ You should be able to:
 - Connect data to Azure Sentinel, like Azure Logs, Azure AD, and others
 - Track incidents using workbooks, playbooks, and hunting techniques
 
-## Learn More
+## Learn more
 
 Microsoft Learn provides a large number of self-paced learning paths. For this lesson, we recommend the following modules. You may search and find other modules that are of interest to you.
 
