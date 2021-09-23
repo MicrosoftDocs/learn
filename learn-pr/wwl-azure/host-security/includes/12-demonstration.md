@@ -1,5 +1,5 @@
 
-Use these Try-This exercises to get some hands-on exerpience with Azure.
+Use these Try-This exercises to get some hands-on experience with Azure.
 
 In this demonstration, we will configure the Bastion service, virtual machine updates, virtual machine extensions, and disk encryption. Optionally, we will use RDP to connect to a Windows virtual machine and SSH to connect to a Linux machine. 
 
@@ -29,7 +29,7 @@ In this task, we will configure the Bastion service and connect to a virtual mac
 1. Notice the checkbox to open the session in a new window.
 1. Click **Connect**. If you receive a message that popup windows are blocked, allow the session. 
 1. Once your session is connected, launch the Bastion clipboard access tool palette by selecting the two arrows. The arrows are located on the left center of the session. Explain this copy and paste feature.
-1. In the **Portal**, navigate to the Basion host and under **Settings** select **Sessions**.
+1. In the **Portal**, navigate to the Bastion host and under **Settings** select **Sessions**.
 1. Review the session management experience and the ability to delete a session.
 1. As you have time, review the Bastion components and how this provides a secure way to access your virtual machines. 
 

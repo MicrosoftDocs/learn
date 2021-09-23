@@ -66,7 +66,7 @@ quiz:
     choices:
     - content: "Protects against attackers who have gained administrative access."
       isCorrect: true
-      explanation: "Protects against attackers who have gained adminstrative access. PAWs cannot protect against an attacker that has already gained access."
+      explanation: "Protects against attackers who have gained administrative access. PAWs cannot protect against an attacker that has already gained access."
     - content: "Protects against phishing attacks, various impersonation attacks, and credential theft attacks such as keystroke logging."
       isCorrect: false
       explanation: "Using a PAW would help block phishing and other types of attacks on the host."
