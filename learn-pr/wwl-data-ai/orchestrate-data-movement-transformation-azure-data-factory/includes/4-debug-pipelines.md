@@ -16,21 +16,21 @@ A best practice is to use test folders in your copy activities and other activit
 
 To debug the pipeline, select **Debug** on the toolbar. You see the status of the pipeline run in the **Output** tab at the bottom of the window.
 
-    > [!div class="mx-imgBorder"]
-    > [![Debug slider Azure Data Factory](../media/azure-data-factory-debug-slider.png)](../media/azure-data-factory-debug-slider.png#lightbox)
+[!div class="mx-imgBorder"]
+[![Debug slider Azure Data Factory](../media/azure-data-factory-debug-slider.png)](../media/azure-data-factory-debug-slider.png#lightbox)
 
-    > [!div class="mx-imgBorder"]
-    > [![Output tab Azure Data Factory Debug](../media/azure-data-factory-output-tab-debug.png)](../media/azure-data-factory-output-tab-debug.png#lightbox)
+[!div class="mx-imgBorder"]
+[![Output tab Azure Data Factory Debug](../media/azure-data-factory-output-tab-debug.png)](../media/azure-data-factory-output-tab-debug.png#lightbox)
 
 After the pipeline can run successfully, in the top toolbar, select **Publish all**. This action publishes entities (datasets, and pipelines) you created to Data Factory.
 
-    > [!div class="mx-imgBorder"]
-    > [![Publish all changes and entities in Azure Data Factory](../media/azure-data-factory-publish-all.png)](../media/azure-data-factory-publish-all.png#lightbox)
+[!div class="mx-imgBorder"]
+[![Publish all changes and entities in Azure Data Factory](../media/azure-data-factory-publish-all.png)](../media/azure-data-factory-publish-all.png#lightbox)
 
 Wait until you see the successfully published message. To see notification messages, select the **Show Notifications** (bell icon) on the top-right of the portal (bell button).
 
-    > [!div class="mx-imgBorder"]
-    > [![Bell button for notifications in Azure Data Factory](../media/azure-data-factory-alert-bell.png)](../media/azure-data-factory-alert-bell.png#lightbox)
+[!div class="mx-imgBorder"]
+[![Bell button for notifications in Azure Data Factory](../media/azure-data-factory-alert-bell.png)](../media/azure-data-factory-alert-bell.png#lightbox)
 
 ## Map dataflow debug
 
