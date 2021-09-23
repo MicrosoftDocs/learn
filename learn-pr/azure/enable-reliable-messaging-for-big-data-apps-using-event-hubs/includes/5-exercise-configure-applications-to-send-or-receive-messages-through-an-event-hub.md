@@ -116,13 +116,13 @@ In this exercise you will use the built-in Cloud Shell editor to modify the Simp
 
 You'll now build the Java application running **mvn** commands.
 
-1. Revert to the main **SimpleSend** folder.
+1. In the Cloud Shell, eneter the following command to navigate to the main **SimpleSend** folder.
 
     ```bash
     cd ~/azure-event-hubs/samples/Java/Basic/SimpleSend
     ```
 
-1. Build the Java SimpleSend application. This ensures that your application uses the connection details for your Event Hub.
+1. Build the Java SimpleSend application. This builds your application using the connection details for your Event Hub.
 
     ```bash
     mvn clean package -DskipTests
