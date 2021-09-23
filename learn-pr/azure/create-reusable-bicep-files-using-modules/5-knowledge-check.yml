@@ -12,30 +12,9 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
+  [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
   - content: ""
     choices:
     - content: ""

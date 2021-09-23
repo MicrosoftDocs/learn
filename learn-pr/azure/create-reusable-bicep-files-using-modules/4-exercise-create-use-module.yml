@@ -1,6 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-reusable-bicep-files-using-modules.exercise-create-use-module
 title: Exercise - Create and use a module
+sandbox: true
 metadata:
   unitType: exercise
   title: Exercise - Create and use a module
@@ -10,6 +11,7 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  zone_pivot_groups: azure-shell-interface
 durationInMinutes: 1
 content: |
   [!include[](includes/4-exercise-create-use-module.md)]

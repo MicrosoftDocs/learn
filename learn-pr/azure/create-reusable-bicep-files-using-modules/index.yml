@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   You should be familiar with using:
 
-  - Bicep, including how to use parameters and parameter decorators, and how to deploy Bicep files to Azure.
+  - Bicep, including how to use parameters and parameter decorators, conditions, and how to deploy Bicep files to Azure.
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
 
   To work through the exercises, you'll also need the following installed locally:

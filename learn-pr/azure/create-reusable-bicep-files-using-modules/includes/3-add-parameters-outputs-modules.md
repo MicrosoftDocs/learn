@@ -36,7 +36,7 @@ A parent template can use module outputs in variables, properties for other reso
 
 It's common to create a parent Bicep file that combines multiple modules together. For example, imagine you're building a new Bicep template to deploy virtual machines that use dedicated virtual networks. You could create a module to define a virtual network, and then take the virtual network's subnet resource ID as an output from that module and use it as an input to the virtual machine module:
 
-::: code language="bicep" source="code/3-chained.bicep" highlight="18" :::
+::: code language="bicep" source="code/3-chained.bicep" highlight="9, 18" :::
 
 In this example, the symbolic names are used for the reference between the modules. This helps Bicep to automatically understand the relationships between the modules. Because Bicep understands there's a dependency, it deploys the modules in sequence: it deploys everything in the `virtualNetwork` module first, and if that deployment succeeds it accesses the `subnetResourceId` output value and passes it to the `virtualMachine` module as a parameter, then deploys everything in the `virtualMachine` module.
 
