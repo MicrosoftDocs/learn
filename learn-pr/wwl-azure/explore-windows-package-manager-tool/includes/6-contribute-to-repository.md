@@ -18,7 +18,7 @@ winget install microsoft.wingetcreate
 
 ## Getting Started
 
-To kick, start you should enter the command **wingetcreate new**
+To kick start you should enter the command **wingetcreate new**
 
 The tool will prompt you for the URL or URLs of the software package, this should be a publicly accessible URL and not something stored locally by yourself.
 
@@ -86,7 +86,7 @@ This will create a repository store within you GitHub profile and then create a 
 
 When that command is complete, it will open a browser session to the pull request (PR). Here you will be asked to complete a checklist.
 
- ![VideoLAN Yaml Tags](../media/contributorchecklist.PNG)
+ ![Windows Package Manager contributor checklist](../media/contributorchecklist.PNG)
 
 It will also start to kick off some automated tests, validating the manifest and testing it does what it should do.  You can close your browser and check on this later, or you can watch it update its progress.
 
