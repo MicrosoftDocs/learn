@@ -45,9 +45,9 @@ You will install PowerShell on Ubuntu Linux using the Advanced Packaging Tool (*
 
 ::: zone pivot="macos"
 
-## MacOS
+## macOS
 
-On macOS, the first step is to install **PowerShell**. This is done using the Homebrew package manager.
+On macOS, the first step is to install **PowerShell** by using the Homebrew package manager.
 
 > [!IMPORTANT]
 > If the **brew** command is unavailable, you may need to install the Homebrew package manager. For details see the [Homebrew website](https://brew.sh/).
@@ -73,9 +73,9 @@ On macOS, the first step is to install **PowerShell**. This is done using the Ho
 Windows PowerShell is included with Windows, however it's recommended that you install PowerShell 7.0.6 LTS, PowerShell 7.1.3, or higher for use with the Azure Az PowerShell module. You can check the version you have installed through the following steps:
 
 1. Open the **Start** menu and type **PowerShell**. There may be multiple shortcut links available:
-    - PowerShell 7 (x64) - this is the 64-bit version and generally what you should choose.
-    - Windows PowerShell - this is the 64-bit version included with Windows.
-    - Windows PowerShell (x86) - this is a 32-bit version installed on 64-bit Windows.
+    - PowerShell 7 (x64) - The 64-bit version and generally what you should choose.
+    - Windows PowerShell - The 64-bit version included with Windows.
+    - Windows PowerShell (x86) - A 32-bit version installed on 64-bit Windows.
     - Windows PowerShell ISE - The Integrated Scripting Environment (ISE) is used for writing scripts in Windows PowerShell.
     - Windows PowerShell ISE (x86) - A 32-bit version of the ISE on Windows.
 
