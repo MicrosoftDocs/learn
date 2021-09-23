@@ -1,3 +1,5 @@
+Each module you create should have a clear purpose. Think of a module as having a *contract*. It accepts a set of parameters, creates a set of resources, and might provide some outputs back to the parent template. Whoever deploys the template shouldn't need to worry about _how_ your module works - just that it does what they expect. So, when you plan a module, consider both what you need to know to be able to fulfill the module's purpose, and what anyone who consumes your module will expect to provide and see as outputs.
+
 ## Module parameters
 
 Think about the parameters your module accepts, and whether each parameter should be optional or required.
@@ -18,3 +20,10 @@ When you include this module in a Bicep template, you can easily configure it to
 
 > [!NOTE]
 > Remember to make sure your template is valid for both scenarios - when the `if` statement is evaluated as either `true` or `false`.
+
+## Add outputs to modules
+
+TODO
+
+<!-- TODO pass secrets between modules? A little esoteric maybe -->
+Remember you can use the outputs that a module exposes within your parent template, too. You can use module outputs in variables, properties for other resource definitions, or even expose them as outputs from your parent template. By exposing and using outputs throughout your Bicep files, you can create reusable sets of Bicep modules that can be shared with your team and reused across multiple deployments.
