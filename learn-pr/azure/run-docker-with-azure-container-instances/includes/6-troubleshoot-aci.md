@@ -77,7 +77,7 @@ As you diagnose and troubleshoot issues, you may need to run commands directly o
 
 1. Run the `ls` command to display the contents of the working directory.
 
-    ```output
+    ```azurecli
     # ls
     __pycache__  config_file.cfg  main.py  prestart.sh  static  templates  uwsgi.ini
     ```
@@ -168,10 +168,10 @@ Here you'll see how to monitor CPU and memory usage on your container.
 
 In this module you created resources using your Azure subscription. You want to clean up these resources so that you will not continue to be charged for them.
 
-1. In Azure, select **Resource groups** on the left.
+1. In the Azure **home** page, select **All resources**.
 
-1. Find the **learn-deploy-aci-rg** resource group, or whatever resource group name you used,  and select it.
+1. Find the **learn-deploy-aci-rg** resource group, or whatever resource group name you used, and select it.
 
 1. In the **Overview** tab of the resource group, select **Delete resource group**.
 
-1. This opens a new dialog box. Type the name of the resource group  again and select **Delete**. This will delete all of the resources we created in this module.
+1. This opens a new dialog box. Enter the name of the resource group again, and select **Delete**. This will delete all of the resources we created in this module.
