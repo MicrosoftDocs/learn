@@ -107,7 +107,7 @@ The Design tab of the Weather Data API displays all operations, which consists o
 
 The final step is to add a subscription key for the Weather Data API.
 
-1. In the Api Management service menu, under **APIs**, select **Subscriptions**. The **Subscriptions** pane for your API Management service appears.
+1. In the API Management service menu, under **APIs**, select **Subscriptions**. The **Subscriptions** pane for your API Management service appears.
 
 1. On the command bar, select **Add subscription**. The **New subscription** pane appears.
 
@@ -133,7 +133,7 @@ The final step is to add a subscription key for the Weather Data API.
 
 The API is secured with a key. Now, we will test the API without and with the key to demonstrate secure access.
 
-1. To make a request without passing a subscription key, in Azure Cloud Shell (to the right), run the following cURL command, substituting the *[Name Of Gateway[* placeholder with the resource name for the API gateway (apim-WeatherDataNNNN) that you created in the previous task.
+1. To make a request without passing a subscription key, in Azure Cloud Shell (to the right), run the following cURL command, substituting the *[Name Of Gateway]* placeholder with the resource name for the API gateway (apim-WeatherDataNNNN) that you created in the previous task.
 
    ```bash
    curl -X GET https://[Name Of Gateway].azure-api.net/api/Weather/53/-1

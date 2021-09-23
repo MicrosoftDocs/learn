@@ -57,7 +57,7 @@ In this section, you'll configure API Management to accept a request only if it 
     echo ${Fingerprint#*=}
     ```
 
-1. Copy the complete output (a hexidecimal string) and paste this fingerprint value into a text file.
+1. Copy the complete output (a hexadecimal string) and paste this fingerprint value into a text file.
 
 ## Edit inbound policy to only allow requests with a valid certificate
 
