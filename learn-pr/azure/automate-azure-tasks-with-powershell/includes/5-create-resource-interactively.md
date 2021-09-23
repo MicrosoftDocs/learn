@@ -60,7 +60,7 @@ To install the latest Azure Az PowerShell module, run the following commands:
 1. Enter the following command, and then press <kbd>Enter</kbd>.
 
     ```powershell
-    Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
+    Install-Module -Name Az -Scope CurrentUser -Repository PSGallery
     ```
 
 This installs the module for your current user (controlled by the `Scope` parameter).

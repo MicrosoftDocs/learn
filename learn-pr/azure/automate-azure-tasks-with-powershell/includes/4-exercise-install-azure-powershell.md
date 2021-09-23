@@ -74,10 +74,10 @@ Windows PowerShell is included with Windows, however it's recommended that you i
 
 1. Open the **Start** menu and type **PowerShell**. There may be multiple shortcut links available:
     - PowerShell 7 (x64) - this is the 64-bit version and generally what you should choose.
-    - Windows PowerShell - this is the 64-bit version and generally what you should choose.
+    - Windows PowerShell - this is the 64-bit version included with Windows.
     - Windows PowerShell (x86) - this is a 32-bit version installed on 64-bit Windows.
-    - Windows PowerShell ISE - The Integrated Scripting Environment (ISE) is used for writing scripts in PowerShell.
-    - Windows PowerShell ISE (x86) - A 32-bit version of the ISE.
+    - Windows PowerShell ISE - The Integrated Scripting Environment (ISE) is used for writing scripts in Windows PowerShell.
+    - Windows PowerShell ISE (x86) - A 32-bit version of the ISE on Windows.
 
 1. Select the PowerShell icon.
 
