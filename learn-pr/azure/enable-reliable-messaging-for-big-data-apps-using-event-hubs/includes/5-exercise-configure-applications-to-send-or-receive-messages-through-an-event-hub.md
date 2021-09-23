@@ -8,16 +8,16 @@ The Java receiver application stores messages in Azure Blob Storage. Blob Storag
 
 To create a storage account (general-purpose V2), use the `storage account create` command. Among the many parameters for this command, we are going to use the following parameters: 
 
-    | Parameter       | Description |
-    | --------------- | ----------- |
-    | name (required) | A name for your storage account. |
-    | resource-group (required) | The resource group owner. We'll use the pre-created sandbox resource group. |
-    | location (optional) | An optional location if you want the storage account in a specific place vs. the resource group location. |
-    | sku |  The SKU of the storage account defaults to 'Standard_RAGRS', but in this exercise, we are specifying it. |
+| Parameter       | Description |
+| --------------- | ----------- |
+| name (required) | A name for your storage account. |
+| resource-group (required) | The resource group owner. We'll use the sandbox resource group, which has already been defined. |
+| location (optional) | An optional region in the event you want the storage account in a different region from the resource group location. |
+| sku | The default value SKU of the storage account is 'Standard_RAGRS', but in this exercise, we will specify a value. |
 
-In the previous exercise, we defined a default resource group and location, so even though one of those parameters is normally _required_, we can omit those parmeters from the actual command.
+In the previous exercise, we defined default values for resource group and location, so even though one of those parameters is normally _required_, we can omit those parmeters from the command.
 
-1. In Cloud Shell, set the storage account name into a variable. The value must be between 3 and 24 characters in length and use only numbers and lower-case letters. It also must be unique within Azure.
+1. In Cloud Shell, set the storage account name to a variable. The value must be between 3 and 24 characters in length and use only numbers and lower-case letters. It also must be unique within Azure.
 
     ```azurecli
     STORAGE_NAME=storagename$RANDOM
@@ -30,17 +30,17 @@ In the previous exercise, we defined a default resource group and location, so e
     ```
 
     > [!TIP]
-    > If the storage account creation fails, change your environment variable, and try again.
+    > It may take a moment to create this storage account. If storage account creation fails, change your environment variable, and try again.
 
-1. Run the following command to list all the access keys associated with your storage account. The command uses the variable we defined earlier for your account name and the default value for resource group.
+1. Run the following command to list the access keys associated with your storage account. The command uses the variable we defined earlier for your account name and the default value for resource group.
 
     ```azurecli
     az storage account keys list --account-name $STORAGE_NAME
     ```
 
-1. Access keys associated with your storage account are listed. Copy and save the value of **key** for future use. You'll need this key to access your storage account.
+1. Access keys associated with your storage account are listed. Copy and save the value of **key1** for future use. You'll need this key to access your storage account.
 
-1. View the connections string for your storage account by running the following command.
+1. View the connection string for your storage account by running the following command.
 
     ```azurecli
     az storage account show-connection-string -n $STORAGE_NAME
@@ -49,7 +49,7 @@ In the previous exercise, we defined a default resource group and location, so e
 1. The output contains the connection details for your storage account. Copy and save the value of **connectionString**. It should look something like.
 
     ```output
-        "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage_account_name;AccountKey=VZjXuMeuDqjCkT60xX6L5fmtXixYuY2wiPmsrXwYHIhwo736kSAUAj08XBockRZh7CZwYxuYBPe31hi8XfHlWw=="
+   "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage_account_name;AccountKey=VZjXuMeuDqjCkT60xX6L5fmtXixYuY2wiPmsrXwYHIhwo736kSAUAj08XBockRZh7CZwYxuYBPe31hi8XfHlWw=="
     ```
 
 1. Create a container called **messages** in your storage account by running the following command. Use the **connectionString** you copied in the previous step.
@@ -60,9 +60,7 @@ In the previous exercise, we defined a default resource group and location, so e
 
 ## Clone the Event Hubs GitHub repository
 
-In Cloud Shell, perform the following step to clone the Event Hubs GitHub repository with `git`.
-
-The source files for the applications that you'll build in this unit are located in a [GitHub repository](https://github.com/Azure/azure-event-hubs). 
+In Cloud Shell, clone the Event Hubs GitHub repository with `git`. The source files for the applications that you'll build in this unit are located in a [GitHub repository](https://github.com/Azure/azure-event-hubs). 
 
 1. Run the following commands to make sure that you are in your home directory in Cloud Shell, and then to clone this repository.
 
@@ -75,9 +73,7 @@ The repository is cloned to your home folder.
 
 ## Edit SimpleSend.java
 
-You're going to use the built-in Cloud Shell editor. You'll use the editor to modify the SimpleSend application, and add your Event Hubs namespace, Event Hub name, shared access policy name, and primary key. The main commands appear at the bottom of the editor window.
-
-You'll need to write out your edits by pressing <kbd>Ctrl+O</kbd>, and then pressing <kbd>Enter</kbd> to confirm the output file name. Exit the editor by pressing <kbd>Ctrl+X</kbd>. Alternatively, the editor has a "..." menu in the top/right corner for all the editing commands.
+In this exercise you will use the built-in Cloud Shell editor to modify the SimpleSend application, and add your Event Hubs namespace, event hub name, shared access policy name, and primary key. The main commands appear at the bottom of the editor window.
 
 1. Change to the **SimpleSend** folder.
 
@@ -100,22 +96,21 @@ You'll need to write out your edits by pressing <kbd>Ctrl+O</kbd>, and then pres
     - `"Your policy name"` with **RootManageSharedAccessKey**.
     - `"Your primary SAS key"` with the value of the **primaryKey** key for your Event Hub namespace that you saved earlier.
 
-    > [!TIP]
-    > Unlike the terminal window, the editor can use typical copy/paste keyboard accelerator keys for your OS.
-
-    If you've forgotten some of them, you can switch down to the terminal window below the editor and run the `echo` command to list out one of the environment variables. For example:
+    If you've forgotten these values, you can switch to the terminal window below the editor and run the `echo` command to list the environment variables. For example:
 
     ```bash
     echo $NS_NAME
     echo $HUB_NAME
     echo $STORAGE_NAME
     ```
+     For your primary SAS key, when you create an Event Hubs namespace, a 256-bit SAS key called **RootManageSharedAccessKey** is created. It has primary and secondary keys that grant send, listen, and manage rights to the namespace. You displayed the key by running an Azure CLI command; however, you can also find the keys anc connection strings by opening the **Shared access policies** page for your Event Hubs namespace in the Azure portal, and selecting the policy name. 
+     
+1. Save **SimpleSend.java** either through the "..." menu, or by using the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+     
+    > [!TIP]
+    > Unlike the terminal window, the editor uses typical copy/paste keyboard accelerator keys for your OS. You'll need to save your edits, and can write out your edits by pressing <kbd>Ctrl+O</kbd>, and then pressing <kbd>Enter</kbd> to confirm the output file name. Exit the editor by pressing <kbd>Ctrl+X</kbd>. Alternatively, the editor has a "..." menu in the top/right corner for all the editing commands.
 
-    When you create an Event Hubs namespace, a 256-bit SAS key called **RootManageSharedAccessKey** is created that has an associated pair of primary and secondary keys that grant send, listen, and manage rights to the namespace. In the previous unit, you displayed the key running an Azure CLI command, and you can also find this key by opening the **Shared access policies** page for your Event Hubs namespace in the Azure portal.
-
-1. Save **SimpleSend.java** either through the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
-
-1. Close the editor with the "..." menu, or the accelerator key <kbd>CTRL+Q</kbd>.
+1. Close the editor through the "..." menu, or with the accelerator key <kbd>CTRL+Q</kbd>.
 
 ## Use Maven to build SimpleSend.java
 
