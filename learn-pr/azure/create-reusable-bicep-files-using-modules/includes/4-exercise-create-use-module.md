@@ -11,3 +11,9 @@ Visual Studio Code validates your module's parameter values. If you forget to se
 Steps:
 
 Look at deployments
+
+
+Web app 1
+CDN depends on website
+
+Another website?
