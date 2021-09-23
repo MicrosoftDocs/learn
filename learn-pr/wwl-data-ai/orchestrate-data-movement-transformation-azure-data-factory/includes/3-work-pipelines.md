@@ -4,7 +4,7 @@ A pipeline in Azure Data Factory represents a logical grouping of activities whe
 
 An example of a combination of activities in one pipeline can be, ingesting and cleaning log data in combination with a mapping data flow that analyzes the log data that has been cleaned.
 
-A pipeline enables you to manage the separate individual activities as a set, which would otherwise be managed individually. It enables you to deploy and schedule the activities efficiently, through the use of a single pipeline, versus managing each activity independently.
+A pipeline enables you to manage the separate individual activities as a set, which would otherwise be managed individually. It enables you to deploy and schedule the activities efficiently by using a single pipeline, versus managing each activity independently.
 
 Activities in a pipeline are referred to as actions that you perform on your data.
 An activity can take zero or more input datasets and produce one or more output datasets.

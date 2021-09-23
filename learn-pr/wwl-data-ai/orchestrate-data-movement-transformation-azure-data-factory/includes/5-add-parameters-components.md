@@ -4,7 +4,7 @@ Within Azure Data Factory, it is possible to parameterize a linked service in wh
 
 It is also possible to parameterize other properties of the linked service like a username.
 
-If you decide to parameterize linked services in Azure Data Factory, you have the option to do so in the Azure Data Factory user interface, the Azure portal, or a programming interface of your preference.
+If you decide to parameterize linked services in Azure Data Factory, you can do this in the Azure Data Factory user interface, the Azure portal, or a programming interface of your preference.
 
 If you choose to author the linked service through the user interface, Data Factory can provide you with built-in parameterization for some of the connectors:
 
@@ -63,9 +63,9 @@ When you integrate global parameters in a pipeline using CI/CD with Azure Data F
 
 In most CI/CD practices, it's beneficial to include global parameters in the Azure Resource Manager template. It's recommended because of their native integration with CI/CD, where global parameters are added as an Azure Resource Manager Template parameter. This is due to changes in several environments that are worked in.
 
-To enable global parameters in an Azure Resource Manager template, go to the **Management** hub. You do have to be aware that after you add global parameters to an Azure Resource Manager template, it adds an Azure Data Factory level setting, which can override other settings like git configs.
+To enable global parameters in an Azure Resource Manager template, go to the **Management** hub. Be aware that after you add global parameters to an Azure Resource Manager template, it adds an Azure Data Factory level setting, which can override other settings like git configs.
 
-The use-case for deploying global parameters through a PowerShell script could be because you might have the preiously described settings enabled in an elevated environment, like UAT or PROD.
+The use-case for deploying global parameters through a PowerShell script could be because you might have the previously described settings enabled in an elevated environment, like UAT or PROD.
 
 ## Parameterize mapping dataflows
 

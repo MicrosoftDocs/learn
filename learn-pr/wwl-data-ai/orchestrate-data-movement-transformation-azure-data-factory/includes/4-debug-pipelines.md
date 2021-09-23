@@ -10,7 +10,7 @@ Sometimes, you don't want to debug the whole pipeline but test a part of the pip
 
 As you create or modify a pipeline that is running, you can see the results of each activity in the Output tab of the pipeline canvas.
 
-After a test run succeeds, and you are satisfied with the results, you can add more activities to the pipeline and continue debugging in an iterative manner. When you are not satisfied, or like to stop the pipeline from debugging, you can cancel a test run while it is in progress. You do need to be aware that by selecting the debug slider, it will actually run the pipeline. Therefore, if the pipeline contains, for example, a copy activity, the test run will copy data from source to destination.
+After a test run succeeds, and you are satisfied with the results, you can add more activities to the pipeline and continue debugging in an iterative manner. When you are not satisfied, or like to stop the pipeline from debugging, you can cancel a test run while it is in progress. Be aware that by selecting the debug slider, it will actually run the pipeline. Therefore, if the pipeline contains, for example, a copy activity, the test run will copy data from source to destination.
 
 A best practice is to use test folders in your copy activities and other activities when debugging, such that when you are satisfied with the results and have debugged the pipeline, you switch to the actual folders for your normal operations.
 
@@ -27,7 +27,7 @@ After the pipeline can run successfully, in the top toolbar, select **Publish al
     > [!div class="mx-imgBorder"]
     > [![Publish all changes and entities in Azure Data Factory](../media/azure-data-factory-publish-all.png)](../media/azure-data-factory-publish-all.png#lightbox)
 
-Wait until you see the successfully-published message. To see notification messages, select the **Show Notifications** (bell icon) on the top-right of the portal (bell button).
+Wait until you see the successfully published message. To see notification messages, select the **Show Notifications** (bell icon) on the top-right of the portal (bell button).
 
     > [!div class="mx-imgBorder"]
     > [![Bell button for notifications in Azure Data Factory](../media/azure-data-factory-alert-bell.png)](../media/azure-data-factory-alert-bell.png#lightbox)
@@ -36,7 +36,7 @@ Wait until you see the successfully-published message. To see notification messa
 
 During the building of Mapping Data Flows, you can interactively watch how the data shapes and transformations are executing so that you can debug them. To use this functionality, it is first necessary to turn on the “Data Flow Debug” feature.
 
-The debug session can be used both in Data Flow design sessions, as well as during pipeline debug execution of data flows. After the debug mode is on, you will actually build the data flow with an active Spark Cluster. The Spark cluster will close once the debug is off. You do have a choice in what compute you're going to use. When you use an existing debug cluster, it will reduce the start-up time. However, for complex or parallel workloads you might want to spin up your own just-in-time cluster.
+The debug session can be used both in Data Flow design sessions, and during pipeline debug execution of data flows. After the debug mode is on, you will actually build the data flow with an active Spark Cluster. The Spark cluster will close once the debug is off. You do have a choice in what compute you're going to use. When you use an existing debug cluster, it will reduce the start-up time. However, for complex or parallel workloads you might want to spin up your own just-in-time cluster.
 
 Best practices for debugging data flows are to keep the debug mode on, and to check and validate the business logic included in the data flow. Visually viewing the data transformations and shapes helps you see the changes.
 
