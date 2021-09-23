@@ -41,7 +41,6 @@ units:
 - learn.azure.create-reusable-bicep-files-using-modules.create-use-bicep-modules
 - learn.azure.create-reusable-bicep-files-using-modules.add-parameters-outputs-modules
 - learn.azure.create-reusable-bicep-files-using-modules.exercise-create-use-module
-- learn.azure.create-reusable-bicep-files-using-modules.design-build-good-bicep-modules
 - learn.azure.create-reusable-bicep-files-using-modules.knowledge-check
 - learn.azure.create-reusable-bicep-files-using-modules.summary
 badge:
