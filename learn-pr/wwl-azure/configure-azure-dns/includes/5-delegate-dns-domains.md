@@ -8,7 +8,7 @@ The easiest way to locate the name servers assigned to your zone is through the 
 :::image type="content" source="../media/name-servers-cf7cec6a.png" alt-text="Screenshot from the Azure portal where in this example, the zone contoso.net has been assigned name servers ns1-01.azure-dns.com, ns2-01.azure-dns.net, ns3-01.azure-dns.org, and ns4-01.azure-dns.info":::
 
 
-Once the DNS zone is created, and you have the name servers, you need to update the parent domain. Reach registrar has their own DNS management tools to change the name server records for a domain. In the registrar’s DNS management page, edit the NS records and replace the NS records with the ones Azure DNS created.
+Once the DNS zone is created, and you have the name servers, you need to update the parent domain. Each registrar has their own DNS management tools to change the name server records for a domain. In the registrar’s DNS management page, edit the NS records and replace the NS records with the ones Azure DNS created.
 
 > [!NOTE]
 > The term *registrar* refers to the third party domain registrar. This is the company where you registered your domain.

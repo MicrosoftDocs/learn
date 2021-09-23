@@ -28,10 +28,7 @@ It's also a good idea to perform *negative testing*. Negative testing helps you 
 
 ### Run tests from Azure Pipelines
 
-There are many ways you can run tests in your pipeline. In this module, we use Pester, which is an open-source tool that runs tests written through PowerShell. You might choose to use a different test framework or even choose to run your tests without a test tool.
-
-> [!NOTE]
-> Another test tool to consider is PSRule for Azure, which includes prebuilt rules and tests for Azure. It can run validation on your templates and also run tests against your deployed Azure resources. We link to PSRule in the summary.
+There are many ways you can run tests in your pipeline. In this module, we use Pester, which is an open-source tool that runs tests written through PowerShell. You might choose to use a different test framework or even choose to run your tests without a test tool. For example, another test tool to consider is PSRule for Azure, which includes prebuilt rules and tests for Azure. It can run validation on your templates and also run tests against your deployed Azure resources. We link to PSRule in the summary.
 
 When you use a supported test framework, Azure Pipelines understands the results of each test. It displays the test results alongside the pipeline run information, and it tracks the history of each test over time. In the next exercise, you'll see how you can use Azure Pipelines with infrastructure smoke tests.
 
