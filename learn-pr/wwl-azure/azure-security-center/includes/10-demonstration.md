@@ -1,6 +1,6 @@
-Use this Try-This exercise to gain some hands-on experience with Azure.
+Use this try-this exercise to gain some hands-on experience with Azure.
 
-## Task 1: Security Overview and Recommendations
+## Task 1: Security overview and recommendations
 
 In this task, you will review Azure Security Center.
 

@@ -25,7 +25,7 @@ When you enable Security Center, the security policy built-in to Security Center
 Security Center makes mitigating your security alerts one step easier, by adding a Secure Score. The Secure Scores are now associated with each recommendation you receive to help you understand how important each recommendation is to your overall security posture. This is crucial in enabling you to prioritize your security work.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of ASC showing the security score](../media/az500-azure-security-center.png)
+> ![Screenshot of ASC showing the secure score value.  Score is a 656 out of 1000 with several recommendations on how to increase it.](../media/az500-azure-security-center.png)
 
 ### Azure Security Center recommendations
 
@@ -47,6 +47,6 @@ ASC shows scanning status to reflect the progress of the scan (**Unscanned, Scan
 Security Center helps you detect threats across Azure PaaS services. You can detect threats targeting Azure services including Azure App Service, Azure SQL, Azure Storage Account, and more data services. You can also take advantage of the native integration with Microsoft Cloud App Security's User and Entity Behavioral Analytics (UEBA) to perform anomaly detection on your Azure activity logs.
 
 ### Licensing 
-* **Security Center's free pricing tier** is enabled on all your current Azure subscriptions once you visit the Azure Security Center dashboard in the Azure Portal for the first time, or if enabled programmatically via API. 
+* **Security Center's free pricing tier** is enabled on all your current Azure subscriptions once you visit the Azure Security Center dashboard in the Azure portal for the first time, or if enabled programmatically via API. 
 * **Standard tier** To take advantage of advanced security management and threat detection capabilities, you must upgrade to the standard pricing tier. 
 The standard tier can be tried for free for 30 days. 

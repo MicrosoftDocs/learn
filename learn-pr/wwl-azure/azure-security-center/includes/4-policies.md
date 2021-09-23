@@ -3,7 +3,7 @@
 
 Azure Security Benchmark is the foundation for Security Center’s recommendations and has been fully integrated as the default policy initiative. This means that ALL ASC customers automatically get the ASB as their default security policy, and the ASB is positioned as the singular set of security best practices in Azure, aligned with Secure Score.
 
-## Working with Security Policy in Azure Security Center
+## Working with security policy in Azure Security Center
 By default, all prevention policies are turned on. Prevention policies and recommendations are tied to each other. In other words, if you enable a prevention policy, such as OS vulnerabilities, that enables recommendations for that policy. In most situations, you want to enable all policies even though some might be more important to you than others, depending on the Azure resource you’ve deployed.
 
 Security Center automatically creates a default security policy for each of your Azure subscriptions. You can edit Azure policies:

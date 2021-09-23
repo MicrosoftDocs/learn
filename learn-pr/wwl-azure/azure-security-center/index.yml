@@ -32,7 +32,7 @@ products:
 units:
 - learn.wwl.azure-security-center.introduction
 - learn.wwl.azure-security-center.cyber-kill-chain
-- learn.wwl.azure-security-center.azure-security-center
+- learn.wwl.azure-security-center.make-the-azure-security-center
 - learn.wwl.azure-security-center.policies
 - learn.wwl.azure-security-center.recommendations
 - learn.wwl.azure-security-center.secure-score
