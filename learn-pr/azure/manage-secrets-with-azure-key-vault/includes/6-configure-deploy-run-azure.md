@@ -94,7 +94,7 @@ az keyvault set-policy \
 
 ## Deploy the app and try it out
 
-    ::: zone pivot="csharp"
+::: zone pivot="csharp"
 
 1. All your configuration is set and you're ready to deploy! The following commands will publish the site to the `pub` folder, zip it up into `site.zip`, and deploy the zip to App Service. Make sure to enter your unique app name to the `--name` parameter.
 
@@ -111,9 +111,9 @@ az keyvault set-policy \
         --name <your-unique-app-name>
     ```
 
-    ::: zone-end
+::: zone-end
 
-    ::: zone pivot="javascript"
+::: zone pivot="javascript"
 
 1. All your configuration is set and you're ready to deploy! The following commands will zip up your app into `site.zip`, and deploy it to App Service. We exclude `node_modules` from the zip because App Service will restore them automatically when you deploy. Make sure to enter your unique app name to the `--name` parameter.
 
@@ -129,8 +129,8 @@ az keyvault set-policy \
         --name <your-unique-app-name>
     ```
 
-    ::: zone-end
+::: zone-end
 
-2. The deployment may take a minute or two to complete. After you get a result that indicates the site has deployed, open `https://<your-unique-app-name>.azurewebsites.net/api/SecretTest` in a browser. The app will take a moment to start up for the first time on the server, but after it does, you should see the secret value, **reindeer_flotilla**.
+1. The deployment may take a minute or two to complete. After you get a result that indicates the site has deployed, open `https://<your-unique-app-name>.azurewebsites.net/api/SecretTest` in a browser. The app will take a moment to start up for the first time on the server, but after it does, you should see the secret value, **reindeer_flotilla**.
 
 Your app is finished and deployed!

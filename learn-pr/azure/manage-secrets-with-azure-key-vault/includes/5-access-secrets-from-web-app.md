@@ -54,19 +54,19 @@ To load the secret from our vault, you'll create a new ASP.NET Core web API, and
 
 1. In Azure Cloud Shell, to create a new ASP.NET Core web API app and open it in the editor, run the following command.
 
-  ```console
-  dotnet new webapi -o KeyVaultDemoApp
-  cd KeyVaultDemoApp
-  code .
-  ```
+    ```console
+    dotnet new webapi -o KeyVaultDemoApp
+    cd KeyVaultDemoApp
+    code .
+    ```
 
 1. After the editor loads, add the NuGet package containing `AddAzureKeyVault` and restore all of the app's dependencies. In Azure Cloud Shell, run the following commands.
 
-  ```console
-  dotnet add package Azure.Identity
-  dotnet add package Azure.Extensions.AspNetCore.Configuration.Secrets
-  dotnet restore
-  ```
+    ```console
+    dotnet add package Azure.Identity
+    dotnet add package Azure.Extensions.AspNetCore.Configuration.Secrets
+    dotnet restore
+    ```
 
 ### Add code to load and use secrets
 
