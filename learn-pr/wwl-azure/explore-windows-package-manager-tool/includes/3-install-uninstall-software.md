@@ -49,6 +49,7 @@ winget install Microsoft.AzureStorageExplorer; winget install Microsoft.VisualSt
 #### Options
 
 The **winget install** has additional options that can be used to help customize the install experience to meet your needs.
+
 | Option  | Description |
 |-------------|-------------|  
 | **-m, --manifest** |  Must be followed by the path to the manifest (YAML) file. You can use the manifest to run the install experience from a [local YAML file](https://docs.microsoft.com/windows/package-manager/winget/install#local-install). |
@@ -87,6 +88,7 @@ winget uninstall Microsoft.AzureStorageExplorer
 #### Options
 
 The **winget uninstall** has additional options that can be used to help customize the uninstall experience to meet your needs.
+
 | Option      | Description |
 |-------------|-------------|  
 | **-m, --manifest** |   Must be followed by the path to the manifest (YAML) file. You can use the manifest to run the uninstall experience from a [local YAML file](https://docs.microsoft.com/windows/package-manager/winget/install#local-install). |
