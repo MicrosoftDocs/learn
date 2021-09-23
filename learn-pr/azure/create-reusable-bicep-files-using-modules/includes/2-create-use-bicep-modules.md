@@ -10,7 +10,7 @@ Bicep modules help you address these challenges by splitting your code into smal
 
 After you've created a module, you can reuse it in multiple Bicep files, even if they're for different projects or workloads. For example, when you build out one solution, you might create separate modules for the app components, the database, and the network-related resources. Then, when you start to work on another project with similar network requirements, you can reuse the relevant module:
 
-:::image type="content" source="../../build-first-bicep-template/media/7-templates-modules.png" alt-text="TODO" border="false"::: <!-- TODO move to include file -->
+:::image type="content" source="../../build-first-bicep-template/media/7-templates-modules.png" alt-text="Diagram showing a template referencing 3 modules - application, database, and networking. The networking module is then reused in another template." border="false"::: <!-- TODO move to include file -->
 
 ### Encapsulation
 
@@ -45,8 +45,8 @@ Make sure you use a descriptive filename for each module. The filename effective
 You use a module within a Bicep template by using the `module` keyword, like this:
 
 ```bicep
-module appService 'modules/appService.bicep' = {
-  name: 'appService'
+module appModule 'modules/app.bicep' = {
+  name: 'myApp'
   params: {
     location: location
     appServiceAppName: appServiceAppName
@@ -55,10 +55,24 @@ module appService 'modules/appService.bicep' = {
 }
 ```
 
+A module definition includes the following components:
+
+- The `module` keyword.
+- A symbolic name. This name is used within this Bicep file whenever you want to refer to the module. The symbolic name never appears in Azure.
+- The module path. This is typically the path to a Bicep file on your local file system. In a future Microsoft Learn module, you'll learn about how you can share modules byu using registries and template specs, which have their own module path formats.
+- The `name` property, which specifies the name of the deployment. You'll learn more about deployments in the next section.
+- The `params` property, where you can specify values for the parameters that the module expects. You'll learn more about module parameters in the next unit.
+
 ## Deployments
 
-<!-- TODO -->
-- What is a deployment?
-- Each module is its own deployment
-- Modules need a name, which becomes the deployment name
-- Diagram might help here
+In Azure, a *deployment* is a special resource that represents a deployment operation. Deployments are Azure resources that have the resource type `Microsoft.Resources/deployments`. When you submit a Bicep deployment, you create or update a deployment resource. Similarly, when you create resources in the Azure portal, the portal creates a deployment resource on your behalf. However, not all changes to Azure resources create or use deployments. For example, when you use the portal to modify an existing resource, it generally doesn't create a deployment to make the change, and when you use third-party tools like Terraform to deploy or configure your resources, they might  not create deployments.
+
+When you deploy a Bicep file by using the Azure CLI or Azure PowerShell, you can optionally specify the name of the deployment. If you don't specify a name, the Azure CLI or Azure PowerShell automatically creates a deployment name for you from the filename of the template. For example, if you deploy a file named *main.bicep*, the default deployment name is `main`.
+
+When you use modules, Bicep creates a separate deployment for every module. The `name` property that you specify for the module becomes the name of the deployment. This means that when you deploy a Bicep file containing a module, multiple deployment resources are created - one for the parent template, and one for each module.
+
+For example, suppose you create a Bicep file named *main.bicep*. It defines a module named `myApp`. When you deploy the *main.bicep* file, two deployments are created. The first one is named `main`, and it creates another deployment named `app` that contains your application resources:
+
+:::image type="content" source="../media/2-deployments.png" alt-text="Diagram that shows two Bicep files, each of which has a separate deployment name." border="false":::
+
+You can list and view the details of deployment resources to monitor the status of your Bicep deployments, or to view history of deployments. However, when you reuse the same name for a deployment, Azure overwrites the last deployment with the same name. If you need to maintain the deployment history, ensure that you use unique names for every deployment, including every time you deploy a module. You'll see how to do this in the exercise.

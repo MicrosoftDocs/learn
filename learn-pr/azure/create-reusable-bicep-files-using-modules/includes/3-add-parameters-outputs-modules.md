@@ -27,3 +27,8 @@ TODO
 
 <!-- TODO pass secrets between modules? A little esoteric maybe -->
 Remember you can use the outputs that a module exposes within your parent template, too. You can use module outputs in variables, properties for other resource definitions, or even expose them as outputs from your parent template. By exposing and using outputs throughout your Bicep files, you can create reusable sets of Bicep modules that can be shared with your team and reused across multiple deployments.
+
+<!-- 
+TODO things to think about:
+Should modules define names as vars or is that done by the parent template and passed in as params?
+-->
