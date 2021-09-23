@@ -1,4 +1,4 @@
-# Summary
+## Summary
 
 In this module, you learned how to:
 
