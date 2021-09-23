@@ -34,20 +34,20 @@ Key Vault can manage Azure storage account keys:
 The following permissions can be used when authorizing a user or application principal to perform operations on a managed storage account:
 
 **Permissions for managed storage account and SaS-definition operations:**
-*  _get_: Gets information about a storage account
-*  _list_: List storage accounts managed by a Key Vault
-*  _update_: Update a storage account
-*  _delete_: Delete a storage account
-*  _recover_: Recover a deleted storage account
-*  _backup_: Back up a storage account
-*  _restore_: Restore a backed-up storage account to a Key Vault
-*  _set_: Create or update a storage account
-*  _regeneratekey_: Regenerate a specified key value for a storage account
-*  _getsas_: Get information about a SAS definition for a storage account
-*  _listsas_: List storage SAS definitions for a storage account
-*  _deletesas_: Delete a SAS definition from a storage account
-*  _setsas_: Create or update a new SAS definition/attributes for a storage account
+*  `get`: Gets information about a storage account
+*  `list`: List storage accounts managed by a Key Vault
+*  `update`: Update a storage account
+*  `delete`: Delete a storage account
+*  `recover`: Recover a deleted storage account
+*  `backup`: Back up a storage account
+*  `restore`: Restore a backed-up storage account to a Key Vault
+*  `set`: Create or update a storage account
+*  `regeneratekey`: Regenerate a specified key value for a storage account
+*  `getsas`: Get information about a SAS definition for a storage account
+*  `listsas`: List storage SAS definitions for a storage account
+*  `deletesas`: Delete a SAS definition from a storage account
+*  `setsas`: Create or update a new SAS definition/attributes for a storage account
 
 **Permissions for privileged operations**
-*  _purge_: Purge (permanently delete) a managed storage account
+*  `purge`: Purge (permanently delete) a managed storage account
 

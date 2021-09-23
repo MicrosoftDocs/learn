@@ -15,7 +15,7 @@ Key Vault supports many operations on key objects. Here are a few:
 
 * **Update**: Allows a client with sufficient permissions to modify the metadata (key attributes) associated with a key previously stored within Key Vault.
 
-* **Delete**: Allows a client with sufficient permissions to delete a key from Key Vaul
+* **Delete**: Allows a client with sufficient permissions to delete a key from Key Vault
 
 ## Cryptographic operations
 
