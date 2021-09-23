@@ -81,7 +81,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
     static void Main(string[] args)
     {
         var currentDirectory = Directory.GetCurrentDirectory();
-        var storesDirectory = Path.Combine(currentDirectory, "stores");
+        var storesDir = Path.Combine(currentDirectory, "stores");
         
         var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
         Directory.CreateDirectory(salesTotalDir);
@@ -156,12 +156,12 @@ namespace files_module
         static void Main(string[] args)
         {
             var currentDirectory = Directory.GetCurrentDirectory();            
-            var storesDirectory = Path.Combine(currentDirectory, "stores");
+            var storesDir = Path.Combine(currentDirectory, "stores");
 
             var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
             Directory.CreateDirectory(salesTotalDir);            
 
-            var salesFiles = FindFiles(storesDirectory);
+            var salesFiles = FindFiles(storesDir);
 
             var salesTotal = CalculateSalesTotal(salesFiles);
 
