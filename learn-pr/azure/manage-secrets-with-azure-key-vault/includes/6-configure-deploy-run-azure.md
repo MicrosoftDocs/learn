@@ -18,7 +18,7 @@ The *plan* name only needs to be unique within your subscription, so you can use
 
 1. Next, to create the Web App that uses the App Service plan you just created, run the following command. Make sure to enter your unique app name to the `--name` parameter.
 
-::: zone pivot="csharp"
+    ::: zone pivot="csharp"
 
     ```azurecli
     az webapp create \
@@ -27,9 +27,9 @@ The *plan* name only needs to be unique within your subscription, so you can use
         --name <your-unique-app-name>
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="javascript"
+    ::: zone pivot="javascript"
 
     ```azurecli
     az webapp create \
@@ -39,7 +39,7 @@ The *plan* name only needs to be unique within your subscription, so you can use
         --name <your-unique-app-name>
     ```
 
-::: zone-end
+    ::: zone-end
 
 ## Add configuration to the app
 
@@ -94,43 +94,43 @@ az keyvault set-policy \
 
 ## Deploy the app and try it out
 
-::: zone pivot="csharp"
+    ::: zone pivot="csharp"
 
-All your configuration is set and you're ready to deploy! The following commands will publish the site to the `pub` folder, zip it up into `site.zip`, and deploy the zip to App Service. Make sure to enter your unique app name to the `--name` parameter.
+1. All your configuration is set and you're ready to deploy! The following commands will publish the site to the `pub` folder, zip it up into `site.zip`, and deploy the zip to App Service. Make sure to enter your unique app name to the `--name` parameter.
 
-> [!NOTE]
-> You'll need to `cd` back to the KeyVaultDemoApp directory if you're not still there.
+    > [!NOTE]
+    > You'll need to `cd` back to the KeyVaultDemoApp directory if you're not still there.
 
-```azurecli
-dotnet publish -o pub
-zip -j site.zip pub/*
+    ```azurecli
+    dotnet publish -o pub
+    zip -j site.zip pub/*
 
-az webapp deployment source config-zip \
-    --src site.zip \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --name <your-unique-app-name>
-```
+    az webapp deployment source config-zip \
+        --src site.zip \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --name <your-unique-app-name>
+    ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="javascript"
+    ::: zone pivot="javascript"
 
-All your configuration is set and you're ready to deploy! The following commands will zip up your app into `site.zip`, and deploy it to App Service. We exclude `node_modules` from the zip because App Service will restore them automatically when you deploy. Make sure to enter your unique app name to the `--name` parameter.
+1. All your configuration is set and you're ready to deploy! The following commands will zip up your app into `site.zip`, and deploy it to App Service. We exclude `node_modules` from the zip because App Service will restore them automatically when you deploy. Make sure to enter your unique app name to the `--name` parameter.
 
-> [!NOTE]
-> You'll need to `cd` back to the KeyVaultDemoApp directory if you're not still there.
+    > [!NOTE]
+    > You'll need to `cd` back to the KeyVaultDemoApp directory if you're not still there.
 
-```azurecli
-zip site.zip * -x node_modules/
+    ```azurecli
+    zip site.zip * -x node_modules/
 
-az webapp deployment source config-zip \
-    --src site.zip \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --name <your-unique-app-name>
-```
+    az webapp deployment source config-zip \
+        --src site.zip \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --name <your-unique-app-name>
+    ```
 
-::: zone-end
+    ::: zone-end
 
-The deployment may take a minute or two to complete. After you get a result that indicates the site has deployed, open `https://<your-unique-app-name>.azurewebsites.net/api/SecretTest` in a browser. The app will take a moment to start up for the first time on the server, but after it does, you should see the secret value, **reindeer_flotilla**.
+2. The deployment may take a minute or two to complete. After you get a result that indicates the site has deployed, open `https://<your-unique-app-name>.azurewebsites.net/api/SecretTest` in a browser. The app will take a moment to start up for the first time on the server, but after it does, you should see the secret value, **reindeer_flotilla**.
 
 Your app is finished and deployed!
