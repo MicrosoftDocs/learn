@@ -1,6 +1,6 @@
 You can add, edit, or remove a policy by using any of the following methods:
 
-* Azure Portal
+* Azure portal
 * Azure PowerShell
 * Azure CLI
 * REST APIs
