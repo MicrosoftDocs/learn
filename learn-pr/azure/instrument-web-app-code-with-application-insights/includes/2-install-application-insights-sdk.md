@@ -88,7 +88,7 @@ The best practice is to use a different instrumentation key and Application Insi
 
 Finally, you must initialize Application Insights in your web app.
 
-ASP.NET Core applications start up by calling `CreateWebHostBuilder()` in *Program.cs*. You can configure many aspects of the application and the runtime by chaining additional method calls here, including Application Insights. A call to `AddApplicationInisghtsTelemetry()` will load your instrumentation key from configuration, trigger the SDK to automatically generate telemetry about many application events, and enable access to a `TelemetryClient` object from controllers and other components for custom event and metric tracking.
+ASP.NET Core applications start up by calling `CreateWebHostBuilder()` in *Program.cs*. You can configure many aspects of the application and the runtime by chaining additional method calls here, including Application Insights. A call to `AddApplicationInsightsTelemetry()` will load your instrumentation key from configuration, trigger the SDK to automatically generate telemetry about many application events, and enable access to a `TelemetryClient` object from controllers and other components for custom event and metric tracking.
 
 Here's what the relevant section of *Program.cs* will look like after you initialize Application Insights.
 
