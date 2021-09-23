@@ -1,4 +1,4 @@
-Now that you know how enabling-managed identities for Azure resources creates an identity for your app to use for authentication, you'll create an app that uses that identity to access secrets in the vault.
+Now that you know how enabling managed identities for Azure resources creates an identity for your app to use for authentication, you'll create an app that uses that identity to access secrets in the vault.
 
 ::: zone pivot="csharp"
 
@@ -6,7 +6,7 @@ Now that you know how enabling-managed identities for Azure resources creates an
 
 Azure Key Vault API is a REST API that handles all management and usage of keys and vaults. Each secret in a vault has a unique URL, and secret values are retrieved with HTTP GET requests.
 
-The official Key Vault client for .NET Core is the `SecretClient` class in the Azure.Security.KeyVault.Secrets NuGet package; however, you don't need to use it directly. With ASP.NET Core's `AddAzureKeyVault` method, you can load all the secrets from a vault into the Configuration API at startup. This technique enables you to access all of your secrets by name using the same `IConfiguration` interface you use for the rest of your configuration. Apps that use `AddAzureKeyVault` require both **Get** and **List** permissions to the vault.
+The official Key Vault client for .NET Core is the `SecretClient` class in the `Azure.Security.KeyVault.Secrets` NuGet package; however, you don't need to use it directly. With ASP.NET Core's `AddAzureKeyVault` method, you can load all the secrets from a vault into the Configuration API at startup. This technique enables you to access all of your secrets by name using the same `IConfiguration` interface you use for the rest of your configuration. Apps that use `AddAzureKeyVault` require both **Get** and **List** permissions to the vault.
 
 > [!TIP]
 > Regardless of the framework or language you use to build your app, you should design it to cache secret values locally or load them into memory at startup unless you have a specific reason not to. Reading them directly from the vault every time you need them is unnecessarily slow and expensive.
