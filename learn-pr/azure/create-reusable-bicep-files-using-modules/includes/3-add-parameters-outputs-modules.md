@@ -34,11 +34,11 @@ A parent template can use module outputs in variables, properties for other reso
 
 ## Chained modules
 
-It's common to create a parent Bicep file that combines multiple modules together. For example, imagine you're building a new Bicep template to deploy virtual machines that use dedicated virtual networks. You could create a module to define a virtual network, and then take the virtual network's resource ID as an output from that module and use it as an input to the virtual machine module:
+It's common to create a parent Bicep file that combines multiple modules together. For example, imagine you're building a new Bicep template to deploy virtual machines that use dedicated virtual networks. You could create a module to define a virtual network, and then take the virtual network's subnet resource ID as an output from that module and use it as an input to the virtual machine module:
 
-TODO
+::: code language="bicep" source="code/3-chained.bicep" highlight="18" :::
 
-In this example, the symbolic names are used for the reference between the modules. This helps Bicep to automatically understand the relationships between the modules. Because Bicep understands there's a dependency, it deploys the modules in sequence: it deploys everything in the `virtualNetwork` module first, and if that deployment succeeds it accesses the `TODO` output value and passes it to the `virtualMachine` module as a parameter, then deploys everything in the `virtualMachine` module.
+In this example, the symbolic names are used for the reference between the modules. This helps Bicep to automatically understand the relationships between the modules. Because Bicep understands there's a dependency, it deploys the modules in sequence: it deploys everything in the `virtualNetwork` module first, and if that deployment succeeds it accesses the `subnetResourceId` output value and passes it to the `virtualMachine` module as a parameter, then deploys everything in the `virtualMachine` module.
 
 > [!NOTE]
 > When you depend on a module, Bicep waits for the entire module deployment to complete. It's important to remember this when you plan your modules. If you create a module that defines a resource that takes a long time to deploy, then any resources that depend on that module will wait for the whole module to complete.
