@@ -16,6 +16,8 @@ After you've created a module, you can reuse it in multiple Bicep files, even if
 
 Modules help you to keep related resource definitions together. For example, when you define an Azure Functions app, you typically deploy the function app, a hosting plan for the app, and a storage account for the function app's metadata. These three components are defined separately, but they represent a logical grouping of resources, so it might make sense to define them as a module. Then, your main template doesn't need to be aware of the details of how a function app is deployed - that's the responsibility of the module.
 
+<!-- TODO ### Composability -->
+
 ### Functionality
 
 Occasionally, you might need to use modules to access certain functionality. For example, suppose you submit a subscription-scoped deployment and want to also deploy some resources to a resource group in the same deployment. You need to use a module when you define the resources that should be deployed to the resource group.

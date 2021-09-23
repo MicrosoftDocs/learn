@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.create-reusable-bicep-files-using-modules.create-use-bicep-modules
-title: Create and use Bicep modules
+uid: learn.azure.create-composable-bicep-files-using-modules.introduction
+title: Introduction
 metadata:
-  unitType: learning-content
-  title: Create and use Bicep modules
+  unitType: introduction
+  title: Introduction
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 09/23/2021
   author: johndowns
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-create-use-bicep-modules.md)]
+  [!include[](includes/1-introduction.md)]

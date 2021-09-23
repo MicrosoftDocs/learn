@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.create-reusable-bicep-files-using-modules.knowledge-check
+uid: learn.azure.create-composable-bicep-files-using-modules.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
