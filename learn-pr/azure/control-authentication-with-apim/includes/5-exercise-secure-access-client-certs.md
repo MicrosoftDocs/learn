@@ -47,7 +47,7 @@ Because you are using the Consumption tier for API Management, you must configur
 
 ## Get the thumbprint for the certificate
 
-In this section, you'll configure API Management to accept a request only if it has a certificate with a certain thumbprint. Let's get that thumbprint from the certificate.
+In this section, you'll configure API Management to accept a request only if it has a certificate with a certain fingerprint. Let's get that thumbprint from the certificate.
 
 1. In Cloud Shell, run the following code.
 
@@ -57,7 +57,7 @@ In this section, you'll configure API Management to accept a request only if it 
     echo ${Fingerprint#*=}
     ```
 
-1. Copy the complete output (a hexideimal string) and paste this fingerprint value into a text file.
+1. Copy the complete output (a hexidecimal string) and paste this fingerprint value into a text file.
 
 ## Edit inbound policy to only allow requests with a valid certificate
 
