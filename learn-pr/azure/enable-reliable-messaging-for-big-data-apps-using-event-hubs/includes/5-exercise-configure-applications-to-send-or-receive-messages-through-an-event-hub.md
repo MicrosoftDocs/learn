@@ -30,27 +30,26 @@ In the previous exercise, we defined default values for resource group and locat
     > [!TIP]
     > It may take a moment to create this storage account. If storage account creation fails, change your environment variable, and try again.
 
-1. Run the following command to list the access keys associated with your storage account. The command uses the variable we defined earlier for your account name and the default value for resource group.
-
+1. zRun the following command obtain the access keys associated with your storage account. 
     ```azurecli
     az storage account keys list --account-name $STORAGE_NAME
     ```
 
-1. Access keys associated with your storage account are listed. Copy and save the value of **key1** for future use. You'll need this key to access your storage account.
+1. Two keys associated with your storage account are output in JSON format. Copy and save the value of **key1** for future use. You'll need this key to access your storage account.
 
-1. View the connection string for your storage account by running the following command.
+1. Run the following command to obtain the connection string for your storage account.
 
     ```azurecli
     az storage account show-connection-string -n $STORAGE_NAME
     ```
 
-1. The output contains the connection details for your storage account. Copy and save the value of **connectionString**. It should look something like.
+1. The output contains the connection details for your storage account. Copy and save the value of **connectionString**. It should look something like this:
 
     ```output
    "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage_account_name;AccountKey=VZjXuMeuDqjCkT60xX6L5fmtXixYuY2wiPmsrXwYHIhwo736kSAUAj08XBockRZh7CZwYxuYBPe31hi8XfHlWw=="
     ```
 
-1. Create a container called **messages** in your storage account by running the following command. Use the **connectionString** you copied in the previous step.
+1. Run the following command to create a container called **messages** in your storage account. Use the **connectionString** value you copied in the previous step.
 
     ```azurecli
     az storage container create --name messages --connection-string "<connection string here>"
@@ -71,7 +70,7 @@ The repository is cloned to your home folder.
 
 ## Edit SimpleSend.java
 
-In this exercise you will use the built-in Cloud Shell editor to modify the SimpleSend application, and add your Event Hubs namespace, event hub name, shared access policy name, and primary key. The main commands appear at the bottom of the editor window.
+In this exercise you will use the built-in Cloud Shell editor to modify the SimpleSend application, adding your Event Hubs namespace, event hub name, shared access policy name, and primary key. 
 
 1. Change to the **SimpleSend** folder.
 
@@ -79,15 +78,16 @@ In this exercise you will use the built-in Cloud Shell editor to modify the Simp
     cd ~/azure-event-hubs/samples/Java/Basic/SimpleSend/src/main/java/com/microsoft/azure/eventhubs/samples/SimpleSend
     ```
 
-1. Open Cloud Shell editor in the current folder. This shows a list of files on the left and an editor space on the right.
+1. Open Cloud Shell editor in the current folder. 
 
     ```bash
     code .
     ```
+    The files in the current folder are listed on the left, and the editor space on the right displays the contents of the filename listed in the title bar.
+    
+1. If not already open, open **SimpleSend.java** by selecting it from the file list.
 
-1. Open the **SimpleSend.java** file by selecting it from the file list.
-
-1. In the editor, locate and replace the following strings:
+1. In the editor, locate and replace the following strings under ConnectionStringBuilder (do not include the quotes):
 
     - `"Your Event Hubs namespace name"` with the name of your Event Hub namespace.
     - `"Your Event Hub"` with the name of your Event Hub.
@@ -101,26 +101,24 @@ In this exercise you will use the built-in Cloud Shell editor to modify the Simp
     echo $HUB_NAME
     echo $STORAGE_NAME
     ```
-     For your primary SAS key, when you create an Event Hubs namespace, a 256-bit SAS key called **RootManageSharedAccessKey** is created. It has primary and secondary keys that grant send, listen, and manage rights to the namespace. You displayed the key by running an Azure CLI command; however, you can also find the keys anc connection strings by opening the **Shared access policies** page for your Event Hubs namespace in the Azure portal, and selecting the policy name. 
+     For your primary SAS key, when you create an Event Hubs namespace, a 256-bit SAS key called **RootManageSharedAccessKey** is created and includes primary and secondary keys that grant send, listen, and manage rights to the namespace. Earlier in this exercise, you obtained the key by running an Azure CLI command; however, you can also find the keys and connection strings by selecting your Event Hubs namespace in the Azure portal, and then in the menu under the **Settings**, select **Shared access policies**; now select the policy name **RootManageSharedAccessKey** to display the SAS Policy keys. 
      
-1. Save **SimpleSend.java** either through the "..." menu, or by using the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. Save **SimpleSend.java** file, and then close the editor.
      
     > [!TIP]
-    > Unlike the terminal window, the editor uses typical copy/paste keyboard accelerator keys for your OS. You'll need to save your edits, and can write out your edits by pressing <kbd>Ctrl+O</kbd>, and then pressing <kbd>Enter</kbd> to confirm the output file name. Exit the editor by pressing <kbd>Ctrl+X</kbd>. Alternatively, the editor has a "..." menu in the top/right corner for all the editing commands.
-
-1. Close the editor through the "..." menu, or with the accelerator key <kbd>CTRL+Q</kbd>.
+    > To save your edits, use <kbd>Ctrl+S</kbd>. Exit the editor by pressing <kbd>Ctrl+X</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS. Unlike the Cloud Shell terminal window, the Cloud Shell editor uses typical copy/paste keyboard accelerator keys for your OS. Alternatively, open the editor menu by selecting the ellipsis (...) in the upper right corner for additional editing commands.
 
 ## Use Maven to build SimpleSend.java
 
-You'll now build the Java application running **mvn** commands.
+You'll now build the Java application by running **mvn** commands.
 
-1. In the Cloud Shell, eneter the following command to navigate to the main **SimpleSend** folder.
+1. In the Cloud Shell, enter the following command to navigate to the main **SimpleSend** folder.
 
     ```bash
     cd ~/azure-event-hubs/samples/Java/Basic/SimpleSend
     ```
 
-1. Build the Java SimpleSend application. This builds your application using the connection details for your Event Hub.
+1. Build the Java SimpleSend application. This command builds your application using the connection details for your event hub.
 
     ```bash
     mvn clean package -DskipTests
