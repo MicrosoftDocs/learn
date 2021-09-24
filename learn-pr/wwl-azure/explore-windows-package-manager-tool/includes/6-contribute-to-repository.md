@@ -94,17 +94,4 @@ If any issues are detected you will have to address them, otherwise someone from
 
 The team do have SLAs that they are working to, to ensure that your submissions are reviewed within a timely manner.
 
-quiz:
-  title: "Quick review"
-  questions:
-  - content: "Which of the following statements best describes a manifest?"
-    choices:
-    - content: "A manifest is a file that contains the installer information for an app."
-      isCorrect: false
-      explanation: "That's incorrect. The manifest is a combination of several files, not just one. "
-    - content: "A manifest is a file (or set of data) containing meta-data providing descriptive elements for a package as well as the location of the installer, and the installers SHA256 hash."
-      isCorrect: true
-      explanation: "That's correct."
-    - content: "A manifest is the underlying schema that is used to configure how Windows Package Manager looks for the end user."
-      isCorrect: false
-      explanation: "That's incorrect. The Windows Package Manager settings would be the place to configure the look of Windows Package Manager."
+---

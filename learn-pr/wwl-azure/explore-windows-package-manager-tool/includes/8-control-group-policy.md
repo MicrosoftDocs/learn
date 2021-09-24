@@ -87,17 +87,4 @@ If you enable this setting, only the sources specified can be added or removed f
 
 If you disable this setting, no additional sources can be configured by the user for Windows Package Manager.
 
-quiz:
-  title: "Quick review"
-  questions:
-  - content: "If you wanted to stop users from being able to use Windows Package Manager preview features which Group Policy setting would you configure? "
-    choices:
-    - content: "Enable App Installer Experimental Features"
-      isCorrect: true
-      explanation: "That's incorrect."
-    - content: "Enable Windows Package Manager Allowed Sources"
-      isCorrect: false
-      explanation: "That's correct."
-    - content: "Enable App Installer Microsoft Store Source"
-      isCorrect: false
-      explanation: "That's incorrect."
+---
