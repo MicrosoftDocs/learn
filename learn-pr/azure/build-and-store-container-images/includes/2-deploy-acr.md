@@ -18,11 +18,11 @@ In this unit, you'll create an Azure container registry using the Azure CLI.
     az group create --name learn-deploy-acr-rg --location <choose-a-location>
     ```
 
-  Next, we'll create an Azure container registry by running the `az acr create` command. The container registry name must be unique within Azure and contain between 5 and 50 alphanumeric characters.
+    Next, we'll create an Azure container registry by running the `az acr create` command. The container registry name must be unique within Azure and contain between 5 and 50 alphanumeric characters.
 
-  In this example, a premium registry SKU is deployed. The premium SKU is required for geo-replication.
+    In this example, a premium registry SKU is deployed. The premium SKU is required for geo-replication.
 
-  To begin, we'll define an environment variable in Cloud Shell called **ACR_NAME** to hold the name we want to give our new container registry.
+    To begin, we'll define an environment variable in Cloud Shell called **ACR_NAME** to hold the name we want to give our new container registry.
 
 1. Run the following command to define a variable called ACR_NAME.
 
@@ -43,7 +43,7 @@ In this unit, you'll create an Azure container registry using the Azure CLI.
 
     The following snippet is an example response from the `az acr create` command. In this example, the registry name was *myACR*. The loginServer value below is the registry name in lowercase, by default.  
 
-    Make sure to note the value returned for the `location` value as we'll need in a later exercise.
+1. Make sure to note the value returned for the `location` value as we'll need in a later exercise.
 
     ```output
     {
