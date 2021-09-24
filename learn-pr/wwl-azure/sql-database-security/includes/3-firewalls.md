@@ -11,7 +11,8 @@ Initially, all access to your Azure SQL Database is blocked by the SQL Database 
 
 To selectively grant access to just one of the databases in your Azure SQL Database, you must create a database-level rule for the required database. Specify an IP address range for the database IP firewall rule that is beyond the IP address range specified in the server-level IP firewall rule, and ensure that the IP address of the client falls in the range specified in the database-level rule. 
 
-Note: Azure Synapse Analytics only supports server-level IP firewall rules, and not database-level IP firewall rules.
+> [!NOTE] 
+> Azure Synapse Analytics only supports server-level IP firewall rules, and not database-level IP firewall rules.
 
 > [!div class="mx-imgBorder"]
 > ![A diagram has two clouds that both point to database-level firewall rules. After the database-level rules are evaluated the server-level rules are applied.](../media/az500-database-firewall.png)

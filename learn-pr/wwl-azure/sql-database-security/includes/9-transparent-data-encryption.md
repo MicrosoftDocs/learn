@@ -20,7 +20,7 @@ With TDE with Azure Key Vault integration, users can control key management task
 > [!div class="mx-imgBorder"]
 > ![Transparent Data Encryption configuration form.](../media/az500-transparent-data-encryption.png)
 
-**Manage TDE in the Azure portal**
+### Manage TDE in the Azure portal
 
 To configure TDE through the Azure portal, you must be connected as the Azure Owner, Contributor, or SQL Security Manager.
 

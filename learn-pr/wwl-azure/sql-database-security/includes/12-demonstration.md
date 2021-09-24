@@ -6,7 +6,7 @@ Give these Try-This exercises a test to gain some experience using Azure.
 
 In this task, we will explore vulnerability assessments, data discovery and classification, and auditing.
 
-**Install the AdventureWorks sample database** 
+### Install the AdventureWorks sample database
 
 Skip this section if you already have a database to work with. 
 
@@ -16,7 +16,7 @@ Skip this section if you already have a database to work with.
 1. **Review & create**, and then **Create**.
 1. Wait for the database to deploy. 
 
-**Review Vulnerability Assessments**
+### Review Vulnerability Assessments
 
 1. Navigate to your SQL database.
 1. Under **Security** select **Advanced Data Security**.
@@ -29,7 +29,7 @@ Skip this section if you already have a database to work with.
 1. Review the **Passed** checks.
 1. Notice **Export Scan Results** and **Scan History**
 
-**Review Data Discovery and Classification**
+### Review Data Discovery and Classification
 
 1. Return to the **Advanced data security** blade. 
 1. Select **Data Discovery & Classification**.
@@ -45,7 +45,7 @@ Skip this section if you already have a database to work with.
 1. Select the data of interest and then click **Accept selected recommendations**. 
 1. **Save** your changes.
 
-**Review Auditing**
+### Review Auditing
 
 1. Return to your SQL database.
 1. Under **Security** select **Auditing**.
@@ -59,7 +59,8 @@ Skip this section if you already have a database to work with.
 
 ## Task 2 - Azure SQL: Diagnostics
 
-**Note:** This demonstration requires an Azure SQL database.
+> [!NOTE] 
+> This demonstration requires an Azure SQL database.
 
 In this task, we will review and configure SQL database diagnostics. 
 
