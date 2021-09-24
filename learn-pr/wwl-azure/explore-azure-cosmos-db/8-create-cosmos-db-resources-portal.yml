@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-cosmos-db.exercise-create-resources-by-using-azure-portal
+title: 'Exercise: Create Azure Cosmos DB resources by using the Azure Portal'
+metadata:
+  title: 'Exercise: Create Azure Cosmos DB resources by using the Azure Portal'
+  description: "Exercise: Create Azure Cosmos DB resources by using the Azure Portal"
+  ms.date: 09/24/2021
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-create-cosmos-db-resources-portal.md)]
