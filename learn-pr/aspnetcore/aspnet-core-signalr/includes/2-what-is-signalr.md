@@ -5,11 +5,10 @@ Definition
 Value
 
 -->
-As a .NET developer tasked with implementing real-time web functionality, ASP.NET Core SignalR is the most viable option. In the **MilesLong (&trade;) Warehouse Incorporated** notification scenario, we will use SignalR to implement a real-time notification system that all employees will leverage. Here, you will learn the terminology associated with SignalR.
 
-:::image type="content" source="../media/2-fundamentals/server-client-user-diagram.png" alt-text="ASP.NET Core SignalR: Server to client and user relationship.":::
+As with all internet-connected applications, there are servers and clients. Clients rely on servers for data, and the primary mechanism in which they get data is through making hypertext transfer protocol (HTTP) requests. Some client applications require data that changes frequently.
 
-## Fundamentals
+ASP.NET Core SignalR provides an API for creating server-to-client remote procedure calls (RPC). The RPCs invoke functions on clients from the server-side .NET Core code. There are several supported platforms, each with their respective client SDK. Because of this, the programming language being invoked by the RPC call varies.
 
 Familiarizing yourself with the common nomenclature of SignalR is very helpful. You will learn what components are required in a server application, versus those in client applications. Additionally, you'll gain an understanding of the various duplex communication mechanisms.
 
