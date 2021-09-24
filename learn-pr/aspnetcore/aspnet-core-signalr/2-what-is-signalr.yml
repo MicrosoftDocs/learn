@@ -1,12 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.aspnet-core-signalr.what-is-signalr
 title: What is ASP.NET Core SignalR?
-description: In this unit, you'll learn what ASP.NET Core SignalR is.
 metadata:
   unitType: learning-content
   title: What is ASP.NET Core SignalR?
   description: In this unit, you'll learn what ASP.NET Core SignalR is.
-  ms.date: 9/15/2021
+  ms.date: 09/24/2021
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial # do we need ms.topic?

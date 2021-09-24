@@ -42,7 +42,7 @@ SignalR provides two built-in hub protocols:
 - A text protocol based on JSON (default)
 - A binary protocol based on *MessagePack* (*MessagePack* generally creates smaller messages compared to JSON).
 
-In order to use the *MessagePack* protocol, both server and client need to opt-in to configuring it. There is a third hub protocol named *BlazorPack*, but it is used exclusively with Blazor-Server applications. It cannot be used *without* the Blazor-Server hosting model.
+To use the *MessagePack* protocol, both server and client need to opt-in to configuring it. There is a third hub protocol named *BlazorPack*, but it is used exclusively with Blazor-Server applications. It cannot be used *without* the Blazor-Server hosting model.
 
 For more information, see the official specification for [SignalR Hub Protocol](https://github.com/dotnet/aspnetcore/blob/068797e16a1bfe66461e15c8a2ffa864369d384d/src/SignalR/docs/specs/HubProtocol.md).
 
@@ -50,9 +50,9 @@ For more information, see the official specification for [SignalR Hub Protocol](
 
 The client is responsible for establishing a connection to the server's endpoint through a `HubConnection`. The hub connection object is represented within each target platform:
 
-- [.NET Client](xref:signalr/dotnet-client): <xref:Microsoft.AspNetCore.SignalR.Client.HubConnection?displayProperty=nameWithType>
-- [JavaScript Client](xref:signalr/javascript-client): <xref:@microsoft/signalr.HubConnection?displayProperty=nameWithType>
-- [Java Client](xref:signalr/java-client): <xref:com.microsoft.signalr.HubConnection?displayProperty=nameWithType>
+- [.NET Client](/aspnet/core/signalr/dotnet-client): <xref:Microsoft.AspNetCore.SignalR.Client.HubConnection?displayProperty=nameWithType>
+- [JavaScript Client](/aspnet/core/signalr/javascript-client): <xref:@microsoft/signalr.HubConnection?displayProperty=nameWithType>
+- [Java Client](/aspnet/core/signalr/java-client): <xref:com.microsoft.signalr.HubConnection?displayProperty=nameWithType>
 
 For more information, see [ASP.NET Core SignalR supported platforms](/aspnet/core/signalr/supported-platforms).
 
@@ -60,4 +60,4 @@ With a hub connection instance that's started successfully, messages flow freely
 
 #### Users
 
-A user in the system acts as an individual, but they can also be part of a group. Messages can be sent to groups, an all group members will be notified.
+A user in the system acts as an individual, but they can also be part of a group. Messages can be sent to groups, and all group members will be notified.
