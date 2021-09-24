@@ -24,11 +24,11 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the resource menu, select **Compute**, and then search for and select **Function App**. The **Function App** pane appears.
+1. In the left menu pane, select **Compute**, and in the *Search services and marketplace* search box, search for and select **Function App**. The **Function App** pane appears.
 
 1. Select **Create**. The **Create Function App** pane appears.
 
-1. On the **Basics** tab, enter the following values.
+1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value | Description |
     |---|---|---|
@@ -89,15 +89,15 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 Now that we have a function app, it's time to create a function. A function is activated by a trigger. In this module, we'll use an HTTP trigger.
 
-1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane for your function app appears.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane for your *Function App* appears.
 
-1. In the command bar, select **Create**. The **Create function** pane appears.
+1. In the top menu bar, select **Create**. The **Create function** pane appears.
 
-        [![Screenshot for the Create Function dialog box.](../media/3-add-function-small.png)](../media/3-add-function.png#lightbox)
-        
+    [![Screenshot for the Create Function dialog box.](../media/3-add-function-small.png)](../media/3-add-function.png#lightbox)
+
 1. In the **Select a template** section, select **HTTP trigger**.
 
-1. Scroll down to the **Template details** section, and then enter the following information.
+1. In the **Template details** section, enter the following information.
 
     - In the **New Function** text box, accept the default name *HttpTrigger1*.
 
@@ -105,9 +105,9 @@ Now that we have a function app, it's time to create a function. A function is a
 
         The authorization level determines what keys need to be present on the request in order to invoke the function. *Function* requires a function-specific key.
 
-1. Select **Create**. The **Function** pane for your new *HttpTrigger1* appears.
+1. Select **Create**. The **HttpTrigger1** pane for your *Function* appears.
 
-1. In the command bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
+1. In the top menu bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
 1. In the dropdown list, select **default (function key)**, then select the *Copy to clipboard* icon at the end of the URL, and then select **OK**.
 
@@ -125,7 +125,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
     As you can see from this exercise so far, you must select a trigger type when you create a function. Each function has a single trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation in JavaScript, shown in the following screenshot, responds with the value of the parameter *name* that was in the query string or body of the request. If no query string was provided, the function responds with a message that asks whomever is calling to supply a name value.
 
-1. In the Azure portal, in the **Function** menu, select **Code + Test**.
+1. In the Azure portal, in the left menu pane, under **Developer**, select **Code + Test**.
 
     The **Code + Test** pane for your function appears, and displays the contents of your **index.js** file.
 
@@ -149,7 +149,7 @@ Now that we have a function app, it's time to create a function. A function is a
     }
     ```
 
-    Let's look briefly at the function's other file - the **function.json** config file. Access this file by selecting **function.json** from the dropdown list in the filepath. The configuration data is shown in the following JSON listing.
+    Let's look briefly at the function's other file - the **function.json** config file. Access this file by selecting **function.json** from the dropdown list in the filepath above the code block. The configuration data is shown in the following JSON listing.
 
     ```json
     {
@@ -181,13 +181,13 @@ Now that we have a function app, it's time to create a function. A function is a
 
 Now that we have a function app, it's time to create a function. A function is activated through a trigger. In this module, we'll use an HTTP trigger.
 
-1. In the Function app menu, under **Functions**, select **Functions**. The **Functions** pane for your function app appears.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane for your function app appears.
 
-1. From the command bar, select **Create**. The **Create function** pane appears.
+1. From the top menu bar, select **Create**. The **Create function** pane appears.
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
-1. Scroll down to the **Template details** section, and enter the following information.
+1. In the **Template details** section, enter the following information.
 
     - In the **New Function** text box, accept the default name *HttpTrigger1*.
 
@@ -197,9 +197,9 @@ Now that we have a function app, it's time to create a function. A function is a
 
         [![Screenshot for the Add Function dialog box.](../media/3-add-function-small.png)](../media/3-add-function.png#lightbox)
 
-1. Select **Create**. The **Function** pane for your new *HttpTrigger1* appears.
+1. Select **Create**. The **HttpTrigger1** pane for your *Function* appears.
 
-1. In the command bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
+1. In the top menu bar, select **Get Function URL**. The **Get Function URL** dialog box appears.
 
 1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL.
 
@@ -217,7 +217,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
     As you can see from this exercise so far, you must select a trigger type when you create a function. Each function has a single trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation, shown in the following image in PowerShell, uses the `Push-OutputBinding` cmdlet to respond with the value of the parameter *name* it received in the query string or body of the request. If no string was provided, the function responds with a message that prompts whomever is calling to supply a name value.
 
-1. In the Azure portal resource menu, under **Developer**, select **Code + Test** to view the code.
+1. In the left menu pane, under **Developer**, select **Code + Test** to view the code.
 
     The **Code + Test** pane for your function appears, which should display the contents of your **run.ps1** file.
 
@@ -285,7 +285,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 ::: zone pivot="javascript"
 
-1. In the Function menu, under **Developer**, select **Integration**. The **Integration** pane for your function appears.
+1. In the left menu pane, under **Developer**, select **Integration**. The **Integration** pane for your *Function* appears.
 
     Notice that we have already defined a trigger and an output binding, as shown in the following image.
 
@@ -293,7 +293,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
     You can see that we can't add more than _one_ trigger. In fact, to change the trigger for our function, we would have to first delete the trigger, and create a new one. However, the **Inputs** and **Outputs** sections of this pane display a plus sign (+) for adding more bindings so the request can accept more than one input value, and return more than one output value.
 
-1. In the **Inputs** box, select **Add input**. The **Create Input** pane appears. Hover over **Binding Type** to view a list of all possible input binding types.
+1. In the **Inputs** box, select **Add input**. The **Create Input** pane appears. Select the dropdown list for **Binding Type** to view a list of all possible input binding types.
 
     ![Screenshot of the Add input options.](../media/3-function-input-bindings.png)
 
@@ -301,7 +301,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
     We'll get back to adding input bindings later in this module, but for now, select **Cancel** to dismiss this pane.
 
-1. In the **Outputs** box, select **Add output**. The **Create Output** pane appears, showing a list of all possible output **Binding Types**.
+1. In the **Outputs** box, select **Add output**. The **Create Output** pane appears. Select the dropdown list for **Binding Type** to view a list of all possible output binding types.
 
     ![Screenshot of the Add output options.](../media/3-function-output-bindings.png)
 
@@ -311,7 +311,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 ::: zone pivot="powershell"
 
-1. In the Function menu, under **Developer**, select **Integration**. The **Integration** pane for your function appears.
+1. In the left menu pane, under **Developer**, select **Integration**. The **Integration** pane for your function appears.
 
     Notice that we have already defined a trigger and an output binding, as shown in the following image.
 
@@ -319,7 +319,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
     You can see that we can't add more than _one_ trigger. In fact, to change the trigger for our function, we would have to first delete the trigger, and create a new one. However, the **Inputs** and **Outputs** sections of this pane display a plus sign (+) to add more bindings so we can accept more than one input value, and emit more than one output value.
 
-1. Select **Add input** in the **Inputs** box. The **Create Input** pane appears showing a list of all possible input **Binding Types** in a dropdown menu.
+1. In the **Inputs** box, select **Add input**. The **Create Input** pane appears. Select the dropdown list for **Binding Type** to view a list of all possible input binding types.
 
     ![Screenshot of the Add input options.](../media/3-function-input-bindings.png)
 
@@ -327,7 +327,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
     We'll get back to adding input bindings later in this module but for now, select **Cancel** to dismiss this pane.
 
-1. Select **Add output** in the **Outputs** box. The **Create Output** pane appears showing a list of all possible output **Binding Types** in a dropdown menu.
+1. In the **Outputs** box, select **Add output**. The **Create Output** pane appears. Select the dropdown list for **Binding Type** to view a list of all possible output binding types.
 
     ![Screenshot of the Add output options.](../media/3-function-output-bindings.png)
 
