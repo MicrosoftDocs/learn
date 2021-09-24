@@ -1,23 +1,21 @@
 You're now ready to configure your publisher and consumer applications for your event hub.
 
-In this unit, you'll configure these applications to send or receive messages through your event hub. The applications are stored in a GitHub repository. One application acts as the message sender (**SimpleSend**), the other as the message receiver (**EventProcessorSample**). Because these applications are written in Java, you can do everything within the browser. However, the same configuration is needed for each platform, such as .NET.
+In this unit, you'll configure applications to send or receive messages through your event hub. One application acts as the message sender (**SimpleSend**), the other as the message receiver (**EventProcessorSample**). Because these applications are written in Java, you can do all developing, test, and management in your browser. However, the same configuration must be used for each platform, such as .NET. The applications are stored in a GitHub repository.
 
 ## Create a general-purpose, standard storage account
 
-The Java receiver application stores messages in Azure Blob Storage. Blob Storage requires a storage account.
-
-To create a storage account (general-purpose V2), use the `storage account create` command. Among the many parameters for this command, we are going to use the following parameters: 
+The Java receiver application stores messages in Azure Blob Storage, which requires a storage account. To create a storage account (general-purpose V2), use the `storage account create` command. Among the many parameters for this command, we will use the following parameters: 
 
 | Parameter       | Description |
 | --------------- | ----------- |
 | name (required) | A name for your storage account. |
-| resource-group (required) | The resource group owner. We'll use the sandbox resource group, which has already been defined. |
+| resource-group (required) | The resource group owner. This is the sandbox resource group, which has already been defined. |
 | location (optional) | An optional region in the event you want the storage account in a different region from the resource group location. |
-| sku | The default value SKU of the storage account is 'Standard_RAGRS', but in this exercise, we will specify a value. |
+| sku | The default value SKU of the storage account is 'Standard_RAGRS', but in this exercise, we will specify that value. |
 
-In the previous exercise, we defined default values for resource group and location, so even though one of those parameters is normally _required_, we can omit those parmeters from the command.
+In the previous exercise, we defined default values for resource group and location, so we can omit those parmeters from the command.
 
-1. In Cloud Shell, set the storage account name to a variable. The value must be between 3 and 24 characters in length and use only numbers and lower-case letters. It also must be unique within Azure.
+1. In Azure Cloud Shell, set the storage account name to a variable. A storage account name must be unique within Azure, and must have 3 to 24 lower-case letters or numbers.
 
     ```azurecli
     STORAGE_NAME=storagename$RANDOM
