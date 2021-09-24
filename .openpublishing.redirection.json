@@ -9277,47 +9277,47 @@
     },
     {
       "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/index.md",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/https://docs.microsoft.com/en-us/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/https://docs.microsoft.com/en-us/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/2-introduction-to-polybase.md",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/https://docs.microsoft.com/en-us/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/3-create-azure-dw-using-portal.md",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/https://docs.microsoft.com/en-us/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/4-exercise-create-blob-storage.md",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/https://docs.microsoft.com/en-us/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/5-upload-text-data.md",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/https://docs.microsoft.com/en-us/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/6-get-url-and-key.md",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/https://docs.microsoft.com/en-us/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/7-import-data-from-blob-to-dw.md",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/https://docs.microsoft.com/en-us/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/8-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/https://docs.microsoft.com/en-us/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
       "redirect_document_id": false
     }
   ]
