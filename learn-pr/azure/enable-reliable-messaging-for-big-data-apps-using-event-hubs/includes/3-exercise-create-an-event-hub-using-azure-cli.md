@@ -95,13 +95,13 @@ Next, let's see what our event hub looks like in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. In the Search bar at the top of portal, enter *Event Hubs*, and press <kbd>Enter</kbd>. The **Event Hubs** pane appears.
+1. In the Search bar at the top of the portal, enter *Event Hubs*, and press <kbd>Enter</kbd>. The **Event Hubs** pane for your subscription appears.
 
-1. Select your namespace to open it. Because we assigned the namespace as an environment variable ehubns-RANDOM, look for ehubns-NNNNN.
+1. In the list of Event Hubs namespaces, look for your namespace. Because we assigned the namespace as an environment variable ehubns-RANDOM, look for ehubns-NNNNN. Select it. The essentials page for your Event Hubs Namespace appears.
 
-1. In the Event Hubs Namespace menu, under **Entities**, select **Event Hubs**.
+1. In the Event Hubs Namespace menu, under **Entities**, select **Event Hubs**. The list of event hubs in your namespace appears.
 
-    Your event hub is listed, showing a status of **Active**, and default values for **Message Retention** (*7 days*) and **Partition Count** (*4*).
+    Your event hub is listed, showing the status (**Active**), and the expected default values for **Message Retention** (*7 days*) and **Partition Count** (*4*).
 
     ![Event Hub displayed in the Azure portal.](../media/3-event-hub.png)
 
