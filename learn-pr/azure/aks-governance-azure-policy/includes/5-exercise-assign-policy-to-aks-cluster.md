@@ -12,13 +12,14 @@ We begin by deploying an image from dockerhub.com into the cluster. The first st
    az aks get-credentials -n videogamecluster -g videogamerg
    ```
 
-2. Create a kuberentes manifest file that will be used to deploy the pods into the cluster
+1. Create a Kubernetes manifest file that will be used to deploy the pods into the cluster
 
-   ```
+   ```bash
    code nginxfromdocker.yaml
    ```
 
-3. Enter the following yaml code into the newly created file
+1. Enter the following yaml code into the newly created file
+
 1. Save the file by selecting the **...** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
 > [!IMPORTANT]
 > Whenever you paste or change code into a file in the editor, make sure to save afterwards by selecting the **...** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
@@ -68,19 +69,19 @@ We begin by deploying an image from dockerhub.com into the cluster. The first st
 
 4. Deploy the nginx pod and service
 
-   ```
+   ```bash
    kubectl apply -f nginxfromdocker.yaml
    ```
 
-5. Get the public IP address of the LoadBalancer service
+1. List all of the deployed services
 
    ``` bash
    kubectl get services
    ```
 
-6. Copy the External-IP of the service and paste it in your browser to see if the service runs as expected
+1. Copy the _External-IP_ of the **simple-nginx** service and paste it in your browser to see if the service runs as expected
 
-   ![nginx using dockerhub before application of the policy ](../media/5-nginx-dockerhub.png)
+   ![A screenshot showing nginx running, which came from Docker Hub](../media/5-nginx-dockerhub.png)
 
 ## Add Azure Policy to the AKS cluster
 You have successfully deployed your workload on a cluster that doesn't have any policy enforcement on it. Now you will add a policy to the cluster and see how that affects it.
@@ -105,12 +106,12 @@ Find the built-in policy definitions for managing your cluster using the Azure p
 
 1. Set the Scope to the resource group of the Kubernetes cluster you just created, which in this case is the **videogamerg** resource group. Fill out the rest of the form as seen in the picture below and click **Next**.
 
-   ![policy assigmnet](../media/5-policy-assignment.png)
+   ![Screenshot showing policy assignment view](../media/5-policy-assignment.png)
 
 1. Enter the following into the **Allowed container image regex** field and click the **Review + create** button
 
    ```
-   .+azurecr.io/.+$
+   ^.+\.azurecr\.io/.+$
    ```
 
 1. Click on the **Create** button
@@ -184,13 +185,13 @@ Now that you have assigned the restricting policy to the cluster, you will now r
 
 4. Deploy the new service and deployment by entering the following in the command line
 
-   ```
+   ```bash
    kubectl apply -f secondnginxfromdocker.yaml
    ```
 
 5. Now we can check to see if the pod and service was created
 
-   ```
+   ```bash
    kubectl get pods
    kubectl get svc
    ```
@@ -237,7 +238,7 @@ Now that you know that the policy prevents images from Dockerhub from being crea
                  --default-action Allow
    ```
 
-2. Import the image from Dockerhub to your new container registry
+1. Import the image from Docker Hub to your new container registry
 
    ```bash
    az acr import --name $ACR_NAME --source docker.io/library/nginx:latest --image nginx:v1

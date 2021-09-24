@@ -1,6 +1,6 @@
-In the previous section you saw how Azure policies can be used to easily govern your cluster by using a build-in policy initiative and using a policy. We also noted that the policy does not terminate already existing pods. We however would like to see non compliant pods so that we can take actions on them. We will do that in this exercise.
+In the previous section you saw how Azure policies can be used to easily govern your cluster by using a built-in policy  and policy initiative. We also noted that the policy does not terminate already existing pods. We however would like to see non-compliant pods so that we can take actions on them. We will do that in this exercise.
 
-## Using the portal to see non compliant pods
+## Using the Azure Portal to see non-compliant pods
 
 1. We begin by enabling monitoring on the cluster. 
 
@@ -8,7 +8,7 @@ In the previous section you saw how Azure policies can be used to easily govern 
    az aks enable-addons -a monitoring -n videogamecluster -g videogamerg
    ```
 
-2. In Azure portal type policy in the search bar at the top and select **Poicy**
+2. In Azure Portal type policy in the search bar at the top and select **Policy**
 
 3. At the top you can set the scope to your cluster resource group by clicking on the blue **...**. Select the Subscription and the resource group where the AKS cluster is sitting and click ok at the bottom.
 
@@ -18,7 +18,7 @@ In the previous section you saw how Azure policies can be used to easily govern 
 
    ![resources not compliant ](../media/6-not-compliant-cluster.png)
 
-4. Click on the **Kubernetes cluster containers should only use allowed images** policy. You will see the cluster that has the non compliant pod in it
+4. Click on the **Kubernetes cluster containers should only use allowed images** policy. You will see the cluster that has the non-compliant pod in it
 
 5. Click on the cluster to get more details on which pod is not compliant. Here you will see the name of the specific pod that is not compliant. You will see that it is only the first pod that was deployed that is not compliant. This is an effective way to audit compliance status of your cluster.
 
@@ -30,7 +30,7 @@ Now that we have found the pod that is not compliant, we will go ahead and delet
 
 1. Open the Cloud shell again and delete the non-compliant deployment
 
-   ```
+   ```bash
    kubectl delete -f nginxfromdocker.yaml
    ```
 

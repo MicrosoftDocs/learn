@@ -1,7 +1,7 @@
 Imagine that you want to create an AKS cluster for a new video game your team is working on and you would like to try out using Azure Policies to govern this cluster. Based on your research, you have decided to start with the following policies:
 
 1. Allow images only from trusted registries into the cluster
-2. Has the Kubernetes cluster pod security restricted standards for Linux-based workloads initiative
+1. Kubernetes cluster pod security restricted standards for Linux-based workloads initiative
 
 The first step would be to create an AKS cluster that has Azure policies enabled. 
 
@@ -12,16 +12,16 @@ The first step would be to create an AKS cluster that has Azure policies enabled
 > az aks enable-addons --addons azure-policy --name MyAKSCluster --resource-group MyResourceGroup
 > ```
 
-## Create an AKS Cluster with Azure Policy and Azure Monitor Add-on
+## Create an AKS cluster with Azure Policy and Azure Monitor add-on
 
-Before installing the Azure Policy Add-on or enabling any of the service features, your subscription must enable the **Microsoft.PolicyInsights** resource providers.
+Before installing the Azure Policy add-on or enabling any of the service features, your subscription must enable the **Microsoft.PolicyInsights** resource provider.
 
 1. You need the Azure CLI version 2.12.0 or later installed and configured. Run `az --version` to find the version. If you need to install or upgrade, see [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
 2. Register the resource providers and preview features.
 
 In this exercise, we will be using Azure cloud shell to run the commands. Feel free to use a terminal of your choice for this exercise. To begin, login to your **Azure Portal**
 
-### Setting up the Environment
+### Setting up the environment
 
 1. From **Azure Portal** click on the **Cloud Shell** icon at the top of the screen to the right of the search bar
 
@@ -39,9 +39,9 @@ In this exercise, we will be using Azure cloud shell to run the commands. Feel f
     az provider register --namespace Microsoft.PolicyInsights
     ```
 
-5. Once the above prerequisite steps are completed, install the Azure Policy Add-on in the AKS cluster you want to manage using the instructions in the note above. In the next section we will create a new cluster and enable the azure policy addon.
+5. Once the above prerequisite steps are completed, install the Azure Policy add-on in the AKS cluster you want to manage using the instructions in the note above. In the next section we will create a new cluster and enable the Azure Policy add-on.
 
-### Create AKS cluster and enable Azure Policy Addon
+### Create AKS cluster and enable Azure Policy add-on
 
 Now that we have the provider registered we can create a new resource group and create an AKS cluster within that group.
 
@@ -59,13 +59,13 @@ Now that we have the provider registered we can create a new resource group and 
     az aks create --name videogamecluster --resource-group videogamerg --generate-ssh-keys
     ```
     
-3. Enable **Azure Monitor** for the newly created cluster
+3. Enable Azure Monitor for the newly created cluster
 
     ```bash
     az aks enable-addons -a monitoring --name videogamecluster --resource-group videogamerg
     ```
 
-4. Enable Azure policies for the cluster
+4. Enable Azure Policies for the cluster
 
     ```bash
     az aks enable-addons --addons azure-policy --name videogamecluster --resource-group videogamerg
@@ -73,17 +73,17 @@ Now that we have the provider registered we can create a new resource group and 
 
 ### Check to ensure Azure Monitor is activated for the cluster
 
-1. Go to **Azure Portal** in a new tab
+1. Go to **Azure Portal** in a new tab.
 
-2. Search for **resource groups** in the search bar at the top and select **Resource groups**
+1. Search for **resource groups** in the search bar at the top and select **Resource groups**.
 
-3. Select the **videogamerg** resource group you just created
+1. Select the **videogamerg** resource group you just created.
 
-4. Select the **videogamescluster** you just created
+1. Select the **videogamescluster** you just created.
 
-5. Click on **Insights** under the **Monitoring** section in the left blade
+1. Click on **Insights** under the **Monitoring** section in the left blade.
 
-6. You should see 4 charts showing the state of your cluster
+1. You should see four charts showing the state of your cluster.
 
    ![Decision flow diagram illustrating the process of finding a bookmark in our Azure Cosmos DB back-end and returning a response. ](../media/3-monitoring-activated.png)
 
