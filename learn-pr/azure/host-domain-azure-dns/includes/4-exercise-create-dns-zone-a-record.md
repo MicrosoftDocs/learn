@@ -14,7 +14,7 @@ To create your DNS zone:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account you used to activate the sandbox.
 
-1. On the Azure **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the *Search services and marketplace* search box, search for and select **DNS zone** by Microsoft. The **DNS zone** pane appears.
 
@@ -30,7 +30,7 @@ To create your DNS zone:
     |---------|---------|
     | **Project details** |
     | Subscription  |  Concierge subscription  |
-    | Resource group  |  <rgn>[sandbox resource group]</rgn> |
+    | Resource group  | From the dropdown list, select <rgn>[sandbox resource group]</rgn> |
     | **Instance details** |
     | Name  |   The name needs to be unique in the sandbox. Use `wideworldimportsXXXX.com` where you replace the Xs with letters or numbers. |
 
@@ -54,7 +54,7 @@ Now that the DNS zone exists, you need to create the necessary records to suppor
 
 The primary record set to create is the A record. The A record set is used to point traffic from a logical domain name to the hosting server's IP address. An A record set can have multiple records. In a record set, the domain name remains constant, while the IP addresses differ.
 
-1. On the **DNS zone** pane for *wideworldimportsXXXX.com*, in the menu bar, select **Record set**.
+1. On the **DNS zone** pane for *wideworldimportsXXXX.com*, in the top menu bar, select **Record set**.
 
     :::image type="content" source="../media/4-add-a-record.png" alt-text="Screenshot of the DNS zone page, with + Record set highlighted." lightbox ="../media/4-add-a-record.png":::
 
