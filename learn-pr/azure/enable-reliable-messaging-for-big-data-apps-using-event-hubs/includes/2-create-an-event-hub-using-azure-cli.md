@@ -38,7 +38,7 @@ An event hub **consumer group** represents a specific view of an event hub data 
 
 There are three pricing tiers for Azure Event Hubs: Basic, Standard, and Dedicated. The tiers differ in terms of supported connections, the number of available consumer groups, and throughput. When using Azure CLI to create an Event Hubs namespace, if you don't specify a pricing tier, the default **Standard** (20 Consumer groups, 1000 Brokered connections) is assigned.
 
-## Create and configure an event hubs
+## Create and configure an event hub
 
 There are two main steps to create a new event hub. The first step is to define the Event Hubs **namespace**. The second step is to create an event hub in that namespace.
 
