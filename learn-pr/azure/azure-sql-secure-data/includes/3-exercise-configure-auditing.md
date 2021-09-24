@@ -4,7 +4,7 @@ The auditing feature tracks database and server events and writes events to an a
 
 ### Set up: Use scripts to deploy Azure SQL Database
 
-At the right is Azure Cloud Shell, which is a way to interact with Azure by using a browser. Before you start the labs, you'll run a script in Cloud Shell to create your environment, an AdventureWorks database in Azure SQL Database. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
+At the right is Azure Cloud Shell, which is a way to interact with Azure by using a browser. Before you start the exercise, you'll run a script in Cloud Shell to create your environment, AdventureWorks, in Azure SQL Database. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
 
@@ -34,19 +34,15 @@ These scripts should take three to five minutes to complete. Be sure to note you
 1. Output and store in a text file the information you'll need throughout the module by running the following code in Cloud Shell. You'll likely need to press Enter after you paste the code, because the last line won't be run by default.
 
     ```powershell
-    Write-Host "Please note your unique ID for future exercises in this module:"  
-    Write-Host $uniqueID
-    Write-Host "Your resource group name is:"
-    Write-Host $resourceGroupName
-    Write-Host "Your resources were deployed in the following region:"
-    Write-Host $location
-    Write-Host "Your server name is:"
-    Write-Host $serverName
+    Write-Host "Your unique ID for future exercises in this module:" $uniqueID
+    Write-Host "Your resource group name is:" $resourceGroupName
+    Write-Host "Your resources were deployed in the following region:" $location
+    Write-Host "Your server name is:" $serverName
     ```
 
     Remember to note your password, unique ID, and region. You'll use them throughout the module.
 
-1. Run the following script to deploy an Azure SQL Database instance and logical server with the AdventureWorks sample. The script will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in future units.
+1. Run the following script to deploy an Azure SQL Database instance and logical server with the AdventureWorks sample. The script will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in future units. Please allow several minutes for this script to complete. 
 
     ```powershell
     # The logical server name has to be unique in the system
