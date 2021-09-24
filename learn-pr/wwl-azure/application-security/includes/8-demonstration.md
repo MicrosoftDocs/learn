@@ -4,7 +4,8 @@ In this demonstration, we will configure and test an app registration.
 
 ## Task 1 - Configure an App registration via the Azure Portal
 
-**Note:** The application registration process is constantly being updated and improved. Validate before your demo
+> [!NOTE] 
+> The application registration process is constantly being updated and improved. Validate before your demo
 
 In this task, we will demo how to register an application.
 
@@ -31,7 +32,8 @@ In this task, we will demo how to register an application.
 
 ## Task 2 - Test the Application
 
-**Note:** You will need the information from Task 1, and Microsoft Graph Postman (https://www.postman.com) or you can use Microsoft Graph (https://developer.microsoft.com/en-us/graph/graph-explorer/preview) before you can complete testing the application registration.
+> [!NOTE] 
+> You will need the information from Task 1, and [Microsoft Graph Postman](https://www.postman.com) or you can use [Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer/preview) before you can complete testing the application registration.
 
 In this task, we will test the app registration. 
 
