@@ -29,7 +29,7 @@ products:
 - azure-monitor
 units:
 - learn.wwl.azure-monitor.introduction
-- learn.wwl.azure-monitor.azure-monitor
+- learn.wwl.azure-monitor.enable-azure-monitor
 - learn.wwl.azure-monitor.metrics-logs
 - learn.wwl.azure-monitor.log-analytics
 - learn.wwl.azure-monitor.connected-sources

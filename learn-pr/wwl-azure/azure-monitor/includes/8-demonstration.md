@@ -1,4 +1,4 @@
-Complete these Try-This exercises to get some hands-on on experience with Azure.
+Complete these try-this exercises to get some hands-on on experience with Azure.
 
 ## Task 1 - Activity Logs and Alerts
 

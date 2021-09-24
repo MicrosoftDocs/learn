@@ -29,7 +29,7 @@ quiz:
     - content: "Records and Triggers"
       isCorrect: false
       explanation: "Records are items within a log, and triggers are specific events that cause alerts."
-  - content: "You can query Log Analytics workspace with which of the following? Select one."
+  - content: "When running a query of the Log Analytics workspace, which query language is used?"
     choices:
     - content: "Contextual Query Language"
       isCorrect: false
@@ -40,7 +40,7 @@ quiz:
     - content: "Kusto Query Language"
       isCorrect: true
       explanation: "Kusto Query Language. All data is retrieved from a Log Analytics workspace using a log query written using Kusto Query Language (KQL). You can write your own queries or use solutions and insights that include log queries for an application or service."
-  - content: "You want to be notified when any virtual machine in the production resource group is deleted. What should you configure? Select one."
+  - content: "To be notified when any virtual machine in the production resource group is deleted, what should be configured?"
     choices:
     - content: "Activity log alert"
       isCorrect: true
@@ -51,14 +51,14 @@ quiz:
     - content: "Log alert"
       isCorrect: false
       explanation: "A log alert is not going to help in this situation."
-  - content: "The IT managers would like to use a visualization tool for the Azure Monitor results. You suggest all the following, except?"
+  - content: "The IT managers would like to use a visualization tool for the Azure Monitor results. Each of the following is available, but there is a need to pick the one that will allow for insights and investigation of the data; which should be used?"
     choices:
     - content: "Dashboard"
       isCorrect: false
       explanation: "The dashboard will help you visualize your Azure Monitor results."
     - content: "Logic Apps"
       isCorrect: true
-      explanation: "Logic Apps. Logic apps would be used for integration activities. Workbooks are interactive documents that provide deep insights into your data, investigation, and collaboration inside the team. Specific examples where workbooks are useful are troubleshooting guides and incident postmortem. Dashboards and Power BI allow you to quickly identify important issues."
+      explanation: "Logic apps would be used for integration activities. Workbooks are interactive documents that provide deep insights into your data, investigation, and collaboration inside the team. Specific examples where workbooks are useful are troubleshooting guides and incident postmortem. Dashboards and Power BI allow you to quickly identify important issues."
     - content: "Power BI"
       isCorrect: false
       explanation: "Power BI is a great data visualization tool."
