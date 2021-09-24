@@ -30,7 +30,7 @@ In this exercise, we'll enable the registry admin account, and use it to deploy 
     az acr credential show --name $ACR_NAME
     ```
 
-    Take note of the `username` and  `password` values that are returned from this command. You'll need them in this exercise.
+1. Take note of the `username` and  `password` values that are returned from this command. You'll need them in this exercise.
 
 ## Deploy a container with Azure CLI
 

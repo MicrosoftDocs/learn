@@ -46,7 +46,7 @@ The first step is to create a new file named `Dockerfile`. You can use any text 
 
 ## Verify the image
 
-1. Run the following command in Cloud Shell to verify that the image has been created and stored in the registry.
+Run the following command in Cloud Shell to verify that the image has been created and stored in the registry.
 
     ```azurecli
     az acr repository list --name $ACR_NAME --output table
