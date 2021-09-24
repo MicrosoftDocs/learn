@@ -20,7 +20,7 @@ Modules help you to keep related resource definitions together. For example, whe
 
 After you've created a set of modules, you can compose them together. For example, you might create a module that deploys a virtual network, and another module that deploys a virtual machine. You define parameters and outputs for each module so that you can take the important information from one and send it to another:
 
-:::image type="content" source="../media/2-compose.png.png" alt-text="Diagram showing a template referencing 2 modules and passing the output from one to the parameter of another." border="false":::
+:::image type="content" source="../media/2-compose.png" alt-text="Diagram showing a template referencing 2 modules and passing the output from one to the parameter of another." border="false":::
 
 ### Functionality
 
