@@ -16,9 +16,9 @@ Familiarizing yourself with the common nomenclature of SignalR is very helpful. 
 
 SignalR supports the following techniques (*transports*) for handling real-time communication (in order of graceful fallback):
 
-- WebSockets
-- Server-Sent Events
-- Long Polling
+1. WebSockets
+2. Server-Sent Events
+3. Long Polling
 
 SignalR automatically chooses the best transport method that is within the capabilities of the server and client.
 
