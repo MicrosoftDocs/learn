@@ -16,7 +16,11 @@ After you've created a module, you can reuse it in multiple Bicep files, even if
 
 Modules help you to keep related resource definitions together. For example, when you define an Azure Functions app, you typically deploy the function app, a hosting plan for the app, and a storage account for the function app's metadata. These three components are defined separately, but they represent a logical grouping of resources, so it might make sense to define them as a module. Then, your main template doesn't need to be aware of the details of how a function app is deployed - that's the responsibility of the module.
 
-<!-- TODO ### Composability -->
+### Composability
+
+After you've created a set of modules, you can compose them together. For example, you might create a module that deploys a virtual network, and another module that deploys a virtual machine. You define parameters and outputs for each module so that you can take the important information from one and send it to another:
+
+:::image type="content" source="../media/2-compose.png.png" alt-text="Diagram showing a template referencing 2 modules and passing the output from one to the parameter of another." border="false":::
 
 ### Functionality
 
