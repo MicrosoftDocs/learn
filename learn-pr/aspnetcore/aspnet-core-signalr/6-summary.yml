@@ -1,6 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.aspnet-core-signalr.summary
 title: Summary
+description: A summary of ASP.NET Core SignalR with links to resources and additional references.
 metadata:
   unitType: summary
   title: Summary
