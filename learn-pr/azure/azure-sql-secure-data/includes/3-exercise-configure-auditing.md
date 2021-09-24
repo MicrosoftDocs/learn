@@ -101,31 +101,52 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ### Configure auditing
 
-1. In the Azure portal, in the search bar type **Log analytics**, and under *Marketplace* select **Log Analytics Workspace**. Select your subscription, resource group, and provide a name like **azuresql-la**. 
+1. In the [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) search bar type **Log analytics**, and under *Marketplace* select **Log Analytics workspaces**. The **Log Analytics workspaces** pane appears.
 
-    > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+1. Select **Create log analytics workspace**. The **Create Log Analyticis workspace** appears.
+  
+1. On the **Basics** tab, enter the following values for each setting.
 
-1. Pick the region closest to where you are located and select **Review + Create** > **Create**. 
+    | Setting | Value |
+    |---|---|
+    | **Project Details** |
+    | Subscription | Concierge Subscription |
+    | Resource group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn> |
+    | **Instance Details** |
+    | Type | Standard |
+    | Logic app name | Enter *azuresql-la* |
+    | Publish | Workflow |
+    | Region | Select a location closest to you from the following list |
 
-1. In the Azure portal, go to your Azure SQL Database to enable auditing on the database (not logical server).
+    [!INCLUDE [](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)] 
+    
+1.  Select **Review + create**, wait until your inputs have been validated, and then select **Create**. Wait until the resource is deployed. 
+  
+1.  Select **Go to resource**. The **Overview** pane for your Logic App appears.
 
-1. On the left pane, under **Security**, select **Auditing**. Review the options.
+1. In the Azure portal, go to your **AdventureWorks** SQL Database.
 
-    You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply auditing at the database level, which you will do in this unit, the two audits would happen in parallel. One does not override the other. Alternatively, you could audit only at the database level.
+1. On the menu, under **Security**, select **Auditing**. Review the options.
 
-1. Select **Enable Azure SQL Auditing**.  
+    You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply auditing at the database level, which you will do in this unit, both audits would occur in parallel; one does not override the other. Alternatively, you could audit only at the database level.
 
-1. Select **Log Analytics** and under Log Analytics, select the workspace you created.
+1. Select the slide toggle to **Enable Azure SQL Auditing**. 
 
-1. Select **Storage**, and under Storage account, select the storage account that contains *sqlva* and *a random string of letters and numbers*. In this storage account, you can collect XEvent log files that are saved as a collection of blob files within a container named **sqldbauditlogs**. In a later activity, you'll see more on how this differs from Log Analytics.
+1. Select the **Log Analytics** check box, and additional input fields appear. Select the Concierge Subscription and the Log Analytics workspace you created (asuresql-laNNN).
+
+1. Select the  **Storage** check box, and additional input fields appear. Select the Concierge Subscription, and then in the Storage Account dropdown list, select the account that starts with **sqlva** followed by a random string of letters and numbers. 
+ 
+   The **sqlva** storage account, will be used to collect XEvent log files that are saved as a collection of blob files within a container named **sqldbauditlogs**. In a later activity, you'll see more on how this differs from Log Analytics.
 
     Depending on your organization, in production you might consider having a separate storage account for the audit logs.
 
-1. Under Advanced properties, for **Retention (Days)** enter **7**, and for **Storage access key**, select **Primary**.
+1. Select Advanced properties to expand the section, and for **Retention (Days)** enter **7**, and for **Storage access key**, select **Primary**.
 
-1. Select **Save**.  
+    > [!NOTE]
+    > If you do not see an Advanced properties entry, select **Save** from the command bar, and then repeat the configuration instructions for Log Analytics and Storage--advanced options will then be available.  
 
-    After the configuration is saved, select the **X** button to close the database-level **Auditing** pane.  
+1. From the command bar, select **Save**.  
+
+    It may take a few minutes for the configuration to process. After the configuration is saved, in the breadcrumbs, select AdventureWorks to close the Audit pane.  
 
 You've now enabled auditing for a storage account and an Azure Monitor workspace. Later, you'll dive deeper into the auditing capabilities in Azure SQL. You'll see how to analyze the audit logs to view all the changes you've made throughout the module, as well as some other interesting use cases.  
