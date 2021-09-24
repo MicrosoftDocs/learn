@@ -4,7 +4,7 @@ title: Add parameters and outputs to modules
 metadata:
   unitType: learning-content
   title: Add parameters and outputs to modules
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Learn how to plan the parameters and outputs of your Bicep modules.
   ms.date: 09/23/2021
   author: johndowns
   ms.author: jodowns
