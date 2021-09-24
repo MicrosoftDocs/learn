@@ -4,7 +4,7 @@
 > [!div class="mx-imgBorder"]
 > ![PTA diagram showing a user device with the PTA agent authenticating to AD and then to Azure AD.](../media/az500-pass-through-authentication.png)
 
-**Feature benefits**
+## Feature benefits
 
 + Supports user sign-in into all web browser-based applications and into Microsoft Office client applications that use modern authentication.
 + Sign-in usernames can be either the on-premises default username (userPrincipalName) or another attribute configured in Azure AD Connect (known as Alternate ID).

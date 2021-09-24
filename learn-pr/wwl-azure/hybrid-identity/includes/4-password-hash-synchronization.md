@@ -9,7 +9,7 @@ The probability that you're blocked from getting your work done due to a forgott
 *	Improve the productivity of your users.  
 *	Reduce your helpdesk costs.  
 
-**How does this work?**
+## How does this work?
 
 In the background, the password synchronization component takes the user’s password hash from on-premises Active Directory, encrypts it, and passes it as a string to Azure. Azure decrypts the encrypted hash and stores the password hash as a user attribute in Azure AD.
 
