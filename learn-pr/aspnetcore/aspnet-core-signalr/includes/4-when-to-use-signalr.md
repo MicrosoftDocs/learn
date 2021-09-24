@@ -105,6 +105,13 @@ TODO: describe the end-state
               6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
 -->
 
+Good candidates for SignalR:
+
+- Apps that require high frequency updates from the server. Examples are gaming, social networks, voting, auction, maps, and GPS apps.
+- Dashboards and monitoring apps. Examples include company dashboards, live maps, instant sales updates, or travel alerts.
+- Collaborative apps. Whiteboard apps and team meeting software are examples of collaborative apps.
+Apps that require notifications. Social networks, email, chat, games, travel alerts, and many other apps use notifications.
+
 ## Check your work
 <!-- Introduction paragraph -->
 1. <!-- Step 1 (if multiple steps are needed) -->
