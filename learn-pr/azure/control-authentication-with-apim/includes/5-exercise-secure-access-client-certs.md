@@ -37,11 +37,11 @@ First, use Cloud Shell to create a self-signed certificate, which you will then 
 
 Because you are using the Consumption tier for API Management, you must configure the gateway to accept client certificates. Follow these steps.
 
-1. From the Azure portal that is already open, select your API Management service (apim-WeatherDataNNNN). 
+1. From the Azure portal that is already open, select your API Management service (apim-WeatherDataNNNN).
 
-1. In the API Management service menu, under **Deployment and infrastructure**, select **Custom domains**. The **Custom domains** pane for your API Management service appears.
+1. In the left menu pane, under **Deployment and infrastructure**, select **Custom domains**. The **Custom domains** pane for your API Management service appears.
 
-1. For **Request client certificates**, select **Yes**, and then, on the command bar, select **Save**.
+1. For **Request client certificates**, select **Yes**, and on the top menu bar, select **Save**.
 
     ![Configure the gateway to request certificates.](../media/5-config-request-certificates.png)
 
@@ -63,9 +63,9 @@ In this section, you'll configure API Management to accept a request only if it 
 
 Now, create the authentication policy in the API Management gateway.
 
-1. In the Azure portal, select your API Management service. If necessary, in the Azure resource menu, or from the **Home** page, select **All Resources**, and then select your API Management service.
+1. In the Azure portal, select your API Management service. If necessary, in the Azure resource menu, or from the **home** page, select **All resources**, and then select your API Management service.
 
-1. In the API Management service menu, under **APIs**, select **APIs**. The **APIs** pane for your API Management service appears.
+1. In the left menu pane, under **APIs**, select **APIs**. The **APIs** pane for your API Management service appears.
 
 1. In the secondary menu, select **Weather Data**.
 
