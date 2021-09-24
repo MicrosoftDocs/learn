@@ -1,0 +1,5 @@
+ -  **VMs**. Azure IaaS virtual machines.
+ -  **HANA (VMs)**. Azure IaaS virtual machines certified to run SAP HANA.
+ -  **HANA Large Instances (HLI)**. Purpose-built physical servers running in Azure certified to run SAP HANA.
+ -  **Azure Region**. Group of Azure data centers providing Azure cloud services.
+ -  **Availability Zones (AZ)**. Data centers within an Azure Region providing services with separate power, water and connectivity from the other AZs.
