@@ -4,7 +4,7 @@ You're now ready to create a new event hub. After creating it, you'll use the Az
 
 Let's create an Event Hubs namespace using Azure CLI and Bash in the Azure Cloud Shell to the right.
 
-1. First, let's assign default values that can be reused. This will keep you from having to enter the value with every command. In particular, let's set the _resource group_ and _location_. Enter the following command in the Azure Cloud Shell, and feel free to replace the location value with a region close to you.
+1. First, let's assign default values that can be reused so that you won't have to enter these values with every command. In particular, let's set the _resource group_ and _location_. Enter the following command in the Azure Cloud Shell, and feel free to replace the location value with a region close to you.
   
     ```azurecli
     az configure --defaults group=<rgn>[sandbox Resource Group]</rgn> location=westus2  
@@ -21,7 +21,7 @@ Let's create an Event Hubs namespace using Azure CLI and Bash in the Azure Cloud
      |--name (required) | A unique name for your Event Hubs namespace. The name must be 6-50 characters long, start with a letter, end with a letter or number, and contain only letters, numbers, and hyphens.|
      |--resource-group (required) | This parameter can be omitted because it will default to the sandbox resource group supplied from the previous command. |
      |--location (optional) | This parameter can be omitted because it will default to the location (region) supplied from the previous command. |
-     |--sku (optional) | The default value for this parameter, if ommitted, is _Standard_. This is the sku we want. The sku determines the connections and consumer thresholds. |
+     |--sku (optional) | The default value for this parameter, if omitted, is _Standard_, and this is the sku we want. The sku determines the connections and consumer thresholds. |
 
     Before running the command, though, let's set the namespace name as an environment variable so we can reuse it.
    
@@ -51,7 +51,7 @@ Let's create an Event Hubs namespace using Azure CLI and Bash in the Azure Cloud
         --namespace-name $NS_NAME
     ```
 
-    The JSON return contains subscription details that you'll use later to configure your publisher and consumer applications to connect to the namespace. Save the following values for later use.
+    The return output is in JSON format and contains details that you'll need to configure your publisher and consumer applications. Save the following values for later use.
 
     - **primaryConnectionString**
     - **primaryKey**
@@ -69,7 +69,7 @@ Now let's create your event hub.
 
       | Parameter | Description |
       | --------- | ----------- |
-      |--name (required) | Name for your event hub is invironment variable $HUB_NAME.|
+      |--name (required) | Name for your event hub is environment variable $HUB_NAME.|
       |--resource-group (required)  |Resource group owner has already been defined.|
       |--namespace-name (required) |The Event Hub namespace is environment variable $NS_NAME.|
     
