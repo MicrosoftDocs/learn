@@ -102,17 +102,4 @@ The **winget uninstall** has additional options that can be used to help customi
 | **-h, --silent** |  Runs the uninstaller in silent mode. This suppresses all UI. The default experience shows uninstaller progress. |  
 | **-o, --log**  |  Directs the logging to a log file. You must provide a path to a file that you have the write rights to. |
 
-quiz:
-  title: "Quick review"
-  questions:
-  - content: "Which install command would you use to specify the language when installing an app?"
-    choices:
-    - content: "--language"
-      isCorrect: false
-      explanation: "That's incorrect."
-    - content: "--locale"
-      isCorrect: true
-      explanation: "That's correct."
-    - content: "--switch"
-      isCorrect: false
-      explanation: "That's incorrect."
+---
