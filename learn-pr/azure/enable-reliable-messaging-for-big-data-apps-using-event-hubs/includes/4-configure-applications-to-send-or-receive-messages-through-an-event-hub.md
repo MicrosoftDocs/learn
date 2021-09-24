@@ -1,10 +1,10 @@
-After you've created and configured your event hub, you'll need to configure applications to send and receive event data streams via your hub.
+Now that you've created and configured your event hub, you'll need to configure applications to send and receive event data streams via your hub.
 
 For example, a payment processing solution will use some form of a sender application to collect customer's credit card data, and a receiver application to verify that the credit card is valid.
 
 Although there are differences in how a Java application is configured, when compared to a .NET application, the principles for enabling applications to connect to an event hub and to successfully send or receive messages are the same.
 
-## What are the minimum Event Hub application requirements?
+## What are the minimum Event Hub requirements for configuring an application?
 
 To configure an application to send messages to an Event Hub, provide the following information, so that the application can create connection credentials:
 
@@ -53,4 +53,4 @@ Azure Cloud Shell supports **nano**, **vim**, **emacs, and Cloud Shell editor (c
 
 ## Summary
 
-Sender and receiver applications must be configured with specific information about the Event Hub environment. You create a storage account if your receiver application stores messages in Blob Storage. If your application is hosted on GitHub, you have to clone it to your local directory. Text editors, such as **nano** are used to add your namespace to the application.
+Sender and receiver applications must be configured with specific information about the Event Hub environment. You need to create a storage account if your receiver application stores messages in Blob Storage. If your application is hosted on GitHub, you need to clone it to your local directory. Text editors, such as **nano** can be used to add your namespace to the application.
