@@ -115,14 +115,14 @@ In the exercise coming up, your workflow file, *main.yml*, will look like this.
 name: A workflow for my Hello World file
 on: push
 jobs:
-    build:
+  build:
     name: Hello world action
     runs-on: ubuntu-latest
     steps:
-        - uses: actions/checkout@v1
-        - uses: ./action-a
-        with:
-            MY_NAME: "Mona"
+    - uses: actions/checkout@v1
+    - uses: ./action-a
+      with:
+        MY_NAME: "Mona"
 ```
 
 Notice the ```on:``` attribute. This is a *trigger* to specify when this workflow will run. Here, it triggers a run when there is a push event to your repository. You can specify single events like ```on: push```, an array of events like ```on: [push, pull_request]```, or an event configuration map that schedules a workflow or restricts the execution of a workflow to specific files, tags, or branch changes.. The map might look something like this:
