@@ -1,3 +1,10 @@
+<!--
+# What is ASP.NET Core SignalR?
+
+Definition
+Value
+
+-->
 As a .NET developer tasked with implementing real-time web functionality, ASP.NET Core SignalR is the most viable option. In the **MilesLong (&trade;) Warehouse Incorporated** notification scenario, we will use SignalR to implement a real-time notification system that all employees will leverage. Here, you will learn the terminology associated with SignalR.
 
 :::image type="content" source="../media/2-fundamentals/server-client-user-diagram.png" alt-text="ASP.NET Core SignalR: Server to client and user relationship.":::

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.aspnet-core-signalr.knowledge-check-fundamentals
-title: SignalR fundamentals knowledge check
+uid: learn.aspnet-core-signalr.knowledge-check
+title: ASP.NET Core SignalR knowledge check
 metadata:
   unitType: knowledge_check
   title: SignalR fundamentals knowledge check
