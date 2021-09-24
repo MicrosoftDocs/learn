@@ -9,11 +9,11 @@ The Java receiver application stores messages in Azure Blob Storage, which requi
 | Parameter       | Description |
 | --------------- | ----------- |
 | name (required) | A name for your storage account. |
-| resource-group (required) | The resource group owner. This is the sandbox resource group, which has already been defined. |
-| location (optional) | An optional region in the event you want the storage account in a different region from the resource group location. |
+| resource-group (required) | The resource group owner is the sandbox resource group, which has already been defined as a default value. |
+| location (optional) | Region has already been defined as a default value, but you can include if you want to set a different region from the default resource group location. |
 | sku | The default value SKU of the storage account is 'Standard_RAGRS', but in this exercise, we will specify that value. |
 
-In the previous exercise, we defined default values for resource group and location, so we can omit those parmeters from the command.
+In the previous exercise, we defined default values for resource group and location, so we can omit those parameters from the command.
 
 1. In Azure Cloud Shell, set the storage account name to a variable. A storage account name must be unique within Azure, and must have 3 to 24 lower-case letters or numbers.
 
@@ -172,12 +172,12 @@ In this procedure, you'll use the EventProcessorHost method. You'll edit the Eve
     cd ~/azure-event-hubs/samples/Java/Basic/EventProcessorSample
     ```
 
-1. Build the Java SimpleSend application by running the following command. This ensures that your application uses the connection details for your Event Hub.
+1. Build the Java SimpleSend application by running the following command to ensure that your application uses the connection details for your Event Hub.
 
     ```bash
     mvn clean package -DskipTests
     ```
-
+    
     The build process may take several minutes to complete. Ensure that you see a **[INFO] BUILD SUCCESS** message before continuing.
 
     :::image type="content" source="../media/5-receiver-build.png" alt-text="Build results for receiver application." loc-scope="other"::: <!-- no-loc -->
