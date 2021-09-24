@@ -1,12 +1,12 @@
 
-There are many security recommendations for Azure Container Instances, use these to optimize your security for containters.
+There are many security recommendations for Azure Container Instances, use these to optimize your security for containers.
 
 ### Use a private registry
 Containers are built from images that are stored in one or more repositories. These repositories can belong to a public registry, like Docker Hub, or to a private registry. An example of a private registry is the Docker Trusted Registry, which can be installed on-premises or in a virtual private cloud. You can also use cloud-based private container registry services, including Azure Container Registry.
 
 A publicly available container image does not guarantee security. Container images consist of multiple software layers, and each software layer might have vulnerabilities. To help reduce the threat of attacks, you should store and retrieve images from a private registry, such as Azure Container Registry or Docker Trusted Registry. In addition to providing a managed private registry, Azure Container Registry supports service principal-based authentication through Azure Active Directory for basic authentication flows. This authentication includes role-based access for read-only (pull), write (push), and other permissions.
 
-### Monitor and scan container images continuosly
+### Monitor and scan container images continuously
 Take advantage of solutions to scan container images in a private registry and identify potential vulnerabilities. It’s important to understand the depth of threat detection that the different solutions provide.
 
 For example, Azure Container Registry optionally integrates with Azure Security Center to automatically scan all Linux images pushed to a registry. Azure Security Center's integrated Qualys scanner detects image vulnerabilities, classifies them, and provides remediation guidance.

@@ -26,7 +26,7 @@ As a side effect of running on the same kernel, you get less isolation than VMs.
 | **Networking** | Uses an isolated view of a virtual network adapter, providing a little less virtualization–the host's firewall is shared with containers–while using less resources. |
 
 In Docker, each layer is the resulting set of changes that happen to the filesystem after executing a command, such as, installing a program.
-So, when you view the filesystem after the layer has been copied, you can view all the files, includeing the layer when the program was installed.
+So, when you view the filesystem after the layer has been copied, you can view all the files, including the layer when the program was installed.
 You can think of an image as an auxiliary read-only hard disk ready to be installed in a "computer" where the operating system is already installed.
 Similarly, you can think of a container as the "computer" with the image hard disk installed. The container, just like a computer, can be powered on or off.
 

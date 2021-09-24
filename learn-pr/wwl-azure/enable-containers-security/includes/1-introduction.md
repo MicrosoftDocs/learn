@@ -1,5 +1,5 @@
 
-Containers are a great choice for running applcations in Azure. Those containers, just like virtual machines needed to locked down to protect your data and business.  Use the built-in Azure container tools to keep you container based solutions secure.
+Containers are a great choice for running appilcations in Azure. Those containers, just like virtual machines needed to locked down to protect your data and business.  Use the built-in Azure container tools to keep you container based solutions secure.
 
 ## Scenario
 
