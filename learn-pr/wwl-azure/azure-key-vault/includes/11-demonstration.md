@@ -30,7 +30,8 @@ In this task, we will review key vault settings.
 
 ## Task 3: Configure access policies
 
-**Note:** To complete this demonstration you will need a non-privileged test user. 
+> [!NOTE] 
+> To complete this demonstration you will need a non-privileged test user. 
 
 In this task, we will configure access policies and test access. 
 
@@ -43,25 +44,25 @@ In this task, we will configure access policies and test access.
 1. Open the **Cloud Shell** with the **Bash** option. You should be signed in as a Global Administrator.
 1. Use your key information to verify the secret you created in the previous task displays successfully for this role. 
 
-```CLI
-az keyvault secret show --name <secret_name> --vault-name <keyvault_name>'
-```
+    ```CLI
+    az keyvault secret show --name <secret_name> --vault-name <keyvault_name>'
+    ```
 
 9. In another browser tab, open the portal, and sign-in as the test user. 
 10. Open the **Cloud Shell** with the **Bash** option.
 10. Verify that the secret does not display for the test user. Access is denied. 
 
-```CLI
-az keyvault secret show --name <secret_name> --vault-name <keyvault_name>
-```
+    ```CLI
+    az keyvault secret show --name <secret_name> --vault-name <keyvault_name>
+    ```
 
 12. Return to the Global Administrator account in the portal.
 13. Add the Key Vault Contributor role to you test user. 
 14. Try the test user's access. Access is denied.
 
-```CLI
-az keyvault secret show --name <secret_name> --vault-name <keyvault_name>
-```
+    ```CLI
+    az keyvault secret show --name <secret_name> --vault-name <keyvault_name>
+    ```
 
 15. Explain that adding the RBAC role grants access to the Key Vault control plane. It does not grant access to the date in the Key Vault. 
 16. Return to your Key Vault and create an access policy.
@@ -75,9 +76,9 @@ az keyvault secret show --name <secret_name> --vault-name <keyvault_name>
 18. Be sure to **Add** your new access policy. And to **Save** your changes.
 19. Try the test user's access. The user should now have access and the key should display.
 
-```CLI
-az keyvault secret show --name <secret_name> --vault-name <keyvault_name>
-```
+    ```CLI
+    az keyvault secret show --name <secret_name> --vault-name <keyvault_name>
+    ```
 
 20. As you have time, return to the Secret configuration settings and change **Enabled** to **No**. Be sure to save your changes, then try access the key again. 
 
