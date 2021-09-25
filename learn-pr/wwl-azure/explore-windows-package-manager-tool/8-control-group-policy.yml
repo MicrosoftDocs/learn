@@ -25,7 +25,7 @@ quiz:
       explanation: "That's correct."
     - content: "Enable Windows Package Manager Allowed Sources"
       isCorrect: false
-      explanation: "That's incorrect."
+      explanation: "That's incorrect.  Allowing sources is used to determine where Windows Package Manager finds it's available software."
     - content: "Enable App Installer Microsoft Store Source"
       isCorrect: false
-      explanation: "That's incorrect."
+      explanation: "That's incorrect. This controls the Microsoft Store as a source included with Windows Package Manager"

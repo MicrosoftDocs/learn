@@ -22,10 +22,10 @@ quiz:
     choices:
     - content: "**--language**"
       isCorrect: false
-      explanation: "That's incorrect."
+      explanation: "That's incorrect.  This is not a valid command with Windows Package Manager."
     - content: "**--locale**"
       isCorrect: true
       explanation: "That's correct."
     - content: "**--switch**"
       isCorrect: false
-      explanation: "That's incorrect."
+      explanation: "That's incorrect. This is not a valid command with Windows Package Manager."
