@@ -50,7 +50,7 @@ mydevice: Current firmware version: 1.0.0
 
     [ ![Device Twin configuration.](../media/device-management-3.png) ](../media/device-management-3.png#lightbox)
 
-1. In the **Metrics** section, we'll define a custom metric to track that the firmware update was effective. Create a new custom metric, called *fwupdated*, enter the followingcriteria, and then select **Next: Target devices**.
+1. In the **Metrics** section, we'll define a custom metric to track that the firmware update was effective. Create a new custom metric, called *fwupdated*, enter the following criteria, and then select **Next: Target devices**.
 
     ```SQL
         SELECT deviceId FROM devices
