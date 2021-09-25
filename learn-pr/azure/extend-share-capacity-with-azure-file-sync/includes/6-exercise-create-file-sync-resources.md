@@ -12,7 +12,7 @@ The following video shows how to create the Azure resources you'll need. Use the
 
 1. In the top menu bar, select **Create**. The **Create a storage account** pane appears.
 
-1. On the **Basics** tab, enter the follwoign values for each setting.
+1. On the **Basics** tab, enter the following values for each setting.
 
    | Setting | Value  |
    |---------|---------|
@@ -32,7 +32,7 @@ Wait for the storage account to be created.
 
 1. When deployment completes, select **Go to resource**. Your **Storage account** pane appears.
 
-1. In the left menu pane, undert **Data storage**, select **File shares**. The **File shares** pane appears for your storage account.
+1. In the left menu pane, under **Data storage**, select **File shares**. The **File shares** pane appears for your storage account.
 
 1. In the top menu pane, select **File share**. The **New file share** pane appears.
 
