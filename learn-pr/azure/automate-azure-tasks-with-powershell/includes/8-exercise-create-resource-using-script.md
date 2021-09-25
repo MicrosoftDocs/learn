@@ -2,7 +2,7 @@ In this unit, you will continue with the example of a company that makes Linux a
 
 Your company has paid for a booth at a big Linux trade show. You plan a demo area containing three terminals each connected to a separate Linux VM. At the end of each day, you want to delete the VMs and recreate them, so they start fresh every morning. Creating the VMs manually after work when you are tired would be error prone. You want to write a PowerShell script to automate the VM creation process.
 
-## Write a script that creates virtual machines
+## Write a script to create virtual machines
 
 Follow these steps in Cloud Shell on the right to write the script:
 
