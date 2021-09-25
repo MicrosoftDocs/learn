@@ -6,7 +6,7 @@ In this exercise, you'll practice performing Azure log queries against a demo pr
 
 ## Create basic Azure Monitor log queries to extract information from log data
 
-Let's use the **Azure Demo Logs pane** to practice writing queries. The demo project workspace is pre-populated with sample data. Azure offers an optimized SQL-like queries with visualizion options of its data in a language called KQL (Kusto Query Language.). 
+Let's use the **Azure Demo Logs pane** to practice writing queries. The demo project workspace is pre-populated with sample data. Azure offers an optimized SQL-like queries with visualization options of its data in a language called KQL (Kusto Query Language.). 
 
 1. Open the [Logs demo environment](https://portal.azure.com/learn.docs.microsoft.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade?azure-portal=true). In the top left corner, under New Query 1, you see **Demo** which identifies the workspace, or the scope of the query. The left side of this pane contains several tabs: Tables, Queries, Functions. The right side has a scratchpad for creating or editing queries.
 s
