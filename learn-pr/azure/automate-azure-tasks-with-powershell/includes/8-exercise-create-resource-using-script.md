@@ -2,7 +2,7 @@ In this unit, you will continue with the example of a company that makes Linux a
 
 Your company has paid for a booth at a big Linux trade show. You plan a demo area containing three terminals each connected to a separate Linux VM. At the end of each day, you want to delete the VMs and recreate them, so they start fresh every morning. Creating the VMs manually after work when you are tired would be error prone. You want to write a PowerShell script to automate the VM creation process.
 
-## Write a script that creates Virtual Machines
+## Write a script that creates virtual machines
 
 Follow these steps in Cloud Shell on the right to write the script:
 
@@ -18,7 +18,7 @@ Follow these steps in Cloud Shell on the right to write the script:
     touch "./ConferenceDailyReset.ps1"
     ```
 
-1. Open the integrated editor and select the **ConferenceDailyReset.ps1** file.
+1. Open the integrated editor, and select the **ConferenceDailyReset.ps1** file.
 
     ```powershell
     code "./ConferenceDailyReset.ps1"
@@ -34,7 +34,7 @@ Follow these steps in Cloud Shell on the right to write the script:
     ```
 
     > [!NOTE]
-    > Normally, you'd have to authenticate with Azure using your credentials using `Connect-AzAccount` and this could be done in the script. However, in Cloud Shell environment you will already be authenticated so this is unnecessary.
+    > Normally, you'd have to authenticate with Azure using your credentials using `Connect-AzAccount`, and this could be done in the script. However, in Cloud Shell environment you will already be authenticated so this is unnecessary.
 
 1. Prompt for a username and password for the VM's admin account and capture the result in a variable:
 
@@ -51,7 +51,7 @@ Follow these steps in Cloud Shell on the right to write the script:
     }
     ```
 
-1. In the loop body, create a name for each VM and store it in a variable and output it to the console:
+1. In the loop body, create a name for each VM and store it in a variable, and output it to the console:
 
     ```powershell
     $vmName = "ConferenceDemo" + $i
@@ -83,7 +83,7 @@ For ($i = 1; $i -le 3; $i++)
 
 ## Execute the script
 
-Close the editor through the "..." context menu.
+1. Save the file and close the editor using the "..." context menu on the top right of the editor.
 
 1. Execute the script.
 
@@ -91,11 +91,11 @@ Close the editor through the "..." context menu.
     ./ConferenceDailyReset.ps1 <rgn>[sandbox resource group name]</rgn>
     ```
 
-The script will take several minutes to complete. When it is finished, verify that it ran successfully by looking at the resources you now have in your resource group:
+    The script will take several minutes to complete. When it is finished, verify that it ran successfully by looking at the resources you now have in your resource group:
 
-```powershell
-Get-AzResource -ResourceType Microsoft.Compute/virtualMachines
-```
+    ```powershell
+    Get-AzResource -ResourceType Microsoft.Compute/virtualMachines
+    ```
 
 You should see three VMs, each with a unique name.
 
