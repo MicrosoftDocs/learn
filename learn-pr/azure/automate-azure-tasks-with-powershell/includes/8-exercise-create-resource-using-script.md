@@ -12,7 +12,7 @@ Follow these steps in Cloud Shell on the right to write the script:
     cd $HOME\clouddrive
     ```
 
-1. Create a new text file named **ConferenceDailyReset.ps1**.
+1. Create a new text file, named **ConferenceDailyReset.ps1**.
 
     ```powershell
     touch "./ConferenceDailyReset.ps1"
@@ -27,22 +27,22 @@ Follow these steps in Cloud Shell on the right to write the script:
     > [!TIP]
     > The integrated Cloud Shell also supports vim, nano, and emacs if you'd prefer to use one of those editors.
 
-1. Start by capturing the input parameter in a variable. Add the following line to your script:
+1. Start by capturing the input parameter in a variable. Add the following line to your script.
 
     ```powershell
     param([string]$resourceGroup)
     ```
 
     > [!NOTE]
-    > Normally, you'd have to authenticate with Azure using your credentials using `Connect-AzAccount`, and this could be done in the script. However, in Cloud Shell environment you will already be authenticated so this is unnecessary.
+    > Normally, you'd have to authenticate with Azure using your credentials using `Connect-AzAccount`, and this could be done in the script. However, in Cloud Shell environment you will already be authenticated, so this is unnecessary.
 
-1. Prompt for a username and password for the VM's admin account and capture the result in a variable:
+1. Prompt for a username and password for the VM's admin account and capture the result in a variable.
 
     ```powershell
     $adminCredential = Get-Credential -Message "Enter a username and password for the VM administrator."
     ```
 
-1. Create a loop that executes three times:
+1. Create a loop that executes three times.
 
     ```powershell
     For ($i = 1; $i -le 3; $i++) 
@@ -51,22 +51,22 @@ Follow these steps in Cloud Shell on the right to write the script:
     }
     ```
 
-1. In the loop body, create a name for each VM and store it in a variable, and output it to the console:
+1. In the loop body, create a name for each VM and store it in a variable, and output it to the console.
 
     ```powershell
     $vmName = "ConferenceDemo" + $i
     Write-Host "Creating VM: " $vmName
     ```
 
-1. Next, create a VM using the `$vmName` variable:
+1. Next, create a VM using the `$vmName` variable.
 
    ```powershell
    New-AzVm -ResourceGroupName $resourceGroup -Name $vmName -Credential $adminCredential -Image UbuntuLTS
    ```
 
-1. Save the file. You can use the "..." menu at the top right corner of the editor. There are also common accelerator keys for Save.
+1. Save the file. You can use the "..." menu at the top right corner of the editor. There are also common accelerator keys for *Save*, like <kbd>Ctrl-S</kbd>.
 
-The completed script should look like this:
+The completed script should look like the following code.
 
 ```powershell
 param([string]$resourceGroup)
@@ -81,17 +81,17 @@ For ($i = 1; $i -le 3; $i++)
 }
 ```
 
-## Execute the script
+## Run the script
 
-1. Save the file and close the editor using the "..." context menu on the top right of the editor.
+1. Save the file, and close the editor using the "..." context menu on the top right of the editor.
 
-1. Execute the script.
+1. Run the script.
 
     ```powershell
     ./ConferenceDailyReset.ps1 <rgn>[sandbox resource group name]</rgn>
     ```
 
-    The script will take several minutes to complete. When it is finished, verify that it ran successfully by looking at the resources you now have in your resource group:
+    The script will take several minutes to complete. When it's finished, verify that it ran successfully by looking at the resources you now have in your resource group:
 
     ```powershell
     Get-AzResource -ResourceType Microsoft.Compute/virtualMachines
@@ -99,4 +99,4 @@ For ($i = 1; $i -le 3; $i++)
 
 You should see three VMs, each with a unique name.
 
-You wrote a script that automated the creation of three VMs in the resource group indicated by a script parameter. The script is short and simple but automates a process that would take a long time to complete manually with the portal.
+You wrote a script that automated the creation of three VMs in the resource group indicated by a script parameter. The script is short and simple but automates a process that would take a long time to complete manually with the Azure portal.
