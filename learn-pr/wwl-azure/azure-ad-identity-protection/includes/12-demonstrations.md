@@ -3,11 +3,12 @@ In this set of try this exercises, you will test conditional access.
 
 ## Task 1 - Configure Conditional Access (require MFA)
 
-**Note:** This task requires a user account, AZ500User1. If you want to show the MFA verification, the user account must have a phone number. 
+> [!NOTE] 
+> This task requires a user account, AZ500User1. If you want to show the MFA verification, the user account must have a phone number. 
 
 In this task, we will review conditional access policy settings and create a policy that requires MFA when signing in to the Portal. 
 
-**Configure the policy**
+### Configure the policy
 
 1. In the **Portal** search for and select **Azure Active Directory**.
 1. Under **Manage** select **Security**.
@@ -26,7 +27,7 @@ In this task, we will review conditional access policy settings and create a pol
 	* For **Enable policy** select **On**.
 1. Click **Create**. 
 
-**Test the policy**
+### Test the policy
 
 1. Sign-in to the **Portal** as the **AZ500User1**.
 1. Before you can sign in a second authentication is required.
@@ -38,7 +39,7 @@ In this task, we will review conditional access policy settings and create a pol
 
 In this task, we will configure an access review. 
 
-**Configure an access review**
+### Configure an access review
 
 1. In the **Portal**, search for and select **Identity Governance**.
 1. Under **Access Reviews** select **Access Reviews**.
@@ -52,14 +53,14 @@ In this task, we will configure an access review.
 	* Scope: **Everyone**
 	* Select a group: **AZ500Admins**
 	* Reviewers: **Selected user**
-	* Select reviewers: **add yourself as a reviewer* 
+	* Select reviewers: **add yourself as a reviewer** 
 	* Review the **Upon completion settings**, specifically the action if a reviewer doesn't respond.
 	* Review **Advanced settings**.
 1. **Start** the access review.
 1. On the **Access review** page ensure the new access review is listed. 
 1. The **Status** will change from **Not started** to **Initializing**.
 
-**Conduct an access review**
+### Conduct an access review
 
 In this task, we will conduct an access review. 
 
@@ -72,7 +73,7 @@ In this task, we will conduct an access review.
 1. Select **Approve** for one user and **Deny** for the other. Be sure to provide a **Reason**.
 1. **Submit** your reviews. 
 
-**Review the access review results**
+### Review the access review results
 
 In this task, we will review the access review results. 
 
@@ -84,7 +85,7 @@ In this task, we will review the access review results.
 1. From the **Overview** blade, click **Stop** and confirm you want to stop the review.
 1. The **Review status** should now be **Complete**.
 
-**Apply the access review**
+### Apply the access review
 
 In this task, we will apply the review results.
 

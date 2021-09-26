@@ -14,7 +14,7 @@ The security of MFA two-step verification lies in its layered approach. Compromi
 
 * Something you are (biometrics)
 
-**MFA Features**
+## MFA Features
 
 * **Get more security with less complexity**. Azure MFA helps safeguard access to data and applications and helps to meet customer demand for a simple sign-in process. Get strong authentication with a range of easy verification options—phone call, text message, or mobile app notification—and allow customers to choose the method they prefer.
 
