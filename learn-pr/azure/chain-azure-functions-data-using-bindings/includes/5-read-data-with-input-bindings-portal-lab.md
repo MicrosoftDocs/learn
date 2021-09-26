@@ -319,7 +319,7 @@ Let's examine what this code is doing.
           "authLevel": "function",
           "type": "httpTrigger",
           "direction": "in",
-          "name": "req",
+          "name": "Request",
           "methods": [
             "get",
             "post"
@@ -328,15 +328,15 @@ Let's examine what this code is doing.
         {
           "type": "http",
           "direction": "out",
-          "name": "res"
+          "name": "Response"
         },
         {
           "name": "bookmark",
           "direction": "in",
           "type": "cosmosDB",
+          "connectionStringSetting": "your-database_DOCUMENTDB",
           "databaseName": "func-io-learn-db",
           "collectionName": "Bookmarks",
-          "connectionStringSetting": "your-database_DOCUMENTDB",
           "id": "{id}",
           "partitionKey": "{id}"
         }
