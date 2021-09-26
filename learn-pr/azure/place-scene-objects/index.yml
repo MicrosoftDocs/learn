@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.azure.place-scene-objects-tutorials-mrtk
+metadata:
+  title: Place scene objects using Grid Object Collection
+  description: This course provides the user a understanding of placing objects on the scene and using solvers in mixed reality
+  ms.date: 09/09/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+title: Place scene objects using Grid Object Collection
+summary: This course provides the user a understanding of placing objects on the scene and using solvers
+abstract: |
+  By the end of this module you will be able to:
+  - Position objects in the scene
+  - Use MRTK's Grid Object Collection feature
+  - Use Solvers to direct the user to objects
+  - Use Solvers to reposition objects
+
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- windows
+- windows-mixed-reality
+- mrtk
+- hololens
+- azure
+- mrtk
+prerequisites: |
+  - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
+  - Windows 10 SDK 10.0.18362.0 or later
+  - A HoloLens 2 device configured for development
+  - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
+  - [Set up a mixed reality project in Unity module](/learn/modules/mixed-reality-toolkit-project-unity)
+  - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
+  - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
+
+
+units: 
+- learn.azure.place-scene-objects-tutorials-mrtk.4-1-introduction
+- learn.azure.place-scene-objects-tutorials-mrtk.4-2-position-game-objects-set-visibility
+- learn.azure.place-scene-objects-tutorials-mrtk.4-3-exercise-position-game-objects-set-visibility
+- learn.azure.place-scene-objects-tutorials-mrtk.4-4-organize-lay-out-objects-with-collections
+- learn.azure.place-scene-objects-tutorials-mrtk.4-5-exercise-organize-lay-out-objects-with-collections
+- learn.azure.place-scene-objects-tutorials-mrtk.4-6-create-intelligent-object-placements-with-solvers
+- learn.azure.place-scene-objects-tutorials-mrtk.4-7-exercise-create-intelligent-object-placements-with-solvers
+- learn.azure.place-scene-objects-tutorials-mrtk.4-8-knowledge-check
+- learn.azure.place-scene-objects-tutorials-mrtk.4-9-summary 
+
+badge:
+  uid: learn.azure.place-scene-objects-tutorials-mrtk-badge

@@ -54,13 +54,17 @@ Now that you have a complete module to deploy the App Service resources, you can
 
 1. Save the changes to the file.
 
-## Verify your Bicep file
+## Verify your Bicep files
 
 After you've completed all of the preceding changes, your *main.bicep* file should look like this example:
 
 :::code language="bicep" source="code/8-template.bicep" :::
 
-If it doesn't, either copy the example or adjust your template to match the example.
+Your *appService.bicep* file should look like this example:
+
+:::code language="bicep" source="code/8-app-service.bicep" highlight="30" :::
+
+If either file doesn't match, copy the example or adjust your template to match the example.
 
 ### Deploy the updated Bicep template
 

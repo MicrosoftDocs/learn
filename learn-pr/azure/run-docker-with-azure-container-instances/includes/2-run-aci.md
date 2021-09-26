@@ -19,7 +19,7 @@ For scenarios where you need full container orchestration, including service dis
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
 
-1. Open Azure Cloud Shell from the Azure portal using the Cloud Shell icon. Make sure to select **Bash** as the interactive Cloud Shell environment.
+1. Open Azure Cloud Shell from the Azure portal by selecting the Cloud Shell icon. Make sure to select **Bash** as the interactive Cloud Shell environment.
 
     :::image type="icon" source="../media/2-portal-cloudshell-access.png":::
 
@@ -71,7 +71,7 @@ For scenarios where you need full container orchestration, including service dis
 
     If your container is in the **Creating** state, wait a few moments and run the command again until you see the **Succeeded** state.
 
-1. From a browser, navigate to your container's FQDN to see it running. Ensure you enter the prefix, *http://* in front of *aci-demo...* string. You see this.
+1. From a browser, go to your container's FQDN to see it running. Ensure you enter the prefix, *http://* in front of *aci-demo...* string. You see this.
 
     :::image type="content" source="../media/2-browser.png" alt-text="Screenshot of the sample Node.js container app running in a browser." loc-scope="other"::: <!-- no-loc -->
 
