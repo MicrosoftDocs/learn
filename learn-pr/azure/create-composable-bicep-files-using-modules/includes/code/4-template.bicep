@@ -12,7 +12,7 @@ param deployCdn bool
 
 var appServicePlanName = 'toy-product-launch-plan'
 
-module app '4-app.bicep' = {
+module app 'modules/app.bicep' = {
   name: 'toy-launch-app'
   params: {
     appServiceAppName: appServiceAppName
@@ -22,7 +22,7 @@ module app '4-app.bicep' = {
   }
 }
 
-module cdn '4-cdn.bicep' = if (deployCdn) {
+module cdn 'modules/cdn.bicep' = if (deployCdn) {
   name: 'toy-launch-cdn'
   params: {
     httpsOnly: true

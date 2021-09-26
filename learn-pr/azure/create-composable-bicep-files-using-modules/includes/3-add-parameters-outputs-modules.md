@@ -8,7 +8,7 @@ You should also think about how you manage parameters that control the SKUs for 
 
 Whatever parameters you include in your module, ensure you add a meaningful description by using the `@description` attribute:
 
-::: code language="bicep" source="code/3-params-outputs.bicep" range="1-2" :::
+::: code language="bicep" source="code/3-params-outputs.bicep" range="1-2" highlight="1" :::
 
 ## Use conditions
 
@@ -34,7 +34,7 @@ Modules can define outputs. It's a good idea to create an output for the informa
 
 A parent template can use module outputs in variables, properties for other resource definitions, or even expose them as outputs itself. By exposing and using outputs throughout your Bicep files, you can create reusable sets of Bicep modules that can be shared with your team and reused across multiple deployments. It's also a good practice to add a meaningful description to outputs by using the `@description` attribute:
 
-::: code language="bicep" source="code/3-params-outputs.bicep" range="4-5" :::
+::: code language="bicep" source="code/3-params-outputs.bicep" range="21-22" highlight="1" :::
 
 ## Chain modules together
 

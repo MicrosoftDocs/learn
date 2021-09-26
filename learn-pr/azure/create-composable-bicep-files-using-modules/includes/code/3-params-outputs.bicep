@@ -2,7 +2,7 @@
 param storageAccountName string
 
 resource storageAccount 'Microsoft.Storage/storageAccounts@2021-02-01' = {
-  name: 'name'
+  name: storageAccountName
   location: resourceGroup().location
   kind: 'StorageV2'
   sku: {

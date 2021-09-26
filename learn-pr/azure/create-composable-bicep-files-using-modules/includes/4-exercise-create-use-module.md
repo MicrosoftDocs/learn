@@ -48,13 +48,13 @@ During the process, you'll:
 
 1. Open the *main.bicep* file.
 
-1. Add the following parameters to the file:
+1. Add the following parameters and variable to the file:
 
-   :::code language="bicep" source="code/4-template.bicep" range="1-8" :::
+   :::code language="bicep" source="code/4-template.bicep" range="1-13" :::
 
 1. Below the parameters, create a blank line. Now, type the first line of the app module definition:
 
-   :::code language="bicep" source="code/4-template.bicep" range="10" :::
+   :::code language="bicep" source="code/4-template.bicep" range="15" :::
 
    As you type, notice that the Bicep extension for Visual Studio Code helps you to scaffold the module declaration. When you type the path to your module and type the `=` character, it displays a popup with several options will appear. Select the **Required properties** item:
 
@@ -62,15 +62,15 @@ During the process, you'll:
 
 1. Complete the module declaration:
 
-   :::code language="bicep" source="code/4-template.bicep" range="10-17" :::
+   :::code language="bicep" source="code/4-template.bicep" range="15-23" :::
 
 1. Below the `app` module, define the `cdn` module:
 
-   :::code language="bicep" source="code/4-template.bicep" range="19-26" :::
+   :::code language="bicep" source="code/4-template.bicep" range="25-32" :::
 
 1. At the bottom of the file, define an output:
 
-   :::code language="bicep" source="code/4-template.bicep" range="29" :::
+   :::code language="bicep" source="code/4-template.bicep" range="34-35" :::
 
 1. Save the changes to the file.
 
