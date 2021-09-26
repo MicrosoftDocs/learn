@@ -12,13 +12,13 @@ Azure provides three administration tools to choose from:
 
 They all offer approximately the same amount of control; any task that you can do with one of the tools, you can likely do with the other two. All three are cross-platform, running on Windows, macOS, and Linux. They differ in syntax, setup requirements, and whether they support automation.
 
-Here, we will describe each of the three options and give some guidance on how to decide among them. 
+Here, we will describe each of the three options and give some guidance on how to decide among them.
 
 ## What is the Azure portal?
 
 The Azure portal is a website that lets you create, configure, and alter the resources in your Azure subscription. The portal is a Graphical User Interface (GUI) that makes it convenient to locate the resource you need and execute any required changes. It also guides you through complex administrative tasks by providing wizards and tooltips.
 
-The portal does not provide any way to automate repetitive tasks. For example, to set up 15 VMs, you would need to create them one-by-one by completing the wizard for each VM. This can be time-consuming and error-prone for complex tasks. 
+The portal does not provide any way to automate repetitive tasks. For example, to set up 15 VMs, you would need to create them one-by-one by completing the wizard for each VM. This can be time-consuming and error-prone for complex tasks.
 
 ## What is the Azure CLI?
 
@@ -36,11 +36,11 @@ The Azure CLI is available two ways: inside a browser via the Azure Cloud Shell 
 
 ## What is Azure PowerShell?
 
-Azure PowerShell is a module that you add to Windows PowerShell or PowerShell Core to let you connect to your Azure subscription and manage resources. Azure PowerShell requires PowerShell to function. PowerShell provides services like the shell window, command parsing, and so on. Azure PowerShell adds the Azure-specific commands.
+Azure PowerShell is a module that you add to PowerShell to let you connect to your Azure subscription and manage resources. Azure PowerShell requires PowerShell to function. PowerShell provides services like the shell window, command parsing, and so on. The Azure Az PowerShell module adds the Azure-specific commands.
 
 For example, Azure PowerShell provides the **New-AzVM** command that creates a virtual machine for you inside your Azure subscription. To use it, you would launch the PowerShell application and then issue a command like the following:
 
-```powershell
+```azurepowershell
 New-AzVm `
     -ResourceGroupName "CrmTestingResourceGroup" `
     -Name "CrmUnitTests" `

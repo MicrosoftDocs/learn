@@ -60,7 +60,7 @@ It's important to ensure that, if you serve a response from the cache, it is rel
 
 `http://<boardgames.domain>/stock/api/product?partnumber=3416&customerid=1128`
 
-This request is intended to check the stock levels for a product with part number 3416. The customer ID is used by a separate policy as does not alter the response. Subsequent requests for the same part number can be served from the cache, as long as the record has not expired. So far so good.
+This request is intended to check the stock levels for a product with part number 3416. The customer ID is used by a separate policy, and does not alter the response. Subsequent requests for the same part number can be served from the cache, as long as the record has not expired. So far so good.
 
 Now suppose that a different customer requests the same product:
 
