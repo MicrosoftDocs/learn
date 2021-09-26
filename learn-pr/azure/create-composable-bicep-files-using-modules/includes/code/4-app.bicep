@@ -1,13 +1,14 @@
-@description('TODO')
+@description('The Azure region into which the resources should be deployed.')
 param location string
 
-@description('TODO')
+@description('The name of the App Service app.')
 param appServiceAppName string
 
-@description('TODO')
-param appServicePlanSkuName string
+@description('The name of the App Service plan.')
+param appServicePlanName string
 
-var appServicePlanName = 'toy-product-launch-plan' // TODO
+@description('The name of the App Service plan SKU.')
+param appServicePlanSkuName string
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2021-01-15' = {
   name: appServicePlanName

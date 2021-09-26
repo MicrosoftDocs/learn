@@ -1,16 +1,16 @@
-@description('TODO')
+@description('The Azure region into which the resources should be deployed.')
 param location string
 
-@description('TODO')
+@description('The host name (address) of the origin server.')
 param originHostName string
 
-@description('TODO')
+@description('The name of the CDN profile.')
 param profileName string = 'cdn-${uniqueString(resourceGroup().id)}'
 
-@description('TODO')
+@description('The name of the CDN endpoint')
 param endpointName string = 'endpoint-${uniqueString(resourceGroup().id)}'
 
-@description('TODO')
+@description('Indicates whether the CDN endpoint requires HTTPS connections.')
 param httpsOnly bool
 
 var originName = 'my-origin'
@@ -29,7 +29,7 @@ resource endpoint 'Microsoft.Cdn/profiles/endpoints@2020-09-01' = {
   location: location
   properties: {
     originHostHeader: originHostName
-    isHttpAllowed: ! httpsOnly
+    isHttpAllowed: !httpsOnly
     isHttpsAllowed: true
     queryStringCachingBehavior: 'IgnoreQueryString'
     contentTypesToCompress: [
