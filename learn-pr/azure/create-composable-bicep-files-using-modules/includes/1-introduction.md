@@ -5,7 +5,9 @@ In this module, you'll learn about the benefits of Bicep modules and how you can
 
 Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've previously created a Bicep template that deploys websites to support the launch of each new toy product. Your company recently launched a new toy - a remote control wombat. The wombat toy has become extremely popular, and the traffic to its website has increased significantly. Customers are complaining about slow response times because the server can't keep up with the demand.
 
-To improve performance and reduce cost, you've been asked to add a content delivery network, or CDN, to the website. You know that your company will need to include a CDN in other websites they make in the future.
+To improve performance and reduce cost, you've been asked to add a content delivery network, or CDN, to the website. You know that your company will need to include a CDN in other websites they make in the future, but also that not every website needs a CDN, so you decide to make the CDN component optional.
+
+:::image type="content" source="../media/1-architecture-diagram.png" alt-text="Architecture diagram showing two variants: one with traffic flowing from the internet to the app through a CDN, and another without a CDN." border="false" :::
 
 ## What will we be doing?
 

@@ -38,11 +38,19 @@ Generally it's not a good practice to create a module for every resource you dep
 
 You might build up a large Bicep template and then decide that it should be split up into modules. Sometimes it's obvious how you should split a large Bicep file. You might have a set of resources that clearly belong together in a module. Other times, it's not as straightforward to determine the resources that should be grouped into a module.
 
-The Bicep visualizer can help you to put your whole Bicep file in perspective. The visualizer is included in the Bicep extension for Visual Studio Code. To view the visualizer, open the Visual Studio Code Explorer, then select and hold (or right-click) the Bicep file and select **Open Visualizer**. The visualizer shows a graphical representation of the resources in your Bicep file, and it includes lines between resources to show the dependencies that Bicep detects:
+The Bicep visualizer can help you to put your whole Bicep file in perspective. The visualizer is included in the Bicep extension for Visual Studio Code. To view the visualizer, open the Visual Studio Code Explorer, then select and hold (or right-click) the Bicep file and select **Open Visualizer**. The visualizer shows a graphical representation of the resources in your Bicep file, and it includes lines between resources to show the dependencies that Bicep detects. You can use the visualizer to help you to split your files up. Consider whether the visualization illustrates any clusters of resources. These might make sense to be moved into a module together.
 
-TODO screenshot of visualizer
+For example, consider this visualization for a Bicep file. There are two distinct sets of resources defined. It might make sense to group them into separate *database* and *networking* modules:
 
-You can use the visualizer to help you to split your files up. Consider whether the visualization illustrates any clusters of resources. These might make sense to be moved into a module together.
+# [Visualizer](#tab/visualizer)
+
+:::image type="content" source="../media/2-visualizer.png" alt-text="Screenshot of the Bicep visualizer." border="false" :::
+
+# [Grouping](#tab/grouping)
+
+:::image type="content" source="../media/2-visualizer-annotated.png" alt-text="Screenshot of the Bicep visualizer with the resources grouped into a databases module and a networking module." border="false" :::
+
+---
 
 ### Nest modules
 
