@@ -3,7 +3,7 @@ In this module, you'll learn about the benefits of Bicep modules and how you can
 
 ## Example scenario
 
-Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've previously created a Bicep template that deploys websites to support the launch of each new toy product. One of the new toys has become extremely popular, and the traffic to the website has increased significantly.
+Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've previously created a Bicep template that deploys websites to support the launch of each new toy product. Your company recently launched a new toy - a remote control wombat. The wombat toy has become extremely popular, and the traffic to its website has increased significantly. Customers are complaining about slow response times because the server can't keep up with the demand.
 
 To improve performance and reduce cost, you've been asked to add a content delivery network, or CDN, to the website. You know that your company will need to include a CDN in other websites they make in the future.
 

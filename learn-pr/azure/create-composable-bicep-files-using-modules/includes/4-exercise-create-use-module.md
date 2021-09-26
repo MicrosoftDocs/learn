@@ -1,10 +1,12 @@
-TODO intro para
+You've been tasked with adding a content delivery network, or CDN, to your company's toy wombat launch website. However, other teams in your company have told you they don't need a CDN. In this exercise, you'll create modules for the website and the CDN, and you'll add the modules to a template.
 
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Add new modules for your application and content delivery network.
-> * Create a Bicep template that combines both modules together.
+> * Add a module for your application.
+> * Create a Bicep template that uses the module.
+> * Add another module for the CDN.
+> * Add the CDN module to your template, while making it optional.
 > * Deploy the template to Azure.
 > * Review the deployment history.
 
@@ -28,7 +30,39 @@ During the process, you'll:
 
    :::code language="bicep" source="code/4-app.bicep" :::
 
-   This file deploys an App Service plan and an app.
+   This file deploys an Azure App Service plan and an app. Notice that the module is fairly generic - it doesn't include any assumptions about the names of resources, or the SKU of the App Service plan. This makes it easy to reuse the module for different deployments.
+
+1. Save the changes to the file.
+
+## Add the module to your Bicep template
+
+Here, you add the *app* module to your Bicep template as a starting point.
+
+1. Open the *main.bicep* file.
+
+1. Add the following parameters and variable to the file:
+
+   :::code language="bicep" source="code/4-template-1.bicep" range="1-10" :::
+
+   Because this is the template you intend to deploy for your toy websites, it's a little more specific. The App Service plan name is defined as a variable, and the SKU parameter has a default value that makes sense for the toy launch website.
+
+1. Below the parameters, create a blank line. Now, type the first line of the app module definition:
+
+   :::code language="bicep" source="code/4-template-1.bicep" range="12" :::
+
+   As you type, notice that the Bicep extension for Visual Studio Code helps you to scaffold the module declaration. When you type the path to your module and type the `=` character, it displays a popup with several options will appear.
+
+1. Select the **Required properties** item from the popup menu:
+
+   :::image type="content" source="../media/4-module-scaffold.png" alt-text="Screenshot of Visual Studio Code showing the option to scaffold a module with its required properties.":::
+
+1. Complete the module declaration:
+
+   :::code language="bicep" source="code/4-template-1.bicep" range="12-20" :::
+
+1. At the bottom of the file, define an output:
+
+   :::code language="bicep" source="code/4-template-1.bicep" range="22-23" :::
 
 1. Save the changes to the file.
 
@@ -48,45 +82,21 @@ During the process, you'll:
 
 1. Open the *main.bicep* file.
 
-1. Add the following parameters and variable to the file:
+1. Below the `appServicePlanSkuName` parameter, add the following parameter:
 
-   :::code language="bicep" source="code/4-template.bicep" range="1-13" :::
+   :::code language="bicep" source="code/4-template-2.bicep" range="10-11" :::
 
-1. Below the parameters, create a blank line. Now, type the first line of the app module definition:
+1. Below the `app` module definition, define the `cdn` module:
 
-   :::code language="bicep" source="code/4-template.bicep" range="15" :::
+   :::code language="bicep" source="code/4-template-2.bicep" range="25-32" :::
 
-   As you type, notice that the Bicep extension for Visual Studio Code helps you to scaffold the module declaration. When you type the path to your module and type the `=` character, it displays a popup with several options will appear.
+   Notice that the module has a condition so that it's only deployed when the `deployCdn` parameter's value is set to `true`. Also, notice that the module's `originHostName` parameter is set to the value of the `appServiceAppHostName` output from the `app` module.
 
-1. Select the **Required properties** item from the popup menu:
+1. Update the host name output so that it selects the correct host name. When a CDN is deployed, you want the host name to be that of CDN endpoint.
 
-   :::image type="content" source="../media/4-module-scaffold.png" alt-text="Screenshot of Visual Studio Code showing the option to scaffold a module with its required properties.":::
-
-1. Complete the module declaration:
-
-   :::code language="bicep" source="code/4-template.bicep" range="15-23" :::
-
-1. Below the `app` module, define the `cdn` module:
-
-   :::code language="bicep" source="code/4-template.bicep" range="25-32" :::
-
-1. At the bottom of the file, define an output:
-
-   :::code language="bicep" source="code/4-template.bicep" range="34-35" :::
+   :::code language="bicep" source="code/4-template-1.bicep" range="35" :::
 
 1. Save the changes to the file.
-
-## Use unique deployment names
-
-TODO intro
-
-1. In the *main.bicep* file, update the module definitions: TODO
-
-1. Save the changes to the file.
-
-<!-- TODO use unique deployment names -->
-
-<!-- TODO add condition to decide whether to include the CDN. and use a ternary thing to selectively send the right hostname back in the output -->
 
 ## Deploy the Bicep template to Azure
 
