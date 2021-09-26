@@ -9114,6 +9114,211 @@
     "source_path": "learn-pr/wwl-azure/learn-publish-process/7-summary.md",
     "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/7-summary",
     "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/language/rust-understand-common-concepts/0-introduction.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/language/rust-understand-common-concepts/1-program-structure.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/1-program-structure",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/language/rust-understand-common-concepts/2-variables.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/2-variables",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/language/rust-understand-common-concepts/3a-if-else-expressions.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-if-else-expressions/4-if-else-expressions",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/language/rust-understand-common-concepts/3-data-types.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/3-basic-data-types",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/language/rust-understand-common-concepts/4a-functions.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/6-functions",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/language/rust-understand-common-concepts/4b-exercise-functions.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/7-exercise",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/language/rust-understand-common-concepts/4-structs-enums.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/4-tuples-structs",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/language/rust-understand-common-concepts/7a-loops.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-loop-expressions/3-for-while-loop",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/language/rust-understand-common-concepts/7-collection-types.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-if-else-expressions/1-arrays",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/language/rust-understand-common-concepts/8-exercise-indexing.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-loop-expressions/4-exercise-loop",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/language/rust-understand-common-concepts/9-exercise-hashmaps.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-loop-expressions/2-exercise-hash-map",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/language/rust-understand-common-concepts/11-knowledge-check.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/language/rust-understand-common-concepts/12-summary.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/language/rust-understand-common-concepts/index.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/",
+    "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/implement-sql-data-warehouse/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/2-azure-synapse-analytics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/3-azure-synapse-analytics-features.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/4-types-of-solution-scenarios.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/5-massively-parallel-processing.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/6-table-geometries.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/7-create-azure-dw-using-portal.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/query-azure-sql-data-warehouse/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/work-with-data-warehouses-using-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/query-azure-sql-data-warehouse/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/work-with-data-warehouses-using-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/query-azure-sql-data-warehouse/2-create-azure-dw-server.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/work-with-data-warehouses-using-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/query-azure-sql-data-warehouse/3-connect-dw-using-ssms.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/work-with-data-warehouses-using-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/query-azure-sql-data-warehouse/4-query-dw-using-ssms.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/work-with-data-warehouses-using-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/query-azure-sql-data-warehouse/5-query-dw-using-power-bi.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/work-with-data-warehouses-using-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/query-azure-sql-data-warehouse/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/work-with-data-warehouses-using-azure-synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/2-introduction-to-polybase.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/3-create-azure-dw-using-portal.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/4-exercise-create-blob-storage.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/5-upload-text-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/6-get-url-and-key.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/7-import-data-from-blob-to-dw.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_document_id": false
     }
   ]
 }

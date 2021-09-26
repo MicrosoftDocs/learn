@@ -13,7 +13,7 @@ Each subnet contains a range of IP addresses that fall within the virtual networ
  -  **Network security groups**. You can associate zero or one network security group to each subnet in a virtual network. You can associate the same, or a different, network security group to each subnet. Each network security group contains rules, which allow or deny traffic to and from sources and destinations.
 
 > [!NOTE]
-> There any restrictions on using IP addresses. Azure reserves five IP addresses within each subnet.
+> There are restrictions on using IP addresses. Azure reserves five IP addresses within each subnet.
 
  -  x.x.x.0: Network address
  -  x.x.x.1: Reserved by Azure for the default gateway
