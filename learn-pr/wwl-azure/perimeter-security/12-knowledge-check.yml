@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/21/2021
+  ms.date: 09/26/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -18,40 +18,40 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following features of Azure networking provide the ability to redirect all Internet traffic back to your company's on-premises servers for packet inspection? Select two."
+  - content: "Which of the following features of Azure networking provide the ability to redirect all Internet traffic back to the company's on-premises servers for packet inspection?"
     choices:
     - content: "User Defined Routes"
       isCorrect: true
-      explanation: "User defined routes and forced tunneling. You can use forced tunneling to redirect internet bound traffic back to the company's on-premises infrastructure. Forced tunneling is commonly used in scenarios where organizations want to implement packet inspection or corporate audits. Forced tunneling in Azure is configured via virtual network user defined routes (UDR)."
+      explanation: "User defined routes and forced tunneling. Use forced tunneling to redirect internet bound traffic back to the company's on-premises infrastructure. Forced tunneling is commonly used in scenarios where organizations want to implement packet inspection or corporate audits. Forced tunneling in Azure is configured via virtual network user defined routes (UDR)."
     - content: "Cross-premises network connectivity"
       isCorrect: false
-      explanation: "You can use this feature to connect multiple networks within Azure but no on-premises."
+      explanation: "Use cross-premises network feature to connect multiple networks within Azure but no on-premises."
     - content: "Traffic Manager"
       isCorrect: false
       explanation: "Traffic Manager is a load balancer style tool, to move network traffic to the best network application in the cloud, no on-premises."
-  - content: "You are configuring Azure Firewall. You need to allow Windows Update network traffic through the firewall. Which of the following should you use?"
+  - content: "Whenconfiguring Azure Firewall, the organization needs to allow Windows Update network traffic through the firewall. Which of the following should be configured?"
     choices:
     - content: "Destination inbound rules"
       isCorrect: false
       explanation: "Inbound rules would not allow Windows Update to function."
     - content: "NAT rules"
       isCorrect: false
-      explanation: "NAT rules are for routing your network traffic, not opening a firewall port."
+      explanation: "NAT rules are for routing network traffic, not opening a firewall port."
     - content: "Application rules"
       isCorrect: true
       explanation: "Application rules. Application rules define fully qualified domain names (FQDNs) that can be accessed from a subnet. That would be appropriate to allow Windows Update network traffic."
-  - content: "You would like to limit outbound Internet traffic from a subnet. Which product should you install and configure?"
+  - content: "An organization would like to limit outbound Internet traffic from a subnet, which product should be installed and configured?"
     choices:
     - content: "Azure Web Application Firewall"
       isCorrect: false
       explanation: "Web Application Firewall is for protecting HTTP directly, not a subnet."
     - content: "Azure Firewall"
       isCorrect: true
-      explanation: "Azure Firewall. Azure Firewall will let you limit the outbound IP addresses and ports that can be accessed. You can define network rules that define source address, protocol, destination port, and destination address."
+      explanation: "Azure Firewall. Azure Firewall can limit the outbound IP addresses and ports that can be accessed. Define network rules that assign source address, protocol, destination port, and destination address."
     - content: "Load Balancer"
       isCorrect: false
       explanation: "The Load Balancer guides traffic to the best server, not block traffic."
-  - content: "Your organization has a web application and is concerned about attacks that flood the network layer with a substantial amount of seemingly legitimate traffic. What should you do?"
+  - content: "An organization has a web application and is concerned about attacks that flood the network layer with a substantial amount of seemingly legitimate traffic, how can this type of attack be blocked?"
     choices:
     - content: "Add a Web Application Firewall"
       isCorrect: false
