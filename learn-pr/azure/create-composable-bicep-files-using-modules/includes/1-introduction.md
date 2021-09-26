@@ -2,21 +2,23 @@ TODO intro para
 
 ## Example scenario
 
-TODO
+Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've previously created a Bicep template that deploys websites to support the launch of each new toy product. One of the new toys has become extremely popular, and the traffic to the website has increased significantly.
+
+To improve performance and reduce cost, you've been asked to add a content delivery network, or CDN, to the website. You know that your company will need to include a CDN in other websites they make in the future.
 
 ## What will we be doing?
 
-TODO
+In this module, you'll create a set of Bicep modules to deploy your website and CDN. Then, you'll create a template that uses those modules together.
 
 ## What is the main goal?
 
-TODO
+By the end of this module, you'll be able to design and build Bicep modules that are composable, reusable, and flexible. You'll also be able to create Bicep templates that compose complex deployments out of a set of modules.
 
 ## Prerequisites
 
 You should be familiar with using:
 
-- Bicep, including how to use parameters and how to deploy Bicep files to Azure.
+- Bicep, including how to use parameters and parameter decorators, conditions, and how to deploy Bicep files to Azure.
 - Azure, including the Azure portal, subscriptions, resource groups, and resources.
 
 To work through the exercises, you'll also need the following installed locally:

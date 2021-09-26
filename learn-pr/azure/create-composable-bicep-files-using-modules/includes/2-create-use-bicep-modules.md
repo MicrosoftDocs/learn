@@ -12,6 +12,8 @@ After you've created a module, you can reuse it in multiple Bicep files, even if
 
 :::image type="content" source="../../build-first-bicep-template/media/7-templates-modules.png" alt-text="Diagram showing a template referencing 3 modules - application, database, and networking. The networking module is then reused in another template." border="false"::: <!-- TODO move to include file -->
 
+You can even share modules within your team, your organization, or with the Azure community. You'll learn more about sharing Bicep modules in a future Microsoft Learn module.
+
 ### Encapsulation
 
 Modules help you to keep related resource definitions together. For example, when you define an Azure Functions app, you typically deploy the function app, a hosting plan for the app, and a storage account for the function app's metadata. These three components are defined separately, but they represent a logical grouping of resources, so it might make sense to define them as a module. Then, your main template doesn't need to be aware of the details of how a function app is deployed - that's the responsibility of the module.
@@ -30,7 +32,7 @@ Occasionally, you might need to use modules to access certain functionality. For
 
 A module is a normal Bicep file, so you create it just like you do any other Bicep file.
 
-Generally it's not a good practice to create a module for every resource you deploy. A good Bicep module typically defines multiple related resources. However, if you have a particularly complex resource with a lot of configuration, it might make sense to create a single module to encapsulate the complexity in a module.
+Generally it's not a good practice to create a module for every resource you deploy. A good Bicep module typically defines multiple related resources. However, if you have a particularly complex resource with a lot of configuration, it might make sense to create a single module to encapsulate the complexity in a module. This keeps your main templates simple and uncluttered.
 
 ### Split an existing Bicep template into modules
 

@@ -44,7 +44,7 @@ During the process, you'll:
 
 1. Save the changes to the file.
 
-## Create a Bicep template
+## Add the modules to the main Bicep template
 
 1. Open the *main.bicep* file.
 
@@ -72,7 +72,19 @@ During the process, you'll:
 
    :::code language="bicep" source="code/4-template.bicep" range="29" :::
 
+1. Save the changes to the file.
+
+## Use unique deployment names
+
+TODO intro
+
+1. In the *main.bicep* file, update the module definitions: TODO
+
+1. Save the changes to the file.
+
 <!-- TODO use unique deployment names -->
+
+<!-- TODO add condition to decide whether to include the CDN. and use a ternary thing to selectively send the right hostname back in the output -->
 
 ## Deploy the Bicep template to Azure
 
