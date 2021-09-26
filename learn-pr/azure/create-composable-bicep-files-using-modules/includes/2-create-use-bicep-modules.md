@@ -44,11 +44,11 @@ For example, consider this visualization for a Bicep file. There are two distinc
 
 # [Visualizer](#tab/visualizer)
 
-:::image type="content" source="../media/2-visualizer.png" alt-text="Screenshot of the Bicep visualizer." border="false" :::
+:::image type="content" source="../media/2-visualizer.png" alt-text="Screenshot of the Bicep visualizer.":::
 
 # [Grouping](#tab/grouping)
 
-:::image type="content" source="../media/2-visualizer-annotated.png" alt-text="Screenshot of the Bicep visualizer with the resources grouped into a databases module and a networking module." border="false" :::
+:::image type="content" source="../media/2-visualizer-annotated.png" alt-text="Screenshot of the Bicep visualizer with the resources grouped into a databases module and a networking module.":::
 
 ---
 

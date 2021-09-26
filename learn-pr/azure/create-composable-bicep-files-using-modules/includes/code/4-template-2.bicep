@@ -8,7 +8,7 @@ param appServiceAppName string = 'toy-${uniqueString(resourceGroup().id)}'
 param appServicePlanSkuName string = 'F1'
 
 @description('Indicates whether a CDN should be deployed.')
-param deployCdn bool
+param deployCdn bool = true
 
 var appServicePlanName = 'toy-product-launch-plan'
 

@@ -143,8 +143,42 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 1. In the left menu, select **Deployments**.
 
+   :::image type="content" source="../media/4-deployments.png" alt-text="Screenshot of the Azure portal showing the resource group, with the Deployments menu item highlighted." :::
+
    Three deployments are listed.
 
-1. Select the **main** deployment. Notice that the two modules are listed, and that their types are displayed as `Microsoft.Resources/deployments`.
+1. Select the **main** deployment and expand **Deployment details**.
 
-1. Select the **cdn** and **app** deployments and review the resources deployed in each. Notice that they correspond to the resources defined in the respective module.
+   Notice that both of the modules are listed, and that their types are displayed as `Microsoft.Resources/deployments`. The modules are listed twice because their outputs are also referenced within the template.
+
+   :::image type="content" source="../media/4-deployment-modules.png" alt-text="Screenshot of the Azure portal showing the deployment details for the main deployment." :::
+
+1. Select the **toy-launch-cdn** and **toy-launch-app** deployments and review the resources deployed in each. Notice that they correspond to the resources defined in the respective module.
+
+## Test the website
+
+1. Select the **toy-launch-app** deployment.
+
+1. Select **Outputs**.
+
+   :::image type="content" source="../media/4-outputs.png" alt-text="Screenshot of the Azure portal showing the deployment, with the Outputs menu item highlighted." :::
+
+1. Select the copy button for the `appServiceAppHostName` output.
+
+1. In a new browser tab, try to navigate to the address you copied in the previous step.
+
+   :::image type="content" source="../media/4-web-app.png" alt-text="Screenshot of the web app's welcome page, with the address bar showing the App Service host name." :::
+
+   The App Service welcome page is displayed, showing that you have successfully deployed the app.
+
+1. Navigate to the **main** deployment and select **Outputs**.
+
+1. Copy the value of the `websiteHostName` output. Notice that this host name is different, because it's an Azure CDN host name.
+
+1. In a new browser tab, try to navigate to the CDN host name you copied in the previous step. Add `https://` to the start of the address.
+
+   CDN endpoints take a few minutes to become active. If you see a *Page not found* error, you can wait a few minutes and try pasting the link again. Also, ensure you added `https://` to the start of the URL so that you're using HTTPS.
+
+   When the CDN endpoint is active, you'll see the same App Service welcome page. This time, it's been served through Azure CDN, which helps to improve the website's performance.
+
+   :::image type="content" source="../media/4-web-cdn.png" alt-text="Screenshot of the web app's welcome page, with the address bar showing the CDN endpoint." :::
