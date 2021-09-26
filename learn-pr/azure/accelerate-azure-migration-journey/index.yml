@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - General understanding of cloud platforms 
   - Understanding of your organization's migration plan and the types of workloads you'll need to migrate 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/accelerate-migration-journey.svg
 ratingEnabled: true
 levels:
 - beginner
