@@ -26,7 +26,7 @@ But, you don't have to define your entire infrastructure in a single template. O
 If you envision your tiers having separate lifecycles, you can deploy your three tiers to separate resource groups. Notice the resources can still be linked to resources in other resource groups.
 
 > [!div class="mx-imgBorder"]
-> ![Multiple templates are used to deploy resources.](../media/az500-vitual-machine-template-2.png)
+> ![Multiple templates are used to deploy resources.](../media/az500-virtual-machine-template-2.png)
 
 
 >[!IMPORTANT]

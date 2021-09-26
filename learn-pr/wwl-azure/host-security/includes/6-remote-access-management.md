@@ -14,7 +14,7 @@ To connect the Linux-based VM, you need a secure shell protocol (SSH) client. Th
 The following shows the PuTTY configuration dialog.
 
 > [!div class="mx-imgBorder"]
-> ![PuTTY configuration dialog box.](../media/az500-Putty.png)
+> ![PuTTY configuration dialog box.](../media/az500-putty.png)
 
 
 ## Azure Bastion

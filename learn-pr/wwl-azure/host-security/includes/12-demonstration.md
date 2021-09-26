@@ -5,11 +5,12 @@ In this demonstration, we will configure the Bastion service, virtual machine up
 
 ## Task 1 - Use the Bastion service 
 
-**Note:** This task requires a virtual machine. If you are doing the next task, virtual machine updates, use a Windows virtual machine and keep the session running. 
+> [!NOTE] 
+> This task requires a virtual machine. If you are doing the next task, virtual machine updates, use a Windows virtual machine and keep the session running. 
 
 In this task, we will configure the Bastion service and connect to a virtual machine with service. 
 
-**Configure the Bastion service**
+### Configure the Bastion service
 
 1.	In the **Portal** navigate to your Windows virtual machine.
 1.	Ensure the virtual machine is **Running**.
@@ -22,7 +23,7 @@ In this task, we will configure the Bastion service and connect to a virtual mac
 1.	Specify the address range in CIDR notation. For example, **10.1.1.0/27**.
 1.	Click **Ok**, then click **Create**. It will take a few minutes for the service to deploy. 
 
-**Connect to the virtual machine using Bastion**
+### Connect to the virtual machine using Bastion
 
 1. From the target virtual machine’s **Overview** blade, select **Connect** and then **Bastion**
 1. On the **Connect to Bastion** page, enter the virtual machine login credentials. 
@@ -35,7 +36,8 @@ In this task, we will configure the Bastion service and connect to a virtual mac
 
 ## Task 2 -  Virtual Machine Updates
 
-**Note:** This task requires a virtual machine in the **running** state. You may want to enable **Update management** prior to this lesson. 
+> [!NOTE] 
+> This task requires a virtual machine in the **running** state. You may want to enable **Update management** prior to this lesson. 
 
 In this task, we will review virtual machine update management. 
 
@@ -66,11 +68,12 @@ In this task, we will install the IaaSAntimalware extension.
 
 ## Task 4 - Disk Encryption
 
-**Note:** This task requires a storage account. 
+> [!NOTE] 
+> This task requires a storage account. 
 
 In this task, we will enable disk encryption for a storage account. 
 
-**Review encryption key options**
+### Review encryption key options
 
 1. In the Portal, access your storage account.
 1. Under **Settings** select **Encryption**.
@@ -78,7 +81,7 @@ In this task, we will enable disk encryption for a storage account.
 1. Review the two types of keys: Microsoft Managed Keys and Customer Managed Keys.
 1. Select **Customer Managed Keys**.
 
-**Create the customer managed key**
+### Create the customer managed key
 
 1. For **Encryption key** choose **Select from key vault**.
 1. Click **Select a key vault and key**.  
@@ -99,7 +102,7 @@ In this task, we will enable disk encryption for a storage account.
 1. **Save** your changes on the **Encryption** page.
 1. Review the information that is now available: **Current key**, **Automated key rotation**, and **Key version in use**.
 
-**Review the key options**
+### Review the key options
 
 1. Return to the resource group that includes your storage account. 
 1. **Refresh** the page and ensure your new key vault is listed as a resource. 
@@ -115,7 +118,8 @@ In this task, we will enable disk encryption for a storage account.
 
 ## Task 5 - Use RDP to connect to a Windows VM (optional)
 
-**Note:** This task requires a Windows VM with a public IP address. You also need the login credentials for the machine. 
+> [!NOTE] 
+> This task requires a Windows VM with a public IP address. You also need the login credentials for the machine. 
 
 In this task, we will use RDP to connect to a Windows virtual machine. 
 
@@ -133,11 +137,12 @@ In this task, we will use RDP to connect to a Windows virtual machine.
 
 ## Task 6 - Use SSH to connect to a Linux VM (optional)
 
-**Note:** This task requires a Linux VM. Ensure port 22 is open. 
+> [!NOTE] 
+> This task requires a Linux VM. Ensure port 22 is open. 
 
 In this task, we will create a SSH private key with PuTTYgen, and then use SSH to connect to a Linux virtual machine. 
 
-**Create the SSH Keys**
+### Create the SSH Keys
 
 1. Download the PuTTY tool. This will include PuTTYgen - [https://putty.org/](https://putty.org/). 
 1. Once installed, locate and open the **PuTTYgen** program.
@@ -149,7 +154,7 @@ In this task, we will create a SSH private key with PuTTYgen, and then use SSH t
 1. Click **Save private key**.
 1. Choose a location and filename and click **Save**. You will need this file to access the VM. 
 
-**Create the Linux machine and assign the public SSH key**
+### Create the Linux machine and assign the public SSH key
 
 1. In the portal navigate to your Linux machine. 
 1. Choose **SSH Public Key** for the **Authentication type** (instead of **Password** ).
@@ -160,7 +165,7 @@ In this task, we will create a SSH private key with PuTTYgen, and then use SSH t
 1. From the **Overview** blade, click **Connect**.
 1. Make a note of your login information including user and public IP address.
 
-**Access the server using SSH**
+### Access the server using SSH
 
 1. Open the **PuTTY** tool.
 1. Enter **username@publicIpAddress** where username is the value you assigned when creating the VM and publicIpAddress is the value you obtained from the Azure portal.
