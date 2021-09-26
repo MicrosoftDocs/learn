@@ -56,7 +56,9 @@ During the process, you'll:
 
    :::code language="bicep" source="code/4-template.bicep" range="15" :::
 
-   As you type, notice that the Bicep extension for Visual Studio Code helps you to scaffold the module declaration. When you type the path to your module and type the `=` character, it displays a popup with several options will appear. Select the **Required properties** item:
+   As you type, notice that the Bicep extension for Visual Studio Code helps you to scaffold the module declaration. When you type the path to your module and type the `=` character, it displays a popup with several options will appear.
+
+1. Select the **Required properties** item from the popup menu:
 
    :::image type="content" source="../media/4-module-scaffold.png" alt-text="Screenshot of Visual Studio Code showing the option to scaffold a module with its required properties.":::
 

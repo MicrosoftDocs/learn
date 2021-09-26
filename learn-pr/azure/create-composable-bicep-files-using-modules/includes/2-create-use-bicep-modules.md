@@ -26,7 +26,7 @@ After you've created a set of modules, you can compose them together. For exampl
 
 ### Functionality
 
-Occasionally, you might need to use modules to access certain functionality. For example, suppose you submit a subscription-scoped deployment and want to also deploy some resources to a resource group in the same deployment. You need to use a module when you define the resources that should be deployed to the resource group.
+Occasionally, you might need to use modules to access certain functionality. For example, suppose you submit a subscription-scoped deployment and want to also deploy some resources to a resource group in the same deployment. You need to use a module when you define the resources that should be deployed to the resource group. Or, if you want to deploy multiple copies of a set of resources, then you can use a module loop to do this.
 
 ## Create a module
 
@@ -43,6 +43,13 @@ The Bicep visualizer can help you to put your whole Bicep file in perspective. T
 TODO screenshot of visualizer
 
 You can use the visualizer to help you to split your files up. Consider whether the visualization illustrates any clusters of resources. These might make sense to be moved into a module together.
+
+### Nest modules
+
+Modules can include other modules. By doing this, you can create some modules that deploy small sets of resources, and compose these into larger modules that define complex topologies of resources. A template then combines these pieces into a deployable artifact.
+
+> [!TIP]
+> It's helpful to think of Bicep modules as building blocks, which can be combined together in different ways to support your deployments.
 
 ### Filenames
 
@@ -70,6 +77,8 @@ A module definition includes the following components:
 - The module path. This is typically the path to a Bicep file on your local file system. In a future Microsoft Learn module, you'll learn about how you can share modules byu using registries and template specs, which have their own module path formats.
 - The `name` property, which specifies the name of the deployment. You'll learn more about deployments in the next section.
 - The `params` property, where you can specify values for the parameters that the module expects. You'll learn more about module parameters in the next unit.
+
+When your Bicep file is transpiled, or converted to a JSON file for deployment, the modules are embedded into the JSON file. Regardless of how many modules you include in your template, only a single JSON file will be created.
 
 ## Deployments
 
