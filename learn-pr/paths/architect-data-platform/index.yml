@@ -33,7 +33,5 @@ modules:
 - learn.create-cosmos-db-for-scale
 - learn.distribute-data-globally-with-cosmos-db
 - learn.access-data-with-cosmos-db-and-sql-api
-- learn.data-ai.design-azure-sql-data-warehouse
-- learn.data-ai.import-data-into-asdw-with-polybase
 trophy:
   uid: learn.architect-data-platform.trophy
