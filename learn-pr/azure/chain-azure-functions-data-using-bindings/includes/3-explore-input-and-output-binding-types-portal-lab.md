@@ -199,7 +199,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. Select **Create**. The **HttpTrigger1** pane for your *Function* appears.
 
-1. In the top menu bar, select **Get Function URL**. The **Get Function URL** dialog box appears.
+1. In the top menu bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
 1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL.
 
