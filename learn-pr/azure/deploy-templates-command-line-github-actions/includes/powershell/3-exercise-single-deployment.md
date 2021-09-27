@@ -16,22 +16,21 @@
 1. Change your active subscription to the Concierge Subscription. Be sure to substitute `{Your subscription ID}` with the ID of the Concierge Subscription that you got in the previous command.
 
     ```powershell
-    $context = Get-AzSubscription -SubscriptionId {Your subscription ID}
-    Set-AzContext $context
+    $context = Get-AzSubscription -SubscriptionName "Concierge Subscription" | Set-AzContext
     ```
 
 ### Set the default resource group
 
-You now need to set the resource group created for you in the sandbox as the default resource group. To perform that operation, you first need to get the resource group name by using the following command:
+You now need to set the resource group created for you in the sandbox as the default resource group. To perform that operation, you first need to get the resource group name by running the following command.
 
 ```powershell
-Get-AzResourceGroup
+Get-AzResourceGroup | where-object ResourceGroupName -match "learn" | Set-AzDefault
 ```
 
 In this command, use the resource name that you got from the previous command. (It looks like something like `learn-a73131a1-b618-48b8-af70-21af7ca420c4`.) This command allows you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
 
 > [!NOTE]
-> Normally, when you use a PowerShell or Azure CLI command to deploy a template, you need to specify the target resource group name. In the exercise in this module, we're bypassing this requirement by setting the context of our deployment. We're specifying our sandbox resource group name in the next step by using the [Set-AzDefault](/powershell/module/az.accounts/set-azdefault?azure-portal=true&view=azps-4.5.0) PowerShell command:
+> Normally, when you run a PowerShell or Azure CLI command to deploy a template, you must specify the target resource group name. Running the previous command, we've set the context of our deployment. We've specified our sandbox resource group name by running the [Set-AzDefault](/powershell/module/az.accounts/set-azdefault?azure-portal=true&view=azps-4.5.0) PowerShell command:
 >
 > ```powershell
 > Set-AzDefault -ResourceGroupName {Resource Group Name}
