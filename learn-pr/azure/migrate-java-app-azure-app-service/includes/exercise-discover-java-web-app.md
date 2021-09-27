@@ -40,7 +40,7 @@ The App Containerization helper tool connects remotely to the application server
 
     ![Screenshot for discovered Java web application.](../media/discovered-app.png)
 
-5. Use the checkbox to select the **airsonic** application to containerize.
+5. Use the checkbox to select the **Airsonic** application to containerize.
 6. **Specify container name**: Specify a name for the target container for each selected application. The container name should be specified as <*name:tag*> where the tag is used for container image. For example, you can specify the target container name as *airsonictest:v1*.   
 
 ### Parameterize application configurations
