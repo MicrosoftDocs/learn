@@ -145,4 +145,4 @@ You can compare your code with the prepared solution in this [Rust Playground][R
 
 [RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=c76ec6ab0bca6572dda78ded96d90faa?azure-portal=true
 [RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=218fec0300bf94b1aeb8178d9db62050?azure-portal=true
-[Rust-cargo]: https://docs.microsoft.com/en-us/learn/modules/rust-set-up-environment/5-hello-world?azure-portal=true
+[Rust-cargo]: https://docs.microsoft.com/learn/modules/rust-set-up-environment/5-hello-world?azure-portal=true
