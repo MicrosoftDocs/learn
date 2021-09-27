@@ -55,8 +55,8 @@ The client is responsible for establishing a connection to the server's endpoint
 
 For more information, see [ASP.NET Core SignalR supported platforms](/aspnet/core/signalr/supported-platforms).
 
-With a hub connection instance that's started successfully, messages flow freely in both directions. Users are free to communicate notifications to the server, as well as receive notifications from the server. Clients are *not* limited to web browsers.
+With a hub connection instance that's started successfully, messages flow freely in both directions. Users are free to communicate notifications to the server, as well as receive notifications from the server. Clients are any connected application, such as but not limited to; web browsers, mobile app, and desktop apps.
 
 #### Users
 
-A user in the system acts as an individual, but they can also be part of a group. Messages can be sent to groups, and all group members will be notified.
+A user in the system acts as an individual, but they can also be part of a group. Messages can be sent to groups, and all group members will be notified. A single user can connect from multiple client applications, for example; as a use you may login on your mobile device and a web browser.

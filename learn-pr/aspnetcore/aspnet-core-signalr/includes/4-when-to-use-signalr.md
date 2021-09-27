@@ -25,14 +25,22 @@ SignalR is not a replacement for traditional HTTP requests. Applications could l
 
 Good candidates for SignalR:
 
-- Apps that require high frequency updates from the server. Examples are gaming, social networks, voting, auction, maps, and GPS apps.
-- Dashboards and monitoring apps. Examples include company dashboards, live maps, instant sales updates, or travel alerts.
-- Collaborative apps. Whiteboard apps and team meeting software are examples of collaborative apps.
-Apps that require notifications. Social networks, email, chat, games, travel alerts, and many other apps use notifications.
-
-## Parts working together
-
-
-
-## Apply to scenario
-
+- Apps that require high frequency updates from the server:
+  - Gaming
+  - Social networks
+  - Voting
+  - Auction
+  - GPS apps
+- Dashboards and monitoring apps:
+  - Company dashboards
+  - Live maps
+  - Instant sales updates
+  - Travel alerts
+- Collaborative apps:
+  - Whiteboard apps
+  - Team meeting software are examples of collaborative apps.
+- Apps that require notifications:
+  - Email
+  - Chat
+  - Turn-based games
+  - Time series reporting
