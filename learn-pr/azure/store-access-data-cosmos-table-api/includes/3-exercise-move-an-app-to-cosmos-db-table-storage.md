@@ -75,7 +75,7 @@ Next, you will configure the lenses app with the connection string of the storag
    cd lensesapp/dotnet
    ```
 
-1. Verify the *Azure.Data.Tables* SDK package has been added tto the project. This package enables a .NET application to access Azure Storage Tables or the Azure Cosmos DB Table API.
+1. Verify the ***Azure.Data.Tables*** SDK package has been added tto the project. This package enables a .NET application to access Azure Storage Tables or the Azure Cosmos DB Table API.
 
    ```bash
    dotnet list package   
@@ -118,7 +118,6 @@ We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's
    You should see a display that is similar to the following.
 
    ```
-   DisplayTable
    Reading the contents of the Lenses table...
    | Lens Type | Part Number | Focal Length | Aperture |
    |     Macro |      X10028 |        100mm |     f2.8 |
@@ -215,7 +214,6 @@ Let's use the app to populate a table with lenses and then add our own lens entr
    You should see a display that is similar to the following.
 
    ```
-   DisplayTable
    Reading the contents of the Lenses table...
    1: Lens Type (PartitionKey): Macro  Part Number (RowKey): X10028  Focal Length: 100mm  Aperture: f2.8
    2: Lens Type (PartitionKey): Prime  Part Number (RowKey): X5018  Focal Length: 50mm  Aperture: f1.8
@@ -321,7 +319,6 @@ Now that you have changed the app to use the Azure Cosmos DB database, let's see
    There should be no entries in the table, because you have not yet migrated the data.
    
    ```
-   DisplayTable
    Reading the contents of the Lenses table...
    | Lens Type | Part Number | Focal Length | Aperture |
    ```
