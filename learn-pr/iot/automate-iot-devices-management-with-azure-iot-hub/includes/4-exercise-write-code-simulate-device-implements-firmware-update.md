@@ -2,17 +2,17 @@ At the end of this unit, you'll have a device simulator awaiting for a firmware 
 
 ## Create the device simulator app
 
-1. In the following we will be using the sandbox with the Azure Shell, but you can use Visual Studio Code on your local machine to do the same. If you decide to use Visual Studio Code locally, you need to ensure both [.NET Core](https://dotnet.microsoft.com/download), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
+1. In the following unit, we'll be using the sandbox with Azure Cloud Shell, but you can use Visual Studio Code on your local machine to do the same. If you decide to use Visual Studio Code locally, you need to ensure both [.NET Core](https://dotnet.microsoft.com/download), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
 
-1. In the Azure Shell terminal, create a folder called **fwupdatedevice** and navigate to it:
+1. In Cloud Shell, create a folder called **fwupdatedevice**, and go to it:
 
     ```bash
     mkdir fwupdatedevice
     cd fwupdatedevice
 
     ```
-    
-1. Enter the below commands in the terminal. The first command creates a **Program.cs** file in your folder, along with a project file and the second one gives your app access to the required .NET packages.
+
+1. Run the following commands in Cloud Shell. The first command creates a **Program.cs** file in your folder, along with a project file, and the second one gives your app access to the required .NET packages.
 
     ```bash
     dotnet new console
@@ -20,7 +20,7 @@ At the end of this unit, you'll have a device simulator awaiting for a firmware 
 
     ```
 
-1. In the terminal, install the required libraries using the following commands:
+1. In Cloud Shell, install the required libraries by running the following commands:
 
     ```bash
     dotnet add package Microsoft.Azure.Devices.Client
@@ -33,7 +33,7 @@ At this point, your project is ready for coding.
 
 ## Add code to your app
 
-1. Open the **Program.cs** file for the device app typing the following command in the Azure shell:
+1. Open the **Program.cs** file for the device app by running the following command in Cloud Shell:
 
     ```bash
     code Program.cs
@@ -253,9 +253,8 @@ At this point, your project is ready for coding.
     ```
 
     > [!NOTE]
-    > Read through the comments in the code, noting how the device reacts to device twin changes to execute a firmware update based on the configuration shared in the desired Property "firmware". You can also note the function that will report the current firmware update status through the reported properties of the device twin.
+    > Read all the comments in the code, noting how the device reacts to device twin changes. These changes run a firmware update based on the configuration shared in the desired Property *firmware*. Also note the function that will report the current firmware update status through the reported properties of the device twin.
 
+1. Save the **Program.cs** file, and close the editor (to close the editor, find the ellipse **...** menu on the right-hand side of the editor).
 
-1. Save the **Program.cs** file and close the editor (to close the editor, find the ellipse "..." menu on the right-hand side of the editor).
-
-Your device is now ready to be managed from IoT Hub. In the next unit, we will test that the firmware update process works as expected for this simulated device.
+Your device is now ready to be managed from IoT Hub. In the next unit, we'll test that the firmware update process works as expected for this simulated device.
