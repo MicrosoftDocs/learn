@@ -18,7 +18,7 @@ winget search powershell
 
 Which would return a list of software relating to PowerShell.  The results display the Name of the software, the ID that is used to uniquely identify each. 
 
- ![Windows Package Manager search results for PowerShell](../media/wingetsearchresults.PNG)
+ ![Windows Package Manager search results for PowerShell](../media/winget-search-results.png)
 
 ## Install software
 
@@ -83,7 +83,7 @@ If you wished to uninstall the Azure Storage Explorer tool, you should issue the
 ```CMD
 winget uninstall Microsoft.AzureStorageExplorer
 ```
- ![Windows Package Manager uninstall command](../media/wingetuninstall.PNG)
+ ![Windows Package Manager uninstall command](../media/winget-uninstall.png)
 
 #### Options
 

@@ -1,4 +1,4 @@
-## Getting Involved
+## Getting involved
 
 If you’ve ran the **winget search <somepackage>** command and not found the package or piece of software that you want to install, then you can help to add it to the repository to help you and others in the future.
 First, you need to check the following things:
@@ -16,7 +16,7 @@ You can start from scratch creating your own manifest files, however there is a 
 winget install microsoft.wingetcreate
 ```
 
-## Getting Started
+## Getting started
 
 To kick start you should enter the command **wingetcreate new**
 
@@ -24,27 +24,27 @@ The tool will prompt you for the URL or URLs of the software package, this shoul
 
 The tool will start to query the file and pull out some information. It will start by suggesting a package identifier, package version, default language, the architecture the package will install on (think x86, x64, etc.), publisher name, package name, package license and a description for the package.  All this information helps people find and install the software.
 
-### Custom Silent Switches
+### Custom silent switches
 
 If the piece of software, you are trying to package up requires a bespoke install switch to make it install silently without any user input you can configure the Windows Package Manager Manifest Creator tool should prompt you for that information, but equally you can manually edit that information within the *installer.yaml* file.
 
 If we take the VMware Workstation Player as an example, we can see within its installer.yaml file it has a couple of configuration lines:
 
- ![VMware Workstation Player Installer File](../media/vmwareinstallerfile.PNG)
+ [![VMware Workstation Player Installer File](../media/vmware-installer-file.png)](../media/vmwareinstallerfile.PNG#lighbox)
 
 ### Tags
 
 Another thing that can be done when submitting is adding in tags in your manifest files.  Tags will help packages/software be found when folks are searching through the winget search command.
 
-![Windows Package Manager Audio Search Results](../media/wingetsearchaudio.PNG)
+![Windows Package Manager Audio Search Results](../media/winget-search-audio.png)
 
 Below is a screenshot of what the tags input looks like within the yaml file: 
 
-![VideoLAN Yaml Tags](../media/vlcyamltags.PNG)
+[![VideoLAN Yaml Tags](../media/videolan-yaml-tags.png)](../media/vlcyamltags.PNG#lightbox)
 
 These tags help expand the search results beyond the software maker or name of the software.
 
-### Validating and Testing
+### Validating and testing
 
 Now that you’ve setup the manifest files it’s time to validate them and test they work as they should before you are ready to submit to the repository.
 
@@ -86,7 +86,7 @@ This will create a repository store within you GitHub profile and then create a 
 
 When that command is complete, it will open a browser session to the pull request (PR). Here you will be asked to complete a checklist.
 
- ![Windows Package Manager contributor checklist](../media/contributorchecklist.PNG)
+ ![Windows Package Manager contributor checklist](../media/contributor-checklist.png)
 
 It will also start to kick off some automated tests, validating the manifest and testing it does what it should do.  You can close your browser and check on this later, or you can watch it update its progress.
 

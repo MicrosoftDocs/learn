@@ -4,13 +4,12 @@ title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: "Knowledge Check"
-  ms.date: 09/26/2021
+  ms.date: 09/27/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
@@ -26,7 +25,7 @@ quiz:
     - content: "Windows 10 Enterprise"
       isCorrect: false
       explanation: "Windows Package Manager works on Windows 10 version 1809 and above."
-  - content: "What command would you use to install Microsoft Teams for everyone using the computer?"
+  - content: "What command is used to install Microsoft Teams for everyone using the computer?"
     choices:
     - content: "winget install microsoft.teams --location"
       isCorrect: false
@@ -37,7 +36,7 @@ quiz:
     - content: "winget install microsoft.teams --machine"
       isCorrect: false
       explanation: "This command is the incorrect syntax to use."
-  - content: "Which command would you use to install Windows Admin Center to a custom location?"
+  - content: "Which command is used to install Windows Admin Center to a custom location?"
     choices:
     - content: "winget install microsoft.windowsadmincentre --log \"M:\\Program Testing\\WindowsAdminCentre\""
       isCorrect: false

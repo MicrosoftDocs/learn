@@ -6,7 +6,7 @@ These policies will give you the power to enable Windows Package Manager, contro
 
 Below is a screenshot of the Group Policy settings available to configure within the Group Policy Management Editor
 
- ![Windows Package Manager Group Policy Settings](../media/wingetgpo.PNG)
+ [![Windows Package Manager Group Policy Settings](../media/winget-gpo.png)](../media/wingetgpo.PNG#lightbox)
 
 ## Group Policy settings
 Any policies that have been enabled or configured will be shown when a user executes **winget --info**. The goal is to assist users in troubleshooting unexpected behaviors they may encounter in the Windows Package Manager because of any policies that are enabled or configured. For example, a user may attempt to modify a setting controlled by policy and not be able to understand why the device does not appear to honor their setting.
@@ -18,7 +18,7 @@ If you enable or do not configure this setting, users will be able to use the Wi
 
 If you disable this setting, users will not be able to use the Windows Package Manager.
 
- ![Windows Package Manager Disabled through Group Policy](../media/wingetdisabled.PNG)
+ ![Windows Package Manager Disabled through Group Policy](../media/winget-disabled.png)
 
 ### Enable App Installer settings
 This policy controls whether users can change their settings. The settings are stored inside of a .json file on the user’s system. It may be possible for users to gain access to the file using elevated credentials. This will not override any policy settings that have been configured by this policy.

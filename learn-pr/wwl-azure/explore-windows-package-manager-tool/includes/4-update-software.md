@@ -2,7 +2,7 @@
 
 Windows Package Manager has a command that can help identify which pieces of software have an update available.  The **winget upgrade** command will list out the software that is available for an upgrade through Windows Package Manager.
 
- ![Windows Package Manager upgrade command](../media/wingetupgrade.PNG)
+ ![Windows Package Manager upgrade command](../media/winget-upgrade.png)
 
 In the above example we can see the software that is installed, the version installed and the newer version that can be installed.
 
@@ -18,7 +18,7 @@ In that case we would issue the command:
 winget upgrade microsoft.bicep
 ```
 
- ![Windows Package Manager upgrade Microsoft Bicep](../media/wingetbicepupdate.PNG)
+ ![Windows Package Manager upgrade Microsoft Bicep](../media/winget-bicep-update.png)
 
 Which would result in the latest version being installed of Microsoft Bicep.
 

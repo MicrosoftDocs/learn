@@ -8,7 +8,7 @@ The Windows Package Manager is an open-source tool that is capable to be used by
 
 The tool has the capabilities to allow the Enterprise environment to control how their end users interact with this tool and ensure it works for the organization.
 
-## Learning Objectives
+## Learning objectives
 
 After completing this module, you'll be able to:
 
