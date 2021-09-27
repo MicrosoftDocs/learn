@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.introduction-to-git.7a-knowledge-check
+uid: learn.student-evangelism.introduction-to-git.4-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -58,14 +58,3 @@ quiz:
     - content: "`git help`"
       isCorrect: true
       explanation: "Correct! Use `git help` to view information about how to use Git."
-  - content: 'What Git commands can be used to correct mistakes?'
-    choices:
-    - content: "`git reset` and `git recover`"
-      isCorrect: false
-      explanation: "Incorrect. `git recover` is not a recognized command in Git."
-    - content: "`git reset` and `git revert`"
-      isCorrect: true
-      explanation: "Correct! You can use `git reset` and `git revert` to recover from and correct mistakes in Git."
-    - content: "`git revert` and `git remove`"
-      isCorrect: false
-      explanation: "Incorrect. `git remove` is not a recognized command in Git. The recognized command to remove a commit is `git rm`."      
