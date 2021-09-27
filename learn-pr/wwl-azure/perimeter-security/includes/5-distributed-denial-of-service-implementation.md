@@ -13,7 +13,7 @@ DDoS Protection Standard monitors actual traffic utilization and constantly comp
 During mitigation, DDoS Protection redirects traffic sent to the protected resource and performs several checks, including:
 
 * Helping ensure that packets conform to internet specifications and aren’t malformed.
-* Interacting with the client to determine if the traffic might be a spoofed packet (for example, using SYN Auth or SYN Cookie or dropping a packet for the source to retransmit it).
+* Interacting with the client to determine if the traffic might be a spoofed packet (for example, using `SYN Auth` or `SYN Cookie` or dropping a packet for the source to retransmit it).
 * Using rate-limit packets if it can’t perform any other enforcement method.
 
 DDoS Protection blocks attack traffic and forwards the remaining traffic to its intended destination. Within a few minutes of attack detection, you’ll be notified with Azure Monitor metrics. By configuring logging on DDoS Protection Standard telemetry, you can write the logs to available options for future analysis. Azure Monitor retains metric data for DDoS Protection Standard for 30 days.
