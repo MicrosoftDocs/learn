@@ -2,7 +2,7 @@ As organizations grow, the projects that they take on grow with them. For exampl
 
 You decide to build a website that lets you and your friends share pictures of your cats, so you can continue learning Git in a fun environment before bringing that knowledge to work. You set out to build the site by using Git to keep track of changes.
 
-In this module, you'll get to start your own project in Git and gain some practice editing some errors that might exist in your code. Git can surely seem confusing when you first start, but as you gain more practice working with it you will be able to navigate it smoothly. 
+In this module, you'll get to start your own project in Git and gain some practice editing some errors that might exist in your code. Git can surely seem confusing when you first start, but as you gain more practice working with it you will be able to navigate it smoothly.
 
 ## Learning objectives
 
@@ -15,4 +15,4 @@ By the end of this module, you'll:
 
 ## Prerequisites
 
-[Intro to Git Module](../../intro-to-git/index.yml)
+[Intro to Git module](../../intro-to-git/index.yml)
