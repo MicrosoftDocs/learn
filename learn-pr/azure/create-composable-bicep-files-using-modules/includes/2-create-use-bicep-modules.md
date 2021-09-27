@@ -24,6 +24,9 @@ After you've created a set of modules, you can compose them together. For exampl
 
 :::image type="content" source="../media/2-compose.png" alt-text="Diagram showing a template referencing 2 modules and passing the output from one to the parameter of another." border="false":::
 
+> [!TIP]
+> It's helpful to think of Bicep modules as building blocks, which can be combined together in different ways to support your deployments.
+
 ### Functionality
 
 Occasionally, you might need to use modules to access certain functionality. For example, suppose you submit a subscription-scoped deployment and want to also deploy some resources to a resource group in the same deployment. You need to use a module when you define the resources that should be deployed to the resource group. Or, if you want to deploy multiple copies of a set of resources, then you can use a module loop to do this.
@@ -57,7 +60,9 @@ For example, consider this visualization for a Bicep file. There are two distinc
 Modules can include other modules. By doing this, you can create some modules that deploy small sets of resources, and compose these into larger modules that define complex topologies of resources. A template then combines these pieces into a deployable artifact.
 
 > [!TIP]
-> It's helpful to think of Bicep modules as building blocks, which can be combined together in different ways to support your deployments.
+> Although it's possible to nest multiple layers of modules, it can get complex to do so. If you get an error or something else goes wrong, it's harder to work out what you need to fix when you have many layers of nesting.
+>
+> For complex deployments, sometimes it makes sense to use deployment pipelines to deploy multiple templates instead of creating a single template that does everything with nesting. You'll learn more about deployment pipelines in a future Microsoft Learn module.
 
 ### Filenames
 
@@ -82,7 +87,7 @@ A module definition includes the following components:
 
 - The `module` keyword.
 - A symbolic name. This name is used within this Bicep file whenever you want to refer to the module. The symbolic name never appears in Azure.
-- The module path. This is typically the path to a Bicep file on your local file system. In a future Microsoft Learn module, you'll learn about how you can share modules byu using registries and template specs, which have their own module path formats.
+- The module path. This is typically the path to a Bicep file on your local file system. In a future Microsoft Learn module, you'll learn about how you can share modules by using registries and template specs, which have their own module path formats.
   > [!TIP]
   > You can also use a JSON ARM template as a module. This can be helpful if you have a set of templates that you haven't yet migrated to Bicep.
 - The `name` property, which specifies the name of the deployment. You'll learn more about deployments in the next section.
