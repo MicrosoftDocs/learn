@@ -6,7 +6,7 @@ For this solution, root of trust will be deployed using Windows Autopilot techno
 > [!div class="mx-imgBorder"]
 > ![Process flow diagram that shows that hardware is most secure, when purchased from a trusted OEM that uses Autopilot to provision the device before delivery; then stong security polices are enforced through-out its usage](../media/secure-workstation-deployment-flow.png)
 
-## Hardware Root-of-Trust
+## Hardware root-of-trust
 
 To have a secured workstation you need to make sure the following security technologies are included on the device:
 
@@ -21,7 +21,7 @@ To have a secured workstation you need to make sure the following security techn
 - System Guard
 - Modern Standby
 
-## Levels of Device Security
+## Levels of device security
 
 | Device Type | Common usage scenario | Permitted activities | Security guidance |
 | :--- | :--- | :--- | :--- |
@@ -34,7 +34,7 @@ This chart shows the level of device security controls based on how the device w
 > [!div class="mx-imgBorder"]
 > ![Chart with three levels of device security across the top - Enterprise, Specialized, and Privileged.  Then content of the chart explore what security settings should be used for each.  This data is covered in the table included in the content below.](../media/secure-workstations-levels.png)
 
-## Device Security Controls
+## Device security controls
 
 A secure workstation requires it be part of an end-to-end approach including device security, account security, and security policies applied to the device at all times.  Here are some common security measures you should consider implementing based on the users needs.  Using a device with security measures directly aligned to the security needs of it users is the more secure solution.
 

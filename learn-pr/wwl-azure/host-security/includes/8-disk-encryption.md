@@ -1,5 +1,5 @@
 
-**Azure Disk Encryption for Windows VMs** helps protect and safeguard your data to meet your organizational security and compliance commitments. It uses the Bitlocker feature of Windows to provide volume encryption for the OS and data disks of Azure virtual machines (VMs), and is integrated with Azure Key Vault to help you control and manage the disk encryption keys and secrets.
+**Azure Disk Encryption for Windows VMs** helps protect and safeguard your data to meet your organizational security and compliance commitments. It uses the BitLocker feature of Windows to provide volume encryption for the OS and data disks of Azure virtual machines (VMs), and is integrated with Azure Key Vault to help you control and manage the disk encryption keys and secrets.
 
 > [!div class="mx-imgBorder"]
 > ![A virtual machine uses storage with keys protected in a key vault.](../media/az500-disk-encryption.png)
@@ -63,4 +63,4 @@ Once the OS disk encryption process is complete on Linux virtual machines, the V
 Azure Disk Encryption is also available for VMs with premium storage.
 Azure Disk Encryption is not available on Generation 2 VMs and Lsv2-series VMs. 
 
-Azure Disk Encryption requires the dm-crypt and vfat modules to be present on the system. Removing or disabling vfat from the default image will prevent the system from reading the key volume and obtaining the key needed to unlock the disks on subsequent reboots. System hardening steps that remove the vfat module from the system are not compatible with Azure Disk Encryption
+Azure Disk Encryption requires the dm-crypt and `vfat` modules to be present on the system. Removing or disabling `vfat` from the default image will prevent the system from reading the key volume and obtaining the key needed to unlock the disks on subsequent reboots. System hardening steps that remove the vfat module from the system are not compatible with Azure Disk Encryption

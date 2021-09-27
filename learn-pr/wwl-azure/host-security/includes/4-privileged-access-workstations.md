@@ -46,7 +46,7 @@ This figure depicts a simple control relationship. Any subject in control of an 
 
 The administrative session on the jump server relies on the integrity of the local computer accessing it. If this computer is a user workstation subject to phishing attacks and other internet-based attack vectors, then the administrative session is also subject to those risks.
 
-While some advanced security controls like multi-factor authentication can increase the difficulty of an attacker taking over this administrative session from the user workstation, no security feature can fully protect against technical attacks when an attacker has administrative access of the source computer (e.g. injecting illicit commands into a legitimate session, hijacking legitimate processes, and so on.)
+While some advanced security controls like multifactor authentication can increase the difficulty of an attacker taking over this administrative session from the user workstation, no security feature can fully protect against technical attacks when an attacker has administrative access of the source computer (e.g. injecting illicit commands into a legitimate session, hijacking legitimate processes, and so on.)
 
 The default configuration in this PAW guidance installs administrative tools on the PAW, but a jump server architecture can also be added if required.
 
