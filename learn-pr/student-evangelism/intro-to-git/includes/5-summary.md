@@ -8,7 +8,6 @@ You learned:
 - How to configure Git.
 - Some basic Git commands.
 
-
 At this point, you know enough about Git to use version control by yourself on a basic project. Collaboration with other developers is where version control shines. Check out the other modules in this learning path for more about using Git with others!
 
 ### Resources

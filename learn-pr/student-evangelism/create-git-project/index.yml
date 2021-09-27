@@ -14,7 +14,7 @@ abstract: |
   In this module you will:
   - Learn how to create a new Git Project
   - Understand how to track changes in Git
-iconUrl: /learn/achievements/create-git-project.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:

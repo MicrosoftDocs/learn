@@ -32,7 +32,7 @@ units:
 - learn.student-evangelism.introduction-to-git.1-what-is-vc
 - learn.student-evangelism.introduction-to-git.2-exercise-configure-git
 - learn.student-evangelism.introduction-to-git.3-basic-git-commands
-- learn.student-evangelism.introduction-to-git.4-knowledge-check
-- learn.student-evangelism.introduction-to-git.5-summary
+- learn.student-evangelism.introduction-to-git.7a-knowledge-check
+- learn.student-evangelism.introduction-to-git.8-summary
 badge:
   uid: learn.student-evangelism.introduction-to-git.badge
