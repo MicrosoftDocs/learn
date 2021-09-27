@@ -1,4 +1,4 @@
-The next step to developing a sense of belonging in your team, you'll want to make sure everyone on your team feels included. You'll examine some of the challenges for tech spaces when it comes to climate, biases, and inclusivity.
+For the next step to developing a sense of belonging in your team, you'll want to make sure everyone on your team feels included. You'll examine some of the challenges for tech spaces when it comes to climate, biases, and inclusivity.
 
 ## How climate influences a sense of belonging
 
@@ -18,7 +18,7 @@ In the past, the field of tech has had many challenges when it comes to creating
 
 - Far fewer women than men.
 
-- Far fewer percentages of people who are Black or Latinx than people who are white.
+- Far lower percentage of people who are Black or Latinx than people who are white.
 
 Challenges like these narrow the range of backgrounds and lived experiences in tech. This fact is a problem because diverse teams are essential.
 
@@ -37,15 +37,17 @@ Historically, many people have various biases towards who "should be" in tech, w
 
 ### Preconceptions of who should be in tech
 
-Belonging isn't always about whether you believe you can do something. It's also about whether you consider yourself as a "tech person." This component of belonging is related to mindset: the static idea of a "tech person" can indicate a fixed mindset about who is in tech. There are common preconceptions about who is in tech or who should be in tech, such as the idea that men and people of Asian descent are better at math than women. Most of these preconceptions have been challenged in recent years, through equality laws, changed hiring practices, literature, and media.
+Belonging isn't always about whether you believe you can do something. It's also about whether you consider yourself as a "tech person." This component of belonging is related to mindset: the static idea of a "tech person" can indicate a fixed mindset about who is in tech. There are common preconceptions about who is in tech or who should be in tech, such as the idea that people of Asian decent and men are better at math when compared to women. Most of these preconceptions have been challenged in recent years, through equality laws, changed hiring practices, literature, and media.
 
 :::image type="content" source="../media/4-why-are-they-here.png" alt-text="Illustration showing a person being greeted by another person, and thinking, 'Why are they here?'" border="false":::
+
+<!-- This section is a duplicate of the content in the next unit.
 
 ### Reflect on your own assumptions of who should be in tech
 
 Whether hidden or overt, your biases and assumptions can direct your actions, thoughts, and feelings towards others.
 
-- Can you think of a time when you made an assumption about your ability to succeed because you either did or didn't think of yourself as a "tech person"?
+- Can you think of a time when you made an assumption about your ability to succeed because you either did or didn't think of yourself as a "tech person?"
 
 - Have you ever made an assumption about someone else's ability to succeed in tech?
 
@@ -65,6 +67,8 @@ Reflect on the following questions that pertain to diversity in tech. Optionally
 
 - In your assessment, what are the strengths and limitations of different initiatives? And why?
 
+-->
+
 ### Make computer science more inclusive
 
 While changes are being made to make computer science more accessible and inclusive, there's still much work to be done. It's everyone's responsibility to promote and foster a culture of inclusivity and belongingness. Here are some things you can do to continue cultivating accessibility and inclusiveness in your own spaces:
@@ -81,7 +85,7 @@ To change the climate in your collaborations and community, you can:
 
 - Examine your own assumptions and biases.
 
-- Notice if you might subconsciously view some people differently.
+- Check to see whether there might be subconscious factors that influence how you view certain people.
 
 - Recognize the value of others' perspectives and ideas.
 

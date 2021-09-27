@@ -2,7 +2,7 @@ To further help your team cultivate a climate of belonging, you'll examine why b
 
 ## Why you need to foster a climate of belonging in tech
 
-It's important to foster a climate of belonging in tech because people who feel like they belong in tech are more effective. They contribute more and are more motivated to persist through challenges. People who don't feel like they belong are more likely to quit tasks, leave projects they find challenging, or leave tech altogether.
+It's important to foster a climate of belonging in tech because people who are more effective when they feel like they belong. They contribute more, and they are motivated to persist through challenges. People who don't feel like they belong are more likely to quit tasks, leave projects they find challenging, or leave tech altogether.
 
 :::image type="content" source="../media/3-leaving-tech.png" alt-text="Illustration of a dejected person leaving a happy group of people who are gathered under a banner that reads, 'Tech.'" border="false":::
 

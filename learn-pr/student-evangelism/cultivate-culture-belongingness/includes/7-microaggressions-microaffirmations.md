@@ -38,11 +38,11 @@ Microaggressions can be subcategorized as:
 
 Research has demonstrated that microaggressions can take a toll on their recipients, including:
 
-- Anger and depression
+- Anger and depression.
 
-- The reduction of problem-solving capabilities and productivity
+- The reduction of problem-solving capabilities and productivity.
 
-- Physical and mental health problems
+- Physical and mental health problems.
 
 ### Microaggressions affect climate
 
@@ -105,7 +105,7 @@ An inquisitive question creates an opportunity for dialogue so everyone can disc
 
 Many microaggressions are born from implicit bias. You can become aware of moments when you have implicit bias to counter inappropriate behavior in yourself and others. You can also actively cultivate and practice micro-affirmations to counter it.
 
-Mindfully creating a culture that's more inclusive means making it:
+To mindfully create a more inclusive culture, try to help make it:
 
 - More welcoming.
 

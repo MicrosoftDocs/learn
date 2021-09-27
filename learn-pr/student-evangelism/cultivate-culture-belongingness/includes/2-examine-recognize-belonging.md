@@ -6,7 +6,7 @@ Exploring what it means to belong is an essential step on the path to living and
 
 ## Explore the concept of belonging
 
-Many people wonder, "Am I a tech person? Do I belong here?". Or they might ask themselves, "When do I get to call myself a developer?" Exploring what it means to belong is an essential step on the path to living and learning authentically. Although the tech industry is changing to become more accessible and inclusive, there's still work to be done. There are many factors that contribute to whether people in tech feel they have a place or a sense of belonging.
+Many people wonder, "Am I a tech person? Do I belong here?" Or they might ask themselves, "When do I get to call myself a developer?" Exploring what it means to belong is an essential step on the path to living and learning authentically. Although the tech industry is changing to become more accessible and inclusive, there's still work to be done. There are many factors that contribute to whether people in tech feel they have a place or a sense of belonging.
 
 Typically, people don't contribute fully when they feel they don't belong. To cultivate a climate of belonging in tech, you must proactively include and welcome people from a diverse range of backgrounds and lived experiences. You must also be aware of how your own subconscious biases, words, and actions affect feelings of belonging in others.
 
@@ -17,9 +17,7 @@ Belonging is different than "fitting in" and seeking approval from a group. Fitt
 Belonging is also not your aptitude. Meaning that, it's not about how skilled you are at your job or what kind of grades you have in school. Belonging means:
 
 - Being yourself.
-
 - Perceiving that others value and respect who you are.
-
 - Feeling that you are in the right space for you, which some describe as feeling "at home."
 
 ## Belonging
@@ -30,17 +28,17 @@ There are many factors that contribute to whether you feel you have a place or a
 
 ## Situations that affect your sense of belonging
 
-For many people, the following situations can affect their sense of belonging. Have you experienced any of them? How did they make you feel?
+For many people, the following situations can affect their sense of belonging. Have you experienced any of them? How did you feel when you were:
 
-- Feeling as though you need to be a certain way to fit into your computer science peer group
-- Deciding which companies to approach for a job
-- Preparing for a conversation with an industry professional
-- Finding a study group or project team
-- Answering a question in a group
-- Voicing your concerns on a group project
-- Volunteering to take the lead on a project
-- Wondering whether you belong on a team in response to a peer comment
-- Changing jobs
+- Sensing that you needed to be a certain way to fit into your computer science peer group.
+- Deciding which companies to approach for a job.
+- Preparing for a conversation with an industry professional.
+- Finding a study group or project team.
+- Answering a question in a group.
+- Voicing your concerns on a group project.
+- Volunteering to take the lead on a project.
+- Wondering whether you belong on a team in response to a peer comment.
+- Changing jobs.
 
 ## Reflect on feelings of not belonging
 

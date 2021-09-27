@@ -29,7 +29,7 @@ By the end of this module, you'll be able to:
 
 ## What is the main goal
 
-By the end of this module, you'll be able to"
+By the end of this module, you'll be able to:
 
 - Recognize a sense of belonging in yourself and others.
 - Describe why a climate of belonging is important in tech.

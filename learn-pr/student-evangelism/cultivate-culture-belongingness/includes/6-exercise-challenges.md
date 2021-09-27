@@ -1,10 +1,10 @@
-In this exercise, you'll reflect on some statements. If you find yourself thinking 'yes' to any of the questions, then it's a good indicator that it might affect your behavior in the workplace towards others.
+In this exercise, you'll reflect on some statements. A 'yes' answer to any of the questions is a good indicator that the situation might affect your behavior in the workplace towards others.
 
 ## Reflect on your own assumptions of who should be in tech
 
 Whether hidden or overt, your biases and assumptions can direct your actions, thoughts, and feelings towards others.
 
-- Can you think of a time when you made an assumption about your ability to succeed because you either did or didn't think of yourself as a "tech person"?
+- Can you think of a time when you made an assumption about your ability to succeed because you either did or didn't think of yourself as a "tech person?"
 
 - Have you ever made an assumption about someone else's ability to succeed in tech?
 
@@ -18,7 +18,7 @@ Reflect on the following questions that pertain to diversity in tech. Optionally
 
 - What value does diversity add to computer science as a field?
 
-- 'What is the cost or benefit to the field if computer science doesn't improve its diversity'? Why isn't the status quo advantageous?
+- What is the cost or benefit to the field if computer science doesn't improve its diversity? Why isn't the status quo advantageous?
 
 - What are some barriers to diversity in computer science? What kinds of initiatives are being developed to address these barriers?
 

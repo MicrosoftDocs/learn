@@ -64,7 +64,7 @@ Be aware of who's in the collaboration, and make sure everyone present has the o
 :::image type="content" source="../media/7-missing-perspectives.png" alt-text="Illustration of two stick figures hammering a new tech box, while the stick figure in the foreground asks, 'Are there missing perspectives?'" border="false":::
 
 > [!TIP]
-> Remember: Perspectives that differ from yours or from the group in general - often referred to as a *dissenting opinion* - can be extremely valuable. Don't underestimate the value of sharing thoughts or ideas. Someone's perspective might shine a light on an aspect that you or others overlooked.
+> Remember: A perspective that differs from yours or from the group in general - often referred to as a *dissenting opinion* - can be extremely valuable. Don't underestimate the value of sharing thoughts or ideas. Someone's perspective might shine a light on an aspect that you or others overlooked.
 
 ### Practice active listening
 
