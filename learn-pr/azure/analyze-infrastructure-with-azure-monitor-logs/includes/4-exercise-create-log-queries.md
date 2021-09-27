@@ -2,14 +2,13 @@ The operations team doesn't currently have enough information about the behavior
 
 In particular, the team is interested in monitoring security events to check for possible attempts to break into the system. An attacker might try to manipulate the applications running on the system, so the team also wants to gather application data for further analysis. An attacker might also try to halt the computers that compose the system, so the team wants to examine how and when machines are stopped and restarted.
 
-In this exercise, you'll practice performing Azure log queries against a demo project that contains sample data in tables, logs, and queries. Azure 
+In this exercise, you'll practice performing Azure log queries against a demo project that contains sample data in tables, logs, and queries. 
 
 ## Create basic Azure Monitor log queries to extract information from log data
 
-Let's use the **Azure Demo Logs pane** to practice writing queries. The demo project workspace is pre-populated with sample data. Azure offers an optimized SQL-like queries with visualization options of its data in a language called KQL (Kusto Query Language.). 
+Let's use the **Azure Demo Logs pane** to practice writing queries. The demo project workspace is pre-populated with sample data. Azure offers an optimized SQL-like queries with visualization options of its data in a language called KQL (Kusto Query Language.)
 
 1. Open the [Logs demo environment](https://portal.azure.com/learn.docs.microsoft.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade?azure-portal=true). In the top left corner, under New Query 1, you see **Demo** which identifies the workspace, or the scope of the query. The left side of this pane contains several tabs: Tables, Queries, Functions. The right side has a scratchpad for creating or editing queries.
-s
 1. On the **New Query 1** tab, enter a basic query on the first line of the scratchpad. This query retrieves the details of the ten most recent security events.
 
     ```kusto
