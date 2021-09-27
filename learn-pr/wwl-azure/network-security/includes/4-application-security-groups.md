@@ -3,7 +3,7 @@ In this topic we look at Application Security Groups (ASGs), which are built on 
 
 For each rule, you can specify source and destination, port, and protocol. You can enable network security group flow logs to analyze network traffic to and from resources that have an associated network security group.
 
-## ASGs
+## Application security groups
 
 ASGs enable you to configure network security as a natural extension of an application's structure. You then can group VMs and define network security policies based on those groups.
 
@@ -22,7 +22,7 @@ In the illustration, NIC1 and NIC2 are members of the AsgWeb ASG. NIC3 is a memb
 
 The rules that specify an ASG as the source or destination are only applied to the network interfaces that are members of the ASG. If the network interface is not a member of an ASG, the rule is not applied to the network interface even though the network security group is associated to the subnet.
 
-## ASGs have the following constraints
+## Application security groups have the following constraints
 
 * There are limits to the number of ASGs you can have in a subscription, in addition to other limits related to ASGs.
 

@@ -13,7 +13,7 @@ The service provider has following options to choose from for all Private Endpoi
 * **Reject**
 * **Remove**
 
-## Manage Private Endpoint Connections on Azure PaaS resources
+## Manage private endpoint connections on Azure PaaS resources
 
 Portal is the preferred method for managing private endpoint connections on Azure PaaS resources.
 

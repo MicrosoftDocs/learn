@@ -1,8 +1,8 @@
 Use this short Try-This exercises to get some hands-on experience with using Azure.
 
-## Task 1 - Network Security Groups
+## Task 1 - Network security groups
 
-**Note:** This task requires a Windows virtual machine associated with a network security group. The NSG should have an inbound security rule that allows RDP.  The virtual machine should be in a running state and have a public IP address. 
+   This task requires a Windows virtual machine associated with a network security group. The NSG should have an inbound security rule that allows RDP.  The virtual machine should be in a running state and have a public IP address. 
 
 In this task, we will review networking rules, confirm the public IP page does not display, configure an inbound NSG rule, and confirm the public IP page now displays. 
 
@@ -43,9 +43,9 @@ In this task, we will review networking rules, confirm the public IP page does n
 1. Refresh the default public IP IIS HTML page: `http://public_IP_address/default.htm`. This page should now display. 
 
 
-## Task 2 - Application Service Groups
+## Task 2 - Application service groups
 
-**Note:** This task requires a Windows virtual machines with IIS installed. These steps use VM1. Your machine name  may be different. 
+   This task requires a Windows virtual machines with IIS installed. These steps use VM1. Your machine name  may be different. 
 
 In this task, we will connect to a virtual machine, create an inbound deny rule, configure and application security group, and test connectivity.  
 
@@ -97,9 +97,9 @@ In this task, we will connect to a virtual machine, create an inbound deny rule,
 1. On **VM1**, refresh the browser page: `http://private_IP_address/default.htm`.
 1. Verify that the page now displays.
 
-## Task 3 - Storage Endpoints (you could do this in the Storage lesson)
+## Task 3 - Storage endpoints (you could do this in the storage lesson)
 
-**Note**: This task requires a storage account and virtual network with subnet. Storage Explorer is also required. 
+   This task requires a storage account and virtual network with subnet. Storage Explorer is also required. 
 
 In this task, we will secure a storage endpoint. 
 
