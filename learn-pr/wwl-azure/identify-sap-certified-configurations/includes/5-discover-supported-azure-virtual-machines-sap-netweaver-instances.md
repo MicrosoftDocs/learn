@@ -1,0 +1,327 @@
+As per [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533), Azure VM SKUs supported for SAP NetWeaver (A)SCS and SAP NetWeaver application server/dialog instances only include the following:
+
+:::row:::
+  :::column:::
+    **VM Series**
+  :::column-end:::
+  :::column:::
+    **VM Type**
+  :::column-end:::
+  :::column:::
+    **VM Size**
+  :::column-end:::
+  :::column:::
+    **2-Tier SAPS**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_D11\_v2
+  :::column-end:::
+  :::column:::
+    2 vCPU, 14 GiB
+  :::column-end:::
+  :::column:::
+    3,530
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_D12\_v2
+  :::column-end:::
+  :::column:::
+    4 vCPU, 28 GiB
+  :::column-end:::
+  :::column:::
+    6,680
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_D13\_v2
+  :::column-end:::
+  :::column:::
+    8 vCPU, 56 GiB
+  :::column-end:::
+  :::column:::
+    12,300
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_D14\_v2
+  :::column-end:::
+  :::column:::
+    16 vCPU, 112 GiB
+  :::column-end:::
+  :::column:::
+    24,180
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_D15\_v2
+  :::column-end:::
+  :::column:::
+    20 vCPU, 140 GiB
+  :::column-end:::
+  :::column:::
+    30,430
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_D2\_v3
+  :::column-end:::
+  :::column:::
+    2 vCPU, 8 GiB
+  :::column-end:::
+  :::column:::
+    2,178
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_D4\_v3
+  :::column-end:::
+  :::column:::
+    4 vCPU, 16 GiB
+  :::column-end:::
+  :::column:::
+    4,355
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_D8\_v3
+  :::column-end:::
+  :::column:::
+    8 vCPU, 32 GiB
+  :::column-end:::
+  :::column:::
+    8,710
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_D16\_v3
+  :::column-end:::
+  :::column:::
+    16 vCPU, 64 GiB
+  :::column-end:::
+  :::column:::
+    17,420
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_D32\_v3
+  :::column-end:::
+  :::column:::
+    32 vCPU, 128 GiB
+  :::column-end:::
+  :::column:::
+    34,840
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_D64\_v3
+  :::column-end:::
+  :::column:::
+    64 vCPU, 256 GiB
+  :::column-end:::
+  :::column:::
+    69,680
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Ev3-series
+  :::column-end:::
+  :::column:::
+    Standard\_E2\_v3
+  :::column-end:::
+  :::column:::
+    2 vCPU, 16 GiB
+  :::column-end:::
+  :::column:::
+    2,178
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Ev3-series
+  :::column-end:::
+  :::column:::
+    Standard\_E4\_v3
+  :::column-end:::
+  :::column:::
+    4 vCPU, 32 GiB
+  :::column-end:::
+  :::column:::
+    4,355
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Ev3-series
+  :::column-end:::
+  :::column:::
+    Standard\_E8\_v3
+  :::column-end:::
+  :::column:::
+    8 vCPU, 64 GiB
+  :::column-end:::
+  :::column:::
+    8,710
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Ev3-series
+  :::column-end:::
+  :::column:::
+    Standard\_E16\_v3
+  :::column-end:::
+  :::column:::
+    16 vCPU, 128 GiB
+  :::column-end:::
+  :::column:::
+    17,420
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Ev3-series
+  :::column-end:::
+  :::column:::
+    Standard\_E32\_v3
+  :::column-end:::
+  :::column:::
+    32 vCPU, 256 GiB
+  :::column-end:::
+  :::column:::
+    34,840
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Ev3-series
+  :::column-end:::
+  :::column:::
+    Standard\_E64\_v3
+  :::column-end:::
+  :::column:::
+    64 vCPU, 432 GiB
+  :::column-end:::
+  :::column:::
+    70,050
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    G-series
+  :::column-end:::
+  :::column:::
+    Standard\_G1
+  :::column-end:::
+  :::column:::
+    2 vCPU, 28 GiB
+  :::column-end:::
+  :::column:::
+    3,580
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    G-series
+  :::column-end:::
+  :::column:::
+    Standard\_G2
+  :::column-end:::
+  :::column:::
+    4 vCPU, 56 GiB
+  :::column-end:::
+  :::column:::
+    6,900
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    G-series
+  :::column-end:::
+  :::column:::
+    Standard\_G3
+  :::column-end:::
+  :::column:::
+    8 vCPU, 112 GiB
+  :::column-end:::
+  :::column:::
+    11,870
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    G-series
+  :::column-end:::
+  :::column:::
+    Standard\_G4
+  :::column-end:::
+  :::column:::
+    16 vCPU, 224 GiB
+  :::column-end:::
+  :::column:::
+    22,680
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    G-series
+  :::column-end:::
+  :::column:::
+    Standard\_G5
+  :::column-end:::
+  :::column:::
+    32 vCPU, 448 GiB
+  :::column-end:::
+  :::column:::
+    41,670
+  :::column-end:::
+:::row-end:::
+
+
+Microsoft Azure offers Constrained vCPU capable VM sizes with a reduced number of vCPUs. The vCPU count can be constrained to one half or one quarter of the original VM size. These new VM sizes have a suffix that specifies the number of active vCPUs. You can use these VM sizes for SAP workload as well if the VM size is derived from one of the VM types listed above.
