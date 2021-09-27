@@ -113,7 +113,7 @@ You can list and view the details of deployment resources to monitor the status 
 
 ### Generated JSON ARM templates
 
-When you deploy a Bicep file, Bicep concerts it to a JSON ARM template. This is also called *transpilation*. The modules it uses are embedded into the JSON file. Regardless of how many modules you include in your template, only a single JSON file will be created.
+When you deploy a Bicep file, Bicep converts it to a JSON ARM template. This is also called *transpilation*. The modules it uses are embedded into the JSON file. Regardless of how many modules you include in your template, only a single JSON file will be created.
 
 In the example discussed in the previous section, Bicep generates a single JSON file even though there were originally two Bicep files:
 
