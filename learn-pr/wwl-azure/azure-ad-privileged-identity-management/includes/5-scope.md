@@ -24,7 +24,9 @@ Privileged Identity Management lets you assign users to common administrator rol
 - **Privileged role administrator** manages Azure AD PIM and updates role assignments for other users.
 - **Billing administrator** makes purchases, manages subscriptions, manages support tickets, and monitors service health.
 - **Password administrator** resets passwords, manages service requests, and monitors service health. Password admins are limited to resetting passwords for users.
-- **Service administrator** manages service requests and monitors service health. **Note**: If you are using Microsoft 365, then before assigning the service admin role to a user, first assign the user administrative permissions to a service, such as Exchange Online.
+- **Service administrator** manages service requests and monitors service health. 
+   > [!NOTE] 
+   > If you are using Microsoft 365, then before assigning the service admin role to a user, first assign the user administrative permissions to a service, such as Exchange Online.
 - **User management administrator** resets passwords, monitors service health, and manages user accounts, user groups, and service requests. The user management admin can’t delete a global admin, create other admin roles, or reset passwords for billing, global, and service admins.
 - **Exchange administrator** has administrative access to Exchange Online through the Exchange admin center (EAC), and can perform almost any task in Exchange Online.
 - **SharePoint administrator** has administrative access to SharePoint Online through the SharePoint Online admin center, and can perform almost any task in SharePoint Online.

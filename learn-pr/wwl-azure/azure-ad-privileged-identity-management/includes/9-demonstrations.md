@@ -5,9 +5,10 @@ These are a few try-this exercise to configure Privileged Identity Management (P
 
 In this task, we will configure PIM activation settings, add the Billing Administrator as a PIM role, activate the role, and test activation. 
 
-**Configure PIM settings**
+### Configure PIM settings
 
-**Note:** This task requires a **AZ500User1** account with no assigned roles. 
+> [!NOTE] 
+> This task requires a **AZ500User1** account with no assigned roles. 
 
 In this task, we will review and configure the basic PIM settings. 
 
@@ -27,7 +28,7 @@ In this task, we will review and configure the basic PIM settings.
 1. Click **Update**.
 
 
-**Configure PIM for Roles**
+### Configure PIM for Roles
 
 In this task, we will add the Billing Administrator role to PIM. 
 
@@ -45,7 +46,7 @@ In this task, we will add the Billing Administrator role to PIM.
 1. **Save** your changes and **Add** the assignment.
 1. Verify the Billing Administrator is listed as an eligible role. 
 
-**Activate a role**
+### Activate a role
 
 In this task, we will activate the Billing Administrator role. 
 
@@ -68,7 +69,7 @@ In this task, we will activate the Billing Administrator role.
 1. You must sign out and log back in to start using your newly activated role.
 
 
-**Test the role access**
+### Test the role access
 
 In this task, test the Billing Administrator role. 
 
@@ -83,7 +84,7 @@ In this task, test the Billing Administrator role.
 
 In this task, we will configure PIM for Azure resources, activate the Virtual Machine Contributor role, and test the role access. 
 
-**Configure PIM for Azure resources**
+### Configure PIM for Azure resources
 
 In this task, we will add the subscription to PIM, then add the Virtual Machine Contributor role as a Active role.
 
@@ -104,7 +105,7 @@ In this task, we will add the subscription to PIM, then add the Virtual Machine 
 1. Sign out of the Portal.
 
 
-**Activate the role**
+### Activate the role
 
 In this task, we will sign-in as a user and activate the role. 
 
@@ -122,7 +123,7 @@ In this task, we will sign-in as a user and activate the role.
 1. You must sign out and log back in to start using your newly activated role.
 
 
-**Test the role access**
+### Test the role access
 
 In this task, we will check to ensure the role has been assigned. 
 
