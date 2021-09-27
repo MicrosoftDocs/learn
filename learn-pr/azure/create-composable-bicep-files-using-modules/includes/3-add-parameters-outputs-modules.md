@@ -36,6 +36,9 @@ A parent template can use module outputs in variables, properties for other reso
 
 ::: code language="bicep" source="code/3-params-outputs.bicep" range="21-22" highlight="1" :::
 
+> [!TIP]
+> You can also use dedicated services to store, manage, and access the settings that your Bicep template creates. Key Vault is designed to store secure values, and [Azure App Configuration](/azure/azure-app-configuration/overview?azure-portal=true) is designed to store other, non-secure, values.
+
 ## Chain modules together
 
 It's common to create a parent Bicep file that composes multiple modules together. For example, imagine you're building a new Bicep template to deploy virtual machines that use dedicated virtual networks. You could create a module to define a virtual network, and then take the virtual network's subnet resource ID as an output from that module and use it as an input to the virtual machine module:
