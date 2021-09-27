@@ -84,7 +84,7 @@ Connect to the new server by using Remote Desktop client. You'll download a samp
 
 1. Open the RDP file from your browser, and select **Connect**.
 
-1. In the **Windows Security** dilaog box, select **More choices**, and then select **Use a different account**.
+1. In the **Windows Security** dialog box, select **More choices**, and then select **Use a different account**.
 
 1. Enter the user name **learnadmin** and the password you used earlier, and then select **OK**.
 
