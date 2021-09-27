@@ -1,0 +1,34 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-aspnet-app-azure-app-service.containerization-overview
+metadata:
+  title: Azure Migrate App Containerization overview
+  description: Provides an overview of Azure Migrate App Containerization feature
+  ms.date: 09/01/2021
+  author: rahug1190
+  ms.author: rahugup
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Migrate App Containerization overview
+durationInMinutes: 4
+content: |
+  [!include[](includes/app-containerization-overview.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Azure Migrate: App Containerization is a standalone utility that can run on any Windows 10 or Windows Server 2016 machine"
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "Correct. Azure Migrate: App Containerization can be downloaded and installed on any Windows 10 or Windows Server 2016 machine that has network access to your application servers."
+    - content: "False"
+      isCorrect: false
+      explanation: "Azure Migrate: App Containerization can be downloaded and installed on any Windows 10 or Windows Server 2016 machine that has network access to your application servers."
+  - content: "Which of the following application types are supported by Azure Migrate: App Containerization?"
+    choices:
+    - content: "ASP.NET applications"
+      isCorrect: true
+      explanation: "Correct. Azure Migrate: App Containerization supports containerization and migration of ASP.NET web apps running on Windows machines."
+    - content: "WCF applications"
+      isCorrect: false
+      explanation: "Incorrect. Azure Migrate: App Containerization supports containerization and migration of ASP.NET web apps running on Windows machines."
+      
