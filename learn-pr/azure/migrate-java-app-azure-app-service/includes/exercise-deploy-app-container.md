@@ -1,4 +1,4 @@
-Once the container image is built, the next step is to deploy the application as a container on Azure App Servive.
+Once the container image is built, the next step is to deploy the application as a container on Azure App Service.
 
 Azure App Service is an HTTP-based service on Azure that you can use to host web applications and REST APIs. This service provides benefits such as:
 - Autoscaling to help your app scale to meet demand, based on the parameters you specify, and then automatically reduce the scale when demand decreases.
