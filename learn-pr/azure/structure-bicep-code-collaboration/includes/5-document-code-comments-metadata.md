@@ -51,7 +51,7 @@ When you create a parameter, variable, or output, you can apply the `@descriptio
 
 ::: code language="bicep" source="code/5-descriptions.bicep" highlight="1, 4, 7" :::
 
-When someone uses the Visual Studio Code extension for Bicep, descriptions are shown whenever anyone hovers over a symbolic name.
+When someone uses the Visual Studio Code extension for Bicep, descriptions are shown whenever anyone hovers over a symbolic name. Also, when someone uses your Bicep file as a module, they'll see the descriptions you apply to your parameters.
 
 ## Add descriptions to resources
 
