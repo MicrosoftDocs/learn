@@ -19,7 +19,7 @@ For scenarios where you need full container orchestration, including service dis
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
 
-1. Open Azure Cloud Shell from the Azure portal using the Cloud Shell icon. Make sure to select **Bash** as the interactive Cloud Shell environment.
+1. Open Azure Cloud Shell from the Azure portal by selecting the Cloud Shell icon. Make sure to select **Bash** as the interactive Cloud Shell environment.
 
     :::image type="icon" source="../media/2-portal-cloudshell-access.png":::
 
