@@ -35,7 +35,7 @@ If you don't already have an Azure Machine Learning workspace in your Azure subs
     | Workspace name | Enter a unique name for your app. For example, you could use *\<yourname\>;machinelearn*. |
     | Region | From the dropdown list, select any available location. |
 
-1. Accept the reamining defaults, and select **Review + create**.
+1. Accept the remaining defaults, and select **Review + create**.
 
 1. After validation passes, select **Create**.
 
@@ -51,7 +51,7 @@ If you don't already have an Azure Machine Learning workspace in your Azure subs
 
 To run the notebook used in this exercise, you will need a compute instance in your Azure Machine Learning workspace.
 
-1. In the left manu pane, under **Manage**, select **Compute**. The **Compute** pane appears.
+1. In the left menu pane, under **Manage**, select **Compute**. The **Compute** pane appears.
 
 1. On the **Compute Instances** tab, if you already have a compute instance, start it; otherwise, create a new compute instance by selecting **New**. The **Create compute instance** pane appears.
 
