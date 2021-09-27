@@ -25,7 +25,7 @@ prerequisites: |
   - Knowledge of various data sources such as SQL Server, Cosmos DB, etc.
   - Knowledge of the concepts around data governance.
 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/introduction-to-azure-purview.svg
 
 levels:
   - beginner
