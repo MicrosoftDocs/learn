@@ -54,9 +54,9 @@ You can also use the Azure CLI command `az sql server firewall-rule` to create, 
     az sql server firewall-rule list -g <rgn>Sandbox resource group name</rgn> -s $logical_server
     ```
 
-    THe client IP address rule output should match what you saw displayed in the Azure portal in the preceding section.  
+    The client IP address rule output should match what you saw displayed in the Azure portal in the preceding section.  
 
-Setting up server-level firewall rules by using either the Azure portal or Cloud Shell grants your client IP address access to all the databases in your logical server. You can  configure database-level firewall rules, which apply to individual databases by using the T-SQL command `EXECUTE sp_set_database_firewall_rule`. T-SQL is the only method avaiable for configuring firewall rules for a specific database. For more information, see the references on the Summary page of this module.  
+Setting up server-level firewall rules by using either the Azure portal or Cloud Shell grants your client IP address access to all the databases in your logical server. You can  configure database-level firewall rules, which apply to individual databases by using the T-SQL command `EXECUTE sp_set_database_firewall_rule`. T-SQL is the only method available for configuring firewall rules for a specific database. For more information, see the references on the Summary page of this module.  
 
 ## Go further
 
