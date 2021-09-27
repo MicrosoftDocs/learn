@@ -64,7 +64,7 @@ To enable Application Insights on an app, follow these steps:
 
 1. Under **Application Insights**, make sure **Enable** is selected.
 
-1. Exapmd **Change your resource**, and select **Create new resource**.
+1. Expand **Change your resource**, and select **Create new resource**.
 
 1. In the **New resource name** field, enter *videoappinsights*.
 
