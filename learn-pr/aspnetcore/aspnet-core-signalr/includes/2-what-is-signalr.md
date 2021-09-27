@@ -49,9 +49,9 @@ For more information, see the official specification for [SignalR Hub Protocol](
 
 The client is responsible for establishing a connection to the server's endpoint through a `HubConnection`. The hub connection object is represented within each target platform:
 
-- [.NET Client](/aspnet/core/signalr/dotnet-client): <xref:Microsoft.AspNetCore.SignalR.Client.HubConnection?displayProperty=nameWithType>
-- [JavaScript Client](/aspnet/core/signalr/javascript-client): <xref:@microsoft/signalr.HubConnection?displayProperty=nameWithType>
-- [Java Client](/aspnet/core/signalr/java-client): <xref:com.microsoft.signalr.HubConnection?displayProperty=nameWithType>
+- [.NET Client](/aspnet/core/signalr/dotnet-client): [`Microsoft.AspNetCore.SignalR.Client.HubConnection`](xref:Microsoft.AspNetCore.SignalR.Client.HubConnection?displayProperty=nameWithType)
+- [JavaScript Client](/aspnet/core/signalr/javascript-client): [`@microsoft/signalr.HubConnection`](xref:@microsoft/signalr.HubConnection)
+- [Java Client](/aspnet/core/signalr/java-client): [`com.microsoft.signalr.HubConnection`](xref:com.microsoft.signalr.HubConnection)
 
 For more information, see [ASP.NET Core SignalR supported platforms](/aspnet/core/signalr/supported-platforms).
 

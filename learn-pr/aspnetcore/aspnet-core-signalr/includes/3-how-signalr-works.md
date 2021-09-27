@@ -7,111 +7,48 @@ Apply to scenario
 
 -->
 
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+## Servers and the `Hub` class
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+The `Hub` class in SignalR server concept. It's defined within the `Microsoft.AspNetCore.SignalR` namespace, and is part of the [Microsoft.AspNetCore.SignalR](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR) NuGet package. It is exposed through a route, for example; the `"https://contoso-pizza.com/hubs/orders"` route could be used to represent an `OrdersHub` implementation. The various hub APIs allow authors to define methods and events.
 
-    Heading: none
+There are two modalities to expose methods on a hub, you create a subclass of either following types and write [methods](#methods):
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+- <xref:Microsoft.AspNetCore.SignalR.Hub?displayProperty=fullName>: Standard hub.
+- <xref:Microsoft.AspNetCore.SignalR.Hub%601?displayProperty=fullName>: Strongly-typed generic hub.
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+You fire [events](#events) from either a `Hub` or `IHubContext` instance.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+### The `IHubContext<T>`
 
-    Goal: Describe the part of the scenario covered in this exercise
+The SignalR hub is the core abstraction for sending messages to clients connected to the SignalR server. It's also possible to send messages from other places in your app using either of the following types:
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+- <xref:Microsoft.AspNetCore.SignalR.IHubContext%601?displayProperty=fullName>: A context where `THub` represents the standard hub.
+- <xref:Microsoft.AspNetCore.SignalR.IHubContext%602?displayProperty=fullName>: A context where `THub` represents the strongly-typed generic hub, and `T` represents the corresponding type of client.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+The `IHubContext` is for sending notifications to client, it _**is not**_ used to call method on the `Hub`.
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+### Methods
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+`Hub` or `Hub<T>` methods are just like any other C# method, they define a return type, method name, and parameter(s).
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+- The most common return type for a hub method is `Task`, which represents the asynchronous hub operation.
+- The method name is used to call the method from clients, it can be customized using the <xref:Microsoft.AspNetCore.SignalR.HubMethodNameAttribute?displayProperty=fullName>.
+- Parameters are optional, but when they're defined, clients are expected to provide corresponding arguments.
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+Methods are not required to fire events, but they often do.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+### Events
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+`Hub`, `Hub<T>`, or `IHubContext` events are named and can define up to eight parameter(s).
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
-    Goal: List the steps they'll do to complete the exercise.
+## Clients and the `HubConnection` class
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+The `HubConnection` class in SignalR client concept, which represents a client's connection to a [server `Hub`](#servers-and-the-hub-class). It's defined within the `Microsoft.AspNetCore.SignalR.Client` namespace, and is part of the [Microsoft.AspNetCore.SignalR.Client](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Client) NuGet package. A `HubConnection` is created using the builder-pattern, and the corresponding `HubConnectionBuilder` type.
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+### Call methods
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+A client 
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+### Handle events
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
