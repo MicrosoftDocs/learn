@@ -45,7 +45,7 @@ quiz:
       explanation: "Incorrect. this commit message is short and non descriptive of the task that you completed."
     - content: "Add Name, age ,height, weight and salary labels with corresponding text boxes and more over a Submit Button to the webpage to ensure the user is clear on what is being added..."
       isCorrect: false
-      explanation: "Incorrect. This commit, while being quite descriptive of the work done, adds alot of information that may be too much." 
+      explanation: "Incorrect. This commit, while being quite descriptive of the work done, adds a lot of information that may be too much." 
   - content: 'What is a way to fix one of your past commits without needing to make a new commit?'
     choices:
     - content: "Deleting the file and creating a new one in its place with the correct changes."
