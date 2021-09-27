@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.create-git-project.6-knowledge-check
+uid: learn.student-evangelism.create-git-project.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: Review what you've learned in the Create Git Project Module.
-  ms.date: 04/27/2020
+  ms.date: 09/27/2021
   author: mshumba
   ms.author: mufaroshumba
   ms.topic: interactive-tutorial

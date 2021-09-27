@@ -15,4 +15,4 @@ By the end of this module, you'll:
 
 ## Prerequisites
 
-Intro to Git Module
+[Intro to Git Module](../../intro-to-git/index.yml)

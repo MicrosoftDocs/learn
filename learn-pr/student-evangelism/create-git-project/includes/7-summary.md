@@ -9,7 +9,6 @@ You learned:
 - How to recover deleted files in your Git workspace
 - How to undo a commit in Git
 
-
 At this point, you know enough about Git to use to make and modify a project. Collaboration with other developers is where version control shines. Check out the other modules in this learning path for more about using Git with others!
 
 ### Resources

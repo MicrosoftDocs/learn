@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.create-git-project.4-fix-simple-mistakes
+uid: learn.student-evangelism.create-git-project.fix-simple-mistakes
 title: Fix simple mistakes
 metadata:
   title: Fix simple mistakes
   description: Use some of the Git tools for correcting mistakes.
-  ms.date: 03/05/2021
+  ms.date: 09/27/2021
   author: mshumba
   ms.author: mufaroshumba
   ms.topic: interactive-tutorial
