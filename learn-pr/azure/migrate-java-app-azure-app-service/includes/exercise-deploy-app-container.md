@@ -42,7 +42,7 @@ If you had added more folders and selected the Persistent Volume option, then sp
 
 Once you've completed the steps above, you'll need to specify the deployment configuration for the application. Click **Configure** to customize the deployment for the application. In the configure step, you can provide the following customizations:
 
-1. **Name**: pecify a unique app name for the application. This name will be used to generate the application URL and used as a prefix for other resources being created as part of this deployment. 
+1. **Name**: Specify a unique app name for the application. This name will be used to generate the application URL and used as a prefix for other resources being created as part of this deployment. 
 2. **Application Configuration**: For application configurations that were parameterized, use the following value for the current deployment. Navigate to *LearnAppContainerization* resource group and copy the name of the MySQL server. 
     - The MySQL server will name will be in the following format - "airsonic-mysql-server-0000000000". 
         - **Username**: Generate the username as **mysqladmin@${MYSQL_SERVER_NAME}**.
