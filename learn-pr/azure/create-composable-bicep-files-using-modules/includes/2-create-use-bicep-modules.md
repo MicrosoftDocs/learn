@@ -86,9 +86,11 @@ A module definition includes the following components:
 - The `name` property, which specifies the name of the deployment. You'll learn more about deployments in the next section.
 - The `params` property, where you can specify values for the parameters that the module expects. You'll learn more about module parameters in the next unit.
 
-When your Bicep file is transpiled, or converted to a JSON file for deployment, the modules are embedded into the JSON file. Regardless of how many modules you include in your template, only a single JSON file will be created.
+## How modules work
 
-## Deployments
+Although it's not necessary to understand how modules work in order to use them, it can help you to investigate problems with your deployments or to explain unexpected behavior.
+
+### Deployments
 
 In Azure, a *deployment* is a special resource that represents a deployment operation. Deployments are Azure resources that have the resource type `Microsoft.Resources/deployments`. When you submit a Bicep deployment, you create or update a deployment resource. Similarly, when you create resources in the Azure portal, the portal creates a deployment resource on your behalf. However, not all changes to Azure resources create or use deployments. For example, when you use the portal to modify an existing resource, it generally doesn't create a deployment to make the change, and when you use third-party tools like Terraform to deploy or configure your resources, they might  not create deployments.
 
@@ -101,3 +103,11 @@ For example, suppose you create a Bicep file named *main.bicep*. It defines a mo
 :::image type="content" source="../media/2-deployments.png" alt-text="Diagram that shows two Bicep files, each of which has a separate deployment name." border="false":::
 
 You can list and view the details of deployment resources to monitor the status of your Bicep deployments, or to view history of deployments. However, when you reuse the same name for a deployment, Azure overwrites the last deployment with the same name. If you need to maintain the deployment history, ensure that you use unique names for every deployment, including every time you deploy a module. You'll see how to do this in the exercise.
+
+### Generated ARM templates
+
+When your Bicep file is converted to a JSON file for deployment, or *transpiled*, the modules are embedded into the JSON file. Regardless of how many modules you include in your template, only a single JSON file will be created.
+
+In the example discussed in the previous section, Bicep generates a single  JSON file even though there were originally two Bicep files:
+
+:::image type="content" source="../media/2-transpile.png" alt-text="Diagram that shows two Bicep files, which are transpiled into a single JSON file." border="false":::
