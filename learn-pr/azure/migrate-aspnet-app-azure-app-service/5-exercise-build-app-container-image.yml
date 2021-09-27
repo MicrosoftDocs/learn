@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-aspnet-app-azure-app-service.exercise-build-container-image
+metadata:
+  title: Exercise - Build container image for your ASP.NET app
+  description: Describes the steps to build the container image for the application
+  ms.date: 09/01/2021
+  author: rahug1190
+  ms.author: rahugup
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Build container image for your ASP.NET app
+durationInMinutes: 8
+content: |
+  [!include[](includes/exercise-build-container-image.md)]
