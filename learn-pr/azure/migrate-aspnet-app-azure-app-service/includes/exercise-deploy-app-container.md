@@ -1,4 +1,4 @@
-Once the container image is built, the next step is to deploy the application as a container on Azure App Servive.
+Once the container image is built, the next step is to deploy the application as a container on Azure App Service.
 
 Azure App Service is an HTTP-based service on Azure that you can use to host web applications and REST APIs. This service provides benefits such as:
 - Autoscaling to help your app scale to meet demand, based on the parameters you specify, and then automatically reduce the scale when demand decreases.
@@ -33,7 +33,7 @@ Since this application didn't have any file system dependencies that we chose to
 
 Once you've completed the steps above, you'll need to specify the deployment configuration for the application. Click **Configure** to customize the deployment for the application. In the configure step, you can provide the following customizations:
 
-1. **Name**: pecify a unique app name for the application. This name will be used to generate the application URL and used as a prefix for other resources being created as part of this deployment. 
+1. **Name**: Specify a unique app name for the application. This name will be used to generate the application URL and used as a prefix for other resources being created as part of this deployment. 
 2. **Application Configuration**: For any application configurations that were parameterized, use the following value for the current deployment.
     - **URL**: To create the URL to be specified, navigate to *LearnAppContainerization* resource group and copy the name of the SQL server. 
         - The SQL server will name will be in the following format - "appcontainerization-lab0000". 

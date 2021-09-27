@@ -10,7 +10,7 @@ Once your subscription is set up, you'll need an Azure user account with:
 
 If you just created a free Azure account, you're the owner of your subscription. If you're not the subscription owner, work with the owner to assign the permissions as follows:
 
-1. In the Azure Portal, search for "subscriptions", and under **Services**, select **Subscriptions**.
+1. In the Azure portal, search for "subscriptions", and under **Services**, select **Subscriptions**.
 
     ![Search box to search for the Azure subscription.](../media/search-subscription.png)
 
@@ -26,7 +26,7 @@ If you just created a free Azure account, you're the owner of your subscription.
     ![Opens the Add Role assignment page to assign a role to the account.](../media/assign-role.png)
 
 7. Your Azure account also needs **permissions to register Azure Active Directory apps.**
-8.  In Azure Portal, navigate to **Azure Active Directory** > **Users** > **User Settings**.
+8.  In Azure portal, navigate to **Azure Active Directory** > **Users** > **User Settings**.
 9.  In **User settings**, verify that Azure AD users can register applications (set to **Yes** by default).
 
       ![Verify in User Settings that users can register Active Directory apps.](../media/register-apps.png)
@@ -35,9 +35,9 @@ If you just created a free Azure account, you're the owner of your subscription.
 
 ## Setup PartsUnlimited application
 
-1. To deploy the workshop environment, begin by navigating to the [Azure Portal](https://portal.azure.com).
+1. To deploy the workshop environment, begin by navigating to the [Azure portal](https://portal.azure.com).
 2. In your Azure subscription, create a new resource group **LearnAppContainerization**.
-3. Click the button below to deploy the resources for the application. Clicking this button will take you to the Azure Portal to deploy a custom template.  
+3. Click the button below to deploy the resources for the application. Clicking this button will take you to the Azure portal to deploy a custom template.  
 
      [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-azuremigrate-appcontainerization-aspnet%2Fmain%2FASP.NET%2520Containerization%2Ftemplate.json)
 
@@ -47,19 +47,20 @@ If you just created a free Azure account, you're the owner of your subscription.
 
 5. You'll need to create the SQL database that the migrated application will connect to. Follow the steps to create the SQL database.
 
-    - Open PowerShell on your local machine and download the SQL database file using the following command.
+    1. Open PowerShell on your local machine and download the SQL database file using the following command.
 
-    ```
-    invoke-webrequest -uri "https://appcontainerizationlearn.blob.core.windows.net/partsappdatabasemslearn/partsunlimiteddb.bacpac" -outfile./partsunlimited.bacpac
-    ```
-    - Create a storage account **appcontainerizationsa**.
-    - Add a container **partsunlimiteddbcontainer** to the storage account. Select the **Blob** option for the public access level setting. 
-    - In the container, select the **upload** option and select the downloaded file. 
-    - Go to the SQL Server resource created in the **LearnAppContainerization** resource group. The SQL Server will have a name similar to "appcontainerization-lab0000".
-    - Select the **import database** option and enter the following values. 
-        - Database name: *partsunlimiteddb*
-        - Server admin login: *adminuser*
-        - Password: *Password@123* 
+        ```powershell
+        invoke-webrequest -uri "https://appcontainerizationlearn.blob.core.windows.net/partsappdatabasemslearn/partsunlimiteddb.bacpac" -outfile./partsunlimited.bacpac
+        ```
+
+    1. Create a storage account **appcontainerizationsa**.
+    1. Add a container **partsunlimiteddbcontainer** to the storage account. Select the **Blob** option for the public access level setting. 
+    1. In the container, select the **upload** option and select the downloaded file. 
+    1. Go to the SQL Server resource created in the **LearnAppContainerization** resource group. The SQL Server will have a name similar to "appcontainerization-lab0000".
+    1. Select the **import database** option and enter the following values. 
+        1. Database name: *partsunlimiteddb*
+        1. Server admin login: *adminuser*
+        1. Password: *Password@123* 
 
 6. To browse the application, select **vm-aspserver** virtual machine resource, copy the public IP address of the server and paste it in a browser window.
 
