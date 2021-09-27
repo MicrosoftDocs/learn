@@ -30,7 +30,7 @@ If the piece of software, you are trying to package up requires a bespoke instal
 
 If we take the VMware Workstation Player as an example, we can see within its installer.yaml file it has a couple of configuration lines:
 
- [![VMware Workstation Player Installer File](../media/vmware-installer-file.png)](../media/vmwareinstallerfile.PNG#lighbox)
+ [![VMware Workstation Player Installer File](../media/vmware-installer-file.png)](../media/vmware-installer-file.png#lighbox)
 
 ### Tags
 
@@ -40,7 +40,7 @@ Another thing that can be done when submitting is adding in tags in your manifes
 
 Below is a screenshot of what the tags input looks like within the yaml file: 
 
-[![VideoLAN Yaml Tags](../media/videolan-yaml-tags.png)](../media/vlcyamltags.PNG#lightbox)
+[![VideoLAN Yaml Tags](../media/videolan-yaml-tags.png)](../media/videolan-yaml-tags.png#lightbox)
 
 These tags help expand the search results beyond the software maker or name of the software.
 

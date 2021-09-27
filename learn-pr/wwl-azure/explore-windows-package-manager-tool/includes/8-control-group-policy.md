@@ -6,7 +6,7 @@ These policies will give you the power to enable Windows Package Manager, contro
 
 Below is a screenshot of the Group Policy settings available to configure within the Group Policy Management Editor
 
- [![Windows Package Manager Group Policy Settings](../media/winget-gpo.png)](../media/wingetgpo.PNG#lightbox)
+ [![Windows Package Manager Group Policy Settings](../media/winget-gpo.png)](../media/winget-gpo.png#lightbox)
 
 ## Group Policy settings
 Any policies that have been enabled or configured will be shown when a user executes **winget --info**. The goal is to assist users in troubleshooting unexpected behaviors they may encounter in the Windows Package Manager because of any policies that are enabled or configured. For example, a user may attempt to modify a setting controlled by policy and not be able to understand why the device does not appear to honor their setting.
