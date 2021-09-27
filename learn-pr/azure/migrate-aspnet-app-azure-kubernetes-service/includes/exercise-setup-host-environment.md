@@ -10,7 +10,7 @@ Once your subscription is set up, you'll need an Azure user account with:
 
 If you just created a free Azure account, you're the owner of your subscription. If you're not the subscription owner, work with the owner to assign the permissions as follows:
 
-1. In the Azure portal, search for "subscriptions", and under **Services**, select **Subscriptions**.
+1. In the Azure Portal, search for "subscriptions", and under **Services**, select **Subscriptions**.
 
     ![Search box to search for the Azure subscription.](../media/search-subscription.png)
 
@@ -26,7 +26,7 @@ If you just created a free Azure account, you're the owner of your subscription.
     ![Opens the Add Role assignment page to assign a role to the account.](../media/assign-role.png)
 
 7. Your Azure account also needs **permissions to register Azure Active Directory apps.**
-8.  In Azure portal, navigate to **Azure Active Directory** > **Users** > **User Settings**.
+8.  In Azure Portal, navigate to **Azure Active Directory** > **Users** > **User Settings**.
 9.  In **User settings**, verify that Azure AD users can register applications (set to **Yes** by default).
 
       ![Verify in User Settings that users can register Active Directory apps.](../media/register-apps.png)
@@ -35,7 +35,7 @@ If you just created a free Azure account, you're the owner of your subscription.
 
 ## Setup PartsUnlimited application
 
-1. To deploy the workshop environment, begin by navigating to the [Azure portal](https://portal.azure.com).
+1. To deploy the workshop environment, begin by navigating to the [Azure Portal](https://portal.azure.com).
 2. In your Azure subscription, create a new resource group **LearnAppContainerization**.
 3. Click the button below to deploy the resources for the application. Clicking this button will take you to the Azure Portal to deploy a custom template.  
 
