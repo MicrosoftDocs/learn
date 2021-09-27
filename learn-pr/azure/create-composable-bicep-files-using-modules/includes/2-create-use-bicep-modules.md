@@ -83,6 +83,8 @@ A module definition includes the following components:
 - The `module` keyword.
 - A symbolic name. This name is used within this Bicep file whenever you want to refer to the module. The symbolic name never appears in Azure.
 - The module path. This is typically the path to a Bicep file on your local file system. In a future Microsoft Learn module, you'll learn about how you can share modules byu using registries and template specs, which have their own module path formats.
+  > [!TIP]
+  > You can also use a JSON ARM template as a module. This can be helpful if you have a set of templates that you haven't yet migrated to Bicep.
 - The `name` property, which specifies the name of the deployment. You'll learn more about deployments in the next section.
 - The `params` property, where you can specify values for the parameters that the module expects. You'll learn more about module parameters in the next unit.
 
@@ -104,10 +106,10 @@ For example, suppose you create a Bicep file named *main.bicep*. It defines a mo
 
 You can list and view the details of deployment resources to monitor the status of your Bicep deployments, or to view history of deployments. However, when you reuse the same name for a deployment, Azure overwrites the last deployment with the same name. If you need to maintain the deployment history, ensure that you use unique names for every deployment, including every time you deploy a module. You'll see how to do this in the exercise.
 
-### Generated ARM templates
+### Generated JSON ARM templates
 
-When your Bicep file is converted to a JSON file for deployment, or *transpiled*, the modules are embedded into the JSON file. Regardless of how many modules you include in your template, only a single JSON file will be created.
+When you deploy a Bicep file, Bicep concerts it to a JSON ARM template. This is also called *transpilation*. The modules it uses are embedded into the JSON file. Regardless of how many modules you include in your template, only a single JSON file will be created.
 
-In the example discussed in the previous section, Bicep generates a single  JSON file even though there were originally two Bicep files:
+In the example discussed in the previous section, Bicep generates a single JSON file even though there were originally two Bicep files:
 
 :::image type="content" source="../media/2-transpile.png" alt-text="Diagram that shows two Bicep files, which are transpiled into a single JSON file." border="false":::
