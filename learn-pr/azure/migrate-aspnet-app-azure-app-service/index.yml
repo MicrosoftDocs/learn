@@ -27,7 +27,7 @@ roles:
 products:
 - azure
 - azure-migrate
-- app-service
+- azure-app-service
 units:
 - learn.azure.migrate-aspnet-app-azure-app-service.introduction
 - learn.azure.migrate-aspnet-app-azure-app-service.containerization-overview
