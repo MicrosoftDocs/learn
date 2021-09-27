@@ -25,7 +25,7 @@ To simplify our scenario so that we can focus on the Storage APIs, we'll create 
     ```dotnetcli
     dotnet run
     ```
-
+     The output "Hello World!" should display in the console.
 ::: zone-end
 
 ::: zone pivot="javascript"
@@ -71,10 +71,12 @@ Node.js is a popular framework for running JavaScript apps. It is most commonly 
 
 1. Save the file. Select the "..." menu on the top-right corner of Cloud Shell editor, and select **Save**.
 
-1. Run the app to make sure it executes correctly. It should display "Hello, World!" in the console.
+1. Run the app to make sure it executes correctly.
 
     ```bash
     node index.js
     ```
 
+     The output "Hello World!" should display in the console.
+ 
 ::: zone-end

@@ -30,7 +30,7 @@ ORDER BY CostPerOuterBox;
 
 This query is joining the StockItems table to the StockItemHoldings table where the values in the column StockItemID are equal. So the database engine has to first identity those rows before it can process the rest of the query.
 
-:::image type="content" source="../media/module-55-optimize-queries-final-02.png" alt-text="Query Execution Plan":::
+:::image type="content" source="../media/module-55-optimize-queries-final-02.png" alt-text="[Query Execution Plan":::
 
 Each icon in the plan shows a specific operation, which represents the various actions and decisions that make up an execution plan. The SQL Server database engine has over 100 query operators that can make up on an execution plan. You will notice that under each operator icon, there is a cost percentage relative to the total cost of the query. Even an operation that shows a cost of 0% still represents some cost. In fact, 0% is usually due to rounding, because the graphical plan costs are always shown as whole numbers, and the real percentage is something less than 0.5%.
 

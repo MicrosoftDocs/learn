@@ -49,7 +49,7 @@ The first task is to enable your application to connect to the Azure Databases e
     ```javascript
     const cosmos = require("@azure/cosmos");
 
-    const client = new cosmos.AzureClient(config.connectionString);
+    const client = new cosmos.CosmosClient(config.connectionString);
     const databaseid = config.database;
     const containerid = config.container;
     const containerref = client.database(databaseid).container(containerid);
@@ -58,7 +58,7 @@ The first task is to enable your application to connect to the Azure Databases e
 
     The `require` statement loads the types and functions in the **cosmos** package.
 
-    You use the **AzureClient** object to connect to your Cosmos DB account. Use the connection string that you specified in the **config.js** script. The **containerref** object is a reference to the **StudentGrades** container in the **SchoolDB** database in your Cosmos DB account. You'll use the **containerdata** object to access the documents in this container.
+    You use the **CosmosClient** object to connect to your Cosmos DB account. Use the connection string that you specified in the **config.js** script. The **containerref** object is a reference to the **StudentGrades** container in the **SchoolDB** database in your Cosmos DB account. You'll use the **containerdata** object to access the documents in this container.
 
 1. Save the file.
 
