@@ -43,7 +43,7 @@ If you don't already have an Azure Machine Learning workspace in your Azure subs
 
 1. When deployment completes, select **Go to resource**. Your **Machine learning** pane appears.
 
-1. Select **Launch studio**, or go to [https://ml.azure.com](https://ml.azure.com?azure-portal=true)), and sign in using your Microsoft account. The **Microsoft Azure Machine Learning Studio** page appears.
+1. Select **Launch studio**, or go to [https://ml.azure.com](https://ml.azure.com?azure-portal=true), and sign in using your Microsoft account. The **Microsoft Azure Machine Learning Studio** page appears.
 
 1. In *Azure Machine Learning Studio*, toggle the  **&#9776;** icon at the top left to expane/collapse its menu pane. You can use these options to manage the resources in your workspace.
 
@@ -71,7 +71,7 @@ The files used in this module, and other related modules, are published in the *
 
 1. Under the **Applications** column, select the **Jupyter** link to open Jupyter Notebooks in a new browser tab. The **jupyter** pane appears.
 
-1. On the menu bar to the far right, select **New**, and from the dropdown list, select **Terminal**. This will open a new tab with a terminal shell.
+1. On the menu bar to the far right, select **New**, and from the dropdown list, select **Terminal**. A terminal shell appears.
 
 1. Run the following commands to change the current directory to the **Users** directory, and clone the **ml-basics** repository, which contains the notebook and files you will use in this exercise.
 
