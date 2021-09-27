@@ -26,7 +26,6 @@ module cdn 'modules/cdn.bicep' = if (deployCdn) {
   name: 'toy-launch-cdn'
   params: {
     httpsOnly: true
-    location: location
     originHostName: app.outputs.appServiceAppHostName
   }
 }

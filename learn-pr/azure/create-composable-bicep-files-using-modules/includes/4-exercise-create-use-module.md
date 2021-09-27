@@ -92,13 +92,13 @@ Here, you add the *app* module to your Bicep template as a starting point.
 
 1. Below the `app` module definition, define the `cdn` module:
 
-   :::code language="bicep" source="code/4-template-2.bicep" range="25-32" :::
+   :::code language="bicep" source="code/4-template-2.bicep" range="25-31" :::
 
    Notice that the module has a condition so that it's only deployed when the `deployCdn` parameter's value is set to `true`. Also, notice that the module's `originHostName` parameter is set to the value of the `appServiceAppHostName` output from the `app` module.
 
 1. Update the host name output so that it selects the correct host name. When a CDN is deployed, you want the host name to be that of CDN endpoint.
 
-   :::code language="bicep" source="code/4-template-2.bicep" range="35" :::
+   :::code language="bicep" source="code/4-template-2.bicep" range="34" :::
 
 1. Save the changes to the file.
 

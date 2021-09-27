@@ -1,6 +1,3 @@
-@description('The Azure region into which the resources should be deployed.')
-param location string
-
 @description('The host name (address) of the origin server.')
 param originHostName string
 
@@ -17,7 +14,7 @@ var originName = 'my-origin'
 
 resource cdnProfile 'Microsoft.Cdn/profiles@2020-09-01' = {
   name: profileName
-  location: location
+  location: 'global'
   sku: {
     name: 'Standard_Microsoft'
   }
@@ -26,7 +23,7 @@ resource cdnProfile 'Microsoft.Cdn/profiles@2020-09-01' = {
 resource endpoint 'Microsoft.Cdn/profiles/endpoints@2020-09-01' = {
   parent: cdnProfile
   name: endpointName
-  location: location
+  location: 'global'
   properties: {
     originHostHeader: originHostName
     isHttpAllowed: !httpsOnly
