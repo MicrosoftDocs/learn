@@ -2,14 +2,17 @@
 uid: learn.wwl.examine-sap-s4hana-azure-virtual-machines
 metadata:
   title: Examine SAP S/4HANA on Azure virtual machines
-  description: "Examine available architecture when deploying SAP S/4HANA workloads running on high-performance Azure VMs, and in-memory SAP HANA databases, running on Azure VMs. Prepare for Exam AZ-120: Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 09/25/2021
+  description: "Examine available architecture when deploying SAP S/4HANA
+workloads running on high-performance Azure VMs, and in-memory SAP HANA databases,
+running on Azure VMs. Prepare for Exam AZ-120: Planning and Administering
+Microsoft Azure for SAP Workloads."
+  ms.date: 09/27/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Examine SAP S/4HANA on Azure virtual machines
-summary: Examine the architecture options available when deploying SAP S/4HANA workloads running on high-performance Azure VMs, and in-memory SAP HANA databases, running on Azure VMs.
+summary: Examine the architecture when deploying SAP S/4HANA workloads and in-memory SAP HANA databases, running on Azure VMs.
 abstract: |
   After completing this module, you will be able to:
   - Explore SAP S/4HANA on Azure virtual machines and learn to recognize the architecture's components.
