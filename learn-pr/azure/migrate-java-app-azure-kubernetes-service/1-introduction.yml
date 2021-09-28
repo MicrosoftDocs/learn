@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-java-app-azure-kubernetes-service.introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 09/01/2021
+  author: rahug1190
+  ms.author: rahugup
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/introduction.md)]
