@@ -22,7 +22,7 @@ We'll start by creating a web app to monitor.
 
 ## Configure the web app
 
-Each web app needs a subscription, resource group, name, operating system, region (geographical location), and run time
+Each web app needs a subscription, resource group, name, operating system, region (geographical location), and run time.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -46,7 +46,7 @@ Each web app needs a subscription, resource group, name, operating system, regio
 1. After deployment completes, select **Go to resource**. The App Service pane for your web app appears. Select **Essentials** to minimize the details.
 
     > [!NOTE]
-    > ON the top row are 3 services you can select. In this module, the next procedure will show you how to enable Application Insights after the web app is created. You can  choose to enable it here, and the end result would be the same.
+    > On the top row are 3 services you can select. In this module, the next procedure will show you how to enable Application Insights after the web app is created. You can choose to enable it here, and the end result would be the same.
  
 1. Notice that, even without Application Insights, several statistics appear as charts, such as the frequency of HTTP 500 errors, request frequency, and response time.
 
@@ -58,7 +58,7 @@ The limited set of statistics provided in the Azure portal isn't enough to help 
 
 1. In the App Service menu, under **Settings**, select **Application Insights**. The **Application Insights** pane appears.
 
-    ![Screenshot of web app menu with Application Insights hghlighted.](../media/3-web-app-nav-pane.png)
+    ![Screenshot of web app menu with Application Insights highlighted.](../media/3-web-app-nav-pane.png)
 
 1. Under **Application Insights**, make sure *Collect application monitoring data using Application Insights* is set to **Enable**.
 
@@ -68,7 +68,7 @@ The limited set of statistics provided in the Azure portal isn't enough to help 
     |---|---|
     | New resource name | Azure assigns a unique resource name based on your app service. Accept default or replace with *videoappinsights*.  |
     |Location | Accept the default, using the location from when you created the web app resource. |
-    |Log Analytics Workspace " Accept the default created by Azure.
+    |Log Analytics Workspace | Accept the default created by Azure. |
 
 
 1. Select **Apply**. If the **Apply monitoring settings** dialog box appears, select **Yes**.
@@ -99,6 +99,6 @@ Because you can inject the Application Insights JavaScript SDK into the video we
 
 1. On the **Configuration** pane, in the command bar, select **Save**, and then on **Save changes**, select **Continue**.
 
-1. When the settings have been updatd, in the resource menu, select **Overview**. The **Overview** page for your App Service appears.
+1. When the settings have been updated, in the resource menu, select **Overview**. The **Overview** page for your App Service appears.
 
 1. In the command bar, select **Restart**, and when prompted to **Restart app**, select **Yes**.
