@@ -17,30 +17,34 @@ Knowing when *not* to choose SignalR is just as important as knowing when to cho
 
 SignalR is as durable as the underlying connection. In other words, if there's cause for concern with the connectivity of a client application &mdash; SignalR is *not* the best choice.
 
-Another consideration is the scalability of SignalR. Depending on the number of concurrent connected clients, your web server could experience contention when reaching its limits. In situations like this, you'd likely need to deploy the application to a server farm and use a backplane. Implementing this on your own can be tedious. Alternatively, you could leverage the [**Azure SignalR Service**](https://docs.microsoft.com/azure/azure-signalr). In addition to having solved most of the networking challenges you might face when trying to implement this yourself, there are various [resiliency and disaster recovery](https://docs.microsoft.com/azure/azure-signalr/signalr-concept-disaster-recovery) mechanisms in place to help alleviate problems.
+Another consideration is the scalability of SignalR. Depending on the number of concurrently connected clients, your web server could experience contention when reaching its limits. In situations like this, you'd likely need to deploy the application to a server farm and use a backplane. Implementing this on your own can be tedious. Alternatively, you could leverage the [**Azure SignalR Service**](https://docs.microsoft.com/azure/azure-signalr). In addition to having solved most of the networking challenges you might face when trying to implement this yourself, there are various [resiliency and disaster recovery](https://docs.microsoft.com/azure/azure-signalr/signalr-concept-disaster-recovery) mechanisms in place to help alleviate problems.
 
 ### Valid use cases
 
-SignalR is not a replacement for traditional HTTP requests. Applications could leverage SignalR to know when to make specific HTTP requests, in this way they compliment each other. There are many valid use cases for SignalR.
+SignalR is not a replacement for traditional HTTP requests. Applications could leverage SignalR to know when to make specific HTTP requests, in this way they complement each other. There are many valid use cases for SignalR.
 
-Good candidates for SignalR:
+The following list represents good candidates for SignalR:
 
-- Apps that require high frequency updates from the server:
+- *Apps that require high-frequency updates from the server:*
   - Gaming
   - Social networks
   - Voting
   - Auction
   - GPS apps
-- Dashboards and monitoring apps:
+- *Dashboards and monitoring apps:*
   - Company dashboards
   - Live maps
   - Instant sales updates
   - Travel alerts
-- Collaborative apps:
+  - CI/CD pipeline pages
+- *Collaborative and multi-user interactive apps:*
   - Whiteboard apps
-  - Team meeting software are examples of collaborative apps.
-- Apps that require notifications:
-  - Email
-  - Chat
+  - Team meeting apps
+  - Document sharing apps
+  - Live Share
+- *Apps that require notifications:*
+  - Email apps
+  - Chat apps
   - Turn-based games
   - Time series reporting
+  - GitHub Actions, issue and pull request systems
