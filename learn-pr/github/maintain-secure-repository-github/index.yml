@@ -3,15 +3,16 @@ uid: learn.github.maintain-secure-repository-github
 metadata:
   title: "Maintain a secure repository by using GitHub best practices"
   description: Learn best practices for building, hosting, and maintaining a secure repository on GitHub.
-  ms.date: 06/26/2020
-  author: tpetchel
-  ms.author: thpetche
+  ms.date: 09/27/2021
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Maintain a secure repository by using GitHub best practices"
 summary: Learn best practices for building, hosting, and maintaining a secure repository on GitHub.
 abstract: |
   In this module, you will:
+  - Identify the tools and GitHub features to establish a secure development strategy 
   - Enable vulnerable dependency detection for private repositories
   - Detect and fix outdated dependencies with security vulnerabilities
   - Automate the detection of vulnerable dependencies with Dependabot
@@ -37,8 +38,9 @@ products:
 units:
 - learn.github.maintain-secure-repository-github.1-introduction
 - learn.github.maintain-secure-repository-github.2-how-to-maintain-secure-repository
-- learn.github.maintain-secure-repository-github.3-security-strategy-essentials
+- learn.github.maintain-secure-repository-github.5-security-strategy-essentials
+- learn.github.maintain-secure-repository-github.3-security-automation
 - learn.github.maintain-secure-repository-github.4-knowledge-check
-- learn.github.maintain-secure-repository-github.5-summary
+- learn.github.maintain-secure-repository-github.6-summary
 badge:
   uid: learn.github.maintain-secure-repository-github.badge
