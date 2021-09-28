@@ -38,9 +38,9 @@ products:
 units:
 - learn.github.maintain-secure-repository-github.1-introduction
 - learn.github.maintain-secure-repository-github.2-how-to-maintain-secure-repository
-- learn.github.maintain-secure-repository-github.5-security-strategy-essentials
+- learn.github.maintain-secure-repository-github.3-security-strategy-essentials
 - learn.github.maintain-secure-repository-github.3-security-automation
 - learn.github.maintain-secure-repository-github.4-knowledge-check
-- learn.github.maintain-secure-repository-github.6-summary
+- learn.github.maintain-secure-repository-github.5-summary
 badge:
   uid: learn.github.maintain-secure-repository-github.badge

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.maintain-secure-repository-github.5-security-strategy-essentials
+uid: learn.github.maintain-secure-repository-github.3-security-strategy-essentials
 title:  Exercise - Add a .gitignore file
 metadata:
   title:  Exercise - Add a .gitignore file
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-security-strategy-essentials.md)]
+  [!include[](includes/3-security-strategy-essentials.md)]
