@@ -25,7 +25,7 @@ Data Factory supports data workflow pipelines. These pipelines are a logical gro
 
 ## Unit prerequisites
 
-**Microsoft Azure Account**: You will need a valid and active Azure account for the Azure labs. If you do not have one, you can sign up for a [free trial](https://azure.microsoft.com/free/)
+**Microsoft Azure Account**: You will need a valid and active Azure account for the Azure labs. If you do not have one, you can sign up for a [free trial](https://azure.microsoft.com/free/).
 
 - If you are a Visual Studio Active Subscriber, you are entitled to Azure credits per month. See this [link](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) to find out more, including how to activate and start using your monthly Azure credit.
 
@@ -41,7 +41,7 @@ To complete this module, you will need to deploy an Azure Data Factory instance 
 
 1. Under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the *Search services and marketplace** search box, search for and select *Data Factory*. The **Data Factory** pane appears.
+1. In the *Search services and marketplace* search box, search for and select *Data Factory*. The **Data Factory** pane appears.
 
 1. Select **Create**. The **Create Data Factory** pane appears.
 
