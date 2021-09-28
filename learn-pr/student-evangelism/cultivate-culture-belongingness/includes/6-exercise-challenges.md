@@ -1,8 +1,8 @@
-In this exercise, you'll reflect on some statements. A 'yes' answer to any of the questions is a good indicator that the situation might affect your behavior in the workplace towards others.
+In this exercise, you'll reflect on some statements. A "yes" answer to any of the questions is a good indicator that the situation might affect your behavior in the workplace toward others.
 
 ## Reflect on your own assumptions of who should be in tech
 
-Whether hidden or overt, your biases and assumptions can direct your actions, thoughts, and feelings towards others.
+Whether hidden or overt, your biases and assumptions can direct your actions, thoughts, and feelings toward others.
 
 - Can you think of a time when you made an assumption about your ability to succeed because you either did or didn't think of yourself as a "tech person?"
 
