@@ -37,7 +37,7 @@ A community that invites you in and provides support can make a significant diff
 
 Belonging isn't about aptitude, or whether you believe you can do something. Belonging is about how you feel about yourself. It's also about whether you think of yourself as a "tech person" or as part of the "tech community."
 
-This component of belonging is related to mindset. The idea that someone can be "tech person", or that a defined "tech community" exists, can indicate a fixed mindset about who is in tech.
+This component of belonging is related to mindset. The idea that someone can be "tech person," or that a defined "tech community" exists, can indicate a fixed mindset about who is in tech.
 
 > [!NOTE]
 > A *fixed mindset* is a mental attitude that dictates that you can only do certain things. With a fixed mindset, you believe that basic abilities such as intelligence and talent are fixed traits that you were born with and cannot change.
