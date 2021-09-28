@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/27/2021
+  ms.date: 09/28/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
@@ -18,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Your Compliance auditors wants to ensure as employees change jobs or leave the company that their privileges are also changed or revoked. They are especially concerned about the Administrator group. To address their concerns. you implement which of the following? Select one."
+  - content: "The compliance auditors wants to ensure as employees change jobs or leave the company that their privileges are also changed or revoked. They are especially concerned about the Administrator group. To address their concerns. you implement which of the following?"
     choices:
     - content: "Access reviews"
       isCorrect: true
@@ -29,7 +28,7 @@ quiz:
     - content: "JIT virtual machine access"
       isCorrect: false
       explanation: "JIT VM access would just restrict when a user could access a VM, not validate if they should still be allowed access"
-  - content: "Identity Protection has reported that a user’s credentials have been leaked. According to policy, the user’s password must be reset. Which Azure AD role can reset the password? Select one."
+  - content: "Identity Protection has reported that a user’s credentials have been leaked. According to policy, the user’s password must be reset. Which Azure AD role can reset the password?"
     choices:
     - content: "Global Administrator"
       isCorrect: true
@@ -40,38 +39,38 @@ quiz:
     - content: "Security Operator"
       isCorrect: false
       explanation: "The security operator does not have enough permissions to reset a user password."
-  - content: "Identity Protection identifies risks in the following classifications, except? Select one."
+  - content: "Identity Protection identifies risks in which of the following classifications?"
     choices:
-    - content: "Anonymous IP address"
+    - content: "Specific IP address"
       isCorrect: false
-      explanation: "Recognizing that a user signed in from and anonymous IP is part of Identity Protection."
+      explanation: "Recognizing that a user signed in from a specific IP is not part of Identity Protection."
     - content: "Atypical travel"
-      isCorrect: false
+      isCorrect: true
       explanation: "Identity Protection can recognize logins from unexpected locations and times."
     - content: "Unregistered device"
-      isCorrect: true
-      explanation: "Unregistered device. Valid Identity Protection risks include all choices except Unregistered device. Other risks classifications are Malware linked IP address, Leaked credentials, and Azure AD threat intelligence."
-  - content: "You have implemented Identity Protection and are reviewing the Risky users report. For each reported event you can choose any of the following actions, except? Select one."
+      isCorrect: false
+      explanation: "Unregistered device is not a valid choice. Other risks classifications are Malware linked IP address, Leaked credentials, and Azure AD threat intelligence."
+  - content: "You have implemented Identity Protection and are reviewing the Risky users report. For each reported event you can choose any of the following actions?"
     choices:
     - content: "Confirm user compromise"
-      isCorrect: false
+      isCorrect: true
       explanation: "Confirming that a user was compromised is a valid option when reviewing identity projection reports."
     - content: "Delete the risk event"
-      isCorrect: true
+      isCorrect: false
       explanation: "Delete the risk event. When reviewing risk events, you should evaluate each risk and then take action to block the user, confirm the compromise, dismiss the risk, reset the user password, or investigate further using Azure Advanced Threat Protection."
-    - content: "Dismiss user risk"
+    - content: "Dismiss user account"
       isCorrect: false
-      explanation: "It is possible to dismiss or ignore the risk, if you feel it is a false positive or valid behavior."
-  - content: "Conditional access policies can help with all the following, except? Select one."
+      explanation: "It is not possible to dismiss or delete the user from Identity Protection review."
+  - content: "Conditional Access can be used enable which of the actions listed below?"
     choices:
-    - content: "Block or grant access from specific locations"
+    - content: "Block or grant access from specific time of day."
       isCorrect: false
-      explanation: "The ability to block or grant access based on location is a valid option."
+      explanation: "The ability to block or grant access based on time of day is not a valid option."
     - content: "Designate privileged user accounts."
-      isCorrect: true
+      isCorrect: false
       explanation: "Designate privileged user accounts. Conditional Access policies at their simplest are if-then statements, if a user wants to access a resource, then they must complete an action."
     - content: "Require multifactor authentication."
-      isCorrect: false
+      isCorrect: true
       explanation: "It is possible to force a user, group or users, or all users to use MFA with a conditional access policy."
   - content: "Which licensing plan supports Identity Protection?"
     choices:

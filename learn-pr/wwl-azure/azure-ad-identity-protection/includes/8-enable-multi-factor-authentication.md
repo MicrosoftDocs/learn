@@ -9,7 +9,7 @@ To enable MFA, go to the User Properties in Azure Active Directory, and then the
 
 All users start out Disabled. When you enroll users in per-user Azure AD Multi-Factor Authentication, their state changes to Enabled. When enabled users sign in and complete the registration process, their state changes to Enforced. Administrators may move users between states, including from Enforced to Enabled or Disabled.
 
-## Enabling MFA for Global Admins
+## Enable MFA for Global Admins
 
 Azure MFA is included free of charge for global administrator security. Enabling MFA for global administrators provides an added level of security when managing and creating Azure resources like virtual machines, managing storage, or using other Azure services. Secondary authentication includes phone call, text message, and the authenticator app. 
 

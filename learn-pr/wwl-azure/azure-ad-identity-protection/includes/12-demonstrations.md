@@ -1,7 +1,7 @@
 
 In this set of try this exercises, you will test conditional access. 
 
-## Task 1 - Configure Conditional Access (require MFA)
+## Task 1 - Configure conditional access (require MFA)
 
 > [!NOTE] 
 > This task requires a user account, AZ500User1. If you want to show the MFA verification, the user account must have a phone number. 
@@ -35,7 +35,7 @@ In this task, we will review conditional access policy settings and create a pol
 1. If you do not have a phone number associated with the user, this demonstrates that MFA is in effect. 
 1. You may want to return to the **AZ500Policy1** and turn the policy **Off**.
 
-## Task 2 - Access Review
+## Task 2 - Access review
 
 In this task, we will configure an access review. 
 

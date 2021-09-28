@@ -15,7 +15,7 @@ To prevent repeated MFA attempts as part of an attack, the account lockout setti
 If a user's device has been lost or stolen, you can block authentication attempts for the associated account.
 
 
-## Fraud Alerts
+## Fraud alerts
 
 * **Block user when fraud is reported** - Configure the fraud alert feature so that your users can report fraudulent attempts to access their resources. Users can report fraud attempts by using the mobile app or through their phone. Block user when fraud is reported: If a user reports fraud, their account is blocked for 90 days or until an administrator unblocks their account. An administrator can review sign-ins by using the sign-in report and take appropriate action to prevent future fraud. An administrator can then unblock the user's account.
 
