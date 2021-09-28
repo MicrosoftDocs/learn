@@ -2,7 +2,7 @@ Imagine you're part of an analytics team that needs to build a new data pipeline
 
 Your supervisor requested that you investigate the ability to execute Azure Databricks jobs from Azure Data Factory, passing in parameters used for data processing, and returning parameters used to continue the pipeline processing.
 
-## Learning objectives 
+## Learning objectives
 
 In this module, you'll:
 
@@ -91,7 +91,7 @@ To complete this module, you will need to deploy an Azure Data Factory instance 
 
 1. After validation succeeds, select **Create**.
 
-1. After deployment completes, select **Go to resource**. Your *Azure Databricks Servicee* pane appears.
+1. After deployment completes, select **Go to resource**. Your *Azure Databricks * pane appears.
 
 ### Create a cluster
 
