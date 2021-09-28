@@ -2,7 +2,7 @@ At the beginning of this module, you needed to block new deployments from untrus
 
 In this module, you learned how Azure policy for Kubernetes can be used to achieve this goal. You created an AKS cluster with the Azure policy add-on enabled. After that, you assigned a policy to that cluster to prevent pulling from a non-authorized container registry. You also assigned an initiative, which is a group of policies to the same cluster. Finally, you were able to show the compliance state of your cluster against these policies.
 
-Without this solution, your team would be losing time by manually creating company policies, asking coworkers not to do certain things and potentially opening your clusters to security and operational issues. In the long run, you've saved the company thousands of dollars in time by automating that manual work using Azure policies for AKS.
+Without this solution, your team would be wasting time by manually creating company policies, asking coworkers not to do certain things and potentially opening your clusters to security and operational issues. In the long run, you've saved the company thousands of dollars in time by automating that manual work using Azure policies for AKS.
 
 ## Clean up resources
 
