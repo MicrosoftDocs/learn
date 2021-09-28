@@ -3,9 +3,9 @@ These are some simple Try-This exercises that you can try on your own using an e
 
 ##  VNet Peering
 
-**Note:** This lab requires two virtual machines.Each virtual machine should be in a different virtual network. For these instructions, we have AZ500vm01, AZ500vm02, AZ500-vnet, AZ500-vnet1, and az500-rg.  
+   This lab requires two virtual machines.Each virtual machine should be in a different virtual network. For these instructions, we have AZ500vm01, AZ500vm02, AZ500-vnet, AZ500-vnet1, and az500-rg.  
 
-**Note:** To save time, you can connect to each virtual machine. Also, it might helpful to edit the default.htm page on each machine, so the page provides the virtual machine name. For example, This is AZ500vm01.
+   To save time, you can connect to each virtual machine. Also, it might helpful to edit the default.htm page on each machine, so the page provides the virtual machine name. For example, This is AZ500vm01.
 
 In this demonstration, you will configure and test VNet peering.
 
@@ -57,7 +57,7 @@ In this task, you will configure VNet peering and test the previous connection. 
 
 ## Azure Firewall
 
-**Note:** This task requires a virtual network with two subnets, Subnet1 and Jumpnet. Subnet1 has the 10.0.0.0/24 address range. Jumpnet has the 10.0.1.0/24 address range. Subnet1 includes a Windows virtual machine. Your resource names may be different.
+   This task requires a virtual network with two subnets, Subnet1 and Jumpnet. Subnet1 has the 10.0.0.0/24 address range. Jumpnet has the 10.0.1.0/24 address range. Subnet1 includes a Windows virtual machine. Your resource names may be different.
 
 **Configure the firewall subnet**
 

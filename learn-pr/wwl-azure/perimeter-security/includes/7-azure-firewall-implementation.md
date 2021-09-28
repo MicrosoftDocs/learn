@@ -10,13 +10,13 @@ Network traffic is subjected to the configured firewall rules when you route you
 > [!div class="mx-imgBorder"]
 > ![In this diagram, an azure firewall is in the middle. Bi-directional arrows show communication with two spoke VNets and an on-premises office building. Traffic is flowing between the internet and the firewall, but some traffic is denied.](../media/az500-firewall-2.png)
 
-### FQDN tag
+### Fully Qualified Domain Name (FQDN) tag
 
 An FQDN tag represents a group of fully qualified domain names (FQDNs) associated with well known Microsoft services. You can use an FQDN tag in application rules to allow the required outbound network traffic through your firewall.
 
 For example, to manually allow **Windows Update** network traffic through your firewall, you need to create multiple application rules per the Microsoft documentation. Using FQDN tags, you can create an application rule, include the Windows Updates tag, and now network traffic to Microsoft Windows Update endpoints can flow through your firewall.
 
-### Infrastructure FQDNs
+### Infrastructure qualified domain names
 
 Azure Firewall includes a built-in rule collection for infrastructure FQDNs that are allowed by default. These FQDNs are specific for the platform and can't be used for other purposes.
 
@@ -25,7 +25,7 @@ The following services are included in the built-in rule collection:
 * Managed disks status storage access
 * Azure Diagnostics and Logging (MDS)
 
-### Logs and Metrics
+### Logs and metrics
 
 You can monitor Azure Firewall using firewall logs. You can also use activity logs to audit operations on Azure Firewall resources.
 
