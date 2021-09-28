@@ -18,7 +18,7 @@ In the past, the field of tech has had many challenges when it comes to creating
 
 - Far fewer women than men.
 
-- Far lower percentage of people who are Black or Latinx than people who are white.
+- Far lower percentage of people who are Black or Latinx than people who are White.
 
 Challenges like these narrow the range of backgrounds and lived experiences in tech. This fact is a problem because diverse teams are essential.
 
