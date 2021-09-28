@@ -1,5 +1,3 @@
-# Exercise - Add a .gitignore file
-
 In this exercise, you use GitHub to validate your knowledge on adding a .gitignore file to your GitHub repository.
 
 This GitHub exercise is graded automatically once you have attempted a solution to the challenge. The results of your actions, as well as helpful feedback, are provided in real-time within the `grade-learner` workflow logs.
