@@ -1,4 +1,4 @@
-Imagine that you work for a video production company. After a few months of planning, your team successfully migrated its technology stack to Azure Kubernetes Service (AKS).
+Imagine that you work for a browser based video game company. After a few months of planning, your team successfully migrated its technology stack to Azure Kubernetes Service (AKS).
 
 You just came out of a review with the security and compliance teams. They expressed concerns about the compliance status of your cluster. For example, they only want you to deploy images from trusted registries.
 

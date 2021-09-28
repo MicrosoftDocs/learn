@@ -8,7 +8,7 @@ The first step would be to create an AKS cluster that has Azure policies enabled
 > [!NOTE]
 > If the cluster already exists, you can activate the addon by running the command below
 >
-> ```bash
+> ```azurecli-interactive
 > az aks enable-addons --addons azure-policy --name MyAKSCluster --resource-group MyResourceGroup
 > ```
 
@@ -25,7 +25,7 @@ In this exercise, we will be using Azure cloud shell to run the commands. Feel f
 
 1. From **Azure Portal** click on the **Cloud Shell** icon at the top of the screen to the right of the search bar
 
-   ![Decision flow diagram illustrating the process of finding a bookmark in our Azure Cosmos DB back-end and returning a response. ](../media/3-create-cloud-shell-instance.png)
+   ![screenshot of Azure Portal on the cloud shell creation screen](../media/3-create-cloud-shell-instance.png)
 
 2. Select the appropriate Subscription and click **Create storage**
 
@@ -33,7 +33,7 @@ In this exercise, we will be using Azure cloud shell to run the commands. Feel f
 
 4. Register the resource providers and preview features by entering the command below to Cloud Shell.
 
-     ```bash
+     ```azurecli-interactive
     # Log in first with az login if you're not using Cloud Shell
     # Provider register: Register the Azure Policy provider
     az provider register --namespace Microsoft.PolicyInsights
@@ -47,7 +47,7 @@ Now that we have the provider registered we can create a new resource group and 
 
 1. Create a resource group
 
-   ```bash
+   ```azurecli-interactive
    az group create --location eastus --name videogamerg
    ```
 
@@ -55,19 +55,19 @@ Now that we have the provider registered we can create a new resource group and 
     > [!NOTE]
     > For production workloads, you would want to further customize the creation of your cluster to ensure it meets your security and governance requirements. We are going with a simple cluster purely for training purposes.
     
-    ```bash
+    ```azurecli-interactive
     az aks create --name videogamecluster --resource-group videogamerg --generate-ssh-keys
     ```
     
 3. Enable Azure Monitor for the newly created cluster
 
-    ```bash
+    ```azurecli-interactive
     az aks enable-addons -a monitoring --name videogamecluster --resource-group videogamerg
     ```
 
 4. Enable Azure Policies for the cluster
 
-    ```bash
+    ```azurecli-interactive
     az aks enable-addons --addons azure-policy --name videogamecluster --resource-group videogamerg
     ```
 
@@ -85,5 +85,5 @@ Now that we have the provider registered we can create a new resource group and 
 
 1. You should see four charts showing the state of your cluster.
 
-   ![Decision flow diagram illustrating the process of finding a bookmark in our Azure Cosmos DB back-end and returning a response. ](../media/3-monitoring-activated.png)
+   ![a screenshot showing the four main charts that get displayed when navigate to container insights](../media/3-monitoring-activated.png)
 

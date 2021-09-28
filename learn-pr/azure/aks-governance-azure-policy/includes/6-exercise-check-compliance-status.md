@@ -2,27 +2,21 @@ In the previous section you saw how Azure policies can be used to easily govern 
 
 ## Using the Azure Portal to see non-compliant pods
 
-1. We begin by enabling monitoring on the cluster. 
-
-   ```bash
-   az aks enable-addons -a monitoring -n videogamecluster -g videogamerg
-   ```
-
 2. In Azure Portal type policy in the search bar at the top and select **Policy**
 
-3. At the top you can set the scope to your cluster resource group by clicking on the blue **...**. Select the Subscription and the resource group where the AKS cluster is sitting and click ok at the bottom.
+3. At the top you can set the scope to your cluster resource group by clicking on the **...** Select the Subscription and the resource group where the AKS cluster is sitting and click **Select** at the bottom.
 
-   ![resources not compliant ](../media/6-find-the-right-scope.png)
+   ![screenshot showing how to set the scope of what policies you're interested in viewing](../media/6-find-the-right-scope.png)
 
-   Here we see that we have non-compliant resources for both policies we deployed. The resources are not compliant with 3 of the policies from the **Kubernetes cluster pod security restricted standards for Linux-based workloads for videogamerg** initiative. Clicking on that initiative will show which of the polices are the 3 that are not compliant.
+   Here we see that we have non-compliant resources for both policies we deployed. The resources are not compliant with 3 of the policies from the **Kubernetes cluster pod security restricted standards for Linux-based workloads for videogamerg** initiative. Clicking on that initiative will show which of the nine polices are the three that are not compliant.
 
-   ![resources not compliant ](../media/6-not-compliant-cluster.png)
+   ![screenshot showing the policies that the resources are not compliant with](../media/6-not-compliant-cluster.png)
 
 4. Click on the **Kubernetes cluster containers should only use allowed images** policy. You will see the cluster that has the non-compliant pod in it
 
 5. Click on the cluster to get more details on which pod is not compliant. Here you will see the name of the specific pod that is not compliant. You will see that it is only the first pod that was deployed that is not compliant. This is an effective way to audit compliance status of your cluster.
 
-   ![resources not compliant ](../media/6-non-compliant-pod.png)
+   ![screenshot showing the resources that are not compliant](../media/6-non-compliant-pod.png)
 
 ## Remove non compliant pod and check for compliance
 
@@ -34,6 +28,10 @@ Now that we have found the pod that is not compliant, we will go ahead and delet
    kubectl delete -f nginxfromdocker.yaml
    ```
 
-2. Give it a few minutes then head back to the policy to to see if there are still any uncompliant pods under that policy. You will find that your cluster is now in compliance with the policy.
+2. It might take up to 45 minutes for the changes to reflect on the portal. After waiting, head back to the policy to to see if there are still any uncompliant pods under that policy. You will find that your cluster is now in compliance with the policy.
 
-   ![resources now compliant ](../media/6-cluster-now-compliant.png)
+   ![screenshot showing that the resource is now compliant](../media/6-cluster-now-compliant.png)
+
+## Summary
+
+In this module, you learned Azure policy is and how to use it for your Kubernetes cluster. You also learned how to troubleshoot your deployments and identify pods that are not being deployed because of a deny policy it is not compliant with. You also learned how to use Azure portal to see uncompliant resources and which policies they are not compliant with. You also resolved one of the issues by deleting the uncompliant pod you first created. Now that you have added and tested out a Policy and an Initiative, you can go through the other in-built policies for Kubernetes and find those that suit your business needs. 
