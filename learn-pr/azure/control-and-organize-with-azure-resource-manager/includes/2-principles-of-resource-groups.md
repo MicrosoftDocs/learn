@@ -42,7 +42,7 @@ Let's walk through the steps you'd take to create a resource group in the Azure 
 
 1. On the Azure portal or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the *Search services and marketplace* search box, search for and select *Resource group* in the search box. The **Resource group** pane appears.
+1. In the *Search services and marketplace* search box, search for and select *Resource group*. The **Resource group** pane appears.
 
 1. Select **Create**. The **Create a resource group** pane appears.
 
@@ -58,7 +58,7 @@ Let's walk through the steps you'd take to create a resource group in the Azure 
 
     :::image type="content" source="../media/2-create-resource-group.png" alt-text="Screenshot of Azure portal showing the resource group creation with subscription, resource group, and region entered.":::
 
-1. Select **Review + Create** and after validation passes, select **Create** to create the resource group.
+1. Select **Review + Create**, and after validation passes, select **Create** to create the resource group.
 
 That's it, you've created a resource group that you can now use when you deploy Azure resources. Let's take a closer look at this resource group and some important things to consider.
 
@@ -98,7 +98,7 @@ That's it, you've created a resource group that you can now use when you deploy 
     | Name | Enter *msftlearn-vnet1*. |
     | Region | From the dropdown list, select a location close to you. |
 
-1. Select **Review + create**, and then, after validation passes, select **Create** to add the virtual network to your resource group.
+1. Select **Review + create**, and after validation passes, select **Create** to add the virtual network to your resource group.
 
 1. Repeat the virtual network creation steps again to create one more virtual network. Make sure to place the virtual network in the resource group that you created earlier, and name the virtual network *msftlearn-vnet2*.
 
