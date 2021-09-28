@@ -3,7 +3,7 @@ uid: learn.visual-studio-test-concepts.4-different-types-of-testing
 title: Different types of testing and the testing pyramid
 metadata:
   title: Different types of testing and the testing pyramid
-  description: You may hear of many different types of testing including unit testing, performance testing, load testing, UI testing, and so on. These types of tests all have different advantages in improving software quality.
+  description: There are many different types of testing, including unit testing, performance testing, load testing, and UI testing. These types of tests all have different advantages in improving software quality.
   ms.date: 6/28/2021
   author: kendrahavens
   ms.author: kehavens
@@ -18,18 +18,18 @@ quiz:
     choices:
     - content: "Integration"
       isCorrect: false
-      explanation: "Close! Integration tests are likely the second most common type of test as they are one step up from testing individual functions."
+      explanation: "Close! Integration tests are likely the second most common type of test, because they are one step up from testing individual functions."
     - content: "UI"
       isCorrect: false
       explanation: "UI tests are often less common because they've historically been more expensive to maintain, run, and write."
     - content: "Unit"
       isCorrect: true
-      explanation: "Unit tests are the most common type of tests in sheer number because they're the easiest to write and least expensive to run."
+      explanation: "Unit tests are the most common type of tests in sheer number, because they're the easiest to write and least expensive to run."
   - content: "If I want to test how my app scales with multiple users using it, what type of test am I likely to write?"
     choices:
     - content: "Load"
       isCorrect: true
-      explanation: "Load testing will help predict how your app does at scale when multiple customers are actually using it in the real world."
+      explanation: "Load testing will help predict how your app does at scale, when multiple customers are actually using it in the real world."
     - content: "Integration"
       isCorrect: false
       explanation: "Integration tests can test how multiple parts of your code integrate together, but would not mimic multiple users using the app."
