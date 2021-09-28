@@ -40,11 +40,11 @@ The Student Ambassadors are a global community of like minded students that shar
 
 The reasons to join are many:
 
-- **Make a difference**: Connect with other students who share your passion in focused Leagues and use tech to solve real-world challenges together. This is your chance to create a global network of peers. Having such a network will help you land a job and unlock opportunities in the future. Microsoft has also been known to hire ambassadors as interns of which some has become full-time employees.
+- **Make a difference**: Connect with other students who share your passion in focused Leagues and use tech to solve real-world challenges together. This is your chance to create a global network of peers. Having such a network will help you land a job and unlock opportunities in the future. Microsoft has also been known to hire ambassadors as interns, of which some have become full-time employees.
 
 - **Grow your skills**: Kick-start your career with training and certifications, support for virtual events, and unique access to experts and mentors from Microsoft. A certification costs money, and as part of the program, you will be able to certify at no cost. Having a certificate in a cloud technology will make your resume stand out.
 
-- **Become a leader in your local tech community**: Host digital events, offer guidance to other students, and earn recognition that separates your resume from the pack. You will be trained in presenting on different technology topics. Being able to present something well, is an important skill to have at your job and as you advance within the company.
+- **Become a leader in your local tech community**: Host digital events, offer guidance to other students, and earn recognition that separates your resume from the pack. You will be trained in presenting on different technology topics. Being able to present something well is an important skill to have at your job and as you advance within the company.
 
 What you'll do:
 
@@ -77,7 +77,7 @@ In a hackathon, you build something in an attempt to solve a problem.
 How does it work? A Hackathon consists of a series of steps that happens in a specific order:
 
 1. **Form a team**. During a hackathon, you form a team around a cause or solution and then build a software-based project over a set period of time.
-1. **Build a prototype**. At this point, you, and your team, tries to build a prototype realizing your idea.
+1. **Build a prototype**. At this point, you and your team try to build a prototype to realize your idea.
 1. **Showcase to judges**. Now that you have a prototype, hopefully, it's time to present it. In this part, it's important to talk your idea, and your prototype. Make sure you prepare this part well, it's not always the best tech demo that wins, but the best presented one.
 
 So why is a Hackathon worth your time?
