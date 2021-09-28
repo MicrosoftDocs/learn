@@ -7,7 +7,7 @@ Choosing the correct authentication method is the first concern for organization
 
 Identity is the new control plane of IT security, so authentication is an organization’s access guard to the new cloud world. Organizations need an identity control plane that strengthens their security and keeps their cloud apps safe from intruders.
 
-### Authentication Methods
+### Authentication methods
 
 **Cloud Authentication** - When you choose this authentication method, Azure AD handles users' sign-in process. Coupled with seamless single sign-on (SSO), users can sign in to cloud apps without having to reenter their credentials. With cloud authentication, you can choose from two options:
 - Azure AD password has Synchronization
@@ -15,7 +15,7 @@ Identity is the new control plane of IT security, so authentication is an organi
 
 **Federated Authentication** - When you choose this authentication method, Azure AD hands off the authentication process to a separate trusted authentication system, such as on-premises Active Directory Federation Services (AD FS), to validate the user’s password. The authentication system can provide additional advanced authentication requirements. Examples are smartcard-based authentication or third-party multifactor authentication.
 
-### Decision Tree
+### Decision tree
 
 > [!div class="mx-imgBorder"]
 > ![Authentication decision tree described in the text.](../media/az500-authentication-decision-tree.png)

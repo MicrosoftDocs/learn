@@ -8,7 +8,7 @@
 
 + Supports user sign-in into all web browser-based applications and into Microsoft Office client applications that use modern authentication.
 + Sign-in usernames can be either the on-premises default username (userPrincipalName) or another attribute configured in Azure AD Connect (known as Alternate ID).
-+ Works seamlessly with conditional access features such as Multi-Factor Authentication to help secure your users.
++ Works seamlessly with conditional access features such as Azure Active Directory Multi-Factor Authentication to help secure your users.
 + Integrated with cloud-based self-service password management, including password writeback to on-premises Active Directory and password protection by banning commonly used passwords.
 + Multi-forest environments are supported if there are forest trusts between your AD forests and if name suffix routing is correctly configured.
 + PTA is a free feature, and you don't need any paid editions of Azure AD to use it.
