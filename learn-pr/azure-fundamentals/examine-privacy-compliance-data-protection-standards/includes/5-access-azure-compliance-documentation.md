@@ -26,8 +26,11 @@ The legal team at Tailwind Traders wants to learn more about how PCI DSS relates
 As an optional exercise, here you follow along.
 
 1.  Go to the [Azure compliance documentation](/azure/compliance/?azure-portal=true).
-2.  Under **Financial services**, select **PCI DSS**.<br>:::image type="content" source="../media/5-financial-services-eb9dc82d.png" alt-text="A screenshot of the Azure compliance documentation page. The financial service category is shown, and PCI DSS is highlighted.":::
-    <br>There you see:
+2.  Under **Financial services**, select **PCI DSS**.
+
+    :::image type="content" source="../media/5-financial-services-eb9dc82d.png" alt-text="A screenshot of the Azure compliance documentation page. The financial service category is shown, and PCI DSS is highlighted.":::
+    
+    There you see:
     
      -  An overview of the PCI DSS standard.
      -  How PCI DSS applies to Microsoft.

@@ -33,7 +33,9 @@ To access the DPA:
 
 1.  Go to the [Licensing Terms and Documentation](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?azure-portal=true).
 2.  In the search bar, enter **DPA**.
-3.  From the search results, locate the link to the DPA in your preferred language. Alternatively, in the search bar that appears, enter your preferred language to filter the results. Here's an example that retrieves the English version of the DPA.<br>:::image type="content" source="../media/3-dpa-english-5b10f669.png" alt-text="A screenshot of the Licensing Terms and Documentation page that shows how to download the English version of the Data Protection Addendum.":::
+3.  From the search results, locate the link to the DPA in your preferred language. Alternatively, in the search bar that appears, enter your preferred language to filter the results. Here's an example that retrieves the English version of the DPA.
+    
+    :::image type="content" source="../media/3-dpa-english-5b10f669.png" alt-text="A screenshot of the Licensing Terms and Documentation page that shows how to download the English version of the Data Protection Addendum.":::
     
 
 Transparency is important when it comes to how a cloud provider communicates its privacy policies and how it treats your data. The Microsoft Privacy Statement, the OST, and the DPA detail Microsoft's commitment to protecting data and privacy in the cloud.

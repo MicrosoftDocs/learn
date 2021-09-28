@@ -20,11 +20,23 @@ As an optional exercise, let's take a brief look at the Trust Center's entry for
 Access to the Trust Center doesn't require an Azure subscription or a Microsoft account.
 
 1.  Go to the [Trust Center](https://www.microsoft.com/trust-center?rtc=1?azure-portal=true).
-2.  Locate the **Additional resources** section on the page. Under **Compliance offerings**, select **Learn more**.<br>:::image type="content" source="../media/4-trust-center-compliance-cc462b78.png" alt-text="A screenshot of the compliance offerings section on the Trust Center.":::
-    <br>Under the Regulatory &amp; industry compliance section, click **Microsoft compliance offerings**.<br><br>You're taken to [Microsoft compliance offerings](/microsoft-365/compliance/offering-home?azure-portal=true).<br><br>The offerings are grouped into four categories: **Global**, **US Government**, **Industry**, and **Regional**.<br><br>
-3.  Under **Global**, select **ISO 27001**.<br>:::image type="content" source="../media/4-iso-27001-cbcd8223.png" alt-text="A screenshot of the Microsoft compliance offerings page. The global category is shown, and ISO 27001 is highlighted.":::
-    <br>The ISO 27001 Information Security Management Standards page is typical of the type of compliance information we provide.
-4.  Briefly review the documentation for ISO/IEC 27001.<br>You see:
+2.  Locate the **Additional resources** section on the page. Under **Compliance offerings**, select **Learn more**.
+
+    :::image type="content" source="../media/4-trust-center-compliance-cc462b78.png" alt-text="A screenshot of the compliance offerings section on the Trust Center.":::
+    
+    Under the Regulatory &amp; industry compliance section, click **Microsoft compliance offerings**.
+    
+    You're taken to [Microsoft compliance offerings](/microsoft-365/compliance/offering-home?azure-portal=true).
+    
+    The offerings are grouped into four categories: **Global**, **US Government**, **Industry**, and **Regional**.
+3.  Under **Global**, select **ISO 27001**.
+    
+    :::image type="content" source="../media/4-iso-27001-cbcd8223.png" alt-text="A screenshot of the Microsoft compliance offerings page. The global category is shown, and ISO 27001 is highlighted.":::
+    
+    The ISO 27001 Information Security Management Standards page is typical of the type of compliance information we provide.
+4.  Briefly review the documentation for ISO/IEC 27001. 
+
+    You see:
     
      -  An overview of the standard.
      -  Which cloud services are in scope.

@@ -8,12 +8,12 @@ In general, *compliance* means to adhere to a law, standard, or set of guideline
 
 [Tailwind Traders](https://www.tailwindtraders.com/?azure-portal=true) is a fictitious home improvement retailer. It operates retail hardware stores across the globe and online.
 
-:::image type="content" source="../media/tailwind-traders-logo-bb86bf6f.png" alt-text="This is a logo for Tailwind Traders, a fictitious home improvement retailer.":::
+:::image type="content" source="../media/tailwind-traders-logo-bb86bf6f.png" alt-text="This is a logo for Tailwind Traders, a fictitious home improvement retailer." border="false":::
 
 
 Tailwind Traders specializes in competitive pricing, fast shipping, and a large range of items. It's looking at cloud technologies to improve business operations and support growth into new markets. By moving to the cloud, the company plans to enhance its shopping experience to further differentiate itself from competitors.
 
-## How will Tailwind Traders protect its data in the cloud and stay compliant?<br>
+## How will Tailwind Traders protect its data in the cloud and stay compliant?
 
 Tailwind Traders is planning its migration to the cloud. It's used to having full control of all of its application data, which is stored on servers that it manages in its datacenter.
 
