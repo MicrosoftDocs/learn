@@ -4,8 +4,6 @@ To interact with a container in Blob storage, you use a `BlobContianerClient` ob
 
 You can get a list of the blobs in a container using `BlobContainerClient`'s `GetBlobsAsync` method. Behind the scenes, this method will make one or more HTTP calls to Azure to list all of the blobs in the container.  Since this method is asynchronous, you need to `await` the results as you read them since they may not all be returned in a single HTTP call to Azure.  The standard pattern for reading the results with a `foreach` loop is shown below.
 
-*Segmented* refers to the separate pages of results returned &mdash; a single call to `ListBlobsSegmentedAsync` is never guaranteed to return all the results in a single page. You may need to call it repeatedly using the `ContinuationToken` it returns to work our way through the pages. This makes the code for listing blobs a little more complex than the code for uploading or downloading, but there's a standard pattern you can use to get every blob in a container.
-
 ```csharp
 AsyncPageable<BlobItem> blobs = containerClient.GetBlobsAsync();
 

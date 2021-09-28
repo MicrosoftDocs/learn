@@ -18,10 +18,6 @@ BlobClient blobClient = containerClient.GetBlobClient(name);
 var response = blobClient.UploadAsync(fileStream);
 ```
 
-## Concurrent access
-
-Other processes may be adding, changing, or deleting blobs as your app is using them. Always code defensively and think about problems caused by concurrency, such as blobs that are deleted right as you try to download from them, or blobs whose contents change when you don't expect them to. For information about using AccessConditions and blob leases to manage concurrent blob access, at the end of this module, see the *Further Reading* section.
-
 ## Exercise
 
 Let's finish your app by adding upload and download code, then deploy it to Azure App Service for testing.
