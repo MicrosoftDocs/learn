@@ -6,11 +6,11 @@ Take a moment to reflect on your own sense of belonging. Try to remember a time 
 
 - Did your manager, teacher, peers, or coworkers contribute to your sense of belonging?
 
-- What affect did these people have on your ability to learn or do your job effectively?
+- What effect did these people have on your ability to learn or do your job effectively?
 
 - What messages from the people around you contributed to your sense of belonging?
 
-- What affect did those messages have on your ability to learn or do your job effectively?
+- What effect did those messages have on your ability to learn or do your job effectively?
 
 ## Reflection 2: Belonging in groups
 
