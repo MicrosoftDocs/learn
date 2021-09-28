@@ -1,0 +1,5 @@
+Now that the team knows about self-regulation and metacognition, they're starting to approach the project strategically. Breaking down larger problems into smaller, more manageable ones has helped some team members feel less overwhelmed. They're also using logbooks for testing and self-regulated learning techniques to iteratively try solutions. Team members work in groups with other members who have different strengths. You've noticed they're helping each other learn. The team's morale is greatly improved, the project feels fun again, and the project schedule is back on track.
+
+You adjusted the training so that team members gauge their own progress in relation to where they started (rather than to each other). You've noticed that team members seem more eager to learn. They also don't view temporary setbacks as failures but as opportunities to learn and grow.
+
+People don't develop a process of self-regulated learning overnight. But people can improve their strategic approach through practice and feedback. By engaging in this practice and encouraging your team members to do the same, you're helping to build a positive learning culture for your team.

@@ -90,7 +90,7 @@ Once you have finalized your terms of use document, use the following procedure 
     > [!div class="mx-imgBorder"]
     > ![Screen image displaying the New terms of use page with configured options highlighted](../media/new-terms-of-use-create.png)
 
-16. When the terms of use is created, you will automatically be redirected to the Conditional access policy page. On the page, in the **Name** box, enter **Enforce ToU**.
+16. When the terms of use is created, you will automatically be redirected to the Conditional Access policy page. On the page, in the **Name** box, enter **Enforce ToU**.
 
 17. Under **Assignments**, select **Users and groups**.
 
@@ -98,7 +98,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 19. In the Select pane, select an account you would like to use to test the terms of use policy.
 
-    If you choose your administrator account, like all conditional access policies, be sure you have another account with enough permissions to change the conditional access policy. This is to ensure your administrator account will not be locked out should the conditional access policy result in an undesirable outcome.
+    If you choose your administrator account, like all Conditional Access policies, be sure you have another account with enough permissions to change the Conditional Access policy. This is to ensure your administrator account will not be locked out should the Conditional Access policy result in an undesirable outcome.
 
 20. Select **Cloud apps or actions**.
 
@@ -113,7 +113,7 @@ Once you have finalized your terms of use document, use the following procedure 
 25. When complete, select **Create**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screen image displaying the conditional access policy with configuration options highlighted](../media/terms-of-use-conditional-access-policy.png)
+    > ![Screen image displaying the Conditional Access policy with configuration options highlighted](../media/terms-of-use-conditional-access-policy.png)
 
 26. If you chose to use your own account, you can refresh your browser. You will be prompted to sign in again. When you sign in, you will be required to accept the terms of use.
 
@@ -232,4 +232,3 @@ You may, on occasion, be required to update the terms of use document.
 6. Once you have uploaded your new pdf and decided on re-accept, select **Add**.
 
 7. You will now see the most recent version under the Document column.
-

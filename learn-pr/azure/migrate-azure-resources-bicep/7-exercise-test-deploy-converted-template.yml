@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-azure-resources-bicep.exercise-test-deploy-converted-template
+title: Exercise - Test and deploy your converted template
+metadata:
+  unitType: exercise
+  title: Exercise - Test and deploy your converted template
+  description: Learn how to test your migrated Bicep file by using the what-if operation and how to deploy your Bicep files to production.
+  ms.date: 08/17/2021
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-exercise-test-deploy-converted-template.md)]

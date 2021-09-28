@@ -20,7 +20,7 @@ prerequisites: |
   - Understanding of basic NFS storage concepts like read and write operations.
   - Basic understanding of networking concepts like bandwidth and leased lines like Azure ExpressRoute.
   - Knowledge of how basic caching works like saving data on fast media for future requests.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/introduction-azure-hpc-cache.svg
 levels:
   - beginner
 roles:

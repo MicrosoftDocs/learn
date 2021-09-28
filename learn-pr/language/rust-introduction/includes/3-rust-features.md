@@ -5,8 +5,7 @@ In this unit, we'll review some of the features and limitations of Rust:
 - The Rust module system: modules, crates, and paths
 - Rust standard libraries and third-party crates
 - The Rust Cargo tool and dependency manager
-- The Rust playground
-- Rust strengths
+- When to use Rust
 
 
 ## Manage code with the Rust module system
@@ -57,27 +56,7 @@ Cargo does lots of things for you, including:
 - Add dependent crates to a project by adding the crate name to the Cargo.toml file.
 
 
-## Develop programs in the Rust playground
-
-Sometimes you just want to try a bit of Rust code or check syntax for a definition in a Rust library. You might also be looking for a way to quickly share some code with others. The Rust language offers support for these tasks in the Rust playground.
-
-The playground is an environment for Rust development that's available on the internet at [play.rust-lang.org](https://play.rust-lang.org). Anyone can access the playground. You can write your code, and then compile and run your code in the same environment. The following screenshot shows the playground environment. At the far right on the toolbar, the **Configure** menu has options to set your preferences for the environment.
-
-:::image type="content" source="../media/rust-playground-main.png" alt-text="Screenshot of the Rust playground that shows a basic program.":::
-
-In the playground, you can access methods and functions in the Rust `std` standard library. The top 100 most-downloaded crates in the crates.io library are also available along with their dependencies.
-
-There are some limitations in the playground that protect the site from being used in a malicious manner. The restrictions help to ensure the site remains available for all users.
-
-- **Network**: When you compile or run code in the playground, a network connection isn't available.
-- **Memory**: The playground limits the available memory to compile code and run a built program.
-- **Execution time**: The playground sets a maximum amount of time to compile code and run a built program.
-- **Disk**: The amount of available disk space to compile code and run a built program is limited.
-
-You can read more about the features of the Rust playground on the [help page](https://play.rust-lang.org/help?azure-portal=true).
-
-
-## Understand Rust's strengths
+## When to use Rust
 
 The Rust language has many strengths to consider when choosing the best language for your project:
 

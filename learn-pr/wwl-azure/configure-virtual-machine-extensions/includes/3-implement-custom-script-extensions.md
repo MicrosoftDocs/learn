@@ -9,6 +9,7 @@ You could also use the PowerShell **Set-AzVmCustomScriptExtension** command. Thi
 
 ```PowerShell
 Set-AzVmCustomScriptExtension -FileUri https://scriptstore.blob.core.windows.net/scripts/Install_IIS.ps1 -Run "PowerShell.exe" -VmName vmName -ResourceGroupName resourceGroup -Location "location"
+
 ```
 
 ## Considerations

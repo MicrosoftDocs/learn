@@ -34,7 +34,7 @@ Contoso is interested in identifying the failed sign-in attempts, so that they c
 
 This information tile in the background is configured to run the query and filter the data collected from the Azure AD connector. Azure Sentinel then visualizes and presents the data collected with tables that are more meaningful and provide useful insight on user sign-in attempts.
 
-The workbook contains additional tiles that indicate the users who signed in using conditional access. From the **Conditional access status** table, you can review users who required multifactor authentication (MFA) to validate their identity.
+The workbook contains additional tiles that indicate the users who signed in using Conditional Access. From the **Conditional Access status** table, you can review users who required multifactor authentication (MFA) to validate their identity.
 
 :::image type="content" source="../media/05-conditional-access.png" alt-text="Screenshot of Conditional Access activity." border="true":::
 

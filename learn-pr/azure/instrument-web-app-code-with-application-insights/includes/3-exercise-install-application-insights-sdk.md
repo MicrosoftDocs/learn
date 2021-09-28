@@ -37,6 +37,7 @@ To initialize the Application Insights SDK, you need to call the `UseApplication
     ```bash
     code .
     ```
+
  1. In the *Startup.cs* file, add a call to `UseApplicationInsights`in the *ConfigureServices()* method. The call should look like this.
 
     ```csharp
@@ -54,9 +55,9 @@ We'll host our app in Azure App Service. Instead of manually creating an Applica
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. On the Azure portal menu, or from the **Home** page under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu, under **Categories**,select **Web**, then select **Web App**. The **Create Web App** pane appears.
+1. In the left menu pane, under **Categories**, select **Web**, and under *Popular products*, select **Web App**. The **Create Web App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -66,16 +67,16 @@ We'll host our app in Azure App Service. Instead of manually creating an Applica
     | Subscription              | Concierge Subscription   |
     | Resource Group            | Select **<rgn>Sandbox resource group</rgn>** |
     | **Instance Details** |
-    | Name                      | Choose a unique name. Make a note of it. You'll need it later on. |
-    | Publish                   | **Code** |
-    | Runtime stack             | **.NET Core 2.1 (LTS)**  |
-    | Operating System          | **Windows** |
+    | Name                      | Enter a unique name. Make a note of it. You'll need it later on. |
+    | Publish                   | Code |
+    | Runtime stack             | .NET Core 3.1 (LTS)  |
+    | Operating System          | Windows |
     | Region                    | Choose location close to you. |
     | **App Service Plan** |
-    | Windows Plan              | Accept default: ASP-learn2ac17be8c3094f558b79eabec2-axxx |
-    | Sku and size              | Select **Change size** to open the Spec Picker wizard. Select **Dev / Test**, select **F1**, and then select **Apply**. |
+    | Windows Plan              | Accept the default: **ASP-<rgn>Sandbox resource group</rgn>** |
+    | Sku and size              | Select **Change size** to open the Spec Picker wizard. Select **Dev / Test**, then select **F1**, and then select **Apply**. |
 
-1. On the **Create Web App** pane, select **Next:Deployment (Preview)**, and then select **Next:Monitoring**. On the **Monitoring** tab, for **Enable Application Insights**, and then select **Yes**. 
+1. On the **Create Web App** pane, select **Next : Deployment**, and then select **Next : Monitoring**. On the **Monitoring** tab, under **Application Insights**, for **Enable Application Insights**, select **Yes**.
 
     An alert will appear indicating that your app will be connected to an automatically created Application Insights resource with the same name as the app.
 
@@ -87,12 +88,14 @@ We'll host our app in Azure App Service. Instead of manually creating an Applica
 
 After the web app is created, we can observe how it's been configured to use Application Insights.
 
-1. In the Azure portal, select **All Resources**, look for the **App Service** resource type, select the App Service. The **App Service** pane for your web app appears.
+1. When deployment is complete, select **Go to resource**. Your App Service pane appears.
 
-1. In the left menu, under **Settings**, select **Application Insights** and then, on the **Application Insights** pane, select **Turn on Application Insights**. settings that are listed and select the `APPINSIGHTS_INSTRUMENTATIONKEY` setting to see its value. When your app runs in App Service, this value will be available as an environment variable, and the Application Insights SDK will use it as configuration.
+1. In the left menu pane, under **Settings**, select **Application Insights**. The **Application Insights** pane appears for your web app.
 
-1. In the left menu pane, select **Application Insights**. At the top of the Application Insights pane, see **Link to an Application Insights resource** to collect to the Application Insights resource linked to the web app.
+1. Select **Turn on Application Insights**. This allows you to enable Application Insights without redeploying your code. The **Application Insights** pane reappears.
 
-1. The instrumentation key for the Application Insights resource appears near the top of the pane. Note that it's the same as the one shown in the app's settings.
+    Under **Link to an Application Insights resource**, a notification states that your web app will be connected to an auto-created Application Insights resource, namely your web app. An Instrumentation key will be added to App Settings. When your app runs in App Service, this value will be available as an environment variable, and the Application Insights SDK will use it as configuration.
+
+1. Select **Apply**, and select **Yes** in the **Apply monitoring settings** dialog box that appears.
 
 We've set up our app and deployment environment, but we're not going to deploy the app yet. First, we're going to add some custom event telemetry.

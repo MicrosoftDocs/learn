@@ -18,13 +18,11 @@ Let's assume you want to create a VM running an Ubuntu server. Setting up a site
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure home page, under **Azure services**, select **Create a resource**.
+1. On the Azure home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears, displaying popular products for Azure services.
 
     ![Screenshot that shows the Azure Marketplace with create a resource highlighted.](../media/3-create-new-resource.png)
 
-    Popular offers for Azure services appear in the **Create a resource** pane.
-
-1. As you can see, there are many selectable options. We want to create a VM running an Ubuntu server. VMs are Azure compute resources, so in the left menu pane, select **Compute**, and in the search box, enter *Ubuntu Server*, and press <kbd>Enter</kbd>. The **Marketplace** pane appears with many Ubuntu Server options.
+1. As you can see, there are many options to choose from. We want to create a VM running an Ubuntu server. VMs are Azure compute resources, so in the left menu pane, select **Compute**, and in the search box, enter *Ubuntu Server*, and press <kbd>Enter</kbd>. The **Marketplace** pane appears with many Ubuntu Server options.
 
 1. Select **Ubuntu Server 18.04 LTS**. The **Ubuntu Server 18.04 LTS** pane appears.
 
@@ -46,6 +44,7 @@ You need to configure the basic parameters of your Ubuntu virtual machine. If so
     | Region | From the dropdown list, select a geographical location close to you. |
     | Availability options  | No infrastructure redundancy required |
     | Image | Ubuntu Server 18.04 LTS |
+    | Azure Spot instance | Unchecked|
     | Size | Standard D2s V3 |
     | **Administrator account** |
     | Authentication type | Password |

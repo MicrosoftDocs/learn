@@ -23,7 +23,7 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. In the portal, go to the function app that you created in this module.
 
-1. In the left menu pane, under **Functions**, select **Functions**.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
 
 1. In the top menu bar, select **Create**. The **Create function** pane appears.
 
@@ -37,7 +37,7 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. In the portal, go to the function app that you created in this module.
 
-1. In the left menu pane, under **Functions**, select **Functions**.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
 
 1. In the top menu bar, select **Create**. The **Create function** pane appears.
 
@@ -269,7 +269,7 @@ Congratulations! Your function works as designed, but what about that queue oper
 
 Azure Queue Storage queues are hosted in a storage account. You already selected the storage account in this exercise when you created the output binding.
 
-1. In the top search box in the Azure portal, enter **storage accounts**, and in the results list, under **Services**, select **Storage accounts**.
+1. In the top search box in the Azure portal, enter **storage accounts**, and in the results list, under **Services**, select **Storage accounts**. The **Storage accounts** pane appears.
 
     [![Screenshot showing search results for Storage Account in the main search box.](../media/7-search-storage-accounts-small.png)](../media/7-search-storage-accounts.png#lightbox)
 
