@@ -2,7 +2,7 @@ Here, we discuss some ways you can automate security checks in a repository that
 
 ## Detect and fix outdated dependencies with security vulnerabilities
 
-Virtually every project these days takes dependencies on external packages. While these components can offer substantial benefits in productivity, they introduce additional security risks. Staying on top of these packages and their vulnerability status can be time-consuming, especially given how each dependency may have its own dependencies that can exponentially grow the number of packages to track. Fortunately, GitHub provides features that reduce this workload.
+Virtually every project these days takes dependencies on external packages. While these components can offer substantial benefits in productivity, they can introduce other security risks. Staying on top of these packages and their vulnerability status can be time-consuming, especially given how each dependency may have its own dependencies that can become difficult to track and maintain. Fortunately, GitHub provides features that reduce this workload.
 
 ### Repository dependency graphs
 
@@ -28,7 +28,7 @@ To learn more about Dependabot's flexibility, see [Configuring GitHub Dependabot
 
 Similar to how Dependabot scans your repository for dependency alerts, you can use code scanning to analyze and find security vulnerabilities and errors in the code in a GitHub repository. Code scanning has several benefits; you can use it to find, triage, and prioritize fixes for existing problems or potential security vulnerabilities. It's also useful to help prevent developers from introducing any new security problems into the code.
 
-Another advantage to code scanning is its ability to use CodeQL. CodeQL lets you query code as data. This allows you to create custom queries, or use queries maintained by the open source community. Code scanning gives you freedom to customize and maintain how the code within your repository is being scanned. 
+Another advantage to code scanning is its ability to use CodeQL. CodeQL lets you query code as data which enables you to create custom queries, or use queries maintained by the open-source community. Code scanning gives you freedom to customize and maintain how the code within your repository is being scanned. 
 
 You can enable code scanning alerts and workflows in the security tab of a GitHub repository:
 
