@@ -54,8 +54,8 @@ The client is responsible for establishing a connection to the server's endpoint
 - [JavaScript Client](/aspnet/core/signalr/javascript-client): [`@microsoft/signalr.HubConnection`][js-hubconnection]
 - [Java Client](/aspnet/core/signalr/java-client): [`com.microsoft.signalr.HubConnection`][java-hubconnection]
 
-[js-hubconnection]: /javascript/api/@microsoft/signalr/hubconnection?view=signalr-js-latest
-[java-hubconnection]: /java/api/com.microsoft.signalr.hubconnection?view=aspnet-signalr-java
+[js-hubconnection]: /javascript/api/@microsoft/signalr/hubconnection
+[java-hubconnection]: /java/api/com.microsoft.signalr.hubconnection
 
 For more information, see [ASP.NET Core SignalR supported platforms](/aspnet/core/signalr/supported-platforms).
 
