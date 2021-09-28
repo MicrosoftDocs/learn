@@ -9,7 +9,7 @@ Apply to scenario
 
 ## Servers and the `Hub` class
 
-The `Hub` class is a SignalR server concept. It's defined within the `Microsoft.AspNetCore.SignalR` namespace, and is part of the [Microsoft.AspNetCore.SignalR](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR) NuGet package. A `Hub` is exposed through a route, for example; the `"https://www.contoso-pizza.com/hubs/orders"` route could be used to represent an `OrdersHub` implementation. The various hub APIs allow authors to define methods and events.
+The `Hub` class is a SignalR server concept. It's defined within the `Microsoft.AspNetCore.SignalR` namespace and is part of the [Microsoft.AspNetCore.SignalR](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR) NuGet package. A `Hub` is exposed through a route, for example; the `"https://www.contoso-pizza.com/hubs/orders"` route could be used to represent an `OrdersHub` implementation. The various hub APIs allow authors to define methods and events.
 
 There are two modalities to expose methods on a hub, you create a subclass of the following types and write [methods](#methods):
 
