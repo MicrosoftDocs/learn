@@ -5,14 +5,14 @@ Now that you created an Azure Kubernetes Service (AKS) cluster with the policy a
 There are two types of Azure Policies that can be applied to AKS:
 
 1. Cluster policies eg Authorized IP ranges
-2. Workload policies eg Allow only trusted registries
+1. Workload policies eg Allow only trusted registries
 
 ## Discovering built-in Azure policies for Kubernetes
 
 There are two way to discover built-in Azure policies for Kubernetes:
 
 1. [By using the Azure documentation](/azure/governance/policy/samples/built-in-policies), which details the built-in policies.
-2. By using the [Azure policy blade in the Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Definitions), going to definitions and filtering on category Kubernetes.
+1. By using the [Azure policy blade in the Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Definitions), going to definitions and filtering on category Kubernetes.
 
 You can assign one or multiple of these policy definitions to your management groups, subscriptions or resource groups. In the next unit, you will follow an exercise that will walk you through how to do that.
 

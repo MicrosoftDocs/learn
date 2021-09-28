@@ -17,7 +17,7 @@ The first step would be to create an AKS cluster that has Azure policies enabled
 Before installing the Azure Policy add-on or enabling any of the service features, your subscription must enable the **Microsoft.PolicyInsights** resource provider.
 
 1. You need the Azure CLI version 2.12.0 or later installed and configured. Run `az --version` to find the version. If you need to install or upgrade, see [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
-2. Register the resource providers and preview features.
+1. Register the resource providers and preview features.
 
 In this exercise, we will be using Azure cloud shell to run the commands. Feel free to use a terminal of your choice for this exercise. To begin, login to your **Azure Portal**
 
@@ -27,11 +27,11 @@ In this exercise, we will be using Azure cloud shell to run the commands. Feel f
 
    ![screenshot of Azure Portal on the cloud shell creation screen](../media/3-create-cloud-shell-instance.png)
 
-2. Select the appropriate Subscription and click **Create storage**
+1. Select the appropriate Subscription and click **Create storage**
 
-3. In the top left corner of the resulting cloud shell, click **PowerShell** and change it to **Bash**. If it is showing Bash already you can skip this step
+1. In the top left corner of the resulting cloud shell, click **PowerShell** and change it to **Bash**. If it is showing Bash already you can skip this step
 
-4. Register the resource providers and preview features by entering the command below to Cloud Shell.
+1. Register the resource providers and preview features by entering the command below to Cloud Shell.
 
      ```azurecli-interactive
     # Log in first with az login if you're not using Cloud Shell
@@ -39,7 +39,7 @@ In this exercise, we will be using Azure cloud shell to run the commands. Feel f
     az provider register --namespace Microsoft.PolicyInsights
     ```
 
-5. Once the above prerequisite steps are completed, install the Azure Policy add-on in the AKS cluster you want to manage using the instructions in the note above. In the next section we will create a new cluster and enable the Azure Policy add-on.
+1. Once the above prerequisite steps are completed, install the Azure Policy add-on in the AKS cluster you want to manage using the instructions in the note above. In the next section we will create a new cluster and enable the Azure Policy add-on.
 
 ### Create AKS cluster and enable Azure Policy add-on
 
@@ -51,7 +51,7 @@ Now that we have the provider registered we can create a new resource group and 
    az group create --location eastus --name videogamerg
    ```
 
-2. Create AKS cluster using the default settings
+1. Create AKS cluster using the default settings
     > [!NOTE]
     > For production workloads, you would want to further customize the creation of your cluster to ensure it meets your security and governance requirements. We are going with a simple cluster purely for training purposes.
     
@@ -59,13 +59,13 @@ Now that we have the provider registered we can create a new resource group and 
     az aks create --name videogamecluster --resource-group videogamerg --generate-ssh-keys
     ```
     
-3. Enable Azure Monitor for the newly created cluster
+1. Enable Azure Monitor for the newly created cluster
 
     ```azurecli-interactive
     az aks enable-addons -a monitoring --name videogamecluster --resource-group videogamerg
     ```
 
-4. Enable Azure Policies for the cluster
+1. Enable Azure Policies for the cluster
 
     ```azurecli-interactive
     az aks enable-addons --addons azure-policy --name videogamecluster --resource-group videogamerg

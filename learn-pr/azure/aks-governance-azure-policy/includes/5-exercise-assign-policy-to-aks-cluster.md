@@ -64,21 +64,21 @@ We begin by deploying an image from dockerhub.com into the cluster. The first st
        app: nginx
    ```
 
-4. Save the file by selecting the **...** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
+1. Save the file by selecting the **...** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
 
-5. Deploy the nginx pod and service
+1. Deploy the nginx pod and service
 
    ```bash
    kubectl apply -f nginxfromdocker.yaml
    ```
 
-6. List all of the deployed services
+1. List all of the deployed services
 
    ``` bash
    kubectl get services
    ```
 
-7. Copy the _External-IP_ of the **simple-nginx** service and paste it in your browser to see if the service runs as expected
+1. Copy the _External-IP_ of the **simple-nginx** service and paste it in your browser to see if the service runs as expected
 
    ![A screenshot showing nginx running, which came from Docker Hub](../media/5-nginx-dockerhub.png)
 
@@ -151,7 +151,7 @@ Now that you have assigned the restricting policy to the cluster, you will now r
    code secondnginxfromdocker.yaml
    ```
 
-2. Copy the following code into the new file and save it by typing *ctrl + s*
+1. Copy the following code into the new file and save it by typing *ctrl + s*
 
    ```yaml
    apiVersion: apps/v1
@@ -196,15 +196,15 @@ Now that you have assigned the restricting policy to the cluster, you will now r
        app: second-nginx
    ```
 
-3. Close the code editor after saving it by entering *Ctrl+Q *
+1. Close the code editor after saving it by entering *Ctrl+Q *
 
-4. Deploy the new service and deployment by entering the following in the command line. Make sure you wait 30 minutes after the policy assignment before applying this to ensure enough time was given for the policy to take effect.
+1. Deploy the new service and deployment by entering the following in the command line. Make sure you wait 30 minutes after the policy assignment before applying this to ensure enough time was given for the policy to take effect.
 
    ```bash
    kubectl apply -f secondnginxfromdocker.yaml
    ```
 
-5. Now we can check to see if the pod and service was created
+1. Now we can check to see if the pod and service was created
 
    ```bash
    kubectl get pods
@@ -241,19 +241,19 @@ Now that you know that the policy prevents images from Dockerhub from being crea
    az acr import --name $ACR_NAME --source docker.io/library/nginx:latest --image nginx:v1
    ```
 
-3. Check to ensure the image was imported. You should see nginx in the list of results
+1. Check to ensure the image was imported. You should see nginx in the list of results
 
    ```azurecli-interactive
    az acr repository list --name $ACR_NAME
    ```
 
-4. Get the name of the container registry. You will need it to modify the manifest file to redeploy the pods
+1. Get the name of the container registry. You will need it to modify the manifest file to redeploy the pods
 
    ```azurecli-interactive
    echo $ACR_NAME
    ```
 
-5. Modify the image parameter for your *secondnginxfromdocker.yaml* file so that it now points to your container registry. Change the *image: nginx*  in line 18 to *[acr name].azurecr.io/nginx:v1*.
+1. Modify the image parameter for your *secondnginxfromdocker.yaml* file so that it now points to your container registry. Change the *image: nginx*  in line 18 to *[acr name].azurecr.io/nginx:v1*.
 
    ```bash
    code nginxfromacr.yaml
@@ -304,13 +304,13 @@ Now that you know that the policy prevents images from Dockerhub from being crea
        app: second-nginx
    ```
 
-6. Apply the deployment again and you will see that the new pod is now running
+1. Apply the deployment again and you will see that the new pod is now running
 
    ```bash
    kubectl apply -f nginxfromacr.yaml
    ```
 
-7. Get the **EXTERNAL-IP** so that you can test to see if the service is running in the cluster
+1. Get the **EXTERNAL-IP** so that you can test to see if the service is running in the cluster
 
    ```bash
    kubectl get pods
