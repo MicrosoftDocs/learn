@@ -2,7 +2,11 @@ Bicep modules enable you to easily reuse your Bicep code in multiple deployments
 
 ## Example scenario
 
-Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Recently, you three separate teams asked you to build Bicep templates that included a static website hosted on Azure Storage, and two of the templates included an Azure Functions app that had to be configured to meet your organization's requirements. You want to reuse your Bicep code as much as possible, so you created Bicep modules for the shared components. Now, you need to understand how to share and reuse the modules throughout your organization.
+Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've been asked to help your research and development (R&D) team, who is building a new toy car. The car will use machine learning to detect different colored traffic lights and stop or slow down for them. The R&D team has asked you to provision a new Azure Machine Learning workspace to help them develop and train their system. The team also needs an Azure Cosmos DB database to store the data from the test runs.
+
+Another part of the R&D team is starting a project to build another autonomous toy - a dog that chases the robotic car. You expect that team will have similar requirements as the toy car team.
+
+You want to reuse your Bicep code as much as possible, so you plan to create Bicep modules, and to share and reuse the modules throughout your organization.
 
 ## What will we be doing?
 

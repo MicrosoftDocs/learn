@@ -1,4 +1,4 @@
-TODO scenario
+The R&D team working on the toy car have started their trial. Now, as you expected, the R&D team developing the toy dog has come to you to ask for the same set of Azure resources, as well as another storage account for them to use to store photos of traffic lights. You decide to take the components that are common to both teams and create your own Bicep module from them, then publish it to a private registry so that anyone in your toy company can use the modules.
 
 In this exercise, you create a Bicep module and publish it to a registry.
 
@@ -10,13 +10,9 @@ In this exercise, you create a Bicep module and publish it to a registry.
 
 ## Create a module
 
-1. In Visual Studio Code, create a new file named *module.bicep*.
+1. In Visual Studio Code, rename the *main.bicep* file to *modules/autonomous-toy.bicep*.
 
-1. Paste the following Bicep code into *module.bicep*:
-
-   ```bicep
-   // TODO
-   ```
+1. Create a new file named *main.bicep*. You'll add some resources to it soon.
 
 ## Create an Azure container registry
 
@@ -61,7 +57,7 @@ Here, you create a new registry to store and share your Bicep modules. You'll us
    ```azurecli
    az bicep publish \
      --file module.bicep \
-     --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/test/test:v1'
+     --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/solutions/autonomous-toy:v1'
    ```
 
    Notice that you didn't need to sign in. Bicep uses the sign-in information from the Azure CLI to authenticate you to the registry.
@@ -89,7 +85,7 @@ Here, you create a new registry to store and share your Bicep modules. You'll us
 
    ```bash
    bicep publish module.bicep \
-     --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/test/test:v1'
+     --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/solutions/autonomous-toy:v1'
    ```
 
    Notice that you didn't need to sign in. Bicep uses the sign-in information from Azure PowerShell to authenticate you to the registry.
@@ -115,12 +111,20 @@ Here, you create a new registry to store and share your Bicep modules. You'll us
 1. At the bottom of the file, add the following module definition. Make sure to replace `YOUR_CONTAINER_REGISTRY_NAME` with the name of your private registry.
 
    ```bicep
-   module todo 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/test/test:v1' = {
-     name: 'todo'
+   module autonomousToyComponents 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/solutions/autonomous-toy:v1' = {
+     name: 'autonomousToyComponents'
      params: {
      }
    }
    ```
+
+1. Save the file.
+
+## Add a storage account to your template
+
+1. At the bottom of the *main.bicep* file, add the following storage account definition:
+
+   TODO
 
 1. Save the file.
 
