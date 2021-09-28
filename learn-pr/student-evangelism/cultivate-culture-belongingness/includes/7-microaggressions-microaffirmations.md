@@ -30,11 +30,11 @@ Some example microaggressions are:
 
 Microaggressions can be subcategorized as:
 
-- *Micro-assault* - a micro-aggression that is deliberate and intended to cause harm by excluding or demeaning someone else.
+- *Micro-assault*: A microaggression that is deliberate and intended to cause harm by excluding or demeaning someone else.
 
-- *Micro-insult* - a statement or perspective that demeans another person's background. For example, a statement that someone's skill set or financial situation is based on their ethnicity.
+- *Micro-insult*: A statement or perspective that demeans another person's background. For example, a statement that someone's skill set or financial situation is based on their ethnicity.
 
-- *Micro-invalidation* - an action that dismisses the relevance of a person's experiences that are connected to their identity. For example, the accidental use of incorrect pronouns that you think match a person's gender.
+- *Micro-invalidation*: An action that dismisses the relevance of a person's experiences that are connected to their identity. For example, the accidental use of incorrect pronouns that you think match a person's gender.
 
 Research has demonstrated that microaggressions can take a toll on their recipients, including:
 
