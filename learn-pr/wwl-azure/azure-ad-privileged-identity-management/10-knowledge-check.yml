@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/27/2021
+  ms.date: 09/28/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
@@ -18,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You wish to enable Azure AD PIM for your directory. What Azure AD Role do you need to enable PIM? Select one."
+  - content: "To enable Azure AD PIM for your directory, what Azure AD Role do you need to enable PIM?"
     choices:
     - content: "Office 365 Admin"
       isCorrect: false
@@ -29,7 +28,7 @@ quiz:
     - content: "Global Admin"
       isCorrect: true
       explanation: "Global Admin. Of the options listed only the Global Admin role has the permission to enable PIM."
-  - content: "Your company has implemented Azure AD PIM. You need to ensure a new hires request elevation before they make any changes in Azure. What should you do? Select one."
+  - content: "A company has implemented Azure AD PIM. There is a need to ensure a new hires request elevation before they make any changes in Azure, what should you do?"
     choices:
     - content: "Activate the new hire."
       isCorrect: false
@@ -40,7 +39,7 @@ quiz:
     - content: "Include the new hire in an access review."
       isCorrect: false
       explanation: "An access review would not grant the new hire any PIM role to be elevated."
-  - content: "Azure AD PIM is used to manage which of the following roles? Select one."
+  - content: "Azure AD PIM is used to manage which of the following roles?"
     choices:
     - content: "Azure privileged users"
       isCorrect: false
@@ -51,7 +50,7 @@ quiz:
     - content: "Azure AD roles"
       isCorrect: true
       explanation: "Azure AD roles.  While not part of this question, you could all manage Azure resource roles."
-  - content: "Your organization has enabled Azure AD PIM. The senior IT manager does not want to perform any action to use a role. What should you do? Select one."
+  - content: "An organization has enabled Azure AD PIM. The senior IT manager wants the role set up so no action is required, what should you do?"
     choices:
     - content: "Give the manager JIT access to the role."
       isCorrect: false
