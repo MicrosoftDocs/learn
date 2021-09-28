@@ -21,7 +21,7 @@ There are many aspects to building and deploying secure applications. Here are t
 
 ### Security at every step
 
-:::image type="content" source="../media/GH-security.png" alt-text="Image of a GitHub shield with security written underneath.":::
+:::image type="content" source="../media/gh-security.png" alt-text="Image of a GitHub shield with security written underneath.":::
 
 Security isn't something you can just add to an application or a system later. Secure development must be part of every stage of the software development life cycle. This is even more important for critical applications and those that process sensitive or highly confidential information.
 
