@@ -54,9 +54,9 @@ In this unit, we'll add code to the device app for a direct method to turn on th
 ::: zone-end
 ::: zone pivot="csharp"
 
-1. Open the **Program.cs** file for the device app.
+1. Open the **Program.cs** file for the *cheesecavedevice* app.
 
-1. Add the following method, perhaps to the end of the class.
+1. Add the following method to the class.
 
     ```cs
         // Handle the direct method call

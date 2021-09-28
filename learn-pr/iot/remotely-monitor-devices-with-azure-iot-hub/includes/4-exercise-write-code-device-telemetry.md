@@ -23,21 +23,27 @@ At the end of this unit, you'll be sending and receiving telemetry.
 ::: zone-end
 ::: zone pivot="vscode-csharp"
 
-1. To use C# in Visual Studio Code, ensure both [.NET Core](https://dotnet.microsoft.com/download), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
+1. To use C# in Visual Studio Code, ensure both [.NET](https://dotnet.microsoft.com/download), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
 
 1. Open a terminal in Visual Studio Code, and create a folder called "cheesecavedevice" (enter `mkdir cheesecavedevice`). Navigate to the `cheesecavedevice` folder.
 
 1. Enter the following command in the terminal: `dotnet new console`. This command creates a **Program.cs** file in your folder, along with a project file.
 
-1. Enter `dotnet restore` in the terminal. This command gives your app access to the required .NET packages.
-
 1. In the terminal, install the required libraries. Enter:
 
-    ```
+    ```dotnetcli
         dotnet add package Microsoft.Azure.Devices.Client
         dotnet add package Microsoft.Azure.Devices.Shared
         dotnet add package Newtonsoft.Json
     ```
+
+1. In the terminal, open the current folder in the existing Visual Studio Code window with the following command:
+
+    ```dotnetcli
+    code . -r
+    ```
+
+1. If prompted **Select 1 of 2 projects**, select *cheesecavedevice.csproj*.
 
 1. From the **File** menu, open up the **Program.cs** file, and delete the default contents.
 
@@ -357,7 +363,7 @@ This section adds code to send telemetry from a simulated device. The device sen
             {
                 colorMessage("Cheese Cave device app.\n", ConsoleColor.Yellow);
 
-                // Connect to the IoT hub using the MQTT protocol.
+                // Create the device client and connect to the IoT hub using the MQTT protocol.
                 s_deviceClient = DeviceClient.CreateFromConnectionString(s_deviceConnectionString, TransportType.Mqtt);
 
                 SendDeviceToCloudMessagesAsync();
@@ -414,19 +420,26 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 ::: zone-end
 ::: zone pivot="vscode-csharp"
 
+1. Open a new Visual Studio Code window.
 1. Open a terminal in Visual Studio Code, and create a folder called "cheesecaveoperator" (enter `mkdir cheesecaveoperator`). Navigate to the `cheesecaveoperator` folder.
 
 1. Enter the following command in the terminal: `dotnet new console`. This command creates a **Program.cs** file in your folder, along with a project file.
 
-1. Enter `dotnet restore` in the terminal. This command gives your app access to the required .NET packages.
-
 1. In the terminal, enter the following commands:
 
-    ```
+    ```dotnetcli
         dotnet add package Microsoft.Azure.EventHubs
         dotnet add package Microsoft.Azure.Devices
         dotnet add package Newtonsoft.Json
     ```
+
+1. In the terminal, open the current folder in the existing Visual Studio Code window with the following command:
+
+    ```dotnetcli
+    code . -r
+    ```
+
+1. If prompted **Select 1 of 2 projects**, select *cheesecavedevice.csproj*.
 
 1. From the **File** menu, open up the **Program.cs** file, and delete the default contents.
 
@@ -574,17 +587,11 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
         class ReadDeviceToCloudMessages
         {
             // Global variables.
-            // The Event Hub-compatible endpoint.
-            private readonly static string s_eventHubsCompatibleEndpoint = "<your event hub endpoint>";
-
-            // The Event Hub-compatible name.
-            private readonly static string s_eventHubsCompatiblePath = "<your event hub path>";
-            private readonly static string s_iotHubSasKey = "<your event hub Sas key>";
-            private readonly static string s_iotHubSasKeyName = "service";
             private static EventHubClient s_eventHubClient;
 
-            // Connection string for your IoT Hub.
-            private readonly static string s_serviceConnectionString = "<your service connection string>";
+    
+            // Event Hub connection string for your IoT Hub
+            private readonly static string s_eventHubConnectionString = "<your Event Hub compatible connection string>";
 
             // Asynchronously create a PartitionReceiver for a partition and then start reading any messages sent from the simulated client.
             private static async Task ReceiveMessagesFromDeviceAsync(string partition)
@@ -624,8 +631,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
                 colorMessage("Cheese Cave Operator\n", ConsoleColor.Yellow);
 
                 // Create an EventHubClient instance to connect to the IoT Hub Event Hubs-compatible endpoint.
-                var connectionString = new EventHubsConnectionStringBuilder(new Uri(s_eventHubsCompatibleEndpoint), s_eventHubsCompatiblePath, s_iotHubSasKeyName, s_iotHubSasKey);
-                s_eventHubClient = EventHubClient.CreateFromConnectionString(connectionString.ToString());
+                s_eventHubClient = EventHubClient.CreateFromConnectionString(s_eventHubConnectionString);
 
                 // Create a PartitionReceiver for each partition on the hub.
                 var runtimeInfo = s_eventHubClient.GetRuntimeInformationAsync().GetAwaiter().GetResult();
