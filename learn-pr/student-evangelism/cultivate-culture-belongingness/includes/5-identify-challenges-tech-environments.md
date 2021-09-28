@@ -6,7 +6,7 @@ Your surrounding environment sends you messages that contribute to your sense of
 
 ### What influences climate?
 
-The people who occupy a space, and how they behave and treat each other, can affect the climate of a space. Climate is also influenced by who's absent and who is ultimately impacted.
+The people who occupy a space, and how they behave and treat each other, can affect the climate of a space. Climate is also influenced by who's absent and who is ultimately affected.
 
 :::image type="content" source="../media/4-different-idea.png" alt-text="Illustration showing a person tentatively approaching a group with their idea, which is different from the ideas of the people in the group." border="false":::
 
