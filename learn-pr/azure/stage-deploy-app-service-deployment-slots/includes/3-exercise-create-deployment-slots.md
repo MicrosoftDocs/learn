@@ -14,49 +14,47 @@ Start by creating a new web app resource in the Azure portal.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu, select **Web**, and then search for and select **Web App**. The **Create Web App** pane appears.
+1. In the left menu pane, select **Web**, and then search for and select **Web App**. The **Create Web App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---|---|
     | **Project Details** |
-    | **Subscription** | Select the subscription you'd like to use to complete the exercise |
-    | **Resource Group** | Create a new resource group named **mslearn-slots** |
+    | Subscription | Select the subscription you'd like to use to complete the exercise |
+    | Resource Group | Select the **Create new** link, and enter **mslearn-slots**, and select **OK**. |
     | **Instance Details** |
-    | **Name** | *Enter a unique name* |
-    | **Publish** | Code |
-    | **Runtime stack** | ASP.NET V4.8 |
-    | **Operating System** | Windows |
-    | **Region** | *Select a region near you* |
+    | Name | Enter a unique name. |
+    | Publish | Code |
+    | Runtime stack | ASP.NET V4.8 |
+    | Operating System | Windows |
+    | Region | Select a region near you. |
     | **App Service Plan** |
-    | **Windows Plan** | *Accept default* |
-    | **Sku and size** | *Accept default* |
+    | Windows Plan | Accept default. |
+    | Sku and size | Accept default. |
 
-1. Select **Next : Deployment (Preview)**.
+1. Select **Next : Deployment**.
 
 1. Select **Next : Monitoring**, and enter the following value for the setting.
 
     | Setting | Value |
     |---|---|
     | **Application Insights** |
-    | **Enable Application Insights** | Toggle to **No** |
+    | Enable Application Insights | Toggle to **No** |
 
-1. Select **Review + create** and when the content is validated, select **Create**. Wait while Azure creates the web app.
+1. Select **Review + create**, and then select **Create**. Wait while Azure creates the web app.
 
-1. When deployment successfully completes, select **Go to resource**. The **App Service** pane appears.
+1. When deployment successfully completes, select **Go to resource**. The **App Service** pane for your web app appears.
 
 ## Configure git deployment
 
-You can use any of the usual deployment tools for your web app and its deployment slots. In this exercise, you'll set up the web app to use a local git repository. Follow  these steps.
+You can use any of the usual deployment tools for your web app and its deployment slots. In this exercise, you'll set up the web app to use a local git repository. Follow these steps.
 
-1. On your web app App Service page, in the left menu, under **Deployment**, select **Deployment Center**.
+1. In the left menu pane, under **Deployment**, select **Deployment Center**. The **Deployment Center** pane appears for your App Service.
 
-1. On the **Settings** tab, for **Source**, select **Local Git**. On the top menu bar, select **Save**.
+1. On the **Settings** tab, for **Source**, select **Local Git**, and on the top menu bar, select **Save**.
 
-1. On the resulting **Deployment Center** pane, select the **Local Git/FTPS credentials** tab.
-
-1. Under **User scope**, enter a username and password of your choice, and in the top menu bar, select **Save**. Make a note of the username and password for later.
+1. Select the **Local Git/FTPS credentials** tab, and under **User scope**, enter a username and password of your choice, and in the top menu bar, select **Save**. Make a note of the username and password for later.
 
 ## Configure the git client and clone the web app source code
 
@@ -66,15 +64,15 @@ Now, you'll set up the git client in Cloud Shell and use it to clone a sample we
 
       :::image type="content" source="../media/3-cloud-shell-icon.png" alt-text="Cloud shell icon in toolbar.":::
 
-1. In the Cloud Shell tool bar, ensure that Bash is selected. Copy the following code to Notepad and replace the values in quotes with your preferred username and email address. These config values aren't associated with any Azure account or sign-up, so you can use whatever values you like. 
+1. In Cloud Shell tool bar dropdown list, ensure that **Bash** is selected. Copy the following code to Notepad, and replace the values in quotes with your preferred username and email address. These config values aren't associated with any Azure account or sign-up, so you can use whatever values you like.
 
     ```bash
     git config --global user.name "your-username"
     git config --global user.email "your-email-address"
     ```
 
-1. Copy and paste your edited code into the Cloud Shell and run it.
- 
+1. Copy and paste your edited code into Cloud Shell, and run it.
+
 1. Create a folder for the source code. Run the following commands.
 
     ```bash
@@ -95,14 +93,14 @@ To use git to deploy the source code to the web app's production slot, set up yo
 
 1. In the Azure portal, your web app should be active. In the left menu, select **Overview**. 
 
-1.  In the Overview pane for your web app note that the **Essentials** section has a URL and a Git clone url. Hover over the **URL** and select the *Copy to clipboard* icon. Note that the URL contains your deployment name for the web app.
+1. In the Overview pane for your web app, note that the **Essentials** section has a **URL** and a **Git clone url**. Hover over the **URL**, and select the *Copy to clipboard* icon. Note that the URL contains your deployment name for the web app.
 
     :::image type="content" source="../media/3-copy-git-clone-url.png" alt-text="Copy the git clone URL." lightbox="../media/3-copy-git-clone-url.png":::
 
     > [!NOTE]
     > If you don't see the git clone URL where it's shown in the preceding screenshot, refresh the portal.
 
-1. Hover over the  **Git clone url** value and select the *Copy to clipboard* icon. Note that this value also contains your deployment username.
+1. Hover over the  **Git clone url**, and select the *Copy to clipboard* icon. Note that this value also contains your deployment username.
 
 1. In Cloud Shell, run the following command to configure the git remote with a name "production". Replace `git-clone-url` with the content you copied to the clipboard from the previous step.
 
@@ -129,17 +127,17 @@ For the new web app, you created only one slot: the production slot. You deploye
 
 Next, you'll create a deployment slot where you can stage new versions of the web app.
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**, and then filter by **Type == App Service**.
- 
-1. Select your web app. The **web app App Service** pane appears.
+1. On the Azure portal menu, or from the **Home** page, select **All resources**, filter by **Type == App Service**, and then select **Apply**.
 
-1. In the menu pane, under **Deployment**, select **Deployment slots**. The **Deployment slots** pane appears.
+1. Select your web app. The **App Service** pane appears for your web app.
+
+1. In the left menu pane, under **Deployment**, select **Deployment slots**. The **Deployment slots** pane appears for your App Service.
 
     :::image type="content" source="../media/3-access-deployment-slots.png" alt-text="Screenshot of the deployment slots for the weeb app.":::
 
 1. From the top menu bar, select **Add Slot**. The **Add a slot** pane appears.
 
-1. In the **Name** field, enter **Staging**, accept the default for **Clone settings from**, and then select **Add**.
+1. In the **Name** field, enter *Staging*, accept the default for **Clone settings from**, and then select **Add**.
 
 1. After the deployment slot is successfully created, select **Close**.
 
@@ -147,11 +145,11 @@ Next, you'll create a deployment slot where you can stage new versions of the we
 
 Set up the new slot to use git deployment, just like you did for the production slot. Follow these steps.
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**. In the list of all resources, you can filter on *Resource group == mslearn-slots*. You will see two App Service entries. Deployment slots are represented as separate apps in the portal. Select the entry representing the staging slot to go to its **Overview** pane.
+1. On the Azure portal menu or from the **Home** page, select **All resources**. In the list of all resources, filter by **Resource group == mslearn-slots**, and then select **Apply.**. You will see two App Service entries. Deployment slots are represented as separate apps in the portal. Select the entry representing the staging slot to go to its **Overview** pane.
 
-1. On the **Overview** pane, in the left menu, under **Deployment**, select **Deployment Center**.
+1. On the **Overview** pane, in the left menu pane, under **Deployment**, select **Deployment Center**.
 
-1.  On the **Settings** tab, for **Source**, select **Local Git**. In the top menu bar, select **Save*.
+1. On the **Settings** tab, for **Source**, select **Local Git**. In the top menu bar, select **Save**.
 
 1. On the resulting **Deployment Center** pane, select the **Local Git/FTPS credentials** tab.
 

@@ -16,7 +16,7 @@ abstract: |
   - Describe what Speech-to-text is
   - Define scenarios where Speech-to-text can be applied
 prerequisites: A basic familiarity with Azure
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/intro-to-speech-to-text.svg
 levels:
 - beginner
 roles:
