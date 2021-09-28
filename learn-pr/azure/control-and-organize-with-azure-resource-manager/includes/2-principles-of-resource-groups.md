@@ -66,7 +66,7 @@ That's it, you've created a resource group that you can now use when you deploy 
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Resource groups**.
 
-1. From the list, select your newly created resource group. Your **Respource group** pane appears.
+1. From the list, select your newly created resource group. Your **Resource group** pane appears.
 
     > [!NOTE]
     > You may also see a resource group called *NetworkWatcherRG*. You can ignore this resource group, as it's created automatically to enable Network Watcher in Azure virtual networks.
@@ -85,7 +85,7 @@ That's it, you've created a resource group that you can now use when you deploy 
 
 1. In the *Search services and marketplace* search box, search for and select *Virtual network*. The **Virtual network** pane appears.
 
-1. Select **Create**. The **Create virtual netowrk** pane appears.
+1. Select **Create**. The **Create virtual network** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
