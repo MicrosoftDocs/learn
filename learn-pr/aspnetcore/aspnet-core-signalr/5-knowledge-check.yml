@@ -36,6 +36,17 @@ quiz:
         - content: "SynchronizationContext"
           isCorrect: false
           explanation: "The `SynchronizationContext` provides the basic functionality for propagating a synchronization context in various synchronization models, but is not related to SignalR."
+    - content: "SignalR is not ideal in what types of apps?"
+      choices:
+        - content: "Apps that require high-frequency updates."
+          isCorrect: false
+          explanation: "SignalR would be perfect for these types of apps to provide real-time web functionality"
+        - content: "Apps with sparse or unreliable internet connectivity."
+          isCorrect: true
+          explanation: "SignalR is as durable as the underlying connection. When connectivity is a primary concern, SignalR is probably not ideal."
+        - content: "Apps designed for collaborating, monitoring, or based on notifications."
+          isCorrect: false
+          explanation: "SignalR would be perfect for these types of apps to provide real-time web functionality."
     - content: "When the server supports WebSockets, but the client only supports Long Polling which transport is used?"
       choices:
         - content: "WebSockets"
