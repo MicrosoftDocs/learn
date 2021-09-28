@@ -4,57 +4,57 @@ title: Check your knowledge
 metadata:
   title: Check your knowledge
   description: Knowledge Check of Azure policy concepts
-  ms.date: 07/07/2021
-  author: NillsF
-  ms.author: nilfran
+  ms.date: 09/28/2021
+  author: mosabami
+  ms.author: aayodeji
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/7-check-your-knowledge.md)]
 quiz:
   questions:
-    - content: "A question about what happens to the non-compliant pods after the policy is activated"
+    - content: "If a Policy is applied with the deny option to a resource group, what happens to already existing non-compliant resources in that group?"
       choices:
-        - content: "IaaS, PaaS, and SaaS are examples of cloud computing service models."
+        - content: "The non-compliant resources get deleted."
           isCorrect: false
-          explanation: "IaaS, PaaS, and SaaS are common cloud computing service models and are respectively infrastructure as a service, platform as a service, and software as a service."
-        - content: "Cloud computing resources are usually limited to specific geographic regions."
+          explanation: "Azure Policy does not delete Azure resources"
+        - content: "No changes will be made to the resources themselves but they will be listed as non-compliant resources."
           isCorrect: true
-          explanation: "Most cloud computing resources can be distributed to global datacenters."
-        - content: "Cloud computing typically decreases your operating expenses."
+          explanation: "Correct. Azure Policy does not delete resources but you can always check for non-compliant already existing resources."
+        - content: "The resources will have a read-only lock on them so that no changes can be made to them."
           isCorrect: false
-          explanation: "Cloud computing typically decreases your operating expenses."
-        - content: "Three cloud computing deployment models are public cloud, private cloud, and hybrid cloud."
+          explanation: "Azure Policies does not lock already deployed resources"
+        - content: "The resources become unusable and cannot be used to connect to other resources"
           isCorrect: false
-          explanation: "Public cloud, private cloud, and hybrid cloud are common cloud computing deployment models."
+          explanation: "Azure Policies does not render already deployed resources unusable"
     
-    - content: "A question about what happens when you have two contradicting workload policies at different scopes"
+    - content: "What happens when you have a policy set as deny at the subscription level and the same Policy set as audit at the subscription level?"
       choices:
-        - content: "IaaS, PaaS, and SaaS are examples of cloud computing service models."
+        - content: "The two Policies will cancel each other and will have no effect"
           isCorrect: false
-          explanation: "IaaS, PaaS, and SaaS are common cloud computing service models and are respectively infrastructure as a service, platform as a service, and software as a service."
-        - content: "Cloud computing resources are usually limited to specific geographic regions."
+          explanation: "Policies do not cancel each other out when there is a conflict."
+        - content: "The Policy set as audit will take effect."
           isCorrect: true
-          explanation: "Most cloud computing resources can be distributed to global datacenters."
-        - content: "Cloud computing typically decreases your operating expenses."
+          explanation: "Because the resource group scope is closer to the resource than the subscription, the Policy set at the subscription level will take effect"
+        - content: "The Policy set as deny will take effect."
           isCorrect: false
-          explanation: "Cloud computing typically decreases your operating expenses."
-        - content: "Three cloud computing deployment models are public cloud, private cloud, and hybrid cloud."
+          explanation: "This is not correct."
+        - content: "You will get an error when you attempt to deploy the second policy that contradicts the first one and will be unable to proceed."
           isCorrect: false
-          explanation: "Public cloud, private cloud, and hybrid cloud are common cloud computing deployment models."
+          explanation: "Azure Policies do not prevent other Policy from being deployed because of a contradiction"
 
-    - content: "A question about how to make exceptions to policies"
+    - content: "How do you ensure that a Policy applies to all the resources except a particular resource?"
       choices:
-        - content: "IaaS, PaaS, and SaaS are examples of cloud computing service models."
+        - content: "Move the resource to another resource group and apply the Policy to the previous resource group."
           isCorrect: false
-          explanation: "IaaS, PaaS, and SaaS are common cloud computing service models and are respectively infrastructure as a service, platform as a service, and software as a service."
-        - content: "Cloud computing resources are usually limited to specific geographic regions."
+          explanation: "This would solve the problem but may not work if that resource needs to stay in that resource group for whatever reason."
+        - content: "Apply the Policy at the resource level to the resources that need to have it in that resource group."
+          isCorrect: false
+          explanation: "You cannot apply a Policy at the resource level."
+        - content: "Tell your coworkers not to deploy resources that are not compliant with that Policy and add it to your training manual."
+          isCorrect: false
+          explanation: "This may work but may require a lot of manual work. This is not the best option in this scenario"
+        - content: "Add an exclusion to the resource that the Policy should not apply to."
           isCorrect: true
-          explanation: "Most cloud computing resources can be distributed to global datacenters."
-        - content: "Cloud computing typically decreases your operating expenses."
-          isCorrect: false
-          explanation: "Cloud computing typically decreases your operating expenses."
-        - content: "Three cloud computing deployment models are public cloud, private cloud, and hybrid cloud."
-          isCorrect: false
-          explanation: "Public cloud, private cloud, and hybrid cloud are common cloud computing deployment models."
+          explanation: "Azure Policies allows you to add exclusions you can use to exempt certain resources from having to comply with the Policy."

@@ -3,7 +3,7 @@ uid: learn.aks-governance-azure-policy.summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary Check of Azure policy concepts
+  description: Summary and cleanup for the module
   ms.date: 07/07/2021
   author: mosabami
   ms.author: aayodeji

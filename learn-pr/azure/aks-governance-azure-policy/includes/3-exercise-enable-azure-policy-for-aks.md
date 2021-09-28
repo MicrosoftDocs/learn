@@ -23,7 +23,12 @@ In this exercise, we will be using Azure cloud shell to run the commands. Feel f
 
 ### Setting up the environment
 
-1. From **Azure Portal** click on the **Cloud Shell** icon at the top of the screen to the right of the search bar
+1. Go to the Azure portal.
+
+    > [!div class="nextstepaction"]
+    > [Azure portal](https://portal.azure.com?azure-portal=true)
+
+1. Click on the **Cloud Shell** icon at the top of the screen to the right of the search bar
 
    ![screenshot of Azure Portal on the cloud shell creation screen](../media/3-create-cloud-shell-instance.png)
 
