@@ -38,7 +38,7 @@ units:
 - learn.aks-governance-azure-policy.azure-policy-integration-with-aks
 - learn.aks-governance-azure-policy.exercise-enable-azure-policy-for-aks
 - learn.aks-governance-azure-policy.built-in-policies-for-aks
-- learn.aks-governance-azure-policy.exercise-assign-policy-to-aks-cluster
+# - learn.aks-governance-azure-policy.exercise-assign-policy-to-aks-cluster
 - learn.aks-governance-azure-policy.exercise-check-compliance-status
 - learn.aks-governance-azure-policy.check-your-knowledge
 - learn.aks-governance-azure-policy.summary
