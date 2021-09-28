@@ -25,14 +25,15 @@ The SignalR hub is the core abstraction for sending messages to clients connecte
 - <xref:Microsoft.AspNetCore.SignalR.IHubContext%601>: A context where `THub` represents the standard hub.
 - <xref:Microsoft.AspNetCore.SignalR.IHubContext%602>: A context where `THub` represents the strongly-typed generic hub, and `T` represents the corresponding type of client.
 
-The `IHubContext` is for sending notifications to clients, it _**is not**_ used to call methods on the `Hub`.
+> [!IMPORTANT]
+> The `IHubContext` is for sending notifications to clients, it _**is not**_ used to call methods on the `Hub`.
 
 ### Methods
 
 `Hub` or `Hub<T>` methods are just like any other C# method, they define a return type, method name, and parameter(s).
 
 - The most common return type for a hub method is `Task` or `Task<TResult>`, which represents the asynchronous hub operation.
-- The method name is used to call the method from clients, it can be customized using the <xref:Microsoft.AspNetCore.SignalR.HubMethodNameAttribute?displayProperty=fullName>.
+- The method name is used to call the method from clients, it can be customized using the <xref:Microsoft.AspNetCore.SignalR.HubMethodNameAttribute>.
 - Parameters are optional, but when they're defined, clients are expected to provide corresponding arguments.
 
 Methods are not required to fire events, but they often do.
@@ -77,14 +78,14 @@ You call events from an <xref:Microsoft.AspNetCore.SignalR.IClientProxy> instanc
 
 The `HubConnection` class is a SignalR client concept, which represents the client's connection to the [server `Hub`](#servers-and-the-hub-class). It's defined within the `Microsoft.AspNetCore.SignalR.Client` namespace, and is part of the [Microsoft.AspNetCore.SignalR.Client](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Client) NuGet package. A `HubConnection` is created using the builder pattern, and the corresponding `HubConnectionBuilder` type. Given the hub's route (or <xref:System.Uri?displayProperty=fullName>) a `HubConnection` can be created. The builder can also specify additional configuration options, such as but not limited to; logging, the desired protocol, authentication token forwarding, and automatic reconnection.
 
-The `HubConnection` API exposes start and stop functions, used to start and stop the connection to the server. Additionally, there are capabilities for streaming, calling [hub methods](#methods), and subscribing to [events](#events).
+The `HubConnection` API exposes start and stop functions, used to start and stop the connection to the server respectively. Additionally, there are capabilities for streaming, calling [hub methods](#methods), and subscribing to [events](#events).
 
 ### Call hub methods
 
 Given a client `HubConnection` instance that has successfully started, the client can call methods on a hub using the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A> or <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A> extensions. If the hub method returns a `Task<TResult>` the result of the `InvokeAsync<TResult>` is of type `TResult`. If the hub method returns `Task`, then there is no result. Both `InvokeAsync` and `SendAsync` expect the name of the hub method, and zero to ten parameters.
 
 - <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A>: Invokes a hub method on the server using the specified method name and optional arguments.
-- <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A>: Invokes a hub method on the server using the specified method name and optional arguments. *Does not wait* for a response from the receiver.
+- <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A>: Invokes a hub method on the server using the specified method name and optional arguments. This method *does not wait* for a response from the receiver.
 
 ### Steam APIs
 
@@ -133,4 +134,6 @@ The result from registering an event handler is an `IDisposable`, which serves a
 
 ## Contoso Pizza live order updates
 
-The server code for the web application would have add a `Hub` implementation and expose a route to clients. The `Hub` could use the order objects unique identifier to create a group for tracking. All order status change updates could then be communicated in this group. The client code would also need to be updated, the Contoso Pizza application is a Blazor WebAssembly app. You could use either the JavaScript or .NET client SDK. You'd then replace the client-side polling functionality with code that builds a `HubConnection`, and start the connection to the server. You'd subscribe to the event for order status changes, and handle it accordingly.
+The server code for the web application needs to have a `Hub` implementation and expose a route to clients. The `Hub` could use the order object's unique identifier to create a group for tracking. All order status change updates could then be communicated in this group.
+
+The client code would also need to be updated, the Contoso Pizza application is a Blazor WebAssembly app. You could use either the JavaScript or .NET client SDK. You'd then replace the client-side polling functionality with code that builds a `HubConnection`, and start the connection to the server. As the user navigates to the order tracking page, the code would have to join the order's specific group where the change updates will be sent. You'd subscribe to the event for order status changes, and handle it accordingly.

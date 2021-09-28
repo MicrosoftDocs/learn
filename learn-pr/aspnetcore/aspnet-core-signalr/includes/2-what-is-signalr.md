@@ -26,7 +26,7 @@ For more information, see the official specification for [SignalR Transport Prot
 
 ### Server
 
-The server is responsible for exposing an endpoint. The endpoint maps to a <xref:Microsoft.AspNetCore.SignalR.Hub> or <xref:Microsoft.AspNetCore.SignalR.Hub%601> subclass. The server can exist on-premises, in a cloud provider (such as Azure), or with the [Azure SignalR Service](/azure/azure-signalr).
+The server is responsible for exposing an endpoint. The endpoint maps to a <xref:Microsoft.AspNetCore.SignalR.Hub> or <xref:Microsoft.AspNetCore.SignalR.Hub%601> subclass. The server can exist on-premises, in a cloud provider (such as Azure), or with the [Azure SignalR Service](/azure/azure-signalr). The server's exposes hub has methods that can be called from clients, and events that clients can subscribe to.
 
 #### Hub
 
@@ -37,12 +37,12 @@ SignalR uses *hubs* to communicate between clients and servers. A hub is a high-
 
 #### Protocols
 
-SignalR provides two built-in hub protocols:
+The SignalR Protocol is a protocol for two-way RPC over any [message-based transport](#transports). Either party in the connection may invoke procedures on the other party, and procedures can return zero or more results or an error. SignalR provides two built-in hub protocols:
 
 - A text protocol based on JSON (default)
 - A binary protocol based on *MessagePack* (*MessagePack* generally creates smaller messages compared to JSON).
 
-To use the *MessagePack* protocol, both server and client need to opt-in to configuring it. There is a third hub protocol named *BlazorPack*, but it is used exclusively with Blazor-Server applications. It cannot be used *without* the Blazor-Server hosting model.
+To use the *MessagePack* protocol, both server and client need to opt-in to configuring it, and both server and client have to support it. There is a third hub protocol named *BlazorPack*, but it is used exclusively with Blazor-Server applications. It cannot be used *without* the Blazor-Server hosting model.
 
 For more information, see the official specification for [SignalR Hub Protocol](https://github.com/dotnet/aspnetcore/blob/068797e16a1bfe66461e15c8a2ffa864369d384d/src/SignalR/docs/specs/HubProtocol.md).
 
@@ -63,4 +63,4 @@ With a hub connection instance that's started successfully, messages flow freely
 
 #### Users
 
-A user in the system acts as an individual, but they can also be part of a group. Messages can be sent to groups, and all group members will be notified. A single user can connect from multiple client applications, for example; the same user may use a mobile device and a web browser, and get real-time updates on both at the same time.
+A user in the system acts as an individual, but they can also be part of a group. Messages can be sent to groups, and all group members will be notified. A single user can connect from multiple client applications, for example; the same user may use a mobile device and a web browser and get real-time updates on both at the same time.

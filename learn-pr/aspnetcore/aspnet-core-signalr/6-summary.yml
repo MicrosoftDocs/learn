@@ -5,10 +5,10 @@ metadata:
   unitType: summary
   title: Summary
   description: A summary of ASP.NET Core SignalR with links to resources and additional references.
-  ms.date: 09/24/2021
+  ms.date: 09/28/2021
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
-durationInMinutes: 1 # user input: the estimate time to complete the unit
+durationInMinutes: 2 # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/6-summary.md)]
