@@ -88,7 +88,7 @@ Here, you download an ARM template from a GitHub repository that we provide for 
 1. Run the following `curl` command to download the ARM template:
 
     ```bash
-    curl -O 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json'
+    curl -O 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/vm-simple-linux/azuredeploy.json'
     ```
 
 1. Run the `ConvertTo-SecureString` cmdlet, and assign the results to a PowerShell variable named `$secure`:
