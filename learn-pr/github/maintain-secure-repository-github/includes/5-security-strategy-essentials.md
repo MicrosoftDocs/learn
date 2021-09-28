@@ -14,13 +14,7 @@ Here are some helpful tips before you begin the exercise:
 
 This exercise is a challenge based on content covered in this module and there could be more than one way to successfully complete the exercise. If you get stuck, revisit previous content in this module or navigate to some of the additional resources provided.
 
-When you've finished the exercise in GitHub, return here for:
-
-> [!div class="checklist"]
-> * A quick knowledge check 
-> * A summary of what you've learned
-> * To earn a badge for completing this module
-
+When you've finished the exercise in GitHub, return here for your next unit.
 
 > [!div class="nextstepaction"]
 > [Start the exercise on GitHub](https://github.com/githubtraining/exercise-use-gitignore?azure-portal=true)
