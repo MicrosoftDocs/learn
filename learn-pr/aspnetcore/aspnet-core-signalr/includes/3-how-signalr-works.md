@@ -94,6 +94,8 @@ SignalR supports streaming and provides the following APIs. To invoke a streamin
 - <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.StreamAsChannelAsync%2A>: Returns `Task<ChannelReader<TResult>>`.
 - <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.StreamAsync%2A>: Returns `IAsyncEnumerable<TResult>`.
 
+While the streaming is not a requirement of the Contoso Pizza's live map feature, it's still good to know it's available.
+
 ### Handle events
 
 To handle events, you register a handler with the `HubConnection` instance. Call one of the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.On%2A?displayProperty=nameWithType> overloads given the name of the hub method and zero to eight parameters. The handler can satisfy any of the following `Action` variations:
