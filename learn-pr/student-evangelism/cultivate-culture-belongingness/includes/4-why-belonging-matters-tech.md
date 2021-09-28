@@ -58,7 +58,7 @@ Think back to the last time you tried a new app, tech tool, or a new technique. 
 
 If you found the new tool or skill easy to learn:
 
-- Did you think "This is right up my alley" or "This is *so* me"?
+- Did you think, "This is right up my alley" or "This is *so* me"?
 
 - Was there good supporting documentation that made you feel like the tool was designed with you in mind?
 
@@ -70,7 +70,7 @@ If you found the new tool or skill easy to learn:
 
 If you found the new tool or skill challenging:
 
-- Did you think "I'm not this kind of person" or "I don't think this is for me"?
+- Did you think, "I'm not this kind of person" or "I don't think this is for me"?
 
 - Did you feel so frustrated that you abandoned it altogether?
 
