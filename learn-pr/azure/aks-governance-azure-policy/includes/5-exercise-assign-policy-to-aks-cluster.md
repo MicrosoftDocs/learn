@@ -4,7 +4,7 @@ In this unit, you'll deploy a non-compliant pod, apply an Azure Policy that enfo
 
 ## Deploy a non-compliant pod into the cluster
 
-We begin by deploying an image from dockerhub.com into the cluster. The first step would be to log into the cluster.
+We begin by deploying an image from directly from Docker Hub into the cluster. The first step would be to log into the cluster.
 
 1. In Cloud Shell, log into the AKS cluster
 
