@@ -5,6 +5,7 @@ You should be able to:
 - Configure and lockdown service endpoints and private links
 - Secure your applications with Application Gateway, Web App Firewall, and Front Door
 - Configure ExpressRoute to help protect your network traffic
+- Explain how network security acts as one layer in a defence in depth strategy
 
 ## Learn more
 
