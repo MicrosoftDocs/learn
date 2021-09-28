@@ -319,7 +319,7 @@ Let's examine what this code is doing.
           "authLevel": "function",
           "type": "httpTrigger",
           "direction": "in",
-          "name": "Request",
+          "name": "req",
           "methods": [
             "get",
             "post"
@@ -328,7 +328,7 @@ Let's examine what this code is doing.
         {
           "type": "http",
           "direction": "out",
-          "name": "Response"
+          "name": "res"
         },
         {
           "name": "bookmark",
