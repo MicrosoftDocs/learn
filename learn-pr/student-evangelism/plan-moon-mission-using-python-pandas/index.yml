@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: nextgen
 title: Plan a Moon mission by using Python pandas
 summary: Like Fei Fei, use data to plan your own mission to the Moon. Ensure that your rocket can not only get you there, but also bring you and all your Moon rocks safely back to Earth.
 abstract:  |
