@@ -9,7 +9,7 @@ In this task, you will learn how to access and use the Azure portal.
 In this task, you will access the lab environment and the Azure portal.
 
 1. Ask your instructor how to access the lab environment. 
-1. After accessing the lab environment, navigate to the [Azure Portal](https://portal.azure.com).
+1. After accessing the lab environment, navigate to the [Azure portal](https://portal.azure.com).
 1. Bookmark this page. You will use the Portal throughout the course labs and demonstrations.
 1. In the top right corner of the Portal, select your user account.
 1. Notice you can **View account** and **Switch directory**.

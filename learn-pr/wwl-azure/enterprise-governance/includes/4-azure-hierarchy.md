@@ -1,5 +1,5 @@
 
-**Azure Resource Manager** (ARM) is the deployment and management service for Azure. It provides a consistent management layer that allows you to create, update, and delete resources in your Azure subscription. You can use its access control, auditing, and tagging features to help secure and organize your resources after deployment.
+**Azure Resource Manager** is the deployment and management service for Azure. It provides a consistent management layer that allows you to create, update, and delete resources in your Azure subscription. You can use its access control, auditing, and tagging features to help secure and organize your resources after deployment.
 
 When you take actions through the portal, Azure PowerShell, the Azure CLI, REST APIs, or client software development kits (SDKs), the Resource Manager API handles your request. Because the same API handles all requests, you get consistent results and capabilities from all the different tools. Functionality initially released through APIs should be represented in the portal within 180 days of the initial release.
 
@@ -67,7 +67,7 @@ Management group hierarchies can be up to six levels deep. This provides you wit
 **Apply policies or access controls to any service**.
 
 * Create one RBAC assignment on the management group, which will inherit that access to all the subscriptions. 
-* Use Azure Resource Manager (ARM) integrations that allow integrations with other Azure services: Azure Cost Management, Privileged Identity Management, and Azure Security Center. 
+* Use Azure Resource Manager integrations that allow integrations with other Azure services: Azure Cost Management, Privileged Identity Management, and Azure Security Center. 
 
 >[!IMPORTANT]
 >By using management groups, you can reduce your workload and reduce the risk of error by avoiding duplicate assignments. Instead of applying multiple assignments across numerous resources and subscriptions, you can apply the one assignment on the one management group that contains the target resources. This will save time in the application of assignments, creates one point for maintenance, and allows for better controls on who can control the assignment.

@@ -19,7 +19,7 @@ API Management supports additional mechanisms for gaining access to APIs, includ
 
 * OAuth 2.0
 * Client certificates
-* IP allow lists
+* IP allowlists
 
 Azure policies encapsulate common API management functions, like those for access control, protection, transformation, and caching. You can chain these policies together into a pipeline that mutates a request’s context or changes the API behavior. You can apply these policies to a variety of scopes, trigger them on an error, and set them in the inbound and outbound directions.
 
