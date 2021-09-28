@@ -46,11 +46,11 @@ This component of belonging is related to mindset. The idea that someone can be 
 
 The field of tech is constantly changing and growing. For example, tech tools are always evolving and new ones are frequently being introduced. Computer science students and people who work in tech will often come across new challenges and the need to learn new tools. When they're presented with new technology, two questions can come up:
 
-- Self-efficacy. "Can I do it?"
+- Self-efficacy ("Can I do it?")
 
-- Mindset. "Am I this kind of person?"
+- Mindset ("Am I this kind of person?")
 
-Sometimes these lead to the additional questions, "Do I belong in tech?" or "Am I a tech person?"
+Sometimes these lead to the additional questions "Do I belong in tech?" or "Am I a tech person?"
 
 Interacting with the tech environment might affect your attitude about working in tech, and your feelings of belonging in tech. When you try a new tech tool, your interactions with its supporting documentation and community can affect whether you continue to use the tool.
 
@@ -58,7 +58,7 @@ Think back to the last time you tried a new app, tech tool, or a new technique. 
 
 If you found the new tool or skill easy to learn:
 
-- Did you think, "This is right up my alley," or, "This is *so* me!"
+- Did you think "This is right up my alley" or "This is *so* me"?
 
 - Was there good supporting documentation that made you feel like the tool was designed with you in mind?
 
@@ -70,7 +70,7 @@ If you found the new tool or skill easy to learn:
 
 If you found the new tool or skill challenging:
 
-- Did you think, "I'm not this kind of person," or, "I don't think this is for me."
+- Did you think "I'm not this kind of person" or "I don't think this is for me"?
 
 - Did you feel so frustrated that you abandoned it altogether?
 
