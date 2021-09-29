@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
+  ms.custom: nextgen
 title: 'Supervised learning: Regression'
 summary: Learn about linear regression models, and how to interpret their results.
 abstract:  | 
