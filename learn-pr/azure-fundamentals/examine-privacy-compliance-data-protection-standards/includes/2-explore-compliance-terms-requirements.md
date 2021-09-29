@@ -2,16 +2,17 @@ In this unit, you learn about the types of compliance offerings that are availab
 
 As Tailwind Traders moves to running its applications in the cloud, it wants to know how Azure adheres to applicable regulatory compliance frameworks. The company asks:
 
-* How compliant is Azure when it comes to handling personal data?
-* How compliant are each of Azure's individual services?
+ -  How compliant is Azure when it comes to handling personal data?
+ -  How compliant are each of Azure's individual services?
 
-Microsoft's online services build upon a common set of regulatory and compliance controls. Think of a _control_ as a known good standard that you can compare your solution against to ensure security. These controls address today's regulations and adapt as regulations evolve.
+Microsoft's online services build upon a common set of regulatory and compliance controls. Think of a *control* as a known good standard that you can compare your solution against to ensure security. These controls address today's regulations and adapt as regulations evolve.
 
 ## Which compliance categories are available on Azure?
 
 Although there are many more, the following image shows some of the more popular compliance offerings that are available on Azure. These offerings are grouped under four categories: Global, US Government, Industry, and Regional.
 
-:::image type="content" source="../media/2-compliance-matrix.png" alt-text="A screenshot of some of the Azure compliance offerings grouped under categories of Global, US Government, Industry, and Regional." border="false":::
+:::image type="content" source="../media/2-compliance-matrix-383090ad.png" alt-text="A screenshot of some of the Azure compliance offerings grouped under categories of Global, US Government, Industry, and Regional.":::
+
 
 To get a sense of the variety of the compliance offerings available on Azure, let's take a closer look at a few of them.
 
@@ -29,9 +30,9 @@ Azure, Intune, and Microsoft Power BI have obtained Cloud Security Alliance (CSA
 
 STAR Certification is based on achieving International Organization of Standards/International Electrotechnical Commission (ISO/IEC) 27001 certification and meeting criteria specified in the Cloud Controls Matrix (CCM). This certification demonstrates that a cloud service provider:
 
-- Conforms to the applicable requirements of ISO/IEC 27001.
-- Has addressed issues critical to cloud security as outlined in the CCM.
-- Has been assessed against the STAR Capability Maturity Model for the management of activities in CCM control areas.
+ -  Conforms to the applicable requirements of ISO/IEC 27001.
+ -  Has addressed issues critical to cloud security as outlined in the CCM.
+ -  Has been assessed against the STAR Capability Maturity Model for the management of activities in CCM control areas.
 
 ### European Union Model Clauses
 
@@ -53,9 +54,9 @@ Microsoft is the first cloud provider to have adopted the ISO/IEC 27018 code of 
 
 After rigorous assessments conducted by the Multi-Tier Cloud Security (MTCS) Certification Body, Microsoft cloud services received MTCS 584:2013 Certification across all three service classifications:
 
-- Infrastructure as a service (IaaS)
-- Platform as a service (PaaS)
-- Software as a service (SaaS)
+ -  Infrastructure as a service (IaaS)
+ -  Platform as a service (PaaS)
+ -  Software as a service (SaaS)
 
 Microsoft is the first global cloud solution provider to receive this certification across all three classifications.
 

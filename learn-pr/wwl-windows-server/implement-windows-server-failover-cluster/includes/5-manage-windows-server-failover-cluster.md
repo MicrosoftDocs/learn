@@ -5,9 +5,9 @@ Once you created a failover cluster, you need to create clustered roles to host 
 The following table lists the clustered roles that you can configure by using the High Availability Wizard and the associated server role or feature that you must install as a prerequisite.
 
 |Clustered role|Role or feature prerequisite|
-|--|-|
-|Namespace Server|Namespaces (part of the File Server role)|
-|DFS Namespace Server|DHCP Server role|
+|--------------|----------------------------|
+|DFS Namespace Server|Namespaces (part of the File Server role)|
+|DHCP Server|DHCP Server role|
 |Distributed Transaction Coordinator (DTC)|None|
 |File Server|File Server role|
 |Generic Application|Not applicable|
@@ -34,7 +34,7 @@ Each role for failover and failback has additional settings that you can control
 The following table provides examples that illustrate how these settings work.
 
 |Example|Settings|Result|
-|-|--||
+|-------|--------|------|
 |Example 1|General tab, Preferred owner: Node1; Failover tab, Failback setting: Allow failback (Immediately)|If the service or application fails over from Node1 to Node2, the service or application fails back to Node1 as soon as Node1 is available again.|
 |Example 2|Failover tab, Maximum failures in the specified period: 2; Failover tab, Period (hours): 6|If the application or service fails no more than two times in a six-hour period, it restarts or fails over every time. If the application or service fails a third time in a six-hour period, it remains in a failed state. The default value for the maximum number of failures is n −1, where n is the number of nodes.|
 
@@ -95,3 +95,9 @@ The main steps in the process are:
 1. Perform failover and failback of the newly-created cluster role by using **Failover Cluster Manager**.
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MHJL]
+
+---
+
+
+
+---
