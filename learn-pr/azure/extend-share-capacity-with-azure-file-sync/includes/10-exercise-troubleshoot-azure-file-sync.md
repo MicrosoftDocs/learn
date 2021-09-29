@@ -12,7 +12,7 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 
 1. Go to the storage account. Select **All resources** > **extendcadfiles**. Your **Storage account** pane appears.
 
-1. In the left menu pane, under **Security + networking**, select **Access keys**. The **Access keys** pane appears for your storage account.
+1. In the middle menu pane, under **Security + networking**, select **Access keys**. The **Access keys** pane appears for your storage account.
 
    ![Screenshot of the Access keys option under Security + settings.](../media/10-access-keys-option.png)
 
@@ -46,11 +46,12 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 ## Check the file sync
 
 1. Open a new File Explorer window.
-1. Put the two File Explorer windows side by side, with D:\CADFolder on the left and the mapped cadfileshare on the right:
+
+1. Put the two File Explorer windows side by side, with D:\CADFolder on the left, and the mapped cadfileshare on the right:
 
     ![Screenshot of two File Explorer windows side by side.](../media/10-side-by-side.png)
 
-1. In the left window, below **CADFolder**, right-click and select **New** > **Text Document**.
+1. In the left window, below **CADFolder**, right-click, and select **New** > **Text Document**.
 
 1. Rename the file to **test**.
 
@@ -60,9 +61,7 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 
 1. Go to the **CADFolder** folder in both windows.
 
-1. Open **create-bad-file.js** in the left window.
-
-   A new file named **invalid╘«nameÉ.txt** will be created.
+1. Open **create-bad-file.js** in the left window. A new file named **invalid╘«nameÉ.txt** will be created.
 
    This file won't replicate into the Azure file share.
 

@@ -1,7 +1,6 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-purview
 metadata:
-  hidden: true
   moduleType: introduction        
   title: Introduction to Azure Purview          
   description: "Introduction to Azure Purview"
@@ -25,7 +24,7 @@ prerequisites: |
   - Knowledge of various data sources such as SQL Server, Cosmos DB, etc.
   - Knowledge of the concepts around data governance.
 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/introduction-to-azure-purview.svg
 
 levels:
   - beginner
