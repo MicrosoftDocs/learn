@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.containerize-deploy-java-app-aks
+metadata:
+  moduleType: standard
+  title: Containerize and deploy a Java app to Azure
+  description: Containerize a Java app, push the Docker image to Azure Container Registry, and then deploy to Azure Kubernetes Service.
+  ms.date: 9/28/2021
+  author: chtrembl
+  ms.author: chtrembl
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Containerize and deploy a Java app to Azure
+summary: Containerize a Java app, push the Docker image to Azure Container Registry, and then deploy to Azure Kubernetes Service.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Containerize an existing Java application using Docker
+  - Build a Docker image for the Java application
+  - Run the Docker image locally
+  - Push the Docker image to Azure Container Registry
+  - Deploy the Docker image to Azure Kubernetes Service
+prerequisites: |
+  - An Azure subscription
+  - Local installations of Java JDK (1.8 or later), Maven (3.0 or later), Git CLI, and the Azure CLI (2.12 or later)
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - developer
+products:
+- azure
+- azure-container-registry
+- azure-kubernetes-service
+
+units:
+- learn.containerize-deploy-java-app-aks.introduction
+- learn.containerize-deploy-java-app-aks.setup
+- learn.containerize-deploy-java-app-aks.containerize
+- learn.containerize-deploy-java-app-aks.build
+- learn.containerize-deploy-java-app-aks.run
+- learn.containerize-deploy-java-app-aks.push
+- learn.containerize-deploy-java-app-aks.deploy
+
+badge:
+  uid: learn.containerize-deploy-java-app-aks.badge
