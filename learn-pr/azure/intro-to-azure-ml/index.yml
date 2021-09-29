@@ -16,7 +16,7 @@ abstract: |
   - Describe what Azure Machine Learning is
   - Define scenarios where Azure Machine Learning can be applied
 prerequisites: Familiarity with machine learning models and terms
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/intro-to-azure-ml.svg
 levels:
 - beginner
 roles:

@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |  
   - A basic understanding of containers.
   - A basic understanding of Azure Kubernetes Service. 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/aks-cluster-upgrades-patches.svg
 levels: 
   - beginner
 roles: 
