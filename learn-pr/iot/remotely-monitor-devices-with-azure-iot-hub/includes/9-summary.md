@@ -19,7 +19,8 @@ No need to delete your project code though, keep it for future reference!
 
 Take your interest further with:
 
-- [Azure IoT Hub Documentation](/azure/iot-hub//)
+- [Azure IoT Hub documentation](/azure/iot-hub/)
+- [Develop code for IoT devices with the .NET IoT Libraries documentation](/dotnet/iot/)
 - [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
 - [Develop IoT Edge modules for Windows devices](/azure/iot-edge/tutorial-develop-for-windows#set-up-visual-studio-and-tools)
 

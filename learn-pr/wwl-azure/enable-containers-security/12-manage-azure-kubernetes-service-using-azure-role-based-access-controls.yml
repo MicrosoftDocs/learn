@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-containers-security.manage-access-to-azure-kubernetes-service-using-azure-role-based-access-controls
+title: Manage access to Azure Kubernetes Service using Azure role-based access controls
+metadata:
+  title: Manage access to Azure Kubernetes Service using Azure role-based access controls
+  description: "Manage access to Azure Kubernetes Service using Azure role-based access controls"
+  ms.date: 09/29/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/12-manage-azure-kubernetes-service-using-azure-role-based-access-controls.md)]
