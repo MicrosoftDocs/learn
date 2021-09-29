@@ -12,45 +12,29 @@ title: 'SC-900 part 1: Describe the concepts of security, compliance, and identi
 prerequisites: |
   - Recommended learning:  [Introduction to cybersecurity](/learn/modules/intro-to-cybersecurity/)
 summary: |
-  to the cloud? Azure fundamentals is a six-part series that teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free.
-    After completing this learning path, you'll be able to:
-      - Understand the benefits of cloud computing in Azure and how it can save you time and money
-      - Explain cloud concepts such as high availability, scalability, elasticity, agility, and disaster recovery
-      - Describe core Azure architecture components such as subscriptions, management groups, resources and resource groups
-      - Summarize geographic distribution concepts such as Azure regions, region pairs, and availability zones
-    Here are the learning paths in this series:
-  | left | center | right |
-  | :--- | :----: | ----: |
-  | aaaa | bbbbbb | ccccc |
-    :::row:::
-    :::column:::
-      <img src="/learn/achievements/Introduction-to-azure-for-sap-workloads.svg" width="101" height="84" alt="The trophy for the Describe core Azure concepts learning path." role="presentation"|
-      Part 1: Describe core Azure concepts
-    :::column-end:::
-    :::column:::
-      <img src="/learn/achievements/Introduction-to-azure-for-sap-workloads.svg" width="101" height="84" alt="The trophy for the Describe core Azure services learning path." role="presentation"|
-      [Part 2: Describe core Azure services](../az-900-describe-core-azure-services/index.yml)
-    :::column-end:::
-    :::column:::
-      <img src="/learn/achievements/Introduction-to-azure-for-sap-workloads.svg" width="101" height="84" alt="The trophy for the Describe core solutions and management tools on Azure learning path." role="presentation"|
-      [Part 3: Describe core solutions and management tools on Azure](../az-900-describe-core-solutions-management-tools-azure/index.yml)
-    :::column-end:::
-    :::row-end:::
-    :::row:::
-    :::column:::
-      <img src="/learn/achievements/Introduction-to-azure-for-sap-workloads.svg" width="101" height="84" alt="The trophy for the Describe general security and network security features learning path." role="presentation"|
-      [Part 4: Describe general security and network security features](../az-900-describe-general-security-network-security-features/index.yml)
-    :::column-end:::
-    :::column:::
-      <img src="/learn/achievements/Introduction-to-azure-for-sap-workloads.svg" width="101" height="84" alt="The trophy for the Describe identity, governance, privacy, and compliance features learning path." role="presentation"|
-      [Part 5: Describe identity, governance, privacy, and compliance features](../az-900-describe-identity-governance-privacy-compliance-features/index.yml)
-    :::column-end:::
-    :::column:::
-      <img src="/learn/achievements/Introduction-to-azure-for-sap-workloads.svg" width="101" height="84" alt="The trophy for the Describe Azure cost management and service level agreements learning path." role="presentation"|
-      [Part 6: Describe Azure cost management and service level agreements](../az-900-describe-azure-cost-management-service-level-agreements/index.yml)
-    :::column-end:::
-    :::row-end:::
-    Complete all of the learning paths in the series if you are preparing for [Exam AZ-900: Microsoft Azure Fundamentals](/learn/certifications/exams/az-900).
+  Learn about core concepts, principles, and methodologies that are foundational to security, compliance, and identity solutions, including Zero-Trust, shared responsibility, the role of identity providers, and more.
+  
+  Here are the learning paths in this series:
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/describe-the-concepts-of-security-compliance-and-identity.svg" width="101" alt="The trophy for the Describe the concepts of security, compliance, and identity learning path." role="presentation"></img>
+    [Part 1: Describe the concepts of security, compliance, and identity](../describe-concepts-of-security-compliance-identity/index.yml)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg" width="79.59" alt="The trophy for the Describe the capabilities of Microsoft Identity and access management solutions learning path." role="presentation"></img>
+    [Part 2: Describe the capabilities of Microsoft Identity and access management solutions](../describe-capabilities-of-microsoft-identity-access/index.yml)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/describe-the-capabilities-of-microsoft-security-solutions.svg" width="79.59" alt="The trophy for the Describe the capabilities of Microsoft security solutions learning path." role="presentation"></img>
+    [Part 3: Describe the capabilities of Microsoft security solutions](../describe-capabilities-of-microsoft-security-solutions/index.yml)
+  :::column-end:::
+  :::row-end:::
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/describe-the-capabilities-of-microsoft-compliance-solutions.svg" width="101" alt="The trophy for the Describe the capabilities of Microsoft compliance solutions learning path." role="presentation"></img>
+    [Part 4: Describe the capabilities of Microsoft compliance solutions](../describe-capabilities-of-microsoft-compliance-solutions/index.yml)
+  :::column-end:::
+  :::row-end:::
 iconUrl: /learn/achievements/describe-the-concepts-of-security-compliance-and-identity.svg
 levels:
 - beginner
