@@ -36,4 +36,4 @@ quiz:
       explanation: There's no such thing as an external account.
     - content: An administrator account for each member of the external team.
       isCorrect: false
-      explanation: Administrator accounts should be restricted to a limited number of users responsible for your organization's identity management.
+      explanation: Administrator accounts should be restricted to users who are responsible for your organization's identity management.
