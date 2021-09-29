@@ -10,17 +10,17 @@ To browse a Windows Package Manage repository perform the following steps:
 manifests / m / Microsoft / PowerShell / 7.1.4.0
 ```
 
-The first directory, manifests is the top-level location.
+- The first directory, manifests is the top-level location.
 
-The M directory is to help collect all software made by companies whose name begins with the letter m.
+- The M directory is to help collect all software made by companies whose name begins with the letter m.
 
-The Microsoft directory stores all metadata about software made by Microsoft.
+- The Microsoft directory stores all metadata about software made by Microsoft.
 
-The PowerShell directory stores the metadata relating to all the versions of the PowerShell install.
+- The PowerShell directory stores the metadata relating to all the versions of the PowerShell install.
 
-And the last directory stores the metadata for that specific version, with this example the install for PowerShell 7.1.4.0.
+- And the last directory stores the metadata for that specific version, with this example the install for PowerShell 7.1.4.0.
 
-An understanding of the directory structure is critical if you wish to contribute to the repository.
+- An understanding of the directory structure is critical if you wish to contribute to the repository.
 
 ## Demonstration
 
