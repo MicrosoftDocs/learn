@@ -1,4 +1,4 @@
-In this exercise, you'll deploy real-time Altair emulator services to your Azure Sphere.
+In this exercise, you'll deploy Altair emulator disk services to your Azure Sphere.
 
 You will deploy prebuilt real-time packages to the Azure Sphere.
 

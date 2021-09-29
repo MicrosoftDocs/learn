@@ -1,6 +1,8 @@
-In this exercise, you'll get the connection information for Azure IoT Central. 
+In this exercise, you'll declare the IoT Central network endpoints. 
 
 ## List your IoT Central network endpoints
+
+Follow these steps to list the network endpoints of your IoT Central web application.
 
 1. Open the command prompt.
 
@@ -34,25 +36,3 @@ In this exercise, you'll get the connection information for Azure IoT Central.
    ```
 
 6. Copy the output from the **ShowIoTCentralConfig** tool to Notepad, as you'll need this information soon.
-
-## Get your Azure Sphere tenant ID
-
-1. From the  Windows **PowerShell command line** or Linux **Terminal**, run the following command.
-
-   ```azsphere
-   azsphere tenant show-selected
-   ```
-
-   The output of this command will look similar to the following.
-
-    ```Output
-    ------------------------------------ -------------------
-    Id                                   Name
-    ========================================================
-    99999999-e021-43ce-9999-fa9999499994 yourSphereTenant
-    ------------------------------------ -------------------
-    ```
-
-2. Copy the Azure Sphere tenant ID to Notepad, as you'll need it soon.
-
-In the next unit, you'll learn how to create the certificates required to secure the communications to the test.mosquitto.org MQTT broker.

@@ -39,8 +39,10 @@ products:
 - azure-virtual-machines
 units:
 - learn.student-evangelism.altair-azure-sphere-create-iot-central-application.introduction
-- learn.student-evangelism.altair-azure-sphere-create-iot-central-application.set-up
-- learn.student-evangelism.altair-azure-sphere-create-iot-central-application.exercise-configure
+- learn.student-evangelism.altair-azure-sphere-create-iot-central-application.iot-central-concept
+- learn.student-evangelism.altair-azure-sphere-create-iot-central-application.iot-central-exercise
+- learn.student-evangelism.altair-azure-sphere-create-iot-central-application.enable-trust-concept
+- learn.student-evangelism.altair-azure-sphere-create-iot-central-application.enable-trust-exercise
 - learn.student-evangelism.altair-azure-sphere-create-iot-central-application.knowledge-check
 - learn.student-evangelism.altair-azure-sphere-create-iot-central-application.summary
 badge:

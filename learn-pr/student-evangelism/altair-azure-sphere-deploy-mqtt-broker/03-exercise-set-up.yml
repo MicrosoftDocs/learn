@@ -9,6 +9,6 @@ metadata:
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-durationInMinutes: 20 # dummy number at present
+durationInMinutes: 15
 content: |
   [!include[](includes/03-exercise-set-up.md)]

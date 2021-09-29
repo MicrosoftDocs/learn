@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal.create-iot-central-properties
-title: Customize an Altair IoT Central application 
+title: Customize your IoT Central web application
 metadata:
-  title: Customize an Altair IoT Central application 
+  title: Customize your IoT Central web application
   description: Learn how to customize an Altair IoT Central application.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-durationInMinutes: 1 # dummy number at present
+durationInMinutes: 1 
 content: |
   [!include[](includes/02-create-iot-central-properties.md)]

@@ -47,13 +47,12 @@ Install the Visual Studio Code Static Web Apps Extension from the [Extension Mar
 1. Type **create static web app**, and select **Azure Static Web Apps: Create Static Web App...(Advanced)**.
 1. Select your subscription.
 1. You may be prompted to sign in with your GitHub account.
-1. Enter the name of the static web app: Enter **AltairWebTerminal**.
 1. Select **Create a new resource group**.
 1. Name the resource group **AltairWebTerminal**.
+1. Enter the name of the static web app: Enter **AltairWebTerminal**.
 1. Select the **Free** sku.
 1. Choose **Custom** build preset.
 1. Enter the location of your application code. Enter **/**.
-1. Enter the location of your Azure Function code. Enter **/api**.
 1. Enter the build output location. Ensure left **blank**.
 1. Select a location for the new resource. Select your preferred location for the Static Web App.
 
@@ -74,7 +73,7 @@ Install the Visual Studio Code Static Web Apps Extension from the [Extension Mar
 1. Rename the **local.settings.sample.json** file to **local.settings.json**.
 1. Open the **local.settings.json** file.
 
-The MQTT Broker configuration is prepopulated for the **test.mosquitto.org** public MQTT Broker.
+The MQTT broker configuration is prepopulated for the **test.mosquitto.org** public MQTT broker.
 
 Configure the IoT Central settings using the IoT Central API Token and URL that you saved to Notepad.
 
@@ -101,7 +100,7 @@ The setting will then be uploaded.
 
 The Altair Web Terminal is secure and requires authenticated users so you'll need to invite users, including yourself to the Altair Web Terminal Static Web App.
 
-1. From the [Microsoft Azure Portal](https://portal.azure.com?azure-portal=true).
+1. From the [Azure portal](https://portal.azure.com?azure-portal=true).
 1. Select **All resources**.
 
 :::image type="content" source="../media/azure-portal-all-resources.png" alt-text="Screenshot that shows how to select the all resources in the Azure portal.":::
@@ -139,8 +138,6 @@ When authenticated, connect to the Altair emulator. You'll need the name of your
 1. Paste the device name and select **Connect**.
 1. Add the Altair Web Terminal page to your web browser favorites.
 
-The MQTT Broker status message changes to **Connecting...**, when it has successfully connected, the status will change to **Connected**.
+The MQTT broker status message changes to **Connecting...**, when it has successfully connected, the status will change to **Connected**.
 
 :::image type="content" source="../media/web-terminal-connect.png" alt-text="Screenshot that shows how to connect the web terminal to the MQTT broker.":::
-
-In the next unit, you'll install and run the Altair emulator virtual disk server.

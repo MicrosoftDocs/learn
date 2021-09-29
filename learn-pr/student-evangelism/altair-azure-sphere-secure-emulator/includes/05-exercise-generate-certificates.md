@@ -1,10 +1,20 @@
-In this exercise, you'll generate the MQTT client certificates for the test.mosquitto.org MQTT Broker.
+In this exercise, you'll create the client certificates for the test.mosquitto.org MQTT broker.
 
 ## Install openssl
 
 For Linux users, you may need to install **openssl**. You can install OpenSSL using your Linux distributions package manager. For example, on Ubuntu `sudo apt-get install openssl`.
 
 For Windows users either download `openssl` from [openssl.org](https://wiki.openssl.org/index.php/Binaries?azure-portal=true), or use [Windows Subsystem for Linux (WSL))](/windows/wsl/install-win10). Depending on the WSL Linux distribution, you installed you may need to install **openssl**. You can install OpenSSL using your Linux distribution's package manager. For example, on Ubuntu `sudo apt-get install openssl`.
+
+## Delete the existing placeholder certificates
+
+The **AltairHL_emulator\certs** folder contains three placeholder certificates. The placeholder certificates are required for the **build_all** validation process. Delete the placeholder certificates as you will be creating new certificates for the Altair emulator.
+
+1. From your computer file manager, navigate to the **AltairHL_emulator\certs** folder and delete the three placeholder certificates.
+
+    - ca.crt
+    - client.key
+    - client.crt
 
 ## Download the Mosquitto Certificate Authority certificate
 
@@ -38,6 +48,6 @@ When you've completed the certificate step, you should have **three** certificat
 
 The files will be named:
 
-1. ca.crt
-2. client.key
-3. client.crt
+- ca.crt
+- client.key
+- client.crt

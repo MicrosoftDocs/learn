@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-secure-emulator.create-certificates
-title: Create Mosquitto certificates
+title: Learn how to secure the connection to an MQTT broker
 metadata:
-  title: Create Mosquitto certificates
-  description: Learn how to create Mosquitto broker certificates.
+  title: Learn how to secure the connection to an MQTT broker
+  description: Learn how to secure the connection to an MQTT broker.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover

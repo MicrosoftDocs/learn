@@ -1,5 +1,28 @@
 In the following exercise, you'll config and deploy the Altair emulator to your Azure Sphere.
 
+## Get your Azure Sphere tenant ID
+
+You'll need your Azure Sphere tenant ID for the next step. Follow these steps to show your tenant ID and copy it to Notepad.
+
+1. From the  Windows **PowerShell command line** or Linux **Terminal**, run the following command.
+
+   ```azsphere
+   azsphere tenant show-selected
+   ```
+
+   The output of this command will look similar to the following.
+
+    ```Output
+    ------------------------------------ -------------------
+    Id                                   Name
+    ========================================================
+    99999999-e021-43ce-9999-fa9999499994 yourSphereTenant
+    ------------------------------------ -------------------
+    ```
+
+2. Copy the Azure Sphere tenant ID to Notepad, as you'll need it soon.
+
+
 ## Open the Altair emulator with Visual Studio Code
 
 1. Start Visual Studio Code.
@@ -80,11 +103,13 @@ In the following exercise, you'll config and deploy the Altair emulator to your 
 
 1. Save the updated app_manifest.json file.
 
-## Select your developer board configuration
+## Set your developer board configuration
 
 The Altair project works on Azure Sphere developer boards from Avnet and Seeed Studio. The default developer board configuration is the Avnet Azure Sphere Starter Kit Revision 1 with **no** front panel.
 
-1. Open **CMakeLists.txt**.
+1. Still in Visual Studio Code, navigate to the **cmake** folder.
+
+1. Open the **altair_config.cmake** file.
 
 1. Add **#** at the beginning of the **set AVNET** line to disable it.
 
@@ -137,7 +162,7 @@ The Altair project works on Azure Sphere developer boards from Avnet and Seeed S
     ###################################################################################################################
     ```
 
-1. Save the **CMakeLists.txt** file. Saving the file will autogenerate the CMake cache.
+1. Save the **altair_config.cmake** file. Saving the file will autogenerate the CMake cache.
 
 ## Enable support the Altair front panel
 
@@ -167,8 +192,8 @@ Ignore this step unless you have built the Altair front panel kit.
 
 ## Expected device behavior
 
-Observe the WLAN status LED on your developer board while the device establishes a secure connection to IoT Central and the MQTT Broker
+Observe the WLAN status LED on your developer board while the device establishes a secure connection to IoT Central and the MQTT broker
 
 1. While establishing a WiFi connection the WLAN LED will blink on for 700 ms, then off for 700 ms.
-1. While establishing a connection to IoT Central and the MQTT Broker the WLAN LED will blink on for 100 ms, then off for 1300 ms.
+1. While establishing a connection to IoT Central and the MQTT broker the WLAN LED will blink on for 100 ms, then off for 1300 ms.
 1. When the connection has been established with IoT Central the WLAN LED will blink on for 1400 ms, then off for 100 ms.

@@ -1,28 +1,8 @@
-In this exercise, you'll create an Azure Iot Central application and link it to your Azure Sphere tenant.
+In this unit, you'll enable trust between your IoT Central application and Azure Sphere.
 
-## Step 1: Create a new Azure IoT Central application
+After you enable trust, any device claimed into your Azure Sphere tenant will automatically be enrolled in your Azure IoT Central application when it first connects.
 
-1. Open the IoT Central web portal by selecting this link [Azure IoT Central](https://azure.microsoft.com/services/iot-central?azure-portal=true).
-
-1. Select **Build a solution**.
-
-1. You'll need to sign with your Microsoft personal, work, or school account. If you don't have a Microsoft account, then you can create one for free by using the **Create one!** link.
-
-1. Expand the sidebar menu by selecting on the **Menu** icon.
-
-    :::image type="content" source="../media/menu.png" alt-text="Diagram that shows how to expand the sidebar menu.":::
-
-1. Navigate to **Build**, select **Custom app**, and select **Create app**.
-
-    :::image type="content" source="../media/new-application.png" alt-text="Screenshot that shows how to create custom app.":::
-
-1. Specify the **Application name**, specify the **URL**.
-
-1. Select the pricing plan, for now, select **Free**, you can migrate to a standard plan with 2 free devices after 7 days.
-
-1. Select **Create**.
-
-## Step 2: Establish trust between IoT Central and your Azure Sphere Tenant
+Follow these steps to enable trust.
 
 1. If you're using Windows, open a Windows **PowerShell command line**. If you're using Linux, open **Terminal**.
 
@@ -44,7 +24,9 @@ In this exercise, you'll create an Azure Iot Central application and link it to 
 
 ### Create an Enrollment Group
 
-1. From IoT Central, go to **Administration** > **Device Connection**.
+1. From IoT Central web portal, select the hamburger button on the top-left corner of the screen to expand the sidebar menu.
+
+1. Select **Administration**, then **Device Connection**.
 
 1. Select **+ New**.
 
@@ -91,4 +73,4 @@ In this exercise, you'll create an Azure Iot Central application and link it to 
 
 4. Select **Save**.
 
-After you complete these steps, any device claimed into your Azure Sphere tenant will automatically be enrolled in your Azure IoT Central application when it first connects.
+

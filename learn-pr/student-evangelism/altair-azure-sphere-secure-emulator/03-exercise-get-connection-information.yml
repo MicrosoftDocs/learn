@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-secure-emulator.exercise-get-connection-information
-title: Exercise - Get connection information
+title: Declare IoT Central network endpoints
 metadata:
-  title: Exercise - Get connection information
-  description: In this exercise, complete the steps to get connection information and secure an Azure Sphere application.
+  title: Declare IoT Central network endpoints
+  description: In this exercise, you'll declare IoT Central network endpoints.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-durationInMinutes: 6 # dummy number at present
+durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/03-exercise-get-connection-information.md)]

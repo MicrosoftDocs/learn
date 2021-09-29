@@ -1,56 +1,13 @@
-In this module, you're going to learn about the supported Altair 8800 emulator hardware configurations and how to set up the Azure Sphere development environment.
+Welcome to the cloud-connected Altair 8800 on Azure Sphere learning path. In this module, you will learn about the hardware requirements for the Altair emulator and how to install the required software on your computer.
 
-## Hardware requirements
+## Scenario: Hardware and software setup
 
-There are three supported configurations for the Altair emulator on the Azure Sphere.
+So you've read about the Altair 8800 and now you're ready to run the Altair emulator on Azure Sphere. You'll have a computer running Windows 10 (or better) or Ubuntu 20.04, and you'll have an Azure Sphere.
 
-## Standalone Azure Sphere
+## What will you learn?
 
-Either an Avnet or Seeed Studio Azure Sphere.
+In this module, you'll learn about the Azure Sphere hardware options for the Altair emulator and you'll also learn what software you need to install on your computer.
 
-| Seeed Studio Azure Sphere Developer Kit     | Avnet Azure Sphere Starter Kit Rev 1 or Rev 2    |
-|----------------|---------------|
-| :::image type="content" source="../media/seeed-studio-azure-sphere-rdb.png" alt-text="Photo of Seeed Studio Azure Sphere." border = "false"::: | :::image type="content" source="../media/avnet-azure-sphere.png" alt-text="Photo of Avnet Azure Sphere." border = "false"::: |
+## What is the main goal?
 
-### Avnet Azure Sphere plus MikroE 8800 Retro Click and microSD Card
-
-An Avnet Azure Sphere Starter Kit with the [MikroE 8800 Retro Click](https://www.mikroe.com/8800-retro-click?azure-portal=true) and [MikroE microSD Card Click](https://www.mikroe.com/microsd-click?azure-portal=true).
-
-![Avnet Azure Sphere plus MikroE Click panel and MikroE microSD Card.](../media/avnet-azure-sphere-rev-2-microSD-click.png)
-
-### Altair front panel
-
-The Seeed Studio or Avnet with the Altair Front Panel. Full details for building and wiring the Altair front panel can be found on the [Altair 8800 Hardware repo](https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.Hardware?azure-portal=true).
-
-:::image type="content" source="../media/avnet-front-panel.png" alt-text="Image that shows Avnet Azure Sphere with the Altair front panel." border = "false":::
-
-:::image type="content" source="../media/altair-front-panel.png" alt-text="Image that shows Seeed Studio Azure Sphere with the Altair front panel." border = "false":::
-
-## Software requirements
-
-There are five components to the cloud-connected Altair on Azure Sphere solution. The components are:
-
-1. The Altair emulator running on the Azure Sphere.
-2. An IoT Central application for configuration and reporting.
-3. The Web Terminal Azure Static Website.
-4. The Virtual disk server.
-5. And optionally, a private MQTT Broker.
-
-In this module, you will:
-
-* Learn the hardware and software requirements for the Altair 8800 emulator.
-* Learn about the five components to a cloud-connected Altair on Azure Sphere solution.
-* Install and configure the components.
-
-## Prerequisites
-
-* A computer with an x86-64-based processor running one of the following operating systems:
-  * Windows 10 Anniversary Update or later
-  * 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
-* An Azure Sphere developer board that has one of the following kits:
-  * Avnet Azure Sphere Starter Kit Rev 1 or 2
-  * Seeed Studio Azure Sphere MT3620 Development Kit
-* A GitHub account.
-* An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
-
-In the next unit, you'll learn how to install the required software and deploy the Altair 8800 emulator to your Azure Sphere.
+This module will focus on the hardware options and setting up your computer to build the deploy that Altair emulator to Azure Sphere.

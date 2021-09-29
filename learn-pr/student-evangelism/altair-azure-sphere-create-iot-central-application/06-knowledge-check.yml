@@ -9,7 +9,7 @@ metadata:
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-durationInMinutes: 2 # dummy number at present
+durationInMinutes: 2
 content: |
 quiz:
   questions:

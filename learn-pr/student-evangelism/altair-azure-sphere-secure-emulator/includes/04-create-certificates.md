@@ -1,4 +1,4 @@
-In this unit, you'll learn how to create the certificates required to secure the communications to the test.mosquitto.org MQTT broker.
+In this unit, you'll learn how to create certificates to secure the connection to an MQTT broker.
 
 ## Understanding the Altair emulator communications architecture
 
@@ -8,12 +8,10 @@ The Web Terminal is an HTML/CSS/JavaScript application built on the [MQTT](https
 
 :::image type="content" source="../media/altair-web-terminal.png" alt-text="Diagram that shows the architecture of the web terminal." border="false":::
 
-## Generator MQTT Broker certificates
+## Generator MQTT broker certificates
 
-By default, the solution uses the public **test.mosquitto.org** MQTT broker. The Altair emulator communicates with the MQTT broker over a secure encrypted connection using the wolfSSL library included with Azure Sphere.
+By default, the Altair emulator uses the public **test.mosquitto.org** MQTT broker. The Altair emulator communicates with the MQTT broker over a secure encrypted connection using the wolfSSL library included with Azure Sphere.
 
-You'll generate certificates the MQTT client will use to sign and encrypt the traffic between the Azure Sphere and the MQTT Broker.
+You'll generate certificates the MQTT client will use to sign and encrypt the traffic between the Azure Sphere and the MQTT broker.
 
-Note, your MQTT messages are encrypted, but your data will be visible on the *test.mosquitto.org* broker. Later, you'll learn how to create and secure your own Mosquitto MQTT Broker.
-
-In the next exercise, you'll learn how to generate the MQTT client certificates for the test.mosquitto.org MQTT Broker.
+Note, your MQTT messages are encrypted, but your data will be visible on the *test.mosquitto.org* broker. Later, you'll learn how to create and secure your own Mosquitto MQTT broker.
