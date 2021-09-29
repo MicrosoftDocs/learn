@@ -5,7 +5,7 @@ The Rust playground is convenient for testing small programs, trying new crates 
 
 Let's start by writing some code for a basic program.
 
-1. Connect to the [Rust playground][Rust-play].
+1. Connect to the [Rust playground][RustPlay].
 
 1. Enter the following code in the playground editor:
 
@@ -58,4 +58,4 @@ Now you can save the URL to access the code later, or share the URL for others t
 
 <!-- Links -->
 
-[RustPlay-play]: https://play.rust-lang.org/?azure-portal=true
+[RustPlay]: https://play.rust-lang.org/?azure-portal=true
