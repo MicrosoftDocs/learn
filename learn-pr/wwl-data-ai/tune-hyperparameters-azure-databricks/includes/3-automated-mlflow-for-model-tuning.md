@@ -1,15 +1,15 @@
 To choose the best model trained during hyperparameter tuning, you want to compare all models by evaluating their metrics. One common and simple approach to track model training in Azure Databricks is by using the open-source platform **MLflow**. 
 
 ## Use automated MLflow
-As you train multiple models with hyperparameter tuning, you want to avoid the need to make explicit API calls to log all necessary information about the different models to MLflow. To make tracking hyperparameter tuning easier, the [Databricks Runtime for Machine Learning](https://docs.databricks.com/runtime/mlruntime.html) also supports *automated* MLflow Tracking. 
-When you use automated MLflow for model tuning, the hyperparameter values and evaluation metrics are automatically logged in MLflow and a hierarchy will be created for the different runs that represent the distinct models you train. 
+As you train multiple models with hyperparameter tuning, you want to avoid the need to make explicit API calls to log all necessary information about the different models to MLflow. To make tracking hyperparameter tuning easier, the [Databricks Runtime for Machine Learning](https://docs.databricks.com/runtime/mlruntime.html) also supports *automated* MLflow Tracking.
+When you use automated MLflow for model tuning, the hyperparameter values and evaluation metrics are automatically logged in MLflow and a hierarchy will be created for the different runs that represent the distinct models you train.
 
 To use automated MLflow tracking, you have to do the following:
 - Use a Python notebook to host your code.
 - Attach the notebook to a cluster with Databricks Runtime or Databricks Runtime for Machine Learning.
-- Set up the hyperparameter tuning with `CrossValidator` or `TrainValidationSplit`. 
+- Set up the hyperparameter tuning with `CrossValidator` or `TrainValidationSplit`.
 
-MLflow will automatically create a main or parent run that contains the information for the method you chose: `CrossValidator` or `TrainValidationSplit`. MLflow will also create child runs that are nested under the main or parent run. Each child run will represent a trained model and you can see which hyperparameter values were used and the resulting evaluation metrics. 
+MLflow will automatically create a main or parent run that contains the information for the method you chose: `CrossValidator` or `TrainValidationSplit`. MLflow will also create child runs that are nested under the main or parent run. Each child run will represent a trained model and you can see which hyperparameter values were used and the resulting evaluation metrics.
 
 ## Run tuning code
 When you want to run code that will train multiple models with different hyperparameter settings, you can go through the following steps:
@@ -35,7 +35,7 @@ After you select the hyperparameters, you can use `ParamGridBuilder()` to specif
 By default, the individual models will be trained in serial. It is possible to train models with different hyperparamater values in parallel. You can find more information on setting up the parameter grid in the documentation [here](https://spark.apache.org/docs/latest/ml-tuning.html).
 
 > [!NOTE] 
-> **Note**:  Since grid search works through exhaustively building a model for each combination of hyperparameters, it quickly becomes a lot of different unique combinations. As each model training can consume a lot of compute power, be careful with the configuration you set up.
+> Since grid search works through exhaustively building a model for each combination of hyperparameters, it quickly becomes a lot of different unique combinations. As each model training can consume a lot of compute power, be careful with the configuration you set up.
 
 If we continue the example with the linear regression model `lr`, the following code shows how to set up a grid search to try out all possible combinations of parameters:
 
