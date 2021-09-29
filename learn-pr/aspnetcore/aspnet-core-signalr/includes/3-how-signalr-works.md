@@ -25,7 +25,7 @@ As a point of reference consider the following `Notification` object:
 ```csharp
 namespace RealTime.Models;
 
-public record Notification(string Text, int Id, DateTime Date);
+public record Notification(string Text, DateTime Date);
 ```
 
 The object can be shared when using the .NET client SDK, so that the server and client have the exact same object. Imagine a simple notification hub:
@@ -83,7 +83,7 @@ public class NotificationService
 }
 ```
 
-The preceding C# code relies on the `IHubContext<NotificationHub>` to access the contextual listing of clients, exposing the ability to broadcast notifications.
+The preceding C# code relies on the `IHubContext<NotificationHub>` to access the contextual listing of clients, exposing the ability to broadcast notifications. The `_hubContext` is used to fire the `"NotificationReceived"` event, but it is not intended to be used to call the hub's `NotifyAll` method.
 
 ### Methods
 
@@ -139,12 +139,63 @@ A `HubConnection` is created using the builder pattern, and the corresponding `H
 
 The `HubConnection` API exposes start and stop functions, used to start and stop the connection to the server respectively. Additionally, there are capabilities for streaming, calling [hub methods](#methods), and subscribing to [events](#events).
 
+### Example `HubConnection` creation
+
+To create a `HubConnection` object from the .NET SignalR client SDK, you build one using the `HubConnectionBuilder` type:
+
+```csharp
+using Microsoft.AspNetCore.SignalR.Client;
+using System;
+using System.Threading.Tasks;
+using RealTime.Models;
+
+namespace ExampleClient;
+
+public sealed class Consumer : IAsyncDisposable
+{
+    private readonly string HostDomain =
+        Environment.GetEnvironmentVariable("HOST_DOMAIN");
+    
+    private HubConnection _hubConnection;
+
+    public Consumer()
+    {
+        _hubConnection = new HubConnectionBuilder()
+            .WithUrl(new Uri($"{HostDomain}/hub/notifications"))
+            .WithAutomaticReconnect()
+            .Build();
+    }
+
+    public Task StartNotificationConnectionAsync() =>
+        _hubConnection.StartAsync();
+
+    public async ValueTask DisposeAsync()
+    {
+        if (_hubConnection is not null)
+        {
+            await _hubConnection.DisposeAsync();
+            _hubConnection = null;
+        }
+    }
+}
+```
+
 ### Call hub methods
 
 Given a client `HubConnection` instance that has successfully started, the client can call methods on a hub using the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A> or <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A> extensions. If the hub method returns a `Task<TResult>` the result of the `InvokeAsync<TResult>` is of type `TResult`. If the hub method returns `Task`, then there is no result. Both `InvokeAsync` and `SendAsync` expect the name of the hub method, and zero to ten parameters.
 
 - <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A>: Invokes a hub method on the server using the specified method name and optional arguments.
 - <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A>: Invokes a hub method on the server using the specified method name and optional arguments. This method *does not wait* for a response from the receiver.
+
+### Example hub method invocation
+
+Adding a method to the previous `Consumer` class, the `SendNotificationAsync` delegates out to the `_hubConnection` and calls the `NotifyAll` method on the server's hub given the `Notification` instance.
+
+```csharp
+public Task SendNotificationAsync(string text) =>
+    _hubConnection.InvokeAsync(
+        "NotifyAll", new Notification(text, DateTme.UtcNow));
+```
 
 ### Steam APIs
 
@@ -192,6 +243,47 @@ Alternatively, you can use the asynchronous handler APIs which are `Func<TResult
 [func9]: xref:System.Func%609
 
 The result from registering an event handler is an `IDisposable`, which serves as the subscription. To unsubscribe the handler call <xref:System.IDisposable.Dispose%2A>.
+
+### Example event registration
+
+Updating the previous `Consumer` class, you register to an event by providing a handler and calling `On`:
+
+```csharp
+using Microsoft.AspNetCore.SignalR.Client;
+using System;
+using System.Threading.Tasks;
+using RealTime.Models;
+
+namespace ExampleClient;
+
+public sealed class Consumer : IAsyncDisposable
+{
+    private readonly string HostDomain =
+        Environment.GetEnvironmentVariable("HOST_DOMAIN");
+    
+    private HubConnection _hubConnection;
+
+    public Consumer()
+    {
+        _hubConnection = new HubConnectionBuilder()
+            .WithUrl(new Uri($"{HostDomain}/hub/notifications"))
+            .WithAutomaticReconnect()
+            .Build();
+
+        _hubConnection.On<Notification>(
+            "NotificationReceived", OnNotificationReceivedAsync);
+    }
+
+    private async Task OnNotificationReceivedAsync(Notification notification)
+    {
+        // Do something meaningful with the notification.
+    }
+
+    // Omitted for brevity.
+}
+```
+
+The `OnNotificationReceivedAsync` method is called when the server's hub instance fires the `"NotificationReceived"` event.
 
 ## Contoso Pizza live order updates
 
