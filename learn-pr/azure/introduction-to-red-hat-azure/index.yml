@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Familiarity with Linux and Azure 
   - Basic-level understanding of using Red Hat and Java on-premises
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/introduction-to-red-hat-azure.svg
 levels:
   - beginner
 roles:
