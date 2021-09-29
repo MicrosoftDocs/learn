@@ -33,7 +33,7 @@ quiz:
       isCorrect: true
       explanation: Under the list of policies, select iothubowner to locate the primary key connection string.
 
-  - content: 'All connection strings begin with what text?'
+  - content: 'IoT Hub device and service connection strings begin with what text?'
     choices:  
     - content: 'Primary Key'
       isCorrect: false

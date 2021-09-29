@@ -27,7 +27,7 @@ At the end of this unit, you'll be sending and receiving telemetry.
 
 1. Open a terminal in Visual Studio Code, and create a folder called "cheesecavedevice" (enter `mkdir cheesecavedevice`). Navigate to the `cheesecavedevice` folder.
 
-1. Enter the following command in the terminal: `dotnet new console`. This command creates a **Program.cs** file in your folder, along with a project file.
+1. Enter the following command in the terminal: `dotnet new console`. This command creates a *Program.cs* file in your folder, along with a project file.
 
 1. In the terminal, install the required libraries. Enter:
 
@@ -43,11 +43,11 @@ At the end of this unit, you'll be sending and receiving telemetry.
     code . -r
     ```
 
-1. If prompted **Select 1 of 2 projects**, select *cheesecavedevice.csproj*.
+1. When prompted **Select 1 of 2 projects**, select *cheesecavedevice.csproj*.
 
-1. From the **File** menu, open up the **Program.cs** file, and delete the default contents.
+1. From the **File** menu, open up the *Program.cs* file, and delete the default contents.
 
-1. After you've entered the code below into the **Program.cs** file, you can run the app with the command `dotnet run`. This command will run the **Program.cs** file in the current folder, so ensure you are in the `cheesecavedevice` folder.
+1. After you've entered the code below into the *Program.cs* file, you can run the app with the command `dotnet run`. This command will run the *Program.cs* file in the current folder, so ensure you are in the `cheesecavedevice` folder.
 
 ::: zone-end
 ::: zone pivot="vs-node"
@@ -70,16 +70,16 @@ At the end of this unit, you'll be sending and receiving telemetry.
 ::: zone-end
 ::: zone pivot="vs-csharp"
 
-1. Open Visual Studio, and create a new **Visual C#/Windows Desktop** project. Select **Console App (.NET Framework)**.
+1. Open Visual Studio and create a new C# **Console App** project.
 
 1. Give the project a friendly name, such as "CheeseCaveDevice".
 
 1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Select **Browse**, then search for, and install, the following library:
     * **Microsoft.Azure.Devices.Client**
 
-1. Delete the default contents of the **Program.cs** file.
+1. Delete the default contents of the *Program.cs* file.
 
-1. Add all the code that follows to the **Program.cs** file.
+1. Add all the code that follows to the *Program.cs* file.
 
 ::: zone-end
 
@@ -216,7 +216,7 @@ This section adds code to send telemetry from a simulated device. The device sen
 ::: zone-end
 ::: zone pivot="vs-csharp,vscode-csharp"
 
-1. Open the **Program.cs** file for the device app.
+1. Open the *Program.cs* file for the device app.
 
 1. Copy and paste the following code.
 
@@ -378,7 +378,7 @@ This section adds code to send telemetry from a simulated device. The device sen
 
 1. Replace the `<your device connection string>` with the device connection string you saved off in an earlier unit. No other lines of code need to be changed.
 
-1. Save the **Program.cs** file.
+1. Save the *Program.cs* file.
 
 ::: zone-end
 
@@ -423,7 +423,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 1. Open a new Visual Studio Code window.
 1. Open a terminal in Visual Studio Code, and create a folder called "cheesecaveoperator" (enter `mkdir cheesecaveoperator`). Navigate to the `cheesecaveoperator` folder.
 
-1. Enter the following command in the terminal: `dotnet new console`. This command creates a **Program.cs** file in your folder, along with a project file.
+1. Enter the following command in the terminal: `dotnet new console`. This command creates a *Program.cs* file in your folder, along with a project file.
 
 1. In the terminal, enter the following commands:
 
@@ -439,11 +439,11 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
     code . -r
     ```
 
-1. If prompted **Select 1 of 2 projects**, select *cheesecavedevice.csproj*.
+1. When prompted **Select 1 of 2 projects**, select *cheesecaveoperator.csproj*.
 
-1. From the **File** menu, open up the **Program.cs** file, and delete the default contents.
+1. Open *Program.cs*, and delete the default contents.
 
-1. After you've entered the code below into the **Program.cs** file, run the code with the command `dotnet run`. This command will run the **Program.cs** file in the current folder, so ensure you are in the correct folder.
+1. After you've entered the code below into the *Program.cs* file, run the code with the command `dotnet run`. This command will run the *Program.cs* file in the current folder, so ensure you are in the correct folder.
 
 ::: zone-end
 ::: zone pivot="vs-node"
@@ -461,7 +461,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 ::: zone-end
 ::: zone pivot="vs-csharp"
 
-1. Open Visual Studio, and create a new **Visual C#/Windows Desktop** project. Select **Console App (.NET Framework)**.
+1. Open a new instance of Visual Studio and create a new C# **Console App** project.
 
 1. Give the project a friendly name, such as "CheeseCaveOperator".
 
@@ -469,9 +469,9 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
     * **Microsoft.Azure.Devices**
     * **Microsoft.Azure.EventHubs**
 
-1. Delete the default contents of **Program.cs**.
+1. Delete the default contents of *Program.cs*.
 
-1. Add all the code that follows to the **Program.cs** file.
+1. Add all the code that follows to the *Program.cs* file.
 
 ::: zone-end
 
@@ -566,7 +566,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 ::: zone-end
 ::: zone pivot="vs-csharp,vscode-csharp"
 
-1. Open the **Program.cs** file for the back-end app.
+1. Open the *Program.cs* file for the back-end app.
 
     ```cs
     // Copyright (c) Microsoft. All rights reserved.
@@ -591,7 +591,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
     
             // Event Hub connection string for your IoT Hub
-            private readonly static string s_eventHubConnectionString = "<your Event Hub compatible connection string>";
+            private readonly static string s_eventHubConnectionString = "<your event hub endpoint>";
 
             // Asynchronously create a PartitionReceiver for a partition and then start reading any messages sent from the simulated client.
             private static async Task ReceiveMessagesFromDeviceAsync(string partition)
@@ -670,20 +670,18 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
     > [!NOTE]
     > Our implementation only reads messages after the back-end app has been started. Any telemetry sent prior to this isn't handled.
 
-1. Replace the `<your service connection string>` with the _service_ connection string you saved off in a text file, in an earlier unit.
+1. Replace the `<your event hub endpoint>` with the Event Hub-compatible endpoint string you saved in your text file.
 
-1. Replace the `<your event hub endpoint>`, `<your event hub path>`, and the `<your event hub Sas key>` with the strings you saved off to your text file.
-
-1. Save the **Program.cs** file.
+1. Save the *Program.cs* file.
 
 ::: zone-end
 
 ### Test your code to receive telemetry
 
-This test is important, checking whether your back-end app is picking up the telemetry being sent out by your simulated device. Remember your device app is still running, and sending telemetry.
+It's important to test whether your back-end app is picking up the telemetry being sent out by your simulated device. Remember your device app is still running and sending telemetry.
 
 1. Run the service app.
-1. A second console window should open up, and immediately respond if it successfully connects to IoT Hub. If not, carefully check your IoT Hub service connection string, noting that this string should be the _service_ connection string, and not any other.
+1. A second console window should open up, and immediately respond if it successfully connects to IoT Hub. If not, carefully check the string you copied from your text file and ensure you copied the correct string.
 
     [![Screenshot showing the temperature and humidity telemetry being received.](../media/cheesecave-telemetry-received.png)](../media/cheesecave-telemetry-received.png#lightbox)
 

@@ -11,14 +11,13 @@ In this unit, we'll first create an IoT Hub, and add a single device to that hub
     >[!IMPORTANT]
     >Your hub names are publicly discoverable, so take this into account when entering names. Hub names must also be unique, as they form part of the Azure URL.
 1. For **Region**, ensure the selection is a geographical region close to your location.
-1. Select **Next: Networking**. There's nothing that needs to change on this page.
-1. Select **Next: Management** to view the capabilities of your hub. Under **Advanced Settings**, observe the number of partitions. You can leave all entries at their default settings. If you wish, you can change **Pricing and scale tier** to **F1: Free tier**, although you'll not be charged if you leave the tier at **S1: Standard tier**, as sandbox resources are free.
+1. Select the **Management** tab to view the capabilities of your hub. You can leave all entries at their default settings. If you wish, you can change **Pricing and scale tier** to **F1: Free tier**, although you'll not be charged if you leave the tier at **S1: Standard tier**, as sandbox resources are free. 
 
-    > [!NOTE]
-    > A single _partition_ has a maximum number of concurrent readers processing data. In our cheese cave scenario, we only have one reader (the back-end service app), so the default selection is fine. However, if high telemetry throughput is an issue, increasing the number of partitions, and number of concurrent connected readers, will aid in increasing efficiency.
+    > [!TIP]
+    > Under **Advanced Settings**, note the number of partitions. A single _partition_ has a maximum number of concurrent readers processing data. In our cheese cave scenario, we only have one reader (the back-end service app), so the default selection is fine. However, if high telemetry throughput is an issue, increasing the number of partitions, and number of concurrent connected readers, will aid in increasing efficiency.
 
-1. Now, select **Review + create**, this option gives you a chance to verify your choices before clicking **Create**, and building the hub. Building your hub can take a few minutes.
-1. Click **Go to resource**, to go to the home page for your new IoT hub.
+1. Now, select **Review + create**. This option gives you a chance to verify your choices before clicking **Create** and building the hub. Building your hub can take a few minutes.
+1. Click **Go to resource** to go to the home page for your new IoT hub.
 1. It's a good idea to bookmark the home page of your IoT Hub.
 
 ## Create an IoT Hub device identity
@@ -27,11 +26,11 @@ Now we need to create a single device identity, the sensor monitoring the cheese
 
 1. On the home page of your hub, Select **Explorers > IoT devices** in the left-hand menu.
 1. Click **+ New**.
-1. In the **Create a device** screen that follows, enter a **Device ID**, such as "CheeseCaveID". Ensure **Auto-generate keys** is enabled, as is **Connect this device to an IoT Hub**, and select **Save**.
+1. In the **Create a device** screen that follows, enter a **Device ID**, such as "CheeseCaveID". Ensure **Auto-generate keys** and **Connect this device to an IoT Hub** are enabled, and then select **Save**.
 
     [![Screenshot showing the creation of an IoT Hub device identity.](../media/cheesecave-device-create.png)](../media/cheesecave-device-create.png#lightbox)
 
-1. Select the **Refresh** if needed to refresh the device list. You should now see your device in the list of devices for the IoT Hub. Select the device name. Copy your **Device ID**, and the **Primary Connection String** to a text file (using Notepad, or similar text editor).
+1. You should now see your device in the list of devices for the IoT Hub. Select the device name. Copy your **Device ID**, and the **Primary Connection String** to a text file (using Notepad, or similar text editor).
 
     > [!IMPORTANT]
     > The connection string you've just copied is the _device_ connection string. There are many other connection strings, including the _service_ connection string, that we also will need. Add a note to your text file that this is the device connection string.
@@ -40,10 +39,15 @@ Now we need to create a single device identity, the sensor monitoring the cheese
 
 1. In the left-hand menu, select **Settings > Shared access policies**.
 
-1. Click the **iothubowner** entry under **Policy**, then, on the right-hand side, copy the **Connection string-primary key** and paste it into your text file. Again, add a note, this text is the _service_ connection string.
+1. Click the `iothubowner` entry under **Policy**, then, on the right-hand side, copy the **Connection string-primary key** and paste it into your text file. Again, add a note, this text is the _service_ connection string.
 
-    > [!NOTE]
-    > For most purposes, the **service** policy would be appropriate for the backend app. However, later in this module you'll need additional permissions to implement device twins.
+::: zone pivot="csharp"
+
+1. In the left-hand menu, select **Settings > Built-in endpoints**.
+
+1. Under **Event Hub compatible endpoint**, ensure **Shared access policy** is set to `iothubowner`. Copy the **Event Hub-compatible endpoint** to your text file.
+
+::: zone-end
 
 1. Save the text file. Use the file for reference in the next unit.
 
