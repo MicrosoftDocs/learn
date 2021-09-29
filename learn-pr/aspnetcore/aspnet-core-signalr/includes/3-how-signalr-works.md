@@ -153,7 +153,7 @@ SignalR supports streaming and provides the following APIs. To invoke a streamin
 - <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.StreamAsChannelAsync%2A>: Returns `Task<ChannelReader<TResult>>`.
 - <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.StreamAsync%2A>: Returns `IAsyncEnumerable<TResult>`.
 
-While the streaming is not a requirement of the Contoso Pizza's live map feature, it's still good to know it's available.
+While streaming is not a requirement of Contoso Pizza's live map feature, it's still good to know it's available.
 
 ### Handle events
 
