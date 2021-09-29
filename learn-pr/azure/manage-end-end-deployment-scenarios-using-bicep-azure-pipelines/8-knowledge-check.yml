@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.manage-last-mile-deployment-scenarios-using-bicep-azure-pipelines.knowledge-check
+uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check

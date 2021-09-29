@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.manage-last-mile-deployment-scenarios-using-bicep-azure-pipelines.exercise-set-up-environment
-title: Exercise - Set up your environment
+uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.configure-applications-virtual-machines
+title: Configure applications and virtual machines
 metadata:
-  unitType: exercise
-  title: Exercise - Set up your environment
+  unitType: learning-content
+  title: Configure applications and virtual machines
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 09/28/2021
   author: johndowns
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-exercise-set-up-environment.md)]
+  [!include[](includes/3-configure-applications-virtual-machines.md)]

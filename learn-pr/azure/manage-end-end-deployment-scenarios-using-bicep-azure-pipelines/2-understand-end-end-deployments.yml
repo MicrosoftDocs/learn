@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.manage-last-mile-deployment-scenarios-using-bicep-azure-pipelines.exercise-deploy-web-application
-title: Exercise - Deploy a web application
+uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.understand-end-end-deployments
+title: Understand end-end deployments
 metadata:
-  unitType: exercise
-  title: Exercise - Deploy a web application
+  unitType: learning-content
+  title: Understand end-end deployments
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 09/28/2021
   author: johndowns
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-exercise-deploy-web-application.md)]
+  [!include[](includes/2-understand-end-end-deployments.md)]
