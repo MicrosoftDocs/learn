@@ -5,7 +5,7 @@ Cryptographic keys in Key Vault are represented as JSON Web Key (JWK) objects. T
 
 * **Hard keys**: A key processed in an HSM (Hardware Security Module). These keys are protected in one of the Key Vault HSM Security Worlds (there's one Security World per geography to maintain isolation). Clients may import an RSA or EC key, in soft form or by exporting from a compatible HSM device. Clients may also request Key Vault to generate a key.
 
-## Key Operations
+## Key operations
 
 Key Vault supports many operations on key objects. Here are a few:
 
@@ -27,13 +27,13 @@ Once a key has been created in Key Vault, the following cryptographic operations
 
 * **Encrypt and Decrypt**: A key stored in Key Vault may be used to encrypt or decrypt a single block of data. The size of the block is determined by the key type and selected encryption algorithm. The Encrypt operation is provided for convenience, for applications that may not have access to [public] key material. 
 
-## Application Services Plan
+## Application services plan
 
 More and more organizations are adopting secrets management policies, where secrets are stored centrally with expectations around expiration and access control. Azure Key Vault provides these management capabilities to your applications in Azure, but some applications can’t easily take on code changes to start integrating with it. Key Vault references are a way to introduce secrets management into your app without code changes.
 
 Apps hosted in App Service and Azure Functions can now simply define a reference to a secret managed in Key Vault as part of their application settings. The app’s system-assigned identity is used to securely fetch the secret and make it available to the app as an environment variable. This means that teams can just replace existing secrets stored in app settings with references to the same secret in Key Vault, and the app will continue to operate as normal. 
 
-## Configure a Hardware Security Module Key-generation Solution
+## Configure a hardware security module key-generation solution
 
 For added assurance, when you use Azure Key Vault, you can import or generate keys in hardware security modules (HSMs) that never leave the HSM boundary. This scenario is often referred to as **Bring Your Own Key (BYOK)**. The HSMs are FIPS 140-2 Level 2 validated. Azure Key Vault uses Thales nShield family of HSMs to protect your keys. (This functionality is not available for Azure China.)
 

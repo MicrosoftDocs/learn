@@ -1,7 +1,7 @@
 
 Key Vault provides secure storage of secrets, such as passwords and database connection strings.
 
-From a developer's perspective, Key Vault APIs accept and return secret values as strings. Internally, Key Vault stores and manages secrets as sequences of octets (8-bit bytes), with a maximum size of 25k bytes each. The Key Vault service doesn't provide semantics for secrets. It merely accepts the data, encrypts it, stores it, and returns a secret identifier ("id"). The identifier can be used to retrieve the secret at a later time.
+From a developer's perspective, Key Vault APIs accept and return secret values as strings. Internally, Key Vault stores and manages secrets as sequences of octets (8-bit bytes), with a maximum size of 25k bytes each. The Key Vault service doesn't provide semantics for secrets. It merely accepts the data, encrypts it, stores it, and returns a secret identifier ("ID"). The identifier can be used to retrieve the secret at a later time.
 
 For highly sensitive data, clients should consider additional layers of protection for data. Encrypting data using a separate protection key prior to storage in Key Vault is one example.
 
@@ -21,7 +21,7 @@ As shown above, the values for Key Vault Secrets are:
 
 All secrets in your Key Vault are stored encrypted. This encryption is transparent, and requires no action from the user. The Azure Key Vault service encrypts your secrets when you add them, and decrypts them automatically when you read them. The encryption key is unique to each key vault.
 
-## Azure Storage account key management
+## Azure storage account key management
 
 Key Vault can manage Azure storage account keys:
 * Internally, Key Vault can list (sync) keys with an Azure storage account.
