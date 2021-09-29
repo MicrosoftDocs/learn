@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-monitor.connected-sources
-title: Manage connected sources for Log Analytics
+title: Manage connected sources for log analytics
 metadata:
-  title: Manage connected sources for Log Analytics
-  description: "Manage connected sources for Log Analytics"
+  title: Manage connected sources for log analytics
+  description: "Manage connected sources for log analytics"
   ms.date: 09/29/2021
   author: wwlpublish
   ms.author: roberts
