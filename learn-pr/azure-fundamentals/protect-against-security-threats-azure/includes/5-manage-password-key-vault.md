@@ -46,7 +46,7 @@ The Azure CLI is a way to work with Azure resources from the command line or fro
         Resource group
       :::column-end:::
       :::column:::
-         **\[sandbox resource group name\]** 
+         **<rgn>\[sandbox resource group name\]</rgn>** 
       :::column-end:::
     :::row-end:::
     :::row:::
