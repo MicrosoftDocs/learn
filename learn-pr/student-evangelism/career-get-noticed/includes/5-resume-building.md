@@ -29,7 +29,7 @@ Your Education section should include the following information:
 
 * **Coursework**: This last part should be a concise list of *related coursework*. Although this information is optional, it can help recruiters assess your level of knowledge. Most junior and senior year internships expect some courses to be in your repertoire, such as *Data Structures and Algorithms* for Computer Science students. Be sure to read the requirements for the position to which you're applying, and tailor your course list to match the knowledge that the position requires.
 
-   As you're discussing your related coursework, include all courses that you consider representative of your technical knowledge. This is especially important if you don't have experience or relevant projects in one of the areas covered by a course that's required for the position.    
+   As you're discussing your related coursework, include all courses that you consider representative of your technical knowledge. This is especially important if you don't have experience or relevant projects in one of the areas covered by a course that's required for the position.
 
 An example of a properly written education section might look like this:
 

@@ -78,7 +78,7 @@ To include resources in an access package, the resources must exist in a catalog
 
 5. In the Add resources to catalog blade, review the available options.
 
-6. You may not have any resources in Groups and Teams, Applications, or SharePoint sites. Select any resource category and then select a resource from that category.
+6. You might not have selected any resources in Groups and Teams, Applications, or SharePoint sites. To add a resource to the catalog elect any resource category and then select a resource from that category.
 
     For this exercise, it is okay to choose any resource you may have available.
 
