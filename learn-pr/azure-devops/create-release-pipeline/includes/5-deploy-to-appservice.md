@@ -23,59 +23,60 @@ We won't go into many of the details about how App Service works or the configur
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/create-release-pipeline/8-clean-up-environment?azure-portal=true) page in this module explains how to tear down your App Service instance after you're done with it. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to follow the cleanup steps even if you don't complete this module.
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. On the left, select **App Services**.
+1. From the home page, under **Azure services**, select **App Services**.
 
-1. Select **Create**.
+1. Select **Create**. The **Create Web App** pane appears.
 
-1. On the **Web App** page, fill in these fields:
+1. On the **Basics** tab, enter the following values.
 
-    | Field | Value |
-    | ---- |------- |
-    | **Subscription** | Your Azure subscription. |
-    | **Resource Group** | Select **Create new** and then enter *tailspin-space-game-rg* as the resource group name.|
-    | **Name** | Provide a unique name, such as *tailspin-space-game-web-1234*. Your App Service instance requires a unique name because the name becomes part of the domain name. In practice, choose a name that describes your service. Note the name for later. |
-    | **Publish**  | **Code**  |
-    | **Runtime stack** | **.NET 5** |
-    | **Operating System** | **Linux** |
-    | **Region** | Select a region, preferably one close to you.|
-    | **Linux Plan** | Keep the default value.                                                                       |
-    | **Sku and size** | Select **Change size** > **Dev/Test** tab > **B1** > **Apply**. |
+    | Setting | Value |
+    |---------|-------|
+    | **Project Details** |
+    | Subscription | *your subscription* |
+    | Resource Group | Select **Create new**, and then enter *tailspin-space-game-rg*, and select **OK**. |
+    | **Instance Details** |
+    | Name | Provide a unique name, such as *tailspin-space-game-1234*. This name must be unique across Azure. It becomes part of the domain name. In practice, choose a name that describes your service. Note the name for later. |
+    | Publish  | Code |
+    | Runtime stack | .NET 5 |
+    | Operating System | Linux |
+    | Region | Select a region, preferably one close to you.|
+    | **App Service Plan** |
+    | Linux Plan | Accept the default.                                                                       |
+    | Sku and size | Select **Change size**. In the **Spec Picker** pane, select **Dev/Test**, **B1** pricing tier, and then select **Apply**. |
 
-1. Select **Review + create** > **Create**.
+1. Select **Review + create**, and then select **Create**.
 
     The deployment takes a few moments to finish.
 
-1. After the deployment finishes, select **Go to resource**.
+1. When deployment is complete, select **Go to resource**.
 
-    You see details related to your deployment.
+    The **App Service** Essentials displays details related to your deployment.
 
-    :::image type="content" source="../media/5-app-service-details.png" alt-text="A screenshot of the Azure portal showing deployment details. Details include the deployment URL.":::
+    :::image type="content" source="../media/5-app-service-details.png" alt-text=Screenshot showing deployment details, including the deployment URL." lightbox="../media/5-app-service-details.png":::
 
 1. Select the URL.
 
-    A new browser tab displays the default home page for your app.
+    Your web app displays in a new browser tab.
 
     :::image type="content" source="../media/5-default-home-page.png" alt-text="A screenshot of a web browser showing the default App Service home page.":::
 
-    Soon you'll define a pipeline stage that deploys the _Space Game_ website to this App Service instance.
-
-    Keep this browser tab open for later.
+    In the next exercise, you'll define a pipeline that deploys the _Space Game_ website to this App Service instance, so keep this browser tab open.
 
 > [!NOTE]
 > For learning purposes, use the default network settings to make your site accessible from the internet. In practice, you could configure an Azure virtual network so that your website is in a network that only you and your team can access. Later, when you're ready, you can reconfigure your network to make the website available to your users.
 
 ## Create a service connection
 
-Here you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service.
+Here, you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service.
 
 > [!IMPORTANT]
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
 1. In Azure DevOps, go to your **Space Game - web - Release** project.
 
-1. From the bottom corner of the page, select **Project settings**.
+1. From the bottom of the page, select **Project settings**.
 
 1. Under **Pipelines**, select **Service connections**.
 
@@ -83,7 +84,7 @@ Here you create a service connection that enables Azure Pipelines to access your
 
 1. Near the top of the page, **Service principal (automatic)**. Then select **Next**.
 
-1. Fill in these fields:
+1. Enter the following values for each setting.
 
     | Field | Value |
     | ----- | ----- |
@@ -98,11 +99,11 @@ Here you create a service connection that enables Azure Pipelines to access your
 
 1. Select **Save**.
 
-    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you have the chance to sign in a second time.
+    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you may be prompted to sign in.
 
 ## Add the Build stage to the pipeline
 
-Here you convert your existing build pipeline to use the multistage feature of Azure Pipelines. You update your build configuration to define one stage that performs the build. Then you watch the pipeline run.
+Here, you convert your existing build pipeline to use the multistage feature of Azure Pipelines. You update your build configuration to define one stage that performs the build. Then you watch the pipeline run.
 
 Recall that your build pipeline defines the agent pool, variables, and tasks that are required to build your app. As a refresher, here are the first few lines from your current build configuration:
 
@@ -178,7 +179,7 @@ Create the **dev** environment.
 1. Under **Name**, enter *dev*.
 
 1. Leave the remaining fields at their default values.
-\
+
 1. Select **Create**.
 
 ## Store your web app name in a pipeline variable
@@ -195,13 +196,13 @@ To add the variable:
 
 1. In Azure DevOps, under **Pipelines**, select **Library**.
 
-    :::image type="content" source="../media/5-pipelines-library.png" alt-text="A screenshot of Azure Pipelines showing the location of the Library menu.":::
+    :::image type="content" source="../media/5-pipelines-library.png" alt-text="Screenshot of Azure Pipelines showing the location of the Library menu.":::
 
-1. Select **+ Variable group**.
+1. Select **Variable group**.
 
 1. Under **Properties**, enter *Release* for the variable group name.
 
-1. Under **Variables**, select **+ Add**.
+1. Under **Variables**, select **Add**.
 
 1. For the name of your variable, enter *WebAppName*. For its value, enter your App Service instance's name, such as *tailspin-space-game-web-1234*.
 
@@ -243,10 +244,10 @@ When you created your App Service instance, you saw the default website that was
 
     If you still have the browser tab open, simply refresh the page. If the browser tab isn't open, you can find the URL on the App Service details page in the Azure portal.
 
-    :::image type="content" source="../media/5-app-service-details.png" alt-text="A screenshot of the Azure portal showing deployment details.":::
+    :::image type="content" source="../media/5-app-service-details.png" alt-text="Screenshot showing deployment details.":::
 
 1. See that the _Space Game_ website has been successfully deployed to App Service and is running.
 
-    :::image type="content" source="../media/5-deployed-website.png" alt-text="A screenshot of web browser showing the Space Game website.":::
+    :::image type="content" source="../media/5-deployed-website.png" alt-text="Screenshot of web browser showing the Space Game website.":::
 
 Congratulations! You've successfully deployed the _Space Game_ website to App Service by using Azure Pipelines.
