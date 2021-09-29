@@ -1,18 +1,18 @@
 In this exercise, we'll create our social media logic app using the Azure portal. We'll add a Twitter trigger using the Logic Apps Designer. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
 
-![An illustration showing the triggers and actions in the social media monitor logic app. The first step is a Twitter trigger labeled **When a new tweet is posted**. This trigger is highlighted to indicate that is the part of the app that will be completed in this exercise.](../media/exercise-add-trigger.png)
-
+:::image type="complex" source="../media/exercise-add-trigger.png" alt-text="An illustration showing the triggers and actions in the social media monitor logic app." lightbox="../media/exercise-add-trigger.png" border="false"::: 
+   The first step is a Twitter trigger labeled When a new tweet is posted. This trigger is highlighted to indicate that is the part of the app that will be completed in this exercise.
+:::image-end:::  
+ 
 ## Locate the Azure logic app resource
 
 The first thing we need to do is create an Azure logic app. To do that, we need to locate the Azure Logic Apps resource type in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
 
-1. On the Azure portal menu or from the home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the resource menu, select **All Services**, in the **All services** menu, select **Integration** category, and the results,select **Logic apps**. The **Logic apps** pane appears.
 
-1. In the search box, search for and select **Logic App**. The **Logic App** pane appears.
-
-1. Select **Create**. The **Create Logic App** pane appears.
+1. Select **Add**. The **Create Logic App** pane appears.
 
 ## Configure your Azure Logic App resource
 

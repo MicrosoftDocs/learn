@@ -36,7 +36,7 @@ SQL Server Management Studio provides a graphical interface, enabling you to que
 > [!div class="mx-imgBorder"]
 > ![Image of SSMS being used to back up a database](../media/3-sql-server-management-studio.png)
 
-A useful feature of SQL Server Management Studio is the ability to generate Transact-SQL scripts for almost all of the functionality that SSMS provides. This gives the DBA the ability to schedule and automate many common tasks.
+A useful feature of SQL Server Management Studio is the ability to generate Transact-SQL scripts for almost all of the functionality that SQL Server Management Studio provides. This gives the DBA the ability to schedule and automate many common tasks.
 
 > [!div class="mx-imgBorder"]
 > ![SSMS being used to back up a database](../media/3-sql-server-management-studio-script.png)

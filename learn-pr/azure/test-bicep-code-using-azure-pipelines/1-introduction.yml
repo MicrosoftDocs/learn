@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.test-bicep-code-using-azure-pipelines.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Introduction to testing Bicep code by using Azure Pipelines.
+  ms.date: 09/15/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

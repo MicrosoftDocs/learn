@@ -1,0 +1,15 @@
+stages:
+
+- stage: Test
+  jobs:
+  - job: Test
+
+- stage: Deploy
+  dependsOn: Test
+  jobs: 
+  - job: Deploy
+
+- stage: Rollback
+  condition: failed('Deploy')
+  jobs: 
+  - job: Rollback

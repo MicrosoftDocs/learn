@@ -8,6 +8,7 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: INDEX,FOLLOW
 title: Call an API from a Logic Apps workflow using a custom connector
 summary: Call any Web API from a Logic App using the custom connector.
 abstract: |

@@ -24,7 +24,7 @@ With Azure AD, you also have access to a set of features that are not natively a
 - Configuring multi-factor authentication.
 - Extending existing on-premises Active Directory implementations to Azure AD.
 - Configuring Application Proxy for cloud and local applications.
-- Configuring conditional access for users and devices.
+- Configuring Conditional Access for users and devices.
 
 ## Azure AD tenants
 

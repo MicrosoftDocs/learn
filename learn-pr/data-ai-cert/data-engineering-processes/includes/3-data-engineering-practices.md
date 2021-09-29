@@ -72,7 +72,7 @@ Also consider the technologies you'll use to analyze and consume the data within
 - **Analyze**: Identify the technology and method to analyze the data.
 - **Consume**: Identify the technology and method to consume and present the data.
 
-In traditional descriptive analytics projects, you might have transformed data in Azure Analysis Services and then used Power BI to consume the analyzed data. New AI technologies such as Azure Machine Learning services and Azure Notebooks provide a wider range of technologies to automate some of the required analysis.
+In traditional descriptive analytics projects, you might have transformed data in Azure Analysis Services and then used Power BI to consume the analyzed data. New AI technologies such as Azure Machine Learning services and Azure Synapse Analytics provide a wider range of technologies to automate some of the required analysis.
 
 These project phases don't necessarily have to flow linearly. For example, because machine learning experimentation is iterative, the Analyze phase sometimes reveals issues such as missing source data or transformation steps. To get the results you need, you might need to repeat earlier phases.
 
