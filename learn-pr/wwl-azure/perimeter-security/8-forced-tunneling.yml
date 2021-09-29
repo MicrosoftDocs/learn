@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/8-vpn-forced-tunneling.md)]
+  [!include[](includes/8-forced-tunneling.md)]
