@@ -2,7 +2,7 @@ Use this set of Try-This exercises to get some hands-on experience with Azure.
 
 In this demonstration, we will configure and test an app registration. 
 
-## Task 1 - Configure an App registration via the Azure Portal
+## Task 1 - Configure an ppp registration via the Azure portal
 
 > [!NOTE] 
 > The application registration process is constantly being updated and improved. Validate before your demo
@@ -30,7 +30,7 @@ In this task, we will demo how to register an application.
 1. Note the **key1** value. Copy the value to your file. 
 1. On the **Overview** tab, copy the **Application (Client ID)** and **Directory (tenant ID)** to your file. 
 
-## Task 2 - Test the Application
+## Task 2 - Test the ppplication
 
 > [!NOTE] 
 > You will need the information from Task 1, and [Microsoft Graph Postman](https://www.postman.com) or you can use [Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer/preview) before you can complete testing the application registration.

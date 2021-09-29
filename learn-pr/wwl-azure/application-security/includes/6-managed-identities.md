@@ -22,7 +22,7 @@ Internally, managed identities are service principals of a special type, which a
 
 Your code can use a managed identity to request access tokens for services that support Azure AD authentication. Azure takes care of rolling the credentials that are used by the service instance.
 
-### Credential Rotation
+### Credential rotation
 
 Credential rotation is controlled by the resource provider that hosts the Azure resource. The default rotation of the credential occurs every 46 days. It's up to the resource provider to call for new credentials, so the resource provider could wait longer than 46 days.
 

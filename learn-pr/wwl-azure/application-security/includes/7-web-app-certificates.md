@@ -8,7 +8,7 @@ If you access your site over HTTP and not HTTPS, you will not receive any client
 
 ## Enable client certificates
 
-To set up your app to require client certificates, you can switch On the **Require incoming certificate** by selecting Configuration > General Settings from the Azure Portal or you need to set the clientCertEnabled setting for your app to true.
+To set up your app to require client certificates, you can switch On the **Require incoming certificate** by selecting Configuration > General Settings from the Azure portal or you need to set the clientCertEnabled setting for your app to true.
 
 ## Exclude paths from requiring authentication
 
