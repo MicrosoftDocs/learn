@@ -591,7 +591,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
     
             // Event Hub connection string for your IoT Hub
-            private readonly static string s_eventHubConnectionString = "<your event hub endpoint>";
+            private readonly static string s_eventHubEndpoint = "<your event hub endpoint>";
 
             // Asynchronously create a PartitionReceiver for a partition and then start reading any messages sent from the simulated client.
             private static async Task ReceiveMessagesFromDeviceAsync(string partition)
@@ -631,7 +631,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
                 colorMessage("Cheese Cave Operator\n", ConsoleColor.Yellow);
 
                 // Create an EventHubClient instance to connect to the IoT Hub Event Hubs-compatible endpoint.
-                s_eventHubClient = EventHubClient.CreateFromConnectionString(s_eventHubConnectionString);
+                s_eventHubClient = EventHubClient.CreateFromConnectionString(s_eventHubEndpoint);
 
                 // Create a PartitionReceiver for each partition on the hub.
                 var runtimeInfo = s_eventHubClient.GetRuntimeInformationAsync().GetAwaiter().GetResult();
