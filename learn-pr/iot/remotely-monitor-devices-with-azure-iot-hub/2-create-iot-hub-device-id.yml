@@ -8,10 +8,8 @@ metadata:
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: dev-lang-csharp-node
 title: Exercise - Create an Azure IoT Hub, and a device ID, using the Microsoft Azure portal
 azureSandbox: true
-interactive: bash
 durationInMinutes: 10
 content: |
   [!include[](includes/2-create-iot-hub-device-id.md)]
@@ -34,7 +32,7 @@ quiz:
       isCorrect: true
       explanation: Under the list of policies, select iothubowner to locate the primary key connection string.
 
-  - content: 'All connection strings begin with what text?'
+  - content: 'IoT Hub device and service connection strings begin with what text?'
     choices:  
     - content: 'Primary Key'
       isCorrect: false
