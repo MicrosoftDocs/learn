@@ -209,7 +209,7 @@ It's time to start adding the packages and code to the project.
     End of program, press any key to exit.
     ```
 
-1. You can verify the results by opening the Azure Portal, navigating to your Azure Cosmos DB resource, and use the **Data Explorer** to view the database and container.
+1. You can verify the results by opening the Azure portal, navigating to your Azure Cosmos DB resource, and use the **Data Explorer** to view the database and container.
 
 ## Clean up Azure resources
 
