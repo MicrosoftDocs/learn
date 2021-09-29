@@ -26,7 +26,7 @@ Let's finish your app by adding upload and download code, then deploy it to Azur
 
 - To upload a blob, you'll implement the `BlobStorage.Save` method.  First, you wil get a `BlobClient` object that represents the blob by calling `GetBlobClient` on a `BlobContainerClient`. Then, you will use the `UploadAsync` method on the `BlobClient` to save the `Stream` of data passed to this method up to Azure Blob storage.
 
-In the editor, in `BlobStorage.cs`, replace `Save` with the following code.
+    In the editor, in `BlobStorage.cs`, replace `Save` with the following code.
 
     ```csharp
     public Task Save(Stream fileStream, string name)
@@ -44,8 +44,8 @@ In the editor, in `BlobStorage.cs`, replace `Save` with the following code.
     }
     ```
 
-> [!NOTE]
-> The stream-based upload code shown here is more efficient than reading the file into a byte array before sending it to Azure Blob storage. However, the ASP.NET Core `IFormFile` technique you use to get the file from the client is not a true end-to-end streaming implementation, and is only appropriate for handling uploads of small files.
+    > [!NOTE]
+    > The stream-based upload code shown here is more efficient than reading the file into a byte array before sending it to Azure Blob storage. However, the ASP.NET Core `IFormFile`     technique you use to get the file from the client is not a true end-to-end streaming implementation, and is only appropriate for handling uploads of small files.
 
 ### Download
 
@@ -72,7 +72,7 @@ To download a file, the `OpenReadAsync` method on the `BlobClient` object is ret
 
 1. Your app is finished &mdash; let's deploy it and see it work. Create an App Service app and configure it with app settings for your storage account connection string and container name. Get the storage account's connection string with `az storage account show-connection-string`, and set the name of the container to be `files`.
 
-The app name needs to be globally unique, so you'll need to choose your own name to fill in `<your-unique-app-name>`.
+    The app name needs to be globally unique, so you'll need to choose your own name to fill in `<your-unique-app-name>`.
 
     ```azurecli
     az appservice plan create \
@@ -80,17 +80,20 @@ The app name needs to be globally unique, so you'll need to choose your own name
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --sku FREE --location centralus
     ```
+
     ```azurecli
     az webapp create \
     --name <your-unique-app-name> \
     --plan blob-exercise-plan \
     --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
+
     ```azurecli
     CONNECTIONSTRING=$(az storage account show-connection-string \
     --name <your-unique-storage-account-name> \
     --output tsv)
     ```
+
     ```azurecli
     az webapp config appsettings set \
     --name <your-unique-app-name> --resource-group <rgn>[sandbox resource group name]</rgn> \
@@ -99,14 +102,15 @@ The app name needs to be globally unique, so you'll need to choose your own name
 
 1. Now, you'll deploy your app. The following commands will publish the site to the `pub` folder, zip it up into `site.zip`, and deploy the zip to App Service.
 
-> [!NOTE]
-> Make sure your shell is still in the `mslearn-store-data-in-azure/store-app-data-with-azure-blob-storage/src/start` directory before running the following commands.  You can use `cd mslearn-store-data-in-azure/store-app-data-with-azure-blob-storage/src/start` to change directory to this location. 
+    > [!NOTE]
+    > Make sure your shell is still in the `mslearn-store-data-in-azure/store-app-data-with-azure-blob-storage/src/start` directory before running the following commands.  You can use `cd mslearn-store-data-in-azure/store-app-data-with-azure-blob-storage/src/start` to change directory to this location. 
 
     ```azurecli
     dotnet publish -o pub
     cd pub
     zip -r ../site.zip *
     ```
+
     ```azurecli
     az webapp deployment source config-zip \
     --src ../site.zip \
@@ -114,9 +118,9 @@ The app name needs to be globally unique, so you'll need to choose your own name
     --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
-To see the running app, in a browser, open `https://<your-unique-app-name>.azurewebsites.net`. It should look like the following image.
+    To see the running app, in a browser, open `https://<your-unique-app-name>.azurewebsites.net`. It should look like the following image.
 
-:::image type="content" source="../media/7-fileuploader-empty.PNG" alt-text="Screenshot of the FileUploader web app." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/7-fileuploader-empty.PNG" alt-text="Screenshot of the FileUploader web app." loc-scope="other"::: <!-- no-loc -->
 
 1. Try uploading and downloading some files to test the app. After you've uploaded a few files, to see the blobs that have been uploaded to the container, run the following code in the shell.
 

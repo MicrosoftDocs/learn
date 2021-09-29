@@ -52,13 +52,13 @@ To create a container when your app starts or when it first tries to use it, cal
 
 1. In the editor, open the file `Controllers/FilesController.cs`. There's no work to do here, but you're going to have a quick look at what the app does.
 
-This controller implements an API with three actions:
+    This controller implements an API with three actions:
 
-- **Index**: (GET /api/Files) returns a list of URLs, one for each file that's been uploaded. The app front end calls this method to build a list of hyperlinks to the uploaded files.
-- **Upload**: (POST /api/Files) receives an uploaded file and saves it.
-- **Download**: (GET /api/Files/{filename}) downloads an individual file by its name.
+    - **Index**: (GET /api/Files) returns a list of URLs, one for each file that's been uploaded. The app front end calls this method to build a list of hyperlinks to the uploaded files.
+    - **Upload**: (POST /api/Files) receives an uploaded file and saves it.
+    - **Download**: (GET /api/Files/{filename}) downloads an individual file by its name.
 
-To do its work, each method uses an `IStorage` instance called `storage`. There is an incomplete implementation of `IStorage` in `Models/BlobStorage.cs` that you're going to fill in.
+    To do its work, each method uses an `IStorage` instance called `storage`. There is an incomplete implementation of `IStorage` in `Models/BlobStorage.cs` that you're going to fill in.
 
 ### Add the NuGet package
 
@@ -69,7 +69,7 @@ To do its work, each method uses an `IStorage` instance called `storage`. There 
     dotnet restore
     ```
 
-This will make sure we're using the newest version of the Blob storage client library.
+    This will make sure we're using the newest version of the Blob storage client library.
 
 ### Configure
 
@@ -89,7 +89,7 @@ When it comes to *using* the configuration, our starter app already includes the
 
 1. Locate the `Initialize` method. Your app will call this method when `BlobStorage` is used for the first time. If you're curious, you can look at `ConfigureServices` in `Startup.cs` to see how this is done.
 
-`Initialize` is where you want to create your container if it doesn't already exist. Replace the current implementation of `Initialize` with the following code, and save your work.
+    `Initialize` is where you want to create your container if it doesn't already exist. Replace the current implementation of `Initialize` with the following code, and save your work.
 
     ```csharp
     public Task Initialize()
