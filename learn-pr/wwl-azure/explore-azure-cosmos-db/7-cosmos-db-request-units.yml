@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-cosmos-db.discover-request-units
-title: Discover Request Units
+title: Discover request units
 metadata:
-  title: Discover Request Units
-  description: "Discover Request Units"
-  ms.date: 09/28/2021
+  title: Discover request units
+  description: "Discover request units"
+  ms.date: 09/29/2021
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial

@@ -1,4 +1,4 @@
-In this exercise you'll learn how to perform the following actions in the Azure Portal:
+In this exercise you'll learn how to perform the following actions in the Azure portal:
 
 * Create an Azure Cosmos DB account
 * Add a database and a container
@@ -11,13 +11,13 @@ In this exercise you'll learn how to perform the following actions in the Azure 
 
 ## Create an Azure Cosmos DB account
 
-1. Login to the [Azure Portal](https://portal.azure.com).
+1. Login to the [Azure portal](https://portal.azure.com).
 
 1. From the Azure portal navigation pane, select **+ Create a resource**.
 
 1. Search for **Azure Cosmos DB**, then select **Create/Azure Cosmos DB** to get started.
 
-1. On the **Select API option** page select **Create** in the **Core (SQL) - Recommended** box.
+1. On the Select API option page, select **Create** in the **Core (SQL) - Recommended** box.
  
 1. In the **Create Azure Cosmos DB Account - Core (SQL)** page, enter the basic settings for the new Azure Cosmos account.
 

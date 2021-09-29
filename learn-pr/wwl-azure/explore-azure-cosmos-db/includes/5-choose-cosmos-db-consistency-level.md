@@ -20,9 +20,7 @@ Consider the following points if your application is built using SQL API or Tabl
 
 ## Cassandra, MongoDB, and Gremlin APIs
 
-* For details on mapping between “Read Consistency Level” offered in Apache Cassandra and Cosmos DB consistency levels, see [Consistency levels and Cosmos DB APIs](https://docs.microsoft.com/azure/cosmos-db/consistency-levels-across-apis#cassandra-mapping).
-
-* For details on mapping between “Read Concern” of MongoDB and Azure Cosmos DB consistency levels, see [Consistency levels and Cosmos DB APIs](https://docs.microsoft.com/eazure/cosmos-db/consistency-levels-across-apis#mongo-mapping).
+Azure Cosmos DB provides native support for wire protocol-compatible APIs for popular databases. These include MongoDB, Apache Cassandra, and Gremlin. When using Gremlin API the default consistency level configured on the Azure Cosmos account is used. For details on consistency level mapping between Cassandra API or the API for MongoDB and Azure Cosmos DB's consistency levels see, [Cassandra API consistency mapping](/azure/cosmos-db/cassandra/apache-cassandra-consistency-mapping) and [API for MongoDB consistency mapping](/azure/cosmos-db/mongodb/consistency-mapping).
 
 ## Consistency guarantees in practice
 
