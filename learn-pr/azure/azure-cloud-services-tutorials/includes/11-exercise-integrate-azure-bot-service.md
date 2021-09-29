@@ -105,7 +105,7 @@ These are the trigger phrases:
 
     :::image type="content" source="../media/ask-count.png" alt-text="Screenshot of TrackedObjectsBot project dialog trigger AskForCount." lightbox="../media/ask-count.png":::
 
-    Thanks to [LUIS](/composer/how-to-use-luis) the *user* doesn't have to ask the phrases in that exact way, which allows a natural conversation for the *user*.
+    Thanks to [LUIS](/composer/how-to-add-luis) the *user* doesn't have to ask the phrases in that exact way, which allows a natural conversation for the *user*.
 
     In this dialog the *bot* will also talk to the **Count** Azure Function, more about that later.
 
