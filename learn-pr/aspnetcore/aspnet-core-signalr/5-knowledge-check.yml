@@ -10,7 +10,7 @@ metadata:
   ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
 quiz:
   questions:
@@ -27,15 +27,26 @@ quiz:
           explanation: "While BlazorPack is a binary protocol, it is only available with the Blazor server hosting model."
     - content: "A client can send and receive messages to and from the server with what SignalR type?"
       choices:
-        - content: "HubContext"
+        - content: "`IHubContext<THub>`"
           isCorrect: false
-          explanation: "The `HubContext` type is a server concept to represent a specific `Hub`, outside the hub instance itself."
-        - content: "HubConnection"
+          explanation: "The `IHubContext<IHub>` type is a server concept to represent a specific `Hub`, outside the hub instance itself."
+        - content: "`HubConnection`"
           isCorrect: true
           explanation: "The `HubConnection` is built from a `HubConnectionBuilder`, and its connection enables clients to send and receive messages."
-        - content: "SynchronizationContext"
+        - content: "`SynchronizationContext`"
           isCorrect: false
           explanation: "The `SynchronizationContext` provides the basic functionality for propagating a synchronization context in various synchronization models, but is not related to SignalR."
+    - content: "A server cannot fire events from this SignalR type?"
+      choices:
+        - content: "`Hub`"
+          isCorrect: false
+          explanation: "The `Hub` and `Hub<T>` types can fire events in addition to exposing methods."
+        - content: "`IHubContext<IHub>`"
+          isCorrect: false
+          explanation: "The `IHubContext<IHub>` type can be used to fire events."
+        - content: "`HubConnection`"
+          isCorrect: true
+          explanation: "The `HubConnection` is _client_ concept, and _cannot_ fire events directly."
     - content: "SignalR is not ideal in what types of apps?"
       choices:
         - content: "Apps that require high-frequency updates."
