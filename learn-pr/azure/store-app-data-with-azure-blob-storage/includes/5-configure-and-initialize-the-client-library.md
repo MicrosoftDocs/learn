@@ -44,13 +44,13 @@ To create a container when your app starts or when it first tries to use it, cal
 
 1. First, let's clone the starter app from GitHub. In the Azure Shell CLI, to get a copy of the source code and open it in the editor, run the following command.
 
-```console
-git clone https://github.com/MicrosoftDocs/mslearn-store-data-in-azure.git
-cd mslearn-store-data-in-azure/store-app-data-with-azure-blob-storage/src/start
-code .
-```
+    ```console
+    git clone https://github.com/MicrosoftDocs/mslearn-store-data-in-azure.git
+    cd mslearn-store-data-in-azure/store-app-data-with-azure-blob-storage/src/start
+    code .
+    ```
 
-2. In the editor, open the file `Controllers/FilesController.cs`. There's no work to do here, but you're going to have a quick look at what the app does.
+1. In the editor, open the file `Controllers/FilesController.cs`. There's no work to do here, but you're going to have a quick look at what the app does.
 
 This controller implements an API with three actions:
 
@@ -62,12 +62,12 @@ To do its work, each method uses an `IStorage` instance called `storage`. There 
 
 ### Add the NuGet package
 
-3. Add a reference to the Azure Storage SDK. In the Azure Shell CLI, run the following command.
+- Add a reference to the Azure Storage SDK. In the Azure Shell CLI, run the following command.
 
-```console
-dotnet add package Azure.Storage.Blobs
-dotnet restore
-```
+    ```console
+    dotnet add package Azure.Storage.Blobs
+    dotnet restore
+    ```
 
 This will make sure we're using the newest version of the Blob storage client library.
 
@@ -79,23 +79,23 @@ When it comes to *using* the configuration, our starter app already includes the
 
 ### Initialize
 
-4. In the editor, open `Models/BlobStorage.cs`. To the top of the file, add the following `using` statements to prepare it for the code you're going to add during the exercise.
+1. In the editor, open `Models/BlobStorage.cs`. To the top of the file, add the following `using` statements to prepare it for the code you're going to add during the exercise.
 
-```csharp
-using Azure;
-using Azure.Storage.Blobs;
-using Azure.Storage.Blobs.Models;
-```
+    ```csharp
+    using Azure;
+    using Azure.Storage.Blobs;
+    using Azure.Storage.Blobs.Models;
+    ```
 
-Locate the `Initialize` method. Your app will call this method when `BlobStorage` is used for the first time. If you're curious, you can look at `ConfigureServices` in `Startup.cs` to see how this is done.
+1. Locate the `Initialize` method. Your app will call this method when `BlobStorage` is used for the first time. If you're curious, you can look at `ConfigureServices` in `Startup.cs` to see how this is done.
 
 `Initialize` is where you want to create your container if it doesn't already exist. Replace the current implementation of `Initialize` with the following code, and save your work.
 
-```csharp
-public Task Initialize()
-{
-    BlobServiceClient blobServiceClient = new BlobServiceClient(storageConfig.ConnectionString);
-    BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(storageConfig.FileContainerName);
-    return containerClient.CreateIfNotExistsAsync();
-}
-```
+    ```csharp
+    public Task Initialize()
+    {
+        BlobServiceClient blobServiceClient = new BlobServiceClient(storageConfig.ConnectionString);
+        BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(storageConfig.FileContainerName);
+        return containerClient.CreateIfNotExistsAsync();
+    }
+    ```
