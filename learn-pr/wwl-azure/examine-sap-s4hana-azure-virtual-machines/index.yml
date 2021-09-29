@@ -4,9 +4,9 @@ metadata:
   title: Examine SAP S/4HANA on Azure virtual machines
   description: "Examine available architecture when deploying SAP S/4HANA
 workloads running on high-performance Azure VMs, and in-memory SAP HANA databases,
-running on Azure VMs. Prepare for Exam AZ-120: Planning and Administering
+running on Azure VMs. Prepare for Exam AZ-120 Planning and Administering
 Microsoft Azure for SAP Workloads."
-  ms.date: 09/27/2021
+  ms.date: 09/29/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
