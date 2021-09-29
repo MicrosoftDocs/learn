@@ -26,7 +26,7 @@ In this task, we will configure an alert.
 
 ## Task 2 - Log Analytics
 
-     This lab requires a virtual machine in a running state. 
+This lab requires a virtual machine in a running state. 
 
 In this task, we will configure Log Analytics and run a query. 
 

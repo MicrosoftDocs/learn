@@ -3,7 +3,7 @@ All data that Azure Monitor collects fits into one of two fundamental types: **m
 ## What are metrics?
 Metrics are numerical values that describe some aspect of a system at a particular time. Metrics are collected at regular intervals and are useful for alerting because they can be sampled frequently, and an alert can be fired quickly with relatively simple logic.
 
-## The following is a lists of the different ways that you can use metric data in Azure Monitor.
+The following is a list of the different ways that you can use metric data in Azure Monitor.
 
 * **Analyze** -	Use metrics explorer to analyze collected metrics on a chart and compare metrics from different resources.
 * **Visualize** -	Pin a chart from metrics explorer to an Azure dashboard. Create a workbook to combine with multiple sets of data in an interactive report. Export the results of a query to Grafana to leverage its dashboarding and combine with other data sources.
@@ -32,14 +32,14 @@ A common type of log entry is an event, which is collected sporadically. Events 
 
 Because the format of the data can vary, applications can create custom logs by using the structure that they need. Metric data can  even be stored in Logs to combine them with other monitoring data for trending and other data analysis.
 
-### The following is a lists of the different ways that you can use Logs in Azure Monitor.
+The following is a lists of the different ways that you can use Logs in Azure Monitor.
 * **Analyze** -	Use Log Analytics in the Azure portal to write log queries and interactively analyze log data using the powerful Data Explorer analysis engine.
 Use the Application Insights analytics console in the Azure portal to write log queries and interactively analyze log data from Application Insights.
 * **Visualize** -	Pin query results rendered as tables or charts to an Azure dashboard.
 Create a workbook to combine with multiple sets of data in an interactive report.
 Export the results of a query to Power BI to use different visualizations and share with users outside of Azure.
 Export the results of a query to Grafana to leverage its dashboarding and combine with other data sources.
-* **Alert* -	Configure a log alert rule that sends a notification or takes automated action when the results of the query match a particular result.
+* **Alert** -	Configure a log alert rule that sends a notification or takes automated action when the results of the query match a particular result.
 Configure a metric alert rule on certain log data logs extracted as metrics.
 * **Retrieve** -	Access log query results from a command line using Azure CLI.
 Access log query results from a command line using PowerShell cmdlets.
