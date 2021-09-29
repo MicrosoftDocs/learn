@@ -35,7 +35,7 @@ quiz:
       explanation: "Encryption makes sure the data is unreadable while stored, not masking phone numbers."
     - content: "Data Classification"
       isCorrect: false
-      explanation: "Data classifcation will not help mask off personally identifiable phone number information."
+      explanation: "Data classification will not help mask off personally identifiable phone number information."
     - content: "Dynamic Data Masking"
       isCorrect: true
       explanation: "Dynamic Data Masking. Dynamic data masking limits sensitive data exposure by masking it to non-privileged users. This feature enables customers to designate how much of the sensitive data to reveal."
