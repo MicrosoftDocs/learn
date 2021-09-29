@@ -30,7 +30,7 @@ In this task, we will demo how to register an application.
 1. Note the **key1** value. Copy the value to your file. 
 1. On the **Overview** tab, copy the **Application (Client ID)** and **Directory (tenant ID)** to your file. 
 
-## Task 2 - Test the appplication
+## Task 2 - Test the application
 
 > [!NOTE] 
 > You will need the information from Task 1, and [Microsoft Graph Postman](https://www.postman.com) or you can use [Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer/preview) before you can complete testing the application registration.
