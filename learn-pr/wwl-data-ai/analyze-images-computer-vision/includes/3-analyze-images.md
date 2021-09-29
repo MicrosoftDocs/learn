@@ -1,5 +1,3 @@
-The best way to learn about the capabilities of the Computer Vision service is to explore it for yourself.
-
 The *Computer Vision* cognitive service uses pre-trained machine learning models to analyze images and extract information about them.
 
 For example, suppose the fictitious retailer *Northwind Traders* has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance, and direct employees to help them. By using the Computer Vision service, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict.
@@ -9,7 +7,7 @@ For example, suppose the fictitious retailer *Northwind Traders* has decided to 
 To test the capabilities of the Computer Vision service, we'll use a simple command-line application that runs in the Cloud Shell.
 > **Note**: For this lab, you will test out an application in a cloud shell environment. When you build your own application, you can use an environment of your choice.
 
-1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance to your right, as shown here. 
+1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance. 
 
 2. When you are prompted to review permissions, click **Accept**. 
 
@@ -73,7 +71,7 @@ Now that you have a cloud shell environment, you can run a simple client applica
 
     ```
     cd ai-900
-    .\Allfiles\Labs\analyze-image.ps1 store-cam1.jpg
+    analyze-image.ps1 store-cam1.jpg
     ```
 
 7. Review the results of the image analysis, which include:
@@ -88,7 +86,7 @@ Now that you have a cloud shell environment, you can run a simple client applica
     To analyze the second image, enter the following command:
 
     ```
-    .\Allfiles\Labs\analyze-image.ps1 store-cam2.jpg
+    analyze-image.ps1 store-cam2.jpg
     ```
 
 9. Review the results of the image analysis for the second image.
@@ -100,7 +98,7 @@ Now that you have a cloud shell environment, you can run a simple client applica
     To analyze the third image, enter the following command:
 
     ```
-    .\Allfiles\Labs\analyze-image.ps1 store-cam3.jpg
+    analyze-image.ps1 store-cam3.jpg
     ```
 
 11. Review the results of the image analysis for the third image.
