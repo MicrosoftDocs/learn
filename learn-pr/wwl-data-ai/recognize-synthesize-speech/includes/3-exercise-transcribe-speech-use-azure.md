@@ -1,13 +1,91 @@
-The best way to learn how to use the Speech service for speech recognition and synthesis is to explore it for yourself.
+To build software that can interpret audible speech and respond appropriately, you can use the **Speech** cognitive service, which provides a simple way to transcribe spoken language into text and vice-versa.
 
-> [!NOTE]
->A limited number of concurrent sessions are available - if the hosted environment is unavailable, try again later.
->
->To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free?azure-portal=true).
->
-> Alternatively, if you would like to use a development environment on your own computer, you can use this [setup guide](https://github.com/MicrosoftLearning/mslearn-ai900/blob/main/instructions/00%20-%20Local%20development.md) and follow these [exercise instructions](https://github.com/MicrosoftLearning/mslearn-ai900/blob/main/instructions/08-lab-Instructions.md). Due to the range of possible operating systems and setup configurations, we can't provide support if you choose to complete the exercise on your own computer.
+For example, suppose you want to create a smart device that can respond verbally to spoken questions, such as "What time is it?"
 
-When you finish the exercise, end the lab to close the VM. Don't forget to come back and complete the knowledge check to earn points for completing this module!
+## Use the Cloud Shell
 
-> [!TIP]
-> After completing the exercise, if you've finished exploring Azure cognitive services, delete the Azure resources that you created during the exercise.
+To test the capabilities of the Speech service, we'll use a simple command-line application that runs in the Cloud Shell.
+> **Note**: For this lab, you will test out an application in a cloud shell environment. When you build your own application, you can use an environment of your choice.
+
+1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance. 
+
+2. When you are prompted to review permissions, click **Accept**.
+
+## Create a *Speech* resource
+
+Let's start by creating a **Speech** resource in your Azure subscription:
+
+1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with your Microsoft account.
+2. Click the **&#65291;Create a resource** button, search for *Speech*, and create a **Speech** resource with the following settings:
+    - **Name**: *Enter a unique name*.
+    - **Subscription**: *Your Azure subscription*.
+    - **Location**: *Choose any available region*
+    - **Pricing tier**: Free F0
+    - **Resource group**: *Select an existing resource group or create a new one*.
+
+3. Review and create the resource, and wait for deployment to complete. Then go to the deployed resource.
+4. View the **Keys and Endpoint** page for your Speech resource. You will need the location/region and keys to connect from client applications.
+
+## Configure and run a client application
+
+Now that you have a cloud shell environment, you can run a simple client application that uses the Computer Vision service to analyze an image.
+
+1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
+
+    ```
+    git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
+    ```
+
+2. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your cloud shell storage and work with them. Type the following command into the shell: 
+
+     ```
+    code .
+    ```
+
+    Notice how this opens up an editor. 
+
+3. In the **Files** pane on the left, expand **ai-900** and select **speaking-clock.ps1**. This file contains some code that uses the Speech service to recognize and synthesize speech:
+
+    ![The editor containing code to use the Speech service](../media/speaking-clock-code.png)
+
+4. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Speech resource. Copy these from the **Keys and Endpoints** page for your resource (which should still be in the top area of the browser) and paste them into the code editor, replacing the **YOUR_LOCATION** and **YOUR_KEY** placeholder values respectively.
+
+    >**Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
+
+    After pasting the endpoint and key values, the first two lines of code should look similar to this:
+
+    ```PowerShell
+    $region="eastus"
+    $key="1a2b3c4d5e6f7g8h9i0j...."
+    ```
+
+5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
+
+    The sample client application will use your Speech service to transcribe spoken input and synthesize an appropriate spoken response. A real application would accept the input from a microphone and send the response to a speaker, but in this simple example, we'll use pre-recorded input in an audio file and save the response as another audio file.
+
+    Use the audio player below to hear the input audio the application will process:
+
+    <audio controls>
+      <source src="https://github.com/GraemeMalcolm/ai-stuff/raw/main/data/speech/time.wav" type="audio/wav">
+    Your browser does not support the audio element.
+    </audio>
+
+6. In the PowerShell pane, enter the following command to run the code:
+
+    ```
+    cd ai-900
+    speaking-clock.ps1
+    ```
+
+7. Review the output, which should have successfully recognized the text "What time is it?" and saved an appropriate response in a file named *output.wav*.
+
+    Use the following audio player to hear the spoken output generated by the application:
+
+    <audio controls>
+    <source src="https://github.com/GraemeMalcolm/ai-stuff/raw/main/data/speech/output.wav" type="audio/wav">
+    Your browser does not support the audio element.
+    </audio>
+
+## Learn more
+
+This simple app shows only some of the capabilities of the Speech service. To learn more about what you can do with this service, see the [Speech page](https://azure.microsoft.com/services/cognitive-services/speech-services/).
