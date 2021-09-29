@@ -48,3 +48,7 @@ The following list represents good candidates for SignalR:
   - Turn-based games
   - Time series reporting
   - GitHub Actions, issue and pull request systems
+
+## Contoso Pizza scenario
+
+Considering the client-side polling solution in the Contoso Pizza live orders map, SignalR could be a viable alternative approach. As with all programming and architectural decisions, it's your responsibility to weigh the advantages and disadvantages.
