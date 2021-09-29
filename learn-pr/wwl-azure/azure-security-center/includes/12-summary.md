@@ -7,7 +7,7 @@ You should be able to:
 - Configure Azure Security Center based on your security posture
 - Review Secure Score and raise it
 - Lock down your solutions using Security Center and Defender
-- Enable Just-in-Time access and other security features
+- Enable Just-in-Time access and other security features 
 
 ## Learn More
 
