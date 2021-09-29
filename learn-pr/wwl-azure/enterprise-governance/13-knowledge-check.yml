@@ -68,7 +68,7 @@ quiz:
       explanation: "A resource can only live in a single resource group."
     - content: "Resources can be moved from one resource group to another resource group."
       isCorrect: true
-      explanation: "Resouces can easily be moved between resource groups, so this is correct."
+      explanation: "Resources can easily be moved between resource groups, so this is correct."
     - content: "Resource groups can be nested."
       isCorrect: false
       explanation: "Resource groups cannot be nested."
