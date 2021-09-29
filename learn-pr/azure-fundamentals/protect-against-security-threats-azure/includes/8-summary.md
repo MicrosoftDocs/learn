@@ -4,10 +4,10 @@ Azure provides tools and services that can help you detect and act on important 
 
 In this module, you learned about Azure services that relate to security. Here's a brief summary:
 
-* Azure Security Center provides visibility of your security posture across all of your services, both on Azure and on-premises.
-* Azure Sentinel aggregates security data from many different sources, and provides additional capabilities for threat detection and response.
-* Azure Key Vault stores your applications' secrets, such as passwords, encryption keys, and certificates, in a single, central location.
-* Azure Dedicated Host provides dedicated physical servers to host your Azure VMs for Windows and Linux.
+ -  Azure Security Center provides visibility of your security posture across all of your services, both on Azure and on-premises.
+ -  Azure Sentinel aggregates security data from many different sources, and provides additional capabilities for threat detection and response.
+ -  Azure Key Vault stores your applications' secrets, such as passwords, encryption keys, and certificates, in a single, central location.
+ -  Azure Dedicated Host provides dedicated physical servers to host your Azure VMs for Windows and Linux.
 
 ## Learn more
 
