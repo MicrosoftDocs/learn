@@ -4,7 +4,7 @@ You always want to make sure you can back up keys, certificates, and even secret
 - Azure Key Vault Soft-delete
 - Key Vault Backup
 
-## Key kault soft-delete
+## Key vault soft-delete
 
 This diagram shows how the process flow of deleting a key with and without soft-delete protection.
 
@@ -13,9 +13,9 @@ This diagram shows how the process flow of deleting a key with and without soft-
 
 When a secret is deleted from a key vault without soft-delete protection, the secret is permanently deleted. Users can currently opt out of soft-delete during key vault creation. However, Microsoft will soon enable soft-delete protection on all key vaults to protect secrets from accidental or malicious deletion by a user. Users will no longer be able to opt out of or turn off soft-delete.
 
-## Key kault backup
+## Key vault backup
 
-The screenshot shows how to download a back up of a primary key.  Similar process can be used to back up other items in Key Vault.
+The screenshot shows how to download a backup of a primary key.  Similar process can be used to back up other items in Key Vault.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Key Vault - backup a key page.  Users select an existing key and then choose Download Backup, to create the backup.](../media/az500-key-vault-backup-key.png)
