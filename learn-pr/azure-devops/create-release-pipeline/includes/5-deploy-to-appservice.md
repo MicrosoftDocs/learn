@@ -54,7 +54,7 @@ We won't go into many of the details about how App Service works or the configur
 
     The **App Service** Essentials displays details related to your deployment.
 
-    :::image type="content" source="../media/5-app-service-details.png" alt-text=Screenshot showing deployment details, including the deployment URL." lightbox="../media/5-app-service-details.png":::
+    :::image type="content" source="../media/5-app-service-details.png" alt-text="Screenshot showing deployment details, including the deployment URL." lightbox="../media/5-app-service-details.png":::
 
 1. Select the URL.
 
