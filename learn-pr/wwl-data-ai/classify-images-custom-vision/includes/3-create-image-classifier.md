@@ -7,7 +7,7 @@ In Azure, you can use the ***Custom Vision*** cognitive service to train an imag
 To test the capabilities of the Custom Vision service, we'll use a simple command-line application that runs in the Cloud Shell.
 > **Note**: For this lab, you will test out an application in a cloud shell environment. When you build your own application, you can use an environment of your choice.
 
-1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance to your right, as shown here. 
+1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance. 
 
 2. When you are prompted to review permissions, click **Accept**. 
 
@@ -127,7 +127,7 @@ Now that you have a cloud shell environment, you can run a simple client applica
 
     ```
     cd ai-900
-    .\Allfiles\Labs\classify-image.ps1 1
+    classify-image.ps1 1
     ```
 
 7. Review the prediction, which should be **apple**.
@@ -135,7 +135,7 @@ Now that you have a cloud shell environment, you can run a simple client applica
 8. Now let's try another image:
 
     ```
-    .\Allfiles\Labs\classify-image.ps1 2
+    classify-image.ps1 2
     ```
 
 9. Verify that the model classifies this image as **banana**.
@@ -143,7 +143,7 @@ Now that you have a cloud shell environment, you can run a simple client applica
 10. Finally, let's try the third test image:
 
     ```
-    .\Allfiles\Labs\classify-image.ps1 3
+    classify-image.ps1 3
     ```
 
 11. Verify that the model classifies this image as **orange**.
