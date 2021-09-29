@@ -18,7 +18,7 @@ abstract: |
   - Reduce or eliminate risks with known security requirements and controls.
 prerequisites: |
   - Threat modeling security fundamentals
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/threat-modeling-secured-environment.svg
 levels:
 - beginner
 - intermediate
