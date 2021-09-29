@@ -51,7 +51,7 @@ Now that we’ve covered the physical aspects of data classification, let’s lo
 
 ### Data Discovery
 
-Data discovery and classification provides advanced capabilities built into Azure SQL Database for discovering, classifying, labeling and protecting sensitive data (such as business, personal data (PII), and financial information) in your databases. Discovering and classifying this data can play a pivotal role in your organizational information protection stature. It can serve as infrastructure for:
+Data discovery and classification provides advanced capabilities built into Azure SQL Database for discovering, classifying, labeling and protecting sensitive data (such as business, personal data, and financial information) in your databases. Discovering and classifying this data can play a pivotal role in your organizational information protection stature. It can serve as infrastructure for:
 
 * Helping meet data privacy standards and regulatory compliance requirements.
 * Addressing various security scenarios such as monitoring, auditing, and alerting on anomalous access to sensitive data.

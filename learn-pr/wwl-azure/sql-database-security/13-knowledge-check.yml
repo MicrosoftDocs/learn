@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/27/2021
+  ms.date: 09/29/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
@@ -18,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Your SQL database administrator has recently read about SQL injection attacks. They ask you what can be done to minimize the risk of this type of attack. You suggest implementing which of the following features?"
+  - content: "A SQL database administrator has recently read about SQL injection attacks. They ask what can be done to minimize the risk of this type of attack. Implementing which of the following features will help protect the database?"
     choices:
     - content: "Advanced Threat Protection"
       isCorrect: true
@@ -29,7 +28,7 @@ quiz:
     - content: "Dynamic Data Masking"
       isCorrect: false
       explanation: "Data masking is not helpful in the situation."
-  - content: "Your organization provides a Help Desk for its customers. Service representatives need to identify callers using the last four numbers of their credit card. You need to ensure the complete credit card number is not fully exposed to the service representatives. Which of the following features do you implement?"
+  - content: "An organization provides a Help Desk for its customers. Service representatives need to identify callers using the last four numbers of their credit card. There is a need to ensure the complete credit card number is not fully exposed to the service representatives. Which of the following features should be implemented?"
     choices:
     - content: "Always Encrypted"
       isCorrect: false
@@ -40,7 +39,7 @@ quiz:
     - content: "Dynamic Data Masking"
       isCorrect: true
       explanation: "Dynamic Data Masking. Dynamic data masking limits sensitive data exposure by masking it to non-privileged users. This feature enables customers to designate how much of the sensitive data to reveal."
-  - content: "Your organization auditors need to be assured that sensitive database data always remains encrypted at rest, in transit, and in use. You assure the auditors this is being done because you have configured which feature?"
+  - content: "Auditors need to be assured that sensitive database data always remains encrypted at rest, in transit, and in use. To assure the auditors this is being done, which of the below features is configured?"
     choices:
     - content: "Always Encrypted"
       isCorrect: true
@@ -51,25 +50,25 @@ quiz:
     - content: "Dynamic Data Masking"
       isCorrect: false
       explanation: "Data masking only blocks seeing all the data values of certain data types, not encrypt data."
-  - content: "You have an App Service web application uses a SQL database. Users need to authenticate to the database with their Azure AD credentials. You perform all the following tasks, except? Select one."
+  - content: "An App Service web application uses a SQL database. Users need to authenticate to the database with their Azure AD credentials. Which of the following configuration tasks would enable this?"
     choices:
     - content: "Create a SQL Database Administrator"
       isCorrect: false
-      explanation: "The SQL Database Admin account would offer too much access to your users."
+      explanation: "The SQL Database Admin account would offer too much access the users."
     - content: "Create an Azure AD Database Administrator"
       isCorrect: false
       explanation: "An Azure AD Database admin could only configure and manage the database."
-    - content: "Create users in the Master db"
+    - content: "Create users in the each database."
       isCorrect: true
-      explanation: "Create users in the Master db. You could not create users in the Master db. Instead, contained users should be created on each database."
-  - content: "What type of firewall rules can you configure for an Azure SQL database?"
+      explanation: "Do not create users in the Master db. Instead, contained users should be created on each database."
+  - content: "What type of firewall rules can be configured for an Azure SQL database?"
     choices:
     - content: "Datacenter-level firewall rules"
       isCorrect: false
       explanation: "Datacenter-level rules would not be available inside of a SQL database."
     - content: "Server-level firewall rules"
       isCorrect: true
-      explanation: "Server-level firewall rules, and Database-level firewall rules can be created. Server-level IP firewall rules enable clients to access your entire Azure SQL Database—that is, all the databases within the same SQL Database server. These rules are stored in the master database. Database-level IP firewall rules enable clients to access certain secure databases within the same SQL Database server. You can create these rules for each database (including the master database), and they are stored in the individual databases."
+      explanation: "Server-level firewall rules, and Database-level firewall rules can be created. Server-level IP firewall rules enable clients to access the entire Azure SQL Database—that is, all the databases within the same SQL Database server. These rules are stored in the master database. Database-level IP firewall rules enable clients to access certain secure databases within the same SQL Database server. You can create these rules for each database (including the master database), and they are stored in the individual databases."
     - content: "Table-level firewall rules"
       isCorrect: false
       explanation: "There are no table-level firewall rules."
