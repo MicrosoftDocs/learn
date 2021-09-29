@@ -42,11 +42,9 @@ Now we need to create a single device identity, the sensor monitoring the cheese
 1. Click the `iothubowner` entry under **Policy**, then, on the right-hand side, copy the **Connection string-primary key** and paste it into your text file. Again, add a note, this text is the _service_ connection string.
 
 ::: zone pivot="csharp"
-
 1. In the left-hand menu, select **Settings > Built-in endpoints**.
 
 1. Under **Event Hub compatible endpoint**, ensure **Shared access policy** is set to `iothubowner`. Copy the **Event Hub-compatible endpoint** to your text file.
-
 ::: zone-end
 
 1. Save the text file. Use the file for reference in the next unit.
