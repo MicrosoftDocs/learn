@@ -1,4 +1,4 @@
-SignalR could allow us to replace the client-side polling, and solve the loss of orders issue for Contoso Pizza. We learned about SignalR, and how it works. We explored its capabilities, how the moving parts function together, and the common terminology associated with it. Finally, we learned when it's appropriate to use SignalR.
+SignalR could allow us to replace the client-side polling, and solve the loss of orders issue for Contoso Pizza. We learned about SignalR, and how it works. We explored its capabilities, how the moving parts function together, and the common terminology associated with it. We saw C# code examples that reinforced the learning objectives. Finally, we learned when it's appropriate to use SignalR.
 
 ## References
 
