@@ -75,7 +75,7 @@ Next, you will configure the lenses app with the connection string of the storag
    cd lensesapp/dotnet
    ```
 
-1. Verify the ***Azure.Data.Tables*** SDK package has been added tto the project. This package enables a .NET application to access Azure Storage Tables or the Azure Cosmos DB Table API.
+1. Verify the ***Azure.Data.Tables*** SDK package has been added to the project. This package enables a .NET application to access Azure Storage Tables or the Azure Cosmos DB Table API.
 
    ```bash
    dotnet list package   
