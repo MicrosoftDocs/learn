@@ -1,15 +1,15 @@
-The first step to set up a project on immersive experience for Windows Mixed Reality using the StereoKit requires the following software list.
-Here you'll create a new StereoKit project and configure it for Windows Mixed Reality development.
+The first step to set up a project on immersive experience for Windows Mixed Reality using the StereoKit requires the following software list. Here you'll create a new StereoKit project and configure it for Windows Mixed Reality development.
 
 ## Prerequisite softwares to build StereoKit project
 
 * **Visual studio 2019 - the community version**
 
-Visual Studio is mainly responsible for creating and modifying the app's code, but it can also test and debug the app on a Mixed Reality headset.
+Visual Studio is mainly responsible for creating and modifying the app's code, and it can also test and debug the app on a Mixed Reality headset.
 
 **Installing visual studio**
 
-1. You can download the free edition of Visual Studio, often known as "Visual Studio Community," if you don't already have a Visual Studio membership. Figure 1-9 represents how the download button may appear.
+1. You can download the free edition of Visual Studio, often known as "Visual Studio Community," if you don't already have a Visual Studio membership. 
+Figure 1-9 represents how the download button may appear.
 If you already have a Visual Studio subscription. You can download Visual Studio at the following link: https://developer.microsoft.com/en-us/windows/downloads [SS]
 2. Save the Visual Studio installer to your preferred location. After the download is complete, you can start the installation process by running the Visual Studio installer. SS shows how the installation appears in the Microsoft Edge browser when you execute it. [SS]
 3. When you run the Visual Studio installation, you'll see a few seconds of initialization followed by a feature selection option, as shown in (SS). Select the ".NET Desktop development and Universal Windows Platform development (for HoloLens)" checkbox in Visual Studio 2019's features list. After making the necessary selections, click "Next" or "Install."[SS]
@@ -24,7 +24,7 @@ Enable Developer Mode (for UWP/HoloLens) helps to deploy the application using V
 2. To start the app in your environment, select the **Settings** tile.
 3. Select the **Update** option from the menu.
 4. Select the menu item **For developers**.
-5. Enable To deploy programs from Visual Studio to your HoloLens, use developer features. Also, Enable **Device discovery** if your device is running Windows Holographic version 21H1 or newer.
+5. Enable **Use developer features** to deploy apps from Visual Studio to your HoloLens. If your device is running Windows Holographic version 21H1 or newer, also enable **Device discovery**.
 6. Optional: Scroll down and enable Device Portal, which allows you to connect to your HoloLens' Windows **Device Portal** from a web browser.
 
 **Windows PC**
@@ -38,8 +38,11 @@ If you're using a Windows Mixed Reality headset with your PC, you'll have to ena
 **StereoKit’s visual studio template.**
 It is one of the fastest ways to set up a StereoKit project!. There are two different templates to choose from. One is for Universal Windows Platform, and the other is .NET Core. If you're deploying to HoloLens 2, go with UWP, and if you're developing for a desktop Windows or Linux environment, go with.NET Core. Because of the way UWP generates apps, iteration is slower, so use it only if HoloLens is crucial to you.
 
-1. Download the StereoKit templates from **StereoKit Templates - Visual Studio Marketplace**.
-2. You may also install the NuGet package directly into your project.
+**Installing visual studio template**
+1. Download the StereoKit templates from [StereoKit Templates - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=NickKlingensmith.StereoKitTemplates).
+
+**Note:**
+ You may also install the [NuGet package](https://www.nuget.org/packages/StereoKit) directly into your project.
 
 
 
