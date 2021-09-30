@@ -4,7 +4,8 @@ In this demonstration, we will explore storage security configurations.
 
 ## Task 1: Generate SAS tokens
 
-    This demonstration requires a storage account, with a blob container, and an uploaded file. For the best results upload a PNG or JPEG file. 
+> [!NOTE]
+> This demonstration requires a storage account, with a blob container, and an uploaded file. For the best results upload a PNG or JPEG file. 
 
 In this task, we will generate and test a Shared Access Signature. 
 
@@ -22,7 +23,8 @@ In this task, we will generate and test a Shared Access Signature.
 
 ## Task 2: Key Rollover
 
-    Always use the latest version of Azure Storage Explorer.
+> [!NOTE]
+> Always use the latest version of Azure Storage Explorer.
 
 In this task, we will use Storage Explorer to test key rollover. 
 
@@ -83,7 +85,8 @@ In this task, we will configure Azure AD user account authentication for storage
 
 ## Task 5: Storage Endpoints (if you haven't already done this in the Network lesson)
 
-    This task requires a storage account and virtual network with subnet. Storage Explorer is also required. 
+> [!NOTE]
+> This task requires a storage account and virtual network with subnet. Storage Explorer is also required. 
 
 In this task, we will secure a storage endpoint. 
 
