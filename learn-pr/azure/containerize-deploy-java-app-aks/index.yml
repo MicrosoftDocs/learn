@@ -39,6 +39,7 @@ units:
 - learn.containerize-deploy-java-app-aks.run
 - learn.containerize-deploy-java-app-aks.push
 - learn.containerize-deploy-java-app-aks.deploy
+- learn.containerize-deploy-java-app-aks.summary
 
 badge:
   uid: learn.containerize-deploy-java-app-aks.badge
