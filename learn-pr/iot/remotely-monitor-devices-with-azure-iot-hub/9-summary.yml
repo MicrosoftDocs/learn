@@ -43,7 +43,7 @@ quiz:
       isCorrect: false
       explanation: Direct methods do run on the device app, but are triggered from the back-end app.
 
-  - content: "Only one of the following statements is true, which one?"
+  - content: "Which one of the following statements is true?"
     choices:  
     - content: 'The name of a direct method in the device app appears as a string in the back-end app.'
       isCorrect: true
@@ -60,12 +60,12 @@ quiz:
 
   - content: 'What is an IoT Hub device twin?'
     choices:  
-    - content: 'A device twin is a copy of the device state information, held on the device itself.'
+    - content: 'A device twin is a copy of the device state information held on the device itself.'
       isCorrect: false
       explanation: Device twins are stored in the cloud.
-    - content: 'Device twins are duplicate hardware devices, in case one device malfunctions.'
+    - content: 'Device twins are duplicate hardware devices in case one device malfunctions.'
       isCorrect: false
       explanation: Duplicating devices may be a sensible approach, but they aren't called IoT Hub device twins.
-    - content: 'Device twins are JSON documents that store, in the cloud, device information.'
+    - content: 'Device twins are JSON documents that store  device information in the cloud.'
       isCorrect: true
       explanation: Azure IoT Hub, by default, maintains a device twin for each device that you connect to IoT Hub. State information includes metadata, configuration settings, and conditions.
