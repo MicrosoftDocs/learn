@@ -10,42 +10,42 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
-content: Choose the best response for each question. Then select Check your answers.
+content: Choose the best response for each question. Then select "Check your answers".
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Choose the correct feature of Prefabs in Unity."
+    - content: "Choose the correct description of prefabs in Unity."
       choices:
         - content: "Prefabs are a mere collection of objects used for organizational purposes."
           isCorrect: false
           explanation: Parent objects can be used for organizational purposes.
-        - content: "Prefab is a component provided by Mixed Reality Toolkit to manipulate objects on scene."
+        - content: "Prefab is a component provided by the Mixed Reality Toolkit to manipulate objects on scene."
           isCorrect: false
-          explanation: Object Manipulator component can be used to manipulate objects on scene.
+          explanation: The object manipulator component can be used to manipulate objects on scene.
         - content: "Prefabs are reusable components used to propagate changes to all its instances at once."
           isCorrect: true
-          explanation: Prefabs are a special type of component that allows fully configured GameObjects to be saved in the Project for reuse.
-    - content: "Which Object Collection type allows randomization and supports dispersed style collection?"
+          explanation: Prefabs are a special type of component that allows fully configured game objects to be saved in the project for reuse.
+    - content: "Which object collection type allows randomization and supports dispersed style collection?"
       choices:
-        - content: "Grid Object Collection"
+        - content: "Grid object collection"
           isCorrect: false
-          explanation: A Grid Object Collection is simply a set of child objects organized with some layout parameters.
-        - content: "Tile Grid Object Collection"
+          explanation: A grid object collection is simply a set of child objects organized with some layout parameters.
+        - content: "Tile grid object collection"
           isCorrect: false
-          explanation: A basic grid layout for game objects of a consistent size.
-        - content: "Scattered Grid Object Collection"
+          explanation: This type of collection is a basic grid layout for game objects of a consistent size.
+        - content: "Scattered grid object collection"
           isCorrect: true
-          explanation: A Scatter Object Collection is simply a set of child objects randomly laid out within a radius.
-    - content: "Given a scenario, where you need an arrow always pointing in the direction of the sun, which solver will you use to implement this function?"
+          explanation: A scattered grid object collection is a set of child objects randomly laid out within a radius.
+    - content: "Suppose you need an arrow always pointing in the direction of the sun. Which solver will you use to implement this function?"
       choices:
-        - content: "Directional Indicator"
+        - content: "Directional indicator"
           isCorrect: true
-          explanation: Directional Indicator will orient towards the DirectionalTarget supplied.
-        - content: "Tap To Place"
+          explanation: Directional indicator will orient towards the directional target supplied.
+        - content: "Tap to place"
           isCorrect: false
-          explanation: Tap to Place is a far interaction component that is used to place a game object on surface.
-        - content: "Radial View"
+          explanation: Tap to place is used to place a game object on surface.
+        - content: "Radial view"
           isCorrect: false
-          explanation: Radial View keeps the object within a view cone cast by the referenced object.
+          explanation: Radial view keeps the object within a view cone cast by the referenced object.
       
     
