@@ -33,6 +33,7 @@ units:
 - learn.github.github-actions-packages.introduction
 - learn.github.github-actions-packages.what-is-github-packages
 - learn.github.github-actions-packages.publish-using-workflow
+- learn.github.github-actions-packages.knowledge-check-1
 - learn.github.github-actions-packages.exercise-github-packages-docker-registry
 - learn.github.github-actions-packages.github-packages-code-packages
 - learn.github.github-actions-packages.knowledge-check-2
