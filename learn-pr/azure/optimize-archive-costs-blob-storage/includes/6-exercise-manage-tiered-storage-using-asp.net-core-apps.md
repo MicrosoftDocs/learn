@@ -32,7 +32,7 @@ You'll now create a new BlobStorage account, and retrieve the account storage ke
 1. Run the following command in the Cloud Shell to retrieve the storage key for the account:
 
    ```bash
-   export AZURE_STORAGE_KEY=`az storage account keys list -g $RESOURCE_GROUP -n $STORAGE_ACCOUNT_NAME --query [0].value --output tsv
+   export AZURE_STORAGE_KEY=`az storage account keys list -g $RESOURCE_GROUP -n $AZURE_STORAGE_ACCOUNT --query [0].value --output tsv`
    ```
 
 ## Create container and upload data
@@ -73,18 +73,18 @@ In this step, you'll set the access tier for each blob.
 1. Run the following command in the Cloud Shell to set blob2 as Cool:
 
    ```azurecli
-   az storage blob set-tier 
-       --container-name blobcontainer 
-       --name blob2
+   az storage blob set-tier \
+       --container-name blobcontainer \
+       --name blob2 \
        --tier Cool
    ```
 
 1. Run the following command in the Cloud Shell to set blob3 as Hot:
 
    ```azurecli
-   az storage blob set-tier 
-       --container-name blobcontainer 
-       --name blob3 
+   az storage blob set-tier \
+       --container-name blobcontainer \
+       --name blob3 \
        --tier Hot
    ```
 
