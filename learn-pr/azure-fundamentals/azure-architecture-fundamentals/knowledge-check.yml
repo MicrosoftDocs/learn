@@ -32,7 +32,7 @@ quiz:
     choices:
     - content: "Azure subscription"
       isCorrect: true
-      explanation: "That's correct. An Azure subscription is a logical unit of Azure services that links to an Azure account. An Azure subscription is an object that represents a "folder" that you can put resources in. Subscriptions are tied to tenants, so one tenant can have many subscriptions, but not vice versa."
+      explanation: "That's correct. An Azure subscription is a logical unit of Azure services that links to an Azure account. An Azure subscription is an object that represents a container that you can put resources in. Subscriptions are tied to tenants, so one tenant can have many subscriptions, but not vice versa."
     - content: "Management group"
       isCorrect: false
       explanation: "That's incorrect. Management groups are used to help with planning and tracking your Azure spend. Management groups facilitate the hierarchical ordering of Azure resources into collections, at a level of scope above subscriptions."
