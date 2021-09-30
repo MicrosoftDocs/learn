@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/29/2021
+  ms.date: 09/30/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -32,7 +32,7 @@ quiz:
     choices:
     - content: "A Sentinel playbook can help automate and orchestrate an incident response."
       isCorrect: false
-      explanation: "Sentinel provides the abilitiy to automate and orchestrate responses."
+      explanation: "Sentinel provides the ability to automate and orchestrate responses."
     - content: "A Sentinel playbook be run manually or set to run automatically when specific alerts are triggered."
       isCorrect: false
       explanation: "The fact that Sentinel runs when an trigger is fired is a good topic to share."
@@ -46,7 +46,7 @@ quiz:
       explanation: "All incidents have an Incident ID."
     - content: "Incident owner"
       isCorrect: true
-      explanation: "Incident owner. The incident detailed information includes its severity, summary of the number of entities involved, the raw events that triggered this incident, and the incident’s unique ID.  All incidents start as unassigned. Each incident can be assigned to an owner, by setting the Incident owner field. Comments can aslo be added so that other analysts will be able to understand what was investigated and what your concerns are around the incident."
+      explanation: "Incident owner. The incident detailed information includes its severity, summary of the number of entities involved, the raw events that triggered this incident, and the incident’s unique ID.  All incidents start as unassigned. Each incident can be assigned to an owner, by setting the Incident owner field. Comments can also be added so that other analysts will be able to understand what was investigated and what your concerns are around the incident."
     - content: "Number of entities involved"
       isCorrect: false
       explanation: "The number of entities involved are listed in the incident."
