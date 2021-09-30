@@ -15,7 +15,7 @@ Should a catchable error occur - most errors can be caught, execution control mo
 > [!NOTE]
 > While BEGIN CATCH and END TRY are separate statements, the BEGIN CATCH must immediately follow the END TRY.
 
-### Current Limitations
+### Current limitations
 
 High-level languages often offer a try/catch/finally construct, and are often used to release resources implicitly. There's no equivalent FINALLY block in T-SQL.
 
@@ -23,11 +23,11 @@ High-level languages often offer a try/catch/finally construct, and are often us
 
 It's important to realize that, while TRY/CATCH blocks allow you to catch a much wider range of errors than you could with @@ERROR, you can't catch every type.
 
-### Catchable vs. Noncatchable Errors
+### Catchable vs. noncatchable errors
 
 Not all errors can be caught by TRY/CATCH blocks within the same scope where the TRY/CATCH block exists. Often, errors that cannot be caught in the same scope can be caught in a surrounding scope. For example, you might not be able to catch an error within the stored procedure that contains the TRY/CATCH block. However, you're likely to catch that error in a TRY/CATCH block in the code that called the stored procedure where the error occurred.
 
-### Common Noncatchable Errors
+### Common noncatchable errors
 
 Common examples of noncatchable errors are:
 
@@ -56,7 +56,7 @@ In some earlier versions of SQL Server, there was no method to throw a system er
 
 CATCH blocks make the error-related information available throughout the duration of the CATCH block. This includes subscopes, such as stored procedures, run from within the CATCH block.
 
-### Error Handling Functions
+### Error handling functions
 
 You should recall that, when programming with @@ERROR, the value held by the @@ERROR system variable was reset as soon as the next statement was executed.
 
@@ -71,7 +71,7 @@ This means you can write generic error handling stored procedures that can still
 
 SQL CLR integration allows for the execution of managed code within SQL Server. High-level .NET languages, such as C# and VB, have detailed exception handling available to them. Errors can be caught using standard .NET try/catch/finally blocks.
 
-### Errors in Managed Code
+### Errors in managed code
 
 In general, you might wish to catch errors within managed code as much as possible. It's important to realize, though, that any errors not handled in the managed code are passed back to the calling T-SQL code. Whenever any error that occurs in managed code is returned to SQL Server, it will appear to be a 6522 error. Errors can be nested and that particular error will be wrapping the real cause of the error.
 

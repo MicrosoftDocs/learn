@@ -1,4 +1,4 @@
-Your band is on tour next month, and you have identified issues that, in some cases, can be surfaced through metrics and alerts. Your main areas of concern are potential DDoS attacks and increased CPU load that would require another server.
+Your band is on tour next month, and you have identified issues that, in some cases, can be surfaced through metrics and alerts. Your main areas of concern are potential Distributed Denial of Service (DDoS) attacks, and increased CPU load that would require another server.
 
 In this unit, you'll look at some scenarios where you might use the data you're collecting to diagnose and fix problems.
 
@@ -18,6 +18,6 @@ To respond to a high load, you can create an alert rule for the virtual machine 
 
 ![Screenshot that shows adding an alert rule.](../media/7-condition.png)
 
-Then add an action and create an action group. The action group sends you an email and can then scale up your virtual machine.
+Then, add an action and create an action group. The action group sends you an email and can then scale up your virtual machine.
 
 ![Screenshot that shows adding an action group.](../media/7-runbook.png)

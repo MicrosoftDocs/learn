@@ -10,7 +10,7 @@ Once your subscription is set up, you'll need an Azure user account with:
 
 If you just created a free Azure account, you're the owner of your subscription. If you're not the subscription owner, work with the owner to assign the permissions as follows:
 
-1. In the Azure portal, search for "subscriptions", and under **Services**, select **Subscriptions**.
+1. In the Azure Portal, search for "subscriptions", and under **Services**, select **Subscriptions**.
 
     ![Search box to search for the Azure subscription.](../media/search-subscription.png)
 
@@ -26,16 +26,16 @@ If you just created a free Azure account, you're the owner of your subscription.
     ![Opens the Add Role assignment page to assign a role to the account.](../media/assign-role.png)
 
 7. Your Azure account also needs **permissions to register Azure Active Directory apps.**
-8.  In Azure portal, navigate to **Azure Active Directory** > **Users** > **User Settings**.
+8.  In Azure Portal, navigate to **Azure Active Directory** > **Users** > **User Settings**.
 9.  In **User settings**, verify that Azure AD users can register applications (set to **Yes** by default).
 
       ![Verify in User Settings that users can register Active Directory apps.](../media/register-apps.png)
 
 10.  In case the 'App registrations' settings is set to 'No', request the tenant/global admin to assign the required permission. Alternately, the tenant/global admin can assign the **Application Developer** role to an account to allow the registration of Azure Active Directory App. 
 
-## Setup PartsUnlimited application
+## Setup Airsonic application
 
-1. To deploy the workshop environment, begin by navigating to the [Azure portal](https://portal.azure.com).
+1. To deploy the workshop environment, begin by navigating to the [Azure Portal](https://portal.azure.com).
 2. Launch Azure Cloud Shell and run the following commands.   
 
     ```
@@ -50,7 +50,7 @@ If you just created a free Azure account, you're the owner of your subscription.
     ![Two-tier Java web application deployed for workshop](../media/source-environment-deployed.png)
 
 
-5. To browse the application, select **TomcatServer** virtual machine resource, copy the public IP address of the server and paste it in a browser window. 
+5. To browse the application, select **TomcatServer** virtual machine resource, copy the public IP address of the server and paste it in a browser window. Append the IP with **:8080/airsonic**.
 
     ![Java web application to be containerized and migrated](../media/source-app.png)
 

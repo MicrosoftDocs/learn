@@ -5,20 +5,20 @@ There several ways to retrieve properties and metadata:
 - Using the Azure portal (GUI)
 - Using the command line
 - Programatically (via code)
- 
+
 In this unit, you'll review techniques for retrieving the data and the steps that are required to implement this functionality, and in the next unit you will use this knowledge to create an Azure Storage account and retrieve properties.
 
 ## Azure portal
 
 Using the Azure portal, you can view container and blob properties, and any metadata.
 
-1. Sign in to the [Azure portal](https://portal.azure.com), and click **Storage Accounts**.
+1. Sign in to the [Azure portal](https://portal.azure.com), and select **Storage Accounts**.
 
-1. Under **Blob service**, click **Blobs** and select a container.
+1. Under **Blob service**, select **Blobs** and select a container.
 
    ![Select container.](../media/2-select-container.png)
 
-1. On the left, click **Properties**.
+1. On the left, select **Properties**.
 
    ![Select properties.](../media/2-container-select-properties-metadata.png)
 
@@ -26,26 +26,26 @@ Using the Azure portal, you can view container and blob properties, and any meta
 
    ![Container properties.](../media/2-container-properties.png)
 
-1. On the left, click **Metadata**.
+1. On the left, select **Metadata**.
 
 1. You can now view any metadata for the container.
 
    ![Container metadata.](../media/2-container-metadata.png)
 
-1. On the left, click **Overview**.
+1. On the left, select **Overview**.
 
-1. Click a blob.
+1. Select a blob.
 
 1. You can now view the properties and metadata for that blob.
 
    ![Blob properties and metadata.](../media/2-blob-properties-metadata.png)
 
-## Azure Powershell
+## Azure PowerShell
 
-You can use Powershell to view properties and metadata for containers and Blobs. Some of the main cmdlets you need are:
+You can use PowerShell to view properties and metadata for containers and Blobs. Some of the main cmdlets you need are:
 
 ```powershell
-Get-AzStorageContext
+New-AzStorageContext
 
 Get-AzStorageBlob
 
@@ -111,55 +111,55 @@ The following command will display the properties of a container called **safety
 
 ```azurecli
 az storage container show \
---name safety-reports \
---account-name treyresearch \
---output table
+    --name safety-reports \
+    --account-name treyresearch \
+    --output table
 ```
 
 The following command will display the properties of a blob called **hazard-tests.docx**:
 
 ```azurecli
 az storage blob show \
---container-name safety-reports \
---name hazard-tests.docx \
---account-name treyresearch \
---output table
+    --container-name safety-reports \
+    --name hazard-tests.docx \
+    --account-name treyresearch \
+    --output table
 ```
 
 The following command will display the metadata that is stored for the **safety-reports** container:
 
 ```azurecli
 az storage container metadata show \
---name safety-reports \
---account-name treyresearch 
+    --name safety-reports \
+    --account-name treyresearch 
 ```
 
 The following command will display the metadata that is stored for the **hazard-tests.docx** blob:
 
 ```azurecli
 az storage blob metadata show \
---container-name safety-reports \
---name hazard-tests.docx \
---account-name treyresearch 
+    --container-name safety-reports \
+    --name hazard-tests.docx \
+    --account-name treyresearch 
 ```
 
 ## C# (.NET)
 
-In the .NET client SDK, a Block blob is referred to as a `CloudBlockBlob`, and a container as a `CloudBlobContainer` object.
+The Azure SDK for .NET enables you to programmatically interact with Azure service like Azure Blob storage.  
 
-In your project, import the `Microsoft.Azure.Storage.Blob` package using NuGet.
+In your project, import the `Azure.Storage.Blobs` package using NuGet.
 
 Add the following `using` directives to your code:
 
 ```csharp
-using Microsoft.WindowsAzure.Storage;
-
-using Microsoft.WindowsAzure.Storage.Blob;
+using Azure;
+using Azure.Storage.Blobs;
+using Azure.Storage.Blobs.Models;
 ```
 
-The Azure SDK enables you to view properties and metadata for a `CloudBlockBlob` or a `CloudBlobContainer` object using the `FetchAttributesAsync` method. 
+A `BlobContainerClient` object is used to interact with blob containers in Azure storage, including reading the properties and metadata of the container.
 
-The following code shows how to use the `FetchAttributesAsync` method to display metadata:
+The following code shows how to use the `GetPropertiesAsync` method to fetch the properties and metadata for a blob container:
 
 ```csharp
 public static async Task ListContainerMetadataAsync(CloudBlobContainer container)
@@ -179,7 +179,7 @@ public static async Task ListContainerMetadataAsync(CloudBlobContainer container
 
 ## REST
 
-Using the REST API you can retrieve properties and metadata using HTTP GET and HEAD requests. (For HTTP HEAD requests, only a response headers are returned - not the contents of the blob. This is useful when testing request syntax before retrieving blobs.)
+Using the REST API you can retrieve properties and metadata using HTTP GET and HEAD requests. (For HTTP HEAD requests, only the response headers are returned - not the contents of the blob. This is useful when testing request syntax before retrieving blobs.)
 
 For a container, use this syntax:
 ```
