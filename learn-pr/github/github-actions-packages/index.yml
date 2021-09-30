@@ -18,7 +18,7 @@ abstract: |
   - Identify how to authenticate, install, and manage GitHub Packages.
 prerequisites: |
   - A GitHub account
-  - Basic knowledge about Docker and Docker Registry
+  - Basic knowledge about GitHub Actions
 ratingEnabled: true
 iconUrl: /learn/achievements/github/github-actions-packages.svg
 levels:

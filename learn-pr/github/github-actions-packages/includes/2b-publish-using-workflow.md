@@ -73,5 +73,3 @@ docker push ghcr.io/OWNER/IMAGE_NAME:latest
 >
 >- For package registries at `PACKAGE-REGISTRY.pkg.github.com`.
 >- For the container registry at `ghcr.io/OWNER/IMAGE-NAME`.
-
-In the next unit, you will use GitHub Actions to build a container image and publish it to GitHub Packages.

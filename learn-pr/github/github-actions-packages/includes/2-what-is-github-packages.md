@@ -39,7 +39,7 @@ images. Once published - in public or in private - these images can be used from
 
 :::image type="content" source="../media/2-github-packages-docker-image.png" alt-text="GitHub container image page, with image versions listing, statistics and instructions about how to install it." border="false":::
 
-## Comparing GitHub Packages to GitHub Releases
+## Compare GitHub Packages to GitHub Releases
 
 GitHub Packages are used for publishing releases of your libraries to a standard package feed or a container registry. They are meant to leverage the ways the specific package management client works with that feed, like linking back to the repository the package was created in as well as the version of the code that was used.  
 [GitHub Releases](https://docs.github.com/en/github/administering-a-repository/releasing-projects-on-github) are used to release a bundle of packaged software, along with release notes and links to binary files. Those releases can be downloaded directly from their unique URL and tracked back to the specific commit they where created from. Releases can only be downloaded as tarballs or ZIP files.
