@@ -370,31 +370,31 @@ It's time to see your application running locally against the Azure Functions AP
 
 ::: zone pivot="angular"
 
-Browse to `http://localhost:4200`.
+1. Browse to `http://localhost:4200`.
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-Browse to `http://localhost:3000`.
+1. Browse to `http://localhost:3000`.
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-Browse to `http://localhost:5000`.
+1. Browse to `http://localhost:5000`.
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-Browse to `http://localhost:8080`.
+1. Browse to `http://localhost:8080`.
 
 ::: zone-end
 
-You built your application, and now it's running locally making HTTP GET requests to your API.
+  You built your application, and now it's running locally making HTTP GET requests to your API.
 
-Now, stop your running app and API by pressing <kbd>Ctrl-C</kbd> in the terminals.
+2. Now, stop your running app and API by pressing <kbd>Ctrl-C</kbd> in the terminals.
 
 ## Next steps
 
