@@ -1,4 +1,6 @@
-For this exercise, we will use Azure Container Registry and its features to build and store the container images. Azure Container Registry allows you to build, store, and manage container images and artifacts in a private registry for all types of container deployments. Azure Migrate: App Containerization uses Azure Container Registry Tasks to build container images in Azure on-demand and then store those images.
+For this exercise, we will use Azure Container Registry and its features to build and store the container images. 
+
+Azure Container Registry allows you to build, store, and manage container images and artifacts in a private registry for all types of container deployments. Azure Migrate: App Containerization uses Azure Container Registry Tasks to build container images in Azure on-demand and then store those images.
 
 ## Build container image
 
