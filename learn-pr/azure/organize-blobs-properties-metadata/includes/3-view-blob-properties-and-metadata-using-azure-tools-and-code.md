@@ -45,7 +45,7 @@ Using the Azure portal, you can view container and blob properties, and any meta
 You can use Powershell to view properties and metadata for containers and Blobs. Some of the main cmdlets you need are:
 
 ```powershell
-Get-AzStorageContext
+New-AzStorageContext
 
 Get-AzStorageBlob
 
@@ -111,36 +111,36 @@ The following command will display the properties of a container called **safety
 
 ```azurecli
 az storage container show \
---name safety-reports \
---account-name treyresearch \
---output table
+    --name safety-reports \
+    --account-name treyresearch \
+    --output table
 ```
 
 The following command will display the properties of a blob called **hazard-tests.docx**:
 
 ```azurecli
 az storage blob show \
---container-name safety-reports \
---name hazard-tests.docx \
---account-name treyresearch \
---output table
+    --container-name safety-reports \
+    --name hazard-tests.docx \
+    --account-name treyresearch \
+    --output table
 ```
 
 The following command will display the metadata that is stored for the **safety-reports** container:
 
 ```azurecli
 az storage container metadata show \
---name safety-reports \
---account-name treyresearch 
+    --name safety-reports \
+    --account-name treyresearch 
 ```
 
 The following command will display the metadata that is stored for the **hazard-tests.docx** blob:
 
 ```azurecli
 az storage blob metadata show \
---container-name safety-reports \
---name hazard-tests.docx \
---account-name treyresearch 
+    --container-name safety-reports \
+    --name hazard-tests.docx \
+    --account-name treyresearch 
 ```
 
 ## C# (.NET)

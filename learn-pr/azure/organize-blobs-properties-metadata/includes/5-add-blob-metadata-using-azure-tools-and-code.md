@@ -71,19 +71,19 @@ The following example updates the metadata of a container called **safety-report
 
 ```azurecli
 az storage container metadata update \
---name safety-reports \
---account-name treyresearch \
---metadata productClass=acids testStatus=approved
+    --name safety-reports \
+    --account-name treyresearch \
+    --metadata productClass=acids testStatus=approved
 ```
 
 The following example updates the metadata stored with the **hazard-tests.docx** blob:
 
 ```azurecli
 az storage blob metadata update \
---container-name safety-reports \
---name hazard-tests.docx \
---account-name treyresearch \ 
---metadata productType=solvent state=liquid
+    --container-name safety-reports \
+    --name hazard-tests.docx \
+    --account-name treyresearch \ 
+    --metadata productType=solvent state=liquid
 ```
 
 ## C# (.NET)

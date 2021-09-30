@@ -10,36 +10,36 @@ In this unit, you will modify the code in an .NET Core app to write data to blob
 
    ```azurecli
    az storage blob metadata update \
-   --account-name $AZURE_STORAGE_ACCOUNT \
-   --container-name $CONTAINER_NAME \
-   --name safety-report-1234.rpt \
-   --metadata productType=solvent state=liquid
+       --account-name $AZURE_STORAGE_ACCOUNT \
+       --container-name $CONTAINER_NAME \
+       --name safety-report-1234.rpt \
+       --metadata productType=solvent state=liquid
    ```
 
 1. Run the following command in the Cloud Shell to view metadata.
 
    ```azurecli
    az storage blob metadata show \
-   --container-name $CONTAINER_NAME \
-   --name safety-report-1234.rpt \
-   --account-name $AZURE_STORAGE_ACCOUNT
+       --container-name $CONTAINER_NAME \
+       --name safety-report-1234.rpt \
+       --account-name $AZURE_STORAGE_ACCOUNT
    ```
 
 1. Run the following command in the Cloud Shell to set metadata for safety-reports container.
 
    ```azurecli
    az storage container metadata update \
-   --account-name $AZURE_STORAGE_ACCOUNT \
-   --name $CONTAINER_NAME \
-   --metadata auditLevel=high reportingState=included
+       --account-name $AZURE_STORAGE_ACCOUNT \
+       --name $CONTAINER_NAME \
+       --metadata auditLevel=high reportingState=included
    ```
 
 1. Run the following command in the Cloud Shell to view container metadata.
 
    ```azurecli
    az storage container metadata show \
-   --name $CONTAINER_NAME \
-   --account-name $AZURE_STORAGE_ACCOUNT
+       --name $CONTAINER_NAME \
+       --account-name $AZURE_STORAGE_ACCOUNT
    ```
 
 ## Edit the .NET app code
