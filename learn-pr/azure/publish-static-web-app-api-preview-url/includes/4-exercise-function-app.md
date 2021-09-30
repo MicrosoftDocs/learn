@@ -19,11 +19,11 @@ Before making changes to an app, it's good practice to create a new branch for t
 
 1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
 
-1. Enter and select **Git: Checkout to...**
+1. Enter and select **Git: Checkout to...**.
 
 1. Select **Create new branch**.
 
-1. Enter *api* for the new branch name, and press <kbd>Enter</kbd>
+1. Enter *api* for the new branch name, and press <kbd>Enter</kbd>.
 
 You just created the **api** git branch.
 
