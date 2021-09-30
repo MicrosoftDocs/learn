@@ -10,7 +10,3 @@ Rust also offers the following advantages that make it a great fit for a wide ra
 - **Targets bare metal:** Rust can target embedded and "bare metal" programming, making it suitable to write an operating system kernel or device drivers.
 
 According to the [Stack Overflow Developer Survey](https://insights.stackoverflow.com/survey?azure-portal=true) of 2021, Rust has been the most loved language for several years in a row. Developers enjoy programming with Rust! Many types of organizations, from startups to large enterprises, use Rust for their unique use cases. From building tools, to writing web apps, working on servers, and creating embedded systems, the possibilities are limitless.
-
-### Check your knowledge
-
-Answer the following questions to see what you've learned. Choose one answer for each question, and then select **Check answers**.
