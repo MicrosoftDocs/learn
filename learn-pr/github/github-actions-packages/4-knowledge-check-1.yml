@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge
-  ms.date: 04/14/2021
-  author: cmaneu
-  ms.author: chmaneu
+  ms.date: 09/30/2021
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
@@ -15,16 +15,16 @@ quiz:
   questions:
   - content: "In which file do you define the steps to execute in your GitHub Action?"
     choices:
-    - content: "In a workflow .yml (YAML) file."
+    - content: "In a workflow.yml (YAML) file"
       isCorrect: true
-      explanation: "The workflow .yml file, under the .github/workflows directory, contains the steps of your action."
+      explanation: "The workflow.yml file, under the .github/workflows directory, contains the steps of your action."
     - content: "In the Dockerfile"
       isCorrect: false
       explanation: "The Dockerfile tells how to build your container, not the steps of your CI."
     - content: "In the package.json file"
       isCorrect: false
       explanation: "The package.json file is widely used in NodeJS projects, it's not used to define a GitHub Action."
-  - content: "During the lab, which action did you use to publish container image to GitHub Package?"
+  - content: "During the lab, which action did you use to publish a container image to GitHub Packages?"
     choices:
     - content: "docker push command"
       isCorrect: false

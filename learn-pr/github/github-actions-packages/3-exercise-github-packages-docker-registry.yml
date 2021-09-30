@@ -4,9 +4,9 @@ title: Exercise - Use GitHub Packages as a Docker Registry
 metadata:
   title: Exercise - Use GitHub Packages as a Docker Registry
   description: Learn how to set up a CI pipeline that will build and push a container image into GitHub Packages
-  ms.date: 04/27/2021
-  author: cmaneu
-  ms.author: chmaneu
+  ms.date: 09/30/2021
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 25
