@@ -20,7 +20,7 @@ abstract: |
   - Deploy the Docker image to Azure Kubernetes Service
 prerequisites: |
   - An Azure subscription
-  - Local installations of Java JDK (1.8 or later), Maven (3.0 or later), Git CLI, and the Azure CLI (2.12 or later)
+  - Local installations of Java JDK (1.8 or later), Maven (3.0 or later), Docker CLI, Git CLI, and the Azure CLI (2.12 or later)
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate

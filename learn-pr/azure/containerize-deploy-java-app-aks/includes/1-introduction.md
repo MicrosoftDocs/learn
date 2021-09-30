@@ -1,62 +1,33 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-BLAH
-    Goal: orient the learner to the area covered in this module
+Imagine you’re a Java developer, building and deploying applications that will run on on-premises servers. Orchestrating these servers, dependencies, and scale, are all challenging processes. Containerizing applications has many benefits, some of which will alleviate the challenges mentioned above, such as deploying at scale. With Containers, you’ll ensure your applications, and any dependencies, are always isolated in Docker image(s) and ready for on demand deployment and scale.
 
-    Heading: none
+In this module you’ll first containerize a Java application. For convenience, we’ve selected an existing Java application from the open internet. [Turkish Airlines](https://github.com/chtrembl/Flight-Booking-System-JavaServlets_App), a fully responsive web-based Flight Booking System for Turkish Airlines based on the Model View Controller (MVC) Architecture made using Java Servlets, Java Server Pages (JSPs).
 
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
+You’ll then construct a Docker file and write the Docker instructions needed to build a Docker image.
 
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
+You’ll then run the Docker image locally and test the application.
 
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add a visual element
+You’ll then push the Docker image into Azure Container Registry and deploy it to Azure Container Registry.
 
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
+By the end of this module, you'll be able to containerize a Java application, push the Docker image to Azure Container Registry, and then deploy to Azure Kubernetes Service.
 
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
+You'll use your own Azure subscription to deploy the resources in this module. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/java/?azure-portal=true&WT.mc_id=java-10785-chtrembl) before you begin.
 
-    Heading: "## Example scenario"
+> [!IMPORTANT]
+> To avoid unnecessary charges in your Azure subscription, remember to deprovision your Azure resources when you finish this module.
 
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
+## Learning objectives
 
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=master#images)
+By the end of this module, you'll be able to:
 
-    Optional: a "scenario video" that visualizes the scenario
+- Containerize an existing Java application using Docker
+- Build a Docker image for the Java application
+- Run the Docker image locally
+- Push the Docker image to Azure Container Registry
+- Deploy the Docker image to Azure Kubernetes Service
 
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
-## Example scenario
-TODO: add your scenario
-TODO: add a visual element
+## Prerequisites
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
-
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: "## What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
-## What will we be doing?
-TODO: add your activities
-
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
-
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
-
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
-## What is the main goal?
-By the end of this session, you'll be able to (TODO)
-
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+As a Java developer, you're already familiar with building applications. As you complete the exercises in this module, you'll use a personal Azure account. Make sure that you have the following resources:
+  
+- An Azure subscription
+- Local installations of Java JDK (1.8 or later), Maven (3.0 or later), Docker CLI, Git CLI, and the Azure CLI (2.12 or later)
