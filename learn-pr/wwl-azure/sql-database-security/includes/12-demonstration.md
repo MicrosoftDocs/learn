@@ -1,6 +1,7 @@
 Give these Try-This exercises a test to gain some experience using Azure.
 
-    These demonstrations requires an Azure SQL database with sample data. In Task 1, there are instructions to install the AdventureWorks sample database. Also, Task 3 requires SQL Server Management Studio. 
+> [!NOTE] 
+> These demonstrations requires an Azure SQL database with sample data. In Task 1, there are instructions to install the AdventureWorks sample database. Also, Task 3 requires SQL Server Management Studio. 
 
 ## Task 1 - Azure SQL: Advanced Data Security and Auditing
 
@@ -91,7 +92,8 @@ In this task, we will review and configure SQL database diagnostics.
 
 ## Task 3 - Azure SQL: AAD Authentication
 
-    This task requires an Azure SQL database that has not had AAD configured. This task also requires SQL Server Management Studio. 
+> [!NOTE] 
+> This task requires an Azure SQL database that has not had AAD configured. This task also requires SQL Server Management Studio. 
 
 In this task, we will configure Azure AD authentication. 
 
