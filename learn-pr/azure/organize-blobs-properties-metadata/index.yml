@@ -14,11 +14,11 @@ abstract: |
   In this module, you will:
   - Retrieve and modify blob properties and metadata
   - Use properties and metadata to organize Azure blob data
-  - Create an ASP.NET Core app to retrieve and modify metadata
+  - Create an .NET Core app to retrieve and modify metadata
 prerequisites: |
   - Experience in basic Azure web app development and deployment
   - Basic familiarity with Azure Storage and Blob objects
-  - Basic familiarity with ASP.NET Core
+  - Basic familiarity with .NET Core
 iconUrl: /learn/achievements/organize-blobs-with-properties-and-metadata.svg
 levels:
 - beginner
