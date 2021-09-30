@@ -4,91 +4,46 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 9/14/2021
-  author: gerryaobrien
-  ms.author: gerryo
+  description: "Knowledge check for intro to Azure Policy."
+  ms.date: 9/21/2021
+  author: ricmmartins
+  ms.author: ricmart
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-### Question content requirements:
-###  - Write 5 questions
-###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
-###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
-###      Example: "What differentiates an action from a control action in an Azure Logic App?"
-###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
-###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
-###      Example: "Suppose you work for a financial company. You're building a system to let your brokers trade financial instruments. Your system must monitor market conditions, detect changes, and execute trades. You'll need to handle a large volume of transactions and you'll need to do it quickly. The faster you can complete trades, the more of an advantage you'll have over your competitors. Which requirement of this system would be difficult for Logic Apps to satisfy?"
-###
-###########################################################################
+durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Which of the following statements accurately describes Azure Policy?"
     choices:
-    - content: ""
+    - content: "A service to create Group Policy Objects on Azure."
+      isCorrect: false
+      explanation: "Incorrect: Azure Policy can't be used to create Group Policy Objects."
+    - content: "Azure Policy is an Azure service for creating, assigning, and managing policies."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct: This is the statement which best describes Azure Policy"
+    - content: "Azure Policy is a tool to enforce security controls."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect: Azure Policy can help with policies to cover security controls, but isn't limited to it."
+  - content: "When using Azure Policy, you are restricted to Azure resources only."
     choices:
-    - content: ""
+    - content: "This affirmation is wrong, you can use Azure Policy outside of Azure."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Azure Policy can handle Arc enabled resources meaning you can extend the coverage of your controls over physical servers and virtual machines hosted outside of Azure."
+    - content: "Correct, you are restricted to Azure resources when working with Azure Policy."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect: You can extend the coverage of Azure Policy to Arc enabled resources outside of Azure."
+    - content: "Not, if you install the Azure Policy agent you can work with resources hosted outside of Azure."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect: There isn't an Azure Policy agent."
+  - content: "Azure Policy is capable of:"
     choices:
-    - content: ""
+    - content: "Monitor the health of your virtual machine."
+      isCorrect: false
+      explanation: "Incorrect: Azure Policy isn't a monitoring tool"
+    - content: "Provide recommendations for your Azure resources."
+      isCorrect: false
+      explanation: "Incorrect: Azure Policy will not provide recommendations for your Azure Resources. You can use Azure Advisor instead to receive recommendations." 
+    - content: "Add required configuration at scale"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Correct: As example, you can create a policy to enable Azure Backup for all virtual machines within an Azure Subscription."

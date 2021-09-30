@@ -3,11 +3,11 @@ uid: learn.intro-to-azure-policy.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: introduction
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 9/14/2021
-  author: gerryaobrien
-  ms.author: gerryo
+  title: Introduction
+  description: "Introduction to Azure Policy"
+  ms.date: 9/29/2021
+  author: ricmmartins
+  ms.author: ricmart
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
