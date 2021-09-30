@@ -15,7 +15,7 @@ Knowing when *not* to choose SignalR is just as important as knowing when to cho
 
 ### When not to use SignalR
 
-SignalR is as durable as the underlying connection. In other words, if there's cause for concern with the connectivity of a client application &mdash; SignalR is *not* the best choice.
+SignalR is as durable as the underlying connection. In other words, if there's cause for concern with the **connectivity** of a client application &mdash; SignalR is *not* the best choice.
 
 Another consideration is the scalability of SignalR. Depending on the number of concurrently connected clients, your web server could experience contention when reaching its limits. In situations like this, you'd likely need to deploy the application to a server farm and use a backplane. Implementing this on your own can be tedious. Alternatively, you could leverage the [**Azure SignalR Service**](/azure/azure-signalr). In addition to having solved most of the networking challenges you might face when trying to implement this yourself, there are various [resiliency and disaster recovery](/azure/azure-signalr/signalr-concept-disaster-recovery) mechanisms in place to help alleviate problems.
 

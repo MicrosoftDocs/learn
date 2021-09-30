@@ -197,6 +197,7 @@ public Task SendNotificationAsync(string text) =>
         "NotifyAll", new Notification(text, DateTme.UtcNow));
 ```
 
+<!--
 ### Steam APIs
 
 SignalR supports streaming and provides the following APIs. To invoke a streaming hub method on the server using the specified method name and return type use one of the following APIs:
@@ -205,6 +206,7 @@ SignalR supports streaming and provides the following APIs. To invoke a streamin
 - <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.StreamAsync%2A>: Returns `IAsyncEnumerable<TResult>`.
 
 While streaming is not a requirement of Contoso Pizza's live map feature, it's still good to know it's available.
+-->
 
 ### Handle events
 

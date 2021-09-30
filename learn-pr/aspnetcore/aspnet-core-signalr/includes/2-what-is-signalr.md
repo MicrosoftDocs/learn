@@ -10,7 +10,7 @@ As with all internet-connected applications, there are servers and clients. Clie
 
 ASP.NET Core SignalR provides an API for creating server-to-client remote procedure calls (RPC). The RPCs invoke functions on clients from the server-side .NET Core code. There are several supported platforms, each with its respective client SDK. Because of this, the programming language being invoked by the RPC call varies.
 
-Familiarizing yourself with the common nomenclature of SignalR is very helpful. You will learn what SignalR components are required in a server application, versus those in client applications. Additionally, you'll gain an understanding of the various duplex communication mechanisms. SignalR encapsulates multiple real-time protocols and abstracts away the complexities of each implementation.
+Familiarizing yourself with the common nomenclature of SignalR is very helpful. You will learn what SignalR components are required in a server application, versus those in client applications. Additionally, you'll gain an understanding of the various duplex communication mechanisms. SignalR encapsulates multiple real-time protocols and abstracts away the complexities of each implementation. For more information, see [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) docs.
 
 ### Transports
 
@@ -35,9 +35,21 @@ In SignalR, a *hub* is used to communicate between clients and servers. A hub is
 The SignalR Protocol is a protocol for two-way RPC over any [message-based transport](#transports). Either party in the connection may invoke procedures on the other party, and procedures can return zero or more results or an error. SignalR provides two built-in hub protocols:
 
 - A text protocol based on JSON, which is the default.
-- A binary protocol based on *MessagePack*, *MessagePack* generally creates smaller messages compared to JSON as it's binary.
+- A binary protocol based on *MessagePack*, *MessagePack* generally creates smaller messages compared to JSON.
 
 To use the *MessagePack* protocol, both server and client need to opt-in to configuring it, and both server and client have to support it. There is a third hub protocol named *BlazorPack*, but it is used exclusively with Blazor-Server applications. It cannot be used *without* the Blazor-Server hosting model. For more information, see the official specification for [SignalR Hub Protocol](https://github.com/dotnet/aspnetcore/blob/068797e16a1bfe66461e15c8a2ffa864369d384d/src/SignalR/docs/specs/HubProtocol.md).
+
+#### Users
+
+A user in the system acts as an individual, but they can also be part of a group. Messages can be sent to [groups](#groups), and all group members will be notified. A single user can connect from multiple client applications, for example; the same user may use a mobile device and a web browser and get real-time updates on both at the same time.
+
+#### Groups
+
+A group consists of one or more [connection](#connections). The server can create groups, add connections to a group, and remove connections from a group. A group has a given name, which acts as its unique identifier. Groups serve as a scoping mechanism to help target messages, in other words real-time functionality can be sent to only those within a named group.
+
+#### Connections
+
+A connection to a hub is represented by a unique identifier that is known only by the server and client. A single connection exists per hub type. Each client has a unique connection to the server, in other words a single user can be represented on multiple clients, but each client connection has its own identifier.
 
 ### Clients
 
@@ -53,7 +65,3 @@ The client is responsible for establishing a connection to the server's endpoint
 For more information, see [ASP.NET Core SignalR supported platforms](/aspnet/core/signalr/supported-platforms).
 
 With a hub connection instance that's started successfully, messages flow freely in both directions. Users are free to communicate notifications to the server, as well as receive notifications from the server. A client is any connected application, such as but not limited to; a web browser, a mobile app, and a desktop app.
-
-#### Users
-
-A user in the system acts as an individual, but they can also be part of a group. Messages can be sent to groups, and all group members will be notified. A single user can connect from multiple client applications, for example; the same user may use a mobile device and a web browser and get real-time updates on both at the same time.
