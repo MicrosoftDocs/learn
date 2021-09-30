@@ -14,7 +14,6 @@ prerequisites: |
 summary: |
   Learn about core concepts, principles, and methodologies that are foundational to security, compliance, and identity solutions, including Zero-Trust, shared responsibility, the role of identity providers, and more.
   
-  Here are the learning paths in this series:
   :::row:::
   :::column:::
     <img src="/learn/achievements/describe-the-concepts-of-security-compliance-and-identity.svg" width="101" alt="The trophy for the Describe the concepts of security, compliance, and identity learning path." role="presentation"></img>
@@ -39,6 +38,7 @@ summary: |
     [Part 4: Describe the capabilities of Microsoft compliance solutions](../describe-capabilities-of-microsoft-compliance-solutions/index.yml)
   :::column-end:::
   :::row-end:::
+  Here are all the learning paths in preparation for the SC-900 exam: Microsoft Security, Compliance, and Identity Fundamentals.
 iconUrl: /learn/achievements/describe-the-concepts-of-security-compliance-and-identity.svg
 levels:
 - beginner
