@@ -3,7 +3,7 @@ uid: learn.language.rust-introduction.3-rust-features
 metadata:
   title: Unique features of Rust
   description: Learn about some of the unique features of the Rust programming language.
-  ms.date: 09/01/2021
+  ms.date: 09/29/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -15,6 +15,18 @@ content: |
 
 quiz:
   questions:
+
+  - content: "What's a compelling advantage of working with Rust?"
+    choices:
+    - content: "Rust is type-safe, memory-safe, and data race-free."
+      isCorrect: true
+      explanation: "Correct! Data types in Rust are verified at compile time, pointers (references) always refer to valid memory, and thread-safety is guaranteed."
+    - content: "Rust is optimized for bare-metal development like operating systems."
+      isCorrect: false
+      explanation: "Incorrect. Rust can be used to implement embedded functionality, but the language is well suited for all development. Programmers also use Rust to build tools, write web apps, and do high-level abstractions."
+    - content: "Rust has a robust garbage collector and helps to manage memory efficiently."
+      isCorrect: false
+      explanation: "Incorrect. Rust doesn't have a built-in garbage collector. Rust produces a very minimal runtime, which is also optional."
 
   - content: "How is Rust code executed?"
     choices:
@@ -28,7 +40,7 @@ quiz:
       isCorrect: true
       explanation: "Correct. Rust code is compiled into an executable file, and then the executable is run."
 
-  - content: "What's an example of something you can't do with Cargo?"
+  - content: "What's an example of something you *can't* do with Cargo?"
     choices:
     - content: "Build an existing Rust project."
       isCorrect: false
