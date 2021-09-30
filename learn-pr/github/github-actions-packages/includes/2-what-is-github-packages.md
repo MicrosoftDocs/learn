@@ -1,7 +1,7 @@
 GitHub Packages is a package management service that makes it easy to publish public or private packages next to your source code.
 
 > [!NOTE]
-> If you are not already familiar with GitHub, check out the [Introduction to GitHub](https://docs.microsoft.com/learn/modules/introduction-to-github/) Learn module.
+> If you are not already familiar with GitHub, check out the [Introduction to GitHub](/learn/modules/introduction-to-github/) Learn module.
 
 ## GitHub Packages is a package registry
 
@@ -13,7 +13,7 @@ GitHub Packages make it easy to use the same familiar GitHub interface to find p
 
 ## A standard package manager
 
-GitHub Packages is compatible with common package management clients, so you can publish packages with your choice of tools. If your repository is more complex, you may need to publish multiple packages of different types. You can also yse webhooks or GitHub Actions to fully customize your publishing and post-publishing workflows.
+GitHub Packages is compatible with common package management clients, so you can publish packages with your choice of tools. If your repository is more complex, you may need to publish multiple packages of different types. You can also use webhooks or GitHub Actions to fully customize your publishing and post-publishing workflows.
 
 Are you publishing an open-source package? Most open-source projects store their code on GitHub. So you can publish prerelease versions of your packages for testing within your community, and then easily promote specific versions to the public registry of your choice.
 
@@ -56,7 +56,7 @@ Now with GitHub Packages, you can use a single set of credentials across your so
 [GitHub Actions](https://github.com/features/actions) is another GitHub feature that allow you to automate your software workflows. You can build, test, and deploy your code right from GitHub. 
 
 > [!TIP]
-> If you want to learn more about GitHub Actions, checkout *[Build continuous integration (CI) workflows by using GitHub Actions](https://docs.microsoft.com/learn/modules/github-actions-ci/)* Learn module.
+> If you want to learn more about GitHub Actions, checkout *[Build continuous integration (CI) workflows by using GitHub Actions](/learn/modules/github-actions-ci/)* Learn module.
 
 By combining GitHub Actions and GitHub Packages, you can build a workflow that will build and test your code, and then publish it to GitHub Packages by simply pushing code to your repository.
 
