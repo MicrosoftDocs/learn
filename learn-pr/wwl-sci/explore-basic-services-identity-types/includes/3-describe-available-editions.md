@@ -8,7 +8,6 @@ Azure AD is available in four editions: Free, Office 365 Apps, Premium P1, and P
 
 **Azure Active Directory Premium P2**. P2 offers all the Premium P1 features, and [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) to help provide risk-based Conditional Access to your apps and critical company data. P2 also gives you [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-getting-started) to help discover, restrict, and monitor administrators and their access to resources, and to provide just-in-time access when needed.
 
-Azure Active Directory Premium P1 and Premium P2 aren't currently supported in China.
 
 For additional information on each of the editions, visit the [Azure Active Directory Pricing](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing) page.
 

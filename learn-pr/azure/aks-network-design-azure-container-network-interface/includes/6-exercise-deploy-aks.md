@@ -1,3 +1,6 @@
+>[!NOTE]
+> The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module. Let's go!
+
 We're now going to use the information we collected in the previous modules to deploy an Azure Kubernetes Service cluster.
 
 In this unit, you'll deploy virtual networks, subnets, and identities and then deploy an Azure Kubernetes Service cluster using the Azure CNI networking plug-in.

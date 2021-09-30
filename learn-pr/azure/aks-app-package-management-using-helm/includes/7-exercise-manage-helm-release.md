@@ -1,3 +1,6 @@
+>[!NOTE]
+> The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module. Let's go!
+
 Helm charts make it easy to install, upgrade, roll back, and delete an application on a Kubernetes cluster. Earlier, the team was successful in installing the pre-configured Helm chart from the Azure Marketplace Helm repository.
 
 To test the management of release upgrades and rollbacks, the team decides to simulate the experience by installing a basic .NET Core Blazor Server application.

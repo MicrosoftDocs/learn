@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.organize-blobs-properties-metadata.view-blob-properties-and-metadata-using-azure-tools-and-code
-title: View blob properties and metadata using azure tools and code
+title: View blob properties and metadata using Azure tools
 metadata:
-  title: View blob properties and metadata using azure tools and code
-  description: View blob properties and metadata using azure tools and code
-  ms.date: 04/26/2019
+  title: View blob properties and metadata using Azure tools and code
+  description: View blob properties and metadata using Azure tools and code
+  ms.date: 09/30/2021
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial

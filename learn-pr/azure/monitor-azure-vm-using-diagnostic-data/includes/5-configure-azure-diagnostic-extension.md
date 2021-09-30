@@ -16,7 +16,7 @@ If you've already created the VM, the easiest way to add the extension is by goi
 
 ![Screenshot of the diagnostic settings pane, showing the enable pane.](../media/5-enable-diagnostics-portal.png)
 
-You can also add the extension by using the Azure CLI or PowerShell. In the Azure CLI, you use the `az vm extension set` command. In PowerShell, you use the `Set-AzVMDiagnosticsExtension` command.
+You can also add the extension by using the Azure CLI or PowerShell. In the Azure CLI, you run the `az vm extension set` command. In PowerShell, you run the `Set-AzVMDiagnosticsExtension` command.
 
 You can use the extension to collect data about the CPU, disk, and memory values of the VM.
 
@@ -24,16 +24,16 @@ You can use the extension to collect data about the CPU, disk, and memory values
 
 You have different configuration options depending on the OS installed on the VM. At the basic level, these options are:
 
-|Windows  |Linux  |
+| Windows  |Linux  |
 |---------|---------|
-|Performance counters: CPU, Memory, Disk, Network, ASP.NET, SQL Server *(60-second sample)*    |  Metrics: Processor, Memory, Network, Filesystem, Disk *(15-second sample)*      |
-|Logs: Application, Security, System, Event tracing    | Syslog        |
-|Crash dumps     | Not available        |
-|Sink data: Azure Monitor, Application Insights     | Not available        |
+| Performance counters: CPU, Memory, Disk, Network, ASP.NET, SQL Server *(60-second sample)*    |  Metrics: Processor, Memory, Network, Filesystem, Disk *(15-second sample)*      |
+| Logs: Application, Security, System, Event tracing    | Syslog        |
+| Crash dumps     | Not available        |
+| Sink data: Azure Monitor, Application Insights     | Not available        |
 
 However, you can choose to collect custom metrics like percentage of free disk space on Windows, or the amount of swap available on Linux.
 
-You can configure the extension in the Azure portal. The configuration is changed in the same place for both operating systems, on the **Diagnostic settings** pane.
+You can configure the extension in the Azure portal. The configuration is changed in the same place for both operating systems on the **Diagnostic settings** pane.
 
 ![Screenshot of the pane for diagnostic settings.](../media/5-diagnostics-settings-on.png)
 
