@@ -2,7 +2,7 @@ Use this set of Try-This exercises to get some hands-on experience with Azure.
 
 In this demonstration, we will configure and test an app registration. 
 
-## Task 1 - Configure an ppp registration via the Azure portal
+## Task 1 - Configure an app registration via the Azure portal
 
 > [!NOTE] 
 > The application registration process is constantly being updated and improved. Validate before your demo
