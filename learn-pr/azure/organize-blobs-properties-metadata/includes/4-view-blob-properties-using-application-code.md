@@ -25,14 +25,6 @@ In this step, you'll create a new storage account and container, and then upload
    export AZURE_REGION=<your region>
    ```
 
-1. Run the following command in the Cloud Shell to create a resource group for your storage account.
-
-   ```azurecli
-   az group create \
-       --location $AZURE_REGION \
-       --name $RESOURCE_GROUP
-   ```
-
 1. Run the following command in the Cloud Shell to create a new storage account.
 
    ```azurecli

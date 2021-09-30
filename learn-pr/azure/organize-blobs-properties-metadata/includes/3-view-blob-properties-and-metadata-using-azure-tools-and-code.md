@@ -12,13 +12,13 @@ In this unit, you'll review techniques for retrieving the data and the steps tha
 
 Using the Azure portal, you can view container and blob properties, and any metadata.
 
-1. Sign in to the [Azure portal](https://portal.azure.com), and click **Storage Accounts**.
+1. Sign in to the [Azure portal](https://portal.azure.com), and select **Storage Accounts**.
 
-1. Under **Blob service**, click **Blobs** and select a container.
+1. Under **Blob service**, select **Blobs** and select a container.
 
    ![Select container.](../media/2-select-container.png)
 
-1. On the left, click **Properties**.
+1. On the left, select **Properties**.
 
    ![Select properties.](../media/2-container-select-properties-metadata.png)
 
@@ -26,23 +26,23 @@ Using the Azure portal, you can view container and blob properties, and any meta
 
    ![Container properties.](../media/2-container-properties.png)
 
-1. On the left, click **Metadata**.
+1. On the left, select **Metadata**.
 
 1. You can now view any metadata for the container.
 
    ![Container metadata.](../media/2-container-metadata.png)
 
-1. On the left, click **Overview**.
+1. On the left, select **Overview**.
 
-1. Click a blob.
+1. Select a blob.
 
 1. You can now view the properties and metadata for that blob.
 
    ![Blob properties and metadata.](../media/2-blob-properties-metadata.png)
 
-## Azure Powershell
+## Azure PowerShell
 
-You can use Powershell to view properties and metadata for containers and Blobs. Some of the main cmdlets you need are:
+You can use PowerShell to view properties and metadata for containers and Blobs. Some of the main cmdlets you need are:
 
 ```powershell
 New-AzStorageContext
@@ -179,7 +179,7 @@ public static async Task ListContainerMetadataAsync(CloudBlobContainer container
 
 ## REST
 
-Using the REST API you can retrieve properties and metadata using HTTP GET and HEAD requests. (For HTTP HEAD requests, only a response headers are returned - not the contents of the blob. This is useful when testing request syntax before retrieving blobs.)
+Using the REST API you can retrieve properties and metadata using HTTP GET and HEAD requests. (For HTTP HEAD requests, only the response headers are returned - not the contents of the blob. This is useful when testing request syntax before retrieving blobs.)
 
 For a container, use this syntax:
 ```

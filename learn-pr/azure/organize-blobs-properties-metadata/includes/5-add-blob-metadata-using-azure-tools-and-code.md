@@ -8,23 +8,23 @@ In this unit, you will review the primary methods for setting this type metadata
 
 Using the Azure portal, you can add and edit container and blob metadata.
 
-1. Sign in to the [Azure portal](https://portal.azure.com), and click **Storage Accounts**.
+1. Sign in to the [Azure portal](https://portal.azure.com), and select **Storage Accounts**.
 
-1. Under **Blob service**, click **Blobs** and select a container.
+1. Under **Blob service**, select **Blobs** and select a container.
 
-1. On the left, click **Metadata**.
+1. On the left, select **Metadata**.
 
-1. Enter a text string in the **KEY** and **VALUE** boxes, and then click **Save**.
+1. Enter a text string in the **KEY** and **VALUE** boxes, and then select **Save**.
 
-1. On the left, click **Overview**.
+1. On the left, select **Overview**.
 
-1. Click a blob.
+1. Select a blob.
 
-1. In the **Metadata** section, enter a text string in the **KEY** and **VALUE** boxes, and then click **Save**.
+1. In the **Metadata** section, enter a text string in the **KEY** and **VALUE** boxes, and then select **Save**.
 
-## Azure Powershell
+## Azure PowerShell
 
-You can use Powershell to add and edit metadata for containers and Blobs, and the commands that you use for viewing metadata are similar to the commands you used to view properties. A key thing to remember is that you must use the `SetMetadata()` method to write your changes to the container or blob.
+You can use PowerShell to add and edit metadata for containers and Blobs, and the commands that you use for viewing metadata are similar to the commands you used to view properties. A key thing to remember is that you must use the `SetMetadata()` method to write your changes to the container or blob.
 
 Here's an example set of commands for adding metadata for a blob called **hazard-tests.docx**, and for the blob's parent container called **safety-reports**:
 
