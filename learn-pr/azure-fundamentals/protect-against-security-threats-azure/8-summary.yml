@@ -2,13 +2,15 @@
 uid: learn.azure.protect-against-security-threats-azure.8-summary
 title: Summary
 metadata:
-  description: Summary
-  ms.date: 09/14/2020
-  author: Randall-Knapp
+  title: Summary
+  description: "Summary"
+  ms.date: 09/29/2021
+  author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  adobe-target: true
+azureSandbox: false
+labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]
