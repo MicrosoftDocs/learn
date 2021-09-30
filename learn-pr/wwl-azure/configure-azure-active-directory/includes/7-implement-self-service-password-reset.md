@@ -1,6 +1,6 @@
 Many helpdesk calls are requests to reset passwords for users. Enabling **Self-service Password Reset** (SSPR) gives the users the ability to bypass the helpdesk and reset their own passwords.
 
-To configure Self-Service Password Reset, you first determine who will be enabled to use self-service password reset. From your existing Azure AD tenant, on the Azure portal under **Azure Active Directory** select **Password reset.**
+To configure Self-Service Password Reset, you first determine who will be enabled to use self-service password reset. From your existing Azure AD tenant, on the Azure portal under **Azure Active Directory (Users)** select **Password reset.**
 
 In the Password reset properties there are three options: **None**, **Selected**, and **All**.
 

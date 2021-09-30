@@ -2,18 +2,19 @@
 uid: learn.student-evangelism.give-receive-effective-feedback
 metadata:
   title: 'Give and receive effective feedback'
-  description: Learn how to give and receive effective feedback.
+  description: In this module, you'll learn how to give and receive effective feedback.
   ms.date: 09/07/2021
   author: interurban
   ms.author: jadenyer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: nextgen
 title: 'Give and receive effective feedback'
-summary: Give and receive effective feedback.
+summary: In this module, you'll learn how to give and receive effective feedback.
 abstract:  | 
   In this module, you will:
   - Explore the characteristics of effective feedback.
-  - Identify the effectiveness and characteristics of wise feedback.
+  - Learn about the effectiveness and characteristics of wise feedback.
   - Learn how to provide and receive effective feedback.
 prerequisites: |
   - An open mind and a willingness to learn about the expectations and responsibilities of mentorship in a technology workspace.

@@ -46,7 +46,7 @@ The above workflow does a few things after a new release is created:
 
 1. A job named `build` runs `npm ci` (named after Continuous Integration)  to install dependencies directly from the `package-lock.json` file.
 1. Once the `build` job succeeds, the job named `publish-gpr` publishes the package.
-1. The workflow publishes the package to the `registry-url: https://npm.pkg.github.com/` using an agiccess token for authentication.
+1. The workflow publishes the package to the `registry-url: https://npm.pkg.github.com/` using an access token for authentication.
 
 ## Use GitHub Container Registry to host and manage Docker container images
 

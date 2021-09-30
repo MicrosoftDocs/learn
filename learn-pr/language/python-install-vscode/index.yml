@@ -9,6 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: nextgen
 title: Set up your Python beginner development environment with Visual Studio Code
 summary: Get started with learning Python by installing and configuring the
   tools you'll need to build real applications.

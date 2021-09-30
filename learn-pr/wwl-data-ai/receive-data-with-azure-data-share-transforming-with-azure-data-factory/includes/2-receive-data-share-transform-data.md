@@ -15,6 +15,4 @@ To complete the following exercises, you must import the NYC Taxi Data dataset i
 ![Download bacpac file](../media/download-bacpack-file.png)
 
 
-A pop-up will appear and click **Save as**, and save the file to a folder on your machine. 
-
-Now that you understand how to receive data with Azure Data Share and transform with Azure Data Factory, in the next unit let’s get some hands-on practice sharing and receiving data.
+A pop-up will appear and click **Save as**, and save the file to a folder on your machine.

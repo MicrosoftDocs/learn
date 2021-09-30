@@ -1,7 +1,7 @@
 Effectively managing endpoints presents a number of challenges. For instance, how do you manage existing investments? How do you provide proper security in the form of access control and encryption? How do you determine which user, device, or app is in compliance based on your corporate requirements? 
 
 Microsoft Endpoint Manager provides the services and tools you need in one location to manage your organization's endpoints by providing:
-- **Cloud security across endpoints** - You can help protect user's devices against threats using Microsoft Zero Trust technology.
+- **Cloud security across endpoints** - You can help protect user's devices against threats using [Microsoft Zero Trust](/security/zero-trust/) technology.
 - **Comprehensive Windows 10 management** - You can simplify automated provisioning, configuration management, and software updates for all your endpoints.
 - **Maximum return on investment** - You can leverage your existing investments to modernize the user experience with Microsoft 365 cloud telemetry.
 
