@@ -29,14 +29,14 @@ To add the Maven Plugin for Azure App Service to your web app, you would add the
 <plugin>
   <groupId>com.microsoft.azure</groupId>
   <artifactId>azure-webapp-maven-plugin</artifactId>
-  <version>2.0.0</version>
+  <version>2.2.0</version>
 </plugin>
 ```
 
 However, the plugin provides a convenient and interactive way to add configurations to your pom file:
 
 ```bash
-mvn com.microsoft.azure:azure-webapp-maven-plugin:2.0.0:config
+mvn com.microsoft.azure:azure-webapp-maven-plugin:2.2.0:config
 ```
 The plugin will prompt you for the information that is required to configure the App Service plan. After you've confirmed your choices, the plugin adds the above plugin element and requisite settings to your project's `pom.xml` file that configure your web app to run in Azure App Service.
 
@@ -53,10 +53,10 @@ The following annotated excerpt from a `pom.xml` file demonstrates some of the s
 <plugin> 
   <groupId>com.microsoft.azure</groupId>  
   <artifactId>azure-webapp-maven-plugin</artifactId>  
-  <version>2.0.0</version>  
+  <version>2.2.0</version>  
   <configuration> 
     <schemaVersion>v2</schemaVersion>  
-    <subscriptionId>b7aef7d5-cb67-46b2-b7e3-464cdfc6a6f5</subscriptionId>  
+    <subscriptionId>11111111-1111-1111-1111-111111111111</subscriptionId>  
     <resourceGroup>learn-9c627899-58ae-4ef5-9630-3336ec7bce0c</resourceGroup>  
     <appName>MyWebApp-1610102860270</appName>  
     <pricingTier>F1</pricingTier>  
