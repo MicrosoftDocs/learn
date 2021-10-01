@@ -57,13 +57,19 @@ Select Azure and click on **Next** button
 
     :::image type="content" source="../media/finish-create-function-app.png" alt-text="Screenshot of Finish creating Function App." lightbox="../media/finish-create-function-app.png":::
 
-8. A publish pop up will be opened after the finish process, click on **Publish** button to publish the function and wait for publish
+8. To update the connection string click on **3 dots** on **hosting** tab and select **Manage Azure App Service settings**
 
-    :::image type="content" source="../media/publish-function.png" alt-text="Screenshot of Publish function." lightbox="../media/publish-function.png":::
+    :::image type="content" source="../media/update-connection-string.png" alt-text="Screenshot of update connection string." lightbox="../media/update-connection-string.png":::
 
-9. Once completion of publish click on **Manage in Azure portal** under Actions section, it's take you to specific function in Azure portal and click on **Configuration** which is under the *Settings* section. There on **Application Settings** you need to provide the *Connection string* to the **Azure Storage** where the **Tracked Objects** are stored. Click on **New Application setting** and use for name: **AzureStorageConnectionString** and for value provide the correct *Connection string*. After that click on **Save** and the **Azure Function** is ready to server the *Bot*, which you'll create next.
+9. this opens the **Application Settings** window hear replace your AzureStorageConnectionString for both **Local** and **Remote** with your AzureStorageConnectionString. once replaced click on ok.
 
-10. To get URL of count and Find, select **Functions** which is under the *Functions* section. here you can find both Count and Find function, select Count function on top side you can find the *Get Function Url* button.
+    :::image type="content" source="../media/replace-conncection-string.png" alt-text="Screenshot of replace connection string." lightbox="../media/replace-conncection-string.png":::
+
+10. Now click on **Publish** button to publish the function and wait for publish.
+
+11. Once completion of publish click on **Manage in Azure portal** under Actions section, it's take you to specific function in Azure portal and click on **Configuration** which is under the *Settings* section. There on **Application Settings** you need to provide the *Connection string* to the **Azure Storage** where the **Tracked Objects** are stored. Click on **New Application setting** and use for name: **AzureStorageConnectionString** and for value provide the correct *Connection string*. After that click on **Save** and the **Azure Function** is ready to server the *Bot*, which you'll create next.
+
+12. To get URL of count and Find, select **Functions** which is under the *Functions* section. here you can find both Count and Find function, select Count function on top side you can find the *Get Function Url* button.
 
 Follow the same procedure to get Find function Url.
 
