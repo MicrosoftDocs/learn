@@ -5,7 +5,7 @@ metadata:
   description: Learn how to develop and securely deploy custom NVIDIA DeepStream applications to NVIDIA-powered IoT Edge devices.
   brand: azure
   ms.date: 10/01/2021
-  author: pdecarlo
+  author: toolboc
   ms.author: pdecarlo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
