@@ -1,6 +1,6 @@
 Azure Databricks supports Uber's Horovod framework to run distributed, deep learning training jobs on Spark.
 
-In this module, you'll learn how to use Azure Databricks with HorovodRunner.
+In this module, you'll learn how to distribute deep learning in Azure Databricks with HorovodRunner.
 
 ## Learning objectives
 
