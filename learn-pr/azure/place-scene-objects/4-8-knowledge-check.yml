@@ -19,7 +19,7 @@ quiz:
         - content: "Prefabs are a mere collection of objects used for organizational purposes."
           isCorrect: false
           explanation: Parent objects can be used for organizational purposes.
-        - content: "Prefab is a component provided by the Mixed Reality Toolkit to manipulate objects on scene."
+        - content: "Prefabs are components provided by the Mixed Reality Toolkit to manipulate objects on scene."
           isCorrect: false
           explanation: The object manipulator component can be used to manipulate objects on scene.
         - content: "Prefabs are reusable components used to propagate changes to all its instances at once."

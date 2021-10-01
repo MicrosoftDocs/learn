@@ -1,6 +1,6 @@
 In the Mixed Reality Toolkit (MRTK), available placement tools allow you to dynamically place holograms on the scene to solve complex spatial placement scenarios. In addition, arranging objects on the scene improves the outer look of the entire application that you're building.
 
-This module series helps you understand some of the easy-to-use features of MRTK, like organizing objects on the scene. In addition, it helps you understand one of the prominent features, called *Solvers*.
+This module series helps you understand some of the easy-to-use features of MRTK, like organizing objects on the scene. In addition, it helps you understand one of the prominent features, called *solvers*.
 
 ## Learning objectives
 

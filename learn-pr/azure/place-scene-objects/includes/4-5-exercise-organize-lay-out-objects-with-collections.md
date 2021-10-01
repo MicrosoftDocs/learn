@@ -24,9 +24,9 @@ The Mixed Reality Toolkit provides a set of tools and components to accelerate y
 
     :::image type="content" source="../media/name-clean-up.png" alt-text="Screenshot that shows how to clean up the duplicated names." lightbox="../media/name-clean-up.png":::
 
-1. In **Hierarchy**, select the **RoverParts** object. Then, in the **Inspector** window, select **Add Component**, and search for and select **GridObjectCollection**. This selection adds the **GridObjectCollection** component to the **RoverParts** object:
+1. In **Hierarchy**, select the **RoverParts** object. Then, in the **Inspector** window, select **Add Component**, and search for and select **GridObjectCollection**. This selection adds the **GridObjectCollection** component to the **RoverParts** object.
 
-    :::image type="content" source="../media/grid-object-collection-progress.png" alt-text="Screenshot that shows the RoverParts object with Add Component Grid Object Collection in progress." lightbox="../media/grid-object-collection-progress.png":::
+    :::image type="content" source="../media/grid-object-collection-progress.png" alt-text="Screenshot that shows the RoverParts object with Add Component grid object collection in progress." lightbox="../media/grid-object-collection-progress.png":::
 
 1. Configure the **GridObjectCollection** component values as follows:
 

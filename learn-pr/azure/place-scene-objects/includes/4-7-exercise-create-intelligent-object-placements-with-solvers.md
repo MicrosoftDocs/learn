@@ -10,11 +10,11 @@ The MRTK's solvers are located in the MRTK SDK folder. To see the available solv
 
 Use the directional indicator solver to direct the user to objects. Here's how:
 
-1. In the **Project** window, go to **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs**. Drag the **Chevron** prefab into the **Hierarchy** window, and set its Transform **Position** to X = 0, Y = 0, Z = 2 to position it near the **RoverExplorer** object:
+1. In the **Project** window, go to **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs**. Drag the **Chevron** prefab into the **Hierarchy** window, and set its Transform **Position** to X = 0, Y = 0, Z = 2 to position it near the **RoverExplorer** object.
 
     :::image type="content" source="../media/select-chevron-prefab.png" alt-text="Screenshot that shows the newly added Chevron prefab selected." lightbox="../media/select-chevron-prefab.png":::
 
-1. Rename the newly added Chevron object to **Indicator**. Then, in the **Inspector** window, select **Add Component** to add the **DirectionalIndicator**:
+1. Rename the newly added Chevron object to **Indicator**. Then, in the **Inspector** window, select **Add Component** to add the **DirectionalIndicator**.
 
     :::image type="content" source="../media/add-directional-indicator.png" alt-text="Screenshot that shows the DirectionalIndicator solver component added." lightbox="../media/add-directional-indicator.png":::
 
@@ -50,7 +50,7 @@ Use the tap to place solver to reposition objects. Here's how:
 
     :::image type="content" source="../media/add-solver.png" alt-text="Screenshot that shows the tap to place solver component added and configured." lightbox="../media/add-solver.png":::
 
-1. With the **RoverAssembly** object still selected in the **Hierarchy** window, in the **Inspector** window, locate the **On Placing Started ()** event. Select the **+** icon to add a new event:
+1. With the **RoverAssembly** object still selected in the **Hierarchy** window, in the **Inspector** window, locate the **On Placing Started ()** event. Select the **+** icon to add a new event.
 
     :::image type="content" source="../media/add-start-event.png" alt-text="Screenshot that shows the tap to place On Placing Started event added." lightbox="../media/add-start-event.png":::
 
@@ -72,7 +72,7 @@ Use the tap to place solver to reposition objects. Here's how:
 
     :::image type="content" source="../media/position-ground-cube.png" alt-text="Screenshot that shows the temporary ground cube object added and positioned." lightbox="../media/position-ground-cube.png":::
 
-1. With the temporary cube still selected in **Hierarchy**, in the **Inspector** window, use the **Layers** dropdown list to change the cube's layer setting. You want to include only the **Spatial Awareness** layer:
+1. With the temporary cube still selected in **Hierarchy**, in the **Inspector** window, use the **Layers** dropdown list to change the cube's layer setting. You want to include only the **Spatial Awareness** layer.
 
     :::image type="content" source="../media/spatial-awareness.png" alt-text="Screenshot that shows the temporary ground cube object layer set to Spatial Awareness." lightbox="../media/spatial-awareness.png":::
 
