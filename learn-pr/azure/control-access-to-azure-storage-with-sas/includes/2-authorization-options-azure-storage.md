@@ -37,7 +37,7 @@ We recommend that you manage your storage keys with Azure Key Vault. It's then e
 
 ### Shared access signature
 
-A SAS lets you grant granular access to files in Azure Storage. This control includes the level of access like read only or read and write. You also set the expiration time, after which the SAS no longer enables the client to access the chosen resources.  A shared access signature is a key that grants permission to a storage resource, and should be protected in the same manner as an account key.
+A SAS lets you grant granular access to files in Azure Storage, such as read-only or read-write access, expiration time, after which the SAS no longer enables the client to access the chosen resources.  A shared access signature is a key that grants permission to a storage resource, and should be protected in the same manner as an account key.
 
 There are three types of shared access signatures:
 
@@ -45,6 +45,6 @@ There are three types of shared access signatures:
 - **Service SAS**: A service SAS is secured using a storage account key. A service SAS delegates access to a resource in any one of four Azure Storage services: Blob, Queue, Table, or File.  
 - **Account SAS**: An account SAS is secured with a storage account key. An account SAS has the same controls as a service SAS, but can also control access to service-level operations, such as Get Service Stats.
 
-You create a SAS ad-hoc, by specifying all the options you need to control, includingstart time, expiration time, and permissions.
+You create a SAS ad-hoc, by specifying all the options you need to control, including start time, expiration time, and permissions.
 
 If you plan to create a service SAS, there is also an option to associate it with a stored access policy. A stored access policy can be associated with up to five SASs at a time. You can control access and expiration at the stored access policy level. This is a good approach if you need to have granular control to change the expiration, or to revoke a SAS. The only way to revoke or change an ad-hoc SAS is to change the storage account keys.
