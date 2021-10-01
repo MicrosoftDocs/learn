@@ -3,7 +3,7 @@ uid: learn.azure.protect-against-security-threats-azure
 metadata:
   title: Protect against security threats on Azure
   description: "Learn how Azure can help you protect the workloads that you run both in the cloud and in your on-premises datacenter. Prepare for AZ-900."
-  ms.date: 09/28/2021
+  ms.date: 09/29/2021
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial

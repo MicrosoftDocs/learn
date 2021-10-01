@@ -13,4 +13,4 @@ In this module, you will:
 ## Prerequisites
 
 - Basic familiarity with Azure storage and Blob objects
-- Experience in basic Azure web app development and deployment
+- Experience in basic Azure development

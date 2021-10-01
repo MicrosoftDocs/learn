@@ -4,7 +4,7 @@ title: Detect and respond to security threats by using Azure Sentinel
 metadata:
   title: Detect and respond to security threats by using Azure Sentinel
   description: "Learn how Azure Sentinel aggregates security data from many different sources and provides additional capabilities for threat detection and response."
-  ms.date: 09/28/2021
+  ms.date: 09/29/2021
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
