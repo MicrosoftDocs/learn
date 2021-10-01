@@ -8,12 +8,14 @@ StereoKit focuses on non-game Mixed Reality use cases, making it a better fit fo
 
 * The StereoKit model format must be in .gltf, .glb, .obj, .stl, ASCII.ply and procedural.
 
-* The StereoKit Texture format must be in .jpg, .png, .tga, .bmp, .psd, .gif, .hdr, .pic, equirectangular cubemap, procedural
+* The StereoKit Texture format must be in .jpg, .png, .tga, .bmp, .psd, .gif, .hdr, .pic, equirectangular cubemap, procedural.
 
 * Stereokit builds your app to a device in a matter of seconds.
 
 * Stereokit supports flat screen mode with input emulation, powerful UI and interactions for easy development.
 
-* 
+* Assets are loaded at runtime, allowing computations to proceed faster.
 
+* Physics - It enables the 3D object to function as a real-world object, along with all physical constraints.
 
+* StereoKit, by default, uses a Flexible shader or material system with a built-in PBR.
