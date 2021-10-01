@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - X86 Based System running Ubuntu 18.04 OS
   - RTX2080, RTX3080, T4, or A100 NVIDIA Graphics Card
-iconUrl: /learn/achievements/student-evangelism/introduction-to-iot.svg
+iconUrl: /learn/achievements/nvidia/setup-and-configuration-of-a-nvidia-deepstream-development-environment.svg
 levels:
 - intermediate
 roles:
@@ -32,4 +32,4 @@ units:
 - learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.1-introduction
 - learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.2-introduction-to-intelligent-video-analytics
 badge:
-  uid: learn.introduction-to-iot.badge
+  uid: learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.badge

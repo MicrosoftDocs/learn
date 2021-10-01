@@ -24,7 +24,7 @@ prerequisites: |
   - Familiarity with container workloads / Docker
   - Familiarity with Azure IoT Edge / IoT Hub 
   - Completion of the prerequisite module: "Introduction to DeepStream 6.0 Graph Composer with Microsoft Azure"
-iconUrl: /learn/achievements/student-evangelism/introduction-to-iot.svg
+iconUrl: /learn/achievements/nvidia/nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.svg
 levels:
 - intermediate
 roles:
@@ -42,4 +42,4 @@ products:
 units:
 - learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.1-introduction
 badge:
-  uid: learn.introduction-to-iot.badge
+  uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.badge
