@@ -1,7 +1,7 @@
 This reference architecture shows how to implement a hub-spoke topology in Azure. The hub is a virtual network in Azure that acts as a central point of connectivity to your on-premises network. The spokes are virtual networks that peer with the hub, and can be used to isolate workloads. Traffic flows between the on-premises datacenter and the hub through an ExpressRoute or VPN gateway connection.
 
 > [!div class="mx-imgBorder"]
-> ![A sample network topology of a Hub and Spoke running on Azure.](../media/hub-spoke.png)
+> [ ![A sample network topology of a Hub and Spoke running on Azure.](../media/hub-spoke.png) ](../media/hub-spoke-enlarged.png#lightbox)
 
 Workloads deployed in different environments, such as development, testing, and production, that require shared services such as DNS, IDS, NTP, or AD DS. Shared services are placed in the hub virtual network, while each environment is deployed to a spoke to maintain isolation. Workloads that do not require connectivity to each other, but require access to shared services.
 Enterprises that require central control over security aspects, such as a firewall in the hub as a DMZ, and segregated management for the workloads in each spoke.
