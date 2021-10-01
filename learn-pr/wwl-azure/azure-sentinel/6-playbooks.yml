@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-sentinel.playbooks
+title: Configure playbooks
+metadata:
+  title: Configure playbooks
+  description: "Configure playbooks"
+  ms.date: 10/01/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-playbooks.md)]
