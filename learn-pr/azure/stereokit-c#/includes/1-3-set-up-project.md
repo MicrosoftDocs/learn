@@ -1,11 +1,11 @@
 The first step to set up a project on immersive experience for Windows Mixed Reality using the StereoKit requires Visual Studio 2019. 
 
-## Installing the visual studio for StereoKit
+## Steps to install visual studio for StereoKit
 
-1. You can download the free edition of Visual Studio, often known as "Visual Studio Community," if you don't already have a Visual Studio membership.
+1. Download the free edition of Visual Studio Community and ensure get the Visual Studio membership if you don't have it already.
 Figure 1-9 represents how the download button may appear.
-If you already have a Visual Studio subscription. You can download Visual Studio at the following link: https://developer.microsoft.com/en-us/windows/downloads [SS]
-2. Save the Visual Studio installer to your preferred path. After the download is complete, you can start the installation process by running the Visual Studio installer. [SS]shows how the installation appears in the Microsoft Edge browser when you execute it. [SS]
+If you have a Visual Studio subscription, You can proceed to download Visual Studio by clicking onto the provided following link: https://developer.microsoft.com/en-us/windows/downloads [SS]
+2. Save the Visual Studio installer to your desired path. After the download is complete, you can start the installation process by running the Visual Studio installer. [SS]shows how the installation appears in the Microsoft Edge browser when you execute it. [SS]
 3. When you run the Visual Studio installation, you'll see a few seconds of initialization followed by a feature selection option, as shown in (SS). Select the ".NET Desktop development and Universal Windows Platform development (for HoloLens)" checkbox in Visual Studio 2019's features list. After making the necessary selections, click "Next" or "Install."[SS]
 4. Visual Studio will begin downloading and installing your selected features when you click "Install." Visual Studio is a huge application that could take several minutes to download and install depending on your internet connection. Be prepared for a lengthy installation process! You may be requested to restart your computer once the installation process is complete. By launching Visual Studio after restarting, you may verify that the installation was successful. Depending on your Visual Studio edition, the welcome screen should look like the one shown in [SS] when you first open it.[SS]
 
