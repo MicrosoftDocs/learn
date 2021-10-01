@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-monitor.alerts
-title: Enable Azure monitor alerts
+title: Enable Azure monitor Alerts
 metadata:
-  title: Enable Azure monitor alerts
-  description: "Enable Azure monitor alerts"
+  title: Enable Azure monitor Alerts
+  description: "Enable Azure monitor Alerts"
   ms.date: 10/01/2021
   author: wwlpublish
   ms.author: roberts

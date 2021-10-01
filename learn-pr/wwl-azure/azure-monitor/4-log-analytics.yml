@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-monitor.log-analytics
-title: Enable log analytics
+title: Enable Log Analytics
 metadata:
-  title: Enable log analytics
-  description: "Enable log analytics"
+  title: Enable Log Analytics
+  description: "Enable Log Analytics"
   ms.date: 10/01/2021
   author: wwlpublish
   ms.author: roberts
