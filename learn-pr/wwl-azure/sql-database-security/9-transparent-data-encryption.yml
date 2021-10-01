@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sql-database-security.transparent-data-encryption​
+title: Implement transparent data encryption​
+metadata:
+  title: Implement transparent data encryption​
+  description: "Implement transparent data encryption​"
+  ms.date: 10/01/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-transparent-data-encryption.md)]
