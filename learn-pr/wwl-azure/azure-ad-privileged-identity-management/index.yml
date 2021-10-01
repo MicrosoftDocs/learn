@@ -3,7 +3,7 @@ uid: learn.wwl.azure-ad-privileged-identity-management
 metadata:
   title: Configure Azure AD privileged identity management
   description: "Ensure that your privileged identities have extra protection and are accessed only with the least amount of access needed to do the job."
-  ms.date: 09/28/2021
+  ms.date: 10/01/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial

@@ -6,7 +6,7 @@ Elevated access includes job roles that need greater access, including support, 
 The following diagram of the elevated access workflow.
 
 > [!div class="mx-imgBorder"]
-> ![Elevated access PIM workflow.](../media/az500-privileged-identity-management-workflow.png)
+> [ ![Elevated access PIM workflow.](../media/az500-privileged-identity-management-workflow.png) ](../media/az500-privileged-identity-management-workflow.png#lightbox)
 
 ## JIT administrator access
 Historically, we could assign an employee to an administrative role through the Azure portal or through Windows PowerShell and that employee would be a permanent administrator; their elevated access would remain active in the assigned role.
