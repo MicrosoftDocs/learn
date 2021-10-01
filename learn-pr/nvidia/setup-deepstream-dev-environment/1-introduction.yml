@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to setup and configuration of a NVIDIA DeepStream development environment.
+  author: pdecarlo
+  ms.author: pdecarlo
+  ms.date: 10/01/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
