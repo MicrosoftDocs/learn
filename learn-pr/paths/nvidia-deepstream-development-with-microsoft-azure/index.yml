@@ -38,4 +38,4 @@ modules:
 - learn.nvidia.introduction-to-nvidia-deepstream-graph-composer-with-microsoft-azure
 - learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure
 trophy:
-  uid: learn.oxford.ai-edge-engineer.trophy
+  uid: learn.nvidia.nvidia-deepstream-development-with-microsoft-azure.trophy
