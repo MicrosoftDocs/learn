@@ -43,11 +43,11 @@ Let's deploy our Node.js application with `az webapp up`. This command will pack
 First, we need to gather some information about our web app resource. Run these commands to set shell variables that contain our app's name, resource group name, plan name, sku, and location. These use different `az` commands to request the information from Azure; `az webapp up` needs these values to target our existing web app.
 
 ```bash
-APPNAME=$(az webapp list --query [0].name --output tsv)
-APPRG=$(az webapp list --query [0].resourceGroup --output tsv)
-APPPLAN=$(az appservice plan list --query [0].name --output tsv)
-APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
-APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
+export APPNAME=$(az webapp list --query [0].name --output tsv)
+export APPRG=$(az webapp list --query [0].resourceGroup --output tsv)
+export APPPLAN=$(az appservice plan list --query [0].name --output tsv)
+export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
+export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
 ```
 
 Now, run `az webapp up` with the appropriate values. Make sure you are in the `helloworld` directory before running this command.
@@ -106,11 +106,11 @@ Let's deploy our Python application with `az webapp up`. This command will packa
 First, we need to gather some information about our web app resource. Run these commands to set shell variables that contain our app's name, resource group name, plan name, sku, and location. These use different `az` commands to request the information from Azure; `az webapp up` needs these values to target our existing web app.
 
 ```bash
-APPNAME=$(az webapp list --query [0].name --output tsv)
-APPRG=$(az webapp list --query [0].resourceGroup --output tsv)
-APPPLAN=$(az appservice plan list --query [0].name --output tsv)
-APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
-APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
+export APPNAME=$(az webapp list --query [0].name --output tsv)
+export APPRG=$(az webapp list --query [0].resourceGroup --output tsv)
+export APPPLAN=$(az appservice plan list --query [0].name --output tsv)
+export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
+export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
 ```
 
 Now, run `az webapp up` with the appropriate values. Make sure you are in the `BestBikeApp` directory before running this command.
@@ -129,5 +129,3 @@ Let's browse to your application to see it live. The last line of text output fr
 Once it loads, you'll see the greeting message from your app &mdash; you've deployed successfully!
 
 ::: zone-end
-
-
