@@ -35,5 +35,6 @@ products:
 - azure-resource-manager
 - azure-virtual-machines
 units:
+- learn.nvidia.introduction-to-nvidia-deepstream-graph-composer-with-microsoft-azure.1-introduction
 badge:
   uid: learn.introduction-to-iot.badge

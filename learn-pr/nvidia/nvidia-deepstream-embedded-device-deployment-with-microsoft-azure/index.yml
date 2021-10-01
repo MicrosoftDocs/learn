@@ -40,5 +40,6 @@ products:
 - azure-resource-manager
 - azure-virtual-machines
 units:
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.1-introduction
 badge:
   uid: learn.introduction-to-iot.badge
