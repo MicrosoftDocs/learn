@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.manage-secrets-in-java-applications-zero-trust
+metadata:
+  title: Manage secrets in Java applications - Zero Trust and Zero Secrets
+  description: In this module, you'll learn about managing secrets in your Java applications on Azure. You'll explore best practices like Zero Trust and Zero Secrets, and see how to apply them to a hands-on Java project using Azure Key Vault.
+  author: judubois
+  ms.author: judubois
+  ms.date: 09/30/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage secrets in Java applications - Zero Trust and Zero Secrets
+summary: Learn best practices to secure your Java applications on Azure, and apply them using Azure Key Vault.
+abstract: | 
+ By the end of this tutorial, you'll be able to:
+  - Understand best practices like Zero Trust in order to secure any application running in the cloud.
+  - Apply those practices using Azure Key Vault on a Java project running on Azure.
+prerequisites:  |
+  - Familiarity with developing and running Java applications
+  - Beginner-level experience with cloud infrastructure
+iconUrl: /learn/achievements/manage-secrets-in-java-applications-zero-trust.svg
+levels:
+- beginner
+roles:
+- developer
+- administrator
+products:
+- azure
+- azure-spring-cloud
+- azure-functions
+- azure-app-service
+- azure-key-vault
+units:
+- learn.manage-secrets-in-java-applications-zero-trust.1-introduction
+- learn.manage-secrets-in-java-applications-zero-trust.2-what-are-secrets-and-how-to-handle-them-in-java
+- learn.manage-secrets-in-java-applications-zero-trust.3-coding-a-java-application-that-uses-secrets
+- learn.manage-secrets-in-java-applications-zero-trust.4-introduction-to-azure-key-vault
+- learn.manage-secrets-in-java-applications-zero-trust.5-securing-a-java-application-from-an-it-operator-perspective
+- learn.manage-secrets-in-java-applications-zero-trust.6-securing-a-java-application-from-a-java-developer-perspective
+- learn.manage-secrets-in-java-applications-zero-trust.7-knowledge-check
+- learn.manage-secrets-in-java-applications-zero-trust.8-summary
+badge:
+  uid: learn.manage-secrets-in-java-applications-zero-trust.badge
