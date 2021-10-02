@@ -1,33 +1,34 @@
 ### YamlMime:Module
 uid: learn.azure.create-text-to-speech-app
 metadata:
-  title: Create your first Azure Cognitive Services Text-to-Speech application
-  description: In this module, you'll learn how to use Azure Cognitive Services to create a text-to-speech application.
-  ms.date: 10/01/2021
+  title: Insert and query data in your Azure Cosmos DB database
+  description: Discover the Azure Cosmos DB Data Explorer tool that enables you to add or modify data. Create stored procedures in JavaScript.
+  ms.date: 09/24/2018
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create your first Azure Cognitive Services Text-to-Speech application
-summary: "Microsoft's Azure Cognitive Services provide developers with APIs to create applications that take advantage of Azure's text-to-speech features. In this module, you'll learn how to use Azure Cognitive Services to create a text-to-speech application that uses both plain text and Speech Synthesis Markup Language (SSML) to create audio files."
+title: Insert and query data in your Azure Cosmos DB database
+summary: Learn how to add data to your database and query NoSQL data in Azure Cosmos DB. 
 abstract: |
   In this module, you will:
-  - Create an Azure Cognitive Services account
-  - Create a command-line application that converts text to speech
-  - Create a command-line application that converts SSML to speech
+  - Create product catalog documents in the Data Explorer
+  - Perform Azure Cosmos DB queries
+  - Create and run operations on your documents by using stored procedures
 prerequisites: |
-- Basic familiarity with development tools
-iconUrl: /learn/achievements/generic-badge.svg
+  - Have an understanding of databases and queries
+  - Beginner-level experience with Azure Cosmos DB: creating accounts, databases, and containers; managing partitions
+iconUrl: /learn/achievements/access-data-with-cosmos-db-and-sql-api.svg
 levels:
 - beginner
 roles:
 - developer
-- ai-engineer
+- solution-architect
 products:
 - azure
+- azure-cosmos-db
 - azure-clis
-- azure-cognitive-services
-- azure-text-speech
+- azure-portal
 units:
 - learn.azure.create-text-to-speech-app.introduction
 - learn.azure.create-text-to-speech-app.create-azure-cognitive-services-account
