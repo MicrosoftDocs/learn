@@ -16,7 +16,7 @@ The first thing we need to do is create an Azure logic app. To do that, we need 
 
 ## Configure your Azure Logic App resource
 
-Now that the Azure Logic Apps resource has been located, let's configure basic settings, like its resource group and location.
+Let's configure basic settings, like resource group and location.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -33,17 +33,38 @@ Now that the Azure Logic Apps resource has been located, let's configure basic s
 
     [!INCLUDE [](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Select **Review + create** > **Create**. Wait until the resource is deployed. The **Overview** pane for your Logic App appears, and displays the resources that are created during employment.
+1. Select **Review + create** and then select **Create**. The Deployment pane displays the resources that are created.
 
 ## Use a template for your Azure logic app
 
-When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch.
+Now that we have our logic app created, we need to open Logic Apps Designer to add a trigger. When you create an Azure logic app, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch.
 
 1. When deployment has succeeded, select **Go to resource**. The **Logic App (Standard)** pane for your logic app appears.
 
+1. In the Logic App menu, select **Events**, and then select **Logic Apps**. The **Logic Apps Designer** page appears. 
+ 
+1. In the command bar, select **Templates**. The collection of common triggers appears. 
+
+1. Under the *Start with a common trigger* section, select the **When a new tweet is posted** polling trigger from the Twitter connector. 
+
 ## Create a Twitter trigger
 
-Now that we have our logic app created, we need to open Logic Apps Designer to add a trigger. We're going to use the **When a new tweet is posted** polling trigger from the Twitter connector. There are three required parameters:
+Now, let's create the trigger and provide values for all required parameters.
+ 
+1. In the dialog box, select **Sign in**.
+ 
+A **Twitter** dialog box prompts you to enter:
+ 
+    | Setting | Value |
+    |---|---|
+    | Connection name | ShoeTrackerTwitterConnection |
+    | Authentication Type | Accept default (Use default shared application)|
+    
+1. Sign in with your existing Twitter account. This establishes the logic app connection to your Twitter account.
+ 
+1. When the Twitter dialog box reappears showing you have created a valid connection, select **Continue**. The **When a new tweet is posted** dialog box appears.
+ 
+1. There are three required parameters:
 
 - **Search text:** Text to look for in the tweet text. You can include a hashtag character at the beginning of the search text to search for hashtags.
 - **Frequency:** Unit of time for search frequency. For example, `Second`, `Minute`, `Hour`, or `Day`.
@@ -52,33 +73,19 @@ Now that we have our logic app created, we need to open Logic Apps Designer to a
 > [!NOTE]
 > If you do not have a Twitter account and prefer not to create one, use the following substitutions. Substitute the **When a feed item is published** trigger from the RSS connector. Set the **RSS feed URL** to `https://blog.feedspot.com/reuters_rss_feeds/`, the **Interval** to `1`, and the **Frequency** to `Minute`. The disadvantage of this approach is that new articles appear infrequently in RSS feeds so you may have to wait a while before this trigger activates.
 
-Now, let's create the trigger and provide values for all required parameters.
-
-1. In the Logic App menu, select **Events**, and then select **Logic Apps**. The **Logic Apps Designer** page appears. 
- 
-1. In the command bar, select **Templates**. The collection of common triggers appears. 
-
-1. Under the *Start with a common trigger* section, select the **When a new tweet is posted** trigger. A **Twitter** dialog box prompts you to enter:
- 
-    | Setting | Value |
-    |---|---|
-    | Connection name | ShoeTrackerTwitterConnection |
-    | Authentication Type | Accept default (Use default shared application)|
-    
-1. Sign in with your existing Twitter account.
 
 1. The Twitter **When a new tweet is posted** dialog box appears. Enter the following values:
 
     | Setting | Value |
     |---|---|
-    | Search text | Athletic Shoe |
+    | Search text | Shoe |
     | How often do you want to check for new items? | 1 |
     | (Frequency) | Minute |
     | Add new parameter | Accept default (blank). |   
 
-1. In the command bar, select **Save As**. The **Create a logic app** pane apears. 
+1. In the command bar, select **Save As**. The **Create a logic app** pane appears. 
  
-1. Enter the name of your logic app (ShoeTrackerNNN where NNN represents a unique ID, such as your initials and a numer to provide a unique identifier.
+1. Enter the name of your logic app (ShoeTrackerNNN where NNN represents a unique ID, such as your initials and a number to provide a unique identifier.
 
 1. Select **Create**.
 
@@ -86,7 +93,7 @@ Now, let's create the trigger and provide values for all required parameters.
 
 At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the **Runs history** table.
 
-1. In the Logic App navigation menu, select **Overview**. You may need to scroll to the leftto see the navigation menu or you can use your browser's search function to find the word "overview" on the page.
+1. In the Logic App navigation menu, select **Overview**. You may need to scroll to the left to see the navigation menu or you can use your browser's search function to find the word "overview" on the page.
 
 1. Select **Refresh** once a minute until you see a row in the **Runs history** table.
 
