@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.create-your-first-text-to-speech-app
+uid: learn.azure.create-text-to-speech-app
 metadata:
   title: Create your first Azure Cognitive Services Text-to-Speech application
   description: In this module, you'll learn how to use Azure Cognitive Services to create a text-to-speech application.
@@ -29,13 +29,13 @@ products:
 - azure-cognitive-services
 - azure-text-speech
 units:
-- learn.azure.create-your-first-text-to-speech-app.introduction
-- learn.azure.create-your-first-text-to-speech-app.create-azure-cognitive-services-account
-- learn.azure.create-your-first-text-to-speech-app.exercise-create-azure-cognitive-services-account
-- learn.azure.create-your-first-text-to-speech-app.create-text-to-speech-app-using-text
-- learn.azure.create-your-first-text-to-speech-app.exercise-create-text-to-speech-app-using-text
-- learn.azure.create-your-first-text-to-speech-app.create-text-to-speech-app-using-ssml
-- learn.azure.create-your-first-text-to-speech-app.exercise-create-text-to-speech-app-using-ssml
-- learn.azure.create-your-first-text-to-speech-app.summary
+- learn.azure.create-text-to-speech-app.introduction
+- learn.azure.create-text-to-speech-app.create-azure-cognitive-services-account
+- learn.azure.create-text-to-speech-app.exercise-create-azure-cognitive-services-account
+- learn.azure.create-text-to-speech-app.create-text-to-speech-app-using-text
+- learn.azure.create-text-to-speech-app.exercise-create-text-to-speech-app-using-text
+- learn.azure.create-text-to-speech-app.create-text-to-speech-app-using-ssml
+- learn.azure.create-text-to-speech-app.exercise-create-text-to-speech-app-using-ssml
+- learn.azure.create-text-to-speech-app.summary
 badge:
-  uid: learn.azure.create-your-first-text-to-speech-app.badge
+  uid: learn.azure.create-text-to-speech-app.badge
