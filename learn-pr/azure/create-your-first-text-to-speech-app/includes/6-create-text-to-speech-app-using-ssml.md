@@ -18,9 +18,7 @@ SSML files use XML syntax, and the root element for an SSML file is a `<speak>` 
 
 ### Specifying different voices
 
-To specify different voices, you would wrap text within different `<voice>` elements that are contained with the parent `<speak>` element, and you would specify the voice to use by adding a `name` attribute to the `<voice>` element.
-
-which might resemble the following excerpt.
+To specify different voices, you would wrap text within different `<voice>` elements that are contained with the parent `<speak>` element, and you would specify the voice to use by adding a `name` attribute to the `<voice>` element, which might resemble the following excerpt.
 
 ```xml
 <speak xmlns="http://www.w3.org/2001/10/synthesis" version="1.0" xml:lang="en-US">
@@ -43,13 +41,13 @@ which might resemble the following excerpt.
 </speak>
 ```
 
-> ![NOTE]
+> [!NOTE]
 > 
 > For a list of voices that you can use, see the **Text-to-speech** section of [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support#text-to-speech).
 
 ### Adjusting the speaking rate and pitch
 
-To specify a different speaking rate or pitch, you would enclose text within a `<prosody>` element, and you would specify the rate or pitch by those eponymous attributes to the `<prosody>` element.
+To specify a different speaking rate or pitch, you would enclose text within a `<prosody>` element, and you would specify the rate or pitch by those respective attributes, as demonstrated in the following example.
 
 ```xml
 <speak xmlns="http://www.w3.org/2001/10/synthesis" version="1.0" xml:lang="en-US">
@@ -123,7 +121,7 @@ If your application requires words that Azure Cognitive Services' text-to-speech
 </speak>
 ```
 
-> ![NOTE]
+> [!NOTE]
 > 
 > For more information about working with phonetic alphabets, see [Speech service phonetic sets](/azure/cognitive-services/speech-service/speech-ssml-phonetic-sets).
 

@@ -199,13 +199,13 @@ To specify the voice, use the following steps.
 1. Locate the following line of code.
 
     ```csharp
-    var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);` 
+    var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
     ```
 
 1. Add the following line after the previous line.
 
     ```csharp
-    speechConfig.SpeechSynthesisVoiceName("en-SG-WayneNeural");` 
+    speechConfig.SpeechSynthesisVoiceName("en-SG-WayneNeural");
     ```
 
 1. The resulting section of code should look like the following example.

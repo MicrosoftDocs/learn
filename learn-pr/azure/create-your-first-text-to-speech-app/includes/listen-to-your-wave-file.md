@@ -18,4 +18,4 @@ In order to listen to the WAVE file that your application created, you will firs
 
     [![Screenshot showing the file download link.](../media/5-cloud-shell-file-download-small.png)](../media/5-cloud-shell-file-download.png#lightbox)
 
-1. Download the **Shakespeare.wav** file to your computer, when you can listen to it with your operating system's audio player.
+1. Download the **Shakespeare.wav** file to your computer, where you can listen to it with your operating system's audio player.
