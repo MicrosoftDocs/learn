@@ -2,10 +2,13 @@ Now that you created an Azure Kubernetes Service (AKS) cluster with the policy a
 
 ## Types of Azure Policies for AKS
 
-There are two types of Azure Policies that can be applied to AKS:
+There are two types of Azure Policies that can be applied to AKS: cluster policies or workload policies. 
 
-1. Cluster policies eg Authorized IP ranges
-1. Workload policies eg Allow only trusted registries
+Cluster policies cover the cluster itself, not the workload running on the cluster. You would configure these policies to enforce cluster configuration. Examples of these policies include [Authorized IP ranges should be defined on Kubernetes Services](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F0e246bcf-5f6f-4f87-bc6f-775d4712c7ea) and [Role-Based Access Control (RBAC) should be used on Kubernetes Services](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fac4a19c2-fa67-49b4-8ae5-0b2e78c49457).
+
+Workload policies cover the applications running in your cluster. Workload policies are used to enforce configuration inside the Kubernetes cluster. These policies rely on the Azure policy for Kubernetes add-on to function correctly. Examples of these policies include [Kubernetes cluster containers should only use allowed images](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Ffebd0533-8e55-448f-b837-bd0e06f16469) and [Kubernetes cluster pods should only use allowed volume types](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F16697877-1118-4fb1-9b65-9898ec2509ec). 
+
+It is useful to think about the Azure policies for Kubernetes this way. They allow you to distinguish between policies impacting the cluster versus the application running on the cluster. It is worth noting that these different policy types are not distinguished during the policy discovery.
 
 ## Discovering built-in Azure policies for Kubernetes
 
