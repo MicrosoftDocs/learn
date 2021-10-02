@@ -16,8 +16,9 @@ abstract: |
   - Perform Azure Cosmos DB queries
   - Create and run operations on your documents by using stored procedures
 prerequisites: |
-  - Have an understanding of databases and queries
-  - Beginner-level experience with Azure Cosmos DB: creating accounts, databases, and containers; managing partitions
+  - Create an Azure Cognitive Services account
+  - Create a command-line application that converts text to speech
+  - Create a command-line application that converts SSML to speech
 iconUrl: /learn/achievements/access-data-with-cosmos-db-and-sql-api.svg
 levels:
 - beginner
