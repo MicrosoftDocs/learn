@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.azure.create-text-to-speech-app
 metadata:
-  title: Insert and query data in your Azure Cosmos DB database
-  description: Discover the Azure Cosmos DB Data Explorer tool that enables you to add or modify data. Create stored procedures in JavaScript.
-  ms.date: 09/24/2018
+  title: Create your first Azure Cognitive Services Text-to-Speech application
+  description: In this module, you'll learn how to use Azure Cognitive Services to create a text-to-speech application.
+  ms.date: 10/01/2021
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
