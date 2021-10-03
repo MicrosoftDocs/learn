@@ -1,4 +1,4 @@
-In this exercise, you'll create an application that uses continuoust recognition to transcribe the sample audio file that you downloaded in the previous exercise.
+In this exercise, you'll create an application that uses continuous recognition to transcribe the sample audio file that you downloaded in the previous exercise.
 
 ## Modify the code for your text-to-speech application
 

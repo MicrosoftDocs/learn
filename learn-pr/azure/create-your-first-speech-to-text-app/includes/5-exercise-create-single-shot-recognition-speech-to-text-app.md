@@ -33,7 +33,7 @@ In the Cloud Shell on the right, run the following command to download a sample 
 curl https://aks.ms/TBD -o Shakespeare.wav
 ```
 
-You'll use this WAVE file for the application this exercise and the application in the next exercise.
+You'll use this WAVE file for the application in this exercise, and the application in the next exercise.
 
 ## Add the code for your text-to-speech application
 
