@@ -18,8 +18,6 @@ You can nest templates in other templates, too. Suppose the preceding file was n
 
 :::code language="yaml" source="code/5-stages.yml" highlight="13, 17" :::
 
-<!-- TODO check if the above works given the job names are repeated but are in different stages -->
-
 When you nest templates, or reuse them multiple times in a single pipeline, you need to be careful that you don't accidentally use the same name multiple times. For example, each job within a stage needs its own name, so if you define the job name in a template then you can't reuse it multiple times in the same stage.
 
 > [!NOTE]
@@ -58,67 +56,17 @@ You can also use parameters when you assign names to your jobs and stages in pip
 
 :::code language="yaml" source="code/5-jobs-parameters.yml" highlight="7, 13" :::
 
-<!-- TODO here down -->
+## Conditions
 
-## Conditions and how you can switch on/off tasks for an environment based on a variable or parameter
+You can use pipeline *conditions* to specify whether a step, job, or even stage should run depending on a value you specify. Template parameters and pipeline conditions can be used together to enable you to customize your deployment process for many different situations.
 
-An additional feature you can use in your pipelines and pipeline templates is the ability to add conditions in your pipeline. Suppose in your test environment you want to run the same deployment stages as for your production environment, but you want to skip a certain stage. For instance you only want to run the what-if stage for your production environment. In the below example we add a condition that checks for the value of the environment parameter and only when it has a value of 'Prod' will we run the Preview stage: 
+For example, imagine you define a pipeline template that runs a script steps. You'll reuse the template for each of your environments. When you deploy your production environment, you want to run an additional step. Here's how you can achieve that by using the `if` macro:
 
-```YAML
-parameters: 
-- name: environment
-  default: 'PreProd'
+:::code language="yaml" source="code/5-script-conditions.yml" highlight="12" :::
 
-stages: 
-- stage: Validate${{parameters.environment}}
-  variables: 
-  - group: ToyWebsite${{parameters.environment}}
-  displayName: Validate${{parameters.environment}}
-  jobs:
-  - job: ValidateBicepCode
-    displayName: Validate Bicep code
-    steps:
-      - task: AzureCLI@2
-        name: RunPreflightValidation
-        displayName: Run preflight validation
-        inputs:
-          azureSubscription: $(ServiceConnectionName)
-          scriptType: 'bash'
-          scriptLocation: 'inlineScript'
-          inlineScript: |
-            az deployment group validate \
-              --resource-group $(ResourcegroupName) \
-              --template-file deploy/main.bicep \
-              --parameters environmentType=$(EnvironmentType)
+The condition here translates to *if the environmentName parameter's value is equal to 'production', then run the following steps*.
 
-- ${{ if eq(parameters.env, 'Prod') }}:
-  - stage: Preview${{parameters.environment}}
-    variables: 
-    - group: ToyWebsite${{parameters.environment}}
-    displayName: Preview${{parameters.environment}}
-    jobs: 
-    - job: PreviewAzureChanges
-      displayName: Preview Azure changes
-      steps:
-        - task: AzureCLI@2
-          name: RunWhatIf
-          displayName: Run what-if
-          inputs:
-            azureSubscription: $(ServiceConnectionName)
-            scriptType: 'bash'
-            scriptLocation: 'inlineScript'
-            inlineScript: |
-              az deployment group what-if \
-                --resource-group $(ResourcegroupName) \
-                --template-file deploy/main.bicep \
-                --parameters environmentType=$(EnvironmentType)
-# rest of the pipeline omitted for brevity
-```
+> [!TIP]
+> Pay attention to the YAML file's indentation when you use conditions. You need to indent the steps that the condition applies to by one extra level.
 
-Do note the extra indentation on the Preview stage. 
-
-When you run the above pipeline, you will notice the following stages in the pipeline run: ValidateTst, DeployTst, SmokeTestTst, ValidatePrd, PreviewPrd, DeployPrd, SmokeTestPrd. So there will be no PreviewTst. 
-
-> [!NOTE]
-> Even though conditionals can be a powerful construct, beware to not use too many of them. They will also complicate your pipeline. When you see a lot of them being used in your pipeline template, it might be a code smell that a template might not be the best solution for the workflow you plan to run. 
-
+Even though conditions are a way to add flexibility to your pipeline, try not to not use too many of them. They complicate your pipeline and make it harder to reason about. If you see a lot of conditions in your pipeline template, it might indicate that a template might not be the best solution for the workflow you plan to run, and that you should redesign your pipeline.
