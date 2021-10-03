@@ -2,26 +2,24 @@ Now that we have a function app created, let's look at how to build, configure, 
 
 ### Triggers
 
-Functions are event driven, which means they run in response to an event.
-
-The type of event that starts the function is called a **trigger**. You must configure a function with exactly one trigger.
+Functions are event driven, which means they run in response to an event. The type of event that starts a function is called a **trigger**. Each function must be configured with exactly one trigger.
 
 Azure supports triggers for the following services.
 
-| Service                 | Trigger description  |
-|-------------------------|---------|
-| Blob Storage            | Starts a function when a new or updated blob is detected.       |
-| Azure Cosmos DB               | Start a function when inserts and updates are detected.      |
-| Event Grid              | Starts a function when an event is received from Event Grid.       |
-| HTTP                    | Starts a function with an HTTP request.      |
-| Microsoft Graph Events  | Starts a function in response to an incoming webhook from the Microsoft Graph. Each instance of this trigger can react to one Microsoft Graph resource type.       |
-| Queue Storage           | Starts a function when a new item is received on a queue. The queue message is provided as input to the function.      |
-| Service Bus             | Starts a function in response to messages from a Service Bus queue.       |
-| Timer                   | Starts a function on a schedule.       |
+| Service | Trigger description |
+|---------|---------|
+| Blob Storage | Starts a function when a new or updated blob is detected. |
+| Azure Cosmos DB| Start a function when inserts and updates are detected. |
+| Event Grid | Starts a function when an event is received from Event Grid. |
+| HTTP | Starts a function with an HTTP request. |
+| Microsoft Graph Events | Starts a function in response to an incoming webhook from the Microsoft Graph. Each instance of this trigger can react to one Microsoft Graph resource type. |
+| Queue Storage | Starts a function when a new item is received on a queue. The queue message is provided as input to the function. |
+| Service Bus | Starts a function in response to messages from a Service Bus queue. |
+| Timer | Starts a function on a schedule. |
 
 ### Bindings
 
-Bindings are a declarative way to connect data and services to your function. Bindings know how to talk to different services, which means you don't have to write code in your function to connect to data sources and manage connections. The platform takes care of that complexity for you as part of the binding code. Each binding has a direction - your code reads data from *input* bindings, and writes data to *output* bindings. Each function can have zero or more bindings to manage the input and output data processed by the function.
+A binding is a declarative way to connect data and services to your function. Bindings know how to interact with different services, which means you don't have to write code in your function to connect to data sources and manage connections. The platform takes care of that complexity for you as part of the binding code. Each binding has a direction - your code reads data from *input* bindings, and writes data to *output* bindings. Each function can have zero or more bindings to manage the input and output data processed by the function.
 
 A trigger is a special type of input binding that has the additional capability of initiating execution.
 
@@ -59,7 +57,7 @@ Our JSON configuration specifies that our function will be triggered when a mess
 This example is a simple illustration of how we configure bindings for a function. We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
 
 > [!TIP]
-> To view and edit the contents of _function.json_ in the Azure portal, from the Home page, select your function app, and in the right pane, select **JSON View**. The Resource JSON view displays the Resourse ID and the editable JSON code. To close the JSON view, select the **X** in to top right corner of the pane.
+> To view and edit the contents of _function.json_ in the Azure portal, from the Home page, select your function app, and in the right pane, select **JSON View**. The Resource JSON view displays the Resource ID and the editable JSON code. To close the JSON view, select the **X** in to top right corner of the pane.
 
 ## Create a function in the Azure portal
 
@@ -133,4 +131,4 @@ Write-Host "Enter your logging statement here"
 
 ### Errors and warnings in the logs pane
 
-You can locate the errors and warnings window tab in the same flyout menu as the log window. This window shows compilation errors and warnings within your code.
+You can locate the errors and warnings pane tab in the same flyout menu as the log pane. This pane shows compilation errors and warnings within your code.
