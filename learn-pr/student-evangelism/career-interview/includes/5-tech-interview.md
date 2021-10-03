@@ -1,84 +1,73 @@
+The interview step can be a bit stressful, but if you've made it this far, you're in a good place. It means someone looked through your resume and liked what they saw. It most likely also means you passed a phone screening. Congratulations!
+
+This unit give you tips on what to do before and during a *technical* interview, to maximize your chances of landing that job.
+
+To get started, watch this short video about the lessons that one Microsoft employee learned from technical interviews:
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4O7Th]
 
-You made it to the interview. Congratulations, that means someone looked through your resume and liked what they saw. It most likely also means you passed a phone screening or a take -home test.
+## The take-home assignment
 
-You are already a winner. The interview step is a bit stressful but if you've made it thus far you are in a good place. Let's think of this phase as consisting of a _before_, _during_, and _after_. Mastering each of these phases will maximize your chances to land that job.
-
-## The take home assignment
-
-You might be asked to complete a take home assignment. What's important to consider, when creating such a sample, is that it should, first of all, solve the problem. Most likely you will send the company a link to where they can find your assignment solution on a site such as GitHub.  
+You might be asked to complete a take-home assignment, in the form of a code sample that solves a problem. Most likely, you'll send the company a link to where they can find your assignment solution on a site such as GitHub.  
 
 > [!TIP]
-> If you're not sure about a requirement or how to interpret part of the task, reach out and ask for clarification. In fact, some companies make the task unclear on purpose and want to see if the candidate will reach out.  
+> If you're not sure about a requirement or how to interpret part of the task, ask for clarification. In fact, some companies make the task unclear on purpose and want to see if the candidate will reach out.  
 
-Your solution should fulfill the following:
+Your solution should:
 
-- **Well-structured code**. You should divide up the code into a reasonable number of files and components. Nobody wants to see all the code in one file. Think about how someone maintaining the code would want it structured.  
+- **Actually solve the problem**. Complete the task that was assigned and show that you can follow instructions.
 
-- **Linted**. Linting is the process of ensuring that the code looks the same throughout. Less important than whether you use spaces or tabs to indent code is whether it looks consistent. Rely on your tooling to lint for you, to avoid errors. You might not fail the assignment on this factor, but it shows you care.
+- **Be well structured**. Divide the code into a reasonable number of files and components. Nobody wants to see all the code in one file. Think about how someone who maintains the code would want it structured.  
 
-- **Tested**. It's a huge plus if your code has tests, especially if you have parts of the code that might be tricky. Having tests here can also lead your appraiser to assess you as being a more experienced developer. Usually beginners to software development put more focus on getting things to work. Testing, however, is the sign of a more advanced developer. By implementing tests you showcase maturity which can lead to a better offer in the end. 
+- **Be linted**. Linting is the process of ensuring that the code looks the same throughout. Less important than whether you use spaces or tabs to indent code is whether it looks consistent. Rely on your tooling to lint for you, to avoid errors. You might not fail the assignment on this factor, but it shows you care.
 
-- **Documented**. Instructions on how to run your code are essential, so double-check that your instructions are correct. You might have only one chance for your appraisers to run your code and if they can't, it can end the process. 
+- **Be tested**. Beginners in software development tend to focus on getting things to work. By implementing tests, you showcase maturity, which can lead to a better offer. Testing is especially important if parts of the code might be tricky.
 
-- **Does it solve the task**. The code should solve the problem at hand. 
+- **Be well documented**. Instructions on how to build and run your code are essential, so double-check that your instructions are correct. You might have only one chance for your appraisers to run your code. If they can't, that can end the process. If you're using GitHub, instructions should be in a well-written README.md file.
 
-- **Considerations**. Are there considerations you've made about the assignment, and if so, which ones? If the assignment isn't clearly written, you must make assumptions and your solution might be accepted even if you hand in code that solves the problem differently than what the interviewers had in mind. 
+- **Be well reasoned**. A crucial part of the task is the ability to explain how you solved it. Interviewers might ask you for an explanation during an on-site interview, but submitting one with the task can show initiative.  
 
-- **The reasoning**. Probably the most important part of the task is explaining how you solved it. Interviewers might ask you for an explanation during an on-site interview but submitting one with the task itself can be valuable for you.  
-
-- **Good-looking GitHub README**. Build and run instructions should be in a well-written README.md file, if you are using GitHub.
+- **Account for assumptions**. If the assignment is on the vague side, you must make assumptions. Your solution might be accepted even if you hand in code that solves the problem differently from what the interviewers had in mind.
 
 ### What if time is too tight?
 
-Sometimes you won't have a chance to finish a task in the allotted time. Don't worry, reach out at that point. Most companies are understanding and might give you more time if you explain the circumstances.
+Sometimes you won't have a chance to finish a task in the allotted time. Reach out at that point. Most companies are understanding and might give you more time if you explain the circumstances.
 
 > [!TIP]
-> Even if you don't finish the entire task, submit what you have. Usually appraisers want to see your reasoning, rather than a full-blown solution of a task.
+> Even if you don't finish the entire task, submit what you have. Appraisers often value seeing your reasoning over seeing a full-blown solution.
 
-## Day before interview
+## The day before the interview
 
-Before your interview, you can do a lot to prepare your mind and body for your test. Practice various exercises but more importantly, take care of yourself. Rest well, exercise, drink plenty of fluids, and eat well. Prepare like you would to win a marathon. After all, you're running a kind of race where the goal is a great future.
+Before your interview, you can do a lot to prepare your mind and body for your test. Practice coding exercises, but also take care of yourself. Rest well, exercise, drink plenty of fluids, and eat well. Prepare like you would to win a marathon. After all, you're running a kind of race where the goal is a great future.
 
 ## Interview day
 
-You should feel excited on this day! Keep in mind that no one wants to see you fail. After all, the company is looking for someone to hire and you are looking for a job.
+On the interview day, keep in mind that no one wants to see you fail. The company is looking for someone to hire, and you're looking for a job. You'll meet potential future colleagues and might get a tour of the premises.
 
-The interviewers should do what they can to make you feel relaxed.
+### Interview types
 
-> Ask questions.
+There are generally two types of technical interviews: 
 
-Ask questions for clarification, since your context isn't their context. You should feel empowered to ask questions: how will this code be used? Can you use a library? Are there other limitations?
+- **Whiteboard**. In this interview, you'll stand in front of a whiteboard to explain the solution to a problem. This type of interview is intended to mimic your everyday work, where you and your colleagues collaborate to solve a problem. This form of interviewing gives the interviewers a chance to hear and see your thought process. 
+
+- **Standard**. In a standard interview, you might be given a large task to solve, a bug to fix, or a system to analyze. You usually get a time limit (like an hour) to solve whatever the problem might be. 
+
+Either way, the interviewer might ask questions about a programming language or framework to assess your level. If you did a take-home assignment, expect to answer a few theory questions and some questions about your code.
+
+### Tips
+
+Generally, the more interviews you do, the better you become at it. Here are three tips:
+
+- **Stop and think**. Don't try to solve the problem immediately. Assess the problem first.
+
+- **Be verbal**. Explain your line of thinking so the interviewers can see what considerations and assumptions you make. It gives them a chance to assess you and to correct an unclear instruction.
+
+  You should feel empowered to ask questions for clarification, because your context isn't their context. You might ask: how will this code be used? Can you use a library? Are there other limitations?
+
+  If you get stuck, you can try asking for help.
+
+- **Be confident**. The more certain you come across, the better. You might not get it right when solving a problem, but avoid giving the impression that you have no idea. Still, admitting that you don't know something is better than saying something nonsensical. Keep in mind that there might be more than one way to solve a problem.
 
 > Remember: you've made it already.
 
-Interviewing for most companies in person means that you have already passed some bar already by means of a phone screen or take-home test, Now the company is interested in knowing who you are. You are presented to your potential future colleagues and might be given a tour of the premises. No matter what happens, you should view your path so far as a success!
-
-## Tech interview
-
-There are generally two ways that technical interviews are carried out: whiteboard and a standard interview. These approaches have their pros and cons.
-
-- **Whiteboard**, the interviewee explains to the interviewers how to solve a problem by writing its solution on a whiteboard.
-
-- **Standard interview**, in the standard interview, the interviewers can ask questions on your take home exercise (if you did one) or contextual questions on a programming language or framework to assess your level.
-
-### Whiteboard interview
-
-In this interview you will be standing in front of a whiteboard to explain the solution to a problem. This type of interview is intended is to mimic your everyday work where you and your colleagues work together to solve a problem. This form of interviewing gives the interviewers a chance to hear your thought process. If this form of interview is carried out well, it's a collaborative exercise where interviewers and interviewee work together to solve a problem. 
-
-How do youI pass such an interview? Generally the more interviews you do, the better you become at it, but here are three tips:
-
-- **Stop and think**. Don't try to solve the problem immediately. Try assessing the problem first.
-
-- **Be verbal**. Explain your line of thinking so the interviewers can see what considerations and assumptions you make. It gives them a chance to both assess you and to correct an unclear instruction.
-
-- **Confidence**. The more certain you come across the better. You might not get it right when solving a problem but you want to avoid coming across that you have no idea. With that said, saying "I don't know" to something is better than saying something nonsensical. Keep in mind that there might be more than one way to solve a problem.
-
-> [!TIP]
-> If you get stuck, you can try asking for help. It should always be ok to ask clarifying questions on how to interpret a question, if there's limitations and so on.
-
-### Standard interview
-
-In a standard interview, you might be given a large task to solve, a bug to fix, or a system to analyze. You usually get a time limit (like an hour) to solve whatever the problem might be.
-
-Another type of interview might be a more relaxed "take home assignment" after which and you might be asked a few theory questions and some questions on your code.
+The company is interested in knowing who you are. No matter what happens, you should view your path so far as a success!

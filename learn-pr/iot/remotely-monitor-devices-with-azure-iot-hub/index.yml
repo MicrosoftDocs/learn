@@ -1,8 +1,9 @@
 ### YamlMime:Module
 uid: learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub
 metadata:
+  title: Remotely monitor and control devices with Azure IoT Hub
   description: Create an IoT Hub device app, and a back-end service app. As a scenario, we use the monitoring, and controlling, of the temperature and humidity of a cheese cave.
-  ms.date: 11/12/2019
+  ms.date: 09/28/2021
   author: PeterTurcan
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -19,8 +20,8 @@ abstract: |
 prerequisites: | 
   - An introductory knowledge of Azure IoT
   -	Ability to navigate the Azure IoT portal 
-  -	Ability to use Node.js, or C#, at the beginner level
-  -	Experience using Visual Studio, or Visual Studio Code, at the beginner level 
+  -	Ability to use Node.js or C# at the beginner level
+  -	Experience using Visual Studio or Visual Studio Code at the beginner level 
 iconUrl: /learn/achievements/iot/remotely-monitor-and-control-devices-with-azure-iot-hub.svg
 ratingEnabled: true
 levels:

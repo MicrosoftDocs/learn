@@ -1,4 +1,4 @@
-## Scenario 
+## Scenario
 
 Many apps need to be resilient to failure and scale easily when demand increases. You can address those needs by using Azure Load Balancer.
 

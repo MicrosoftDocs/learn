@@ -10,13 +10,13 @@ The core goal of Logic Apps is to help you get services to work together. There 
 
 Actions that let you use services outside of your logic app are by far the most common type. In fact, these actions are so common, that they are what most people mean when they use the term *action*. They give you access to hundreds of products like Salesforce, Oracle, YouTube, Dropbox, Gmail, GitHub, Twilio, Facebook, Slack, and Jira. The following illustration shows a few of the available external actions.
 
-![An illustration showing several common external actions. The actions are divided into groups. For example, there is a grouping for database actions, which shows Oracle, SQL Server, and Azure Cosmos DB.](../media/external-services.png)
+:::image type="content" source="../media/external-services.png" alt-text="An illustration showing several common external actions. The actions are divided into groups. For example, there is a grouping for database actions, which shows Oracle, SQL Server, and Azure Cosmos DB." border="false":::
 
 When you use an action to connect to an external service, you typically supply connection and authorization values. It might be a username, a password, a connection string, or an account key. The details will be different for each service.
 
 For example, to connect to Cognitive Services, you give the **Site URL** so your logic app knows where to send the request and your **Account Key** to prove you are authorized to access the service. Both of these values are available in your Cognitive Services account. You'll typically copy them into the settings for the **Detect-sentiment** action.
 
-This type of action helps you send out data for processing or pull data into your app. But then what? How do you actually work with that data inside your app. That's what the next category of action is for.
+This type of action helps you send out data for processing or pull data into your app. But then what? How do you actually work with that data inside your app? That's what the next category of action is for.
 
 ### Manipulate data
 
@@ -48,7 +48,7 @@ Action *parameters* let you pass values to the operation. The Cognitive Services
 
 Action *return values* are the results of the operation. The **Detect sentiment** action returns a numeric score between 0 and 1. Scores close to 1 indicate positive sentiment, while scores close to 0 indicate negative sentiment. The following illustration summarizes the data flow for the **Detect sentiment** action as used by the social media monitor app.
 
-![An illustration showing a logic app using the **Detect sentiment** action to invoke the Text Analytics service. The app passes the tweet text to the service and gets back a numeric sentiment score.](../media/action-inputs-and-outputs.png)
+:::image type="content" source="../media/action-inputs-and-outputs.png" alt-text="An illustration showing a logic app using the **Detect sentiment** action to invoke the Text Analytics service. The app passes the tweet text to the service and gets back a numeric sentiment score." border="false" lightbox="../media/action-inputs-and-outputs-big.png":::
 
 ## Static vs. dynamic parameters
 
@@ -64,10 +64,10 @@ The Logic Apps Designer gives you a GUI to add and configure actions. You can ad
 
 The first step is to select the **Add an action** option at the point in your app where you want the new action to appear. This launches the "choose an action" UI. The following screenshot shows how to add a new action using the Logic Apps Designer.
 
-![A screenshot showing the Logic Apps Designer GUI to choose an action to add to your app. The user can select an action from a list or use a search feature to locate the one they need.](../media/choose-an-action-designer.png)
+:::image type="content" source="../media/choose-an-action-designer.png" alt-text="A screenshot showing the Logic Apps Designer GUI to choose an action to add to your app. The user can select an action from a list or use a search feature to locate the one they need." border="false":::
 
 After you add an action, you use the designer to set configuration parameters. Again, the designer provides a GUI for you to enter the values. Static content can be added manually. For dynamic content, the designer can pop up a selection GUI that shows you data that was returned by previous steps. You choose the field you need, and the designer automatically populates that entry in your action. The following image shows the dynamic tweet data from the social media monitor app displayed in the designer.
 
-![A screenshot showing the Logic Apps Designer GUI for dynamic content. The example shows tweet data such as **Created at**, **Description**, and **Location** displayed in a list. The user can select an item from the list to include it in their app.](../media/dynamic-content-designer.png)
+:::image type="content" source="../media/dynamic-content-designer.png" alt-text="A screenshot showing the Logic Apps Designer GUI for dynamic content. The example shows tweet data such as **Created at**, **Description**, and **Location** displayed in a list. The user can select an item from the list to include it in their app." border="false":::
 
 The designer makes it easy to add dynamic content. You don't need to remember the names of the parameters and return values, and you don't have to worry about the details of the syntax.

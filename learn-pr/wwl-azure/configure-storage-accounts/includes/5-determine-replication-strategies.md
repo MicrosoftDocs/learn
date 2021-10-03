@@ -120,7 +120,7 @@ Despite its limitations, LRS may be appropriate in these scenarios:
 
 ## Zone redundant storage
 
-Zone Redundant Storage (ZRS) synchronously replicates your data across three (3) storage clusters in a single region. Each storage cluster is physically separated from the others and resides in its own availability zone. Each availability zone, and the ZRS cluster within it, is autonomous, with separate utilities and networking capabilities. Storing your data in a ZRS account ensures that you will be able access and manage your data if a zone becomes unavailable. ZRS provides excellent performance and low latency.
+Zone Redundant Storage (ZRS) synchronously replicates your data across three (3) storage clusters in a single region. Each storage cluster is physically separated from the others and resides in its own availability zone. Each availability zone, and the ZRS cluster within it, is autonomous, with separate utilities and networking capabilities. Storing your data in a ZRS account ensures that you will be able to access and manage your data if a zone becomes unavailable. ZRS provides excellent performance and low latency.
 
 Here are a few of more things to know about ZRS:
 

@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.azure.learn-introduction-tutorials-mrtk
+metadata:
+  title: Introduction to Mixed Reality Toolkit - Create a Mars Curiosity Rover hologram
+  description: This course provides the user a basic understanding of all the foundational elements of MRTK.
+  ms.date: 09/09/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+title: Introduction to Mixed Reality Toolkit - Create a Mars Curiosity Rover hologram
+summary: Import and learn about foundational elements of MRTK
+abstract: |
+  By the end of this module you will be able to:
+  - Imported the Mixed Reality Toolkit into your Unity Windows Mixed Reality Project.
+  - Configure basic object interactions without the need to create your own custom scripts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- windows
+- windows-mixed-reality
+- mrtk
+- hololens
+- azure
+- mrtk
+prerequisites: |
+  - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
+  - Windows 10 SDK 10.0.18362.0 or later
+  - A HoloLens 2 device configured for development
+  - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
+  - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
+  - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
+units: 
+- learn.azure.learn-introduction-tutorials-mrtk.1-1-introduction
+- learn.azure.learn-introduction-tutorials-mrtk.1-2-configure-unity-for-windows-mixed-reality
+- learn.azure.learn-introduction-tutorials-mrtk.1-3-exercise-configure-unity-for-windows-mixed-reality
+- learn.azure.learn-introduction-tutorials-mrtk.1-4-configure-resources
+- learn.azure.learn-introduction-tutorials-mrtk.1-5-exercise-configure-resources
+- learn.azure.learn-introduction-tutorials-mrtk.1-6-interaction-models
+- learn.azure.learn-introduction-tutorials-mrtk.1-7-exercise-hand-interaction-with-objectmanipulator
+- learn.azure.learn-introduction-tutorials-mrtk.1-8-knowledge-check
+- learn.azure.learn-introduction-tutorials-mrtk.1-9-summary
+badge:
+  uid: learn.azure.learn-introduction-tutorials-mrtk-badge

@@ -8,6 +8,7 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
+  ms.custom: nextgen
 title: "Implement CI/CD for IoT Edge"
 summary: "Define a solution for smoke testing for virtual Azure IoT Edge devices. Your solution will employ a CI/CD (continuous integration/continuous deployment) strategy using Azure DevOps and Azure Pipelines on a Kubernetes cluster."
 abstract: |

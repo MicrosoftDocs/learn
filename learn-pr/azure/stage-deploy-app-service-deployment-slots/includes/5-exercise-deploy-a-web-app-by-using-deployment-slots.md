@@ -10,15 +10,15 @@ Before you deploy version 2 of the web app, configure a slot setting. The settin
 
 To configure slot settings:
 
-1. From the **All resources** view in the Azure portal, navigate to the **Overview** page of the production slot of the web app.
+1. From the **All resources** view in the Azure portal, go to the **Overview** page of the production slot of the web app.
 
-1. Navigate to the **Configuration** page for the deployment slot.
+1. Navigate to the **Configuration** pane for the deployment slot.
 
-1. Select **New application setting**. Add a new setting with the name **ENVIRONMENT_NAME** and a value of **production**. Check the **deployment slot setting** box to make this a slot setting.
+1. Select **New application setting**. Add a new setting with the name **ENVIRONMENT_NAME**, and a value of **production**. Check the **deployment slot setting** box to make this a slot setting.
 
-1. Add another setting called **APP_VERSION**, and enter the value **1**. *Don't* make this a slot setting.
+1. Add another setting called **APP_VERSION**, and enter the value *1*. *Don't* make this a slot setting.
 
-1. Near the top of the page, select **Save**.
+1. In the top menu bar, select **Save**.
 
 1. Repeat the preceding steps on the **Staging** slot, but use the following values:
 
@@ -49,7 +49,7 @@ Now that you've tested version 2 of the web app in the staging slot, you can dep
 
 Suppose that now that you're using deployment slots, you want to enable continuous deployment. You'll do this by using the auto swap feature for your web app. In a system that uses auto swap, when you deploy new code to the staging slot, Azure automatically warms it up and deploys it to production by swapping the staging and production slots. To configure auto swap, follow these steps:
 
-1. Go to the **Configuration** page of the staging slot's web app, and navigate to the **General settings** tab.
+1. Go to the **Configuration** pane of the staging slot's web app, and go to the **General settings** tab.
 
 1. Set **Auto swap enabled** to **On**.
 
@@ -61,7 +61,7 @@ Suppose that now that you're using deployment slots, you want to enable continuo
 
 Now, you'll modify the code to create version 3 of the web app. When you deploy it to the staging slot, you'll see an auto swap in action. Follow these steps:
 
-1. On the right side of the Cloud Shell window, restart the editor if it's not already running.
+1. On the right side of Cloud Shell, restart the editor if it's not already running.
 
     ```bash
     cd ~/demoapp/app-service-web-dotnet-get-started/
@@ -84,7 +84,7 @@ Now, you'll modify the code to create version 3 of the web app. When you deploy 
 
 1. To save your changes, press <kbd>Ctrl+S</kbd>.
 
-1. In Cloud Shell, enter the following commands. Enter your deployment password when you're prompted.
+1. In Cloud Shell, run the following commands. Enter your deployment password when you're prompted.
 
     ```bash
     git add .
@@ -94,13 +94,13 @@ Now, you'll modify the code to create version 3 of the web app. When you deploy 
 
     Wait for the deployment to finish. Near the end of the text output, you'll see a message that indicates that the deployment has requested an auto swap to the production slot.
 
-1. In the Azure portal, navigate to the **Overview** page for the production slot's web app, and select **Browse**. The third version of the web app appears on a new browser tab. If the old version is shown, you may need to wait briefly and then refresh the page - the swap operation is atomic and occurs instantly, but it takes App Service a few moments to prepare the swap operation before it's executed.
+1. In the Azure portal, go to the **Overview** page for the production slot's web app, and select **Browse**. The third version of the web app appears on a new browser tab. If the old version is shown, you may need to wait briefly and then refresh the page - the swap operation is atomic and occurs instantly, but it takes App Service a few moments to prepare the swap operation before it's run.
 
 ## Roll back the new version
 
 Suppose that deploying version 3 of your app to production revealed an unexpected problem. To quickly resolve it, you can roll back to the previous version of the site by swapping the slots again.
 
-1. Go to the **Deployment slots** page of the production slot's web app.
+1. Go to the **Deployment slots** pane of the production slot's web app.
 
 1. Swap the staging and production slots.
 

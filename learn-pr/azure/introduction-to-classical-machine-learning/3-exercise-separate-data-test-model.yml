@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.machinelearning.introduction-to-classical-machine-learning.exercise-separate-data-test-model
-title: Exercise - Separate a dataset to test a model
+title: Exercise - Implement supervised learning
 metadata:
-  title: Exercise - Separate a dataset to test a model
-  description: Learn how to separate a dataset to test a machine learning model
+  title: Exercise - Implement supervised learning
+  description: Create and use a simple supervised learning model without using external libraries.
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb

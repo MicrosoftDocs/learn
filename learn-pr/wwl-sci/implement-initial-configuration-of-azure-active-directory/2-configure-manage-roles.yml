@@ -4,12 +4,14 @@ title: Configure and manage Azure Active Directory roles
 metadata:
   title: Configure and manage Azure Active Directory roles
   description: "Configure and manage Azure Active Directory roles"
-  ms.date: 08/17/2021
+  ms.date: 09/14/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/2-configure-manage-roles.md)]

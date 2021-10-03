@@ -47,8 +47,8 @@ Let's create a new Azure VM with PowerShell.
 
     ```powershell
     ResourceGroupName : <rgn>[sandbox resource group name]</rgn>
-    Id                : /subscriptions/xxxxxxxx-xxxx-aaaa-bbbb-cccccccccccc/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/testvm-eus-01
-    VmId              : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+    Id                : /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/testvm-eus-01
+    VmId              : 00000000-0000-0000-0000-000000000000
     Name              : testvm-eus-01
     Type              : Microsoft.Compute/virtualMachines
     Location          : eastus
@@ -60,7 +60,7 @@ Let's create a new Azure VM with PowerShell.
     StorageProfile    : {ImageReference, OsDisk, DataDisks}
     ```
 
-1. You can reach into complex objects through a dot (".") syntax. For example, to see the properties in the `VMSize` object associated with the HardwareProfile section, run the following command.
+1. You can reach into complex objects through a dot (".") notation. For example, to see the properties in the `VMSize` object associated with the HardwareProfile section, run the following command.
 
     ```powershell
     $vm.HardwareProfile
@@ -103,12 +103,12 @@ Remove-AzVM -Name $vm.Name -ResourceGroup $vm.ResourceGroupName
 Run this command to list all the resources in your resource group.
 
 ```powershell
-Get-AzResource -ResourceGroupName $vm.ResourceGroupName | ft
+Get-AzResource -ResourceGroupName $vm.ResourceGroupName | Format-Table
 ```
 
 You should see a bunch of resources (disks, virtual networks, and so on) that all still exist.
 
-```output
+```Output
 Microsoft.Compute/disks
 Microsoft.Network/networkInterfaces
 Microsoft.Network/networkSecurityGroups

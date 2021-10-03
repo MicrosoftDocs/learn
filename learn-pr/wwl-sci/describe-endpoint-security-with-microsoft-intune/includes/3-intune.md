@@ -26,16 +26,16 @@ Use device compliance policy to establish the conditions by which devices and us
 
 Device compliance policies are one of several methods in Intune to configure settings on devices. When managing settings, it's important to understand what other methods being used in your environment can configure your devices to [avoid policy conflicts](https://docs.microsoft.com/mem/intune/protect/endpoint-security#avoid-policy-conflicts).
 
-## Configure conditional access
+## Configure Conditional Access
 
-Intune can be integrated with Azure AD conditional access policies to enforce compliance policies. Intune passes the results of your device compliance policies to Azure AD, which then uses conditional access policies to enforce which devices and apps can access your corporate resources.
+Intune can be integrated with Azure AD Conditional Access policies to enforce compliance policies. Intune passes the results of your device compliance policies to Azure AD, which then uses Conditional Access policies to enforce which devices and apps can access your corporate resources.
 
-The following are two common methods of using conditional access with Intune:
+The following are two common methods of using Conditional Access with Intune:
 
-- Device-based conditional access, to ensure only managed and compliant devices can access network resources.
-- App-based conditional access, which uses app protection policies to manage access to network resources by users on devices that aren't managed with Intune.
+- Device-based Conditional Access, to ensure only managed and compliant devices can access network resources.
+- App-based Conditional Access, which uses app protection policies to manage access to network resources by users on devices that aren't managed with Intune.
 
-To learn more about using conditional access with Intune, go to: [Learn about Conditional Access and Intune.](https://docs.microsoft.com/mem/intune/protect/conditional-access)
+To learn more about using Conditional Access with Intune, go to: [Learn about Conditional Access and Intune.](https://docs.microsoft.com/mem/intune/protect/conditional-access)
 
 ## Integration with Microsoft Defender for Endpoint
 
@@ -55,7 +55,7 @@ To learn more, go to: [Enforce compliance for Microsoft Defender for Endpoint wi
 
 Role-based access control (RBAC) helps manage who has access to the organization's resources and what they do with them. By assigning roles to Intune users, admins limit what they'll see and change. Each role has a set of permissions that determine what users with that role can access and change within your organization.
 
-To manage tasks in the Endpoint security node of the Microsoft Endpoint Manager admin center, an account must have RBAC permissions equal to the permissions provided by the built-in Intune role of **Endpoint Security Manager**. The Endpoint Security Manager role grants access to the Microsoft Endpoint Manager admin center. This role can be used by individuals who manage security and compliance features, including security baselines, device compliance, conditional access, and Microsoft Defender for Endpoint.
+To manage tasks in the Endpoint security node of the Microsoft Endpoint Manager admin center, an account must have RBAC permissions equal to the permissions provided by the built-in Intune role of **Endpoint Security Manager**. The Endpoint Security Manager role grants access to the Microsoft Endpoint Manager admin center. This role can be used by individuals who manage security and compliance features, including security baselines, device compliance, Conditional Access, and Microsoft Defender for Endpoint.
 
 To learn more, go to: [Role-based access control (RBAC) with Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
 

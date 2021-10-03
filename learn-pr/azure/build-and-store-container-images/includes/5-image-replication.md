@@ -13,7 +13,7 @@ A geo-replicated registry provides the following benefits:
 
 ## Create a replicated region for an Azure Container Registry
 
-In this exercise, you'll use the `az acr replication create` Azure CLI command to replicate your registry from one region to another.
+In this exercise, you'll run the `az acr replication create` Azure CLI command to replicate your registry from one region to another.
 
 1. Run the following command to replicate your registry to another region. In this example, we're replicating to the `japaneast` region. *$ACR_NAME* is the variable you defined earlier in the module to hold your container registry name.
 

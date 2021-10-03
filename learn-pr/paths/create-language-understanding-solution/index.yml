@@ -3,7 +3,7 @@ uid: learn.wwl.create-language-understanding-solution
 metadata:
   title: Create a Language Understanding solution
   description: Create a Language Understanding solution
-  ms.date: 07/12/2021
+  ms.date: 09/17/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ prerequisites: |
   If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/learn/paths/csharp-first-steps/) or [Take your first steps with Python](/learn/paths/python-first-steps/) learning path before starting this one.
 summary: |
   *Natural language processing* (NLP) solutions use language models to interpret the semantic meaning of written or spoken language. You can use the Language Understanding service to build language models for your applications.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/natural-language-processing-language-understanding.svg
 levels:
 - intermediate
 roles:

@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-transactions-transact-sql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/30/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What happens to nested transactions when the outer transaction is rolled back?"
+    choices:
+    - content: "The inner transaction is executed."
+      isCorrect: false
+      explanation: "That's incorrect. If the outer transaction is rolled back, the inner transaction will not be executed."
+    - content: "The inner transaction prevents the outer transaction from being rolled back. Both the inner and outer transaction will be executed."
+      isCorrect: false
+      explanation: "That's incorrect. If the outer transaction is rolled back, the inner transaction will not be executed. The inner transaction will not prevent the outer transaction from being rolled back."
+    - content: "The inner transaction is also rolled back."
+      isCorrect: true
+      explanation: "That's correct. All inner transactions are rolled back when the outer transaction is rolled back."
+  - content: "Which of the following T-SQL keywords are used to control transactions?"
+    choices:
+    - content: "BEGIN TRANSACTION"
+      isCorrect: true
+      explanation: "That's correct. BEGIN TRANSACTION keywords are used to start an explicit transaction."
+    - content: "BEGIN TRY"
+      isCorrect: false
+      explanation: "That's incorrect. BEGIN TRY is used to handle errors and does not control transactions."
+    - content: "BREAK"
+      isCorrect: false
+      explanation: "That's incorrect. The BREAK keyword is used to exit a WHILE loop and is not used to control transactions."
+  - content: "What does XACT_STATE test for?"
+    choices:
+    - content: "Whether or not the transaction has been committed."
+      isCorrect: false
+      explanation: "That's incorrect. XACT_STATE does not test whether a transaction has been committed."
+    - content: "An error in the transaction."
+      isCorrect: true
+      explanation: "That's correct. If an error occurs that causes the transaction to be classified an uncommittable, it will return -1."
+    - content: "Whether or not the current transaction has finished."
+      isCorrect: false
+      explanation: "That's incorrect. XACT_STATE tests for open transactions and not whether a transaction has completed."
+  - content: "What is the default transaction isolation level for Azure SQL Database?"
+    choices:
+    - content: "READ_COMMITTED_SNAPSHOT_ON"
+      isCorrect: true
+      explanation: "That's correct. READ_COMMITTED_SNAPSHOT_ON is the default transaction isolation level for Azure SQL Database."
+    - content: "READ_COMMITTED_SNAPSHOT_OFF"
+      isCorrect: false
+      explanation: "That's incorrect. READ_COMMITTED_SNAPSHOT_OFF is the default transaction isolation level for SQL Server."
+    - content: "XACT_ABORT"
+      isCorrect: false
+      explanation: "That's incorrect. XACT_ABORT is not a transaction isolation level."

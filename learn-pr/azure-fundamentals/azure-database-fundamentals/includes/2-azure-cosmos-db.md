@@ -8,7 +8,7 @@
     Over the years, Tailwind Traders has acquired several smaller companies. Each of these companies had teams of developers who used different database services and various APIs to work with their data. A long-term plan might be to eventually move all of the disparate data to a common database service. For now, though, you'd like to enable each of these teams to work with an environment where they can use their existing skills. Fortunately for you, Azure Cosmos DB can help out.
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/icon-service-Azure-Cosmos-DB-871edf07.png" alt-text="Icon.":::
+    :::image type="content" source="../media/icon-service-Azure-Cosmos-DB-871edf07.png" alt-text="Icon":::
 
   :::column-end:::
 :::row-end:::

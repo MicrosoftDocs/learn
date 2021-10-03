@@ -3,7 +3,7 @@ uid: learn.machinelearning.introduction-to-classical-machine-learning.minimize-e
 title: Minimize model errors with cost functions
 metadata:
   title: Minimize model errors with cost functions
-  description: Conceptual unit about minimizing model errors with cost functions in machine learning
+  description: Conceptual unit about minimizing model errors by using cost functions in machine learning.
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb

@@ -10,6 +10,6 @@ ms.author: jodowns
 >
 > Visual Studio Code offers a convenient way to rename symbols: select the identifier that you want to rename, select <kbd>F2</kbd>, enter a new name, and then select <kbd>Enter</kbd>:
 >
-> :::image type="content" source="media/rename-symbol.png" alt-text="Screenshot from Visual Studio Code showing how to rename a symbol." border="true":::
+> :::image type="content" source="media/rename-symbol.png" alt-text="Screenshot from Visual Studio Code that shows how to rename a symbol.":::
 >
-> This renames the identifier and automatically updates all the references to it.
+> These steps rename the identifier and automatically update all references to it.

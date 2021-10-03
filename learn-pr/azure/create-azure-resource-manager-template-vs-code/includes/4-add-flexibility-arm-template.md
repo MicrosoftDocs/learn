@@ -1,4 +1,4 @@
-In the last unit, you created an Azure Resource Manager template (ARM template) and added an Azure storage account to the ARM template. You might have noticed that there's a problem with your template. The storage account name is hard-coded. You can only use this template to deploy the same storage account every time. To deploy a storage account with a different name, you would have to create a new template, which isn't a practical way to automate your deployments. The storage account SKU is also hard-coded, which means you can't vary the type of storage account for different environments. Recall that in our scenario each deployment might have a different type of storage account. You can make your template more reusable by adding a parameter for the storage account SKU.
+In the last unit, you created an Azure Resource Manager (ARM) template and added an Azure storage account to the ARM template. You might have noticed that there's a problem with your template. The storage account name is hardcoded. You can only use this template to deploy the same storage account every time. To deploy a storage account with a different name, you would have to create a new template, which isn't a practical way to automate your deployments. The storage account SKU is also hardcoded, which means you can't vary the type of storage account for different environments. Recall that in our scenario each deployment might have a different type of storage account. You can make your template more reusable by adding a parameter for the storage account SKU.
 
 In this unit, you learn about the *parameters* and *outputs* sections of the template.
 
@@ -6,7 +6,7 @@ In this unit, you learn about the *parameters* and *outputs* sections of the tem
 
 ARM template parameters enable you to customize the deployment by providing values that are tailored for a particular environment. For example, you pass in different values based on whether you're deploying to an environment for development, test, production, or others. For example, the previous template uses the *Standard_LRS* storage account SKU. You can reuse this template for other deployments that create a storage account by making the name of the storage account SKU a parameter. Then, you pass in the name of the SKU you want for this particular deployment when the template is deployed. You can do this step either at the command line or by using a parameter file.
 
-In the parameters section of the template, you specify which values you can input when you deploy the resources. You're limited to 256 parameters in a template. Parameter definitions can use most template functions.
+In the `parameters` section of the template, you specify which values you can input when you deploy the resources. You're limited to 256 parameters in a template. Parameter definitions can use most template functions.
 
 The available properties for a parameter are:
 
@@ -41,7 +41,7 @@ The allowed types of parameters are:
 
 ### Recommendations for using parameters
 
-Use parameters for settings that vary according to the environment, like SKU, size, or capacity. Use parameters also for resource names that you want to specify yourself for easy identification or to comply with internal naming conventions. Provide a description for each parameter, and use default values whenever possible.
+Use parameters for settings that vary according to the environment; for example, SKU, size, or capacity. Also use parameters for resource names that you want to specify yourself for easy identification or to comply with internal naming conventions. Provide a description for each parameter, and use default values whenever possible.
 
 For security reasons, never hard code or provide default values for usernames and/or passwords in templates. Always use parameters for usernames and passwords (or secrets). Use *secureString* for all passwords and secrets. If you pass sensitive data in a JSON object, use the secureObject type. Template parameters with *secureString* or *secureObject* types can't be read or harvested after the deployment of the resource.
 
@@ -132,12 +132,13 @@ In the outputs section of your ARM template, you can specify values that will be
    }
 }
 ```
-
-- **output-name**: Must be a valid JavaScript identifier.
-- **condition**: (Optional) A Boolean value that indicates whether this output value is returned. When true, the value is included in the output for the deployment. When false, the output value is skipped for this deployment. When not specified, the default value is true.
-- **type**: The type of the output value.
-- **value**: (Optional) A template language expression that's evaluated and returned as an output value.
-- **copy**: (Optional) Copy is used to return more than one value for an output.
+| Element | Description |
+|--- | --- |
+| **output-name** | Must be a valid JavaScript identifier. |
+| **condition** | (Optional) A Boolean value that indicates whether this output value is returned. When true, the value is included in the output for the deployment. When false, the output value is skipped for this deployment. When not specified, the default value is true. |
+| **type** | The type of the output value. |
+| **value** | (Optional) A template language expression that's evaluated and returned as an output value. |
+| **copy** | (Optional) Copy is used to return more than one value for an output. |
 
 ### Use outputs in an ARM template
 

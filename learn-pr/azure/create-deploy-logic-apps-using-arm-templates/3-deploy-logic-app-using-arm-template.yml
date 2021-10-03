@@ -9,6 +9,7 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: INDEX,FOLLOW
 durationInMinutes: 10
 content: |
   [!include[](includes/3-deploy-logic-app-using-arm-template.md)]

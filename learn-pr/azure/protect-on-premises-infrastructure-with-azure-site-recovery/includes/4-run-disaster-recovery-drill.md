@@ -11,8 +11,11 @@ With Site Recovery, you can do a full disaster recovery test without affecting y
 After a BCDR plan is created in the Azure portal, it can be executed for test purposes. Follow these steps:
 
 1. In the **Site Recovery** section of the Azure portal, select **Recovery Plans** > your recovery plan name > **Test Failover**.
+
 1. Select the recovery point from the options presented. Options include **Latest processed**, which is the latest recovery point that was processed by Site Recovery.
+
 1. Select the Azure virtual network on which the virtual machine will be created. Use an isolated network from the live environment to prevent any impact to production environments.
+
 1. Track progress in the **Jobs** tab and also in the **Site Recovery** dashboard.
 
 ## Monitor a test recovery
@@ -21,7 +24,7 @@ Use the Site Recovery dashboard to monitor recovery operations, which include re
 
 In the dashboard, you can monitor replicated items and test failovers. Each replicated item under both categories is placed into a particular state for easy viewing of a healthy item compared to one with issues. See the following image.
 
-![Site Recovery overview.](../media/4-site-recovery-overview.png)
+[![Site Recovery overview.](../media/4-site-recovery-overview.png)](../media/4-site-recovery-overview.png#lightbox)
 
 **(1) Backup or Site Recovery**: Switch between the **Backup** or the **Site Recovery** dashboards. In this example, you're on the **Site Recovery** tab.
 

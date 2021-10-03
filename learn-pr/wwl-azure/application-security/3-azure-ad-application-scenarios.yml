@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.application-security.azure-ad-application-scenarios
+title: Explore Azure AD application scenarios
+metadata:
+  title: Explore Azure AD application scenarios
+  description: "Explore Azure AD application scenarios"
+  ms.date: 09/30/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-azure-ad-application-scenarios.md)]

@@ -24,4 +24,4 @@ In this module, you will learn how to:
 
 ## Prerequisites
 
- -  Familiarity with DNS including record sets, delegation, and zones. 
+ -  Familiarity with DNS including record sets, delegation, and zones.

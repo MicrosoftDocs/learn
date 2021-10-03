@@ -3,7 +3,7 @@ uid: learn.wwl.train-machine-learning-model-azure-databricks
 metadata:
   title: Train a machine learning model with Azure Databricks
   description: "Train a machine learning model with Azure Databricks"
-  ms.date: 08/20/2021
+  ms.date: 09/18/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Use other machine learning frameworks
 prerequisites: |
   Before starting this module, you should have some experience of using Python to train machine learning models using a framework such a Scikit-Learn.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/train-a-machine-learning-model-with-azure-databricks.svg
 levels:
 - intermediate
 roles:

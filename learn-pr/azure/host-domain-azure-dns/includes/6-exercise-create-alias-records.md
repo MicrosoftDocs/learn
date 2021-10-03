@@ -43,13 +43,13 @@ Now that you've created a test environment, you're ready to set up the Azure ali
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Resource groups**. The **Resource groups** pane appears.
 
-1. Select the resource group: <rgn>[sandbox resource group]</rgn>.
+1. Select the resource group: <rgn>[sandbox resource group]</rgn>. The **Resource group** pane appears.
 
 1. In the list of resources, select wideworldimportsXXXX.com (Type is DNS zone). The **wideworldimportsXXXX.com DNS zone** pane appears.
 
-1. In the command bar select **Record set**. The **Add record set** pane appears.
+1. In the menu bar, select **Record set**. The **Add record set** pane appears.
 
-1. Enter the following values to create an alias record.
+1. Enter the following values for each setting to create an alias record.
 
     | Setting | Value |
     | ---- | ---- |
@@ -58,7 +58,7 @@ Now that you've created a test environment, you're ready to set up the Azure ali
     | Alias record set | Yes |
     | Alias type | Azure resource |
     | Azure resource | From the list of resources, select **myPublicIP**. It may take up to 15 minutes for the deployments to propagate. If this resource isn't listed, wait several minutes, refresh the portal, and try again. |
-    
+
     :::image type="content" source="../media/6-aliasrecord-azurelb.png" alt-text="Screenshot of Add record set.":::
 
 1. Select **OK** to add the record to your zone.

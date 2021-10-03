@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github-administration-for-enterprise-support-adoption.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: In this module, you'll learn how GitHub Enterprise can make your administrative duties easier.
+  ms.date: 09/10/2021
+  author: sterling463
+  ms.author: csterling
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
