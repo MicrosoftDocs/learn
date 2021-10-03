@@ -15,7 +15,7 @@ In the unit after the next exercise, we'll take an in-depth look at working with
 
 To create an application that will convert text to speech using Azure Cognitive Services, your application will have to accomplish all of the following tasks.
 
-- Add the `Microsoft.CognitiveServices.Speech` package.
+- Add the `Microsoft.CognitiveServices.Speech` package to your application.
 
 - Read text from a file.
 

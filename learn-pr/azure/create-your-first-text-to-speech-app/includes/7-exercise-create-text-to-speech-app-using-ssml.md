@@ -190,10 +190,11 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
 
     As you did with the previous exercise, make sure that you update the values for the `azureKey` and `azureLocation` variables with your key and location from the first exercise.
 
-## Test your application
+1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
+
+## Run your application
 
 1. To run your application, use the following command in the Cloud Shell on the right.
-
 
     ```dotnetcli
     dotnet run
@@ -208,7 +209,6 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
     You should see a response like the following example, and you should see the _Shakespeare.wav_ in the list of files.
 
     ```bash
-    total 956
     drwxr-xr-x 3 user   user     4096 Oct  1 11:11 bin
     drwxr-xr-x 3 user   user     4096 Oct  1 11:11 obj
     -rw-r--r-- 1 user   user     1328 Oct  1 11:11 Program.cs
