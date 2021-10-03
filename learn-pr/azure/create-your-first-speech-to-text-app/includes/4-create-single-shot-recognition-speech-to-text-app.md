@@ -1,12 +1,12 @@
 In the previous exercise, you learned how to create an Azure Cognitive Services account using the Azure Command Line Interface (CLI). Now that you have a Azure Cognitive Services account to work with, you can begin working on your speech-to-text application.
 
-Your first challenge is to create an application that your company can use to transcribe the short memos from your medical clients. Azure Cognitive Services provides two different APIs that you can use for your development:
+Your first challenge is to create an application that your company can use to transcribe the brief memos from your medical clients. Azure Cognitive Services provides two different types of speech recognition that you can use for your development:
 
 - **Single-shot recognition**
 
     - Single-shot recognition listens for a break in the audio and then stops recognizing, and will only process a maximum of 15 seconds of audio.
 
-    - This type of recognition will work well for the short memos that your company's medical clients provide, but it will not work for the longer dictations.
+    - This type of recognition will work well for the brief memos that your company's medical clients provide, but it will not work for the longer dictations.
 
     - Single-shot recognition is easier to implement in your application, but you have less control.
 
@@ -14,11 +14,11 @@ Your first challenge is to create an application that your company can use to tr
 
     - Continuous recognition will continue to listen until recognition is stopped.
 
-    - This type of recognition will work well for both the short memos and longer dictations.
+    - This type of recognition will work well for both the brief memos and longer dictations.
 
     - Continuous recognition requires more code to implement in your application, but you more less control.
 
-In the following example, you'll use single-shot recognition to create an application that you can use to transcribe the short memos from your company's medical clients. Later in this module, you'll use continuous recognition that you can use to transcribe both the short memos and longer dictations.
+In the following example, you'll use single-shot recognition to create an application that you can use to transcribe the brief memos from your company's medical clients. Later in this module, you'll use continuous recognition that you can use to transcribe both the brief memos and longer dictations.
 
 ## Creating an application using single-shot recognition to transcribe audio files
 

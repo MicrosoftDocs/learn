@@ -1,8 +1,8 @@
-Suppose you're a developer who works for a medical transcription company. Your company's clients are a team of doctors who record their notes as audio files on handheld digital voice recorders. They share their files with your company through a shared cloud drive, and their notes are combination of short memos and longer dictations.
+Suppose you're a developer who works for a medical transcription company. Your company's clients are a team of doctors who record their notes as audio files on handheld digital voice recorders. They share their files with your company through a shared cloud drive, and their notes are combination of brief memos and longer dictations.
 
 Your company has to maintain a large staff of transcribers, and these two types of audio files present interesting challenges for your company:
 
-- Your company's transcribers require a great deal of time to process the volume of short memos from your clients, so it is difficult for your company to return the transcriptions within the timeframe that is defined in your company's service level agreement.
+- Your company's transcribers require a great deal of time to process the volume of brief memos from your clients, so it is difficult for your company to return the transcriptions within the timeframe that is defined in your company's service level agreement.
 
 - The longer dictations often cannot be transcribed in a single session, and your company's transcribers have difficultly remembering where they left off during their previous session.
 

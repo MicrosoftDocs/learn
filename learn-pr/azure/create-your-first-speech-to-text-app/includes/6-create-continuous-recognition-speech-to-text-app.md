@@ -1,6 +1,6 @@
-In the previous exercise, you learned how to create an application that used single-shot recognition to transcribe shorter audio files. This worked well for the audio memos that your medical clients have provided, but your company needs an application that you can use to transcribe the longer dictation files from your clients.
+In the previous exercise, you learned how to create an application that used single-shot recognition to transcribe brief audio files. This worked well for the audio memos that your medical clients have provided, but your company needs an application that you can use to transcribe the longer dictation files from your clients.
 
-With that in mind, in the next exercise, you'll modify your existing application to use continuous recognition, which will work for both the short memos and longer dictations. Continuous recognition gives you greater control over the speech recognition process, but it requires more code to implement in your application.
+With that in mind, in the next exercise, you'll modify your existing application to use continuous recognition, which will work for both the brief memos and longer dictations. Continuous recognition gives you greater control over the speech recognition process, but it requires more code to implement in your application.
 
 ## Creating an application using continuous recognition to transcribe audio files
 
