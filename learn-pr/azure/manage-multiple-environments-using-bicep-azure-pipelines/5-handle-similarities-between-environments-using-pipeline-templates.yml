@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.handle-similarities-between-environments-using-templates
-title: Handle similarities between environments by using templates
+uid: learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.handle-similarities-between-environments-using-pipeline-templates
+title: Handle similarities between environments by using pipeline templates
 metadata:
   unitType: learning-content
-  title: Handle similarities between environments by using templates
+  title: Handle similarities between environments by using pipeline templates
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 09/08/2021
   author: vermegi
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-handle-similarities-between-environments-using-templates.md)]
+  [!include[](includes/5-handle-similarities-between-environments-using-pipeline-templates.md)]
