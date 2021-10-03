@@ -37,7 +37,8 @@ quiz:
     - content: Parameterize the Bicep template and provide a parameters.json file with the values per environment for any non-secret values. For secret values you provide secret variables in the pipeline either directly or through Key Vault.
       isCorrect: true
       explanation: ""
-  - content: Consider the following pipeline definition: (to be built, but it will be a multistage pipeline with two stages, dev and prod, each deploys the same Bicep template with a specific parameters.json file to a specific resource group, using the same service connection). How can you improve the security of this pipeline?
+  - content: |
+      Consider the following pipeline definition: (to be built, but it will be a multistage pipeline with two stages, dev and prod, each deploys the same Bicep template with a specific parameters.json file to a specific resource group, using the same service connection). How can you improve the security of this pipeline?
     choices:
     - content: Create a new service connection in Azure DevOps. Assign it the existing service principal that is already used by the existing service connection. Use this new service connection in the DeployToProduction stage.
       isCorrect: false

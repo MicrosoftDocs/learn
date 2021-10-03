@@ -6,10 +6,10 @@ Now you can easily make additional environments available if needed.
 
 
 - References
-    - [Template types & usage](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops)
-    - [Security through templates](https://docs.microsoft.com/en-us/azure/devops/pipelines/security/templates?view=azure-devops)
+    - [Template types & usage](/azure/devops/pipelines/process/templates)
+    - [Security through templates](/azure/devops/pipelines/security/templates)
 - References that are helpful internally but won't include in links:
-    - [How to securely use variables and parameters in your pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/security/inputs?view=azure-devops)
-    - [Secure a service connection](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml#secure-a-service-connection)
-    - [Create and target an environment](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops)
-    - [Add & use variable groups](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml)
+    - [How to securely use variables and parameters in your pipeline](/azure/devops/pipelines/security/inputs)
+    - [Secure a service connection](/azure/devops/pipelines/library/service-endpoints?tabs=yaml#secure-a-service-connection)
+    - [Create and target an environment](/azure/devops/pipelines/process/environments)
+    - [Add & use variable groups](/azure/devops/pipelines/library/variable-groups?tabs=yaml)
