@@ -129,7 +129,7 @@ If your application requires words that Azure Cognitive Services' text-to-speech
 
 The process to create an application that will convert SSML to speech using Azure Cognitive Services is similar to the text file that you created in the previous exercise. With that in mind, your application will have to accomplish all of the following tasks.
 
-- Add the `Microsoft.CognitiveServices.Speech` package to your application.
+- Include the `Microsoft.CognitiveServices.Speech` package.
 
 - Read SSML from a file.
 

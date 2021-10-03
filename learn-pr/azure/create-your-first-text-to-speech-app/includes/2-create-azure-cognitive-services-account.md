@@ -34,7 +34,7 @@ In the next exercise, you'll use the Azure Command Line Interface (CLI) to creat
 
     1. After you have reviewed the terms in the **Responsible AI Notice**, select the box to acknowledge that you have read and understood all the terms.
 
-1. After you have entered the above information, click **Review + create**.
+    1. After you have entered the above information, click **Review + create**.
 
     [![Screenshot showing the options for creating a Cognitive Services account.](../media/2-configure-cognitive-services-options-small.png)](../media/2-configure-cognitive-services-options.png#lightbox)
 
