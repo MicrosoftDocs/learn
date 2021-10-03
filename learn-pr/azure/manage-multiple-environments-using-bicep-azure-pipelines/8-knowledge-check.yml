@@ -14,58 +14,37 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: |
+      Consider the following pipeline definition and template: (to be built, but it will be a multistage pipeline with two stages, dev and prod, each uses the same template. The pipeline template deploys a Bicep template with a parameters.json file to a resource group). You need the second stage to deploy to a different resource group with different parameters. How should you best fix this.
     choices:
-    - content: ""
+    - content: You create a separate parameters.prod.json file with parameter values specifically for production. Next, you copy paste the contents of the template in each stage and provide each parameter file separately as well as a different value for the resource group.
+      isCorrect: false
+      explanation: ""
+    - content: You create a separate parameters.prod.json file with parameter values specifically for production. You add 2 parameters to the template, for the parameter file name and the resource group name. Next you pass the specific values for these parameters in the azure-pipeline.yml file.
       isCorrect: true
       explanation: ""
-    - content: ""
+    - content: You add an approval to the production stage so the pipeline pauses right before this stage. The moment the stage is paused, you change the values in the parameters.json file to match those for production and approve the production stage so it runs. 
       isCorrect: false
       explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+  - content: You have a Bicep template you need to deploy to multiple environments through an Azure DevOps pipeline. There are however minor differences in infrastructure in each environment, like different naming for resources, different SKU's you want to use and different secrets for backend databases. How should you provide for these differences?
     choices:
-    - content: ""
+    - content: Copy paste the existing Bicep template for each additional environment and name it main_dev.bicep, main_test.bicep. Update each file with the changes for that specific environment.
+      isCorrect: false
+      explanation: ""
+    - content: Parameterize the Bicep template and provide a parameters.json file with all the values per environment.
+      isCorrect: false
+      explanation: ""
+    - content: Parameterize the Bicep template and provide a parameters.json file with the values per environment for any non-secret values. For secret values you provide secret variables in the pipeline either directly or through Key Vault.
       isCorrect: true
       explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+  - content: Consider the following pipeline definition: (to be built, but it will be a multistage pipeline with two stages, dev and prod, each deploys the same Bicep template with a specific parameters.json file to a specific resource group, using the same service connection). How can you improve the security of this pipeline?
     choices:
-    - content: ""
+    - content: Create a new service connection in Azure DevOps. Assign it the existing service principal that is already used by the existing service connection. Use this new service connection in the DeployToProduction stage.
+      isCorrect: false
+      explanation: ""
+    - content: Create a new service principal, with contributor permissions only on the production resource group. Create a new service connection for production using this new service principal. Use this new service connection on the DeployToProduction stage. 
+      isCorrect: false
+      explanation: ""
+    - content: Create a new service principal, with contributor permissions only on the production resource group. Create a new service connection for production using this new service principal. Use this new service connection on the DeployToProduction stage. Update the existing service connection so it no longer his contributor permissions on the production resource group.
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
       explanation: ""
