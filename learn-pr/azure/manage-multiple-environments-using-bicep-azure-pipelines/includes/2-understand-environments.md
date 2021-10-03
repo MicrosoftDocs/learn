@@ -1,76 +1,69 @@
-With _pipelines_ you can automate the steps in your process. This process might have a need for multiple environments. You may want to first review the changes in a pre-production environment before you move the changes to your production environment. 
+Deployment pipelines enable you to automate the steps in your deployment process. Often, you need to run the process in multiple separate environments. For example, you might want to first review the changes in a pre-production environment before you deploy the changes to your production environment.
 
 In this unit, you'll learn about environments in Azure DevOps.
 
 ## Why do you have multiple environments?
 
-When setting up and executing a deployment process, this process will make changes to the resources you already have up and running. This also involves a risk, since the changes you want to deploy may not behave as expected, or they might even break your current setup. To avoid this risk, it is a good practice to test out the changes you made in a different environment before you deploy them to your production environment. This is then called a pre-production environment. 
+Deployment processes make changes to your Azure resources, including those that are in use. Changing resources involve some risk, because the changes you deploy may not behave as you expect. You might even discover that the changes break your current setup. To minimize the risk of this happening, it's a good practice to try out your changes in a safe way before you deploy them to your production environment. You do this by deploying the changes to a *pre-production* or *non-production environment*.
 
-In a lot of cases you will even see that for better confidence in what is being deployed, people set up a couple of environments that get deployed to one after the other before they deploy to production. Each environment then serves a specific purpose. with each environment the deployment moves through, the confidence in what you're deploying gets higher. 
+Many organizations take this further, and set up multiple non-production environments that they progressively deploy their changes to before releasing to production. Each non-production environment serves a specific purpose. As your deployment moves through each environment, your confidence in the changes gets higher.
 
-A couple of sample environments you may come across are: 
+Some common non-production environments include the following:
 
-- _Development_: This environment is typically only for developers to iterate their changes in and to test things out. You might use this environment to test out a certain configuration setting on a resource or to set up a new website with backend database in a secure way. A lot of these changes and trials might not even make it to production, since developers are testing things out. Only once they are confident their changes serve a business feature correctly, will they give the go to push the changes through to the next environment. Sometimes, often in larger teams, you may see even a development environment per developer, so people don't get in each others' way while working on new features. 
-- _Test_: A test environment is typically an environment being used in a continuous integration process. This environment can be used to run automated tests against. If all automated tests are successful, whatever change someone wants to integrate in the main branch of the project, is ok to be merged. You might for instance test whether there are no policy violations in the newly deployed resources. 
-- _Integration_: This environment is typically used to run tests that have to do with integration with other systems. Often these tests are also run automatically. This environment is often also called System Integration Testing environment or SIT for short. 
-- _User Acceptance Test (UAT)_: Used to run manual tests against, where someone goes through the application and approves the changes that were made comply with the business feature that was asked. 
-- _Demo_: Your team might also want to use a demo environment that holds all the last features to show the application to end users, or to be used in trainings of the application, or a demo environment might be used by sales teams to show off certain capabilities. A demo environment is often a exact replica of your production environment, but without any real life production data. It might even be that you have multiple of these demo environments that serve different purposes.
-- _Pre-production/Staging_: This is an environment that is often an exact mirror of the production environment. It is used to test how the deploy to production will behave and what the resulting environment will look like. It can also be used test out any expected downtime during deployment.
-- _Production_: This is the environment that end users of the application will be using. It is your live environment that you want to protect and keep up and running as much as possible. 
+- **Development**: A development environment is typically used by developers to try their changes in, and to quickly iterate on their work. Development environments often have minimal controls applied to them to help make it easy and quick to try out ideas. You might use a development environment to test out a certain configuration setting on a resource, or to see how you can set up a new website with backend database in a secure way. A lot of these changes and trials might not even make it further in your deployment process, since you're just testing things out and excluding the ideas that don't succeed. After you're confident that a change serves its purpose, you'll allow it to progress to the next environment. In some teams, you might even set up a separate development environment for each team member so that they don't get in each other's way while they're working on new features.
+- **Test**: A test environment is generally used in a continuous integration process. After a change is deployed to a test environment, automated tests can be run against it. If all of the automated tests pass, then the change is safe to merge into the main branch of the project. Automated tests usually check for the core system functionality, as well as things like policy violations in the newly deployed resources.
+- **Integration**: An integration environment is used to run automated or manual tests that have to do with integration with other systems. Often these tests are also run automatically, but many organizations also perform manual testing against this environment. Integration environments are sometimes also called *System Integration Test* or *SIT* environments.
+- **User Acceptance Test**: A user acceptance test (UAT) environment is used to for manual validation. Manual validation is where someone goes through the solution and verifies it behaves as they expect, including that it achieves the necessary business requirements. They then approve the changes that were made so that the deployment can continue.
+- **Pre-production** or **Staging**: The staging environment is often a mirror of the production environment, with the same resource SKUs and configuration. It's used as a final check to verify how the production deployment will behave and what the resulting environment will look like. It can also be used verify whether to expect any downtime during the production deployment.
+- **Production**: Your production environment is the one that end users of the application use. It is your live environment that you want to protect and keep up and running as much as possible. In some organizations you might have multiple production environments, such as in different geographic regions or to serve different groups of customers.
+- **Demo**: Your team might also create demo environments to show the application to show end users, to be used in training, or for sales teams to show certain capabilities to potential customers. A demo environment is often a replica of your production environment, but without any real production data. It might even be that you have multiple of these demo environments that serve different purposes.
 
-You might see variations of the above and maybe more or less environments depending on the application, the size of the team involved, or the importance of the workload. Sometimes some of the roles of the above environments get combined into 1 environment, or they might even be split up further, for instance a production environment that exists in 2 different regions for high availability. 
+<!-- TODO illustration? -->
 
-The main goal of multiple environments is to enhance the confidence you have in a change when it moves from one environment to the next. Also, when a change does not make the bar, you want to be able to stop deployment of that change to any next environment in the chain. 
+You might see variations of these environments. Many organizations only use a few environments, and some use many more. The number and type of environments you use depend on the solution you're deploying, the size of the team building the solution, and the importance of the workload. Sometimes, some of the roles of the above environments get combined into a single environment.
 
-## Azure Pipelines environments concept and features
+Whatever your organization chooses as their list of environments, the goal is to enhance the confidence you have in a change as it progresses through your deployment pipeline. When a change does not meet your quality requirements, you want to be able to stop the deployment of that change to any subsequent environments in the chain.
 
-Azure pipelines also knows the concept of environments. You can use them to mimic in your pipeline the environments that you have in Azure. In your pipeline you link any deployment jobs that you have to a specific environment you have defined. When using environments, you can also add some additional features to your deployments.
+## Pipeline environments
 
-### Checks and Approvals on environments
+Azure Pipelines also has the concept of an environment. You create an Azure Pipelines environment to represent the environment you have in Azure. When you define your pipeline in a YAML file, you link your deployment jobs to a specific environment. By using environments, you get a few benefits and additional features in your pipeline.
 
-An environment in Azure DevOps can have checks and approvals on it. Each time the environment is used in a job in your pipeline, Azure DevOps will make sure these checks and approvals succeed before the job starts executing. 
+### Checks and approvals
 
-You could require a manual approval on a job that deploys to your production environment. The approver will get an email notification before the job executes and can manually verify your policies and procedures are met before approving the deploy to your production environment. The approver can for instance look in the pre-deployment environment whether the deploy there looks as expected and if it does, approve the deploy to production. 
+An environment in Azure DevOps can have checks and approvals on it. Each time the environment is used in a job in your pipeline, Azure DevOps will make sure these checks and approvals succeed before the job starts executing.
 
-Or you could run an automated check to see whether the deployment to the pre-production environment didn't violate any policy assignments you might have before further deploying to production. 
+Manual approvals can be applied to the job that deploys to your production environment. The approver will get an email notification before the job executes and can manually verify your policies and procedures are met before approving the deployment to your production environment. For example, the approver might check that everything is working as they expect in the pre-production environment before they approve the deployment.
 
-Checks and approvals on environments are a way for you to stop further execution of a pipeline in case anything does not look as expected in a previous environment. 
+Or, you could run an automated check to see whether the deployment to the pre-production environment hasn't resulted in an increase in the number of errors reported to Azure Monitor. After the check validates the number of errors hasn't substantially increased, it can allow the deployment to proceed.
 
-### Security on environments
+### Deployment history
 
-You can put additional security on environments in Azure DevOps. Security on environments can be done both with user permissions as well as with pipeline permissions. 
-
-With **user permissions** you can control who can create, view, use and manage your environment. This is done through the respective Creator, Reader, User and Administrator roles: 
-
-- _Creator_: This role allows its members to create environments. Contributors of your Azure DevOps projects are added as member to this role by default. 
-- _Reader_: Members of this role can only view the environment.
-- _User_: Members of this role can use the environment when authoring YAML pipelines. 
-- _Administrator_: Members of this role get the same permissions as the _User_ role, additionally they can also manage all other permissions. 
-
-You need to take extra care when creating environments through YAML pipelines. Environments that get created like this, automatically get contributors and project administrator added to the _Administrator_ role. This is not always the behavior you would like and you should only create environments through your YAML pipeline for development and test environments. For production environments you should create the environment through the Azure DevOps UI and set preferred security directly. 
-
-Next to user permissions, you can also set **pipeline permissions**. These let you define which pipelines in your project (or even across projects) are allowed to use a specific environment. This can be used to lock down a certain environment to some well-defined pipelines that you have created. 
-
-
-### View deployment history
-
-When working with environments, you environment can show you a history of any deployments that happened towards that environment. This gives you a nice way to track back what happened in the environment overtime. It even allows you to track back a deployment to a certain feature request in your DevOps work items or a specific commit in your repository. 
+Azure Pipelines tracks the history of an environment, including the list of deployments that happened. This gives you a nice way to track back what happened in the environment overtime. It even allows you to track back a deployment to a certain feature request in your DevOps work items or a specific commit in your repository. 
 
 This capability is very handy in case you see a problem with a certain deployment to track back which change led to that specific problem. 
 
+### Security
+
+You can apply additional security controls to environments. You can restrict the pipelines that are allowed to use a specific environment, to avoid someone accidentally creating a secondary pipeline that interacts with your production environment.
+
+You can also apply user permissions to control the users who can manage environments. There are different permissions that allow users to create new environments, to modify environments, and to view environments and the history of deployments to them.
+
+<!-- TODO -->
+You need to take extra care when creating environments through YAML pipelines. Environments that get created like this, automatically get contributors and project administrator added to the _Administrator_ role. This is not always the behavior you would like and you should only create environments through your YAML pipeline for development and test environments. For production environments you should create the environment through the Azure DevOps UI and set preferred security directly. 
 
 ## Service connections when you work with multiple environments
 
-Once you start using multiple environments, you want to make each environment completely independent from each other environment. Your development environment shouldn't have any access to your production environment and vice versa. This principle also goes for any deployment pipeline resources you are using. The service connection you use to deploy to your development environment shouldn't be able to access your production environment. 
+When you use multiple environments, you should make each environment independent from all others. For example, your development environment shouldn't have any access to resources within your production environment. This principle also applies to the deployment pipeline's resources. The service connection you use to deploy to your development environment shouldn't be able to access your production environment. This adds another layer of protection to ensure that your non-production deployments don't affect your production environment.
 
-The above principle is needed, since you don't want a deployment to your development environment to potentially influence or even bring down your production environment. 
+You should create separate service connections for each environment. Each service connection should use its own dedicated service principal, with specific permissions to only deploy to the subscription and resource group used by that environment.
 
-This is why you should always create completely separate service connections per environment and each of your service connections should use their own dedicated service principal with specific permissions to only deploy to the subscription and resource group it needs. 
+<!-- TODO illustration -->
 
 > [!IMPORTANT]
-> Use a service connection per environment you plan to deploy to. Each service connection should use its own service principal with specific (least privilege) permission. 
+> Use a separate service principal and service connection for each environment you plan to deploy to. Grant the service principal the least permissions it needs to be able to deploy to its environment.
 
-In your Azure setup you also may want to take this principle of separation of environments into account. In a minimal setup this means to use at least a separate resource group per environment and put proper RBAC in place on each resource group. In case you need network integrated resources, you also separate these on the networking layer so there is no connection between development and production or any other environments. 
+In your Azure configuration, it's also a good idea to separate your environments. At the very least, you should create a separate resource group for each environment. In many situations, it's better to create separate Azure subscriptions for each environment so that you can create multiple resource groups within each environment's subscription.
 
-When you want to have even better separation of environments, you use a different subscription for each environment. Since resources often get spread over multiple resource groups - you might have multiple applications you need to deploy, each residing in their own resource group - using a subscription for a specific environment gives you even better separation of concerns and better security. You can then limit access to your production subscription to a very limited set of people and roles. 
+Apply Azure role assignments so that users and service principals can only access the environments they need. In particular, limit the access to your production subscription to a very small set of people and the deployment service principal for your production environment.
 
+<!-- TODO Gitte: I took out the networking point because I wasn't sure how that related to this point. Let's discuss? -->
