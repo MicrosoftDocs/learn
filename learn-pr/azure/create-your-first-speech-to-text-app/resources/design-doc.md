@@ -143,7 +143,7 @@ Identify the subtasks of *Create your first Azure Cognitive Services Speech-to-T
        ```
 1. **Create a continuous recognition speech-to-text application**
 
-    Continuous recognition allows your applicaiton to control when it should stop recognizing. It requires you to subscribe to the Recognizing, Recognized, and Canceled events to get the recognition results.
+    Continuous recognition allows your application to control when it should stop recognizing. It requires you to subscribe to the Recognizing, Recognized, and Canceled events to get the recognition results.
 
 1. **Exercise - Create a continuous recognition speech-to-text application**
 

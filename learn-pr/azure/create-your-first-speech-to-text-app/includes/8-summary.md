@@ -6,7 +6,7 @@ You created an Azure Cognitive Services account, which you used to create two sp
 
 - A command-line application that used continuous recognition to convert extended speech to text.
 
-You also learned how you can improve your recogition results by providing a list of phrases that might be unfamiliar to the speech recognition engine.
+You also learned how you can improve your recognition results by providing a list of phrases that might be unfamiliar to the speech recognition engine.
 
 ## Learn more
 
