@@ -13,3 +13,5 @@ Now you can easily make additional environments available if needed.
     - [Secure a service connection](/azure/devops/pipelines/library/service-endpoints?tabs=yaml#secure-a-service-connection)
     - [Create and target an environment](/azure/devops/pipelines/process/environments)
     - [Add & use variable groups](/azure/devops/pipelines/library/variable-groups?tabs=yaml)
+- [Pipeline templates](/azure/devops/pipelines/process/templates)
+    - [Use other repositories](/azure/devops/pipelines/process/templates#use-other-repositories)

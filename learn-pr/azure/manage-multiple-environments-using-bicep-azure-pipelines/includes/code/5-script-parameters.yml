@@ -1,0 +1,10 @@
+parameters: 
+- name: environmentName
+  type: string
+  default: 'nonprod'
+- name: serviceConnectionName
+  type: string
+
+steps:
+- script: |
+    echo Hello ${{parameters.environmentName}}!

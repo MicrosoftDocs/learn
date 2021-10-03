@@ -1,0 +1,7 @@
+steps:
+- template: script.yml
+  parameters:
+    environment: nonproduction
+- template: script.yml
+  parameters: 
+    environmentName: production
