@@ -2,16 +2,16 @@ The first step to set up a project on immersive experience for Windows Mixed Rea
 
 ## Steps to install visual studio for StereoKit
 
-1. Download the free edition of Visual Studio Community and ensure get the Visual Studio membership if you don't have it already.
-Figure 1-9 represents how the download button may appear.
-If you have a Visual Studio subscription, You can proceed to download Visual Studio by clicking onto the provided following link: https://developer.microsoft.com/en-us/windows/downloads [SS]
-2. Save the Visual Studio installer to your desired path. After the download is complete, you can start the installation process by running the Visual Studio installer. [SS]shows how the installation appears in the Microsoft Edge browser when you execute it. [SS]
-3. When you run the Visual Studio installation, you'll see a few seconds of initialization followed by a feature selection option, as shown in (SS). Select the ".NET Desktop development and Universal Windows Platform development (for HoloLens)" checkbox in Visual Studio 2019's features list. After making the necessary selections, click "Next" or "Install."[SS]
-4. Visual Studio will begin downloading and installing your selected features when you click "Install." Visual Studio is a huge application that could take several minutes to download and install depending on your internet connection. Be prepared for a lengthy installation process! You may be requested to restart your computer once the installation process is complete. By launching Visual Studio after restarting, you may verify that the installation was successful. Depending on your Visual Studio edition, the welcome screen should look like the one shown in [SS] when you first open it.[SS]
+1. Download the free edition of Visual Studio Community and ensure to get the Visual Studio membership if you don't have it already.
+Figure 1-9 shows how the download button might look.
+If you have the Visual Studio subscription already, you can proceed to download Visual Studio by clicking on the provided following link: https://developer.microsoft.com/en-us/windows/downloads [SS]
+2. Save the Visual Studio installer to your desired path. Once the download is complete, you can start the installation process by running the Visual Studio installer. [SS]shows how the installation appears in the Microsoft Edge browser when you execute it. [SS]
+3. When you run the Visual Studio installation, you'll see a few seconds of initialization followed by a feature selection option, as shown in (SS). First, select the ".NET Desktop development and Universal Windows Platform development (for HoloLens)" checkbox in Visual Studio 2019's features list. Then, after making the required selections, click on "Next" or "Instal[SS]
+4.When you click "Install," Visual Studio will proceed with downloading and installing the features you've specified. Visual Studio is a huge application that could take several minutes to download and install depending on your stable internet connection. You may be requested to restart your computer once the installation process is complete. By launching Visual Studio after restarting, you may verify that the installation was successful. Depending on your Visual Studio edition, the welcome screen should look like the one shown in [SS] when you first open it.[SS]
 
 ## Enable developer mode (for UWP/HoloLens)
 
-Enabling Developer Mode in the UWP/ Hololens allows you to test apps you’re developing more easily. In addition, you can install UWP apps from outside the Windows Store, even if they’re not signed with a valid certificate. This is an essential feature for UWP app developers who want to test their apps on their PCs while still developing.
+Enabling Developer Mode in UWP/Hololens makes it easier to test the applications you're working on. In addition, you can install UWP apps from outside the Windows Store, even if they're not signed with a valid certificate. This is an essential feature for UWP app developers who want to test their apps on their PCs while still developing.
 
 ## HoloLens
 
@@ -24,16 +24,16 @@ Enabling Developer Mode in the UWP/ Hololens allows you to test apps you’re de
 
 ## Windows PC
 
-If you're using a Windows Mixed Reality headset with your PC, you'll have to enable Developer Mode on the computer.
+If you're using a Windows Mixed Reality headset with your PC, you'll have to enable Developer Mode on your computer.
 
-1. Go to the **Settings** menu.
+1. Go to **Settings** menu.
 2. Select **Update and Security**.
 3. Select **For developers**.
 4. Enable **Developer Mode**, read the disclaimer for the selected setting, and then accept the change by selecting Yes.
 
-## StereoKit’s visual studio template.
+## StereoKit’s visual studio template
 
-It is one of the fastest ways to set up a StereoKit project!. There are two different templates to choose from. One is for Universal Windows Platform, and the other is .NET Core. If you're deploying to HoloLens 2, go with UWP, and if you're developing for a desktop Windows or Linux environment, go with .NET Core. Because UWP generates apps, iteration is slower, so use it only if HoloLens is crucial to you.
+It's one of the quickest methods to get a StereoKit project started. There are two templates provided: one for Universal Windows Platform and the other for .NET Core. If you're deploying on HoloLens 2 platform, use UWP; if you're developing for a desktop Windows or Linux environment, use .NET Core. Iteration is slower with UWP because it builds apps, so use it only if HoloLens is essential to you.
 
 ## Steps to install StereoKit’s visual studio template
 
@@ -42,9 +42,3 @@ It is one of the fastest ways to set up a StereoKit project!. There are two diff
 
 *Note:*
  You may also install the [NuGet package](https://www.nuget.org/packages/StereoKit) directly into your project.
-
-
-
-
-
-
