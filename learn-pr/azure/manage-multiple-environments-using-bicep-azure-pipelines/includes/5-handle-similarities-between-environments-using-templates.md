@@ -62,7 +62,7 @@ You can use pipeline *conditions* to specify whether a step, job, or even stage 
 
 For example, imagine you define a pipeline template that runs a script steps. You'll reuse the template for each of your environments. When you deploy your production environment, you want to run an additional step. Here's how you can achieve that by using the `if` macro:
 
-:::code language="yaml" source="code/5-script-conditions.yml" highlight="12" :::
+:::code language="yaml" source="code/5-script-conditions.yml" highlight="10" :::
 
 The condition here translates to *if the environmentName parameter's value is equal to 'production', then run the following steps*.
 
