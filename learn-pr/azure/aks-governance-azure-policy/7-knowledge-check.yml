@@ -44,7 +44,7 @@ quiz:
           isCorrect: false
           explanation: "Azure Policies do not prevent other Policies from being deployed because of a contradiction"
 
-    - content: "You have Azure Policies applied the the Subscription level, but one of your AKS clusters needs to be exempt from a specific policy, what's the best way to handle that?"
+    - content: "You have an Azure Policy applied the the Subscription level, but one of your AKS clusters needs to be exempt from a specific policy, what's the best way to handle that?"
       choices:
         - content: "Move the AKS cluster to another Subscription and apply the Policy to the previous Subscription."
           isCorrect: false
