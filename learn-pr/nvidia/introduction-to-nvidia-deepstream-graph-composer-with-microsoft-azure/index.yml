@@ -38,5 +38,10 @@ units:
 - learn.nvidia.introduction-to-nvidia-deepstream-graph-composer-with-microsoft-azure.1-introduction
 - learn.nvidia.introduction-to-nvidia-deepstream-graph-composer-with-microsoft-azure.2-introduction-to-nvidia-deepstream-graph-composer
 - learn.nvidia.introduction-to-nvidia-deepstream-graph-composer-with-microsoft-azure.3-install-nvidia-deepstream-graph-composer
+- learn.nvidia.introduction-to-nvidia-deepstream-graph-composer-with-microsoft-azure.4-run-an-nvidia-deepstream-graph-composer-reference-application
+- learn.nvidia.introduction-to-nvidia-deepstream-graph-composer-with-microsoft-azure.5-package-nvidia-deepstream-graph-composer-application-into-a-containerized-workload
+- learn.nvidia.introduction-to-nvidia-deepstream-graph-composer-with-microsoft-azure.6-publish-nvidia-deepstream-graph-composer-container-to-azure-container-registry
+- learn.nvidia.introduction-to-nvidia-deepstream-graph-composer-with-microsoft-azure.7-knowledge-check
+- learn.nvidia.introduction-to-nvidia-deepstream-graph-composer-with-microsoft-azure.8-summary
 badge:
   uid: learn.nvidia.introduction-to-nvidia-deepstream-graph-composer-with-microsoft-azure.badge

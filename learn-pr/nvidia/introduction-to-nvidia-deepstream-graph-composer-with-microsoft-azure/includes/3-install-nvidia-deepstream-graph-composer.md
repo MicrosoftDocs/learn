@@ -4,14 +4,14 @@ In this section we will install the prerequsites and dependencies necessary to i
 
     The following instructions assume we are running in a terminal on an x86 based host running Ubuntu 18.04.
 
-    ```
+    ```Bash
     curl -fsSL https://get.docker.com -o get-docker.sh
     sudo sh get-docker.sh
     ```
 
 2. Next, we need to install some of the base dependencies used by the Graph Composer application at runtime.  This assist in drawing the user interface of the application and provide ability to interact with available hardware acceleration on the host machine.
 
-    ```
+    ```Bash
     sudo apt install \
     mesa-utils \
     vulkan-utils \
@@ -23,7 +23,8 @@ In this section we will install the prerequsites and dependencies necessary to i
     Open a browser on the host machine, and navigate to the [x86 release of the DeepStream 6.0 Graph Composer](https://developer.nvidia.com/assets/deepstream/secure/deepstream_6.0_ea/graph-composer-0.5.0_x86_64.deb). 
     
     This should download into your local user's `Downloads` directory. Navigate to the download location and install the package with:
-    ```
+    
+    ```Bash
     cd ~/Downloads
     sudo dpkg -i <name of downloaded package>
     ```
@@ -33,7 +34,8 @@ In this section we will install the prerequsites and dependencies necessary to i
     Open a browser on the host machine, and navigate to the [Graph Composer Reference Examples](https://developer.nvidia.com/assets/deepstream/secure/deepstream_6.0_ea/deepstream-reference-graphs-6.0.deb).
 
     This should download into your local user's `Downloads` directory. Navigate to the download location and install the package with:
-    ```
+    
+    ```Bash
     cd ~/Downloads
     sudo dpkg -i <name of downloaded package>
     ```
