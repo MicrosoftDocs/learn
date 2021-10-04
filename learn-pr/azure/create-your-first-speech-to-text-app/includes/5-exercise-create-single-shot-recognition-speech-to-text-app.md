@@ -30,7 +30,7 @@ In this exercise, you'll create an application that uses single-shot recognition
 In the Cloud Shell on the right, run the following command to download a sample WAVE file that contains a series of quotes from William Shakespeare's play "As you like it."
 
 ```bash
-curl https://aks.ms/TBD -o Shakespeare.wav
+curl -L https://aka.ms/ShakespeareWAV -o Shakespeare.wav
 ```
 
 You'll use this WAVE file for the application in this exercise, and the application in the next exercise.
