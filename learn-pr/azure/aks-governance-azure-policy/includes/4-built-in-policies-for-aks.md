@@ -26,6 +26,6 @@ Azure Policy for Kubernetes also has multiple policy initiatives. A policy initi
 - Kubernetes cluster pod security baseline standards for Linux-based workloads
 - Kubernetes cluster pod security restricted standards for Linux-based workloads
 
-The [baseline version](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policySetDefinitions/Kubernetes/Kubernetes_PSPBaselineStandard.json) includes 5 policy definitions focused on providing a security baseline for your Kubernetes workloads. The [restricted version](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policySetDefinitions/Kubernetes/Kubernetes_PSPRestrictedStandard.json) includes a total of 8 policy definitions for more security restricted environments. 
+The [baseline version](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policySetDefinitions/Kubernetes/Kubernetes_PSPBaselineStandard.json) includes five policy definitions focused on providing a security baseline for your Kubernetes workloads. The [restricted version](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policySetDefinitions/Kubernetes/Kubernetes_PSPRestrictedStandard.json) includes a total of eight policy definitions for more security restricted environments. 
 
 You can assign these initiatives to your Azure Management groups, Subscriptions or Resource groups with an AKS cluster to enforce a consistent security baseline.

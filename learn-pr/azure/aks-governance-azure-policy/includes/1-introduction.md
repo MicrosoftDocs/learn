@@ -11,7 +11,7 @@ In this module, you'll learn how to achieve this by using Azure policy for Kuber
 By the end of this module, you'll be able to:
 
 - Understand how Azure Policy integrates with Azure Kubernetes Service
-- Deploy the Azure Policy and Azure Monitor add-on for Azure Kubernetes Service
+- Deploy the Azure Policy add-on for Azure Kubernetes Service
 - Configure policies to manage compliance state of an Azure Kubernetes Service cluster
 - Monitor cluster compliance status using Azure policy
 

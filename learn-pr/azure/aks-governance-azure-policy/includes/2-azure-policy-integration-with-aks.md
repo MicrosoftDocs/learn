@@ -28,7 +28,7 @@ The Azure Policy add-on for AKS uses a number of components under the covers, wh
 
 To enforce policies on top of the Kubernetes API, Azure Policy for Kubernetes makes use of a number of tools: namely admission webhooks, Open Policy Agent (OPA), Gatekeeper and finally an Azure Policy pod.
 
-At the lowest Azure Policy leverages [admission webhooks](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/) in Kubernetes. Admission webhooks are a built-in functionality of the Kubernetes API. They allow the Kubernetes API to call an external webhook to validate if a request to create, delete, modify or connect to a resource should be allowed or denied (ValidatingAdmissionWebhook) or if the request should be changed (MutatingAdmissionWebhook).
+At the lowest Azure Policy leverages [admission webhooks](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/) in Kubernetes. Admission webhooks are a built-in functionality of the Kubernetes API. They allow the Kubernetes API to call an external webhook to validate if a request to create, delete, modify or connect to a resource should be allowed or denied (`ValidatingAdmissionWebhook`) or if the request should be changed (`MutatingAdmissionWebhook`).
 
 [Open Policy Agent (OPA)](https://www.openpolicyagent.org/) is an open source policy engine. OPA provides a high-level language to define policies in. You can use OPA to enforce policies in your own microservices, in CI/CD pipelines and in Kubernetes. Azure policy for Kubernetes translates Azure policies into the OPA language to be deployed on your Kubernetes cluster.
 

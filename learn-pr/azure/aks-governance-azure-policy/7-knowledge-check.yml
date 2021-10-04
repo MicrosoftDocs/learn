@@ -14,7 +14,7 @@ content: |
   [!include[](includes/7-check-your-knowledge.md)]
 quiz:
   questions:
-    - content: "If a Policy is applied with the deny option to a resource group, what happens to already existing non-compliant resources in that group?"
+    - content: "If a Policy is applied with the deny option to a Resource group, what happens to already existing non-compliant resources in that group?"
       choices:
         - content: "The non-compliant resources get deleted."
           isCorrect: false
@@ -29,32 +29,32 @@ quiz:
           isCorrect: false
           explanation: "Azure Policies does not render already deployed resources unusable"
     
-    - content: "What happens when you have a policy set as deny at the subscription level and the same Policy set as audit at the subscription level?"
+    - content: "What happens when you have a Policy set as deny at the Subscription level and the same Policy set as audit at the Resource group level?"
       choices:
-        - content: "The two Policies will cancel each other and will have no effect"
+        - content: "The two Policies would cancel each other out and have no effect"
           isCorrect: false
           explanation: "Policies do not cancel each other out when there is a conflict."
-        - content: "The Policy set as audit will take effect."
+        - content: "The Policy set as audit would take effect."
+          isCorrect: false
+          explanation: "Even though the resource group scope is closer to the resource than the subscription, the more restrictive Policy would take effect"
+        - content: "The Policy set as deny would take effect."
           isCorrect: true
-          explanation: "Because the resource group scope is closer to the resource than the subscription, the Policy set at the subscription level will take effect"
-        - content: "The Policy set as deny will take effect."
+          explanation: "Correct. The more restrictive Policy would take effect."
+        - content: "You would get an error when you attempt to deploy the second Policy that contradicts the first one, so you would be unable to proceed."
           isCorrect: false
-          explanation: "This is not correct."
-        - content: "You will get an error when you attempt to deploy the second policy that contradicts the first one and will be unable to proceed."
-          isCorrect: false
-          explanation: "Azure Policies do not prevent other Policy from being deployed because of a contradiction"
+          explanation: "Azure Policies do not prevent other Policies from being deployed because of a contradiction"
 
-    - content: "How do you ensure that a Policy applies to all the resources except a particular resource?"
+    - content: "You have an Azure Policy applied the the Subscription level, but one of your AKS clusters needs to be exempt from a specific policy, what's the best way to handle that?"
       choices:
-        - content: "Move the resource to another resource group and apply the Policy to the previous resource group."
+        - content: "Move the AKS cluster to another Subscription and apply the Policy to the previous Subscription."
           isCorrect: false
-          explanation: "This would solve the problem but may not work if that resource needs to stay in that resource group for whatever reason."
-        - content: "Apply the Policy at the resource level to the resources that need to have it in that resource group."
+          explanation: "This would solve the problem but may not work if that resource needs to stay in that Subscription for business reasons."
+        - content: "Apply the Policy at the resource level to the resources that need to have it in that Subscription."
           isCorrect: false
           explanation: "You cannot apply a Policy at the resource level."
         - content: "Tell your coworkers not to deploy resources that are not compliant with that Policy and add it to your training manual."
           isCorrect: false
           explanation: "This may work but may require a lot of manual work. This is not the best option in this scenario"
-        - content: "Add an exclusion to the resource that the Policy should not apply to."
+        - content: "Add an exclusion to the AKS cluster Resource group that the Policy should not apply to."
           isCorrect: true
-          explanation: "Azure Policies allows you to add exclusions you can use to exempt certain resources from having to comply with the Policy."
+          explanation: "Correct. Azure Policies allows you to add exclusions you can use to exempt certain resources from having to comply with the Policy."
