@@ -42,7 +42,7 @@ Now that we have published a containerized DeepStream Graph workload to our Azur
 
 1. When you are finished, select *Review + Create* at the bottom of the screen:
 
-    ![IoT Edge Add Module Section Continued](../media/iothub-modulereview.png)
+    ![IoT Edge Add Module Review Section](../media/iothub-modulereview.png)
 
 1. You should now see a screen that displays the deployment specification that is about to be submitted to your device.  Verify that the contents look similar to the example below:
 
@@ -126,7 +126,7 @@ Now that we have published a containerized DeepStream Graph workload to our Azur
 
     If your device is connected to a display, you should be able to see the visualized output of the DeepStream Graph application as shown below:
 
-    ![IoT Edge Add Module Section Continued](../media/jetson-edgemodulerunning.png)
+    ![IoT Edge Module running on Jetson hardware](../media/jetson-edgemodulerunning.png)
 
 
 1. Monitor the output of the `deepstream_test4_jetson` module by running the following commands in a terminal on the NVIDIA Jetson Embedded device:

@@ -1,6 +1,6 @@
 In this module, you learned how to:
 
-- Install the DeepStream Graph Composer application and reference graphs
-- Develop IVA applications using the DeepStream Graph Composer
-- Package DeepStream Graph Composer Applications into a container using container-builder
-- Publish DeepStream Graph Composer container workloads into an Azure Container Registry for secure redistribution
+- Modify a DeepStream Graph Composer Application to Publish Data to an Azure IoT Hub
+- Build and Publish cross-platform DeepStream container images to an Azure Container Registry
+- Configure Azure IoT Edge to run on NVIDIA Embedded Hardware
+- Deploy cross-platform DeepStream images to NVIDIA embedded devices using Azure IoT Edge
