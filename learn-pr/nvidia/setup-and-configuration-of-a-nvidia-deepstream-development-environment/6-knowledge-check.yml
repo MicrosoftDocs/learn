@@ -46,6 +46,6 @@ quiz:
     - content: '`[tiled-display]rows` and `[tiled-display]columns`'
       isCorrect: true
       explanation: These parameters can allow you to render an determined amount of input sources to the on-screen display that is equal to `[tiled-display]rows` * `[tiled-display]columns`.
-    - content: '[tiled-display]num-sources'
+    - content: '`[tiled-display]num-sources`'
       isCorrect: false
       explanation: The `num-sources` property can be applied to sources of type `File` to denote the creation N instances of `uri`.

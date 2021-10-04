@@ -1,5 +1,3 @@
-# Summary
-
 In this module, you learned how to:
 
 - Describe the components of Intelligent Video Applications

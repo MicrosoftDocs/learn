@@ -84,7 +84,7 @@ Now that we can run the DeepStream reference applications, we now look at how to
 
 3. Run the modified configuration with:
 
-    ```
+    ```Bash
     cd /opt/nvidia/deepstream/deepstream-6.0/samples/configs/deepstream-app
     deepstream-app -c source4_1080p_dec_infer-resnet_tracker_sgie_tiled_display_int8_modified.txt
     ```
