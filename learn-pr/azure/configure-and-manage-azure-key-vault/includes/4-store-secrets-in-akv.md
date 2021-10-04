@@ -8,7 +8,7 @@ Let's start by creating a new Key Vault in the Azure portal.
 
 1. Select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the *Search services and marketplace*, search for select *Key Vault* to find the Azure Key Vault service. The **Key Vault** pane appears.
+1. In the *Search services and marketplace*, search for and select *Key Vault* to find the Azure Key Vault service. The **Key Vault** pane appears.
 
 1. Select **Create**. The **Create key vault** pane appears.
 
