@@ -9,6 +9,7 @@ metadata:
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
 durationInMinutes: 2 # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/6-summary.md)]

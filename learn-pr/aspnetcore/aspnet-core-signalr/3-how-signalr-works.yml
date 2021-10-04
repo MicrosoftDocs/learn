@@ -9,6 +9,7 @@ metadata:
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-aspnetcore
 durationInMinutes: 8 # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/3-how-signalr-works.md)]
