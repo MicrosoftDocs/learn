@@ -5,10 +5,10 @@ metadata:
   title: Demo-Introduction
   description: "Design for data redundancy"
   ms.date: 10/04/2021
-  author: benjiang
+  author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
