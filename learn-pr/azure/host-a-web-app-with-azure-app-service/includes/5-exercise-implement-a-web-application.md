@@ -1,4 +1,4 @@
-﻿In this unit, you will use developer tools to create the code for a starter web application.
+In this unit, you'll use developer tools to create the code for a starter web application.
 
 ## Create a new web project
 
@@ -8,7 +8,7 @@ The heart of the .NET CLI tools is the `dotnet` command-line tool. Using this co
 
 First, let's install the appropriate version of `dotnet` into the Cloud Shell. For this exercise, we'll be using SDK version 3.1.102.
 
-1. Run the following commands in Azure Cloud Shell on the right to install it.
+1. Run the following commands in Azure Cloud Shell on the right to download and install dotnet.
 
     ```bash
     wget -q -O - https://dot.net/v1/dotnet-install.sh | bash -s -- --version 3.1.102
@@ -16,7 +16,7 @@ First, let's install the appropriate version of `dotnet` into the Cloud Shell. F
     echo "export PATH=~/.dotnet:\$PATH" >> ~/.bashrc
     ```
 
-1. Next, run the following commands to create a new ASP.NET Core MVC application named "BestBikeApp".
+1. Next, run the following command to create a new ASP.NET Core MVC application named "BestBikeApp".
 
     ```bash
     dotnet new mvc --name BestBikeApp
@@ -26,7 +26,7 @@ The command will create a new folder named "BestBikeApp" to hold your project.
 
 ### Optionally test your web app
 
-If you open a second command shell session, for example by browsing to <https://shell.azure.com/>, you can test your application locally on Azure. To do so, use the following steps:
+Open a second command shell session, for example by browsing to <https://shell.azure.com/>. You can test your application locally on Azure. To do so, use the following steps:
 
 1. From your primary command shell session, run the following commands to build and run your web application.
 
@@ -58,7 +58,30 @@ If you open a second command shell session, for example by browsing to <https://
     curl -kL http://127.0.0.1:5000/
     ```
 
-    You should see some HTML appear.
+    You should see some HTML appear, ending in the following lines:
+    
+   c
+            <div class="text-center">
+            <h1 class="display-4">Welcome</h1>
+            <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        </div>
+
+                </main>
+            </div>
+
+            <footer class="border-top footer text-muted">
+                <div class="container">
+                    &copy; 2021 - BestBikeApp - <a href="/Home/Privacy">Privacy</a>
+                </div>
+            </footer>
+            <script src="/lib/jquery/dist/jquery.min.js"></script>
+            <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+
+        </body>
+        </html>
+      ```  
+  
 
 1. From your primary command shell session, press <kbd>Ctrl+C</kbd> to quit your web app.
 
