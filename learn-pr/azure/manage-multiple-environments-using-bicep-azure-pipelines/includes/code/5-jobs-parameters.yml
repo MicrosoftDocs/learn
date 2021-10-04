@@ -1,4 +1,4 @@
-parameters: 
+parameters:
 - name: environmentName
   type: string
   default: 'nonprod'

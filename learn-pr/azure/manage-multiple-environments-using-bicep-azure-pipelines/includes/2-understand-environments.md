@@ -18,11 +18,15 @@ Some common non-production environments include the following:
 - **Production**: Your production environment is the one that end users of the application use. It is your live environment that you want to protect and keep up and running as much as possible. In some organizations you might have multiple production environments, such as in different geographic regions or to serve different groups of customers.
 - **Demo**: Your team might also create demo environments to show the application to show end users, to be used in training, or for sales teams to show certain capabilities to potential customers. A demo environment is often a replica of your production environment, but without any real production data. It might even be that you have multiple of these demo environments that serve different purposes.
 
-<!-- TODO illustration? -->
-
 You might see variations of these environments. Many organizations only use a few environments, and some use many more. The number and type of environments you use depend on the solution you're deploying, the size of the team building the solution, and the importance of the workload. Sometimes, some of the roles of the above environments get combined into a single environment.
 
 Whatever your organization chooses as their list of environments, the goal is to enhance the confidence you have in a change as it progresses through your deployment pipeline. When a change does not meet your quality requirements, you want to be able to stop the deployment of that change to any subsequent environments in the chain.
+
+In your toy company, you decide you'll start with a basic set of environments for your website. In addition to your production environment, you'll create one non-production environment:
+
+TODO image
+
+You'll update your pipeline to deploy to your non-production environment. If that succeeds, you'll deploy to your production environment.
 
 ## Pipeline environments
 

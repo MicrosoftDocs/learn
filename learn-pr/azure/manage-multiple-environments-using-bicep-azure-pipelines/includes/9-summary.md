@@ -1,9 +1,6 @@
-Your website's development team wanted to be able to deploy their changes within a Test environment, while keeping your production environment available for end users. 
+Your website's development team wanted to be able to deploy their changes within a non-production environment, and remove the risk of their changes accidentally affecting your customers accessing the production website.
 
-In this module you learned how to add multiple environments to a YAML pipeline. You did this in such a way to allow for reuse. You were able to generalize the similar steps in a pipeline template and to vary on differences across environments by using parameters. 
-
-Now you can easily make additional environments available if needed. 
-
+In this module you learned how to work with multiple environments in a deployment pipeline. You were able to generalize the similar steps in a pipeline template, and to handle the differences between your environments by storing Bicep parameters in variables and variable groups.
 
 - References
     - [Template types & usage](/azure/devops/pipelines/process/templates)

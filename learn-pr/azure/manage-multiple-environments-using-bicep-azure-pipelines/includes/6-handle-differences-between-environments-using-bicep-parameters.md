@@ -1,322 +1,115 @@
-_Pipeline templates_ help you to handle repetition in pipelines. However, with repetition might also come small variations. Parameters will help you in handling these differences between environments, both in your pipeline templates, but also in your Bicep templates. 
+You've already learned about Bicep parameters, which help you to specify values that can change between deployments of your Bicep files. Parameters are commonly used to support the differences between your environments. For example, in your non-production environment you often want to deploy inexpensive SKUs of your Azure resources, while in production you want to deploy SKUs that have better performance. Or, you might want to use different names for different environments.
 
-## Handle differences between environments by using parameters in your Bicep template
+When you deploy your Bicep file, you can indicate the values of each parameter. When you use a pipeline, there are several options for how you can specify the values for each parameter, and how you specify separate values for each environment. In this unit, you'll learn about the approaches yuo can consider for specifying Bicep parameter values in a pipeline.
 
-The first part where differences in deployments between environments might pop up is when deploying resources from your Bicep template to your Azure environment. It might be that in a test environment you want to deploy a smaller, less expensive version of a resources, whereas in production you want to deploy a bigger version with better performance. Or it might be that you need to comply to a certain naming convention, where the name of a resource contains the environment it is deployed to. 
+## Parameter files
 
-An example might be that in your test environment you want to deploy a F1 sku of app services, and name the website ToyWebsite-tst. Where in production you want to use the S1 sku of app services, and name the website ToyWebsite-prd.
+A parameter file is a JSON-formatted file that lists the parameter values you want to use for each environment. Here's an example of a parameter file:
 
-To make these differences across environments possible in your Bicep template, you can make use of parameters. Parameters let the users of your template input alternative values. You define a parameter in your Bicep template like this: 
-
-```YAML
-@description('The environment you want to deploy to. This parameter should have a value of dev, tst or prd.')
-@allowed([
-  'dev'
-  'tst'
-  'prd'
-])
-param environmentName string = 'dev'
-```
-
-The above parameter definition has the following parts: 
-
-- _description_ this is a human readable description of your parameter.
-- _allowed_ indicates the possible values this parameter is allowed to have. In this case 'dev', 'tst' and 'prd' are the only values allowed.
-- _param_ indicates to Bicep that you are declaring a parameter.
-- _environmentName_ the name of this parameter.
-- _string_ the type of this parameter. Other possible types are _int_, _bool_, _object_ and _array_.
-- _= 'dev'_ the default value of this parameter in case no value is provided. 
-
-When executing a Bicep deployment with 'az deployment group create' you can indicate an alternative value for each parameter in the Bicep file: 
-
-```CLI
-az deployment group create --resource-group the-resource-group --template-file deploy/main.bicep --parameters environmentType=tst
-```
-
-You can also provide a parameters file with the values you want to use for the parameters. A parameter file is a file in JSON format that indicates the parameter values you want to use for each environment. In our example you could have a parameter file parameters.tst.json: 
-
-```JSON
+```json
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
     "environmentName": {
-      "value": "tst"
+      "value": "NonProduction"
     }
   }
 }
 ```
 
-And a parameters.prd.json file: 
-
-```JSON
-{
-  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
-  "contentVersion": "1.0.0.0",
-  "parameters": {
-    "environmentName": {
-      "value": "prd"
-    }
-  }
-}
-```
-
-When deploying your Bicep template you use one of these parameter files: 
-
-```CLI
-az deployment group create --resource-group the-resource-group --template-file deploy/main.bicep --parameters parameters.prd.json
-```
-
-> [!WARNING]
-> Beware when you need to pass secure values to parameters in a Bicep file. It is not safe to use a parameters file for these, since there is no way to obfuscate the secure value in the parameters file. You can however use other means to pass in the value for such a parameter, which we will handle in the next sections. 
-
-## The approaches you can use to specify parameters, with their pros and cons
-
-The above way of passing parameters to a pipeline template is easy to do, however it will not be suitable in all cases. Suppose you want to pass secure values to the pipeline template, the above way of passing that value will be in clear text, which is not suitable for secure values. Or suppose you want to have certain values that need to be passed at multiple places, but you want to define the value only once, so you can easily update it in case you need to. There are a couple of ways in which you can pass parameter values to pipeline templates or in which you can use values in your pipelines. 
-
-### Parameter files
+Parameter files can be committed to your Git repository with your Bicep file. You can then refer to the parameter file in your template. If you use parameter files, it's a good idea to establish a consistent environment naming strategy. For example, you might name your parameter files *azuredeploy.parameters.ENVIRONMENT_NAME.json*, like *azuredeploy.parameters.production.json*. THen, you can use a pipeline template parameter to automatically select the correct parameter file:
 
 We already mentioned parameter files as one way to pass parameters to a Bicep template. This is a good way of passing parameter values that are not secure values. You indicate all values in the parameter file and you can even vary which parameter file to use when calling a pipeline template: 
 
-```YAML
-# deploy-environment.yml file
-parameters: 
-- name: parameterfile
-  type: string
-- name: serviceConnection
-  type: string
-  default: 'ServiceConnectionName'
-- name: resourceGroupName
-  type: string
-  default: 'ToyWebsite'
+:::code language="yaml" source="code/6-parameter-file.yml" highlight="25" :::
 
-stages:
-- stage: 
-  jobs: 
-  - job: 
-    steps:
-      - task: AzureCLI@2
-        name: Deploy
-        inputs:
-          azureSubscription: ${{parameters.serviceConnection}}
-          scriptType: 'bash'
-          scriptLocation: 'inlineScript'
-          inlineScript: |
-            az deployment group what-if \
-              --resource-group ${{parameters.resourceGroupName}} \
-              --template-file deploy/main.bicep \
-              --parameters ${{parameters.parameterfile}}
-```
+An advantage of using this approach is that your pipeline YAML files don't need to contain a list of parameters that need to be passed in individually. This is especially beneficial when you have a large number of parameters. All of the parameters are grouped together and defined in a single JSON file. The parameter files are also part of your Git repository, so they can get versioned in the same way as all your other code.
 
-```YAML
-- template: deploy-environment-.yml
-  parameters:
-    parameterfile: parameters.tst.json
-    serviceConnection: ServiceConnectionNameTst
-    resourceGroupName: ToyWebsiteTst
-- template: deploy-environment-.yml
-  parameters:
-    parameterfile: parameters.prd.json
-    serviceConnection: ServiceConnectionNamePrd
-    resourceGroupName: ToyWebsitePrd
-```
+However, parameter files shouldn't be used for secure values. There's no way to protect the values of the secrets in the parameters files, and you should never commit secure values to your Git repository. Also, every time you want to change a parameter's value, you need to update the corresponding parameter file, commit the change, and then re-run your pipeline. In some situations, this might be too complex or slow.
 
-The advantage of using this approach is that neither your pipeline template, neither your main pipeline YAML file are polluted with a whole list of parameters that need to be passed one by one. All parameters are nicely grouped in your parameter JSON file. The parameter files are also part of your coding repository, so they can get versioned in the same way as all your other code. 
+## Pipeline variables
 
-A disadvantage of this approach is that it can't be used for secure values. 
+Azure Pipelines enables you to store *pipeline variables*, which are useful for values that might be different between environments, as well as for values that you only want to define once and then reuse throughout your pipeline. Azure Pipelines supports several ways to define variables.
 
-### Pipeline variables 
+### Variables defined in a YAML file
 
-If you need to pass secure values, like a database password in your pipeline templates and to your Bicep template, a first approach you can use is by utilizing pipeline variables and by marking the variable as secure. This will obfuscate the variable value in your pipeline logs. You add a secure pipeline variable in the Azure DevOps UI. You could for instance have the following pipeline variables: 
+You can define variables and set their values within a YAML file. This is useful when you need to reuse the same value multiple times. But, like Bicep parameter files, YAML files aren't suitable for secrets.
 
-- _ServiceConnectionTst_, not secure, value: ToyWebsiteSC
-- _resourceGroupNameTst_, not secure, value: ToyWebsiteTst
-- _parameterfileTst_, not secure, value: parameters.tst.json
-- _databasePasswordTst_, secure, value: abc1234!
-- _ServiceConnectionPrd_, not secure, value: ToyWebsitePrdSC
-- _resourceGroupNamePrd_, not secure, value: ToyWebsitePrd
-- _parameterfilePrd_, not secure, value: parameters.prd.json
-- _databasePasswordPrd_, secure, value: abc1234!_more_secure
+### Variables defined in the web interface
 
-You can now use these variables when you use your pipeline templates: 
+The first type of variable is one that you define by using the Azure DevOps web interface. You can change the variable values any time, and next time the pipeline runs it uses the updated values.
 
-```YAML
-- template: deploy-environment-.yml
-  parameters:
-    parameterfile: $(parameterfileTst)
-    serviceConnection: $(ServiceConnectionTst)
-    resourceGroupName: $(resourceGroupNameTst)
-    databasePassword: $(databasePasswordTst)
-- template: deploy-environment-.yml
-  parameters:
-    parameterfile: $(parameterfilePrd)
-    serviceConnection: $(ServiceConnectionPrd)
-    resourceGroupName: $(resourceGroupNamePrd)
-    databasePassword: $(databasePasswordPrd)
-```
+Variables defined using the web interface can be marked as secret, which tells Azure Pipelines to try to hide the variable's value in the pipeline logs. This means you can store values that your Bicep file then accepts as parameters with the `@secure()` decorator.
 
-Usage of these parameters in the pipeline template itself is similar to how they were used before:
-
-```YAML
-# deploy-environment.yml file
-parameters: 
-- name: parameterfile
-  type: string
-- name: serviceConnection
-  type: string
-  default: 'ServiceConnectionName'
-- name: resourceGroupName
-  type: string
-  default: 'ToyWebsite'
-- name: databasePassword
-  type: string
-
-stages:
-- stage: 
-  jobs: 
-  - job: 
-    steps:
-      - task: AzureCLI@2
-        name: Deploy
-        inputs:
-          azureSubscription: ${{parameters.serviceConnection}}
-          scriptType: 'bash'
-          scriptLocation: 'inlineScript'
-          inlineScript: |
-            az deployment group what-if \
-              --resource-group ${{parameters.resourceGroupName}} \
-              --template-file deploy/main.bicep \
-              --parameters ${{parameters.parameterfile}} \
-              --parameters dbPass=${{parameters.databasePassword}}
-```
-
-Advantage of this approach is that it can be used for secure values you may want to pass. As you can see in the above sample, this can be combined with a parameter file. 
-
-However, beware that with this approach, it won't keep anyone from writing out a secure value in a script step in your pipeline to a file. You will need to trust whoever is providing you with the pipeline templates to make proper usage of secure values.
+<!-- TODO this is in the 'build your first' pipeline module, unit 4 - try to refactor to an include file -->
+> [!NOTE]
+> By default, Azure Pipelines obfuscates secret variable values in pipeline logs, but you need to follow good practices as well. Your pipeline steps have access to all variable values, including secrets. If your pipeline includes a step that doesn't handle a secure variable securely, there's a chance the secret variable might be shown in the pipeline logs.
 
 ### Variable groups
 
-A special type of variable you can use in a pipeline or in a pipeline template, is a _variable group_. A variable group gets defined in the Azure DevOps UI, in the Library menu and, as the name implies, it groups a couple of variables. The big advantage of variable groups is that they can be reused across multiple pipelines. They can also be used to store secure values. 
+You can also define *variable groups*, which are sets of variables. Like variables, you define these by using the Azure DevOps web interface. You can also use variable groups to store secrets.
 
-Suppose you have defined a variable group and named it _ToyWebsiteTst_ and you add variables to it named _EnvironmentType_, _ServiceConnectionName_ and _ResourcegroupName_. You can now refer to this variable group at the top of your pipeline.
+Unlike normal variables, you need to explicitly import a variable group into a pipeline by using the `group` keyword in a `variables` section, like this:
 
-```YAML
+```yaml
 variables: 
-- group: ToyWebsiteTst
-- name: additionalVariable
-  value: somevalue
+- group: MyVariableGroup
 ```
 
-In the above sample we also define an extra variable _additionalVariable_ with a value of _somevalue_ to show that you can combine variable groups and regular variables in a pipeline. 
+When you work with pipeline templates, you can name your variable groups so that you can easily load them by using a template parameter. For example, suppose your pipeline deploys to two environments, and you need to define a set of variables for each environment. You could name your variable groups like this:
 
-Further down your pipeline you can now use the _EnvironmentType_, _ServiceConnectionName_ and _ResourcegroupName_ variables: 
+| Environment name | Environment ID | Variable group name  |
+|------------------|----------------|----------------------|
+| Non-Production   | `nonprod`      | `ToyWebsite-nonprod` |
+| Production       | `prod`         | `ToyWebsite-prod`    |
 
-```YAML
-stages: 
-- stage: Validate
-  displayName: Validate
-  jobs:
-  - job: ValidateBicepCode
-    displayName: Validate Bicep code
-    steps:
-      - task: AzureCLI@2
-        name: RunPreflightValidation
-        displayName: Run preflight validation
-        inputs:
-          azureSubscription: $(ServiceConnectionName)
-          scriptType: 'bash'
-          scriptLocation: 'inlineScript'
-          inlineScript: |
-            az deployment group validate \
-              --resource-group $(ResourcegroupName) \
-              --template-file deploy/main.bicep \
-              --parameters environmentType=$(EnvironmentType)
-```
+In each of these variable groups you add variables with the same names, but with different values for each environment.
 
-In case you have different variables for your Test and Production environment, you could create 2 variable groups, named _ToyWebsiteTst_ and _ToyWebsitePrd_. In each of these variable groups you add the same keys, but with different values for each environment. When you use pipeline templates, you can now use a parameter in the template to choose a specific variable group. In this case the variable group needs to be added in each stage in the pipeline template: 
+In your pipeline template file, you can then use the `{{ parameters.PARAMETER_NAME }}` macro to select the correct variable group to import:
 
-```YAML
-#deploy-environment.yml
-parameters: 
-- name: environment
-  default: 'Tst'
-
-stages: 
-- stage: Validate${{parameters.environment}}
-  variables: 
-  - group: ToyWebsite${{parameters.environment}}
-  displayName: Validate${{parameters.environment}}
-  jobs:
-  - job: ValidateBicepCode
-    displayName: Validate Bicep code
-    steps:
-      - task: AzureCLI@2
-        name: RunPreflightValidation
-        displayName: Run preflight validation
-        inputs:
-          azureSubscription: $(ServiceConnectionName)
-          scriptType: 'bash'
-          scriptLocation: 'inlineScript'
-          inlineScript: |
-            az deployment group validate \
-              --resource-group $(ResourcegroupName) \
-              --template-file deploy/main.bicep \
-              --parameters environmentType=$(EnvironmentType)
-
-- stage: Preview${{parameters.environment}}
-  variables: 
-  - group: ToyWebsite${{parameters.environment}}
-  displayName: Preview${{parameters.environment}}
-  jobs: 
-  - job: PreviewAzureChanges
-    displayName: Preview Azure changes
-    steps:
-      - task: AzureCLI@2
-        name: RunWhatIf
-        displayName: Run what-if
-        inputs:
-          azureSubscription: $(ServiceConnectionName)
-          scriptType: 'bash'
-          scriptLocation: 'inlineScript'
-          inlineScript: |
-            az deployment group what-if \
-              --resource-group $(ResourcegroupName) \
-              --template-file deploy/main.bicep \
-              --parameters environmentType=$(environmentType)
-```
-As you can see in the above sample the variable group is chosen based on the environment parameter. The pipeline calling this template can now look like this: 
-
-```YAML
-trigger:
-  branches:
-    include:
-    - main
-
-pool:
-  vmImage: ubuntu-latest
-
-stages:
-- template: deploy-environment.yml
-  parameters:
-    environment: Tst
-- template: deploy-environment.yml
-  parameters:
-    environment: Prd
-```
+:::code language="yaml" source="code/6-template-variable-group.yml" highlight="7" :::
 
 ### Key Vault variable groups
 
-An additional feature of variable groups, is that you can link them to an Azure Key Vault. All keys that exist in the Key Vault that you link will become available as variables in the variable group and can as such be used in your pipelines. 
+Variable groups can be linked to an Azure Key Vault. Secrets in the vault are made available as variables in the variable group and can be used in your pipelines as if they're normal variables.
 
-This way of linking a variable group to an Azure Key Vault will make the management of your secret values more secure. It can also be managed by a separate security team. 
+This way of linking a variable group to an Azure Key Vault will make the management of your secret values even more secure. It also enables those values to be managed by a separate security team, and to keep the access to your pipelines and the secrets separated from each other.
 
-### Try and make variables obsolete
+<!-- TODO diagram? more detail? -->
 
-And although there are multiple ways to add variables to your pipeline, you should always try and use as few variables as possible in your pipeline. Since every variable or parameter that you add is a potential additional point of exposure of information. 
+### Use variables in your pipeline
 
-In a lot of cases these values are needed when certain resources need to connect to other resources. Let us take the example of an Azure web app that needs to connect to its backend Azure SQL database. For this connectivity you need a connection string, which contains the username and password for the database. However, when setting up this type of connectivity, other options are possible: 
+Regardless of how you define a variable, you access its value in your pipeline by using the `$(VariableName)` syntax.
 
-> Note to John: would be great if we could get pictures for these 3 situations and add them for clarity. 
+When you need to use a variable to set a parameter for your Bicep file, you use it like this:
 
-- You could add the connection string that the web app needs to an Azure Key Vault. Next you give the web app list and read access to that Key Vault. When you set it up like this, your pipeline has no need anymore for the connection string, the web app itself can fetch it directly from the Key Vault, without any developers seeing any secret values. 
-- When connecting a web app to a backend Azure SQL database, you can also make use of a managed identity. This is an identity that is managed by Azure Active Directory and that you assign to your web app. This identity you then give access to your database. Once this is done, you can simplify your connection string and remove any username and password values. These values then also don't need to be part of your pipeline code. A managed identity is the safest option for this type of connectivity. 
+:::code language="yaml" source="code/6-parameter-variables.yml" highlight="22" :::
+
+## What's the best approach?
+
+TODO
+
+### Avoid unnecessary parameters
+
+Parameters help you to make your Bicep files reusable, but it's easy to define too many parameters. Every parameter needs a value to be provided, and when you start to work with complex deployments and multiple environments, it gets hard to manage a large set of individual parameter values.
+
+Consider making parameters optional where you can, and use default values that apply to most of your environments. This might avoid the need for your pipelines to pass in values for the parameters.
+
+Also, keep in mind that parameters are often used in Bicep when resources need to connect to other resources. For example, if you have a website that needs to connect to a storage account, then you'll need to provide the storage account name and access key. Keys are secure values. However, there are other possible approaches to consider when deploying this combination of resources, such as:
+
+- Deploy the storage account and website together in the same Bicep template. Use Bicep modules to keep the website and storage resources together. Then, you can automatically look up the values for the storage account name and the key within the Bicep code, instead of passing in parameters.
+- Use the website's managed identity to access the storage account. A managed identity is automatically handled by Azure, and you don't need to maintain any credentials. This simplifies the connection settings, and means you don't have to pass in secrets at all.
+- Add the storage account's details to Key Vault. Have the website code load the key directly from the vault. This avoids the need to manage the key in the pipeline at all.
+
+### Store secrets appropriately
+
+TODO Use variables or KV groups for all secrets
+
+### Use parameter files for large sets of parameters
+
+TODO
+
+### Combine approaches
+
+TODO

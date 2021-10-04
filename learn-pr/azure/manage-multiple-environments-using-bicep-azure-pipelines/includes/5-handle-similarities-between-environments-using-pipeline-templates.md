@@ -1,4 +1,10 @@
-Even though you deploy your changes to multiple separate environments, the steps involved in deploying to each environment are usually identical or very similar. But, it's a good idea to avoid repetition in your pipeline code, because repetition can lead to errors. In this unit, you'll learn how to use pipeline templates to avoid repetition and to allow for reuse. 
+Even though you deploy your changes to multiple separate environments, the steps involved in deploying to each environment are usually very similar or even identical. In this unit, you'll learn how to use pipeline templates to avoid repetition and to allow for reuse.
+
+## Deployment to multiple environments
+
+Your toy company's website pipeline includes several stages. Some of these stages are repeated between your non-production and production environment. These include the *Validate*, *Deploy*, and *Smoke Test* stages.
+
+When you need to repeat steps in your pipeline, you might try to copy and paste your step definitions. However, this isn't a good practice. It's easy to accidentally make subtle mistakes or for things to get out of sync when you duplicate your pipeline's code. And in the future, when you need to make a change to the steps, you have to remember to apply the change in multiple places.
 
 ## Pipeline templates
 
@@ -43,6 +49,8 @@ Each pipeline template parameter has three properties:
 - The *name* of the parameter, which you use to refer to the parameter in your template files.
 - The *type* of the parameter. Parameters support several different types of data, including *string*, *number*, and *boolean*. You can also define more complex templates that accept structured objects and pipeline definitions like steps, jobs, and stages.
 - The *default value* of the parameter. If you specify a default value, you effectively make the parameter optional.
+
+<!-- TODO update this to use the service connection name as the example -->
 
 In your pipeline template, you use a special syntax to refer to the value of the parameter. Use the `${{parameters.YOUR_PARAMETER_NAME}}` macro, like in this example: 
 
