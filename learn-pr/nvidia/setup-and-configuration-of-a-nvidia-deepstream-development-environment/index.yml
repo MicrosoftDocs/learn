@@ -31,5 +31,6 @@ products:
 units:
 - learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.1-introduction
 - learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.2-introduction-to-intelligent-video-analytics
+- learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.3-install-nvidia-deepstream-depend-and-sdk
 badge:
   uid: learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.badge
