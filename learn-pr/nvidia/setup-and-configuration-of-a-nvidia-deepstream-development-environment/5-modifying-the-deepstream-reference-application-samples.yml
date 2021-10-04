@@ -9,6 +9,6 @@ metadata:
   ms.date: 10/01/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 20
 content: |
   [!include[](includes/5-modifying-the-deepstream-reference-application-samples.md)]
