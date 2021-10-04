@@ -16,9 +16,9 @@ Familiarizing yourself with the common nomenclature of SignalR is very helpful. 
 
 SignalR supports the following techniques (*transports*) for handling real-time communication:
 
-1. WebSockets
-2. Server-Sent Events
-3. Long Polling
+- WebSockets
+- Server-Sent Events
+- Long Polling
 
 The order in which the transports are list above, signify their graceful fallback order. In other words, WebSockets is preferred over Server-Sent Events, and Server-Sent Events is preferred over Long Polling - but any one of these transports could be used. SignalR automatically chooses the _best transport_ method that is within the capabilities of the server and client. For more information, see the official specification for [SignalR Transport Protocols](https://github.com/dotnet/aspnetcore/blob/068797e16a1bfe66461e15c8a2ffa864369d384d/src/SignalR/docs/specs/TransportProtocols.md).
 
