@@ -120,13 +120,13 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 1. In the command bar, select **Terminal > New Terminal** to open a PowerShell window.
 
-1. If the command bar of the terminal window shows `**PowerShell**`, you have the right shell to work from, and you can skip to the next section.
+1. If the command bar of the terminal window shows **PowerShell**, you have the right shell to work from, and you can skip to the next section.
 
       :::image type="content" source="../media/3-pwsh.png" alt-text="The Visual Studio Code terminal window with pwsh terminal selected.":::
 
     1. If not, select the down arrow and in the dropdown list select PowerShell. If that option is missing, then select **Select Default Profile**.
 
-    1. In the input field, scroll down and select `**PowerShell**`.
+    1. In the input field, scroll down and select **PowerShell**.
 
           :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell drop-down.":::
 
