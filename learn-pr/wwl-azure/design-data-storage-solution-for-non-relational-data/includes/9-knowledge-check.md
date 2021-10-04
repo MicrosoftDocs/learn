@@ -8,6 +8,7 @@ Tailwind Traders wants to reduce storage costs by reducing duplicate content and
 
 - **Product catalog updates.** The product catalog is updated every few months. Older versions of the catalog aren’t viewed frequently but must be available immediately if accessed.
 
+## Multiple Choice
 What is the best way for Tailwind Traders to protect their warranty information?
 ( ) Legal hold policy {{That’s incorrect. Legal hold allows objects to be created or read, but not modified or deleted. It doesn’t provide a time frame and can be removed at any time.}}
 (x) Time-based retention policy {{That’s correct. With a time-based retention policy, users can set policies to store data for a specified interval. When a time-based retention policy is in place, objects can be created and read, but not modified or deleted.}}
