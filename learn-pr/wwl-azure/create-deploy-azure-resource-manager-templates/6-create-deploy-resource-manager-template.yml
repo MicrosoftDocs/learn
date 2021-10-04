@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-deploy-azure-resource-manager-templates.exercise-by-using-visual-studio-code
+title: 'Exercise: Create and deploy Azure Resource Manager templates by using Visual Studio Code'
+metadata:
+  title: 'Exercise: Create and deploy Azure Resource Manager templates by using Visual Studio Code'
+  description: "Exercise: Create and deploy Azure Resource Manager templates by using Visual Studio Code"
+  ms.date: 10/04/2021
+  author: wwlpublish
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-create-deploy-resource-manager-template.md)]
