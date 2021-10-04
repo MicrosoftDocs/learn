@@ -2,8 +2,7 @@ First, let us have a basic understanding of 3D models, Hand Menus, and UI butto
 
 ## Import 3D models
 
-The loading asset is a complex packing system. Here the asset is loaded during build time and in stereokit it's a lot easier to load a 3D model .
- yet to add .....
+The loading asset is a complex packing system. Here the asset is loaded during build time and in stereokit it's a lot easier to load a 3D model. The 3D model format must be in .gltf, .glb, .obj, .stl, ASCII .ply, procedural and texture format must be in .jpg, .png, .tga, .bmp, .psd, .gif, .hdr, .pic, equirectangular cubemap, procedural.
 
 ## Adding hand menu
 
@@ -95,3 +94,60 @@ Lastly, StereoKit features a pointer system. Pointers are not constrained only t
 
 ## Creating UI buttons
 
+## Immediate mode UI
+
+StereoKit's user interface is based on an immediate mode approach. The prime objective of UI APIs is to provide you with a more efficient and functional running environment. You can also define UI on each frame. As the little amount of state is maintained, you may easily add, remove, and alter your UI elements using simple and standard code structures. The fact that you'll have to maintain track of the state yourself is a significant drawback.
+
+## Making a window
+
+[Snapshot]
+The toggle pose for the window off to the left facing to the right, as well as a float that will be utilised as a slider, are shown in the image above and the code will be added to initialization section.
+```
+Pose  windowPose = new Pose(-.4f, 0, 0, Quat.LookDir(1,0,1));
+
+bool  showHeader = true;
+float slider     = 0.5f;
+
+Sprite powerSprite = Sprite.FromFile("power.png", SpriteType.Single);
+```
+
+As a base unit, StereoKit uses metres. Consider the case of a window that is tilted to 20 cm wide and auto-resizes on the Y axis, the U class comes in handy here because it helps us to reason visually about the units we're working with.
+
+We use a toggle to trun the windows header on and off and the value from that toggle is passed via the showHeader field as shown in the code below.
+```
+UI.WindowBegin("Window", ref windowPose, new Vec2(20, 0) * U.cm, showHeader?UIWin.Normal:UIWin.Body);
+```
+
+When you start a window, all visual elements are now local to that window. UI uses the Hierarchy class to push the window's pose into the Hierarchy stack. The pose will be dropped from the hierarchy stack when you close the window, restoring everything to normal. Based on user interaction, the UI element will update the values; also, you can add the values manually if required.
+
+The UI keeps the next item on the same line on the same line and starts with the label element. The slider interval is set to 0.2 with the range [0,1]. Thus, you can step the value to 0 to slide it continuously as shown below.
+```
+UI.Label("Slide");
+UI.SameLine();
+UI.HSlider("slider", ref slider, 0, 1, 0.2f, 72 * U.mm);
+```
+
+To end the window refer the below mentioned code sinpet
+```
+UI.WindowEnd();
+```
+
+## Custom windows
+
+Mixed Reality features us with the opportunity to transform the objects into interfaces. By using "handles" StereoKit allows you to develop 3D models and add UI elements to their surface instead of using the traditional "window" approach.
+
+In order to create the clipboard to attach the interface refer the below code snippet.
+```
+Model clipboard = Model.FromFile("Clipboard.glb");
+```
+
+Similar to the pervious, heres how you can transfrom it into grabble interface. This behaves the same, except we’re defining where the grabbable region more precisely and draw our own model using an identity matrix instead of plain bar. use HandleBegin function as shown below to push the handle’s pose onto the Hierarchy transform stack.
+```
+UI.HandleBegin("Clip", ref clipboardPose, clipboard.Bounds);
+Renderer.Add(clipboard, Matrix.Identity);
+```
+
+Similar to windows, Handles need an end call as shown below.
+```
+UI.HandleEnd();
+```
