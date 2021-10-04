@@ -153,46 +153,48 @@ Now that you have assigned the restricting policy to the cluster, you will now r
 1. Copy the following code into the new file and save it by typing *ctrl + s*
 
    ```yaml
-   apiVersion: apps/v1
-   kind: Deployment
-   metadata:
-     name: second-simple-nginx
-     labels:
-       app: second-nginx
-   spec:
-     selector:
-       matchLabels:
-         app: second-nginx
-     template:
-       metadata:
-         labels:
-           app: second-nginx
-       spec:
-         containers:
-         - name: second-simple-nginx
-           image: nginx # also from docker hub
-           resources:
-             requests:
-               cpu: 100m
-               memory: 100Mi
-             limits:
-               cpu: 120m
-               memory: 120Mi
-           ports:
-           - containerPort: 80
-   ---
-   apiVersion: v1
-   kind: Service
-   metadata:
-     name: second-simple-nginx
-     labels:
-       app: second-nginx
-   spec:
-     type: LoadBalancer
-     ports:
-     - port: 80
-     selector:
-       app: second-nginx
+    cat <<EOF | kubectl create -f -
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: second-simple-nginx
+      labels:
+        app: second-nginx
+    spec:
+      selector:
+        matchLabels:
+          app: second-nginx
+      template:
+        metadata:
+          labels:
+            app: second-nginx
+        spec:
+          containers:
+          - name: second-simple-nginx
+            image: docker.io/library/nginx:stable
+            resources:
+              requests:
+                cpu: 100m
+                memory: 100Mi
+              limits:
+                cpu: 120m
+                memory: 120Mi
+            ports:
+            - containerPort: 80
+    ---
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: second-simple-nginx
+      labels:
+        app: second-nginx
+    spec:
+      type: LoadBalancer
+      ports:
+      - port: 80
+      selector:
+        app: second-nginx
+    EOF
    ```
 
 1. Close the code editor after saving it by entering *Ctrl+Q *
@@ -229,9 +231,7 @@ Now that you know that the policy prevents images from Dockerhub from being crea
    ```azurecli-interactive
    ACR_NAME=videogameacr$RANDOM
    az acr create --name $ACR_NAME \
-                 --resource-group videogamerg \
-                 --sku Premium \
-                 --default-action Allow
+                 --resource-group videogamerg 
    ```
 
 1. Import the image from Docker Hub to your new container registry
@@ -261,46 +261,48 @@ Now that you know that the policy prevents images from Dockerhub from being crea
    Your updated file should look like below. Save the file by selecting the **...** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
 
    ```yaml
-   apiVersion: apps/v1
-   kind: Deployment
-   metadata:
-     name: second-simple-nginx
-     labels:
-       app: second-nginx
-   spec:
-     selector:
-       matchLabels:
-         app: second-nginx
-     template:
-       metadata:
-         labels:
-           app: second-nginx
-       spec:
-         containers:
-         - name: second-simple-nginx
-           image: <acr name>.azurecr.io/nginx:v1
-           resources:
-             requests:
-               cpu: 100m
-               memory: 100Mi
-             limits:
-               cpu: 120m
-               memory: 120Mi
-           ports:
-           - containerPort: 80
-   ---
-   apiVersion: v1
-   kind: Service
-   metadata:
-     name: second-simple-nginx
-     labels:
-       app: second-nginx
-   spec:
-     type: LoadBalancer
-     ports:
-     - port: 80
-     selector:
-       app: second-nginx
+    cat <<EOF | kubectl create -f -
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: second-simple-nginx
+      labels:
+        app: second-nginx
+    spec:
+      selector:
+        matchLabels:
+          app: second-nginx
+      template:
+        metadata:
+          labels:
+            app: second-nginx
+        spec:
+          containers:
+          - name: second-simple-nginx
+            image: <acr name>.azurecr.io/nginx:v1
+            resources:
+              requests:
+                cpu: 100m
+                memory: 100Mi
+              limits:
+                cpu: 120m
+                memory: 120Mi
+            ports:
+            - containerPort: 80
+    ---
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: second-simple-nginx
+      labels:
+        app: second-nginx
+    spec:
+      type: LoadBalancer
+      ports:
+      - port: 80
+      selector:
+        app: second-nginx
+    EOF
    ```
 
 1. Apply the deployment again and you will see that the new pod is now running

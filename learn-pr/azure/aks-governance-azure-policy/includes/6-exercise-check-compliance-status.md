@@ -16,7 +16,7 @@ In the previous section you saw how Azure policies can be used to easily govern 
 
 1. Click on the cluster to get more details on which pod is not compliant. Here you will see the name of the specific pod that is not compliant. You will see that it is only the first pod that was deployed that is not compliant. This is an effective way to audit compliance status of your cluster.
 
-   ![screenshot showing the resources that are not compliant](../media/6-non-compliant-pod.png)
+   ![screenshot showing the policies that the resources are not compliant with](../media/6-non-compliant-pod.png)
 
 ## Remove non compliant pod and check for compliance
 
