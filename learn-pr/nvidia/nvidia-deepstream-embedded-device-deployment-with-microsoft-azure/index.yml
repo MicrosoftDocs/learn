@@ -41,5 +41,11 @@ products:
 - azure-virtual-machines
 units:
 - learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.1-introduction
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.2-introduction-to-artificial-intelligence-at-the-edge
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.3-configure-deepstream-graph-to-publish-data-to-azure-iot-hub
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.4-build-and-publish-cross-platform-deepstream-container-images
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.5-configure-azure-iot-edge-on-nvidia-embedded-hardware
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.7-knowledge-check
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.8-summary
 badge:
   uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.badge

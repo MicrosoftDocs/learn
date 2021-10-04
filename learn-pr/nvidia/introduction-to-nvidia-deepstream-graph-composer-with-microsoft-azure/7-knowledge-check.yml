@@ -16,17 +16,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'The DeepStream 6.0 Graph Composer is comprised of the following:'
+  - content: 'The DeepStream Graph Composer is comprised of the following:'
     choices: 
     - content: 'An SDK that contains optimized libraries for GPU accelerated inference tasks '
       isCorrect: false
-      explanation: This is a bit more descriptive of the DeepStream SDK itself, which is leveraged by the DeepStream 6.0 Graph Composer.
-    - content: 'Tooling for drawing charts which display inference detections in DeepStream 6.0 apps'
+      explanation: This is a bit more descriptive of the DeepStream SDK itself, which is leveraged by the DeepStream Graph Composer.
+    - content: 'Tooling for drawing charts which display inference detections in DeepStream apps'
       isCorrect: false
-      explanation: This is not a feature of the DeepStream 6.0 Graph Composer.
+      explanation: This is not a feature of the DeepStream Graph Composer.
     - content: 'A visual environment for developing IVA applications that leverage the NVIDIA DeepStream SDK, a registry tool that provides extensions and components for use in the visual environment ,and tooling for packaging NVIDIA DeepStream Graphs into containerized applications'
       isCorrect: true
-      explanation: These are all features and functionalities that are provided by the DeepStream 6.0 Graph Composer.
+      explanation: These are all features and functionalities that are provided by the DeepStream Graph Composer.
   - content: 'When running an container application that requires access to the X11 environment for drawing a user interface, the following must be accounted for:'
     choices: 
     - content: 'Nothing, the container runtime will configure itself and just work'
