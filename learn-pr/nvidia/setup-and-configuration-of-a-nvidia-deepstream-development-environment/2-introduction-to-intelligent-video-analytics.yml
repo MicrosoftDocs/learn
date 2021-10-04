@@ -9,6 +9,6 @@ metadata:
   ms.date: 10/01/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/2-introduction-to-intelligent-video-analytics.md)]
