@@ -26,7 +26,7 @@ Let's start by creating a new Key Vault in the Azure portal.
 
 1. Select **Review + create**.
 
-1. After validation apsses, select **Create** to create the Azure Key Vault.
+1. After validation passes, select **Create** to create the Azure Key Vault.
 
 After the deployment is complete, select **Go to resource**. Your *Key vault* pane appears.
 
