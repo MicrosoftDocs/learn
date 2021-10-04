@@ -42,9 +42,7 @@ The first type of variable is one that you define by using the Azure DevOps web 
 
 Variables defined using the web interface can be marked as secret, which tells Azure Pipelines to try to hide the variable's value in the pipeline logs. This means you can store values that your Bicep file then accepts as parameters with the `@secure()` decorator.
 
-<!-- TODO this is in the 'build your first' pipeline module, unit 4 - try to refactor to an include file -->
-> [!NOTE]
-> By default, Azure Pipelines obfuscates secret variable values in pipeline logs, but you need to follow good practices as well. Your pipeline steps have access to all variable values, including secrets. If your pipeline includes a step that doesn't handle a secure variable securely, there's a chance the secret variable might be shown in the pipeline logs.
+[!include[Best-effort protection for secrets](../../includes/azure-devops-secret-best-effort.md)]
 
 ### Variable groups
 
