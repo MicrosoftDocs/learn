@@ -77,7 +77,7 @@ This pattern is a more advanced virtual network organization where you choose a 
 
 The recommended Azure cloud native segmentation control is Azure Firewall. Azure Firewall works across both Virtual Networks and subscriptions to govern traffic flows using layer 3 to layer 7 controls. You can define how your communication rules look (for example, virtual network X can't talk with virtual network Y but can talk with virtual network Z, no Internet for Virtual network X except for access to *.github.com, and so on) and apply it consistently. With Azure Firewall Manager, you can centrally manage policies across multiple Azure Firewalls and enable DevOps teams to further customize local policies.
 
-| | Pattern 1| Pattern 2| Pattern 3 |
+| Network capabilities| Pattern 1| Pattern 2| Pattern 3 |
 | - | - | - | - |
 | Connectivity/Routing: how each segment communicates to each other| System routing provides default connectivity to any workload in any subnet| Same as a pattern 1| No default connectivity between spoke virtual networks. A layer 3 router, such as the Azure Firewall, in the hub virtual network is required to enable connectivity. |
 | Network level traffic filtering| Traffic is allowed by default. NSG can be used for filtering this pattern.| Same as a pattern 1| Traffic between spoke virtual networks is denied by default. Azure Firewall configuration can enable selected traffic, such as windowsupdate.com. |
@@ -163,4 +163,5 @@ Common reasons for overriding Azure's default routing are:
 
 - You need to create routes that control network traffic and specify the next hop in the traffic flow. 
 
-:::image type="content" source="../media/user-defined-routes.png" alt-textUser defined routes in an Azure Virtual Network":::
+:::image type="content" source="../media/user-defined-routes.png" alt-text="User defined routes in an Azure Virtual Network.":::
+
