@@ -99,18 +99,18 @@ Now that we've added OrderDetails to our API, let's test it by using the API Man
 1. In the **NAME** field, enter *name*, and in the **VALUE** field, enter *Chiba*, and then select **Send**.
 
 1. In the **HTTP response** section, the message tab shows the HTTP request/response succeeded (HTTP/1.1/ 200 OK), and the details of the order appears was returned in JSON format at the end of the message.
- 
-1.  Scroll up to the **HTTP request** section; notice that the request was sent to a subdomain and subdirectory within the **azure-api.net** domain. This location differs from the **azurewebsites.net** host domain.
+
+1. Scroll up to the **HTTP request** section; notice that the request was sent to a subdomain and subdirectory within the **azure-api.net** domain. This location differs from the **azurewebsites.net** host domain.
 
 ## Test the combined API
 
 We can use the `curl` command-line tool to submit requests to our API. cURL is ideal because we can include the correct subscription key with a request. A request also needs the location of the API, which is hosted in Azure API Management and, in this case consists of the Products and Orders functions.
 
 1. In the Azure resource menu or from home, select **All resources**.
- 
-1. Sort resources by Type, and then select the Function App that begins with **OrderFunction**. The **OrderFunction** Function App Overview pane appears.
 
-1. In the **Essentials** section of the **Overview** pane, hover over the **URL** and select the **Copy to clipboard** icon.
+1. Sort resources by Type, and then select the API Management Service that begins with **OrderFunction**. The **OrderFunction** Function App Overview pane appears.
+
+1. In the **Essentials** section of the **Overview** pane, hover over the **Gateway URL**, and select the **Copy to clipboard** icon.
 
 1. In The Azure Cloud Shell to the right, run the following command, replacing the URL placeholder with the **URL** value that you copied to your clipboard, and then press <kbd>Enter</kbd>.
 
