@@ -4,7 +4,7 @@ Microsoft 365 Defender provides the tools admins need to manage security across 
 Now that you’ve completed this module, you should be able to:
 
 - Describe and explore Microsoft 365 Defender portal.
-- Describe how to use Microsoft Secure Store.
+- Describe how to use Microsoft Secure Score.
 - Explore security reports and dashboards.
 - Describe incidents and incident management capabilities.  
 
