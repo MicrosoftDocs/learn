@@ -64,31 +64,9 @@ Now that we have the provider registered we can create a new resource group and 
     az aks create --name videogamecluster --resource-group videogamerg --generate-ssh-keys
     ```
     
-1. Enable Azure Monitor for the newly created cluster
-
-    ```azurecli-interactive
-    az aks enable-addons -a monitoring --name videogamecluster --resource-group videogamerg
-    ```
-
 1. Enable Azure Policies for the cluster
 
     ```azurecli-interactive
     az aks enable-addons --addons azure-policy --name videogamecluster --resource-group videogamerg
     ```
-
-### Check to ensure Azure Monitor is activated for the cluster
-
-1. Go to **Azure Portal** in a new tab.
-
-1. Search for **resource groups** in the search bar at the top and select **Resource groups**.
-
-1. Select the **videogamerg** resource group you just created.
-
-1. Select the **videogamescluster** you just created.
-
-1. Click on **Insights** under the **Monitoring** section in the left blade.
-
-1. You should see four charts showing the state of your cluster.
-
-   ![a screenshot showing the four main charts that get displayed when navigate to container insights](../media/3-monitoring-activated.png)
 

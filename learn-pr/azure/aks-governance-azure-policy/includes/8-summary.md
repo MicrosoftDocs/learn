@@ -21,7 +21,13 @@ In this module, you created resources by using your Azure subscription. The foll
 
 1. To confirm the deletion, enter the name of the resource group. To delete all the resources you created in this module, select **Delete**.
 
-1. Repeat the steps for the resource group name that starts with **MC_videogamerg**.
+## Clean up Policies
+1. Go to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure Portal**.
+1. Click on **Definitions** in the left blade
+1. In the **Category** filter at the top of the resulting page click on **Select all** to uncheck all the options and select **Kubernetes**
+   ![Screenshot showing kubernetes selected for category](../media/5-filtering-for-kubernetes.png)
+1. Select the Policy you created and click **Delete definition**
+1. Repeat the same steps for the initiative you created but click on **Delete Initiative** as the last step instead
 
 ## Learn more
 

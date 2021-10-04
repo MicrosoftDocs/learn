@@ -2,7 +2,7 @@ In the previous section you saw how Azure policies can be used to easily govern 
 
 ## Using the Azure Portal to see non-compliant pods
 
-1. In Azure Portal type policy in the search bar at the top and select **Policy**
+1. Go to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure Portal**.
 
 1. At the top you can set the scope to your cluster resource group by clicking on the **...** Select the Subscription and the resource group where the AKS cluster is sitting and click **Select** at the bottom.
 
@@ -34,4 +34,4 @@ Now that we have found the pod that is not compliant, we will go ahead and delet
 
 ## Summary
 
-In this module, you learned Azure policy is and how to use it for your Kubernetes cluster. You also learned how to troubleshoot your deployments and identify pods that are not being deployed because of a deny policy it is not compliant with. You also learned how to use Azure portal to see uncompliant resources and which policies they are not compliant with. You also resolved one of the issues by deleting the uncompliant pod you first created. Now that you have added and tested out a Policy and an Initiative, you can go through the other in-built policies for Kubernetes and find those that suit your business needs.
+In this module, you learned Azure policy is and how to use it for your Kubernetes cluster. You also learned how to troubleshoot your deployments and identify pods that are not being deployed because of a deny policy it is not compliant with. You also learned how to use Azure Portal to see uncompliant resources and which policies they are not compliant with. You also resolved one of the issues by deleting the uncompliant pod you first created. Now that you have added and tested out a Policy and an Initiative, you can go through the other in-built policies for Kubernetes and find those that suit your business needs.

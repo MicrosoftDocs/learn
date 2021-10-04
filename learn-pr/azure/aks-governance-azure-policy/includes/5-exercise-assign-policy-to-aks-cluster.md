@@ -91,7 +91,7 @@ You'd like to ensure that only images from certain registries are allowed in the
 
 Find the built-in policy definitions for managing your cluster using the Azure portal with the following steps. In this case we will be applying the "only trusted registry" [policy]([Policy - Microsoft Azure](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview)).
 
-1. In [Azure portal](https://portal.azure.com), search for and select **Policy**.
+1. Go to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure Portal**.
 
 1. In the left pane of the Azure Policy page, select Definitions.
 
@@ -108,7 +108,7 @@ Find the built-in policy definitions for managing your cluster using the Azure p
 1. Enter the following into the **Allowed container image regex** field and click the **Review + create** button
 
    ```
-   ^.+\.azurecr\.io/.+$
+   .+\.azurecr\.io/.+$
    ```
 
 1. Click on the **Create** button
@@ -127,14 +127,13 @@ Now that you have successfully assigned your policy, you will now assign an init
 
 Initiatives can be assigned the same way policies are assigned. Follow the steps below to assign the  "[Kubernetes cluster pod security restricted standards for Linux-based workloads](https://docs.microsoft.com/azure/aks/policy-reference#initiatives)" initiative.
 
-1. In [Azure portal](https://portal.azure.com), search for and select **Policy**.
+1. Return to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure Portal**.
 1. In the left pane of the Azure Policy page, select Definitions.
 1. From the Category dropdown list box, use Select all to clear the filter and then select Kubernetes.
 1. Select the **Kubernetes cluster pod security restricted standards for Linux-based workloads** initiative  definition. Take some time to review the various policies that are a part of the initiative.
 1. Select the **Assign** button at the top left corner of the screen.
 1. Set the Scope to the resource group of the Kubernetes cluster you just created, which in this case is the **videogamerg** resource group. Fill out the rest of the form as you did in the previous step and click **Next** to move on to the Parameters section
 1. Click **Next** again to move on to the **Remediation** tab. Ensure **Create a Managed Identity** is not checked and click next again
-1. Here you have the chance to add Non-compliance messages. As an optional step, you can add these messages to each policy by clicking on the ellipses next to each one and then selecting **Edit message**
 1. Click **Next** then click **Create** at the bottom
 
 Here you can find the policy assignment again by clicking on **Policy** and selecting **Assignments** in the left blade. Clicking on the policy assignment you just created will show that the effect was set to Audit in this case.
@@ -238,7 +237,7 @@ Now that you know that the policy prevents images from Dockerhub from being crea
 1. Import the image from Docker Hub to your new container registry
 
    ```azurecli-interactive
-   az acr import --name $ACR_NAME --source docker.io/library/nginx:latest --image nginx:v1
+   az acr import --name $ACR_NAME --source docker.io/library/nginx:stable --image nginx:v1
    ```
 
 1. Check to ensure the image was imported. You should see nginx in the list of results
