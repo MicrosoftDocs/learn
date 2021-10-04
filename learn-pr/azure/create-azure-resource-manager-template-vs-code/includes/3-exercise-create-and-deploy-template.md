@@ -47,7 +47,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
       :::image type="content" source="../media/3-bash.png" alt-text="The Visual Studio Code terminal window with bash in the drop-down.":::
 
-1. Select **bash**.
+1. Select **Git Bash**.
 
       :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell drop-down.":::
 
@@ -120,13 +120,13 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 1. In the command bar, select **Terminal > New Terminal** to open a PowerShell window.
 
-1. If the command bar of the terminal window shows `**pwsh**`, you have the right shell to work from, and you can skip to the next section.
+1. If the command bar of the terminal window shows `**PowerShell**`, you have the right shell to work from, and you can skip to the next section.
 
       :::image type="content" source="../media/3-pwsh.png" alt-text="The Visual Studio Code terminal window with pwsh terminal selected.":::
 
     1. If not, select the down arrow and in the dropdown list select PowerShell. If that option is missing, then select **Select Default Profile**.
 
-    1. In the input field, scroll down and select `**pwsh**`.
+    1. In the input field, scroll down and select `**PowerShell**`.
 
           :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell drop-down.":::
 
@@ -137,8 +137,11 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. A browser opens so you can sign in to your account.
 
     ```azurepowershell
-    Az login
+    Connect-AzAccount
     ```
+
+> [!TIP]
+> The [Az PowerShell module](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) is the replacement of AzureRM and is the recommended version to use for interacting with Azure.
 
 1. Sign in using the account you used to activate the sandbox. After you've signed in, VS Code lists the subscriptions associated with your account in the terminal window. If you activated the sandbox, you see a code block that contains `"name": "Concierge Subscription"`. This is the subscription to use for the rest of the exercise.
 
@@ -241,7 +244,7 @@ templateFile="azuredeploy.json"
 today=$(date +"%d-%b-%Y")
 DeploymentName="addstorage-"$today
 
-az group deployment create \
+az deployment group create \
   --name $DeploymentName \
   --template-file $templateFile
 ```
