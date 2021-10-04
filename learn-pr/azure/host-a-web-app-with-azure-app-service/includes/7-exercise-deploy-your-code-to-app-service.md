@@ -67,7 +67,7 @@ Once it loads, you'll see the greeting message from your app &mdash; you've depl
  :::image type="content" source="../media/7-web-app-in-browser.png" alt-text="Screenshot of welcome page.":::
 
 ::: zone-end
--
+ 
 ::: zone pivot="java"
 
 ## Configure deployment credentials
