@@ -22,7 +22,7 @@ Parameter files can be committed to your Git repository with your Bicep file. Yo
 
 We already mentioned parameter files as one way to pass parameters to a Bicep template. This is a good way of passing parameter values that are not secure values. You indicate all values in the parameter file and you can even vary which parameter file to use when calling a pipeline template: 
 
-:::code language="yaml" source="code/6-parameter-file.yml" highlight="25" :::
+:::code language="yaml" source="code/6-parameter-file.yml" highlight="31" :::
 
 An advantage of using this approach is that your pipeline YAML files don't need to contain a list of parameters that need to be passed in individually. This is especially beneficial when you have a large number of parameters. All of the parameters are grouped together and defined in a single JSON file. The parameter files are also part of your Git repository, so they can get versioned in the same way as all your other code.
 
@@ -86,11 +86,11 @@ When you need to use a variable to set a parameter for your Bicep file, you use 
 
 ## What's the best approach?
 
-TODO
+As you can see, there are several ways you can handle the parameters that your Bicep file needs for your deployment. It's helpful to understand when you might use which approach.
 
 ### Avoid unnecessary parameters
 
-Parameters help you to make your Bicep files reusable, but it's easy to define too many parameters. Every parameter needs a value to be provided, and when you start to work with complex deployments and multiple environments, it gets hard to manage a large set of individual parameter values.
+Parameters help you to make your Bicep files reusable, but it's easy to define too many parameters. You need to provide a value for every parameter. When you start to work with complex deployments and multiple environments, it gets hard to manage a large set of individual parameter values.
 
 Consider making parameters optional where you can, and use default values that apply to most of your environments. This might avoid the need for your pipelines to pass in values for the parameters.
 
@@ -100,15 +100,23 @@ Also, keep in mind that parameters are often used in Bicep when resources need t
 - Use the website's managed identity to access the storage account. A managed identity is automatically handled by Azure, and you don't need to maintain any credentials. This simplifies the connection settings, and means you don't have to pass in secrets at all.
 - Add the storage account's details to Key Vault. Have the website code load the key directly from the vault. This avoids the need to manage the key in the pipeline at all.
 
-### Store secrets appropriately
-
-When you can't handle secrets another way, consider 
-TODO Use variables or KV groups for all secrets
+<!-- TODO talk about inferring parameter values? -->
 
 ### Use parameter files for large sets of parameters
 
-TODO
+If you have to have a large set of parameters for your Bicep files, consider using parameter files to keep the non-secure values together for each environment. Then, whenever you need to change the values, you can update the parameter file and commit your change.
+
+This approach keeps your pipeline steps simpler, because you don't need to explicitly set the value for every parameter.
+
+### Store secrets securely
+
+Secrets should be stored and handled using an appropriate process. If you only have a small number of secrets to manage, Azure Pipelines variables often work well. But you might have more complex requirements, like a large number of secrets, or many different environments, or access control restrictions. For these situations, consider storing the secrets for each environment in separate Key Vaults and using variable groups to link the vaults to your pipeline.
+
+For secure parameters, remember to explicitly pass each parameter into your deployment step.
 
 ### Combine approaches
 
-TODO
+It's common to combine multiple approaches to handle your parameters. For example, you can store the majority of your parameter values in parameter files, and set secure values by using a variable group, like in the following example:
+
+:::code language="yaml" source="code/6-multiple.yml" highlight="1-2, 27-28" :::
+<!-- TODO verify the above works -->
