@@ -31,6 +31,6 @@ In order to proceed with this module, it is required that you have access to an 
     >[!NOTE]
     >If you intend on using a Virtual Machine to satisfy these requirements, it is possible that you may encounter issues later on in this learning path when attempting to launch the NVIDIA Graph Composer application if you are connecting to your VM over a remote session.  You will still be able to proceed through the learning modules, but we want to ensure that you are aware of this [issue](https://forums.developer.nvidia.com/t/graph-composer-unable-to-start-during-rdp-session-on-azure-vm-with-tesla-t4/186966) should you be considering this option. 
 
-## Try this
+### Try this
 
 Consider scenarios where computer vision could be employed to assist in automating a task or simplifying a traditionally complex process.  What would your video feeds need to see?  What computer vision algorithms would need to be employed to satisfy your solution (object detection, image classification, object tracking)?

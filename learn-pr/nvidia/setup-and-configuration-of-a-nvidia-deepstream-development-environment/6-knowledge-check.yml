@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/01/2021
+  author: toolboc
+  ms.author: pdecarlo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'The DeepStream SDK supports which of the following computer vision algorithms during inference processing:'
+    choices: 
+    - content: 'Object Detection and Object Tracking'
+      isCorrect: false
+      explanation: The DeepStream SDK also supports Image Classification.
+    - content: 'Object Oriented Programming, Object Detection, Image Classification, and Object Tracking'
+      isCorrect: false
+      explanation: Object Oriented Programming is not a computer vision algorithm.
+    - content: 'Object Detection, Image Classification, and Object Tracking'
+      isCorrect: true
+      explanation: These are all computer vision algorithms that are supported for use in inference by the DeepStream SDK.
+  - content: 'DeepStream Applications can visually display which of the following forms of metadata in the on-screen display?'
+    choices: 
+    - content: 'Bounding Boxes for detected objects only'
+      isCorrect: false
+      explanation: The DeepStream SDK can also display labels for Primary and Secondary detections.
+    - content: 'Bounding Boxes for detected objects, detection labels, classification labels, and unique tracking ids'
+      isCorrect: true
+      explanation: These are all forms of metadata that can be displayed in DeepStream applications.
+    - content: 'The model used for detection, the type of inference performed, and the name of the input source'
+      isCorrect: false
+      explanation: These are not valid forms of metadata that are used in DeepStream applications.
+  - content: 'To change the number of input feeds that are rendered by the on-screen display in a DeepStream application, which parameter should you modify in the associated configuration file?'
+    choices: 
+    - content: '`[tiled-display]rows`'
+      isCorrect: false
+      explanation: The DeepStream SDK also requires modification to `[tiled-display]columns`.
+    - content: '`[tiled-display]rows` and `[tiled-display]columns`'
+      isCorrect: true
+      explanation: These parameters can allow you to render an determined amount of input sources to the on-screen display that is equal to `[tiled-display]rows` * `[tiled-display]columns`.
+    - content: '[tiled-display]num-sources'
+      isCorrect: false
+      explanation: The `num-sources` property can be applied to sources of type `File` to denote the creation N instances of `uri`.

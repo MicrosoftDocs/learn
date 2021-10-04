@@ -32,5 +32,9 @@ units:
 - learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.1-introduction
 - learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.2-introduction-to-intelligent-video-analytics
 - learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.3-install-nvidia-deepstream-dependencies-and-sdk
+- learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.4-run-a-nvidia-deepstream-reference-application
+- learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.5-modifying-the-deepstream-reference-application-samples
+- learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.6-knowledge-check
+- learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.7-summary
 badge:
   uid: learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.badge
