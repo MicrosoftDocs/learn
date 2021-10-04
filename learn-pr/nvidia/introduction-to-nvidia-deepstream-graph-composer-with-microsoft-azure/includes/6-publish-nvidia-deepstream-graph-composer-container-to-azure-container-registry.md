@@ -1,10 +1,10 @@
 Now that we have packaged our DeepStream Graph Composer application into a container, we are now ready to publish this artifact into an [Azure Container Registry](https://azure.microsoft.com/services/container-registry/#overview) for secure distribution to additional supported devices.  
 
-This will also set the stage for potential deployment using [Azure IoT Edge](https://docs.microsoft.com/azure/iot-edge/about-iot-edge?view=iotedge-2020-11), which we will cover in more detail in the next module.
+This will also set the stage for potential deployment using [Azure IoT Edge](https://docs.microsoft.com/azure/iot-edge/about-iot-edge), which we will cover in more detail in the next module.
 
 1. To begin, we will follow instructions from the official Microsoft Docs to "create a container registry".  This document will demonstrate how to instantiate the necessary Azure Container Registry resources in Microsoft Azure and how to login and push images to this service.  Once you have completed the steps in this section, we will proceed to publish our DeepStream Graph Composer container artifact into this registry.
 
-    Follow the steps in the [Quickstart: Create an Azure container registry using the Azure portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal#create-a-container-registry).  Note that you only need to follow the steps to "Create a container registry", the additional steps mentioned in the documentation are optional.  Once, this task has been completed you may proceed with the next steps.
+    Follow the steps in the [Quickstart: Create an Azure container registry using the Azure portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal).  Note that you only need to follow the steps to "Create a container registry", the additional steps mentioned in the documentation are optional.  Once, this task has been completed you may proceed with the next steps.
 
 1. Navigate to your newly deployed Azure Container Registry within the Azure Portal:
 
