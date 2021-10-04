@@ -69,5 +69,3 @@ You should create separate service connections for each environment. Each servic
 In your Azure configuration, it's also a good idea to separate your environments. At the very least, you should create a separate resource group for each environment. In many situations, it's better to create separate Azure subscriptions for each environment so that you can create multiple resource groups within each environment's subscription.
 
 Apply Azure role assignments so that users and service principals can only access the environments they need. In particular, limit the access to your production subscription to a very small set of people and the deployment service principal for your production environment.
-
-<!-- TODO Gitte: I took out the networking point because I wasn't sure how that related to this point. Let's discuss? -->

@@ -104,6 +104,7 @@ Also, keep in mind that parameters are often used in Bicep when resources need t
 
 ### Store secrets appropriately
 
+When you can't handle secrets another way, consider 
 TODO Use variables or KV groups for all secrets
 
 ### Use parameter files for large sets of parameters
