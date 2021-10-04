@@ -26,7 +26,7 @@ In order to proceed with this module, it is required that you have access to an 
 * [RTX2080](https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080/)  
 * [RTX3080](https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3080-3080ti/)
 * [Tesla T4](https://www.nvidia.com/en-us/data-center/tesla-t4/)
-* [Ampere A100](https://www.nvidia.com/en-us/data-center/a100/)|
+* [Ampere A100](https://www.nvidia.com/en-us/data-center/a100/)
 
     >[!NOTE]
     >If you intend on using a Virtual Machine to satisfy these requirements, it is possible that you may encounter issues later on in this learning path when attempting to launch the NVIDIA Graph Composer application if you are connecting to your VM over a remote session.  You will still be able to proceed through the learning modules, but we want to ensure that you are aware of this [issue](https://forums.developer.nvidia.com/t/graph-composer-unable-to-start-during-rdp-session-on-azure-vm-with-tesla-t4/186966) should you be considering this option. 

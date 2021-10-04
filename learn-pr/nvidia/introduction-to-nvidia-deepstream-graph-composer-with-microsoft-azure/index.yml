@@ -8,7 +8,7 @@ metadata:
   ms.author: pdecarlo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Setup and Configuration of a NVIDIA DeepStream Development Environment
+title: Introduction to NVIDIA DeepStream Graph Composer with Microsoft Azure
 summary: In this module, you will learn how to setup and configure the NVIDIA DeepStream 6.0 Graph Composer on an X86 based Ubuntu 18.04 System to enable rapid development of Intelligent Video Application Pipelines for deployment to cloud and edge capable devices.
 abstract: |
   In this module, you will learn how to:
