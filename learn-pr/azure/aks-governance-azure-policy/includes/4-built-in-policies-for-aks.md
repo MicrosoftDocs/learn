@@ -19,7 +19,7 @@ There are two way to discover built-in Azure policies for Kubernetes:
 
 You can assign one or multiple of these policy definitions to your management groups, subscriptions or resource groups. In the next unit, you will follow an exercise that will walk you through how to do that.
 
-## Policy initiative Kubernetes cluster pod security baseline standards for Linux-based workloads
+## Policy initiative: Kubernetes cluster pod security baseline standards for Linux-based workloads
 
 Azure Policy for Kubernetes also has multiple policy initiatives. A policy initiative is a collection of policy definitions. Two fo the initiatives for Kubernetes are:
 

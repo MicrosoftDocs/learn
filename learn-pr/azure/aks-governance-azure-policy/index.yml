@@ -18,7 +18,7 @@ abstract: |
   - Monitor cluster compliance status using Azure Policy
   - Run queries to see runtime operation of policies in AKS clusters
 prerequisites: |
-  - A basic understanding of Azure Kubernetes Service concepts such as Kubernetes API, cluster and pods
+  - A basic understanding of Azure Kubernetes Service concepts such as Kubernetes API, clusters and pods
   - Access to an Azure subscription 
   - Knowledge of how to deploy a running instance of an AKS cluster
 iconUrl: /learn/achievements/align-requirements-in-azure.svg
