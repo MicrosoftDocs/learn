@@ -2,7 +2,7 @@
 
 ### Things to know about subscriptions
 
-Using Azure requires an Azure subscription. A subscription provides you with a logical container to provision and pay for Azure products and services. There are [several types of subscriptions](https://azure.microsoft.com/en-us/support/legal/offer-details/), such as Enterprise Agreement and Pay-as-You-Go. 
+Using Azure requires an Azure subscription. A subscription provides you with a logical container to provision and pay for Azure products and services. There are [several types of subscriptions](https://azure.microsoft.com/support/legal/offer-details/), such as Enterprise Agreement and Pay-as-You-Go. 
 
 :::image type="content" source="../media/azure-active-directory-subscriptions.png" alt-text="Azure Active Directory has dev, test, and production subscriptions.":::
 
