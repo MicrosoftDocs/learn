@@ -2,15 +2,11 @@ The *Computer Vision* cognitive service provides useful pre-built models for wor
 
 In Azure, you can use the ***Custom Vision*** cognitive service to train an image classification model based on existing images. There are two elements to creating an image classification solution. First, you must train a model to recognize different classes using existing images. Then, when the model is trained you must publish it as a service that can be consumed by applications.
 
-## Use the Cloud Shell
-
-To test the capabilities of the Custom Vision service, we'll use a simple command-line application that runs in the Cloud Shell.
-> **Note**: For this lab, you will test out an application in a cloud shell environment. When you build your own application, you can use an environment of your choice.
+To test the capabilities of the Custom Vision service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
 1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance. 
 
 2. When you are prompted to review permissions, click **Accept**. 
-
 
 ## Create a Custom Vision resource
 
@@ -117,33 +113,40 @@ Now that you have a cloud shell environment, you can run a simple client applica
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
 
-    You will use the sample client application to classify several images.
+    You will use the sample client application to classify several images into the apple, banana, or orange category.
 
-    | 1 | 2 | 3 |
-    |---|---|---|
-    |![An image of an apple](../media/fruit-1.jpg)| ![An image of a banana](../media/fruit-2.jpg)|![An image of an orange](../media/fruit-3.jpg)|
+6. We will classify this image: 
+    
+    <img src="../media/fruit-1.jpg" alt="An image of an apple" width="300"/>
 
-6. In the PowerShell pane, enter the following commands to run the code:
+
+    In the PowerShell pane, enter the following commands to run the code:
 
     ```
     cd ai-900
-    classify-image.ps1 1
+    ./classify-image.ps1 1
     ```
 
 7. Review the prediction, which should be **apple**.
 
 8. Now let's try another image:
 
+    <img src="../media/fruit-2.jpg" alt="An image of a banana" width="300"/>    
+    
+    Please run this command: 
     ```
-    classify-image.ps1 2
+    ./classify-image.ps1 2
     ```
 
 9. Verify that the model classifies this image as **banana**.
 
 10. Finally, let's try the third test image:
 
+    <img src="../media/fruit-3.jpg" alt="An image of an orange" width="300"/>      
+    
+    Please run this command:
     ```
-    classify-image.ps1 3
+    ./classify-image.ps1 3
     ```
 
 11. Verify that the model classifies this image as **orange**.
