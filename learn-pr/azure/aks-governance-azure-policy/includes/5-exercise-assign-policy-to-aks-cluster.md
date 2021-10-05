@@ -61,12 +61,6 @@ We begin by deploying an image from directly from Docker Hub into the cluster. T
 
 1. Save the file by selecting the **...** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
 
-1. Deploy the nginx pod and service
-
-   ```bash
-   kubectl apply -f nginxfromdocker.yaml
-   ```
-
 1. List all of the deployed services
 
    ``` bash
@@ -186,14 +180,6 @@ Now that you have assigned the restricting policy to the cluster, you will now r
     EOF
    ```
 
-1. Close the code editor after saving it by entering *Ctrl+Q *
-
-1. Deploy the new service and deployment by entering the following in the command line. Make sure you wait 30 minutes after the policy assignment before applying this to ensure enough time was given for the policy to take effect.
-
-   ```bash
-   kubectl apply -f secondnginxfromdocker.yaml
-   ```
-
 1. Now we can check to see if the pod and service was created
 
    ```bash
@@ -286,12 +272,6 @@ Now that you know that the policy prevents images from Dockerhub from being crea
       selector:
         app: second-nginx
     EOF
-   ```
-
-1. Apply the deployment again and you will see that the new pod is now running
-
-   ```bash
-   kubectl apply -f nginxfromacr.yaml
    ```
 
 1. Get the **EXTERNAL-IP** so that you can test to see if the service is running in the cluster
