@@ -1,6 +1,6 @@
 ## Design for Azure Insights 
 
-The reputation of your organization depends on the performance, reliability, and security of its systems. It's critical to monitor your systems closely to identify any performance problems or attacks before they can affect users. For example, if your payment system is unable to process user transactions during a high-volume holiday sales period, your customers will likely lose confidence in your business. Desinging insights as a part of your overall architecture will help identify performance issues. 
+The reputation of your organization depends on the performance, reliability, and security of its systems. It's critical to monitor your systems closely to identify any performance problems or attacks before they can affect users. For example, if your payment system is unable to process user transactions during a high-volume holiday sales period, your customers will likely lose confidence in your business. Designing insights as a part of your overall architecture will help identify performance issues. 
 
 ### Insights
 

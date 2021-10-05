@@ -107,7 +107,7 @@ When the ingestion rate limit is activated or get to 80% of the threshold, an ev
 
 Recommendations
 
-:::image type="content" source="../media/workspace-design.png" alt-text=" Desinging an Azure Monitor logs deployment example.":::
+:::image type="content" source="../media/workspace-design.png" alt-text=" Designing an Azure Monitor logs deployment example.":::
 
 
 This scenario covers a single workspace design in your IT organization's subscription that is not constrained by data sovereignty or regulatory compliance or needs to map to the regions your resources are deployed within. It allows your organization's security and IT admin teams the ability to leverage the improved integration with Azure access management and more secure access control.
