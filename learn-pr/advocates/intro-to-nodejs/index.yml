@@ -8,6 +8,7 @@ metadata:
   ms.author: wachegha
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: nextgen
 title: Introduction to Node.js
 summary: "Learn about Node.js: what it is, how it works, and when to use it."
 abstract: |
