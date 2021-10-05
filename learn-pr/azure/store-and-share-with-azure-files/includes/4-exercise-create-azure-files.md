@@ -1,4 +1,4 @@
-Azure storage accounts enable organizations to replicate their on-premises file shares in a secure, resilient cloud service. A company can create one or more Azure storage accounts, replicate specific conent, and then remove redundant hardware and infrastructure that support the internal SANs and NAS. Importantly, a company can reduce the risk of files being unavailable in the event of a hardware failure.
+Azure storage accounts enable organizations to replicate their on-premises file shares in a secure, resilient cloud service. A company can create one or more Azure storage accounts, replicate specific content, and then remove redundant hardware and infrastructure that support the internal SANs and NAS. Importantly, a company can reduce the risk of files being unavailable in the event of a hardware failure.
 
 Your finance company has asked you to duplicate two on-premises file shares, one for reports and the other for application data. The storage account you create needs to be resilient to datacenter failures. Therefore, you'll create a storage account that uses GRS redundancy.
 
