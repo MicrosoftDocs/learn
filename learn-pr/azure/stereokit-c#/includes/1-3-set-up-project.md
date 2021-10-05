@@ -3,11 +3,18 @@ The first step to set up a project on immersive experience for Windows Mixed Rea
 ## Steps to install visual studio for StereoKit
 
 1. Download the free edition of Visual Studio Community and ensure to get the Visual Studio membership if you don't have it already.
-Figure 1-9 shows how the download button might look.
-If you have the Visual Studio subscription already, you can proceed to download Visual Studio by clicking on the provided following link: https://developer.microsoft.com/en-us/windows/downloads [SS]
-2. Save the Visual Studio installer to your desired path. Once the download is complete, you can start the installation process by running the Visual Studio installer. [SS]shows how the installation appears in the Microsoft Edge browser when you execute it. [SS]
-3. When you run the Visual Studio installation, you'll see a few seconds of initialization followed by a feature selection option, as shown in (SS). First, select the ".NET Desktop development and Universal Windows Platform development (for HoloLens)" checkbox in Visual Studio 2019's features list. Then, after making the required selections, click on "Next" or "Instal[SS]
-4.When you click "Install," Visual Studio will proceed with downloading and installing the features you've specified. Visual Studio is a huge application that could take several minutes to download and install depending on your stable internet connection. You may be requested to restart your computer once the installation process is complete. By launching Visual Studio after restarting, you may verify that the installation was successful. Depending on your Visual Studio edition, the welcome screen should look like the one shown in [SS] when you first open it.[SS]
+Figure 1 shows how the download button might look.
+If you have the Visual Studio subscription already, you can proceed to download Visual Studio by clicking on the provided following link: https://developer.microsoft.com/en-us/windows/downloads 
+:::image type="content" source="../media/1.png" alt-text="Click on the “Free download” button for Visual Studio Community to begin your download." lightbox="../media/1.png":::
+
+2. Save the Visual Studio installer to your desired path. Once the download is complete, you can start the installation process by running the Visual Studio installer. Figure 2 shows how the installation appears in the Microsoft Edge browser when you execute it.
+:::image type="content" source="../media/2.png" alt-text="Unity Hub with New button highlighted." lightbox="../media/2.png":::
+
+3. When you run the Visual Studio installation, you'll see a few seconds of initialization followed by a feature selection option, as shown in Figure 3. First, select the ".NET Desktop development and Universal Windows Platform development (for HoloLens)" checkbox in Visual Studio 2019's features list. Then, after making the required selections, click on "Next" or "Install.
+:::image type="content" source="../media/3.png" alt-text="Select.NET Desktop development and Universal Windows Platform development (for HoloLens) in Visual Studio 2019. ." lightbox="../media/3.png":::
+
+4. When you click "Install," Visual Studio will proceed with downloading and installing the features you've specified. Visual Studio is a huge application that could take several minutes to download and install depending on your stable internet connection. You may be requested to restart your computer once the installation process is complete. By launching Visual Studio after restarting, you may verify that the installation was successful. Depending on your Visual Studio edition, the welcome screen should look like the one shown in Figure 4 when you first open it.
+:::image type="content" source="../media/4.png" alt-text="After the setup is complete, you may test if Visual Studio is installed correctly by launching it." lightbox="../media/4.png":::
 
 ## Enable developer mode (for UWP/HoloLens)
 
