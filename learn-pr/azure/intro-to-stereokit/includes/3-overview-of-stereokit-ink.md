@@ -1,4 +1,4 @@
-First, let us have a basic understanding of 3D models, Hand Menus, and UI buttons before breaking into the finger-painting sample application.
+First, let us have a basic understanding of 3D models, Hand Menus, and UI buttons before breaking into the stereokitink sample application.
 
 ## Import 3D models
 

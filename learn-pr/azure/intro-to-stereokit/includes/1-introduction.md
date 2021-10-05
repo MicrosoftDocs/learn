@@ -10,7 +10,7 @@ By the end of this module, you'll be able to set up, create, build an applicatio
 
 * Configure visual studio to develop the Mixed Reality application using Steoreokit.
 
-* To Integrate the simplified finger-painting sample application.
+* To Integrate the simplified stereokitink sample application.
 
 * To build and test the applications in Desktop and in HoloLens 2.
 
