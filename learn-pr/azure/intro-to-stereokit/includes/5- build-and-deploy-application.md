@@ -14,7 +14,7 @@ Debug and Any device is selected.
 :::image type="content" source="../media/change-solution-configuration.png" alt-text="Screenshot shows changing of Solution configuration." lightbox="../media/change-solution-configuration.png":::
 ​
 2. Click on the Device dropdown and ensure the projectsetup-desktop is selected.
-:::image type="content" source="../media/ensuring-project-setup desktop.png" alt-text="Screenshot shows ensuring of projectsetup desktop is selected." lightbox="../media/ensuring-project-setup desktop.png":::
+:::image type="content" source="../media/ensure-project-setup-desktop.png" alt-text="Screenshot shows ensuring of projectsetup desktop is selected." lightbox="../media/ensure-project-setup-desktop.png":::
 
 3. Then in the menu bar click on the Debug > Start Debugging.
 Start Debugging automatically starts the application on your device with the Visual Studio debugger attached.
@@ -26,11 +26,11 @@ During the build process, you may encounter errors when opening the Solution Exp
 errors, run the initial build solution.
 
 1. To build the application to hololens, configure Visual Studio for HoloLens by selecting the Release configuration on the "Solution Platform," the ARM64 architecture, and set Device as target:
-:::image type="content" source="../media/change-solution-configuration.png" alt-text="Screenshot shows Configuration of Solution platform." lightbox="../media/change-solution-configuration.png":::
+:::image type="content" source="../media/configuration-solution-platform.png" alt-text="Screenshot shows Configuration of Solution platform." lightbox="../media/configuration-solution-platform.png":::
 
 2. Connect your hololens to your computer, then in the menu bar click on the Debug > Start Debugging.
 Start Debugging automatically starts the application on your device with the Visual Studio debugger attached.
-:::image type="content" source="../media/change-solution-configuration.png" alt-text="Screenshot shows Selecting of Start Debugging." lightbox="../media/change-solution-configuration.png":::
+:::image type="content" source="../media/start-debug.png" alt-text="Screenshot shows Selecting of Start Debugging." lightbox="../media/start-debug.png":::
 
 3. In the menu bar click on the Build > Deploy Solution to deploy to your device without having the app start automatically.
-:::image type="content" source="../media/change-solution-configuration.png" alt-text="Screenshot shows Selecting of Deploy Solution." lightbox="../media/change-solution-configuration.png":::
+:::image type="content" source="../media/select-deploy-solution.png" alt-text="Screenshot shows Selecting of Deploy Solution." lightbox="../media/select-deploy-solution.png":::
