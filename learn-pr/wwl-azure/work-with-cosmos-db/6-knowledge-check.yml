@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/29/2021
+  ms.date: 10/05/2021
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When defining a stored procedure in the Azure Portal input parameters are always sent as what type to the stored procedure?"
+  - content: "When defining a stored procedure in the Azure portal input parameters are always sent as what type to the stored procedure?"
     choices:
     - content: "String"
       isCorrect: true

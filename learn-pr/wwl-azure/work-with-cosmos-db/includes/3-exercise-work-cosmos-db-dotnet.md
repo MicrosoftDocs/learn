@@ -19,7 +19,7 @@ Perform the following actions to prepare Azure, and your local environment, for 
 
 1. Start Visual Studio Code and open a terminal window by selecting **Terminal** from the top application bar, then choosing **New Terminal**.
 
-1. Login to Azure by using the command below. A browser window should open letting you choose which account to login with.
+1. Log in to Azure by using the command below. A browser window should open letting you choose which account to log in with.
 
     ```bash
     az login
