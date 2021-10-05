@@ -5,10 +5,10 @@ The first step to set up a project on immersive experience for Windows Mixed Rea
 1. Download the free edition of Visual Studio Community and ensure to get the Visual Studio membership if you don't have it already.
 Figure 1 shows how the download button might look.
 If you have the Visual Studio subscription already, you can proceed to download Visual Studio by clicking on the provided following link: https://developer.microsoft.com/en-us/windows/downloads 
-:::image type="content" source="../media/1.png" alt-text="Click on the “Free download” button for Visual Studio Community to begin your download." lightbox="../media/1.png":::
+:::image type="content" source="../media/1.png" alt-text="Click on the “To begin your download, click the “Free download” button for Visual Studio Community.." lightbox="../media/1.png":::
 
 2. Save the Visual Studio installer to your desired path. Once the download is complete, you can start the installation process by running the Visual Studio installer. Figure 2 shows how the installation appears in the Microsoft Edge browser when you execute it.
-:::image type="content" source="../media/2.png" alt-text="Unity Hub with New button highlighted." lightbox="../media/2.png":::
+:::image type="content" source="../media/2.png" alt-text="Run the Visual Studio installer to your PC." lightbox="../media/2.png":::
 
 3. When you run the Visual Studio installation, you'll see a few seconds of initialization followed by a feature selection option, as shown in Figure 3. First, select the ".NET Desktop development and Universal Windows Platform development (for HoloLens)" checkbox in Visual Studio 2019's features list. Then, after making the required selections, click on "Next" or "Install.
 :::image type="content" source="../media/3.png" alt-text="Select.NET Desktop development and Universal Windows Platform development (for HoloLens) in Visual Studio 2019. ." lightbox="../media/3.png":::
