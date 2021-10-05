@@ -2,10 +2,7 @@ The *Computer Vision* cognitive service uses pre-trained machine learning models
 
 For example, suppose the fictitious retailer *Northwind Traders* has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance, and direct employees to help them. By using the Computer Vision service, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict.
 
-## Use the Cloud Shell
-
-To test the capabilities of the Computer Vision service, we'll use a simple command-line application that runs in the Cloud Shell.
-> **Note**: For this lab, you will test out an application in a cloud shell environment. When you build your own application, you can use an environment of your choice.
+In this lab, you'll use a simple command-line application to see the Computer Vision service in action. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
 1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance. 
 
@@ -13,11 +10,11 @@ To test the capabilities of the Computer Vision service, we'll use a simple comm
 
 ## Create a *Computer Vision* resource
 
-Let's start by creating a **Computer Vision** resource in your Azure subscription:
+Let's create a **Computer Vision** resource in your Azure subscription:
 
 1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with your Microsoft account.
 2. Click the **&#65291;Create a resource** button, search for *Computer Vision*, and create a **Computer Vision** resource with the following settings:
-    - **Subscription**: *Your Azure subscription*.
+    - **Subscription**: *Your Azure subscription or Concierge Subscription*. 
     - **Resource group**: *Select an existing resource group or create a new one*.
     - **Region**: *Choose any available region*
     - **Name**: *Enter a unique name*.
@@ -71,7 +68,7 @@ Now that you have a cloud shell environment, you can run a simple client applica
 
     ```
     cd ai-900
-    analyze-image.ps1 store-cam1.jpg
+    ./analyze-image.ps1 store-cam1.jpg
     ```
 
 7. Review the results of the image analysis, which include:
@@ -86,7 +83,7 @@ Now that you have a cloud shell environment, you can run a simple client applica
     To analyze the second image, enter the following command:
 
     ```
-    analyze-image.ps1 store-cam2.jpg
+    ./analyze-image.ps1 store-cam2.jpg
     ```
 
 9. Review the results of the image analysis for the second image.
@@ -98,7 +95,7 @@ Now that you have a cloud shell environment, you can run a simple client applica
     To analyze the third image, enter the following command:
 
     ```
-    analyze-image.ps1 store-cam3.jpg
+    ./analyze-image.ps1 store-cam3.jpg
     ```
 
 11. Review the results of the image analysis for the third image.
