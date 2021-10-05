@@ -6,8 +6,11 @@ Deployment is the process of installing, configuring, and enabling a specific ap
 ​
 ## Build your application on Desktop with StereoKit
 
+During the build process, you may encounter errors when opening the Solution Explorer and the C# program file. To debug the
+errors, run the initial build solution.
+
 1. To bulid the application to desktop, configure Visual Studio for desktop by clicking onto "Solution Configuration" ensure the
-Debug and Any device is selected.(ss)
+Debug and Any device is selected.(11)
 ​
 2. Click on the Device dropdown and ensure the projectsetup-desktop is selected.(ss)
 
