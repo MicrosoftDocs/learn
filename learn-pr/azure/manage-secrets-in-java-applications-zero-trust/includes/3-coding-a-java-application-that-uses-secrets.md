@@ -1,20 +1,20 @@
 You're going to code a Java Web application, using Spring Boot, that connects to a database.
 
-For security reasons, you will need to secure that database access in the future, but first let's create the
+For security reasons, you will need to secure that database access in the future. But first let's create the
 application infrastructure, and then configure the Java application to use.
 
 ## Create the application infrastructure
 
-You will use Azure CLI to create the following resources:
+You'll use Azure CLI to create the following resources:
 
 - An Azure resource group, that will contain all the resources for your application.
 - A PostgreSQL database server.
 - An Azure Spring Cloud cluster, and a Spring Cloud application running inside this cluster.
 
-You will need to provide some environment variables at the beginning of the script, that should be unique across Azure.
+You'll need to provide some environment variables at the beginning of the script, that should be unique across Azure.
 We recommend you use your username and some random characters in order to avoid naming conflicts.
 
-You will also need to provide your local IP address, in order to access the database from your local computer If you
+You'll also need to provide your local IP address to access the database from your local computer. If you
 don't know your local IP address, you can go to the following website: https://www.whatismyip.com/
 
 ```bash
@@ -79,7 +79,7 @@ Get the application skeleton from the https://github.com/Azure-Samples/manage-se
 git clone https://github.com/Azure-Samples/manage-secrets-in-java-applications.git
 ```
 
-This application uses Spring Data JPA to access the database, here is the CRUD Repository interface:
+This application uses Spring Data JPA to access the database, you can look at the CRUD Repository interface:
 
 ```java
 package com.example.demo;
@@ -141,14 +141,14 @@ This configuration file has two variables that need to be configured:
 - `${azureResourceGroupName}` is the name of the resource group that was configured earlier in the `AZ_RESOURCE_GROUP` environment variable.
 - - `${azureDatabasePassword}` is the name of the database password that was configured earlier in the `AZ_POSTGRESQL_PASSWORD` environment variable.
 
-As we have seen in the previous unit, it is a bad practice to hard-code those values in the application
-source code, but in order to test the application, you can write them temporarily and run the application:
+As we've seen in the previous unit, it's a bad practice to hard-code those values in the application
+source code. But in order to test the application, you can write them temporarily and run the application:
 
 ```bash
 ./mvnw spring-boot:run
 ```
 
-You should be able to read the database content by accessing the Spring MVC Controller using the
+You can read the database content by accessing the Spring MVC Controller using the
 following command, or using a Web browser:
 
 ```bash
@@ -157,13 +157,13 @@ curl http://localhost:8080
 
 ## Deploy the Java application to Azure
 
-In order to deploy the application, you'll first need to package it as a Jar file:
+To deploy the application, you'll first need to package it as a Jar file:
 
 ```bash
 ./mvnw clean package
 ```
 
-This will produce an executable Jar file in the `target` directory, that you'll deploy using
+This command will produce an executable Jar file in the `target` directory, that you'll deploy using
 the AZ CLI:
 
 ```bash
@@ -174,7 +174,7 @@ az spring-cloud app deploy \
    --jar-path target/*.jar
 ```
 
-If anything goes bad, you'll be able to look at the application logs by typing the following command:
+If anything goes bad, you can look at the application logs by typing the following command:
 
 ```bash
 az spring-cloud app logs \
@@ -183,12 +183,12 @@ az spring-cloud app logs \
    --name application
 ```
 
-The application will then be available in the cloud, and you'll be able to access its data using a cURL
+The application will then be available in the cloud, and you can access its data using a cURL
 command:
 
 ```bash
 curl https://$AZ_SPRING_CLOUD-application.azuremicroservices.io
 ```
 
-Congratulations, you have successfully created a Java application that connects to a database! Now
+Congratulations, you've successfully created a Java application that connects to a database! Now
 you'll need to secure the database credentials in the next units.
