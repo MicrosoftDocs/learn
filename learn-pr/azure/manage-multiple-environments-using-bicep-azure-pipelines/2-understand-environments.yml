@@ -4,7 +4,7 @@ title: Understand environments
 metadata:
   unitType: learning-content
   title: Understand environments
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Learn about the environments you typically deploy your resources to. Also, learn about Azure Pipeline environments and how to use them.
   ms.date: 09/08/2021
   author: vermegi
   ms.author: givermei

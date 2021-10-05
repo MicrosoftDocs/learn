@@ -45,7 +45,7 @@ products:
 units:
 - learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.introduction
 - learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.understand-environments
-- learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.exercise-prepare-your-environment
+- learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.exercise-set-up-environment
 - learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.exercise-add-multiple-environments-your-pipeline
 - learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.handle-similarities-between-environments-using-pipeline-templates
 - learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.handle-differences-between-environments-using-bicep-parameters
