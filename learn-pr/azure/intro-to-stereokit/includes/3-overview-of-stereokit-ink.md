@@ -100,7 +100,7 @@ StereoKit's user interface is based on an immediate mode approach. The prime obj
 
 ## Making a window
 
-[Snapshot]
+:::image type="content" source="../media/toggle-pose.png" alt-text="Screenshot of toggle pose for the Window." lightbox="../media/toggle-pose.png":::
 The toggle pose for the window off to the left facing to the right, as well as a float that will be utilised as a slider, are shown in the image above and the code will be added to initialization section.
 ```
 Pose  windowPose = new Pose(-.4f, 0, 0, Quat.LookDir(1,0,1));
