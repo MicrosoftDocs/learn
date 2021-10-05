@@ -73,10 +73,10 @@ Now, let's create the trigger and provide values for all required parameters.
  
 1. When the Twitter **When a new tweet is posted** dialog box reappears you have created a valid connection. The dialog box has three required parameters:
 
-- **Search text:** Text to look for in the tweet text. You can include a hashtag character at the beginning of the search text to search for hashtags.
-- **Frequency:** Unit of time for search frequency. For example, `Second`, `Minute`, `Hour`, or `Day`.
-- **Interval:** How often to search. For example, an interval of `3` and a frequency of `Hour` would check for new tweets every three hours.
-
+   - **Search text:** Text to look for in the tweet text. You can include a hashtag character at the beginning of the search text to search for hashtags.
+   - **Frequency:** Unit of time for search frequency. For example, `Second`, `Minute`, `Hour`, or `Day`.
+   - **Interval:** How often to search. For example, an interval of `3` and a frequency of `Hour` would check for new tweets every three hours.
+   
 1. Enter the following values:
 
     | Setting | Value |
