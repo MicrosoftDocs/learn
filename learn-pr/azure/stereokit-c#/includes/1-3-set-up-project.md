@@ -34,9 +34,13 @@ Enabling Developer Mode in UWP/Hololens makes it easier to test the applications
 If you're using a Windows Mixed Reality headset with your PC, you'll have to enable Developer Mode on your computer.
 
 1. Go to **Settings** menu.
+:::image type="content" source="../media/4.png" alt-text="Setting menu" lightbox="../media/4.png":::
 2. Select **Update and Security**.
+:::image type="content" source="../media/5.png" alt-text="Click on Update and Security" lightbox="../media/5.png":::
 3. Select **For developers**.
+:::image type="content" source="../media/6.png" alt-text="Click For Developers option" lightbox="../media/6.png":::
 4. Enable **Developer Mode**, read the disclaimer for the selected setting, and then accept the change by selecting Yes.
+:::image type="content" source="../media/7.png" alt-text="On the toggle button to enable Developer Mode" lightbox="../media/7.png":::
 
 ## StereoKit’s visual studio template
 
