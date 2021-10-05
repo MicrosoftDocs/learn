@@ -40,17 +40,17 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.
 
-1. On the Azure portal menu, select **More services**, then search for and select **Monitor**. The **Overview** pane for Monitor appears.
+1. On the Azure portal menu, select **More services**, then search for and select **Monitor**. The Monitor **Overview** pane appears.
 
-1. In the left menu pane, select **Alerts**.
+1. In the Moniyot menu, select **Alerts**.
 
-1. In the top menu bar, select **New alert rule**. The **Create alert rule** pane appears.
+1. In the command bar, select **New alert rule**. The **Create alert rule** pane appears.
 
     ![Screenshot that shows the "Create alert rule" pane.](../media/4-create-monitor-rule.png)
 
 1. Under **Scope**, select the **Select resource** link. The **Select a resource** pane appears.
 
-1. The **Filter by subscription** dropdown list should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown list, select **Virtual machines**.
+1. The **Filter by subscription** should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown list, select **Virtual machines**.
 
 1. Select the **vm1** virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group. Then, select **Done** at the bottom of the pane.
 
