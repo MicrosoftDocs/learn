@@ -45,7 +45,7 @@ If you don't already have an Azure Machine Learning workspace in your Azure subs
 
 1. Select **Launch studio**, or go to [https://ml.azure.com](https://ml.azure.com?azure-portal=true), and sign in using your Microsoft account. The **Microsoft Azure Machine Learning Studio** page appears.
 
-1. In *Azure Machine Learning Studio*, toggle the  **&#9776;** icon at the top left to expane/collapse its menu pane. You can use these options to manage the resources in your workspace.
+1. In *Azure Machine Learning Studio*, toggle the **&#9776;** icon at the top left to expane/collapse its menu pane. You can use these options to manage the resources in your workspace.
 
 ### Create a compute instance
 

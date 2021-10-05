@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: nextgen
 title: Code control statements in Python
 summary: Learn more advanced topics of Python using interactive Notebooks.
 abstract: |
