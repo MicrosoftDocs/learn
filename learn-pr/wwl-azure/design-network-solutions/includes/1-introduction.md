@@ -13,7 +13,7 @@ In this module, you will:
 
 - Recommend a network architecture solution based on workload requirements 
 
-- Design for on-premises Connecitivty to Azure Virtual Networks 
+- Design for on-premises connectivity to Azure Virtual Networks 
 
 - Design for Azure network connectivity services 
 

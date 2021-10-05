@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/04/2021
+  ms.date: 10/05/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -17,11 +17,11 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which load balancing solution is recommended?"
+  - content: "Which load-balancing solution is recommended?"
     choices:
     - content: "Application Gateway"
       isCorrect: true
-      explanation: "That's correct. An Application Gateway is the best choice for a web application that is not intern facing."
+      explanation: "That's correct. An Application Gateway is the best choice for a web application that is not internet facing."
     - content: "Front Door"
       isCorrect: false
       explanation: "That's incorrect. Front Door is not needed for non-internet facing applications."
