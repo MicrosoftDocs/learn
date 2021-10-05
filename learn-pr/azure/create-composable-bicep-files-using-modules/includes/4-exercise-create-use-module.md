@@ -12,10 +12,6 @@ During the process, you'll:
 
 [!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
-<!-- TODO -->
-> [!WARNING]
-> **Note to module reviewers:** This exercise includes the use of `@description()` decorators, which is currently a prerelease Bicep feature. We plan to release this content after the feature is generally available. If you get errors when following the instructions below, just remove the `@description()` decorators. It won't affect your ability to follow the remaining instructions.
-
 ## Create a blank Bicep file
 
 1. Open Visual Studio Code.
