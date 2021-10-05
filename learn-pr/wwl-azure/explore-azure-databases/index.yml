@@ -39,8 +39,8 @@ units:
 - learn.wwl.explore-azure-databases.apply-sql-server-transparent-data-encryption
 - learn.wwl.explore-azure-databases.explore-sql-server-2014-buffer-pool-extension
 - learn.wwl.explore-azure-databases.examine-oracle-recommendations
-- learn.wwl.explore-azure-databases
-- learn.wwl.explore-azure-databases
+- 'learn.wwl.explore-azure-databases.implement-linux-clustering '
+- learn.wwl.explore-azure-databases.implement-windows-clustering
 - learn.wwl.explore-azure-databases.knowledge-check
 - learn.wwl.explore-azure-databases.summary
 badge:
