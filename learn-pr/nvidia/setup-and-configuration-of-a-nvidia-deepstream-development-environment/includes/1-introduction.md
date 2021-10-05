@@ -1,4 +1,4 @@
-In this module, you will learn how to setup and configure an X86 based Ubuntu 18.04 System to host an NVIDIA DeepStream development environment.
+In this module, you will learn how to set up and configure an X86 based Ubuntu 18.04 System to host an NVIDIA DeepStream development environment.
 
 ## Prerequisites
 * X86 Based System running Ubuntu 18.04 OS

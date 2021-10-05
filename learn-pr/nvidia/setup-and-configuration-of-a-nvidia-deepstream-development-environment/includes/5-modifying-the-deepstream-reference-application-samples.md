@@ -1,6 +1,6 @@
 Now that we can run the DeepStream reference applications, we now look at how to modify these samples for different behavior.  
 
-1. Let's start by viewing the structure of the sample configuration in a text editor.  We'll make a copy of the sample configuration used in the previous section and look take a look at areas to modify using the the commands below:
+1. Let's start by viewing the structure of the sample configuration in a text editor.  We'll make a copy of the sample configuration used in the previous section and examine areas to modify using the commands below:
 
     ```
     cd /opt/nvidia/deepstream/deepstream-6.0/samples/configs/deepstream-app
