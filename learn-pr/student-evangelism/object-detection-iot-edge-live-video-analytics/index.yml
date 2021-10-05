@@ -8,6 +8,7 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
+  ms.custom: nextgen
 title: "Object detection on Edge devices with Live Video Analytics using YOLO model"
 summary: "Use a Live Video Analytics module to deploy a machine learning solution to an IoT Edge device. The solution will process a video feed from cameras and detect objects at the edge using a YOLO model to perform inferencing operations. Check that the solution is successfully deployed and test your solution from a web application."
 abstract: |

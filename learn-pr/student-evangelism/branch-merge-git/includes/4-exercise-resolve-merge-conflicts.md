@@ -34,10 +34,10 @@ Start by assuming the role of Alice and make a change to the website home page. 
 
     ```
 
-1. If you didn't download the resources earlier, download the zip file that contains the [resources that accompany this lesson](https://topcs.blob.core.windows.net/public/git-resources.zip). Unzip the resource files:
+1. If you didn't download the resources earlier, download the zip file that contains the [resources that accompany this lesson](https://github.com/MicrosoftDocs/mslearn-branch-merge-git/raw/main/git-resources.zip). Unzip the resource files:
 
     ```bash
-    wget https://topcs.blob.core.windows.net/public/git-resources.zip
+    wget https://github.com/MicrosoftDocs/mslearn-branch-merge-git/raw/main/git-resources.zip
     unzip git-resources.zip
 
     ```
