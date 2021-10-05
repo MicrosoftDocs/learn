@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
-using Microsoft.Azure.Cosmos.Table;
+using Azure;
+using Azure.Data.Tables;
 using Microsoft.Extensions.Configuration;
 
 namespace LensesApp
@@ -26,20 +27,19 @@ namespace LensesApp
             Console.WriteLine(args[0]);
 
             // Connect to the service, using the connection string in the appsettings.json file
-            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(configuration.GetConnectionString("LensesDatabase"));
-            CloudTableClient tableClient = storageAccount.CreateCloudTableClient();
-            CloudTable lensesTable = tableClient.GetTableReference("lensestable");
+            string tableConnectionString = configuration.GetConnectionString("LensesDatabase");
+            TableClient tableClient = new TableClient(tableConnectionString, "lensestable");
 
             // Find out what the user wants to do.
             if (args[0] == "PopulateTable")
             {
                 // Create and populate the table
                 Console.WriteLine("Creating the Lenses table...");
-                lensesTable.CreateIfNotExists();
+                tableClient.CreateIfNotExists();
                 Console.WriteLine("Table created. Populating...");
-                insertEntity(lensesTable, "Prime", "X5018", "50mm", "f1.8"); 
-                insertEntity(lensesTable, "Zoom", "X357035", "35-70mm", "f3.5"); 
-                insertEntity(lensesTable, "Macro", "X10028", "100mm", "f2.8"); 
+                insertEntity(tableClient, new Lens() { LensType = "Prime", PartNumber = "X5018", FocalLength = "50mm", Aperture = "f1.8" } ); 
+                insertEntity(tableClient, new Lens() { LensType = "Zoom", PartNumber = "X357035", FocalLength = "35-70mm", Aperture = "f3.5" } ); 
+                insertEntity(tableClient, new Lens() { LensType = "Macro", PartNumber = "X10028", FocalLength = "100mm", Aperture = "f2.8" }); 
                 Console.WriteLine("Tables created and populated.");
                 return;
             }
@@ -47,11 +47,17 @@ namespace LensesApp
             {
                 // Read the table and display it here.
                 Console.WriteLine("Reading the contents of the Lenses table...");
-                TableQuery<LensEntity> allLensesQuery = new TableQuery<LensEntity>();
                 Console.WriteLine("| {0, 10} | {1, 30} | {2, 10} | {3, 10} |", "Lens Type", "Part Number", "Focal Length", "Aperture");
-                foreach (LensEntity lens in lensesTable.ExecuteQuery(allLensesQuery))
+
+                Pageable<TableEntity> results = tableClient.Query<TableEntity>();
+                foreach (TableEntity entity in results)
                 {
-                    Console.WriteLine("| {0, 10} | {1, 30} | {2, 10} | {3, 10} |", lens.LensType, lens.PartNumber, lens.FocalLength, lens.Aperture);
+                    string lensType = entity.PartitionKey;
+                    string partNumber = entity.RowKey;
+                    object focalLength = entity["FocalLength"];
+                    object aperture = entity["Aperture"];
+                    
+                    Console.WriteLine("| {0, 10} | {1, 30} | {2, 10} | {3, 10} |", lensType, partNumber, focalLength, aperture);
                 }
                 return;
             }
@@ -64,55 +70,36 @@ namespace LensesApp
                     return;
                 }
                 // Add a lens
-                Console.WriteLine("Adding your {0} lens...", args[3]);
-                insertEntity(lensesTable, args[1], args[2], args[3], args[4]); 
+                Lens newLens = new Lens() { LensType = args[1], PartNumber = args[2], FocalLength = args[3], Aperture = args[4] };
+                Console.WriteLine("Adding your {0} lens...", newLens.FocalLength);
+                insertEntity(tableClient, newLens); 
                 Console.WriteLine("Lens added.");
                 return;
             }
 
         }
 
-        private static void insertEntity(CloudTable table, 
-            string lensType, 
-            string partNumber, 
-            string focalLength, 
-            string aperture)
+        private static void insertEntity(TableClient tableClient, Lens lens)
         {
-            // Create an entity and set properties
-            LensEntity lens = new LensEntity(lensType, partNumber)
-            {
-                LensType = lensType,
-                PartNumber = partNumber,
-                FocalLength = focalLength,
-                Aperture = aperture
-            };
+            // Map the Lens object to a TableEntity to insert it
+            TableEntity entity = new TableEntity();
+            entity.PartitionKey = lens.LensType;
+            entity.RowKey = lens.PartNumber;
+            entity["FocalLength"] = lens.FocalLength;
+            entity["Aperture"] = lens.Aperture;
+
             // Add the entity
-            TableOperation insertOrMerge = TableOperation.InsertOrMerge(lens);
-            TableResult result = table.Execute(insertOrMerge);
+            tableClient.UpsertEntity(entity);
         }
 
 
     }
 
-    public class LensEntity : TableEntity
+    public class Lens
     {
-        public LensEntity()
-        {
-
-        }
-
-        public LensEntity(string lensType, string partNumber)
-        {
-            PartitionKey = lensType;
-            LensType = lensType;
-            RowKey = partNumber;
-            PartNumber = partNumber;
-        }
-
         public string LensType{ get; set; }
         public string PartNumber{ get; set; }
         public string Aperture{ get; set; }
         public string FocalLength{ get; set; }
-
     }
 }

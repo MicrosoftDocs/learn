@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
+  ms.custom: nextgen
 title: Introduction to Python
 summary: This module introduces you to Python as applied to data science. You'll also learn to use libraries and packages that help you analyze large, incomplete data.
 abstract: |

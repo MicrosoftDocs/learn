@@ -6,7 +6,7 @@ Let's assume the Fruit Smoothies' development team decides to extend the project
 
 If you continue to use the load balancer solution, you'll need to deploy a separate load balancer on the cluster and map its IP address to a new fully qualified domain name (FQDN), for example, `videos.fruitsmoothies.com`. To implement the required URL-based routing configuration, you'll need to install additional software outside of your cluster.
 
-The extra effort is that a Kubernetes load balancer service is a Layer 4 load balancer. Layer 4 load balancers only deal with routing decisions between IPs addresses, TCP, and UDP ports. Kubernetes provides you with an option to simplify the above configuration by using an ingress controller.
+The extra effort is that a Kubernetes load balancer service is a Layer 4 load balancer. Layer 4 load balancers only deal with routing decisions between IP addresses, TCP, and UDP ports. Kubernetes provides you with an option to simplify the above configuration by using an ingress controller.
 
 In this exercise, you will:
 
@@ -187,7 +187,7 @@ Let's set up an Ingress resource with a route to the ratings-web service.
 
 Open the host name you configured on the ingress in a web browser to view and interact with the application. For example, at http:\//frontend.13.68.177.68.nip.io.
 
-![Screenshot of the ratings-web application.](../media/07-ratings-web-ingress.png)
+:::image type="content" source="../media/07-ratings-web-ingress.png" border="false" alt-text="[Screenshot of the ratings-web application.":::
 
 ## Summary
 

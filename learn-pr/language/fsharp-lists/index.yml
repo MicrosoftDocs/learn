@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
+  ms.custom: nextgen
 title: Store and apply operations on list data in F#
 summary: Learn how to write programs by using lists, and learn how to use the list properties and list functions that are specified in the list module.
 abstract: |

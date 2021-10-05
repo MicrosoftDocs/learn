@@ -8,6 +8,7 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
+  ms.custom: nextgen
 title: "Develop secure IoT Solutions for Azure Sphere with IoT Hub"
 summary: "Deploy an Azure Sphere device application to monitor ambient conditions for laboratory conditions. The application will monitor the room environment conditions, connect to IoT Hub, and send telemetry data from the device to the cloud. You'll control cloud-to-device communications and undertake actions as needed."
 abstract: | 
