@@ -1,8 +1,8 @@
-To interact with individual blobs in Blob storage, you use a `BlobClient` object.  You get an `BlobClient` by requesting it with the blob's name from the `BlobContainerClient` the blob is located in.  `BlobClient` has methods to upload, download and manage individual blobs in Blob storage.
+To interact with individual blobs in Blob Storage, you use a `BlobClient` object.  You get an `BlobClient` by requesting it with the blob's name from the `BlobContainerClient` the blob is located in.  `BlobClient` has methods to upload, download and manage individual blobs in Blob Storage.
 
 ## Getting a BlobClient object
 
-To get an `BlobClient` by name, call the `GetBlobClient` methods on the `BlobContainerClient` that contains the blob with the name of the blob.  A `BlobClient` object allows you to interact with the blob &dash;that is upload, download or manage the blob in Azure Blob storage.
+To get an `BlobClient` by name, call the `GetBlobClient` methods on the `BlobContainerClient` that contains the blob with the name of the blob.  A `BlobClient` object allows you to interact with the blob &dash;that is upload, download or manage the blob in Blob Storage.
 
 Moving data to and from a blob is a network operation that takes time. The Azure Storage SDK for .NET provides asynchronous implementation of all methods that require network activity.  It is recommended to use these async implementations whenever possible in your application.
 
@@ -24,7 +24,7 @@ Let's finish your app by adding upload and download code, then deploy it to Azur
 
 ### Upload
 
-- To upload a blob, you'll implement the `BlobStorage.Save` method.  First, you wil get a `BlobClient` object that represents the blob by calling `GetBlobClient` on a `BlobContainerClient`. Then, you will use the `UploadAsync` method on the `BlobClient` to save the `Stream` of data passed to this method up to Azure Blob storage.
+- To upload a blob, you'll implement the `BlobStorage.Save` method.  First, you wil get a `BlobClient` object that represents the blob by calling `GetBlobClient` on a `BlobContainerClient`. Then, you will use the `UploadAsync` method on the `BlobClient` to save the `Stream` of data passed to this method up to Blob Storage.
 
     In the editor, in `BlobStorage.cs`, replace `Save` with the following code.
 
@@ -45,11 +45,11 @@ Let's finish your app by adding upload and download code, then deploy it to Azur
     ```
 
     > [!NOTE]
-    > The stream-based upload code shown here is more efficient than reading the file into a byte array before sending it to Azure Blob storage. However, the ASP.NET Core `IFormFile`     technique you use to get the file from the client is not a true end-to-end streaming implementation, and is only appropriate for handling uploads of small files.
+    > The stream-based upload code shown here is more efficient than reading the file into a byte array before sending it to Blob Storage. However, the ASP.NET Core `IFormFile` technique you use to get the file from the client is not a true end-to-end streaming implementation, and is only appropriate for handling uploads of small files.
 
 ### Download
 
-To download a file, the `OpenReadAsync` method on the `BlobClient` object is returned. This method returns a `Stream`, meaning that your code doesn't need load all of the bytes from Blob storage at once &mdash; you just need to return a reference to the blob stream which can be used by ASP.NET Core to stream the file to the browser.
+To download a file, the `OpenReadAsync` method on the `BlobClient` object is returned. This method returns a `Stream`, meaning that your code doesn't need load all of the bytes from Blob Storage at once &mdash; you just need to return a reference to the blob stream which can be used by ASP.NET Core to stream the file to the browser.
 
 - Replace `Load` with this code and save your work.
 
