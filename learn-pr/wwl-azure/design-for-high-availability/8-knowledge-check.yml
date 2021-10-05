@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "Availability Zones"
       isCorrect: true
-      explanation: "Thats correct. Availability Zones offer a VM SLA of 99.99%"
+      explanation: "That's correct. Availability Zones offer a VM SLA of 99.99%"
     - content: "Availability Sets"
       isCorrect: false
       explanation: "that’s incorrect. Availability sets provide 99.95% SLA"
