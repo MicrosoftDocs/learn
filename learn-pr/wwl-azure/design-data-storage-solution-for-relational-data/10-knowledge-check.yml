@@ -21,13 +21,13 @@ quiz:
     choices:
     - content: "SQL Server in an Azure virtual machine"
       isCorrect: true
-      explanation: "that’s correct. SQL Server in an Azure VM allows for Windos authenticaion"
+      explanation: "that’s correct. SQL Server in an Azure VM allows for Windows authentication"
     - content: "Azure SQL Managed Instance"
       isCorrect: false
       explanation: "that’s incorrect. SQL managed instance doesn’t meet the requirement of Windows authentication"
     - content: "Azure SQL Database, single database"
       isCorrect: false
-      explanation: "that’s incorrect. SQL Database doesn’t meet the reqirment of Windows authenrtication"
+      explanation: "that’s incorrect. SQL Database doesn’t meet the requirement of Windows authentication"
   - content: "Which Azure SQL deployment option should be used for the HR application"
     choices:
     - content: "Azure SQL Managed Instance"
@@ -38,7 +38,7 @@ quiz:
       explanation: "that’s incorrect. This does not meet the requirements of removing management of SQL Server"
     - content: "Azure SQL Database"
       isCorrect: false
-      explanation: "that’s inncorect. Azure SQL database doesn’t support instance-scoped features like service broker and CLR"
+      explanation: "that’s incorect. Azure SQL database doesn’t support instance-scoped features like service broker and CLR"
   - content: "What database service tier should be selected for the databases being migrated?"
     choices:
     - content: "Hyper Scale"

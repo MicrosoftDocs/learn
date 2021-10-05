@@ -1,4 +1,4 @@
-Tailwind Traders, a fictitious home improvement retailer, looking to migrate to cloud had to choose a low latency and high availability database solution for storing relational data. Based on the organization’s needs, they decided to implement Azure SQL Database, which is a fully managed service with an availability SLA of 99.995% in a Business critical service tier using Avaibility Zones.
+Tailwind Traders, a fictitious home improvement retailer, looking to migrate to cloud had to choose a low latency and high availability database solution for storing relational data. Based on the organization’s needs, they decided to implement Azure SQL Database, which is a fully managed service with an availability SLA of 99.995% in a Business critical service tier using Availability Zones.
 
 The next decision to make for Tailwind Traders is how to handle scalability. Specifically, the scalability of a relational database. You have to help them design a solution that is dynamically scalable to handle the incoming workload. Your solution should be able to handle an expanding number of requests over time without a negative effect on availability or performance. How will you help them in this situation?
 
@@ -12,7 +12,7 @@ Azure SQL Database enables you to easily change resources allocated to your data
 
 - Storage
 
-You can easily scale an Azure SQL Database using the Azure portal without the worry of new hardware purchase or changing the existing infrastructure.
+You can easily scale an Azure SQL Database using the Azure Portal without the worry of new hardware purchase or changing the existing infrastructure.
 
 Dynamic Scalability for Azure SQL Database enables you to:
 
@@ -124,7 +124,7 @@ Reasons for Sharding include:
 
 - When different customers or tenents' data needs physical isolation from each other
 
-- Within an organization, there is a geographical seperation of data for compliance reasons
+- Within an organization, there is a geographical separation of data for compliance reasons
 
  
 
@@ -147,4 +147,4 @@ The following table identifies key points to remember before choosing Vertical/H
 | - | - |
 | Do you have to manage and scale multiple Azure SQL databases that have varying and unpredictable resource requirements?| **SQL elastic pools.** Vertical scale up is a good solution for this scenario. Elastic pools solve this problem by ensuring that databases get the performance resources they need when they need it. They provide a simple resource allocation mechanism within a predictable budget. There is no per-database charge for elastic pools. You are billed for each hour a pool exists at the highest eDTU or vCores, regardless of usage or whether the pool was active for less than an hour. |
 | Do you have different sections of the database residing in different parts of the world for compliance concerns?| **Horizontal scaling by Sharding** works best. Sharding enables you to split your data into several databases and scale them independently. The shard map manager is a special database that maintains global mapping information about all shards (databases) in a shard set. The metadata allows an application to connect to the correct database, based upon the value of the sharding key. |
-| Are there dependencies such as commercial BI or data integration tools where multiple databases contribute rows into a single overall result for use in Excel, Power BI, Tableau, or Cognos?| Use **Elastic database tools** and elastic query feature within it to access data spread across multiple databases. Elastic query is available on standard tier, querying can be done in T-SQL that spans multiple databases in Azure SQL Database. Cross-database queries can be executed to access remote tables, and to connect Microsoft and third-party tools (Excel, Power BI, Tableau, etc.) to query across data tiers. Using this feature, you can scale out queries to large data tiers and visualize the results in business intelligence (BI) reports. |
+| Are there dependencies such as commercial BI or data integration tools where multiple databases contribute rows into a single overall result for use in Excel, Power BI, or Tableau?| Use **Elastic database tools** and elastic query feature within it to access data spread across multiple databases. Elastic query is available on standard tier, querying can be done in T-SQL that spans multiple databases in Azure SQL Database. Cross-database queries can be executed to access remote tables, and to connect Microsoft and third-party tools (Excel, Power BI, Tableau, etc.) to query across data tiers. Using this feature, you can scale out queries to large data tiers and visualize the results in business intelligence (BI) reports. |
