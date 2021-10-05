@@ -2,8 +2,8 @@
 uid: learn.wwl.create-run-container-images-azure-container-instances
 metadata:
   title: Run container images in Azure Container Instances
-  description: "Run container images in Azure Container Instances"
-  ms.date: 10/04/2021
+  description: "Learn how Azure Container Instances can help you quickly deploy containers, how to set environment variables, and specify container restart policies."
+  ms.date: 10/05/2021
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -12,11 +12,11 @@ title: Run container images in Azure Container Instances
 summary: Learn how Azure Container Instances can help you quickly deploy containers, how to set environment variables, and specify container restart policies.
 abstract: |
   After completing this module, you'll be able to:
-  * Describe the benefits of Azure Container Instances and how resources are grouped
-  * Deploy a container instance in Azure by using the Azure CLI
-  * Start and stop containers using policies
-  * Set environment variables in your container instances
-  * Mount file shares in your container instances
+  *   Describe the benefits of Azure Container Instances and how resources are grouped.
+  *   Deploy a container instance in Azure by using the Azure CLI.
+  *   Start and stop containers using policies.
+  *   Set environment variables in your container instances.
+  *   Mount file shares in your container instances.
 prerequisites: |
   *   You should be familiar with container concepts and terminology.
   *   An understanding of cloud computing and some experience with the Azure portal.
