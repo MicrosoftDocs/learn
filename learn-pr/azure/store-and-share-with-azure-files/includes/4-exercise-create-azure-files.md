@@ -1,8 +1,8 @@
-Azure storage accounts enable an organization to replicate their on-premises file shares in a secure, resilient cloud service. A company can then remove redundant hardware and infrastructure that support the internal SANs and NAS. At the same time, the company can reduce the risk of files being unavailable because of a hardware failure.
+Azure storage accounts enable organizations to replicate their on-premises file shares in a secure, resilient cloud service. A company can create one or more Azure storage accounts, replicate specific conent, and then remove redundant hardware and infrastructure that support the internal SANs and NAS. Importantly, a company can reduce the risk of files being unavailable in the event of a hardware failure.
 
-The finance company has asked you to duplicate two file shares that they currently have on-premises. Your company uses one file share for reports and the other for application data. The storage account needs to be resilient to datacenter failures. That's why you'll create a storage account to use GRS redundancy.
+Your finance company has asked you to duplicate two on-premises file shares, one for reports and the other for application data. The storage account you create needs to be resilient to datacenter failures. Therefore, you'll create a storage account that uses GRS redundancy.
 
-In this exercise, you'll first create a new storage account and two file shares for reports and application data. You'll then create a Windows VM to use as your example customer machine. You'll use the VM to mount drives where you access the file shares. Finally, you'll map two drives to the new Azure file shares and copy reports to them.
+In this exercise, you'll create a new storage account and two file shares for reports and application data. You'll then create a Windows VM to use as your example customer machine. You'll use the VM to mount drives where you can access the file shares. Finally, you'll map two drives to the new Azure file shares and copy reports to them.
 
 ## Create a GRS storage account
 
@@ -60,32 +60,32 @@ Create a Windows Server VM to simulate an on-premises machine running in the fin
         --admin-username azureuser
     ```
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account you used to activate the sandbox.
+1. When the virtual machine has been created, sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account you used to activate the sandbox.
 
 1. On the home page, under **All services**, select **Virtual machines**, and then select the **2019FileServer** VM you created in step 1 of this task. The **2019 FileServer** Virtual machine pane appears.
 
 1. On the command bar, select **Connect** > **RDP**, and then select **Download RDP File**.
 
-1. When the RDP file has downloaded, select it to run the program. In the **Remote Desktop Connection** dialog box, select **Connect**.
+1. When the RDP file has downloaded, select it to run. In the **Remote Desktop Connection** dialog box, select **Connect**.
 
 1. On the Windows Security **Enter your credentials** dialog box, select **More choices**, and then scroll down and select **Use a different account**. In the **Email address** field, enter *azureuser*, in the **Password** field, enter the password you created earlier, and then select **OK**.
 
     > [!NOTE]
     > If you forgot the password, go oto the VM (2019Fileserver) and select **Reset password** under **Help + support > Help** and then select Update in the command bar to update. Restart this task at step 3 to connect and download the RDP file. Alternatively, restart this task. If you encounter any issues, check the sandbox--if it is not still activated, you've lost the resources necessary to complete this exercise. 
 
-1. If you are prompted to verify the remote connection, select **Yes**.
+1. If you're prompted to verify the remote connection, select **Yes**.
 
 ## Map drives to the Azure file shares
 
-1. In the Azure portal's search bar, select or search for **Storage accounts**.
+1. In the Azure portal, select or search for **Storage accounts**.
 
 1. Select the storage account that you created, which should be named **learnazurefileshare** followed by random numbers.
 
-1. In the Storage accunt menu, under **Data storage**, select **File shares**.
+1. In the Storage account menu, under **Data storage**, select **File shares**.
 
     :::image type="content" source="../media/4-select-file-shares.png" alt-text="Screenshot storage account menu with file shares highlighted." lightbox="../media/4-select-file-shares.png#lightbox":::
 
-    The **File shares** pane for your storage account appears.
+    The **File shares** pane for your storage account appears with two file shares.
 
 1. In the file shares list, select **data**. The **data** file share pane appears. 
 
@@ -99,11 +99,11 @@ Create a Windows Server VM to simulate an on-premises machine running in the fin
 
     :::image type="content" source="../media/4-connect-share.png" alt-text="Screenshot of the data file share and its connection commands." lightbox="../media/4-connect-share.png#lightbox":::
 
-1. On your virtual machine, in the system tray, select **Start**, scroll to **Windows PowerShell (Admin)**, or if you don't see **(Admin)**, then right click **Windows PowerShell** and select **Run as Administrator**. 
+1. On your virtual machine, in the system tray, select **Start**, scroll to **Windows PowerShell (Admin)**, or if you don't see **(Admin)**, then right-click **Windows PowerShell** and select **Run as Administrator**. 
 
     :::image type="content" source="../media/4-connect-powershell-admin.png" alt-text="Screenshot of the Windows virtual machine showing Start menu with Windows PowerShell (Admin) selected." lightbox="../media/4-connect-powershell-admin.png#lightbox":::
 
-1. Right-click the PowerShell icon in the PowerShell console title bar, and select **Properties**. On the Options tab, ensure that **Use Ctrl+Shift+C/V as Copy/Paste** is selected, and then select **OK**. Now you can use <kbd>Ctrl+Shift+V</kbd> to paste content into your VM PowerShell console.
+1. In the PowerShell console title bar, right-click the PowerShell icon, and select **Properties**. On the Options tab, ensure that **Use Ctrl+Shift+C/V as Copy/Paste** is selected, and then select **OK**. Now you can use accelerator keys <kbd>Ctrl+Shift+V</kbd> to paste content into your VM PowerShell console.
  
 1. At the command prompt in the PowerShell console, paste the script you copied from the Azure portal, and press <kbd>Enter</kbd>. 
 
