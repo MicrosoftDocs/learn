@@ -37,8 +37,8 @@ units:
 - learn.wwl.implement-ha-sap-netweaver-anydb.set-up-windows-server-failover-cluster-for-sap-ascs-scs-instance
 - learn.wwl.implement-ha-sap-netweaver-anydb.install-sios-datakeeper-cluster-edition-for-sap-ascs-scs-cluster-shared-disk
 - learn.wwl.implement-ha-sap-netweaver-anydb.implement-highly-available-nfs-share
-- learn.wwl.implement-high-availability-sap-netweaver-anydb-azure-virtual-machines​
-- learn.wwl.implement-high-availability-sap-netweaver-anydb-azure-virtual-machines​
+- learn.wwl.implement-ha-sap-netweaver-anydb.implement-sap-architecture-linux
+- learn.wwl.implement-ha-sap-netweaver-anydb.implement-sap-architecture-windows
 - learn.wwl.implement-ha-sap-netweaver-anydb.knowledge-check
 - learn.wwl.implement-ha-sap-netweaver-anydb.summary
 badge:
