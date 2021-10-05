@@ -8,6 +8,7 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
+  ms.custom: nextgen
 title: "Void detection on Edge devices with Live Video Analytics using own images and video"
 summary: "Use a Live Video Analytics module on IoT Edge and deploy a Custom Vision machine learning solution to an IoT Edge device. The solution will identify void spaces in shelves. Check that the solution is successfully deployed and test your solution from a web application."
 abstract: |
