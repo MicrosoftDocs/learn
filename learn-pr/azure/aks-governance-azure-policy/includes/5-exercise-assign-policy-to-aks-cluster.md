@@ -225,7 +225,7 @@ Now that you know that the policy prevents images from Dockerhub from being crea
    echo $ACR_NAME
    ```
 
-1. Modify the code below by replacing <acr name> with the name of the Azure Container Registry your command above returned, then apply it to create the pod from your private registry.
+1. Modify the code below by replacing `<acr name>` with the name of the Azure Container Registry your command above returned, then apply it to create the pod from your private registry.
 
    ```bash
     cat <<EOF | kubectl create -f -
