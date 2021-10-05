@@ -26,7 +26,7 @@ Using a parameter file is a good way of passing parameter values that are not se
 
 An advantage of using this approach is that your pipeline YAML files don't need to contain a list of parameters that need to be passed in individually. This is especially beneficial when you have a large number of parameters. All of the parameters are grouped together and defined in a single JSON file. The parameter files are also part of your Git repository, so they can get versioned in the same way as all your other code.
 
-However, parameter files shouldn't be used for secure values. There's no way to protect the values of the secrets in the parameters files, and you should never commit secure values to your Git repository. Also, every time you want to change a parameter's value, you need to update the corresponding parameter file, commit the change, and then re-run your pipeline. In some situations, this might be too complex or slow.
+However, parameter files shouldn't be used for secure values. There's no way to protect the values of the secrets in the parameters files, and you should never commit secure values to your Git repository. Also, every time you want to change a parameter's value, you need to update the corresponding parameter file, commit the change, and then re-run your pipeline. This can feel slow, but it helps to ensure you're following a consistent process.
 
 ## Pipeline variables
 
@@ -95,8 +95,8 @@ Consider making parameters optional where you can, and use default values that a
 
 Also, keep in mind that parameters are often used in Bicep when resources need to connect to other resources. For example, if you have a website that needs to connect to a storage account, then you'll need to provide the storage account name and access key. Keys are secure values. However, there are other possible approaches to consider when deploying this combination of resources, such as:
 
+- Use the website's managed identity to access the storage account. A managed identity is automatically handled by Azure, and you don't need to maintain any credentials. This simplifies the connection settings, and means you don't have to handle secrets at all, so it's the most secure option.
 - Deploy the storage account and website together in the same Bicep template. Use Bicep modules to keep the website and storage resources together. Then, you can automatically look up the values for the storage account name and the key within the Bicep code, instead of passing in parameters.
-- Use the website's managed identity to access the storage account. A managed identity is automatically handled by Azure, and you don't need to maintain any credentials. This simplifies the connection settings, and means you don't have to pass in secrets at all.
 - Add the storage account's details to Key Vault. Have the website code load the key directly from the vault. This avoids the need to manage the key in the pipeline at all.
 
 ### Use parameter files for large sets of parameters
