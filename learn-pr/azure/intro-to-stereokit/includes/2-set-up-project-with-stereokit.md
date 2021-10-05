@@ -5,7 +5,7 @@ The first step to set up a project on immersive experience for Windows Mixed Rea
 1. Download the free edition of Visual Studio Community and ensure to get the Visual Studio membership if you don't have it already.
 Figure 1 shows how the download button might look.
 If you have the Visual Studio subscription already, you can proceed to download Visual Studio by clicking on the provided following link: https://developer.microsoft.com/en-us/windows/downloads 
-:::image type="content" source="../media/visual-studio-community-free-download.png" alt-text="Screenshot To begin your download, click the “Free download” button from Visual Studio Community." lightbox="../media/visual-studio-community-free-download.png":::
+:::image type="content" source="../media/visual-studio-community-free-download.png" alt-text="The screenshot shows how to begin your download, by clicking the “Free download” button from Visual Studio Community." lightbox="../media/visual-studio-community-free-download.png":::
 
 2. Save the Visual Studio installer to your desired path. Once the download is complete, you can start the installation process by running the Visual Studio installer. Figure 2 shows how the installation appears in the Microsoft Edge browser when you execute it.
 :::image type="content" source="../media/run-visual-studio-installer.png" alt-text="Run the Visual Studio installer to your PC." lightbox="../media/run-visual-studio-installer.png":::
