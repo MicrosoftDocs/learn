@@ -12,56 +12,51 @@ We begin by deploying an image from directly from Docker Hub into the cluster. T
    az aks get-credentials -n videogamecluster -g videogamerg
    ```
 
-1. Create a Kubernetes manifest file that will be used to deploy the pods into the cluster
+1. Run the following code to create a simple nginx pod and service from Docker Hub.
 
    ```bash
-   code nginxfromdocker.yaml
-   ```
-
-1. Enter the following yaml code into the newly created file
-
-
-   ```yaml
-   apiVersion: apps/v1
-   kind: Deployment
-   metadata:
-     name: simple-nginx
-     labels:
-       app: nginx
-   spec:
-     selector:
-       matchLabels:
-         app: nginx
-     template:
-       metadata:
-         labels:
-           app: nginx
-       spec:
-         containers:
-         - name: simple-nginx
-           image: nginx # from dockerhub
-           resources:
-             requests:
-               cpu: 100m
-               memory: 100Mi
-             limits:
-               cpu: 120m
-               memory: 120Mi
-           ports:
-           - containerPort: 80
-   ---
-   apiVersion: v1
-   kind: Service
-   metadata:
-     name: simple-nginx
-     labels:
-       app: nginx
-   spec:
-     type: LoadBalancer
-     ports:
-     - port: 80
-     selector:
-       app: nginx
+    cat <<EOF | kubectl create -f -
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: simple-nginx
+      labels:
+        app: nginx
+    spec:
+      selector:
+        matchLabels:
+          app: nginx
+      template:
+        metadata:
+          labels:
+            app: nginx
+        spec:
+          containers:
+          - name: simple-nginx
+            image: docker.io/library/nginx:stable
+            resources:
+              requests:
+                cpu: 100m
+                memory: 100Mi
+              limits:
+                cpu: 120m
+                memory: 120Mi
+            ports:
+            - containerPort: 80
+    ---
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: simple-nginx
+      labels:
+        app: nginx
+    spec:
+      type: LoadBalancer
+      ports:
+      - port: 80
+      selector:
+        app: nginx
+    EOF
    ```
 
 1. Save the file by selecting the **...** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
@@ -144,15 +139,9 @@ Now that you have assigned the restricting policy to the cluster, you will now r
 > [!IMPORTANT]
 > Please note that the policy assignment may take up to 30 minutes to take effect. Because of this delay, in the following steps the policy validation may succeed and the deployment will still not fail if you don't give enough time for the policy to take effect. If this happens, allow for additional time and retry your deployment.
 
-1. Open a new file in your code editor
+1. Create another nginx deployment and service using the code below
 
    ```bash
-   code secondnginxfromdocker.yaml
-   ```
-
-1. Copy the following code into the new file and save it by typing *ctrl + s*
-
-   ```yaml
     cat <<EOF | kubectl create -f -
     apiVersion: apps/v1
     kind: Deployment
@@ -252,15 +241,9 @@ Now that you know that the policy prevents images from Dockerhub from being crea
    echo $ACR_NAME
    ```
 
-1. Modify the image parameter for your *secondnginxfromdocker.yaml* file so that it now points to your container registry. Change the *image: nginx*  in line 18 to *[acr name].azurecr.io/nginx:v1*.
+1. Modify the code below by replacing <acr name> with the name of the Azure Container Registry your command above returned, then apply it to create the pod from your private registry.
 
    ```bash
-   code nginxfromacr.yaml
-   ```
-
-   Your updated file should look like below. Save the file by selecting the **...** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
-
-   ```yaml
     cat <<EOF | kubectl create -f -
     apiVersion: apps/v1
     kind: Deployment
