@@ -5,13 +5,13 @@ The first step to set up a project on immersive experience for Windows Mixed Rea
 1. Download the free edition of Visual Studio Community and ensure to get the Visual Studio membership if you don't have it already.
 Figure 1 shows how the download button might look.
 If you have the Visual Studio subscription already, you can proceed to download Visual Studio by clicking on the provided following link: https://developer.microsoft.com/en-us/windows/downloads 
-:::image type="content" source="../media/visual-studio-community-free-download.png" alt-text="Click on the “To begin your download, click the “Free download” button for Visual Studio Community.." lightbox="../media/visual-studio-community-free-download.png":::
+:::image type="content" source="../media/visual-studio-community-free-download.png" alt-text="Screenshot To begin your download, click the “Free download” button from Visual Studio Community." lightbox="../media/visual-studio-community-free-download.png":::
 
 2. Save the Visual Studio installer to your desired path. Once the download is complete, you can start the installation process by running the Visual Studio installer. Figure 2 shows how the installation appears in the Microsoft Edge browser when you execute it.
 :::image type="content" source="../media/run-visual-studio-installer.png" alt-text="Run the Visual Studio installer to your PC." lightbox="../media/run-visual-studio-installer.png":::
 
 3. When you run the Visual Studio installation, you'll see a few seconds of initialization followed by a feature selection option, as shown in Figure 3. First, select the ".NET Desktop development and Universal Windows Platform development (for HoloLens)" checkbox in Visual Studio 2019's features list. Then, after making the required selections, click on "Next" or "Install.
-:::image type="content" source="../media/select-workloads.png" alt-text="Select.NET Desktop development and Universal Windows Platform development (for HoloLens) in Visual Studio 2019. ." lightbox="../media/select-workloads.png":::
+:::image type="content" source="../media/select-workloads.png" alt-text="Select.NET Desktop development and Universal Windows Platform development (for HoloLens) in Visual Studio 2019." lightbox="../media/select-workloads.png":::
 
 4. When you click "Install," Visual Studio will proceed with downloading and installing the features you've specified. Visual Studio is a huge application that could take several minutes to download and install depending on your stable internet connection. You may be requested to restart your computer once the installation process is complete. By launching Visual Studio after restarting, you may verify that the installation was successful. Depending on your Visual Studio edition, the welcome screen should look like the one shown in Figure 4 when you first open it.
 :::image type="content" source="../media/test-visual-studio.png" alt-text="After the setup is complete, you may test if Visual Studio is installed correctly by launching it." lightbox="../media/test-visual-studio.png":::
@@ -38,11 +38,11 @@ If you're using a Windows Mixed Reality headset with your PC, you'll have to ena
 1. Go to **Settings** menu.
 :::image type="content" source="../media/setting-menu.png" alt-text="Click the setting menu." lightbox="../media/setting-menu.png":::
 2. Select **Update and Security**.
-:::image type="content" source="../media/update-and-security.png" alt-text="Select Update and Security" lightbox="../media/update-and-security.png":::
+:::image type="content" source="../media/update-and-security.png" alt-text="Select  “Update and Security” menu item" lightbox="../media/update-and-security.png":::
 3. Select **For developers**.
-:::image type="content" source="../media/for-developers-option.png" alt-text="Select For Developers option" lightbox="../media/for-developers-option.png":::
+:::image type="content" source="../media/for-developers-option.png" alt-text="Select “For developers” option" lightbox="../media/for-developers-option.png":::
 4. Enable **Developer Mode**, read the disclaimer for the selected setting, and then accept the change by selecting Yes.
-:::image type="content" source="../media/enable-developer-mode.png" alt-text="On the toggle button to enable Developer Mode" lightbox="../media/enable-developer-mode.png":::
+:::image type="content" source="../media/enable-developer-mode.png" alt-text="On the toggle button to enable “Developer Mode” " lightbox="../media/enable-developer-mode.png":::
 
 ## StereoKit’s visual studio template
 
