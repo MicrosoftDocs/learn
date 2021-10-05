@@ -24,7 +24,7 @@ Let's finish your app by adding upload and download code, then deploy it to Azur
 
 ### Upload
 
-- To upload a blob, you'll implement the `BlobStorage.Save` method.  First, you wil get a `BlobClient` object that represents the blob by calling `GetBlobClient` on a `BlobContainerClient`. Then, you will use the `UploadAsync` method on the `BlobClient` to save the `Stream` of data passed to this method up to Blob Storage.
+- To upload a blob, you'll implement the `BlobStorage.Save` method.  First, you will get a `BlobClient` object that represents the blob by calling `GetBlobClient` on a `BlobContainerClient`. Then, you will use the `UploadAsync` method on the `BlobClient` to save the `Stream` of data passed to this method up to Blob Storage.
 
     In the editor, in `BlobStorage.cs`, replace `Save` with the following code.
 
