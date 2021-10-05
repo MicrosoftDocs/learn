@@ -7,9 +7,9 @@ GitHub Packages work with your current project's ecosystem tooling: npm for NPM 
 
 The way you authenticate into your package manager will depend on your project's ecosystem. Whichever ecosystem you're working with, you will need three pieces of information: 
 
-1. Your GitHub username,
-1. A Personal Access Token,
-1. The GitHub Packages endpoint for your package ecosystem.
+- Your GitHub username
+- A Personal Access Token
+- The GitHub Packages endpoint for your package ecosystem
 
 ### Generate a Personal Access Token
 
