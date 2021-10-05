@@ -4,7 +4,7 @@ This section describes networking services in Azure that help deliver applicatio
 
 Azure Content Delivery Network (CDN) offers developers a global solution for rapidly delivering high-bandwidth content to users by caching their content at strategically placed physical nodes across the world.
 
-When to leverage a CDN: 
+When to use a CDN: 
 
 - You want point-of-presence locations that are close to large clusters of users.
 
@@ -19,7 +19,7 @@ When to leverage a CDN:
 
 ## Azure Front Door Service
 
-Azure Front Door Service enables you to define, manage, and monitor the global routing for your web traffic by optimizing for best performance and instant global failover for high availability. With Front Door, you can transform your global (multi-region) consumer and enterprise applications into robust, high-performance personalized modern applications, APIs, and content that reach a global audience with Azure.
+Azure Front Door Service enables you to define, manage, and monitor the global routing for your web traffic by optimizing for best performance and instant global failover for high availability. With Front Door, you can transform your global (multi-region) consumer and enterprise applications into robust, high-performance personalized modern applications, APIs, and content that reaches a global audience with Azure.
 
 :::image type="content" source="../media/front-door.png" alt-text="Azure Front Door Diagram.":::
 
@@ -69,11 +69,11 @@ There are two primary methods of routing traffic, path-based routing, and multip
 
 ### Path-based routing
 
-:::image type="content" source="../media/path-based.png" alt-text="Diagram of path based routing in Azure.":::
+:::image type="content" source="../media/path-based.png" alt-text="Diagram of path-based routing in Azure.":::
 
 
 
-Use path-based routing to send requests with different URL paths to a different pools of backend servers
+Use path-based routing to send requests with different URL paths to a different pool of backend servers
 
 ### Multiple site routing
 
@@ -85,11 +85,11 @@ Use multiple-site routing for tenants with virtual machines or other resources h
 
 ## Choosing a load balancer solution 
 
-Azure provides various load balancing services that you can use to distribute your workloads across multiple computing resources – Azure Front Door, Traffic Manager, Load Balancer, and Application Gateway.
+Azure provides various load-balancing services that you can use to distribute your workloads across multiple computing resources – Azure Front Door, Traffic Manager, Load Balancer, and Application Gateway.
 
 This section describes how you can determine an appropriate load-balancing solution for your business needs.
 
-Azure load balancing services can be categorized along two dimensions: global versus regional, and HTTP(S) versus non-HTTP(S).
+Azure load-balancing services can be categorized along two dimensions: global versus regional, and HTTP(S) versus non-HTTP(S).
 
 When selecting the load-balancing options, here are some factors that are considered when you select the **Help me choose** default tab in Azure load balancing:
 

@@ -8,7 +8,7 @@ In this module you will learn how the networking services in Azure provide a var
 
 - [**Application delivery services**](/azure/networking/fundamentals/networking-overview): Deliver applications in the Azure network using any or a combination of these networking services in Azure - Content Delivery Network (CDN), Azure Front Door Service, Traffic Manager, Application Gateway, Internet Analyzer, and Load Balancer.
 
-##Gather Network Requirments 
+##Gather Network Requirements 
 
 ### Naming
 
