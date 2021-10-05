@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 08/18/2021
+  ms.date: 10/01/2021
   author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
@@ -45,5 +45,5 @@ quiz:
       explanation: "The cloud enabled Altair 8800 project consists of two applications running on the Azure Sphere, cloud services consisting of IoT Central and an Azure Virtual Machine, along with a Web Terminal built with HTML/CSS/JavaScript."
     - content: "Azure IoT Central, an Azure Static Web App, and an Azure Virtual machine."
       isCorrect: false
-      explanation: "These cloud services certainly form part of the Altair solution. The Altair solutions consists of two applications running on the Azure Sphere, cloud services consisting of IoT Central, a static web app, and an Azure Virtual Machine, along with a Web Terminal built with HTML/CSS/JavaScript."
+      explanation: "These cloud services certainly form part of the Altair solution. The Altair solution consists of two applications running on the Azure Sphere, cloud services consisting of IoT Central, a static web app, and an Azure Virtual Machine, along with a Web Terminal built with HTML/CSS/JavaScript."
   
