@@ -1,13 +1,13 @@
 Secrets are strings of characters that should not be shared with the outside world:
-they could be database passwords, private encryption keys, personal access tokens, etc.
-For enhanced security, many people also consider that anything that could help an attacker should be considered a secret: for example, the URL to your production database could be seen as a secret. Your database shouldn't be publicly accessible, but the rationale here is that this kind of information is sensitive by nature, and the less information is available in your code, the better.
+they could be database passwords, private encryption keys, personal access tokens, and so on.
+For enhanced security, many people also consider that anything that could help an attacker should be considered a secret: for example, the URL to your production database could be seen as a secret. Your database shouldn't be publicly accessible, but the rationale is that this kind of information is sensitive by nature, and the less information is available in your code, the better.
 
 ## What is Zero Trust and Zero Secrets?
 
 The concept of Zero Trust is that no one should be blindly trusted, and allowed to access company resources without being validated and authorized.
 
-This applies to Web applications too: they shouldn't have secrets stored in their
-code or in their final binaries. This is what we call Zero Secrets.
+This concept applies to Web applications too: they shouldn't have secrets stored in their
+code or in their final binaries. It is what we call Zero Secrets.
 
 Secrets should be managed by an external system, with strict access rules and validation, to reduce the attack risk.
 
@@ -27,29 +27,29 @@ Even if that seems practical, you should never store any secrets in your source 
 
 The easiest solution for managing secrets is to use environment variables. They have several benefits:
 
-- They are easy to use,
+- They're easy to use,
 - They work on all systems (even non-cloud systems),
-- Everyone knows them and understand how they work
+- Everyone knows them and understands how they work.
 
-However, they are not very secure: all processes on your system can read them, and they will be easily exposed
+However, they're not secure enough: all processes on your system can read them, and they will be easily exposed
 using JMX on a Java system.
 
 As a result, environment variables are often seen as a first step towards Zero Trust: they are more secure than storing secrets
-directly into the source code, and they allow to extract secrets in another system, but they lack management capabilities and
-are too easy to access for attackers.
+directly into the source code, but they lack management capabilities and
+are easy to access for attackers.
 
 ## Using Kubernetes secrets
 
 Kubernetes has a notion of `secrets`, which is another good solution. Those secrets can be loaded as a file on the application's
 filesystem: a Java program can then read that file at startup time, to access those secrets. Tools like the Spring Frameworks even
-have standard support for this mechanism, allowing them to use those secrets in a very easy and efficient way.
+have standard support for this mechanism, allowing them to use those secrets in a easy and efficient way.
 
 This mechanism is more secure than environment variables, as those files can be read only by the process that will require them. They
-also benefit from the rich Kubernetes ecosystem, and they can be managed by various management tools, including those provided by
+also benefit from the rich Kubernetes ecosystem, and they can be managed by various management tools, including the tools provided by
 your cloud provider.
 
-While this is a good solution for Kubernetes, it is obviously limited to Kubernetes, and lack advanced management capabilities, depending
-on the tools used to the manage the Kubernetes infrastructure.
+While this is a good solution for Kubernetes, it's also limited to Kubernetes, and lack advanced management capabilities, depending
+on the tools used to manage the Kubernetes infrastructure.
 
 ## Using a secrets engine
 
@@ -57,6 +57,6 @@ A secrets engine, like Hashicorp Vault or Azure Key Vault, is a specialized soft
 system to authorize users, rotate security keys, and validates which application can access which secret.
 
 They also provide an external API, so they can be used on any system. For example, you can use Azure Key Vault on all Azure services,
-including Virtual Machines, Azure App Services, Azure Kubernetes Services or Azure Spring Cloud.
+including Virtual Machines, Azure App Services, Azure Kubernetes Services, or Azure Spring Cloud.
 
-This is the most secure and advanced solution for managing secrets, but they require the use of a dedicated tool.
+A Secrets engine is the most secure and advanced solution for managing secrets, but they require the use of a dedicated tool.
