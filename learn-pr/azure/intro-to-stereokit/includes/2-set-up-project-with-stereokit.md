@@ -5,7 +5,7 @@ The first step to set up a project on immersive experience for Windows Mixed Rea
 1. Download the free edition of Visual Studio Community and ensure to get the Visual Studio membership if you don't have it already.
 Figure 1 shows how the download button might look.
 If you have the Visual Studio subscription already, you can proceed to download Visual Studio by clicking on the provided following link: https://developer.microsoft.com/en-us/windows/downloads 
-:::image type="content" source="../media/visual-studio-community-free-download.png" alt-text="The screenshot shows how to begin your download, by clicking the “Free download” button from Visual Studio Community." lightbox="../media/visual-studio-community-free-download.png":::
+:::image type="content" source="../media/visual-studio-community.png" alt-text="The screenshot shows how to begin your download, by clicking the “Free download” button from Visual Studio Community." lightbox="../media/visual-studio-community.png":::
 
 2. Save the Visual Studio installer to your desired path. Once the download is complete, you can start the installation process by running the Visual Studio installer. Figure 2 shows how the installation appears in the Microsoft Edge browser when you execute it.
 :::image type="content" source="../media/run-visual-studio-installer.png" alt-text="Screenshot shows how to run the Visual Studio installer to your PC." lightbox="../media/run-visual-studio-installer.png":::
@@ -29,7 +29,7 @@ Enabling Developer Mode in UWP/Hololens makes it easier to test the applications
 4. Select the menu item **For developers**.
 5. Enable **Use developer features** to deploy apps from Visual Studio to your HoloLens. If your device is running Windows Holographic version 21H1 or newer, also enable **Device discovery**.
 6. Optional: Scroll down and enable Device Portal, which allows you to connect to your HoloLens' Windows **Device Portal** from a web browser.
-:::image type="content" source="../media/enable-developer-mode-in-hololens.png" alt-text="Screenshot shows enabling the Developer mode." lightbox="../media/enable-developer-mode-in-hololens.png":::
+:::image type="content" source="../media/enable-developer-mode-hololens.png" alt-text="Screenshot shows enabling the Developer mode." lightbox="../media/enable-developer-mode-hololens.png":::
 
 ## Windows PC
 
