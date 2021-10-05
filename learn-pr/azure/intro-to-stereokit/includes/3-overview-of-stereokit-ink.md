@@ -10,7 +10,7 @@ The loading asset is a complex packing system. Here the asset is loaded during b
 
 When it comes to user interaction, StereoKit carries a hands-first approach. when hand-sensors aren’t available, hand data is simulated instead using existing devices. Consider an example, as we mice Windows Mixed Reality Controllers will switch between pre-recorded hand positions based on button pushes thus you'll get to work with fully riched articulated hand data.
 
-## Accessing Joints
+## Accessing joints
 
 ## Hand with joints
 
