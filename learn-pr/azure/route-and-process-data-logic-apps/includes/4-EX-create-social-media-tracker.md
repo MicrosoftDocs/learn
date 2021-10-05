@@ -10,7 +10,7 @@ The first thing we need to do is create an Azure logic app. To do that, we need 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
 
-1. On the resource menu, select **All Services**, in the **All services** menu, select **Integration** category, and the results,select **Logic apps**. The **Logic apps** pane appears.
+1. On the resource menu, select **All Services**, in the **All services** menu, select **Integration** category. In the results that appear, select **Logic apps**. The **Logic apps** pane appears.
 
 1. Select **Add**. The **Create Logic App** pane appears.
 
