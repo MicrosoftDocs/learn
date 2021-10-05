@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.1-introduction
-title: Introduction
+uid: learn.azure.intro-to-stereokit.1-3-overview-of-stereokit-ink
+title: Overview-of-stereokit-ink
 metadata:
-  title: Introduction
-  description: Introduction
-  ms.date: 09/09/2021
+  title: Overview-of-stereokit-ink
+  description: you'll learn basic understanding of 3D models, Hand Menus, and UI buttons before breaking into the finger-painting
+  ms.date: 10/05/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-durationInMinutes: 2
+durationInMinutes: 10
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-3-overview-of-stereokit-ink.md)]

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.1-introduction
-title: Introduction
+uid: learn.azure.intro-to-stereokit.1-2-set-up-project-with-stereokit
+title: Set-up-project-with-stereokit
 metadata:
-  title: Introduction
-  description: Introduction
-  ms.date: 09/09/2021
+  title: Set-up-project-with-stereokit
+  description: you'll learn how to set up a project on immersive experience for Windows Mixed Reality using the StereoKit
+  ms.date: 10/05/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-2-set-up-project-with-stereokit.md)]

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.1-introduction
-title: Introduction
+uid: learn.azure.intro-to-stereokit.1-4-exercise-understand-how-stereokit-ink-application-is-configured
+title: Exercise-understand-how-stereokit-ink-application-is-configured
 metadata:
-  title: Introduction
-  description: Introduction
-  ms.date: 09/09/2021
+  title: Exercise-understand-how-stereokit-ink-application-is-configured
+  description: You'll learn how to make a core application loop radial hand menus, easy window menus with automatic layout, object-based menus with more explicit layouts, and file pickers, among other things
+  ms.date: 10/05/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-4-exercise-understand-how-stereokit-ink-application-is-configured.md)]
