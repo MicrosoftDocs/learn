@@ -18,7 +18,7 @@ Debug and Any device is selected.
 
 3. Then in the menu bar click on the Debug > Start Debugging.
 Start Debugging automatically starts the application on your device with the Visual Studio debugger attached.
-:::image type="content" source="../media/change-solution-configuration.png" alt-text="Screenshot shows Selecting of Start Debugging." lightbox="../media/change-solution-configuration.png":::
+:::image type="content" source="../media/select-start-debug.png" alt-text="Screenshot shows Selecting of Start Debugging." lightbox="../media/select-start-debug.png":::
 
 ## Build your application on HoloLens 2 with StereoKit
 ​
