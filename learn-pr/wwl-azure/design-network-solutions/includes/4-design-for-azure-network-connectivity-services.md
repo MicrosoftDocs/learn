@@ -96,6 +96,12 @@ Virtual Network NAT (network address translation) simplifies outbound-only Inter
 
 :::image type="content" source="../media/flow-map.png" alt-text=" Virtual Network NAT (network address translation) flow diagram.":::
 
+Choose Virtual Network NAT gateway when:
+- You need on-demand outbound to internet connectivity without pre-allocation 
+- You need one or more static public IP addresses for scale 
+- You need configurable idle timeout 
+- You need TCP reset for unrecognized connections 
+
  
 ## Routing 
 

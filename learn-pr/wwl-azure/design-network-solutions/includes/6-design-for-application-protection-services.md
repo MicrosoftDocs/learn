@@ -7,6 +7,14 @@ This section describes networking services in Azure that help protect your netwo
 :::image type="content" source="../media/ddos-protection.png" alt-text="Diagram of Azure DDoS.":::
 
 
+Use DDoS protection Standard when you need:
+- Always-on traffic monitoring 
+- Adaptive tuning
+- Multi-layered protection
+- Mitigation scale
+- Attack analytics and metrics
+- Attack alerting
+- DDoS rapid response team
 
 ## Azure Private Link
 
@@ -35,9 +43,12 @@ Azure Firewall is a managed, cloud-based network security service that protects 
 
 ## Web Application Firewall
 
-[Azure Web Application Firewall](/azure/web-application-firewall/overview) (WAF) provides protection to your web applications from common web exploits and vulnerabilities such as SQL injection, and cross site scripting. Azure WAF provides out of box protection from OWASP top 10 vulnerabilities via managed rules. Additionally, customers can also configure custom rules, which are customer managed rules to provide additional protection based on source IP range, and request attributes such as headers, cookies, form data fields or query string parameters.
+[Azure Web Application Firewall](/azure/web-application-firewall/overview) (WAF) provides protection to your web applications from common web exploits and vulnerabilities such as SQL injection, and cross site scripting. Azure WAF provides out of box protection from OWASP top 10 vulnerabilities via managed rules. Additionally, customers can also configure custom rules, which are customer managed rules to provide additional protection based on source IP range, and request attributes such as headers, cookies, form data fields or query string parameters. Preventing such attacks in application code is challenging. It can require rigorous maintenance, patching, and monitoring at multiple layers of the application topology. A centralized web application firewall helps make security management much simpler. A WAF also gives application administrators better assurance of protection against threats and intrusions.
 
-Customers can choose to deploy [Azure WAF with Application Gateway](/azure/web-application-firewall/ag/ag-overview) which provides regional protection to entities in public and private address space. Customers can also choose to deploy [Azure WAF with Front Door](/azure/web-application-firewall/afds/afds-overview) which provides protection at the network edge to public endpoints.
+A WAF solution can react to a security threat faster by centrally patching a known vulnerability, instead of securing each individual web application.
+
+WAF can be deployed with Azure Application Gateway, Azure Front Door, and Azure Content Delivery Network (CDN) service from Microsoft. WAF on Azure CDN is currently under public preview. WAF has features that are customized for each specific service. 
+
 
 :::image type="content" source="../media/waf-overview.png" alt-text="Diagram of Azure WAF.":::
 
@@ -77,10 +88,11 @@ Virtual Network (VNet) service endpoints extend your virtual network private add
 :::image type="content" source="../media/vnet-service-endpoints-overview.png" alt-text="Diagram of Service Endpoints.":::
 
 
+Key Benefits:
+- Improved security for your Azure service resources
+- Optimal routing for Azure service traffic from your virtual network
+- Simple to set up with less management overhead
 
- 
-
-Use the following decision tree and the examples below to determine the best security option for your application's virtual network.
 
 ## Azure Bastion 
 

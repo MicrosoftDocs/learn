@@ -45,6 +45,11 @@ The following diagram shows endpoint priority-based routing with Traffic Manager
 
 :::image type="content" source="../media/traffic-manager-priority.png" alt-text="diagram shows endpoint priority-based routing with Traffic Manager.":::
 
+Choose Traffic Manager when:
+- You need to increase application availability 
+- You need to improve application performance 
+- You need to combine hybrid applications
+- You need to distribute traffic for complex deployments 
 
 ## Load Balancer
 
