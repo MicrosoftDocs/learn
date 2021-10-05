@@ -80,7 +80,7 @@ Open a second command shell session, for example by browsing to <https://shell.a
 
         </body>
         </html>
-      ```  
+  
   
 
 1. From your primary command shell session, press <kbd>Ctrl+C</kbd> to quit your web app.
