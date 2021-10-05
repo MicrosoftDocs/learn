@@ -60,7 +60,7 @@ Open a second command shell session, for example by browsing to <https://shell.a
 
     You should see some HTML appear, ending in the following lines:
     
-   c
+   
             <div class="text-center">
             <h1 class="display-4">Welcome</h1>
             <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
