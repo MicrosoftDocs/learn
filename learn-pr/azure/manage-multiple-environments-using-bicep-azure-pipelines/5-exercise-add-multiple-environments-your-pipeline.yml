@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-exercise-add-multiple-environments-your-pipeline.md)]
+  [!include[](includes/5-exercise-add-multiple-environments-your-pipeline.md)]

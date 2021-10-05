@@ -13,4 +13,4 @@ metadata:
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-exercise-set-up-environment.md)]
+  [!include[](includes/4-exercise-set-up-environment.md)]

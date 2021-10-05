@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-handle-similarities-between-environments-using-pipeline-templates.md)]
+  [!include[](includes/3-handle-similarities-between-environments-using-pipeline-templates.md)]

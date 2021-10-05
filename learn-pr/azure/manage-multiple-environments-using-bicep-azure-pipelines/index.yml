@@ -49,7 +49,7 @@ units:
 - learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.exercise-set-up-environment
 - learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.exercise-add-multiple-environments-your-pipeline
 - learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.handle-differences-between-environments-using-bicep-parameters
-- learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.exercise-use-templates-parameters-multiple-environments
+- learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.exercise-use-bicep-parameters-multiple-environments
 - learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.knowledge-check
 - learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.summary
 badge:
