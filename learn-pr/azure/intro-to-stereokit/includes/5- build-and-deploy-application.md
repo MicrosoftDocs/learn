@@ -14,7 +14,7 @@ Debug and Any device is selected.
 :::image type="content" source="../media/change-solution-configuration.png" alt-text="Screenshot shows changing of Solution configuration." lightbox="../media/change-solution-configuration.png":::
 ​
 2. Click on the Device dropdown and ensure the projectsetup-desktop is selected.
-:::image type="content" source="../media/change-solution-configuration.png" alt-text="Screenshot shows ensuring of projectsetup-desktop is selected." lightbox="../media/change-solution-configuration.png":::
+:::image type="content" source="../media/ensuring-project-setup desktop.png" alt-text="Screenshot shows ensuring of projectsetup desktop is selected." lightbox="../media/ensuring-project-setup desktop.png":::
 
 3. Then in the menu bar click on the Debug > Start Debugging.
 Start Debugging automatically starts the application on your device with the Visual Studio debugger attached.
