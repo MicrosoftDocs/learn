@@ -59,8 +59,6 @@ We begin by deploying an image from directly from Docker Hub into the cluster. T
     EOF
    ```
 
-1. Save the file by selecting the **...** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
-
 1. List all of the deployed services
 
    ``` bash
