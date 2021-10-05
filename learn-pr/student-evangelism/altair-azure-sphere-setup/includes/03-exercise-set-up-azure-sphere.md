@@ -1,4 +1,4 @@
-In this unit, you will install the software required for Azure Sphere development.
+In this unit, you'll install the software required for Azure Sphere development.
 
 The following list outlines the steps you will need to complete. Be sure to follow the steps for your computer operating system.
 
