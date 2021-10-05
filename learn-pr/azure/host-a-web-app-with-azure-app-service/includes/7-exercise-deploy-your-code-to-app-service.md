@@ -40,14 +40,13 @@ You have successfully hosted your new ASP.NET Core application on App Service!
 
 ## Configure deployment credentials
 
-Some App Service deployment techniques, including the one we'll use here, require a username and password that are separate from your Azure login. Every web app comes preconfigured with its own username and a password that can be reset to a new random value, but can't be changed to something you choose.
+Some App Service deployment techniques, including the one we'll use here, require a username and password that are separate from your Azure credentials. Every web app comes preconfigured with its own username and a password that can be reset to a new random value, but can't be changed to something you choose.
 
-Instead of searching for those frandom values for each one of your apps, you can use an App Service feature called User Deployment Credentials to create your own username and password. The values you choose will work for deployments on *all* App Service web apps that you have permissions to, including new web apps that you create in the future. The username and password you select are tied to your Azure login and intended only for your use, so don't share them with others. You can change both the username and password at any time.
+Instead of searching for those random values for each one of your apps, you can use an App Service feature called User Deployment Credentials to create your own username and password. The values you choose will work for deployments on *all* App Service web apps that you have permissions to, including new web apps that you create in the future. The username and password you select are tied to your Azure credentials and intended only for your use, so don't share them with others. You can change both the username and password at any time.
 
 The easiest way to create deployment credentials is from the Azure CLI. 
 
 1. Run the following command in the Cloud Shell to set deployment credentials, substituting `<username>` and `<password>` with values you choose.
-
     ```azurecli
     az webapp deployment user set --user-name <username> --password <password>
     ```
@@ -89,7 +88,7 @@ Now, run `az webapp up` with the appropriate values. Make sure you are in the `h
 az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
 ```
 
-The deployment will take a few minutes to propagate. You'll be able to view the progras in the status output. A 202 return means your deployment was successful.
+The deployment will take a few minutes to propagate. You'll be able to view the progress in the status output. A 202 return means your deployment was successful.
 
 ## Verify the deployment
 
