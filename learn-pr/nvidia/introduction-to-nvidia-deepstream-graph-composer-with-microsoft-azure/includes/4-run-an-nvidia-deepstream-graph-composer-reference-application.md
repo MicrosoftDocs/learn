@@ -4,13 +4,13 @@ Using these extensions, we can add features and functionality to the Composer ap
 
 ![NVIDIA DeepStream Workflow revisited](../media/composer-workflow.png)
 
-1. To begin, we will sync to NVIDIA's public Cloud Repository to bring in the latest available extensions.  This can be done by running the following command in a terminal on the host machine:
+1. To begin, we will sync to NVIDIA's public Cloud Repository to bring in the latest available extensions.  This process can be accomplished by running the following command in a terminal on the host machine:
 
     ```Bash
     registry repo sync -n ngc-public
     ```
 
-    This will produce output similar to the following:
+    This command will produce output similar to the following:
 
     ```
     2021-09-13 21:32:39,127 - Registry - INFO - Syncing repo ngc-public ...
@@ -44,18 +44,18 @@ Using these extensions, we can add features and functionality to the Composer ap
 
     ![NVIDIA DeepStream Graph Composer Launching](../media/composer-launch.png)
     
-    You should notice a list of components (grouped by extension name) populate on the right-side of the application user interface.  If not, you may need to resync to the `ncg-public` repo using the steps performed earlier. You can left-click on the extension name to view the components it provides as shown below:
+    You should notice a list of components populate on the right-side of the application user interface (grouped by extension name).  If not, you may need to resync to the `ncg-public` repo using the steps performed earlier. You can left-click on the extension name to view the components it provides as shown below:
 
     ![NVIDIA DeepStream Graph Composer Components](../media/composer-components.png)
 
     The following guidelines will help you understand how to interact with the composer application to develop custom applications:
     
     * To add a new component instance, left-click and hold on the name of the component and drag it into the graph editor space.
-    * Components in the graph area are composed of a "header" which displays the name of the component and may contain "handles" for input/output ports. 
+    * Components in the graph area are composed of a "header", which displays the name of the component and may contain "handles" for input/output ports. 
     * Components can be connected to one another by selecting a "handle" and drawing a connection between compatible input/output ports.
     * Clicking on a component can allow you to display its details, which will appear in a `Details` window on the right-side of the application.  Properties can be edited within this window to customize behavior of the component.
 
-1. Let's examine a reference application to show what you can create by following the guidelines above.  Earlier when we installed the DeepStream reference graphs package, a number of examples were installed into the following path:
+1. Let's examine a reference application to show what you can create by following the guidelines above.  Earlier when we installed the DeepStream reference graphs package, many examples were installed into the following path:
 
     ```Bash
     /opt/nvidia/deepstream/deepstream/reference_graphs/
@@ -87,11 +87,11 @@ Using these extensions, we can add features and functionality to the Composer ap
         cudadec-memtype=0
         ```
 
-1. Next, let's take a look at the overall flow of the IVA pipeline presented in this example.  Once we understand the overall workflow and expected behavior of the graph, we will then package this workload up as a containerized workload for redistribution and execution.
+1. Next, let's take a look at the overall flow of the IVA pipeline presented in this example.  Once we understand the overall workflow and expected behavior of the graph, we will then up this workload as a containerized workload for redistribution and execution.
 
      ![NVIDIA DeepStream Graph Composer Test1 Application Full](../media/composer-test1.png)
 
-    This application takes a video source as input using `NvDsSingleSrcInput` which is passed into `NvDsStreamMux` (which could technically process multiple video inputs).  The output of `NvDsStreamMux` provides a frame from each video input which is sent for processing  in `NvDsInferVideo` which applies inference using a Resnet 4 class object detector (Bicycle, Car, Person, Roadsign).  The inference results of `NvDsInferVideo` are passed to both `NvDsPerClassObjectCounting` to display a count for each detected class and `NvsOSD` which generates the onscreen detections with bounding boxes which are displayed by the final connection to `NvDsVideoRenderer`. 
+    This application takes a video source as input using `NvDsSingleSrcInput`, which is passed into `NvDsStreamMux` (which could technically process multiple video inputs).  The output of `NvDsStreamMux` provides a frame from each video input, which is sent for processing  in `NvDsInferVideo`, which applies inference using a Resnet 4 class object detector (Bicycle, Car, Person, Road Sign).  The inference results of `NvDsInferVideo` are passed to both `NvDsPerClassObjectCounting` to display a count for each detected class and `NvsOSD`, which generates the onscreen detections with bounding boxes, which are displayed by the final connection to `NvDsVideoRenderer`.
 
 
     1. We can verify this behavior and see it in action by invoking the included `execute_graph.sh` script and passing in the necessary parameters in `parameters.yaml`.  To execute the graph for `deepstream-test1.yaml` on our x86-based host, run the following commands in a terminal:

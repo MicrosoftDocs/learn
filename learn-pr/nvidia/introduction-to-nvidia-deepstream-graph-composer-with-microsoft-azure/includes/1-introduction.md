@@ -1,4 +1,4 @@
-In this module, you will learn how to setup and configure the NVIDIA DeepStream Graph Composer on an X86 based Ubuntu 18.04 System to enable rapid development of Intelligent Video Application Pipelines for deployment to cloud and edge capable devices.
+In this module, you will learn how to set up and configure the NVIDIA DeepStream Graph Composer on an X86 based Ubuntu 18.04 System to enable rapid development of Intelligent Video Application Pipelines for deployment to cloud and edge capable devices.
 
 ### Prerequisites
 * X86 Based System running Ubuntu 18.04 OS

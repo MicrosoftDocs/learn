@@ -1,4 +1,4 @@
-In this module, we will publish and deploy an ARM based DeepStream container workload to NVIDIA embedded hardware using Azure IoT Edge.  
+In this module, we will publish and deploy an ARM-based DeepStream container workload to NVIDIA embedded hardware using Azure IoT Edge.  
 
 ### Prerequisites
 * X86 Based System running Ubuntu 18.04 OS

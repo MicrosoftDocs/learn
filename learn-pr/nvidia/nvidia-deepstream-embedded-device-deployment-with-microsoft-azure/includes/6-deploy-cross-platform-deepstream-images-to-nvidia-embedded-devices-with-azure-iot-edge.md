@@ -10,13 +10,13 @@ Now that we have published a containerized DeepStream Graph workload to our Azur
     ![IoT Edge Device overview](../media/iothub-deviceoverview.png)
 
 
-1. Select the *Set modules* section in the header area which will open the module editor
+1. Select the *Set modules* section in the header area, which will open the module editor:
 
     ![IoT Edge Module Editor](../media/iothub-moduleeditor.png)
 
     We need to supply appropriate Container Registry Credentials so that our NVIDIA Embedded device to be able to pull container workloads from our Azure Container Registry.
 
-1. In a separate tab, navigate to your Azure Container Registry within the Azure Portal:
+1. In a separate tab, navigate to your Azure Container Registry within the Azure portal:
 
     ![Azure Container Registry Overview](../media/acr-overview.png)
 
@@ -26,11 +26,11 @@ Now that we have published a containerized DeepStream Graph workload to our Azur
     ![Azure Container Registry Access Keys](../media/acr-accesskeys.png)
 
 
-1. Navigate back to the tab where you opened *Set modules* and supply appropriate values in the *Container Registry Credentials* area.  This will allow any device that applies this module specification to pull container workloads from your Azure Container Registry.
+1. Navigate back to the tab where you opened *Set modules* and supply appropriate values in the *Container Registry Credentials* area.  This action will allow any device that applies this module specification to securely pull container workloads from your Azure Container Registry.
     
     ![IoT Edge Azure Container Registry Credentials](../media/iothub-acrcreds.png)
 
-1. Next, we will configure a custom IoT Edge Module as part of our deployment specification.  To do this, go to the *IoT Edge Modules* section and select *Add* => *IoT Edge Module* as shown:
+1. Next, we will configure a custom IoT Edge Module as part of our deployment specification.  To perform this step, go to the *IoT Edge Modules* section and select *Add* => *IoT Edge Module* as shown:
 
     ![IoT Edge Add Module Section](../media/iothub-addmodule.png)
 
@@ -116,7 +116,7 @@ Now that we have published a containerized DeepStream Graph workload to our Azur
 
     ![IoT Edge Create Deployment Section](../media/iothub-deploymentcreate.png)
 
-1. To verify that the deployment was successful, you can execute the following from a terminal on the NVIDIA Embedded device:
+1. To verify that the deployment was successful, you can execute the  commands from a terminal on the NVIDIA Embedded device:
 
     ```Bash
     sudo iotedge list
@@ -149,7 +149,7 @@ Now that we have published a containerized DeepStream Graph workload to our Azur
     }
     ```
 
-1. You can confirm that status of the running modules in the Azure Portal by navigating back to the device overview for your IoT Edge device.  You should see the following modules and associated statuses listed for your device:
+1. You can confirm that status of the running modules in the Azure portal by navigating back to the device overview for your IoT Edge device.  You should see the following modules and associated statuses listed for your device:
 
     ![IoT Edge Device Overview Continued](../media/iothub-deviceoverview2.png)
 
