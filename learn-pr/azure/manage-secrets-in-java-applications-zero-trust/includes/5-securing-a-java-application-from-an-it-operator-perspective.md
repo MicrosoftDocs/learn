@@ -67,7 +67,7 @@ Then, you'll need to grant your application access to the Azure Key Vault.
 az keyvault set-policy \
     --name $AZ_KEY_VAULT_NAME \
     --resource-group $AZ_RESOURCE_GROUP \
-    --object-id $AZ_WEBAPP_PRINCIPAL_ID \
+    --object-id $AZ_SPRING_CLOUD_PRINCIPAL_ID \
     --secret-permissions get list
 ```
 
