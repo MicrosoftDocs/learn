@@ -4,7 +4,7 @@ The build is the most commonly used feature in the Visual Studio community. As a
 
 Deployment is the process of installing, configuring, and enabling a specific application or set of applications.
 ​
-## Build your application on Desktop with StereoKit
+## Build your application on desktop with StereoKit
 
 During the build process, you may encounter errors when opening the Solution Explorer and the C# program file. To debug the
 errors, run the initial build solution.
