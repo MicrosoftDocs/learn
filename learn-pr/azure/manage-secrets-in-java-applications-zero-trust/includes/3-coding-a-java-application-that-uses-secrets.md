@@ -1,6 +1,6 @@
 You're going to code a Java Web application, using Spring Boot, that connects to a database.
 
-For security reasons, you will need to secure that database access in the future. But first let's create the
+For security reasons, you'll need to secure that database access in the future. But first let's create the
 application infrastructure, and then configure the Java application to use.
 
 ## Create the application infrastructure
@@ -12,7 +12,7 @@ You'll use Azure CLI to create the following resources:
 - An Azure Spring Cloud cluster, and a Spring Cloud application running inside this cluster.
 
 You'll need to provide some environment variables at the beginning of the script, that should be unique across Azure.
-We recommend you use your username and some random characters in order to avoid naming conflicts.
+We recommend you use your username and some random characters to avoid naming conflicts.
 
 You'll also need to provide your local IP address to access the database from your local computer. If you
 don't know your local IP address, you can go to the following website: https://www.whatismyip.com/
@@ -124,7 +124,7 @@ insert into item (details) values ('This is a item from the database');
 
 You can add more lines to this file if you want more data, or if you want to customize it.
 
-In order to access the database, you will need to configure the `src/main/resources/application.properties` file:
+To access the database, you'll need to configure the `src/main/resources/application.properties` file:
 
 ```properties
 logging.level.org.springframework.jdbc.core=DEBUG
@@ -142,7 +142,7 @@ This configuration file has two variables that need to be configured:
 - - `${azureDatabasePassword}` is the name of the database password that was configured earlier in the `AZ_POSTGRESQL_PASSWORD` environment variable.
 
 As we've seen in the previous unit, it's a bad practice to hard-code those values in the application
-source code. But in order to test the application, you can write them temporarily and run the application:
+source code. But to test the application, you can write them temporarily and run the application:
 
 ```bash
 ./mvnw spring-boot:run
