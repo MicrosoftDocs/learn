@@ -31,13 +31,13 @@ When you nest templates, or reuse them multiple times in a single pipeline, you 
 
 ## Template parameters
 
-Pipeline template parameters make your template files easier to reuse, because you can allow for small differences whenever you use them.
+*Pipeline template parameters* make your template files easier to reuse, because you can allow for small differences in your templates whenever you use them.
 
 When you create a pipeline template, you can indicate its parameters at the top of the file:
 
 :::code language="yaml" source="code/5-script-parameters.yml" range="1-6" :::
 
-You can define as many parameters as you need. But just like Bicep parameters, try not to overuse pipeline template parameters - make it easy for someone else to reuse your template without having to specify too many settings.
+You can define as many parameters as you need. But just like Bicep parameters, try not to overuse pipeline template parameters. You should make it easy for someone else to reuse your template without having to specify too many settings.
 
 Each pipeline template parameter has three properties:
 
@@ -61,7 +61,7 @@ You can also use parameters when you assign names to your jobs and stages in pip
 
 You can use pipeline *conditions* to specify whether a step, job, or even stage should run depending on a value you specify. Template parameters and pipeline conditions can be used together to enable you to customize your deployment process for many different situations.
 
-For example, imagine you define a pipeline template that runs a script steps. You'll reuse the template for each of your environments. When you deploy your production environment, you want to run an additional step. Here's how you can achieve that by using the `if` macro:
+For example, imagine you define a pipeline template that runs script steps. You'll reuse the template for each of your environments. When you deploy your production environment, you want to run an additional step. Here's how you can achieve that by using the `if` macro:
 
 :::code language="yaml" source="code/5-script-conditions.yml" highlight="10" :::
 
@@ -70,4 +70,4 @@ The condition here translates to *if the environmentName parameter's value is eq
 > [!TIP]
 > Pay attention to the YAML file's indentation when you use conditions. You need to indent the steps that the condition applies to by one extra level.
 
-Even though conditions are a way to add flexibility to your pipeline, try not to not use too many of them. They complicate your pipeline and make it harder to reason about. If you see a lot of conditions in your pipeline template, it might indicate that a template might not be the best solution for the workflow you plan to run, and that you should redesign your pipeline.
+Even though conditions are a way to add flexibility to your pipeline, try not to use too many of them. They complicate your pipeline and make it harder to reason about. If you see a lot of conditions in your pipeline template, it might indicate that a template might not be the best solution for the workflow you plan to run, and that you should redesign your pipeline.
