@@ -164,7 +164,7 @@ To deploy the application, you'll first need to package it as a Jar file:
 ```
 
 This command will produce an executable Jar file in the `target` directory, that you'll deploy using
-the AZ CLI:
+the Azure CLI:
 
 ```bash
 az spring-cloud app deploy \
