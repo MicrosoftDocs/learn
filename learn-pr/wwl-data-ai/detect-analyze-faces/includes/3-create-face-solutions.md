@@ -1,9 +1,6 @@
 Computer vision solutions often require an artificial intelligence (AI) solution to be able to detect, analyze, or identify human faces. or example, suppose the retail company Northwind Traders has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance, and direct employees to help them. One way to accomplish this is to perform facial detection and analysis - in other words, determine if there are any faces in the images, and if so analyze their features.
 
-## Use the Cloud Shell
-
-To test the capabilities of the Face service, we'll use a simple command-line application that runs in the Cloud Shell.
-> **Note**: For this lab, you will test out an application in a cloud shell environment. When you build your own application, you can use an environment of your choice.
+To test the capabilities of the Face service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
 1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance. 
 
@@ -68,7 +65,7 @@ Now that you have a cloud shell environment, you can run a simple client applica
 
     ```
     cd ai-900
-    find-faces.ps1 store-cam1.jpg
+    ./find-faces.ps1 store-cam1.jpg
     ```
 
 7. Review the details of the faces found in the image, which include:
@@ -87,7 +84,7 @@ Now that you have a cloud shell environment, you can run a simple client applica
     To analyze the second image, enter the following command:
 
     ```
-    find-faces.ps1 store-cam2.jpg
+    ./find-faces.ps1 store-cam2.jpg
     ```
 
 9. Review the results of the face analysis for the second image.
@@ -99,7 +96,7 @@ Now that you have a cloud shell environment, you can run a simple client applica
     To analyze the third image, enter the following command:
 
     ```
-    find-faces.ps1 store-cam3.jpg
+    ./find-faces.ps1 store-cam3.jpg
     ```
 
 11. Review the results of the face analysis for the third image.
