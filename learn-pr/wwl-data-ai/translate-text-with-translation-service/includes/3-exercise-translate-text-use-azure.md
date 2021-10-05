@@ -2,10 +2,7 @@ One of the driving forces that has enabled human civilization to develop is the 
 
 Artificial Intelligence (AI) can help simplify communication by translating text or speech between languages, helping to remove barriers to communication across countries and cultures.
 
-## Use the Cloud Shell
-
-To test the capabilities of the Translation service, we'll use a simple command-line application that runs in the Cloud Shell.
-> **Note**: For this lab, you will test out an application in a cloud shell environment. When you build your own application, you can use an environment of your choice.
+To test the capabilities of the Translation service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
 1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance. 
 
@@ -88,7 +85,7 @@ Now that you have a cloud shell environment, you can run a simple client applica
 
     ```
     cd ai-900
-    translator.ps1
+    ./translator.ps1
     ```
 
 7. Review the output. Did you see the translation from text in English to French, Italian, and Chinese?  Did you see the English audio translated text in French? 
