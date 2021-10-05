@@ -1,23 +1,20 @@
-StereoKit is an easy-to-use open-source mixed reality library for building HoloLens and VR applications using C# and OpenXR.
+StereoKit is basically a code-first library aimed particularly at engineers and others who are accustomed to working in code-first environments. This appeals to an extensive number of non-game C# developers. Visual Studio developers can continue operating as they have in the past, utilizing NuGet's extensive functionality.
 
-StereoKit is the collection of tools that allows you to build Mixed Reality applications. However, physics, user interface are some challenging problems and we require game engines to access them; thus, the main objective of StereoKit is to create a comfortable environment for developers.
+StereoKit focuses on non-game Mixed Reality use cases, making it a better fit for people developing more traditional applications. This is why, unlike game engines, StereoKit's asset pipeline operates at runtime rather than build time. In addtion it also focuses on Mixed Reality making it much easier to create high-quality MR experiences and performs MR operations natively using basic core APIs while considering the limitations of stereo, performance-critical smartphone rendering. This is a great oppourtunity for those who don't want to understand the overhead of a difficult game engine structure or learn game engine or become graphics engineers.
 
-In this module, you'll learn how to configure, install the visual studio community and StereoKit's Visual studio template into your application or project.
+StereoKit key features
+You can access StereoKit on platforms like HoloLens 2, Oculus Quest, Windows Mixed Reality, Oculus Desktop, SteamVR, Varjo, Monado Linux, and eventually, everywhere OpenXR is.
 
-By the end of this module, you'll be able to set up, create, build an application and work across OpenXR platforms like HoloLens 2, Windows Mixed Reality, Monado Linux and so on.
+The StereoKit model format must be in .gltf, .glb, .obj, .stl, ASCII.ply and procedural.
 
-## Learning objectives
+The StereoKit Texture format must be in .jpg, .png, .tga, .bmp, .psd, .gif, .hdr, .pic, equirectangular cubemap, procedural.
 
-* Configure visual studio to develop the Mixed Reality application using Steoreokit.
+Stereokit builds your app to a device in a matter of seconds.
 
-* To Integrate the simplified stereokitink sample application.
+Stereokit supports flat screen mode with input emulation, powerful UI and interactions for easy development.
 
-* To build and test the applications in Desktop and in HoloLens 2.
+Assets are loaded at runtime, allowing computations to proceed faster.
 
-## Prerequisites
+Physics - It enables the 3D object to function as a real-world object, along with all physical constraints.
 
-* Visual Studio 2019 - the Community version.
-
-* StereoKit’s Visual Studio Template.
-
-* Any OpenXR platforms: Windows MR, Oculus, SteamVR, Varjo, Monado, HoloLens or an Oculus Quest.
+StereoKit, by default, uses a Flexible shader or material system with a built-in PBR.
