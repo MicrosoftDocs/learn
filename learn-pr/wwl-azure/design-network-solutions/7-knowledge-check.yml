@@ -46,7 +46,7 @@ quiz:
       explanation: "that’s correct. A Virtual WAN topology meets the requirements for deploying resources across several Azure regions and enables global connectivity between VNets in these Azure regions and multiple on-premises locations."
     - content: "Traditional network topology"
       isCorrect: false
-      explanation: "That’s incorrect. A traditional network topology can be used if your organization intends to deploy resources across several Azure regions but does not have a . But each peering, VPN and ExpressRoute connection would need to be managed independently"
+      explanation: "That’s incorrect. A traditional network topology can be used if your organization intends to deploy resources across several Azure regions but does not provide the ability to centrally manage the networks and connections."
     - content: "Single Isolated Virtual Network"
       isCorrect: false
       explanation: "That’s incorrect. A single isolated virtual network would not meet the needs of global connectivity"
