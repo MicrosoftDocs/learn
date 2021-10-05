@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-stereokit.1-4-exercise-understand-how-stereokit-ink-application-is-configured
+uid: learn.azure.intro-to-stereokit.4-exercise-understand-how-stereokit-ink-application-is-configured
 title: Exercise-understand-how-stereokit-ink-application-is-configured
 metadata:
   title: Exercise-understand-how-stereokit-ink-application-is-configured
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 5
 content: |
-  [!include[](includes/1-4-exercise-understand-how-stereokit-ink-application-is-configured.md)]
+  [!include[](includes/4-exercise-understand-how-stereokit-ink-application-is-configured.md)]

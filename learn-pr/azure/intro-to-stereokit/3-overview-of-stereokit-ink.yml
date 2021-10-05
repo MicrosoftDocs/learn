@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-stereokit.1-3-overview-of-stereokit-ink
+uid: learn.azure.intro-to-stereokit.3-overview-of-stereokit-ink
 title: Overview-of-stereokit-ink
 metadata:
   title: Overview-of-stereokit-ink
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 10
 content: |
-  [!include[](includes/1-3-overview-of-stereokit-ink.md)]
+  [!include[](includes/3-overview-of-stereokit-ink.md)]

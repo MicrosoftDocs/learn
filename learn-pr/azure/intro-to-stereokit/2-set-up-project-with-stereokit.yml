@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-stereokit.1-2-set-up-project-with-stereokit
+uid: learn.azure.intro-to-stereokit.2-set-up-project-with-stereokit
 title: Set-up-project-with-stereokit
 metadata:
   title: Set-up-project-with-stereokit
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 5
 content: |
-  [!include[](includes/1-2-set-up-project-with-stereokit.md)]
+  [!include[](includes/2-set-up-project-with-stereokit.md)]

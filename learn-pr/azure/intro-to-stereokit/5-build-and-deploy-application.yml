@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-stereokit.5-build-and-deploy-application
+title: Build-and-deploy-application
+metadata:
+  title: Build-and-deploy-application
+  description: You'll learn how to build a application on Desktop and HoloLens 2 with stereokit
+  ms.date: 10/05/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-build-and-deploy-application.md)]
