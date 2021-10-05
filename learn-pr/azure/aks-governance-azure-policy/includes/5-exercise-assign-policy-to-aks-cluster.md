@@ -235,7 +235,7 @@ Now that you know that the policy prevents images from Dockerhub from being crea
       name: second-simple-nginx
       labels:
         app: second-nginx
-    spec:
+    spec
       selector:
         matchLabels:
           app: second-nginx
