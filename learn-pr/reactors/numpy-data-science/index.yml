@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
+  ms.custom: nextgen
 title: Introduction to NumPy for data science
 summary: Learn about how to use NumPy for data science. Create, index, and sort arrays.
 abstract: |
