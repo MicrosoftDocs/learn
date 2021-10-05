@@ -10,7 +10,8 @@ During the build process, you may encounter errors when opening the Solution Exp
 errors, run the initial build solution.
 
 1. To bulid the application to desktop, configure Visual Studio for desktop by clicking onto "Solution Configuration" ensure the
-Debug and Any device is selected.(11)
+Debug and Any device is selected.
+:::image type="content" source="../media/change-solution-configuration.png" alt-text="Screenshot shows changing of Solution configuration." lightbox="../media/change-solution-configuration.png":::
 ​
 2. Click on the Device dropdown and ensure the projectsetup-desktop is selected.(ss)
 
