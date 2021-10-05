@@ -4,9 +4,11 @@ Deployment pipelines enable you to deploy your Azure resources in a repeatable w
 
 Suppose you're the Azure administrator at a toy company. You've been working with your website team to create a Bicep template that deploys and configures the Azure resources, and you've recently also been creating a pipeline to deploy the Bicep file automatically.
 
-Your website team is happy with the Azure resources that were created for the first version of your company's website. Now they want to keep iterating on the website, trying out additional components and changing the settings of their resources. But they don't want all of their changes to affect the production environment customers are using. They've asked you to help them to update the deployment pipeline so that it safely deploys their changes to a non-production environment, and then lets them decide whether to deploy their changes to their production environment.
+Your website team is happy with the Azure resources that were created for the first version of your company's website. Now they want to keep integrate the website with a third-party product review service. The review service enables your customers to submit and view product reviews for your toys. The website team needs to be able to try out the service when they're testing but without submitting real product reviews. They've been given access to a sandbox version of the product review service.
 
-<!-- TODO architecture diagram showing non-prod and prod -->
+The team has asked you to help them to update their deployment pipeline. They need to deploy their site to a non-production environment that's separate from the production environment that customers use, and they need to use different configuration in each environment.
+
+:::image type="content" source="../media/1-architecture-diagram.png" alt-text="Diagram showing the solution architecture including the website app and integration with the third-party vendor.":::
 
 ## What will you be doing?
 
