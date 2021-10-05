@@ -24,23 +24,25 @@ Enabling Developer Mode in UWP/Hololens makes it easier to test the applications
 
 1. Switch on your HoloLens and put it on. Then, access the main menu by using the start gesture.
 2. To start the app in your environment, select the **Settings** tile.
-3. Select the **Update** option from the menu.
+3. Select the **Update and Security** option from the menu.
+:::image type="content" source="../media/9.png" alt-text="In the Settings, go to the Update & Security menu item." lightbox="../media/9.png":::
 4. Select the menu item **For developers**.
 5. Enable **Use developer features** to deploy apps from Visual Studio to your HoloLens. If your device is running Windows Holographic version 21H1 or newer, also enable **Device discovery**.
 6. Optional: Scroll down and enable Device Portal, which allows you to connect to your HoloLens' Windows **Device Portal** from a web browser.
+:::image type="content" source="../media/9.png" alt-text="Click on the “For developers” section and enable Developer mode." lightbox="../media/9.png":::
 
 ## Windows PC
 
 If you're using a Windows Mixed Reality headset with your PC, you'll have to enable Developer Mode on your computer.
 
 1. Go to **Settings** menu.
-:::image type="content" source="../media/4.png" alt-text="Setting menu" lightbox="../media/4.png":::
+:::image type="content" source="../media/5.png" alt-text="Click the setting menu." lightbox="../media/5.png":::
 2. Select **Update and Security**.
-:::image type="content" source="../media/5.png" alt-text="Click on Update and Security" lightbox="../media/5.png":::
+:::image type="content" source="../media/6.png" alt-text="Select Update and Security" lightbox="../media/6.png":::
 3. Select **For developers**.
-:::image type="content" source="../media/6.png" alt-text="Click For Developers option" lightbox="../media/6.png":::
+:::image type="content" source="../media/7.png" alt-text="Select For Developers option" lightbox="../media/7.png":::
 4. Enable **Developer Mode**, read the disclaimer for the selected setting, and then accept the change by selecting Yes.
-:::image type="content" source="../media/7.png" alt-text="On the toggle button to enable Developer Mode" lightbox="../media/7.png":::
+:::image type="content" source="../media/8.png" alt-text="On the toggle button to enable Developer Mode" lightbox="../media/8.png":::
 
 ## StereoKit’s visual studio template
 
