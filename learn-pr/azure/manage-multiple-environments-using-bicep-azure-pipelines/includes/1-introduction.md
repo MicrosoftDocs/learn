@@ -8,7 +8,7 @@ Your website team is happy with the Azure resources that were created for the fi
 
 The team has asked you to help them to update their deployment pipeline. They need to deploy their site to a non-production environment that's separate from the production environment that customers use, and they need to use different configuration in each environment.
 
-:::image type="content" source="../media/1-architecture-diagram.png" alt-text="Diagram showing the solution architecture including the website app and integration with the third-party vendor.":::
+:::image type="content" source="../media/1-architecture-diagram.png" alt-text="Diagram showing the solution architecture including the website app and integration with the third-party vendor." border="false":::
 
 ## What will you be doing?
 

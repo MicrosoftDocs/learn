@@ -59,7 +59,7 @@ When you work with pipeline templates, you can name your variable groups so that
 
 | Environment name | Environment ID | Variable group name  |
 |------------------|----------------|----------------------|
-| Non-Production   | `nonprod`      | `ToyWebsite-nonprod` |
+| Non-production   | `nonprod`      | `ToyWebsite-nonprod` |
 | Production       | `prod`         | `ToyWebsite-prod`    |
 
 In each of these variable groups you add variables with the same names, but with different values for each environment.
@@ -70,11 +70,9 @@ In your pipeline template file, you can then use the `{{ parameters.PARAMETER_NA
 
 ### Key Vault variable groups
 
-Variable groups can be linked to an Azure Key Vault. Secrets in the vault are made available as variables in the variable group and can be used in your pipelines as if they're normal variables.
+Variable groups can be linked to Azure Key Vault. Secrets in the key vault are made available as variables in the variable group and can be used in your pipelines as if they're normal variables. To link a key vault, you need to create a service connection that has access to the vault. We link to more information in the summary.
 
-This way of linking a variable group to an Azure Key Vault will make the management of your secret values even more secure. It also enables those values to be managed by a separate security team, and to keep the access to your pipelines and the secrets separated from each other.
-
-<!-- TODO diagram? more detail? -->
+Key Vault makes the management of your secrets more secure. It also enables those values to be managed by your security team, and to separate the access to your pipelines from the secrets it uses.
 
 ### Use variables in your pipeline
 
@@ -83,6 +81,7 @@ Regardless of how you define a variable, you access its value in your pipeline b
 When you need to use a variable to set a parameter for your Bicep file, you use it like this:
 
 :::code language="yaml" source="code/6-parameter-variables.yml" highlight="22" :::
+<!-- TODO check the parameter list in the above example -->
 
 ## What's the best approach?
 
@@ -99,8 +98,6 @@ Also, keep in mind that parameters are often used in Bicep when resources need t
 - Deploy the storage account and website together in the same Bicep template. Use Bicep modules to keep the website and storage resources together. Then, you can automatically look up the values for the storage account name and the key within the Bicep code, instead of passing in parameters.
 - Use the website's managed identity to access the storage account. A managed identity is automatically handled by Azure, and you don't need to maintain any credentials. This simplifies the connection settings, and means you don't have to pass in secrets at all.
 - Add the storage account's details to Key Vault. Have the website code load the key directly from the vault. This avoids the need to manage the key in the pipeline at all.
-
-<!-- TODO talk about inferring parameter values? -->
 
 ### Use parameter files for large sets of parameters
 

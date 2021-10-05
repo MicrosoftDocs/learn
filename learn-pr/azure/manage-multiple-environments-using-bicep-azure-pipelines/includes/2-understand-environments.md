@@ -24,13 +24,13 @@ Whatever your organization chooses as their list of environments, the goal is to
 
 In your toy company, you decide you'll start with a basic set of environments for your website. In addition to your production environment, you'll create one non-production environment:
 
-:::image type="content" source="../media/2-environments.png" alt-text="Diagram showing two environments - non-production and production.":::
+:::image type="content" source="../media/2-environments.png" alt-text="Diagram showing two environments - non-production and production." border="false":::
 
 You'll update your pipeline to deploy to your non-production environment. If that succeeds, you'll deploy to your production environment.
 
 Your pipeline will use several stages to deploy to each environment:
 
-:::image type="content" source="../media/2-stages.png" alt-text="Diagram showing a series of pipeline stages, including those for non-production and production deployments.":::
+:::image type="content" source="../media/2-stages.png" alt-text="Diagram showing a series of pipeline stages, including those for non-production and production deployments." border="false":::
 
 ## Pipeline environments
 
@@ -65,7 +65,7 @@ When you use multiple environments, you should make each environment independent
 
 You should create separate service connections for each environment. Each service connection should use its own dedicated service principal, with specific permissions to only deploy to the subscription and resource group used by that environment.
 
-:::image type="content" source="../media/2-service-connections.png" alt-text="Diagram showing a service connection, service principal, and Azure resource group for non-production and another set for production.":::
+:::image type="content" source="../media/2-service-connections.png" alt-text="Diagram showing a service connection, service principal, and Azure resource group for non-production and another set for production." border="false":::
 
 > [!IMPORTANT]
 > Use a separate service principal and service connection for each environment you plan to deploy to. Grant the service principal the least permissions it needs to be able to deploy to its environment.

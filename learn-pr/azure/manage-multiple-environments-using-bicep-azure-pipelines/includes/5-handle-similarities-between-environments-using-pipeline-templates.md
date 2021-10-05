@@ -29,16 +29,11 @@ When you nest templates, or reuse them multiple times in a single pipeline, you 
 > [!NOTE]
 > When you work with complex sets of deployments, it can be helpful to create a dedicated Git repository for your templates. Then, you can reuse the same repository in multiple pipelines, even if they're for different projects. We provide a link to more information in the summary.
 
-<!-- TODO figure out what this is about
-> [!NOTE]
-> Another way of using a template in a pipeline is by extending from it. This gives you an inheritance relationship between the template and your pipeline as opposed to a usage relationship. Additionally you can add extra security to your pipeline through this inheritance relationship. For the use case of Bicep template deployments to multiple environments extending from a template is out of scope. 
--->
-
 ## Template parameters
 
 Pipeline template parameters make your template files easier to reuse, because you can allow for small differences whenever you use them.
 
-When you create a pipeline template, you can indicate its parameters at the top of the file: 
+When you create a pipeline template, you can indicate its parameters at the top of the file:
 
 :::code language="yaml" source="code/5-script-parameters.yml" range="1-6" :::
 
@@ -49,8 +44,6 @@ Each pipeline template parameter has three properties:
 - The *name* of the parameter, which you use to refer to the parameter in your template files.
 - The *type* of the parameter. Parameters support several different types of data, including *string*, *number*, and *boolean*. You can also define more complex templates that accept structured objects and pipeline definitions like steps, jobs, and stages.
 - The *default value* of the parameter. If you specify a default value, you effectively make the parameter optional.
-
-<!-- TODO update this to use the service connection name as the example -->
 
 In your pipeline template, you use a special syntax to refer to the value of the parameter. Use the `${{parameters.YOUR_PARAMETER_NAME}}` macro, like in this example: 
 

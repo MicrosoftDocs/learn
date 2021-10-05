@@ -7,6 +7,6 @@ steps:
 - script: |
     echo Hello ${{parameters.environmentName}}!
 
-- ${{ if eq(parameters.environmentName, 'production') }}:
+- ${{ if eq(parameters.environmentName, 'prod') }}:
   - script: |
       echo This step only runs for the production deployment.
