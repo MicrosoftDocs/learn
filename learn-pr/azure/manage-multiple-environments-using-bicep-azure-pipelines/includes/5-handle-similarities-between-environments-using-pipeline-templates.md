@@ -29,7 +29,7 @@ When you nest templates, or reuse them multiple times in a single pipeline, you 
 > [!NOTE]
 > When you work with complex sets of deployments, it can be helpful to create a dedicated Git repository for your templates. Then, you can reuse the same repository in multiple pipelines, even if they're for different projects. We provide a link to more information in the summary.
 
-## Template parameters
+## Pipeline template parameters
 
 Pipeline template parameters make your template files easier to reuse, because you can allow for small differences whenever you use them.
 
