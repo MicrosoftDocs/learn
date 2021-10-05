@@ -1,9 +1,6 @@
 Increasingly, we expect computers to be able to use AI in order to understand spoken or typed commands in natural language. For example, you might want to implement a home automation system that enables you to control devices in your home by using voice commands such as "switch on the light" or "put the fan on", and have an AI-powered device understand the command and take appropriate action.
 
-## Use the Cloud Shell
-
-To test the capabilities of the Language Understanding service, we'll use a simple command-line application that runs in the Cloud Shell.
-> **Note**: For this lab, you will test out an application in a cloud shell environment. When you build your own application, you can use an environment of your choice.
+To test the capabilities of the Language Understanding service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
 1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance. 
 
@@ -120,14 +117,14 @@ Now that you have a cloud shell environment, you can run a simple client applica
 
     ```
     cd ai-900
-    understand.ps1 "Turn on the light"
+    ./understand.ps1 "Turn on the light"
     ```
 
 7. Review the results - the app should have predicted that the intended action is to switch on the light.
 8. Now try another command:
 
     ```
-    understand.ps1 "Switch the fan off"
+    ./understand.ps1 "Switch the fan off"
     ```
 
 9. Review the results from this command- the app should have predicted that the intended action is to switch off the fan.
