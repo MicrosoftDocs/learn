@@ -1,6 +1,6 @@
 You've already learned about Bicep parameters, which help you to specify values that can change between deployments of your Bicep files. Parameters are commonly used to support the differences between your environments. For example, in your non-production environment you often want to deploy inexpensive SKUs of your Azure resources, while in production you want to deploy SKUs that have better performance. Or, you might want to use different names for different environments.
 
-When you deploy your Bicep file, you can indicate the values of each parameter. When you use a pipeline, there are several options for how you can specify the values for each parameter, and how you specify separate values for each environment. In this unit, you'll learn about the approaches yuo can consider for specifying Bicep parameter values in a pipeline.
+When you deploy your Bicep file, you can indicate the values of each parameter. When you use a pipeline, there are several options for how you can specify the values for each parameter, and how you specify separate values for each environment. In this unit, you'll learn about the approaches you can consider for specifying Bicep parameter values in a pipeline.
 
 ## Parameter files
 
@@ -18,9 +18,9 @@ A parameter file is a JSON-formatted file that lists the parameter values you wa
 }
 ```
 
-Parameter files can be committed to your Git repository with your Bicep file. You can then refer to the parameter file in your template. If you use parameter files, it's a good idea to establish a consistent environment naming strategy. For example, you might name your parameter files *azuredeploy.parameters.ENVIRONMENT_NAME.json*, like *azuredeploy.parameters.production.json*. THen, you can use a pipeline template parameter to automatically select the correct parameter file:
+Parameter files can be committed to your Git repository with your Bicep file. You can then refer to the parameter file in your pipeline template where you execute your deployment. If you use parameter files, it's a good idea to establish a consistent environment naming strategy. For example, you might name your parameter files *azuredeploy.parameters.ENVIRONMENT_NAME.json*, like *azuredeploy.parameters.production.json*. Then, you can use a pipeline template parameter to automatically select the correct parameter file:
 
-We already mentioned parameter files as one way to pass parameters to a Bicep template. This is a good way of passing parameter values that are not secure values. You indicate all values in the parameter file and you can even vary which parameter file to use when calling a pipeline template: 
+Using a parameter file is a good way of passing parameter values that are not secure values. You indicate all values in the parameter file and you can even vary which parameter file to use when calling a pipeline template: 
 
 :::code language="yaml" source="code/6-parameter-file.yml" highlight="31" :::
 
@@ -38,7 +38,7 @@ You can define variables and set their values within a YAML file. This is useful
 
 ### Variables defined in the web interface
 
-The first type of variable is one that you define by using the Azure DevOps web interface. You can change the variable values any time, and next time the pipeline runs it uses the updated values.
+The other type of variable is one that you define by using the Azure DevOps web interface. You can change the variable values any time, and next time the pipeline runs it uses the updated values.
 
 Variables defined using the web interface can be marked as secret, which tells Azure Pipelines to try to hide the variable's value in the pipeline logs. This means you can store values that your Bicep file then accepts as parameters with the `@secure()` decorator.
 
@@ -46,7 +46,7 @@ Variables defined using the web interface can be marked as secret, which tells A
 
 ### Variable groups
 
-You can also define *variable groups*, which are sets of variables. Like variables, you define these by using the Azure DevOps web interface. You can also use variable groups to store secrets.
+You can also define *variable groups*, which are sets of variables. Like variables, you define these by using the Azure DevOps web interface. You can also use variable groups to store secrets. Variable groups also have the added advantage that they can be used in multiple pipelines. 
 
 Unlike normal variables, you need to explicitly import a variable group into a pipeline by using the `group` keyword in a `variables` section, like this:
 
