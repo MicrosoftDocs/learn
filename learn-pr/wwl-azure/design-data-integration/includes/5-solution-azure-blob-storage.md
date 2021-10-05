@@ -69,7 +69,7 @@ Let us look at some criteria that will help you decide when to pick one storage 
 
 | **Criteria**| **Azure Data Lake**| **Azure Blob Storage** |
 | - | -| - |
-| Data type| Good for storing large volumes of text data| Good for storing unstructured non text based data such as photos, videos, backup etc. |
+| Data type| Good for storing large volumes of text data| Good for storing unstructured non-text based data such as photos, videos, backup etc. |
 | Geographic redundancy| Need to set up replication of data| By default, provides geo redundant storage |
 | Namespaces support| Supports hierarchical namespaces| Supports flat namespaces |
 | Hadoop compatibility| Hadoop services can use data stored in Data Lake| Is not Hadoop compatible |
