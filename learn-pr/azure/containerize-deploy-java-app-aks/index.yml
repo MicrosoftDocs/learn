@@ -35,8 +35,7 @@ units:
 - learn.containerize-deploy-java-app-aks.introduction
 - learn.containerize-deploy-java-app-aks.setup
 - learn.containerize-deploy-java-app-aks.containerize
-- learn.containerize-deploy-java-app-aks.build
-- learn.containerize-deploy-java-app-aks.run
+- learn.containerize-deploy-java-app-aks.build-and-run
 - learn.containerize-deploy-java-app-aks.push
 - learn.containerize-deploy-java-app-aks.deploy
 - learn.containerize-deploy-java-app-aks.summary
