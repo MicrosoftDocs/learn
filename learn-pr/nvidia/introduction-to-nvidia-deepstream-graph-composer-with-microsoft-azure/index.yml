@@ -30,10 +30,7 @@ roles:
 - data-scientist
 products:
 - azure
-- azure-cloud-shell
 - azure-container-registry
-- azure-resource-manager
-- azure-virtual-machines
 units:
 - learn.nvidia.introduction-to-nvidia-deepstream-graph-composer-with-microsoft-azure.1-introduction
 - learn.nvidia.introduction-to-nvidia-deepstream-graph-composer-with-microsoft-azure.2-introduction-to-nvidia-deepstream-graph-composer

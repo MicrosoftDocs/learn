@@ -30,12 +30,9 @@ roles:
 products:
 - azure
 - azure-iot
-- azure-cloud-shell
 - azure-container-registry
 - azure-iot-edge
 - azure-iot-hub
-- azure-resource-manager
-- azure-virtual-machines
 modules:
 - learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment
 - learn.nvidia.introduction-to-nvidia-deepstream-graph-composer-with-microsoft-azure

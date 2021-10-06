@@ -27,7 +27,6 @@ roles:
 - data-scientist
 products:
 - azure
-- azure-virtual-machines
 units:
 - learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.1-introduction
 - learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.2-introduction-to-intelligent-video-analytics

@@ -33,12 +33,9 @@ roles:
 products:
 - azure
 - azure-iot
-- azure-cloud-shell
 - azure-container-registry
 - azure-iot-edge
 - azure-iot-hub
-- azure-resource-manager
-- azure-virtual-machines
 units:
 - learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.1-introduction
 - learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.2-introduction-to-artificial-intelligence-at-the-edge
