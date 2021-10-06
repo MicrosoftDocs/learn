@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.6-deploy-cross-platform-deepstream-images-to-nvidia-embedded-devices-with-azure-iot-edge
-title: Deploy Cross-Platform DeepStream Images to NVIDIA Embedded Devices with Azure IoT Edge
+title: Exercise - Deploy Cross-Platform DeepStream Images to NVIDIA Embedded Devices with Azure IoT Edge
 metadata:
-  title: Deploy Cross-Platform DeepStream Images to NVIDIA Embedded Devices with Azure IoT Edge
-  description: Deploy Cross-Platform DeepStream Images to NVIDIA Embedded Devices with Azure IoT Edge
+  title: Exercise - Deploy Cross-Platform DeepStream Images to NVIDIA Embedded Devices with Azure IoT Edge
+  description: Exercise - Deploy Cross-Platform DeepStream Images to NVIDIA Embedded Devices with Azure IoT Edge
   author: toolboc
   ms.author: pdecarlo
   ms.date: 10/01/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 20
+durationInMinutes: 10
 content: |
   [!include[](includes/6-deploy-cross-platform-deepstream-images-to-nvidia-embedded-devices-with-azure-iot-edge.md)]

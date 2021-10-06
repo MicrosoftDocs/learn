@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment.4-run-a-nvidia-deepstream-reference-application
-title: Run a NVIDIA DeepStream Reference Application
+title: Exercise - Run a NVIDIA DeepStream Reference Application
 metadata:
-  title: Run a NVIDIA DeepStream Reference Application
-  description: Run a NVIDIA DeepStream Reference Application
+  title: Exercise - Run a NVIDIA DeepStream Reference Application
+  description: Exercise - Run a NVIDIA DeepStream Reference Application
   author: toolboc
   ms.author: pdecarlo
   ms.date: 10/01/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 20
+durationInMinutes: 15
 content: |
   [!include[](includes/4-run-a-nvidia-deepstream-reference-application.md)]
