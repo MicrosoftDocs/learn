@@ -1,9 +1,7 @@
-## Build and deploy
-​
 The build is the most commonly used feature in the Visual Studio community. As a developer, you write the code, build and run the application.
 
 Deployment is the process of installing, configuring, and enabling a specific application or set of applications.
-​
+
 ## Build your application on desktop with StereoKit
 
 During the build process, you may encounter errors when opening the Solution Explorer and the C# program file. To debug the
@@ -21,7 +19,7 @@ Start Debugging automatically starts the application on your device with the Vis
 :::image type="content" source="../media/select-start-debug.png" alt-text="Screenshot shows Selecting of Start Debugging." lightbox="../media/select-start-debug.png":::
 
 ## Build your application on HoloLens 2 with StereoKit
-​
+
 During the build process, you may encounter errors when opening the Solution Explorer and the C# program file. To debug the
 errors, run the initial build solution.
 
