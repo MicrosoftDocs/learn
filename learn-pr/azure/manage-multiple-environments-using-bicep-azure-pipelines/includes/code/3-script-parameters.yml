@@ -1,10 +1,10 @@
 parameters: 
-- name: environmentName
+- name: environmentType
   type: string
-  default: 'nonprod'
+  default: 'Test'
 - name: serviceConnectionName
   type: string
 
 steps:
 - script: |
-    echo Hello ${{parameters.environmentName}}!
+    echo Hello ${{parameters.environmentType}}!

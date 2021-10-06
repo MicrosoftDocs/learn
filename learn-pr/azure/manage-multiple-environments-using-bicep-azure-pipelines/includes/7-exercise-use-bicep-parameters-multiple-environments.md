@@ -10,29 +10,29 @@ During the process you'll:
 
 ## Add variable groups
 
-1. Create new variable group named ToyWebsiteNonProd.
+1. Create new variable group named ToyWebsiteTest.
 
 1. Set up the variables as follows:
 
-   | Name | Value |
-   |-|-|
-   | EnvironmentType | Test |
-   | ResourceGroupName | ToyWebsiteNonProd |
-   | ReviewApiKey | mysecretnonprod |
-   | ReviewApiUrl | https://sandbox.contoso.com/reviews |
+   | Name | Value | |
+   |-|-|-|
+   | EnvironmentType | Test | |
+   | ResourceGroupName | ToyWebsiteTest | |
+   | ReviewApiKey | sandboxsecretkey | Secret |
+   | ReviewApiUrl | https://sandbox.contoso.com/reviews | |
 
    Notice you don't define the service connection name in the variable group. Service connection names have special rules about how they can be specified. In this module, you'll use pipeline template parameters.
 
-1. Create another new variable group named ToyWebsiteProdX.
+1. Create another new variable group named ToyWebsiteProduction.
 
 1. Set up the variables as follows:
 
-   | Name | Value |
-   |-|-|
-   | EnvironmentType | Production |
-   | ResourceGroupName | ToyWebsiteProd |
-   | ReviewApiKey | mysecretprod |
-   | ReviewApiUrl | https://api.contoso.com/reviews |
+   | Name | Value | |
+   |-|-|-|
+   | EnvironmentType | Production | |
+   | ResourceGroupName | ToyWebsiteProduction | |
+   | ReviewApiKey | productionsecretkey | Secret |
+   | ReviewApiUrl | https://api.contoso.com/reviews | |
 
 ## Update the Bicep file
 
@@ -52,7 +52,7 @@ During the process you'll:
 
 1. Open the *deploy.yml* file.
 
-1. Remove all but the `environmentName` parameter:
+1. Remove all but the `environmentType` parameter:
 
    :::code language="yaml" source="code/7-deploy.yml" range="1-3" :::
 
@@ -73,11 +73,9 @@ During the process you'll:
 
 ## Update the pipeline definition to simplify the parameter list
 
-Your template is now ready to handle variations in environments. You will now call this template twice in your pipeline with the right parameter values.
-
 1. In Visual Studio Code open the *azure-pipelines.yml* file.
 
-1. Remove the extra parameters, only leaving the environmentName parameters:
+1. Remove the extra parameters, only leaving the `environmentType` parameters:
 
    :::code language="yaml" source="code/7-pipeline.yml" highlight="18-19, 23-24" :::
 
@@ -91,9 +89,10 @@ Your template is now ready to handle variations in environments. You will now ca
 
 ## Watch output for the different environments
 
+<!-- TODO update -->
 1. In your browser, navigate to your pipeline runs.
 
-1. You will notice that your pipeline is now running multiple stages one after the other for each environment: ValidateTest, DeployTest, SmokeTestTest, ValidateProd, PreviewProd, DeployProd, SmokeTestProd. Notice that there is no PreviewTest stage.
+1. You will notice that your pipeline is now running multiple stages one after the other for each environment.
 
 1. Navigate to the Test results of your run. You will notice that there are now 4 tests run. Since the Smoke test runs 2 tests and these now run for each environment, you get 4 test results. 
 
@@ -110,3 +109,29 @@ Your template is now ready to handle variations in environments. You will now ca
 1. Notice that the production app service plan is of type S1: Standard. This is a different type from the app service plan in your test environment which is a F1: Free plan.
 
 1. Check the config settings made it to the App Services
+
+## Clean up the resources
+
+Now that you've completed the exercise, you can remove the resources so you aren't billed for them.
+
+In the Visual Studio Code terminal, run the following commands:
+
+::: zone pivot="cli"
+
+```azurecli
+az group delete --resource-group ToyWebsiteTest --yes --no-wait
+az group delete --resource-group ToyWebsiteProduction --yes --no-wait
+```
+
+The resource group is deleted in the background.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+```azurepowershell
+Remove-AzResourceGroup -Name ToyWebsiteTest -Force
+Remove-AzResourceGroup -Name ToyWebsiteProduction -Force
+```
+
+::: zone-end

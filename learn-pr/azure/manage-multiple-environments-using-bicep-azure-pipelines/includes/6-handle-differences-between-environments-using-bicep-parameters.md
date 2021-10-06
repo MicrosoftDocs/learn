@@ -1,4 +1,4 @@
-You've already learned about Bicep parameters, which help you to specify values that can change between deployments of your Bicep files. Parameters are commonly used to support the differences between your environments. For example, in your non-production environment you often want to deploy inexpensive SKUs of your Azure resources, while in production you want to deploy SKUs that have better performance. Or, you might want to use different names for different environments.
+You've already learned about Bicep parameters, which help you to specify values that can change between deployments of your Bicep files. Parameters are commonly used to support the differences between your environments. For example, in your non-production environments you often want to deploy inexpensive SKUs of your Azure resources, while in production you want to deploy SKUs that have better performance. Or, you might want to use different names for different environments.
 
 When you deploy your Bicep file, you can indicate the values of each parameter. When you use a pipeline, there are several options for how you can specify the values for each parameter, and how you specify separate values for each environment. In this unit, you'll learn about the approaches you can consider for specifying Bicep parameter values in a pipeline.
 
@@ -11,14 +11,14 @@ A parameter file is a JSON-formatted file that lists the parameter values you wa
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "environmentName": {
-      "value": "NonProduction"
+    "reviewApiUrl": {
+      "value": "https://sandbox.contoso.com/reviews"
     }
   }
 }
 ```
 
-Parameter files can be committed to your Git repository with your Bicep file. You can then refer to the parameter file in your pipeline template where you execute your deployment. If you use parameter files, it's a good idea to establish a consistent environment naming strategy. For example, you might name your parameter files *azuredeploy.parameters.ENVIRONMENT_NAME.json*, like *azuredeploy.parameters.production.json*. Then, you can use a pipeline template parameter to automatically select the correct parameter file:
+Parameter files can be committed to your Git repository with your Bicep file. You can then refer to the parameter file in your pipeline template where you execute your deployment. If you use parameter files, it's a good idea to establish a consistent environment naming strategy. For example, you might name your parameter files *azuredeploy.parameters.ENVIRONMENT_NAME.json*, like *azuredeploy.parameters.Production.json*. Then, you can use a pipeline template parameter to automatically select the correct parameter file:
 
 Using a parameter file is a good way of passing parameter values that are not secure values. You indicate all values in the parameter file and you can even vary which parameter file to use when calling a pipeline template: 
 
@@ -57,10 +57,10 @@ variables:
 
 When you work with pipeline templates, you can name your variable groups so that you can easily load them by using a template parameter. For example, suppose your pipeline deploys to two environments, and you need to define a set of variables for each environment. You could name your variable groups like this:
 
-| Environment name | Environment ID | Variable group name  |
-|------------------|----------------|----------------------|
-| Non-production   | `nonprod`      | `ToyWebsite-nonprod` |
-| Production       | `prod`         | `ToyWebsite-prod`    |
+| Environment name | Variable group name    |
+|------------------|------------------------|
+| Test             | `ToyWebsiteTest`       |
+| Production       | `ToyWebsiteProduction` |
 
 In each of these variable groups you add variables with the same names, but with different values for each environment.
 

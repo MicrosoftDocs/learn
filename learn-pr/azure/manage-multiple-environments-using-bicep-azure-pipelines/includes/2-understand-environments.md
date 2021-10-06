@@ -22,15 +22,15 @@ You might see variations of these environments. Many organizations only use a fe
 
 Whatever your organization chooses as their list of environments, the goal is to enhance the confidence you have in a change as it progresses through your deployment pipeline. When a change does not meet your quality requirements, you want to be able to stop the deployment of that change to any subsequent environments in the chain.
 
-In your toy company, you decide you'll start with a basic set of environments for your website. In addition to your production environment, you'll create one non-production environment:
+In your toy company, you decide you'll start with a basic set of environments for your website. In addition to your production environment, you'll create one non-production environment named *Test*:
 
-:::image type="content" source="../media/2-environments.png" alt-text="Diagram showing two environments - non-production and production." border="false":::
+:::image type="content" source="../media/2-environments.png" alt-text="Diagram showing two environments - test and production." border="false":::
 
-You'll update your pipeline to deploy to your non-production environment. If that succeeds, you'll deploy to your production environment.
+You'll update your pipeline to deploy to your test environment. If that succeeds, you'll deploy to your production environment.
 
 Your pipeline will use several stages to deploy to each environment:
 
-:::image type="content" source="../media/2-stages.png" alt-text="Diagram showing a series of pipeline stages, including those for non-production and production deployments." border="false":::
+:::image type="content" source="../media/2-stages.png" alt-text="Diagram showing a series of pipeline stages, including those for test and production deployments." border="false":::
 
 ## Pipeline environments
 
@@ -38,9 +38,9 @@ Azure Pipelines also has the concept of an environment. You create an Azure Pipe
 
 ### Checks and approvals
 
-An environment in Azure DevOps can have checks and approvals on it. Each time the environment is used in a job in your pipeline, Azure DevOps will make sure these checks and approvals succeed before the job starts executing.
+An environment in Azure DevOps can have checks and approvals configured. Each time the environment is used in a job in your pipeline, Azure DevOps will make sure these checks and approvals succeed before the job starts executing.
 
-Manual approvals can be applied to the job that deploys to your production environment. The approver will get an email notification before the job executes and can manually verify your policies and procedures are met before approving the deployment to your production environment. For example, the approver might check that everything is working as they expect in the pre-production environment before they approve the deployment.
+For example, manual approvals can be configured on your production environment. The approver will get an email notification before the deployment stage executes and can manually verify your policies and procedures are met before approving the deployment to your production environment. For example, the approver might check that everything is working as they expect in the pre-production environment before they approve the deployment.
 
 Or, you could run an automated check to see whether the deployment to the pre-production environment hasn't resulted in an increase in the number of errors reported to Azure Monitor. After the check validates the number of errors hasn't substantially increased, it can allow the deployment to proceed.
 

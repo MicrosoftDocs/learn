@@ -22,13 +22,13 @@ The modules in this learning path are part of a progression. For learning purpos
 Run a template that sets up your Azure DevOps project.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepenvironments&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator-staging.azurewebsites.net/?name=bicepenvironments&azure-portal=true) <!-- TODO use correct URL -->
 
 On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
 
-1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *toy-website-test*.
+1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *toy-website-environments*.
 
     :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/4-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator."::: <!-- TODO use correct image -->
 
@@ -138,8 +138,8 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 To create the two new resource groups, run the following Azure CLI commands in the Visual Studio Code terminal:
 
 ```azurecli
-az group create --name ToyWebsiteNonProd --location westus
-az group create --name ToyWebsiteProd --location westus
+az group create --name ToyWebsiteTest --location westus
+az group create --name ToyWebsiteProduction --location westus
 ```
 
 ::: zone-end
@@ -149,15 +149,15 @@ az group create --name ToyWebsiteProd --location westus
 To create the two new resource groups, run the following Azure PowerShell commands in the Visual Studio Code terminal:
 
 ```azurepowershell
-New-AzResourceGroup -Name ToyWebsiteNonProd -Location westus
-New-AzResourceGroup -Name ToyWebsiteProd -Location westus
+New-AzResourceGroup -Name ToyWebsiteTest -Location westus
+New-AzResourceGroup -Name ToyWebsiteProduction -Location westus
 ```
 
 ::: zone-end
 
 ## Create service connections in Azure Pipelines
 
-Next, create two service connections in Azure Pipelines - one for your non-production environment and another for your production environment. This process automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy to the resource group.
+Next, create two service connections in Azure Pipelines - one for your test environment and another for your production environment. This process automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy to the resource group.
 
 1. In your browser, select **Project settings**.
 
@@ -179,9 +179,9 @@ Next, create two service connections in Azure Pipelines - one for your non-produ
 
    A popup window might appear, asking you to sign in to Azure. If it does, enter your credentials and sign in.
 
-1. In the **Resource group** drop-down, select **ToyWebsiteNonProd**.
+1. In the **Resource group** drop-down, select **ToyWebsiteTest**.
 
-1. In **Service connection name**, enter **ToyWebsiteNonProd**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
+1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
 
    :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/4-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the details completed and the Next button highlighted."::: <!-- TODO create new image -->
 
@@ -190,7 +190,9 @@ Next, create two service connections in Azure Pipelines - one for your non-produ
 
 1. Select **Save**.
 
-1. Repeat the above process to create another new service connection named **ToyWebsiteProd**, which deploys to the resource group named **ToyWebsiteProd**:
+1. Refresh the page in your browser.
+
+1. Repeat the above process to create another new service connection named **ToyWebsiteProduction**, which deploys to the resource group named **ToyWebsiteProduction**:
 
    :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/4-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the details completed and the Next button highlighted."::: <!-- TODO create new image -->
 
@@ -204,7 +206,7 @@ Next, create two service connections in Azure Pipelines - one for your non-produ
 
    :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/7-environments-new.png" alt-text="Screenshot of the Azure DevOps interface that shows the Environments page, with the button for creating an environment highlighted."::: <!-- TODO create new image -->
 
-1. Enter **NonProd** as the environment name.
+1. Enter **Test** as the environment name.
 
    Leave the description blank. For **Resource**, select **None**.
 
@@ -215,7 +217,7 @@ Next, create two service connections in Azure Pipelines - one for your non-produ
 
    :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/7-environments-new-details.png" alt-text="Screenshot of the Azure DevOps page for a new environment, with the details completed and the Create button highlighted."::: <!-- TODO new image -->
 
-1. Repeat the process to create another environment named **Prod**.
+1. Repeat the process to create another environment named **Production**.
 
    :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/7-environments-new-details.png" alt-text="Screenshot of the Azure DevOps page for a new environment, with the details completed and the Create button highlighted."::: <!-- TODO new image -->
 

@@ -2,7 +2,15 @@ Even though you deploy your changes to multiple separate environments, the steps
 
 ## Deployment to multiple environments
 
-Your toy company's website pipeline includes several stages. Some of these stages are repeated between your non-production and production environment.
+Your toy company's website pipeline includes several stages. Some of these stages are repeated between your test and production environments:
+
+| Stage | Environments |
+|-|-|
+| Lint | Neither - linting doesn't happen against an environment. |
+| Validate | Test only |
+| Preview | Production only |
+| Deploy | Both environments |
+| Smoke Test | Both environments |
 
 When you need to repeat steps in your pipeline, you might try to copy and paste your step definitions. However, this isn't a good practice. It's easy to accidentally make subtle mistakes or for things to get out of sync when you duplicate your pipeline's code. And in the future, when you need to make a change to the steps, you have to remember to apply the change in multiple places.
 
@@ -42,7 +50,7 @@ You can define as many parameters as you need. But just like Bicep parameters, t
 Each pipeline template parameter has three properties:
 
 - The *name* of the parameter, which you use to refer to the parameter in your template files.
-- The *type* of the parameter. Parameters support several different types of data, including *string*, *number*, and *boolean*. You can also define more complex templates that accept structured objects and pipeline definitions like steps, jobs, and stages.
+- The *type* of the parameter. Parameters support several different types of data, including *string*, *number*, and *boolean*. You can also define more complex templates that accept structured objects, and even pipeline definitions like steps, jobs, and stages.
 - The *default value* of the parameter. If you specify a default value, you effectively make the parameter optional.
 
 In your pipeline template, you use a special syntax to refer to the value of the parameter. Use the `${{parameters.YOUR_PARAMETER_NAME}}` macro, like in this example: 
@@ -61,15 +69,19 @@ You can also use parameters when you assign names to your jobs and stages in pip
 
 You can use pipeline *conditions* to specify whether a step, job, or even stage should run depending on a value you specify. Template parameters and pipeline conditions can be used together to enable you to customize your deployment process for many different situations.
 
-For example, imagine you define a pipeline template that runs script steps. You'll reuse the template for each of your environments. When you deploy your production environment, you want to run an additional step. Here's how you can achieve that by using the `if` macro:
+For example, imagine you define a pipeline template that runs script steps. You'll reuse the template for each of your environments. When you deploy your production environment, you want to run an additional step. Here's how you can achieve that by using the `if` macro and the *equals* operator, `eq`:
 
-:::code language="yaml" source="code/3-script-conditions.yml" highlight="10" :::
+:::code language="yaml" source="code/3-script-conditions.yml" range="1-12" highlight="10" :::
 
-The condition here translates to *if the environmentName parameter's value is equal to 'production', then run the following steps*.
+The condition here translates to *if the environmentType parameter's value is equal to 'Production', then run the following steps*.
+
+You can also use the *not equals* operator, `ne`, to specify a condition like *if the environmentType parameter's value is not equal to 'Production', then run the following steps*:
+
+:::code language="yaml" source="code/3-script-conditions.yml" range="14-16" highlight="1" :::
 
 > [!TIP]
 > Pay attention to the YAML file's indentation when you use conditions. You need to indent the steps that the condition applies to by one extra level.
 
-Even though conditions are a way to add flexibility to your pipeline, try not to use too many of them. They complicate your pipeline and make it harder to reason about. If you see a lot of conditions in your pipeline template, it might indicate that a template might not be the best solution for the workflow you plan to run, and that you should redesign your pipeline.
+Although conditions are a way to add flexibility to your pipeline, try not to use too many of them. They complicate your pipeline and make it harder to reason about. If you see a lot of conditions in your pipeline template, it might indicate that a template might not be the best solution for the workflow you plan to run, and that you should redesign your pipeline.
 
 Also, consider using YAML comments to explain the conditions you use, and any other aspects of your pipeline that might need additional explanation. Comments help make your pipeline easy to understand and work with in the future.

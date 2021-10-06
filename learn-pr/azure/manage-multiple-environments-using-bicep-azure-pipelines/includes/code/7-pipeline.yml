@@ -13,12 +13,12 @@ stages:
   jobs: 
   - template: pipeline-templates/lint.yml
 
-# Deploy to the non-production environment.
+# Deploy to the test environment.
 - template: pipeline-templates/deploy.yml
   parameters:
-    environmentName: NonProd
+    environmentType: Test
 
 # Deploy to the production environment.
 - template: pipeline-templates/deploy.yml
   parameters:
-    environmentName: Prod
+    environmentType: Production

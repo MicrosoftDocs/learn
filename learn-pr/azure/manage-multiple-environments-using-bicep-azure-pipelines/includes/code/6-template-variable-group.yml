@@ -1,7 +1,7 @@
 parameters: 
-- name: environmentName
+- name: environmentType
   type: string
-  default: 'nonprod'
+  default: 'Test'
 
 variables: 
-- group: ToyWebsite-${{ parameters.environmentName }}
+- group: ToyWebsite${{ parameters.environmentType }}

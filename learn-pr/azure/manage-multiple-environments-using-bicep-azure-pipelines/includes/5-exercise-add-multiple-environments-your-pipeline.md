@@ -1,4 +1,4 @@
-You've decided to add your pre-production environment to your pipeline. In this unit, you'll update your pipeline to use templates so that you can reuse the stages across the environments.
+You've decided to deploy to your test environment from your pipeline. In this unit, you'll update your pipeline to use templates so that you can reuse the stages across the environments.
 
 During the process, you'll: 
 
@@ -12,6 +12,8 @@ During the process, you'll:
 1. In Visual Studio Code, add a new file named *deploy/pipeline-templates/lint.yml*.
 
    :::code language="yaml" source="code/5-lint.yml" :::
+
+<!-- TODO need to mention that this doesn't happen per env -->
 
 ## Add a pipeline template for deployment
 
@@ -41,17 +43,15 @@ During the process, you'll:
 
    If the pipeline is still running, wait until it waits for the first approval. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-1. Notice that the pipeline run now shows all the stages you defined in the YAML file. Also notice that execution will stop right before your *DeployPreProd* stage.
+1. Notice that the pipeline run now shows all the stages you defined in the YAML file. Also notice that execution will stop right before your *Deploy (Production Environment)* stage.
 
-1. Approve the deploy to the preproduction environment by selecting the **Review** button.
+1. Approve the deploy to the production environment by selecting the **Review** button.
 
 1. Select the **Approve** button.
 
-1. The pipeline will continue execution until right before the *DeployProd* stage. Once it does, select again the **Review** and the **Approve** buttons to make the pipeline continue. 
+1. After your pipeline has finished execution, select the *Environments*. 
 
-1. Once your pipeline has finished execution, select the *Environments*. 
-
-1. Select your *WebsiteProd* environment. 
+1. Select the **Production** environment. 
 
 1. Notice that in the environment details screen, you get an overview of the deployments that have executed against this environment. 
 
@@ -61,4 +61,4 @@ During the process, you'll:
 
     Notice that the changes tab shows you the commits that happened for the execution of this pipeline. 
 
-You now have a pipeline that deploys to 2 environments. You will have notices however that the pipeline you ended up with is quite extensive and big. In the next section we will make this more concise again, without changing the functionality. 
+You now have a pipeline that deploys to two environments.

@@ -1,12 +1,16 @@
 parameters: 
-- name: environmentName
+- name: environmentType
   type: string
-  default: 'nonprod'
+  default: 'Test'
 
 steps:
 - script: |
-    echo Hello ${{parameters.environmentName}}!
+    echo Hello ${{parameters.environmentType}}!
 
-- ${{ if eq(parameters.environmentName, 'prod') }}:
+- ${{ if eq(parameters.environmentType, 'Production') }}:
   - script: |
-      echo This step only runs for the production deployment.
+      echo This step only runs for production deployments.
+
+- ${{ if ne(parameters.environmentType, 'Production') }}:
+  - script: |
+      echo This step only runs for non-production deployments.

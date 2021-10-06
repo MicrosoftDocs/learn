@@ -1,23 +1,23 @@
 parameters:
-- name: environmentName
+- name: environmentType
   type: string
 
 stages:
 
-- ${{ if eq(parameters.environmentName, 'NonProd') }}:
-  - stage: Validate_${{parameters.environmentName}}
-    displayName: Validate (${{parameters.environmentName}})
+- ${{ if ne(parameters.environmentType, 'Production') }}:
+  - stage: Validate_${{parameters.environmentType}}
+    displayName: Validate (${{parameters.environmentType}} Environment)
     jobs:
     - job: ValidateBicepCode
       displayName: Validate Bicep code
       variables:
-      - group: ToyWebsite${{parameters.environmentName}}
+      - group: ToyWebsite${{parameters.environmentType}}
       steps:
         - task: AzureCLI@2
           name: RunPreflightValidation
           displayName: Run preflight validation
           inputs:
-            azureSubscription: ToyWebsite${{parameters.environmentName}}
+            azureSubscription: ToyWebsite${{parameters.environmentType}}
             scriptType: 'bash'
             scriptLocation: 'inlineScript'
             inlineScript: |
@@ -28,20 +28,20 @@ stages:
                              reviewApiUrl=$(ReviewApiUrl) \
                              reviewApiKey=$(ReviewApiKey)
 
-- ${{ if eq(parameters.environmentName, 'Prod') }}:
-  - stage: Preview_${{parameters.environmentName}}
-    displayName: Preview (${{parameters.environmentName}})
+- ${{ if eq(parameters.environmentType, 'Production') }}:
+  - stage: Preview_${{parameters.environmentType}}
+    displayName: Preview (${{parameters.environmentType}} Environment)
     jobs:
     - job: PreviewAzureChanges
       displayName: Preview Azure changes
       variables:
-      - group: ToyWebsite${{parameters.environmentName}}
+      - group: ToyWebsite${{parameters.environmentType}}
       steps:
         - task: AzureCLI@2
           name: RunWhatIf
           displayName: Run what-if
           inputs:
-            azureSubscription: ToyWebsite${{parameters.environmentName}}
+            azureSubscription: ToyWebsite${{parameters.environmentType}}
             scriptType: 'bash'
             scriptLocation: 'inlineScript'
             inlineScript: |
@@ -52,14 +52,14 @@ stages:
                              reviewApiUrl=$(ReviewApiUrl) \
                              reviewApiKey=$(ReviewApiKey)
 
-- stage: Deploy_${{parameters.environmentName}}
-  displayName: Deploy (${{parameters.environmentName}})
+- stage: Deploy_${{parameters.environmentType}}
+  displayName: Deploy (${{parameters.environmentType}} Environment)
   jobs:
   - deployment: DeployWebsite
     displayName: Deploy Website
     variables:
-    - group: ToyWebsite${{parameters.environmentName}}
-    environment: ${{parameters.environmentName}}
+    - group: ToyWebsite${{parameters.environmentType}}
+    environment: ${{parameters.environmentType}}
     strategy:
       runOnce:
         deploy:
@@ -69,7 +69,7 @@ stages:
               name: DeployBicepFile
               displayName: Deploy Bicep file
               inputs:
-                azureSubscription: ToyWebsite${{parameters.environmentName}}
+                azureSubscription: ToyWebsite${{parameters.environmentType}}
                 scriptType: 'bash'
                 scriptLocation: 'inlineScript'
                 inlineScript: |
@@ -83,13 +83,13 @@ stages:
                   appServiceAppHostName=$(echo $deploymentOutput | jq -r '.properties.outputs.appServiceAppHostName.value')
                   echo "##vso[task.setvariable variable=appServiceAppHostName;isOutput=true]$appServiceAppHostName"
 
-- stage: SmokeTest_${{parameters.environmentName}}
-  displayName: Smoke Test (${{parameters.environmentName}})
+- stage: SmokeTest_${{parameters.environmentType}}
+  displayName: Smoke Test (${{parameters.environmentType}} Environment)
   jobs:
   - job: SmokeTest
     displayName: Smoke test
     variables:
-      appServiceAppHostName: $[ stageDependencies.Deploy_${{parameters.environmentName}}.DeployWebsite.outputs['DeployWebsite.DeployBicepFile.appServiceAppHostName'] ]
+      appServiceAppHostName: $[ stageDependencies.Deploy_${{parameters.environmentType}}.DeployWebsite.outputs['DeployWebsite.DeployBicepFile.appServiceAppHostName'] ]
     steps:
       - task: PowerShell@2
         name: RunSmokeTests

@@ -1,11 +1,10 @@
 parameters: 
-- name: environmentName
+- name: environmentType
   type: string
 - name: serviceConnectionName
   type: string
 - name: resourceGroupName
   type: string
-  default: 'ToyWebsite'
 
 - stage: Deploy
   jobs:
@@ -28,4 +27,4 @@ parameters:
                   az deployment group create \
                     --resource-group ${{parameters.resourceGroupName}} \
                     --template-file deploy/main.bicep \
-                    --parameters deploy/azuredeploy.parameters.${{parameters.environmentName}}.json
+                    --parameters deploy/azuredeploy.parameters.${{parameters.environmentType}}.json
