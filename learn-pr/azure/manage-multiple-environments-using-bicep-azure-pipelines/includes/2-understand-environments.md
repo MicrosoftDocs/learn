@@ -28,10 +28,6 @@ In your toy company, you decide you'll start with a basic set of environments fo
 
 You'll update your pipeline to deploy to your test environment. If that succeeds, you'll deploy to your production environment.
 
-Your pipeline will use several stages to deploy to each environment:
-
-:::image type="content" source="../media/2-stages.png" alt-text="Diagram showing a series of pipeline stages, including those for test and production deployments." border="false":::
-
 ## Pipeline environments
 
 Azure Pipelines also has the concept of an environment. You create an Azure Pipelines environment to represent the environment you have in Azure. When you define your pipeline in a YAML file, you link your deployment jobs to a specific environment. By using environments, you get a few benefits and additional features in your pipeline.

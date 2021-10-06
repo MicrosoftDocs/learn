@@ -30,7 +30,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *toy-website-environments*.
 
-    :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/4-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator."::: <!-- TODO use correct image -->
+    :::image type="content" source="../media/4-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::
 
 1. Select **Create Project**.
 
@@ -45,17 +45,17 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Repos** > **Files**.
 
-   :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/4-repos-files.png" alt-text="Screenshot of Azure DevOps that shows the Repos menu, with Files highlighted."::: <!-- TODO move to include file -->
+   :::image type="content" source="../media/4-repos-files.png" alt-text="Screenshot of Azure DevOps that shows the Repos menu, with Files highlighted.":::
 
 1. Select **Clone**.
 
-   :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/4-clone.png" alt-text="Screenshot of Azure DevOps showing the repository, with the Clone button highlighted."::: <!-- TODO use correct image -->
+   :::image type="content" source="../media/4-clone.png" alt-text="Screenshot of Azure DevOps showing the repository, with the Clone button highlighted.":::
 
 1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the username and password displayed to somewhere safe.
 
 1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
-    :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the Clone in VS Code button highlighted."::: <!-- TODO move to include file -->
+    :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the Clone in VS Code button highlighted.":::
 
 1. Create a folder to use for the repository, and then choose **Select Repository Location**.
 
@@ -183,7 +183,7 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
 1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
 
-   :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/4-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the details completed and the Next button highlighted."::: <!-- TODO create new image -->
+   :::image type="content" source="../media/4-create-service-connection-principal-details-test.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page for the test environment, with the details completed and the Next button highlighted.":::
 
    > [!TIP]
    > For simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.
@@ -194,17 +194,17 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
 1. Repeat the above process to create another new service connection named **ToyWebsiteProduction**, which deploys to the resource group named **ToyWebsiteProduction**:
 
-   :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/4-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the details completed and the Next button highlighted."::: <!-- TODO create new image -->
+   :::image type="content" source="../media/4-create-service-connection-principal-details-production.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page for the production environment, with the details completed and the Next button highlighted.":::
 
 ## Create environments in Azure Pipelines
 
 1. In your browser, go to **Pipelines** > **Environments**.
 
-   :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/7-environments.png" alt-text="Screenshot of the Azure DevOps interface that shows the Pipelines menu, with the Environments item highlighted."::: <!-- TODO use correct image>
+   :::image type="content" source="../media/4-environments.png" alt-text="Screenshot of the Azure DevOps interface that shows the Pipelines menu, with the Environments item highlighted.":::
 
 1. Select **Create environment**.
 
-   :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/7-environments-new.png" alt-text="Screenshot of the Azure DevOps interface that shows the Environments page, with the button for creating an environment highlighted."::: <!-- TODO create new image -->
+   :::image type="content" source="../media/4-environments-new.png" alt-text="Screenshot of the Azure DevOps interface that shows the Environments page, with the button for creating an environment highlighted.":::
 
 1. Enter **Test** as the environment name.
 
@@ -215,12 +215,30 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
 1. Select **Create**.
 
-   :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/7-environments-new-details.png" alt-text="Screenshot of the Azure DevOps page for a new environment, with the details completed and the Create button highlighted."::: <!-- TODO new image -->
+   :::image type="content" source="../media/4-environments-new-details-test.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Test, with the details completed and the Create button highlighted.":::
 
 1. Repeat the process to create another environment named **Production**.
 
-   :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/7-environments-new-details.png" alt-text="Screenshot of the Azure DevOps page for a new environment, with the details completed and the Create button highlighted."::: <!-- TODO new image -->
+   :::image type="content" source="../media/4-environments-new-details-production.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Production, with the details completed and the Create button highlighted.":::
 
-   > [!NOTE]
-   > You might have previously completed a Microsoft Learn module where you configured an approval check on your environment. You can optionally apply the approval check to your production environment here if you want.
-   <!-- TODO Gitte think we should make this mandatory or optional? -->
+   Leave the production environment page open.
+
+## Add an approval check to the production environment
+
+1. Near the upper right of the page, select the button with three dots and select **Approvals and checks** from the pop-up menu.
+
+   :::image type="content" source="../media/7-add-check.png" alt-text="Screenshot of the Azure DevOps interface that shows the Website environment, with the three dots button highlighted.":::
+
+1. Select **Approvals**.
+
+   :::image type="content" source="../media/7-add-check-approval.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding a check, with the Approvals item highlighted.":::
+
+1. In the **Approvers** text box, type your own name and select yourself.
+
+1. Select the arrow button next to **Advanced**.
+
+   Notice that, by default, approvers are allowed to approve the runs that they've triggered. Because you're the only person who will work with this pipeline, leave this checkbox selected.
+
+1. Select **Create**.
+
+   :::image type="content" source="../media/7-add-check-approval-details.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding an approval check, with the details completed and the Create button highlighted.":::

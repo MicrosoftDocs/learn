@@ -2,7 +2,11 @@ Even though you deploy your changes to multiple separate environments, the steps
 
 ## Deployment to multiple environments
 
-Your toy company's website pipeline includes several stages. Some of these stages are repeated between your test and production environments:
+Your toy company's website pipeline includes multiple stages:
+
+:::image type="content" source="../media/3-stages.png" alt-text="Diagram showing a series of pipeline stages, including those for test and production deployments." border="false":::
+
+Some of these stages are repeated between your test and production environments:
 
 | Stage | Environments |
 |-|-|

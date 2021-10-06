@@ -14,7 +14,7 @@ During the process you'll:
 
 1. Set up the variables as follows:
 
-   | Name | Value | |
+   | Name | Value | Type |
    |-|-|-|
    | EnvironmentType | Test | |
    | ResourceGroupName | ToyWebsiteTest | |
@@ -27,7 +27,7 @@ During the process you'll:
 
 1. Set up the variables as follows:
 
-   | Name | Value | |
+   | Name | Value | Type |
    |-|-|-|
    | EnvironmentType | Production | |
    | ResourceGroupName | ToyWebsiteProduction | |
