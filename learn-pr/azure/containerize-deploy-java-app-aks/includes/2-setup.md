@@ -1,15 +1,19 @@
 In this unit, you'll use the Azure CLI to create the Azure resources that will be needed in later units. 
 
+## Using the Azure CLI, perform the following steps
+
 > [!NOTE]
 > In an effort to preserve time, you'll instruct Azure to create the resources first and move on to the next unit. Azure Kubernetes Cluster creation can take approximately 10 minutes. This can, optionally, run in your background while you proceed through the next units.
 
-## Using the Azure CLI, perform the following steps
+###Authenticate with Azure Resource Manager
 
-Authenticate with Azure:
+Login:
 
 ```bash
 az login
 ```
+
+###Select an Azure subscription
 
 Azure subscriptions are logical containers used to provision resources in Azure. You'll need to locate the subscription id (SubscriptionId) that you plan to use in this module. List your Azure subscriptions:
 
@@ -22,6 +26,8 @@ Ensure your using an Azure subscription that allows you to create resources for 
 ```bash
 az account set --subscription "<YOUR_SUBSCRIPTION_ID>"
 ```
+
+###Define local variables
 
 To simplify the commands that will be executed further down, set up the following environment variables:
 
@@ -38,6 +44,8 @@ AZ_LOCATION=<YOUR_AZURE_REGION>
 AZ_KUBERNETES_CLUSTER_DNS_PREFIX=<YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER>
 ```
 
+###Create an Azure Resource Group
+
 Azure resource groups are Azure containers, located within Azure subscriptions, for holding related resources for an Azure solution. Create a Resource group:
 
 ```bash
@@ -52,7 +60,9 @@ az group create \
 >
 > If you don't want to use the `jq` tool, you can safely remove the `| jq` part of all commands in this module.
 
-Azure Container Registry allows you to build, store, and manage container images, which is ultimately where Docker image for the Java application will be stored. tCreate a Container registry:
+###Create a Azure Container Registry
+
+Azure Container Registry allows you to build, store, and manage container images, which is ultimately where Docker image for the Java application will be stored. Create a Container registry:
 
 ```bash
 az acr create \
@@ -75,6 +85,8 @@ Authenticate to the newly created Azure Container Registry:
 ```bash
 az acr login -n $AZ_CONTAINER_REGISTRY
 ```
+
+###Create an Azure Kubernetes Cluster
 
 You'll need an Azure Kubernetes Cluster to deploy the Java application (Docker image) to. Create an AKS Cluster:
 

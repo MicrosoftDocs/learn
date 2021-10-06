@@ -4,7 +4,7 @@ Unlike virtual machines that emulate hardware, containers run directly on top of
 
 There are multiple container runtimes. In this module, you’ll be you’ll leverage the widely used Docker runtime to build a Docker image that will ultimately, in the next unit, deploy to the host operating system of your local machine and within the Azure Kubernetes Service.
 
-## Build a Docker image
+## Docker overview
 
 The Docker runtime is used to build, run, push, and pull Docker images. The below image depicts these use cases followed by a description of each use case/Docker command.
 
@@ -16,3 +16,5 @@ The Docker runtime is used to build, run, push, and pull Docker images. The belo
 | docker pull  | Containers are initialized from images, they are pulled from registries, such as Azure Container Registry, and this is where Azure Kubernetes Service will pull from. The result of this command is a network pull of an image. |
 | docker run   | A running instance of a Docker image is a container, all of the layers needed to run and interact with the Java application are executed with this command. The result of this command is a running application process on the host operating system. |
 | docker push | Azure Container Registry will store the images so they are readily available and network close for Azure deployments and scale. |
+
+## Build a Docker image
