@@ -2,7 +2,7 @@ First, let us have a basic understanding of 3D models, Hand Menus, and UI butto
 
 ## Import 3D models
 
-The loading asset is a complex packing system. Here the asset is loaded during build time and in stereokit it's a lot easier to load a 3D model. The 3D model format must be in .gltf, .glb, .obj, .stl, ASCII .ply, procedural and texture format must be in .jpg, .png, .tga, .bmp, .psd, .gif, .hdr, .pic, equirectangular cubemap, procedural.
+The loading asset is a complex packing system. Here the asset is loaded during run time and in stereokit it's a lot easier to load a 3D model. The 3D model format must be in .gltf, .glb, .obj, .stl, ASCII .ply, procedural and texture format must be in .jpg, .png, .tga, .bmp, .psd, .gif, .hdr, .pic, equirectangular cubemap, procedural.
 
 ## Adding hand menu
 
@@ -94,7 +94,7 @@ StereoKit's user interface is based on an immediate mode approach. The prime obj
 
 ## Making a window
 
-:::image type="content" source="../media/toggle-pose.png" alt-text="Screenshot of toggle pose for the Window." lightbox="../media/toggle-pose.png":::
+:::image type="content" source="../media/toggle-pose.png" alt-text="Screenshot of toggle pose for the window." lightbox="../media/toggle-pose.png":::
 The toggle pose for the window off to the left facing to the right, as well as a float that will be utilised as a slider, are shown in the image above and the code will be added to initialization section.
 ```
 Pose  windowPose = new Pose(-.4f, 0, 0, Quat.LookDir(1,0,1));
