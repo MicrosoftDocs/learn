@@ -242,3 +242,15 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 1. Select **Create**.
 
    :::image type="content" source="../media/4-add-check-approval-details.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding an approval check, with the details completed and the Create button highlighted.":::
+
+## Delete the old environment
+
+In a previous version of the pipeline, you used a single environment named Website. Now that you've created pipeline environments that represent your new environments, you can delete the old pipeline environment.
+
+1. Go to **Pipelines** > **Environments**.
+
+1. Select the **Website** environment.
+
+1. Near the upper right of the page, select the button with three dots and select **Delete** from the pop-up menu.
+
+1. Select **Delete** to confirm the deletion.

@@ -108,11 +108,11 @@ During the process you'll:
 
 1. Make a similar change to the `PreviewAzureChanges` job:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="31-53" highlight="21-23" :::
+   :::code language="yaml" source="code/7-deploy-2.yml" range="31-53" highlight="21-23" :::
 
 1. Make a similar change to the `Deploy` job:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="55-84" highlight="26-28" :::
+   :::code language="yaml" source="code/7-deploy-2.yml" range="55-84" highlight="26-28" :::
 
 1. Commit and push your changes to your Git repository by using the following commands: 
 
