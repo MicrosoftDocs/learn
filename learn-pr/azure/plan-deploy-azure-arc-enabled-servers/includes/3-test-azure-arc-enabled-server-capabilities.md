@@ -1,8 +1,8 @@
-As you plan for deployment across Wide World Importers' thousands of servers, you are first interested in sandboxed testing of Arc-enabled servers and their capabilities. While you cannot install Azure Arc-enabled servers on an Azure VM for production scenarios, it is possible to configure Azure Arc-enabled servers to run on an Azure VM for evaluation and testing purposes only. In this walkthrough, we showcase how Azure VMs can be used to test Arc-enabled server functionalities. 
+As you prepare to deploy across Wide World Importers' thousands of machines, you are first interested in testing Azure Arc-enabled servers and its capabilities. While you cannot install Azure Arc-enabled servers on an Azure VM for production scenarios, it is possible to configure Azure Arc-enabled servers to run on an Azure VM for evaluation and testing purposes only. In this walkthrough, we showcase how Azure VMs can be used to test Azure Arc-enabled servers functionality. 
 
 ## Pre-requisites for Arc-enablement 
 
-For this walkthrough, we assume you have a Windows Server Azure VM, specifically a Windows Server 2008 R2 SP1, Windows Server 2012 R2 and higher (including Server Core). Note that Arc-enabled Servers also supports the following machine types:
+For this walkthrough, we assume you have a Windows Server Azure VM. The Windows Server Azure VM should be a Windows Server 2008 R2 SP1 or Windows Server 2012 R2 and higher (including Server Core). Note that Azure Arc-enabled servers also supports the following operating systems:
 
 - Ubuntu 16.04, 18.04, and 20.04 LTS (x64)
 - CentOS Linux 7 and 8 (x64)
@@ -13,7 +13,7 @@ For this walkthrough, we assume you have a Windows Server Azure VM, specifically
 
 ## Prepare the Azure VM for Arc-enablement
 
-Because your Azure VM is already registered and managed as an Azure resource, it is necessary to reconfigure the VM by removing extensions, disabling the Azure VM guest agent, and blocking Azure IMDS access. After you've made these three changes, your Azure VM behaves like any machine or server outside of Azure. This reconfigured Azure VM will offer a starting point to install and evaluate Azure Arc-enabled servers.
+Because your Azure VM is already registered and managed as an Azure resource, it is necessary to reconfigure the VM. Reconfiguring the VM involves removing extensions, disabling the Azure VM guest agent, and blocking Azure IMDS access. After you've made these three changes, your Azure VM behaves like any machine or server outside of Azure. This reconfigured Azure VM will offer a starting point to install and evaluate Azure Arc-enabled servers.
 
 1. Remove any VM extensions on the Azure VM.
 
