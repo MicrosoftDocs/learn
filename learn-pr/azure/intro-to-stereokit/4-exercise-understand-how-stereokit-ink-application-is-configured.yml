@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-stereokit.4-exercise-understand-how-stereokit-ink-application-is-configured
-title: Exercise-understand-how-stereokit-ink-application-is-configured
+title: Exercise understand how stereokit ink application is configured
 metadata:
-  title: Exercise-understand-how-stereokit-ink-application-is-configured
+  title: Exercise understand how stereokit ink application is configured
   description: You'll learn how to make a core application loop radial hand menus, easy window menus with automatic layout, object-based menus with more explicit layouts, and file pickers, among other things
   ms.date: 10/05/2021
   author: "Sean-Kerawala"

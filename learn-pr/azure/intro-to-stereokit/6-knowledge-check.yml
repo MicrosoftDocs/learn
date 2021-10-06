@@ -3,20 +3,20 @@ uid: learn.azure.intro-to-stereokit.6-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Three multiple-choice questions
+  description: Four multiple-choice questions
   ms.date: 09/09/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 4
 content: Choose the best response for each question. Then select Check your answers.
 quiz:
   title: Check your knowledge
   questions:
     - content: "Choose the platform on which the stereokit app locations are built?"
       choices:
-        - content: "Windows MR "
+        - content: "Windows MR"
           isCorrect: false
           explanation: Windows Mixed Reality is a mixed reality platform introduced as part of the Windows 10 operating system, which provides augmented reality and mixed reality experiences with compatible head-mounted displays.
         - content: "Hololens and Ocules Quest"
@@ -40,7 +40,7 @@ quiz:
       choices:
         - content: .NET Desktop development.
           isCorrect: false
-          explanation: NET is a software development framework and ecosystem designed and supported by Microsoft to allow for easy desktop and web application engineering.
+          explanation: .NET is a software development framework and ecosystem designed and supported by Microsoft to allow for easy desktop and web application engineering.
         - content: Universal Window Platform Development
           isCorrect: false
           explanation: Universal Windows Platform (UWP) is a computing platform created by Microsoft and first introduced in Windows 10. The purpose of this platform is to help develop universal apps that run on Windows 10, Windows 10 Mobile, Xbox One and HoloLens without the need to be rewritten for each.

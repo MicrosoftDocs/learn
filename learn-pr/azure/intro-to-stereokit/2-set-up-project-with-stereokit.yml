@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-stereokit.2-set-up-project-with-stereokit
-title: Set-up-project-with-stereokit
+title: Set up project with stereokit
 metadata:
-  title: Set-up-project-with-stereokit
+  title: Set up project with stereokit
   description: you'll learn how to set up a project on immersive experience for Windows Mixed Reality using the StereoKit
   ms.date: 10/05/2021
   author: "Sean-Kerawala"
