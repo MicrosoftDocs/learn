@@ -10,6 +10,11 @@ Now you have:
  -  Explored the SQL Server 2014 Buffer Pool Extension.
  -  Examined Oracle recommendations.
 
+You also completed labs where you:
+
+ -  Implemented Linux clustering for SAP on Azure virtual machines.
+ -  Implemented Windows clustering for SAP on Azure virtual machines.
+
 ## Learn more
 
  -  [Considerations for Azure Virtual Machines DBMS deployment for SAP workload](/azure/virtual-machines/workloads/sap/dbms_guide_general)

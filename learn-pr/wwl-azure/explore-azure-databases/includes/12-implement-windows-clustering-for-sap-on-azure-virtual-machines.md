@@ -2,7 +2,8 @@ Estimated time: 120 minutes
 
 All tasks in this lab are performed from the Azure portal (including the PowerShell Cloud Shell session).
 
-**Note:** When not using Cloud Shell, the lab virtual machine must have the [Az PowerShell](/powershell/azure/install-az-ps-msi?view=azps-2.8.0) module installed.
+> [!NOTE]
+> When not using Cloud Shell, the lab virtual machine must have the [Az PowerShell](/powershell/azure/install-az-ps-msi?view=azps-2.8.0) module installed.
 
 Lab files: none
 
@@ -23,7 +24,8 @@ After completing this lab, you will be able to:
  -  A Microsoft Azure subscription with the sufficient number of available DSv2 and Dsv3 vCPUs (one Standard\_DS1\_v2 VM with 1 vCPU and four Standard\_D4s\_v3 VMs with 4 vCPUs each) in the Azure region you intend to use for this lab.
  -  A lab computer with an Azure Cloud Shell-compatible web browser and access to Azure.
 
-**Note:** Consider using **East US** or **East US2** regions for deployment of your resources.
+> [!NOTE]
+> Consider using **East US** or **East US2** regions for deployment of your resources.
 
 ## Exercises
 
