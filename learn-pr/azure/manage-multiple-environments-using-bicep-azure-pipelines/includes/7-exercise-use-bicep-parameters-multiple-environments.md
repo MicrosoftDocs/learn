@@ -10,13 +10,15 @@ During the process you'll:
 
 ## Add variable groups
 
+TODO explain why
+
 1. In your browser, go to **Pipelines** > **Library**.
 
-   TODO ss
+   :::image type="content" source="../media/7-library.png" alt-text="TODO":::
 
 1. Select the **+ Variable group** button.
 
-   TODO ss
+   :::image type="content" source="../media/7-variable-groups-new.png" alt-text="TODO":::
 
 1. Enter **ToyWebsiteTest** as the variable group name.
 
@@ -29,7 +31,7 @@ During the process you'll:
 
    Notice you don't define the service connection name in the variable group. Service connection names have special rules about how they can be specified. In this module, you'll use pipeline template parameters.
 
-   TODO ss
+   :::image type="content" source="../media/7-variable-group-test-v1.png" alt-text="TODO":::
 
 1. Select **Save**.
 
@@ -42,7 +44,7 @@ During the process you'll:
    | EnvironmentType | Production |
    | ResourceGroupName | ToyWebsiteProduction |
 
-   TODO ss
+   :::image type="content" source="../media/7-variable-group-production-v1.png" alt-text="TODO":::
 
    Notice that the variable names are the same for both environments, but the values are different.
 
@@ -124,20 +126,24 @@ During the process you'll:
    | ReviewApiKey | sandboxsecretkey |
    | ReviewApiUrl | https://sandbox.contoso.com/reviews |
 
+   :::image type="content" source="../media/7-variable-group-test-v2.png" alt-text="TODO":::
+
 1. Select the padlock icon next to the **ReviewApiKey** variable. This tells Azure Pipelines to treat the variable's value securely.
 
-   TODO SS
+   :::image type="content" source="../media/7-variable-group-test-v3.png" alt-text="TODO":::
 
 1. Save the variable group.
 
 1. Update the **ToyWebsiteProduction** variable group to add a similar set of variables:
 
-   | Name | Value | Type |
-   |-|-|-|
-   | ReviewApiKey | productionsecretkey | Secret |
-   | ReviewApiUrl | https://api.contoso.com/reviews | |
+   | Name | Value |
+   |-|-|
+   | ReviewApiKey | productionsecretkey |
+   | ReviewApiUrl | https://api.contoso.com/reviews |
 
-   TODO SS
+   Remember to select the padlock icon next to the **ReviewApiKey** variable.
+
+   :::image type="content" source="../media/7-variable-group-test-v2.png" alt-text="TODO":::
 
 1. Save the variable group.
 
@@ -200,11 +206,11 @@ During the process you'll:
 
    Select **Configuration**.
 
-   TODO SS
+   :::image type="content" source="../media/7-app-service-configuration.png" alt-text="TODO":::
 
 1. Select **Show values**.
 
-   TODO SS
+   :::image type="content" source="../media/7-app-service-settings.png" alt-text="TODO":::
 
    Notice that the production site's values for the **ReviewApiKey** and **ReviewApiUrl** settings are set to the values you configured in the production variable group.
 

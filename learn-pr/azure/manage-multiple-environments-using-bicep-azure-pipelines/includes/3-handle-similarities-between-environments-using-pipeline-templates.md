@@ -18,6 +18,8 @@ Some of these stages are repeated between your test and production environments:
 
 When you need to repeat steps in your pipeline, you might try to copy and paste your step definitions. However, this isn't a good practice. It's easy to accidentally make subtle mistakes or for things to get out of sync when you duplicate your pipeline's code. And in the future, when you need to make a change to the steps, you have to remember to apply the change in multiple places.
 
+<!-- TODO explain why running whatif instead of validate for prod -->
+
 ## Pipeline templates
 
 *Pipeline templates* enable you to create reusable sections of pipeline definitions. Templates can define steps, jobs, or even entire stages. You can use templates to reuse definitions multiple times in a single pipeline, or even in multiple pipelines. You can also create a template for a set of variables you want to reuse in multiple pipelines.
