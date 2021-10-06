@@ -12,17 +12,17 @@ The following diagram shows what applications will be running on the Azure Spher
 
 :::image type="content" source="../media/azure-sphere-app-architecture.png" alt-text="Diagram that shows the Altair on Azure Sphere application architecture." border="false":::
 
-1. The **Altair emulator** high-level application is responsible for running the Altair emulator and managing communications.
+- The **Altair emulator** high-level application is responsible for running the Altair emulator and managing communications.
 
-    * The Altair project is a dual communications stack project. The built-in Azure IoT C SDK is used for communications with IoT Central. The Altair emulator's stdin, stdout, and disk requests are passed over MQTT and a back-end MQTT broker.
+  - The Altair project is a dual communications stack project. The built-in Azure IoT C SDK is used for communications with IoT Central. The Altair emulator's stdin, stdout, and disk requests are passed over MQTT and a back-end MQTT broker.
 
-1. The **Altair disk cache service** real-time application.
+- The **Altair disk cache service** real-time application.
 
-    * The disk cache service application provides Cache-Aside services using a Least Recently Used eviction policy for the Altair emulator virtual file system. The Altair emulator uses the cache to improve virtual disk performance. The cache-aside pattern is useful in a wide range of scenarios. For example, you could cache Price Look-Up codes for retail solutions.
+  - The disk cache service application provides Cache-Aside services using a Least Recently Used eviction policy for the Altair emulator virtual file system. The Altair emulator uses the cache to improve virtual disk performance. The cache-aside pattern is useful in a wide range of scenarios. For example, you could cache Price Look-Up codes for retail solutions.
 
-1. The **Altair SD Card service** real-time application.
+- The **Altair SD Card service** real-time application.
 
-    * SD card support for the Altair emulator for the Avnet Azure Sphere Starter Kits with the MikroE microSD Click. The MikroE microSD Click must be plugged into socket 1 on the Avnet Azure Sphere Starter Kit.
+  - SD card support for the Altair emulator for the Avnet Azure Sphere Starter Kits with the MikroE microSD Click. The MikroE microSD Click must be plugged into socket 1 on the Avnet Azure Sphere Starter Kit.
 
 ## What will you learn?
 
