@@ -56,22 +56,18 @@ During the process you'll:
 
 1. In the `ValidateBicepCode` job, import the variable group, use variables instead of parameters where possible, and add the API parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="7-29" highlight="6-7, 21-23" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="7-29" highlight="7-8, 19, 21-23" :::
 
    > [!TIP]
    > Make sure you add the `\` at the end of the environmentType
 
 1. Make a similar change to the `PreviewAzureChanges` job:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="33-51" highlight="6-7, 21-23" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="31-53" highlight="7-8, 19, 21-23" :::
 
 1. Make a similar change to the `Deploy` job:
 
    :::code language="yaml" source="code/7-deploy.yml" range="55-84" highlight="6-7, 24, 26-28" :::
-
-1. In the `SmokeTest` job, import the variable group and adjust the way you define the `appServiceAppHostName` variable:
-
-   :::code language="yaml" source="code/7-deploy.yml" range="86-115" highlight="6-9" :::
 
 ## Update the pipeline definition to simplify the parameter list
 

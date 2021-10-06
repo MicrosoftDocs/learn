@@ -89,9 +89,7 @@ stages:
   - job: SmokeTest
     displayName: Smoke test
     variables:
-    - group: ToyWebsite${{parameters.environmentName}}
-    - name: appServiceAppHostName
-      value: $[ stageDependencies.Deploy_${{parameters.environmentName}}.DeployWebsite.outputs['DeployWebsite.DeployBicepFile.appServiceAppHostName'] ]
+      appServiceAppHostName: $[ stageDependencies.Deploy_${{parameters.environmentName}}.DeployWebsite.outputs['DeployWebsite.DeployBicepFile.appServiceAppHostName'] ]
     steps:
       - task: PowerShell@2
         name: RunSmokeTests
