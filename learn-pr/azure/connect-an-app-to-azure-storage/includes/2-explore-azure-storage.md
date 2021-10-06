@@ -11,7 +11,7 @@ Microsoft Azure Storage is a *managed* service that provides *durable*, *secure*
 
 A single Azure subscription can host up to 200 storage accounts, each of which can hold 500 TB of data.
 
-## Data types in Azure storage services 
+## Data types in Azure storage services
 
 Azure storage includes four types of data:
 
@@ -24,7 +24,7 @@ All of these data types in Azure Storage are accessible from anywhere in the wor
 
 ### Blobs
 
-Azure Blob storage is an object storage solution optimized for storing massive amounts of unstructured data, such as text or binary data. Blob storage is ideal for:
+Azure Blob Storage is an object storage solution optimized for storing massive amounts of unstructured data, such as text or binary data. Blob Storage is ideal for:
 
 - Serving images or documents directly to a browser, including full static websites.
 - Storing files for distributed access.
@@ -50,7 +50,7 @@ Azure File storage enables you to set up highly available network file shares th
 
 ### Queues
 
-Azure Queue storage is used to store and retrieve messages. Queue messages can be up to 64 KB in size, and a queue can contain millions of messages. Queues are used to store lists of messages to be processed asynchronously.
+Azure Queue Storage is used to store and retrieve messages. Queue messages can be up to 64 KB in size, and a queue can contain millions of messages. Queues are used to store lists of messages to be processed asynchronously.
 
 You can use queues to loosely connect different parts of your application together. For example, we could perform image processing on the photos uploaded by our users. Perhaps we want to provide some sort of face detection or tagging capability, so people can search through all the images they have stored in our service. We could use queues to pass messages to our image-processing service to let it know that new images have been uploaded and are ready for processing. This sort of architecture would allow you to develop and update each part of the service independently.
 
