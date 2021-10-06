@@ -9,7 +9,7 @@ During the process, you'll:
 
 ## Add a pipeline template for the lint stage
 
-1. Add a new file named *deploy/pipeline-templates/lint.yml*.
+1. In Visual Studio Code, add a new file named *deploy/pipeline-templates/lint.yml*.
 
    :::code language="yaml" source="code/5-lint.yml" :::
 
