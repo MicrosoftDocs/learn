@@ -2,7 +2,8 @@
 
 When you're applying for an internship, a strong, attractive resume is the first step in getting recruiters and hiring managers to notice you. Whether your application gets seen or overlooked hinges on how you present your job and life experiences.
 
-Recruiters scan hundreds of resumes daily. Although they do look at every resume submitted for a role, only those that catch their eye will get their full attention. Therefore, it's important to ensure that your resume complies in both format and content to what recruiters are looking for. 
+> [!NOTE]
+> Recruiters scan hundreds of resumes daily. Although they do look at every resume submitted for a role, only those that catch their eye will get their full attention. Therefore, it's important to ensure that your resume complies in both format and content to what recruiters are looking for.
 
 ## What to look for in the job description
 
@@ -77,7 +78,7 @@ Suppose you worked on a Python class project that required bug fixing for a calc
 
 Although this example does describe your work on the project, it sounds like a basic project, not an important one, and fails to showcase you as an individual. 
 
-By rephrasing it to focus on your impact, however, you'll demonstrate your skills and impact far more effectively. Try something like the following:
+By rephrasing it to focus on your impact, however, you'll demonstrate your skills and impact far more effectively. Try something like the following approach:
 
 > Calculator Class Project - Example University 2020
 > 
@@ -97,7 +98,7 @@ Luckily, describing a non-technical experience can be similar to describing tech
 
 > You are a member of a gardening club, where you care for some of the plants at the club's nursery, participate in bi-weekly meetings, and provide assistance in some of the events held by the club.
 
-By using the description template, you could write some bullet points like the following:
+By using the description template, you could write some bullet points like the following ones:
 
 > - Maintained the club's nursery by monitoring and caring for X different plant species, in collaboration with X other members.
 > - Managed X club activities by attending bi-weekly club meetings, communicating and discussing ideas, and scheduling number events.

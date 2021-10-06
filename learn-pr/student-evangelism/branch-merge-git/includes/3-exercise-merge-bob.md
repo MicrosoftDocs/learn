@@ -10,10 +10,10 @@ While Alice is working on CSS for the website, Bob is working away at home, blis
 
     ```
 
-1. Download the zip file that contains [some website resources](https://topcs.blob.core.windows.net/public/git-resources.zip?azure-portal=true). Then, unzip the resource files:
+1. Download the zip file that contains [some website resources](https://github.com/MicrosoftDocs/mslearn-branch-merge-git/raw/main/git-resources.zip). Then, unzip the resource files:
 
     ```bash
-    wget https://topcs.blob.core.windows.net/public/git-resources.zip
+    wget https://github.com/MicrosoftDocs/mslearn-branch-merge-git/raw/main/git-resources.zip
     unzip git-resources.zip
 
     ```

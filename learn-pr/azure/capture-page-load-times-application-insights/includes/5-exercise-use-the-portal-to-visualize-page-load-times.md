@@ -7,9 +7,9 @@ Now that Application Insights has been enabled for your web app, you'll analyze 
 
 To generate some data to view in Application Insights, we'll simulate some user activity. We'll do this manually.
 
-1. In the Azure portal, search for and select the web app (service) you created in the previous exercise.
+1. If not already on your web app, from the Azure portal, search for **App Services**, and then select the web app that you created in the previous exercise.
 
-1. On the **Overview** page, in the top menu bar, select **Browse**. The web app opens in a new browser tab.
+1. On the **Overview** pane, in the command bar, select **Browse**. The web app opens in a new browser tab.
 
 1. Reload the web page ten times.
 
@@ -35,11 +35,11 @@ Now you'll examine page load times for the previous thirty minutes in a scatter 
 
     The **Application Insights** pane appears.
 
-1. In the left menu pane, under **Monitoring**, select **Metrics**. The **Metrics** pane appears for your *Application Insights*.
+1. In the Application Insights menu, under **Monitoring**, select **Metrics**. The **Metrics** pane appears for your *Application Insights*.
 
-1. In the top menu bar to the far right, select **Last 24 hours (Automatic)**.
+1. In the command bar, select **Last 24 hours (Automatic)**.
 
-1. In the dropdown dialog box, select **Last 30 minutes** and then select **Apply**.
+1. In the dropdown list, select **Last 30 minutes**, and then select **Apply**.
 
 1. In the **Metric Namespace** dropdown list, under **STANDARD**, select **Application Insights standard metrics**.
 

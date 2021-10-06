@@ -16,7 +16,7 @@ abstract: |
   - Describe what Event Hubs is
   - Define scenarios where Event Hubs can be applied
 prerequisites: A basic familiarity with Azure
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/intro-to-event-hubs.svg
 levels:
 - beginner
 roles:
