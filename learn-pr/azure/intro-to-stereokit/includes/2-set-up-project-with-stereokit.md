@@ -1,10 +1,10 @@
-The first step to set up a project on immersive experience for Windows Mixed Reality using the StereoKit requires Visual Studio 2019. 
+The first step to set up a project on immersive experience for Windows Mixed Reality using the StereoKit requires Visual Studio 2019.
 
 ## Steps to install visual studio for StereoKit
 
 1. Download the free edition of Visual Studio Community and ensure to get the Visual Studio membership if you don't have it already.
 Below image shows how the download button might look.
-If you have the Visual Studio subscription already, you can proceed to download Visual Studio by clicking on the provided following link: https://developer.microsoft.com/en-us/windows/downloads 
+If you have the Visual Studio subscription already, you can proceed to download Visual Studio by clicking on the provided following [link](https://developer.microsoft.com/windows/downloads)
 :::image type="content" source="../media/visual-studio-community.png" alt-text="The screenshot shows how to begin your download, by clicking the “Free download” button from Visual Studio Community." lightbox="../media/visual-studio-community.png":::
 
 2. Save the Visual Studio installer to your desired path. Once the download is complete, you can start the installation process by running the Visual Studio installer. Below image shows how the installation appears in the Microsoft Edge browser when you execute it.
