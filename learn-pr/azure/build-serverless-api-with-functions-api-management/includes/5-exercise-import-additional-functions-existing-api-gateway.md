@@ -108,11 +108,11 @@ We can use the `curl` command-line tool to submit requests to our API. cURL is i
 
 1. In the **Essentials** section, hover over the **Gateway URL** and select the **Copy to clipboard** icon.
 
-1. In The Azure Cloud Shell to the right, run the following command, replacing <paste URL here> placeholder with the **URL** value that you copied to your clipboard, and then press <kbd>Enter</kbd>.
+1. In The Azure Cloud Shell to the right, run the following command, replacing `<paste URL here>` placeholder with the **URL** value that you copied to your clipboard, and then press <kbd>Enter</kbd>.
 
     ```bash
     GATEWAY_URL=<paste URL here>
-        ```
+    ```
 
 1. In Azure, on the OrderFunction API Management service menu, scroll down to **API**, and select **Subscriptions**. The **Subscriptions** pane appears for your OrderFunction-apim instance.
 
