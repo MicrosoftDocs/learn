@@ -12,7 +12,7 @@
               name: DeployBicepFile
               displayName: Deploy Bicep file
               inputs:
-                azureSubscription: $(ServiceConnectionName) # TODO use parameter
+                azureSubscription: MyServiceConnection
                 scriptType: 'bash'
                 scriptLocation: 'inlineScript'
                 inlineScript: |

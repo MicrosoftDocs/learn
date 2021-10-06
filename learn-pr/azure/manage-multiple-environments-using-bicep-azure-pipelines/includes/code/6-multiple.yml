@@ -17,7 +17,7 @@ stages:
               name: DeployBicepFile
               displayName: Deploy Bicep file
               inputs:
-                azureSubscription: $(ServiceConnectionName) # TODO needs to be specified by using a param
+                azureSubscription: MyServiceConnection
                 scriptType: 'bash'
                 scriptLocation: 'inlineScript'
                 inlineScript: |
