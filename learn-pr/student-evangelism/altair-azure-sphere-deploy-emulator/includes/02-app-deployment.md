@@ -17,7 +17,7 @@ The Altair emulator file system redirects disk read and write requests for drive
 
 Disk reads work as follows:
 
-1. The Altair emulator file sytsem first checks if the disk sector is available from the disk cache-aside service. The cache-aside service uses a [hash table](https://en.wikipedia.org/wiki/Hash_table?azure-portal=true) to quickly locate the requested disk sector in memory.
+1. The Altair emulator file system first checks if the disk sector is available from the disk cache-aside service. The cache-aside service uses a [hash table](https://en.wikipedia.org/wiki/Hash_table?azure-portal=true) to quickly locate the requested disk sector in memory.
 1. If the disk sector is found in the cache, then the sector is returned to the Altair emulator. Getting sectors from the cache is much faster than requesting the sector from the virtual disk server.
 1. If the disk sector is not found in the cache, then the Altair emulator file system requests the disk sector from the virtual disk server.
 1. When the virtual disk server returns the disk sector, it is added to the disk sector cache. The sector is then returned to the Altair emulator for processing.

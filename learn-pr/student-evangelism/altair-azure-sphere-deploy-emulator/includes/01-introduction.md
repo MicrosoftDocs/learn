@@ -1,4 +1,4 @@
-Welcome to the cloud-connected Altair 8800 on Azure Sphere learning path. In this module, you will learn how to deploy the Altair emulator to your Azure Sphere.
+Welcome to the cloud-connected Altair 8800 on Azure Sphere learning path. In this module, you'll learn how to deploy the Altair emulator to your Azure Sphere.
 
 ## Scenario: Deploying applications to Azure Sphere
 

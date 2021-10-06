@@ -3,7 +3,7 @@ uid: learn.student-evangelism.altair-azure-sphere-deploy-emulator
 metadata:
   title: Deploy the Altair emulator to Azure Sphere
   description: Learn how to deploy the Altair 8800 emulator to Azure Sphere.
-  ms.date: 08/30/2021
+  ms.date: 10/01/2021
   author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
