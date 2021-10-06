@@ -6,13 +6,9 @@ The loading asset is a complex packing system. Here the asset is loaded during b
 
 ## Adding hand menu
 
-## Using hands
+When it comes to user interaction in StereoKitInk, it carries a hands-first approach. when hand-sensors aren’t available, hand data is simulated instead using existing devices. Consider an example, as we mice Windows Mixed Reality Controllers will switch between pre-recorded hand positions based on button pushes thus you'll get to work with fully riched articulated hand data.
 
-When it comes to user interaction, StereoKit carries a hands-first approach. when hand-sensors aren’t available, hand data is simulated instead using existing devices. Consider an example, as we mice Windows Mixed Reality Controllers will switch between pre-recorded hand positions based on button pushes thus you'll get to work with fully riched articulated hand data.
-
-## Accessing joints
-
-## Hand with joints
+## Accessing hand with joints
 
 Hands are the salient feature in human interaction. Access the below defined code to find the finger tip of right hand, if IsTracked is ignored then the last known position of fully joint is given or specifed.
 
@@ -30,7 +26,7 @@ if you perfer calling function instead of operator you can call using the below 
  hand.Get(FingerId.Index, JointId.Tip)
 ```
 
-Pinching and Gripping are other easily accessible functions, where to pinch the frame, use the JustPinched function, and unpinch the frame using the JustUnpinched function. The below code snippet explains the pinching and gripping functionalities.
+StereoKitInk supports other easily accessible functions such as pinching and gripping, where to pinch the frame, use the JustPinched function, and unpinch the frame using the JustUnpinched function. The below code snippet explains the pinching and gripping functionalities.
 
 ```
 if (hand.IsPinched) { }
@@ -44,7 +40,7 @@ if (hand.IsJustUngripped) { }
 
 ## Hand menu
 
-Let's say you want to develop a hand menu, and you want to know if the user is gazing at their palm. so here is an example of determining this using the palm's position and the dot product.
+Let's say you want to develop a hand menu, and you want to know if the user is gazing at their palm in stereokitInk. So here is an example of determining this using the palm's position and the dot product.
 
 ```
 static bool HandFacingHead(Handed handed)
@@ -94,8 +90,6 @@ Lastly, StereoKit features a pointer system. Pointers are not constrained only t
 
 ## Creating UI buttons
 
-## Immediate mode UI
-
 StereoKit's user interface is based on an immediate mode approach. The prime objective of UI APIs is to provide you with a more efficient and functional running environment. You can also define UI on each frame. As the little amount of state is maintained, you may easily add, remove, and alter your UI elements using simple and standard code structures. The fact that you'll have to maintain track of the state yourself is a significant drawback.
 
 ## Making a window
@@ -113,14 +107,14 @@ Sprite powerSprite = Sprite.FromFile("power.png", SpriteType.Single);
 
 As a base unit, StereoKit uses metres. Consider the case of a window that is tilted to 20 cm wide and auto-resizes on the Y axis, the U class comes in handy here because it helps us to reason visually about the units we're working with.
 
-We use a toggle to trun the windows header on and off and the value from that toggle is passed via the showHeader field as shown in the code below.
+We can toggle to trun the windows header on and off and the value from that toggle is passed via the showHeader field as shown in the code below.
 ```
 UI.WindowBegin("Window", ref windowPose, new Vec2(20, 0) * U.cm, showHeader?UIWin.Normal:UIWin.Body);
 ```
 
-When you start a window, all visual elements are now local to that window. UI uses the Hierarchy class to push the window's pose into the Hierarchy stack. The pose will be dropped from the hierarchy stack when you close the window, restoring everything to normal. Based on user interaction, the UI element will update the values; also, you can add the values manually if required.
+When you start a window in StereoKitInk application, all visual elements are now local to that window. UI uses the Hierarchy class to push the window's pose into the Hierarchy stack. The pose will be dropped from the hierarchy stack when you close the window, restoring everything to normal. Based on user interaction, the UI element will update the values; also, you can add the values manually if required.
 
-The UI keeps the next item on the same line on the same line and starts with the label element. The slider interval is set to 0.2 with the range [0,1]. Thus, you can step the value to 0 to slide it continuously as shown below.
+The UI keeps the next item on the same line and starts with the label element. The slider interval is set to 0.2 with the range [0,1]. Thus, you can step the value to 0 to slide it continuously as shown below.
 ```
 UI.Label("Slide");
 UI.SameLine();
@@ -141,7 +135,7 @@ In order to create the clipboard to attach the interface refer the below code sn
 Model clipboard = Model.FromFile("Clipboard.glb");
 ```
 
-Similar to the pervious, heres how you can transfrom it into grabble interface. This behaves the same, except we’re defining where the grabbable region more precisely and draw our own model using an identity matrix instead of plain bar. use HandleBegin function as shown below to push the handle’s pose onto the Hierarchy transform stack.
+Similar to the pervious, heres how you can transfrom it into grabble interface. This behaves the same, except we’re defining where the grabbable region more precisely and draw our own model using an identity matrix instead of plain bar. Use HandleBegin function as shown below to push the handle’s pose onto the Hierarchy transform stack.
 ```
 UI.HandleBegin("Clip", ref clipboardPose, clipboard.Bounds);
 Renderer.Add(clipboard, Matrix.Identity);
