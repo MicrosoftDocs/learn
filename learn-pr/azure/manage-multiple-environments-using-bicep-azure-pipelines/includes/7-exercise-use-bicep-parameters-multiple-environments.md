@@ -21,6 +21,8 @@ During the process you'll:
    | ReviewApiKey | mysecretnonprod |
    | ReviewApiUrl | https://sandbox.contoso.com/reviews |
 
+   Notice you don't define the service connection name in the variable group. Service connection names have special rules about how they can be specified. In this module, you'll use pipeline template parameters.
+
 1. Create another new variable group named ToyWebsiteProdX.
 
 1. Set up the variables as follows:
