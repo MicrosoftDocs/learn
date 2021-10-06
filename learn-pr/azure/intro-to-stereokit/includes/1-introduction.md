@@ -18,4 +18,4 @@ StereoKit focuses on non-game Mixed Reality use cases, making it a better fit fo
 
 * Physics - It enables the 3D object to function as a real-world object, along with all physical constraints.
 
-* StereoKit, by default, uses a Flexible shader or material system with a built-in PBR.
+* StereoKit, by default, uses a flexible shader or material system with a built-in PBR.
