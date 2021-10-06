@@ -29,7 +29,7 @@ In this module you will:
 - Admin access to an Azure Active Directory (Azure AD) tenant
 - macOS: [PowerShell for Mac](/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6)
 - Windows OS: PowerShell (built in)
-- The [Azure CLI](/cli/azure/install-azure-cli)
+- [Azure CLI](/cli/azure/install-azure-cli)
 - [.NET Core 3.1](https://dotnet.microsoft.com/download)
 - [Visual Studio Code](https://code.visualstudio.com)
 - [C# for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)

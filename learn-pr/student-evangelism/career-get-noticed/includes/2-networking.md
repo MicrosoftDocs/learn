@@ -26,9 +26,27 @@ Not at all! Connecting with others online is a well-established and common way t
 
 There are numerous ways to get started with networking. The following sections present just a few of them.
 
+### Be active on Linked In
+
+You can do a lot of networking from your computer. Linked In has a vast network with both technical peers and also the companies you might want to work for one day. It's a good idea to:
+
+- **Reach out**: reach out to people with similar interests and location, they might be your colleagues one day. Start with people you know and then friends of friends.
+
+   > [!TIP]
+   > Prefer to send invites to people you've met in real life. Remind people where you've met them, if you saw them speak or do a workshop or similar and you thought they did something well. Genuine compliments will take you far.
+
+- **Join a group of your interest**:, within your field of interest, join a group. Participate in discussions and give compliments if someone posts on a piece of content you've enjoyed.
+
+   > [!TIP]
+   > Remember to be respectful, others might not have your context, or they your context. Explain why you have a certain opinion.
+
+- **Share your network with others**:. As you grow your network, share both connections and network tips with others, that's how you grow your network on Linked In.
+
+- **Post about your projects**: If you have a project you've made on GitHub for example, that you find is of good quality, well documented and so on, it's a good idea to write a short article on it and post in on Linked In.
+
 ### Join a student organization
 
-Student organizations provide some of the best opportunities for networking. Their members can interact with you as peers and will most likely share common interests with you. Connecting with them and learning about their experiences while also sharing your own is a great first step in networking. 
+Student organizations provide some of the best opportunities for networking. Their members can interact with you as peers and will most likely share common interests with you. Connecting with them and learning about their experiences while also sharing your own is a great first step in networking.
 
 Participating and collaborating in student organizations will help you develop incredibly valuable life skills, such as communication, time management, and teamwork, through service projects, excursions, hackathons, and other events.
 
@@ -100,7 +118,7 @@ Why participate, what's in it for me?
 
 - **Realize your passion**. The best ideas are the ones that are built. Transform your ideas into solutions with help along the way.  You never know, your idea could be the winning project.  
 
-You could win: 
+You could win:
 
 - Mentorship from Microsoft experts
 - Networking with industry pros

@@ -17,7 +17,7 @@ Storage account connection strings include the account key. The account key is c
 
 ## Initialize the Blob storage object model
 
-In the Azure Storage SDK for .NET, the standard pattern for using Blob storage consists of the following steps:
+In the Azure Storage SDK for .NET, the standard pattern for using Blob Storage consists of the following steps:
 
 1. Instantiate a new `BlobServiceClient` object and provide the connection string to your storage account.
 
@@ -30,13 +30,13 @@ BlobServiceClient blobServiceClient = new BlobServiceClient(storageConfig.Connec
 BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(storageConfig.FileContainerName);
 ```
 
-None of this initialization code makes calls over the network. This means that some exceptions that occur because of incorrect information won't be thrown until later. For example, if an incorrectly formatted connection string is supplied to the constructor of the `BlobServiceClient` class, an exception will throw an exception immediately.  However, if the connection string points to a  storage account that does not exist, no exception will be thrown until you attempt an operation against the storage account.
+None of this initialization code makes calls over the network. This means that some exceptions that occur because of incorrect information won't be thrown until later. For example, if an incorrectly formatted connection string is supplied to the constructor of the `BlobServiceClient` class, an exception will throw an exception immediately.  However, if the connection string points to a storage account that does not exist, no exception will be thrown until you attempt an operation against the storage account.
 
 ## Create containers at startup
 
 To create a container when your app starts or when it first tries to use it, call `CreateIfNotExistsAsync` on a `BlobContainerClient`.
 
-`CreateIfNotExistsAsync` won't throw an exception if the container already exists, but it does make a network call to Azure Storage. Call it once during initialization, not every time you try to use a container.
+`CreateIfNotExistsAsync` won't throw an exception if the container already exists, but it does make a network call to Azure Blob Storage. Call it once during initialization; not every time you try to use a container.
 
 ## Exercise
 
@@ -69,7 +69,7 @@ To create a container when your app starts or when it first tries to use it, cal
     dotnet restore
     ```
 
-    This will make sure we're using the newest version of the Blob storage client library.
+    This will make sure we're using the newest version of the Blob Storage client library.
 
 ### Configure
 

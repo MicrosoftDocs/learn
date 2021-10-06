@@ -43,11 +43,11 @@ An example of a properly written education section might look like this:
 
 ## Skills
 
-This section is usually short, consisting of specific bullet points where you assess your skills. In this section, you showcase your technical skills, carefully matching them with the required skills that are listed in the job posting. You'll want to combine your skills into subgroups and ensure that they are related to one another. For example, programming languages should be grouped together.  
+This section is short, consisting of specific bullet points where you assess your skills. In this section, you showcase your technical skills, carefully matching them with the required skills that are listed in the job posting. You'll want to combine your skills into subgroups and ensure that they are related to one another. For example, programming languages should be grouped together.  
 
 In addition to listing your skills, you'll want to match your description of proficiencies to that of the job posting. For example, if the job posting asks for years of experience, write your years of experience in the bullet points. However, if the posting asks for intermediate or beginner proficiency, write your skills in accordance to that format. This approach applies mainly to online applications, where your resume will likely be scanned for the most relevant keywords. You'll find that matching and tailoring your resume to each job poster's keywords and requirements will make you stand out better.
 
-A skills section should look similar to the following:
+A skills section should look similar to the following example:
 
 > #### Skills
 > 
@@ -97,3 +97,19 @@ The following guidelines can assist you in formatting both subsections:
 
 > [!TIP]
 > Do not add periods at the end of your bullet points. It helps with the flow of reading and allows recruiters to read further without feeling the need to stop too often.
+
+## Create a Linked In profile
+
+It's easy to think that just because you have built a resume, it stays a word document or PDF file. Also that it's something you only send out if you actively apply for a position. Your resume can live on linked in as well. The benefit is that recruiters and companies can find you instead of you chasing them. Many times, this is where companies advertise for people to work with them, smaller roles that can be combined with studying but also full-time positions for when you've graduated.
+
+Therefore, [create a linked in profile](https://www.linkedin.com/). Once you have a profile, ensure you are filling out information on:
+
+- **Location**. Filling in your location will make it easier for Linked In to filter what positions to show you and it will also make it easier for recruiters to find you, as they often run queries based on location.
+
+- **Education**. Even if you started an education, it's important to fill this out, don't forget planned graduation year.
+
+- **Experiences**. You will likely gain experiences while studying, fill them in and don't forget about the impact you had and what you learned.
+
+- **About**. This field gives anything watching your profile a good sense of who you are and what you want to accomplish. Filling this section out might make you stick out.
+
+- **Activity**. It's a good idea to keep an active profile, if you wrote a blog post or created a project, tell the world.

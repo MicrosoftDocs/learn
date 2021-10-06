@@ -24,7 +24,7 @@ Let's create a function app in the Azure portal.
 
 ::: zone pivot="javascript"
 
-1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you activated for the sandbox.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you used to activate the sandbox.
 
 1. Under **Azure services**, select **Create a resource**.
 
@@ -32,7 +32,7 @@ Let's create a function app in the Azure portal.
 
     The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and then select **Function App** in the *Popular offers* list. The **Create Function App** pane appears.
+1. In the menu, select **Compute**, and then select **Function App** in the *Popular products* list. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -42,9 +42,9 @@ Let's create a function app in the Azure portal.
     | Subscription | Concierge Subscription |
     | Resource Group | From the dropdown list, select **<rgn>[sandbox resource group name]</rgn>** |
     | **Instance Details** |
-    | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the seven (7) x's can be replaced with your initials and your birth year. If this isn't globally unique, try any other combination. Valid characters are a-z, 0-9 and - |
+    | Function App name  | Enter a globally unique app name, which becomes part of the base URL of your service. For example, you can name it **escalator-functions-xxx**, where xxx can be replaced with your initials and a number. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
-    | Runtime stack | Node.js (which is the language in which we implement the function examples in this exercise). |
+    | Runtime stack | Node.js (which is the language we use to implement the function examples in this exercise). |
     | Version | Accept *default* |
     | Region | Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function. |
 
@@ -54,7 +54,7 @@ Let's create a function app in the Azure portal.
 
 ::: zone pivot="powershell"
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account as you activated for the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. Under **Azure services**, select **Create a resource**.
 
@@ -64,7 +64,7 @@ Let's create a function app in the Azure portal.
 
     The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and then select **Function App** in the *Popular offers* list. The **Create Function App** page appears.
+1. In the menu, select **Compute**, and then select **Function App** in the *Popular products* list. The **Create Function App** page appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -74,9 +74,9 @@ Let's create a function app in the Azure portal.
     | Subscription | Concierge Subscription |
     | Resource Group | From the dropdown list, select **<rgn>[sandbox resource group name]</rgn>** |
     | **Instance Details** |
-    | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the seven (7) x's can be replaced with your initials and your birth year. If this isn't globally unique, try any other combination. Valid characters are a-z, 0-9 and - |
+    | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxx**, where xxx can be replaced with your initials and a number. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
-    | Runtime stack | Node.js (which is the language in which we implement the function examples in this exercise). |
+    | Runtime stack | Node.js (which is the language we use to implement the function examples in this exercise). |
     | Version | Accept *default* |
     | Region | Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function. |
 
@@ -86,6 +86,6 @@ Let's create a function app in the Azure portal.
 
 ## Verify your Azure function app
 
-1. When deployment completes, select **Go to resource**. Your Function App pane appears.
+1. When deployment completes, select **Go to resource**. The Function App pane for your escalator function appears.
 
 1. In the **Essentials** section, select the **URL** link to open it in a browser. A default web page appears that indicates your Function App is up and running.
