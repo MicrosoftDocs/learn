@@ -221,3 +221,4 @@ Next, create two service connections in Azure Pipelines - one for your non-produ
 
    > [!NOTE]
    > You might have previously completed a Microsoft Learn module where you configured an approval check on your environment. You can optionally apply the approval check to your production environment here if you want.
+   <!-- TODO Gitte think we should make this mandatory or optional? -->

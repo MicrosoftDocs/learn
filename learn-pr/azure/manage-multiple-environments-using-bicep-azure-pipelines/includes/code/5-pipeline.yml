@@ -1,0 +1,30 @@
+trigger:
+  branches:
+    include:
+    - main
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+
+# Lint the Bicep file.
+- stage: Lint
+  jobs: 
+  - template: pipeline-templates/lint.yml
+
+# Deploy to the non-production environment.
+- template: pipeline-templates/deploy.yml
+  parameters:
+    environmentName: NonProd
+    environmentType: Test
+    resourceGroupName: ToyWebsiteNonProd
+    serviceConnectionName: ToyWebsiteNonProd
+
+# Deploy to the production environment.
+- template: pipeline-templates/deploy.yml
+  parameters:
+    environmentName: Prod
+    environmentType: Production
+    resourceGroupName: ToyWebsiteProd
+    serviceConnectionName: ToyWebsiteProd
