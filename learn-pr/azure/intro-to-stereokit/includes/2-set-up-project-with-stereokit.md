@@ -38,9 +38,9 @@ If you're using a Windows Mixed Reality headset with your PC, you'll have to ena
 1. Go to **Settings** menu.
 :::image type="content" source="../media/setting-menu.png" alt-text="Screenshot of Click the setting menu." lightbox="../media/setting-menu.png":::
 2. Select **Update and Security**.
-:::image type="content" source="../media/update-and-security.png" alt-text="Screenshot of Select  “Update and Security” menu item" lightbox="../media/update-and-security.png":::
+:::image type="content" source="../media/update-and-security.png" alt-text="Screenshot of Select “Update and Security” menu item" lightbox="../media/update-and-security.png":::
 3. Select **For developers**.
-:::image type="content" source="../media/for-developers-option.png" alt-text="Screenshot Select “For developers” option" lightbox="../media/for-developers-option.png":::
+:::image type="content" source="../media/for-developers-option.png" alt-text="Screenshot of Select “For developers” option" lightbox="../media/for-developers-option.png":::
 4. Enable **Developer Mode**, read the disclaimer for the selected setting, and then accept the change by selecting Yes.
 :::image type="content" source="../media/enable-developer-mode.png" alt-text="Screenshot of On the toggle button to enable “Developer Mode” " lightbox="../media/enable-developer-mode.png":::
 
