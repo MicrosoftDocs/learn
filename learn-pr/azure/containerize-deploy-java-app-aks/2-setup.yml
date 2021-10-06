@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.containerize-deploy-java-app-aks.setup
-title: Setup
+title: Setup your Azure environment
 metadata:
   unitType: Setup
   title: Setup your Azure environment

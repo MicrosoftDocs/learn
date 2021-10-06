@@ -13,7 +13,7 @@ Authenticate with Azure:
 az login
 ```
 
-List your Azure subscriptions:
+Azure subscriptions are logical containers used to provision resources in Azure. Locate the subscription name that you plan to use in this module. List your Azure subscriptions:
 
 ```bash
 az account list --output table
@@ -22,22 +22,25 @@ az account list --output table
 Ensure your using an Azure subscription that allows you to create resources for the purposes of this module, substituting your subscription name of choice:
 
 ```bash
-az account set --subscription "your subscription name"
+az account set --subscription "<YOUR_SUBSCRIPTION_NAME>"
 ```
 
 To simplify the commands that will be executed further down, set up the following environment variables:
 
 > [!NOTE]
 > You'll want to replace <YOUR_AZURE_REGION> with your region of choice, for example: eastus  
+>
+> You'll want to replace <YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER> with a unique value as this is used to generate a unique FQDN (fully qualified domain name) for your cluster when it is created, for example: somerandomvaluejavacontainerizationdemoaks
 
 ```bash
 AZ_RESOURCE_GROUP=javacontainerizationdemorg
 AZ_CONTAINER_REGISTRY=javacontainerizationdemoacr
 AZ_KUBERNETES_CLUSTER=javacontainerizationdemoaks
 AZ_LOCATION=<YOUR_AZURE_REGION>
+AZ_KUBERNETES_CLUSTER_DNS_PREFIX=<YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER>
 ```
 
-Azure Resource groups are Azure containers for holding related resources for an Azure solution. Create a Resource group:
+Azure resource groups are Azure containers, located within Azure subscriptions, for holding related resources for an Azure solution. Create a Resource group:
 
 ```bash
 az group create \
@@ -75,3 +78,18 @@ Authenticate to the newly created Azure Container Registry:
 az acr login -n $AZ_CONTAINER_REGISTRY \
     | jq
 ```
+
+You'll need an Azure Kubernetes Cluster that you'll be deploying the Java application (Docker image) to. Create an AKS Cluster:
+
+```bash
+az aks create \
+    --resource-group $AZ_RESOURCE_GROUP \
+    --name $AZ_KUBERNETES_CLUSTER \
+    --attach-acr $AZ_CONTAINER_REGISTRY \
+    --dns-name-prefix=$AZ_KUBERNETES_CLUSTER_DNS_PREFIX \
+    --generate-ssh-keys \
+    | jq
+```
+
+> [!NOTE]
+> Azure Kubernetes Cluster creation can take approximately 20 minutes, once you run the command above, let it continue in that Azure CLI tab and move on to the next unit.
