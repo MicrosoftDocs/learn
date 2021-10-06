@@ -11,15 +11,32 @@ During the process, you'll:
 
 The lint stage only happens once during the pipeline run, regardless of how many environments the pipeline deploys to. So, you don't need to use templates for the lint stage. However, to keep your pipeline definition simple and easy to read, you'll define the lint stage in a template too.
 
-1. In Visual Studio Code, add a new file named *deploy/pipeline-templates/lint.yml*.
+1. In Visual Studio Code, create a new folder named *pipeline-templates*.
+
+1. Create a new file in the *pipeline-templates* folder named *lint.yml*.
+
+   :::image type="content" source="../media/5-visual-studio-code-lint-yml-file.png" alt-text="TODO":::
+
+1. Paste the following pipeline template definition into the file:
 
    :::code language="yaml" source="code/5-lint.yml" :::
 
+   The lint stage is the same as the lint stage already in the pipeline, but now it's in a separate pipeline template file.
+
+1. Save your changes to the file.
+
 ## Add a pipeline template for deployment
 
-1. Add a new file named *deploy/pipeline-templates/deploy.yml*. This represents all of the deployment activities for each environment.
+1. Create a new file in the *pipeline-templates* folder named *deploy.yml*.
+
+   :::image type="content" source="../media/5-visual-studio-code-deploy-yml-file.png" alt-text="TODO":::
+
+1. Paste the following pipeline template definition into the file:
 
    :::code language="yaml" source="code/5-deploy.yml" :::
+
+   <!-- TODO -->
+   This represents all of the deployment activities for each environment.
 
    Notice:
    - Template parameters used for the things that differ between environments
@@ -27,13 +44,27 @@ The lint stage only happens once during the pipeline run, regardless of how many
    - Stage names include the environment name
    - In the smoke test stage job variables, appServiceAppHostName includes the new stage name
 
+1. Save your changes to the file.
+
 ## Update the pipeline definition to use the templates
 
-1. Update the *azure-pipelines.yml* file to use the new templates:
+1. Open the *azure-pipelines.yml* file.
+
+1. Update the file to use the new templates by replacing the contents with the following:
 
    :::code language="yaml" source="code/5-pipeline.yml" :::
 
-1. Save, commit, push
+1. Save your changes.
+
+1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
+
+   ```bash
+   git add .
+   git commit -m "Add pipeline templates"
+   git push
+   ```
+
+<!-- TODO here down -->
 
 ## View the pipeline run
 

@@ -202,7 +202,7 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
    :::image type="content" source="../media/4-environments.png" alt-text="Screenshot of the Azure DevOps interface that shows the Pipelines menu, with the Environments item highlighted.":::
 
-1. Select **Create environment**.
+1. Select **New environment**.
 
    :::image type="content" source="../media/4-environments-new.png" alt-text="Screenshot of the Azure DevOps interface that shows the Environments page, with the button for creating an environment highlighted.":::
 
@@ -250,6 +250,8 @@ In a previous version of the pipeline, you used a single environment named Websi
 1. Go to **Pipelines** > **Environments**.
 
 1. Select the **Website** environment.
+
+   :::image type="content" source="../media/4-environments-website.png" alt-text="Screenshot of the Azure DevOps interface that shows the list of environments, with the Website environment highlighted.":::
 
 1. Near the upper right of the page, select the button with three dots and select **Delete** from the pop-up menu.
 
