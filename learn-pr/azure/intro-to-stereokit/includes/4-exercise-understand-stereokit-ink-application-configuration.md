@@ -2,6 +2,7 @@ This is a StereoKitInk tutorial designed to teach people the fundamentals of dra
 
 * Download StereoKitInk sample application from the provided GitHub link [maluoi/ StereoKit-PaintTutorial](https://github.com/maluoi/StereoKit-PaintTutorial/tree/feature/sk_ink).
 * After importing the StereoKit UWP Templates, open them in Visual Studio 2019. You may see the Solution Explorer hierarchy, which comprises Assets, Painting Menu, Palette Menu, and Main Program.
+
 Note: The program will contain errors, which will be cleared at a later time during debugging.
 
 ## 3D model assets
@@ -12,7 +13,7 @@ Look for the Assets folder in the solution explorer. This folder contains InkBot
 
 The painting menu is created using Painting.cs class which contains the entire concept of finger painting. It accepts manual input and generates three-dimensional lines out of it. It has an undo option that removes the most recent undo from the stack and adds it to the painting, and a redo option removes the most recent undo from the stack and adds it to the painting. Finally, it takes the fingertip of the hand, translates it to local space, smooths it out to reduce any jagged noise, and converts the fingertip's coordinates into hierarchy local coordinates before it works with it.
 
-Here we start drawing using two points. The first one begins at the point provided, and the second one will continuously be updated to the current fingertip location. Next, it Calculates the current distance from the last point and the speed at which the hand is traveling. It'll add a new point if it's more than a centimeter away from our last point. Finally, it adds the active stroke to the painting and clears it out for the next one. In this file, each line is a paint stroke. Later each paint stroke in painting needs to be converted into a file and joins all the data together. It's also in charge of loading and saving painting files. This painting.cs class can be seen in the StereoKit's Hierarchy system.
+Here we start drawing using two points. The first one begins at the point provided, and the second one will continuously be updated to the current fingertip location. Next, it calculates the current distance from the last point and the speed at which the hand is traveling. It'll add a new point if it's more than a centimeter away from our last point. Finally, it adds the active stroke to the painting and clears it out for the next one. In this file, each line is a paint stroke. Later each paint stroke in painting needs to be converted into a file and joins all the data together. It's also in charge of loading and saving painting files. This painting.cs class can be seen in the StereoKit's Hierarchy system.
 
 ## Palette menu
 

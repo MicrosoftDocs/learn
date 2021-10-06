@@ -6,7 +6,8 @@ The loading asset is a complex packing system. Here the asset is loaded during r
 
 ## Adding hand menu
 
-When it comes to user interaction in StereoKitInk, it carries a hands-first approach. When hand-sensors aren’t available, hand data is simulated instead using existing devices. Consider an example, as we mice Windows Mixed Reality Controllers will switch between pre-recorded hand positions based on button pushes thus you'll get to work with fully riched articulated hand data.
+When it comes to user interaction in StereoKitInk, it carries a hands-first approach. When hand-sensors aren’t available, hand data is simulated instead using existing devices. Consider an example, as we mice Windows Mixed Reality Controllers will switch betw
+een pre-recorded hand positions based on button pushes thus you'll get to work with fully riched articulated hand data.
 
 ## Accessing hand with joints
 
@@ -95,6 +96,7 @@ StereoKit's user interface is based on an immediate mode approach. The prime obj
 ## Making a window
 
 The toggle pose for the window off to the left facing to the right, as well as a float that will be utilised as a slider, are shown in the image below and the code will be added to initialization section.
+
 :::image type="content" source="../media/toggle-pose.png" alt-text="Screenshot of toggle pose for the window." lightbox="../media/toggle-pose.png":::
 
 ```c#
@@ -108,7 +110,7 @@ Sprite powerSprite = Sprite.FromFile("power.png", SpriteType.Single);
 
 As a base unit, StereoKit uses metres. Consider the case of a window that is tilted to 20cm wide and auto-resizes on the Y axis, the U class comes in handy here because it helps us to reason visually about the units we're working with.
 
-We can toggle to trun the windows header on and off and the value from that toggle is passed via the showHeader field as shown in the code below.
+We can toggle to turn the windows header on and off and the value from that toggle is passed via the showHeader field as shown in the code below.
 
 ```c#
 UI.WindowBegin("Window", ref windowPose, new Vec2(20, 0) * U.cm, showHeader?UIWin.Normal:UIWin.Body);
@@ -140,7 +142,7 @@ In order to create the clipboard to attach the interface refer the below code sn
 Model clipboard = Model.FromFile("Clipboard.glb");
 ```
 
-Similar to the pervious, heres how you can transfrom it into grabble interface. This behaves the same, except we’re defining where the grabbable region more precisely and draw our own model using an identity matrix instead of plain bar. Use HandleBegin function as shown below to push the handle’s pose onto the Hierarchy transform stack.
+Similar to the pervious, here's how you can transfrom it into grabble interface. This behaves the same, except we’re defining where the grabbable region more precisely and draw our own model using an identity matrix instead of plain bar. Use HandleBegin function as shown below to push the handle’s pose onto the Hierarchy transform stack.
 
 ```c#
 UI.HandleBegin("Clip", ref clipboardPose, clipboard.Bounds);
