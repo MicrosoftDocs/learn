@@ -227,11 +227,11 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
 1. Near the upper right of the page, select the button with three dots and select **Approvals and checks** from the pop-up menu.
 
-   :::image type="content" source="../media/7-add-check.png" alt-text="Screenshot of the Azure DevOps interface that shows the Website environment, with the three dots button highlighted.":::
+   :::image type="content" source="../media/4-add-check.png" alt-text="Screenshot of the Azure DevOps interface that shows the Website environment, with the three dots button highlighted.":::
 
 1. Select **Approvals**.
 
-   :::image type="content" source="../media/7-add-check-approval.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding a check, with the Approvals item highlighted.":::
+   :::image type="content" source="../media/4-add-check-approval.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding a check, with the Approvals item highlighted.":::
 
 1. In the **Approvers** text box, type your own name and select yourself.
 
@@ -241,4 +241,4 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
 1. Select **Create**.
 
-   :::image type="content" source="../media/7-add-check-approval-details.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding an approval check, with the details completed and the Create button highlighted.":::
+   :::image type="content" source="../media/4-add-check-approval-details.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding an approval check, with the details completed and the Create button highlighted.":::

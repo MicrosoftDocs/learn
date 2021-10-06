@@ -1,4 +1,4 @@
-You've decided to deploy to your test environment from your pipeline. In this unit, you'll update your pipeline to use templates so that you can reuse the stages across the environments.
+Now you're ready to update your pipeline to deploy to both your test and production environments. In this unit, you'll update your pipeline to use templates so that you can reuse the stages across the environments.
 
 During the process, you'll: 
 
@@ -9,11 +9,11 @@ During the process, you'll:
 
 ## Add a pipeline template for the lint stage
 
+The lint stage only happens once during the pipeline run, regardless of how many environments the pipeline deploys to. So, you don't need to use templates for the lint stage. However, to keep your pipeline definition simple and easy to read, you'll define the lint stage in a template too.
+
 1. In Visual Studio Code, add a new file named *deploy/pipeline-templates/lint.yml*.
 
    :::code language="yaml" source="code/5-lint.yml" :::
-
-<!-- TODO need to mention that this doesn't happen per env -->
 
 ## Add a pipeline template for deployment
 

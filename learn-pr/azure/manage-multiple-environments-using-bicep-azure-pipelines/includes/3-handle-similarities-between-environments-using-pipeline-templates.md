@@ -10,7 +10,7 @@ Some of these stages are repeated between your test and production environments:
 
 | Stage | Environments |
 |-|-|
-| Lint | Neither - linting doesn't happen against an environment. |
+| Lint | Neither - linting doesn't work against an environment. |
 | Validate | Test only |
 | Preview | Production only |
 | Deploy | Both environments |

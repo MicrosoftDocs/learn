@@ -14,12 +14,10 @@ During the process you'll:
 
 1. Set up the variables as follows:
 
-   | Name | Value | Type |
-   |-|-|-|
-   | EnvironmentType | Test | |
-   | ResourceGroupName | ToyWebsiteTest | |
-   | ReviewApiKey | sandboxsecretkey | Secret |
-   | ReviewApiUrl | https://sandbox.contoso.com/reviews | |
+   | Name | Value |
+   |-|-|
+   | EnvironmentType | Test |
+   | ResourceGroupName | ToyWebsiteTest |
 
    Notice you don't define the service connection name in the variable group. Service connection names have special rules about how they can be specified. In this module, you'll use pipeline template parameters.
 
@@ -27,12 +25,45 @@ During the process you'll:
 
 1. Set up the variables as follows:
 
-   | Name | Value | Type |
-   |-|-|-|
-   | EnvironmentType | Production | |
-   | ResourceGroupName | ToyWebsiteProduction | |
-   | ReviewApiKey | productionsecretkey | Secret |
-   | ReviewApiUrl | https://api.contoso.com/reviews | |
+   | Name | Value |
+   |-|-|
+   | EnvironmentType | Production |
+   | ResourceGroupName | ToyWebsiteProduction |
+
+## Update the deployment pipeline template to use the variable group
+
+1. Open the *deploy.yml* file.
+
+1. Remove all but the `environmentType` parameter:
+
+   :::code language="yaml" source="code/7-deploy-1.yml" range="1-3" :::
+
+1. In the `ValidateBicepCode` job, import the variable group, use variables instead of parameters where possible:
+
+   :::code language="yaml" source="code/7-deploy-1.yml" range="7-27" highlight="7-8, 19" :::
+
+1. Make a similar change to the `PreviewAzureChanges` job:
+
+   :::code language="yaml" source="code/7-deploy-1.yml" range="29-49" highlight="7-8, 19" :::
+
+1. Make a similar change to the `Deploy` job:
+
+   :::code language="yaml" source="code/7-deploy-1.yml" range="51-78" highlight="6-7, 24" :::
+
+## Update the pipeline definition to simplify the parameter list
+
+1. In Visual Studio Code open the *azure-pipelines.yml* file.
+
+1. Remove the extra parameters, only leaving the `environmentType` parameters:
+
+   :::code language="yaml" source="code/7-pipeline.yml" highlight="18-19, 23-24" :::
+
+1. Commit and push your changes to your Git repository by using the following commands: 
+
+   ```bash
+   git add .
+   git commit -m "Use variable group."
+   ```
 
 ## Update the Bicep file
 
@@ -48,42 +79,46 @@ During the process you'll:
 
 1. Save
 
-## Update the deployment pipeline template
+## Update the variable groups
+
+1. Update ToyWebsiteTest:
+
+   | Name | Value | Type |
+   |-|-|-|
+   | ReviewApiKey | sandboxsecretkey | Secret |
+   | ReviewApiUrl | https://sandbox.contoso.com/reviews | |
+
+1. Update ToyWebsiteProduction:
+
+   | Name | Value | Type |
+   |-|-|-|
+   | ReviewApiKey | productionsecretkey | Secret |
+   | ReviewApiUrl | https://api.contoso.com/reviews | |
+
+## Add the review API variables to the variable groups
 
 1. Open the *deploy.yml* file.
 
-1. Remove all but the `environmentType` parameter:
+1. In the `ValidateBicepCode` job, add the new API parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="1-3" :::
+   :::code language="yaml" source="code/7-deploy-2.yml" range="7-29" highlight="21-23" :::
 
-1. In the `ValidateBicepCode` job, import the variable group, use variables instead of parameters where possible, and add the API parameters:
-
-   :::code language="yaml" source="code/7-deploy.yml" range="7-29" highlight="7-8, 19, 21-23" :::
-
-   > [!TIP]
+   > [!IMPORTANT]
    > Make sure you add the `\` at the end of the environmentType
 
 1. Make a similar change to the `PreviewAzureChanges` job:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="31-53" highlight="7-8, 19, 21-23" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="31-53" highlight="21-23" :::
 
 1. Make a similar change to the `Deploy` job:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="55-84" highlight="6-7, 24, 26-28" :::
-
-## Update the pipeline definition to simplify the parameter list
-
-1. In Visual Studio Code open the *azure-pipelines.yml* file.
-
-1. Remove the extra parameters, only leaving the `environmentType` parameters:
-
-   :::code language="yaml" source="code/7-pipeline.yml" highlight="18-19, 23-24" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="55-84" highlight="26-28" :::
 
 1. Commit and push your changes to your Git repository by using the following commands: 
 
    ```bash
    git add .
-   git commit -m "TODO"
+   git commit -m "Add new review API settings."
    git push
    ```
 
