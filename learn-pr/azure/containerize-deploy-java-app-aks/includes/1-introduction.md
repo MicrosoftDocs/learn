@@ -19,7 +19,7 @@ You'll use your own Azure subscription to deploy the resources in this module. I
 
 By the end of this module, you'll be able to:
 
-- Containerize an existing Java application using Docker
+- Containerize a Java application using Docker
 - Build a Docker image for the Java application
 - Run the Docker image locally
 - Push the Docker image to Azure Container Registry

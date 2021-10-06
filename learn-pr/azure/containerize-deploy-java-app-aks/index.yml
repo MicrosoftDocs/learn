@@ -13,7 +13,7 @@ title: Containerize and deploy a Java app to Azure
 summary: Containerize a Java app, push the Docker image to Azure Container Registry, and then deploy to Azure Kubernetes Service.
 abstract: |
   By the end of this module, you'll be able to:
-  - Containerize an existing Java application using Docker
+  - Containerize a Java application using Docker
   - Build a Docker image for the Java application
   - Run the Docker image locally
   - Push the Docker image to Azure Container Registry
