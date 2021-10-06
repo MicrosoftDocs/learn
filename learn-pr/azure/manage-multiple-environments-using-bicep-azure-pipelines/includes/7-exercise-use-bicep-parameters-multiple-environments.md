@@ -10,9 +10,17 @@ During the process you'll:
 
 ## Add variable groups
 
-1. Create new variable group named ToyWebsiteTest.
+1. In your browser, go to **Pipelines** > **Library**.
 
-1. Set up the variables as follows:
+   TODO ss
+
+1. Select the **+ Variable group** button.
+
+   TODO ss
+
+1. Enter **ToyWebsiteTest** as the variable group name.
+
+1. Select the **+ Add** button to add variables to the variable group. Create two variables with the following settings:
 
    | Name | Value |
    |-|-|
@@ -21,129 +29,186 @@ During the process you'll:
 
    Notice you don't define the service connection name in the variable group. Service connection names have special rules about how they can be specified. In this module, you'll use pipeline template parameters.
 
-1. Create another new variable group named ToyWebsiteProduction.
+   TODO ss
 
-1. Set up the variables as follows:
+1. Select **Save**.
+
+1. Click the **Back** button in your browser to return to the variable group list.
+
+1. Add another variable group named **ToyWebsiteProduction**. Create two variables with the following settings:
 
    | Name | Value |
    |-|-|
    | EnvironmentType | Production |
    | ResourceGroupName | ToyWebsiteProduction |
 
+   TODO ss
+
+   Notice that the variable names are the same for both environments, but the values are different.
+
+1. Save the production variable group.
+
 ## Update the deployment pipeline template to use the variable group
 
-1. Open the *deploy.yml* file.
+1. In Visual Studio Code, open the *deploy.yml* file.
 
-1. Remove all but the `environmentType` parameter:
+1. At the top of the file, remove the `resourceGroupName` and `serviceConnectionName` parameters, and leave the `environmentType` parameter:
 
    :::code language="yaml" source="code/7-deploy-1.yml" range="1-3" :::
 
-1. In the `ValidateBicepCode` job, import the variable group, use variables instead of parameters where possible:
+1. Update the `ValidateBicepCode` job to import the variable group:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="7-27" highlight="7-8, 19" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="7-15" highlight="7-8" :::
 
-1. Make a similar change to the `PreviewAzureChanges` job:
+1. Update the `ValidateBicepCode` job to automatically infer the service connection name based on the `environmentType` parameter value:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="29-49" highlight="7-8, 19" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="7-21" highlight="14" :::
 
-1. Make a similar change to the `Deploy` job:
+1. Update the `ValidateBicepCode` job to use the imported variable group to set the resource group name and environment type parameters for the Azure CLI task:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="51-78" highlight="6-7, 24" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="7-27" highlight="19, 21" :::
+
+1. Make the changes to the `PreviewAzureChanges` job:
+
+   :::code language="yaml" source="code/7-deploy-1.yml" range="29-49" highlight="7-8, 19, 21" :::
+
+1. Make the same changes to the `Deploy` deployment job:
+
+   :::code language="yaml" source="code/7-deploy-1.yml" range="51-78" highlight="6-7, 24, 26" :::
+
+1. Verify your *deploy.yml* file now looks like the following:
+
+   :::code language="yaml" source="code/7-deploy-1.yml" :::
+
+1. Save your changes to the file.
 
 ## Update the pipeline definition to simplify the parameter list
 
-1. In Visual Studio Code open the *azure-pipelines.yml* file.
+1. Open the *azure-pipelines.yml* file.
 
-1. Remove the extra parameters, only leaving the `environmentType` parameters:
+1. Update the stages that use templates to remove the `resourceGroupName` and `serviceConnectionName` parameters, leaving only the `environmentType` parameter:
 
    :::code language="yaml" source="code/7-pipeline.yml" highlight="18-19, 23-24" :::
 
-1. Commit and push your changes to your Git repository by using the following commands: 
+1. Save your changes to the file.
+
+1. Commit your changes to your Git repository without pushing them by using the following commands: 
 
    ```bash
    git add .
-   git commit -m "Use variable group."
+   git commit -m "Use variable groups"
    ```
 
 ## Update the Bicep file
 
 1. Open the *main.bicep* file.
 
-1. Add params for review API:
+1. Below the parameters that are already in the file, add the following parameters for the new review API:
 
    :::code language="bicep" source="code/7-main.bicep" range="15-20" :::
 
-1. Add app settings for review API:
+1. Update the `appServiceApp` resource definition to provide the review API URL and key to the application, so that your website's code can use them:
 
    :::code language="bicep" source="code/7-main.bicep" range="53-80" highlight="17-24" :::
 
-1. Save
+1. Save your changes to the file.
 
 ## Update the variable groups
 
-1. Update ToyWebsiteTest:
+1. In your browser, navigate to **Pipelines** > **Library**, and open the **ToyWebsiteTest** variable groups.
 
-   | Name | Value | Type |
-   |-|-|-|
-   | ReviewApiKey | sandboxsecretkey | Secret |
-   | ReviewApiUrl | https://sandbox.contoso.com/reviews | |
+1. Add the following variables.
 
-1. Update ToyWebsiteProduction:
+   | Name | Value |
+   |-|-|
+   | ReviewApiKey | sandboxsecretkey |
+   | ReviewApiUrl | https://sandbox.contoso.com/reviews |
+
+1. Select the padlock icon next to the **ReviewApiKey** variable. This tells Azure Pipelines to treat the variable's value securely.
+
+   TODO SS
+
+1. Save the variable group.
+
+1. Update the **ToyWebsiteProduction** variable group to add a similar set of variables:
 
    | Name | Value | Type |
    |-|-|-|
    | ReviewApiKey | productionsecretkey | Secret |
    | ReviewApiUrl | https://api.contoso.com/reviews | |
 
+   TODO SS
+
+1. Save the variable group.
+
 ## Add the review API variables to the variable groups
 
-1. Open the *deploy.yml* file.
+1. In Visual Studio Code, open the *deploy.yml* file.
 
-1. In the `ValidateBicepCode` job, add the new API parameters:
+1. In the `ValidateBicepCode` job, add the review API parameter values to the Azure CLI task:
 
    :::code language="yaml" source="code/7-deploy-2.yml" range="7-29" highlight="21-23" :::
 
    > [!IMPORTANT]
-   > Make sure you add the `\` at the end of the environmentType
+   > Ensure you add the `\` at the end of the line that sets the `environmentType` parameter value, and on the subsequent line. The `\` character indicates that there are further lines that are part of the same command.
 
-1. Make a similar change to the `PreviewAzureChanges` job:
+1. Make the same change to the `PreviewAzureChanges` job:
 
    :::code language="yaml" source="code/7-deploy-2.yml" range="31-53" highlight="21-23" :::
 
-1. Make a similar change to the `Deploy` job:
+1. Make the same change to the `Deploy` job:
 
    :::code language="yaml" source="code/7-deploy-2.yml" range="55-84" highlight="26-28" :::
+
+1. Verify your *deploy.yml* file now looks like the following:
+
+   :::code language="yaml" source="code/7-deploy-2.yml" :::
 
 1. Commit and push your changes to your Git repository by using the following commands: 
 
    ```bash
    git add .
-   git commit -m "Add new review API settings."
+   git commit -m "Add new review API settings to Bicep file and pipeline"
    git push
    ```
 
 ## Watch output for the different environments
 
-<!-- TODO update -->
-1. In your browser, navigate to your pipeline runs.
+1. In your browser, navigate to **Pipelines**.
 
-1. You will notice that your pipeline is now running multiple stages one after the other for each environment.
+1. Select the most recent run of your pipeline.
 
-1. Navigate to the Test results of your run. You will notice that there are now 4 tests run. Since the Smoke test runs 2 tests and these now run for each environment, you get 4 test results. 
+1. Wait for the pipeline to pause before the *Deploy (Production Environment)* stage. It might take a few minutes for the pipeline to reach this point.
 
-1. Navigate to your **Environments**.
+1. Approve the deploy to the production environment by selecting the **Review** button.
 
-1. Notice that each environment has a status message with the latest build ID of your pipeline. 
+1. Select the **Approve** button.
 
-1. Select the WebsiteProd environment. It will show the job that deployed to this environment and the commit that is linked to this pipeline run. 
+   Wait for the pipeline to finish execution.
 
-1. In your browser navigate to the Azure portal. 
+1. Select **Pipelines** > **Environments**.
 
-1. Navigate the the **WebsiteProd** resource group. In the resource group open the App Service Plan.
+1. Select the **Production** environment.
 
-1. Notice that the production app service plan is of type S1: Standard. This is a different type from the app service plan in your test environment which is a F1: Free plan.
+   Notice that you now see multiple deployments in the environment's history.
 
-1. Check the config settings made it to the App Services
+1. In your browser navigate to the [Azure portal](https://portal.azure.com?azure-portal=true). 
+
+1. Navigate to the **ToyWebsiteProduction** resource group.
+
+1. In the list of resources, open the App Service app.
+
+   Select **Configuration**.
+
+   TODO SS
+
+1. Select **Show values**.
+
+   TODO SS
+
+   Notice that the production site's values for the **ReviewApiKey** and **ReviewApiUrl** settings are set to the values you configured in the production variable group.
+
+1. Compare this to the configuration settings for the App Service app in the **ToyWebsiteTest** resource group. Notice that it uses a different set of values.
 
 ## Clean up the resources
 

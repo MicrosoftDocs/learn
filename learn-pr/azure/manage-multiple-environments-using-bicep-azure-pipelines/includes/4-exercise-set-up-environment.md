@@ -190,11 +190,11 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
 1. Select **Save**.
 
-1. Refresh the page in your browser.
-
 1. Repeat the above process to create another new service connection named **ToyWebsiteProduction**, which deploys to the resource group named **ToyWebsiteProduction**:
 
    :::image type="content" source="../media/4-create-service-connection-principal-details-production.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page for the production environment, with the details completed and the Next button highlighted.":::
+
+   If the resource group list doesn't update, refresh the page in your browser and try again.
 
 ## Create environments in Azure Pipelines
 
