@@ -3,7 +3,7 @@ uid: learn.wwl.discover-common-terms-meanings
 metadata:
   title: Discover common terms and meanings for SAP on Azure
   description: "You will be introduced to some of the common terms that will be used in working with SAP workloads on Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 09/29/2021
+  ms.date: 10/06/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
