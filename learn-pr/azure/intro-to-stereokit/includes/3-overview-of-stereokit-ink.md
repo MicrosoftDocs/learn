@@ -1,8 +1,8 @@
-First, let us have a basic understanding of 3D models, Hand Menus, and UI buttons before breaking into the stereokitink sample application.
+First, let us have a basic understanding of 3D models, Hand Menus, and UI buttons before breaking into the StereoKitInk sample application.
 
 ## Import 3D models
 
-The loading asset is a complex packing system. Here the asset is loaded during run time and in stereokit it's a lot easier to load a 3D model. The 3D model format must be in .gltf, .glb, .obj, .stl, ASCII .ply, procedural and texture format must be in .jpg, .png, .tga, .bmp, .psd, .gif, .hdr, .pic, equirectangular cubemap, procedural.
+The loading asset is a complex packing system. Here the asset is loaded during run time and in StereoKit it's a lot easier to load a 3D model. The 3D model format must be in .gltf, .glb, .obj, .stl, ASCII .ply, procedural and texture format must be in .jpg, .png, .tga, .bmp, .psd, .gif, .hdr, .pic, equirectangular cubemap, procedural.
 
 ## Adding hand menu
 
@@ -20,7 +20,7 @@ if (hand.IsTracked)
 }
 ```
 
-if you perfer calling function instead of operator you can call using the below given code.
+If you perfer calling function instead of operator you can call using the below given code.
 
 ```
  hand.Get(FingerId.Index, JointId.Tip)
@@ -40,7 +40,7 @@ if (hand.IsJustUngripped) { }
 
 ## Hand menu
 
-Let's say you want to develop a hand menu, and you want to know if the user is gazing at their palm in stereokitInk. So here is an example of determining this using the palm's position and the dot product.
+Let's say you want to develop a hand menu, and you want to know if the user is gazing at their palm in StereoKitInk. So here is an example of determining this using the palm's position and the dot product.
 
 ```
 static bool HandFacingHead(Handed handed)
@@ -94,8 +94,8 @@ StereoKit's user interface is based on an immediate mode approach. The prime obj
 
 ## Making a window
 
+The toggle pose for the window off to the left facing to the right, as well as a float that will be utilised as a slider, are shown in the image below and the code will be added to initialization section.
 :::image type="content" source="../media/toggle-pose.png" alt-text="Screenshot of toggle pose for the window." lightbox="../media/toggle-pose.png":::
-The toggle pose for the window off to the left facing to the right, as well as a float that will be utilised as a slider, are shown in the image above and the code will be added to initialization section.
 ```
 Pose  windowPose = new Pose(-.4f, 0, 0, Quat.LookDir(1,0,1));
 
@@ -105,7 +105,7 @@ float slider     = 0.5f;
 Sprite powerSprite = Sprite.FromFile("power.png", SpriteType.Single);
 ```
 
-As a base unit, StereoKit uses metres. Consider the case of a window that is tilted to 20 cm wide and auto-resizes on the Y axis, the U class comes in handy here because it helps us to reason visually about the units we're working with.
+As a base unit, StereoKit uses metres. Consider the case of a window that is tilted to 20cm wide and auto-resizes on the Y axis, the U class comes in handy here because it helps us to reason visually about the units we're working with.
 
 We can toggle to trun the windows header on and off and the value from that toggle is passed via the showHeader field as shown in the code below.
 ```
@@ -114,7 +114,7 @@ UI.WindowBegin("Window", ref windowPose, new Vec2(20, 0) * U.cm, showHeader?UIWi
 
 When you start a window in StereoKitInk application, all visual elements are now local to that window. UI uses the Hierarchy class to push the window's pose into the Hierarchy stack. The pose will be dropped from the hierarchy stack when you close the window, restoring everything to normal. Based on user interaction, the UI element will update the values; also, you can add the values manually if required.
 
-The UI keeps the next item on the same line and starts with the label element. The slider interval is set to 0.2 with the range [0,1]. Thus, you can step the value to 0 to slide it continuously as shown below.
+The UI keeps the next item on the same line and starts with the label element. The slider interval is set to 0.2 with the range [0, 1]. Thus, you can step the value to 0 to slide it continuously as shown below.
 ```
 UI.Label("Slide");
 UI.SameLine();
