@@ -10,7 +10,7 @@ To hold all of the users you create in this exercise, create a new organization.
 
 1. On the Azure portal home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the search box, search for and select **Azure Active Directory**. The **Azure Active Directory** pane appears.
+1. In the *Seasrch services and marketplace* search box, search for and select **Azure Active Directory**. The **Azure Active Directory** pane appears.
 
 1. Select **Create**. The **Create a tenant** pane appears.
 
