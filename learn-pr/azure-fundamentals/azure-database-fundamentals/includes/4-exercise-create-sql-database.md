@@ -39,21 +39,21 @@ In this task, you create a SQL database based on the *AdventureWorksLT* sample d
 
 1. Complete the remaining fields for **Create SQL Database** using the following values.
 
-     | Setting | Value |
-     |	----- | ----- |	
-     | Want to use SQL elastic pool? | No (default)| 
-     | Compute + storage  | General Purpose (default)| 
-     | **Backup storage redundancy** |
-     | Backup storage redundancy | Geo-redundant backup storage |
-     
-      :::image type="content" source="../media/server-pane-df80b536.png" alt-text="Screenshot of create SQL database and  with fields filled in." lightbox="../media/server-pane-df80b536.png" :::
+    | Setting | Value |
+    |	----- | ----- |	
+    | Want to use SQL elastic pool? | No (default) | 
+    | Compute + storage  | General Purpose (default) | 
+    | **Backup storage redundancy** |
+    | Backup storage redundancy | Geo-redundant backup storage |
+    
+    :::image type="content" source="../media/server-pane-df80b536.png" alt-text="Screenshot of create SQL database and  with fields filled in." lightbox="../media/server-pane-df80b536.png" :::
 
 1. Select **Next : Networking**, and configure the following settings (accept defaults for fields not specified).
-    
-     | Setting | Value |
-     | ----- | ----- |
-     | **Network connectivity** |
-     | Connectivity method | Public endpoint |
+
+    | Setting | Value |
+    | ----- | ----- |
+    | **Network connectivity** |
+    | Connectivity method | Public endpoint |
     
     :::image type="content" source="../media/tab-8a36cd61.png" alt-text="Screenshot of the Create SQL Database Networking tab with settings configured.":::
     
@@ -67,7 +67,7 @@ In this task, you create a SQL database based on the *AdventureWorksLT* sample d
     | ----- | ----- |
     | **Data source** |
     | Use existing data | Sample |
-    | **Databas collation** |
+    | **Database collation** |
     | Collation | SQL_Latin1_General_CP1_CI_AS (default) |
       
      :::image type="content" source="../media/additional-settings-tab-5e601100.png" alt-text="Screenshot of the Additional settings tab of the Create SQL Database pane with settings selected.":::
@@ -106,7 +106,7 @@ In this task, you configure the server and run a SQL query.
     
 1. In the Query editor menu, select **Overview** (your edits will be lost), and in the command bar, select **Set server firewall**. The **Firewall settings** page appears.
 
-1. In the **Client IP address** section, your IP will be shown (verify that it is the same client IP address from the error you recieved in the previous step). 
+1. In the **Client IP address** section, your IP will be shown (verify that it is the same client IP address from the error you received in the previous step). 
 
 1. In the command bar select **Add client IP**. This will add a **Rule name** that contains your IP address in both the **Start IP** and **End IP** fields.
  
@@ -114,7 +114,7 @@ In this task, you configure the server and run a SQL query.
  
     :::image type="content" source="../media/sql-server-firewall-settings-1b917b84.png" alt-text="Screenshot of the SQL Server firewall settings page, with your IP settings and the command bar buttons highlighted." lightbox="../media/sql-server-firewall-settings-1b917b84.png" :::
     
-1. Select your db1 database in the breadcrumb at the top of the page to return to your SQL database, and thenselect **Query editor (preview)** from the menu. sign-in page. 
+1. Select your db1 database in the breadcrumb at the top of the page to return to your SQL database, and then select **Query editor (preview)** from the menu. sign-in page. 
 
 1. Sign in again as **sqluser**, with the password **Pa$$w0rd1234**. This time you should succeed. It might take a couple of minutes for the new firewall rule to be deployed. If you still get an error, verify the client IP address in the error, and return to **Firewall settings** to add the correct client IP address.
   
