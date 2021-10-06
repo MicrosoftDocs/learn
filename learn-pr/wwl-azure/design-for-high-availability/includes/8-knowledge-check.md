@@ -4,6 +4,6 @@ Tailwind Traders have several workloads being migrated to Azure. It is important
 
 - **Database strategy**. Where possible the company wants to be able to have database replicas either in the same region or a secondary region and be able to have multiple replicas that are asynchronously kept up to date
 
-- **High traffic web applications**. During peak customer traffic all global web applications need to be able to automatically fail over to a secondary region if the primary region were to fail. These web applications require SSL offload. 
+- **High traffic web applications**. During peak customer traffic, all global web applications need to be able to automatically fail over to a secondary region if the primary region fails. These web applications require SSL offload. 
 
 Choose the best response for each of the questions below. Then select **Check your answers**.
