@@ -190,7 +190,7 @@ Next, create two service connections in Azure Pipelines - one for your non-produ
 
 1. Select **Save**.
 
-1. Repeat the above process to create another new service principal named **ToyWebsiteProd**, which deploys to the resource group named **ToyWebsiteProd**:
+1. Repeat the above process to create another new service connection named **ToyWebsiteProd**, which deploys to the resource group named **ToyWebsiteProd**:
 
    :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/4-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the details completed and the Next button highlighted."::: <!-- TODO create new image -->
 
