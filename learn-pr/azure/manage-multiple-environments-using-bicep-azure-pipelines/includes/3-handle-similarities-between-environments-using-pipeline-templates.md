@@ -2,7 +2,7 @@ Even though you deploy your changes to multiple separate environments, the steps
 
 ## Deployment to multiple environments
 
-Your toy company's website pipeline includes several stages. Some of these stages are repeated between your non-production and production environment. These include the *Validate*, *Deploy*, and *Smoke Test* stages.
+Your toy company's website pipeline includes several stages. Some of these stages are repeated between your non-production and production environment.
 
 When you need to repeat steps in your pipeline, you might try to copy and paste your step definitions. However, this isn't a good practice. It's easy to accidentally make subtle mistakes or for things to get out of sync when you duplicate your pipeline's code. And in the future, when you need to make a change to the steps, you have to remember to apply the change in multiple places.
 
@@ -71,3 +71,5 @@ The condition here translates to *if the environmentName parameter's value is eq
 > Pay attention to the YAML file's indentation when you use conditions. You need to indent the steps that the condition applies to by one extra level.
 
 Even though conditions are a way to add flexibility to your pipeline, try not to use too many of them. They complicate your pipeline and make it harder to reason about. If you see a lot of conditions in your pipeline template, it might indicate that a template might not be the best solution for the workflow you plan to run, and that you should redesign your pipeline.
+
+Also, consider using YAML comments to explain the conditions you use, and any other aspects of your pipeline that might need additional explanation. Comments help make your pipeline easy to understand and work with in the future.

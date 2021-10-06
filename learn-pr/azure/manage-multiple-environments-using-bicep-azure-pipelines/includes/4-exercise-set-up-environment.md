@@ -5,8 +5,8 @@ To meet these objectives, you'll:
 > [!div class="checklist"]
 > * Set up an Azure DevOps project for this module.
 > * Clone the project's repository to your computer.
-> * Create a resource group in Azure.
-> * Create a service connection in Azure Pipelines.
+> * Create two resource groups in Azure.
+> * Create two service connections and environments in Azure Pipelines.
 
 ## Get the Azure DevOps project
 
@@ -22,7 +22,7 @@ The modules in this learning path are part of a progression. For learning purpos
 Run a template that sets up your Azure DevOps project.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=testbicep&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepenvironments&azure-portal=true)
 
 On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
@@ -30,7 +30,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *toy-website-test*.
 
-    :::image type="content" source="../media/4-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::
+    :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/4-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator."::: <!-- TODO use correct image -->
 
 1. Select **Create Project**.
 
@@ -45,17 +45,17 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Repos** > **Files**.
 
-   :::image type="content" source="../media/4-repos-files.png" alt-text="Screenshot of Azure DevOps that shows the Repos menu, with Files highlighted.":::
+   :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/4-repos-files.png" alt-text="Screenshot of Azure DevOps that shows the Repos menu, with Files highlighted."::: <!-- TODO move to include file -->
 
 1. Select **Clone**.
 
-   :::image type="content" source="../media/4-clone.png" alt-text="Screenshot of Azure DevOps showing the repository, with the Clone button highlighted.":::
+   :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/4-clone.png" alt-text="Screenshot of Azure DevOps showing the repository, with the Clone button highlighted."::: <!-- TODO use correct image -->
 
 1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the username and password displayed to somewhere safe.
 
 1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
-    :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the Clone in VS Code button highlighted.":::
+    :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the Clone in VS Code button highlighted."::: <!-- TODO move to include file -->
 
 1. Create a folder to use for the repository, and then choose **Select Repository Location**.
 
@@ -131,31 +131,33 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ::: zone-end
 
-## Create a resource group in Azure
+## Create two resource groups in Azure
 
 ::: zone pivot="cli"
 
-To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
+To create the two new resource groups, run the following Azure CLI commands in the Visual Studio Code terminal:
 
 ```azurecli
-az group create --name ToyWebsiteTest --location westus
+az group create --name ToyWebsiteNonProd --location westus
+az group create --name ToyWebsiteProd --location westus
 ```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
+To create the two new resource groups, run the following Azure PowerShell commands in the Visual Studio Code terminal:
 
 ```azurepowershell
-New-AzResourceGroup -Name ToyWebsiteTest -Location westus
+New-AzResourceGroup -Name ToyWebsiteNonProd -Location westus
+New-AzResourceGroup -Name ToyWebsiteProd -Location westus
 ```
 
 ::: zone-end
 
-## Create a service connection in Azure Pipelines
+## Create service connections in Azure Pipelines
 
-Next, create a service connection in Azure Pipelines. This automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy to the resource group.
+Next, create two service connections in Azure Pipelines - one for your non-production environment and another for your production environment. This process automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy to the resource group.
 
 1. In your browser, select **Project settings**.
 
@@ -177,13 +179,45 @@ Next, create a service connection in Azure Pipelines. This automatically creates
 
    A popup window might appear, asking you to sign in to Azure. If it does, enter your credentials and sign in.
 
-1. In the **Resource group** drop-down, select **ToyWebsiteTest**.
+1. In the **Resource group** drop-down, select **ToyWebsiteNonProd**.
 
-1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
+1. In **Service connection name**, enter **ToyWebsiteNonProd**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
 
-   :::image type="content" source="../media/4-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the details completed and the Next button highlighted.":::
+   :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/4-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the details completed and the Next button highlighted."::: <!-- TODO create new image -->
 
    > [!TIP]
    > For simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.
 
 1. Select **Save**.
+
+1. Repeat the above process to create another new service principal named **ToyWebsiteProd**, which deploys to the resource group named **ToyWebsiteProd**:
+
+   :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/4-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the details completed and the Next button highlighted."::: <!-- TODO create new image -->
+
+## Create environments in Azure Pipelines
+
+1. In your browser, go to **Pipelines** > **Environments**.
+
+   :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/7-environments.png" alt-text="Screenshot of the Azure DevOps interface that shows the Pipelines menu, with the Environments item highlighted."::: <!-- TODO use correct image>
+
+1. Select **Create environment**.
+
+   :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/7-environments-new.png" alt-text="Screenshot of the Azure DevOps interface that shows the Environments page, with the button for creating an environment highlighted."::: <!-- TODO create new image -->
+
+1. Enter **NonProd** as the environment name.
+
+   Leave the description blank. For **Resource**, select **None**.
+
+   > [!NOTE]
+   > In Azure Pipelines, environments are used to enable deployment features. Some of these features apply only when you're deploying to Kubernetes or to virtual machines. In this module, we don't use these features and you can ignore them.
+
+1. Select **Create**.
+
+   :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/7-environments-new-details.png" alt-text="Screenshot of the Azure DevOps page for a new environment, with the details completed and the Create button highlighted."::: <!-- TODO new image -->
+
+1. Repeat the process to create another environment named **Prod**.
+
+   :::image type="content" source="../../test-bicep-code-using-azure-pipelines/media/7-environments-new-details.png" alt-text="Screenshot of the Azure DevOps page for a new environment, with the details completed and the Create button highlighted."::: <!-- TODO new image -->
+
+   > [!NOTE]
+   > You might have previously completed a Microsoft Learn module where you configured an approval check on your environment. You can optionally apply the approval check to your production environment here if you want.
