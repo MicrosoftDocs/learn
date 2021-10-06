@@ -5,7 +5,7 @@ In this exercise, you'll create a SQL database in Azure and then query the data 
 ## Task 1: Create the database
 
 In this task, you create a SQL database based on the *AdventureWorksLT* sample database.
-
+ 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
  
 1. Select **Create a resource** &gt; **Databases** &gt; **SQL database**. The **Create SQL Database** pane appears.
