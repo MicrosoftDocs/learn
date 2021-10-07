@@ -5,7 +5,7 @@ metadata:
   description: Learn how to do audio classification with TensorFlow.
   ms.date: 08/03/2021
   author: cassiebreviu
-  ms.author: cassieb
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: nextgen

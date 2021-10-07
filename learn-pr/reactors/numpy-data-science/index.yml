@@ -5,7 +5,7 @@ metadata:
   description: Learn about how to use NumPy for data science. Create, index, and sort arrays.
   ms.date: 04/22/2020
   author: sguthals
-  ms.author: sguthals
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: nextgen
