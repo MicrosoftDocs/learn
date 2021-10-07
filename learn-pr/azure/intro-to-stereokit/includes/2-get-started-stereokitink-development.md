@@ -20,13 +20,18 @@ In this chapter, you'll learn how to install StereoKit and enable developer mode
 
 ## StereoKit’s visual studio template
 
-StereoKit’s visual studio template is the quickest methods for you to start a StereoKit project. There are two templates provided:
+StereoKit’s visual studio template is the quickest methods for you to start a StereoKit project. It is also configured to properly copy project assets by default, and includes some boilerplate code that gives you a bit of functionality to work right away.
+
+There are two templates provided:
 
 1. **Universal Windows Platform** for deploying on HoloLens 2 platform.
 2. **.NET Core** for desktop Windows or Linux environment.
 
+    :::image type="content" source="../media/stereokit-templates-visual-studio.png" alt-text="Screenshot of downloaded stereoKit templates in Visual Studio" lightbox="../media/stereokit-templates-visual-studio.png":::
+
 > [!Note]
-    >Iteration is slower with Universal Windows Platform because it builds apps, so use it only if HoloLens is essential to you.
+    >* Iteration is slower with Universal Windows Platform because it builds apps, so use it only if HoloLens is essential to you.
+    >* You may also install the [NuGet package](https://www.nuget.org/packages/StereoKit) directly into your project.
 
 ### Download & install StereoKit’s Visual Studio template
 
@@ -41,9 +46,6 @@ StereoKit’s visual studio template is the quickest methods for you to start a 
 3. Click **close** in the pop up once the installation is complete.
 
     :::image type="content" source="../media/close-button.png" alt-text="Screenshot of VSIX installer close button ” " lightbox="../media/close-button.png":::
-
-> [!Note]
-    > You may also install the [NuGet package](https://www.nuget.org/packages/StereoKit) directly into your project.
 
 ## Enable developer mode
 
