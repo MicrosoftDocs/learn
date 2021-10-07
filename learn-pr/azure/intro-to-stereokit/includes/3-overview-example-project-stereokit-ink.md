@@ -1,16 +1,16 @@
-So far you've leanred how to install and configure your visual studio,enabling the developer mode. In this module you'll have a basic understanding of how 3D model, hand menu and UI button works in your StereoKitInk application.
+So far you've leanred how to install and configure your visual studio,enabling the developer mode. In this module you'll have a basic understanding of how 3D model, hand stimulation and UI button works in your StereoKitInk application.
 
 ## 3D models
 
 In Stereokit its a lot easier to load or access a 3D model. In solution explorer the asset folder contains the 3D models that you have imported. The 3D model is stored in .glb format and image files are stored in .png format.
 
-## Adding hand menu
+## Hand stimulation
 
-When it comes to user interaction in StereoKitInk application, it carries a hands-first approach. When hand-sensors aren’t available, the hand sensouse  existing devices hand data is simulated using existing devices. Consider an example, as we mice Windows Mixed Reality Controllers will switch between pre-recorded hand positions based on button pushes thus you'll get to work with fully riched articulated hand data.
+Hand stimulation is the interaction with your application. When it comes to user interaction, StereoKit carries a hands-first approach. When hand-sensors aren't available, hand data is simulated using an existing device. Say, for example, when you mice the button press causes the Windows Mixed Reality Controllers to switch between pre-recorded hand positions, which allows you to work with fully articulated hand data.
 
-## Accessing hand with joints
+### Accessing hand with joints
 
-Hands are the salient feature in human interaction. Access the below defined code to find the finger tip of right hand, if IsTracked is ignored then the last known position of fully joint is given or specifed.
+Hands are the salient feature in human interaction. In your application you can interact by choosing different colors of your choice to draw. you can access the below defined code to find the finger tip of right hand, if IsTracked is ignored then the last known position of fully joint is given or specifed.
 
 ``` c#
 Hand hand = Input.Hand(Handed.Right);
@@ -26,7 +26,7 @@ If you perfer calling function instead of operator you can call using the below 
  hand.Get(FingerId.Index, JointId.Tip)
 ```
 
-StereoKitInk supports other easily accessible functions such as pinching and gripping, where to pinch the frame, use the JustPinched function, and unpinch the frame using the JustUnpinched function. The below code snippet explains the pinching and gripping functionalities.
+pinching and gripping are two easily accessible fucntions which you can use in your StereoKitInk application where to pinch the frame, use the JustPinched function, and to unpinch the frame use the JustUnpinched function. The below code snippet explains the pinching and gripping functionalities.
 
 ```c#
 if (hand.IsPinched) { }
@@ -38,9 +38,9 @@ if (hand.IsJustGripped) { }
 if (hand.IsJustUngripped) { }
 ```
 
-## Hand menu
+### Hand menu
 
-Let's say you want to develop a hand menu, and you want to know if the user is gazing at their palm in StereoKitInk. So here is an example of determining this using the palm's position and the dot product.
+Hand menu allows you to quickly bring up hand-attached UI. As it's accessible anytime. Let's say you want to develop a hand menu, and you want to know if the user is gazing at their palm. So here is an example for determining this using the palm's position and the dot product.
 
 ```c#
 static bool HandFacingHead(Handed handed)
@@ -54,7 +54,7 @@ static bool HandFacingHead(Handed handed)
 }
 ```
 
-After you've gathered that information, you've to place a window off to the side of the hand.
+After you've gathered the information, you've to place a window off to the side of the hand.
 Different X offset values are required for each hand so that the palm points in the right direction on different sides of each hand.
 
 ```c#
@@ -86,13 +86,15 @@ public static void DrawHandMenu(Handed handed)
 
 ## Pointers
 
-Lastly, StereoKit features a pointer system. Pointers are not constrained only to hands and will be created in the scene by the head, mouse, and other devices, respectively. In addition, you can filter pointers based on source family and device capabilities.
+Lastly, StereoKit features a pointer system. Pointers are used to interact with game objects that are close enough to the user to grab, touch, and manipulate. Pointers are not constrained only to hands, it will be created in the scene by the head, mouse, and other devices, respectively. In addition, you can filter pointers based on source family and device capabilities.
 
-## Creating UI buttons
+## UI buttons
 
-StereoKit's user interface is based on an immediate mode approach. The prime objective of UI APIs is to provide you with a more efficient and functional running environment. You can also define UI on each frame. As the little amount of state is maintained, you may easily add, remove, and alter your UI elements using simple and standard code structures. The fact that you'll have to maintain track of the state yourself is a significant drawback.
+UI buttons allow you to take actions, and make choices. If you want to perform certain actions after any interaction with the objects on the scene you can make use of UI buttons.
 
-## Making a window
+StereoKit's user interface is based on an immediate mode approach. The prime objective of UI APIs is to provide you with a more efficient and functional running environment. You can also define UI on each frame. As the little amount of state is maintained, you may easily add, remove, and alter your UI elements using simple and standard code structures.
+
+### Making a window
 
 The toggle pose for the window off to the left facing to the right, as well as a float that will be utilised as a slider, are shown in the image below and the code will be added to initialization section.
 
@@ -107,9 +109,9 @@ float slider     = 0.5f;
 Sprite powerSprite = Sprite.FromFile("power.png", SpriteType.Single);
 ```
 
-As a base unit, StereoKit uses metres. Consider the case of a window that is tilted to 20cm wide and auto-resizes on the Y axis, the U class comes in handy here because it helps us to reason visually about the units we're working with.
+As a base unit, StereoKit uses metres. Consider the case of a window that is tilted to 20cm wide and auto-resizes on the Y axis, the U class comes in handy here because it helps you to reason visually about the units we're working with.
 
-We can toggle to turn the windows header on and off and the value from that toggle is passed via the showHeader field as shown in the code below.
+you can toggle to turn the windows header on and off and the value from that toggle is passed via the showHeader field as shown in the code below.
 
 ```c#
 UI.WindowBegin("Window", ref windowPose, new Vec2(20, 0) * U.cm, showHeader?UIWin.Normal:UIWin.Body);
@@ -131,9 +133,9 @@ To end the window refer the below mentioned code sinpet
 UI.WindowEnd();
 ```
 
-## Custom windows
+### Custom windows
 
-Mixed Reality features us with the opportunity to transform the objects into interfaces. By using "handles" StereoKit allows you to develop 3D models and add UI elements to their surface instead of using the traditional "window" approach.
+Mixed Reality features you with the opportunity to transform the objects into interfaces. By using "handles" StereoKit allows you to develop 3D models and add UI elements to their surface instead of using the traditional "window" approach.
 
 In order to create the clipboard to attach the interface refer the below code snippet.
 
