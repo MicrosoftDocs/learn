@@ -4,7 +4,7 @@ title: Exercise - Use Bicep parameters with multiple environments
 metadata:
   unitType: exercise
   title: Exercise - Use Bicep parameters with multiple environments
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Update a deployment pipeline to use variable groups for each environment's settings.
   ms.date: 10/04/2021
   author: vermegi
   ms.author: givermei

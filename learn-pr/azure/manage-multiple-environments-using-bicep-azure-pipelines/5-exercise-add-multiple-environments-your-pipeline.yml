@@ -4,7 +4,7 @@ title: Exercise - Add multiple environments to your pipeline
 metadata:
   unitType: exercise
   title: Exercise - Add multiple environments to your pipeline
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Update a deployment pipeline to deploy to two environments, and use a pipeline template with parameters.
   ms.date: 10/04/2021
   author: vermegi
   ms.author: givermei
