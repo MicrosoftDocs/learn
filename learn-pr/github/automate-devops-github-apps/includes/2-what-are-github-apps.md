@@ -8,7 +8,7 @@ There are several factors to consider when choosing between incorporating an OAu
 
 :::image type="content" source="../media/ghapps-oauthapps.png" alt-text="Image of an install icon and an approve icon for GitHub Apps and OAuth Apps." :::
 
-When customizing a GitHub workflow, you have several features available such as writing custom scripts, creating and authorizing your own OAuth Apps, or installing GitHub Apps available from the GitHub marketplace. In general, scripts can be best utilized for those one off tasks. For actions that need to be run more often, you can leverage the automation of OAuth and GitHub Apps to help you and your team save time and retain the optimal level of security within your workflows. There are a number of differences that will affect how you decide between using a GitHub App or OAuth App. Understanding these differences beforehand can reduce some headache and rework down the road and help you find the best application for your specific use case within your workflow.
+When customizing a GitHub workflow, you have several features available such as writing custom scripts, creating and authorizing your own OAuth Apps, or installing GitHub Apps available from the GitHub marketplace. In general, scripts can be best utilized for those one off tasks. For actions that need to be run more often, you can use the automation of OAuth and GitHub Apps to help you and your team save time and retain the optimal level of security within your workflows. There are many differences that will affect how you decide between using a GitHub App or OAuth App. Understanding these differences beforehand can reduce some headache and rework down the road and help you find the best application for your specific use case within your workflow.
 
 At the end of this section, you will have a good understanding on the differences between a GitHub App and an OAuth App, and how to best choose an app for the right situation.
 
@@ -34,7 +34,7 @@ For organizations with OAuth App access restrictions, the Administrator is able 
 
 By contrast, GitHub Apps are _installed_ in your personal account, organizations you own, or specific repositories that you have admin access. GitHub Apps are installed and interact with GitHub as a service, not an individual user as is the case with OAuth Apps. Unlike OAuth Apps, a benefit to this is that GitHub Apps do not consume a GitHub licensed seat.
 
-GitHub Apps access data on behalf of the application itself through a Private Key which is used to sign a JWT Token (JSON Web Token). Because they are installed on specific repositories, users can choose which repositories the app is able to access which limits the amount of data the app is able to access. Permissions define what resources the GitHub App can access via the API. Unlike OAuth Apps, GitHub Apps have customizable permissions to repository data, issues, and pull requests. This allows you to grant more granular permissions, limiting the app to read and write in only the repositories it has been allowed to access. Only organization owners can manage the setting of GitHub Apps in an organization.
+GitHub Apps access data on behalf of the application itself through a Private Key that is used to sign a JWT Token (JSON Web Token). Because they are installed on specific repositories, users can choose which repositories the app is able to access that limits the amount of data the app is able to access. Permissions define what resources the GitHub App can access via the API. Unlike OAuth Apps, GitHub Apps have customizable permissions to repository data, issues, and pull requests. This allows you to grant more granular permissions, limiting the app to read and write in only the repositories it has been allowed to access. Only organization owners can manage the setting of GitHub Apps in an organization.
 
 GitHub Apps can be found and installed from the GitHub Marketplace. When you're searching for GitHub Apps, keep in mind that some Apps have a verified badge. This badge shows that the app is owned by an organization that has verified ownership of their domain, confirmed their email addresses with GitHub Support, and requires two-factor authentication for their organization.
 
@@ -42,11 +42,11 @@ GitHub Apps can be found and installed from the GitHub Marketplace. When you're 
 
 - An administrator can grant permissions regarding repository administration, checks, repository contents, deployments, and issues (*The administrator changes require user acceptance*)
 - An administrator can grant the app user permissions to block another user, emails, followers, GPG Keys, Git SSH Keys, starring, watching (*The administrator changes require user acceptance*)
-- Event Subscriptions: Security advisory, Check suite, Create, Deployment, Fork, Label, Member, Check in, Commit comment, Delete, Deployment status, Gollum, Milestone, Membership, Organization (*Administrator configures in the GH Apps UI and can be changed*) 
+- Event Subscriptions: Security advisory, Check suite, Create, Deployment, Fork, Label, Member, Check in, Commit comment, Delete, Deployment status, Milestone, Membership, Organization (*Administrator configures in the GH Apps UI and can be changed*)
 
 ## Choose between GitHub Apps and OAuth Apps
 
-While GitHub Apps are an ideal way to integrate into your workflow in some situations, it can be challenging for larger organizations to make the transition from the traditional use of OAuth Apps for automation. For example, a security policy restrictions may also limit an administrator's options in choosing to leverage these tools. 
+While GitHub Apps are an ideal way to integrate into your workflow in some situations, it can be challenging for larger organizations to make the transition from the traditional use of OAuth Apps for automation. For example, a security policy restriction may also limit an administrator's options in choosing to use these tools. 
 
 > [!NOTE]
 > As the System Administrator, you should work with your developers to find the best fit options for automation through leveraging these applications while still following your security policy.
@@ -82,7 +82,7 @@ Making the decision to use a GitHub app or OAuth app may depend on the level of 
 
 When a vulnerability is found in your application, it should be a priority and within your security policy to tell the users of your project. Quickly communicating a security issue could mean the difference between your users being able to revoke a compromised token or having sensitive data exposed. While tokens are much more secure than passwords, security can still be compromised and it is important for your organization to be prepared.
 
-In addition to a README.md file it is recommended to add a SECURITY.md file to your repositories. The SECURITY.md file highlights security related information for the repository. The file should include the security contacts, your organization policies, and detail the response you will take when a vulnerability is discovered.
+In addition to a README.md file it is recommended to add a SECURITY.md file to your repositories. The SECURITY.md file highlights security-related information for the repository. The file should include the security contacts, your organization policies, and detail the response you will take when a vulnerability is discovered.
 
 ## Reacting to events
 
@@ -93,7 +93,7 @@ GitHub Apps are designed to be passive. They wait for something to happen, and t
 
 ### Using GitHub webhooks
 
-Webhooks are the preferred approach for event handling. When something happens on GitHub within the scope of a webhook, it's raised immediately. They push notifications that your app can listen for and process in real-time. You can configure webhooks in your repository settings, including the types of events, authentication, and way the HTTP notifications are delivered.
+Webhooks are the preferred approach for event handling. When something happens on GitHub within the scope of a webhook, it's raised immediately. They push notifications that your app can listen for and process in real time. You can configure webhooks in your repository settings, including the types of events, authentication, and way the HTTP notifications are delivered.
 
 ### Polling
 

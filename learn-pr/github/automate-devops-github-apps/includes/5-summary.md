@@ -1,6 +1,6 @@
 In this module, you learned about the use of access tokens, their use cases, and rate limits. You also learned about GitHub and OAuth Apps and how best to choose which app to use for a given situation. You also demonstrated your ability to install a GitHub App on a GitHub organization using a personal access token or (PAT) with the proper access rights scoped.
 
-If a workflow requires the same task to be performed repeatedly, you should encourage your team to evaluate GitHub and OAuth apps. Not only does leveraging the capability of these apps save time, they can help streamline and increase efficiency to your development workflow. Using apps to manage rate limits will also help you prevent disruptions in a GitHub enterprise workflow.
+If a workflow requires the same task to be performed repeatedly, you should encourage your team to evaluate GitHub and OAuth apps. Not only does using the capability of these apps save time, they can help streamline and increase efficiency to your development workflow. Using apps to manage rate limits will also help you prevent disruptions in a GitHub enterprise workflow.
 
 In this module, you learned:
 
@@ -10,7 +10,7 @@ In this module, you learned:
 - The differences between how OAuth and GitHub apps authenticate through the GitHub REST API
 - How to install a GitHub App in a GitHub organization
 
-By encouraging the use of appropriate tools and tokens, you can help make your organization more secure. You should use these tools to build a sustainable environment for your organization, which can automate tasks and protect your data. You can leverage the learning in this module to show team members how to optimize the tools at their disposal, and set them up for successful and efficient product development.
+By encouraging the use of appropriate tools and tokens, you can help make your organization more secure. You should use these tools to build a sustainable environment for your organization, which can automate tasks and protect your data. You can apply the learning in this module to show team members how to optimize the tools at their disposal, and set them up for successful and efficient product development.
 
 ## Learn more
 
