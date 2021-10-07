@@ -23,7 +23,7 @@ stages:
 
 ```yaml
 parameters:
-- name: environmentType
+- name: environmentName
   type: string
 
 stages:
@@ -42,7 +42,9 @@ stages:
         inlineScript: |
             az deployment group create \
             --name $(Build.BuildNumber) \
-            --resource-group ${{parameters.environmentType}}_rg \
+            --resource-group ${{parameters.environmentName}}_rg \
             --template-file main.bicep \
-            --parameters parameters.${{parameters.environmentType}}.json
+            --parameters parameters.${{parameters.environmentName}}.json
 ```
+
+The Git repository also contains the Bicep file and parameter files.
