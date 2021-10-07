@@ -2,9 +2,7 @@ The first step to set up an immersive experience project for Windows Mixed Reali
 
 ## Steps to install visual studio for StereoKit
 
-1. Download the free edition of Visual Studio Community and ensure to get the Visual Studio membership if you don't have it already.
-Below image shows how the download button might look.
-If you have the Visual Studio subscription already, you can proceed to download Visual Studio by clicking on the provided following [link](https://developer.microsoft.com/windows/downloads)
+1. Download the free edition of [Visual Studio Community](https://developer.microsoft.com/windows/downloads).
 
     :::image type="content" source="../media/visual-studio-community.png" alt-text="The screenshot shows how to begin your download, by clicking the “Free download” button from Visual Studio Community." lightbox="../media/visual-studio-community.png":::
 
@@ -20,11 +18,11 @@ If you have the Visual Studio subscription already, you can proceed to download 
 
     :::image type="content" source="../media/test-visual-studio.png" alt-text="Screenshot of testing the visual studio launcher." lightbox="../media/test-visual-studio.png":::
 
-## Enable developer mode (for UWP/HoloLens)
+## Enable developer mode
 
-Enabling Developer Mode in UWP/Hololens makes it easier to test the applications you're working on. In addition, you can install UWP apps from outside the Windows Store, even if they're not signed with a valid certificate. This is an essential feature for UWP app developers who want to test their apps on their PCs while still developing.
+Enabling Developer Mode in UWP/Hololens & Windows PC makes it easier to test the applications you're working on. In addition, you can install UWP &Windows apps from outside the Windows Store, even if they're not signed with a valid certificate. This is an essential feature for UWP app developers who want to test their apps on their PCs while still developing.
 
-## HoloLens
+### Steps to enable developer mode for HoloLens
 
 1. Switch on your HoloLens and put it on. Then, access the main menu by using the start gesture.
 2. To start the app in your environment, select the **Settings** tile.
@@ -37,7 +35,7 @@ Enabling Developer Mode in UWP/Hololens makes it easier to test the applications
 
     :::image type="content" source="../media/enable-developer-mode-hololens.png" alt-text="Screenshot shows enabling the Developer mode." lightbox="../media/enable-developer-mode-hololens.png":::
 
-## Windows PC
+### Steps to enable developer mode for Windows PC
 
 If you're using a Windows Mixed Reality headset with your PC, you'll have to enable Developer Mode on your computer.
 
@@ -58,10 +56,11 @@ If you're using a Windows Mixed Reality headset with your PC, you'll have to ena
 
 It's one of the quickest methods to get a StereoKit project started. There are two templates provided: one for Universal Windows Platform and the other for .NET Core. If you're deploying on HoloLens 2 platform, use UWP; if you're developing for a desktop Windows or Linux environment, use .NET Core. Iteration is slower with UWP because it builds apps, so use it only if HoloLens is essential to you.
 
-## Steps to install StereoKit’s visual studio template
+### Steps to download & install StereoKit’s visual studio template
 
 1. Download the StereoKit templates from [StereoKit Templates - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=NickKlingensmith.StereoKitTemplates).
-2. Click **close** once the download is completed.
+2. Open the downloaded file & click on **Install** button.
+3. Click **close** in the pop up once the installation is complete.
 
-*Note:*
- You may also install the [NuGet package](https://www.nuget.org/packages/StereoKit) directly into your project.
+> [!Note]
+    > You may also install the [NuGet package](https://www.nuget.org/packages/StereoKit) directly into your project.
