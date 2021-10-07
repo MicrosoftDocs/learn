@@ -6,7 +6,9 @@ Your toy company's website pipeline includes multiple stages:
 
 :::image type="content" source="../media/3-stages.png" alt-text="Diagram showing a series of pipeline stages, including those for test and production deployments." border="false":::
 
-Some of these stages are repeated between your test and production environments:
+Some of these stages are repeated between your test and production environments, and some are only run for specific environments. For example, your company has decided to run the preview stage - which runs the what-if command - only for your production environment. Because the what-if command automatically validates your Bicep files, you don't run the validate stage for your production environments.
+
+Here's the list of your stages and the environments they apply to:
 
 | Stage | Environments |
 |-|-|
@@ -17,8 +19,6 @@ Some of these stages are repeated between your test and production environments:
 | Smoke Test | Both environments |
 
 When you need to repeat steps in your pipeline, you might try to copy and paste your step definitions. However, this isn't a good practice. It's easy to accidentally make subtle mistakes or for things to get out of sync when you duplicate your pipeline's code. And in the future, when you need to make a change to the steps, you have to remember to apply the change in multiple places.
-
-<!-- TODO explain why running whatif instead of validate for prod -->
 
 ## Pipeline templates
 

@@ -10,6 +10,6 @@ metadata:
   ms.author: givermei
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 7
 content: |
   [!include[](includes/6-handle-differences-between-environments-using-bicep-parameters.md)]

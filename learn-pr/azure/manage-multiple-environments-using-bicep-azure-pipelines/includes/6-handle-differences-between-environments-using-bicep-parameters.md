@@ -20,9 +20,9 @@ A parameter file is a JSON-formatted file that lists the parameter values you wa
 
 Parameter files can be committed to your Git repository with your Bicep file. You can then refer to the parameter file in your pipeline template where you execute your deployment. If you use parameter files, it's a good idea to establish a consistent environment naming strategy. For example, you might name your parameter files *azuredeploy.parameters.ENVIRONMENT_NAME.json*, like *azuredeploy.parameters.Production.json*. Then, you can use a pipeline template parameter to automatically select the correct parameter file:
 
-Using a parameter file is a good way of passing parameter values that are not secure values. You indicate all values in the parameter file and you can even vary which parameter file to use when calling a pipeline template: 
+Using a parameter file is a good way of passing parameter values that are not secure values. You indicate all values in the parameter file and you can even vary which parameter file to use when using a pipeline template: 
 
-:::code language="yaml" source="code/6-parameter-file.yml" highlight="31" :::
+:::code language="yaml" source="code/6-parameter-file.yml" highlight="30" :::
 
 An advantage of using this approach is that your pipeline YAML files don't need to contain a list of parameters that need to be passed in individually. This is especially beneficial when you have a large number of parameters. All of the parameters are grouped together and defined in a single JSON file. The parameter files are also part of your Git repository, so they can get versioned in the same way as all your other code.
 
@@ -76,12 +76,9 @@ Key Vault makes the management of your secrets more secure. It also enables thos
 
 ### Use variables in your pipeline
 
-Regardless of how you define a variable, you access its value in your pipeline by using the `$(VariableName)` syntax.
-
-When you need to use a variable to set a parameter for your Bicep file, you use it like this:
+Regardless of how you define a variable, you access its value in your pipeline by using the `$(VariableName)` syntax. For example, when you run a Bicep deployment, you can use a variable to specify the value of a parameter:
 
 :::code language="yaml" source="code/6-parameter-variables.yml" highlight="22" :::
-<!-- TODO check the parameter list in the above example -->
 
 ## What's the best approach?
 

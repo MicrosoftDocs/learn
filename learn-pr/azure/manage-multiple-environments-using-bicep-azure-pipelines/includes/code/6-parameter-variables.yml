@@ -17,6 +17,6 @@
                 scriptLocation: 'inlineScript'
                 inlineScript: |
                   az deployment group create \
-                    --resource-group ${{parameters.resourceGroupName}} \
+                    --resource-group $(ResourceGroupName) \
                     --template-file deploy/main.bicep \
                     --parameters environmentType=$(EnvironmentType)

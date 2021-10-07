@@ -1,16 +1,17 @@
-TODO intro para with scenario
+Now that your pipeline deploys to both of your environments, you're ready to integrate with the product reviews API. Your website team has provided you with the API keys and URLs that your website should use to access the service, and there are different values for each environment. In this unit, you'll update your pipeline to deploy the product reviews API settings to each of your environment.
 
 During the process you'll:
 
 > [!div class="checklist"]
-> * Create variable groups for each environment you want to deploy to.
-> *	Update the pipeline templates so it picks the correct variable group for each environment.
-> * Add a condition to the pipeline template to skip the what-if step for the test environment.
-> * Update the pipeline to send the right parameter value when calling your template.
+> * Create variable groups for each of your environments.
+> * Update the pipeline templates so it picks the correct variable group for each environment instead of using template parameters.
+> * Update your Bicep file to propagate the settings you need for the product review API.
+> * Update the variable group and pipeline to set the values for the product review API settings.
+> * Run your pipeline, and observe the changes to your Azure environment.
 
 ## Add variable groups
 
-TODO explain why
+Now that you're adding more parameters that vary between each environment, it's a good idea to use a variable group to keep the values for each environment together.
 
 1. In your browser, go to **Pipelines** > **Library**.
 
