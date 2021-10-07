@@ -6,9 +6,9 @@ The MRTK's solvers are located in the MRTK SDK folder. To see the available solv
 
 :::image type="content" source="../media/select-solvers-folder.png" alt-text="Screenshot that shows the location of the solvers folder." lightbox="../media/select-solvers-folder.png":::
 
-## The directional indicator solver
+## The Directional Indicator solver
 
-Use the directional indicator solver to direct the user to objects. Here's how:
+Use the Directional Indicator solver to direct the user to objects. Here's how:
 
 1. In the **Project** window, go to **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs**. Drag the **Chevron** prefab into the **Hierarchy** window, and set its Transform **Position** to X = 0, Y = 0, Z = 2 to position it near the **RoverExplorer** object.
 

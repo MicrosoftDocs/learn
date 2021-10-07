@@ -21,10 +21,10 @@ quiz:
           explanation: Parent objects can be used for organizational purposes.
         - content: "Prefabs are components provided by the Mixed Reality Toolkit to manipulate objects on scene."
           isCorrect: false
-          explanation: The object manipulator component can be used to manipulate objects on scene.
+          explanation: The Object Manipulator component can be used to manipulate objects on scene.
         - content: "Prefabs are reusable components used to propagate changes to all its instances at once."
           isCorrect: true
-          explanation: Prefabs are a special type of component that allows fully configured game objects to be saved in the project for reuse.
+          explanation: Prefabs are a special type of component that allows fully configured GameObjects to be saved in the project for reuse.
     - content: "Which object collection type allows randomization and supports dispersed style collection?"
       choices:
         - content: "Grid object collection"
@@ -38,9 +38,9 @@ quiz:
           explanation: A scattered grid object collection is a set of child objects randomly laid out within a radius.
     - content: "Suppose you need an arrow always pointing in the direction of the sun. Which solver will you use to implement this function?"
       choices:
-        - content: "Directional indicator"
+        - content: "Directional Indicator"
           isCorrect: true
-          explanation: Directional indicator will orient towards the directional target supplied.
+          explanation: Directional Indicator will orient towards the directional target supplied.
         - content: "Tap to place"
           isCorrect: false
           explanation: Tap to place is used to place a game object on surface.
