@@ -30,7 +30,7 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
     | Resource group | <rgn>[sandbox resource group name]</rgn> | Name of the resource group in which to create your Service Bus namespace. In this exercise, we'll create the namespace in the resource group that was assigned when we activated the sandbox. |
     | **Instance Details** |
     | Namespace name | [Globally unique name] | Enter a name that is unique within Azure, for example, _salesteamapp_ + _your initials_ + _current date_. |
-    | Location | Select from the dropdown list | Choose the region closest to you that is also one of the allowed *Sandbox regions* listed below. |
+    | Location | Select from the dropdown list | You must choose from the free *Sandbox regions* listed below. |
     | Pricing tier | Standard | The recommended pricing tier for this exercise. |
 
     [!INCLUDE[Sandbox Regions](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
@@ -80,6 +80,6 @@ To create a Service Bus topic and subscriptions:
 
 1. Let's add a second subscription. In the command bar, select **Subscription**. The **Create subscription** pane appears.
 
-1. Enter **EuropeAndAfrica** for the **Name**, and then enter **100** for the **Max delivery count**, and then select **Create**. The sales performance messages Service Bus Topc of your sales team app now has two subscriptions.
+1. Enter **EuropeAndAsia** for the **Name**, and then enter **100** for the **Max delivery count**, and then select **Create**. The sales performance messages Service Bus Topic of your sales team app now has two subscriptions.
 
 You have built the infrastructure required to use Service Bus to increase the resilience of your sales force distributed application. You have created a queue for messages about individual sales, and a topic for messages about sales performance. The topic includes multiple subscriptions because messages sent to that topic can be delivered to multiple recipient web services around the world.
