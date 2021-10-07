@@ -31,18 +31,37 @@ The lint stage only happens once during the pipeline run, regardless of how many
 
    :::image type="content" source="../media/5-visual-studio-code-deploy-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the pipeline-templates folder and the deploy dot Y M L file shown.":::
 
-1. Paste the following pipeline template definition into the file:
+   This file will represent all of the deployment activities that run for each of your environments.
 
-   :::code language="yaml" source="code/5-deploy.yml" :::
+1. Paste the following pipeline template parameters into the file:
 
-   <!-- TODO break this down -->
-   This represents all of the deployment activities for each environment.
+   :::code language="yaml" source="code/5-deploy.yml" range="1-7" :::
 
-   Notice:
-   - Template parameters used for the things that differ between environments
-   - Conditions on the validate and preview stages
-   - Stage names include the environment name
-   - In the smoke test stage job variables, appServiceAppHostName includes the new stage name
+   Notice that you're using template parameters for all of the settings that could differ between environments.
+
+1. Below the parameters, paste the definition of the validation stage:
+
+   :::code language="yaml" source="code/5-deploy.yml" range="9-29" :::
+
+   Notice that there is a condition applied to this stage. It only runs for non-production environments.
+
+   Also, notice that the stage name includes the environment name. This ensures that every stage in your pipeline has a unique name.
+
+1. Below the validation stage, paste the definition of the preview stage:
+
+   :::code language="yaml" source="code/5-deploy.yml" range="31-49" :::
+
+   Notice that this stage has a condition applied too, but it's the opposite of the validation stage's condition - the preview stage only runs for the production environment.
+
+1. Below the preview stage, paste the definition of the deploy stage:
+
+   :::code language="yaml" source="code/5-deploy.yml" range="51-76" :::
+
+1. Below the deploy stage, paste the definition of the smoke test stage:
+
+   :::code language="yaml" source="code/5-deploy.yml" range="78-105" :::
+
+   Notice that the `appServiceAppHostName` variable definition incorporates the `environmentType` parameter when it refers to the stage that published the host name. This ensures that each smoke test stage runs against the correct environment.
 
 1. Save your changes to the file.
 
