@@ -5,7 +5,7 @@ metadata:
   description: Use conditional probability and Bayes classification to analyze an email dataset for spam and ham.
   ms.date: 06/30/2020
   author: sguthals
-  ms.author: sguthals
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
   show_latex: true

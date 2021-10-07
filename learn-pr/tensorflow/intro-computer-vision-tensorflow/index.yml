@@ -5,7 +5,7 @@ metadata:
   description: Learn how to perform different computer vision tasks using TensorFlow.
   ms.date: 07/07/2021
   author: shwars
-  ms.author: dmitryso
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: nextgen
