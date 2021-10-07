@@ -69,12 +69,17 @@ var (
 There's another way you can declare and initialize variables. This method is the most common way to do so in Go. The same example we've been using could look like this:
 
 ```go
+import "fmt"
+
 func main() {
     firstName, lastName := "John", "Doe"
     age := 32
-    fmt.println(firstName, lastName, age)
+    fmt.Println(firstName, lastName, age)
 }
 ```
+
+> [!Note]
+> Notice the `import "fmt"` statement. We use the `import` keyword to bring the contents of a package into scope. We're importing the "fmt" package so we can use the `Println` method in our code. We'll take a closer look at this keyword in a later unit. 
 
 Run the preceding code to confirm that this way of declaring and initializing variables works.
 
@@ -113,7 +118,7 @@ Although there are similarities between constants and variables, there are some 
 
 Something fundamental you need to keep in mind in Go is that when you declare a variable and don't use it, Go throws an error, not a warning as in some other programming languages.
 
-For example, let's go back to one of our previous examples and remove the `fmt.println` call:
+For example, let's go back to one of our previous examples and remove the `fmt.Println` call:
 
 ```go
 func main() {
