@@ -37,7 +37,7 @@ quiz:
       explanation: Correct. It's good security practice to use separate service connections and service principals to deploy to each environment.
     - content: Add a condition to only deploy when the environment name is `Production`.
       isCorrect: false
-      explanation: Incorrect. Your deployment pipeline need to deploy to all environments, not just to production.
+      explanation: Incorrect. Your deployment pipeline needs to deploy to all environments, not just to production.
     - content: Create a new Azure role definition.
       isCorrect: false
       explanation: Incorrect. You don't generally need to define custom Azure roles for your deployments.
