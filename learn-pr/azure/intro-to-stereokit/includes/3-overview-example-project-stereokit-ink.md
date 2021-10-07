@@ -6,7 +6,7 @@ The loading asset is a complex packing system. Here the asset is loaded during r
 
 ## Adding hand menu
 
-When it comes to user interaction in StereoKitInk, it carries a hands-first approach. When hand-sensors aren’t available, hand data is simulated instead using existing devices. Consider an example, as we mice Windows Mixed Reality Controllers will switch betw
+When it comes to user interaction in StereoKitInk application, it carries a hands-first approach. When hand-sensors aren’t available, the hand sensouse  existing devices hand data is simulated using existing devices. Consider an example, as we mice Windows Mixed Reality Controllers will switch betw
 een pre-recorded hand positions based on button pushes thus you'll get to work with fully riched articulated hand data.
 
 ## Accessing hand with joints

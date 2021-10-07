@@ -12,7 +12,7 @@ During the build process, you may encounter errors when opening the Solution Exp
 
 2. Click on the Device dropdown and ensure the **StereoKitInk** is selected.
   
-     :::image type="content" source="../media/ensure-project-setup-desktop.png" alt-text="Screenshot shows ensuring of projectsetup desktop is selected." lightbox="../media/ensure-project-setup-desktop.png":::
+  :::image type="content" source="../media/ensure-project-setup-desktop.png" alt-text="Screenshot shows ensuring of projectsetup desktop is selected." lightbox="../media/ensure-project-setup-desktop.png":::
 
 3. Then in the menu bar click on the **Debug** > **Start Debugging**.
   Start Debugging automatically starts the application on your device with the Visual Studio debugger attached.
@@ -27,7 +27,7 @@ During the build process, you may encounter errors when opening the Solution Exp
   
     :::image type="content" source="../media/configuration-solution-platform.png" alt-text="Screenshot shows Configuration of Solution platform." lightbox="../media/configuration-solution-platform.png":::
 
-2. Connect your hololens to your computer, then in the menu bar click on the **Debug** > **Start Debugging**.
+2. Connect your x to your computer, then in the menu bar click on the **Debug** > **Start Debugging**.
   Start Debugging automatically starts the application on your device with the Visual Studio debugger attached.
   
     :::image type="content" source="../media/start-debug.png" alt-text="Screenshot shows Selecting of Start Debugging." lightbox="../media/start-debug.png":::
