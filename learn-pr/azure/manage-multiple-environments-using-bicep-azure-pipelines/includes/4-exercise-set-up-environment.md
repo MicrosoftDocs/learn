@@ -220,7 +220,7 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
 1. Select the left arrow to return to the environments list.
 
-   <!-- TODO screenshot -->
+   :::image type="content" source="../media/4-environment-back.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, with the left arrow button highlighted.":::
 
 1. Repeat the process to create another environment named **Production**.
 
@@ -284,4 +284,4 @@ In the previous versions of the pipeline, you used a single set of variables to 
 
 1. Select the **Save** button.
 
-   <!-- TODO screenshot showing all three deleted and save button highlighted -->
+   :::image type="content" source="../media/4-variables-delete-save.png" alt-text="Screenshot of the Azure DevOps interface that shows three variables are deleted, with the Save button highlighted.":::
