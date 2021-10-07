@@ -1,4 +1,4 @@
-Before you start to work on your toy company's website pipeline, you need to configure your environment. In this section, you make sure that your Azure and Azure DevOps environments are set up to complete the rest of this module.
+Before you start to work on your toy company's website pipeline, you need to configure your environment. In this unit, you make sure that your Azure and Azure DevOps environments are set up to complete the rest of this module.
 
 To meet these objectives, you'll:
 
@@ -7,6 +7,7 @@ To meet these objectives, you'll:
 > * Clone the project's repository to your computer.
 > * Create two resource groups in Azure.
 > * Create two service connections and environments in Azure Pipelines.
+> * Remove the resources that you don't need in the pre-created Azure DevOps project.
 
 ## Get the Azure DevOps project
 
@@ -219,6 +220,8 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
 1. Select the left arrow to return to the environments list.
 
+   <!-- TODO screenshot -->
+
 1. Repeat the process to create another environment named **Production**.
 
    :::image type="content" source="../media/4-environments-new-details-production.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Production, with the details completed and the Create button highlighted.":::
@@ -261,7 +264,7 @@ In the previous versions of the pipeline, you used a single environment named *W
 
 ## Delete the old variables
 
-In the previous versions of the pipeline, you used a single set of variables to define the parameters and deployment configuration. Now that you're deploying to multiple environments, you'll delete these variables and replace them with environment-specific sets of variables.
+In the previous versions of the pipeline, you used a single set of variables to define the parameters and deployment configuration. Now that you're deploying to multiple environments, you'll delete these variables. You'll replace them with environment-specific sets of variables soon.
 
 1. Go to **Pipelines** > **Pipelines**.
 
@@ -280,3 +283,5 @@ In the previous versions of the pipeline, you used a single set of variables to 
    :::image type="content" source="../media/4-variables-delete.png" alt-text="Screenshot of the Azure DevOps interface that shows the list of variables, with the delete button highlighted.":::
 
 1. Select the **Save** button.
+
+   <!-- TODO screenshot showing all three deleted and save button highlighted -->

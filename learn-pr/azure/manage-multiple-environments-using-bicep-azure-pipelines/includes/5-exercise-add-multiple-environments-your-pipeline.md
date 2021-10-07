@@ -5,13 +5,14 @@ During the process, you'll:
 > [!div class="checklist"]
 > * Add a pipeline template for the lint stage.
 > * Add a pipeline template that defines the stages required to deploy to any environment.
-> * Run your pipeline.
+> * Update your pipeline to use the templates.
+> * Run your pipeline and view the results.
 
 ## Add a pipeline template for the lint stage
 
-The lint stage only happens once during the pipeline run, regardless of how many environments the pipeline deploys to. So, you don't need to use templates for the lint stage. However, to keep your pipeline definition simple and easy to read, you'll define the lint stage in a template too.
+The lint stage only happens once during the pipeline run, regardless of how many environments the pipeline deploys to. So, you don't really need to use templates for the lint stage. However, to keep your main pipeline definition file simple and easy to read, you decide to define the lint stage in a template.
 
-1. In Visual Studio Code, create a new folder named *pipeline-templates*.
+1. In Visual Studio Code, create a new folder named *pipeline-templates* inside the *deploy* folder.
 
 1. Create a new file in the *pipeline-templates* folder named *lint.yml*.
 
@@ -23,9 +24,11 @@ The lint stage only happens once during the pipeline run, regardless of how many
 
    The lint stage is the same as the lint stage already in the pipeline, but now it's in a separate pipeline template file.
 
-1. Save your changes to the file.
+1. Close the file and save your changes.
 
 ## Add a pipeline template for deployment
+
+Here, you create a pipeline template that defines all of the stages required to deploy each of your environments. You'll use template parameters to specify the settings that could differ between environments.
 
 1. Create a new file in the *pipeline-templates* folder named *deploy.yml*.
 
@@ -37,15 +40,13 @@ The lint stage only happens once during the pipeline run, regardless of how many
 
    :::code language="yaml" source="code/5-deploy.yml" range="1-7" :::
 
-   Notice that you're using template parameters for all of the settings that could differ between environments.
-
 1. Below the parameters, paste the definition of the validation stage:
 
    :::code language="yaml" source="code/5-deploy.yml" range="9-29" :::
 
    Notice that there is a condition applied to this stage. It only runs for non-production environments.
 
-   Also, notice that the stage name includes the environment name. This ensures that every stage in your pipeline has a unique name.
+   Also, notice that the stage name includes the value of the `environmentType` parameter. This ensures that every stage in your pipeline has a unique name. The stage also has a `displayName` property to create a well-formatted name for you to read.
 
 1. Below the validation stage, paste the definition of the preview stage:
 
@@ -73,7 +74,7 @@ The lint stage only happens once during the pipeline run, regardless of how many
 
    :::code language="yaml" source="code/5-pipeline.yml" :::
 
-   This pipeline runs the *Lint* stage once. Then it uses the *deploy.yml* template file twice - once per environment. This keeps the pipeline definition clear and easy to understand.
+   This pipeline runs the *Lint* stage once. Then it uses the *deploy.yml* template file twice - once per environment. This keeps the pipeline definition clear and easy to understand. Also, the comments help to explain what's happening.
 
 1. Save your changes.
 
@@ -117,7 +118,7 @@ The lint stage only happens once during the pipeline run, regardless of how many
 
 1. Select the **Production** environment.
 
-1. Notice that in the environment details screen, you get an overview of the production environment's deployment history.
+1. Notice that in the environment details screen, you see an overview of the production environment's deployment history.
 
    :::image type="content" source="../media/5-environment-production.png" alt-text="Screenshot of Azure Pipelines showing the production environment, with the deployment history showing a single deployment.":::
 
