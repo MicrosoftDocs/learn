@@ -128,4 +128,4 @@ You now have a functional product details API in the API Management instance tha
 
     The **HTTP response** section of the console has two tabs, Message and Trace. The Message tab is populated with HTTP response. The product details appear in JSON format at the end of the response. Scroll up to the **HTTP request** section and notice the format of the request. The request was sent to a destination in the **azure-api.net** domain. This location is different from the **azurewebsites.net** domain where the function app is hosted. You can test this API with other query parameters, such as *id=2* or *id=3*.
 
-:::image type="content" source="../media/3-api-http-response.png" alt-text="Screenshot showing the **Http request** and **HTTP response** message.":::
+   :::image type="content" source="../media/3-api-http-response.png" alt-text="Screenshot showing the **Http request** and **HTTP response** message.":::
