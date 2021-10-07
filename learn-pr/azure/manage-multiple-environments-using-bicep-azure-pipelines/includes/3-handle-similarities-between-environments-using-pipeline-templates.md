@@ -6,7 +6,7 @@ After talking to your colleagues in the website team, you decide on the followin
 
 :::image type="content" source="../media/3-stages.png" alt-text="Diagram showing a series of pipeline stages, including those for test and production deployments." border="false":::
 
-First, the pipeline lints the Bicep code to check it's valid and follows best practices. Linting happens on the Bicep code in isolation, so it doesn't matter how many environments you're deploying to - it only runs once.
+First, the pipeline runs the Bicep linter to check that the Bicep code is valid and follows best practices. Linting happens on the Bicep code without needing to connect to Azure, so it doesn't matter how many environments you're deploying to - it only runs once.
 
 Next, the pipeline deploys to the test environment. This requires running the Azure Resource Manager preflight validation, then deploying the Bicep code, and finally running some tests against your test environment.
 
