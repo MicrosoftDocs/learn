@@ -22,7 +22,7 @@ products:
 - github
 modules:
 - learn.student-evangelism.introduction-to-git
-- learn.student-evangelism.create-git-project
+- learn.create-git-project
 - learn.student-evangelism.collaborate-with-git
 - learn.student-evangelism.branch-merge-git
 trophy:
