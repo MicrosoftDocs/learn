@@ -4,11 +4,11 @@ Azure Policy is a service that you use to create, assign, and manage policy defi
 
 In summary, you will be using Azure Policy to:
 
-* Enforcement & Compliance
-  * Turn on built-in policies or build custom ones for all resource types
-  * Real-time policy evaluation and enforcement
-  * Periodic & on-demand compliance evaluation
-  * Virtual Machine In-Guest Policy
+* Enforcement compliance by:
+  * Turning on built-in policies or build custom policies for all resource types
+  * Performing real-time policy evaluation and enforcement
+  * Performing periodic and on-demand compliance evaluation
+  * Implementing virtual machine In-Guest Policy
 * Apply policies at scale
   * Apply policies to a Management Group with control across  your entire organization
   * Apply multiple policies and aggregate policy states with policy initiative
