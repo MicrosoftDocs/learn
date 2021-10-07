@@ -1,4 +1,4 @@
-In the pervious chapters you learnt how to download the template, import the package and 3D models. Now in this chapter lets learn how to build and test your application on HoloLens 2.
+In the pervious chapters you learned how to download the template, import the package and 3D models. Now in this chapter lets learn how to build and test your application on HoloLens 2.
 
 During the build process, you may encounter errors when opening the Solution Explorer and the C# program file. In order to debug the errors, you need to run the initial build solution.
 
