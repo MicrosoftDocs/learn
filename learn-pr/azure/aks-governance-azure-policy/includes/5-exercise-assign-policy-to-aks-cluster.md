@@ -9,13 +9,13 @@ We begin by deploying an image from directly from Docker Hub into the cluster. T
 1. In Cloud Shell, log into the AKS cluster
 
    ```Azure CLI
-   az aks get-credentials -n videogamecluster -g videogamerg
+   az aks get-credentials -n videogamecluster -g videogamerg 
    ```
 
-1. Run the following code to create a simple nginx pod and service from Docker Hub.
+1. Run the following code to create a simple nginx pod from Docker Hub.
 
    ```bash
-    cat <<EOF | kubectl create -f -
+    cat <<EOF | kubectl apply -f -
     apiVersion: apps/v1
     kind: Deployment
     metadata:
@@ -43,7 +43,13 @@ We begin by deploying an image from directly from Docker Hub into the cluster. T
                 memory: 120Mi
             ports:
             - containerPort: 80
-    ---
+   EOF
+   ```
+   
+1. Run the code below to deploy the service to expose the deployment
+
+   ```
+   cat <<EOF | kubectl create -f -
     apiVersion: v1
     kind: Service
     metadata:
@@ -56,8 +62,10 @@ We begin by deploying an image from directly from Docker Hub into the cluster. T
       - port: 80
       selector:
         app: nginx
-    EOF
+   EOF
    ```
+
+   
 
 1. List all of the deployed services
 
@@ -86,7 +94,9 @@ Find the built-in policy definitions for managing your cluster using the Azure p
 
    ![Screenshot showing kubernetes selected for category](../media/5-filtering-for-kubernetes.png)
 
-1. Select the **Kubernetes cluster containers should only use allowed images** policy definition, then select the Assign button at the top left corner of the screen.
+1. Select the **Kubernetes cluster containers should only use allowed images** policy definition
+
+1. Select the **Assign** button at the top left corner of the screen.
 
 1. Set the Scope to the resource group of the Kubernetes cluster you just created, which in this case is the **videogamerg** resource group. Fill out the rest of the form as seen in the picture below and click **Next**.
 
@@ -162,7 +172,13 @@ Now that you have assigned the restricting policy to the cluster, you will now r
                 memory: 120Mi
             ports:
             - containerPort: 80
-    ---
+   EOF
+   ```
+   
+1. Create the service
+
+   ```
+   cat <<EOF | kubectl create -f -
     apiVersion: v1
     kind: Service
     metadata:
@@ -175,36 +191,90 @@ Now that you have assigned the restricting policy to the cluster, you will now r
       - port: 80
       selector:
         app: second-nginx
-    EOF
+   EOF
    ```
-
-1. Now we can check to see if the pod and service was created
+   
+   
+   
+1. Now we can check to see if the pod was created
 
    ```bash
    kubectl get pods
-   kubectl get svc
    ```
 
 As you can see in the picture below, even though it appeared the deployment was created, the pod was actually not created. The deployment was blocked by the policy you just created. The pod that was created before the policy was assigned was however not stopped. The policy also didn't prevent the service from getting created. If you try opening up the EXTERNAL-IP in a browser, you will get no response which further shows that the deployment was not successful. 
 
 ![screenshot showing that the pod was not deployed](../media/5-deployment-not-created.png)
 
+
+
+## Diagnose why the Pod was not deployed
+
+In the previous section we noticed that the second pod was not deployed. In this section, we will use the command line to diagnose why.
+
+1. First, let us describe the deployment. We see that the ReplicaSet was created but the replicas failed to create
+
+   ```bash
+   kubectl describe deployment second-simple-nginx
+   ```
+
+   ![screenshot showing the failed deployment](../media/5-describing-failed-deployment.png)
+
+2. Next we will describe the failed ReplicaSet. Copy the name of the ReplicaSet highlighted in the picture above and replace the placeholder with the copied name. Run the command
+
+   ```bash
+   kubectl describe replicaset <ReplicaSet name>
+   ```
+
+3. Here you will see that the replicas failed because of the policy
+
+   ![screenshot showing the reason why the pod failed](../media/5-reason-replicaset-failure.png)
+
 Delete the deployment to prepare for the next step.
 
 ```
-kubectl delete -f secondnginxfromdocker.yaml
+ cat <<EOF | kubectl delete -f -
+ apiVersion: apps/v1
+ kind: Deployment
+ metadata:
+   name: second-simple-nginx
+   labels:
+     app: second-nginx
+ spec:
+   selector:
+     matchLabels:
+       app: second-nginx
+   template:
+     metadata:
+       labels:
+         app: second-nginx
+     spec:
+       containers:
+       - name: second-simple-nginx
+         image: docker.io/library/nginx:stable
+         resources:
+           requests:
+             cpu: 100m
+             memory: 100Mi
+           limits:
+             cpu: 120m
+             memory: 120Mi
+         ports:
+         - containerPort: 80
+EOF
 ```
 
 ## Redeploying the pods using an Azure Container Registry Image
 
 Now that you know that the policy prevents images from Dockerhub from being created in your cluster based on your policy, let us try redeploying the same workload using an image from ACR. In this section you will create an Azure Container Registry, copy the nginx image from Dockerhub to the new registry and attempt to redeploy the pod form your container registry. We will use Azure CLI to create the container registry.
 
-1. Head back to **Cloud shell** on Azure Portal and enter the following command to create a new container registry. 
+1. Head back to **Cloud shell** on Azure Portal and enter the following commands to create a new container registry
 
    ```azurecli-interactive
    ACR_NAME=videogameacr$RANDOM
    az acr create --name $ACR_NAME \
-                 --resource-group videogamerg 
+                 --resource-group videogamerg \
+                 --sku Premium
    ```
 
 1. Import the image from Docker Hub to your new container registry
@@ -219,7 +289,13 @@ Now that you know that the policy prevents images from Dockerhub from being crea
    az acr repository list --name $ACR_NAME
    ```
 
-1. Get the name of the container registry. You will need it to modify the manifest file to redeploy the pods
+1. Link your AKS cluster with the container registry you just created
+
+   ```
+   az aks update -n videogamecluster -g videogamerg --attach-acr $ACR_NAME
+   ```
+
+1. Get the name of the container registry and copy it. You will need it to modify the code below to redeploy the pods
 
    ```azurecli-interactive
    echo $ACR_NAME
@@ -228,14 +304,14 @@ Now that you know that the policy prevents images from Dockerhub from being crea
 1. Modify the code below by replacing `<acr name>` with the name of the Azure Container Registry your command above returned, then apply it to create the pod from your private registry.
 
    ```bash
-    cat <<EOF | kubectl create -f -
+    cat <<EOF | kubectl apply -f -
     apiVersion: apps/v1
     kind: Deployment
     metadata:
       name: second-simple-nginx
       labels:
         app: second-nginx
-    spec
+    spec:
       selector:
         matchLabels:
           app: second-nginx
@@ -246,7 +322,7 @@ Now that you know that the policy prevents images from Dockerhub from being crea
         spec:
           containers:
           - name: second-simple-nginx
-            image: <acr name>.azurecr.io/nginx:v1
+            image: videogameacr29230.azurecr.io/nginx:v1
             resources:
               requests:
                 cpu: 100m
@@ -256,22 +332,9 @@ Now that you know that the policy prevents images from Dockerhub from being crea
                 memory: 120Mi
             ports:
             - containerPort: 80
-    ---
-    apiVersion: v1
-    kind: Service
-    metadata:
-      name: second-simple-nginx
-      labels:
-        app: second-nginx
-    spec:
-      type: LoadBalancer
-      ports:
-      - port: 80
-      selector:
-        app: second-nginx
-    EOF
+   EOF
    ```
-
+   
 1. Get the **EXTERNAL-IP** so that you can test to see if the service is running in the cluster
 
    ```bash
