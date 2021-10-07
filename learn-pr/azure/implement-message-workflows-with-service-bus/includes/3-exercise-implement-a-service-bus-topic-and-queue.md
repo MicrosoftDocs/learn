@@ -45,7 +45,7 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
 
 ## Create a Service Bus queue
 
-When your namespace had been created, you can create a queue for messages about individual sales.
+When your namespace has been created, you can add a queue for messages about individual sales.
 
 To create a Service Bus queue:
 
@@ -53,16 +53,15 @@ To create a Service Bus queue:
 
 1. In the command bar, select **Queue**. The **Create queue** pane appears.
 
-1. In the **Name** text box, enter **salesmessages**, and then select **Create**. The Service Bus Namespace pane reappears with **salesmessages** queue listed at the bottom of the pane.
-
+1. In the **Name** text box, enter **salesmessages**, and then select **Create**. The Service Bus Namespace pane reappears with **salesmessages** listed under **Queues** at the bottom of the pane.
 
     :::image type="content" source="../media/3-create-queue.png" alt-text="Screenshot of the Create queue pane with the Create button highlighted.":::
 
 ## Create a Service Bus topic and subscriptions
 
-You also want to create a topic that will be used for messages that relate to sales performance. Multiple instances of the business logic web service will subscribe to this topic from different geographical regions. Each message will be delivered to multiple instances.
+You also want to create a topic that will be used for messages that relate to sales performance. Multiple instances of the business logic web service will subscribe to this topic, and each sales performance message will be delivered to multiple instances.
 
-To create a Service Bus topic and subscriptions:
+To add a Service Bus topic and subscriptions:
 
 1. In the command bar of the **Service Bus Namespace** pane, select **Topic**. The **Create topic** pane appears.
 
@@ -72,14 +71,14 @@ To create a Service Bus topic and subscriptions:
 
 1. When the topic has been created, at the bottom of the **Service Bus Namespace** pane, select the **Topics** tab.
 
-1. In the left menu, under **Entities**, select **Topics**, and in the list of topics, select **salesperformancemessages**. The sales performance messages Service Bus Topic appears. 
+1. In the Service Bus Namespace menu, scroll down to **Entities**, select **Topics**, and in the list of topics, select **salesperformancemessages**. The sales performance messages Service Bus Topic pane appears. 
 
-1. In the command bar, select **Subscription**. The **Create subscription** pane appears. This is where you add subscriptions for each region.
+1. In the command bar, select **Subscription** to add subscriptions to the topic. The **Create subscription** pane appears.
 
-1. For your first subscription, enter **Americas** for the **Name**, then enter **100** for the **Max delivery count**, and then select **Create**. The sales performance messages Service Bus Topic for your app appears with the subscription you created at the bottom of the page.
+1. For your first subscription, for **Name**, enter **Americas**, then enter **100** for the **Max delivery count**, and then select **Create**. The sales performance messages Service Bus Topic for your app appears with the **Americas** subscription listed at the bottom of the page.
 
 1. Let's add a second subscription. In the command bar, select **Subscription**. The **Create subscription** pane appears.
 
-1. Enter **EuropeAndAsia** for the **Name**, and then enter **100** for the **Max delivery count**, and then select **Create**. The sales performance messages Service Bus Topic of your sales team app now has two subscriptions.
+1. Enter **EuropeAndAsia** for the **Name**, and then enter **100** for the **Max delivery count**, and then select **Create**. The sales performance messages Service Bus Topic of your sales team app now lists two subscriptions.
 
 You have built the infrastructure required to use Service Bus to increase the resilience of your sales force distributed application. You have created a queue for messages about individual sales, and a topic for messages about sales performance. The topic includes multiple subscriptions because messages sent to that topic can be delivered to multiple recipient web services around the world.
