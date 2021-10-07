@@ -6,9 +6,9 @@ If you don't have the MikroE microSD Click, then you can run the virtual disk se
 
 Drive B: disk sector reads and writes are redirected over MQTT to an MQTT enabled Python-based virtual disk server. Drive B: disk sectors are also cached on one of the real-time cores. Caching significantly improves read/write performance.
 
-## The Altair Virtual Disk Server
+## The Altair virtual disk server
 
-:::image type="content" source="../media/altair-azure-sphere-disk-cache-server.png" alt-text="Diagram of the Altair virtual disk architecture." border="false":::
+:::image type="content" source="../media/altair-azure-sphere-disk-cache-server.png" alt-text="Diagram of the Altair virtual disk architecture." border="false" lightbox="../media/altair-azure-sphere-disk-cache-server.png":::
 
 Disk reads work as follows:
 
@@ -30,7 +30,7 @@ Applications running on CP/M will have read/write access to drive B: enabling yo
 
 Drive B: disk sector reads and writes are sent over MQTT to the Python-based virtual disk server. The disk sector **Cache-aside** cache is used to improve the performance of the virtual drive.
 
-:::image type="content" source="../media/altair-azure-sphere-disk-cache-server.png" alt-text="Diagram that shows the Altair Web Terminal architecture." border="false":::
+:::image type="content" source="../media/altair-azure-sphere-disk-cache-server.png" alt-text="Diagram that shows the Altair Web Terminal architecture." border="false" lightbox="../media/altair-azure-sphere-disk-cache-server.png":::
 
 In the following exercise, you'll learn how to:
 

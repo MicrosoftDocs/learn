@@ -103,7 +103,7 @@ The Altair Web Terminal is secure and requires authenticated users so you'll nee
 1. From the [Azure portal](https://portal.azure.com?azure-portal=true).
 1. Select **All resources**.
 
-:::image type="content" source="../media/azure-portal-all-resources.png" alt-text="Screenshot that shows how to select the all resources in the Azure portal.":::
+   :::image type="content" source="../media/azure-portal-all-resources.png" alt-text="Screenshot that shows how to select the all resources in the Azure portal.":::
 
 1. Filter resources by name. Type **AltairWebTerminal** in the filter dialog box.
 1. Select on the **AltairWebTerminal** Static Web App.
