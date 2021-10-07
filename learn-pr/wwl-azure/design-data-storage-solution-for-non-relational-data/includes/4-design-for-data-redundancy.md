@@ -26,7 +26,7 @@ Azure Storage offers two options for how your data is replicated in the primary 
 
 For applications requiring high durability, you can choose to copy the data in your storage account to a secondary region. When you create a storage account, you select the primary region for the account. The paired secondary region is determined based on the primary region and can't be changed. Azure Storage offers two options for copying your data to a secondary region: Geo-redundant storage (GRS), and Geo-zone-redundant storage (GZRS).
 
-:::image type="content" source="../media/ geo-redundant-storage.png" alt-text="LRS and ZRS replicated to the secondary region.":::
+:::image type="content" source="../media/geo-redundant-storage.png" alt-text="LRS and ZRS replicated to the secondary region.":::
 
 •	The primary difference between GRS and GZRS is how data is replicated in the primary region.  Within the secondary region, data is always replicated synchronously with LRS.
 

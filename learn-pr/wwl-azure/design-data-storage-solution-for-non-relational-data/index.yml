@@ -3,7 +3,7 @@ uid: learn.wwl.design-data-storage-solution-for-non-relational-data
 metadata:
   title: Design a data storage solution for non-relational data
   description: "Azure Architects design and recommend non-relational data storage solutions."
-  ms.date: 10/06/2021
+  ms.date: 10/07/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -23,6 +23,7 @@ prerequisites: |
   • Conceptual knowledge of storage accounts, blobs, files, disks, and data protection.
   • Working experience with creating and securing storage systems.
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:
