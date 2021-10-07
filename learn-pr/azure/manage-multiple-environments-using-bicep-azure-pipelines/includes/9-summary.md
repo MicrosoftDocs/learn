@@ -3,6 +3,7 @@ Your website's development team wanted to be able to deploy their changes within
 In this module you learned how to work with multiple environments in a deployment pipeline. You were able to generalize the similar steps in a pipeline template, and to handle the differences between your environments by storing Bicep parameters in variables and variable groups.
     
 - [Azure Pipelines environments](/azure/devops/pipelines/process/environments)
+- [Approvals and checks](/azure/devops/pipelines/process/approvals)
 - [Pipeline templates](/azure/devops/pipelines/process/templates)
     - [Use other repositories](/azure/devops/pipelines/process/templates#use-other-repositories)
     - [Security through templates](/azure/devops/pipelines/security/templates)
