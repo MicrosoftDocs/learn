@@ -29,12 +29,12 @@ string messageJson = JsonSerializer.Serialize(objectData);
 Response<SendReceipt> response = await queueClient.SendMessageAsync(messageJson);
 ```
 
-To include binary data in the message, it is typical to first Base64 encode the binary data into a string.  The Base64 encoded string can then be sent to the storage queue, either directly or as a property on a JSON object.
+To include binary data in the message, first Base64 encode the binary data into a string. Then, the Base64 encoded string can then be sent to the storage queue, either directly or as a property on a JSON object.
 
 > [!NOTE]
 > While the total queue size can be up to 500 TB, the individual messages in it can only be up to 64 KB in size (48 KB when using Base64 encoding). If you need a larger payload you can combine queues and blobs – passing the URL to the actual data (stored as a Blob) in the message. This approach would allow you to enqueue up to 200 GB for a single item.
 
-## How to Peek at messages
+## How to peek at messages
 
 Sometimes your application may need to peek at a message in the queue without dequeuing the message. This is done by calling the `PeekMessageAsync` method on the `QueueClient` class.  Accessing the `Value` property of the `Response` class gives you access to the `PeekedMessage` object.
 

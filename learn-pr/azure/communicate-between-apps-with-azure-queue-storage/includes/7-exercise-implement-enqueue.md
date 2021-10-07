@@ -55,7 +55,7 @@ The sample program contains a `SendMessageAsync` method. In this step, you will 
         // Print out the send receipt
         Console.WriteLine($"Message sent.  Message id={sendReceipt.MessageId}  Expiration time={sendReceipt.ExpirationTime}");
         Console.WriteLine();
-        }
+    }
     ```
 
 ## Execute the application
@@ -76,7 +76,7 @@ You are now ready to build and run the program to send your first message to the
 
 1. When the application runs, choose option 1 to send a message and then input a headline and location of your choice to send a message to the queue. When the menu appears again, you can use 'X' to exit the program.
 
-You should see output on your screen that looks similar to this.
+    You should see output on your screen that looks similar to this.
 
     ```bash
     What operation would you like to perform?
@@ -125,5 +125,3 @@ This should dump the information for your message, which will look something lik
   }
 ]
 ```
-
-There are several other commands available that you can try with the tools - check out both `az storage queue --help` and `az storage message --help` to explore them.
