@@ -1,4 +1,4 @@
-Given the deployment of Arc-enabled servers will encompass thousands of machines across multiple offices handling business critical workloads, security is top of mind for Wide World Importers. As you plan a secure deployment, it is important to consider how access roles, policies, and networking can be applied in tandem to ensure compliance and protection of resources.   
+Given the deployment of Azure Arc-enabled servers will encompass thousands of machines across multiple offices handling business critical workloads, security is top of mind for Wide World Importers. As you plan a secure deployment, it is important to consider how access roles, policies, and networking can be applied in tandem to ensure compliance and protection of resources.   
 
 Arc-enabled servers not only benefit from built in-security with careful encryption and data sharing by design, but also have a range of added security configurations. To ensure a secure deployment, you may need to prepare an effective landing zone for Arc-enabled resources by configuring the appropriate access controls, governance infrastructure, and advanced networking options. In this unit you learn to:
 
