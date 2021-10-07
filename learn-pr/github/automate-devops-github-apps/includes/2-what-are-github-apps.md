@@ -6,7 +6,7 @@ GitHub provides a robust API that enables developers to do just about anything o
 
 There are several factors to consider when choosing between incorporating an OAuth app or GitHub App into your workflow. In this section, you are introduced to GitHub Apps and OAuth Apps, their usage and permission differences, and event subscriptions.
 
-:::image type="content" source="../media/ghapps-oauthapps.png" alt-text="Image of an install icon and an approve icon for GitHub Apps and OAuth Apps." :::
+:::image type="content" source="../media/gh-apps-oauth-apps.png" alt-text="Image of an install icon and an approve icon for GitHub Apps and OAuth Apps." :::
 
 When customizing a GitHub workflow, you have several features available such as writing custom scripts, creating and authorizing your own OAuth Apps, or installing GitHub Apps available from the GitHub marketplace. In general, scripts can be best utilized for those one off tasks. For actions that need to be run more often, you can use the automation of OAuth and GitHub Apps to help you and your team save time and retain the optimal level of security within your workflows. There are many differences that will affect how you decide between using a GitHub App or OAuth App. Understanding these differences beforehand can reduce some headache and rework down the road and help you find the best application for your specific use case within your workflow.
 
