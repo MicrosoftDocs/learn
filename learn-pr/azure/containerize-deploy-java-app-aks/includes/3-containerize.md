@@ -1,6 +1,6 @@
 In this unit, you'll containerize a Java application.
 
-Unlike virtual machines that emulate hardware, containers run directly on top of the host operating system, kernel and hardware, as essentially just another process. Because of this, containers require less system resources, resulting in a smaller footprint with substantially less overhead, faster application startup times, and a great use case for scaling on demand. 
+As mentioned earlier, containers run directly on top of the host operating system, kernel and hardware, as essentially just another process. Because of this, containers require less system resources, resulting in a smaller footprint with substantially less overhead, faster application startup times, and a great use case for scaling on demand. 
 
 There are multiple container runtimes. In this module, you’ll leverage the widely used Docker runtime to build a Docker image that will ultimately, in the next unit, deploy to the host operating system of your local machine and within the Azure Kubernetes Service.
 
@@ -46,13 +46,12 @@ Maven should have successfully built the Turkish Airlines Web Application Archiv
 
 ```bash
 [INFO] Building war: /mnt/c/Users/chtrembl/dev/git/Flight-Booking-System-JavaServlets_App/Project/TurkishAirlines/target/TurkishAirlines-0.0.1-SNAPSHOT.war
-	[INFO] ------------------------------------------------------------------------
-	[INFO] BUILD SUCCESS
-	[INFO] ------------------------------------------------------------------------
-	[INFO] Total time:  17.698 s
-	[INFO] Finished at: 2021-09-28T15:18:07-04:00
-	[INFO] ------------------------------------------------------------------------
-
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  17.698 s
+[INFO] Finished at: 2021-09-28T15:18:07-04:00
+[INFO] ------------------------------------------------------------------------
 ```
 
 Imagine you’re that Java developer and you have just built this TurkishAirlines-0.0.1-SNAPSHOT.war, you're next step is to probably work with the operation engineers to get this artifact deployed to an on-premises server and/or virtual machine. This effort requires that the servers and/or virtual machines, are to be available and configured with the required dependencies for Turkish Airlines to start and run successfully. Both of which are challenging and time consuming, especially on demand when increased load is hitting your application.
@@ -94,3 +93,5 @@ As you can see, this Docker file has 5 instructions.
 | ADD    | ADD target/*.war /usr/local/tomcat/webapps/TurkishAirlines.war will copy the maven compiled TurkishAirlines-0.0.1-SNAPSHOT.war to the tomcat images webapps folder to ensure that when Tomcat is initialize, it will in fact find the TurkishAirlines-0.0.1-SNAPSHOT.war to be installed on the application server. |
 | EXPOSE | EXPOSE 8080 is needed as Tomcat is configured to listen to traffic on port 8080, this ensures the Docker process will listen on this port. |
 | CMD | CMD ["catalina.sh", "run"], Last but not least, you need to instruct Docker what to do for initialization. Generally this is a startup script. In this case you can use the tomcat Docker image catalina.sh shell script, and instruct Docker to "run" it, the default behavior for a Tomcat Application Server. |
+
+For more information on Dockerfile construction please visit [https://docs.docker.com/engine/reference/builder/](https://docs.docker.com/engine/reference/builder/)

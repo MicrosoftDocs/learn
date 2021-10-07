@@ -1,4 +1,8 @@
-Imagine you’re a Java developer, building and deploying applications that will run on on-premises servers. Orchestrating these servers, dependencies, and scale, to name a few, are all challenging processes. With Containers, you’ll alleviate some of these challenges and you’ll ensure your applications, and dependencies, are always isolated in Docker image(s) and ready for deployment at scale.
+Imagine you’re a Java developer, building and deploying applications that will run on on-premises servers. Orchestrating these servers, dependencies, and scale, to name a few, are all challenging processes. 
+
+Unlike virtual machines that emulate hardware, containers run directly on top of the host operating system, kernel and hardware, as essentially just another process. Because of this, containers require less system resources, resulting in a smaller footprint with substantially less overhead, faster application startup times, and a great use case for scaling on demand.
+
+With Containers, you’ll ensure your applications, and dependencies, are always isolated in container image(s) and ready for deployment at scale.
 
 In this module, you’ll first containerize a Java application. For convenience, we’ve selected an existing Java application for you to use, from the open internet. [Turkish Airlines](https://github.com/chtrembl/Flight-Booking-System-JavaServlets_App), a fully responsive web-based Flight Booking System for Turkish Airlines based on the Model View Controller (MVC) Architecture made using Java Servlets, Java Server Pages (JSPs).
 
