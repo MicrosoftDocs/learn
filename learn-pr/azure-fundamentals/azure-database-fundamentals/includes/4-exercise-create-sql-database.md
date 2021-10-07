@@ -20,11 +20,11 @@ In this task, you create a SQL database based on the *AdventureWorksLT* sample d
      | **Database details** |
      | Database name | db1 |
      | Server | Select **Create new** |
- 
+
     The **Create SQL Database Server** pane appears. 
   
 1. Enter the following values for each setting.
-    
+
      | Setting | Value |
      | ----- | ----- | 
      | **Server details** |
@@ -34,18 +34,18 @@ In this task, you create a SQL database based on the *AdventureWorksLT* sample d
      |	Authentication method |	Use SQL Authentication |
      |	Server admin login | sqluser |
      |	Password |	Pa$$w0rd1234 |
-     
+
 1. Select **OK**. 
 
 1. Complete the remaining fields for **Create SQL Database** using the following values.
 
-    | Setting | Value |
-    |	----- | ----- |	
-    | Want to use SQL elastic pool? | No (default) | 
-    | Compute + storage  | General Purpose (default) | 
-    | **Backup storage redundancy** |
-    | Backup storage redundancy | Geo-redundant backup storage |
-    
+     | Setting | Value |
+     |	----- | ----- |	
+     | Want to use SQL elastic pool? | No (default) | 
+     | Compute + storage  | General Purpose (default) | 
+     | **Backup storage redundancy** |
+     | Backup storage redundancy | Geo-redundant backup storage |
+
     :::image type="content" source="../media/server-pane-df80b536.png" alt-text="Screenshot of create SQL database and  with fields filled in." lightbox="../media/server-pane-df80b536.png" :::
 
 1. Select **Next : Networking**, and configure the following settings (accept defaults for fields not specified).
@@ -54,7 +54,7 @@ In this task, you create a SQL database based on the *AdventureWorksLT* sample d
     | ----- | ----- |
     | **Network connectivity** |
     | Connectivity method | Public endpoint |
-    
+
     :::image type="content" source="../media/tab-8a36cd61.png" alt-text="Screenshot of the Create SQL Database Networking tab with settings configured.":::
     
 1. Select **Next : Security**, and for **Enable Azure Defender for SQL**, choose **Not now**. Leave the remaining settings as default (not configured).
@@ -62,14 +62,14 @@ In this task, you create a SQL database based on the *AdventureWorksLT* sample d
     :::image type="content" source="../media/security-tab-a15c3422.png" alt-text="Screenshot of the Create SQL Database Security tab showing the first configured setting.":::
     
 1. Select **Next : Additional settings**, and configure the following settings.
-    
+
     | Setting | Value |
     | ----- | ----- |
     | **Data source** |
     | Use existing data | Sample |
     | **Database collation** |
     | Collation | SQL_Latin1_General_CP1_CI_AS (default) |
-      
+
      :::image type="content" source="../media/additional-settings-tab-5e601100.png" alt-text="Screenshot of the Additional settings tab of the Create SQL Database pane with settings selected.":::
     
 1. Select **Review + create** to validate configuration entries.
@@ -126,7 +126,7 @@ In this task, you configure the server and run a SQL query.
     JOIN SalesLT.Product p
     ON pc.productcategoryid = p.productcategoryid;
     ```
-    
+
     :::image type="content" source="../media/query-editor-decc7acc.png" alt-text="Screenshot of the query editor with the query pane, and the commands running successfully.":::
     
 1.  Select **Run**, and then review the query results in the **Results** pane. The query should run successfully.
