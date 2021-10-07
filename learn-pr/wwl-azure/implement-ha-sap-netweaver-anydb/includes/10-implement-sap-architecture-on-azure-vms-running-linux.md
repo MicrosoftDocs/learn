@@ -2,7 +2,8 @@ Estimated time: 100 minutes
 
 All tasks in this lab are performed from the Azure portal (including the Bash Cloud Shell session).
 
-**Note:** When not using Cloud Shell, the lab virtual machine must have [Azure CLI](/cli/azure/install-azure-cli-windows?view=azure-cli-latest) installed.
+> [!NOTE]
+> When not using Cloud Shell, the lab virtual machine must have [Azure CLI](/cli/azure/install-azure-cli-windows) installed.
 
 Lab files: none
 
