@@ -61,7 +61,7 @@ Now that we have the provider registered we can create a new resource group and 
     > For production workloads, you would want to further customize the creation of your cluster to ensure it meets your security and governance requirements. We are going with a simple cluster purely for training purposes.
     
     ```azurecli-interactive
-    az aks create --name videogamecluster --resource-group videogamerg --generate-ssh-keys
+    az aks create --name videogamecluster --resource-group videogamerg 
     ```
     
 1. Enable Azure Policies for the cluster

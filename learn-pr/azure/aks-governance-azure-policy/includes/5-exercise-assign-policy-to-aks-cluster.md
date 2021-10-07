@@ -1,6 +1,6 @@
 You are now ready to configure Azure policies and initiatives for your AKS cluster. 
 
-In this unit, you'll deploy a non-compliant pod, apply an Azure Policy that enforces the use of only trusted registries and then deploy another non-compliant pod to see the effect of the policy. You will also troubleshoot steps to see why the pods are not being created and you will deploy the **Kubernetes cluster pod security restricted standards for Linux-based workloads** initiative.
+In this unit, you'll deploy a non-compliant pod, apply an Azure Policy that enforces the use of only trusted registries and then deploy another non-compliant pod to see the effect of the Policy. You will also troubleshoot steps to see why the pods are not being created and you will deploy the **Kubernetes cluster pod security restricted standards for Linux-based workloads** initiative.
 
 ## Deploy a non-compliant pod into the cluster
 
@@ -78,13 +78,13 @@ We begin by deploying an image from directly from Docker Hub into the cluster. T
    ![A screenshot showing nginx running, which came from Docker Hub](../media/5-nginx-dockerhub.png)
 
 ## Add Azure Policy to the AKS cluster
-You have successfully deployed your workload on a cluster that doesn't have any policy enforcement on it. Now you will add a policy to the cluster and see how that affects it.
+You have successfully deployed your workload on a cluster that doesn't have any policy enforcement on it. Now you will add a Policy to the cluster and see how that affects it.
 
-### Create a policy
+### Create a Policy
 
 You'd like to ensure that only images from certain registries are allowed in the cluster. You'll need to create a new policy definition and then assign it to a scope; in this case the scope will be our **videogamerg** resource group. Policies can be created and assigned through the Azure portal, Azure PowerShell, or Azure CLI. This exercise takes you through creating a policy in the portal.
 
-Find the built-in policy definitions for managing your cluster using the Azure portal with the following steps. In this case we will be applying the "only trusted registry" [policy]([Policy - Microsoft Azure](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview)).
+Find the built-in policy definitions for managing your cluster using the Azure portal with the following steps. In this case we will be applying the "only trusted registry" [Policy]([Policy - Microsoft Azure](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview)).
 
 1. Go to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure Portal**.
 
@@ -94,7 +94,7 @@ Find the built-in policy definitions for managing your cluster using the Azure p
 
    ![Screenshot showing kubernetes selected for category](../media/5-filtering-for-kubernetes.png)
 
-1. Select the **Kubernetes cluster containers should only use allowed images** policy definition
+1. Select the **Kubernetes cluster containers should only use allowed images** Policy definition
 
 1. Select the **Assign** button at the top left corner of the screen.
 
@@ -110,11 +110,11 @@ Find the built-in policy definitions for managing your cluster using the Azure p
 
 1. Click on the **Create** button
 
-Now that the new policy has been enabled, you can click on **Assignments** to see the assigned policy and select the policy assignment you just created.
+Now that the new Policy has been enabled, you can click on **Assignments** to see the assigned Policy and select the Policy assignment you just created.
 
 ![Policy assigned](../media/5-policy-assigned.png)
 
-Your policy assignment should look like the picture below. Note that effect is set to deny by default. This means that the cluster would not allow resources to be deployed from container registries other than those hosted on Azure Container Registry.
+Your Policy assignment should look like the picture below. Note that effect is set to deny by default. This means that the cluster would not allow resources to be deployed from container registries other than those hosted on Azure Container Registry.
 
 ![Policy assigned](../media/5-policy-assignment-details.png)
 
@@ -133,13 +133,13 @@ Initiatives can be assigned the same way policies are assigned. Follow the steps
 1. Click **Next** again to move on to the **Remediation** tab. Ensure **Create a Managed Identity** is not checked and click next again
 1. Click **Next** then click **Create** at the bottom
 
-Here you can find the policy assignment again by clicking on **Policy** and selecting **Assignments** in the left blade. Clicking on the policy assignment you just created will show that the effect was set to Audit in this case.
+Here you can find the Policy assignment again by clicking on **Policy** and selecting **Assignments** in the left blade. Clicking on the Policy assignment you just created will show that the effect was set to Audit in this case.
 
 ## Test the Azure Policy
 
-Now that you have assigned the restricting policy to the cluster, you will now run a test to see if the policy works. To do this, you will create a new deployment and see if the deployment works. We begin by creating a new kubernetes manifest file and deploying it. 
+Now that you have assigned the restricting Policy to the cluster, you will now run a test to see if the Policy works. To do this, you will create a new deployment and see if the deployment works. We begin by creating a new kubernetes manifest file and deploying it. 
 > [!IMPORTANT]
-> Please note that the policy assignment may take up to 30 minutes to take effect. Because of this delay, in the following steps the policy validation may succeed and the deployment will still not fail if you don't give enough time for the policy to take effect. If this happens, allow for additional time and retry your deployment.
+> Please note that the Policy assignment may take up to 30 minutes to take effect. Because of this delay, in the following steps the Policy validation may succeed and the deployment will still not fail if you don't give enough time for the Policy to take effect. If this happens, allow for additional time and retry your deployment.
 
 1. Create another nginx deployment and service using the code below
 
@@ -202,7 +202,7 @@ Now that you have assigned the restricting policy to the cluster, you will now r
    kubectl get pods
    ```
 
-As you can see in the picture below, even though it appeared the deployment was created, the pod was actually not created. The deployment was blocked by the policy you just created. The pod that was created before the policy was assigned was however not stopped. The policy also didn't prevent the service from getting created. If you try opening up the EXTERNAL-IP in a browser, you will get no response which further shows that the deployment was not successful. 
+As you can see in the picture below, even though it appeared the deployment was created, the pod was actually not created. The deployment was blocked by the Policy you just created. The pod that was created before the Policy was assigned was however not stopped. The Policy also didn't prevent the service from getting created. If you try opening up the EXTERNAL-IP in a browser, you will get no response which further shows that the deployment was not successful. 
 
 ![screenshot showing that the pod was not deployed](../media/5-deployment-not-created.png)
 
@@ -220,13 +220,13 @@ In the previous section we noticed that the second pod was not deployed. In this
 
    ![screenshot showing the failed deployment](../media/5-describing-failed-deployment.png)
 
-2. Next we will describe the failed ReplicaSet. Copy the name of the ReplicaSet highlighted in the picture above and replace the placeholder with the copied name. Run the command
+1. Next we will describe the failed ReplicaSet. Copy the name of the ReplicaSet highlighted in the picture above and replace the placeholder with the copied name. Run the command
 
    ```bash
    kubectl describe replicaset <ReplicaSet name>
    ```
 
-3. Here you will see that the replicas failed because of the policy
+1. Here you will see that the replicas failed because of the Policy
 
    ![screenshot showing the reason why the pod failed](../media/5-reason-replicaset-failure.png)
 
@@ -266,7 +266,7 @@ EOF
 
 ## Redeploying the pods using an Azure Container Registry Image
 
-Now that you know that the policy prevents images from Dockerhub from being created in your cluster based on your policy, let us try redeploying the same workload using an image from ACR. In this section you will create an Azure Container Registry, copy the nginx image from Dockerhub to the new registry and attempt to redeploy the pod form your container registry. We will use Azure CLI to create the container registry.
+Now that you know that the Policy prevents images from Dockerhub from being created in your cluster based on your Policy, let us try redeploying the same workload using an image from ACR. In this section you will create an Azure Container Registry, copy the nginx image from Dockerhub to the new registry and attempt to redeploy the pod form your container registry. We will use Azure CLI to create the container registry.
 
 1. Head back to **Cloud shell** on Azure Portal and enter the following commands to create a new container registry
 
@@ -322,7 +322,7 @@ Now that you know that the policy prevents images from Dockerhub from being crea
         spec:
           containers:
           - name: second-simple-nginx
-            image: videogameacr29230.azurecr.io/nginx:v1
+            image: <acr name>.azurecr.io/nginx:v1
             resources:
               requests:
                 cpu: 100m
@@ -352,4 +352,4 @@ Now that you know that the policy prevents images from Dockerhub from being crea
 
 ## Use policies to enforce standards
 
-You've seen how you could use policies to ensure that your cluster only allows Images from Azure Container Registry to be deployed. You also saw how to add one of the build-in initiatives that can help easily govern your cluster and make it more secure. You however saw that the pod that was deployed before the policy was assigned is still running. In the next unit, we will see how we can check compliance of pods running on the cluster.
+You've seen how you could use policies to ensure that your cluster only allows Images from Azure Container Registry to be deployed. You also saw how to add one of the build-in initiatives that can help easily govern your cluster and make it more secure. You however saw that the pod that was deployed before the Policy was assigned is still running. In the next unit, we will see how we can check compliance of pods running on the cluster.
