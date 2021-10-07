@@ -110,7 +110,6 @@ For secure parameters, remember to explicitly pass each parameter into your depl
 
 ### Combine approaches
 
-It's common to combine multiple approaches to handle your parameters. For example, you can store the majority of your parameter values in parameter files, and set secure values by using a variable group, like in the following example:
+It's common to combine multiple approaches to handle your parameters. For example, you can store the majority of your parameter values in parameter files, and then just set secure values by using a variable group, like in the following example:
 
 :::code language="yaml" source="code/6-multiple.yml" highlight="1-2, 27-28" :::
-<!-- TODO verify the above works -->
