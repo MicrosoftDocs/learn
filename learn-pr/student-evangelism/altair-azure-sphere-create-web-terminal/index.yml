@@ -3,12 +3,12 @@ uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal
 metadata:
   title: Create and customize Altair 8800 cloud services
   description: Learn how to customize IoT Central, create the Altair Web Terminal, and run the Altair virtual disk server.
-  ms.date: 08/30/2021
+  ms.date: 10/01/2021
   author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-title: Create and customize Altair 8800 cloud services.
+title: Create and customize Altair 8800 cloud services
 summary: Learn how to customize IoT Central, create the Altair Web Terminal, and run the Altair virtual disk server.
 abstract:  |
   In this module, you will:

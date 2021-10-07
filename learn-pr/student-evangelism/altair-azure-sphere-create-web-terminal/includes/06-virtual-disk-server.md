@@ -6,7 +6,7 @@ If you don't have the MikroE microSD Click, then you can run the virtual disk se
 
 Drive B: disk sector reads and writes are redirected over MQTT to an MQTT enabled Python-based virtual disk server. Drive B: disk sectors are also cached on one of the real-time cores. Caching significantly improves read/write performance.
 
-## The Altair virtual disk server
+## The Altair Virtual Disk Server
 
 :::image type="content" source="../media/altair-azure-sphere-disk-cache-server.png" alt-text="Diagram of the Altair virtual disk architecture." border="false":::
 
@@ -24,7 +24,7 @@ Disk writes work as follows:
 
 The virtual disk server is not required if you have an Avnet Azure Sphere Starter Kit and the MikroE microSD Click. If you have MikroE microSD Click, you can skip to the Knowledge check unit for this module.
 
-## Starting the Virtual Disk Server
+## Starting the virtual disk server
 
 Applications running on CP/M will have read/write access to drive B: enabling you can save files when the virtual disk server running. The virtual disk server can run on your desktop, or in a cloud-based Azure Virtual Machine.
 

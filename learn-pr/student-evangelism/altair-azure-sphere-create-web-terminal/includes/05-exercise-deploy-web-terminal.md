@@ -43,7 +43,7 @@ Install the Visual Studio Code Static Web Apps Extension from the [Extension Mar
 
 ## Deploy the Altair Web Terminal
 
-1. Still in Visual Studio Code, press <kbd>F1</kbd>
+1. Still in Visual Studio Code, press **F1**
 1. Type **create static web app**, and select **Azure Static Web Apps: Create Static Web App...(Advanced)**.
 1. Select your subscription.
 1. You may be prompted to sign in with your GitHub account.
@@ -88,7 +88,7 @@ When completed, your **local.settings.json** file will look similar to the follo
 
 ## Upload the Altair Web Terminal local settings
 
-1. Still in Visual Studio Code, press <kbd>F1</kbd>
+1. Still in Visual Studio Code, press **F1**
 1. Type **static local**, and select **Azure Static Web Apps: Upload Local Settings...**.
 1. Select your subscription.
 1. Select the **Static Web App**. Enter the name you created **AltairWebTerminal**.
