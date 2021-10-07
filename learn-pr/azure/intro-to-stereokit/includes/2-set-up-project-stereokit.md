@@ -59,8 +59,14 @@ It's one of the quickest methods to get a StereoKit project started. There are t
 ### Steps to download & install StereoKit’s visual studio template
 
 1. Download the StereoKit templates from [StereoKit Templates - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=NickKlingensmith.StereoKitTemplates).
+
+    :::image type="content" source="../media/.png" alt-text="” " lightbox="../media/.png":::
 2. Open the downloaded file & click on **Install** button.
+
+    :::image type="content" source="../media/.png" alt-text="” " lightbox="../media/.png":::
 3. Click **close** in the pop up once the installation is complete.
+
+    :::image type="content" source="../media/.png" alt-text="” " lightbox="../media/.png":::
 
 > [!Note]
     > You may also install the [NuGet package](https://www.nuget.org/packages/StereoKit) directly into your project.
