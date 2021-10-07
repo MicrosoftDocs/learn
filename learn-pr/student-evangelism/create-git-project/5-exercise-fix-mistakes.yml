@@ -4,11 +4,12 @@ title: Exercise - Use Git to fix mistakes
 metadata:
   title: Exercise - Use Git to fix mistakes
   description: Practice using Git tools to fix mistakes.
-  ms.date: 09/27/2021
+  ms.date: 10/08/2021
   author: mshumba
-  ms.author: mufaroshumba
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-git
+  ms.custom: nextgen
 durationInMinutes: 10
 azureSandbox: true
 interactive: bash

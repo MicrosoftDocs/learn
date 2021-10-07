@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Review what you've learned in the Create Git Project Module.
-  ms.date: 09/27/2021
+  ms.date: 10/08/2021
   author: mshumba
-  ms.author: mufaroshumba
+  ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-git
+  ms.custom: nextgen
 durationInMinutes: 4
 quiz:
   title: ''

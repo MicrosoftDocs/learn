@@ -5,10 +5,11 @@ metadata:
   title: Introduction
   description: Introduction
   author: mshumba
-  ms.author: mufaroshumba
-  ms.date: 09/27/2021
+  ms.author: chnoring
+  ms.date: 10/08/2021
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-git
+  ms.custom: nextgen
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

@@ -4,11 +4,12 @@ title: Summary
 metadata:
   title: Summary
   description: Review what you've learned so far about creating Git projects.
-  ms.date: 09/27/2021
+  ms.date: 10/08/2021
   author: mshumba
-  ms.author: mufaroshumba
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: nextgen
 durationInMinutes: 4
 content: |
   [!include[](includes/7-summary.md)]
