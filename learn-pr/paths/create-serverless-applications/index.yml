@@ -28,8 +28,6 @@ products:
 - azure-cloud-shell
 languages:
 - powershell
-salesplays:
-
 modules:
 - learn.choose-azure-service-to-integrate-and-automate-business-processes
 - learn.create-serverless-logic-with-functions
