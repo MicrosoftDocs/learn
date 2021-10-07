@@ -111,6 +111,8 @@ func calc(number1 string, number2 string) (sum int, mul int) {
 You now need two variables to store the results of the function. (It won't compile otherwise.) Here's what it looks like:
 
 ```go
+package main
+
 import "fmt"
 
 func main() {
@@ -123,6 +125,8 @@ func main() {
 Another interesting feature in Go is that if you don't need one of the return values from a function, you can discard it by assigning the returning value to the `_` variable. The `_` variable is the idiomatic way for Go to ignore return values. It allows the program to compile. So, if you only want the sum value, you could use this code:
 
 ```go
+package main
+
 import "fmt"
 
 func main() {

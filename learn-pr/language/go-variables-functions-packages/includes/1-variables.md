@@ -69,6 +69,8 @@ var (
 There's another way you can declare and initialize variables. This method is the most common way to do so in Go. The same example we've been using could look like this:
 
 ```go
+package main
+
 import "fmt"
 
 func main() {

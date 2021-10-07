@@ -204,7 +204,7 @@ What happens if you try to call the `logMessage` variable or the `internalSum` f
 >
 >import (
 >  "fmt"
->  import "github.com/myuser/calculator"
+>  "github.com/myuser/calculator"
 >)
 >
 > func main() {
