@@ -5,7 +5,6 @@ When you deploy your changes to multiple environments, the steps involved in dep
 After talking to your colleagues in the website team, you decide on the following pipeline for your toy company's website:
 
 :::image type="content" source="../media/3-stages.png" alt-text="Diagram showing a series of pipeline stages, including those for test and production deployments." border="false":::
-<!-- TODO the above diagram has an error - waiting for new version from designer-->
 
 First, the pipeline lints the Bicep code to check it's valid and follows best practices. Linting happens on the Bicep code in isolation, so it doesn't matter how many environments you're deploying to - it only runs once.
 

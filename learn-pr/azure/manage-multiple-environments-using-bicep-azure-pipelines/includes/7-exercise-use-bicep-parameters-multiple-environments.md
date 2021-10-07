@@ -1,13 +1,13 @@
-Now that your pipeline deploys to both of your environments, you're ready to integrate with the product reviews API. Your website team has provided you with the API keys and URLs that your website should use to access the service, and there are different values for each environment. In this unit, you'll update your pipeline to deploy the product reviews API settings to each of your environment.
+Now that your pipeline deploys to both of your environments, you're ready to integrate with the third-party product reviews API. Your website team has provided you with the API keys and URLs that your website should use to access the service, and there are different values for your test and production environments to use. In this unit, you'll update your pipeline to configure each of your environments with the correct product reviews API settings.
 
 During the process you'll:
 
 > [!div class="checklist"]
 > * Create variable groups for each of your environments.
-> * Update the pipeline templates so it picks the correct variable group for each environment instead of using template parameters.
+> * Update the pipeline so it picks the correct variable group for each environment instead of using template parameters.
 > * Update your Bicep file to propagate the settings you need for the product review API.
 > * Update the variable group and pipeline to set the values for the product review API settings.
-> * Run your pipeline, and observe the changes to your Azure environment.
+> * Review the pipeline results and the changes to your Azure environment.
 
 ## Add variable groups
 
@@ -179,7 +179,7 @@ Now that you're adding more parameters that vary between each environment, it's 
    git push
    ```
 
-## Watch output for the different environments
+## Review the deployment results
 
 1. In your browser, navigate to **Pipelines**.
 
