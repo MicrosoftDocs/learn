@@ -1,9 +1,7 @@
 This is a StereoKitInk tutorial designed to teach people the fundamentals of drawing and interacting with Mixed Reality content. You'll learn how to make a core application loop radial hand menus, easy window menus with automatic layout, object-based menus with more explicit layouts, and file pickers, among other things. You'll also discover how simple it is to draw models, lines and interact with your fingers.
 
-* Download StereoKitInk sample application from the provided GitHub link [maluoi/ StereoKit-PaintTutorial](https://github.com/maluoi/StereoKit-PaintTutorial/tree/feature/sk_ink).
-* After importing the StereoKit UWP Templates, open them in Visual Studio 2019. You may see the Solution Explorer hierarchy, which comprises Assets, Painting Menu, Palette Menu, and Main Program.
-
-Note: The program will contain errors, which will be cleared at a later time during debugging.
+* First download and install [StereoKit Universal Window Platform Templates](https://marketplace.visualstudio.com/items?itemName=NickKlingensmith.StereoKitTemplates) as mentioned in chapter-2.
+* Then download StereoKitInk sample application from the provided GitHub link [maluoi/ StereoKit-PaintTutorial](https://github.com/maluoi/StereoKit-PaintTutorial/tree/feature/sk_ink).
 
 ## 3D model assets
 
