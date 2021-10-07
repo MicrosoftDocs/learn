@@ -38,12 +38,12 @@ units:
 - learn.wwl.design-application-architecture.introduction
 - learn.wwl.design-application-architecture.describe-message-event-scenarios
 - learn.wwl.design-application-architecture.design-messaging-solution
-- design-event-hub-messaging-solution.
+- learn.wwl.design-application-architecture.design-event-hub-messaging-solution
 - learn.wwl.design-application-architecture.design-event-driven-solution
 - learn.wwl.design-application-architecture.design-automated-app-deployment-solution
 - learn.demo-interact-with-a-computer.demo-introduction
 - learn.wwl.design-application-architecture.configuration-management-solution
-- design-caching-solution.
+- learn.wwl.design-application-architecture.design-caching-solution
 - learn.wwl.design-application-architecture.knowledge-check
 - learn.wwl.design-application-architecture.summary-resources
 badge:

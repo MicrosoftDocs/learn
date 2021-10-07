@@ -22,7 +22,7 @@ Let’s suppose a user uploads a new song by using your mobile music-sharing app
 
 ## What is an event?
 
-[Events](https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services#event) are lighter weight than messages and are most often used for broadcast communications. There are two components involved with events:
+[Events](https://docs.microsoft.com/azure/event-grid/compare-messaging-services#event) are lighter weight than messages and are most often used for broadcast communications. There are two components involved with events:
 
 - Publishers, which send the event. 
 

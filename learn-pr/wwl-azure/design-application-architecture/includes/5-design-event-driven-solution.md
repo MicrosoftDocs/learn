@@ -20,8 +20,8 @@ The following illustration displays an Azure Event Grid positioned between multi
 
 
 
-> [!TIP]  
-‎> Event Grid sends an event to indicate something has happened or changed. However, the actual object that was changed isn’t part of the event data. Instead, a URL or identifier is often passed to reference the changed object.
+>[!TIP]  
+‎>Event Grid sends an event to indicate something has happened or changed. However, the actual object that was changed isn’t part of the event data. Instead, a URL or identifier is often passed to reference the changed object.
 
 ## Comparison of services
 
