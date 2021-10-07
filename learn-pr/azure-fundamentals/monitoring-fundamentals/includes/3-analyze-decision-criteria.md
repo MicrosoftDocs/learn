@@ -1,6 +1,6 @@
 In this unit, you'll analyze the criteria that experts employ when they choose an Azure monitoring service for a specified business need.  By understanding the criteria, you can better assess the nuanced differences among the products.
 
-### Do you need to analyze how you're using Azure to reduce costs?  Improve resilience?  Harden your security?
+### Do you need to analyze how you're using Azure to reduce costs, improve resilience, or harden your security?
 
 Choose Azure Advisor when you're looking for an analysis of your deployed resources.  Azure Advisor analyzes the configuration and usage of your resources and provides suggestions on how to optimize for reliability, security, performance, costs, and operations based on experts' best practices.
 

@@ -122,9 +122,9 @@ This parameter's default value uses the `resourceGroup()` function again, like y
 
 The resource group ID includes the Azure subscription ID (`3e57e557-826f-460b-8f1c-4ce38fd53b32`) and the resource group name (`MyResourceGroup`). The resource group ID is often a good candidate for a seed value for resource names, because:
 
-- Every time you deploy the same resources, they'll go into the same resource group. Bicep will give the same values from the `uniqueString()` function.
-- If you deploy into two different resource groups in the Azure subscription, the `resourceGroup().id` value will be different because the resource group names will be different. Bicep will give different values from the `uniqueString()` function for each set of resources.
-- If you deploy into two different Azure subscriptions, _even if you use the same resource group name_, the `resourceGroup().id` value will be different because the Azure subscription ID will be different. Bicep will give different values from the `uniqueString()` function for each set of resources.
+- Every time you deploy the same resources, they'll go into the same resource group. The `uniqueString()` function will return the same value every time.
+- If you deploy into two different resource groups in the Azure subscription, the `resourceGroup().id` value will be different because the resource group names will be different. The `uniqueString()` function will give different values for each set of resources.
+- If you deploy into two different Azure subscriptions, _even if you use the same resource group name_, the `resourceGroup().id` value will be different because the Azure subscription ID will be different. The `uniqueString()` function will again give different values for each set of resources.
 
 > [!TIP]
 > It's often a good idea to use template expressions to create resource names. Many Azure resource types have rules about the allowed characters and length of their names. Embedding the creation of resource names in the template means that anyone who uses the template doesn't have to remember to follow these rules themselves.
@@ -151,9 +151,9 @@ The default value for the `storageAccountName` parameter now has two parts to it
 
 The other members of your team have been impressed with the Bicep code you've built so far. You've decided together that you'll use your template to deploy the resources to support the launches of all of your new toys. 
 
-One of your colleagues has suggested that you create non-production environments for each product launch to help the marketing team test the sites before they're deployed into production. However, you want to make sure you don't spend too much money on your non-production environments. So you decide on some policies together:
+One of your colleagues has suggested that you create non-production environments for each product launch to help the marketing team test the sites before they're available to customers. However, you want to make sure you don't spend too much money on your non-production environments. So you decide on some policies together:
 
-- In production environments, storage accounts will be deployed at the `Standard_GRS` (geo-redundant storage) SKU for higher resiliency. App Service plans will be deployed at the `P2_v3` SKU for higher performance.
+- In production environments, storage accounts will be deployed at the `Standard_GRS` (geo-redundant storage) SKU for high resiliency. App Service plans will be deployed at the `P2_v3` SKU for high performance.
 - In non-production environments, storage accounts will be deployed at the `Standard_LRS` (locally redundant storage) SKU. App Service plans will be deployed at the free `F1` SKU.
 
 One way to implement these business requirements is to use parameters to specify each SKU. However, specifying every SKU as a parameter can get difficult to manage, especially when you have larger templates. Another option is to embed the business rules into the template by using a combination of parameters, variables, and expressions.
@@ -175,7 +175,6 @@ Next, you can create variables that determine the SKUs to use for the storage ac
 ```bicep
 var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
 var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'F1'
-var appServicePlanTierName = (environmentType == 'prod') ? 'PremiumV3' : 'Free'
 ```
 
 Notice some new syntax here too. Let's break it down:

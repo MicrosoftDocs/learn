@@ -12,9 +12,7 @@ Azure Security Center is offered in two pricing tiers, **Free** and **Standard**
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the Azure **Home** page, in the top search bar, search for and select *Security Center*. The **Security Center | Overview** pane appears.
-
-1. In the left menu pane, under **Management**, select **Pricing & settings**. The **Pricing & settings** pane appears for **Security Center**.
+1. In resource menu, select **Security Center**. The **Security Center** Overview pane appears.
 
 1. Select the subscription that will be upgraded to Standard.
 
@@ -43,9 +41,9 @@ When automatic provisioning is enabled, Security Center installs the Microsoft M
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the **Security Center Overview** pane, in the left menu pane, under **Management**, select **Security policy**. The **Security policy** pane appears for the **Security Center**.
+1. In the **Security Center** Overview menu, under **Management**, select **Security policy**. The **Security Center** Security Policy pane appears.
 
-1. Under **Policy Management**, on the row of the subscription, select the subscription on which agents will be installed.
+1. In the list of management groups and subscription, select the subscription on which agents will be installed.
 
 1. Select **Install agents**.
 

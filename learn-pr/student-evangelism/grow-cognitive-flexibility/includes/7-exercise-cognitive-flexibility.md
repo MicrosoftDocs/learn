@@ -1,35 +1,35 @@
-In this exercise, you will be faced with a scenario. Take the time to read through the scenario, and think about how you would approach it. Then have a look at the suggested answers. There's also a reflective piece as part of this exercise. In this part, you will reflect on your cognitive skills when being faced with the initially described scenario.
+In this exercise, you'll consider a scenario. Take the time to read through the scenario and think about how you would approach it. Then look at the suggested answers. Finally, you'll reflect on your cognitive skills, as illustrated by the scenario.
 
 ## Scenario
 
-Consider the following scenario. One of the participants in your workshop works in their organization’s Human Resources (HR) department. The HR department is migrating to new software applications for their people-management tasks. The participant is worried because the tool seems quite complex. They have started using the software but realize that there are several options and menus that they need to learn about and the first few tasks they perform result in errors. The participant is concerned it might take them longer to perform the same tasks that they used to do manually and that this might affect their performance appraisals.
+One of the participants in your workshop works in his organization's Human Resources (HR) department. The HR department is migrating to new software applications for people-management tasks. The participant is worried because the tool seems complex. He's started using the software but realizes there are several options and menus he needs to learn about. The first few tasks he does result in errors. He's concerned that it might take him longer to perform the same tasks he used to do manually and that this reduced speed might affect his performance appraisals.
 
-How can you guide the participant to increase their cognitive flexibility so that they’re better equipped to adapt to the changes in their work environment?
+How can you guide him to increase his cognitive flexibility so that he's better equipped to adapt to the changes in his work environment?
 
 Suggested answers:
 
-- You acknowledge the participant’s feelings that the tool is complex. You tell them you felt the same initially, but with practice and the help of some tutorials, you were able to quickly grasp the various options. You mention that online forums also had helpful tips, which made it easier for you to complete your tasks. You share the links to the tutorials with the participant and offer to demonstrate how to navigate the tool user interface (UI) to go through some of the tasks.
+- You acknowledge the participant's feelings about the complexity of the tool. You tell him you felt the same way initially, but with practice and the help of some tutorials, you were able to quickly grasp the various options. You mention that online forums also had helpful tips, which made it easier for you to complete your tasks. You share the links to the tutorials with him and offer to demonstrate how to navigate the tool's user interface (UI) to go through some of the tasks.
 
-- You reinforce your confidence in the participant that they will be able to learn and master the tool to continue to perform their tasks well. You explain that the migration to new software tools is an ongoing exercise and there will be other upgrades or tools being introduced in the future.
+- You reinforce your confidence in the participant that he'll be able to learn and master the tool to continue to do his tasks well. You explain that the migration to new software tools is an ongoing exercise and that there will be other upgrades or tools introduced in the future.
 
-You emphasize the importance of adapting to this change to be prepared for further changes. You explain that by reorienting their goals to master the tool rather than focusing only the subset of tasks that they need to perform daily, they will be better prepared for any further changes that might occur in the future. You also explain that if they stop focusing on the performance review and change their mindset to a growth mindset, they will be able to learn and become proficient at using the tool more quickly.
+- You emphasize the importance of adapting to this change and being prepared for further changes. You explain that by reorienting his goals to master the tool rather than focusing on the subset of tasks he needs to do daily, he'll be better prepared for any changes that might occur in the future. You also explain that if he stops focusing on the performance review and changes his mindset to a growth mindset, he'll be able to learn and become proficient at using the tool more quickly.
 
-You offer to point them to additional resources and training sessions on using the tool and encourage the participant to reach out to other team members for help when they’re not sure how to proceed.
+- You offer to point him to resources and training sessions on using the tool. You also encourage him to reach out to other team members for help when he's not sure how to proceed.
 
 ## Reflect on your cognitive flexibility skills
 
-Reflect on how you would have approached the situation. Think about your responses and note them down. Note areas that you need to work on more than others:
+Reflect on how you would have approached the situation. Think about your responses and write them down. Note areas that you need to work on more than others.
 
-- Is there anything different you would have done?
+- Is there anything you would have done differently?
 
-- Is there any additional way you can help the participant develop their cognitive flexibility skills?
+- Is there any other way you can help the participant develop his cognitive flexibility skills?
 
 - Can you think of a time when you faced a setback in an assignment or a project? How did you react then, and how would you react now if faced with a similar situation?
 
-- Do you feel your reactions to failures or disruptions has evolved over time? Do you apply cognitive flexibility in how you approach such situations?
+- Do you feel your reactions to failures or disruptions have evolved over time? Do you apply cognitive flexibility in how you approach these situations?
 
 - How has peer feedback or guidance from friends and coworkers helped you stretch your cognitive flexibility?
 
 - Do you make connections to your past experiences and apply those learnings to overcome your present challenges?
 
-- In what way has your mindset and goal setting abilities reflect cognitive flexibility?
+- How have your mindset and goal setting abilities reflected cognitive flexibility?

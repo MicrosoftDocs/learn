@@ -45,7 +45,7 @@ Return value | Meaning
 
 XACT_State can be used before the ROLLBACK command, to check whether the transaction is active.
 
-The following code shows the XACT_STATE function being used within the CATCH block so that the transaction is only rolled back if XACT_STATE returns -1.
+The following code shows the XACT_STATE function being used within the CATCH block so that the transaction is only rolled back if there is an active user transaction.
 
 ```sql
 BEGIN TRY
@@ -58,7 +58,7 @@ BEGIN TRY
 END TRY
 BEGIN CATCH
 	SELECT ERROR_NUMBER() AS ErrNum, ERROR_MESSAGE() AS ErrMsg;
-	IF (XACT_STATE()) = -1
+	IF (XACT_STATE()) <> 0
     	BEGIN
         ROLLBACK TRANSACTION;
     	END;

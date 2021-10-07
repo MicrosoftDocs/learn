@@ -8,7 +8,7 @@
     As part of its overall data strategy, Tailwind Traders have been using PostgreSQL for several years. You and your team probably already know the benefits of PostgreSQL. Part of your migration is to use Azure Database for PostgreSQL, and you want to make sure that you'll have access to the same benefits as your on-premises server before moving to the cloud.
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/icon-service-Azure-Database-PostgreSQL-Server-b464e880.png" alt-text="icon.":::
+    :::image type="content" source="../media/icon-service-Azure-Database-PostgreSQL-Server-b464e880.png" alt-text="icon":::
 
   :::column-end:::
 :::row-end:::

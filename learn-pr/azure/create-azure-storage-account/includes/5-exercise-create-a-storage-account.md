@@ -40,11 +40,11 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Enable storage account key access | *Check*. We'll allow clients to access dat via SAS. |
     | Default to Azure Active Directory authorization in the Azure portal | *Uncheck*. Clients are public, not part of an Active Directory. |
     | Minimum TLS version | Select *Version 1.2* from dropdown list. TLS 1.2 is the most secure version of TLS and is used by Azure Storage on public HTTPS endpoints. TLS 1.1 and 1.0 is supported for backwards compatibility. See *Warning* at end of table. |
-    | **Data Lake Storage Gen 2** | |
+    | **Data Lake Storage Gen2** | |
     | Enable hierarchical namespace | *Uncheck*. This is for big-data applications that aren't relevant to this module. |
     | **Blob storage** | |
     | Enable network file share | *Uncheck* (default). |
-    | Allow cross-tenant replication | *Unheck*. Active Directory is not checking user access. |
+    | Allow cross-tenant replication | *Uncheck*. Active Directory is not checking user access. |
     | Access tier | *Hot*. This setting is only used for Blob storage. The *Hot* access tier is ideal for frequently accessed data; the *Cool* access tier is better for infrequently accessed data. This setting only sets the _default_ value. When you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so we'll use the high-performance option for our blobs. |
     | **Azure Files**| |
     | Enable large file shares | *Uncheck*. Large file shares provide support up to a 100 TiB, however this type of storage account can't convert to a Geo-redundant storage offering, and upgrades are permanent. |
@@ -78,12 +78,12 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. Select **Next : Tags**. Here, you can associate key/value pairs with the account for your categorization to determine if a feature is available to selected Azure resources.
 
-1. Select **Review + create** to validate your options and to ensure all the required fields are selected. If there are issues, this tab will identify them so you can correct them..
+1. Select **Review + create** to validate your options and to ensure all the required fields are selected. If there are issues, this tab will identify them so you can correct them.
 
-1. After validation passes successfully, select **Create** to deploy the storage account.
+1. When validation passed successfully, select **Create** to deploy the storage account.
 
-   It may take up to two minutes to deploy the account.
+   Allow deployment to complete, whic may take up to two minutes to complete.
 
-1. When deployment is complete, select **Go to resource** to view your newly-created storage account.
+1. When deployment is complete, select **Go to resource** to view Essential details about storage account.
 
 You created a storage account with settings driven by your business requirements. For example, you might have selected a West US datacenter because your customers were primarily located in southern California. This is a typical flow: first analyze your data and goals, and then configure the storage account options to match.

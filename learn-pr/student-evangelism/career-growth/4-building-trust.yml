@@ -4,7 +4,7 @@ title: Build trust to improve your professional brand
 metadata:
   unitType: learning-content 
   title: Build trust to improve your professional brand
-  description: Build trust to growth-hack your career.
+  description: In this unit, you learn about building trust to growth-hack your career.
   ms.date: 08/23/2021 
   author: jlooper 
   ms.author: jelooper 
@@ -15,14 +15,14 @@ content: |
   [!include[](includes/4-building-trust.md)]
 quiz:
   questions:
-  - content: "'Managing Up' includes:"
+  - content: "The concept of 'managing up':"
     choices:
-    - content: "Asking appropriate questions of a manager."
+    - content: "Includes asking appropriate questions of your manager."
       isCorrect: true
-      explanation: "Correct, it's possible to lead a conversation with a manager to help them understand an employee's perspectives."
-    - content: "Implies that a manager is incompetent."
+      explanation: "Correct. It's a good strategy to lead conversations that help your manager understand your perspectives."
+    - content: "Implies that your manager is incompetent."
       isCorrect: false
-      explanation: "False, managing up can help both an employee and their manager."
-    - content: "Does not work when both a manager and an employee are working remotely."
+      explanation: " No, 'managing up' can help both you and your manager be stronger work partners."
+    - content: "Doesn't work when you and your manager are both working remotely."
       isCorrect: false
-      explanation: "False, it's possible to use communication tactics such as these both online and in person."
+      explanation: "You can 'manage up' effectively both in person and online."

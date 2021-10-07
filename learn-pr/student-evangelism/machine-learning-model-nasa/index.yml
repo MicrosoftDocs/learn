@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: nextgen
 title: Build a machine learning model
 summary: In this module you focus on a local analysis of your data by using scikit-learn, and use a decision tree classifier to gain knowledge from raw weather and rocket launch data.
 abstract: |

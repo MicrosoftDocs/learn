@@ -1,3 +1,6 @@
+>[!NOTE]
+> The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module. Let's go!
+
 You use an Azure Kubernetes Service (AKS) cluster to host the drone tracking solution. The DevOps team uses standard declarative YAML files to deploy various services in the solution. In the current deployment workflow, the development teams create the deployment files for each application. The team is reviewing Helm as an alternative to simplify the management of cloud-native application deployments.
 
 In this exercise, you'll install an AKS cluster for the team test deployments using HELM. You'll use a script to create and configure your Azure Kubernetes Service (AKS) cluster.

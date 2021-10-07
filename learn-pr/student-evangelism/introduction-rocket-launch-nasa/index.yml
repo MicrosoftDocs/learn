@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: nextgen
 title: Introduction to rocket launches
 summary: Get an introduction to how NASA chooses a date for a rocket launch and discover machine learning fundamentals.
 abstract: |

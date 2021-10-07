@@ -36,7 +36,7 @@ Here, you'll create an Azure Cosmos DB instance and use environment variables to
 
 ## Deploy a container that works with your database
 
-Here you'll create an Azure container instance that can read from and write records to your Azure Cosmos DB instance.
+Here, you'll create an Azure container instance that can read from and write records to your Azure Cosmos DB instance.
 
 The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT` and `COSMOS_DB_MASTERKEY`, hold the values you need to connect to the Azure Cosmos DB instance.
 
@@ -71,7 +71,7 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
 1. In a browser, go to your container's IP address.
 
     > [!IMPORTANT]
-    > Sometimes containers take a minute or two to fully start and be able to receive connections. If there's no response when you navigate to the IP address in your browser, wait a few moments and refresh the page.
+    > Sometimes containers take a minute or two to fully start and be able to receive connections. If there's no response when you go to the IP address in your browser, wait a few moments, and refresh the page.
 
     Once the app is available, you'll see this.
 

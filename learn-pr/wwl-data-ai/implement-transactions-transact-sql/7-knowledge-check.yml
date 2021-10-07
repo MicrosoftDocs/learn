@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/15/2021
+  ms.date: 09/30/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
@@ -48,3 +47,14 @@ quiz:
     - content: "Whether or not the current transaction has finished."
       isCorrect: false
       explanation: "That's incorrect. XACT_STATE tests for open transactions and not whether a transaction has completed."
+  - content: "What is the default transaction isolation level for Azure SQL Database?"
+    choices:
+    - content: "READ_COMMITTED_SNAPSHOT_ON"
+      isCorrect: true
+      explanation: "That's correct. READ_COMMITTED_SNAPSHOT_ON is the default transaction isolation level for Azure SQL Database."
+    - content: "READ_COMMITTED_SNAPSHOT_OFF"
+      isCorrect: false
+      explanation: "That's incorrect. READ_COMMITTED_SNAPSHOT_OFF is the default transaction isolation level for SQL Server."
+    - content: "XACT_ABORT"
+      isCorrect: false
+      explanation: "That's incorrect. XACT_ABORT is not a transaction isolation level."

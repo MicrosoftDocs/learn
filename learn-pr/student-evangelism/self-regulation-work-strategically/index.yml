@@ -1,15 +1,16 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.self-regulation-work-strategically
 metadata:
-  title: 'Leverage self-regulation to work strategically'
+  title: 'Use self-regulation to work strategically'
   description: Learn how to use self-regulation to work strategically.
   ms.date: 09/07/2021
   author: interurban
   ms.author: jadenyer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'Leverage self-regulation to work strategically'
-summary: Use self-regulation to work strategically.
+  ms.custom: nextgen
+title: 'Use self-regulation to work strategically'
+summary: In this module, you'll learn about using self-regulation to respond effectively to challenges. You'll also use goal-orientation theory to diagnose what motivates you to learn.
 abstract:  | 
   In this module, you will:
   - Explore self-regulation, metacognition, and emotional intelligence.
