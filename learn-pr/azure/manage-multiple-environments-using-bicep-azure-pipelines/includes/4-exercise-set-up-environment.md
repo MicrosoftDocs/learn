@@ -245,7 +245,7 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
 ## Delete the old environment
 
-In a previous version of the pipeline, you used a single environment named Website. Now that you've created pipeline environments that represent your new environments, you can delete the old pipeline environment.
+In the previous versions of the pipeline, you used a single environment named *Website*. Now that you've created pipeline environments that represent your new environments, you'll delete the old pipeline environment.
 
 1. Go to **Pipelines** > **Environments**.
 
@@ -256,3 +256,25 @@ In a previous version of the pipeline, you used a single environment named Websi
 1. Near the upper right of the page, select the button with three dots and select **Delete** from the pop-up menu.
 
 1. Select **Delete** to confirm the deletion.
+
+## Delete the old variables
+
+In the previous versions of the pipeline, you used a single set of variables to define the parameters and deployment configuration. Now that you're deploying to multiple environments, you'll delete these variables and replace them with environment-specific sets of variables.
+
+1. Go to **Pipelines** > **Pipelines**.
+
+1. Select the **toy-website-environments** pipeline.
+
+   :::image type="content" source="../media/4-pipeline-variables.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline, with the Variables button highlighted.":::
+
+1. Select the **Edit** button.
+
+   :::image type="content" source="../media/4-pipeline-edit.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline, with the Edit button highlighted.":::
+
+1. Select the **Variables** button.
+
+1. Select the **Delete variable** button for each of the three variables.
+
+   :::image type="content" source="../media/4-variables-delete.png" alt-text="Screenshot of the Azure DevOps interface that shows the list of variables, with the delete button highlighted.":::
+
+1. Select the **Save** button.
