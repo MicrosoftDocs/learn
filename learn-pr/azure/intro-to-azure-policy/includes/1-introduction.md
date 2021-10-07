@@ -4,7 +4,7 @@ Policy is the backbone of Azure implementation and compliance. Compliance is an 
 
 ## Example scenario
 
-Due a new cost optimization initiative in your company, you should be able to have a more granular control over the resources deployed in your Azure environment. Also you should avoid deploy resources in regions where the costs are higher.
+Due a new cost optimization initiative in your company, you should be able to have a more granular control over the resources deployed in your Azure environment. Also you should avoid deploying resources in regions where the costs are higher.
 
 The cloud administration team brings to you the following definitions:
 
@@ -18,8 +18,8 @@ This is a use case scenario where you can use the Azure Policy to meet those req
 
 ## What will we be doing?
 
-In this module, we'll be learning about what is and how you can use Azure Policy to meet compliance requirements on your environment.
+In this module, we'll be learning about what Azure Policy is, and how you can use it to meet compliance requirements in your environment.
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to create policies and initiatives, validate the compliance status of your environment and understand why use Azure Policy.
+By the end of this session, you'll be able to create policies and initiatives, validate the compliance status of your environment and understand why you should use Azure Policy.
