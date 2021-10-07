@@ -2,9 +2,9 @@ Now that we have a storage account, let's look at how we work with the queue tha
 
 To access a queue, you need three pieces of information:
 
- - Storage account name
- - Queue name
- - Authorization token
+- Storage account name
+- Queue name
+- Authorization token
 
 This information is used by both applications that talk to the queue (the web front end that adds messages and the mid-tier that processes them).
 
@@ -43,20 +43,20 @@ Get-AzStorageAccountKey ...
 
 You access a queue using a REST API. To do this, you'll use a URL that combines the name you gave the storage account with the domain `queue.core.windows.net` and the path to the queue you want to work with. For example: `http://<storage account>.queue.core.windows.net/<queue name>`. An `Authorization` header must be included with every request. The value can be any of the three authorization styles.
 
-### Use the Azure Storage Client Library for .NET
+### Use the Azure.Storage.Queues package for .NET
 
-The Azure Storage Client Library for .NET is a library provided by Microsoft that formulates REST requests and parses REST responses for you. This greatly reduces the amount of code you need to write. Access using the client library still requires the same pieces of information (storage account name, queue name, and account key); however, they are organized differently.
+The Azure.Storage.Queues package is part of the Azure SDK for .NET. This package provides a programmatic way to access Azure storage queues from .NET code. Access using the client library still requires the same pieces of information (storage account name, queue name, and account key); however, they are organized differently.
 
 The client library uses a **connection string** to establish your connection. Your connection string is available in the **Security + Networking** section of your Storage Account in the Azure portal, or through the Azure CLI and PowerShell.
 
 A connection string is a string that combines a storage account name and account key and must be known to the application to access the storage account. The format looks like this:
 
-```csharp
-string connectionString = "DefaultEndpointsProtocol=https;AccountName=<your storage account name>;AccountKey=<your key>;EndpointSuffix=core.windows.net"
+```console
+"DefaultEndpointsProtocol=https;AccountName=<your storage account name>;AccountKey=<your key>;EndpointSuffix=core.windows.net"
 ```
 
 > [!WARNING]
-> This string value should be stored in a secure location since anyone who has access to this connection string would be able to manipulate the queue.
+> This connection string value should be stored in a secure location since anyone who has access to this connection string would be able to manipulate the queue.
 
 Notice that the connection string doesn't include the queue name. The queue name is supplied in your code when you establish a connection to the queue.
 
