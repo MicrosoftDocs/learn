@@ -5,7 +5,7 @@ metadata:
   description: "This module helps learner to deploy object detection solution using Live Video Analytics on IoT Edge."
   ms.date: 4/27/2021
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
   ms.custom: nextgen
