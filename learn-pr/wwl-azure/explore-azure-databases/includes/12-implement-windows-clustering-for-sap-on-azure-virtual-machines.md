@@ -3,7 +3,7 @@ Estimated time: 120 minutes
 All tasks in this lab are performed from the Azure portal (including the PowerShell Cloud Shell session).
 
 > [!NOTE]
-> When not using Cloud Shell, the lab virtual machine must have the [Az PowerShell](/powershell/azure/install-az-ps-msi?view=azps-2.8.0) module installed.
+> When not using Cloud Shell, the lab virtual machine must have the [Az PowerShell](/powershell/azure/install-az-ps-msi) module installed.
 
 Lab files: none
 
