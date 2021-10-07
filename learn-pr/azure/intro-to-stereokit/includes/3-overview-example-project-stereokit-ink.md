@@ -1,13 +1,12 @@
-First, let us have a basic understanding of 3D models, Hand Menus, and UI buttons before breaking into the StereoKitInk sample application.
+So far you've leanred how to install and configure your visual studio,enabling the developer mode. In this module you'll have a basic understanding of how 3D model, hand menu and UI button works in your StereoKitInk application.
 
-## Import 3D models
+## 3D models
 
-The loading asset is a complex packing system. Here the asset is loaded during run time and in StereoKit it's a lot easier to load a 3D model. The 3D model format must be in .gltf, .glb, .obj, .stl, ASCII .ply, procedural and texture format must be in .jpg, .png, .tga, .bmp, .psd, .gif, .hdr, .pic, equirectangular cubemap, procedural.
+In Stereokit its a lot easier to load or access a 3D model. In solution explorer the asset folder contains the 3D models that you have imported. The 3D model is stored in .glb format and image files are stored in .png format.
 
 ## Adding hand menu
 
-When it comes to user interaction in StereoKitInk application, it carries a hands-first approach. When hand-sensors aren’t available, the hand sensouse  existing devices hand data is simulated using existing devices. Consider an example, as we mice Windows Mixed Reality Controllers will switch betw
-een pre-recorded hand positions based on button pushes thus you'll get to work with fully riched articulated hand data.
+When it comes to user interaction in StereoKitInk application, it carries a hands-first approach. When hand-sensors aren’t available, the hand sensouse  existing devices hand data is simulated using existing devices. Consider an example, as we mice Windows Mixed Reality Controllers will switch between pre-recorded hand positions based on button pushes thus you'll get to work with fully riched articulated hand data.
 
 ## Accessing hand with joints
 
