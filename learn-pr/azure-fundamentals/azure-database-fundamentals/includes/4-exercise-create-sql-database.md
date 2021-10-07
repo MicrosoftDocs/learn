@@ -40,13 +40,13 @@ In this task, you create a SQL database based on the *AdventureWorksLT* sample d
 1. Complete the remaining fields for **Create SQL Database** using the following values.
 
      | Setting | Value |
-     |	----- | ----- |	
+     | ----- | ----- | 
      | Want to use SQL elastic pool? | No (default) | 
      | Compute + storage  | General Purpose (default) | 
      | **Backup storage redundancy** |
      | Backup storage redundancy | Geo-redundant backup storage |
 
-    :::image type="content" source="../media/server-pane-df80b536.png" alt-text="Screenshot of create SQL database and  with fields filled in." lightbox="../media/server-pane-df80b536.png" :::
+    :::image type="content" source="../media/server-pane-df80b536.png" alt-text="Screenshot of create SQL database with fields filled in." lightbox="../media/server-pane-df80b536.png" :::
 
 1. Select **Next : Networking**, and configure the following settings (accept defaults for fields not specified).
 
