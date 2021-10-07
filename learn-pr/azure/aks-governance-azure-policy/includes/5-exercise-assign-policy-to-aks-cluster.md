@@ -295,13 +295,7 @@ Now that you know that the Policy prevents images from Dockerhub from being crea
    az aks update -n videogamecluster -g videogamerg --attach-acr $ACR_NAME
    ```
 
-1. Get the name of the container registry and copy it. You will need it to modify the code below to redeploy the pods
-
-   ```azurecli-interactive
-   echo $ACR_NAME
-   ```
-
-1. Modify the code below by replacing `<acr name>` with the name of the Azure Container Registry your command above returned, then apply it to create the pod from your private registry.
+1. Recreate the deployment now using your newly created container registry by running the command below
 
    ```bash
     cat <<EOF | kubectl apply -f -
@@ -322,7 +316,7 @@ Now that you know that the Policy prevents images from Dockerhub from being crea
         spec:
           containers:
           - name: second-simple-nginx
-            image: <acr name>.azurecr.io/nginx:v1
+            image: ${ACR_NAME}.azurecr.io/nginx:v1
             resources:
               requests:
                 cpu: 100m
