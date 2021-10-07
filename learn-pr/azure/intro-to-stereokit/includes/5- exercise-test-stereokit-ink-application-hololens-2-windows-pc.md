@@ -1,5 +1,7 @@
 In the pervious chapters you learnt how to download the template, import the package and 3D models. Now in this chapter lets learn how to build and test your application on HoloLens 2.
 
+During the build process, you may encounter errors when opening the Solution Explorer and the C# program file. In order to debug the errors, you need to run the initial build solution.
+
 ## Build your application on HoloLens
 
 1. To build your application to hololens, configure Visual Studio for HoloLens by selecting the **Release** configuration on the "Solution Platform," the **ARM64** architecture, and set **Device** as target:
@@ -16,8 +18,6 @@ In the pervious chapters you learnt how to download the template, import the pac
     :::image type="content" source="../media/select-deploy-solution.png" alt-text="Screenshot shows Selecting of Deploy Solution." lightbox="../media/select-deploy-solution.png":::
 
 ## Build your application on desktop
-
-During the build process, you may encounter errors when opening the Solution Explorer and the C# program file. To debug the errors, run the initial build solution.
 
 1. To bulid your application to desktop, configure Visual Studio for desktop by clicking onto "Solution Configuration" ensure the **Debug** and **Any device** is selected.
   
