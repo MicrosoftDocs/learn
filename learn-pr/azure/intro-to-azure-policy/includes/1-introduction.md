@@ -1,63 +1,25 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Policy is the backbone of Azure implementation and compliance. Compliance is an evolving scenario that you will always need to assess and adjust according to the needs of the moment. You also need to carefully plan your policies so as not to interrupt other units that require a more flexible policy than the one you have defined. Through Azure Policy, you can control the types of resources that can be provisioned. Or, you can restrict the locations where resources can be provisioned. Unlike RBAC, the policy is a standard system of explicit permission and denial.
 
-    Goal: briefly orient the learner to the product; what category of problem does it solve?
+:::image type="content" source="../media/1-azure-policy.png" alt-text="Screen with the Azure Policy overview example." lightbox="../media/1-azure-policy.png":::
 
-    Heading: none
-
-    Example: "Implementing a business process can be challenging because you typically need to make diverse services work together. Think about everything your company uses to store and process data: Salesforce, Microsoft 365, Oracle, Twitter, YouTube, Dropbox, Google services, Azure Cognitive Services, and so on. How do you integrate all these products? Azure Logic Apps gives you pre-built components to connect to hundreds of services. You use a graphical design tool to put the pieces together in any combination you need and Logic Apps will run your process automatically in the cloud."
-
-    Recommended: visual like an image (preferred), table, list, etc.
-
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add your visual element
-
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
-
-    Goal: Describe the real-world scenario you'll use to illustrate the product. Include 2-3 customer tasks that represent the most-common use cases for the product.
-
-    Heading: "## Example scenario"
-
-    Example: "Suppose you work at an athletic shoe company that is launching a new product. You sell the shoes on your website, manage your cloud-hosted advertising videos, and monitor social media to gauge reactions to the launch. The following illustration shows these processes. Notice how the tasks include both customer-facing processes like direct sales and administrative tasks like auto-archiving old videos. Here, you'll see how Logic Apps automates these types of business processes."
-
-    Recommended: an image that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
- -->
 ## Example scenario
-TODO: add your scenario
-TODO: add your image
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
+Due a new cost optimization initiative in your company, you should be able to have a more granular control over the resources deployed in your Azure environment. Also you should avoid deploy resources in regions where the costs are higher.
 
-    Goal: List the activities the learner will do. This differs from the learning objectives. The learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
+The cloud administration team brings to you the following definitions:
 
-    Heading: "## What will we be doing?"
+* For the production subscription, only the regions Central US and East US2 will be used for new deployments
+* For the dev/test subscription, only three specific types of virtual machines SKUs will be allowed
 
-    Example: "We’ll analyze the capabilities of Logic Apps to help you decide when to use them:
-                * **Launch**: what conditions can you set to launch your app?
-                * **Connect**: which services can you connect to?
-                * **Branch**: what types of business logic can you add to your app?"
+This is a use case scenario where you can use the Azure Policy to meet those requirements: 
 
- -->
+* Create a new assignment using a built-in policy called **Allowed locations** associated with the production subscription then specify the regions Central US and East US2
+* Create another assignment using a built-in policy called **Allowed virtual machine SKUs** associated with the dev/test subscription and select properly with the three SKUs of virtual machines allowed
+
 ## What will we be doing?
-TODO: add your activities
 
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
+In this module, we'll be learning about what is and how you can use Azure Policy to meet compliance requirements on your environment.
 
-    Goal: The title of an "Introduction to (product)" module tells our customers that this is a good place to start their learning. This helps our customers find the right content quickly. The trade-off is that the title does not reflect the terminal learning objective of the module. Here, you explain that this module teaches the 'evaluate' task. To do this, you:
-        - Start with your 'evaluate' learning objective
-        - Make it a complete sentence if it's not already
-        - Use plain language so it sounds conversational
-        - Include the lead-in shown below ("By the end...")
-
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to decide whether Logic Apps is a good choice to automate your business processes."
-
- -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
 
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+By the end of this session, you'll be able to create policies and initiatives, validate the compliance status of your environment and understand why use Azure Policy.
