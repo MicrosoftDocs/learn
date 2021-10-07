@@ -16,7 +16,7 @@ In this task, you create a SQL database based on the *AdventureWorksLT* sample d
      | ----- | ----- |
      | **Project details** |
      | Subscription | Concierge Subscription |
-     | Resource group | \[sandbox resource group name\ ] | 
+     | Resource group | \[sandbox resource group name\] | 
      | **Database details** |
      | Database name | db1 |
      | Server | Select **Create new** |
