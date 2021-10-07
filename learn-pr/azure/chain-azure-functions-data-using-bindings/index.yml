@@ -29,8 +29,6 @@ products:
 - azure-storage
 languages:
 - powershell
-salesplays:
-
 units:
 - learn.chain-azure-functions-data-using-input-output-bindings.1-introduction
 - learn.chain-azure-functions-data-using-input-output-bindings.2-explore-input-and-output-binding-types-portal-lesson
