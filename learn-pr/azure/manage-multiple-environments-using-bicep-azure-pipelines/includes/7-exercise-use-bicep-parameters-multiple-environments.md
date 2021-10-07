@@ -14,11 +14,11 @@ TODO explain why
 
 1. In your browser, go to **Pipelines** > **Library**.
 
-   :::image type="content" source="../media/7-library.png" alt-text="TODO":::
+   :::image type="content" source="../media/7-library.png" alt-text="Screenshot of Azure DevOps showing the Library menu item under the Pipelines category.":::
 
 1. Select the **+ Variable group** button.
 
-   :::image type="content" source="../media/7-variable-groups-new.png" alt-text="TODO":::
+   :::image type="content" source="../media/7-variable-groups-new.png" alt-text="Screenshot of the Azure DevOps library page, with the + variable group button highlighted.":::
 
 1. Enter **ToyWebsiteTest** as the variable group name.
 
@@ -31,7 +31,7 @@ TODO explain why
 
    Notice you don't define the service connection name in the variable group. Service connection names have special rules about how they can be specified. In this module, you'll use pipeline template parameters.
 
-   :::image type="content" source="../media/7-variable-group-test-v1.png" alt-text="TODO":::
+   :::image type="content" source="../media/7-variable-group-test-v1.png" alt-text="Screenshot of the test variable group, with the variable group name and variables highlighted.":::
 
 1. Select **Save**.
 
@@ -44,7 +44,7 @@ TODO explain why
    | EnvironmentType | Production |
    | ResourceGroupName | ToyWebsiteProduction |
 
-   :::image type="content" source="../media/7-variable-group-production-v1.png" alt-text="TODO":::
+   :::image type="content" source="../media/7-variable-group-production-v1.png" alt-text="Screenshot of the production variable group, with the variable group name and variables highlighted.":::
 
    Notice that the variable names are the same for both environments, but the values are different.
 
@@ -126,13 +126,13 @@ TODO explain why
    | ReviewApiKey | sandboxsecretkey |
    | ReviewApiUrl | https://sandbox.contoso.com/reviews |
 
-   :::image type="content" source="../media/7-variable-group-test-v2.png" alt-text="TODO":::
-
 1. Select the padlock icon next to the **ReviewApiKey** variable. This tells Azure Pipelines to treat the variable's value securely.
 
-   :::image type="content" source="../media/7-variable-group-test-v3.png" alt-text="TODO":::
+   :::image type="content" source="../media/7-variable-group-test-v2.png" alt-text="Screenshot of the test variable group, with the secret variable button highlighted.":::
 
 1. Save the variable group.
+
+   :::image type="content" source="../media/7-variable-group-test-v3.png" alt-text="Screenshot of the test variable group, with the variable group name and updated variables highlighted.":::
 
 1. Update the **ToyWebsiteProduction** variable group to add a similar set of variables:
 
@@ -143,7 +143,7 @@ TODO explain why
 
    Remember to select the padlock icon next to the **ReviewApiKey** variable.
 
-   :::image type="content" source="../media/7-variable-group-test-v2.png" alt-text="TODO":::
+   :::image type="content" source="../media/7-variable-group-production-v2.png" alt-text="Screenshot of the production variable group, with the variable group name and updated variables highlighted.":::
 
 1. Save the variable group.
 
@@ -206,13 +206,15 @@ TODO explain why
 
    Select **Configuration**.
 
-   :::image type="content" source="../media/7-app-service-configuration.png" alt-text="TODO":::
+   :::image type="content" source="../media/7-app-service-configuration.png" alt-text="Screenshot of the Azure portal showing the App Service app, with the Configuration menu item highlighted.":::
 
 1. Select **Show values**.
 
-   :::image type="content" source="../media/7-app-service-settings.png" alt-text="TODO":::
+   :::image type="content" source="../media/7-app-service-show-values.png" alt-text="Screenshot of the Azure portal showing the App Service app settings, with the Show values button highlighted.":::
 
-   Notice that the production site's values for the **ReviewApiKey** and **ReviewApiUrl** settings are set to the values you configured in the production variable group.
+1. Notice that the production site's values for the **ReviewApiKey** and **ReviewApiUrl** settings are set to the values you configured in the production variable group.
+
+   :::image type="content" source="../media/7-app-service-settings.png" alt-text="Screenshot of the Azure portal showing the App Service app settings, with the configuration setting values highlighted.":::
 
 1. Compare this to the configuration settings for the App Service app in the **ToyWebsiteTest** resource group. Notice that it uses a different set of values.
 
