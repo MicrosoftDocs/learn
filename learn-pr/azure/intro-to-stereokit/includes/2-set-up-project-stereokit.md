@@ -1,6 +1,11 @@
-In order to develop your stereoKitInk application using StereoKit, you first need to install Visual Studio 2019.
+In this chapter, you'll learn about three prerequisites to set up your StereoKit application.
+1. Visual Studio Community
+2. StereoKit’s visual studio template
+3. Enable developer mode
 
-## Steps to install visual studio for StereoKit
+In order to develop your stereoKitInk application, you first need to install Visual Studio 2019.
+
+## Steps to install visual studio 2019 for StereoKit
 
 1. Download the free edition of **[Visual Studio Community](https://developer.microsoft.com/windows/downloads)**.
 
@@ -20,13 +25,13 @@ In order to develop your stereoKitInk application using StereoKit, you first nee
 
 ## StereoKit’s visual studio template
 
-It's one of the quickest methods for you start a StereoKit project. There are two templates provided: 
-1. **Universal Windows Platform** for deploying on HoloLens 2 platform 
-2. **.NET Core** for desktop Windows or Linux environment. 
+It's one of the quickest methods for you start a StereoKit project. There are two templates provided:
+
+1. **Universal Windows Platform** for deploying on HoloLens 2 platform.
+2. **.NET Core** for desktop Windows or Linux environment.
 
 > [!Note]
     >Iteration is slower with Universal Windows Platform because it builds apps, so use it only if HoloLens is essential to you.
-
 
 ### Steps to download & install StereoKit’s visual studio template
 
@@ -49,7 +54,7 @@ It's one of the quickest methods for you start a StereoKit project. There are tw
 
 Enabling Developer Mode in UWP/Hololens 2 & Windows PC makes it easier to test the applications you're working on. In addition, you can install Universal Windows Platform & Windows apps from outside the Windows Store, even if they're not signed with a valid certificate. This is an essential feature for app developers who want to test their apps on their PCs while still developing.
 
-* ### Steps to enable developer mode for HoloLens 2
+### Steps to enable developer mode for HoloLens 2
 
 1. Switch on your HoloLens 2 and put it on. Then, access the main menu by using the start gesture.
 
@@ -67,7 +72,7 @@ Enabling Developer Mode in UWP/Hololens 2 & Windows PC makes it easier to test t
 
     :::image type="content" source="../media/enable-developer-mode-hololens.png" alt-text="Screenshot shows enabling the Developer mode." lightbox="../media/enable-developer-mode-hololens.png":::
 
-* ### Steps to enable developer mode for Windows PC
+### Steps to enable developer mode for Windows PC
 
 If you're using a Windows Mixed Reality headset with your PC, you'll have to enable Developer Mode on your computer.
 
