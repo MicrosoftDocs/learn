@@ -49,8 +49,7 @@ ${{ secrets.NAME_OF_THE_SECRET }}
 
 When your workflow starts, the runner that's running your deployment steps has access to the decrypted GitHub secret value. GitHub Actions is designed to not reveal secret values in your workflow logs.
 
-> [!WARNING]
-> By default, GitHub Actions obfuscates secret variable values in workflow logs, but you need to follow good practices as well. Your workflow steps have access the values of secrets. If your workflow includes a step that doesn't handle a secret securely, there's a chance the secret value might be shown in the workflow logs. You should always carefully review the any changes to a workflow definition file to verify the secrets won't be mishandled.
+[!include[Best-effort protection for secrets](../../includes/github-actions-secret-best-effort.md)]
 
 You can also use GitHub secrets to store other kinds of secret values your workflows might need. For instance a database password can be created as a GitHub secret, and then provided to your Bicep file by using a secure parameter. 
 

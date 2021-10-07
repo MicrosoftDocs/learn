@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Ability to write C# at the beginner level, with C# concepts such as writing methods and creating projects.
   - Basic familiarity with debugging an app.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/visual-studio-test-concepts.svg
 levels:
   - beginner
 roles:
