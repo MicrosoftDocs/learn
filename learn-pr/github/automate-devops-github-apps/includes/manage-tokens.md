@@ -12,9 +12,9 @@ GitHub uses various tokens that allow users to authenticate to the different act
 
 It's important to encourage your development team to use tokens with the right scope so that when a security vulnerability is discovered, the risk can be mitigated quickly. Let's take a closer look into each of these access tokens.
 
-### Personal Access Tokens 
+### Personal Access Tokens
 
-A personal access token (PAT) is an alternative to using a password for authenticating to GitHub. In order to push and pull in repositories, GitHub needs to verify user access. The verification is done through a user's verified email address. You can create as many personal access tokens as your workflow requires, and they should be treated as securely as passwords. Using different tokens for different applications is best practice for security. By using separate tokens, the access granted to each token is restricted and if a token is compromised or needs to be changed the impact is localized. To create a personal access token in GitHub, you navigate to *Settings*, and under *Developer settings* you will find *Personal access tokens*.
+A personal access token (PAT) is an alternative to using a password for authenticating to GitHub. In order to push and pull in repositories, GitHub needs to verify user access. The verification is done through a user's verified email address. You can create as many personal access tokens as your workflow requires, and they should be treated as securely as passwords. Using different tokens for different applications is best practice for security. To create a personal access token in GitHub, you navigate to *Settings*, and under *Developer settings* you will find *Personal access tokens*.
 
 :::image type="content" source="../media/pat.png" alt-text="Example of a GitHub personal access token." :::
 
