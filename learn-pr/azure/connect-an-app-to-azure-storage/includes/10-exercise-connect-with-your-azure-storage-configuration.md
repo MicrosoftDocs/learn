@@ -1,4 +1,4 @@
-Let's add code to upload an image to our Azure Storage account. In this example, we're going to upload the following image to our Azure Storage container.  
+Let's add code to upload an image to our Azure Storage account. In this example, we're going to upload the following image to our Azure Storage container.
 
 ![An image of the Microsoft Docs and Azure mascots taking a selfie.](../media/docs-and-friends-selfie-stick.png)
 
