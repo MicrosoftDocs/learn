@@ -4,7 +4,7 @@ There are some concepts you need to understand in advance to work with Azure Pol
 
 **Policy:** A policy is the business rule to be applied within your organization.
 
-**Initiative:** An initiative is a set of policies combined to simplify the management. Both policies and initiatives are written in JSON format.
+**Initiative:** An initiative is a set of policies combined to simplify management. Both policies and initiatives are written in JSON format.
 
 **Assignments:** The assignments are the associations of initiatives or policies with scopes. A scope for Azure Policy could be a Management Group, an Azure Subscription or a Resource Group. Assignments are inherited by all child resources.
 
@@ -12,13 +12,13 @@ There are some concepts you need to understand in advance to work with Azure Pol
 
 **Exemptions:**: The exemptions are used to exempt a resource hierarchically or and individual resource from the evaluation of initiatives or definitions.
 
-**Remediation:** A remediation is a way to handle about non-compliant resources. It allows you to create remediation tasks and ensure the desired state for resources.
+**Remediation:** A remediation is a way to handle non-compliant resources. It allows you to create remediation tasks and ensure the desired state for resources.
 
 ## Working with Azure Policy
 
-Keep in mind that Azure Policies doesn't have the same approach from a Group Policy Object from your Active Directory. Besides the possibility to work with the Guest configuration feature from Azure Policy to audit or configure settings inside a virtual machine, the intent of Azure Policy is to enforce business rules establishing conventions for your resources. The conventions should be met to conditions take effect.
+Keep in mind that Azure Policies don't have the same approach as you might get from a Group Policy Object in your Active Directory. Besides the possibility to work with the Guest configuration feature from Azure Policy, to audit or configure settings inside a virtual machine, the intent of Azure Policy is to enforce business rules establishing conventions for your resources. The conventions should be met in order to have the conditions take effect.
 
-So the policies are made of conventions defined from you to be evaluated following a specific order to have effect over the resources. The effects differs if they are for a new resource, an updated resource, or an existing resource.
+So the policies are made of conventions, defined from you, to be evaluated following a specific order to have effect over the resources. The effects differ if they are for a new resource, an updated resource, or an existing resource.
 
 The evaluation order is:
 
@@ -46,20 +46,21 @@ Here are four important topics to be considered for a successful implementation:
 * Deploy
 * Check
 
-The assessment is where you will have an overview about the status of your environment. Then before making changes in your environment through policies to take actions, assign a policy just to audit your environment then use the Overview option from the menu to get this.
+The assessment is where you will have an overview about the status of your environment. Then, before making changes in your environment through policies to take actions, assign a policy just to audit your environment. You can use the Overview option from the menu to get this functionality.
 
-Before create policies which will make changes in your environment, make sure to test everything.
+Before creating policies, which will make changes in your environment, make sure to test everything.
+
 Validate your policy syntax, the actions that will be taken and the scope in use (Management Groups, Subscriptions, and Resource Groups). Validate all policy inclusions, exclusions and exemptions.
 
-For the deploy, initially make sure you will be running your policy against a controlled environment or dedicated subscription. Also be aware that Azure Policy assignments don’t come into effect immediately. There is a policy evaluation delay, which is around 30 minutes or so. Also, auditing your resources might take some time as the Azure Policy engine needs to evaluate all resources against policy rules within the assigned scope.
+For the deployment initially, make sure you will be running your policy against a controlled environment or dedicated subscription. Be aware that Azure Policy assignments don’t come into effect immediately. There is a policy evaluation delay, which is around 30 minutes or so. Also, auditing your resources might take some time as the Azure Policy engine needs to evaluate all resources against policy rules within the assigned scope.
 
-Finally use the  Compliance option to check the results of your policy assignments.
+Finally use the Compliance option to check the results of your policy assignments.
 
 :::image type="content" source="../media/2-compliance.png" alt-text="Screen with the Azure Policy Compliance." lightbox="../media/2-compliance.png":::
 
 ## Resources covered
 
-Azure policy covers all Azure resources, including Arc enabled resources. This means that you can extend the coverage of your controls over Windows and Linux physical servers and virtual machines hosted outside of Azure, on your corporate network, or other cloud provider as example. For Azure resources the usage of Azure Policy is free, while for an Arc resource there is a fee associated.
+Azure policy covers all Azure resources, including Arc enabled resources. This means that you can extend the coverage of your controls over Windows and Linux physical servers,  virtual machines hosted outside of Azure, on your corporate network, or other cloud provider, as examples. For Azure resources the usage of Azure Policy is free, but for an Arc resource there is a fee associated.
 
 ## Related services
 
