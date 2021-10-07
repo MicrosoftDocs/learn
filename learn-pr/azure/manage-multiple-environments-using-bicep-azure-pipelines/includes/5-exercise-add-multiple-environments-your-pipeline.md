@@ -73,6 +73,8 @@ The lint stage only happens once during the pipeline run, regardless of how many
 
    :::code language="yaml" source="code/5-pipeline.yml" :::
 
+   This pipeline runs the *Lint* stage once. Then it uses the *deploy.yml* template file twice - once per environment. This keeps the pipeline definition clear and easy to understand.
+
 1. Save your changes.
 
 1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:

@@ -217,6 +217,8 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
    :::image type="content" source="../media/4-environments-new-details-test.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Test, with the details completed and the Create button highlighted.":::
 
+1. Select the left arrow to return to the environments list.
+
 1. Repeat the process to create another environment named **Production**.
 
    :::image type="content" source="../media/4-environments-new-details-production.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Production, with the details completed and the Create button highlighted.":::
