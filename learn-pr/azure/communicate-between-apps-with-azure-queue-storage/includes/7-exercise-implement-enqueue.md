@@ -102,9 +102,9 @@ You are now ready to build and run the program to send your first message to the
 
 ## Check your results
 
-You can check queues in the Azure portalm using the Azure CLI, or using Azure PowerShell.  For this example, we'll use the Azure CLI to check tha state of our queue.
+You can check queues in the Azure portal using the Azure CLI, or using Azure PowerShell.  For this example, we'll use the Azure CLI to check the state of our queue.
 
-Run ths following command in the Cloud Shell environment.\
+Run the following command in the Cloud Shell environment.\
 
 ```azurecli
 az storage message peek --queue-name newsqueue --connection-string $STORAGE_CONNECTION_STRING 

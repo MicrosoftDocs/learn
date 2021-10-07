@@ -50,7 +50,7 @@ Console.WriteLine($"Inserted on : {message.InsertedOn}");
 
 When the receiver application is ready to process a message, it calls the `ReceiveMessageAsync` method on the `QueueClient` object to pull the next message off of the queue. A `QueueMessage` object represents the message and can be accessed By using the `Value` property on the `Response` object.
 
-The `QueueMessage` class contains properties to get the message id, when the message was inserted into the queue and several others.  The most important property though is the `Body` property which contains the contents of the message.  If the message was formatted as JSON, you can use the `ToObjectFromJson` method to convert the message into the appropriate object type.
+The `QueueMessage` class contains properties to get the message ID, when the message was inserted into the queue and several others.  The most important property though is the `Body` property which contains the contents of the message.  If the message was formatted as JSON, you can use the `ToObjectFromJson` method to convert the message into the appropriate object type.
 
 ```csharp
 Response<QueueMessage> response = await queueClient.ReceiveMessageAsync();
