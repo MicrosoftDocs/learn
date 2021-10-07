@@ -20,14 +20,14 @@ Azure Storage offers several types of storage accounts. Each type supports diffe
 * **General-purpose v2 accounts**: Basic storage account type for blobs, files, queues, and tables. Recommended for most scenarios using Azure Storage.
 * **General-purpose v1 accounts**: Legacy account type for blobs, files, queues, and tables. Use general-purpose v2 accounts instead when possible.
 * **Block blob storage accounts**: Blob-only storage accounts with premium performance characteristics. Recommended for scenarios with high transactions rates, using smaller objects, or requiring consistently low storage latency.
-* **FileStorage storage accounts**: Files-only storage accounts with premium performance characteristics. Recommended for enterprise or high performance scale applications.
+* **FileStorage storage accounts**: Files-only storage accounts with premium performance characteristics. Recommended for enterprise or high-performance scale applications.
 * **Blob storage accounts**: Blob-only storage accounts. Use general-purpose v2 accounts instead when possible.
 
 The following table describes the types of storage accounts recommended by Microsoft for most scenarios using Blob storage.
 
 | Storage account type | Supported storage services | Usage |
 |--|--|--|
-| Standard general-purpose v2 | Blob , Queue, and Table storage, Azure Files | Standard storage account type for blobs, file shares, queues, and tables. Recommended for most scenarios using Azure Storage. Note that if you want support for NFS file shares in Azure Files, use the premium file shares account type. |
+| Standard general-purpose v2 | Blob, Queue, and Table storage, Azure Files | Standard storage account type for blobs, file shares, queues, and tables. Recommended for most scenarios using Azure Storage. If you want support for NFS file shares in Azure Files, use the premium file shares account type. |
 | Premium block blobs | Blob storage | Premium storage account type for block blobs and append blobs. Recommended for scenarios with high transactions rates, or scenarios that use smaller objects or require consistently low storage latency. |
 | Premium page blobs | Page blobs only | Premium storage account type for page blobs only. |
 
