@@ -4,7 +4,7 @@ Unlike virtual machines that emulate hardware, containers run directly on top of
 
 With Containers, you’ll ensure your applications, and dependencies, are always isolated in container image(s) and ready for deployment at scale.
 
-In this module, you’ll first containerize a Java application. For convenience, we’ve selected an existing Java application for you to use, from the open internet. [Turkish Airlines](https://github.com/chtrembl/Flight-Booking-System-JavaServlets_App), a fully responsive web-based Flight Booking System for Turkish Airlines based on the Model View Controller (MVC) Architecture made using Java Servlets, Java Server Pages (JSPs).
+In this module, you’ll first containerize a Java application using Docker. For convenience, we’ve selected an existing Java application for you to use, from the open internet. [Turkish Airlines](https://github.com/chtrembl/Flight-Booking-System-JavaServlets_App), a fully responsive web-based Flight Booking System for Turkish Airlines based on the Model View Controller (MVC) Architecture made using Java Servlets, Java Server Pages (JSPs).
 
 You’ll then construct a Docker file and write the Docker instructions needed to build a Docker image.
 

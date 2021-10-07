@@ -58,11 +58,11 @@ Imagine you’re that Java developer and you have just built this TurkishAirline
 
 ## Construct a Docker file
 
-At this point, your ready to construct a Docker file. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image, each of which are a layer that build on top of each other.
+At this point, your ready to construct a Docker file. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble a container image, each of which are a layer that build on top of each other.
 
-For example, Turkish Airlines needs to deploy to and run inside of an Application Server, to process HTTP Requests and manage user sessions. This Application Server is not packaged inside of the TurkishAirlines-0.0.1-SNAPSHOT.war, it is an external dependency needed at runtime by the TurkishAirlines-0.0.1-SNAPSHOT.war. If this was a traditional, non containerized deployment, operation engineers would install the Application Server on the server and/or virtual machine, before deploying the TurkishAirlines-0.0.1-SNAPSHOT.war to it.
+For example, Turkish Airlines needs to deploy to and run inside of an application server, to process HTTP requests and manage user sessions. An application server is not packaged inside of the TurkishAirlines-0.0.1-SNAPSHOT.war, it is an external dependency needed at runtime by the TurkishAirlines-0.0.1-SNAPSHOT.war. If this was a traditional, non containerized deployment, operation engineers would install and configure an application server on some physical server and/or virtual machine, before deploying the TurkishAirlines-0.0.1-SNAPSHOT.war to it.
 
-With a Docker file, you can write the instructions needed to accomplish this, by layering in the steps needed to ensure Turkish Airlines has all of the dependencies needed to deploy to any container runtime. This is very compelling when you start to think about on demand scale at unplanned intervals.
+With a Dockerfile, you can write the instructions (layers) needed to accomplish this automatically, by layering in the steps needed to ensure Turkish Airlines has all of the dependencies needed to deploy to the Docker container runtime. This is very compelling when you start to think about on demand scale at unplanned intervals. It's worth noting that each layer is leveraging Docker cache which contains the state of the Docker image at each instructional milestone optimizing compute time and reuse. If a layer isn't changing, cache layers will be used.
 
 Within the root of your project, Flight-Booking-System-JavaServlets_App/Project/TurkishAirlines, Create a file called Dockerfile:
 
@@ -82,7 +82,7 @@ CMD ["catalina.sh", "run"]
 ```
 
 > [!NOTE]
-> Optionally, the Dockerfile_Solution contains the contents needed.
+> Optionally, the Dockerfile_Solution in the root of your project contains the contents needed.
 
 As you can see, this Docker file has 5 instructions.
 
@@ -93,5 +93,8 @@ As you can see, this Docker file has 5 instructions.
 | ADD    | ADD target/*.war /usr/local/tomcat/webapps/TurkishAirlines.war will copy the maven compiled TurkishAirlines-0.0.1-SNAPSHOT.war to the tomcat images webapps folder to ensure that when Tomcat is initialize, it will in fact find the TurkishAirlines-0.0.1-SNAPSHOT.war to be installed on the application server. |
 | EXPOSE | EXPOSE 8080 is needed as Tomcat is configured to listen to traffic on port 8080, this ensures the Docker process will listen on this port. |
 | CMD | CMD ["catalina.sh", "run"], Last but not least, you need to instruct Docker what to do for initialization. Generally this is a startup script. In this case you can use the tomcat Docker image catalina.sh shell script, and instruct Docker to "run" it, the default behavior for a Tomcat Application Server. |
+
+> [!NOTE]
+> Without a version tag on the FROM tomcat line, the latest will be applied. Generally you will want to leverage a version tag (remember, caching is applied, so if layers are consistently changing, you will incur bandwidth, latency, compute time and/or side effect of untested builds/layers.) For the sake of this module, no tagging will be used, the latest Tomcat image will be used (they are not changing enough to warrant a specific stable version).
 
 For more information on Dockerfile construction please visit [https://docs.docker.com/engine/reference/builder/](https://docs.docker.com/engine/reference/builder/)
