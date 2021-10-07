@@ -95,6 +95,7 @@ Here, you create a pipeline template that defines all of the stages required to 
    Notice that the pipeline run now shows all the stages you defined in the YAML file. You might need to scroll horizontally to see them all.
 
    :::image type="content" source="../media/5-stages.png" alt-text="Screenshot of Azure Pipelines showing the pipeline run, with all of the stages included.":::
+   <!-- TODO git -->
 
 1. Wait for the pipeline to pause before the *Deploy (Production Environment)* stage. It might take a few minutes for the pipeline to reach this point.
 
@@ -105,6 +106,7 @@ Here, you create a pipeline template that defines all of the stages required to 
 1. Select the **Approve** button.
 
    :::image type="content" source="../media/5-approve.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline approval page, with the Approve button highlighted.":::
+   <!-- TODO git -->
 
    Wait for the pipeline to finish execution.
 

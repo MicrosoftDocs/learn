@@ -119,3 +119,6 @@ For secure parameters, remember to explicitly pass each parameter into your depl
 It's common to combine multiple approaches to handle your parameters. For example, you can store the majority of your parameter values in parameter files, and then just set secure values by using a variable group, like in the following example:
 
 :::code language="yaml" source="code/6-multiple.yml" highlight="1-2, 27-28" :::
+
+> [!NOTE]
+> There are special rules about how service connection names can be specified. These rules can affect how you use them in pipelines that deploy to multiple environments. You can use pipeline template parameters to specify the name of the service connection to use.

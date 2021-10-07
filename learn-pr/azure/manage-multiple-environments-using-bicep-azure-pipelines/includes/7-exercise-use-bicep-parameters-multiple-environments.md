@@ -11,7 +11,7 @@ During the process you'll:
 
 ## Add variable groups
 
-Now that you're adding more parameters that vary between each environment, it's a good idea to use a variable group to keep the values for each environment together.
+Because you're adding more parameters that vary between each environment, you decide to move away from adding your pipeline parameters directly into your pipeline YAML files. Instead, you'll use a variable group to keep the values for each environment together.
 
 1. In your browser, go to **Pipelines** > **Library**.
 
@@ -55,7 +55,7 @@ Now that you're adding more parameters that vary between each environment, it's 
 
 1. In Visual Studio Code, open the *deploy.yml* file.
 
-1. At the top of the file, remove the `resourceGroupName` and `serviceConnectionName` parameters, and leave the `environmentType` parameter:
+1. At the top of the file, remove the `resourceGroupName` and `serviceConnectionName` parameters. Don't delete the `environmentType` parameter:
 
    :::code language="yaml" source="code/7-deploy-1.yml" range="1-3" :::
 
@@ -73,11 +73,11 @@ Now that you're adding more parameters that vary between each environment, it's 
 
 1. Make the changes to the `PreviewAzureChanges` job:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="29-49" highlight="7-8, 19, 21" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="29-49" highlight="7-8, 14, 19, 21" :::
 
 1. Make the same changes to the `Deploy` deployment job:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="51-78" highlight="6-7, 24, 26" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="51-78" highlight="6-7, 18, 24, 26" :::
 
 1. Verify your *deploy.yml* file now looks like the following:
 
@@ -185,13 +185,11 @@ Now that you're adding more parameters that vary between each environment, it's 
 
 1. Select the most recent run of your pipeline.
 
-1. Wait for the pipeline to pause before the *Deploy (Production Environment)* stage. It might take a few minutes for the pipeline to reach this point.
+   Wait for the pipeline to pause before the **Deploy (Production Environment)** stage. It might take a few minutes for the pipeline to reach this point.
 
-1. Approve the deploy to the production environment by selecting the **Review** button.
+1. Approve the deployment to the production environment by selecting the **Review** > **Approve**.
 
-1. Select the **Approve** button.
-
-   Wait for the pipeline to finish execution.
+   Wait for the pipeline to finish running.
 
 1. Select **Pipelines** > **Environments**.
 

@@ -58,9 +58,9 @@ Your team might also create demo environments to show the application to end use
 
 ### Environments in your organization
 
-You might see variations of these environments. Many organizations only use a few environments, and some use many more. The number and type of environments you use depend on the solution you're deploying, the size of the team building the solution, and the importance of the workload. Sometimes, a single environment takes the role of several of the environments listed above.
+You might see variations of these environments. Many organizations only use a few environments, and some use many more. The number and type of environments you use depend on the solution you're deploying, the size of the team building the solution, and the importance of the workload. Sometimes, a single environment takes the role of several of the environments listed above. Other times, you might have a very complex pipeline that deploys to multiple environments, some in parallel and some in sequence.
 
-Whatever your organization chooses as their list of environments, the goal is to enhance the confidence you have in a change as it progresses through your deployment pipeline. When a change does not meet your quality requirements, you want to be able to stop the deployment of that change to any subsequent environments in the chain.
+Whatever your organization chooses as their list of environments, the goal is to improve the confidence you have in a change as it progresses through your deployment pipeline. When a change does not meet your quality requirements, you want to be able to stop the deployment of that change to any subsequent environments in the chain.
 
 In your toy company, you decide you'll start with a basic set of environments for your website. In addition to your production environment, you'll create one non-production environment named *Test*:
 
