@@ -93,7 +93,7 @@ You can also apply user permissions to control the users who can manage environm
 > [!NOTE]
 > When your pipeline refers to an environment that doesn't exist yet, Azure Pipelines automatically creates it for you. This can affect the security of your Azure DevOps project because you will automatically be given administrative permissions to the environment. It's best to create an environment yourself through the Azure DevOps web interface, so that you have full control over its security and so you don't accidentally get permissions you don't need.
 
-## Service connections when you work with multiple environments
+## Environments and service connections
 
 When you use multiple environments, you should make each environment independent from the others. For example, your development environment's website shouldn't be able to access a database within your production environment. The same principle also applies to the deployment pipeline. The service connection you use to deploy to your development environment shouldn't be able to access your production environment. Following this principle adds another layer of protection to ensure that your non-production deployments don't affect your production environment.
 
