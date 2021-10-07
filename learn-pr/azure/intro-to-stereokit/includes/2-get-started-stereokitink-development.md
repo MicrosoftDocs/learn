@@ -3,7 +3,7 @@ In this chapter, you'll learn about three prerequisites to set up your StereoKit
 2. StereoKit’s visual studio template
 3. Enable developer mode
 
-In order to develop your stereoKitInk application, you first need to install Visual Studio 2019.
+In order to develop your stereoKit application, you first need to install Visual Studio 2019.
 
 ## Steps to install visual studio 2019 for StereoKit
 
@@ -25,7 +25,7 @@ In order to develop your stereoKitInk application, you first need to install Vis
 
 ## StereoKit’s visual studio template
 
-It's one of the quickest methods for you start a StereoKit project. There are two templates provided:
+It's one of the quickest methods for you to start a StereoKit project. There are two templates provided:
 
 1. **Universal Windows Platform** for deploying on HoloLens 2 platform.
 2. **.NET Core** for desktop Windows or Linux environment.
