@@ -23,7 +23,7 @@ In this exercise, you'll use Cloud Shell to develop your function.
 
 1. When prompted to select a worker runtime, enter **2** (for **node**).
 
-1. When prompted to select a language, enter **1** (for **javascript**).
+1. When prompted to select a language, enter **1** (for **JavaScript**).
 
     The output will list the files being written to disk. You'll see **host.json** and **local.settings.json**, as well as a few other files:
     - **package.json** is a JavaScript-specific file that keeps track of any packages you install and use within your code.
@@ -39,7 +39,7 @@ Let's create our function!
     func new
     ```
 
-    Remember, you are running `func new` 8in the `loan-wizard` project folder you just created, which is important.
+    Remember, you are running `func new` in the `loan-wizard` project folder you just created, which is important.
 
 1. When prompted to select a template, enter **8** (for **HTTP trigger**).
 
@@ -101,14 +101,14 @@ To run our new function locally and try it out, we'll use `func start` to start 
 
     Near the end of the output, you'll see a message that lists `Functions: simple-interest:` is available as a GET or POST HTTP request `http://localhost:7071/api/simple-interest`. 
     
-    >!NOTE:
-    >If you see an error message, press <kbd>Ctrl+C</kbd> to stop the host, and make sure that the contents of your index.js file are the same as the sample above.
+    > [!NOTE]
+    > If you see an error message, press <kbd>Ctrl+C</kbd> to stop the host, and make sure that the contents of your index.js file are the same as the sample above.
 
     This localhost URL is not published to the web, it's only accessible from tools running in your Cloud Shell session. 
     
     We're going to use a command line tool, `curl`, to interact with our function. To do that, we need to restart the Functions host as a background process so we can use the command line while it's running. If you were using Core Tools from your own computer, you probably wouldn't need to restart the host--you could use `curl` from a second terminal window, and the output produced by Core Tools would appear in real time in the first terminal window. In Cloud Shell, we are limited to a single terminal, so this technique is necessary for this tutorial.
 
-1. Press <kbd>Ctrl+C</kbd> to stop the Functions host. The Cloud Shell should respond **Application is shutting down...**.
+1. Press <kbd>Ctrl+C</kbd> to stop the Functions host. The Cloud Shell should respond **Application is shutting down**.
 
 1. Run the following command to start the Functions host silently in the background.
 
