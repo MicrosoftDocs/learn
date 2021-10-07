@@ -90,7 +90,7 @@ In this task, you configure the server and run a SQL query.
 
 1. In Azure resources menu select **All resources**. Search for and select the **SQL database** resource Type, and ensure that your new database was created. You might need to refresh the page. 
   
-  :::image type="content" source="../media/sql-database-d2ebb307.png" alt-text="Screenshot of the SQL database Query editor preview.":::
+    :::image type="content" source="../media/sql-database-d2ebb307.png" alt-text="Screenshot of the SQL database Query editor preview.":::
     
 1. Select **db1**, the SQL database you created.
   
