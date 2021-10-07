@@ -1,8 +1,8 @@
-You have explored in details about what is the Azure Policy, the considerations to implementation and how use to:
+You have explored the concepts of Azure Policy. The considerations to implementation and how to use Azure Policy to:
 
-* Enforcement and compliance of your business rules
+* Apply enforcement and compliance of your business rules
 * Apply policies at scale
-* Remediation of resources
+* Help with remediation of resources
 
 You can learn more by visiting the following webpages:
 
