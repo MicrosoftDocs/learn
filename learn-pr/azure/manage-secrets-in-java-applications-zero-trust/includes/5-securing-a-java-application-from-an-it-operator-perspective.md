@@ -46,24 +46,20 @@ as environment variables. Those variables will be used by the Azure Key Vault Sp
 to access Azure Key Vault.
 
 ```bash
-AZ_SPRING_CLOUD_PRINCIPAL_ID=$(az spring-cloud app identity show --resource-group $AZ_RESOURCE_GROUP --service $AZ_SPRING_CLOUD --name application | jq --raw-output '.principalId')
-
-AZ_SPRING_CLOUD_TENANT_ID=$(az spring-cloud app identity show --resource-group $AZ_RESOURCE_GROUP --service $AZ_SPRING_CLOUD --name application | jq --raw-output '.tenantId')
-
 az spring-cloud app update \
    --resource-group $AZ_RESOURCE_GROUP \
    --service $AZ_SPRING_CLOUD \
    --name application \
    --env \
-   AZURE_KEYVAULT_CLIENT_ID=$AZ_SPRING_CLOUD_PRINCIPAL_ID \
    AZURE_KEYVAULT_ENABLED=true \
-   AZURE_KEYVAULT_TENANT_ID=$AZ_SPRING_CLOUD_TENANT_ID \
    AZURE_KEYVAULT_URI=https://$AZ_KEY_VAULT_NAME.vault.azure.net/
 ```
 
 Then, you'll need to grant your application access to the Azure Key Vault.
 
 ```bash
+AZ_SPRING_CLOUD_PRINCIPAL_ID=$(az spring-cloud app identity show --resource-group $AZ_RESOURCE_GROUP --service $AZ_SPRING_CLOUD --name application | jq --raw-output '.principalId')
+
 az keyvault set-policy \
     --name $AZ_KEY_VAULT_NAME \
     --resource-group $AZ_RESOURCE_GROUP \
