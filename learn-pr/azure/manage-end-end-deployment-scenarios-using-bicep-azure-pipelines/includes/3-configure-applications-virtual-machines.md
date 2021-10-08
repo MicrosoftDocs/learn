@@ -1,78 +1,32 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
-    Goal: briefly summarize the key skill this unit will teach
+## Build applications
 
-    Heading: none
+Applications typically need to be compiled or built
+Might also include things like compressing images and text files that will be served to your users
+This turns the source code in the repo into a set of deployable files
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+### Artifacts
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+You don't want to commit these artifacts to your repo, because they're derived from the source code
+The pipeline creates them by running build steps, which creates the files on the agent's file system
+To make them available to the subsequent stages and jobs in your pipeline, you publish them as pipeline artifacts
+You use a special pipeline task to publish an artifact
+Deployment jobs automatically download the artifacts so they're ready to deploy and use
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Deploy applications
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+The way you deploy depends on the service you use to host the site.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+### App Service
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+- For your toy company, you use App Service
+- A deployment pipeline can deploy an app by using a built-in task
+- App Service has its own data plane authentication system for deployments, but the Azure Pipelines task takes care of translating the AAD identity to the credentials required for deployment
+- After your app is deployed, you often want to warm it up. You can do this in the app configuration file, which is deployed alongside the app file
+- Deployment slots can be used to safely deploy a new version, warm it up, and then switch to it in one operation
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+### Other services
 
-    Goal: State concisely what's covered in this unit
+If you're deploying applications to a virtual machine, there are a variety of ways you can achieve this. For many scenarios, you need to use specialized tooling like Chef, Puppet, or Ansible. You also need to plan how you authenticate.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+For Kubernetes and AKS, there are alternative approaches with specialized tooling.

@@ -1,78 +1,48 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+TODO intro
 
-    Goal: briefly summarize the key skill this unit will teach
+## Control plane and data plane
 
-    Heading: none
+- Many Azure resources have a control plane and a data plane
+- ARM and Bicep generally only interacts with the control plane
+- But deployments often need to do data tier operations too
+- e.g. upload a blob, modify a database schema, deploy an application to an App Service, or deploy software to a VM
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+There are also some resources that don't neatly distinguish their control and data planes for deployment, such as Azure Data Factory and Azure API Management. Both services support fully automated deployments by using Bicep, but they require special consideration. We link to more information in the summary.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+## Pipeline design
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Can consider a single pipeline for everything, or a pipeline for infra + pipeline for app
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+Single for everything:
+Pros:
+ - Simpler
+ - Things don't get out of sync
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Cons:
+ - If you have a separate team managing infra and app, it can be hard to coordinate
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+Infra pipeline vs. app pipeline:
+Pros:
+ - More flexible
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+Cons:
+ - Easy to get out of sync - e.g. when you need a new app setting for a new version of your app, the app pipeline needs to wait for the infra pipeline to complete
 
-    Goal: State concisely what's covered in this unit
+Guidance: usually better to go with a single pipeline where you can
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+## Last-mile deployments
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+ARM deployment scripts
+- Runs in ARM
+- Can use a managed identity
+- Can run in between resource deployments, so you can run everything in a Bicep file
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+Pipeline scripts and tasks
+- Runs from your pipeline agent
+- Authentication might require a service principal (although you probably already have one to run the Bicep deployment), or might require another form of identity like a key
+- Deployment requires more coordination between parts
+- Often more flexible and can be used for more scenarios
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+## Outputs
 
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+Route outputs from Bicep deployments into a script, and/or between pipelines
