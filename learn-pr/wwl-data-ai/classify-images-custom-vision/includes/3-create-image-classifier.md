@@ -14,7 +14,7 @@ To use the Custom Vision service, you need an Azure resource that you can use to
 
 Use the following instructions to create a new **Custom Vision** resource.
 
-1. In a new browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com), and sign in using the Microsoft account associated with your Azure subscription.
+1. In a new browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), and sign in using the Microsoft account associated with your Azure subscription.
 2. Select the **&#65291;Create a resource** button, search for *custom vision*, and create a **Custom Vision** resource with the following settings:
     - **Create options**: Both
     - **Subscription**: *Your Azure subscription*
@@ -34,7 +34,7 @@ Use the following instructions to create a new **Custom Vision** resource.
 To train an object detection model, you need to create a Custom Vision project based on your training resource. To do this, you'll use the Custom Vision portal.
 
 1. Download and extract the training images from https://aka.ms/fruit-images. These images are provided in a zipped folder, which when extracted contains subfolders called **apple**, **banana**, and **orange**.
-2. In another browser tab, open the Custom Vision portal at [https://customvision.ai](https://customvision.ai). If prompted, sign in using the Microsoft account associated with your Azure subscription and agree to the terms of service.
+2. In another browser tab, open the Custom Vision portal at [https://customvision.ai](https://customvision.ai?azure-portal=true). If prompted, sign in using the Microsoft account associated with your Azure subscription and agree to the terms of service.
 3. In the Custom Vision portal, create a new project with the following settings:
     - **Name**: Grocery Checkout
     - **Description**: Image classification for groceries
@@ -73,12 +73,7 @@ Now you're ready to publish your trained model and use it from a client applicat
 9. Click **&#128504; Publish** to publish the trained model with the following settings:
     - **Model name**: groceries
     - **Prediction Resource**: *The prediction resource you created previously*.
-10. After publishing, click the *Prediction URL* (&#127760;) icon to see information required to use the published model, which should look like this:
-
-    ![Prediction URL information for a custom vision model](../media/custom-vision-url.png)
-
-    Later, you will need the appropriate URL and Prediction-Key values to get a prediction from an Image URL, so keep this dialog box open and carry on to the next task.
-
+10. After publishing, click the *Prediction URL* (&#127760;) icon to see information required to use the published model. Later, you will need the appropriate URL and Prediction-Key values to get a prediction from an Image URL, so keep this dialog box open and carry on to the next task. 
 
 ## Configure and run a client application
 
@@ -102,14 +97,26 @@ Now that you have a cloud shell environment, you can run a simple client applica
 
      ![The editor containing code to classify an image](../media/classify-image-code.png)
 
-4. Don't worry too much about the details of the code, the important thing is that it needs the prediction URL and key for your Custom Vision model when using an image URL. Copy these from the prediction URL dialog box in your Custom Vision project (which should still be open in another browser tab) and paste them into the code editor, replacing the **YOUR_PREDICTION_URL** and **YOUR_PREDICTION_KEY** placeholder values respectively.
+4. Don't worry too much about the details of the code, the important thing is that it needs the prediction URL and key for your Custom Vision model when using an image URL. 
 
-    After pasting the endpoint and key values, the first two lines of code should look similar to this:
+Get the *prediction URL* from the dialog box in your Custom Vision project, which should look like this:
 
-    ```PowerShell
-    $predictionUrl="https://mycv.cognitiveservices.azure.com/.../groceries/url"
-    $predictionKey = "123abc456def789ghi0klmnopq"
-    ```
+![Prediction URL information for a custom vision model](../media/custom-vision-url.png). 
+
+Paste it into the code editor, replacing the **YOUR_PREDICTION_URL**.
+
+Get the *prediction key*. Click on the *project gallery page** icon on the top left hand side of the custom vision portal. Then click on the settings icon on the top right hand side of the custom vision portal. Look for your prediction resource and click on it.   
+
+![Screenshot of the prediction key.](../media/custom-vision-pred-key.png)
+
+Copy the prediction key. Paste it in the code editor, replacing the **YOUR_PREDICTION_KEY** placeholder value.
+
+After pasting the endpoint and key values, the first two lines of code should look similar to this:
+
+```
+$predictionUrl="https://mycv.cognitiveservices.azure.com/.../groceries/url"
+$predictionKey = "123abc456def789ghi0klmnopq"
+```
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
 
