@@ -1,33 +1,22 @@
-This is a StereoKitInk tutorial designed to teach people the fundamentals of drawing and interacting with Mixed Reality content. You'll learn how to make a core application loop radial hand menus, easy window menus with automatic layout, object-based menus with more explicit layouts, and file pickers, among other things. You'll also discover how simple it is to draw models, lines and interact with your fingers.
+From the previous chapter you have a basic understanding of how 3D model, hand stimulation and UI button works in your StereoKitInk application. In this module You'll learn how to make a core application loop radial hand menus, easy window menus with automatic layout, object-based menus with more explicit layouts, and file pickers, among other things. You'll also discover how simple it is to draw models, lines and interact with your fingers in Mixed Reality.
 
-### Follow the below steps to develop the application on your Windows PC
+> [!Important]
+> Please follow the steps mentioned under **StereoKit’s Visual Studio template** to proceed further.
 
-* First download and install [StereoKit Templates](https://marketplace.visualstudio.com/items?itemName=NickKlingensmith.StereoKitTemplates) as mentioned in the previous chapters.
-* Then download StereoKitInk sample application from this [GitHub repository](https://github.com/maluoi/StereoKit-PaintTutorial/tree/feature/sk_ink).
-* Click on **Code** button & select **Download ZIP**.
-* Once the download is completed click on the folder & select **StereoKitInk.sln** file.
+First, download the StereoKitInk sample application from [GitHub repository](https://github.com/maluoi/StereoKit-PaintTutorial/tree/feature/sk_ink). Then click on the **Code** button & select **Download ZIP**. Once the download is completed, click on the folder & select  **StereoKitInk.sln** file. Then solution file will open in Visual Studio. Towards the right corner of the Visual Studio, you can find Solution Explorer, which contains the assets folder and three other program files which operate the main logic.
 
 > [!Note]
 > The program will contain errors, which will be cleared at a later time during debugging.
 
-Visual Studio, open the code for the StereoKitInk application. The solution explorer is located in the right corner and contains an assets folder and three other software files that operate the basic logic.
-
 ## 3D model assets
 
-* Look for the assets folder in the solution explorer.
-* InkBottle.glb, InkSplat.glb, and StereoKitInkLight.png are the model and image files used in the program to improve the user experience.
+Look for the Assets folder in the solution explorer. This folder contains InkBottle.glb, InkSplat.glb and StereoKitInkLight.png model and image files which will be used later in the application.
 
 ## Painting menu
 
-* Painting menu is created using Painting.cs class which contains the entire concept of finger painting.
-* It accepts manual input and generates three-dimensional lines out of it.
-* This program takes the fingertip of the hand, translates it to local space, smooths it out to reduce any jagged noise, and converts the fingertip's coordinates into hierarchy local coordinates before it works with it.
-* It includes an undo option that adds the most recent undo to the painting from the stack and a redo option that removes the most recent undo from the stack and adds it to the painting.
-* In the painting menu we start drawing using two points. The first one begins at the point provided, and the second one will continuously be updated to the current fingertip location. It then estimates the current distance from the previous position as well as the hand's speed.  
-* It'll add a new point if it's more than a centimeter away from our last point.
-* Finally, it adds the active stroke to the painting and clears it out for the next one.
-* Each line in this file is a paint stroke. Later each paint stroke in painting will be converted into a file and joins all the data together.
-* This palette menu is also in charge of loading and saving painting files.
+The painting menu is created using Painting.cs class which contains the entire concept of finger painting. It accepts manual input and generates three-dimensional lines out of it. It has an undo option that removes the most recent undo from the stack and adds it to the painting, and a redo option removes the most recent undo from the stack and adds it to the painting. Finally, it takes the fingertip of the hand, translates it to local space, smooths it out to reduce any jagged noise, and converts the fingertip's coordinates into hierarchy local coordinates before it works with it.
+
+Here we start drawing using two points. The first one begins at the point provided, and the second one will continuously be updated to the current fingertip location. Next, it calculates the current distance from the last point and the speed at which the hand is traveling. It'll add a new point if it's more than a centimeter away from our last point. Finally, it adds the active stroke to the painting and clears it out for the next one. In this file, each line is a paint stroke. Later each paint stroke in painting needs to be converted into a file and joins all the data together. It's also in charge of loading and saving painting files. This painting.cs class can be seen in the StereoKit's Hierarchy system.
 
 ## Palette menu
 
