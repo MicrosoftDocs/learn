@@ -13,7 +13,7 @@ In this exercise you will use ACR Tasks to perform the following actions:
 
 1. Login to the [Azure portal](https://portal.azure.com) and open the Cloud Shell.
 
-    :::image type="content" source="../media/hdi-cloud-shell-menu.png" alt-text="The location of Cloud Shell launch button.":::
+    :::image type="content" source="../media/cloud-shell-menu.png" alt-text="The location of Cloud Shell launch button.":::
 
 1. After the shell opens be sure to select the **Bash** environment.
 
