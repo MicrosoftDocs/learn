@@ -4,7 +4,7 @@ You just came out of a review with the security and compliance teams. They expre
 
 You need to be able to block new deployments from untrusted registries, and present a report of the status of your cluster against that policy. It's up to you to find out how you can meet this requirement and present a solution to the security and compliance teams. 
 
-In this module, you'll learn how to achieve this by using Azure policy for Kubernetes.
+In this module, you'll learn how to achieve this by using Azure Policy for Kubernetes.
 
 ## Learning objectives
 
@@ -17,6 +17,6 @@ By the end of this module, you'll be able to:
 
 ## Prerequisites
 
-- Familiarity with Kubernetes concepts. If you're new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes/?azure-portal=true&WT.mc_id=akspipeline_intro-learn-ludossan)).
-- An active [Azure subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true&WT.mc_id=akspipeline_intro-learn-ludossan)
+- Familiarity with Kubernetes concepts. If you're new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes).
+- An active [Azure subscription](https://azure.microsoft.com/free/services/kubernetes-service)
 - Ability to use the [Azure CLI](/azure/aks/kubernetes-walkthrough?WT.mc_id=akspipeline_intro-learn-ludossan)

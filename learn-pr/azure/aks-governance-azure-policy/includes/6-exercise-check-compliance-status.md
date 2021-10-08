@@ -1,4 +1,4 @@
-In the previous section you saw how Azure policies can be used to easily govern your cluster by using a built-in Policy  and Initiative. We also noted that the policy does not terminate already existing pods. We however would like to discover non-compliant pods so that we can take actions on them. We will do that in this exercise.
+In the previous section you saw how Azure policies can be used to easily govern your cluster by using a built-in Policy and Initiative. We also noted that the policy does not terminate already existing pods. We however would like to discover non-compliant pods so that we can take actions on them. We will do that in this exercise.
 
 ## Using the Azure Portal to see non-compliant pods
 
@@ -18,42 +18,14 @@ In the previous section you saw how Azure policies can be used to easily govern 
 
    ![screenshot showing the policies that the resources are not compliant with](../media/6-non-compliant-pod.png)
 
-## Remove non compliant pod and check for compliance
+## Remove the non-compliant pod and recheck compliance
 
 Now that we have found the pod that is not compliant, we will go ahead and delete that pod. Once the pod is deleted, the Policy will prevent future pods that are not compliant with it from being deployed. The **Kubernetes cluster pod security restricted standards for Linux-based workloads for videogamerg** initiative is set to audit meaning we can identify pods that are not compliant, but would not prevent the pods from being deployed. Getting our pods to comply with that initiative is beyond the scope of this course, so we will focus on fixing the Policy that we set to have the **deny** effect.
 
 1. Open the Cloud shell again and delete the non-compliant deployment
 
    ```bash
-    cat <<EOF | kubectl delete -f -
-    apiVersion: apps/v1
-    kind: Deployment
-    metadata:
-      name: simple-nginx
-      labels:
-        app: nginx
-    spec:
-      selector:
-        matchLabels:
-          app: nginx
-      template:
-        metadata:
-          labels:
-            app: nginx
-        spec:
-          containers:
-          - name: simple-nginx
-            image: docker.io/library/nginx:stable
-            resources:
-              requests:
-                cpu: 100m
-                memory: 100Mi
-              limits:
-                cpu: 120m
-                memory: 120Mi
-            ports:
-            - containerPort: 80
-   EOF
+kubectl delete deployment simple-nginx
    ```
 
 1. It might take up to 45 minutes for the changes to reflect on the portal. After waiting, head back to the Policy to to see if there are still any uncompliant pods under it. You will find that your cluster is now in compliance with the Policy.
@@ -62,4 +34,4 @@ Now that we have found the pod that is not compliant, we will go ahead and delet
 
 ## Summary
 
-In this unit, you learned about how to use Azure Portal to identify pods that are not compliant with your policies. We then went ahead and deleted a pod that was not compliant with one of the policies. You also learned how to troubleshoot your deployments and identify pods that are not being deployed because of a deny Policy it is not compliant with. You also learned how to use Azure Portal to see uncompliant resources and which policies they are not compliant with. You also resolved one of the issues by deleting the uncompliant pod you first created. Now that you have added and tested out a Policy and an Initiative, you can go through the other in-built policies for Kubernetes and find those that suit your business needs.
+In this unit, you learned about how to use Azure Portal to identify pods that are not compliant with your policies. We then went ahead and deleted a pod that was not compliant with one of the policies. You also learned how to troubleshoot your deployments and identify pods that are not being deployed because of a deny Policy. You also learned how to use Azure Portal to see non-compliant resources and which policies they are not compliant with. You also resolved one of the issues by deleting the uncompliant pod you first created. Now that you have added and tested out a Policy and an Initiative, you can go through the other in-built policies for Kubernetes and find those that suit your business needs.

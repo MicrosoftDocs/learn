@@ -35,7 +35,7 @@ quiz:
           explanation: "There is a built-in Azure policy to deny pods without requests/limits from being created."
         - content: "Run an automation job to every hour delete pods without requests and limits."
           isCorrect: false
-          explanation: "This does not solve the problems, since pods without requests/limits still are able to be created."
+          explanation: "This does not solve the problem, since pods without requests/limits still are able to be created."
         - content: "Use RBAC in Kubernetes."
           isCorrect: false
           explanation: "RBAC in Kubernetes defines who can execute certain actions in the cluster. It does not inspect the resources being created and does not check policy."
