@@ -9,8 +9,8 @@ MQTT messages between the Web Terminal and Altair emulator need to be signed and
 ## What to install
 
 1. The Mosquitto MQTT broker.
-2. Certificate tools.
-3. Let's Encrypt support.
+1. Certificate tools.
+1. Let's Encrypt support.
 
 ## Installing on Linux
 
@@ -227,7 +227,7 @@ We need to tell the Mosquitto Broker what ports to listen on and where the certi
 
 A useful troubleshooting tip for the Mosquitto Broker is to start up in interactive mode to ensure there are no issues.
 
-1. We need to stop Mosquitto first then start in interactive mode. Press <kbd>ctrl+c</kbd> to exit Mosquitto interactive mode.
+1. We need to stop Mosquitto first then start in interactive mode. Press **ctrl+c** to exit Mosquitto interactive mode.
 
     ```bash
     sudo systemctl stop mosquitto && sudo mosquitto -c /etc/mosquitto/conf.d/default.conf
@@ -253,7 +253,7 @@ A useful troubleshooting tip for the Mosquitto Broker is to start up in interact
 
     Upload the Altair Web Terminal local settings
 
-    1. Still in Visual Studio Code, press <kbd>F1</kbd>
+    1. Still in Visual Studio Code, press **F1**
     1. Type **static local**, and select **Azure Static Web Apps: Upload Local Settings...**.
     1. Select your subscription.
     1. Select the **Static Web App**. Enter the name your created **AltairWebTerminal**.
@@ -313,7 +313,7 @@ We need to update the Altair emulator to connect to our new and secured Mosquitt
 
 ## Start the Mosquitto MQTT broker in daemon/service mode
 
-1. Stop the interactive instance of the Mosquitto Broker with <kbd>ctrl+c</kbd>.
+1. Stop the interactive instance of the Mosquitto Broker with **ctrl+c**.
 1. Start the Mosquitto broker in daemon mode.
 
     ```bash

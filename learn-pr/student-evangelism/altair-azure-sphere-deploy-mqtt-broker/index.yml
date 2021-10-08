@@ -3,11 +3,12 @@ uid: learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker
 metadata:
   title: Deploy a private MQTT broker
   description: Learn how to deploy your own private MQTT broker.
-  ms.date: 08/30/2021
+  ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 title: Deploy your own private MQTT broker
 summary: Learn how to deploy your own private MQTT broker.
 abstract:  |
