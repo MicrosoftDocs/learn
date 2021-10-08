@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-gaming.core-game-elements
+title: Core game elements and accessibility
+metadata:
+  title: Core game elements and accessibility
+  description: This content is part of the Introduction to Gaming and Disability module.
+  ms.date: 08/10/2021
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 18
+content: |
+  [!include[](includes/01-core-game-elements.md)]
