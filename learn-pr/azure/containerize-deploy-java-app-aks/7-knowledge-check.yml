@@ -1,0 +1,26 @@
+### YamlMime:ModuleUnit
+uid: learn.containerize-deploy-java-app-aks.knowledge-check
+title: Knowledge Check
+metadata:
+  unitType: Knowledge Check
+  title: Knowledge Check
+  description: Knowledge Check
+  ms.date: 9/28/2021
+  author: chtrembl
+  ms.author: chtrembl
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+quiz:
+  questions:
+  - content: "Which service allows developers to build container images?"
+    choices:
+    - content: "Maven"
+      isCorrect: false
+      explanation: "Maven is a build tool that allows you to configure dependencies and deploy applications."
+    - content: "Docker"
+      isCorrect: true
+      explanation: "Correct. Docker runtime is used to build, run, push and pull Docker container images."
+    - content: "Azure Container Registry"
+      isCorrect: false
+      explanation: "Azure Container Registry allows you to build, store, and manage container images and artifacts."
