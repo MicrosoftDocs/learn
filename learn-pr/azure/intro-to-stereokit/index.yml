@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-stereokit
 metadata:
-  title: introduction to stereokit
+  title: Introduction to StereoKit
   description: By the end of this module, you'll be able to set up, create, build an application and work across OpenXR platforms like HoloLens 2, Windows Mixed Reality, Monado Linux and so on.
   ms.date: 10/05/2021
   author: "Sean-Kerawala"
@@ -12,8 +12,12 @@ title: introduction to stereokit
 summary: By the end of this module, you'll be able to set up, create, build an application and work across OpenXR platforms like HoloLens 2, Windows Mixed Reality, Monado Linux and so on.
 abstract: |
   By the end of this module you will be able to:
-  - how to configure, set up and build an application using Stereokit.
-  - provides you an understanding of developing the mixed reality application with Stereokit working across OpenXR platforms like HoloLens 2, Windows Mixed Reality, Monado Linux and so on.
+  - have a brief knowledge about the StereoKit application and its advantages.
+  - learn some of the key features of StereoKit.  
+  - how to configure, set up and build an application using StereoKit for Mixed Reality development.
+  - basic understanding of how code, 3D model, hand stimulation and UI button works in your StereoKitInk application.
+  - learns fundamentals of drawing and interacting with Mixed Reality content.
+  - understand developing the mixed reality application with StereoKit working across OpenXR platforms like HoloLens 2 and Universal Windows Platform such as Windows PC.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
