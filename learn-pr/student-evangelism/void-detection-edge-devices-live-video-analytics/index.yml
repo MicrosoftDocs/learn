@@ -5,7 +5,7 @@ metadata:
   description: "This module helps learner to deploy void detection solution using Live Video Analytics and Custom Vision"
   ms.date: 03/01/2021
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
   ms.custom: nextgen
