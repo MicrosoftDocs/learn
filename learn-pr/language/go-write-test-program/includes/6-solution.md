@@ -23,7 +23,7 @@ func TestTransfer(t *testing.T) {
 			Address: "Irvine, California",
 			Phone:   "(949) 555 0198",
 		},
-		Number:  1001,
+		Number:  1002,
 		Balance: 0,
 	}
 
