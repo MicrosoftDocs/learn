@@ -51,7 +51,7 @@ If you didn't activate the free trial for Azure AD Premium 2, you won't be able 
 
 1. Change **Membership type** to **Dynamic User**.
 
-1. Under **Dynamic user members**, select **Add dynamic query**.
+1. Under **Dynamic user members**, select the **Add dynamic query** link.
 
    :::image type="content" source="../media/5-add-dynamic-query.png" alt-text="Screenshot that shows the Add dynamic query link.":::
 
@@ -59,13 +59,13 @@ If you didn't activate the free trial for Azure AD Premium 2, you won't be able 
 
 1. On the **Configure Rules** tab, select the following values for the rule:
 
-   ![Screenshot that shows how to assign a dynamic membership rule.](../media/5-dynamic-member.png)
-
    | Setting  | Value  |
    |---------|---------|
    | Property  | country |
    | Operator  | Equals  |
    | Value     | United States  |
+
+   ![Screenshot that shows how to assign a dynamic membership rule.](../media/5-dynamic-member.png)
 
    The membership of this group now depends on whether the user is in the United States.
 
