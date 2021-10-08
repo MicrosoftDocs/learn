@@ -1,6 +1,6 @@
 The block blob storage account type lets you create block blobs with premium performance characteristics. This type of storage account is optimized for workloads with high transactions rates or that require very fast access times.
 
-In this exercise you will create a block blob storage account by using the Azure portal, and in the cloud shell using the Azure CLI.
+In this exercise you will create a block blob storage account by using the Azure portal, and in the Cloud Shell using the Azure CLI.
 
 ## Prerequisites
 
