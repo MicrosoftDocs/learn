@@ -63,7 +63,7 @@ spec:
 > [!NOTE]
 > Optionally, the deployment_solution.yml in the root of your project contains the contents needed.
 
-In the deployment.yml above you'll notice this deployment.yml contains a Deployment and a Service. The deployment is used to adminsiter a set of pods while the service is used to allow network access to the pods. You'll notice the pods are configured to pull a single image, the ```<THE VALUE OF AZ_CONTAINER_REGISTRY HERE>.azurecr.io/turkishairlines:latest``` from Azure Container Registry. You'll also notice the the service is configured to allow incoming http pod traffic to port 8080, similarly to the way you ran the Docker image locally with the ```-p``` port argument.
+In the deployment.yml above you'll notice this deployment.yml contains a Deployment and a Service. The deployment is used to administer a set of pods while the service is used to allow network access to the pods. You'll notice the pods are configured to pull a single image, the ```<THE VALUE OF AZ_CONTAINER_REGISTRY HERE>.azurecr.io/turkishairlines:latest``` from Azure Container Registry. You'll also notice the the service is configured to allow incoming http pod traffic to port 8080, similarly to the way you ran the Docker image locally with the ```-p``` port argument.
 
 By now your Azure Kubernetes Cluster creation should have successfully completed.
 
