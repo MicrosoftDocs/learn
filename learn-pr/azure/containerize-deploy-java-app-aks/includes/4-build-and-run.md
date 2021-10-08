@@ -36,7 +36,7 @@ Successfully tagged turkishairlines:latest
 
 As you can see above, Docker has executed the instructions from the 5 lines that you have previously written in the prior unit. Each instruction is a step in sequential order. Rerun the ```docker build``` command again, notice the differences in the steps, you'll notice ```---> Using cache``` for layers that have not changed. If your not recompiling the application (before rerunning the ```docker build``` command), then you will notice all cached layers as the binaries are untouched and can be sourced from Docker cache). This is an important takeaway when optimizing your Docker images and the associated compute costs with time spent building them.
 
-Docker can also display the available images that are resident. This is helpful for viewing whats available to run. Run the following command in your CLI:
+Docker can also display the available images that are resident. This is helpful for viewing what's available to run. Run the following command in your CLI:
 
 ```bash
 docker image ls
@@ -54,7 +54,7 @@ turkishairlines                                   latest              cda4f5b459
 
 Now that you have successfully built a Docker image, you can run it.
 
-```docker run``` is the command used to run a Docker image. The ```-p``` argument will be used to forward localhost HTTP (the first port before the :) traffic to the container at runtime (the second port after the :). Remember from the Dockerfile that the Tomcat application server is listening for HTTP traffic on port 8080 hence that is the container port that needs to be exposd. Lastly the image tag is needed to instruct Docker of what image to run. Run the following command in your CLI:
+```docker run``` is the command used to run a Docker image. The ```-p ####:####``` argument will be used to forward localhost HTTP (the first port before the colon) traffic to the container at runtime (the second port after the colon). Remember from the Dockerfile that the Tomcat application server is listening for HTTP traffic on port 8080 hence that is the container port that needs to be exposed. Lastly the image tag ```turkishairlines``` is needed to instruct Docker of what image to run. Run the following command in your CLI:
 
 ```bash
 docker run -p 8080:8080 turkishairlines
@@ -109,10 +109,12 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 02-Aug-2021 20:50:32.768 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [8990] milliseconds
 ```
 
-Open up a browser and visit the Turkish Airlines landing page at http://localhost:8080/TurkishAirlines
+Open up a browser and visit the Turkish Airlines landing page at [http://localhost:8080/TurkishAirlines](http://localhost:8080/TurkishAirlines)
 
 You should see the following
 
 ![Screenshot showing the running application.](../media/build-and-run-1.png)
 
- You can optionally log in with any user from tomcat-usrrs.xml for example someuser@azure.com:password
+You can optionally log in with any user from tomcat-usrrs.xml for example someuser@azure.com:password
+
+To stop the Docker container hold ctrl + c inside the CLI. 
