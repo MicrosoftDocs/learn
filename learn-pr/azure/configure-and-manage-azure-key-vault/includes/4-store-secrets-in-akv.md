@@ -4,38 +4,54 @@ To get some quick experience with Azure Key Vault, let's create a new Key Vault 
 
 Let's start by creating a new Key Vault in the Azure portal.
 
-1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using the same credentials you used to activate the Azure Sandbox.
-1. Select **+ Create a resource**.
-1. Type **Key Vault** into the search box to find the Azure Key Vault service, and then select **Create**.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) using the same credentials you used to activate the Azure Sandbox.
 
-1. On the **Basics** tab:
-    - Make sure the _Concierge Subscription_ is selected in the **Subscription** dropdown.
-    - Select <rgn>[The Sandbox resource group]</rgn> from the **Resource group** dropdown.
-    - Enter a globally unique name for the new vault. Vault names must be 3-24 characters long and contain only alphanumeric characters and dashes. The exercise uses the example name of **VaultamortDiary** for the new vault.
-    - Leave the default selected values for **Region** and **Pricing tier**.
+1. Select **Create a resource**. The **Create a resource** pane appears.
 
-1. Select **Review + create** to go to the validation screen.
-1. Select **Create** to create the Azure Key Vault.
+1. In the *Search services and marketplace*, search for and select *Key Vault* to find the Azure Key Vault service. The **Key Vault** pane appears.
 
-Once the deployment is complete, navigate to the resource.
+1. Select **Create**. The **Create key vault** pane appears.
+
+1. On the **Basics** tab, enter the following values for each setting.
+
+    | Setting | Value |
+    |---|---|
+    | **Project details** |
+    | Subscription | From the dropdown list, select *Concierge Subscription*. |
+    | Resource group | From the dropdown list, enter *msftlearn-core-infrastructure-rg*. |
+    | **Instance details** |
+    | Key vault name | Enter a globally unique name for the new vault. Vault names must be 3-24 characters long and contain only alphanumeric characters and dashes. The exercise uses the example name of *VaultamortDiary* for the new vault.
+    | Region | Accept default. |
+    | Pricing tier | Accept default. |
+
+1. Select **Review + create**.
+
+1. After validation passes, select **Create** to create the Azure Key Vault.
+
+After the deployment is complete, select **Go to resource**. Your *Key vault* pane appears.
 
 ## Add a secret
 
 Next, add a new secret to the vault.
 
-1. In the Azure portal, select **Secrets** under the **Settings** section of your Azure Key Vault.
-1. Click the **Generate/Import** button at the top of the **Secrets** panel.
-1. Fill out the **Create a secret** screen with a name, value, and (optional) content type. An example is shown below.
+1. In the left menu pane, under **Settings**, select **Secrets**. The **Secrets** pane appears for your key vault.
+
+1. In the top menu bar, select **Generate/Import**. The **Create a secret** pane appears.
+
+1. Enter a name, value, and (optional) content type. An example follows.
 
     ![Screenshot showing the Create a secret pane in the Azure portal for Azure Key Vault.](../media/1-create-secret.png)
 
-1. Select **Create** to add the secret.
+1. Select **Create** to add the secret. The **Secrets** pane reappears.
 
 ## Show the secret
 
 Finally, verify that the secret value has been set.
 
-1. Select your secret from the list and then select the current version of the secret.
+1. Select your secret from the list. The **Versions** pane appears for your secret.
+
+1. Select the **CURRENT VERSION** of the secret. The **Secret Version** pane appears.
+
 1. Select **Show Secret Value** to see the value assigned to the secret.
 
     ![Screenshot showing the secret value in the Azure portal.](../media/1-show-secret.png)

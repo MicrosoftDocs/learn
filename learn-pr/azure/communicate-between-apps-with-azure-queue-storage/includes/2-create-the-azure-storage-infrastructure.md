@@ -37,7 +37,7 @@ If you want to create a structured message, you could format the message content
 
 ## Creating a storage account
 
-A queue must be part of a [storage account](https://azure.microsoft.com/services/storage/). You can create a storage account using the Azure CLI (or PowerShell), or Azure portal. The portal is easiest because it's all guided and prompts you for each piece of information. 
+A queue must be part of a [storage account](https://azure.microsoft.com/services/storage/). You can create a storage account using the Azure CLI (or PowerShell), or Azure portal. The portal is easiest because it's all guided and prompts you for each piece of information.
 
 The following screenshot shows the location of the Storage accounts category.
 
