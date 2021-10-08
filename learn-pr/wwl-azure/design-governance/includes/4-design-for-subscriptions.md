@@ -1,4 +1,4 @@
-**Azure Subscriptions** are logical containers that serve as units of management and scale and billing boundaries. Limits and quotas can be applied, and each organization can use subscriptions to manage costs and resources by group.​ 
+note**Azure Subscriptions** are logical containers that serve as units of management and scale and billing boundaries. Limits and quotas can be applied, and each organization can use subscriptions to manage costs and resources by group.​ 
 
 ### Things to know about subscriptions
 
@@ -42,5 +42,5 @@ Tailwind Traders has established their management group structure. Now they need
 
  
 
-> [!NOTE]
-**&gt;** One size doesn't fit all for subscriptions. What works for one business unit might not work for another. 
+>[!NOTE]
+>One size doesn't fit all for subscriptions. What works for one business unit might not work for another. 
