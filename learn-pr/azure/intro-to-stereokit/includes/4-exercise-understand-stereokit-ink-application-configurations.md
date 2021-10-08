@@ -1,6 +1,6 @@
 This is a StereoKitInk tutorial designed to teach people the fundamentals of drawing and interacting with Mixed Reality content. You'll learn how to make a core application loop radial hand menus, easy window menus with automatic layout, object-based menus with more explicit layouts, and file pickers, among other things. You'll also discover how simple it is to draw models, lines and interact with your fingers.
 
-### Follow the below steps to devlop the application in your Windows PC
+### Follow the below steps to develop the application on your Windows PC
 
 * First download and install [StereoKit Templates](https://marketplace.visualstudio.com/items?itemName=NickKlingensmith.StereoKitTemplates) as mentioned in the previous chapters.
 * Then download StereoKitInk sample application from this [GitHub repository](https://github.com/maluoi/StereoKit-PaintTutorial/tree/feature/sk_ink).
@@ -8,9 +8,10 @@ This is a StereoKitInk tutorial designed to teach people the fundamentals of dra
 * Once the download is completed click on the folder & select **StereoKitInk.sln** file.
 
 > [!Note]
+
     >* The program will contain errors, which will be cleared at a later time during debugging.
 
-Visual Studio, open the code for the StereoKitInk application. In the right corner is the Solution Explorer, which has an assets folder and three other software files that operate the basic logic.
+Visual Studio, open the code for the StereoKitInk application. The solution explorer is located in the right corner and contains an assets folder and three other software files that operate the basic logic.
 
 ## 3D model assets
 
@@ -44,7 +45,7 @@ Visual Studio, open the code for the StereoKitInk application. In the right corn
 * The Program.cs class was used to develop the Main Program.
 * This is the main program that binds everything together.
 * It contains the application logic, the hand menu, and the application menu.
-* In the Main program, the user needs to prepare a few options at initialization, such as the assets folder and appName. When StereoKit is given a relative folder name, it will search for assets in assetsFolder folder.
+* In the main program, the user needs to prepare a few options at initialization, such as the assets folder and appName. When StereoKit is given a relative folder name, it will search for assets in assetsFolder folder.
 * We store quick actions in a simple radial hand menu. It's initiated by a grip motion and is ideal for quick, gesture-like menu item activation.
 * Main program also controls the application's menu window. When the save button is pressed, a save file dialogue should appear. After a file name and folder have been provided, it should call the SavePainting method with the file's pathname and the.skp extension.
 * The load button allows the user to choose any .skp file and execute the LoadPainting method, whereas the clear button creates a new Painting object. Finally, the quit button tells the StereoKit to finish the frame properly, break out of the loop, and end the window.
