@@ -8,7 +8,7 @@ Create a Jupyter Notebook file that will run your Python code:
 
 1. Open Visual Studio Code.
 1. Select **File** > **New File** (or type `Ctrl-N`). A blank file opens.
-1. Save the file as a Jupyter file: 
+1. Save the file as a Jupyter file:
     1. Select **File** > **Save** (or type `Ctrl-S`).
     1. Give your file a name of your choosing.
     1. Select the **Save As** location to be the folder you just created.
