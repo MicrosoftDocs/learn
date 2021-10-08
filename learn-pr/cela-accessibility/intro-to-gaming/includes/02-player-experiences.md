@@ -28,7 +28,7 @@ Options to enhance the visibility for players with low vision can include settin
 
 Color is another key component of visual information. Color vision deficiency, or colorblindness, can impact a player’s ability to discern the color of objects, or differentiate certain colors from others. In game scenarios, the use of color alone to portray information can be challenging for players with colorblindness. For example, eating green flowers increases health while red flowers diminishes health. Players with certain types of colorblindness cannot distinguish the difference between green and red.
 
-Here are some common types of colorblindness and how they can impact a player&#39;s vision:
+Here are some common types of colorblindness and how they can impact a player's vision:
 
 #### Red-Green Colorblindness
 
@@ -46,7 +46,7 @@ Here are some common types of colorblindness and how they can impact a player&#3
 
 - Monochromacy: players do not see color at all, and rather colors are perceived as shades of gray, black, and white.
 
-The images above show a screen capture from the Minecraft gameplay environment. Colorblindness simulation filters have been applied to three of the four images to illustrate how various types of colorblindness may influence a player&#39;s ability to determine the color of game components. Additionally, these examples can show that for a player with deuteranopia, the green grassy background in Minecraft appears similar in color to the red hearts. Overall, various aspects of the game environment are similar in color and can seem to blend in together.
+The images above show a screen capture from the Minecraft gameplay environment. Colorblindness simulation filters have been applied to three of the four images to illustrate how various types of colorblindness may influence a player's ability to determine the color of game components. Additionally, these examples can show that for a player with deuteranopia, the green grassy background in Minecraft appears similar in color to the red hearts. Overall, various aspects of the game environment are similar in color and can seem to blend in together.
 
 ## Hearing and Disability
 
@@ -102,19 +102,19 @@ In Gears 5, players can change the input requirements for repeated button taps. 
 
 ## Cognition and Disability
 
-Despite how fun and engaging games can be, there is a multitude of cognitive &quot;work&quot; players must be do as they navigate a game that is often subconscious. This &quot;work&quot; often involves constantly processing information from the game to actively problem-solve and make decisions that impact the outcome of their gameplay. However, players with disabilities that affect learning, cognitive processing speeds, attention, and memory, can experience barriers when games do not provide adequate information or tools that help this decision making or problem solving. It's important to provide features and tools that can unblock players who require more time, cues, or other key game information to prevent players from becoming blocked altogether.
+Despite how fun and engaging games can be, there is a multitude of cognitive work players must be do as they navigate a game that is often subconscious. This "work" often involves constantly processing information from the game to actively problem-solve and make decisions that impact the outcome of their gameplay. However, players with disabilities that affect learning, cognitive processing speeds, attention, and memory, can experience barriers when games do not provide adequate information or tools that help this decision making or problem solving. It's important to provide features and tools that can unblock players who require more time, cues, or other key game information to prevent players from becoming blocked altogether.
 
 ### Learning and Cognitive Processing
 
 Imagine the following scenario: you are “stuck” midway through a game’s storyline as  you must place a particular item on an altar in order to unlock the pathway to the next area in the game. Despite revisiting all areas in the game thus far and making numerous attempts to place collected items on the altar, nothing has worked. Ultimately, you search for an online tutorial posted by another player that shows where the correct item for the altar was hidden in a previous game area that you had missed. In this scenario, you were not provided with adequate hints, messaging, or corrective cues from the game to unblock you from proceeding. For players with learning and cognitive disabilities, solving puzzles or completing multi-step tasks can be challenging. Providing options for players to customize the cognitive demands of a game experience through enabling hints, waypoint markers, objective logs, or the ability to bypass these aspects of the game altogether can help ensure that players do not get blocked from progress.
 
-Understanding where to go &quot;next&quot; in a game often requires learning and cognitive processing to determine what has happened thus far in the game, what is the current objective, and where the location of that objective may be. In the Outer Worlds, players can enable waypoint markers that visually guide players in the direction of their next objective and how far away the location they are traveling to is.
+Understanding where to go next in a game often requires learning and cognitive processing to determine what has happened thus far in the game, what is the current objective, and where the location of that objective may be. In the Outer Worlds, players can enable waypoint markers that visually guide players in the direction of their next objective and how far away the location they are traveling to is.
 
 ### Attention
 
-Attention can be affected by a wide range of sensory stimuli. While some individuals can easily ignore an incoming text notification on their phone while playing, for others, sustaining attention amidst environmental and in-game distractions can be difficult. Players with disabilities that impact attention may experience barriers when gaming experiences include lots of visual and audio stimuli in the UI. For example, notifications from the game or platform, animated backgrounds behind text, and otherwise &quot;loud&quot; or &quot;busy&quot; user interfaces can cause barriers to gameplay.
+Attention can be affected by a wide range of sensory stimuli. While some individuals can easily ignore an incoming text notification on their phone while playing, for others, sustaining attention amidst environmental and in-game distractions can be difficult. Players with disabilities that impact attention may experience barriers when gaming experiences include lots of visual and audio stimuli in the UI. For example, notifications from the game or platform, animated backgrounds behind text, and otherwise loud or busy user interfaces can cause barriers to gameplay.
 
-In the Outer Worlds, players can turn off aspects of the UI they may find distracting in order to keep attention focused on the active gameplay at hand. This payer turned off &quot;Quest Updates&quot; from popping up on screen and plans to lower the Notification Duration to zero, meaning that notifications will not appear for them during play.
+In the Outer Worlds, players can turn off aspects of the UI they may find distracting in order to keep attention focused on the active gameplay at hand. This player turned off Quest Updates from popping up on screen and plans to lower the Notification Duration to zero, meaning that notifications will not appear for them during play.
 
 ### Memory
 
@@ -131,4 +131,4 @@ The following are examples of bespoke accessibility features and elements benefi
 - Vision: A person is playing on a small mobile screen outside where there is a lot of sun glare. They are situationally unable to read the text on screen and decide to leverage the high contrast mode provided by the platform.
 - Hearing: A person is playing on a loud crowded bus and forgot their headphones. They turn on subtitles and captions because they cannot hear the game audio.
 - Mobility: A person is recovering from a hand injury. Their hand muscles fatigue easily after being in a cast for the past few months. They remap the button layout on their controller so buttons normally on the back of the controller like bumpers and triggers are now controlled by buttons on the front of the controller.
-- Cognition: A person hasn&#39;t played a certain game in a few months but are eager to start playing again. They can&#39;t remember where they were at in their last quest. They leverage the quest log, which provides detailed descriptions of what was happening in the game at the time of their last save.
+- Cognition: A person hasn't played a certain game in a few months but are eager to start playing again. They can't remember where they were at in their last quest. They leverage the quest log, which provides detailed descriptions of what was happening in the game at the time of their last save.
