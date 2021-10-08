@@ -6,7 +6,7 @@ In this section, you'll learn what a package is. You'll also learn how to create
 
 As you might have noticed, even the most straightforward program in Go has to be part of a package. Usually, the default package is the `main` package, the one we've been using so far. If a program is part of the `main` package, Go generates a binary file. When that file runs, it calls the `main()` function.
 
-In other words, when you use the `main` package, your program will produce a standalone executable. But when a program is part of a package other than `main`, Go doesn't generate a binary file. It generates a package archive file (a file with an .a extension).
+In other words, when you use the `main` package, your program will produce a standalone executable. But when a program is part of a package other than `main`, Go doesn't generate a binary file. It generates a package archive file (a file that has the ".a" extension).
 
 In Go, package names follow a convention. A package uses the last part of its import path as its name. For example, the Go standard library contains a package called `math/cmplx`, which provides useful code for working with complex numbers. The import path of this package is `math/cmplx`, and you import it like this:
 
@@ -126,18 +126,21 @@ We'll use this code for the `$GOPATH/src/helloworld/main.go` file:
 ```go
 package main
 
-import "github.com/myuser/calculator"
+import (
+  "fmt"
+  "github.com/myuser/calculator"
+)
 
 func main() {
     total := calculator.Sum(3, 5)
-    fmt.println(total)
-    fmt.println("Version: ", calculator.Version)
+    fmt.Println(total)
+    fmt.Println("Version: ", calculator.Version)
 }
 ```
 
 Notice that the import statement uses the name of the package you created: `calculator`. To call the `Sum` function from that package, you need to include the package name, as in `calculator.Sum`. Finally, you now also have access to the `Version` variable. You call it like this: `calculator.Version`.
 
-If you try to run the program now, it won't work. You need to inform Go that you're using modules to reference other packages. To do so, run this command in the `$GOPATH/src/helloworld` directory:
+If you try to run the program now, it won't work. You need to tell Go that you're using modules to reference other packages. To do so, run this command in the `$GOPATH/src/helloworld` directory:
 
 ```output
 go mod init helloworld
@@ -199,12 +202,15 @@ What happens if you try to call the `logMessage` variable or the `internalSum` f
 >```go
 >package main
 >
->import "github.com/myuser/calculator"
+>import (
+>  "fmt"
+>  "github.com/myuser/calculator"
+>)
 >
 > func main() {
 >     total := calculator.internalSum(5)
->     fmt.println(total)
->     fmt.println("Version: ", calculator.logMessage)
+>     fmt.Println(total)
+>     fmt.Println("Version: ", calculator.logMessage)
 > }
 > ```
 
@@ -243,15 +249,16 @@ Let's add a reference to the `rsc.io/quote` package:
 package main
 
 import (
+    "fmt"
     "github.com/myuser/calculator"
     "rsc.io/quote"
 )
 
 func main() {
     total := calculator.Sum(3, 5)
-    fmt.println(total)
-    fmt.println("Version: ", calculator.Version)
-    fmt.println(quote.Hello())
+    fmt.Println(total)
+    fmt.Println("Version: ", calculator.Version)
+    fmt.Println(quote.Hello())
 }
 ```
 
