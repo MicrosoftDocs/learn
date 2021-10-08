@@ -27,7 +27,7 @@ First you'll clone the Turkish Airlines repo.
 Run the following command in your CLI:
 
 ```bash
-gh repo clone chtrembl/Flight-Booking-System-JavaServlets_App
+git clone https://github.com/chtrembl/Flight-Booking-System-JavaServlets_App.git
 ```
 
 Run the following command in your CLI:
