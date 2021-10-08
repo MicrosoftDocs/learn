@@ -9,8 +9,8 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-#interactive: bash
+azureSandbox: true
+interactive: bash
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-create-single-shot-recognition-speech-to-text-app.md)]
