@@ -2,7 +2,7 @@ For customer support scenarios, it's common to create a bot that can interpret a
 
 ## Activate the Sandbox  
 
-To test create a QnA Maker Knowledge Base, we will activate a free subscription in the sandbox. 
+To test a QnA Maker Knowledge Base, we will activate a free subscription in the sandbox. 
 
 1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance.  
 
