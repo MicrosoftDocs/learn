@@ -5,7 +5,7 @@ metadata:
   description: Learn how to build an AI model to predict types of space rocks in images. Train and test your model by using random photos.
   ms.date: 04/28/2021
   author: drguthals
-  ms.author: sguthals
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: nextgen

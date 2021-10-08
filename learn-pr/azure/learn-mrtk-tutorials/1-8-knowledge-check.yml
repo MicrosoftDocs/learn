@@ -39,10 +39,10 @@ quiz:
     - content: "After the Mixed Reality Toolkit is added to a Unity scene, what happens to the Main Camera object?"
       choices:
         - content: "The Main Camera object is moved as a child to the MixedRealityToolkit object."
-          isCorrect: true
+          isCorrect: false
           explanation: The MixedRealityToolkit object contains the toolkit itself.
         - content: "The Main Camera object is moved as a child to the MixedRealityPlayspace object."
-          isCorrect: false
+          isCorrect: true
           explanation: This allows the playspace to manage the camera simultaneously with the SDKs.
         - content: " The Main Camera object is deleted as it is not needed for mixed reality development."
           isCorrect: false

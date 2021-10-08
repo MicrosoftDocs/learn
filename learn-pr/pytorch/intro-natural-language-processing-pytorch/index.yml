@@ -5,7 +5,7 @@ metadata:
   description: Learn how to handle language and solve natural language processing tasks with PyTorch
   ms.date: 06/04/2020
   author: shwars
-  ms.author: dmitryso
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: nextgen
