@@ -25,7 +25,7 @@ You'll know that it worked if you see the filename followed by ".ipynb" in the t
 
 When you have a Jupyter Notebook file, you'll need to choose which Python environment you're using. Visual Studio Code might have recognized Python after you installed it. But if it doesn't, choose **Select Kernel** in the upper right corner of the screen and then select your Python environment.
 
-:::image type="content" source="../media/select-python-kernel.png" alt-text="Screenshot showing setup of Python environment Python version selection.":::
+:::image type="content" source="../media/select-python-kernel.png" alt-text="Screenshot showing setup of Python environment Python version needs to be defined.":::
 
 VS Code now shows your selected Python version.
 
