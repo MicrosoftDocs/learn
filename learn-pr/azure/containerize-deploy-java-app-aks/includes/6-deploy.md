@@ -190,7 +190,10 @@ WARNING: All illegal access operations will be denied in a future release
 
 You can now use the ```EXTERNAL-IP``` from your ```kubectl get all``` output to access the running application within Azure Kubernetes Service.
 
-Open up a browser and visit the Turkish Airlines landing page at [http://20.81.13.151:8080/TurkishAirlines](http://<EXTERNAL_IP>:8080/TurkishAirlines)
+> [!NOTE]
+> You'll want to substitute the ip address of your EXTERNAL-IP for 20.81.13.151
+
+Open up a browser and visit the Turkish Airlines landing page at [http://20.81.13.151:8080/TurkishAirlines](http://20.81.13.151:8080/TurkishAirlines)
 
 You should see the following:
 
