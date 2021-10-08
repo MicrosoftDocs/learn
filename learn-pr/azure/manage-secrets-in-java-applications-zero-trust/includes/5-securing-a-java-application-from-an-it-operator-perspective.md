@@ -6,8 +6,8 @@ You'll have the role of an IT operator, who will manage those secrets and grant 
 
 In your application, you had two secrets to store:
 
-- `${azureResourceGroupName}` is the name of the resource group that was configured earlier in the `AZ_RESOURCE_GROUP` environment variable.
-- `${azureDatabasePassword}` is the name of the database password that was configured earlier in the `AZ_POSTGRESQL_PASSWORD` environment variable.
+- `${azureDatabaseName}` is the name of the PostgreSQL database that was configured earlier in the `AZ_DATABASE_NAME` environment variable. Type `echo $AZ_DATABASE_NAME` to see it.
+- `${azureDatabasePassword}` is the name of the database password that was configured earlier in the `AZ_DATABASE_PASSWORD` environment variable. Type `echo $AZ_DATABASE_PASSWORD` to see it.
 
 Let's create an Azure Key Vault instance and store those secrets in it:
 
@@ -27,7 +27,7 @@ az keyvault secret set \
 az keyvault secret set \
     --vault-name $AZ_KEY_VAULT_NAME \
     --name azureDatabasePassword \
-    --value ${AZ_POSTGRESQL_PASSWORD}
+    --value ${AZ_DATABASE_PASSWORD}
 ```
 
 ## Grant your application access to Azure Key Vault

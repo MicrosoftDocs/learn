@@ -19,13 +19,19 @@ don't know your local IP address, you can go to the following website: https://w
 
 ```bash
 AZ_RESOURCE_GROUP=<YOUR_UNIQUE_RESOURCE_GROUP_NAME>
-AZ_POSTGRESQL_PASSWORD=<YOUR_POSTGRESQL_PASSWORD>
+AZ_DATABASE_PASSWORD=<YOUR_POSTGRESQL_PASSWORD>
 AZ_LOCAL_IP_ADDRESS=<YOUR_LOCAL_IP_ADDRESS>
 ```
 
 Once those environment variables are set, you can run the following command to create the resources:
 
 ```bash
+
+AZ_LOCATION=eastus
+AZ_SPRING_CLOUD=spring-${AZ_RESOURCE_GROUP}
+AZ_DATABASE_NAME=pgsql-${AZ_RESOURCE_GROUP}
+AZ_DATABASE_USERNAME=java
+
 az group create \
     --name $AZ_RESOURCE_GROUP \
     --location $AZ_LOCATION
@@ -36,8 +42,8 @@ az postgres server create \
     --location $AZ_LOCATION \
     --sku-name B_Gen5_1 \
     --storage-size 5120 \
-    --admin-user $AZ_POSTGRESQL_USERNAME \
-    --admin-password $AZ_POSTGRESQL_PASSWORD
+    --admin-user $AZ_DATABASE_USERNAME \
+    --admin-password $AZ_DATABASE_PASSWORD
 az postgres server firewall-rule create \
     --resource-group $AZ_RESOURCE_GROUP \
     --name $AZ_DATABASE_NAME-database-allow-local-ip \
@@ -129,8 +135,8 @@ To access the database, you'll need to configure the `src/main/resources/applica
 ```properties
 logging.level.org.springframework.jdbc.core=DEBUG
 
-spring.datasource.url=jdbc:postgresql://pgsql-${azureResourceGroupName}.postgres.database.azure.com:5432/demo
-spring.datasource.username=java@pgsql-${azureResourceGroupName}
+spring.datasource.url=jdbc:postgresql://${azureDatabaseName}.postgres.database.azure.com:5432/demo
+spring.datasource.username=java@${azureDatabaseName}
 spring.datasource.password=${azureDatabasePassword}
 
 spring.sql.init.mode=always
@@ -138,8 +144,8 @@ spring.sql.init.mode=always
 
 This configuration file has two variables that need to be configured:
 
-- `${azureResourceGroupName}` is the name of the resource group that was configured earlier in the `AZ_RESOURCE_GROUP` environment variable.
-- - `${azureDatabasePassword}` is the name of the database password that was configured earlier in the `AZ_POSTGRESQL_PASSWORD` environment variable.
+- `${azureDatabaseName}` is the name of the PostgreSQL database that was configured earlier in the `AZ_DATABASE_NAME` environment variable. Type `echo $AZ_DATABASE_NAME` to see it.
+- `${azureDatabasePassword}` is the name of the database password that was configured earlier in the `AZ_DATABASE_PASSWORD` environment variable. Type `echo $AZ_DATABASE_PASSWORD` to see it.
 
 As we've seen in the previous unit, it's a bad practice to hard-code those values in the application
 source code. But to test the application, you can write them temporarily and run the application:

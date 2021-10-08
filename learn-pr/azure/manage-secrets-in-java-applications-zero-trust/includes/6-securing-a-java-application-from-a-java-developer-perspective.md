@@ -28,8 +28,8 @@ variables provided by Azure Key Vault:
 ```properties
 logging.level.org.springframework.jdbc.core=DEBUG
 
-spring.datasource.url=jdbc:postgresql://pgsql-${azureResourceGroupName}.postgres.database.azure.com:5432/demo
-spring.datasource.username=java@pgsql-${azureResourceGroupName}
+spring.datasource.url=jdbc:postgresql://${azureDatabaseName}.postgres.database.azure.com:5432/demo
+spring.datasource.username=java@${azureDatabaseName}
 spring.datasource.password=${azureDatabasePassword}
 
 spring.sql.init.mode=always
