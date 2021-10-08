@@ -1,8 +1,8 @@
-So far you've leanred how to install and configure your visual studio,enabling the developer mode. In this module you'll have a basic understanding of how 3D model, hand stimulation and UI button works in your StereoKitInk application.
+So far you've leanred how to install and configure your visual studio, enabling the developer mode. In this module you'll have a basic understanding of how 3D model, hand stimulation and UI button works in your StereoKitInk application.
 
-## Asset Access
+## Asset access
 
-In Stereokit its a lot easier to load or access a 3D model. In solution explorer the asset folder contains the 3D models that you have imported. The 3D model is stored in .glb format and image files are stored in .png format.
+In StereoKit its a lot easier to load or access a 3D model. In solution explorer the asset folder contains the 3D models that you have imported. The 3D model is stored in .glb format and image files are stored in .png format.
 
 ## Hand stimulation
 
@@ -10,7 +10,7 @@ Hand stimulation is the interaction with your application. When it comes to user
 
 ### Accessing hand with joints
 
-Hands are the salient feature in human interaction. In your application you can interact by choosing different colors of your choice to draw. you can access the below defined code to find the finger tip of right hand, if IsTracked is ignored then the last known position of fully joint is given or specifed.
+Hands are the salient feature in human interaction. In your application you can interact by choosing different colors of your choice to draw. You can access the below defined code to find the finger tip of right hand, if IsTracked is ignored then the last known position of fully joint is given or specifed.
 
 ``` c#
 Hand hand = Input.Hand(Handed.Right);
@@ -117,7 +117,7 @@ you can toggle to turn the windows header on and off and the value from that tog
 UI.WindowBegin("Window", ref windowPose, new Vec2(20, 0) * U.cm, showHeader?UIWin.Normal:UIWin.Body);
 ```
 
-When you start a window in StereoKitInk application, all visual elements are now local to that window. UI uses the Hierarchy class to push the window's pose into the Hierarchy stack. The pose will be dropped from the hierarchy stack when you close the window, restoring everything to normal. Based on user interaction, the UI element will update the values; also, you can add the values manually if required.
+When you start a window in StereoKitInk application, all visual elements are now local to that window. UI uses the hierarchy class to push the window's pose into the hierarchy stack. The pose will be dropped from the hierarchy stack when you close the window, restoring everything to normal. Based on user interaction, the UI element will update the values; also, you can add the values manually if required.
 
 The UI keeps the next item on the same line and starts with the label element. The slider interval is set to 0.2 with the range [0, 1]. Thus, you can step the value to 0 to slide it continuously as shown below.
 
@@ -143,7 +143,7 @@ In order to create the clipboard to attach the interface refer the below code sn
 Model clipboard = Model.FromFile("Clipboard.glb");
 ```
 
-Similar to the pervious, here's how you can transfrom it into grabble interface. This behaves the same, except we’re defining where the grabbable region more precisely and draw our own model using an identity matrix instead of plain bar. Use HandleBegin function as shown below to push the handle’s pose onto the Hierarchy transform stack.
+Similar to the pervious, here's how you can transfrom it into grabble interface. This behaves the same, except we’re defining where the grabbable region more precisely and draw our own model using an identity matrix instead of plain bar. Use HandleBegin function as shown below to push the handle’s pose onto the hierarchy transform stack.
 
 ```c#
 UI.HandleBegin("Clip", ref clipboardPose, clipboard.Bounds);
