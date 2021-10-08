@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/07/2021
+  ms.date: 10/08/2021
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ quiz:
       explanation: "That's incorrect. This type has a high CPU-to-memory ratio, and is recommended for medium traffic web servers, network appliances, batch processes, and application servers."
     - content: "General Purpose"
       isCorrect: true
-      explanation: "That's correct. This type has a balanced CPU-to-memory ratio, and isi deal for testing and development."
+      explanation: "That's correct. This type has a balanced CPU-to-memory ratio, and is ideal for testing and development."
     - content: "Storage optimized"
       isCorrect: false
       explanation: "That's incorrect. This type has high disk throughput and IO ideal for Big Data, SQL, NoSQL databases, data warehousing and large transactional databases."

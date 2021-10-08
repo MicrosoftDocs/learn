@@ -14,7 +14,7 @@ In this exercise you'll create a Linux virtual machine by performing the followi
 
 1. Login to the [Azure portal](https://portal.azure.com) and open the Cloud Shell.
 
-    :::image type="content" source="../media/hdi-cloud-shell-menu.png" alt-text="The location of Cloud Shell launch button.":::
+    :::image type="content" source="../media/cloud-shell-menu.png" alt-text="The location of Cloud Shell launch button.":::
 
 1. After the shell opens be sure to select the **Bash** environment.
 
@@ -74,7 +74,7 @@ In this exercise you'll create a Linux virtual machine by performing the followi
 
 Use a web browser of your choice to view the default NGINX welcome page. Use the public IP address of your VM as the web address. The following example shows the default NGINX web site:
 
-:::image type="content" source="../media/view-the-nginx-welcome-page.png" alt-text="The default NGIX welcome page.":::
+:::image type="content" source="../media/view-nginx-welcome-page.png" alt-text="The default NGIX welcome page.":::
 
 
 ## Clean up Azure resources

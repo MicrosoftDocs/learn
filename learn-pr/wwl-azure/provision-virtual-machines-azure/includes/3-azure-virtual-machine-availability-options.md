@@ -19,16 +19,16 @@ An [availability set](/azure/virtual-machines/availability-set-overview) is a lo
 
 A fault domain is a logical group of underlying hardware that share a common power source and network switch, similar to a rack within an on-premises datacenter. As you create VMs within an availability set, the Azure platform automatically distributes your VMs across these fault domains. This approach limits the impact of potential physical hardware failures, network outages, or power interruptions.
 
-:::image type="content" source="../media/vm-fault-domains.png" alt-text="Image showing a representation of a Fault domains. Two separate hardware racks are shown with VMs and databases distributed across each.":::
+:::image type="content" source="../media/virtual-machine-fault-domains.png" alt-text="Image showing a representation of a Fault domains. Two separate hardware racks are shown with VMs and databases distributed across each.":::
 
 ### Update domains
 
 An update domain is a logical group of underlying hardware that can undergo maintenance or be rebooted at the same time. As you create VMs within an availability set, the Azure platform automatically distributes your VMs across these update domains. This approach ensures that at least one instance of your application always remains running as the Azure platform undergoes periodic maintenance. The order of update domains being rebooted may not proceed sequentially during planned maintenance, but only one update domain is rebooted at a time.
 
-:::image type="content" source="../media/vm-update-domains.png" alt-text="Conceptual drawing of the update domain and fault domain configuration. Image shows groups of hardware that can be maintained or rebooted at the same time.":::
+:::image type="content" source="../media/virtual-machine-update-domains.png" alt-text="Conceptual drawing of the update domain and fault domain configuration. Image shows groups of hardware that can be maintained or rebooted at the same time.":::
 
 
-## Virtual Machines Scale Sets
+## Virtual machine scale sets
 
 [Azure virtual machine scale sets](/azure/virtual-machine-scale-sets/overview?context=/azure/virtual-machines/context/context) let you create and manage a group of load balanced VMs. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule.
 

@@ -30,7 +30,7 @@ There are always a multitude of design considerations when you build out an appl
 
     * **Unmanaged disks**: With unmanaged disks, you’re responsible for the storage accounts that hold the virtual hard disks (VHDs) that correspond to your VM disks. You pay the storage account rates for the amount of space you use. A single storage account has a fixed-rate limit of 20,000 input/output (I/O) operations per second. This means that a storage account is capable of supporting 40 standard VHDs at full utilization. If you need to scale out with more disks, then you'll need more storage accounts, which can get complicated.
  
-## Virtual Machine extensions
+## Virtual machine extensions
 
 Windows VMs have extensions which give your VM additional capabilities through post deployment configuration and automated tasks. These common tasks can be accomplished using extensions:
 
