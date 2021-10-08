@@ -39,11 +39,11 @@ spec:
   image: <THE VALUE OF AZ_CONTAINER_REGISTRY HERE>.azurecr.io/turkishairlines:latest
   resources:
     requests:
-      cpu: 100m
-      memory: 128Mi
+      cpu: "1"
+      memory: "1Gi"
     limits:
-      cpu: 250m
-      memory: 256Mi
+      cpu: "2"
+      memory: "2Gi"
   ports:
   - containerPort: 8080
 ---
