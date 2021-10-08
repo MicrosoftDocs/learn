@@ -16,13 +16,13 @@ Let's add support to our .NET core application to retrieve a connection string f
     touch appsettings.json
     ```
 
-1. Open the project in an editor. If you are working locally, you can use your editor of choice. We recommend Visual Studio Code, which is an extensible cross-platform IDE. If you are working in the active sandbox Cloud Shell (to the right), we recommend Cloud Shell editor. The following command works to open either one.
+1. Open the project in an editor. If you are working locally, you can use your editor of choice. We recommend Visual Studio Code, which is an extensible cross-platform IDE. If you are working in Cloud Shell (to the right), we recommend Cloud Shell editor. The following command works to open either one.
 
     ```bash
     code .
     ```
 
-1. In the editor, select the **appsettings.json** file and add the following text. 
+1. In the editor, select the **appsettings.json** file and add the following text.
 
     ```json
     {
@@ -34,7 +34,7 @@ Let's add support to our .NET core application to retrieve a connection string f
 
 1. Save the file using either keyboard shortcut (<kbd>Ctrl+S</kbd>) or context menu of Cloud Shell editor (select the ellipsis `...` in the top right corner).
 
-1. Now we need use an Azure command to get the actual storage account connection string and replace the placeholder <value>. In Cloud Shell, run the following command, replacing `<name>` with the  unique storage account name that you created in the previous exercise.
+1. Now, we need use an Azure command to get the actual storage account connection string and replace the placeholder <value>. In Cloud Shell, run the following command, replacing `<name>` with the  unique storage account name that you created in the previous exercise.
 
     ```azurecli
     az storage account show-connection-string \
@@ -49,7 +49,7 @@ Let's add support to our .NET core application to retrieve a connection string f
     "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage1ab;AccountKey=QtSCGB...7AeoW0Hw=="
     ```
 
-1. Copy the connection string, and in the **appsettings.json** file in the editor, replace the <value> placeholder with this connection string. 
+1. Copy the connection string, and in the **appsettings.json** file in the editor, replace the <value> placeholder with this connection string.
 
 1. Press <kbd>Ctrl+S</kbd> to save the file.
 
