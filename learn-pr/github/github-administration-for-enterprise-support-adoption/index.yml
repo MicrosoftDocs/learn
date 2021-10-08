@@ -9,12 +9,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: GitHub administration for enterprise support and adoption
-summary: In this module, you will implement GitHub features that improve the operations of a large organization.
+summary: In this module, you'll learn about some fundamental features and best practices that can improve the administrative operations of your GitHub Enterprise. 
+
 abstract: |
   By the end of this module, you'll be able to:
-  - Set up authentication with SAML single sign-on as well as a connection between Enterprise Server and Enterprise Cloud with GitHub Connect.
+  - Set up authentication with SAML single sign-on and a connection between Enterprise Server and Enterprise Cloud with GitHub Connect.
   - Automate security and version updates for your project's dependencies, as well as administrative duties and user interactions with GitHub.
-  - Learn how to Interact with GitHub Enterprise Support to resolve issues with accounts, security, and abuse.
+  - Identify when to open a ticket with GitHub Enterprise Support to resolve issues.
   - Recognize the capabilities of centrally managing your GitHub enterprise members through GitHub Enterprise Managed User accounts (EMUs).
 prerequisites: |
   - A GitHub account

@@ -65,7 +65,7 @@ GitHub applications are more complex tools that sacrifice customization and simp
 - Your organization consumes applications on a software-as-a-service basis (through subscriptions that you purchase in the GitHub Marketplace as an administrator).
 - Instead of manually providing limited-lifetime authorization to access your organization's repositories (as with actions), you'll authorize an ongoing trust relationship with the application.
 - Some applications interact with your repositories in the background, but most have their own custom user interface.
-- Custom-built applications built and installed by an organization can leverage GitHub's REST and GraphQL APIs and interact with Git through cloning, updating and pushing a repository.
+- Custom-built applications built and installed by an organization can use GitHub's REST and GraphQL APIs and interact with Git through cloning, updating and pushing a repository.
 - Applications don't consume resources delivered through a GitHub Enterprise plan.
 
 ### Tips for locating apps and actions on the GitHub Marketplace
@@ -74,7 +74,7 @@ Let's say you want to reduce the workload for the DevOps teams within your organ
 
 :::image type="content" source="../media/marketplace-interface.png" alt-text="A screenshot of the GitHub marketplace interface":::
 
-- **App or action?** Determine the scope of the problem you're trying to solve. If you need to automate a repetitive task in response to an event in your repository, you probably need an action. If you want to make it easier to complete a lot of related tasks, or you want to extend GitHub's functionality, you probably need an application. Filter the available tools on the Marketplace by choosing between **Apps** and **Actions** in the **Types** section of the Marketplace sidebar.
+- **App or action?** Determine the scope of the problem you're trying to solve. If you need to automate a repetitive task in response to an event in your repository, you probably need an action. If you want to make it easier to complete numerous related tasks, or you want to extend GitHub's functionality, you probably need an application. Filter the available tools on the Marketplace by choosing between **Apps** and **Actions** in the **Types** section of the Marketplace sidebar.
 - **Do you want to spend money?** Depending on your budget, you might seek apps that are available on a free or trial basis. Alternately, some of the most popular apps on the Marketplace have versions that you must pay for on a users-per-month basis. Narrow your results along these lines by expanding the **Filters** section of the Marketplace sidebar and choosing between **Free**, **Free Trials**, **GitHub Enterprise** (apps with special functionality for organizations with a GitHub Enterprise plan), and **Paid**. (There aren't any paid actions.)
 - **Do you know the part of the process you want to improve?** The **Categories** section of the Marketplace sidebar allows you to filter by type of business operation, and it can also show **Recently added** apps and actions.
 
