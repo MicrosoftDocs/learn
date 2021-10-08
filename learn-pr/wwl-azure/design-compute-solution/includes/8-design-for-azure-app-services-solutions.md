@@ -27,7 +27,7 @@ Your App Service plan can be scaled up and down at any time. For example, you ca
 
 ### Use App Services deployment slots for continuous deployment
 
-[Azure DevOps](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops) provides developer services for support teams to plan work, collaborate on code development, and build and deploy applications. Whenever possible when continuously deploying your code, use [deployment slots](/azure/app-service/deploy-staging-slots) for a new production build. 
+[Azure DevOps](/azure/devops/user-guide/what-is-azure-devops) provides developer services for support teams to plan work, collaborate on code development, and build and deploy applications. Whenever possible when continuously deploying your code, use [deployment slots](/azure/app-service/deploy-staging-slots) for a new production build. 
 
 :::image type="content" source="../media/container-slots.png" alt-text="Container slots are used for development, staging, and production.":::
 

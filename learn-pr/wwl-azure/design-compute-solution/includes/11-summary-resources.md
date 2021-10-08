@@ -34,7 +34,7 @@ In this module, you have learned how to choose and recommend an Azure compute se
 
 - [What is Kubernetes? | Microsoft Azure](https://azure.microsoft.com/topic/what-is-kubernetes/)
 
-- [Introduction to Azure Kubernetes Service - Azure Kubernetes Service | Microsoft Docs](/azure/aks/intro-kubernetes)[](/azure/aks/intro-kubernetes)
+- [Introduction to Azure Kubernetes Service - Azure Kubernetes Service | Microsoft Docs](/azure/aks/intro-kubernetes)
 
 ### Learn more with self-paced training
 
