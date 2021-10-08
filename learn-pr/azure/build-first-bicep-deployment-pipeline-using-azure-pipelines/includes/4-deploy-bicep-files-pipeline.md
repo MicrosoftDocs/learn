@@ -75,8 +75,7 @@ The Azure Pipelines web interface has an editor you can use to create variables 
 
 You can set an Azure Pipelines variable value as secret. When you set a variable value as secret, you can't view the value after you've set it. Azure Pipelines is designed to not reveal secret values in your pipeline logs.
 
-> [!WARNING]
-> By default, Azure Pipelines obfuscates secret variable values in pipeline logs, but you need to follow good practices as well. Your pipeline steps have access to all variable values, including secrets. If your pipeline includes a step that doesn't handle a secure variable securely, there's a chance the secret variable might be shown in the pipeline logs.
+[!include[Best-effort protection for secrets](../../includes/azure-devops-secret-best-effort.md)]
 
 You can let users override a variable value when they run your pipeline manually. The value a user provides is used only for that specific pipeline run. Variable overrides can be useful when you're testing your pipeline.
 

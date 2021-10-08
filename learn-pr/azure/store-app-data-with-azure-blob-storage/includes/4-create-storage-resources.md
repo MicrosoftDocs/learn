@@ -12,7 +12,7 @@ For apps that rely on a known set of containers with hard-coded or preconfigured
 
 ## Exercise
 
-You're going to complete an unfinished ASP.NET Core app by adding code to use Azure Blob storage. This exercise is more about exploring the Blob storage API than it is about designing an organization and naming scheme, but here's a quick overview of the app and how it stores data.
+You're going to complete an unfinished ASP.NET Core app by adding code to use Azure Blob Storage. This exercise is more about exploring the Blob Storage API than it is about designing an organization and naming scheme, but here's a quick overview of the app and how it stores data.
 
 ![Screenshot of the FileUploader web app.](../media/4-fileuploader-with-files.PNG)
 
@@ -24,7 +24,7 @@ Let's set up the storage infrastructure for your app.
 
 ### Storage account
 
-You'll use the Azure Cloud Shell with the Azure CLI to create a storage account. You'll need to provide a unique name for the storage account &mdash; make a note of it for later.  Replace [your-unique-storage-account-name] with a name you choose.
+You'll use Azure Cloud Shell with the Azure CLI to create a storage account. You'll need to provide a unique name for the storage account &mdash; make a note of it for later.  Replace [your-unique-storage-account-name] with a name you choose.
 
 To create the storage account, run this command. Remember to enter your unique storage account name in the code.
 
@@ -38,4 +38,4 @@ az storage account create \
 
 ### Container
 
-The app you'll be working within this module uses a single container. You're going to follow the best practice of letting the app create the container at startup. However, container creation can be done from the Azure CLI. If you'd like to see the documentation, in Cloud Shell terminal, run the `az storage container create -h` command.
+The app you'll be working within this module uses a single container. You're going to follow the best practice of letting the app create the container at startup. However, container creation can be done from the Azure CLI. If you'd like to see the documentation, in Cloud Shell, run the `az storage container create -h` command.
