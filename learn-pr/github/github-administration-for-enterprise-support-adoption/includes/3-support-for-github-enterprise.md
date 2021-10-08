@@ -16,17 +16,21 @@ The table below shows the availability of [GitHub Enterprise Support](https://en
 
 ## Is this an issue for the administrator or GitHub Enterprise Support?
 
-:::image type="content" source="../media/support-types.png" alt-text="A graphic that represents three issues Enterprise support technicians can resolve":::
+Knowing where to go for support when an issue arises can be confusing. Is this an issue for the organization's administrator or is this something that the GitHub Support team can handle. GitHub Support can help troubleshoot issues that arise on GitHub Enterprise Server for three areas; account, security, and abuse issues.
 
-GitHub Support covers account, security, and abuse issues.
+### Account
 
 Human error-related authentication problems are an example of account issues. When a user is locked out of their account and failed to retain keys to back up their two-factor authentication process, GitHub technical support can help you prove the user's identity.
 
+### Security
+
 You can request GitHub support when responding to threat actors hacking an account. This is a security issue, and GitHub support technicians would provide help in rolling back damage to organization repositories and settings.
+
+### Abuse
 
 Abuse issues involve responding to violations of the site's terms of service or organizational policies in GitHub's social setting--someone is using GitHub's communication's features to abuse other users. GitHub support technicians can help you evaluate the situation and can remove harmful content or ban abusive actors.
 
-On the other hand, you should deal with some issues internally. You'll administer tasks like integrating CI/CD servers or internal tools, hardware setup, writing scripts, configuring SAML or other external authentication systems, working with Open Source projects, resolving problems that require immediate intervention, and running command-line utilities (except `ghe-dbconsole`). 
+On the other hand, you should deal with some issues internally. You'll administer tasks like integrating CI/CD servers or internal tools, hardware setup, writing scripts, configuring SAML or other external authentication systems, working with Open Source projects, resolving problems that require immediate intervention, and running command-line utilities (except `ghe-dbconsole`).
 
 ## Create and assign priority to a support ticket
 

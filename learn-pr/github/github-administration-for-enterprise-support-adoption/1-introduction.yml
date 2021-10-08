@@ -5,9 +5,9 @@ metadata:
   unitType: introduction
   title: Introduction
   description: In this module, you'll learn how GitHub Enterprise can make your administrative duties easier.
-  ms.date: 09/10/2021
-  author: sterling463
-  ms.author: csterling
+  ms.date: 10/08/2021
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
