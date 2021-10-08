@@ -26,7 +26,7 @@ If you perfer calling function instead of operator you can call using the below 
  hand.Get(FingerId.Index, JointId.Tip)
 ```
 
-pinching and gripping are two easily accessible fucntions which you can use in your StereoKitInk application where to pinch the frame, use the JustPinched function, and to unpinch the frame use the JustUnpinched function. The below code snippet explains the pinching and gripping functionalities.
+Pinching and gripping are two easily accessible fucntions which you can use in your StereoKitInk application where to pinch the frame, use the JustPinched function, and to unpinch the frame use the JustUnpinched function. The below code snippet explains the pinching and gripping functionalities.
 
 ```c#
 if (hand.IsPinched) { }
@@ -111,7 +111,7 @@ Sprite powerSprite = Sprite.FromFile("power.png", SpriteType.Single);
 
 As a base unit, StereoKit uses metres. Consider the case of a window that is tilted to 20cm wide and auto-resizes on the Y axis, the U class comes in handy here because it helps you to reason visually about the units we're working with.
 
-you can toggle to turn the windows header on and off and the value from that toggle is passed via the showHeader field as shown in the code below.
+You can toggle to turn the windows header on and off and the value from that toggle is passed via the showHeader field as shown in the code below.
 
 ```c#
 UI.WindowBegin("Window", ref windowPose, new Vec2(20, 0) * U.cm, showHeader?UIWin.Normal:UIWin.Body);
