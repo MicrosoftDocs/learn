@@ -30,8 +30,8 @@ There are two templates provided:
     :::image type="content" source="../media/stereokit-templates-visual-studio.png" alt-text="Screenshot of downloaded stereoKit templates in Visual Studio." lightbox="../media/stereokit-templates-visual-studio.png":::
 
 > [!Note]
-    >Iteration is slower with Universal Windows Platform because it builds apps, so use it only if HoloLens is essential to you.
-    >You may also install the [NuGet package](https://www.nuget.org/packages/StereoKit) directly into your project.
+>Iteration is slower with Universal Windows Platform because it builds apps, so use it only if HoloLens is essential to you.
+>You may also install the [NuGet package](https://www.nuget.org/packages/StereoKit) directly into your project.
 
 ### Download & install StereoKit’s Visual Studio template
 

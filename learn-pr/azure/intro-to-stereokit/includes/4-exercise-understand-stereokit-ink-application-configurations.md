@@ -4,12 +4,11 @@ This is a StereoKitInk tutorial designed to teach people the fundamentals of dra
 
 * First download and install [StereoKit Templates](https://marketplace.visualstudio.com/items?itemName=NickKlingensmith.StereoKitTemplates) as mentioned in the previous chapters.
 * Then download StereoKitInk sample application from this [GitHub repository](https://github.com/maluoi/StereoKit-PaintTutorial/tree/feature/sk_ink).
-* Click on **Code** button & select **Download ZIP**
+* Click on **Code** button & select **Download ZIP**.
 * Once the download is completed click on the folder & select **StereoKitInk.sln** file.
 
 > [!Note]
-
-    >* The program will contain errors, which will be cleared at a later time during debugging.
+> The program will contain errors, which will be cleared at a later time during debugging.
 
 Visual Studio, open the code for the StereoKitInk application. The solution explorer is located in the right corner and contains an assets folder and three other software files that operate the basic logic.
 
