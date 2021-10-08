@@ -9,11 +9,11 @@ Let's start by creating a virtual machine using Azure Cloud Shell.
 
 1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using an account that has access to a subscription where Azure Security Center is set up for the standard tier.
 
-1. Select the Cloud Shell icon from the top right of the Azure portal toolbar. This will open Cloud Shell at the bottom of the portal.
+1. Select the Cloud Shell icon from the top right of the Azure portal toolbar. Cloud Shell appears at the bottom of the portal.
 
-1. Start by setting some default values, so you don't have to enter them multiple times.
+    Start by setting some default values, so you don't have to enter them multiple times.
 
-    Set a default location. Here we'll use **eastus**, but feel free to change that to a location closer to you.
+1. Set a default location. Here, we'll use **eastus**, but feel free to change that to a location closer to you.
 
     ```azurecli
     az configure --defaults location=eastus
@@ -28,7 +28,7 @@ Let's start by creating a virtual machine using Azure Cloud Shell.
     az group create --name mslearnDeleteMe --location eastus
     ```
 
-    Go ahead and set this as the default resource group.
+1. Go ahead and set this as the default resource group.
 
     ```azurecli
     az configure --defaults group="mslearnDeleteMe"
