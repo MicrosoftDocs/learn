@@ -3,7 +3,7 @@ uid: learn.wwl.design-data-integration
 metadata:
   title: Design data integration
   description: "Azure Architects design and recommend data integration solutions."
-  ms.date: 10/06/2021
+  ms.date: 10/08/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -24,6 +24,7 @@ prerequisites: |
   - Working experience with data integration solutions.
   - Conceptual knowledge of data integration solutions.
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:
