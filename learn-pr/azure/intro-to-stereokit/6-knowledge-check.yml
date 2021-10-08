@@ -36,17 +36,6 @@ quiz:
         - content: "StereoKit allows computation to proceed faster"
           isCorrect: true
           explanation: Because StereoKit enables computation to be performed more quickly.
-    - content: "What are the workloads required to set up a project"
-      choices:
-        - content: .NET Desktop development.
-          isCorrect: false
-          explanation: .NET is a software development framework and ecosystem designed and supported by Microsoft to allow for easy desktop and web application engineering.
-        - content: Universal Window Platform Development
-          isCorrect: false
-          explanation: Universal Windows Platform (UWP) is a computing platform created by Microsoft and first introduced in Windows 10. The purpose of this platform is to help develop universal apps that run on Windows 10, Windows 10 Mobile, Xbox One and HoloLens without the need to be rewritten for each.
-        - content: "All of the above"
-          isCorrect: true
-          explanation: As it supports both the workloads.
     - content: " Select the correct format to store the 3D model "
       choices:
         - content: .tga
@@ -58,3 +47,14 @@ quiz:
         - content: .obj
           isCorrect: true
           explanation: As it supports Model format.
+    - content: "Which workload is not required to set up a StereoKitInk application"
+      choices:
+        - content: .NET Desktop development.
+          isCorrect: true
+          explanation: .NET is a software development framework and ecosystem designed and supported by Microsoft to allow for easy desktop and web application engineering.
+        - content: Universal Window Platform Development
+          isCorrect: true
+          explanation: Universal Windows Platform (UWP) is a computing platform created by Microsoft and first introduced in Windows 10. The purpose of this platform is to help develop universal apps that run on Windows 10, Windows 10 Mobile, Xbox One and HoloLens without the need to be rewritten for each.
+        - content: Mobile development with .Net (for Quest)
+          isCorrect: false
+          explanation: .Net (for Quest) is a software development framework for mobile applications, whereas StereoKitInk is a Windows PC application.
