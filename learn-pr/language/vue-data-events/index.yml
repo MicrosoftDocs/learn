@@ -5,7 +5,7 @@ metadata:
   description: Allowing users to interact with data is one of the core goals of Vue.js. In this module, you'll build a Vue app in JavaScript and you'll see how to respond to user events. You'll also see how to manage state and data in response. 
   ms.date: 03/01/2021
   author: GeekTrainer
-  ms.author: chrhar
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-vue
   ms.custom: nextgen

@@ -5,217 +5,120 @@ In this exercise, you'll create a SQL database in Azure and then query the data 
 ## Task 1: Create the database
 
 In this task, you create a SQL database based on the *AdventureWorksLT* sample database.
+ 
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+ 
+1. Select **Create a resource** &gt; **Databases** &gt; **SQL database**. The **Create SQL Database** pane appears.
+  
+1. Enter the following values for each setting.
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-2.  Select **Create a resource** &gt; **Databases** &gt; **SQL database**. Fill in the following information.
+     | Setting | Value |
+     | ----- | ----- |
+     | **Project details** |
+     | Subscription | Concierge Subscription |
+     | Resource group | \[sandbox resource group name\] | 
+     | **Database details** |
+     | Database name | db1 |
+     | Server | Select **Create new** |
+
+    The **Create SQL Database Server** pane appears. 
+  
+1. Enter the following values for each setting.
+
+     | Setting | Value |
+     | ----- | ----- | 
+     | **Server details** |
+     | Server name | sqlservernnnn (replace **nnnn** with letters and digits for a globally unique name) |
+     | Location | (US) East US | 
+     | **Authentication** |
+     |	Authentication method |	Use SQL Authentication |
+     |	Server admin login | sqluser |
+     |	Password |	Pa$$w0rd1234 |
+
+1. Select **OK**. 
+
+1. Complete the remaining fields for **Create SQL Database** using the following values.
+
+     | Setting | Value |
+     | ----- | ----- | 
+     | Want to use SQL elastic pool? | No (default) | 
+     | Compute + storage  | General Purpose (default) | 
+     | **Backup storage redundancy** |
+     | Backup storage redundancy | Geo-redundant backup storage |
+
+    :::image type="content" source="../media/server-pane-df80b536.png" alt-text="Screenshot of create SQL database with fields filled in." lightbox="../media/server-pane-df80b536.png" :::
+
+1. Select **Next : Networking**, and configure the following settings (accept defaults for fields not specified).
+
+    | Setting | Value |
+    | ----- | ----- |
+    | **Network connectivity** |
+    | Connectivity method | Public endpoint |
+
+    :::image type="content" source="../media/tab-8a36cd61.png" alt-text="Screenshot of the Create SQL Database Networking tab with settings configured.":::
     
-    :::row:::
-      :::column:::
-        **Setting**
-      :::column-end:::
-      :::column:::
-        **Value**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        On the **Basics** tab, under **Project details** section:
-      :::column-end:::
-      :::column:::
-        
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Subscription
-      :::column-end:::
-      :::column:::
-        **Concierge Subscription**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Resource group
-      :::column-end:::
-      :::column:::
-         **\[sandbox resource group name\]** 
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Under **Database details** section:
-      :::column-end:::
-      :::column:::
-        
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Database name
-      :::column-end:::
-      :::column:::
-        **db1**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Server
-      :::column-end:::
-      :::column:::
-        Select **Create new**.
-      :::column-end:::
-    :::row-end:::
+1. Select **Next : Security**, and for **Enable Azure Defender for SQL**, choose **Not now**. Leave the remaining settings as default (not configured).
+  
+    :::image type="content" source="../media/security-tab-a15c3422.png" alt-text="Screenshot of the Create SQL Database Security tab showing the first configured setting.":::
     
-3.  The **New server** panel appears. Enter the following information (replace **nnnn** in the name of the server with letters and digits, such that the name is globally unique).
+1. Select **Next : Additional settings**, and configure the following settings.
+
+    | Setting | Value |
+    | ----- | ----- |
+    | **Data source** |
+    | Use existing data | Sample |
+    | **Database collation** |
+    | Collation | SQL_Latin1_General_CP1_CI_AS (default) |
+
+     :::image type="content" source="../media/additional-settings-tab-5e601100.png" alt-text="Screenshot of the Additional settings tab of the Create SQL Database pane with settings selected.":::
     
-    :::row:::
-      :::column:::
-        **Setting**
-      :::column-end:::
-      :::column:::
-        **Value**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Server name
-      :::column-end:::
-      :::column:::
-        **sqlservernnnn** (must be unique)
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Server admin login
-      :::column-end:::
-      :::column:::
-        **sqluser**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Password
-      :::column-end:::
-      :::column:::
-        **Pa$$w0rd1234**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Location
-      :::column-end:::
-      :::column:::
-        **(US) East US**
-      :::column-end:::
-    :::row-end:::
-    
-    
-    :::image type="content" source="../media/server-pane-df80b536.png" alt-text="Screenshot of the Server pane and the New Server pane with fields filled in.":::
-    
-4.  Select **OK** when you have finished.
-5.  Select **Next : Networking**, and configure the following settings (leave defaults for remainder of fields).
-    
-    :::row:::
-      :::column:::
-        **Setting**
-      :::column-end:::
-      :::column:::
-        **Value**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Under **Network connectivity** section:
-      :::column-end:::
-      :::column:::
-        
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Connectivity method
-      :::column-end:::
-      :::column:::
-        **Public endpoint**
-      :::column-end:::
-    :::row-end:::
-    
-    
-    :::image type="content" source="../media/tab-8a36cd61.png" alt-text="Screenshot of the Networking tab of the Create SQL Database pane with settings selected.":::
-    
-6.  Select **Next : Security**, and next to **Enable Azure Defender for SQL**, choose **Not now**. :::image type="content" source="../media/security-tab-a15c3422.png" alt-text="Screenshot of the Security tab of the Create SQL Database pane with settings selected.":::
-    
-7.  Select **Next : Additional settings**, and configure the following settings.
-    
-    :::row:::
-      :::column:::
-        **Setting**
-      :::column-end:::
-      :::column:::
-        **Value**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Under **Data source** section:
-      :::column-end:::
-      :::column:::
-        
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Use existing data
-      :::column-end:::
-      :::column:::
-        **Sample** (this will create the *AdventureWorksLT* sample database)
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Under **Database collation** section:
-      :::column-end:::
-      :::column:::
-        
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Collation
-      :::column-end:::
-      :::column:::
-        *default*
-      :::column-end:::
-    :::row-end:::
-    
-    
-    :::image type="content" source="../media/additional-settings-tab-5e601100.png" alt-text="Screenshot of the Additional settings tab of the Create SQL Database pane with settings selected.":::
-    
-8.  Select **Review + create**.
-9.  After validation success, on the **Create SQL Database** window, select **Create** to deploy the server and database. It can take approximately two to five minutes to create the server and deploy the sample database.
-10. Select **Go to resource**.
-11. Select **Set server firewall**, and then select **Yes** to **Allow Azure services and resources to access this server**.
-12. Select **Save**.
-13. Select **OK**.
+1. Select **Review + create** to validate configuration entries.
+  
+1. Select **Create** to deploy the server and database. It can take approximately two to five minutes to create the server and deploy the sample database. The deployment pane shows the status, with updates for each resource that is created.
+
+1. When deployment is complete, select **Go to resource**. The db1 SQL database Overview pane shows the essentials of the newly deployed database
+
+1. In the command bar, select **Set server firewall**. The **Firewall settings** page appears.
+ 
+1. Set **Allow Azure services and resources to access this server** to **Yes**, leaving other settings as default.
+
+1. In the command bar, select **Save** to update firewall settings, and then close the Firewall settings pane.
 
 ## Task 2: Test the database
 
 In this task, you configure the server and run a SQL query.
 
-1.  From the **All resources** pane, search and select **SQL databases** and ensure that your new database was created. You might need to refresh the page. :::image type="content" source="../media/sql-database-d2ebb307.png" alt-text="Screenshot of the SQL database Query editor preview.":::
+1. In Azure resources menu select **All resources**. Search for and select the **SQL database** resource Type, and ensure that your new database was created. You might need to refresh the page. 
+  
+    :::image type="content" source="../media/sql-database-d2ebb307.png" alt-text="Screenshot of the SQL database Query editor preview.":::
     
-2.  Select the **db1** entry representing the SQL database you created, and then select **Query editor (preview)** in the nav bar. :::image type="content" source="../media/query-editor-preview-b6af6d9c.png" alt-text="Screenshot of the SQL database the Query editor preview highlighted.":::
+1. Select **db1**, the SQL database you created.
+  
+1. In the SQL database menu, select **Query editor (preview)**. The **Query editor (preview)** pane appears.
+  
+     :::image type="content" source="../media/query-editor-preview-b6af6d9c.png" alt-text="Screenshot of the SQL database the Query editor preview highlighted.":::
     
-3.  Sign in as **sqluser**, with the password **Pa$$w0rd1234**.
-4.  You will not be able to sign in.
+1. Sign in as **sqluser**, with the password **Pa$$w0rd1234**.
+  
+    You will not be able to sign in because your IP address needs to be enabled in a firewall rule.
     
-    > [!NOTE]
-    > Read the error closely and make note of the IP address that needs to be allowed through the firewall. :::image type="content" source="../media/query-editor-login-2b2dd335.png" alt-text="Screenshot of the Query Editor sign-in page with the IP address error.":::
-5.  Select **Overview** &gt; **Set server firewall**.
-6.  In the **Client IP address** section, your IP will be shown (verify that it is the same client IP address from the error above). Click on **+ Add client IP**, which will add a **Rule name** and put your IP in both the **Start IP** and **End IP** fields, and then select **Save**. :::image type="content" source="../media/sql-server-firewall-settings-1b917b84.png" alt-text="Screenshot of the SQL Server firewall settings page, with the Add client IP and Save button highlighted.":::
+    :::image type="content" source="../media/query-editor-login-2b2dd335.png" alt-text="Screenshot of the Query Editor sign-in page with the IP address error.":::
     
-7.  Return to your SQL database and the Query Editor sign-in page. Try to sign in again as **sqluser**, with the password **Pa$$w0rd1234**. This time you should succeed. It might take a couple of minutes for the new firewall rule to be deployed. If you wait and still get an error, verify the client IP address in the error, and try selecting **Firewall settings &gt;** and adding the correct client IP address again.
-8.  After you sign in successfully, the query pane appears. Enter the following query into the editor pane.
+1. In the Query editor menu, select **Overview** (your edits will be lost), and in the command bar, select **Set server firewall**. The **Firewall settings** page appears.
+
+1. In the **Client IP address** section, your IP will be shown (verify that it is the same client IP address from the error you received in the previous step). 
+
+1. In the command bar select **Add client IP**. This will add a **Rule name** that contains your IP address in both the **Start IP** and **End IP** fields.
+ 
+1. In the command bar, select **Save** to save this firewall rule. 
+ 
+    :::image type="content" source="../media/sql-server-firewall-settings-1b917b84.png" alt-text="Screenshot of the SQL Server firewall settings page, with your IP settings and the command bar buttons highlighted." lightbox="../media/sql-server-firewall-settings-1b917b84.png" :::
+    
+1. Select your db1 database in the breadcrumb at the top of the page to return to your SQL database, and then select **Query editor (preview)** from the menu. sign-in page. 
+
+1. Sign in again as **sqluser**, with the password **Pa$$w0rd1234**. This time you should succeed. It might take a couple of minutes for the new firewall rule to be deployed. If you still get an error, verify the client IP address in the error, and return to **Firewall settings** to add the correct client IP address.
+  
+1.  After you sign in successfully, the query pane appears. Enter the following SQL query into the editor pane.
     
     ```SQL
     SELECT TOP 20 pc.Name as CategoryName, p.name as ProductName
@@ -223,10 +126,11 @@ In this task, you configure the server and run a SQL query.
     JOIN SalesLT.Product p
     ON pc.productcategoryid = p.productcategoryid;
     ```
-    
+
     :::image type="content" source="../media/query-editor-decc7acc.png" alt-text="Screenshot of the query editor with the query pane, and the commands running successfully.":::
     
-9.  Select **Run**, and then review the query results in the **Results** pane. The query should run successfully.:::image type="content" source="../media/database-query-editor-pane-19d53288.png" alt-text="Screenshot of the database query editor pane, with the SQL code having been run successfully and the output visible in the results pane.":::
+1.  Select **Run**, and then review the query results in the **Results** pane. The query should run successfully.
     
-
+    :::image type="content" source="../media/database-query-editor-pane-19d53288.png" alt-text="Screenshot of the database query editor, showing the SQL code ran successfully and the output.":::
+    
 Congratulations! You've created a SQL database in Azure and successfully queried the data in that database.
