@@ -15,7 +15,7 @@ vi deployment.yml
 Add the following contents to deployment.yml and then save and exit:
 
 > [!NOTE]
-> You'll want to replace <THE VALUE OF AZ_CONTAINER_REGISTRY HERE> with your AZ_CONTAINER_REGISTRY HERE environment variable value that was set earlier, forexamople:javacontainerizationdemoacr 
+> You'll want to update with your AZ_CONTAINER_REGISTRY HERE environment variable value that was set earlier, for examople:javacontainerizationdemoacr 
 
 ```yml
 apiVersion: apps/v1
@@ -190,7 +190,7 @@ WARNING: All illegal access operations will be denied in a future release
 
 You can now use the ```EXTERNAL-IP``` from your ```kubectl get all``` output to access the running application within Azure Kubernetes Service.
 
-Open up a browser and visit the Turkish Airlines landing page at [http://<EXTERNAL_IP>:8080/TurkishAirlines](http://<EXTERNAL_IP>:8080/TurkishAirlines)
+Open up a browser and visit the Turkish Airlines landing page at [http://20.81.13.151:8080/TurkishAirlines](http://<EXTERNAL_IP>:8080/TurkishAirlines)
 
 You should see the following:
 
