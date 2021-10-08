@@ -4,8 +4,9 @@ title: Mount an Azure file share in Azure Container Instances
 metadata:
   title: Mount an Azure file share in Azure Container Instances
   description: "Mount an Azure file share in Azure Container Instances"
-  ms.date: 10/07/2021
+  ms.date: 10/08/2021
   author: wwlpublish
+  ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
