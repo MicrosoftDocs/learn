@@ -32,7 +32,7 @@ However, you can also install this protection yourself. Let's examine those step
 
 ## Install Antimalware in a new VM
 
-**Microsoft Antimalware** is available as an extension that you can add to existing VMs, or include as part of the creation of a new VM. You can use the Azure portal, Azure CLI / Powershell, or ARM template to add the extension.
+**Microsoft Antimalware** is available as an extension that you can add to existing VMs, or include as part of the creation of a new VM. You can use the Azure portal, Azure CLI / PowerShell, or ARM template to add the extension.
 
 Let's use the Azure portal to create a new VM, and install the extension.
 
