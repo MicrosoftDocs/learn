@@ -4,7 +4,7 @@ In this unit, you'll configure applications to send or receive messages through 
 
 ## Create a general-purpose, standard storage account
 
-The Java receiver application stores messages in Azure Blob Storage, which requires a storage account. To create a storage account (general-purpose V2), use the `storage account create` command. Among the many parameters for this command, we will use the following parameters: 
+The Java receiver application stores messages in Azure Blob Storage, which requires a storage account. To create a storage account (general-purpose V2), use the `storage account create` command. We will define the following parameters for this command: 
 
 | Parameter       | Description |
 | --------------- | ----------- |
@@ -15,7 +15,7 @@ The Java receiver application stores messages in Azure Blob Storage, which requi
 
 In the previous exercise, we defined default values for resource group and location, so we can omit those parameters from the command.
 
-1. In Azure Cloud Shell, set the storage account name to a variable. A storage account name must be unique within Azure, and must have 3 to 24 lower-case letters or numbers.
+1. In Azure Cloud Shell, set the storage account name to a variable. A storage account name must be unique within Azure and must contain 3 to 24 numbers or lower-case letters.
 
     ```azurecli
     STORAGE_NAME=storagename$RANDOM
@@ -30,7 +30,7 @@ In the previous exercise, we defined default values for resource group and locat
     > [!TIP]
     > It may take a moment to create this storage account. If storage account creation fails, change your environment variable, and try again.
 
-1. zRun the following command obtain the access keys associated with your storage account. 
+1. Run the following command obtain the access keys associated with your storage account. 
     ```azurecli
     az storage account keys list --account-name $STORAGE_NAME
     ```
@@ -89,10 +89,10 @@ In this exercise you will use the built-in Cloud Shell editor to modify the Simp
 
 1. In the editor, locate and replace the following strings under ConnectionStringBuilder (do not include the quotes):
 
-    - `"Your Event Hubs namespace name"` with the name of your Event Hub namespace.
-    - `"Your Event Hub"` with the name of your Event Hub.
+    - `"Your Event Hubs namespace name"` with the name of your Event Hubs namespace.
+    - `"Your Event Hub"` with the name of your event hub.
     - `"Your policy name"` with **RootManageSharedAccessKey**.
-    - `"Your primary SAS key"` with the value of the **primaryKey** key for your Event Hub namespace that you saved earlier.
+    - `"Your primary SAS key"` with the value of the **primaryKey** key for your Event Hubs namespace that you saved earlier.
 
     If you've forgotten these values, you can switch to the terminal window below the editor and run the `echo` command to list the environment variables. For example:
 
@@ -130,11 +130,11 @@ You'll now build the Java application by running **mvn** commands.
 
 ## Edit EventProcessorSample.java
 
-You'll now configure a **receiver** (also known as **subscribers** or **consumers**) application to ingest data from your Event Hub.
+You'll now configure a **receiver** (also known as **subscribers** or **consumers**) application to ingest data from your event hub.
 
 For the receiver application, two classes are available: **EventHubReceiver** and **EventProcessorHost**. EventProcessorHost is built on top of EventHubReceiver, but provides simpler programmatic interface than EventHubReceiver. EventProcessorHost can automatically distribute message partitions across multiple instances of EventProcessorHost using the same storage account.
 
-In this procedure, you'll use the EventProcessorHost method. You'll edit the EventProcessorSample application to add your Event Hubs namespace, Event Hub name, shared access policy name and primary key, storage account name, connection string, and container name.
+In this procedure, you'll use the EventProcessorHost method. You'll edit the EventProcessorSample application to add your Event Hubs namespace, event hub name, shared access policy name and primary key, storage account name, connection string, and container name.
 
 1. Change to the **EventProcessorSample** folder by running the following command.
 
@@ -153,7 +153,7 @@ In this procedure, you'll use the EventProcessorHost method. You'll edit the Eve
 1. Locate and replace the following strings in the editor:
 
     - `----ServiceBusNamespaceName----` with the name of your Event Hubs namespace.
-    - `----EventHubName----` with the name of your Event Hub.
+    - `----EventHubName----` with the name of your event hub.
     - `----SharedAccessSignatureKeyName----` with **RootManageSharedAccessKey**.
     - `----SharedAccessSignatureKey----` with the value of the **primaryKey** key for your Event Hubs namespace that you saved earlier.
     - `----AzureStorageConnectionString----` with your storage account connection string that you saved earlier.
@@ -172,7 +172,7 @@ In this procedure, you'll use the EventProcessorHost method. You'll edit the Eve
     cd ~/azure-event-hubs/samples/Java/Basic/EventProcessorSample
     ```
 
-1. Build the Java SimpleSend application by running the following command to ensure that your application uses the connection details for your Event Hub.
+1. Build the Java SimpleSend application by running the following command to ensure that your application uses the connection details for your event hub.
 
     ```bash
     mvn clean package -DskipTests
@@ -241,4 +241,4 @@ In this procedure, you'll use the EventProcessorHost method. You'll edit the Eve
 
 ## Summary
 
-You've now configured a sender application ready to send messages to your Event Hub. You've also configured a receiver application ready to receive messages from your Event Hub.
+You've now configured a sender application ready to send messages to your event hub. You've also configured a receiver application ready to receive messages from your event hub.

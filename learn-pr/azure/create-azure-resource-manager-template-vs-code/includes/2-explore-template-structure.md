@@ -100,7 +100,12 @@ New-AzResourceGroup `
 
 ---
 
-To start a template deployment at the resource group, use either the Azure CLI command [az group deployment create](https://docs.microsoft.com/cli/azure/group/deployment?view=azure-cli-latest#az-group-deployment-create?azure-portal=true) or the Azure PowerShell command [New-AzResourceGroupDeployment](https://docs.microsoft.com/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.2.0&azure-portal=true). Both commands require the resource group, the region, and the name for the deployment so you can easily identify it in the deployment history. For convenience, the exercises create a variable that stores the path to the template file. This variable makes it easier for you to run deployment commands because you don't have to retype the path every time you deploy. Here's an example:
+To start a template deployment at the resource group, use either the Azure CLI command [az deployment group create](https://docs.microsoft.com/cli/azure/deployment/group?view=azure-cli-latest#az_deployment_group_create) or the Azure PowerShell command [New-AzResourceGroupDeployment](https://docs.microsoft.com/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.2.0&azure-portal=true).
+
+> [!TIP]
+> The difference between az deployment group create and az group deployment create is that az group deployment create is an old command to be deprecated and will be replaced by az deployment group create. Therefore, it is recommended to use az deployment group create to deploy resources under the resource group scope.
+
+Both commands require the resource group, the region, and the name for the deployment so you can easily identify it in the deployment history. For convenience, the exercises create a variable that stores the path to the template file. This variable makes it easier for you to run deployment commands because you don't have to retype the path every time you deploy. Here's an example:
 
 # [Azure CLI](#tab/azure-cli)
 

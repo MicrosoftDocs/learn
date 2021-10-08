@@ -5,7 +5,7 @@ metadata:
   description: Learn about k-means clustering - how to use it, the kinds of results to expect, and how to interpret the data.
   ms.date: 05/15/2020
   author: sguthals
-  ms.author: sguthals
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: nextgen
