@@ -1,10 +1,10 @@
 When a user sends a request from any of the Azure tools, APIs, or SDKs, Resource Manager receives the request. It authenticates and authorizes the request. Resource Manager sends the request to the Azure service, which takes the requested action. Because all requests are handled through the same API, you see consistent results and capabilities in all the different tools.
 
-The following image shows the role Azure Resource Manager plays in handling Azure requests.
+The following image shows the role Azure Resource Manager (ARM) plays in handling Azure requests.
 
 :::image type="content" source="../media/consistent-management-layer.png" alt-text="Resource Manager request model showing how Azure tools, APIs, or SDKs, interact with Azure Resource Manager.":::
 
-## Why choose ARM templates?
+## Why choose Azure Resource Manager templates?
 
 If you're trying to decide between using ARM templates and one of the other infrastructure as code services, consider the following advantages of using templates:
 

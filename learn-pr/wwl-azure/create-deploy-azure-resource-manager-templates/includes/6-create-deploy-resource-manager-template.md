@@ -19,7 +19,7 @@ In this exercise you will learn how to use Visual Studio Code, and the Azure Res
 
 1. Enter **arm** in the *azuredeploy.json* file and select **arm!** from the autocomplete options. This will insert a snippet with the basic building blocks for an Azure resource group deployment.
 
-    :::image type="content" source="../media/arm_template_start.png" alt-text="Selecting the arm! snippet from the autocomplete options.":::    
+    :::image type="content" source="../media/template-start.png" alt-text="Selecting the arm! snippet from the autocomplete options.":::    
 
     Your file should contain something similar to the example below.
 
@@ -41,7 +41,7 @@ In this section you will add a snippet to support the creation of an Azure stora
 
 Place the cursor in the template `resources` block, type in `storage`, and select the **arm-storage** snippet.
 
-:::image type="content" source="../media/arm_template_storage.png" alt-text="Selecting the arm-storage snippet.":::
+:::image type="content" source="../media/template-storage.png" alt-text="Selecting the arm-storage snippet.":::
 
 The `resources` block should look similar to the example below.
 
@@ -68,7 +68,7 @@ Now you will create and use a parameter to specify the storage account name.
 
 Place your cursor in the parameters block, add a carriage return, type `"`, and then select the `new-parameter` snippet. This action adds a generic parameter to the template.
 
-:::image type="content" source="../media/arm_template_parameter.png" alt-text="Selecting the new-parameter snippet.":::
+:::image type="content" source="../media/template-parameter.png" alt-text="Selecting the new-parameter snippet.":::
 
 Make the following changes to the new parameter you just added:
 
@@ -126,7 +126,7 @@ An ARM template parameter file allows you to store environment-specific paramete
 
 1. In the **Command Palette** enter "**parameter**" in the search bar and select **Azure Resource Manager Tools:Select/Create Parameter File**.
 
-    :::image type="content" source="../media/arm_template_parameter_file.png" alt-text="Select Azure Resource Manager Tools:Select/Create Parameter File from the Command Palette":::
+    :::image type="content" source="../media/template-parameter-file.png" alt-text="Select Azure Resource Manager Tools:Select/Create Parameter File from the Command Palette":::
 
 1. A new dialog box will open at the top of the editor. From those options select **New**, then select **All Parameters**. Accept the default name for the new file.
 
