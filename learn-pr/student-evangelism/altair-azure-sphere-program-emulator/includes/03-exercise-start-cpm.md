@@ -78,7 +78,7 @@ Microsoft BASIC 80 is included on the A: drive.
 
 1. To stop a program executing
 
-    Press <kbd>ctrl+c</kbd>.
+    Press **ctrl+c**.
 
 1. To quit Basic type
 
@@ -172,7 +172,7 @@ static uint8_t sphere_port_in(uint8_t port) {
     mbasic A:IOT.BAS
     ```
 
-    Microsoft Basic will start and it will open the IOT.BAS applicaion.
+    Microsoft Basic will start and it will open the IOT.BAS application.
 
 1. Run the IoT application.
 
@@ -205,7 +205,7 @@ save "B:IOT.BAS"
 
 The CP/M disk image includes the Word-Master text editor. To use Word-Master, you must switch the Web Terminal to **Character Mode**. In Character Mode, the Web Terminal sends each character you type as an MQTT message to the Altair emulator.
 
-To toggle between **Line input mode** and **Character input mode** press <kbd>ctrl+L</kbd>. When finished with Word-Master switch back to **Line input mode** as the Web Terminal communications over MQTT in "Line input mode" is more efficient.
+To toggle between **Line input mode** and **Character input mode** press **ctrl+L**. When finished with Word-Master switch back to **Line input mode** as the Web Terminal communications over MQTT in "Line input mode" is more efficient.
 
 ![Altair running Word Master text editor](../media/word-master-character-mode.png)
 
@@ -268,7 +268,7 @@ The CP/M disk image includes a demo assembler application. Follow these steps to
 
 1. Switch the Web Terminal to **Character Mode**.
 
-    Press <kbd>ctrl+l</kbd>
+    Press **ctrl+l**
 
 1. Make your changes to the demo.asm file.
 
@@ -279,7 +279,7 @@ The CP/M disk image includes a demo assembler application. Follow these steps to
 
 1. Switch the Web Terminal to **Line Mode**.
 
-    Press <kbd>ctrl+l</kbd>
+    Press **ctrl+l**
 
 1. Assemble the demo.asm file.
 
@@ -319,7 +319,7 @@ The CP/M disk image includes a simple C application. Follow these steps to edit 
 
 1. Switch the Web Terminal to **Character Mode**.
 
-    Press <kbd>ctrl+l</kbd>
+    Press ctrl+l
 
 1. Make your changes to the hw.c file.
 
@@ -330,7 +330,7 @@ The CP/M disk image includes a simple C application. Follow these steps to edit 
 
 1. Switch the Web Terminal to **Line Mode**.
 
-    Press <kbd>ctrl+l</kbd>
+    Press **ctrl+l**
 
 1. Compile the hw.c file
 
@@ -352,4 +352,4 @@ The CP/M disk image includes a simple C application. Follow these steps to edit 
 
 1. Stop the hw application executing
 
-    To stop the application press <kbd>ctrl+c</kbd>
+    To stop the application press **ctrl+c**

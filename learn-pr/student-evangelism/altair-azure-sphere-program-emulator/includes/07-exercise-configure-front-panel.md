@@ -4,7 +4,7 @@ In this exercise, you'll learn how to program the Altair emulator from the Altai
 
 To access the Virtual Front panel, you must be connected to the Altair emulator via the Web Terminal.
 
-1. From the Web Terminal, press <kbd>ctrl+M</kbd> to enter the CPU Monitor.
+1. From the Web Terminal, press **ctrl+M** to enter the CPU Monitor.
 1. You can enter binary strings to represent the switches on a real Altair front panel. For example, if you entered *0000000011110000* followed by Enter, then you're setting 12 switches off and 4 switches on.
 1. You can enter Altair control commands as follows:
     * **e** = EXAMINE
@@ -31,7 +31,7 @@ To access the Virtual Front panel, you must be connected to the Altair emulator 
         Single step: Address bus: 00000000 00000000 (0x0000), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
         ```
 
-1. To exit CPU Monitor mode press <kbd>ctrl+M</kbd>
+1. To exit CPU Monitor mode press **ctrl+M**
 1. Note, you are directly setting memory addresses and you will likely overwrite something important and crash the Altair emulator, if this happens then just reset the Azure Sphere, and experiment again.
 
 ## The Avnet Click Front Panel with the MikroE 8800 Retro Click
