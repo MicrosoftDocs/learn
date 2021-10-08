@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-governance-azure-policy.exercise-check-compliance-status
-title: Check compliance status using Azure Policy and Azure Monitor
+title: Check compliance status using Azure Policy
 metadata:
-  title: Check compliance status using Azure Policy and Azure Monitor
-  description: Check compliance status using Azure Policy and Azure Monitor from the Azure Portal
+  title: Check compliance status using Azure Policy
+  description: Check compliance status using Azure Policy from the Azure Portal.
   ms.date: 07/07/2021
   author: mosabami
   ms.author: aayodeji

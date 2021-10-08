@@ -19,4 +19,4 @@ By the end of this module, you'll be able to:
 
 - Familiarity with Kubernetes concepts. If you're new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes).
 - An active [Azure subscription](https://azure.microsoft.com/free/services/kubernetes-service)
-- Ability to use the [Azure CLI](/azure/aks/kubernetes-walkthrough?WT.mc_id=akspipeline_intro-learn-ludossan)
+- Ability to use the [Azure CLI](/cli/azure/)

@@ -8,6 +8,9 @@ In the previous section you saw how Azure policies can be used to easily govern 
 
    ![screenshot showing how to set the scope of what policies you're interested in viewing](../media/6-find-the-right-scope.png)
 
+   >[!NOTE]
+   > It may take a few minutes for the non-compliant pods to show up in the Portal.
+
    Here we see that we have non-compliant resources for both the Policy and the Initiative we deployed. The resources are not compliant with three of the policies from the **Kubernetes cluster pod security restricted standards for Linux-based workloads for videogamerg** initiative. Clicking on that initiative will show which of the eight polices are the three that are not compliant.
 
    ![screenshot showing the policies that the resources are not compliant with](../media/6-not-compliant-cluster.png)

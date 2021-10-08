@@ -101,7 +101,7 @@ Find the built-in policy definitions for managing your cluster using the Azure p
 
 1. Click the **Assign** button.
 
-1. Set the Scope to the resource group of the Kubernetes cluster you just created, which in this case is the **videogamerg** resource group. Fill out the rest of the form as seen in the picture below and click **Next**.
+1. Set the Scope to the resource group of the Kubernetes cluster you just created, which in this case is the **videogamerg** resource group.
 
    ![Screenshot showing policy assignment view](../media/5-policy-assignment.png)
 
@@ -146,34 +146,34 @@ Now that you have assigned the restricting Policy to the cluster, you will now r
 1. Create another nginx deployment and service using the code below
 
    ```bash
-    cat <<EOF | kubectl create -f -
-    apiVersion: apps/v1
-    kind: Deployment
-    metadata:
-      name: second-simple-nginx
-      labels:
-        app: second-nginx
-    spec:
-      selector:
-        matchLabels:
-          app: second-nginx
-      template:
-        metadata:
-          labels:
-            app: second-nginx
-        spec:
-          containers:
-          - name: second-simple-nginx
-            image: docker.io/library/nginx:stable
-            resources:
-              requests:
-                cpu: 100m
-                memory: 100Mi
-              limits:
-                cpu: 120m
-                memory: 120Mi
-            ports:
-            - containerPort: 80
+   cat <<EOF | kubectl create -f -
+   apiVersion: apps/v1
+   kind: Deployment
+   metadata:
+     name: second-simple-nginx
+     labels:
+       app: second-nginx
+   spec:
+     selector:
+       matchLabels:
+         app: second-nginx
+     template:
+       metadata:
+         labels:
+           app: second-nginx
+       spec:
+         containers:
+         - name: second-simple-nginx
+           image: docker.io/library/nginx:stable
+           resources:
+             requests:
+               cpu: 100m
+               memory: 100Mi
+             limits:
+               cpu: 120m
+               memory: 120Mi
+           ports:
+           - containerPort: 80
    EOF
    ```
    
