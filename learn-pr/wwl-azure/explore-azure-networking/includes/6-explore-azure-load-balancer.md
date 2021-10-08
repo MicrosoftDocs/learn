@@ -83,7 +83,7 @@ Azure load balancer is available in two SKUs: Basic and Standard.
 :::row-end:::
 :::row:::
   :::column:::
-    **HA Ports**
+    **HA ports**
   :::column-end:::
   :::column:::
     [Available for Internal load balancer](/azure/load-balancer/load-balancer-ha-ports-overview)
