@@ -9,6 +9,6 @@ metadata:
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/2-get-started-stereokit-development.md)]

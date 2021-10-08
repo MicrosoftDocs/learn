@@ -9,6 +9,6 @@ metadata:
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
   [!include[](includes/4-exercise-understand-stereokit-ink-application-configurations.md)]
