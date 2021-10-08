@@ -25,7 +25,7 @@ quiz:
         - content: "All of the above"
           isCorrect: true
           explanation: StereoKit supports all OpenXR platforms.
-    - content: "which of the following is an incorrect features of StereoKit. "
+    - content: "which of the following is an incorrect features of StereoKit? "
       choices:
         - content: "Assets are loaded at compilation time"
           isCorrect: false
@@ -47,7 +47,7 @@ quiz:
         - content: .obj
           isCorrect: true
           explanation: As it supports Model format.
-    - content: "Which workload is not required to set up a StereoKitInk application"
+    - content: "Which workload is not required to set up a StereoKitInk application?"
       choices:
         - content: .NET Desktop development.
           isCorrect: true
