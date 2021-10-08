@@ -42,6 +42,7 @@ Pipeline scripts and tasks
 - Authentication might require a service principal (although you probably already have one to run the Bicep deployment), or might require another form of identity like a key
 - Deployment requires more coordination between parts
 - Often more flexible and can be used for more scenarios
+- Can access pipeline artifacts
 
 ## Outputs
 
