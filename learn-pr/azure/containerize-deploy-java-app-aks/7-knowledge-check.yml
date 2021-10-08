@@ -13,7 +13,7 @@ metadata:
 durationInMinutes: 1
 quiz:
   questions:
-  - content: "Which service allows developers to build container images?"
+  - content: "Which service allows developers to write instructions that are used to build container images?"
     choices:
     - content: "Maven"
       isCorrect: false

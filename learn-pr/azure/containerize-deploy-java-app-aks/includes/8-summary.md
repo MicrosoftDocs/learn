@@ -1,4 +1,4 @@
-Congratulations! You've containerized and deployed a Java application to Azure Kubernetes Service
+Congratulations! You've containerized and deployed a Java application to Azure Kubernetes Service.
 
 You wanted to learn how to containerize and deploy a Java app to Azure. You followed these steps:
 

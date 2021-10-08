@@ -1,4 +1,6 @@
-In this unit, you'll push a Docker image to Azure Container Registry
+In this unit, you'll push a Docker image to Azure Container Registry.
+
+Azure Container Registry allows you to build, store, and manage container images and artifacts in a private registry for all types of container deployments. Use Azure container registries with your existing container development and deployment pipelines.
 
 ## Push a Docker image
 
@@ -12,7 +14,7 @@ az acr build --registry $AZ_CONTAINER_REGISTRY --resource-group $AZ_RESOURCE_GRO
 
 > [!NOTE]
 > If your session has idled out and/or your doing this step at another point in time, you may have to re authenticate with the following CLI commands.
-> ```bash az login``` and ```bash az acr login -n $AZ_CONTAINER_REGISTRY```
+> ```az login``` and ```az acr login -n $AZ_CONTAINER_REGISTRY```
 
 You can now view the Azure Container Registry image meta-data of the newly pushed image. Run the following command in your CLI:
 
@@ -37,3 +39,5 @@ You will see the following meta-data as seen below:
   "signed": false
 }
 ```
+
+Your Docker image is now resident within Azure Container Registry and ready for deployments by Azure Services such as Azure Kubernetes Service.

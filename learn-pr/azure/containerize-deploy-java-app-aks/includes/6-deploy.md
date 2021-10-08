@@ -1,1 +1,199 @@
-In this unit, you'll deploy a Docker image to Azure Kubernetes Service
+In this unit, you'll deploy a Docker image to Azure Kubernetes Service.
+
+With Azure Kubernetes Service, you will be configuring your Azure Kubernetes Cluster to run in a desired state, via a Deployment, which is the process of providing declarative updates to Pods and ReplicaSets. This declaration of state is administered in the manifest (YAML) file, and the Kubernetes controller will change the current state to the declared state when instructed. You will create this ```deployment.yml``` manifest file below and instruct your Azure Kubernetes Service to run in a desired state with pods configured to pull/run the ```turkishairlines``` Docker image that is resident in Azure Kubernetes Service. Without this deployment.yml you would manually have to to create, update, and delete pods instead of letting the Azure Kubernetes Service orchestrate this. 
+
+## Deploy a Docker image
+
+You'll deploy this the ```turkishairlines``` Docker image to your Azure Kubernetes Cluster.
+
+Within the root of your project, Flight-Booking-System-JavaServlets_App/Project/TurkishAirlines, Create a file called deployment.yml. Run the following command in your CLI:
+
+```bash
+vi deployment.yml
+```
+
+Add the following contents to deployment.yml and then save and exit:
+
+> [!NOTE]
+> You'll want to replace <THE VALUE OF AZ_CONTAINER_REGISTRY HERE> with your AZ_CONTAINER_REGISTRY HERE environment variable value that was set earlier, forexamople:javacontainerizationdemoacr 
+
+```yml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: turkishairlines
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: turkishairlines
+  template:
+    metadata:
+      labels:
+  app: turkishairlines
+    spec:
+      nodeSelector:
+  "beta.kubernetes.io/os": linux
+      containers:
+      - name: turkishairlines
+  image: <THE VALUE OF AZ_CONTAINER_REGISTRY HERE>.azurecr.io/turkishairlines:latest
+  resources:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+    limits:
+      cpu: 250m
+      memory: 256Mi
+  ports:
+  - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: turkishairlines
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app: turkishairlines
+```
+
+> [!NOTE]
+> Optionally, the deployment_solution.yml in the root of your project contains the contents needed.
+
+In the deployment.yml above you'll notice this deployment.yml contains a Deployment and a Service. The deployment is used to adminsiter a set of pods while the service is used to allow network access to the pods. You'll notice the pods are configured to pull a single image, the ```<THE VALUE OF AZ_CONTAINER_REGISTRY HERE>.azurecr.io/turkishairlines:latest``` from Azure Container Registry. You'll also notice the the service is configured to allow incoming http pod traffic to port 8080, similarly to the way you ran the Docker image locally with the ```-p``` port argument.
+
+By now your Azure Kubernetes Cluster creation should have successfully completed.
+
+You'll want to configure your Azure CLI to access your Azure Kubernetes Cluster via the ```kubectl``` command. Install kubectl locally using the ```az aks install-cli``` command. Run the following command in your CLI:
+
+> [!NOTE]
+> If your session has idled out and/or your doing this step at another point in time, you may have to re authenticate with the following CLI commands.
+> ```az login``` and ```az acr login -n $AZ_CONTAINER_REGISTRY```
+
+```bash
+az aks install-cli
+```
+
+Configure kubectl to connect to your Kubernetes cluster using the az aks get-credentials command. Run the following command in your CLI:
+
+```bash
+az aks get-credentials --resource-group $AZ_RESOURCE_GROUP --name $AZ_KUBERNETES_CLUSTER_DNS_PREFIX
+```
+
+You will see the following:
+
+```bash
+Merged "javacontainerizationdemoaks" as current context in /home/chtrembl/.kube/config
+```
+
+You'll now instruct Azure Kubernetes Service to apply deployment.yml changes to your cluster. Run the following command in your CLI:
+
+```bash
+kubectl apply -f deployment.yml
+```
+
+You will see the following:
+
+```bash
+eployment.apps/turkishairlines created
+service/turkishairlines created
+```
+
+You can now use ```kubectl``` to monitor the status of the deployment. Run the following command in your CLI:
+
+```bash
+kubectl get all
+```
+
+You will see the following:
+
+```bash
+NAME                                   READY   STATUS    RESTARTS   AGE
+pod/turkishairlines-75647c4c98-v4v4r   1/1     Running   2          13d
+
+NAME                      TYPE           CLUSTER-IP    EXTERNAL-IP    PORT(S)          AGE
+service/kubernetes        ClusterIP      10.0.0.1      <none>         443/TCP          66d
+service/turkishairlines   LoadBalancer   10.0.34.128   20.81.13.151   8080:30265/TCP   66d
+
+NAME                              READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/turkishairlines   1/1     1            1           66d
+
+NAME                                         DESIRED   CURRENT   READY   AGE
+replicaset.apps/turkishairlines-75647c4c98   1         1         1       66d
+replicaset.apps/turkishairlines-7564c58f55   0         0         0       13d
+```
+
+If your ```POD``` status is ```Running``` then the application should be accessible.
+
+You can view the application logs within each pod as well. Run the following command in your CLI:
+
+```bash
+ kubectl logs pod/turkishairlines-<POD_IDENTIFIER_FROM_YOUR_RUNNING_POD>
+```
+
+You will see the following:
+
+```bash
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Oct-2021 18:31:14.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.71
+07-Oct-2021 18:31:14.164 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 9 2021 18:43:14 UTC
+07-Oct-2021 18:31:14.164 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.71.0
+07-Oct-2021 18:31:14.165 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-Oct-2021 18:31:14.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-1051-azure
+07-Oct-2021 18:31:14.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Oct-2021 18:31:14.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/openjdk-11
+07-Oct-2021 18:31:14.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.12+7
+07-Oct-2021 18:31:14.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Oct-2021 18:31:14.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat
+07-Oct-2021 18:31:14.168 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat
+07-Oct-2021 18:31:14.261 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+07-Oct-2021 18:31:14.261 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+07-Oct-2021 18:31:14.261 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+07-Oct-2021 18:31:14.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-Oct-2021 18:31:14.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Oct-2021 18:31:14.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
+07-Oct-2021 18:31:14.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Oct-2021 18:31:14.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Oct-2021 18:31:14.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Oct-2021 18:31:14.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+07-Oct-2021 18:31:14.264 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+07-Oct-2021 18:31:14.264 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/usr/local/tomcat
+07-Oct-2021 18:31:14.264 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/usr/local/tomcat
+07-Oct-2021 18:31:14.265 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/usr/local/tomcat/temp
+07-Oct-2021 18:31:14.265 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+07-Oct-2021 18:31:14.265 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+07-Oct-2021 18:31:14.266 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+07-Oct-2021 18:31:14.361 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+07-Oct-2021 18:31:14.763 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Oct-2021 18:31:14.962 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Oct-2021 18:31:15.071 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 6497 ms
+07-Oct-2021 18:31:15.771 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Oct-2021 18:31:15.772 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.71]
+07-Oct-2021 18:31:16.261 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/TurkishAirlines.war]
+07-Oct-2021 18:31:30.782 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.ws.policy.privateutil.MethodUtil (file:/usr/local/tomcat/webapps/TurkishAirlines/WEB-INF/lib/webservices-rt-2.3.1.jar) to method sun.reflect.misc.MethodUtil.invoke(java.lang.reflect.Method,java.lang.Object,java.lang.Object[])
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.ws.policy.privateutil.MethodUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+07-Oct-2021 18:31:53.370 INFO [localhost-startStop-1] com.sun.xml.ws.server.MonitorBase.createRoot Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/TurkishAirlines-PriceAndSeats-PriceAndSeatsPort
+07-Oct-2021 18:31:54.864 INFO [localhost-startStop-1] com.sun.xml.ws.transport.http.servlet.WSServletDelegate.<init> WSSERVLET14: JAX-WS servlet initializing
+07-Oct-2021 18:32:02.869 INFO [localhost-startStop-1] com.sun.xml.ws.transport.http.servlet.WSServletContextListener.contextInitialized WSSERVLET12: JAX-WS context listener initializing
+07-Oct-2021 18:32:02.870 INFO [localhost-startStop-1] com.sun.xml.ws.transport.http.servlet.WSServletContextListener.contextInitialized WSSERVLET12: JAX-WS context listener initializing
+07-Oct-2021 18:32:03.069 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/TurkishAirlines.war] has finished in [46,808] ms
+07-Oct-2021 18:32:03.165 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Oct-2021 18:32:03.267 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 48195 ms
+```
+
+You can now use the ```EXTERNAL-IP``` from your ```kubectl get all``` output to access the running application within Azure Kubernetes Service.
+
+Open up a browser and visit the Turkish Airlines landing page at [http://<EXTERNAL_IP>:8080/TurkishAirlines](http://<EXTERNAL_IP>:8080/TurkishAirlines)
+
+You should see the following:
+
+![Screenshot showing the running application.](../media/deploy-1.png)
+
+You can optionally log in with any user from tomcat-usrrs.xml for example someuser@azure.com:password
