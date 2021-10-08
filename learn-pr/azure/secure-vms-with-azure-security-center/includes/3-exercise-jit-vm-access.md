@@ -1,4 +1,4 @@
-You need to be in the _Standard pricing tier_ of Azure Security Center to use this feature. Once you activate a trial or migrate a subscription to this tier, you can enable JIT VM Access for selected Azure VMs in the subscription. If you don't want to start a trial now, you can read through the following instructions to see the required steps.
+You need to be in the _Standard pricing tier_ of Azure Security Center to use this feature. After you activate a trial or migrate a subscription to this tier, you can enable JIT VM Access for selected Azure VMs in the subscription. If you don't want to start a trial now, you can read through the following instructions to see the required steps.
 
 ## Create a new VM
 
@@ -39,7 +39,7 @@ Let's start by creating a virtual machine using Azure Cloud Shell.
     ```azurecli
     az vm create \
         --name SRVDC01 \
-        --image win2016datacenter \
+        --image win2019datacenter \
         --resource-group mslearnDeleteMe \
         --admin-username azureuser \
         --admin-password <your-password-here>
@@ -75,7 +75,7 @@ You should be able to connect and administer the VM. Let's fix that!
 
 1. Under **Virtual machines**, select the **Not Configured** tab.
 
-1. Select the virtual machine from the resource group, MSLEARNDELETEME.
+1. Select the virtual machine from the resource group, *MSLEARNDELETEME*.
 
 1. Select **Enable JIT on 1 VM** with your selected VM, as shown in the following screenshot.
 
