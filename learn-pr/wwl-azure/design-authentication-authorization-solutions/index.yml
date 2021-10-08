@@ -3,7 +3,7 @@ uid: learn.wwl.design-authentication-authorization-solutions
 metadata:
   title: Design authentication and authorization solutions
   description: "Azure Architects design and recommend authentication and authorization solutions."
-  ms.date: 10/04/2021
+  ms.date: 10/08/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -25,6 +25,7 @@ prerequisites: |
   • Working experience creating, assigning, and securing corporate identities.
   • Conceptual knowledge of identity assignment solutions, role-based access control,  and identity protection methods.
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:

@@ -1,6 +1,6 @@
 With some basic knowledge on identity solutions, let’s review our design choices. 
 
-| | Azure AD B2B| Azure AD B2C |
+| Feature | Azure AD B2B| Azure AD B2C |
 | - | - | - |
 | Purpose| Collaborating with business partners from external organizations like suppliers, partners, vendors. Users appear as guest users in your directory. These users may or may not have managed IT.| Customers of your product. These users are managed in a separate Azure AD directory / tenant. |
 | Users| Partner users acting on behalf of their company or employees of the company| Customers acting as themselves. |

@@ -30,12 +30,12 @@ Azure RBAC evaluates each request for access. The evaluations will determine if 
 
 - **Assign at the highest scope level that meets the requirements.** Your first step is to accurately define the role definition and related permissions. Next assign roles to users, groups, and service principals. Lastly, scope the roles to management groups, subscriptions, resource groups, and resources. Be sure to assign at the highest scope level that meets the requirements. 
 
-:::image type="content" source="../media/role-definition-assignment-scope.png" alt-text="A role definition is assigned to a resource and then scoped.":::
+    :::image type="content" source="../media/role-definition-assignment-scope.png" alt-text="A role definition is assigned to a resource and then scoped.":::
 
 
 - **Only grant users the access they need.** When planning your access control strategy, it's a best practice to grant users the least privilege to get their work done. This allows you to segregate duties within your team. By limiting roles and scopes, you limit what resources are at risk if the security principal is ever compromised. Creating a diagram like this, might help to explain Azure RBAC roles. 
 
-:::image type="content" source="../media/scope-role-matrix.png" alt-text="Different roles appear at different scope levels.":::
+    :::image type="content" source="../media/scope-role-matrix.png" alt-text="Different roles appear at different scope levels.":::
 
 
 - **Assign roles to groups, not users**. To make role assignments more manageable, avoid assigning roles directly to users. Instead, assign roles to groups. Assigning roles to groups helps minimize the number of role assignments.

@@ -17,7 +17,7 @@ Here’s an example where a user attempts to sign in to Azure Active Directory. 
 
 Risk policy detections in Azure AD Identity Protection include any identified suspicious actions related to user accounts in the directory. There are two risk policies that are evaluated: user risk and sign in risk.
 
-:::image type="content" source="../media/risk-detections.png" alt-text="Risky users, risky sign ins, and risk detections.":::
+:::image type="content" source="../media/risk-detections.png" alt-text="Risky users, risky sign-ins, and risk detections.":::
 
 
 ### User risk policies
