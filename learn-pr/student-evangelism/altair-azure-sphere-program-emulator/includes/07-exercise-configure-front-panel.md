@@ -13,13 +13,13 @@ To access the Virtual Front panel, you must be connected to the Altair emulator 
     * **dn** = DEPOSIT
     * **s** = SINGLE STEP
 1. If you wanted to load the three byte [Intel 8080 Jmp](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/8080asm.pdf?azure-portal=true) at address 0x0100 then you would:
-    * Type **100000000** (0x0100) followed by Enter.
-    * Type **e** for EXAMINE, followed by Enter to set the CPU current instruction pointer to address 0x0100.
-    * Type **11000011** (The Intel 8080 opcode for Jmp) followed by Enter.
-    * Type **d** followed by Enter to DEPOSIT the instruction at address 0x0000.
-    * Type **0** followed by Enter to set the **low** order address for the Jump instruction.
-    * Type **dn** followed by Enter to DEPOSIT NEXT to increment the CPU instruction pointer to the next address location and deposit the high-order byte of the Jmp instruction.
-    * Type **dn** followed by Enter to DEPOSIT NEXT to increment the CPU instruction pointer to the next address location and deposit the **high** order byte of the Jmp instruction.
+    1. Type **100000000** (0x0100) followed by Enter.
+    1. Type **e** for EXAMINE, followed by Enter to set the CPU current instruction pointer to address 0x0100.
+    1. Type **11000011** (The Intel 8080 opcode for Jmp) followed by Enter.
+    1. Type **d** followed by Enter to DEPOSIT the instruction at address 0x0000.
+    1. Type **0** followed by Enter to set the **low** order address for the Jump instruction.
+    1. Type **dn** followed by Enter to DEPOSIT NEXT to increment the CPU instruction pointer to the next address location and deposit the high-order byte of the Jmp instruction.
+    1. Type **dn** followed by Enter to DEPOSIT NEXT to increment the CPU instruction pointer to the next address location and deposit the **high** order byte of the Jmp instruction.
 
 1. To execute the instructions you entered you would:
     1. Type **100000000** (0x0100) followed by Enter
