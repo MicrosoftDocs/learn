@@ -1,8 +1,8 @@
 Here, you'll explore the capabilities of centrally managing your GitHub enterprise members through GitHub Enterprise Managed Users.
 
-GitHub Enterprise Managed Users (EMUs) are GitHub Enterprise Cloud accounts owned by companies (not individual users) that can be controlled, managed, and audited by the company’s GitHub administrators. Using EMUs, you can connect your GitHub Enterprise Account to an identity provider (IdP); ether Azure Active Directory or Okta. From here, you'll be able to centrally manage the user provisioning lifecycle and create a true single sign on experience for your members and contractors. To ensure everything works smoothly, Admins have complete jurisdiction over the EMU accounts and their corresponding private repositories.
+GitHub Enterprise Managed Users (EMUs) are GitHub Enterprise Cloud accounts owned by companies and not individual users. These accounts are controlled, managed, and audited by the company’s GitHub administrators. Using EMUs, you can connect your GitHub Enterprise Account to an identity provider (IdP); ether Azure Active Directory or Okta. From here, you'll be able to centrally manage the user provisioning lifecycle and create a true single sign on experience for your members and contractors. To ensure everything works smoothly, Admins have complete jurisdiction over the EMU accounts and their corresponding private repositories.
 
-Because these EMU accounts are owned by the company, you as an administrator of the company can grant EMU access to any organization within the enterprise. In addition, you can control the profile information of your EMUs, including usernames, first and last names, and emails, all from your connected IdP. In short, With an EMU account, you can reduce the number of tasks that need to be manually duplicated from your IdP on GitHub.
+Because these EMU accounts are owned by the company, an administrator of the company can grant EMU access to any organization within the enterprise. In addition, you can control the profile information of your EMUs, including usernames, first and last names, and emails, all from your connected IdP. In short, With an EMU account, you can reduce the number of tasks that need to be manually duplicated from your IdP on GitHub.
 
 Once provisioning is enabled in your IdP, you will be able to accomplish the following tasks.
 
@@ -25,7 +25,7 @@ In addition to the above mentions about EMU access, permissions, and restriction
 | **Audit log**  | Enterprise owners can audit all of the managed users' actions on GitHub.com | Only audit log activity that happens in the enterprise account is available for your review. |
 | **Privacy**    | No public repositories on EMU-enabled enterprises.           | Enterprise users can create public repositories.             |
 | **SSO**        | True single sign-on experience for your users.               | Multiple authentication steps required for your users to sign-on. |
-| **Metadata**   | User GitHub metadata is controlled by the enterprise and cannot be modified by managed users (for example, email addresses, display names, usernames). | Enterprise users create their own account, provide email, and choose their GitHub handle. |
+| **Metadata**   | User GitHub metadata is controlled by the enterprise and cannot be modified by managed users. This metadata includes email addresses, display names, and usernames. | Enterprise users create their own account, provide email, and choose their GitHub handle. |
 
 ### Authentication and user provisioning
 
@@ -39,7 +39,7 @@ To manage identity and access for your enterprise, you'll need to configure an a
 
 ### Other use cases for EMU accounts
 
-There are several unique ways you can use EMU accounts within your organization, but here are some common use cases for EMUs found within most companies.
+There are several unique ways you can use EMU accounts within your organization, let's look at some common use cases for EMUs found within most companies.
 
 #### Onboard new employees
 
@@ -47,7 +47,7 @@ Employees are constantly joining the company all across the organization, depart
 
 #### Off board employees
 
-On the contrary to onboarding, when an employee leaves the company an administrator can instantly suspend their GitHub account with the same flow used to turn off the rest of their work access and systems like HR, email, internal documents, benefits, etc. Since EMUs are governed by the IdP, the setup creates an efficient, fast, and secure method to remove access to sensitive source code when the employee leaves the company without lingering GitHub access.
+On the contrary to onboarding, when an employee leaves the company, an administrator can instantly suspend their GitHub account with the same flow used to turn off the rest of their work access and systems. This turn off includes HR, email, internal documents, and benefits. Since EMUs are governed by the IdP, the setup creates an efficient, fast, and secure method to remove access to sensitive source code when an employee leaves the company. This automatic turn off prevents any lingering GitHub access.
 
 #### Reduce accidental IP leakage
 
