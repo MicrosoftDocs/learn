@@ -55,7 +55,7 @@ The following video shows you how set up your on-premises server to work with Az
 
 1. Select **Register**.
 
-1. You should see that the registration is successful. Select **OK** to close the window.
+1. You should see that the registration is successful. Select **Close** to close the window.
 
     ![Screenshot of the registration successful page.](../media/8-server-registration-successful.png)
 
@@ -65,11 +65,11 @@ The following video shows you how set up your on-premises server to work with Az
 
 1. On your local computer, sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Go to the sync group, CADFiles. Select **All resources** > **CADSyncService** > **CADFiles**.
+1. Go to the sync group, CADFiles. Select **All resources** > **CADSyncService** > **CADFiles**. Your **CADFiles** pane for your *Sync group* appears.
 
-1. Select **Add server endpoint**.
+1. In the top menu bar, select **Add server endpoint**.
 
-1. Enter the following values for each setting
+1. Enter the following values for each setting.
 
    | Setting | Value  |
    |---------|---------|

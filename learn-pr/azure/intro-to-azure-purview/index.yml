@@ -1,7 +1,6 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-purview
 metadata:
-  hidden: true
   moduleType: introduction        
   title: Introduction to Azure Purview          
   description: "Introduction to Azure Purview"

@@ -14,7 +14,7 @@ Let a Microsoft recruiter describe a few qualities that companies are looking fo
 
 You've sent your resume to hundreds of companies with little or no response. After getting a tip from one of your student class mates, you find yourself registered to a hackathon, to learn about tech but also to meet with some company representatives.
 
-At the hackathon, with your resume in your hand, you see a booth belonging to one of the company sponsors, you approach the booth and wonder: How do I make a good impression and stand out from other attendees? You want to make sure that your resume piques the interest of the people in the booth, you want to convey who you are as an individual and potential co-worker.
+At the hackathon, with your resume in your hand, you see a booth belonging to one of the company sponsors, you approach the booth and wonder: How do I make a good impression and stand out from other attendees? You want to make sure that your resume piques the interest of the people in the booth, you want to convey who you are as an individual and potential coworker.
 
 ## What will you learn?
 

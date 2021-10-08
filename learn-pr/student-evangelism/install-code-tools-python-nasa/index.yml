@@ -5,9 +5,10 @@ metadata:
   description: Learn about what coding is and install tools to help you code.
   ms.date: 06/09/2021
   author: drguthals
-  ms.author: sguthals
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: nextgen
 title: Install coding tools for Python development
 summary: Learn about what coding is and install tools to help you code.
 abstract: |

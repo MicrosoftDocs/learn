@@ -53,20 +53,19 @@ Here's an example of a template file with a parameter for the storage account SK
 
 ```json
 "parameters":{
-   "<parameter-name>":{
-      "type":"<type-of-parameter-value>",
-      "defaultValue":"<default-value-of-parameter>",
-      "allowedValues":[
-         "<array-of-allowed-values>"
+  "storageAccountType": {
+      "type": "string",
+      "defaultValue": "Standard_LRS",
+      "allowedValues": [
+        "Standard_LRS",
+        "Standard_GRS",
+        "Standard_ZRS",
+        "Premium_LRS"
       ],
-      "minValue":"<minimum-value-for-int>",
-      "maxValue":"<maximum-value-for-int>",
-      "minLength":"<minimum-length-for-string-or-array>",
-      "maxLength":"<maximum-length-for-string-or-array-parameters>",
-      "metadata":{
-         "description":"<description-of-the-parameter>"
+      "metadata": {
+        "description": "Storage Account type"
       }
-   }
+    },
 }
 ```
 
@@ -97,7 +96,7 @@ When you deploy the template, you can give a value for the parameter. Notice the
 
 ```azurecli
 templateFile="azuredeploy.json"
-az group deployment create \
+az deployment group create \
   --name testdeployment1 \
   --template-file $templateFile \
   --parameters storageAccountType=Standard_LRS

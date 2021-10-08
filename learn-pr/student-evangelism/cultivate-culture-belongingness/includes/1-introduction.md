@@ -1,28 +1,39 @@
-Cultivate a climate of belongingness in the technology sector (tech) by proactively including and welcoming people with diverse backgrounds and lived experiences, while being aware of how your biases, words, and actions affect feelings of belonging in others.
+Cultivate a climate of belongingness in the technology sector (tech) by proactively including and welcoming people with diverse backgrounds and lived experiences. Be aware of how your biases, words, and actions affect feelings of belonging in others.
 
-In this module, you’ll explore what belonging is and why it matters. You’ll discover how to recognize it in yourself and others. You’ll also identify historical and current challenges to belonging in tech, including microaggressions. You’ll further explore what contributes to a climate of belonging, including micro-affirmations and various other strategies to build inclusive environments. As a team lead, you’ll explore how to support a climate of belonging when you are mentoring team members.
+In this module, you will:
 
-## Scenario: you are a team lead on a development team
+- Explore what belonging is and why it matters.
+- Discover how to recognize belonging in yourself and others.
+- Identify historical and current challenges to belonging in tech, including microaggressions.
+- Further explore what contributes to a climate of belonging, including micro-affirmations and various other strategies to build inclusive environments.
 
-Imagine you’re a team lead on a development team that’s building a website application. The team is a mix of new and experienced developers who have a wide range of skills and backgrounds. The beta website version is due soon and the project is behind schedule. Private conversations with your team members reveal that many are unhappy. They don’t feel like they belong because the culture of the team doesn’t create a sense of belongingness. The reasons for this vary. For example, some feel their ideas aren’t being taken seriously, or have received dismissive comments from other team members.
+In addition, as a team lead, you'll explore how to support a climate of belonging when you are mentoring team members.
 
-You recognize that to get the best performance from the team, everyone needs to be able to participate fully and openly. For this to happen, the team needs to have a climate of belonging.
+## Scenario: you're a team lead on a development team
+
+Imagine you're a team lead on a development team that's building a website application. The team is a mix of new and experienced developers who have a wide range of skills and backgrounds. The beta website version is due soon and the project is behind schedule. Private conversations with your team members reveal that many of them are unhappy. They don't feel like they belong because the culture of the team doesn't create a sense of belongingness. The reasons for their unhappiness vary. For example, some feel their ideas aren't being taken seriously, while others have received dismissive comments from team members.
+
+You recognize that to get the best performance from the team, everyone needs to feel comfortable  participating fully and openly. To encourage this shift, the team needs to have a climate of belonging.
 
 ## What will you learn?
 
-By the end of this module, you will be able to:
+By the end of this module, you'll be able to:
 
-- Describe the concept of belonging, how to recognize it, and why you need to foster a climate of belonging in tech.
+- Describe the concept of belonging, know how to recognize it, and recognize why you need to foster a climate of belonging in tech.
 
 - Understand historical challenges in tech that narrow the range of backgrounds and lived experiences.
 
-- Realize how climate influences a sense of belonging, and what impacts climate.
+- Realize how climate influences a sense of belonging, and perceive what impacts climate.
 
 - Apply methods to build inclusive environments and foster a climate of belongingness.
 
 ## What is the main goal
 
-By the end of this module, you’ll be able to recognize a sense of belonging in yourself and others, describe why a climate of belonging is important in tech, and list strategies to build inclusive environments in tech.
+By the end of this module, you'll be able to:
+
+- Recognize a sense of belonging in yourself and others.
+- Describe why a climate of belonging is important in tech.
+- List strategies to build inclusive environments in tech.
 
 ## Prerequisites
 

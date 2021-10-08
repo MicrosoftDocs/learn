@@ -1,4 +1,4 @@
-In this unit, you'll follow steps to set up Azure Digital Twins and get ready to work with it.
+In this unit, you'll follow steps to set up Azure Digital Twins, and get ready to work with it.
 
 ## Download files
 
