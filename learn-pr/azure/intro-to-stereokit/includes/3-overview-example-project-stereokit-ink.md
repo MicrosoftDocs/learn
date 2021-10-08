@@ -1,6 +1,6 @@
 So far you've leanred how to install and configure your visual studio,enabling the developer mode. In this module you'll have a basic understanding of how 3D model, hand stimulation and UI button works in your StereoKitInk application.
 
-## 3D models
+## Asset Access
 
 In Stereokit its a lot easier to load or access a 3D model. In solution explorer the asset folder contains the 3D models that you have imported. The 3D model is stored in .glb format and image files are stored in .png format.
 
