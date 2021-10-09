@@ -72,9 +72,9 @@ Your pipeline template file uses the `{{ parameters.PARAMETER_NAME }}` macro to 
 
 ### Key Vault variable groups
 
-Variable groups can be linked to Azure Key Vault. Secrets in the key vault are made available as variables in the variable group and can be used in your pipelines as if they're normal variables. To link a key vault, you need to create a service connection that has access to the vault. We link to more information in the summary.
+Variable groups can be linked to Azure Key Vault. Secrets in the key vault are made available as variables in the variable group and can be used in your pipelines as if they're normal variables. Key Vault makes the management of your secrets more secure. It also enables those values to be managed by your security team, and to separate the access to your pipelines from the secrets it uses.
 
-Key Vault makes the management of your secrets more secure. It also enables those values to be managed by your security team, and to separate the access to your pipelines from the secrets it uses.
+There are some additional steps required to link a variable group to a key vault, including creating a service connection that has permission to read the secrets from the key vault. In the summary unit, we provide a link to more details about how to configure Key Vault variable groups.
 
 ### Use variables in your pipeline
 

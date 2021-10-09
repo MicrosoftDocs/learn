@@ -270,13 +270,13 @@ In the previous versions of the pipeline, you used a single set of variables to 
 
 1. Select the **toy-website-environments** pipeline.
 
-   :::image type="content" source="../media/4-pipeline-variables.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline, with the Variables button highlighted.":::
-
 1. Select the **Edit** button.
 
    :::image type="content" source="../media/4-pipeline-edit.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline, with the Edit button highlighted.":::
 
 1. Select the **Variables** button.
+
+   :::image type="content" source="../media/4-pipeline-variables.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline, with the Variables button highlighted.":::
 
 1. Select the **Delete variable** button for each of the three variables.
 

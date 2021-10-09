@@ -91,6 +91,6 @@ You can also use the `ne` (*not equals*) operator to specify a condition like *i
 > [!TIP]
 > Pay attention to the YAML file's indentation when you use conditions. The steps that the condition applies to need to be indented by one extra level.
 
-Although conditions are a way to add flexibility to your pipeline, try not to use too many of them. They complicate your pipeline and make it harder to reason about. If you see a lot of conditions in your pipeline template, it might indicate that a template might not be the best solution for the workflow you plan to run, and that you should redesign your pipeline.
+Although conditions are a way to add flexibility to your pipeline, try not to use too many of them. They complicate your pipeline and make it harder to understand its flow. If you see a lot of conditions in your pipeline template, it might indicate that a template might not be the best solution for the workflow you plan to run, and that you should redesign your pipeline.
 
 Also, consider using YAML comments to explain the conditions you use, and any other aspects of your pipeline that might need additional explanation. Comments help make your pipeline easy to understand and work with in the future. You'll see some example YAML comments in the exercises later in this module.

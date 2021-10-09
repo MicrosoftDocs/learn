@@ -64,6 +64,10 @@ Here, you create a pipeline template that defines all of the stages required to 
 
    Notice that the `appServiceAppHostName` variable definition incorporates the `environmentType` parameter when it refers to the stage that published the host name. This ensures that each smoke test stage runs against the correct environment.
 
+1. Verify your *deploy.yml* file now looks like the following:
+
+   :::code language="yaml" source="code/5-deploy.yml" :::
+
 1. Save your changes to the file.
 
 ## Update the pipeline definition to use the templates
