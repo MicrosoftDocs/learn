@@ -17,23 +17,79 @@ You will see an output similar to the following:
 
 ```bash
 docker build -t turkishairlines .
-Sending build context to Docker daemon  115.7MB
-Step 1/5 : FROM tomcat
- ---> 921ef208ab56
-Step 2/5 : COPY tomcat-users.xml /usr/local/tomcat/conf
- ---> Using cache
- ---> 138158e2cf0b
-Step 3/5 : ADD target/*.war /usr/local/tomcat/webapps/TurkishAirlines.war
- ---> 98e0f3f487a8
-Step 4/5 : EXPOSE 8080
- ---> Running in c24b57b9f62e
-Removing intermediate container c24b57b9f62e
- ---> bf7fa6cc15a8
-Step 5/5 : CMD ["catalina.sh", "run"]
- ---> Running in 78835beea340
-Removing intermediate container 78835beea340
- ---> cda4f5b459f1
-Successfully built cda4f5b459f1
+Sending build context to Docker daemon  101.3MB
+Step 1/11 : FROM maven:3.6.0-jdk-11-slim AS build
+3.6.0-jdk-11-slim: Pulling from library/maven
+27833a3ba0a5: Pull complete
+16d944e3d00d: Pull complete
+6aaf465b8930: Pull complete
+0684138f4cb6: Pull complete
+67c4e741e688: Pull complete
+933857515267: Pull complete
+4f31e2918c2c: Pull complete
+70a0a987b087: Pull complete
+8369c7ef3731: Pull complete
+7a73ce905393: Pull complete
+c702b567a1e8: Pull complete
+Digest: sha256:4f0face24d2f79439a8fa394555b09be99c9ad537b9b19983fb8cc358818a42d
+Status: Downloaded newer image for maven:3.6.0-jdk-11-slim
+ ---> c7428be691f8
+Step 2/11 : WORKDIR /build
+ ---> Running in f1656ab15874
+Removing intermediate container f1656ab15874
+ ---> d9bfeb518c86
+Step 3/11 : COPY pom.xml .
+ ---> a60aab61d487
+Step 4/11 : COPY src ./src
+ ---> 049803b88a20
+Step 5/11 : COPY web ./web
+ ---> 8d98ddb1fbc3
+Step 6/11 : RUN mvn clean package
+ ---> Running in 71a462c5b3ad
+[INFO] Scanning for projects...
+
+...
+
+[INFO] Packaging webapp
+[INFO] Assembling webapp [TurkishAirlines] in [/build/target/TurkishAirlines-0.0.1-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp webResources [/build/web] to [/build/target/TurkishAirlines-0.0.1-SNAPSHOT]
+[INFO] Copying webapp resources [/build/src/main/webapp]
+[INFO] Building war: /build/target/TurkishAirlines-0.0.1-SNAPSHOT.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  26.811 s
+[INFO] Finished at: 2021-10-09T01:58:31Z
+[INFO] ------------------------------------------------------------------------
+Removing intermediate container 71a462c5b3ad
+ ---> 3d40f8a4f631
+Step 7/11 : FROM tomcat:8.5.72-jre11-openjdk-slim
+8.5.72-jre11-openjdk-slim: Pulling from library/tomcat
+bd897bb914af: Pull complete
+0cc7fec72146: Pull complete
+14c358bab58a: Pull complete
+c12f81e19ff2: Pull complete
+89238a07057c: Pull complete
+46896a83c0d8: Pull complete
+15f6001bf0c8: Pull complete
+34374d37175f: Pull complete
+Digest: sha256:807efbd54faa7342c1f75f1466889148fda1f299b81dc40404312352a2086a5f
+Status: Downloaded newer image for tomcat:8.5.72-jre11-openjdk-slim
+ ---> 77903b2cfd74
+Step 8/11 : COPY tomcat-users.xml /usr/local/tomcat/conf
+ ---> c540464832e7
+Step 9/11 : COPY --from=build /build/target/*.war /usr/local/tomcat/webapps/TurkishAirlines.war
+ ---> 6d1eb5d1568c
+Step 10/11 : EXPOSE 8080
+ ---> Running in 753385de3d77
+Removing intermediate container 753385de3d77
+ ---> f744382dd869
+Step 11/11 : CMD ["catalina.sh", "run"]
+ ---> Running in 58a822ee7a4a
+Removing intermediate container 58a822ee7a4a
+ ---> a0b73d3f3f91
+Successfully built a0b73d3f3f91
 Successfully tagged turkishairlines:latest
 ```
 
@@ -50,7 +106,7 @@ You will see an output similar to the following:
 ```bash
 docker image ls
 REPOSITORY                                        TAG                 IMAGE ID            CREATED             SIZE
-turkishairlines                                   latest              cda4f5b459f1        About an hour ago   692MB
+turkishairlines                                   latest              cda4f5b459f1        About an hour ago   268MB
 ```
 
 ## Run a Docker image
