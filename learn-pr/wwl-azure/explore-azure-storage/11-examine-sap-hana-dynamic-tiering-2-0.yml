@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: examine-sap-hana-dynamic-tiering-2.0
+title: Examine SAP HANA Dynamic Tiering 2.0
+metadata:
+  title: Examine SAP HANA Dynamic Tiering 2.0
+  description: "Examine SAP HANA Dynamic Tiering 2.0"
+  ms.date: 10/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/11-examine-sap-hana-dynamic-tiering-2-0.md)]
