@@ -20,12 +20,12 @@ The Cognitive Services account is created in the sandbox environment and is, the
     bash setup-textanalytics.sh
     ```
 
-1. Wait for the script to complete. When it finishes, the Cloud Shell displays values for the following properties.
+1. Wait for the script to complete. When it finishes, Cloud Shell displays values for the following properties.
 
      - **Cognitive Services account key**
      - **Cognitive Services account endpoint**
 
-    Save the values that are displayed in the Cloud Shell somewhere safe. We need them in this exercise when we update our app in the portal.
+    Save the values that are displayed in Cloud Shell somewhere safe. We need them in this exercise when we update our app in the portal.
 
 ## Locate the **Detect sentiment** action
 
