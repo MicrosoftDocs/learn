@@ -38,7 +38,7 @@ Let's configure basic settings, like resource group and location.
 
 When you create a logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch.
 
-1. After deployment completes, select **Go to resource**. The **Logic Apps Designer** appears for yoru *ShoeTracker* logic app.
+1. After deployment completes, select **Go to resource**. The **Logic Apps Designer** appears for your *ShoeTracker* logic app.
 
 1. Scroll down to the *Templates* section, and select the **Blank Logic App**  
 
