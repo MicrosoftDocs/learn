@@ -7,7 +7,7 @@ Because these EMU accounts are owned by the company, an administrator of the com
 Once provisioning is enabled in your IdP, you will be able to accomplish the following tasks.
 
 - Manage team membership and repository access
-- Control profile data and personally-identifiable information (PII)
+- Control profile and personal data
 - Provision, update, and deprovision IdP security groups to team and user memberships in GitHub EMU
 - Simplify authentication with single sign on (SSO)
 
