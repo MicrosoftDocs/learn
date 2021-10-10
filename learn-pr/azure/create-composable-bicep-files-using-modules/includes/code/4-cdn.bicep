@@ -48,5 +48,4 @@ resource endpoint 'Microsoft.Cdn/profiles/endpoints@2020-09-01' = {
   }
 }
 
-@description('The host name of the CDN endpoint.')
 output endpointHostName string = endpoint.properties.hostName
