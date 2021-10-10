@@ -70,7 +70,7 @@ fn main() {
     println!("Car order 1: {:?}, Hard top = {}, {:?}, {}, {} miles", car.age.0, car.roof, car.motor, car.color, car.age.1);
     
     // Car order #2: New, Semi-automatic, Convertible
-    engine = Transmission.SemiAuto;
+    engine = Transmission::SemiAuto;
     car = car_factory(String::from(todo!("Index into the `colors()` array")), engine, false, 100);
     println!("Car order 2: {:?}, Hard top = {}, {:?}, {}, {} miles", car.age.0, car.roof, car.motor, car.color, car.age.1);
 

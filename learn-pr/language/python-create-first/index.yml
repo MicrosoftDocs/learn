@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: nextgen
 title: Create your first Python program
 summary: Get started with Python by writing code to interact with end users.
 abstract: >

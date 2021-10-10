@@ -15,21 +15,28 @@ Learn how to make a [spatial anchor resource](/azure/spatial-anchors/quickstarts
 
 In this section, you will learn how to configure the scene and make the necessary changes.
 
-1. In the Project window, navigate to the **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager**
+1. Select **MixedRealityToolkit** object in the Hierarchy window and use the **Add Component** button in the Inspector window to add the **AR Anchor Manager (Script)**
+
+    :::image type="content" source="../media/add-anchor-manager-script.png" alt-text="Screenshot of Unity with AR AnchorManager script selected." lightbox="../media/add-anchor-manager-script.png":::
+
+    > [!NOTE]
+    > When you add the AR Anchor Manager (Script) component, the AR Session Origin (Script) component is automatically added because it is required by the AR Anchor Manager (Script) component.
+
+2. In the Project window, navigate to the **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager**
 
     :::image type="content" source="../media/anchor-manager-prefab.png" alt-text="Screenshot of Unity with AnchorManager prefab selected." lightbox="../media/anchor-manager-prefab.png":::
 
-2. From the **Manager** folder, drag and drop the prefab **Anchor Manager** into the scene Hierarchy.
+3. From the **Manager** folder, drag and drop the prefab **Anchor Manager** into the scene Hierarchy.
 
-3. Select **Anchor Manager** GameObject in the Hierarchy, and in the Inspector section, you will find **Spatial Anchor Manager** (Script). Find account ID and key field and add the credentials which you had created in the prerequisite in the earlier stage.
+4. Select **Anchor Manager** GameObject in the Hierarchy, and in the Inspector section, you will find **Spatial Anchor Manager** (Script). Find account ID and key field and add the credentials which you had created in the prerequisite in the earlier stage.
 
     :::image type="content" source="../media/add-anchor-manager-prefab.png" alt-text="Screenshot of Unity with newly added AnchorManager prefab still selected." lightbox="../media/add-anchor-manager-prefab.png":::
 
-4. Now find the **Scene Controller** object in your scene Hierarchy and select it. You will see the **Scene Controller** Inspector.
+5. Now find the **Scene Controller** object in your scene Hierarchy and select it. You will see the **Scene Controller** Inspector.
 
     :::image type="content" source="../media/scene-controller-inspector.png" alt-text="Screenshot of Unity with SceneController script component configured." lightbox="../media/scene-controller-inspector.png":::
 
-5. You will observe that the **Anchor Manager** field in the **Scene Controller** component is empty, drag and drop the **Anchor Manager** from the Hierarchy in the scene into that field and save the scene.
+6. You will observe that the **Anchor Manager** field in the **Scene Controller** component is empty, drag and drop the **Anchor Manager** from the Hierarchy in the scene into that field and save the scene.
 
 ## Build and deploy the app to your HoloLens 2
 
