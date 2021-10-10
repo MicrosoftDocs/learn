@@ -33,9 +33,9 @@ stages:
     steps:
     - checkout: self
     - task: AzureCLI@2
-        name: DeployBicepFile
-        displayName: Deploy Bicep file
-        inputs:
+      name: DeployBicepFile
+      displayName: Deploy Bicep file
+      inputs:
         azureSubscription: SharedServiceConnection
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
@@ -43,8 +43,8 @@ stages:
             az deployment group create \
             --name $(Build.BuildNumber) \
             --resource-group ${{parameters.environmentName}}_rg \
-            --template-file main.bicep \
-            --parameters parameters.${{parameters.environmentName}}.json
+            --template-file deploy/main.bicep \
+            --parameters deploy/parameters.${{parameters.environmentName}}.json
 ```
 
-The Git repository also contains the Bicep file and parameter files.
+The Git repository's *deploy* folder also contains the Bicep file and parameter files.
