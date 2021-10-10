@@ -21,7 +21,7 @@ Manage identity and access (30-35%)
 In this module, you will:
 
 - Configure and deploy Azure AD Connect.
-- Configure password had synchronization.
+- Configure password hash synchronization.
 - Implement pass-through authentication.
 - Select and configure the optimal authentication method based on your security posture.
 - Deploy password writeback.
