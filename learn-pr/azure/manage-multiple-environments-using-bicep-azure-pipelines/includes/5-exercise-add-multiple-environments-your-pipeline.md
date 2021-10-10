@@ -40,6 +40,15 @@ Here, you create a pipeline template that defines all of the stages required to 
 
    :::code language="yaml" source="code/5-deploy.yml" range="1-7" :::
 
+   > [!NOTE]
+   > When you start to work with your YAML file in Visual Studio Code, you might see some red squiggly lines telling you there's a problem. This is because the Visual Studio Code extension for YAML files sometimes incorrectly guesses the file's schema.
+   >
+   > You can ignore the problems it reports, or if you prefer, you can add the following code to the top of the file to suppress the issues:
+   >
+   > ```yaml
+   > # yaml-language-server: $schema=./deploy.yml
+   > ```
+
 1. Below the parameters, paste the definition of the validation stage:
 
    :::code language="yaml" source="code/5-deploy.yml" range="9-29" :::
