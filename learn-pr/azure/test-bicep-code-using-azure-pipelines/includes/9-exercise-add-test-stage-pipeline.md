@@ -38,9 +38,9 @@ The test script that you created in the preceding steps requires a host name to 
 
    Now, your deployment process still uses the same Azure CLI command as it did previously, but the output of that command is stored in a script variable named `deploymentOutput`. The output of Azure CLI commands is formatted as JSON.
 
-   The `set -e` command TODO
+   If an error happens during the deployment, the `set -e` command ensures that the step fails, which then causes the pipeline to stop.
 
-   After the deployment finishes, the script accesses the value of the `appServiceAppHostName` output from the Bicep deployment. It does this by using the `jq` tool to access the relevant part of the JSON output. Then, it publishes the value to a stage output variable named `appServiceAppHostName`.
+   If the deployment completes successfully, the script accesses the value of the `appServiceAppHostName` output from the Bicep deployment. It does this by using the `jq` tool to access the relevant part of the JSON output. Then, it publishes the value to a stage output variable named `appServiceAppHostName`.
 
    > [!NOTE]
    > Pester and jq are both preinstalled on Microsoft-hosted agents for Azure Pipelines. You don't need to do anything special to use them in a script step.
