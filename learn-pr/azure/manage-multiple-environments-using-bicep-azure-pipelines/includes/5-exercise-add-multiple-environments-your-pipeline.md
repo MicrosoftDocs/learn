@@ -56,11 +56,11 @@ Here, you create a pipeline template that defines all of the stages required to 
 
 1. Below the preview stage, paste the definition of the deploy stage:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="51-76" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="51-77" :::
 
 1. Below the deploy stage, paste the definition of the smoke test stage:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="78-105" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="79-106" :::
 
    Notice that the `appServiceAppHostName` variable definition incorporates the `environmentType` parameter when it refers to the stage that published the host name. This ensures that each smoke test stage runs against the correct environment.
 

@@ -77,7 +77,7 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. Make the same changes to the `Deploy` deployment job:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="51-78" highlight="6-7, 18, 24, 26" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="51-79" highlight="6-7, 18, 25, 27" :::
 
 1. Verify your *deploy.yml* file now looks like the following:
 
@@ -165,7 +165,7 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. Make the same change to the `Deploy` job:
 
-   :::code language="yaml" source="code/7-deploy-2.yml" range="55-84" highlight="26-28" :::
+   :::code language="yaml" source="code/7-deploy-2.yml" range="55-85" highlight="27-29" :::
 
 1. Verify your *deploy.yml* file now looks like the following:
 

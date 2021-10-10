@@ -52,7 +52,7 @@ stages:
   displayName: Deploy (${{parameters.environmentType}} Environment)
   jobs:
   - deployment: DeployWebsite
-    displayName: Deploy Website
+    displayName: Deploy website
     environment: ${{parameters.environmentType}}
     strategy:
       runOnce:
@@ -67,6 +67,7 @@ stages:
                 scriptType: 'bash'
                 scriptLocation: 'inlineScript'
                 inlineScript: |
+                  set -e
                   deploymentOutput=$(az deployment group create \
                     --name $(Build.BuildNumber) \
                     --resource-group ${{parameters.resourceGroupName}} \
