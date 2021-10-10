@@ -3,7 +3,7 @@ uid: learn.wwl.hybrid-identity
 metadata:
   title: Implement Hybrid identity
   description: "Explore how to deploy and configure Azure AD Connect to create a hybrid identity solution for your company."
-  ms.date: 09/29/2021
+  ms.date: 10/09/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
