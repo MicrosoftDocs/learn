@@ -5,7 +5,7 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Introduction to creating composable Bicep files by using modules.
-  ms.date: 10/05/2021
+  ms.date: 10/10/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
