@@ -226,3 +226,19 @@ Next, create two service connections in Azure Pipelines - one for your test envi
    :::image type="content" source="../media/4-environments-new-details-production.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Production, with the details completed and the Create button highlighted.":::
 
    <!-- TODO note about approval check -->
+
+## Set up variable groups
+
+1. Add ToyWebsiteProduction
+
+   | Name | Value |
+   |-|-|
+   | EnvironmentType | Production |
+   | ResourceGroupName | ToyWebsiteProduction |
+
+1. Add ToyWebsiteTest
+
+   | Name | Value |
+   |-|-|
+   | EnvironmentType | Test |
+   | ResourceGroupName | ToyWebsiteTest |
