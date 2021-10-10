@@ -1,0 +1,27 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-authentication-by-using-microsoft-authentication-library.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/10/2021
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following MSAL libraries supports single-page web apps?"
+    choices:
+    - content: "MSAL Angular"
+      isCorrect: false
+      explanation: "That's incorrect. MSAL Angular does not support single-page web apps."
+    - content: "MSAL.js"
+      isCorrect: true
+      explanation: "That's correct. MSAL.js is the only Microsoft Authentication Library that supports single-page applications."
+    - content: "MSAL.NET"
+      isCorrect: false
+      explanation: "That's incorrect. MSAL.NET does not support single-page web apps."
