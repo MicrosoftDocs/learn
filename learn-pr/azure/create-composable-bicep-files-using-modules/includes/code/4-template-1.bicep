@@ -19,5 +19,4 @@ module app 'modules/app.bicep' = {
   }
 }
 
-@description('The host name to use to access the website.')
 output websiteHostName string = app.outputs.appServiceAppHostName

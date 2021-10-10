@@ -94,7 +94,7 @@ Here, you add the *app* module to your Bicep template as a starting point.
 
 1. Update the host name output so that it selects the correct host name. When a CDN is deployed, you want the host name to be that of CDN endpoint.
 
-   :::code language="bicep" source="code/4-template-2.bicep" range="34" :::
+   :::code language="bicep" source="code/4-template-2.bicep" range="33" :::
 
 1. Save the changes to the file.
 
