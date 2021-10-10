@@ -34,7 +34,7 @@ TODO
 
 1. Propagate App Service app name output to pipeline variable
 
-   :::code language="yaml" source="code/5-deploy.yml" range="78-90" highlight="11, 13" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="78-90" highlight="10, 12" :::
 
 1. Add app deployment
 

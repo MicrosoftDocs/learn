@@ -56,7 +56,7 @@ TODO
 
 1. Add step to build and publish the Visual Studio database project
 
-   :::code language="bicep" source="code/7-build.yml" highlight="31-50" :::
+   :::code language="yaml" source="code/7-build.yml" highlight="31-50" :::
 
 ## Add values to variable group
 
