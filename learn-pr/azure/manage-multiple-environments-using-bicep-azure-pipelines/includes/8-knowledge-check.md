@@ -36,7 +36,7 @@ stages:
         name: DeployBicepFile
         displayName: Deploy Bicep file
         inputs:
-        azureSubscription: SharedServiceCOnnection
+        azureSubscription: SharedServiceConnection
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: |
