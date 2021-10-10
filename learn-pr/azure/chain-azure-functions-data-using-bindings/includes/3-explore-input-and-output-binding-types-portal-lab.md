@@ -24,7 +24,7 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and in the *Search services and marketplace* search box, search for and select **Function App**. The **Function App** pane appears.
+1. In the left menu pane, select **Compute**, and in the *Search services and marketplace* search box, search for and select *Function App*. The **Function App** pane appears.
 
 1. Select **Create**. The **Create Function App** pane appears.
 
@@ -38,7 +38,7 @@ Let's create a function app that we'll use throughout this module. A function ap
     | **Instance Details** |
     | Function App name | Enter a *globally unique name* | This name identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
     | Publish | Code | Option to publish code files or a Docker container. |
-    | Runtime stack | From the dropdown list, select *Node.js* | The sample code in this module is written in JavaScript. |
+    | Runtime stack | From the dropdown list, select **Node.js** | The sample code in this module is written in JavaScript. |
     | Version | Accept *default* | The default value is sufficient for this exercise. |
     | Region | From the dropdown list, select a *location* | Select the region nearest to you. |
 

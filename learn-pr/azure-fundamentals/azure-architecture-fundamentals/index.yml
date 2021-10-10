@@ -35,7 +35,6 @@ units:
 - learn.azure.azure-architecture-fundamentals.regions-availability-zones
 - learn.azure.azure-architecture-fundamentals.resources-resource-manager
 - learn.azure.azure-architecture-fundamentals.management-groups-subscriptions
-- learn.azure.azure-architecture-fundamentals.exercise-create-website
 - learn.azure.azure-architecture-fundamentals.knowledge-check
 - learn.azure.azure-architecture-fundamentals.summary
 badge:
