@@ -3,20 +3,21 @@ uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines
 metadata:
   moduleType: standard
   title: Manage end-to-end deployment scenarios by using Bicep and Azure Pipelines
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
-  ms.date: 09/28/2021
+  description: Build a deployment pipeline for Bicep infrastructure as code templates. Create a single pipeline to deploy infrastructure, applications, and data.
+  ms.date: 10/10/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage end-to-end deployment scenarios by using Bicep and Azure Pipelines
 summary: |
-  TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master
+  Create a unified pipeline to deploy your entire environment. You'll add a build stage to your pipeline, and use pipeline artifacts and Bicep outputs to publish applications, databases, and blobs.
 abstract: |
   After completing this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)"
+    - Select between Azure Resource Manager deployment scripts and pipeline scripts to perform deployment steps
+    - Use pipeline artifacts to publish compiled files for your deployment pipeline stages to use
+    - Pass data from your Bicep files to other deployment steps by using outputs
+    - Deploy Azure infrastructure, applications, database scripts, and storage blobs from a single pipeline
 prerequisites: |
   You should be familiar with using:
   - Bicep, including how to use parameters and parameter decorators, conditions, and how to deploy Bicep files to Azure.
