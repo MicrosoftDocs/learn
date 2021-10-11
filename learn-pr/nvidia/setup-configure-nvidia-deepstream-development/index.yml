@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.nvidia.setup-configure-nvidia-deepstream-development
+metadata:
+  title: Setup and configuration of a NVIDIA DeepStream Development environment
+  description: "In this module, you will learn how to setup and configure an X86 based Ubuntu 18.04 System to host an NVIDIA DeepStream development environment."
+  ms.date: 10/01/2021
+  author: toolboc
+  ms.author: pdecarlo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Setup and configuration of a NVIDIA DeepStream Development environment
+summary: In this module, you will learn how to setup and configure an X86 based Ubuntu 18.04 System to host an NVIDIA DeepStream development environment.
+abstract: |
+  In this module, you will learn how to:
+  - Describe the components of Intelligent Video Applications
+  - Install the NVIDIA DeepStream SDK and Dependencies onto an x86 host
+  - Run NVIDIA DeepStream applications
+  - Modify and customize NVIDIA DeepStream application configurations
+prerequisites: |
+  - X86 Based System running Ubuntu 18.04 OS
+  - RTX2080, RTX3080, T4, or A100 NVIDIA Graphics Card
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- data-scientist
+products:
+- azure
+units:
+- learn.nvidia.setup-configure-nvidia-deepstream-development.1-introduction
+- learn.nvidia.setup-configure-nvidia-deepstream-development.2-introduction-to-intelligent-video-analytics
+- learn.nvidia.setup-configure-nvidia-deepstream-development.3-install-nvidia-deepstream-dependencies-and-sdk
+- learn.nvidia.setup-configure-nvidia-deepstream-development.4-run-a-nvidia-deepstream-reference-application
+- learn.nvidia.setup-configure-nvidia-deepstream-development.5-modifying-the-deepstream-reference-application-samples
+- learn.nvidia.setup-configure-nvidia-deepstream-development.6-knowledge-check
+- learn.nvidia.setup-configure-nvidia-deepstream-development.7-summary
+badge:
+  uid: learn.nvidia.setup-configure-nvidia-deepstream-development.badge

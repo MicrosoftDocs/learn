@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.nvidia-deepstream-development-with-microsoft-azure
+uid: learn.nvidia-deepstream-development-azure
 metadata:
   title: NVIDIA DeepStream Development with Microsoft Azure
   description: Learn how to develop and securely deploy custom NVIDIA DeepStream applications to NVIDIA-powered IoT Edge devices.
@@ -21,7 +21,7 @@ summary: |
 
   Learn how to develop custom DeepStream applications backed by services in Microsoft Azure and securely deploy NVIDIA DeepStream based AI workloads to NVIDIA-powered IoT Edge devices.
 
-iconUrl: /learn/achievements/nvidia-deepstream-development-with-microsoft-azure.svg
+iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:
@@ -34,8 +34,8 @@ products:
 - azure-iot-edge
 - azure-iot-hub
 modules:
-- learn.nvidia.setup-and-configuration-of-a-nvidia-deepstream-development-environment
-- learn.nvidia.introduction-to-nvidia-deepstream-graph-composer-with-microsoft-azure
-- learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure
+- learn.nvidia.setup-configure-nvidia-deepstream-development
+- learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure
 trophy:
-  uid: learn.nvidia.nvidia-deepstream-development-with-microsoft-azure.trophy
+  uid: learn.nvidia-deepstream-development-azure.trophy
