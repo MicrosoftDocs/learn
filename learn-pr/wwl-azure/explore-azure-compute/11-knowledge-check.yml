@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/08/2021
+  ms.date: 10/11/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "General purpose"
       isCorrect: false
-      explanation: "Incorrect. High performance compute VMs (including the H size) provide the fastest and most powerful CPU Azure VMs with optional high-throughput network interfaces (RDMA)."
+      explanation: "Sorry, that is incorrect."
     - content: "Compute optimized"
       isCorrect: false
-      explanation: "Incorrect. High performance compute VMs (including the H size) provide the fastest and most powerful CPU Azure VMs with optional high-throughput network interfaces (RDMA)."
+      explanation: "Sorry, that is incorrect."
     - content: "High performance compute"
       isCorrect: true
       explanation: "Correct. High performance compute VMs (including the H size) provide the fastest and most powerful CPU Azure VMs with optional high-throughput network interfaces (RDMA)."
@@ -32,21 +32,21 @@ quiz:
     choices:
     - content: "GPU"
       isCorrect: false
-      explanation: "Incorrect. Storage optimized VMs (including the Lsv2 and Ls sizes) provide high disk throughput and IO, ideal for Big Data, SQL, NoSQL databases, data warehousing, and large transactional databases."
+      explanation: "Sorry, that is incorrect."
     - content: "Storage optimized"
       isCorrect: true
       explanation: "Correct. Storage optimized VMs (including the Lsv2 and Ls sizes) provide high disk throughput and IO, ideal for Big Data, SQL, NoSQL databases, data warehousing, and large transactional databases."
     - content: "Memory optimized"
       isCorrect: false
-      explanation: "Incorrect. Storage optimized VMs (including the Lsv2 and Ls sizes) provide high disk throughput and IO, ideal for Big Data, SQL, NoSQL databases, data warehousing, and large transactional databases."
+      explanation: "Sorry, that is incorrect."
   - content: "What is the advantage of using a constrained vCPU virtual machine for a workload that does not require a high core count? Select one."
     choices:
     - content: "It increases the I/O bandwidth"
       isCorrect: false
-      explanation: "Incorrect. The licensing fees charged for SQL Server or Oracle are constrained to the vCPU count, and other products should be charged based on the new vCPU count. A constrained vCPU VM shares the same specs for memory, storage, and I/O bandwidth as the original VM, but with a lower licensing cost."
+      explanation: "Sorry, that is incorrect."
     - content: "It has higher RAM"
       isCorrect: false
-      explanation: "Incorrect. The licensing fees charged for SQL Server or Oracle are constrained to the vCPU count, and other products should be charged based on the new vCPU count. A constrained vCPU VM shares the same specs for memory, storage, and I/O bandwidth as the original VM, but with a lower licensing cost."
+      explanation: "Sorry, that is incorrect."
     - content: "It has lower licensing fees"
       isCorrect: true
       explanation: "Correct. The licensing fees charged for SQL Server or Oracle are constrained to the vCPU count, and other products should be charged based on the new vCPU count. A constrained vCPU VM shares the same specs for memory, storage, and I/O bandwidth as the original VM, but with a lower licensing cost."
@@ -54,10 +54,10 @@ quiz:
     choices:
     - content: "100,000"
       isCorrect: false
-      explanation: "Correct. The Azure networking stack supports 250 K total network flows with good performance for VMs with 8 CPU cores or more and 100 K total flows with good performance for VMs with less than 8 CPU cores. Past this limit network performance degrades gracefully for additional flows up to a hard limit of 1 M total flows, 500 K inbound and 500 K outbound, after which additional flows are dropped."
+      explanation: "Sorry, that is incorrect."
     - content: "250,000"
       isCorrect: true
       explanation: "Correct. The Azure networking stack supports 250 K total network flows with good performance for VMs with 8 CPU cores or more and 100 K total flows with good performance for VMs with less than 8 CPU cores. Past this limit network performance degrades gracefully for additional flows up to a hard limit of 1 M total flows, 500 K inbound and 500 K outbound, after which additional flows are dropped."
     - content: "1,000,000"
       isCorrect: false
-      explanation: "Incorrect. The Azure networking stack supports 250 K total network flows with good performance for VMs with 8 CPU cores or more and 100 K total flows with good performance for VMs with less than 8 CPU cores. Past this limit network performance degrades gracefully for additional flows up to a hard limit of 1 M total flows, 500 K inbound and 500 K outbound, after which additional flows are dropped."
+      explanation: "Sorry, that is incorrect."
