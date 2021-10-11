@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.describe-concepts-of-security-compliance-identity
 metadata:
-  title: 'Security, Compliance, and Identity Fundamentals (SC-900) - Describe the concepts of security, compliance, and identity'
-  description: 'Security, Compliance, and Identity Fundamentals (SC-900) - Describe the concepts of security, compliance, and identity'
-  ms.date: 09/30/2021
+  title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the concepts of security, compliance, and identity'
+  description: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the concepts of security, compliance, and identity'
+  ms.date: 10/09/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'Security, Compliance, and Identity Fundamentals (SC-900) - Describe the concepts of security, compliance, and identity'
+title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the concepts of security, compliance, and identity'
 prerequisites: |
   - Recommended learning:  [Introduction to cybersecurity](/learn/modules/intro-to-cybersecurity/)
 summary: |
