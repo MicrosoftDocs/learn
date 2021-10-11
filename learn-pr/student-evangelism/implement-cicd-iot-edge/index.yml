@@ -5,7 +5,7 @@ metadata:
   description: "This module implements CICD pipeline for edge devices"
   ms.date: 06/19/2020
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
   ms.custom: nextgen

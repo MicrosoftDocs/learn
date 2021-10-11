@@ -60,6 +60,8 @@ Set another variable of type `int` and use the value from the `integer32` or `in
 >```go
 >package main
 >
+>import "fmt"
+>
 >func main() {
 >    var integer32 int = 2147483648
 >    fmt.Println(integer32)
@@ -73,6 +75,8 @@ Declare an unsigned variable like `uint`, and initialize it with a negative valu
 > **Challenge solution**:
 >```go
 >package main
+>
+>import "fmt"
 >
 >func main() {
 >    var integer uint = -10
@@ -95,7 +99,10 @@ You can find the limits of these two types by using the `math.MaxFloat32` and `m
 ```go
 package main
 
-import "math"
+import (
+    "fmt"
+    "math"
+)    
 
 func main() {
     fmt.Println(math.MaxFloat32, math.MaxFloat64)
@@ -198,7 +205,10 @@ Another approach for casting in Go is to use the [strconv package](https://golan
 ```go
 package main
 
-import "strconv"
+import (
+    "fmt"
+    "strconv"
+)
 
 func main() {
     i, _ := strconv.Atoi("-42")
