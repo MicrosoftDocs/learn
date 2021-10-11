@@ -18,10 +18,7 @@ The following illustration displays an Azure Event Grid positioned between multi
 
 :::image type="content" source="../media/event-grid.png" alt-text="A graphic displays Event Sources linked to Event Handlers by topics, and event grid, and event subscriptions.":::
 
-
-
->[!TIP]  
-‎>Event Grid sends an event to indicate something has happened or changed. However, the actual object that was changed isn’t part of the event data. Instead, a URL or identifier is often passed to reference the changed object.
+Event Grid sends an event to indicate something has happened or changed. However, the actual object that was changed isn’t part of the event data. Instead, a URL or identifier is often passed to reference the changed object.
 
 ## Comparison of services
 
