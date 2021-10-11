@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/08/2021
+  ms.date: 10/11/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "1"
       isCorrect: false
-      explanation: "Incorrect. Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group are not inherited by the resources in that resource group."
+      explanation: "Sorry, that is incorrect."
     - content: "5"
       isCorrect: false
-      explanation: "Incorrect. Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group are not inherited by the resources in that resource group."
+      explanation: "Sorry, that is incorrect."
     - content: "15"
       isCorrect: true
       explanation: "Correct. Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group are not inherited by the resources in that resource group."
@@ -32,13 +32,13 @@ quiz:
     choices:
     - content: "Yes"
       isCorrect: false
-      explanation: "Incorrect. A resource group is a logical container that simplifies managing multiple resources. Every resource exists in one, and only one, resource group."
+      explanation: "Sorry, that is incorrect."
     - content: "No"
       isCorrect: true
       explanation: "Correct. A resource group is a logical container that simplifies managing multiple resources. Every resource exists in one, and only one, resource group."
     - content: "Yes, but you cannot delete the resource from one resource group without also deleting it from the others"
       isCorrect: false
-      explanation: "Incorrect. A resource group is a logical container that simplifies managing multiple resources. Every resource exists in one, and only one, resource group."
+      explanation: "Sorry, that is incorrect."
   - content: "Which of the following elements in the Azure Resource Manager template scheme is a required element? Select one."
     choices:
     - content: "resources"
@@ -46,7 +46,7 @@ quiz:
       explanation: "Correct. The required \"resources\" parameter declares the resource types that are deployed or updated in a resource group or subscription."
     - content: "functions"
       isCorrect: false
-      explanation: "Incorrect. The required \"resources\" parameter declares the resource types that are deployed or updated in a resource group or subscription."
+      explanation: "Sorry, that is incorrect."
     - content: "parameters"
       isCorrect: false
-      explanation: "Incorrect. The required \"resources\" parameter declares the resource types that are deployed or updated in a resource group or subscription."
+      explanation: "Sorry, that is incorrect."
