@@ -68,7 +68,7 @@ docker login
 
     ```bash
     docker push [YOUR DOCKER USER NAME]/pizzafrontend
-    docker push [YOUR DOCKER USER NAME/pizzabackend]
+    docker push [YOUR DOCKER USER NAME/pizzabackend
     ```
 
 In the course of this exercise, you cloned the Contoso Pizza Shop's code from GitHub. Used Dockerfiles contained within that code to create 2 Docker images and containers, and then pushed those images to Docker Hub.
