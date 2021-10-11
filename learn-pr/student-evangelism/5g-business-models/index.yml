@@ -5,7 +5,7 @@ metadata:
   description: "This module introduces 5G business models for Azure cloud technologies."
   ms.date: 07/13/2021
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot
   ms.custom: nextgen
