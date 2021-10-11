@@ -52,7 +52,7 @@ Website has health endpoint that checks the website can talk to the database too
 
 1. Add new test case
 
-   :::code language="powershell" source="code/5-website-tests.ps1" highlight="23-27" :::
+   :::code language="powershell" source="code/5-website-tests.ps1" highlight="23-28" :::
 
 ## Commit and push
 

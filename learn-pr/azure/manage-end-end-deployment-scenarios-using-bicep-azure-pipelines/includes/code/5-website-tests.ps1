@@ -6,7 +6,7 @@ param(
 
 Describe 'Toy Website' {
 
-    It 'Serves pages over HTTPS' {
+      It 'Serves pages over HTTPS' {
       $request = [System.Net.WebRequest]::Create("https://$HostName/")
       $request.AllowAutoRedirect = $false
       $request.GetResponse().StatusCode |
@@ -21,8 +21,9 @@ Describe 'Toy Website' {
     }
 
     It 'Returns a success code from the health check endpoint' {
-      $request = [System.Net.WebRequest]::Create("https://$HostName/health")
-      $request.GetResponse().StatusCode |
+      $response = Invoke-WebRequest -Uri "https://$HostName/health" -SkipHttpErrorCheck
+      Write-Host $response.Content
+      $response.StatusCode |
         Should -Be 200 -Because "the website and configuration should be healthy"
     }
 
