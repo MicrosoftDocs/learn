@@ -4,16 +4,25 @@ Azure Container Registry allows you to build, store, and manage container images
 
 ## Push a Docker image
 
-You can push your Docker image to the Azure Container Registry. By doing so, your Docker image will be network close to all of your Azure resources, such as your Azure Kubernetes Cluster. You will ultimately configure AKS to pull the TurkishAirlines image from Azure Container Registry.
+You can push your newly built Docker image to the Azure Container Registry. By doing so, your Docker image will be network close to all of your Azure resources, such as your Azure Kubernetes Cluster. You will ultimately configure AKS to pull the TurkishAirlines image from Azure Container Registry.
 
-To build and push the Docker image to Azure Container Registry, run the following command in your CLI:
+To push the Docker image to Azure Container Registry, run the following two commands in your CLI:
+
+First tag the previously built Docker image with your Azure Container Registry:
 
 ```bash
-az acr build --registry $AZ_CONTAINER_REGISTRY --resource-group $AZ_RESOURCE_GROUP --image turkishairlines:latest .
+docker tag turkishairlines $AZ_CONTAINER_REGISTRY.azurecr.io/turkishairlines
+```
+
+Second, push the Docker image to Azure Container Registry:
+
+```bash
+docker push $AZ_CONTAINER_REGISTRY.azurecr.io/turkishairlines
 ```
 
 > [!NOTE]
-> If your session has idled out and/or your doing this step at another point in time, you may have to re authenticate with the following CLI commands.
+> If your session has idled out, your doing this step at another point in time and/or from another CLI you may have to re initialize your environment variables and re authenticate with the following CLI commands.
+>```AZ_RESOURCE_GROUP=javacontainerizationdemorg AZ_CONTAINER_REGISTRY=javacontainerizationdemoacr AZ_KUBERNETES_CLUSTER=javacontainerizationdemoaks AZ_LOCATION=<YOUR_AZURE_REGION> AZ_KUBERNETES_CLUSTER_DNS_PREFIX=<YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER>```
 > ```az login``` and ```az acr login -n $AZ_CONTAINER_REGISTRY```
 
 You can now view the Azure Container Registry image meta-data of the newly pushed image. Run the following command in your CLI:

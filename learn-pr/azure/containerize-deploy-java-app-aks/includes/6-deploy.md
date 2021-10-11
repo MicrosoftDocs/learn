@@ -1,6 +1,6 @@
 In this unit, you'll deploy a Docker image to Azure Kubernetes Service.
 
-With Azure Kubernetes Service, you will be configuring your Azure Kubernetes Cluster to run in a desired state, via a Deployment, which is the process of providing declarative updates to Pods and ReplicaSets. This declaration of state is administered in the manifest (YAML) file, and the Kubernetes controller will change the current state to the declared state when instructed. You will create this ```deployment.yml``` manifest file below and instruct your Azure Kubernetes Service to run in a desired state with pods configured to pull/run the ```turkishairlines``` Docker image that is resident in Azure Kubernetes Service. Without this deployment.yml you would manually have to to create, update, and delete pods instead of letting the Azure Kubernetes Service orchestrate this. 
+With Azure Kubernetes Service, you will be configuring your Azure Kubernetes Cluster to run in a desired state, via a Deployment, which is the process of providing declarative updates to Pods and ReplicaSets. This declaration of state is administered in the manifest (YAML) file, and the Kubernetes controller will change the current state to the declared state when instructed. You will create this ```deployment.yml``` manifest file below and instruct your Azure Kubernetes Service to run in a desired state with pods configured to pull/run the ```turkishairlines``` Docker image that is resident in Azure Container Registry (that was pushed in from the previous unit). Without this deployment.yml you would manually have to to create, update, and delete pods instead of letting the Azure Kubernetes Service orchestrate this. 
 
 ## Deploy a Docker image
 
@@ -15,7 +15,7 @@ vi deployment.yml
 Add the following contents to deployment.yml and then save and exit:
 
 > [!NOTE]
-> You'll want to update with your AZ_CONTAINER_REGISTRY HERE environment variable value that was set earlier, for examople:javacontainerizationdemoacr 
+> You'll want to update with your AZ_CONTAINER_REGISTRY environment variable value that was set earlier, for example:javacontainerizationdemoacr 
 
 ```yml
 apiVersion: apps/v1
@@ -30,22 +30,20 @@ spec:
   template:
     metadata:
       labels:
-  app: turkishairlines
+        app: turkishairlines
     spec:
-      nodeSelector:
-  "beta.kubernetes.io/os": linux
       containers:
       - name: turkishairlines
-  image: <THE VALUE OF AZ_CONTAINER_REGISTRY HERE>.azurecr.io/turkishairlines:latest
-  resources:
-    requests:
-      cpu: "1"
-      memory: "1Gi"
-    limits:
-      cpu: "2"
-      memory: "2Gi"
-  ports:
-  - containerPort: 8080
+        image: <AZ_CONTAINER_REGISTRY>.azurecr.io/turkishairlines:latest
+        resources:
+          requests:
+            cpu: "1"
+            memory: "1Gi"
+          limits:
+            cpu: "2"
+            memory: "2Gi"
+        ports:
+        - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
@@ -63,14 +61,15 @@ spec:
 > [!NOTE]
 > Optionally, the deployment_solution.yml in the root of your project contains the contents needed.
 
-In the deployment.yml above you'll notice this deployment.yml contains a Deployment and a Service. The deployment is used to administer a set of pods while the service is used to allow network access to the pods. You'll notice the pods are configured to pull a single image, the ```<THE VALUE OF AZ_CONTAINER_REGISTRY HERE>.azurecr.io/turkishairlines:latest``` from Azure Container Registry. You'll also notice the the service is configured to allow incoming http pod traffic to port 8080, similarly to the way you ran the Docker image locally with the ```-p``` port argument.
+In the deployment.yml above you'll notice this deployment.yml contains a Deployment and a Service. The deployment is used to administer a set of pods while the service is used to allow network access to the pods. You'll notice the pods are configured to pull a single image, the ```<AZ_CONTAINER_REGISTRY>.azurecr.io/turkishairlines:latest``` from Azure Container Registry. You'll also notice the the service is configured to allow incoming HTTP pod traffic to port 8080, similarly to the way you ran the Docker image locally with the ```-p``` port argument.
 
 By now your Azure Kubernetes Cluster creation should have successfully completed.
 
 You'll want to configure your Azure CLI to access your Azure Kubernetes Cluster via the ```kubectl``` command. Install kubectl locally using the ```az aks install-cli``` command. Run the following command in your CLI:
 
 > [!NOTE]
-> If your session has idled out and/or your doing this step at another point in time, you may have to re authenticate with the following CLI commands.
+> If your session has idled out, your doing this step at another point in time and/or from another CLI you may have to re initialize your environment variables and re authenticate with the following CLI commands.
+>```AZ_RESOURCE_GROUP=javacontainerizationdemorg AZ_CONTAINER_REGISTRY=javacontainerizationdemoacr AZ_KUBERNETES_CLUSTER=javacontainerizationdemoaks AZ_LOCATION=<YOUR_AZURE_REGION> AZ_KUBERNETES_CLUSTER_DNS_PREFIX=<YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER>```
 > ```az login``` and ```az acr login -n $AZ_CONTAINER_REGISTRY```
 
 ```bash
@@ -98,7 +97,7 @@ kubectl apply -f deployment.yml
 You will see the following:
 
 ```bash
-eployment.apps/turkishairlines created
+deployment.apps/turkishairlines created
 service/turkishairlines created
 ```
 

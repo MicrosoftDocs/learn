@@ -10,7 +10,7 @@ metadata:
   ms.author: chtrembl
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 2
 quiz:
   questions:
   - content: "Which tool allows developers to write instructions that are used to build container images?"
@@ -35,7 +35,7 @@ quiz:
     - content: "Azure Container Registry"
       isCorrect: true
       explanation: "Azure Container Registry allows  you to build, store, and manage container images and artifacts in a private registry for all types of container deployments."
-  - content: "Which is NOT a Docker a Dockerfile instruction?"
+  - content: "Which is NOT a Dockerfile instruction?"
     choices:
     - content: "RUN"
       isCorrect: false

@@ -3,7 +3,7 @@ In this unit, you'll use the Azure CLI to create the Azure resources that will b
 ## Using the Azure CLI, perform the following steps
 
 > [!NOTE]
-> In an effort to preserve time, you'll instruct Azure to create the resources first and move on to the next unit. Azure Kubernetes Cluster creation can take approximately 10 minutes. This can, optionally, run in your background while you proceed through the next units.
+> In an effort to preserve time, you'll instruct Azure to provision the resources first and move on to the next unit. Azure Kubernetes Cluster creation can take approximately 10 minutes. This can, optionally, run in your background while you proceed through the next units.
 
 ### Authenticate with Azure Resource Manager
 

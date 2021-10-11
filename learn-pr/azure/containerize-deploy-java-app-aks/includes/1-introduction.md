@@ -6,11 +6,11 @@ With Containers, you’ll ensure your applications, and dependencies, are always
 
 In this module, you’ll first containerize a Java application using Docker. For convenience, we’ve selected an existing Java application for you to use, from the open internet. [Turkish Airlines](https://github.com/chtrembl/Flight-Booking-System-JavaServlets_App), a fully responsive web-based Flight Booking System for Turkish Airlines based on the Model View Controller (MVC) Architecture made using Java Servlets, Java Server Pages (JSPs).
 
-You’ll then construct a Docker file and write the Docker instructions needed to build a Docker image.
+You’ll then construct a Dockerfile and write the Docker instructions needed to build a Docker image.
 
 You’ll then run the Docker image locally and test the application.
 
-You’ll then push the Docker image into Azure Container Registry and deploy it to Azure Container Registry.
+You’ll then push the Docker image into Azure Container Registry and deploy it to Azure Kubernetes Service.
 
 By the end of this module, you'll be able to containerize a Java application, push the Docker image to Azure Container Registry, and then deploy to Azure Kubernetes Service.
 
