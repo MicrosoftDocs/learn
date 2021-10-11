@@ -4,12 +4,13 @@ title: Exercise - work with windowing functions
 metadata:
   title: Exercise - work with windowing functions
   description: "Exercise - work with windowing functions"
-  ms.date: 06/03/2021
+  ms.date: 10/09/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-work-windowing-functions.md)]
