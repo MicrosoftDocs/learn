@@ -108,7 +108,7 @@ In this exercise, you'll add a Helm repository to your Helm client and install a
     apiVersion: v1
     kind: ServiceAccount
     metadata:
-    name: aspnet-webapp-aspnet-core
+      name: aspnet-webapp-aspnet-core
     ...
     ---
     # Source: aspnet-core/templates/svc.yaml
