@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure
+uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure
 metadata:
   title: NVIDIA DeepStream Embedded Device Deployment with Microsoft Azure
   description: "In this module, we will publish and deploy an ARM based DeepStream container workload to NVIDIA embedded hardware using Azure IoT Edge."
@@ -24,7 +24,7 @@ prerequisites: |
   - Familiarity with container workloads / Docker
   - Familiarity with Azure IoT Edge / IoT Hub 
   - Completion of the prerequisite module: "Introduction to DeepStream 6.0 Graph Composer with Microsoft Azure"
-iconUrl: /learn/achievements/nvidia/nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
@@ -37,13 +37,13 @@ products:
 - azure-iot-edge
 - azure-iot-hub
 units:
-- learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.1-introduction
-- learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.2-introduction-to-artificial-intelligence-at-the-edge
-- learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.3-configure-deepstream-graph-to-publish-data-to-azure-iot-hub
-- learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.4-build-and-publish-cross-platform-deepstream-container-images
-- learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.5-configure-azure-iot-edge-on-nvidia-embedded-hardware
-- learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.6-deploy-cross-platform-deepstream-images-to-nvidia-embedded-devices-with-azure-iot-edge
-- learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.7-knowledge-check
-- learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.8-summary
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.1-introduction
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.2-introduction-to-artificial-intelligence-at-the-edge
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.3-configure-deepstream-graph-to-publish-data-to-azure-iot-hub
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.4-build-and-publish-cross-platform-deepstream-container-images
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.5-configure-azure-iot-edge-on-nvidia-embedded-hardware
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.6-deploy-cross-platform-deepstream-images-to-nvidia-embedded-devices-with-azure-iot-edge
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.7-knowledge-check
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.8-summary
 badge:
-  uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.badge
+  uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.badge
