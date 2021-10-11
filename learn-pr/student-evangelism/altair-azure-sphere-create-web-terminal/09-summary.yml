@@ -6,9 +6,10 @@ metadata:
   description: Summary of how to set up IoT Central, the Web Terminal, and the virtual disk server. 
   ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 durationInMinutes: 1 
 content: |
   [!include[](includes/09-summary.md)]
