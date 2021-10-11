@@ -90,8 +90,10 @@ git push
 
    Deployment stage completes successfully, but the *Smoke Test (Test Environment)* stage fails
 
-   <!-- TODO smoke test failing for the wrong reason? -->
-
    :::image type="content" source="../media/5-smoke-test-failure.png" alt-text="TODO":::
 
-1. Look at test tab. Getting errors. This is because the SQL server isn't available. You'll fix this shortly.
+1. Select the **Smoke Test (Test Environment)** stage to open the pipeline log.
+
+   :::image type="content" source="../media/5-smoke-test-failure-log.png" alt-text="TODO":::
+
+   Notice the log includes the health check response, which indicates that there's a problem with the application's communication with Azure SQL Database. You'll fix this shortly.

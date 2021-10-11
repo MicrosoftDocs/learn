@@ -73,7 +73,11 @@ TODO
    | SqlServerAdministratorLogin | ToyCompanyAdmin |
    | SqlServerAdministratorLoginPassword | SecurePassword!111 |
 
-   Make password a secret - TODO screenshot
+1. Make password secure
+
+   :::image type="content" source="../media/7-variable-group-secure.png" alt-text="TODO":::
+
+1. Save
 
    :::image type="content" source="../media/7-variable-group-edit.png" alt-text="TODO":::
 
