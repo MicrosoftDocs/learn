@@ -13,7 +13,7 @@ title: Drive higher utilization of your Java apps - autoscaling
 summary: Learn how to drive higher utilization of your Java apps on Azure
 abstract: |
   By the end of this module, you will be able to:
-  - Create autoscaling rules for a Java application
+  - Understand Autoscaling concepts
   - Monitor the effects of autoscaling
   - Understand common design patterns for autoscaling
 prerequisites: |
@@ -24,7 +24,6 @@ levels:
 roles:
   - developer
   - devops-engineer
-  - administrator
 products:
 - azure
 - azure-database-mysql
