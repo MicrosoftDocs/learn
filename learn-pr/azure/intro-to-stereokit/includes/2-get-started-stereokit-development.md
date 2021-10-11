@@ -75,8 +75,6 @@ If you're using a Windows Mixed Reality headset with your PC, you'll have to ena
 
 1. Go to **Settings** menu.
 
-    :::image type="content" source="../media/settings-menu.png" alt-text="Screenshot of Click the setting menu." lightbox="../media/settings-menu.png":::
-
 2. Select **Update and Security**.
 
     :::image type="content" source="../media/update-security.png" alt-text="Screenshot of Select “Update and Security” menu item." lightbox="../media/update-security.png":::

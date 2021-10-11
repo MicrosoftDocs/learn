@@ -14,27 +14,27 @@ content: Choose the best response for each question. Then select Check your answ
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Choose the platform on which the stereokit app locations are built?"
+    - content: "Choose the platform on which the StereoKit app locations are built?"
       choices:
         - content: "Windows MR"
           isCorrect: false
           explanation: Windows Mixed Reality is a mixed reality platform introduced as part of the Windows 10 operating system, which provides augmented reality and mixed reality experiences with compatible head-mounted displays.
-        - content: "Hololens and Ocules Quest"
+        - content: "HoloLens and Oculus Quest"
           isCorrect: false
-          explanation: HoloLens are a pair of mixed reality smartglasses developed and manufactured by Microsoft and Oculus, it is a standalone device that can run games and software wirelessly under an Android-based operating system.
+          explanation: HoloLens are a pair of mixed reality smart glasses developed and manufactured by Microsoft and Oculus, it is a standalone device that can run games and software wirelessly under an Android-based operating system.
         - content: "All of the above"
           isCorrect: true
           explanation: StereoKit supports all OpenXR platforms.
-    - content: "which of the following is an incorrect features of StereoKit? "
+    - content: "which of the following is an incorrect feature of StereoKit? "
       choices:
         - content: "Assets are loaded at compilation time"
-          isCorrect: false
+          isCorrect: true
           explanation: Assets are loaded at Runtime not at compilation.
-        - content: "StereoKit by default user a flexible shader or material system with built in PBR"
-          isCorrect: true
-          explanation: StereoKit by default supports flexible shader or material system with built in PBR
+        - content: "StereoKit by default uses a flexible shader or material system with built in PBR"
+          isCorrect: false
+          explanation: StereoKit by default supports flexible shader or material system with built-in PBR
         - content: "StereoKit allows computation to proceed faster"
-          isCorrect: true
+          isCorrect: false
           explanation: Because StereoKit enables computation to be performed more quickly.
     - content: " Select the correct format to store the 3D model "
       choices:
@@ -50,11 +50,11 @@ quiz:
     - content: "Which workload is not required to set up a StereoKitInk application?"
       choices:
         - content: .NET Desktop development.
-          isCorrect: true
+          isCorrect: false
           explanation: .NET is a software development framework and ecosystem designed and supported by Microsoft to allow for easy desktop and web application engineering.
         - content: Universal Window Platform Development
-          isCorrect: true
-          explanation: Universal Windows Platform (UWP) is a computing platform created by Microsoft and first introduced in Windows 10. The purpose of this platform is to help develop universal apps that run on Windows 10, Windows 10 Mobile, Xbox One and HoloLens without the need to be rewritten for each.
-        - content: Mobile development with .Net (for Quest)
           isCorrect: false
-          explanation: .Net (for Quest) is a software development framework for mobile applications, whereas StereoKitInk is a Windows PC application.
+          explanation: Universal Windows Platform (UWP) is a computing platform created by Microsoft and first introduced in Windows 10. The purpose of this platform is to help develop universal apps that run on Windows 10, Windows 10 Mobile, Xbox One, and HoloLens without the need to be rewritten for each.
+        - content: Mobile development with .NET (for Quest)
+          isCorrect: true
+          explanation: .NET (for Quest) is a software development framework for mobile applications, whereas StereoKitInk is a Windows PC application.

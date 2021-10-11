@@ -8,14 +8,14 @@ metadata:
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-title: introduction to stereokit
+title: Introduction to StereoKit
 summary: By the end of this module, you'll be able to set up, create, build an application and work across OpenXR platforms like HoloLens 2, Windows Mixed Reality, Monado Linux and so on.
 abstract: |
   By the end of this module you will be able to:
   - have a brief knowledge about the StereoKit application and its advantages.
   - learn some of the key features of StereoKit.  
   - how to configure, set up and build an application using StereoKit for Mixed Reality development.
-  - basic understanding of how code, 3D model, hand stimulation and UI button works in your StereoKitInk application.
+  - basic understanding of how code, 3D model, hand stimulation, and UI button works in your StereoKitInk application.
   - learns fundamentals of drawing and interacting with Mixed Reality content.
   - understand developing the mixed reality application with StereoKit working across OpenXR platforms like HoloLens 2 and Universal Windows Platform such as Windows PC.
 iconUrl: /learn/achievements/generic-badge.svg
@@ -32,7 +32,7 @@ products:
 prerequisites: |
   - Visual Studio 2019 - the Community version.
   - StereoKit’s Visual Studio Template.
-  - Any OpenXR platforms: Windows MR, Oculus, SteamVR, Varjo, Monado, HoloLens or an Oculus Quest.
+  - Any OpenXR platforms: Windows MR, Oculus, SteamVR, Varjo, Monado, HoloLens, or an Oculus Quest.
   
 units: 
 - learn.azure.intro-to-stereokit.1-introduction

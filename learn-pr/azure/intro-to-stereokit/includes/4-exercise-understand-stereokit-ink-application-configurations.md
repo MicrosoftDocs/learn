@@ -1,17 +1,17 @@
-From the previous chapter you have a basic understanding of how 3D model, hand stimulation and UI button works in your StereoKit. In this module You'll understand how
-StereoKitInk application is developed. Where you'll configure radial hand menus, easy window menus with automatic layout and object-based menus with more explicit layouts.
+From the previous chapter, you have a basic understanding of how 3D model, hand stimulation, and UI button works in your StereoKit. In this module, You'll understand how
+StereoKitInk application is developed to configure radial hand menus, easy window menus with automatic layout, and object-based menus with more explicit layouts.
 
 > [!Important]
 > Make sure you have installed **StereoKit’s Visual Studio template**.
 
-First, download the StereoKitInk sample application from [GitHub repository](https://github.com/maluoi/StereoKit-PaintTutorial/tree/feature/sk_ink). Then click on the **Code** button & select **Download ZIP**. Once the download is completed, click on the folder & select  **StereoKitInk.sln** file. Then solution file will open in Visual Studio. Towards the right corner of the Visual Studio, you can find Solution Explorer, which contains the assets folder and three other program files which operate the main logic.
+First, download the StereoKitInk sample application from [GitHub repository](https://github.com/maluoi/StereoKit-PaintTutorial/tree/feature/sk_ink). Then click on the **Code** button & select **Download ZIP**. Once the download is completed, click on the folder & select  **StereoKitInk.sln** file. Then solution file will open in Visual Studio. Towards the right corner of the Visual Studio, you can find Solution Explorer, which contains the assets folder and three other program files such as the painting menu, palette menu, and main program, which operate the main logic.
 
 > [!Note]
 > The program will contain errors, which will be cleared at a later time during debugging.
 
 ## 3D model assets
 
-Look for the Assets folder in the solution explorer. This folder contains InkBottle.glb, InkSplat.glb and StereoKitInkLight.png model and image files which will be used later in the application.
+Look for the Assets folder in the solution explorer. This folder contains InkBottle.glb, InkSplat.glb, and StereoKitInkLight.png model and image files used later in the application.
 
 ## Painting menu
 

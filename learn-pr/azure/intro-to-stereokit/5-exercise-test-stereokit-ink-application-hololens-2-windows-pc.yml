@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-stereokit.5-exercise-test-stereokit-ink-application-ho
 title: Test StereoKitInk application on HoloLens 2 and Windows-PC
 metadata:
   title: Test StereoKitInk application on HoloLens 2 and Windows-PC
-  description: You'll learn how to build and test a application on Desktop and HoloLens 2 with stereokit
+  description: You'll learn how to build and test an application on Desktop and HoloLens 2 with StereoKit
   ms.date: 10/05/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
