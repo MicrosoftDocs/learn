@@ -5,7 +5,7 @@ metadata:
   description: "Develop highly secure IoT solutions with Azure Sphere, Azure RTOS and Azure IoT Central"
   ms.date: 06/26/2020
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
   ms.custom: nextgen
