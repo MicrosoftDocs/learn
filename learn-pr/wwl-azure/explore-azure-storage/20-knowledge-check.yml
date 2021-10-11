@@ -4,14 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/10/2021
+  ms.date: 10/11/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 7
+durationInMinutes: 4
 content: |
   [!include[](includes/20-knowledge-check.md)]
 quiz:
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Unstructured files such as media content, virtual machine disks, backups, or logs."
       isCorrect: true
-      explanation: "Incorrect. Blobs typically represent unstructured files such as media content, virtual machine disks, backups, or logs."
+      explanation: "Correct. Blobs typically represent unstructured files such as media content, virtual machine disks, backups, or logs."
     - content: "Non-relational and partially structured content, which consists of multiple rows of data with different sets of properties."
       isCorrect: false
-      explanation: "Incorrect. Blobs typically represent unstructured files such as media content, virtual machine disks, backups, or logs."
+      explanation: "Sorry, that is incorrect."
     - content: "Temporary storage for messages that Azure services commonly use to asynchronously communicate with each other."
       isCorrect: false
-      explanation: "Incorrect. Blobs typically represent unstructured files such as media content, virtual machine disks, backups, or logs."
+      explanation: "Sorry, that is incorrect."
   - content: "Which of the following are the performance tiers offered by Azure Files? Select one."
     choices:
     - content: "Basic and Standard"
       isCorrect: false
-      explanation: "Correct. Azure Files offers two performance tiers. Standard file shares are backed by reliable rotational hard disk drives (HDDs). Premium file shares are backed by high-performance, low-latency solid-state disks (SSDs)."
+      explanation: "Sorry, that is incorrect."
     - content: "Standard and Premium"
       isCorrect: true
       explanation: "Correct. Azure Files offers two performance tiers. Standard file shares are backed by reliable rotational hard disk drives (HDDs). Premium file shares are backed by high-performance, low-latency solid-state disks (SSDs)."
     - content: "Basic, Standard, and Premium"
       isCorrect: false
-      explanation: "Incorrect. Azure Files offers two performance tiers. Standard file shares are backed by reliable rotational hard disk drives (HDDs). Premium file shares are backed by high-performance, low-latency solid-state disks (SSDs)."
+      explanation: "Sorry, that is incorrect."
   - content: "What is the maximum size of a data disk attached to an Azure VM? Select one."
     choices:
     - content: "1 TB"
       isCorrect: false
-      explanation: "Incorrect. Data disks have a maximum size of 32 TB. The VM size determines the maximum number of data disks you can attach to the VM."
+      explanation: "Sorry, that is incorrect."
     - content: "16 TB"
       isCorrect: false
-      explanation: "Incorrect. Data disks have a maximum size of 32 TB. The VM size determines the maximum number of data disks you can attach to the VM."
+      explanation: "Sorry, that is incorrect."
     - content: "32 TB"
       isCorrect: true
       explanation: "Correct. Data disks have a maximum size of 32 TB. The VM size determines the maximum number of data disks you can attach to the VM."
@@ -54,10 +54,10 @@ quiz:
     choices:
     - content: "Standard SSD"
       isCorrect: false
-      explanation: "Incorrect. Ultra SSD managed disks have the highest performance of the four tiers."
+      explanation: "Sorry, that is incorrect."
     - content: "Premium SSD"
       isCorrect: false
-      explanation: "Incorrect. Ultra SSD managed disks have the highest performance of the four tiers."
+      explanation: "Sorry, that is incorrect."
     - content: "Ultra SSD"
       isCorrect: true
       explanation: "Correct. Ultra SSD managed disks have the highest performance of the four tiers."
@@ -65,32 +65,32 @@ quiz:
     choices:
     - content: "DT 2.0 does not need to be installed on a dedicated Azure VM."
       isCorrect: false
-      explanation: "Incorrect. To ensure supportability for SAP HANA Dynamic Tiering 2.0, the SAP HANA and DT 2.0 VMs must be deployed with Azure accelerated networking enabled."
+      explanation: "Sorry, that is incorrect."
     - content: "The SAP HANA and DT 2.0 VMs must be deployed with Azure accelerated networking enabled."
       isCorrect: true
       explanation: "Correct. To ensure supportability for SAP HANA Dynamic Tiering 2.0, the SAP HANA and DT 2.0 VMs must be deployed with Azure accelerated networking enabled."
     - content: "SAP HANA and DT 2.0 VMs cannot be deployed within the same Azure virtual network."
       isCorrect: false
-      explanation: "Incorrect. To ensure supportability for SAP HANA Dynamic Tiering 2.0, the SAP HANA and DT 2.0 VMs must be deployed with Azure accelerated networking enabled."
+      explanation: "Sorry, that is incorrect."
   - content: "Are Azure Standard HDD storage-based managed disks supported for SAP workloads? Select one."
     choices:
     - content: "Yes"
       isCorrect: false
-      explanation: "Incorrect. SAP Note #1928533 states that Azure Standard HDD storage based managed disks are not supported for SAP workloads. Microsoft recommends using Azure Standard SSD storage as the minimum for Azure VMs hosting the SAP application layer and for non-performance sensitive DBMS deployment, and using Azure Premium SSD storage for all other Azure VMs DBMS workloads."
+      explanation: "Sorry, that is incorrect."
     - content: "No"
       isCorrect: true
       explanation: "Correct. SAP Note #1928533 states that Azure Standard HDD storage based managed disks are not supported for SAP workloads. Microsoft recommends using Azure Standard SSD storage as the minimum for Azure VMs hosting the SAP application layer and for non-performance sensitive DBMS deployment, and using Azure Premium SSD storage for all other Azure VMs DBMS workloads."
     - content: "Only for the SAP application layer and for non-performance sensitive DBMS deploment"
       isCorrect: false
-      explanation: "Incorrect. SAP Note #1928533 states that Azure Standard HDD storage based managed disks are not supported for SAP workloads. Microsoft recommends using Azure Standard SSD storage as the minimum for Azure VMs hosting the SAP application layer and for non-performance sensitive DBMS deployment, and using Azure Premium SSD storage for all other Azure VMs DBMS workloads."
+      explanation: "Sorry, that is incorrect."
   - content: "Which Azure VMs can take advantage of Azure Write Accelerator functionality? Select one."
     choices:
     - content: "All VM series"
       isCorrect: false
-      explanation: "Incorrect. Azure Write Accelerator is a functionality that is available for Azure M-Series VMs exclusively. As the name states, the purpose of the functionality is to improve I/O latency of writes against the Azure Premium Storage."
+      explanation: "Sorry, that is incorrect."
     - content: "E-series and M-series VMs"
       isCorrect: false
-      explanation: "Incorrect. Azure Write Accelerator is a functionality that is available for Azure M-Series VMs exclusively. As the name states, the purpose of the functionality is to improve I/O latency of writes against the Azure Premium Storage."
+      explanation: "Sorry, that is incorrect."
     - content: "M-series VMs only"
       isCorrect: true
       explanation: "Correct. Azure Write Accelerator is a functionality that is available for Azure M-Series VMs exclusively. As the name states, the purpose of the functionality is to improve I/O latency of writes against the Azure Premium Storage."
