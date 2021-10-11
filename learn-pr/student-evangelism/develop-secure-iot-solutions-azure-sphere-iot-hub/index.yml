@@ -5,7 +5,7 @@ metadata:
   description: "Develop highly secure IoT solutions with Azure Sphere, Azure RTOS and Azure IoT Hub"
   ms.date: 12/11/2020
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
   ms.custom: nextgen

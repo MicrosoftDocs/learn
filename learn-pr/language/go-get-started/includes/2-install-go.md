@@ -148,13 +148,17 @@ To configure your workspace, specify the location of your Go project folder in a
 
 1. Create a top-level folder for all your Go projects. For example, *C:\Projects\Go*.
 
-1. In a PowerShell prompt, run the following command to set the $GOPATH environment variable. Replace `<project-folder>` with the top-level project folder you created in the previous step.
+1. Open a PowerShell prompt, and then run the following cmdlet to set the $GOPATH environment variable.
+
+   Replace `<project-folder>` with the top-level project folder you created in the previous step.
 
    ```powershell
    [Environment]::SetEnvironmentVariable("GOPATH", "<project-folder>", "User")
    ```
 
-   After the set the variable value, close the prompt window.
+   We use PowerShell for this step, so we can call the prebuilt cmdlet to set the environment variable.
+   
+   After you set the $GOPATH value, close the PowerShell prompt.
 
 1. Confirm the $GOPATH variable shows your correct workspace location. In a new prompt window, run the following command:
 
