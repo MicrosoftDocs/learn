@@ -3,7 +3,7 @@ uid: learn.wwl.azure-ad-identity-protection
 metadata:
   title: Deploy Azure AD identity protection
   description: "Protect your identities in Azure AD once they are set up using Conditional Access, MFA, access reviews, and other capabilities."
-  ms.date: 09/28/2021
+  ms.date: 10/09/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
