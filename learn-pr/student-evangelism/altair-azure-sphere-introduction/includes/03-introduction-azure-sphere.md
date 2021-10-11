@@ -12,7 +12,7 @@ Together these components implement [The Seven Properties of Highly Secure Devic
 
 :::image type="content" source="../media/azure-sphere-end-to-end.png" alt-text="Diagram that shows Azure Sphere end-to-end." border="false":::
 
-## Azure Sphere Architecture
+## Azure Sphere architecture
 
 The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores, a Cortex-A7 that runs a Linux kernel, and two Cortex-M4 cores that can run bare-metal code, or a real-time operating system such as Azure RTOS or FreeRTOS.
 
