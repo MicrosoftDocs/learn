@@ -5,7 +5,7 @@ metadata:
   description: "This is a computer vision solution using Azure IoT Edge"
   ms.date: 02/12/2021
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
   ms.custom: nextgen
