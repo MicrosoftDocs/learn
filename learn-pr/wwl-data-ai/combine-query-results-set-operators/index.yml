@@ -3,7 +3,7 @@ uid: learn.wwl.combine-query-results-set-operators
 metadata:
   title: Combine query results with set operators
   description: "Combine query results with set operators"
-  ms.date: 09/16/2021
+  ms.date: 10/09/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Use the APPLY operator.
 prerequisites: |
   Before starting this module, you should have experience of using Transact-SQL queries to retrieve and filter data from a table in a database.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/query-combine-results-operators.svg
 levels:
 - advanced
 roles:
