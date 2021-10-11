@@ -5,7 +5,7 @@ metadata:
   description: Learn how to efficiently debug your Node.js JavaScript app by using Visual Studio Code to fix your bugs quickly. Use the interactive debugger within Visual Studio Code to analyze and fix your JavaScript applications.
   ms.date: 06/04/2020
   author: sinedied
-  ms.author: yolasors
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: nextgen

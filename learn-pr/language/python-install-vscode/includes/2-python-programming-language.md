@@ -25,9 +25,15 @@ To determine if your Windows computer already has Python 3:
     ```console
     python --version
     ```
-
+    
+    or
+    
+    ```console
+    py --version
+    ```
+    
     > [!NOTE]
-    > Running `python --version` may not return a value, or may return an error message stating *'python' is not recognized as an internal or external command, operable program or batch file.* This indicates Python is not installed on your Windows system.
+    > Running `python --version` or `py --version` may not return a value, or may return an error message stating *'python' is not recognized as an internal or external command, operable program or batch file.* This indicates Python is not installed on your Windows system.
 
     If you see the word `Python` with a set of numbers separated by `.` characters, some version of Python is installed. Here's an example of the output you might see:
 
