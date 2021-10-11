@@ -26,6 +26,7 @@ quiz:
     - content: Deployment scripts can't accept parameters.
       isCorrect: false
       explanation: Incorrect. Deployment scripts can accept arguments as well as environment variables.
+
   - content: |
       You've created a multistage pipeline that deploys an Azure SQL database. 
       In the build stage of your pipeline, you compile a small application that initializes the database with a schema.
@@ -41,6 +42,7 @@ quiz:
     - content: Ensure that AzCopy is installed on your pipeline agent.
       isCorrect: false
       explanation: Incorrect. AzCopy is used to manage storage accounts, not Azure SQL databases.
+
   - content: |
       Your Bicep file includes a module that deploys an App Service app.
       You need to access the app's host name from your pipeline but you can't currently do so.

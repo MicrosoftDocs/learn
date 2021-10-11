@@ -20,6 +20,12 @@ TODO
 
    :::code language="bicep" source="code/7-main.bicep" range="182-183" :::
 
+1. Commit but don't push
+    ```cmd
+    git add .
+    git commit -m "Add storage container"
+    ```
+
 ## Add SQL server and database to Bicep file
 
 1. Add parameters
@@ -82,6 +88,7 @@ TODO
 
 1. Open deploy.yml
 
+<!-- TODO the below don't include the reviewApiUrl etc -->
 1. Add parameter values to validate step
 
    :::code language="yaml" source="code/7-deploy.yml" range="23-29" highlight="5-7" :::
@@ -96,9 +103,9 @@ TODO
 
    :::code language="yaml" source="code/7-deploy.yml" range="78-86" highlight="7-9" :::
 
-1. Propagate SQL output values to variables
+1. Propagate storage and SQL output values to variables
 
-   :::code language="yaml" source="code/7-deploy.yml" range="87-98" highlight="5-6, 11-12" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="87-98" highlight="3-6, 9-12" :::
 
 ## Add DACPAC deployment step
 
@@ -120,4 +127,56 @@ TODO
 
 :::code language="yaml" source="code/7-deploy.yml" :::
 
+## Commit and push
+
+```cmd
+git add .
+git commit -m "Add SQL database"
+git push
+```
+
 ## Run pipeline and see smoke test pass
+
+1. Open pipeline and watch
+
+   All test stages complete successfully, including smoke test
+
+1. The *Preview (Production Environment)* stage pauses - needs permission to variable group
+
+   Preview stage completes successfully
+
+1. Then pauses again at *Deploy (Production Environment)* for environment permission
+
+   Deployment stage completes successfully
+
+1. The production smoke test passes
+
+1. Open website and see it's showing data for test, but not for prod
+
+## Clean up resources
+
+Now that you've completed the exercise, you can remove the resources so you aren't billed for them.
+
+In the Visual Studio Code terminal, run the following commands:
+
+::: zone pivot="cli"
+
+```azurecli
+az group delete --resource-group ToyWebsiteTest --yes --no-wait
+az group delete --resource-group ToyWebsiteProduction --yes --no-wait
+```
+
+The resource group is deleted in the background.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+```azurepowershell
+Remove-AzResourceGroup -Name ToyWebsiteTest -Force
+Remove-AzResourceGroup -Name ToyWebsiteProduction -Force
+```
+
+::: zone-end
+
+<!-- TODO can we avoid the approvals for var groups/environments somehow? -->

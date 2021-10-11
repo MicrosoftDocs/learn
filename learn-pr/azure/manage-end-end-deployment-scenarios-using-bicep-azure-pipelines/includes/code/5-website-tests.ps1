@@ -22,7 +22,6 @@ Describe 'Toy Website' {
 
     It 'Returns a success code from the health check endpoint' {
       $request = [System.Net.WebRequest]::Create("https://$HostName/health")
-      $request.AllowAutoRedirect = $false
       $request.GetResponse().StatusCode |
         Should -Be 200 -Because "the website and configuration should be healthy"
     }
