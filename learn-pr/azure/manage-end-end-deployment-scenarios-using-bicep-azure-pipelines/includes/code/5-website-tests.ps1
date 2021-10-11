@@ -6,7 +6,7 @@ param(
 
 Describe 'Toy Website' {
 
-      It 'Serves pages over HTTPS' {
+    It 'Serves pages over HTTPS' {
       $request = [System.Net.WebRequest]::Create("https://$HostName/")
       $request.AllowAutoRedirect = $false
       $request.GetResponse().StatusCode |

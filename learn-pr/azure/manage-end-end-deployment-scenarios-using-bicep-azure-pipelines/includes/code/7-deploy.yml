@@ -25,6 +25,8 @@ stages:
                 --resource-group $(ResourceGroupName) \
                 --template-file deploy/main.bicep \
                 --parameters environmentType=$(EnvironmentType) \
+                             reviewApiUrl=$(ReviewApiUrl) \
+                             reviewApiKey=$(ReviewApiKey) \
                              sqlServerAdministratorLogin=$(SqlServerAdministratorLogin) \
                              sqlServerAdministratorLoginPassword=$(SqlServerAdministratorLoginPassword)
 
@@ -49,6 +51,8 @@ stages:
                 --resource-group $(ResourceGroupName) \
                 --template-file deploy/main.bicep \
                 --parameters environmentType=$(EnvironmentType) \
+                             reviewApiUrl=$(ReviewApiUrl) \
+                             reviewApiKey=$(ReviewApiKey) \
                              sqlServerAdministratorLogin=$(SqlServerAdministratorLogin) \
                              sqlServerAdministratorLoginPassword=$(SqlServerAdministratorLoginPassword)
 
@@ -82,6 +86,8 @@ stages:
                     --resource-group $(ResourceGroupName) \
                     --template-file deploy/main.bicep \
                     --parameters environmentType=$(EnvironmentType) \
+                                 reviewApiUrl=$(ReviewApiUrl) \
+                                 reviewApiKey=$(ReviewApiKey) \
                                  sqlServerAdministratorLogin=$(SqlServerAdministratorLogin) \
                                  sqlServerAdministratorLoginPassword=$(SqlServerAdministratorLoginPassword))
                   appServiceAppName=$(echo $deploymentOutput | jq -r '.properties.outputs.appServiceAppName.value')

@@ -58,7 +58,7 @@ TODO
 
 ## Add build steps for database project
 
-1. Add build.yml file
+1. Open build.yml file
 
 1. Add step to build and publish the Visual Studio database project
 
@@ -70,58 +70,57 @@ TODO
 
    | Name | Value |
    |-|-|
-   | SqlServerAdministratorLogin | TestToyCompanyAdmin |
-   | SqlServerAdministratorLoginPassword | TODO |
+   | SqlServerAdministratorLogin | ToyCompanyAdmin |
+   | SqlServerAdministratorLoginPassword | SecurePassword!111 |
 
-   Make password a secret
+   Make password a secret - TODO screenshot
+
+   :::image type="content" source="../media/7-variable-group-edit.png" alt-text="TODO":::
 
 1. Add to ToyWebsiteTest
 
    | Name | Value |
    |-|-|
-   | SqlServerAdministratorLogin | ToyCompanyAdmin |
-   | SqlServerAdministratorLoginPassword | TODO |
-
-   Make password a secret
+   | SqlServerAdministratorLogin | TestToyCompanyAdmin |
+   | SqlServerAdministratorLoginPassword | SecurePassword!999 |
 
 ## Add parameter values to validate and preview stages
 
 1. Open deploy.yml
 
-<!-- TODO the below don't include the reviewApiUrl etc -->
 1. Add parameter values to validate step
 
-   :::code language="yaml" source="code/7-deploy.yml" range="23-29" highlight="5-7" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="23-31" highlight="7-9" :::
 
 1. Add parameter values to what-if step
 
-   :::code language="yaml" source="code/7-deploy.yml" range="47-53" highlight="5-7" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="49-57" highlight="7-9" :::
 
 ## Update deploy stage
 
 1. Add parameter values to deploy step
 
-   :::code language="yaml" source="code/7-deploy.yml" range="78-86" highlight="7-9" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="82-92" highlight="9-11" :::
 
 1. Propagate storage and SQL output values to variables
 
-   :::code language="yaml" source="code/7-deploy.yml" range="87-98" highlight="3-6, 9-12" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="93-104" highlight="3-6, 9-12" :::
 
 ## Add DACPAC deployment step
 
 1. Add step to deploy DACPAC file
 
-   :::code language="yaml" source="code/7-deploy.yml" range="111-123" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="117-129" :::
 
 ## Add sample data to test environments
 
 1. Add step to seed database, and condition
 
-   :::code language="yaml" source="code/7-deploy.yml" range="125-137" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="131-143" :::
 
 1. Add step to upload sample images by using the Azure CLI
 
-   :::code language="yaml" source="code/7-deploy.yml" range="139-150" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="145-156" :::
 
 ## Verify deploy.yml
 
@@ -139,19 +138,23 @@ git push
 
 1. Open pipeline and watch
 
-   All test stages complete successfully, including smoke test
+   All test stages complete successfully, including smoke test. The *Preview (Production Environment)* stage pauses - needs permission to variable group
 
-1. The *Preview (Production Environment)* stage pauses - needs permission to variable group
+1. Select View > Permit > Permit
 
-   Preview stage completes successfully
+   Preview stage completes successfully, then pauses again at *Deploy (Production Environment)* for environment permission
 
-1. Then pauses again at *Deploy (Production Environment)* for environment permission
+1. Select View > Permit > Permit
 
-   Deployment stage completes successfully
+   Deployment stage completes successfully, and the production smoke test stage passes
 
-1. The production smoke test passes
+1. Open website for test and see it's showing the sample data
 
-1. Open website and see it's showing data for test, but not for prod
+   <!-- TODO screenshots -->
+
+1. Open website for prod and see it doesn't show sample data
+
+   <!-- TODO screenshots -->
 
 ## Clean up resources
 
@@ -178,5 +181,3 @@ Remove-AzResourceGroup -Name ToyWebsiteProduction -Force
 ```
 
 ::: zone-end
-
-<!-- TODO can we avoid the approvals for var groups/environments somehow? -->

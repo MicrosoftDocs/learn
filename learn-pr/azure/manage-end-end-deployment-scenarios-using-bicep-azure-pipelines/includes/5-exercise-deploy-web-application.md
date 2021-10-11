@@ -14,6 +14,8 @@ TODO
 
 1. Create build.yml
 
+   :::image type="content" source="../media/5-visual-studio-code-build-yml-file.png" alt-text="TODO":::
+
 1. Add content
 
    :::code language="yaml" source="code/5-build.yml" :::
@@ -66,16 +68,30 @@ git push
 
 1. Open pipeline and watch
 
-   Build stage completes successfully
+   Build stage completes successfully. The *Validate (Test Environment)* stage pauses - needs permission to variable group
 
-1. The *Validate (Test Environment)* stage pauses - needs permission to variable group
+1. Select View
 
-   Validate stage completes successfully
+   :::image type="content" source="../media/5-pipeline-run-validate-permission.png" alt-text="TODO":::
 
-1. Then pauses again at *Deploy (Test Environment)* for environment permission
+1. Select Permit
 
-   Deployment stage completes successfully
+   :::image type="content" source="../media/5-pipeline-run-validate-approve-1.png" alt-text="TODO":::
 
-1. The *Smoke Test (Test Environment)* stage fails
+1. Select Permit
 
-   Look at test tab. Getting errors. This is because the SQL server isn't available. You'll fix this shortly.
+   :::image type="content" source="../media/5-pipeline-run-validate-approve-2.png" alt-text="TODO":::
+
+   Validate stage completes successfully, then pauses again at *Deploy (Test Environment)* for environment permission
+
+1. Select View, then select Permit > Permit
+
+   :::image type="content" source="../media/5-pipeline-run-deploy-permission.png" alt-text="TODO":::
+
+   Deployment stage completes successfully, but the *Smoke Test (Test Environment)* stage fails
+
+   <!-- TODO smoke test failing for the wrong reason? -->
+
+   :::image type="content" source="../media/5-smoke-test-failure.png" alt-text="TODO":::
+
+1. Look at test tab. Getting errors. This is because the SQL server isn't available. You'll fix this shortly.
