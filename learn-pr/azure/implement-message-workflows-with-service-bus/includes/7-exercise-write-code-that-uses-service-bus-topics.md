@@ -13,7 +13,7 @@ code .
 
 To complete the component that sends messages about sales performance, follow these steps:
 
-1. In the editor, open **performancemessagesender/Program.cs** and locate the following line of code.
+1. In the Azure Cloud Shell editor, open **performancemessagesender/Program.cs** and locate the following line of code.
 
     ```C#
     const string ServiceBusConnectionString = "";
@@ -21,7 +21,7 @@ To complete the component that sends messages about sales performance, follow th
 
     Paste the connection string that you saved in the previous exercise between the quotation marks.
 
-1. Locate the `SendPerformanceMessageAsync()` method.
+1. Locate the `SendPerformanceMessageAsync()` method. (Hint: located at or near line 26.)
 
 1. Within that method, locate the following line of code.
 
@@ -29,7 +29,7 @@ To complete the component that sends messages about sales performance, follow th
     // Create a Topic Client here
     ```
 
-1. To create a topic client, replace that line of code with the following code.
+1. Replace that line of code with the following code.
 
     ```C#
     topicClient = new TopicClient(ServiceBusConnectionString, TopicName);
@@ -41,20 +41,20 @@ To complete the component that sends messages about sales performance, follow th
     // Create and send a message here
     ```
 
-1. To create and format a message for the queue, replace that line of code with the following code.
+1. Replace that line of code with the following code.
 
     ```C#
     string messageBody = $"Total sales for Brazil in August: $13m.";
     var message = new Message(Encoding.UTF8.GetBytes(messageBody));
     ```
 
-1. To display the message in the console, on the next line, add the following code.
+1. To display the message in the console, insert the following code on the next line.
 
     ```C#
     Console.WriteLine($"Sending message: {messageBody}");
     ```
 
-1. To send the message to the queue, on the next line, add the following code.
+1. To send the message to the queue, insert the following code on the next line.
 
     ```C#
     await topicClient.SendAsync(message);
@@ -66,7 +66,7 @@ To complete the component that sends messages about sales performance, follow th
     // Close the connection to the topic here
     ```
 
-1. To close the connection to Service Bus, replace that line of code with the following code.
+1. Replace that line of code with the following code.
 
     ```C#
     await topicClient.CloseAsync();
@@ -118,7 +118,7 @@ To complete the component that sends messages about sales performance, follow th
     }
     ```
 
-1. Save the file either through the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. Save the file using the editor's **&#9776;** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
 ## Send a message to the topic
 
@@ -141,7 +141,7 @@ To complete the component that sends messages about sales performance, follow th
         --query messageCount
     ```
 
-    If you replace `Americas`with `EuropeAndAfrica`, you should see that both subscriptions have the same number of messages.
+    If you replace `Americas` with `EuropeAndAsia`, and run the command again, you should see that both subscriptions have the same number of messages.
 
 ## Write code that receives a message from a topic subscription
 
@@ -281,7 +281,7 @@ To complete the component that retrieves messages about sales performance, follo
     }
     ```
 
-1. Save the file either through the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. Save the file using either the **&#9776;** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
 ## Retrieve a message from a topic subscription
 
@@ -291,7 +291,7 @@ To complete the component that retrieves messages about sales performance, follo
     dotnet run -p performancemessagereceiver
     ```
 
-1. When the program has printed notifications that it is receiving messages, press <kbd>Enter</kbd> to stop the app. Then, run the following command to confirm that there are zero remaining messages in the `Americas` subscription. Be sure to replace \<namespace-name\> with your Service Bus Namespace.
+1. When the program has returned notifications that it is receiving messages, press <kbd>Enter</kbd> to stop the app. Then, run the following command to confirm that there are zero remaining messages in the `Americas` subscription. Be sure to replace \<namespace-name\> with your Service Bus Namespace.
 
     ```azurecli
     az servicebus topic subscription show \
@@ -302,4 +302,4 @@ To complete the component that retrieves messages about sales performance, follo
         --query messageCount
     ```
 
-1. If you replace `Americas` with `EuropeAndAfrica`, you'll see that the message count has not changed. The application only received messages from the `Americas` subscription.
+1. If you replace `Americas` with `EuropeAndAsia`, you'll see that the message count has not changed. The application only received messages from the `Americas` subscription.
