@@ -23,7 +23,7 @@ If you completed previous exercise, you'll find a cache copy of the Helm chart i
 
     ```output
     -rw-r--r-- 1 user user   30621 Oct 11 17:25 aspnet-core-1.3.18.tgz
-    -rw-r--r-- 1 user user    1198 Oct 11 17:04 azure-marketplace-charts.txt
+    -rw-r--r-- 1 user user    1391 Oct 11 17:04 azure-marketplace-charts.txt
     -rw-r--r-- 1 user user 4834112 Oct 11 17:04 azure-marketplace-index.yaml
     ```
 
@@ -131,12 +131,10 @@ If you completed previous exercise, you'll find a cache copy of the Helm chart i
     ```bash
     drone-webapp-chart/
     ...
-    drone-webapp-chart/charts
+    drone-webapp-chart/Chart.yaml
     drone-webapp-chart/charts/common-1.10.0.tgz
-    drone-webapp-chart/README.md
-    drone-webapp-chart/templates
     drone-webapp-chart/templates/deployment.yaml
-    ...
+    drone-webapp-chart/templates/...
     drone-webapp-chart/values.yaml
     ```
 
@@ -153,25 +151,20 @@ If you completed previous exercise, you'll find a cache copy of the Helm chart i
 
     ```bash
     drone-webapp-chart/
+    drone-webapp-chart/Chart.yaml
     ...
-    drone-webapp-chart/charts
     drone-webapp-chart/charts/common
     drone-webapp-chart/charts/common/.helmignore
     drone-webapp-chart/charts/common/Chart.yaml
     drone-webapp-chart/charts/common/README.md
     drone-webapp-chart/charts/common/templates
-    drone-webapp-chart/charts/common/templates/validations/...
     drone-webapp-chart/charts/common/templates/_affinities.tpl
     drone-webapp-chart/charts/common/templates/_capabilities.tpl
     drone-webapp-chart/charts/common/templates/_errors.tpl
-    ...
-    drone-webapp-chart/charts/common/templates/_tplvalues.tpl
-    drone-webapp-chart/charts/common/templates/_utils.tpl
-    drone-webapp-chart/charts/common/templates/_warnings.tpl
+    drone-webapp-chart/charts/common/templates/validations/...
+    drone-webapp-chart/charts/common/templates/...
     drone-webapp-chart/charts/common/values.yaml
     drone-webapp-chart/charts/common-1.10.0.tgz
-    drone-webapp-chart/README.md
-    drone-webapp-chart/templates
     drone-webapp-chart/templates/deployment.yaml
     ...
     drone-webapp-chart/values.yaml

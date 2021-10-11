@@ -56,7 +56,7 @@ apiVersion: extensions/v1
 kind: Ingress
 metadata:
   name: ...
-  labels: ...
+  labels:
     ...
   annotations:
     ...
@@ -78,7 +78,7 @@ apiVersion: extensions/v1
 kind: Ingress
 metadata:
   name: ...
-  labels: ...
+  labels:
     ...
   annotations:
     ...
@@ -241,7 +241,7 @@ description: A Helm chart for Kubernetes
 
 type: application
 
-version: 0.2.0.
+version: 0.2.0
 appVersion: 1.0.0
 
 registry: "my-acr-registry.azurecr.io"

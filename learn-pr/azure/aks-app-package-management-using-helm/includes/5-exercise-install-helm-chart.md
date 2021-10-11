@@ -137,7 +137,7 @@ In this exercise, you'll add a Helm repository to your Helm client and install a
 1. Validate that the pod is deployed by running by using the `kubectl get pods` command.
 
     ```bash
-    kubectl get pods -o wide
+    kubectl get pods -o wide -w
     ```
 
     The command should return a result similar to the following output. Use `Ctrl+c` to exit the command once done.
