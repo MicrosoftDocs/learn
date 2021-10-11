@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/06/2021
+  ms.date: 10/11/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "Hyper-V snapshot support"
       isCorrect: false
-      explanation: "Incorrect. Azure provides for a 60% cost reduction when compared to traditional, on-premise storage systems. By using SAP technologies on Azure, customers can realize 40-75% TCO cost savings in Dev and Test environments."
+      explanation: "Sorry, that is incorrect."
     - content: "Guaranteed 100% uptime"
       isCorrect: false
-      explanation: "Incorrect. Azure provides for a 60% cost reduction when compared to traditional, on-premise storage systems. By using SAP technologies on Azure, customers can realize 40-75% TCO cost savings in Dev and Test environments."
+      explanation: "Sorry, that is incorrect."
     - content: "Lower TCO"
       isCorrect: true
       explanation: "Correct. Azure provides for a 60% cost reduction when compared to traditional, on-premise storage systems. By using SAP technologies on Azure, customers can realize 40-75% TCO cost savings in Dev and Test environments."
@@ -32,10 +32,10 @@ quiz:
     choices:
     - content: "Azure Data Lake"
       isCorrect: false
-      explanation: "Incorrect. Azure Data Factory allows you to build advanced pipelines to automate data movement and transformation. SAP connectors in Azure Data Factory often use the integration runtime to communicate with the SAP system, and so the installation of this component is mandatory to enable data replication."
+      explanation: "Sorry, that is incorrect."
     - content: "Azure Data Factory"
       isCorrect: true
       explanation: "Correct. Azure Data Factory allows you to build advanced pipelines to automate data movement and transformation. SAP connectors in Azure Data Factory often use the integration runtime to communicate with the SAP system, and so the installation of this component is mandatory to enable data replication."
     - content: "Microsoft Power BI"
       isCorrect: false
-      explanation: "Incorrect. Azure Data Factory allows you to build advanced pipelines to automate data movement and transformation. SAP connectors in Azure Data Factory often use the integration runtime to communicate with the SAP system, and so the installation of this component is mandatory to enable data replication."
+      explanation: "Sorry, that is incorrect."
