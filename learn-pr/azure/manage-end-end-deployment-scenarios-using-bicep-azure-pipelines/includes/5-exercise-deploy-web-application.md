@@ -8,7 +8,8 @@ Here, you add a new job definition that contains the steps required to build the
 
 1. In the *deploy/pipeline-templates* folder, create a new file named *build.yml*.
 
-   :::image type="content" source="../media/5-visual-studio-code-build-yml-file.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-visual-studio-code-build-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the pipeline-templates folder and the build dot Y M L file shown.":::
+   <!-- TODO redo SS -->
 
 1. Add the following content to the *build.yml* pipeline template file.
 
@@ -96,30 +97,30 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
 1. Select **View**.
 
-   :::image type="content" source="../media/5-pipeline-run-validate-permission.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-pipeline-run-validate-permission.png" alt-text="Screenshot of Azure DevOps showing the pipeline run paused at the Validate stage. The pipeline indicates that permission is required to continue. The View button is highlighted.":::
 
 1. Select **Permit**.
 
-   :::image type="content" source="../media/5-pipeline-run-validate-approve-1.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-pipeline-run-validate-approve-1.png" alt-text="Screenshot of Azure DevOps showing that the pipeline needs permission to use the ToyWebsiteTest variable group. The Permit button is highlighted.":::
 
 1. Select **Permit**.
 
-   :::image type="content" source="../media/5-pipeline-run-validate-approve-2.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-pipeline-run-validate-approve-2.png" alt-text="Screenshot of Azure DevOps showing the permission confirmation interface. The Permit button is highlighted.":::
 
    The *Validate (Test Environment)* stage completes successfully. Then, the pipeline pauses again - this time before the *Deploy (Test Environment)* stage.
 
 1. Select **View**, then select **Permit** > **Permit**.
 
-   :::image type="content" source="../media/5-pipeline-run-deploy-permission.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-pipeline-run-deploy-permission.png" alt-text="Screenshot of Azure DevOps showing the pipeline run paused at the Deploy stage. The pipeline indicates that permission is required to continue. The View button is highlighted.":::
 
    The *Deploy (Test Environment)* stage completes successfully. The pipeline then runs the *Smoke Test (Test Environment)* stage, but the smoke test stage fails:
 
-   :::image type="content" source="../media/5-smoke-test-failure.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-smoke-test-failure.png" alt-text="Screenshot of Azure DevOps showing the pipeline run's Smoke Test stage for the test environment. The status shows the stage failed.":::
 
 1. Select the **Smoke Test (Test Environment)** stage to open the pipeline log.
 
 1. Select the **Run smoke tests** step to view the appropriate part of the pipeline log:
 
-   :::image type="content" source="../media/5-smoke-test-failure-log.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-smoke-test-failure-log.png" alt-text="Screenshot of Azure DevOps showing the pipeline run log, with the output of the smoke test displayed. The J S O N health test result is highlighted.":::
 
    Notice that the pipeline log includes the health check response. The response indicates that there's a problem with the application's communication with Azure SQL Database. You haven't yet configured the database, so the website can't access it. You'll fix this soon.

@@ -51,7 +51,9 @@ Your Bicep file doesn't currently deploy an Azure SQL logical server or database
 
    :::code language="bicep" source="code/7-main.bicep" range="38-39" :::
 
-   <!-- TODO warning - bad practice -->
+   > [!NOTE]
+   > For simplicity, the application uses the administrator login and password to access the database. This isn't good practice for a production solution, though. It's better to use dedicated identities to access the database, and grant that identity the minimum permissions needed by the application. We link to more information in the summary.
+   <!-- TODO find a good link -->
 
 1. Update the `environmentConfigurationMap` variable to define the SKUs to use for your database for each environment:
 
@@ -100,7 +102,7 @@ Your website's developers have prepared a Visual Studio database project that de
 
 1. Save the variable group.
 
-   :::image type="content" source="../media/7-variable-group-edit.png" alt-text="TODO":::
+   :::image type="content" source="../media/7-variable-group-edit.png" alt-text="Screenshot of the production variable group, with the Save button highlighted.":::
 
 1. Repeat the process to add the following variables to the **ToyWebsiteTest** variable group:
 
@@ -163,6 +165,8 @@ Here, you define the steps required to deploy the database components of your we
 
 1. Save your changes to the file.
 
+1. **TODO TEMPORARY: Add the sample data to the repo here**
+
 1. Commit and push your changes to your Git repository. Run the following commands in the Visual Studio Code terminal:
 
     ```cmd
@@ -197,7 +201,7 @@ Here, you define the steps required to deploy the database components of your we
 
    <!-- TODO SS -->
 
-   Hold down the <kbd>Ctrl<kbd> key (<kbd>Command</kbd> on macOS) and select the URL of the App Service app to open it in a new browser tab.
+   Hold down the <kbd>Ctrl</kbd> key (<kbd>⌘</kbd> on macOS) and select the URL of the App Service app to open it in a new browser tab. <!-- TODO confirm -->
 
 1. Select **Toys**.
 

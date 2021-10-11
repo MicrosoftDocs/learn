@@ -196,4 +196,5 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
    If the resource group list doesn't update, refresh the page in your browser and try again.
 
-<!-- TODO decide whether to add prod environment approval -->
+> [!NOTE]
+> In previous modules in this learning path, you added an approval check to your production environment. For simplicity, we skip the approval check in this module. However, you can add the approval check yourself if you'd like.
