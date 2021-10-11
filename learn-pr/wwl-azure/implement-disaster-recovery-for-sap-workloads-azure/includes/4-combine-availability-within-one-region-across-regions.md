@@ -16,7 +16,7 @@ SAP introduced multi-target system replication with HANA 2.0 SPS3. Multi-target 
 
 If the organization has requirements for high availability readiness in the second (DR) Azure region, then the architecture would look as follows:
 
-:::image type="content" source="../media/three-vms-over-two-regions-multi-target-ha-bf40d221.png" alt-text="Diagram of three VMs over two regions multi-target":::
+:::image type="content" source="../media/three-vms-over-two-regions-multi-target-ha-bf40d221.png" alt-text="Diagram of four VMs over two regions multi-target, high availability":::
 
 
 Using `logreplay` as operation mode, this configuration provides an RPO = 0, with low RTO, within the primary region. The configuration also provides decent RPO if a move to the second region is involved. The RTO times in the second region are dependent on whether data is preloaded. Many customers use the VM in the secondary region to run a test system. In that use case, the data can't be preloaded.
