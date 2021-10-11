@@ -6,11 +6,13 @@ metadata:
   description: Check your knowledge.
   ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 durationInMinutes: 2 
 content: |
+  Choose the best response for each question. Then select **Check your answers**.
 quiz:
   questions:
   - content: "Which does the Azure Sphere microcontroller consist of?"

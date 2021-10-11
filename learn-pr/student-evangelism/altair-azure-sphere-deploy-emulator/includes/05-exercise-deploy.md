@@ -179,9 +179,9 @@ Ignore this step unless you have built the Altair front panel kit.
 
 1. Select **CMake: [Release]: Ready** from the Visual Studio Code status bar.
 
-   :::image type="content" source="../media/visual-studio-code-start-application.png" alt-text="The illustration shows CMake status.":::
+   :::image type="content" source="../media/visual-studio-code-start-application.png" alt-text="The illustration shows CMake status." lightbox="../media/visual-studio-code-start-application.png":::
 
-1. From Visual Studio Code, press <kbd>ctrl+F5</kbd> to build, deploy, and start the application on  the Azure Sphere device.
+1. From Visual Studio Code, press **ctrl+F5** to build, deploy, and start the application on  the Azure Sphere device.
 
 ### View debugger output
 

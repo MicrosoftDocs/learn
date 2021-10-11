@@ -6,9 +6,10 @@ metadata:
   description: Summary of how to deploy the Altair emulator to your Azure Sphere device.
   ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 durationInMinutes: 1 
 content: |
   [!include[](includes/07-summary.md)]
