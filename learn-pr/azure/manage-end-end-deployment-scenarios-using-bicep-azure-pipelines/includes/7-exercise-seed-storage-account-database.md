@@ -2,25 +2,28 @@ TODO
 
 ## Add storage container
 
-1. Open main.bicep
+Your Bicep file already defines a storage account, but it doesn't define a blob container. Here, you add a blob container to your Bicep file. You also provide the name of the storage account and blob container to the application by using its configuration settings. That way, the app knows which storage account to access.
 
-1. Add variable
+1. In Visual Studio Code, open the *main.bicep* file in the *deploy* folder.
+
+1. Below the variable definitions, add a new variable definition for the blob storage container's name:
 
    :::code language="bicep" source="code/7-main.bicep" range="34" :::
 
-1. Add config settings to app
-
-   :::code language="bicep" source="code/7-main.bicep" range="78-113, 118-121" highlight="25-36" :::
-
-1. Add nested resources
+1. Update the `storageAccount` resource to define the blob container:
 
    :::code language="bicep" source="code/7-main.bicep" range="134-153" highlight="9-19" :::
 
-1. Add outputs
+1. Update the app's `appSettings` property to add two new application settings - one for the storage account name, and one for the blob container's name:
+
+   :::code language="bicep" source="code/7-main.bicep" range="78-113, 118-121" highlight="25-36" :::
+
+1. At the bottom of the file, add new outputs to expose the names of the storage account and blob container:
 
    :::code language="bicep" source="code/7-main.bicep" range="182-183" :::
 
-1. Commit but don't push
+1. Commit your changes to your Git repository, but don't push them yet. Run the following commands in the Visual Studio Code terminal:
+
     ```cmd
     git add .
     git commit -m "Add storage container"
@@ -28,33 +31,39 @@ TODO
 
 ## Add SQL server and database to Bicep file
 
-1. Add parameters
+Your Bicep file doesn't currently deploy an Azure SQL logical server or database. Here, you add these resources to your Bicep file.
+
+1. In the *main.bicep* file, add two new parameters below the `reviewApiKey` parameter near the top of the file:
 
    :::code language="bicep" source="code/7-main.bicep" range="22-27" :::
 
-1. Add variables for names
+1. Below the variable definitions, add new variables to define the names of your Azure SQL logical server and database:
 
    :::code language="bicep" source="code/7-main.bicep" range="35-36" :::
 
-1. Add connection string variable
-
-   :::code language="bicep" source="code/7-main.bicep" range="38-39" :::
-
-1. Add SKUs
-
-   :::code language="bicep" source="code/7-main.bicep" range="42-70" highlight="9-14, 22-27" :::
-
-1. Add setting to app
-
-   :::code language="bicep" source="code/7-main.bicep" range="78-120" highlight="37-40" :::
-
-1. Add resources
+1. Near the bottom of the file, above the outputs, add the Azure SQL logical server and database resources:
 
    :::code language="bicep" source="code/7-main.bicep" range="155-178" :::
 
-1. Add outputs
+1. Below the variables you just added, define a new variable that creates a connection string for the application to access the database:
+
+   :::code language="bicep" source="code/7-main.bicep" range="38-39" :::
+
+   <!-- TODO warning - bad practice -->
+
+1. Update the `environmentConfigurationMap` variable to define the SKUs to use for your database for each environment:
+
+   :::code language="bicep" source="code/7-main.bicep" range="42-70" highlight="9-14, 22-27" :::
+
+1. Add an additional app setting to your App Service app for the database connection string:
+
+   :::code language="bicep" source="code/7-main.bicep" range="78-120" highlight="37-40" :::
+
+1. At the bottom of the file, add outputs to expose the host name of the Azure SQL logical server and the name of the database:
 
    :::code language="bicep" source="code/7-main.bicep" range="180-185" highlight="5-6" :::
+
+<!-- TODO here -->
 
 ## Add build steps for database project
 
