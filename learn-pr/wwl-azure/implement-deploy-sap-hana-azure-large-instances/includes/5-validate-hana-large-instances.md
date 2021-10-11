@@ -94,7 +94,7 @@ The storage layout for SAP HANA on Azure (Large Instances) is configured by SAP 
     HANA data
   :::column-end:::
   :::column:::
-    **/hana/data/SID/mnt0000<m>**
+    `/hana/data/SID/mnt0000<m>`
   :::column-end:::
   :::column:::
     Storage IP:/hana\_data\_SID\_mnt00001\_tenant\_vol
@@ -105,7 +105,7 @@ The storage layout for SAP HANA on Azure (Large Instances) is configured by SAP 
     HANA log
   :::column-end:::
   :::column:::
-    **/hana/log/SID/mnt0000<m>**
+    `/hana/log/SID/mnt0000<m>`
   :::column-end:::
   :::column:::
     Storage IP:/hana\_log\_SID\_mnt00001\_tenant\_vol
@@ -116,7 +116,7 @@ The storage layout for SAP HANA on Azure (Large Instances) is configured by SAP 
     HANA log backup
   :::column-end:::
   :::column:::
-    **/hana/log/backups**
+    `/hana/log/backups`
   :::column-end:::
   :::column:::
     Storage IP:/hana\_log\_backups\_SID\_mnt00001\_tenant\_vol
@@ -127,7 +127,7 @@ The storage layout for SAP HANA on Azure (Large Instances) is configured by SAP 
     HANA shared
   :::column-end:::
   :::column:::
-    **/hana/shared/SID**
+    `/hana/shared/SID`
   :::column-end:::
   :::column:::
     Storage IP:/hana\_shared\_SID\_mnt00001\_tenant\_vol/shared
@@ -138,7 +138,7 @@ The storage layout for SAP HANA on Azure (Large Instances) is configured by SAP 
     usr/sap
   :::column-end:::
   :::column:::
-    **/usr/sap/SID**
+    `/usr/sap/SID`
   :::column-end:::
   :::column:::
     Storage IP:/hana\_shared\_SID\_mnt00001\_tenant\_vol/usr\_sap
@@ -190,4 +190,4 @@ To prevent HANA from trying to grow data files beyond the 16 TB file size limit 
 With SAP HANA 2.0, the hdbparam framework has been deprecated. As a result, the parameters must be set by using SQL commands. For more information, see [SAP Note \#2399079](https://launchpad.support.sap.com/#/notes/2399079).
 
 > [!NOTE]
-> When deploying SAP HANA on Azure (Large Instances), take into account the exceptions documented at \[SAP HANA (Large Instances) network architecture\](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/hana-network-architecture\#networking-architecture-for-hana-large-instance)
+> When deploying SAP HANA on Azure (Large Instances), take into account the exceptions documented at [SAP HANA (Large Instances) network architecture](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/hana-network-architecture#networking-architecture-for-hana-large-instance)
