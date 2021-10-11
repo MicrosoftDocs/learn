@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.containerize-deploy-java-app-aks.build-and-run
-title: Build and Run a Docker image
+title: Build and run a Docker image
 metadata:
-  unitType: Build and Run a Docker image
-  title: Build and Run a Docker image
-  description: Build and Run a Docker image
+  unitType: Build and run a Docker image
+  title: Build and run a Docker image
+  description: Build and run a Docker image
   ms.date: 9/28/2021
   author: chtrembl
   ms.author: chtrembl

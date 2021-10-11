@@ -22,7 +22,7 @@ The Docker runtime is used to build, pull, run, and push Docker images. The belo
 First you'll clone the Turkish Airlines repo. 
 
 > [!NOTE]
-> If the Azure Kubernetes Service creation has successfully completed in your CLI tab, use that one, otherwise if its still running, open a new tab and cd to the location of where you prefer to clone Turkish Airline.
+> If the Azure Kubernetes Service creation has successfully completed in your CLI tab, use that one, otherwise if it's still running, open a new tab and cd to the location of where you prefer to clone Turkish Airline.
 
 Run the following command in your CLI:
 
@@ -54,11 +54,11 @@ Maven should have successfully built the Turkish Airlines Web Application Archiv
 [INFO] ------------------------------------------------------------------------
 ```
 
-Imagine you’re that Java developer and you have just built this TurkishAirlines-0.0.1-SNAPSHOT.war, you're next step is to probably work with the operation engineers to get this artifact deployed to an on-premises server and/or virtual machine. This effort requires that the servers and/or virtual machines, are to be available and configured with the required dependencies for Turkish Airlines to start and run successfully. Both of which are challenging and time consuming, especially on demand when increased load is hitting your application.
+Imagine you’re that Java developer and you have just built this TurkishAirlines-0.0.1-SNAPSHOT.war, your next step is to probably work with the operation engineers to get this artifact deployed to an on-premises server and/or virtual machine. This effort requires that the servers and/or virtual machines, are to be available and configured with the required dependencies for Turkish Airlines to start and run successfully. Both of which are challenging and time consuming, especially on demand when increased load is hitting your application.
 
 ## Construct a Docker file
 
-At this point, your ready to construct a Docker file. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble a container image, each of which are a layer that build on top of each other.
+At this point, you're ready to construct a Docker file. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble a container image, each of which are a layer that build on top of each other.
 
 For example, Turkish Airlines needs to deploy to and run inside of an application server, to process HTTP requests and manage user sessions. An application server is not packaged inside of the TurkishAirlines-0.0.1-SNAPSHOT.war, it is an external dependency needed at runtime by the TurkishAirlines-0.0.1-SNAPSHOT.war. If this was a traditional, non containerized deployment, operation engineers would install and configure an application server on some physical server and/or virtual machine, before deploying the TurkishAirlines-0.0.1-SNAPSHOT.war to it. These operation engineers would also need to ensure that the JDK being used on your machine (what mvn clean install was using) is in fact the same JRE being used by the application server. Managing these dependencies is challenging.
 

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.containerize-deploy-java-app-aks.push
-title: Push a Docker Image to Azure Container Registry
+title: Push Docker image to Azure Container Registry
 metadata:
-  unitType: Push a Docker Image to Azure Container Registry
-  title: Push a Docker Image to Azure Container Registry
-  description: Push a Docker Image to Azure Container Registry
+  unitType: Push Docker image to Azure Container Registry
+  title: Push Docker image to Azure Container Registry
+  description: Push Docker image to Azure Container Registry
   ms.date: 9/28/2021
   author: chtrembl
   ms.author: chtrembl
