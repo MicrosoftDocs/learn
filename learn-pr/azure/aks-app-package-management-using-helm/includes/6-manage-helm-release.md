@@ -276,7 +276,7 @@ Here is an example of the same history command run, following a new version inst
 
 ```output
 REVISION        UPDATED                         STATUS          CHART                   APP VERSION     DESCRIPTION
-1               Mon Oct 11 17:25:33 2021        deployed        aspnet-core-1.3.18      3.1.19          Install complete
+1               Mon Oct 11 17:25:33 2021        superseded      aspnet-core-1.3.18      3.1.19          Install complete
 2               Mon Oct 11 17:35:13 2021        deployed        aspnet-core-1.3.18      3.1.19          Upgrade complete
 ```
 
