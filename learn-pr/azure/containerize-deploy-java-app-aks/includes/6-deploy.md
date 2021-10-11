@@ -59,7 +59,7 @@ spec:
 ```
 
 > [!NOTE]
-> Optionally, the deployment_solution.yml in the root of your project contains the contents needed.
+> Optionally, the deployment_solution.yml in the root of your project contains the contents needed, you may find it easier to rename/update the contents of that file.
 
 In the deployment.yml above you'll notice this deployment.yml contains a Deployment and a Service. The deployment is used to administer a set of pods while the service is used to allow network access to the pods. You'll notice the pods are configured to pull a single image, the ```<AZ_CONTAINER_REGISTRY>.azurecr.io/turkishairlines:latest``` from Azure Container Registry. You'll also notice the the service is configured to allow incoming HTTP pod traffic to port 8080, similarly to the way you ran the Docker image locally with the ```-p``` port argument.
 
@@ -79,7 +79,7 @@ az aks install-cli
 Configure kubectl to connect to your Kubernetes cluster using the az aks get-credentials command. Run the following command in your CLI:
 
 ```bash
-az aks get-credentials --resource-group $AZ_RESOURCE_GROUP --name $AZ_KUBERNETES_CLUSTER_DNS_PREFIX
+az aks get-credentials --resource-group $AZ_RESOURCE_GROUP --name $AZ_KUBERNETES_CLUSTER
 ```
 
 You will see the following:

@@ -76,8 +76,7 @@ Configure Azure CLI to use this newly created Azure Container Registry:
 
 ```bash
 az configure \
-    --defaults acr=$AZ_CONTAINER_REGISTRY \
-    | jq
+    --defaults acr=$AZ_CONTAINER_REGISTRY
 ```
 
 Authenticate to the newly created Azure Container Registry:
@@ -101,4 +100,4 @@ az aks create \
 ```
 
 > [!NOTE]
-> Azure Kubernetes Cluster creation can take approximately 10 minutes, once you run the command above, you can optionally let it continue in that Azure CLI tab and move on to the next unit.
+> Azure Kubernetes Cluster creation can take up to 10 minutes, once you run the command above, you can optionally let it continue in that Azure CLI tab and move on to the next unit.
