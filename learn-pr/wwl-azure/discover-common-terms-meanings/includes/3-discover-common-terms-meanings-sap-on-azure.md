@@ -3,4 +3,4 @@
  -  **HANA Large Instance**. Deployment of SAP HANA Landscape consisting of using physical servers (HLIs) and SAP HANA certified VMs for other parts of the SAP environment.
 
 > [!NOTE]
-> [Azure for SAP Docs](/azure/virtual-machines/workloads/sap/get-started) is a rich document library with links to SAP notes for all scenarios.
+> Review [Azure for SAP Docs](/azure/virtual-machines/workloads/sap/get-started) for a rich document library with links to SAP notes for all scenarios.
