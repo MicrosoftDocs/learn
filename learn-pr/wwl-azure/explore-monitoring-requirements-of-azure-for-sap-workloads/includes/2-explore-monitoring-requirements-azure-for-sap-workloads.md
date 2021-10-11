@@ -3,7 +3,7 @@ As per [SAP Note \#2015553](https://launchpad.support.sap.com/#/notes/2015553), 
  -  The Azure Monitoring Extension for SAP is deployed and correctly configured.
  -  Data from the Azure Monitoring Extension for SAP is visible in the SAP NetWeaver system.
 
-Make sure that the following technical requirements for use of the Azure Monitoring Extension for SAP are met:
+Make sure that the following Azure Monitoring Extension for SAP technical requirements are met:
 
  -  The Azure virtual machine instance requires an active route to the internet to be able to access the Azure Extension Pool. This might require setting Internet proxies for the virtual machine instance before deploying the Azure Virtual Machine Extension for SAP.
  -  SAP Enhanced Monitoring is deployed. To include Azure performance counters in SAP Enhanced Monitoring, SAP has enhanced the SAP Host Agent and its monitoring transaction ST06. Therefore, check the configuration, the required versions, and minimum support package levels, as described in the following SAP Notes:
