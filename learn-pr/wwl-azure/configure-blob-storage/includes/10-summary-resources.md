@@ -14,6 +14,6 @@ You can learn more by reviewing the following.
 
  -  [Azure Blob storage documentation](/azure/storage/blobs/).
  -  [Object blob replication overview](/azure/storage/blobs/object-replication-overview)
- -  [Access tiers for Azure Blob Storage - hot, cool, and archive](/azure/storage/blobs/storage-blob-storage-tiers)
+ -  [Access tiers for Azure Blob Storage - hot, cool, and archive](/azure/storage/blobs/access-tiers-overview)
  -  [Learn - Optimize storage performance and costs using Blob storage tiers](/learn/modules/optimize-archive-costs-blob-storage/)
  -  [Learn - Gather metrics from your Azure Blob Storage containers](/learn/modules/gather-metrics-blob-storage/)
