@@ -43,7 +43,7 @@ To create a block blob storage account in the Azure portal, follow these steps:
 
 ## Create account by using Azure Cloud Shell
 
-1. Login to the [Azure Portal](https://portal.azure.com) and open the Cloud Shell. 
+1. Login to the [Azure portal](https://portal.azure.com) and open the Cloud Shell. 
 
     * You can also login to the [Azure Cloud Shell](https://shell.azure.com) directly.
 
