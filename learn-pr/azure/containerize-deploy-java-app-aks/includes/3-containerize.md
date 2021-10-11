@@ -109,7 +109,7 @@ As you can see, this Docker file Build stage has 6 instructions.
 | COPY   | COPY adds files from your Docker client's current directory. Setting up the files needed for Maven to compile. pom.xml will be needed by the Docker context |
 | COPY   | Setting up the files needed for Maven to compile. The src folder containing the Turkish Airlines application will be needed by the Docker context |
 | COPY   | Setting up the files needed for Maven to compile. The web folder containing the Turkish Airlines application dependencies will be needed by the Docker context|
-| RUN    | RUN is used to execute the Maven build, which will compile the TurkishAirlines-0.0.1-SNAPSHOT.war |
+| RUN    | RUN instruction is used to execute any command on top of the current image. In this case RUN is used to execute the Maven build, which will compile the TurkishAirlines-0.0.1-SNAPSHOT.war |
 
 As you can see, this Docker file Package stage has 5 instructions.
 
@@ -119,7 +119,7 @@ As you can see, this Docker file Package stage has 5 instructions.
 | COPY   | COPY tomcat-users.xml will copy the tomcat-users.xml file that manages the Turkish Airlines users (managed within source control using Tomcat identity, typically this would be in an external identity management system) into the tomcat Docker image so that its present in the Docker image each and evert time a Docker image is created |
 | ADD    | ADD target/*.war /usr/local/tomcat/webapps/TurkishAirlines.war will copy the maven compiled TurkishAirlines-0.0.1-SNAPSHOT.war to the tomcat images webapps folder to ensure that when Tomcat is initialize, it will in fact find the TurkishAirlines-0.0.1-SNAPSHOT.war to be installed on the application server. |
 | EXPOSE | EXPOSE 8080 is needed as Tomcat is configured to listen to traffic on port 8080, this ensures the Docker process will listen on this port. |
-| CMD | CMD ["catalina.sh", "run"], Last but not least, you need to instruct Docker what to do for initialization. Generally this is a startup script. In this case you can use the tomcat Docker image catalina.sh shell script, and instruct Docker to "run" it, the default behavior for a Tomcat Application Server. |
+| CMD | CMD instruction is used to set a command to be executed when running the container. In this case, CMD ["catalina.sh", "run"] instructs Docker to initialize the Tomcat Application Server. |
 
 > [!NOTE]
 > Without a version tag on the FROM tomcat line, the latest will be applied. Generally you will want to leverage a version tag (remember, caching is applied, so if layers are consistently changing, you will incur bandwidth, latency, compute time and/or side effect of untested builds/layers.) For the sake of this module, we have preselected specific Maven, Tomcat, Java JRE/JDK tags that are testing to work with TurkishAirlines-0.0.1-SNAPSHOT.war at runtime.
