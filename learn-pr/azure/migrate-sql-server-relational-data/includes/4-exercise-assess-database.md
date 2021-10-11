@@ -10,7 +10,7 @@ You start by installing Data Migration Assistant on your SQL Server instance.
 
 1. In the list of resources in the resource group, select the **admsdemovm** virtual machine. The **admsdemovm** virtual machine pane appears.
 
-1. In the top menu bar, select **Connect**, and from the dropdown, select **RDP**. The **Connect** pane appears for your VM.
+1. In the top menu bar, select **Connect**, and from the dropdown list, select **RDP**. The **Connect** pane appears for your VM.
 
 1. On the **RDP** tab, under the **Connect with RDP** section, select **Download RDP File**. Save the IP address to your computer in a location of your choice.
 
