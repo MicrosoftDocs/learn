@@ -88,7 +88,7 @@ To complete the component that sends messages about sales:
     ```C#
     ServiceBusSender sender = client.CreateSender(QueueName);
     ```
-    Note that the editor automatically prepended **new** to the line of code you pasted.
+
 1. Within the `try...catch` block, locate the following line of code.
 
     ```C#
