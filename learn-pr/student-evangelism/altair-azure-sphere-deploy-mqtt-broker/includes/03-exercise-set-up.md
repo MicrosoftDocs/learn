@@ -154,24 +154,24 @@ The following are the [instructions for installing the Certbot on Ubuntu](https:
     1. You will be prompted for the domain name of your server. You copied the domain name to notepad.
     1. The process takes around 5 minutes to complete.
 
-    ```bash
-    sudo snap install core; sudo snap refresh core && \
-    sudo snap install --classic certbot && \
-    sudo ln -s /snap/bin/certbot /usr/bin/certbot && \
-    sudo certbot certonly --standalone
-    ```
+       ```bash
+       sudo snap install core; sudo snap refresh core && \
+       sudo snap install --classic certbot && \
+       sudo ln -s /snap/bin/certbot /usr/bin/certbot && \
+       sudo certbot certonly --standalone
+       ```
 
     1. You can test the renewal process works with the following command.
 
-    ```bash
-    sudo certbot renew --dry-run
-    ```
+       ```bash
+       sudo certbot renew --dry-run
+       ```
 
     1. You can view the Let's Encrypt certificates with the following command.
 
-    ```bash
-    sudo ls -all /etc/letsencrypt/live/$CommonName
-    ```
+       ```bash
+       sudo ls -all /etc/letsencrypt/live/$CommonName
+       ```
 
 ## Create the Web Terminal username and password
 
