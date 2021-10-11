@@ -88,17 +88,18 @@ Set the CPU Instruction pointer to 0x0100
 Execute the instruction
 
 1. Press **SINGLE STEP**
-1. Press **SINGLE STEP** again and note the address on the address bus will change to zero. All of the address bus LEDS will be turned off.
+1. Press **SINGLE STEP** again and note the address on the address bus will change to zero. All of the address bus LEDs will be turned off.
 
 1. Press **CPU START** to start the CPU running again.
 
-Note, you can observe the instruction being executed in the Web Terminal as well.
+> [!NOTE]
+> You can observe the instruction being executed in the Web Terminal as well.
 
-```text
-    Examine: Address bus: 00000001 00000000 (0x0100), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
-Single step: Address bus: 00000001 00000000 (0x0100), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
-Single step: Address bus: 00000000 00000000 (0x0000), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
-```
+> ```text
+>     Examine: Address bus: 00000001 00000000 (0x0100), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
+> Single step: Address bus: 00000001 00000000 (0x0100), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
+> Single step: Address bus: 00000000 00000000 (0x0000), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
+> ```
 
 ## Altair Front Panel
 
