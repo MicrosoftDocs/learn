@@ -57,7 +57,7 @@ stages:
 - stage: Deploy
   jobs:
   - deployment: DeployWebsite
-    displayName: Deploy Website
+    displayName: Deploy website
     environment: Website
     strategy:
       runOnce:
