@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/11/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "There are four broad requirements you must meet to ensure full support for monitoring of your SAP workloads on Azure. Which of the following is one of those requirements? Select one."
+    choices:
+    - content: "The Azure Monitoring Extension for SAP is deployed and correctly configured."
+      isCorrect: true
+      explanation: "Correct. You must set up every Azure instance that hosts SAP software and related DBMS systems such that the Azure Monitoring Extension for SAP is deployed and correctly configured, data from the Azure Monitoring Extension for SAP is visible in the SAP NetWeaver system, the Azure virtual machine instance has an active route to the internet, and SAP Enhanced Monitoring is deployed."
+    - content: "The Azure virtual machine is running an allowed Windows operating system only."
+      isCorrect: false
+      explanation: "Incorrect. You must set up every Azure instance that hosts SAP software and related DBMS systems such that the Azure Monitoring Extension for SAP is deployed and correctly configured, data from the Azure Monitoring Extension for SAP is visible in the SAP NetWeaver system, the Azure virtual machine instance has an active route to the internet, and SAP Enhanced Monitoring is deployed."
+    - content: "The Azure virtual machine instance must be isolated from the internet."
+      isCorrect: false
+      explanation: "Incorrect. You must set up every Azure instance that hosts SAP software and related DBMS systems such that the Azure Monitoring Extension for SAP is deployed and correctly configured, data from the Azure Monitoring Extension for SAP is visible in the SAP NetWeaver system, the Azure virtual machine instance has an active route to the internet, and SAP Enhanced Monitoring is deployed."
+  - content: "Does Azure Monitor for SAP Solutions support SAP HANA on Azure (Large Instances)? Select one."
+    choices:
+    - content: "Yes"
+      isCorrect: true
+      explanation: "Correct. Azure Monitor for SAP Solutions supports Azure virtual machines and Azure Large Instances, running SAP HANA databases and Microsoft SQL Servers."
+    - content: "No"
+      isCorrect: false
+      explanation: "Incorrect. Azure Monitor for SAP Solutions supports Azure virtual machines and Azure Large Instances, running SAP HANA databases and Microsoft SQL Servers."
+    - content: "Only when running Microsoft SQL Servers"
+      isCorrect: false
+      explanation: "Incorrect. Azure Monitor for SAP Solutions supports Azure virtual machines and Azure Large Instances, running SAP HANA databases and Microsoft SQL Servers."
+  - content: "Which of Azure's manageability features reports platform-related issues that might affect your resources? Select one."
+    choices:
+    - content: "Azure Advisor"
+      isCorrect: false
+      explanation: "Incorrect. Azure Advisor uses resource usage telemetry to make recommendations for optimizing performance, security, and availability; and Azure Activity Log tracks events representing operations that alter the state of your resources; such as configuration changes, service health incidents, and autoscale operations."
+    - content: "Azure Service Health"
+      isCorrect: true
+      explanation: "Correct. Azure Advisor uses resource usage telemetry to make recommendations for optimizing performance, security, and availability; and Azure Activity Log tracks events representing operations that alter the state of your resources; such as configuration changes, service health incidents, and autoscale operations."
+    - content: "Azure Activity Log"
+      isCorrect: false
+      explanation: "Incorrect. Azure Advisor uses resource usage telemetry to make recommendations for optimizing performance, security, and availability; and Azure Activity Log tracks events representing operations that alter the state of your resources; such as configuration changes, service health incidents, and autoscale operations."
