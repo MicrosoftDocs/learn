@@ -46,3 +46,14 @@ quiz:
     - content: "START"
       isCorrect: true
       explanation: "START is not a Dockerfile instruction."
+  - content: "What is a multi-stage Docker build?"
+    choices:
+    - content: "A feature that enables you to build a multiple Docker images at each stage."
+      isCorrect: false
+      explanation: ""
+    - content: "A feature that enables you to create a smaller container image with better caching and a smaller security footprint."
+      isCorrect: true
+      explanation: "A feature that enables you to create smaller container images with better caching and a smaller security footprint allowing for increased optimization and maintenance of the Dockerfile over time."
+    - content: "A feature that enables you to create larger container images that use less caching."
+      isCorrect: false
+      explanation: ""
