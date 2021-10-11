@@ -6,9 +6,10 @@ metadata:
   description: Learn about IoT Central and Azure Sphere tenant trust.
   ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 durationInMinutes: 2
 content: |
   [!include[](includes/04-enable-trust.md)]

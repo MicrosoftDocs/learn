@@ -1,4 +1,4 @@
-This unit summaries the main steps you completed in this module.
+This unit summarizes the main steps you completed in this module.
 
 In this module, you:
 
