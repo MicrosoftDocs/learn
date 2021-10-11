@@ -4,7 +4,7 @@ StereoKit is a code-first library aimed primarily at engineers and others who ar
 
 Suppose you want to build an application without using any game engine such as unity and unreal. So in such a scenario, you can use StereoKit to develop your Mixed Reality applications.
 
-StereoKit focuses on non-game Mixed Reality use cases, making it a better fit for people developing more traditional applications. In addition it also focuses on Mixed Reality making it much easier to create high-quality Mixed Reality experiences. It performs Mixed Reality operations natively using basic core APIs while considering the limitations of stereoKit.
+StereoKit focuses on non-game Mixed Reality use cases, making it a better fit for people developing more traditional applications. In addition, it also focuses on Mixed Reality making it much easier to create high-quality Mixed Reality experiences. It performs Mixed Reality operations natively using basic core APIs while considering the limitations of stereoKit.
 
 StereoKit helps you to overcome the complex game engine structures.
 
@@ -16,9 +16,9 @@ StereoKit helps you to overcome the complex game engine structures.
 
 * The StereoKit image or texture format must be in: .jpg, .png, .tga, .bmp, .psd, .gif, .hdr, .pic, equirectangular cubemap, procedural.
 
-* Stereokit builds your app to a device in a matter of seconds.
+* StereoKit builds your app to a device in a matter of seconds.
 
-* Stereokit supports flat screen mode with input emulation, powerful UI and interactions for easy development.
+* StereoKit supports flat screen mode with input emulation, powerful UI, and interactions for easy development.
 
 * Assets are loaded at runtime, allowing computations to proceed faster.
 

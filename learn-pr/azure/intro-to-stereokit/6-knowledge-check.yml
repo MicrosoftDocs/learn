@@ -25,18 +25,18 @@ quiz:
         - content: "All of the above"
           isCorrect: true
           explanation: StereoKit supports all OpenXR platforms.
-    - content: "which of the following is an incorrect feature of StereoKit? "
+    - content: "Which of the following is an incorrect feature of StereoKit? "
       choices:
         - content: "Assets are loaded at compilation time"
           isCorrect: true
           explanation: Assets are loaded at Runtime not at compilation.
-        - content: "StereoKit by default uses a flexible shader or material system with built in PBR"
+        - content: "StereoKit by default uses a flexible shader or material system with built-in PBR"
           isCorrect: false
           explanation: StereoKit by default supports flexible shader or material system with built-in PBR
         - content: "StereoKit allows computation to proceed faster"
           isCorrect: false
           explanation: Because StereoKit enables computation to be performed more quickly.
-    - content: " Select the correct format to store the 3D model "
+    - content: "Select the correct format to store the 3D model "
       choices:
         - content: .tga
           isCorrect: false
