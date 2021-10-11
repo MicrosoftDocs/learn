@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: Learn how to use realtime web functionality with ASP.NET Core SignalR.
+  description: Learn how to use real-time web functionality with ASP.NET Core SignalR.
   ms.date: 09/28/2021
   author: IEvangelist
   ms.author: dapine
