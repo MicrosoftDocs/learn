@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.4-build-and-publish-cross-platform-deepstream-container-images
+title: Exercise - Build and Publish Cross-Platform DeepStream Container Images
+metadata:
+  title: Exercise - Build and Publish Cross-Platform DeepStream Container Images
+  description: Exercise - Build and Publish Cross-Platform DeepStream Container Images
+  author: toolboc
+  ms.author: pdecarlo
+  ms.date: 10/01/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-build-and-publish-cross-platform-deepstream-container-images)]

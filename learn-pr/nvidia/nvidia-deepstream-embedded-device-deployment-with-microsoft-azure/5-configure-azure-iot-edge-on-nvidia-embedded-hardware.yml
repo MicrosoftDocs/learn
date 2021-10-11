@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-with-microsoft-azure.5-configure-azure-iot-edge-on-nvidia-embedded-hardware
+title: Exercise - Configure Azure IoT Edge on NVIDIA Embedded Hardware
+metadata:
+  title: Exercise - Configure Azure IoT Edge on NVIDIA Embedded Hardware
+  description: Exercise - Configure Azure IoT Edge on NVIDIA Embedded Hardware
+  author: toolboc
+  ms.author: pdecarlo
+  ms.date: 10/01/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-configure-azure-iot-edge-on-nvidia-embedded-hardware.md)]
