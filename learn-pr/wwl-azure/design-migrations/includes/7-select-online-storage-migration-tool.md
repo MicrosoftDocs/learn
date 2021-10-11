@@ -21,7 +21,7 @@ Consider using the Storage Migration Service if you have one or more servers tha
 
 - Take over the identity of the source servers (known as cutting over).
 
-[!NOTE]
+>[!NOTE]
 > This means that users and apps don't have to change anything to access existing data.
 
 - Manage one or multiple migrations from the Windows Admin Center interface.
@@ -62,7 +62,7 @@ To use Storage Migration Service, you require:
 
 - A PC or server running Windows Admin Center to run the Storage Migration Service user interface.
 
-[!NOTE]
+>[!NOTE]
 > There are additional requirements in terms of security, the Storage Migration Service proxy service, and required firewall port settings.
 
  

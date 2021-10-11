@@ -44,7 +44,7 @@ Azure Migrate can help with several migration scenarios. The one that you select
 
 - Linux workloads
 
-- Windows .NET apps, Java apps and PHP apps
+- Windows apps, Java apps and PHP apps
 
 - SAP HANA
 
@@ -52,7 +52,7 @@ Azure Migrate can help with several migration scenarios. The one that you select
 
 ### Migrate web apps to Azure
 
-Azure Migrate uses the Azure App Service Migration Assistant to assess and migrate your web apps. The Azure App Service Migration Assistant enables you to assess and migrate your on-premises Windows ASP.Net web apps to Azure. By using this assistant, you can:
+Azure Migrate uses the Azure App Service Migration Assistant to assess and migrate your web apps. The Azure App Service Migration Assistant enables you to assess and migrate your on-premises Windows ASP.NET web apps to Azure. By using this assistant, you can:
 
 - Determine whether your app is a suitable migration candidate.
 

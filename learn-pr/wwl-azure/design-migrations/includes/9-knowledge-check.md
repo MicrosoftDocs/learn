@@ -8,6 +8,6 @@ Tailwind Traders is assessing their migration to Azure. They have asked you to m
 
 - **Estimate migration costs.** The CTO is very interested in monthly running costs in Azure. The CTO would like to compare estimated Azure cost to on-premises costs. 
 
-- **Migrate web apps to Azure.** The IT department has several test and production web apps they would like to migrate to Azure. These are Windows ASP.Net web apps. 
+- **Migrate web apps to Azure.** The IT department has several test and production web apps they would like to migrate to Azure. These are Windows ASP.NET web apps. 
 
 - **Migrate on-premises SQL Server**. The corporate data center has several virtual machines running SQL Server. These machines provide database backend support for the online sales portal. The IT department would like to move this workload to Azure.

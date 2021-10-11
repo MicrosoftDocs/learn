@@ -25,7 +25,7 @@ The migration service provides two different ways to migrate SQL Server database
 
 - Offline migration: An offline migration requires shutting down the server at the start of the migration, which means downtime for the service.
 
-[!TIP]
+>[!TIP]
 >The online option is the better of the two options if you want to minimize downtime for your workload.
 
 ### Overview of database migration
@@ -81,7 +81,7 @@ You migrate the schema before you migrate all the data in the database. Doing so
 
 - Creates an empty structure on the new Azure SQL database.
 
->[NOTE]
+>[!NOTE]
 > This structure matches that of the on-premises source database.
 
 - Validates connectivity before you do the full data migration.
