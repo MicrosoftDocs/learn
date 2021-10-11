@@ -94,7 +94,6 @@ Execute the instruction
 
 > [!NOTE]
 > You can observe the instruction being executed in the Web Terminal as well.
-
 > ```text
 >     Examine: Address bus: 00000001 00000000 (0x0100), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
 > Single step: Address bus: 00000001 00000000 (0x0100), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
