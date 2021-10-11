@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-enhanced-monitoring-extension-for-sap.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/11/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You have installed the Azure Enhanced Monitoring Extension for SAP on a Windows VM, and you are running Azperflib.exe as part the readiness check. Is it automatically a problem if Storage Read Op Latency Server msec counter is empty? Select one."
+    choices:
+    - content: "Yes"
+      isCorrect: false
+      explanation: "Incorrect. The Storage Read Op Latency Server msec and Storage Read Op Latency E2E msec counters can be empty. All other counters must have values."
+    - content: "No"
+      isCorrect: true
+      explanation: "Correct. The Storage Read Op Latency Server msec and Storage Read Op Latency E2E msec counters can be empty. All other counters must have values."
+    - content: "Only if the Storage Read Op Latency E2E msec counter is also empty"
+      isCorrect: false
+      explanation: "Incorrect. The Storage Read Op Latency Server msec and Storage Read Op Latency E2E msec counters can be empty. All other counters must have values."
