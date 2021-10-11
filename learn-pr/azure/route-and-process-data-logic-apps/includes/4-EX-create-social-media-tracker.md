@@ -3,18 +3,16 @@ In this exercise, we'll create our social media logic app using the Azure portal
 :::image type="complex" source="../media/exercise-add-trigger.png" alt-text="An illustration showing the triggers and actions in the social media monitor logic app." lightbox="../media/exercise-add-trigger.png" border="false"::: 
    The first step is a Twitter trigger labeled **When a new tweet is posted**. This trigger is highlighted to indicate that is the part of the app that will be completed in this exercise.
 :::image-end:::  
- 
+
 ## Locate the Azure logic app resource
 
 The first thing we need to do is create an Azure logic app. To do that, we need to locate the Azure Logic Apps resource type in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
 
-1. On the Azure portal menu menu, select **All Services**, in the **All services** menu, select **Integration** category. In the results that appear, select **Logic apps**. The **Logic apps** pane appears.
+1. On the Azure portal menu, select **All Services**, and in the **All services** menu, under **Integration**, select **Logic apps**. The **Logic apps** pane appears.
 
-1. In the Marketplace search box, type **Logic app**.
-
-1. In the results, on the **Logic App** Azure Service by Microsoft, select **Create** and then select **Logic App** from the context menu. The **Create Logic App** pane appears.
+1. In the top menu bar, select **Add**. The **Create Logic App** pane appears.
 
 ## Configure your Azure Logic App resource
 
@@ -28,10 +26,9 @@ Let's configure basic settings, like resource group and location.
     | Subscription | Concierge Subscription |
     | Resource group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn> |
     | **Instance Details** |
-    | Type | Standard |
+    | Type | Consumption |
     | Logic app name | Enter *ShoeTracker* |
-    | Publish | Workflow |
-    | Region | Select a location closest to you from the following list |
+    | Region | Select a location closest to you from the dropdown list. |
 
     [!INCLUDE [](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -41,15 +38,7 @@ Let's configure basic settings, like resource group and location.
 
 When you create a logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch.
 
-1. In the resource menu, select **Resource groups**. The Resource groups for the Microsoft Learn Sandbox appears.
-
-1. Select the existing **Resource group** <rgn>[sandbox resource group name]</rgn>.
-
-1. Select the **ShoeTracker** logic app.
-
-1. In the ShoeTracker logic app menu select **Events**, and then, in the Events preview, select **Logic Apps**. The **Logic Apps Designer** page appears. 
- 
-1. In the command bar, select **Templates**. The collection of common triggers appears. 
+1. After deployment completes, select **Go to resource**. The **Logic Apps Designer** appears for your *ShoeTracker* logic app.
 
 1. Scroll down to the *Templates* section, and select the **Blank Logic App**  
 
@@ -60,23 +49,23 @@ Now, let's create the trigger and provide values for all required parameters.
 > [!NOTE]
 > If you do not have a Twitter account and prefer not to create one, use the following substitutions. Substitute the **When a feed item is published** in the search field, and then Select the RSS trigger in the bottom box. Set the **RSS feed URL** to `https://blog.feedspot.com/reuters_rss_feeds/`, the **Chosen property** to `UpdatedOn`, the **How often to check for items** to `1`, and the **Frequency** to `Minute`. The disadvantage of this approach is that new articles appear infrequently in RSS feeds so you may have to wait a while before this trigger activates.
 
-1. In the *Search connectors and triggers* field, enter **When a new tweet is posted**. In the lower dialog box, select the Twitter **When a new tweet is posted**. 
- 
+1. In the *Search connectors and triggers* field, enter *When a new tweet is posted*. In the lower dialog box, select the Twitter **When a new tweet is posted**.
+
 1. A **Twitter** dialog box prompts you to enter:
- 
+
     | Setting | Value |
     |---|---|
     | Connection name | ShoeTrackerTwitterConnection |
     | Authentication Type | Accept default (Use default shared application)|
-    
+
 1. Select **Sign in**. Sign in with your existing Twitter account and password, and select **Authorize app**. This action establishes the log in connection to your Twitter account.
- 
+
 1. When the Twitter **When a new tweet is posted** dialog box reappears you have created a valid connection. The dialog box has three required parameters:
 
    - **Search text:** Text to look for in the tweet text. You can include a hashtag character at the beginning of the search text to search for hashtags.
    - **Frequency:** Unit of time for search frequency. For example, `Second`, `Minute`, `Hour`, or `Day`.
    - **Interval:** How often to search. For example, an interval of `3` and a frequency of `Hour` would check for new tweets every three hours.
-   
+
 1. Enter the following values:
 
     | Setting | Value |
@@ -84,10 +73,10 @@ Now, let's create the trigger and provide values for all required parameters.
     | Search text | Shoe |
     | How often do you want to check for new items? | 1 |
     | (Frequency) | Minute |
-    | Add new parameter | Accept default (blank). |   
+    | Add new parameter | Accept default (blank). |
 
-1. In the command bar, select **Save As**. The **Create a logic app** pane appears. 
- 
+1. In the command bar, select **Save As**. The **Create a logic app** pane appears.
+
 1. Enter the name of your logic app (ShoeTrackerNNN where NNN represents a unique ID, such as your initials and a number to provide a unique identifier.
 
 1. Select **Create**.
