@@ -1,5 +1,14 @@
 TODO
 
+In the process, you'll:
+
+> [!div class="checklist"]
+> * Add a new pipeline template for the build job.
+> * Update the pipeline to include the build job.
+> * Add a new smoke test.
+> * Update the deployment stage to deploy the application.
+> * Run the pipeline.
+
 ## Add pipeline template for build job
 
 Here, you add a new job definition that contains the steps required to build the website application.
@@ -71,7 +80,8 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
    :::code language="yaml" source="code/5-deploy.yml" range="92-101" :::
 
-   <!-- TODO watch indentation -->
+   > [!NOTE]
+   > Be careful with the indentation of the YAML file. Ensure you indent the new deployment step at the same level as the `DeployBicepFile` step. If you're not sure, copy the whole *deploy.yml* file contents from the example below.
 
 1. Verify that your *deploy.yml* file looks like the following:
 
@@ -92,6 +102,8 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 1. In your browser, navigate to **Pipelines**.
 
 1. Select the most recent run of your pipeline.
+
+   <!-- TODO SS -->
 
    Wait until the *Build* stage completes successfully. Then, the pipeline pauses before it runs the *Validate (Test Environment)* stage. This is because the pipeline needs permission to use the variable group that the stage refers to. You need to approve the pipeline's access to the variable group because this is the first time you've run the pipeline in this project. When you run the pipeline again, you won't need to approve access to the same variable group.
 

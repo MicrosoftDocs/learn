@@ -1,6 +1,17 @@
 TODO
 
-## Add storage container
+In the process, you'll:
+
+> [!div class="checklist"]
+> * Add a blob container to the Azure Storage account.
+> * Add an Azure SQL logical server and database.
+> * Update the build stage to build the database project into a DACPAC file.
+> * Add new variables to your variable group for the Azure SQL logical server and database.
+> * Update your deployment stages to use the new variables as parameter values.
+> * Add new pipeline steps to deploy your DACPAC file.
+> * Run the pipeline and view the website.
+
+## Add a storage container
 
 Your Bicep file already defines a storage account, but it doesn't define a blob container. Here, you add a blob container to your Bicep file. You also provide the name of the storage account and blob container to the application by using its configuration settings. That way, the app knows which storage account to access.
 
@@ -31,7 +42,7 @@ Your Bicep file already defines a storage account, but it doesn't define a blob 
     git commit -m "Add storage container"
     ```
 
-## Add SQL server and database to Bicep file
+## Add an Azure SQL logical server and database
 
 Your Bicep file doesn't currently deploy an Azure SQL logical server or database. Here, you add these resources to your Bicep file.
 
@@ -52,8 +63,7 @@ Your Bicep file doesn't currently deploy an Azure SQL logical server or database
    :::code language="bicep" source="code/7-main.bicep" range="38-39" :::
 
    > [!NOTE]
-   > For simplicity, the application uses the administrator login and password to access the database. This isn't good practice for a production solution, though. It's better to use dedicated identities to access the database, and grant that identity the minimum permissions needed by the application. We link to more information in the summary.
-   <!-- TODO find a good link -->
+   > For simplicity, the application uses the administrator login and password to access the database. This isn't good practice for a production solution, though. It's better to use an App Service managed identity to access the database, and grant the managed identity the minimum permissions needed by the application. We link to more information in the summary.
 
 1. Update the `environmentConfigurationMap` variable to define the SKUs to use for your database for each environment:
 
@@ -69,7 +79,7 @@ Your Bicep file doesn't currently deploy an Azure SQL logical server or database
 
 1. Save your changes to the file.
 
-## Add build steps for database project
+## Add new build steps for the database project
 
 Your website's developers have prepared a Visual Studio database project that deploys and configures your website's database table. Here, you update your pipeline's *Build* stage to build the database project into a DACPAC file and publish it as a pipeline artifact.
 
@@ -81,7 +91,7 @@ Your website's developers have prepared a Visual Studio database project that de
 
 1. Save your changes to the file.
 
-## Add values to variable group
+## Add values to variable groups
 
 1. In your browser, go to **Pipelines** > **Library**.
 
@@ -113,7 +123,7 @@ Your website's developers have prepared a Visual Studio database project that de
 
    Remember to select the padlock icon next to the **SqlServerAdministratorLoginPassword** variable and save the variable group.
 
-## Add parameter values to validate and preview stages
+## Add parameter values to the Validate and Preview stages
 
 The Bicep file now has two new mandatory parameters - `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword`. Here, you propagate those parameter values from your variable group, for both the *Validate* and *Preview* stages.
 
@@ -127,7 +137,7 @@ The Bicep file now has two new mandatory parameters - `sqlServerAdministratorLog
 
    :::code language="yaml" source="code/7-deploy.yml" range="49-57" highlight="7-9" :::
 
-## Update deploy stage
+## Add parameter values to the Deploy stage
 
 1. Update the *Deploy* stage's *DeployBicepFile* step to add the new parameters:
 
