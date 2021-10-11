@@ -34,11 +34,13 @@ The test script that you created in the preceding steps requires a host name to 
 
 1. In the **Deploy** stage, update `inlineScript` to the following code:
 
-   :::code language="bash" source="code/9-pipeline.yml" range="75-81" highlight="1, 6-7" :::
+   :::code language="bash" source="code/9-pipeline.yml" range="75-82" highlight="1-2, 7-8" :::
 
    Now, your deployment process still uses the same Azure CLI command as it did previously, but the output of that command is stored in a script variable named `deploymentOutput`. The output of Azure CLI commands is formatted as JSON.
 
-   After the deployment finishes, the script accesses the value of the `appServiceAppHostName` output from the Bicep deployment. It does this by using the `jq` tool to access the relevant part of the JSON output. Then, it publishes the value to a stage output variable named `appServiceAppHostName`.
+   If an error happens during the deployment, the `set -e` command ensures that the step fails, which then causes the pipeline to stop.
+
+   If the deployment completes successfully, the script accesses the value of the `appServiceAppHostName` output from the Bicep deployment. It does this by using the `jq` tool to access the relevant part of the JSON output. Then, it publishes the value to a stage output variable named `appServiceAppHostName`.
 
    > [!NOTE]
    > Pester and jq are both preinstalled on Microsoft-hosted agents for Azure Pipelines. You don't need to do anything special to use them in a script step.
@@ -51,19 +53,19 @@ Now, you can add a smoke test stage that runs your tests.
 
 1. At the bottom of the file, add the following definition for the **SmokeTest** stage:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="83-88" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="84-89" :::
 
    This code defines the stage and a job. It also creates a variable in the job named `appServiceAppHostName`. This variable takes its value from the output variable that you created in the preceding section.
 
 1. At the bottom of the file, add the following step definition to the **SmokeTest** stage:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="89-101" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="90-102" :::
 
    This step runs a PowerShell script to run the test script that you wrote earlier by using the Pester testing tool.
 
 1. At the bottom of the file, add the following step definition to the **SmokeTest** stage:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="103-109" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="104-110" :::
 
    This step takes the test results file that Pester creates and publishes it as pipeline test results. You'll see how this is displayed shortly.
 
@@ -75,7 +77,7 @@ Now, you can add a smoke test stage that runs your tests.
 
 1. Verify that your *azure-pipelines.yml* file looks like the following:
 
-   :::code language="yaml" source="code/9-pipeline.yml" highlight="75-81, 83-109" :::
+   :::code language="yaml" source="code/9-pipeline.yml" highlight="75-82, 84-110" :::
 
    If it doesn't, update it to match this example, and then save it.
 
