@@ -3,7 +3,7 @@ uid: learn.wwl.write-queries-that-use-window-functions
 metadata:
   title: Write queries that use window functions
   description: "Write queries that use window functions"
-  ms.date: 09/30/2021
+  ms.date: 10/09/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Use RANK, AGGREGATE, and OFFSET functions.
 prerequisites: |
   Before starting this module, you should have experience of using Transact-SQL queries to retrieve and filter data from a table in a database.
-iconUrl: /learn/achievements/queries-windows-functions.svg
+iconUrl: /learn/achievements/queries-window-functions.svg
 levels:
 - advanced
 roles:
