@@ -18,7 +18,7 @@ In the next exercises, you'll trigger autoscaling via manually via a web browser
 5. Select the customers-service application. You should then see the application's **Overview** page.
 6. Go to the **Scale out** tab under **Settings** in the menu on the left navigation pane.
 
-## Viewing autoscale events
+### Viewing autoscale events
 
 In the autoscale setting screen, go to the Run history tab to see the most recent scale actions. The tab also shows the change in Observed Capacity over time. To find more details about all autoscale actions including operations such as update/delete autoscale settings, view the activity log and filter by autoscale operations.
 
