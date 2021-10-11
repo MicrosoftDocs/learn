@@ -80,8 +80,8 @@ Examples:
 ```solidity
 
 struct Items_Schema {
-    uint256 _id:
-    uint256 _price:
+    uint256 _id;
+    uint256 _price;
     string _name;
     string _description;
 }
