@@ -1,4 +1,4 @@
-[Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes/) is a portable**, extensible open-source platform** for automating deployment, scaling, and the management of containerized workloads. This orchestration platform gives us the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings. Kubernetes provides both container management and container orchestration. 
+[Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes/) is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. This orchestration platform gives us the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings. Kubernetes provides both container management and container orchestration. 
 
 - Container management is the process of organizing, adding, removing, or updating a significant number of containers. Most of these tasks are manual and error prone. 
 
