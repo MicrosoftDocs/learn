@@ -5,7 +5,7 @@ metadata:
   description: "We introduce 5G for Azure in the Enterprise"
   ms.date: 07/20/2021
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot
   ms.custom: nextgen
