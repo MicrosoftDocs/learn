@@ -22,6 +22,8 @@ Your Bicep file already defines a storage account, but it doesn't define a blob 
 
    :::code language="bicep" source="code/7-main.bicep" range="182-183" :::
 
+1. Save your changes to the file.
+
 1. Commit your changes to your Git repository, but don't push them yet. Run the following commands in the Visual Studio Code terminal:
 
     ```cmd
@@ -63,111 +65,153 @@ Your Bicep file doesn't currently deploy an Azure SQL logical server or database
 
    :::code language="bicep" source="code/7-main.bicep" range="180-185" highlight="5-6" :::
 
-<!-- TODO here -->
+1. Save your changes to the file.
 
 ## Add build steps for database project
 
-1. Open build.yml file
+Your website's developers have prepared a Visual Studio database project that deploys and configures your website's database table. Here, you update your pipeline's *Build* stage to build the database project into a DACPAC file and publish it as a pipeline artifact.
 
-1. Add step to build and publish the Visual Studio database project
+1. Open the *build.yml* file in the *deploy/pipeline-templates* folder.
+
+1. Add the follow steps to build the Visual Studio database project, copy the generated DACPAC file to a staging folder, and publish it as a pipeline artifact:
 
    :::code language="yaml" source="code/7-build.yml" highlight="31-50" :::
 
+1. Save your changes to the file.
+
 ## Add values to variable group
 
-1. Add to ToyWebsiteProduction
+1. In your browser, go to **Pipelines** > **Library**.
+
+1. Select the **ToyWebsiteProduction** variable group.
+
+   <!-- TODO SS -->
+
+1. Add the following variables to the variable group:
 
    | Name | Value |
    |-|-|
    | SqlServerAdministratorLogin | ToyCompanyAdmin |
    | SqlServerAdministratorLoginPassword | SecurePassword!111 |
 
-1. Make password secure
+1. Select the padlock icon next to the **SqlServerAdministratorLoginPassword** variable. This tells Azure Pipelines to treat the variable's value securely.
 
-   :::image type="content" source="../media/7-variable-group-secure.png" alt-text="TODO":::
+   :::image type="content" source="../media/7-variable-group-secure.png" alt-text="Screenshot of the production variable group, with the secret variable button highlighted.":::
 
-1. Save
+1. Save the variable group.
 
    :::image type="content" source="../media/7-variable-group-edit.png" alt-text="TODO":::
 
-1. Add to ToyWebsiteTest
+1. Repeat the process to add the following variables to the **ToyWebsiteTest** variable group:
 
    | Name | Value |
    |-|-|
    | SqlServerAdministratorLogin | TestToyCompanyAdmin |
    | SqlServerAdministratorLoginPassword | SecurePassword!999 |
 
+   Remember to select the padlock icon next to the **SqlServerAdministratorLoginPassword** variable and save the variable group.
+
 ## Add parameter values to validate and preview stages
 
-1. Open deploy.yml
+The Bicep file now has two new mandatory parameters - `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword`. Here, you propagate those parameter values from your variable group, for both the *Validate* and *Preview* stages.
 
-1. Add parameter values to validate step
+1. In Visual Studio Code, open the *deploy.yml* file in the *deploy/pipeline-templates* folder.
+
+1. Update the *Validate* stage's *RunPreflightValidation* step to add the new parameters:
 
    :::code language="yaml" source="code/7-deploy.yml" range="23-31" highlight="7-9" :::
 
-1. Add parameter values to what-if step
+1. Update the *Preview* stage's *RunWhatIf* step to add the new parameters:
 
    :::code language="yaml" source="code/7-deploy.yml" range="49-57" highlight="7-9" :::
 
 ## Update deploy stage
 
-1. Add parameter values to deploy step
+1. Update the *Deploy* stage's *DeployBicepFile* step to add the new parameters:
 
    :::code language="yaml" source="code/7-deploy.yml" range="82-92" highlight="9-11" :::
 
-1. Propagate storage and SQL output values to variables
+1. Create pipeline variables that contain the values of the Bicep outputs you recently added for the storage account and Azure SQL resources:
 
    :::code language="yaml" source="code/7-deploy.yml" range="93-104" highlight="3-6, 9-12" :::
 
-## Add DACPAC deployment step
+## Add database deployment steps
 
-1. Add step to deploy DACPAC file
+Here, you define the steps required to deploy the database components of your website. First, you add a step to deploy the DACPAC file that the pipeline previously built. Then, you add sample data to the database and storage account, but only for non-production environments.
+
+1. Below the *DeployWebsiteApp* step in the *Deploy* stage, add a new step to deploy DACPAC file:
 
    :::code language="yaml" source="code/7-deploy.yml" range="117-129" :::
 
-## Add sample data to test environments
-
-1. Add step to seed database, and condition
+1. Below the step you just added, define a step to seed the database with sample data.
 
    :::code language="yaml" source="code/7-deploy.yml" range="131-143" :::
 
-1. Add step to upload sample images by using the Azure CLI
+   Notice that this step has a condition applied to it - it only runs for non-production environments.
+
+1. Below the step you just added, and still within the scope of the condition, add a step to upload some sample toy images to the blob container by using the Azure CLI:
 
    :::code language="yaml" source="code/7-deploy.yml" range="145-156" :::
 
-## Verify deploy.yml
+## Verify deploy.yml and commit your changes
 
-:::code language="yaml" source="code/7-deploy.yml" :::
+1. Verify that your *deploy.yml* looks like this:
 
-## Commit and push
+   :::code language="yaml" source="code/7-deploy.yml" :::
 
-```cmd
-git add .
-git commit -m "Add SQL database"
-git push
-```
+   If it doesn't, update it to match the above file.
 
-## Run pipeline and see smoke test pass
+1. Save your changes to the file.
 
-1. Open pipeline and watch
+1. Commit and push your changes to your Git repository. Run the following commands in the Visual Studio Code terminal:
 
-   All test stages complete successfully, including smoke test. The *Preview (Production Environment)* stage pauses - needs permission to variable group
+    ```cmd
+    git add .
+    git commit -m "Add SQL database"
+    git push
+    ```
 
-1. Select View > Permit > Permit
+## Run the pipeline
 
-   Preview stage completes successfully, then pauses again at *Deploy (Production Environment)* for environment permission
+1. In your browser, navigate to **Pipelines**.
 
-1. Select View > Permit > Permit
+1. Select the most recent run of your pipeline.
 
-   Deployment stage completes successfully, and the production smoke test stage passes
+   Wait until all of the stages for the test environment complete successfully. Notice that the smoke test also succeeds. The pipeline pauses again before the *Preview (Production Environment)* stage because it needs permission to a different variable group this time.
 
-1. Open website for test and see it's showing the sample data
+1. Select **View**, then select **Permit** > **Permit**.
 
-   <!-- TODO screenshots -->
+   THe *Preview (Production Environment)* stage completes successfully. Then, the pipeline pauses again at the *Deploy (Production Environment)* stage.
 
-1. Open website for prod and see it doesn't show sample data
+1. Select **View**, then select **Permit** > **Permit**.
 
-   <!-- TODO screenshots -->
+   The *Deploy (Production Environment)* stage completes successfully, and the *Smoke Test (Production Environment)* stage also completes successfully.
+
+   <!-- TODO SS showing complete pipeline run success --> 
+
+## View the website
+
+1. Select the **Deploy (Test Environment)** stage to open the pipeline log.
+
+1. Select the **Deploy website** step.
+
+   <!-- TODO SS -->
+
+   Hold down the <kbd>Ctrl<kbd> key (<kbd>Command</kbd> on macOS) and select the URL of the App Service app to open it in a new browser tab.
+
+1. Select **Toys**.
+
+   <!-- TODO SS -->
+
+   Notice that sample data is displayed in the test environment.
+
+   <!-- TODO SS -->
+
+1. Repeat the process above for the **Deploy (Production Environment)** stage's app.
+
+   Notice that no sample data is displayed in the production environment.
+
+   <!-- TODO SS -->>
 
 ## Clean up resources
 

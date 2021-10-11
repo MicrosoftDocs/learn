@@ -86,13 +86,13 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
    git push
    ```
 
-## Run pipeline and see smoke test fail
+## Run the pipeline
 
 1. In your browser, navigate to **Pipelines**.
 
 1. Select the most recent run of your pipeline.
 
-   The *Build* stage completes successfully. Then, the pipeline pauses before it runs the *Validate (Test Environment)* stage. This is because the pipeline needs permission to use the variable group that the stage refers to. You need to approve the pipeline's access to the variable group because this is the first time you've run the pipeline in this project. When you run the pipeline again, you won't need to approve access to the same variable group.
+   Wait until the *Build* stage completes successfully. Then, the pipeline pauses before it runs the *Validate (Test Environment)* stage. This is because the pipeline needs permission to use the variable group that the stage refers to. You need to approve the pipeline's access to the variable group because this is the first time you've run the pipeline in this project. When you run the pipeline again, you won't need to approve access to the same variable group.
 
 1. Select **View**.
 
