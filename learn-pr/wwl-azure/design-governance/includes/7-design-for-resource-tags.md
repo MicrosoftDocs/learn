@@ -28,7 +28,9 @@ Tailwind Traders has created their organization hierarchy and now needs to deter
 | **IT-aligned tagging**| Focuses on workload, application, function, or environment criteria. Reduces the complexity of monitoring assets. Simplifies making management decisions based on operational requirements.| Our printers are busy 80% of the time. We have five high-speed color printers and should buy more. |
 | **Business-aligned tagging**| Focuses on accounting, business ownership, cost responsibility, or business criticality. Provides improved accounting for costs and value of IT assets to the overall business. Shifts the focus from an asset’s operational cost to an asset’s business value.| Our marketing department’s promotional literature has increased sales revenue 10%. We should invest in more printing capabilities. | 
 
-**Consider the type of tagging that is required.** Resource tags generally fall into five categories functional, classification, accounting, partnership, and purpose. |
+**Consider the type of tagging that is required.** 
+
+Resource tags generally fall into five categories functional, classification, accounting, partnership, and purpose. 
 
 | **Tag type**| **Examples**| **Description** |
 | - | - | - |
