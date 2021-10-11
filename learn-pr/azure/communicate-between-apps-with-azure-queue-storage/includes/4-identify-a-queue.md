@@ -43,7 +43,7 @@ az storage account show-connection-string -g <resource group name> -n <storage a
 
 ### Use the Azure.Storage.Queues package for .NET
 
-The Azure.Storage.Queues package is part of the Azure SDK for .NET. This package provides a programmatic way to access Azure storage queues from .NET code. Access using the package requires the the use of your connection string and the name of the queue.
+The Azure.Storage.Queues package is part of the Azure SDK for .NET. This package provides a programmatic way to access Azure storage queues from .NET code. Access using the package requires the use of your connection string and the name of the queue.
 
 > [!WARNING]
 > This connection string value should be stored in a secure location since anyone who has access to this connection string would be able to manipulate the queue.
