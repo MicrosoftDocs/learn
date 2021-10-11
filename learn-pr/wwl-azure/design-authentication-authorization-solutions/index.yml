@@ -3,7 +3,7 @@ uid: learn.wwl.design-authentication-authorization-solutions
 metadata:
   title: Design authentication and authorization solutions
   description: "Azure Architects design and recommend authentication and authorization solutions."
-  ms.date: 10/08/2021
+  ms.date: 10/11/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -37,7 +37,7 @@ products:
 units:
 - learn.wwl.design-authentication-authorization-solutions.introduction
 - learn.wwl.design-authentication-authorization-solutions.design-for-identity-access-management
-- learn.demo-interact-with-a-computer.demo-introduction
+- learn.wwl.design-authentication-authorization-solutions.design-for-azure-active-directory
 - learn.wwl.design-authentication-authorization-solutions.design-for-azure-ad-b2b
 - learn.wwl.design-authentication-authorization-solutions.design-for-azure-ad-b2c
 - learn.wwl.design-authentication-authorization-solutions.compare-external-identity-solutions

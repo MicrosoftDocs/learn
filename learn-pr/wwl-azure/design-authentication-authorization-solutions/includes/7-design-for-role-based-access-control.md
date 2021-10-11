@@ -42,18 +42,15 @@ Azure RBAC evaluates each request for access. The evaluations will determine if 
 
 - **Know when to use Azure policies**. [Azure policies](/azure/governance/policy/overview) focuses on resource properties. For example, during deployment, a policy can ensure users can only deploy certain virtual machines in a resource group. A combination of Azure policies and Azure RBAC can provide effective access control. 
 
-| Area| Azure Policy| Role-based Access Control |
-| - | - | - |
-| Description| Ensure resources are compliant with a set of rules.| Authorization system to provide fine-grained access controls. |
-| Focus| Focused on the properties of resources.| Focused on what resources the users can access. |
-| Implementation| Specify a set of rules.| Assign roles and scopes. |
-| Default access| By default, rules are set to allow.| By default, all access is denied. |
-
-
- 
+    | Area| Azure Policy| Role-based Access Control |
+    | - | - | - |
+    | Description| Ensure resources are compliant with a set of rules.| Authorization system to provide fine-grained access controls. |
+    | Focus| Focused on the properties of resources.| Focused on what resources the users can access. |
+    | Implementation| Specify a set of rules.| Assign roles and scopes. |
+    | Default access| By default, rules are set to allow.| By default, all access is denied. |
 
 - **Know when to create a custom role.** Sometimes, the built-in roles don't grant the precise level of access you need. [Custom roles](/azure/role-based-access-control/custom-roles) allow you to define roles that meet the specific needs of your organization. Custom roles can be shared between subscriptions that trust the same Azure AD directory.
 
 - **Consider what happens if you have overlapping role assignments.** Azure RBAC is an additive model, so your effective permissions are the sum of your role assignments. Consider a user is granted the Contributor role at the subscription scope and the Reader role on a resource group. The sum of the Contributor permissions and the Reader permissions is effectively the Contributor role for the subscription. Therefore, in this case, the Reader role assignment has no impact. 
 
-:::image type="content" source="../media/scope-overlap.png" alt-text="Overlapping roles are evaluated.":::
+    :::image type="content" source="../media/scope-overlap.png" alt-text="Overlapping roles are evaluated.":::
