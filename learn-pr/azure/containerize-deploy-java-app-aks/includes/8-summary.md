@@ -35,6 +35,6 @@ This command might take a minute to run.
 
 Learn more about [Docker](https://docs.docker.com/reference/).
 
-Learn more about [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/).
+Learn more about [Azure Container Registry](https://azure.microsoft.com/services/container-registry/).
 
-Learn more about [Azure Kubernetes Service](https://azure.microsoft.com/en-us/services/kubernetes-service/).
+Learn more about [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/).
