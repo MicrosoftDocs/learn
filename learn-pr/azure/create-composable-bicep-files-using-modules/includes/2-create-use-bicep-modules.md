@@ -4,7 +4,7 @@ By using modules, you can reuse your Bicep code easily, and you can make your Bi
 
 ## The benefits of modules
 
-In your toy company, you've been provisioning cloud resources by using numerous individual Bicep files. Over time, these templates grow significantly. Eventually, you probably end up having monolithic code that's difficult to read and navigate, and even harder to maintain. 
+In your toy company, you've been provisioning cloud resources by using many individual Bicep files. Over time, these templates grow significantly. Eventually, you end up having monolithic code that's difficult to read and navigate, and even harder to maintain. 
 
 This approach also forces you to duplicate parts of your code when you want to reuse it in other templates. When you change something, you need to search through multiple files and update them all.
 
@@ -12,7 +12,7 @@ Bicep modules help you address these challenges by splitting your code into smal
 
 ### Reusability
 
-After you've created a module, you can reuse it in multiple Bicep files, even if they're for different projects or workloads. For example, when you build out one solution, you might create separate modules for the app components, the database, and the network-related resources. Then, when you start to work on another project with similar network requirements, you can reuse the relevant module.
+After you've created a module, you can reuse it in multiple Bicep files, even if the files are for different projects or workloads. For example, when you build out one solution, you might create separate modules for the app components, the database, and the network-related resources. Then, when you start to work on another project with similar network requirements, you can reuse the relevant module.
 
 :::image type="content" source="../../includes/media/bicep-templates-modules.png" alt-text="Diagram that shows a template referencing three modules: application, database, and networking. The networking module is then reused in another template." border="false":::
 
@@ -76,7 +76,7 @@ Modules can include other modules. By using this nesting technique, you can crea
 
 ### Choose good file names
 
-Be sure to use a descriptive file name for each module. The file name effectively becomes the identifier for the module. So it's important that your colleagues can understand what the purpose of the module is just by looking at the file name.
+Be sure to use a descriptive file name for each module. The file name effectively becomes the identifier for the module. It's important that your colleagues can understand what the purpose of the module is just by looking at the file name.
 
 ## Use the module in a Bicep template
 
@@ -125,7 +125,7 @@ You can list and view the details of deployment resources to monitor the status 
 
 ### Generated JSON ARM templates
 
-When you deploy a Bicep file, Bicep converts it to a JSON ARM template. This conversion is also called *transpilation*. The modules that it uses are embedded into the JSON file. Regardless of how many modules you include in your template, only a single JSON file will be created.
+When you deploy a Bicep file, Bicep converts it to a JSON ARM template. This conversion is also called *transpilation*. The modules that the template uses are embedded into the JSON file. Regardless of how many modules you include in your template, only a single JSON file will be created.
 
 In the example discussed in the previous section, Bicep generates a single JSON file even though there were originally two Bicep files.
 

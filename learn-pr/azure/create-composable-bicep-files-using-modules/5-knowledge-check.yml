@@ -36,7 +36,7 @@ quiz:
       explanation: Correct. You can define a key vault secret for the connection string value. Alternatively, you can use the `existing` keyword to read the properties of the storage account in another Bicep file.
     - content: You don't need to do anything. Properties for all the resources defined in the module are automatically available to the parent template.
       isCorrect: false
-      explanation: Incorrect. Properties for resources are accessible only within the Bicep file that they're declared in.
+      explanation: Incorrect. Properties for resources are accessible only within the Bicep file where they're declared.
   - content: Your colleague has created a large Bicep file that you want to decompose into modules. You want to identify the resources that should be defined together in each module. Which tool can you consider using to help you achieve this task?
     choices:
     - content: Use the Bicep visualizer.

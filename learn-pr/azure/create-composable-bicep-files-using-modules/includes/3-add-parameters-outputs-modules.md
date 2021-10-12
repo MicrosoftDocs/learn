@@ -15,7 +15,7 @@ You should also think about how you manage parameters that control the SKUs for 
 
 Consider defining the business rules in your parent template. Then explicitly pass module configuration through parameters.
 
-Whatever parameters you include in your module, ensure that you add a meaningful description by using the `@description` attribute.
+Whatever parameters you include in your module, ensure that you add a meaningful description by using the `@description` attribute:
 
 ::: code language="bicep" source="code/3-params-outputs.bicep" range="1-2" highlight="1" :::
 
@@ -25,11 +25,11 @@ One of the goals with deploying an infrastructure by using code like Bicep is to
 
 Suppose you're creating a module that deploys an Azure Cosmos DB account. When it's deployed to your production environment, you need to configure the account to send its logs to a Log Analytics workspace. To configure logs to be sent to Log Analytics, you define a *diagnosticSettings* resource. 
 
-You could achieve your requirement by adding a condition to the resource definition, and make the workspace ID parameter optional by adding a default value.
+You could achieve your requirement by adding a condition to the resource definition, and make the workspace ID parameter optional by adding a default value:
 
 ::: code language="bicep" source="code/3-cosmos-db-diagnostic-settings.bicep" highlight="1, 7" :::
 
-When you include this module in a Bicep template, you can easily configure it to send the Azure Cosmos DB account logs to Log Analytics by setting a workspace ID. Or, if you don't need logs for the environment you're deploying, simply omit the parameter. It has a default value. The module encapsulates the logic required to do the right thing for your requirements.
+When you include this module in a Bicep template, you can easily configure it to send the Azure Cosmos DB account logs to Log Analytics by setting a workspace ID. Or, if you don't need logs for the environment that you're deploying, simply omit the parameter. It has a default value. The module encapsulates the logic required to do the right thing for your requirements.
 
 > [!TIP]
 > Remember to test that your template is valid for both scenarios - when the `if` statement is evaluated as either `true` or `false`.
@@ -50,7 +50,7 @@ A parent template can use module outputs in variables, can use properties for ot
 
 ## Chain modules together
 
-It's common to create a parent Bicep file that composes multiple modules together. For example, imagine you're building a new Bicep template to deploy virtual machines that use dedicated virtual networks. You could create a module to define a virtual network. You could then take the virtual network's subnet resource ID as an output from that module and use it as an input to the virtual machine module.
+It's common to create a parent Bicep file that composes multiple modules together. For example, imagine you're building a new Bicep template to deploy virtual machines that use dedicated virtual networks. You could create a module to define a virtual network. You could then take the virtual network's subnet resource ID as an output from that module and use it as an input to the virtual machine module:
 
 ::: code language="bicep" source="code/3-chained.bicep" highlight="9, 18" :::
 

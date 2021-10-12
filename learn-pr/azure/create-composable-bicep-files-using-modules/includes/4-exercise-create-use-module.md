@@ -20,7 +20,7 @@ During the process, you'll:
 
 1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
  
-   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you save the file. For example, you might want to create a *templates* folder to save it in.
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> on Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you save the file. For example, you might want to create a *templates* folder to save it in.
 
 ## Create a module for your application
 
@@ -44,23 +44,23 @@ Here, you add the *app* module to your Bicep template as a starting point.
 
    :::code language="bicep" source="code/4-template-1.bicep" range="1-10" :::
 
-   Because this is the template that you intend to deploy for your toy websites, it's a little more specific. The App Service plan name is defined as a variable, and the SKU parameter has a default value that makes sense for the toy launch website.
+   Because this is the template that you intend to deploy for your toy websites, it's a little more specific. The App Service plan name is defined as a variable. The SKU parameter has a default value that makes sense for the toy launch website.
 
-1. Below the parameters, create a blank line. Now, type the first line of the app module definition.
+1. Below the parameters, create a blank line. Now, type the first line of the app module definition:
 
    :::code language="bicep" source="code/4-template-1.bicep" range="12" :::
 
    As you type, notice that the Bicep extension for Visual Studio Code helps you to scaffold the module declaration. When you type the path to your module and type the `=` character, a pop-up menu appears with several options.
 
-1. Select **Required properties** from the pop-up menu.
+1. Select **Required properties** from the pop-up menu:
 
    :::image type="content" source="../media/4-module-scaffold.png" alt-text="Screenshot of Visual Studio Code that shows the option to scaffold a module with its required properties.":::
 
-1. Complete the module declaration.
+1. Complete the module declaration:
 
    :::code language="bicep" source="code/4-template-1.bicep" range="12-20" :::
 
-1. At the bottom of the file, define an output.
+1. At the bottom of the file, define an output:
 
    :::code language="bicep" source="code/4-template-1.bicep" range="22-23" :::
 
@@ -86,7 +86,7 @@ Here, you add the *app* module to your Bicep template as a starting point.
 
    :::code language="bicep" source="code/4-template-2.bicep" range="10-11" :::
 
-1. Below the `app` module definition, define the `cdn` module.
+1. Below the `app` module definition, define the `cdn` module:
 
    :::code language="bicep" source="code/4-template-2.bicep" range="25-31" :::
 
@@ -177,7 +177,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 1. On a new browser tab, try to go to the host name that you copied in the previous step. Add `https://` to the start of the address.
 
-   CDN endpoints take a few minutes to become active. If you see a "Page not found" error, you can wait a few minutes and try pasting the link again. Also, ensure that you added `https://` to the start of the URL so that you're using HTTPS.
+   CDN endpoints take a few minutes to become active. If you see a "Page not found" error, wait a few minutes and try pasting the link again. Also, ensure that you added `https://` to the start of the URL so that you're using HTTPS.
 
    When the CDN endpoint is active, you'll see the same App Service welcome page. This time, it has been served through the Azure Content Delivery Network service, which helps improve the website's performance.
 
