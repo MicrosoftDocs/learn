@@ -1,4 +1,4 @@
-Pipelines enable you to deploy your Azure resources in a repeatable way. In this module, you'll learn how to extend a deployment pipeline to work with multiple environments. Your pipeline will help you to validate and test your changes without adding risk to your production environment. After you've validated your changes, your pipeline uses the same process to deploy to your production environment.
+Pipelines enable you to deploy your Azure resources in a repeatable way. In this module, you'll learn how to extend a deployment pipeline to work with multiple environments. Your pipeline will help you to validate and test your changes without adding risk to your production environment. After you validated your changes, your pipeline uses the same process to deploy to your production environment.
 
 ## Example scenario
 
