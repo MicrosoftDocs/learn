@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-gaming.barriers-to-access
-title: Identifying barriers to access
+uid: learn.intro-to-gaming.access-barriers
+title: Identifying access barriers
 metadata:
-  title: Identifying barriers to access
+  title: Identifying access barriers
   description: This content is part of the Introduction to Gaming and Disability module.
   ms.date: 08/10/2021
   author: erzelman
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-gaming-accessibility
 durationInMinutes: 18
 content: |
-  [!include[](includes/03-barriers-to-access.md)]
+  [!include[](includes/03-access-barriers.md)]

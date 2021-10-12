@@ -34,8 +34,8 @@ units:
 - learn.intro-to-gaming.core-game-elements-knowledge-check
 - learn.intro-to-gaming.player-experiences
 - learn.intro-to-gaming.player-experiences-knowledge-check
-- learn.intro-to-gaming.barriers-to-access
-- learn.intro-to-gaming.barriers-to-access-knowledge-check
+- learn.intro-to-gaming.access-barriers
+- learn.intro-to-gaming.access-barriers-knowledge-check
 - learn.intro-to-gaming.summary-and-resources
 badge:
   uid: learn.intro-to-gaming.badge
