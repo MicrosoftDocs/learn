@@ -16,7 +16,7 @@ In this unit, you’ll learn how to use Azure Cache for Redis to manage caching 
 
 Suppose you work at a Tailwind Traders that has launched a new game ,which will have real time leaderboards for gamers to check their scores. The leaderboard would show the user's rank in the game in real time while getting updated as soon as the events in the game changes. This requires in-memory fast read and writes for which you have been asked to design a caching solution.
 
-## What is Azure Cache for Redis?
+### What is Azure Cache for Redis?
 
 [Azure Cache for Redis](/azure/azure-cache-for-redis/cache-overview) provides an in-memory data store based on the Redis software. Redis improves the performance and scalability of an application that uses backend data stores heavily. It's able to process large volumes of application requests by keeping frequently accessed data in the server memory, which can be written to and read from quickly. Redis brings a critical low-latency and high-throughput data storage solution to modern applications.
 
@@ -44,10 +44,7 @@ The following diagram shows how cache works in applications.
 :::image type="content" source="../media/azure-cache-for-redis.png" alt-text="A graphic displays the typical use for Azure Cache for Redis.":::
 
 
-
-#### Evaluate Azure Cache for Redis service tiers
-
-#### When to use Azure Cache for Redis?
+### When to use Azure Cache for Redis?
 
 Azure Cache for Redis improves application performance by supporting common application architecture patterns. Some of the most common include the following patterns.
 
