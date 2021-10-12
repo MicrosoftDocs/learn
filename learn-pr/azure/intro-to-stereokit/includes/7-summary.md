@@ -4,9 +4,9 @@ This course provides you an understanding of developing the Mixed Reality applic
 
 ## Next steps
 
-The application you built using StereoKit can further be improvised by including few more functions or features provided by Microsoft. Consider trying the following:
+The application you created with StereoKit can be improved further by including a few more functions or features provided by Microsoft. Consider the following options:
 
-* Consider including features such as pencil, brush, and airbrush tool.
+* Include features such as pencil, brush, and airbrush tool.
 * Incorporate the ability to add lines and shapes.
 * Improvise by adding UI buttons to save the painting in image file format.
 
