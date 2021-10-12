@@ -166,4 +166,4 @@ The **Control** action is now properly configured and running. Let's examine the
 
 Finally, let's check our email account to see if we received any messages about negative tweets.
 
-1. Sign into the email account that you provided in the Outlook action, and wait for an email notification to arrive.
+Sign into the email account that you provided in the Outlook action, and wait for an email notification to arrive.
