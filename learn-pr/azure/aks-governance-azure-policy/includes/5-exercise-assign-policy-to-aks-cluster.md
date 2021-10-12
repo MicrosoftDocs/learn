@@ -115,11 +115,11 @@ Find the built-in policy definitions for managing your cluster using the Azure p
 
 Now that the new Policy has been enabled, you can click on **Assignments** to see the assigned Policy and select the Policy assignment you just created.
 
-![Policy assigned](../media/5-policy-assigned.png)
+![screenshot showing Policy assigned](../media/5-policy-assigned.png)
 
 Your Policy assignment should look like the picture below. Note that effect is set to deny by default. This means that the cluster would not allow resources to be deployed from container registries other than those hosted on Azure Container Registry.
 
-![Policy assigned](../media/5-policy-assignment-details.png)
+![screenshot showing details of Policy assignment](../media/5-policy-assignment-details.png)
 
 ## Assign a Policy Initiative
 
