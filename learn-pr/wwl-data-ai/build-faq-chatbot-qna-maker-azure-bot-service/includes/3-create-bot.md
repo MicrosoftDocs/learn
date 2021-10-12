@@ -1,17 +1,15 @@
 For customer support scenarios, it's common to create a bot that can interpret and answer frequently asked questions through a website chat window, email, or voice interface. Underlying the bot interface is a knowledge base of questions and appropriate answers that the bot can search for suitable responses.
 
-## Activate the Sandbox  
-
 To test a QnA Maker Knowledge Base, we will activate a free subscription in the sandbox. 
 
 1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance.  
 
-2. When you are prompted to review permissions, click **Accept**.
+2. If you are prompted to review permissions, click **Accept**.
 
 ## Create a QnA Maker Knowledge Base
 The QnA Maker service is a cognitive service in Azure that enables you to quickly create a knowledge base, either by entering question and answer pairs or from an existing document or web page. It can then use some built-in natural language processing capabilities to interpret questions and find appropriate answers.
 
-1. Open the QnA Maker portal at https://qnamaker.ai. Sign in using the Microsoft account associated with your Azure subscription.
+1. Open the QnA Maker portal at [https://qnamaker.ai](https://qnamaker.ai?azure-portal=true). Sign in using the Microsoft account associated with your Azure subscription.
 2. In the QnA Maker portal, select **Create a knowledge base**.
 3. If you haven't previously created a QnA service resource, select the **Preview** option and then click **Create a QnA service**. The Azure portal will be opened in another tab so you can create a QnA Maker service in your subscription.
 4. In the **Select additional features** page, select **Custom question answering**. Then click **Continue to create your resource**.
