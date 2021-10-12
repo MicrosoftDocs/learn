@@ -71,23 +71,23 @@ Create a Windows Server VM to simulate an on-premises machine running in the fin
 1. On the Windows Security **Enter your credentials** dialog box, select **More choices**, and then scroll down and select **Use a different account**. In the **Email address** field, enter *azureuser*, in the **Password** field, enter the password you created earlier, and then select **OK**.
 
     > [!NOTE]
-    > If you forgot the password, go oto the VM (2019Fileserver) and select **Reset password** under **Help + support > Help** and then select Update in the command bar to update. Restart this task at step 3 to connect and download the RDP file. Alternatively, restart this task. If you encounter any issues, check the sandbox--if it is not still activated, you've lost the resources necessary to complete this exercise. 
+    > If you forgot the password, go oto the VM (2019Fileserver) and select **Reset password** under **Help + support > Help** and then select Update in the command bar to update. Restart this task at step 3 to connect and download the RDP file. Alternatively, restart this task. If you encounter any issues, check the sandbox--if it is not still activated, you've lost the resources necessary to complete this exercise.
 
 1. If you're prompted to verify the remote connection, select **Yes**.
 
 ## Map drives to the Azure file shares
 
-1. In the Azure portal, select or search for **Storage accounts**.
+1. In the Azure portal, in the top *Search resources, services, and docs* search box, search for and select **Storage accounts**.
 
-1. Select the storage account that you created, which should be named **learnazurefileshare** followed by random numbers.
+1. Select the storage account that you created, which should be named **learnazurefileshare** followed by random numbers. That storage account pane appears.
 
-1. In the Storage account menu, under **Data storage**, select **File shares**.
+1. In the middle menu pane, under **Data storage**, select **File shares**.
 
     :::image type="content" source="../media/4-select-file-shares.png" alt-text="Screenshot storage account menu with file shares highlighted." lightbox="../media/4-select-file-shares.png#lightbox":::
 
     The **File shares** pane for your storage account appears with two file shares.
 
-1. In the file shares list, select **data**. The **data** file share pane appears. 
+1. In the file shares list, select **data**. The **data** file share pane appears.
 
     :::image type="content" source="../media/4-select-data.png" alt-text="Screenshot of the file shares in the storage account." lightbox="../media/4-select-data.png#lightbox":::
 
@@ -99,13 +99,13 @@ Create a Windows Server VM to simulate an on-premises machine running in the fin
 
     :::image type="content" source="../media/4-connect-share.png" alt-text="Screenshot of the data file share and its connection commands." lightbox="../media/4-connect-share.png#lightbox":::
 
-1. On your virtual machine, in the system tray, select **Start**, scroll to **Windows PowerShell (Admin)**, or if you don't see **(Admin)**, then right-click **Windows PowerShell** and select **Run as Administrator**. 
+1. On your virtual machine, in the system tray, select **Start**, scroll to **Windows PowerShell (Admin)**, or if you don't see **(Admin)**, then right-click **Windows PowerShell** and select **Run as Administrator**.
 
     :::image type="content" source="../media/4-connect-powershell-admin.png" alt-text="Screenshot of the Windows virtual machine showing Start menu with Windows PowerShell (Admin) selected." lightbox="../media/4-connect-powershell-admin.png#lightbox":::
 
-1. In the PowerShell console title bar, right-click the PowerShell icon, and select **Properties**. On the Options tab, ensure that **Use Ctrl+Shift+C/V as Copy/Paste** is selected, and then select **OK**. Now you can use accelerator keys <kbd>Ctrl+Shift+V</kbd> to paste content into your VM PowerShell console.
- 
-1. At the command prompt in the PowerShell console, paste the script you copied from the Azure portal, and press <kbd>Enter</kbd>. 
+1. In the PowerShell console title bar, right-click the PowerShell icon, and select **Properties**. On the **Options** tab, ensure that **Use Ctrl+Shift+C/V as Copy/Paste** is selected, and then select **OK**. Now you can use accelerator keys <kbd>Ctrl+Shift+V</kbd> to paste content into your VM PowerShell console.
+
+1. At the command prompt in the PowerShell console, paste the script you copied from the Azure portal, and press <kbd>Enter</kbd>.
 
 1. In the Azure portal, go back to the **File shares** pane, and select **reports**.
 
