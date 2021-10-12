@@ -1,5 +1,7 @@
 In this unit, we'll look at autoscaling rules, and then in the next exercise, trigger the rules.
 
+Autoscaling is based on a set of scale conditions, rules, and limits. A scale condition combines time and a set of scale rules. If the current time falls within the period defined in the scale condition, the condition's scale rules are evaluated. The results of this evaluation determine whether to add or remove instances. The scale condition also defines the limits of scaling for the maximum and minimum number of instances.
+
 ## Rules
 
 Azure Monitor autoscaling allows you to scale the number of running instances up or down, based on metrics, these metrics are processed by autoscaling rules.
@@ -9,6 +11,8 @@ You can create complex overlapping rules as needed for your situation.  Rule typ
 * **Time-based** - For example, trigger a webhook every 8am on Saturday in a given time zone.
 
 Metric-based rules measure application load and add or remove application instances based on that load. Schedule-based rules allow you to scale when you see time patterns in your load and want to scale before a possible load increase or decrease occurs.
+
+Define your autoscaling rules carefully. For example, a Denial of Service attack will likely result in a large-scale influx of incoming traffic. Trying to handle a surge in requests caused by a DoS attack would be fruitless and expensive. These requests aren't genuine, and should be discarded rather than processed. A better solution is to implement detection and filtering of requests that occur during such an attack before they reach your service.
 
 ## Autoscale conditions
 
