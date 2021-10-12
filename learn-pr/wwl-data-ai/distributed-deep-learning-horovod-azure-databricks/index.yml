@@ -3,7 +3,7 @@ uid: learn.wwl.distributed-deep-learning-horovod-azure-databricks
 metadata:
   title: Distributed deep learning with Horovod and Azure Databricks
   description: "Distributed deep learning with Horovod and Azure Databricks"
-  ms.date: 10/04/2021
+  ms.date: 10/09/2021
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Use HorovodRunner in Azure Databricks for distributed deep learning.
 prerequisites: |
   Before starting this module, you should be familiar with using Python to train deep learning models in Azure Databricks.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/deep-learning-horovod-databricks.svg
 levels:
 - advanced
 roles:
