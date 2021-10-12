@@ -18,7 +18,6 @@ Here, you add a new job definition that contains the steps required to build the
 1. In the *deploy/pipeline-templates* folder, create a new file named *build.yml*.
 
    :::image type="content" source="../media/5-visual-studio-code-build-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the pipeline-templates folder and the build dot Y M L file shown.":::
-   <!-- TODO redo SS -->
 
 1. Add the following content to the *build.yml* pipeline template file.
 
@@ -103,9 +102,11 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
 1. Select the most recent run of your pipeline.
 
-   <!-- TODO SS -->
+   :::image type="content" source="../media/5-pipeline-runs.png" alt-text="Screenshot of Azure DevOps showing the pipeline run list. The latest pipeline run is highlighted.":::
 
-   Wait until the *Build* stage completes successfully. Then, the pipeline pauses before it runs the *Validate (Test Environment)* stage. This is because the pipeline needs permission to use the variable group that the stage refers to. You need to approve the pipeline's access to the variable group because this is the first time you've run the pipeline in this project. When you run the pipeline again, you won't need to approve access to the same variable group.
+   Wait until the *Build* stage completes successfully.
+
+   Then, the pipeline pauses before it runs the *Validate (Test Environment)* stage. This is because the pipeline needs permission to use the variable group that the stage refers to. You need to approve the pipeline's access to the variable group because this is the first time you've run the pipeline in this project. When you run the pipeline again, you won't need to approve access to the same variable group.
 
 1. Select **View**.
 
@@ -131,7 +132,7 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
 1. Select the **Smoke Test (Test Environment)** stage to open the pipeline log.
 
-1. Select the **Run smoke tests** step to view the appropriate part of the pipeline log:
+1. Select the **Run smoke tests** step to view the associated section of the pipeline log:
 
    :::image type="content" source="../media/5-smoke-test-failure-log.png" alt-text="Screenshot of Azure DevOps showing the pipeline run log, with the output of the smoke test displayed. The J S O N health test result is highlighted.":::
 

@@ -97,7 +97,7 @@ Your website's developers have prepared a Visual Studio database project that de
 
 1. Select the **ToyWebsiteProduction** variable group.
 
-   <!-- TODO SS -->
+   :::image type="content" source="../media/7-variable-groups.png" alt-text="Screenshot of Azure DevOps showing the list of variable groups, with the ToyWebsiteProduction variable group highlighted.":::
 
 1. Add the following variables to the variable group:
 
@@ -191,17 +191,25 @@ Here, you define the steps required to deploy the database components of your we
 
 1. Select the most recent run of your pipeline.
 
-   Wait until all of the stages for the test environment complete successfully. Notice that the smoke test also succeeds. The pipeline pauses again before the *Preview (Production Environment)* stage because it needs permission to a different variable group this time.
+   Wait until all of the stages for the test environment complete successfully. Notice that the smoke test now also succeeds:
+
+   :::image type="content" source="../media/7-smoke-test-success.png" alt-text="Screenshot of Azure DevOps showing the pipeline run's Smoke Test stage for the test environment. The status shows the stage succeeded.":::
+
+1. Wait for the pipeline to pause again before the *Preview (Production Environment)* stage because it needs permission to a different variable group this time.
+
+   :::image type="content" source="../media/7-pipeline-run-deploy-permission.png" alt-text="Screenshot of Azure DevOps showing the pipeline run paused at the Deploy stage. The pipeline indicates that permission is required to continue. The View button is highlighted.":::
 
 1. Select **View**, then select **Permit** > **Permit**.
 
-   THe *Preview (Production Environment)* stage completes successfully. Then, the pipeline pauses again at the *Deploy (Production Environment)* stage.
+   The *Preview (Production Environment)* stage completes successfully.
+
+   Then, the pipeline pauses again at the *Deploy (Production Environment)* stage.
 
 1. Select **View**, then select **Permit** > **Permit**.
 
    The *Deploy (Production Environment)* stage completes successfully, and the *Smoke Test (Production Environment)* stage also completes successfully.
 
-   <!-- TODO SS showing complete pipeline run success --> 
+   :::image type="content" source="../media/7-pipeline-run-success.png" alt-text="Screenshot of Azure DevOps showing the pipeline run with all stages showing success.":::
 
 ## View the website
 
@@ -209,23 +217,23 @@ Here, you define the steps required to deploy the database components of your we
 
 1. Select the **Deploy website** step.
 
-   <!-- TODO SS -->
+   Hold down the <kbd>Ctrl</kbd> key (<kbd>⌘</kbd> on macOS) and select the URL of the App Service app to open it in a new browser tab.
 
-   Hold down the <kbd>Ctrl</kbd> key (<kbd>⌘</kbd> on macOS) and select the URL of the App Service app to open it in a new browser tab. <!-- TODO confirm -->
+   :::image type="content" source="../media/7-url-test.png" alt-text="Screenshot of Azure DevOps showing the pipeline run log for the test environment's Deploy stage. The URL of the App Service app is highlighted.":::
 
 1. Select **Toys**.
 
-   <!-- TODO SS -->
+   <!-- TODO screenshot after sample images are updated -->
 
    Notice that sample data is displayed in the test environment.
 
-   <!-- TODO SS -->
+   <!-- TODO screenshot after sample images are updated -->
 
 1. Repeat the process above for the **Deploy (Production Environment)** stage's app.
 
    Notice that no sample data is displayed in the production environment.
 
-   <!-- TODO SS -->>
+   <!-- TODO screenshot after sample images are updated -->
 
 ## Clean up resources
 
