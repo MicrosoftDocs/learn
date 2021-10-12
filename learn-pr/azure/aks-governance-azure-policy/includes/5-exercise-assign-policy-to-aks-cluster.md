@@ -140,8 +140,42 @@ Here you can find the Policy assignment again by clicking on **Policy** and sele
 ## Test the Azure Policy
 
 Now that you have assigned the restricting Policy to the cluster, you will now run a test to see if the Policy works. To do this, you will create a new deployment and see if the deployment works. We begin by creating a new kubernetes manifest file and deploying it. 
+
 > [!IMPORTANT]
 > Please note that the Policy assignments may take up to 30 minutes to take effect. Because of this delay, in the following steps the Policy validation may succeed and the deployment will not fail. If this happens, allow for additional time and retry your deployment.
+
+You can check to see if the policy assignment has taken effect by running the command below
+
+```bash
+kubectl get ConstraintTemplates
+```
+
+You should see a result similar to what you see below. If you see `k8sazurecontainerallowedimages` in the list then you know your policy has taken effect.
+
+```output
+k8sazureallowedcapabilities              40m
+k8sazureallowedseccomp                   20m
+k8sazureallowedusersgroups               40m
+k8sazureblockautomounttoken              40m
+k8sazureblockdefault                     40m
+k8sazureblockhostnamespace               40m
+k8sazurecontainerallowedimages           40m
+k8sazurecontainerallowedports            40m
+k8sazurecontainerlimits                  40m
+k8sazurecontainernoprivilege             40m
+k8sazurecontainernoprivilegeescalation   40m
+k8sazuredefenderblockvulnerableimages    40m
+k8sazuredisallowedcapabilities           40m
+k8sazureenforceapparmor                  40m
+k8sazurehostfilesystem                   40m
+k8sazurehostnetworkingports              40m
+k8sazureingresshttpsonly                 40m
+k8sazurereadonlyrootfilesystem           40m
+k8sazureserviceallowedports              40m
+k8sazurevolumetypes                      20m
+```
+
+
 
 1. Create another nginx deployment and service using the code below
 
@@ -204,11 +238,12 @@ Now that you have assigned the restricting Policy to the cluster, you will now r
    kubectl get pods
    ```
 
-As you can see in the picture below, even though it appeared the deployment was created, the pod was actually not created. The deployment was blocked by the Policy you just created. The pod that was created before the Policy was assigned was however not stopped. The Policy also didn't prevent the service from getting created. If you try opening up the EXTERNAL-IP in a browser, you will get no response which further shows that the deployment was not successful. 
+In the output below, even though it appeared the deployment was created, the pod was actually not created. The deployment was blocked by the Policy you just created. The pod that was created before the Policy was assigned was however not stopped. The Policy also didn't prevent the service from getting created. If you try opening up the EXTERNAL-IP in a browser, you will get no response which further shows that the deployment was not successful. 
 
-![screenshot showing that the pod was not deployed](../media/5-deployment-not-created.png)
-
-
+```output
+NAME                            READY   STATUS    RESTARTS   AGE
+simple-nginx-66d884c498-msbpc   1/1     Running   0          63m
+```
 
 ## Diagnose why the Pod was not deployed
 
@@ -217,20 +252,30 @@ In the previous section we noticed that the second pod was not deployed. In this
 1. First, let us describe the deployment. We see that the ReplicaSet was created but the replicas failed to create
 
    ```bash
-   kubectl describe deployment second-simple-nginx
+   kubectl describe replicasets
    ```
 
-   ![screenshot showing the failed deployment](../media/5-describing-failed-deployment.png)
+   You'll get an output similar to what you have below
 
-1. Next we will describe the failed ReplicaSet. Copy the name of the ReplicaSet highlighted in the picture above and replace the placeholder with the copied name. Run the command
+   ```output
+   NAME                             DESIRED   CURRENT   READY   AGE
+   second-simple-nginx-64969b4566   1         0         0       8m45s
+   simple-nginx-66d884c498          1         1         1       72m
+   ```
+
+1. Next we will describe the failed ReplicaSet. Copy the name of the ReplicaSet that starts with "second-simple-nginx", update the command below with that value and run the command
 
    ```bash
    kubectl describe replicaset <ReplicaSet name>
    ```
 
-1. Here you will see that the replicas failed because of the Policy
+1. The output of the command will show that the replicas failed because of the Policy
 
-   ![screenshot showing the reason why the pod failed](../media/5-reason-replicaset-failure.png)
+   ```output
+   Warning  FailedCreate  3m9s (x18 over 14m)  replicaset-controller  Error creating: admission webhook "validation.gatekeeper.sh" denied the request: [azurepolicy-container-allowed-images-bcfbd5e1e78f7c8b4104] Container image docker.io/library/nginx:stable for container second-simple-nginx has not been allowed.
+   ```
+   
+   
 
 Delete the deployment to prepare for the next step.
 
