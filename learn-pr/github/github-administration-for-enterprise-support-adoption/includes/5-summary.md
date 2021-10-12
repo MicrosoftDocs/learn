@@ -1,10 +1,11 @@
 The goal of this module was to help you understand how GitHub Enterprise can simplify some of your duties as a GitHub administrator. GitHub Enterprise includes tools for streamlining the operations of large organizations such as managing the increased administrative workload that comes with greater headcount.
 
-You learned about:
+In this module, you learned how to:
 
-- **Set up** authentication with SAML single sign-on as well as a connection between Enterprise Server and Enterprise Cloud with GitHub Connect.
-- **Automate** security and version updates for your project's dependencies, as well as administrative duties and user interactions with GitHub.
-- How to **Interact** with GitHub Enterprise Support to resolve issues with accounts, security, and abuse.
+- Set up authentication with SAML single sign-on as well as a connection between Enterprise Server and Enterprise Cloud with GitHub Connect.
+- Automate security and version updates for your project's dependencies, as well as administrative duties and user interactions with GitHub.
+- Interact with GitHub Enterprise Support to resolve issues with accounts, security, and abuse.
+- Recognize the capabilities of centrally managing your GitHub enterprise members through GitHub Enterprise Managed User accounts (EMUs).
 
 ## Learn more
 
