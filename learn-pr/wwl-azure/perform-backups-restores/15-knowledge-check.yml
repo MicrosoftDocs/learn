@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/11/2021
+  ms.date: 10/12/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "Root user only"
       isCorrect: false
-      explanation: "Incorrect. Only the root user should have \"read\" and \"write\" permissions to VMSnapshotScriptPluginConfig.json, and no users should have \"execute\" permissions."
+      explanation: "Sorry, that is incorrect."
     - content: "All users"
       isCorrect: false
-      explanation: "Incorrect. Only the root user should have \"read\" and \"write\" permissions to VMSnapshotScriptPluginConfig.json, and no users should have \"execute\" permissions."
+      explanation: "Sorry, that is incorrect."
     - content: "No users"
       isCorrect: true
       explanation: "Correct. Only the root user should have \"read\" and \"write\" permissions to VMSnapshotScriptPluginConfig.json, and no users should have \"execute\" permissions."
@@ -32,21 +32,21 @@ quiz:
     choices:
     - content: "There is no difference, the process is handled identically in both cases."
       isCorrect: false
-      explanation: "Incorrect. When taking application-consistent snapshots of Linux VMs, Azure Backup invokes only the pre/post scripts written by you. If the pre-scripts and post-scripts execute successfully, Azure Backup marks the recovery point as application consistent. However, when you're using custom scripts, you're ultimately responsible for application consistency."
+      explanation: "Sorry, that is incorrect."
     - content: "Linux requires you to write your own pre-script and post-script framework."
       isCorrect: true
       explanation: "Correct. When taking application-consistent snapshots of Linux VMs, Azure Backup invokes only the pre/post scripts written by you. If the pre-scripts and post-scripts execute successfully, Azure Backup marks the recovery point as application consistent. However, when you're using custom scripts, you're ultimately responsible for application consistency."
     - content: "Linux does not support application-consistent backup."
       isCorrect: false
-      explanation: "Incorrect. When taking application-consistent snapshots of Linux VMs, Azure Backup invokes only the pre/post scripts written by you. If the pre-scripts and post-scripts execute successfully, Azure Backup marks the recovery point as application consistent. However, when you're using custom scripts, you're ultimately responsible for application consistency."
+      explanation: "Sorry, that is incorrect."
   - content: "You have a production SAP HANA workload, with an XFS file system spanning four Azure virtual disks. You plan to back up the workload to a storage snapshot, using this process: 1. HANA snapshot prepare 2. Create all necessary blob snapshots on Azure 3. Confirm the HANA snapshot Can you rely on this process to give you a consistent snapshot? Select one."
     choices:
     - content: "Yes, the process should result in a consistent snapshot."
       isCorrect: false
-      explanation: "Incorrect. The easiest way to avoid problems would be to shut down SAP HANA, but this is not an option for a production system. Freezing the XFS file system (with xfs_freeze) will ensure consistency of the snapshot."
+      explanation: "Sorry, that is incorrect."
     - content: "No, you must shut down SAP HANA before taking the snapshot, or the snapshot will not be consistent."
       isCorrect: false
-      explanation: "Incorrect. The easiest way to avoid problems would be to shut down SAP HANA, but this is not an option for a production system. Freezing the XFS file system (with xfs_freeze) will ensure consistency of the snapshot."
+      explanation: "Sorry, that is incorrect."
     - content: "No, you should also freeze the file system before creating the blob snapshots on Azure, and unfreeze it afterwards."
       isCorrect: true
       explanation: "Correct. The easiest way to avoid problems would be to shut down SAP HANA, but this is not an option for a production system. Freezing the XFS file system (with xfs_freeze) will ensure consistency of the snapshot."
@@ -54,13 +54,13 @@ quiz:
     choices:
     - content: "Daily"
       isCorrect: false
-      explanation: "Incorrect. General guidance from SAP is to make one full HANA backup once a week. SAP also recommends doing some housekeeping of the backup catalog to keep it from growing infinitely."
+      explanation: "Sorry, that is incorrect."
     - content: "Weekly"
       isCorrect: true
       explanation: "Correct. General guidance from SAP is to make one full HANA backup once a week. SAP also recommends doing some housekeeping of the backup catalog to keep it from growing infinitely."
     - content: "Monthly"
       isCorrect: false
-      explanation: "Incorrect. General guidance from SAP is to make one full HANA backup once a week. SAP also recommends doing some housekeeping of the backup catalog to keep it from growing infinitely."
+      explanation: "Sorry, that is incorrect."
   - content: "You are configuring a SQL Server file-snapshot backup, using the Azure Blob Storage service. Which of the following statements is true? Select one."
     choices:
     - content: "The backup file cannot be stored using premium storage."
@@ -68,7 +68,7 @@ quiz:
       explanation: "Correct. The backup file itself cannot be stored using premium storage. The frequency of backups can be no shorter than 10 minutes, not 30 minutes. The maximum number of snapshots that you can store is 100, not 1000."
     - content: "The frequency of backups can be no shorter than 30 minutes."
       isCorrect: false
-      explanation: "Incorrect. The backup file itself cannot be stored using premium storage. The frequency of backups can be no shorter than 10 minutes, not 30 minutes. The maximum number of snapshots that you can store is 100, not 1000."
+      explanation: "Sorry, that is incorrect."
     - content: "The maximum number of snapshots that you can store is 1000."
       isCorrect: false
-      explanation: "Incorrect. The backup file itself cannot be stored using premium storage. The frequency of backups can be no shorter than 10 minutes, not 30 minutes. The maximum number of snapshots that you can store is 100, not 1000."
+      explanation: "Sorry, that is incorrect."
