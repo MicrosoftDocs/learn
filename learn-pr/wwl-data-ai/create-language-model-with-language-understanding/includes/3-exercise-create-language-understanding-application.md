@@ -4,13 +4,13 @@ To test the capabilities of the Language Understanding service, we'll use a simp
 
 1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance. 
 
-2. When you are prompted to review permissions, click **Accept**.
+2. If you are prompted to review permissions, click **Accept**.
 
 ## Create *Language Understanding* Resources
 
 Microsoft cognitive services includes the Language Understanding service, which enables you to define *intents* that are applied to *entities* based on *utterances*. You can use either a **Language Understanding** or  **Cognitive Services** resource to *publish* a Language Understanding app, but you must create a separate **Language Understanding** resource for *authoring* the app.
 
-1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com), signing in with your Microsoft account.
+1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with your Microsoft account.
 2. Click **+ Create a resource**, and search for *Language Understanding*.
 3. In the list of services, click **Language Understanding**.
 4. In the **Language Understanding** blade, click **Create**.
@@ -29,7 +29,7 @@ Microsoft cognitive services includes the Language Understanding service, which 
 
 To implement natural language understanding with Language Understanding, you create an app; and then add entities, intents, and utterances to define the commands you want the app to understand:
 
-1. In a new browser tab, open the Language Understanding portal at [https://www.luis.ai](https://www.luis.ai), and sign in using the Microsoft account associated with your Azure subscription. If this is the first time you have signed into the Language Understanding portal, you may need to grant the app some permissions to access your account details. Then complete the *Welcome* steps by selecting the existing Language Understanding authoring resource you just created in your Azure subscription. 
+1. In a new browser tab, open the Language Understanding portal at [https://www.luis.ai](https://www.luis.ai?azure-portal=true), and sign in using the Microsoft account associated with your Azure subscription. If this is the first time you have signed into the Language Understanding portal, you may need to grant the app some permissions to access your account details. Then complete the *Welcome* steps by selecting the existing Language Understanding authoring resource you just created in your Azure subscription. 
 2. In the **Conversation apps** page, create a new app with the following settings:
     - **Name**: Home Automation
     - **Culture**: English
@@ -82,7 +82,7 @@ To consume your language model from a client, we'll use a simple command-line ap
 
 ## Configure and run a client application
 
-Now that you have a cloud shell environment, you can run a simple client application that uses the Computer Vision service to analyze an image.
+Now that you have a language model, you can run a simple client application that uses the Language Understanding service.
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
 
@@ -98,36 +98,28 @@ Now that you have a cloud shell environment, you can run a simple client applica
 
     Notice how this opens up an editor. 
 
-3. In the **Files** pane on the left, expand **ai-900** and select **understand.ps1**. This file contains some code that uses your Custom Vision model to classify an image, as shown here:
+3. In the **Files** pane on the left, expand **ai-900** and select **understand.ps1**. This file contains some code that uses your Language Understanding model, as shown here:
 
     ![The editor containing code to use a Language Understanding app](../media/understand-code.png)
 
 4. Don't worry too much about the details of the code, the important thing is that it needs the application ID, key, and endpoint URL for your published language model. Copy these from the **Manage** page in th Language Understanding portal (which should still be open in another browser tab) and paste them into the code editor, replacing the **YOUR_APP_ID**, **YOUR_PRIMARY_KEY** and **YOUR_ENDPOINT_URL** placeholder values respectively.
 
-    After pasting the endpoint and key values, the first two lines of code should look similar to this:
-
-    ```PowerShell
-    $appId="abc-123-456-def..."
-    $key = "123abc456def789ghi0klmnopq"
-    $endpointUrl="YOUR_ENDPOINT_URL"
-    ```
-
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
-6. In the PowerShell pane, enter the following comman to run the code:
+6. In the PowerShell pane, enter the following command to run the code:
 
     ```
     cd ai-900
     ./understand.ps1 "Turn on the light"
     ```
 
-7. Review the results - the app should have predicted that the intended action is to switch on the light.
+7. Review the results. The app should have predicted that the intended action is to switch on the light.
 8. Now try another command:
 
     ```
     ./understand.ps1 "Switch the fan off"
     ```
 
-9. Review the results from this command- the app should have predicted that the intended action is to switch off the fan.
+9. Review the results from this command. The app should have predicted that the intended action is to switch off the fan.
 
 10. Experiment with a few more commands; including commands that the model was not trained to support, such as "Hello" or "switch on the oven". The app should generally understand commands for which its language model is defined, and fail gracefully for other input.
 
