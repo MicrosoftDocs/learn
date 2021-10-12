@@ -8,13 +8,13 @@ Vision is incredibly complex. Visual disabilities can affect player experiences 
 
 ### No Vision
 
-There are many players who cannot perceive any visual content related to games, platforms, and hardware. Reflect on the visual elements commonly present in gaming experiences outlined in the previous unit; directional cues within the game’s environment, the presence of enemies or interactable objects, and more. For these players, all visual elements on screen must somehow be represented entirely through non-visual means such as audio. You'll have to answer the question, “How can I share the information that's on-screen to players who can't see it, so they can still enjoy my game?”
+While there are many best practice approaches to address this question, the focus of this introductory module is to first recognize the importance of representing this information through non-visual means, and second recognizing the fact that different solutions will be needed to address the different types of visual disabilities that a play may have.
 
-While there are many best practice approaches to address this question, the focus of this introductory module is to first recognize the importance of representing this information through non-visual means, and second recognizing the fact that different solutions will be needed to address the different types of visual disabilities that a play may have. Here are some high-level examples of supporting players without vision through non-visual means:
+Here are some high-level examples of supporting players without vision through non-visual means:
 
-Spatial navigation through a game environment is another major that is highly dependent on the ability to see what is on-screen. In Gears 5, players can determine the location of specific game elements through audio by enabling the navigation ping in some game modes. Enabling the navigation ping setting results in players being able to listen for frequent audio pings that inform the player of where certain objects in the game are located, such as exit doors, key navigation points, door buttons, and mantle points. Players with no vision can use these audio affordances to navigate aspects of gameplay.
+Spatial navigation through a game environment. It's highly dependent on the ability to see what is on-screen. In Gears 5, players can determine the location of specific game elements through audio by enabling the navigation ping in some game modes. Enabling the navigation ping setting results in players being able to listen for frequent audio pings that inform the player of where certain objects in the game are located, such as exit doors, key navigation points, door buttons, and mantle points. Players with no vision can use these audio affordances to navigate aspects of gameplay.
 
-When it comes to hardware, it's not always feasible to let players adjust the visibility of important elements like labels. However, the Xbox Series S and X included tactile indicator bumps below each port on the back of the console. This allows players who cannot read text the text labels or icons above the ports to use touch to discern the indicator pattern and match it with the pattern referenced in online support documentation for ethernet, USB, HDMI, storage expansion, and power ports.
+When it comes to hardware, it's not always feasible to let players adjust the visibility of important elements like labels. However, the Xbox Series S and X included tactile indicator bumps below each port on the back of the console. 
 
 ### Low Vision
 
