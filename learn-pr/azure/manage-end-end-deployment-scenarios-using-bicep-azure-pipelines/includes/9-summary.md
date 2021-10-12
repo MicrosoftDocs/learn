@@ -7,3 +7,9 @@ Now, your website's deployment pipeline creates a working website for your team 
 ## Learn more
 
 - [Secure Azure SQL Database connection from App Service using a managed identity](/azure/app-service/app-service-web-tutorial-connect-msi)
+<!-- TODO
+Needs info on APIM and ADF
+Pipeline variables, including stage/job outputs
+App Service deployment slots
+Deploying to VMs and AKS
+-->
