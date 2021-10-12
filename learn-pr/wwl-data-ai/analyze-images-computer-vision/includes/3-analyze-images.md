@@ -6,7 +6,7 @@ In this lab, you'll use a simple command-line application to see the Computer Vi
 
 1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance. 
 
-2. When you are prompted to review permissions, click **Accept**. 
+2. If you are prompted to review permissions, click **Accept**. 
 
 ## Create a *Computer Vision* resource
 
@@ -27,7 +27,7 @@ Let's create a **Computer Vision** resource in your Azure subscription:
 
 ## Configure and run a client application
 
-Now that you have a cloud shell environment, you can run a simple client application that uses the Computer Vision service to analyze an image.
+Now that you have a resource, you can run a simple client application that uses the Computer Vision service to analyze an image.
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
 
@@ -50,13 +50,6 @@ Now that you have a cloud shell environment, you can run a simple client applica
 4. Don't worry too much about the code, the important thing is that it needs the endpoint URL and either of the keys for your Computer Vision resource. Copy these from the **Keys and Endpoints** page for your resource (which should still be in the top area of the browser) and paste them into the code editor, replacing the **YOUR_ENDPOINT** and **YOUR_KEY** placeholder values respectively.
 
     >**Tip**: You need to go back to the Azure Portal for your **Keys and Endpoint**.
-
-    After pasting the endpoint and key values, the first two lines of code should look similar to this:
-
-    ```PowerShell
-    $endpoint="https://resource.cognitiveservices.azure.com/"
-    $key="1a2b3c4d5e6f7g8h9i0j...."
-    ```
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. 
 
