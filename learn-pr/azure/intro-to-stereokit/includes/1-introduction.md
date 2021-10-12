@@ -12,9 +12,9 @@ StereoKit helps you to overcome the complex game engine structures.
 
 * You can access StereoKit on platforms like HoloLens 2, Oculus Quest, Windows Mixed Reality, Oculus Desktop, SteamVR, Varjo, Monado Linux, and eventually, everywhere OpenXR is.
 
-* The StereoKit 3D model format must be in: .gltf, .glb, .obj, .stl, ASCII.ply and procedural.
+* The StereoKit 3D model format must be in .gltf, .glb, .obj, .stl, ASCII.ply and procedural.
 
-* The StereoKit image or texture format must be in: .jpg, .png, .tga, .bmp, .psd, .gif, .hdr, .pic, equirectangular cubemap, procedural.
+* The StereoKit image or texture format must be in .jpg, .png, .tga, .bmp, .psd, .gif, .hdr, .pic, equirectangular cubemap, procedural.
 
 * StereoKit builds your app to a device in a matter of seconds.
 

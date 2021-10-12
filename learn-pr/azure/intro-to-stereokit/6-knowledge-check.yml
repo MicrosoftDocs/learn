@@ -25,7 +25,7 @@ quiz:
         - content: "All of the above"
           isCorrect: true
           explanation: StereoKit supports all OpenXR platforms.
-    - content: "Which of the following is an incorrect feature of StereoKit? "
+    - content: "Which of the following StereoKit features is incorrect?"
       choices:
         - content: "Assets are loaded at compilation time"
           isCorrect: true
@@ -40,10 +40,10 @@ quiz:
       choices:
         - content: .tga
           isCorrect: false
-          explanation: Because it is StereoKit Texture format.
+          explanation: It is a Texture format used in StereoKit.
         - content:  .bmp
           isCorrect: false
-          explanation: Because it is StereoKit Texture format.
+          explanation: It is a Texture format used in StereoKit.
         - content: .obj
           isCorrect: true
           explanation: As it supports Model format.
