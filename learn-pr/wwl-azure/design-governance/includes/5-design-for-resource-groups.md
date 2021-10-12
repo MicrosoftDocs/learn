@@ -46,7 +46,7 @@ Description automatically generated with medium confidence](../media/final-revie
 :::image type="content" source="../media/group-app.png" alt-text="Separate resource groups for app1 and app2.":::
 
 
-- **Consider** **group by department****,** **group by location** **(region), and** **group by billing** **(cost center)**. These grouping strategies aren’t common but may be useful in your situation. 
+- **Consider group by department, group by location (region), and group by billing (cost center)**. These grouping strategies aren’t common but may be useful in your situation. 
 
 - **Consider a combination of organizational strategies.** Don’t restrict your thinking to one strategy. Often a combination of different strategies is best. 
 

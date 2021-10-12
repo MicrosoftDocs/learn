@@ -26,9 +26,6 @@ Tailwind Traders is now ready to consider applying Azure policy to their apps. S
 
 - **Consider using the Azure policy compliance dashboard.** The Azure policy compliance dashboard provides an aggregated view to help evaluate the overall state of the environment. You can drill down to a per-resource, or per-policy level granularity. You can also use capabilities like bulk remediation for existing resources and automatic remediation for new resources, to resolve issues rapidly and effectively.
 
-:::image type="content" source="../media/azure-policy-compliance.png" alt-text="Screenshot of Azure policy non-compliant resources.":::
-
-
 - **Consider when Azure policy evaluates resources**. Azure policy evaluates resources at specific times. It’s important to understand when an evaluation is triggered. There may be a lag in identifying non-compliant resources. The following events or times will trigger an evaluation.
 
 	- A resource has been created, deleted, or updated in scope with a policy assignment.
