@@ -37,6 +37,8 @@ In this exercise, you'll use the example scenario from the previous unit to lear
     | **Plan** |
     | Plan type | _Consumption (Serverless)_ | Specifies the hosting plan that defines how resources are allocated to your function app. In the default **Consumption** plan, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run. |
 
+1. Select **Next : Networking (preview)**.
+
 1. Select **Next : Monitoring**.
 
 1. On the **Monitoring** tab, enter the following value for the setting.
