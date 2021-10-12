@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 title: Introduction to StereoKit
-summary: By the end of this module, you'll be able to set up, create and build an application. You'll also work across OpenXR platforms like HoloLens 2, Windows Mixed Reality, Monado Linux, and so on.
+summary: By the end of this module, you'll be able to set up, create, and build an application. You'll also work across OpenXR platforms like HoloLens 2, Windows Mixed Reality, Monado Linux, and so on.
 abstract: |
   By the end of this module you will be able to:
   - have a brief knowledge about the StereoKit application and its advantages.
@@ -17,7 +17,7 @@ abstract: |
   - how to configure, set up and build an application using StereoKit for Mixed Reality development.
   - basic understanding of how code, 3D model, hand stimulation, and UI button works in your StereoKitInk application.
   - learns fundamentals of drawing and interacting with Mixed Reality content.
-  - understand developing the mixed reality application with StereoKit working across OpenXR platforms like HoloLens 2 and Universal Windows Platform such as Windows PC.
+  - understand developing the mixed reality application with StereoKit working across OpenXR platforms like HoloLens 2, and Windows PC.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
