@@ -1,6 +1,6 @@
 In this unit, you'll deploy a Docker image to Azure Kubernetes Service.
 
-With Azure Kubernetes Service, you will be configuring your Azure Kubernetes Cluster to run in a desired state, via a Deployment, which is the process of providing declarative updates to Pods and ReplicaSets. This declaration of state is administered in the manifest (YAML) file, and the Kubernetes controller will change the current state to the declared state when instructed. You will create this ```deployment.yml``` manifest file below and instruct your Azure Kubernetes Service to run in a desired state with pods configured to pull/run the ```turkishairlines``` Docker image that is resident in Azure Container Registry (that was pushed in from the previous unit). Without this deployment.yml you would manually have to to create, update, and delete pods instead of letting the Azure Kubernetes Service orchestrate this. 
+With Azure Kubernetes Service, you will be configuring your Azure Kubernetes Cluster to run in a desired state, via a Deployment, which is the process of providing declarative updates to Pods and ReplicaSets. This declaration of state is administered in the manifest (YAML) file, and the Kubernetes controller will change the current state to the declared state when instructed. You will create this ```deployment.yml``` manifest file below and instruct your Azure Kubernetes Service to run in a desired state with pods configured to pull/run the ```turkishairlines``` Docker image that is resident in Azure Container Registry (that was pushed in from the previous unit). Without this deployment.yml you would manually have to to create, update, and delete pods instead of letting the Azure Kubernetes Service orchestrate this.
 
 ## Deploy a Docker image
 
@@ -69,8 +69,13 @@ You'll want to configure your Azure CLI to access your Azure Kubernetes Cluster 
 
 > [!NOTE]
 > If your session has idled out, your doing this step at another point in time and/or from another CLI you may have to re initialize your environment variables and re authenticate with the following CLI commands.
->```AZ_RESOURCE_GROUP=javacontainerizationdemorg AZ_CONTAINER_REGISTRY=javacontainerizationdemoacr AZ_KUBERNETES_CLUSTER=javacontainerizationdemoaks AZ_LOCATION=<YOUR_AZURE_REGION> AZ_KUBERNETES_CLUSTER_DNS_PREFIX=<YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER>```
-> ```az login``` and ```az acr login -n $AZ_CONTAINER_REGISTRY```
+>AZ_RESOURCE_GROUP=javacontainerizationdemorg
+>AZ_CONTAINER_REGISTRY=javacontainerizationdemoacr
+>AZ_KUBERNETES_CLUSTER=javacontainerizationdemoaks
+>AZ_LOCATION=<YOUR_AZURE_REGION> 
+>AZ_KUBERNETES_CLUSTER_DNS_PREFIX=<YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER>```
+>az login
+>az acr login -n $AZ_CONTAINER_REGISTRY
 
 ```bash
 az aks install-cli

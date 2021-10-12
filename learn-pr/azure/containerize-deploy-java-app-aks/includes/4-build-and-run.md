@@ -2,7 +2,7 @@ In this unit, you'll build and run the Docker image.
 
 ## Build a Docker image
 
-Now that you have successfully constructed a Dockerfile, you can instruct Docker to build a Docker image for you. 
+Now that you have successfully constructed a Dockerfile, you can instruct Docker to build a Docker image for you.
 
 > [!NOTE]
 > A running instance of a Docker image is called a "container"
@@ -176,4 +176,4 @@ You should see the following
 
 You can optionally log in with any user from tomcat-users.xml for example someuser@azure.com:password
 
-To stop the Docker container hold ctrl + c inside the CLI. 
+To stop the Docker container hold ctrl + c inside the CLI.

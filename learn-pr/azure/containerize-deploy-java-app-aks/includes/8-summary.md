@@ -32,3 +32,9 @@ This command might take a minute to run.
 > Deprovision the Azure resources you used in this module to avoid unwanted charges.
 
 ## Additional resources
+
+Learn more about [Docker](https://docs.docker.com/reference/).
+
+Learn more about [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/).
+
+Learn more about [Azure Kubernetes Service](https://azure.microsoft.com/en-us/services/kubernetes-service/).

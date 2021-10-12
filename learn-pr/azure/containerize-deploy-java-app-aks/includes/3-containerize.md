@@ -1,6 +1,6 @@
 In this unit, you'll containerize a Java application.
 
-As mentioned earlier, containers run directly on top of the host operating system, kernel and hardware, as essentially just another process. Because of this, containers require less system resources, resulting in a smaller footprint with substantially less overhead, faster application startup times, and a great use case for scaling on demand. 
+As mentioned earlier, containers run directly on top of the host operating system, kernel and hardware, as essentially just another process. Because of this, containers require less system resources, resulting in a smaller footprint with substantially less overhead, faster application startup times, and a great use case for scaling on demand.
 
 There are multiple container runtimes. In this module, you’ll leverage the widely used Docker runtime to build a Docker image that will ultimately, in the next unit, deploy to the host operating system of your local machine and within the Azure Kubernetes Service.
 
@@ -19,7 +19,7 @@ The Docker runtime is used to build, pull, run, and push Docker images. The belo
 
 ## Clone the Java Application
 
-First you'll clone the Turkish Airlines repo. 
+First you'll clone the Turkish Airlines repo.
 
 > [!NOTE]
 > If the Azure Kubernetes Service creation has successfully completed in your CLI tab, use that one, otherwise if it's still running, open a new tab and cd to the location of where you prefer to clone Turkish Airline.
@@ -42,7 +42,7 @@ Run the following command in your CLI:
 mvn clean install
 ```
 
-Maven should have successfully built the Turkish Airlines Web Application Archive artifact TurkishAirlines-0.0.1-SNAPSHOT.war, as seen below:
+Maven should have successfully built the Turkish Airlines Web Application Archive artifact TurkishAirlines-0.0.-SNAPSHOT.war, as seen below:
 
 ```bash
 [INFO] Building war: /mnt/c/Users/chtrembl/dev/git/Flight-Booking-System-JavaServlets_App/Project/TurkishAirlines/target/TurkishAirlines-0.0.1-SNAPSHOT.war
