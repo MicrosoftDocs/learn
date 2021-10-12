@@ -6,7 +6,7 @@ To test the capabilities of the Speech service, we'll use a simple command-line 
 
 1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance. 
 
-2. When you are prompted to review permissions, click **Accept**.
+2. If you are prompted to review permissions, click **Accept**.
 
 ## Create a *Speech* resource
 
@@ -21,11 +21,11 @@ Let's start by creating a **Speech** resource in your Azure subscription:
     - **Resource group**: *Select an existing resource group or create a new one*.
 
 3. Review and create the resource, and wait for deployment to complete. Then go to the deployed resource.
-4. View the **Keys and Endpoint** page for your Speech resource. You will need the location/region and keys to connect from client applications.
+4. View the **Keys and Endpoint** page for your Speech resource. You will need the **location/region** and **keys** to connect from client applications.
 
 ## Configure and run a client application
 
-Now that you have a cloud shell environment, you can run a simple client application that uses the Computer Vision service to analyze an image.
+Now that you have a resource, you can run a simple client application that uses the Speech service.
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
 
@@ -46,15 +46,6 @@ Now that you have a cloud shell environment, you can run a simple client applica
     ![The editor containing code to use the Speech service](../media/speaking-clock-code.png)
 
 4. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Speech resource. Copy these from the **Keys and Endpoints** page for your resource (which should still be in the top area of the browser) and paste them into the code editor, replacing the **YOUR_LOCATION** and **YOUR_KEY** placeholder values respectively.
-
-    >**Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
-
-    After pasting the endpoint and key values, the first two lines of code should look similar to this:
-
-    ```PowerShell
-    $region="eastus"
-    $key="1a2b3c4d5e6f7g8h9i0j...."
-    ```
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
 
