@@ -1,4 +1,4 @@
-TODO
+Pipelines enable you to automate the testing and deployment of your Bicep code. Many of the benefits of using Bicep, or other infrastructure as code tools, come from creating unified pipelines that deploy and configure everything together: your Azure infrastructure, applications, and even your data. In this module, you'll learn about how to extend a pipeline that already deploys Bicep code to deploy an entire solution.
 
 ## Example scenario
 
@@ -13,3 +13,5 @@ TODO
 ## Prerequisites
 
 TODO
+
+Stages, jobs, steps
