@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-ad-identity-protection.access-reviews
+title: Implement access reviews
+metadata:
+  title: Implement access reviews
+  description: "Implement access reviews"
+  ms.date: 10/09/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-access-reviews.md)]
