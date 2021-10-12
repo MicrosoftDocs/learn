@@ -6,17 +6,15 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
 1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance. 
 
-2. When you are prompted to review permissions, click **Accept**. 
+2. If you are prompted to review permissions, click **Accept**. 
 
 ## Create a Cognitive Services resource 
 
-In Azure, you can use the cognitive services to translate between multiple languages.
+In Azure, you can use a Cognitive Services resource to translate between multiple languages.
 
 If you don't already have one, use the following steps to create a **Cognitive Services** resource in your Azure subscription:
 
-> **Note**: If you already have a Cognitive Services resource, just open its **Quick start** page in the Azure portal and copy its key and endpoint to the cell below. Otherwise, follow the steps below to create one.
-
-1. In another browser tab, open the Azure portal at https://portal.azure.com, signing in with your Microsoft account.
+1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with your Microsoft account.
 2. Click the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: *Select or create a resource group with a unique name*.
@@ -36,7 +34,7 @@ To use your cognitive services resource, client applications need its authentica
 
 ## Configure and run a client application
 
-Now that you have a cloud shell environment, you can run a simple client application that uses the Computer Vision service to analyze an image.
+Now that you have a resource, you can run a simple client application that uses the Translator service.
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
 
@@ -58,15 +56,6 @@ Now that you have a cloud shell environment, you can run a simple client applica
 
 4. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Speech resource. Copy these from the **Keys and Endpoints** page for your resource (which should still be in the top area of the browser) and paste them into the code editor, replacing the **YOUR_LOCATION** and **YOUR_KEY** placeholder values respectively.
 
-    >**Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
-
-    After pasting the location and key values, the first two lines of code should look similar to this:
-
-    ```PowerShell
-    $region="eastus"
-    $key="1a2b3c4d5e6f7g8h9i0j...."
-    ```
-
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
 
     The sample client application will use the Translator service to do several tasks:
@@ -81,7 +70,7 @@ Now that you have a cloud shell environment, you can run a simple client applica
     Your browser does not support the audio element.
     </audio>
 
-6. In the PowerShell pane, enter the following command to run the code:
+6. In the Cloud Shell pane, enter the following command to run the code:
 
     ```
     cd ai-900
