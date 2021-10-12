@@ -26,7 +26,7 @@ quiz:
     - content: "Storage optimized"
       isCorrect: false
       explanation: "That's incorrect. This type has high disk throughput and IO ideal for Big Data, SQL, NoSQL databases, data warehousing and large transactional databases."
-  - content: "Which of the below represents a logical grouping of VMs that allows Azure to understand how your application is built to provide for redundancy and availability?"
+  - content: "Which of the below represent a logical grouping of VMs that allows Azure to understand how your application is built to provide for redundancy and availability?"
     choices:
     - content: "Load balancer"
       isCorrect: false
