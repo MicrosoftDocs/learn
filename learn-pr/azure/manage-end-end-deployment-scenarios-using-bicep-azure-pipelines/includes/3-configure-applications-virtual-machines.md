@@ -8,11 +8,13 @@ The build process compiles the source code into binary files or executables. Typ
 
 The output of the build process is a deployable *artifact* that's saved to the pipeline agent's file system. Later stages of your pipeline need to work with the artifact to deploy it through your environments, and test it as it progresses through the quality gates you define.
 
+<!-- TODO need to mention CI vs. CD -->
+
 ### Pipeline artifacts
 
 The artifacts generated in your pipeline aren't stored in your Git repository. They're derived from the source code, but they aren't code themselves and so they don't belong in a source control repository. Instead, artifacts are stored by Azure Pipelines, and they're associated with the particular run of your pipeline.
 
-Files that are created on the pipeline agent's file system aren't automatically published as pipeline artifacts. You use a built-in pipeline task to instruct Azure Pipelines to publish a file or folder as an artifact:
+Files that are created on the pipeline agent's file system aren't automatically published as pipeline artifacts. You use the `PublishBuildArtifacts` built-in pipeline task to instruct Azure Pipelines to publish a file or folder as an artifact:
 
 TODO
 
@@ -22,7 +24,7 @@ Later jobs and stages in the pipeline can download the artifact so that they can
 
 :::image type="content" source="../media/3-website-pipeline-artifact.png" alt-text="Diagram showing a pipeline publishing and then referring to an artifact named 'Website'." border="false":::
 
-When you use deployment jobs, pipeline artifacts are automatically downloaded by default. If you use regular jobs, use the TODO task to download a pipeline artifact:
+When you use deployment jobs, pipeline artifacts are automatically downloaded by default. If you use regular jobs, use the `DownloadBuildArtifacts` task to download a pipeline artifact:
 
 TODO
 
@@ -32,13 +34,13 @@ The build process for an application generates and publishes a deployable artifa
 
 ### Deploy to Azure App Service
 
-Your toy company uses Azure App Service to host their website. An App Service app can be created and configured by using Bicep, but when it comes time to deploy the application itself, there are several options to get the compiled application onto your hosting infrastructure. The most common approach is to use the TODO Azure Pipelines task:
+Your toy company uses Azure App Service to host their website. An App Service app can be created and configured by using Bicep, but when it comes time to deploy the application itself, there are several options to get the compiled application onto your hosting infrastructure. The most common approach is to use the `AzureRmWebAppDeployment` Azure Pipelines task:
 
 TODO
 
 You need to provide several pieces of information to deploy your application to App Service. This includes the name of the App Service app. As you learned earlier in the module, you should add an output to your Bicep file, and use a pipeline variable to propagate the application name through your pipeline. You also need to specify a Zip file to deploy. Typically this is the path to a pipeline artifact.
 
-App Service also needs you to authenticate before you can deploy. App Service has its own data plane authentication system that it uses for deployments. The TODO task uses the service principal associated with your service connection to create and download the necessary credentials for deployment.
+App Service also needs you to authenticate before you can deploy. App Service has its own data plane authentication system that it uses for deployments. The `AzureRmWebAppDeployment` task uses the service principal associated with your service connection to create and download the necessary credentials for deployment.
 
 > [!TIP]
 > Azure Functions is built on App Service, and uses a similar deployment process.

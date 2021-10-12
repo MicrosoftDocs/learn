@@ -12,4 +12,5 @@ Needs info on APIM and ADF
 Pipeline variables, including stage/job outputs
 App Service deployment slots
 Deploying to VMs and AKS
+Self-hosted agents
 -->
