@@ -1,15 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-gaming.player-experiences-knowledge-check
-title: Knowledge check
+uid: learn.intro-to-gaming.player-experiences
+title: Gaming and disability player experiences
 metadata:
-  title: Knowledge check
-  description: This quiz lets you find out how much you learned from the Gaming and Disability Player Experiences unit. 
-  ms.date: 08/12/2021
+  title: Gaming and disability player experiences
+  description: This content is part of the Introduction to Gaming and Disability module.
+  ms.date: 08/10/2021
   author: erzelman
   ms.author: erzelman
   ms.topic: interactive-tutorial
   ms.prod: learning-gaming-accessibility
-durationInMinutes: 3
+durationInMinutes: 18
+content: |
+  [!include[](includes/02-player-experiences.md)]
 quiz:
   title: Check your knowledge
   questions:
