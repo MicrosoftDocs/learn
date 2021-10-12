@@ -4,7 +4,7 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
 
 1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance. 
 
-2. When you are prompted to review permissions, click **Accept**.
+2. If you are prompted to review permissions, click **Accept**.
 
 ## Create a *Face* resource
 
