@@ -54,7 +54,7 @@ Both online and offline migrations have the same prerequisite tasks:
 
 - Provision your target database in Azure.
 
->[NOTE]
+>[!NOTE]
 >Size the target database appropriately for the migrated workload. 
 
 ### 1. Assess the on-premises databases
