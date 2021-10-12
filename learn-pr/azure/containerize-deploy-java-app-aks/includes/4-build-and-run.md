@@ -1,11 +1,8 @@
-In this unit, you'll build and run the Docker image.
+In this unit, you'll build and run the Docker image. A running instance of a Docker image is called a container.
 
 ## Build a Docker image
 
 Now that you have successfully constructed a Dockerfile, you can instruct Docker to build a Docker image for you.
-
-> [!NOTE]
-> A running instance of a Docker image is called a "container"
 
 ```docker build``` is the command used to build Docker images. The ```-t``` argument will be used to specify a container label and the ```.``` is the location for Docker to find the Dockerfile. Run the following command in your CLI:
 
