@@ -1,4 +1,4 @@
-Now that you created an Azure Kubernetes Service (AKS) cluster with the policy add-on enabled, you'll need to find the policy definitions that you want to assign to your environment. In this section you'll learn how to discover policies and the next section will walk you through an example on how to assign those policies.
+Now that you created an Azure Kubernetes Service (AKS) cluster with the policy add-on enabled, you'll need to find the policy definitions that you want to assign to your environment. In this section, you'll learn how to discover policies and the next section will walk you through an example on how to assign those policies.
 
 ## Types of Azure Policies for AKS
 
@@ -12,10 +12,10 @@ It is useful to think about the Azure policies for Kubernetes this way. They all
 
 ## Discovering built-in Azure policies for Kubernetes
 
-There are two way to discover built-in Azure policies for Kubernetes:
+There are two ways to discover built-in Azure policies for Kubernetes:
 
 1. [By using the Azure documentation](/azure/governance/policy/samples/built-in-policies), which details the built-in policies.
-1. By using the [Azure policy blade in the Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Definitions), going to definitions and filtering on category _Kubernetes_.
+1. By using the [Azure policy blade in the Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Definitions), going to definitions, and filtering on category _Kubernetes_.
 
 You can assign one or multiple of these policy definitions to your management groups, subscriptions, or resource groups. In the next unit, you will follow an exercise that will walk you through how to do that.
 

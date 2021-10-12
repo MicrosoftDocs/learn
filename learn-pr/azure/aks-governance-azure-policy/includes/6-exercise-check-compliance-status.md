@@ -1,4 +1,4 @@
-In the previous section you saw how Azure policies can be used to easily govern your cluster by using a built-in Policy and Initiative. We also noted that the policy does not terminate already existing pods. We however would like to discover non-compliant pods so that we can take actions on them. We will do that in this exercise.
+In the previous section, you saw how Azure policies can be used to easily govern your cluster by using a built-in Policy and Initiative. We also noted that the policy does not terminate already existing pods. We however would like to discover non-compliant pods so that we can take actions on them. We will do that in this exercise.
 
 ## Using the Azure Portal to see non-compliant pods
 
@@ -11,7 +11,7 @@ In the previous section you saw how Azure policies can be used to easily govern 
    >[!NOTE]
    > It may take a few minutes for the non-compliant pods to show up in the Portal.
 
-   Here we see that we have non-compliant resources for both the Policy and the Initiative we deployed. The resources are not compliant with three of the policies from the **Kubernetes cluster pod security restricted standards for Linux-based workloads for videogamerg** initiative. Clicking on that initiative will show which of the eight polices are the three that are not compliant.
+   Here we see that we have non-compliant resources for both the Policy and the Initiative we deployed. The resources are not compliant with three of the policies from the **Kubernetes cluster pod security restricted standards for Linux-based workloads for videogamerg** initiative. Clicking on that initiative will show which of the eight policies are the three that are not compliant.
 
    ![screenshot showing the policies that the resources are not compliant with](../media/6-not-compliant-cluster.png)
 
@@ -25,7 +25,7 @@ In the previous section you saw how Azure policies can be used to easily govern 
 
 Now that we have found the pod that is not compliant, we will go ahead and delete that pod. Once the pod is deleted, the Policy will prevent future pods that are not compliant with it from being deployed. The **Kubernetes cluster pod security restricted standards for Linux-based workloads for videogamerg** initiative is set to audit meaning we can identify pods that are not compliant, but would not prevent the pods from being deployed. Getting our pods to comply with that initiative is beyond the scope of this course, so we will focus on fixing the Policy that we set to have the **deny** effect.
 
-1. Open the Cloud shell again and delete the non-compliant deployment
+1. Open the Cloud Shell again and delete the non-compliant deployment
 
    ```bash
 kubectl delete deployment simple-nginx
