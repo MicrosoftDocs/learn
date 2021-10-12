@@ -16,6 +16,8 @@ Often need to seed databases, apply schemas, or upload blobs
 - Insert data
 - Issue SQL commands
 
+:::image type="content" source="../media/6-dacpac-pipeline-artifact.png" alt-text="Diagram showing a pipeline publishing and then referring to an artifact named 'database'." border="false":::
+
 ### Azure Cosmos DB
 
 - Can create and configure containers in Bicep

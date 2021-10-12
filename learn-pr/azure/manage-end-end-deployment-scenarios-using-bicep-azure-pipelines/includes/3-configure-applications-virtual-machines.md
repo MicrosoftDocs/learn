@@ -20,7 +20,7 @@ Each artifact has a name, which you use to refer to it later in the pipeline.
 
 Later jobs and stages in the pipeline can download the artifact so that they can work with them, such as to deploy the website to the server that hosts it:
 
-(diagram - fabric icon: package)
+:::image type="content" source="../media/3-website-pipeline-artifact.png" alt-text="Diagram showing a pipeline publishing and then referring to an artifact named 'Website'." border="false":::
 
 When you use deployment jobs, pipeline artifacts are automatically downloaded by default. If you use regular jobs, use the TODO task to download a pipeline artifact:
 

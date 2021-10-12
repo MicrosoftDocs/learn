@@ -1,4 +1,4 @@
-TODO
+You updated your pipeline to build and deploy your website's application to the Azure App Service app defined in your Bicep file. But the smoke test stage is failing because the database isn't working yet. In this unit, you'll deploy a new Azure SQL logical server and database, and you'll configure your pipeline to build and deploy the database's schema. You'll also update your pipeline to add some sample product data for your test environment.
 
 In the process, you'll:
 
