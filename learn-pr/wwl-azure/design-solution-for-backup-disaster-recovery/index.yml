@@ -3,13 +3,13 @@ uid: learn.wwl.design-solution-for-backup-disaster-recovery
 metadata:
   title: Design a solution for backup and disaster recovery
   description: "During this module, you learned how to select appropriate backup solutions for Azure workloads. You also learned how to select appropriate disaster recovery options for these workloads. Having completed this module, you’ll now be able to select appropriate backup and recovery solutions for your workloads."
-  ms.date: 10/11/2021
+  ms.date: 10/12/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Design a solution for backup and disaster recovery
-summary: During this module, you learned how to select appropriate backup solutions for Azure workloads. You also learned how to select appropriate disaster recovery options for these workloads. Having completed this module, you’ll now be able to select appropriate backup and recovery solutions for your workloads.
+summary: Learn how to select appropriate backup solutions and disaster recovery solutions for Azure workloads.
 abstract: |
   In this module, you’ll learn how to:
   •	Design for backup and recovery.
