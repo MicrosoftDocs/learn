@@ -4,34 +4,34 @@ At First Up Consultants, you've been granted access to a resource group for the 
 
 Follow these steps to see what roles are currently assigned to you.
 
-1. Select Launch lab button above, then select Start lab. In the secondary popup, select Get Started.
+1. Select **Launch lab**, and then select **Start lab**. In the secondary popup, select **Get Started**.
 1. In the lab instructions menu, select the **Resources** tab.
 
     :::image type="content" source="../media/4-resources-tab.png" alt-text="Screenshot of Resources tab in lab instructions.":::
 1. Look for the Admin username like **LabAdmin-_XXXXXXX_** and the password.
-1. Sign into Azure portal using the LabAdmin username and password.
-1. Close the Welcome popup, and in the upper-right corner of the Azure portal, click the profile picture to open the profile menu.
-1. Make sure you are signed in as the **LabAdmin-_XXXXXXX_** that was identified in the lab instructions Resources tab. If you're signed in with a different account, sign out and sign in using the LabAdmin username and password on the Resources tab.
+1. Sign in to the Azure portal using the LabAdmin username and password.
+1. Close the Welcome popup, and in the upper-right corner of the Azure portal, select the profile picture to open the profile menu.
+1. Make sure you are signed in as the **LabAdmin-_XXXXXXX_** that was identified in the lab instructions' **Resources** tab. If you're signed in with a different account, sign out and sign in using the LabAdmin username and password on the **Resources** tab.
 
-1. On the Profile menu, click the ellipsis (**...**) to see more links.
+1. On the **Profile** menu, select the ellipsis (**...**) to see more links.
 
     :::image type="content" source="../media/4-my-permissions-menu.png" alt-text="Screenshot of user menu with My permissions highlighted.":::
 
-1. Select **My permissions** to open the My permissions pane.
+1. Select **My permissions** to open the **My permissions** pane.
 
     :::image type="content" source="../media/4-my-permissions-pane.png" alt-text="Screenshot of the My permissions pane.":::
 
-    On the My permissions pane, you can see the roles that you have been assigned and the scope. Your list will look different.
+    You can see the roles that you have been assigned and the scope. Your list will look different.
 
 ## List role assignments for a resource group
 
 Follow these steps to see what roles are assigned at the resource group scope.
 
-1. Select Home, and then under  **Azure services** select **Resource groups**.
+1. Select **Home**, and under **Azure services**, select **Resource groups**.
 
     :::image type="content" source="../media/4-resource-groups.png" alt-text="Screenshot of the Azure portal showing Azure services and recent resources.":::
 
-1. Select the resource group  **FirstUpConsultantsRG1-_XXXXXXX_** and on the left menu pane, select **Access control (IAM)**.
+1. Select the resource group **FirstUpConsultantsRG1-_XXXXXXX_** and on the left menu pane, select **Access control (IAM)**.
 
     :::image type="content" source="../media/4-resource-group-access-control.png" alt-text="Screenshot showing Access control (IAM) option on the resource group pane.":::
 
@@ -45,7 +45,7 @@ Follow these steps to see what roles are assigned at the resource group scope.
 
 As you learned in the previous unit, a role is a collection of permissions. Azure has over 70 built-in roles that you can use in your role assignments. Follow this step to list the roles.
 
-- In the menu bar at the top of the pane, select **Roles** tab to list of all the built-in and custom roles.
+- In the menu bar at the top of the pane, select the **Roles** tab to list of all the built-in and custom roles.
 
    Select a role from this tab to display the number of users and groups assigned to that role.
 
