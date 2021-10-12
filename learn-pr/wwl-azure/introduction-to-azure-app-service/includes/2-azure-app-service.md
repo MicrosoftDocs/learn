@@ -19,7 +19,7 @@ Using the Azure portal, or command-line tools, you can easily add deployment slo
 
 App Service can also host web apps natively on Linux for supported application stacks. It can also run custom Linux containers (also known as Web App for Containers). App Service on Linux supports a number of language specific built-in images. Just deploy your code. Supported languages include: Node.js, Java (JRE 8 & JRE 11), PHP, Python, .NET Core, and Ruby. If the runtime your application requires is not supported in the built-in images, you can deploy it with a custom container.
 
-The languages, and their supported versions, are updated on a regular basis. You can an updated list by using the following command in the Cloud Shell.
+The languages, and their supported versions, are updated on a regular basis. You can update list by using the following command in the Cloud Shell.
 
 ```bash
 az webapp list-runtimes --linux
