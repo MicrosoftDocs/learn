@@ -1,4 +1,4 @@
-In this chapter, you'll learn how to install StereoKit and enable Developer Mode on your Development PC and HoloLens2 devices
+In this chapter, you'll learn how to install StereoKit and enable Developer Mode on your Development PC and HoloLens 2 devices.
 
 ## Install Visual Studio 2019 for StereoKit
 
@@ -49,7 +49,7 @@ There are two templates provided:
 
 ## Enable Developer Mode
 
-Enabling Developer Mode in Hololens 2 & Windows PC makes it easier to test the applications you're working on. In addition, you can install Universal Windows Platform & Windows apps from outside the Windows Store, even if they're not signed with a valid certificate. This is an essential feature for app developers who want to test their apps on their PCs while still developing.
+Enabling Developer Mode in HoloLens 2 & Windows PC makes it easier to test the applications you're working on. In addition, you can install Universal Windows Platform & Windows apps from outside the Windows Store, even if they're not signed with a valid certificate. This is an essential feature for app developers who want to test their apps on their PCs while still developing.
 
 ### Enable developer mode for HoloLens 2
 
