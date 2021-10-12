@@ -6,7 +6,7 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
 1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance. 
 
-2. When you are prompted to review permissions, click **Accept**. 
+2. If you are prompted to review permissions, click **Accept**. 
 
 ## Create a Custom Vision resource
 
@@ -77,7 +77,7 @@ Now you're ready to publish your trained model and use it from a client applicat
 
 ## Configure and run a client application
 
-Now that you have a cloud shell environment, you can run a simple client application that uses the Computer Vision service to analyze an image.
+Now that you have a custom model, you can run a simple client application that uses the Custom Vision service to classify images.
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
 
@@ -111,12 +111,6 @@ Get the *prediction key*. Click on the *project gallery page** icon on the top l
 
 Copy the prediction key. Paste it in the code editor, replacing the **YOUR_PREDICTION_KEY** placeholder value.
 
-After pasting the endpoint and key values, the first two lines of code should look similar to this:
-
-```
-$predictionUrl="https://mycv.cognitiveservices.azure.com/.../groceries/url"
-$predictionKey = "123abc456def789ghi0klmnopq"
-```
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
 
