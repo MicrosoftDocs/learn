@@ -10,11 +10,11 @@ In this chapter, you'll learn how to install StereoKit and enable Developer Mode
 
     :::image type="content" source="../media/run-visual-studio-installer.png" alt-text="Screenshot shows how to run the Visual Studio installer to your PC." lightbox="../media/run-visual-studio-installer.png":::
 
-3. Once Visual Studio installation starts, you'll see a few seconds of initialization followed by a feature selection option. Select the **".NET Desktop development** and **Universal Windows Platform development (for HoloLens)"** checkbox in Visual Studio 2019's features list. Then, after making the required selections, click on the **"Install"** button.
+3. Once Visual Studio installation starts, you'll see a few seconds of initialization followed by a feature selection option. Select the **".NET Desktop development** and **Universal Windows Platform development (for HoloLens)"** checkbox in Visual Studio 2019's features list. Then, after making the required selections, click on the **"Modify"** button.
 
     :::image type="content" source="../media/select-workloads.png" alt-text="Screenshot of how to select .NET Desktop development and Universal Windows Platform development (for HoloLens) in Visual Studio 2019." lightbox="../media/select-workloads.png":::
 
-4. When you click "Install," Visual Studio will proceed with downloading and installing the features you've specified. You may be requested to **"Restart"** your computer once the installation process is complete. Launch your Visual Studio to verify that the installation was successful.
+4. When you click "Modify," Visual Studio will proceed with downloading and installing the features you've specified. You may be requested to **"Restart"** your computer once the installation process is complete. Launch your Visual Studio to verify that the installation was successful.
 
     :::image type="content" source="../media/test-visual-studio.png" alt-text="Screenshot of testing the visual studio launcher." lightbox="../media/test-visual-studio.png":::
 
@@ -43,13 +43,13 @@ There are two templates provided:
 
     :::image type="content" source="../media/install-stereokit-templates.png" alt-text="Screenshot of VSIX installer dialogue box.” " lightbox="../media/install-stereokit-templates.png":::
 
-3. Click **close** in the pop up once the installation is complete.
+3. Click **close** in the pop-up once the installation is complete.
 
     :::image type="content" source="../media/close-stereokit-templates-installation.png" alt-text="Screenshot of VSIX installer close button.” " lightbox="../media/close-stereokit-templates-installation.png":::
 
 ## Enable Developer Mode
 
-Enabling Developer Mode in UWP/Hololens 2 & Windows PC makes it easier to test the applications you're working on. In addition, you can install Universal Windows Platform & Windows apps from outside the Windows Store, even if they're not signed with a valid certificate. This is an essential feature for app developers who want to test their apps on their PCs while still developing.
+Enabling Developer Mode in Hololens 2 & Windows PC makes it easier to test the applications you're working on. In addition, you can install Universal Windows Platform & Windows apps from outside the Windows Store, even if they're not signed with a valid certificate. This is an essential feature for app developers who want to test their apps on their PCs while still developing.
 
 ### Enable developer mode for HoloLens 2
 

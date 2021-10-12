@@ -2,7 +2,7 @@
 uid: learn.azure.intro-to-stereokit
 metadata:
   title: Introduction to StereoKit
-  description: By the end of this module, you'll be able to set up, create and build an application. You'll also work across OpenXR platforms like HoloLens 2, Windows Mixed Reality, Monado Linux, and so on.
+  description: By the end of this module, you'll be able to set up, create, and build an application. You'll also work across OpenXR platforms like HoloLens 2, Windows Mixed Reality, Monado Linux, and so on.
   ms.date: 10/05/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
@@ -12,12 +12,12 @@ title: Introduction to StereoKit
 summary: By the end of this module, you'll be able to set up, create, and build an application. You'll also work across OpenXR platforms like HoloLens 2, Windows Mixed Reality, Monado Linux, and so on.
 abstract: |
   By the end of this module you will be able to:
-  - have a brief knowledge about the StereoKit application and its advantages.
-  - learn some of the key features of StereoKit.  
-  - how to configure, set up and build an application using StereoKit for Mixed Reality development.
-  - basic understanding of how code, 3D model, hand stimulation, and UI button works in your StereoKitInk application.
-  - learns fundamentals of drawing and interacting with Mixed Reality content.
-  - understand developing the mixed reality application with StereoKit working across OpenXR platforms like HoloLens 2, and Windows PC.
+  - Have a brief knowledge about the StereoKit application and its advantages.
+  - Learn some of the key features of StereoKit.  
+  - How to configure, set up and build an application using StereoKit for Mixed Reality development.
+  - Basic understanding of how code, 3D model, hand stimulation, and UI button works in your StereoKitInk application.
+  - Learns fundamentals of drawing and interacting with Mixed Reality content.
+  - Understand developing the mixed reality application with StereoKit working across OpenXR platforms like HoloLens 2, and Windows PC.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

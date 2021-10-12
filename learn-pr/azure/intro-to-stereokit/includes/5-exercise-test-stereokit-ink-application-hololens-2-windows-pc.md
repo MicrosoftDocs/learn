@@ -1,4 +1,4 @@
-In the pervious chapters you learned how to download the template, import the package and 3D models. Now in this chapter lets learn how to build and test your application on HoloLens 2.
+In the previous chapter, you have learned how the StereoKitInk application is developed to be configured. Now in this chapter, you will learn how to build and test StereoKitInk application on HoloLens 2 and Desktop.
 
 During the build process, you may encounter errors when opening the Solution Explorer and the C# program file. In order to debug the errors, you need to run the initial build solution.
 
@@ -19,13 +19,13 @@ During the build process, you may encounter errors when opening the Solution Exp
 
 ## Build your application on Desktop
 
-1. To bulid your application to Desktop, configure Visual Studio for Desktop by clicking onto "Solution Configuration" ensure the **Debug** and **Any device** is selected.
+1. To build your application to Desktop, configure Visual Studio for Desktop by clicking onto "Solution Configuration" ensure the **Debug** and **Any device** is selected.
   
     :::image type="content" source="../media/change-solution-configuration.png" alt-text="Screenshot shows changing of Solution configuration." lightbox="../media/change-solution-configuration.png":::
 
 2. Click on the Device dropdown and ensure the **StereoKitInk** is selected.
   
-    :::image type="content" source="../media/ensure-project-setup-desktop.png" alt-text="Screenshot shows ensuring of projectsetup desktop is selected." lightbox="../media/ensure-project-setup-desktop.png":::
+    :::image type="content" source="../media/ensure-project-setup-desktop.png" alt-text="Screenshot shows ensuring of project setup desktop is selected." lightbox="../media/ensure-project-setup-desktop.png":::
 
 3. Then in the menu bar click on the **Debug** > **Start Debugging**.
   Start Debugging automatically starts the application on your device with the Visual Studio debugger attached.

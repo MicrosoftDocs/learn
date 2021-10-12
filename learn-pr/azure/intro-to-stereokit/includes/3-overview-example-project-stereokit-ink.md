@@ -1,4 +1,4 @@
-So far you've learned how to install and configure your visual studio, enabling the developer mode. In this module you'll have a basic understanding of how 3D model, hand stimulation, and UI button work in your StereoKitInk application.
+So far you've learned how to install and configure your visual studio, enabling the developer mode. In this module you'll have a basic understanding of how 3D model, hand stimulation, and UI button work in StereoKit.
 
 ## Asset access
 
@@ -84,10 +84,6 @@ public static void DrawHandMenu(Handed handed)
 }
 ```
 
-## Pointers
-
-Lastly, StereoKit features a pointer system. Pointers are used to interact with game objects that are close enough to the user to grab, touch, and manipulate. Pointers are not constrained only to hands, it will be created in the scene by the head, mouse, and other devices, respectively. In addition, you can filter pointers based on source family and device capabilities.
-
 ## UI buttons
 
 UI buttons allow you to take actions, and make choices. If you want to perform certain actions after any interaction with the objects on the scene, you can make use of UI buttons.
@@ -109,7 +105,7 @@ float slider     = 0.5f;
 Sprite powerSprite = Sprite.FromFile("power.png", SpriteType.Single);
 ```
 
-As a base unit, StereoKit uses meters. Consider the case of a window that is tilted to 20cm wide and autoresizes on the Y axis, the U class comes in handy here because it helps you to reason visually about the units we're working with.
+As a base unit, StereoKit uses meters. Consider the case of a window that is tilted to 20cm wide and auto resizes on the Y axis, the U class comes in handy here because it helps you to reason visually about the units we're working with.
 
 You can toggle to turn the windows header on and off and the value from that toggle is passed via the showHeader field as shown in the code below.
 
