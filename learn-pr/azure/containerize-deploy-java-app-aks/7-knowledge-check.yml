@@ -45,7 +45,7 @@ quiz:
       explanation: "CMD instruction is used to set a command to be executed when running the container."
     - content: "START"
       isCorrect: true
-      explanation: "START is not a Dockerfile instruction."
+      explanation: ""
   - content: "What is a multi-stage Docker build?"
     choices:
     - content: "A feature that enables you to create a smaller container image with better caching and a smaller security footprint."
