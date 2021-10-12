@@ -16,7 +16,11 @@ The first step would be to create an AKS cluster that has Azure policies enabled
 
 Before installing the Azure Policy add-on or enabling any of the service features, your subscription must enable the **Microsoft.PolicyInsights** resource provider.
 
+<<<<<<< HEAD
 1. You need the Azure CLI version 2.12.0 or later installed and configured. Run `az --version` to find the version. If you need to install or upgrade, see [Install the Azure CLI](cli/azure/install-azure-cli).
+=======
+1. You need the Azure CLI version 2.12.0 or later installed and configured. Run `az --version` to find the version. If you need to install or upgrade, see [Install the Azure CLI](/cli/azure/install-azure-cli).
+>>>>>>> 9e0d01c061aadae238b354d922b33f5205c29395
 1. Register the resource providers and preview features.
 
 In this exercise, we will be using Azure Cloud Shell to run the commands. Feel free to use a terminal of your choice for this exercise. To begin, login to your **Azure Portal**
