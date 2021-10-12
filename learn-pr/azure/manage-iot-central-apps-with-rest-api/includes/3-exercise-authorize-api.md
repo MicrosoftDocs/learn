@@ -43,7 +43,8 @@ The following steps create an IoT Central application and generate an API token 
 1. Run the following command to sign in to your subscription. You don't usually run this command in the Cloud Shell, but here it's necessary to generate a bearer token for your IoT Central application. Follow the instructions to complete the login process:
 
     ```azurecli
-    az login
+    TENANT=`az account show --query homeTenantId -o tsv`
+    az login --tenant $TENANT
     ```
 
 1. Run the following commands to get the IDs of the built-in **App Administrator** and **App Operator** roles from your application. You don't yet have an API token to use, so the `--resource https://apps.azureiotcentral.com` parameter generates an authorization header with a bearer token:
