@@ -1,0 +1,19 @@
+## What are Barriers to Access?
+
+You now have an introductory understanding of the core elements present in gaming experiences; the visual, hearing, mobility, and cognitive aspects of accessing these elements; and the wide range of abilities that players may have. Next, you'll learn how to apply this knowledge to identify potential barriers to access for game titles, platforms, and gaming hardware. Barriers to access occur when a gaming product or experience requires a specific ability that a player may not be able to perform. For example, in order to turn on a gaming headset, players must press the on button. However, the size of the on button for this particular headset is incredibly small and takes a considerable amount of force to press down. A player with limited mobility in their hands may lack the strength and coordination required to press a button of this size and force. These players would experience barriers to access.
+
+Why Identify Barriers to Access?
+
+Identifying potential barriers to access that your game title, platform, or hardware product may introduce is an important first step on your accessibility journey. At this point in your game accessibility journey, it's not expected that you will be able to identify and implement effective approaches to remove these barriers. However, without identifying the presence of these potential barriers that can exclude players early on in the development process, it will not be possible to scope accessibility goals and address these barriers down the road.
+
+It's important to note that identifying these potential barriers to access for future users is a preliminary step that should be taken early in the development cycle to help scope accessibility goals. Once the title, platform experience, or hardware device has a working prototype that is ready to be tested, it's imperative that users with wide ranges of disabilities be included in testing and feedback loops to validate proper implementation of these accessibility goals. Additionally, as a product or experience develops, aspects of it will change over time. Including users with disabilities in testing and feedback loops will help identify barriers to access that exist in the current prototype or build, and provide feedback on how effective or usable any efforts made to eliminate those barriers prior to testing are.
+
+## How to Identify Barriers to Access
+
+Identifying barriers to access within a game title, platform, or gaming hardware is a process that requires an understanding and application of the information identified in units 2 and 3.
+
+Step 1. First, it's important to assess the primary features or elements of your gaming experience or product. Good questions to ask include what are the types of visual, hearing, mobility, and cognitive abilities that users must use to have a successful interaction?
+
+Step 2. Next, it's important to think about the wide range of abilities that players may have as discussed in unit 3. Evaluate the visual, hearing, mobility, and cognitive abilities required to successfully interact with your product or experience through the lens of disability and inclusion. Are there any required actions or skills that are likely to pose difficulty for players, including those with disabilities? If you are unsure, it's best to make note of those components so you can include gather feedback from players with disabilities on them in the future!
+
+Step 3. Once you have identified potential areas within your game title, platform, or hardware device that may pose accessibility barriers for players, it's important to note these areas of concern and ensure efforts to provide accessible solutions are present within accessibility goal planning documentation.

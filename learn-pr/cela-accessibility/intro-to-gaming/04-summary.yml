@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-gaming.summary
+title: Summary & resources
+metadata:
+  title: Summary & resources
+  description: This content is part of the Introduction to Gaming and Disability module.
+  ms.date: 08/10/2021
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 18
+content: |
+  [!include[](includes/04-summary.md)]
