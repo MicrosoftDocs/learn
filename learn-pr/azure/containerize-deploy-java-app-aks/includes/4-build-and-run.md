@@ -1,4 +1,4 @@
-In this unit, you'll build and run the Docker image. A running instance of a Docker image is called a container.
+In this unit, you'll build and run the Docker image. As mentioned earlier, a running instance of a Docker image is a container.
 
 ## Build a Docker image
 
