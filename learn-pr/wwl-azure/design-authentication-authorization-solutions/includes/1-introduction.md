@@ -1,4 +1,4 @@
-*Meet Tailwind Traders**
+**Meet Tailwind Traders**
 
 :::image type="content" source="../media/tailwind-traders.png" alt-text="The Tailwind Traders logo.":::
 
