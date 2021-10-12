@@ -57,12 +57,43 @@ await sender.SendMessageAsync(message);
 To receive messages, you must first register a message handler - this is the method in your code that will be invoked when a message is available on the queue.
 
 ```C#
-ServiceBusReceiver receiver = client.CreateReceiver(queueName);
-ServiceBusReceivedMessage receivedMessage = await receiver.ReceiveMessageAsync();
+var options = new ServiceBusProcessorOptions
+{
+    MaxConcurrentCalls = 1，
+    AutoCompleteMessages = false
+};
+await using ServiceBusProcessor processor = client.CreateProcessor(queueName, options);
+// configure the message and error handler to use
+processor.ProcessMessageAsync += MessageHandler;
+processor.ProcessErrorAsync += ErrorHandler;
+
+async Task MessageHandler(ProcessMessageEventArgs receivedMessage)
+{
+    string body = receivedMessage.Message.Body.ToString();
+    Console.WriteLine(body);
+
+    // we can evaluate application logic and use that to determine how to settle the message.
+    await receivedMessage.CompleteMessageAsync(receivedMessage.Message);
+}
+
+Task ErrorHandler(ProcessErrorEventArgs err)
+{
+    // the error source tells me at what point in the processing an error occurred
+    Console.WriteLine(err.ErrorSource);
+    // the fully qualified namespace is available
+    Console.WriteLine(err.FullyQualifiedNamespace);
+    // as well as the entity path
+    Console.WriteLine(err.EntityPath);
+    Console.WriteLine(err.Exception.ToString());
+    return Task.CompletedTask;
+}
+
+// start processing
+await processor.StartProcessingAsync();
 ```
 
-Do your processing work. Then, within the message handler, call the `receiver.CompleteMessageAsync()` method to remove the message from the queue.
+Do your processing work. Then, within the message handler, call the `receivedMessage.CompleteMessageAsync()` method to remove the message from the queue.
 
 ```C#
-await receiver.CompleteMessageAsync(receivedMessage);
+await receivedMessage.CompleteMessageAsync(receivedMessage.Message);
 ```
