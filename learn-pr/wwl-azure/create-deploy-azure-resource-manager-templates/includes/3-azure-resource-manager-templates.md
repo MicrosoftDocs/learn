@@ -50,7 +50,7 @@ You can deploy a template using any of the following options:
 
 How you define templates and resource groups is entirely up to you and how you want to manage your solution. For example, you can deploy a three tier application through a single template to a single resource group.
 
-:::image type="content" source="../media/three-tier-template.png" alt-text="Image showing the deployment of a virtual machine, app service, and SQL DB to a resource group in a single ARM template":::
+:::image type="content" source="../media/three-tier-template.png" alt-text="Image showing the deployment of a virtual machine, app service, and SQL DB to a resource group in a single Azure Resource Manager template":::
 
 But, you don't have to define your entire infrastructure in a single template. Often, it makes sense to divide your deployment requirements into a set of targeted, purpose-specific templates. You can easily reuse these templates for different solutions. To deploy a particular solution, you create a master template that links all the required templates. The following image shows how to deploy a three tier solution through a parent template that includes three nested templates.
 

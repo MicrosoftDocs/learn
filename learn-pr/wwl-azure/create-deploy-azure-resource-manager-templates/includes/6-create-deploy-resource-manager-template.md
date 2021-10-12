@@ -1,6 +1,6 @@
-In this exercise you will learn how to use Visual Studio Code, and the Azure Resource Manager (ARM) Tools extension, to create and edit Azure Resource Manager templates.
+In this exercise you will learn how to use Visual Studio Code, and the Azure Resource Manager  Tools extension, to create and edit Azure Resource Manager templates.
 
-* Create an ARM template
+* Create an Azure Resource Manager template
 * Add an Azure resource to the template
 * Add parameters to the template
 * Create a parameter file
@@ -10,10 +10,10 @@ In this exercise you will learn how to use Visual Studio Code, and the Azure Res
 ## Prerequisites
 
 * An **Azure account** with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free).
-* [Visual Studio Code](https://code.visualstudio.com/) with the [Azure Resource Manager (ARM) Tools](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools) installed.
+* [Visual Studio Code](https://code.visualstudio.com/) with the [Azure Resource Manager  Tools](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools) installed.
 * [Azure CLI](/cli/azure/) installed locally
 
-## Create an ARM template
+## Create an Azure Resource Manager template
 
 1. Create and open a new file named *azuredeploy.json* with Visual Studio Code. 
 
@@ -95,7 +95,7 @@ Follow the steps below to update the name property of the storage resource to us
 
 1. In the `resources` block, delete the current default name which is `storageaccount1` in the examples above. Leave the quotes (`""`) around the name in place.
 
-1. Enter a square bracket `[`, which produces a list of ARM template functions. Select **parameters** from the list.
+1. Enter a square bracket `[`, which produces a list of Azure Resource Manager template functions. Select **parameters** from the list.
 
 1. Enter a single quote `'` inside of the round brackets produces a list of all parameters defined in the template and select **storageAccountName**.
 
@@ -120,7 +120,7 @@ The resources block of the template should now be similar to the example below.
 
 ## Create a parameter file
 
-An ARM template parameter file allows you to store environment-specific parameter values and pass these values in as a group at deployment time. This useful if you want to have values specific to a test or production environment, for example. The extension makes it easy to create a parameter file that is mapped to your existing template. Follow the steps below to create a parameter file.
+An Azure Resource Manager template parameter file allows you to store environment-specific parameter values and pass these values in as a group at deployment time. This useful if you want to have values specific to a test or production environment, for example. The extension makes it easy to create a parameter file that is mapped to your existing template. Follow the steps below to create a parameter file.
 
 1. With the *azuredeploy.json* file in focus open the **Command Palette**  by selecting **View > Command Palette** from the menu bar.
 
