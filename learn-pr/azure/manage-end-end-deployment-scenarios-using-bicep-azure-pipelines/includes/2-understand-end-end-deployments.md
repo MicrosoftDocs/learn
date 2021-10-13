@@ -48,24 +48,14 @@ It's good practice for the Bicep file to decide on the names of your Azure resou
 
 Azure Pipelines enables you to propagate the values of outputs by using *pipeline variables*. You can set the value of a pipeline variable within a pipeline script. You use a specially formatted log output that Azure Pipelines understands how to interpret:
 
-```
-echo "##vso[task.setvariable variable=myVariableName]VariableValue"
-```
+:::code language="yaml" source="code/2-outputs-jobs.yml" highlight="7, 11" :::
 
-By default, any subsequent steps in the same job can read the value of the variable, but tasks in other jobs within the stage can't. However, if you create a pipeline variable and include the `isOutput=true` setting, then later jobs in the same stage can read it, too. You need to *map* the variable to make it accessible to the job that reads it:
+When you access variables that were created in another job in the same stage, you need to *map* the variable to make it accessible to the job that reads it:
 
-```yml
-variables:
-  myVariableName: $[ dependencies.JobName.outputs['StepName.myVariableName'] ]
-```
-
-<!-- TODO check the syntax above is correct -->
+:::code language="yaml" source="code/2-outputs-stages.yml" range-"1-16" highlight="12-13" :::
 
 You can access variables across pipeline stages, too. You also need to map the variable, but you use a slightly different syntax:
 
-```yml
-variables:
-  myVariableName: $[ stageDependencies.StageName.JobName.outputs['JobName.StepName.myVariableName'] ]
-```
+:::code language="yaml" source="code/2-outputs-stages.yml" highlight="22-23" :::
 
 By using Bicep outputs and pipeline variables, you can create a multistage pipeline that deploys your Bicep code and then performs a wide range of actions on the resources as part of your deployment.

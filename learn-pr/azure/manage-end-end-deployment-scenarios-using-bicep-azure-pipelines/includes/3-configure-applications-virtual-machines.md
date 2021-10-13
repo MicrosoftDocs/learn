@@ -36,7 +36,6 @@ When you use deployment jobs, pipeline artifacts are automatically downloaded by
 
 ```yaml
 - task: DownloadBuildArtifacts@0
-  displayName: Download my-artifact-name pipeline artifact
   inputs:
     buildType: 'current'
     downloadType: 'single'
@@ -54,8 +53,6 @@ Your toy company uses Azure App Service to host their website. An App Service ap
 
 ```yaml
 - task: AzureRmWebAppDeployment@4
-  name: DeployMyApp
-  displayName: Deploy website
   inputs:
     azureSubscription: MyServiceConnection
     ResourceGroupName: MyResourceGroup
