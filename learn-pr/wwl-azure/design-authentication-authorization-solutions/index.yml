@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.design-authentication-authorization-solutions
+metadata:
+  title: Design authentication and authorization solutions
+  description: "Azure Architects design and recommend authentication and authorization solutions."
+  ms.date: 10/13/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design authentication and authorization solutions
+summary: Azure Architects design and recommend authentication and authorization solutions.
+abstract: |
+  In this module, you’ll learn how to:
+  * Design for identity and access management.
+  * Design for Azure Active Directory.
+  * Design for Azure Active Directory Business to Business.
+  * Design for Azure Active Directory Business to Customer.
+  * Compare external identity solutions.
+  * Design for role-based access control.
+  * Design for conditional access.
+  * Design for identity protection.
+  * Design for access reviews.
+prerequisites: |
+  * Working experience creating, assigning, and securing corporate identities.
+  * Conceptual knowledge of identity assignment solutions, role-based access control,  and identity protection methods.
+iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- azure-active-directory
+- azure-active-directory-b2c
+- azure-rbac
+units:
+- learn.wwl.design-authentication-authorization-solutions.introduction
+- learn.wwl.design-authentication-authorization-solutions.design-for-identity-access-management
+- learn.wwl.design-authentication-authorization-solutions.design-for-azure-active-directory
+- learn.wwl.design-authentication-authorization-solutions.design-for-azure-ad-b2b
+- learn.wwl.design-authentication-authorization-solutions.design-for-azure-ad-b2c
+- learn.wwl.design-authentication-authorization-solutions.compare-external-identity-solutions
+- learn.wwl.design-authentication-authorization-solutions.design-for-role-based-access-control
+- learn.wwl.design-authentication-authorization-solutions.design-for-conditional-access
+- learn.wwl.design-authentication-authorization-solutions.design-for-identity-protection
+- learn.wwl.design-authentication-authorization-solutions.design-for-access-reviews
+- learn.wwl.design-authentication-authorization-solutions.knowledge-check
+- learn.wwl.design-authentication-authorization-solutions.summary-resources
+badge:
+  uid: learn.wwl.design-authentication-authorization-solutions.badge
