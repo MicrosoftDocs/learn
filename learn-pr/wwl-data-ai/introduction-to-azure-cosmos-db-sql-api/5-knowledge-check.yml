@@ -36,7 +36,7 @@ quiz:
     - content: "Indexing policy"
       isCorrect: false
       explanation: "That's incorrect. You can create a container without specifying an indexing policy. Azure Cosmos DB will automatically index every property of every item."
-  - content: "Your team has an existing Azure Cosmos DB account, database, and container.A new team member would like to configure Azure Cosmos DB for a different team with unique needs for regional replication and default consistency levels.Which new resource should that member of the team create?"
+  - content: "Your team has an existing Azure Cosmos DB account, database, and container. A new team member would like to configure Azure Cosmos DB for a different team with unique needs for regional replication and default consistency levels. Which new resource should that member of the team create?"
     choices:
     - content: "Container"
       isCorrect: false

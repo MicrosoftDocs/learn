@@ -11,23 +11,23 @@ Now that you have completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [Azure Cosmos DB resource model][azure/cosmos-db/account-databases-containers-items]
-- [Choose an API in Azure Cosmos DB][azure/cosmos-db/choose-api]
-- [Partitioning and horizontal scaling in Azure Cosmos DB &vert; Choosing a partition key][azure/cosmos-db/partitioning-overview#choose-partitionkey]
-- [What is Azure Synapse Link for Azure Cosmos DB?][azure/cosmos-db/synapse-link]
-- [Azure Cosmos DB .NET SDK v3 for SQL API][azure/cosmos-db/sql/sql-api-sdk-dotnet-standard]
-- [Azure Cosmos DB Java SDK v4 for SQL API][azure/cosmos-db/sql/sql-api-sdk-java-v4]
-- [Azure Cosmos DB Node.js SDK for SQL API][azure/cosmos-db/sql/sql-api-sdk-node]
-- [Azure Cosmos DB Python SDK for SQL API][azure/cosmos-db/sql/sql-api-sdk-python]
+- [Azure Cosmos DB resource model][/azure/cosmos-db/account-databases-containers-items]
+- [Choose an API in Azure Cosmos DB][/azure/cosmos-db/choose-api]
+- [Partitioning and horizontal scaling in Azure Cosmos DB &vert; Choosing a partition key][/azure/cosmos-db/partitioning-overview#choose-partitionkey]
+- [What is Azure Synapse Link for Azure Cosmos DB?][/azure/cosmos-db/synapse-link]
+- [Azure Cosmos DB .NET SDK v3 for SQL API][/azure/cosmos-db/sql/sql-api-sdk-dotnet-standard]
+- [Azure Cosmos DB Java SDK v4 for SQL API][/azure/cosmos-db/sql/sql-api-sdk-java-v4]
+- [Azure Cosmos DB Node.js SDK for SQL API][/azure/cosmos-db/sql/sql-api-sdk-node]
+- [Azure Cosmos DB Python SDK for SQL API][/azure/cosmos-db/sql/sql-api-sdk-python]
 - [SLA for Azure Cosmos DB
 ][azure.microsoft.com/support/legal/sla/cosmos-db]
 
-[azure/cosmos-db/account-databases-containers-items]: /azure/cosmos-db/account-databases-containers-items
-[azure/cosmos-db/choose-api]: /azure/cosmos-db/choose-api
-[azure/cosmos-db/partitioning-overview#choose-partitionkey]: /azure/cosmos-db/partitioning-overview#choose-partitionkey
-[azure/cosmos-db/synapse-link]: /azure/cosmos-db/synapse-link
-[azure/cosmos-db/sql/sql-api-sdk-dotnet-standard]: /azure/cosmos-db/sql/sql-api-sdk-dotnet-standard
-[azure/cosmos-db/sql/sql-api-sdk-java-v4]: /cosmos-db/sql/sql-api-sdk-java-v4
-[azure/cosmos-db/sql/sql-api-sdk-node]: /azure/cosmos-db/sql/sql-api-sdk-node
-[azure/cosmos-db/sql/sql-api-sdk-python]: /azure/cosmos-db/sql/sql-api-sdk-python
+[/azure/cosmos-db/account-databases-containers-items]: /azure/cosmos-db/account-databases-containers-items
+[/azure/cosmos-db/choose-api]: /azure/cosmos-db/choose-api
+[/azure/cosmos-db/partitioning-overview#choose-partitionkey]: /azure/cosmos-db/partitioning-overview#choose-partitionkey
+[/azure/cosmos-db/synapse-link]: /azure/cosmos-db/synapse-link
+[/azure/cosmos-db/sql/sql-api-sdk-dotnet-standard]: /azure/cosmos-db/sql/sql-api-sdk-dotnet-standard
+[/azure/cosmos-db/sql/sql-api-sdk-java-v4]: /cosmos-db/sql/sql-api-sdk-java-v4
+[/azure/cosmos-db/sql/sql-api-sdk-node]: /azure/cosmos-db/sql/sql-api-sdk-node
+[/azure/cosmos-db/sql/sql-api-sdk-python]: /azure/cosmos-db/sql/sql-api-sdk-python
 [azure.microsoft.com/support/legal/sla/cosmos-db]: https://azure.microsoft.com/support/legal/sla/cosmos-db/
