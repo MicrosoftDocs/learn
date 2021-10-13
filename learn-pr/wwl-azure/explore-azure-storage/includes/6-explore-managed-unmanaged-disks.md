@@ -56,10 +56,10 @@ Azure offers four tiers of managed disks according to their performance characte
     IO-intensive workloads such as SAP HANA, top tier databases (for example, SQL, Oracle), and other transaction-heavy workloads.
   :::column-end:::
   :::column:::
-    Production and performance sensitive workloads
+    Production and performance-sensitive workloads
   :::column-end:::
   :::column:::
-    Web servers, lightly used enterprise applications and dev/test
+    Web servers, lightly used enterprise applications, and dev/test
   :::column-end:::
   :::column:::
     Backup, non-critical, infrequent access
