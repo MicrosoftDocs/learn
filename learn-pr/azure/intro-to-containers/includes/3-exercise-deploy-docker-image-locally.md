@@ -37,50 +37,50 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
 
 ## Examine the container in the local Docker registry
 
-1. At the command prompt, view the running containers in the local registry.
+1. At the command prompt, run the following command to view the running containers in the local registry.
 
    ```bash
    docker ps
    ```
 
-   The output should look similar to this.
+   The output should look similar to the following:
 
    ```console
-   CONTAINER ID        IMAGE                                COMMAND                  CREATED             STATUS              PORTS                  NAMES
-   bffd59ae5c22        mcr.microsoft.com/dotnet/core/samples:aspnetapp   "dotnet aspnetapp.dll"   12 seconds ago      Up 11 seconds       0.0.0.0:8080->80/tcp   competent_hoover
+   CONTAINER ID   IMAGE                                             COMMAND                  CREATED          STATUS          PORTS                  NAMES
+96c851831ade   mcr.microsoft.com/dotnet/core/samples:aspnetapp   "dotnet aspnetapp.dll"   22 minutes ago   Up 22 minutes   0.0.0.0:8080->80/tcp   eager_montalcini
    ```
 
-   The **COMMAND** field shows the container started by running the command *dotnet aspnetapp.dll*. This command invokes the .NET Core runtime to start the code in the aspnetapp.dll (the code for the sample web app). The *PORTS* field indicates port 80 in the image was mapped to port 8080 on your computer. The *STATUS* field shows the application is still running. Make a note of the container's *NAME*.
+   The **COMMAND** field shows the container started by running the command *dotnet aspnetapp.dll*. This command invokes the .NET Core runtime to start the code in the aspnetapp.dll (the code for the sample web app). The *PORTS* field indicates that port 80 in the image was mapped to port 8080 on your computer. The *STATUS* field shows the application is still running. Make a note of the container's *NAME*.
 
-1. Stop the Docker container. Specify the container name for the web app in the following command, in place of `<NAME>`.
+1. Run the following command to stop the Docker container, replacing the placeholder `<NAME>` with the output name from the previous command.
 
     ```bash
     docker container stop <NAME>
     ```
 
-1. Verify that the container is no longer running. Run the following command to show the status of the container as *Exited*. The *-a* flag indicates that the command shows the status of all containers, not just those that are still running.
+1. Run the following command to verify that the container is no onger running. The *-a* flag indicates that the command shows the status of all containers, not just those that are running. The output should show the STATUS of the container as *Exited*. 
 
     ```bash
     docker ps -a
     ```
 
-1. Return to the web browser, and refresh the page for the sample web app. It should fail with a *Connection Refused* error.
+1. In your web browser, refresh the page for the sample web app (http://localhost:8080/). It should fail with a *Connection Refused* error.
 
 ## Remove the container and image from the local registry
 
-1. Although the container has stopped, it's still loaded and can be restarted. Remove it by running the following command. As before, replace `<NAME>` with the name of your container.
+1. Although the container has stopped, it's still loaded and can be restarted. Run the following command in the command prompt window to remove it, replacing `<NAME>` placeholder with the name of your container.
 
     ```bash
     docker container rm <NAME>
     ```
 
-1. Verify that the container has been removed by running the following command. The output should no longer list the container.
+1. Verify that the container has been removed by running the following command. The command should no longer list the container.
 
     ```bash
     docker ps -a
     ```
 
-1. List the image(s) currently available on your computer.
+1. List the images currently available on your computer. The output should show thae samples repository.
 
     ```bash
     docker image ls
@@ -92,7 +92,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
     docker image rm mcr.microsoft.com/dotnet/core/samples:aspnetapp
     ```
 
-1. List the image(s) again to verify that the image for the *microsoft/dotnet-samples* web app has disappeared.
+1. The output should list numerous items untagged and deleted. Run the following command to list the images again and verify that the image for the *microsoft/dotnet-samples* web app has disappeared.
 
     ```bash
     docker image ls
