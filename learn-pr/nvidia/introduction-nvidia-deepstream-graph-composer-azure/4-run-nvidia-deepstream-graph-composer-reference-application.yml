@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-run-an-nvidia-deepstream-graph-composer-reference-application.md)]
+  [!include[](includes/4-run-nvidia-deepstream-graph-composer-reference-application.md)]

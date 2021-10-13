@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-package-nvidia-deepstream-graph-composer-application-into-a-containerized-workload.md)]
+  [!include[](includes/5-package-nvidia-deepstream-graph-composer-application-into-containerized-workload.md)]
