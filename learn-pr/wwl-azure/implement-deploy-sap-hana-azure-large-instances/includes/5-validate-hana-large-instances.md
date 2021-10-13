@@ -190,4 +190,4 @@ To prevent HANA from trying to grow data files beyond the 16 TB file size limit 
 With SAP HANA 2.0, the hdbparam framework has been deprecated. As a result, the parameters must be set by using SQL commands. For more information, see [SAP Note \#2399079](https://launchpad.support.sap.com/#/notes/2399079).
 
 > [!NOTE]
-> When deploying SAP HANA on Azure (Large Instances), take into account the exceptions documented at [SAP HANA (Large Instances) network architecture](/azure/virtual-machines/workloads/sap/hana-network-architecture#networking-architecture-for-hana-large-instance)
+> When deploying SAP HANA on Azure (Large Instances), take into account the exceptions documented at [SAP HANA (Large Instances) network architecture](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/hana-network-architecture#networking-architecture-for-hana-large-instance)

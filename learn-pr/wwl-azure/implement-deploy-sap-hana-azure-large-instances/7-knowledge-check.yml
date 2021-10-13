@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/11/2021
+  ms.date: 10/13/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -17,18 +17,18 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the first step you must take before Microsoft provisions SAP HANA on Azure (Large Instances)? Select one."
+  - content: "What is the first step that must be taken before Microsoft provisions SAP HANA on Azure (Large Instances)?"
     choices:
-    - content: "Provide Microsoft with the Azure virtual network created that is connected to your on-premises network."
+    - content: "Provide Microsoft with the Azure virtual network that is connected to your on-premises network."
       isCorrect: false
-      explanation: "Incorrect. You must provide Microsoft with detailed information in order to have them deploy SAP HANA on Azure (Large Instances) units. This includes names, contact information, SKU configurations, IP address ranges, and more."
+      explanation: "Incorrect. As the first step, you must provide Microsoft with detailed information in order to have them deploy SAP HANA on Azure (Large Instances) units. This includes names, contact information, SKU configurations, IP address ranges, and more."
     - content: "Provide Microsoft with detailed information to provision you an SAP HANA Large Instance."
       isCorrect: true
-      explanation: "Correct. You must provide Microsoft with detailed information in order to have them deploy SAP HANA on Azure (Large Instances) units. This includes names, contact information, SKU configurations, IP address ranges, and more."
+      explanation: "Correct. As the first step, you must provide Microsoft with detailed information in order to have them deploy SAP HANA on Azure (Large Instances) units. This includes names, contact information, SKU configurations, IP address ranges, and more."
     - content: "Connect the ExpressRoute circuit for HANA Large Instances to your on-premises network."
       isCorrect: false
-      explanation: "Incorrect. You must provide Microsoft with detailed information in order to have them deploy SAP HANA on Azure (Large Instances) units. This includes names, contact information, SKU configurations, IP address ranges, and more."
-  - content: "When you are connecting Azure virtual machines to HANA Large Instances, how many gateway subnets are required for each virtual network that connects to the SAP HANA on Azure (Large Instances) ExpressRoute circuit? Select one."
+      explanation: "Incorrect. As the first step, you must provide Microsoft with detailed information in order to have them deploy SAP HANA on Azure (Large Instances) units. This includes names, contact information, SKU configurations, IP address ranges, and more."
+  - content: "When connecting Azure virtual machines to HANA Large Instances, how many gateway subnets are required for each virtual network that connects to the SAP HANA on Azure (Large Instances) ExpressRoute circuit?"
     choices:
     - content: "1 per VNet"
       isCorrect: true
@@ -39,7 +39,7 @@ quiz:
     - content: "No more than 3 total"
       isCorrect: false
       explanation: "Incorrect. There must always be one, and only one, gateway subnet for each virtual network that connects to the SAP HANA on Azure (Large Instances) ExpressRoute circuit."
-  - content: "When you are connecting Azure virtual machines to HANA Large Instances, and you want to use an ultra-performance ExpressRoute gateway, what size virtual network gateway subnet IP address range should you uses? Select one."
+  - content: "When connecting Azure virtual machines to HANA Large Instances, what size virtual network gateway subnet IP address range is required to use an ultra-performance ExpressRoute gateway? Select one."
     choices:
     - content: "/26 address block"
       isCorrect: true
@@ -50,7 +50,7 @@ quiz:
     - content: "/28 address block"
       isCorrect: false
       explanation: "Incorrect. The recommended size is a /26 address block (this is required for all Type II SKUs)."
-  - content: "How should you handle time synchronization for SAP HANA database instances running on HANA Large Instances? Select one."
+  - content: "How should time synchronization for SAP HANA database instances running on HANA Large Instances be handled?"
     choices:
     - content: "No special steps are required, Azure ensures that the system's time is properly synchronized."
       isCorrect: false
@@ -61,7 +61,7 @@ quiz:
     - content: "Check regularly for new patches and fixes of the specific OS release/version - system time is synchronized during this process."
       isCorrect: false
       explanation: "Incorrect. For SAP HANA on Azure (Large Instances), time synchronization that's done in Azure doesn't apply to the compute units in the Large Instance stamps. As a result, you must set up a separate time server that can be used by SAP application servers that are running on Azure VMs and by the SAP HANA database instances that are running on HANA Large Instances."
-  - content: "How do you download the SAP HANA installation bits from SAP to your HANA Large Instance virtual machine? Select one."
+  - content: "How are the SAP HANA installation bits from SAP downloaded to a HANA Large Instance virtual machine?"
     choices:
     - content: "Download them directly via the VM's internet connection."
       isCorrect: false
