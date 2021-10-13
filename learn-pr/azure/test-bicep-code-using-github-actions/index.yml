@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.azure.test-bicep-code-using-github-actions
+metadata:
+  moduleType: standard
+  title: Test your Bicep code by using GitHub Actions
+  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  ms.date: 14/10/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Test your Bicep code by using GitHub Actions
+summary: "TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master"
+abstract: |
+  By the end of this module, you'll be able to:
+    - "TODO learning objective 1"
+    - "TODO learning objective 2"
+    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)"
+prerequisites: |
+  - "TODO prerequisite 1"
+  - "TODO prerequisite 2"
+  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master"
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
+  - beginner
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
+  - developer
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
+- azure
+units:
+- learn.azure.test-bicep-code-using-github-actions.introduction
+- learn.azure.test-bicep-code-using-github-actions.learning-content
+- learn.azure.test-bicep-code-using-github-actions.exercise
+- learn.azure.test-bicep-code-using-github-actions.knowledge-check
+- learn.azure.test-bicep-code-using-github-actions.summary
+badge:
+  uid: learn.azure.test-bicep-code-using-github-actions.badge
