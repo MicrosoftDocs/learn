@@ -4,7 +4,7 @@ Your project team just completed the SAP HANA on Azure (Large Instances) migrati
 
 ## Learning objectives
 
-You will:
+You will: 
 
  -  Explore the high-level architecture of SAP HANA on Azure (Large Instances).
  -  Examine the architecture's components.
