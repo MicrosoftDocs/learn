@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.nvidia-deepstream-development-azure
 metadata:
-  title: NVIDIA DeepStream Development with Microsoft Azure
+  title: NVIDIA DeepStream development with Microsoft Azure
   description: Learn how to develop and securely deploy custom NVIDIA DeepStream applications to NVIDIA-powered IoT Edge devices.
   brand: azure
   ms.date: 10/01/2021
@@ -9,7 +9,7 @@ metadata:
   ms.author: pdecarlo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: NVIDIA DeepStream Development with Microsoft Azure
+title: NVIDIA DeepStream development with Microsoft Azure
 prerequisites: |
   - Knowledge of containers  
   - Familiarity with Azure IoT Edge

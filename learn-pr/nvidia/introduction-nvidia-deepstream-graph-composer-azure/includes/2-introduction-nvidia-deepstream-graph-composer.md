@@ -2,7 +2,7 @@ Previously, we introduced the NVIDIA DeepStream SDK, which enables developers to
 
 We looked at developing applications with the NVIDIA DeepStream SDK using a configuration-file driven approach.  While this method is a highly enabling strategy for IVA development, the NVIDIA Graph Composer takes this approach further by allowing you to generate DeepStream compatible IVA pipelines using a visual editor with drag and drop components.  This mechanism allows you to further simplify development while also allowing you to view how components relate to each other in an interactive graph.
 
-![NVIDIA DeepStream Graph Composer Application](../media/composer-test-1.png)
+![NVIDIA DeepStream Graph Composer Application](../media/composer-test1.png)
 
 The available components may seem familiar to the Configuration Groups that we used earlier. This is because these components and those Configuration Groups are derived from functions provided in the DeepStream SDK C libraries. These components are made available to the Composer application using a local registry that pulls and stores extensions provided by NVIDIA.  The Composer application also allows for importing custom extensions to support components.
 

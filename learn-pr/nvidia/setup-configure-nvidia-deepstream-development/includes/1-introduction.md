@@ -5,7 +5,7 @@ In this module, you will learn how to set up and configure an X86 based Ubuntu 1
 - X86 Based System running Ubuntu 18.04 OS
 - RTX2080, RTX3080, T4, or A100 NVIDIA Graphics Card
 
-![DeepStream Application running](../media/deepstream-config-labels.png)
+![DeepStream Application running](../media/deepstream-sgie-config-labels.png)
 
 ## Scenario: develop an application that counts people and vehicles within an area of business
 

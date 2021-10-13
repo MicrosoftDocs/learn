@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure
 metadata:
-  title: NVIDIA DeepStream Embedded Device Deployment with Microsoft Azure
+  title: NVIDIA DeepStream embedded device deployment with Microsoft Azure
   description: Learn how to publish and deploy an ARM based DeepStream container workload to NVIDIA embedded hardware using Azure IoT Edge.
   ms.date: 10/01/2021
   author: toolboc
   ms.author: pdecarlo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: NVIDIA DeepStream Embedded Device Deployment with Microsoft Azure
+title: NVIDIA DeepStream embedded device deployment with Microsoft Azure
 summary: In this module, we will publish and deploy an ARM based DeepStream container workload to NVIDIA embedded hardware using Azure IoT Edge.
 abstract: |
   In this module, you will learn how to:
