@@ -6,8 +6,7 @@ When considering how to migrate online on-premises unstructured data, consider t
 
 - Azure File Sync
 
->[!NOTE]
->The Windows Server Storage Migration Service is part of Windows Admin Center.
+The Windows Server Storage Migration Service is part of Windows Admin Center.
 
  
 
@@ -19,10 +18,7 @@ Consider using the Storage Migration Service if you have one or more servers tha
 
 - Rapidly transfer files, file shares, and security configuration from the source servers.
 
-- Take over the identity of the source servers (known as cutting over).
-
->[!NOTE]
-> This means that users and apps don't have to change anything to access existing data.
+- Take over the identity of the source servers (known as cutting over). This means that users and apps don't have to change anything to access existing data.
 
 - Manage one or multiple migrations from the Windows Admin Center interface.
 

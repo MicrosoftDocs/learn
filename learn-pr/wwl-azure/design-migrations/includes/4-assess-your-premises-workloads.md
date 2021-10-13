@@ -30,10 +30,7 @@ You can use several assessment tools to help in Tailwind Traders' migration to A
 
 ### Use Azure Service Map
 
-You use Service Map to automatically discover apps and their components in Tailwind Traders' on-premises environment. By doing so, you gain an invaluable insight into the app structure at Tailwind Traders. This insight lets you effectively plan and perform your migration.
-
-> [!TIP]
-> Service Map supports discovery on both Windows and Linux platforms.
+You use Service Map to automatically discover apps and their components in Tailwind Traders' on-premises environment. By doing so, you gain an invaluable insight into the app structure at Tailwind Traders. This insight lets you effectively plan and perform your migration. Service Map supports discovery on both Windows and Linux platforms.
 
 By using Service Map, you can review the Tailwind Traders' server environment as a collection of interconnected systems. Service Map displays:
 
@@ -44,15 +41,6 @@ By using Service Map, you can review the Tailwind Traders' server environment as
 - Inbound and outbound connection latency
 
 - TCP or UDP ports across any connected architecture
-
-The following screenshot displays a single virtual machine in Service Map: 24 processes are identified, and a graphic displays the TCP and UDP ports connected to processes and services. A machine summary tab is also displayed, with details about the server's properties, and with links to Alerts, Logs, and Performance details.
-
-:::image type="content" source="../media/service-map.png" alt-text="Service map showing virtual machines.":::
-
-
-
-> [!Note]
-> Aside from the installation of an agent on each connected server, you don't need to configure anything to use Service Map.
 
 You'll need the following to use Service Map:
 
@@ -150,24 +138,15 @@ Using Azure Migrate, you can perform an agentless environment discovery or use a
 
 You want to assess readiness for the move to Azure. You also want to identify estimated costs for the resources that those machines will consume, so the management team can set the budgets.
 
-Azure Migrate helps with performance-based sizing calculations (VM sizing, compute/storage) for the machines that you'll migrate and estimate the ongoing cost of running these machines in Azure.
-
->[!NOTE]
-> Azure Migrate can assess both Hyper-V and VMware-based virtual machines, as well as physical servers.
+Azure Migrate helps with performance-based sizing calculations (VM sizing, compute/storage) for the machines that you'll migrate and estimate the ongoing cost of running these machines in Azure. Azure Migrate can assess both Hyper-V and VMware-based virtual machines, as well as physical servers.
 
 Azure Migrate also supports the visualization of dependencies for those machines. It helps you create groups of machines that can be assessed together and ultimately migrated to Azure at the same time.
 
 To perform an agentless discovery, the Azure Migrate: Server Assessment tool:
 
-- Guides you through downloading a lightweight collector appliance.
+- Guides you through downloading a lightweight collector appliance. The appliance carries out the discovery of systems in your environment. 
 
->[!NOTE]
->The appliance carries out the discovery of systems in your environment. 
-
-- Uses data collected by the appliance to identify data about VM cores, memory, disk sizes, and network adapters.
-
->[!NOTE]
-> Where applicable, the collector also gathers performance data like CPU and memory usage, disk IOPS, disk throughput, and network output.
+- Uses data collected by the appliance to identify data about VM cores, memory, disk sizes, and network adapters. Where applicable, the collector also gathers performance data like CPU and memory usage, disk IOPS, disk throughput, and network output.
 
 After the data collection is complete, it's pushed to your Azure Migrate project. On the Azure portal, you can now view all the discovered systems or download a report to review.
 
