@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-to-azure-cosmos-db-sql-api
+metadata:
+  title: Introduction to Azure Cosmos DB SQL API
+  description: "Introduction to Azure Cosmos DB SQL API"
+  ms.date: 10/13/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+title: Introduction to Azure Cosmos DB SQL API
+summary: |
+  Describe Azure Cosmos DB SQL API along with the SQL API.
+  Determine if Azure Cosmos DB SQL API is a good fit for your application.
+abstract: |
+  After completing this module, you’ll be able to:
+  - Evaluate whether Azure Cosmos DB SQL API is the right database for your application.
+  - Describe how the features of the Azure Cosmos DB SQL API are appropriate for modern applications.
+prerequisites: ""
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+units:
+- learn.wwl.introduction-to-azure-cosmos-db-sql-api.introduction
+- learn.wwl.introduction-to-azure-cosmos-db-sql-api.what-is
+- learn.wwl.introduction-to-azure-cosmos-db-sql-api.how-does-work
+- learn.wwl.introduction-to-azure-cosmos-db-sql-api.when-should-you-use
+- learn.wwl.introduction-to-azure-cosmos-db-sql-api.knowledge-check
+- learn.wwl.introduction-to-azure-cosmos-db-sql-api.summary
+badge:
+  uid: learn.wwl.introduction-to-azure-cosmos-db-sql-api.badge
