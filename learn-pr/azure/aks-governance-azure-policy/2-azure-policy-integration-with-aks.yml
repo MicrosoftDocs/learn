@@ -4,7 +4,7 @@ title: Azure Policy and how it integrates with AKS
 metadata:
   title: Azure Policy and how it integrates with Azure Kubernetes Services
   description: Introduction to Azure Policy and how Azure Policy integrates with Azure Kubernetes Services
-  ms.date: 07/07/2021
+  ms.date: 10/13/2021
   author: NillsF
   ms.author: nilfran
   ms.topic: interactive-tutorial
