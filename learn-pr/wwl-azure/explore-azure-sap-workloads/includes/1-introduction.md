@@ -8,7 +8,7 @@ You understand and communicate risks, and suggest solutions using Azure to autom
 
 ## Learning objectives
 
-You will:
+You will: 
 
  -  Discover the SAP and Microsoft partnership.
  -  Explore your options with SAP on Azure.
