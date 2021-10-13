@@ -31,10 +31,10 @@ Now that we have found the pod that is not compliant, we will go ahead and delet
   kubectl delete deployment simple-nginx
   ```
 
-It might take up to 45 minutes for the changes to reflect on the portal. After waiting, head back to the Policy to to see if there are still any uncompliant pods under it. You will find that your cluster is now in compliance with the Policy.
+It might take up to 45 minutes for the changes to reflect on the portal. After waiting, head back to the Policy to see if there are still any uncompliant pods under it. You will find that your cluster is now in compliance with the Policy.
 
    ![screenshot showing that the resource is now compliant](../media/6-cluster-now-compliant.png)
 
 ## Summary
 
-In this unit, you learned about how to use Azure Portal to identify pods that are not compliant with your policies. We then went ahead and deleted a pod that was not compliant with one of the policies. You also learned how to troubleshoot your deployments and identify pods that are not being deployed because of a deny Policy. You also learned how to use Azure Portal to see non-compliant resources and which policies they are not compliant with. You also resolved one of the issues by deleting the uncompliant pod you first created. Now that you have added and tested out a Policy and an Initiative, you can go through the other in-built policies for Kubernetes and find those that suit your business needs.
+In this unit, you learned about how to use Azure portal to identify pods that are not compliant with your policies. We then went ahead and deleted a pod that was not compliant with one of the policies. You also learned how to troubleshoot your deployments and identify pods that are not being deployed because of a deny Policy. You also learned how to use Azure portal to see non-compliant resources and which policies they are not compliant with. You also resolved one of the issues by deleting the uncompliant pod you first created. Now that you have added and tested out a Policy and an Initiative, you can go through the other in-built policies for Kubernetes and find those that suit your business needs.
