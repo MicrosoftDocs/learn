@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.plan-deploy-azure-arc-enabled-servers.what-are-arc-enabled-servers
-title: What is Azure Arc-enabled Servers and their capabilities? 
+title: What is Azure Arc-enabled servers and its capabilities? 
 metadata:
-  title: What is Azure Arc-enabled Servers and their capabilities? 
+  title: What is Azure Arc-enabled servers and its capabilities? 
   description: TBD
   ms.date: 09/21/2021
   author: aurnovcy
