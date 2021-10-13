@@ -4,7 +4,7 @@ Your company needs to address the unique needs of SAP HANA on Azure (Large Insta
 
 ## Learning objectives
 
-You will:
+You will: 
 
  -  Explore SAP HANA on Azure (Large Instances) compute considerations.
  -  Examine SAP HANA on Azure (Large Instances) storage considerations.

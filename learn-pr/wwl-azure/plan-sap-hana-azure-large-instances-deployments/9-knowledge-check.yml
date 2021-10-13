@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/11/2021
+  ms.date: 10/13/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -17,29 +17,29 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When you are establishing an SAP HANA on Azure (Large Instances) setup, whose responsibility is it to ensure the Large Instance's operating system configuration settings? Select one."
+  - content: "Whose responsibility is it to ensure the Large Instance's operating system configuration settings, when establishing an SAP HANA on Azure (Large Instances) setup?"
     choices:
     - content: "SAP's"
       isCorrect: false
-      explanation: "Incorrect. Microsoft helps establish the Large Instance setup, but it is your responsibility to verify the operating system’s configuration settings. Make sure to review the most current SAP Notes for your exact Linux release."
+      explanation: "Incorrect. Microsoft helps establish the Large Instance setup, but it is the customer's responsibility to verify the operating system’s configuration settings. Make sure to review the most current SAP Notes for your exact Linux release."
     - content: "Microsoft's"
       isCorrect: false
-      explanation: "Incorrect. Microsoft helps establish the Large Instance setup, but it is your responsibility to verify the operating system’s configuration settings. Make sure to review the most current SAP Notes for your exact Linux release."
-    - content: "Yours"
+      explanation: "Incorrect. Microsoft helps establish the Large Instance setup, but it is the customer's responsibility to verify the operating system’s configuration settings. Make sure to review the most current SAP Notes for your exact Linux release."
+    - content: "The customer's"
       isCorrect: true
-      explanation: "Correct. Microsoft helps establish the Large Instance setup, but it is your responsibility to verify the operating system’s configuration settings. Make sure to review the most current SAP Notes for your exact Linux release."
-  - content: "Is it possible to host more than one active SAP HANA instance on the same HANA Large Instance unit? Select one."
+      explanation: "Correct. Microsoft helps establish the Large Instance setup, but it is the customer's responsibility to verify the operating system’s configuration settings. Make sure to review the most current SAP Notes for your exact Linux release."
+  - content: "Is it possible to host more than one active SAP HANA instance on the same HANA Large Instance unit?"
     choices:
     - content: "No."
       isCorrect: false
-      explanation: "Correct. It's possible to host more than one active SAP HANA instance on HANA Large Instance units. The allowed increments for sub-division vary depending on the HANA Large Instance SKU."
+      explanation: "Incorrect. It's possible to host more than one active SAP HANA instance on HANA Large Instance units. The allowed increments for sub-division vary depending on the HANA Large Instance SKU."
     - content: "Yes."
       isCorrect: true
       explanation: "Correct. It's possible to host more than one active SAP HANA instance on HANA Large Instance units. The allowed increments for sub-division vary depending on the HANA Large Instance SKU."
     - content: "Only on Type II SKUs"
       isCorrect: false
       explanation: "Incorrect. It's possible to host more than one active SAP HANA instance on HANA Large Instance units. The allowed increments for sub-division vary depending on the HANA Large Instance SKU."
-  - content: "Which Azure feature allows you to enable direct access to your HANA Large Instance units from on-premises, or to enable direct communication between your HANA Large Instance units deployed in different regions? Select one."
+  - content: "Which Azure feature allows direct access to HANA Large Instance units from on-premises, or direct communication between HANA Large Instance units deployed in different regions?"
     choices:
     - content: "ExpressRoute"
       isCorrect: false
