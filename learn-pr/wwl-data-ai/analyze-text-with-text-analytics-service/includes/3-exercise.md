@@ -1,6 +1,6 @@
 Natural Language Processing (NLP) is a branch of artificial intelligence (AI) that deals with written and spoken language. You can use NLP to build solutions that extracting semantic meaning from text or speech, or that formulate meaningful responses in natural language.
 
-Microsoft Azure *cognitive services* includes the *Text Analytics* service, which provides some out-of-the-box NLP capabilities, including the identification of key phrases in text, and the classification of text based on sentiment.
+Microsoft Azure *Cognitive Services* includes the *Text Analytics* service, which provides some out-of-the-box NLP capabilities, including the identification of key phrases in text, and the classification of text based on sentiment.
 
 For example, suppose the fictional *Margie's Travel* organization encourages customers to submit reviews for hotel stays. You could use the Text Analytics service to summarize the reviews by extracting key phrases, determine which reviews are positive and which are negative, or analyze the review text for mentions of known entities such as locations or people.
 
@@ -37,7 +37,7 @@ Now that you have a resource, you can run a simple client application that uses 
     git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
     ```
 
-2. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your cloud shell storage and work with them. Type the following command into the shell: 
+2. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
 
      ```
     code .
