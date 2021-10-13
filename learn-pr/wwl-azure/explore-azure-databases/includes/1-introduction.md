@@ -6,7 +6,7 @@ You must make recommendations to the architecture team about storing database fi
 
 ## Learning objectives
 
-You will:
+You will: 
 
  -  Explore database support of Azure for SAP workloads.
  -  Explore SQL Server.
