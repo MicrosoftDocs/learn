@@ -20,10 +20,10 @@ In this section, we will install the prerequisites and dependencies necessary to
 
 3. We are now ready to install the Graph Composer package.  This package will contain the `composer` application and associated `registry`, `graph execution engine`, and `container-builder` tooling.
 
-    Open a browser on the host machine, and navigate to the [x86 release of the DeepStream 6.0 Graph Composer](https://developer.nvidia.com/assets/deepstream/secure/deepstream_6.0_ea/graph-composer-0.5.0_x86_64.deb). 
-    
+    Open a browser on the host machine, and navigate to the [x86 release of the DeepStream 6.0 Graph Composer](https://developer.nvidia.com/assets/deepstream/secure/deepstream_6.0_ea/graph-composer-0.5.0_x86_64.deb).
+
     This should download into your local user's `Downloads` directory. Navigate to the download location and install the package with:
-    
+
     ```Bash
     cd ~/Downloads
     sudo dpkg -i <name of downloaded package>
@@ -34,7 +34,7 @@ In this section, we will install the prerequisites and dependencies necessary to
     Open a browser on the host machine, and navigate to the [Graph Composer Reference Examples](https://developer.nvidia.com/assets/deepstream/secure/deepstream_6.0_ea/deepstream-reference-graphs-6.0.deb).
 
     This package should download into your local user's `Downloads` directory. Navigate to the download location and install the package with:
-    
+
     ```Bash
     cd ~/Downloads
     sudo dpkg -i <name of downloaded package>

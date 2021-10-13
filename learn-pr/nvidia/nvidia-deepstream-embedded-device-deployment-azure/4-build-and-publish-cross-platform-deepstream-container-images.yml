@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-build-and-publish-cross-platform-deepstream-container-images)]
+  [!include[](includes/4-build-and-publish-cross-platform-deepstream-container-images.md)]

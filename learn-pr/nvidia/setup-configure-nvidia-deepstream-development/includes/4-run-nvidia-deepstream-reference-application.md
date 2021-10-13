@@ -9,7 +9,7 @@ Now that we have installed the NVIDIA DeepStream dependencies and SDK, we can be
     deepstream-app -c source4_1080p_dec_infer-resnet_tracker_sgie_tiled_display_int8.txt
     ```
 
-    The deepstream-app should begin building the execution engine using the model metadata defined in the supplied configuration.  This process may take a few minutes depending on the available hardware, and will run  faster on consecutive executions due to caching of the resulting engine output. 
+    The deepstream-app should begin building the execution engine using the model metadata defined in the supplied configuration.  This process may take a few minutes depending on the available hardware, and will run  faster on consecutive executions due to caching of the resulting engine output.
 
     It is important to note that the name of the configuration file tells us a bit of information about what to expect from the sample.  The `source4_1080p_dec_infer-resnet_tracker_sgie_tiled_display_int8.txt` sample will decode four 1080-p video sources and apply inference using Resnet as the primary GPU inference engine (to detect people, bicycles, vehicles, and road signs), employ object tracking, and use a Secondary GPU inference engine (for make / color / model of vehicle) that will render results on a tiled display using int8 precision (to speed up inference processing time).  
 
@@ -18,7 +18,7 @@ Now that we have installed the NVIDIA DeepStream dependencies and SDK, we can be
     ![DeepStream SGIE configuration running](../media/deepstream-sgie-config.png)
 
     You may view the labels assigned to detected object by left-clicking on any of the sources within the tiled display, this action will show a bit more information regarding detections (to return the tiled display, right-click anywhere in the application window):
-    
+
     ![DeepStream SGIE configuration running with labels](../media/deepstream-sgie-config-labels.png)
 
 Now that we can successfully run a DeepStream reference application, we can begin to look at making modifications to customize the behavior of these examples.

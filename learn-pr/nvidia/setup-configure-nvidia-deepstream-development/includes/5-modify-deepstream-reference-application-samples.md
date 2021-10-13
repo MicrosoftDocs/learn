@@ -1,4 +1,4 @@
-Now that we can run the DeepStream reference applications, we now look at how to modify these samples for different behavior.  
+Now that we can run the DeepStream reference applications, we now look at how to modify these samples for different behavior.
 
 1. Let's start by viewing the structure of the sample configuration in a text editor.  We'll make a copy of the sample configuration used in the previous section and examine areas to modify using the commands below:
 
@@ -9,7 +9,9 @@ Now that we can run the DeepStream reference applications, we now look at how to
     ```
 
     >[!NOTE]
-    > Here are some tips for using **vi** when editing the `source4_1080p_dec_infer-resnet_tracker_sgie_tiled_display_int8_modified.txt` file: 
+    >
+    > Here are some tips for using **vi** when editing the `source4_1080p_dec_infer-resnet_tracker_sgie_tiled_display_int8_modified.txt` file:
+    >
     >- Press the `i` key to put the editor into Insert mode, then you will be able to make changes.
     >- Press `Esc` to go stop Insert mode and return to Normal mode.
     >- To Save and Quit, type `:x`, and press `Enter`.
@@ -17,7 +19,6 @@ Now that we can run the DeepStream reference applications, we now look at how to
     >- To quit vi, type `:quit` and press `Enter`.
 
 2. Take note of the various configuration sections (denoted with brackets '[]', i.e. `[application]`, `[tiled-display]`, `[source0`], `[sink0]` etc.) and how they contribute to the overall application.  These sections are documented in detail within the [Configuration Groups section of the official DeepStream SDK Documentation](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_ref_app_deepstream.html#configuration-groups).
-
 
     For example, if you wanted to change the input from using a local video file to an RTSP video stream, you could modify `[tiled-display]` and `[source0]`:
 
@@ -88,7 +89,6 @@ Now that we can run the DeepStream reference applications, we now look at how to
     cd /opt/nvidia/deepstream/deepstream-6.0/samples/configs/deepstream-app
     deepstream-app -c source4_1080p_dec_infer-resnet_tracker_sgie_tiled_display_int8_modified.txt
     ```
-
 
 ### Try this
 

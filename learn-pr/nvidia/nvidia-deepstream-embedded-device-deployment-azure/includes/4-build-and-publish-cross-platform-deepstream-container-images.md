@@ -83,7 +83,9 @@ The following steps are to be completed on an X86 based host machine that has th
     ```
 
     >[!NOTE]
-    > Here are some tips for using **vi** when editing the `ds_test4_container_builder_jetson.yaml` file: 
+    >
+    > Here are some tips for using **vi** when editing the `ds_test4_container_builder_jetson.yaml` file:
+    >
     >- Press the `i` key to put the editor into Insert mode, then you will be able to make changes.
     >- Press `Esc` to go stop Insert mode and return to Normal mode.
     >- To Save and Quit, type `:x`, and press `Enter`.
@@ -102,7 +104,7 @@ The following steps are to be completed on an X86 based host machine that has th
     Modify the value of `msg-broker-proto-lib` to `/opt/nvidia/deepstream/deepstream/lib/libnvds_azure_edge_proto.so`
 
     Also, modify the value of `msg-conv-payload-type` to `1`.  This parameter will control how the resulting message output is formatted. If you do not change this parameter, the output will use a hard-coded format provided in the NVIDIA samples that may not represent your object detection classes should you update the model used in `NvDsInferVideo`.  
-    
+
     The final contents of `parameters.yaml` should look like the following:
 
     ```

@@ -1,6 +1,6 @@
-An Azure IoT Hub is a managed service in the Azure cloud that provides secure registration for IoT devices to allow for high-throughput communication from your device to the cloud and from the cloud down to your device. We will use this resource to register an NVIDIA embedded device and configure it with a DeepStream-based IoT Edge deployment.  
+An Azure IoT Hub is a managed service in the Azure cloud that provides secure registration for IoT devices to allow for high-throughput communication from your device to the cloud and from the cloud down to your device. We will use this resource to register an NVIDIA embedded device and configure it with a DeepStream-based IoT Edge deployment.
 
-1. Follow the steps in the [Quickstart: Create an IoT hub using the Azure portal](https://docs.microsoft.com/azure/iot-hub/iot-hub-create-through-portal#create-an-iot-hub).  Note that you only need to follow the steps to "Create an IoT hub", the extra steps mentioned in the documentation are optional.  Once this task has been completed, you may proceed with the next step.
+1. Follow the steps in the [Quickstart: Create an IoT hub using the Azure portal](/azure/iot-hub/iot-hub-create-through-portal#create-an-iot-hub).  Note that you only need to follow the steps to "Create an IoT hub", the extra steps mentioned in the documentation are optional.  Once this task has been completed, you may proceed with the next step.
 
 1. NVIDIA DeepStream supports integration with Azure IoT Edge through [Azure MQTT Protocol Adapter Libraries](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_plugin_gst-nvmsgbroker.html#azure-mqtt-protocol-adapter-libraries). These libraries extend the [`Gst-nvmsbroker`](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_plugin_gst-nvmsgbroker.html#) plugin provided in the DeepStream SDK.  The Azure protocol adapter allows DeepStream applications to publish messages directly to an Azure IoT Hub using the MQTT protocol.
 
@@ -8,7 +8,7 @@ An Azure IoT Hub is a managed service in the Azure cloud that provides secure re
 
 1. In the Composer application, select "File => Open Graph" and navigate to the `/opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test4` path and select the `deepstream-test4.yaml` file, then "Okay".
 
-    ![Opening the DeepStream Test4 application in Composer](../media/composer-opentest4.png)
+    ![Opening the DeepStream Test4 application in Composer](../media/composer-open-test4.png)
 
     This sample builds on top of the earlier "deepstream-test1" graph to demonstrate how to send inference output messages to the cloud.
 

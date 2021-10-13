@@ -28,16 +28,17 @@ The NVIDIA DeepStream SDK requires the installation of specific prerequisite sof
 1. Next, we will need to install the TensorRT 8.0.1.6 from NVIDIA. [TensorRT](https://developer.nvidia.com/tensorrt) is an SDK that allows for high-performance execution of deep learning inference algorithms by utilizing hardware acceleration. It includes various optimizations to deliver low latency and high throughput in applications that make use of deep learning.  Installation will require that you have an existing NVIDIA Developer Program Membership.  If you do not have one, you will be prompted to create while following the steps below.  This free membership will allow you to access the necessary installation files.  
 
     >[!NOTE]
+    >
     >You will need a browser installed on your host machine in order to complete this process.  
     >If one is not available, you can easily install the firefox browser to your host machine with the following:
     >`sudo apt install firefox`
-    
-    1. Open a browser on the host machine, and navigate to the [NVIDIA TensorRT 8.x Download repository](https://developer.nvidia.com/nvidia-tensorrt-8x-download) . 
+
+    1. Open a browser on the host machine, and navigate to the [NVIDIA TensorRT 8.x Download repository](https://developer.nvidia.com/nvidia-tensorrt-8x-download) .
 
     1. Select `TensorRT 8,0 GA Update 1`, once expanded choose the `TensorRT 8.0 GA Update 1 for Linux and CUDA 11.3, CUDA 11.2, CUDA 11.1, CUDA 11.0`.
 
     1. The installation package should download into your local user's `Downloads` directory. Navigate to the download location and install the package with:
-    
+
     ```bash
     cd ~/Downloads
     sudo dpkg -i <name of downloaded package>
@@ -59,7 +60,7 @@ The NVIDIA DeepStream SDK requires the installation of specific prerequisite sof
 
 1. Next, we will install [NVIDIA cuDNN](https://developer.nvidia.com/cudnn).  This package provides a GPU-accelerated library of primitive for use in [deep neural networks](https://developer.nvidia.com/deep-learning).
 
-    1. Open a browser on the host machine, and navigate to the [NVIDIA cuDNN Download Repository](https://developer.nvidia.com/rdp/cudnn-download) . 
+    1. Open a browser on the host machine, and navigate to the [NVIDIA cuDNN Download Repository](https://developer.nvidia.com/rdp/cudnn-download).
 
     1. We will need to install both the runtime and development packages.  Select `Download cuDNN v8.2.2 (July 6th, 2021), for CUDA 11.4`.  Once this selection is expanded, choose the `cuDNN Runtime Library for Ubuntu18.04 x86_64 (Deb)` and `cuDNN Developer Library for Ubuntu18.04 x86_64 (Deb)`.
 
@@ -72,9 +73,9 @@ The NVIDIA DeepStream SDK requires the installation of specific prerequisite sof
 
 1. We are now ready to install the DeepStream SDK.  This will include all of the necessary libraries, development sources, and samples to get you started building custom IVA pipelines.
 
-    1. Open a browser on the host machine, and navigate to the [NVIDIA DeepStream SDK 6.0 - Downloads Page](https://developer.nvidia.com/deepstream-sdk-6.0-early-access) 
+    1. Open a browser on the host machine, and navigate to the [NVIDIA DeepStream SDK 6.0 - Downloads Page](https://developer.nvidia.com/deepstream-sdk-6.0-early-access).
 
-    1. Select the `DeepStream on x86 Core - Debian` package. This should download into your local user's `Downloads` directory.  Navigate to the download location and install the package with: 
+    1. Select the `DeepStream on x86 Core - Debian` package. This should download into your local user's `Downloads` directory.  Navigate to the download location and install the package with:
 
     ```bash
     cd ~/Downloads

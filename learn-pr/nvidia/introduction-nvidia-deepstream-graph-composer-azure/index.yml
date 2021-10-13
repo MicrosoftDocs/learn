@@ -33,10 +33,10 @@ products:
 - azure-container-registry
 units:
 - learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.1-introduction
-- learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.2-introduction-to-nvidia-deepstream-graph-composer
+- learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.2-introduction-nvidia-deepstream-graph-composer
 - learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.3-install-nvidia-deepstream-graph-composer
-- learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.4-run-an-nvidia-deepstream-graph-composer-reference-application
-- learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.5-package-nvidia-deepstream-graph-composer-application-into-a-containerized-workload
+- learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.4-run-nvidia-deepstream-graph-composer-reference-application
+- learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.5-package-nvidia-deepstream-graph-composer-application-into-containerized-workload
 - learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.6-publish-nvidia-deepstream-graph-composer-container-to-azure-container-registry
 - learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.7-knowledge-check
 - learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.8-summary

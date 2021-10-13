@@ -11,7 +11,7 @@ Containerization also provides numerous benefits during development and testing,
 
     1. Select "Get API Key", and on the resulting screen in the upper-right select "Generate API Key" then select "Confirm" on the resulting prompt:
 
-        ![NGC Generate API Key](../media/ngc-generateapikey.png)
+        ![NGC Generate API Key](../media/ngc-generate-api-key.png)
 
     1. Next, we will supply these credentials to the Docker runtime by executing the following commands in a terminal on the host machine:
 
@@ -35,10 +35,8 @@ Containerization also provides numerous benefits during development and testing,
     >[!NOTE]
     > If you receive a `docker.errors.DockerException` error when running the above commands, it may indicate that you do not have the Docker runtime installed on the host machine.  To proceed, review the instructions in the "Install NVIDIA DeepStream Graph Composer Dependencies" section of this module on how to install Docker.
 
-
     >[!NOTE]
     > If you receive a `docker.errors.BuildError: unauthorized: authentication required`, this indicates that you may not have properly authenticated your NVIDIA NGC account for use with Docker.
-
 
 1. It is important to note that before we run this containerized workload, it will require that we grant access to the X11 display environment when running from a container due to the workload using an output sink of type EGL (`type`= 2).  
 
@@ -57,6 +55,6 @@ Containerization also provides numerous benefits during development and testing,
 
     This command will start an instance of the `deepstream_test1_dgpu` container image and supply it access to all available GPU hardware on the machine while also supplying access to the X11 socket and current `DISPLAY`.  You should see output similar to the previous run that was invoked using `execute_graph.sh`.
     
-     ![NVIDIA DeepStream Graph Composer Test1 Running](../media/composer-executegraph.png)
+     ![NVIDIA DeepStream Graph Composer Test1 Running](../media/composer-execute-graph.png)
 
-We are now ready to publish our working containerized workload into a secure container registry for distribution. 
+We are now ready to publish our working containerized workload into a secure container registry for distribution.

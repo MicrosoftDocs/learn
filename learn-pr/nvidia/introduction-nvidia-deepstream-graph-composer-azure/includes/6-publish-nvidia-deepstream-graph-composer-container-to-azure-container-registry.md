@@ -1,10 +1,10 @@
 Now that we have packaged our DeepStream Graph Composer application into a container, we are now ready to publish this artifact into an [Azure Container Registry](https://azure.microsoft.com/services/container-registry/#overview) for secure distribution to other supported devices.  
 
-This preparation will also set the stage for potential deployment using [Azure IoT Edge](https://docs.microsoft.com/azure/iot-edge/about-iot-edge), which we will cover in more detail in the next module.
+This preparation will also set the stage for potential deployment using [Azure IoT Edge](/azure/iot-edge/about-iot-edge), which we will cover in more detail in the next module.
 
 1. To begin, we will follow instructions from the official Microsoft Docs to "create a container registry".  This document will demonstrate how to instantiate the necessary Azure Container Registry resources in Microsoft Azure and how to login and push images to this service.  Once you have completed the steps in this section, we will proceed to publish our DeepStream Graph Composer container artifact into this registry.
 
-    Follow the steps in the [Quickstart: Create an Azure container registry using the Azure portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal).  You only need to follow the steps to "Create a container registry", the extra steps mentioned in the documentation are optional.  Once this task has been completed, you may proceed with the next steps.
+    Follow the steps in the [Quickstart: Create an Azure container registry using the Azure portal](/azure/container-registry/container-registry-get-started-portal).  You only need to follow the steps to "Create a container registry", the extra steps mentioned in the documentation are optional.  Once this task has been completed, you may proceed with the next steps.
 
 1. Navigate to your newly deployed Azure Container Registry within the Azure portal:
 
@@ -15,8 +15,7 @@ This preparation will also set the stage for potential deployment using [Azure I
 
 1. Next, select the `Access keys` section on the left-hand side under `Settings`, and enable the option for `Admin user`.  This operation will grant us the ability to authenticate against our Azure Container Registry to allow access from the Docker instance running on our host machine.  Again, take note of the values for `Login server`, `Username`, and `password` as they will be used in the next step.
 
-    ![Azure Container Registry Access Keys](../media/acr-accesskeys.png)
-
+    ![Azure Container Registry Access Keys](../media/acr-access-keys.png)
 
 1. We are now ready to authenticate against our Azure Container Registry and grant access to the host's Docker instance.  To accomplish this step, run the following commands in a terminal session on the host machine:
 

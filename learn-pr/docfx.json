@@ -252,7 +252,8 @@
                     "**/resources/**"
                 ],
                 "dest": "modules"
-            },            {
+            },
+            {
                 "src": "pytorch",
                 "files": [
                     "**/*.yml",
@@ -604,7 +605,8 @@
                     "**/*.ipynb"
                 ],
                 "dest": "modules"
-            },            {
+            },
+            {
                 "src": "tensorflow",
                 "files": [
                     "**/*.gif",
