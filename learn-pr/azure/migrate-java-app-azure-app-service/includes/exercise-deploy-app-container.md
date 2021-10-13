@@ -43,8 +43,9 @@ If you had added more folders and selected the Persistent Volume option, then sp
 Once you've completed the steps above, you'll need to specify the deployment configuration for the application. Click **Configure** to customize the deployment for the application. In the configure step, you can provide the following customizations:
 
 1. **Name**: Specify a unique app name for the application. This name will be used to generate the application URL and used as a prefix for other resources being created as part of this deployment. 
-2. **Application Configuration**: For application configurations that were parameterized, use the following value for the current deployment. Navigate to *LearnAppContainerization* resource group and copy the name of the MySQL server. 
-    - The MySQL server will name will be in the following format - "airsonic-mysql-server-0000000000". 
+2. **Application Configuration**: For application configurations that were parameterized, use the following value for the current deployment. 
+    - Navigate to the *LearnAppContainerization* resource group [Azure Portal](https://portal.azure.com). 
+    - Copy the name of the MySQL server. The MySQL server will name will be in the following format - "airsonic-mysql-server-0000000000". 
         - **Username**: Generate the username as **mysqladmin@${MYSQL_SERVER_NAME}**.
         - **Password**: Specify the value as **SuperS3kretPasSw0rd**.
         - **URL**: To create the URL to be specified, replace the MySQL Server name in the following connection string and paste it in the App Containerization tool. <br/>
@@ -56,7 +57,7 @@ Once you've completed the steps above, you'll need to specify the deployment con
 
 ## **Deploy the application** 
 
-Once the deployment configuration for the application is saved, the tool will generate the Kubernetes deployment YAML file for the application. The file will be created based on the inputs specified in the deployment specification steps. 
+Once the deployment configuration for the application is saved, the tool will generate deployment file for the application. The file will be created based on the inputs specified in the deployment specification steps. 
 
 1. Click **Review** to review the deployment specifications for the application. 
 2. Select the application to deploy.
@@ -69,6 +70,6 @@ Now that your application container is deployed, you can browse the migrated app
 
 1. Copy the URL displayed in the **Deployment status** column.
 2. Paste the URL in a new browser tab. 
-3. Append the URL with the following string - *:8080/airsonic*
+3. Append the URL with the following string - */airsonic*
 
 You should be able to access your application. 

@@ -41,9 +41,11 @@ If you had added more folders and selected the Persistent Volume option, then sp
 Once you've completed the steps above, you'll need to specify the deployment configuration for the application. Click **Configure** to customize the deployment for the application. In the configure step, you can provide the following customizations:
 
 1. **Prefix string**: Specify a prefix string to use in the name for all resources that are created for the containerized application in the AKS cluster. Use **airsonictest** as the prefix string for this exercise.
-2. **Replica Sets**: Specify the number of application instances (pods) that should run inside the containers. Use the value **1**.
+2. **Number of replicas**: Specify the number of application instances (pods) that should run inside the containers. Use the value **1**.
 3. **Load balancer type**: Select **external** so that the containerized application is reachable from public networks.
-4. **Application Configuration**: For application configurations that were parameterized, use the following value for the current deployment. Navigate to *LearnAppContainerization* resource group and copy the name of the MySQL server. 
+4. **Application Configuration**: For application configurations that were parameterized, use the following value for the current deployment. 
+    - Navigate to the *LearnAppContainerization* resource group [Azure Portal](https://portal.azure.com). 
+    - Copy the name of the MySQL server. The MySQL server will name will be in the following format - "airsonic-mysql-server-0000000000". 
     - The MySQL server will name will be in the following format - "airsonic-mysql-server-0000000000". 
         - **Username**: Generate the username as **mysqladmin@${MYSQL_SERVER_NAME}**.
         - **Password**: Specify the value as **SuperS3kretPasSw0rd**.

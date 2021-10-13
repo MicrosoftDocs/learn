@@ -1,4 +1,4 @@
-In this exercise, we'll use the Azure Migrate: App Containerization tool to discover the Java web application that needs to be containerized and migrated. 
+In this exercise, we'll use the App Containerization tool to discover the Java web application that needs to be containerized and migrated. 
 
 ## Complete tool pre-requisites 
 
@@ -8,7 +8,7 @@ In this exercise, we'll use the Azure Migrate: App Containerization tool to disc
     ![Default load-up for App Containerization tool.](../media/tool-home.png)
 
 3. Accept the **license terms**, and read the third-party information.
-4. The tool will automatically check for internet connectivity and install the latest version of the Azure Migrate: App Containerization tool.  
+4. The tool will automatically check for internet connectivity and install the latest version of the App Containerization tool.  
 5. The tool will inform you to enable SSH on the application server which was done as part of the setup. Click **continue**.
 
 
