@@ -14,8 +14,8 @@ It is useful to think about the Azure policies for Kubernetes this way. They all
 
 There are two ways to discover built-in Azure policies for Kubernetes:
 
-1. [By using the Azure documentation](/azure/governance/policy/samples/built-in-policies), which details the built-in policies.
-1. By using the [Azure policy blade in the Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Definitions), going to definitions, and filtering on category _Kubernetes_.
+- [By using the Azure documentation](/azure/governance/policy/samples/built-in-policies), which details the built-in policies.
+- By using the [Azure policy blade in the Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Definitions), going to definitions, and filtering on category _Kubernetes_.
 
 You can assign one or multiple of these policy definitions to your management groups, subscriptions, or resource groups. In the next unit, you will follow an exercise that will walk you through how to do that.
 
