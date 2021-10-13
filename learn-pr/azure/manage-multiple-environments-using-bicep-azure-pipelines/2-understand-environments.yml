@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Understand environments
   description: Learn about the environments you typically deploy your resources to. Also, learn about Azure Pipeline environments and how to use them.
-  ms.date: 10/04/2021
+  ms.date: 10/13/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
