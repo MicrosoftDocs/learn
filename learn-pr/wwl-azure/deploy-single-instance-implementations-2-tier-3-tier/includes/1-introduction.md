@@ -4,7 +4,7 @@ You need to prepare for your company's deployment of single-instance SAP on Azur
 
 ## Learning objectives
 
-You will:
+You will: 
 
  -  Explore deployment methodologies.
  -  Deploy via Azure Resource Manager templates.
