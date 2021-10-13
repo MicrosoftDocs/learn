@@ -14,7 +14,7 @@ For more information about the topics discussed in this module, see:
 - [Microsoft.Azure.Cosmos &vert; NuGet][nuget.org/packages/microsoft.azure.cosmos]
 - [Azure/azure-cosmos-dotnet-v3 &vert; GitHub][github.com/azure/azure-cosmos-dotnet-v3]
 
-[/azure/cosmos-db/sql/sql-api-sdk-dotnet-standard]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-api-sdk-dotnet-standard
-[/dotnet/api/microsoft.azure.cosmos]: https://docs.microsoft.com/dotnet/api/microsoft.azure.cosmos
+[/azure/cosmos-db/sql/sql-api-sdk-dotnet-standard]: /azure/cosmos-db/sql/sql-api-sdk-dotnet-standard
+[/dotnet/api/microsoft.azure.cosmos]: /dotnet/api/microsoft.azure.cosmos
 [github.com/azure/azure-cosmos-dotnet-v3]: https://github.com/azure/azure-cosmos-dotnet-v3
 [nuget.org/packages/microsoft.azure.cosmos]: https://nuget.org/packages/microsoft.azure.cosmos/

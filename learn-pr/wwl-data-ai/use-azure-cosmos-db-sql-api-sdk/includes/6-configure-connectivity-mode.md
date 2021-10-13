@@ -12,7 +12,7 @@ When connecting to an Azure Cosmos DB account using the **CosmosClient** class, 
 - That you will use the default consistency level for the account with your read requests
 - That you will connect directly to data nodes for requests
 
-> &#128221; There are other assumptions that are not listed here. These assumptions can also be changes.
+> &#128221; There are other assumptions that are not listed here. These assumptions can also be configured with the **CosmosClient** class.
 
 To configure the client, you will need to create an instance of the **CosmosClientOptions** class and pass in that instance as the last parameter to the **CosmosClient** constructor. Here are two examples using the constructors discussed earlier in this module.
 
