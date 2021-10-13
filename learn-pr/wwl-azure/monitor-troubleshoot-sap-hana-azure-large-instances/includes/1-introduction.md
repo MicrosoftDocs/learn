@@ -4,7 +4,7 @@ Your company needs you to ensure there are systems in place to quickly detect an
 
 ## Learning objectives
 
-You will:
+You will: 
 
  -  Explore SAP HANA on Azure (Large Instances) monitoring.
  -  Explore troubleshooting and monitoring SAP HANA on Azure (Large Instances).

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/11/2021
+  ms.date: 10/13/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the built-in monitoring package provided with SAP HANA on Azure (Large Instances)? Select one."
+  - content: "What is the built-in monitoring package provided with SAP HANA on Azure (Large Instances)?"
     choices:
     - content: "SAP HANA Studio"
       isCorrect: false
@@ -28,7 +28,7 @@ quiz:
     - content: "HANA Large Instances does not come with built-in monitoring tools"
       isCorrect: true
       explanation: "Correct. HANA Large Instances does not come with built-in monitoring tools. Instead, Microsoft offers resources to help you troubleshoot and monitor according to your organization’s requirements, and the Microsoft support team can assist you in troubleshooting technical issues. Monitor HANA Large Instances resources such as CPU, memory, network bandwidth, and storage space using SAP HANA Studio, SAP HANA Cockpit, SAP Solution Manager, and native Linux tools."
-  - content: "SAP HANA Studio can display all SAP HANA alerts for specific values that fall outside their set minimum and maximum thresholds. How often are alerts checks performed? Select one."
+  - content: "SAP HANA Studio can display all SAP HANA alerts for specific values that fall outside their set minimum and maximum thresholds. How often are alerts checks performed?"
     choices:
     - content: "Every minute"
       isCorrect: false
@@ -39,7 +39,7 @@ quiz:
     - content: "Every hour"
       isCorrect: false
       explanation: "Incorrect. By default, checks are auto-refreshed every 15 minutes."
-  - content: "Which tool should you use to raise a support request for SAP HANA on Azure (Large Instances)? Select one."
+  - content: "Which tool is used to raise support requests for SAP HANA on Azure (Large Instances)?"
     choices:
     - content: "Azure portal"
       isCorrect: true
