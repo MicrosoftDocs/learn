@@ -25,7 +25,8 @@ Use the following instructions to create a new **Custom Vision** resource.
     - **Prediction location**: *The same region as the training resource*
     - **Prediction pricing tier**: Free F0
 
-    > **Note**: If you already have an F0 custom vision service in your subscription, select **S0** for this one.
+    > [!NOTE]: 
+    > If you already have an F0 custom vision service in your subscription, select **S0** for this one.
 
 3. Wait for the resources to be created, and note that two Custom Vision resources are provisioned; one for training, and another for prediction. You can view these by navigating to the resource group where you created them.
 
@@ -44,7 +45,7 @@ To train an object detection model, you need to create a Custom Vision project b
     - **Domains**: Food
 4. Click **\[+\] Add images**, and select all of the files in the **apple** folder you extracted previously. Then upload the image files, specifying the tag *apple*, like this:
 
-    ![Upload apple with apple tag](../media/upload_apples.jpg)
+    ![Upload apple with apple tag](../media/upload-apples.jpg)
    
 5. Repeat the previous step to upload the images in the **banana** folder with the tag *banana*, and the images in the **orange** folder with the tag *orange*.
 6. Explore the images you have uploaded in the Custom Vision project - there should be 15 images of each class, like this:
@@ -99,17 +100,17 @@ Now that you have a custom model, you can run a simple client application that u
 
 4. Don't worry too much about the details of the code, the important thing is that it needs the prediction URL and key for your Custom Vision model when using an image URL. 
 
-Get the *prediction URL* from the dialog box in your Custom Vision project, which should look like this:
+    Get the *prediction URL* from the dialog box in your Custom Vision project, which should look like this:
 
-![Prediction URL information for a custom vision model](../media/custom-vision-url.png). 
+    ![Prediction URL information for a custom vision model](../media/custom-vision-url.png). 
 
-Paste it into the code editor, replacing the **YOUR_PREDICTION_URL**.
+    Paste it into the code editor, replacing the **YOUR_PREDICTION_URL**.
 
-Get the *prediction key*. Click on the *project gallery page** icon on the top left hand side of the custom vision portal. Then click on the settings icon on the top right hand side of the custom vision portal. Look for your prediction resource and click on it.   
+    Get the *prediction key*. Click on the *project gallery page** icon on the top left hand side of the custom vision portal. Then click on the settings icon on the top right hand side of the custom vision portal. Look for your prediction resource and click on it.   
 
-![Screenshot of the prediction key.](../media/custom-vision-pred-key.png)
+    ![Screenshot of the prediction key.](../media/custom-vision-pred-key.png)
 
-Copy the prediction key. Paste it in the code editor, replacing the **YOUR_PREDICTION_KEY** placeholder value.
+    Copy the prediction key. Paste it in the code editor, replacing the **YOUR_PREDICTION_KEY** placeholder value.
 
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
