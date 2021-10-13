@@ -8,7 +8,8 @@ The build process compiles the source code into binary files or executables. Typ
 
 The output of the build process is a deployable *artifact* that's saved to the pipeline agent's file system. Later stages of your pipeline need to work with the artifact to deploy it through your environments, and test it as it progresses through the quality gates you define.
 
-<!-- TODO need to mention CI vs. CD -->
+> [!NOTE]
+> You might have heard of the terms *continuous integration* and *continuous deployment*, or *CI* and *CD*. A build process sits within the continuous integration part of your pipeline.
 
 ### Pipeline artifacts
 
@@ -16,17 +17,32 @@ The artifacts generated in your pipeline aren't stored in your Git repository. T
 
 Files that are created on the pipeline agent's file system aren't automatically published as pipeline artifacts. You use the `PublishBuildArtifacts` built-in pipeline task to instruct Azure Pipelines to publish a file or folder as an artifact:
 
-TODO
+```yaml
+- task: PublishBuildArtifacts@1
+  displayName: Publish folder as a pipeline artifact
+  inputs:
+    artifactName: 'my-artifact-name'
+    pathToPublish: '$(Build.ArtifactStagingDirectory)/my-folder'
+    publishLocation: Container # This ensures that Azure Pipelines stores the pipeline artifact for you.
+```
 
-Each artifact has a name, which you use to refer to it later in the pipeline.
+The `pathToPublish` property is the location on the pipeline agent's file system. The contents of this path will be published to the artifact.
 
-Later jobs and stages in the pipeline can download the artifact so that they can work with them, such as to deploy the website to the server that hosts it:
+Each artifact has a name, which you specify by using the `artifactName` task property. You use the artifact name to refer to it later in the pipeline. Later jobs and stages in the pipeline can download the artifact so that they can work with them, such as to deploy the website to the server that hosts it:
 
 :::image type="content" source="../media/3-website-pipeline-artifact.png" alt-text="Diagram showing a pipeline publishing and then referring to an artifact named 'Website'." border="false":::
 
 When you use deployment jobs, pipeline artifacts are automatically downloaded by default. If you use regular jobs, use the `DownloadBuildArtifacts` task to download a pipeline artifact:
 
-TODO
+```yaml
+- task: DownloadBuildArtifacts@0
+  displayName: Download my-artifact-name pipeline artifact
+  inputs:
+    buildType: 'current'
+    downloadType: 'single'
+    artifactName: 'my-artifact-name'
+    downloadPath: '$(System.ArtifactsDirectory)'
+```
 
 ## Deploy applications
 
@@ -36,9 +52,18 @@ The build process for an application generates and publishes a deployable artifa
 
 Your toy company uses Azure App Service to host their website. An App Service app can be created and configured by using Bicep, but when it comes time to deploy the application itself, there are several options to get the compiled application onto your hosting infrastructure. The most common approach is to use the `AzureRmWebAppDeployment` Azure Pipelines task:
 
-TODO
+```yaml
+- task: AzureRmWebAppDeployment@4
+  name: DeployMyApp
+  displayName: Deploy website
+  inputs:
+    azureSubscription: MyServiceConnection
+    ResourceGroupName: MyResourceGroup
+    WebAppName: my-app-service
+    Package: '$(Pipeline.Workspace)/my-artifact-name/website.zip'
+```
 
-You need to provide several pieces of information to deploy your application to App Service. This includes the name of the App Service app. As you learned earlier in the module, you should add an output to your Bicep file, and use a pipeline variable to propagate the application name through your pipeline. You also need to specify a Zip file to deploy. Typically this is the path to a pipeline artifact.
+You need to provide several pieces of information to deploy your application to App Service. This includes the resource group and resource name of the App Service app, which you specify by using the `ResourceGroupName` and `WebAppName` inputs. As you learned earlier in the module, you should add an output to your Bicep file, and use a pipeline variable to propagate the application name through your pipeline. You also need to specify a Zip file to deploy by using the `Package` input. Typically this is the path to a pipeline artifact.
 
 App Service also needs you to authenticate before you can deploy. App Service has its own data plane authentication system that it uses for deployments. The `AzureRmWebAppDeployment` task uses the service principal associated with your service connection to create and download the necessary credentials for deployment.
 

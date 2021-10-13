@@ -109,7 +109,7 @@ stages:
               inputs:
                 appType: webApp
                 ConnectionType: AzureRM
-                ConnectedServiceName: ToyWebsite${{parameters.environmentType}}
+                azureSubscription: ToyWebsite${{parameters.environmentType}}
                 ResourceGroupName: $(ResourceGroupName)
                 WebAppName: $(appServiceAppName)
                 Package: '$(Pipeline.Workspace)/website/publish.zip'

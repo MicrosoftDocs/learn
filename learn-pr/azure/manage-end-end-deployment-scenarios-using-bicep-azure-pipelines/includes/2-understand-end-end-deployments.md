@@ -21,7 +21,7 @@ When you create and deploy Bicep files, you typically only interact with the con
 - Deploy a website to an Azure App Service app.
 - Deploy software to a virtual machine.
 
-When we consider an end-to-end pipeline, we typically need to deploy our Azure resources, and then perform a series of operations against the data planes of those resources.
+When we consider an end-to-end pipeline, we typically need to deploy our Azure resources, and then perform a series of operations against the data planes of those resources. Sometimes, these are called the *last mile* of the deployment, because the bulk of the deployment happens by using the control plane and there's a small amount of configuration remaining.
 
 > [!NOTE]
 > There are also some resources that don't have a clear division between their control plane and data plane. These include Azure Data Factory and Azure API Management. Both services support fully automated deployments by using Bicep, but they require special considerations. We link to more information in the summary.
@@ -48,14 +48,24 @@ It's good practice for the Bicep file to decide on the names of your Azure resou
 
 Azure Pipelines enables you to propagate the values of outputs by using *pipeline variables*. You can set the value of a pipeline variable within a pipeline script. You use a specially formatted log output that Azure Pipelines understands how to interpret:
 
-TODO example
+```
+echo "##vso[task.setvariable variable=myVariableName]VariableValue"
+```
 
 By default, any subsequent steps in the same job can read the value of the variable, but tasks in other jobs within the stage can't. However, if you create a pipeline variable and include the `isOutput=true` setting, then later jobs in the same stage can read it, too. You need to *map* the variable to make it accessible to the job that reads it:
 
-TODO example
+```yml
+variables:
+  myVariableName: $[ dependencies.JobName.outputs['StepName.myVariableName'] ]
+```
+
+<!-- TODO check the syntax above is correct -->
 
 You can access variables across pipeline stages, too. You also need to map the variable, but you use a slightly different syntax:
 
-TODO example
+```yml
+variables:
+  myVariableName: $[ stageDependencies.StageName.JobName.outputs['JobName.StepName.myVariableName'] ]
+```
 
 By using Bicep outputs and pipeline variables, you can create a multistage pipeline that deploys your Bicep code and then performs a wide range of actions on the resources as part of your deployment.

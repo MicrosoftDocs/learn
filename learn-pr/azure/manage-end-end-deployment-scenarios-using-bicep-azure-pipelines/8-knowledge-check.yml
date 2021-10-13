@@ -28,8 +28,8 @@ quiz:
       explanation: Incorrect. Deployment scripts can accept arguments as well as environment variables.
 
   - content: |
-      You've created a multistage pipeline that deploys an Azure SQL database. 
-      In the build stage of your pipeline, you compile a small application that initializes the database with a schema.
+      You've created a multistage pipeline that deploys an Azure Cosmos DB account, database, and container.
+      In the build stage of your pipeline, you compile a small application that initializes the database with some reference data.
       You need to add the database initialization process to your pipeline.
       Which of the following steps should you take?
     choices:
@@ -38,10 +38,10 @@ quiz:
       explanation: Correct. You can publish a pipeline artifact for the application, and then run the application as part of the deployment stage in your pipeline.
     - content: Use a separate tool like Chef or Puppet.
       isCorrect: false
-      explanation: Incorrect. Tools like Chef and Puppet aren't required, because your pipeline can run the tool directly.
+      explanation: Incorrect. Tools like Chef and Puppet aren't required, because your pipeline can run the application directly.
     - content: Ensure that AzCopy is installed on your pipeline agent.
       isCorrect: false
-      explanation: Incorrect. AzCopy is used to manage storage accounts, not Azure SQL databases.
+      explanation: Incorrect. AzCopy is used to manage storage accounts, not Azure Cosmos DB data.
 
   - content: |
       Your Bicep file includes a module that deploys an App Service app.

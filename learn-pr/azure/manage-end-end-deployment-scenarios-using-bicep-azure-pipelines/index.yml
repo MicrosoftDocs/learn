@@ -20,12 +20,17 @@ abstract: |
     - Deploy Azure infrastructure, applications, database scripts, and storage blobs from a single pipeline
 prerequisites: |
   You should be familiar with using:
-  - Bicep, including how to use parameters and parameter decorators, conditions, and how to deploy Bicep files to Azure.
+
+  - Bicep, including child resources, and how to deploy Bicep files to Azure.
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
+  - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
+  - YAML pipelines through Azure Pipelines, including multistage pipelines, environments, and service connections.
+
   To work through the exercises, you'll also need the following installed locally:
   
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
+  - The [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines&azure-portal=true).
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).
 iconUrl: /learn/achievements/bicep/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.svg
 levels:

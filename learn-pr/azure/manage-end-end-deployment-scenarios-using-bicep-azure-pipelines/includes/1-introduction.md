@@ -1,4 +1,4 @@
-Pipelines enable you to automate the testing and deployment of your Bicep code. Many of the benefits of using Bicep, or other infrastructure as code tools, come from creating unified pipelines that deploy and configure everything together: your Azure infrastructure, applications, and even your data. In this module, you'll learn about how to extend a pipeline that already deploys Bicep code to deploy an entire solution.
+When you use pipelines, you can automate the validation, testing, and deployment of your Bicep code. Many of the benefits of using Bicep come from deploying them alongside the other components of your solution: your Azure infrastructure, applications, and even your data. In this module, you'll learn about how to extend a pipeline that already deploys Bicep code to deploy an entire solution.
 
 ## Example scenario
 
@@ -6,12 +6,31 @@ Suppose you're responsible for deploying and configuring the Azure infrastructur
 
 ## What will you be doing?
 
+In this module, you'll learn how to extend a deployment pipeline so that it deploys Azure infrastructure, applications, databases, and data together. You'll add a build stage to your pipeline that compiles an application and database project, and you'll use pipeline artifacts to propagate the deployable files through your pipeline. You'll use Bicep outputs from your pipeline to integrate your pipeline's components together, and you'll update your deployment stage to publish your application, website, and sample data.
+
 ## What is the main goal?
 
-TODO
+After completing this module, you'll be able to create a unified deployment pipeline that:
+
+- Provisions Azure resources by using a Bicep file
+- Deploys an application to an Azure App Service app
+- Publishes a database schema to an Azure SQL database
+- Adds sample data to an Azure SQL database and an Azure Storage blob container
+
+You'll also know how to effectively use pipeline artifacts, Bicep outputs, and pipeline variables to coordinate the different parts of your pipeline.
 
 ## Prerequisites
 
-TODO
+You should be familiar with using:
 
-Stages, jobs, steps
+- Bicep, including child resources, and how to deploy Bicep files to Azure.
+- Azure, including the Azure portal, subscriptions, resource groups, and resources.
+- Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
+- YAML pipelines through Azure Pipelines, including multistage pipelines, environments, and service connections.
+
+To work through the exercises, you'll also need the following installed locally:
+
+- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
+- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
+- The [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines&azure-portal=true).
+- The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).
