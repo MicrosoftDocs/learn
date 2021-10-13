@@ -4,7 +4,7 @@ Your deployment team is starting to plan moving its first SAP workload to Azure.
 
 ## Learning objectives
 
-You will:
+You will: 
 
  -  Explore general prerequisites for SAP support in public cloud environments.
  -  Identify deployment options for SAP solutions on Azure.
