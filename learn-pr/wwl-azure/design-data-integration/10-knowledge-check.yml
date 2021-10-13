@@ -22,7 +22,7 @@ quiz:
     - content: "Azure Data Factory"
       isCorrect: true
       explanation: "that’s correct. Azure Data Factory can connect different data sources and run stored procedures on the data."
-    - content: "Azure Data Bricks"
+    - content: "Azure Databricks"
       isCorrect: false
       explanation: "that’s incorrect. Azure Databricks does not meet the requirement for the manufacturing data."
     - content: "Azure Data Lake"
@@ -33,7 +33,7 @@ quiz:
     - content: "Azure Data Lake"
       isCorrect: true
       explanation: "that’s correct. Azure Data Lake can ingest real-time data directly from multiple sources and quickly identify insights into the data"
-    - content: "Azure Data Bricks"
+    - content: "Azure Databricks"
       isCorrect: false
       explanation: "that’s incorrect. Azure Databricks does not meet the requirement for real-time data ingestion."
     - content: "Azure Blob Storage"

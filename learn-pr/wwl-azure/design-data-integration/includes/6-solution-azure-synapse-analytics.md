@@ -34,7 +34,9 @@ In the image, we can see that Azure Synapse Analytics is composed of the followi
 > [!Note]
 > Read about [Analytics end-to-end with Azure Synapse](/azure/architecture/example-scenario/dataplate2e/data-platform-end-to-end)
 
-[](/azure/architecture/example-scenario/dataplate2e/data-platform-end-to-end)**When to use Azure Synapse Analytics?**
+[Analytics end-to-end with Azure Synapse](/azure/architecture/example-scenario/dataplate2e/data-platform-end-to-end)
+
+**When to use Azure Synapse Analytics?**
 
 - When you have a variety of data sources use Azure Synapse Analytics for code-free ETL and data flow activities. 
 
