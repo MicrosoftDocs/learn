@@ -12,7 +12,8 @@ To test the capabilities of the Form Recognizer service, we'll use a simple comm
 
 ## Create a Form Recognizer resource
 
->**Note:** You can either use a Cognitive Service resource or a Form Recognizer resource to access Form Recognizer services. 
+> [!NOTE]
+> You can either use a Cognitive Service resource or a Form Recognizer resource to access Form Recognizer services. 
 
 To create a Form Recognizer resource in your Azure subscription:
 
