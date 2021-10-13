@@ -67,8 +67,7 @@ App Service also needs you to authenticate before you can deploy. App Service ha
 > [!TIP]
 > Azure Functions is built on App Service, and uses a similar deployment process.
 
-> [!NOTE]
-> App Service also provides a number of other deployment-related features, including *deployment slots*. Slots help you to safely deploy new versions of your applications, and to prepare the new version to receive production traffic so that you have no downtime. We don't use slots in this module, but we provide more information in the summary.
+App Service also provides a number of other deployment-related features, including *deployment slots*. Slots help you to safely deploy new versions of your applications, and to prepare the new version to receive production traffic so that you have no downtime. We don't use slots in this module, but we provide more information in the summary.
 
 ### Deploy applications to other Azure services
 
@@ -79,3 +78,9 @@ If you deploy to a virtual machines, you typically need to connect to the virtua
 If you use Kubernetes or AKS, you typically use a slightly different approach to build and deploy your solution. After your application is built, your pipeline creates a *container image* and publishes it to a *container registry*, which your Kubernetes cluster then reads from.
 
 In this module, we focus on Azure App Service, but we provide links to more information about deploying to other hosting services in the summary.
+
+## Test applications in your pipeline
+
+In a previous module, you learned about the value and importance of running automated tests from your pipeline. When you deploy an application, it's a good practice for the pipeline to verify that the application can be reached. This reduces the risk of an application or deployment error causing downtime. In more advanced scenarios, you might even perform a set of test cases against your application, such as invoking APIs or submitting and monitoring a synthetic transaction.
+
+Many applications implement *health check endpoints*. These are URLs that, when invoked, perform a series of checks against the website, such as ensuring that databases and network services are reachable from the application environment. Developers can write and customize their own health checks to suit the application's requirements. If your application has a health check endpoint, it often makes sense to monitor it after your pipeline has finished a deployment.

@@ -133,6 +133,9 @@ The Bicep file now has two new mandatory parameters - `sqlServerAdministratorLog
 
    :::code language="yaml" source="code/7-deploy.yml" range="23-31" highlight="7-9" :::
 
+   > [!IMPORTANT]
+   > Ensure you add the `\` at the end of the line that sets the `reviewApiKey` parameter value, and on the subsequent line. The `\` character indicates that there are further lines that are part of the same command.
+
 1. Update the *Preview* stage's *RunWhatIf* step to add the new parameters:
 
    :::code language="yaml" source="code/7-deploy.yml" range="49-57" highlight="7-9" :::
@@ -165,9 +168,15 @@ Here, you define the steps required to deploy the database components of your we
 
    :::code language="yaml" source="code/7-deploy.yml" range="145-156" :::
 
-## Verify deploy.yml and commit your changes
+## Verify files and commit your changes
 
-1. Verify that your *deploy.yml* looks like this:
+1. Verify that your *main.bicep* file looks like this:
+
+   :::code language="bicep" source="code/7-main.bicep" :::
+
+   If it doesn't, update it to match the above file.
+
+1. Verify that your *deploy.yml* file looks like this:
 
    :::code language="yaml" source="code/7-deploy.yml" :::
 
