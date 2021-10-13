@@ -26,7 +26,7 @@ Idempotence is especially important when you interact with data services, becaus
 
 When you apply schemas to an Azure SQL database, you can use a data package, also called a DACPAC file, to deploy your schema. Your pipeline builds a DACPAC file from source code and creates a pipeline artifact, just like with an application. Then, the deployment stage in your pipeline publishes the DACPAC file to the database:
 
-:::image type="content" source="../media/6-dacpac-pipeline-artifact.png" alt-text="Diagram showing a pipeline publishing and then referring to an artifact named 'database'." border="false":::
+:::image type="content" source="../media/6-database-pipeline-artifact.png" alt-text="Diagram showing a pipeline publishing and then referring to an artifact named 'database'." border="false":::
 
 When a DACPAC file is deployed, it behaves in an idempotent way by comparing the target state of your database to the state you define in the package. In many situations, this means you don't need to write scripts that follow the principle of idempotence, because the tooling handles it for you. Some of the tooling for Azure Cosmos DB and Azure Storage also behaves correctly.
 
