@@ -9,4 +9,4 @@ In this module, you:
 
 * [Quickstarts to set up your Azure Sphere device](/azure-sphere/install/overview?azure-portal=true)
 * [Quickstart - Create an Azure IoT Central application and use your smartphone to send telemetry](/azure/iot-central/core/quick-deploy-iot-central?azure-portal=true)
-* [Azure Sphere Samples on GitHub](/azure/azure-sphere-samples?azure-portal=true)
+* [Azure Sphere Samples on GitHub](https://github.com/Azure/azure-sphere-samples?azure-portal=true)
