@@ -44,7 +44,7 @@ Once you've completed the steps above, you'll need to specify the deployment con
 
 1. **Name**: Specify a unique app name for the application. This name will be used to generate the application URL and used as a prefix for other resources being created as part of this deployment. 
 2. **Application Configuration**: For application configurations that were parameterized, use the following value for the current deployment. 
-    - Navigate to the *LearnAppContainerization* resource group [Azure Portal](https://portal.azure.com). 
+    - Navigate to the *LearnAppContainerization* resource group [Azure portal](https://portal.azure.com). 
     - Copy the name of the MySQL server. The MySQL server will name will be in the following format - "airsonic-mysql-server-0000000000". 
         - **Username**: Generate the username as **mysqladmin@${MYSQL_SERVER_NAME}**.
         - **Password**: Specify the value as **SuperS3kretPasSw0rd**.

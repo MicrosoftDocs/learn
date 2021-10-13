@@ -44,7 +44,7 @@ Once you've completed the steps above, you'll need to specify the deployment con
 2. **Number of replicas**: Specify the number of application instances (pods) that should run inside the containers. Use the value **1**.
 3. **Load balancer type**: Select **external** so that the containerized application is reachable from public networks.
 4. **Application Configuration**: For application configurations that were parameterized, use the following value for the current deployment. 
-    - Navigate to the *LearnAppContainerization* resource group [Azure Portal](https://portal.azure.com). 
+    - Navigate to the *LearnAppContainerization* resource group [Azure portal](https://portal.azure.com). 
     - Copy the name of the MySQL server. The MySQL server will name will be in the following format - "airsonic-mysql-server-0000000000". 
     - The MySQL server will name will be in the following format - "airsonic-mysql-server-0000000000". 
         - **Username**: Generate the username as **mysqladmin@${MYSQL_SERVER_NAME}**.
