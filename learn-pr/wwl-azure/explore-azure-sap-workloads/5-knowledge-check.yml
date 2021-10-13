@@ -28,7 +28,7 @@ quiz:
     - content: "Lower TCO"
       isCorrect: true
       explanation: "Correct. Azure provides for a 60% cost reduction when compared to traditional, on-premise storage systems. By using SAP technologies on Azure, customers can realize 40-75% TCO cost savings in Dev and Test environments."
-  - content: "Which Microsoft technology allows you to build advanced pipelines to automate data movement and transformation in your SAP on Azure environment?"
+  - content: "Which Microsoft technology is used to build advanced pipelines to automate data movement and transformation in SAP on Azure environments?"
     choices:
     - content: "Azure Data Lake"
       isCorrect: false
