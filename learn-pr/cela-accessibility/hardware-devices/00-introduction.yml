@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.hardware-devices.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is part of the Accessibility Best Practices for Gaming Hardware module.
+  ms.date: 08/10/2021
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-hardware-devices
+durationInMinutes: 18
+content: |
+  [!include[](includes/00-introduction.md)]

@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.hardware-devices.standard-devices
+title: Hardware Packaging Accessibility
+metadata:
+  title: Hardware Packaging Accessibility
+  description: This content is part of the Accessibility Best Practices for Gaming Hardware module.
+  ms.date: 08/10/2021
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-hardware-devices
+durationInMinutes: 18
+content: |
+  [!include[](includes/01-standard-devices.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why is it important to consider accessible design approaches for standard hardware devices like consoles, PCs, and headsets?"
+    choices:
+    - content: "To ensure that all standard gaming devices are as accessible as bespoke accessibility devices and assistive technologies."
+      isCorrect: false
+      explanation: "Incorrect. Ideally, all devices would be fully accessible to all players. However, diverse player needs often warrant very specific design considerations that address these needs. This may not be possible for every standard gaming device, therefore, standard devices should at least include the accessible elements needed for users to complete initial set-up, and connect their bespoke accessibility devices for in-game play."
+    - content: "Standard hardware devices often need to be engaged before a player can use their specific assistive technologies or adaptive input devices."
+      isCorrect: true
+      explanation: "Correct. Even though a player may have a customized input device for gameplay, if they cannot power on their platform device, they cannot use their customized controllers."
+    - content: "It is not necessary to ensure that standard hardware devices are accessible if an accessible version of the same device already exists."
+      isCorrect: false
+      explanation: "Incorrect. Though many standard hardware devices like the standard Xbox controller has an accessible counterpart (the Xbox Adaptive Controller), this does not mean that all players need the same level of bespoke customization and flexibility that a product like the Xbox Adaptive Controller offers. Instead, all hardware devices should provide a baseline level of accessible elements when possible to provide better experiences for more players."
