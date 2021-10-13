@@ -37,7 +37,7 @@ JavaScript Object Notation, or [JSON][json.org], is a lightweight data format. J
 
 Here is an example of a JSON document:
 
-:::code language="json" source="../samples/3-document.json" range="18-27":::
+:::code language="json" source="../media/3-document.json" range="18-27":::
 
 As you can see, JSON is a relatively readable data format that clearly exposes its content. JSON is also relatively easy to parse and use in JavaScript applications.
 
