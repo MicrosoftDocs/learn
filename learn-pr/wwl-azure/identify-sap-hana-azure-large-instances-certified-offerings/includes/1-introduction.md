@@ -4,7 +4,7 @@ You need to prepare for the kickoff meeting for planning for migration one of yo
 
 ## Learning objectives
 
-You will:
+You will: 
 
  -  Explore SAP HANA on Azure (Large Instances).
  -  Explore deployment options for SAP solutions on Azure.
