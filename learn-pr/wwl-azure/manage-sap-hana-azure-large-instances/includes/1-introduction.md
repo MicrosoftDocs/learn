@@ -4,7 +4,7 @@ Your company is completing deployments of several SAP HANA on Azure (Large Insta
 
 ## Learning objectives
 
-You will:
+You will: 
 
  -  Connect to Azure HANA on Azure (Large Instances) from Azure virtual machines and from on-premises locations.
  -  Manage Azure HANA on Azure (Large Instances) via the Azure portal.
