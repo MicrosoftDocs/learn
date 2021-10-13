@@ -6,9 +6,9 @@ Many players who use assistive technologies (AT) like braille readers or adaptiv
 
 Many AT devices only support standard hardware connection types. Standard hardware connections are non-proprietary forms of connecting one device to another. USB is considered the standard connection for physical connection types. For wireless connections, Bluetooth is considered the standard.
 
-In addition to any other type of connection present on the device you are developing, standard connections like USB ports and Bluetooth pairing compatibility should also be provided as an option. This will ensure that players can connect and use their assistive technologies to engage in gameplay.
+In addition to any other type of connection present on the device you're developing, standard connections like USB ports and Bluetooth pairing compatibility should also be provided as an option. It will ensure that players can connect and use their assistive technologies to engage in gameplay.
 
-The following image shows a player using a mouth-operated assistive device called the Quadstick. The Quadstick can be connected to gaming devices via USB. PCs and the Xbox Adaptive controller both include USB ports. This supports players in being able to use assistive devices like the Quadstick in their gaming experience on PC and console platforms without barriers.
+The following image shows a player using a mouth-operated assistive device called the Quadstick. The Quadstick can be connected to gaming devices via USB. PCs and the Xbox Adaptive controller both include USB ports. It supports players in being able to use assistive devices such as the Quadstick in their gaming experience on PC and console platforms without barriers.
 
 The following image shows a player using the mouth-operated Quadstick on their PC to play games competitively.
 
@@ -20,7 +20,7 @@ Consider the following information when creating hardware experiences to ensure 
 
 ### Button size
 
-The physical surface area of a button can impact whether a user with disabilities can activate it. Buttons on devices have been designed under the assumption that players can isolate and use a single fingertip to press the button. However, users with disabilities may need to leverage larger body parts, like a knuckle, residual limb, or palm, to activate controls. Intentional design decisions made to maximize button size on devices with limited surface area can create more accessible experiences for players who use body parts other than fingertips to access buttons.
+The physical surface area of a button can impact whether a user with disabilities can activate it. Buttons on devices have been designed under the assumption that players can isolate and use a single fingertip to press the button. However, users with disabilities may need to use larger body parts, like a knuckle, residual limb, or palm, to activate controls. Intentional design decisions made to maximize button size on devices with limited surface area can create more accessible experiences for players who use body parts other than fingertips to access buttons.
 
 The image below shows a person’s hand as they press a button on a USB speaker device. The larger buttons on the device are about the size of a US penny. The increased surface area of the buttons on this device can make it easier for players to control the speaker device.
 
@@ -28,9 +28,9 @@ Similarly, the size of the A and B buttons on the Xbox Adaptive Controller were,
 
 ### Button height
 
-For this module, the term button height refers to the difference in height between the top of the button and its surrounding material. Ask yourself -- Is the button raised, or is it completely flush with the rest of the device?
+For this module, the term button height refers to the difference in height between the top of the button and its surrounding material. Ask yourself, is the button raised, or is it completely flush with the rest of the device?
 
-Buttons that are flush  with the surrounding device material can create accessibility barriers. For users without vision, buttons may be located through touch. Buttons that are flush with their surrounding may not be tactilely discernable. If the user cannot find the button, they cannot use it to perform the desired action. Buttons that are raised from the surface of the device can help with the discoverability of the button location.
+Buttons that are flush  with the surrounding device material can create accessibility barriers. For users without vision, buttons may be located through touch. Buttons that are flush with their surrounding may not be discernable by touch. If the user cannot find the button, they cannot use it to perform the desired action. Buttons that are raised from the surface of the device can help with the discoverability of the button location.
 
 Design for accidental activation should be balanced with removing accessibility barriers when determining button height. Buttons should be discoverable and pressable for players with disabilities.
 
@@ -38,11 +38,11 @@ Design for accidental activation should be balanced with removing accessibility 
 
 Another important aspect of hardware accessibility is the amount of force a player must exert to activate a button or generate input. To prevent accidental activation, developers may intentionally configure an item to require more force to perform an action. For example, items often carried in backpacks, like a headset, may be intentionally designed to require a higher activation force for buttons so they are not activated accidentally in transit.
 
-Considerations around the force needed to operate controls should be factored into hardware design and development. The 2010 Americans with Disabilities Act Standards for Accessible Design Best suggests a maximum of 5 lb., or 22.N Newtons, for activation force of operable parts. For smaller parts like buttons and keys, lower activation forces should be considered. For example:
+Considerations around the force needed to operate controls should be factored into hardware design and development. The 2010 Americans with Disabilities Act Standards for Accessible Design Best suggest a maximum of 5 lb., or 22.N Newtons, for activation force of operable parts. For smaller parts like buttons and keys, lower activation forces should be considered. For example:
 
 - The Xbox One console’s touch-based power button can be activated with 0g of force.  
-- Most keys on a standard keyboard can be activated with 45 to 70 grams of force. 
-- “Ultra” light assistive technology switches can be activated with as low as 20g of force. 
+- Most keys on a standard keyboard can be activated with 45 grams to 70 grams of force.
+- “Ultra” light assistive technology switches can be activated with as low as 20 g of force.
 
 Button size and activation force are equally important when creating accessible experiences for players.
 
@@ -50,7 +50,7 @@ Button size and activation force are equally important when creating accessible 
 
 The movement a player must perform to use a device should be considered when creating accessible experiences for players. For example, the method of activation for a volume control may require the user to grasp a knob and twist their hand or wrist to either side to raise or lower volume. The method of activation to pair a Bluetooth device often requires pressing a button for a prolonged time.
 
-When designing and creating new devices, it is recommended to avoid activation methods that require players to perform twisting motions or prolonged time to complete an action. In cases where this is not possible, consider providing alternative solutions, designed with accessibility in mind, to complete the required action. For example, if your product is already in the market, consider creating an application that can be installed on a phone, gaming console, or PC as an accessible alternative for managing the device.
+When designing and creating new devices, it's recommended to avoid activation methods that require players to perform twisting motions or prolonged time to complete an action. In cases where this is not possible, consider providing alternative solutions, designed with accessibility in mind, to complete the required action. For example, if your product is already in the market, consider creating an application that can be installed on a phone, gaming console, or PC as an accessible alternative for managing the device.
 
 The image below shows the ear cup dials on an Xbox gaming headset. Players twist the dials to adjust the volume and chat mixer values. Players unable to perform the necessary twisting motions can instead use the Xbox Accessories app. This app provides a configuration settings menu for players to use to adjust the settings.
 

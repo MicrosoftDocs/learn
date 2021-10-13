@@ -17,15 +17,15 @@ quiz:
   questions:
   - content: "How can developers best ensure that players can connect their assistive technologies to their gaming hardware devices?"
     choices:
-    - content: "1.	Provide custom adaptors that customers can purchase at an additional cost to convert the proprietary connections on their new device to the connection types that their assistive technologies use."
+    - content: "Provide custom adaptors that customers can purchase at extra cost to convert the proprietary connections on their new device to the connection types that their assistive technologies use."
       isCorrect: false
-      explanation: "Incorrect. Though custom adaptors can ultimately bridge compatibility between a gaming device and an assistive technology, this would not be the best option. When additional costs are introduced to obtain connection adaptors, developers cannot guarantee that customers will be able to acquire or afford an adaptor."
+      explanation: "Incorrect. Though custom adaptors can ultimately bridge compatibility between a gaming device and an assistive technology, this wouldn't be the best option. When additional costs are introduced to obtain connection adaptors, developers cannot guarantee that customers will be able to acquire or afford an adaptor."
     - content: "Include standard connection options on the device like USB and Bluetooth."
       isCorrect: true
       explanation: "Correct. In addition to any proprietary or other connection types, developers can also ensure that a standard connection is provided to support assistive technology device use."
     - content: "Offer custom assistive technology devices that are compatible with the gaming hardware device."
       isCorrect: false
-      explanation: "Incorrect. Players should not have to purchase additional assistive technologies or devices for each individual gaming device they’d like to use. Players should be able to use the AT they already have with all other compatible devices."
+      explanation: "Incorrect. Players should not have to purchase more assistive technologies or devices for each individual gaming device they’d like to use. Players should be able to use the AT they already have with all other compatible devices."
   - content: "A hardware developer would like to create a new controller with buttons that can be easily activated by a player with limited strength in their fingers. Which of the following would be an appropriate activation force for these controller buttons?"
     choices:
     - content: "25 Newtons"
@@ -41,10 +41,10 @@ quiz:
     choices:
     - content: "Allow customers with disabilities to return the headset for a full refund after purchase."
       isCorrect: false
-      explanation: "Incorrect. Though it is very important to support customers who encounter inaccessible experiences during new product and experience use by providing product refunds, this option does not address actual design and implementation efforts that the team can use to provide a more accessible for the device itself, prior to the point of customer returns."
+      explanation: "Incorrect. Though it's very important to support customers who encounter inaccessible experiences during new product and experience use by providing product refunds, this option does not address actual design and implementation efforts that the team can use to provide a more accessible for the device itself, prior to the point of customer returns."
     - content: "Revisit the original design and begin the development process over from start to finish."
       isCorrect: false
-      explanation: "Incorrect. It is not very likely that beginning the development process from scratch would be a viable option for this team. Therefore, this option does not adequately address this scenario."
+      explanation: "Incorrect. It's not very likely that beginning the development process from scratch would be a viable option for this team. Therefore, this option does not adequately address this scenario."
     - content: "Allow players to control the physical hardware components on the device through software-based UI menus."
       isCorrect: true
-      explanation: "Correct. Ideally, the physical actions needed to control the device will be accessible, however, if this is not possible, an additional way to support accessible experiences would be to allow users to control these actions via software UI."
+      explanation: "Correct. Ideally, the physical actions needed to control the device will be accessible, however, if this is not possible, another way to support accessible experiences would be to allow users to control these actions via software UI."
