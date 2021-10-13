@@ -3,7 +3,7 @@ uid: learn.wwl.program-transact-sql
 metadata:
   title: Program with Transact-SQL
   description: Program with Transact-SQL
-  ms.date: 09/17/2021
+  ms.date: 10/09/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ prerequisites: |
   - Familiarity with Transact-SQL
 summary: |
   Learn how to use programming techniques in your Transact-SQL.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/transact-sql-program.svg
 levels:
 - advanced
 roles:
