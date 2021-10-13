@@ -1,9 +1,9 @@
 Wide World Importers' has thousands of machines across multiple offices. Given the scale of the deployment, an immediate concern is how to successfully onboard all the servers.   
-For a single server, onboarding options include Azure portal, Azure PowerShell, Azure PowerShell DSC, and Windows Admin Center. For multiple servers, onboarding options include Azure Service Principal and Update Management. Furthermore, the Service Principal approach can be automated using a configuration management tool of choice (ex. Group Policy, Systems Center Configuration Manager, Ansible, etc.). 
+For a single server, onboarding options include Azure portal, Azure PowerShell, Azure PowerShell DSC, and Windows Admin Center. For multiple servers, onboarding options include Azure service principal and Azure Automation Update Management. Furthermore, the Service Principal approach can be automated using a configuration management tool of choice (ex. Group Policy, Systems Center Configuration Manager, Ansible, etc.). 
 
 With many deployment methods, you can deploy Azure Arc-enabled servers at scale using the tooling that best fits the needs and expertise of your organization. 
 
-## Single-Server Enablement
+## Deploy to a single server
 
 There are a range of options to arc-enable a single server including Azure portal, PowerShell, PowerShell DSC, and Windows Admin Center.
 
@@ -14,7 +14,7 @@ There are a range of options to arc-enable a single server including Azure porta
 | **PowerShell DSC** | Using Windows PowerShell Desired State Configuration (DSC), you can automate software installation and configuration for a Windows computer. You can install the ConnectedMachine DSC module, which is designed to manage the Azure Connected Machine Agent configuration. The module also contains a PowerShell script AzureConnectedMachineAgent.ps1, to automate the download and installation, and establish a connection with Azure Arc. This resource can be added to existing DSC configurations to represent an end-to-end configuration for a machine. |
 | **Windows Admin Center** | You can use Windows Admin Center to deploy the Connected Machine agent and register your on-premises servers without having to do any steps outside of this tool. Select the "Leverage Azure policies and solutions to manage your servers with Azure Arc" service under Azure hybrid services in the Windows Admin Center. |
 
-## Multi-Server Arc Enablement
+## Deploy to multiple servers
 
 For at scale deployment of Arc-enabled servers, a privileged identity with Service Principal can be used. This script can be coupled with myriad configuration management tools to automate onboarding for multiple servers. Instead, non-Azure machines already managed by Update Management can be directly onboarded from Azure portal. 
 
