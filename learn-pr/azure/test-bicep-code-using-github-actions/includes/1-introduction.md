@@ -1,62 +1,38 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+When you automate your Bicep deployments by using Azure Pipelines, you create a consistent and reusable process for managing your Azure resources. Over time, your pipeline becomes the only way that changes can be made to your Azure environment. It's important to ensure that your pipeline enforces quality checks before, during, and after each deployment. 
 
-    Goal: orient the learner to the area covered in this module
+In this module, you'll learn how to extend your pipeline to add validation, checks, and tests. By doing this, you'll build confidence that your deployments meet your quality standards.
 
-    Heading: none
-
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
-
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
-
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add a visual element
-
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
-
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
-
-    Heading: "## Example scenario"
-
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
-
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=master#images)
-
-    Optional: a "scenario video" that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
 ## Example scenario
-TODO: add your scenario
-TODO: add a visual element
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
+Suppose you're the Azure administrator at a toy company. You've been working with your website team to create a Bicep template that deploys and configures the Azure resources for your company's main website. You've recently also been creating a pipeline to deploy the Bicep file automatically.
 
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
+Recently, you and your team have made several changes to your website's Bicep files that included mistakes. You're worried that one day these mistakes might cause a production outage. You want to add testing to your Bicep deployment pipeline to ensure that each deployment has the best chance of succeeding.
 
-    Heading: "## What will we be doing?"
+## What will you be doing?
 
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
+In this module, you'll learn how you can test your Bicep code within your Azure DevOps pipeline. When your pipeline runs, you'll immediately get feedback on the changes that were made to your Bicep files. 
 
- -->
-## What will we be doing?
-TODO: add your activities
+You'll add linting to ensure the quality of your Bicep code, and preflight deployment validation to increase the chance that your deployments will succeed. You'll also use the what-if operation to add a manual approval step to your pipeline. After deployment, you'll verify your environment by running more tests.
 
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
-
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
-
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
 
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+After you complete this module, you'll be able to update your Bicep deployment pipeline with validation and tests that help to ensure the quality of your Azure environment.
+
+## Prerequisites
+
+You should be familiar with using:
+
+  - Bicep, including creating and deploying basic files.
+  - Azure, including the Azure portal, subscriptions, resource groups, and resources.
+  - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
+  - Basic YAML pipelines through Azure Pipelines, including service connections.
+
+To work through the exercises in the module, you'll need an Azure account with the ability to create resource groups, Azure Active Directory applications, and service principals.
+  
+You'll also need the following installed locally:
+  
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
+  - The [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines)
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version
+  - [Git](https://git-scm.com/download?azure-portal=true)
