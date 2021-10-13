@@ -140,8 +140,8 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     Connect-AzAccount
     ```
 
-> [!TIP]
-> The [Az PowerShell module](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) is the replacement of AzureRM and is the recommended version to use for interacting with Azure.
+    > [!TIP]
+    > The [Az PowerShell module](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) is the replacement of AzureRM and is the recommended version to use for interacting with Azure.
 
 1. Sign in using the account you used to activate the sandbox. After you've signed in, VS Code lists the subscriptions associated with your account in the terminal window. If you activated the sandbox, you see a code block that contains `"name": "Concierge Subscription"`. This is the subscription to use for the rest of the exercise.
 
