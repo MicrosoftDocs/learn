@@ -23,7 +23,7 @@ What solution should be used to log user sign-in activity?
 ( )Azure Alerts {{that’s incorrect. Azure Alerts can notify you of an activity log event but it does not log user sign-in activity}}
 
 ## Multiple Choice
-What monitoring tool do you recommended to measure user experience and analyze users' behavior for all external facing applications 
+What monitoring tool do you recommended to measure user experience and analyze users' behavior for all external facing applications? 
 (x)Azure Application Insights {{That’s correct. Because Application Insights can measure user experience and analyze users' behavior}}
 ( )Azure Monitor container insights {{that’s incorrect. Container insights can show the health and performance of your Kubernetes workloads but don’t specifically measure user experience or behavior}}
 ( )Azure Activity log {{that’s incorrect. Azure Activity log doesn’t measure application user experience or behavior}}

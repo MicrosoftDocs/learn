@@ -30,7 +30,7 @@ Telemetry related to your Azure tenant is collected from tenant-wide services su
 :::image type="content" source="../media/azure-monitor-tenant.png" alt-text=" Sources of monitoring data for Active Directory.":::
 
 
-### Azure Active Directory Audit Logs
+### Azure Active Directory audit logs
 
 [Azure Active Directory reporting](/azure/active-directory/reports-monitoring/overview-reports) contains the history of sign-in activity and audit trail of changes made within a particular tenant.
 
@@ -49,7 +49,7 @@ Compute resources in Azure, in other clouds, and on-premises have a guest operat
 
 
 
-### Azure Monitor Agent 
+### Azure Monitor agent 
 
 The Azure Monitor agent (AMA) collects monitoring data from the guest operating system of Azure virtual machines and delivers it to Azure Monitor. The Azure Monitor agent replaces the following legacy agents that are currently used by Azure Monitor to collect guest data from virtual machines ([view known gaps](/azure/azure-monitor/faq)):
 
