@@ -33,7 +33,8 @@ Use the following instructions to create a new **Custom Vision** resource.
     - **Prediction location**: *The same region as the training resource*
     - **Prediction pricing tier**: Free F0
 
-    > **Note**: If you already have an F0 custom vision service in your subscription, select **S0** for this one.
+    > [!NOTE] 
+    > If you already have an F0 custom vision service in your subscription, select **S0** for this one.
 
 3. Wait for the resources to be created, and note that two Custom Vision resources are provisioned; one for training, and another for prediction. You can view these by navigating to the resource group where you created them.
 
@@ -57,29 +58,29 @@ To train an object detection model, you need to upload images that contain the c
 1. Download and extract the training images from https://aka.ms/fruit-objects. The extracted folder contains a collection of images of fruit.
 2. In the Custom Vision portal [https://customvision.ai](https://customvision.ai?azure-portal=true), make sure you are working in your object detection project _Grocery Detection_. Then select **Add images** and upload all of the images in the extracted folder.
 
-![Upload downloaded images by clicking add images.](../media/fruit-upload.jpg)
+    ![Upload downloaded images by clicking add images.](../media/fruit-upload.jpg)
 
 3. After the images have been uploaded, select the first one to open it.
 
 4. Hold the mouse over any object in the image until an automatically detected region is displayed like the image below. Then select the object, and if necessary resize the region to surround it.
 
-![The default region for an object](../media/object-region.jpg)
+    ![The default region for an object](../media/object-region.jpg)
 
-Alternatively, you can simply drag around the object to create a region.
+    Alternatively, you can simply drag around the object to create a region.
 
 5. When the region surrounds the object, add a new tag with the appropriate object type (*apple*, *banana*, or *orange*) as shown here:
 
-![A tagged object in an image](../media/object-tag.jpg)
+    ![A tagged object in an image](../media/object-tag.jpg)
 
 6. Select and tag each other object in the image, resizing the regions and adding new tags as required.
 
-![Two tagged objects in an image](../media/object-tags.jpg)
+    ![Two tagged objects in an image](../media/object-tags.jpg)
 
 7. Use the **>** link on the right to go to the next image, and tag its objects. Then just keep working through the entire image collection, tagging each apple, banana, and orange.
 
 8. When you have finished tagging the last image, close the **Image Detail** editor and on the **Training Images** page, under **Tags**, select **Tagged** to see all of your tagged images:
 
-![Tagged images in a project](../media/tagged-images.jpg)
+    ![Tagged images in a project](../media/tagged-images.jpg)
 
 ## Train and test a model
 
@@ -109,7 +110,7 @@ Now that you have a custom model, you can run a simple client application that u
     git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
     ```
 
-2. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your cloud shell storage and work with them. Type the following command into the shell: 
+2. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
 
      ```
     code .
@@ -123,17 +124,17 @@ Now that you have a custom model, you can run a simple client application that u
 
 4. Don't worry too much about the details of the code, the important thing is that it needs the prediction URL and key for your Custom Vision model when using an image URL. 
 
-Get the *prediction URL* from the dialog box in your Custom Vision project, which should look like this:
+    Get the *prediction URL* from the dialog box in your Custom Vision project, which should look like this:
 
-![Prediction URL information for a custom vision model](../media/custom-vision-url.png). 
+    ![Prediction URL information for a custom vision model](../media/custom-vision-url.png). 
 
-Paste it into the code editor, replacing the **YOUR_PREDICTION_URL**.
+    Paste it into the code editor, replacing the **YOUR_PREDICTION_URL**.
 
-Get the *prediction key*. Click on the *project gallery page** icon on the top left hand side of the custom vision portal. Then click on the settings icon on the top right hand side of the custom vision portal. Look for your prediction resource and click on it.   
+    Get the *prediction key*. Click on the *project gallery page** icon on the top left hand side of the custom vision portal. Then click on the settings icon on the top right hand side of the custom vision portal. Look for your prediction resource and click on it.   
 
-![Screenshot of the prediction key.](../media/custom-vision-pred-key.png)
+    ![Screenshot of the prediction key.](../media/custom-vision-pred-key.png)
 
-Copy the prediction key. Paste it in the code editor, replacing the **YOUR_PREDICTION_KEY** placeholder value.
+    Copy the prediction key. Paste it in the code editor, replacing the **YOUR_PREDICTION_KEY** placeholder value.
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
 
