@@ -1,10 +1,5 @@
 In this exercise, you'll configure a sample Microservice architecture to be ready for autoscaling. Later, you'll view the application autoscaling details and learn how to trigger it to scale.
 
-## Introduction
-
-In this exercise, you'll clone a Git repository and run a script that sets-up an Azure Spring Cloud microservice application and an Azure Database for MySQL.
-The script deploys a well-known PetClinic microservice application and is built around small independent services, communicating over HTTP via a REST API.
-
 ## The sample microservice application
 
 The PetClinic application is decomposed into four core microservices. All of them are independently deployable applications organized by business domains.

@@ -4,7 +4,7 @@ In this module, you learned how to:
 
 - Create a Sample Autoscale architecture with Java
 
-- Create scale rules
+- Investigate the sample scale rules
 
 - Trigger scale actions
 

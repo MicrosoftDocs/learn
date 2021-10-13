@@ -62,7 +62,7 @@ A primary advantage of the cloud is elastic scaling - the ability to use as much
 
 **Offload resource-intensive tasks.** Tasks that require a lot of CPU or I/O resources should be moved to background jobs when possible, to minimize the load on the front end that is handling user requests.
 
-**Use built-in autoscaling features**. Many Azure compute services have built-in support for autoscaling. If the application has a predictable, regular workload, scale out on a schedule. For example, scale out during business hours. Otherwise, if the workload is not predictable, use performance metrics such as CPU or request queue length to trigger autoscaling. For autoscaling best practices.
+**Use built-in autoscaling features**. If the application has a predictable, regular workload, scale out on a schedule. For example, scale out during business hours. Otherwise, if the workload is not predictable, use performance metrics such as CPU or request queue length to trigger autoscaling. For autoscaling best practices.
 
 **Consider aggressive autoscaling for critical workloads**. For critical workloads, you want to keep ahead of demand. It's better to add new instances quickly under heavy load to handle the additional traffic, and then gradually scale back.
 
@@ -78,7 +78,7 @@ A primary advantage of the cloud is elastic scaling - the ability to use as much
 - A resource can have only *one* autoscale setting
 - An autoscale setting can have one or more profiles and each profile can have one or more autoscale rules.
 - An autoscale setting scales instances horizontally, which is *out* by increasing the instances and *in* by decreasing the number of instances.
-  An autoscale setting has a maximum, minimum, and default value of instances.
+- An autoscale setting has a maximum, minimum, and default value of instances.
 - An autoscale job always reads the associated metric to scale by, checking if it has crossed the configured threshold for scale-out or scale-in. You can view a list of metrics that autoscale can scale by at Azure Monitor autoscaling common metrics.
 - All thresholds are calculated at an instance level. For example, "scale out by one instance when average CPU > 80% when instance count is 2", means scale-out when the average CPU across all instances is greater than 80%.
 - All autoscale failures are logged to the Activity Log. You can then configure an activity log alert so that you can be notified via email, SMS, or webhooks whenever there is an autoscale failure.
