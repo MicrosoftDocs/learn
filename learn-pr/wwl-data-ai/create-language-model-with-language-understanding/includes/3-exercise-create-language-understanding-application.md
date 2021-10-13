@@ -8,7 +8,7 @@ To test the capabilities of the Language Understanding service, we'll use a simp
 
 ## Create *Language Understanding* Resources
 
-Microsoft cognitive services includes the Language Understanding service, which enables you to define *intents* that are applied to *entities* based on *utterances*. You can use either a **Language Understanding** or  **Cognitive Services** resource to *publish* a Language Understanding app, but you must create a separate **Language Understanding** resource for *authoring* the app.
+Microsoft Cognitive Services includes the Language Understanding service, which enables you to define *intents* that are applied to *entities* based on *utterances*. You can use either a **Language Understanding** or  **Cognitive Services** resource to *publish* a Language Understanding app, but you must create a separate **Language Understanding** resource for *authoring* the app.
 
 1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with your Microsoft account.
 2. Click **+ Create a resource**, and search for *Language Understanding*.
@@ -78,7 +78,7 @@ To use your trained model in a client application, you must publish it as an end
 
 ## Use your Language Understanding app from a client
 
-To consume your language model from a client, we'll use a simple command-line application that runs in the cloud shell provided with your Azure subscription.
+To consume your language model from a client, we'll use a simple command-line application that runs in the Cloud Shell provided with your Azure subscription.
 
 ## Configure and run a client application
 
@@ -90,7 +90,7 @@ Now that you have a language model, you can run a simple client application that
     git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
     ```
 
-2. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your cloud shell storage and work with them. Type the following command into the shell: 
+2. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
 
      ```
     code .
