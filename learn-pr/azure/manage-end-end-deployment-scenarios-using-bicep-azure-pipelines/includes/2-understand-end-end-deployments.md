@@ -52,7 +52,7 @@ Azure Pipelines enables you to propagate the values of outputs by using *pipelin
 
 When you access variables that were created in another job in the same stage, you need to *map* the variable to make it accessible to the job that reads it:
 
-:::code language="yaml" source="code/2-outputs-stages.yml" range-"1-16" highlight="12-13" :::
+:::code language="yaml" source="code/2-outputs-stages.yml" range="1-16" highlight="12-13" :::
 
 You can access variables across pipeline stages, too. You also need to map the variable, but you use a slightly different syntax:
 
