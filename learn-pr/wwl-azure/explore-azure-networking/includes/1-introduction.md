@@ -6,7 +6,7 @@ You need to prepare the specifications to leverage the networking component to d
 
 ## Learning objectives
 
-You will:
+You will: 
 
  -  Explore Azure virtual networks.
  -  Consider IP addressing.
