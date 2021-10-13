@@ -25,7 +25,7 @@ Use the following instructions to create a new **Custom Vision** resource.
     - **Prediction location**: *The same region as the training resource*
     - **Prediction pricing tier**: Free F0
 
-    > [!NOTE]: 
+    > [!NOTE]
     > If you already have an F0 custom vision service in your subscription, select **S0** for this one.
 
 3. Wait for the resources to be created, and note that two Custom Vision resources are provisioned; one for training, and another for prediction. You can view these by navigating to the resource group where you created them.
