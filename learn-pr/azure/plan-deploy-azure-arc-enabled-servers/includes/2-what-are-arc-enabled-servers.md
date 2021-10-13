@@ -1,6 +1,6 @@
-Using Azure Security Center to improve security posture across one's entire digital estate, Azure Sentinel for vulnerability and threat intelligence in other clouds, and Azure Monitoring for performance analytics on-premise, Azure Arc-enabled servers offers customers immense value: delivered through a simple architecture. 
+Using Azure Security Center to improve security posture across one's entire digital estate, Azure Sentinel for vulnerability and threat intelligence in other clouds, and Azure Monitor to monitor on-premises services, Azure Arc-enabled servers offers customers immense value: delivered through a simple architecture. 
 
-As Wide World Importers has prioritized its deployment of Arc-enabled servers, you want to first understand how Arc is able to extend Azure's management plane to servers outside Azure and learn about what capabilities Arc-enabled servers could deliver for the firm.  
+As Wide World Importers has prioritized its deployment of Azure Arc-enabled servers, you want to first understand how Azure Arc is able to extend Azure's management plane to servers outside Azure and learn about what capabilities Azure Arc-enabled servers could deliver for the firm.  
 
 ## Overview of the Connected Machine agent  
 
