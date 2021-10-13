@@ -83,13 +83,13 @@ We begin by deploying an image from directly from Docker Hub into the cluster. T
 
 You have successfully deployed your workload on a cluster that doesn't have any policy enforcement on it. Now you will add a Policy to the cluster and see how that affects it.
 
-### Assign a Policy
+### Assign a policy
 
 You'd like to ensure that only images from certain registries are allowed in the cluster. You'll need to create a new policy definition and then assign it to a scope; in this case the scope will be our **videogamerg** resource group. Policies can be created and assigned through the Azure portal, Azure PowerShell, or Azure CLI. This exercise takes you through creating a policy in the portal.
 
 Find the built-in policy definitions for managing your cluster using the Azure portal with the following steps. In this case, you'll be applying the "only allowed images" Policy.
 
-1. Go to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure Portal**.
+1. Go to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure portal**.
 
 1. In the left pane of the Azure Policy page, select Definitions.
 
@@ -121,13 +121,13 @@ Your Policy assignment should look like the picture below. The effect is set to 
 
 ![screenshot showing details of Policy assignment](../media/5-policy-assignment-details.png)
 
-## Assign a Policy Initiative
+## Assign a policy initiative
 
 Now that you have successfully assigned your policy, you will now assign an initiative before you test the policies. An Azure Policy initiative is a collection of Azure Policy definitions, or rules, that are grouped together towards a specific goal or purpose. Azure initiatives simplify management of your policies by grouping a set of policies together, logically, as a single item.
 
 Initiatives can be assigned the same way policies are assigned. Follow the steps below to assign the  "[Kubernetes cluster pod security restricted standards for Linux-based workloads](/azure/aks/policy-reference#initiatives)" initiative.
 
-1. Return to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure Portal**.
+1. Return to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure portal**.
 1. In the left pane of the Azure Policy page, select Definitions.
 1. From the Category dropdown list box, use Select all to clear the filter and then select Kubernetes.
 1. Select the **Kubernetes cluster pod security restricted standards for Linux-based workloads** initiative  definition. Take some time to review the various policies that are a part of the initiative.
@@ -245,7 +245,7 @@ NAME                            READY   STATUS    RESTARTS   AGE
 simple-nginx-66d884c498-msbpc   1/1     Running   0          63m
 ```
 
-## Diagnose why the Pod was not deployed
+## Diagnose why the pod was not deployed
 
 In the previous section, we noticed that the second pod was not deployed. In this section, we will use the command line to diagnose why.
 
@@ -283,7 +283,7 @@ Delete the deployment to prepare for the next step.
 kubectl delete deployment second-simple-nginx
 ```
 
-## Redeploying the pods using an Azure Container Registry Image
+## Redeploying the pods using an Azure Container Registry image
 
 Now that you know that the Policy prevents images from Docker hub from being created in your cluster based on your Policy, let us try redeploying the same workload using an image from ACR. In this section you will create an Azure Container Registry, copy the nginx image from Docker hub to the new registry and attempt to redeploy the pod form your container registry. We will use Azure CLI to create the container registry.
 
