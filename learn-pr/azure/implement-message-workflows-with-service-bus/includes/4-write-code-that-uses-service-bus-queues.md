@@ -58,6 +58,22 @@ To receive messages, you must first register a message handler - this is the met
 
 ```C#
 await using ServiceBusProcessor processor = client.CreateProcessor(queueName, options);
+// configure the message and error handler to use
+processor.ProcessMessageAsync += MessageHandler;
+processor.ProcessErrorAsync += ErrorHandler;
+
+async Task MessageHandler(ProcessMessageEventArgs args)
+{
+    await args.CompleteMessageAsync(args.Message);
+}
+
+Task ErrorHandler(ProcessErrorEventArgs args)
+{
+    return Task.CompletedTask;
+}
+
+// start processing
+await processor.StartProcessingAsync();
 ```
 
 Do your processing work. Then, within the message handler, call the `receivedMessage.CompleteMessageAsync()` method to remove the message from the queue.
