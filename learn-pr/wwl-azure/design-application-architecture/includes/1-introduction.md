@@ -56,4 +56,4 @@ Design Infrastructure solutions
 
 - Working experience with developing cloud applications.
 
-- Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching.
+- Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching. 
