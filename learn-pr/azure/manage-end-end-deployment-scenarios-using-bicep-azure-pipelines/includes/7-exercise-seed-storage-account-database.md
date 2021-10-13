@@ -1,4 +1,4 @@
-You updated your pipeline to build and deploy your website's application to the Azure App Service app defined in your Bicep file. But the smoke test stage is failing because the database isn't working yet. In this unit, you'll deploy a new Azure SQL logical server and database, and you'll configure your pipeline to build and deploy the database's schema. You'll also update your pipeline to add some sample product data for your test environment.
+You updated your pipeline to build and deploy your website's application to the Azure App Service app defined in your Bicep file. But the smoke test stage is failing because the database isn't working yet. In this unit, you'll deploy a new Azure SQL logical server and database, and you'll configure your pipeline to build and deploy the database's schema. You'll also update your pipeline to add some sample product data for your test environment so your team can try out the website.
 
 In the process, you'll:
 
@@ -175,8 +175,6 @@ Here, you define the steps required to deploy the database components of your we
 
 1. Save your changes to the file.
 
-1. **TODO TEMPORARY: Add the sample data to the repo here**
-
 1. Commit and push your changes to your Git repository. Run the following commands in the Visual Studio Code terminal:
 
     ```cmd
@@ -223,17 +221,17 @@ Here, you define the steps required to deploy the database components of your we
 
 1. Select **Toys**.
 
-   <!-- TODO screenshot after sample images are updated -->
+   :::image type="content" source="../media/7-website-test-welcome.png" alt-text="Screenshot of the toy company website's homepage, with the Toys link highlighted.":::
 
    Notice that sample data is displayed in the test environment.
 
-   <!-- TODO screenshot after sample images are updated -->
+   :::image type="content" source="../media/7-website-test-toys.png" alt-text="Screenshot of the test website's toy page, with the sample toys displayed.":::
 
 1. Repeat the process above for the **Deploy (Production Environment)** stage's app.
 
    Notice that no sample data is displayed in the production environment.
 
-   <!-- TODO screenshot after sample images are updated -->
+   :::image type="content" source="../media/7-website-production-toys.png" alt-text="Screenshot of the production website's toy page, with no toys displayed.":::
 
 ## Clean up resources
 
