@@ -2,7 +2,7 @@ In the previous section, you saw how Azure policies can be used to easily govern
 
 ## Using the Azure Portal to see non-compliant pods
 
-1. Go to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure Portal**.
+1. Go to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure portal**.
 
 1. At the top, you can set the scope to your cluster resource group by clicking on the **...**. Select the Subscription and the resource group where the AKS cluster is sitting and click **Select** at the bottom.
 
@@ -31,7 +31,7 @@ Now that we have found the pod that is not compliant, we will go ahead and delet
 kubectl delete deployment simple-nginx
    ```
 
-1. It might take up to 45 minutes for the changes to reflect on the portal. After waiting, head back to the Policy to to see if there are still any uncompliant pods under it. You will find that your cluster is now in compliance with the Policy.
+It might take up to 45 minutes for the changes to reflect on the portal. After waiting, head back to the Policy to to see if there are still any uncompliant pods under it. You will find that your cluster is now in compliance with the Policy.
 
    ![screenshot showing that the resource is now compliant](../media/6-cluster-now-compliant.png)
 
