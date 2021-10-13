@@ -74,13 +74,13 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
     docker container rm <NAME>
     ```
 
-1. Verify that the container has been removed by running the following command. The command should no longer list the container.
+1. Verify that the container has been removed by running the following command. The output should no longer list the container.
 
     ```bash
     docker ps -a
     ```
 
-1. List the images currently available on your computer.
+1. List the image(s) currently available on your computer.
 
     ```bash
     docker image ls
@@ -92,7 +92,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
     docker image rm mcr.microsoft.com/dotnet/core/samples:aspnetapp
     ```
 
-1. List the images again to verify that the image for the *microsoft/dotnet-samples* web app has disappeared.
+1. List the image(s) again to verify that the image for the *microsoft/dotnet-samples* web app has disappeared.
 
     ```bash
     docker image ls
