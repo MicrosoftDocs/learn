@@ -4,7 +4,7 @@ Within the umbrella of the Azure SQL platform, there are many deployment options
 
  
 
-## Analyze Azure SQL Deployment Options
+## Analyze Azure SQL deployment options
 
 As displayed in the following graphic, Azure offers SQL Server in the following ways:
 
@@ -64,7 +64,7 @@ Azure SQL Database has two purchasing models as shown in the following graphic:
 - vCore
 
 
-:::image type="content" source="../media/select-an-azure-sql-database-pricing-model.png" alt-text="Diagram of the SQL database pricing options.":::
+:::image type="content" source="../media/select-azure-sql-database-pricing-model.png" alt-text="Diagram of the SQL database pricing options.":::
 
  
 
@@ -75,13 +75,13 @@ Azure SQL Database has two purchasing models as shown in the following graphic:
 
 - Serverless model is a compute tier for single databases in Azure SQL Database. It automatically scales compute, based on workload demand and bills only for the amount of compute used. This is shown graphically in the following image.
 
-:::image type="content" source="../media/serverless-billing.png" alt-text="Diagram of the SQL database pricing options.":::
+:::image type="content" source="../media/serverless-billing.png" alt-text="Diagram of the serverless billing options.":::
 
 
 
 The vCore-based model is recommended because it allows you to independently select compute and storage resources. The DTU-based model is a bundled measure of compute, storage, and I/O resources.
 
-**IMPORTANT:** The vCore model also allows you to use Azure Hybrid Benefit for SQL Server and/or reserved capacity (pay in advance) to save money. Neither of these options is available in the DTU model.
+> [!IMPORTANT] The vCore model also allows you to use Azure Hybrid Benefit for SQL Server and/or reserved capacity (pay in advance) to save money. Neither of these options is available in the DTU model.
 
 In the table below, you can see which purchasing model is recommended based on the requirements.
 

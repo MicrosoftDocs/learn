@@ -1,6 +1,6 @@
 Tailwind Traders has several workloads being migrated to Azure. It is important you review each applications database requirements to recommend the appropriate solution: 
 
-- **Inventory application**. you plan to migrate the inventory application workload with a database to the cloud, but you use a third-party application that requires Windos authentication. 
+- **Inventory application**. You plan to migrate the inventory application workload with a database to the cloud, but you use a third-party application that requires Windows authentication. 
 
 - **HR application.** You need to migrate the HR application and DB to the cloud and remove some of the management associated with SQL Server, but your application uses CLR and Service Broker capabilities from SQL Server. 
 

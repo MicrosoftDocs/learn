@@ -133,7 +133,7 @@ The advantages of using Cassandra API are as follows:
 | Feature| Description |
 | - | -|
 | Built-in tools| Uses native Apache Cassandra features, tools, and ecosystem with the API. |
-| Fully managed| The Cassandra API manages the OS, Java VM, garbage collection, read/write performance, nodes, and clusters. You don't need the nodetool commands, such as repair and decommission, that are used in Apache Cassandra. |
+| Fully managed| The Cassandra API manages the OS, Java VM, garbage collection, read/write performance, nodes, and clusters. You don't need the node tool commands, such as repair and decommission, that are used in Apache Cassandra. |
 | Regional writes| The Cassandra API allows you to choose single region or multiple region write configurations. |
 | Integration| You can minimize latency by provisioning throughput (RUs) in the Cassandra API. You can configure Azure Cosmos containers in autoscale provisioned throughput. |
 
@@ -157,7 +157,7 @@ Your requirements are:
 
 - Users should have capability of working with Graph query language to ingest and query data.
 
-An effective choice here is to pick [Azure Cosmos DB's Gremlin API](/azure/cosmos-db/graph/graph-introduction) which is based on the Apache TinkerPop. Apach TinkerPop is a graph computing framework that uses the Gremlin query language. A graph is a structure that's composed of vertices and edges. Vertices represent objects and edges denote the relationships between vertices.
+An effective choice here is to pick [Azure Cosmos DB's Gremlin API](/azure/cosmos-db/graph/graph-introduction) which is based on the Apache TinkerPop. Apache TinkerPop is a graph computing framework that uses the Gremlin query language. A graph is a structure that's composed of vertices and edges. Vertices represent objects and edges denote the relationships between vertices.
 
 Use cases for this type of database are storing organizational hierarchies, online fraud detection systems, social media graphs, and IoT. Gremlin API currently only supports online transactional processing (OLTP) scenarios.
 

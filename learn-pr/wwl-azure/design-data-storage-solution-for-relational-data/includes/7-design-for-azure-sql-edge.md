@@ -6,7 +6,7 @@ Azure SQL Edge is available with two different editions, as described in the fol
 
 - Azure SQL Edge. For production. Each Azure SQL Edge container is limited to up to 8 cores and 64 GB memory.
 
-## Understand Azure SQL Edge Deployment Models
+## Understand Azure SQL Edge deployment models
 
 Azure SQL Edge supports two deployment modes.
 
@@ -19,7 +19,7 @@ Azure SQL Edge supports two deployment modes.
 
 ## How does Azure SQL Edge work?
 
-Azure SQL Edge is a containerized Linux application that runs on a process that's based on ARM64 or x64. The startup-memory footprint is less than 500 megabytes (MB). This allows users design and build apps that run on many IoT devices. SQL Edge can:
+Azure SQL Edge is a containerized Linux application. The startup-memory footprint is less than 500 megabytes (MB). This allows users design and build apps that run on many IoT devices. SQL Edge can:
 
 - Capture continuous data streams in real time
 

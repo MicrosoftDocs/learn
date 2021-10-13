@@ -12,7 +12,7 @@ Azure SQL Database enables you to easily change resources allocated to your data
 
 - Storage
 
-You can easily scale an Azure SQL Database using the Azure Portal without the worry of new hardware purchase or changing the existing infrastructure.
+You can easily scale an Azure SQL Database using the Azure portal without the worry of new hardware purchase or changing the existing infrastructure.
 
 Dynamic Scalability for Azure SQL Database enables you to:
 
@@ -50,7 +50,7 @@ In this case, it is ideal to choose SQL Elastic pools, to scale, manage performa
 
 The above image shows SQL elastic pools and the scaling capability for the different service tiers. The databases within the pool share the allocated resources. In situations where there is a low average utilization, but infrequent, high utilization spikes you can allocate enough capacity in the pool to manage the spikes for the group. To properly configure SQL elastic pools to reduce server costs, the right purchasing model and the service tier (DTU-based model in basic, standard & premium or VCore-based model in general purpose or business critical) must be selected.
 
-**NOTE:** Read more about [SQL elastic pools](/azure/azure-sql/database/elastic-pool-overview).
+> [!NOTE] Read more about [SQL elastic pools](/azure/azure-sql/database/elastic-pool-overview).
 
 ## Design Horizontal Scaling Solution
 
@@ -99,7 +99,7 @@ In the High Availability architecture shown above for a premium/business critica
 
 You can disable and re-enable read scale-out on single databases and elastic pool databases in the Premium or Business Critical service tiers using the following methods:
 
-- Azure Portal
+- Azure portal
 
 - Azure PowerShell
 
@@ -135,7 +135,7 @@ The image above shows the use a shard map manager for scaling out databases on A
 
 Azure SQL offers the [Azure Elastic Database tools](%20https://docs.microsoft.com/azure/azure-sql/database/elastic-scale-introduction). This provides a number of tools to help you create, maintain, and query sharded SQL databases in Azure from your application logic.
 
-**IMPORTANT:** Always design for scale-in. It is important that your application easily handle scaling back down as the load drops.
+> [!IMPORTANT] Always design for scale-in. It is important that your application easily handle scaling back down as the load drops.
 
  
 

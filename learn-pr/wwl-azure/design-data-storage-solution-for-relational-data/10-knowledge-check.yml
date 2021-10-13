@@ -38,12 +38,12 @@ quiz:
       explanation: "that’s incorrect. This does not meet the requirements of removing management of SQL Server"
     - content: "Azure SQL Database"
       isCorrect: false
-      explanation: "that’s incorect. Azure SQL database doesn’t support instance-scoped features like service broker and CLR"
+      explanation: "that’s incorrect. Azure SQL database doesn’t support instance-scoped features like service broker and CLR"
   - content: "What database service tier should be selected for the databases being migrated?"
     choices:
     - content: "Hyper Scale"
       isCorrect: true
-      explanation: "correct choice"
+      explanation: "that’s correct. Hyper scale can support up to 100 TB"
     - content: "Business Critical"
       isCorrect: false
       explanation: "that’s incorrect. Business critical cant support up to 80 TB of data"

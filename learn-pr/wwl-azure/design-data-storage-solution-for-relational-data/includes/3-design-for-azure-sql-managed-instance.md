@@ -49,4 +49,4 @@ The following image shows Komatsu's challenge and their Azure solution considera
 - SQL Managed Instance uses vCores mode and enables you to define maximum CPU cores and maximum of storage allocated to your instance. All databases within the managed instance will share the resources allocated to the instance.
 
  
-Click here to see a [comparison of SQL Database and SQL Managed Instance](/azure/azure-sql/database/features-comparison) 
+Review this [comparison of SQL Database and SQL Managed Instance](/azure/azure-sql/database/features-comparison) 

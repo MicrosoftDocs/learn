@@ -9,7 +9,7 @@ Common uses of Table storage include:
 
 - Storing datasets that don't require complex joins, foreign keys, or stored procedures. Example datasets include web applications, address books, device information.
 
-- Quickly querying data using a [clustered index](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15). Access to Table storage data is fast and cost-effective for many types of applications. Table storage is typically lower in cost than traditional SQL for similar volumes of data.
+- Quickly querying data using a [clustered index](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described). Access to Table storage data is fast and cost-effective for many types of applications. Table storage is typically lower in cost than traditional SQL for similar volumes of data.
 
  
 

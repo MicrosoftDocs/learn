@@ -118,14 +118,14 @@ Data masking rules consist of the column to apply the mask to and how the data s
 > [!NOTE]
 > Note that Dynamic Data Masking is a presentation layer feature, and unmasked data will always be seen by administrators.
 
-Consider a scenario where a database is queried and accessed by users of all authorization levels. A user that doesn't have administrator privileges queries a table that has some sensitive customer data such as phone number, email etc along with purchase, and product information.  
+Consider a scenario where a database is queried and accessed by users of all authorization levels. A user that doesn't have administrator privileges queries a table that has some sensitive customer data such as phone number, email etc. along with purchase, and product information.  
 ‎How will you implement a solution that suppresses the sensitive information while allowing the user to see the remaining fields of his query?
 
-Dynamic data masking for data-in-use - You can set up a dynamic data masking policy using default masking logic for email, credit cards etc, or specify custom text or random number for the field in question. A non-administrator will see the masked values. You can allow other users to see the non-masked versions by adding them to the SQL users, excluded from the masking list.
+Dynamic data masking for data-in-use - You can set up a dynamic data masking policy using default masking logic for email, credit cards etc., or specify custom text or random number for the field in question. A non-administrator will see the masked values. You can allow other users to see the non-masked versions by adding them to the SQL users, excluded from the masking list.
 
 **Always Encrypted feature for data-at-rest and data-in-transit**
 
-**Always Encrypted** is a feature designed to protect sensitive data stored in specific database columns from access (for example, credit card numbers, national identification numbers, etc). This includes database administrators or other privileged users who are authorized to access the database to perform management tasks. The data is always encrypted, which means the encrypted data is decrypted only for processing by client applications with access to the encryption key. This key can be stored either in the Windows Certificate Store or in Azure Key Vault.
+**Always Encrypted** is a feature designed to protect sensitive data stored in specific database columns from access (for example, credit card numbers, national identification numbers, etc.). This includes database administrators or other privileged users who are authorized to access the database to perform management tasks. The data is always encrypted, which means the encrypted data is decrypted only for processing by client applications with access to the encryption key. This key can be stored either in the Windows Certificate Store or in Azure Key Vault.
 
 **How Always Encrypted works**
 
