@@ -33,7 +33,7 @@ Here, you add a new job definition that contains the steps required to build the
 
 1. Modify the *Lint* stage. Rename it to *Build*, and add a build job that uses the pipeline template that you just created:
 
-   :::code language="yaml" source="code/5-azure-pipelines.yml" highlight="11-17" :::
+   :::code language="yaml" source="code/5-pipeline.yml" highlight="11-17" :::
 
 1. Save your changes to the file.
 
@@ -75,12 +75,16 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
    :::code language="yaml" source="code/5-deploy.yml" range="78-90" highlight="10, 12" :::
 
+   Notice that the `appServiceAppHostName` variable has the `isOutput=true` property applied to it, because that variable is used in the smoke test stage. The `appServiceAppName` is used in the same pipeline stage and job that it's set within, so it doesn't need the `isOutput=true` setting.
+
 1. At the bottom of the *Deploy* job, add a new step to deploy the app to Azure App Service:
 
    :::code language="yaml" source="code/5-deploy.yml" range="92-101" :::
 
    > [!NOTE]
    > Be careful with the indentation of the YAML file. Ensure you indent the new deployment step at the same level as the `DeployBicepFile` step. If you're not sure, copy the whole *deploy.yml* file contents from the example below.
+
+## Verify deploy.yml and commit your changes
 
 1. Verify that your *deploy.yml* file looks like the following:
 
