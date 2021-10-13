@@ -49,7 +49,8 @@ Now that you have a resource, you can run a simple client application that uses 
 
 4. Don't worry too much about the code, the important thing is that it needs the endpoint URL and either of the keys for your Computer Vision resource. Copy these from the **Keys and Endpoints** page for your resource (which should still be in the top area of the browser) and paste them into the code editor, replacing the **YOUR_ENDPOINT** and **YOUR_KEY** placeholder values respectively.
 
-    >**Tip**: You need to go back to the Azure Portal for your **Keys and Endpoint**.
+    > [!TIP] 
+    > You need to go back to the Azure Portal for your **Keys and Endpoint**.
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. 
 
