@@ -260,7 +260,13 @@ To complete the component that sends messages about sales:
     processor.ProcessErrorAsync += ExceptionReceivedHandler;
     ```
 
-1. On the next line, insert the following code to start processing.
+1. Locate the following line of code.
+
+    ```C#
+    // Start processing
+    ```
+
+1. To start processing, replace that line with the following code.
 
     ```C#
     await processor.StartProcessingAsync();
