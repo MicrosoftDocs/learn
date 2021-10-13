@@ -47,7 +47,7 @@ The Web Dispatcher component is used as a load balancer for SAP traffic among th
 
 Both SAP Web Dispatcher and Azure Application Gateway solutions work as a reverse proxy, and therefore it would be tempting to use only the Application Gateway. The Web Dispatcher, however, contains unique features to understand the SAP landscape and therefore the Web Dispatcher load balancing has advantages over Application Gateway. The SAP Web Dispatcher decides whether the incoming request should be forwarded to an ABAP or Java Server and the SAP Web Dispatcher carries out the following tasks:
 
- -  Checks the session ID to pass subsequent requests for stateful sessions to the processing server ( Session-Stickiness).
+ -  Checks the session ID to pass subsequent requests for stateful sessions to the processing server (Session-Stickiness).
  -  Decides whether the request is an ABAP request (e.g. a BSP application) or a Java request (for example, a JSP or a servlet).<br>
  -  Load Balancing<br>
  -  HTTPS scheduling or end-to-end SSL<br>
@@ -59,8 +59,8 @@ On the other hand, the Azure Application Gateway offers advanced threat detectio
 
 The Fiori Front-end Server uses a NetWeaver Gateway (which facilitates exposing SAP application data as an OData service). For small deployments, the gateway can be loaded on the Fiori server. For large deployments, a separate server for the NetWeaver Gateway may be deployed in front of the Fiori Front-end Server pool.
 
-:::image type="content" source="../media/reference-architecture-sap-fiori-f3beed8b.png" alt-text="Reference architecture for SAP Fiori":::
-<br>
+:::image type="content" source="../media/reference-architecture-fiori-c4084b0b.png" alt-text="Reference architecture for SAP Fiori":::
+
 
 ## SAP Central Services cluster
 
