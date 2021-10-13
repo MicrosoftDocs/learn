@@ -4,7 +4,7 @@ As you continue to prepare for the migration of several of your company's SAP wo
 
 ## Learning objectives
 
-You will:
+You will: 
 
  -  Explore disaster recovery of SAP workloads.
  -  Explore simple availability between two Azure regions.
