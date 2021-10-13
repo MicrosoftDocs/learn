@@ -38,5 +38,5 @@ To build the expression, use the Expression Builder, which is launched by clicki
 
 ![Using the expression builder in the Mapping Data Flow](../media/expression-builder.png)
 
-The Expression Builder tool defaults to the text editor option. the auto-complete feature reads from the entire Azure Data Factory Data Flow object model with syntax checking and highlighting.
+The Expression Builder tool defaults to the text editor option. The auto-complete feature reads from the entire Azure Data Factory Data Flow object model with syntax checking and highlighting.
 
