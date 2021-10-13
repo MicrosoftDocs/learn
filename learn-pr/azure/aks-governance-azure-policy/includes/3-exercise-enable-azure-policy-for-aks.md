@@ -1,7 +1,7 @@
 Imagine that you want to create an AKS cluster for a new video game your team is working on and you would like to try out using Azure Policies to govern this cluster. Based on your research, you have decided to start with the following policies:
 
-1. Allow images only from trusted registries into the cluster
-1. Kubernetes cluster pod security restricted standards for Linux-based workloads initiative
+- Allow images only from trusted registries into the cluster
+- Kubernetes cluster pod security restricted standards for Linux-based workloads initiative
 
 The first step would be to create an AKS cluster that has Azure policies enabled. 
 
