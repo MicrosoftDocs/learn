@@ -4,7 +4,7 @@ You are responsible for the overall SAP on Azure migrations and new deployments.
 
 ## Learning objectives
 
-You will:
+You will: 
 
  -  Learn how to price Azure virtual machine-based solutions.
  -  Explore licensing, pricing, and support of Azure for SAP workloads.
