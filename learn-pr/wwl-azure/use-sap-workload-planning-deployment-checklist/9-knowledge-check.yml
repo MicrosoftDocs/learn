@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/08/2021
+  ms.date: 10/13/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -17,29 +17,29 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You are initiating a project to deploy an SAP workload to Azure. Which is in the project preparation and planning phase in the SAP workload planning and deployment checklist? Select one."
+  - content: "When initiating a project to deploy an SAP workload to Azure, which of the following is part of the project preparation and planning phase in the SAP workload planning and deployment checklist?"
     choices:
     - content: "Perform technical validation"
       isCorrect: false
-      explanation: "Incorrect. The project preparation phase includes data reduction and data migration plan for transferring SAP data into Azure (in migration scenarios)."
+      explanation: "Incorrect. Technical validation takes place during the pilot phase."
     - content: "Data reduction and data migration plan for transferring SAP data into Azure (in migration scenarios)."
       isCorrect: true
       explanation: "Correct. The project preparation phase includes data reduction and data migration plan for transferring SAP data into Azure (in migration scenarios)."
     - content: "Optimizing price/performance ratio of Azure compute and storage resources."
       isCorrect: false
-      explanation: "Incorrect. The project preparation phase includes data reduction and data migration plan for transferring SAP data into Azure (in migration scenarios)."
-  - content: "You are in the pilot phase of deploying an SAP workload to Azure. Using the SAP workload planning and deployment checklist, you are using planning the following steps for this phase: 1. Optimize data transfer into Azure. 2. Test and optimize export and import phases. 3. Perform technical validation. 4. Test performance Which step is missing? Select one."
+      explanation: "Incorrect. Optimizing price/performance ratio of Azure compute and storage resources takes place during the post-production phase."
+  - content: "Which step is missing from the following list of steps in the pilot phase of deploying an SAP workload to Azure using the SAP workload planning and deployment checklist? 1. Optimize data transfer into Azure. 2. Test and optimize export and import phases. 3. Perform technical validation. 4. Test performance."
     choices:
     - content: "Perform security checks"
       isCorrect: true
       explanation: "Correct. Performing security checks is a crucial stage of the pilot phase of the deployment process."
     - content: "Monitor and analyze Azure resource billing"
       isCorrect: false
-      explanation: "Incorrect. Performing security checks is a crucial stage of the pilot phase of the deployment process."
+      explanation: "Incorrect. Monitoring and analyzing Azure resource billing takes place during the post-production phase."
     - content: "Record availability requirements"
       isCorrect: false
-      explanation: "Incorrect. Performing security checks is a crucial stage of the pilot phase of the deployment process."
-  - content: "Your SAP workload has just reached the Go Live stage of its deployment to Azure. You have other SAP systems that were not part of the current Go Live phase, but which communicate with your deployed workload. What is the last step you should be sure to carry out? Select one."
+      explanation: "Incorrect. Recording availability requirements takes place during the non-production phase."
+  - content: "What is the last step that should be carried out when an SAP workload has just reached the Go Live stage of its deployment to Azure, if there are other SAP systems that were not part of the current Go Live phase, but which communicate with the deployed workload?"
     choices:
     - content: "Perform database backups"
       isCorrect: false

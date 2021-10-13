@@ -4,7 +4,7 @@ As the migration of the SAP workloads in your company to Azure approaches, you n
 
 ## Learning objectives
 
-You will:
+You will: 
 
  -  Examine the SAP workload planning and deployment checklist.
  -  Explore the project preparation and planning phase.
