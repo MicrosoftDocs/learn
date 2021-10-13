@@ -13,3 +13,4 @@ The Web Terminal is an HTML/CSS/JavaScript application built on the [MQTT](https
 You'll be able to connect to the Altair emulator using the web terminal. The following image shows how to connect to the Altair emulator from your web browser.
 
 :::image type="content" source="../media/web-terminal-connect.png" alt-text="Screenshot that shows the Altair web terminal connecting to the Altair emulator.":::
+
