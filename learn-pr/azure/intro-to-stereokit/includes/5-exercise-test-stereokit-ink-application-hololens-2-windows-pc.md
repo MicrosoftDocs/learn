@@ -1,4 +1,4 @@
-In the previous chapter, you have learned how the StereoKitInk application is developed and configured. Now in this chapter, you will learn how to build and test StereoKitInk application on HoloLens 2 and Desktop.
+In the previous chapter, you have learned how the StereoKit Ink application is developed and configured. Now in this chapter, you will learn how to build and test StereoKit Ink application on HoloLens 2 and Desktop.
 
 During the build process, you may encounter errors when opening the Solution Explorer and the C# program file. In order to debug the errors, you need to run the initial build solution.
 

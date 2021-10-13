@@ -8,7 +8,7 @@ metadata:
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.prod: learning-azure
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

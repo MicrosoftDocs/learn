@@ -47,7 +47,7 @@ quiz:
         - content: .obj
           isCorrect: true
           explanation: As it supports Model format.
-    - content: "Which workload is not required to set up a StereoKitInk application?"
+    - content: "Which workload is not required to set up a StereoKit Ink application?"
       choices:
         - content: .NET Desktop development.
           isCorrect: false
@@ -57,4 +57,4 @@ quiz:
           explanation: Universal Windows Platform (UWP) is a computing platform created by Microsoft and first introduced in Windows 10. The purpose of this platform is to help develop universal apps that run on Windows 10, Windows 10 Mobile, Xbox One, and HoloLens without the need to be rewritten for each.
         - content: Mobile development with .NET (for Quest)
           isCorrect: true
-          explanation: .NET (for Quest) is a software development framework for mobile applications, whereas StereoKitInk is a Windows PC application.
+          explanation: .NET (for Quest) is a software development framework for mobile applications, whereas StereoKit Ink is a Windows PC application.
