@@ -19,7 +19,7 @@ Before installing the Azure Policy add-on or enabling any of the service feature
 1. You need the Azure CLI version 2.12.0 or later installed and configured. Run `az --version` to find the version. If you need to install or upgrade, see [Install the Azure CLI](/cli/azure/install-azure-cli).
 1. Register the resource providers and preview features.
 
-In this exercise, we will be using Azure Cloud Shell to run the commands. Feel free to use a terminal of your choice for this exercise. To begin, login to your **Azure Portal**
+In this exercise, we will be using Azure Cloud Shell to run the commands. Feel free to use a terminal of your choice for this exercise. To begin, login to your **Azure portal**
 
 ### Setting up the environment
 
@@ -30,7 +30,7 @@ In this exercise, we will be using Azure Cloud Shell to run the commands. Feel f
 
 1. Click on the **Cloud Shell** icon at the top of the screen to the right of the search bar
 
-   ![screenshot of Azure Portal on the cloud shell creation screen](../media/3-create-cloud-shell-instance.png)
+   ![screenshot of Azure portal on the cloud shell creation screen](../media/3-create-cloud-shell-instance.png)
 
 1. Select the appropriate Subscription and click **Create storage**
 

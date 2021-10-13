@@ -287,7 +287,7 @@ kubectl delete deployment second-simple-nginx
 
 Now that you know that the Policy prevents images from Docker hub from being created in your cluster based on your Policy, let us try redeploying the same workload using an image from ACR. In this section you will create an Azure Container Registry, copy the nginx image from Docker hub to the new registry and attempt to redeploy the pod form your container registry. We will use Azure CLI to create the container registry.
 
-1. Head back to **Cloud shell** on Azure Portal and enter the following commands to create a new container registry
+1. Head back to **Cloud shell** on Azure portal and enter the following commands to create a new container registry
 
    ```azurecli-interactive
    ACR_NAME=videogameacr$RANDOM

@@ -23,7 +23,7 @@ In this module, you created resources by using your Azure subscription. The foll
 
 ## Clean up Policies
 
-1. Go to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure Portal**.
+1. Go to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure portal**.
 1. Click on **Assignments** in the left blade
 1. Select the same scope you did before (your AKS cluster resource group)
    ![Screenshot showing Policy assignments to delete](../media/8-policy-assignments-to-delete.png)

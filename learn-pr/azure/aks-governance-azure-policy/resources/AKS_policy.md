@@ -103,7 +103,7 @@ Identify the subtasks of **Cluster governance using Azure Policy**
    6. (using kubectl) Deploy a compliant pod and see effect
    7. (using kubectl) Deploy a non-compliant deployment and see effect (the deployment and replicaset will be created, but pods will fail. Show troubleshooting steps to do kubectl describe replicaset, which shows why pods aren't getting created)
 
-6. **Checking compliance status using Azure Portal**
+6. **Checking compliance status using Azure portal**
 
 - How to use Azure monitor to see runtime operation of policy
     - Explain how Azure monitor can be used to run queries and see runtime operation of policy in AKS clusters

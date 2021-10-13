@@ -1,6 +1,6 @@
 In the previous section, you saw how Azure policies can be used to easily govern your cluster by using a built-in Policy and Initiative. We also noted that the policy does not terminate already existing pods. We however would like to discover non-compliant pods so that we can take actions on them. We will do that in this exercise.
 
-## Using the Azure Portal to see non-compliant pods
+## Using the Azure portal to see non-compliant pods
 
 1. Go to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure portal**.
 
@@ -9,7 +9,7 @@ In the previous section, you saw how Azure policies can be used to easily govern
    ![screenshot showing how to set the scope of what policies you're interested in viewing](../media/6-find-the-right-scope.png)
 
    >[!NOTE]
-   > It may take a few minutes for the non-compliant pods to show up in the Portal.
+   > It may take a few minutes for the non-compliant pods to show up in the portal.
 
    Here we see that we have non-compliant resources for both the Policy and the Initiative we deployed. The resources are not compliant with three of the policies from the **Kubernetes cluster pod security restricted standards for Linux-based workloads for videogamerg** initiative. Clicking on that initiative will show which of the eight policies are the three that are not compliant.
 
