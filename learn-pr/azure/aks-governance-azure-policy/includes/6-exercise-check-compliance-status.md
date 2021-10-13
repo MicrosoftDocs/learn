@@ -27,9 +27,9 @@ Now that we have found the pod that is not compliant, we will go ahead and delet
 
 1. Open the Cloud Shell again and delete the non-compliant deployment
 
-   ```bash
-kubectl delete deployment simple-nginx
-   ```
+  ```bash
+  kubectl delete deployment simple-nginx
+  ```
 
 It might take up to 45 minutes for the changes to reflect on the portal. After waiting, head back to the Policy to to see if there are still any uncompliant pods under it. You will find that your cluster is now in compliance with the Policy.
 
