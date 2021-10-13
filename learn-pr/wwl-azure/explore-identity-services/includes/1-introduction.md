@@ -10,7 +10,7 @@ You need to prepare the specifications to leverage the identity services compone
 
 ## Learning objectives<br>
 
-You will:<br>
+You will:
 
  -  Explore Azure virtual machine authentication, authorization, and access control.<br>
  -  Explore Azure Active Directory.<br>
