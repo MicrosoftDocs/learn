@@ -30,7 +30,7 @@ quiz:
     - content: "All of the above services can be used with Arc-enabled Servers"
       isCorrect: true
       explanation: "That's correct. TBD."
-  - content: "Which of the following actions does the highly secure Azure Connected Machine Onboarding identity have permission to perform?"
+  - content: "Which of the following actions does the Azure Connected Machine Onboarding identity have permission to perform?"
     choices:
     - content: "Delete servers that are already registered"
       isCorrect: false
@@ -38,10 +38,10 @@ quiz:
     - content: "Create new Azure Arc-enabled servers in Azure"
       isCorrect: true
       explanation: "That's correct. TBD."
-    - content: "Manage VM extensions for Arc-enabled servers"
+    - content: "Manage VM extensions for Azure Arc-enabled servers"
       isCorrect: false
       explanation: "That's incorrect. TBD."
-    - content: "Read servers outside of Arc-enabled servers within the resource group"
+    - content: "Read servers outside of Azure Arc-enabled servers within the resource group"
       isCorrect: false
       explanation: "That's incorrect. TBD."
   - content: "Which of the following cannot be used to automate deployment of the Connected Machine Agent to multiple machines?"
