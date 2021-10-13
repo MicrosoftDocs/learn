@@ -3,19 +3,19 @@ uid: learn.azure.azure-machine-learning-security.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Multiple-choice questions
-  ms.date: 03/14/2021
-  author: tomreidnz
+  description: "Multiple-choice questions"
+  ms.date: 10/13/2021
+  author: wwlpublish
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
 durationInMinutes: 3
-content: |
-  [!include[](includes/7-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
-  - content: 'What does creating Custom Roles allow you to do?'
+  - content: "What does creating Custom Roles allow you to do?"
     choices:
     - content: "Custom roles allow you to customize what users can and can’t access in a workspace"
       isCorrect: true
@@ -26,7 +26,7 @@ quiz:
     - content: "Custom roles allow you to customize the speaking voice used"
       isCorrect: false
       explanation: "Incorrect. There's no voice to customize."
-  - content: 'What would you use the Azure Key Vault for?'
+  - content: "What would you use the Azure Key Vault for?"
     choices:
     - content: "To keep track of your house, work, and car keys"
       isCorrect: false
@@ -37,7 +37,7 @@ quiz:
     - content: "To securely store and access secrets"
       isCorrect: true
       explanation: "Correct. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, or cryptographic key."
-  - content: 'Why use a virtual private network (VPN) for machine learning?'
+  - content: "Why use a virtual private network (VPN) for machine learning?"
     choices:
     - content: "To assign roles"
       isCorrect: false
