@@ -63,7 +63,7 @@ processor.ProcessMessageAsync += MessageHandler;
 processor.ProcessErrorAsync += ErrorHandler;
 ```
 
-Do your processing work. Then, within the message handler, call the `receivedMessage.CompleteMessageAsync()` method to remove the message from the queue.
+Do your processing work. Then, within the message handler, call the `ProcessMessageEventArgs.CompleteMessageAsync()` method to remove the message from the queue.
 
 ```C#
 await receivedMessage.CompleteMessageAsync(receivedMessage.Message);
