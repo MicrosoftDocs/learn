@@ -68,7 +68,7 @@ There are multiple ways to assign roles within Azure AD.  You need to pick the o
 - Assign a role using PowerShell or Microsoft Graph API
 - Assign a role using Privileged Identity Management (PIM)
 
-The best method for your configuration needs can be used, but care must be taken as there are no built in restrictions.  You could good to assign an administrative role to a group with users who do not need administratrive access.  This could lead to a solution accidentally modified by a user without proper knowledge of what they are doing, or even a potential avenue for attackers.  Proper identity governance is the key.
+The best method for your configuration needs can be used, but care must be taken as there are no built in restrictions.  You could accidentally assign an administrative role to a group with users who do not need administratrive access.  This could lead to a solution modified by a user without proper knowledge of what they are doing, or even a potential avenue for attackers.  Proper identity governance is the key.
 
 ### Example - using PIM to assign a role
 

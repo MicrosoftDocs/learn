@@ -35,7 +35,7 @@ The notebook editor currently shows an empty cell. In this exercise, you will ad
 
     _Running a code cell_
 
-1. Click **File** in the menu at the top of the page, and select **Upload** from the drop-down menu. Then upload the files named **5-year-mean-1951-1980.csv** and **5-year-mean-1882-2014.csv** from [this link](https://a4r.blob.core.windows.net/public/notebook-resources.zip).
+1. Click **File** in the menu at the top of the page, and select **Upload** from the drop-down menu. Then upload the files named **5-year-mean-1951-1980.csv** and **5-year-mean-1882-2014.csv**.
 
     ![Uploading data to the notebook.](../media/2-upload-data.png)
 
