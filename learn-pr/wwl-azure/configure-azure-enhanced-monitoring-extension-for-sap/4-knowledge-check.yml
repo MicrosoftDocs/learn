@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/11/2021
+  ms.date: 10/13/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You have installed the Azure Enhanced Monitoring Extension for SAP on a Windows VM, and you are running Azperflib.exe as part the readiness check. Is it automatically a problem if Storage Read Op Latency Server msec counter is empty? Select one."
+  - content: "When running Azperflib.exe as part the readiness check after installing the Azure Enhanced Monitoring Extension for SAP on a Windows VM, is it automatically a problem if Storage Read Op Latency Server msec counter is empty?"
     choices:
     - content: "Yes"
       isCorrect: false
