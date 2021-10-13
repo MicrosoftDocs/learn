@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A virtual gateway facilitates extending your on-premises network to the Azure virtual network. What is the recommended virtual gateway service for cross-premises connectivity of SAP deployments in Azure?"
+  - content: "A virtual gateway facilitates extending an on-premises network to the Azure virtual network. What is the recommended virtual gateway service for cross-premises connectivity of SAP deployments in Azure?"
     choices:
     - content: "Virtual WAN"
       isCorrect: false
