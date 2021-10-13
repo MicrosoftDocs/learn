@@ -1,0 +1,1 @@
+docker pull mcr.microsoft.com/cosmosdb/linux/azure-cosmos-emulator

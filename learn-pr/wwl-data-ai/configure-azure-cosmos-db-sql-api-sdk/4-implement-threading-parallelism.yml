@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-cosmos-db-sql-api-sdk.implement-threading-parallelism
+title: Implement threading and parallelism
+metadata:
+  title: Implement threading and parallelism
+  description: "Implement threading and parallelism"
+  ms.date: 10/13/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-implement-threading-parallelism.md)]
