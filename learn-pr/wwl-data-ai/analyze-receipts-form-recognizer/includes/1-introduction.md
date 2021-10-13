@@ -14,3 +14,17 @@ The receipt contains information that might be required for an expense claim, in
 - The subtotal, tax, and total amounts.
 
 Increasingly, organizations with large volumes of receipts and invoices to process are looking for artificial intelligence (AI) solutions that can not only extract the text data from receipts, but also intelligently interpret the information they contain.
+
+## Uses of form recognition 
+
+Some potential uses of form recognition include: 
+
+- **Process customer documents in real time**: Extract text, key-value pairs, tables, and structures from documents, and pipe them into your back-end systems to perform tasks such as claim, invoice, and receipt processing.
+- **Review long form-based documents**: Easily find specific information in your documents and forms, such as total accounts payable, by integrating Azure Form Recognizer with Azure Applied AI Search.
+- **Create a solution to process financial transactions**: Pull Make data-driven decisions by extracting data from documents and putting it into your data visualization service for analysis.
+
+## Learning objectives 
+
+- Identify suitable Azure services for processing receipts
+- Provision a Form Recognizer resource
+- Use a Form Recognizer resource to extract information from a receipt
