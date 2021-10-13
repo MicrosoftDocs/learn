@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/12/2021
+  ms.date: 10/13/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -17,25 +17,25 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of these three main high availability scenarios for Azure VMs offers the highest uptime SLA? Select one."
+  - content: "Which of these three main high availability scenarios for Azure VMs offers the highest uptime SLA?"
     choices:
     - content: "Single Azure VMs"
       isCorrect: false
-      explanation: "Sorry, that is incorrect."
+      explanation: "Incorrect. Two or more VMs in different Availability Zones in the same Azure region offers a 99.99% uptime SLA."
     - content: "Two or more VMs in the same Availability Set"
       isCorrect: false
-      explanation: "Sorry, that is incorrect."
+      explanation: "Incorrect. Two or more VMs in different Availability Zones in the same Azure region offers a 99.99% uptime SLA."
     - content: "Two or more VMs in different Availability Zones in the same Azure region"
       isCorrect: true
       explanation: "Correct. Two or more VMs in different Availability Zones in the same Azure region offers a 99.99% uptime SLA."
-  - content: "Can availability sets be deployed in Azure Availability Zones? Select one."
+  - content: "Can availability sets be deployed in Azure Availability Zones?"
     choices:
     - content: "No, they cannot."
       isCorrect: true
       explanation: "Correct. You can't deploy Azure availability sets within an Azure Availability Zone. Choose one or the other as a deployment framework for virtual machines."
     - content: "Yes, they can."
       isCorrect: false
-      explanation: "Sorry, that is incorrect."
+      explanation: "Incorrect. You can't deploy Azure availability sets within an Azure Availability Zone. Choose one or the other as a deployment framework for virtual machines."
     - content: "Yes, they have to be."
       isCorrect: false
-      explanation: "Sorry, that is incorrect."
+      explanation: "Incorrect. You can't deploy Azure availability sets within an Azure Availability Zone. Choose one or the other as a deployment framework for virtual machines."
