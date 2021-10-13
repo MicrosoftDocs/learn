@@ -21,13 +21,13 @@ The two most common ways to create an instance for the **CosmosClient** class is
 
 The **CosmosClient** class has a constructor that only takes a single string value. Pass in the connection string of the account to use this constructor. This example uses a connection string in the ``AccountEndpoint=<account-endpoint>;AccountKey=<account-key>`` format with the fictional endpoint and key.
 
-:::code language="csharp" source="../media/4-script.cs" range="8-10" highlight="10":::
+:::code language="csharp" source="../media/4-script.cs" range="8-10" highlight="3":::
 
 ### Use with an endpoint and key
 
 Alternatively, you can use a constructor of the **CosmosClient** class that takes in two string parameters representing the account's **endpoint** and **key** in that order. This example uses the fictional endpoint and key.
 
-:::code language="csharp" source="../media/4-script.cs" range="3-6" highlight="6":::
+:::code language="csharp" source="../media/4-script.cs" range="3-6" highlight="4":::
 
 ## Read properties of the account
 

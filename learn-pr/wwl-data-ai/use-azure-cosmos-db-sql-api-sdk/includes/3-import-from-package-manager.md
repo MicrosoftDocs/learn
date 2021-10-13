@@ -16,7 +16,7 @@ Invoke the ``dotnet add package`` command with only the name of the package. For
 
 Invoke the ``dotnet add package`` command with the name of the package and the ``--version`` argument specifying a specific package version. For example, this command will import the **3.21.0** version of the **Microsoft.Azure.Cosmos** library.
 
-:::code language="azurecli" source="../media/3-script.sh" range="3-4" highlight="4":::
+:::code language="azurecli" source="../media/3-script.sh" range="3-4" highlight="2":::
 
 > &#128161; Specifying the package version is the only way to import preview versions of packages that have not been flagged as stable yet.
 
