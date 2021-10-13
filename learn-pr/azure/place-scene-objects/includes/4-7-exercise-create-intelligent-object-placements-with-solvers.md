@@ -34,9 +34,9 @@ Use the Directional Indicator solver to direct the user to objects. Here's how:
 
     :::image type="content" source="../media/play-mode-split-view.png" alt-text="Screenshot that shows the Play mode split view with DirectionalIndicator solver in use." lightbox="../media/play-mode-split-view.png":::
 
-## The tap to place solver
+## The Tap To Place solver
 
-Use the tap to place solver to reposition objects. Here's how:
+Use the Tap To Place solver to reposition objects. Here's how:
 
 1. In the **Hierarchy** window, select the **RoverExplorer** > **RoverAssembly** object. Then, in **Inspector**, use **Add Component** to add the **Tap To Place (Script)** component. Configure the component as follows:
 
@@ -48,11 +48,11 @@ Use the tap to place solver to reposition objects. Here's how:
 
     d. From the **Magnetic Surfaces** > **Element 0** dropdown list, clear all options except **Spatial Awareness**.
 
-    :::image type="content" source="../media/add-solver.png" alt-text="Screenshot that shows the tap to place solver component added and configured." lightbox="../media/add-solver.png":::
+    :::image type="content" source="../media/add-solver.png" alt-text="Screenshot that shows the Tap To Place solver component added and configured." lightbox="../media/add-solver.png":::
 
 1. With the **RoverAssembly** object still selected in the **Hierarchy** window, in the **Inspector** window, locate the **On Placing Started ()** event. Select the **+** icon to add a new event.
 
-    :::image type="content" source="../media/add-start-event.png" alt-text="Screenshot that shows the tap to place On Placing Started event added." lightbox="../media/add-start-event.png":::
+    :::image type="content" source="../media/add-start-event.png" alt-text="Screenshot that shows the Tap To Place On Placing Started event added." lightbox="../media/add-start-event.png":::
 
 1. Configure the event as follows:
 
@@ -62,7 +62,7 @@ Use the tap to place solver to reposition objects. Here's how:
 
     c. Verify that the argument is set to **0**.
 
-    :::image type="content" source="../media/configure-start-event.png" alt-text="Screenshot that shows the tap to place On Placing Started event configured." lightbox="../media/configure-start-event.png":::
+    :::image type="content" source="../media/configure-start-event.png" alt-text="Screenshot that shows the Tap To Place On Placing Started event configured." lightbox="../media/configure-start-event.png":::
 
 1. In **Hierarchy**, right-click on an empty spot. Select **3D Object** > **Cube** to create a temporary object representing the ground, and configure the **Transform** component as follows:
 
@@ -70,11 +70,11 @@ Use the tap to place solver to reposition objects. Here's how:
     * **Rotation**: X = 0, Y = 0, Z = 0
     * **Scale**: X = 10, Y = 0.2, Z = 10
 
-    :::image type="content" source="../media/position-ground-cube.png" alt-text="Screenshot that shows the temporary ground cube object added and positioned." lightbox="../media/position-ground-cube.png":::
+    :::image type="content" source="../media/position-ground-cube.png" alt-text="Screenshot that shows the temporary ground Cube object added and positioned." lightbox="../media/position-ground-cube.png":::
 
-1. With the temporary cube still selected in **Hierarchy**, in the **Inspector** window, use the **Layers** dropdown list to change the cube's layer setting. You want to include only the **Spatial Awareness** layer.
+1. With the temporary Cube still selected in **Hierarchy**, in the **Inspector** window, use the **Layers** dropdown list to change the Cube's Layer setting. You want to include only the **Spatial Awareness** layer.
 
-    :::image type="content" source="../media/spatial-awareness.png" alt-text="Screenshot that shows the temporary ground cube object layer set to Spatial Awareness." lightbox="../media/spatial-awareness.png":::
+    :::image type="content" source="../media/spatial-awareness.png" alt-text="Screenshot that shows the temporary ground Cube object Layer set to Spatial Awareness." lightbox="../media/spatial-awareness.png":::
 
 1. To enter **Game** mode, press **Play**. Then press and hold the right mouse button while moving your mouse down, until the gaze hits the **RoverAssembly** object.
 
@@ -88,6 +88,6 @@ Use the tap to place solver to reposition objects. Here's how:
 
     :::image type="content" source="../media/split-view-end.png" alt-text="Screenshot that shows the Play mode split view, with placing ended." lightbox="../media/split-view-end.png":::
 
-1. When you're done testing the feature in **Game** mode, right-click on the cube object, and select **Delete** to remove it from the scene.
+1. When you're done testing the feature in **Game** mode, right-click on the Cube object, and select **Delete** to remove it from the scene.
 
-    :::image type="content" source="../media/delete-temporary-ground-cube.png" alt-text="Screenshot that shows how to delete the temporary ground cube." lightbox="../media/delete-temporary-ground-cube.png":::
+    :::image type="content" source="../media/delete-temporary-ground-cube.png" alt-text="Screenshot that shows how to delete the temporary ground Cube." lightbox="../media/delete-temporary-ground-cube.png":::

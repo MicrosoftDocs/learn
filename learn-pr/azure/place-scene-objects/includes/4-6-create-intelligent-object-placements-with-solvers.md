@@ -4,6 +4,6 @@ The Mixed Reality Toolkit provides this feature, called *solvers*. Solvers calcu
 
 A *Directional Indicator* is another type of solver. You use it if you want to help tag-along components orient themselves to the desired direction of the object in space.
 
-Another good one to know about is the *tap to place* component, which helps you place an object over a surface. This component is valuable when you want to place objects on the spatial mesh.
+Another good one to know about is the *Tap To Place* component, which helps you place an object over a surface. This component is valuable when you want to place objects on the spatial mesh.
 
 Solvers have a vast number of uses. Based on your requirements, you can use different solvers. To choose which solver you need, be clear about how your components must function, and then select the solver that most closely mimics those requirements. You can add solvers by using the **Add Component** button in the **Inspector** window.

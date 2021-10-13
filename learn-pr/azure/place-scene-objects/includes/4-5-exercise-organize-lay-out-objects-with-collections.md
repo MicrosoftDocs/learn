@@ -1,4 +1,4 @@
-The Mixed Reality Toolkit provides a set of tools and components to accelerate your Windows Mixed Reality app development. Grid object collection is one such component. Here are the steps to use grid object collection to organize a set of game objects:
+The Mixed Reality Toolkit provides a set of tools and components to accelerate your Windows Mixed Reality app development. Grid Object Collection is one such component. Here are the steps to use Grid Object Collection to organize a set of game objects:
 
 1. In the **Hierarchy** window, right-click on the **RoverExplorer** object, and select **Create Empty** to add an empty object as a child of the **RoverExplorer** object. Name the object **RoverParts**, and configure the **Transform** component as follows:
 
@@ -16,7 +16,7 @@ The Mixed Reality Toolkit provides a set of tools and components to accelerate y
 
     :::image type="content" source="../media/child-part.png" alt-text="Screenshot that shows the newly duplicated parts as children of the RoverParts object." lightbox="../media/child-part.png":::
 
-1. To make it easier to work with your scene, in **Hierarchy**, select the **eye** icon next to the object to toggle the **scene visibility** for the **RoverAssembly** object off. This selection hides the object in the scene window, without changing its in-game visibility.
+1. To make it easier to work with your scene, in **Hierarchy**, select the **eye** icon next to the object to toggle the **scene visibility** for the **RoverAssembly** object off. This selection hides the object in the **Scene** window, without changing its in-game visibility.
 
     :::image type="content" source="../media/rover-assembly-visibility.png" alt-text="Screenshot that shows the RoverAssembly scene visibility off." lightbox="../media/rover-assembly-visibility.png":::
 
@@ -26,7 +26,7 @@ The Mixed Reality Toolkit provides a set of tools and components to accelerate y
 
 1. In **Hierarchy**, select the **RoverParts** object. Then, in the **Inspector** window, select **Add Component**, and search for and select **GridObjectCollection**. This selection adds the **GridObjectCollection** component to the **RoverParts** object.
 
-    :::image type="content" source="../media/grid-object-collection-progress.png" alt-text="Screenshot that shows the RoverParts object with Add Component grid object collection in progress." lightbox="../media/grid-object-collection-progress.png":::
+    :::image type="content" source="../media/grid-object-collection-progress.png" alt-text="Screenshot that shows the RoverParts object with Add Component Grid Object Collection in progress." lightbox="../media/grid-object-collection-progress.png":::
 
 1. Configure the **GridObjectCollection** component values as follows:
 

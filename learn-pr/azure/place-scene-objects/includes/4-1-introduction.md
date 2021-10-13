@@ -7,7 +7,7 @@ This module series helps you understand some of the easy-to-use features of MRTK
 By the end of this module, you'll be able to:
 
 * Position objects on the scene.
-* Use MRTK's grid object collection feature.
+* Use MRTK's Grid Object Collection feature.
 * Reposition objects by using solvers.
 * Direct the user to objects by using solvers.
 
@@ -16,4 +16,4 @@ By the end of this module, you'll be able to:
 * A Windows 10 PC configured with the [correct tools](/windows/mixed-reality/develop/install-the-tools)
 * Windows 10 SDK 10.0.18362.0 or later
 * Unity Hub with Unity 2019.4.X installed
-* Basic familiarity with Unity, including the interface, scene creation, package import, and the addition of game objects to a scene
+* Basic familiarity with Unity, including the interface, scene creation, package import, and the addition of GameObjects to a scene

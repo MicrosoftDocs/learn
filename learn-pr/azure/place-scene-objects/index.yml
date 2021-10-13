@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.azure.place-scene-objects-tutorials-mrtk
 metadata:
-  title: Place scene objects by using grid object collection
+  title: Place scene objects by using Grid Object Collection
   description: This course provides you with an understanding of placing objects on the scene and using solvers in mixed reality.
   ms.date: 09/09/2021
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-title: Place scene objects by using grid object collection
+title: Place scene objects by using Grid Object Collection
 summary: This course provides you with an understanding of placing objects on the scene and using solvers.
 abstract: |
   By the end of this module you will be able to:
   - Position objects in the scene
-  - Use the Mixed Reality Toolkit (MRTK) feature called grid object collection
+  - Use the Mixed Reality Toolkit (MRTK) feature called Grid Object Collection
   - Use solvers to direct the user to objects
   - Use solvers to reposition objects
 
@@ -36,7 +36,7 @@ prerequisites: |
   - Unity Hub with Unity 2020.3.X/2019.4.X installed, and the Universal Windows Platform Build Support module added
   - [Set up a mixed reality project in Unity module](/learn/modules/mixed-reality-toolkit-project-unity)
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
-  - Basic familiarity with Unity, including the interface, scene creation, package import, and the addition of game objects to a scene
+  - Basic familiarity with Unity, including the interface, scene creation, package import, and the addition of GameObjects to a scene
 
 
 units: 
