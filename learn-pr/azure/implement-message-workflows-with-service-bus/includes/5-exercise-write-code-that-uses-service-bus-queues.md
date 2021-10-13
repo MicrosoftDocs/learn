@@ -229,7 +229,7 @@ To complete the component that sends messages about sales:
 1. To configure message handling options, replace that line with the following code.
 
     ```C#
-    var messageHandlerOptions = new ServiceBusProcessorOptions
+    var processorOptions = new ServiceBusProcessorOptions
     {
         MaxConcurrentCalls = 1,
         AutoCompleteMessages = false
@@ -245,7 +245,7 @@ To complete the component that sends messages about sales:
 1. To create a processor, replace that line with the following code.
 
     ```C#
-    await using ServiceBusProcessor processor = client.CreateProcessor(QueueName, messageHandlerOptions);
+    await using ServiceBusProcessor processor = client.CreateProcessor(QueueName, processorOptions);
     ```
 
 1. Locate the following line of code.
@@ -289,13 +289,13 @@ To complete the component that sends messages about sales:
 1. To display incoming messages in the console, replace all the code within that method with the following code.
 
     ```C#
-    Console.WriteLine($"Received message: SequenceNumber:{message.Message.SequenceNumber} Body:{Encoding.UTF8.GetString(message.Message.Body)}");
+    Console.WriteLine($"Received message: SequenceNumber:{args.Message.SequenceNumber} Body:{args.Message.Body}");
     ```
 
-1. To remove the received message from the process, insert the following code on the next line.
+1. To remove the received message from the queue, insert the following code on the next line.
 
     ```C#
-    await message.CompleteMessageAsync(message.Message);
+    await args.CompleteMessageAsync(args.Message);
     ```
 
 1. Your final code should resemble the following example.
@@ -343,19 +343,19 @@ To complete the component that sends messages about sales:
     
             }
 
-            static async Task ProcessMessagesAsync(ProcessMessageEventArgs message)
+            static async Task ProcessMessagesAsync(ProcessMessageEventArgs args)
             {
-                Console.WriteLine($"Received message: SequenceNumber:{message.Message.SequenceNumber} Body:{Encoding.UTF8.GetString(message.Message.Body)}");
-                await message.CompleteMessageAsync(message.Message);
+                Console.WriteLine($"Received message: SequenceNumber:{args.Message.SequenceNumber} Body:{args.Message.Body}");
+                await args.CompleteMessageAsync(args.Message);
             }
     
-            static Task ExceptionReceivedHandler(ProcessErrorEventArgs err)
+            static Task ExceptionReceivedHandler(ProcessErrorEventArgs args)
             {
-                Console.WriteLine($"Message handler encountered an exception {err.Exception}.");
+                Console.WriteLine($"Message handler encountered an exception {args.Exception}.");
                 Console.WriteLine("Exception context for troubleshooting:");
-                Console.WriteLine($"- Endpoint: {err.FullyQualifiedNamespace}");
-                Console.WriteLine($"- Entity Path: {err.EntityPath}");
-                Console.WriteLine($"- Executing Action: {err.ErrorSource}");
+                Console.WriteLine($"- Endpoint: {args.FullyQualifiedNamespace}");
+                Console.WriteLine($"- Entity Path: {args.EntityPath}");
+                Console.WriteLine($"- Executing Action: {args.ErrorSource}");
                 return Task.CompletedTask;
             }   
         }
