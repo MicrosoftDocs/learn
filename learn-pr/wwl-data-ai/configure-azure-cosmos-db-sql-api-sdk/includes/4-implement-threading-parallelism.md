@@ -20,11 +20,11 @@ Avoid blocking the asynchronous execution using **Task.Wait** or **Task.Result**
 
 LINQ methods such as **ToList** will eagerly and synchronously drain a query while blocking any other calls from executing. For example, this invocation of ToList() will block all other calls and potentially retrieve a large set of data:
 
-:::code language="csharp" source="../media/4-script.cs" range="7-9" highlight="9":::
+:::code language="csharp" source="../media/4-script.cs" range="7-9" highlight="3":::
 
 The SDK includes methods such as **ToFeedIterator\<T\>** that asynchronously retrieves the results of a query without blocking other calls. This example illustrates the same scenario but using the special iterator instead of **ToList**.
 
-:::code language="csharp" source="../media/4-script.cs" range="11-13" highlight="13":::
+:::code language="csharp" source="../media/4-script.cs" range="11-13" highlight="3":::
 
 ## Configure max concurrency, parallelism, and buffered item count
 
@@ -36,7 +36,7 @@ All query results in Azure Cosmos DB SQL API are returned as "pages" of results.
 
 In this example, the **MaxItemCount** property is set to a value of **500**.
 
-:::code language="csharp" source="../media/4-script.cs" range="15-18" highlight="17":::
+:::code language="csharp" source="../media/4-script.cs" range="15-18" highlight="3":::
 
 > &#128161; If you use a **MaxItemCount** of -1, you should ensure the total response doesn't exceed the service limit for response size.
 
@@ -46,7 +46,7 @@ In this example, the **MaxItemCount** property is set to a value of **500**.
 
 In this example, the **MaxConcurrency** property is set to a value of **5**.
 
-:::code language="csharp" source="../media/4-script.cs" range="20-23" highlight="22":::
+:::code language="csharp" source="../media/4-script.cs" range="20-23" highlight="3":::
 
 ### Max buffered item count
 
@@ -54,6 +54,6 @@ The **MaxBufferedItemCount** property sets the maximum number of items that are 
 
 In this example, the **MaxBufferedItemCount** property is set to a value of **5,000**.
 
-:::code language="csharp" source="../media/4-script.cs" range="25-28" highlight="27":::
+:::code language="csharp" source="../media/4-script.cs" range="25-28" highlight="3":::
 
 > &#128221; These settings are explored much deeper in other Azure Cosmos DB SQL API modules on issuing queries using the SDK.
