@@ -10,6 +10,6 @@ metadata:
   ms.author: luquinta
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
-durationInMinutes: 10
+durationInMinutes: 2
 content: |
   [!include[](includes/11-exercise-evaluate-model.md)]
