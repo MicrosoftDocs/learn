@@ -4,6 +4,7 @@ With Azure Kubernetes Service, you will be configuring your Kubernetes Cluster t
 
 > [!NOTE]
 > If your session has idled out, your doing this step at another point in time and/or from another CLI you may have to re initialize your environment variables and re authenticate with the following CLI commands.
+>
 >AZ_RESOURCE_GROUP=javacontainerizationdemorg
 >
 >AZ_CONTAINER_REGISTRY=javacontainerizationdemoacr
