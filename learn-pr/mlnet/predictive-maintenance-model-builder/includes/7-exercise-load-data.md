@@ -20,7 +20,7 @@ Select the **Browse** button and use the file explorer to provide the location o
 
 Choose **Machine failure** from the Column to predict (Label) dropdown
 
-<!--INSERT-LOAD-DATA-SCREENSHOT-->
+:::image type="content" source="../media/load-training-data.png" alt-text="Load predictive maintenance csv file dataset":::
 
 ## Advanced data options
 
@@ -29,7 +29,7 @@ By default, all columns that are not the label are used as features. As previous
 1. Select **Advanced data options...**.
 1. In the Advanced data options dialog, select the **Column settings** tab.
 
-<!-- INSERT ADVANCED DATA OPTIONS SCREENSHOT -->
+:::image type="content" source="../media/configure-advanced-data-options.png" alt-text="Configure advanced data options for predictive maintenance dataset":::
 
 1. Configure the column settings as follows:
 

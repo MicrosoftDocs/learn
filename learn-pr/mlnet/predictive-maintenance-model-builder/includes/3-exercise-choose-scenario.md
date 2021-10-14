@@ -9,7 +9,7 @@ With Model Builder, you can add machine learning to an existing project, or. Sin
 1. In the Create a a new project dialog, type "class library" into the search bar.
 1. Select **Class Library** from the list of options. Make sure that the language is C# and select **Next**.
 
-<!-- INSERT NEW PROJECT DIALOG SCREENSHOT -->
+:::image type="content" source="../media/create-class-library-project.png" alt-text="Create class library project":::
 
 1. In the Project name text box, type "PredictiveMaintenance". Leave the defaults for all other fields and select **Next**
 1. Select **.NET 6.0 (Preview)** from the Framework dropdown and select **Create** to scaffold your C# class library.
@@ -23,12 +23,12 @@ Once your class library project opens in Visual Studio, it's time to add machine
 1. In Visual Studio's solution explorer, right-click your project.
 1. Select **Add > Machine Learning Model...**.
 
-<!-- INSERT ADD MACHINE LEARNING MODEL SCREENSHOT -->
+:::image type="content" source="../media/add-machine-learning-model.png" alt-text="Add machine learning model to project":::
 
 1. From the list of new items in the Add New Item dialog, select **Machine Learning Model (ML.NET)**.
 1. In the Name text box, use the name "PredictiveMaintenanceModel.mbconfig" for your model and select **Add**.
 
-<!-- INSERT MBCONFIG NEW ITEM SCREENSHOT -->
+:::image type="content" source="../media/create-class-library-project.png" alt-text="Create new MBConfig item":::
 
 After a few seconds, a file called *PredictiveMaintenanceModel.mbconfig* is added to your project. Files that use the *.mbconfig* extension are Model Builder configuration files authored in JSON that allow you to:
 
@@ -44,6 +44,6 @@ For our use case, we're trying to determine whether a machine is broken or not. 
 
 In the Scenario step of the Model Builder screen, select the **Data classification** scenario. Once you've selected this scenario, you're immediately advanced to the Environment screen.
 
-<!-- INSERT-SCENARIO-SCREENSHOT -->
+:::image type="content" source="../media/choose-scenario.png" alt-text="Choose data classification scenario":::
 
 In the next unit, we'll learn some more about supported compute environments in Model Builder.

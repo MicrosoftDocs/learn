@@ -7,4 +7,6 @@ For data classification scenarios, only local environments that use your CPU are
 1. In the Environment step of the Model Builder screen, select **Local**
 1. Select **Next step**.
 
+:::image type="content" source="../media/choose-environment.png" alt-text="Choose local compute training environment":::
+
 In the next unit, you'll learn how to load data into Model Builder.

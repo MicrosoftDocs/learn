@@ -8,7 +8,7 @@ The evaluate step in the Model Screen allows you to inspect the evaluation metri
 
 In the test your model section of the evaluate step, you can provide new data and evaluate the results of your prediction.
 
-<!-- INSERT EVALUATE SCREENSHOT -->
+:::image type="content" source="../media/evaluate-machine-learning-model.png" alt-text="Make predictions with your trained model":::
 
 ### Sample data
 

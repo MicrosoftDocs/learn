@@ -8,7 +8,7 @@ In the Consume step of the Model Builder screen:
 1. In the Add sample console app dialog, enter the name "PredictiveMaintenanceConsole".
 1. Select **Add to solution**.
 
-<!-- INSERT CONSUME SCREENSHOT -->
+:::image type="content" source="../media/consume-machine-learning-model.png" alt-text="Consume machine learning model in .NET console application":::
 
 After a few seconds, the .NET console application is added to your solution.
 
