@@ -77,7 +77,7 @@ We begin by deploying an image from directly from Docker Hub into the cluster. T
 
    If the external IP is listed as `<pending>`, rerun the command. It takes time to allocate a public IP address for your workload.
 
-   :::image type="content" source=".../media/5-nginx-dockerhub.png" alt-text="A screenshot showing nginx running, which came from Docker Hub." lightbox="../media/5-nginx-dockerhub.png":::
+   :::image type="content" source="../media/5-nginx-dockerhub.png" alt-text="A screenshot showing nginx running, which came from Docker Hub." lightbox="../media/5-nginx-dockerhub.png":::
 
 ## Apply Azure Policy to the AKS cluster
 
