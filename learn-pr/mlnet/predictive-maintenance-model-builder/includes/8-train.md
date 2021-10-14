@@ -38,6 +38,6 @@ Model Builder uses automated machine learning (AutoML) to identify the set of tr
 
 ## What happens when training completes
 
-<!-- INSERT CODEGEN INFO -->
+<!-- INSERT CODEGEN SCREENSHOT -->
 
 In the next unit you'll use Model Builder to train your predictive maintenance model.
