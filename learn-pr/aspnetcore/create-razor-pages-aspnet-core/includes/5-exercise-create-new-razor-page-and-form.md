@@ -53,7 +53,7 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
 
 ## Create a pizza model
 
-1. Run the following command to create a `Models` folder:
+1. Run the following command in your project's root directory to create a `Models` folder:
 
     ```bash
     mkdir Models
@@ -66,6 +66,7 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
 1. Add the following code to *Models/Pizza.cs* to define a pizza. Save your changes.
 
     ```csharp
+    using System.ComponentModel.DataAnnotations;
     namespace RazorPagesPizza.Models
     {
         public class Pizza
@@ -89,7 +90,7 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
 
 ## Add data service
 
-1. Run the following command to create a `Services` folder:
+1. Run the following command in your project's root directory to create a `Services` folder:
 
     ```bash
     mkdir Services

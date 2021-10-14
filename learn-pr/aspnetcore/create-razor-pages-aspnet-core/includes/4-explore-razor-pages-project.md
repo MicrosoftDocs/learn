@@ -9,8 +9,7 @@ The *RazorPagesPizza* project directory is currently open in the Visual Studio C
 | *Pages/*                | Contains Razor Pages and supporting files. Each Razor page is a pair of files:<br>* A *.cshtml* file that contains markup with C# code using Razor syntax.<br>* A *.cshtml.cs* `PageModel` class file that defines page handler methods and data used to render the page.                                      |
 | *wwwroot/*              | Contains static asset files, such as HTML, JavaScript, and CSS.
 | *RazorPagesPizza.csproj* | Contains configuration metadata for the project, such as dependencies.                                                          |
-| *Program.cs*            | Serves as the app's managed entry point.                                                                                        |
-| *Startup.cs*            | Configures app behavior, such as routing between pages.                                                                         |
+| *Program.cs*            | Serves as the app's managed entry point and configures app behavior, such as routing between pages.                                                                         |
 
 ### Razor page files and their paired `PageModel` class file
 

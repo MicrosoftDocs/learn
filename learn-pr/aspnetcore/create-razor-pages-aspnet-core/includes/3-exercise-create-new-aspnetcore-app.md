@@ -8,14 +8,14 @@ To set up a .NET project to work with a web app, we'll use Visual Studio Code. V
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
-1. Create a new folder named **RazorPagesPizza** in the location of your choice, and then click **Select Folder**.
+1. Create a new folder named **RazorPagesPizza** in the location of your choice, and then click **Select Folder**. If you are shown a prompt asking *Do you trust the authors of the files in this folder?* select the `Yes` button.
 
 1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
 1. In the terminal window, copy and paste the following command.
 
     ```dotnetcli
-    dotnet new webapp -f net5.0
+    dotnet new webapp -f net6.0
     ```
 
     This command creates the files for a basic web API project, along with a C# project file named **RazorPagesPizza.csproj** that will return a list of weather forecasts.
@@ -39,11 +39,11 @@ To set up a .NET project to work with a web app, we'll use Visual Studio Code. V
        - | Privacy.cshtml
        - | Privacy.cshtml.cs
     -| Properties
+    -| wwwroot
     -| appsettings.Development.json
     -| appsettings.json
     -| Program.cs
     -| RazorPagesPizza.csproj
-    -| Startup.cs
     ```
 
 ## Run the Razor Pages project and explore its UI
@@ -61,31 +61,34 @@ To set up a .NET project to work with a web app, we'll use Visual Studio Code. V
     * Locates the project file at the current directory.
     * Retrieves and installs any required project dependencies for this project.
     * Compiles the project code.
-    * Hosts the web app with ASP.NET Core's Kestrel web server at both `http://localhost:5000` and `https://localhost:5001`.
+    * Hosts the web app with ASP.NET Core's Kestrel web server at both an HTTP and HTTPS endpoint.
 
-    This module uses the secure localhost URL beginning with `https`. You can't view the app's pages in a browser, since it isn't yet hosted on a public endpoint. You'll host the app on a public endpoint in a following step.
+    A port from 5000-5300 will be selected for HTTP, and from 7000-7300 for HTTPS, at the time the project is created. As always, the ports used during development can be easily changed by editing the project’s launchSettings.json file. This module uses the secure localhost URL beginning with `https`.
 
     A variation of the following output displays to indicate your app is running:
 
     ```console
-    info: Microsoft.Hosting.Lifetime[0]
-          Now listening on: https://localhost:5001
-    info: Microsoft.Hosting.Lifetime[0]
-          Now listening on: http://localhost:5000
+          Now listening on: https://localhost:7192
+    info: Microsoft.Hosting.Lifetime[14]
+          Now listening on: http://localhost:5211
     info: Microsoft.Hosting.Lifetime[0]
           Application started. Press Ctrl+C to shut down.
     info: Microsoft.Hosting.Lifetime[0]
           Hosting environment: Development
     info: Microsoft.Hosting.Lifetime[0]
-          Content root path: /home/<user>/aspnet-learn/src/RazorPagesPizza
+      Content root path: /home/<user>/aspnet-learn/src/RazorPagesPizza
     ```
 
-If running this app on your own machine, you could direct a browser to `https://localhost:5001` to view the resulting page.
+If running this app on your own machine, you could direct a browser to the HTTPS link displayed in the output (in the above case, `https://localhost:7192`) to view the resulting page.
 
 ## Tour the app
 
-1. Open the app in your browser by browsing to https://localhost:5001.
+1. Note the HTTP URL displayed in the terminal output, e.g. `https://localhost:7192`.
+
+1. Open the app in your browser by browsing to the HTTPS URL.
 
 1. Navigate to the **Privacy** page by clicking on the link in the navigation bar at the top of the page. Notice that the URL ends with *Privacy*. By convention, Razor Pages apps map page routes to the files within the *Pages* directory structure.
+
+1. Stop the application by pressing the **Ctrl+C** key combination (**Command+C** on Mac).
 
 You've verified you can successfully compile, run, and deploy the project. Let's modify it so the user can display and update a list of pizzas.
