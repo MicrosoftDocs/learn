@@ -34,7 +34,7 @@ prerequisites: |
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).
 iconUrl: /learn/achievements/bicep/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.svg
 levels:
-  - intermediate
+  - advanced
 roles:
   - devops-engineer
   - developer

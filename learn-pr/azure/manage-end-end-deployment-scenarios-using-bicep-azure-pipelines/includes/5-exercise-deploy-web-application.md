@@ -84,6 +84,8 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
    > [!NOTE]
    > Be careful with the indentation of the YAML file. Ensure you indent the new deployment step at the same level as the `DeployBicepFile` step. If you're not sure, copy the whole *deploy.yml* file contents from the example below.
 
+   Notice that you didn't explicitly download the artifact in the pipeline definition. Because you use a deployment job, Azure Pipelines automatically downloads the artifact for you.
+
 ## Verify deploy.yml and commit your changes
 
 1. Verify that your *deploy.yml* file looks like the following:

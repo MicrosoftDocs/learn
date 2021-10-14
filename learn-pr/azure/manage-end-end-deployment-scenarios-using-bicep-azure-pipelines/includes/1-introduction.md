@@ -1,8 +1,8 @@
-When you use pipelines, you can automate the validation, testing, and deployment of your Bicep code. Many of the benefits of using Bicep come from deploying them alongside the other components of your solution: your Azure infrastructure, applications, and even your data. In this module, you'll learn about how to extend a pipeline that already deploys Bicep code to deploy an entire solution.
+When you use pipelines, you can automate the validation, testing, and deployment of your Bicep code. Many of the benefits of using Bicep come from deploying your Azure infrastructure alongside the other components of your solution, such as applications and database configuration. In this module, you'll learn about how to extend a pipeline that already deploys Bicep code to deploy an entire solution.
 
 ## Example scenario
 
-Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've built a Bicep template to deploy your company's website, which deploys an App Service app, a storage account for hosting product images, and a Cosmos DB database for product specifications. You've already created a pipeline that deploys your Azure resources by using your Bicep template. Now, you want to extend the pipeline to deploy your app and to seed some data you need for your website.
+Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've built a Bicep template to deploy your company's website, which deploys an App Service app, an Azure SQL database for your product list, and a storage account for hosting product images. You've already created a pipeline that deploys your Azure resources by using your Bicep template. Now, you want to extend the pipeline to deploy your app, to configure your database, and to seed some test data you need for your website.
 
 ## What will you be doing?
 
@@ -13,7 +13,7 @@ In this module, you'll learn how to extend a deployment pipeline so that it depl
 After completing this module, you'll be able to create a unified deployment pipeline that:
 
 - Provisions Azure resources by using a Bicep file
-- Deploys an application to an Azure App Service app
+- Deploys an application to Azure App Service
 - Publishes a database schema to an Azure SQL database
 - Adds sample data to an Azure SQL database and an Azure Storage blob container
 
