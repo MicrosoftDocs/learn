@@ -43,7 +43,6 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 1. Clone and configure the repo for Bob:
 
     ```bash
-    cd ..
     cd Bob
     git clone ../Shared.git .
     git config user.name Bob
