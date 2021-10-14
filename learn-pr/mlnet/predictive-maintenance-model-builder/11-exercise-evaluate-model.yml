@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.predictive-maintenance-model-builder.exercise-evaluate-model
+title: "Exercise: Evaluate your model"
+metadata:
+  unitType: exercise
+  title: "Exercise: Evaluate your model"
+  description: "Evaluate how well your machine learning model performs and test it using new data in Model Builder"
+  ms.date: 10/13/2021
+  author: luisquintanilla
+  ms.author: luquinta
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 10
+content: |
+  [!include[](includes/11-exercise-evaluate-model.md)]

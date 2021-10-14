@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.predictive-maintenance-model-builder.data
+title: "Load your data"
+metadata:
+  unitType: learning-content
+  title: "Load your data"
+  description: "Load data into Model Builder"
+  ms.date: 10/13/2021
+  author: luisquintanilla
+  ms.author: luquinta
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-data.md)]

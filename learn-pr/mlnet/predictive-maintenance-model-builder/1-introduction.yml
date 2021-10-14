@@ -1,0 +1,14 @@
+uid: learn.predictive-maintenance-model-builder.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: "Learn about using ML.NET Model Builder to train a machine learning model for predictive maintenance"
+  ms.date: 10/13/2021
+  author: luisquintanilla
+  ms.author: luquinta
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

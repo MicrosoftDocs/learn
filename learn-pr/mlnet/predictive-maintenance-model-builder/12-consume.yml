@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.predictive-maintenance-model-builder.consume
+title: "Consume your model"
+metadata:
+  unitType: learning-content
+  title: "Consume your model"
+  description: "Learn how to consume your model in a .NET application"
+  ms.date: 10/13/2021
+  author: luisquintanilla
+  ms.author: luquinta
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 10
+content: |
+  [!include[](includes/12-consume.md)]

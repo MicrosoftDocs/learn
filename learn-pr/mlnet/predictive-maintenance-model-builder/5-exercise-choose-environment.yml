@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.predictive-maintenance-model-builder.choose-environment
+title: "Exercise: Choose a training environment"
+metadata:
+  unitType: exercise
+  title: "Exercise: Choose a training environment"
+  description: "Choose an environment to train your machine learning model in Model Builder"
+  ms.date: 10/13/2021
+  author: luisquintanilla
+  ms.author: luquinta
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-choose-environment.md)]
