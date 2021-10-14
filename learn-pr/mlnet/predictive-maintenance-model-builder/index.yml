@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.create-iot-device-dotnet
+metadata:
+  moduleType: standard
+  title: Train a predictive maintenance machine learning model with ML.NET Model Builder
+  description: "In this module, you'll learn how use the ML.NET Model Builder "
+  ms.date: 10/14/2021
+  author: luisquintanilla
+  ms.author: luquinta
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+title: Train a predictive maintenance machine learning model with ML.NET Model Builder
+summary: "Train a machine learning model in Visual Studio using Model Builder that uses sensor data to detect whether a machine is broken."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Choose a machine learning scenario to solve your problem
+  - Choose a computing environment to train your model
+  - Load data to train your model
+  - Train a machine learning model for predictive maintenance
+  - Evaluate how well your machine learning model performs
+  - Consume your machine learning model in a .NET application
+prerequisites: |
+  - Introductory knowledge of .NET
+  - Visual Studio 2022
+      - .NET 6
+  - ML.NET Model Builder extension. The ML.NET Model Builder Visual Studio extension is included in Visual Studio. For setup instructions, see [How to install ML.NET Model Builder](https://docs.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/install-model-builder?tabs=visual-studio-2022)
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
+  - beginner
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
+  - developer
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
+  - dotnet
+units:
+- learn.predictive-maintenance-model-builder.introduction
+- learn.predictive-maintenance-model-builder.scenario
+- learn.predictive-maintenance-model-builder.exercise-choose-scenario
+- learn.predictive-maintenance-model-builder.environment
+- learn.predictive-maintenance-model-builder.exercise-choose-environment
+- learn.predictive-maintenance-model-builder.data
+- learn.predictive-maintenance-model-builder.exercise-load-data
+- learn.predictive-maintenance-model-builder.train
+- learn.predictive-maintenance-model-builder.exercise-train-model
+- learn.predictive-maintenance-model-builder.evaluate
+- learn.predictive-maintenance-model-builder.exercise-evalute-model
+- learn.predictive-maintenance-model-builder.consume
+- learn.predictive-maintenance-model-builder.exercise-consume-model
+- learn.predictive-maintenance-model-builder.summary
+badge:
+  uid: learn.create-iot-device-dotnet.badge
