@@ -38,7 +38,7 @@ Magnification Video:
 
 Online player communication tools like voice chat may be inaccessible for players with disabilities who cannot hear what others are saying aloud. Additionally, players who cannot speak aloud or choose not to, will be unable to respond to other players in the voice channel. Assistive technologies like speech-to-text and text-to-speech are intended to make communication experiences between players accessible. These tools are provided by the gaming platform, however, it's important to ensure that platform-level assists are compatible with your game title specifically.
 
-- Speech-to-text: Transcribes incoming speech from other players into text on-screen in realtime so players who cannot hear voice chat can read what other players have said aloud on their screen.
+- Speech-to-text: Transcribes incoming speech from other players into text on-screen in real time so players who cannot hear voice chat can read what other players have said aloud on their screen.
 - Text-to-speech: Converts text typed by the player into synthesized audio that is read aloud. This essentially allows players who cannot speak verbally to have their thoughts expressed to the rest of the players in their party aloud.
 
 Transcription Video:
