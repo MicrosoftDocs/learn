@@ -4,6 +4,8 @@ The .NET CLI is the simplest way to create an ASP.NET Core web API. The CLI is p
 
 In this unit, you'll use the .NET CLI to create a web API locally. You'll also gain an understanding of the resulting project.
 
+[!include[](../../../includes/dotnet6-sdk-version.md)]
+
 ## Create and explore a web API project
 
 To set up a .NET project to work with web API, we'll use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project easy. If you don't want to use another code editor, you can run the commands in this module in a terminal.
@@ -17,15 +19,14 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
 1. In the terminal window, copy and paste the following command.
 
     ```dotnetcli
-    dotnet new webapi --no-https
+    dotnet new webapi -f net6.0
     ```
 
     This command creates the files for a basic web API project, along with a C# project file named **ContosoPizza.csproj** that will return a list of weather forecasts. 
 
-    The `--no-https` flag creates an app that will run without an HTTPS certificate, to keep things as simple as possible for local development.
 
     > [!IMPORTANT]
-    > Before doing any production work with web APIs, and definitely before deploying to production, you will want to [configure the ASP.NET Core HTTPS development certificate](/aspnet/core/security/enforcing-ssl#trust-the-aspnet-core-https-development-certificate-on-windows-and-macos). This will help keep your API communications private, as well as safeguard against tampering via *man-in-the-middle* attacks.
+    > Web API projects are secured with `http` by default. If you run into issues, you will want to [configure the ASP.NET Core HTTPS development certificate](/aspnet/core/security/enforcing-ssl#trust-the-aspnet-core-https-development-certificate-on-windows-and-macos). 
 
     You may receive a prompt from Visual Studio Code to add assets to debug the project. Click `Yes` on the dialog.
 
@@ -41,7 +42,6 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
     -| appsettings.json
     -| ContosoPizza.csproj
     -| Program.cs
-    -| Startup.cs
     -| WeatherForecast.cs
     ```
 
@@ -53,17 +53,10 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
     | Name                                         | Description                                                     |
     |----------------------------------------------|-----------------------------------------------------------------|
     | *:::no-loc text="Controllers/":::*           | Contains classes with public methods exposed as HTTP endpoints. |
-    | *:::no-loc text="Program.cs":::*             | Contains a `Main` method&mdash;the app's managed entry point.   |
-    | *:::no-loc text="Startup.cs":::*             | Configures services and the app's HTTP request pipeline.        |
+    | *:::no-loc text="Program.cs":::*             | Configures services and the app's HTTP request pipeline & contains the app's managed entry point.   |
     | *:::no-loc text="ContosoPizza.csproj":::* | Contains configuration metadata for the project.                |
 
 ## Build and test the web API
-
-1. Run the following command to build the app:
-
-    ```dotnetcli
-    dotnet build
-    ```
 
 1. Run the following .NET Core CLI command in the command shell:
 
@@ -73,20 +66,36 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
 
     The preceding command:
 
-    * Hosts the web API with ASP.NET Core's Kestrel web server.
-    * Outputs log information of the running web API.
+    * Locates the project file at the current directory.
+    * Retrieves and installs any required project dependencies for this project.
+    * Compiles the project code.
+    * Hosts the web API with ASP.NET Core's Kestrel web server at both an HTTP and HTTPS endpoint.
 
-    The web API is hosted at both `http://localhost:5000`. If we didn't pass the `--no-https` flag we would see that the API would also run on `https://localhost:5001`.
+    A port from 5000-5300 will be selected for HTTP, and from 7000-7300 for HTTPS, at the time the project is created. As always, the ports used during development can be easily changed by editing the project’s launchSettings.json file. This module uses the secure localhost URL beginning with `https`.
+
+    A variation of the following output displays to indicate your app is running:
+
+    ```console
+    Building...
+    info: Microsoft.Hosting.Lifetime[14]
+          Now listening on: https://localhost:7294
+    info: Microsoft.Hosting.Lifetime[14]
+          Now listening on: http://localhost:5118 
+    info: Microsoft.Hosting.Lifetime[0]
+          Application started. Press Ctrl+C to shut down.
+    info: Microsoft.Hosting.Lifetime[0]
+          Hosting environment: Development        
+    ```
+
+    If running this app on your own machine, you could direct a browser to the HTTPS link displayed in the output (in the above case, `https://localhost:7294`) to view the resulting page. Remember this port as you will use it throughout the module where `{PORT}` is used.
 
     > [!IMPORTANT]
     > Check terminal output if you encounter any unexpected behavior. If the build fails or other errors occur, the log file's information helps troubleshoot. As we make changes to the code we will need to stop the web API by pressing `CTRL+C` on the keyboard and re-running the `dotnet run` command.
 
-    In the future, we will use only the `dotnet run` command as this command also will build our project if anything has changed.
-
 1. Open a web browser and navigate to:
 
     ```bash
-   http://localhost:5000/weatherforecast
+    https://localhost:{PORT}/weatherforecast
     ```
 
     The following output represents an excerpt of the JSON that is returned:
@@ -94,13 +103,13 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
     ```json
     [
       {
-        "date": "2021-02-12T20:36:01.4678814+00:00",
+        "date": "2021-11-09T20:36:01.4678814+00:00",
         "temperatureC": 33,
         "temperatureF": 91,
         "summary": "Scorching"
       },
       {
-        "date": "2021-02-13T20:36:01.4682337+00:00",
+        "date": "2021-11-09T20:36:01.4682337+00:00",
         "temperatureC": -8,
         "temperatureF": 18,
         "summary": "Cool"
@@ -120,7 +129,7 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
 1. Connect to our web API by running the following command:
   
    ```dotnetcli
-   httprepl http://localhost:5000
+   httprepl https://localhost:{PORT}
    ```
 
    Alternatively, run the following command at any time while the HttpRepl is running:
@@ -128,7 +137,7 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
    For example:
 
    ```dotnetcli
-   (Disconnected)> connect http://localhost:5000
+   (Disconnected)> connect https://localhost:{PORT}
    ```
 
 1. Explore available endpoints by running the following command:
@@ -140,7 +149,7 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
    The preceding command will detect all APIs available on the connected endpoint. It should display the following:
 
     ```dotnetcli
-   http://localhost:5000/> ls
+   https://localhost:{PORT}/> ls
    .                 []
    WeatherForecast   [GET] 
    ```
@@ -154,7 +163,7 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
    The following command will output available APIs available for the `WeatherForecast` endpoint:
 
    ```dotnetcli
-   http://localhost:5000/> cd WeatherForecast
+   https://localhost:{PORT}/> cd WeatherForecast
    /WeatherForecast    [GET]
    ```
 
