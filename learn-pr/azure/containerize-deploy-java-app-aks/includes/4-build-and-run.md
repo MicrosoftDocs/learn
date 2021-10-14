@@ -7,13 +7,13 @@ Now that you have successfully constructed a Dockerfile, you can instruct Docker
 ```docker build``` is the command used to build Docker images. The ```-t``` argument will be used to specify a container label and the ```.``` is the location for Docker to find the Dockerfile. Run the following command in your CLI:
 
 ```bash
-docker build -t turkishairlines .
+docker build -t flightbookingsystemsample .
 ```
 
 You will see an output similar to the following:
 
 ```bash
-docker build -t turkishairlines .
+docker build -t flightbookingsystemsample .
 Sending build context to Docker daemon  101.3MB
 Step 1/11 : FROM maven:3.6.0-jdk-11-slim AS build
 3.6.0-jdk-11-slim: Pulling from library/maven
@@ -48,11 +48,11 @@ Step 6/11 : RUN mvn clean package
 ...
 
 [INFO] Packaging webapp
-[INFO] Assembling webapp [TurkishAirlines] in [/build/target/TurkishAirlines-0.0.1-SNAPSHOT]
+[INFO] Assembling webapp [FlightBookingSystemSample] in [/build/target/FlightBookingSystemSample-0.0.1-SNAPSHOT]
 [INFO] Processing war project
-[INFO] Copying webapp webResources [/build/web] to [/build/target/TurkishAirlines-0.0.1-SNAPSHOT]
+[INFO] Copying webapp webResources [/build/web] to [/build/target/FlightBookingSystemSample-0.0.1-SNAPSHOT]
 [INFO] Copying webapp resources [/build/src/main/webapp]
-[INFO] Building war: /build/target/TurkishAirlines-0.0.1-SNAPSHOT.war
+[INFO] Building war: /build/target/FlightBookingSystemSample-0.0.1-SNAPSHOT.war
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
@@ -76,7 +76,7 @@ Status: Downloaded newer image for tomcat:8.5.72-jre11-openjdk-slim
  ---> 77903b2cfd74
 Step 8/11 : COPY tomcat-users.xml /usr/local/tomcat/conf
  ---> c540464832e7
-Step 9/11 : COPY --from=build /build/target/*.war /usr/local/tomcat/webapps/TurkishAirlines.war
+Step 9/11 : COPY --from=build /build/target/*.war /usr/local/tomcat/webapps/FlightBookingSystemSample.war
  ---> 6d1eb5d1568c
 Step 10/11 : EXPOSE 8080
  ---> Running in 753385de3d77
@@ -87,7 +87,7 @@ Step 11/11 : CMD ["catalina.sh", "run"]
 Removing intermediate container 58a822ee7a4a
  ---> a0b73d3f3f91
 Successfully built a0b73d3f3f91
-Successfully tagged turkishairlines:latest
+Successfully tagged flightbookingsystemsample:latest
 ```
 
 As you can see above, Docker has executed the instructions from the lines that you have previously written in the prior unit. Each instruction is a step in sequential order. Rerun the ```docker build``` command again, notice the differences in the steps, you'll notice ```---> Using cache``` for layers that have not changed. If your not making application changes (before rerunning the ```docker build``` command), then you will notice all cached layers as the binaries are untouched and can be sourced from Docker cache). This is an important takeaway when optimizing your Docker images and the associated compute costs with time spent building them.
@@ -103,23 +103,23 @@ You will see an output similar to the following:
 ```bash
 docker image ls
 REPOSITORY                                        TAG                 IMAGE ID            CREATED             SIZE
-turkishairlines                                   latest              cda4f5b459f1        About an hour ago   268MB
+flightbookingsystemsample                                   latest              cda4f5b459f1        About an hour ago   268MB
 ```
 
 ## Run a Docker image
 
 Now that you have successfully built a Docker image, you can run it.
 
-```docker run``` is the command used to run a Docker image. The ```-p ####:####``` argument will be used to forward localhost HTTP (the first port before the colon) traffic to the container at runtime (the second port after the colon). Remember from the Dockerfile that the Tomcat application server is listening for HTTP traffic on port 8080 hence that is the container port that needs to be exposed. Lastly the image tag ```turkishairlines``` is needed to instruct Docker of what image to run. Run the following command in your CLI:
+```docker run``` is the command used to run a Docker image. The ```-p ####:####``` argument will be used to forward localhost HTTP (the first port before the colon) traffic to the container at runtime (the second port after the colon). Remember from the Dockerfile that the Tomcat application server is listening for HTTP traffic on port 8080 hence that is the container port that needs to be exposed. Lastly the image tag ```flightbookingsystemsample``` is needed to instruct Docker of what image to run. Run the following command in your CLI:
 
 ```bash
-docker run -p 8080:8080 turkishairlines
+docker run -p 8080:8080 flightbookingsystemsample
 ```
 
 You will see an output similar to the following:
 
 ```bash
-docker run -p 8080:8080 turkishairlines
+docker run -p 8080:8080 flightbookingsystemsample
 NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 02-Aug-2021 20:50:22.682 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.50
 02-Aug-2021 20:50:22.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 28 2021 08:46:44 UTC
@@ -154,18 +154,18 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 02-Aug-2021 20:50:23.777 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1697] milliseconds
 02-Aug-2021 20:50:23.977 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
 02-Aug-2021 20:50:23.978 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.50]
-02-Aug-2021 20:50:24.039 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/TurkishAirlines.war]
+02-Aug-2021 20:50:24.039 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/FlightBookingSystemSample.war]
 02-Aug-2021 20:50:27.164 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-02-Aug-2021 20:50:30.887 INFO [main] com.sun.xml.ws.server.MonitorBase.createRoot Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/TurkishAirlines-PriceAndSeats-PriceAndSeatsPort
+02-Aug-2021 20:50:30.887 INFO [main] com.sun.xml.ws.server.MonitorBase.createRoot Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/FlightBookingSystemSample-PriceAndSeats-PriceAndSeatsPort
 02-Aug-2021 20:50:31.151 INFO [main] com.sun.xml.ws.transport.http.servlet.WSServletDelegate.<init> WSSERVLET14: JAX-WS servlet initializing
 02-Aug-2021 20:50:32.662 INFO [main] com.sun.xml.ws.transport.http.servlet.WSServletContextListener.contextInitialized WSSERVLET12: JAX-WS context listener initializing
 02-Aug-2021 20:50:32.663 INFO [main] com.sun.xml.ws.transport.http.servlet.WSServletContextListener.contextInitialized WSSERVLET12: JAX-WS context listener initializing
-02-Aug-2021 20:50:32.735 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/TurkishAirlines.war] has finished in [8,695] ms
+02-Aug-2021 20:50:32.735 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/FlightBookingSystemSample.war] has finished in [8,695] ms
 02-Aug-2021 20:50:32.746 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 02-Aug-2021 20:50:32.768 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [8990] milliseconds
 ```
 
-Open up a browser and visit the Turkish Airlines landing page at [http://localhost:8080/TurkishAirlines](http://localhost:8080/TurkishAirlines)
+Open up a browser and visit the Flight Booking System Sample landing page at [http://localhost:8080/FlightBookingSystemSample](http://localhost:8080/FlightBookingSystemSample)
 
 You should see the following
 

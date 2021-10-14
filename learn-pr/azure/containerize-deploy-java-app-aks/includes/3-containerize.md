@@ -19,10 +19,10 @@ The Docker runtime is used to build, pull, run, and push Docker images. The belo
 
 ## Clone the Java Application
 
-First you'll clone the Turkish Airlines repo.
+First you'll clone the Flight Booking System Sample repo.
 
 > [!NOTE]
-> If the Azure Kubernetes Service creation has successfully completed in your CLI tab, use that one, otherwise if it's still running, open a new tab and cd to the location of where you prefer to clone Turkish Airline.
+> If the Azure Kubernetes Service creation has successfully completed in your CLI tab, use that one, otherwise if it's still running, open a new tab and cd to the location of where you prefer to clone the Flight Booking System Sample.
 
 Run the following command in your CLI:
 
@@ -42,10 +42,10 @@ Run the following command in your CLI:
 mvn clean install
 ```
 
-Maven should have successfully built the Turkish Airlines Web Application Archive artifact TurkishAirlines-0.0.-SNAPSHOT.war, as seen below:
+Maven should have successfully built the Flight Booking System Sample Web Application Archive artifact FlightBookingSystemSample-0.0.-SNAPSHOT.war, as seen below:
 
 ```bash
-[INFO] Building war: /mnt/c/Users/chtrembl/dev/git/Flight-Booking-System-JavaServlets_App/Project/TurkishAirlines/target/TurkishAirlines-0.0.1-SNAPSHOT.war
+[INFO] Building war: /mnt/c/Users/chtrembl/dev/git/Flight-Booking-System-JavaServlets_App/Project/FlightBookingSystemSample/target/FlightBookingSystemSample-0.0.1-SNAPSHOT.war
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
@@ -54,19 +54,19 @@ Maven should have successfully built the Turkish Airlines Web Application Archiv
 [INFO] ------------------------------------------------------------------------
 ```
 
-Imagine you’re that Java developer and you have just built this TurkishAirlines-0.0.1-SNAPSHOT.war, your next step is to probably work with the operation engineers to get this artifact deployed to an on-premises server and/or virtual machine. This effort requires that the servers and/or virtual machines, are to be available and configured with the required dependencies for Turkish Airlines to start and run successfully. Both of which are challenging and time consuming, especially on demand when increased load is hitting your application. With Docker, these challenges are alleviated.
+Imagine you’re that Java developer and you have just built this FlightBookingSystemSample-0.0.1-SNAPSHOT.war, your next step is to probably work with the operation engineers to get this artifact deployed to an on-premises server and/or virtual machine. This effort requires that the servers and/or virtual machines, are to be available and configured with the required dependencies for Flight Booking System Sample to start and run successfully. Both of which are challenging and time consuming, especially on demand when increased load is hitting your application. With Docker, these challenges are alleviated.
 
 ## Construct a Docker file
 
 At this point, you're ready to construct a Docker file. A Dockerfile is a text document that contains all the commands a user could execute on the command line to assemble a container image, each of which are layers that build on top of each other.
 
-For example, Turkish Airlines needs to deploy to and run inside of an application server. An application server is not packaged inside of the TurkishAirlines-0.0.1-SNAPSHOT.war, it is an external dependency needed for the TurkishAirlines-0.0.1-SNAPSHOT.war to run, listen for and process HTTP requests, manage user sessions and facilitate flight bookings. If this was a traditional, non containerized deployment, operation engineers would install and configure an application server on some physical server and/or virtual machine, before deploying the TurkishAirlines-0.0.1-SNAPSHOT.war to it. These operation engineers would also need to ensure that the JDK being used on your machine (what mvn clean install was using to compile the war) is in fact corresponding to the same JRE being used by the application server. Managing these dependencies is challenging.
+For example, Flight Booking System Sample needs to deploy to and run inside of an application server. An application server is not packaged inside of the FlightBookingSystemSample-0.0.1-SNAPSHOT.war, it is an external dependency needed for the TurkisFlightBookingSystemSamplehAirlines-0.0.1-SNAPSHOT.war to run, listen for and process HTTP requests, manage user sessions and facilitate flight bookings. If this was a traditional, non containerized deployment, operation engineers would install and configure an application server on some physical server and/or virtual machine, before deploying the FlightBookingSystemSample-0.0.1-SNAPSHOT.war to it. These operation engineers would also need to ensure that the JDK being used on your machine (what mvn clean install was using to compile the war) is in fact corresponding to the same JRE being used by the application server. Managing these dependencies is challenging.
 
-With a Dockerfile, you can write the instructions (layers) needed to accomplish this automatically, by layering in the steps needed to ensure Turkish Airlines has all of the dependencies needed to deploy to the Docker container runtime. This is very compelling when you start to think about on demand scale at unplanned intervals. It's worth noting that each layer is leveraging Docker cache which contains the state of the Docker image at each instructional milestone optimizing compute time and reuse. If a layer isn't changing, cached layers will be used.
+With a Dockerfile, you can write the instructions (layers) needed to accomplish this automatically, by layering in the steps needed to ensure Flight Booking System Sample has all of the dependencies needed to deploy to the Docker container runtime. This is very compelling when you start to think about on demand scale at unplanned intervals. It's worth noting that each layer is leveraging Docker cache which contains the state of the Docker image at each instructional milestone optimizing compute time and reuse. If a layer isn't changing, cached layers will be used.
 
-Docker also has the concept of multi-stage builds, a feature that enables you to create a smaller container image with better caching and a smaller security footprint allowing for increased optimization and maintenance of the Dockerfile over time. For example, instructions that can be used to accomplish both a compilation of the application, TurkishAirlines-0.0.1-SNAPSHOT.war, as well as a build of the Docker image itself, leaving the remnants of the TurkishAirlines-0.0.1-SNAPSHOT.war compilation behind, resulting in a smaller footprint in the long run, which pays dividends when you start thinking about these images traveling around the network.  With multi-stage builds, you use multiple FROM statements in your Dockerfile. Each FROM instruction can use a different base, and each of these statements begins with a clean slate, removing any unnecessary files in the caching layer that might normally be cached.
+Docker also has the concept of multi-stage builds, a feature that enables you to create a smaller container image with better caching and a smaller security footprint allowing for increased optimization and maintenance of the Dockerfile over time. For example, instructions that can be used to accomplish both a compilation of the application, FlightBookingSystemSample-0.0.1-SNAPSHOT.war, as well as a build of the Docker image itself, leaving the remnants of the FlightBookingSystemSample-0.0.1-SNAPSHOT.war compilation behind, resulting in a smaller footprint in the long run, which pays dividends when you start thinking about these images traveling around the network.  With multi-stage builds, you use multiple FROM statements in your Dockerfile. Each FROM instruction can use a different base, and each of these statements begins with a clean slate, removing any unnecessary files in the caching layer that might normally be cached.
 
-It is imperative to ensure that the application is built by the same JDK corresponding to the same JRE that will be isolated in the Docker image at runtime. In the example below, you will see a Build stage, that leverages a specific version of Maven and specific version of the JDK to compile the TurkishAirlines-0.0.1-SNAPSHOT.war. This stage ensures that any Docker runtime executing this stage will get the expected generated byte code that the Dockerfile author has specified (otherwise, the operation engineers would have to be cross referencing their Java and application server runtimes with that of the developer(s)). The Package stage will then use a specific version of Tomcat and the JRE corresponding to the JDK in the Build stage. Again, this is done to ensure all dependencies (Java Development Kit JDK, Java Runtime Environment JRE, Application Server) are controlled and isolated to ensure the expected behavior can be seen across all machines this image will run on.
+It is imperative to ensure that the application is built by the same JDK corresponding to the same JRE that will be isolated in the Docker image at runtime. In the example below, you will see a Build stage, that leverages a specific version of Maven and specific version of the JDK to compile the FlightBookingSystemSample-0.0.1-SNAPSHOT.war. This stage ensures that any Docker runtime executing this stage will get the expected generated byte code that the Dockerfile author has specified (otherwise, the operation engineers would have to be cross referencing their Java and application server runtimes with that of the developer(s)). The Package stage will then use a specific version of Tomcat and the JRE corresponding to the JDK in the Build stage. Again, this is done to ensure all dependencies (Java Development Kit JDK, Java Runtime Environment JRE, Application Server) are controlled and isolated to ensure the expected behavior can be seen across all machines this image will run on.
 
 It is also worth noting, that with this multi-stage build, there is technically NO need for Maven and Java to be installed on the system, Docker will pull them down for use with both building the application as well as runtime of the application, avoiding any potential versioning conflict and unexpected behavior, unless of course you are compiling code and building artifacts outside of Docker.
 
@@ -94,7 +94,7 @@ RUN mvn clean package
 #
 FROM tomcat:8.5.72-jre11-openjdk-slim
 COPY tomcat-users.xml /usr/local/tomcat/conf
-COPY --from=build /build/target/*.war /usr/local/tomcat/webapps/TurkishAirlines.war
+COPY --from=build /build/target/*.war /usr/local/tomcat/webapps/FlightBookingSystemSample.war
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
 ```
@@ -106,24 +106,24 @@ As you can see, this Docker file Build stage has 6 instructions.
 
 | Docker command | Description |
 |-|-|
-| FROM   | FROM maven will be the base layer that this TurkishAirlines-0.0.1-SNAPSHOT.war is built from, a specific version of Maven and specific version of JDK to ensure the same compilation of byte code occurs on all machines running this build. |
+| FROM   | FROM maven will be the base layer that this FlightBookingSystemSample-0.0.1-SNAPSHOT.war is built from, a specific version of Maven and specific version of JDK to ensure the same compilation of byte code occurs on all machines running this build. |
 | WORKDIR   | WORKDIR is used to define the working directory of a Docker container at any given time, in this case, where compiled artifacts will reside. |
 | COPY   | COPY adds files from your Docker client's current directory. Setting up the files needed for Maven to compile, pom.xml will be needed by the Docker context |
-| COPY   | Setting up the files needed for Maven to compile. The src folder containing the Turkish Airlines application will be needed by the Docker context |
-| COPY   | Setting up the files needed for Maven to compile. The web folder containing the Turkish Airlines application dependencies will be needed by the Docker context|
-| RUN    | RUN mvn clean package instruction is used to execute any command on top of the current image. In this case RUN is used to execute the Maven build, which will compile the TurkishAirlines-0.0.1-SNAPSHOT.war |
+| COPY   | Setting up the files needed for Maven to compile. The src folder containing the Flight Booking System Sample application will be needed by the Docker context |
+| COPY   | Setting up the files needed for Maven to compile. The web folder containing the Flight Booking System Sample application dependencies will be needed by the Docker context|
+| RUN    | RUN mvn clean package instruction is used to execute any command on top of the current image. In this case RUN is used to execute the Maven build, which will compile the FlightBookingSystemSample-0.0.1-SNAPSHOT.war |
 
 As you can see, this Docker file Package stage has 5 instructions.
 
 | Docker command | Description |
 |-|-|
-| FROM   | FROM tomcat will be the base layer that this Docker image will be built on top of. The Turkish Airlines Docker image will be an image built on top of the tomcat image. The Docker runtime will attempt to locate the tomcat image locally, if it does not have this version, it will pull one down from the registry. If you were to inspect the tomcat image that's being referenced here, you would see its built using many other layers, all of which make it reusable as one packaged application server Docker image for the world to use when deploying their Java application. tomcat:8.5.72-jre11-openjdk-slim was selected and tested for the purposes of module. Note, all previous layers from the first Build stage are gone once Docker recognizes this second FROM instruction. |
-| COPY   | COPY tomcat-users.xml will copy the tomcat-users.xml file that manages the Turkish Airlines users (managed within source control using Tomcat identity, typically this would be in an external identity management system) into the tomcat Docker image so that its present in the Docker image each and evert time a Docker image is created |
-| ADD    | ADD target/*.war /usr/local/tomcat/webapps/TurkishAirlines.war will copy the maven compiled TurkishAirlines-0.0.1-SNAPSHOT.war to the tomcat images webapps folder to ensure that when Tomcat is initialize, it will in fact find the TurkishAirlines-0.0.1-SNAPSHOT.war to be installed on the application server. |
+| FROM   | FROM tomcat will be the base layer that this Docker image will be built on top of. The Flight Booking System Sample Docker image will be an image built on top of the tomcat image. The Docker runtime will attempt to locate the tomcat image locally, if it does not have this version, it will pull one down from the registry. If you were to inspect the tomcat image that's being referenced here, you would see its built using many other layers, all of which make it reusable as one packaged application server Docker image for the world to use when deploying their Java application. tomcat:8.5.72-jre11-openjdk-slim was selected and tested for the purposes of module. Note, all previous layers from the first Build stage are gone once Docker recognizes this second FROM instruction. |
+| COPY   | COPY tomcat-users.xml will copy the tomcat-users.xml file that manages the Flight Booking System Sample users (managed within source control using Tomcat identity, typically this would be in an external identity management system) into the tomcat Docker image so that its present in the Docker image each and evert time a Docker image is created |
+| ADD    | ADD target/*.war /usr/local/tomcat/webapps/FlightBookingSystemSample.war will copy the maven compiled FlightBookingSystemSample-0.0.1-SNAPSHOT.war to the tomcat images webapps folder to ensure that when Tomcat is initialize, it will in fact find the FlightBookingSystemSample-0.0.1-SNAPSHOT.war to be installed on the application server. |
 | EXPOSE | EXPOSE 8080 is needed as Tomcat is configured to listen to traffic on port 8080, this ensures the Docker process will listen on this port. |
 | CMD | CMD instruction is used to set a command to be executed when running the container. In this case, CMD ["catalina.sh", "run"] instructs Docker to initialize the Tomcat Application Server. |
 
 > [!NOTE]
-> Without a version tag on the FROM tomcat line, the latest will be applied. Generally you will want to leverage a version tag (remember, caching is applied, so if layers are consistently changing, you will incur bandwidth, latency, compute time and/or side effect of untested builds/layers.) For the sake of this module, we have preselected specific Maven, Tomcat, Java JRE/JDK tags that are tested to work with TurkishAirlines-0.0.1-SNAPSHOT.war at runtime.
+> Without a version tag on the FROM tomcat line, the latest will be applied. Generally you will want to leverage a version tag (remember, caching is applied, so if layers are consistently changing, you will incur bandwidth, latency, compute time and/or side effect of untested builds/layers.) For the sake of this module, we have preselected specific Maven, Tomcat, Java JRE/JDK tags that are tested to work with FlightBookingSystemSample-0.0.1-SNAPSHOT.war at runtime.
 
 For more information on Dockerfile construction please visit [https://docs.docker.com/engine/reference/builder/](https://docs.docker.com/engine/reference/builder/)

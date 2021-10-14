@@ -1,6 +1,6 @@
 In this unit, you'll deploy a Docker image to Azure Kubernetes Service.
 
-With Azure Kubernetes Service, you will be configuring your Kubernetes Cluster to run in a desired state, via a Deployment, which is the process of providing declarative updates to Pods and ReplicaSets. This declaration of state is administered in the manifest (YAML) file, and the Kubernetes controller will change the current state to the declared state when instructed. You will create this ```deployment.yml``` manifest file below and instruct your Azure Kubernetes Service to run in a desired state with pods configured to pull/run the ```turkishairlines``` Docker image that is resident in Azure Container Registry (that was pushed in from the previous unit). Without this deployment.yml you would manually have to create, update, and delete pods instead of letting the Kubernetes orchestrate this.
+With Azure Kubernetes Service, you will be configuring your Kubernetes Cluster to run in a desired state, via a Deployment, which is the process of providing declarative updates to Pods and ReplicaSets. This declaration of state is administered in the manifest (YAML) file, and the Kubernetes controller will change the current state to the declared state when instructed. You will create this ```deployment.yml``` manifest file below and instruct your Azure Kubernetes Service to run in a desired state with pods configured to pull/run the ```flightbookingsystemsample``` Docker image that is resident in Azure Container Registry (that was pushed in from the previous unit). Without this deployment.yml you would manually have to create, update, and delete pods instead of letting the Kubernetes orchestrate this.
 
 > [!NOTE]
 > If your session has idled out, your doing this step at another point in time and/or from another CLI you may have to re initialize your environment variables and re authenticate with the following CLI commands.
@@ -20,7 +20,7 @@ With Azure Kubernetes Service, you will be configuring your Kubernetes Cluster t
 
 ## Deploy a Docker image
 
-You'll deploy this the ```turkishairlines``` Docker image to your Azure Kubernetes Cluster.
+You'll deploy this the ```flightbookingsystemsample``` Docker image to your Azure Kubernetes Cluster.
 
 Within the root of your project, Flight-Booking-System-JavaServlets_App/Project/TurkishAirlines, Create a file called deployment.yml. Run the following command in your CLI:
 
@@ -37,20 +37,20 @@ Add the following contents to deployment.yml and then save and exit:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: turkishairlines
+  name: flightbookingsystemsample
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: turkishairlines
+      app: flightbookingsystemsample
   template:
     metadata:
       labels:
-        app: turkishairlines
+        app: flightbookingsystemsample
     spec:
       containers:
-      - name: turkishairlines
-        image: <AZ_CONTAINER_REGISTRY>.azurecr.io/turkishairlines:latest
+      - name: flightbookingsystemsample
+        image: <AZ_CONTAINER_REGISTRY>.azurecr.io/flightbookingsystemsample:latest
         resources:
           requests:
             cpu: "1"
@@ -64,20 +64,20 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: turkishairlines
+  name: flightbookingsystemsample
 spec:
   type: LoadBalancer
   ports:
   - port: 8080
     targetPort: 8080
   selector:
-    app: turkishairlines
+    app: flightbookingsystemsample
 ```
 
 > [!NOTE]
 > Optionally, the deployment_solution.yml in the root of your project contains the contents needed, you may find it easier to rename/update the contents of that file.
 
-In the deployment.yml above you'll notice this deployment.yml contains a Deployment and a Service. The deployment is used to administer a set of pods while the service is used to allow network access to the pods. You'll notice the pods are configured to pull a single image, the ```<AZ_CONTAINER_REGISTRY>.azurecr.io/turkishairlines:latest``` from Azure Container Registry. You'll also notice the the service is configured to allow incoming HTTP pod traffic to port 8080, similarly to the way you ran the Docker image locally with the ```-p``` port argument.
+In the deployment.yml above you'll notice this deployment.yml contains a Deployment and a Service. The deployment is used to administer a set of pods while the service is used to allow network access to the pods. You'll notice the pods are configured to pull a single image, the ```<AZ_CONTAINER_REGISTRY>.azurecr.io/flightbookingsystemsample:latest``` from Azure Container Registry. You'll also notice the the service is configured to allow incoming HTTP pod traffic to port 8080, similarly to the way you ran the Docker image locally with the ```-p``` port argument.
 
 By now your Azure Kubernetes Cluster creation should have successfully completed.
 
@@ -108,8 +108,8 @@ kubectl apply -f deployment.yml
 You will see the following:
 
 ```bash
-deployment.apps/turkishairlines created
-service/turkishairlines created
+deployment.apps/flightbookingsystemsample created
+service/flightbookingsystemsample created
 ```
 
 You can now use ```kubectl``` to monitor the status of the deployment. Run the following command in your CLI:
@@ -122,18 +122,18 @@ You will see the following:
 
 ```bash
 NAME                                   READY   STATUS    RESTARTS   AGE
-pod/turkishairlines-75647c4c98-v4v4r   1/1     Running   2          13d
+pod/flightbookingsystemsample-75647c4c98-v4v4r   1/1     Running   2          13d
 
 NAME                      TYPE           CLUSTER-IP    EXTERNAL-IP    PORT(S)          AGE
 service/kubernetes        ClusterIP      10.0.0.1      <none>         443/TCP          66d
-service/turkishairlines   LoadBalancer   10.0.34.128   20.81.13.151   8080:30265/TCP   66d
+service/flightbookingsystemsample   LoadBalancer   10.0.34.128   20.81.13.151   8080:30265/TCP   66d
 
 NAME                              READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/turkishairlines   1/1     1            1           66d
+deployment.apps/flightbookingsystemsample   1/1     1            1           66d
 
 NAME                                         DESIRED   CURRENT   READY   AGE
-replicaset.apps/turkishairlines-75647c4c98   1         1         1       66d
-replicaset.apps/turkishairlines-7564c58f55   0         0         0       13d
+replicaset.apps/flightbookingsystemsample-75647c4c98   1         1         1       66d
+replicaset.apps/flightbookingsystemsample-7564c58f55   0         0         0       13d
 ```
 
 If your ```POD``` status is ```Running``` then the application should be accessible.
@@ -141,7 +141,7 @@ If your ```POD``` status is ```Running``` then the application should be accessi
 You can view the application logs within each pod as well. Run the following command in your CLI:
 
 ```bash
- kubectl logs pod/turkishairlines-<POD_IDENTIFIER_FROM_YOUR_RUNNING_POD>
+ kubectl logs pod/flightbookingsystemsample-<POD_IDENTIFIER_FROM_YOUR_RUNNING_POD>
 ```
 
 You will see the following:
@@ -182,18 +182,18 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 07-Oct-2021 18:31:15.071 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 6497 ms
 07-Oct-2021 18:31:15.771 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
 07-Oct-2021 18:31:15.772 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.71]
-07-Oct-2021 18:31:16.261 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/TurkishAirlines.war]
+07-Oct-2021 18:31:16.261 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/FlightBookingSystemSample.war]
 07-Oct-2021 18:31:30.782 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 WARNING: An illegal reflective access operation has occurred
-WARNING: Illegal reflective access by com.sun.xml.ws.policy.privateutil.MethodUtil (file:/usr/local/tomcat/webapps/TurkishAirlines/WEB-INF/lib/webservices-rt-2.3.1.jar) to method sun.reflect.misc.MethodUtil.invoke(java.lang.reflect.Method,java.lang.Object,java.lang.Object[])
+WARNING: Illegal reflective access by com.sun.xml.ws.policy.privateutil.MethodUtil (file:/usr/local/tomcat/webapps/FlightBookingSystemSample/WEB-INF/lib/webservices-rt-2.3.1.jar) to method sun.reflect.misc.MethodUtil.invoke(java.lang.reflect.Method,java.lang.Object,java.lang.Object[])
 WARNING: Please consider reporting this to the maintainers of com.sun.xml.ws.policy.privateutil.MethodUtil
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
-07-Oct-2021 18:31:53.370 INFO [localhost-startStop-1] com.sun.xml.ws.server.MonitorBase.createRoot Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/TurkishAirlines-PriceAndSeats-PriceAndSeatsPort
+07-Oct-2021 18:31:53.370 INFO [localhost-startStop-1] com.sun.xml.ws.server.MonitorBase.createRoot Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/FlightBookingSystemSample-PriceAndSeats-PriceAndSeatsPort
 07-Oct-2021 18:31:54.864 INFO [localhost-startStop-1] com.sun.xml.ws.transport.http.servlet.WSServletDelegate.<init> WSSERVLET14: JAX-WS servlet initializing
 07-Oct-2021 18:32:02.869 INFO [localhost-startStop-1] com.sun.xml.ws.transport.http.servlet.WSServletContextListener.contextInitialized WSSERVLET12: JAX-WS context listener initializing
 07-Oct-2021 18:32:02.870 INFO [localhost-startStop-1] com.sun.xml.ws.transport.http.servlet.WSServletContextListener.contextInitialized WSSERVLET12: JAX-WS context listener initializing
-07-Oct-2021 18:32:03.069 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/TurkishAirlines.war] has finished in [46,808] ms
+07-Oct-2021 18:32:03.069 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/FlightBookingSystemSample.war] has finished in [46,808] ms
 07-Oct-2021 18:32:03.165 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 07-Oct-2021 18:32:03.267 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 48195 ms
 ```
@@ -203,7 +203,7 @@ You can now use the ```EXTERNAL-IP``` from your ```kubectl get all``` output to 
 > [!NOTE]
 > You'll want to substitute the ip address of your EXTERNAL-IP for 20.81.13.151
 
-Open up a browser and visit the Turkish Airlines landing page at [http://20.81.13.151:8080/TurkishAirlines](http://20.81.13.151:8080/TurkishAirlines)
+Open up a browser and visit the Flight Booking System Sample landing page at [http://20.81.13.151:8080/FlightBookingSystemSample](http://20.81.13.151:8080/FlightBookingSystemSample)
 
 You should see the following:
 

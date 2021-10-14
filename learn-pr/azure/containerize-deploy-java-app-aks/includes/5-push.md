@@ -20,26 +20,32 @@ Azure Container Registry allows you to build, store, and manage container images
 
 ## Push a Docker image
 
-You can push your newly built Docker image to the Azure Container Registry. By doing so, your Docker image will be network close to all of your Azure resources, such as your Azure Kubernetes Cluster. You will ultimately configure AKS to pull the TurkishAirlines image from Azure Container Registry.
+You can push your newly built Docker image to the Azure Container Registry. By doing so, your Docker image will be network close to all of your Azure resources, such as your Azure Kubernetes Cluster. You will ultimately configure AKS to pull the flightbookingsystemsample image from Azure Container Registry.
 
-To push the Docker image to Azure Container Registry, run the following two commands in your CLI:
+To push the Docker image to Azure Container Registry, run the following three commands in your CLI:
+
+Login to Azure Container Registry:
+
+```bash
+az acr login
+```
 
 First tag the previously built Docker image with your Azure Container Registry:
 
 ```bash
-docker tag turkishairlines $AZ_CONTAINER_REGISTRY.azurecr.io/turkishairlines
+docker tag flightbookingsystemsample $AZ_CONTAINER_REGISTRY.azurecr.io/flightbookingsystemsample
 ```
 
 Second, push the Docker image to Azure Container Registry:
 
 ```bash
-docker push $AZ_CONTAINER_REGISTRY.azurecr.io/turkishairlines
+docker push $AZ_CONTAINER_REGISTRY.azurecr.io/flightbookingsystemsample
 ```
 
 You can now view the Azure Container Registry image meta-data of the newly pushed image. Run the following command in your CLI:
 
 ```bash
-az acr repository show -n $AZ_CONTAINER_REGISTRY --image turkishairlines:latest
+az acr repository show -n $AZ_CONTAINER_REGISTRY --image flightbookingsystemsample:latest
 ```
 
 You will see the following meta-data as seen below:
