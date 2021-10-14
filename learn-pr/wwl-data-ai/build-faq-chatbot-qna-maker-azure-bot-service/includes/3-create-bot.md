@@ -22,19 +22,19 @@ The QnA Maker service is a cognitive service in Azure that enables you to quickl
     - **Azure Search pricing tier**: Free F
     - Notices. If any notices are displayed, select the appropriate checkboxes to state you have read them.
 
-> [!NOTE] 
-> If you have already provisioned a free-tier **Azure Cognitive Search** resources, your quota may not allow you to create another one. In which case, select a tier other than **F**.
+  > [!NOTE] 
+  > If you have already provisioned a free-tier **Azure Cognitive Search** resources, your quota may not allow you to create another one. In which case, select a tier other than **F**.
 
 4. Click **Create** and wait for the deployment of the Text Analytics Service that will support your QnA knowledge base.
 5. Return to the QnA Maker portal tab, and in the **Step 2** section, click **Refresh** to refresh the list of available QnA service resources.
 6. Connect your QnA service to your KB by selecting the following options:
-  - **Microsoft Azure Directory ID**: *The Azure directory ID for your subscription*
-  - **Azure subscription name**: *Your Azure subscription*
-  - **Azure QnA service**: *The QnA service resource you created in the previous step*
-  - **Language**: English
+    - **Microsoft Azure Directory ID**: *The Azure directory ID for your subscription*
+    - **Azure subscription name**: *Your Azure subscription*
+    - **Azure QnA service**: *The QnA service resource you created in the previous step*
+    - **Language**: English
 
-> [!TIP]
-> If a message stating that the role does not have permission to perform the action is displayed, refresh the browser page for the QnA Maker portal.
+  > [!TIP]
+  > If a message stating that the role does not have permission to perform the action is displayed, refresh the browser page for the QnA Maker portal.
 
 7. In the **Step 3** section, enter the name **Margie's Travel KB**.
 8. In the **Step 4** section, in the **URL** box, type `https://raw.githubusercontent.com/MicrosoftLearning/AI-900-AIFundamentals/main/data/qna/margies_faq.docx` and click **+ Add URL**. Then under **Chit-chat**, select **Professional**.
@@ -58,8 +58,8 @@ Now that you have a knowledge base, you can test it in the QnA Maker portal.
 3. In the test pane, at the bottom enter the message *Hi*. The response **Hello** should be returned.
 4. In the test pane, at the bottom enter the message *I want to book a flight*. An appropriate response from the FAQ should be returned.
 
-> [!NOTE]
-> The response includes a *short answer* as well as a more verbose *answer passage* - the answer passage shows the full text in the FAQ document for the closest matched question, while the short answer is intelligently extracted from the passage. You can control whether the short answer from the response by using the **Display short answer** checkbox at the top of the test pane.
+  > [!NOTE]
+  > The response includes a *short answer* as well as a more verbose *answer passage* - the answer passage shows the full text in the FAQ document for the closest matched question, while the short answer is intelligently extracted from the passage. You can control whether the short answer from the response by using the **Display short answer** checkbox at the top of the test pane.
 
 5. Try another question, such as *How can I cancel a reservation?*
 6. When you're done testing the knowledge base, click **&rarr; Test** to close the test pane.
