@@ -33,9 +33,7 @@ In the above scenario, you would choose Databricks Data Science and Engineering 
 
  
 
-Following diagram shows how Azure Databricks sits at the center of your Azure-based software platform and provides native integration with other Azure services.
 
-:::image type="content" source="../media/databricks-overview.png" alt-text="Overview of Azure Databricks.":::
 
 
 
