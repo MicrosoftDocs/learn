@@ -17,7 +17,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which Azure SQL deployment option will be easiest to use for the Inventory application workload?"
+  - content: "Which Azure SQL deployment option will be easiest to use for the Inventory application?"
     choices:
     - content: "SQL Server in an Azure virtual machine"
       isCorrect: true
