@@ -1,6 +1,6 @@
-## Azure Storage redundancy
+## Azure storage redundancy
 
-### What is Azure Storage redundancy?
+### What is Azure storage redundancy?
 
 Azure Storage provides several redundancy options that can help ensure your data is available. When choosing a redundancy option for storage, consider the following:
 

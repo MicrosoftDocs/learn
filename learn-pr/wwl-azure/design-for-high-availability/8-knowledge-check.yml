@@ -28,7 +28,7 @@ quiz:
     - content: "Single Virtual Machine with no availability Zone or Set"
       isCorrect: false
       explanation: "that’s incorrect. a standalone VM has a 99.9% SLA"
-  - content: "Which of the following do you recommended for the database strategy requirement?"
+  - content: "Which of the following should be used for the database strategy requirement?"
     choices:
     - content: "Active geo-replication"
       isCorrect: true
@@ -39,7 +39,7 @@ quiz:
     - content: "Secondary replica that is readable"
       isCorrect: false
       explanation: "That's incorrect. Active geo-replication creates a replica of the database in another region that is asynchronously kept up to date."
-  - content: "Which of the following do you recommend for their high traffic web applications?"
+  - content: "Which of the following should be used for their high traffic web applications?"
     choices:
     - content: "Azure Front Door"
       isCorrect: true

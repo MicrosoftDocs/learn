@@ -4,7 +4,7 @@ To understand the availability options and capabilities in Azure SQL, you need t
 
 There are two purchasing models to consider: DTU and vCore. Lets focus on the vCore service tiers and their architectures for high availability. You can equate the DTU model's Basic and Standard tiers to General Purpose, and its Premium tiers to Business Critical.
 
-## General Purpose
+## General purpose
 
 Databases and managed instances in the General Purpose service tier have the same availability architecture. Using the following figure as a guide, first consider the application and control ring. The application connects to the server name, which then connects to a gateway (GW) that points the application to the server to connect to, running on a VM. With General Purpose, the primary replica uses locally attached SSD for the tempdb. The data and log files are stored in Azure Premium Storage, which is locally redundant storage (multiple copies in one region). The backup files are then stored in Azure Standard Storage, which is RA-GRS by default. In other words, it's globally redundant storage (with copies in multiple regions).
 
@@ -14,7 +14,7 @@ All of Azure SQL is built on Azure Service Fabric, which serves as the Azure bac
 
  
 
-## Business Critical
+## Business critical
 
 The next service tier to consider is Business Critical, which can generally achieve the highest performance and availability of all Azure SQL service tiers (General Purpose, Hyperscale, Business Critical). Business Critical is meant for mission-critical applications that need low latency and minimal downtime.
 
@@ -44,7 +44,7 @@ As in the other service tiers, an automatic failover will happen if service fabr
 
 Business Critical maintains the highest performance and availability for workloads with small log writes that need low latency. But the Hyperscale service tier allows you to get a higher log throughput in terms of MB/second, provides for the largest database sizes, and provides up to four secondary replicas for higher levels of read scale. So, you'll need to consider your workload when you choose between the two.
 
-## Database Service tiers for availability
+## Database service tiers for availability
 
 Azure SQL Database and Azure SQL Managed Instance provide great availability options by default in the various service tiers. There are some additional things you can do to increase or modify the availability of your databases/instances. You'll be able to directly see the impact on the service-level agreement (SLA). In this unit, you'll see how you can go further with various options for availability in Azure SQL.
 
@@ -57,7 +57,7 @@ In the Business Critical tier in Azure SQL Database, you can opt in (for no addi
 
 From performance standpoint, there might be a small increase in network latency because your AG is now spread across datacenters that have some distance between them. For this reason, Availability Zones isn't turned on by default. You can choose to use what's commonly called a "Multi-Az" or a "Single-Az" deployment. Configuring this option is as simple as adding a parameter to a PowerShell/Azure CLI command or selecting a check box in the portal.
 
-Availability Zones are relatively new to Azure SQL, so they're currently available only in certain regions and service tiers. Over time, this capability is likely to be supported in more regions and potentially more service tiers. For example, recently the General Purpose tier for Azure SQL Database released a preview for the multi-az deployment.
+Availability Zones are relatively new to Azure SQL, so they're currently available only in certain regions and service tiers. Over time, this capability is likely to be supported in more regions and potentially more service tiers. 
 
 ## Azure SQL SLA
 
