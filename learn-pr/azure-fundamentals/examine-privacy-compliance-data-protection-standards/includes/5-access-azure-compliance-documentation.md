@@ -10,12 +10,12 @@ The [Azure compliance documentation](/azure/compliance/?azure-portal=true) provi
 
 Here you find compliance offerings across these categories:
 
-* Global
-* US government
-* Financial services
-* Health
-* Media and manufacturing
-* Regional
+ -  Global
+ -  US government
+ -  Financial services
+ -  Health
+ -  Media and manufacturing
+ -  Regional
 
 There are also additional compliance resources, such as audit reports, privacy information, compliance implementations and mappings, and white papers and analyst reports. Country and region privacy and compliance guidelines are also included. Some resources might require you to be signed in to your cloud service to access them.
 
@@ -25,19 +25,19 @@ The legal team at Tailwind Traders wants to learn more about how PCI DSS relates
 
 As an optional exercise, here you follow along.
 
-1. Go to the [Azure compliance documentation](/azure/compliance/?azure-portal=true).
-1. Under **Financial services**, select **PCI DSS**.
+1.  Go to the [Azure compliance documentation](/azure/compliance/?azure-portal=true).
+2.  Under **Financial services**, select **PCI DSS**.
 
-    :::image type="content" source="../media/5-financial-services.png" alt-text="A screenshot of the Azure compliance documentation page. The financial service category is shown, and PCI DSS is highlighted.":::
-
+    :::image type="content" source="../media/5-financial-services-eb9dc82d.png" alt-text="A screenshot of the Azure compliance documentation page. The financial service category is shown, and PCI DSS is highlighted.":::
+    
     There you see:
-
-    * An overview of the PCI DSS standard.
-    * How PCI DSS applies to Microsoft.
-    * Which cloud services are in scope.
-    * An overview of the audit cycle.
-    * Answers to frequently asked questions.
-    * Additional resources and white papers.
+    
+     -  An overview of the PCI DSS standard.
+     -  How PCI DSS applies to Microsoft.
+     -  Which cloud services are in scope.
+     -  An overview of the audit cycle.
+     -  Answers to frequently asked questions.
+     -  Additional resources and white papers.
 
 ### Access additional compliance resources
 
@@ -45,13 +45,15 @@ From the [Azure compliance documentation](/azure/compliance/?azure-portal=true),
 
 For example, from the **Audit reports** section, you find a link to audit reports for [PCI DSS](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_PCI_DSS?azure-portal=true).
 
-:::image type="content" source="../media/5-audit-reports.png" alt-text="A screenshot of the Azure compliance documentation page. The audit reports section is shown, and PCI DSS is highlighted.":::
+:::image type="content" source="../media/5-audit-reports-fcb5ab17.png" alt-text="A screenshot of the Azure compliance documentation page. The audit reports section is shown, and PCI DSS is highlighted.":::
+
 
 From there, you can access several different files, including the Attestation of Compliance reports and the PCI DSS Shared Responsibility Matrix.
 
 Under **Compliance blueprints**, you find reference blueprints, or policy definitions, for common standards that you can apply to your Azure subscription. The [PCI DSS](/azure/governance/blueprints/samples/pci-dss-3.2.1/?azure-portal=true) blueprint deploys a core set of policies that map to PCI DSS compliance and help you govern your Azure workloads against this standard.
 
-:::image type="content" source="../media/5-compliance-blueprints.png" alt-text="A screenshot of the Azure compliance documentation page. The compliance blueprints section is shown, and PCI-DSS v.3.2.1 is highlighted.":::
+:::image type="content" source="../media/5-compliance-blueprints-63ba931b.png" alt-text="A screenshot of the Azure compliance documentation page. The compliance blueprints section is shown, and PCI-DSS v.3.2.1 is highlighted.":::
+
 
 You can then see if the Azure resources in your application architecture have been configured correctly for PCI DSS compliance, or which resources you need to remediate.
 

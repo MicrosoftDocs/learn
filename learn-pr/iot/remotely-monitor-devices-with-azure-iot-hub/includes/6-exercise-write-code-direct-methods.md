@@ -54,9 +54,9 @@ In this unit, we'll add code to the device app for a direct method to turn on th
 ::: zone-end
 ::: zone pivot="csharp"
 
-1. Open the **Program.cs** file for the device app.
+1. Open the *Program.cs* file for the *cheesecavedevice* app.
 
-1. Add the following method, perhaps to the end of the class.
+1. Add the following method to the class.
 
     ```cs
         // Handle the direct method call
@@ -100,11 +100,11 @@ In this unit, we'll add code to the device app for a direct method to turn on th
 1. Add the following lines of code to the `Main` method, after creating the device client.
 
     ```cs
-            // Create a handler for the direct method call
-            s_deviceClient.SetMethodHandlerAsync("SetFanState", SetFanState, null).Wait();
+    // Create a handler for the direct method call
+    s_deviceClient.SetMethodHandlerAsync("SetFanState", SetFanState, null).Wait();
     ```
 
-1. Save the **Program.cs** file.
+1. Save the *Program.cs* file.
 
 ::: zone-end
 
@@ -164,44 +164,49 @@ When setting up a call to invoke a direct method, it's best to divide the code i
 ::: zone-end
 ::: zone pivot="csharp"
 
-1. Open the **Program.cs** file for the back-end app.
+1. Open the *Program.cs* file for the back-end app.
 
-1. Add the following line to the global variables.
+1. Add the following code to the global variables.
 
     ```cs
-    private static ServiceClient s_serviceClient;
+    private static ServiceClient s_serviceClient;    
+            
+    // Service connection string for your IoT Hub.
+    private readonly static string s_serviceConnectionString = "<your service connection string>";
     ```
+
+1. Replace `<your service connection string>` with the _service_ connection string you saved in an earlier unit.
 
 1. Add the following task, perhaps after the `Main` method.
 
     ```cs
-        // Handle invoking a direct method.
-        private static async Task InvokeMethod()
+    // Handle invoking a direct method.
+    private static async Task InvokeMethod()
+    {
+        try
         {
-            try
+            var methodInvocation = new CloudToDeviceMethod("SetFanState") { ResponseTimeout = TimeSpan.FromSeconds(30) };
+            string payload = JsonConvert.SerializeObject("on");
+
+            methodInvocation.SetPayloadJson(payload);
+
+            // Invoke the direct method asynchronously and get the response from the simulated device.
+            var response = await s_serviceClient.InvokeDeviceMethodAsync("CheeseCaveID", methodInvocation);
+
+            if (response.Status == 200)
             {
-                var methodInvocation = new CloudToDeviceMethod("SetFanState") { ResponseTimeout = TimeSpan.FromSeconds(30) };
-                string payload = JsonConvert.SerializeObject("on");
-
-                methodInvocation.SetPayloadJson(payload);
-
-                // Invoke the direct method asynchronously and get the response from the simulated device.
-                var response = await s_serviceClient.InvokeDeviceMethodAsync("CheeseCaveID", methodInvocation);
-
-                if (response.Status == 200)
-                {
-                    greenMessage("Direct method invoked: " + response.GetPayloadAsJson());
-                }
-                else
-                {
-                    redMessage("Direct method failed: " + response.GetPayloadAsJson());
-                }
+                greenMessage("Direct method invoked: " + response.GetPayloadAsJson());
             }
-            catch
+            else
             {
-                redMessage("Direct method failed: timed-out");
+                redMessage("Direct method failed: " + response.GetPayloadAsJson());
             }
         }
+        catch
+        {
+            redMessage("Direct method failed: timed-out");
+        }
+    }
     ```
 
 1. If you did not use the suggested "CheeseCaveID" device Id, change the `InvokeDeviceMethodAsync` call to use your device Id.
@@ -209,12 +214,12 @@ When setting up a call to invoke a direct method, it's best to divide the code i
 1. Add the following code to the `Main` method, before creating the receivers to listen for messages.
 
     ```cs
-            // Create a ServiceClient to communicate with service-facing endpoint on your hub.
-            s_serviceClient = ServiceClient.CreateFromConnectionString(s_serviceConnectionString);
-            InvokeMethod().GetAwaiter().GetResult();  
+    // Create a ServiceClient to communicate with service-facing endpoint on your hub.
+    s_serviceClient = ServiceClient.CreateFromConnectionString(s_serviceConnectionString);
+    InvokeMethod().Wait();
     ```
 
-1. Save the **Program.cs** file.
+1. Save the *Program.cs* file.
 
 ::: zone-end
 
