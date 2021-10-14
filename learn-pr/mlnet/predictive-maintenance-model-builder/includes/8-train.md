@@ -38,7 +38,7 @@ Model Builder uses automated machine learning (AutoML) to identify the set of tr
 
 ## Training and consumption code
 
-Once your model is done training, Model Builder generates a few files and adds them to your project. These files are nested under your *.mbconfig* file.
+Once your model is done training, Model Builder generates a few files prefixed with your model's name and adds them to your project. These files are nested under your *.mbconfig* file.
 
 - **\<MODEL-NAME\>.zip**: A serialized version of your model.
 - **\<MODEL-NAME\>.training.cs**: This file contains the model training pipeline. Your model training pipeline is made up of the data transformations and algorithm used to train your machine learning model. See [data transforms](/dotnet/machine-learning/resources/transforms) and [how to choose an ML.NET algorithm](/dotnet/machine-learning/how-to-choose-an-ml-net-algorithm) for more details.
