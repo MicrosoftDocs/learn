@@ -12,7 +12,7 @@ In this module, you will:
 ## Prerequisites
 
 > [!NOTE]
-> Visual Studio 2022 and .NET 6 are currently in preview.
+> Visual Studio 2022 is currently in preview.
 
 - Intermediate knowledge of .NET
 - [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the .NET desktop development workload installed. The .NET 6.0 SDK is automatically installed when you select this workload.
@@ -24,7 +24,7 @@ Imagine you work for a manufacturing company that uses industrial machines as pa
 
 Machine learning may be able to help by analyzing historical data from these sensors and learning patterns to help you predict whether a machine needs maintenance or not.
 
-You'd like to take advantage of your .NET skills and use familiar tools like Visual Studio to build a machine learning solution, but don't have a lot of experience with machine learning. As a result, you've decided to use ML.NET, an open-source machine learning framework for .NET and its Visual Studio extension, Model Builder, to help you build your machine learning model.
+You'd like to take advantage of your .NET skills and use familiar tools like Visual Studio to build a machine learning solution, but don't have much experience with machine learning. As a result, you've decided to use ML.NET, an open-source machine learning framework for .NET and its Visual Studio extension, Model Builder, to help you build your machine learning model.
 
 ## The first step
 

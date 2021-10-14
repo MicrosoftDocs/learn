@@ -34,7 +34,7 @@ Let's test out your model to see whether it produces the expected results.
 
 ### Results
 
-The results section displays the prediction made by your model as well as how confident it is in its prediction.
+The results section displays the prediction made by your model and how confident it is in its prediction.
 
 If you look at the Machine failure column of UID 161 in your dataset, you'll notice that the value is 1. This is the same as the predicted value with the highest confidence in the results section.
 
