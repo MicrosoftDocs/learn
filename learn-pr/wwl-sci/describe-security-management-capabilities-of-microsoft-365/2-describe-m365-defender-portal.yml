@@ -4,12 +4,14 @@ title: Describe and explore the Microsoft 365 Defender portal
 metadata:
   title: Describe and explore the Microsoft 365 Defender portal
   description: "Describe and explore the Microsoft 365 Defender portal"
-  ms.date: 07/29/2021
+  ms.date: 09/08/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
+sandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-describe-m365-defender-portal.md)]

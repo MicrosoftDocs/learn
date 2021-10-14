@@ -21,7 +21,7 @@ A database account is a container for managing one or more databases. Before we 
 
 1. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Databases**, and in the *marketplace* search box, search for and select **Azure Cosmos DB**. The **Select API option** pane appears.
+1. In the left menu pane, select **Databases**, and in the *Search services and marketplace* search box, search for and select **Azure Cosmos DB**. The **Select API option** pane appears.
 
     Azure Cosmos DB provides five APIs to suit the needs of your application:
 
@@ -33,9 +33,9 @@ A database account is a container for managing one or more databases. Before we 
 
     Each of these database options currently require a separate account. At this time, the Azure Cosmos DB trigger, input bindings, and output bindings only work with Core SQL API and Graph API accounts.
 
-1. Select **Create** in the **Core (SQL) - Recommended** box option. The **Create Azure Cosmos DB Account - Core (SQL)** pane appears.
+1. In the **Core (SQL) - Recommended** box option, select **Create**. The **Create Azure Cosmos DB Account - Core (SQL)** pane appears.
 
-1. On the **Basics** tab, enter the following values for each section.
+1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value | Description |
     |---|---|---|
@@ -150,7 +150,7 @@ You now have a few entries in your **Bookmarks** container. Your scenario will w
 
 1. Go to the function app that you created in the preceding unit. In the top left corner of the portal, select **Home**, and in the **Recent resources** section, you should see your app with **Function App** identified in the **Type** column. Select your app, and the **Function App** pane appears.
 
-1. In the left menu pane, under **Functions**, select **Functions**.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears.
 
 1. To start the function creation process, from the top menu bar, select **Create**. The **Create function** pane appears showing the complete set of supported triggers.
 
@@ -176,11 +176,11 @@ Now that we have our skeletal function working, let's turn our attention to read
 
 To read data from the database, you need to define an input binding. As you'll see, you can configure a binding that can talk to your database in just a few steps.
 
-1. Return to the portal, and in the left menu pane of your *HttpTrigger2* function, under **Developer**, select **Integration**. The **Integration** pane for your function appears.
+1. Return to the portal, and in the left menu pane of your *HttpTrigger2* function, under **Developer**, select **Integration**. The **Integration** pane for your *Function* appears.
 
-    The template you used created an HTTP trigger and an HTTP output binding. Now add your new Azure Cosmos DB input binding.
+    The template you used created an HTTP trigger and an HTTP output binding. Now, add your new Azure Cosmos DB input binding.
 
-1. In the **Inputs** box, select **Add Input**. The **Create Input** pane appears showing a list of all possible input binding types.
+1. In the **Inputs** box, select **Add input**. The **Create Input** pane appears showing a list of all possible input binding types.
 
 1. From the **Binding Type** dropdown list, select **Azure Cosmos DB**.
 
@@ -230,7 +230,7 @@ There are two changes that you need to make to implement the binding that you ju
 
 ### Modify your function's JavaScript implementation code
 
-1. On the **Integration** pane of your *HttpTrigger2* function, in the left menu pane, under **Developer**, select **Code + Test**.
+1. On the **Integration** pane of your *HttpTrigger2* function, in the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your *HttpTrigger2* function.
 
 1. Replace all code in the *index.js* file with the code from the following snippet, and in the top menu bar, select **Save**. The **Logs** pane appears showing your connection.
 
@@ -268,7 +268,7 @@ There are two changes that you need to make to implement the binding that you ju
 
 ### Modify your function's PowerShell implementation code
 
-1. On the **Integration** pane of your *HttpTrigger2* function, in the left menu pane, under **Developer**, select **Code + Test**.
+1. On the **Integration** pane of your *HttpTrigger2* function, in the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your *HttpTrigger2* function.
 
 1. Replace all code in the run.ps1 file with the code from the following snippet, and in the top menu bar, select **Save**. The **Logs** pane appears showing your connection.
 
@@ -334,9 +334,9 @@ Let's examine what this code is doing.
           "name": "bookmark",
           "direction": "in",
           "type": "cosmosDB",
+          "connectionStringSetting": "your-database_DOCUMENTDB",
           "databaseName": "func-io-learn-db",
           "collectionName": "Bookmarks",
-          "connectionStringSetting": "your-database_DOCUMENTDB",
           "id": "{id}",
           "partitionKey": "{id}"
         }
@@ -350,18 +350,18 @@ Let's examine what this code is doing.
 
 ## Try it out
 
-1. In the left menu pane, under **Developer**, select **Code + Test**.
+1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your *HttpTrigger2* function.
 
-1. In the top menu bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
+1. In the top menu bar, select **Get function URL**. The **Get function URL** dialog box appears.
 
 1. From the **Key** dropdown list, select **default** under **Function key**, and then select the *Copy to clipboard* icon at the end of the URL.
 
 1. Paste the function URL you copied into the address bar of a new tab in your browser.
 
 1. Add the query string value `&id=docs` to the end of the URL. Your resulting URL should resemble the following example:
- 
+
     'https://example.azurewebsites.net/api/HttpTrigger2?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&id=docs'
- 
+
 1. Press <kbd>Enter</kbd> to execute the request in your browser. You should see a response similar to the following example returned by your function.
 
     ```json

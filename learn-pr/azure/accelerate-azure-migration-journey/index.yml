@@ -17,8 +17,8 @@ abstract: |
   - List the Azure migration and modernization tools and programs that enable successful moves.
 prerequisites: |
   - General understanding of cloud platforms 
-  - Understanding of your organization's migration and modernization plan and the types of workloads you'll need to move 
-iconUrl: /learn/achievements/generic-badge.svg
+  - Understanding of your organization's migration plan and the types of workloads you'll need to migrate 
+iconUrl: /learn/achievements/accelerate-migration-journey.svg
 ratingEnabled: true
 levels:
 - beginner

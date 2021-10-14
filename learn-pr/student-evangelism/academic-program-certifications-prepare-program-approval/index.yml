@@ -5,9 +5,10 @@ metadata:
   description: Organize and support the approval process for your program. Define the main processes in program approval and respond to feedback from an approval panel. 
   ms.date: 08/11/2021
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: nextgen
 title: Prepare for a program approval event
 summary: Organize and support the approval process for your program. Define the main processes in program approval and respond to feedback from an approval panel. 
 abstract: |
@@ -23,6 +24,8 @@ levels:
 roles:
 - student
 - developer
+- higher-ed-educator
+- school-leader
 products:
 - azure
 units:

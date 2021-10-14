@@ -1,4 +1,4 @@
-Azure Front Door in Microsoft Azure combines the features available in Azure Front Door (Classic), Microsoft Azure Content Delivery Network, and Azure Web Application Firewall. It helps provide a fast, reliable, and more secure modern cloud content delivery network (CDN). This CDN integrates with intelligent threat protection.
+Azure Front Door Standard/Premium in Microsoft Azure combines the features available in Azure Front Door , Microsoft Azure Content Delivery Network, and Azure Web Application Firewall. It helps provide a fast, reliable, and more secure modern cloud content delivery network (CDN). This CDN integrates with intelligent threat protection.
 
 :::image type="content" source="../media/overview.png" alt-text="A user accesses a website. The connection terminates at Azure Front Door at the edge. Beyond the edge is the Microsoft global network and hosted resources.":::
 
@@ -10,11 +10,8 @@ In the past, you might have used a CDN to help ensure app availability and perfo
 
 ## What will we be doing?
 
-In this module, you'll identify the Azure Front Door features. You'll then compare them with the Azure Front Door (Classic), Azure Content Delivery Network, and Azure Web Application Firewall features. You'll also assess whether Azure Front Door can help you transform your global consumer and enterprise apps into more secure, high-performing, personalized modern apps. Finally, you'll determine when to use Azure Front Door.
+In this module, you'll identify the Azure Front Door Standard/Premium features. You'll then compare them with the Azure Front Door, Azure Content Delivery Network, and Azure Web Application Firewall features. You'll also assess whether Azure Front Door can help you transform your global consumer and enterprise apps into more secure, high-performing, personalized modern apps. Finally, you'll determine when to use Azure Front Door Standard/Premium.
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to evaluate whether Azure Front Door can improve delivery of your organization's app infrastructure. You'll also be able to describe how Azure Front Door features can help protect your apps.
-
-> [!NOTE]
-> As of March 2021, while in public preview in the portal, Azure Front Door is referred to as Azure Front Door Standard/Premium.
+By the end of this module, you'll be able to evaluate whether Azure Front Door Standard/Premium can improve delivery of your organization's app infrastructure. You'll also be able to describe how Azure Front Door Standard/Premium features can help protect your apps.

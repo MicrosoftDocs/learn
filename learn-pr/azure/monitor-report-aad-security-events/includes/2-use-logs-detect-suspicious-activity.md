@@ -85,7 +85,7 @@ Here are a few key filters and what you would use them for:
 - **User**: Lets you target specific users, by either their name or their user principal name.
 - **Application**: Lets you find sign-in requests made by specific applications.
 - **Sign-in status**: Lets you narrow the results to users who successfully signed in and those who failed.
-- **Conditional access**: Lets you examine whether any applicable conditional access policies have been applied.
+- **Conditional Access**: Lets you examine whether any applicable Conditional Access policies have been applied.
 - **Date**: Lets you adjust the timeframe of the data you're looking at, from a month to a single day.
 
 ### Download the sign-in logs
@@ -163,7 +163,7 @@ As with the logs previously described, you can modify the columns that appear, a
 
 Audit logs can contain hundreds of thousands of entries from across your Azure environment. To manage this number, you apply filters to the results to display the data you need. You can filter data in the following fields only:
 
-- **Service**: Narrows down the services in the results. The Service field is limited to access reviews, accounts provisioning, application SSO, authentication methods, B2C, conditional access, core directories, entitlement management, identity protection, invited users, Privileged Identity Management (PIM), self-service group and password management, and terms of use.
+- **Service**: Narrows down the services in the results. The Service field is limited to access reviews, accounts provisioning, application SSO, authentication methods, B2C, Conditional Access, core directories, entitlement management, identity protection, invited users, Privileged Identity Management (PIM), self-service group and password management, and terms of use.
 - **Category**: Specifies what category of audit you want. The selection might be: administrative unit, application management, authentication, authorization, contact, device, device configuration, directory management, entitlement management, group management, policy resource management, role management, and user management.
 - **Activity**: Options depend on the type of service and category you've previously selected.
 - **Status**: Identifies the activity's success or failure.

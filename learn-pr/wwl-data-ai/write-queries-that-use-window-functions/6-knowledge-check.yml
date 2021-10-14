@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-queries-that-use-window-functions.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/09/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "What must be specified with the RANK function?"
+    choices:
+    - content: "PARTITION BY"
+      isCorrect: false
+      explanation: "That's incorrect. The RANK function does not always require the PARTITION BY argument."
+    - content: "CURRENT ROW"
+      isCorrect: false
+      explanation: "That's incorrect. CURRENT ROW is not required when using the RANK function."
+    - content: "ORDER BY"
+      isCorrect: true
+      explanation: "That's correct. ORDER BY must be specified with the RANK function."
+  - content: "In what order should the ROW, OVER, and PARTITION BY keywords occur in a query?"
+    choices:
+    - content: "PARTITION BY, OVER, ROW"
+      isCorrect: false
+      explanation: "That's incorrect. OVER is the clause and PARITION BY and ROW or RANGE are the arguments."
+    - content: "ROW, OVER, PARTITION BY"
+      isCorrect: false
+      explanation: "That's incorrect. OVER is the clause and PARITION BY and ROW or RANGE are the arguments."
+    - content: "OVER, PARTITION BY, ROW"
+      isCorrect: true
+      explanation: "That's correct. OVER is the clause and PARITION BY and ROW or RANGE are the arguments."
+  - content: "What type of window function is PERCENT_RANK()?"
+    choices:
+    - content: "Analytic function"
+      isCorrect: true
+      explanation: "That's correct. PERCENT_RANK is similar to the CUME_DIST function and is categorized as an Analytic function."
+    - content: "Ranking function"
+      isCorrect: false
+      explanation: "That's incorrect. PERCENT_RANK is similar to the CUME_DIST function and is not categorized as a Ranking function."
+    - content: "Aggregation function"
+      isCorrect: false
+      explanation: "That's incorrect. PERCENT_RANK is similar to the CUME_DIST function and is not categorized as a Ranking function."

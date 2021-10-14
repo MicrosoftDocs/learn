@@ -31,9 +31,9 @@ quiz:
     - content: "Sign-in Location"
       isCorrect: false
       explanation: "Sign-in Location shows from which location the user signed in."
-    - content: "Conditional access status"
+    - content: "Conditional Access status"
       isCorrect: true
-      explanation: "The Conditional access status table shows which users are required to perform MFA to validate their identity."
+      explanation: "The Conditional Access status table shows which users are required to perform MFA to validate their identity."
     - content: "Sign-ins by Device."
       isCorrect: false
       explanation: "Sign-ins by Device lists devices used by the users to sign in to Azure AD."

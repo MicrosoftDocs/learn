@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-azure-databricks
 metadata:
   title: Get started with Azure Databricks
   description: "Get started with Azure Databricks"
-  ms.date: 08/20/2021
+  ms.date: 09/16/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should be familiar with the Microsoft Azure portal and provisioning Azure resources.
   You'll get the most out of this module if you already have some experience of using Python in a notebook environment, such as Jupyter Notebooks.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/get-started-with-azure-databricks.svg
 levels:
 - intermediate
 roles:

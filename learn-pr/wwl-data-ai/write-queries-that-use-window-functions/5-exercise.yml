@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-queries-that-use-window-functions.exercise
+title: 'Exercise: Use window functions'
+metadata:
+  title: 'Exercise: Use window functions'
+  description: "Exercise: Use window functions"
+  ms.date: 10/09/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 105117
+labModal: true
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise.md)]

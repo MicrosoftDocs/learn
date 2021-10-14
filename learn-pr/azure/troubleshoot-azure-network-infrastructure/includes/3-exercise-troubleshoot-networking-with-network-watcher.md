@@ -8,19 +8,26 @@ Here, you'll troubleshoot connectivity between two VMs in different subnets.
 
 ## Configure a virtual network and VMs
 
-Let's start by creating the problematic infrastructure, which includes a configuration error:
+Let's start by creating the infrastructure. We will also purposely be creating a configuration error:
 
-1. In your browser, open [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true), and log in to the directory with access to the subscription you want to create resources in.
+1. In your browser, open an [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) session.
+ 
+1. Open the directory you want to create resources in.
 
-1. To create a variable to store your resource group name, and a resource group for your resources, in Bash Cloud Shell, run the following command. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
-
+1. List the supported regions for your subscription.
+    
     ```azurecli
-    RG=<resource group name>
-
-    az group create --name $RG --location <location>
+    az account list-locations
     ```
 
-1. To create the virtual network **MyVNet1** and the subnet **FrontendSubnet**, in Cloud Shell, run this command.
+1. Create a resource group and assign it to the variable name **RG** by running the following code, replacing `<resource group name>` with a name for your resource group, and `<name>` with the *name* of the region from previous output.
+
+    ```azurecli
+        az group create --name <resource group name> --location <name>
+        RG=<resource group name>
+    ```
+
+1. Create a virtual network named **MyVNet1** with a subnet named **FrontendSubnet**by running this command.
 
     ```azurecli
     az network vnet create \
@@ -31,17 +38,17 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --subnet-prefixes 10.10.1.0/24
     ```
 
-1. To create the subnet called **BackendSubnet**, run this command.
+1. Create another subnet called **BackendSubnet** by running this command.
 
     ```azurecli
     az network vnet subnet create \
-        --address-prefixes 10.10.2.0/24 \
-        --name BackendSubnet \
-        --resource-group $RG \
-        --vnet-name MyVNet1
+    --address-prefixes 10.10.2.0/24 \
+    --name BackendSubnet \
+    --resource-group $RG \
+    --vnet-name MyVNet1
     ```
 
-1. To deploy a VM in **FrontendSubnet**, run this command. Replace `<password>` with a complex password of your choice.
+1. Deploy a VM in **FrontendSubnet** by running this command, replacing `<password>` with a complex password of your choice.
 
     ```azurecli
     az vm create \
@@ -49,15 +56,15 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --name FrontendVM \
         --vnet-name MyVNet1 \
         --subnet FrontendSubnet \
-        --image Win2019Datacenter \
+         --image Win2019Datacenter \
         --admin-username azureuser \
         --admin-password <password>
     ```
 
     > [!NOTE]
-    > If you get an error, "partofthepassword: event not found; create a new password and avoid ! marks.
+    > If you get an error "partofthepassword: event not found", create a new password using allowed characters.
 
-1. To install IIS on **FrontendVM**, run this command.
+1. Install IIS on **FrontendVM** by running the following code.
 
     ```azurecli
     az vm extension set \
@@ -69,7 +76,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --no-wait
     ```
 
-1. To deploy a virtual machine in **BackendSubnet**, run this command. Replace `<password>` with a complex password of your choice.
+1. Deploy a virtual machine in **BackendSubnet** by running this command, replacing `<password>` with a complex password of your choice.
 
     ```azurecli
     az vm create \
@@ -82,7 +89,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --admin-password <password>
     ```
 
-1. To install IIS on **BackendVM**, run this command.
+1. Install IIS on **BackendVM** by running this command.
 
     ```azurecli
     az vm extension set \
@@ -94,7 +101,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --no-wait
     ```
 
-1. To create a network security group (NSG), run this command.
+1. Create a network security group (NSG) **MyNsg** by entering the following command.
 
     ```azurecli
     az network nsg create \
@@ -102,7 +109,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --resource-group $RG
     ```
 
-1. To create an NSG **configuration mistake that prevents communication** between the VMs, run this command.
+1. Create a **configuration _mistake_ that prevents communication** between the VMs.
 
     ```azurecli
     az network nsg rule create \
@@ -120,7 +127,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --description "Deny from specific IP address ranges on 80, 443 and 3389."
     ```
 
-1. To associate a network security group with a subnet, run this command.
+1. Run the following command to associate a network security group with a subnet.
 
     ```azurecli
     az network vnet subnet update \
@@ -132,36 +139,36 @@ Let's start by creating the problematic infrastructure, which includes a configu
 
 ## Enable Network Watcher for your region
 
-Now, to set up Network Watcher in the same region as the infrastructure, let's use the Azure CLI.
+Now, let's use Azure CLI to set up Network Watcher in the same region as the infrastructure. 
 
-To enable Network Watcher, run this command. Replace (match) `<location>` with the Azure region used when you created your resource group at the beginning of this session.
+1. Enable Network Watcher by running this command, replacing `<location>` with the Azure region you used when you created your resource group at the beginning of this session.
 
 ```azurecli
 az network watcher configure \
     --enabled true \
-    --resource-group $RG
-    --locations <location> \
+    --resource-group $RG \
+    --locations <location>
 ```
 
 ## Use Network Watcher to show the topology
 
-Now, you can use Network Watcher to troubleshoot connectivity between two VMs in different subnets. Your colleague has reported a connectivity issue over HTTP/HTTPS between the two VMs. First, investigate the network topology.
+Now, you can use Network Watcher in the Azure portal to troubleshoot connectivity between two VMs in different subnets. Your colleague has reported a connectivity issue over HTTP/HTTPS between the two VMs. First, investigate the network topology.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. In the global search enter **Network Watcher** and select that service. The **Network Watcher** pane appears.
+1. In the global search enter **Network Watcher** and select that service. The **Network Watcher** Overview pane appears, listing the active network watcher.
 
-1. In the menu, under **Monitoring**, select **Topology**. The **Network Watcher | Topology** pane appears.
+1. In the Network Watcher menu, under **Monitoring**, select **Topology**. The **Network Watcher | Topology** pane appears.
 
-1. In the dropdown fields, select your **Subscription** and **Resource Group** for this exercise. The Network Watcher topology pane displays the network topology for the virtual network you created at the beginning of this exercise, **MyVNet1**.
+1. In the dropdown fields, select your **Subscription** and **Resource Group** for this exercise. The network topology for **MyVNet1** displays the frontend and backend VM interfaces. This is the virtual network you created at the beginning of this exercise.
 
-   :::image type="content" source="../media/3-network-topology.png" alt-text="Screenshot showing the exercise network topology.":::
+   :::image type="content" source="../media/3-network-topology.png" alt-text="Screenshot showing the exercise network topology." lightbox="../media/3-network-topology.png":::
 
 ## Use Connection Monitor to run tests from the backend to the frontend
 
 The topology appears to be correct. To get more information, let's set up some tests in Connection Monitor. Start by creating a test from the backend VM to the frontend VM.
 
-1. Under **Monitoring**, select **Connection monitor**. The **Network Watcher | Connection monitor** pane appears.
+1. In the Network Watcher menu, under **Monitoring**, select **Connection monitor**. The **Network Watcher | Connection monitor** Overview pane appears.
 
 1. From the command bar, select **Create**. The **Create Connection Monitor** page appears.
 
@@ -170,7 +177,7 @@ The topology appears to be correct. To get more information, let's set up some t
     | Setting | Value |
     | --- | --- |
     | Connection Monitor Name | Back-to-front-HTTP-test |
-    | Subscription | From the dropdown, select your subscription |
+    | Subscription | From the dropdown list, select your subscription |
     | Region | Select the Azure region you deployed your resources in |
     | Workspace configuration | Use workspace created by connection monitor (default) is checked |
 
@@ -178,19 +185,21 @@ The topology appears to be correct. To get more information, let's set up some t
 
 1. For Test group name, enter **Back-to-front-HTTP-test-group**.
 
-1. Select **Add sources**. The **Add Sources** pane appears. 
+1. In the **Sources** box, select **Add sources**. The **Add Sources** pane appears. 
  
-1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list. Note that it is associated with your resource group.
+1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list. Note that it is associated with your resource group, and you have an error warning that the Network Watch extension is not enabled for your VMs.
 
 1. At the bottom of the pane, expand **Selected sources (2 Azure endpoints)** and note that your *BackendVM* and *FrontendVM* Azure endpoints are listed.
 
-1. At the far right of each endpoint in the list, select the ellipsis, and then select **Enable Network Watcher**. It may take some time for each endpoint to deploy. Watch for a notification to appear in your global controls at the top right of the page header.
+1. At the far right of each endpoint in the list, select the ellipsis, and then select **Enable Network Watcher**. It may take some time for each endpoint to deploy. Watch for a Deployment succeeded notification. Optionally, select the Notifications icon in your global controls at the top right to read your recent notification events.
 
     :::image type="content" source="../media/3-enable-network-watcher.png" alt-text="Screenshot that shows enabling of Network Watcher.":::
 
 1. Select **BackendVM** from the expanded Azure endpoint list.
 
-1. Select **Add endpoints**. The **Add test group details** pane reappears with the BackendSubnet identified as your source. If not, rename it to be **BackendVM**.
+1. Select **Add endpoints**. The **Add test group details** pane reappears with the BackendSubnet identified as your source. Select this endpoint and rename it to **BackendVM**. 
+
+1. Select **Save**. The **Add test group details** reappears with your BackendVM identified a source Azure endpoint.
 
 1. In the **Test configurations** box, select **Add Test configuration**. The **Add Test configuration** pane appears.
 
@@ -214,11 +223,13 @@ The topology appears to be correct. To get more information, let's set up some t
 
 1. Select **FrontendVM** from the expanded Azure endpoint list.
 
-1. Select **Add endpoints**. The **Add test group details** reappears with your with the FrontendSubnet identified as your destination.
+1. Select **Add endpoints**. The **Add test group details** reappears with your with the FrontendSubnet identified as your destination.  
 
-1. At the bottom of the pane, select **Add Test Group**. The **Create Connection Monitor** pane reappears.
+1. At the bottom of the pane, select **Add Test Group**. The **Create Connection Monitor** pane appears.
 
-1. On the **Test groups** tab, notice that your test group is now listed.
+1. On the **Test groups** tab, notice that your test group is listed with source as backend and destination as frontend.
+
+1. Select **Review + create**.
 
 The results should show that, because the NSG is associated with the backend subnet, traffic flows without issues from the backend VM to the frontend VM.
 
@@ -226,9 +237,7 @@ The results should show that, because the NSG is associated with the backend sub
 
 Run the same test in the opposite direction. Let's set up another test in Connection Monitor. Start by creating a test from the frontend VM to the backend VM.
 
-1. From Network Watcher pane, in resource menu under **Monitoring**, select **Connection monitor**. The **Network Watcher | Connection monitor** pane appears.
-
-1. From the command bar, select **Create**. The **Create Connection Monitor** pane appears.
+1. On the **Create Connection Monitor** pane select **Create** twice.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -240,17 +249,13 @@ Run the same test in the opposite direction. Let's set up another test in Connec
 
 1. Select **Next : Test groups**. The **Add test group details** pane appears.
 
-1. In **Test group name**, enter 'Front-to-back-HTTP-test-group' and then select **Add sources**. The **Add Sources** pane appears. 
+1. In **Test group name**, enter 'Front-to-back-HTTP-test-group' and then, in the Sources box select **Add sources**. The **Add Sources** pane appears. 
 
 1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, select **MyVNet1** from the list.
 
-1. At the bottom of the pane, expand **Selected sources (2 Azure endpoints)**. The *BackendVM* and *FrontendVM* Azure endpoints appear.
+1. At the bottom of the pane, expand **Selected sources (2 Azure endpoints)**, and then select **FrontendVM** from the list.
 
-1. At the far right of each endpoint, select the ellipsis, and then select **Enable Network Watcher**. Wait for each endpoint to deploy.
-
-1. Select **FrontendVM** from the expanded Azure endpoint list.
-
-1. Select **Add endpoints**. The **Add test group details** pane reappears with the FrontendSubnet identified as your source.
+1. Select **Add endpoints**. The **Add test group details** pane reappears. add FrontendSubnet for the source endpoint name.
 
 1. In the **Test configurations** box, select **Add Test configuration**. The **Add Test configuration** pane appears.
 
@@ -278,7 +283,7 @@ Run the same test in the opposite direction. Let's set up another test in Connec
 
 1. At the bottom of the pane, select **Add Test Group**. The **Create Connection Monitor** pane reappears.
 
-1. On the **Test groups** tab, notice that your test group is now listed.
+1. On the **Test groups** tab, notice that your Front-to-back-HTTP-test-group is now listed.
 
 The results should show that, because the NSG is associated with the backend subnet, no traffic flows from the frontend VM to the backend VM.
 
@@ -286,7 +291,7 @@ The results should show that, because the NSG is associated with the backend sub
 
 Let's use the IP flow verify tool to get more information.
 
-1. On the **Connection monitor** pane, in the resource menu under **Network diagnostic tools**, select **IP flow verify**.
+1. Select **Network Watcher**, and in the resource menu under **Network diagnostic tools**, select **IP flow verify**.
 
 1. Configure the test by entering the following values for each setting, and then select **Check**.
 

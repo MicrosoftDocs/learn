@@ -1,6 +1,6 @@
 In this unit, we create the code running on each sensor device.
 
-One of the goals is to make the code as identical as possible for each device, so minimizing human involvement. The code will require one tweak as we prepare it for a second device, the path to the leaf certificate needs to be unique for each device. Unique in this case means changing a "1" to a "2" or "3". This change is so minor it could easily be automated in a production environment.
+One of the goals is to make the code as identical as possible for each device to minimize human involvement. The code will require one tweak as we prepare it for a second device, the path to the leaf certificate needs to be unique for each device. Unique in this case means changing a "1" to a "2" or "3". This change is so minor it could easily be automated in a production environment.
 
 The code is written in C#, and you can choose Visual Studio, or Visual Studio Code, as your development environment.
 
@@ -12,18 +12,18 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
 
 1. Open a terminal in Visual Studio Code, and create a folder called "CaveDevice1" (enter `mkdir CaveDevice1`). Navigate to the `CaveDevice1` folder.
 
-1. Enter the following command in the terminal: `dotnet new console`. This command creates a **Program.cs** file in your folder, along with a project file.
+1. Run the following command in the terminal: `dotnet new console`. This command creates a **Program.cs** file in your folder, along with a project file.
 
-1. Enter `dotnet restore` in the terminal. This command gives your app access to the required .NET packages.
+1. Run the following command in the terminal: `dotnet restore`. This command gives your app access to the required .NET packages.
 
 1. In the terminal, install the required libraries. Enter:
     - **dotnet add package Microsoft.Azure.Devices.Client**
     - **dotnet add package Microsoft.Azure.Devices.Provisioning.Client**
     - **dotnet add package Microsoft.Azure.Devices.Provisioning.Transport.Amqp**
 
-1. From the **File** menu, open up the **Program.cs** file, and delete the default contents. You'll have to navigate to the `CaveDevice1` folder.
+1. From the **File** menu, open up the **Program.cs** file, and delete the default contents. You'll have to go to the `CaveDevice1` folder.
 
-1. After you've entered the code below into the **Program.cs** file, you can run the app with the command `dotnet run`. This command will run the **Program.cs** file in the current folder, so ensure you are in the `CaveDevice1` folder.
+1. After you've entered the following code from the next section in the **Program.cs** file, you can run the app with the command `dotnet run`. This command will run the **Program.cs** file in the current folder, so ensure you are in the `CaveDevice1` folder.
 
 ::: zone-end
 ::: zone pivot="vstudio"
@@ -32,7 +32,7 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
 
 1. Give the project a friendly name, such as "CaveDevice1".
 
-1. Under **Tools**, then **NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Click **Browse**, and search for, and install, the following libraries:
+1. Under **Tools** > **NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Select **Browse**, and search for and install the following libraries:
     - **Microsoft.Azure.Devices.Client**
     - **Microsoft.Azure.Devices.Provisioning.Client**
     - **Microsoft.Azure.Devices.Provisioning.Transport.Amqp**
@@ -401,7 +401,9 @@ This section adds code to send telemetry from a simulated sensor device.
 ### Create an app for a second device
 
 1. Repeat all the steps in the **Create a project for a simulated device** section, except with a new project name: "CaveDevice2".
+
 1. Change the leaf name from `new-device.cert1.pfx` to `new-device.cert2.pfx`.
+
 1. Set the app running.
 
     [![Console output showing the second device running correctly.](../media/iot-hub-provisioning-device2.png)](../media/iot-hub-provisioning-device2.png#lightbox)
@@ -409,9 +411,11 @@ This section adds code to send telemetry from a simulated sensor device.
 ### Create an app for a third device
 
 1. Repeat all the steps in the **Create a project for a simulated device** section, except with a new project name: "CaveDevice3".
+
 1. Change the leaf path from `new-device.cert1.pfx` to `new-device.cert3.pfx`.
+
 1. Set the app running.
 
     [![Console output showing the third device running correctly.](../media/iot-hub-provisioning-device3.png)](../media/iot-hub-provisioning-device3.png#lightbox)
 
-Great, a bit of repetitive work, but we now have our crowd of devices. The next, and final, step is to test our DPS resource and IoT Hub handle the assignments and telemetry correctly.
+Great! It's a bit of repetitive work, but we now have our crowd of devices. The next, and final, step is to test our DPS resource and IoT Hub handle the assignments and telemetry correctly.

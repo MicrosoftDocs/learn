@@ -9,7 +9,7 @@ This tutorial's sandbox gives you free, temporary access to Azure, and the Azure
 To create a function app in Azure, run the following commands in Azure Cloud Shell.
 
 ```azurecli
-RESOURCEGROUP=<rgn>[sandbox resource group]</rgn>
+RESOURCEGROUP="<rgn>[sandbox resource group]</rgn>"
 STORAGEACCT=learnstorage$(openssl rand -hex 5)
 FUNCTIONAPP=learnfunctions$(openssl rand -hex 5)
 
@@ -25,7 +25,7 @@ az functionapp create \
   --storage-account "$STORAGEACCT" \
   --runtime node \
   --consumption-plan-location centralus \
-  --functions-version 2
+  --functions-version 3
 ```
 
 Here's what these commands do:

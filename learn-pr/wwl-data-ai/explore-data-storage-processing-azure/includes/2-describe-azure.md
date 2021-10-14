@@ -19,7 +19,7 @@ Azure Synapse Analytics uses a clustered architecture. Each cluster has a *contr
 
 The next unit describes the components of Azure Synapse Analytics in more detail.
 
-For further information, read [What is Azure Synapse Analytics?](https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is)
+For further information, read [What is Azure Synapse Analytics?](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is)
 
 ## What is Azure Databricks?
 
@@ -39,7 +39,7 @@ You write Databricks applications using a *Notebook*. A notebook contains a seri
 > [!div class="mx-imgBorder"]
 > ![Image showing the elements of Azure Databricks](../media/2-databricks.png)
 
-For more information, read [What is Azure Databricks?](https://docs.microsoft.com/azure/azure-databricks/what-is-azure-databricks)
+For more information, read [What is Azure Databricks?](/azure/azure-databricks/what-is-azure-databricks)
 
 ### What is Azure HDInsight? 
 
@@ -58,7 +58,7 @@ Apache Storm is a scalable, fault tolerant platform for running real-time data p
 > [!div class="mx-imgBorder"]
 > ![Image showing the elements of HDInsight](../media/2-hdinsight.png)
 
-For more information, read [What is Azure HDInsight?](https://docs.microsoft.com/azure/hdinsight/hdinsight-overview).
+For more information, read [What is Azure HDInsight?](/azure/hdinsight/hdinsight-overview).
 
 ## What is Azure Data Factory?
 

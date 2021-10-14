@@ -3,7 +3,7 @@ uid: learn.wwl.build-operate-machine-learning-solutions-azure-databricks
 metadata:
   title: Build and operate machine learning solutions with Azure Databricks
   description: Build and operate machine learning solutions with Azure Databricks
-  ms.date: 08/24/2021
+  ms.date: 09/17/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ prerequisites: |
   Consider completing the [Create machine learning models](/learn/paths/create-machine-learn-models/) learning path before starting this one.
 summary: |
   Azure Databricks is a cloud-scale platform for data analytics and machine learning. In this learning path, you'll learn how to use Azure Databricks to explore, prepare, and model data; and integrate with Azure Machine Learning.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/azure-data-bricks-operate-machine-learning.svg
 levels:
 - intermediate
 roles:

@@ -1,6 +1,6 @@
-Creating a strong resume is your principal task as you're seeking an internship. A well-prepared resume can land you a job or at least spark enough interest for a company recruiter to reach out to you. 
+Creating a strong resume is your principal task as you're seeking an internship. A well-prepared resume can land you a job or at least spark enough interest for a company recruiter to reach out to you.
 
-Before you jump right into creating your resume, though, an interesting question to ask yourself might be: What experiences do I put in it, and how do I describe them? 
+Before you jump right into creating your resume, though, an interesting question to ask yourself might be: What experiences do I put in it, and how do I describe them?
 
 In this exercise, you'll learn how to recall experiences and describe them in various interesting ways.
 
@@ -36,7 +36,7 @@ Flesh out each experience, describing it briefly and, most importantly, describi
 ## Step 3: Arrange them by impact
 
 1. Consider your impact on each of these experiences.
-1. Rank or grade your experiences according to their level of impact. 
+1. Rank or grade your experiences according to their level of impact.
 
    Your experiences are likely to vary quite a bit. They might be a mix of IT Support, software development, and leadership. It might make sense to rank these experiences according to the job or internship you're seeking. A project that produced, say, an app that was adopted for use by a company is likely to have a greater impact than a simpler project you undertook at school.
 
@@ -52,11 +52,11 @@ Flesh out each experience, describing it briefly and, most importantly, describi
 
 ## Create the resume
 
-Now that you've practiced describing your experiences and prioritized them according to the roles you might be seeking, what's next? 
+Now that you've practiced describing your experiences and prioritized them according to the roles you might be seeking, what's next?
 
-It's time to write it all down by using Microsoft Word or another favorite word-processing program. We recommended that you find a resume template, but all you really need is a program that's capable of producing a layout, formatting type, and adding section headings. 
+It's time to write it all down by using Microsoft Word or another favorite word-processing program. We recommended that you find a resume template, but all you really need is a program that's capable of producing a layout, formatting type, and adding section headings.
 
-1. Select and download a resume template from a webpage of your choice. For example, go to the Microsoft Office [Premium templates] (https://templates.office.com/en-gb/premium-templates/resumes-and-cover-letters) page.
+1. Select and download a resume template from a webpage of your choice. For example, go to the Microsoft Office [Premium templates](https://templates.office.com/en-gb/premium-templates/resumes-and-cover-letters) page.
 1. Transcribe the handwritten information from the sticky notes to the template.
 
 Congratulations, you've organized your experiences, applied a resume template, and begun crafting an eye-catching resume.

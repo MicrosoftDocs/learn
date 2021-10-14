@@ -1,12 +1,12 @@
-App Center can build and test your apps. But regardless of how you build your app, you can use App Center Distribute to deliver a release to a target audience. If you have pre-release testers, you can distribute the latest alpha or beta release to them in order to gather their feedback. Maybe you have a collection of external users who get pre-release versions of your app for feedback. You can also distribute your release builds to a public app store.
+App Center can build and test your apps, but regardless of how you build or test your app, you can use App Center Distribute to deliver a release to a target audience. If you have pre-release testers, you can distribute the latest alpha or beta release to them in order to gather their feedback. Maybe you have a collection of external users who get pre-release versions of your app for feedback. You can also distribute your release builds to a public app store.
 
 ## What is a distribution group?
 
-A _distribution group_ is a collection of users that you can manage together. These groups allow you to configure access to releases for everyone in a distribution group at once. Distribution groups can be private or public, with private being the default.
+A _distribution group_ is a collection of users that you can manage together. Distribution groups allow you to configure access to releases for everyone in a distribution group at once. Distribution groups can be private or public, with private being the default.
 
-A private distribution group means that only testers who are invited via email are able to access the releases that are available to the group. Once a tester is part of a private group, they will receive new release notification emails. Members of private groups must sign in to their App Center account to access releases.
+A private distribution group means that only testers who are invited via email are able to access the releases that are available to that group. Once a tester is part of a private group, that tester will receive new release notification emails. Members of private groups must sign in to their App Center account to access releases.
 
-A public distribution group allows for unauthenticated installs from public links. After a group is named, it can be made public. As with private groups, members of a public group will receive notification emails about new releases. Additionally, a public download link that will not require signing in to download the release.
+A public distribution group allows for unauthenticated installs from public links. After a group is named, it can be made public. As with private groups, members of a public group will receive notification emails about new releases. Additionally, a public download link does not require signing in to download the release.
 
 You might have a distribution group for several types of users or stages of development:
 
@@ -19,7 +19,7 @@ You might have a distribution group for several types of users or stages of deve
 
 When you use App Center for an organization, you can also add shared distribution groups. A _shared distribution group_ is a distribution group that is used across multiple apps within a single organization, which simplifies permissions and release distribution across several related apps. Shared distribution groups can be either private or public.
 
-For example, you may have an app that is available on iOS and Android. With a shared distribution group, you would only need a single distribution group for each type of tester. You would not need to create a group for iOS and a duplicate group for Android. With a single group, you wouldn't need to keep multiple groups in sync as users are added or removed.
+For example, you may have an app that is available on iOS and Android. With a shared distribution group, you only need a single distribution group for each type of tester. You wouldn't need to create a group for iOS and a duplicate group for Android. With a single shard distribution group, you wouldn't need to keep multiple groups in sync as users are added or removed.
 
 ## Add users to distribution groups
 
@@ -35,16 +35,16 @@ With App Center distribution groups, you may want to have these device IDs manag
 
 ## Release a build to a distribution group
 
-Once you have a build, whether built by App Center or in your own build system, you'll want to release it to a group for testing. Releases can be done using a few approaches.
+Once you have a build, whether built by App Center or in your own build system, you'll want to release it to a group for testing. Releases can be done using several possible approaches.
 
-Creating can be done from the App Center build configuration by providing the appropriate code-signing certificates and configuration values to App Center. With code signing configured, you can enable distribution to one or more distribution groups or app stores.
+Creating a release can be accomplished from the App Center build configuration by providing the appropriate code-signing certificates and configuration values. With code signing configured, you can enable distribution to one or more distribution groups or app stores.
 
-Additionally, if you create your signed builds from your own build system, you can upload them to App Center yourself. Uploading builds can be done from the **New release** button found within the **Distribute** > **Releases** section in an App Center app. You can also upload releases using the App Center command-line interface or App Center API.
+Additionally, if you create your signed builds from your own build system, you can upload them to App Center yourself. Uploading builds can be done from the **New release** button in the **Distribute** > **Releases** section of an App Center app. You can also upload releases using either App Center command-line interface or App Center API.
 
-When your distribution group users start downloading the release, App Center will count how many installs and unique installs are completed. This data is available from the **Releases** data for each release.
+When your distribution group users start downloading a release, App Center will count how many installs and unique installs are completed. This data is available from the **Releases** data for each release.
 
 ## Release a build to an app store
 
 The new releases you upload can also be distributed to app stores or company distribution portals. For iOS and Android apps, you can distribute your app to the Apple App Store, the Google Play Store, and via company distribution through Microsoft Intune.
 
-For each of these distribution points, you will configure App Center with any required signing certificates and authentication or service account details.
+For each of these distribution points, you configure App Center with any required signing certificates and authentication or service account details.

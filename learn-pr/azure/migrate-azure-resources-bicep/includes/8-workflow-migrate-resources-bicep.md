@@ -4,16 +4,16 @@ In this module, you've learned about the five phases of the recommended workflow
 
 ## Phase 1: Convert
 
-In the _convert_ phase of migrating your resources to Bicep, the goal is to capture an initial representation of your Azure resources. The Bicep file you create in this phase isn't complete, and it's not ready to be used. However, the file gives you a starting point for your migration.
+In the convert phase of migrating your resources to Bicep, the goal is to capture an initial representation of your Azure resources. The Bicep file you create in this phase isn't complete, and it's not ready to be used. However, the file gives you a starting point for your migration.
 
 The convert phase consists of two steps:
 
 1. Capture a JSON representation of your Azure resources.
-1. Convert the JSON representation to Bicep using the _decompile_ command.
+1. Convert the JSON representation to Bicep using the `decompile` command.
 
 ## Phase 2: Migrate
 
-In the _migrate_ phase of migrating your resources to Bicep, the goal is to create the first draft of your deployable Bicep file, and to ensure it defines all of the Azure resources that are in scope for the migration.
+In the migrate phase of migrating your resources to Bicep, the goal is to create the first draft of your deployable Bicep file, and to ensure it defines all of the Azure resources that are in scope for the migration.
 
 The migrate phase consists of three steps:
 
@@ -23,7 +23,7 @@ The migrate phase consists of three steps:
 
 ## Phase 3: Refactor
 
-The main focus of this phase is to improve the quality of your Bicep code. These improvements can include changes, such as adding code comments, that bring the template in line with your template standards.
+The main focus of the refactor phase is to improve the quality of your Bicep code. These improvements can include changes, such as adding code comments, that bring the template in line with your template standards.
 
 The refactor phase consists of eight steps:
 
@@ -38,16 +38,16 @@ The refactor phase consists of eight steps:
 
 ## Phase 4: Test
 
-In the _test_ phase of migrating your resources to Bicep, the goal is to verify the integrity of your migrated templates and to perform a test deployment.
+In the test phase of migrating your resources to Bicep, the goal is to verify the integrity of your migrated templates and to do a test deployment.
 
 The test phase consists of two steps:
 
 1. Run the ARM template deployment what-if operation.
-1. Perform a test deployment.
+1. Do a test deployment.
 
 ## Phase 5: Deploy
 
-In the _deploy_ phase of migrating your resources to Bicep, the goal is to deploy your final Bicep file to production. Prior to the production deployment, there a couple of things to consider.
+In the deploy phase of migrating your resources to Bicep, the goal is to deploy your final Bicep file to production. Prior to the production deployment, there a couple of things to consider.
 
 The deploy phase consists of four steps:
 

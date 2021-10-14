@@ -1,4 +1,4 @@
-Microsoft Endpoint Manager provides native integration with cloud-powered security controls and risk-based conditional access for apps and data, which provides intelligent and unified endpoint security.
+Microsoft Endpoint Manager provides native integration with cloud-powered security controls and risk-based Conditional Access for apps and data, which provides intelligent and unified endpoint security.
 
 ## Intelligent security
 

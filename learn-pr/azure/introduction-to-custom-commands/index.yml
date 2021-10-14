@@ -16,7 +16,7 @@ abstract: |
   - Describe what Custom Commands is
   - Define scenarios where Custom Commands can be applied
 prerequisites: A basic familiarity with Azure
-iconUrl:  /learn/achievements/generic-badge.svg
+iconUrl:  /learn/achievements/intro-to-custom-commands.svg
 levels:
 - beginner
 roles:

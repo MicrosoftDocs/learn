@@ -3,7 +3,7 @@ uid: learn.machinelearning.introduction-to-classical-machine-learning.exercise-i
 title: Exercise - Implement gradient descent
 metadata:
   title: Exercise - Implement gradient descent
-  description: Exercise unit about implementing gradient descent in machine learning
+  description: Exercise unit about implementing gradient descent in machine learning.
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb

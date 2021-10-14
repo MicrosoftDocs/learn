@@ -46,14 +46,14 @@ To find out which Conditional Access policy or policies applied and why, do the 
 
       1. Correlation ID when you have a specific event to investigate.
 
-      1. Conditional access to see policy failure and success. Scope your filter to show only failures to limit results.
+      1. Conditional Access to see policy failure and success. Scope your filter to show only failures to limit results.
 
       1. Username to see information related to specific users.
 
       1. Date scoped to the time frame in question.
 
 > [!div class="mx-imgBorder"]
-> ![Selecting the Conditional access filter in the sign-ins log](../media/image-3.png)
+> ![Selecting the Conditional Access filter in the sign-ins log](../media/image-3.png)
 
 4. Once the sign-in event that corresponds to the user's sign-in failure has been found select the **Conditional Access** tab, the tab will show the specific policy or policies that resulted in the sign-in interruption.
 

@@ -70,7 +70,7 @@ We'll start this time with the back-end service app.
 ::: zone-end
 ::: zone pivot="csharp"
 
-1. Open the **Program.cs** file, for the back-end app.
+1. Open the *Program.cs* file, for the back-end app.
 
 1. Add the following code, perhaps to the end of the class.
 
@@ -116,7 +116,7 @@ We'll start this time with the back-end service app.
             SetTwinProperties().Wait();
     ```
 
-1. Save the **Program.cs** file.
+1. Save the *Program.cs* file.
 
 ::: zone-end
 
@@ -191,48 +191,48 @@ Now we need to add code to the device app.
 ::: zone-end
 ::: zone pivot="csharp"
 
-1. Open the **Program.cs** file for the device app.
+1. Open the *Program.cs* file for the device app.
 
 1. Add the following task to the class.
 
     ```cs
-        private static async Task OnDesiredPropertyChanged(TwinCollection desiredProperties, object userContext)
+    private static async Task OnDesiredPropertyChanged(TwinCollection desiredProperties, object userContext)
+    {
+        try
         {
-            try
-            {
-                desiredHumidity = desiredProperties["humidity"];
-                desiredTemperature = desiredProperties["temperature"];
-                greenMessage("Setting desired humidity to " + desiredProperties["humidity"]);
-                greenMessage("Setting desired temperature to " + desiredProperties["temperature"]);
+            desiredHumidity = desiredProperties["humidity"];
+            desiredTemperature = desiredProperties["temperature"];
+            greenMessage("Setting desired humidity to " + desiredProperties["humidity"]);
+            greenMessage("Setting desired temperature to " + desiredProperties["temperature"]);
 
-                // Report the properties back to the IoT Hub.
-                var reportedProperties = new TwinCollection();
-                reportedProperties["fanstate"] = fanState.ToString();
-                reportedProperties["humidity"] = desiredHumidity;
-                reportedProperties["temperature"] = desiredTemperature;
-                await s_deviceClient.UpdateReportedPropertiesAsync(reportedProperties);
+            // Report the properties back to the IoT Hub.
+            var reportedProperties = new TwinCollection();
+            reportedProperties["fanstate"] = fanState.ToString();
+            reportedProperties["humidity"] = desiredHumidity;
+            reportedProperties["temperature"] = desiredTemperature;
+            await s_deviceClient.UpdateReportedPropertiesAsync(reportedProperties);
 
-                greenMessage("\nTwin state reported: " + reportedProperties.ToJson());
-            }
-            catch
-            {
-                redMessage("Failed to update device twin");
-            }
+            greenMessage("\nTwin state reported: " + reportedProperties.ToJson());
         }
+        catch
+        {
+            redMessage("Failed to update device twin");
+        }
+    }
     ```
 
 1. Update the `Main` method. Add the following lines after the statements creating a handler for the direct method.
 
     ```cs
-            // Get the device twin to report the initial desired properties.
-            Twin deviceTwin = s_deviceClient.GetTwinAsync().GetAwaiter().GetResult();
-            greenMessage("Initial twin desired properties: " + deviceTwin.Properties.Desired.ToJson());
+    // Get the device twin to report the initial desired properties.
+    Twin deviceTwin = s_deviceClient.GetTwinAsync().GetAwaiter().GetResult();
+    greenMessage("Initial twin desired properties: " + deviceTwin.Properties.Desired.ToJson());
 
-            // Set the device twin update callback.
-            s_deviceClient.SetDesiredPropertyUpdateCallbackAsync(OnDesiredPropertyChanged, null).Wait();
+    // Set the device twin update callback.
+    s_deviceClient.SetDesiredPropertyUpdateCallbackAsync(OnDesiredPropertyChanged, null).Wait();
     ```
 
-1. Save the **Program.cs** file.
+1. Save the *Program.cs* file.
 
 ::: zone-end
 
