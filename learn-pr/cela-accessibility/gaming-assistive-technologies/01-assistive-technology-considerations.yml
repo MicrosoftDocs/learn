@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.gaming-assistive-technologies.assistive-technology-considerations
+title: Assistive technology considerations for accessible design
+metadata:
+  title: Assistive technology considerations for accessible design
+  description: This content is part of the Gaming Assistive Technologies module.
+  ms.date: 08/10/2021
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 18
+content: |
+  [!include[](includes/01-assistive-technology-considerations.md)]

@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.gaming-assistive-technologies.gaming-hardware
+title: Gaming hardware assistive technology
+metadata:
+  title: Gaming hardware assistive technology
+  description: This content is part of the Gaming Assistive Technologies module.
+  ms.date: 08/10/2021
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 18
+content: |
+  [!include[](includes/02-gaming-hardware.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following statements about accessibility feedback is true?"
+    choices:
+    - content: "TBD 1."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "TBD 2."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "TBD 3."
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "How can your team gather feedback from the disability community before prototypes or demos are ready for hands on testing?"
+    choices:
+    - content: "TBD 1."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "TBD 2."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "TBD 3."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "TBD 4."
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "What is the purpose of gathering disability community feedback after product development is locked, but before the product publicly launches?"
+    choices:
+    - content: "TBD 1."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "TBD 2."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "TBD 3."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "TBD 4."
+      isCorrect: false
+      explanation: "Incorrect."

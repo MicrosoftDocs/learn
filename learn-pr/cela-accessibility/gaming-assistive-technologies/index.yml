@@ -1,0 +1,40 @@
+### YamlMime:Module
+#LP name: Module 3: Gaming assistive technologies
+uid: learn.gaming-assistive-technologies
+metadata:
+  title: Gaming assistive technologies
+  description: Learn about the types of assistive hardware and software technologies that players with disabilities use to game, and the importance of supporting these assistive technologies when creating accessible gaming products and experiences for all audiences.
+  ms.date: 08/10/2021
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+  showCreativeCommonsFooter: true
+title: Gaming assistive technologies
+summary: Learn about the types of assistive hardware and software technologies that players with disabilities use to game, and the importance of supporting these assistive technologies when creating accessible gaming products and experiences for all audiences.
+abstract: |
+  In this module you will:
+  - Identify 6 common hardware-based assistive technologies used among players with disabilities.
+  - Identify 6 common software-based features and tools used among gamers with disabilities.
+  - Apply insights about common hardware and software assistive technologies to game accessibility goal scoping scenarios.
+prerequisites: |
+ - You should have some basic familiarity with playing video games, navigating game platforms (Xbox, PlayStation, Nintendo Switch, Windows, etc.), and using standard gaming hardware controllers and inputs.
+ - You should also have a basic understanding of foundational disability and accessibility principles terms and concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- student
+products:
+- xbox
+units:
+- learn.gaming-assistive-technologies.introduction
+- learn.gaming-assistive-technologies.assistive-technology-considerations
+- learn.gaming-assistive-technologies.gaming-hardware
+- learn.gaming-assistive-technologies.knowledge-check-1
+- learn.gaming-assistive-technologies.gaming-software
+- learn.gaming-assistive-technologies.knowledge-check-2
+- learn.gaming-assistive-technologies.summary
+badge:
+  uid: learn.gaming-assistive-technologies.badge
