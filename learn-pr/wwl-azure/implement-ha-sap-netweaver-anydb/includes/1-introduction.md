@@ -4,7 +4,7 @@ You are responsible for your company's migration of SAP workloads that implement
 
 ## Learning objectives
 
-You will: 
+You will:
 
  -  Examine single-SID 3-tier SAP NetWeaver high availability AnyDB deployment.
  -  Examine multi-SID 3-tier SAP NetWeaver high availability AnyDB deployment.

@@ -3,7 +3,7 @@ uid: learn.wwl.implement-ha-sap-netweaver-anydb
 metadata:
   title: Implement high availability in SAP NetWeaver with AnyDB on Azure virtual machines
   description: "SAP professionals need to evaluate deploying SAP solutions on Azure. This module explores the preparation for SAP NetWeaver high availability AnyDB deployment on Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 10/13/2021
+  ms.date: 10/14/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
