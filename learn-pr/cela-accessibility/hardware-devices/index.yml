@@ -2,7 +2,7 @@
 #LP name: Module 5: Accessibility Best Practices for Gaming Hardware
 uid: learn.hardware-devices
 metadata:
-  title: Accessibility Best Practices for Gaming Hardware
+  title: Accessibility best practices for gaming hardware
   description: This module introduces accessibility best practice considerations for developing gaming hardware. For example, consoles, headsets, controllers, and other types of input devices. Accessible packaging components for these products are also presented.
   ms.date: 08/10/2021
   author: erzelman
@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-gaming-accessibility
   showCreativeCommonsFooter: true
-title: Accessibility Best Practices for Gaming Hardware
+title: Accessibility best practices for gaming hardware
 summary: This module introduces accessibility best practice considerations for developing gaming hardware. For example, consoles, headsets, controllers, and other types of input devices. Accessible packaging components for these products are also presented.
 abstract: |
   In this module, you'll learn about:

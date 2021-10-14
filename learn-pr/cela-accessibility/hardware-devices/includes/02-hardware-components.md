@@ -54,7 +54,7 @@ When designing and creating new devices, it's recommended to avoid activation me
 
 The image below shows the ear cup dials on an Xbox gaming headset. Players twist the dials to adjust the volume and chat mixer values. Players unable to perform the necessary twisting motions can instead use the Xbox Accessories app. This app provides a configuration settings menu for players to use to adjust the settings.
 
-### Component Location
+### Component location
 
 The location of the controls on a device is also important to consider when designing and developing accessible hardware. Consider a headset with the volume control on one side of the device and the noise cancellation control on the other side of the device. Players who are not able to perform the action required to reach or use the controls while the headset is on their head, such as those with reduced mobility on one side of their body, will not be able to use the device efficiently.
 
