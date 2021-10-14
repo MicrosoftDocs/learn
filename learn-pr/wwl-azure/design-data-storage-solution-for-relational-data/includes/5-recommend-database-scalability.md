@@ -133,7 +133,7 @@ Reasons for Sharding include:
 
 The image above shows the use a shard map manager for scaling out databases on Azure SQL Database. The shard map manager is a special database that maintains global mapping information about all shards (databases) in a shard set. The metadata allows an application to connect to the correct database based upon the value of the sharding key. In addition, every shard in the set contains maps that track the local shard data (known as shardlets).
 
-Azure SQL offers the [Azure Elastic Database tools](%20https://docs.microsoft.com/azure/azure-sql/database/elastic-scale-introduction). This provides a number of tools to help you create, maintain, and query sharded SQL databases in Azure from your application logic.
+Azure SQL offers the [Azure Elastic Database tools](/azure/azure-sql/database/elastic-scale-introduction). This provides a number of tools to help you create, maintain, and query sharded SQL databases in Azure from your application logic.
 
 Always design for scale-in. It is important that your application easily handle scaling back down as the load drops.
 

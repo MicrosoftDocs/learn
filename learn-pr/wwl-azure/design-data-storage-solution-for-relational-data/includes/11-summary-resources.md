@@ -38,7 +38,6 @@ In this module, you’ve learned how to design a data storage solution for datab
 
 - [Frequently asked questions about the Table API in Azure Cosmos DB | Microsoft Docs](/azure/cosmos-db/table/table-api-faq) 
 
-- [Azure Table Storage support in Azure Cosmos DB | Microsoft Docs](https://docs.microsoft.com/azure/cosmos-db/table/table-support?toc=https:%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fstorage%2Ftables%2Ftoc.json&bc=https:%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fbread%2Ftoc.json) 
 
  
 
