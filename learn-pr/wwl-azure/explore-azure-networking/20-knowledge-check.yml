@@ -39,18 +39,18 @@ quiz:
     - content: "1000 instances"
       isCorrect: true
       explanation: "Correct. Standard load balancer supports up to 1000 instances. Basic load balancer supports up to 300 instances."
-  - content: "Which Azure service enables you to define, manage, and monitor the global routing for your web traffic?"
+  - content: "Which Azure service allows users to define, manage, and monitor the global routing for their web traffic?"
     choices:
     - content: "Azure Front Door"
       isCorrect: true
       explanation: "Correct. Azure Front Door provides a range of traffic-routing methods and backend health monitoring options to suit different application needs and automatic failover models."
     - content: "Azure Traffic Manager"
       isCorrect: false
-      explanation: "Incorrect. Azure Traffic Manager is not the service which enables you to define, manage, and monitor the global routing for your web traffic."
+      explanation: "Incorrect. Azure Traffic Manager is not the service which enables users to define, manage, and monitor the global routing for their web traffic."
     - content: "Azure Firewall"
       isCorrect: false
-      explanation: "Incorrect. Azure Firewall is not the service which enables you to define, manage, and monitor the global routing for your web traffic."
-  - content: "Which of the following methods allows you to establish direct connectivity to an Azure virtual network from a physical computer or virtual machine not hosted in Azure?"
+      explanation: "Incorrect. Azure Firewall is not the service which enables users to define, manage, and monitor the global routing for their web traffic."
+  - content: "Which of the following methods allows users to establish direct connectivity to an Azure virtual network from a physical computer or virtual machine not hosted in Azure?"
     choices:
     - content: "VNet peering"
       isCorrect: false
