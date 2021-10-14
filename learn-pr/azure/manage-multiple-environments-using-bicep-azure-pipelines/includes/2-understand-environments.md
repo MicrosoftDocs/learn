@@ -22,7 +22,7 @@ Common environments include:
 
 - **Test**: A test environment is designed to run manual or automated tests against your changes.
 
-  Test environments can be used in a continuous integration process. After a you deploy a change to a test environment, automated tests can be run against it. If all of the automated tests pass, then the change is safe to merge into the main branch of the project. Automated tests usually check for the core system functionality, along with things like policy violations in the newly deployed resources.
+  Test environments can be used in a continuous integration process. After you deploy a change to a test environment, automated tests can be run against it. If all of the automated tests pass, then the change is safe to merge into the main branch of the project. Automated tests usually check for the core system functionality, along with things like policy violations in the newly deployed resources.
 
   You might also create dedicated test environments for specific types of testing, like performance and security testing.
 

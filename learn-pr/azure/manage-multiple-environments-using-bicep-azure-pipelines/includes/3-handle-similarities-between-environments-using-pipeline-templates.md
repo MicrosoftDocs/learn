@@ -16,7 +16,7 @@ After talking to your colleagues on the website team, you decide on the followin
    1. Deploying the Bicep code.
    1. Running some tests against your test environment.
 
-1. If the previous steps succeeds, your pipeline continues to deploy to your production environment:
+1. If the previous steps succeed, your pipeline continues to deploy to your production environment:
 
    1. The pipeline runs a preview stage, which runs the what-if operation on your production environment to list the changes that will be made to your production Azure resources. The preview stage also validates your deployment, so you don't need to run a separate validation stage for your production environment.
    1. The pipeline pauses for manual validation. 
@@ -76,7 +76,7 @@ In your pipeline template, you use a special syntax to refer to the value of the
 
 :::code language="yaml" source="code/3-script-parameters.yml" range="8-10" highlight="3" :::
 
-You pass the value for a parameters to a pipeline template by using the `parameters` keyword, like in this example:
+You pass the value for parameters to a pipeline template by using the `parameters` keyword, like in this example:
 
 :::code language="yaml" source="code/3-parameters.yml" highlight="3-4, 6-7" :::
 
