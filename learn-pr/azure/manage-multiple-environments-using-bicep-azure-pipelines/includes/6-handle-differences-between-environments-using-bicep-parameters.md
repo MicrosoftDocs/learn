@@ -1,6 +1,6 @@
-You've already learned about Bicep parameters, which help you to specify values that can change between deployments of your Bicep files. Parameters are commonly used to support the differences between your environments. For example, in your non-production environments you often want to deploy inexpensive SKUs of your Azure resources, while in production you want to deploy SKUs that have better performance. And you might want to use different names for different environments.
+You've already learned about Bicep parameters, which help you to specify values that can change between deployments of your Bicep files. Parameters are commonly used to support the differences between your environments. For example, in your non-production environments you often want to deploy inexpensive SKUs of your Azure resources, while in production you want to deploy SKUs that have better performance. And you might want to use different names for resources in each environments.
 
-When you deploy your Bicep file, you can indicate the values of each parameter. There are several options for how you can specify the values for each parameter from your pipeline, and how you specify separate values for each environment. In this unit, you'll learn about the approaches you can consider for specifying Bicep parameter values in a deployment pipeline.
+When you deploy your Bicep file, you provide values for each parameter. There are several options for how you can specify the values for each parameter from your pipeline, and how you specify separate values for each environment. In this unit, you'll learn about the approaches you can consider for specifying Bicep parameter values in a deployment pipeline.
 
 ## Parameter files
 
@@ -50,7 +50,7 @@ Variables defined using the web interface can be marked as secret, which tells A
 
 You can also define *variable groups*, which are sets of variables. Like variables, you define these by using the Azure DevOps web interface. You can also use variable groups to safely store secrets. Variable groups can even be reused in multiple pipelines in the same Azure DevOps project.
 
-Unlike normal variables, you need to explicitly import a variable group into a pipeline by using the `group` keyword in a `variables` section, like this:
+Unlike other variables, you need to explicitly import a variable group into a pipeline by using the `group` keyword in a `variables` section, like this:
 
 ```yaml
 variables: 
@@ -94,7 +94,7 @@ Consider making parameters optional where you can, and use default values that a
 
 Also, keep in mind that parameters are often used in Bicep when resources need to connect to other resources. For example, if you have a website that needs to connect to a storage account, then you'll need to provide the storage account name and access key. Keys are secure values. However, there are other possible approaches to consider when deploying this combination of resources, such as:
 
-- Use the website's managed identity to access the storage account. A managed identity is automatically handled by Azure, and you don't need to maintain any credentials. This simplifies the connection settings, and means you don't have to handle secrets at all, so it's the most secure option.
+- Use the website's managed identity to access the storage account. A managed identity is automatically created by Azure, and you don't need to maintain any credentials. This simplifies the connection settings, and means you don't have to handle secrets at all, so it's the most secure option.
 - Deploy the storage account and website together in the same Bicep template. Use Bicep modules to keep the website and storage resources together. Then, you can automatically look up the values for the storage account name and the key within the Bicep code, instead of passing in parameters.
 - Add the storage account's details to a key vault as a secret. The website code then loads the access key directly from the vault. This avoids the need to manage the key in the pipeline at all.
 
