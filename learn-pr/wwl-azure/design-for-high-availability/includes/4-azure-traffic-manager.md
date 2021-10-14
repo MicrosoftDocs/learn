@@ -39,4 +39,4 @@ In the following graphic, both the primary region (active) and the secondary reg
 
  
 
-:::image type="content" source="../media/automatic-failover-using-traffic-manager.png" alt-text="Traffic Manager has active and passive replication sites.":::
+:::image type="content" source="../media/automatic-fail-over-using-traffic-manager.png" alt-text="Traffic Manager has active and passive replication sites.":::

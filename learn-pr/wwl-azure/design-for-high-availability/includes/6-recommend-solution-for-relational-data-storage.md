@@ -33,7 +33,7 @@ If any type of failure occurs and the service fabric determines a failover needs
 
 The Hyperscale service tier is available only in Azure SQL Database. This service tier has a unique architecture because it uses a tiered layer of caches and page servers to expand the ability to quickly access database pages without having to access the data file directly.
 
-:::image type="content" source="../media/sql-hyperscale-service-tier.png" alt-text="Diagram of SQL hyperscale service tier.":::
+:::image type="content" source="../media/sql-hyper-scale-service-tier.png" alt-text="Diagram of SQL hyperscale service tier.":::
 
 
 Because this architecture uses paired page servers, you can scale horizontally to put all the data in caching layers. This new architecture also allows Hyperscale to support databases as large as 100 TB. Because it uses snapshots, nearly instantaneous database backups can occur regardless of size. Database restores take minutes rather than hours or days. You can also scale up or down in constant time to accommodate your workloads.
@@ -126,7 +126,7 @@ Because active geo-replication isn’t supported by Azure SQL Managed Instance, 
 
 You must configure the auto-failover group on the primary server. The configuration connects the primary to the secondary server in a different Azure region. The groups can include all or some databases in these servers. The following graphic depicts a typical configuration of a geo-redundant cloud application using multiple databases and auto-failover group.
 
-:::image type="content" source="../media/automatic-failover-group.png" alt-text="Traffic Manager uses automatic failover groups.":::
+:::image type="content" source="../media/automatic-fail-over-group.png" alt-text="Traffic Manager uses automatic failover groups.":::
 
 
 

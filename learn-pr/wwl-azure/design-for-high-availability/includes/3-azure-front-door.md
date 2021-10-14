@@ -6,7 +6,7 @@
 
 In the following graphic, users are connecting to an app hosted in the custom domain Contoso.com. Azure Front Door is implemented at the edge location. Initially, the app is hosted in the primary region (marked active in the graphic). Front Door routes incoming requests to that region. However, if the app running in that region becomes unavailable, Front Door fails over to the secondary region (shown as standby). Azure Front Door refers to this strategy as priority-based traffic-routing.
 
-:::image type="content" source="../media/frontdoor-integrate.png" alt-text="Front Door with an active and standby region.":::
+:::image type="content" source="../media/front-door-integrate.png" alt-text="Front Door with an active and standby region.":::
 
 
 
