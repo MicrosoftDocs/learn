@@ -80,7 +80,7 @@ quiz:
     - content: "No"
       isCorrect: true
       explanation: "Correct. SAP Note #1928533 states that Azure Standard HDD storage based managed disks are not supported for SAP workloads. Microsoft recommends using Azure Standard SSD storage as the minimum for Azure VMs hosting the SAP application layer and for non-performance sensitive DBMS deployment, and using Azure Premium SSD storage for all other Azure VMs DBMS workloads."
-    - content: "Only for the SAP application layer and for non-performance sensitive DBMS deploment"
+    - content: "Only for the SAP application layer and for non-performance sensitive DBMS deployment"
       isCorrect: false
       explanation: "Incorrect. Microsoft recommends using Azure Standard SSD storage as the minimum for Azure VMs hosting the SAP application layer and for non-performance sensitive DBMS deployment."
   - content: "The purpose of Azure Write Accelerator is to improve I/O latency of writes against the Azure Premium Storage. Which Azure VMs can take advantage of Azure Write Accelerator functionality?"
