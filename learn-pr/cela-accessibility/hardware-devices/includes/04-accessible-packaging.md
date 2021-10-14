@@ -31,31 +31,31 @@ Players with disabilities that cause weakness or reduced dexterity may find it c
 
 Provide physical access points to assist players in removing devices from inner packaging. For example, the pull tab on the plastic wrap that protrudes outward from the surface tablet package.
 
-:::image type="content" source="../media/go-1-cropped.png" alt-text="TBD 1.":::
+:::image type="content" source="../media/go-1-cropped.png" alt-text="TBD 8.":::
 
 Provide physical access points such as pull tabs or loops to assist players in removing smaller boxes or device components from inner packaging structures. The image below reveals the underlying packaging components that are visible once the surface tablet is removed.
 
-:::image type="content" source="../media/go-3-1.png" alt-text="TBD 1.":::
+:::image type="content" source="../media/go-3-1.png" alt-text="TBD 9.":::
 
 Though these components are embedded within the surrounding container, note the following design elements that support a more accessible removal experience:
 
 The envelope containing the device’s quick-start guide and the box containing the charging block feature an oval-shaped opening. This opening allows users to grasp and remove these components by inserting their fingers into the negative cavity space.
 
-:::image type="content" source="../media/microsoft-teams-1.png" alt-text="TBD 1.":::
+:::image type="content" source="../media/microsoft-teams-1.png" alt-text="TBD 10.":::
 
 From here, the process of removing the charging block  from its box has also been designed with accessibility in mind. The charging block is placed on a tray within the box that can be easily slid out. This eliminates the need to shake and lift the box or pull on the power block to remove it.
 
 The tray has a large oval -shaped loop that protrudes from the box, even when closed. This provides users an easy access point to grasp and slide the tray, revealing the power block. The smaller box  can be removed by using the loop to slide the tray out of the box.
 
-:::image type="content" source="../media/microsoft-teams-2.png" alt-text="TBD 1.":::
+:::image type="content" source="../media/microsoft-teams-2.png" alt-text="TBD 11.":::
 
 For heavier devices or hardware components that may cause pull tabs or loops to tear, design packaging so that negative spaces or “cavities” are present around the device. These cavities allow players to grasp the device for removal.
 
 The images below show the packaging for the Xbox Series X. The surrounding materials keep the console from moving within the box, and large open spaces surrounding the device provide locations where players can insert their fingers or hands for removal.
 
-:::image type="content" source="../media/series-s-cavity-1.png" alt-text="TBD 1.":::
+:::image type="content" source="../media/series-s-cavity-1.png" alt-text="TBD 12.":::
 
-:::image type="content" source="../media/series-s-cavity-2.png" alt-text="TBD 1.":::
+:::image type="content" source="../media/series-s-cavity-2.png" alt-text="TBD 13.":::
 
 ## Review best practices in action
 

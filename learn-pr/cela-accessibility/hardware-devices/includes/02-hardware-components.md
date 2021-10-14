@@ -12,7 +12,7 @@ The following image shows a player using a mouth-operated assistive device calle
 
 The following image shows a player using the mouth-operated Quadstick on their PC to play games competitively.
 
-:::image type="content" source="../media/quadstick.jpg" alt-text="TBD 1.":::
+:::image type="content" source="../media/quadstick.jpg" alt-text="TBD 2.":::
 
 ## Improve accessible operation of mechanical parts
 
@@ -26,11 +26,11 @@ The physical surface area of a button can impact whether a user with disabilitie
 
 The image below shows a person’s hand as they press a button on a USB speaker device. The larger buttons on the device are about the size of a US penny. The increased surface area of the buttons on this device can make it easier for players to control the speaker device.
 
-:::image type="content" source="../media/usbc-speaker.png" alt-text="TBD 1.":::
+:::image type="content" source="../media/usbc-speaker.png" alt-text="TBD 3.":::
 
 Similarly, the size of the A and B buttons on the Xbox Adaptive Controller were, by design, made larger. The larger size helps players use the controller even though they may not be able to isolate a single finger to press the buttons.
 
-:::image type="content" source="../media/xac.jpg" alt-text="TBD 1.":::
+:::image type="content" source="../media/xac.jpg" alt-text="TBD 4.":::
 
 ### Button height
 
@@ -60,9 +60,9 @@ When designing and creating new devices, it's recommended to avoid activation me
 
 The image below shows the ear cup dials on an Xbox gaming headset. Players twist the dials to adjust the volume and chat mixer values. Players unable to perform the necessary twisting motions can instead use the Xbox Accessories app. This app provides a configuration settings menu for players to use to adjust the settings.
 
-:::image type="content" source="../media/xbox-wireless-headset.png" alt-text="TBD 1.":::
+:::image type="content" source="../media/xbox-wireless-headset.png" alt-text="TBD 5.":::
 
-:::image type="content" source="../media/headset-control-ui.png" alt-text="TBD 1.":::
+:::image type="content" source="../media/headset-control-ui.png" alt-text="TBD 6.":::
 
 ### Component location
 
@@ -76,4 +76,4 @@ If ideal component placement cannot be achieved, the following considerations ca
 
 For example, the image below shows the controller remapping screen for the Xbox Elite controller. The player who created this profile has difficulty accessing the “Left stick click” control. Through software they re-assigned this control to an option that they can more easily access, in this case, the right trigger.
 
-:::image type="content" source="../media/controller-map-high-contrast.png" alt-text="TBD 1.":::
+:::image type="content" source="../media/controller-map-high-contrast.png" alt-text="TBD 7.":::
