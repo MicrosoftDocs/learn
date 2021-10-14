@@ -1,4 +1,4 @@
-There are several customers who are using SQL Server Transparent Data Encryption (TDE) when deploying their SAP SQL Server databases in Azure. The SQL Server TDE functionality is fully supported by SAP (see [SAP Note \#1380493](https://launchpad.support.sap.com/#/notes/1380493)).
+There are several customers who are using SQL Server Transparent Data Encryption (TDE) when deploying their SAP SQL Server databases in Azure. The SQL Server TDE functionality is fully supported by SAP (see [SAP Note \#1380493](https://launchpad.support.sap.com/#/notes/1380493) ).
 
 In cases where you perform a heterogeneous migration from another DBMS, running on-premise, to Windows/SQL Server running in Azure, you should create your empty target database in SQL Server ahead of time. As a next step you would apply SQL Server TDE functionality, while you are still running your production system on-premise. The reason you want to perform the process in this sequence is that encrypting the empty database can take quite a while. The SAP import processes would then import the data into the encrypted database during the downtime phase. The overhead of importing into an encrypted database has a lower time impact than encrypting the database after the export phase in the down time phase. Negative experiences were made when trying to apply TDE with SAP workload running on top of the database. Therefore, treating the deployment of TDE as an activity that needs to be done without an SAP workload on the database is recommended.
 
@@ -9,6 +9,6 @@ In cases where you move SAP SQL Server databases from on-premises into Azure, we
  -  With SQL Server 2016, SQL Server introduced new functionality that allows compressing encrypted databases as well in an efficient manner.
  -  Treating the application of TDE encryption with no or little SAP workload only, you should test in your specific configuration to determine whether it is better to apply TDE to your SAP database on-premises or to do so in Azure. In Azure, you certainly have more flexibility in terms of over-provisioning infrastructure and shrink the infrastructure after TDE got applied.
 
-## Using Azure Key Vault
+## Azure Key Vault
 
 Azure offers the service of a Key Vault to store encryption keys. SQL Server on the other side offers a connector to leverage Azure Key Vault as a store for the TDE certificates.
