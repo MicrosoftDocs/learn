@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-governance-azure-policy.exercise-enable-azure-policy-for-aks
+title: Exercise - Enable Azure Policy for AKS
+metadata:
+  title: Exercise - Enable Azure Policy for Azure Kubernetes Services
+  description: Exercise to enable Azure Policy for Azure Kubernetes Services cluster
+  ms.date: 10/13/2021
+  author: mosabami
+  ms.author: aayodeji
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 45
+content: | 
+  [!include[](includes/3-exercise-enable-azure-policy-for-aks.md)]
