@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Set up host environment
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
   [!include[](includes/exercise-setup-host-environment.md)]
