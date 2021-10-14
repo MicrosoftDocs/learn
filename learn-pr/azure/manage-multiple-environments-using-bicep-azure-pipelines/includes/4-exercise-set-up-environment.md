@@ -39,8 +39,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
-> [!IMPORTANT]
-> The final exercise in this module contains important cleanup steps. Be sure to follow the cleanup steps even if you don't complete this module.
+[!include[](../../includes/cleanup-steps.md)]
 
 ## Clone the repository
 
