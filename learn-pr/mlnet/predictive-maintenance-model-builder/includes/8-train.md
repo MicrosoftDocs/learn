@@ -36,10 +36,12 @@ You've probably heard machine learning can be complex and involves lots of math.
 
 Model Builder uses automated machine learning (AutoML) to identify the set of transformations to prepare your data for training, select an algorithm, and tune the settings (also known as hyperparameters) of the algorithm to create a model that most suits your data. Using evaluation metrics specific to the machine learning task selected, Model Builder is able to determine which model performs "best" for your data.
 
-## What happens when training completes
+## Training and consumption code
 
-<!-- INSERT CODEGEN SCREENSHOT -->
+Once your model is done training, Model Builder generates a few files and adds them to your project. These files are nested under your *.mbconfig* file.
 
-###  Generated code
+- **\<MODEL-NAME\>.zip**: A serialized version of your model.
+- **\<MODEL-NAME\>.training.cs**: This file contains the model training pipeline. Your model training pipeline is made up of the data transformations and algorithm used to train your machine learning model. See [data transforms](/dotnet/machine-learning/resources/transforms) and [how to choose an ML.NET algorithm](/dotnet/machine-learning/how-to-choose-an-ml-net-algorithm) for more details.
+- **\<MODEL-NAME\>.consumption.cs**: This file contains the classes that define the schema of your model input and output. It also contains the `Predict` method which uses your model to create a `PredictionEngine` and make predictions. The `PredictionEngine` is a convenience API, which allows you to perform a prediction on a single instance of data.
 
-In the next unit you'll use Model Builder to train your predictive maintenance model.
+In the next unit, you'll use Model Builder to train a classification model for predictive maintenance.

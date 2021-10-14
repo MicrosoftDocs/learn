@@ -14,9 +14,8 @@ In this module, you will:
 > [!NOTE]
 > Visual Studio 2022 and .NET 6 are currently in preview.
 
-- Introductory knowledge of .NET
-- Visual Studio 2022
-    - .NET 6
+- Intermediate knowledge of .NET
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the .NET desktop development workload installed. The .NET 6.0 SDK is automatically installed when you select this workload.
 - ML.NET Model Builder extension. The ML.NET Model Builder Visual Studio extension is included in Visual Studio. For setup instructions, see [How to install ML.NET Model Builder](/dotnet/machine-learning/how-to-guides/install-model-builder?tabs=visual-studio-2022)
 
 ## Learn the scenario

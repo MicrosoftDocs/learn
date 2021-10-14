@@ -20,13 +20,12 @@ abstract: |
   - Evaluate how well your machine learning model performs
   - Consume your machine learning model in a .NET application
 prerequisites: |
-  - Introductory knowledge of .NET
-  - Visual Studio 2022
-      - .NET 6
+  - Intermediate knowledge of .NET
+  - [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the .NET desktop development workload installed. The .NET 6.0 SDK is automatically installed when you select this workload.
   - ML.NET Model Builder extension. The ML.NET Model Builder Visual Studio extension is included in Visual Studio. For setup instructions, see [How to install ML.NET Model Builder](/dotnet/machine-learning/how-to-guides/install-model-builder?tabs=visual-studio-2022)
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
-  - beginner
+  - intermediate
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
   - developer
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
