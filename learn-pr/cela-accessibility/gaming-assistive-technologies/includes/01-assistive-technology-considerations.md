@@ -1,14 +1,10 @@
-## What are Assistive Technologies?
+## What are assistive technologies?
 
-The Assistive Technology Industry Association (ATIA) defines assistive technology as any item, piece of equipment, software program, or product system that is used to increase, maintain, or improve the functional capabilities of persons with disabilities. For example, an individual who is blind may use screen narration software on their computer when doing schoolwork. A person who is unable to type on a keyboard due to limited range of motion in their arms may use a dictation software to speak the words they would like typed aloud while the software translates their speech into text on screen. In gaming situations, many players with disabilities may use the assistive technologies that they already leverage for non-gaming tasks. Additionally, players may have gaming-specific assistive technologies like adapted controllers or input devices that enable play.
+The Assistive Technology Industry Association (ATIA) defines assistive technology as any item, piece of equipment, software program, or product system that is used to increase, maintain, or improve the functional capabilities of persons with disabilities. For example, an individual who is blind may use screen narration software on their computer when doing school work. A person who is unable to type on a keyboard due to limited range of motion in their arms may use a dictation software to speak the words they would like typed aloud while the software translates their speech into text on screen. In gaming situations, many players with disabilities may use the assistive technologies that they already leverage for non-gaming tasks. Additionally, players may have gaming-specific assistive technologies like adapted controllers or input devices that enable play.
 
-## The Impact of Assistive Technologies on Gaming
+## The impact of assistive technologies on gaming
 
 Gaming assistive technologies can heavily impact a player's ability to access a platform or game title. If a gaming platform or title does not support a player's assistive technology or does not provide a comparable alternative natively within the title or platform, that player may be excluded from play. Additionally, understanding the ways in which players access game inputs can provide important context regarding the barriers in access players using assistive technologies can experience when game experiences are optimized for standard inputs like controllers, mice, and keyboards.
-
-The video below discusses some examples that highlight the importance of considering assistive technology compatibility and support when development new games, platforms, and hardware.
-
-[Overview video]
 
 ### Hardware and software
 
