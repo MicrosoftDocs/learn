@@ -14,7 +14,7 @@ You’ll then push the Docker image into Azure Container Registry and deploy it 
 
 By the end of this module, you'll be able to containerize a Java application, push the Docker image to Azure Container Registry, and then deploy to Azure Kubernetes Service.
 
-You'll use your own Azure subscription to deploy the resources in this module. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/java/?azure-portal=true&WT.mc_id=java-10785-chtrembl) before you begin.
+You'll use your own Azure subscription (with access to create, update & remove resources) to deploy the resources in this module. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/java/?azure-portal=true&WT.mc_id=java-10785-chtrembl) before you begin.
 
 > [!IMPORTANT]
 > To avoid unnecessary charges in your Azure subscription, remember to deprovision your Azure resources when you finish this module.
@@ -33,5 +33,5 @@ By the end of this module, you'll be able to:
 
 As a Java developer, you're already familiar with building applications. As you complete the exercises in this module, you'll use a personal Azure account. Make sure that you have the following resources:
   
-- An Azure subscription
-- Local installations of Java JDK (1.8 or later), Maven (3.0 or later), Docker CLI, Git CLI, and the Azure CLI (2.12 or later)
+- An Azure subscription with access to create, update & remove resources.
+- Local installations of Java JDK (1.8 or later), Maven (3.0 or later), Docker CLI, Git CLI, and the Azure CLI (2.12 or later).

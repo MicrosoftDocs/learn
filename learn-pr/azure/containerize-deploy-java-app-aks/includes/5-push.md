@@ -2,6 +2,22 @@ In this unit, you'll push a Docker image to Azure Container Registry.
 
 Azure Container Registry allows you to build, store, and manage container images and artifacts in a private registry for all types of container deployments. Use Azure container registries with your existing container development and deployment pipelines.
 
+> [!NOTE]
+> If your session has idled out, your doing this step at another point in time and/or from another CLI you may have to re initialize your environment variables and re authenticate with the following CLI commands.
+>AZ_RESOURCE_GROUP=javacontainerizationdemorg
+>
+>AZ_CONTAINER_REGISTRY=javacontainerizationdemoacr
+>
+>AZ_KUBERNETES_CLUSTER=javacontainerizationdemoaks
+>
+>AZ_LOCATION=<YOUR_AZURE_REGION>
+>
+>AZ_KUBERNETES_CLUSTER_DNS_PREFIX=<YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER>
+>
+>az login
+>
+>az acr login -n $AZ_CONTAINER_REGISTRY
+
 ## Push a Docker image
 
 You can push your newly built Docker image to the Azure Container Registry. By doing so, your Docker image will be network close to all of your Azure resources, such as your Azure Kubernetes Cluster. You will ultimately configure AKS to pull the TurkishAirlines image from Azure Container Registry.
@@ -19,22 +35,6 @@ Second, push the Docker image to Azure Container Registry:
 ```bash
 docker push $AZ_CONTAINER_REGISTRY.azurecr.io/turkishairlines
 ```
-
-> [!NOTE]
-> If your session has idled out, your doing this step at another point in time and/or from another CLI you may have to re initialize your environment variables and re authenticate with the following CLI commands.
->AZ_RESOURCE_GROUP=javacontainerizationdemorg
->
->AZ_CONTAINER_REGISTRY=javacontainerizationdemoacr
->
->AZ_KUBERNETES_CLUSTER=javacontainerizationdemoaks
->
->AZ_LOCATION=<YOUR_AZURE_REGION>
->
->AZ_KUBERNETES_CLUSTER_DNS_PREFIX=<YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER>
->
->az login
->
->az acr login -n $AZ_CONTAINER_REGISTRY
 
 You can now view the Azure Container Registry image meta-data of the newly pushed image. Run the following command in your CLI:
 
