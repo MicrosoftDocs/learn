@@ -6,7 +6,7 @@ You need to prepare the specifications to use the Azure Governance collection of
 
 ## Learning objectives
 
-You will: 
+You will:
 
  -  Explore Azure Resource Manager and Azure Resource Manager templates.
  -  Examine role-based access control.
