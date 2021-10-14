@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "Virtual WAN"
       isCorrect: false
-      explanation: "Incorrect. A virtual WAN can provide cross-premises connectivity of SAP deployments in Azure, but itis not the recommended solution."
+      explanation: "Incorrect. A virtual WAN can provide cross-premises connectivity of SAP deployments in Azure, but it is not the recommended solution."
     - content: "Site-to-Site VPN"
       isCorrect: false
-      explanation: "Incorrect. Site-to-Site VPN can provide cross-premises connectivity of SAP deployments in Azure, but itis not the recommended solution."
+      explanation: "Incorrect. Site-to-Site VPN can provide cross-premises connectivity of SAP deployments in Azure, but it is not the recommended solution."
     - content: "ExpressRoute"
       isCorrect: true
       explanation: "Correct. A virtual gateway facilitates extending your on-premises network to the Azure virtual network. ExpressRoute is the recommended service for cross-premises connectivity of SAP deployments in Azure, but a Site-to-Site VPN or Virtual WAN can serve as alternatives."
