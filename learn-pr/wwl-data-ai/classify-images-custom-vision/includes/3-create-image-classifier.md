@@ -100,9 +100,7 @@ Now that you have a custom model, you can run a simple client application that u
 
 4. Don't worry too much about the details of the code, the important thing is that it needs the prediction URL and key for your Custom Vision model when using an image URL. 
 
-    Get the *prediction URL* from the dialog box in your Custom Vision project, which should look like this:
-
-    ![Prediction URL information for a custom vision model](../media/custom-vision-url.png). 
+    Get the *prediction URL* from the dialog box in your Custom Vision project (you reviewed it after you published the image classification model).
 
     Paste it into the code editor, replacing the **YOUR_PREDICTION_URL**.
 
@@ -119,8 +117,7 @@ Now that you have a custom model, you can run a simple client application that u
 
 6. We will classify this image: 
     
-    <img src="../media/fruit-1.jpg" alt="An image of an apple" width="300"/>
-
+    ![An image of an apple](../media/fruit-1.jpg)
 
     In the PowerShell pane, enter the following commands to run the code:
 
@@ -132,8 +129,8 @@ Now that you have a custom model, you can run a simple client application that u
 7. Review the prediction, which should be **apple**.
 
 8. Now let's try another image:
-
-    <img src="../media/fruit-2.jpg" alt="An image of a banana" width="300"/>    
+    
+    ![An image of a banana](../media/fruit-2.jpg)
     
     Please run this command: 
     ```
@@ -143,8 +140,8 @@ Now that you have a custom model, you can run a simple client application that u
 9. Verify that the model classifies this image as **banana**.
 
 10. Finally, let's try the third test image:
-
-    <img src="../media/fruit-3.jpg" alt="An image of an orange" width="300"/>      
+    
+    ![An image of an orange](../media/fruit-3.jpg)
     
     Please run this command:
     ```
