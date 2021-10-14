@@ -3,7 +3,7 @@ uid: learn.nvidia.setup-configure-nvidia-deepstream-development.6-knowledge-chec
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
+  description: Knowledge check
   ms.date: 10/01/2021
   author: toolboc
   ms.author: pdecarlo
@@ -14,7 +14,6 @@ durationInMinutes: 5
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
   questions:
   - content: 'The DeepStream SDK supports which of the following computer vision algorithms during inference processing:'
     choices: 

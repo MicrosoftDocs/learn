@@ -42,11 +42,11 @@ Using these extensions, we can add features and functionality to the Composer ap
     composer
     ```
 
-    ![NVIDIA DeepStream Graph Composer Launching](../media/composer-launch.png)
+    :::image type="content" source="../media/composer-launch.png" alt-text="NVIDIA DeepStream Graph Composer launching" lightbox="../media/composer-launch.png":::
 
     You should notice a list of components populate on the right-side of the application user interface (grouped by extension name).  If not, you may need to resync to the `ncg-public` repo using the steps performed earlier. You can left-click on the extension name to view the components it provides as shown below:
 
-    ![NVIDIA DeepStream Graph Composer Components](../media/composer-components.png)
+    :::image type="content" source="../media/composer-components.png" alt-text="NVIDIA DeepStream Graph Composer components" lightbox="../media/composer-components.png":::
 
     The following guidelines will help you understand how to interact with the composer application to develop custom applications:
 
@@ -63,12 +63,11 @@ Using these extensions, we can add features and functionality to the Composer ap
 
     1. In the Composer application, select "File => Open Graph" and navigate to the `/opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test1` path and select the `deepstream-test1.yaml` file, then "Okay".
 
-         ![NVIDIA DeepStream Graph Composer Opening Test1 Application](../media/composer-open-test1.png)
+        :::image type="content" source="../media/composer-open-test1.png" alt-text="NVIDIA DeepStream Graph Composer Opening Test1 Application" lightbox="../media/composer-open-test1.png":::
 
     1. Left-click on the `NvDsSingleSrcInput` component and notice the `Details` pane that opens on the right-side of the application.  Scroll down in the `Details` pane and notice the `uri` property where we set the video file that is to be used as input in this IVA pipeline.
 
-         ![NVIDIA DeepStream Graph Composer Test1 Application Properties](../media/composer-test1-properties.png)
-
+        :::image type="content" source="../media/composer-test1-properties.png" alt-text="NVIDIA DeepStream Graph Composer Test1 Application Properties" lightbox="../media/composer-test1-properties.png":::
 
     1. Take note that you could modify the `uri` property to use an RTSP stream by setting `type` equal to '4' and providing an RTSP path `rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov`.  This would have the same effect as the DeepStream [source0] configuration group entry shown below:
 
@@ -89,7 +88,7 @@ Using these extensions, we can add features and functionality to the Composer ap
 
 1. Next, let's take a look at the overall flow of the IVA pipeline presented in this example.  Once we understand the overall workflow and expected behavior of the graph, we will then up this workload as a containerized workload for redistribution and execution.
 
-     ![NVIDIA DeepStream Graph Composer Test1 Application Full](../media/composer-test1.png)
+    :::image type="content" source="../media/composer-test1.png" alt-text="NVIDIA DeepStream Graph Composer Test1 Application Full" lightbox="../media/composer-test1.png":::
 
     This application takes a video source as input using `NvDsSingleSrcInput`, which is passed into `NvDsStreamMux` (which could technically process multiple video inputs).  The output of `NvDsStreamMux` provides a frame from each video input, which is sent for processing  in `NvDsInferVideo`, which applies inference using a ResNet 4 class object detector (Bicycle, Car, Person, Road Sign).  The inference results of `NvDsInferVideo` are passed to both `NvDsPerClassObjectCounting` to display a count for each detected class and `NvsOSD`, which generates the onscreen detections with bounding boxes, which are displayed by the final connection to `NvDsVideoRenderer`.
 

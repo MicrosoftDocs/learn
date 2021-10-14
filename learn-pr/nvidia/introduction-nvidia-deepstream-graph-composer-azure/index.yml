@@ -21,7 +21,7 @@ prerequisites: |
   - RTX2080, RTX3080, T4, or A100 NVIDIA Graphics Card
   - Familiarity with container workloads / Docker
   - Familiarity with Azure IoT Edge / IoT Hub 
-  - Completion of the prerequisite module: "NVIDIA DeepStream 6.0 Development on Microsoft Azure
+  - Completion of the prerequisite module: [Set up and configure a NVIDIA DeepStream development environment](/learn/modules/setup-configure-nvidia-deepstream-development/)
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate

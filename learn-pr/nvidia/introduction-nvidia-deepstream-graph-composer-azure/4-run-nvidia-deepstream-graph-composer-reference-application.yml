@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.4-run-nvidia-deepstream-graph-composer-reference-application
-title: Exercise - Run an NVIDIA DeepStream Graph Composer Reference Application
+title: Exercise - Run an NVIDIA DeepStream Graph Composer reference application
 metadata:
-  title: Exercise - Run an NVIDIA DeepStream Graph Composer Reference Application
-  description: Exercise - Run an NVIDIA DeepStream Graph Composer Reference Application
+  title: Exercise - Run an NVIDIA DeepStream Graph Composer reference application
+  description: Exercise - Run an NVIDIA DeepStream Graph Composer reference application
   author: toolboc
   ms.author: pdecarlo
   ms.date: 10/01/2021

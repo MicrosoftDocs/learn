@@ -23,7 +23,7 @@ prerequisites: |
   - [NVIDIA Jetson Embedded Device](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/) provisioned with [JetPack 4.5.1 GA](https://developer.nvidia.com/jetpack-sdk-451-archive)
   - Familiarity with container workloads / Docker
   - Familiarity with Azure IoT Edge / IoT Hub 
-  - Completion of the prerequisite module: "Introduction to DeepStream 6.0 Graph Composer with Microsoft Azure"
+  - Completion of the prerequisite module: [Introduction to NVIDIA DeepStream Graph Composer with Microsoft Azure](/learn/modules/introduction-nvidia-deepstream-graph-composer-azure/)
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
