@@ -6,7 +6,7 @@ You need to prepare the specifications to leverage the storage component to desi
 
 ## Learning objectives
 
-You will:
+You will: 
 
  -  Explore Azure Storage types.
  -  Explore Azure Files.
