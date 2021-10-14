@@ -87,7 +87,7 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
    :::code language="yaml" source="code/5-pipeline.yml" :::
 
-   This pipeline runs the *Lint* stage once. Then it uses the *deploy.yml* template file twice: once per environment. This keeps the pipeline definition clear and easy to understand. Also, the comments help explain what's happening.
+   This pipeline runs the lint stage once. Then it uses the *deploy.yml* template file twice: once per environment. This keeps the pipeline definition clear and easy to understand. Also, the comments help explain what's happening.
 
 1. Save your changes.
 
@@ -109,7 +109,7 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
    :::image type="content" source="../media/5-stages.png" alt-text="Screenshot of Azure Pipelines that shows the pipeline run stages.":::
 
-1. Wait for the pipeline to pause before the *Deploy (Production Environment)* stage. It might take a few minutes for the pipeline to reach this point.
+1. Wait for the pipeline to pause before the **Deploy (Production Environment)** stage. It might take a few minutes for the pipeline to reach this point.
 
    :::image type="content" source="../media/5-waiting-approval.png" alt-text="Screenshot of Azure Pipelines that shows the pipeline run paused for approval.":::
 
@@ -137,7 +137,7 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
 1. Select the deployment, and select the **Changes** tab.
 
-   Notice that the tab for changes shows you the list of commits included in the deployment. This helps you to see exactly what has changed in your environment over time.
+   Notice that **Changes** tab shows you the list of commits included in the deployment. This helps you to see exactly what has changed in your environment over time.
 
    :::image type="content" source="../media/5-environment-commits.png" alt-text="Screenshot of Azure Pipelines that shows the production environment's deployment details, with a list of commits.":::
 
@@ -149,8 +149,8 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
    :::image type="content" source="../media/5-app-service-production.png" alt-text="Screenshot of the Azure portal that shows the production App Service app and the App Service plan SKU details.":::
 
-   Notice that the type of App Service plan is *S1*.
+   Notice that the type of App Service plan is **S1**.
 
 1. Go to the App Service app in the **ToyWebsiteTest** resource group.
 
-   Notice that the type of App Service plan is *F1*. The two environments use different settings, as you defined in your Bicep file.
+   Notice that the type of App Service plan is **F1**. The two environments use different settings, as you defined in your Bicep file.

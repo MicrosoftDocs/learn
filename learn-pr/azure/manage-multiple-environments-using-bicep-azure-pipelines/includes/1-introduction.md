@@ -4,7 +4,7 @@ Pipelines enable you to deploy your Azure resources in a repeatable way. In this
 
 Suppose you're the Azure administrator at a toy company. You've been working with your website team to create a Bicep template that deploys and configures the Azure resources. You've also been creating a pipeline to deploy the Bicep file automatically.
 
-Your website team wants to integrate with a third-party product review service. The review service will enable your customers to submit and view product reviews for your toys. The website team needs to be able to try out the service when it's integrating the service into your company's website, but the team doesn't want to submit real product reviews. The team has been given access to a sandbox version of the review service so it can try out the service safely.
+Your website team wants to integrate with a third-party product review service. The service will enable your customers to submit and view product reviews for your toys. The website team needs to be able to try out the service when it's integrating the service into your company's website, but the team doesn't want to submit real product reviews. The team has been given access to a sandbox version of the review service for safe testing.
 
 Now, the team has asked you for help with updating its deployment pipeline. The team needs to deploy the site to a non-production environment that's separate from the production environment that customers use. The team needs to use different configuration settings for the ratings API in each environment:
 

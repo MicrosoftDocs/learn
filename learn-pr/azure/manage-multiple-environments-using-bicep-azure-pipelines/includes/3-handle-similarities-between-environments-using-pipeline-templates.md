@@ -80,7 +80,7 @@ You pass the value for parameters to a pipeline template by using the `parameter
 
 :::code language="yaml" source="code/3-parameters.yml" highlight="3-4, 6-7" :::
 
-You can also use parameters when you assign names to your jobs and stages in pipeline templates. This helps when you need to reuse the same template multiple times in your pipeline, like this:
+You can also use parameters when you assign names to your jobs and stages in pipeline templates. This technique helps when you need to reuse the same template multiple times in your pipeline, like this:
 
 :::code language="yaml" source="code/3-jobs-parameters.yml" highlight="7, 13" :::
 
@@ -92,9 +92,9 @@ For example, imagine you define a pipeline template that runs script steps. You 
 
 :::code language="yaml" source="code/3-script-conditions.yml" range="1-12" highlight="10" :::
 
-The condition here translates to *if the environmentType parameter's value is equal to 'Production', then run the following steps*.
+The condition here translates to: *if the environmentType parameter's value is equal to 'Production', then run the following steps*.
 
-You can also use the `ne` (*not equals*) operator to specify a condition like *if the environmentType parameter's value is not equal to 'Production', then run the following steps*:
+You can also use the `ne` (*not equals*) operator to specify a condition like: *if the environmentType parameter's value is not equal to 'Production', then run the following steps*. Here's how:
 
 :::code language="yaml" source="code/3-script-conditions.yml" range="14-16" highlight="1" :::
 

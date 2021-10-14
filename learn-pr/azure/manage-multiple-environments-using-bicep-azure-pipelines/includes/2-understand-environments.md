@@ -14,7 +14,7 @@ Common environments include:
 
 - **Development**: A development environment is typically used by developers to try their changes in, and to quickly iterate on their work.
 
-  Development environments often have minimal controls so that team members can easily try out ideas. You might use a development environment to test out a certain configuration setting on a resource, or to see how you can set up a new website with a back-end database in a secure way. A lot of these changes and trials might not make it further in your deployment process, because you're eliminating the ideas that don't succeed.
+  Development environments often have minimal controls so that team members can easily try out ideas. You might use a development environment to test a certain configuration setting on a resource, or to see how you can set up a new website with a back-end database in a secure way. A lot of these changes and trials might not advance in your deployment process, because you're eliminating the ideas that don't succeed.
 
   In some teams, you might even set up a separate development environment for each team member so that they don't get in each other's way while they're working on new features.
 
@@ -32,7 +32,7 @@ Common environments include:
 
   Integration environments are sometimes also called *system integration test* (SIT) environments.
 
-- **User acceptance test**: A user acceptance test (UAT) environment is used for manual validation, usually by business stakeholders rather than developers. In manual validation, someone goes through the solution and verifies that behaves as expected and that it achieves the necessary business requirements. That person then approves the changes so that the deployment can continue.
+- **User acceptance test**: A user acceptance test (UAT) environment is used for manual validation, usually by business stakeholders rather than developers. In manual validation, someone goes through the solution and verifies that it behaves as expected and that it achieves the necessary business requirements. That person then approves the changes so that the deployment can continue.
 
 - **Pre-production**: A pre-production environment is often a mirror of the production environment, with the same resource SKUs and configuration. It's used as a final check to verify how the production deployment will behave during and after the change is applied. It can also be used verify whether to expect any downtime during the production deployment.
 
@@ -56,7 +56,7 @@ In your toy company, you decide to start with a basic set of environments for yo
 
 :::image type="content" source="../media/2-environments.png" alt-text="Diagram that shows two environments: test and production." border="false":::
 
-You'll update your pipeline to deploy your Bicep code to your test environment and run some basic tests against it. If that succeeds, you'll deploy to your production environment.
+You'll update your pipeline to deploy your Bicep code to your test environment and run some basic tests against it. If that effort succeeds, you'll deploy to your production environment.
 
 ## Pipeline environments
 
@@ -66,7 +66,7 @@ Azure Pipelines also has the concept of an environment. You create an Azure Pipe
 
 An environment in Azure DevOps can have checks and approvals configured. Each time the environment is used in a job in your pipeline, Azure DevOps will make sure these checks and approvals succeed before the job starts running.
 
-For example, you can configure manual approvals on your production environment. Before a production deployment starts, the designated approver will receive an email notification. That person can manually verify that your policies and procedures are met before they approve the deployment to begin. For example, the approver might check that everything is working as they expect in the pre-production environment before they approve the deployment.
+For example, you can configure manual approvals on your production environment. Before a production deployment starts, the designated approver will receive an email notification. That person can manually verify that your policies and procedures are met before the deployment begins. For example, the approver might check that everything is working as they expect in the pre-production environment before they approve the deployment.
 
 Or, you could run an automated check to review the logs and error rates in your pre-production environment after your last environment. If the check confirms that the number of errors hasn't substantially increased, it allows the deployment to proceed.
 
@@ -81,7 +81,7 @@ You can apply additional security controls to environments. You can restrict the
 You can also apply user permissions to control the users who can manage environments. Specific permissions can allow users to create new environments, to modify environments, and to view environments and the history of deployments to them.
 
 > [!NOTE]
-> When your pipeline refers to an environment that doesn't exist yet, Azure Pipelines automatically creates it for you. This can affect the security of your Azure DevOps project because you'll automatically get administrative permissions to the environment. It's best to create an environment yourself through the Azure DevOps web interface, so that you have full control over its security and you don't accidentally get permissions that you don't need.
+> When your pipeline refers to an environment that doesn't exist yet, Azure Pipelines automatically creates it for you. This feature can affect the security of your Azure DevOps project because you'll automatically get administrative permissions to the environment. It's best to create an environment yourself through the Azure DevOps web interface, so that you have full control over its security and you don't accidentally get permissions that you don't need.
 
 ## Environments and service connections
 
@@ -94,7 +94,7 @@ You should create separate service connections for each environment. Each servic
 :::image type="content" source="../media/2-service-connections.png" alt-text="Diagram that shows a service connection, service principal, and Azure resource group for non-production and another set for production." border="false":::
 
 > [!IMPORTANT]
-> Use a separate service principal and service connection for each environment that you plan to deploy to. Grant the service principal the least permissions it needs to be able to deploy to its environment, and no others.
+> Use a separate service principal and service connection for each environment that you plan to deploy to. Grant the service principal the minimum permissions that it needs to deploy to its environment, and no others.
 
 It's also a good idea to separate your environments in Azure. At minimum, you should create a separate resource group for each environment. In many situations, it's better to create separate Azure subscriptions for each environment. Then you can create multiple resource groups within each environment's subscription.
 

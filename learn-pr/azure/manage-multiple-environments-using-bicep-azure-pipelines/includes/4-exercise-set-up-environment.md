@@ -182,16 +182,14 @@ Next, create two service connections in Azure Pipelines: one for your test envir
 
 1. In the **Resource group** dropdown list, select **ToyWebsiteTest**.
 
-1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
+1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected, and then select **Save**.
 
    :::image type="content" source="../media/4-create-service-connection-principal-details-test.png" alt-text="Screenshot of Azure DevOps that shows completed details for creating a service connection for the test environment.":::
 
    > [!TIP]
    > For simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.
 
-1. Select **Save**.
-
-1. Repeat the preceding process to create another new service connection named **ToyWebsiteProduction**, which deploys to the resource group named **ToyWebsiteProduction**:
+1. Repeat the preceding process to create another new service connection named **ToyWebsiteProduction**, which deploys to the resource group named **ToyWebsiteProduction**.
 
    :::image type="content" source="../media/4-create-service-connection-principal-details-production.png" alt-text="Screenshot of Azure DevOps that shows the page for creating a service connection for the production environment, with completed details.":::
 
@@ -209,12 +207,10 @@ Next, create two service connections in Azure Pipelines: one for your test envir
 
 1. Enter **Test** as the environment name.
 
-   Leave the description blank. For **Resource**, select **None**.
+   Leave the description blank. For **Resource**, select **None**. Then select **Create**.
 
    > [!NOTE]
    > In Azure Pipelines, environments are used to enable deployment features. Some of these features apply only when you're deploying to Kubernetes or to virtual machines. In this module, we don't use these features and you can ignore them.
-
-1. Select **Create**.
 
    :::image type="content" source="../media/4-environments-new-details-test.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Test, with completed details and the Create button.":::
 
@@ -282,6 +278,6 @@ In the previous versions of the pipeline, you used a single set of variables to 
 
    :::image type="content" source="../media/4-variables-delete.png" alt-text="Screenshot of the Azure DevOps interface that shows the list of variables and the delete button.":::
 
-1. Select the **Save** button.
+1. Select **Save**.
 
    :::image type="content" source="../media/4-variables-delete-save.png" alt-text="Screenshot of the Azure DevOps interface that shows the deletion of three variables and the Save button.":::
