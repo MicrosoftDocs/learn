@@ -31,7 +31,7 @@ quiz:
     - content: "Provide an option to turn on audio-based notifications that alert the player that the battery is low and prompt them to plug in their device."
       isCorrect: true
       explanation: "Correct. This approach would not only alert players with low or no vision who cannot see that their low battery indicator light is flashing, but it would also provide a straight-forward way of presenting this information. Those who are new to the device or have learning disabilities will not have to interpret what the change in light color means. Instead they will receive a clear verbal cue that battery is low, and what action they can take to address the issue."
-    - content: "2.	Ensure that the battery level is available in a software-based user interface on another device to which headphones can be connected, such as a phone or desktop application."
+    - content: "Ensure that the battery level is available in a software-based user interface on another device to which headphones can be connected, such as a phone or desktop application."
       isCorrect: false
       explanation: "Incorrect. Though this option can benefit players who readily have another device with a UI on hand, a more accessible option would be to represent this information through the primary device itself."
     - content: "Using large status indicator lights that rapidly blink to capture a player's attention."
