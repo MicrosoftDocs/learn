@@ -6,7 +6,7 @@ You need to prepare the specifications to apply the Azure remote management comp
 
 ## Learning objectives
 
-You will: 
+You will:
 
  -  Consider remote management of Azure virtual machines.
  -  Set up the Azure connector for SAP Landscape Management.
