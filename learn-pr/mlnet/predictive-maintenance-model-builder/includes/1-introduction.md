@@ -17,7 +17,7 @@ In this module, you will:
 - Introductory knowledge of .NET
 - Visual Studio 2022
     - .NET 6
-- ML.NET Model Builder extension. The ML.NET Model Builder Visual Studio extension is included in Visual Studio. For setup instructions, see [How to install ML.NET Model Builder](https://docs.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/install-model-builder?tabs=visual-studio-2022)
+- ML.NET Model Builder extension. The ML.NET Model Builder Visual Studio extension is included in Visual Studio. For setup instructions, see [How to install ML.NET Model Builder](/dotnet/machine-learning/how-to-guides/install-model-builder?tabs=visual-studio-2022)
 
 ## Learn the scenario
 
