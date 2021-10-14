@@ -42,7 +42,7 @@ units:
 - learn.predictive-maintenance-model-builder.train
 - learn.predictive-maintenance-model-builder.exercise-train-model
 - learn.predictive-maintenance-model-builder.evaluate
-- learn.predictive-maintenance-model-builder.exercise-evalute-model
+- learn.predictive-maintenance-model-builder.exercise-evaluate-model
 - learn.predictive-maintenance-model-builder.consume
 - learn.predictive-maintenance-model-builder.exercise-consume-model
 - learn.predictive-maintenance-model-builder.summary
