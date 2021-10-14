@@ -1,6 +1,6 @@
 :::image type="content" source="../media/premium-support.png" alt-text="A graphic that shows a stylized support engineer, with icons that represent different times of day":::
 
-In this unit, you'll learn about the enhanced support available with GitHub Enterprise, as well as common administrator duties when interacting with GitHub Enterprise Support. You can apply this knowledge whether you're operating a private copy of GitHub contained within a virtual appliance ("GitHub Enterprise Server") or you've deployed GitHub Enterprise services in GitHub's cloud ("GitHub Enterprise Cloud").
+In this unit, you'll learn about the enhanced support available with GitHub Enterprise, and common administrator duties when interacting with GitHub Enterprise Support. You can apply this knowledge whether you're operating a private copy of GitHub contained within a virtual appliance ("GitHub Enterprise Server") or you've deployed GitHub Enterprise services in GitHub's cloud ("GitHub Enterprise Cloud").
 
 ## Availability of GitHub Enterprise Support
 
@@ -14,19 +14,23 @@ The table below shows the availability of [GitHub Enterprise Support](https://en
 
 [Premium and Premium Plus Support](https://github.com/premium-support) customers also receive other benefits.
 
-## Is this an issue for the administrator or GitHub Enterprise Support?
+## Administrative responsibilities or GitHub Enterprise Support?
 
-:::image type="content" source="../media/support-types.png" alt-text="A graphic that represents three issues Enterprise support technicians can resolve":::
+Knowing where to go for support when an issue arises can be confusing. Is this problem an issue for the organization's administrator or is it something that GitHub Support can handle? GitHub Support can help troubleshoot issues that arise on GitHub Enterprise Server for three areas; account, security, and abuse issues.
 
-GitHub Support covers account, security, and abuse issues.
+### Account
 
 Human error-related authentication problems are an example of account issues. When a user is locked out of their account and failed to retain keys to back up their two-factor authentication process, GitHub technical support can help you prove the user's identity.
 
-You can request GitHub support when responding to threat actors hacking an account. This is a security issue, and GitHub support technicians would provide help in rolling back damage to organization repositories and settings.
+### Security
+
+You can request GitHub support when responding to threat actors hacking an account. If the problem is a security issue, GitHub support technicians can provide help in rolling back damage to organization repositories and settings.
+
+### Abuse
 
 Abuse issues involve responding to violations of the site's terms of service or organizational policies in GitHub's social setting--someone is using GitHub's communication's features to abuse other users. GitHub support technicians can help you evaluate the situation and can remove harmful content or ban abusive actors.
 
-On the other hand, you should deal with some issues internally. You'll administer tasks like integrating CI/CD servers or internal tools, hardware setup, writing scripts, configuring SAML or other external authentication systems, working with Open Source projects, resolving problems that require immediate intervention, and running command-line utilities (except `ghe-dbconsole`). 
+On the other hand, you should deal with some issues internally. You'll administer tasks like integrating CI/CD servers or internal tools, hardware setup, writing scripts, configuring SAML or other external authentication systems, working with Open Source projects, resolving problems that require immediate intervention, and running command-line utilities (except `ghe-dbconsole`).
 
 ## Create and assign priority to a support ticket
 
@@ -45,13 +49,13 @@ GitHub prioritizes support tickets in the following manner:
 - **Normal**-tickets request account recovery or spam unflagging, report user login issues, and report non-critical bugs.
 - **Low**-tickets ask general questions and submit requests for new features, purchases, training, or health checks.
 
-## Additional data that can accompany tickets
+## Other data that can accompany tickets
 
-*Diagnostic files* and *support bundles* provide additional information to GitHub support technicians about a server's settings, environment, statistics, and logs.
+*Diagnostic files* and *support bundles* provide more information to GitHub support technicians about a server's settings, environment, statistics, and logs.
 
 The settings and history of a GitHub Enterprise environment are helpful when GitHub Enterprise Support needs to assist the administration with rolling back the environment to a state before damage occurred (most often related to security problems).
 
-Logs present in support bundles retain information from the past two days, but in cases when GitHub support technicians require additional data, it is possible to generate an *extended support bundle* containing logs that retain information from the past seven days.
+Logs present in support bundles retain information from the past two days, but in cases when GitHub support technicians require more data, it is possible to generate an *extended support bundle* containing logs that retain information from the past seven days.
 
 Creating a basic diagnostic file from the Management Console is as simple as logging into the Console, selecting **Support**, and selecting **Download diagnostics info**. You can also obtain a support bundle by choosing **Download support bundle** instead.
 
