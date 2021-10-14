@@ -35,8 +35,7 @@ The modules in this learning path are part of a progression. For learning purpos
 
    <!-- TODO SS -->
 
-> [!IMPORTANT]
-> The final exercise in this module contains important cleanup steps. Be sure to follow the cleanup steps even if you don't complete this module.
+[!include[](../../includes/cleanup-steps.md)]
 
 ## Clone the repository
 
@@ -242,7 +241,7 @@ You've created a resource group and a service principal. Next, create a secret i
 
 1. Select **New repository secret**.
 
-   :::image type="content" source="../media/5-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
+   :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
 
 1. Name the secret *AZURE_CREDENTIALS*.
 
@@ -250,4 +249,4 @@ You've created a resource group and a service principal. Next, create a secret i
 
 1. Select **Add secret**. 
 
-   :::image type="content" source="../media/5-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
+   :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
