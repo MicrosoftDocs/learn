@@ -7,6 +7,7 @@ One way to evaluate how well your model performs is by using evaluation metrics.
 This table shows the evaluation metrics used by Model Builder to choose the best model.
 
 | Scenario | Evaluation metrics | Look for |  
+| --- | --- | --- |
 | Data classification | Binary (Accuracy) / Multiclass (MicroAccuracy) |  The closer to 1.00, the better.
 | Value prediction | R-Squared | The closer to 1.00, the better |
 | Recommendation | R-Squared | The closer to 1.00, the better |
