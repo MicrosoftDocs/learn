@@ -77,7 +77,7 @@ We begin by deploying an image from directly from Docker Hub into the cluster. T
 
    If the external IP is listed as `<pending>`, rerun the command. It takes time to allocate a public IP address for your workload.
 
-   ![A screenshot showing nginx running, which came from Docker Hub](../media/5-nginx-dockerhub.png)
+   :::image type="content" source=".../media/5-nginx-dockerhub.png" alt-text="A screenshot showing nginx running, which came from Docker Hub." lightbox="../media/5-nginx-dockerhub.png":::
 
 ## Apply Azure Policy to the AKS cluster
 
@@ -95,7 +95,7 @@ Find the built-in policy definitions for managing your cluster using the Azure p
 
 1. From the Category dropdown list box, use Select all to clear the filter and then select Kubernetes.
 
-   ![Screenshot showing kubernetes selected for category](../media/5-filtering-for-kubernetes.png)
+   :::image type="content" source="../media/5-filtering-for-kubernetes.png" alt-text="Screenshot showing kubernetes selected for category." lightbox="../media/5-filtering-for-kubernetes.png":::
 
 1. Select the **Kubernetes cluster containers should only use allowed images** Policy definition.
 
@@ -103,7 +103,7 @@ Find the built-in policy definitions for managing your cluster using the Azure p
 
 1. Set the Scope to the resource group of the Kubernetes cluster you created, which in this case is the **videogamerg** resource group.
 
-   ![Screenshot showing policy assignment view](../media/5-policy-assignment.png)
+   :::image type="content" source="../media/5-policy-assignment.png" alt-text="Screenshot showing policy assignment view." lightbox="../media/5-policy-assignment.png":::
 
 1. Enter the following into the **Allowed container image regex** field and click the **Review + create** button
 
@@ -115,11 +115,11 @@ Find the built-in policy definitions for managing your cluster using the Azure p
 
 Now that the new Policy has been enabled, you can click on **Assignments** to see the assigned Policy and select the Policy assignment you created.
 
-![screenshot showing Policy assigned](../media/5-policy-assigned.png)
+:::image type="content" source="../media/5-policy-assigned.png" alt-text="screenshot showing Policy assigned." lightbox="../media/5-policy-assigned.png":::
 
 Your Policy assignment should look like the picture below. The effect is set to deny by default. This means that only images hosted in Azure Container Registry can be deployed in the cluster.
 
-![screenshot showing details of Policy assignment](../media/5-policy-assignment-details.png)
+:::image type="content" source="../media/5-policy-assignment-details.png" alt-text="screenshot showing details of Policy assignment." lightbox="../media/5-policy-assignment-details.png":::
 
 ## Assign a policy initiative
 
@@ -355,11 +355,11 @@ Now that you know that the Policy prevents images from Docker hub from being cre
    kubectl get services
    ```
 
-   ![screenshot showing that the pods got deployed this time](../media/5-deployed-second-pod.png)
+   :::image type="content" source="../media/5-deployed-second-pod.png" alt-text="screenshot showing that the pods got deployed this time." lightbox="../media/5-deployed-second-pod.png":::
 
    Copy the external IP address and paste it in the browser and you will see that the page now loads.
 
-   ![Screenshot showing that the pod was now successfully deployed on the web browser](../media/5-second-page-now-loads.png)
+   :::image type="content" source="../media/5-second-page-now-loads.png" alt-text="sScreenshot showing that the pod was now successfully deployed on the web browser." lightbox="../media/5-second-page-now-loads.png":::
 
    
 
