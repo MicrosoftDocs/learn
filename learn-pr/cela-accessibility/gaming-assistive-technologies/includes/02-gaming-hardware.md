@@ -4,11 +4,9 @@ In gaming, assistive hardware devices often consist of accessible versions of in
 
 Adaptive or accessible controllers usually refer to custom input devices that are designed to provide access to all inputs needed to play a game for a specific player's needs.
 
-Switch Access
+### Switch Access
 
 Switches are essentially buttons of varying sizes that players may use if they are unable to access the buttons on standard input devices like controllers, keyboard keys, or left and right click on a mouse due their size, layout, or amount of force required to press the button down.
-
-Video:
 
 - Switches:
   - Different sizes
@@ -20,11 +18,9 @@ Video:
   - Large sizes
   - Bite switches
 
-Adaptive Joysticks:
+### Adaptive Joysticks
 
 Joysticks that vary in size, tension, and access may also be used by players with disabilities who have difficulty accessing the thumb sticks on a standard controller or using a mouse.
-
-Video:
 
 - Joysticks:
   - Ultrastik

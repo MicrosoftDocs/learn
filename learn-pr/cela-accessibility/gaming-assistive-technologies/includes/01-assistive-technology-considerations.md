@@ -8,8 +8,6 @@ Gaming assistive technologies can heavily impact a player's ability to access a 
 
 The video below discusses some examples that highlight the importance of considering assistive technology compatibility and support when development new games, platforms, and hardware.
 
-[Overview video]
-
 ### Hardware and software
 
 Assistive technologies used in gaming can help players access parts of a game or platform that they may not have been able to access otherwise. For example, a player that does not have hand movement uses buttons mounted around their head as a way of controlling their game character. Or maybe a player with low vision uses a magnification tool on their desktop to read text that is small. Sometimes, it is possible for games and platforms to support the assistive technologies that a player may already have. For example, the Xbox platform supports the Xbox adaptive controller, and the compatible joysticks and switches that can be attached to it. While the Xbox platform on console does not support screen reader software, the platform provides its own screen narration option called Narrator.
