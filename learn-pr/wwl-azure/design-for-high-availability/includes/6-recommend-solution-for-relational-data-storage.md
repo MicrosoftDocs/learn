@@ -10,7 +10,7 @@ Databases and managed instances in the General Purpose service tier have the sam
 
 All of Azure SQL is built on Azure Service Fabric, which serves as the Azure backbone. If Azure Service Fabric determines that a failover needs to occur, the failover will be similar to that of a failover cluster instance (FCI). The service fabric will look for a node with spare capacity and spin up a new SQL Server instance. The database files will then be attached, recovery will be run, and gateways will be updated to point applications to the new node. No virtual network or listener or updates are required. This capability is built in.
 
-:::image type="content" source="../media/azure-sql-failover.png" alt-text="Diagram of the application and control ring.":::
+:::image type="content" source="../media/azure-sql-fail-over.png" alt-text="Diagram of the application and control ring.":::
 
  
 
@@ -18,7 +18,7 @@ All of Azure SQL is built on Azure Service Fabric, which serves as the Azure bac
 
 The next service tier to consider is Business Critical, which can generally achieve the highest performance and availability of all Azure SQL service tiers (General Purpose, Hyperscale, Business Critical). Business Critical is meant for mission-critical applications that need low latency and minimal downtime.
 
-:::image type="content" source="../media/sql-business-critical-failover.png" alt-text="Diagram of SQL business critical failover.":::
+:::image type="content" source="../media/sql-business-critical-fail-over.png" alt-text="Diagram of SQL business critical failover.":::
 
  
 
