@@ -22,4 +22,4 @@ In this module you will:
 
 - Identify image analysis tasks that can be performed with the Computer Vision service.
 - Provision a Computer Vision resource.
-- Use a Computer Vision resource to analyze an image.
+- Use a Computer Vision resource to analyze an image. 
