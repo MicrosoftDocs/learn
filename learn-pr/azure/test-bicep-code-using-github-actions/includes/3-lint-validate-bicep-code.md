@@ -1,4 +1,4 @@
-Now that you know what pipeline stages are for, let's consider the first set of validation steps that you can add to your Bicep deployment pipeline. In this unit, you'll learn about validating Bicep templates. You'll also learn about the two activities that a validation stage typically performs: linting and preflight validation.
+Now that you know what workflow jobs are for, let's consider the first set of validation steps that you can add to your Bicep deployment workflow. In this unit, you'll learn about validating Bicep templates. You'll also learn about the two activities that a validation job typically performs: linting and preflight validation.
 
 ## What is a valid Bicep file?
 
@@ -22,7 +22,7 @@ A linter contains a predefined set of rules for each of these categories. Exampl
 
 The Bicep linter runs automatically when you use the Bicep tooling. Every time you build a Bicep file, the linter checks it against its best practices. This happens automatically when you deploy a Bicep file to Azure. 
 
-But in a pipeline, you typically want to run the validation and linting steps before you deploy the file. You can tell Bicep to verify your file by manually building the Bicep file through the Bicep CLI:
+But in a workflow, you typically want to run the validation and linting steps before you deploy the file. You can tell Bicep to verify your file by manually building the Bicep file through the Bicep CLI:
 
 ::: zone pivot="cli"
 
@@ -43,24 +43,24 @@ bicep build main.bicep
 > [!NOTE]
 > When you run the `build` command, Bicep also transpiles your Bicep code to a JSON ARM template. You generally don't need the file that it outputs, so you can ignore it.
 
-Because you want your Bicep templates to be linted each time anyone checks in code to your repository, you can add a lint stage and job to your pipeline:
+Because you want your Bicep templates to be linted each time anyone checks in code to your repository, you can add a lint job to your workflow:
 
-:::image type="content" source="../media/3-stages-lint.png" alt-text="Diagram that shows a pipeline with a lint stage containing a single job that runs the linter on the file." border="false":::
+:::image type="content" source="../media/3-jobs-lint.png" alt-text="Diagram that shows a workflow with a lint job containing a single job that runs the linter on the file." border="false":::
 
-You express this addition in your pipeline YAML file like this:
+You express this addition in your workflow YAML file like this:
 
 :::code language="yaml" source="code/3-lint.yml" highlight="8" :::
 
 ### Linter warnings and errors
 
-By default, the linter emits a warning when it discovers that a Bicep file has violated a rule. Warnings that the Bicep linter emits aren't treated as an error, so they won't stop the pipeline run or stop subsequent stages from running.
+By default, the linter emits a warning when it discovers that a Bicep file has violated a rule. Warnings that the Bicep linter emits aren't treated as an error, so they won't stop the workflow run or stop subsequent jobs from running.
 
 You can change this behavior by configuring Bicep to treat the linter rule violations as errors instead of warnings. You do this configuration by adding a *bicepconfig.json* file to the folder that contains your Bicep file. You can decide which linter issues should be treated as errors and which should remain as warnings. You'll see how to do this later in this module.
 
 > [!TIP]
 > The *bicepconfig.json* file also controls how Visual Studio Code shows errors and warnings in the editor. It displays red and yellow squiggly lines under misconfigured parts in your Bicep template. These indicators give you even quicker feedback when you're writing your Bicep code, further reducing the chance of an error.
 
-After you reconfigure the linter to emit errors, whenever the linter detects a problem, your pipeline stops running and subsequent jobs or stages don't run. This helps to ensure that problematic Bicep code won't be deployed.
+After you reconfigure the linter to emit errors, whenever the linter detects a problem, your workflow stops running and subsequent jobs don't run. This helps to ensure that problematic Bicep code won't be deployed.
 
 ## Preflight validation
 
@@ -72,12 +72,12 @@ You also should check whether your Bicep template is likely to deploy to your Az
 
 Preflight validation requires communication with Azure, but it doesn't actually deploy any resources.
 
-:::image type="content" source="../media/3-stages-validate.png" alt-text="Diagram that shows a pipeline with lint and validate stages, each containing a single job. The validate stage communicates with Azure." border="false":::
+:::image type="content" source="../media/3-jobs-validate.png" alt-text="Diagram that shows a workflow with lint and validate jobs, each containing a single job. The validate job communicates with Azure." border="false":::
 
 ::: zone pivot="powershell"
 
 > [!NOTE]
-> In this module, we use the Azure CLI to run all of the pipeline commands. When you build your own pipeline, you can choose to use the Azure PowerShell cmdlets instead. The equivalent cmdlet for preflight validation is `Test-AzResourceGroupDeployment`.
+> In this module, we use the Azure CLI to run all of the workflow commands. When you build your own workflow, you can choose to use the Azure PowerShell cmdlets instead. The equivalent cmdlet for preflight validation is `Test-AzResourceGroupDeployment`.
 
 ::: zone-end
 
@@ -92,6 +92,6 @@ For example, suppose your Bicep file contains a storage account. Preflight valid
 The preflight validation command runs the Bicep linter too. However, it's usually a good idea to run the linter separately. That way, if there are any linter errors, you'll detect them quickly instead of waiting for the validation process to finish. Validation takes longer.
 
 > [!IMPORTANT]
-> When you run a preflight validation, each of the Azure resource providers performs its own checks. Some resource providers don't run many checks, whereas others do. So you can't rely on preflight validation to be certain that your file is valid. Nevertheless, it's a useful tool and is worth including in your pipeline.
+> When you run a preflight validation, each of the Azure resource providers performs its own checks. Some resource providers don't run many checks, whereas others do. So you can't rely on preflight validation to be certain that your file is valid. Nevertheless, it's a useful tool and is worth including in your workflow.
 
-By adding validation stages to your pipeline to run the linter and perform a preflight validation, you'll have more confidence before you deploy your Bicep file.
+By adding validation jobs to your workflow to run the linter and perform a preflight validation, you'll have more confidence before you deploy your Bicep file.

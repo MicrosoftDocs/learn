@@ -1,0 +1,15 @@
+name: learn-github-actions
+on: [push]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This job's status is ${{ job.status }} and is using container ${{ job.container.id }}."
+  deployUS: 
+    runs-on: windows-latest
+    steps:
+      - run: echo "This job's status is ${{ job.status }} and is using container ${{ job.container.id }}."
+  deployEurope: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This job's status is ${{ job.status }} and is using container ${{ job.container.id }}."

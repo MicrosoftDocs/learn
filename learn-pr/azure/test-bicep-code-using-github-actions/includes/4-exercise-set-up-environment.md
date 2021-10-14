@@ -1,73 +1,74 @@
-Before you start to work on your toy company's website pipeline, you need to configure your environment. In this section, you make sure that your Azure and Azure DevOps environments are set up to complete the rest of this module.
+Before you start to work on your toy company's website workflow, you need to configure your environment. In this section, you make sure that your Azure and GitHub environments are set up to complete the rest of this module.
 
 To meet these objectives, you'll:
 
 > [!div class="checklist"]
-> * Set up an Azure DevOps project for this module.
-> * Clone the project's repository to your computer.
+> * Set up a GitHub repository for this module.
+> * Clone the repository to your computer.
 > * Create a resource group in Azure.
-> * Create a service connection in Azure Pipelines.
+> * Create a secret in GitHub.
 
-## Get the Azure DevOps project
+> Note to John: copy pasted quite some steps from https://raw.githubusercontent.com/MicrosoftDocs/learn-pr/5778ea14a752a65b5867bbad505e8f0bdee6bfac/learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/includes/3-exercise-create-run-basic-workflow.md?token=AAH6TAKYJCXSRYZ42ATOVC3BN3BQU (cloning the repo) and https://raw.githubusercontent.com/MicrosoftDocs/learn-pr/5778ea14a752a65b5867bbad505e8f0bdee6bfac/learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/includes/5-exercise-create-github-secret.md?token=AAH6TAIOL7KTZIZDCF76WMTBN3BKK (creating SP and GH secret)
 
-Here you make sure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
+## Get the GitHub repository
 
-The modules in this learning path are part of a progression. For learning purposes, each module has an associated Azure DevOps project.
+Here you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files you need to get started for this module. 
+
+The modules in this learning path are part of a progression. For learning purposes, each module has an associated GitHub template repository.
 
 > [!TIP]
-> Even if you completed the previous module in the learning path, please follow these instructions to create a new project and ensure that you give it a new name.
+> Even if you completed the previous module in the learning path, please follow these instructions to create a new repository and ensure that you give it a new name.
 
-### Run the template
+### Start from the template repository
 
-Run a template that sets up your Azure DevOps project.
+1. In your browser navigate to the [template repo](https://github.com/MicrosoftDocs/mslearn-test-bicep-code-using-github-actions)
 
-> [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=testbicep&azure-portal=true)
+1. Select **Use this template**. 
 
-On the Azure DevOps Demo Generator site, follow these steps to run the template:
+1. On the **Create a new repository from mslearn-test-bicep-code-using-github-actions** fill out a name for your new project and select the **Public** checkbox. 
 
-1. Select **Sign In** and accept the usage terms.
-
-1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as **toy-website-test**.
-
-    :::image type="content" source="../media/4-create-new-project.png" alt-text="Screenshot that shows creating a project through the Azure DevOps Demo Generator.":::
-
-1. Select **Create Project**.
-
-    The template takes a few moments to run. It automatically creates a pipeline and Bicep file for you to work with in the subsequent exercises.
-
-1. Select **Navigate to project** to go to your project in Azure DevOps.
+1. Select **Create repository from template**. 
 
 > [!IMPORTANT]
 > The final exercise in this module contains important cleanup steps. Be sure to follow the cleanup steps even if you don't complete this module.
 
 ## Clone the repository
 
-1. Select **Repos** > **Files**.
+You now have a copy of the template repository in your own account. You will now clone this repository locally so you can start work in it. 
+
+1. Select **Code** > **Local** > **Copy** icon.
 
    :::image type="content" source="../media/4-repos-files.png" alt-text="Screenshot of Azure DevOps that shows the Repos menu, with Files highlighted.":::
 
-1. Select **Clone**.
+1. Open Visual Studio Code. 
 
-   :::image type="content" source="../media/4-clone.png" alt-text="Screenshot of Azure DevOps that shows the repository, with the Clone button highlighted.":::
+1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
-1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the displayed username and password to somewhere safe.
+1. Navigate in the terminal to the directory where you want to clone the GitHub repository on your local computer. For example, to clone the repository to the _toy-website-workflow_ folder, run the following command:
 
-1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
+   ```bash
+   cd toy-website-workflow
+   ```
 
-    :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the button for cloning in Visual Studio Code highlighted.":::
+1. Type `git clone` and then paste the URL you copied earlier, which looks something like this:
 
-1. Create a folder to use for the repository, and then choose **Select Repository Location**.
+   ```bash
+   git clone https://github.com/mygithubuser/toy-website-workflow
+   ```
 
-1. You're using this repository for the first time, so you're prompted to sign in.
+1. This is the first time you've used this repository, so you are prompted to sign in.
 
-    If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
+   On Windows, type <kbd>1</kbd> to authenticate using a web browser, and select <kbd>Enter</kbd>.
 
-    If you're using macOS, enter the Git username and password that you generated a few moments ago.
+   On macOS, select **Authorize**.
 
-1. Visual Studio Code prompts you to open the repository. Select **Open**.
+1. A browser window appears. You may need to sign in to GitHub again. Select **Authorize**.
 
-   :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code that shows a prompt to open the cloned repository, with the Open button highlighted.":::
+1. Reopen Visual Studio Code in the repository folder by running the following command:
+
+   ```bash
+   code -r toy-website-workflow
+   ```
 
 ## Sign in to Azure
 
@@ -153,37 +154,94 @@ New-AzResourceGroup -Name ToyWebsiteTest -Location westus
 
 ::: zone-end
 
-## Create a service connection in Azure Pipelines
+## Create a service principal and grant it access to the resource group
 
-Next, create a service connection in Azure Pipelines. This connection automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy to the resource group.
+::: zone pivot="cli"
 
-1. In your browser, select **Project settings**.
+1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure CLI command in the Visual Studio Code terminal. Replace the placeholder with the resource group ID you copied in the last step.
 
-   :::image type="content" source="../../includes/media/azure-devops-project-settings.png" alt-text="Screenshot of Azure DevOps that shows the menu item for project settings highlighted.":::
+   ```azurecli
+   az ad sp create-for-rbac \
+     --name ToyWebsiteWorkflow \
+     --role Contributor \
+     --scopes RESOURCE_GROUP_ID \
+     --sdk-auth
+   ```
 
-1. Select **Service connections** > **Create service connection**.
+1. Select the JSON output from the previous command. It looks like this:
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows selections for creating a service connection.":::
+   ```json
+   {
+     "clientId": "c6bf233f-d1b8-480a-9cf7-27e2186345d2",
+     "clientSecret": "<secret value>",
+     "subscriptionId": "f0750bbe-ea75-4ae5-b24d-a92ca601da2c",
+     "tenantId": "dbd3173d-a96b-4c2f-b8e9-babeefa21304",
+     "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
+     "resourceManagerEndpointUrl": "https://management.azure.com/",
+     "activeDirectoryGraphResourceId": "https://graph.windows.net/",
+     "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
+     "galleryEndpointUrl": "https://gallery.azure.com/",
+     "managementEndpointUrl": "https://management.core.windows.net/"
+   }
+   ```
 
-1. Select **Azure Resource Manager** > **Next**.
+   Copy the entire output somewhere safe, including the curly braces. You'll use it soon. 
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the Azure Resource Manager service connection type highlighted.":::
+::: zone-end
 
-1. Select **Service principal (automatic)** > **Next**.
+::: zone pivot="powershell"
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the service principal option highlighted.":::
+1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure PowerShell code in the Visual Studio Code terminal. Replace the placeholder with the resource group ID you copied in the last step.
 
-1. In the **Subscription** dropdown list, select your Azure subscription.
+   ```azurepowershell
+   $resourceGroupId = 'RESOURCE_GROUP_ID'
 
-   A pop-up window might appear, asking you to sign in to Azure. If it does, enter your credentials and sign in.
+   $azureContext = Get-AzContext
+   $servicePrincipal = New-AzADServicePrincipal `
+   -DisplayName ToyWebsiteWorkflow `
+   -Role Contributor `
+   -Scope $resourceGroupId
 
-1. In the **Resource group** dropdown list, select **ToyWebsiteTest**.
+   $output = @{
+      clientId = $($servicePrincipal.ApplicationId)
+      clientSecret = $([System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password)
+      subscriptionId = $($azureContext.Subscription.Id)
+      tenantId = $($azureContext.Tenant.Id)
+   }
+   $output | ConvertTo-Json
+   ```
 
-1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
+1. Select the JSON output from the previous command. It looks like this:
 
-   :::image type="content" source="../media/4-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the details completed for creating a service connection, with the Save button highlighted.":::
+   ```json
+   {
+     "clientId": "c6bf233f-d1b8-480a-9cf7-27e2186345d2",
+     "clientSecret": "<secret value>",
+     "subscriptionId": "f0750bbe-ea75-4ae5-b24d-a92ca601da2c",
+     "tenantId": "dbd3173d-a96b-4c2f-b8e9-babeefa21304"
+   }
+   ```
 
-   > [!TIP]
-   > For simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.
+   Copy the entire output somewhere safe, including the curly braces. You'll use it soon.
 
-1. Select **Save**.
+::: zone-end
+
+## Create a GitHub secret
+
+You've created a resource group and a service principal. Next, create a secret in GitHub Actions.
+
+1. In your browser, navigate to your GitHub repository.
+
+1. Select **Settings** > **Secrets**.
+
+1. Select **New repository secret**.
+
+   :::image type="content" source="../media/5-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
+
+1. Name the secret *AZURE_CREDENTIALS*.
+
+1. In the **Value** field, paste the JSON object that you copied in the previous section.
+
+1. Select **Add secret**. 
+
+   :::image type="content" source="../media/5-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
