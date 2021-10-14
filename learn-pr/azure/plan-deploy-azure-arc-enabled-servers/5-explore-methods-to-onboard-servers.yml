@@ -13,20 +13,3 @@ azureSandbox: false
 durationInMinutes: 10
 content: |
   [!include[](includes/5-explore-methods-to-onboard-servers.md)]
-quiz:
-  title: "Check your knowledge"
-  questions:
-  - content: "Which of the following cannot be used to automate deployment of the Connected Machine Agent to multiple machines?"
-    choices:
-    - content: "Azure Policy"
-      isCorrect: true
-      explanation: "That's correct. TBD."
-    - content: "Group Policy"
-      isCorrect: false
-      explanation: "That's incorrect. TBD."
-    - content: "Systems Center Configuration Manager"
-      isCorrect: false
-      explanation: "That's incorrect. TBD."
-    - content: "Service Principal"
-      isCorrect: false
-      explanation: "That's incorrect. TBD."
