@@ -6,7 +6,7 @@ You need to prepare the specifications to apply the compute component to design 
 
 ## Learning objectives
 
-You will: 
+You will:
 
  -  Plan for implementing SAP solutions.
  -  Explore Azure virtual machines.
