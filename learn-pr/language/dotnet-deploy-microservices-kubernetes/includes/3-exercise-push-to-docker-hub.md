@@ -57,24 +57,24 @@ docker login
 ```
 
 > [!IMPORTANT]
-> Use the sme username and password from when you created your Docker account. You can visit the [Docker Hub website](https://hub.docker.com) to reset your password if needed.
+> Use the same username and password from when you created your Docker account. You can visit the [Docker Hub website](https://hub.docker.com) to reset your password, if needed.
 
 ## Upload the images to Docker Hub
 
-1. Enter the following code to retag, or rename, the Docker image you created under your Docker username.
+1. Enter the following code to retag, or rename, the Docker images you created under your Docker username.
 
     ```bash
     docker tag pizzafrontend [YOUR DOCKER USER NAME]/pizzafrontend
     docker tag pizzabackend [YOUR DOCKER USER NAME]/pizzabackend
     ```
 
-1. Then finally upload, or push, the Docker image to Docker Hub.
+1. Then finally upload, or push, the Docker images to Docker Hub.
 
     ```bash
     docker push [YOUR DOCKER USER NAME]/pizzafrontend
     docker push [YOUR DOCKER USER NAME]/pizzabackend
     ```
 
-In the course of this exercise, you cloned the Contoso Pizza Shop's code from GitHub. Used Dockerfiles contained within that code to create 2 Docker images and containers, and then pushed those images to Docker Hub.
+In this exercise, you cloned Contoso Pizza Shop code from GitHub, used Dockerfiles contained within that code to create two Docker images and containers, and then pushed those images to Docker Hub.
 
 Now you're ready to use Kubernetes to manage the deployment of Contoso Pizza Company's microservices.
