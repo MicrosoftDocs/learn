@@ -1,0 +1,40 @@
+### YamlMime:Module
+#LP name: Module 5: Accessibility Best Practices for Gaming Hardware
+uid: learn.hardware-devices
+metadata:
+  title: Accessibility best practices for gaming hardware
+  description: This module introduces accessibility best practice considerations for developing gaming hardware. For example, consoles, headsets, controllers, and other types of input devices. Accessible packaging components for these products are also presented.
+  ms.date: 08/10/2021
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+  showCreativeCommonsFooter: true
+title: Accessibility best practices for gaming hardware
+summary: This module introduces accessibility best practice considerations for developing gaming hardware. For example, consoles, headsets, controllers, and other types of input devices. Accessible packaging components for these products are also presented.
+abstract: |
+  In this module, you'll learn about:
+  - The role of accessible design in standard gaming hardware development
+  - Accessibility best practice guidelines to consider for hardware component operation and discoverability
+  - Accessibility best practice guidelines to consider when developing hardware packaging components
+prerequisites: |
+ - Familiarity with playing video games, navigating game platforms such as Xbox, PlayStation, Nintendo Switch, and Windows
+ - Familiarity with using standard gaming hardware controllers and inputs
+ - Basic understanding of foundational disability and accessibility principles terms and concepts is highly encouraged
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- student
+products:
+- xbox
+units:
+- learn.hardware-devices.introduction
+- learn.hardware-devices.standard-devices
+- learn.hardware-devices.hardware-components
+- learn.hardware-devices.component-function
+- learn.hardware-devices.accessible-packaging
+- learn.hardware-devices.summary
+badge:
+  uid: learn.hardware-devices.badge

@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.hardware-devices.component-function
+title: Component Discoverability and Status Indicator Accessibility
+metadata:
+  title: Component discoverability and status indicator accessibility
+  description: This content is part of the accessibility best practices for gaming hardware module.
+  ms.date: 08/10/2021
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-hardware-devices
+durationInMinutes: 18
+content: |
+  [!include[](includes/03-component-function.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How can hardware component identification, including the functions of ports, be made more accessible for players without vision?"
+    choices:
+    - content: "Increase the size and contrast of the text labels that identify the connection type and that are placed above each port."
+      isCorrect: false
+      explanation: "Incorrect. While this option would be helpful for players with low vision who have difficulty seeing visual elements, this approach would not support players with no vision who would need information portrayed through channels other than vision, such as touch or sound."
+    - content: "Include distinct tactile indicators for each port type that are easily differentiated by touch."
+      isCorrect: true
+      explanation: "Correct. This approach would provide players without vision a means to identify function through a non-visual channel."
+    - content: "Ship the device with cords pre-connected to the device, eliminating the need for players to identify or insert them at home."
+      isCorrect: false
+      explanation: "Incorrect. While this option would eliminate the need to connect cords for initial set-up, this would not help players identify the ports on their devices for future tasks like moving their device to a different room or connecting to a new TV display."
+  - content: "A device uses color and light as the sole means of communication to notify the player when battery power is low. How can the battery status indicator and its associated notifications be modified to make them accessible to players with visual or cognitive disabilities?"
+    choices:
+    - content: "Provide an option to turn on audio-based notifications that alert the player that the battery is low and prompt them to plug in their device."
+      isCorrect: true
+      explanation: "Correct. This approach would not only alert players with low or no vision who cannot see that their low battery indicator light is flashing, but it would also provide a straight-forward way of presenting this information. Those who are new to the device or have learning disabilities will not have to interpret what the change in light color means. Instead they will receive a clear verbal cue that battery is low, and what action they can take to address the issue."
+    - content: "Ensure that the battery level is available in a software-based user interface on another device to which headphones can be connected, such as a phone or desktop application."
+      isCorrect: false
+      explanation: "Incorrect. Though this option can benefit players who readily have another device with a UI on hand, a more accessible option would be to represent this information through the primary device itself."
+    - content: "Using large status indicator lights that rapidly blink to capture a player's attention."
+      isCorrect: false
+      explanation: "Incorrect. Though this option can help make the low battery alert more visible and noticeable, it still would not be helpful to users with no vision. It would also still require users to determine what a flashing light indicates."
