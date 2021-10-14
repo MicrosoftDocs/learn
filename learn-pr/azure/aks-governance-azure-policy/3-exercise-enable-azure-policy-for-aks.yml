@@ -4,7 +4,7 @@ title: Exercise - Enable Azure Policy for AKS
 metadata:
   title: Exercise - Enable Azure Policy for Azure Kubernetes Services
   description: Exercise to enable Azure Policy for Azure Kubernetes Services cluster
-  ms.date: 07/07/2021
+  ms.date: 10/13/2021
   author: mosabami
   ms.author: aayodeji
   ms.topic: interactive-tutorial

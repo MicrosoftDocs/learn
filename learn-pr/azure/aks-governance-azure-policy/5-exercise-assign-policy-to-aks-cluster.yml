@@ -4,7 +4,7 @@ title: Exercise - Assign a policy to an AKS Cluster
 metadata:
   title: Exercise - Assign a policy to an Azure Kubernetes Services Cluster
   description: Exercise to assign a policy to an AKS cluster
-  ms.date: 07/07/2021
+  ms.date: 10/13/2021
   author: mosabami
   ms.author: aayodeji
   ms.topic: interactive-tutorial
