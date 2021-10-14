@@ -30,7 +30,8 @@ To use your cognitive services resource, client applications need its authentica
 1. Wait for deployment to complete. Then go to your cognitive services resource, and on the **Overview** page, click the link to manage the keys for the service. You will need the endpoint and keys to connect to your cognitive services resource from client applications.
 2. View the **Keys and Endpoint** page for your Speech resource. You will need the **location/region** and keys to connect from client applications.
 
-**Note**: To use the Translator service you do not need to use the Cognitive Service endpoint. A global endpoint just for the Translator service is provided. 
+> [!NOTE] 
+> To use the Translator service you do not need to use the Cognitive Service endpoint. A global endpoint just for the Translator service is provided. 
 
 ## Configure and run a client application
 
@@ -61,14 +62,8 @@ Now that you have a resource, you can run a simple client application that uses 
     The sample client application will use the Translator service to do several tasks:
     - Translate text from English into French, Italian, and Chinese. 
     - Translate audio from English into text in French 
-    >Note: A real application could accept the input from a microphone and send the response to a speaker, but in this simple example, we'll use pre-recorded input in an audio file.
-
-    Use the audio player below to hear the input audio the application will process:
-
-    <audio controls>
-      <source src="https://github.com/GraemeMalcolm/ai-stuff/raw/main/data/speech/time.wav" type="audio/wav">
-    Your browser does not support the audio element.
-    </audio>
+    > [!NOTE]
+    > A real application could accept the input from a microphone and send the response to a speaker, but in this simple example, we'll use pre-recorded input in an audio file.
 
 6. In the Cloud Shell pane, enter the following command to run the code:
 
