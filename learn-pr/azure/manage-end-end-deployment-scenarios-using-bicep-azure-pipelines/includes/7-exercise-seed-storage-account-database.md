@@ -172,13 +172,13 @@ Here, you define the steps required to deploy the database components of your we
 
 1. Verify that your *main.bicep* file looks like this:
 
-   :::code language="bicep" source="code/7-main.bicep" :::
+   :::code language="bicep" source="code/7-main.bicep" highlight="22-27, 34-36, 38-39, 50-55, 63-68, 102-117, 142-152, 155-178, 182-185" :::
 
    If it doesn't, update it to match the above file.
 
 1. Verify that your *deploy.yml* file looks like this:
 
-   :::code language="yaml" source="code/7-deploy.yml" :::
+   :::code language="yaml" source="code/7-deploy.yml" highlight="29-31, 55-57, 90-93, 95-99, 100-104, 117-156" :::
 
    If it doesn't, update it to match the above file.
 
