@@ -94,11 +94,11 @@ Now that you've tagged the images in your project, you're ready to train a model
 
 Now you're ready to publish your trained model and use it from a client application.
 
-9. Click **&#128504; Publish** to publish the trained model with the following settings:
+1. Click **&#128504; Publish** to publish the trained model with the following settings:
     - **Model name**: detect-produce
     - **Prediction Resource**: *The resource you created previously*.
 
-10. After publishing, click the *Prediction URL* (&#127760;) icon to see information required to use the published model. Later, you will need the appropriate URL and Prediction-Key values to get a prediction from an Image URL, so keep this dialog box open and carry on to the next task.
+2. After publishing, click the *Prediction URL* (&#127760;) icon to see information required to use the published model. Later, you will need the appropriate URL and Prediction-Key values to get a prediction from an Image URL, so keep this dialog box open and carry on to the next task.
 
 ## Configure and run a client application
 
