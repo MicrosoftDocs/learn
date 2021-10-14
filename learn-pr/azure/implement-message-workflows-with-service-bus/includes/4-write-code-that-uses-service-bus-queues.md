@@ -44,7 +44,7 @@ await using var client = new ServiceBusClient(connectionString);
 ServiceBusSender sender = client.CreateSender(queueName);
 ```
 
-You can send a message to the queue by calling the `ServiceBusSender.SendMessageAsync()` method, and passing the message in the form of a UTF-8 encoded string.
+You can send a message to the queue by calling the `ServiceBusSender.SendMessageAsync()` method, and passing a `ServiceBusMessage`.
 
 ```C#
 string message = "Sure would like a large pepperoni!";
