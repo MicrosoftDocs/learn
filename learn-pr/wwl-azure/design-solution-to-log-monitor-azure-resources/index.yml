@@ -32,7 +32,6 @@ products:
 - azure-log-analytics
 - azure-monitor
 units:
-- learn.wwl.design-solution-to-log-monitor-azure-resources.summand-resources
 - learn.wwl.design-solution-to-log-monitor-azure-resources.introduction
 - learn.wwl.design-solution-to-log-monitor-azure-resources.design-for-azure-monitor-data-sources
 - learn.wwl.design-solution-to-log-monitor-azure-resources.design-for-log-analytics
@@ -40,5 +39,6 @@ units:
 - learn.wwl.design-solution-to-log-monitor-azure-resources.design-for-azure-data-explorer
 - learn.wwl.design-solution-to-log-monitor-azure-resources.monitor-resources-for-performance-efficiency
 - learn.wwl.design-solution-to-log-monitor-azure-resources.knowledge-check
+- learn.wwl.design-solution-to-log-monitor-azure-resources.summand-resources
 badge:
   uid: learn.wwl.design-solution-to-log-monitor-azure-resources.badge
