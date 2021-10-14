@@ -59,7 +59,7 @@ Continuing the previous example, imagine that you want to run both of your deplo
 
 You can specify the dependencies between jobs by using the `needs` keyword:
 
-:::code language="yaml" source="code/2-jobs-needs.yml" highlight="8, 13" :::
+:::code language="yaml" source="code/2-jobs-needs.yml" highlight="10, 15" :::
 
 When you use the `needs` keyword, the workflow waits for the dependent job to finish successfully before it starts the next job. If the workflow detects that all of the dependencies for multiple jobs have been satisfied, it can run those jobs in parallel.
 
@@ -72,10 +72,9 @@ Sometimes, you want to run a job when a previous job fails. For example, here's 
 
 You use the `if` keyword to specify a condition that should be met before a job runs:
 
-:::code language="yaml" source="code/2-jobs-condition.yml" highlight="13" :::
+:::code language="yaml" source="code/2-jobs-condition.yml" highlight="16" :::
 
 In the preceding example, when everything goes well, the workflow runs the **validate** job first, and then it runs the **deploy** job. It skips the **rollback** job. However, if either the **validate** or **deploy** job fails, the workflow runs the **rollback** job. You'll learn more about rollback later in this module.
-
 
 ## Bicep deployment jobs
 

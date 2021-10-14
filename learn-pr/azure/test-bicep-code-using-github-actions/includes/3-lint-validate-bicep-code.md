@@ -49,7 +49,7 @@ Because you want your Bicep templates to be linted each time anyone checks in co
 
 You express this addition in your workflow YAML file like this:
 
-:::code language="yaml" source="code/3-lint.yml" highlight="8" :::
+:::code language="yaml" source="code/3-lint.yml" highlight="7" :::
 
 ### Linter warnings and errors
 
@@ -83,7 +83,7 @@ Preflight validation requires communication with Azure, but it doesn't actually 
 
 You use the `az deployment group validate` Azure CLI command to submit a Bicep file for preflight validation:
 
-:::code language="yaml" source="code/3-preflight.yml" highlight="14-22" :::
+:::code language="yaml" source="code/3-preflight.yml" highlight="16-22" :::
 
 This command is similar to the `az deployment group create` command, but it doesn't actually deploy any resources. It performs extra checks against the resources that are being used in your template. 
 

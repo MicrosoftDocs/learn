@@ -8,7 +8,7 @@ To meet these objectives, you'll:
 > * Create a resource group in Azure.
 > * Create a secret in GitHub.
 
-> Note to John: copy pasted quite some steps from https://raw.githubusercontent.com/MicrosoftDocs/learn-pr/5778ea14a752a65b5867bbad505e8f0bdee6bfac/learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/includes/3-exercise-create-run-basic-workflow.md?token=AAH6TAKYJCXSRYZ42ATOVC3BN3BQU (cloning the repo) and https://raw.githubusercontent.com/MicrosoftDocs/learn-pr/5778ea14a752a65b5867bbad505e8f0bdee6bfac/learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/includes/5-exercise-create-github-secret.md?token=AAH6TAIOL7KTZIZDCF76WMTBN3BKK (creating SP and GH secret)
+<!-- TODO Note to John: copy pasted quite some steps from https://raw.githubusercontent.com/MicrosoftDocs/learn-pr/5778ea14a752a65b5867bbad505e8f0bdee6bfac/learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/includes/3-exercise-create-run-basic-workflow.md?token=AAH6TAKYJCXSRYZ42ATOVC3BN3BQU (cloning the repo) and https://raw.githubusercontent.com/MicrosoftDocs/learn-pr/5778ea14a752a65b5867bbad505e8f0bdee6bfac/learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/includes/5-exercise-create-github-secret.md?token=AAH6TAIOL7KTZIZDCF76WMTBN3BKK (creating SP and GH secret) -->
 
 ## Get the GitHub repository
 
@@ -21,13 +21,19 @@ The modules in this learning path are part of a progression. For learning purpos
 
 ### Start from the template repository
 
-1. In your browser navigate to the [template repo](https://github.com/MicrosoftDocs/mslearn-test-bicep-code-using-github-actions)
+1. In your browser navigate to the [template repo](https://github.com/MicrosoftDocs/mslearn-test-bicep-code-using-github-actions?azure-portal=true).
 
 1. Select **Use this template**. 
 
-1. On the **Create a new repository from mslearn-test-bicep-code-using-github-actions** fill out a name for your new project and select the **Public** checkbox. 
+   <!-- TODO SS -->
+
+1. Enter a name for your new project, such as *toy-website-workflow*.
+
+1. Select the **Public** checkbox.
 
 1. Select **Create repository from template**. 
+
+   <!-- TODO SS -->
 
 > [!IMPORTANT]
 > The final exercise in this module contains important cleanup steps. Be sure to follow the cleanup steps even if you don't complete this module.
