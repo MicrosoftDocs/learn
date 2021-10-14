@@ -8,26 +8,30 @@ In order for Kubernetes to create a container image, it needs a place to get it 
 
 ## Retrieve the Contoso Pizza Shop microservice container images
 
-The code for the Contoso Pizza Shop and the Dockerfiles to build the container images have already been created for you. Clone the [repository from GitHub](https://github.com/microsoftdocs/mslearn-dotnet-kubernetes) to retrieve the code.
+The code for the Contoso Pizza Shop and the Dockerfiles to build the container images has already been created for you. Clone the [repository from GitHub](https://github.com/microsoftdocs/mslearn-dotnet-kubernetes) to retrieve the code.
 
-1. Open up a command prompt or terminal window.
-1. Change to a directory you want the code downloaded to.
+1. Open a command prompt or terminal window.
+ 
+1. Open the root directory you want the code downloaded to. The code will be downloaded into a new folder in that location.
+
 1. Run the following command to download, or clone, the sample repository.
 
     ```bash
     git clone https://github.com/microsoftdocs/mslearn-dotnet-kubernetes
     ```
 
-The code will be downloaded into a new folder called **mslearn-dotnet-kubernetes**.
+The code is downloaded into a new folder called **mslearn-dotnet-kubernetes**.
 
 ### Verify the Docker images by creating containers locally
 
-There are 2 containers in the Contoso Pizza Shop project. Before pushing the images to Docker Hub, let's use them to create the containers locally. After the containers are created and running, we will be able to browse the Contoso Pizza Company website and verify the microservices are running OK.
+There are two containers in the Contoso Pizza Shop project. Before pushing the images to Docker Hub, let's use them to create the containers locally. After the containers are created and running, we will be able to browse the Contoso Pizza Company website and verify the microservices are running OK.
 
 Follow these steps to create and run Docker containers from the Docker files you just downloaded.
 
 1. Make sure Docker Desktop is running.
-1. Open up a command prompt and switch to the directory where the code you just downloaded resides.
+
+1. Open a command prompt and switch to the directory where the code you just downloaded resides.
+ 
 1. Run the following command to build the containers.
 
     ```bash
@@ -36,13 +40,13 @@ Follow these steps to create and run Docker containers from the Docker files you
 
     It may take a while to build the containers.
 
-1. To run the images run this command.
+1. Run the following command to start and run the app and attach the containers.
 
     ```bash
     docker-compose up
     ```
 
-1. When that is finished, you can browse to `http:\\localhost:5902` to see the Contoso Pizza Shop's menu.
+1. When the operation has finished, browse to `http:\\localhost:5902` to see the Contoso Pizza Shop's menu.
 
 ## Sign in to Docker Hub
 
@@ -53,7 +57,7 @@ docker login
 ```
 
 > [!IMPORTANT]
-> Use the username and password from when you created your Docker account. You can visit the [Docker Hub website](https://hub.docker.com) to reset your password if needed.
+> Use the sme username and password from when you created your Docker account. You can visit the [Docker Hub website](https://hub.docker.com) to reset your password if needed.
 
 ## Upload the images to Docker Hub
 
@@ -68,7 +72,7 @@ docker login
 
     ```bash
     docker push [YOUR DOCKER USER NAME]/pizzafrontend
-    docker push [YOUR DOCKER USER NAME/pizzabackend]
+    docker push [YOUR DOCKER USER NAME]/pizzabackend
     ```
 
 In the course of this exercise, you cloned the Contoso Pizza Shop's code from GitHub. Used Dockerfiles contained within that code to create 2 Docker images and containers, and then pushed those images to Docker Hub.
