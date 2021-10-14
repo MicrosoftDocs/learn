@@ -16,7 +16,7 @@ The lint stage happens only once during the pipeline run, regardless of how many
 
 1. Create a new file in the *pipeline-templates* folder named *lint.yml*.
 
-   :::image type="content" source="../media/5-visual-studio-code-lint-yml-file.png" alt-text="Screenshot of Visual Studio Code Explore, with the pipeline-templates folder and the lint dot Y M L file.":::
+   :::image type="content" source="../media/5-visual-studio-code-lint-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the pipeline-templates folder and the lint dot Y M L file.":::
 
 1. Paste the following pipeline template definition into the file:
 
@@ -43,7 +43,7 @@ Create a pipeline template that defines all of the stages required to deploy eac
    > [!NOTE]
    > When you start to work with your YAML file in Visual Studio Code, you might see some red squiggly lines telling you there's a problem. This is because the Visual Studio Code extension for YAML files sometimes incorrectly guesses the file's schema.
    >
-   > You can ignore the problems that the extension reports. Or if you prefer, you can add the following code to the top of the file to suppress the extension's feature:
+   > You can ignore the problems that the extension reports. Or if you prefer, you can add the following code to the top of the file to suppress the extension's guessing:
    >
    > ```yaml
    > # yaml-language-server: $schema=./deploy.yml
@@ -105,7 +105,7 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
 1. Select the most recent run of your pipeline.
 
-   Notice that the pipeline run now shows all the stages you defined in the YAML file. You might need to scroll horizontally to see them all.
+   Notice that the pipeline run now shows all the stages that you defined in the YAML file. You might need to scroll horizontally to see them all.
 
    :::image type="content" source="../media/5-stages.png" alt-text="Screenshot of Azure Pipelines that shows the pipeline run stages.":::
 
@@ -123,9 +123,9 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
 1. Select the **Test** tab to show the test results from this pipeline run.
 
-   :::image type="content" source="../media/5-tests.png" alt-text="Screenshot of Azure Pipelines that shows the page for pipeline run tests, with four test results.":::
+   Notice that there are now four test results. The smoke test runs on both the test and production environments, so you see the results for both sets of tests.
 
-   Notice that there are now four test results. The smoke test runs on both the test and production environments, so you see the results for both sets of tests
+   :::image type="content" source="../media/5-tests.png" alt-text="Screenshot of Azure Pipelines that shows the page for pipeline run tests, with four test results.":::
 
 1. Select **Pipelines** > **Environments**.
 
@@ -137,9 +137,9 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
 1. Select the deployment, and select the **Changes** tab.
 
-   :::image type="content" source="../media/5-environment-commits.png" alt-text="Screenshot of Azure Pipelines that shows the production environment's deployment details, with a list of commits.":::
-
    Notice that the tab for changes shows you the list of commits included in the deployment. This helps you to see exactly what has changed in your environment over time.
+
+   :::image type="content" source="../media/5-environment-commits.png" alt-text="Screenshot of Azure Pipelines that shows the production environment's deployment details, with a list of commits.":::
 
 1. In your browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true). 
 
