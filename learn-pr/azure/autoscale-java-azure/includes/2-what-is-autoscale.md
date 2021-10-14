@@ -12,13 +12,9 @@ Some loads are predictable. For example, Domino's pizza sees peak demand for its
 
 You can configure scale settings for an application with either two modes manual or automatic. Manual is as you would expect, you set the absolute count of instances. Automatic (AutoScale) however allows you to set rules that govern how and by how much you should scale.
 
-Autoscale allows you to have the right amount of resources running to handle the load on your application. Having a minimum makes sure your application is always running even under no load. Having a maximum limits your total possible hourly cost. You automatically scale between these two extremes using rules you create.
+Autoscale allows you to have the right amount of resources running to handle the load on your application. Autoscaling eases management overhead by reducing the need for system operators to constantly make decisions about adding or removing resources or checking the system's performance. Having a minimum makes sure your application is always running even under no load. Having a maximum limits your total possible hourly cost. You automatically scale between these two extremes using rules you create.
 
-Autoscaling eases management overhead by reducing the need for system operators to constantly make decisions about adding or removing resources or checking the system's performance.
-
-//TODO https://azure.microsoft.com/mediahandler/files/resourcefiles/azure-sql-database-serverless-infographic/SQL%20DB%20serverless%20infographic_Mar%202020.pdf
-
-//TODO https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-choose-offer 
+:::image type="content" source="../media/computesaving.jpg" alt-text="save on compute":::
 
 ## Horizontal vs vertical scaling
 
