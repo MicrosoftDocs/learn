@@ -29,7 +29,7 @@ To configure Azure AD single sign-on with SAP HANA, complete the following steps
 3.  Assign Azure AD users to allow them to use Azure AD single sign-on.
 4.  Create SAP HANA users to provision counterpart accounts in SAP HANA linked to the corresponding Azure AD user accounts.
 
-### Configure Azure AD single sign-on
+### Configure Azure AD single sign-on in the portal
 
 1.  To configure Azure AD single sign-on with SAP HANA, in the Azure portal, on the SAP HANA application integration page, select **Single sign-on**.
 2.  In the **Select a Single sign-on method** dialog, select **SAML/WS-Fed** mode to enable single sign-on.
