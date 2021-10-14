@@ -21,7 +21,7 @@ In this module, you will:
 
 ## Learn the scenario
 
-Imagine you work for a manufacturing company that uses industrial machines as part of its operations. When one of these machines breaks, it costs your company time and money. That's why proactively maintaining these machines is important. However, there are many different factors like usage that affect the need for maintenance. What if you could predict when a machine is going to need maintenance using sensor data?
+Imagine you work for a manufacturing company that uses industrial machines as part of its operations. When one of these machines breaks, it costs your company time and money. That's why performing maintenance on these machines is important. However, there are many different factors like usage that affect the need for maintenance. What if you could predict when a machine is going to need maintenance using sensor data?
 
 Machine learning may be able to help by analyzing historical data from these sensors and learning patterns to help you predict whether a machine needs maintenance or not.
 

@@ -27,7 +27,7 @@ Some reasons why you might consider local compute environments include:
 - Training locally doesn't cost you anything since you're using your computer's resources.
 - For scenarios where you don't want your data to leave your computer or data center, training locally is a good option.
 
-### Cloud & GPU environments
+### Azure compute environments
 
 Scenarios like image classification and object detection are resource intensive. Using a GPU can often speed up the training process. If you don't have a GPU a computer with enough CPU or RAM, offloading the training process to Azure can lighten the load on your system.
 

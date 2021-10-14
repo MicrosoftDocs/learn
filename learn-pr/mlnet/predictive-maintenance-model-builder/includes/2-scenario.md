@@ -30,7 +30,6 @@ For supervised tasks, the **label is known**. Examples of supervised machine lea
 For unsupervised tasks, the **label is unknown**. Examples of unsupervised machine learning tasks include:
 
 - Clustering
-- Recommendation
 - Anomaly detection
 
 ## Scenarios in Model Builder

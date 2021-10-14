@@ -1,4 +1,4 @@
-In this unit, you'll choose your 
+In this unit, you'll choose the compute environment to train your machine learning model
 
 ## Choose your environment
 
