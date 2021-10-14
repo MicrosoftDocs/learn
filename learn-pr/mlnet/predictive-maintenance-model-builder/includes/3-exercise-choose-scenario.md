@@ -2,11 +2,11 @@ In this unit, you'll add a machine learning model to a .NET class library and ch
 
 ## Create C# Class Library
 
-With Model Builder, you can add machine learning to an existing project, or. Since we're starting from from scratch, we'll create a C# class library project.
+With Model Builder, you can add machine learning to an existing project or a new project. Since you're starting from scratch, create a new C# class library project.
 
 1. Start Visual Studio
 1. On the Start Window, choose **Create a new project**
-1. In the Create a a new project dialog, type "class library" into the search bar.
+1. In the Create a new project dialog, type "class library" into the search bar.
 1. Select **Class Library** from the list of options. Make sure that the language is C# and select **Next**.
 
 :::image type="content" source="../media/create-class-library-project.png" alt-text="Create class library project":::

@@ -10,7 +10,7 @@ If you have an existing application you'd like to use your model to make predict
 The code snippet does the following:
 
 1. Creates an instance of your model input.
-1. Uses the `Predict` method in the *.consumption.cs* file to make predictions using the input data you've provided.
+1. Calls the `Predict` method in the *.consumption.cs* file to make predictions using the input data you've provided.
 
 ## Project templates
 

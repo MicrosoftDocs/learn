@@ -2,7 +2,7 @@ In this module, you'll learn how to load and prepare data into Model Builder and
 
 ## Loading data into Model Builder
 
-Data is the most important component for building machine learning models. The process for loading data into Model Builder consists of 3 steps:
+Data is the most important component for building machine learning models. The process for loading data into Model Builder consists of three steps:
 
 1. Choose your data source type
 1. Provide the location of your data
@@ -41,11 +41,11 @@ In cases where you'd like to customize how your data is loaded, Model Builder pr
 
 For columns, you can choose its:
 
-- Purpose - Should the column be a feature, label, or ignored? Note that you can only have one column selected as the label.
+- Purpose - Should the column be a feature, label, or ignored? You can only have one column selected as the label.
 - Data type - Is the value a single-precision float value, string, or boolean?
 - Categorical - Does the column represent a categorical value?
 
-When it comes to data formatting, you can choose whether the data contains column headers, the column separator (comma,tab,semicolon), and the decimal separator type (period or comma).
+When it comes to data formatting, you can choose whether the data contains column headers, the column separator (comma, semicolon, tab), and the decimal separator type (period or comma).
 
 ## Understanding the predictive maintenance dataset
 
@@ -55,26 +55,26 @@ The AI4I 2020 Predictive Maintenance Dataset is a synthetic dataset that reflect
 
 Below is a preview of what the data looks like:
 
-|UID|Product ID|Type|Air temperature [K]|Process temperature [K]|Rotational speed [rpm]|Torque [Nm]|Tool wear [min]|Machine failure|TWF|HDF|PWF|OSF|RNF|
+|UDI|Product ID|Type|Air temperature [K]|Process temperature [K]|Rotational speed [rpm]|Torque [Nm]|Tool wear [min]|Machine failure|TWF|HDF|PWF|OSF|RNF|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |1|M14860|M|298.1|308.6|1551|42.8|0|0|0|0|0|0|0|
 |162|L47341|L|298.3|308.1|1412|52.3|218|1|0|0|0|1|0|
 
 The columns are defined as follows:
 
-- **UID**: The row's index.
+- **UDI**: The row's index.
 - **Product ID**: A product identifier containing a product type category and a variant-specific serial number.
 - **Type**: Product quality category. L, M, or H for low (50% of all products), medium (30%) and high (20%).
-- **Air temparature**, **Process temperature**, **Rotational speed**, **Torque**, **Tool wear**: Readings collected form sensors.
+- **Air temperature**, **Process temperature**, **Rotational speed**, **Torque**, **Tool wear**: Readings collected form sensors.
 - **Machine failure**: binary label that indicates whether the machine has failed.
 - **TWF**, **HDF**, **PWF**, **OSF**, **RNF**: Independent machine failure modes. A value of 1 represents that failure mode occurred.
 
 For more details, see [AI4I 2020 Predictive Maintenance Dataset Data Set](https://archive.ics.uci.edu/ml/datasets/AI4I+2020+Predictive+Maintenance+Dataset).
 
-For our scenario we won't be using all of the columns in the dataset since they either don't inform our prediction or contain redundant information.
+For this scenario you won't use all of the columns in the dataset since they either don't inform the prediction or contain redundant information.
 
 Since you'd like to be able to predict whether a machine has failed or not, the Machine failure column is the label.
 
-In Model Builder, For features, you can use information from the Product ID, Type, and various sensor reading columns.
+In Model Builder, for features, you can use information from the Product ID, Type, and various sensor reading columns.
 
 The failure modes, while they are useful in diagnosing the root cause of the failure, for your use case, you only want to know whether a machine has failed or not. Additionally, similar information is already captured by the label column. Therefore, you can ignore these columns.
