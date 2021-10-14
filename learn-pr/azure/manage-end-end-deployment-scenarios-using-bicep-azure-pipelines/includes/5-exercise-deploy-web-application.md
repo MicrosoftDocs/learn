@@ -65,7 +65,7 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
 1. Open the *deploy.yml* file in the *deploy/pipeline-templates* folder.
 
-1. In the definition of the *Deploy* stage's deployment job, configure the job to use the Windows hosted agent pool:
+1. In the definition of the *Deploy* stage's deployment job (near line 59) configure the job to use the Windows hosted agent pool:
 
    :::code language="yaml" source="code/5-deploy.yml" range="55-64" highlight="6-7" :::
 
@@ -142,4 +142,4 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
    :::image type="content" source="../media/5-smoke-test-failure-log.png" alt-text="Screenshot of Azure DevOps showing the pipeline run log, with the output of the smoke test displayed. The J S O N health test result is highlighted.":::
 
-   Notice that the pipeline log includes the health check response. The response indicates that there's a problem with the application's communication with Azure SQL Database. You haven't yet configured the database, so the website can't access it. You'll fix this soon.
+   Notice that the pipeline log includes the health check response. The response indicates that there's a problem with the application's communication with Azure SQL Database. You haven't yet deployed or configured a database, which is why the website can't access it. You'll fix this soon.

@@ -17,7 +17,7 @@ Your Bicep file already defines a storage account, but it doesn't define a blob 
 
 1. In Visual Studio Code, open the *main.bicep* file in the *deploy* folder.
 
-1. Below the variable definitions, add a new variable definition for the blob storage container's name:
+1. Below the variables that define resource names (near line 27), add a new variable definition for the blob storage container's name:
 
    :::code language="bicep" source="code/7-main.bicep" range="34" :::
 
@@ -50,13 +50,9 @@ Your Bicep file doesn't currently deploy an Azure SQL logical server or database
 
    :::code language="bicep" source="code/7-main.bicep" range="22-27" :::
 
-1. Below the variable definitions, add new variables to define the names of your Azure SQL logical server and database:
+1. Below the variables that define resource names, add new variables to define the names of your Azure SQL logical server and database:
 
    :::code language="bicep" source="code/7-main.bicep" range="35-36" :::
-
-1. Near the bottom of the file, above the outputs, add the Azure SQL logical server and database resources:
-
-   :::code language="bicep" source="code/7-main.bicep" range="155-178" :::
 
 1. Below the variables you just added, define a new variable that creates a connection string for the application to access the database:
 
@@ -64,6 +60,10 @@ Your Bicep file doesn't currently deploy an Azure SQL logical server or database
 
    > [!NOTE]
    > For simplicity, the application uses the administrator login and password to access the database. This isn't good practice for a production solution, though. It's better to use an App Service managed identity to access the database, and grant the managed identity the minimum permissions needed by the application. We link to more information in the summary.
+
+1. Near the bottom of the file, above the outputs, add the Azure SQL logical server and database resources:
+
+   :::code language="bicep" source="code/7-main.bicep" range="155-178" :::
 
 1. Update the `environmentConfigurationMap` variable to define the SKUs to use for your database for each environment:
 
@@ -154,7 +154,7 @@ The Bicep file now has two new mandatory parameters - `sqlServerAdministratorLog
 
 Here, you define the steps required to deploy the database components of your website. First, you add a step to deploy the DACPAC file that the pipeline previously built. Then, you add sample data to the database and storage account, but only for non-production environments.
 
-1. Below the *DeployWebsiteApp* step in the *Deploy* stage, add a new step to deploy DACPAC file:
+1. Below the *DeployWebsiteApp* step in the *Deploy* stage, add a new step to deploy the DACPAC file:
 
    :::code language="yaml" source="code/7-deploy.yml" range="117-129" :::
 
