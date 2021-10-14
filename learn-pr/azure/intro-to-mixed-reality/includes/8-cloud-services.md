@@ -1,4 +1,4 @@
-When you're developing mixed reality content, you'll likely run into scenarios where you need to store object placement information or render complex 3D models. Or you need to take advantage of cognitive services like speech translation and computer vision.  Also, if you're developing Mesh-enabled mixed reality applications, people can collaborate on 3D models from remote locations, as if they're in the same room working with each other.
+When you're developing mixed reality content, you'll likely run into scenarios where you need to store object placement information or render complex 3D models. Or you need to take advantage of cognitive services like speech translation and computer vision.  Also, with Microsoft Mesh, people can collaborate on 3D models from remote locations, as if they're in the same room working with each other.
 
 ## Mixed reality cloud services
 
