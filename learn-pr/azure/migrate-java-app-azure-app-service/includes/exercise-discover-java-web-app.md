@@ -1,4 +1,4 @@
-In this exercise, we'll use the Azure Migrate: App Containerization tool to discover the Java web application that needs to be containerized and migrated. 
+In this exercise, we'll use the App Containerization tool to discover the Java web application that needs to be containerized and migrated. 
 
 ## Complete tool pre-requisites 
 
@@ -8,7 +8,7 @@ In this exercise, we'll use the Azure Migrate: App Containerization tool to disc
     ![Default load-up for App Containerization tool.](../media/tool-home.png)
 
 3. Accept the **license terms**, and read the third-party information.
-4. The tool will automatically check for internet connectivity and install the latest version of the Azure Migrate: App Containerization tool.  
+4. The tool will automatically check for internet connectivity and install the latest version of the App Containerization tool.  
 5. The tool will inform you to enable SSH on the application server which was done as part of the setup. Click **continue**.
 
 
@@ -60,7 +60,7 @@ Parameterizing the configuration makes it available as a deployment time paramet
 1. Click **edit** under App Folders to review the detected application folders. The detected application folders have been identified as mandatory artifacts needed by the application and will be copied into the container image.
 2. Click **add folders** and specify the folder paths to be added.
 3. Add **/var/airsonic** as the folder path in the text box.
-4. Select **persistent volume** as the storage option ito store the folder outside the container on a persistent volume.
+4. Select **persistent volume** as the storage option to store the folder outside the container on a persistent volume.
 
     ![Screenshot for externalizing app folders for Java web application.](../media/discovered-app-folders.png)
 
