@@ -10,7 +10,7 @@ Here, you will learn how to write that code.
 
 ## Azure.Messaging.ServiceBus NuGet package
 
-To make it easy to write code that sends and receives messages through Service Bus, Microsoft provides a library of .NET classes, which you can use in any .NET Framework language to interact with a Service Bus queue, topic, or relay. You can include this library in your application by adding the **Azure.Messaging.ServiceBus** NuGet package.
+To make it easy to write code that sends and receives messages through Service Bus, Microsoft provides a library of .NET classes, which you can use in any .NET language to interact with a Service Bus queue, topic, or relay. You can include this library in your application by adding the **Azure.Messaging.ServiceBus** NuGet package.
 
 ## Connection strings and keys
 
@@ -44,7 +44,7 @@ await using var client = new ServiceBusClient(connectionString);
 ServiceBusSender sender = client.CreateSender(queueName);
 ```
 
-You can send a message to the queue by calling the `QueueClient.SendAsync()` method, and passing the message in the form of a UTF-8 encoded string.
+You can send a message to the queue by calling the `ServiceBusSender.SendMessageAsync()` method, and passing the message in the form of a UTF-8 encoded string.
 
 ```C#
 string message = "Sure would like a large pepperoni!";
