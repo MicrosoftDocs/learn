@@ -50,7 +50,7 @@ In this case, it is ideal to choose SQL Elastic pools, to scale, manage performa
 
 The above image shows SQL elastic pools and the scaling capability for the different service tiers. The databases within the pool share the allocated resources. In situations where there is a low average utilization, but infrequent, high utilization spikes you can allocate enough capacity in the pool to manage the spikes for the group. To properly configure SQL elastic pools to reduce server costs, the right purchasing model and the service tier (DTU-based model in basic, standard & premium or VCore-based model in general purpose or business critical) must be selected.
 
-> [!NOTE] Read more about [SQL elastic pools](/azure/azure-sql/database/elastic-pool-overview).
+Read more about [SQL elastic pools](/azure/azure-sql/database/elastic-pool-overview).
 
 ## Design Horizontal Scaling Solution
 
@@ -135,7 +135,7 @@ The image above shows the use a shard map manager for scaling out databases on A
 
 Azure SQL offers the [Azure Elastic Database tools](%20https://docs.microsoft.com/azure/azure-sql/database/elastic-scale-introduction). This provides a number of tools to help you create, maintain, and query sharded SQL databases in Azure from your application logic.
 
-> [!IMPORTANT] Always design for scale-in. It is important that your application easily handle scaling back down as the load drops.
+Always design for scale-in. It is important that your application easily handle scaling back down as the load drops.
 
  
 

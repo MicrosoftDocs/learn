@@ -81,7 +81,7 @@ Azure SQL Database has two purchasing models as shown in the following graphic:
 
 The vCore-based model is recommended because it allows you to independently select compute and storage resources. The DTU-based model is a bundled measure of compute, storage, and I/O resources.
 
-> [!IMPORTANT] The vCore model also allows you to use Azure Hybrid Benefit for SQL Server and/or reserved capacity (pay in advance) to save money. Neither of these options is available in the DTU model.
+The vCore model also allows you to use Azure Hybrid Benefit for SQL Server and/or reserved capacity (pay in advance) to save money. Neither of these options is available in the DTU model.
 
 In the table below, you can see which purchasing model is recommended based on the requirements.
 
