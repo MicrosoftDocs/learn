@@ -9,5 +9,5 @@ Wide World Importer's compute infrastructure is complex, global, and hybrid. Azu
 You can learn more by visiting the following webpages:
 
 - [Azure Arc overview](https://azure.microsoft.com/services/azure-arc/)
-- [What is Azure Arc-enabled servers?](https://docs.microsoft.com/azure/azure-arc/servers/overview)
+- [What is Azure Arc-enabled servers?](/azure/azure-arc/servers/overview)
 - [Azure Arc-enabled servers | Azure Arc Jumpstart](https://azurearcjumpstart.io/azure_arc_jumpstart/azure_arc_servers/)
