@@ -12,13 +12,13 @@ title: Design migrations
 summary: Azure Architects design and recommend migration solutions.
 abstract: |
   In this module, you’ll learn how to:
-  •	Evaluate migration with the Cloud Adoption Framework.
-  •	Describe the Azure Migration Framework.
-  •	Assess your on-premises workloads.
-  •	Select a migration tool.
-  •	Migrate your databases.
-  •	Select an online storage migration tool.
-  •	Migrate offline data.
+  • Evaluate migration with the Cloud Adoption Framework.
+  • Describe the Azure Migration Framework.
+  • Assess your on-premises workloads.
+  • Select a migration tool.
+  • Migrate your databases.
+  • Select an online storage migration tool.
+  • Migrate offline data.
 prerequisites: |
   • Conceptual knowledge of migrating compute, database, and storage workloads.
   • Working experience with planning migrations, assessing workloads, determining migration requirements, and deploying workloads.
