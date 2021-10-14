@@ -21,6 +21,7 @@ prerequisites: |
   - Familiarity with basic web application development concepts
   - A Docker subscription 
   - Docker installed on your desktop computer
+  - Git installed on your desktop computer
 iconUrl: /learn/achievements/intro-to-containers.svg
 levels:
 - beginner
