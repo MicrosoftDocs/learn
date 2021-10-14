@@ -24,7 +24,7 @@ When you use a Custom Vision resource, you can track usage specifically connecte
 
 To train a classification model, you must upload images to your training resource and label them with the appropriate class labels. Then, you must train the model and evaluate the training results.
 
-You can perform these tasks in the [*Custom Vision portal*](https://www.customvision.ai), or if you have the necessary coding experience you can use one of the Custom Vision service programming language-specific [software development kits (SDKs)](/azure/cognitive-services/Custom-Vision-Service/quickstarts/image-classification).
+You can perform these tasks in the [*Custom Vision portal*](https://www.customvision.ai), or if you have the necessary coding experience you can use one of the Custom Vision service programming language-specific [software development kits (SDKs)](/azure/cognitive-services/Custom-Vision-Service/quickstarts/image-classification?tabs=visual-studio&pivots=programming-language-csharp).
 
 One of the key considerations when using images for classification, is to ensure that you have sufficient images of the objects in question and those images should be of the object from many different angles.
 
