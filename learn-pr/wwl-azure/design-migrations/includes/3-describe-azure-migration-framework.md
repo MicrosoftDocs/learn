@@ -48,12 +48,7 @@ Choosing which strategy to use depends on what you’re trying to accomplish.
 
 After you complete the assessment, you can begin the process of migrating your targeted apps and their related services and data. The migration stage typically consists of the following elements:
 
-1. **Deploy cloud infrastructure targets**: Before you can migrate Tailwind Traders' workloads, you'll need to create the required cloud infrastructure targets. Depending on the tools you use to perform the migration, you might need to create the required Azure resources before you begin the migration.
-
- 
-
-> [!NOTE]
-> Some tools, such as Azure Migrate and Azure Database Migration Service, can create the target Azure resources for you.
+**Deploy cloud infrastructure targets**: Before you can migrate Tailwind Traders' workloads, you'll need to create the required cloud infrastructure targets. Depending on the tools you use to perform the migration, you might need to create the required Azure resources before you begin the migration. Some tools, such as Azure Migrate and Azure Database Migration Service, can create the target Azure resources for you.
 
 **Migrate workloads**: It's a good idea to pilot your workload migration, and to choose a non-critical app for the pilot. This approach enables you to:
 
@@ -65,10 +60,7 @@ After you complete the assessment, you can begin the process of migrating your t
 
 Depending on the workload you plan to migrate, the steps used to perform the migration will vary.
 
-2. **Decommission on-premises infrastructure**: After you’re satisfied that your source apps and databases are migrated successfully, you must decommission those source workloads.
-
->[!NOTE]
-> Consider retaining the source workload backups and archived data. This data might prove useful as it provides a historical archive. You can store these backups and archives in Azure Blob storage.
+**Decommission on-premises infrastructure**: After you’re satisfied that your source apps and databases are migrated successfully, you must decommission those source workloads. Consider retaining the source workload backups and archived data. This data might prove useful as it provides a historical archive. You can store these backups and archives in Azure Blob storage.
 
  
 
