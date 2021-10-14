@@ -43,7 +43,7 @@ Now that you have a resource, you can run a simple client application that uses 
     git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
     ```
 
-2. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your cloud shell storage and work with them. Type the following command into the shell: 
+2. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
 
      ```
     code .
