@@ -64,7 +64,11 @@ The most common approach is to use the `AzureRmWebAppDeployment` Azure Pipelines
 
 You need to provide several pieces of information to deploy your application to App Service. This includes the resource group and resource name of the App Service app, which you specify by using the `ResourceGroupName` and `WebAppName` inputs. As you learned in the previous unit, you should add an output to your Bicep file, and use a pipeline variable to propagate the application name through your pipeline. You also need to specify a Zip file with the application to deploy by using the `Package` input. Typically this is the path to a pipeline artifact.
 
-App Service also needs you to authenticate before you can deploy. App Service has its own data plane authentication system that it uses for deployments. The `AzureRmWebAppDeployment` task uses the service principal associated with your service connection to automatically create and download the necessary credentials for deployment, so you don't need to do this yourself.
+App Service has its own data plane authentication system that it uses for deployments. The `AzureRmWebAppDeployment` task handles the authentication process automatically for you:
+
+:::image type="content" source="../media/3-credential-exchange.png" alt-text="Diagram illustrating the credential exchange process." border="false":::
+
+The `AzureRmWebAppDeployment` uses the service principal associated with your service connection (:::image type="icon" source="../media/callout-01.png":::) to automatically create and download the necessary credentials for deployment (:::image type="icon" source="../media/callout-02.png":::). Then, it uses the deployment credentials when it communicates with the App Service data plane API (:::image type="icon" source="../media/callout-03.png":::).
 
 App Service also provides a number of other deployment-related features, including *deployment slots*. Slots help you to safely deploy new versions of your applications, and to prepare the new version to receive production traffic so that you have no downtime. We don't use slots in this module, but we provide more information in the summary.
 

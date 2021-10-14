@@ -47,6 +47,10 @@ Network restrictions are particularly common with databases, because it might se
 
 However, network restrictions can also make it difficult for your deployment pipelines to work with your resources' data planes, too. When you use a Microsoft-hosted pipeline agent, its IP address can't be easily known in advance, and it might be assigned from a large pool of IP addresses. Additionally, Microsoft-hosted pipeline agents can't be connected to your own virtual networks.
 
-Some of the Azure Pipelines tasks that help you to perform data plane operations can work around these issues. For example, when you use the `SqlAzureDacpacDeployment` task to work with an Azure SQL logical server or database, it uses your pipeline's service principal to connect to the control plane for the Azure SQL logical server. It updates the firewall to allow the pipeline agent to access the server from its IP address. The task then automatically removes the firewall rule when it's done.
+Some of the Azure Pipelines tasks that help you to perform data plane operations can work around these issues. This includes the `SqlAzureDacpacDeployment` task:
+
+:::image type="content" source="../media/6-firewall.png" alt-text="Diagram illustrating the firewall update process." border="false":::
+
+When you use the `SqlAzureDacpacDeployment` task to work with an Azure SQL logical server or database, it uses your pipeline's service principal (:::image type="icon" source="../media/callout-01.png":::) to connect to the control plane for the Azure SQL logical server. It updates the firewall to allow the pipeline agent to access the server from its IP address (:::image type="icon" source="../media/callout-02.png":::). Then, it can successfully submit the DACPAC file or script for execution (:::image type="icon" source="../media/callout-03.png":::). The task then automatically removes the firewall rule when it's done.
 
 In other situations, it's not possible to create exceptions like this. In these circumstances, consider using a *self-hosted pipeline agent*, which runs on a virtual machine or other compute resource that you control. Then, you can configure this however you need - it can use a known IP address, or it can be connected to your own virtual network. We don't discuss self-hosted agents in this module, but we provide links to more information in the summary.
