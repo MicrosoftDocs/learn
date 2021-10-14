@@ -45,7 +45,7 @@ When you run the above command, a window will pop up with the file `deployPetCli
 
 ## Run the setup script
 
-The script takes 30-45 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance. This sample script also sets-up scale configuration for your microservices.
+The script takes 30-45 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance. This sample script also sets-up autoscale configuration for your microservices.
 
 In the already open Azure Cloud Shell, run the below shell script. Leave the browser window and Azure Cloud Shell open while running. Store the URL when the script completes:
 

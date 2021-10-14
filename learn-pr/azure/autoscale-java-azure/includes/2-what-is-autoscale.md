@@ -39,9 +39,9 @@ An autoscaling typically involves the following pieces:
 
 ## Autoscale in Azure Spring Cloud
 
+Autoscaling in Azure Spring Cloud monitors the resource metrics of a Spring application as it runs. It detects situations where additional resources are required to handle an increasing workload, and ensures those resources are available before the system becomes overloaded.
+
 In the following exercise, you'll clone a Git repository and run a script that sets-up an Azure Spring Cloud microservice application and an Azure Database for MySQL.
 The script deploys a well-known PetClinic microservice application and is built around small independent services, communicating over HTTP via a REST API.
 
-Autoscaling in Azure Spring Cloud monitors the resource metrics of a Spring application as it runs. It detects situations where additional resources are required to handle an increasing workload, and ensures those resources are available before the system becomes overloaded.
-
-Autoscaling responds to changes in the environment by adding or removing Azure Spring Cloud instances and balancing the load between them. Autoscaling doesn't have any effect on the CPU power, memory, or storage capacity of the application instances powering the app, it only changes the number of application instances.
+Your application is setup with autoscaling to respond to changes in the environment by adding or removing Azure Spring Cloud instances and balancing the load between them. Autoscaling doesn't have any effect on the CPU power, memory, or storage capacity of the application instances powering the app, it only changes the number of application instances.
