@@ -60,13 +60,13 @@ Now that you have a Cloud Shell environment, you can run a simple client applica
 
     The sample client application will use your Face service to analyze the following image, taken by a camera in the Northwind Traders store:
 
-    ![An image of a parent using a cellphone camera to take a picture of a child in in a store](../media/store-cam1.jpg)
+    ![An image of a parent using a cellphone camera to take a picture of a child in in a store](../media/store-camera-1.jpg)
 
 6. In the PowerShell pane, enter the following commands to run the code:
 
     ```
     cd ai-900
-    ./find-faces.ps1 store-cam1.jpg
+    ./find-faces.ps1 store-camera-1.jpg
     ```
 
 7. Review the details of the faces found in the image, which include:
@@ -76,28 +76,28 @@ Now that you have a Cloud Shell environment, you can run a simple client applica
 
     Note that the location of a face is indicated by the top- left coordinates, and the width and height of a *bounding box*, as shown here:
 
-    ![An image of a person with their face outlined](../media/store-cam1-face.jpg)
+    ![An image of a person with their face outlined](../media/store-camera-1-face.jpg)
 
 8. Now let's try another image:
 
-    ![An image of person with a shopping basket](../media/store-cam2.jpg)
+    ![An image of person with a shopping basket](../media/store-camera-2.jpg)
 
     To analyze the second image, enter the following command:
 
     ```
-    ./find-faces.ps1 store-cam2.jpg
+    ./find-faces.ps1 store-camera-2.jpg
     ```
 
 9. Review the results of the face analysis for the second image.
 
 10. Let's try one more:
 
-    ![An image of person with a shopping cart](../media/store-cam3.jpg)
+    ![An image of person with a shopping cart](../media/store-camera-3.jpg)
 
     To analyze the third image, enter the following command:
 
     ```
-    ./find-faces.ps1 store-cam3.jpg
+    ./find-faces.ps1 store-camera-3.jpg
     ```
 
 11. Review the results of the face analysis for the third image.
