@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.plan-deploy-azure-arc-enabled-servers.introduction
-title: Introduction
+uid: learn.azure.plan-deploy-azure-arc-enabled-servers.summary
+title: Summary
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Summary
+  description: Summary
   ms.date: 09/21/2021
   author: aurnovcy
   ms.author: aurnovc
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/7-summary.md)]

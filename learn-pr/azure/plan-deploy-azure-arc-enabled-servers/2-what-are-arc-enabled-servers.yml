@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.plan-deploy-azure-arc-enabled-servers.what-are-arc-enabled-servers
-title: What is Azure Arc-enabled servers and its capabilities? 
+title: What is Azure Arc-enabled Servers and their capabilities? 
 metadata:
-  title: What is Azure Arc-enabled servers and its capabilities? 
+  title: What is Azure Arc-enabled Servers and their capabilities? 
   description: TBD
   ms.date: 09/21/2021
   author: aurnovcy
@@ -13,3 +13,20 @@ azureSandbox: false
 durationInMinutes: 5
 content: |
   [!include[](includes/2-what-are-arc-enabled-servers.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following services can you use with Azure-Arc enabled servers?"
+    choices:
+    - content: "Governance through Azure Policy and Guest Configuration"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+    - content: "Security through Azure Security Center and Sentinel"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+    - content: "Observability through Azure Monitor and Log Analytics"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+    - content: "All of the above services can be used with Arc-enabled Servers"
+      isCorrect: true
+      explanation: "That's correct. TBD."

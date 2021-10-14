@@ -13,3 +13,20 @@ azureSandbox: false
 durationInMinutes: 5
 content: |
   [!include[](includes/4-planning-for-secure-configuration.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following actions does the highly secure Azure Connected Machine Onboarding identity have permission to perform?"
+    choices:
+    - content: "Delete servers that are already registered"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+    - content: "Create new Azure Arc-enabled servers in Azure"
+      isCorrect: true
+      explanation: "That's correct. TBD."
+    - content: "Manage VM extensions for Arc-enabled servers"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+    - content: "Read servers outside of Arc-enabled servers within the resource group"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
