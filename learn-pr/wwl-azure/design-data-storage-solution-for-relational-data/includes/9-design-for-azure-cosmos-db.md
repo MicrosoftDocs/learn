@@ -163,7 +163,7 @@ Use cases for this type of database are storing organizational hierarchies, onli
 
 Following diagram shows the Gremlin API in the context of Cosmos DB.
 
-:::image type="content" source="../media/cosmos-graph-api.png" alt-text="The Gremlin and SQL APis access Azure Cosmos DB.":::
+:::image type="content" source="../media/cosmos-graph.png" alt-text="The Gremlin and SQL APis access Azure Cosmos DB.":::
 
 
 

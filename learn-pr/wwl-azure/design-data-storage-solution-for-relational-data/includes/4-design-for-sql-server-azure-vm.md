@@ -14,7 +14,7 @@ To transform its applications frequently and host them securely and reliably, Al
 
 In just three weeks, the company used Azure Site Recovery to migrate dozens of acquired applications running on approximately 1,000 VMs to Azure.
 
-:::image type="content" source="../media/sql-server-azure-vm.png" alt-text="How Allscripts used SQL Server on Azure VMs to solve business problems.":::
+:::image type="content" source="../media/sql-server.png" alt-text="How Allscripts used SQL Server on Azure VMs to solve business problems.":::
 
 
 > [!Tip]
