@@ -30,7 +30,7 @@ In this exercise, we will be using Azure Cloud Shell to run the commands. Feel f
 
 1. Click on the **Cloud Shell** icon at the top of the screen to the right of the search bar
 
-   ![screenshot of Azure portal on the cloud shell creation screen](../media/3-create-cloud-shell-instance.png)
+   :::image type="content" source="../media/3-create-cloud-shell-instance.png" alt-text="screenshot of Azure portal on the cloud shell creation screen." lightbox=".../media/3-create-cloud-shell-instance.png":::
 
 1. Select the appropriate Subscription and click **Create storage**
 
