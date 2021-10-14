@@ -1,4 +1,4 @@
-In gaming, assistive hardware devices often consist of accessible versions of inputs like controllers, mice, and keyboards. These devices may come in sizes or form factors that differ from traditional input devices to provide players with disabilities access points that work for their individual levels of strength, dexterity, range of motion, and more. Additional hardware assistive technologies that are important to be aware of in the context of gaming include devices like hearing aids and cochlear implants. This unit will introduce some common hardware assistive technologies that are helpful to be aware of if you are interested in game accessibility.
+In gaming, assistive hardware devices often consist of accessible versions of inputs like controllers, mice, and keyboards. These devices may come in sizes or form factors that differ from traditional input devices to provide players with disabilities access points that work for their individual levels of strength, dexterity, range of motion, and more. Other hardware assistive technologies that are important to be aware of in the context of gaming include devices like hearing aids and cochlear implants. This unit will introduce some common hardware assistive technologies that are helpful to be aware of if you are interested in game accessibility.
 
 ### Adaptive Hardware Gaming Inputs
 
@@ -13,7 +13,7 @@ Video:
 - Switches:
   - Different sizes
   - Different activation forces required
-  - Keep note of mouting points
+  - Keep note of mounting points
   - Head
   - Leg
   - Feet
@@ -32,7 +32,7 @@ Video:
   - One-handed joysticks (don't add PDP)
   - WFE
   - quadstick
-  - Mindful of players whos hands are tied up with FPS double sticks and cant access buttons as readily
+  - Mindful of players whose hands are tied up with FPS double sticks and cant access buttons as readily
 
 ### The Xbox Adaptive Controller
 
@@ -46,10 +46,10 @@ Some hearing aids and cochlear implants can be connected to phones, tablets, and
 
 ### Hardware Considerations for Gaming Accessibility
 
-Whether you are a current or aspiring game title developer, platform developer, or hardware developer, it is important to be aware of the common hardware assistive technologies players may be using. Some key points to consider regarding these technologies include the following:
+Whether you are a current or aspiring game title developer, platform developer, or hardware developer, it's important to be aware of the common hardware assistive technologies players may be using. Some key points to consider regarding these technologies include the following:
 
-1. An understanding of how users interact with their input devices can provide important context around the software-based accessibility features or settings your game or platform can provide, and why they are important. Think back to the adaptive gaming set-ups that were featured in the videos in this unit. Players with very limited mobility in their hands and fingers may be using other body parts to activate buttons. When quick-time events in a game are optimized for players who are swiftly moving their fingers to mash buttons, players using body parts like their head, knee, elbow, foot, etc. may not be able to move their larger body parts as quickly or easily as their thumbs. Understanding how input demands for the same exact game level can more difficult for players who are gaming in their own adaptive ways can be helpful when assessing your game titles accessibility barriers and scoping potential solutions.
+1. An understanding of how users interact with their input devices can provide important context around the software-based accessibility features or settings your game or platform can provide, and why they are important. Think back to the adaptive gaming set-ups that were featured in the videos in this unit. Players with limited mobility in their hands and fingers may be using other body parts to activate buttons. When quick-time events in a game are optimized for players who are swiftly moving their fingers to mash buttons, players using body parts like their head, knee, elbow, foot, etc. may not be able to move their larger body parts as quickly or easily as their thumbs. Understanding how input demands for the same exact game level can more difficult for players who are gaming in their own adaptive ways can be helpful when assessing your game titles accessibility barriers and scoping potential solutions.
 
 2. This awareness is valuable for documenting input compatibility between various types of hardware devices and your game title or platform. Players may be unable to use a standard controller but may be able to access a mouse and keyboard for game inputs. They would like to know whether a game supports mouse and keyboard input before purchasing a game title. Similarly, devices like the Xbox Adaptive Controller only support adaptive hardware devices connected via USB if they emit HID joystick or HID gamepad outputs. Therefore, a keyboard that uses HID keyboard, would not work when plugged into the Xbox Adaptive Controller. Providing clear documentation on the types of devices your game title, platform, or hardware devices support can help players make informed purchases when choosing new gaming products if they know they have specific input access needs.
 
-3. This awareness can help guide inclusive and accessible software efforts. It is important to remember that supporting adaptive or alternate hardware uses benefits many gamers, in addition to those with mobility-related disabilities. For example, players without vision are likely unable to use inputs that require hand-eye coordination like a mouse. If they cannot see where UI elements are located on the screen, they may have difficulty moving their cursor to those elements. In cases like this, supporting a wide array of hardware devices like keyboards, switch access and more for gaming experiences will enable more players to enjoy your title or platform.
+3. This awareness can help guide inclusive and accessible software efforts. It's important to remember that supporting adaptive or alternate hardware uses benefits many gamers, in addition to people with mobility-related disabilities. For example, players without vision are likely unable to use inputs that require hand-eye coordination like a mouse. If they cannot see where UI elements are located on the screen, they may have difficulty moving their cursor to those elements. In cases like this, supporting a wide array of hardware devices like keyboards, switch access and more for gaming experiences will enable more players to enjoy your title or platform.
