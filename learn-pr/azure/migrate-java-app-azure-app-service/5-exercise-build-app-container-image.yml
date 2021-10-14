@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Build container image for your Java web app
-durationInMinutes: 8
+durationInMinutes: 5
 content: |
   [!include[](includes/exercise-build-container-image.md)]
