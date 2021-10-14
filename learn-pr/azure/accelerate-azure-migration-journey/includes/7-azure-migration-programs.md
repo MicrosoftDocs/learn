@@ -8,7 +8,7 @@ As a part of the migration and modernization team at Tailwind Traders, it is ess
 
 ![Graphic showing the path to the Cloud Programs.](../media/path-to-cloud.png)
 
-## Azure Migration and Modernization Program (AMP)
+## Azure Migration and Modernization Program (AMMP)
 
 The [Azure Migration and Modernization Program (AMMP)](https://azure.microsoft.com/migration/migration-modernization-program/) helps you simplify your journey to the cloud.  Wherever you are in your journey, AMMP can help accelerate your progress. The program offers proactive guidance and the right mix of expert help at every stage to ensure you can migrate and modernize applications, infrastructure, and databases with confidence. All customers can access resources, partners, and tools such as free migration tools, step-by-step technical guidance, training and help in finding a migration partner.  
 
