@@ -27,7 +27,7 @@ A range of existing software configuration products can be used to deploy the Ar
 
 - Group Policy: Define a new Group Policy Object for running a PowerShell script, assign the GPO to the desired Organization Unit, and schedule a task to deploy to multiple servers. 
 
-- Systems Center Configuration Manager: Author, approve, and run a custom PowerShell script to a collection of devices. See [Create and run scripts - Configuration Manager](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/create-deploy-scripts).
+- Systems Center Configuration Manager: Author, approve, and run a custom PowerShell script to a collection of devices. See [Create and run scripts - Configuration Manager](/mem/configmgr/apps/deploy-use/create-deploy-scripts).
 
 - Other automation tooling like Chef, Puppet, or Ansible can also be used to deploy the script to managed servers.
 
