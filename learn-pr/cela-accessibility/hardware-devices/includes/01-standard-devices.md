@@ -18,6 +18,8 @@ For “non-adaptive” or standard devices, it can be difficult to offer the sam
 
 For reference, the following image shows the difference in size between the Xbox Adaptive Controller, a standard Xbox controller, and two accessibility switch buttons.
 
+:::image type="content" source="../media/xac-and-standard.png" alt-text="TBD 1.":::
+
 However, it's important to remember that standard gaming devices like consoles, PCs, and headsets commonly act as the “gatekeeper” to beginning any form of gameplay. If a player cannot connect their console to their tv and power it on, they are blocked from using their adaptive controller for in-game play.
 
 It might not be possible to meet the needs of all players with a single, standard hardware device. However, there are some general best practices for hardware accessibility that are applicable to all devices. These best practices will be described in detail throughout the remainder of this module. Implementing these practices during hardware development can provide more accessible experiences for players as they perform basic set-up and operation tasks needed to play.
