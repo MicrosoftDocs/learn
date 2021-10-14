@@ -26,11 +26,11 @@ The code is downloaded into a new folder called **mslearn-dotnet-kubernetes**.
 
 There are two containers in the Contoso Pizza Shop project. Before pushing the images to Docker Hub, let's use them to create the containers locally. After the containers are created and running, we will be able to browse the Contoso Pizza Company website and verify the microservices are running OK.
 
-Follow these steps to create and run Docker containers from the Docker files you just downloaded.
+Follow these steps to create and run Docker containers from the Docker files you downloaded.
 
 1. Make sure Docker Desktop is running.
 
-1. Open a command prompt and switch to the directory where the code you just downloaded resides.
+1. Open a command prompt and move to the **mslearn-dotnet-kubernetes** directory.
  
 1. Run the following command to build the containers.
 
@@ -40,17 +40,17 @@ Follow these steps to create and run Docker containers from the Docker files you
 
     It may take a while to build the containers.
 
-1. Run the following command to start and run the app and attach the containers.
+1. Run the following command to run the app and attach the containers.
 
     ```bash
     docker-compose up
     ```
 
-1. When the operation has finished, browse to `http:\\localhost:5902` to see the Contoso Pizza Shop's menu.
+1. When the operation has finished, in a browser tab enter `http:\\localhost:5902` to view the Contoso Pizza Shop menu.
 
 ## Sign in to Docker Hub
 
-The next step in uploading the images to Docker Hub is to sign into Docker Hub. From a command prompt, enter the following:
+The next step in uploading the images to Docker Hub is to sign into Docker Hub. From the command prompt, enter the following:
 
 ```bash
 docker login
@@ -61,7 +61,7 @@ docker login
 
 ## Upload the images to Docker Hub
 
-1. Re-tag, or rename, the Docker image you just created under your Docker username.
+1. Enter the following code to retag, or rename, the Docker image you created under your Docker username.
 
     ```bash
     docker tag pizzafrontend [YOUR DOCKER USER NAME]/pizzafrontend
