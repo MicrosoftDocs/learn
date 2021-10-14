@@ -18,7 +18,7 @@ After talking to your colleagues on the website team, you decide on the followin
 
 1. If the previous steps succeeds, your pipeline continues to deploy to your production environment:
 
-   1. The pipeline runs a preview stage, which runs the what-if operation on your production environment to list the changes that will be made to your production Azure resources. 
+   1. The pipeline runs a preview stage, which runs the what-if operation on your production environment to list the changes that will be made to your production Azure resources. The preview stage also validates your deployment, so you don't need to run a separate validation stage for your production environment.
    1. The pipeline pauses for manual validation. 
    1. If validation succeeds, the pipeline runs the deployment and smoke tests against your production environment.
 
@@ -38,7 +38,7 @@ When you need to repeat steps in your pipeline, you might try to copy and paste 
 
 *Pipeline templates* enable you to create reusable sections of pipeline definitions. Templates can define steps, jobs, or even entire stages. You can use templates to reuse parts of a pipeline multiple times within a single pipeline, or even in multiple pipelines. You can also create a template for a set of variables that you want to reuse in multiple pipelines.
 
-A template is simply a YAML file that contains your reusable content. A simple template might look like this and be saved in a file named *script.yml*:
+A template is simply a YAML file that contains your reusable content. A simple template for a step definition might look like this and be saved in a file named *script.yml*:
 
 :::code language="yaml" source="code/3-script.yml" :::
 
@@ -88,7 +88,7 @@ You can also use parameters when you assign names to your jobs and stages in pip
 
 You can use pipeline *conditions* to specify whether a step, a job, or even a stage should run depending on a rule that you specify. You can combine template parameters and pipeline conditions to customize your deployment process for many different situations.
 
-For example, imagine you define a pipeline template that runs script steps. You plan reuse the template for each of your environments. When you deploy your production environment, you want to run an additional step. Here's how you can achieve that by using the `if` macro and the `eq` (*equals*) operator:
+For example, imagine you define a pipeline template that runs script steps. You plan to reuse the template for each of your environments. When you deploy your production environment, you want to run an additional step. Here's how you can achieve that by using the `if` macro and the `eq` (*equals*) operator:
 
 :::code language="yaml" source="code/3-script-conditions.yml" range="1-12" highlight="10" :::
 
@@ -103,4 +103,4 @@ You can also use the `ne` (*not equals*) operator to specify a condition like *i
 
 Although conditions are a way to add flexibility to your pipeline, try not to use too many of them. They complicate your pipeline and make it harder to understand its flow. If you see a lot of conditions in your pipeline template, the template might not be the best solution for the workflow that you plan to run, and you might need to redesign your pipeline.
 
-Also, consider using YAML comments to explain the conditions that you use and any other aspects of your pipeline that might need more explanation. Comments help make your pipeline easy to understand and work with in the future. You'll see some example YAML comments in the exercises later in this module.
+Also, consider using YAML comments to explain the conditions that you use and any other aspects of your pipeline that might need more explanation. Comments help make your pipeline easy to understand and work with in the future. You'll see some example YAML comments in the exercises throughout this module.

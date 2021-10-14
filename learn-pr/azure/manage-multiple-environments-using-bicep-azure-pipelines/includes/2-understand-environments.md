@@ -12,51 +12,37 @@ Many organizations take this further and set up multiple non-production environm
 
 Common environments include:
 
-**Development**
+- **Development**: A development environment is typically used by developers to try their changes in, and to quickly iterate on their work.
 
-Typically, developers use a development environment to make their changes and quickly iterate on their work.
+  Development environments often have minimal controls so that team members can easily try out ideas. You might use a development environment to test out a certain configuration setting on a resource, or to see how you can set up a new website with a back-end database in a secure way. A lot of these changes and trials might not make it further in your deployment process, because you're eliminating the ideas that don't succeed.
 
-Development environments often have minimal controls so that team members can easily try out ideas. You might use a development environment to test a certain configuration setting on a resource, or to see how you can set up a new website with back-end database in a secure way. A lot of these changes and trials might not advance in your deployment process, because you're eliminating the ideas that don't succeed.
+  In some teams, you might even set up a separate development environment for each team member so that they don't get in each other's way while they're working on new features.
 
-In some teams, you might even set up a separate development environment for each team member so that they don't get in each other's way while they're working on new features.
+  Development environments are sometimes also called *sandbox* environments.
 
-Development environments are sometimes also called *sandbox* environments.
+- **Test**: A test environment is designed to run manual or automated tests against your changes.
 
-**Test**
+  Test environments can be used in a continuous integration process. After a you deploy a change to a test environment, automated tests can be run against it. If all of the automated tests pass, then the change is safe to merge into the main branch of the project. Automated tests usually check for the core system functionality, along with things like policy violations in the newly deployed resources.
 
-A test environment is designed to run manual or automated tests against your changes.
+  You might also create dedicated test environments for specific types of testing, like performance and security testing.
 
-Test environments can be used in a continuous integration process. After you deploy a change to a test environment, automated tests can be run against it. If all of the automated tests pass, then the change is safe to merge into the main branch of the project. Automated tests usually check for the core system functionality, along with things like policy violations in the newly deployed resources.
+- **Integration**: An integration environment can help you test any integration points with other systems.
 
-You might also create dedicated test environments for specific types of testing, like performance and security testing.
+  You might simulate end-to-end transactions in an integration environment. These tests often run automatically, but many organizations also perform manual testing against this environment.
 
-**Integration**
+  Integration environments are sometimes also called *system integration test* (SIT) environments.
 
-An integration environment can help you test any integration points with other systems.
+- **User acceptance test**: A user acceptance test (UAT) environment is used for manual validation, usually by business stakeholders rather than developers. In manual validation, someone goes through the solution and verifies that behaves as expected and that it achieves the necessary business requirements. That person then approves the changes so that the deployment can continue.
 
-You might simulate end-to-end transactions in an integration environment. These tests often run automatically, but many organizations also perform manual testing against this environment.
+- **Pre-production**: A pre-production environment is often a mirror of the production environment, with the same resource SKUs and configuration. It's used as a final check to verify how the production deployment will behave during and after the change is applied. It can also be used verify whether to expect any downtime during the production deployment.
 
-Integration environments are sometimes also called *system integration test* (SIT) environments.
+  Pre-production environments are sometimes also called *staging* environments.
 
-**User acceptance test**
+- **Production**: Your production environment is the one that end users of the application use. It's your live environment that you want to protect and keep up and running as much as possible.
 
-A user acceptance test (UAT) environment is used for manual validation, usually by business stakeholders rather than developers. In manual validation, someone goes through the solution and verifies that it behaves as expected and that it achieves the necessary business requirements. That person then approves the changes so that the deployment can continue.
+  In some organizations, you might have multiple production environments. For example, you might have production environments in different geographic regions or to serve different groups of customers.
 
-**Pre-production**
-
-A pre-production environment is often a mirror of the production environment, with the same resource SKUs and configuration. It's used as a final check to verify how the production deployment will behave during and after the change is applied. It can also be used verify whether to expect any downtime during the production deployment.
-
-Pre-production environments are sometimes called *staging* environments.
-
-**Production**
-
-Your production environment is the one that end users of the application use. It's your live environment that you want to protect and keep up and running as much as possible.
-
-In some organizations, you might have multiple production environments. For example, you might have production environments in different geographic regions or to serve different groups of customers.
-
-**Demo**
-
-Your team might also create demonstration (demo) environments to show the application to end users, for use in training, or for sales teams to show certain capabilities to potential customers. You might even have multiple demo environments that serve different purposes. A demo environment is often a slimmed-down replica of your production environment, with fake customer data.
+- **Demo**: Your team might also create demonstration (demo) environments to show the application to end users, for use in training, or for sales teams to show certain capabilities to potential customers. You might even have multiple demo environments that serve different purposes. A demo environment is often a slimmed-down replica of your production environment, with fake customer data.
 
 ### Environments in your organization
 

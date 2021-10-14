@@ -20,7 +20,7 @@ parameters:
               name: DeployBicepFile
               displayName: Deploy Bicep file
               inputs:
-                azureSubscription: $(ServiceConnectionName)
+                azureSubscription: ${{parameters.serviceConnectionName}}
                 scriptType: 'bash'
                 scriptLocation: 'inlineScript'
                 inlineScript: |
