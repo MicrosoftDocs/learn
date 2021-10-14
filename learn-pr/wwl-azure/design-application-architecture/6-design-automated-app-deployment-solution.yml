@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-application-architecture.design-automated-app-deployment-solution
+title: Design an automated app deployment solution
+metadata:
+  title: Design an automated app deployment solution
+  description: "Design an automated app deployment solution"
+  ms.date: 10/13/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-design-automated-app-deployment-solution.md)]
