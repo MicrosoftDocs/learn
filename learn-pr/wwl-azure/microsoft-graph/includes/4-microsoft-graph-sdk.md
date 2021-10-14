@@ -92,4 +92,4 @@ var newCalendar = await graphClient.Me.Calendars
 
 ## Additional resources
 
-* [Microsoft Graph REST API v1.0 reference](/graph/api/overview?view=graph-rest-1.0)
+* [Microsoft Graph REST API v1.0 reference](/graph/api/overview)
