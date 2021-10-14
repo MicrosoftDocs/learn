@@ -26,7 +26,7 @@ A virtual network is a virtual, isolated portion of the Azure public network. Ea
 
 - A [network interface](/azure/virtual-network/virtual-network-network-interface) enables a VM to communicate with other resources. Each network interface has one or more private IP addresses assigned to it. How many network interfaces and [private IP addresses](/azure/virtual-network/private-ip-addresses) do you require in a virtual network? There are [limits](/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json) to the number of network interfaces and private IP addresses that you can have within a virtual network.
 
-[Click here](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/networking/fundamentals/toc.json) to view more questions to consider when designing an Azure virtual network. 
+[Here are more questions to consider](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/networking/fundamentals/toc.json) when designing an Azure virtual network. 
 
 ## Design network segmentation 
 
@@ -46,7 +46,7 @@ When you operate on Azure, you have a wide and diverse set of segmentation optio
 
 The following three patterns are common when it comes to organizing your workload in Azure from a networking perspective. Each of these patterns provides a different type of isolation and connectivity. Choosing which model works best for your organization is a decision you should make based on your organization's needs. With each of these models, we describe how segmentation can be done using the above Azure Networking services.
 
-### Pattern 1: Single Virtual Network
+### Pattern 1: Single virtual network
 
 In this pattern, all the components of your workload or, in some cases, your entire IT footprint is put inside a single virtual network. This pattern is possible if you're operating solely in a single region since a virtual network can't span multiple regions.
 
@@ -60,14 +60,14 @@ In this setup, you have Subnet1, where you placed your database workloads, and S
 
 Although we used NSGs to illustrate how subnet traffic can be governed, you can also enforce this segmentation by using a Network Virtualized Appliance from Azure Marketplace or Azure Firewall.
 
-### Pattern 2: Multiple Virtual Networks with peering in between them
+### Pattern 2: Multiple virtual networks with peering in between them
 
 This pattern is the extension of the previous pattern where you have multiple virtual networks with potential peering connections. You might opt for this pattern to group applications into separate virtual networks, or you might need presence in multiple Azure regions. You get built-in segmentation through virtual networks because you must explicitly peer a virtual network to another one for them to communicate. (Keep in mind that [virtual network peering](/azure/virtual-network/virtual-network-peering-overview) connectivity isn't transitive.) To further segment within a virtual network in a manner similar to pattern 1, use NSGs in the virtual networks.
 
 :::image type="content" source="../media/multiple-regions.png" alt-text="Azure networks in multiple regions.":::
 
 
-### Pattern 3: Multiple Virtual Networks in a hub &amp; spoke model
+### Pattern 3: Multiple virtual networks in a hub &amp; spoke model
 
 This pattern is a more advanced virtual network organization where you choose a virtual network in a given region as the hub for all the other virtual networks in that region. The connectivity between the hub virtual network and its spoke virtual networks is achieved by using [Azure virtual network peering](/azure/virtual-network/virtual-network-peering-overview). All traffic passes through the hub virtual network, and it can act as a gateway to other hubs in different regions. You set up your security posture at the hubs, so they get to segment and govern the traffic between the virtual networks in a scalable way. One benefit of this pattern is that. as your network topology grows, the security posture overhead doesn't grow (except when you expand to new regions).
 
@@ -90,7 +90,7 @@ The recommended Azure cloud native segmentation control is Azure Firewall. Azure
 
  
 
-## Virtual Network NAT gateway 
+## Virtual network NAT gateway 
 
 Virtual Network NAT (network address translation) simplifies outbound-only Internet connectivity for virtual networks. When configured on a subnet, all outbound connectivity uses your specified static public IP addresses. Outbound connectivity is possible without load balancer or public IP addresses directly attached to virtual machines. Outbound connectivity is possible without load balancer or public IP addresses directly attached to virtual machines. NAT is fully managed and highly resilient. 
 
@@ -147,7 +147,7 @@ Common reasons for overriding Azure's default routing are:
 
  
 
-### System Routes
+### System routes
 
 - When you need traffic routed between VMs in the same virtual network or peered virtual networks
 
@@ -155,11 +155,10 @@ Common reasons for overriding Azure's default routing are:
 
 - You need site-to-site communication through ExpressRoute or a VPN gateway
 
-:::image type="content" source="../media/system-routes.png" alt-text=" System routes in an Azure Virtual Network":::
 
  
 
-### User Defined Routes (UDRs) 
+### User defined routes (UDRs) 
 
 - You want to enable filtering of Internet traffic via Azure Firewall or forced tunneling.
 
@@ -169,5 +168,4 @@ Common reasons for overriding Azure's default routing are:
 
 - You need to create routes that control network traffic and specify the next hop in the traffic flow. 
 
-:::image type="content" source="../media/user-defined-routes.png" alt-text="User defined routes in an Azure Virtual Network.":::
 

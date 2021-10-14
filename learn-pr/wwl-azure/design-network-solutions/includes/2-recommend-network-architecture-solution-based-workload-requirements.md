@@ -8,7 +8,7 @@ In this module you will learn how the networking services in Azure provide a var
 
 - [**Application delivery services**](/azure/networking/fundamentals/networking-overview): Deliver applications in the Azure network using any or a combination of these networking services in Azure - Content Delivery Network (CDN), Azure Front Door Service, Traffic Manager, Application Gateway, Internet Analyzer, and Load Balancer.
 
-##Gather Network Requirements 
+## Gather Network Requirements 
 
 ### Naming
 
@@ -22,11 +22,11 @@ All Azure resources are created in an Azure region and subscription. A resource 
 - Do you have data residency, sovereignty, compliance, or resiliency requirements? If so, choosing the region that aligns to the requirements is critical. 
 - Do you require resiliency across Azure Availability Zones within the same Azure region for the resources you deploy? You can deploy resources, such as virtual machines (VM) to different availability zones within the same virtual network. Not all Azure regions support availability zones however.
 
-###Subscriptions
+### Subscriptions
 
 You can deploy as many virtual networks as required within each subscription, up to the limit. Some organizations have different subscriptions for different departments, for example. 
 
-###Segmentation
+### Segmentation
 You can create multiple virtual networks per subscription and per region. You can create multiple subnets within each virtual network. The considerations that follow help you determine how many virtual networks and subnets you require:
 
 **Virtual networks**
@@ -48,7 +48,7 @@ A virtual network can be segmented into one or more subnets up to the limits. Th
 - You can limit access to Azure resources such as an Azure storage account or Azure SQL Database, to specific subnets with a virtual network service endpoint. Further, you can deny access to the resources from the internet. You may create multiple subnets, and enable a service endpoint for some subnets, but not others. Learn more about service endpoints, and the Azure resources you can enable them for.
 - You can associate zero or one network security group to each subnet in a virtual network. You can associate the same, or a different, network security group to each subnet. Each network security group contains rules, which allow or deny traffic to and from sources and destinations. Learn more about network security groups.
 
-###Security
+### Security
 You can filter network traffic to and from resources in a virtual network using network security groups and network virtual appliances. You can control how Azure routes traffic from subnets. You can also limit who in your organization can work with resources in virtual networks.
 
 **Traffic filtering**

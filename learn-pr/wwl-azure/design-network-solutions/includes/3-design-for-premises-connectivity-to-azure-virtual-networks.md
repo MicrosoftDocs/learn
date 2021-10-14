@@ -26,7 +26,7 @@ This architecture is suitable for hybrid applications where the traffic between 
 
 [Hybrid network with VPN gateway](/azure/architecture/reference-architectures/hybrid-networking/vpn)
 
-:::image type="content" source="../media/vpn.png" alt-text="Hybrid network with VPN gateway":::
+:::image type="content" source="../media/virtual-private-network.png" alt-text="Hybrid network with VPN gateway":::
 
 
 ## Azure ExpressRoute connection
@@ -55,7 +55,7 @@ This architecture is suitable for hybrid applications running large-scale, missi
 
 - [Hybrid network with ExpressRoute](/azure/architecture/reference-architectures/hybrid-networking/expressroute)
 
-:::image type="content" source="../media/expressroute.png" alt-text="Hybrid network with ExpressRoute.":::
+:::image type="content" source="../media/express-route.png" alt-text="Hybrid network with ExpressRoute.":::
 
 
 ## ExpressRoute with VPN failover
@@ -78,7 +78,7 @@ This architecture is suitable for hybrid applications that need the higher bandw
 
 - [Hybrid network with ExpressRoute and VPN failover](/azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover)
 
-:::image type="content" source="../media/expressroute-vpn-failover.png" alt-text="Hybrid network with ExpressRoute and VPN failover.":::
+:::image type="content" source="../media/express-route-failover.png" alt-text="Hybrid network with ExpressRoute and VPN failover.":::
 
 
 ## Hub-spoke network topology
@@ -117,7 +117,7 @@ Typical uses for this architecture include cases in which:
 
 ### Advantages
 
-:::image type="content" source="../media/hub-spoke-vwan-architecture.png" alt-text="Hub and spoke VWAN architecture.":::
+:::image type="content" source="../media/hub-spoke-architecture.png" alt-text="Hub and spoke VWAN architecture.":::
 
 
 This diagram illustrates a few of the advantages that this architecture can provide:

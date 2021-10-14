@@ -51,7 +51,7 @@ Choose Traffic Manager when:
 - You need to combine hybrid applications
 - You need to distribute traffic for complex deployments 
 
-## Load Balancer
+## Load balancer
 
 The Azure Load Balancer provides high-performance, low-latency Layer 4 load-balancing for all UDP and TCP protocols. It manages inbound and outbound connections. You can configure public and internal load-balanced endpoints. You can define rules to map inbound connections to back-end pool destinations by using TCP and HTTP health-probing options to manage service availability.
 

@@ -1,10 +1,10 @@
 This section describes networking services in Azure that help protect your network resources - Protect your applications using any or a combination of these networking services in Azure - DDoS protection, Private Link, Firewall, Web Application Firewall, Network Security Groups, and Virtual Network Service Endpoints. 
 
-## DDoS Protection
+## Distributed denial of service protection
 
 [Azure DDoS Protection](/azure/ddos-protection/manage-ddos-protection) provides countermeasures against the most sophisticated DDoS threats. The service provides enhanced DDoS mitigation capabilities for your application and resources deployed in your virtual networks. Additionally, customers using Azure DDoS Protection have access to DDoS Rapid Response support to engage DDoS experts during an active attack.
 
-:::image type="content" source="../media/ddos-protection.png" alt-text="Diagram of Azure DDoS.":::
+:::image type="content" source="../media/denial-protection.png" alt-text="Diagram of Azure DDoS.":::
 
 
 Use DDoS protection Standard when you need:
@@ -50,26 +50,8 @@ A WAF solution can react to a security threat faster by centrally patching a kno
 WAF can be deployed with Azure Application Gateway, Azure Front Door, and Azure Content Delivery Network (CDN) service from Microsoft. WAF on Azure CDN is currently under public preview. WAF has features that are customized for each specific service. 
 
 
-:::image type="content" source="../media/waf-overview.png" alt-text="Diagram of Azure WAF.":::
+:::image type="content" source="../media/web-application-firewall-overview.png" alt-text="Diagram of Azure WAF.":::
 
- 
-
-Here is a flow chart that can be a guide for when to deploy what solution:
-
-:::image type="content" source="../media/firewall-aplication-gateway-decision-tree.png" alt-text="Decision tree for when to use Firewall and App Gateway.":::
-
- 
-**Azure Firewall alone** when there are no web applications in the virtual network.
-
-**Application Gateway alone** when there are only web applications in the virtual network, and network security groups (NSGs) provide sufficient output filtering.
-
-**Azure Firewall and Application Gateway in parallel,** the most common design, when you want Azure Application Gateway to protect HTTP(S) applications from web attacks, and Azure Firewall to protect all other workloads and filter outbound traffic.
-
-**Application Gateway in front of Azure Firewall** when you want Azure Firewall to inspect all traffic and WAF to protect web traffic, and the application needs to know the client's source IP address.
-
-**Azure Firewall in front of Application Gateway** when you want Azure Firewall to inspect and filter traffic before it reaches the Application Gateway.
-
-Review the architecture guidance [here](/azure/architecture/example-scenario/gateway/firewall-application-gateway) for more information. 
 
 ## Network security groups
 
@@ -85,7 +67,7 @@ NSGs contain two sets of rules: inbound and outbound. The priority for a rule mu
 
 Virtual Network (VNet) service endpoints extend your virtual network private address space and the identity of your VNet to the Azure services, over a direct connection. Endpoints allow you to secure your critical Azure service resources to only your virtual networks. Traffic from your VNet to the Azure service always remains on the Microsoft Azure backbone network.
 
-:::image type="content" source="../media/vnet-service-endpoints-overview.png" alt-text="Diagram of Service Endpoints.":::
+:::image type="content" source="../media/service-endpoints-overview.png" alt-text="Diagram of Service Endpoints.":::
 
 
 Key Benefits:
@@ -100,7 +82,7 @@ The Azure Bastion service is a new fully platform-managed PaaS service that you 
 
 Recommend Azure Bastion when you need to:
 
-- Secure remote connections from the azure portal to Azure VMs
+- Secure remote connections from the Azure portal to Azure VMs
 
 - Eliminate exposing RDP ports, SSH ports, or public IP addresses for your internal VMs
 
@@ -123,11 +105,10 @@ Recommend Azure Bastion when you need to:
 
  
 
-## Just in Time (JIT) Network Access 
+## Just in time (JIT) network access 
 
 With JIT, you can lock down the inbound traffic to your VMs, reducing exposure to attacks while providing easy access to connect to VMs when needed.
 
-:::image type="content" source="../media/just-in-time.png" alt-text="Decision tree for when to enable Just In Time Access on a VM.":::
 
  
 
