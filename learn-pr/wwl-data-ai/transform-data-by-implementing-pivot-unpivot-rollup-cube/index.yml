@@ -3,7 +3,7 @@ uid: learn.wwl.transform-data-by-implementing-pivot-unpivot-rollup-cube
 metadata:
   title: Transform data by implementing pivot, unpivot, rollup, and cube
   description: "Transform data by implementing pivot, unpivot, rollup, and cube"
-  ms.date: 10/13/2021
+  ms.date: 10/14/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
