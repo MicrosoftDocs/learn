@@ -29,3 +29,4 @@ The Altair emulator will be connecting to IoT Central. The global device provisi
 ## The MQTT broker network endpoint
 
 The Altair emulator will also be connecting to a public MQTT broker at *test.mosquitto.org*. The network endpoint must be declared in the **AllowedConnections** section in the application manifest file.
+

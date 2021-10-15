@@ -36,3 +36,4 @@ Follow these steps to list the network endpoints of your IoT Central web applica
    ```
 
 6. Copy the output from the **ShowIoTCentralConfig** tool to Notepad, as you'll need this information soon.
+
