@@ -183,10 +183,10 @@ Now it's time to create the application and apply the secret to this application
     spec:
       selector:
         app: ship-manager-backend
-    ports:
-      - name: http
-        port: 80
-        targetPort: 3000
+      ports:
+        - name: http
+          port: 80
+          targetPort: 3000
     ---
     ```
 
