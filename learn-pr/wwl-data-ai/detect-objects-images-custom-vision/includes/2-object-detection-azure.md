@@ -25,7 +25,7 @@ Key considerations when tagging training images for object detection are ensurin
 
 ## Model training and evaluation
 
-To train the model, you can use the *Custom Vision portal*, or if you have the necessary coding experience you can use one of the Custom Vision service programming language-specific software development kits (SDKs). Training an object detection model can take some time, depending on the number of training images, classes, and objects within each image.
+You can perform these tasks in the [*Custom Vision portal*](https://www.customvision.ai), or if you have the necessary coding experience you can use one of the Custom Vision service programming language-specific [software development kits (SDKs)](/azure/cognitive-services/Custom-Vision-Service/quickstarts/image-classification?tabs=visual-studio&pivots=programming-language-csharp). Training an object detection model can take some time, depending on the number of training images, classes, and objects within each image.
 
 Model training process is an iterative process in which the Custom Vision service repeatedly trains the model using some of the data, but holds some back to evaluate the model. At the end of the training process, the performance for the trained model is indicated by the following evaluation metrics:
 
