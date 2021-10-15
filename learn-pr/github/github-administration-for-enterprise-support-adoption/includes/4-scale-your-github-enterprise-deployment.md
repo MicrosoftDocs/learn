@@ -1,10 +1,10 @@
 In this unit, you'll learn more about the GitHub Enterprise features that support your Enterprise organization as it grows. You will also learn how to install tools from the GitHub Marketplace to help enhance your Enterprise organization.
 
-As we discussed in unit 2, a change in your organization's headcount, like a new contractor partnership, can increase the friction between GitHub and users or administrators. Suddenly, many more people require secure access to the code base, and as an administrator, you'll be responsible for tasks like providing and revoking access to user identities during the defined work period, using GitHub APIs to query the organization's audit log for compliance purposes, and installing GitHub applications from the Marketplace Azure Pipelines to establish standard workflows for deployment.
+As we discussed previously, a change in your organization's headcount, like a new contractor partnership, can increase the friction between GitHub and users or administrators. Suddenly, many more people require secure access to the code base, and as an administrator, you'll be responsible for tasks like providing and revoking access to user identities during the defined work period, using GitHub APIs to query the organization's audit log for compliance purposes, and installing GitHub applications from the Marketplace Azure Pipelines to establish standard workflows for deployment.
 
 ## More about GitHub Enterprise single sign-on capabilities
 
-In unit 2, you learned that the first thing you should do as an administrator for a GitHub Enterprise organization is to enable authentication using SAML single sign-on. When your organization has deployed GitHub Enterprise services in GitHub's cloud ("GitHub Enterprise Cloud"), users may authenticate with their identity provider (IdP), which interfaces with GitHub's SAML single sign-on (SSO). Organization owners and administrators centrally manage users' identities, allowing review and revocation of SAML entities.
+Previously, you learned that the first thing you should do as an administrator for a GitHub Enterprise organization is to enable authentication using SAML single sign-on. When your organization has deployed GitHub Enterprise services in GitHub's cloud ("GitHub Enterprise Cloud"), users may authenticate with their identity provider (IdP), which interfaces with GitHub's SAML single sign-on (SSO). Organization owners and administrators centrally manage users' identities, allowing review and revocation of SAML entities.
 
 Employing an identity provider, like Okta, streamlines administrators' responsibilities to authenticate and provide ease of use to organization members. Use of an IdP provides security benefits including viewing and revoking a member's linked identity, active sessions, and authorized credentials.
 
@@ -65,7 +65,7 @@ GitHub applications are more complex tools that sacrifice customization and simp
 - Your organization consumes applications on a software-as-a-service basis (through subscriptions that you purchase in the GitHub Marketplace as an administrator).
 - Instead of manually providing limited-lifetime authorization to access your organization's repositories (as with actions), you'll authorize an ongoing trust relationship with the application.
 - Some applications interact with your repositories in the background, but most have their own custom user interface.
-- Custom-built applications built and installed by an organization can leverage GitHub's REST and GraphQL APIs and interact with Git through cloning, updating and pushing a repository.
+- Custom-built applications built and installed by an organization can use GitHub's REST and GraphQL APIs and interact with Git through cloning, updating and pushing a repository.
 - Applications don't consume resources delivered through a GitHub Enterprise plan.
 
 ### Tips for locating apps and actions on the GitHub Marketplace
@@ -74,7 +74,7 @@ Let's say you want to reduce the workload for the DevOps teams within your organ
 
 :::image type="content" source="../media/marketplace-interface.png" alt-text="A screenshot of the GitHub marketplace interface":::
 
-- **App or action?** Determine the scope of the problem you're trying to solve. If you need to automate a repetitive task in response to an event in your repository, you probably need an action. If you want to make it easier to complete a lot of related tasks, or you want to extend GitHub's functionality, you probably need an application. Filter the available tools on the Marketplace by choosing between **Apps** and **Actions** in the **Types** section of the Marketplace sidebar.
+- **App or action?** Determine the scope of the problem you're trying to solve. If you need to automate a repetitive task in response to an event in your repository, you probably need an action. If you want to make it easier to complete numerous related tasks, or you want to extend GitHub's functionality, you probably need an application. Filter the available tools on the Marketplace by choosing between **Apps** and **Actions** in the **Types** section of the Marketplace sidebar.
 - **Do you want to spend money?** Depending on your budget, you might seek apps that are available on a free or trial basis. Alternately, some of the most popular apps on the Marketplace have versions that you must pay for on a users-per-month basis. Narrow your results along these lines by expanding the **Filters** section of the Marketplace sidebar and choosing between **Free**, **Free Trials**, **GitHub Enterprise** (apps with special functionality for organizations with a GitHub Enterprise plan), and **Paid**. (There aren't any paid actions.)
 - **Do you know the part of the process you want to improve?** The **Categories** section of the Marketplace sidebar allows you to filter by type of business operation, and it can also show **Recently added** apps and actions.
 
