@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-high-availability-disaster-recovery-strategies
 metadata:
-  title: Describe high-availability and disaster-recovery strategies
-  description: "Plan appropriate HA/DR strategy based on RTO and RPO. Choose best solution for IaaS or PaaS deployments or hybrid workloads."
-  ms.date: 08/23/2020
+  title: Describe high availability and disaster recovery strategies
+  description: "Describe high availability and disaster recovery strategies"
+  ms.date: 09/16/2021
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial

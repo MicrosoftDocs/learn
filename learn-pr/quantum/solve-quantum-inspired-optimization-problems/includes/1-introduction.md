@@ -2,9 +2,9 @@ If you've studied earlier modules in the [Quantum computing foundations](../../.
 
 In this learning path, one mission of your spaceship crew is an asteroid mining expedition.
 
-In this module, you'll learn about a *classical* computing method called quantum-inspired optimization (QIO). QIO refers to a class of algorithms that are applied to solve optimization problems on traditional hardware.
+In this module, you'll learn about a *classical* computing method called quantum-inspired optimization. Quantum-inspired optimization refers to a class of algorithms that are applied to solve optimization problems on traditional hardware.
 
-To illustrate the QIO method, let's look at how the crew's logistics division efficiently loads cargo vessels.
+To illustrate the quantum-inspired optimization method, let's look at how the crew's logistics division efficiently loads cargo vessels.
 
 ![Illustration of a cargo vessel above two containers that must be loaded with minerals as evenly as possible.](../media/mineral-loading.svg)
 
@@ -16,19 +16,18 @@ How can you optimize the distribution of the mineral and avert an intergalactic 
 
 ## Learning objectives
 
-In this module, you'll:
+After completing this module, you'll understand:
 
-* Learn about the origins of quantum-inspired optimization.
-* See which kinds of problems are best suited to this method.
+* The origins of quantum-inspired optimization.
+* Which kinds of problems are best suited to this method.
 * Understand how algorithms inspired by physical processes are used to solve difficult problems.
 * Solve a combinatorial optimization problem by using the Azure Quantum optimization service.
 
 ## Prerequisites
 
-* Any Python development environment
-* The latest version of the [Python SDK for Azure Quantum](/azure/quantum/optimization-install-sdk?azure-portal=true)
-* [Jupyter Notebook](https://jupyter.org/install?azure-portal=true)
-* An Azure Quantum workspace
+* Any Python development environment.
+* The latest version of the [Python SDK for Azure Quantum](/azure/quantum/optimization-install-sdk?azure-portal=true).
+* An Azure Quantum workspace.
 
 If you don't have these tools yet, we recommend that you begin with the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module.
 

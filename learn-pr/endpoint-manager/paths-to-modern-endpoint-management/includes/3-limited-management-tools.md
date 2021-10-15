@@ -10,7 +10,7 @@ If you need to use both cloud and on-premises device management, consider using 
 
 By using Intune to manage your organization's endpoints, you gain the following benefits:
 - No need to set up and operate your own management infrastructure.
-- Native integration with cloud-powered security controls and risk-based conditional access for apps and data.
+- Native integration with cloud-powered security controls and risk-based Conditional Access for apps and data.
 - Flexible support for diverse corporate and bring-your-own-device (BYOD) scenarios, while increasing productivity and collaboration.
 - Maximize your investment and accelerate time to value with fast rollout of services and devices with end-to-end integration across familiar Microsoft stack.
 
@@ -20,7 +20,7 @@ Cloud attach allows you to leverage both Microsoft Intune and Microsoft Endpoint
 
 When you enroll Configuration Manager clients in co-management, you gain the following immediate value:
 
-- Conditional access with device compliance
+- Conditional Access with device compliance
 - Intune-based remote actions, such as restart, remote control, or factory reset
 - Centralized visibility of device health
 - Link users, devices, and apps with Azure Active Directory (Azure AD)

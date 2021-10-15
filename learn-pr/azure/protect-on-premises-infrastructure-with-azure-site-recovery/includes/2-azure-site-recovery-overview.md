@@ -6,25 +6,25 @@ In this unit, you'll investigate how Azure Site Recovery can help achieve these 
 
 ## Business continuity and disaster recovery
 
-Loss of service can cause disruption to your staff and users. Every second that systems are unavailable can cause your company lost revenue. Your company also might face financial penalties for breaking agreements written for the availability of services you provide.
+Loss of service can cause disruption to your staff and users. Every second that systems are unavailable can result in lost revenue for your company. Your company also might face financial penalties for breaking agreements for the availability of services you provide.
 
 BCDR plans are formal documents that companies draw up that cover the scope and actions to be taken when a disaster or large-scale outage happens. Each outage is assessed on its own merit. For example, a BCDR plan comes into action when a whole datacenter loses power.
 
-In this example scenario, an earthquake occurred and damaged communications lines, making the datacenter useless until repair. A disaster of this size might bring services down for days, not hours, so a full BCDR plan must be invoked to get the service back online.
+In this example scenario, an earthquake occurred and damaged communications lines, making the datacenter useless and in need of repair. A disaster of this size might bring down services for days, not hours, so a full BCDR plan must be invoked to get the services back online.
 
-As part of your BCDR plan, identify the recovery time objectives (RTOs) and recovery point objectives (RPOs) for your applications. Both objectives help to realize the maximum tolerable hours that your business can be without specified services, and what the data recovery process should be. Let's look closer at each one.
+As part of your BCDR plan, identify the recovery time objectives (RTOs) and recovery point objectives (RPOs) for your applications. Together, these two objectives help to identify the maximum hours that your business can be without specified services, and, in turn, what the data recovery process should be. Let's look closer at each one.
 
 ![An illustration showing the duration, in hours, of the recovery point objective and recovery time objective from the time of the disaster.](../media/4-rto-rpo.png)
 
 ### Recovery time objective
 
-An RTO is a measure of the maximum amount of time your business can survive after a disaster before normal service is restored. Let's assume your RTO is 12 hours, which means that operations can continue for 12 hours without the business's core services functioning. If the downtime is 24 hours, your business would be seriously harmed.
+An RTO is a measure of the maximum amount of time your business can survive after a disaster until normal service must be restored in order to avoid unacceptable consequences associated with a break in continuity. Let's assume your RTO is 12 hours, which means that operations can continue for 12 hours without the business's core services functioning. If the downtime is any longer, your business would be seriously harmed.
 
 ### Recovery point objective
 
-An RPO is a measure of the maximum amount of data loss that's acceptable during a disaster. A business can typically decide to do a backup every 24 hours, 12 hours, or even in real time. If a disaster occurs, there's always some data loss.
+An RPO is a measure of the maximum amount of data loss that's acceptable after a disaster. A business may typically decide to do a backup every 24 hours, 12 hours, or even in real time. If a disaster occurs, there's always some data loss.
 
-For example, if your backup occurred every 24 hours, at midnight, and a disaster happened at 9:00 AM the following day, then nine hours of data would be lost. If your company's RPO was 12 hours, it would be okay because only nine hours passed. If the RPO was four hours, there would be a problem and damage would occur to the business.
+For example, if your backup occurred at midnight every 24 hours, and a disaster happened at 9:00 AM, then nine hours of data would be lost. If your company's RPO was 12 hours, it would be okay because only nine hours passed. If the RPO was four hours, there would be a problem and damage would occur to the business.
 
 ## What is Azure Site Recovery?
 

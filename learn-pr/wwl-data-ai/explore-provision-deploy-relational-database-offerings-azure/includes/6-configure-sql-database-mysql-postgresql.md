@@ -62,7 +62,7 @@ A PostgreSQL database server has a number of configuration parameters that you c
 
 If you're familiar with PostgreSQL, you'll find that not all parameters are supported in Azure. The [Server parameters](https://docs.microsoft.com/azure/postgresql/concepts-servers#server-parameters) page on the Microsoft website describes the PostgreSQL parameters that are available.
 
-PostgreSQL also provides the ability to extend the functionality of your database using extensions. Extensions bundle multiple related SQL objects together in a single package that can be loaded or removed from your database with a single command. After being loaded in the database, extensions function like built-in features. You install an extension in your database before you can use it. To install a particular extension, run the *CREATE EXTENSION* command from psql tool to load the packaged objects into your database. Not all PostgreSQL extensions are supported in Azure. For a full list, read [PostgreSQL extensions in Azure Database for PostgreSQL - Single Server](https://docs.microsoft.com/azure/postgresql/concepts-extensions).
+PostgreSQL also provides the ability to extend the functionality of your database using extensions. Extensions bundle multiple related SQL objects together in a single package that can be loaded or removed from your database with a single command. After being loaded in the database, extensions function like built-in features. You install an extension in your database before you can use it. To install a particular extension, run the *CREATE EXTENSION* command from psql tool to load the packaged objects into your database. Not all PostgreSQL extensions are supported in Azure. For a full list, read [PostgreSQL extensions in Azure Database for PostgreSQL - Single Server](/azure/postgresql/concepts-extensions).
 
 ### Configure read replicas
 
@@ -101,7 +101,7 @@ Like PostgreSQL, a MySQL database server has a number of configuration parameter
 > [!div class="mx-imgBorder"]
 > ![Image of the **Server parameters** page for MySQL in Azure](../media/6-mysql-parameters.png)
 
-You can find more information about the parameters available for MySQL in Azure on the [How to configure server parameters in Azure Database for MySQL by using the Azure portal](https://docs.microsoft.com/azure/mysql/howto-server-parameters) page on the Microsoft website.
+You can find more information about the parameters available for MySQL in Azure on the [How to configure server parameters in Azure Database for MySQL by using the Azure portal](/azure/mysql/howto-server-parameters) page on the Microsoft website.
 
 ### Configure read replicas
 

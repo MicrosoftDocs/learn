@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-tables-views-temporary-objects.create-query-views&nbsp
+title: Create and query views
+metadata:
+  title: Create and query views
+  description: "Create and query views"
+  ms.date: 10/09/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-create-query-views.md)]

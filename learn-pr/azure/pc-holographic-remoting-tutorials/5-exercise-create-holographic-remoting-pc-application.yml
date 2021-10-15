@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.pc-holographic-remoting-tutorials-mrtk.5-exercise-create-holographic-remoting-pc-application
+title: Exercise - Create a Holographic Remoting PC application
+metadata:
+  title: Exercise - Create a Holographic Remoting PC application
+  description: Introduction to Create Holographic Remoting PC application
+  ms.date: 09/09/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-exercise-create-holographic-remoting-pc-application.md)]

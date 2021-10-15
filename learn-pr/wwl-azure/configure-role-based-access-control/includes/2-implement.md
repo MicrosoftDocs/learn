@@ -22,4 +22,4 @@ Here are some examples of what you can do with Azure RBAC:
 
 Using Azure RBAC, you can segregate duties within your team and grant only the amount of access to users that they need to perform their jobs. Instead of giving everybody unrestricted permissions in your Azure subscription or resources, you can allow only certain actions at a particular scope.
 
-When planning your access control strategy, it's a best practice to grant users the least privilege to get their work done. The following diagram shows a suggested pattern for using Azure RBAC.
+When planning your access control strategy, it's a best practice to grant users the least privilege to get their work done.

@@ -9,7 +9,6 @@ In this module, you've seen how to use Azure Cosmos DB and Azure Storage account
 
 - [Common Azure Cosmos DB use cases](/azure/cosmos-db/use-cases)
 - [Migrate normalized database schema from Azure SQL Database to Azure CosmosDB denormalized container](/azure/data-factory/how-to-sqldb-to-cosmosdb)
-- [Tutorial: Use Data migration tool to migrate your data to Azure Cosmos DB](/azure/cosmos-db/import-data)
 - [Copy and transform data in Azure Cosmos DB (SQL API) by using Azure Data Factory](/azure/data-factory/connector-azure-cosmos-db) 
 - [Quickstart: Build a console app using the .NET V4 SDK to manage Azure Cosmos DB SQL API account resources](/azure/cosmos-db/create-sql-api-dotnet-v4)
 - [Getting started with SQL queries](/azure/cosmos-db/sql-api-sql-query)

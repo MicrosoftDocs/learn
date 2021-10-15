@@ -1,6 +1,6 @@
 In the parameters section of the template, you specify which values you can input when deploying the resources. The available properties for a parameter are:
 
-```
+```JSON
 "parameters": {
     "<parameter-name>" : {
         "type" : "<type-of-parameter-value>",
@@ -19,7 +19,7 @@ In the parameters section of the template, you specify which values you can inpu
 
 Here's an example that illustrates two parameters: one for a virtual machine's username, and one for its password:
 
-```
+```JSON
 "parameters": {
   "adminUsername": {
     "type": "string",

@@ -10,19 +10,22 @@ Watch the video to see how Conditional Access policies work.
 
 ## Conditional Access signals
 
-Conditional Access can use the following signals to control the who, what, and where of the policy:
+Conditional Access can use the following signals:
 
-- **User or group membership**. Policies can be targeted to specific users and groups (including admin roles), giving administrators fine-grained control over access.
+- **User or group membership**. Policies can be targeted to all users, specific groups of users, directory roles, or external guest users, giving administrators fine-grained control over access.
 - **Named location information**. Named location information can be created using IP address ranges, and used when making policy decisions. Also, administrators can opt to block or allow traffic from an entire country's IP range.
 - **Device**. Users with devices of specific platforms or marked with a specific state can be used.
 - **Application**. Users attempting to access specific applications can trigger different Conditional Access policies.
-- **Real-time sign-in risk detection**. Signals integration with Azure AD Identity Protection allows Conditional Access policies to identify risky sign-in behavior. Policies can then force users to perform password changes or multifactor authentication to reduce their risk level or be blocked from access until an administrator takes manual action.
+- **Real-time sign-in risk detection**. Signals integration with Azure AD Identity Protection allows Conditional Access policies to identify risky sign-in behavior \- the probability that a given sign-in, or authentication request, isn't authorized by the identity owner. Policies can then force users to perform password changes or multifactor authentication to reduce their risk level or be blocked from access until an administrator takes manual action.
 - **Cloud apps or actions**. Cloud apps or actions can include or exclude cloud applications or user actions that will be subject to the policy.
 - **User risk**. For customers with access to Identity Protection, user risk can be evaluated as part of a Conditional Access policy. User risk represents the probability that a given identity or account is compromised. User risk can be configured for high, medium, or low probability.
 
+When creating a conditional access policy, admins can determine which signals to use through assignments. The assignments portion of the policy controls the who, what, and where of the Conditional Access policy.  All assignments are logically ANDed. If you have more than one assignment configured, all assignments must be satisfied to trigger a policy.
+
+ 
 ## Access controls
 
-When the Conditional Access policy has been applied, an informed decision is reached on whether to grant access, block access, or require extra verification. Common decisions are:
+When the Conditional Access policy has been applied, an informed decision is reached on whether to grant access, block access, or require extra verification. The decision is referred to as the access controls portion of the Conditional Access policy and defines how a policy is enforced. Common decisions are:
 
 - Block access
 - Grant access

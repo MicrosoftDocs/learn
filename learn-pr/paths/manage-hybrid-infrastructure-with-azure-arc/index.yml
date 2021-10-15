@@ -27,5 +27,6 @@ modules:
 - learn.azure.intro-to-azure-arc
 - learn.azure.intro-to-arc-for-servers
 - learn.azure.intro-to-arc-enabled-kubernetes
+- learn.azure.intro-to-arc-enabled-data-services
 trophy:
   uid: learn.manage-hybrid-infrastructure-with-azure-arc.trophy

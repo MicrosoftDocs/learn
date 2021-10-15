@@ -7,7 +7,7 @@ An autoscale setting is read by the autoscale engine to determine whether to sca
 :::image type="content" source="../media/web-app-autoscale-94c4da54.png" alt-text="Screenshot of the Create a Scale Condition page. The scale mode selection is Scale Based on Metric. The Scale to specific instance count selection is also shown.":::
 
 
-Rules include a trigger and a scale action (up or down). The trigger can be metric-based or time-based.
+Rules include a trigger and a scale action (in or out). The trigger can be metric-based or time-based.
 
  -  **Metric-based**. Metric-based rules measure application load and add or remove VMs based on that load. For example, do this action when CPU usage is above 50%. Examples of metrics are CPU time, Average response time, and Requests.
  -  **Time-based**. Time-based (schedule-based) rules allow you to scale when you see time patterns in your load and want to scale before a possible load increase or decrease occurs. For example, trigger a webhook every 8am on Saturday in a given time zone.

@@ -2,10 +2,11 @@ Before you can deploy your toy company's website by using a pipeline, you need t
 
 > [!div class="checklist"]
 > * Create a resource group for your website.
-> * Create an Azure AD service principal and grant it access to the resource group.
-> * Create an Azure Pipelines service connection and configure it to use the service principal's credentials.
+> * Create an Azure Pipelines service connection and configure it to access the resource group.
 
 This exercise requires that you have permissions to create applications and service principals in your Azure AD directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
+
+[!include[](../../includes/cleanup-steps.md)]
 
 ## Sign in to Azure
 
@@ -73,133 +74,58 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ::: zone pivot="cli"
 
-1. To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
+To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
 
-   ```azurecli
-   az group create --name ToyWebsite --location westus
-   ```
-
-1. Look at the JSON output from the command. It includes an `id` property, which is the resource group's ID.
-
-   Copy the resource group ID somewhere safe. You'll use it soon.
+```azurecli
+az group create --name ToyWebsite --location westus
+```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
+To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
 
-   ```azurepowershell
-   New-AzResourceGroup -Name ToyWebsite -Location westus
-   ```
-
-1. Look at the output from the command. It includes a `ResourceId`, which is the resource group's fully qualified ID.
-
-   Copy the resource group ID somewhere safe. You'll use it soon.
-
-::: zone-end
-
-## Create a service principal and grant it access to the resource group
-
-::: zone pivot="cli"
-
-1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure CLI command in the Visual Studio Code terminal. Replace the placeholder with the resource group ID you copied in the last step.
-
-   ```azurecli
-   az ad sp create-for-rbac \
-     --name ToyWebsitePipeline \
-     --role Contributor \
-     --scopes RESOURCE_GROUP_ID
-   ```
-
-1. Look at the JSON output from the command. It includes the following properties:
-
-    * `appId`: The service principal's application ID.
-    * `password`: The service principal's key.
-    * `tenant`: Your Azure AD tenant ID.
-
-   Copy these values somewhere safe. You'll use them soon.
-
-1. To view information about your Azure subscription, run this Azure CLI command:
-
-   ```azurecli
-   az account show
-   ```
-
-1. Look at the JSON output from the command. It includes the following properties:
-
-    * `id`: Your Azure subscription ID.
-    * `name`: Your Azure subscription name.
-
-   Copy these values somewhere safe. You'll use them soon.
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure PowerShell code in the Visual Studio Code terminal. Replace the placeholder with the resource group ID you copied in the last step.
-
-   ```azurepowershell
-   $servicePrincipal = New-AzADServicePrincipal `
-     -DisplayName ToyWebsitePipeline `
-     -Role Contributor `
-     -Scope RESOURCE_GROUP_ID
-
-   $plaintextSecret = [System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password
-   ```
-
-1. Run this code to show the service principal's application ID, the key, and your Azure AD tenant ID:
-
-   ```azurepowershell
-   Write-Output "Service principal application ID: $($servicePrincipal.ApplicationId)"
-   Write-Output "Service principal key: $($plaintextSecret)"
-   Write-Output "Azure subscription ID: $((Get-AzContext).Subscription.Id)"
-   Write-Output "Azure subscription name: $((Get-AzContext).Subscription.Name)"
-   Write-Output "Azure AD tenant ID: $((Get-AzContext).Tenant.Id)"
-   ```
-
-   Copy the values somewhere safe. You'll use them soon.
+```azurepowershell
+New-AzResourceGroup -Name ToyWebsite -Location westus
+```
 
 ::: zone-end
 
 ## Create a service connection in Azure Pipelines
 
-You've created a resource group and a service principal. Next, create a service connection in Azure Pipelines.
+Next, create a service connection in Azure Pipelines. This automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy to the resource group.
 
-1. In your browser, select **Project settings** > **Service connections** > **Create service connection**.
+1. In your browser, select **Project settings**.
 
-   :::image type="content" source="../media/5-create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the 'Create service connection' button highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-project-settings.png" alt-text="Screenshot of Azure DevOps that shows the menu, with the 'Project settings' item highlighted.":::
+
+1. Select **Service connections** > **Create service connection**.
+
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the 'Create service connection' button highlighted.":::
 
 1. Select **Azure Resource Manager** > **Next**.
 
-   :::image type="content" source="../media/5-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Azure Resource Manager service connection type highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Azure Resource Manager service connection type highlighted.":::
 
-1. Select **Service principal (manual)** > **Next**.
+1. Select **Service principal (automatic)** > **Next**.
 
-   :::image type="content" source="../media/5-create-service-connection-principal-type.png" alt-text="Screenshot of the Azure DevOps 'Create service connection' page, with the 'Service principal (manual)' authentication method highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Service principal (automatic) option highlighted.":::
 
-   > [!NOTE]
-   > It's a good idea to manually create service principals like you're doing here, rather than using the automatic service principal creation that's available in Azure Pipelines. When you use the automatic method, Azure Pipelines grants the service principal permissions to your entire subscription. It's more secure to grant permissions with a narrower scope, like a resource group. Granting specific permissions requires you to use the manual creation process.
+1. In the **Subscription** drop-down, select your Azure subscription.
 
-1. In **Subscription Id** and **Subscription Name**, enter the subscription ID and subscription name that you saved earlier.
+   A popup window might appear, asking you to sign in to Azure. If it does, enter your credentials and sign in.
 
-   :::image type="content" source="../media/5-create-service-connection-principal-details-1.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with a subscription ID and subscription name entered.":::
+1. In the **Resource group** drop-down, select **ToyWebsite**.
 
-1. In **Service principal Id** and **Service principal key**, enter the service principal's application ID and the key that you saved earlier. In **Tenant ID**, enter the Azure tenant ID that you saved earlier. Select **Verify**.
+1. In **Service connection name**, enter **ToyWebsite**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
 
-   :::image type="content" source="../media/5-create-service-connection-principal-details-2.png" alt-text="Screenshot of the Azure DevOps 'Create service connection' page, with the details completed and the Verify button highlighted.":::
-
-1. Azure Pipelines verifies that it can access your Azure subscription. Check that*Verification succeeded* is shown.
-
-   > [!NOTE]
-   > If the verification doesn't succeed, check that you copied the correct values for the service principal, subscription, and tenant. Wait a few minutes to allow time for Azure's role assignments to replicate globally, and then try again.
-
-1. In **Service connection name**, enter **ToyWebsite**. Ensure that the **Grant access permission to all pipelines** checkbox is selected. Select **Verify and save**.
-
-   :::image type="content" source="../media/5-create-service-connection-principal-details-3.png" alt-text="Screenshot of the Azure DevOps 'Create service connection' page, with the 'Verify and save' button highlighted.":::
+   :::image type="content" source="../media/5-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the details completed and the Next button highlighted.":::
 
    > [!TIP]
    > For simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.
+
+1. Select **Save**.
 
 1. In **Service connections**, verify that your new service connection is shown in the list of service connections.
 

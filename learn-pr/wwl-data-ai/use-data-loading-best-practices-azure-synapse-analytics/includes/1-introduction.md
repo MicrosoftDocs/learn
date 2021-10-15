@@ -6,7 +6,6 @@ In this module, you will:
 -	Manage source data files
 -	Manage singleton updates
 -	Set-up dedicated data loading accounts
--	Manage concurrent access to Azure Synapse Analytics
 -	Implement Workload Management
 -	Simplify ingestion with the Copy Activity
 

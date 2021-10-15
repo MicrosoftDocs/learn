@@ -14,10 +14,8 @@ In the current Program.cs code, you're passing the static location of the *store
     static void Main(string[] args)
     {
       var currentDirectory = Directory.GetCurrentDirectory();
-      
-      var salesFiles = FindFiles("stores");
-    
-      foreach (var file in salesFiles)
+      var files = FindFiles("stores");
+      foreach (var file in files)
       {
         Console.WriteLine(file);
       }
@@ -30,11 +28,8 @@ In the current Program.cs code, you're passing the static location of the *store
     static void Main(string[] args)
     {
         var currentDirectory = Directory.GetCurrentDirectory();
-        
         var storesDirectory = Path.Combine(currentDirectory, "stores");
-        
         var salesFiles = FindFiles(storesDirectory);
-        
         foreach (var file in salesFiles)
         {
             Console.WriteLine(file);
@@ -70,7 +65,6 @@ Instead of looking for only *sales.json* files, the program needs to search for 
     foreach (var file in foundFiles)
     {
         var extension = Path.GetExtension(file);
-        
         if (file.EndsWith("sales.json"))
         {
             salesFiles.Add(file);
@@ -84,7 +78,6 @@ Instead of looking for only *sales.json* files, the program needs to search for 
     foreach (var file in foundFiles)
     {
         var extension = Path.GetExtension(file);
-        
         if (extension == ".json")
         {
             salesFiles.Add(file);
@@ -133,9 +126,7 @@ namespace files_module
         {
             var currentDirectory = Directory.GetCurrentDirectory();
             var storesDirectory = Path.Combine(currentDirectory, "stores");
-
             var salesFiles = FindFiles(storesDirectory);
-
             foreach (var file in salesFiles)
             {
                 Console.WriteLine(file);
@@ -145,13 +136,10 @@ namespace files_module
         static IEnumerable<string> FindFiles(string folderName)
         {
             List<string> salesFiles = new List<string>();
-
             var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
-
             foreach (var file in foundFiles)
             {
                 var extension = Path.GetExtension(file);
-
                 if (extension == ".json")
                     salesFiles.Add(file);
             }

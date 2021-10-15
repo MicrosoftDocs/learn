@@ -9,6 +9,7 @@ To remove a resource group use, **Remove-AzResourceGroup**. In this example, we 
 
 ```
 Remove-AzResourceGroup -Name "ContosoRG01"
+
 ```
 
 ## Removing resources

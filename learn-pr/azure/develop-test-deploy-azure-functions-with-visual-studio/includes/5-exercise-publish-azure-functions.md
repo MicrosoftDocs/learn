@@ -14,13 +14,15 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
     The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and then select **Function App** under *Popular services*.
+1. In the left menu pane, select **Compute**, and under *Popular services*, select **Function App**.
 
     ![Screenshot of the Compute and Function App options.](../media/5-compute-function-app.png)
 
     <!-- [!include[](../../includes/functions-classic-workaround.md)] -->
 
-1. The **Create Function App** pane appears. On the **Basics** tab, enter the following values for each setting.
+    The **Create Function App** pane appears.
+
+1. On the **Basics** tab, enter the following values for each setting.
 
     > [!NOTE]
     > The function app must have a unique name. We suggest using something like **\<*your name or initials*\>watchfunctions**. In this exercise, use this name wherever you see *\<your-function-app-name\>*.
@@ -62,27 +64,37 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
     :::image type="content" source="../media/5-start-publish-from-visual-studio.png" alt-text="Screenshot of Visual Studio, showing the Publish option for the WatchPortalFunctions project." loc-scope="vs":::
 
-1. In the **Publish** window, select **Azure**, and then select **Next**.
+    The **Publish** window appears.
+
+1. Select **Azure**, and then select **Next**.
 
     :::image type="content" source="../media/5-publish-target.png" alt-text="Screenshot of the Publish target window. The user has chosen the Azure option." loc-scope="vs":::
 
-1. The **Publish** window reappears. In the **Subscription** dropdown list, select **Concierge Subscription**. In the **View** dropdown list, select **Resource group**, and on top of the **Function Apps** field, select the **+** (Create a new Azure Function) icon.
+    The **Publish** window reappears.
+
+1. In the **Subscription** dropdown list, select **Concierge Subscription**. In the **View** dropdown list, select **Resource group**, and on top of the **Function Apps** field, select the **+** (Create a new Azure Function) icon.
 
     :::image type="content" source="../media/5-publish-functions-instance.png" alt-text="Screenshot of the Publish Functions instance window. The user to select Function Apps." loc-scope="vs":::
 
-1. The **Function App (Windows)** window appears. Maintain all the default selections but ensure the **Location** field matches what you previously specified in the Azure portal, and then select **Create**.
+    The **Function App (Windows)** window appears.
+
+1. Maintain all the default selections but ensure the **Location** field matches what you previously specified in the Azure portal, and then select **Create**.
 
     :::image type="content" source="../media/5-function-app-windows.png" alt-text="Screenshot of the Function App (Windows) window. The user to select Create." loc-scope="vs":::
 
-1. The **Publish** window reappears with the Azure Function App displayed. Select **Finish**.
+    The **Publish** window reappears with the Azure Function App displayed.
+
+1. Select **Finish**.
 
     :::image type="content" source="../media/5-function-app-publish.png" alt-text="Screenshot of the Function App (Windows) window. The user to select Finish." loc-scope="vs":::
 
-1. On the **Publish** window, select **Publish**.
+    The **Publish** window reappears again.
+
+1. Select **Publish**.
 
     :::image type="content" source="../media/5-visual-studio-publish.png" alt-text="[Screenshot of Visual Studio. The user to select Finish." loc-scope="vs":::
 
-1. Wait for your functions to be deployed. The **Output** window in Visual Studio shows the progress of the build and publish processes. If everything works, the final two messages should be **Build succeeded** and **Publish succeeded**.
+    Wait for your functions to be deployed. The **Output** window in Visual Studio shows the progress of the build and publish processes. If everything works, the final two messages should be **Build succeeded** and **Publish succeeded**.
 
     :::image type="content" source="../media/5-output-window.png" alt-text="Screenshot of the Output window in Visual Studio. The final two messages indicate that the functions were published successfully." loc-scope="vs":::
 

@@ -1,6 +1,6 @@
 :::image type="content" source="../media/consortium-logo.png" alt-text="Logo of the Digital Twin Consortium." lightbox="../media/consortium-logo.png":::
 
-The [Digital Twin Consortium (DTC)](https://www.digitaltwinconsortium.org/index.htm), cofounded by Microsoft, Dell, Ansys, Autodesk, GE Software, Northrop Grumman, and Lendlease, was announced in May 2020 at the Build conference. The DTC is a fast-growing organization that started with 14 founding members and added 42 members in the first week. It has more than 125 partners as of August 2020.
+The [Digital Twin Consortium (DTC)](https://www.digitaltwinconsortium.org/index.htm), cofounded by Microsoft, Dell, Ansys, Autodesk, GE Digital, Northrop Grumman, and Lendlease, was announced in May 2020 at the Build conference. The DTC is a fast-growing organization that started with 14 founding members and added 42 members in the first week. It has more than 125 partners as of August 2020.
 
 The DTC is a program of the Object Management Group that's dedicated to the widespread adoption of digital twin technology and the value it delivers. Through cross-industry collaboration, the DTC will help enterprises maximize the benefits of digital twin technology. Members will be able to share the lessons learned and opportunities uncovered within the virtual world and apply them to the physical world.
 

@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-natural-language-processing.knowledge-check
+title: Check your knowledge
+metadata:
+  title: Check your knowledge
+  description: Check your knowledge
+  ms.date: 07/07/2021
+  author: shwars
+  ms.author: dmitryso
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+quiz:
+  questions:
+    - content: "Suppose your text corpus contains 80000 different words. Which of the below would you complete to reduce the dimensionality of the input vector to neural classifier?"
+      choices:
+        - content: "Randomly select 10% of the words and ignore the rest."
+          isCorrect: false
+          explanation: "It is definitely not a good idea, especially because you risk omitting semantically-important words"
+        - content: "Use convolutional layer before fully-connected classifier layer"
+          isCorrect: false
+          explanation: "Convolutional layers do not reduce the dimensionality of input vectors"
+        - content: "Use embedding layer before fully-connected classifier layer"
+          isCorrect: true
+          explanation: "This is correct"
+        - content: "Select 10% of most frequently used words and ignore the rest"
+          isCorrect: false
+          explanation: "While ignoring some words might be a good way to limit vocabulary, leaving the most frequently used words is not a good idea because they are often not semantically important"
+    - content: "We want to train a neural network to generate new funny words for a children's book. Which architecture can we use?"
+      choices:
+        - content: "Word-level LSTM"
+          isCorrect: false
+          explanation: "Word-level networks operate on pre-defined vocabulary of words, and cannot generate new words."
+        - content: "Character-level LSTM"
+          isCorrect: true
+          explanation: "Correct, character-level LSTM will capture often used syllables and will put those patterns together to generate new words."
+        - content: "Word-level RNN"
+          isCorrect: false
+          explanation: "Word-level networks operate on pre-defined vocabulary of words, and cannot generate new words."
+        - content: "Character-level perceptron"
+          isCorrect: false
+          explanation: "Fully-connected linear network (perceptron) is not a good architecture for text modeling, because they cannot capture common patterns effectively."
+    - content: "Recurrent neural network is called recurrent, because:"
+      choices:
+        - content: "A network is applied for each input element and output from the previous application is passed to the next one"
+          isCorrect: true
+          explanation: "This is correct."
+        - content: "It is trained by a recurrent process"
+          isCorrect: false
+          explanation: "Recurrent neural network is trained in the same manner as any other neural network"
+        - content: "It consists of layers which include other subnetworks"
+          isCorrect: false
+          explanation: "While you can consider recurrent block to be a combination of two linear layers, it has nothing to do with recurrence"
+    - content: "What is the main idea behind LSTM network architecture?"
+      choices:
+        - content: "Fixed number of LSTM blocks for the whole dataset"
+          isCorrect: false
+          explanation: "Number of LSTM blocks depend on the sequence length in the minibatch"
+        - content: "It contains many layers of recurrent neural networks"
+          isCorrect: false
+          explanation: "LSTM can consist of one or more levels"
+        - content: "Explicit state management with forgetting and state triggering"
+          isCorrect: true
+          explanation: "In LSTM, each block receives and outputs a state, which is manipulated upon inside the block depending on input and previous state."
+    - content: "What is the main idea of attention?"
+      choices:
+        - content: "Attention assigns a weight coefficient to each word in the vocabulary to show how important it is"
+          isCorrect: false
+          explanation: "Not correct. Attention works inside each sentence, and reflects relative importance between words."
+        - content: "Attention is a network layer that uses attention matrix to see how much input states from each step affect the final result."
+          isCorrect: true
+          explanation: "Correct. By looking at attention matrix we can visually estimate which words play more important role in different parts of the sentence."
+        - content: "Attention builds global correlation matrix between all words in vocabulary, showing their co-occurrence"
+          isCorrect: false
+          explanation: "This is not correct, attention computer relative importance of words inside each sentence."

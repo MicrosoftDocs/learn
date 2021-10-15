@@ -1,0 +1,23 @@
+name: MyWorkflow
+
+on: [workflow_dispatch]
+
+env: 
+    AZURE_RESOURCEGROUP_NAME: ToyWebsite
+    ENVIRONMENT: nonprod
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        path: repo
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - uses: azure/arm-deploy@v1
+      with:
+        resourceGroupName: ${{ env.AZURE_RESOURCEGROUP_NAME }}
+        template: ./deploy/main.bicep
+        parameters: environmentType=Test

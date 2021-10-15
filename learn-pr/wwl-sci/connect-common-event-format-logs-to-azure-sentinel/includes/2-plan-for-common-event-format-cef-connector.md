@@ -1,6 +1,6 @@
 The CEF Connector deploys a Syslog Forwarder server to support the communication between the appliance and Azure Sentinel. The server consists of a dedicated Linux machine with the Log Analytics agent for Linux installed.  Many of the Azure Sentinel Data Connectors that are vendor-specific utilize CEF Connector.
 
-The following diagram displays the setup in the case of a Linux VM in Azure.  The on-premises Syslog sources send securely send events to an Azure Linux VM.  The Linux VM with the Log Analytics agent installed then forwards the logs to the Azure Sentinel workspace.
+The following diagram displays the setup in the case of a Linux VM in Azure.  The on-premises Syslog sources securely send events to an Azure Linux VM.  The Linux VM with the Log Analytics agent installed then forwards the logs to the Azure Sentinel workspace.
 
 :::image type="content" source="../media/learn-path5-01.png" alt-text="Azure VM hosting connector.":::
 
@@ -12,7 +12,7 @@ Alternatively, the following diagram displays the setup if you use a VM in anoth
 
 Make sure to configure the machine's security according to your organization's security policy. For example, you can configure your network to align with your corporate network security policy and change the daemon's ports and protocols to align with your requirements.
 
-To use TLS communication between the Syslog source and the Syslog Forwarder, you will need to configure the Syslog daemon (rsyslog or syslog-ng) to communicate in TLS.
+To use transport layer security (TLS) communication between the Syslog source and the Syslog Forwarder, you will need to configure the Syslog daemon (rsyslog or syslog-ng) to communicate in TLS.
 
 ## Prerequisites
 

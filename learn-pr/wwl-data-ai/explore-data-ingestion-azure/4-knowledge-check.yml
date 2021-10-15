@@ -4,12 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2020
+  ms.date: 09/14/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
+labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/4-knowledge-check.md)]
@@ -34,7 +36,7 @@ quiz:
       explanation: "That's correct. This is the purpose of PolyBase"
     - content: "To ingest streaming data using Azure Databricks"
       isCorrect: false
-      explanation: "That's incorrect. PolyBase enables you to access external static data in Azure SQL Database queries"
+      explanation: "That's incorrect. PolyBase is a data virtualization feature for SQL Server and doesn't extend support to Databricks."
     - content: "To orchestrate activities in Azure Data Factory"
       isCorrect: false
       explanation: "That's incorrect. You use Data Factory pipelines to orchestrate activities."

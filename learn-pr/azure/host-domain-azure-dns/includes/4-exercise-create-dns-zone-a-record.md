@@ -14,23 +14,25 @@ To create your DNS zone:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account you used to activate the sandbox.
 
-1. Select **Create a resource**.
+1. On the Azure **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. Search for and select **DNS zone**. The **DNS zone** pane appears.
+1. In the *Search services and marketplace* search box, search for and select **DNS zone** by Microsoft. The **DNS zone** pane appears.
 
 1. Select **Create**.
 
     ![Screenshot of DNS zone, with Create highlighted.](../media/4-dnszonecreate.png)
 
+    The **Create DNS zone** pane appears.
+
 1. On the **Basics** tab, enter the following values for each setting.
 
-    |Setting  |Value |
+    | Setting  | Value |
     |---------|---------|
     | **Project details** |
-    |Subscription  |  Concierge subscription  |
-    |Resource group  |  <rgn>[sandbox resource group]</rgn> |
+    | Subscription  |  Concierge subscription  |
+    | Resource group  | From the dropdown list, select <rgn>[sandbox resource group]</rgn> |
     | **Instance details** |
-    |Name  |   The name needs to be unique in the sandbox. Use `wideworldimportsXXXX.com` where you replace the Xs with letters or numbers. |
+    | Name  |   The name needs to be unique in the sandbox. Use `wideworldimportsXXXX.com` where you replace the Xs with letters or numbers. |
 
     ![Screenshot of Create DNS zone page.](../media/4-creatednszone.png)
 
@@ -38,9 +40,9 @@ To create your DNS zone:
 
 1. After validation passes, select **Create**. It will take a few minutes to create the DNS zone.
 
-1. Select **Go to resource**.
+1. When deployment is complete, select **Go to resource**. Your **DNS zone** pane appears.
 
-   By default, the NS and SOA records are automatically created. The NS record defines the Azure DNS name spaces and contains the four Azure DNS record sets. You use all four record sets when you update the registrar.
+   By default, the NS and SOA record sets are automatically created and automatically deleted whenever a DNS zone is created or deleted. The NS record set defines the Azure DNS namespaces and contains the four Azure DNS records. You use all four records when you update the registrar.
 
    The SOA record represents your domain, and is used when other DNS servers are searching for your domain.
 
@@ -50,40 +52,42 @@ To create your DNS zone:
 
 Now that the DNS zone exists, you need to create the necessary records to support the domain.
 
-The primary record to create is the A record. This record contains the pairing between the IP address and the domain name. The A record can have multiple entries, called record sets. In record sets, the domain name remains constant, while the IP addresses are different.
+The primary record set to create is the A record. The A record set is used to point traffic from a logical domain name to the hosting server's IP address. An A record set can have multiple records. In a record set, the domain name remains constant, while the IP addresses differ.
 
-1. On the **wideworldimportsXXXX.com - DNS zone** pane, in the upper menu bar, select **Record set**.
+1. On the **DNS zone** pane for *wideworldimportsXXXX.com*, in the top menu bar, select **Record set**.
 
-    ![Screenshot of the DNS zone page, with + Record set highlighted.](../media/4-add-a-record.png)
+    :::image type="content" source="../media/4-add-a-record.png" alt-text="Screenshot of the DNS zone page, with + Record set highlighted." lightbox ="../media/4-add-a-record.png":::
 
-1. The **Add record set** pane appears. Enter the following values for each setting.
+    The **Add record set** pane appears.
 
-    |Setting  |Value |Description  |
+1. Enter the following values for each setting.
+
+    | Setting  | Value | Description  |
     |---------|---------|---------|
-    |Name     |   www      | The host name that you want to resolve to an IP address. |
-    |Type    |     A    |  The A record is the most commonly used. If you're using IPv6, select the **AAAA** type.     |
-    |Alias record set    | No   | This can only be applied to A, AAAA, and CNAME record types.  |
-    |TTL     |      1  | The time-to-live period, which specifies how long each DNS server caches the resolution before it's purged.        |
-    |TTL unit     |    Hours     |  This value can be seconds, minutes, hours, days, or weeks. Here, you're selecting hours.  |
-    |IP Address    |    10.10.10.10     |  The IP address the record name resolves to. In a real-world scenario, you would enter the public IP address for your web server. |
-
-    ![Screenshot of Add record set.](../media/4-arecord.png)
+    | Name     |   www      | The host name that you want to resolve to an IP address. |
+    | Type    |     A    |  The **A** record is the most commonly used. If you're using IPv6, select the **AAAA** type.     |
+    | Alias record set    | No   | This can only be applied to A, AAAA, and CNAME record types.  |
+    | TTL     |      1  | The time-to-live, which specifies the period of time each DNS server caches the resolution before it's purged.        |
+    | TTL unit     |    Hours     |  This value can be seconds, minutes, hours, days, or weeks. Here, you're selecting hours.  |
+    | IP Address    |    10.10.10.10     |  The IP address the record name resolves to. In a real-world scenario, you would enter the public IP address for your web server. |
 
 1. Select **OK** to add the record to your zone.
 
-Note that it's possible to have more than one IP address set up for your web server. In that case, you add all the associated IP addresses as part of a record set. You can update the record set after it's created with additional IP addresses.
+    :::image type="content" source="../media/4-arecord.png" alt-text="Screenshot of A record set." lightbox="../media/4-arecord.png":::
+
+Note that it's possible to have more than one IP address set up for your web server. In that case, you add all the associated IP addresses as records in the A record set. After it's created, you can update the record set with additional IP addresses.
 
 ## Verify your global Azure DNS
 
-In a real-world scenario, after you create the public DNS zone, you update the NS records of the domain-name registrar, to delegate the domain to Azure.
+In a real-world scenario, after you create the public DNS zone, you update the NS records of the domain-name registrar to delegate the domain to Azure.
 
-Even though we don't have a registered domain, it's still possible to verify that the DNS zone works as expected, by using the nslookup tool.
+Even though we don't have a registered domain, it's still possible to verify that the DNS zone works as expected, by using the `nslookup` tool.
 
 ### Use nslookup to verify the configuration
 
 Here's how to use `nslookup` to verify the DNS zone configuration.
 
-1. Use Cloud Shell to run the following command. Replace the DNS zone name with the zone you created. Also replace the name server address with one of the NS values you copied after you created the DNS zone.
+1. Use Cloud Shell to run the following command. Replace the DNS zone name with the zone you created, and replace `<name server address>` with one of the NS values you copied after you created the DNS zone.
 
     ```bash
     nslookup www.wideworldimportsXXXX.com <name server address>

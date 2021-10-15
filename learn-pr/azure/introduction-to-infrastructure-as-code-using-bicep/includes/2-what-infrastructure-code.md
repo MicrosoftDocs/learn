@@ -107,7 +107,7 @@ az storage account create \
     --name mystorageaccount \
     --resource-group storage-resource-group \
     --kind StorageV2 \
-    --access-tier hot \
+    --access-tier Hot \
     --https-only true
 ```
 

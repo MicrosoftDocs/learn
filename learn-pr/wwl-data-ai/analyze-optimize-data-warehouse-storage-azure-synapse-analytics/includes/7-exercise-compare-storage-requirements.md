@@ -116,7 +116,7 @@ Perform the following steps to compare storage requirements between optimal and 
     ![Data type selection impact on table storage](../media/data-type-selection.png)
 
     There are two important conclusions to draw here:
-    - In the case of `HEAP` tables, the storage impact of using `BIGINT` instead of `SMALLINT`(for `ProductId`) and `TINYINT` (for `QUANTITY`) is almost 1 GB (0.8941 GB). We're talking here about only two columns and a moderate number of rows (2.9 billion).
+    - In the case of `HEAP` tables, the storage impact of using `BIGINT` instead of `SMALLINT`(for `ProductId`) and `TINYINT` (for `QUANTITY`) is 0.141864 GB. We're talking here about only two columns and a moderate number of rows (2.9 billion).
     - Even in the case of `CLUSTERED COLUMNSTORE` tables, where compression will offset some of the differences, there is still a difference of 12.7 MB.
 
 

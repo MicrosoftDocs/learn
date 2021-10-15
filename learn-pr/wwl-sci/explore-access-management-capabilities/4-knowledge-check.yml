@@ -4,12 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/21/2021
+  ms.date: 09/16/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
+sandbox: false
+labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/4-knowledge-check.md)]
@@ -32,9 +34,9 @@ quiz:
     - content: "The probability that the device is owned by the identity owner."
       isCorrect: false
       explanation: "That's incorrect. Sign-in risk doesn't calculate any probability relating to users’ devices."
-    - content: "The probability that the authentication request is authorized by the identity owner."
+    - content: "The probability that the authentication request isn't authorized by the identity owner."
       isCorrect: true
-      explanation: "That's correct. Sign-in risk is the real-time calculation that a given authentication request was made by the specific user’s identity."
+      explanation: "That's correct. Sign-in risk is the real-time calculation that a given authentication request isn't authorized by the identity owner."
     - content: "The probability that the user is authorized to view data from a particular application."
       isCorrect: false
       explanation: "That's incorrect. Sign-in risk doesn't calculate the probability that a user is authorized to view data."

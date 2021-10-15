@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-composable-bicep-files-using-modules.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 10/10/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: You deploy the *main.bicep* file with the default settings. You open the Azure portal and look at the deployment history for the resource group. What do you see?
+    choices:
+    - content: A single deployment named `main`.
+      isCorrect: false
+      explanation: Incorrect. Azure creates a deployment resource for each module, along with the template that you deploy.
+    - content: Two deployments. One is named `main` and the other is named `storage1`.
+      isCorrect: false
+      explanation: Incorrect. Although Azure creates two deployments in this example, the `name` property sets the module's deployment name, not the symbolic name.
+    - content: Two deployments. One is named `main` and the other is named `my-storage`.
+      isCorrect: true
+      explanation: Correct. Azure creates two deployments in this example. By default, the template file name is used for the parent deployment's name. The `name` property sets the module deployment's name.
+  - content: You plan to update the *main.bicep* file to add another resource. The new resource needs access to the key of the storage account created in the module. What should you do?
+    choices:
+    - content: Create an output in the module and set its value to the storage account's connection string.
+      isCorrect: false
+      explanation: Incorrect. Outputs should not be used for secure data, because they're logged and might be accessible to a lot of people in your organization.
+    - content: Use a key vault to create a secret.
+      isCorrect: true
+      explanation: Correct. You can define a key vault secret for the connection string value. Alternatively, you can use the `existing` keyword to read the properties of the storage account in another Bicep file.
+    - content: You don't need to do anything. Properties for all the resources defined in the module are automatically available to the parent template.
+      isCorrect: false
+      explanation: Incorrect. Properties for resources are accessible only within the Bicep file where they're declared.
+  - content: Your colleague has created a large Bicep file that you want to decompose into modules. You want to identify the resources that should be defined together in each module. Which tool can you consider using to help you achieve this task?
+    choices:
+    - content: Use the Bicep visualizer.
+      isCorrect: true
+      explanation: Correct. The Bicep visualizer illustrates the relationships between your resources. It can help you see any resources that are tightly coupled, which might indicate that they should be in a module together.
+    - content: Use the Bicep linter.
+      isCorrect: false
+      explanation: Incorrect. The Bicep linter scans your Bicep code for potential problems and warns you when you're not following best practices.
+    - content: Use the Azure documentation for ARM templates.
+      isCorrect: false
+      explanation: Incorrect. Although the ARM template documentation can be useful, it's not likely to help you when you're trying to decide how to decompose a Bicep file into modules.

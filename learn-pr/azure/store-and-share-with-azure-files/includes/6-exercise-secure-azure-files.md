@@ -8,7 +8,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. In the Azure portal you should still have open from the previous exercise, select the storage account you created, named **learnazurefileshare** followed by random numbers.
 
-1. In the middle menu pane, under **Settings**, select **Configuration**.
+1. In the middle menu pane, under **Settings**, select **Configuration**. The **Configuration** pane appears for your storage account.
 
     :::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page of storage accounts.":::
 
@@ -16,7 +16,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 ## Add a firewall rule to restrict access to an IP address
 
-1. In the middle menu pane, under **Security + networking**, select **Networking**. The Storage account **Networking** pane appears with the **Firewalls and virtual networks** tab highlighted.
+1. In the middle menu pane, under **Security + networking**, select **Networking**. The **Networking** pane appears for your storage account with the **Firewalls and virtual networks** tab highlighted.
 
    :::image type="content" source="../media/6-add-firewall-protections.png" alt-text="Screenshot showing the firewalls and virtual networks options.":::
 
@@ -32,7 +32,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. In the Azure portal you should still have open, select the storage account you previously created, named **learnazurefileshare** followed by random numbers.
 
-1. In the middle menu pane, under **Data storage**, select **File shares**.
+1. In the middle menu pane, under **Data storage**, select **File shares**. The **File shares** pane appears for your storage account.
 
     ![Screenshot of the Azure portal showing the storage account overview.](../media/4-select-file-shares.png)
 
@@ -44,9 +44,9 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. Select the **Add your client IP address** check box, and in the top menu bar, select **Save**.
 
-1. In the middle menu pane, Select **Overview**, and under **Data storage**, select **File shares**.
+1. In the middle menu pane, select **Overview**, and under **Data storage**, select **File shares**.
 
-1. Select the **data** file share. You can now browse the file share in your local browser.
+1. Select the **data** file share. The **Data** pane appears for your file share. You can now browse the file share in your local browser.
 
     > [!NOTE]
     > You might need to go to the reports share because the error page could be cached for the data file share.

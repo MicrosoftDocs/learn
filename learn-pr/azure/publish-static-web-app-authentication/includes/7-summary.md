@@ -1,10 +1,10 @@
 In this module, you created, modified, and deployed a web app and API with user authentication to Azure Static Web Apps.
 
-As a reminder, the code for the [sample project is on GitHub in the _main_ branch](https://github.com/MicrosoftDocs/mslearn-staticwebapp-authentication/tree/main?azure-portal=true). The instructions on how to get started appear in the README file.
+As a reminder, the code for the sample project is on [GitHub in the _main_ branch](https://github.com/MicrosoftDocs/mslearn-staticwebapp-authentication/tree/main?azure-portal=true). The instructions about how to get started appear in the README file.
 
 ## Additional resources
 
-Here are several resources where you can learn more about Azure Static Web Apps, Visual Studio Code, and other concepts covered in this module.
+See the following resources where you can learn more about Azure Static Web Apps, Visual Studio Code, and other concepts covered in this module.
 
 - Learn how to [Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Static Web Apps](/learn/modules/publish-app-service-static-web-app-api/)
 - Learn how to [Publish an API to Azure Static Web Apps](/learn/modules/publish-static-web-app-api-preview-url/)

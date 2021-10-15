@@ -5,9 +5,10 @@ metadata:
   description: This module introduces you to Python as applied to data science. You'll also learn to use libraries and packages that help you analyze large, incomplete data.
   ms.date: 04/22/2020
   author: sguthals
-  ms.author: sguthals
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
+  ms.custom: nextgen
 title: Introduction to Python
 summary: This module introduces you to Python as applied to data science. You'll also learn to use libraries and packages that help you analyze large, incomplete data.
 abstract: |

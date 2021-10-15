@@ -1,90 +1,69 @@
-GitHub administrators undertake several important tasks in an effort to keep everything working smoothly for their users. Here, you'll learn about the different types of administration tasks for the various organizational structures in GitHub.
+As a GitHub administrator, your goal is to keep everything working smoothly for your users. In this unit, you'll learn about the different levels in the GitHub organizational hierarchy and the administration tasks associated with each level.
 
-## Overview of GitHub accounts
+## Administration at team level
 
-To understand the different kinds of administration tasks that administrators need to perform, you need to have a firm understanding of the basic hierarchy of account types and their purpose:
+:::image type="content" source="../media/teams.png" alt-text="Screenshot of organization screen with Teams tab highlighted.":::
 
-- Personal user accounts
-- Organization accounts
-- Enterprise accounts
+In GitHub, each user is an organization member that can be added to a team. You can create teams in your organization with cascading access permissions and mentions to reflect your company or group's structure. Teams are useful for refining repository permissions on a more granular level and enabling communication and notification between team members.
 
-Each user has a personal user account with their own private repositories.
+Additionally, GitHub allows you to sync your teams with identity provider (IdP) groups such as Azure Active Directory (Azure AD). When you synchronize a GitHub team with an Azure AD, changes to the Azure AD group are automatically reflected on GitHub, reducing the need for manual updates and custom scripts. You can use an Azure AD with team synchronization to manage administrative tasks such as onboarding new members, granting new permissions for movements within an organization, and removing member access from the organization.
 
-Personal user accounts can join a GitHub organization, which can be used to control membership and permissions to shared repositories.  The organization account represents the organization, and each personal user account is given one of three roles in the organization: member, owner, and billing manager of the organization account.  Organizations control organizational repositories.
+Members of a team with *team maintainer* or repository *admin* permissions can:
 
-Furthermore, each personal user account can be added to a team, which should be used to reflect the actual structure of the organization that each user belongs to. A team is used to refine repository permissions on a more granular level and enable communication and notification for organizational repositories.
-
-An enterprise account can be created to provide overarching control across multiple organizations that belong to the same company. Each personal user account is given one of three roles in the enterprise: member, administrator, or owner of the enterprise account.
-
-Before we describe administrative tasks at each level, consider the *purpose* of organizations, teams, and enterprises.
-
-### Purpose of organizations
-
-Organizations are shared accounts where businesses and open-source projects can collaborate across many projects at once. Owners and administrators can manage member access to the organization's data and projects with sophisticated security and administrative features.
-
-Organizations include:
-
-- A free option, GitHub Free, with unlimited collaborators on unlimited public repositories with full features and unlimited private repositories with limited features.
-- The option to upgrade to GitHub Team or GitHub Enterprise Cloud for additional features, including sophisticated user authentication and management, and escalated support options.
-- Unlimited membership with a variety of roles that grant different levels of access to the organization and its data.
-- The ability to give members a range of access permissions to your organization's repositories.
-- Nested teams that reflect your company or group's structure with cascading access permissions and mentions.
-- The ability for organization owners to view members' two-factor authentication (2FA) status.
-- The option to require all organization members to use two-factor authentication.
-
-### Purpose of teams
-
-Teams are groups of organization members that reflect your company or group's structure with cascading access permissions and mentions.
-
-Organization owners and team maintainers can give teams admin, read, or write access to organization repositories. Organization members can send a notification to an entire team by mentioning the team's name. Organization members can also send a notification to an entire team by requesting a review from that team. Organization members can request reviews from specific teams with read access to the repository where the pull request is opened.
-
-You can reflect your group or company's hierarchy within your GitHub organization with multiple levels of nested teams. A parent team can have multiple child teams, while each child team only has one parent team. You cannot nest secret teams.
-
-Child teams inherit the parent's access permissions, simplifying permissions management for large groups. Members of child teams also receive notifications when the parent team is at-mentioned (using the symbol `@`), simplifying communication with multiple groups of people.
-
-### Purpose of enterprises
-
-Enterprise accounts enable owners to centrally manage policy and billing for multiple GitHub.com organizations.
-
-## Overview of typical GitHub administration tasks
-
-Now that you understand the purpose of each hierarchical structure, you can better understand the administrative tasks that are within the purview of Organizations, Teams, and Enterprises.
-
-GitHub administration tasks fall into one of three categories:
-
-- Organization-level administration tasks
-- Team-level administration tasks
-- Enterprise-level administration tasks
-
-### Organization-level administration tasks
-
-At the organization level, members of an organization with the *owner* permission can perform a wide range of activities. A few of the most important include:
-
-- Invite users to join the organization, as well as remove members from the organization.
-- Organize users into a Team, and grant "team maintainer" permissions to organization members.
-- Grant repository permission levels to members, and set the base (default) permission level for a given repository.
-- Setting up organization security.
-- Manage SAML single sign-on for the organization.
-- Set up billing or assign a billing manager for the organization.
-
-There are dozens of additional administrative tasks that Organization owners can perform. For a comprehensive list with links into documentation for each task, see the GitHub Docs article ["Setting up and managing organizations and teams"](https://docs.github.com/free-pro-team@latest/github/setting-up-and-managing-organizations-and-teams?azure-portal=true).
-
-### Team-level administration tasks
-
-At the team level, members of an organization with the *owner* or *team maintainer* permissions can:
-
-- Create a new team, as well as select or change its parent team.
+- Create a new team, as well as select or change the parent team.
 - Delete or rename a team.
-- Add or remove organization members to a team, or synchronize a GitHub team's membership with an Identify Provider group.
-- Enable or disable team discussions, where the team can plan together, update one another, or talk about any topic in discussion posts on the team's page in an organization.
+- Add or remove organization members from a team, or synchronize a GitHub team's membership with an IdP group.
+- Add or remove outside collaborators (people who are not explicitly members of your organization, such as consultants or temporary employees) from team repositories.
+- Enable or disable team discussions, where the team can plan together, update one another, or talk about any topic in discussion posts on the organization's team's page.
 - Change the visibility of the team within the organization.
 - Manage automatic code review assignment for pull requests, utilizing GitHub's review assignment routing algorithm.
 
-### Enterprise-level administration tasks
+### Best practices for team-level administration 
+
+Creating teams in your organization enables greater flexibility for collaboration and can make it easier to separate repositories and permissions. The following are some best practices for setting up teams on GitHub:
+
+- Create nested teams to reflect your group or company's hierarchy within your GitHub organization.
+- Create teams based on interests or specific technology (JavaScript, data science, etc.) to help streamline PR review processes. Individuals can choose to join these teams according to their interests or skills.
+- Enable team synchronization between your identity provider (IdP) and GitHub to allow organization owners and team maintainers to connect teams in your organization with IdP groups. When you synchronize a GitHub team with an IdP group, changes to the IdP group are reflected on GitHub automatically, reducing the need for manual updates and custom scripts. You can use an IdP with team synchronization to manage administrative tasks such as onboarding new members, granting new permissions for movements within an organization, and removing member access to the organization.
+
+## Administration at organization level
+
+In GitHub, organizations are shared spaces enabling users to collaborate across many projects at once. Owners and administrators can manage member access to the organization's data and repositories with sophisticated security and administrative features.
+
+Members of an organization with the *owner* permission can perform a wide range of activities at the organization level including:
+
+- Invite users to join the organization, as well as remove members from the organization.
+- Organize users into a team, and grant "team maintainer" permissions to organization members.
+- Add or remove outside collaborators (people who are not explicitly members of your organization, such as consultants or temporary employees) to organizational repositories.
+- Grant repository permission levels to members, and set the base (default) permission level for a given repository.
+- Set up organization security.
+- Set up billing or assign a billing manager for the organization.
+- Extract various types of information about repositories via the use of custom scripts.
+- Apply organization-wide changes such as migrations via the use of custom scripts.
+
+We recommend setting up only one organization for your users and repositories. If specific constraints in your company require you to create multiple organizations, be aware that:
+
+- It is not possible to duplicate an organization or share configurations between two organizations. This means that you must set up everything from scratch every time you create an organization, which increases the risk of errors in your settings.
+- Depending on your software providers' policies, you might incur extra costs if you need to install some applications in multiple organizations.
+- Managing multiple organizations is generally more difficult!
+
+## Administration at enterprise level
+
+:::image type="content" source="../media/avocado-corp.png" alt-text="Screenshot of enterprise screen.":::
+
+Enterprise accounts include GitHub Enterprise Cloud and Enterprise Server instances and enable owners to centrally manage policy and billing for multiple organizations.
 
 At the enterprise level, members of an enterprise with the *owner* permissions can:
 
-- Enable SAML single sign-on for your enterprise account, allowing each enterprise member to link their external identity on your identity provider (IdP) to their existing GitHub account.
-- Add or remove organizations to the enterprise.
+- Enable SAML single sign-on for their enterprise account, allowing each enterprise member to link their external identity on your identity provider (IdP) to their existing GitHub account.
+- Add or remove organizations from the enterprise.
 - Set up billing or assign a billing manager for all organizations in the enterprise.
-- Setup repository management policies, project board policies, team policies, and other security settings that apply to all the organizations, repositories, and members in the enterprise.
+- Set up repository management policies, project board policies, team policies, and other security settings that apply to all the organizations, repositories, and members in the enterprise.
+- Extract various types of information about organizations via the use of custom scripts.
+- Apply enterprise-wide changes such as migrations via the use of custom scripts.
+
+## Learn more
+
+This link provides more information about the topics covered in this module:
+
+[GitHub documentation on nested teams](https://docs.github.com/organizations/organizing-members-into-teams/about-teams#nested-teams)

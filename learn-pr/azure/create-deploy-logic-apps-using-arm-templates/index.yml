@@ -8,6 +8,7 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: INDEX,FOLLOW
 title: Create and deploy Logic Apps using Azure Resource Manager templates
 summary: Define a Logic Apps workflow declaratively as a Resource Manager template and deploy the app using the Azure Command Line Interface (CLI). 
 abstract:  | 

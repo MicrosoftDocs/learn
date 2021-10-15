@@ -4,7 +4,7 @@ title: Learn about the optimization loop
 metadata:
   title: Learn about the optimization loop
   description: Now that we have a model and data, we can train, validate and test our model by optimizing it's parameters on our data.
-  author: cassieview
+  author: cassiebreviu
   ms.author: cassieb
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial

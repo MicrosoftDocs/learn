@@ -15,7 +15,7 @@ There are two main paths to reach co-management:
 - **New internet-based devices**: You have new Windows 10 devices that join Azure AD and automatically enroll to Intune. You install the Configuration Manager client to reach a co-management state.  
 
 When you enroll existing Configuration Manager clients in co-management, you gain the following immediate value:  
-- Conditional access with device compliance  
+- Conditional Access with device compliance  
 - Intune-based remote actions, such as restart, remote control, or factory reset
 - Centralized visibility of device health  
 - Link users, devices, and apps with Azure Active Directory (Azure AD)  

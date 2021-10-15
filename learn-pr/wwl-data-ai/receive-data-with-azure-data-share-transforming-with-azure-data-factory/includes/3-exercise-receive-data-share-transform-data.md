@@ -1,6 +1,6 @@
 You have two possibilities to provision an Azure Data Share.
 
-In the below exercise, you’re going to create an Azure Data Share from the portal.
+In the below exercise, you’re going to create an Azure Data Share from the portal. In order to complete all the exercises successfully, you must be a member of the Active Directory Administrators role to complete this.
 
 Navigate to the Azure portal and on the left-hand side, go to Create a Resource:
 

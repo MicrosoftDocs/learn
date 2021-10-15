@@ -57,7 +57,7 @@ Several Azure AD roles span Azure AD and Microsoft 365, such as the Global Admin
 
 ## Assign roles
 
-There are multiple ways to assign roles within Azure AD.  You need to pick the one the best meets your needs.  Note that the user interview might be slightly different for most of the configuration data is the same.  Methods for assigning roles include:
+There are multiple ways to assign roles within Azure AD.  You need to pick the one the best meets your needs.  The user interface might be slightly different each method, however the configuration options are similar.  Methods for assigning roles include:
 
 - Assign a role to a user or group
    - **Azure AD** --> **Roles and administration** --> **Select a role** --> **+ Add Assignment**
@@ -68,7 +68,7 @@ There are multiple ways to assign roles within Azure AD.  You need to pick the o
 - Assign a role using PowerShell or Microsoft Graph API
 - Assign a role using Privileged Identity Management (PIM)
 
-Each of these methods can be used, but care must be taken as there are no built in restrictions.  You could good to assign an administrative role to a group with guest users.  Proper identity governance is the key.
+The best method for your configuration needs can be used, but care must be taken as there are no built in restrictions.  You could accidentally assign an administrative role to a group with users who do not need administratrive access.  This could lead to a solution modified by a user without proper knowledge of what they are doing, or even a potential avenue for attackers.  Proper identity governance is the key.
 
 ### Example - using PIM to assign a role
 

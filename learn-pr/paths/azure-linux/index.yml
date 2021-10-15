@@ -15,6 +15,9 @@ summary: |
 
   This learning path should be explored alongside the [Azure Fundamentals part 1: Describe core Azure concepts](../az-900-describe-cloud-concepts/index.yml) learning path. If you're new to cloud computing, consider taking the first learning path in the Azure Fundamentals 6-part learning path series first.
 prerequisites: None
+video:
+  title: "Linux on Azure video"
+  url: https://www.microsoft.com/videoplayer/embed/RWK1dx
 iconUrl: /learn/achievements/azure-linux.svg
 levels:
 - beginner

@@ -10,6 +10,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
+  ms.custom: nextgen
 title: Store and retrieve data by using F#
 summary: Write your first F# programs, and learn to work with input and output, data type conversions, and operators.
 abstract: |
@@ -18,7 +19,7 @@ abstract: |
   - Output to the screen.
   - Read from the console and capture user input.
   - Convert between data types.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/fsharp-create-first-project.svg
 levels:
   - beginner
 roles:

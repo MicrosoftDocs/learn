@@ -5,7 +5,7 @@ Use **Azure File Sync** to centralize your organization's file shares in Azure F
 
 There are many uses and advantages to file sync.
 
- -  **Lift and shift**. The ability to move applications that require access between Azure and on-premises systems. Provide write access to the same data across Windows Servers and Azure Files. This lets companies with multiple offices have a need to share files with all offices.
+ -  **Lift and shift**. The ability to move applications that require access between Azure and on-premises systems. Provide write access to the same data across Windows Servers and Azure Files. This enables companies with multiple offices have a need to share files with all offices.
  -  **Branch Offices**. Branch offices need to backup files, or you need to setup a new server that will connect to Azure storage.
  -  **Backup and Disaster Recovery**. Once File Sync is implemented, Azure Backup will back up your on-premises data. Also, you can restore file metadata immediately and recall data as needed for rapid disaster recovery.
  -  **File Archiving**. Only recently accessed data is located on local servers. Non-used data moves to Azure in what is called Cloud Tiering.
