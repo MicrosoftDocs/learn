@@ -1,1 +1,0 @@
-Answer the following questions to check your learning.
