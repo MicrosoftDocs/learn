@@ -22,7 +22,7 @@ When you work with managed identities, you should be familiar some common terms:
 
 Managed identities are available in all editions of Azure AD, including the Free edition included with an Azure subscription. Using it in App Service has no extra cost and requires no configuration, and it can be enabled or disabled on an app at any time.
 
-:::image type="content" source="../media/use-managed-identites.png" alt-text="I can use managed Identities when I want to build an application using Azure App Service that access Azure Storage without having to manage any credentials.":::
+:::image type="content" source="../media/use-managed-identities.png" alt-text="I can use managed Identities when I want to build an application using Azure App Service that access Azure Storage without having to manage any credentials.":::
 
 Resources that support system assigned managed identities allow you to:
 
