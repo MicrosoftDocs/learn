@@ -76,7 +76,6 @@ There are two types of managed identities:
 Once you have a managed identity, you can request tokens via a token endpoint on a resource such as a virtual machine. These tokens then work with users existing authorization from Azure RBAC to permit them to do actions, such as pull keys from Azure Key Vault or any other secret. Similarly, suppose that user has an Azure RBAC role that permits using an Azure storage solution. In that case, that token can be used to authenticate and either read or push data to storage without any credentials in their code. Operations on managed identities may be performed by using an Azure Resource Manager (ARM) template, the Azure portal, the Azure CLI, PowerShell, and REST APIs.
 
 Below we can see the typical workflow for a managed identity within a virtual machine:
-[!div class="mx-imgBorder"]
 
 ![Azure AD managed identity service workflow.](../media/2-azure-identity.png)
 
