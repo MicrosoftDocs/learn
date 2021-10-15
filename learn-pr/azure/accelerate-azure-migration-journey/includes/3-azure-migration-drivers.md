@@ -67,8 +67,8 @@ eliminated entirely.
 
 Azure was designed for business continuity and disaster recovery with solutions built into the Regions (datacenters) and many of services including:
 
-- [Azure Paired Regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions?azure-portal=true)
-- [Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-redundancy?azure-portal=true) redundancy and replication
+- [Azure Paired Regions](/azure/best-practices-availability-paired-regions?azure-portal=true)
+- [Azure Storage](/azure/storage/common/storage-redundancy?azure-portal=true) redundancy and replication
 - [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/?azure-portal=true) for virtual machine replication and failover
 - [Azure Backup](https://azure.microsoft.com/services/backup/?azure-portal=true) for data protection and recovery
 
