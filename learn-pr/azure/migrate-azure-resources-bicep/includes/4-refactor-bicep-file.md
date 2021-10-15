@@ -101,9 +101,9 @@ If you're converting a template that has many resources, consider breaking the i
 > [!NOTE]
 > It's possible to use your JSON templates as modules in a Bicep deployment. Bicep has the ability to recognize JSON modules and reference them similarly to how you use Bicep modules.
 
-### Add comments
+### Add comments and descriptions
 
-Good Bicep code is _self-documenting_. In Bicep, you can add comments to your code to document your infrastructure. Comments can help your teammates understand the code and increase confidence when changes are made. Comments are ignored when the Bicep file is deployed to Azure.
+Good Bicep code is _self-documenting_. In Bicep, you can add comments and descriptions to your code to document your infrastructure. Comments and descriptions can help your teammates understand the code and increase confidence when changes are made. Comments are ignored when the Bicep file is deployed to Azure, but most descriptions are not ignored.
 
 Bicep supports both single-line comments using a `//` character sequence and multi-line comments that start with a `/*` and end with a `*/`. You can add comments to apply to specific lines in your code or to sections of code.
 
@@ -120,6 +120,13 @@ Single-line comments can be added as headers for sections of code or on individu
 
 :::code language="bicep" source="code/4-app-service-plan-updated.bicep" range="34-46" highlight="1,6,9,12" :::
 
+Bicep provides the `@description` decorator that you can use to document the purpose of your parameters, variables, resources, modules, and outputs. You can add the description on the line above the item you are describing:
+
+```bicep
+@description('The name of the App Service Plan.)
+param appServicePlanName string
+```
+
 ### Follow Bicep best practices
 
 Make sure that your Bicep file follows standard recommendations. Review [Bicep best practices](/azure/azure-resource-manager/bicep/best-practices?azure-portal=true) for anything you might have missed.
@@ -134,7 +141,7 @@ After you make the appropriate improvements, review the final template before yo
   It deploys the resources we need for our toy company's website.
 */
 
-// parameters
+// Parameters
 @description('Location For all resources.')
 param location string = resourceGroup().location
 
@@ -159,10 +166,12 @@ param appServicePlanSku string = 'P1v3'
 @description('The number of allowed App Service plan instances.')
 param appServicePlanInstanceCount int = 1
 
-// variables
+// Variables
+@description('The name of the App Service Plan.)
 var appServicePlanName = 'plan-${environment}-001'
 
-// resource - app service plan
+// Resource - App Service Plan
+@description(')
 resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
   name: appServicePlanName
   location: location
@@ -173,5 +182,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
   kind: 'app' // Specifies a Windows App Service plan.
 }
 
-output appServicePlanId string = appServicePlan.id // Outputs the resource ID of the App Service plan.
+// Outputs
+@description('The resource Id of the App Service Plan.)
+output appServicePlanId string = appServicePlan.id
 ```
