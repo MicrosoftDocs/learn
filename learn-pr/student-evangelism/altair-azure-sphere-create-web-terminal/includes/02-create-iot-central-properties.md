@@ -9,3 +9,4 @@ When your Altair emulator connects to IoT Central, you can set several propertie
 From IoT Central, you can monitor the current state of the Altair emulator including how well the virtual disk cache is working.
 
 :::image type="content" source="../media/iot-central-view-about.png" alt-text="Screenshot that shows the IoT Central about view of the Altair emulator.":::
+

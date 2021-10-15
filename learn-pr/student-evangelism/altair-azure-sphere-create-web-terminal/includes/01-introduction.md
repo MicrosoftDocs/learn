@@ -11,3 +11,4 @@ In this module, you'll learn how to customize your IoT Central web application, 
 ## What is the main goal?
 
 This module will focus on configuring and deploying the cloud services for the Altair emulator.
+

@@ -132,3 +132,4 @@ You need the IoT Central URL for the Altair Web Terminal.
     :::image type="content" source="../media/iot-central-application-url.png" alt-text="Screenshot that shows how to copy the IoT Central URL.":::
 
 In the next unit, you will create the Altair Web Terminal.
+
