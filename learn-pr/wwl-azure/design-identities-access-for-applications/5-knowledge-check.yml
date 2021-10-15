@@ -30,23 +30,23 @@ quiz:
       explanation: "incorrect choice"
   - content: "Based on the requirements for the applications running on-premises which access method should they implement?"
     choices:
-    - content: "Managed identity {thats incorrect. A managed identity is for Azure resrouces.}"
+    - content: "Managed identity {That's incorrect. A managed identity is for Azure resources.}"
       isCorrect: false
       explanation: "incorrect choice"
-    - content: "Azure Key Vault {thats incorrect. Azure Key Vault can not grant access to an on-premises application.}"
+    - content: "Azure Key Vault {That's incorrect. Azure Key Vault can not grant access to an on-premises application.}"
       isCorrect: false
       explanation: "incorrect choice"
-    - content: "Service principal {thats correct. A service principal will grant access to the on-premises applications}"
+    - content: "Service principal {That's correct. A service principal will grant access to the on-premises applications}"
       isCorrect: true
       explanation: "correct choice"
   - content: "Based on the requirements for the duplicated web servers which identity solution is Recommend?"
     choices:
-    - content: "User-assigned {thats correct. By using user-assigned identity, fewer role assignments are required which reduces the management overhead.}"
+    - content: "User-assigned {That's correct. By using user-assigned identity, fewer role assignments are required which reduces the management overhead.}"
       isCorrect: true
       explanation: "correct choice"
-    - content: "System-assigned {thats incorrect. Using system-assigned does not reduce the managment overhead.}"
+    - content: "System-assigned {That's incorrect. Using system-assigned does not reduce the management overhead.}"
       isCorrect: false
       explanation: "incorrect choice"
-    - content: "Azure-assigned {thats incorrect. Azure-assigned is not a solution.}"
+    - content: "Azure-assigned {That's incorrect. Azure-assigned is not a solution.}"
       isCorrect: false
       explanation: "incorrect choice"
