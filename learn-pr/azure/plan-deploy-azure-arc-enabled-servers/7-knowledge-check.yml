@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.plan-deploy-azure-arc-enabled-servers.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: Knowledge Check
+  ms.date: 09/21/2021
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following services can you use with Azure-Arc enabled servers?"
+    choices:
+    - content: "Governance through Azure Policy and Guest Configuration"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+    - content: "Security through Azure Security Center and Sentinel"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+    - content: "Observability through Azure Monitor and Log Analytics"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+    - content: "All of the above services can be used with Arc-enabled Servers"
+      isCorrect: true
+      explanation: "That's correct. TBD."
+  - content: "Which of the following actions does the Azure Connected Machine Onboarding identity have permission to perform?"
+    choices:
+    - content: "Delete servers that are already registered"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+    - content: "Create new Azure Arc-enabled servers in Azure"
+      isCorrect: true
+      explanation: "That's correct. TBD."
+    - content: "Manage VM extensions for Azure Arc-enabled servers"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+    - content: "Read servers outside of Azure Arc-enabled servers within the resource group"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+  - content: "Which of the following cannot be used to automate deployment of the Connected Machine Agent to multiple machines?"
+    choices:
+    - content: "Azure Policy"
+      isCorrect: true
+      explanation: "That's correct. TBD."
+    - content: "Group Policy"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+    - content: "Systems Center Configuration Manager"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+    - content: "Service Principal"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+  - content: "Which of the following Azure services is not part of Azure Automanage's automatic onboarding?"
+    choices:
+    - content: "Log Analytics Workspace"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+    - content: "Resource Health Alerts"
+      isCorrect: true
+      explanation: "That's correct. TBD."
+    - content: "Update Management"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."
+    - content: "Azure Guest Configuration"
+      isCorrect: false
+      explanation: "That's incorrect. TBD."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.plan-deploy-azure-arc-enabled-servers.explore-methods-to-onboard-servers
+title: Explore different methods to onboard servers at scale to Azure Arc
+metadata:
+  title: Explore different methods to onboard servers at scale to Azure Arc
+  description: TBD
+  ms.date: 09/21/2021
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-explore-methods-to-onboard-servers.md)]
