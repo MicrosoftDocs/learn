@@ -15,8 +15,8 @@ A Bicep *registry* is the place that modules are stored and shared. Anyone can c
 
 Azure Resource Manager also enables you to save an Azure Resource Manager template (ARM template) as a *template spec*. This is a way of making your templates reusable and sharing them through your organization. Modules stored in Bicep registries and template specs are both ways of adding reusability to your deployment code, but they're optimized for different things:
 
-- Template specs are stored in Azure as a resource. The Bicep registry is a publicly accessible service, and you can create your own Bicep registries within or outside of Azure.
-- Bicep modules are intended to be combined into a larger deployment. Template specs are designed to be deployable as a complete template, although you can use a template spec within a deployment if you want.
+- Bicep modules are intended to be combined into a larger deployment. Template specs are designed to be deployable as a complete template. You can deploy template specs by using Azure portal as well as tooling like the Azure CLI and Azure PowerShell. However, if you have created a template spec, Bicep also enables to use it as a module if you want.
+- Microsoft maintains a publicly accessible Bicep registry is a publicly accessible service, and you can create your own Bicep registries within or outside of Azure. Template specs are stored in Azure as resources.
 - Template specs provide access control capabilities. When you work with a private registry, you need to control the access to your modules in other ways. You'll learn more about this later in the module.
 
 When you're deciding between template specs and Bicep modules, a good rule of thumb is: if the template is going to be deployed as is throughout your organization, template specs are probably a good fit. But if you're likely to reuse this template within multiple parent templates, Bicep modules might serve your needs better, and a registry is a good way to share modules.
