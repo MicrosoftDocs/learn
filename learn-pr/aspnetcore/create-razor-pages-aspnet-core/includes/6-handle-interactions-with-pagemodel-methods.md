@@ -79,7 +79,6 @@ using RazorPagesPizza.Models;
 Examine the `Pizza` model class:
 
 ```csharp
-using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace RazorPagesPizza.Models
