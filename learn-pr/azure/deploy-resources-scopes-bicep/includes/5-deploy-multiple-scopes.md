@@ -80,9 +80,11 @@ Now you know how to deploy many different resources at a variety of scopes, and 
 > [!NOTE]
 > When you create a subscription alias, you also specify some other properties like a billing scope. We have omitted them for clarity.
 
-You can then associate the subscription with a management group, which requires you deploy a resource type called `Microsoft.Management/managementGroups/subscriptions`. Because of the way this resource works, you would declare it in a module:
+You can then associate the subscription with a management group, which requires you deploy a resource type called `Microsoft.Management/managementGroups/subscriptions`. Because of the way this resource works, you would declare it in a module. For example, here's a file named *modules/mg-subscription-association.bicep*:
 
 :::code language="bicep" source="code/5-mg-subscription-association.bicep" highlight="9-16" :::
+
+Notice that the management group is referenced through the `existing` keyword.
 
 The main Bicep file can then create the association by including the module. Here's the whole Bicep file:
 
