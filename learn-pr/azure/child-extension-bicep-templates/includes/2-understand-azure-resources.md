@@ -16,8 +16,7 @@ Azure Resource Manager is designed so that many different _resource providers_ c
 
 The [documentation for each resource type's](/azure/templates/) ARM template syntax is organized by resource provider.
 
-> [!TIP]
-> Resource providers have to be registered for your subscription before you can use the resource types they expose. Registration is usually a one-time process. You can [register a resource provider](/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider) by using the Azure portal, the Azure CLI, or Azure PowerShell.
+Resource providers have to be registered for your subscription before you can use the resource types they expose. Registration is usually a one-time process. When you submit a Bicep deployment, Resource Manager automatically registers the resource providers used in the file. You can also [register a resource provider](/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider) by using the Azure portal, the Azure CLI, or Azure PowerShell.
 
 ## Resource types
 
@@ -28,7 +27,7 @@ A resource provider exposes multiple different types. Each resource type has its
 
 When you define resources in Bicep, you have to specify their resource type and the version of the resource provider's API that you want Bicep to use for the resource. This information helps the Bicep tooling and the Resource Manager understand which properties should be provided with the resource definition.
 
-> [!NOTE]
+> [!TIP]
 > It's a good idea to use a recent API version for each resource. New features in Azure services are sometimes available only in newer API versions.
 
 You combine the resource provider and type name to make a fully qualified resource type name. The fully qualified type name consists of the resource provider name, a slash (`/`), and the resource type. For example, a storage account’s fully qualified type name is `Microsoft.Storage/storageAccounts`. In this instance, its resource provider name is `Microsoft.Storage`, and the resource type is `storageAccounts`.

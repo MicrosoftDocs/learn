@@ -23,7 +23,7 @@ Let's look closely at what makes up this definition:
 - As you would with a normal resource, you include the `resource` keyword, a symbolic name, and the resource type and API version.
   
   > [!NOTE]
-  > Remember, the symbolic name is used only within this Bicep file. If you create this resource by using another Bicep file, the symbolic names don't have to match.
+  > Remember, the symbolic name is used only within this Bicep file. If you create this resource by using one Bicep file and refer to it by using the `existing` resource in a different Bicep file, the symbolic names don't have to match.
 
 - The `existing` keyword indicates to Bicep that this resource definition is a reference to an already-created resource, and that Bicep shouldn't try to deploy it.
 - The `name` property is the Azure resource name of the storage account that was previously deployed.
@@ -86,8 +86,6 @@ In this example, because the instrumentation key isn't considered sensitive data
 
 Notice that the `listKeys` function returns a `keys` array. The Bicep code retrieves the `value` property from the first item in the `keys` array.
 
-> [!TIP]
-> Different resource types have different information available from the `listKeys()` function. Some resources don't support `listKeys()` at all, or use other function names instead.
+Different resource types have different information available from the `listKeys()` function. Some resources don't support `listKeys()` at all, or use other function names instead.
 
-> [!NOTE]
-> The `listKeys()` function provides access to sensitive data about the resource. This means that the user or service principal that runs the deployment needs to have the appropriate level of permission on the resource. This is usually the *Contributor* built-in role, or a custom role that assigns the appropriate permission.
+The `listKeys()` function provides access to sensitive data about the resource. This means that the user or service principal that runs the deployment needs to have the appropriate level of permission on the resource. This is usually the *Contributor* built-in role, or a custom role that assigns the appropriate permission.
