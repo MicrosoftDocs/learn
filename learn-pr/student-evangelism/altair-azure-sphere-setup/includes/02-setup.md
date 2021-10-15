@@ -15,3 +15,4 @@ Take a moment to review the following list. It provides a useful set of referenc
 - The **TAP-Windows Adapter V9** installed with VPN clients, including the OpenVPN client is not compatible with the **TAP-Windows Adapter V9** required and installed by the Azure Sphere SDK. You'll need to uninstall the VPN client and reinstall the Azure Sphere SDK for Visual Studio.
 - Windows Users. If running the IoT Central ShowIoTCentralConfig command fails with a missing library message, then delete the folder from ShowIoTCentralConfig from AppData\\Local\\Temp\\.net.
 - Windows and VS Code users. Add the Ninja and CMake to the Windows path. To do add these applications to the Windows path, press the Windows key, type ```path```, select **Edit the system environment variables**, select **Environment Variables**, select **Path** in the **User variables for ...**, select **edit**, and add the paths for "ninja-win" and "CMake\bin", then select **OK**.
+
