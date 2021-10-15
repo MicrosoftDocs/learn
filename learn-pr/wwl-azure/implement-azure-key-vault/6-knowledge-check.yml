@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-key-vault.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/15/2021
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the below methods of authenticating to Azure Key Vault is recommended for most scenarios?"
+    choices:
+    - content: "Service principal and certificate"
+      isCorrect: false
+      explanation: "That's incorrect. This is not recommended because it is difficult to automatically rotate the bootstrap secret that's used to authenticate to Key Vault."
+    - content: "Service principal and secret"
+      isCorrect: false
+      explanation: "That's incorrect. This is not recommended because the application owner or developer must rotate the certificate."
+    - content: "Managed identities"
+      isCorrect: true
+      explanation: "That's correct. The benefit of this approach is that the app or service isn't managing the rotation of the first secret. Azure automatically rotates the identity."
