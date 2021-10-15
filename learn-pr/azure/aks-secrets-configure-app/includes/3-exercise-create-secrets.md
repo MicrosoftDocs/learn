@@ -79,7 +79,13 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
     touch backend-secret.yaml
     ```
 
-1. Enter `code backend-secret.yaml` to open the editor and edit the file. Add the following code to this file to create the Secret spec. Be sure to replace the placeholder string with the connection string.
+1. Enter the following command to open the file in the editor. 
+
+    ```bash
+    code backend-secret.yaml
+    ```
+
+1. Add the following code to this file to create the Secret spec. Be sure to replace the placeholder string with the connection string.
 
     ```yaml
     apiVersion: v1
@@ -92,7 +98,7 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
       database_mongodb_uri: "<paste the connection string here>"
     ```
 
-    Save and close the file.
+1. Save and close the file.
 
 1. Apply the secret by running the `kubectl apply` command:
 
@@ -115,7 +121,7 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
 
 ## Create the application
 
-Now it's time to create the application and apply the secret to this application.
+Let's create the application and apply the secret to this application.
 
 1. Get the DNS zone that has been made available with the HTTP application routing add-on:
 
@@ -129,11 +135,14 @@ Now it's time to create the application and apply the secret to this application
 
     Copy the output value for later use.
 
-1. Create a new file called `backend-application.yaml`.
+1. Create a new file called `backend-application.yaml` and open it in the editor.
 
-1. Open the file running `code backend-application.yaml`.
+    ```bash
+    touch backend-application.yaml
+    code backend-application.yaml
+    ```
 
-1. Create the Deployment specification as follows:
+1. Create the Deployment specification by adding the following code to the file:
 
     ```yaml
     apiVersion: apps/v1
@@ -167,7 +176,7 @@ Now it's time to create the application and apply the secret to this application
                   value: ship_manager
     ```
 
-    Notice that we're using the `valueFrom` and then `secretKeyRef` keys in the `env` section. Ththe order of these keys is telling the deployment that we'll use the value from the `key` present in the Secret defined in the `name` key.
+    Notice that we're using the `valueFrom` and then `secretKeyRef` keys in the `env` section. The order of these keys is telling the deployment that we'll use the value from the `key` present in the Secret defined in the `name` key.
 
 1. Add three dashes below the last line to separate the Deployment from the Service you're about to create.
 
