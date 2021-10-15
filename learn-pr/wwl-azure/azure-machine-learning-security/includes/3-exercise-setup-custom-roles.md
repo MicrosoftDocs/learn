@@ -148,8 +148,8 @@ This adds the "Data Scientist Custom" role, which is limited to running experime
 
 To verify and list existing roles using the Azure portal, select the option **Access Control (IAM)** on your `ml-workspace` then select the **Roles** tab:
 
-[!div class="mx-imgBorder"]
-![Screenshot showing roles defined to the workspace example](../media/custom-role.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot showing roles defined to the workspace example](../media/custom-role.png)
 
 ## Summary
 
