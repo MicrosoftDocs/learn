@@ -6,7 +6,7 @@ metadata:
   unitType: exercise
   title: Exercise - Deploy a module from a registry
   description: Create a Bicep file that uses a module from the public Bicep registry.
-  ms.date: 09/27/2021
+  ms.date: 10/14/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial

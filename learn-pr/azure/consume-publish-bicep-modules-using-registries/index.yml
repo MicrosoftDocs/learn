@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Consume and publish Bicep modules by using bicep registries
   description: Work with reusable Bicep modules by using Bicep registries. Consume modules by using the public Bicep registry. Share modules within your organization by using a private registry.
-  ms.date: 09/27/2021
+  ms.date: 10/14/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial

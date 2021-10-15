@@ -5,7 +5,7 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Introduction to consuming and publishing Bicep modules by using Bicep registries.
-  ms.date: 09/27/2021
+  ms.date: 10/14/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
