@@ -19,3 +19,4 @@ In this module, you'll learn how to install and secure your own MQTT broker runn
 ## What is the main goal?
 
 This module will focus on installing and securing an MQTT broker running in a cloud based Azure Virtual Machine.
+
