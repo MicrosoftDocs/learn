@@ -14,7 +14,7 @@ Azure Arc relies on a locally installed agent to establish a logical connection 
 
 By establishing a connection between Azure and a local resource, the Azure Connected Machine Agent effectively "arc-enables" the resource. Consequently, the non-Azure resource automatically becomes a hybrid Azure resource, as part of the Azure Resource Manager plane. Azure Resource Manager serves as the management interface that allows you to create, modify, and delete Azure resources. 
 
-[![Illustration showing Connected Machine agent architecture.](../media/2-connected-machine-agent-architecture.png)](../media/2-connected-machine-agent-architecture-large.png#ligntbox)
+[![Illustration showing the Connected Machine agent architecture. The Connected Machine agent includes HIMDS, the guest configuration agent, and the Extension agent.](../media/2-connected-machine-agent-architecture.png)](../media/2-connected-machine-agent-architecture-large.png#ligntbox)
 
 ## Capabilities of Azure Arc-enabled servers 
 
