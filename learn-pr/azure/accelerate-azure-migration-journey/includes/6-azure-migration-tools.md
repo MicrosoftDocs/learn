@@ -11,7 +11,7 @@ Tools available to support successful Azure migrations and modernizations:
 
 ## Microsoft Cloud Adoption Framework
 
-The [Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/?azure-portal=true)(CAF) is a collection of documentation, implementation guidance, best practices, and tools that are proven advice from Microsoft designed to accelerate your cloud adoption journey.
+The [Cloud Adoption Framework](/azure/cloud-adoption-framework/?azure-portal=true)(CAF) is a collection of documentation, implementation guidance, best practices, and tools that are proven advice from Microsoft designed to accelerate your cloud adoption journey.
 
 CAF for Azure is proven guidance that's designed to help you create and implement the business and technology strategies necessary for your organization to succeed in the cloud. It provides best practices, documentation, and tools that cloud architects, IT professionals, and business decision-makers need to achieve short-term and long-term objectives successfully.
 
@@ -21,8 +21,8 @@ Using the Microsoft Cloud Adoption Framework for Azure best practices, organizat
 
 The Cloud Adoption Framework brings together cloud adoption best practices from Microsoft employees, partners, and customers. It provides a set of tools, guidance, and narratives that help shape technology, business, and people strategies for driving desired business outcomes during your cloud adoption effort. Review the guidance for each methodology below, providing you with easy access to the right guidance at the right time.
 
-- Learn more about CAF in this [overview](https://docs.microsoft.com/azure/cloud-adoption-framework/overview/?azure-portal=true).
-- Download [Tools and Templates](https://docs.microsoft.com/azure/cloud-adoption-framework/reference/tools-templates/?azure-portal=true) from CAF to get started on your journey to Azure.
+- Learn more about CAF in this [overview](/azure/cloud-adoption-framework/overview/?azure-portal=true).
+- Download [Tools and Templates](/azure/cloud-adoption-framework/reference/tools-templates/?azure-portal=true) from CAF to get started on your journey to Azure.
 
 ## Azure Migrate
 

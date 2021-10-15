@@ -12,7 +12,7 @@ Some of the common projects that Tailwind Traders will encounter include:
 - DevTest
 
 > [!NOTE]
-> Connect to the Cloud Adoption Framework for more information about all these migration and modernization [scenarios](https://docs.microsoft.com/azure/cloud-adoption-framework/scenarios/?azure-portal=true).
+> Connect to the Cloud Adoption Framework for more information about all these migration and modernization [scenarios](/azure/cloud-adoption-framework/scenarios/?azure-portal=true).
 
 For all workloads, the decision to **migrate** or **modernize** will drive the solution that is chosen. When doing a **migration** the workload will be moved into an IaaS running on virtual machines (VM) in Azure. When using a **modernize** approach PaaS components will be used to deploy the application after changes are made to the code base or architecture.
 
@@ -38,11 +38,11 @@ The final modernization scenario you may use for your applications is to complet
 
 **Deep dive on migration and modernization scenarios:**
 
-- Migrate an application to [Azure App Service](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-refactor-web-app-sql/?azure-portal=true) and SQL Database
-- Migrate [SQL Server databases](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-sql-server-db-to-azure/?azure-portal=true) to Azure
-- [Refactor](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-refactor-web-app-sql-managed-instance/?azure-portal=true) an on-premises application to run as an Azure App Service web app and a SQL managed instance
-- [Rebuild a new version](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rebuild/?azure-portal=true) of an on-premises application in Azure
-- Migrate an on-premises application with Azure VMs and [SQL Server Always On availability groups](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag/?azure-portal=true)
+- Migrate an application to [Azure App Service](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-refactor-web-app-sql/?azure-portal=true) and SQL Database
+- Migrate [SQL Server databases](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-sql-server-db-to-azure/?azure-portal=true) to Azure
+- [Refactor](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-refactor-web-app-sql-managed-instance/?azure-portal=true) an on-premises application to run as an Azure App Service web app and a SQL managed instance
+- [Rebuild a new version](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rebuild/?azure-portal=true) of an on-premises application in Azure
+- Migrate an on-premises application with Azure VMs and [SQL Server Always On availability groups](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag/?azure-portal=true)
 
 ## Migrate and modernize SQL Server
 
@@ -64,10 +64,10 @@ You can also modernize your SQL Server by moving to an Azure SQL Database. Azure
 
 **Deep dive on migration scenarios:**
 
-- [Migrate a server](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm/?azure-portal=true) running an instance of SQL Server.
-- Migrate SQL with Azure VMs and [SQL Server Always On availability groups](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag/?azure-portal=true)
-- Migrate an on-premises SQL Server by migrating to Azure VMs and [Azure SQL Managed Instance](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance/?azure-portal=true)  
-- [Import a BACPAC File](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database?view=sql-server-ver15) to migrate a database to Azure SQL
+- [Migrate a server](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm/?azure-portal=true) running an instance of SQL Server.
+- Migrate SQL with Azure VMs and [SQL Server Always On availability groups](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag/?azure-portal=true)
+- Migrate an on-premises SQL Server by migrating to Azure VMs and [Azure SQL Managed Instance](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance/?azure-portal=true)  
+- [Import a BACPAC File](/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database) to migrate a database to Azure SQL
 
 ## Migrate and modernize open-source databases
 
@@ -91,12 +91,12 @@ Each of these databases provides a fully managed PaaS offering of the database w
 
 **Deep dive on migration and modernization scenarios:**
 
-- Azure Database [Migration Guides](https://docs.microsoft.com/data-migration/?step=1)
-- [Migrate MySQL to Azure Database for MySQL](https://docs.microsoft.com/en-us/azure/mysql/migrate/mysql-on-premises-azure-db/01-mysql-migration-guide-intro)
-- [Migrate PostgreSQL to Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql/howto-migrate-using-dump-and-restore)
-- [Migrate MariaDB to Azure Database for MaridDB](https://docs.microsoft.com/azure/mariadb/howto-migrate-dump-restore)
-- Migrate on-premises Linux application to [Azure VMs](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-linux-vm/?azure-portal=true)
-- Migrate an on-premises Linux application to [Azure VMs and Azure Database for MySQL](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql/?azure-portal=true)
+- Azure Database [Migration Guides](/data-migration/?step=1)
+- [Migrate MySQL to Azure Database for MySQL](/azure/mysql/migrate/mysql-on-premises-azure-db/01-mysql-migration-guide-intro)
+- [Migrate PostgreSQL to Azure Database for PostgreSQL](/azure/postgresql/howto-migrate-using-dump-and-restore)
+- [Migrate MariaDB to Azure Database for MaridDB](/azure/mariadb/howto-migrate-dump-restore)
+- Migrate on-premises Linux application to [Azure VMs](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-linux-vm/?azure-portal=true)
+- Migrate an on-premises Linux application to [Azure VMs and Azure Database for MySQL](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql/?azure-portal=true)
 
 ## Migrate and Modernize your workloads to Azure IaaS
 
@@ -111,9 +111,9 @@ So, while an IaaS migration to Azure may not be modernizing the applications the
 **Deep dive on migration scenarios:**
 
 - [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true)
-- [Backup Azure VMs in a Recovery Services vault](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare)
-- An overview of the [security options](https://docs.microsoft.com/en-us/azure/security/fundamentals/virtual-machines-overview) available for virtual machines in Azure
-- Reduce the cost of virtual machines in Azure with [Azure advisor](https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
+- [Backup Azure VMs in a Recovery Services vault](/azure/backup/backup-azure-arm-vms-prepare)
+- An overview of the [security options](/azure/security/fundamentals/virtual-machines-overview) available for virtual machines in Azure
+- Reduce the cost of virtual machines in Azure with [Azure advisor](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
 
 ## Migrate and Modernize VMware
 
@@ -132,7 +132,7 @@ VMware VMs running on Azure VMware Solution are made accessible using [ExpressRo
 
 ![Graphic showing how to migrate to Azure VMware Solutions Connection](../media/vmware-azure.png)
 
-Learn more about [deploying Azure VMware Solutions](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-vmware-to-azure/?azure-portal=true)
+Learn more about [deploying Azure VMware Solutions](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-vmware-to-azure/?azure-portal=true)
 
 ## Migrate and modernize SAP
 
@@ -166,7 +166,7 @@ Tailwind Traders can set up Azure Virtual Desktop in minutes to enable secure re
 
 In this scenario, desktop images are either migrated to Azure, or new images are generated. Similarly, user profiles are either migrated to Azure or new profiles are created. For the most part, the client solution is enabled but largely unchanged by this migration effort.
 
-Learn more about using [Azure Virtual Desktop](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rds-to-wvd/?azure-portal=true) in Azure to move an on-premises RDS environment to Azure.
+Learn more about using [Azure Virtual Desktop](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rds-to-wvd/?azure-portal=true) in Azure to move an on-premises RDS environment to Azure.
 
 ## DevTest
 
@@ -180,7 +180,7 @@ When migrating your DevTest environment to Azure, they will run on VMs in the cl
 
 **Deep dive on migration scenarios:**
 
-Migrate an [on-premises dev/test environment](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-devtest-to-iaas/?azure-portal=true) on Azure Virtual Machines via Azure Migrate.
+Migrate an [on-premises dev/test environment](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-devtest-to-iaas/?azure-portal=true) on Azure Virtual Machines via Azure Migrate.
 
 ### Modernize - DevTest
 
@@ -188,7 +188,7 @@ Tailwind Traders can empower your team to quickly provision dev/test and pre-pro
 
 ![Graphic showing how to modernize using DevTest Labs.](../media/modernize-dev-test-labs.png)
 
-- Migrate a dev/test environment to [Azure DevTest Labs](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-devtest-to-labs/?azure-portal=true)
+- Migrate a dev/test environment to [Azure DevTest Labs](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-devtest-to-labs/?azure-portal=true)
 
 ### Azure DevTest pricing
 

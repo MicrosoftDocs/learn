@@ -19,7 +19,7 @@ Here are some of the benefits available from AMMP:
 - Free Azure migration tools, including Azure Migrate to assess and migrate workloads, and Azure Cost Management to optimize costs.
 - Offers and incentives to offset transition costs, including Azure Hybrid Benefit and free Extended Security Updates for Windows Server and SQL Server 2008.
 
-![Graphic showing the Azure Migration and Modernization Program Project Phases.](../media/amp-phases-2.png)
+![Graphic showing the Azure Migration and Modernization Program Project Phases.](../media/ammp-phases-2.png)
 
 ### Self-Guided Digital Support
 
