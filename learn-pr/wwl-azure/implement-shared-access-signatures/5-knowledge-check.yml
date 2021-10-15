@@ -4,10 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/14/2021
+  ms.date: 10/15/2021
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -35,4 +36,4 @@ quiz:
       explanation: "That's incorrect. Using HTTPS prevents main-in-the-middle attacks but isn't the most flexible and secure practice."
     - content: "Implement a user delegation SAS"
       isCorrect: false
-      explanation: "That's incorrect. A user delegation SAS is the most secure SAS, but isn't highly flexible becuase you must use Azure Active Directory to manage credentials."
+      explanation: "That's incorrect. A user delegation SAS is the most secure SAS, but isn't highly flexible because you must use Azure Active Directory to manage credentials."
