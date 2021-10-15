@@ -4,9 +4,8 @@ Before you begin training models, it's essential to secure your Azure Machine Le
 
 To secure the Azure Machine Learning workspace and compute resources, we will use a virtual network (VNet). An Azure VNet is the fundamental building block for your private network in Azure. VNet enables Azure resources, such as Azure Blob Storage and Azure Container Registry, to securely communicate with each other, the internet, and on-premises networks. VNet is similar to a traditional network that you'd operate in your own data center, but brings with it additional benefits of Azure's infrastructure such as scale, availability, and isolation. With a VNet, you can enhance security between Azure resources and filter network traffic to ensure only trusted users have access to the network.
 
-[!div class="mx-imgBorder"]
-
-![Azure vnet network diagram.](../media/5-azure-vnet-1.png)
+> [!div class="mx-imgBorder"]
+> ![Azure vnet network diagram.](../media/5-azure-vnet-1.png)
 
 In the above image, we can see a typical structure for a Virtual Network (VNet) comprised of:
 
@@ -23,9 +22,8 @@ Integrating Azure services to an Azure virtual network enables private access to
 - **Service endpoints** provide the identity of your virtual network to the Azure service. Once you enable service endpoints in your virtual network, you can add a virtual network rule to secure the Azure service resources to your virtual network. Service endpoints use public IP addresses.
 - **Private endpoints** are network interfaces that securely connect you to a service powered by Azure Private Link. Private endpoint uses a private IP address from your VNet, effectively bringing the Azure services into your VNet.
 
-[!div class="mx-imgBorder"]
-
-![Azure Machine Learning vnet diagram with Key Vault, Storage account, and Container Registry.](../media/5-azure-vnet-2.png)
+> [!div class="mx-imgBorder"]
+> ![Azure Machine Learning vnet diagram with Key Vault, Storage account, and Container Registry.](../media/5-azure-vnet-2.png)
 
 You can connect your on-premises computers and networks to a VNet through a virtual private network (VPN) in several ways. A **Point-to-site VPN** is a connection between a virtual network and a single computer in your network. The communication is sent through an encrypted tunnel over the internet. Each computer that wants to establish connectivity with a VNet must configure its connection, so it's best used if you only have a few users who need to connect to the VNet. This connection type is great if you're just getting started as it requires little or no changes to your existing network.
 
@@ -55,9 +53,8 @@ You can use an Azure network security group (NSG) to filter network traffic to a
 
 The following picture illustrates different scenarios for how network security groups might be deployed to allow network traffic to and from the internet over TCP port 80:
 
-[!div class="mx-imgBorder"]
-
-![Azure vnet diagram with different subnets.](../media/5-azure-vnet-3.png)
+> [!div class="mx-imgBorder"]
+> ![Azure vnet diagram with different subnets.](../media/5-azure-vnet-3.png)
 
 Application security groups (ASG) can also be used to configure network security as a natural extension of an application's structure, allowing you to group virtual machines and define network security policies based on those groups. You can reuse your security policy at scale without manual maintenance of explicit IP addresses. The platform handles the complexity of explicit IP addresses and multiple rule sets, simplifying the NSG rule definition process immensely.
 
@@ -67,9 +64,8 @@ A service tag represents a group of IP address prefixes from a g
 
 You can use service tags in place of specific IP addresses when you create security rules to define network access controls on network security groups or Azure Firewall. By specifying the service tag name, such as ApiManagement, in the appropriate source or destination field of a rule, you can allow or deny the traffic for the corresponding service.
 
-[!div class="mx-imgBorder"]
-
-![Azure Network Security Group diagram.](../media/5-azure-vnet-4.png)
+> [!div class="mx-imgBorder"]
+> ![Azure Network Security Group diagram.](../media/5-azure-vnet-4.png)
 
 ## Private endpoints & Private Link
 
@@ -82,6 +78,5 @@ There are two key components of Azure Private Link:
 
 When you create a private endpoint for your Azure resource, it provides secure connectivity between clients on your virtual network and your Azure resource. You can use private endpoints to communicate and ingress events directly from your virtual network to Azure resources securely over a private link without going through the public internet, boosting security. The private endpoint is assigned an IP address from the IP address range of your virtual network. The service is flexible, allowing connections between VNets with overlapping address spaces and connecting resources running in other regions, offering global reach.
 
-[!div class="mx-imgBorder"]
-
-![Azure Private Link diagram.](../media/5-azure-private-link.png)
+> [!div class="mx-imgBorder"]
+> ![Azure Private Link diagram.](../media/5-azure-private-link.png)

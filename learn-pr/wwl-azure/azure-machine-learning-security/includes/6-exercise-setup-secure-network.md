@@ -34,13 +34,13 @@ Let's create a VNet for this exercise:
 
 3. In the **Virtual Network** page, select **Create**.
 
-   [!div class="mx-imgBorder"]
-   ![Screenshot showing the virtual network page with a red box around create.](../media/create-vnet.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing the virtual network page with a red box around create.](../media/create-vnet.png)
 
 4. In **Create virtual network**, enter or select this information in the **Basics** tab:
 
-   [!div class="mx-imgBorder"]
-   ![Screenshot showing how to fill in the Azure Virtual Network form.](../media/vnet-form-1.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing how to fill in the Azure Virtual Network form.](../media/vnet-form-1.png)
 
    | Setting              | Value                                                        |
    | -------------------- | ------------------------------------------------------------ |
@@ -57,8 +57,8 @@ Let's create a VNet for this exercise:
    >
    > If your screen comes with the IPv4 address space and *default* subnet setup like in the image below, skip to step 9.
 
-   [!div class="mx-imgBorder"]
-   ![Screenshot showing Azure Virtual Network IP Addresses page.](../media/vnet-form-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing Azure Virtual Network IP Addresses page.](../media/vnet-form-2.png)
 
 6. In **IPv4 address space**, select the existing address space and change it to **10.1.0.0/16**.
 
@@ -70,8 +70,8 @@ Let's create a VNet for this exercise:
 
 10. Select **Create** and wait a few moments for the deployment to finish:
 
-    [!div class="mx-imgBorder"]
-    ![Screenshot showing the deployment complete page from step 11.](../media/vnet-deployment.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot showing the deployment complete page from step 11.](../media/vnet-deployment.png)
 
 > [!IMPORTANT] 
 >
@@ -91,18 +91,18 @@ We can test that using [Azure Machine Learning Studio](/azure/machine-learning/o
 
 2. Select the **ml-workspace** in the list of recent resources:
 
-   [!div class="mx-imgBorder"]
-   ![Screenshot showing the Azure portal with a red box around ml-workspace.](../media/workspace-1.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing the Azure portal with a red box around ml-workspace.](../media/workspace-1.png)
 
 3. Select the **Studio web URL** for your workspace:
 
-   [!div class="mx-imgBorder"]
-   ![Screenshot showing the studio web url to select.](../media/workspace-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing the studio web url to select.](../media/workspace-2.png)
 
 4. Azure Machine Learning Studio should open in a new tab or window. Scroll down until you can see the tabs below (Runs, Compute, Models, and Datasets):
 
-   [!div class="mx-imgBorder"]
-   ![Screenshot showing the workspace with no warnings.](../media/workspace-no-warnings.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing the workspace with no warnings.](../media/workspace-no-warnings.png)
 
 Each tab above represents a "folder" that stores the resources you and your team would use in Machine Learning.
 
@@ -127,18 +127,18 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
 1. Go to "Home", select **Resource Groups**, select the **MLResourceGroup** resource group, and then select your **ml_workspace** workspace:
 
-   [!div class="mx-imgBorder"]
-   ![Screenshot showing the machine learning workspace page.](../media/ml-workspace-home.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing the machine learning workspace page.](../media/ml-workspace-home.png)
 
 2. In the left-hand menu, select **Private endpoint connections**:
 
-   [!div class="mx-imgBorder"]
-   ![Screenshot showing where to select private endpoint connections with a red box.](../media/private-endpoint-1.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing where to select private endpoint connections with a red box.](../media/private-endpoint-1.png)
 
 3. Select **Private Endpoint** and fill the form with the following values:
 
-   [!div class="mx-imgBorder"]
-   ![Screenshot showing how to fill in the private endpoint form.](../media/private-endpoint-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing how to fill in the private endpoint form.](../media/private-endpoint-2.png)
 
    | Setting              | Value                                                        |
    | -------------------- | ------------------------------------------------------------ |
@@ -153,8 +153,8 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
 5. In the **Resource** tab, use the values below
 
-   [!div class="mx-imgBorder"]
-   ![Screenshot showing how to fill in the resources form.](../media/private-endpoint-3.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing how to fill in the resources form.](../media/private-endpoint-3.png)
 
    | Setting              | Value                                                 |
    | -------------------- | ----------------------------------------------------- |
@@ -169,8 +169,8 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
    Leave the suggested defaults:
 
-   [!div class="mx-imgBorder"]
-![Screenshot showing how to fill in the configuration form.](../media/private-endpoint-4.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing how to fill in the configuration form.](../media/private-endpoint-4.png)
 
    | Setting                         | Value                     |
    | ------------------------------- | ------------------------- |
@@ -180,8 +180,8 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
 7. Select **Review + Create** to validate the deployment, then select **Create** to deploy the endpoint (this can take a few moments):
 
-   [!div class="mx-imgBorder"]
-   ![Screenshot showing the deployment complete page.](../media/private-endpoint-4.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing the deployment complete page.](../media/private-endpoint-4.png)
 
 ## Testing the network configuration
 
@@ -189,8 +189,8 @@ We can make sure our workspace is inside the VNet now by testing if we still hav
 
 1. Reload the Azure Machine Learning Studio window (you can select the following link to see the instructions again [here](https://docs.microsoft.com/learn-pr/azure/azure-machine-learning-security/includes/6-exercise-setup-secure-network.md#studio)):
 
-   [!div class="mx-imgBorder"]
-   ![Screenshot showing the workspace with warnings on the page.](../media/workspace-with-warnings.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing the workspace with warnings on the page.](../media/workspace-with-warnings.png)
 
 2. As the warning shows, access to those resources is now blocked. That happens because your workspace is now inside the VNet, and it's configured to block all requests that don't originate from within the *default* subnet we created (remember we're trying to access it from the **outside** of the network perimeter).
 

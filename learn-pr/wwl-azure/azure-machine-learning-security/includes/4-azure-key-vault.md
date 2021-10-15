@@ -21,9 +21,8 @@ Secrets stored in Azure Key Vault are encrypted, optionally at the hardware leve
 
 When you create an Azure Machine Learning workspace, this automatically creates a Key Vault. To view the Azure Key Vault associated with your workspace, open the workspace’s Overview tab. Your key vault appears on the right hand side.
 
-[!div class="mx-imgBorder"]
-
-![Screenshot showing the Azure portal with a Azure Machine Learning workspace overview.](../media/resource-workspace.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot showing the Azure portal with a Azure Machine Learning workspace overview.](../media/resource-workspace.png)
 
 When you first create your workspace, your Key Vault will be automatically created. The Key Vault can be accessed through your application. For example, you can use the Azure Shell to set an environmental variable holding Key Store’s name, and save a password to that key store like so:
 
@@ -90,9 +89,8 @@ run = Run.get_context()
 secret_value = run.get_secret(name=" ExamplePassword")
 ```
 
-[!div class="mx-imgBorder"]
-
-![A generic image of a key vault authenticator.](../media/4-key-vault.png)
+> [!div class="mx-imgBorder"]
+> ![A generic image of a key vault authenticator.](../media/4-key-vault.png)
 
 ## Read more
 
