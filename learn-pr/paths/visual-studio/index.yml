@@ -2,7 +2,7 @@
 uid: learn.visual-studio.visual-studio-test
 metadata:
   title: Build, test, and debug apps with Visual Studio
-  description: Want to learn more about building, testing, and debugging apps with .NET and Visual Studio, but don't know where to start? Start here!
+  description: Want to learn more about using Visual Studio to develp and test apps, but don't know where to start? Start here!
   ms.date: 07/19/2021
   author: softchris
   ms.author: kehavens
@@ -11,7 +11,7 @@ metadata:
 title: Test your code with Visual Studio
 prerequisites: none
 summary: |
-  Want to learn more about building, testing, and debugging apps with .NET and Visual Studio, but don't know where to start? Start here! In this learning path you'll:
+  Want to learn more about using Visual Studio to develp and test apps, but don't know where to start? Start here! In this learning path you'll:
   - Explore testing concepts.
   - Author tests for your product code.
   - Use the test explorer in Visual Studio to manage many tests.
@@ -23,6 +23,7 @@ roles:
 - student
 products:
 - azure
+- dotnet
 modules:
 - learn.visual-studio-test-concepts
 - learn.visual-studio.visual-studio-test-tools
