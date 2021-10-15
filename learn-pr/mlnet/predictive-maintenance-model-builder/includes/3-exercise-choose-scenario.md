@@ -23,12 +23,12 @@ Once your class library project opens in Visual Studio, it's time to add machine
 1. In Visual Studio's solution explorer, right-click your project.
 1. Select **Add > Machine Learning Model...**.
 
-:::image type="content" source="../media/add-machine-learning-model.png" alt-text="Add machine learning model to project":::
+    :::image type="content" source="../media/add-machine-learning-model.png" alt-text="Add machine learning model to project":::
 
 1. From the list of new items in the Add New Item dialog, select **Machine Learning Model (ML.NET)**.
 1. In the Name text box, use the name "PredictiveMaintenanceModel.mbconfig" for your model and select **Add**.
 
-:::image type="content" source="../media/create-class-library-project.png" alt-text="Create new MBConfig item":::
+    :::image type="content" source="../media/create-class-library-project.png" alt-text="Create new MBConfig item":::
 
 After a few seconds, a file called *PredictiveMaintenanceModel.mbconfig* is added to your project. Files that use the *.mbconfig* extension are Model Builder configuration files authored in JSON that allow you to:
 

@@ -29,7 +29,7 @@ By default, all columns that are not the label are used as features. As previous
 1. Select **Advanced data options...**.
 1. In the Advanced data options dialog, select the **Column settings** tab.
 
-:::image type="content" source="../media/configure-advanced-data-options.png" alt-text="Configure advanced data options for predictive maintenance dataset":::
+    :::image type="content" source="../media/configure-advanced-data-options.png" alt-text="Configure advanced data options for predictive maintenance dataset":::
 
 1. Configure the column settings as follows:
 
