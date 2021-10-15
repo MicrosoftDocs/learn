@@ -8,7 +8,7 @@ A classic example of the need for elasticity occurs when an organization's web s
 
 Some loads are predictable. For example, Domino's pizza sees peak demand for its web site on holidays such as Thanksgiving and New Year's Eve, and during major events such as the Super Bowl1. Other loads are not as predictable. They may occur because a tweet went viral or our favorite team won the World Cup, or due to other factors that an organization can't anticipate.
 
-### Autoscale
+### Manual vs Automatic scale
 
 You can configure scale settings for an application with either two modes manual or automatic. Manual is as you would expect, you set the absolute count of instances. Automatic (AutoScale) however allows you to set rules that govern how and by how much you should scale.
 
@@ -22,20 +22,19 @@ Autoscale only scales horizontally, which is an increase ("out") or decrease ("i
 
 :::image type="content" source="../media/autoscaleconcept.png" alt-text="autoscale horizontal scaling":::
 
-# How does Autoscale work?
+## Real-world example
 
-An autoscaling typically involves the following pieces:
+Raley’s grocery stores needed to modernize the code and infrastructure for their Java-powered e-commerce sites hosted on Azure. The company also needed to optimize and automate its network allocation. Everything had to be robust, always-on, and—most importantly—easy to manage.
 
-* Instrumentation and monitoring systems at the application, service, and infrastructure levels. These systems capture key metrics, such as response times, queue lengths, CPU utilization, and memory usage.
-* Decision-making logic that evaluates these metrics against predefined thresholds or schedules, and decides whether to scale.
-* Components that scale the system.
-* Testing, monitoring, and tuning of the autoscaling strategy to ensure that it functions as expected.
+The answer was Azure Spring Cloud, a fully managed service for Spring Boot, providing the power of Kubernetes coupled with real-time monitoring and autoscaling. It also enabled Raley’s to adopt a true platform as a service (PaaS) architecture, seizing the benefits of the cloud more fully.
 
-::image:::image type="content" source="../media/autoscale_overview_v4.png" alt-text="autoscale pieces":::
+The service manages the infrastructure of Spring Boot microservice applications behind the scenes, so developers can focus on their code. When JARs or code are deployed, Spring Cloud automatically wires the apps with the Spring service runtime.
+
+After they’re deployed, Spring Cloud apps are fully integrated with Azure Monitor tools, like Application Insights and Log Analytics, allowing easy, fully configurable monitoring of performance and errors. When used with Azure Application Gateway, these same monitoring services can also drive autoscaling, helping to ensure that resources are appropriately sized for current loads.
 
 ## Autoscale in Azure Spring Cloud
 
-Autoscaling in Azure Spring Cloud monitors the resource metrics of a Spring application as it runs. It detects situations where additional resources are required to handle an increasing workload, and ensures those resources are available before the system becomes overloaded.
+Autoscaling in Azure Spring Cloud monitors the resource metrics of a Spring application as it runs. It detects situations where additional resources are required to handle an increasing workload, and ensures those resources are available before the system becomes overloaded. Autoscale is a built-in feature of Azure Spring Cloud that helps microservice applications perform their best when demand changes. This includes modifying the number of virtual CPUs, memory, and app instances
 
 In the following exercise, you'll clone a Git repository and run a script that sets-up an Azure Spring Cloud microservice application and an Azure Database for MySQL.
 The script deploys a well-known PetClinic microservice application and is built around small independent services, communicating over HTTP via a REST API.

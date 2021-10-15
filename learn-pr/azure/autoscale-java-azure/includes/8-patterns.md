@@ -1,13 +1,5 @@
 In this unit, we look at patterns for autoscaling.
 
-Azure offers many options to meet capacity requirements as your business grows. These options can also minimize cost.
-
-## Use metrics to fine-tune scaling
-
-It's often difficult to understand the relationship between metrics and capacity requirements, especially when an application is initially deployed. Provision a little extra capacity at the beginning, and then monitor and tune the autoscaling rules to bring the capacity closer to the actual load. Autoscaling enables you to run the right amount of resources to handle the load of your app. It adds resources (called scaling out) to handle an increase in load such as seasonal workloads and customer facing applications.
-
-After configuring the autoscaling rules, monitor the performance of your application over time. Use the results of this monitoring to adjust the pattern in which the system scales if necessary.
-
 ## Common patterns to scale your resource in Azure
 
 ### Scale based on CPU
@@ -46,12 +38,6 @@ You have a web front end and an API tier that communicates with the backend.
 
 ![Custom](../media/custom-metric-scale.png)
 
-# Design your application to scale out
-
-## Design your application so that it can scale horizontally
-
-A primary advantage of the cloud is elastic scaling - the ability to use as much capacity as you need, scaling out as load increases, and scaling in when the extra capacity is not needed. Design your application so that it can scale horizontally, adding or removing new instances as demand requires.
-
 ## Recommendations
 
 **Avoid instance stickiness**. Stickiness, or *session affinity*, is when requests from the same client are always routed to the same server. Stickiness limits the application's ability to scale out. For example, traffic from a high-volume user will not be distributed across instances. Causes of stickiness include storing session state in memory, and using machine-specific keys for encryption. Make sure that any instance can handle any request.
@@ -83,3 +69,9 @@ A primary advantage of the cloud is elastic scaling - the ability to use as much
 - All thresholds are calculated at an instance level. For example, "scale out by one instance when average CPU > 80% when instance count is 2", means scale-out when the average CPU across all instances is greater than 80%.
 - All autoscale failures are logged to the Activity Log. You can then configure an activity log alert so that you can be notified via email, SMS, or webhooks whenever there is an autoscale failure.
 - Similarly, all successful scale actions are posted to the Activity Log. You can then configure an activity log alert so that you can be notified via email, SMS, or webhooks whenever there is a successful autoscale action. You can also configure email or webhook notifications to get notified for successful scale actions via the notifications tab on the autoscale setting.
+
+## Use metrics to fine-tune scaling
+
+Finally, it's best to define your autoscaling rules carefully. For example, a Denial of Service attack will likely result in a large-scale influx of incoming traffic. Trying to handle a surge in requests caused by a DoS attack would be fruitless and expensive. These requests aren't genuine, and should be discarded rather than processed. A better solution is to implement detection and filtering of requests that occur during such an attack before they reach your service.
+
+After configuring the autoscaling rules, monitor the performance of your application over time. Use the results of this monitoring to adjust the pattern in which the system scales if necessary.

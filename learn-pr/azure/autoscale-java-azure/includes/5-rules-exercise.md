@@ -46,25 +46,13 @@ https://<your-spring-cloud-service>-api-gateway.azuremicroservices.io/api/custom
 
 1. Under the chart, you see the activity log entries for each scale action taken by this autoscale setting.
 
-## Trigger a scale-in action manually
+## Scale-in action
 
 The scale-in condition in the autoscale setting triggers if there are fewer than, or equal to, ten requests to the Web App over a period of 1 minute.
 
 1. Ensure no requests are being sent to your Web App and the browser window to your app/service is closed.
 
-1. Load the Azure portal.
-
-1. From the left-hand navigation pane, select the Monitor option. Once the page loads select the Autoscale tab.
-
-1. From the list, select the App Service Plan used throughout this tutorial.
-
-1. On the autoscale setting, select the Run history tab.
-
-1. You see a chart reflecting the instance count of the App Service Plan over time.
-
-1. In a few minutes, the instance count should drop from 2, to 1. The process takes at least 5 minutes.
-
-1. Under the chart, are the corresponding set of activity log entries for each scale action taken by this autoscale setting.
+1. In a few minutes, the instance count should fall from 2, to 1.
 
 ![Autoscale log](../media/scale-in-chart.png)
 

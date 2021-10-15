@@ -19,13 +19,13 @@ quiz:
       explanation: "No. Autoscaling is a scale in/scale out solution. It adds and removes instances of resources rather than migrating to more powerful hardware."
     - content: "Autoscaling requires an administrator to actively monitor the workload on a system. If the workload increases and response times start to drop, the administrator can trigger autoscaling to help increase the throughput of the system."
       isCorrect: false
-      explanation: "No. Autoscaling is an automated process that doesn't require manual intervention. You define autoscale rules, which monitor resource usage. When these rules determine that utilization exceeds a certain threshold, autoscaling will increase the resources available by scaling out. When the utilization falls, autoscaling can remove these resources."
+      explanation: "No. Autoscaling is an automated process that doesn't require manual intervention. You define autoscale rules, which monitor resource usage. When these rules determine that usage exceeds a certain threshold, autoscaling will increase the resources available by scaling out. When the usage falls, autoscaling can remove these resources."
     - content: "Autoscaling is a scale out/scale in solution. The system can scale out when specified resource metrics indicate increasing usage, and scale in when these metrics drop."
       isCorrect: true
       explanation: "This answer is correct"
     - content: "Autoscaling is an ideal solution for handling sudden bursts of activity that last for a few minutes."
       isCorrect: false
-      explanation: "No. Autoscaling takes time to add resources. A sudden burst of activity might have passed before the system can spin up the additional resources."
+      explanation: "No. Autoscaling takes time to add resources. A sudden burst of activity might have passed before the system can spin up more resources."
     - content: "Scaling in and out provides better availability than autoscaling."
       isCorrect: false
       explanation: "No. Autoscaling increases availability by adding more instances of services. If one of these instances fails, the others should still be available. In a scale up solution, the failure of a single instance could stop the entire service."
@@ -51,14 +51,14 @@ quiz:
     - content: "Your organization is running a promotion and expects to see increased traffic to their web site for the next couple of weeks. Ensure sufficient resources are available to handle the demand expected when the promotion starts."
       isCorrect: false
       explanation: "Scale the system manually before the promotion starts, monitor the activity, and then scale back when the promotion finishes."
-  - content: "Triggering a webhook at 8am on Saturday is an example of which of the following?"
+  - content: "The DevOps team for a large food delivery company is configuring an Azure Spring Cloud implementation. Friday night is typically the busiest time. Conversely, 7 AM on Wednesday is generally the quietest time. Which of the following autoscale rule types should be configured?"
     choices:
     - content: "A metric-based rule."
       isCorrect: false
-      explanation: "That's incorrect. Metric-based rules measure application load and add or remove virtual machines based on that load."
+      explanation: "That's incorrect. Metric-based rules measure application load and add or remove applications instances based on that load."
     - content: "An app-insight rule."
       isCorrect: false
-      explanation: "That's incorrect. App-insight rule is not a valid choice."
-    - content: "A time-based rule."
+      explanation: "That's incorrect. App-insight rule isn't a valid choice."
+    - content: "A schedule-based rule."
       isCorrect: true
-      explanation: "That's correct. Time-based rules allow scaling based on time patterns."
+      explanation: "That's correct. Schedule-based rules allow scaling based on time patterns."
