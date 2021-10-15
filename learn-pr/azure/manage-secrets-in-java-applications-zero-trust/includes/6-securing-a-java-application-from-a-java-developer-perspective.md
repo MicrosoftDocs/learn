@@ -7,7 +7,7 @@ You'll have the role of a Java developer, who will configure his project to read
 The Azure Spring Boot starter for Key Vault automates the usage of the Key Vault Java SDK for
 Spring Boot developers.
 
-In the previous section, we added 4 environment variables using the Azure CLI: `AZURE_KEYVAULT_CLIENT_ID`, `AZURE_KEYVAULT_ENABLED`, `AZURE_KEYVAULT_TENANT_ID`, `AZURE_KEYVAULT_URI`.
+In the previous section, we added 2 environment variables using the Azure CLI: `AZURE_KEYVAULT_ENABLED`, and `AZURE_KEYVAULT_URI`.
 
 Those environment variables are read by Spring Boot, and used to authenticate to Azure Key Vault,
 using underneath the Java SDK for Key Vault.
