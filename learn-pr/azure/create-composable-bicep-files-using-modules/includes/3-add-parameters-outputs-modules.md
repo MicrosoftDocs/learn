@@ -1,15 +1,16 @@
 Each module that you create should have a clear purpose. Think of a module as having a *contract*. It accepts a set of parameters, creates a set of resources, and might provide some outputs back to the parent template. Whoever uses the module shouldn't need to worry about how it works - just that it does what they expect. 
 
-When you plan a module, consider both:
+When you plan a module, consider:
 
 - What you need to know to be able to fulfill the module's purpose
-- What anyone who consumes your module will expect to provide and then to be able to access as outputs
+- What anyone who consumes your module will expect to provide
+- What anyone who consumes your module will expect to access as outputs
 
 ## Module parameters
 
 Think about the parameters that your module accepts, and whether each parameter should be optional or required. 
 
-When you create parameters for templates, it's a good practice to add default parameters where you can. In modules, it's not always as important to add default parameters because your module will be used by a parent template that might use its own default parameters. If you have similar parameters in both locations, both with default values, it can be hard for your template's users to figure out which default value will be applied and to enforce consistency. It's often better to leave the default value on the parent template and remove it from the module.
+When you create parameters for templates, it's a good practice to add default parameters where you can. In modules, it's not always as important to add default parameters because your module will be used by a parent template that might use its own default parameters. If you have similar parameters in both files, both with default values, it can be hard for your template's users to figure out which default value will be applied and to enforce consistency. It's often better to leave the default value on the parent template and remove it from the module.
 
 You should also think about how you manage parameters that control the SKUs for your resources and other important configurations. When you create a standalone Bicep template, it's common to embed business rules into your template. For example: "When I deploy a production environment, the storage account should use the GRS tier." Modules present different concerns, though. If a module is reused across multiple deployments, the business rules for each parent template might be different. So, it often doesn't make as much sense to embed business rules into modules. 
 
