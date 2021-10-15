@@ -8,8 +8,6 @@ To meet these objectives, you'll:
 > * Create a resource group in Azure.
 > * Create a secret in GitHub.
 
-<!-- TODO Note to John: copy pasted quite some steps from https://raw.githubusercontent.com/MicrosoftDocs/learn-pr/5778ea14a752a65b5867bbad505e8f0bdee6bfac/learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/includes/3-exercise-create-run-basic-workflow.md?token=AAH6TAKYJCXSRYZ42ATOVC3BN3BQU (cloning the repo) and https://raw.githubusercontent.com/MicrosoftDocs/learn-pr/5778ea14a752a65b5867bbad505e8f0bdee6bfac/learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/includes/5-exercise-create-github-secret.md?token=AAH6TAIOL7KTZIZDCF76WMTBN3BKK (creating SP and GH secret) -->
-
 ## Get the GitHub repository
 
 Here you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files you need to get started for this module. 
@@ -25,15 +23,15 @@ The modules in this learning path are part of a progression. For learning purpos
 
 1. Select **Use this template**. 
 
-   <!-- TODO SS -->
+   :::image type="content" source="../media/4-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
 
-1. Enter a name for your new project, such as *toy-website-workflow*.
+1. Enter a name for your new project, such as *toy-website-test*.
 
 1. Select the **Public** checkbox.
 
 1. Select **Create repository from template**. 
 
-   <!-- TODO SS -->
+   :::image type="content" source="../media/4-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page.":::
 
 [!include[](../../includes/cleanup-steps.md)]
 
@@ -49,16 +47,16 @@ You now have a copy of the template repository in your own account. You will now
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
-1. Navigate in the terminal to the directory where you want to clone the GitHub repository on your local computer. For example, to clone the repository to the _toy-website-workflow_ folder, run the following command:
+1. Navigate in the terminal to the directory where you want to clone the GitHub repository on your local computer. For example, to clone the repository to the _toy-website-test_ folder, run the following command:
 
    ```bash
-   cd toy-website-workflow
+   cd toy-website-test
    ```
 
 1. Type `git clone` and then paste the URL you copied earlier, which looks something like this:
 
    ```bash
-   git clone https://github.com/mygithubuser/toy-website-workflow
+   git clone https://github.com/mygithubuser/toy-website-test
    ```
 
 1. This is the first time you've used this repository, so you are prompted to sign in.
@@ -72,7 +70,7 @@ You now have a copy of the template repository in your own account. You will now
 1. Reopen Visual Studio Code in the repository folder by running the following command:
 
    ```bash
-   code -r toy-website-workflow
+   code -r toy-website-test
    ```
 
 ## Sign in to Azure
