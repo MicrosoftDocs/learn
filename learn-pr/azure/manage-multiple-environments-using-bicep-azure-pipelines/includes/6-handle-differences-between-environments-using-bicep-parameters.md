@@ -24,7 +24,7 @@ Here's an example parameter file:
 
 Parameter files can be committed to your Git repository alongside your Bicep file. You can then refer to the parameter file in your pipeline template where you execute your deployment.
 
-It's a good idea to establish a consistent environment-naming strategy for parameter files. For example, you might name your parameter files *parameters.`ENVIRONMENT_NAME`.json*, like *parameters.Production.json*. Then, you can use a pipeline template parameter to automatically select the correct parameter file.
+It's a good idea to establish a consistent environment-naming strategy for parameter files. For example, you might name your parameter files *parameters.ENVIRONMENT_NAME.json*, like *parameters.Production.json*. Then, you can use a pipeline template parameter to automatically select the correct parameter file.
 
 :::code language="yaml" source="code/6-parameter-file.yml" highlight="30" :::
 
