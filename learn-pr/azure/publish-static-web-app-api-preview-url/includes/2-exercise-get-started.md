@@ -1,10 +1,10 @@
 In this exercise, you'll create an Azure Static Web App instance, including a GitHub Action that automatically builds and publishes your application.
 
-This module uses an Azure sandbox to provide you with a free, temporary Azure subscription that you can use to complete the exercises. Before proceeding, make sure you have activated the sandbox at the top of this page and you have selected a JavaScript framework for the exercises.
+This module uses resources made available to you via the sandbox, which provides free, temporary access to an Azure subscription, along with the resources that you need to complete the exercises. Make sure you have activated the sandbox at the top of this page. When working through the exercises in this module, each unit is dependent on content you created in a previous exercise. For this reason, please choose one JavaScript framework and use it for all subsequent exercises.
 
 ## Create a repository
 
-Let's create a your repository by using a GitHub template. Azure has defined a series of GitHub repository templates, each of which contains a starter app and a collection of  front-end frameworks for the starter app.
+Let's create your repository by using a GitHub template. Azure has defined a series of GitHub repository templates, each of which contains a starter app and a collection of  front-end frameworks for the starter app.
 
 1. Go to the GitHub [create from template page](https://github.com/login?return_to=/MicrosoftDocs/mslearn-staticwebapp-api/generate?azure-portal=true) to open the template repository.
 
@@ -19,7 +19,7 @@ Let's create a your repository by using a GitHub template. Azure has defined a s
 
 ## Run your app locally
 
-You just created your own GitHub repository named **my-static-web-app-and-api** in your GitHub account. Next, you'll clone the GitHub repo and run the code locally on your computer.
+You created your own GitHub repository named **my-static-web-app-and-api** in your GitHub account. Next, you'll clone the GitHub repo and run the code locally on your computer.
 
 1. Open a terminal window on your computer (in Windows system tray search box, enter `cmd`.
 
@@ -32,7 +32,7 @@ You just created your own GitHub repository named **my-static-web-app-and-api** 
    > [!NOTE]
    > If you have trouble copying into the `Command Prompt` terminal session, right click the icon in the title bar, and in the **Properties** tab, ensure that **Use Ctrl+Shift+C/V as Copy/Paste** is checked.
 
-1. Go to the directory for the source code you just cloned.
+1. Go to the directory for the source code you cloned.
 
    ```bash
    cd my-static-web-app-and-api
@@ -151,7 +151,7 @@ When the application bundle is generated and compiled, a browser tab automatical
 
    Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
 
-1. Stop your local app from running by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal, and then confirming you want to terminate the batch job by pressing <kbd>y</kbd>+<kbd>enter</kbd>.
+1. In the terminal session, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop your batch job. Press <kbd>y</kbd>+<kbd>enter</kbd> to confirm.
 
 Congratulations! You built your application and saw it running locally in your browser. Now, let's publish your application to Azure Static Web Apps service.
 
@@ -205,27 +205,27 @@ Now that you've created your own GitHub repository, you can create a Static Web 
 
 1. Visual Studio Code verifies your login and prompts you to commit the changes that you made in your local repo. Select **Commit**, and then press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-concierge-subscription-select.png" alt-text="Dialog asking you to commit changes, showing the static web apps concierge subscription filter in the background.":::
+   :::image type="content" source="../media/extension-concierge-subscription-select.png" alt-text="Screenshot of dialog box prompting you to commit changes. Concierge subscription filter shows in the background.":::
 
-1. Create Static Web App (1/5) prompts you to enter a name for the new static web app, prefilled with **my-static-web-app-and-api**. Verify this, and then press <kbd>Enter</kbd> to confirm.
+1. **Create Static Web App (1/5)** prompts you to enter a name for the new static web app, prefilled with **my-static-web-app-and-api**. Verify the name, and then press <kbd>Enter</kbd> to confirm.
 
    :::image type="content" source="../media/extension-create-app.png" alt-text="Screenshot of Create Static Web App 1 of 5.":::
 
-1. Create Static Web App (2/5) prompts you to select a region. Select **West US 2**, and then press <kbd>Enter</kbd>.
+1. **Create Static Web App (2/5)** prompts you to select a region. Select **West US 2**, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-configure-location.png" alt-text="Screenshot Create Static Web App 2 of 5.":::
    
-1. Create Static Web App (3/5) prompts you to select a build preset to configure the default project structure. Select the **Custom** option, and press <kbd>Enter</kbd>.
+1. **Create Static Web App (3/5)** prompts you to select a build preset to configure the default project structure. Select the **Custom** option, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-custom-option.png" alt-text="Screenshot Create Static Web App 3 of 5.":::
 
 ::: zone pivot="angular"
 
-1. Create Static Web App (4/5) prompts you to enter the location of your application code. Enter **angular-app** as the relative path for the application code, and then press <kbd>Enter</kbd>.
+1. **Create Static Web App (4/5)** prompts you to enter the location of your application code. Enter **angular-app** as the relative path for the application code, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Angular application code location.":::
 
-1. Create Static Web App (5/5) prompts you enter the location of your build output. Enter **dist/angular-app** as the build output location for your app, and then press <kbd>Enter</kbd>.
+1. **Create Static Web App (5/5)** prompts you enter the location of your build output. Enter **dist/angular-app** as the build output location for your app, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-angular.png" alt-text="Angular app build output path.":::
 
@@ -233,11 +233,11 @@ Now that you've created your own GitHub repository, you can create a Static Web 
 
 ::: zone pivot="react"
 
-1. Create Static Web App (4/5) prompts you to enter the location of your application code. Enter **react-app** as the relative path for the application code, and then press <kbd>Enter</kbd>.
+1. **Create Static Web App (4/5)** prompts you to enter the location of your application code. Enter **react-app** as the relative path for the application code, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-react.png" alt-text="React application code location.":::
 
-1. Create Static Web App (5/5) prompts you enter the location of your build output. Enter **build** as the build output location for your app, and then press <kbd>Enter</kbd>.
+1. **Create Static Web App (5/5)** prompts you enter the location of your build output. Enter **build** as the build output location for your app, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-react.png" alt-text="React app build output path.":::
 
@@ -245,11 +245,11 @@ Now that you've created your own GitHub repository, you can create a Static Web 
 
 ::: zone pivot="svelte"
 
-1. Create Static Web App (4/5) prompts you to enter the location of your application code. Enter  **svelte-app** as the location for the application code, and then press <kbd>Enter</kbd>.
+1. **Create Static Web App (4/5)** prompts you to enter the location of your application code. Enter  **svelte-app** as the location for the application code, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Svelte application code location.":::
 
-1. Create Static Web App (5/5) prompts you enter the location of your build output. Enter **public** as the build output location for your app, and then press <kbd>Enter</kbd>.
+1. **Create Static Web App (5/5)** prompts you enter the location of your build output. Enter **public** as the build output location for your app, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Svelte app build output path.":::
 
@@ -257,18 +257,18 @@ Now that you've created your own GitHub repository, you can create a Static Web 
 
 ::: zone pivot="vue"
 
-1. Create Static Web App (4/5) prompts you to enter the location of your application code. Enter **vue-app** as the location for the application code, and then press <kbd>Enter</kbd>.
+1. **Create Static Web App (4/5)** prompts you to enter the location of your application code. Enter **vue-app** as the location for the application code, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location.":::
 
-1. Create Static Web App (5/5) prompts you enter the location of your build output. Enter **`dist`** as the build output location for your app, and then press <kbd>Enter</kbd>.
+1. **Create Static Web App (5/5)** prompts you enter the location of your build output. Enter **`dist`** as the build output location for your app, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-vue.png" alt-text="Vue app build output path.":::
 
 ::: zone-end
 
-   > [!NOTE]
-   > Your repository for this app differs from the repos you may have used in the past. This repository contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. Typically, you'd have only one app in the root of your repository and thus the default `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure locations in the first place - you have full control over how the app is built.
+      > [!NOTE]
+      > Your repository for this app differs from the repos you may have used in the past. This repository contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. Typically, you'd have only one app in the root of your repository and thus the default `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure locations in the first place - you have full control over how the app is built.
 
 1. Once the app is created, a confirmation notification is shown in Visual Studio Code.
 
