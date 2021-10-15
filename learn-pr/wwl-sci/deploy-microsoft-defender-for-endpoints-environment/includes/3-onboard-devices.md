@@ -14,7 +14,7 @@ In general, to onboard devices to the service:
 
 In Settings, Endpoints, Device management, Onboarding select operating system dropdown to see the supported options.
 
-:::image type="content" source="../media/onboarding.png" alt-text="Supported Operating Systems":::
+:::image type="content" source="../media/onboarding.png" alt-text="Supported Operating Systems" lightbox="../media/onboarding.png":::
 
 After selecting the operating system option, the supported deployment options are outlined.   Here is a list of the Windows 10 supported deployment options:
 
@@ -30,7 +30,7 @@ After selecting the operating system option, the supported deployment options ar
 
 - System Center Configuration Manager 2012 / 2012 R2 / 1511 /1602
 
-:::image type="content" source="../media/onboard-deployment.png" alt-text="Windows 10 Deployment options.":::
+:::image type="content" source="../media/onboard-deployment.png" alt-text="Windows 10 Deployment options." lightbox="../media/onboard-deployment.png":::
 
 As you can see, there are many configuration options.  
 
