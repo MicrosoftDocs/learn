@@ -78,9 +78,9 @@ In this step, we'll add the Order function to the API Management resource that w
 
 1. Select **OrderFunction**, and then select **Select**. The **Import Azure Functions** pane reappears with your OrderDetails functionapp configured.
 
-1. Ensure that **OrderDetails** is checked, and then select **Select**. The **Create from Function App** dialog box appears.
+1. Ensure that **OrderDetails** is checked, and then, at the bottom of the page, select **Select** to add the function. The **Create from Function App** dialog box appears.
 
-1. Replace the value in the **API URL suffix** field with *orders*. Notice how this updates the Base URL. Select **Create**.
+1. Replace the value in the **API URL suffix** field with *orders*. Notice how this updates the Base URL. Select **Create** to create your API.
 
     ![Screenshot of the Create from Function App dialog populated with details of the Orders function.](../media/5-complete-function-import.png)
 
@@ -104,30 +104,26 @@ We can use the `curl` command-line tool to submit requests to our API. cURL is i
 
 1. In the Azure resource menu or from Home, select **All resources**.
  
-1. Sort resources by Type, and then select the Function App that begins with **OrderFunction**. The **OrderFunction** Function App Overview pane appears.
+1. Sort resources by Type, and then select the API Management service that begins with **OrderFunction**. The **OrderFunction** API Management service pane appears.
 
-1. In the **Essentials** section, hover over the **URL** and select the **Copy to clipboard** icon.
+1. In the **Essentials** section, hover over the **Gateway URL** and select the **Copy to clipboard** icon.
 
-1. In The Azure Cloud Shell to the right, run the following command, replacing the URL placeholder with the **URL** value that you copied to your clipboard, and then press <kbd>Enter</kbd>.
+1. In The Azure Cloud Shell to the right, run the following command, replacing `<paste URL here>` placeholder with the **URL** value that you copied to your clipboard, and then press <kbd>Enter</kbd>.
 
     ```bash
-    GATEWAY_URL=<paste the URL here>
-        ```
+    GATEWAY_URL=<paste URL here>
+    ```
 
-1. In Azure, on the OrderFunction API Management service menu, scroll down to **API**, and select **API Management**. The **API Management** pane appears.
-
-1. In the command bar, select **Go to API Management**. The **API Management service** pane appears for *OrderFunction-apim*.
-
-1. In the menu, under **APIs**, select **Subscriptions**. The **Subscriptions** pane appears for your OrderFunction-apim instance.
+1. In Azure, on the OrderFunction API Management service menu, scroll down to **API**, and select **Subscriptions**. The **Subscriptions** pane appears for your OrderFunction-apim instance.
 
 1. For the **Built-in all-access subscription**, select the ellipsis **...** on the far right, and then select **Show/hide keys** from the context menu. The primary key and secondary key for the API appears.
 
-1. To the right of **Primary key** field, select the *Copy to clipboard* icon.
+1. In the **Primary key** field, select the *Copy to clipboard* icon.
 
-1. In Cloud Shell, run the following command, paste the **PRIMARY KEY** value, and then press <kbd>Enter</kbd>.
+1. In Cloud Shell, run the following command, replacing the placeholder with the value in your clipboard, and then press <kbd>Enter</kbd>.
 
     ```bash
-    SUB_KEY=<paste the key here>
+    SUB_KEY=<paste key here>
     ```
 
 1. To request the details of the order for a customer name Henri, run the following command in Cloud Shell.
@@ -136,14 +132,17 @@ We can use the `curl` command-line tool to submit requests to our API. cURL is i
     curl -X GET "$GATEWAY_URL/orders/OrderDetails?name=Henri" -H "Ocp-Apim-Subscription-Key:$SUB_KEY"
     ```
 
-    The command returns the details of an order. You can also try the command with the names "Chiba" and "Barriclough" for different results.
+    The return contains a JSON code block with the order details. You can also try the command with the names "Chiba" and "Barriclough" for different results.
     
-1. To request the details of a product, go to the ProductFunction resource, select *Subscriptions*, copy the **Primary key**, update the SUB_KEY value with that primary key, and then run the following command.
+1. To request the details of a product:
+    - In Azure, go to the ProductFunction-apim resource, copy the **Gateway URL** and run the **GATEWAY_URL=** command using that value.
+    - In the ProductFunction-apim menu, select *Subscriptions*, copy the **Primary key**, and run the **SUB_KEY=** command using that primary key.
+    - Run the following command.
      
     ```bash
     curl -X GET "$GATEWAY_URL/products/ProductDetails?id=2" -H "Ocp-Apim-Subscription-Key:$SUB_KEY"
     ```
 
-    The command returns the details of the order. You can also try the command with IDs 1 and 3 for different results.
+    The return contains a JSON code block with the details of a product. You can also try the command with IDs 1 and 3 for different results.
 
-Notice that both the functions can now be called through endpoints within the **azure-api.net** domain, which is the domain used by Azure API Management. We can also access them both by using the same subscription key, because that key grants access to the API Management gateway. In other Learn modules, you can learn how to apply policies, security settings, external caches, and other features to the functions in an API Management Gateway. A gateway provides you with a central control point, where you can manage multiple microservices without altering their code.
+Notice that both the functions can now be called through endpoints within the **azure-api.net** domain (as defined by the GATEWAY_URL), which is the domain used by Azure API Management. In other Learn modules, you can learn how to apply policies, security settings, external caches, and other features to the functions in an API Management Gateway. A gateway provides you with a central control point, where you can manage multiple microservices without altering their code.
