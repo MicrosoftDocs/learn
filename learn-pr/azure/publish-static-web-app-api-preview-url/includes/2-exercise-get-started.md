@@ -149,7 +149,7 @@ When the application bundle is generated and compiled, a browser tab automatical
 
 ::: zone-end
 
-   Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
+    Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
 
 1. In the terminal session, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop your batch job. Press <kbd>y</kbd>+<kbd>enter</kbd> to confirm.
 
@@ -195,7 +195,7 @@ Now that you've created your own GitHub repository, you can create a Static Web 
 1. In Visual Studio Code menu, select the Azure (<kbd>Ctrl+Shift+A</kbd>) to open Azure extensions. You should see four panels showing the Concierge subscription and your Local Project.
 
    :::image type="content" source="../media/extension-azure-logo.png" alt-text="Screenshot showing Azure Logo and static web apps extensions.":::
-
+   
    > [!NOTE]
    > Azure and GitHub sign-in are required. If you are not already signed in to Azure and GitHub from Visual Studio Code, the extension will prompt you to sign in to both during the creation process.
 
@@ -221,11 +221,11 @@ Now that you've created your own GitHub repository, you can create a Static Web 
 
 ::: zone pivot="angular"
 
-1. **Create Static Web App (4/5)** prompts you to enter the location of your application code. Enter **angular-app** as the relative path for the application code, and then press <kbd>Enter</kbd>.
+8. **Create Static Web App (4/5)** prompts you to enter the location of your application code. Enter **angular-app** as the relative path for the application code, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Angular application code location.":::
 
-1. **Create Static Web App (5/5)** prompts you enter the location of your build output. Enter **dist/angular-app** as the build output location for your app, and then press <kbd>Enter</kbd>.
+9. **Create Static Web App (5/5)** prompts you enter the location of your build output. Enter **dist/angular-app** as the build output location for your app, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-angular.png" alt-text="Angular app build output path.":::
 
@@ -233,11 +233,11 @@ Now that you've created your own GitHub repository, you can create a Static Web 
 
 ::: zone pivot="react"
 
-1. **Create Static Web App (4/5)** prompts you to enter the location of your application code. Enter **react-app** as the relative path for the application code, and then press <kbd>Enter</kbd>.
+8. **Create Static Web App (4/5)** prompts you to enter the location of your application code. Enter **react-app** as the relative path for the application code, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-react.png" alt-text="React application code location.":::
 
-1. **Create Static Web App (5/5)** prompts you enter the location of your build output. Enter **build** as the build output location for your app, and then press <kbd>Enter</kbd>.
+9. **Create Static Web App (5/5)** prompts you enter the location of your build output. Enter **build** as the build output location for your app, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-react.png" alt-text="React app build output path.":::
 
@@ -245,11 +245,11 @@ Now that you've created your own GitHub repository, you can create a Static Web 
 
 ::: zone pivot="svelte"
 
-1. **Create Static Web App (4/5)** prompts you to enter the location of your application code. Enter  **svelte-app** as the location for the application code, and then press <kbd>Enter</kbd>.
+8. **Create Static Web App (4/5)** prompts you to enter the location of your application code. Enter  **svelte-app** as the location for the application code, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Svelte application code location.":::
 
-1. **Create Static Web App (5/5)** prompts you enter the location of your build output. Enter **public** as the build output location for your app, and then press <kbd>Enter</kbd>.
+9. **Create Static Web App (5/5)** prompts you enter the location of your build output. Enter **public** as the build output location for your app, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Svelte app build output path.":::
 
@@ -257,20 +257,20 @@ Now that you've created your own GitHub repository, you can create a Static Web 
 
 ::: zone pivot="vue"
 
-1. **Create Static Web App (4/5)** prompts you to enter the location of your application code. Enter **vue-app** as the location for the application code, and then press <kbd>Enter</kbd>.
+8. **Create Static Web App (4/5)** prompts you to enter the location of your application code. Enter **vue-app** as the location for the application code, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location.":::
 
-1. **Create Static Web App (5/5)** prompts you enter the location of your build output. Enter **`dist`** as the build output location for your app, and then press <kbd>Enter</kbd>.
+9. **Create Static Web App (5/5)** prompts you enter the location of your build output. Enter **`dist`** as the build output location for your app, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-vue.png" alt-text="Vue app build output path.":::
 
 ::: zone-end
 
-      > [!NOTE]
-      > Your repository for this app differs from the repos you may have used in the past. This repository contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. Typically, you'd have only one app in the root of your repository and thus the default `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure locations in the first place - you have full control over how the app is built.
+   > [!NOTE]
+   > Your repository for this app differs from the repos you may have used in the past. This repository contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. Typically, you'd have only one app in the root of your repository and thus the default `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure locations in the first place - you have full control over how the app is built.
 
-1. Once the app is created, a confirmation notification is shown in Visual Studio Code.
+10. Once the app is created, a confirmation notification is shown in Visual Studio Code.
 
    :::image type="content" source="../media/extension-confirmation.png" alt-text="Open Actions in GitHub or View/Edit Config.":::
 
@@ -278,17 +278,17 @@ Now that you've created your own GitHub repository, you can create a Static Web 
 
    :::image type="content" source="../media/extension-waiting-for-deployment.png" alt-text="Waiting for Deployment.":::
 
-10. You can view the progress of the deployment using GitHub Actions by expanding the **Actions** menu.
+11. You can view the progress of the deployment using GitHub Actions by expanding the **Actions** menu.
 
     :::image type="content" source="../media/extension-actions.png" alt-text="GitHub Actions.":::
 
     Once the deployment is complete, you can navigate directly to your website.
 
-11. To view the website in the browser, right-click on the project in the Static Web Apps extension, and select Browse Site.
+12. To view the website in the browser, right-click on the project in the Static Web Apps extension, and select Browse Site.
 
     :::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site.":::
 
-Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
+   Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
 
 Congratulations! You've deployed your app to Azure Static Web Apps!
 
