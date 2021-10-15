@@ -40,6 +40,6 @@ resource policyDefinition 'Microsoft.Authorization/policyDefinitions@2020-03-01'
 resource policyAssignment 'Microsoft.Authorization/policyAssignments@2020-03-01' = {
   name: policyAssignmentName
   properties: {
-    policyDefinitionId: '/providers/Microsoft.Management/managementGroups/${managementGroup().name}/providers/Microsoft.Authorization/policyDefinitions/${policyDefinition.name}'
+    policyDefinitionId: policyDefinition.id
   }
 }

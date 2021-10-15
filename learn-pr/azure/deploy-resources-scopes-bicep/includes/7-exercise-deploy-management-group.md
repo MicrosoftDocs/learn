@@ -87,8 +87,6 @@ As you did earlier, create a policy definition in the Bicep file.
 
 You'll now apply the policy to the management group. This means that the policy will apply to all subscriptions that are children of this management group.
 
-To create a policy assignment, you need to refer to the policy definition. Azure Resource Manager doesn't currently have a way to obtain a full resource ID for resources that are deployed to management groups, so you'll need to construct a resource ID manually.
-
 1. Below the `policyDefinitionName` variable definition, add the following variable:
 
    :::code language="bicep" source="code/7-template.bicep" range="4" :::
@@ -96,11 +94,6 @@ To create a policy assignment, you need to refer to the policy definition. Azure
 1. At the bottom of the file, under the policy definition resource, add the following policy assignment:
 
    :::code language="bicep" source="code/7-template.bicep" range="40-45" :::
-
-   Notice that the `policyDefinitionId` is a resource ID. It contains the management group's name and the policy definition's name. Because you've referenced the policy definition's name by using the `policyDefinition.name` property, Bicep understands that there's a dependency between the two resources. Bicep will deploy the policy definition before the policy assignment.
-
-   > [!NOTE]
-   > In the future, Azure will support a simpler syntax.
 
 1. Save the changes to the file.
 
