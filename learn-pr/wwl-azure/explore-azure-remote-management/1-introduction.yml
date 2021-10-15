@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-machine-learning-security.introduction
+uid: learn.wwl.explore-azure-remote-management.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction to Azure Machine Learning"
+  description: "Introduction"
   ms.date: 10/15/2021
   author: wwlpublish
-  ms.author: jasdeb
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
