@@ -11,12 +11,12 @@ Now that you have completed this module, you will be able to:
 
 ## Learn more with Azure documentation
 
-- Configure and manage secrets in Azure Key Vault - Learn | Microsoft Docs
-- Manage secrets in your server apps with Azure Key Vault - Learn | Microsoft Docs
-- Analyze your Azure infrastructure by using Azure Monitor logs - Learn | Microsoft Docs
- 
+- [How managed identities for Azure resources work with Azure virtual machines](/azure/active-directory/managed-identities-azure-resources/how-managed-identities-work-vm)
+- [Managed identity best practice recommendations](/azure/active-directory/managed-identities-azure-resources/managed-identity-best-practice-recommendations) 
 
 ## Learn more with self-paced training
 
+- Configure and manage secrets in Azure Key Vault - Learn | Microsoft Docs
+- Manage secrets in your server apps with Azure Key Vault - Learn | Microsoft Docs
 
 

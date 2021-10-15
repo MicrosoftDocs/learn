@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/06/2021
+  ms.date: 10/15/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -19,12 +19,34 @@ quiz:
   questions:
   - content: "Based on the requirements for the business development application which access method should they implement?"
     choices:
-    - content: "Managed Identities {that’s correct. Azure Managed Identities allows for automatic authentication of the Azure VM to query the Azure SQL Database securely.}"
-      isCorrect: true
-      explanation: "correct choice"
     - content: "SAS Token {that’s incorrect. A SAS token cannot be used to grant permission to the VM to query the database.}"
       isCorrect: false
       explanation: "incorrect choice"
+    - content: "Managed Identities {that’s correct. Azure Managed Identities allows for automatic authentication of the Azure VM to query the Azure SQL Database securely.}"
+      isCorrect: true
+      explanation: "correct choice"
     - content: "Azure Key Vault {that’s incorrect. Key Vault cant be used to grant permission to the VM to query the database.}"
+      isCorrect: false
+      explanation: "incorrect choice"
+  - content: "Based on the requirements for the applications running on-premises which access method should they implement?"
+    choices:
+    - content: "Managed identity {thats incorrect. A managed identity is for Azure resrouces.}"
+      isCorrect: false
+      explanation: "incorrect choice"
+    - content: "Azure Key Vault {thats incorrect. Azure Key Vault can not grant access to an on-premises application.}"
+      isCorrect: false
+      explanation: "incorrect choice"
+    - content: "Service principal {thats correct. A service principal will grant access to the on-premises applications}"
+      isCorrect: true
+      explanation: "correct choice"
+  - content: "Based on the requirements for the duplicated web servers which identity solution is Recommend?"
+    choices:
+    - content: "User-assigned {thats correct. By using user-assigned identity, fewer role assignments are required which reduces the management overhead.}"
+      isCorrect: true
+      explanation: "correct choice"
+    - content: "System-assigned {thats incorrect. Using system-assigned does not reduce the managment overhead.}"
+      isCorrect: false
+      explanation: "incorrect choice"
+    - content: "Azure-assigned {thats incorrect. Azure-assigned is not a solution.}"
       isCorrect: false
       explanation: "incorrect choice"
