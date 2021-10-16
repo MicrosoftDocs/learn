@@ -59,11 +59,11 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Setting | Value |
     |---|---|
     | **Network connectivity**| |
-    | Connectivity method | *Public endpoint (all networks)*.  We want to allow public Internet access. Our content is public facing, and we need to allow access from public clients. |
+    | Connectivity method | *Public endpoint (all networks)*. We want to allow public Internet access. Our content is public facing, and we need to allow access from public clients. |
     | **Network routing**| |
     | Routing preference | *Microsoft network routing*. We want to make use of the Microsoft global network that is optimized for low-latency path selection. |
 
-1. Select **Next : Data protection**. Enter the following value for the setting.
+1. Select **Next : Data protection**. Enter or select the following values for each setting.
 
     | Setting | Value |
     |---|---|
@@ -82,6 +82,6 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. When validation passes successfully, select **Create** to deploy the storage account.
 
-1. When deployment is complete, which may take up to two minutes, select **Go to resource** to view **Essential** details about storage account.
+1. When deployment is complete, which may take up to two minutes, select **Go to resource** to view **Essential** details about the storage account.
 
 You created a storage account with settings driven by your business requirements. For example, you might have selected a West US datacenter because your customers were primarily located in southern California. This is a typical flow: first analyze your data and goals, and then configure the storage account options to match.
