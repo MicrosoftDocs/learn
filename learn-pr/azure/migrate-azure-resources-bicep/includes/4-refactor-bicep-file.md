@@ -103,7 +103,7 @@ If you're converting a template that has many resources, consider breaking the i
 
 ### Add comments and descriptions
 
-Good Bicep code is _self-documenting_. In Bicep, you can add comments and descriptions to your code to document your infrastructure. Comments and descriptions can help your teammates understand the code and increase confidence when changes are made. Comments are ignored when the Bicep file is deployed to Azure, but most descriptions are not ignored.
+Good Bicep code is _self-documenting_. In Bicep, you can add comments and descriptions to your code to document your infrastructure. Comments and descriptions can help your teammates understand the code and increase confidence when changes are made. Both comments and descriptions are visible when you work with the file in Visual Studio Code, for example when you need to specify a parameter value for a module, but when you deploy the Bicep file to Azure, the comments are ignored.
 
 Bicep supports both single-line comments using a `//` character sequence and multi-line comments that start with a `/*` and end with a `*/`. You can add comments to apply to specific lines in your code or to sections of code.
 
