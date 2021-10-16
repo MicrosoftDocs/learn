@@ -28,7 +28,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Region | Select a location near to you from the dropdown list. |
     | Performance | *Standard*. This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. |
     | Redundancy | Select *Locally redundant storage (LRS)* from the dropdown list. In our case, the images and videos quickly become out-of-date and are removed from the site. As a result, there's little value to paying extra for global redundancy. If a catastrophic event results in data loss, you can restart the site with fresh content from your users. |
-   
+
 1. Select **Next : Advanced**. Enter or select the following values for each setting.
 
     | Setting | Value |
@@ -73,17 +73,15 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Enable soft delete for containers | *Uncheck*. Soft delete lets you recover your containers that are deleted accidentally. |
     | Enable soft delete for file shares | *Uncheck*. File share soft delete lets you recover your blob data more easily at the folder level. |
  | **Tracking**| |
-    | Enable versioning for blobs | *Uncheck*. Not necessary for this implementation. | 
+    | Enable versioning for blobs | *Uncheck*. Not necessary for this implementation. |
     | Enable blob change feed | *Uncheck*. Not necessary for this implementation. |
 
 1. Select **Next : Tags**. Here, you can associate key/value pairs with the account for your categorization to determine if a feature is available to selected Azure resources.
 
 1. Select **Review + create** to validate your options and to ensure all the required fields are selected. If there are issues, this tab will identify them so you can correct them.
 
-1. When validation passed successfully, select **Create** to deploy the storage account.
+1. When validation passes successfully, select **Create** to deploy the storage account.
 
-   Allow deployment to complete, whic may take up to two minutes to complete.
-
-1. When deployment is complete, select **Go to resource** to view Essential details about storage account.
+1. When deployment is complete, which may take up to two minutes, select **Go to resource** to view **Essential** details about storage account.
 
 You created a storage account with settings driven by your business requirements. For example, you might have selected a West US datacenter because your customers were primarily located in southern California. This is a typical flow: first analyze your data and goals, and then configure the storage account options to match.
