@@ -2,7 +2,8 @@ In this unit, we look at autoscaling monitoring.
 
 ## Monitoring
 
-Same as any other Azure resource, the autoscale service provides resource logs. There are two categories of logs.
+Similar to other Azure resources, the Azure Spring cloud autoscale actions create logs.
+There are two categories of logs.
 
 - Autoscale Evaluations - The autoscale engine records log entries for every single condition evaluation every time it does a check. The entry includes details on the observed values of the metrics, the rules evaluated, and if the evaluation resulted in a scale action or not.
 
