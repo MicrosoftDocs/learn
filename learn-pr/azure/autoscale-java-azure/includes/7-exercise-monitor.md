@@ -31,7 +31,7 @@ AutoscaleScaleActionsLog
 
 ### A scale action occurred that I didn’t expect
 
-First execute the query for scale action to find the scale action you are interested in. If it is the latest scale action, use the following query:
+First execute the query for scale action to find the scale action you are interested in. If it's the latest scale action, use the following query:
 
 ```Kusto
 AutoscaleScaleActionsLog
@@ -67,13 +67,13 @@ AutoscaleEvaluationsLog
 | project OperationName, Profile, ProfileEvaluationTime, ProfileSelected, EvaluationResult
 ```
 
-### A scale action did not occur
+### A scale action didn't occur
 
-If you expected a scale action, and it did not occur, there might have been no scale action events.
+If you expected a scale action, and it didn't occur, there might have been no scale action events.
 
-Review the autoscale metrics if you are using a metric-based scale rule. It's possible that the **Observed metric value** or **Observed Capacity** are not what you expected them to be and therefore the scale rule did not fire. You would still see evaluations, but not a scale-out rule. It's also possible that the cool-down time kept a scale action from occurring.
+Review the autoscale metrics if you're using a metric-based scale rule. It's possible that the **Observed metric value** or **Observed Capacity** aren't what you expected them to be and so the scale rule did not fire. You would still see evaluations, but not a scale-out rule. It's also possible that the cool-down time kept a scale action from occurring.
 
-The below query displays the autoscale evaluation logs during the time period you expected the scale action to occur allowing you to determine the evaluations it did and why it decided to not trigger a scale action:
+The below query displays the autoscale evaluation logs during the time period you expected the scale action to occur, allowing you to determine the evaluations it did, and why it decided to not trigger a scale action:
 
 ```Kusto
 AutoscaleEvaluationsLog
