@@ -2,7 +2,7 @@ In this exercise, we'll look at exercises for setting up and triggering autoscal
 
 # Introduction
 
-In your sample Azure Spring Cloud application, when we created your application, we've already triggered a scale-up and scale-down action on the customer service microservice.
+In your sample Azure Spring Cloud application, when your application was created, it already triggered a scale-up and scale-down action on the customer service microservice.
 
 The customer-service will scale-up when the tomcat request count exceeds 10 sessions, per minute, on average.
 After the autoscale is triggered, it will then scale down if the request count is less than, or equal to 10 sessions, per minute, on average.
@@ -18,15 +18,24 @@ After the autoscale is triggered, it will then scale down if the request count i
 
 :::image type="content" source="../media/scalesettings2.png" alt-text="scale setting":::
 
+There are two options for Autoscale demand management:
+
+1. Manual scale: Maintains a fixed instance count. In the Standard tier, you can scale out to a maximum of 500 instances. This value changes the number of separate running instances of the microservice application.
+1. Custom autoscale: Scales on any schedule, based on any metrics.
+
+In the Azure portal, view the pre-setup configuration for your application. The following figure shows the Custom autoscale setup to scale on the tomcat request count.
+
+:::image type="content" source="../media/scalesettings.png" alt-text="scale rules":::
+
 ### Viewing the finished autoscale events
 
-In the Scale-out setting screen, go to the Run history tab to see the most recent scale actions. The tab also shows the change in Observed Capacity over time. To find more details about all autoscale actions including operations such as update/delete autoscale settings, view the activity log and filter by autoscale operations.
+In the Scale-out setting screen, go to the Run history tab to see the most recent scale actions. The tab shows the change in Observed Capacity over time graphically, and a log of every autoscale action.
 
 :::image type="content" source="../media/scaleresult.png" alt-text="autoscale run history":::
 
 ## Trigger the scale-out action with a script
 
-In the next exercises, you'll trigger autoscaling via manually via a web browser and also a shell script.
+In the next exercise, you'll trigger autoscaling via manually via a web browser and also a shell script.
 To test the autoscale rules, we'll generate some load on the instances. This simulated load causes the autoscale rules to scale out and increase the number of instances. As the simulated load is then stopped, the autoscale rules scale in and reduce the number of instances.
 
 To allow you to trigger the autoscale manually, we have provided a shell script in the same GIT repo you used to create your Azure Spring Cloud application.
