@@ -19,7 +19,12 @@ The modules in this learning path are part of a progression. For learning purpos
 
 ### Start from the template repository
 
-1. In your browser navigate to the [template repo](https://github.com/MicrosoftDocs/mslearn-test-bicep-code-using-github-actions?azure-portal=true).
+Run a template that sets up your GitHub repository.
+
+> [!div class="nextstepaction"]
+> [Run the template](https://github.com/MicrosoftDocs/mslearn-test-bicep-code-using-github-actions?azure-portal=true)
+
+On the GitHub site, follow these steps to create a repository from the template:
 
 1. Select **Use this template**. 
 
@@ -39,9 +44,9 @@ The modules in this learning path are part of a progression. For learning purpos
 
 You now have a copy of the template repository in your own account. You will now clone this repository locally so you can start work in it. 
 
-1. Select **Code** > **Local** > **Copy** icon.
+1. Select **Code** and select the copy icon.
 
-   :::image type="content" source="../media/4-repos-files.png" alt-text="Screenshot of Azure DevOps that shows the Repos menu, with Files highlighted.":::
+   :::image type="content" source="../media/4-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface showing the new repository, with the repository URL copy button highlighted.":::
 
 1. Open Visual Studio Code. 
 
@@ -56,7 +61,7 @@ You now have a copy of the template repository in your own account. You will now
 1. Type `git clone` and then paste the URL you copied earlier, which looks something like this:
 
    ```bash
-   git clone https://github.com/mygithubuser/toy-website-test
+   git clone https://github.com/mygithubuser/toy-website-test.git
    ```
 
 1. This is the first time you've used this repository, so you are prompted to sign in.
