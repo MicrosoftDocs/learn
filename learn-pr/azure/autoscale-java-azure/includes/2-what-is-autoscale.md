@@ -16,11 +16,11 @@ Autoscale allows you to have the right amount of resources running to handle the
 
 :::image type="content" source="../media/computesaving.jpg" alt-text="save on compute":::
 
-## Horizontal vs vertical scaling
+## "Up" vs "Out"
 
 Autoscale only scales horizontally, which is an increase ("out") or decrease ("in") in the number of application instances. In contrast, vertical scaling is different. It keeps the same number of application instances, but makes the application instances more ("up") or less ("down") powerful.
 
-:::image type="content" source="../media/autoscaleconcept.png" alt-text="autoscale horizontal scaling":::
+:::image type="content" source="../media/outvsup.png" alt-text="scaleup vs scale out difference":::
 
 ## Real-world example
 
@@ -34,7 +34,9 @@ After they’re deployed, Spring Cloud apps are fully integrated with Azure Moni
 
 ## Autoscale in Azure Spring Cloud
 
-Autoscaling in Azure Spring Cloud monitors the resource metrics of a Spring application as it runs. It detects situations where additional resources are required to handle an increasing workload, and ensures those resources are available before the system becomes overloaded. Autoscale is a built-in feature of Azure Spring Cloud that helps microservice applications perform their best when demand changes. This includes modifying the number of virtual CPUs, memory, and app instances
+Autoscaling in Azure Spring Cloud monitors the resource metrics of a Spring application as it runs. It detects situations where additional resources are required to handle an increasing workload, and ensures those resources are available before the system becomes overloaded. Autoscale is a built-in feature of Azure Spring Cloud that helps microservice applications perform their best when demand changes.
+
+:::image type="content" source="../media/autoscaleconcept.png" alt-text="autoscale horizontal scaling":::
 
 In the following exercise, you'll clone a Git repository and run a script that sets-up an Azure Spring Cloud microservice application and an Azure Database for MySQL.
 The script deploys a well-known PetClinic microservice application and is built around small independent services, communicating over HTTP via a REST API.
