@@ -1,10 +1,10 @@
-Congratulations! You've learned how to use autoscaling for your Java applications on Azure.
+Congratulations! You've learned about autoscaling for your Java applications on Azure.
 
 ## Summary of what you learned
 
-In this module, you learned how to:
+In this module, you learned about:
 
-- Create a Sample Autoscale architecture with Java
+- Create a Sample Autoscale architecture with Azure Spring Cloud
 
 - Investigate the sample scale rules
 
