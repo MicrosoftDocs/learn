@@ -56,7 +56,7 @@ To create a template spec, use the `New-AzTemplateSpec` cmdlet. The following ex
 
 ::: zone pivot="biceppowershell"
 
-:::code language="azurepowershell" source="code/3-create.ps1" range="1-6,8" :::
+:::code language="azurepowershell" source="code/3-create.ps1" range="1-6, 8" :::
 
 ::: zone-end
 
@@ -87,7 +87,7 @@ To create a template spec, use the `az ts create` command. The following example
 
 ::: zone pivot="bicepcli"
 
-:::code language="azurecli" source="code/3-create.sh" range="1-6,8" :::
+:::code language="azurecli" source="code/3-create.sh" range="1-6, 8" :::
 
 ::: zone-end
 
