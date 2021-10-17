@@ -84,12 +84,12 @@ For example, imagine you define a pipeline template that runs script steps. You 
 
 The condition here translates to *if the environmentType parameter's value is equal to 'Production', then run the following steps*.
 
+> [!TIP]
+> Pay attention to the YAML file's indentation when you use conditions like this. The steps that the condition applies to need to be indented by one extra level.
+
 You can also specify the `condition` property on a stage, job, or step. Here's an example showing you you can use the `ne` (*not equals*) operator to specify a condition like *if the environmentType parameter's value is not equal to 'Production', then run the following steps*:
 
 :::code language="yaml" source="code/3-script-conditions.yml" range="14-16" highlight="3" :::
-
-> [!TIP]
-> Pay attention to the YAML file's indentation when you use conditions. The steps that the condition applies to need to be indented by one extra level.
 
 Although conditions are a way to add flexibility to your pipeline, try not to use too many of them. They complicate your pipeline and make it harder to understand its flow. If you see a lot of conditions in your pipeline template, it might indicate that a template might not be the best solution for the workflow you plan to run, and that you should redesign your pipeline.
 
