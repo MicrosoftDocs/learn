@@ -42,7 +42,7 @@ You can nest templates in other templates, too. Suppose the preceding file was n
 
 :::code language="yaml" source="code/3-stages.yml" highlight="13, 17" :::
 
-When you nest templates, or reuse them multiple times in a single pipeline, you need to be careful that you don't accidentally use the same name for multiple different pipeline resources. For example, each job within a stage needs its own name, so if you define the job name in a template then you can't reuse it multiple times in the same stage.
+When you nest templates, or reuse them multiple times in a single pipeline, you need to be careful that you don't accidentally use the same identifier for multiple different pipeline resources. For example, each job within a stage needs its own identifier, so if you define the job identifier in a template then you can't reuse it multiple times in the same stage.
 
 When you work with complex sets of deployment pipelines, it can be helpful to create a dedicated Git repository for your shared pipeline templates. Then, you can reuse the same repository in multiple pipelines, even if they're for different projects. We provide a link to more information in the summary.
 
@@ -60,7 +60,7 @@ Each pipeline template parameter has three properties:
 
 - The *name* of the parameter, which you use to refer to the parameter in your template files.
 - The *type* of the parameter. Parameters support several different types of data, including *string*, *number*, and *boolean*. You can also define more complex templates that accept structured objects.
-- The *default value* of the parameter. If you specify a default value, you effectively make the parameter optional.
+- The *default value* of the parameter. This is optional. If you don't specify a default value, then a value must be provided when the pipeline template is used.
 
 In your pipeline template, you use a special syntax to refer to the value of the parameter. Use the `${{parameters.YOUR_PARAMETER_NAME}}` macro, like in this example: 
 
@@ -70,7 +70,7 @@ You pass the value for a parameters to a pipeline template by using the `paramet
 
 :::code language="yaml" source="code/3-parameters.yml" highlight="3-4, 6-7" :::
 
-You can also use parameters when you assign names to your jobs and stages in pipeline templates too. This helps when you need to reuse the same template multiple times in your pipeline, like this:
+You can also use parameters when you assign identifiers to your jobs and stages in pipeline templates too. This helps when you need to reuse the same template multiple times in your pipeline, like this:
 
 :::code language="yaml" source="code/3-jobs-parameters.yml" highlight="7, 13" :::
 
@@ -83,6 +83,8 @@ For example, imagine you define a pipeline template that runs script steps. You 
 :::code language="yaml" source="code/3-script-conditions.yml" range="1-12" highlight="10" :::
 
 The condition here translates to *if the environmentType parameter's value is equal to 'Production', then run the following steps*.
+
+<!-- TODO condition property on stage -->
 
 You can also use the `ne` (*not equals*) operator to specify a condition like *if the environmentType parameter's value is not equal to 'Production', then run the following steps*:
 

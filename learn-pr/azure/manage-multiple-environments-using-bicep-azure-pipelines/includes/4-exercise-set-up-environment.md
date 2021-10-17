@@ -227,6 +227,8 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
    Leave the production environment page open.
 
+<!-- TODO grant access to pipelines -->
+
 ## Add an approval check to the production environment
 
 1. Near the upper right of the page, select the button with three dots and select **Approvals and checks** from the pop-up menu.
@@ -259,7 +261,11 @@ In the previous versions of the pipeline, you used a single environment named *W
 
 1. Near the upper right of the page, select the button with three dots and select **Delete** from the pop-up menu.
 
+   <!-- TODO SS -->
+
 1. Select **Delete** to confirm the deletion.
+
+   <!-- TODO SS -->
 
 ## Delete the old variables
 
