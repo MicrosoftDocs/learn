@@ -84,5 +84,3 @@ The scale-in condition in the autoscale setting triggers if there are fewer than
 1. Ensure no requests are being sent to your customer-service and the browser window to your app/service is closed.
 
 1. In a few minutes, the instance count should fall from 2, to 1.
-
-![Autoscale log](../media/scale-in-chart.png)
