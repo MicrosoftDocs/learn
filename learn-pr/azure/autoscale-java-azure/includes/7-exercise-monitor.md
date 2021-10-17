@@ -4,6 +4,10 @@ In this exercise, with zero configuration, you'll effortlessly monitor autoscali
 
 You can validate the evaluations and scale actions better using Log Analytics. In your sample application, we've routed your autoscale logs to Azure Monitor Logs (Log Analytics) through a Log Analytics workspace you created with your sample application setup.
 
+> [!IMPORTANT]
+> There might be a gap of up to 15 minutes between when logs or metrics are emitted and when they appear in
+> a Log Analytics instance.
+
 ## Use Log Analytics
 
 1. In the Azure portal, go to your Azure Log Analytics instance.
@@ -23,9 +27,9 @@ AutoscaleScaleActionsLog
 | limit 50
 ```
 
-Use the following sections to  these questions.
+## Troubleshooting common scale questions
 
-## A scale action occurred that I didn’t expect
+### A scale action occurred that I didn’t expect
 
 First execute the query for scale action to find the scale action you are interested in. If it is the latest scale action, use the following query:
 
@@ -41,7 +45,7 @@ AutoscaleEvaluationsLog
 | where CorrelationId = "<correliationId>"
 ```
 
-## What profile caused a scale action?
+### What profile caused a scale action?
 
 A scaled action occurred, but you have overlapping rules and profiles and need to track down which caused the action.
 
@@ -63,7 +67,7 @@ AutoscaleEvaluationsLog
 | project OperationName, Profile, ProfileEvaluationTime, ProfileSelected, EvaluationResult
 ```
 
-## A scale action did not occur
+### A scale action did not occur
 
 If you expected a scale action, and it did not occur, there might have been no scale action events.
 
@@ -78,7 +82,7 @@ AutoscaleEvaluationsLog
 | project OperationName, MetricData, ObservedValue, Threshold, EstimateScaleResult
 ```
 
-## Scale action failed
+### Scale action failed
 
 There may be a case where autoscale service took the scale action but the system decided not to scale or failed to complete the scale action. Use this query to find the failed scale actions:
 
