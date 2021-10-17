@@ -149,7 +149,7 @@ When the application bundle is generated and compiled, a browser tab automatical
 
 ::: zone-end
 
-- Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
+  - Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
 
 2. In the terminal session, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop your batch job. Press <kbd>y</kbd>+<kbd>enter</kbd> to confirm.
 
