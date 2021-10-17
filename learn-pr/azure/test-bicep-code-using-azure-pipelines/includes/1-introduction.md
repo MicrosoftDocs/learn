@@ -27,7 +27,10 @@ You should be familiar with using:
   - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
   - Basic YAML pipelines through Azure Pipelines, including service connections.
 
-To work through the exercises in the module, you'll need an Azure account with the ability to create resource groups, Azure Active Directory applications, and service principals.
+To work through the exercises in the module, you'll need:
+
+  - An Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
+  - An Azure DevOps account and organization.
   
 You'll also need the following installed locally:
   
