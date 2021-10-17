@@ -4,8 +4,6 @@ Autoscaling isn't an instant solution. Simply adding resources to a system or ru
 
 ## Recommendations
 
-**Avoid instance stickiness**. Stickiness, or *session affinity*, is when requests from the same client are always routed to the same server. Stickiness limits the application's ability to scale out. For example, traffic from a high-volume user won't be distributed across instances. Causes of stickiness include storing session state in memory, and using machine-specific keys for encryption. Make sure that any instance can handle any request.
-
 **Identify bottlenecks**. Scaling out isn't a magic fix for every performance issue. For example, if your backend database is the bottleneck, it won't help to add more web servers. Identify and resolve the bottlenecks in the system first, before throwing more instances at the problem. Stateful parts of the system are the most likely cause of bottlenecks.
 
 **Decompose workloads by scalability requirements.**  Applications often consist of multiple workloads, with different requirements for scaling. For example, an application might have a public-facing site and a separate administration site. The public site may experience sudden surges in traffic, while the administration site has a smaller, more predictable load.
@@ -23,14 +21,8 @@ Autoscaling isn't an instant solution. Simply adding resources to a system or ru
 - For long-running tasks, consider breaking up the work.
 - Put work items on a queue so that another instance can pick up the work, if an instance is removed in the middle of processing.
 
-## Autoscale best practices
+## Notifications
 
-- A resource can have only *one* autoscale setting
-- An autoscale setting can have one or more profiles and each profile can have one or more autoscale rules.
-- An autoscale setting scales instances horizontally, which is *out* by increasing the instances and *in* by lowering the number of instances.
-- An autoscale setting has a maximum, minimum, and default value of instances.
-- An autoscale job always reads the associated metric to scale by, checking if it has crossed the configured threshold for scale-out or scale-in. You can view a list of metrics that autoscale can scale by at Azure Monitor autoscaling common metrics.
-- All thresholds are calculated at an instance level. For example, "scale out by one instance when average CPU > 80% when instance count is 2", means scale-out when the average CPU across all instances is greater than 80%.
 - All autoscale failures are logged to the Activity Log. You can then configure an activity log alert so that you can be notified via email, SMS, or webhooks whenever there's an autoscale failure.
 - Similarly, all successful scale actions are posted to the Activity Log. You can then configure an activity log alert so that you can be notified via email, SMS, or webhooks whenever there's a successful autoscale action. You can also configure email or webhook notifications to get notified for successful scale actions via the notifications tab on the autoscale setting.
 

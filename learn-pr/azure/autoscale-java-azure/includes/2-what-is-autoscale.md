@@ -18,7 +18,7 @@ Autoscale allows you to have the right amount of resources running to handle the
 
 ## "Up" vs "Out"
 
-Autoscale only scales horizontally, which is an increase ("out") or decrease ("in") in the number of application instances. In contrast, vertical scaling is different. It keeps the same number of application instances, but makes the application instances more ("up") or less ("down") powerful.
+Autoscale only scales "Out" (horizontally), which is an increase ("out") or decrease ("in") in the number of application instances. In contrast, "Up" (vertical) scaling is different. It keeps the same number of application instances, but makes the application instances more ("up") or less ("down") powerful.
 
 :::image type="content" source="../media/outvsup.png" alt-text="scaleup vs scale out difference":::
 
@@ -36,7 +36,7 @@ After they’re deployed, Spring Cloud apps are fully integrated with Azure Moni
 
 Autoscaling in Azure Spring Cloud monitors the resource metrics of a Spring application as it runs. It detects situations where additional resources are required to handle an increasing workload, and ensures those resources are available before the system becomes overloaded. Autoscale is a built-in feature of Azure Spring Cloud that helps microservice applications perform their best when demand changes.
 
-:::image type="content" source="../media/autoscaleconcept.png" alt-text="autoscale horizontal scaling":::
+:::image type="content" source="../media/autoscaleconcept.png" alt-text="autoscale up scaling":::
 
 In the following exercise, you'll clone a Git repository and run a script that sets-up an Azure Spring Cloud microservice application and an Azure Database for MySQL.
 The script deploys a well-known PetClinic microservice application and is built around small independent services, communicating over HTTP via a REST API.
