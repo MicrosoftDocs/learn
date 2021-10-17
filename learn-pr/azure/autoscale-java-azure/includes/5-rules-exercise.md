@@ -14,11 +14,15 @@ After the autoscale is triggered, it will then scale down if the request count i
 3. Select the resource group that contains your service.
 4. Select the **Apps** tab under **Settings** in the menu on the left navigation pane.
 5. Select the customers-service application. You should then see the application's **Overview** page.
-6. Go to the **Scale0out** tab under Settings in the menu on the left side of the page.
+6. Go to the **Scale-out** tab under Settings in the menu on the left side of the page.
+
+:::image type="content" source="../media/scalesettings2.png" alt-text="scale setting":::
 
 ### Viewing the finished autoscale events
 
-In the Scale0out setting screen, go to the Run history tab to see the most recent scale actions. The tab also shows the change in Observed Capacity over time. To find more details about all autoscale actions including operations such as update/delete autoscale settings, view the activity log and filter by autoscale operations.
+In the Scale-out setting screen, go to the Run history tab to see the most recent scale actions. The tab also shows the change in Observed Capacity over time. To find more details about all autoscale actions including operations such as update/delete autoscale settings, view the activity log and filter by autoscale operations.
+
+:::image type="content" source="../media/scaleresult.png" alt-text="autoscale run history":::
 
 ## Trigger the scale-out action with a script
 
