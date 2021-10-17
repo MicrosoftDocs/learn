@@ -5,15 +5,15 @@ In this exercise, with zero configuration, you'll effortlessly monitor autoscali
 You can validate the evaluations and scale actions better using Log Analytics. In your sample application, we've routed your autoscale logs to Azure Monitor Logs (Log Analytics) through a Log Analytics workspace you created with your sample application setup.
 
 > [!IMPORTANT]
-> There might be a gap of up to 15 minutes between when logs or metrics are emitted and when they appear in
-> a Log Analytics instance.
+> The Log data ingestion time in Azure Monitor can take up to 15 minutes. If data is not found in Log Analytics, it may take additional time to ingest Azure Spring Cloud log data.
 
 ## Use Log Analytics
 
-1. In the Azure portal, go to your Azure Log Analytics instance.
-1. To open the Log Search pane, select Logs.
-1. In the Tables search box
-1. To get started, try this query to view the most recent autoscale evaluation logs:
+1. Open the Azure portal
+2. Select "Azure Spring Cloud" from the list of Azure services
+3. Select your Azure Spring Cloud instance
+4. Next, under the Monitoring section, select **Logs**.
+5. In the **Query** search box try this query to view the most recent autoscale evaluation logs:
 
 ```Kusto
 AutoscaleEvaluationsLog

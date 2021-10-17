@@ -29,4 +29,12 @@ As with any Azure Monitor supported service, you can use Diagnostic Settings to 
 - to Event Hubs and then to non-Azure tools
 - to your Azure storage account for archival
 
-You can validate the evaluations and scale actions better using Log Analytics. In your sample application, we've routed your autoscale logs to Azure Monitor Logs (Log Analytics) through a workspace when you created the autoscale setting. In the next exercise, you'll use log analytics to find out more about the autoscale events.
+You can validate the evaluations and scale actions better using Log Analytics. In your sample application, we've routed your autoscale logs to Azure Monitor Logs (Log Analytics) through a workspace when you created the autoscale setting.
+
+Data is retrieved from a Log Analytics workspace using a log query, which is a read-only request to process data and return results. Log queries are written in **Kusto Query Language (KQL)**, which is the same query language used by Azure Data Explorer.
+
+> [!NOTE]
+> Your Azure Spring Cloud sample application already has been setup with a Log Analytics workspace.
+> For more information on **KQL** syntax, see the Summary unit at the end of this training.
+
+In the next exercise, you'll use log analytics to find out more about the autoscale events.
