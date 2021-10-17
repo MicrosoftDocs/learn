@@ -11,6 +11,6 @@ steps:
   - script: |
       echo This step only runs for production deployments.
 
-- ${{ if ne(parameters.environmentType, 'Production') }}:
-  - script: |
-      echo This step only runs for non-production deployments.
+- script: |
+    echo This step only runs for non-production deployments.
+  condition: ne('${{ parameters.environmentType }}', 'Production')

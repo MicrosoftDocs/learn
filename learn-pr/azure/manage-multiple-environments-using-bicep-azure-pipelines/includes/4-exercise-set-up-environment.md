@@ -217,17 +217,25 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
    :::image type="content" source="../media/4-environments-new-details-test.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Test, with the details completed and the Create button highlighted.":::
 
-1. Select the left arrow to return to the environments list.
+   Before a pipeline can use the environment, you must grant it permission. For simplicity, you'll allow all pipelines to access the environment. In your own pipelines, you should restrict access to environments to just the pipelines that require it.
+
+1. Select the button with three dots and select **Security**.
+
+   :::image type="content" source="../media/4-environment-security.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, with the More Actions menu displayed and the Security item highlighted.":::
+
+1. In the section named **Pipeline permissions**, select the button with three dots. Select **Open access**.
+
+   :::image type="content" source="../media/4-environment-security-open.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, with the More Actions menu displayed and the Open access item highlighted.":::
+
+1. Select the left arrow twice to return to the environments list.
 
    :::image type="content" source="../media/4-environment-back.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, with the left arrow button highlighted.":::
 
-1. Repeat the process to create another environment named **Production**.
+1. Repeat the process to create another environment named **Production**. Remember to set it to open access.
 
    :::image type="content" source="../media/4-environments-new-details-production.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Production, with the details completed and the Create button highlighted.":::
 
    Leave the production environment page open.
-
-<!-- TODO grant access to pipelines -->
 
 ## Add an approval check to the production environment
 
@@ -261,11 +269,9 @@ In the previous versions of the pipeline, you used a single environment named *W
 
 1. Near the upper right of the page, select the button with three dots and select **Delete** from the pop-up menu.
 
-   <!-- TODO SS -->
+   :::image type="content" source="../media/4-environment-delete.png" alt-text="Screenshot of the Azure DevOps interface that shows the test environment, with the More Actions menu and the Delete button highlighted.":::
 
 1. Select **Delete** to confirm the deletion.
-
-   <!-- TODO SS -->
 
 ## Delete the old variables
 
