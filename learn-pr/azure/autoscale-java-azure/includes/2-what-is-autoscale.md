@@ -1,4 +1,4 @@
-In this unit, we look at Azure autoscaling concepts.
+In this unit, we look at Azure scaling concepts.
 
 ## Why care about scaling
 
@@ -6,7 +6,7 @@ A primary advantage of the cloud is elastic scaling - scale out by adding applic
 
 A classic example of the need for elasticity occurs when an organization's web site experiences unusually high loads. If the site can't scale to meet demand, requests take longer to process because they're queued waiting for processor time. To the customer, the site seems slow and unresponsive. In extreme cases, the site might even appear to be down.
 
-Some loads are predictable. For example, Domino's pizza sees peak demand for its web site on holidays such as Thanksgiving and New Year's Eve, and during major events such as the Super Bowl1. Other loads are not as predictable. They may occur because a tweet went viral or our favorite team won the World Cup, or due to other factors that an organization can't anticipate.
+Some loads are unpredictable. For example, the COVID-19 lowdowns triggered a massive surge many company’s e-commerce traffic. IT teams where still managing their infrastructure manually, and the scale-outs were time consuming. Now, with scale automation, teams can achieve that same degree of expansion automatically. Other loads are also as unpredictable. They may occur because a tweet went viral or our favorite team won the World Cup, or due to other factors that an organization can't anticipate.
 
 ### Manual vs Automatic scale
 
