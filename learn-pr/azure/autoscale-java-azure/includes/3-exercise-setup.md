@@ -84,4 +84,4 @@ In a web browser, navigate to the URL of your api-gateway to open the Pet Clinic
 Next, navigate to the "Owners" tab and select "Find all owners".
 Confirm your sample application is up and running, populated with data and now ready for you to explore.
 
-:::image type="content" source="../media/4-petclinic.jpg" alt-text="screenshot of your Spring Cloud application" lightbox="../media/4-petclinic.jpg" lightbox="../media/4-petclinic.jpg":::
+:::image type="content" source="../media/4-petclinic.jpg" alt-text="screenshot of your Spring Cloud application" lightbox="../media/4-petclinic.jpg":::
