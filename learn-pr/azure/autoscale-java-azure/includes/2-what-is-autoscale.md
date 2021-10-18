@@ -38,7 +38,7 @@ Autoscaling in Azure Spring Cloud monitors the resource metrics of a Spring appl
 
 :::image type="content" source="../media/autoscaleconcept.png" alt-text="autoscale up scaling":::
 
-In the following exercise, you'll clone a Git repository and run a script that sets-up an Azure Spring Cloud microservice application and an Azure Database for MySQL.
+In the previous exercise, you cloned a Git repository and run a script that sets-up an Azure Spring Cloud microservice application and an Azure Database for MySQL.
 The script deploys a well-known PetClinic microservice application and is built around small independent services, communicating over HTTP via a REST API.
 
 Your application is set up with autoscaling to respond to changes in the environment by adding or removing Azure Spring Cloud instances and balancing the load between them. Autoscaling doesn't have any effect on the CPU power, memory, or storage capacity of the application instances powering the app, it only changes the number of application instances.
