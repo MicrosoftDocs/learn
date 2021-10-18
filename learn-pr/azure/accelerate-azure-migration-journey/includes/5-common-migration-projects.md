@@ -77,7 +77,7 @@ Azure has broad support for open-source databases. There is support for moving M
 
 ### Migrate
 
-When migrating Linux or Windows servers hosting an open-source database to Azure, the experience is much like migration a Windows SQL Server. When you host these databases on a virtual maine in Azure, they can be moved using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and will run just as they do today in the datacenter only now they are connected to a virtual network running in Azure.
+When migrating Linux or Windows servers hosting an open-source database to Azure, the experience is much like migration a Windows SQL Server. When you host these databases on a virtual machine in Azure, they can be moved using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and will run just as they do today in the datacenter only now they are connected to a virtual network running in Azure.
 
 ### Modernize
 
@@ -106,7 +106,7 @@ When performing an Azure IaaS migration, there isn't a modernization path simila
 
 So, while an IaaS migration to Azure may not be modernizing the applications themselves, the other modern services that can be used provide a modernized tool set for managing your IaaS deployment.
 
-![Modernize OSS apps on Azure](../media/migrate-modernize-IaaS.png)
+![Modernize OSS apps on Azure](../media/migrate-modernize-iaas.png)
 
 **Deep dive on migration scenarios:**
 
