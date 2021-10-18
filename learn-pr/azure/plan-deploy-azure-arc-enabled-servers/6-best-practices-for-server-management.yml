@@ -3,7 +3,7 @@ uid: learn.azure.plan-deploy-azure-arc-enabled-servers.best-practices-for-server
 title: Best practices for Azure Arc-enabled servers management and services in Azure
 metadata:
   title: Best practices for Azure Arc-enabled servers management and services in Azure
-  description: TBD
+  description: Overview of how to best leverage Azure services for security, governance, and observability of Azure Arc-enabled servers.
   ms.date: 09/21/2021
   author: aurnovcy
   ms.author: aurnovc
