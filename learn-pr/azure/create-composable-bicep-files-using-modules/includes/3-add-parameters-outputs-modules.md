@@ -44,7 +44,9 @@ Modules can define outputs. It's a good idea to create an output for the informa
 > - Use an output to provide the resource's name. Then the parent template can create an `existing` resource with that name and can look up the secure value dynamically.
 > - Write the value to an Azure Key Vault secret. Have the parent template read the secret from the vault when it needs it.
 
-A parent template can use module outputs in variables, can use properties for other resource definitions, or can expose variables and properties as outputs itself. By exposing and using outputs throughout your Bicep files, you can create reusable sets of Bicep modules that can be shared with your team and reused across multiple deployments. 
+A parent template can use module outputs in variables, can use properties for other resource definitions, or can expose variables and properties as outputs itself. By exposing and using outputs throughout your Bicep files, you can create reusable sets of Bicep modules that can be shared with your team and reused across multiple deployments. It's also a good practice to add a meaningful description to outputs by using the `@description` attribute:
+
+::: code language="bicep" source="code/3-params-outputs.bicep" range="21-22" highlight="1" :::
 
 > [!TIP]
 > You can also use dedicated services to store, manage, and access the settings that your Bicep template creates. Key Vault is designed to store secure values. [Azure App Configuration](/azure/azure-app-configuration/overview?azure-portal=true) is designed to store other (non-secure) values.

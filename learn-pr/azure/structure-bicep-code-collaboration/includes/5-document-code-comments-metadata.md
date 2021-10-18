@@ -45,13 +45,23 @@ For example, your website's Bicep template might include a parameter for the URL
 > [!TIP]
 > When you work with parameter files and other JSON files that include comments, you usually need to use the *.jsonc* file extension instead of *.json*. This helps Visual Studio Code and other tools understand that comments are allowed.
 
+## Add descriptions to parameters, variables, and outputs
+
+When you create a parameter, variable, or output, you can apply the `@description()` decorator to help explain its purpose:
+
+::: code language="bicep" source="code/5-descriptions.bicep" highlight="1, 4, 7" :::
+
+Descriptions are more powerful than comments because, when someone uses the Visual Studio Code extension for Bicep, the descriptions are shown whenever someone hovers over a symbolic name. Also, when someone uses your Bicep file as a module, they'll see the descriptions you apply to your parameters.
+
 ## Add descriptions to resources
 
-Some resources support adding descriptions or other human-readable information into the resource itself. For example, many Azure Policy resources and Azure role-based access control (RBAC) role assignments include a `description` property, like this:
+It can also be helpful to add descriptions to the resources that you define. You can apply the `@description()` decorator to resources, too.
+
+Additionally, some resources support adding descriptions or other human-readable information into the resource itself. For example, many Azure Policy resources and Azure role-based access control (RBAC) role assignments include a description property, like this:
 
 ::: code language="bicep" source="code/5-role-assignment-description.bicep" highlight="8" :::
 
-It's a good idea to use this property to explain why you've created each role assignment. Whenever others look at your Bicep code, or when they audit the role assignments in Azure RBAC, they'll immediately understand the purpose of the role assignment.
+It's a good idea to use this property to explain why you've created each role assignment. The description is deployed to Azure with the resource, so anyone who audits your Azure environment's RBAC configuration will immediately understand the purpose of the role assignment.
 
 ## Apply resource tags
 
