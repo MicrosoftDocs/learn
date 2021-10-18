@@ -4,7 +4,7 @@ You need to ensure your company can maintain business continuity. Needs span fro
 
 ## Learning objectives
 
-You will: 
+You will:
 
  -  Explore snapshot strategies.
  -  Back up and restore the operating system for Type II SKUs.
