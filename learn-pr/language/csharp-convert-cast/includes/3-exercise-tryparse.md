@@ -28,9 +28,9 @@ We can use the bool to take action on the value (like performing some calculatio
 
 ### What is an out parameter?
 
-Methods can return a value upon completion or return "void", meaning they return no value. They can also, optionally, return values throughout parameters, which are defined just like any other input parameters but include the `out` keyword.
+Methods can return a value upon completion or return "void", meaning they return no value. They can also, optionally, return values through `out` parameters, which are defined just like an input parameters but include the `out` keyword.
 
-When calling a method with an out parameter, you must also use the keyword `out` before the variable, which will hold the value. So you have to define a variable before calling the method that will be used to store this out parameter value returned by the method. You can then use the value containing the out parameter throughout the rest of your code.
+When calling a method with an `out` parameter, you must also use the keyword `out` before the variable, which will hold the value. So, you have to define a variable before calling the method that will be used to store an out parameter value returned. You can then use the value containing the out parameter throughout the rest of your code.
 
 ### Step 1 - TryParse() a string into an int
 
