@@ -3,7 +3,7 @@ uid: learn.azure.plan-deploy-azure-arc-enabled-servers.what-are-arc-enabled-serv
 title: What is Azure Arc-enabled servers and its capabilities? 
 metadata:
   title: What is Azure Arc-enabled servers and its capabilities? 
-  description: TBD
+  description: Overview of Azure Arc-enabled servers and the basic architecture of the Connected Machine agent
   ms.date: 09/21/2021
   author: aurnovcy
   ms.author: aurnovc
