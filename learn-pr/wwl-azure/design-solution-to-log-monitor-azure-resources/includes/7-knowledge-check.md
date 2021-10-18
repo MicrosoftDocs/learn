@@ -6,4 +6,4 @@ Tailwind Traders has several workloads being migrated to Azure. It is important 
 
 - **Measure user experience and analyze users' behavior.** The reputation of the company depends on the performance, reliability, and security of its systems. It's critical to monitor your systems closely to identify any performance problems or attacks before they can affect users. 
 
-Choose the best response for each of the questions below. Then select Check your answers.
+Choose the best response for each of the questions below. Then select **Check your answers**.
