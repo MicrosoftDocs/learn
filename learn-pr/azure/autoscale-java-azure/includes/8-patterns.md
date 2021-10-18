@@ -32,7 +32,7 @@ Autoscaling isn't an instant solution. Simply adding resources to a system or ru
 
 ### Scale based on CPU
 
-Automatically scale out the number of service instances at the start of the work day when customer demand increases. At the end of the work day, automatically scale in the number of VM instances to minimize resource costs overnight when application use is low.
+Automatically scale out the number of service instances at the start of the work day when customer demand increases. At the end of the work day, automatically scale in the number of application instances to minimize resource costs overnight when application use is low.
 
 ### Scale differently on weekdays vs weekends
 
