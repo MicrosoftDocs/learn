@@ -1,6 +1,6 @@
 Azure Container Instance enables you to run a Docker image in Azure.
 
-You previously packaged and tested your web app as a local Docker image. You now want to make the web application available globally. To accomplish this, you run the image as an Azure Container Instance.
+In the previous exercise, you packaged and tested your web app as a local Docker image. Now, you want to use the output of that exercise, and make the web application available globally. To accomplish this, you run the image as an Azure Container Instance.
 
 In this exercise, you'll learn how to rebuild the image for the web app and upload it to Azure Container Registry. You'll use the Azure Container Instance service to run the image.
 
@@ -32,16 +32,16 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
 
 1. Select **Review + create**. When the *Validation passed* notification appears, select **Create**. Wait until the container registry has been deployed before continuing.
 
-1. Select **Go to resource**. Your *container registry* pane appears.
+1. Select **Go to resource**. The *Container registry* pane displays essentials about your container registry.
 
-1. In the resource menu, under **Settings**, select **Access keys**.
+1. In the resource menu, under **Settings**, select **Access keys**. The **Access keys** pane for your container registry appears.
 
-1. If the **Admin user** setting is disabled, select the slider to enable the **Admin user** access key. The **Username** and passwords appear for the current Container registry.
+1. If the **Admin user** setting is disabled, select the slider to enable the **Admin user** access key. The **Username** and passwords appear for your container registry.
  
 1. Make a note of the **Registry name**, **Login server**, **Username**, and **passwords** for your container registry.
 
     > [!NOTE]
-    > In this exercise, we enable the admin account access so that we can upload images and test the registry. In a production environment, you should disable the **Admin user** account access, and use Azure Active Directory Identity Protection as soon as you're satisfied that the registry is operating as expected.
+    > In this exercise, we enable the admin account access so that we can upload images and test the registry. In a production environment, it's important to disable the **Admin user** account access and use Azure Active Directory Identity Protection as soon as you're satisfied that the registry is operating as expected.
 
     :::image type="content" source="../media/7-access-keys.png" alt-text="Screenshot of the Access keys details.":::
 
@@ -80,7 +80,7 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
     docker push <registry-name>.azurecr.io/reservationsystem:latest
     ```
 
-    Wait until the upload completes. It will take a couple of minutes.
+    Wait until the upload completes. This process will take a several minutes to push all the objects of the image to your repository.
 
 ## Verify the contents of the registry
 
@@ -121,7 +121,7 @@ For the rest of the exercise, you'll return to the Azure portal.
     | Image | \<*registry-name*\>.azurecr.io/reservationsystem:latest |
     | Image registry login server | Enter the login server name for your registry |
     | Image registry username | Enter the username for your registry |
-    | Image registry password | Enter the password for your registry |
+    | Image registry password | Enter the password for your registry | 
     | OS Type | Linux |
     | Size | Leave the default *Size* set to **1 vcpu, 1.5 Gib memory, 0 gpus** |
 
@@ -153,7 +153,7 @@ For the rest of the exercise, you'll return to the Azure portal.
 
 1. When the container instance has been created, select **Go to resource**. Your container instance pane appears.
 
-1. On the **Overview** pane, find the fully qualified domain name of the container instance.
+1. On the **Overview** pane, find the fully qualified domain name (FQDN) of the container instance.
 
     :::image type="content" source="../media/7-container-fqdn.png" alt-text="Screenshot that shows the New pane in Azure portal showing the Container properties with the FQDN highlighted.":::
 
