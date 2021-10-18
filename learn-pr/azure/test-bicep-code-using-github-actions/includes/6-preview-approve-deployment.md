@@ -14,12 +14,9 @@ Resource Manager provides the what-if operation, which you can run on your Bicep
 
 :::image type="content" source="../media/6-stages-preview.png" alt-text="Diagram of a workflow that includes Lint, Validate, and Preview stages. The Preview stage executes a what-if operation against Azure." border="false":::
 
-You use the `az deployment group what-if` command from within your workflow definition to run the what-if step:
+The `azure/arm-deploy@v1` action does not currently support the what-if operation, so instead you can use the Azure CLI. Run the `az deployment group what-if` command from within your workflow definition:
 
 :::code language="yaml" source="code/6-what-if.yml" highlight="13-15" :::
-
-> [!NOTE]
-> The `azure/arm-deploy@v1` action does not currently support the what-if operation. In this module, we use the `azure/CLI@v1` action to run the `az deployment group what-if` command.
 
 ::: zone pivot="powershell"
 
@@ -31,13 +28,15 @@ The what-if operation doesn't make any changes to your environment. Instead, it 
 
 What-if sometimes shows that a resource will change when actually no change will happen. This is called *noise*. We're working to reduce these problems, but we need your help. [Please report these problems](https://aka.ms/whatifissues).
 
-After you see the output of the what-if operation, you can determine whether to continue on to the deployment. This step typically involves a human reviewing the output from the what-if command, and then making a decision about whether the identified changes are reasonable. If a human reviewer decides that the changes are reasonable, they can manually approve the workflow to continue.
+After you see the output of the what-if operation, you can determine whether to continue on to the deployment. This step typically involves a human reviewing the output from the what-if command, and then making a decision about whether the identified changes are reasonable. If a human reviewer decides that the changes are reasonable, they can manually approve the workflow run.
 
 To learn more about the what-if command, see the Microsoft Learn module [Preview Azure deployment changes by using what-if](/learn/modules/arm-template-whatif/).
 
 ## Environments
 
 In GitHub Actions, an *environment* represents the place to which your solution is deployed. Environments provide features that help when you work with complex deployments. In a future module, you'll learn more about environments and their features. For now, we'll focus on their ability to add required reviewers to your workflow.
+
+You create an environment by TODO.
 
 After you create an environment you can reference it in any jobs in your workflow:
 
@@ -46,7 +45,7 @@ After you create an environment you can reference it in any jobs in your workflo
 
 ## Environment protection rules
 
-After you create an environment, you can define *protection rules*. Protection rules are used to verify conditions that must be met before a workflow job can use the environment. A required reviewers protection rule is a type of check that requires a human to provide a manual approval. 
+After you create an environment, you can define *protection rules*. Protection rules are used to verify conditions that must be met before a job can use the environment. The *required reviewers* protection rule is a type of check that requires a human to provide a manual approval.
 
 Protection rules are defined on the environment, not the workflow. Authors of the workflow YAML file can't remove or add these protection rules. Only the administrators of an repository or the account owner can manage environments and their protection rules. 
 
@@ -54,22 +53,22 @@ Environment protection rules help to ensure that the right people are involved i
 
 ### How do environment protection rules work?
 
-Environment protection rules are evaluated just before a workflow job begins. When a workflows is about to run a job that is linked to an environment, it looks at the protection rules that are defined on the environment. Only if all these rules are satisfied will the corresponding job run.  
+Environment protection rules are evaluated just before a workflow job begins. When a workflows is about to run a job that is linked to an environment, it looks at the protection rules that are defined on the environment. The job only runs if if all of these rules are satisfied.
 
 An required reviewer is one type of protection rule. When you configure an required reviewer protection rule, you assign one or more users who need to approve the continuation of your workflow.
 
-Environments provide other types of protection rules, too. For example, you can add a delay or you can restrict which branches are allowed to run the workflow job. We discuss only required reviewers in this module, but we provide links to more information about other protection rules in the summary.
+Environments provide other types of protection rules, too. For example, you can  restrict the Git branches that can be deployed to specific environments. We discuss only the required reviewers rule in this module, but we provide links to more information about other protection rules in the summary.
 
-After your workflow begins and reaches a job that requires an reviewer, the workflow run pauses. All of the users who have been designated as reviewers are sent a message by email. They will also see an extra message asking for their review in the workflow run.
+After your workflow begins and reaches a job that requires an reviewer, the workflow run pauses. All of the users who have been designated as reviewers are sent a message in GitHub and by email.
 
-Reviewers can inspect the workflow logs, such as the changes that the what-if operation detects. Based on this information, they then approve or reject the change. If they approve the change, the workflow resumes. If they reject, or if they don't respond within 30 days, the job fails.
+Reviewers can inspect the workflow logs, such as the changes that the what-if operation detects. Based on this information, they then approve or reject the change. If they approve the change, the workflow resumes. If they reject, or if they don't respond within the timeout period, the job fails.
 
 :::image type="content" source="../media/6-stages-approval-check.png" alt-text="Diagram of a workflow that includes Lint, Validate, Preview, and Deploy stages, with an approval check before the Deploy stage." border="false":::
 
 ## The importance of good practices
 
-The environments feature in GitHub gives you the ability to link your jobs to an environment, and then the deployment job inherits the protection rules defined by the administrator of the environment. However, there's nothing to require that new workflows use environments. 
+The environments feature in GitHub gives you the ability to link your jobs to an environment, and then the deployment inherits the protection rules defined by the administrator of the environment. However, there's nothing to require that new workflows use environments. 
 
 It's important that you and your organization establish good practices to review your workflow definitions. An example is configuring your repository to require pull request reviews on any changes to your *main* branch by using branch protection rules. You'll learn more about this in a future module.
 
-You can also add *secrets* to an environment. That way the secret can only be used in a job that also uses the environment. Combining environment protection rules and secrets within an environment makes for a safer setup. 
+You can also add *secrets* to an environment. That way the secret can only be used in a job that also uses the environment. By combining environment protection rules and secrets, you can ensure your pipeline security is maintained.

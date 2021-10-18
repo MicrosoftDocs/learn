@@ -21,17 +21,17 @@ During the process, you'll:
 
 1. Below the lines that you just added, add a validation job:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="23-37" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="23-38" :::
 
-   This job defines steps to check out the code, sign in to your Azure environment, and use the `azure/arm-deploy@v1` command with the `Validate` deployment option.
+   This job defines steps to check out the code, sign in to your Azure environment, and use the `azure/arm-deploy@v1` action with the `Validate` deployment mode.
 
    Your workflow definition now has three jobs. The first lints your Bicep file, the second performs a preflight validation, and the third performs the deployment to Azure.
 
 1. Below the `runs-on` line in the `deploy` job, add a `needs` statement: 
 
-   :::code language="yaml" source="code/5-workflow.yml" range="41" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="42" :::
 
-   The `needs` statements indicates that the deploy job needs the lint and validate jobs to complete successfully before it is allowed to run.
+   The `needs` statements indicates that the deploy job depends on the lint and validate jobs completing successfully before it can run.
 
 1. Save the file.
 
@@ -75,19 +75,19 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
    :::image type="content" source="../media/5-workflow-last-run.png" alt-text="Screenshot of GitHub Actions with the link to the latest workflow run highlighted.":::
 
-   If the workflow is still running, wait until it's finished. Although  workflows automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   Notice that the workflow run now shows the three jobs that you defined in the YAML file. The **lint** and **validate** jobs run in parallel before the **deploy** job starts.
 
-2. Notice that the workflow run now shows the three jobs that you defined in the YAML file and that the **lint** and **validate** jobs run in parallel before the **deploy** job. Also notice that the **lint** and **validate** jobs have failed.
+1. If the workflow is still running, wait until it's finished. Although workflows automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+
+   Notice that the **lint** and **validate** jobs have failed.
 
    :::image type="content" source="../media/5-workflow-run-jobs-lint.png" alt-text="Screenshot of a workflow run in GitHub Actions, with the Lint job reporting failure.":::
 
-> Note to John: I thought it nice to show the default parallel run behavior. We could still change this to all sequential.
-
-3. Select the **lint** job to see its details.
+1. Select the **lint** job to see its details.
 
    :::image type="content" source="../media/5-workflow-run-lint-job-select.png" alt-text="Screenshot of a workflow run in GitHub Actions, with the name of the Lint job highlighted.":::
 
-4. Select the **Run Bicep linter** step to view the workflow log.
+1. Select the **Run Bicep linter** step to view the workflow log.
 
    :::image type="content" source="../media/5-workflow-run-lint-job-step.png" alt-text="Screenshot of the workflow log for the Lint job, with the step for running a Bicep linter highlighted.":::
 
@@ -129,13 +129,13 @@ Now that you've identified the problem, you can fix it in your Bicep file.
 
    Wait until the workflow run is finished. Although GitHub Actions automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-2. Notice that the **lint** job finished successfully, but the **validate** job is still failing.
+1. Notice that the **lint** job finished successfully, but the **validate** job is still failing.
 
    :::image type="content" source="../media/5-workflow-run-jobs-validate.png" alt-text="Screenshot of the workflow run, with the Lint job reporting success and the Validate job reporting failure.":::
 
-3. Select the **validate** job to see its details.
+1. Select the **validate** job to see its details.
 
-4. Select the **Run preflight validation** step to view the workflow log.
+1. Select the **Run preflight validation** step to view the workflow log.
 
    :::image type="content" source="../media/5-workflow-run-validate-job-step.png" alt-text="Screenshot of the workflow log for the Validate job, with the step for running preflight validation highlighted.":::
 
