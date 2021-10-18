@@ -33,7 +33,7 @@ The refactor phase consists of eight steps:
 1. Simplify expressions.
 1. Review child and extension resources.
 1. Modularize.
-1. Add comments.
+1. Add comments and descriptions.
 1. Follow Bicep best practices.
 
 ## Phase 4: Test

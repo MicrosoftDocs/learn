@@ -67,7 +67,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
         <Project Sdk="Microsoft.NET.Sdk">
             <PropertyGroup>
                 <OutputType>Exe</OutputType>
-                <TargetFramework>netcoreapp2.2</TargetFramework>
+                <TargetFramework>netcoreapp3.1</TargetFramework>
             </PropertyGroup>
             <PropertyGroup>
                 <LangVersion>latest</LangVersion>
