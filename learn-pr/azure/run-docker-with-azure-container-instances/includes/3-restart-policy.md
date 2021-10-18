@@ -35,7 +35,7 @@ To see the restart policy in action, create a container instance from the **azur
     az container show \
       --resource-group learn-deploy-aci-rg \
       --name mycontainer-restart-demo \
-      --query containers[0].instanceView.currentState.state
+      --query "containers[0].instanceView.currentState.state"
     ```
 
     Repeat the command until it reaches the **Terminated** status.
