@@ -3,7 +3,7 @@ uid: learn.azure.plan-deploy-azure-arc-enabled-servers.planning-for-secure-confi
 title: Planning considerations for a secure configuration
 metadata:
   title: Planning considerations for a secure configuration
-  description: TBD
+  description: Description of the identity, policy, and networking considerations for a secure deployment to Azure Arc-enabled servers. 
   ms.date: 09/21/2021
   author: aurnovcy
   ms.author: aurnovc
