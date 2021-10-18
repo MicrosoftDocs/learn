@@ -1,6 +1,6 @@
 In this exercise, you'll create an AKS cluster that uses several nodes to meet the demand of many customers using the service. You decide to use the *single control plane and multiple nodes* architecture because it provides the best way to create and manage workload resources.
 
-AKS supports both Linux and Windows node pools via the Portal or Azure CLI, however, if you're going to use windows node pools, the cluster must be created with additional **pre-requisites** and commands. Please make a selection below, based on which type of node pools you want to add.
+AKS supports both Linux and Windows node pools via the Portal or Azure CLI, however, if you're going to use windows node pools, the cluster must be created with additional **prerequisites** and commands. Please make a selection below, based on which type of node pools you want to add.
 
 #### [Linux](#tab/linux)
 
@@ -9,8 +9,9 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
 >[!NOTE]
 > The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module. Let's go!
 
-1. Start by **activating the Azure sandbox above.**
-1. Once it's activated, sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
+1. Start by **activating the Azure sandbox at the top of this exercise.**
+ 
+1. When the sandbox is activated, sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
 
 1. Create variables for the configuration values you'll reuse throughout the exercises.
 
@@ -52,7 +53,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
 > [!CAUTION]
 > If you're using **Windows nodes** then the Azure Sandbox is **not supported**. Please use your own Azure subscription to continue.
 >
-> You can still use this page to follow the tutorial, however, you **will not be able to create AKS clusters using the provided cloud shell.**
+> You can still use this tutorial; however, you **will not be able to create AKS clusters using the Azure Cloud Shell that is provided on the right.**
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -91,9 +92,9 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
         --windows-admin-username localadmin
     ```
 
-   The above command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster will have two nodes defined by the `--node-count` parameter. We're using only two nodes here for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. These nodes will be part of **System** mode.
+   The command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster will have two nodes defined by the `--node-count` parameter. We're using only two nodes in this exercise for cost considerations. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. These nodes will be part of **System** mode.
 
-    The `--windows-admin-username` parameter is used to setup administrator credentials for Windows containers. The above command will prompt to set a password at the command line. The password has to meet [**Windows Server password requirements**](/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements#reference).
+    The `--windows-admin-username` parameter is used to setup administrator credentials for Windows containers, and prompts the user to set a password at the command line. The password has to meet [**Windows Server password requirements**](/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements#reference).
 
 1. Run the `az aks nodepool add` command to add additional node pool of Windows operating system.
 
@@ -107,9 +108,9 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
         --os-type Windows
     ```
 
-    The above command adds a new node pool (**User mode**) to an existing AKS cluster (created in previous command). This new node pool can be used to host applications and workloads, instead of using **System** node pool, which gets created during previous command `az aks create`.
+    The command adds a new node pool (**User mode**) to an existing AKS cluster (created in previous command). This new node pool can be used to host applications and workloads, instead of using **System** node pool, which was created in previous step using `az aks create`.
 
-    The `--os-type` parameter is used to specify operating system of the node pool. If not specified, it will use Linux as operating system for the nodes.
+    The `--os-type` parameter is used to specify operating system of the node pool. If not specified, the command will use Linux as operating system for the nodes.
 
 ---
 
@@ -129,7 +130,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
     kubectl get nodes
     ```
 
-   You should receive a list of four available nodes for two node pools.
+   The output should list four available nodes for two node pools.
 
 #### [Linux](#tab/linux)
 
