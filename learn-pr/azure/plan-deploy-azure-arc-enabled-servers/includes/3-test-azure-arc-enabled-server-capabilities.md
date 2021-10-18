@@ -88,9 +88,7 @@ To install with the script, you must run the downloaded script from PowerShell i
 
 1. Copy the script that you downloaded in the previous steps to a known location on your VM.
 
-1. Open an elevated PowerShell command prompt.
-
-    Note: The script only supports running from a 64-bit version of Windows PowerShell.
+1. Open an elevated PowerShell command prompt. The script only supports running from a 64-bit version of Windows PowerShell.
 
 1. Change to the folder or share where you copied the script, and execute it on the server by running the `./OnboardingScript.ps1` script.
 
