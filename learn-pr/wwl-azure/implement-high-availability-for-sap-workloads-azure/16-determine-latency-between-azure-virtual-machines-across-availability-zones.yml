@@ -4,7 +4,7 @@ title: Determine latency between Azure virtual machines across Availability Zone
 metadata:
   title: Determine latency between Azure virtual machines across Availability Zones
   description: "Determine latency between Azure virtual machines across Availability Zones"
-  ms.date: 10/13/2021
+  ms.date: 10/18/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial

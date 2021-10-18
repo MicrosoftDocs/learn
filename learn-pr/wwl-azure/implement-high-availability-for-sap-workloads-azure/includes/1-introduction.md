@@ -11,7 +11,7 @@ In addition, you must ensure the availability solutions will be compatible with 
 
 ## Learning objectives
 
-You will: 
+You will:
 
  -  Explore high availability and disaster recovery support of Azure for SAP workloads.
  -  Explore high availability of SAP workloads.
