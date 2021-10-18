@@ -54,4 +54,4 @@ This step isn't required when using the sandbox. However, if you're running this
 
 - [Get Started With Bitnami Charts Using The Microsoft Azure Marketplace](https://docs.bitnami.com/azure/get-started-charts-marketplace/)
 
-- [ASP.NET Core](https://dotnet.microsoft.com/apps/aspnet)
+- [ASP.NET](https://dotnet.microsoft.com/apps/aspnet)

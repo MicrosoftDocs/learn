@@ -42,7 +42,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. On the Azure portal menu, select **More services**, then search for and select **Monitor**. The Monitor **Overview** pane appears.
 
-1. In the Moniyot menu, select **Alerts**.
+1. In the left menu pane, select **Alerts**. The **Monitor | Alerts** pane appears.
 
 1. In the command bar, select **New alert rule**. The **Create alert rule** pane appears.
 
