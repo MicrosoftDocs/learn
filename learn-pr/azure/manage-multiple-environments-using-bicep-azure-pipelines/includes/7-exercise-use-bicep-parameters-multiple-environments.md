@@ -1,12 +1,14 @@
-Now that your pipeline deploys to both of your environments, you're ready to integrate with the third-party product reviews API. Your website team has provided you with the API keys and URLs that your website should use to access the service, and there are different values for your test and production environments to use. In this unit, you'll update your pipeline to configure each of your environments with the correct product reviews API settings.
+Now that your pipeline deploys to both of your environments, you're ready to integrate with the third-party API for product reviews. 
 
-During the process you'll:
+Your website team has provided you with the API keys and URLs that your website should use to access the service. There are different values for your test and production environments to use. In this unit, you'll update your pipeline to configure each of your environments with the correct settings for the product review API.
+
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Create variable groups for each of your environments.
 > * Update the pipeline so it picks the correct variable group for each environment instead of using template parameters.
-> * Update your Bicep file to propagate the settings you need for the product review API.
-> * Update the variable group and pipeline to set the values for the product review API settings.
+> * Update your Bicep file to propagate the settings that you need for the product review API.
+> * Update the variable group and pipeline to set the values for the product review API's settings.
 > * Review the pipeline results and the changes to your Azure environment.
 
 ## Add variable groups
@@ -15,11 +17,11 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. In your browser, go to **Pipelines** > **Library**.
 
-   :::image type="content" source="../media/7-library.png" alt-text="Screenshot of Azure DevOps showing the Library menu item under the Pipelines category.":::
+   :::image type="content" source="../media/7-library.png" alt-text="Screenshot of Azure DevOps that shows the Library menu item under the Pipelines category.":::
 
 1. Select the **+ Variable group** button.
 
-   :::image type="content" source="../media/7-variable-groups-new.png" alt-text="Screenshot of the Azure DevOps library page, with the + variable group button highlighted.":::
+   :::image type="content" source="../media/7-variable-groups-new.png" alt-text="Screenshot of the Azure DevOps library page and the button for adding a variable group.":::
 
 1. Enter **ToyWebsiteTest** as the variable group name.
 
@@ -30,13 +32,13 @@ Because you're adding more parameters that vary between each environment, you de
    | EnvironmentType | Test |
    | ResourceGroupName | ToyWebsiteTest |
 
-   Notice you don't define the service connection name in the variable group. Service connection names have special rules about how they can be specified. In this module, you'll use pipeline template parameters.
+   Notice that you don't define the service connection name in the variable group. Service connection names have special rules about how they can be specified. In this module, you'll use pipeline template parameters.
 
-   :::image type="content" source="../media/7-variable-group-test-v1.png" alt-text="Screenshot of the test variable group, with the variable group name and variables highlighted.":::
+   :::image type="content" source="../media/7-variable-group-test-v1.png" alt-text="Screenshot of the test variable group and variables.":::
 
 1. Select **Save**.
 
-1. Click the **Back** button in your browser to return to the variable group list.
+1. Select the **Back** button in your browser to return to the list of variable groups.
 
 1. Add another variable group named **ToyWebsiteProduction**. Create two variables with the following settings:
 
@@ -45,7 +47,7 @@ Because you're adding more parameters that vary between each environment, you de
    | EnvironmentType | Production |
    | ResourceGroupName | ToyWebsiteProduction |
 
-   :::image type="content" source="../media/7-variable-group-production-v1.png" alt-text="Screenshot of the production variable group, with the variable group name and variables highlighted.":::
+   :::image type="content" source="../media/7-variable-group-production-v1.png" alt-text="Screenshot of the production variable group and variables.":::
 
    Notice that the variable names are the same for both environments, but the values are different.
 
@@ -55,7 +57,7 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. In Visual Studio Code, open the *deploy.yml* file.
 
-1. At the top of the file, remove the `resourceGroupName` and `serviceConnectionName` parameters. Don't delete the `environmentType` parameter:
+1. At the top of the file, remove the `resourceGroupName` and `serviceConnectionName` parameters. Don't delete the `environmentType` parameter.
 
    :::code language="yaml" source="code/7-deploy-1.yml" range="1-3" :::
 
@@ -79,7 +81,7 @@ Because you're adding more parameters that vary between each environment, you de
 
    :::code language="yaml" source="code/7-deploy-1.yml" range="51-79" highlight="6-7, 18, 25, 27" :::
 
-1. Verify your *deploy.yml* file now looks like the following:
+1. Verify that your *deploy.yml* file now looks like the following code:
 
    :::code language="yaml" source="code/7-deploy-1.yml" :::
 
@@ -89,7 +91,7 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. Open the *azure-pipelines.yml* file.
 
-1. Update the stages that use templates to remove the `resourceGroupName` and `serviceConnectionName` parameters, leaving only the `environmentType` parameter:
+1. Update the stages that use templates to remove the `resourceGroupName` and `serviceConnectionName` parameters. Leave only the `environmentType` parameter.
 
    :::code language="yaml" source="code/7-pipeline.yml" highlight="18-19, 23-24" :::
 
@@ -118,22 +120,22 @@ Because you're adding more parameters that vary between each environment, you de
 
 ## Update the variable groups
 
-1. In your browser, navigate to **Pipelines** > **Library**, and open the **ToyWebsiteTest** variable groups.
+1. In your browser, go to **Pipelines** > **Library**, and open the **ToyWebsiteTest** variable groups.
 
-1. Add the following variables.
+1. Add the following variables:
 
    | Name | Value |
    |-|-|
    | ReviewApiKey | sandboxsecretkey |
    | ReviewApiUrl | https://sandbox.contoso.com/reviews |
 
-1. Select the padlock icon next to the **ReviewApiKey** variable. This tells Azure Pipelines to treat the variable's value securely.
+1. Select the padlock icon next to the **ReviewApiKey** variable. This step tells Azure Pipelines to treat the variable's value securely.
 
-   :::image type="content" source="../media/7-variable-group-test-v2.png" alt-text="Screenshot of the test variable group, with the secret variable button highlighted.":::
+   :::image type="content" source="../media/7-variable-group-test-v2.png" alt-text="Screenshot of the test variable group and the secret variable button.":::
 
 1. Save the variable group.
 
-   :::image type="content" source="../media/7-variable-group-test-v3.png" alt-text="Screenshot of the test variable group, with the variable group name and updated variables highlighted.":::
+   :::image type="content" source="../media/7-variable-group-test-v3.png" alt-text="Screenshot of the test variable group with updated variables.":::
 
 1. Update the **ToyWebsiteProduction** variable group to add a similar set of variables:
 
@@ -144,7 +146,7 @@ Because you're adding more parameters that vary between each environment, you de
 
    Remember to select the padlock icon next to the **ReviewApiKey** variable.
 
-   :::image type="content" source="../media/7-variable-group-production-v2.png" alt-text="Screenshot of the production variable group, with the variable group name and updated variables highlighted.":::
+   :::image type="content" source="../media/7-variable-group-production-v2.png" alt-text="Screenshot of the production variable group with updated variables.":::
 
 1. Save the variable group.
 
@@ -157,7 +159,7 @@ Because you're adding more parameters that vary between each environment, you de
    :::code language="yaml" source="code/7-deploy-2.yml" range="7-29" highlight="21-23" :::
 
    > [!IMPORTANT]
-   > Ensure you add the `\` at the end of the line that sets the `environmentType` parameter value, and on the subsequent line. The `\` character indicates that there are further lines that are part of the same command.
+   > Be sure to add the backslash (`\`) at the end of the line that sets the `environmentType` parameter value, and on the subsequent line. The `\` character indicates that further lines are part of the same command.
 
 1. Make the same change to the `PreviewAzureChanges` job:
 
@@ -167,7 +169,7 @@ Because you're adding more parameters that vary between each environment, you de
 
    :::code language="yaml" source="code/7-deploy-2.yml" range="55-85" highlight="27-29" :::
 
-1. Verify your *deploy.yml* file now looks like the following:
+1. Verify that your *deploy.yml* file now looks like the following code:
 
    :::code language="yaml" source="code/7-deploy-2.yml" :::
 
@@ -181,13 +183,13 @@ Because you're adding more parameters that vary between each environment, you de
 
 ## Review the deployment results
 
-1. In your browser, navigate to **Pipelines**.
+1. In your browser, go to **Pipelines**.
 
 1. Select the most recent run of your pipeline.
 
    Wait for the pipeline to pause before the **Deploy (Production Environment)** stage. It might take a few minutes for the pipeline to reach this point.
 
-1. Approve the deployment to the production environment by selecting the **Review** > **Approve**.
+1. Approve the deployment to the production environment by selecting **Review** > **Approve**.
 
    Wait for the pipeline to finish running.
 
@@ -197,25 +199,25 @@ Because you're adding more parameters that vary between each environment, you de
 
    Notice that you now see multiple deployments in the environment's history.
 
-1. In your browser navigate to the [Azure portal](https://portal.azure.com?azure-portal=true). 
+1. In your browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true). 
 
-1. Navigate to the **ToyWebsiteProduction** resource group.
+1. Go to the **ToyWebsiteProduction** resource group.
 
-1. In the list of resources, open the App Service app.
+1. In the list of resources, open the Azure App Service app.
 
    Select **Configuration**.
 
-   :::image type="content" source="../media/7-app-service-configuration.png" alt-text="Screenshot of the Azure portal showing the App Service app, with the Configuration menu item highlighted.":::
+   :::image type="content" source="../media/7-app-service-configuration.png" alt-text="Screenshot of the Azure portal that shows the App Service app and the Configuration menu item.":::
 
 1. Select **Show values**.
 
-   :::image type="content" source="../media/7-app-service-show-values.png" alt-text="Screenshot of the Azure portal showing the App Service app settings, with the Show values button highlighted.":::
+   :::image type="content" source="../media/7-app-service-show-values.png" alt-text="Screenshot of the Azure portal that shows the App Service app settings and the button for showing values.":::
 
-1. Notice that the production site's values for the **ReviewApiKey** and **ReviewApiUrl** settings are set to the values you configured in the production variable group.
+1. Notice that the production site's values for the **ReviewApiKey** and **ReviewApiUrl** settings are set to the values that you configured in the production variable group.
 
-   :::image type="content" source="../media/7-app-service-settings.png" alt-text="Screenshot of the Azure portal showing the App Service app settings, with the configuration setting values highlighted.":::
+   :::image type="content" source="../media/7-app-service-settings.png" alt-text="Screenshot of the Azure portal that shows the App Service app settings and the configuration settings.":::
 
-1. Compare this to the configuration settings for the App Service app in the **ToyWebsiteTest** resource group. Notice that it uses a different set of values.
+1. Compare the current values to the configuration settings for the App Service app in the **ToyWebsiteTest** resource group. Notice that the values are different.
 
 ## Clean up the resources
 

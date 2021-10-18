@@ -3,7 +3,7 @@ uid: learn.azure.manage-multiple-environments-using-bicep-azure-pipelines
 metadata:
   moduleType: standard
   title: Manage multiple environments by using Bicep and Azure Pipelines
-  description: Build a deployment pipeline for Bicep infrastructure as code templates. Deploy to multiple environments by using pipeline template YAML files. Learn how to provide environment-specific parameters from your pipeline.
+  description: Build a deployment pipeline for Bicep IaC templates. Deploy to multiple environments by using pipeline template YAML files. Learn how to provide environment-specific parameters from your pipeline.
   ms.date: 10/13/2021
   author: vermegi
   ms.author: givermei
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Manage multiple environments by using Bicep and Azure Pipelines
 summary: |
-  Deploy your Bicep code to multiple environments to improve the quality of your deployments. Use pipeline templates to reduce code duplication, and set different parameter values for each environment.
+  Deploy your Bicep code to multiple environments to improve the quality of your deployments. Use pipeline templates to reduce code duplication, and set parameter values for each environment.
 abstract: |
   After completing this module, you'll be able to:
     - Deploy Bicep files to multiple Azure environments from a pipeline
@@ -25,16 +25,16 @@ prerequisites: |
   - YAML pipelines through Azure Pipelines, including multistage pipelines and service connections.
   
   To work through the exercises in the module, you'll need:
-  - An Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
-  - An Azure DevOps account and organization.
+  - An Azure account that can create resource groups, Azure Active Directory applications, and service principals.
+  - An Azure DevOps organization and account.
   
   You'll also need the following installed locally:
   
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
-  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
-  - The [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines).
-  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).
-  - [Git](https://git-scm.com/download?azure-portal=true).
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
+  - The [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines)
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version
+  - [Git](https://git-scm.com/download?azure-portal=true)
 iconUrl: /learn/achievements/bicep/manage-multiple-environments-using-bicep-azure-pipelines.svg
 levels:
   - intermediate

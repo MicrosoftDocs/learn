@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: Knowledge check.
+  description: Check your knowledge.
   ms.date: 10/13/2021
   author: vermegi
   ms.author: givermei
@@ -18,9 +18,9 @@ quiz:
   - content: |
       When you try to run the pipeline, Azure Pipelines gives you an error. What's the most likely cause of the problem?
     choices:
-    - content: The identifiers for each stage aren't unique.
+    - content: The identifier of each stage isn't unique.
       isCorrect: true
-      explanation: Correct. Currently both environments define a stage named *Deploy*. You should add the environment name into the stage identifier so that the identifier are unique.
+      explanation: Correct. Currently, both environments define a stage with the identifier *Deploy*. You should add the environment name into the stage identifier so that the identifiers are unique.
     - content: The `trigger` property is set to `none`.
       isCorrect: false
       explanation: |
@@ -30,17 +30,17 @@ quiz:
       explanation: Incorrect. `ubuntu-latest` is a valid agent pool name.
 
   - content: |
-      How could you improve the security of this pipeline?
+      How can you improve the security of this pipeline?
     choices:
     - content: Use separate service connections for each environment.
       isCorrect: true
       explanation: Correct. It's good security practice to use separate service connections and service principals to deploy to each environment.
-    - content: Add a condition to only deploy when the environment name is `Production`.
+    - content: Add a condition to deploy only when the environment name is `Production`.
       isCorrect: false
       explanation: Incorrect. Your deployment pipeline needs to deploy to all environments, not just to production.
     - content: Create a new Azure role definition.
       isCorrect: false
-      explanation: Incorrect. You don't generally need to define custom Azure roles for your deployments.
+      explanation: Incorrect. You generally don't need to define custom Azure roles for your deployments.
 
   - content: |
       You need to add a new environment named *Integration* to the pipeline. Which of these actions should you take as part of adding the new environment?
@@ -53,7 +53,7 @@ quiz:
       explanation: Incorrect. When you're adding an environment to an existing pipeline, you don't need to add a new template file.
     - content: Add a new Bicep parameters file.
       isCorrect: true
-      explanation: Correct. You'll need to create a new Bicep parameters file named *parameters.Integration.json* and commit it to your Git repository.
+      explanation: Correct. You need to create a new Bicep parameters file named *parameters.Integration.json* and commit it to your Git repository.
 
   - content: |
       You need to add a new parameter to your deployment that contains a connection string and password to access a database. Which of these approaches should you consider?
