@@ -3,7 +3,7 @@ uid: learn.azure.plan-deploy-azure-arc-enabled-servers.test-azure-arc-enabled-se
 title: Test Azure Arc-enabled servers capabilities using Azure VMs
 metadata:
   title: Test Azure Arc-enabled servers capabilities using Azure VMs
-  description: TBD
+  description: Walkthrough of how to prepare and onboard a Windows VM on Azure to Azure Arc-enabled servers.
   ms.date: 09/21/2021
   author: aurnovcy
   ms.author: aurnovc
