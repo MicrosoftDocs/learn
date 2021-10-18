@@ -10,7 +10,7 @@ In this module, you will learn how to set up and configure the NVIDIA DeepStream
 
 :::image type="content" source="../media/composer-test1.png" alt-text="NVIDIA DeepStream Graph Composer Test1 Application Example" lightbox="../media/composer-test1.png":::
 
-## Scenario: Publish a DeepStream Graph Composer Workload into an Azure Container Registry for Mass Distribution
+## Scenario: Publish a DeepStream Graph Composer workload into an Azure Container Registry for mass distribution
 
 Your boss is impressed with the NVIDIA DeepStream SDK and its ability to enable custom development of Intelligent Video Applications.  The boss wants to begin rolling out a proof of concept to testers in select locations for evaluation. You have heard about a recent development tool, the "NVIDIA DeepStream Graph Composer", which allows you to not only create visualizations of IVA solutions, but also export them as containerized workloads. You've decided to employ a container-based strategy for development of the proof of concept to ensure that the workload runs as expected on any compatible hardware target.
 
