@@ -68,7 +68,7 @@ To complete the component that sends messages about sales:
 1. Within that method, locate the following line of code.
 
     ```C#
-    // Create a ServiceBus Client here
+    // Create a Service Bus client here
     ```
 
 1. Replace that line of code with the following code.
@@ -99,7 +99,7 @@ To complete the component that sends messages about sales:
 
     ```C#
     string messageBody = $"$10,000 order for bicycle parts from retailer Adventure Works.";
-    ServiceBusMessage message = new ServiceBusMessage(Encoding.UTF8.GetBytes(messageBody));
+    var message = new ServiceBusMessage(Encoding.UTF8.GetBytes(messageBody));
     ```
 
 1. Insert the following code on a new line directly below what you just added to display the message in the console.
@@ -155,7 +155,7 @@ To complete the component that sends messages about sales:
                 try
                 {
                     string messageBody = $"$10,000 order for bicycle parts from retailer Adventure Works.";
-                    ServiceBusMessage message = new ServiceBusMessage(Encoding.UTF8.GetBytes(messageBody));
+                    var message = new ServiceBusMessage(Encoding.UTF8.GetBytes(messageBody));
                     Console.WriteLine($"Sending message: {messageBody}");
                     await sender.SendMessageAsync(message);
                 }
@@ -211,13 +211,13 @@ To complete the component that sends messages about sales:
 1. Within that method, locate the following line of code.
 
     ```C#
-    // Create a ServiceBus Client that will authenticate using a connection string
+    // Create a Service Bus client that will authenticate using a connection string
     ```
 
-1. To create a ServiceBus Client, replace that line with the following code.
+1. To create a Service Bus client, replace that line with the following code.
 
     ```C#
-    ServiceBusClient client = new ServiceBusClient(ServiceBusConnectionString);
+    var client = new ServiceBusClient(ServiceBusConnectionString);
     ```
 
 1. Locate the following line of code.
@@ -256,7 +256,7 @@ To complete the component that sends messages about sales:
 1. To configure the handler, replace that line with the following code.
 
     ```C#
-    processor.ProcessMessageAsync += ProcessMessagesAsync
+    processor.ProcessMessageAsync += ProcessMessagesAsync;
     processor.ProcessErrorAsync += ExceptionReceivedHandler;
     ```
 
@@ -327,7 +327,7 @@ To complete the component that sends messages about sales:
                 Console.WriteLine("Press ENTER on the keyboard to exit after receiving all the messages.");
                 Console.WriteLine("======================================================");
     
-                ServiceBusClient client = new ServiceBusClient(ServiceBusConnectionString);
+                var client = new ServiceBusClient(ServiceBusConnectionString);
 
                 var messageHandlerOptions = new ServiceBusProcessorOptions
                 {
