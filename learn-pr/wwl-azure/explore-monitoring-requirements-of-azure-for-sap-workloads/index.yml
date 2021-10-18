@@ -3,7 +3,7 @@ uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads
 metadata:
   title: Explore monitoring requirements of Azure for SAP workloads
   description: "This module covers monitoring of data from several Azure systems and tools to support SAP on Azure workloads. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 10/13/2021
+  ms.date: 10/18/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
