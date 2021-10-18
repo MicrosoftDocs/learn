@@ -2,7 +2,12 @@ In this exercise, you'll configure a sample Microservice architecture to be read
 
 ## The sample microservice application
 
-The PetClinic application is decomposed into four core microservices. All of them are independently deployable applications organized by business domains.
+In this exercise, you'll clone a Git repository and run a script that sets-up an Azure Spring Cloud microservice application and an Azure Database for MySQL.
+
+Your application is set up with autoscaling to respond to changes in the environment by adding or removing Azure Spring Cloud instances and balancing the load between them. Autoscaling doesn't have any effect on the CPU power, memory, or storage capacity of the application instances powering the app, it only changes the number of application instances.
+
+The script deploys a well-known PetClinic microservice application and is built around small independent services, communicating over HTTP via a REST API.
+The sample application is decomposed into four core microservices. All of them are independently deployable applications organized by business domains.
 
 - Customers service: Contains general user input logic and validation including pets and owners information (Name, Address, City, Telephone).
 - Visits service: Stores and shows visits information for each pets' comments.
@@ -25,7 +30,7 @@ Next, in the bash window, run the following commands to clone the sample reposit
 
 When you run the above command, a window will pop up with the file `deployPetClinicApp.sh` ready to be edited in the built-in Azure editor.
 
-1. At the top of the `deployPetClinicApp.sh` file, edit the following variables to customize the scripts parameters for your environment. For all resource names please use lowercase letters - you may use hyphens and numbers also:
+1. At the top of the `deployPetClinicApp.sh` file, edit the following variables to customize the scripts parameters for your environment. For all resource names use lowercase letters - you may use hyphens and numbers also:
 
    | Variable | Description |
    |-|-|
