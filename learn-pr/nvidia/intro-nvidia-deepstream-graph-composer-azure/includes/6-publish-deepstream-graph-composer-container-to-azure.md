@@ -8,14 +8,13 @@ This preparation will also set the stage for potential deployment using [Azure I
 
 1. Navigate to your newly deployed Azure Container Registry within the Azure portal:
 
-    ![Azure Container Registry Overview](../media/overview.png)
-
+    :::image type="content" source="../media/overview.png" alt-text="Azure Container Registry Overview":::
 
     You will notice your Azure Container Registry has a property of `Login server` that refers to the url for accessing your service remotely, this property ends in `azurecr.io`.  Take note of this value as we will refer to it shortly.
 
 1. Next, select the `Access keys` section on the left-hand side under `Settings`, and enable the option for `Admin user`.  This operation will grant us the ability to authenticate against our Azure Container Registry to allow access from the Docker instance running on our host machine.  Again, take note of the values for `Login server`, `Username`, and `password` as they will be used in the next step.
 
-    ![Azure Container Registry Access Keys](../media/access-keys.png)
+    :::image type="content" source="../media/access-keys.png" alt-text="Azure Container Registry Access Keys":::
 
 1. We are now ready to authenticate against our Azure Container Registry and grant access to the host's Docker instance.  To accomplish this step, run the following commands in a terminal session on the host machine:
 
@@ -43,7 +42,7 @@ This preparation will also set the stage for potential deployment using [Azure I
 
 1. Await for the push to complete, then navigate back to your Azure Container Registry in the Azure portal and verify that the image has been uploaded by selecting `Repositories` under the `Services` section on the left-hand side of the overview page.  You should see your freshly pushed `deepstream_test1_dgpu:v1` image in the repository list as shown below:
 
-    ![Azure Container Registry Repo list](../media/repo.png)
+    :::image type="content" source="../media/repo.png" alt-text="Azure Container Registry Repo list":::
 
 1. Finally, if you wish to execute and run this image using the image contained in the Azure Container Registry you can execute the following commands in a terminal on a compatible host:
 
