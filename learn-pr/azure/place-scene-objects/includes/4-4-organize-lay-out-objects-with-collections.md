@@ -6,11 +6,11 @@ You can use this type of collection on a set of child objects to organize them w
 
 ## Scatter Object Collection
 
-This type of collection is simply a set of child objects randomly laid out within a radius. To run the randomization, you press **update collection**. Feel free to run the update as many times as you want, until you get the desired result.
+This type of collection is simply a set of child objects randomly laid out within a radius. To run the randomization, you select **update collection**. Feel free to run the update as many times as you want, until you get the desired result.
 
 ## Tile Grid Object Collection
 
-You can use this type of collection to lay game objects of consistent size in a basic grid layout. Tile Grid Object Collection is helpful when you want to place game objects on the scene methodically. For example, you might want to place objects lined up at regular intervals; it will be a tedious job to monitor the position of all the objects concerning other objects, and then place them. Instead of doing this manually, you can use Object Collection Scripts to make this task easier.
+You can use this type of collection to lay game objects of consistent size in a basic grid layout. Tile Grid Object Collection is helpful when you want to place game objects on the scene methodically. For example, you might want to place objects lined up at regular intervals. It will be a tedious job to monitor the position of all the objects concerning other objects, and then place them. Instead of doing this manually, you can use Object Collection Scripts to make this task easier.
 
 ## Difference between Prefabs and Collections
 
