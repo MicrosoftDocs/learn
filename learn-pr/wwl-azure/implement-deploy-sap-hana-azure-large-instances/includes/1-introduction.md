@@ -4,7 +4,7 @@ As the SAP on Azure architect for your company, you have chosen your deployment 
 
 ## Learning objectives
 
-You will: 
+You will:
 
  -  Deploy SAP HANA on Azure (Large Instances) units.
  -  Connect Azure virtual machines to HANA Large Instances.
