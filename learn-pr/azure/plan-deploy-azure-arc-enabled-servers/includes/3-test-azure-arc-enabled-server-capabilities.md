@@ -2,7 +2,7 @@ As you prepare to deploy across Wide World Importers' thousands of machines, you
 
 ## Hypothetical environment description
 
-For this discusion, we'll assume that you already have a Windows Server Azure VM. The version of Windows Server deployed in Azure should be Windows Server 2008 R2 SP1 and later versions (including Server Core).
+For this discussion, we'll assume that you already have a Windows Server Azure VM. The version of Windows Server deployed in Azure should be Windows Server 2008 R2 SP1 and later versions (including Server Core).
 
 That being said, Azure Arc-enabled servers also supports the following Linux distributions:
 
