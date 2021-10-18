@@ -3,7 +3,7 @@ uid: learn.azure.plan-deploy-azure-arc-enabled-servers.explore-methods-to-onboar
 title: Explore different methods to onboard servers at scale to Azure Arc
 metadata:
   title: Explore different methods to onboard servers at scale to Azure Arc
-  description: TBD
+  description: Description of the different methods for onboarding a single machine or multiple machines to Azure Arc-enabled servers. 
   ms.date: 09/21/2021
   author: aurnovcy
   ms.author: aurnovc
