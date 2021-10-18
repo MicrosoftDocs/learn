@@ -1,15 +1,16 @@
 Each module that you create should have a clear purpose. Think of a module as having a *contract*. It accepts a set of parameters, creates a set of resources, and might provide some outputs back to the parent template. Whoever uses the module shouldn't need to worry about how it works - just that it does what they expect. 
 
-When you plan a module, consider both:
+When you plan a module, consider:
 
 - What you need to know to be able to fulfill the module's purpose
-- What anyone who consumes your module will expect to provide and then to be able to access as outputs
+- What anyone who consumes your module will expect to provide
+- What anyone who consumes your module will expect to access as outputs
 
 ## Module parameters
 
 Think about the parameters that your module accepts, and whether each parameter should be optional or required. 
 
-When you create parameters for templates, it's a good practice to add default parameters where you can. In modules, it's not always as important to add default parameters because your module will be used by a parent template that might use its own default parameters. If you have similar parameters in both locations, both with default values, it can be hard for your template's users to figure out which default value will be applied and to enforce consistency. It's often better to leave the default value on the parent template and remove it from the module.
+When you create parameters for templates, it's a good practice to add default parameters where you can. In modules, it's not always as important to add default parameters because your module will be used by a parent template that might use its own default parameters. If you have similar parameters in both files, both with default values, it can be hard for your template's users to figure out which default value will be applied and to enforce consistency. It's often better to leave the default value on the parent template and remove it from the module.
 
 You should also think about how you manage parameters that control the SKUs for your resources and other important configurations. When you create a standalone Bicep template, it's common to embed business rules into your template. For example: "When I deploy a production environment, the storage account should use the GRS tier." Modules present different concerns, though. If a module is reused across multiple deployments, the business rules for each parent template might be different. So, it often doesn't make as much sense to embed business rules into modules. 
 
@@ -43,7 +44,9 @@ Modules can define outputs. It's a good idea to create an output for the informa
 > - Use an output to provide the resource's name. Then the parent template can create an `existing` resource with that name and can look up the secure value dynamically.
 > - Write the value to an Azure Key Vault secret. Have the parent template read the secret from the vault when it needs it.
 
-A parent template can use module outputs in variables, can use properties for other resource definitions, or can expose variables and properties as outputs itself. By exposing and using outputs throughout your Bicep files, you can create reusable sets of Bicep modules that can be shared with your team and reused across multiple deployments. 
+A parent template can use module outputs in variables, can use properties for other resource definitions, or can expose variables and properties as outputs itself. By exposing and using outputs throughout your Bicep files, you can create reusable sets of Bicep modules that can be shared with your team and reused across multiple deployments. It's also a good practice to add a meaningful description to outputs by using the `@description` attribute:
+
+::: code language="bicep" source="code/3-params-outputs.bicep" range="21-22" highlight="1" :::
 
 > [!TIP]
 > You can also use dedicated services to store, manage, and access the settings that your Bicep template creates. Key Vault is designed to store secure values. [Azure App Configuration](/azure/azure-app-configuration/overview?azure-portal=true) is designed to store other (non-secure) values.
