@@ -4,7 +4,7 @@ Planning and implementing high availability and disaster recovery for SAP HANA o
 
 ## Learning objectives
 
-You will: 
+You will:
 
  -  Explore SAP HANA on Azure (Large Instances) high availability and disaster recovery.
  -  Explore network considerations for disaster recovery with SAP HANA on Azure (Large Instances).
