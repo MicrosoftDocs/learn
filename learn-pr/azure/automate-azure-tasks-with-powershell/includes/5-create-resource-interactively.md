@@ -2,7 +2,7 @@ PowerShell lets you write commands and execute them immediately. This is known a
 
 Recall that the overall goal in the Customer Relationship Management (CRM) example is to create three test environments containing Virtual Machines. You will use resource groups to ensure the VMs are organized into separate environments: one for unit testing, one for integration testing, and one for acceptance testing. You only need to create the resource groups once, so using the interactive mode of PowerShell in this use case is a good choice.
 
-When you enter a command into PowerShell, Powershell matches the command to a _cmdlet_, and PowerShell then performs the requested action. We'll look at some common commands you can use, and then we'll look into installing the Azure support for PowerShell.
+When you enter a command into PowerShell, PowerShell matches the command to a _cmdlet_, and PowerShell then performs the requested action. We'll look at some common commands you can use, and then we'll look into installing the Azure support for PowerShell.
 
 ## What are PowerShell cmdlets?
 
