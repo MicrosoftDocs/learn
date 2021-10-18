@@ -19,7 +19,7 @@ To avoid a format exception, use the TryParse() method on the target data type.
 The TryParse() method does several things simultaneously:
 - It attempts to parse a string into the given numeric data type.
 - If successful, it will store the converted value in an **out parameter**.
-- It returns a bool to indicate whether the action succeeded or faioed.
+- It returns a bool to indicate whether the action succeeded or failed.
 
 We can use the bool to take action on the value (like performing some calculation), or display a message if the parse operation was unsuccessful.
 
@@ -28,7 +28,7 @@ We can use the bool to take action on the value (like performing some calculatio
 
 ### What is an out parameter?
 
-Methods can return a value or return "void", meaning they return no value. Metehods can also return values through `out` parameters, which are defined just like an input parameter, but include the `out` keyword.
+Methods can return a value or return "void", meaning they return no value. Methods can also return values through `out` parameters, which are defined just like an input parameter, but include the `out` keyword.
 
 When calling a method with an `out` parameter, you must also use the keyword `out` before the variable, which will hold the value. So, you have to define a variable before calling the method that will be used to store an out parameter value. You can then use the value contained in the out parameter throughout the rest of your code.
 
