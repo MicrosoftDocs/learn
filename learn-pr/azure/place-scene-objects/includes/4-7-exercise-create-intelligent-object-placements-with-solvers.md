@@ -28,9 +28,9 @@ Use the Directional Indicator solver to direct the user to objects. Here's how:
 
     :::image type="content" source="../media/configure-directional-indicator.png" alt-text="Screenshot that shows the DirectionalIndicator solver component configured." lightbox="../media/configure-directional-indicator.png":::
 
-1. To enter **Game** mode, press **Play**. Press and hold the right mouse button while moving your mouse to the left or right to rotate your gaze direction. Notice the following:
+1. To enter **Game** mode, press **Play**. Press and hold the right mouse button while moving your mouse to the left or right to rotate your gaze direction. 
 
-    * When you look away from the **RoverExplorer** object, the **Indicator** object will appear and point towards the **RoverExplorer** object.
+    Notice that when you look away from the **RoverExplorer** object, the **Indicator** object will appear and point toward the **RoverExplorer** object.
 
     :::image type="content" source="../media/play-mode-split-view.png" alt-text="Screenshot that shows the Play mode split view with DirectionalIndicator solver in use." lightbox="../media/play-mode-split-view.png":::
 
