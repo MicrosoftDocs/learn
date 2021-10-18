@@ -12,7 +12,7 @@ The base PowerShell product ships with cmdlets that work with features such as s
 
 Cmdlets follow a verb-noun naming convention; for example, `Get-Process`, `Format-Table`, and `Start-Service`. There is also a convention for verb choice: "get" to retrieve data, "set" to insert or update data, "format" to format data, "out" to direct output to a destination, and so on.
 
-Cmdlet authors are encouraged to include a help file for each cmdlet. The `Get-Help` cmdlet displays the help file for any cmdlet. For example, we could get help on the `Get-ChildItem` cmdlet with the following statement:
+Cmdlet authors are encouraged to include a help file for each cmdlet. The `Get-Help` cmdlet displays the help file for any cmdlet. For example, to get help on the `Get-ChildItem` cmdlet, enter the following statement in a Windows PowerShell session:
 
 ```powershell
 Get-Help -Name Get-ChildItem -Detailed
@@ -65,7 +65,7 @@ To install the latest Azure Az PowerShell module, run the following commands:
 
 This installs the module for your current user (controlled by the `Scope` parameter).
 
-The command relies on NuGet to retrieve components, depending on the version of NuGet you have installed you might get a prompt to download and install the latest version of NuGet.
+The command relies on NuGet to retrieve components, so depending on the version of NuGet you have installed, you might be prompted to download and install the latest version of NuGet. 
 
 ```Output
 NuGet provider is required to continue
@@ -74,19 +74,25 @@ PowerShellGet requires NuGet provider version '2.8.5.201' or newer to interact w
 'C:\Users\<username>\AppData\Local\PackageManagement\ProviderAssemblies'. You can also install the NuGet provider by running
 'Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force'. Do you want PowerShellGet to install and import
  the NuGet provider now?
+ [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"):
 ```
 
-By default, the PowerShell Gallery isn't configured as a trusted repository for PowerShellGet. Each time you perform an installation from an untrusted repository, you'll see the following prompt:
+Enter **Y**, and then press <kbd>Enter</kbd>.
+
+By default, the PowerShell Gallery isn't configured as a trusted repository for PowerShellGet. Each time you perform an installation from an untrusted repository, you'll be prompted to confirm you want to install the module with following output:
 
 ```Output
 You are installing the modules from an untrusted repository. If you trust this repository, change its
 InstallationPolicy value by running the Set-PSRepository cmdlet. Are you sure you want to install the modules from
 'PSGallery'?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
 ```
+
+Enter **Y** or **A**, and then press <kbd>Enter</kbd>.
 
 #### Script execution failed
 
-Depending on your security configuration, `Import-Module` might fail with something like the following.
+Depending on your security configuration, `Import-Module` might fail with something like the following output:
 
 ```Output
 import-module : File C:\Program Files\PowerShell\Modules\az\6.3.0\Az.psm1 cannot be loaded
@@ -99,30 +105,36 @@ At line:1 char:1
     + FullyQualifiedErrorId : UnauthorizedAccess,Microsoft.PowerShell.Commands.ImportModuleCommand
 ```
 
-This normally indicates that the execution policy is "Restricted", meaning you can't execute modules you download from an external source - including the PowerShell Gallery. You can check whether this is the case by executing the cmdlet `Get-ExecutionPolicy`. If it returns "Restricted", then do the following:
+Or by hanging (not responding at all). In this case, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the program.
+
+Both behaviors typically indicate that the execution policy is "Restricted", meaning you can't run  modules that you download from an external source -- including the PowerShell Gallery. You can check whether this is the case by running the cmdlet `Get-ExecutionPolicy`. If it returns "Restricted", then do the following:
 
 1. Use the `SetExecutionPolicy` cmdlet to change the policy to "RemoteSigned":
 
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
+    ```powershell
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+    ```
 
-This will prompt you for permission:
+    This will prompt you for permission:
 
-```Output
-The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose
-you to the security risks described in the about_Execution_Policies help topic at
-https:/go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy?
-[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): Y
-```
+    ```Output
+    The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose
+    you to the security risks described in the about_Execution_Policies help topic at
+    https:/go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy?
+    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): Y
+    ```
 
-You should then be able to use `Import-Module` to load the cmdlets.
+1. Enter **Y** or **A**, and then press <kbd>Enter</kbd>.
+
+1. At the command prompt, use the up arrow on your keyboard and rerun the `Install-Module` command for Azure.
+
+You should be able to see the Az module loading. After it completes you will be able to use `Import-Module` to load the cmdlets.
 
 :::zone-end
 
 ::: zone pivot="linux,macos"
 
-We use the same commands to install the Azure PowerShell on either Linux or macOS.
+Installation of Azure PowerShell on either Linux or macOS uses the same commands.
 
 1. In a terminal, run the following command to launch PowerShell.
 
