@@ -1,4 +1,4 @@
-If you want to position your game objects in an appropriate place or order, Unity helps you in moving, rotating, and scaling the game object. You can also use the "RectTransform" and "Transform" options. *RectTransform* is used for changing the position of 2D objects, such as sprites. *Transform* combines the move, rotate, and scale tools.
+If you want to position your game objects in an appropriate place or order, Unity helps you in moving, rotating, and scaling the game object. You can also use the RectTransform and Transform options. *RectTransform* is used for changing the position of 2D objects, such as sprites. *Transform* combines the move, rotate, and scale tools.
 
 Positioning the game objects on the scene is a crucial step, because it helps you decide where your holograms must be placed in the surroundings. Experienced Unity developers tend to use positioning often, to place objects on the scene systematically. It's frequently used to adjust the placements of objects and place them in their rightful position. This is one practice that all developers must use during the development phase.
 
@@ -12,4 +12,4 @@ In Unity, objects use a hierarchy system where objects can become "parents" of o
 
 ## Scene Visibility
 
-*Scene Visibility control* allows you to hide and show game objects in the scene without changing the in-game visibility. Scene Visibility is helpful while you're working on complex scenes with a lot of game objects. Using visibility is a preferred option over deactivating the game objects, because visibility only affects the scene view. This means that you can't accidentally remove game objects from a fully rendered scene. You can hide a game object by selecting the “eye” icon beside its name in the hierarchy window.
+*Scene Visibility control* allows you to hide and show game objects in the scene without changing the in-game visibility. Scene Visibility is helpful while you're working on complex scenes with a lot of game objects. Using visibility is a preferred option over deactivating the game objects, because visibility only affects the scene view. This means that you can't accidentally remove game objects from a fully rendered scene. You can hide a game object by selecting the eye icon beside its name in the hierarchy window.
