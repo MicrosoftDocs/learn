@@ -2,7 +2,7 @@
 uid: learn.azure.plan-deploy-azure-arc-enabled-servers
 metadata:
   title: Plan and deploy Azure Arc-enabled servers at scale 
-  description: TBD
+  description: Understand the capabilities and architecture of Azure Arc-enabled servers. Learn how to test and select the right deployment method for your machines. Finally, adopt best practices and advanced security considerations for Azure Arc-enabled servers.
   ms.date: 10/18/2021
   author: aurnovcy
   ms.author: aurnovc
