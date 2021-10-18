@@ -24,7 +24,7 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
     dotnet new webapi -f net6.0
     ```
 
-    This command creates the files for a basic web API project, along with a C# project file named **ContosoPizza.csproj** that will return a list of weather forecasts. 
+    This command creates the files for a basic web API project that uses Controllers, along with a C# project file named **ContosoPizza.csproj** that will return a list of weather forecasts. If you run into an error, ensure that you have the [.NET 6 SDK](https://dotnet.microsoft.com/download) installed.
 
 
     > [!IMPORTANT]
