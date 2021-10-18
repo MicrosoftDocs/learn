@@ -16,7 +16,7 @@ The Azure Connected Machine Onboarding role is available for at-scale onboarding
 
 Users as a member of the Azure Connected Machine Resource Administrator role can read, modify, reonboard, and delete a machine. This role is designed to support management of Azure Arc-enabled servers, but not other resources in the resource group or subscription.
 
-Additionally, the Azure Connected Machine agent uses public key authentication to communicate with the Azure service. After you onboard a server to Azure Arc, a private key is saved to the disk and used whenever the agent communicates with Azure. If stolen, the private key can be used on another server to communicate with the service and act as if it were the original server. This includes getting access to the system assigned identity and any resources that identity has access to. The private key file is protected to only allow the himds account access to read it. To prevent offline attacks, we strongly recommend the use of full disk encryption (for example, BitLocker, dm-crypt, etc.) on the operating system volume of your server.
+Additionally, the Azure Connected Machine agent uses public key authentication to communicate with the Azure service. After you onboard a server to Azure Arc, a private key is saved to the disk and used whenever the agent communicates with Azure. If stolen, the private key can be used on another server to communicate with the service and act as if it were the original server. This includes getting access to the system assigned identity and any resources that identity has access to. The private key file is protected to only allow the HIMDS account access to read it. To prevent offline attacks, we strongly recommend the use of full disk encryption (for example, BitLocker, dm-crypt, etc.) on the operating system volume of your server.
 
 ## Azure Policy Governance 
 
@@ -44,7 +44,7 @@ Before deploying Azure Arc-enabled servers to a resource group, you can systemic
 
 Beyond public endpoint, two other secure networking options for Azure Arc-enabled servers are Proxy Server and Azure Private Link. 
 
-If your machine is communicating through a proxy server to connect to the internet, you can specify the proxy server IP address or the name and port number that the machine will use to communicate with the proxy server. This specification can be made directly in Azure Portal when generating a script for onboarding multiple machines to Arc.
+If your machine is communicating through a proxy server to connect to the internet, you can specify the proxy server IP address or the name and port number that the machine will use to communicate with the proxy server. This specification can be made directly in the Azure portal when generating a script for onboarding multiple machines to Arc.
 
 For high security scenarios, Azure Private Link allows you to securely link Azure PaaS services to your virtual network using private endpoints. For many services, you just set up an endpoint per resource. This means you can connect your on-premises or multi-cloud servers with Azure Arc and send all traffic over an Azure ExpressRoute or site-to-site VPN connection instead of using public networks. By utilizing Private Link with Arc-enabled servers, you can:
 
