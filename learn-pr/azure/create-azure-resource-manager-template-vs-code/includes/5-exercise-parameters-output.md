@@ -212,7 +212,7 @@ Here, you'll deploy successfully by using a ```storageSKU``` parameter that's in
 
 Here, you add to the ```outputs``` section of the ARM template to output the endpoints for the storage account resource.
 
-1. In the *azuredeploy.json* file in Visual Studio Code, place your curser inside the braces in the outputs attribute ```"outputs":{},```.
+1. In the *azuredeploy.json* file in Visual Studio Code, place your cursor inside the braces in the outputs attribute ```"outputs":{},```.
 
 1. Select <kbd>Enter</kbd>, and then enter *out*. You see a list of related snippets. Select **arm-output**. It adds a generic output to the template. It will look like this:
 
