@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 10/13/2021
+  ms.date: 10/18/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
@@ -18,9 +18,9 @@ quiz:
   - content: |
       When you try to run the pipeline, Azure Pipelines gives you an error. What's the most likely cause of the problem?
     choices:
-    - content: The name of each stage isn't unique.
+    - content: The identifier of each stage isn't unique.
       isCorrect: true
-      explanation: Correct. Currently, both environments define a stage named *Deploy*. You should add the environment name into the stage name so that the names are unique.
+      explanation: Correct. Currently, both environments define a stage with the identifier *Deploy*. You should add the environment name into the stage identifier so that the identifiers are unique.
     - content: The `trigger` property is set to `none`.
       isCorrect: false
       explanation: |

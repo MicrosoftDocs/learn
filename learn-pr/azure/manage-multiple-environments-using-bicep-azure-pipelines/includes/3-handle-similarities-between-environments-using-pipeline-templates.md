@@ -16,11 +16,11 @@ After talking to your colleagues on the website team, you decide on the followin
    1. Deploying the Bicep code.
    1. Running some tests against your test environment.
 
-1. If the previous steps succeed, your pipeline continues to deploy to your production environment:
+1. If any part of the pipeline fails, then the whole pipeline stops so you can investigate and resolve the issue. But if everything succeeds, your pipeline continues to deploy to your production environment:
 
    1. The pipeline runs a preview stage, which runs the what-if operation on your production environment to list the changes that will be made to your production Azure resources. The preview stage also validates your deployment, so you don't need to run a separate validation stage for your production environment.
    1. The pipeline pauses for manual validation. 
-   1. If validation succeeds, the pipeline runs the deployment and smoke tests against your production environment.
+   1. If approval is received, the pipeline runs the deployment and smoke tests against your production environment.
 
 Some of these stages are repeated between your test and production environments, and some are run only for specific environments:
 
@@ -52,7 +52,7 @@ You can nest templates in other templates, too. Suppose the preceding file was n
 
 :::code language="yaml" source="code/3-stages.yml" highlight="13, 17" :::
 
-When you nest templates, or reuse them multiple times in a single pipeline, you need to be careful that you don't accidentally use the same name for multiple pipeline resources. For example, each job within a stage needs its own name. So if you define the job name in a template, you can't reuse it multiple times in the same stage.
+When you nest templates, or reuse them multiple times in a single pipeline, you need to be careful that you don't accidentally use the same name for multiple pipeline resources. For example, each job within a stage needs its own identifier. So if you define the job identifier in a template, you can't reuse it multiple times in the same stage.
 
 When you work with complex sets of deployment pipelines, it can be helpful to create a dedicated Git repository for your shared pipeline templates. Then, you can reuse the same repository in multiple pipelines, even if they're for different projects. We provide a link to more information in the summary.
 
@@ -70,7 +70,7 @@ Each pipeline template parameter has three properties:
 
 - The *name* of the parameter, which you use to refer to the parameter in your template files.
 - The *type* of the parameter. Parameters support several different types of data, including *string*, *number*, and *Boolean*. You can also define more complex templates that accept structured objects.
-- The *default value* of the parameter. If you specify a default value, you effectively make the parameter optional.
+- The *default value* of the parameter. This is optional. If you don't specify a default value, then a value must be provided when the pipeline template is used.
 
 In your pipeline template, you use a special syntax to refer to the value of the parameter. Use the `${{parameters.YOUR_PARAMETER_NAME}}` macro, like in this example: 
 
@@ -78,9 +78,9 @@ In your pipeline template, you use a special syntax to refer to the value of the
 
 You pass the value for parameters to a pipeline template by using the `parameters` keyword, like in this example:
 
-:::code language="yaml" source="code/3-parameters.yml" highlight="3-4, 6-7" :::
+:::code language="yaml" source="code/3-parameters.yml" highlight="3-4, 7-8" :::
 
-You can also use parameters when you assign names to your jobs and stages in pipeline templates. This technique helps when you need to reuse the same template multiple times in your pipeline, like this:
+You can also use parameters when you assign identifiers to your jobs and stages in pipeline templates. This technique helps when you need to reuse the same template multiple times in your pipeline, like this:
 
 :::code language="yaml" source="code/3-jobs-parameters.yml" highlight="7, 13" :::
 
@@ -94,12 +94,12 @@ For example, imagine you define a pipeline template that runs script steps. You 
 
 The condition here translates to: *if the environmentType parameter's value is equal to 'Production', then run the following steps*.
 
-You can also use the `ne` (*not equals*) operator to specify a condition like: *if the environmentType parameter's value is not equal to 'Production', then run the following steps*. Here's how:
-
-:::code language="yaml" source="code/3-script-conditions.yml" range="14-16" highlight="1" :::
-
 > [!TIP]
-> Pay attention to the YAML file's indentation when you use conditions. The steps that the condition applies to need to be indented by one extra level.
+> Pay attention to the YAML file's indentation when you use conditions like in the example above. The steps that the condition applies to need to be indented by one extra level.
+
+You can also specify the `condition` property on a stage, job, or step. Here's an example that shows how you can use the `ne` (*not equals*) operator to specify a condition like *if the environmentType parameter's value is not equal to 'Production', then run the following steps*:
+
+:::code language="yaml" source="code/3-script-conditions.yml" range="14-16" highlight="3" :::
 
 Although conditions are a way to add flexibility to your pipeline, try not to use too many of them. They complicate your pipeline and make it harder to understand its flow. If you see a lot of conditions in your pipeline template, the template might not be the best solution for the workflow that you plan to run, and you might need to redesign your pipeline.
 

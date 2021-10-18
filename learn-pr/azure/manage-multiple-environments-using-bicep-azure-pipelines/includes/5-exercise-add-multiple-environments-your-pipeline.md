@@ -55,7 +55,7 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
    Notice that a condition is applied to this stage. It runs only for non-production environments.
 
-   Also notice that the stage name includes the value of the `environmentType` parameter. This parameter ensures that every stage in your pipeline has a unique name. The stage also has a `displayName` property to create a well-formatted name for you to read.
+   Also notice that the stage identifier includes the value of the `environmentType` parameter. This parameter ensures that every stage in your pipeline has a unique identifier. The stage also has a `displayName` property to create a well-formatted name for you to read.
 
 1. Below the validation stage, paste the definition of the preview stage:
 

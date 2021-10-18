@@ -48,7 +48,7 @@ Common environments include:
 
 You might see variations of these environments. Some organizations use only a few environments, and some use many more. The number and type of environments that you use depend on the solution you're deploying, the size of the team that's building the solution, and the importance of the workload. 
 
-Sometimes, a single environment takes the role of several of the environments listed earlier. Other times, you might have a very complex pipeline that deploys to multiple environments, some in parallel and some in sequence.
+Sometimes, a single environment takes the role of several of the environments listed earlier. Other times, you might have a very complex pipeline that deploys to multiple environments, some in parallel and some in sequence. Some organizations even automatically delete or deprovision environments when they're no longer used, and then redeploy them when they're needed in the future.
 
 Whatever your organization chooses as its list of environments, the goal is to improve your confidence in a change as it progresses through your deployment pipeline. When a change doesn't meet your quality requirements, you want to be able to stop the deployment of that change to any subsequent environments in the chain.
 
@@ -68,7 +68,7 @@ An environment in Azure DevOps can have checks and approvals configured. Each ti
 
 For example, you can configure manual approvals on your production environment. Before a production deployment starts, the designated approver will receive an email notification. That person can manually verify that your policies and procedures are met before the deployment begins. For example, the approver might check that everything is working as they expect in the pre-production environment before they approve the deployment.
 
-Or, you could run an automated check to review the logs and error rates in your pre-production environment after your last environment. If the check confirms that the number of errors hasn't substantially increased, it allows the deployment to proceed.
+Additionally, you could run an automated check to review the logs and error rates in your pre-production environment after your last environment. If the check confirms that the number of errors hasn't substantially increased, it allows the deployment to proceed.
 
 ### Deployment history
 

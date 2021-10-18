@@ -5,7 +5,7 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Introduction to managing multiple environments by using Bicep and Azure Pipelines.
-  ms.date: 10/13/2021
+  ms.date: 10/18/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial

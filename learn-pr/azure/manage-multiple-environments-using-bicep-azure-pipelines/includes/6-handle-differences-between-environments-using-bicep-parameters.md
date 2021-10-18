@@ -32,7 +32,8 @@ When you use parameter files, your pipeline YAML files don't need to contain a l
 
 A parameter file keeps the parameter values together in a single JSON file. The parameter files are also part of your Git repository, so they can get versioned in the same way as all your other code.
 
-However, parameter files shouldn't be used for secure values. There's no way to protect the values of the secrets in the parameter files, and you should never commit secrets to your Git repository.
+> [!IMPORTANT]
+> Parameter files shouldn't be used for secure values. There's no way to protect the values of the secrets in the parameter files, and you should never commit secrets to your Git repository.
 
 ## Pipeline variables
 
@@ -126,5 +127,4 @@ It's common to combine multiple approaches to handle your parameters. For exampl
 
 :::code language="yaml" source="code/6-multiple.yml" highlight="1-2, 27-28" :::
 
-> [!NOTE]
-> There are special rules about how service connection names can be specified. These rules can affect how you use names in pipelines that deploy to multiple environments. You can use pipeline template parameters to specify the name of the service connection to use.
+There are special rules about how service connection names can be specified. These rules can affect how you use names in pipelines that deploy to multiple environments. For example, you can't use a variable defined within a variable group to specify a service connection name. You can use pipeline template parameters to specify the name of the service connection to use.

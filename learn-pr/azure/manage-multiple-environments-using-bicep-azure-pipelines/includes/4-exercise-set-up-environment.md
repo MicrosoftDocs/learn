@@ -39,8 +39,7 @@ On the Azure DevOps Demo Generator site, follow these steps:
 
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
-> [!IMPORTANT]
-> The final exercise in this module contains important cleanup steps. Be sure to follow the cleanup steps even if you don't complete this module.
+[!include[](../../includes/cleanup-steps.md)]
 
 ## Clone the repository
 
@@ -216,9 +215,21 @@ Next, create two service connections in Azure Pipelines: one for your test envir
 
 1. Select the arrow to return to the environments list.
 
-   :::image type="content" source="../media/4-environment-back.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, including the arrow button.":::
+   Before a pipeline can use the environment, you must grant it permission. For simplicity, you'll allow all pipelines to access the environment. In your own pipelines, you should restrict access to environments to just the pipelines that require it.
 
-1. Repeat the process to create another environment named **Production**.
+1. Select the button with three dots and select **Security**.
+
+   :::image type="content" source="../media/4-environment-security.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, with the More Actions menu displayed and the Security item highlighted.":::
+
+1. In the section named **Pipeline permissions**, select the button with three dots. Select **Open access**.
+
+   :::image type="content" source="../media/4-environment-security-open.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, with the More Actions menu displayed and the Open access item highlighted.":::
+
+1. Select the left arrow twice to return to the environments list.
+
+   :::image type="content" source="../media/4-environment-back.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, including the arrow button..":::
+
+1. Repeat the process to create another environment named **Production**. Remember to set it to open access.
 
    :::image type="content" source="../media/4-environments-new-details-production.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Production, with completed details.":::
 
@@ -238,7 +249,7 @@ Next, create two service connections in Azure Pipelines: one for your test envir
 
 1. Select the arrow button next to **Advanced**.
 
-   Notice that, by default, approvers are allowed to approve the runs that they've triggered. Because you're the only person who will work with this pipeline, leave this checkbox selected.
+   Notice that, by default, approvers are allowed to approve the runs that they've triggered. Because you're the only person who will work with this pipeline, leave this checkbox selected. In other organizations, you might need to specify a different approver to meet compliance requirements.
 
 1. Select **Create**.
 
@@ -255,6 +266,8 @@ In the previous versions of the pipeline, you used a single environment named *W
    :::image type="content" source="../media/4-environments-website.png" alt-text="Screenshot of the Azure DevOps interface that shows the list of environments and the Website environment.":::
 
 1. Near the upper right of the page, select the button with three dots and select **Delete** from the pop-up menu.
+
+   :::image type="content" source="../media/4-environment-delete.png" alt-text="Screenshot of the Azure DevOps interface that shows the test environment, with the More Actions menu and the Delete button highlighted.":::
 
 1. Select **Delete** to confirm the deletion.
 
