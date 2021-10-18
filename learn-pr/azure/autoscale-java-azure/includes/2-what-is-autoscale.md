@@ -14,13 +14,13 @@ You can configure scale settings for an application with either two modes manual
 
 Autoscale allows you to have the right amount of resources running to handle the load on your application. Autoscaling eases management overhead by reducing the need for system operators to constantly make decisions about adding or removing resources or checking the system's performance. Having a minimum makes sure your application is always running even under no load. Having a maximum limits your total possible hourly cost. You automatically scale between these two extremes using rules you create.
 
-:::image type="content" source="../media/computesaving.jpg" alt-text="save on compute":::
+:::image type="content" source="../media/computesaving.jpg" alt-text="save on compute" lightbox="../media/computesaving.jpg":::
 
 ## "Up" vs "Out"
 
 Autoscale only scales "Out" (horizontally), which is an increase ("out") or decrease ("in") in the number of application instances. In contrast, "Up" (vertical) scaling is different. It keeps the same number of application instances, but makes the application instances more ("up") or less ("down") powerful.
 
-:::image type="content" source="../media/outvsup.png" alt-text="scaleup vs scale out difference":::
+:::image type="content" source="../media/outvsup.png" alt-text="scaleup vs scale out difference" lightbox="../media/outvsup.png":::
 
 ## Real-world example
 
@@ -36,7 +36,7 @@ After they’re deployed, Spring Cloud apps are fully integrated with Azure Moni
 
 Autoscaling in Azure Spring Cloud monitors the resource metrics of a Spring application as it runs. It detects situations where extra resources are required to handle an increasing workload, and ensures those resources are available before the system becomes overloaded. Autoscale is a built-in feature of Azure Spring Cloud that helps microservice applications perform their best when demand changes.
 
-:::image type="content" source="../media/autoscaleconcept.png" alt-text="autoscale up scaling":::
+:::image type="content" source="../media/autoscaleconcept.png" alt-text="autoscale up scaling" lightbox="../media/autoscaleconcept.png":::
 
 In the previous exercise, you cloned a Git repository and run a script that sets-up an Azure Spring Cloud microservice application and an Azure Database for MySQL.
 The script deploys a well-known PetClinic microservice application and is built around small independent services, communicating over HTTP via a REST API.

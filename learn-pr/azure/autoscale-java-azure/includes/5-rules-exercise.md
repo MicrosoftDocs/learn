@@ -16,7 +16,7 @@ After the autoscale is triggered, it will then scale down if the request count i
 5. Select the customers-service application. You should then see the application's **Overview** page.
 6. Go to the **Scale-out** tab under Settings in the menu on the left side of the page.
 
-:::image type="content" source="../media/scalesettings2.png" alt-text="scale setting":::
+:::image type="content" source="../media/scalesettings2.png" alt-text="scale setting" lightbox="../media/scalesettings2.png":::
 
 There are two options for Autoscale demand management:
 
@@ -25,13 +25,13 @@ There are two options for Autoscale demand management:
 
 In the Azure portal, view the pre-setup configuration for your application. The following figure shows the Custom autoscale setup to scale on the tomcat request count.
 
-:::image type="content" source="../media/scalesettings.png" alt-text="scale rules":::
+:::image type="content" source="../media/scalesettings.png" alt-text="scale rules" lightbox="../media/scalesettings.png":::
 
 ### Viewing the finished autoscale events
 
 In the Scale-out setting screen, go to the Run history tab to see the most recent scale actions. The tab shows the change in Observed Capacity over time graphically, and a log of every autoscale action.
 
-:::image type="content" source="../media/scaleresult.png" alt-text="autoscale run history":::
+:::image type="content" source="../media/scaleresult.png" alt-text="autoscale run history" lightbox="../media/scaleresult.png":::
 
 ## Trigger the scale-out action with a script
 

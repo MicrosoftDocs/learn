@@ -26,7 +26,7 @@ Autoscaling isn't an instant solution. Simply adding resources to a system or ru
 - All autoscale failures are logged to the Activity Log. You can then configure an activity log alert so that you can be notified via email, SMS, or webhooks whenever there's an autoscale failure.
 - Similarly, all successful scale actions are posted to the Activity Log. You can then configure an activity log alert so that you can be notified via email, SMS, or webhooks whenever there's a successful autoscale action. You can also configure email or webhook notifications to get notified for successful scale actions via the notifications tab on the autoscale setting.
 
-:::image type="content" source="../media/flow.png" alt-text="webhook process flow":::
+:::image type="content" source="../media/flow.png" alt-text="webhook process flow" lightbox="../media/flow.png":::
 
 ## Common patterns to scale your resource in Azure
 

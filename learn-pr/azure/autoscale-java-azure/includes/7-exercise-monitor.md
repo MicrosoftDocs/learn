@@ -35,6 +35,6 @@ This is the simplest query that we can write. It just returns all the records in
 AutoscaleEvaluationsLog
 ```
 
-:::image type="content" source="../media/loganalytics.png" alt-text="log analytics menu":::
+:::image type="content" source="../media/loganalytics.png" alt-text="log analytics menu" lightbox="../media/loganalytics.png":::
 
 You can see that we do have results. The number of records that the query has returned appears in the lower-right corner. For more exercises on KQL autoscale queries, see the Summary unit at the end of this module.
