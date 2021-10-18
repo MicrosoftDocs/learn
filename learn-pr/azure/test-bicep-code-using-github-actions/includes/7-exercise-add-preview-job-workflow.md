@@ -1,84 +1,72 @@
-You want to add an extra stage to your pipeline so you can check what changes will be made to your Azure environment.
+You want to add an extra job to your workflow so you can check what changes will be made to your Azure environment.
 
 During the process, you'll: 
 
 > [!div class="checklist"]
-> * Update the pipeline YAML file to add a new preview stage.
-> * Add an environment to Azure Pipelines.
-> * Configure the environment to require an approval.
-> * Update the pipeline YAML file to use the environment for the deployment stage.
-> * View the what-if results and approve a pipeline run.
+> * Update the workflow YAML file to add a new preview job.
+> * Add an environment to your GitHub repository.
+> * Configure the environment to require a review.
+> * Update the workflow YAML file to use the environment for the deployment job.
+> * View the what-if results and approve a workflow run.
 
-## Update the pipeline definition to add a preview stage
+## Update the workflow definition to add a preview job
 
-Here, you add a new stage to your pipeline that runs the what-if operation.
+Here, you add a new job to your workflow that runs the what-if operation.
 
-1. In Visual Studio Code, open the *azure-pipelines.yml* file in the *deploy* folder.
+1. In Visual Studio Code, open the *workflow.yml* file in the *.github/workflows* folder.
 
-1. Between the **Validate** and **Deploy** stages, add the following definition for the **Preview** stage:
+1. Between the **validate** and **deploy** jobs, add the following definition for the **preview** job:
 
-   :::code language="yaml" source="code/7-pipeline.yml" range="39-55" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="38-53" :::
+
+   Notice that we make the **review** job dependant on the **validate** and **lint** jobs. 
+
+1. Change the needs of the **deploy** job, so it is now dependant on the **review** job.
+
+   :::code language="yaml" source="code/7-workflow.yml" range="58" :::
 
 1. Save your changes to the file.
 
 ## Add an environment
 
-1. In your browser, go to **Pipelines** > **Environments**.
+1. In your browser, go to **Settings** > **Environments**.
 
-   :::image type="content" source="../media/7-environments.png" alt-text="Screenshot of the Azure DevOps interface that shows the Pipelines menu, with the Environments item highlighted.":::
+   :::image type="content" source="../media/7-environments.png" alt-text="Screenshot of the GitHub interface that shows the Settings menu, with the Environments item highlighted.":::
 
-1. Select **Create environment**.
+1. Select **New environment**.
 
-   :::image type="content" source="../media/7-environments-new.png" alt-text="Screenshot of the Azure DevOps interface that shows the Environments page, with the button for creating an environment highlighted.":::
+   :::image type="content" source="../media/7-environments-new.png" alt-text="Screenshot of the GitHub interface that shows the Environments page, with the button for creating an environment highlighted.":::
 
 1. Enter **Website** as the environment name.
 
-   Leave the description blank. For **Resource**, select **None**.
+1. Select **Configure environment**.
 
-   > [!NOTE]
-   > In Azure Pipelines, environments are used to enable deployment features. Some of these features apply only when you're deploying to Kubernetes or to virtual machines. In this module, we don't use these features and you can ignore them.
+   :::image type="content" source="../media/7-environments-new-details.png" alt-text="Screenshot of the GitHub page for a new environment, with the details completed and the Configure environment button highlighted.":::
 
-1. Select **Create**.
+## Add required reviewer protection rule to the environment
 
-   :::image type="content" source="../media/7-environments-new-details.png" alt-text="Screenshot of the Azure DevOps page for a new environment, with the details completed and the Create button highlighted.":::
+1. In the next screen check the **Required reviewers** box. And fill out your own GitHub username. 
 
-## Add an approval check to the environment
+   :::image type="content" source="../media/7-add-check.png" alt-text="Screenshot of the GitHub interface that shows the Website environment, with the required reviewers checkbox and textbox highlighted.":::
 
-1. Near the upper right of the page, select the button with three dots and select **Approvals and checks** from the pop-up menu.
+1. Select **Save protection rules**.
 
-   :::image type="content" source="../media/7-add-check.png" alt-text="Screenshot of the Azure DevOps interface that shows the Website environment, with the three dots button highlighted.":::
 
-1. Select **Approvals**.
+## Update the workflow definition to require an environment and reviewer
 
-   :::image type="content" source="../media/7-add-check-approval.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding a check, with the Approvals item highlighted.":::
+Here, you configure the **deploy** job to run against the **Website** environment that you created previously. 
 
-1. In the **Approvers** text box, type your own name and select yourself.
+1. In the *workflow.yml* file in Visual Studio Code, add an additional **environment** parameter to the **deploy** job and give it **Website** as a value:
 
-1. Select the arrow button next to **Advanced**.
-
-   Notice that, by default, approvers are allowed to approve the runs that they've triggered. Because you're the only person who will work with this pipeline, leave this checkbox selected.
-
-1. Select **Create**.
-
-   :::image type="content" source="../media/7-add-check-approval-details.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding an approval check, with the details completed and the Create button highlighted.":::
-
-## Update the pipeline definition to require an environment and approval
-
-Here, you configure the **Deploy** stage to run against the **Website** environment that you created previously. You convert the **Deploy** stage to run a deployment job instead of a standard job, and you configure it to deploy to the environment.
-
-1. In the *azure-pipelines.yml* file in Visual Studio Code, replace the **Deploy** stage definition with the following code:
-
-   :::code language="yaml" source="code/7-pipeline.yml" range="57-79" :::
-
-   Notice that you define a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't do this, the deployment job won't be able to read your Bicep file. You could instead consider using *pipeline artifacts* to send files between pipeline stages. We link to more information about artifacts in the summary.
+   :::code language="yaml" source="code/7-workflow.yml" range="57" :::
 
 1. Save the file.
 
-## Verify and commit your pipeline definition
+## Verify and commit your workflow definition
 
-1. Verify that your *azure-pipelines.yml* file looks like the following code:
+1. Verify that your *workflow.yml* file looks like the following code:
 
-   :::code language="yaml" source="code/7-pipeline.yml" highlight="39-55, 57-79" :::
+   :::code language="yaml" source="code/7-workflow.yml" highlight="38-53, 55-69" :::
 
    If it doesn't, update it to match this example, and then save it.
 
@@ -86,29 +74,29 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
    ```bash
    git add .
-   git commit -m "Add preview stage"
+   git commit -m "Add preview job"
    git push
    ```
 
-## Run the pipeline and review the what-if outputs
+## Run the workflow and review the what-if outputs
 
-1. In your browser, go to your pipeline.
+1. In your browser, go to your workflow runs.
 
-1. Select the most recent run of your pipeline.
+1. Select the most recent run of your workflow.
 
-   Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. Although Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   Wait until the workflow completes the **lint**, **validate**, and **preview** jobs. Although GitHub automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-1. Notice that Azure Pipelines prompts you for an approval. You also receive an email informing you that the pipeline needs your approval.
+1. Notice that the workflow prompts you for a review. You also receive an email informing you that the workflow needs your review.
 
-   :::image type="content" source="../media/7-pipeline-run-approval-required.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline run, with the approval requirement highlighted.":::
+   :::image type="content" source="../media/7-workflow-run-approval-required.png" alt-text="Screenshot of the GitHub interface that shows the workflow run, with the review requirement highlighted.":::
 
-   Before you approve the continuation of the pipeline, you'll review the what-if results to ensure that they match your expectations.
+   Before you approve the continuation of the workflow, you'll review the what-if results to ensure that they match your expectations.
 
-1. Select the **Preview** stage.
+1. Select the **preview** job.
 
 1. Select the **Run what-if** step to inspect the changes that the what-if command reports on.
 
-1. Notice that the pipeline log provides what-if results similar to the following code:
+1. Notice that the workflow log provides what-if results similar to the following code:
 
    :::code language="output" source="code/7-what-if-output.txt" :::
 
@@ -116,24 +104,22 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
    You might also see an item in the what-if output for the resource type `microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - toywebsite`. This is a resource that Application Insights creates automatically. The what-if command detects that no change will be made to the resource.
 
-## Approve the pipeline run
+## Approve the workflow run
 
-1. Select the left arrow to return to the details for the pipeline run.
+1. Select the Summary to return to the overview for the workflow run.
 
-   :::image type="content" source="../media/7-pipeline-run-log-back.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline log menu, with the back arrow highlighted.":::
+   :::image type="content" source="../media/7-workflow-run-log-back.png" alt-text="Screenshot of the GitHub interface that shows the Summary menu, with the back arrow highlighted.":::
 
-1. Select the **Review** button on the approval panel.
+1. Notice that after the lint, validate and review jobs have run, the workflow run will go to a **Waiting** state. Select the **Review deployments** button on the approval panel.
 
-1. In the **Comment** box, enter **Reviewed what-if results**.
+1. In the **Review pending deployments** pop-up, select the **Website** environment and select **Approve and deploy**.
 
-1. Select **Approve**.
-
-   :::image type="content" source="../media/7-pipeline-run-approve.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline approval page, with the Approve button highlighted.":::
+   :::image type="content" source="../media/7-workflow-run-approve.png" alt-text="Screenshot of the GitHub interface that shows the workflow approval page, with the Approve button highlighted.":::
 
 ## Observe the successful deployment
 
-1. After you've approved the pipeline run, notice that the **Deploy** stage starts running.
+1. After you've approved the workflow run, notice that the **deploy** job starts running.
 
-   Wait for the stage to finish.
+   Wait for the job to finish.
 
-1. Notice that the pipeline run finishes successfully.
+1. Notice that the workflow run finishes successfully.

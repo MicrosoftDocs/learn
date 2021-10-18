@@ -25,7 +25,6 @@ During the process, you'll:
 
    This job defines steps to check out the code, sign in to your Azure environment, and use the `azure/arm-deploy@v1` command with the `Validate` deployment option.
 
-
    Your workflow definition now has three jobs. The first lints your Bicep file, the second performs a preflight validation, and the third performs the deployment to Azure.
 
 1. Below the `runs-on` line in the `deploy` job, add a `needs` statement: 
