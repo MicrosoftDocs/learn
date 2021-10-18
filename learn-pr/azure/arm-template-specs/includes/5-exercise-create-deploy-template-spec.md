@@ -124,35 +124,21 @@ When you work with template specs, it's important to consider how others will us
 
 ::: zone-end
 
-::: zone pivot="biceppowershell,bicepcli"
-
-## Convert the Bicep file to a JSON ARM template
-
-Template specs don't yet support Bicep files directly. You need to convert your Bicep file to a JSON template before you publish it, by using this command:
-
-::: zone-end
-
-::: zone pivot="bicepcli"
-
-```azurecli
-az bicep build --file main.bicep --outfile azuredeploy.json
-```
-
-::: zone-end
-
-::: zone pivot="biceppowershell"
-
-```powershell
-bicep build main.bicep --outfile azuredeploy.json
-```
-
-::: zone-end
-
 ## Publish the template as a template spec
 
 ::: zone pivot="biceppowershell,jsonpowershell"
 
 Publish the template spec by using this Azure PowerShell cmdlet in the Visual Studio Code terminal:
+
+::: zone-end
+
+::: zone pivot="biceppowershell"
+
+:::code language="azurepowershell" source="code/5-create.ps1" range="1-7, 9" :::
+
+::: zone-end
+
+::: zone pivot="jsonpowershell"
 
 :::code language="azurepowershell" source="code/5-create.ps1" range="1-8" :::
 
@@ -161,6 +147,16 @@ Publish the template spec by using this Azure PowerShell cmdlet in the Visual St
 ::: zone pivot="bicepcli,jsoncli"
 
 Publish the template spec by using this Azure CLI command in the Visual Studio Code terminal:
+
+::: zone-end
+
+::: zone pivot="bicepcli"
+
+:::code language="azurecli" source="code/5-create.sh" range="1-6, 8" :::
+
+::: zone-end
+
+::: zone pivot="jsoncli"
 
 :::code language="azurecli" source="code/5-create.sh" range="1-7" :::
 
