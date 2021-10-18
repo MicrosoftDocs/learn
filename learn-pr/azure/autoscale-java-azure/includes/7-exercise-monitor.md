@@ -11,7 +11,7 @@ You can validate the evaluations and scale actions better using Log Analytics. I
 
 In the autoscale setting screen, go to the Run history tab to see the most recent scale actions. The tab also shows the change in Observed Capacity over time. To find more details about all autoscale actions including operations such as update/delete autoscale settings, view the activity log and filter by autoscale operations.
 
-Next, we'll use log analytics to trouble shoot the autoscale events.
+Next, we'll use log analytics to dig deeper into the autoscale events.
 
 ## Use Log Analytics to troubleshoot scale events
 
@@ -37,4 +37,4 @@ AutoscaleEvaluationsLog
 
 :::image type="content" source="../media/loganalytics.png" alt-text="log analytics menu":::
 
-You can see that we do have results. The number of records that the query has returned appears in the lower-right corner.
+You can see that we do have results. The number of records that the query has returned appears in the lower-right corner. For more excercises on KQL autoscale queries, see the Summary unit at the end of this module.

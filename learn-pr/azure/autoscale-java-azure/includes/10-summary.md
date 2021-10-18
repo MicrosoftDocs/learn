@@ -46,3 +46,5 @@ az monitor log-analytics workspace delete --force true --resource-group <your Re
 - [create an Activity Log Alert to monitor all autoscale engine operations on your subscription](https://github.com/Azure/azure-quickstart-templates/tree/master/demos/monitor-autoscale-alert)
 
 - [create an Activity Log Alert to monitor all failed autoscale scale in/scale out operations on your subscription](https://github.com/Azure/azure-quickstart-templates/tree/master/demos/monitor-autoscale-failed-alert).
+
+- [Troubleshooting Azure autoscale](/azure/azure-monitor/autoscale/autoscale-troubleshoot)
