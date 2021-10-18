@@ -10,7 +10,7 @@ First, the pipeline runs the Bicep linter to check that the Bicep code is valid 
 
 Next, the pipeline deploys to the test environment. This requires running the Azure Resource Manager preflight validation, then deploying the Bicep code, and finally running some tests against your test environment.
 
-If that all succeeds, then your pipeline continues to deploy to your production environment. It runs a preview stage first, which runs the what-if operation on your production environment to list the changes that will be made to your production Azure resources. The preview stage also validates your deployment, so you don't need to run a separate validate stage for your production environment. If all of those stages complete successfully, the pipeline pauses for manual validation. Once approved, the pipeline runs the deployment and smoke tests against your production environment.
+If any part of the pipeline fails, then the whole pipeline stops so you can investigate and resolve the issue. But if everything succeeds, then your pipeline continues to deploy to your production environment. It runs a preview stage first, which runs the what-if operation on your production environment to list the changes that will be made to your production Azure resources. The preview stage also validates your deployment, so you don't need to run a separate validate stage for your production environment. If all of those stages complete successfully, the pipeline pauses for manual validation. Once approved, the pipeline runs the deployment and smoke tests against your production environment.
 
 Some of these stages are repeated between your test and production environments, and some are only run for specific environments:
 
@@ -68,7 +68,7 @@ In your pipeline template, you use a special syntax to refer to the value of the
 
 You pass the value for a parameters to a pipeline template by using the `parameters` keyword, like in this example:
 
-:::code language="yaml" source="code/3-parameters.yml" highlight="3-4, 6-7" :::
+:::code language="yaml" source="code/3-parameters.yml" highlight="3-4, 7-8" :::
 
 You can also use parameters when you assign identifiers to your jobs and stages in pipeline templates too. This helps when you need to reuse the same template multiple times in your pipeline, like this:
 

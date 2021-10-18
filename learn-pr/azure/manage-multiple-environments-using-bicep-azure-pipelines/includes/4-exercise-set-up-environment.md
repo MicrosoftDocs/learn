@@ -251,7 +251,7 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
 1. Select the arrow button next to **Advanced**.
 
-   Notice that, by default, approvers are allowed to approve the runs that they've triggered. Because you're the only person who will work with this pipeline, leave this checkbox selected.
+   Notice that, by default, approvers are allowed to approve the runs that they've triggered. Because you're the only person who will work with this pipeline, leave this checkbox selected. In other organizations, you might need to specify a different approver to meet compliance requirements.
 
 1. Select **Create**.
 
