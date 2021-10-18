@@ -48,7 +48,7 @@ You can send a message to the queue by calling the `ServiceBusSender.SendMessage
 
 ```C#
 string message = "Sure would like a large pepperoni!";
-ServiceBusMessage message = new ServiceBusMessage(message);
+var message = new ServiceBusMessage(message);
 await sender.SendMessageAsync(message);
 ```
 
