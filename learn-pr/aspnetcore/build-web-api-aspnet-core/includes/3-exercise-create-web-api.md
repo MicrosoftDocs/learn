@@ -4,6 +4,8 @@ The .NET CLI is the simplest way to create an ASP.NET Core web API. The CLI is p
 
 In this unit, you'll use the .NET CLI to create a web API locally. You'll also gain an understanding of the resulting project.
 
+## Install .NET 6
+
 [!include[](../../../includes/dotnet6-sdk-version.md)]
 
 ## Create and explore a web API project
@@ -26,7 +28,7 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
 
 
     > [!IMPORTANT]
-    > Web API projects are secured with `http` by default. If you run into issues, you will want to [configure the ASP.NET Core HTTPS development certificate](/aspnet/core/security/enforcing-ssl#trust-the-aspnet-core-https-development-certificate-on-windows-and-macos). 
+    > Web API projects are secured with `https` by default. If you run into issues, you will want to [configure the ASP.NET Core HTTPS development certificate](/aspnet/core/security/enforcing-ssl#trust-the-aspnet-core-https-development-certificate-on-windows-and-macos). 
 
     You may receive a prompt from Visual Studio Code to add assets to debug the project. Click `Yes` on the dialog.
 
