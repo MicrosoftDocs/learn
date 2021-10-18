@@ -9319,6 +9319,16 @@
       "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-sql-server-virtual-machine/7-describe-migration-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-sql-server-virtual-machine/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-mariadb-mysql-postgresql-azure/5-explain-database-migration-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-mariadb-mysql-postgresql-azure/",
+      "redirect_document_id": false
     }
   ]
 }
