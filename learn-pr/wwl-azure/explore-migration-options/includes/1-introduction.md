@@ -4,7 +4,7 @@ The SAP Landscapes that your company will migrate to Azure are in different stag
 
 ## Learning objectives
 
-You will: 
+You will:
 
  -  Analyze strategies for migrating SAP systems to Microsoft Azure.
  -  Migrate to SAP S/4HANA from SAP Business Suite.
