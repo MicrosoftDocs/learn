@@ -1,50 +1,44 @@
-You've spoken to your team and have decided to further automate your deployments by using a pipeline. You want to build more confidence in what you deploy. 
+You've spoken to your team and have decided to further automate your deployments by using a workflow. You want to build more confidence in what you deploy. 
 
-In this exercise, you'll add validation stages to your pipeline. You'll then run the linter and preflight validation before each deployment.
+In this exercise, you'll add validation jobs to your workflow. You'll then run the linter and preflight validation before each deployment.
 
 During the process, you'll: 
 
 > [!div class="checklist"]
-> * Update your existing pipeline to add two new stages to lint and validate your Bicep code.
-> * Run your pipeline.
-> * Fix any issues that your pipeline detects.
+> * Update your existing workflow to add two new jobs to lint and validate your Bicep code.
+> * Run your workflow.
+> * Fix any issues that your workflow detects.
 
-## Update your pipeline to prepare for stages
+## Add lint and validation jobs to your workflow
 
-First, you need to update your pipeline file to define a stage. Azure Pipelines automatically creates a single stage for you. But because you'll add more stages soon, you need to update your pipeline to explicitly define stages.
+1. In Visual Studio Code, open the *workflow.yml* file in the *.github/workflows* folder.
 
-1. In Visual Studio Code, open the *azure-pipelines.yml* file in the *deploy* folder.
+1. Below the `jobs:` line, add a lint job:
 
-1. Remove everything in the file from line 9 to the bottom of the file. Be sure to also remove the `jobs:` line.
+   :::code language="yaml" source="code/5-workflow.yml" range="16-21" :::
 
-1. At the bottom of the file, add the following code:
+   This job defines a step to check out the code and a step that runs the `az bicep build` command to lint the Bicep file.
 
-   :::code language="yaml" source="code/5-pipeline.yml" range="9-10, 39-55" :::
+1. Below the lines that you just added, add a validation job:
 
-   > [!TIP]
-   > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. In the next section, you'll see the complete YAML pipeline definition so that you can verify that your file matches.
+   :::code language="yaml" source="code/5-workflow.yml" range="23-37" :::
 
-## Add lint and validation stages to your pipeline
+   This job defines steps to check out the code, sign in to your Azure environment, and use the `azure/arm-deploy@v1` command with the `Validate` deployment option.
 
-1. Below the `stages:` line, add a lint stage:
 
-   :::code language="yaml" source="code/5-pipeline.yml" range="11-19" :::
+   Your workflow definition now has three jobs. The first lints your Bicep file, the second performs a preflight validation, and the third performs the deployment to Azure.
 
-   This stage defines a single step that runs the `az bicep build` command to lint the Bicep file.
+1. Below the `runs-on` line in the `deploy` job, add a `needs` statement: 
 
-1. Below the lines that you just added, add a validation stage:
+   :::code language="yaml" source="code/5-workflow.yml" range="41" :::
 
-   :::code language="yaml" source="code/5-pipeline.yml" range="21-37" :::
-
-   This stage defines a single step that runs the `az deployment group validate` command. Notice that this step includes a reference to your service connection, because the preflight validation process requires communicating with Azure.
-
-   Your pipeline definition now has three stages. The first lints your Bicep file, the second performs a preflight validation, and the third performs the deployment to Azure.
+   The `needs` statements indicates that the deploy job needs the lint and validate jobs to complete successfully before it is allowed to run.
 
 1. Save the file.
 
 ## Configure the linter
 
-By default, the Bicep linter provides a warning when it detects a problem with your file. Azure Pipelines doesn't treat linter warnings as problems that should stop your pipeline. To customize this behavior, you create a *bicepconfig.json* file that reconfigures the linter.
+By default, the Bicep linter provides a warning when it detects a problem with your file. GitHub Actions doesn't treat linter warnings as problems that should stop your workflow. To customize this behavior, you create a *bicepconfig.json* file that reconfigures the linter.
 
 1. Add a new file in the *deploy* folder and name it *bicepconfig.json*.
    
@@ -56,11 +50,11 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 1. Save the file.
 
-## Verify and commit your pipeline definition
+## Verify and commit your workflow definition
 
-1. Verify that your *azure-pipelines.yml* file looks like the following:
+1. Verify that your *workflow.yml* file looks like the following:
 
-   :::code language="yaml" source="code/5-pipeline.yml" :::
+   :::code language="yaml" source="code/5-workflow.yml" :::
 
    If it doesn't, update it to match this example, and then save it.
 
@@ -68,33 +62,35 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
    ```bash
    git add .
-   git commit -m "Add lint and validation stages"
+   git commit -m "Add lint and validation jobs"
    git push
    ```
 
-   Immediately after you push, Azure Pipelines starts a new pipeline run.
+   Immediately after you push, GitHub Action workflows starts a new workflow run.
 
-## View the pipeline run
+## View the workflow run
 
-1. In your browser, go to **Pipelines**.
+1. In your browser, go to **Actions**.
 
-1. Select the most recent run of your pipeline.
+1. Select the most recent run of your workflow.
 
-   :::image type="content" source="../media/5-pipeline-last-run.png" alt-text="Screenshot of Azure DevOps with the link to the latest pipeline run highlighted.":::
+   :::image type="content" source="../media/5-workflow-last-run.png" alt-text="Screenshot of GitHub Actions with the link to the latest workflow run highlighted.":::
 
-   If the pipeline is still running, wait until it's finished. Although Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   If the workflow is still running, wait until it's finished. Although  workflows automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-1. Notice that the pipeline run now shows the three stages that you defined in the YAML file. Also notice that the **Lint** stage has failed.
+2. Notice that the workflow run now shows the three jobs that you defined in the YAML file and that the **lint** and **validate** jobs run in parallel before the **deploy** job. Also notice that the **lint** and **validate** jobs have failed.
 
-   :::image type="content" source="../media/5-pipeline-run-stages-lint.png" alt-text="Screenshot of a pipeline run in Azure DevOps, with the Lint stage reporting failure.":::
+   :::image type="content" source="../media/5-workflow-run-jobs-lint.png" alt-text="Screenshot of a workflow run in GitHub Actions, with the Lint job reporting failure.":::
 
-1. Select the **Lint** stage to see its details.
+> Note to John: I thought it nice to show the default parallel run behavior. We could still change this to all sequential.
 
-   :::image type="content" source="../media/5-pipeline-run-lint-stage-select.png" alt-text="Screenshot of a pipeline run in Azure DevOps, with the name of the Lint stage highlighted.":::
+3. Select the **lint** job to see its details.
 
-1. Select the **Run Bicep linter** step to view the pipeline log.
+   :::image type="content" source="../media/5-workflow-run-lint-job-select.png" alt-text="Screenshot of a workflow run in GitHub Actions, with the name of the Lint job highlighted.":::
 
-   :::image type="content" source="../media/5-pipeline-run-lint-stage-step.png" alt-text="Screenshot of the pipeline log for the Lint stage, with the step for running a Bicep linter highlighted.":::
+4. Select the **Run Bicep linter** step to view the workflow log.
+
+   :::image type="content" source="../media/5-workflow-run-lint-job-step.png" alt-text="Screenshot of the workflow log for the Lint job, with the step for running a Bicep linter highlighted.":::
 
    Notice that the error displayed is similar to the following one:
 
@@ -124,25 +120,25 @@ Now that you've identified the problem, you can fix it in your Bicep file.
    git push
    ```
 
-   Once again, Azure Pipelines automatically triggers a new run of your pipeline.
+   Once again, GitHub Actions automatically triggers a new run of your workflow.
 
-## View the pipeline run again
+## View the workflow run again
 
-1. In your browser, go to your pipeline.
+1. In your browser, go to your workflow.
 
 1. Select the most recent run.
 
-   Wait until the pipeline run is finished. Although Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   Wait until the workflow run is finished. Although GitHub Actions automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-1. Notice that the **Lint** stage finished successfully, but now the **Validate** stage has failed.
+2. Notice that the **lint** job finished successfully, but the **validate** job is still failing.
 
-   :::image type="content" source="../media/5-pipeline-run-stages-validate.png" alt-text="Screenshot of the pipeline run, with the Lint stage reporting success and the Validate stage reporting failure.":::
+   :::image type="content" source="../media/5-workflow-run-jobs-validate.png" alt-text="Screenshot of the workflow run, with the Lint job reporting success and the Validate job reporting failure.":::
 
-1. Select the **Validate** stage to see its details.
+3. Select the **validate** job to see its details.
 
-1. Select the **Run preflight validation** step to view the pipeline log.
+4. Select the **Run preflight validation** step to view the workflow log.
 
-   :::image type="content" source="../media/5-pipeline-run-validate-stage-step.png" alt-text="Screenshot of the pipeline log for the Validate stage, with the step for running preflight validation highlighted.":::
+   :::image type="content" source="../media/5-workflow-run-validate-job-step.png" alt-text="Screenshot of the workflow log for the Validate job, with the step for running preflight validation highlighted.":::
 
    Notice that the error displayed in the log includes the following message:
 
@@ -176,16 +172,16 @@ You've found another problem in the Bicep file. Here, you fix the problem.
    git push
    ```
 
-## View the successful pipeline run
+## View the successful workflow run
 
-1. In your browser, go to your pipeline.
+1. In your browser, go to your workflow.
 
 1. Select the most recent run.
 
-   Wait until the pipeline run is finished. Although Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   Wait until the workflow run is finished. Although GitHub Actions automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-1. Notice that all three stages of the pipeline have finished successfully:
+1. Notice that all three jobs in the workflow have finished successfully:
 
-   :::image type="content" source="../media/5-pipeline-run-stages-success.png" alt-text="Screenshot of the pipeline run in Azure DevOps, with all three stages reporting success.":::
+   :::image type="content" source="../media/5-workflow-run-jobs-success.png" alt-text="Screenshot of the workflow run in GitHub Actions, with all three jobs reporting success.":::
 
-You now have a pipeline that successfully detects errors in your Bicep code early in your deployment process, and then deploys to Azure if there are no errors.
+You now have a workflow that successfully detects errors in your Bicep code early in your deployment process, and then deploys to Azure if there are no errors.
