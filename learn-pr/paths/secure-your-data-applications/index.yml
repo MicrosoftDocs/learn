@@ -3,7 +3,7 @@ uid: learn.wwl.secure-your-data-applications
 metadata:
   title: 'AZ-500 part 3: Secure your data and applications'
   description: 'AZ-500 part 3: Secure your data and applications'
-  ms.date: 10/02/2021
+  ms.date: 10/14/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   - None
 summary: |
   Application running within Azure accessing access your confidential data need to be locked down.  Learn to secure you applications, storage, databases, and key vaults.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/security-data-applications.svg
 levels:
 - intermediate
 roles:

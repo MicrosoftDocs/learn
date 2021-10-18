@@ -4,10 +4,10 @@ metadata:
   moduleType: standard
   title: Publish libraries of reusable infrastructure code by using template specs
   description: Learn how to create, publish, and deploy template specs, which enable you to store and reuse templates across your organization.
-  ms.date: 05/17/2021
+  ms.date: 09/30/2021
   author: johndowns
   ms.author: jodowns
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Publish libraries of reusable infrastructure code by using template specs
 summary: |

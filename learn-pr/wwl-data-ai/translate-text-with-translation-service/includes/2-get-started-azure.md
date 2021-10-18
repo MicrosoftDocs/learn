@@ -40,7 +40,7 @@ You can use the **Speech Translation** API to translate spoken audio from a stre
 
 ### Speech service language support 
 
-As with the Translator Text service, you can specify one source language and one or more target languages to which the source should be translated. You can translate speech into [over 60 languages](/azure/cognitive-services/speech-service/language-support#speech-translation).
+As with the Translator Text service, you can specify one source language and one or more target languages to which the source should be translated. You can translate speech into [over 60 languages](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support#speech-translation).
 
 The source language must be specified using the extended language and culture code format, such as *es-US* for American Spanish. This requirement helps ensure that the source is understood properly, allowing for localized pronunciation and linguistic idioms.
 
