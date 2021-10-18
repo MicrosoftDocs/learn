@@ -40,7 +40,7 @@ var blobContainerNames = [
   'productmanuals'
 ]
 
-// Define the SKUs for each component based on the environment type.
+@description('Define the SKUs for each component based on the environment type.')
 var environmentConfigurationMap = {
   Production: {
     appServicePlan: {
@@ -81,7 +81,8 @@ var environmentConfigurationMap = {
   }
 }
 
-var contributorRoleDefinitionId = 'b24988ac-6180-42a0-ab88-20f7382dd24c' // This is the built-in Azure 'Contributor' role.
+@description('The role definition ID of the built-in Azure \'Contributor\' role.')
+var contributorRoleDefinitionId = 'b24988ac-6180-42a0-ab88-20f7382dd24c'
 var storageAccountConnectionString = 'DefaultEndpointsProtocol=https;AccountName=${storageAccount.name};EndpointSuffix=${environment().suffixes.storage};AccountKey=${listKeys(storageAccount.id, storageAccount.apiVersion).keys[0].value}'
 
 resource sqlServer 'Microsoft.Sql/servers@2019-06-01-preview' = {
@@ -164,14 +165,14 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
   }
 }
 
-// A user-assigned managed identity that is used by the App Service app to communicate with a storage account.
+@description('A user-assigned managed identity that is used by the App Service app to communicate with a storage account.')
 resource managedIdentity 'Microsoft.ManagedIdentity/userAssignedIdentities@2018-11-30' = {
   name: managedIdentityName
   location: location
   tags: tags
 }
 
-// Grant the 'Contributor' role to the user-assigned managed identity, at the scope of the resource group.
+@description('Grant the \'Contributor\' role to the user-assigned managed identity, at the scope of the resource group.')
 resource roleAssignment 'Microsoft.Authorization/roleAssignments@2020-04-01-preview' = {
   name: guid(contributorRoleDefinitionId, resourceGroup().id) // Create a GUID based on the role definition ID and scope (resource group ID). This will return the same GUID every time the template is deployed to the same resource group.
   properties: {
