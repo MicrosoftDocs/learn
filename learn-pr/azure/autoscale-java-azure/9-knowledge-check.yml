@@ -29,14 +29,6 @@ quiz:
     - content: "Scaling in and out provides better availability than autoscaling."
       isCorrect: false
       explanation: "No. Autoscaling increases availability by adding more instances of services. If one of these instances fails, the others should still be available. In a scale up solution, the failure of a single instance could stop the entire service."
-  - content: "Autoscaling enables a system to predict the resources that will be required to handle an increasing workload."
-    choices:
-    - content: "True"
-      isCorrect: false
-      explanation: "Autoscaling is a reactive technology, not predictive. It can only make decisions on whether there are currently sufficient resources available to meet the current workload, based on metrics and schedules."
-    - content: "False"
-      isCorrect: True
-      explanation: "This answer is correct"
   - content: "Which of these scenarios is a suitable candidate for autoscaling?"
     choices:
     - content: "The number of users requiring access to an application varies according to a regular schedule. For example, more users use the system on a Friday than other days of the week."
