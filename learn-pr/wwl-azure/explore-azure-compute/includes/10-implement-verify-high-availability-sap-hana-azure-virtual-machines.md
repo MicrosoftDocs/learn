@@ -172,7 +172,7 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
     
     ```
     
-     -  Insert the following line in the /etc/fstab file
+     -  Insert the following line in the **/etc/fstab** file:
     
     ```
     /dev/disk/by-uuid/[UUID of /dev/mapper/vg_hana_data_HN1-hana_data] /hana/data/HN1 xfs defaults,nofail 0 2
@@ -181,7 +181,7 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
     
     ```
     
-     -  Mount the new volumes
+     -  Mount the new volumes:
     
     ```
     sudo mount -a
@@ -189,7 +189,7 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
     ```
 2.  **\[A\]** Set up the disk layout:
     
-     -  For demo systems, you can place your HANA data and log files on one disk. Create a partition on /dev/disk/azure/scsi1/lun0 and format it with xfs
+     -  For demo systems, you can place your HANA data and log files on one disk. Create a partition on /dev/disk/azure/scsi1/lun0 and format it with xfs:
     
     ```
     sudo sh -c 'echo -e "n\n\n\n\n\nw\n" | fdisk /dev/disk/azure/scsi1/lun0'
@@ -200,14 +200,14 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
     
     ```
     
-     -  Insert this line in the /etc/fstab file
+     -  Insert this line in the **/etc/fstab** file:
     
     ```
     /dev/disk/by-uuid/[UUID] /hana xfs defaults,nofail 0 2
     
     ```
     
-     -  Create the target directory and mount the disk
+     -  Create the target directory and mount the disk:
     
     ```
     sudo mkdir /hana
@@ -248,7 +248,7 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
      -  Confirm Database User (SYSTEM) Password: Enter the database user password again to confirm.
      -  Restart system after machine reboot? \[n\]: Select Enter.
      -  Do you want to continue? (y/n): Validate the summary. Enter y to continue.
-6.  **\[A\]** Upgrade the SAP Host Agent. Download the latest SAP Host Agent archive from the SAP Software Center and run the following command to upgrade the agent. Replace the path to the archive to point to the file that you downloaded
+6.  **\[A\]** Upgrade the SAP Host Agent. Download the latest SAP Host Agent archive from the SAP Software Center and run the following command to upgrade the agent. Replace the path to the archive to point to the file that you downloaded:
     
     ```
     sudo /usr/sap/hostctrl/exe/saphostexec -upgrade -archive [path to SAP Host Agent SAR]
