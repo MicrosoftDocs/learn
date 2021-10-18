@@ -127,7 +127,7 @@ Because you're adding more parameters that vary between each environment, you de
    | Name | Value |
    |-|-|
    | ReviewApiKey | sandboxsecretkey |
-   | ReviewApiUrl | https://sandbox.contoso.com/reviews |
+   | ReviewApiUrl | `https://sandbox.contoso.com/reviews` |
 
 1. Select the padlock icon next to the **ReviewApiKey** variable. This step tells Azure Pipelines to treat the variable's value securely.
 
@@ -142,7 +142,7 @@ Because you're adding more parameters that vary between each environment, you de
    | Name | Value |
    |-|-|
    | ReviewApiKey | productionsecretkey |
-   | ReviewApiUrl | https://api.contoso.com/reviews |
+   | ReviewApiUrl | `https://api.contoso.com/reviews` |
 
    Remember to select the padlock icon next to the **ReviewApiKey** variable.
 
