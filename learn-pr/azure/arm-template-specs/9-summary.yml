@@ -5,10 +5,10 @@ metadata:
   unitType: summary
   title: Summary
   description: Summary.
-  ms.date: 05/17/2021
+  ms.date: 09/30/2021
   author: johndowns
   ms.author: jodowns
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
