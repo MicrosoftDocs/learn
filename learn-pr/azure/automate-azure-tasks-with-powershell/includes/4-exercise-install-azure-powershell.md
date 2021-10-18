@@ -1,4 +1,4 @@
-In this unit, you will install **PowerShell** on your local machine.
+In this unit, you'll learn how to check the version of **PowerShell** that is installed on your local machine, and install the latest version.
 
 > [!NOTE]
 > This exercise guides you through creating a local installation of PowerShell tools. The remainder of this module uses the Azure Cloud Shell, so that you can leverage the free subscription support in Microsoft Learn. If you prefer, consider this exercise as an optional activity and just review the instructions.
@@ -86,9 +86,19 @@ Windows PowerShell is included with the Windows operating system; however, we re
     ```powershell
     $PSVersionTable.PSVersion
     ```
+    
+    OR
 
-If the major version number is lower than 7.0.6 or 7.1.3, follow these instructions for [upgrading existing Windows PowerShell](/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.1).
-
+    ```powershell
+    pwsh -ver
+    ```
+    If the major version number is lower than 7.0.6 or 7.1.3, follow the instructions on the following page to [upgrade existing Windows PowerShell](/powershell/scripting/install/installing-powershell-on-windows). It is important to install the SDK tu support .NET tools, as well.
+   
+    ```powershell
+    dotnet tool install --global PowerShell
+    ```
+    Then run PowerShell version command again to verify your installed version.
+    
 ::: zone-end
 
-You must set up your local machine(s) to support PowerShell. In the next unit, we';; review the additional commands you can add, including the Azure Az PowerShell module.
+You must set up your local machine(s) to support PowerShell. In the next unit, we'll review the additional commands you can add, including the Azure Az PowerShell module.
