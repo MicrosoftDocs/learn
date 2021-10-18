@@ -77,7 +77,7 @@ Edge scenarios often must run on different platforms. Azure SQL Edge provides yo
 
 Security is a primary concern when deploying IoT apps to the edge. Any device that's accessible over the internet is at risk of being a malicious hacker's target. Consequently, any data stored on that device can be comprised.
 
-SQL Server is the most secure database platform available. Because Azure SQL Edge is based on SQL Server technology, so it has the same security features of SQL Server Enterprise. The following table details these built-in security features.
+SQL Server is the most secure database platform available. Because Azure SQL Edge is based on SQL Server technology, it has the same security features of SQL Server Enterprise. The following table details these built-in security features.
 
 | Feature        | Description                                                  |
 | -------------- | ------------------------------------------------------------ |
