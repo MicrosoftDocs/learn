@@ -1,6 +1,6 @@
 Following successful Arc-enablement of Wide World Importers' thousands of servers, continuing to ensure these servers are organized and managed from the Azure plane is essential. We consolidate a set of best practices around tagging, log analytics, health alerts, and update management to ensure that resources are visible, monitored, and manageable. Furthermore, we introduce you to Azure Automanage enabling you point, click, set, and forget across your entire compute infrastructure. With Azure Automanage, you can automatically the best Azure practices across security, governance, and update management for your servers anywhere. 
 
-## Organize Arc-enabled Servers
+## Organize Azure Arc-enabled servers
 
 Ensure machines are tagged and associated with Log Analytics workspaces to ensure organized within Azure. 
 
@@ -18,13 +18,13 @@ Create a Resource Health alert to alert when an Arc-enabled Server is no longer 
 
 **Previous resource status = Available**
 
-## Manage the Connected Machine Agent
+## Manage the Connected Machine agent
 
 After initial deployment of the Azure Arc-enabled servers Connected Machine agent for Windows or Linux, you may need to reconfigure the agent, upgrade it, or remove it from the computer. You can easily manage these routine maintenance tasks manually or through automation, which reduces both operational error and expenses.
 
 For the best experience and most recent security and bug fixes, we recommend keeping the Azure Arc-enabled servers' agent up to date. Out-of-date agents will be identified with an Azure Advisor alert. Specify the following when configuring the alert:
 
-**Recommendation type = Upgrade to the latest version of the Azure Connected Machine Agent**
+**Recommendation type = Upgrade to the latest version of the Azure Connected Machine agent**
 
 ## Beginning using Azure services
 
