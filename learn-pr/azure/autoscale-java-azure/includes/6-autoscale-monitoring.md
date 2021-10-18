@@ -1,4 +1,4 @@
-In this unit, we'll look at autoscale monitoring.
+In this unit, we'll look at autoscale monitoring concepts.
 
 ## Monitoring
 

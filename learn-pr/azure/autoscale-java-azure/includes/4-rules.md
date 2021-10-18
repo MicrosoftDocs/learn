@@ -1,4 +1,4 @@
-In this unit, we'll look at autoscaling rules, and then in the next exercise, trigger the rules.
+In this unit, we'll look at autoscaling rule concepts, and then in the next exercise, trigger the rules.
 
 ## Rules
 
