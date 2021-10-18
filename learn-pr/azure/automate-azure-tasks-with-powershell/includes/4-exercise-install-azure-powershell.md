@@ -70,7 +70,7 @@ On macOS, install **PowerShell** by using the Homebrew package manager.
 
 ## Windows
 
-Windows PowerShell is included with the Windows operating system; however, we recommend that you install PowerShell 7.0.6 LTS, PowerShell 7.1.3, or higher for use with Azure Az PowerShell. You can check the version you have installed by using the following steps:
+Windows PowerShell is included with the Windows operating system; however, we recommend installing PowerShell 7.0.6 LTS, PowerShell 7.1.3, or higher for use with Azure Az PowerShell. You can check which version is installed by using the following steps:
 
 1. In the **System tray search box**, type **PowerShell**. You may have multiple shortcut links:
     - PowerShell 7 (x64) - The 64-bit version. Generally, this is the shortcut you should choose.
@@ -92,13 +92,14 @@ Windows PowerShell is included with the Windows operating system; however, we re
     ```powershell
     pwsh -ver
     ```
-    If the major version number is lower than 7.0.6 or 7.1.3, follow the instructions on the following page to [upgrade existing Windows PowerShell](/powershell/scripting/install/installing-powershell-on-windows). It is important to install the SDK tu support .NET tools, as well.
+    If the major version number is lower than 7, follow the instructions to [upgrade existing Windows PowerShell](/powershell/scripting/install/installing-powershell-on-windows). It is important to install the SDK tu support .NET tools, as well.
    
     ```powershell
     dotnet tool install --global PowerShell
     ```
-    Then run PowerShell version command again to verify your installed version.
+    
+    After the .NET tool has been installed, run the PowerShell version command again to verify your installation.
     
 ::: zone-end
 
-You must set up your local machine(s) to support PowerShell. In the next unit, we'll review the additional commands you can add, including the Azure Az PowerShell module.
+You will also need to set up your local machine(s) to support PowerShell. In the next unit, we'll review commands you can add, including the Azure Az PowerShell module.
