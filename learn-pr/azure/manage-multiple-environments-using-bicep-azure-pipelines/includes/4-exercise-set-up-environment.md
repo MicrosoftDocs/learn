@@ -11,12 +11,12 @@ To meet these objectives, you'll:
 
 ## Get the Azure DevOps project
 
-Here you make sure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
+Make sure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
 
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated Azure DevOps project.
 
 > [!TIP]
-> Even if you completed the previous module in the learning path, please follow these instructions to create a new project and ensure you give it a new name.
+> Even if you completed the previous module in the learning path, please follow these instructions to create a new project. Be sure to give it a new name.
 
 ### Run the template
 
@@ -25,13 +25,13 @@ Run a template that sets up your Azure DevOps project.
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepenvironments&azure-portal=true)
 
-On the Azure DevOps Demo Generator site, follow these steps to run the template:
+On the Azure DevOps Demo Generator site, follow these steps:
 
 1. Select **Sign In** and accept the usage terms.
 
 1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *toy-website-environments*.
 
-    :::image type="content" source="../media/4-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::
+    :::image type="content" source="../media/4-create-new-project.png" alt-text="Screenshot that shows creating a project through the Azure DevOps Demo Generator.":::
 
 1. Select **Create Project**.
 
@@ -46,29 +46,29 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Repos** > **Files**.
 
-   :::image type="content" source="../media/4-repos-files.png" alt-text="Screenshot of Azure DevOps that shows the Repos menu, with Files highlighted.":::
+   :::image type="content" source="../media/4-repos-files.png" alt-text="Screenshot of Azure DevOps that shows the Repos menu and the Files item.":::
 
 1. Select **Clone**.
 
-   :::image type="content" source="../media/4-clone.png" alt-text="Screenshot of Azure DevOps showing the repository, with the Clone button highlighted.":::
+   :::image type="content" source="../media/4-clone.png" alt-text="Screenshot of Azure DevOps that shows the repository and the Clone button.":::
 
-1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the username and password displayed to somewhere safe.
+1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the displayed username and password to somewhere safe.
 
 1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
-    :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the Clone in VS Code button highlighted.":::
+    :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings and the button for cloning in Visual Studio Code.":::
 
 1. Create a folder to use for the repository, and then choose **Select Repository Location**.
 
 1. You're using this repository for the first time, so you're prompted to sign in.
 
-    If you're using Windows, enter the same credentials you used to sign in to Azure DevOps earlier in this exercise.
+    If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
 
     If you're using macOS, enter the Git username and password that you generated a few moments ago.
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
 
-   :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code that shows a prompt to open the cloned repository, with the Open button highlighted.":::
+   :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code that shows a prompt to open the cloned repository.":::
 
 ## Sign in to Azure
 
@@ -110,11 +110,11 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 1. If the dropdown control at the right displays **pwsh** or **PowerShell**, the correct shell is open and you can skip to the next section.
 
-   :::image type="content" source="../../includes/media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with 'pwsh' displayed in the dropdown control.":::
+   :::image type="content" source="../../includes/media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the PowerShell indicator displayed in the dropdown control.":::
 
    If **pwsh** or **PowerShell** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **pwsh** or **PowerShell**.
 
-   :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown list for selecting your preferred terminal shell.":::
+   :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown control for selecting your preferred terminal shell.":::
 
 1. In the terminal, select the plus sign (**+**) to create a new terminal with pwsh or PowerShell as the shell.
 
@@ -158,73 +158,69 @@ New-AzResourceGroup -Name ToyWebsiteProduction -Location westus
 
 ## Create service connections in Azure Pipelines
 
-Next, create two service connections in Azure Pipelines - one for your test environment and another for your production environment. This process automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy to the resource group.
+Next, create two service connections in Azure Pipelines: one for your test environment and another for your production environment. This process automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy to the resource group.
 
 1. In your browser, select **Project settings**.
 
-   :::image type="content" source="../../includes/media/azure-devops-project-settings.png" alt-text="Screenshot of Azure DevOps that shows the menu, with the 'Project settings' item highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-project-settings.png" alt-text="Screenshot of Azure DevOps that shows the menu item for project settings.":::
 
 1. Select **Service connections** > **Create service connection**.
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the 'Create service connection' button highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows the button for creating a service connection.":::
 
 1. Select **Azure Resource Manager** > **Next**.
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Azure Resource Manager service connection type highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the Azure Resource Manager service connection type.":::
 
 1. Select **Service principal (automatic)** > **Next**.
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Service principal (automatic) option highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the service principal option.":::
 
-1. In the **Subscription** drop-down, select your Azure subscription.
+1. In the **Subscription** dropdown list, select your Azure subscription.
 
    A popup window might appear, asking you to sign in to Azure. If it does, enter your credentials and sign in.
 
-1. In the **Resource group** drop-down, select **ToyWebsiteTest**.
+1. In the **Resource group** dropdown list, select **ToyWebsiteTest**.
 
-1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
+1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected, and then select **Save**.
 
-   :::image type="content" source="../media/4-create-service-connection-principal-details-test.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page for the test environment, with the details completed and the Next button highlighted.":::
+   :::image type="content" source="../media/4-create-service-connection-principal-details-test.png" alt-text="Screenshot of Azure DevOps that shows completed details for creating a service connection for the test environment.":::
 
    > [!TIP]
    > For simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.
 
-1. Select **Save**.
+1. Repeat the preceding process to create another new service connection named **ToyWebsiteProduction**, which deploys to the resource group named **ToyWebsiteProduction**.
 
-1. Repeat the above process to create another new service connection named **ToyWebsiteProduction**, which deploys to the resource group named **ToyWebsiteProduction**:
+   :::image type="content" source="../media/4-create-service-connection-principal-details-production.png" alt-text="Screenshot of Azure DevOps that shows the page for creating a service connection for the production environment, with completed details.":::
 
-   :::image type="content" source="../media/4-create-service-connection-principal-details-production.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page for the production environment, with the details completed and the Next button highlighted.":::
-
-   If the resource group list doesn't update, refresh the page in your browser and try again.
+   If the resource group list isn't updated, refresh the page in your browser and try again.
 
 ## Create environments in Azure Pipelines
 
 1. In your browser, go to **Pipelines** > **Environments**.
 
-   :::image type="content" source="../media/4-environments.png" alt-text="Screenshot of the Azure DevOps interface that shows the Pipelines menu, with the Environments item highlighted.":::
+   :::image type="content" source="../media/4-environments.png" alt-text="Screenshot of the Azure DevOps interface that shows the Pipelines menu and the Environments item.":::
 
 1. Select **New environment**.
 
-   :::image type="content" source="../media/4-environments-new.png" alt-text="Screenshot of the Azure DevOps interface that shows the Environments page, with the button for creating an environment highlighted.":::
+   :::image type="content" source="../media/4-environments-new.png" alt-text="Screenshot of the Azure DevOps interface that shows the Environments page and the button for creating an environment.":::
 
 1. Enter **Test** as the environment name.
 
-   Leave the description blank. For **Resource**, select **None**.
+   Leave the description blank. For **Resource**, select **None**. Then select **Create**.
 
    > [!NOTE]
    > In Azure Pipelines, environments are used to enable deployment features. Some of these features apply only when you're deploying to Kubernetes or to virtual machines. In this module, we don't use these features and you can ignore them.
 
-1. Select **Create**.
+   :::image type="content" source="../media/4-environments-new-details-test.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Test, with completed details and the Create button.":::
 
-   :::image type="content" source="../media/4-environments-new-details-test.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Test, with the details completed and the Create button highlighted.":::
+1. Select the arrow to return to the environments list.
 
-1. Select the left arrow to return to the environments list.
-
-   :::image type="content" source="../media/4-environment-back.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, with the left arrow button highlighted.":::
+   :::image type="content" source="../media/4-environment-back.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, including the arrow button.":::
 
 1. Repeat the process to create another environment named **Production**.
 
-   :::image type="content" source="../media/4-environments-new-details-production.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Production, with the details completed and the Create button highlighted.":::
+   :::image type="content" source="../media/4-environments-new-details-production.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Production, with completed details.":::
 
    Leave the production environment page open.
 
@@ -232,11 +228,11 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
 1. Near the upper right of the page, select the button with three dots and select **Approvals and checks** from the pop-up menu.
 
-   :::image type="content" source="../media/4-add-check.png" alt-text="Screenshot of the Azure DevOps interface that shows the Website environment, with the three dots button highlighted.":::
+   :::image type="content" source="../media/4-add-check.png" alt-text="Screenshot of the Azure DevOps interface that shows the Website environment and the button with three dots.":::
 
 1. Select **Approvals**.
 
-   :::image type="content" source="../media/4-add-check-approval.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding a check, with the Approvals item highlighted.":::
+   :::image type="content" source="../media/4-add-check-approval.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding a check and the Approvals item.":::
 
 1. In the **Approvers** text box, type your own name and select yourself.
 
@@ -246,7 +242,7 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
 1. Select **Create**.
 
-   :::image type="content" source="../media/4-add-check-approval-details.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding an approval check, with the details completed and the Create button highlighted.":::
+   :::image type="content" source="../media/4-add-check-approval-details.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding an approval check, with completed details and the Create button.":::
 
 ## Delete the old environment
 
@@ -256,7 +252,7 @@ In the previous versions of the pipeline, you used a single environment named *W
 
 1. Select the **Website** environment.
 
-   :::image type="content" source="../media/4-environments-website.png" alt-text="Screenshot of the Azure DevOps interface that shows the list of environments, with the Website environment highlighted.":::
+   :::image type="content" source="../media/4-environments-website.png" alt-text="Screenshot of the Azure DevOps interface that shows the list of environments and the Website environment.":::
 
 1. Near the upper right of the page, select the button with three dots and select **Delete** from the pop-up menu.
 
@@ -272,16 +268,16 @@ In the previous versions of the pipeline, you used a single set of variables to 
 
 1. Select the **Edit** button.
 
-   :::image type="content" source="../media/4-pipeline-edit.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline, with the Edit button highlighted.":::
+   :::image type="content" source="../media/4-pipeline-edit.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline and the Edit button.":::
 
 1. Select the **Variables** button.
 
-   :::image type="content" source="../media/4-pipeline-variables.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline, with the Variables button highlighted.":::
+   :::image type="content" source="../media/4-pipeline-variables.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline and the Variables button.":::
 
 1. Select the **Delete variable** button for each of the three variables.
 
-   :::image type="content" source="../media/4-variables-delete.png" alt-text="Screenshot of the Azure DevOps interface that shows the list of variables, with the delete button highlighted.":::
+   :::image type="content" source="../media/4-variables-delete.png" alt-text="Screenshot of the Azure DevOps interface that shows the list of variables and the delete button.":::
 
-1. Select the **Save** button.
+1. Select **Save**.
 
-   :::image type="content" source="../media/4-variables-delete-save.png" alt-text="Screenshot of the Azure DevOps interface that shows three variables are deleted, with the Save button highlighted.":::
+   :::image type="content" source="../media/4-variables-delete-save.png" alt-text="Screenshot of the Azure DevOps interface that shows the deletion of three variables and the Save button.":::
