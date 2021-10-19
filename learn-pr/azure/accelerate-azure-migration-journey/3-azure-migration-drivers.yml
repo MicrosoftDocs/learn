@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.accelerate-migration-journey.3-azure-migration-drivers
-title: Azure migration drivers
+title: Azure migration and modernization drivers
 metadata:
-  title: Azure migration drivers
-  description: Understand the primary drivers for an Azure migration.
+  title: Azure migration and modernization drivers
+  description: Understand the primary drivers for an Azure migration and modernization.
   ms.date: 02/12/2021
   author: jamcneil
   ms.author: jumcn

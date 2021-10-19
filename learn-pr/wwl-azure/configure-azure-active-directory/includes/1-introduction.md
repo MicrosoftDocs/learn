@@ -21,7 +21,7 @@ In this module, you will learn how to:
 
  -  Identify the features and uses of Azure Active Directory.
  -  Define the main Azure Active Directory components such as identity, account and tenant.
- -  Compare Azure Active Directory to Azure Directory Domain Services.
+ -  Compare Active Directory Domain Services to Azure Active Directory.
  -  Identify features of Azure Active Directory editions.
  -  Identify features and usage cases for Azure AD Join.
  -  Identify features and usage cases for Self-Service Password Reset.
