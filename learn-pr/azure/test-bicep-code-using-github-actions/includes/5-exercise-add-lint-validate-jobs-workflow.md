@@ -13,15 +13,21 @@ During the process, you'll:
 
 1. In Visual Studio Code, open the *workflow.yml* file in the *.github/workflows* folder.
 
-1. Below the `jobs:` line, add a lint job:
+1. In the `env:` section, change the `AZURE_RESOURCEGROUP_NAME` variable's value to `ToyWebsiteTest`:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="16-21" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="10-12" highlight="2" :::
+
+1. Below the `jobs:` line, above the `deploy` job, add a new lint job:
+
+   :::code language="yaml" source="code/5-workflow.yml" range="14-21" highlight="2-6" :::
+
+   <!-- TODO watch indentation -->
 
    This job defines a step to check out the code and a step that runs the `az bicep build` command to lint the Bicep file.
 
 1. Below the lines that you just added, add a validation job:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="23-38" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="22-37" :::
 
    This job defines steps to check out the code, sign in to your Azure environment, and use the `azure/arm-deploy@v1` action with the `Validate` deployment mode.
 
@@ -29,7 +35,7 @@ During the process, you'll:
 
 1. Below the `runs-on` line in the `deploy` job, add a `needs` statement: 
 
-   :::code language="yaml" source="code/5-workflow.yml" range="42" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="41" :::
 
    The `needs` statements indicates that the deploy job depends on the lint and validate jobs completing successfully before it can run.
 
@@ -53,7 +59,7 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 1. Verify that your *workflow.yml* file looks like the following:
 
-   :::code language="yaml" source="code/5-workflow.yml" :::
+   :::code language="yaml" source="code/5-workflow.yml" highlight="11, 15-37" :::
 
    If it doesn't, update it to match this example, and then save it.
 

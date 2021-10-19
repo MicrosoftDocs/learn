@@ -38,6 +38,8 @@ In GitHub Actions, an *environment* represents the place to which your solution 
 
 You create an environment by using the GitHub web interface.
 
+<!-- TODO mention public repo or GH Ent only -->
+
 After you create an environment you can reference it in any jobs in your workflow:
 
 :::code language="yaml" source="code/6-environment.yml" range="15-52" highlight="26" :::

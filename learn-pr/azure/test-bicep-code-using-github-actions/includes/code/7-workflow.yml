@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: deploy-toy-website-test
 
 on: 
   push:
@@ -6,11 +6,10 @@ on:
       - main
     paths: 
       - 'deploy/**'
-  workflow_dispatch:
-    
-env: 
-    AZURE_RESOURCEGROUP_NAME: ToyWebsiteTest
-    ENVIRONMENT_TYPE: Test
+
+env:
+  AZURE_RESOURCEGROUP_NAME: ToyWebsiteTest
+  ENVIRONMENT_TYPE: Test
 
 jobs:
   lint: 

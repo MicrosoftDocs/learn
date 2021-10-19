@@ -34,6 +34,8 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 1. Select the **Public** checkbox.
 
+   When you create your own repositories, you might want to make them private. In this module, you'll work with some features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
+
 1. Select **Create repository from template**. 
 
    :::image type="content" source="../media/4-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page.":::
