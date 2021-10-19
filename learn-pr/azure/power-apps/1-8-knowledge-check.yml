@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.power-apps.1-8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 10/19/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: Choose the best response for each question. Then select Check your answers.
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: " What can be measured using the measure in MR component?"
+      choices:
+        - content: "distance"
+          isCorrect: false
+          explanation: 
+        - content: "volume"
+          isCorrect: false
+          explanation: 
+        - content: " area"
+          isCorrect: false
+          explanation: 
+        - content: "All of the above"
+          isCorrect: true
+          explanation: 
+    - content: "Which power apps property can show a list of records that contain different sorts of data?"
+      choices:
+        - content: "Drop down"
+          isCorrect: false
+          explanation: 
+        - content: "Image"
+          isCorrect: false
+          explanation: 
+        - content: "Gallery"
+          isCorrect: true
+          explanation: 
+    - content: "What is the syntax for the If statement?"
+      choices:
+        - content: "If ( Condition, ThenResult [, DefaultResult ] )"
+          isCorrect: false
+          explanation: 
+        - content: "If ( Condition1, ThenResult1 [, Condition2, ThenResult2, ... [ , DefaultResult ] ] )"
+          isCorrect: false
+          explanation: 
+        - content: "All of the above"
+          isCorrect: true
+          explanation: 
+    - content: "What is the syntax for the If statement?"
+      choices:
+        - content: "Switch ( Formula, Match1, Result1 [, Match2, Result2, ... [, DefaultResult ] ] )"
+          isCorrect: true
+          explanation: 
+        - content: "Switch ( Formula, Result1 [, Match2, Result2, ... [, DefaultResult ] ] )"
+          isCorrect: false
+          explanation: 
+        - content: "Switch ( Condition, ThenResult [, DefaultResult ] )"
+          isCorrect: false
+          explanation: 
+    - content: "How many pre-built connectors do power apps support?"
+      choices:
+        - content: "250+"
+          isCorrect: true
+          explanation: 
+        - content: "350+"
+          isCorrect: false
+          explanation: 
+        - content: "360+"
+          isCorrect: true
+          explanation: 
+      - content: "Connect to a __________ site to instantly produce an app from a custom list, or create a connection before adding data to an existing app or creating a new one."
+      choices:
+        - content: "SharePoint"
+          isCorrect: true
+          explanation: 
+        - content: " Office 365 outlook"
+          isCorrect: false
+          explanation: 
+        - content: "SQL server"
+          isCorrect: false
+          explanation: 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.power-apps.1-7-exercise-measure-in-mr
+title: Exercise measure in MR 
+metadata:
+  title: Exercise measure in MR 
+  description: You build two-dimensional and three-dimensional polygons during measuring, which can be used to confirm how a specific-sized object would fit within a space. 
+  ms.date: 10/19/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 8
+content: |
+  [!include[](includes/1-7-exercise-measure-in-mr.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.power-apps.1-5-exercise-view-in-mr
+title: Exercise View in MR 
+metadata:
+  title:  Exercise View in MR 
+  description: you'll be able to design the main pages of the application like splash screen, product page and so
+  ms.date: 10/19/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 15
+content: |
+  [!include[](includes/1-5-exercise-view-in-mr.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.power-apps.1-3-exercise-add-data-source
+title: Exercise add data source
+metadata:
+  title: Exercise add data source
+  description: you'll learn how to create a SharePoint site and add data to your SharePoint list
+  ms.date: 10/19/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 8
+content: |
+  [!include[](includes/1-3-exercise-add-data-source.md)]
