@@ -1,14 +1,14 @@
-You've learned that many different types of cyberattacks can be perpetrated by cybercriminals. But how do you defend against cybercriminals and their cyberattacks? There are several different ways that you can keep cyberattackers at bay, from multi-factor authentication to improved browser security and informing and educating users. 
+You've learned that many different types of cyberattacks can be perpetrated by cybercriminals. But how do you defend against cybercriminals and their cyberattacks? There are several different ways that you can keep cyberattackers at bay, from multifactor authentication to improved browser security and informing and educating users. 
 
 ### What is a mitigation strategy?
 
 A mitigation strategy is a measure or collection of steps that an organization can take to prevent or defend against a cyberattack. This is usually done by implementing technological and organizational policies and processes designed to protect against attacks. There are many different mitigation strategies that an organization can take to defend against different types of cyberattacks. Here are a few common ones:
 
-### Multi-factor authentication
+### Multifactor authentication
 
-Traditionally, if a user's password or username had been compromised, this would allow a cybercriminal to gain control of the compromised account. But multi-factor authentication was introduced to combat this.
+Traditionally, if a user's password or username had been compromised, this would allow a cybercriminal to gain control of the compromised account. But multifactor authentication was introduced to combat this.
 
-Multi-factor authentication works by requiring a user to provide multiple forms of identification to verify that they are, in fact, who they claim to be. The most common form of identification used to verify or authenticate a user is a password.  This represents something the user knows.  Two other authentication methods are providing something the user is, such as a fingerprint or retinal scan (a biometric form of authentication), or providing something the user has, such as a phone, hardware key, or other trusted device.  Multi-factor authentication employs two or more of these forms of authentication to verify a user is who they claim to be.
+Multifactor authentication works by requiring a user to provide multiple forms of identification to verify that they are, in fact, who they claim to be. The most common form of identification used to verify or authenticate a user is a password.  This represents something the user knows.  Two other authentication methods are providing something the user is, such as a fingerprint or retinal scan (a biometric form of authentication), or providing something the user has, such as a phone, hardware key, or other trusted device.  multifactor authentication employs two or more of these forms of authentication to verify a user is who they claim to be.
 
 For example, a bank might require that a user provides security codes sent to their mobile device, in addition to their username and password, to access their online bank account.
 

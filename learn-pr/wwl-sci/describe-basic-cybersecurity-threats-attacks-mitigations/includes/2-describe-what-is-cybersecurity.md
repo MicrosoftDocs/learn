@@ -4,7 +4,7 @@ People, organizations, and even governments are routinely falling victim to cybe
 
 A cyberattack is commonly defined as an attempt to gain illegal access to a computer or computer system for the purpose of causing damage or harm. But thinking of just computers or computer systems, in a traditional sense, is limiting. The reality is that a cyberattack can occur on almost any modern digital device, and the impact can range from a mere inconvenience for an individual to global economic and social disruption.
 
-An attacker can use people, computers, phones, applications, messages, and system processes to carry out an attack. As a result, individuals, organizations, institutions, and even governments can be victims of an attack. Attacks can operate in a variety of ways. For example, an attack can:
+An attacker can use people, computers, phones, applications, messages, and system processes to carry out an attack. As a result, individuals, organizations, institutions, and even governments can be victims of an attack. Attacks can operate in various ways. For example, an attack can:
 
 - Lock data and processes, and demand ransom in return.
 - Remove vital information to cause serious harm.
@@ -26,7 +26,7 @@ Cybercriminals can be located anywhere, including embedded inside an organizatio
 
 ## What is cybersecurity?
 
-Cybersecurity refers to technologies, processes, and training that help protect systems, networks, programs, and data from cyberattacks, damage, and unauthorized access. It’s also called *information technology security* or *infosec.* Cybersecurity enables you to achieve the following goals:
+Cybersecurity refers to technologies, processes, and training that help protect systems, networks, programs, and data from cyberattacks, damage, and unauthorized access. Cybersecurity enables you to achieve the following goals:
 
 :::image type="content" source="../media/confidentiality-integrity-availability-triangle.png" alt-text="Diagram showing the three aspects of CIA: Confidentiality, Integrity, and Availability.":::
 
