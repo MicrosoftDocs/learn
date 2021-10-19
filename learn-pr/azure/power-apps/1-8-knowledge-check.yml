@@ -16,70 +16,59 @@ quiz:
   questions:
     - content: " What can be measured using the measure in MR component?"
       choices:
-        - content: "distance"
+        - content: "Distance"
           isCorrect: false
-          explanation: 
+          explanation: The amount of space between to two points.
         - content: "volume"
           isCorrect: false
-          explanation: 
+          explanation: The amount of space enclosed in a three-dimensional space.
         - content: " area"
           isCorrect: false
-          explanation: 
+          explanation: The amount of space enclosed in a two-dimensional space.
         - content: "All of the above"
           isCorrect: true
-          explanation: 
+          explanation: Measure in MR measures distance, volume and area.
     - content: "Which power apps property can show a list of records that contain different sorts of data?"
       choices:
         - content: "Drop down"
           isCorrect: false
-          explanation: 
+          explanation: Dropdowns are toggleable, contextual overlays for displaying lists of links and more.
         - content: "Image"
           isCorrect: false
-          explanation: 
+          explanation: An artifact that depicts visual perception.
         - content: "Gallery"
           isCorrect: true
-          explanation: 
+          explanation: A control that contains other controls and shows a set of data.
     - content: "What is the syntax for the If statement?"
       choices:
         - content: "If ( Condition, ThenResult [, DefaultResult ] )"
           isCorrect: false
-          explanation: 
+          explanation: Determines whether any condition in a set is true and then returns a result or executes an action.
         - content: "If ( Condition1, ThenResult1 [, Condition2, ThenResult2, ... [ , DefaultResult ] ] )"
           isCorrect: false
-          explanation: 
+          explanation: Determines whether any condition in a set is true and then returns a result or executes an action.
         - content: "All of the above"
           isCorrect: true
-          explanation: 
-    - content: "What is the syntax for the If statement?"
+          explanation: Determines whether any condition in a set is true and then returns a result or executes an action.
+    - content: "What is the syntax for the Switch statement?"
       choices:
         - content: "Switch ( Formula, Match1, Result1 [, Match2, Result2, ... [, DefaultResult ] ] )"
           isCorrect: true
-          explanation: 
+          explanation: Determines whether the result of a formula matches any value in a set (Switch) and then returns a result or executes an action.
         - content: "Switch ( Formula, Result1 [, Match2, Result2, ... [, DefaultResult ] ] )"
           isCorrect: false
-          explanation: 
+          explanation: Determines whether the result of a formula matches any value in a set (Switch) and then returns a result or executes an action.
         - content: "Switch ( Condition, ThenResult [, DefaultResult ] )"
           isCorrect: false
-          explanation: 
-    - content: "How many pre-built connectors do power apps support?"
-      choices:
-        - content: "250+"
-          isCorrect: true
-          explanation: 
-        - content: "350+"
-          isCorrect: false
-          explanation: 
-        - content: "360+"
-          isCorrect: true
-          explanation: 
+          explanation: Determines whether the result of a formula matches any value in a set (Switch) and then returns a result or executes an action.
       - content: "Connect to a __________ site to instantly produce an app from a custom list, or create a connection before adding data to an existing app or creating a new one."
       choices:
         - content: "SharePoint"
           isCorrect: true
-          explanation: 
+          explanation: SharePoint is a web-based collaborative platform that integrates with Microsoft Office.
         - content: " Office 365 outlook"
           isCorrect: false
-          explanation: 
+          explanation: Microsoft 365 is provided by Microsoft and uses cloud-based technology to offer access and updates to Office applications like Word, Excel, PowerPoint and Outlook.
         - content: "SQL server"
           isCorrect: false
-          explanation: 
+          explanation: Microsoft SQL Server is a relational database management system developed by Microsoft. 
