@@ -17,6 +17,7 @@ Microsoft offers VMs in the Azure Marketplace, which already contain versions of
 Since the SQL Server images in the Azure Marketplace are not set up to use the collation, which is required by SAP NetWeaver applications, it needs to be changed immediately after the deployment. For SQL Server, this change of collation can be done by running the following command as soon as the VM has been deployed and an administrator can log into the deployed VM:
 
 ```
+Setup.exe /QUIET /ACTION=REBUILDDATABASE /INSTANCENAME=MSSQLSERVER /SQLSYSADMINACCOUNTS=[local admin account name] /SQLCOLLATION=SQL_Latin1_General_Cp850_BIN2
 
 ```
 
