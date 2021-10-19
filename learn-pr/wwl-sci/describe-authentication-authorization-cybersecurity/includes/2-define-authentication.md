@@ -35,10 +35,10 @@ The use of a biometric, something you are, can be used as a single factor authen
 
 Single-factor authentication is implemented because of convenience but is not suitable for a highly secure system.
 
-### Multi-factor authentication
+### Multifactor authentication
 
-Multi-factor authentication is a system where two, or even three, of the authentication types are used. By providing something that you know and something that you have, and something that you are, the security of the system is massively increased. For example, in a multi-factor authentication system that uses two types of authentications, you might be asked to provide a password, and then a number is sent to your cell phone. You then input this number, proving that you know your password and have your cell phone. This is a common approach when using multi-factor authentication to access your online bank account.
+Multifactor authentication is a system where two, or even three, of the authentication types are used. By providing something that you know and something that you have, and something that you are, the security of the system is massively increased. For example, in a multifactor authentication system that uses two types of authentications, you might be asked to provide a password, and then a number is sent to your cell phone. You then input this number, proving that you know your password and have your cell phone. This is a common approach when using multifactor authentication to access your online bank account.
 
 As mentioned earlier, biometric authentication is most often used in conjunction with another method of authentication. Consider the example of a bank that has a secured area where it keeps customers’ safety deposit boxes. Before someone can enter that secured area, they are typically required to successfully enter both a password and a fingerprint scan.
 
-Multi-factor authentication is an important way users and organizations can improve security and should be the default approach for authentication.
+Multifactor authentication is an important way users and organizations can improve security and should be the default approach for authentication.
