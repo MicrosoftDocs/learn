@@ -17,7 +17,7 @@ After a few seconds, the .NET console application is added to your solution.
 1. In the Visual Studio solution explorer, right-click the PredictiveMaintenanceConsole project.
 1. Select **Set as Startup Project**.
 1. Start your application.
-1. A console window opens and output similar to the following.
+1. A console window opens and output text to the console similar to the following.
 
     ```console
     Using model to make single prediction -- Comparing actual Machine_failure with predicted Machine_failure from sample data...
@@ -39,4 +39,4 @@ After a few seconds, the .NET console application is added to your solution.
     =============== End of process, hit any key to finish ===============
     ```
 
-Congratulations! You've trained and consumed a machine learning model!
+Congratulations! You've trained and consumed a machine learning model using ML.NET and Model Builder!

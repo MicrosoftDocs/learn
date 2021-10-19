@@ -21,7 +21,7 @@ Imagine you work for a manufacturing company that uses industrial machines as pa
 
 Machine learning may be able to help by analyzing historical data from these sensors and learning patterns to help you predict whether a machine needs maintenance or not.
 
-You'd like to take advantage of your .NET skills and use familiar tools like Visual Studio to build a machine learning solution, but don't have much experience with machine learning. As a result, you've decided to use ML.NET, an open-source machine learning framework for .NET and its Visual Studio extension, Model Builder, to help you build your machine learning model.
+You'd like to take advantage of your .NET skills and use familiar tools like Visual Studio to build a machine learning solution, but you don't have much experience with machine learning. As a result, you've decided to use ML.NET, an open-source machine learning framework for .NET and its Visual Studio extension, Model Builder, to help you build your machine learning model.
 
 ## The first step
 

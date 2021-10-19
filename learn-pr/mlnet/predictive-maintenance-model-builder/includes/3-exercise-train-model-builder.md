@@ -4,12 +4,12 @@ In this unit, you'll add a machine learning model to a .NET class library and ch
 
 With Model Builder, you can add machine learning to an existing project or a new project. Since you're starting from scratch, create a new C# class library project.
 
-1. Start Visual Studio
-1. On the Start Window, choose **Create a new project**
+1. Start Visual Studio.
+1. On the Start Window, choose **Create a new project**.
 1. In the Create a new project dialog, type "class library" into the search bar.
 1. Select **Class Library** from the list of options. Make sure that the language is C# and select **Next**.
 
-:::image type="content" source="../media/create-class-library-project.png" alt-text="Create class library project":::
+    :::image type="content" source="../media/create-class-library-project.png" alt-text="Create class library project":::
 
 1. In the Project name text box, type "PredictiveMaintenance". Leave the defaults for all other fields and select **Next**
 1. Select **.NET 6.0 (Preview)** from the Framework dropdown and select **Create** to scaffold your C# class library.
@@ -28,7 +28,7 @@ Once your class library project opens in Visual Studio, it's time to add machine
 1. From the list of new items in the Add New Item dialog, select **Machine Learning Model (ML.NET)**.
 1. In the Name text box, use the name "PredictiveMaintenanceModel.mbconfig" for your model and select **Add**.
 
-    :::image type="content" source="../media/create-class-library-project.png" alt-text="Create new MBConfig item":::
+    :::image type="content" source="../media/add-new-mbconfig-item.png" alt-text="Create new MBConfig item":::
 
 After a few seconds, a file called *PredictiveMaintenanceModel.mbconfig* is added to your project. Files that use the *.mbconfig* extension are Model Builder configuration files authored in JSON that allow you to:
 
@@ -38,9 +38,9 @@ After a few seconds, a file called *PredictiveMaintenanceModel.mbconfig* is adde
 
 ## Choose your scenario
 
-In addition to adding *PredictiveMaintenanceModel.mbconfig*, the first time you add a machine learning model to a project, the Model Builder screen opens. Now it's time to select your scenario:
+In addition to adding *PredictiveMaintenanceModel.mbconfig*, the first time you add a machine learning model to a project, the Model Builder screen opens. Now it's time to select your scenario.
 
-For our use case, we're trying to determine whether a machine is broken or not. Since there are only two options and we want to determine which state a machine is in, the data classification scenario makes the most sense.
+For your use case, you're trying to determine whether a machine is broken or not. Since there are only two options and you want to determine which state a machine is in, the data classification scenario makes the most sense.
 
 In the Scenario step of the Model Builder screen, select the **Data classification** scenario. Once you've selected this scenario, you're immediately advanced to the Environment screen.
 
@@ -48,13 +48,13 @@ In the Scenario step of the Model Builder screen, select the **Data classificati
 
 In the next unit, we'll learn some more about supported compute environments in Model Builder.
 
-In this unit, you'll choose the compute environment to train your machine learning model
+In this unit, you'll choose the compute environment to train your machine learning model.
 
 ## Choose your environment
 
 For data classification scenarios, only local environments that use your CPU are supported.
 
-1. In the Environment step of the Model Builder screen, select **Local**
+1. In the Environment step of the Model Builder screen, **Local (CPU)** is selected by default. Leave the default environment selected.
 1. Select **Next step**.
 
 :::image type="content" source="../media/choose-environment.png" alt-text="Choose local compute training environment":::
@@ -122,9 +122,9 @@ In this unit, you'll train a predictive maintenance model in Model Builder
 
 ## Set your training time
 
-Model Builder automatically sets how long you should train for based on the size of your file. In this case, to help Model Builder explore more models, provide a higher number.
+Model Builder automatically sets how long you should train for based on the size of your file. In this case, to help Model Builder explore more models, provide a higher number for the Train time.
 
-1. In the Train step of the Model Builder screen, set the Time to train (seconds) to 30. 
+1. In the Train step of the Model Builder screen, set the Time to train (seconds) to 30.
 1. Select **Train**
 
 ## Tracking the training process
@@ -139,7 +139,7 @@ In this unit, you'll evaluate your predictive maintenance model.
 
 ## Inspect your model
 
-The evaluate step in the Model Screen allows you to inspect the evaluation metrics and algorithm chosen for the best model. Remember that it's okay if your results are different from those mentioned in this module since the algorithm and hyperparameters chosen may be different. 
+The Evaluate step in the Model Builder screen allows you to inspect the evaluation metrics and algorithm chosen for the best model. Remember that it's okay if your results are different from those mentioned in this module since the algorithm and hyperparameters chosen may be different. 
 
 ## Test your model
 

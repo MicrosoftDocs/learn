@@ -2,7 +2,7 @@ In this unit, you'll learn about scenarios in Model Builder.
 
 ## What is a scenario?
 
-A scenario describes problem you're trying to solve using your data. Some common scenarios include:
+A scenario describes the problem you're trying to solve using your data. Some common scenarios include:
 
 - Categorizing data (organize articles by topic)
 - Predicting a numerical value (price of a home)
@@ -34,12 +34,12 @@ For unsupervised tasks, the **label is unknown**. Examples of unsupervised machi
 
 ## Scenarios in Model Builder
 
-Model Builder supports the following scenarios which map to the respective machine learning tasks
+Model Builder supports the following scenarios which map to the respective machine learning tasks.
 
 | Scenario | Machine Learning Task | Use Case |
 | --- | --- | --- |
 | Data classification | Binary and multiclass classification | Organize articles by topic |
-| Value prediction | Linear regression | Predict the price of a home |
+| Value prediction | Linear regression | Predict the price of a home based on features of the home |
 | Image classification | Image Classification (Deep Learning) | Organize images by animal species based on the content of an image |
 | Recommendation | Recommendation | Recommend movies based on the preferences of similar users |
 | Object detection | Object Detection (Deep Learning) | Identify physical damage in an image |
@@ -52,7 +52,7 @@ In this unit, you'll learn about the computing environments supported by Model B
 
 ## What are compute environments?
 
-Compute environments describes to the compute resources you'll use to train your machine learning model. 
+Compute environments describe the compute resources you'll use to train your machine learning model.
 
 ## Which environments are supported in Model Builder?
 
@@ -68,7 +68,7 @@ Model Builder supports the following environment options:
 
 Note that for the image classification scenario, GPU training is supported for local and Azure environments.
 
-Depending on your use case and support, there are various reasons why you might choose one over the other.
+Depending on your use case, there are various reasons why you might choose one over the other.
 
 ### Local compute environments
 
@@ -79,7 +79,7 @@ Some reasons why you might consider local compute environments include:
 
 ### Azure compute environments
 
-Scenarios like image classification and object detection are resource intensive. Using a GPU can often speed up the training process. If you don't have a GPU a computer with enough CPU or RAM, offloading the training process to Azure can lighten the load on your system.
+Scenarios like image classification and object detection are resource intensive. Using a GPU can often speed up the training process. If you don't have a GPU or a computer with enough CPU or RAM, offloading the training process to Azure can lighten the load on your system.
 
 In the next unit, you'll choose the compute environment for your predictive maintenance model.
 
@@ -95,7 +95,7 @@ Data is the most important component for building machine learning models. The p
 
 ## Choose your data source type
 
-Model Builder supports loading data from the following sources:
+Depending on your scenario, Model Builder supports loading data from the following sources:
 
 - Delimited files (comma, semicolon, tab)
 - Local and remote SQL Server databases
@@ -124,17 +124,17 @@ Depending on the scenario you choose, you'll have to define the purpose of certa
 
 In cases where you'd like to customize how your data is loaded, Model Builder provides advanced data options. These advanced data options allow you to customize settings pertaining to your columns and dataset formatting.
 
-For columns, you can choose its:
+For columns, you can choose the following settings:
 
-- Purpose - Should the column be a feature, label, or ignored? You can only have one column selected as the label.
-- Data type - Is the value a single-precision float value, string, or boolean?
-- Categorical - Does the column represent a categorical value?
+- **Purpose** - Should the column be a feature, label, or ignored? You can only have one column selected as the label.
+- **Data type** - Is the value a single-precision float value, string, or boolean?
+- **Categorical** - Does the column represent a categorical value (for example: low, medium, high)?
 
 When it comes to data formatting, you can choose whether the data contains column headers, the column separator (comma, semicolon, tab), and the decimal separator type (period or comma).
 
 ## Understanding the predictive maintenance dataset
 
-The dataset used in this module is from the 'Explainable Artificial Intelligence for Predictive Maintenance Applications', Stephan Matzka, Third International Conference on Artificial Intelligence for Industries (AI4I 2020), 2020 (in press), and hosted at the UCI Machine Learning Repository - Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
+The dataset used in this module is from the 'Explainable Artificial Intelligence for Predictive Maintenance Applications', Stephan Matzka, Third International Conference on Artificial Intelligence for Industries (AI4I 2020), 2020 (in press), and hosted at the UCI Machine Learning Repository - Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml](http://archive.ics.uci.edu/ml). Irvine, CA: University of California, School of Information and Computer Science.
 
 The AI4I 2020 Predictive Maintenance Dataset is a synthetic dataset that reflects real predictive maintenance data encountered in industry. The dataset consists of 10,000 data points and 14 columns.
 
@@ -160,9 +160,9 @@ For this scenario you won't use all of the columns in the dataset since they eit
 
 Since you'd like to be able to predict whether a machine has failed or not, the Machine failure column is the label.
 
-In Model Builder, for features, you can use information from the Product ID, Type, and various sensor reading columns.
+In Model Builder, for features, you can use data from the Product ID, Type, and various sensor reading columns.
 
-The failure modes, while they are useful in diagnosing the root cause of the failure, for your use case, you only want to know whether a machine has failed or not. Additionally, similar information is already captured by the label column. Therefore, you can ignore these columns.
+The failure modes, while they are useful in diagnosing the root cause of the failure, are not useful for your use case since you only want to know whether a machine has failed or not. Additionally, similar information is already captured by the label column. Therefore, you can ignore these columns.
 
 In this unit, you'll learn about the training process in Model Builder.
 
@@ -177,7 +177,7 @@ In most cases, to train machine learning models in Model Builder, you only have 
 
 Longer training periods allow Model Builder to explore more models with a wider range of settings.
 
-The table below summarizes the average time taken to get good performance for a suite of example datasets, on a local machine.
+The table below summarizes the average time taken to get good performance for a suite of example datasets, on a local machine using CPU.
 
 |Dataset size|Average time to train|
 |------------|---------------------|
@@ -192,7 +192,7 @@ These numbers are a guide only. The exact length of training is dependent on:
 - the number of features (columns) being used as input to the model
 - the type of columns
 - the machine learning task
-- the CPU, disk, and memory performance of the machine used for training
+- the CPU, GPU, disk, and memory performance of the machine used for training
 
 It's generally advised that you use more than 100 rows as datasets with less than that may not produce any results.
 
@@ -242,7 +242,7 @@ If you're not satisfied with the evaluation metrics of your model, there are a f
 
 - Provide more representative data observations. Experience is the best teacher. When it comes to machine learning, the concept also applies. The more data observations, the broader set of patterns your model is able to recognize.
 - Provide more context. Adding columns that add context to your data helps your model identify patterns. For example, let's say you're trying to predict the price of a home and the only data point you have is number of rooms. That by itself may not tell you much. However, what if you knew that the home is located in a suburban neighborhood outside of a major metropolitan area, average household income is $80,000, and schools are in the top 20th percentile. Now you have more information that can help inform the model's decision.
-- Use meaningful data and features. Although more data samples and features can help improve the accuracy of the model, they may also introduce noise since not all data and features are meaningful. Therefore, it is important to understand which features are the ones that most heavily impact decisions made by the algorithm 
-- Explore more algorithms. Providing model builder with more type to allow it to explore more algorithms and hyperparameters may help improve your model.
+- Use meaningful data and features. Although more data samples and features can help improve the accuracy of the model, they may also introduce noise since not all data and features are meaningful. Therefore, it is important to understand which features are the ones that most heavily impact decisions made by the algorithm.
+- Explore more algorithms. Providing Model Builder with more type to allow it to explore more algorithms and hyperparameters may help improve your model.
 
 In the next unit, you'll evaluate your predictive maintenance model.
