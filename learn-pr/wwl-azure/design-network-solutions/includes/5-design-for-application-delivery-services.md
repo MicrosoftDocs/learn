@@ -14,7 +14,7 @@ When to use a CDN:
 
 - You want custom domains, file compression, caching, and geo-filtering
 
-:::image type="content" source="../media/content-delivery-network.png" alt-text="Content Delivery Network diagram":::
+    :::image type="content" source="../media/content-delivery-network.png" alt-text="Content Delivery Network diagram":::
 
 
 ## Azure Front Door Service
