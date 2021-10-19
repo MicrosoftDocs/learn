@@ -61,7 +61,7 @@ quiz:
         - content: "Switch ( Condition, ThenResult [, DefaultResult ] )"
           isCorrect: false
           explanation: Determines whether the result of a formula matches any value in a set (Switch) and then returns a result or executes an action.
-      - content: "Connect to a __________ site to instantly produce an app from a custom list, or create a connection before adding data to an existing app or creating a new one."
+    - content: "Connect to a __________ site to instantly produce an app from a custom list, or create a connection before adding data to an existing app or creating a new one."
       choices:
         - content: "SharePoint"
           isCorrect: true
