@@ -6,11 +6,11 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 2. Under **Make your own app**, select **Canvas app from blank.**
 
-    :::image type="content" source="../media/16.png" alt-text="Screenshot of select canvas app from blank." lightbox="../media/16.png":::
+    :::image type="content" source="../media/canvas-app.png" alt-text="Screenshot of select canvas app from blank." lightbox="../media/canvas-app.png":::
 
 3. Specify a name for your app, select **Phone**, and then select **Create.**
 
-    :::image type="content" source="../media/17.png" alt-text="Screenshot of specifying app name and selecting create." lightbox="../media/17.png":::
+    :::image type="content" source="../media/select-phone.png" alt-text="Screenshot of specifying app name and selecting create." lightbox="../media/select-phone.png":::
 
     Power Apps Studio creates a blank app for phones.
     >[!Note]
@@ -18,7 +18,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 4. If the **Welcome to Power Apps Studio** dialog box opens, select **Skip.**
 
-    :::image type="content" source="../media/18.png" alt-text="Screenshot of select skip option." lightbox="../media/18.png":::
+    :::image type="content" source="../media/click-skip.png" alt-text="Screenshot of select skip option." lightbox="../media/click-skip.png":::
 
 ## Connect to data
 
@@ -28,17 +28,17 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 3. In the **Select a data source** window, expand the **Connectors** section and select the **SharePoint** option.
 
-    :::image type="content" source="../media/19.png" alt-text="Screenshot of select add data and sharepoint option." lightbox="../media/19.png":::
+    :::image type="content" source="../media/share-point-connectors.png" alt-text="Screenshot of select add data and sharepoint option." lightbox="../media/share-point-connectors.png":::
 
 4. In the previous exercise, a connection was already created. Select the created connection to add the data to your application successfully.
 
 5. Select the **SharePoint site**, created under the name *Easy Sales*.
 
-    :::image type="content" source="../media/20.png" alt-text="Screenshot of select Easy Sales." lightbox="../media/20.png":::
+    :::image type="content" source="../media/select-easy-sales.png" alt-text="Screenshot of select Easy Sales." lightbox="../media/select-easy-sales.png":::
 
 6. On selecting the **Easy Sales** SharePoint site, all the lists created on that site are displayed. Next, select all the SharePoint lists created concerning the application and click on **Connect**.
 
-    :::image type="content" source="../media/21.png" alt-text="Screenshot of select Easy Sales." lightbox="../media/21.png":::
+    :::image type="content" source="../media/select-lists.png" alt-text="Screenshot of select Easy Sales." lightbox="../media/select-lists.png":::
 
 7. All the required data is connected and ready to use in the application. In the upper-right corner of the **Data** pane, close it by selecting the close icon **(X)**.
 
