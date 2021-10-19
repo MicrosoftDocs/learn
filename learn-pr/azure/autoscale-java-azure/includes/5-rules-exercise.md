@@ -2,12 +2,12 @@ In this exercise, we'll look at exercises for setting up and triggering autoscal
 
 # Introduction
 
-In your sample Azure Spring Cloud application, when your application was created, it already triggered a scale-up and scale-down action on the customer service microservice.
+In your sample Azure Spring Cloud application, when your application was created, it already triggered a scale-up action on the customer service microservice.
 
 The customer-service will scale-up when the tomcat request count exceeds 10 sessions, per minute, on average.
 After the autoscale is triggered, it will then scale down if the request count is less than, or equal to 10 sessions, per minute, on average.
 
-## View Autoscale setup on the Autoscale page in the Azure portal
+## View Autoscale setup in the Azure portal
 
 1. Sign in to the Azure portal
 2. Go to the Azure Spring Cloud **Overview** page.
@@ -35,10 +35,10 @@ In the Scale-out setting screen, go to the Run history tab to see the most recen
 
 ## Trigger the scale-out action with a script
 
-In the next exercise, you'll trigger autoscaling via manually via a web browser and also a shell script.
-To test the autoscale rules, we'll generate some load on the instances. This simulated load causes the autoscale rules to scale out and increase the number of instances. As the simulated load is then stopped, the autoscale rules scale in and reduce the number of instances.
+You can also trigger autoscaling, manually via a web browser or a shell script.
+To test the autoscale rules, we'll generate some load on the instances. This simulated load causes the autoscale rules to scale out and increase the number of instances. As the simulated load is then stopped, the autoscale rules scale-in and reduce the number of instances.
 
-To allow you to trigger the autoscale manually, we have provided a shell script in the same GIT repo you used to create your Azure Spring Cloud application.
+To allow you to trigger the autoscale, we have provided a shell script in the same GIT repo you used to create your Azure Spring Cloud application.
 
 In your https://shell.azure.com bash window, run the following commands to set your spring cloud instance name (same Azure spring cloud service name you used in the previous exercise):
 
@@ -55,7 +55,7 @@ sh loadTest.sh
 
 You'll see the output of the customers-service load test that will send 100 requests to your instance.
 
-## Trigger the scale-out action manually via a web browser
+## Optionally trigger the scale-out action manually via a web browser
 
 To manually trigger the scale-out condition in the autoscale setting created, the customer-service microservice must have more than 10 requests in less than 1 minute.
 

@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: learning-content
   title: Introduction
-  description: You'll learn about the different forms of autoscale, and what autoscale solutions are available on Azure
+  description: You'll learn about the basic concepts for autoscale on Azure
   ms.date: 07/07/2021
   author: roryp
   ms.author: ropreddy

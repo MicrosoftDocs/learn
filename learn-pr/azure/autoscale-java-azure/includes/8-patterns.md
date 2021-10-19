@@ -30,14 +30,11 @@ Autoscaling isn't an instant solution. Simply adding resources to a system or ru
 
 ## Common patterns to scale your resource in Azure
 
-### Scale based on CPU
+### Scale based on demand
 
 Automatically scale out the number of service instances at the start of the work day when customer demand increases. At the end of the work day, automatically scale in the number of application instances to minimize resource costs overnight when application use is low.
 
 ### Scale differently on weekdays vs weekends
-
-- You want three instances by default (on weekdays)
-- You don't expect traffic on weekends and so you want to scale down to one instance on weekends.
 
 On an evening or weekend, your application demand may lower. If this load is consistent over a period of time, you can configure autoscale rules to lower the number of service instances in the scale set. This scale-in action reduces the cost to run your scale set as you only run the number of instances required to meet the current demand.
 
