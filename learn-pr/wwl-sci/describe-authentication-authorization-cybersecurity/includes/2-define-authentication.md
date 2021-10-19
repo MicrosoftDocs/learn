@@ -1,4 +1,4 @@
-Authentication is the process of proving someone is who they say they are.  For example, when someone purchases an item with a credit card, they may be required to show an additional form of identification to prove that they really are the person whose name appears on the credit card. In this example, the user may show a driver’s license.  The driver’s license serves as a form of authentication, proving the user is who they say they are.
+Authentication is the process of proving someone is who they say they are.  When someone purchases an item with a credit card, they may be required to show an additional form of identification to prove that they really are the person whose name appears on the credit card. In this example, the user may show a driver’s license.  The driver’s license serves as a form of authentication, proving the user is who they say they are.
 
 The same concept of authentication applies to digital devices. We experience this every time we try to log in to a computer.  A user enters their user ID.  Their user ID says who they are, but that is not enough to actually log them into the computer.  The next step is to prove they are the person identified by their user ID.  This is typically done by entering a password.  The password is a form of authentication.  
 
@@ -27,7 +27,7 @@ Authentication can be divided into three types, *something you know*, *something
 
 ### Single-factor authentication
 
-Single-factor authentication is a system where only one authentication type is used. This is the least secure but simplest method.
+Single-factor authentication is a system where only one authentication type is used, making it the least secure but simplest method.
 
 An example of a single-factor authentication system is when the user provides something they know, such as a password, to authenticate. Simple passwords are easy to remember but also easy for criminals to hack. Complex passwords might seem more secure, but they will be impossible to remember and make it more likely for the user to write the password down, making them much less secure. Another single-factor authentication system method is using something you have. For example, using your cell phone to pay for something with a tap-to-pay service authenticates the user through something that the user has but does not require another verification method.
 
