@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.test-bicep-code-using-azure-workflows.knowledge-check
+uid: learn.azure.test-bicep-code-using-github-actions.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 09/08/2021
+  ms.date: 09/15/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
