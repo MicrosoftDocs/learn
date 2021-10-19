@@ -1,4 +1,4 @@
-In this unit, you'll learn about scenarios in Model Builder.
+The first step to train a machine learning model is deciding which scenario and machine learning task is the most appropriate to solve it given what you're trying to predict. 
 
 ## What is a scenario?
 
