@@ -3,7 +3,7 @@ uid: learn.wwl.load-balancing-non-https-traffic-azure
 metadata:
   title: Load balance non-HTTP(S) traffic in Azure
   description: "You will learn the different load balancer options in Azure and how to choose and implement the right Azure solution for non-HTTP(S) traffic."
-  ms.date: 09/13/2021
+  ms.date: 10/19/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -30,12 +30,12 @@ products:
 - azure-traffic-manager
 - azure-virtual-network
 units:
-- learn.wwl.load-balancing-non-https-traffic-azure.introduction
 - learn.wwl.load-balancing-non-https-traffic-azure.explore
 - learn.wwl.load-balancing-non-https-traffic-azure.design-implement-azure-load-balancer-using-azure-portal
 - learn.wwl.load-balancing-non-https-traffic-azure.exercise-create-configure-azure-load-balancer
 - learn.wwl.load-balancing-non-https-traffic-azure.explore-azure-traffic-manager
 - learn.wwl.load-balancing-non-https-traffic-azure.exercise-create-traffic-manager-profile-using-azure-portal
+- learn.wwl.load-balancing-non-https-traffic-azure.introduction
 - learn.wwl.load-balancing-non-https-traffic-azure.summary
 badge:
   uid: learn.wwl.load-balancing-non-https-traffic-azure.badge
