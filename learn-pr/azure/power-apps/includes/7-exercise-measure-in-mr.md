@@ -6,22 +6,22 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 1. Navigate to the **Home page** and on the **Insert** tab, expand the **Mixed Reality** dropdown, and select **Measure in MR**.
 
-    :::image type="content" source="../media/69.png" alt-text="Screenshot to add Measure in MR" lightbox="../media/69.png":::
+    :::image type="content" source="../media/add-measure-in-mr.png" alt-text="Screenshot to add Measure in MR" lightbox="../media/add-measure-in-mr.png":::
 
 2. Position the **Measure in MR** button as shown in the figure and configure the following properties:
     * **Text**: Filter by Dimensions
     * **Unit of measurement**: Centimeters
     * **Mesurement type**: Freeform
 
-    :::image type="content" source="../media/70.png" alt-text="Screenshot to configure the properties of Measure in MR" lightbox="../media/70.png":::
+    :::image type="content" source="../media/configure-property-measure.png" alt-text="Screenshot to configure the properties of Measure in MR" lightbox="../media/configure-property-measure.png":::
 
 3. On the **Insert** tab, expand the **Gallery** dropdown and select **Vertical**. Rename the **Gallery** to **Measure_gallery**.
 
-    :::image type="content" source="../media/71.png" alt-text="Screenshot to add gallery" lightbox="../media/71.png":::
+    :::image type="content" source="../media/add-gallery.png" alt-text="Screenshot to add gallery" lightbox="../media/add-gallery.png":::
 
 4. Position the **Vertical Gallery** just below the **Filter by Dimensions** button. Next, configure the **Layout** property by selecting **Title, Subtitle, and body**.
 
-    :::image type="content" source="../media/72.png" alt-text="Screenshot to configure layout" lightbox="../media/72.png":::
+    :::image type="content" source="../media/configure-layout.png" alt-text="Screenshot to configure layout" lightbox="../media/configure-layout.png":::
 
 5. Configure the **Data source** property of the **Measure_gallery** by adding the following line:
 
@@ -29,11 +29,11 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
     MeasureInMR1.Measurements
     ```
 
-    :::image type="content" source="../media/73.png" alt-text="Screenshot of gallery data source" lightbox="../media/73.png":::
+    :::image type="content" source="../media/gallery-data-source.png" alt-text="Screenshot of gallery data source" lightbox="../media/gallery-data-source.png":::
 
 6. Position the **Title**, **Subtitle**, and **Body** equidistant from each other as shown in the picture.
 
-    :::image type="content" source="../media/74.png" alt-text="Screenshot of equidistant" lightbox="../media/74.png":::
+    :::image type="content" source="../media/equidistant.png" alt-text="Screenshot of equidistant" lightbox="../media/equidistant.png":::
 
 7. Configure the **Text** property of the three labels in the following way respectively:
     * **Title**:
@@ -42,7 +42,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
         "Unit: "&ThisItem.Unit
         ```
 
-         :::image type="content" source="../media/75.png" alt-text="Screenshot of title text" lightbox="../media/75.png":::
+         :::image type="content" source="../media/title-text.png" alt-text="Screenshot of title text" lightbox="../media/title-text.png":::
 
     * **Subtitle**:
 
@@ -50,7 +50,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
         "Area: "&ThisItem.Area&"cm²"
         ```
 
-         :::image type="content" source="../media/76.png" alt-text="Screenshot of subtitle text" lightbox="../media/76.png":::
+         :::image type="content" source="../media/subtitle-text.png" alt-text="Screenshot of subtitle text" lightbox="../media/subtitle-text.png":::
 
     * **Body**:
 
@@ -58,10 +58,10 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
         "Height: "&ThisItem.Height&"cm"
         ```
 
-         :::image type="content" source="../media/77.png" alt-text="Screenshot of body text" lightbox="../media/77.png":::
+         :::image type="content" source="../media/body-text.png" alt-text="Screenshot of body text" lightbox="../media/body-text.png":::
 
 8. Let's add a **Reload** icon to let the users redo the measurements if they are not happy. On the **Insert** tab, expand the **Icons** dropdown and select **Reload** icon.
-    :::image type="content" source="../media/78.png" alt-text="Screenshot of adding reload icon" lightbox="../media/78.png":::
+    :::image type="content" source="../media/add-reload-icon.png" alt-text="Screenshot of adding reload icon" lightbox="../media/add-reload-icon.png":::
 
 9. Position the icon as shown in the figure and configure the **OnSelect** property in the following way:
 
@@ -69,7 +69,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
     UpdateContext({galleryvisible:false});
     ```
 
-    :::image type="content" source="../media/79.png" alt-text="Screenshot of configuring OnSelect for reload icon" lightbox="../media/79.png":::
+    :::image type="content" source="../media/configure-on-select.png" alt-text="Screenshot of configuring OnSelect for reload icon" lightbox="../media/configure-on-select.png":::
 
 10. Once the **Measure in MR** component is fully configured, we move to the **Spatial filtering**. Navigate to the **Sofas** page and configure the **Items** property by adding the following:
 
@@ -82,7 +82,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
     )
     ```
 
-    :::image type="content" source="../media/80.png" alt-text="Screenshot of configuring items in Sofas" lightbox="../media/80.png":::
+    :::image type="content" source="../media/configure-item-sofas.png" alt-text="Screenshot of configuring items in Sofas" lightbox="../media/configure-item-sofas.png":::
 
     >[!Important]
     > Provide appropriate names for the **SharePoint** list and **Gallery** to avoid having errors in the future. Maintain the names of the components in the formulas to avoid confusion.
