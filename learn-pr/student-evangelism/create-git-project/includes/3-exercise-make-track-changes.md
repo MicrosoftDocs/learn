@@ -55,7 +55,7 @@ The website's home page, *index.html*, currently contains just one line of HTML.
 
     If you used the built-in code editor by using the `code` command, you won't see anything unusual. But, if you happened to use another editor, including an editor called *sed*, the editor probably created an *index.html.bak* file that you don't want to commit. Editors like Vim and Emacs create backup files with names like *index.html~* and *index.html.\~1\~*, depending on how they're configured.
 
-1. Use the following command to create and open a file named *.gitgnore* in the built-in code editor:
+1. Use the following command to create and open a file named *.gitignore* in the built-in code editor:
 
     ```bash
     code .gitignore

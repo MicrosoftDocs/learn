@@ -1,14 +1,15 @@
-Congratulations! In this module, you learned the basics of using Git.
+Congratulations! In this module, you learned how to create a git project and edit errors that existed within it.
 
 You learned:
 
-- How to configure Git.
-- How to create repositories.
-- How to track changes.
-- How to recover from simple mistakes by using Git.
-- The differences between Git and GitHub.
+- How to create a new project in Git
+- How to make commits to your Git workspace
+- How to track changes and modify files in your Git workspace
+- How to edit past commits in your Git workspace
+- How to recover deleted files in your Git workspace
+- How to undo a commit in Git
 
-At this point, you know enough about Git to use version control by yourself on a basic project. Collaboration with other developers is where version control shines. Check out the other modules in this learning path for more about using Git with others!
+At this point, you know enough about Git to use to make and modify a project. Collaboration with other developers is where version control shines. Check out the other modules in this learning path for more about using Git with others!
 
 ### Resources
 
