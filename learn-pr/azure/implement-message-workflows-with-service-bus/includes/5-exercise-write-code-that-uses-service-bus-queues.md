@@ -74,6 +74,8 @@ To complete the component that sends messages about sales:
 1. Replace that line of code with the following code.
 
     ```C#
+    // By leveraging "await using", the DisposeAsync method will be called automatically once the client variable goes out of scope. 
+    // In more realistic scenarios, you would want to store off a class reference to the client (rather than a local variable) so that it can be used throughout your program.
     await using var client = new ServiceBusClient(ServiceBusConnectionString);
     ```
     Note that the editor automatically prepended **new** to the line of code you pasted.
@@ -86,7 +88,7 @@ To complete the component that sends messages about sales:
 1. Replace that line of code with the following code.
 
     ```C#
-    ServiceBusSender sender = client.CreateSender(QueueName);
+    await using ServiceBusSender sender = client.CreateSender(QueueName);
     ```
 
 1. Within the `try...catch` block, locate the following line of code.
@@ -113,19 +115,7 @@ To complete the component that sends messages about sales:
     ```C#
     await sender.SendMessageAsync(message);
     ```
-
-1. Locate the following line of code.
-
-    ```C#
-    // Close the connection to the sender here
-    ```
-
-1. To close the connection to the Service Bus, replace that line of code with the following code.
-
-    ```C#
-    await sender.CloseAsync();
-    ```
-
+    
 1. Your final code should resemble the following example:
 
     ```C#
@@ -152,7 +142,7 @@ To complete the component that sends messages about sales:
             {
                 await using var client = new ServiceBusClient(ServiceBusConnectionString);
 
-                ServiceBusSender sender = client.CreateSender(QueueName);
+                await using ServiceBusSender sender = client.CreateSender(QueueName);
                 try
                 {
                     string messageBody = $"$10,000 order for bicycle parts from retailer Adventure Works.";
@@ -164,8 +154,6 @@ To complete the component that sends messages about sales:
                 {
                     Console.WriteLine($"{DateTime.Now} :: Exception: {exception.Message}");
                 }
-    
-                await sender.CloseAsync();
             }
         }
     }
@@ -257,8 +245,8 @@ To complete the component that sends messages about sales:
 1. To configure the handler, replace that line with the following code.
 
     ```C#
-    processor.ProcessMessageAsync += ProcessMessagesAsync;
-    processor.ProcessErrorAsync += ExceptionReceivedHandler;
+    processor.ProcessMessageAsync += MessageHandler;
+    processor.ProcessErrorAsync += ErrorHandler;
     ```
 
 1. Locate the following line of code.
@@ -328,29 +316,31 @@ To complete the component that sends messages about sales:
                 Console.WriteLine("Press ENTER on the keyboard to exit after receiving all the messages.");
                 Console.WriteLine("======================================================");
     
-                var client = new ServiceBusClient(ServiceBusConnectionString);
+                await using ServiceBusClient client = new ServiceBusClient(ServiceBusConnectionString);
 
-                var messageHandlerOptions = new ServiceBusProcessorOptions
+                var processorOptions = new ServiceBusProcessorOptions
                 {
                     MaxConcurrentCalls = 1,
                     AutoCompleteMessages = false
                 };
                 
+                await using ServiceBusProcessor processor = client.CreateProcessor(QueueName, processorOptions);
+
                 await processor.StartProcessingAsync();
             
                 Console.Read();
     
-                await processor.CloseAsync();
-    
+                await processor.DisposeAsync();
+                await client.DisposeAsync();
             }
 
-            static async Task ProcessMessagesAsync(ProcessMessageEventArgs args)
+            static async Task MessageHandler(ProcessMessageEventArgs args)
             {
                 Console.WriteLine($"Received message: SequenceNumber:{args.Message.SequenceNumber} Body:{args.Message.Body}");
                 await args.CompleteMessageAsync(args.Message);
             }
     
-            static Task ExceptionReceivedHandler(ProcessErrorEventArgs args)
+            static Task ErrorHandler(ProcessErrorEventArgs args)
             {
                 Console.WriteLine($"Message handler encountered an exception {args.Exception}.");
                 Console.WriteLine("Exception context for troubleshooting:");
