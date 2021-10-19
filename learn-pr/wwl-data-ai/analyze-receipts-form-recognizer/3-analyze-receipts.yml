@@ -4,14 +4,14 @@ title: Exercise - Analyze receipts with Form Recognizer
 metadata:
   title: Exercise - Analyze receipts with Form Recognizer
   description: "Exercise - Analyze receipts with Form Recognizer"
-  ms.date: 10/13/2021
+  ms.date: 10/18/2021
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: true
-labModal: false
+azureSandbox: false
+labId: 88763
+labModal: true
 durationInMinutes: 15
 content: |
   [!include[](includes/3-analyze-receipts.md)]
-interactive: powershell
