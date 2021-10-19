@@ -54,7 +54,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 3. Click on the newly created screen to change its properties in the **Properties** tab at the right side of the screen.
 
-4. Click the dropdown present beside the **Backgroud image** property to add an image to the screen. We will add the logo of our application **Easy Sales** to the splash screen. //logo downlod link
+4. Click the dropdown present beside the **Backgroud image** property to add an image to the screen. We will add the logo of our application **Easy Sales** to the splash screen.
 
 5. Set the image position to **Fit**.
 

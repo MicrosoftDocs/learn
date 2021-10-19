@@ -40,3 +40,10 @@ The **Switch** function evaluates a formula and determines whether the result ma
 
 **Syntax**:
 **Switch**( Formula, Match1, Result1 [, Match2, Result2, ... [, DefaultResult ] ] )
+
+## Office 365 Outlook
+
+When you connect to Office 365 Outlook, you can view, send, delete, and reply to email messages in addition to other tasks.
+You can add controls to perform these functions in your application.
+
+For example, you can add text input controls to request the recipient,  subject, and body of the email and add a button control to send the email.

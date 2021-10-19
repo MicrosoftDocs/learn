@@ -39,3 +39,15 @@ Each data field is displayed in a separate control within the Gallery control. A
 
 > [!Important]
 > If a user scrolls the **Flexible height** gallery control before all items are loaded, the item that's currently in view may be pushed down and out of view when the data loading is finished. To avoid this issue, use a standard **Gallery** control instead of the **Flexible height** variant.
+
+## UI/UX components in power apps
+
+In Microsoft Power Apps, users can plan and build a business application using components rather than writing code in a traditional programming language like C#. Instead, users can design applications by dragging and dropping components into a canvas, just as they would design a slide in PowerPoint. Make Excel-like experience for indicating logic and working with data. Create apps that combine business data from several Microsoft and third-party sources. Share the app so that users can run it in a browser or on a mobile device, and embed your app so they can run it in SharePoint, Power BI, or Teams.
+
+## Controls and properties in canvas apps
+
+* **Buttons** - Associate with the application by clicking or tapping.
+* **Gallery** - Show a list of records that contain different sorts of data.
+* **Drop down** - Shows the first item in a rundown until a chevron is selected.
+* **Image** -  Show a picture from, for instance, a file or a data source.
+* **Camera** -  Take and save photographs in the app or to a data source.
