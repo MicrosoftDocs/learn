@@ -21,7 +21,7 @@ Authentication can be divided into three types, *something you know*, *something
   - A fingerprint
   - Facial recognition
   - Retinal scan
-  - Other forms of biometric identification. Biometric identification comprises of physical characteristics that uniquely identify an individual.
+  - Other forms of biometric identification. Biometric identification is compromised of physical characteristics that uniquely identify an individual.
 
 :::image type="content" source="../media/authentication-types.png" alt-text="Diagram showing the three different authentications types: something you know, something you have, something you are.":::
 

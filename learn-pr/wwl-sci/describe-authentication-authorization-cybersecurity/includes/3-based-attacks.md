@@ -20,13 +20,13 @@ Credential stuffing is an attack method that takes advantage of the fact that ma
 
 ### Keylogging
 
-Keylogging involves malicious software that logs keystrokes. Using the keylogger, an attacker can log (steal) username and password combinations, which can subsequently be used for credential stuffing attacks. To prevent keylogging, do not install untrusted software and use reputable virus-scanning software.
+Keylogging involves malicious software that logs keystrokes. Using the key logger, an attacker can log (steal) username and password combinations, which can subsequently be used for credential stuffing attacks. To prevent keylogging, do not install untrusted software and use reputable virus-scanning software.
 
 Social engineering**
 
 Social engineering attacks involve an attempt to get people to reveal information or perform an action to enable an attack.
 
-Most authentication attacks involve exploitations of computers or an attempt to try as many credential combinations as possible. Social engineering attacks are different in that they exploit the vulnerabilities of humans. The attacker looks to gain the trust of a legitimate user with the objective of having them divulge information or take an action that enables an attacker to cause damage or steal information.
+Most authentication attacks involve exploitation of computers or an attempt to try as many credential combinations as possible. Social engineering attacks are different in that they exploit the vulnerabilities of humans. The attacker looks to gain the trust of a legitimate user with the objective of having them divulge information or take an action that enables an attacker to cause damage or steal information.
 
 A number of social engineering techniques can be used for authentication theft, including:
 
@@ -36,4 +36,4 @@ A number of social engineering techniques can be used for authentication theft, 
 
 ### Other authentication-based attack methods
 
-These are just a few examples of authentication-based attacks, and there is always the potential for new attack types, but all of the attacks listed above can be prevented by educating users and implementing multi-factor authentication.
+These are just a few examples of authentication-based attacks, and there is always the potential for new attack types, but all of the attacks listed above can be prevented by educating users and implementing multifactor authentication.
