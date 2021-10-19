@@ -1,4 +1,4 @@
-Welcome to the StereoKit module! Here you'll learn some of the key features of StereoKit. You'll also learn how to set up StereoKit for Mixed Reality development and build Mixed Reality applications using StereoKit for different platforms.
+Welcome to the StereoKit module! You'll learn how to set up StereoKit for Mixed Reality development and build Mixed Reality applications for different platforms. You'll learn about some of the key features of StereoKit.
 
 StereoKit is a code-first library aimed primarily at engineers, and others who are working in code-first environments. This appeal to a large number of non-game C# developers. Visual Studio developers can continue operating as they have in the past, utilizing NuGet's vast functionality.
 

@@ -37,3 +37,11 @@ During the build process, you may encounter errors when opening the Solution Exp
 
 4. When the debugging is complete, the application will open on your desktop, and you'll be ready to draw!
     :::image type="content" source="../media/desktop-stereokit-ink-application.png" alt-text="Screenshot shows the StereoKit Ink application on Desktop." lightbox="../media/desktop-stereokit-ink-application.png":::
+
+## Test StereoKit Ink application
+ 
+ After the build process is complete, the visual studio opens your application on HoloLens 2 or Desktop. You can see the right-hand painting menu, palette menu, and handle in the layout. 
+ 
+ Using the fingertip of your right hand, you can interact by choosing different colors of your choice from the palette menu to draw. You can also use the slider to alter the color's Hue, Saturation, and Value. The handle is attached to the pallet to allow the drawing to move around as the handle moves.
+
+ You can use UI buttons in the painting menu to make changes to the drawing if necessary. Undo option removes the most recent to the painting, while the Redo option removes the most recent undo from the stack. Save the drawing in the system's preferred location by pressing the save button. The Load button lets you select any .skp file, while the clear button generates a new Painting object. Finally, the Quit button allows you to complete the frame, exit the loop, and close the window appropriately.
