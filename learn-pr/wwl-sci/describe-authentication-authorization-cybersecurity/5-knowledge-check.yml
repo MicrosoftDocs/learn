@@ -44,9 +44,9 @@ quiz:
     - content: "Verify explicitly, assume breach, and use least privileged access."
       isCorrect: true
       explanation: "That's correct. The three principles of zero trust are verify explicitly, assume breach, and use least privileged access."
-    - content: "Spearfishing, pretexting, and baiting."
+    - content: "Spear fishing, pretexting, and baiting."
       isCorrect: false
-      explanation: "That's incorrect. Spearfishing, pretexting, and baiting are forms of social engineering."
+      explanation: "That's incorrect. Spear fishing, pretexting, and baiting are forms of social engineering."
     - content: "Credential stuffing, key logging, man-in-the-middle."
       isCorrect: false
       explanation: "That's incorrect. Credential stuffing, key logging, and man-in-the-middle are forms of authentication attack."
