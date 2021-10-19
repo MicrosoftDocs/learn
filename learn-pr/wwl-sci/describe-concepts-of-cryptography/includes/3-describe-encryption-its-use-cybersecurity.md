@@ -83,7 +83,7 @@ Encryption is used worldwide in almost every facet of our lives, from making a c
 
 *Web browsing* - You may not realize it, but every time you go to website where the address starts with HTTPS or there is an icon showing a padlock, encryption is being used. Notice the address bar for this web page and you will notice the address starts with https://. Similarly, anytime you connect to your bank through the web or make an online purchase where you're providing sensitive information such as a credit card number, you should make sure you see https:// in the address bar.
 
-*Device encryption* – many operating systems provide tools to enable encryption of hard drives and portable devices. Windows Bit Locker, a feature of the Windows operating system, for example, provides encryption for your PC hard drive as well as portable drives that may connect via a USB device.
+*Device encryption* – many operating systems provide tools to enable encryption of hard drives and portable devices. Windows BitLocker, a feature of the Windows operating system, for example, provides encryption for your PC hard drive as well as portable drives that may connect via a USB device.
 
 *Messaging applications* – Some commonly known and available messaging applications encrypt messages.
 
