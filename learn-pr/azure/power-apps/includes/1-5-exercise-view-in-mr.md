@@ -81,21 +81,21 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
     Navigate('Home Page',ScreenTransition.Fade)
     ```
 
-    :::image type="content" source="../media/27.png" alt-text="Screenshot of updating the properties of timer." lightbox="../media/27.png":::
+    :::image type="content" source="../media/configure-on-timer-end.png" alt-text="Screenshot of configuring OnTimerEnd property." lightbox="../media/configure-on-timer-end.png":::
 
 ## Create the home page
 
 1. Click the **Home Page** which was created previously, and insert four buttons. Next, navigate to the **Insert tab** and click the **Button** option to add buttons to the screen. Adjust the size and position of these buttons as required.
 
-    :::image type="content" source="../media/28.png" alt-text="Screenshot of adding buttons." lightbox="../media/28.png":::
+    :::image type="content" source="../media/add-buttons.png" alt-text="Screenshot of adding buttons." lightbox="../media/add-buttons.png":::
 
 2. Change the display text of the buttons to indicate product categories like **Sofas, Chairs, Tables, and Carpets**.
 
-    :::image type="content" source="../media/29.png" alt-text="Screenshot of editing display text." lightbox="../media/29.png":::
+    :::image type="content" source="../media/edit-display-text-1.png" alt-text="Screenshot of editing display text." lightbox="../media/edit-display-text-1.png":::
 
 3. We will use these buttons to navigate to the list of products under various categories. To do so, we need to create separate screens for each category. So, first, create four new **Blank** screens and rename them accordingly, for example, *Sofas, Chairs, Tables, and Carpets*.
 
-    :::image type="content" source="../media/30.png" alt-text="Screenshot of editing display text." lightbox="../media/30.png":::
+    :::image type="content" source="../media/edit-display-text-2.png" alt-text="Screenshot of editing display text." lightbox="../media/edit-display-text-2.png":::
 
 4. Click the newly created **Sofas** button and configure the **OnSelect** property. On clicking the button, it must navigate us to the product list page created in the previous step. Replace the *false* by the below-given code:
 
@@ -103,7 +103,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
     Navigate(Sofas,ScreenTransition.Cover)
     ```
 
-    :::image type="content" source="../media/31.png" alt-text="Screenshot of navigation of sofas page" lightbox="../media/31.png":::
+    :::image type="content" source="../media/navigate-sofas-page.png" alt-text="Screenshot of navigation of sofas page" lightbox="../media/navigate-sofas-page.png":::
 
 5. Repeat the same procedure for the other three buttons. Again, make sure to provide proper screen names in the **Navigate** function; for example, for configuring the **OnSelect** property of the **Chairs** button, use the following navigate function:
 
@@ -111,19 +111,19 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
     Navigate(Chairs,ScreenTransition.Cover)
     ```
 
-    :::image type="content" source="../media/32.png" alt-text="Screenshot of navigation of chairs page" lightbox="../media/32.png":::
+    :::image type="content" source="../media/navigate-chairs-page.png" alt-text="Screenshot of navigation of chairs page" lightbox="../media/navigate-chairs-page.png":::
 
     ```Power Apps
     Navigate(Tables,ScreenTransition.Cover)
     ```
 
-    :::image type="content" source="../media/33.png" alt-text="Screenshot of navigation of tables page" lightbox="../media/33.png":::
+    :::image type="content" source="../media/navigate-tables-page.png" alt-text="Screenshot of navigation of tables page" lightbox="../media/navigate-tables-page.png":::
 
      ```Power Apps
     Navigate(Carpets,ScreenTransition.Cover)
     ```
 
-    :::image type="content" source="../media/34.png" alt-text="Screenshot of navigation of carpets page" lightbox="../media/34.png":::
+    :::image type="content" source="../media/navigate-carpet-page.png" alt-text="Screenshot of navigation of carpets page" lightbox="../media/navigate-carpet-page.png":::
 
 >[!Note]
 > The default syntax of the **Navigate** function is: **Navigate**( *Screen* [, *Transition* [, *UpdateContextRecord* ] ] )
