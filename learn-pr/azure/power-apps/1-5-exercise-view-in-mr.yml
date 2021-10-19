@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.power-apps.1-5-exercise-view-in-mr
-title: Exercise View in MR 
+title: Exercise - Gallery controls and View in MR 
 metadata:
-  title:  Exercise View in MR 
-  description: you'll be able to design the main pages of the application like splash screen, product page and so
+  title:  Exercise - Gallery controls and View in MR 
+  description: You'll be able to design the main pages of the application like splash screen, product page and so on.
   ms.date: 10/19/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"

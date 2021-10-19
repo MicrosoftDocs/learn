@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.power-apps.1-4-view-in-mr
-title: View in MR 
+title: Gallery controls and View in MR 
 metadata:
-  title: View in MR 
+  title: Gallery controls and View in MR 
   description: The View in MR is the chief features included in the application which allows the application user to view images and 3D models in the natural world environment
   ms.date: 10/19/2021
   author: "Sean-Kerawala"
