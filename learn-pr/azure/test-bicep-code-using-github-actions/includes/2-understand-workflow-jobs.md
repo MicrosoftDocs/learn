@@ -10,7 +10,7 @@ Jobs can be used in your workflow to mark a separation of concerns. For example,
 
 In CI jobs, you check the validity of the changes that have been made to your code. CI jobs provide quality assurance. They can be run without affecting your live production environment.
 
-In many programming languages, code needs to be *built* before someone can run it. When a Bicep file is deployed, it's converted, or *transpiled*, from Bicep to JSON. The tooling performs this process automatically. In most situations, you don't need to manually build Bicep code to JSON templates within your pipeline. We still use the term *continuous integration* when we talk about Bicep code, though, because the other parts of CI still apply, such as validating your code.
+In many programming languages, code needs to be *built* before someone can run it. When a Bicep file is deployed, it's converted, or *transpiled*, from Bicep to JSON. The tooling performs this process automatically. In most situations, you don't need to manually build Bicep code to JSON templates within your workflow. We still use the term *continuous integration* when we talk about Bicep code, though, because the other parts of CI still apply, such as validating your code.
 
 After your CI jobs run successfully, you should have increased your confidence that the changes you've made will deploy successfully too. In CD jobs, you deploy your code to each of your environments. You usually start with test and other non-production environments, and then move through to production environments. In this module, we'll deploy to a single environment. In a future module, you'll learn how to extend your deployment workflow to deploy to multiple environments, such as non-production and production environments.
 
@@ -76,7 +76,7 @@ In the preceding example, when everything goes well, the workflow runs the **val
 
 ## Bicep deployment jobs
 
-A typical Bicep deployment workflow contains several jobs. As the workflow moves through the jobs, the goal is to become increasingly confident that the later jobs will succeed. Here are the common jobs for a Bicep deployment pipeline:
+A typical Bicep deployment workflow contains several jobs. As the workflow moves through the jobs, the goal is to become increasingly confident that the later jobs will succeed. Here are the common jobs for a Bicep deployment workflow:
 
 :::image type="content" source="../media/2-jobs-bicep.png" alt-text="Diagram that shows a Bicep deployment workflow with five jobs: Lint, Validate, Preview, Deploy, and Smoke Test." border="false":::
 

@@ -1,12 +1,12 @@
-Your toy company's security team has asked you to verify that your website is accessible only through HTTPS. In this exercise, you configure your pipeline to run a smoke test that checks the security team's requirement.
+Your toy company's security team has asked you to verify that your website is accessible only through HTTPS. In this exercise, you configure your workflow to run a smoke test that checks the security team's requirement.
 
 During the process, you'll: 
 
 > [!div class="checklist"]
 > * Add a test script to your repository.
-> * Update your pipeline definition to add a test stage.
-> * Run the pipeline and observe the test fail.
-> * Fix the Bicep file and observe the pipeline run successfully.
+> * Update your workflow definition to add a test job.
+> * Run the workflow and observe the test fail.
+> * Fix the Bicep file and observe the workflow run successfully.
 
 ## Add a test script
 
@@ -26,58 +26,39 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
    For the purposes of this exercise, it's not important that you understand the details of the test file and how it works. We provide links in the summary so you can learn more if you're interested.
 
-## Publish your Bicep file's output as a stage output variable
+## Publish your Bicep file's output as a job output
 
-The test script that you created in the preceding steps requires a host name to test. Your Bicep file already includes an output, but before you can use it in your smoke tests, you need to publish it as a stage output variable.
+The test script that you created in the preceding steps requires a host name to test. Your Bicep file already includes an output, but before you can use it in your smoke tests, you need to publish it as a job output.
 
-1. In Visual Studio Code, open the *azure-pipelines.yml* file in the *deploy* folder.
+1. In Visual Studio Code, open the *workflow.yml* file in the *.github/workflows* folder.
 
-1. In the **Deploy** stage, update `inlineScript` to the following code:
+1. In the **deploy** job, add an id to the `Deploy website` step, and add an output to the job that uses this steps' outputs:
 
-   :::code language="bash" source="code/9-pipeline.yml" range="75-82" highlight="1-2, 7-8" :::
+   :::code language="bash" source="code/9-workflow.yml" range="85-77" highlight="5-6, 14" :::
 
-   Now, your deployment process still uses the same Azure CLI command as it did previously, but the output of that command is stored in a script variable named `deploymentOutput`. The output of Azure CLI commands is formatted as JSON.
+1. Save the file.
 
-   If an error happens during the deployment, the `set -e` command ensures that the step fails, which then causes the pipeline to stop.
+## Add a smoke test job to your workflow
 
-   If the deployment completes successfully, the script accesses the value of the `appServiceAppHostName` output from the Bicep deployment. It does this by using the `jq` tool to access the relevant part of the JSON output. Then, it publishes the value to a stage output variable named `appServiceAppHostName`.
+Now, you can add a smoke test job that runs your tests.
+
+1. At the bottom of the file, add the following definition for the **smoke-test** job:
+
+   :::code language="yaml" source="code/9-workflow.yml" range="79-92" :::
+
+   This code defines the job and a step to checkout the code and a step to run tests with Pester. 
+   We also indicate in this job that is dependent on the **deploy** job with the needs parameter. This allows us to use the output of this job when we create the Pester container. 
 
    > [!NOTE]
-   > Pester and jq are both preinstalled on Microsoft-hosted agents for Azure Pipelines. You don't need to do anything special to use them in a script step.
+   > Powershell and Pester are both preinstalled on GitHub-hosted runners. You don't need to do anything special to use them in a script step.
 
 1. Save the file.
 
-## Add a smoke test stage to your pipeline
+## Verify and commit your workflow definition
 
-Now, you can add a smoke test stage that runs your tests.
+1. Verify that your *workflow.yml* file looks like the following:
 
-1. At the bottom of the file, add the following definition for the **SmokeTest** stage:
-
-   :::code language="yaml" source="code/9-pipeline.yml" range="84-89" :::
-
-   This code defines the stage and a job. It also creates a variable in the job named `appServiceAppHostName`. This variable takes its value from the output variable that you created in the preceding section.
-
-1. At the bottom of the file, add the following step definition to the **SmokeTest** stage:
-
-   :::code language="yaml" source="code/9-pipeline.yml" range="90-102" :::
-
-   This step runs a PowerShell script to run the test script that you wrote earlier by using the Pester testing tool.
-
-1. At the bottom of the file, add the following step definition to the **SmokeTest** stage:
-
-   :::code language="yaml" source="code/9-pipeline.yml" range="104-110" :::
-
-   This step takes the test results file that Pester creates and publishes it as pipeline test results. You'll see how this is displayed shortly.
-
-   Notice that the step definition includes `condition: always()`. This condition indicates to Azure Pipelines that it should always publish the test results, even if the preceding step fails. This is important because any failing test will cause the test step to fail, and normally the pipeline stops running after a failing step.
-
-1. Save the file.
-
-## Verify and commit your pipeline definition
-
-1. Verify that your *azure-pipelines.yml* file looks like the following:
-
-   :::code language="yaml" source="code/9-pipeline.yml" highlight="75-82, 84-110" :::
+   :::code language="yaml" source="code/9-workflow.yml" highlight="58-77, 79-92" :::
 
    If it doesn't, update it to match this example, and then save it.
 
@@ -85,35 +66,39 @@ Now, you can add a smoke test stage that runs your tests.
 
    ```bash
    git add .
-   git commit -m "Add test stage"
+   git commit -m "Add test job"
    git push
    ```
 
-## Run the pipeline and review the test result
+## Run the workflow and review the test result
 
-1. In your browser, go to your pipeline. 
+1. In your browser, go to your workflow. 
 
-1. Select the most recent run of your pipeline.
+1. Select the most recent run of your workflow.
 
-   Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. Although Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   Wait until the workflow completes the **lint**, **validate**, and **preview** jobs. Although GitHub Action workflows automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-1. Select the **Review** button and then select **Approve**.
+1. Select the **Review deployments** button, select the **Website** environment and select **Approve and deploy**.
 
-   Wait for the pipeline run to finish.
+   Wait for the workflow run to finish.
 
-1. Notice that the **Deploy** stage finishes successfully. The **SmokeTest** stage finishes with an error.
+1. Notice that the **deploy** job finishes successfully. The **smoke-test** job finishes with an error.
 
-   :::image type="content" source="../media/9-pipeline-run-stages-smoketest.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline run stages. The SmokeTest stage reports failure.":::
+   :::image type="content" source="../media/9-workflow-run-jobs-smoketest.png" alt-text="Screenshot of the Azure DevOps interface that shows the workflow run jobs. The SmokeTest job reports failure.":::
 
-1. Select the **Tests** tab.
+1. Select the **smoke-test** job to see its' details.
 
-   :::image type="content" source="../media/9-pipeline-run-test-tab.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline run, with the Tests tab highlighted.":::
+   :::image type="content" source="../media/9-workflow-run-test-tab.png" alt-text="Screenshot of the Azure DevOps interface that shows the workflow run, with the Tests tab highlighted.":::
 
-1. Notice that the test summary shows that two tests ran. One passed and one failed. The test that failed is listed as **Toy Website.Does not serve pages over HTTP**.
+1. Notice that the **smoke-test** output shows that two tests ran. One passed and one failed. The test that failed is listed as **Toy Website.Does not serve pages over HTTP**.
 
-   :::image type="content" source="../media/9-pipeline-run-test-results.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline run's test results, with the failed test highlighted.":::
+   :::image type="content" source="../media/9-workflow-run-test-results.png" alt-text="Screenshot of the Azure DevOps interface that shows the workflow run's test results, with the failed test highlighted.":::
 
    This text indicates that the website hasn't been correctly configured to meet your security team's requirement.
+
+> [!NOTE]
+> We currently look at the test results in the output logs of the **smoke-test** job. In GitHub actions you can also find third party actions that can publish your test results. We will not look into these in this module. 
+<!-- TODO move this note to unit 8 -->
 
 ## Update the Bicep file
 
@@ -135,29 +120,30 @@ Now that you've identified that your Bicep definition doesn't meet your security
    git push
    ```
 
-## Run the pipeline again
+## Run the workflow again
 
-1. In your browser, go to your pipeline.
+1. In your browser, go to your workflow runs.
 
 1. Select the most recent run.
 
-   Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. Although Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   Wait until the workflow completes the **lint**, **validate**, and **preview** jobs. Although Azure workflows automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-1. Select the **Preview** stage, and review the what-if results again.
+1. Select the **preview** job, and review the what-if results again.
 
    Notice that the what-if command has detected the change in the `httpsOnly` property's value:
 
    :::code language="plaintext" source="code/9-what-if-output.txt" highlight="13" :::
 
-1. Go back to the pipeline run.
+1. Go back to the workflow run.
 
-1. Select the **Review** button and then select **Approve**.
+1. Select the **Review deployments** button, select the **Website** environment and select **Approve and deploy**.
 
-   Wait for the pipeline run to finish.
+   Wait for the workflow run to finish.
 
-1. Notice that the entire pipeline finishes successfully, including the **SmokeTest** stage. This success indicates that both tests passed.
 
-   :::image type="content" source="../media/9-pipeline-run-success.png" alt-text="Screenshot of the Azure DevOps interface that shows a successful pipeline run.":::
+1. Notice that the entire workflow finishes successfully, including the **smoke-test** job. This success indicates that both tests passed.
+
+   :::image type="content" source="../media/9-workflow-run-success.png" alt-text="Screenshot of the Azure DevOps interface that shows a successful workflow run.":::
 
 ## Clean up the resources
 

@@ -70,4 +70,4 @@ The environments feature in GitHub gives you the ability to link your jobs to an
 
 It's important that you and your organization establish good practices to review your workflow definitions. An example is configuring your repository to require pull request reviews on any changes to your *main* branch by using branch protection rules. You'll learn more about this in a future module.
 
-You can also add *secrets* to an environment. That way the secret can only be used in a job that also uses the environment. By combining environment protection rules and secrets, you can ensure your pipeline security is maintained.
+You can also add *secrets* to an environment. That way the secret can only be used in a job that also uses the environment. By combining environment protection rules and secrets, you can ensure your workflow security is maintained.
