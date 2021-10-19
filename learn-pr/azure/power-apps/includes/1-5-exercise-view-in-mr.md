@@ -138,19 +138,19 @@ Open the **Sofas** screen created to display the list of products, i.e., in this
 
 1. Open the **Sofas** screen; on the Insert tab, select **More** dropdown, and then navigate to **Gallery** option to select **Vertical**. Rename it to **Gallery_sofas**.
 
-    :::image type="content" source="../media/35.png" alt-text="Screenshot of adding gallery" lightbox="../media/35.png":::
+    :::image type="content" source="../media/select-vertical-gallery.png" alt-text="Screenshot of adding gallery" lightbox="../media/select-vertical-gallery.png":::
 
 2. On the **Properties** tab of the right-hand pane, configure the **Data source** property. Click the dropdown next to it and expand the **Connectors** section to select **SharePoint** as the connection.
 
-    :::image type="content" source="../media/36.png" alt-text="Screenshot of connecting sharepoint" lightbox="../media/36.png":::
+    :::image type="content" source="../media/configure-data-source.png" alt-text="Screenshot of connecting sharepoint" lightbox="../media/configure-data-source.png":::
 
 3. Select the previously created connection and choose the site of your choice. In our case, it is the *Easy Sales* site.
 
-    :::image type="content" source="../media/37.png" alt-text="Screenshot of connection to Easy Sales" lightbox="../media/37.png":::
+    :::image type="content" source="../media/select-connection.png" alt-text="Screenshot of connection to Easy Sales" lightbox="../media/select-connection.png":::
 
 4. On selecting the right site, a catalog of **SharePoint list** created in the site is seen. First, choose the *Easy Sales - Sofas* list, which was created previously. Next, click on **Connect** to connect the data to your **Gallery**.
 
-    :::image type="content" source="../media/38.png" alt-text="Screenshot of selecting Easy Sales - Sofas" lightbox="../media/38.png":::
+    :::image type="content" source="../media/select-sofas-list.png" alt-text="Screenshot of selecting Easy Sales - Sofas" lightbox="../media/select-sofas-list.png":::
 
 5. Configure the **Fields** property the following way:
     * Assign the **ImageLink** to the **Image1** heading.
@@ -161,15 +161,15 @@ Open the **Sofas** screen created to display the list of products, i.e., in this
     >[!Tip]
     > If you find it challenging to add the **ImageLink** to the **Image1** heading, click the **Image** in the gallery and configure the **Image** property on the **Property** tab by adding this line of code: *ThisItem.ImageLink*
 
-    :::image type="content" source="../media/39.png" alt-text="Screenshot of configuring fields - Sofas" lightbox="../media/39.png":::
+    :::image type="content" source="../media/configure-gallery-fields.png" alt-text="Screenshot of configuring fields - Sofas" lightbox="../media/configure-gallery-fields.png":::
 
 6. Let us now insert a label at the top of the screen. To do so, on the **Insert** tab, click on the **Label** option. Then, customize the position, color, and text display according to your needs.
 
-    :::image type="content" source="../media/40.png" alt-text="Screenshot of adding label - Sofas" lightbox="../media/40.png":::
+    :::image type="content" source="../media/insert-label.png" alt-text="Screenshot of adding label - Sofas" lightbox="../media/insert-label.png":::
 
 7. We will add a **Back** icon over the previously added **Label** to help the user navigate the **Home Page** when required. To add the **Back** icon, on the **Insert** tab, expand the **Icons** dropdown and select the **Back icon**.
 
-    :::image type="content" source="../media/41.png" alt-text="Screenshot of adding back icon" lightbox="../media/41.png":::
+    :::image type="content" source="../media/insert-back-icon.png" alt-text="Screenshot of adding back icon" lightbox="../media/insert-back-icon.png":::
 
 8. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following
 
@@ -177,7 +177,7 @@ Open the **Sofas** screen created to display the list of products, i.e., in this
     Navigate('Home Page',ScreenTransition.Cover)
     ```
 
-    :::image type="content" source="../media/42.png" alt-text="Screenshot of configuring OnSelect property " lightbox="../media/42.png":::
+    :::image type="content" source="../media/configure-back-icon.png" alt-text="Screenshot of configuring OnSelect property " lightbox="../media/configure-back-icon.png":::
 
 9. Follow the same procedure for the **Chairs**, **Tables**, and **Carpets** pages.
 
