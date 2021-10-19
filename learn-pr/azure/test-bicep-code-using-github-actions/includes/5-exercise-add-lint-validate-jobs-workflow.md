@@ -19,7 +19,7 @@ During the process, you'll:
 
 1. Below the `jobs:` line, above the `deploy` job, add a new lint job:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="14-21" highlight="2-6" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="14-20" highlight="2-7" :::
 
    <!-- TODO watch indentation -->
 
@@ -55,6 +55,8 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 1. Save the file.
 
+<!-- TODO add step to add stderror thing to workflow.yml -->
+
 ## Verify and commit your workflow definition
 
 1. Verify that your *workflow.yml* file looks like the following:
@@ -87,11 +89,9 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
    Notice that the **lint** and **validate** jobs have failed.
 
-   :::image type="content" source="../media/5-workflow-run-jobs-lint.png" alt-text="Screenshot of a workflow run in GitHub Actions, with the Lint job reporting failure.":::
+   :::image type="content" source="../media/5-workflow-run-jobs-lint-validate.png" alt-text="Screenshot of a workflow run in GitHub Actions, with the Lint and Validate jobs reporting failure.":::
 
 1. Select the **lint** job to see its details.
-
-   :::image type="content" source="../media/5-workflow-run-lint-job-select.png" alt-text="Screenshot of a workflow run in GitHub Actions, with the name of the Lint job highlighted.":::
 
 1. Select the **Run Bicep linter** step to view the workflow log.
 

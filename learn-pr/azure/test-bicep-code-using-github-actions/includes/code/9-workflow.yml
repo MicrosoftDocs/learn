@@ -4,8 +4,6 @@ on:
   push:
     branches: 
       - main
-    paths: 
-      - 'deploy/**'
 
 env:
   AZURE_RESOURCEGROUP_NAME: ToyWebsiteTest
@@ -70,6 +68,7 @@ jobs:
       id: deploy
       name: Deploy website
       with:
+        failOnStdErr: false
         deploymentName: ${{ github.run_number }}
         resourceGroupName: ${{ env.AZURE_RESOURCEGROUP_NAME }}
         template: ./deploy/main.bicep
