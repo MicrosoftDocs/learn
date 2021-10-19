@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.power-apps.2-add-data-source
-title: Add data source
+title: Add data source to canvas app
 metadata:
-  title: Add data source
+  title: Add data source to canvas app
   description: you'll learn how to design customized application that work across the web and mobile, embedded, standalone or on any device.
   ms.date: 10/19/2021
   author: "Sean-Kerawala"
