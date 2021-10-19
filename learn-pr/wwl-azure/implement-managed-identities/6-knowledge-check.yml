@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/18/2021
+  ms.date: 10/19/2021
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -25,3 +25,14 @@ quiz:
     - content: "Can only be associated with a single Azure resource"
       isCorrect: false
       explanation: "That's incorrect. The same user-assigned managed identity can be associated with more than one Azure resource."
+  - content: "A client app requests managed identities for an access token for a given resource. Which of the below is the basis for the token?"
+    choices:
+    - content: "Managed identity"
+      isCorrect: false
+      explanation: "That's incorrect. The token is based on the managed identities for Azure resources service principal."
+    - content: "Service principal"
+      isCorrect: true
+      explanation: "That's correct. The token is based on the managed identities for Azure resources service principal."
+    - content: "Virtual machine"
+      isCorrect: false
+      explanation: "That's incorrect. The token is based on the managed identities for Azure resources service principal."
