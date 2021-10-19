@@ -8,7 +8,7 @@ We will be using SharePoint as our primary data source for this application. You
 
 2. Select **+ Create site** on the SharePoint start page.
 
-    :::image type="content" source="../media/1.png" alt-text="Screenshot showing to create site on the sharePoint start page." lightbox="../media/1.png":::
+    :::image type="content" source="../media/create-site.png" alt-text="Screenshot showing to create site on the sharePoint start page." lightbox="../media/create-site.png":::
 
 3. In the wizard:
 
@@ -20,7 +20,7 @@ We will be using SharePoint as our primary data source for this application. You
 
 4. Select **Finish**.
 
-    :::image type="content" source="../media/2.png" alt-text="Screenshot of updating site details." lightbox="../media/2.png":::
+    :::image type="content" source="../media/update-site-details.png" alt-text="Screenshot of updating site details." lightbox="../media/update-site-details.png":::
 
 A modern SharePoint site is created and ready for use in seconds. You can now create a list, document library, page, and so on in your newly created site.
 
@@ -35,19 +35,15 @@ For our **Easy Sales** application, we will create separate lists for each produ
 
 1. Open the newly created SharePoint site under the name *Easy Sales*.
 
-    :::image type="content" source="../media/3.png" alt-text="Screenshot of newly created Easy Sales site." lightbox="../media/3.png":::
-
 2. Click **+ New** dropdown.
-
-    :::image type="content" source="../media/4.png" alt-text="Screenshot desicribing to click on the New dropdown." lightbox="../media/4.png":::
 
 3. Select **List** to create a SharePoint list.
 
-    :::image type="content" source="../media/5.png" alt-text="Screenshot of select list." lightbox="../media/5.png":::
+    :::image type="content" source="../media/select-list.png" alt-text="Screenshot of select list." lightbox="../media/select-list.png":::
 
 4. In the **Create a List** window, Select **Blank list**.
 
-      :::image type="content" source="../media/6.png" alt-text="Screenshot of select Blank List." lightbox="../media/6.png":::
+      :::image type="content" source="../media/select-blank-list.png" alt-text="Screenshot of select Blank List." lightbox="../media/select-blank-list.png":::
 
 5. In the **Create** pane:
 
@@ -55,7 +51,7 @@ For our **Easy Sales** application, we will create separate lists for each produ
     * Leave the **Show in site navigation** checkbox selected.
     * Click **Create**.
 
-     :::image type="content" source="../media/7.png" alt-text="Screenshot of Create Pane." lightbox="../media/7.png":::
+     :::image type="content" source="../media/enter-details.png" alt-text="Screenshot of Create Pane." lightbox="../media/enter-details.png":::
 
 6. Repeat the same procedure to create SharePoint lists for all the product categories. Again, provide a suitable name for each, for example, *Easy sales - Chairs*, *Easy Sales - Tables*, and *Easy Sales - Carpets*.
 
@@ -64,6 +60,12 @@ For our **Easy Sales** application, we will create separate lists for each produ
 Once the list is created, it's time to add the data to it. Here data means the product details of a particular product. The product details include the following information: Name, Image, Price, Dimensions, Weight, Color, PrimaryMaterial, Area, Height, and a 3D model/image of the product to be viewed in Mixed Reality.
 
 1. When your *Easy sales - Sofas* list opens, select **+ Add column**, and create the following columns with the specified column type. The below list shows the columns that need to be created with their name and type in this format *Name of the Column - Column type*.
+
+     :::image type="content" source="../media/add-column.png" alt-text="Screenshot of select Add Column." lightbox="../media/add-column.png":::
+
+     Select the **Column type**.
+
+     :::image type="content" source="../media/column-type.png" alt-text="Screenshot of select Single line of text." lightbox="../media/column-type.png":::
 
     * **Name** - Single line of text.
     * **ImageLink** - Single line of text.
@@ -75,15 +77,11 @@ Once the list is created, it's time to add the data to it. Here data means the p
     * **Area** - Number
     * **Height** - Number
 
-    :::image type="content" source="../media/8.png" alt-text="Screenshot of select Add Column." lightbox="../media/8.png":::
-
-    :::image type="content" source="../media/9.png" alt-text="Screenshot of select Single line of text." lightbox="../media/9.png":::
-
-    :::image type="content" source="../media/10.png" alt-text="Screenshot of Create a Column." lightbox="../media/10.png":::
+    :::image type="content" source="../media/column-details.png" alt-text="Screenshot of Create a Column." lightbox="../media/column-details.png":::
 
 2. Once the columns are added, let's start adding the actual data under these columns. First, add an item to your list by either selecting **+ New** or **Edit in grid view**.
 
-    :::image type="content" source="../media/11.png" alt-text="Screenshot of selecting New or Edit in grid view to add new item." lightbox="../media/11.png":::
+    :::image type="content" source="../media/edit-grid-view.png" alt-text="Screenshot of selecting New or Edit in grid view to add new item." lightbox="../media/edit-grid-view.png":::
 
     >[!Note]
     > Grid view lets you add information freely to different rows or columns.
@@ -106,7 +104,7 @@ Once the list is created, it's time to add the data to it. Here data means the p
     * **PrimaryMaterial** - Single line of text.
     * **Price/cm2** - Number
 
-    :::image type="content" source="../media/12.png" alt-text="Screenshot of adding the column and their types in the format." lightbox="../media/12.png":::
+    :::image type="content" source="../media/carpets-list.png" alt-text="Screenshot of adding the column and their types in the format." lightbox="../media/carpets-list.png":::
 
     >[!Note]
     > You won't be needing the area and height columns for the *Easy sales - Carpets* list. This product category will take up the area value measured during the **Measure in MR** session and give out the price of the carpet following the area calculated.
@@ -115,14 +113,12 @@ Once the list is created, it's time to add the data to it. Here data means the p
 
 1. Sign in to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), select **Dataverse > Connections** in the left navigation bar, and then select **+ New connection** near the upper-left corner.
 
-    :::image type="content" source="../media/13.png" alt-text="Screenshot of select New connection." lightbox="../media/13.png":::
-
 2. Select **SharePoint**.
 
-    :::image type="content" source="../media/14.png" alt-text="Screenshot of select Sharepoint." lightbox="../media/14.png":::
+    :::image type="content" source="../media/share-point.png" alt-text="Screenshot of select Sharepoint." lightbox="../media/share-point.png":::
 
 3. To connect to SharePoint Online, select **Connect directly (cloud services)**, select **Create** and then provide credentials (if prompted).
 
-    :::image type="content" source="../media/15.png" alt-text="Screenshot of select Create." lightbox="../media/15.png":::
+    :::image type="content" source="../media/cloud-services.png" alt-text="Screenshot of select Create." lightbox="../media/cloud-services.png":::
 
 4. The connection is created, and you can build an app from scratch.
