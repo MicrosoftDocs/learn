@@ -160,8 +160,50 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 11. Add three **Labels** and change the display text as **Enter your email to get an order confirmation mail!**, **Organization mail ID:**, and **Customer mail ID:** respectively.
 
-12. On the **Insert** tab, expand the **Input** dropdown and select **Text input**. Add two **Text input** component to the screen and position them as shown in the figure.
+12. On the **Insert** tab, expand the **Input** dropdown and select **Text input**. Add two **Text input** components to the screen and position them as shown in the figure. Rename them as **Input1** and **Input2** respectively
 
-13. Configure the **Hint text** property by adding **Enter mail ID:** and store no value in the **Default** property. Adjust the font size and color according to your need.
+13. Configure the **Hint text** property by adding **Enter mail ID:** and store no value in the **Default** property. Then, adjust the font size and color according to your need.
 
-14. 
+14. Consider adding a button from the **Insert** tab and configure its **Text** property by adding **Confirm**.
+
+15. On the **Insert** tab, expand the **Icons** dropdown and select **Back** and **Home** icon. Position them correctly, as shown in the figure.
+
+16. Configure the **OnSelect** property of these two icons in the following way:
+    * **Back**:
+
+        ```Power Apps
+        Navigate(Details_sofas,ScreenTransition.CoverRight)
+        ```
+
+    * **Home**:
+
+        ```Power Apps
+        Navigate('Home Page',ScreenTransition.CoverRight)
+        ```
+
+## Create end page
+
+1. Create a **Blank** screen and rename it as **End page**.
+
+2. Add a **Label** and change its display text to **Order Successfully Placed!**. Position the label as required on the screen.
+
+3. Consider adding a **Button** at the bottom of the screen. Configure the **Text** property of the button by adding **Shop more**. Let's navigate the user to the home page by clicking the **Shop more** button by adding the following line in the **OnSelect** property.
+
+    ```Power Apps
+    Navigate('Home Page',ScreenTransition.Cover)
+    ```
+
+## Send emails via Power Apps
+
+1. Click the **Data** tab and select **+ Add data**. Next, expand the **Connectors** to select **Office 365 Outlook** to add it as one of the connectors for this application.
+
+2. Configure the **OnSelect** property of the **Confirm** button by adding the following lines:
+
+    ```Power Apps
+    Office365Outlook.SendEmailV2(Input1 & ";"& Input2,"Order Summary","<b> Your order is successfully placed! </b> <br>
+    Order details are as follows: <ul> <li> Product: " & Name_sofa2 & "</li> <li> Price: " & Price_sofa2 & "</li> <li> Color: " & color_sofa2 & "</li> </ul>Notes: " & TextInput3 & "<br><b> Thank you for shopping with us! </b>");
+    Navigate('End Screen',ScreenTransition.Cover) 
+    ```
+
+    >[!Note]
+    >The names used in the above function follow the namings used in this application at the time of development. You may customize the function concerning your application.
