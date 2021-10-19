@@ -46,11 +46,11 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 1. You should already have a blank screen in the Power Apps Studio. If not, on the **Home** tab, select the down-arrow next to **New screen** to open a list of screen types, and then select **Blank**.
 
-    :::image type="content" source="../media/22.png" alt-text="Screenshot of creating new screen." lightbox="../media/22.png":::
+    :::image type="content" source="../media/new-screen.png" alt-text="Screenshot of creating new screen." lightbox="../media/new-screen.png":::
 
 2. Rename the screen to **Splash screen** by clicking on the **Three dots** present beside the screen name and selecting the **Rename** option.
 
-    :::image type="content" source="../media/23.png" alt-text="Screenshot of renaming the screen." lightbox="../media/23.png":::
+    :::image type="content" source="../media/rename-splash-screen.png" alt-text="Screenshot of renaming the screen." lightbox="../media/rename-splash-screen.png":::
 
 3. Click on the newly created screen to change its properties in the **Properties** tab at the right side of the screen.
 
@@ -58,11 +58,11 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 5. Set the image position to **Fit**.
 
-    :::image type="content" source="../media/24.png" alt-text="Screenshot of adding Easy Sales logo to the splash screen." lightbox="../media/24.png":::
+    :::image type="content" source="../media/add-easy-sales-logo.png" alt-text="Screenshot of adding Easy Sales logo to the splash screen." lightbox="../media/add-easy-sales-logo.png":::
 
 6. On the **Insert** tab, Expand the **Input** dropdown and select **Timer**. Then, drag the button on the screen and place it where ever required.
 
-    :::image type="content" source="../media/25.png" alt-text="Screenshot of adding the timer." lightbox="../media/25.png":::
+    :::image type="content" source="../media/add-timer.png" alt-text="Screenshot of adding the timer." lightbox="../media/add-timer.png":::
 
 7. To edit some of the timer properties, you can either use the **Property** dropdown at the top left corner or use the **Properties** pane. Set the following properties as given below:
 
@@ -70,7 +70,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
     * **Duration** - 2000
     * **Visible** - false
 
-    :::image type="content" source="../media/26.png" alt-text="Screenshot of updating the properties of timer." lightbox="../media/26.png":::
+    :::image type="content" source="../media/update-properties-timer.png" alt-text="Screenshot of updating the properties of timer." lightbox="../media/update-properties-timer.png":::
 
     >[!Note]
     > By default, the unit taken to measure duration is in milliseconds. Since 1 second = 1000 milliseconds, we enter 2000 as the value for the duration.
