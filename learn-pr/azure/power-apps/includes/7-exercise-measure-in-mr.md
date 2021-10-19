@@ -244,7 +244,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
         Navigate('Home Page',ScreenTransition.CoverRight)
         ```
 
-        :::image type="content" source="../media/configure-home-icon-order.png" alt-text="Screenshot of home OnSelect config" lightbox="../media/101.png":::
+        :::image type="content" source="../media/configure-home-icon-order.png" alt-text="Screenshot of configuring OnSelect - Order" lightbox="../media/101.png":::
 
 ## Create end page
 
@@ -268,7 +268,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 1. Click the **Data** tab and select **+ Add data**. Next, expand the **Connectors** to select **Office 365 Outlook** to add it as one of the connectors for this application.
 
-    :::image type="content" source="../media/add-office-365-outlook.png" alt-text="Screenshot of add data" lightbox="../media/add-office-365-outlook.png":::
+    :::image type="content" source="../media/add-office-365-outlook.png" alt-text="Screenshot of add data connectors for mail" lightbox="../media/add-office-365-outlook.png":::
 
 2. Configure the **OnSelect** property of the **Confirm** button by adding the following lines:
 
@@ -278,7 +278,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
     Navigate('End Screen',ScreenTransition.Cover) 
     ```
 
-    :::image type="content" source="../media/configure-confirm-email-button.png" alt-text="Screenshot of add data" lightbox="../media/configure-confirm-email-button.png":::
+    :::image type="content" source="../media/configure-confirm-email-button.png" alt-text="Screenshot of configuring confirm button" lightbox="../media/configure-confirm-email-button.png":::
 
     >[!Note]
     >The names used in the above function follow the namings used in this application at the time of development. You may customize the function concerning your application.

@@ -38,7 +38,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 6. On selecting the **Easy Sales** SharePoint site, all the lists created on that site are displayed. Next, select all the SharePoint lists created concerning the application and click on **Connect**.
 
-    :::image type="content" source="../media/select-lists.png" alt-text="Screenshot of select Easy Sales." lightbox="../media/select-lists.png":::
+    :::image type="content" source="../media/select-lists.png" alt-text="Screenshot of selecting lists." lightbox="../media/select-lists.png":::
 
 7. All the required data is connected and ready to use in the application. In the upper-right corner of the **Data** pane, close it by selecting the close icon **(X)**.
 
@@ -95,7 +95,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 3. We will use these buttons to navigate to the list of products under various categories. To do so, we need to create separate screens for each category. So, first, create four new **Blank** screens and rename them accordingly, for example, *Sofas, Chairs, Tables, and Carpets*.
 
-    :::image type="content" source="../media/edit-display-text-2.png" alt-text="Screenshot of editing display text." lightbox="../media/edit-display-text-2.png":::
+    :::image type="content" source="../media/edit-display-text-2.png" alt-text="Screenshot of adding new screens." lightbox="../media/edit-display-text-2.png":::
 
 4. Click the newly created **Sofas** button and configure the **OnSelect** property. On clicking the button, it must navigate us to the product list page created in the previous step. Replace the *false* by the below-given code:
 
@@ -169,7 +169,7 @@ Open the **Sofas** screen created to display the list of products, i.e., in this
 
 7. We will add a **Back** icon over the previously added **Label** to help the user navigate the **Home Page** when required. To add the **Back** icon, on the **Insert** tab, expand the **Icons** dropdown and select the **Back icon**.
 
-    :::image type="content" source="../media/insert-back-icon.png" alt-text="Screenshot of adding back icon" lightbox="../media/insert-back-icon.png":::
+    :::image type="content" source="../media/insert-back-icon.png" alt-text="Screenshot of adding back icon - home page" lightbox="../media/insert-back-icon.png":::
 
 8. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following
 
@@ -352,7 +352,7 @@ You are allowed to take pictures during the **View in MR** session and display t
 
 7. We will add a **Back** icon over the previously added **Label** to help the user navigate the **Home Page** when required. To add the **Back** icon, on the **Insert** tab, expand the **Icons** dropdown and select the **Back icon**.
 
-    :::image type="content" source="../media/add-back-icon-notes.png" alt-text="Screenshot of adding back icon" lightbox="../media/add-back-icon-notes.png":::
+    :::image type="content" source="../media/add-back-icon-notes.png" alt-text="Screenshot of adding back icon - notes" lightbox="../media/add-back-icon-notes.png":::
 
 8. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following
 
