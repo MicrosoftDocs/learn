@@ -19,10 +19,10 @@ quiz:
         - content: "Distance"
           isCorrect: false
           explanation: The amount of space between to two points.
-        - content: "volume"
+        - content: "Volume"
           isCorrect: false
           explanation: The amount of space enclosed in a three-dimensional space.
-        - content: " area"
+        - content: "Area"
           isCorrect: false
           explanation: The amount of space enclosed in a two-dimensional space.
         - content: "All of the above"
