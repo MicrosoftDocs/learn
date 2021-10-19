@@ -151,11 +151,12 @@ To complete the component that sends messages about sales:
             static async Task SendSalesMessageAsync()
             {
                 await using var client = new ServiceBusClient(ServiceBusConnectionString);
-    
+
+                ServiceBusSender sender = client.CreateSender(QueueName);
                 try
                 {
                     string messageBody = $"$10,000 order for bicycle parts from retailer Adventure Works.";
-                    var message = new ServiceBusMessage(Encoding.UTF8.GetBytes(messageBody));
+                    var message = new ServiceBusMessage(messageBody);
                     Console.WriteLine($"Sending message: {messageBody}");
                     await sender.SendMessageAsync(message);
                 }
