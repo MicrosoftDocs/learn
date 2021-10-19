@@ -286,11 +286,11 @@ The details page includes all the details and information concerning the selecte
 
 3. Make sure **Attachments** is selected and press **Apply** at the top. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file).
 
-    :::image type="content" source="../media/56.png" alt-text="Screenshot to add attachments" lightbox="../media/56.png":::
+    :::image type="content" source="../media/add-attachments.png" alt-text="Screenshot to add attachments" lightbox="../media/add-attachments.png":::
 
 4. Click the dropdown present beside the **Attachments** column and select **Show attachments first**
 
-    :::image type="content" source="../media/57.png" alt-text="Screenshot to select Show attachments first" lightbox="../media/57.png":::
+    :::image type="content" source="../media/select-Show-attachments.png" alt-text="Screenshot to select Show attachments first" lightbox="../media/select-Show-attachments.png":::
 
 5. Switch to **Power Apps Studio**, In the **Properties** panel for the **View in MR** component, on the **Advanced** tab, select the **Source** field and enter:
 
@@ -298,7 +298,7 @@ The details page includes all the details and information concerning the selecte
     First(Gallery_sofas.Selected.Attachments).Value
     ```
 
-    :::image type="content" source="../media/58.png" alt-text="Screenshot to add source for view in MR" lightbox="../media/58.png":::
+    :::image type="content" source="../media/add-source.png" alt-text="Screenshot to add source for view in MR" lightbox="../media/add-source.png":::
 
 6. Repeat the same procedure in the **Details_chairs** and **Details_tables** screen. While duplicating the procedure, make sure to change the **Gallery** names accordingly, for example,
 
