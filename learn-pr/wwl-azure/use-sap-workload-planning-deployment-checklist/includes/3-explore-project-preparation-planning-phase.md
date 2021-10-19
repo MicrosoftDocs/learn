@@ -64,7 +64,7 @@ For SAP NetWeaver systems, SAP offers guidelines on how to keep the volume of ma
 The goal of automation in infrastructure deployments on Azure is to ensure deterministic results. Many customers use PowerShell or Azure CLI based scripts and Azure Resource Manager templates. But there are other open-source technologies (such as Terraform and Ansible) that can be used to deploy Azure infrastructure for SAP and even install SAP software. Examples can be found on GitHub at:
 
  -  [Automated SAP Deployments in Azure Cloud](https://github.com/Azure/sap-hana)
- -  [SAP HANA ARM Installation](https://github.com/AzureCAT-GSI/SAP-HANA-ARM)
+ -  [SAP HANA Azure Resource Manager Installation](https://github.com/AzureCAT-GSI/SAP-HANA-ARM)
 
 > [!NOTE]
 > Define a regular design and deployment review cadence between you as a customer, system integrator, Microsoft, and other involved parties.

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/18/2021
+  ms.date: 10/19/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -28,7 +28,7 @@ quiz:
     - content: "Optimizing price/performance ratio of Azure compute and storage resources."
       isCorrect: false
       explanation: "Incorrect. Optimizing price/performance ratio of Azure compute and storage resources takes place during the post-production phase."
-  - content: "Which step is missing from the following list of steps in the pilot phase of deploying an SAP workload to Azure using the SAP workload planning and deployment checklist? 1. Optimize data transfer into Azure. 2. Test and optimize export and import phases. 3. Perform technical validation. 4. Test performance."
+  - content: "The following is a list of some of the steps in the pilot phase of deploying an SAP workload to Azure using the SAP workload planning and deployment checklist. 1. Optimize data transfer into Azure. 2. Test and optimize export and import phases. 3. Perform technical validation. 4. Test performance. Which step is missing?"
     choices:
     - content: "Perform security checks"
       isCorrect: true
