@@ -9,3 +9,4 @@ By the end of this module, you'll be able to:
 - Describe authentication.
 - Describe some of the common authentication-based attacks.
 - Describe authorization security techniques.
+
