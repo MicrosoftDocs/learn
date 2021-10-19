@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Train a predictive maintenance machine learning model with ML.NET Model Builder
   description: "In this module, you'll learn how use the ML.NET Model Builder "
-  ms.date: 10/14/2021
+  ms.date: 10/19/2021
   author: luisquintanilla
   ms.author: luquinta
   ms.topic: interactive-tutorial
@@ -13,12 +13,9 @@ title: Train a predictive maintenance machine learning model with ML.NET Model B
 summary: "Train a machine learning model in Visual Studio with ML.NET using Model Builder that uses sensor data to detect whether a machine is broken."
 abstract: |
   By the end of this module, you'll be able to:
-  - Choose a machine learning scenario to solve your problem
-  - Choose a computing environment to train your model
-  - Load data to train your model
-  - Train a machine learning model for predictive maintenance
-  - Evaluate how well your machine learning model performs
-  - Consume your machine learning model in a .NET application
+  - Learn what Model Builder is
+  - Train a machine learning model using Model Builder
+  - Consume a machine learning model using Model Builder
 prerequisites: |
   > [!NOTE]
   > Visual Studio 2022 is currently in preview.
@@ -35,18 +32,10 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - dotnet
 units:
 - learn.predictive-maintenance-model-builder.introduction
-- learn.predictive-maintenance-model-builder.scenario
-- learn.predictive-maintenance-model-builder.exercise-choose-scenario
-- learn.predictive-maintenance-model-builder.environment
-- learn.predictive-maintenance-model-builder.exercise-choose-environment
-- learn.predictive-maintenance-model-builder.data
-- learn.predictive-maintenance-model-builder.exercise-load-data
-- learn.predictive-maintenance-model-builder.train
-- learn.predictive-maintenance-model-builder.exercise-train-model
-- learn.predictive-maintenance-model-builder.evaluate
-- learn.predictive-maintenance-model-builder.exercise-evaluate-model
-- learn.predictive-maintenance-model-builder.consume
-- learn.predictive-maintenance-model-builder.exercise-consume-model
+- learn.predictive-maintenance-model-builder.train-model-builder
+- learn.predictive-maintenance-model-builder.exercise-train-model-builder
+- learn.predictive-maintenance-model-builder.consume-model-builder
+- learn.predictive-maintenance-model-builder.exercise-consume-model-builder
 - learn.predictive-maintenance-model-builder.summary
 badge:
   uid: learn.predictive-maintenance-model-builder.badge
