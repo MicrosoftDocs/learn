@@ -4,10 +4,7 @@ Azure NetApp Files provides native NFS shares that can be used for **/hana/share
 > The NFS v3 protocol implemented on Azure NetApp Files is **not** supported to be used for **/hana/data** and **/hana/log**. The usage of the NFS 4.1 is mandatory for **/hana/data** and **/hana/log** volumes from a functional point of view. Whereas for the **/hana/shared** volume the NFS v3 or the NFS v4.1 protocol can be used from a functional point of view.
 
 :::image type="content" source="../media/highly-available-nfs-share-overview-558f42ac.png" alt-text="Highly available NFS share overview":::
-<br>:::image type="content" source="../media/highly-available-nfs-share-overview-558f42ac.png":::
-:::image type="content" source="../media/highly-available-nfs-share-overview-558f42ac.png":::
-:::image type="content" source="../media/highly-available-nfs-share-overview-558f42ac.png":::
-
+<br><br>
 
 ## Important considerations
 
