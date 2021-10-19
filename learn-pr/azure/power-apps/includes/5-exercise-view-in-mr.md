@@ -322,19 +322,19 @@ You are allowed to take pictures during the **View in MR** session and display t
 
 1. Create four new **Blank** screens and rename them as **Notes_sofas**, **Notes_chairs**, **Notes_tables**, and **Notes_carpets**.
 
-    :::image type="content" source="../media/59.png" alt-text="Screenshot of new screens for notes" lightbox="../media/59.png":::
+    :::image type="content" source="../media/add-blank-notes-page.png" alt-text="Screenshot of new screens for notes" lightbox="../media/add-blank-notes-page.png":::
 
 2. Design the **Notes_sofas** page by, clicking the **Input** dropdown and selecting **Text input**. Enlarge the **Text input** component to cover half of the screen and rename it as **TextInput_sofas**.
 
-    :::image type="content" source="../media/60.png" alt-text="Screenshot of adding Text input" lightbox="../media/60.png":::
+    :::image type="content" source="../media/add-text-input.png" alt-text="Screenshot of adding Text input" lightbox="../media/add-text-input.png":::
 
 3. Click the drop down at the right side of the studio and select **Gallery**. Choose **Horizontal** type of gallery.
 
-    :::image type="content" source="../media/61.png" alt-text="Screenshot of adding horizontal gallery" lightbox="../media/61.png":::
+    :::image type="content" source="../media/horizontal-gallery.png" alt-text="Screenshot of adding horizontal gallery" lightbox="../media/horizontal-gallery.png":::
 
 4. Position the gallery at the other part of the screen. Retain only the image by deleting the **Subtitle** and **Title**. Enlarge the image.
 
-    :::image type="content" source="../media/62.png" alt-text="Screenshot of only image in gallery" lightbox="../media/62.png":::
+    :::image type="content" source="../media/retain-image.png" alt-text="Screenshot of only image in gallery" lightbox="../media/retain-image.png":::
 
 5. Click the gallery added and configure the **Items** property by adding the following line:
 
@@ -342,17 +342,17 @@ You are allowed to take pictures during the **View in MR** session and display t
     ViewInMR1.Photos
     ```
 
-    :::image type="content" source="../media/63.png" alt-text="Screenshot of adding property to gallery" lightbox="../media/63.png":::
+    :::image type="content" source="../media/configure-items-property.png" alt-text="Screenshot of adding property to gallery" lightbox="../media/configure-items-property.png":::
 
     By doing so, all the pictures taken in the **View in MR** session is stored in this gallery for future references.
 
 6. Let us now insert a label at the top of the screen. To do so, on the **Insert** tab, click on the **Label** option. Then, customize the position, color, and text display according to your needs.
 
-    :::image type="content" source="../media/64.png" alt-text="Screenshot of inserting label" lightbox="../media/64.png":::
+    :::image type="content" source="../media/insert-label-notes.png" alt-text="Screenshot of inserting label" lightbox="../media/insert-label-notes.png":::
 
 7. We will add a **Back** icon over the previously added **Label** to help the user navigate the **Home Page** when required. To add the **Back** icon, on the **Insert** tab, expand the **Icons** dropdown and select the **Back icon**.
 
-    :::image type="content" source="../media/65.png" alt-text="Screenshot of adding back icon" lightbox="../media/65.png":::
+    :::image type="content" source="../media/add-back-icon-notes.png" alt-text="Screenshot of adding back icon" lightbox="../media/add-back-icon-notes.png":::
 
 8. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following
 
@@ -360,11 +360,11 @@ You are allowed to take pictures during the **View in MR** session and display t
     Navigate('Details_sofas',ScreenTransition.Cover)
     ```
 
-    :::image type="content" source="../media/66.png" alt-text="Screenshot of positioned and OnSelect" lightbox="../media/66.png":::
+    :::image type="content" source="../media/configure-back-icon-notes.png" alt-text="Screenshot of positioned and OnSelect" lightbox="../media/configure-back-icon-notes.png":::
 
 9. Switch to the **Details_sofas** screen and add a **Note** icon from the **Icons** dropdown on the **Insert** tab.
 
-    :::image type="content" source="../media/67.png" alt-text="Screenshot of adding note icon" lightbox="../media/67.png":::
+    :::image type="content" source="../media/add-note-icon.png" alt-text="Screenshot of adding note icon" lightbox="../media/add-note-icon.png":::
 
 10. Configure the **OnSelect** property of the **Note** icon by adding the following line:
 
@@ -372,6 +372,6 @@ You are allowed to take pictures during the **View in MR** session and display t
     Navigate(Notes_sofas,ScreenTransition.CoverRight)
     ```
 
-    :::image type="content" source="../media/68.png" alt-text="Screenshot of OnSelect for note" lightbox="../media/68.png":::
+    :::image type="content" source="../media/configure_note_icon.png" alt-text="Screenshot of OnSelect for note" lightbox="../media/configure_note_icon.png":::
 
 11. Replicate the same procedure for **Notes_chairs**, **Notes_tables**, **Notes_carpets**, and its respective **Details** page.
