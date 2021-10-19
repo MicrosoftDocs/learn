@@ -106,7 +106,7 @@ When performing an Azure IaaS migration, there isn't a modernization path simila
 
 So, while an IaaS migration to Azure may not be modernizing the applications themselves, the other modern services that can be used provide a modernized tool set for managing your IaaS deployment.
 
-![Modernize OSS apps on Azure](../media/migrate-modernize-iaas.png)
+![Modernize OSS apps on Azure](../media/migrate-modernize-infra.png)
 
 **Deep dive on migration scenarios:**
 
