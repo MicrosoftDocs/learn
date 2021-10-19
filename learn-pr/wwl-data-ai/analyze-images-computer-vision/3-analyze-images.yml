@@ -4,14 +4,14 @@ title: Exercise - Analyze images with the Computer Vision service
 metadata:
   title: Exercise - Analyze images with the Computer Vision service
   description: "Exercise - Analyze images with the Computer Vision service"
-  ms.date: 10/14/2021
+  ms.date: 10/18/2021
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: true
-labModal: false
+azureSandbox: false
+labId: 88758
+labModal: true
 durationInMinutes: 20
 content: |
   [!include[](includes/3-analyze-images.md)]
-interactive: powershell
