@@ -34,7 +34,7 @@ The test script that you created in the preceding steps requires a host name to 
 
 1. In the **deploy** job, add an id to the `Deploy website` step, and add an output to the job that uses this steps' outputs:
 
-   :::code language="bash" source="code/9-workflow.yml" range="85-77" highlight="5-6, 14" :::
+   :::code language="yaml" source="code/9-workflow.yml" range="58-77" highlight="5-6, 14" :::
 
 1. Save the file.
 
@@ -50,7 +50,7 @@ Now, you can add a smoke test job that runs your tests.
    We also indicate in this job that is dependent on the **deploy** job with the needs parameter. This allows us to use the output of this job when we create the Pester container. 
 
    > [!NOTE]
-   > Powershell and Pester are both preinstalled on GitHub-hosted runners. You don't need to do anything special to use them in a script step.
+   > PowerShell and Pester are both preinstalled on GitHub-hosted runners. You don't need to do anything special to use them in a script step.
 
 1. Save the file.
 

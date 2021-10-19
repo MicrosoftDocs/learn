@@ -36,40 +36,17 @@ When you run tests from a workflow, any test failures should stop the workflow f
 
 When you divide your workflow into multiple jobs, each with its own responsibility, you sometimes need to pass data between these jobs. For example, one job might create an Azure resource that another job needs to work with. To be able to pass data, the second job needs to know the name of the resource that was created. This is the case with our smoke test job, which needs to access the resources that the deployment job has deployed.
 
-Your Bicep file deploys the resources, so it can access the resource properties and publish them as deployment outputs. When you run your Bicep deployment through the `arm-deploy` action, this action will store these Bicep deployment outputs in its step outputs. Next, the job holding the `arm-deploy` action can now publish these step outputs as job outputs. It does this by referencing the step by its id property, which we set to `deploy`.
+Your Bicep file deploys the resources, so it can access the resource properties and publish them as deployment outputs. When you run your Bicep deployment through the `arm-deploy` action, this action will store these Bicep deployment outputs in its step outputs. Next, the job holding the `arm-deploy` action can now publish these step outputs as job outputs. It does this by referencing the step's `id` property, which we set to `deploy`:
 
-:::code language="bash" source="code/8-output-variable.yml" range="58-77" :::
+:::code language="yaml" source="code/8-output-variable.yml" range="58-77" highlight="5-6, 14, " :::
 
 You can access a job output in your workflow in any subsequent job that is depending on the job that produces the output. It does this again by referencing the previous job by its id. 
 
-:::code language="bash" source="code/8-output-variable.yml" range="79-92" :::
+:::code language="yaml" source="code/8-output-variable.yml" range="79-92" :::
 
 Do note that for you to be able to use outputs on jobs, the `need` dependency between the jobs is mandatory. 
 
-In case the action you are using is not able to set outputs the way the `arm-deploy` action does, you can still add an additional statement to set a step output variable: 
-
-```YAML
-jobs:
-  job1:
-    runs-on: ubuntu-latest
-    # Map a step output to a job output
-    outputs:
-      output1: ${{ steps.step1.outputs.test }}
-      output2: ${{ steps.step2.outputs.test }}
-    steps:
-      - id: step1
-        run: echo "::set-output name=test::hello"
-      - id: step2
-        run: echo "::set-output name=test::world"
-  job2:
-    runs-on: ubuntu-latest
-    needs: job1
-    steps:
-      - run: echo ${{needs.job1.outputs.output1}} ${{needs.job1.outputs.output2}}
-```
-
-The above way of setting outputs could be used in case you are using the `cli` action for deploying your Bicep template. 
-
+You can also pass outputs from a workflow script by using a special syntax. We link to more information in the summary. 
 
 ### Other test types
 
