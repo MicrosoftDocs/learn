@@ -1,12 +1,12 @@
 As you discovered in the previous unit, cryptography is the art of obscuring the meaning of a message to everyone but the intended recipient. This requires the plaintext message to be transformed into ciphertext. The mechanism that enables that is called encryption.
 
-The methods used to encrypt a message have evolved over thousands of years, from swapping one letter for another to more elaborate mechanical machines like the Enigma machine used during the second world war.
+The methods used to encrypt a message have evolved over thousands of years, from swapping one letter for another to more elaborate mechanical devices like the Enigma machine used throughout the second world war.
 
 Encryption now takes place in the digital world and uses computers and mathematics to combine large random prime numbers to create keys that are used in both symmetric and asymmetric encryption today.
 
 ## What is encryption
 
-Encryption is the mechanism by which plaintext messages are turned into unreadable ciphertext. The use of encryption enhances the *confidentiality* of data being shared with your recipient, whether they are a friend, a work colleague, or another business.
+Encryption is the mechanism by which plaintext messages are turned into unreadable ciphertext. The use of encryption enhances the *confidentiality* of data being shared with your recipient, whether they're a friend, a work colleague, or another business.
 
 Decryption is the mechanism by which the recipient of a ciphertext message can turn it back into readable plaintext.
 
@@ -61,13 +61,13 @@ Let's assume that Eve is interested in what Quincy and Monica are saying. Eve in
 
 Because Eve doesn’t know Monica’s private key, she has no way of decrypting the ciphertext. If Eve tries to decrypt the ciphertext with Monica’s public key all she will get is gibberish.
 
-Given the nature of asymmetric encryption, even if you know the public key, it is impossible to discover the private key.
+Given the nature of asymmetric encryption, even if you know the public key, it's impossible to discover the private key.
 
 ### VIDEO showing how asymmetric keys work
 
 In this short 2-minute video, we'll demonstrate how symmetric and asymmetric encryption work and how they protect your documents from being read by unauthorized people.
 
-PLACE HOLDER FOR VIDEO
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWNyAM]
 
 ### Different types of encryptions
 
@@ -81,7 +81,10 @@ There are several different types of symmetric and asymmetric encryption, and ne
 
 Encryption is used worldwide in almost every facet of our lives, from making a call on your smartphone to using your credit card to make a purchase in a shop, and even more so when you browse the web.
 
-- **Web browsing** - You may not realize it, but every time you go to website where the address starts with HTTPS or there is an icon showing a padlock, encryption is being used. Notice the address bar for this web page and you will notice the address starts with https://. Similarly, anytime you connect to your bank through the web or make an online purchase where you are providing sensitive information such as a credit card number, you should make sure you see https:// in the address bar.
-- **Device encryption** – many operating systems provide tools to enable encryption of hard drives and portable devices. Windows Bit Locker, a feature of the Windows operating system, for example, provides encryption for your PC hard drive as well as portable drives that may connect via a USB device.
-- **Messaging applications** – Some commonly known and available messaging applications encrypt messages.
-- **Mobile communications** - Whether you're using a smartphone or other mobile communications device, encryption is used by your phone to securely register your mobile device to the nearest communications mast or cell tower, ensuring you always have the best signal strength to make a call.
+*Web browsing* - You may not realize it, but every time you go to website where the address starts with HTTPS or there is an icon showing a padlock, encryption is being used. Notice the address bar for this web page and you will notice the address starts with https://. Similarly, anytime you connect to your bank through the web or make an online purchase where you're providing sensitive information such as a credit card number, you should make sure you see https:// in the address bar.
+
+*Device encryption* – many operating systems provide tools to enable encryption of hard drives and portable devices. Windows Bit Locker, a feature of the Windows operating system, for example, provides encryption for your PC hard drive as well as portable drives that may connect via a USB device.
+
+*Messaging applications* – Some commonly known and available messaging applications encrypt messages.
+
+*Mobile communications* - Whether you're using a smartphone or other mobile communications device, encryption is used by your phone to securely register your mobile device to the nearest communications mast or cell tower, ensuring you always have the best signal strength to make a call.

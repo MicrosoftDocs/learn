@@ -2,7 +2,7 @@ The desire to keep secrets has been with us since we first learned to communicat
 
 ## Definition of cryptography
 
-Cryptography, derived from the Greek word *Kryptos* which means *hidden* or *secret* is the application of secure communication in any form between a sender and a recipient. Typically, cryptography is used to obscure the meaning of a written message but can also be applied to images.
+Cryptography, derived from the Greek word "*Kryptos*" which means *hidden* or *secret* is the application of secure communication in any form between a sender and a recipient. Typically, cryptography is used to obscure the meaning of a written message but can also be applied to images.
 
 The first known use of cryptography can be traced back to ancient Egypt and the use of complex hieroglyphics. One of the first ciphers ever used to secure military communications comes from the Roman Emperor Julius Caesar.
 

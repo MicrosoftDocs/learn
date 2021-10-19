@@ -1,4 +1,3 @@
-
 So far, you've seen how cryptography, through the use of encryption, can be used to keep messages safe from prying eyes. Cryptography can also be used to verify that data, like documents and images, have not been tampered with. This is done through a process called hashing.
 
 ### What is hashing?
@@ -25,6 +24,6 @@ When Victoria receives the digitally signed document, she uses the same digital 
 
 The following 2-minute video demonstrates how digital signatures work and how they can show if a document has been tampered with.
 
- PLACE HOLDER FOR VIDEO: Showing how digital signing works
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWNvVP]
 
 Digital signing requires making use of a digital signing service. There are many companies offering this capability. Two of the most popular are: DocuSign and Adobe Sign.
