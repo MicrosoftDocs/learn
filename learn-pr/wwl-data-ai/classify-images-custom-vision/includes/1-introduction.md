@@ -6,7 +6,7 @@ For example, the features of a flower might include the measurements of its peta
 
 To create a classification model, you need data that consists of features for which the labels are already known. You use this to train the model so that it determines a relationship between the features and the corresponding label. Then, after the model has been trained, you can use it with new sets of features to predict unknown label values.
 
-![Training a classification model with flower measurements as features and species as classes](../media/classification.png)
+![Training a classification model with flower measurements as features and species as classes 1](../media/classification.png)
 
 ## Image classification
 
@@ -14,7 +14,7 @@ To create a classification model, you need data that consists of features for wh
 
 As with any form of classification, creating an image classification solution involves training a machine learning  model using a set of existing data for which the class is already known. In this case, the existing data consists of a set of categorized images. Digital images are made up of an array of pixel values, and these are used as features to train the model based on the known image classes.
 
-![Training a classification model with flower measurements as features and species as classes](../media/train-image-classification.png)
+![Training a classification model with flower measurements as features and species as classes 2](../media/train-image-classification.png)
 
 Most modern image classification solutions are based on *deep learning* techniques that make use of *convolutional neural networks* (CNNs) to uncover patterns in the pixels that correspond to particular classes. Training an effective CNN is a complex task that requires considerable expertise in data science and machine learning. However, common techniques used to train image classification models have been encapsulated into the **Custom Vision** cognitive service in Microsoft Azure; making it easy to train a model and publish it as a software service with minimal knowledge of deep learning techniques.
 
