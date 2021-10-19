@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.power-apps.1-4-view-in-mr
+uid: learn.azure.power-apps.4-view-in-mr
 title: Gallery controls and View in MR 
 metadata:
   title: Gallery controls and View in MR 
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 4
 content: |
-  [!include[](includes/1-4-view-in-mr.md)]
+  [!include[](includes/4-view-in-mr.md)]

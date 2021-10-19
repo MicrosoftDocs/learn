@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.power-apps.1-3-exercise-add-data-source
+uid: learn.azure.power-apps.3-exercise-add-data-source
 title: Exercise add data source
 metadata:
   title: Exercise add data source
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 8
 content: |
-  [!include[](includes/1-3-exercise-add-data-source.md)]
+  [!include[](includes/3-exercise-add-data-source.md)]
