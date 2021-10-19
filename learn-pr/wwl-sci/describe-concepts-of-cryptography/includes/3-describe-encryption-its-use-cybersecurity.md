@@ -1,6 +1,6 @@
 As you discovered in the previous unit, cryptography is the art of obscuring the meaning of a message to everyone but the intended recipient. This requires the plaintext message to be transformed into ciphertext. The mechanism that enables that is called encryption.
 
-The methods used to encrypt a message have evolved over thousands of years, from swapping one letter for another to more elaborate mechanical devices like the Enigma machine used throughout the second world war.
+The methods used to encrypt a message have evolved over thousands of years, from swapping one letter for another to more elaborate mechanical devices like the Enigma machine.
 
 Encryption now takes place in the digital world and uses computers and mathematics to combine large random prime numbers to create keys that are used in both symmetric and asymmetric encryption today.
 
