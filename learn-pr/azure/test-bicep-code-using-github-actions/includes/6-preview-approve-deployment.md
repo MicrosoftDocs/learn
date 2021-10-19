@@ -12,7 +12,7 @@ Anytime resources are created, updated, or deleted, there's a risk that things c
 
 Resource Manager provides the what-if operation, which you can run on your Bicep file within your workflow job:
 
-:::image type="content" source="../media/6-stages-preview.png" alt-text="Diagram of a workflow that includes Lint, Validate, and Preview stages. The Preview stage executes a what-if operation against Azure." border="false":::
+:::image type="content" source="../media/6-jobs-preview.png" alt-text="Diagram of a workflow that includes Lint, Validate, and Preview jobs. The Preview job executes a what-if operation against Azure." border="false":::
 
 The `azure/arm-deploy@v1` action does not currently support the what-if operation, so instead you can use the Azure CLI. Run the `az deployment group what-if` command from within your workflow definition:
 
@@ -62,7 +62,7 @@ After your workflow begins and reaches a job that requires an reviewer, the work
 
 Reviewers can inspect the workflow logs, such as the changes that the what-if operation detects. Based on this information, they then approve or reject the change. If they approve the change, the workflow resumes. If they reject, or if they don't respond within the timeout period, the job fails.
 
-:::image type="content" source="../media/6-stages-approval-check.png" alt-text="Diagram of a workflow that includes Lint, Validate, Preview, and Deploy stages, with an approval check before the Deploy stage." border="false":::
+:::image type="content" source="../media/6-jobs-approval-check.png" alt-text="Diagram of a workflow that includes Lint, Validate, Preview, and Deploy jobs, with an approval check before the Deploy job." border="false":::
 
 ## The importance of good practices
 

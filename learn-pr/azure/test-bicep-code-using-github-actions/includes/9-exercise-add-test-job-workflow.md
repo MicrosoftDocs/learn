@@ -84,15 +84,15 @@ Now, you can add a smoke test job that runs your tests.
 
 1. Notice that the **deploy** job finishes successfully. The **smoke-test** job finishes with an error.
 
-   :::image type="content" source="../media/9-workflow-run-jobs-smoketest.png" alt-text="Screenshot of the Azure DevOps interface that shows the workflow run jobs. The SmokeTest job reports failure.":::
+   :::image type="content" source="../media/9-workflow-run-jobs-smoketest.png" alt-text="Screenshot of the GitHub interface that shows the workflow run jobs. The SmokeTest job reports failure.":::
 
 1. Select the **smoke-test** job to see its' details.
 
-   :::image type="content" source="../media/9-workflow-run-test-tab.png" alt-text="Screenshot of the Azure DevOps interface that shows the workflow run, with the Tests tab highlighted.":::
+   :::image type="content" source="../media/9-workflow-run-test-tab.png" alt-text="Screenshot of the GitHub interface that shows the workflow run, with the Tests tab highlighted.":::
 
 1. Notice that the **smoke-test** output shows that two tests ran. One passed and one failed. The test that failed is listed as **Toy Website.Does not serve pages over HTTP**.
 
-   :::image type="content" source="../media/9-workflow-run-test-results.png" alt-text="Screenshot of the Azure DevOps interface that shows the workflow run's test results, with the failed test highlighted.":::
+   :::image type="content" source="../media/9-workflow-run-test-results.png" alt-text="Screenshot of the GitHub interface that shows the workflow run's test results, with the failed test highlighted.":::
 
    This text indicates that the website hasn't been correctly configured to meet your security team's requirement.
 
@@ -143,7 +143,7 @@ Now that you've identified that your Bicep definition doesn't meet your security
 
 1. Notice that the entire workflow finishes successfully, including the **smoke-test** job. This success indicates that both tests passed.
 
-   :::image type="content" source="../media/9-workflow-run-success.png" alt-text="Screenshot of the Azure DevOps interface that shows a successful workflow run.":::
+   :::image type="content" source="../media/9-workflow-run-success.png" alt-text="Screenshot of the GitHub interface that shows a successful workflow run.":::
 
 ## Clean up the resources
 
