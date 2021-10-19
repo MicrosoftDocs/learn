@@ -207,4 +207,3 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     >[!Note]
     >The names used in the above function follow the namings used in this application at the time of development. You may customize the function concerning your application.
-    

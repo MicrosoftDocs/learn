@@ -286,13 +286,19 @@ The details page includes all the details and information concerning the selecte
 
 3. Make sure **Attachments** is selected and press **Apply** at the top. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file).
 
+    :::image type="content" source="../media/56.png" alt-text="Screenshot to add attachments" lightbox="../media/56.png":::
+
 4. Click the dropdown present beside the **Attachments** column and select **Show attachments first**
+
+    :::image type="content" source="../media/57.png" alt-text="Screenshot to select Show attachments first" lightbox="../media/57.png":::
 
 5. Switch to **Power Apps Studio**, In the **Properties** panel for the **View in MR** component, on the **Advanced** tab, select the **Source** field and enter:
 
     ```Power Apps
     First(Gallery_sofas.Selected.Attachments).Value
     ```
+
+    :::image type="content" source="../media/58.png" alt-text="Screenshot to add source for view in MR" lightbox="../media/58.png":::
 
 6. Repeat the same procedure in the **Details_chairs** and **Details_tables** screen. While duplicating the procedure, make sure to change the **Gallery** names accordingly, for example,
 
@@ -316,11 +322,19 @@ You are allowed to take pictures during the **View in MR** session and display t
 
 1. Create four new **Blank** screens and rename them as **Notes_sofas**, **Notes_chairs**, **Notes_tables**, and **Notes_carpets**.
 
+    :::image type="content" source="../media/59.png" alt-text="Screenshot of new screens for notes" lightbox="../media/59.png":::
+
 2. Design the **Notes_sofas** page by, clicking the **Input** dropdown and selecting **Text input**. Enlarge the **Text input** component to cover half of the screen and rename it as **TextInput_sofas**.
+
+    :::image type="content" source="../media/60.png" alt-text="Screenshot of adding Text input" lightbox="../media/60.png":::
 
 3. Click the drop down at the right side of the studio and select **Gallery**. Choose **Horizontal** type of gallery.
 
+    :::image type="content" source="../media/61.png" alt-text="Screenshot of adding horizontal gallery" lightbox="../media/61.png":::
+
 4. Position the gallery at the other part of the screen. Retain only the image by deleting the **Subtitle** and **Title**. Enlarge the image.
+
+    :::image type="content" source="../media/62.png" alt-text="Screenshot of only image in gallery" lightbox="../media/62.png":::
 
 5. Click the gallery added and configure the **Items** property by adding the following line:
 
@@ -328,11 +342,17 @@ You are allowed to take pictures during the **View in MR** session and display t
     ViewInMR1.Photos
     ```
 
+    :::image type="content" source="../media/63.png" alt-text="Screenshot of adding property to gallery" lightbox="../media/63.png":::
+
     By doing so, all the pictures taken in the **View in MR** session is stored in this gallery for future references.
 
 6. Let us now insert a label at the top of the screen. To do so, on the **Insert** tab, click on the **Label** option. Then, customize the position, color, and text display according to your needs.
 
+    :::image type="content" source="../media/64.png" alt-text="Screenshot of inserting label" lightbox="../media/64.png":::
+
 7. We will add a **Back** icon over the previously added **Label** to help the user navigate the **Home Page** when required. To add the **Back** icon, on the **Insert** tab, expand the **Icons** dropdown and select the **Back icon**.
+
+    :::image type="content" source="../media/65.png" alt-text="Screenshot of adding back icon" lightbox="../media/65.png":::
 
 8. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following
 
@@ -340,12 +360,18 @@ You are allowed to take pictures during the **View in MR** session and display t
     Navigate('Details_sofas',ScreenTransition.Cover)
     ```
 
+    :::image type="content" source="../media/66.png" alt-text="Screenshot of positioned and OnSelect" lightbox="../media/66.png":::
+
 9. Switch to the **Details_sofas** screen and add a **Note** icon from the **Icons** dropdown on the **Insert** tab.
+
+    :::image type="content" source="../media/67.png" alt-text="Screenshot of adding note icon" lightbox="../media/67.png":::
 
 10. Configure the **OnSelect** property of the **Note** icon by adding the following line:
 
     ```Power Apps
     Navigate(Notes_sofas,ScreenTransition.CoverRight)
     ```
+
+    :::image type="content" source="../media/68.png" alt-text="Screenshot of OnSelect for note" lightbox="../media/68.png":::
 
 11. Replicate the same procedure for **Notes_chairs**, **Notes_tables**, **Notes_carpets**, and its respective **Details** page.
