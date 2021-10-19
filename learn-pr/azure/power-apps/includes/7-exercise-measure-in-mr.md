@@ -122,7 +122,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
     Measure_gallery.Selected.Area&"cm²"
     ```
 
-    :::image type="content" source="../media/81.png" alt-text="Screenshot of Area calculation" lightbox="../media/81.png":::
+    :::image type="content" source="../media/configure-area.png" alt-text="Screenshot of Area calculation" lightbox="../media/configure-area.png":::
 
 2. Configure the label beside the **Price** label in the following way to display the calculated price:
 
@@ -130,17 +130,17 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
     "$"&Measure_gallery.Selected.Area * content_carpets.'Price/cm2'
     ```
 
-    :::image type="content" source="../media/82.png" alt-text="Screenshot of Price calculation" lightbox="../media/82.png":::
+    :::image type="content" source="../media/configure-price.png" alt-text="Screenshot of Price calculation" lightbox="../media/configure-price.png":::
 
 ## Create order summary page
 
 1. Consider adding a **Button** to **Details_sofas**, **Details_chairs**, **Details_tables**, and **Details_carpets** screens. Rename the button to **Order** and change the display text of the button to **Order**.
 
-    :::image type="content" source="../media/83.png" alt-text="Screenshot of adding order button" lightbox="../media/83.png":::
+    :::image type="content" source="../media/add-order-button.png" alt-text="Screenshot of adding order button" lightbox="../media/add-order-button.png":::
 
 2. Create four new **Blank** screens and rename them as **Order_sofas**, **Order_chairs**, **Order_tables**, and **Order_carpets**.
 
-    :::image type="content" source="../media/84.png" alt-text="Screenshot of adding new screens" lightbox="../media/84.png":::
+    :::image type="content" source="../media/create-order-screens.png" alt-text="Screenshot of adding new screens" lightbox="../media/create-order-screens.png":::
 
 3. Navigate to the **Details_sofas** screen and configure the **OnSelect** property of the **Order** button as seen below:
 
@@ -148,17 +148,17 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
     Navigate('Order_sofas',ScreenTransition.Cover)
     ```
 
-    :::image type="content" source="../media/85.png" alt-text="Screenshot of Order OnSelect config" lightbox="../media/85.png":::
+    :::image type="content" source="../media/configure-order-button.png" alt-text="Screenshot of Order OnSelect config" lightbox="../media/configure-order-button.png":::
 
 4. Follow the same procedure for **Details_chairs**, **Details_tables**, and **Details_carpets** screens.
 
 5. In the **Order_sofas** page, insert **Product**, **Price**, **Color**, and **Notes** labels and rename them accordingly.
 
-    :::image type="content" source="../media/86.png" alt-text="Screenshot of labels in Order_sofas" lightbox="../media/86.png":::
+    :::image type="content" source="../media/insert-order-labels.png" alt-text="Screenshot of labels in Order_sofas" lightbox="../media/insert-order-labels.png":::
 
 6. Insert empty label beside the **Product**, **Price**, **Color**, and **Notes** as shown in the figure.
 
-    :::image type="content" source="../media/87.png" alt-text="Screenshot of empty labels in Order_sofas" lightbox="../media/87.png":::
+    :::image type="content" source="../media/create-empty-labels.png" alt-text="Screenshot of empty labels in Order_sofas" lightbox="../media/create-empty-labels.png":::
 
 7. Configure the **Text** property of these empty labels in the following way:
     * **Product**:
@@ -167,7 +167,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
         Gallery_sofas.Selected.'Name (Title)'
         ```
 
-        :::image type="content" source="../media/88.png" alt-text="Screenshot of configuring Product text" lightbox="../media/88.png":::
+        :::image type="content" source="../media/configure-product-label.png" alt-text="Screenshot of configuring Product text" lightbox="../media/configure-product-label.png":::
 
     * **Price**:
 
@@ -175,7 +175,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
         Gallery_sofas.Selected.Price
         ```
 
-        :::image type="content" source="../media/89.png" alt-text="Screenshot of configuring Price text" lightbox="../media/89.png":::
+        :::image type="content" source="../media/configure-price-label.png" alt-text="Screenshot of configuring Price text" lightbox="../media/configure-price-label.png":::
 
     * **Color**:
 
@@ -183,7 +183,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
         Gallery_sofas.Selected.Color
         ```
 
-        :::image type="content" source="../media/90.png" alt-text="Screenshot of configuring Color text" lightbox="../media/90.png":::
+        :::image type="content" source="../media/configure-color-label.png" alt-text="Screenshot of configuring Color text" lightbox="../media/configure-color-label.png":::
 
     * **Notes**:
 
@@ -191,15 +191,15 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
         TextInput_sofas.Text
         ```
 
-        :::image type="content" source="../media/91.png" alt-text="Screenshot of configuring Notes text" lightbox="../media/91.png":::
+        :::image type="content" source="../media/configure-notes-label.png" alt-text="Screenshot of configuring Notes text" lightbox="../media/configure-notes-label.png":::
 
 8. Consider adding another label at the top and change its display text to **Order Summary**. Change the font size and font according to your requirement.
 
-    :::image type="content" source="../media/92.png" alt-text="Screenshot of adding Order Summary label" lightbox="../media/92.png":::
+    :::image type="content" source="../media/add-page-heading.png" alt-text="Screenshot of adding Order Summary label" lightbox="../media/add-page-heading.png":::
 
 9. On the **Insert** tab, expand the **Gallery** dropdown and select **Horizontal**. Retain only the image and delete other components of the **Gallery**.
 
-    :::image type="content" source="../media/93.png" alt-text="Screenshot of adding gallery" lightbox="../media/93.png":::
+    :::image type="content" source="../media/add-horizontal-gallery-order.png" alt-text="Screenshot of adding gallery" lightbox="../media/add-horizontal-gallery-order.png":::
 
 10. Configure the **Items** property of this gallery by adding the line given below:
 
@@ -207,27 +207,27 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
     ViewInMR1.Photos
     ```
 
-    :::image type="content" source="../media/94.png" alt-text="Screenshot of configure items in gallery" lightbox="../media/94.png":::
+    :::image type="content" source="../media/configure-items-property-order.png" alt-text="Screenshot of configure items in gallery" lightbox="../media/configure-items-property-order.png":::
 
 11. Add three **Labels** and change the display text as **Enter your email to get an order confirmation mail!**, **Organization mail ID:**, and **Customer mail ID:** respectively.
 
-    :::image type="content" source="../media/95.png" alt-text="Screenshot of 3 labels" lightbox="../media/95.png":::
+    :::image type="content" source="../media/add-extra-labels.png" alt-text="Screenshot of 3 labels" lightbox="../media/add-extra-labels.png":::
 
 12. On the **Insert** tab, expand the **Input** dropdown and select **Text input**. Add two **Text input** components to the screen and position them as shown in the figure. Rename them as **Input1** and **Input2** respectively
 
-    :::image type="content" source="../media/96.png" alt-text="Screenshot of 2 text input" lightbox="../media/96.png":::
+    :::image type="content" source="../media/add-email-input.png" alt-text="Screenshot of 2 text input" lightbox="../media/add-email-input.png":::
 
 13. Configure the **Hint text** property by adding **Enter mail ID:** and store no value in the **Default** property. Then, adjust the font size and color according to your need.
 
-    :::image type="content" source="../media/97.png" alt-text="Screenshot of configuring hint text" lightbox="../media/97.png":::
+    :::image type="content" source="../media/add-hint-text.png" alt-text="Screenshot of configuring hint text" lightbox="../media/add-hint-text.png":::
 
 14. Consider adding a button from the **Insert** tab and configure its **Text** property by adding **Confirm**.
 
-    :::image type="content" source="../media/98.png" alt-text="Screenshot of adding confirm button" lightbox="../media/98.png":::
+    :::image type="content" source="../media/add-confirm-button.png" alt-text="Screenshot of adding confirm button" lightbox="../media/add-confirm-button.png":::
 
 15. On the **Insert** tab, expand the **Icons** dropdown and select **Back** and **Home** icon. Position them correctly, as shown in the figure.
 
-    :::image type="content" source="../media/99.png" alt-text="Screenshot of adding back and home icon" lightbox="../media/99.png":::
+    :::image type="content" source="../media/add-back-home-icon.png" alt-text="Screenshot of adding back and home icon" lightbox="../media/add-back-home-icon.png":::
 
 16. Configure the **OnSelect** property of these two icons in the following way:
     * **Back**:
@@ -236,7 +236,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
         Navigate(Details_sofas,ScreenTransition.CoverRight)
         ```
 
-        :::image type="content" source="../media/100.png" alt-text="Screenshot of back OnSelect config" lightbox="../media/100.png":::
+        :::image type="content" source="../media/configure-back-icon-order.png" alt-text="Screenshot of back OnSelect config" lightbox="../media/configure-back-icon-order.png":::
 
     * **Home**:
 
@@ -244,17 +244,17 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
         Navigate('Home Page',ScreenTransition.CoverRight)
         ```
 
-        :::image type="content" source="../media/101.png" alt-text="Screenshot of home OnSelect config" lightbox="../media/101.png":::
+        :::image type="content" source="../media/configure-home-icon-order.png" alt-text="Screenshot of home OnSelect config" lightbox="../media/101.png":::
 
 ## Create end page
 
 1. Create a **Blank** screen and rename it as **End page**.
 
-    :::image type="content" source="../media/102.png" alt-text="Screenshot of end page" lightbox="../media/102.png":::
+    :::image type="content" source="../media/create-end-page.png" alt-text="Screenshot of end page" lightbox="../media/create-end-page.png":::
 
 2. Add a **Label** and change its display text to **Order Successfully Placed!**. Position the label as required on the screen.
 
-    :::image type="content" source="../media/103.png" alt-text="Screenshot of adding label for Order Successfully Placed!" lightbox="../media/103.png":::
+    :::image type="content" source="../media/add-message-label.png" alt-text="Screenshot of adding label for Order Successfully Placed!" lightbox="../media/add-message-label.png":::
 
 3. Consider adding a **Button** at the bottom of the screen. Configure the **Text** property of the button by adding **Shop more**. Let's navigate the user to the home page by clicking the **Shop more** button by adding the following line in the **OnSelect** property.
 
@@ -262,13 +262,13 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
     Navigate('Home Page',ScreenTransition.Cover)
     ```
 
-    :::image type="content" source="../media/104.png" alt-text="Screenshot of show more button" lightbox="../media/104.png":::
+    :::image type="content" source="../media/configure-shop-more-button.png" alt-text="Screenshot of show more button" lightbox="../media/configure-shop-more-button.png":::
 
 ## Send emails via Power Apps
 
 1. Click the **Data** tab and select **+ Add data**. Next, expand the **Connectors** to select **Office 365 Outlook** to add it as one of the connectors for this application.
 
-    :::image type="content" source="../media/105.png" alt-text="Screenshot of add data" lightbox="../media/105.png":::
+    :::image type="content" source="../media/add-office-365-outlook.png" alt-text="Screenshot of add data" lightbox="../media/add-office-365-outlook.png":::
 
 2. Configure the **OnSelect** property of the **Confirm** button by adding the following lines:
 
@@ -278,7 +278,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
     Navigate('End Screen',ScreenTransition.Cover) 
     ```
 
-    :::image type="content" source="../media/106.png" alt-text="Screenshot of add data" lightbox="../media/106.png":::
+    :::image type="content" source="../media/configure-confirm-email-button.png" alt-text="Screenshot of add data" lightbox="../media/configure-confirm-email-button.png":::
 
     >[!Note]
     >The names used in the above function follow the namings used in this application at the time of development. You may customize the function concerning your application.
