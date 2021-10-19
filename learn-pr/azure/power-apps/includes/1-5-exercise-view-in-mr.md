@@ -1,0 +1,351 @@
+Let's start building *Easy Sales* application based on the SharePoint data, and then add data from other sources if wanted. By following this procedure, you'll be able to design some of the main pages of the application. For example, you'll learn to design a splash screen, product page, notes page, and product details page. We'll also be accessing various data stored in the SharePoint list through Power Apps gallery control.
+
+## Open a blank app
+
+1. Sign in to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+
+2. Under **Make your own app**, select **Canvas app from blank.**
+
+    :::image type="content" source="../media/16.png" alt-text="Screenshot of select canvas app from blank." lightbox="../media/16.png":::
+
+3. Specify a name for your app, select **Phone**, and then select **Create.**
+
+    :::image type="content" source="../media/17.png" alt-text="Screenshot of specifying app name and selecting create." lightbox="../media/17.png":::
+
+    Power Apps Studio creates a blank app for phones.
+    >[!Note]
+    > You can design an app from scratch for phones or other devices (such as tablets). This topic focuses on designing an app for phones.
+
+4. If the **Welcome to Power Apps Studio** dialog box opens, select **Skip.**
+
+    :::image type="content" source="../media/18.png" alt-text="Screenshot of select skip option." lightbox="../media/18.png":::
+
+## Connect to data
+
+1. To the **Power Apps Studio**'s left, click the **Data** option.
+
+2. On opening the **Data** pane, click the **Add data** button to connect to the data.
+
+3. In the **Select a data source** window, expand the **Connectors** section and select the **SharePoint** option.
+
+    :::image type="content" source="../media/19.png" alt-text="Screenshot of select add data and sharepoint option." lightbox="../media/19.png":::
+
+4. In the previous exercise, a connection was already created. Select the created connection to add the data to your application successfully.
+
+5. Select the **SharePoint site**, created under the name *Easy Sales*.
+
+    :::image type="content" source="../media/20.png" alt-text="Screenshot of select Easy Sales." lightbox="../media/20.png":::
+
+6. On selecting the **Easy Sales** SharePoint site, all the lists created on that site are displayed. Next, select all the SharePoint lists created concerning the application and click on **Connect**.
+
+    :::image type="content" source="../media/21.png" alt-text="Screenshot of select Easy Sales." lightbox="../media/21.png":::
+
+7. All the required data is connected and ready to use in the application. In the upper-right corner of the **Data** pane, close it by selecting the close icon **(X)**.
+
+## Create the splash screen
+
+1. You should already have a blank screen in the Power Apps Studio. If not, on the **Home** tab, select the down-arrow next to **New screen** to open a list of screen types, and then select **Blank**.
+
+    :::image type="content" source="../media/22.png" alt-text="Screenshot of creating new screen." lightbox="../media/22.png":::
+
+2. Rename the screen to **Splash screen** by clicking on the **Three dots** present beside the screen name and selecting the **Rename** option.
+
+    :::image type="content" source="../media/23.png" alt-text="Screenshot of renaming the screen." lightbox="../media/23.png":::
+
+3. Click on the newly created screen to change its properties in the **Properties** tab at the right side of the screen.
+
+4. Click the dropdown present beside the **Backgroud image** property to add an image to the screen. We will add the logo of our application **Easy Sales** to the splash screen. //logo downlod link
+
+5. Set the image position to **Fit**.
+
+    :::image type="content" source="../media/24.png" alt-text="Screenshot of adding Easy Sales logo to the splash screen." lightbox="../media/24.png":::
+
+6. On the **Insert** tab, Expand the **Input** dropdown and select **Timer**. Then, drag the button on the screen and place it where ever required.
+
+    :::image type="content" source="../media/25.png" alt-text="Screenshot of adding the timer." lightbox="../media/25.png":::
+
+7. To edit some of the timer properties, you can either use the **Property** dropdown at the top left corner or use the **Properties** pane. Set the following properties as given below:
+
+    * **AutoStart** - true
+    * **Duration** - 2000
+    * **Visible** - false
+
+    :::image type="content" source="../media/26.png" alt-text="Screenshot of updating the properties of timer." lightbox="../media/26.png":::
+
+    >[!Note]
+    > By default, the unit taken to measure duration is in milliseconds. Since 1 second = 1000 milliseconds, we enter 2000 as the value for the duration.
+
+8. We want the splash screen to be visible for only 2 seconds and later navigate to the Home page. To do this, create a screen and rename it as **Home Page**. Later click on the timer button added to the **Splash** screen and configure the **OnTimerEnd** property. Replace *false* with the following content:
+
+    ```Power Apps
+    Navigate('Home Page',ScreenTransition.Fade)
+    ```
+
+    :::image type="content" source="../media/27.png" alt-text="Screenshot of updating the properties of timer." lightbox="../media/27.png":::
+
+## Create the home page
+
+1. Click the **Home Page** which was created previously, and insert four buttons. Next, navigate to the **Insert tab** and click the **Button** option to add buttons to the screen. Adjust the size and position of these buttons as required.
+
+    :::image type="content" source="../media/28.png" alt-text="Screenshot of adding buttons." lightbox="../media/28.png":::
+
+2. Change the display text of the buttons to indicate product categories like **Sofas, Chairs, Tables, and Carpets**.
+
+    :::image type="content" source="../media/29.png" alt-text="Screenshot of editing display text." lightbox="../media/29.png":::
+
+3. We will use these buttons to navigate to the list of products under various categories. To do so, we need to create separate screens for each category. So, first, create four new **Blank** screens and rename them accordingly, for example, *Sofas, Chairs, Tables, and Carpets*.
+
+    :::image type="content" source="../media/30.png" alt-text="Screenshot of editing display text." lightbox="../media/30.png":::
+
+4. Click the newly created **Sofas** button and configure the **OnSelect** property. On clicking the button, it must navigate us to the product list page created in the previous step. Replace the *false* by the below-given code:
+
+    ```Power Apps
+    Navigate(Sofas,ScreenTransition.Cover)
+    ```
+
+    :::image type="content" source="../media/31.png" alt-text="Screenshot of navigation of sofas page" lightbox="../media/31.png":::
+
+5. Repeat the same procedure for the other three buttons. Again, make sure to provide proper screen names in the **Navigate** function; for example, for configuring the **OnSelect** property of the **Chairs** button, use the following navigate function:
+
+    ```Power Apps
+    Navigate(Chairs,ScreenTransition.Cover)
+    ```
+
+    :::image type="content" source="../media/32.png" alt-text="Screenshot of navigation of chairs page" lightbox="../media/32.png":::
+
+    ```Power Apps
+    Navigate(Tables,ScreenTransition.Cover)
+    ```
+
+    :::image type="content" source="../media/33.png" alt-text="Screenshot of navigation of tables page" lightbox="../media/33.png":::
+
+     ```Power Apps
+    Navigate(Carpets,ScreenTransition.Cover)
+    ```
+
+    :::image type="content" source="../media/34.png" alt-text="Screenshot of navigation of carpets page" lightbox="../media/34.png":::
+
+>[!Note]
+> The default syntax of the **Navigate** function is: **Navigate**( *Screen* [, *Transition* [, *UpdateContextRecord* ] ] )
+>
+>* **Screen** - Required. The screen to display.
+>* **Transition** - Optional. The visual transition to use between the current screen and the next screen. The default value is None.
+>* **UpdateContextRecord** - Optional. A record that contains the name of at least one column and a value for each column. This record updates the context variables of the new screen as if passed to the UpdateContext function.
+
+## Use Gallery control
+
+Open the **Sofas** screen created to display the list of products, i.e., in this case, the list of sofas. To display the list of products, we use the **Gallery** control in Power Apps.
+
+1. Open the **Sofas** screen; on the Insert tab, select **More** dropdown, and then navigate to **Gallery** option to select **Vertical**. Rename it to **Gallery_sofas**.
+
+    :::image type="content" source="../media/35.png" alt-text="Screenshot of adding gallery" lightbox="../media/35.png":::
+
+2. On the **Properties** tab of the right-hand pane, configure the **Data source** property. Click the dropdown next to it and expand the **Connectors** section to select **SharePoint** as the connection.
+
+    :::image type="content" source="../media/36.png" alt-text="Screenshot of connecting sharepoint" lightbox="../media/36.png":::
+
+3. Select the previously created connection and choose the site of your choice. In our case, it is the *Easy Sales* site.
+
+    :::image type="content" source="../media/37.png" alt-text="Screenshot of connection to Easy Sales" lightbox="../media/37.png":::
+
+4. On selecting the right site, a catalog of **SharePoint list** created in the site is seen. First, choose the *Easy Sales - Sofas* list, which was created previously. Next, click on **Connect** to connect the data to your **Gallery**.
+
+    :::image type="content" source="../media/38.png" alt-text="Screenshot of selecting Easy Sales - Sofas" lightbox="../media/38.png":::
+
+5. Configure the **Fields** property the following way:
+    * Assign the **ImageLink** to the **Image1** heading.
+    * Assign the **Price** to the **Subtitle1** heading.
+    * Assign the **Name(Title)** to the **Title1** heading.
+  
+    On assigning the above fields, you'll observe data getting reflected in your **Gallery**
+    >[!Tip]
+    > If you find it challenging to add the **ImageLink** to the **Image1** heading, click the **Image** in the gallery and configure the **Image** property on the **Property** tab by adding this line of code: *ThisItem.ImageLink*
+
+    :::image type="content" source="../media/39.png" alt-text="Screenshot of configuring fields - Sofas" lightbox="../media/39.png":::
+
+6. Let us now insert a label at the top of the screen. To do so, on the **Insert** tab, click on the **Label** option. Then, customize the position, color, and text display according to your needs.
+
+    :::image type="content" source="../media/40.png" alt-text="Screenshot of adding label - Sofas" lightbox="../media/40.png":::
+
+7. We will add a **Back** icon over the previously added **Label** to help the user navigate the **Home Page** when required. To add the **Back** icon, on the **Insert** tab, expand the **Icons** dropdown and select the **Back icon**.
+
+    :::image type="content" source="../media/41.png" alt-text="Screenshot of adding back icon" lightbox="../media/41.png":::
+
+8. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following
+
+    ```Power Apps
+    Navigate('Home Page',ScreenTransition.Cover)
+    ```
+
+    :::image type="content" source="../media/42.png" alt-text="Screenshot of configuring OnSelect property " lightbox="../media/42.png":::
+
+9. Follow the same procedure for the **Chairs**, **Tables**, and **Carpets** pages.
+
+## Create details page
+
+The details page includes all the details and information concerning the selected product. It gives you an understanding of certain features of the product. You have to connect the product page designed in the previous section and the details page created in this section.
+
+1. Create four new pages and rename them respectively as **Details_sofas**, **Details_chairs**, **Details_tables**, and **Details_carpets**.
+
+    :::image type="content" source="../media/43.png" alt-text="Screenshot of creating detailed pages" lightbox="../media/43.png":::
+
+2. Click on the **>** icon in the gallery control included in the **Sofas** page and all other similar pages. Then, configure the **OnSelect** property by adding the following line in the **Functions** tab.
+
+    ```Power Apps
+    Navigate(Details_sofas,ScreenTransition.Cover,{content : ThisItem})
+    ```
+
+    > [!Note]
+    > Customize the **Navigate** function by providing different destination pages, for example, **Navigate(Details_chairs,ScreenTransition.Cover,{content : ThisItem})**.
+
+    :::image type="content" source="../media/44.png" alt-text="Screenshot of navigation to next details" lightbox="../media/44.png":::
+
+3. Let's start building the **Details_sofas** page by adding a few labels, namely: **Price**, **Dimensions**, **Weight**, **Color**, and **Material**. You can edit the text inside the label by inserting the desired text beside the **Text** property of the **Label**.
+
+    :::image type="content" source="../media/45.png" alt-text="Screenshot of adding labels" lightbox="../media/45.png":::
+
+4. Insert another label to display the name of the product at the top and configure the **Text** property of the label by adding the following line:
+
+    ```Power Apps
+    content.'Name (Title)'
+    ```
+
+    :::image type="content" source="../media/46.png" alt-text="Screenshot of adding title label" lightbox="../media/46.png":::
+
+5. On the **Insert** tab, click the **Media** dropdown and select **Image** to insert an image in the **Details_sofas** screen. Configure the **Image** property in the following way:
+
+    ```Power Apps
+    content.ImageLink
+    ```
+
+    :::image type="content" source="../media/47.png" alt-text="Screenshot of adding image" lightbox="../media/47.png":::
+
+6. Add blank labels beside **Price**, **Dimensions**, **Weight**, **Color**, and **Material** labels as shown in the figure to display the product information under those headings. Configure the **Text** property of these labels respectively:
+
+    * **Price** :
+
+        ``` Power Apps
+        content.Price
+        ```
+
+        :::image type="content" source="../media/48.png" alt-text="Screenshot of blank label for price" lightbox="../media/48.png":::
+
+    * **Dimensions** :
+
+        ``` Power Apps
+        content.Dimensions
+        ```
+
+        :::image type="content" source="../media/49.png" alt-text="Screenshot of blank label for dimension" lightbox="../media/49.png":::
+
+    * **Weight** :
+
+        ``` Power Apps
+        content.Weight
+        ```
+
+        :::image type="content" source="../media/50.png" alt-text="Screenshot of blank label for weight" lightbox="../media/50.png":::
+
+    * **Color** :
+
+        ``` Power Apps
+        content.Color
+        ```
+
+        :::image type="content" source="../media/51.png" alt-text="Screenshot of blank label for color" lightbox="../media/51.png":::
+
+    * **Material** :
+
+        ``` Power Apps
+        content.PrimaryMaterial
+        ```
+
+        :::image type="content" source="../media/52.png" alt-text="Screenshot of blank label for material" lightbox="../media/52.png":::
+
+7. We will add a **Back** icon to navigate to the previous screen. To add the **Back** icon, on the **Insert** tab, expand the **Icons** dropdown and select the **Back icon**. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following:
+
+    ```Power Apps
+    Navigate('Sofas',ScreenTransition.Cover)
+    ```
+
+    :::image type="content" source="../media/53.png" alt-text="Screenshot of adding back icon and OnSelect" lightbox="../media/53.png":::
+
+    Likewise, follow the same procedure for **Details_chairs**, **Details_tables**, and **Details_carpets**. Customize the **Navigate** function accordingly.
+
+## Insert and connect a 3D object to the View in MR component
+
+**View in MR** is a mixed reality feature provided by Power Apps which enables users to place **3D objects** or **Images** in their real world.
+
+1. To add the **View in MR** component to the **Details_sofas** screen, Open the **Insert** tab, expand the **Mixed Reality**. Then, select the component **View in MR** to place it in the center of the app screen, or drag and drop it to position it anywhere on the screen.
+
+    :::image type="content" source="../media/54.png" alt-text="Screenshot of adding View in MR button" lightbox="../media/54.png":::
+
+2. In the created **SharePoint** list named **Easy Sales-Sofas**, select the **+ Add column** and select Show/hide columns.
+
+    :::image type="content" source="../media/55.png" alt-text="Screenshot to add column" lightbox="../media/55.png":::
+
+3. Make sure **Attachments** is selected and press **Apply** at the top. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file).
+
+4. Click the dropdown present beside the **Attachments** column and select **Show attachments first**
+
+5. Switch to **Power Apps Studio**, In the **Properties** panel for the **View in MR** component, on the **Advanced** tab, select the **Source** field and enter:
+
+    ```Power Apps
+    First(Gallery_sofas.Selected.Attachments).Value
+    ```
+
+6. Repeat the same procedure in the **Details_chairs** and **Details_tables** screen. While duplicating the procedure, make sure to change the **Gallery** names accordingly, for example,
+
+    ```Power Apps
+    First(Gallery_chairs.Selected.Attachments).Value
+    ```
+
+>[!Note]
+>Consider browsing through this [GitHub Repository](https://github.com/microsoft/experimental-pcf-control-assets) for some furniture models which can be incorporated in the application.
+
+Another unique property provided by the **View in MR** component is **Object scaling**. You can edit the sizes of your 3D models externally by changing the **Object width**, **Object height**, and **Object depth** properties.
+
+>[!Note]
+> The values passed to the **Object width**, **Object height**, and **Object depth** are taken in the units specified in **Unit of measurement**. Choose an appropriate measure unit from the dropdown and later enter the values.
+
+* Set the  **Object width**, **Object height**, and **Object depth** along with the **Unit of measurement**.
+
+## Create notes page
+
+You are allowed to take pictures during the **View in MR** session and display them through a gallery. This is an additional feature included in the application to provide a good user experience. In the **Notes page** you'll be able to store some textual notes and store the images captured during **View in MR** session.
+
+1. Create four new **Blank** screens and rename them as **Notes_sofas**, **Notes_chairs**, **Notes_tables**, and **Notes_carpets**.
+
+2. Design the **Notes_sofas** page by, clicking the **Input** dropdown and selecting **Text input**. Enlarge the **Text input** component to cover half of the screen and rename it as **TextInput_sofas**.
+
+3. Click the drop down at the right side of the studio and select **Gallery**. Choose **Horizontal** type of gallery.
+
+4. Position the gallery at the other part of the screen. Retain only the image by deleting the **Subtitle** and **Title**. Enlarge the image.
+
+5. Click the gallery added and configure the **Items** property by adding the following line:
+
+    ```Power Apps
+    ViewInMR1.Photos
+    ```
+
+    By doing so, all the pictures taken in the **View in MR** session is stored in this gallery for future references.
+
+6. Let us now insert a label at the top of the screen. To do so, on the **Insert** tab, click on the **Label** option. Then, customize the position, color, and text display according to your needs.
+
+7. We will add a **Back** icon over the previously added **Label** to help the user navigate the **Home Page** when required. To add the **Back** icon, on the **Insert** tab, expand the **Icons** dropdown and select the **Back icon**.
+
+8. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following
+
+    ```Power Apps
+    Navigate('Details_sofas',ScreenTransition.Cover)
+    ```
+
+9. Switch to the **Details_sofas** screen and add a **Note** icon from the **Icons** dropdown on the **Insert** tab.
+
+10. Configure the **OnSelect** property of the **Note** icon by adding the following line:
+
+    ```Power Apps
+    Navigate(Notes_sofas,ScreenTransition.CoverRight)
+    ```
+
+11. Replicate the same procedure for **Notes_chairs**, **Notes_tables**, **Notes_carpets**, and its respective **Details** page.
