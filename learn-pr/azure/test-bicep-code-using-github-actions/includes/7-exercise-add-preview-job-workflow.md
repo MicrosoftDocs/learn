@@ -17,13 +17,13 @@ Here, you add a new job to your workflow that runs the what-if operation.
 
 1. Between the **validate** and **deploy** jobs, add the following definition for the **preview** job:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="38-53" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="40-56" :::
 
    Notice that we make the **review** job dependant on the **validate** and **lint** jobs. 
 
 1. Change the needs of the **deploy** job, so it is now dependant on the **review** job.
 
-   :::code language="yaml" source="code/7-workflow.yml" range="58" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="58-59, 61-75" highlight="3" :::
 
 1. Save your changes to the file.
 
@@ -51,14 +51,13 @@ Here, you add a new job to your workflow that runs the what-if operation.
 
 1. Select **Save protection rules**.
 
-
 ## Update the workflow definition to require an environment and reviewer
 
 Here, you configure the **deploy** job to run against the **Website** environment that you created previously. 
 
 1. In the *workflow.yml* file in Visual Studio Code, add an additional **environment** parameter to the **deploy** job and give it **Website** as a value:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="57" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="58-75" highlight="3" :::
 
 1. Save the file.
 
@@ -66,7 +65,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
 1. Verify that your *workflow.yml* file looks like the following code:
 
-   :::code language="yaml" source="code/7-workflow.yml" highlight="38-53, 55-69" :::
+   :::code language="yaml" source="code/7-workflow.yml" highlight="40-56, 60-61" :::
 
    If it doesn't, update it to match this example, and then save it.
 

@@ -16,7 +16,7 @@ Resource Manager provides the what-if operation, which you can run on your Bicep
 
 The `azure/arm-deploy@v1` action does not currently support the what-if operation, so instead you can use the Azure CLI. Run the `az deployment group what-if` command from within your workflow definition:
 
-:::code language="yaml" source="code/6-what-if.yml" highlight="13-15" :::
+:::code language="yaml" source="code/6-what-if.yml" highlight="14-17" :::
 
 ::: zone pivot="powershell"
 
@@ -36,12 +36,11 @@ To learn more about the what-if command, see the Microsoft Learn module [Preview
 
 In GitHub Actions, an *environment* represents the place to which your solution is deployed. Environments provide features that help when you work with complex deployments. In a future module, you'll learn more about environments and their features. For now, we'll focus on their ability to add required reviewers to your workflow.
 
-You create an environment by TODO.
+You create an environment by using the GitHub web interface.
 
 After you create an environment you can reference it in any jobs in your workflow:
 
-:::code language="yaml" source="code/6-environment.yml" highlight="40" :::
-
+:::code language="yaml" source="code/6-environment.yml" range="15-52" highlight="26" :::
 
 ## Environment protection rules
 

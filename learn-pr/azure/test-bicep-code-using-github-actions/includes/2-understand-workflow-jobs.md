@@ -6,8 +6,6 @@ Workflows enable you to automate the steps in your deployment process. Your proc
 
 :::image type="content" source="../media/2-jobs.png" alt-text="Diagram that shows a workflow with one job. The job contains four steps." border="false":::
 
-<!-- TODO Note to John: https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#the-components-of-github-actions -->
-
 Jobs can be used in your workflow to mark a separation of concerns. For example, when you work with Bicep code, *validating* the code is a separate concern from *deploying* your Bicep file. When you use an automated workflow, building and testing your code are often called *continuous integration* (CI). Deploying code in an automated workflow is often called *continuous deployment* (CD).
 
 In CI jobs, you check the validity of the changes that have been made to your code. CI jobs provide quality assurance. They can be run without affecting your live production environment.
