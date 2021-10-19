@@ -187,7 +187,7 @@ The details page includes all the details and information concerning the selecte
 
 1. Create four new pages and rename them respectively as **Details_sofas**, **Details_chairs**, **Details_tables**, and **Details_carpets**.
 
-    :::image type="content" source="../media/43.png" alt-text="Screenshot of creating detailed pages" lightbox="../media/43.png":::
+    :::image type="content" source="../media/create-detail-page.png" alt-text="Screenshot of creating detailed pages" lightbox="../media/create-detail-page.png":::
 
 2. Click on the **>** icon in the gallery control included in the **Sofas** page and all other similar pages. Then, configure the **OnSelect** property by adding the following line in the **Functions** tab.
 
@@ -198,11 +198,11 @@ The details page includes all the details and information concerning the selecte
     > [!Note]
     > Customize the **Navigate** function by providing different destination pages, for example, **Navigate(Details_chairs,ScreenTransition.Cover,{content : ThisItem})**.
 
-    :::image type="content" source="../media/44.png" alt-text="Screenshot of navigation to next details" lightbox="../media/44.png":::
+    :::image type="content" source="../media/navigate-next-details.png" alt-text="Screenshot of navigation to next details" lightbox="../media/navigate-next-details.png":::
 
 3. Let's start building the **Details_sofas** page by adding a few labels, namely: **Price**, **Dimensions**, **Weight**, **Color**, and **Material**. You can edit the text inside the label by inserting the desired text beside the **Text** property of the **Label**.
 
-    :::image type="content" source="../media/45.png" alt-text="Screenshot of adding labels" lightbox="../media/45.png":::
+    :::image type="content" source="../media/add-labels.png" alt-text="Screenshot of adding labels" lightbox="../media/add-labels.png":::
 
 4. Insert another label to display the name of the product at the top and configure the **Text** property of the label by adding the following line:
 
@@ -210,7 +210,7 @@ The details page includes all the details and information concerning the selecte
     content.'Name (Title)'
     ```
 
-    :::image type="content" source="../media/46.png" alt-text="Screenshot of adding title label" lightbox="../media/46.png":::
+    :::image type="content" source="../media/add-title-label.png" alt-text="Screenshot of adding title label" lightbox="../media/add-title-label.png":::
 
 5. On the **Insert** tab, click the **Media** dropdown and select **Image** to insert an image in the **Details_sofas** screen. Configure the **Image** property in the following way:
 
@@ -218,7 +218,7 @@ The details page includes all the details and information concerning the selecte
     content.ImageLink
     ```
 
-    :::image type="content" source="../media/47.png" alt-text="Screenshot of adding image" lightbox="../media/47.png":::
+    :::image type="content" source="../media/add-image.png" alt-text="Screenshot of adding image" lightbox="../media/add-image.png":::
 
 6. Add blank labels beside **Price**, **Dimensions**, **Weight**, **Color**, and **Material** labels as shown in the figure to display the product information under those headings. Configure the **Text** property of these labels respectively:
 
@@ -228,7 +228,7 @@ The details page includes all the details and information concerning the selecte
         content.Price
         ```
 
-        :::image type="content" source="../media/48.png" alt-text="Screenshot of blank label for price" lightbox="../media/48.png":::
+        :::image type="content" source="../media/blank-label-price.png" alt-text="Screenshot of blank label for price" lightbox="../media/blank-label-price.png":::
 
     * **Dimensions** :
 
@@ -236,7 +236,7 @@ The details page includes all the details and information concerning the selecte
         content.Dimensions
         ```
 
-        :::image type="content" source="../media/49.png" alt-text="Screenshot of blank label for dimension" lightbox="../media/49.png":::
+        :::image type="content" source="../media/blank-label-dimensions.png" alt-text="Screenshot of blank label for dimension" lightbox="../media/blank-label-dimensions.png":::
 
     * **Weight** :
 
@@ -244,7 +244,7 @@ The details page includes all the details and information concerning the selecte
         content.Weight
         ```
 
-        :::image type="content" source="../media/50.png" alt-text="Screenshot of blank label for weight" lightbox="../media/50.png":::
+        :::image type="content" source="../media/blank-label-weight.png" alt-text="Screenshot of blank label for weight" lightbox="../media/blank-label-weight.png":::
 
     * **Color** :
 
@@ -252,7 +252,7 @@ The details page includes all the details and information concerning the selecte
         content.Color
         ```
 
-        :::image type="content" source="../media/51.png" alt-text="Screenshot of blank label for color" lightbox="../media/51.png":::
+        :::image type="content" source="../media/blank-label-color.png" alt-text="Screenshot of blank label for color" lightbox="../media/blank-label-color.png":::
 
     * **Material** :
 
@@ -260,7 +260,7 @@ The details page includes all the details and information concerning the selecte
         content.PrimaryMaterial
         ```
 
-        :::image type="content" source="../media/52.png" alt-text="Screenshot of blank label for material" lightbox="../media/52.png":::
+        :::image type="content" source="../media/blank-label-material.png" alt-text="Screenshot of blank label for material" lightbox="../media/blank-label-material.png":::
 
 7. We will add a **Back** icon to navigate to the previous screen. To add the **Back** icon, on the **Insert** tab, expand the **Icons** dropdown and select the **Back icon**. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following:
 
@@ -268,7 +268,7 @@ The details page includes all the details and information concerning the selecte
     Navigate('Sofas',ScreenTransition.Cover)
     ```
 
-    :::image type="content" source="../media/53.png" alt-text="Screenshot of adding back icon and OnSelect" lightbox="../media/53.png":::
+    :::image type="content" source="../media/add-back-icon.png" alt-text="Screenshot of adding back icon and OnSelect" lightbox="../media/add-back-icon.png":::
 
     Likewise, follow the same procedure for **Details_chairs**, **Details_tables**, and **Details_carpets**. Customize the **Navigate** function accordingly.
 
