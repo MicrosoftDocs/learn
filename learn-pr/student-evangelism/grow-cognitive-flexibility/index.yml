@@ -2,14 +2,15 @@
 uid: learn.student-evangelism.grow-cognitive-flexibility
 metadata:
   title: 'Grow your cognitive flexibility'
-  description: Learn how to grow your cognitive flexibility.
+  description: Learn about the importance of cognitive flexibility and about how to grow your cognitive flexibility.
   ms.date: 09/07/2021
   author: interurban
-  ms.author: jadenyer
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: nextgen
 title: 'Grow your cognitive flexibility'
-summary: Grow your cognitive flexibility.
+summary: In this module, you'll learn about the importance of cognitive flexibility in the field of technology. You'll learn about the benefits of stepping back and expanding your outlook and using feedback effectively. Finally, you'll learn how to reorient and persist in challenging situations.
 abstract:  | 
   In this module, you will:
   - Learn about the importance of cognitive flexibility in tech resilience.
@@ -18,8 +19,7 @@ abstract:  |
   - Learn how to apply cognitive flexibility to pivot and persist in challenging situations.
 prerequisites: |
   - An open mind and a willingness to learn about the expectations and responsibilities of mentorship in a technology workspace.
-hidden: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/tech-resilience/grow-cognitive-flexibility.svg
 levels:
 - beginner
 roles:

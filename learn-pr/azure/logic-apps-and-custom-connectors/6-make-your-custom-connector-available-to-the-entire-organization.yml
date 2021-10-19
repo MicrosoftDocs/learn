@@ -9,6 +9,7 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: INDEX,FOLLOW
 durationInMinutes: 6
 content: |
   [!include[](includes/6-make-your-custom-connector-available-to-the-entire-organization.md)]

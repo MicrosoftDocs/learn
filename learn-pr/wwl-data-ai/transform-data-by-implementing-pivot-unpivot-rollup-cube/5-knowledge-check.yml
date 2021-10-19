@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transform-data-by-implementing-pivot-unpivot-rollup-cube.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/14/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+quiz:
+  questions:
+  - content: "Which elements do you need to provide to the PIVOT operator?"
+    choices:
+    - content: "Grouping, spreading, aggregation"
+      isCorrect: true
+      explanation: "Correct. You need to provide these three elements to the operator when using PIVOT."
+    - content: "Aggregation, cube, grouping"
+      isCorrect: false
+      explanation: "Incorrect. Cube isn't a valid element for the PIVOT operator."
+    - content: "Spreading, grouping, viewing"
+      isCorrect: false
+      explanation: "Incorrect. Viewing isn't a valid element for the PIVOT operator."
+  - content: "Which subclause infers a hierarchy of columns to create meaningful grouping sets?"
+    choices:
+    - content: "CUBE"
+      isCorrect: false
+      explanation: "Incorrect. This subclause doesn't infer a hierarchy."
+    - content: "GROUPING SETS"
+      isCorrect: false
+      explanation: "Incorrect. This subclause doesn't infer a hierarchy."
+    - content: "ROLLUP"
+      isCorrect: true
+      explanation: "Correct. Use this subclause to infer a hierarchy."
+  - content: "You've pivoted a dataset with aggregation, what happens if you try to use UNPIVOT restore the original data?"
+    choices:
+    - content: "Unpivoting can't restore the original data."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "The data is unpivoted, and the original detail rows are restored."
+      isCorrect: false
+      explanation: "Incorrect. This won't restore the original data."
+    - content: "The data is unpivoted, but you will then need to use CUBE  to restore the original detail rows."
+      isCorrect: false
+      explanation: "Incorrect. Using CUBE won't restore the original data."

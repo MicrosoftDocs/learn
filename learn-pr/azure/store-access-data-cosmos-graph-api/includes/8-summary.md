@@ -1,4 +1,4 @@
-In this module, you learned about Graph Databases and their uses, and how to create an application that uses Azure Cosmos DB as a graph database. You also learned how to store, retrieve, and manipulate graph data and visualize it using the Data Explorer in the Azure portal.
+In this module, you learned about Graph Databases and their uses, and how to create an application that uses Azure Cosmos DB as a graph database. You also learned how to store, retrieve, and manipulate graph data, and visualize it using the Data Explorer in the Azure portal.
 
 You've learned how to:
 

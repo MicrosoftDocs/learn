@@ -24,12 +24,13 @@ To iterate means to go through each element in a list, from a starting point to 
 - `map()`: This function is similar to `iter()`, but it lets you transform what you have. Here's an example:
 
    ```fsharp
-   type Person = { FirstName: string, LastName= string  }
+   type Person = { FirstName: string; LastName: string  }
    let people = [
-     { FirstName="Albert"; LastName="Einstein" }
+     { FirstName="Albert"; LastName= "Einstein" }
      { FirstName="Marie"; LastName="Curie" }
    ]
-   let nobelPrizeWinners = List.map (fun person -> person.FirstName + person.LastName) people // "Albert Einstein", "Marie Curie"
+   let nobelPrizeWinners = List.map (fun person -> person.FirstName + person.LastName) people 
+   printfn "%A" nobelPrizeWinners // ["Albert Einstein"; "Marie Curie"]
    ```
 
    In the preceding code, the list of `Person` objects is transformed into a list of strings.

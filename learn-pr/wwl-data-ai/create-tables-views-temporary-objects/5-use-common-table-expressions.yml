@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-tables-views-temporary-objects.use-common-table-expressions-cte
+title: Use Common Table Expressions
+metadata:
+  title: Use Common Table Expressions
+  description: "Use Common Table Expressions"
+  ms.date: 10/09/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-use-common-table-expressions.md)]

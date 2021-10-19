@@ -17,31 +17,26 @@ Storage account connection strings include the account key. The account key is c
 
 ## Initialize the Blob storage object model
 
-In the Azure Storage SDK for .NET Core, the standard pattern for using Blob storage consists of the following steps:
+In the Azure Storage SDK for .NET, the standard pattern for using Blob Storage consists of the following steps:
 
-1. To get a `CloudStorageAccount`, call `CloudStorageAccount.Parse` (or `TryParse`) with your connection string.
+1. Instantiate a new `BlobServiceClient` object and provide the connection string to your storage account.
 
-1. To get a `CloudBlobClient`, call `CreateCloudBlobClient` on the `CloudStorageAccount`.
+1. To get a `BlobContainerClient`, call `GetBlobContainerClient` on the `BlobServiceClient` with the name of the container you want to interact with or create.
 
-1. To get a `CloudBlobContainer`, call `GetContainerReference` on the `CloudBlobClient`.
-
-1. To get a list of blobs and/or get references to individual blobs to upload and download data, use methods on the container.
-
-In code, steps 1&ndash;3 look like this.
+In code, these steps look like this.
 
 ```csharp
-CloudStorageAccount storageAccount = CloudStorageAccount.Parse(connectionString); // or TryParse()
-CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
-CloudBlobContainer container = blobClient.GetContainerReference(containerName);
+BlobServiceClient blobServiceClient = new BlobServiceClient(storageConfig.ConnectionString);
+BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(storageConfig.FileContainerName);
 ```
 
-None of this initialization code makes calls over the network. This means that some exceptions that occur because of incorrect information won't be thrown until later. For example, the call to `CloudStorageAccount.Parse` will throw an exception immediately if the connection string is formatted incorrectly, but no exception will be thrown if the storage account that a connection string points to doesn't exist.
+None of this initialization code makes calls over the network. This means that some exceptions that occur because of incorrect information won't be thrown until later. For example, if an incorrectly formatted connection string is supplied to the constructor of the `BlobServiceClient` class, an exception will throw an exception immediately.  However, if the connection string points to a storage account that does not exist, no exception will be thrown until you attempt an operation against the storage account.
 
 ## Create containers at startup
 
-To create a container when your app starts or when it first tries to use it, call `CreateIfNotExistsAsync` on a `CloudBlobContainer`.
+To create a container when your app starts or when it first tries to use it, call `CreateIfNotExistsAsync` on a `BlobContainerClient`.
 
-`CreateIfNotExistsAsync` won't throw an exception if the container already exists, but it does make a network call to Azure Storage. Call it once during initialization, not every time you try to use a container.
+`CreateIfNotExistsAsync` won't throw an exception if the container already exists, but it does make a network call to Azure Blob Storage. Call it once during initialization; not every time you try to use a container.
 
 ## Exercise
 
@@ -49,32 +44,32 @@ To create a container when your app starts or when it first tries to use it, cal
 
 1. First, let's clone the starter app from GitHub. In the Azure Shell CLI, to get a copy of the source code and open it in the editor, run the following command.
 
-```console
-git clone https://github.com/MicrosoftDocs/mslearn-store-data-in-azure.git
-cd mslearn-store-data-in-azure/store-app-data-with-azure-blob-storage/src/start
-code .
-```
+    ```console
+    git clone https://github.com/MicrosoftDocs/mslearn-store-data-in-azure.git
+    cd mslearn-store-data-in-azure/store-app-data-with-azure-blob-storage/src/start
+    code .
+    ```
 
-2. In the editor, open the file `Controllers/FilesController.cs`. There's no work to do here, but you're going to have a quick look at what the app does.
+1. In the editor, open the file `Controllers/FilesController.cs`. There's no work to do here, but you're going to have a quick look at what the app does.
 
-This controller implements an API with three actions:
+    This controller implements an API with three actions:
 
-- **Index**: (GET /api/Files) returns a list of URLs, one for each file that's been uploaded. The app front end calls this method to build a list of hyperlinks to the uploaded files.
-- **Upload**: (POST /api/Files) receives an uploaded file and saves it.
-- **Download**: (GET /api/Files/{filename}) downloads an individual file by its name.
+    - **Index**: (GET /api/Files) returns a list of URLs, one for each file that's been uploaded. The app front end calls this method to build a list of hyperlinks to the uploaded files.
+    - **Upload**: (POST /api/Files) receives an uploaded file and saves it.
+    - **Download**: (GET /api/Files/{filename}) downloads an individual file by its name.
 
-To do its work, each method uses an `IStorage` instance called `storage`. There is an incomplete implementation of `IStorage` in `Models/BlobStorage.cs` that you're going to fill in.
+    To do its work, each method uses an `IStorage` instance called `storage`. There is an incomplete implementation of `IStorage` in `Models/BlobStorage.cs` that you're going to fill in.
 
 ### Add the NuGet package
 
-3. Add a reference to the Azure Storage SDK. In the Azure Shell CLI, run the following command.
+- Add a reference to the Azure Storage SDK. In the Azure Shell CLI, run the following command.
 
-```console
-dotnet add package WindowsAzure.Storage
-dotnet restore
-```
+    ```console
+    dotnet add package Azure.Storage.Blobs
+    dotnet restore
+    ```
 
-This will make sure we're using the newest version of the Blob storage client library.
+    This will make sure we're using the newest version of the Blob Storage client library.
 
 ### Configure
 
@@ -84,24 +79,23 @@ When it comes to *using* the configuration, our starter app already includes the
 
 ### Initialize
 
-4. In the editor, open `Models/BlobStorage.cs`. To the top of the file, add the following `using` statements to prepare it for the code you're going to add during the exercise.
+1. In the editor, open `Models/BlobStorage.cs`. To the top of the file, add the following `using` statements to prepare it for the code you're going to add during the exercise.
 
-```csharp
-using System.Linq;
-using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Blob;
-```
+    ```csharp
+    using Azure;
+    using Azure.Storage.Blobs;
+    using Azure.Storage.Blobs.Models;
+    ```
 
-Locate the `Initialize` method. Your app will call this method when `BlobStorage` is used for the first time. If you're curious, you can look at `ConfigureServices` in `Startup.cs` to see how this is done.
+1. Locate the `Initialize` method. Your app will call this method when `BlobStorage` is used for the first time. If you're curious, you can look at `ConfigureServices` in `Startup.cs` to see how this is done.
 
-`Initialize` is where you want to create your container if it doesn't already exist. Replace the current implementation of `Initialize` with the following code, and save your work.
+    `Initialize` is where you want to create your container if it doesn't already exist. Replace the current implementation of `Initialize` with the following code, and save your work.
 
-```csharp
-public Task Initialize()
-{
-    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(storageConfig.ConnectionString);
-    CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
-    CloudBlobContainer container = blobClient.GetContainerReference(storageConfig.FileContainerName);
-    return container.CreateIfNotExistsAsync();
-}
-```
+    ```csharp
+    public Task Initialize()
+    {
+        BlobServiceClient blobServiceClient = new BlobServiceClient(storageConfig.ConnectionString);
+        BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(storageConfig.FileContainerName);
+        return containerClient.CreateIfNotExistsAsync();
+    }
+    ```

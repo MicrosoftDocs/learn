@@ -4,8 +4,8 @@ metadata:
   title: Distribute your services across Azure virtual networks and integrate them by using virtual network peering
   description: Use virtual network peering to enable communication across virtual networks in a way that's secure and minimally complex.
   ms.date: 03/31/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: kumudd
+  ms.author: kumud
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Distribute your services across Azure virtual networks and integrate them by using virtual network peering

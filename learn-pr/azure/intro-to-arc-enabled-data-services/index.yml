@@ -23,7 +23,7 @@ prerequisites: |
   - Basic understanding of how containers work
   - Basic knowledge of the Kubernetes platform
   - Working knowledge of SQL Server
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/intro-to-arc-enabled-data-services.svg
 levels:
 - intermediate
 roles:

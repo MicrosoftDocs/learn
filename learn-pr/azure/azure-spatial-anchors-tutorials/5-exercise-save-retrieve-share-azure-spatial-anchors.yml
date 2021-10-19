@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.5-exercise-save-retrieve-share-azure-spatial-anchors
+title: Exercise - Save, retrieve, and share Azure Spatial Anchors
+metadata:
+  title: Exercise - Save, retrieve, and share Azure Spatial Anchors
+  description: Introduction to Save, retrieve, and share Azure spatial anchors to work with various development environments
+  ms.date: 09/09/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-exercise-save-retrieve-share-azure-spatial-anchors.md)]

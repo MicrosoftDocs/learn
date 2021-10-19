@@ -232,4 +232,3 @@ You may, on occasion, be required to update the terms of use document.
 6. Once you have uploaded your new pdf and decided on re-accept, select **Add**.
 
 7. You will now see the most recent version under the Document column.
-

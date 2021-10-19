@@ -5,7 +5,7 @@ metadata:
   unitType: summary
   title: Summary
   description: Summary for testing your Bicep code by using Azure Pipelines.
-  ms.date: 09/08/2021
+  ms.date: 09/15/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial

@@ -20,7 +20,7 @@ To get a device under the control of Azure AD, you have two options:
  -  **Joining** a device is an extension to registering a device. Joining provides the benefits of registering and changes the local state of a device. Changing the local state enables your users to sign-in to a device using an organizational work or school account instead of a personal account.
 
 > [!NOTE]
-> Registration combined with a mobile device management (MDM) solution such as Microsoft Intune, provides additional device attributes in Azure AD. You can create Conditional Access rules that enforce access from devices to meet your standards for security and compliance.
+> Registration combined with a mobile device management (MDM) solution such as Microsoft Intune, provides additional device attributes in Azure AD. You can create conditional access rules that enforce access from devices to meet your standards for security and compliance.
 
 > [!NOTE]
 > Although AD Join is intended for organizations that do not have on-premises Windows Server Active Directory infrastructure it can be used for other scenarios like branch offices.

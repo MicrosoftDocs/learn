@@ -23,4 +23,4 @@ Increasingly, organizations are turning to artificial intelligence (AI) solution
 Conversations typically take the form of messages exchanged in turns; and one of the most common kinds of conversational exchange is a question followed by an answer. This pattern forms the basis for many user support bots, and can often be based on existing FAQ documentation. To implement this kind of solution, you need:
 
 - A *knowledge base* of question and answer pairs - usually with some built-in natural language processing model to enable questions that can be phrased in multiple ways to be understood with the same semantic meaning.
-- A *bot service* that provides an interface to the knowledge base through one or more channels.
+- A *bot service* that provides an interface to the knowledge base through one or more channels.   

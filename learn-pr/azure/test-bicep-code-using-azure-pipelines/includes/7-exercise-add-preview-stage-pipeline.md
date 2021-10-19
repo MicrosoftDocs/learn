@@ -6,7 +6,7 @@ During the process, you'll:
 > * Update the pipeline YAML file to add a new preview stage.
 > * Add an environment to Azure Pipelines.
 > * Configure the environment to require an approval.
-> * Update the pipeline YAML file to use the environment for the deploy stage.
+> * Update the pipeline YAML file to use the environment for the deployment stage.
 > * View the what-if results and approve a pipeline run.
 
 ## Update the pipeline definition to add a preview stage
@@ -23,65 +23,64 @@ Here, you add a new stage to your pipeline that runs the what-if operation.
 
 ## Add an environment
 
-1. In your browser, navigate to **Pipelines** > **Environments**.
+1. In your browser, go to **Pipelines** > **Environments**.
 
-   :::image type="content" source="../media/7-environments.png" alt-text="Screenshot of the Azure DevOps interface showing the Pipelines menu, with the Environments item highlighted.":::
+   :::image type="content" source="../media/7-environments.png" alt-text="Screenshot of the Azure DevOps interface that shows the Pipelines menu, with the Environments item highlighted.":::
 
 1. Select **Create environment**.
 
-   :::image type="content" source="../media/7-environments-new.png" alt-text="Screenshot of the Azure DevOps interface showing the Environments page, with the 'Create environment' button highlighted.":::
+   :::image type="content" source="../media/7-environments-new.png" alt-text="Screenshot of the Azure DevOps interface that shows the Environments page, with the button for creating an environment highlighted.":::
 
-1. Enter the environment name **Website**.
+1. Enter **Website** as the environment name.
 
-   Leave the description blank. For the **Resource**, select **None**.
-
-   :::image type="content" source="../media/7-environments-new-details.png" alt-text="Screenshot of the Azure DevOps 'New environment' page with the details completed and the 'Create' button highlighted.":::
+   Leave the description blank. For **Resource**, select **None**.
 
    > [!NOTE]
-   > In Azure Pipelines, environments are used to enable a number of deployment features. Some of these features only apply when you're deploying to Kubernetes or to virtual machines. In this module, we don't use these features and you can ignore them.
+   > In Azure Pipelines, environments are used to enable deployment features. Some of these features apply only when you're deploying to Kubernetes or to virtual machines. In this module, we don't use these features and you can ignore them.
 
 1. Select **Create**.
+
+   :::image type="content" source="../media/7-environments-new-details.png" alt-text="Screenshot of the Azure DevOps page for a new environment, with the details completed and the Create button highlighted.":::
 
 ## Add an approval check to the environment
 
-1. Near the top-right of the page, select the button with three dots and select **Approvals and checks** from the popup menu.
+1. Near the upper right of the page, select the button with three dots and select **Approvals and checks** from the pop-up menu.
 
-   :::image type="content" source="../media/7-add-check.png" alt-text="Screenshot of the Azure DevOps interface showing the Website environment, with the three dots button highlighted.":::
+   :::image type="content" source="../media/7-add-check.png" alt-text="Screenshot of the Azure DevOps interface that shows the Website environment, with the three dots button highlighted.":::
 
 1. Select **Approvals**.
 
-   :::image type="content" source="../media/7-add-check-approval.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Add check' page, with the 'Approvals' item highlighted.":::
+   :::image type="content" source="../media/7-add-check-approval.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding a check, with the Approvals item highlighted.":::
 
-1. In the **Approvers** textbox, type your own name and select yourself.
+1. In the **Approvers** text box, type your own name and select yourself.
 
-   :::image type="content" source="../media/7-add-check-approval-details.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Add approval check' page, with the details completed and the 'Create' button highlighted.":::
+1. Select the arrow button next to **Advanced**.
 
-1. Select the down arrow button next to **Advanced**.
-
-   Notice that, by default, approvers are allowed to approve the runs they've triggered. Because you're the only person who will work with this pipeline, leave this checkbox selected.
+   Notice that, by default, approvers are allowed to approve the runs that they've triggered. Because you're the only person who will work with this pipeline, leave this checkbox selected.
 
 1. Select **Create**.
 
+   :::image type="content" source="../media/7-add-check-approval-details.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding an approval check, with the details completed and the Create button highlighted.":::
+
 ## Update the pipeline definition to require an environment and approval
 
-Here, you configure the **Deploy** stage to run against the **Website** environment you created previously. You convert the **Deploy** stage to run a deployment job instead of a standard job, and configure it to deploy to the environment.
+Here, you configure the **Deploy** stage to run against the **Website** environment that you created previously. You convert the **Deploy** stage to run a deployment job instead of a standard job, and you configure it to deploy to the environment.
 
-1. In the *azure-pipelines.yml* file in Visual Studio Code, replace the **Deploy** stage definition with the following:
+1. In the *azure-pipelines.yml* file in Visual Studio Code, replace the **Deploy** stage definition with the following code:
 
-   :::code language="yaml" source="code/7-pipeline.yml" range="59-79" :::
+   :::code language="yaml" source="code/7-pipeline.yml" range="57-79" :::
 
-   > [!NOTE]
-   > Notice that you define a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't do this, the deployment job won't be able to read your Bicep file. You could instead consider using *pipeline artifacts* to send files between pipeline stages. We link to more information about artifacts in the summary.
+   Notice that you define a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't do this, the deployment job won't be able to read your Bicep file. You could instead consider using *pipeline artifacts* to send files between pipeline stages. We link to more information about artifacts in the summary.
 
 1. Save the file.
 
 ## Verify and commit your pipeline definition
 
-1. Verify that your *azure-pipelines.yml* file looks like the following:
+1. Verify that your *azure-pipelines.yml* file looks like the following code:
 
-   :::code language="yaml" source="code/7-pipeline.yml" highlight="39-55, 59-79" :::
+   :::code language="yaml" source="code/7-pipeline.yml" highlight="39-55, 57-79" :::
 
-   If it doesn't, update it to match this example, then save it.
+   If it doesn't, update it to match this example, and then save it.
 
 1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 
@@ -93,49 +92,48 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
 ## Run the pipeline and review the what-if outputs
 
-1. In your browser, navigate to your pipeline.
+1. In your browser, go to your pipeline.
 
 1. Select the most recent run of your pipeline.
 
-   Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. Although Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
 1. Notice that Azure Pipelines prompts you for an approval. You also receive an email informing you that the pipeline needs your approval.
 
-   :::image type="content" source="../media/7-pipeline-run-approval-required.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline run, with the approval requirement highlighted.":::
+   :::image type="content" source="../media/7-pipeline-run-approval-required.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline run, with the approval requirement highlighted.":::
 
-   Before you approve the continuation of the pipeline, you'll review the what-if results to ensure they match your expectations.
+   Before you approve the continuation of the pipeline, you'll review the what-if results to ensure that they match your expectations.
 
 1. Select the **Preview** stage.
 
 1. Select the **Run what-if** step to inspect the changes that the what-if command reports on.
 
-1. Notice that the pipeline log provides what-if results similar to the following:
+1. Notice that the pipeline log provides what-if results similar to the following code:
 
    :::code language="output" source="code/7-what-if-output.txt" :::
 
-   The what-if operation has detected a change to the website resource. However, the changes it's detected are called *noise*. They don't represent real changes to your resource. Over time, the Azure team works to reduce the noise. In the meantime, for these two specific properties, you can ignore the detected changes.
+   The what-if operation has detected a change to the website resource. However, the changes that it has detected are noise. They don't represent real changes to your resource. Over time, the Azure team works to reduce noise. In the meantime, for these two specific properties, you can ignore the detected changes.
 
-   > [!NOTE]
-   > You might also see an item in the what-if output for the resource type `microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - toywebsite`. This is a resource that's automatically created by Application Insights. The what-if command detects that no change will be made to the resource.
+   You might also see an item in the what-if output for the resource type `microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - toywebsite`. This is a resource that Application Insights creates automatically. The what-if command detects that no change will be made to the resource.
 
 ## Approve the pipeline run
 
-1. Select the left arrow to return to the pipeline run details.
+1. Select the left arrow to return to the details for the pipeline run.
 
-   :::image type="content" source="../media/7-pipeline-run-log-back.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline log menu, with the back arrow highlighted.":::
+   :::image type="content" source="../media/7-pipeline-run-log-back.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline log menu, with the back arrow highlighted.":::
 
 1. Select the **Review** button on the approval panel.
 
-1. In the **Comment** field, enter *Reviewed what-if results*.
-
-   :::image type="content" source="../media/7-pipeline-run-approve.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline approval page, with the 'Approve' button highlighted.":::
+1. In the **Comment** box, enter **Reviewed what-if results**.
 
 1. Select **Approve**.
 
+   :::image type="content" source="../media/7-pipeline-run-approve.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline approval page, with the Approve button highlighted.":::
+
 ## Observe the successful deployment
 
-1. After you've approved the pipeline run, notice the **Deploy** stage starts running.
+1. After you've approved the pipeline run, notice that the **Deploy** stage starts running.
 
-   Wait for the stage to complete.
+   Wait for the stage to finish.
 
-1. Notice that the pipeline run completes successfully.
+1. Notice that the pipeline run finishes successfully.

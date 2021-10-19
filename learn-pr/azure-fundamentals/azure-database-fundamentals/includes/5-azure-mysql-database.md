@@ -8,7 +8,7 @@
     Tailwind Traders currently manages several websites on-premises that use the LAMP stack (Linux, Apache, MySQL, PHP). As part of your planning for your migration strategy, the different teams at Tailwind Traders have been researching the available service offerings that Azure provides. You've already discovered that the Web Apps feature of Azure App Service provides built-in functionality to create web applications that use PHP on a Linux server running Apache. You've been tasked with investigating whether the database requirements for the web development team will continue to be met after the migration to Azure.
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/icon-service-Azure-Database-MySQL-Server-bfdbd40d.png" alt-text="icon.":::
+    :::image type="content" source="../media/icon-service-Azure-Database-MySQL-Server-bfdbd40d.png" alt-text="icon":::
 
   :::column-end:::
 :::row-end:::

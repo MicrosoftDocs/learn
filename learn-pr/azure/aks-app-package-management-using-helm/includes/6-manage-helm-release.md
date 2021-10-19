@@ -52,11 +52,11 @@ Assume you decide that the ingress manifest file for a chart is only created in 
 
 ```yaml
 {{ if .Values.ingress.enabled }}
-apiVersion: extensions/v1beta1
+apiVersion: extensions/v1
 kind: Ingress
 metadata:
   name: ...
-  labels: ...
+  labels:
     ...
   annotations:
     ...
@@ -74,11 +74,11 @@ YAML gives meaning to whitespace. That's why tab, space, and newline characters 
 
 ```yml
 {{- if .Values.ingress.enabled -}}
-apiVersion: extensions/v1beta1
+apiVersion: extensions/v1
 kind: Ingress
 metadata:
   name: ...
-  labels: ...
+  labels:
     ...
   annotations:
     ...
@@ -112,7 +112,7 @@ You use the range operator to allow the template engine to iterate through the `
 
 ```yml
 {{- if .Values.ingress.enabled -}}
-apiVersion: extensions/v1beta1
+apiVersion: extensions/v1
 kind: Ingress
 metadata:
   ...
@@ -198,7 +198,7 @@ description: A Helm chart for Kubernetes
 ...
 dependencies:
   - name: mongodb
-    version: 9.0.0
+    version: 10.27.2
     repository: https://marketplace.azurecr.io/helm/v1/repo
 ```
 
@@ -241,7 +241,7 @@ description: A Helm chart for Kubernetes
 
 type: application
 
-version: 0.2.0.
+version: 0.2.0
 appVersion: 1.0.0
 
 registry: "my-acr-registry.azurecr.io"
@@ -266,8 +266,8 @@ helm history my-app
 The history command returns several fields that describe the release. Here is an example of output from the run command.
 
 ```output
-NAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                   APP VERSION
-my-app          default         1               2020-09-04 20:47:20.482905554 +0000 UTC deployed        aspnet-core-0.2.0       3.1.7
+REVISION        UPDATED                         STATUS          CHART                   APP VERSION     DESCRIPTION
+1               Mon Oct 11 17:25:33 2021        deployed        aspnet-core-1.3.18      3.1.19          Install complete
 ```
 
 Notice the `revision` field in the result. Helm tracks release information of all releases done for a Helm chart. When you install a new version of a Helm chart, the revision count increases by one, and the new release information is matched to that revision.
@@ -276,8 +276,8 @@ Here is an example of the same history command run, following a new version inst
 
 ```output
 REVISION        UPDATED                         STATUS          CHART                   APP VERSION     DESCRIPTION
-1               Fri Sep  4 20:40:56 2020        superseded      aspnet-core-0.2.0       3.1.7           Install complete
-2               Fri Sep  4 20:47:20 2020        deployed        aspnet-core-0.2.0       3.1.7           Upgrade complete
+1               Mon Oct 11 17:25:33 2021        superseded      aspnet-core-1.3.18      3.1.19          Install complete
+2               Mon Oct 11 17:35:13 2021        deployed        aspnet-core-1.3.18      3.1.19          Upgrade complete
 ```
 
 ## How to roll back a Helm release
@@ -304,9 +304,9 @@ Once the rollback completes, you can review the deployment history using the `he
 
 ```output
 REVISION        UPDATED                         STATUS          CHART                   APP VERSION     DESCRIPTION
-1               Fri Sep  4 20:40:56 2020        superseded      aspnet-core-0.2.0       3.1.7           Install complete
-2               Fri Sep  4 20:47:20 2020        superseded      aspnet-core-0.2.0       3.1.7           Rolled back to 1
-3               Fri Sep  4 20:55:31 2020        deployed        aspnet-core-0.2.0       3.1.7           Upgrade complete
+1               Mon Oct 11 17:25:33 2021        superseded      aspnet-core-1.3.18      3.1.19          Install complete
+2               Mon Oct 11 17:35:13 2021        superseded      aspnet-core-1.3.18      3.1.19          Rolled back to 1
+3               Mon Oct 11 17:38:13 2021        deployed        aspnet-core-1.3.18      3.1.19          Upgrade complete
 ```
 
 Notice how the description field shows the rollback's revision number to make it easier for you to track changes.

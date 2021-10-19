@@ -5,9 +5,10 @@ metadata:
   description: Learn about the pandas library for data science. Run statements and scripts, declare variables, and create a basic pandas app.
   ms.date: 04/22/2020
   author: sguthals
-  ms.author: sguthals
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
+  ms.custom: nextgen
 title: Introduction to the pandas library for data science
 summary: Learn about the pandas library for data science. Run statements and scripts, declare variables, and create a basic pandas app.
 abstract: |

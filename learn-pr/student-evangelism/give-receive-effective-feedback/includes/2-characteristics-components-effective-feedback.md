@@ -1,34 +1,35 @@
-While reviewing the code that your fellow developers are working on, you’re often required to provide feedback so they can improve their programming skills and apply it to the game design. You need to understand how to provide constructive, effective feedback so that the team is opened to receiving and implementing your suggestions.
+As you're reviewing the code that your fellow developers are working on, you're often required to provide feedback so that they can improve their programming skills and apply it to the game design. To do so, you need to understand how to provide constructive feedback that effectively keeps your team members open to receiving and implementing your suggestions.
 
-## Examine the importance of effective feedback
+## Understand the importance of effective feedback
 
-How often have you thought about giving feedback to others and felt that your feedback was not very useful? At times you might have provided extensive feedback but didn’t observe any improvements in the person’s performance. Sometimes your feedback works for certain persons while it doesn’t for others.
+Have you ever given someone feedback and then discovered that wasn't as useful as you'd hoped it might be? Your feedback was extensive, but you didn't observe improvement in the person's performance. The fact is, the feedback you give might work for certain people and not for others.
 
-To understand the importance of feedback and how it can help empower the recipient, review the following video, which is approximately three minutes in length.
+To understand the importance of feedback and how it can help empower your recipient, review the following video:
+<br>
+<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OKLQ]
 
-After reviewing the video, consider the following questions:
+Consider the following questions:
 
 - What did you find interesting or surprising about the video?
-
-- What was familiar for you? What did you relate to?
-
-- Can you think of a time when you were negatively impacted by feedback?
-
+- What was familiar for you? What ideas did you relate to?
+- Can you think of a time when you were affected negatively by feedback you received?
 - Can you think of a time when the feedback you received helped you bridge the gaps in your skills and resulted in a positive improvement in your work?
 
 ## Give and receive effective feedback
 
-One of the best ways to improve learning is to give effective feedback. Effective feedback provides constructive criticism to people that they can apply towards making concrete, measurable progress. If they can receive it effectively, feedback can help people move through the self-regulated feedback cycle. It also allows peers to build and maintain a conversation over time. In the field of computer science —and programming in particular— effective feedback delivered in a timely, constructive manner can facilitate greater skill development. This results in a measurable performance improvement.
+One of the best ways to help improve someone's learning is to give them effective feedback. Effective feedback contains constructive criticism that they can apply toward making concrete, measurable progress. If someone can receive feedback effectively, they can move more easily through the self-regulated feedback cycle. 
 
-Negative feedback can impact a person’s self-confidence and make them feel like they have failed. It can also discourage the person from taking further steps to address their knowledge gaps. External feedback can provide new perspectives, but it can be tough to receive critical feedback, even when it’s meant to help people grow or improve.
+In a group environment, such as that in our scenario, feedback also allows peers to build and maintain a team conversation over time. In the field of computer science&mdash;and programming in particular&mdash;effective feedback delivered in a timely, constructive manner can facilitate greater skill development across the entire team. This in turn can result in measurable performance improvement.
 
-:::image type="content" source="../media/2-negative-feedback.png" alt-text="A learner receiving a box representing feedback that is covered with thorns that indicate the feedback contains only negative criticism and no positive reinforcement or guidance." border="false":::
+On the other hand, negative feedback can adversely affect people's self-confidence and, occasionally, make them feel as though they've failed. It might even discourage otherwise-talented people from taking further steps to address their knowledge gaps. Such feedback can occasionally provide new perspectives, but many people find it difficult to accept critical feedback, even when it's meant to help them grow or improve.
 
-The way you give feedback has a considerable effect on how others receive it. Have you been in a situation when you received feedback that felt harsh or made you uncomfortable? Do you remember how it impacted you?
+:::image type="content" source="../media/2-negative-feedback.png" alt-text="Cartoon-style drawing of a feedback recipient being given a thorn-covered box, which represents negative, discouraging feedback." border="false":::
 
-Although you might often receive feedback that you might have to ignore because it is not effective, those in the position to give you feedback (an instructor, peer, or supervisor) usually have something constructive to offer. This unit examines how to give feedback to others in a way that they will be most receptive to.
+The *way* you deliver feedback has a considerable effect on how others receive it. Have you been in a situation when you received feedback that felt harsh or made you uncomfortable? Do you remember how it affected you?
+
+Although you might occasionally receive ineffective feedback, the instructor, peer, or supervisor offering it usually has something constructive to tell you. In this unit, we'll examine how to give feedback to others in a way that they'll be most receptive to.
 
 ## Characteristics of effective feedback
 
@@ -36,35 +37,26 @@ Effective feedback helps to enhance the growth mindset of individuals by stimula
 
 Effective feedback has the following characteristics:
 
-- It’s specific and timely.
-
-- It focuses both on what went wrong, what’s going right, and why.
-
+- It's specific and timely.
+- It focuses on what went wrong, what's going right, and why.
 - It points the person toward options and strategies instead of just providing them with the expected end states.
+- It conveys appreciation of the person's effort.
+- It conveys your trust that the person will understand and complete the task eventually.
 
-- It conveys appreciation of the person’s effort.
+When you give feedback, it's easy to forget that different people might receive the feedback differently. Try to be sensitive about other people's feelings and avoid statements that might offend them or put them in a defensive position.  Here are some examples of not-so-effective feedback: 
 
-- It conveys your trust that person will understand and complete the task eventually.
-
-While giving feedback, it’s easy to forget that different people might receive the feedback differently. Try to be sensitive about other people’s feelings and avoid statements that might offend them or put them in a defensive position.  Here are some examples of not-so-effective feedback: 
-
-- “I don't know why you're having problems with this task. It's an easy task to do.”
-
-- “I struggled with your approach to this problem.”
-
-- “I’m worried about you.”
+- "I don't know why you're having problems with this task. It's an easy task to do."
+- "I struggled with your approach to this problem."
+- "I'm worried about you."
 
 ### Types of feedback
 
-Feedback can come in different forms, such written, oral, or a combination of both. You can also provide feedback in a group setting or one-on-one. While determining the mode of communicating the feedback, consider the following questions:
+Feedback can come in written or oral form, or a combination of the two. You can also provide feedback in a group setting or one-on-one. As you're determining the mode of communicating your feedback to someone, consider the following questions:
 
-- Will the recipient need time to process feedback rather than being put on the spot and having to accept / respond to the feedback real time?
-
-- How will the written feedback be received? Written feedback has no signals about tone and is received privately. Will it have an impact on inclusiveness? Will your intent be known?
-
-- What is needed to help the person understand the message?
-
-- How was trust established?
+- How positive or negative is the feedback? Will the recipient be put on the spot and feel compelled to accept or respond to certain details in real time, or might they need time to process the feedback in private?
+- How will the written feedback be received? Written feedback is usually received privately and, unless skillfully written, it can easily fail to convey your intended tone. Will it affect inclusiveness? Will your intent be clear to the recipient?
+- What is needed to help the recipient understand the message?
+- How does it establish your trust in the person and the person's trust in you?
 
 > [!TIP]
 > Consider your own experiences of receiving feedback. How did you feel personally when you received either positive or negative written feedback?

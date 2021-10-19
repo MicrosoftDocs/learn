@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.place-scene-objects-tutorials-mrtk.4-5-exercise-organize-lay-out-objects-with-collections
+title: Exercise - Organize and lay out objects with collections
+metadata:
+  title: Exercise - Organize and lay out objects with collections
+  description: Introduction for organize and lay out objects with collections
+  ms.date: 09/09/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-5-exercise-organize-lay-out-objects-with-collections.md)]

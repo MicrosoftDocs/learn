@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/08/2021
+  ms.date: 09/14/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -40,7 +40,7 @@ quiz:
     - content: "Polls each server in the backend pool in turn, and sends the request to the first server that responds."
       isCorrect: false
       explanation: "That's incorrect. The Application Gateway does not use polling."
-  - content: "The web team is installing the Application Gateway. They want to ensure incoming requests are checked for common security threats like cross-site scripting and crawlers. To address the concerns what should be done?"
+  - content: "The web team is installing an Application Gateway. They want to ensure incoming requests are checked for common security threats like cross-site scripting and crawlers. To address the concerns what should be done?"
     choices:
     - content: "Install an internal load balancer"
       isCorrect: false

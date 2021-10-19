@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "True, you should try not to be annoying."
       isCorrect: false
-      explanation: "While it's important not to annoy your co-workers unduly, a healthy work environment will empower you to ask questions of everyone."
+      explanation: "While it's important not to annoy your coworkers unduly, a healthy work environment will empower you to ask questions of everyone."
     - content: "True, you should cultivate your peer circle."
       isCorrect: false
       explanation: "While it's true that you should be a good colleague to your peers, you will learn more about the business if you expand your circle of inquiry."
-    - content: "This is false, you should feel empowered to ask questions of everyone."
+    - content: "This is false. You should feel empowered to ask questions of everyone."
       isCorrect: true
       explanation: "Feel free to ask good questions of everyone in your company. This is a perfect time to do so!"
