@@ -7,3 +7,4 @@ By the end of this module, you'll be able to:
 - Describe the basic threat landscape
 - Describe different types of malware
 - Describe basic mitigation strategies
+
