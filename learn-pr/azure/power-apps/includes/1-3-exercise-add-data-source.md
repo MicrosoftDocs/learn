@@ -1,4 +1,4 @@
-11In Power Apps, you can connect your data with an already existing application or to an application that you're building from scratch. Your app can connect to SharePoint, Microsoft Dataverse, Salesforce, OneDrive, or any other data source.
+In Power Apps, you can connect your data with an already existing application or to an application that you're building from scratch. Your app can connect to SharePoint, Microsoft Dataverse, Salesforce, OneDrive, or any other data source.
 
 We will be using SharePoint as our primary data source for this application. You can connect to a SharePoint site to automatically generate an app from a custom list, create a connection before you add data to an existing app, or build an app from scratch.
 

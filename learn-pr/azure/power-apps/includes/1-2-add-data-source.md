@@ -1,4 +1,4 @@
-Information is a vital part of the application, including in power apps. Data is stored in a data source and use a connection to get it into your program. The connection utilizes a particular connector to converse with the data source. Many significant services and on-premises data sources, such as SharePoint, SQL Server, Office 365, Salesforce, and Twitter, have connectors in Power Apps.
+Information is a vital part of the application, including in power apps. Data is stored in a data source and uses a connection to get it into your program. The connection utilizes a particular connector to converse with the data source. Many significant services and on-premises data sources, such as SharePoint, SQL Server, Office 365, Salesforce, and Twitter, have connectors in Power Apps.
 
 A connector might give tables of information or actions. A few connectors give just tables, some give just actions, and some give both. Likewise, your connector might be either a standard or custom connector.
 
