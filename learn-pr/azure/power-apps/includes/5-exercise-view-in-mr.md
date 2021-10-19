@@ -278,11 +278,11 @@ The details page includes all the details and information concerning the selecte
 
 1. To add the **View in MR** component to the **Details_sofas** screen, Open the **Insert** tab, expand the **Mixed Reality**. Then, select the component **View in MR** to place it in the center of the app screen, or drag and drop it to position it anywhere on the screen.
 
-    :::image type="content" source="../media/54.png" alt-text="Screenshot of adding View in MR button" lightbox="../media/54.png":::
+    :::image type="content" source="../media/add-view-in-mr-button.png" alt-text="Screenshot of adding View in MR button" lightbox="../media/add-view-in-mr-button.png":::
 
 2. In the created **SharePoint** list named **Easy Sales-Sofas**, select the **+ Add column** and select Show/hide columns.
 
-    :::image type="content" source="../media/55.png" alt-text="Screenshot to add column" lightbox="../media/55.png":::
+    :::image type="content" source="../media/select-add-column.png" alt-text="Screenshot to add column" lightbox="../media/select-add-column.png":::
 
 3. Make sure **Attachments** is selected and press **Apply** at the top. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file).
 
