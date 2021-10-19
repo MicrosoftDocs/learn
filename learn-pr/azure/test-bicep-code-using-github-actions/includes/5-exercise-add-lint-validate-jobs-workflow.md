@@ -15,19 +15,20 @@ During the process, you'll:
 
 1. In the `env:` section, change the `AZURE_RESOURCEGROUP_NAME` variable's value to `ToyWebsiteTest`:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="10-12" highlight="2" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="8-10" highlight="2" :::
 
 1. Below the `jobs:` line, above the `deploy` job, add a new lint job:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="14-20" highlight="2-7" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="12-18" highlight="2-7" :::
 
-   <!-- TODO watch indentation -->
+   > [!TIP]
+   > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. In the next section, you'll see the complete YAML workflow definition so that you can verify that your file matches.
 
    This job defines a step to check out the code and a step that runs the `az bicep build` command to lint the Bicep file.
 
 1. Below the lines that you just added, add a validation job:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="22-37" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="20-35" :::
 
    This job defines steps to check out the code, sign in to your Azure environment, and use the `azure/arm-deploy@v1` action with the `Validate` deployment mode.
 
@@ -35,7 +36,7 @@ During the process, you'll:
 
 1. Below the `runs-on` line in the `deploy` job, add a `needs` statement: 
 
-   :::code language="yaml" source="code/5-workflow.yml" range="41" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="39" :::
 
    The `needs` statements indicates that the deploy job depends on the lint and validate jobs completing successfully before it can run.
 
@@ -55,13 +56,21 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 1. Save the file.
 
-<!-- TODO add step to add stderror thing to workflow.yml -->
+## Configure the deploy job to work with the linter
+
+<!-- TODO explain -->
+
+1. Open the *workflow.yml* file.
+
+1. In the `deploy` job's *Deploy website* test step, set the `failWithStdError` property to `false`:
+
+   :::code language="yaml" source="code/5-workflow.yml" range="37-53" highlight="13" :::
 
 ## Verify and commit your workflow definition
 
 1. Verify that your *workflow.yml* file looks like the following:
 
-   :::code language="yaml" source="code/5-workflow.yml" highlight="11, 15-37" :::
+   :::code language="yaml" source="code/5-workflow.yml" highlight="9, 13-35, 39, 49" :::
 
    If it doesn't, update it to match this example, and then save it.
 
