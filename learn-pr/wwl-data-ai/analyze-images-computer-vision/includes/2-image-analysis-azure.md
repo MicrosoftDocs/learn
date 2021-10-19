@@ -1,16 +1,6 @@
-The Computer Vision service is a cognitive service in Microsoft Azure that provides pre-built computer vision model capabilities. The service can analyze images, and return detailed information about an image and the objects it depicts.
+The Computer Vision service is a cognitive service in Microsoft Azure that provides pre-built computer vision capabilities. The service can analyze images, and return detailed information about an image and the objects it depicts.
 
 ## Azure resources for Computer Vision
-
-In Microsoft Azure, the **Computer Vision** cognitive service uses pre-trained models to analyze images, enabling software developers to easily build applications that can:
-
-- Interpret an image and suggest an appropriate caption.
-- Suggest relevant *tags* that could be used to index an image.
-- Categorize an image.
-- Identify objects in an image.
-- Detect faces and people in an image.
-- Recognize celebrities and landmarks in an image.
-- Read text in an image.
 
 To use the Computer Vision service, you need to create a resource for it in your Azure subscription. You can use either of the following resource types:
 
@@ -31,7 +21,7 @@ After you've created a suitable resource in your subscription, you can submit im
 
 ### Describing an image
 
-Computer Vision has the ability to analyze an image, evaluate the objects that are detected, and generate a human-readable phrase or sentence that can describe what was detected in the image. Depending on the image contents, the service may return multiple results, or phrases.  Each returned phrase will have an associated confidence score, indicating how confident the algorithm is in the supplied description. The highest confidence phrases will be listed first.
+Computer Vision has the ability to analyze an image, evaluate the objects that are detected, and generate a human-readable phrase or sentence that can describe what was detected in the image. Depending on the image contents, the service may return multiple results, or phrases.  Each returned phrase will have an associated confidence score, indicating how confident the algorithm is in the supplied description.  The highest confidence phrases will be listed first.
 
 To help you understand this concept, consider the following image of the Empire State building in New York. The returned phrases are listed below the image in the order of confidence.
 
@@ -55,7 +45,7 @@ For example, the tags returned for the Empire State building image include:
 
 The object detection capability is similar to tagging, in that the service can identify common objects; but rather than tagging, or providing tags for the recognized objects only, this service can also return what is known as bounding box coordinates.  Not only will you get the type of object, but you will also receive a set of coordinates that indicate the top, left, width, and height of the object detected, which you can use to identify the location of the object in the image, like this:
 
-![black and white aerial picture of New York City with Empire State Building objects](../media/black-white-buildings-objects.png)
+![black and white aerial picture of New York City with Empire State Building](../media/black-white-buildings-objects.png)
 
 ### Detecting brands
 
