@@ -2,7 +2,7 @@ Authentication is the process of proving someone is who they say they are.  When
 
 The same concept of authentication applies to digital devices. We experience this every time we try to log in to a computer.  A user enters their user ID.  Their user ID says who they are, but that is not enough to actually log them into the computer.  The next step is to prove they are the person identified by their user ID.  This is typically done by entering a password.  The password is a form of authentication.  
 
-It is important to note that when one logs in to their computer and authenticates, they get access to that computer.  The level of access that they are granted, what they are allowed to do, is determined by a concept called authorization that we will cover later in this module.
+It`s important to note that when one logs in to their computer and authenticates, they get access to that computer.  The level of access that they`re granted, what they`re allowed to do, is determined by a concept called authorization that we`ll cover later in this module.
 
 ## Authentication methods
 
