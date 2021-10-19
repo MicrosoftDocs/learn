@@ -1,4 +1,6 @@
-It's time to get your website project off the ground. In the exercises that follow, you'll start using Git by adding a simple HTML file to your working tree. Then, you'll make some changes in the directory and learn how to commit the changes.
+Now that you've spent time learning the essential git commands, lets move onto creating a project in git.
+
+In the exercises that follow, you'll start using Git by adding a simple HTML file to your working tree. Then, you'll make some changes in the directory and learn how to commit the changes.
 
 ## Create and add (stage) a file
 
@@ -159,4 +161,3 @@ Now that *index.html* has been added to the index, the next step is to commit it
      ```
 
 The change to *index.html* has been committed. There are now two versions of the file in the repo, although you see only one of them (the current one). One of the benefits of using Git is that you can roll back the changes you have made, or you can go backward in time and see previous versions. More on this important topic later.
-
