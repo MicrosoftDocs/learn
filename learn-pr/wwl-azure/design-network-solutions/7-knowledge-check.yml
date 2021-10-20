@@ -27,15 +27,15 @@ quiz:
       explanation: "That's incorrect. Front Door is not needed for non-internet facing applications."
     - content: "Azure Load balancer"
       isCorrect: false
-      explanation: "that is incorrect. While Azure Load Balancer may technically work, it is not recommended for web applications due to a lack of security and optimization features."
+      explanation: "That is incorrect. While Azure Load Balancer may technically work, it is not recommended for web applications due to a lack of security and optimization features."
   - content: "Which security solution is recommended?"
     choices:
     - content: "Azure Firewall"
       isCorrect: true
-      explanation: "that’s correct. Azure Firewall can filter HTTP(S) traffic from Azure to on-premises and outbound to the internet"
+      explanation: "That’s correct. Azure Firewall can filter HTTP(S) traffic from Azure to on-premises and outbound to the internet"
     - content: "Web Application Firewall on Azure Application Gateway"
       isCorrect: false
-      explanation: "that’s incorrect. WAF on App Gateway can't filter HTTP(S) traffic from Azure to on-premises and outbound to the internet"
+      explanation: "That’s incorrect. WAF on App Gateway can't filter HTTP(S) traffic from Azure to on-premises and outbound to the internet"
     - content: "Azure Bastion"
       isCorrect: false
       explanation: "That’s incorrect. Azure Bastion is for accessing VMs security not filtering traffic"
@@ -43,7 +43,7 @@ quiz:
     choices:
     - content: "Virtual WAN network topology"
       isCorrect: true
-      explanation: "that’s correct. A Virtual WAN topology meets the requirements for deploying resources across several Azure regions and enables global connectivity between VNets in these Azure regions and multiple on-premises locations."
+      explanation: "That’s correct. A Virtual WAN topology meets the requirements for deploying resources across several Azure regions and enables global connectivity between VNets in these Azure regions and multiple on-premises locations."
     - content: "Traditional network topology"
       isCorrect: false
       explanation: "That’s incorrect. A traditional network topology can be used if your organization intends to deploy resources across several Azure regions but does not provide the ability to centrally manage the networks and connections."
