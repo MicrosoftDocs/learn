@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Lint and validate your Bicep code
   description: Learn about linting and validating your Bicep code in a deployment workflow.
-  ms.date: 09/15/2021
+  ms.date: 10/19/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
