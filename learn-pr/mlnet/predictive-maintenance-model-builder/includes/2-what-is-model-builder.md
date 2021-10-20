@@ -2,13 +2,19 @@ Model Builder is a graphical Visual Studio extension to train and deploy custom 
 
 :::image type="content" source="../media/model-builder-extension.png" alt-text="Model Builder Visual Studio extension for ML.NET":::
 
-Machine learning is a technique that uses mathematics and statistics to identify patterns within data without being explicitly programmed. For example, let's say you wanted to predict the price of a home. If you were using a single feature such as number of rooms to estimate its price, you could probably program a heuristic that correlates a larger number of rooms to a higher price. As you know though, the world isn't that simple and there are many variables that influence the price of a home. It's in those cases that coming up with a simple heuristic that captures edge cases  becomes difficult and machine learning may be a better solution. With machine learning, instead of explicitly programming rules, you use historical data to identify these rules based on actual observations.
+Machine learning is a technique that uses mathematics and statistics to identify patterns within data without being explicitly programmed. 
+
+For example, let's say you wanted to predict the price of a home. If you were using a single feature such as the size of a home in square feet to estimate its price, you could probably program a heuristic that correlates higher square feet to a higher price.
+
+:::image type="content" source="../media/linear-regression-model.svg" alt-text="House price linear regression model graph":::
+
+As you know though, the world isn't that simple and there are many variables that influence the price of a home. It's in those cases that coming up with a simple heuristic that captures edge cases  becomes difficult and machine learning may be a better solution. With machine learning, instead of explicitly programming rules, you use historical data to identify these rules based on actual observations.
 
 The patterns found using machine learning are then used to create an artifact known as a model to make predictions using new and previously unseen data.
 
 ML.NET is an open-source, cross-platform, machine learning framework for .NET. This means you can use apply your existing .NET skills and use the tools you're familiar with like Visual Studio to train machine learning models.
 
-## What types of problems can I solve with ML.NET and Model Builder?
+## What types of problems can I solve with Model Builder?
 
 Model Builder can be used to solve many common machine learning problems such as:
 
