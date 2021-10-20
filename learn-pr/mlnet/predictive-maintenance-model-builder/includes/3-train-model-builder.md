@@ -267,4 +267,4 @@ If you're not satisfied with the evaluation metrics of your model, there are a f
 - **Use meaningful data and features** - Although more data samples and features can help improve the accuracy of the model, they may also introduce noise since not all data and features are meaningful. Therefore, it is important to understand which features are the ones that most heavily impact decisions made by the algorithm.
 - **Explore more algorithms** - Providing Model Builder with more type to allow it to explore more algorithms and hyperparameters may help improve your model.
 
-In the next unit, you'll evaluate your predictive maintenance model.
+In the next unit, you'll use Model Builder to train a machine learning model.
