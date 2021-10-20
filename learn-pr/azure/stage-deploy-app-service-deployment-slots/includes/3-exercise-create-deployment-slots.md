@@ -226,4 +226,4 @@ Now you can view the new version of the web app by browsing to the URL for the s
 
 :::image type="content" source="../media/3-web-app-staging-slot.png" alt-text="Screenshot of the updated web app in the staging slot.":::
 
-Congratulations, you've created a staging slot that has it's own version of the Web App code, and you can run tests on it. Remember that the production slot has the previous web app version, and users can't yet see your new code.
+Congratulations, you've created a staging slot that has its own version of the Web App code, and you can run tests on it. Remember that the production slot has the previous web app version, and users can't yet see your new code.
