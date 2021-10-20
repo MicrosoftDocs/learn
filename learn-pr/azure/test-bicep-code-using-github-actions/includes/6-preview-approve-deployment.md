@@ -14,9 +14,9 @@ Resource Manager provides the what-if operation, which you can run on your Bicep
 
 :::image type="content" source="../media/6-jobs-preview.png" alt-text="Diagram of a workflow that includes Lint, Validate, and Preview jobs. The Preview job executes a what-if operation against Azure." border="false":::
 
-The `azure/arm-deploy@v1` action does not currently support the what-if operation, so instead you can use the Azure CLI. Run the `az deployment group what-if` command from within your workflow definition:
+The `arm-deploy` action does not currently support the what-if operation, so instead you can use the Azure CLI. Run the `az deployment group what-if` command from within your workflow definition:
 
-:::code language="yaml" source="code/6-what-if.yml" highlight="14-17" :::
+:::code language="yaml" source="code/6-what-if.yml" highlight="10-17" :::
 
 ::: zone pivot="powershell"
 
@@ -36,9 +36,7 @@ To learn more about the what-if command, see the Microsoft Learn module [Preview
 
 In GitHub Actions, an *environment* represents the place to which your solution is deployed. Environments provide features that help when you work with complex deployments. In a future module, you'll learn more about environments and their features. For now, we'll focus on their ability to add required reviewers to your workflow.
 
-You create an environment by using the GitHub web interface.
-
-<!-- TODO mention public repo or GH Ent only -->
+You create an environment by using the GitHub web interface. You can create environments when you work with a public GitHub repository, or when you use a GitHub Enterprise account.
 
 After you create an environment you can reference it in any jobs in your workflow:
 
@@ -60,7 +58,7 @@ An required reviewer is one type of protection rule. When you configure an requi
 
 Environments provide other types of protection rules, too. For example, you can  restrict the Git branches that can be deployed to specific environments. We discuss only the required reviewers rule in this module, but we provide links to more information about other protection rules in the summary.
 
-After your workflow begins and reaches a job that requires an reviewer, the workflow run pauses. All of the users who have been designated as reviewers are sent a message in GitHub and by email.
+After your workflow begins and reaches a step that requires an reviewer, the workflow run pauses. All of the users who have been designated as reviewers are sent a message in GitHub and by email.
 
 Reviewers can inspect the workflow logs, such as the changes that the what-if operation detects. Based on this information, they then approve or reject the change. If they approve the change, the workflow resumes. If they reject, or if they don't respond within the timeout period, the job fails.
 

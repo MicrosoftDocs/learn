@@ -74,18 +74,11 @@ Preflight validation requires communication with Azure, but it doesn't actually 
 
 :::image type="content" source="../media/3-jobs-validate.png" alt-text="Diagram that shows a workflow with lint and validate jobs, each containing a single job. The validate job communicates with Azure." border="false":::
 
-::: zone pivot="powershell"
+To submit a Bicep file for preflight validation, you use the `arm-deploy` action, and set the `deploymentMode` to `Validate`:
 
-> [!NOTE]
-> In this module, we use the Azure CLI to run all of the workflow commands. When you build your own workflow, you can choose to use the Azure PowerShell cmdlets instead. The equivalent cmdlet for preflight validation is `Test-AzResourceGroupDeployment`.
+:::code language="yaml" source="code/3-preflight.yml" range="1, 9-21" highlight="14" :::
 
-::: zone-end
-
-You use the `az deployment group validate` Azure CLI command to submit a Bicep file for preflight validation:
-
-:::code language="yaml" source="code/3-preflight.yml" highlight="16-22" :::
-
-This command is similar to the `az deployment group create` command, but it doesn't actually deploy any resources. It performs extra checks against the resources that are being used in your template. 
+This command is similar to a normal deployment, but it doesn't actually deploy any resources. It performs extra checks against the resources that are being used in your template. 
 
 For example, suppose your Bicep file contains a storage account. Preflight validation will check whether another storage account has already taken the name you chose. It also checks whether the name you chose for the storage account complies with naming conventions. 
 

@@ -94,10 +94,6 @@ Now, you can add a smoke test job that runs your tests.
 
    This text indicates that the website hasn't been correctly configured to meet your security team's requirement.
 
-> [!NOTE]
-> We currently look at the test results in the output logs of the **smoke-test** job. In GitHub actions you can also find third party actions that can publish your test results. We will not look into these in this module. 
-<!-- TODO move this note to unit 8 -->
-
 ## Update the Bicep file
 
 Now that you've identified that your Bicep definition doesn't meet your security team's requirement, you'll fix it.

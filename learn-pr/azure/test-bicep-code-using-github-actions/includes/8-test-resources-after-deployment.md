@@ -32,6 +32,8 @@ There are many ways you can run tests in your workflow. In this module, we use P
 
 When you run tests from a workflow, any test failures should stop the workflow from continuing. In the next exercise, you'll see how you can use workflows with infrastructure smoke tests.
 
+Test results are written to the workflow log. The GitHub Marketplace also contains third-party actions that can display and track test results over time.
+
 ### Pass data between jobs
 
 When you divide your workflow into multiple jobs, each with its own responsibility, you sometimes need to pass data between these jobs. For example, one job might create an Azure resource that another job needs to work with. To be able to pass data, the second job needs to know the name of the resource that was created. This is the case with our smoke test job, which needs to access the resources that the deployment job has deployed.
@@ -63,19 +65,11 @@ Earlier in this module, you learned that GitHub Action workflows enables you to 
 > [!NOTE]
 > When you submit a deployment to Azure Resource Manager, you can request that Resource Manager automatically rerun your last successful deployment if it fails. To do this, use the `--rollback-on-error` parameter when you submit the deployment by using the Azure CLI `az deployment group create` command.
 
-You could for instance add a `rollback` job to your workflow that executes when the smoke-test job fails: 
+For example, you might add a rollback job to your workflow. The rollback job runs when the smoke test job fails: 
 
-```YAML
-  rollback: 
-    runs-on: ubuntu-latest
-    needs: smoke-test
-    if: ${{ always() && needs.smoke-test.result == 'failure' }}
-    steps:
-    - run: |
-        echo "I only run on smoke test ${{ needs.smoke-test.result }}"
-```
+:::code language="yaml" source="code/8-rollback.yml" :::
 
-The above job indicates that it is dependent on the `smoke-test` job and that it will only run when there is a failure in that jobs results. The `always()` check is there so the job will actually run and the second part of the `&&` statement will get evaluated. Without the `always()` in the expression the job will always be skipped on failure of any previous job. 
+The job depends on the smoke test job. It only runs when the smoke test fails. By default, GitHub Actions stops the workflow when whenever a previous job fails. The `if` condition includes an `always()` check to override this behavior. Without the `always()` in the expression, the rollback job will be skipped whenever a prior job fails.
 
 It's often challenging to work out the steps that a rollback job should perform. Bicep deployments are generally complex, and it's not easy to roll back changes. It's especially difficult to roll back when your deployment includes other components. 
 

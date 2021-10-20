@@ -58,7 +58,7 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 ## Configure the deploy job to work with the linter
 
-<!-- TODO explain -->
+When you use custom linter configuration, Bicep writes log data that GitHub Actions interprets as an error. To disable this behavior, you configure the `arm-deploy` task to ignore the standard error stream.
 
 1. Open the *workflow.yml* file.
 
@@ -88,7 +88,7 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 1. In your browser, go to **Actions**.
 
-   <!-- TODO mention the first run failed and why -->
+   The first run of your workflow, labelled *Initial commit*, is shown as a failure. GitHub automatically ran the workflow when you created the repository. It failed because the secrets weren't ready at that time. You can ignore this failure.
 
 1. Select the most recent run of your workflow.
 
@@ -200,6 +200,6 @@ You've found another problem in the Bicep file. Here, you fix the problem.
 
    :::image type="content" source="../media/5-workflow-run-jobs-success.png" alt-text="Screenshot of the workflow run in GitHub Actions, with all three jobs reporting success.":::
 
-<!-- TODO mention why still seeing warnings -->
+   Some warnings are listed in the **Annotations** panel. All of these warnings are because of the way Bicep writes informational messages to the workflow log. You can ignore these warnings.
 
 You now have a workflow that successfully detects errors in your Bicep code early in your deployment process, and then deploys to Azure if there are no errors.
