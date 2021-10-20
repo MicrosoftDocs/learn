@@ -1,22 +1,22 @@
 ### YamlMime:Module
 uid: learn.azure.power-apps-tutorial
 metadata:
-  title: Build an application using Power Apps
-  description: By the end of this module, you'll be able to build an application that includes mixed reality components using Power Apps.
+  title: Power Apps in Mixed Reality
+  description: Learn about all the foundational elements required to build a Mixed Reality application using Power Apps.
   ms.date: 10/19/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build an application using Power Apps
-summary: By the end of this module, you'll be able to build an application that includes mixed reality components using Power Apps.
+title: Power Apps in Mixed Reality
+summary: By the end of this module, you'll be able to build an application that includes Mixed Reality components using Power Apps.
 abstract: |
   By the end of this module you will be able to:
-  - Build a "Sales" oriented application.
-  - Learn about some of the mixed reality components available in Power Apps.
+  - Understand about Power Apps and its use cases.
+  - Learn about some of the Mixed Reality components included in Power Apps
+  - Build a "Sales" oriented Mixed reality application with Power Apps
   - How to configure, set up and build an application Power Apps.
   - Basic understanding of including 3D models to your application.
-  - Understand developing the mixed reality application with Power Apps.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -27,9 +27,13 @@ products:
 - windows-mixed-reality
 
 prerequisites: |
+  - Microsoft organization credentials.
   - Power Apps application installed in a mobile device.
+  - Familiarity with OneDrive, SharePoint, and Excel
   - Power Apps account.
-  - Mixed reality supported mobile device.
+  - Mixed reality supported iOS mobile device(iOS 13 or later) or Android mobile device(Android 7 or later).
+  - A Windows 8.1 or later PC.
+  - A supported browser to run [canvas apps](/powerapps/maker/canvas-apps/limits-and-config#supported-browsers-for-running-canvas-apps)
   
 units: 
 - learn.azure.power-apps-tutorial.1-introduction
@@ -43,4 +47,4 @@ units:
 - learn.azure.power-apps-tutorial.9-summary
 
 badge:
-  uid: learn.azure.power-apps.badge
+  uid: learn.azure.power-apps-tutorial.badge
