@@ -35,7 +35,7 @@ quiz:
       explanation: "That's incorrect. In a social engineering attack, the attacker aims to gain the trust of an authorized user to obtain access to a system for some nefarious activity."
     - content: "Browser."
       isCorrect: true
-      explanation: "That's correct. If a website asks the user to make changes to their browser settings or to install an add-on, and the user carries them out. The attacker can compromised the browser and steal information."
+      explanation: "That's correct. If a website asks the user to make changes to their browser settings or to install an add-on, and the user carries them out. The attacker can compromise the browser and steal information."
     - content: "Password."
       isCorrect: false
       explanation: "That's incorrect. A password attack is when an attacker attempts to authenticate into password-protected accounts to gain unauthorized access into a device or system."
@@ -43,7 +43,7 @@ quiz:
     choices:
     - content: "Threat intelligence."
       isCorrect: false
-      explanation: "That's incorrect. Threat intelligence enables an organization to collect information about its systems, details about vulnerabilities, and  information about attacks. The organization use that to implement polices to defend against cyberattacks."
+      explanation: "That's incorrect. Threat intelligence enables an organization to collect information about its systems, details about vulnerabilities, and  information about attacks. The organization use that to implement policies to defend against cyberattacks."
     - content: "Browser security."
       isCorrect: false
       explanation: "That's incorrect. Browser security is based on the application of security policies to prevent cyberattacks."
