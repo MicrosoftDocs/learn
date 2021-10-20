@@ -2,13 +2,11 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 ## Open a blank app
 
-1. Sign in to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
-
-2. Under **Make your own app**, select **Canvas app from blank.**
+1. Go to the Power Apps home page. Then, under **Make your own app**, select **Canvas app** from blank.
 
     :::image type="content" source="../media/canvas-app.png" alt-text="Screenshot of select canvas app from blank." lightbox="../media/canvas-app.png":::
 
-3. Specify a name for your app, select **Phone**, and then select **Create.**
+2. Specify a name for your app, select **Phone**, and then select **Create.**
 
     :::image type="content" source="../media/select-phone.png" alt-text="Screenshot of specifying app name and selecting create." lightbox="../media/select-phone.png":::
 
@@ -16,7 +14,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
     >[!Note]
     > You can design an app from scratch for phones or other devices (such as tablets). This topic focuses on designing an app for phones.
 
-4. If the **Welcome to Power Apps Studio** dialog box opens, select **Skip.**
+3. If the **Welcome to Power Apps Studio** dialog box opens, select **Skip.**
 
     :::image type="content" source="../media/click-skip.png" alt-text="Screenshot of select skip option." lightbox="../media/click-skip.png":::
 
