@@ -50,7 +50,7 @@ Your application can be granted two types of identities:
 * A **system-assigned identity** is tied to your configuration store. It's deleted if your configuration store is deleted. A configuration store can only have one system-assigned identity.
 * A **user-assigned identity** is a standalone Azure resource that can be assigned to your configuration store. A configuration store can have multiple user-assigned identities.
 
-### Adding a system-assigned identity
+### Add a system-assigned identity
 
 To set up a managed identity using the Azure CLI, use the `az appconfig identity assign` command against an existing configuration store. The following Azure CLI example creates a system-assigned identity for an Azure App Configuration store named `myTestAppConfigStore`.
 
@@ -60,7 +60,7 @@ az appconfig identity assign \
     --resource-group myResourceGroup
 ```
 
-### Adding a user-assigned identity
+### Add a user-assigned identity
 
 Creating an App Configuration store with a user-assigned identity requires that you create the identity and then assign its resource identifier to your store. The following Azure CLI examples create  a user-assigned identity called `myUserAssignedIdentity` and assigns it to an Azure App Configuration store named `myTestAppConfigStore`.
 
