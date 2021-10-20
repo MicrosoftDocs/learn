@@ -33,12 +33,12 @@ quiz:
       You need to add the database initialization process to your pipeline.
       Which of the following steps should you take?
     choices:
-    - content: Create a pipeline artifact for the compiled initialization application.
-      isCorrect: true
-      explanation: Correct. You can publish a pipeline artifact for the application, and then run the application as part of the deployment stage in your pipeline.
     - content: Use a separate tool like Chef or Puppet.
       isCorrect: false
       explanation: Incorrect. Tools like Chef and Puppet aren't required, because your pipeline can run the application directly.
+    - content: Create a pipeline artifact for the compiled initialization application.
+      isCorrect: true
+      explanation: Correct. You can publish a pipeline artifact for the application, and then run the application as part of the deployment stage in your pipeline.
     - content: Ensure that AzCopy is installed on your pipeline agent.
       isCorrect: false
       explanation: Incorrect. AzCopy is used to manage storage accounts, not Azure Cosmos DB data.
@@ -48,12 +48,12 @@ quiz:
       You need to access the app's host name from your pipeline but you can't currently do so.
       Which of the following reasons is most likely?
     choices:
-    - content: You haven't added an output to your Bicep template for the host name.
-      isCorrect: true
-      explanation: Correct. Information from your Bicep file needs to be published as an output in your Bicep file before it's accessible by the rest of the pipeline.
     - content: You need to use a self-hosted agent.
       isCorrect: false
       explanation: Incorrect. You don't need to use a self-hosted agent to access information from a Bicep file.
     - content: You need to use a deployment script.
       isCorrect: false
       explanation: Incorrect. You don't need to use a deployment script to access information from a Bicep file.
+    - content: You haven't added an output to your Bicep template for the host name.
+      isCorrect: true
+      explanation: Correct. Information from your Bicep file needs to be published as an output in your Bicep file before it's accessible by the rest of the pipeline.
