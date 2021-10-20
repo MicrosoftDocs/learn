@@ -203,7 +203,7 @@ Site Recovery creates default settings and replication policy for the target reg
       :::column:::
         Site Recovery uses a storage account in the source region. Changes to source VMs are sent to this account before replication to the target location.
     
-    If you're using a firewall-enabled cache storage account, make sure that you enable **Allow trusted Microsoft services**. [Learn more](https://docs.microsoft.com/azure/storage/common/storage-network-security#exceptions). Also, ensure that you allow access to at least one subnet of the source Vnet.
+    If you're using a firewall-enabled cache storage account, make sure that you enable **Allow trusted Microsoft services**. [Learn more](/azure/storage/common/storage-network-security). Also, ensure that you allow access to at least one subnet of the source Vnet.
       :::column-end:::
     :::row-end:::
     :::row:::
