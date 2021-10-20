@@ -4,7 +4,7 @@ title: "Exercise: Train a machine learning model"
 metadata:
   unitType: exercise
   title: "Exercise: Train a machine learning model"
-  description: "Use Model Builder to choose a scenario, load your data, and train a predictive maintenance machine learning model"
+  description: "Use Model Builder to choose a scenario, load your data, train a predictive maintenance machine learning model, and evaluate its performance."
   ms.date: 10/19/2021
   author: luisquintanilla
   ms.author: luquinta
