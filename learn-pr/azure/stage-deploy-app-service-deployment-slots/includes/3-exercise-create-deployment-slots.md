@@ -52,7 +52,7 @@ Although you can use many different tools to deploy code to your web app, in thi
 
 1. In the App Service menu, under **Deployment**, select **Deployment Center**. The **Deployment Center** pane for your app service appears.
 
-1. On the **Settings** tab, for **Source**, select **Local Git**, and then select **Save** on the commnd bar to set up your deployment.
+1. On the **Settings** tab, for **Source**, select **Local Git**, and then select **Save** on the command bar to set up your deployment.
 
 1. Select the **Local Git/FTPS credentials** tab. Under **User scope**, enter a unique username and password of your choice, and then in the command bar, select **Save**. Make a note of the username and password for later.
 
