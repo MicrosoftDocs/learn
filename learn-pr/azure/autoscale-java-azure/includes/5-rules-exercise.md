@@ -38,7 +38,7 @@ In the Scale-out setting screen, go to the Run history tab to see the most recen
 You can also trigger autoscaling, manually via a web browser or a shell script.
 To test the autoscale rules, we'll generate some load on the instances. This simulated load causes the autoscale rules to scale out and increase the number of instances. As the simulated load is then stopped, the autoscale rules scale-in and reduce the number of instances.
 
-To allow you to trigger the autoscale, we have provided a shell script in the same GIT repo you used to create your Azure Spring Cloud application.
+To allow you to trigger the autoscale, we've provided a shell script in the same GIT repo you used to create your Azure Spring Cloud application.
 
 In your https://shell.azure.com bash window, run the following commands to set your spring cloud instance name (same Azure spring cloud service name you used in the previous exercise):
 

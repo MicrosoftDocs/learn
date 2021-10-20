@@ -40,7 +40,7 @@ On an evening or weekend, your application demand may lower. If this load is con
 
 ### Scale differently during holidays
 
-If there is heavily usage for a service at certain parts of the month or fiscal cycle, automatically scale the number of service instances to accommodate their extra demands.
+If heavily usage for a service at certain parts of the month or fiscal cycle, you can automatically scale the number of service instances to accommodate their extra demands.
 When there's a marketing event, promotion, or holiday sale, you can automatically scale the number of service instances ahead of expected customer demand.
 
 ### Scale based on custom metric

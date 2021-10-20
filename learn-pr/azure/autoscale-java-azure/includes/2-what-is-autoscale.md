@@ -2,7 +2,7 @@ In this unit, we look at Azure scaling concepts.
 
 ## Why care about scaling
 
-A primary advantage of the cloud is elastic scaling - scale out by adding application instances based on increased demand. You can use as much capacity as you need, scaling out as load increases, and scaling in when the extra capacity is not needed.
+A primary advantage of the cloud is elastic scaling - scale out by adding application instances based on increased demand. You can use as much capacity as you need, scaling out as load increases, and scaling in when the extra capacity isn't needed.
 
 A classic example of the need for elasticity occurs when an organization's web site experiences unusually high loads. If the site can't scale to meet demand, requests take longer to process because they're queued waiting for processor time. To the customer, the site seems slow and unresponsive. In extreme cases, the site might even appear to be down.
 
@@ -32,7 +32,7 @@ Raley’s grocery stores needed to modernize the code and infrastructure for the
 
 The answer was Azure Spring Cloud, a fully managed service for Spring Boot, providing the power of Kubernetes coupled with real-time monitoring and autoscaling. It also enabled Raley’s to adopt a true platform as a service (PaaS) architecture, seizing the benefits of the cloud more fully.
 
-The service manages the infrastructure of Spring Boot microservice applications behind the scenes, so developers can focus on their code. When Java archives or code are deployed, Spring Cloud automatically wires the apps with the Spring service runtime.
+The service manages the infrastructure of Spring Boot microservice applications behind the scenes, so developers can focus on their code. When Java archives or code is deployed, Spring Cloud automatically wires the apps with the Spring service runtime.
 
 After they’re deployed, Spring Cloud apps are fully integrated with Azure Monitor tools, like Application Insights and Log Analytics, allowing easy, fully configurable monitoring of performance and errors. When used with Azure Application Gateway, these same monitoring services can also drive autoscaling, helping to ensure that resources are appropriately sized for current loads.
 

@@ -29,7 +29,7 @@ Expand the Log Management solution and locate the **AutoscaleEvaluationsLog** ta
 
 Let's write a query by using the **AutoscaleEvaluationsLog** table. Double-click its name to add it to the query window. You can also type directly in the window. You can even get IntelliSense that will help complete the names of tables in the current scope and Kusto Query Language (KQL) commands.
 
-This is the simplest query that we can write. It just returns all the records in a table. Run it by selecting the Run button or by selecting Shift+Enter with the cursor positioned anywhere in the query text.
+This quert is the simplest query that we can write. It just returns all the records in a table. Run it by selecting the Run button or by selecting Shift+Enter with the cursor positioned anywhere in the query text.
 
 ```Kusto
 AutoscaleEvaluationsLog
