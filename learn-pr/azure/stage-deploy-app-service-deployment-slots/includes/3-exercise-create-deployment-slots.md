@@ -77,7 +77,7 @@ Now, you'll set up the git client in Cloud Shell and use it to clone a sample we
 
 1. Enter the following command in the Cloud Shell, replacing \<your-email-address> with your preferred email address. This config value isn't associated with any Azure account, so you can use whatever value you like.
    
- ```bash
+    ```bash
     git config --global user.email <your-email-address>
     ```
     
