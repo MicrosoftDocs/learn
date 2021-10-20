@@ -10,9 +10,9 @@ You can develop custom applications using StereoKit as it focuses on non-game Mi
 
 * You can use StereoKit on OpenXR platforms such as HoloLens 2, Oculus Quest, Windows Mixed Reality, Oculus Desktop, SteamVR, Varjo, and Monado Linux.
 
-* The StereoKit 3D model format must be in .gltf, .glb, .obj, .stl, ASCII.ply, and procedural.
+* The StereoKit 3D model format must be in ".gltf", ".glb", ".obj", ".stl", "ASCII.ply", and "procedural".
 
-* The StereoKit image or texture format must be in .jpg, .png, .tga, .bmp, .psd, .gif, .hdr, .pic, equirectangular cubemap, and procedural.
+* The StereoKit image or texture format must be in ".jpg", ".png", ".tga", ".bmp", ".psd", ".gif", ".hdr", ".pic", "equirectangular cubemap", and "procedural".
 
 * StereoKit builds your application to a device in a matter of seconds.
 
