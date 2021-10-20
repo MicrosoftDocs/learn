@@ -1,10 +1,10 @@
 A deployment slot is an instance of a web app in which you can test a new app version before you deploy it. By swapping slots, you can deploy a new version of an app without any downtime.
 
-Suppose you've chosen to use Azure App Service deployment slots to streamline the deployment of new versions of your social media web app. Now, you want to set up the web app in Azure and configure the deployment slots.
+Let's suppose you've decided to use Azure App Service deployment slots in order to streamline the deployment of new versions of your social media web app. You want to set up the web app in Azure and configure one or more deployment slots.
 
-Here, you'll set up a web app and add a new deployment slot to it for staging. You'll also deploy different versions of the web app to those slots.
+In this exercise, you'll set up a web app, add a new deployment slot for staging, and deploy different versions of the web app to the production and staging slots.
 
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
+[!INCLUDE [](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Create a web app
 
@@ -62,20 +62,20 @@ Now, you'll set up the git client in Cloud Shell and use it to clone a sample we
 
 1. In the Azure global controls at the top of the page, select the Cloud Shell icon to launch an Azure Cloud Shell session.
 
-      :::image type="content" source="../media/3-cloud-shell-icon.png" alt-text="Cloud shell icon in global controls.":::
+      :::image type="content" source="../media/3-cloud-shell-icon.png" alt-text="Cloud Shell icon in global controls.":::
 
 1. In the Cloud Shell session, when prompted, select the **Bash** experience and create storage for your subscription.
 
     > [!NOTE]
     > Cloud Shell requires an Azure storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
    
-1. Enter the following command in the Cloud Shell, replacing <your-username> with your preferred username. This config value isn't associated with any Azure account, so you can use whatever value you like.
+1. Enter the following command in the Cloud Shell, replacing \<your-username> with your preferred username. This config value isn't associated with any Azure account, so you can use whatever value you like.
 
     ```bash
     git config --global user.name <your-username>
     ```
 
-1. Enter the following command in the Cloud Shell, replacing <your-email-address> with your preferred email address. This config value isn't associated with any Azure account, so you can use whatever value you like.
+1. Enter the following command in the Cloud Shell, replacing \<your-email-address> with your preferred email address. This config value isn't associated with any Azure account, so you can use whatever value you like.
    
  ```bash
     git config --global user.email <your-email-address>
@@ -110,7 +110,7 @@ We're going to use git to deploy the source code to the web app's production slo
 
 1. Hover over the  **Git clone url**, and select the *Copy to clipboard* icon. Note that this value also contains your deployment username.
 
-1. In Cloud Shell, run the following command to configure the git remote with a name "production". Replace `,\<git-clone-url>` with the content you copied to the clipboard from the previous step.
+1. In Cloud Shell, run the following command to configure the git remote with a name "production". Replace \<git-clone-url> with the content you copied to the clipboard from the previous step.
 
     ```bash
     cd app-service-web-dotnet-get-started
@@ -177,7 +177,7 @@ To use the git client to deploy source code to the new slot, let's add an extra 
     > [!NOTE]
     > If you don't see the git clone URL, refresh the portal. Note that the **Git clone url** for staging differs slightly from the URL for the production slot, and it includes the slot name.
 
-1. In the Cloud Shell, make sure you are in the ~/demoapp/app-service-web-dotnet-get-started folder, and then run the following command, replacing `<git-clone-uri>` with the URL you copied in the previous step.
+1. In Cloud Shell, make sure you are in the ~/demoapp/app-service-web-dotnet-get-started folder, and then run the following command, replacing \<git-clone-uri> with the URL you copied in the previous step.
 
     ```bash
     git remote add staging <git-clone-uri>
