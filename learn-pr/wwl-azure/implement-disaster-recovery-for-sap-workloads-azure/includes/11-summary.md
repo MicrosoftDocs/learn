@@ -23,5 +23,5 @@ Now you have:
  -  [Set up disaster recovery for SQL Server](/azure/site-recovery/site-recovery-sql)
  -  [Create and customize recovery plans](/azure/site-recovery/site-recovery-create-recovery-plans)
  -  [Grant access to trusted Azure services](/azure/storage/common/storage-network-security)
- -  [Guide to install and configure Azure PowerShell](/powershell/azure/install-az-ps?view=azps-5.0.0)
+ -  [Guide to install and configure Azure PowerShell](/powershell/azure/install-az-ps)
  -  [Deploy VMs to proximity placement groups using Azure PowerShell](/azure/virtual-machines/windows/proximity-placement-groups)
