@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.just-enough-administration-windows-server.create-session-configuration-file-to-register-jea-endpoint
+title: Create a session configuration file to register a JEA endpoint
+metadata:
+  title: Create a session configuration file to register a JEA endpoint
+  description: "Create a session configuration file to register a JEA endpoint"
+  ms.date: 10/20/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-create-session-configuration-file-to-register-jea-endpoint.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following settings should you configure in a session configuration file to ensure that a special account with local administrative credentials is used during a JEA session instead of the connecting users account?"
+    choices:
+    - content: "Sessiontype"
+      isCorrect: false
+      explanation: "Incorrect. Allows you to configure the sessions default settings but does not allow you to assign a special virtual account that has local administrative privileges."
+    - content: "RunAsVirtualAccount"
+      isCorrect: true
+      explanation: "Correct. The RunAsVirtualAccount setting allows you to have the JEA session use a special virtual account with local administrative privileges."
+    - content: "RunAsVirtualAccountGroup"
+      isCorrect: false
+      explanation: "Incorrect. The RunAsVirtualAccountGroup allows you to have the JEA session use a special virtual account that is a member of a specified security group, but unless this specified security group has been granted administrative privileges, does not provide any additional privileges to the virtual account."

@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.just-enough-administration-windows-server.define-role-capabilities-for-jea-endpoint
+title: Define role capabilities for a JEA endpoint
+metadata:
+  title: Define role capabilities for a JEA endpoint
+  description: "Define role capabilities for a JEA endpoint"
+  ms.date: 10/20/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-define-role-capabilities-for-jea-endpoint.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following settings should you configure in a role capability file to specify the exact PowerShell cmdlets that are available in a JEA session?"
+    choices:
+    - content: "VisibleProviders"
+      isCorrect: false
+      explanation: "Incorrect. You use this section of a role capability file to specify which PowerShell providers can be used in a JEA session."
+    - content: "VisibleCmdlets"
+      isCorrect: true
+      explanation: "Correct. You use this section of a role capability file to specify which PowerShell cmdlets can be used in a JEA session."
+    - content: "VisibleFunctions"
+      isCorrect: false
+      explanation: "Incorrect. You use this section of a role capability file to specify which PowerShell functions, rather than cmdlets, can be used in a JEA session."
