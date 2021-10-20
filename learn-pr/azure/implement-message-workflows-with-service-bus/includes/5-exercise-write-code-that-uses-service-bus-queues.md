@@ -316,7 +316,7 @@ To complete the component that sends messages about sales:
                 Console.WriteLine("Press ENTER on the keyboard to exit after receiving all the messages.");
                 Console.WriteLine("======================================================");
     
-                await using ServiceBusClient client = new ServiceBusClient(ServiceBusConnectionString);
+                var client = new ServiceBusClient(ServiceBusConnectionString);
 
                 var processorOptions = new ServiceBusProcessorOptions
                 {
@@ -324,12 +324,13 @@ To complete the component that sends messages about sales:
                     AutoCompleteMessages = false
                 };
                 
-                await using ServiceBusProcessor processor = client.CreateProcessor(QueueName, processorOptions);
+                ServiceBusProcessor processor = client.CreateProcessor(QueueName, processorOptions);
 
                 await processor.StartProcessingAsync();
             
                 Console.Read();
     
+                // Since we didn't use the "await using" syntax here, we need to explicitly dispose the processor and client
                 await processor.DisposeAsync();
                 await client.DisposeAsync();
             }
