@@ -16,11 +16,11 @@ quiz:
   questions:
   - content: "What is Model Builder?"
     choices:
-    - content: "A database scaffolding tool"
+    - content: "A database scaffolding tool."
       isCorrect: false
       explanation: "Model Builder helps you build machine learning models, not database models."
     - content: "A graphical Visual Studio extension to build, train, and deploy custom machine learning models with ML.NET."
-      isCorrect: true
+      isCorrect: false
       explanation: "Correct! Model Builder guides you through the process of adding machine learning models to your .NET apps in Visual Studio."
     - content: "A graphical Visual Studio Code extension to build, train, and deploy custom machine learning models with ML.NET."
       isCorrect: true
@@ -38,12 +38,12 @@ quiz:
       explanation: "In order to make predictions, you need to train a machine learning model first."
   - content: "What does it mean to consume a model?"
     choices:
-    - content: "Apply algorithms to a dataset"
+    - content: "Applying algorithms to a dataset."
       isCorrect: false
       explanation: "Choosing algorithms and applying them to a dataset is part of model training."
     - content: "Using a trained machine learning model to make predictions on new data."
       isCorrect: true
       explanation: "Correct! When you consume a model, it means you're using it to make predictions on new data."
-    - content: "Use all your compute resources"
+    - content: "Using all your compute resources"
       isCorrect: false
       explanation: "Although consuming a machine learning model uses compute resources, consumption in this case means using the model to make predictions."
