@@ -1,12 +1,12 @@
 ## Summary
 
-In this module, you've learned to develop and design an application in a short period with no bit of coding where users with any level of knowledge can utilize the apps for business purpose.
+In this module, you've learned to develop and design an application in a short period with no bit of coding where users with any level of knowledge can use the apps for business purpose.
 
-As it uses extensive number of cloud and on premise application including Dynamic 365, you can access the work across the web and the mobile without the time and expense of custom software development.
+As it uses extensive number of clouds and on-premise application including Dynamic 365, you can access the work across the web and the mobile without the time and expense of custom software development.
 
 ## Next steps
 
-The application you built in this module are just amateur applications that can be further improvised in the future or later, including few more functions or features provided by **Microsoft Power Apps**. Consider trying the following features:
+The application you built in this module is an amateur application that can be further improvised in the future or later, including few more functions or features provided by **Microsoft Power Apps**. Consider trying the following features:
 
 * Try using different **Connectors**
 * Consider including the feature of Ordering more than one product.

@@ -11,7 +11,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 2. Position the **Measure in MR** button as shown in the figure and configure the following properties:
     * **Text**: Filter by Dimensions
     * **Unit of measurement**: Centimeters
-    * **Mesurement type**: Freeform
+    * **Measurement type**: Freeform
 
     :::image type="content" source="../media/configure-property-measure.png" alt-text="Screenshot to configure the properties of Measure in MR" lightbox="../media/configure-property-measure.png":::
 

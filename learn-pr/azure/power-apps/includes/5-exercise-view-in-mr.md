@@ -54,7 +54,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 3. Click on the newly created screen to change its properties in the **Properties** tab at the right side of the screen.
 
-4. Click the dropdown present beside the **Backgroud image** property to add an image to the screen. We will add the logo of our application **Easy Sales** to the splash screen.
+4. Click the dropdown present beside the **Background image** property to add an image to the screen. We will add the logo of our application **Easy Sales** to the splash screen.
 
 5. Set the image position to **Fit**.
 
@@ -64,7 +64,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
     :::image type="content" source="../media/add-timer.png" alt-text="Screenshot of adding the timer." lightbox="../media/add-timer.png":::
 
-7. To edit some of the timer properties, you can either use the **Property** dropdown at the top left corner or use the **Properties** pane. Set the following properties as given below:
+7. To edit some of the timer properties, you can either use the **Property** dropdown at the top-left corner or use the **Properties** pane. Set the following properties as given below:
 
     * **AutoStart** - true
     * **Duration** - 2000
@@ -284,7 +284,7 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/select-add-column.png" alt-text="Screenshot to add column" lightbox="../media/select-add-column.png":::
 
-3. Make sure **Attachments** is selected and press **Apply** at the top. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file).
+3. Make sure **Attachments** be selected and press **Apply** at the top. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file).
 
     :::image type="content" source="../media/add-attachments.png" alt-text="Screenshot to add attachments" lightbox="../media/add-attachments.png":::
 
@@ -328,7 +328,7 @@ You are allowed to take pictures during the **View in MR** session and display t
 
     :::image type="content" source="../media/add-text-input.png" alt-text="Screenshot of adding Text input" lightbox="../media/add-text-input.png":::
 
-3. Click the drop down at the right side of the studio and select **Gallery**. Choose **Horizontal** type of gallery.
+3. Click the dropdown at the right side of the studio and select **Gallery**. Choose **Horizontal** type of gallery.
 
     :::image type="content" source="../media/horizontal-gallery.png" alt-text="Screenshot of adding horizontal gallery" lightbox="../media/horizontal-gallery.png":::
 
