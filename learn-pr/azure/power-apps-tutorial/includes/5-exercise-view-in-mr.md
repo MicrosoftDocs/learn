@@ -6,7 +6,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
     :::image type="content" source="../media/canvas-app.png" alt-text="Screenshot of select canvas app from blank." lightbox="../media/canvas-app.png":::
 
-2. Specify a name for your app, select **Phone**, and then select **Create.**
+2. Specify a name for your app, for example *Easy-Sales*. Select **Phone**, and then select **Create**.
 
     :::image type="content" source="../media/select-phone.png" alt-text="Screenshot of specifying app name and selecting create." lightbox="../media/select-phone.png":::
 
@@ -28,17 +28,15 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
     :::image type="content" source="../media/share-point-connectors.png" alt-text="Screenshot of select add data and sharepoint option." lightbox="../media/share-point-connectors.png":::
 
-4. In the previous exercise, a connection was already created. Select the created connection to add the data to your application successfully.
-
-5. Select the **SharePoint site**, created under the name *Easy Sales*.
+4. In the previous exercise, a connection was already created. Select the created connection to add the data to your application. Select the **SharePoint site**, created under the name *Easy Sales*.
 
     :::image type="content" source="../media/select-easy-sales.png" alt-text="Screenshot of select Easy Sales." lightbox="../media/select-easy-sales.png":::
 
-6. On selecting the **Easy Sales** SharePoint site, all the lists created on that site are displayed. Next, select all the SharePoint lists created concerning the application and click on **Connect**.
+5. On selecting the **Easy Sales** SharePoint site, all the lists created on that site are displayed. Next, select all the SharePoint lists created concerning the application and click on **Connect**.
 
     :::image type="content" source="../media/select-lists.png" alt-text="Screenshot of selecting lists." lightbox="../media/select-lists.png":::
 
-7. All the required data is connected and ready to use in the application. In the upper-right corner of the **Data** pane, close it by selecting the close icon **(X)**.
+6. All the required data is connected and ready to use in the application. In the upper-right corner of the **Data** pane, close it by selecting the close icon **(X)**.
 
 ## Create the splash screen
 
