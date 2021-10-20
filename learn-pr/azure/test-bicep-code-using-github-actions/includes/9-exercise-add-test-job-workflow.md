@@ -46,8 +46,9 @@ Now, you can add a smoke test job that runs your tests.
 
    :::code language="yaml" source="code/9-workflow.yml" range="77-90" :::
 
-   This code defines the job and a step to checkout the code and a step to run tests with Pester. 
-   We also indicate in this job that is dependent on the **deploy** job by using the `needs` property. As well as controlling the sequence of the job execution, this also allows you to use the output of this job when you run the test script.
+   This code defines the job. The job contains a step to check out the code, and a step to run tests by using Pester.
+   
+   We also indicate in this job that is dependent on the **deploy** job by using the `needs` property. In addition to controlling the sequence of the job execution, this also allows you to use the output of this job when you run the test script.
 
    > [!NOTE]
    > PowerShell and Pester are both preinstalled on GitHub-hosted runners. You don't need to do anything special to use them in a script step.
@@ -76,7 +77,7 @@ Now, you can add a smoke test job that runs your tests.
 
 1. Select the most recent run of your workflow.
 
-   Wait until the workflow completes the **lint**, **validate**, and **preview** jobs. Although GitHub Action workflows automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   Wait until the workflow completes the **lint**, **validate**, and **preview** jobs. Although GitHub Actions automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
 1. Select the **Review deployments** button, select the **Website** environment and select **Approve and deploy**.
 

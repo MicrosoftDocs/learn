@@ -44,21 +44,21 @@ After you create an environment you can reference it in any jobs in your workflo
 
 ## Environment protection rules
 
-After you create an environment, you can define *protection rules*. Protection rules are used to verify conditions that must be met before a job can use the environment. The *required reviewers* protection rule is a type of check that requires a human to provide a manual approval.
+After you create an environment, you can define *protection rules*. Protection rules are used to verify conditions that must be met before a step can use the environment. The *required reviewers* protection rule is a type of check that requires a human to provide a manual approval.
 
-Protection rules are defined on the environment, not the workflow. Authors of the workflow YAML file can't remove or add these protection rules. Only the administrators of an repository or the account owner can manage environments and their protection rules. 
+Protection rules are defined on the environment, not the workflow. Authors of the workflow YAML file can't remove or add these protection rules. Only the administrators of a repository or the account owner can manage environments and their protection rules. 
 
 Environment protection rules help to ensure that the right people are involved in the deployment process.
 
 ### How do environment protection rules work?
 
-Environment protection rules are evaluated just before a workflow job begins. When a workflows is about to run a job that is linked to an environment, it looks at the protection rules that are defined on the environment. The job only runs if if all of these rules are satisfied.
+When you associate an environment with a step, the environment's protection rules are evaluated just before the step begins.
 
-An required reviewer is one type of protection rule. When you configure an required reviewer protection rule, you assign one or more users who need to approve the continuation of your workflow.
+A required reviewer is one type of protection rule. When you configure a required reviewer protection rule, you assign one or more GitHub users who need to approve the continuation of your workflow.
 
-Environments provide other types of protection rules, too. For example, you can  restrict the Git branches that can be deployed to specific environments. We discuss only the required reviewers rule in this module, but we provide links to more information about other protection rules in the summary.
+Environments provide other types of protection rules, too. For example, you can restrict the Git branches that can be deployed to specific environments. We discuss only the required reviewers rule in this module, but we provide links to more information about other protection rules in the summary.
 
-After your workflow begins and reaches a step that requires an reviewer, the workflow run pauses. All of the users who have been designated as reviewers are sent a message in GitHub and by email.
+After your workflow begins and reaches a step that requires a reviewer, the workflow run pauses. All of the users who have been designated as reviewers are sent a message in GitHub and by email.
 
 Reviewers can inspect the workflow logs, such as the changes that the what-if operation detects. Based on this information, they then approve or reject the change. If they approve the change, the workflow resumes. If they reject, or if they don't respond within the timeout period, the job fails.
 
@@ -66,7 +66,7 @@ Reviewers can inspect the workflow logs, such as the changes that the what-if op
 
 ## The importance of good practices
 
-The environments feature in GitHub gives you the ability to link your jobs to an environment, and then the deployment inherits the protection rules defined by the administrator of the environment. However, there's nothing to require that new workflows use environments. 
+The environments feature in GitHub gives you the ability to link your deployments to an environment, and then the deployment inherits the protection rules defined by the administrator of the environment. However, there's nothing to require that new workflows use environments.
 
 It's important that you and your organization establish good practices to review your workflow definitions. An example is configuring your repository to require pull request reviews on any changes to your *main* branch by using branch protection rules. You'll learn more about this in a future module.
 

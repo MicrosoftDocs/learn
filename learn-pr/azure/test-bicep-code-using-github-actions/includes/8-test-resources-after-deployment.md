@@ -40,13 +40,11 @@ When you divide your workflow into multiple jobs, each with its own responsibili
 
 Your Bicep file deploys the resources, so it can access the resource properties and publish them as deployment outputs. When you run your Bicep deployment through the `arm-deploy` action, this action will store these Bicep deployment outputs in its step outputs. Next, the job holding the `arm-deploy` action can now publish these step outputs as job outputs. It does this by referencing the step's `id` property, which we set to `deploy`:
 
-:::code language="yaml" source="code/8-output-variable.yml" range="58-77" highlight="5-6, 14, " :::
+:::code language="yaml" source="code/8-output-variable.yml" range="58-77" highlight="5-6, 14" :::
 
-You can access a job output in your workflow in any subsequent job that is depending on the job that produces the output. It does this again by referencing the previous job by its id. 
+You can access a job's output in any subsequent job, as long as it depends on the job that produces the output:
 
-:::code language="yaml" source="code/8-output-variable.yml" range="79-92" :::
-
-Do note that for you to be able to use outputs on jobs, the `need` dependency between the jobs is mandatory. 
+:::code language="yaml" source="code/8-output-variable.yml" range="79-92" highlight="3, 9" :::
 
 You can also pass outputs from a workflow script by using a special syntax. We link to more information in the summary. 
 

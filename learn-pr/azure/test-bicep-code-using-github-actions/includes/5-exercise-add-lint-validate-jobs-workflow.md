@@ -88,7 +88,7 @@ When you use custom linter configuration, Bicep writes log data that GitHub Acti
 
 1. In your browser, go to **Actions**.
 
-   The first run of your workflow, labelled *Initial commit*, is shown as a failure. GitHub automatically ran the workflow when you created the repository. It failed because the secrets weren't ready at that time. You can ignore this failure.
+   The first run of your workflow, labeled *Initial commit*, is shown as a failure. GitHub automatically ran the workflow when you created the repository. It failed because the secrets weren't ready at that time. You can ignore this failure.
 
 1. Select the most recent run of your workflow.
 

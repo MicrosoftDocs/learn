@@ -19,7 +19,7 @@ Here, you add a new job to your workflow that runs the what-if operation.
 
    :::code language="yaml" source="code/7-workflow.yml" range="37-53" :::
 
-   Notice that we make the **preview** job dependant on the **validate** and **lint** jobs. 
+   Notice that the **preview** job depends on the successful completion of the **validate** and **lint** jobs.
 
 1. Update the **deploy** job to make it depend on the **preview** job:
 
@@ -43,7 +43,7 @@ Here, you add a new job to your workflow that runs the what-if operation.
 
 ## Add required reviewer protection rule to the environment
 
-1. In the next screen check the **Required reviewers** box. And fill out your own GitHub username. 
+1. Select the **Required reviewers** box. Add your own GitHub username to the reviewer list.
 
    :::image type="content" source="../media/7-add-reviewers.png" alt-text="Screenshot of the GitHub interface that shows the Website environment, with the required reviewers checkbox and textbox highlighted.":::
 
