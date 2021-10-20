@@ -47,6 +47,6 @@ quiz:
     - content: "Browser security."
       isCorrect: false
       explanation: "That's incorrect. Browser security is based on the application of security policies to prevent cyberattacks."
-    - content: "Multi-factor authentication"
+    - content: "Multifactor authentication"
       isCorrect: true
-      explanation: "That's correct. Multi-factor authentication works by requiring a user to provide multiple forms of identification to verify that they are, in fact, who they claim to be."
+      explanation: "That's correct. Multifactor authentication works by requiring a user to provide multiple forms of identification to verify that they are, in fact, who they claim to be."
