@@ -1,5 +1,3 @@
-## UI/UX components in power apps
-
 In Microsoft Power Apps, users can plan and build a business application using components rather than writing code in a traditional programming language like C#. Instead, users can design applications by dragging and dropping components into a canvas, just as they would design a slide in PowerPoint. Make Excel-like experience for indicating logic and working with data. Create apps that combine business data from several Microsoft and third-party sources. Share the app so that users can run it in a browser or on a mobile device, and embed your app so they can run it in SharePoint, Power BI, or Teams.
 
 ## Controls and properties in canvas apps
@@ -53,7 +51,3 @@ The View in MR allows the users to place any 3D object in the real world and can
 
      For example, say you had a model with an Object height of 8, an Object width of 5, and an Object depth of 3. You set Object height to 24, and Object width to 10, leave Object depth unchanged. The height has increased by a factor of 3, the width has increased by a factor of 2 -average of these two measurements to come to 2.5 and then scale the depth by that amount. The final scaled model would have an Object height of 24, Object width of 10, and Object depth of 7.25
   * If all three dimensions are set, we match the size of the model to what you specify.
-
-
-
-
