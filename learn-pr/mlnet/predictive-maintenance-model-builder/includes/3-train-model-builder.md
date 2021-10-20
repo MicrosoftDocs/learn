@@ -86,16 +86,13 @@ Now that you've selected the data classification, it's time to choose the enviro
 
 Model Builder supports the following environment options:
 
-| Scenario | Compute | CPU | GPU |
-| --- | --- | --- |
-| Data classification | Local | X | |
-| Value prediction | Local | X | |
-| Image classification | Local, Azure | X | X |
-| Recommendation | Local | X | |
-| Object detection | Azure | | X |
-
-> [!NOTE]
-> For image classification scenarios, GPU training is supported in local and Azure environments.
+| Scenario | Local CPU | Local GPU | Azure GPU |
+| --- | --- | --- | --- |
+| Data classification | <span>&check;</span> | X | X |
+| Value prediction | <span>&check;</span> | X | X |
+| Recommendation | <span>&check;</span> | X | X |
+| Image classification | <span>&check;</span> | <span>&check;</span> | <span>&check;</span> |
+| Object detection | X | X | <span>&check;</span> |
 
 Depending on your use case, there are various reasons why you might choose a local or Azure environment.
 
