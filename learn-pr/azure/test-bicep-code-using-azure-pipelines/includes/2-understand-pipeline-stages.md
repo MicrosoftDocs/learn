@@ -88,7 +88,9 @@ A typical Bicep deployment pipeline contains several stages. As the pipeline mov
 
 Your organization might have a different sequence of stages, or you might need to integrate your Bicep deployments into a pipeline that deploys other components. After you understand how the stages work, you can design a pipeline to suit your needs.
 
-Throughout this module, you'll learn more about these stages and progressively build a pipeline that includes each stage. You'll also learn:
+Every job executes on a new agent. This also means that every job will start from a clean environment. So, in every job you typically need to check out the source code as your first step.
+
+Throughout this module, you'll learn more about the stages listed here, and you'll progressively build a pipeline that includes each stage. You'll also learn:
 
 - How pipelines stop the deployment process if anything unexpected happens in any of the previous stages.
 - How to configure your pipeline to pause until you manually verify what happened in a previous stage.
