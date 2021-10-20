@@ -35,7 +35,7 @@ After you've created a set of modules, you can compose them together. For exampl
 
 ### Functionality
 
-Occasionally, you might need to use modules to access certain functionality. For example, suppose you submit a subscription-scoped deployment and want to also deploy some resources to a resource group in the same deployment. You need to use a module when you define the resources that should be deployed to the resource group. Or, if you want to deploy multiple copies of a set of resources, you can use a module loop.
+Occasionally, you might need to use modules to access certain functionality. For example, you can use modules and loops together to deploy multiple sets of resources. You can also use modules to deploy resources at different scopes in a single deployment.
 
 ## Create a module
 
@@ -117,11 +117,11 @@ When you deploy a Bicep file by using the Azure CLI or Azure PowerShell, you can
 
 When you use modules, Bicep creates a separate deployment for every module. The `name` property that you specify for the module becomes the name of the deployment. When you deploy a Bicep file that contains a module, multiple deployment resources are created: one for the parent template and one for each module.
 
-For example, suppose you create a Bicep file named *main.bicep*. It defines a module named `myApp`. When you deploy the *main.bicep* file, two deployments are created. The first one is named `main`, and it creates another deployment named `app` that contains your application resources.
+For example, suppose you create a Bicep file named *main.bicep*. It defines a module named `myApp`. When you deploy the *main.bicep* file, two deployments are created. The first one is named `main`, and it creates another deployment named `myApp` that contains your application resources.
 
 :::image type="content" source="../media/2-deployments.png" alt-text="Diagram that shows two Bicep files, each of which has a separate deployment name." border="false":::
 
-You can list and view the details of deployment resources to monitor the status of your Bicep deployments, or to view history of deployments. However, when you reuse the same name for a deployment, Azure overwrites the last deployment with the same name. If you need to maintain the deployment history, ensure that you use a unique name for every deployment, including every time you deploy a module. You'll see how to do this in the exercise.
+You can list and view the details of deployment resources to monitor the status of your Bicep deployments, or to view history of deployments. However, when you reuse the same name for a deployment, Azure overwrites the last deployment with the same name. If you need to maintain the deployment history, ensure that you use a unique name for every deployment. You might include the date and time of the deployment in the name to help make it unique. You'll see how to do this in the exercise.
 
 ### Generated JSON ARM templates
 
