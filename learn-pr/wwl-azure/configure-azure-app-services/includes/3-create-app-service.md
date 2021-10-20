@@ -19,5 +19,5 @@ Once your app service is created, additional configuration information is availa
 Certain configuration settings can be included in the developer's code or configurated in the app service. Here are a few interesting settings.
 
  -  **Always On**. Keep the app loaded even when there's no traffic. It's required for continuous WebJobs or for WebJobs that are triggered using a CRON expression.
- -  **ARR affinity**. In a multi-instance deployment, ensure that the client is routed to the same instance for the life of the session. You can set this option to Off for stateless application,
+ -  **ARR affinity**. In a multi-instance deployment, ensure that the client is routed to the same instance for the life of the session.
  -  **Connection strings**. Connection strings are encrypted at rest and transmitted over an encrypted channel.
