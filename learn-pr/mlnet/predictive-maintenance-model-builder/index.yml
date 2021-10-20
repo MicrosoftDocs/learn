@@ -12,10 +12,10 @@ metadata:
 title: Train a predictive maintenance machine learning model with ML.NET Model Builder
 summary: "Train a machine learning model in Visual Studio with ML.NET using Model Builder that uses sensor data to detect whether a manufacturing device is broken."
 abstract: |
-  By the end of this module, you'll be able to:
-  - Learn what Model Builder is
-  - Train a machine learning model using Model Builder
-  - Consume a machine learning model using Model Builder
+  By the end of this module, you'll know:
+  - What Model Builder is and what problems you can solve with it
+  - How to train a machine learning model using Model Builder
+  - How to consume a machine learning model using Model Builder
 prerequisites: |
   > [!NOTE]
   > Visual Studio 2022 is currently in preview.

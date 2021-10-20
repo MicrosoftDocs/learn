@@ -1,10 +1,10 @@
-You work for a manufacturing company that uses industrial machines as part of its operations. When one of these machines breaks, it costs your company time and money. That's why performing maintenance on these machines is important.
+You work for a manufacturing company that uses industrial devices and equipment as part of its operations. When one of these devices breaks, it costs your company time and money. That's why performing maintenance on these devices is important.
 
 ## Scenario: Predictive maintenance
 
-There are many different factors like usage that affect the need for maintenance and no one machine is the same. Being proactive with maintenance can help minimize the time and money your company spends when a machine breaks. Up to this point, you've been manually keeping track of which machines require maintenance. As your company expands, this process becomes more difficult to manage.
+There are many different factors like usage that affect the need for maintenance and no one device is the same. Being proactive with maintenance can help minimize the time and money your company spends when a device breaks. Up to this point, you've been manually keeping track of which devices require maintenance. As your company expands, this process becomes more difficult to manage.
 
-What if you could automate predicting when a machine is going to need maintenance using sensor data?
+What if you could automate predicting when a device is going to need maintenance using sensor data?
 
 Machine learning may be able to help analyze historical data from these sensors and learn patterns to help you predict whether a machine needs maintenance or not.
 
