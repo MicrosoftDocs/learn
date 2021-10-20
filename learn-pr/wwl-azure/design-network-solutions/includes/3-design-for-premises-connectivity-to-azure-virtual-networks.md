@@ -42,7 +42,6 @@ This architecture is suitable for hybrid applications running large-scale, missi
 
 - May allow your organization direct access to national clouds, depending on the connectivity provider.
 
-- 99.9% availability SLA across the entire connection.
 
 ### Challenges
 
