@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.power-apps
+uid: learn.azure.power-apps-tutorial
 metadata:
   title: Build an application using Power Apps
   description: By the end of this module, you'll be able to build an application that includes mixed reality components using Power Apps.
@@ -32,15 +32,15 @@ prerequisites: |
   - Mixed reality supported mobile device.
   
 units: 
-- learn.azure.power-apps.1-introduction
-- learn.azure.power-apps.2-add-data-source
-- learn.azure.power-apps.3-exercise-add-data-source
-- learn.azure.power-apps.4-view-in-mr
-- learn.azure.power-apps.5-exercise-view-in-mr
-- learn.azure.power-apps.6-measure-in-mr
-- learn.azure.power-apps.7-exercise-measure-in-mr
-- learn.azure.power-apps.8-knowledge-check
-- learn.azure.power-apps.9-summary
+- learn.azure.power-apps-tutorial.1-introduction
+- learn.azure.power-apps-tutorial.2-add-data-source
+- learn.azure.power-apps-tutorial.3-exercise-add-data-source
+- learn.azure.power-apps-tutorial.4-view-in-mr
+- learn.azure.power-apps-tutorial.5-exercise-view-in-mr
+- learn.azure.power-apps-tutorial.6-measure-in-mr
+- learn.azure.power-apps-tutorial.7-exercise-measure-in-mr
+- learn.azure.power-apps-tutorial.8-knowledge-check
+- learn.azure.power-apps-tutorial.9-summary
 
 badge:
   uid: learn.azure.power-apps.badge

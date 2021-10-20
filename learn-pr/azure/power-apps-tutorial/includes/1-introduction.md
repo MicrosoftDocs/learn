@@ -1,4 +1,4 @@
-Power apps are organizational-specific applications or tools that allow you to create custom applications, using many features, including a data platform that provides a flexible development environment to build custom apps for your business.
+Power Apps are organizational-specific applications or tools that allow you to create custom applications, using many features, including a data platform that provides a flexible development environment to build custom apps for your business.
 
 Applications built with Power Apps offer great business logic to transform your manual business functions into automated processes. Also, these applications can be accessed via mobile devices or the browser, enabling users to create custom apps without writing code.
 
