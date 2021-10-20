@@ -3,7 +3,7 @@ uid: learn.wwl.create-manage-azure-sentinel-workspaces
 metadata:
   title: Create and manage Azure Sentinel workspaces
   description: "Create and manage Azure Sentinel workspaces"
-  ms.date: 07/12/2021
+  ms.date: 10/20/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -29,9 +29,9 @@ units:
 - learn.wwl.create-manage-azure-sentinel-workspaces.introduction
 - learn.wwl.create-manage-azure-sentinel-workspaces.plan-for-workspace
 - learn.wwl.create-manage-azure-sentinel-workspaces.create-workspace
+- learn.wwl.create-manage-azure-sentinel-workspaces.manage-workspaces-across-tenants-using-azure-lighthouse
 - learn.wwl.create-manage-azure-sentinel-workspaces.understand-permissions-roles
 - learn.wwl.create-manage-azure-sentinel-workspaces.settings
-- learn.wwl.create-manage-azure-sentinel-workspaces.manage-workspaces-across-tenants-using-azure-lighthouse
 - learn.wwl.create-manage-azure-sentinel-workspaces.knowledge-check
 - learn.wwl.create-manage-azure-sentinel-workspaces.summary-resources
 badge:
