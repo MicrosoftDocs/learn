@@ -13,7 +13,7 @@ Since you're starting from scratch, create a new C# class library project to add
 1. In the Create a new project dialog, type "class library" into the search bar.
 1. Select **Class Library** from the list of options. Make sure that the language is C# and select **Next**.
 
-    :::image type="content" source="../media/create-class-library-project.png" alt-text="Create class library project":::
+    :::image type="content" source="../media/create-class-library-project.png" alt-text="Create class library project" lightbox="../media/create-class-library-project.png":::
 
 1. In the Project name text box, type "PredictiveMaintenance". Leave the defaults for all other fields and select **Next**
 1. Select **.NET 6.0 (Preview)** from the Framework dropdown and select **Create** to scaffold your C# class library.
@@ -25,12 +25,12 @@ Once your class library project opens in Visual Studio, it's time to add machine
 1. In Visual Studio's solution explorer, right-click your project.
 1. Select **Add > Machine Learning Model...**.
 
-    :::image type="content" source="../media/add-machine-learning-model.png" alt-text="Add machine learning model to project":::
+    :::image type="content" source="../media/add-machine-learning-model.png" alt-text="Add machine learning model to project" lightbox="../media/add-machine-learning-model.png":::
 
 1. From the list of new items in the Add New Item dialog, select **Machine Learning Model (ML.NET)**.
 1. In the Name text box, use the name "PredictiveMaintenanceModel.mbconfig" for your model and select **Add**.
 
-    :::image type="content" source="../media/add-new-mbconfig-item.png" alt-text="Create new MBConfig item":::
+    :::image type="content" source="../media/add-new-mbconfig-item.png" alt-text="Create new MBConfig item" lightbox="../media/add-new-mbconfig-item.png":::
 
 After a few seconds, a file called *PredictiveMaintenanceModel.mbconfig* is added to your project.
 
@@ -44,7 +44,7 @@ For your use case, you're trying to determine whether a machine is broken or not
 
 In the Scenario step of the Model Builder screen, select the **Data classification** scenario. Once you've selected this scenario, you're immediately advanced to the Environment screen.
 
-:::image type="content" source="../media/choose-scenario.png" alt-text="Choose data classification scenario":::
+:::image type="content" source="../media/choose-scenario.png" alt-text="Choose data classification scenario" lightbox="../media/choose-scenario.png":::
 
 ## Choose your environment
 
@@ -53,7 +53,7 @@ For data classification scenarios, only local environments that use your CPU are
 1. In the Environment step of the Model Builder screen, **Local (CPU)** is selected by default. Leave the default environment selected.
 1. Select **Next step**.
 
-:::image type="content" source="../media/choose-environment.png" alt-text="Choose local compute training environment":::
+:::image type="content" source="../media/choose-environment.png" alt-text="Choose local compute training environment" lightbox="../media/choose-environment.png":::
 
 ## Load and prepare your data
 
@@ -79,7 +79,7 @@ Select the **Browse** button and use the file explorer to provide the location o
 
 Choose **Machine failure** from the Column to predict (Label) dropdown
 
-:::image type="content" source="../media/load-training-data.png" alt-text="Load predictive maintenance csv file dataset":::
+:::image type="content" source="../media/load-training-data.png" alt-text="Load predictive maintenance csv file dataset" lightbox="../media/load-training-data.png":::
 
 ### Advanced data options
 
@@ -88,7 +88,7 @@ By default, all columns that are not the label are used as features. As previous
 1. Select **Advanced data options...**.
 1. In the Advanced data options dialog, select the **Column settings** tab.
 
-    :::image type="content" source="../media/configure-advanced-data-options.png" alt-text="Configure advanced data options for predictive maintenance dataset":::
+    :::image type="content" source="../media/configure-advanced-data-options.png" alt-text="Configure advanced data options for predictive maintenance dataset" lightbox="../media/configure-advanced-data-options.png":::
 
 1. Configure the column settings as follows:
 
@@ -123,7 +123,7 @@ Model Builder automatically sets how long you should train for based on the size
 
 ### Tracking the training process
 
-:::image type="content" source="../media/train-machine-learning-model.png" alt-text="Train predictive maintenance classificaiton model":::
+:::image type="content" source="../media/train-machine-learning-model.png" alt-text="Train predictive maintenance classificaiton model" lightbox="../media/train-machine-learning-model.png":::
 
 Once the training process kicks off, Model Builder explores various models. Your training process is tracked in the Training results and in the Visual Studio output window. The training results provide information about the best model that's been found throughout the training process and the output window provides detailed information like the name of the algorithm used, how long it took to train, and the performance metrics for that model. You may see the same algorithm name appear multiple times. This happens because in addition to trying different algorithms, Model Builder is also trying different hyperparameter configurations for those algorithms. Therefore it's normal to see the same algorithm appear multiple times.
 
@@ -141,7 +141,7 @@ The Evaluate step in the Model Builder screen allows you to inspect the evaluati
 
 In the test your model section of the evaluate step, you can provide new data and evaluate the results of your prediction.
 
-:::image type="content" source="../media/evaluate-machine-learning-model.png" alt-text="Make predictions with your trained model":::
+:::image type="content" source="../media/evaluate-machine-learning-model.png" alt-text="Make predictions with your trained model" lightbox="../media/evaluate-machine-learning-model.png":::
 
 The sample data section is where you provide input data for your model to make predictions. Each field corresponds to the columns used to train your model. This is a convenient way to verify that the model behaves as expected. By default, Model Builder prepopulates with the first row from your dataset.
 
