@@ -4,6 +4,10 @@ In this unit, you'll build and run the Docker image. As mentioned earlier, a run
 
 Now that you have successfully constructed a Dockerfile, you can instruct Docker to build a Docker image for you.
 
+> [!NOTE]
+> Ensure your Docker runtime is configured to build Linux containers. This is important as the Dockerfile being used references container images (JDK/JRE) for the Linux architecture.
+
+
 ```docker build``` is the command used to build Docker images. The ```-t``` argument will be used to specify a container label and the ```.``` is the location for Docker to find the Dockerfile. Run the following command in your CLI:
 
 ```bash

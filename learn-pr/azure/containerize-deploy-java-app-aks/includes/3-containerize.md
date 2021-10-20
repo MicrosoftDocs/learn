@@ -2,7 +2,7 @@ In this unit, you'll containerize a Java application.
 
 As mentioned earlier, containers run directly on top of the host operating system, kernel and hardware, as essentially just another process. Because of this, containers require less system resources, resulting in a smaller footprint with substantially less overhead, faster application startup times, and a great use case for scaling on demand.
 
-There are multiple container runtimes. In this module, you’ll leverage the widely used Docker runtime to build a Docker image that will ultimately, in the next unit, deploy to the host operating system of your local machine and within the Azure Kubernetes Service.
+There are multiple container runtimes that are used to build both Windows containers and Linux containers. In this module, you’ll leverage the widely used Docker runtime to build a Docker image that will ultimately, in the next unit, deploy as a Linux container to the host operating system of your local machine and then within the Azure Kubernetes Service.
 
 ## Docker overview
 
