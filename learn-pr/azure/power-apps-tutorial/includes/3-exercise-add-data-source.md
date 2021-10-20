@@ -10,9 +10,9 @@ We will be using SharePoint as our primary data source for this application. You
 
     :::image type="content" source="../media/create-site.png" alt-text="Screenshot showing to create site on the sharePoint start page." lightbox="../media/create-site.png":::
 
-3. In the wizard:
+3.  On the SharePoint start page, you'll be asked for the following information:
 
-    * Select whether you'd like to create a **Communication site**.
+    * It'll ask you to choose a site type, either "communication site" or "Team site." Select **Communication site**.
 
     * Enter a suitable name for the site, for example, *Easy Sales*
 
@@ -57,13 +57,13 @@ For our **Easy Sales** application, we will create separate lists for each produ
 
 ## Add data to your SharePoint list
 
-Once the list is created, it's time to add the data to it. Here data means the product details of a particular product. The product details include the following information: Name, Image, Price, Dimensions, Weight, Color, PrimaryMaterial, Area, Height, and a 3D model/image of the product to be viewed in Mixed Reality.
+Once the list is created, it's time to add the data to it. Here data means the details of a particular product. The product details include the following information: Name, Image, Price, Dimensions, Weight, Color, PrimaryMaterial, Area, Height, and a 3D model/image of the product to be viewed in Mixed Reality.
 
-1. When your *Easy sales - Sofas* list opens, select **+ Add column**, and create the following columns with the specified column type. The below list shows the columns that need to be created with their name and type in this format *Name of the Column - Column type*.
+1. When your *Easy sales - Sofas* list opens, select **+ Add column**, and create the following columns with the specified column type using the dropdown and name the column.
 
      :::image type="content" source="../media/add-column.png" alt-text="Screenshot of select Add Column." lightbox="../media/add-column.png":::
 
-     Select the **Column type**.
+    The below list shows the columns that need to be created with their name and type in this format *Name of the Column - Column type*.
 
      :::image type="content" source="../media/column-type.png" alt-text="Screenshot of select Single line of text." lightbox="../media/column-type.png":::
 

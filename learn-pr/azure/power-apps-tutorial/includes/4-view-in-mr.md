@@ -1,6 +1,29 @@
-The View in MR is one of the chief features included in the application. It allows the application user to view images and 3D models in the natural world environment. The user can access it by clicking on the button; it overlays a selected 3D model or image onto the device's live camera feed.
+## UI/UX components in power apps
 
-3D content must be in the .glb file format and the image must be in .jpg or .png format. Also, you can convert the 3D models into .glb file format from various 3D formats. The MR components in Power Apps uses Babylon React Native.
+In Microsoft Power Apps, users can plan and build a business application using components rather than writing code in a traditional programming language like C#. Instead, users can design applications by dragging and dropping components into a canvas, just as they would design a slide in PowerPoint. Make Excel-like experience for indicating logic and working with data. Create apps that combine business data from several Microsoft and third-party sources. Share the app so that users can run it in a browser or on a mobile device, and embed your app so they can run it in SharePoint, Power BI, or Teams.
+
+## Controls and properties in canvas apps
+
+* **Buttons** - Associate with the application by clicking or tapping.
+* **Gallery** - Show a list of records that contain different sorts of data.
+* **Drop down** - Shows the first item in a rundown until a chevron is selected.
+* **Image** -  Show a picture from, for instance, a file or a data source.
+* **Camera** -  Take and save photographs in the app or to a data source.
+
+## Gallery control
+
+A **Gallery** control can display multiple records from a data source, and each record can contain multiple types of data. For example, you can use **Gallery** control to show multiple products. Each item shows product details that include a name, an image, price, and, so on for each product.
+
+Each data field is displayed in a separate control within the Gallery control. And you can configure these controls in your template. Any changes you make to the template will be reflected throughout the gallery control. Predefined templates are available for displaying images and text in a gallery and a gallery for items with varying heights.
+
+> [!Important]
+> If a user scrolls the **Flexible height** gallery control before all items are loaded, the item that's currently in view may be pushed down and out of view when the data loading is finished. To avoid this issue, use a standard **Gallery** control instead of the **Flexible height** variant.
+
+## View in MR
+
+The View in MR is one of the chief features included in the application. It allows the user to view images and 3D models in the natural world environment. The user can access it by clicking on the button; it overlays a selected 3D model or image onto the device's live camera feed.
+
+3D content must be in the .glb file format and the image must be in .jpg or .png format. The MR components in Power Apps uses Babylon React Native.
 
 The View in MR allows the users to place any 3D object in the real world and can view, estimate, and verify the selected product before committing or purchasing.
 
@@ -31,23 +54,6 @@ The View in MR allows the users to place any 3D object in the real world and can
      For example, say you had a model with an Object height of 8, an Object width of 5, and an Object depth of 3. You set Object height to 24, and Object width to 10, leave Object depth unchanged. The height has increased by a factor of 3, the width has increased by a factor of 2 -average of these two measurements to come to 2.5 and then scale the depth by that amount. The final scaled model would have an Object height of 24, Object width of 10, and Object depth of 7.25
   * If all three dimensions are set, we match the size of the model to what you specify.
 
-## Gallery control
 
-A **Gallery** control can display multiple records from a data source, and each record can contain multiple types of data. For example, you can use **Gallery** control to show multiple products. Each item shows product details that include a name, an image, price, and, so on for each product.
 
-Each data field is displayed in a separate control within the Gallery control. And you can configure these controls in your template. Any changes you make to the template will be reflected throughout the gallery control. Predefined templates are available for displaying images and text in a gallery and a gallery for items with varying heights.
 
-> [!Important]
-> If a user scrolls the **Flexible height** gallery control before all items are loaded, the item that's currently in view may be pushed down and out of view when the data loading is finished. To avoid this issue, use a standard **Gallery** control instead of the **Flexible height** variant.
-
-## UI/UX components in power apps
-
-In Microsoft Power Apps, users can plan and build a business application using components rather than writing code in a traditional programming language like C#. Instead, users can design applications by dragging and dropping components into a canvas, just as they would design a slide in PowerPoint. Make Excel-like experience for indicating logic and working with data. Create apps that combine business data from several Microsoft and third-party sources. Share the app so that users can run it in a browser or on a mobile device, and embed your app so they can run it in SharePoint, Power BI, or Teams.
-
-## Controls and properties in canvas apps
-
-* **Buttons** - Associate with the application by clicking or tapping.
-* **Gallery** - Show a list of records that contain different sorts of data.
-* **Drop down** - Shows the first item in a rundown until a chevron is selected.
-* **Image** -  Show a picture from, for instance, a file or a data source.
-* **Camera** -  Take and save photographs in the app or to a data source.
