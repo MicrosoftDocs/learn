@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ha-sap-netweaver-anydb.examine-multi-sid-3-tier-high-availability-anydb-deployment
+title: Examine multi-SID 3-tier SAP NetWeaver high availability AnyDB deployment
+metadata:
+  title: Examine multi-SID 3-tier SAP NetWeaver high availability AnyDB deployment
+  description: "Examine multi-SID 3-tier SAP NetWeaver high availability AnyDB deployment"
+  ms.date: 10/18/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-examine-multi-sid-3-tier-sap-netweaver-high-availability-anydb-deployment.md)]
