@@ -63,7 +63,6 @@ Because Eve doesn’t know Monica’s private key, she has no way of decrypting 
 
 Given the nature of asymmetric encryption, even if you know the public key, it's impossible to discover the private key.
 
-### VIDEO showing how asymmetric keys work
 
 In this short 2-minute video, we'll demonstrate how symmetric and asymmetric encryption work and how they protect your documents from being read by unauthorized people.
 
