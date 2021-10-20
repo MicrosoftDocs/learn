@@ -21,22 +21,22 @@ quiz:
           explanation: Windows Mixed Reality is a mixed reality platform introduced as part of the Windows 10 operating system, which provides augmented reality and mixed reality experiences with compatible head-mounted displays.
         - content: "HoloLens and Oculus Quest"
           isCorrect: false
-          explanation: HoloLens are a pair of mixed reality smart glasses developed and manufactured by Microsoft and Oculus, it is a standalone device that can run games and software wirelessly under an Android-based operating system.
+          explanation: HoloLens is a pair of mixed reality smart glasses developed and manufactured by Microsoft and Oculus. It is a standalone device that can run games and software wirelessly under an Android-based operating system.
         - content: "All of the above"
           isCorrect: true
           explanation: StereoKit supports all OpenXR platforms.
     - content: "Which of the following StereoKit features is incorrect?"
       choices:
-        - content: "Assets are loaded at compilation time"
+        - content: "Assets are loaded at compilation time."
           isCorrect: true
           explanation: Assets are loaded at Runtime not at compilation.
-        - content: "StereoKit by default uses a flexible shader or material system with built-in PBR"
+        - content: "StereoKit by default uses a flexible shader or material system with built-in PBR."
           isCorrect: false
-          explanation: StereoKit by default supports flexible shader or material system with built-in PBR
-        - content: "StereoKit allows computation to proceed faster"
+          explanation: StereoKit by default supports flexible shader or material system with built-in PBR.
+        - content: "StereoKit allows computation to proceed faster."
           isCorrect: false
           explanation: Because StereoKit enables computation to be performed more quickly.
-    - content: "Select the correct format to store the 3D model "
+    - content: "Select the correct format to store the 3D model."
       choices:
         - content: .tga
           isCorrect: false
@@ -46,7 +46,7 @@ quiz:
           explanation: It is a Texture format used in StereoKit.
         - content: .obj
           isCorrect: true
-          explanation: As it supports Model format.
+          explanation: As it supports the Model format.
     - content: "Which workload is not required to set up a StereoKit Ink application?"
       choices:
         - content: .NET Desktop development.

@@ -1,4 +1,4 @@
-In the previous chapter, you have learned how the StereoKit Ink application is developed and configured. In this chapter, you will learn how to build and test the StereoKit Ink application on HoloLens 2 and Desktop.
+In the previous chapter, you have learned how the StereoKit Ink application is developed and configured. In this chapter, you'll learn how to build and test the StereoKit Ink application on HoloLens 2 and Desktop.
 
 You may encounter errors when opening the Solution Explorer and the C# program file during the build process. To debug the errors, you need to run the initial build solution.
 
@@ -8,12 +8,12 @@ You may encounter errors when opening the Solution Explorer and the C# program f
   
     :::image type="content" source="../media/configuration-solution-platform.png" alt-text="Screenshot shows configuration of solution platform." lightbox="../media/configuration-solution-platform.png":::
 
-2. Connect your HoloLens 2 to your computer, then in the menu bar click on the **Debug** > **Start Debugging**.
+2. Connect your HoloLens 2 to your computer, then in the menu bar, click on the **Debug** > **Start Debugging**.
   Start Debugging automatically starts the application on your device with the Visual Studio debugger attached.
   
    :::image type="content" source="../media/start-debug.png" alt-text="Screenshot shows selectings of Start Debugging." lightbox="../media/start-debug.png":::
 
-3. In the menu bar click on the **Build** > **Deploy Solution** to deploy to your device without having the app start automatically.
+3. In the menu bar, click on the **Build** > **Deploy Solution** to deploy to your device without having the app start automatically.
   
     :::image type="content" source="../media/select-deploy-solution.png" alt-text="Screenshot shows Selecting of Deploy Solution." lightbox="../media/select-deploy-solution.png":::
 
@@ -22,7 +22,7 @@ You may encounter errors when opening the Solution Explorer and the C# program f
 
 ## Build StereoKit Ink application on Desktop
 
-1. To build StereoKit Ink application to Desktop, configure Visual Studio for Desktop by clicking onto "Solution Configuration" ensure the **Debug** and **Any device** is selected.
+1. To build StereoKit Ink application to Desktop, configure Visual Studio for Desktop by clicking on "Solution Configuration" to ensure the **Debug** and **Any device** is selected.
   
     :::image type="content" source="../media/change-solution-configuration.png" alt-text="Screenshot shows changing of Solution configuration." lightbox="../media/change-solution-configuration.png":::
 
@@ -30,7 +30,7 @@ You may encounter errors when opening the Solution Explorer and the C# program f
   
     :::image type="content" source="../media/ensure-project-setup-desktop.png" alt-text="Screenshot shows ensuring of project setup desktop is selected." lightbox="../media/ensure-project-setup-desktop.png":::
 
-3. Then in the menu bar click on the **Debug** > **Start Debugging**.
+3. Then, click on the **Debug** > **Start Debugging** in the menu bar.
   Start Debugging automatically starts the application on your device with the Visual Studio debugger attached.
   
     :::image type="content" source="../media/select-start-debug.png" alt-text="Screenshot shows Selecting of Start Debugging." lightbox="../media/select-start-debug.png":::
