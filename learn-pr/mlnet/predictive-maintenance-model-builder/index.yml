@@ -32,6 +32,8 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - dotnet
 units:
 - learn.predictive-maintenance-model-builder.introduction
+- learn.predictive-maintenance-model-builder.what-is-model-builder
+- learn.predictive-maintenance-model-builder.knowledge-check
 - learn.predictive-maintenance-model-builder.train-model-builder
 - learn.predictive-maintenance-model-builder.exercise-train-model-builder
 - learn.predictive-maintenance-model-builder.consume-model-builder

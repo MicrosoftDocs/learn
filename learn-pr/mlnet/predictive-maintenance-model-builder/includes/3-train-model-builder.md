@@ -1,12 +1,16 @@
-The first step to train a machine learning model is deciding which scenario and machine learning task is the most appropriate to solve it given what you're trying to predict. 
+<!-- INSERT INTRO  -->
 
-## What is a scenario?
+## Choose a scenario
+
+The first step to train a machine learning model is deciding which scenario and machine learning task is the most appropriate to solve it given what you're trying to predict.
+
+### What is a scenario?
 
 A scenario describes the problem you're trying to solve using your data. Some common scenarios include:
 
 - Categorizing data (organize articles by topic)
-- Predicting a numerical value (price of a home)
-- Detecting uncommon behavior (credit card fraud)
+- Predicting a numerical value (estimate the price of a home)
+- Detecting uncommon behavior (detect credit card fraud)
 - Grouping items with similar characteristics (customer segmentation)
 - Recommending items (recommend movies)
 
@@ -32,7 +36,7 @@ For unsupervised tasks, the **label is unknown**. Examples of unsupervised machi
 - Clustering
 - Anomaly detection
 
-## Scenarios in Model Builder
+### Scenarios in Model Builder
 
 Model Builder supports the following scenarios which map to the respective machine learning tasks.
 
@@ -44,17 +48,19 @@ Model Builder supports the following scenarios which map to the respective machi
 | Recommendation | Recommendation | Recommend movies based on the preferences of similar users |
 | Object detection | Object Detection (Deep Learning) | Identify physical damage in an image |
 
-## Predictive maintenance scenario
+### Predictive maintenance scenario
 
 Depending on what your data looks like, the predictive maintenance problem can be modeled using different tasks. For your use case, since the label is a binary value 0 or 1 describing whether a machine is broken or not, the data classification scenario is appropriate.
 
-In this unit, you'll learn about the computing environments supported by Model Builder
+## Choose your environment
 
-## What are compute environments?
+Once you've selected your scenario
 
-Compute environments describe the compute resources you'll use to train your machine learning model.
+### What are environments?
 
-## Which environments are supported in Model Builder?
+Environments describe the compute resources you'll use to train your machine learning model.
+
+### Which environments are supported in Model Builder?
 
 Model Builder supports the following environment options:
 
@@ -70,20 +76,16 @@ Note that for the image classification scenario, GPU training is supported for l
 
 Depending on your use case, there are various reasons why you might choose one over the other.
 
-### Local compute environments
+#### Local environments
 
 Some reasons why you might consider local compute environments include:
 
 - Training locally doesn't cost you anything since you're using your computer's resources.
 - For scenarios where you don't want your data to leave your computer or data center, training locally is a good option.
 
-### Azure compute environments
+#### Azure environments
 
 Scenarios like image classification and object detection are resource intensive. Using a GPU can often speed up the training process. If you don't have a GPU or a computer with enough CPU or RAM, offloading the training process to Azure can lighten the load on your system.
-
-In the next unit, you'll choose the compute environment for your predictive maintenance model.
-
-In this module, you'll learn how to load and prepare data into Model Builder and understand the predictive maintenance dataset used in this module.
 
 ## Loading data into Model Builder
 
@@ -93,7 +95,7 @@ Data is the most important component for building machine learning models. The p
 1. Provide the location of your data
 1. Choose column purpose
 
-## Choose your data source type
+### Choose your data source type
 
 Depending on your scenario, Model Builder supports loading data from the following sources:
 
@@ -102,7 +104,7 @@ Depending on your scenario, Model Builder supports loading data from the followi
 - Images (*.jpg* and *.png*)
 - [Visual Object Tagging Tool (VOTT)](https://github.com/Microsoft/VoTT) for object detection scenarios.
 
-## Provide the location of your data
+### Provide the location of your data
 
 Once you've selected your data source type, you have to provide the location where your dataset is stored. This can be a directory, file path, or database connection string.
 
@@ -116,11 +118,11 @@ When a data source is selected in Model Builder, it parses the data and makes it
 
 Once the data is loaded, Model Builder displays a preview of some of the elements in your dataset.
 
-## Choose column purpose
+### Choose column purpose
 
 Depending on the scenario you choose, you'll have to define the purpose of certain columns. In scenarios like data classification and value prediction, you'll have to choose which of your columns is the column you want to predict (label). By default, all other columns that are not the label are used as features. Features are columns used as inputs to predict the label.
 
-## Advanced data options
+### Advanced data options
 
 In cases where you'd like to customize how your data is loaded, Model Builder provides advanced data options. These advanced data options allow you to customize settings pertaining to your columns and dataset formatting.
 

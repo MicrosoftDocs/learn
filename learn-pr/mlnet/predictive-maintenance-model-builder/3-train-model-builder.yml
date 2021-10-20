@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-dotnet
 durationInMinutes: 12
 content: |
-  [!include[](includes/2-train-model-builder.md)]
+  [!include[](includes/3-train-model-builder.md)]
