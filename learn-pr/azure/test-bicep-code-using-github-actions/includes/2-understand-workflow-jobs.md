@@ -37,7 +37,7 @@ You can even add validation well before your deployment begins. When you work wi
 
 Every workflow contains at least one job, and you can define additional jobs to suit your requirements. Jobs run in parallel by default. With a free GitHub account your workflows can run up to twenty jobs at the same time.
 
-Imagine that you've built a Bicep file that you need to deploy twice: once to infrastructure in the United States and once to infrastructure in Europe. Before you deploy, you validate your Bicep code. Here's an illustration of a multijob workflow that defines this process:
+Imagine that you've built a Bicep file that you need to deploy twice: once to infrastructure in the United States and once to infrastructure in Europe. You also want to validate your Bicep code in your workflow. Here's an illustration of a multijob workflow that defines a similar process:
 
 :::image type="content" source="../media/2-jobs-parallel.png" alt-text="Diagram that shows a workflow with a Validate job, a Deploy U S job, and a Deploy Europe job, running in parallel." border="false":::
 
@@ -49,7 +49,7 @@ Here's how the jobs are defined in a workflow YAML file:
 
 ## Control the sequence of jobs
 
-You can add dependencies between the jobs to change the order. Continuing the previous example, you probably want to validate your code before running both of your deployments in parallel, like this:
+You can add dependencies between the jobs to change the order. Continuing the previous example, you probably want to validate your code *before* running your deployment jobs, like this:
 
 :::image type="content" source="../media/2-jobs-dependson.png" alt-text="Diagram that shows a workflow with a Validate job, a Deploy U S job, and a Deploy Europe job, with the two deployment jobs running in parallel." border="false":::
 
