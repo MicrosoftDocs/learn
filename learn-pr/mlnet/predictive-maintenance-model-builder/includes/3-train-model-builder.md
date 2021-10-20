@@ -1,4 +1,12 @@
-<!-- INSERT INTRO  -->
+Training is the process by which you apply algorithms to historical data in order to create an artifact or model that captures underlying patterns and can be used to make predictions on new data.
+
+The model training process can be further broken down into the following steps:
+
+- **Choose a scenario**. What problem am I trying to solve? The scenario you choose depends on your data and what you're trying to predict.
+- **Choose an environment**. Where do I want to train my model? Depending on available compute resources, cost, privacy requirements, and a series of other factors you may choose to train models locally on your computer or the cloud.
+- **Load your data**. Load the dataset to use for training, define the columns you want to predict, and choose the columns you want to use as inputs for your prediction.
+- **Train your model**. Let AutoML choose the best algorithm for your dataset based on the scenario you've chosen.
+- **Evaluate your model**. Use evaluation metrics to compare how well your model performs and makes predictions on new data.
 
 ## Choose a scenario
 
@@ -54,7 +62,7 @@ Depending on what your data looks like, the predictive maintenance problem can b
 
 ## Choose your environment
 
-Once you've selected your scenario
+
 
 ### What are environments?
 
