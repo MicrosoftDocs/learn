@@ -216,7 +216,7 @@ Next, let's make a small change to the web app files, and then use git to deploy
     git commit -m "New version of web app."
     git push staging
     ```
-    When prompted, enter your deployment password. Notifications of the operations to create and deploy the staging display in the Cloud Shell session, and should display **Deployment succedssful**. 
+    When prompted, enter your deployment password. Notifications of the operations to create and deploy the staging display in the Cloud Shell session, and should display **Deployment successful**. 
     
 ## Browse the staging slot
 
