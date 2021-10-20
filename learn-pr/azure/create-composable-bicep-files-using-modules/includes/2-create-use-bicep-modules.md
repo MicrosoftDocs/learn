@@ -35,7 +35,7 @@ After you've created a set of modules, you can compose them together. For exampl
 
 ### Functionality
 
-Occasionally, you might need to use modules to access certain functionality. For example, you can use modules and loops together to deploy multiple sets of resources. You can also use modules to deploy resources at different scopes in a single deployment.
+Occasionally, you might need to use modules to access certain functionality. For example, you can use modules and loops together to deploy multiple sets of resources. You can also use modules to define resources at different scopes in a single deployment.
 
 ## Create a module
 
@@ -121,7 +121,7 @@ For example, suppose you create a Bicep file named *main.bicep*. It defines a mo
 
 :::image type="content" source="../media/2-deployments.png" alt-text="Diagram that shows two Bicep files, each of which has a separate deployment name." border="false":::
 
-You can list and view the details of deployment resources to monitor the status of your Bicep deployments, or to view history of deployments. However, when you reuse the same name for a deployment, Azure overwrites the last deployment with the same name. If you need to maintain the deployment history, ensure that you use a unique name for every deployment. You might include the date and time of the deployment in the name to help make it unique. You'll see how to do this in the exercise.
+You can list and view the details of deployment resources to monitor the status of your Bicep deployments, or to view history of deployments. However, when you reuse the same name for a deployment, Azure overwrites the last deployment with the same name. If you need to maintain the deployment history, ensure that you use a unique name for every deployment. You might include the date and time of the deployment in the name to help make it unique.
 
 ### Generated JSON ARM templates
 
