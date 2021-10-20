@@ -42,3 +42,9 @@ The main steps in the process are:
 1. Test storage high availability. Use Windows PowerShell to trigger a failure of one of the cluster nodes and verify the availability of clustered volumes.
 
  >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MB0j]
+
+---
+
+
+
+---
