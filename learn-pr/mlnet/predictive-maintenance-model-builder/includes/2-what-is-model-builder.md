@@ -4,7 +4,7 @@ Model Builder is a graphical Visual Studio extension to train and deploy custom 
 
 Machine learning is a technique that uses mathematics and statistics to identify patterns within data without being explicitly programmed. 
 
-For example, let's say you wanted to predict the price of a home. If you were using a single feature such as the size of a home in square feet to estimate its price, you could probably program a heuristic that correlates higher square feet to a higher price.
+For example, let's say you wanted to predict the price of a home. If you were using a single feature such as the size of a home in square feet to estimate its price, you could probably program a heuristic that correlates larger homes to a higher price.
 
 :::image type="content" source="../media/linear-regression-model.svg" alt-text="House price linear regression model graph":::
 
