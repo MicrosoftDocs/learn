@@ -22,7 +22,7 @@ Credential stuffing is an attack method that takes advantage of the fact that ma
 
 Keylogging involves malicious software that logs keystrokes. Using the key logger, an attacker can log (steal) username and password combinations, which can subsequently be used for credential stuffing attacks. To prevent keylogging, do not install untrusted software and use reputable virus-scanning software.
 
-Social engineering**
+### Social engineering
 
 Social engineering attacks involve an attempt to get people to reveal information or perform an action to enable an attack.
 
@@ -31,8 +31,8 @@ Most authentication attacks involve exploitation of computers or an attempt to t
 A number of social engineering techniques can be used for authentication theft, including:
 
 - **Phishing** is a method where the attacker sends a seemingly legitimate email with the objective of having a user reveal their authentication credentials. For example, an email may appear to be from the user’s bank and include a link that opens to what looks to be the bank’s login page but is actually a fake site. When a user logs in at the fake site, the user’s login credentials become available to the attacker. There are several variations of phishing, including spear-phishing, which targets specific organizations, businesses, or individuals.**
-- **Pretexting**     is a method where an attacker gains the victim's trust and convinces them to divulge secure information, which can then be used to steal their identity. For example, a hacker might phone up pretending to be calling from your bank and ask for your password to verify your identity.
-- **Baiting**     is a form of attack where the attacker offers a fake reward or prize to encourage the victim to divulge secure information.
+- **Pretexting** is a method where an attacker gains the victim's trust and convinces them to divulge secure information, which can then be used to steal their identity. For example, a hacker might phone up pretending to be calling from your bank and ask for your password to verify your identity.
+- **Baiting** is a form of attack where the attacker offers a fake reward or prize to encourage the victim to divulge secure information.
 
 ### Other authentication-based attack methods
 

@@ -15,7 +15,7 @@ durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge**"
+  title: "Check your knowledge"
   questions:
   - content: "What are the three types of authentication?"
     choices:
@@ -47,6 +47,6 @@ quiz:
     - content: "Spear fishing, pretexting, and baiting."
       isCorrect: false
       explanation: "That's incorrect. Spear fishing, pretexting, and baiting are forms of social engineering."
-    - content: "Credential stuffing, key logging, man-in-the-middle."
+    - content: "Credential stuffing, key logging, spear fishing."
       isCorrect: false
-      explanation: "That's incorrect. Credential stuffing, key logging, and man-in-the-middle are forms of authentication attack."
+      explanation: "That's incorrect. Credential stuffing, key logging, and spear fishing are forms of authentication attack."

@@ -1,4 +1,8 @@
-Authorization determines the level of access an authenticated person has within the service that it wants to access.  There are different security techniques that organizations can use to manage authorization.
+Once you've authenticate a user, the next thing you'll need to do is decide where they can go and what they are allow to see and touch. This process is called authorization.
+
+Suppose you want to spend the night in a hotel. The first thing you'll do is present yourself to reception - think of this as the authentication process.  Once the receptionist has verified you are who you say you are, you'll get issued with a keycard and can proceed to your room - think of the keycard as the authorization process. The keycard will only let you open the doors and lifts you're permitted to access, for example your hotel room.
+
+In cybersecurity terms, authorization determines the level of access an authenticated person has to your data and resources. There are different security techniques that organizations can use to manage authorization.
 
 ### Conditional access
 
@@ -32,7 +36,7 @@ Zero trust is a term that is very prevalent in cybersecurity and is a method to 
 
 Zero trust is a security model that enables organizations to provide secure access to their resources by teaching us to “never trust, always verify”, and is based on three principles that employ concepts you are already familiar with.
 
-- **Verify explicitly** - With Zero trust, every request is fully authenticated and authorized before any access is granted. Organizations may implement both multi-factor authentication and conditional access to ensure that every access request is verified explicitly.
+- **Verify explicitly** - With Zero trust, every request is fully authenticated and authorized before any access is granted. Organizations may implement both multifactor authentication and conditional access to ensure that every access request is verified explicitly.
 - **Use least privileged access** – as mentioned earlier in this unit, the concept of least privilege is to only authorize a user with the minimum rights that they require. This limits the damage that a user can do and limits lateral flows.
 Assume breach – By assuming that a breach has or will occur, an organization can better plan for additional layers of security to minimize an attacker’s radius for breaches and prevent lateral movement.
 
