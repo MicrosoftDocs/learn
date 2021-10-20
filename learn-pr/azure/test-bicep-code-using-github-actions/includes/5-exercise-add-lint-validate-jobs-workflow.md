@@ -26,7 +26,7 @@ During the process, you'll:
    > [!TIP]
    > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. In the next section, you'll see the complete YAML workflow definition so that you can verify that your file matches.
 
-1. Below the lines that you just added, add a validation job:
+1. Below the lines that you just added, and above the deploy job, add a validation job:
 
    :::code language="yaml" source="code/5-workflow.yml" range="20-35" :::
 
@@ -36,9 +36,11 @@ During the process, you'll:
 
 1. Below the `runs-on` line in the `deploy` job, add a `needs` statement: 
 
-   :::code language="yaml" source="code/5-workflow.yml" range="39" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="37-41" highlight="3" :::
 
    The `needs` statements indicates that the deploy job depends on the lint and validate jobs completing successfully before it can run.
+
+   Also notice that both the validate and deploy jobs sign into Azure, and all of the jobs check out the code from the repository. This is because each job uses a new GitHub runner.
 
 1. Save the file.
 

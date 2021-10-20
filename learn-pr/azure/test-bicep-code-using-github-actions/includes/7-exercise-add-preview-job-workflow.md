@@ -21,6 +21,8 @@ Here, you add a new job to your workflow that runs the what-if operation.
 
    Notice that the **preview** job depends on the successful completion of the **validate** and **lint** jobs.
 
+   The **preview** job uses the `azure/cli` action because the what-if operation is not supported on the `azure/arm-deploy` action that the pipeline uses elsewhere. 
+
 1. Update the **deploy** job to make it depend on the **preview** job:
 
    :::code language="yaml" source="code/7-workflow.yml" range="55-56, 58-73" highlight="3" :::
@@ -65,7 +67,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
 1. Verify that your *workflow.yml* file looks like the following code:
 
-   :::code language="yaml" source="code/7-workflow.yml" highlight="37-53, 57-58, 66" :::
+   :::code language="yaml" source="code/7-workflow.yml" highlight="37-53, 57-58" :::
 
    If it doesn't, update it to match this example, and then save it.
 

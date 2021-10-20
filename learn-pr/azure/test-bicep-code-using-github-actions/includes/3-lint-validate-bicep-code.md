@@ -78,7 +78,9 @@ To submit a Bicep file for preflight validation, you use the `arm-deploy` action
 
 :::code language="yaml" source="code/3-preflight.yml" range="1, 9-21" highlight="14" :::
 
-This command is similar to a normal deployment, but it doesn't actually deploy any resources. It performs extra checks against the resources that are being used in your template. 
+You can also use the Azure CLI's `az deployment group validate` command.
+
+Preflight validation is similar to a normal deployment, but it doesn't actually deploy any resources. It performs extra checks against the resources that are being used in your template. 
 
 For example, suppose your Bicep file contains a storage account. Preflight validation will check whether another storage account has already taken the name you chose. It also checks whether the name you chose for the storage account complies with naming conventions. 
 

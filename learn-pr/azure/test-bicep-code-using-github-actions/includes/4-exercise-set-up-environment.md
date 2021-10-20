@@ -74,7 +74,7 @@ You now have a copy of the template repository in your own account. You will now
 
 1. A browser window appears. You may need to sign in to GitHub again. Select **Authorize**.
 
-1. Reopen Visual Studio Code in the repository folder by running the following command:
+1. Reopen Visual Studio Code in the repository folder by running the following command in the Visual Studio Code terminal:
 
    ```bash
    code -r toy-website-test
@@ -168,7 +168,7 @@ New-AzResourceGroup -Name ToyWebsiteTest -Location westus
 
 ::: zone pivot="cli"
 
-1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure CLI command in the Visual Studio Code terminal. Replace the placeholder with the resource group ID you copied in the last step.
+1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure CLI command in the Visual Studio Code terminal. Replace the `RESOURCE_GROUP_ID` placeholder with the resource group ID you copied in the last step.
 
    ```azurecli
    az ad sp create-for-rbac \
@@ -201,7 +201,7 @@ New-AzResourceGroup -Name ToyWebsiteTest -Location westus
 
 ::: zone pivot="powershell"
 
-1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure PowerShell code in the Visual Studio Code terminal. Replace the placeholder with the resource group ID you copied in the last step.
+1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure PowerShell code in the Visual Studio Code terminal. Replace the `RESOURCE_GROUP_ID` placeholder with the resource group ID you copied in the last step.
 
    ```azurepowershell
    $resourceGroupId = 'RESOURCE_GROUP_ID'

@@ -28,7 +28,7 @@ It's a well-understood rule in software development that the earlier in the proc
 
 So, the goal is to shift the discovery of problems toward the left of the preceding diagram. Throughout this module, you'll see how you can add more validation and testing to your workflow as it progresses.
 
-You can even add validation well before your deployment begins. When you work with tools like GitHub, *pull requests* typically represent changes that someone on your team wants to make to the code on your main branch. It's helpful to create another workflow that automatically runs your CI steps during the review process for the pull request. This technique helps validate that the code still works, even with the proposed changes. If the validation succeeds, you have some confidence that the change won't cause problems when it's merged to your main branch. If the check fails, you know there's more work to do to before the pull request is ready to merge.
+You can even add validation well before your deployment begins. When you work with tools like GitHub, *pull requests* typically represent changes that someone on your team wants to make to the code on your main branch. It's helpful to create another workflow that automatically runs your CI steps during the review process for the pull request. This technique helps validate that the code still works, even with the proposed changes. If the validation succeeds, you have some confidence that the change won't cause problems when it's merged to your main branch. If the check fails, you know there's more work to do to before the pull request is ready to merge. In a future module, you'll learn more about setting up a proper release process by using pull requests and branching strategies.
 
 > [!IMPORTANT]
 > Automated validation and tests are only as effective as the tests you write. It's important to consider the things you need to test and the steps you need to perform to be confident that your deployment is OK.
@@ -39,9 +39,9 @@ Every workflow contains at least one job, and you can define additional jobs to 
 
 Imagine that you've built a Bicep file that you need to deploy twice: once to infrastructure in the United States and once to infrastructure in Europe. Before you deploy, you validate your Bicep code. Here's an illustration of a multijob workflow that defines this process:
 
-:::image type="content" source="../media/2-jobs-sequential.png" alt-text="Diagram that shows a workflow with a Validate job, a Deploy U S job, and a Deploy Europe job, running in sequence." border="false":::
+:::image type="content" source="../media/2-jobs-sequential.png" alt-text="Diagram that shows a workflow with a Validate job, a Deploy U S job, and a Deploy Europe job, running in parallel." border="false":::
 
-Notice that this example has three jobs. The **validate** job is similar to a CI job. Then, the **deployUS** and **deployEurope** jobs run. Each deploys the code to one of the environments.
+Notice that this example has three jobs. The **validate** job is similar to a CI job. Then, the **deployUS** and **deployEurope** jobs run. Each deploys the code to one of the environments. By default, the jobs run in parallel.
 
 Here's how the jobs are defined in a workflow YAML file:
 
@@ -49,9 +49,7 @@ Here's how the jobs are defined in a workflow YAML file:
 
 ## Control the sequence of jobs
 
-By default, the jobs run in parallel. You can add dependencies between the jobs to change the order. 
-
-Continuing the previous example, imagine that you want to run both of your deployments in parallel, like this:
+You can add dependencies between the jobs to change the order. Continuing the previous example, you probably want to validate your code before running both of your deployments in parallel, like this:
 
 :::image type="content" source="../media/2-jobs-dependson.png" alt-text="Diagram that shows a workflow with a Validate job, a Deploy U S job, and a Deploy Europe job, with the two deployment jobs running in parallel." border="false":::
 
@@ -72,7 +70,7 @@ You use the `if` keyword to specify a condition that should be met before a job 
 
 :::code language="yaml" source="code/2-jobs-condition.yml" highlight="16" :::
 
-In the preceding example, when everything goes well, the workflow runs the **validate** job first, and then it runs the **deploy** job. It skips the **rollback** job. However, if either the **validate** or **deploy** job fails, the workflow runs the **rollback** job. You'll learn more about rollback later in this module.
+In the preceding example, when everything goes well, the workflow runs the **Test** job first, and then it runs the **Deploy** job. It skips the **Rollback** job. However, if either the **Test** or **Deploy** job fails, the workflow runs the **Rollback** job. You'll learn more about rollback later in this module.
 
 ## Bicep deployment jobs
 
@@ -87,6 +85,8 @@ A typical Bicep deployment workflow contains several jobs. As the workflow moves
 1. **Smoke Test**: Run basic post-deployment checks against some of the important resources that you've deployed. These are called *infrastructure smoke tests*.
 
 Your organization might have a different sequence of jobs, or you might need to integrate your Bicep deployments into a workflow that deploys other components. After you understand how the jobs work, you can design a workflow to suit your needs.
+
+Every job executes on a new runner instance. This also means that every job will start from a clean environment. So, in every job you typically need to check out the source code as your first step. You also need to sign in to your Azure environment in every job that interacts with Azure.
 
 Throughout this module, you'll learn more about these jobs and progressively build a workflow that includes each job. You'll also learn:
 
