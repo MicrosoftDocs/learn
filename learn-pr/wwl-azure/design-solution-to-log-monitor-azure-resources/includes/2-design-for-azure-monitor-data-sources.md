@@ -38,7 +38,7 @@ Telemetry related to your Azure tenant is collected from tenant-wide services su
 | - | - | - |
 | Azure Monitor Logs| Configure Azure AD logs to be collected in Azure Monitor to analyze them with other monitoring data.| [Integrate Azure AD logs with Azure Monitor logs (preview)](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics) |
 | Azure Storage| Export Azure AD logs to Azure Storage for archiving.| [Tutorial: Archive Azure AD logs to an Azure storage account (preview)](/azure/active-directory/reports-monitoring/quickstart-azure-monitor-route-logs-to-storage-account) |
-| Event Hub| Stream Azure AD logs to other locations using Event Hubs.| [Tutorial: Stream Azure Active Directory logs to an Azure event hub (preview)](/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub). |
+| Event Hub| Stream Azure AD logs to other locations using Event Hub.| [Tutorial: Stream Azure Active Directory logs to an Azure event hub (preview)](/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub). |
 
 
 ## Operating system (guest) logging solutions 
@@ -55,7 +55,7 @@ The Azure Monitor agent (AMA) collects monitoring data from the guest operating 
 
 - [Log Analytics agent](/azure/azure-monitor/agents/log-analytics-agent): Sends data to a Log Analytics workspace and supports VM insights and monitoring solutions.
 
-- [Diagnostics extension](/azure/azure-monitor/agents/diagnostics-extension-overview): Sends data to Azure Monitor Metrics (Windows only), Azure Event Hubs, and Azure Storage.
+- [Diagnostics extension](/azure/azure-monitor/agents/diagnostics-extension-overview): Sends data to Azure Monitor Metrics (Windows only), Azure Event Hub, and Azure Storage.
 
 - [Telegraf agent](/azure/azure-monitor/essentials/collect-custom-metrics-linux-telegraf): Sends data to Azure Monitor Metrics (Linux only).
 
