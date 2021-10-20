@@ -1,8 +1,8 @@
 The View in MR is one of the chief features included in the application. It allows the application user to view images and 3D models in the natural world environment. The user can access it by clicking on the button; it overlays a selected 3D model or image onto the device's live camera feed.
 
-3D content must be in the .glb file format and the image must be in .jpg or .png format. Also, you can convert the 3D models into .glb file format from various 3D formats. The MR components in Power Apps leverage Babylon React Native.
+3D content must be in the .glb file format and the image must be in .jpg or .png format. Also, you can convert the 3D models into .glb file format from various 3D formats. The MR components in Power Apps uses Babylon React Native.
 
-The View in MR allows the users to place any 3D object in the real world and can view, estimate and verify the selected product before commiting or purchasing.
+The View in MR allows the users to place any 3D object in the real world and can view, estimate, and verify the selected product before committing or purchasing.
 
 * **Properties**
 
@@ -22,7 +22,7 @@ The View in MR allows the users to place any 3D object in the real world and can
 
   When a model is placed with the View in MR component, it uses the original dimensions of the model. These dimensions are labeled as Object Width, Object Height, and Object Depth properties.
 
-  In order to change the size of the model, certain scaling techniques must be applied:
+  To change the size of the model, certain scaling techniques must be applied:
 
   * If no dimensions are defined, we accept that the model is already at its expected scale and leave it unchanged.
   * If one dimension is defined and the rest are default value of 0, we scale the entire object based on the specified dimension.
@@ -33,7 +33,7 @@ The View in MR allows the users to place any 3D object in the real world and can
 
 ## Gallery control
 
-A **Gallery** control can display multiple records from a data source, and each record can contain multiple types of data. For example, you can use **Gallery** control to show multiple products. Each item shows product details that include a name, an image, price, and so on for each product.
+A **Gallery** control can display multiple records from a data source, and each record can contain multiple types of data. For example, you can use **Gallery** control to show multiple products. Each item shows product details that include a name, an image, price, and, so on for each product.
 
 Each data field is displayed in a separate control within the Gallery control. And you can configure these controls in your template. Any changes you make to the template will be reflected throughout the gallery control. Predefined templates are available for displaying images and text in a gallery and a gallery for items with varying heights.
 
