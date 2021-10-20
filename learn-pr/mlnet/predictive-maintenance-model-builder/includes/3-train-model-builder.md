@@ -1,12 +1,29 @@
+In this unit you'll learn about the machine learning model training process in Model Builder.
+
 Training is the process by which you apply algorithms to historical data in order to create an artifact or model that captures underlying patterns and can be used to make predictions on new data.
 
 The model training process can be further broken down into the following steps:
 
-- **Choose a scenario**. What problem am I trying to solve? The scenario you choose depends on your data and what you're trying to predict.
-- **Choose an environment**. Where do I want to train my model? Depending on available compute resources, cost, privacy requirements, and a series of other factors you may choose to train models locally on your computer or the cloud.
-- **Load your data**. Load the dataset to use for training, define the columns you want to predict, and choose the columns you want to use as inputs for your prediction.
-- **Train your model**. Let AutoML choose the best algorithm for your dataset based on the scenario you've chosen.
-- **Evaluate your model**. Use evaluation metrics to compare how well your model performs and makes predictions on new data.
+- **Choose a scenario**
+- **Choose an environment**
+- **Load and prepare your data**
+- **Train your model**
+- **Evaluate your model**
+
+## Starting the training process
+
+In order to start the training process, you need add a new Machine Learning Model (ML.NET) item to a new or existing .NET application.
+
+> [!TIP]
+> Portability is one of the benefits that class libraries provide you. Class libraries make it easy to reference any models that are part of it from console, desktop, web, and any other type of .NET application. Therefore, it's recommended to add Machine Learning Model (ML.NET) items to a class library.
+
+The Machine Learning Model (ML.NET) item adds a file to your project with the *.mbconfig* file extension.
+
+Files that use the *.mbconfig* extension are Model Builder configuration files authored in JSON that allow you to:
+
+- Provide a name for your model.
+- Collaborate with others on your team via source control.
+- Persist state. If at any point in the training process you need to close Model Builder, your state is saved and you can pick up right where you left off.
 
 ## Choose a scenario
 
@@ -16,11 +33,12 @@ The first step to train a machine learning model is deciding which scenario and 
 
 A scenario describes the problem you're trying to solve using your data. Some common scenarios include:
 
-- Categorizing data (organize articles by topic)
+- Categorizing data (organize news articles by topic)
 - Predicting a numerical value (estimate the price of a home)
-- Detecting uncommon behavior (detect credit card fraud)
-- Grouping items with similar characteristics (customer segmentation)
 - Recommending items (recommend movies)
+- Grouping items with similar characteristics (customer segmentation)
+- Classifying images (tag an image based on its contents)
+- Detecting objects in an image (detect pedestrians and bicycles at an intersection)
 
 These scenarios map to machine learning tasks. A machine learning task is the type of prediction or inference being made, based on the problem or question that is being asked, and the available data.
 
@@ -37,7 +55,7 @@ For supervised tasks, the **label is known**. Examples of supervised machine lea
   - Binary (2 categories)
   - Multiclass (2 or more categories)
   - Image
-- Linear regression
+- Regression
 
 For unsupervised tasks, the **label is unknown**. Examples of unsupervised machine learning tasks include:
 
@@ -56,17 +74,13 @@ Model Builder supports the following scenarios which map to the respective machi
 | Recommendation | Recommendation | Recommend movies based on the preferences of similar users |
 | Object detection | Object Detection (Deep Learning) | Identify physical damage in an image |
 
-### Predictive maintenance scenario
+### Choosing a scenario for predictive maintenance
 
-Depending on what your data looks like, the predictive maintenance problem can be modeled using different tasks. For your use case, since the label is a binary value 0 or 1 describing whether a machine is broken or not, the data classification scenario is appropriate.
+Depending on what your data looks like, the predictive maintenance problem can be modeled using different tasks. For your use case, since the label is a binary value 0 or 1 that describes whether a machine is broken or not, the data classification scenario is appropriate.
 
 ## Choose your environment
 
-
-
-### What are environments?
-
-Environments describe the compute resources you'll use to train your machine learning model.
+Now that you've selected the data classification, it's time to choose the environment you want to train your machine learning model in. Environments describe the compute resources you'll use to train your machine learning model.
 
 ### Which environments are supported in Model Builder?
 
@@ -80,9 +94,10 @@ Model Builder supports the following environment options:
 | Recommendation | Local | X | |
 | Object detection | Azure | | X |
 
-Note that for the image classification scenario, GPU training is supported for local and Azure environments.
+> [!NOTE]
+> For image classification scenarios, GPU training is supported in local and Azure environments.
 
-Depending on your use case, there are various reasons why you might choose one over the other.
+Depending on your use case, there are various reasons why you might choose a local or Azure environment.
 
 #### Local environments
 
@@ -95,7 +110,9 @@ Some reasons why you might consider local compute environments include:
 
 Scenarios like image classification and object detection are resource intensive. Using a GPU can often speed up the training process. If you don't have a GPU or a computer with enough CPU or RAM, offloading the training process to Azure can lighten the load on your system.
 
-## Loading data into Model Builder
+## Load and prepare your data
+
+With your scenario and training environment selected, it's time to load and prepare your data.
 
 Data is the most important component for building machine learning models. The process for loading data into Model Builder consists of three steps:
 
@@ -114,7 +131,7 @@ Depending on your scenario, Model Builder supports loading data from the followi
 
 ### Provide the location of your data
 
-Once you've selected your data source type, you have to provide the location where your dataset is stored. This can be a directory, file path, or database connection string.
+Once you've selected your data source type, you have to provide the location where your dataset is stored. This can be a directory, file path, or database connection string. This too is dependent on the scenario and data source type you've selected previously.
 
 When a data source is selected in Model Builder, it parses the data and makes its best effort to identify:
 
@@ -128,11 +145,13 @@ Once the data is loaded, Model Builder displays a preview of some of the element
 
 ### Choose column purpose
 
-Depending on the scenario you choose, you'll have to define the purpose of certain columns. In scenarios like data classification and value prediction, you'll have to choose which of your columns is the column you want to predict (label). By default, all other columns that are not the label are used as features. Features are columns used as inputs to predict the label.
+Depending on the scenario you choose, you'll have to define the purpose of certain columns. In scenarios like data classification and value prediction, you'll have to choose which of your columns is the column you want to predict (label).
+
+By default, all other columns that are not the label are used as features. Features are columns used as inputs to predict the label.
 
 ### Advanced data options
 
-In cases where you'd like to customize how your data is loaded, Model Builder provides advanced data options. These advanced data options allow you to customize settings pertaining to your columns and dataset formatting.
+To customize how your data is loaded, Model Builder provides advanced data options. These advanced data options allow you to customize settings pertaining to your columns and dataset formatting.
 
 For columns, you can choose the following settings:
 
@@ -142,7 +161,7 @@ For columns, you can choose the following settings:
 
 When it comes to data formatting, you can choose whether the data contains column headers, the column separator (comma, semicolon, tab), and the decimal separator type (period or comma).
 
-## Understanding the predictive maintenance dataset
+### Understanding the predictive maintenance dataset
 
 The dataset used in this module is from the 'Explainable Artificial Intelligence for Predictive Maintenance Applications', Stephan Matzka, Third International Conference on Artificial Intelligence for Industries (AI4I 2020), 2020 (in press), and hosted at the UCI Machine Learning Repository - Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml](http://archive.ics.uci.edu/ml). Irvine, CA: University of California, School of Information and Computer Science.
 
@@ -160,9 +179,9 @@ The columns are defined as follows:
 - **UDI**: The row's index.
 - **Product ID**: A product identifier containing a product type category and a variant-specific serial number.
 - **Type**: Product quality category. L, M, or H for low (50% of all products), medium (30%) and high (20%).
-- **Air temperature**, **Process temperature**, **Rotational speed**, **Torque**, **Tool wear**: Readings collected form sensors.
-- **Machine failure**: binary label that indicates whether the machine has failed.
-- **TWF**, **HDF**, **PWF**, **OSF**, **RNF**: Independent machine failure modes. A value of 1 represents that failure mode occurred.
+- **Air temperature**, **Process temperature**, **Rotational speed**, **Torque**, **Tool wear**: Values collected form sensors.
+- **Machine failure**: Binary label (0 or 1) that indicates whether the machine has failed.
+- **TWF**, **HDF**, **PWF**, **OSF**, **RNF**: Independent machine failure modes. A value of 1 represents that respective failure mode occurred.
 
 For more details, see [AI4I 2020 Predictive Maintenance Dataset Data Set](https://archive.ics.uci.edu/ml/datasets/AI4I+2020+Predictive+Maintenance+Dataset).
 
@@ -170,18 +189,17 @@ For this scenario you won't use all of the columns in the dataset since they eit
 
 Since you'd like to be able to predict whether a machine has failed or not, the Machine failure column is the label.
 
-In Model Builder, for features, you can use data from the Product ID, Type, and various sensor reading columns.
+In Model Builder, for features, you can use data from the Product ID, Type, and various sensor columns.
 
-The failure modes, while they are useful in diagnosing the root cause of the failure, are not useful for your use case since you only want to know whether a machine has failed or not. Additionally, similar information is already captured by the label column. Therefore, you can ignore these columns.
-
-In this unit, you'll learn about the training process in Model Builder.
+The failure modes, while they are useful in diagnosing the root cause of the failure, are not useful for your use case since you only want to know whether a machine has failed or not. Additionally, similar information is already captured by the Machine failure column. Therefore, you can ignore these columns.
 
 ## Training in Model Builder
 
-Training is the process by which a series of algorithms for the scenario you've chosen are applied to your dataset. The goal is to find the "best"
-model. We'll get into what "best" means in later units.
+Now that you've selected your scenario, training environment, and loaded your data, it's time to start training your model.
 
-In most cases, to train machine learning models in Model Builder, you only have to provide the amount of time you want to let Model Builder search for the best model for your data.
+Training is the process by which a series of algorithms for the scenario you've chosen are applied to your dataset in order to find the "best" model. We'll go over what best means in the evaluation step.
+
+In most cases, to train machine learning models in Model Builder, you only have to provide the amount of time you want to train for.
 
 ## How long should I train for?
 
@@ -197,36 +215,33 @@ The table below summarizes the average time taken to get good performance for a 
 |500 - 1 GB|60 min|
 |1 GB+|3+ hours|
 
-These numbers are a guide only. The exact length of training is dependent on:
+These numbers are a guide only. The exact length of training depends on:
 
 - the number of features (columns) being used as input to the model
 - the type of columns
 - the machine learning task
 - the CPU, GPU, disk, and memory performance of the machine used for training
 
-It's generally advised that you use more than 100 rows as datasets with less than that may not produce any results.
+> [!TIP]
+> It's generally advised that you use more than 100 rows as datasets with less than that may not produce any results.
 
-## How does Model Builder find the best model?
+### How does Model Builder find the best model?
 
 You've probably heard machine learning involves complex math. So how is it that Model Builder is able to train a machine learning model if you've only provided a scenario, a dataset, and how long you want Model Builder to train for?
 
 Model Builder uses automated machine learning (AutoML) to identify the set of transformations to prepare your data for training, select an algorithm, and tune the settings (also known as hyperparameters) of the algorithm to create a model that most suits your data. Using evaluation metrics specific to the machine learning task selected, Model Builder is able to determine which model performs "best" for your data.
 
-## Training and consumption code
+### Training and consumption code
 
 Once your model is done training, Model Builder generates a few files prefixed with your model's name and adds them to your project. These files are nested under your *.mbconfig* file.
 
-- **\<MODEL-NAME\>.zip**: A serialized version of your model.
+- **\<MODEL-NAME\>.zip**: The machine learning model artifact. This file contains a serialized version of your model.
 - **\<MODEL-NAME\>.training.cs**: This file contains the model training pipeline. Your model training pipeline is made up of the data transformations and algorithm used to train your machine learning model. See [data transforms](/dotnet/machine-learning/resources/transforms) and [how to choose an ML.NET algorithm](/dotnet/machine-learning/how-to-choose-an-ml-net-algorithm) for more details.
 - **\<MODEL-NAME\>.consumption.cs**: This file contains the classes that define the schema of your model input and output. It also contains the `Predict` method, that uses your model to create a `PredictionEngine` and make predictions. The `PredictionEngine` is a convenience API, which allows you to perform a prediction on a single instance of data.
 
-In the next unit, you'll use Model Builder to train a classification model for predictive maintenance.
+## Evaluate your model
 
-In this unit, you'll learn what makes a model the best model.
-
-## Evaluation metrics
-
-One way to evaluate how well your model performs is by using evaluation metrics. Evaluation metrics are specific to the type of machine learning task that a model performs. For each task, there are various metrics you can look at to determine the performance of your model. Depending on the scenario selected in Model Builder, it uses the evaluation metrics for that scenario to choose the "best" model.
+Now that you've found the "best" model for your data, it's time to test how well it makes predictions. One way to evaluate how well your model performs is by using evaluation metrics. Evaluation metrics are specific to the type of machine learning task that a model performs. For each task, there are various metrics you can look at to determine the performance of your model. Depending on the scenario selected in Model Builder, it uses the evaluation metrics for that scenario to choose the "best" model.
 
 This table shows the evaluation metrics used by Model Builder to choose the best model.
 
@@ -240,13 +255,13 @@ This table shows the evaluation metrics used by Model Builder to choose the best
 
 For more information on ML.NET evaluation metrics, see [Model evaluation metrics](/dotnet/machine-learning/resources/metrics)
 
-## Choosing the model with the highest metrics
+### Choosing the model with the highest metrics
 
 Your model has achieved perfect evaluation metrics. Does that mean that you have the perfect model? Not exactly. In fact, if you end up with a "perfect" model as specified by your evaluation metrics, you should be skeptical. In machine learning, there is a concept known as overfitting and it's something you should watch out for. Overfitting is when your model learns the patterns in your training dataset too well. However, when you try to use the model with new data, it doesn't provide accurate results.
 
 Here's a scenario may help illustrate overfitting. Imagine you're studying for an exam. Somehow you have the questions to the exam and the answers ahead of time. As you study for the exam, you focus on memorizing the answers to the questions. When you take the exam and receive the results, you get a high grade. A high grade may signal you know the subject matter you were just evaluated on. However, if someone were to ask you a question on one of the subjects that was not directly on the test, you may get it wrong because you haven't learned the subject, you just memorized the answers. Overfitting works in a similar way.
 
-## Improve your model
+### Improve your model
 
 If you're not satisfied with the evaluation metrics of your model, there are a few things you can try to improve your model.
 

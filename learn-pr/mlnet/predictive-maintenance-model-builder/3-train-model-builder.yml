@@ -10,6 +10,6 @@ metadata:
   ms.author: luquinta
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
-durationInMinutes: 12
+durationInMinutes: 14
 content: |
   [!include[](includes/3-train-model-builder.md)]

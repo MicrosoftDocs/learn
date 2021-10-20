@@ -1,11 +1,8 @@
-In this module you learned how to:
+In this module you learned:
 
-- Choose a machine learning scenario to solve your problem
-- Choose a computing environment to train your model
-- Load data to train your model
-- Train a machine learning model for predictive maintenance
-- Evaluate how well your machine learning model performs
-- Consume your machine learning model in a .NET application
+- What Model Builder is and what problems you can solve with it
+- How to train a machine learning model using Model Builder
+- How to consume a machine learning model using Model Builder
 
 ## Next steps
 

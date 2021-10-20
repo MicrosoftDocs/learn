@@ -3,14 +3,14 @@ uid: learn.predictive-maintenance-model-builder
 metadata:
   moduleType: standard
   title: Train a predictive maintenance machine learning model with ML.NET Model Builder
-  description: "In this module, you'll learn how use the ML.NET Model Builder "
+  description: "In this module, you'll learn how use the ML.NET Model Builder to train and consume a machine learning model for predictive maintenance."
   ms.date: 10/19/2021
   author: luisquintanilla
   ms.author: luquinta
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
 title: Train a predictive maintenance machine learning model with ML.NET Model Builder
-summary: "Train a machine learning model in Visual Studio with ML.NET using Model Builder that uses sensor data to detect whether a machine is broken."
+summary: "Train a machine learning model in Visual Studio with ML.NET using Model Builder that uses sensor data to detect whether a manufacturing device is broken."
 abstract: |
   By the end of this module, you'll be able to:
   - Learn what Model Builder is

@@ -19,11 +19,11 @@ quiz:
     - content: "A database scaffolding tool."
       isCorrect: false
       explanation: "Model Builder helps you build machine learning models, not database models."
-    - content: "A graphical Visual Studio extension to build, train, and deploy custom machine learning models with ML.NET."
-      isCorrect: false
+    - content: "A graphical Visual Studio extension to train and deploy custom machine learning models with ML.NET."
+      isCorrect: true
       explanation: "Correct! Model Builder guides you through the process of adding machine learning models to your .NET apps in Visual Studio."
     - content: "A graphical Visual Studio Code extension to build, train, and deploy custom machine learning models with ML.NET."
-      isCorrect: true
+      isCorrect: false
       explanation: "Model Builder is a Visual Studio extension, not Visual Studio Code."
   - content: "What does it mean to train a machine learning model?"
     choices:
@@ -41,7 +41,7 @@ quiz:
     - content: "Applying algorithms to a dataset."
       isCorrect: false
       explanation: "Choosing algorithms and applying them to a dataset is part of model training."
-    - content: "Using a trained machine learning model to make predictions on new data."
+    - content: "Using a trained machine learning model to make predictions on new and unseen data."
       isCorrect: true
       explanation: "Correct! When you consume a model, it means you're using it to make predictions on new data."
     - content: "Using all your compute resources"

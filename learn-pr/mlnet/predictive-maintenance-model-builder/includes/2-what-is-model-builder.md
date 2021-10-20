@@ -8,7 +8,7 @@ For example, let's say you wanted to predict the price of a home. If you were us
 
 :::image type="content" source="../media/linear-regression-model.svg" alt-text="House price linear regression model graph":::
 
-As you know though, the world isn't that simple and there are many variables that influence the price of a home. It's in those cases that coming up with a simple heuristic that captures edge cases  becomes difficult and machine learning may be a better solution. With machine learning, instead of explicitly programming rules, you use historical data to identify these rules based on actual observations.
+The world isn't always that simple though and there are many variables that influence the price of a home. It's in those cases that coming up with a simple heuristic that captures edge cases becomes difficult and machine learning may be a better solution. With machine learning, instead of explicitly programming rules, you use historical data to identify these rules based on actual observations.
 
 The patterns found using machine learning are then used to create an artifact known as a model to make predictions using new and previously unseen data.
 
@@ -44,17 +44,19 @@ As a result, you don't need machine learning expertise to use Model Builder. All
 
 The model training process can be further broken down into the following steps:
 
-- **Choose a scenario**. What problem am I trying to solve? The scenario you choose depends on your data and what you're trying to predict.
-- **Choose an environment**. Where do I want to train my model? Depending on available compute resources, cost, privacy requirements, and a series of other factors you may choose to train models locally on your computer or the cloud.
-- **Load your data**. Load the dataset to use for training, define the columns you want to predict, and choose the columns you want to use as inputs for your prediction.
-- **Train your model**. Let AutoML choose the best algorithm for your dataset based on the scenario you've chosen.
-- **Evaluate your model**. Use evaluation metrics to compare how well your model performs and makes predictions on new data.
+- **Choose a scenario** - What problem am I trying to solve? The scenario you choose depends on your data and what you're trying to predict.
+- **Choose an environment** - Where do I want to train my model? Depending on available compute resources, cost, privacy requirements, and a series of other factors you may choose to train models locally on your computer or the cloud.
+- **Load your data** - Load the dataset to use for training, define the columns you want to predict, and choose the columns you want to use as inputs for your prediction.
+- **Train your model** - Let AutoML choose the best algorithm for your dataset based on the scenario you've chosen.
+- **Evaluate your model** - Use evaluation metrics to compare how well your model performs and makes predictions on new data.
 
 ### Consumption
 
-Once you train a machine learning model, it's time to put it to use. With ML.NET, machine learning models are serialized and saved to a file.
+Model consumption is the process of using a trained machine learning model to make predictions on new and previously unseen data.
 
-The model file can then be loaded into any .NET application and used to make predictions using ML.NET APIs. Some of these application types include:
+Once you train a machine learning model, it's time to use it to make predictions. With Model Builder, you can consume machine learning models from new and existing .NET projects.
+
+ML.NET, machine learning models are serialized and saved to a file. The model file can then be loaded into any .NET application and used to make predictions using ML.NET APIs. Some of these application types include:
 
 - ASP.NET Core Web API
 - Azure Functions
@@ -62,3 +64,5 @@ The model file can then be loaded into any .NET application and used to make pre
 - WPF / WinForms
 - Console
 - Class library
+
+In the next unit, you'll learn about the machine learning model training process in Model Builder.

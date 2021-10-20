@@ -1,8 +1,12 @@
-In this unit, you'll add a machine learning model to a .NET class library and choose your scenario.
+You've collected sensor data from your company's manufacturing devices that are healthy as well as those that have failed. You'd now like to use Model Builder to train a machine learning model that predicts whether a machine has failed or not. By using machine learning to automate the monitoring of these devices, you can significantly save your company money by providing more timely and reliable maintenance.
 
-## Create C# Class Library
+## Add a new Machine Learning Model (ML.NET) item
 
-With Model Builder, you can add machine learning to an existing project or a new project. Since you're starting from scratch, create a new C# class library project.
+To start the training process, you need add a new Machine Learning Model (ML.NET) item to a new or existing .NET application.
+
+### Create C# Class Library
+
+Since you're starting from scratch, create a new C# class library project to add a machine learning model to.
 
 1. Start Visual Studio.
 1. On the Start Window, choose **Create a new project**.
@@ -14,9 +18,7 @@ With Model Builder, you can add machine learning to an existing project or a new
 1. In the Project name text box, type "PredictiveMaintenance". Leave the defaults for all other fields and select **Next**
 1. Select **.NET 6.0 (Preview)** from the Framework dropdown and select **Create** to scaffold your C# class library.
 
-Portability is one of the benefits that class libraries provide you. Once you're done training your model, class libraries make it easy to reference any models that are part of it from console, desktop, web, and any other type of .NET application. Therefore, if you need to reference your models in various places, it's recommended to add your models to a class library.
-
-## Add machine learning to your project
+### Add machine learning to your project
 
 Once your class library project opens in Visual Studio, it's time to add machine learning to it.
 
@@ -30,25 +32,19 @@ Once your class library project opens in Visual Studio, it's time to add machine
 
     :::image type="content" source="../media/add-new-mbconfig-item.png" alt-text="Create new MBConfig item":::
 
-After a few seconds, a file called *PredictiveMaintenanceModel.mbconfig* is added to your project. Files that use the *.mbconfig* extension are Model Builder configuration files authored in JSON that allow you to:
-
-- Provide a name for your model.
-- Collaborate with others on your team via source control.
-- Persist state. If at any point in the training process you need to close Model Builder, your state is saved and you can pick up right where you left off.
+After a few seconds, a file called *PredictiveMaintenanceModel.mbconfig* is added to your project.
 
 ## Choose your scenario
 
-In addition to adding *PredictiveMaintenanceModel.mbconfig*, the first time you add a machine learning model to a project, the Model Builder screen opens. Now it's time to select your scenario.
+In addition to adding *PredictiveMaintenanceModel.mbconfig*, the first time you add a machine learning model to a project, the Model Builder screen opens. 
 
-For your use case, you're trying to determine whether a machine is broken or not. Since there are only two options and you want to determine which state a machine is in, the data classification scenario makes the most sense.
+Now it's time to select your scenario.
+
+For your use case, you're trying to determine whether a machine is broken or not. Since there are only two options and you want to determine which state a machine is in, the data classification scenario is the most appropriate.
 
 In the Scenario step of the Model Builder screen, select the **Data classification** scenario. Once you've selected this scenario, you're immediately advanced to the Environment screen.
 
 :::image type="content" source="../media/choose-scenario.png" alt-text="Choose data classification scenario":::
-
-In the next unit, we'll learn some more about supported compute environments in Model Builder.
-
-In this unit, you'll choose the compute environment to train your machine learning model.
 
 ## Choose your environment
 
@@ -59,33 +55,33 @@ For data classification scenarios, only local environments that use your CPU are
 
 :::image type="content" source="../media/choose-environment.png" alt-text="Choose local compute training environment":::
 
-In the next unit, you'll learn how to load data into Model Builder.
+## Load and prepare your data
 
-In this module you'll load the predictive maintenance dataset into Model Builder
+Now that you've selected your scenario and training environment, it's time to load and prepare the data you've collected using Model Builder.
 
-## Download the data
+### Download the data
 
 [Download the dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/00601/) and save it anywhere on your computer.
 
 After some time, a file with the name *ai4i2020.csv* should appear in the location you specified.
 
-## Choose your data source type
+### Choose your data source type
 
 The predictive maintenance dataset is a CSV file.
 
 In the Data step of the Model Builder screen, select **File (csv, tsv, txt)** for Data source type.
 
-## Provide the location of your data
+### Provide the location of your data
 
 Select the **Browse** button and use the file explorer to provide the location of your *ai4i2020.csv* dataset.
 
-## Choose your label column
+### Choose your label column
 
 Choose **Machine failure** from the Column to predict (Label) dropdown
 
 :::image type="content" source="../media/load-training-data.png" alt-text="Load predictive maintenance csv file dataset":::
 
-## Advanced data options
+### Advanced data options
 
 By default, all columns that are not the label are used as features. As previously mentioned though, some columns contain redundant information while others don't inform the prediction. Therefore, you want to ignore those columns. To do so, use the advanced data options.
 
@@ -116,18 +112,16 @@ By default, all columns that are not the label are used as features. As previous
 1. Select **Save**.
 1. In the Data step of the Model Builder screen, select **Next step**.
 
-In the next unit, you'll learn about training with Model Builder.
+## Train your model
 
-In this unit, you'll train a predictive maintenance model in Model Builder
-
-## Set your training time
+### Set your training time
 
 Model Builder automatically sets how long you should train for based on the size of your file. In this case, to help Model Builder explore more models, provide a higher number for the Train time.
 
 1. In the Train step of the Model Builder screen, set the Time to train (seconds) to 30.
 1. Select **Train**
 
-## Tracking the training process
+### Tracking the training process
 
 :::image type="content" source="../media/train-machine-learning-model.png" alt-text="Train predictive maintenance classificaiton model":::
 
@@ -137,17 +131,17 @@ In the next unit, you'll learn how to evaluate how well your model performs.
 
 In this unit, you'll evaluate your predictive maintenance model.
 
-## Inspect your model
+## Evaluate your model
 
-The Evaluate step in the Model Builder screen allows you to inspect the evaluation metrics and algorithm chosen for the best model. Remember that it's okay if your results are different from those mentioned in this module since the algorithm and hyperparameters chosen may be different. 
+### Inspect your model
 
-## Test your model
+The Evaluate step in the Model Builder screen allows you to inspect the evaluation metrics and algorithm chosen for the best model. Remember that it's okay if your results are different from those mentioned in this module since the algorithm and hyperparameters chosen may be different.
+
+### Test your model
 
 In the test your model section of the evaluate step, you can provide new data and evaluate the results of your prediction.
 
 :::image type="content" source="../media/evaluate-machine-learning-model.png" alt-text="Make predictions with your trained model":::
-
-### Sample data
 
 The sample data section is where you provide input data for your model to make predictions. Each field corresponds to the columns used to train your model. This is a convenient way to verify that the model behaves as expected. By default, Model Builder prepopulates with the first row from your dataset.
 
@@ -169,12 +163,12 @@ Let's test out your model to see whether it produces the expected results.
 
 1. Select **Predict**
 
-### Results
+### Evaluate prediction results
 
 The results section displays the prediction made by your model and how confident it is in its prediction.
 
 If you look at the Machine failure column of UID 161 in your dataset, you'll notice that the value is 1. This is the same as the predicted value with the highest confidence in the results section.
 
-If you'd like, you can continue trying out your model with different input values.
+If you'd like, you can continue trying out your model with different input values and evaluating the predictions made.
 
-In the next unit, you'll learn how to consume models in Model Builder.
+Congratulations! You've trained a model to predict machine failures. In the next unit, you'll learn about model consumption.

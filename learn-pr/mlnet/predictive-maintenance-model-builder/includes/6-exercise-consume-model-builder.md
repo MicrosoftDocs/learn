@@ -1,16 +1,16 @@
-In this unit, you'll add a console application to your solution to consume your model
+You spent some time training a model and using evaluation metrics to select the best model for your data. Now it's time to put it to use making predictions on your company's devices. To do so, you'll create a console application that takes in new data and uses your model to predict whether the device has failed or not.
 
 ## Add console application to solution
 
 In the Consume step of the Model Builder screen:
 
-1. Select **Add to solution** for the console app template.
+1. Select **Add to solution** for the console application template.
 1. In the Add sample console app dialog, enter the name "PredictiveMaintenanceConsole".
 1. Select **Add to solution**.
 
 :::image type="content" source="../media/consume-machine-learning-model.png" alt-text="Consume machine learning model in .NET console application":::
 
-After a few seconds, the .NET console application is added to your solution.
+After a few seconds, a new .NET console application is added to your solution.
 
 ## Run your application
 
@@ -39,4 +39,7 @@ After a few seconds, the .NET console application is added to your solution.
     =============== End of process, hit any key to finish ===============
     ```
 
-Congratulations! You've trained and consumed a machine learning model using ML.NET and Model Builder!
+> [!TIP]
+> For this demo, the default hard-coded data sample was used to run the application and make predictions. In a real-world setting you'd want to take inputs from a file or the console and make predictions on that data.
+
+Congratulations! You've consumed a machine learning model using ML.NET and Model Builder!
