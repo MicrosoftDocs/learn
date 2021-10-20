@@ -21,10 +21,10 @@ During the process, you'll:
 
    :::code language="yaml" source="code/5-workflow.yml" range="12-18" highlight="2-7" :::
 
+   This job defines a step to check out the code and a step that runs the `az bicep build` command to lint the Bicep file.
+
    > [!TIP]
    > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. In the next section, you'll see the complete YAML workflow definition so that you can verify that your file matches.
-
-   This job defines a step to check out the code and a step that runs the `az bicep build` command to lint the Bicep file.
 
 1. Below the lines that you just added, add a validation job:
 
@@ -87,6 +87,8 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 ## View the workflow run
 
 1. In your browser, go to **Actions**.
+
+   <!-- TODO mention the first run failed and why -->
 
 1. Select the most recent run of your workflow.
 

@@ -17,21 +17,19 @@ Here, you add a new job to your workflow that runs the what-if operation.
 
 1. Between the **validate** and **deploy** jobs, add the following definition for the **preview** job:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="40-56" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="37-53" :::
 
    Notice that we make the **review** job dependant on the **validate** and **lint** jobs. 
 
 1. Change the needs of the **deploy** job, so it is now dependant on the **review** job.
 
-   :::code language="yaml" source="code/7-workflow.yml" range="58-59, 61-75" highlight="3" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="55-56, 58-73" highlight="3" :::
 
 1. Save your changes to the file.
 
 ## Add an environment
 
 1. In your browser, go to **Settings** > **Environments**.
-
-   :::image type="content" source="../media/7-environments.png" alt-text="Screenshot of the GitHub interface that shows the Settings menu, with the Environments item highlighted.":::
 
 1. Select **New environment**.
 
@@ -47,7 +45,7 @@ Here, you add a new job to your workflow that runs the what-if operation.
 
 1. In the next screen check the **Required reviewers** box. And fill out your own GitHub username. 
 
-   :::image type="content" source="../media/7-add-check.png" alt-text="Screenshot of the GitHub interface that shows the Website environment, with the required reviewers checkbox and textbox highlighted.":::
+   :::image type="content" source="../media/7-add-reviewers.png" alt-text="Screenshot of the GitHub interface that shows the Website environment, with the required reviewers checkbox and textbox highlighted.":::
 
 1. Select **Save protection rules**.
 
@@ -57,7 +55,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
 1. In the *workflow.yml* file in Visual Studio Code, add an additional **environment** parameter to the **deploy** job and give it **Website** as a value:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="58-75" highlight="3" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="55-73" highlight="3" :::
 
 1. Save the file.
 
@@ -65,7 +63,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
 1. Verify that your *workflow.yml* file looks like the following code:
 
-   :::code language="yaml" source="code/7-workflow.yml" highlight="40-56, 60-61" :::
+   :::code language="yaml" source="code/7-workflow.yml" highlight="37-53, 57-58, 66" :::
 
    If it doesn't, update it to match this example, and then save it.
 
@@ -87,7 +85,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
 1. Notice that the workflow prompts you for a review. You also receive an email informing you that the workflow needs your review.
 
-   :::image type="content" source="../media/7-workflow-run-approval-required.png" alt-text="Screenshot of the GitHub interface that shows the workflow run, with the review requirement highlighted.":::
+   :::image type="content" source="../media/7-workflow-run-review-required.png" alt-text="Screenshot of the GitHub interface that shows the workflow run, with the review requirement highlighted.":::
 
    Before you approve the continuation of the workflow, you'll review the what-if results to ensure that they match your expectations.
 
@@ -107,11 +105,13 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
 1. Select the Summary to return to the overview for the workflow run.
 
-   :::image type="content" source="../media/7-workflow-run-log-back.png" alt-text="Screenshot of the GitHub interface that shows the Summary menu, with the back arrow highlighted.":::
+   :::image type="content" source="../media/7-workflow-run-log-summary.png" alt-text="Screenshot of the GitHub interface that shows the Summary menu, with the back arrow highlighted.":::
 
-1. Notice that after the lint, validate and review jobs have run, the workflow run will go to a **Waiting** state. Select the **Review deployments** button on the approval panel.
+1. Select the **Review deployments** button on the review panel.
 
-1. In the **Review pending deployments** pop-up, select the **Website** environment and select **Approve and deploy**.
+1. In the **Review pending deployments** pop-up, select the **Website** environment. In the **Leave a comment** box, enter **Reviewed what-if results**.
+
+1. Select **Approve and deploy**.
 
    :::image type="content" source="../media/7-workflow-run-approve.png" alt-text="Screenshot of the GitHub interface that shows the workflow approval page, with the Approve button highlighted.":::
 
