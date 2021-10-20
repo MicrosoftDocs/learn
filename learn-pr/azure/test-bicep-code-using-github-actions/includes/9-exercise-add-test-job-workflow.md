@@ -32,9 +32,9 @@ The test script that you created in the preceding steps requires a host name to 
 
 1. In Visual Studio Code, open the *workflow.yml* file in the *.github/workflows* folder.
 
-1. In the **deploy** job, add an id to the `Deploy website` step, and add an output to the job that uses this steps' outputs:
+1. In the **deploy** job, add an `id` to the `Deploy website` step so that you can refer to the step. Also, add a job output that copies the `appServiceAppHostName` output from the deployment step:
 
-   :::code language="yaml" source="code/9-workflow.yml" range="58-77" highlight="5-6, 14" :::
+   :::code language="yaml" source="code/9-workflow.yml" range="55-75" highlight="5-6, 14" :::
 
 1. Save the file.
 
@@ -44,10 +44,10 @@ Now, you can add a smoke test job that runs your tests.
 
 1. At the bottom of the file, add the following definition for the **smoke-test** job:
 
-   :::code language="yaml" source="code/9-workflow.yml" range="79-92" :::
+   :::code language="yaml" source="code/9-workflow.yml" range="77-90" :::
 
    This code defines the job and a step to checkout the code and a step to run tests with Pester. 
-   We also indicate in this job that is dependent on the **deploy** job with the needs parameter. This allows us to use the output of this job when we create the Pester container. 
+   We also indicate in this job that is dependent on the **deploy** job by using the `needs` property. As well as controlling the sequence of the job execution, this also allows you to use the output of this job when you run the test script.
 
    > [!NOTE]
    > PowerShell and Pester are both preinstalled on GitHub-hosted runners. You don't need to do anything special to use them in a script step.
@@ -58,7 +58,7 @@ Now, you can add a smoke test job that runs your tests.
 
 1. Verify that your *workflow.yml* file looks like the following:
 
-   :::code language="yaml" source="code/9-workflow.yml" highlight="58-77, 79-92" :::
+   :::code language="yaml" source="code/9-workflow.yml" highlight="59-60, 68, 77-90" :::
 
    If it doesn't, update it to match this example, and then save it.
 
@@ -84,11 +84,9 @@ Now, you can add a smoke test job that runs your tests.
 
 1. Notice that the **deploy** job finishes successfully. The **smoke-test** job finishes with an error.
 
-   :::image type="content" source="../media/9-workflow-run-jobs-smoketest.png" alt-text="Screenshot of the GitHub interface that shows the workflow run jobs. The SmokeTest job reports failure.":::
+   :::image type="content" source="../media/9-workflow-run-jobs-smoketest.png" alt-text="Screenshot of the GitHub interface that shows the workflow run jobs. The Smoke Test job reports failure.":::
 
-1. Select the **smoke-test** job to see its' details.
-
-   :::image type="content" source="../media/9-workflow-run-test-tab.png" alt-text="Screenshot of the GitHub interface that shows the workflow run, with the Tests tab highlighted.":::
+1. Select the **smoke-test** job to see its details.
 
 1. Notice that the **smoke-test** output shows that two tests ran. One passed and one failed. The test that failed is listed as **Toy Website.Does not serve pages over HTTP**.
 
@@ -126,7 +124,7 @@ Now that you've identified that your Bicep definition doesn't meet your security
 
 1. Select the most recent run.
 
-   Wait until the workflow completes the **lint**, **validate**, and **preview** jobs. Although Azure workflows automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   Wait until the workflow completes the **lint**, **validate**, and **preview** jobs. Although GitHub automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
 1. Select the **preview** job, and review the what-if results again.
 
@@ -139,7 +137,6 @@ Now that you've identified that your Bicep definition doesn't meet your security
 1. Select the **Review deployments** button, select the **Website** environment and select **Approve and deploy**.
 
    Wait for the workflow run to finish.
-
 
 1. Notice that the entire workflow finishes successfully, including the **smoke-test** job. This success indicates that both tests passed.
 

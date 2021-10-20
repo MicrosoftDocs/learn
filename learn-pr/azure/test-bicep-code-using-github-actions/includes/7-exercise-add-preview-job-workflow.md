@@ -19,9 +19,9 @@ Here, you add a new job to your workflow that runs the what-if operation.
 
    :::code language="yaml" source="code/7-workflow.yml" range="37-53" :::
 
-   Notice that we make the **review** job dependant on the **validate** and **lint** jobs. 
+   Notice that we make the **preview** job dependant on the **validate** and **lint** jobs. 
 
-1. Change the needs of the **deploy** job, so it is now dependant on the **review** job.
+1. Change the needs of the **deploy** job, so it is now dependant on the **preview** job.
 
    :::code language="yaml" source="code/7-workflow.yml" range="55-56, 58-73" highlight="3" :::
 
@@ -53,7 +53,9 @@ Here, you add a new job to your workflow that runs the what-if operation.
 
 Here, you configure the **deploy** job to run against the **Website** environment that you created previously. 
 
-1. In the *workflow.yml* file in Visual Studio Code, add an additional **environment** parameter to the **deploy** job and give it **Website** as a value:
+1. Open the *workflow.yml* file in Visual Studio Code.
+
+1. Add the `environment` parameter to the **deploy** job. Set the value to **Website**, to match the name of the environment you just created:
 
    :::code language="yaml" source="code/7-workflow.yml" range="55-73" highlight="3" :::
 

@@ -200,4 +200,6 @@ You've found another problem in the Bicep file. Here, you fix the problem.
 
    :::image type="content" source="../media/5-workflow-run-jobs-success.png" alt-text="Screenshot of the workflow run in GitHub Actions, with all three jobs reporting success.":::
 
+<!-- TODO mention why still seeing warnings -->
+
 You now have a workflow that successfully detects errors in your Bicep code early in your deployment process, and then deploys to Azure if there are no errors.
