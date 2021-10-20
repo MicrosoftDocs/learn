@@ -39,7 +39,7 @@ Every workflow contains at least one job, and you can define additional jobs to 
 
 Imagine that you've built a Bicep file that you need to deploy twice: once to infrastructure in the United States and once to infrastructure in Europe. Before you deploy, you validate your Bicep code. Here's an illustration of a multijob workflow that defines this process:
 
-:::image type="content" source="../media/2-jobs-sequential.png" alt-text="Diagram that shows a workflow with a Validate job, a Deploy U S job, and a Deploy Europe job, running in parallel." border="false":::
+:::image type="content" source="../media/2-jobs-parallel.png" alt-text="Diagram that shows a workflow with a Validate job, a Deploy U S job, and a Deploy Europe job, running in parallel." border="false":::
 
 Notice that this example has three jobs. The **validate** job is similar to a CI job. Then, the **deployUS** and **deployEurope** jobs run. Each deploys the code to one of the environments. By default, the jobs run in parallel.
 
