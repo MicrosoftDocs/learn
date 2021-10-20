@@ -20,8 +20,7 @@ Credential stuffing is an attack method that takes advantage of the fact that ma
 
 ### Keylogging
 
-Keylogging involves malicious software that logs keystrokes. Using the key logger, an attacker can log (steal) username and password combinations, which can subsequently be used for credential stuffing attacks. To prevent keylogging, do not install untrusted software and use reputable virus-scanning software.
-
+Keylogging involves malicious software that logs keystrokes. Using the key logger, an attacker can log (steal) username and password combinations, which can subsequently be used for credential stuffing attacks. This is also a common attack at Internet Cafe's or anywhere you use a shared computer for access. To prevent keylogging, do not install untrusted software and use reputable virus-scanning software.
 ### Social engineering
 
 Social engineering attacks involve an attempt to get people to reveal information or perform an action to enable an attack.
