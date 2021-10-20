@@ -26,15 +26,15 @@ Azure SQL Database has two purchasing models: _DTU_ and _vCore_.
 
     DTU stands for _Database Transaction Unit_, and is a combined measure of compute, storage, and IO resources. Think of the DTU model as a simple, preconfigured purchase option.
 
-    Because your logical server can hold more than one database, there's also the idea of eDTUs, or _elastic Database Transaction Units_. This option enables you to choose one price, but allow each database in the pool to consume fewer or greater resources depending on current load.
+    Because your logical server can hold more than one database, there's also the idea of eDTUs, or _elastic Database Transaction Units_. This option enables you to choose one price, but allows each database in the pool to consume fewer or more resources depending on current load.
 
 - **What are vCores?**
 
     vCores stands for  _Virtual cores_, and give you greater control over the compute and storage resources that you create and pay for.
 
-    Whereas the DTU model provides fixed combinations of compute, storage, and IO resources, the vCore model enables you to configure resources independently. For example, with the vCore model, you can increase storage capacity but keep the existing amount of compute and IO throughput.
+    Unlike the DTU model, which provides fixed configurations for compute, storage, and IO resources, the vCore model enables you to configure each of these resources independently. For example, with the vCore model, you can increase storage capacity but keep the existing amount of compute and IO throughput.
 
-Your transportation and logistics prototype only needs one Azure SQL Database instance. You decide on the DTU option because it provides a good balance of compute, storage, and IO performance and is less expensive to get started.
+Your transportation and logistics prototype needs only one Azure SQL Database instance. You decide on the DTU option because it provides a good balance of compute, storage, and IO performance and is less expensive to get started.
 
 ## What are SQL elastic pools?
 
@@ -55,7 +55,7 @@ Let's take a moment to consider what the default collation, **SQL_Latin1_General
   - **CI** means that comparisons are case insensitive. For example, "HELLO" compares equally to "hello".
   - **AS** means that comparisons are accent sensitive. For example, "résumé" doesn't compare equally to "resume".
 
-  Because you don't have specific requirements around how data is sorted and compared, you choose the default collation.
+  Because you don't have specific requirements for how data is sorted and compared, choose the default collation.
 
 ## Create your Azure SQL database
 
@@ -65,11 +65,11 @@ Over time, if you realize you need more compute power to keep up with demand, yo
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the **home** page, under **Azure Services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the **Home** page, under **Azure Services**, select **Create a resource**. The **Create a resource** pane appears.
 
    :::image type="content" source="../media/3-create-db.png" alt-text="Screenshot showing Create a resource pane with Databases in menu and SQL Database resource service highlighted.":::
 
-1. In the left menu pane, select **Databases**, and then select **SQL Database**. The **Create SQL Database** pane appears.
+1. In the resource menu, select **Databases**, and then in the results, select **SQL Database**. The **Create SQL Database** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -82,30 +82,40 @@ Over time, if you realize you need more compute power to keep up with demand, yo
     | Database name | *Logistics* |
     | Server | _[See step 5]_ |
     | Want to use SQL elastic pool? | *No* |
-    | Compute + storage | _[See step 8]_ |
+    | Compute + storage | _[See step 6]_ |
+    | **Backup storage redundancy** |
+    | Backup storage redundancy | Geo-redundant backup storage (default) |
 
-1. Under **Server**, select **Create new**. The **New server** pane appears. 
+1. Under **Server**, select **Create new**. The **Create SQL Database Server** pane appears. 
 
-1. Enter the following values for each setting.
+    a. Enter the following values for each setting.
 
-    | Setting | Value |
-    | --- | --- |
-    | **Server name** | A globally unique [server name](/azure/architecture/best-practices/naming-conventions). |
-    | **Server admin login** | A [database identifier](/sql/relational-databases/databases/database-identifiers) that serves as your primary administrator login name. |
-    | **Password** | Any valid password that has at least eight characters and contains characters from three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. |
-    | **Location** | Select any valid location from the dropdown list. |
+      | Setting | Value |
+      | --- | --- |
+      | Server name | Accept default. Value must be globally unique [server name](/azure/architecture/best-practices/naming-conventions). |
+      | Location | Accept default. |
+      | Authentication Method | Use SQL Authentication. (default) |
+      | Server admin login | Accept default (from previous steps). A [database identifier](/sql/relational-databases/databases/database-identifiers) serves as your primary administrator login ID. |
+      | Password | Any valid password that has at least eight characters and contains characters from three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. |
+      | Location | Select one of the regions from the list below. |
 
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+     [!INCLUDE [regions](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Select **OK**. The Server field updates with the name of the server you created.
+    b. Select **OK**. The Server field updates with the name of the server you created.
 
-1. Under **Compute + storage**, select the **Configure database** link. The **Configure** pane appears.
+1. Under **Compute + storage**, select **Configure database**. The **Configure** pane appears.
 
-    1. Under **Service and compute tier**, in the **Service tier** field, select the dropdown list, and under **DTU-based purchasing model**, select **Basic**, **Standard**, or **Premium**.
+    a. Enter the following values for each setting.
 
-    1. Select **Apply**.
+      | Setting | Value |
+      | --- | --- |
+      | **Service and compute tier** |
+      | Service tier | In the dropdown list, under **DTU-based purchasing model**, select **Basic**, **Standard**, or **Premium**. |
+      | Remaining settings | Accept defaults |
 
-1. Scroll up to the top of the **Create SQL Database** pane, select the **Additional settings** tab, and enter these values for each setting.
+    b. Select **Apply**.
+
+1. On the **Create SQL Database** pane, select the **Additional settings** tab, and enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
@@ -121,28 +131,26 @@ Over time, if you realize you need more compute power to keep up with demand, yo
     > [!IMPORTANT]
     > Remember your server name, admin login, and password for later.
 
-Deployment notifications appear, enabling you to monitor the deployment process. When the process completes, select **Go to resource** to view your database server dashboard.
+**Deployment details** displays notifications of resources that are created throughout the deployment process. When deployment completes, select **Go to resource** or optionally, select pin to dashboard. The **Essentials** of your SQL database server appears.
 
    :::image type="content" source="../media/3-notifications-complete.png" alt-text="Screenshot of the Azure portal showing the Overview pane of a newly created SQL database.":::
 
-   The **Logistics** pane appears for your SQL database.
+   Your **Logistics** SQL database has a unique name based on your server name and login credentials.
 
 ## Set the server firewall
 
 Your Azure SQL database is now up and running. You have many options to further configure, secure, monitor, and troubleshoot your new database. You can also specify which systems can access your database through the firewall. Initially, the firewall prevents all access to your database server from outside of Azure.
 
-For your prototype, you only need to access the database from your laptop. Later, you can add more systems, such as your mobile app.
+For your prototype, you only need to access the database from your laptop. Later, you can add more systems, such as your mobile app. For now, let's enable your development computer to access the database through the firewall.
 
-For now, let's enable your development computer to access the database through the firewall.
+1. In the command bar, select **Set server firewall**. The **Firewall settings** pane appears.
 
-1. In the Overview pane of the Logistics database, on the top menu bar, select **Set server firewall**. The **Firewall settings** pane appears.
+    :::image type="content" source="../media/3-set-server-firewall.png" alt-text="Screenshot showing command bar with Set server firewall highlighted.":::
 
-    :::image type="content" source="../media/3-set-server-firewall.png" alt-text="Screenshot of the Azure portal showing a SQL database overview pane with the Set server firewall button highlighted.":::
+1. On the command bar, select **Add client IP**. This action automatically adds the IP address for your computer.
 
-1. On the top menu bar, select **Add client IP**. This action automatically adds the IP address for your development computer.
+    :::image type="content" source="../media/3-add-client-ip.png" alt-text="Screenshot of the Azure portal showing a SQL database Firewall settings pane with the Add client IP highlighted.":::
 
-    :::image type="content" source="../media/3-add-client-ip.png" alt-text="Screenshot of the Azure portal showing a SQL database Firewall settings pane with the Add client IP button highlighted.":::
-
-1. On the top menu bar, select **Save**. Select **OK** when prompted in the *Success* dialog box that appears.
+1. On the command bar, select **Save**. When the firewall rules are updated, select **OK** when prompted.
 
 In the next unit, you'll get some hands-on practice with your new database and with Azure Cloud Shell. You'll connect to the database, create a table, add some sample data, and execute a few SQL statements.

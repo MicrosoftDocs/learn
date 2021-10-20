@@ -25,7 +25,7 @@ Key considerations when tagging training images for object detection are ensurin
 
 ## Model training and evaluation
 
-You can perform these tasks in the [*Custom Vision portal*](https://www.customvision.ai), or if you have the necessary coding experience you can use one of the Custom Vision service programming language-specific [software development kits (SDKs)](/azure/cognitive-services/Custom-Vision-Service/quickstarts/image-classification?tabs=visual-studio&pivots=programming-language-csharp). Training an object detection model can take some time, depending on the number of training images, classes, and objects within each image.
+To train the model, you can use the *Custom Vision portal*, or if you have the necessary coding experience you can use one of the Custom Vision service programming language-specific software development kits (SDKs). Training an object detection model can take some time, depending on the number of training images, classes, and objects within each image.
 
 Model training process is an iterative process in which the Custom Vision service repeatedly trains the model using some of the data, but holds some back to evaluate the model. At the end of the training process, the performance for the trained model is indicated by the following evaluation metrics:
 
@@ -37,7 +37,7 @@ Model training process is an iterative process in which the Custom Vision servic
 
 After you've trained the model, and you're satisfied with its evaluated performance, you can publish the model to your prediction resource. When you publish the model, you can assign it a name (the default is "Iteration*X*", where X is the number of times you have trained the model).
 
-To use your model, client application developers need the following information:
+To use you model, client application developers need the following information:
 
 - **Project ID**: The unique ID of the Custom Vision project you created to train the model.
 - **Model name**: The name you assigned to the model during publishing.
