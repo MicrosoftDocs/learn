@@ -81,7 +81,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 ## Create the home page
 
-1. Click the **Home Page** which was created previously, and insert four buttons. Next, navigate to the **Insert tab** and click the **Button** option to add buttons to the screen. Adjust the size and position of these buttons as required.
+1. Click the **Home Page** which was created previously. To insert four buttons, navigate to the **Insert tab** and click the **Button** option to add buttons to the screen. Adjust the size and position of these buttons as required.
 
     :::image type="content" source="../media/add-buttons.png" alt-text="Screenshot of adding buttons." lightbox="../media/add-buttons.png":::
 
