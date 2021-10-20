@@ -244,7 +244,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
         Navigate('Home Page',ScreenTransition.CoverRight)
         ```
 
-        :::image type="content" source="../media/configure-home-icon-order.png" alt-text="Screenshot of configuring OnSelect - Order" lightbox="../media/101.png":::
+        :::image type="content" source="../media/configure-home-icon-order.png" alt-text="Screenshot of configuring OnSelect - Order" lightbox="../media/configure-home-icon-order.png":::
 
 ## Create end page
 
