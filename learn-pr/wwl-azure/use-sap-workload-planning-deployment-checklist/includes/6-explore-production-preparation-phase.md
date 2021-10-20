@@ -33,7 +33,7 @@ In this phase, you should leverage all the knowledge and experience you accumula
      -  There are no Azure Network Virtual Appliances in the communication path between the SAP application and the DBMS layer of an SAP NetWeaver, Hybris, or S/4HANA based SAP systems.
      -  ASG and NSG rules control the connectivity in the intended manner.
      -  Timeout settings identified in the pilot phase have been implemented.
-     -  Network latency between SAP application layer VM and DBMS layer complies with the guidelines provided in [SAP Note \#500235](https://launchpad.support.sap.com/#/notes/500235) and [SAP Note \#1100926](https://launchpad.support.sap.com/#/notes/1100926). When deploying SAP HANA on Azure (Large Instances), take into account the exceptions documented in [SAP HANA (Large Instances) network architecture](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/hana-network-architecture).
+     -  Network latency between SAP application layer VM and DBMS layer complies with the guidelines provided in [SAP Note \#500235](https://launchpad.support.sap.com) and [SAP Note \#1100926](https://launchpad.support.sap.com). When deploying SAP HANA on Azure (Large Instances), take into account the exceptions documented in [SAP HANA (Large Instances) network architecture](/azure/virtual-machines/workloads/sap/hana-network-architecture).
      -  Encryption has been implemented in the intended manner.
      -  Interfaces and applications are available in the newly deployed infrastructure.
 8.  Create a playbook that facilitates Azure planned maintenance events. The playbook should define the order in which the systems and Azure VMs should be taken offline and brought back online in case of planned maintenance.
