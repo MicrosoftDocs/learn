@@ -20,3 +20,9 @@ The main steps in the process are:
 1. Configure SMB encryption. Enforce the use of SMB encryption.
 
  >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MjvN]
+
+---
+
+
+
+---
