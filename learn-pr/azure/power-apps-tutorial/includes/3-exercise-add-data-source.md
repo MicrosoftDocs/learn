@@ -1,3 +1,5 @@
+*Easy-Sales* is a sales oriented Mixed Reality application built to improvise the shopping experience. The salespeople using this application can inspect and measure the customer's surrounding to check which products are feasible in the space. They can also help cutomers visualize the product through Mixed Reality
+
 In Power Apps, you can connect your data with an already existing application or to an application that you're building from scratch. Your app can connect to SharePoint, Microsoft Dataverse, Salesforce, OneDrive, or any other data source.
 
 We will be using SharePoint as our primary data source for this application. You can connect to a SharePoint site to automatically generate an app from a custom list, create a connection before you add data to an existing app, or build an app from scratch.
@@ -10,7 +12,7 @@ We will be using SharePoint as our primary data source for this application. You
 
     :::image type="content" source="../media/create-site.png" alt-text="Screenshot showing to create site on the sharePoint start page." lightbox="../media/create-site.png":::
 
-3.  On the SharePoint start page, you'll be asked for the following information:
+3. On the SharePoint start page, you'll be asked for the following information:
 
     * It'll ask you to choose a site type, either "communication site" or "Team site." Select **Communication site**.
 
@@ -33,33 +35,30 @@ A SharePoint list is a collection of data with some structure: it is similar to 
 
 For our **Easy Sales** application, we will create separate lists for each product category: **Sofas**, **Chairs**, **Tables**, and **Carpets**.
 
-1. Open the newly created SharePoint site under the name *Easy Sales*.
-
-2. Click **+ New** dropdown.
-
-3. Select **List** to create a SharePoint list.
+1. In the newly created SharePoint site under the name *Easy Sales*, click **+ New** dropdown and select **List** to create a SharePoint list.
 
     :::image type="content" source="../media/select-list.png" alt-text="Screenshot of select list." lightbox="../media/select-list.png":::
 
-4. In the **Create a List** window, select **Blank list**.
+2. In the **Create a List** window, select **Blank list**.
 
       :::image type="content" source="../media/select-blank-list.png" alt-text="Screenshot of select Blank List." lightbox="../media/select-blank-list.png":::
 
-5. In the **Create** pane:
+3. In the **Create** pane:
 
     * Enter a suitable name for the list, for example, *Easy Sales-Sofas*
+    * Fill in the description, if required. (Optional)
     * Leave the **Show in site navigation** checkbox selected.
     * Click **Create**.
 
      :::image type="content" source="../media/enter-details.png" alt-text="Screenshot of Create Pane." lightbox="../media/enter-details.png":::
 
-6. Repeat the same procedure to create SharePoint lists for all the product categories. Again, provide a suitable name for each, for example, *Easy sales - Chairs*, *Easy Sales - Tables*, and *Easy Sales - Carpets*.
+4. Repeat the same procedure to create SharePoint lists for all the product categories. Again, provide a suitable name for each, for example, *Easy sales - Chairs*, *Easy Sales - Tables*, and *Easy Sales - Carpets*.
 
 ## Add data to your SharePoint list
 
 Once the list is created, it's time to add the data to it. Here data means the details of a particular product. The product details include the following information: Name, Image, Price, Dimensions, Weight, Color, PrimaryMaterial, Area, Height, and a 3D model/image of the product to be viewed in Mixed Reality.
 
-1. When your *Easy sales - Sofas* list opens, select **+ Add column**, and create the following columns with the specified column type using the dropdown and name the column.
+1. In the created *Easy sales - Sofas* list, select **+ Add column**, and create the following columns with the specified column type using the dropdown and name the column.
 
      :::image type="content" source="../media/add-column.png" alt-text="Screenshot of select Add Column." lightbox="../media/add-column.png":::
 
@@ -111,9 +110,11 @@ Once the list is created, it's time to add the data to it. Here data means the d
 
 ## Create a connection
 
+Now that all our data required for the application is stored in the SharePoint list respectively. We will move on to establish a connection in Power Apps. Once the connection is established, you can easily access the SharePoint data through an application.
+
 1. Sign in to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), select **Dataverse > Connections** in the left navigation bar, and then select **+ New connection** near the upper-left corner.
 
-2. Select **SharePoint**.
+2. Select **SharePoint**. We are selecting **SharePoint**, as we have stored the required data in **SharePoint** lists.
 
     :::image type="content" source="../media/share-point.png" alt-text="Screenshot of select Sharepoint." lightbox="../media/share-point.png":::
 
@@ -122,3 +123,6 @@ Once the list is created, it's time to add the data to it. Here data means the d
     :::image type="content" source="../media/cloud-services.png" alt-text="Screenshot of select Create." lightbox="../media/cloud-services.png":::
 
 4. The connection is created, and you can build an app from scratch.
+
+>[!Note]
+> Even if the connection is created, you can still add, edit and delete data stored in your SharePoint list. All the changes will be reflected through the connection.
