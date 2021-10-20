@@ -41,7 +41,7 @@ For our **Easy Sales** application, we will create separate lists for each produ
 
     :::image type="content" source="../media/select-list.png" alt-text="Screenshot of select list." lightbox="../media/select-list.png":::
 
-4. In the **Create a List** window, Select **Blank list**.
+4. In the **Create a List** window, select **Blank list**.
 
       :::image type="content" source="../media/select-blank-list.png" alt-text="Screenshot of select Blank List." lightbox="../media/select-blank-list.png":::
 

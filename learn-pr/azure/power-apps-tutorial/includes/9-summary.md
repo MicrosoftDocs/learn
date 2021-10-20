@@ -9,7 +9,7 @@ As it uses extensive number of clouds and on-premise application including Dynam
 The application you built in this module is an amateur application that can be further improvised in the future or later, including few more functions or features provided by **Microsoft Power Apps**. Consider trying the following features:
 
 * Try using different **Connectors**
-* Consider including the feature of Ordering more than one product.
+* Consider including the feature of ordering more than one product.
 * Incorporate **View shape in MR** in your present developed application.
 
 ## Further reading
