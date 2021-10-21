@@ -23,7 +23,7 @@ Next, in the bash window, run the following commands to clone the sample reposit
 
    ```bash
    git clone https://github.com/roryp/mslearn-autoscale-java
-   cd mslearn-monitoring-java
+   cd mslearn-autoscale-java
    code deployPetClinicApp.sh
    ```
 
