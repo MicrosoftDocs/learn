@@ -15,7 +15,7 @@ You should never use this workstation for web browsing, email, and other common 
 Microsoft recommends using Windows 10 Enterprise for your PAWs. This is because Windows 10 Enterprise supports security features that aren't available in other editions. These Windows Defender features are described in the following table.
 
 |Feature|Description|
-|-|--|
+|----------------|-----------|
 |Windows Defender Application Control|Moves away from the traditional application trust model where all applications are assumed trustworthy by default to one where applications must earn trust to run.|
 |Windows Defender Credential Guard|Protects NTLM password hashes, Kerberos ticket-granting tickets, and credentials stored by applications as domain credentials. Because they are no longer stored in the local security authority (LSA), credential theft can be blocked even on a compromised system.|
 |Windows Defender Device Guard|Combines the features of Windows Application Control with the ability to use the Windows Hyper-V hypervisor to protect Windows kernel-mode processes against the injection and execution of malicious or unverified code.|
@@ -39,6 +39,11 @@ To maintain security, administrator users should be provided with two workstatio
 The following table describes the advantages and disadvantages of these approaches.
 
 |Scenario|Advantages|Disadvantages|
-||--||
+|------------------|--------------------------|------------------------------------------------------------|
 |Dedicated hardware|Strong security separation|Requires two devices. This requires more space and costs more to implement.|
 |Simultaneous use|Reduced hardware costs|Sharing the same keyboard and mouse can result in errors and pose security risks.|
+
+---
+
+
+---
