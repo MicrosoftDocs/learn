@@ -9,14 +9,12 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Power Apps in Mixed Reality
-summary: By the end of this module, you'll be able to build an application that includes Mixed Reality components using Power Apps.
+summary: Learn about all the foundational elements required to build a Mixed Reality application and build a "Sales" oriented Mixed Reality application using Power Apps.
 abstract: |
   By the end of this module you will be able to:
   - Understand about Power Apps and its use cases.
-  - Learn about some of the Mixed Reality components included in Power Apps
-  - Build a "Sales" oriented Mixed reality application with Power Apps
-  - How to configure, set up and build an application Power Apps.
-  - Basic understanding of including 3D models to your application.
+  - Learn about some of the Mixed Reality components included in Power Apps such as Measure in MR and View in MR
+  - How to configure, set up and build a "Sales" oriented Mixed reality application with Power Apps.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -25,15 +23,15 @@ roles:
 products:
 - windows
 - windows-mixed-reality
-
+- power-apps
 prerequisites: |
   - Microsoft organization credentials.
-  - Power Apps application installed in a mobile device.
-  - Familiarity with OneDrive, SharePoint, and Excel
   - Power Apps account.
   - Mixed reality supported iOS mobile device(iOS 13 or later) or Android mobile device(Android 7 or later).
   - A Windows 8.1 or later PC.
   - A supported browser to run [canvas apps](/powerapps/maker/canvas-apps/limits-and-config#supported-browsers-for-running-canvas-apps)
+  - Familiarity with OneDrive, SharePoint, and Excel
+  - Power Apps application installed in a mobile device.
   
 units: 
 - learn.azure.power-apps-tutorial.1-introduction

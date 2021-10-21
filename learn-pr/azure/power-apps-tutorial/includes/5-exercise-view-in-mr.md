@@ -202,7 +202,7 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/add-title-label.png" alt-text="Screenshot of adding title label" lightbox="../media/add-title-label.png":::
 
-5. On the **Insert** tab, click the **Media** dropdown and select **Image** to insert an image in the **Details_sofas** screen. Configure the **Image** property in the following way:
+5. Click the **Media** dropdown and select **Image** to insert an image in the **Details_sofas** screen. Configure the **Image** property in the following way:
 
     ```Power Apps
     content.ImageLink
@@ -252,7 +252,7 @@ The details page includes all the details and information concerning the selecte
 
         :::image type="content" source="../media/blank-label-material.png" alt-text="Screenshot of blank label for material" lightbox="../media/blank-label-material.png":::
 
-7. We will add a **Back** icon to navigate to the previous screen. To add the **Back** icon, on the **Insert** tab, expand the **Icons** dropdown and select the **Back icon**. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following:
+7. We will add a **Back** icon to navigate to the previous screen. To add the **Back** icon, expand the **Icons** dropdown and select the **Back icon**. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following:
 
     ```Power Apps
     Navigate('Sofas',ScreenTransition.Cover)
@@ -266,23 +266,23 @@ The details page includes all the details and information concerning the selecte
 
 **View in MR** is a mixed reality feature provided by Power Apps which enables users to place **3D objects** or **Images** in their real world.
 
-1. To add the **View in MR** component to the **Details_sofas** screen, Open the **Insert** tab, expand the **Mixed Reality**. Then, select the component **View in MR** to place it in the center of the app screen, or drag and drop it to position it anywhere on the screen.
-
-    :::image type="content" source="../media/add-view-in-mr-button.png" alt-text="Screenshot of adding View in MR button" lightbox="../media/add-view-in-mr-button.png":::
-
-2. In the created **SharePoint** list named **Easy Sales-Sofas**, select the **+ Add column** and select Show/hide columns.
+1. In the created **SharePoint** list named **Easy Sales-Sofas**, select the **+ Add column** and select Show/hide columns.
 
     :::image type="content" source="../media/select-add-column.png" alt-text="Screenshot to add column" lightbox="../media/select-add-column.png":::
 
-3. Make sure **Attachments** be selected and press **Apply** at the top. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file).
+2. Make sure **Attachments** be selected and press **Apply** at the top. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file).
 
     :::image type="content" source="../media/add-attachments.png" alt-text="Screenshot to add attachments" lightbox="../media/add-attachments.png":::
 
-4. Click the dropdown present beside the **Attachments** column and select **Show attachments first**
+3. Click the dropdown present beside the **Attachments** column and select **Show attachments first**
 
     :::image type="content" source="../media/select-Show-attachments.png" alt-text="Screenshot to select Show attachments first" lightbox="../media/select-Show-attachments.png":::
 
-5. Switch to **Power Apps Studio**, In the **Properties** panel for the **View in MR** component, on the **Advanced** tab, select the **Source** field and enter:
+4. Switch to **Power Apps Studio**, add the **View in MR** component to the **Details_sofas** screen, Open the **Insert** tab, expand the **Mixed Reality**. Then, select the component **View in MR** to place it in the center of the app screen, or drag and drop it to position it anywhere on the screen.
+
+    :::image type="content" source="../media/add-view-in-mr-button.png" alt-text="Screenshot of adding View in MR button" lightbox="../media/add-view-in-mr-button.png":::
+
+5. In the **Properties** tab for the **View in MR** component, select the **Source** field and enter:
 
     ```Power Apps
     First(Gallery_sofas.Selected.Attachments).Value
@@ -296,15 +296,12 @@ The details page includes all the details and information concerning the selecte
     First(Gallery_chairs.Selected.Attachments).Value
     ```
 
->[!Note]
->Consider browsing through this [GitHub Repository](https://github.com/microsoft/experimental-pcf-control-assets) for some furniture models which can be incorporated in the application.
-
 Another unique property provided by the **View in MR** component is **Object scaling**. You can edit the sizes of your 3D models externally by changing the **Object width**, **Object height**, and **Object depth** properties.
+
+* Set the  **Object width**, **Object height**, and **Object depth** along with the **Unit of measurement**.
 
 >[!Note]
 > The values passed to the **Object width**, **Object height**, and **Object depth** are taken in the units specified in **Unit of measurement**. Choose an appropriate measure unit from the dropdown and later enter the values.
-
-* Set the  **Object width**, **Object height**, and **Object depth** along with the **Unit of measurement**.
 
 ## Create notes page
 
