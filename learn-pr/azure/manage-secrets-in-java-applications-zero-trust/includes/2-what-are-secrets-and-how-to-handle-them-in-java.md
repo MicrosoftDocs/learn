@@ -1,17 +1,17 @@
-Secrets are strings of characters that should not be shared with the outside world:
+Secrets are strings of characters that shouldn't be shared with the outside world:
 they could be database passwords, private encryption keys, personal access tokens, and so on.
-For enhanced security, many people also consider that anything that could help an attacker should be considered a secret: for example, the URL to your production database could be seen as a secret. Your database shouldn't be publicly accessible, but the rationale is that this kind of information is sensitive by nature, and the less information is available in your code, the better.
+For enhanced security, many people also consider that anything that could help an attacker should be considered a secret: for example, the URL to your production database could be seen as a secret. Your database shouldn't be publicly accessible. The rationale is that this kind of information is sensitive by nature, and the less information is available in your code, the better.
 
 ## What is Zero Trust and Zero Secrets?
 
 The concept of Zero Trust is that no one should be blindly trusted, and allowed to access company resources without being validated and authorized.
 
 This concept applies to Web applications too: they shouldn't have secrets stored in their
-code or in their final binaries. It is what we call Zero Secrets.
+code or in their final binaries. It's what we call Zero Secrets.
 
 Secrets should be managed by an external system, with strict access rules and validation, to reduce the attack risk.
 
-## Do not put secrets into Git repositories
+## Don't put secrets into Git repositories
 
 Even if your Git repository is private, putting any secret in your source code is a bad practice:
 
@@ -31,10 +31,10 @@ The easiest solution for managing secrets is to use environment variables. They 
 - They work on all systems (even non-cloud systems),
 - Everyone knows them and understands how they work.
 
-However, they're not secure enough: all processes on your system can read them, and they will be easily exposed
+However, they're not secure enough: all processes on your system can read them, and they'll be easily exposed
 using JMX on a Java system.
 
-As a result, environment variables are often seen as a first step towards Zero Trust: they are more secure than storing secrets
+As a result, environment variables are often seen as a first step towards Zero Trust: they're more secure than storing secrets
 directly into the source code, but they lack management capabilities and
 are easy to access for attackers.
 
@@ -42,13 +42,13 @@ are easy to access for attackers.
 
 Kubernetes has a notion of `secrets`, which is another good solution. Those secrets can be loaded as a file on the application's
 filesystem: a Java program can then read that file at startup time, to access those secrets. Tools like the Spring Frameworks even
-have standard support for this mechanism, allowing them to use those secrets in a easy and efficient way.
+have standard support for this mechanism, allowing them to use those secrets in an easy and efficient way.
 
 This mechanism is more secure than environment variables, as those files can be read only by the process that will require them. They
 also benefit from the rich Kubernetes ecosystem, and they can be managed by various management tools, including the tools provided by
 your cloud provider.
 
-While this is a good solution for Kubernetes, it's also limited to Kubernetes, and lack advanced management capabilities, depending
+While Kubernetes secrests are a good solution for Kubernetes, they're also limited to Kubernetes, and lack advanced management capabilities, depending
 on the tools used to manage the Kubernetes infrastructure.
 
 ## Using a secrets engine

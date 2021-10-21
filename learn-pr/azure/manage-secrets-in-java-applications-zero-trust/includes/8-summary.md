@@ -1,6 +1,6 @@
-In this module, you learned about the securing Java applications using Zero Trust and Zero Secrets. We discussed best practices on secrets management, and introduced Azure Key Vault as a Secrets engine. You deployed a Spring Boot application to Azure Spring Cloud and secured it correctly, both from an IT operator and a developer perspective.
+In this module, you learned about the securing Java applications using Zero Trust and Zero Secrets. We discussed best practices on secrets management, and introduced Azure Key Vault as a Secrets engine. You deployed a Spring Boot application to Azure Spring Cloud and secured it correctly.
 
-## Additional resources
+## Extra resources
 
 For more information about the Azure services described in this module, see:
 

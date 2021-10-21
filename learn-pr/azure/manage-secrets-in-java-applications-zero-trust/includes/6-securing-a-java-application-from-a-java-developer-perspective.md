@@ -1,13 +1,13 @@
 In this unit, you'll configure the existing Spring Boot application to use the secrets stored in Azure Key Vault.
 
-You'll have the role of a Java developer, who will configure his project to read those secrets.
+You'll have the role of a Java developer, who will configure their project to read those secrets.
 
 ## Configuring the Java project
 
 The Azure Spring Boot starter for Key Vault automates the usage of the Key Vault Java SDK for
 Spring Boot developers.
 
-In the previous section, we added 2 environment variables using the Azure CLI: `AZURE_KEYVAULT_ENABLED`, and `AZURE_KEYVAULT_URI`.
+In the previous section, we added two environment variables using the Azure CLI: `AZURE_KEYVAULT_ENABLED`, and `AZURE_KEYVAULT_URI`.
 
 Those environment variables are read by Spring Boot, and used to authenticate to Azure Key Vault,
 using underneath the Java SDK for Key Vault.
@@ -35,7 +35,7 @@ spring.datasource.password=${azureDatabasePassword}
 spring.sql.init.mode=always
 ```
 
-With that change, you application source code doesn't contain any secrets, and it'll get them from the Azure Key Vault instance we configured in the previous section.
+With that change, your application source code doesn't contain any secrets, and it will get them from the Azure Key Vault instance we configured in the previous section.
 
 ## Deploy the Java application to Azure
 
