@@ -38,7 +38,7 @@ Telemetry related to your Azure tenant is collected from tenant-wide services su
 | - | - | - |
 | Azure Monitor Logs| Configure Azure AD logs to be collected in Azure Monitor to analyze them with other monitoring data.| [Integrate Azure AD logs with Azure Monitor logs (preview)](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics) |
 | Azure Storage| Export Azure AD logs to Azure Storage for archiving.| [Tutorial: Archive Azure AD logs to an Azure storage account (preview)](/azure/active-directory/reports-monitoring/quickstart-azure-monitor-route-logs-to-storage-account) |
-| Event Hub| Stream Azure AD logs to other locations using Event Hub.| [Tutorial: Stream Azure Active Directory logs to an Azure event hub (preview)](/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub). |
+| Azure Event Hub| Stream Azure AD logs to other locations using Event Hub.| [Tutorial: Stream Azure Active Directory logs to an Azure event hub (preview)](/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub). |
 
 
 ## Operating system (guest) logging solutions 
