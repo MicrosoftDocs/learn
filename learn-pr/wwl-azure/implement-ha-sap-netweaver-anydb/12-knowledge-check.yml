@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ha-sap-netweaver-anydb.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/18/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/12-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When a single SID 3-tier SAP NetWeaver high availability AnyDB is deployed using a 3-tier SAP Azure Resource Manager template, IP addresses are created for Azure internal load balancers and for the network cards for all virtual machines. Which of the following statements about those IP addresses is true?"
+    choices:
+    - content: "The IP addresses are properly configured automatically, and do not need to be changed."
+      isCorrect: false
+      explanation: "Incorrect. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. You need to change them to static IP addresses."
+    - content: "All of the IP addresses are static by default, and need to be changed to dynamic."
+      isCorrect: false
+      explanation: "Incorrect. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. You need to change them to static IP addresses."
+    - content: "All of the IP addresses are dynamic by default, and need to be changed to static."
+      isCorrect: true
+      explanation: "Correct. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. You need to change them to static IP addresses."
+  - content: "Azure load balancer's idle timeout can time out open connections to the SAP enqueue process. To prevent Azure load balancer's idle timeout, customers should add registry entries for KeepAliveTime and KeepAliveInterval at what registry path on the cluster nodes of the SAP ASCS-SCS instance?"
+    choices:
+    - content: "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Interfaces"
+      isCorrect: false
+      explanation: "Incorrect. Add the registry entries to HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters."
+    - content: "HKLM\\SYSTEM\\CurrentControlSet\\Services\\AFD\\Parameters"
+      isCorrect: false
+      explanation: "Incorrect. Add the registry entries to HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters."
+    - content: "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters"
+      isCorrect: true
+      explanation: "Correct. Add the registry entries to HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters."
