@@ -39,7 +39,7 @@ quiz:
     - content: "Linux does not support application-consistent backup."
       isCorrect: false
       explanation: "Incorrect. When taking application-consistent snapshots of Linux VMs, Azure Backup invokes only the pre/post scripts written by you. If the pre-scripts and post-scripts execute successfully, Azure Backup marks the recovery point as application consistent. However, when you're using custom scripts, you're ultimately responsible for application consistency."
-  - content: "Can the following process be relied upon to give a consistent storage snapshot of a production SAP HANA workload, with an XFS file system spanning four Azure virtual disks? 1. Prepare the HANA snapshot. 2. Create all necessary blob snapshots on Azure. 3. Confirm the HANA snapshot."
+  - content: "The following steps have been suggested for taking a storage snapshot of a production SAP HANA workload, with an XFS file system spanning four Azure virtual disks. 1. Prepare the HANA snapshot. 2. Create all necessary blob snapshots on Azure. 3. Confirm the HANA snapshot. Can the process be relied upon to provide a consistent snapshot?"
     choices:
     - content: "Yes, the process should result in a consistent snapshot."
       isCorrect: false
@@ -61,7 +61,7 @@ quiz:
     - content: "Monthly"
       isCorrect: false
       explanation: "Incorrect. General guidance from SAP is to make one full HANA backup once a week. SAP also recommends doing some housekeeping of the backup catalog to keep it from growing infinitely."
-  - content: "Which of the following statements is true when configuring a SQL Server file-snapshot backup, using the Azure Blob Storage service?"
+  - content: "Which of the following statements applies when configuring a SQL Server file-snapshot backup, using the Azure Blob Storage service?"
     choices:
     - content: "The backup file cannot be stored using premium storage."
       isCorrect: true

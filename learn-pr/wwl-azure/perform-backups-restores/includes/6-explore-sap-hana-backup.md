@@ -9,7 +9,7 @@ Azure blob snapshot doesn't guarantee file system consistency. This lack of guar
 
 File system consistency is available when using the SAP HANA snapshot feature if there is only a single virtual disk involved. But even with a single disk, there are additional considerations outlined in [SAP Note \#2039883](https://launchpad.support.sap.com/#/notes/2039883). For example, with the XFS file system, it is necessary, to run xfs\_freeze before starting a storage snapshot to guarantee consistency.
 
-The subject of consistency becomes even more challenging in a case where a single file system spans multiple disks/volumes. As per the same SAP Note: "the storage system has to guarantee I/O consistency while creating a storage snapshot per SAP HANA data volume, that is, snapshotting of an SAP HANA service-specific data volume must be an atomic operation."
+The subject of consistency becomes even more challenging in a case where a single file system spans multiple disks/volumes. As per the same SAP Note: "the storage system has to guarantee I/O consistency while creating a storage snapshot per SAP HANA data volume, that is, creating a snapshot of an SAP HANA service-specific data volume must be an atomic operation."
 
 Assuming there is an XFS file system spanning four Azure virtual disks, the following steps provide a consistent snapshot that represents the HANA data area:
 
