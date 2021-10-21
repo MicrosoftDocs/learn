@@ -4,4 +4,4 @@ Buttons help the user to trigger an immediate action. It's one of the foundation
 
 ## UI menu
 
-Menu is a UX control, which offers a set of buttons or different UI components. It's floating across the user's frame and effortlessly available anytime. Since it's loosely coupled with the person, it no longer disturbs the user's interplay with the target content. The user can use the 'Pin' button to world-lock/unlock the menu. The menu may be grabbed and located at a selected position.
+Menu is a UX control, which offers a set of buttons or different UI components. It's floating across the user's frame and effortlessly available anytime. Since it's loosely coupled with the person, it no longer disturbs the user's interplay with the target content. The user can use the 'Pin' button to world-lock/unlock the menu. The menu may be grabbed at a selected position and relocated to a selected position.
