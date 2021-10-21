@@ -73,7 +73,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 8. We want the splash screen to be visible for only 2 seconds and later navigate to the Home page. To do this, create a screen and rename it as **Home Page**. Later click on the timer button added to the **Splash** screen and configure the **OnTimerEnd** property. Replace *false* with the following content:
 
-    ```Power Apps
+    ```PowerApps
     Navigate('Home Page',ScreenTransition.Fade)
     ```
 
@@ -89,7 +89,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
     :::image type="content" source="../media/edit-display-text-1.png" alt-text="Screenshot of editing display text." lightbox="../media/edit-display-text-1.png":::
 
-3. We will use these buttons to navigate to the list of products under various categories. To do so, we need to create separate screens for each category. So, first, create four new **Blank** screens and rename them accordingly, for example, *Sofas, Chairs, Tables, and Carpets*.
+3. We will use these buttons to navigate to the list of products under various categories. To do so, we need to create separate screens for each category. So, first, create four new **Blank** screens and rename it with your product categories, i.e., **Sofas**, **Chairs**, **Tables**, and **Carpets**.
 
     :::image type="content" source="../media/edit-display-text-2.png" alt-text="Screenshot of adding new screens." lightbox="../media/edit-display-text-2.png":::
 
@@ -107,19 +107,13 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
     Navigate(Chairs,ScreenTransition.Cover)
     ```
 
-    :::image type="content" source="../media/navigate-chairs-page.png" alt-text="Screenshot of navigation of chairs page" lightbox="../media/navigate-chairs-page.png":::
-
     ```Power Apps
     Navigate(Tables,ScreenTransition.Cover)
     ```
 
-    :::image type="content" source="../media/navigate-tables-page.png" alt-text="Screenshot of navigation of tables page" lightbox="../media/navigate-tables-page.png":::
-
-     ```Power Apps
+    ```Power Apps
     Navigate(Carpets,ScreenTransition.Cover)
     ```
-
-    :::image type="content" source="../media/navigate-carpet-page.png" alt-text="Screenshot of navigation of carpets page" lightbox="../media/navigate-carpet-page.png":::
 
 >[!Note]
 > The default syntax of the **Navigate** function is: **Navigate**( *Screen* [, *Transition* [, *UpdateContextRecord* ] ] )
@@ -130,9 +124,9 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 ## Use Gallery control
 
-Open the **Sofas** screen created to display the list of products, i.e., in this case, the list of sofas. To display the list of products, we use the **Gallery** control in Power Apps.
+Now that we have added the product categories, we will display the list of products under each category. In Power Apps, we use **Gallery control** to display a record of data.
 
-1. Open the **Sofas** screen; on the Insert tab, select **More** dropdown, and then navigate to **Gallery** option to select **Vertical**. Rename it to **Gallery_sofas**.
+1. In the **Sofas** screen; on the Insert tab, select **More** dropdown, and then navigate to **Gallery** > **Vertical**. Rename it to **Gallery_sofas**.
 
     :::image type="content" source="../media/select-vertical-gallery.png" alt-text="Screenshot of adding gallery" lightbox="../media/select-vertical-gallery.png":::
 
@@ -140,34 +134,34 @@ Open the **Sofas** screen created to display the list of products, i.e., in this
 
     :::image type="content" source="../media/configure-data-source.png" alt-text="Screenshot of connecting sharepoint" lightbox="../media/configure-data-source.png":::
 
-3. Select the previously created connection and choose the site of your choice. In our case, it is the *Easy Sales* site.
+3. Select the previously created connection and choose the site of your choice. In your case, it is the *Easy Sales* site.
 
     :::image type="content" source="../media/select-connection.png" alt-text="Screenshot of connection to Easy Sales" lightbox="../media/select-connection.png":::
 
-4. On selecting the right site, a catalog of **SharePoint list** created in the site is seen. First, choose the *Easy Sales - Sofas* list, which was created previously. Next, click on **Connect** to connect the data to your **Gallery**.
+4. On selecting the right site, a catalog of **SharePoint list** created in the site is seen. Now, select the *Easy Sales - Sofas* list and click on **Connect** to connect the data to your **Gallery**.
 
     :::image type="content" source="../media/select-sofas-list.png" alt-text="Screenshot of selecting Easy Sales - Sofas" lightbox="../media/select-sofas-list.png":::
 
-5. Configure the **Fields** property the following way:
+5. Configure the **Gallery** > **Fields** property by clicking on **Edit**:
     * Assign the **ImageLink** to the **Image1** heading.
     * Assign the **Price** to the **Subtitle1** heading.
     * Assign the **Name(Title)** to the **Title1** heading.
-  
+
+    :::image type="content" source="../media/configure-gallery-fields.png" alt-text="Screenshot of configuring fields - Sofas" lightbox="../media/configure-gallery-fields.png":::
+
     On assigning the above fields, you'll observe data getting reflected in your **Gallery**
     >[!Tip]
     > If you find it challenging to add the **ImageLink** to the **Image1** heading, click the **Image** in the gallery and configure the **Image** property on the **Property** tab by adding this line of code: *ThisItem.ImageLink*
 
-    :::image type="content" source="../media/configure-gallery-fields.png" alt-text="Screenshot of configuring fields - Sofas" lightbox="../media/configure-gallery-fields.png":::
-
-6. Let us now insert a label at the top of the screen. To do so, on the **Insert** tab, click on the **Label** option. Then, customize the position, color, and text display according to your needs.
+6. Let us now insert a label at the top of the screen. To do so, click on the **Label** option. Then, customize the position, color, and text display according to your needs.
 
     :::image type="content" source="../media/insert-label.png" alt-text="Screenshot of adding label - Sofas" lightbox="../media/insert-label.png":::
 
-7. We will add a **Back** icon over the previously added **Label** to help the user navigate the **Home Page** when required. To add the **Back** icon, on the **Insert** tab, expand the **Icons** dropdown and select the **Back icon**.
+7. Add a **Back** icon over the previously added **Label** to help the user navigate to the **Home Page** when required. To add the **Back** icon, expand the **Icons** dropdown and select the **Back icon**.
 
     :::image type="content" source="../media/insert-back-icon.png" alt-text="Screenshot of adding back icon - home page" lightbox="../media/insert-back-icon.png":::
 
-8. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following
+8. Position the **Back** icon correctly and configure its **OnSelect** property by adding the following
 
     ```Power Apps
     Navigate('Home Page',ScreenTransition.Cover)
