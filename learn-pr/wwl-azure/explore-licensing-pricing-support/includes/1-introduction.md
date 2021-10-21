@@ -8,4 +8,3 @@ You will:
 
  -  Learn how to price Azure virtual machine-based solutions.
  -  Explore licensing, pricing, and support of Azure for SAP workloads.
- -  Learn how to raise support requests for Azure virtual machines.

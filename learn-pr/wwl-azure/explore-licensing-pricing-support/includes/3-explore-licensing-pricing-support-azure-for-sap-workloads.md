@@ -14,3 +14,7 @@ In addition, when running SAP software on Linux Azure VMs, customers should sati
 ## SAP HANA on Azure (Large Instances)
 
 The use of SAP HANA on Azure (Large Instances) requires a Microsoft Premier support contract. For specific information related to running SAP in Azure, see [SAP Note \#2015553](https://launchpad.support.sap.com/#/notes/2015553). If you use HANA Large Instance units with 384 and more CPUs, you also need to extend the Premier support contract to include Azure Rapid Response.
+
+## Raise support requests for Azure virtual machines
+
+As per SAP document [Frequently Asked Questions: Microsoft Azure](https://wiki.scn.sap.com/wiki/display/VIRTUALIZATION/Frequently+Asked+Questions%3A+Microsoft+Azure), to raise a support ticket at SAP when contacting Microsoft Azure support, open an OSS ticket at component **BC-OP-NT-AZR** for Windows and **BC-OP-LNX-AZR** for Linux.

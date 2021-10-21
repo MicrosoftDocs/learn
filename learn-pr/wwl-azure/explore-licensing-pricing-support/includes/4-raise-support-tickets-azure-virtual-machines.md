@@ -1,1 +1,0 @@
-As per SAP document [Frequently Asked Questions: Microsoft Azure](https://wiki.scn.sap.com/wiki/display/VIRTUALIZATION/Frequently+Asked+Questions%3A+Microsoft+Azure), to raise a support ticket at SAP when contacting Microsoft Azure support, open an OSS ticket at component **BC-OP-NT-AZR** for Windows and **BC-OP-LNX-AZR** for Linux.
