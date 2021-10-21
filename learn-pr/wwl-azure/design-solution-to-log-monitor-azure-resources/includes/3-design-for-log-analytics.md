@@ -86,7 +86,9 @@ The following table summarizes and compares the access modes:
 
 - Start **Logs** from **Log Analytics workspaces**.
 
-- From Azure Monitor [Workbooks](/azure/azure-monitor/visualizations).- Start **Logs** from the menu for the Azure resource
+- From Azure Monitor [Workbooks](/azure/azure-monitor/visualizations).
+
+- Start **Logs** from the menu for the Azure resource
 
 - Start **Logs** from **Azure Monitor** menu.
 
