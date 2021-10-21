@@ -70,4 +70,4 @@ If ideal component placement cannot be achieved, the following considerations ca
 
 For example, the image below shows the controller remapping screen for the Xbox Elite controller. The player who created this profile has difficulty accessing the “Left stick click” control. Through software they re-assigned this control to an option that they can more easily access, in this case, the right trigger.
 
-:::image type="content" source="../media/controller-map-high-contrast.png" alt-text="The Xbox Elite Controller configuration screen. The "Map to" field is highlighted and "Right Trigger" is selected.":::
+:::image type="content" source="../media/controller-map-high-contrast.png" alt-text="The Xbox Elite Controller configuration screen. The Map to field is highlighted and Right Trigger is selected.":::
