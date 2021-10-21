@@ -8,7 +8,7 @@ Prerequisites for installing an SMT server that fulfills the task for HANA Large
 ## Install SMT server on an Azure virtual machine
 
 1.  First, sign in to the SUSE Customer Center. Navigate to **Organization** &gt; **Organization Credentials**. In that section, you should find the credentials that are necessary to set up the SMT server.
-2.  Then, install a SUSE Linux VM in the Azure virtual network. To deploy the virtual machine, use a SLES 12 Azure Marketplace image (select BYOS SUSE image).
+2.  Then, install a SUSE Linux VM in the Azure virtual network. To deploy the virtual machine, use a SLES 12 Azure Marketplace image (select **BYOS SUSE image**).
 3.  After the installation, check the connectivity to the HANA Large Instance unit. Depending on your existing setup, you might need to configure resolution of the HANA Large Instance units in etc/hosts of the Azure VM.
 4.  Add a data disk to the Azure VM. You use this disk to store the updates if the OS disk does not suffice. A 128 GB disk should suffice.
 5.  Sign in to the HANA Large Instance unit or units, review **/etc/hosts**, and verify that you can reach the Azure VM that that hosts the SMT server. After this verification, sign in to the Azure VM. After you signed in, run the following sequence of commands:
@@ -20,20 +20,20 @@ Prerequisites for installing an SMT server that fulfills the task for HANA Large
     
     ```
 6.  Restart your bash to activate the settings. Then start YAST.
-7.  Connect your VM (smtserver) to the SUSE site:
+7.  Connect your VM (SMT server) to the SUSE site:
     
     ```bash
     SUSEConnect -r [registration code] -e s [email address] --url https://scc.suse.com
     
     ```
-8.  After connecting to the SUSE site, install the smt packages. Use the following command to install the smt packages.
+8.  After connecting to the SUSE site, install the SMT packages. Use the following command to install the SMT packages.
     
     ```bash
     zypper in smt
     
     ```
-9.  You can also use the YAST tool to install the smt packages. In YAST, navigate to Software Maintenance, and search for smt. Select smt, which switches automatically to yast2-smt.
-10. Accept the selection for installation on the smtserver. After the installation completes, navigate to the SMT server configuration. Enter the organizational credentials from the SUSE Customer Center you retrieved earlier. Also enter your Azure VM hostname as the SMT Server URL. Now test whether the connection to the SUSE Customer Center works.
+9.  You can also use the YAST tool to install the SMT packages. In YAST, navigate to Software Maintenance, and search for **SMT**. Select **SMT**, which switches automatically to yast2-smt.
+10. Accept the selection for installation on the SMT server. After the installation completes, navigate to the SMT server configuration. Enter the organizational credentials from the SUSE Customer Center you retrieved earlier. Also enter your Azure VM hostname as the SMT Server URL. Now test whether the connection to the SUSE Customer Center works.
 11. After the SMT setup starts, provide a database password. Because it's a new installation, you should define that password. The next step is to create a certificate.
 12. At the end of the configuration, it might take a few minutes to run the synchronization check. After the installation and configuration of the SMT server, you should find the directory repo under the mount point on the Azure VM. There are also some subdirectories under repo.
 13. Restart the SMT server and its related services with these commands.
@@ -51,7 +51,7 @@ Prerequisites for installing an SMT server that fulfills the task for HANA Large
 
 After all the services are restarted, select the appropriate packages in SMT Management by using YAST. The package selection depends on the operating system image of the HANA Large Instance server. The package selection doesn't depend on the SLES release or version of the Azure VM running the SMT server.
 
-Next, start the initial copy of the selected packages to the SMT server you set up. This copy is triggered by running the command smt-mirror.
+Next, start the initial copy of the selected packages to the SMT server you set up. This copy is triggered by running the command `smt-mirror`.
 
 The packages should get copied into the directories created under the mount point. This process can take an hour or more, depending on how many packages you select. As this process finishes, move to the SMT client setup.
 

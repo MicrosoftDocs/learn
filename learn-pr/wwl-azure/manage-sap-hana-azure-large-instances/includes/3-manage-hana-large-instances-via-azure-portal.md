@@ -16,9 +16,9 @@ Restart of the Linux operating system of an HANA Large Instance unit might somet
 
 Depending on the amount of memory of the HANA Large Instance unit, a restart and reboot of the hardware and the operating system can take up to one hour.
 
-## Register HANA Large Instance Resource Provider
+## Register HANA Large Instance resource provider
 
-Usually, the Azure subscription you are using for HANA Large Instance deployments includes registration of the HANA Large Instance Resource Provider. However, if you can’t see you deployed HANA Large Instance units, you should register the Resource Provider in your Azure subscription. You can accomplish this by using Azure CLI and the Azure portal.
+Usually, the Azure subscription you are using for HANA Large Instance deployments includes registration of the HANA Large Instance resource provider. However, if you can’t see you deployed HANA Large Instance units, you should register the resource provider in your Azure subscription. You can accomplish this by using Azure CLI and the Azure portal.
 
 ### Register through CLI interface
 
@@ -31,4 +31,4 @@ az provider register --namespace Microsoft.HanaOnAzure
 
 ### Register through the Azure portal
 
-To register the HANA Large Instance Resource Provider via the Azure portal, display the blade representing the Azure subscription, which was used to deploy the HANA Large Instance unit(s). On that page, select **Resource providers** and type **HANA** in the search text box. In the list of results, click **re-register** or **register**.
+To register the HANA Large Instance resource provider via the Azure portal, display the blade representing the Azure subscription, which was used to deploy the HANA Large Instance unit(s). On that page, select **Resource providers** and type **HANA** in the search text box. In the list of results, click **re-register** or **register**.
