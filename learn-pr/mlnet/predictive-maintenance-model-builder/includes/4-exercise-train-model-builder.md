@@ -65,6 +65,22 @@ Now that you've selected your scenario and training environment, it's time to lo
 
 After some time, a file with the name *ai4i2020.csv* should appear in the location you specified.
 
+### Prepare your data
+
+Open the *ai4i2020.csv* file in the text editor of your choice. 
+
+The original column names contain special bracket characters. To prevent issues parsing the data, remove the special characters from the colum names:
+
+**Original column names**
+
+UDI,Product ID,Type,Air temperature [K],Process temperature [K],Rotational speed [rpm],Torque [Nm],Tool wear [min],Machine failure,TWF,HDF,PWF,OSF,RNF
+
+**Updated column names**
+
+UDI,Product ID,Type,Air temperature,Process temperature,Rotational speed,Torque,Tool wear,Machine failure,TWF,HDF,PWF,OSF,RNF
+
+Save the *ai4i2020.csv* file with your changes.
+
 ### Choose your data source type
 
 The predictive maintenance dataset is a CSV file.
@@ -97,11 +113,11 @@ By default, all columns that are not the label are used as features. As previous
     | UDI | Ignore | Single | |
     | Product ID | Feature | String | |
     | Type | Feature | String | X |
-    | Air temperature [K]| Feature | Single | |
-    | Process temperature [K]| Feature | Single | |
-    | Rotational speed [rpm]| Feature | Single | |
-    | Torque [Nm]| Feature | Single | |
-    | Tool wear [min]| Feature | Single | |
+    | Air temperature | Feature | Single | |
+    | Process temperature | Feature | Single | |
+    | Rotational speed | Feature | Single | |
+    | Torque | Feature | Single | |
+    | Tool wear | Feature | Single | |
     | Machine failure| Label | Single | X |
     | TWF | Ignore | Single | X |
     | HDF | Ignore | Single | X |
@@ -155,11 +171,11 @@ Let's test out your model to see whether it produces the expected results.
     | --- | --- |
     | Product ID | L47340 |
     | Type | L |
-    | Air temperature [K] | 298.4 |
-    | Process temperature [K] | 308.2 |
-    | Rotational speed [rpm] | 1282 |
-    | Torque [Nm] | 60.7 |
-    | Tool wear [min] | 216 |
+    | Air temperature | 298.4 |
+    | Process temperature | 308.2 |
+    | Rotational speed | 1282 |
+    | Torque | 60.7 |
+    | Tool wear | 216 |
 
 1. Select **Predict**
 

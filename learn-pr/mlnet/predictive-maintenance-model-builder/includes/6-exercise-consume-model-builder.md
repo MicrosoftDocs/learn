@@ -25,11 +25,11 @@ After a few seconds, a new .NET console application is added to your solution.
     
     Product_ID: M14860
     Type: M
-    Air_temperature__K_: 298.1
-    Process_temperature__K_: 308.6
-    Rotational_speed__rpm_: 1551
-    Torque__Nm_: 42.8
-    Tool_wear__min_: 0
+    Air_temperature: 298.1
+    Process_temperature: 308.6
+    Rotational_speed: 1551
+    Torque: 42.8
+    Tool_wear: 0
     Machine_failure: 0
     
     
