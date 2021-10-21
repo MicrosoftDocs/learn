@@ -4,7 +4,7 @@ You are responsible for gathering the requirements that will help SAP administra
 
 ## Learning objectives
 
-You will:
+You will: 
 
  -  Explore the monitoring requirements of Azure for SAP workloads.
  -  Examine monitoring, logging, and alerting services.
