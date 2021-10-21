@@ -12,8 +12,7 @@ To check out your code, you can use the `actions/checkout@v2` action:
 
 Notice that the workflow includes the `uses` keyword. This indicates you want to use a pre-defined action named `actions/checkout`.
 
-> [!NOTE]
-> Actions are always versioned. In this case the workflow uses version 2, so `@v2` is appended to the action name.
+Like Bicep resources, actions are always versioned. In this case the workflow uses version 2, so `@v2` is appended to the action name.
 
 After the workflow includes this action, your repository's code will be checked out onto the runner's file system. You specify the path the files should be stored in by using the `path` parameter.
 
@@ -21,7 +20,10 @@ After the workflow includes this action, your repository's code will be checked 
 
 When you deploy a Bicep file from your own computer, you use the Azure CLI or Azure PowerShell. Before you can deploy your code, you sign in to Azure. Usually, the tools ask you to enter your email address and password in a browser. After your credentials are verified, your permissions to deploy resources are confirmed and you can use the tools to deploy your Bicep file.
 
-Deployment by workflow requires authentication, too. Because workflows run without human intervention, workflows authenticate to Azure by using a service principal. A service principal's credentials consist of an *application ID* and a secret, which usually is a key or a certificate. In GitHub Actions, you use a *GitHub secret* to securely store these credentials so that your workflow can use them.
+Deployment by workflow requires authentication, too. Because workflows run without human intervention, workflows authenticate to Azure by using a service principal. A service principal's credentials consist of an *application ID* and a secret, which usually is a key or a certificate. In GitHub Actions, you use a *secret* to securely store these credentials so that your workflow can use them.
+
+> [!TIP]
+> In this module, you'll create a service principal for your workflow to use. The module [Authenticate your Azure deployment pipeline by using service principals](xref:learn.azure.authenticate-azure-deployment-pipeline-service-principals) provides a more detailed explanation of service principals including how they work, as well as how you create them, assign them roles, and manage them.
 
 When you create a secret, you give it a name. Steps refer to the secret by using this name, so your workflow YAML code doesn't need to contain secret information. GitHub encrypts the secret values before storing them.
 
@@ -34,10 +36,7 @@ You must ensure that your service principal has the permissions it needs to exec
 > [!WARNING]
 > It might seem easier to store your service principal's credentials in your YAML file, and then sign in by using the `az login` command. You should never use this approach to authenticate your service principal. Credentials in a YAML file are stored in clear text. Anyone who has access to your repository can see and use the credentials. Even if you restrict access to your GitHub reposistory, whenever someone clones your repository, the YAML file that holds the credentials will be on that person's computer. It's important to use a secret whenever you work with Azure from a GitHub Actions workflow. Secrets also provide other security and access control features.
 
-Secrets are created in your GitHub repository settings. A secret is available to all of the workflows in the repository.
-
-> [!NOTE]
-> Repository secrets can be used by all workflows in your repository. In a later module, you'll learn about _environments_, which enable you to restrict the use of secrets to deployments to a specific environment. 
+Secrets are created in your GitHub repository settings. A secret is available to all of the workflows in the repository. In a later module, you'll learn about _environments_, which enable you to restrict the use of secrets to deployments to a specific environment. 
 
 ### Use a secret in your workflow
 

@@ -1,0 +1,30 @@
+parameters: 
+- name: environmentType
+  type: string
+- name: serviceConnectionName
+  type: string
+- name: resourceGroupName
+  type: string
+
+- stage: Deploy
+  jobs:
+  - deployment: DeployWebsite
+    displayName: Deploy Website
+    environment: Website
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+            - checkout: self
+            - task: AzureCLI@2
+              name: DeployBicepFile
+              displayName: Deploy Bicep file
+              inputs:
+                azureSubscription: ${{parameters.serviceConnectionName}}
+                scriptType: 'bash'
+                scriptLocation: 'inlineScript'
+                inlineScript: |
+                  az deployment group create \
+                    --resource-group ${{parameters.resourceGroupName}} \
+                    --template-file deploy/main.bicep \
+                    --parameters deploy/azuredeploy.parameters.${{parameters.environmentType}}.json

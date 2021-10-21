@@ -1,4 +1,4 @@
-Bicep modules enable to you break a complex template into parts. You can ensure that each module is focused on a specific task, and that the modules are reusable for multiple deployments and workloads. 
+Bicep modules enable you to break a complex template into parts. You can ensure that each module is focused on a specific task, and that the modules are reusable for multiple deployments and workloads. 
 
 In this module, you'll learn about the benefits of Bicep modules and how you can create, use, and combine them for your own deployments.
 
