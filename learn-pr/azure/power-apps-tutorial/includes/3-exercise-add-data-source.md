@@ -18,7 +18,9 @@ We will be using SharePoint as our primary data source for this application. You
 
     * Enter a suitable name for the site, for example, *Easy Sales*
 
-    * You can select **Edit** and then edit the group email address or site address if you want.
+    * Add the **Site description** if needed (Optional).
+
+    * Select **Language** of your choice from the dropdown.
 
 4. Select **Finish**.
 
