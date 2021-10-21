@@ -8,10 +8,6 @@ Many AT devices only support standard hardware connection types. Standard hardwa
 
 In addition to any other type of connection present on the device you're developing, standard connections like USB ports and Bluetooth pairing compatibility should also be provided as an option. It will ensure that players can connect and use their assistive technologies to engage in gameplay.
 
-The following image shows a player using a mouth-operated assistive device called the Quadstick. The Quadstick can be connected to gaming devices via USB. PCs and the Xbox Adaptive controller both include USB ports. It supports players in being able to use assistive devices such as the Quadstick in their gaming experience on PC and console platforms without barriers.
-
-The following image shows a player using the mouth-operated Quadstick on their PC to play games competitively.
-
 ## Improve accessible operation of mechanical parts
 
 An important aspect to consider when creating accessible hardware experiences for players is the strength, dexterity, and fine motor skills required to interact with and operate the device. Actions the player may need to perform include pressing buttons and opening battery doors. If a player cannot physically press the power button, make volume adjustments, or pair the device, they may stop using the device altogether.
@@ -24,7 +20,11 @@ The physical surface area of a button can impact whether a user with disabilitie
 
 The image below shows a person’s hand as they press a button on a USB speaker device. The larger buttons on the device are about the size of a US penny. The increased surface area of the buttons on this device can make it easier for players to control the speaker device.
 
+:::image type="content" source="../media/usbc-speaker.png" alt-text="A hand pressing a USB speaking device with large buttons on it for volume and muting.":::
+
 Similarly, the size of the A and B buttons on the Xbox Adaptive Controller were, by design, made larger. The larger size helps players use the controller even though they may not be able to isolate a single finger to press the buttons.
+
+:::image type="content" source="../media/xac.jpg" alt-text="A player in a wheelchair using a Xbox Adaptive Controller on a lap board.":::
 
 ### Button height
 
@@ -54,6 +54,10 @@ When designing and creating new devices, it's recommended to avoid activation me
 
 The image below shows the ear cup dials on an Xbox gaming headset. Players twist the dials to adjust the volume and chat mixer values. Players unable to perform the necessary twisting motions can instead use the Xbox Accessories app. This app provides a configuration settings menu for players to use to adjust the settings.
 
+:::image type="content" source="../media/xbox-wireless-headset.png" alt-text="A pair of Xbox-branded headphones with a boom microphone.":::
+
+:::image type="content" source="../media/headset-control-ui.png" alt-text="The Xbox audio & music settings panel. The headset volume selector is highlighted.":::
+
 ### Component location
 
 The location of the controls on a device is also important to consider when designing and developing accessible hardware. Consider a headset with the volume control on one side of the device and the noise cancellation control on the other side of the device. Players who are not able to perform the action required to reach or use the controls while the headset is on their head, such as those with reduced mobility on one side of their body, will not be able to use the device efficiently.
@@ -65,3 +69,5 @@ If ideal component placement cannot be achieved, the following considerations ca
 - Provide accessibility settings that allow players to customize the functions of each physical control through software.
 
 For example, the image below shows the controller remapping screen for the Xbox Elite controller. The player who created this profile has difficulty accessing the “Left stick click” control. Through software they re-assigned this control to an option that they can more easily access, in this case, the right trigger.
+
+:::image type="content" source="../media/controller-map-high-contrast.png" alt-text="The Xbox Elite Controller configuration screen. The Map to field is highlighted and Right Trigger is selected.":::
