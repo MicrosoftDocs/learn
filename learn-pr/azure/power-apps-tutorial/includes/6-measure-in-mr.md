@@ -12,7 +12,7 @@ You can alter the Measure in MR component with several properties. Some of them 
 
 * **Unit of measurement** - This represents the measuring unit used during the session. You can choose from the dropdown having options like centimeters, meters, inches, and feet.
 * **Measurement type** - You have the liberty to choose the measurement type; it can be point-to-point distance, a complete area, or a three-dimensional volume(area and height together).
-* **Measurement** - A complete table describes the measured distances, areas, and volumes. It is composed of various sub-properties like Label, Id, Units, Height, Length, Area, Volume, and so on.
+* **Measurement** - A complete table describes the measured distances, areas, and volumes. It is composed of various sub-properties like Label, ID, Units, Height, Length, Area, Volume, and so on.
 * **Photos** - You also can capture photos during the Measure in MR session. These photos can be utilized for future references.
 
 ## Formulas in power apps
@@ -26,12 +26,12 @@ Formulas are made up of values, operators, and functions. These functions use pa
 ## If functions
 
 **If** is a function that tests one or more conditions until it finds a true result. If such a result is obtained, a value is returned in its place. A default value is returned if no such result is discovered. The returned value could be a string to display, a formula to evaluate, or another form of result.
-The most common syntax for this function is **If( Condition, ThenResult, DefaultResult )**, which provides the common “if … then … else …” pattern seen in other programming tools.
+The most common syntax for this function is **If(Condition, ThenResult, DefaultResult)**, which provides the common “if … then … else …” pattern seen in other programming tools.
 **If** is a tool for evaluating a variety of unrelated conditions. You can declare several conditions without nest If formulae in Power Apps (unlike Microsoft Excel).
 
 **Syntax**:
-**If**( Condition, ThenResult [, DefaultResult ] )
-**If**( Condition1, ThenResult1 [, Condition2, ThenResult2, ... [ , DefaultResult ] ] )
+**If**(Condition, ThenResult [, DefaultResult] )
+**If**(Condition1, ThenResult1 [, Condition2, ThenResult2, ... [, DefaultResult]])
 
 ## Switch functions
 
@@ -39,7 +39,7 @@ The **Switch** function evaluates a formula and determines whether the result ma
 **Switch** is a tool for comparing a single condition against numerous matches. In this scenario, you could also use If, but you'd have to repeat the formula for each possible match.
 
 **Syntax**:
-**Switch**( Formula, Match1, Result1 [, Match2, Result2, ... [, DefaultResult ] ] )
+**Switch**(Formula, Match1, Result1 [, Match2, Result2, ... [, DefaultResult]])
 
 ## Office 365 Outlook
 
