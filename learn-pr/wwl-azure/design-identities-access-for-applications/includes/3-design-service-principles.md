@@ -64,6 +64,7 @@ Effective permissions are the permissions that your app will have when making re
 
  
 For delegated permissions, the effective permissions of your app are the intersection of the delegated permissions the app has been granted and the privileges of the currently signed-in user. In other words, the app can never have more privileges than the signed-in user. Within organizations, the privileges of the signed-in user may be determined by policy or by membership in one or more administrator roles.
+
 :::image type="content" source="../media/effective-permissions.png" alt-text="Diagram showing the effective permissions as the intersection of app permissions and user capabilities.":::
 
  
