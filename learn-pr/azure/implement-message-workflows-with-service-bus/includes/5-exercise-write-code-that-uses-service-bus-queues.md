@@ -101,7 +101,7 @@ To complete the component that sends messages about sales:
 
     ```C#
     string messageBody = $"$10,000 order for bicycle parts from retailer Adventure Works.";
-    var message = new ServiceBusMessage(Encoding.UTF8.GetBytes(messageBody));
+    var message = new ServiceBusMessage(messageBody);
     ```
 
 1. Insert the following code on a new line directly below what you just added to display the message in the console.
