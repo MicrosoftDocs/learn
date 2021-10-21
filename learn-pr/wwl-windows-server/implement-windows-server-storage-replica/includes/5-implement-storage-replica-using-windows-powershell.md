@@ -74,3 +74,9 @@ The main steps in the process are:
 1. Use **Windows PowerShell** to validate the **Storage Replica** configuration.
 
  >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MBcw]
+
+---
+
+
+
+---
