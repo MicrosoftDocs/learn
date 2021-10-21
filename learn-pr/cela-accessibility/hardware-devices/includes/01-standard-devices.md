@@ -18,7 +18,7 @@ For “non-adaptive” or standard devices, it can be difficult to offer the sam
 
 For reference, the following image shows the difference in size between the Xbox Adaptive Controller, a standard Xbox controller, and two accessibility switch buttons.
 
-:::image type="content" source="../media/xac-and-standard.png" alt-text="TBD 1.":::
+:::image type="content" source="../media/xac-and-standard.png" alt-text="A collection of controllers including the Xbox Adaptive Control, a small red switch, a large green switch, and a standard Xbox Controller.":::
 
 However, it's important to remember that standard gaming devices like consoles, PCs, and headsets commonly act as the “gatekeeper” to beginning any form of gameplay. If a player cannot connect their console to their tv and power it on, they are blocked from using their adaptive controller for in-game play.
 
