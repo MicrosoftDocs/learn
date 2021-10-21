@@ -12,7 +12,7 @@ The model training process can be further broken down into the following steps:
 
 ## Starting the training process
 
-In order to start the training process, you need add a new Machine Learning Model (ML.NET) item to a new or existing .NET application.
+In order to start the training process, you need to add a new Machine Learning Model (ML.NET) item to a new or existing .NET application.
 
 > [!TIP]
 > Portability is one of the benefits that class libraries provide you. Class libraries make it easy to reference any models that are part of it from console, desktop, web, and any other type of .NET application. Therefore, it's recommended to add Machine Learning Model (ML.NET) items to a class library.
@@ -176,7 +176,7 @@ The columns are defined as follows:
 - **UDI**: The row's index.
 - **Product ID**: A product identifier containing a product type category and a variant-specific serial number.
 - **Type**: Product quality category. L, M, or H for low (50% of all products), medium (30%) and high (20%).
-- **Air temperature**, **Process temperature**, **Rotational speed**, **Torque**, **Tool wear**: Values collected form sensors.
+- **Air temperature  [K]**, **Process temperature  [K]**, **Rotational speed [rpm]**, **Torque [Nm]**, **Tool wear [min]**: Values collected form sensors.
 - **Machine failure**: Binary label (0 or 1) that indicates whether the machine has failed.
 - **TWF**, **HDF**, **PWF**, **OSF**, **RNF**: Independent machine failure modes. A value of 1 represents that respective failure mode occurred.
 
