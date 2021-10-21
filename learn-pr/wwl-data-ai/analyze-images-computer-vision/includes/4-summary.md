@@ -1,6 +1,6 @@
-The Computer Vision service gives you access to pre-trained models that enable you to generate descriptive captions, extract relevant tags, identify objects, determine image type, detect human faces, and more.
+The Computer Vision service provides many capabilities that you can use to analyze images, including generating a descriptive caption, extracting relevant tags, identifying objects, determining image type and metadata, detecting human faces, known brands, and celebrities, and others.
 
-You can continue to explore the Computer Vision service in the [service documentation](/azure/cognitive-services/computer-vision?azure-portal=true).
+You can find out more about using the Computer Vision service in the [service documentation](/azure/cognitive-services/computer-vision?azure-portal=true).
 
 ## Clean-up
 

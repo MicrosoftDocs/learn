@@ -35,7 +35,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     |---|---|
     | **Security** | |
     | Require secure transfer for REST API operations | *Check*. This setting controls whether **HTTP** can be used for the REST APIs that access data in the storage account. Setting this option to *enable* forces all clients to use SSL (**HTTPS**). Most of the time, you'll want to set this to *enable* as using HTTPS over the network is considered a best practice. |
-    | Enable infrastructure encryption | *Uncheck*. We'll allow clients to read data in that container without authorizing the request. |
+    | Enable infrastructure encryption | *Uncheck*. Provides additional layer of security. We'll allow clients to read data in that container without authorizing the request. |
     | Enable blob public access | *Check*. We'll allow clients to read data in that container without authorizing the request. |
     | Enable storage account key access | *Check*. We'll allow clients to access dat via SAS. |
     | Default to Azure Active Directory authorization in the Azure portal | *Uncheck*. Clients are public, not part of an Active Directory. |

@@ -129,3 +129,9 @@ The main steps in the process are:
 - Validate that the failover completed successfully.
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MC7j]
+
+---
+
+
+
+---
