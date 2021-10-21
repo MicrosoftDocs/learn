@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/18/2021
+  ms.date: 10/21/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -50,7 +50,7 @@ quiz:
     - content: "azure_hana_monitor_replication"
       isCorrect: false
       explanation: "Incorrect. To monitor the status of your storage replication progress, run the script azure_hana_replication_status. This command must be run from a unit that runs in the disaster recovery location to function as expected. The command works no matter whether replication is active. The command can be run for every HANA Large Instance unit of your tenant in the disaster recovery location. It can't be used to obtain details about the boot volume."
-  - content: "When disaster recovery functionality for HANA Large Instances is implemented by paying for another HANA Large Instance unit in the disaster recovery region, multiple volumes are replicated from the production region to the DR site. Which of the following volumes is NOT replicated?"
+  - content: "When disaster recovery functionality for HANA Large Instances is implemented by paying for another HANA Large Instance unit in the disaster recovery region, multiple volumes are replicated from the production region to the DR site. Which of the following volumes fails to be replicated?"
     choices:
     - content: "/hana/log"
       isCorrect: true

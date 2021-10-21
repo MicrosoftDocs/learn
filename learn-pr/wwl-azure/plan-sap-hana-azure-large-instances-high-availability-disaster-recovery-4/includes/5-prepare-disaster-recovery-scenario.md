@@ -18,7 +18,7 @@ Next, set up or adjust the storage snapshot backup schedule to get to your RTO a
 
  -  For the volumes covered by the combined snapshot (snapshot type HANA), set to replicate every 15 minutes to the equivalent storage volume targets in the disaster recovery site.
  -  For the transaction log backup volume (snapshot type logs), set to replicate every 3 minutes to the equivalent storage volume targets in the disaster recovery site.
- -  Perform a hana type storage snapshot every 30 minutes to 1 hour.
+ -  Perform a HANA type storage snapshot every 30 minutes to 1 hour.
  -  Perform SAP HANA transaction log backups every 5 minutes.
  -  Perform a logs type storage snapshot every 5-15 minutes. With this interval period, you achieve an RPO of around 15-25 minutes.
 
