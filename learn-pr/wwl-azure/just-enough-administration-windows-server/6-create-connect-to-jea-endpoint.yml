@@ -4,7 +4,7 @@ title: Create and connect to a JEA endpoint
 metadata:
   title: Create and connect to a JEA endpoint
   description: "Create and connect to a JEA endpoint"
-  ms.date: 10/20/2021
+  ms.date: 10/21/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -14,17 +14,3 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-create-connect-to-jea-endpoint.md)]
-quiz:
-  title: "Check your knowledge"
-  questions:
-  - content: "In addition to the name of the remote computer to which you are connecting, which of the following must you specify when connecting to a JEA endpoint using remote PowerShell?"
-    choices:
-    - content: "Endpoint configuration name"
-      isCorrect: true
-      explanation: "Correct: You must specify both the computername and the endpoint configuration name when making a remote PowerShell connection using JEA."
-    - content: "Session configuration file name"
-      isCorrect: false
-      explanation: "Incorrect: You need to have a session configuration file to configure a JEA endpoint, but do not need to specify the file name when remotely connecting to that endpoint."
-    - content: "Role capability file name"
-      isCorrect: false
-      explanation: "Incorrect: You need to have a role capability file to configure a JEA endpoint, but do not need to specify the file name when remotely connecting to that endpoint."

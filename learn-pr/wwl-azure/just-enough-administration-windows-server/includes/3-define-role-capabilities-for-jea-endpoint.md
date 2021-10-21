@@ -38,3 +38,9 @@ Using the following process can help you decide how to configure your role capab
 
 
 Choose the best response for each of the questions below. Then select **Check your answers**.
+
+## Multiple Choice
+Which of the following settings should be configured in a role capability file to specify the exact PowerShell cmdlets that are available in a JEA session?
+()VisibleProviders{{Incorrect. Use this section of a role capability file to specify which PowerShell providers can be used in a JEA session.}}
+(x)VisibleCmdlets{{Correct. Use this section of a role capability file to specify which PowerShell cmdlets can be used in a JEA session.}}
+()VisibleFunctions{{Incorrect. Use this section of a role capability file to specify which PowerShell functions, rather than cmdlets, can be used in a JEA session.}}

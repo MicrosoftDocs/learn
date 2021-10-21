@@ -58,5 +58,10 @@ The Hyper-V administrator connects to the VM the same way they would connect to 
 
 ## Check your knowledge
 
-
 Choose the best response for each of the questions below. Then select **Check your answers**.
+
+## Multiple Choice
+In addition to the name of the remote computer being connected to, which of the following must be specified when connecting to a JEA endpoint using remote PowerShell?
+(x)Endpoint configuration name{{Correct: You must specify both the computername and the endpoint configuration name when making a remote PowerShell connection using JEA.}}
+()Session configuration file name{{Incorrect: You need to have a session configuration file to configure a JEA endpoint, but do not need to specify the file name when remotely connecting to that endpoint.}}
+()Role capability file name{{Incorrect: You need to have a role capability file to configure a JEA endpoint, but do not need to specify the file name when remotely connecting to that endpoint.}}

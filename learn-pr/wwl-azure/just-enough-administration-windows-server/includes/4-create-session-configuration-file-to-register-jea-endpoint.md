@@ -24,5 +24,10 @@ For a list of all the options when creating session configuration files, refer t
 
 ## Check your knowledge
 
-
 Choose the best response for each of the questions below. Then select **Check your answers**.
+
+## Multiple Choice
+Which of the following settings should be configured in a session configuration file to ensure that a special account with local administrative credentials is used during a JEA session instead of the connecting users account?
+()SessionType{{Incorrect. The SessionType setting allows you to configure the sessions default settings but does not allow you to assign a special virtual account that has local administrative privileges.}}
+(x)RunAsVirtualAccount{{Correct. The RunAsVirtualAccount setting allows you to have the JEA session use a special virtual account with local administrative privileges.}}
+()RunAsVirtualAccountGroup{{Incorrect. The RunAsVirtualAccountGroup allows you to have the JEA session use a special virtual account that is a member of a specified security group, but unless this specified security group has been granted administrative privileges, does not provide any extra privileges to the virtual account.}}
