@@ -20,27 +20,27 @@ quiz:
           explanation: "Incorrect. Environment variables are commonly used and aren't the less secure solution."
         - content: "Store them in the application source code."
           isCorrect: true
-          explanation: "You are correct. Storing secrets in the source code means that anybody with access to your code will know your secrets."
+          explanation: "You're correct. Storing secrets in the source code means that anybody with access to your code will know your secrets."
         - content: "Use a Secrets engine."
           isCorrect: false
           explanation: "Incorrect. A Secrets engine, like Azure Key Vault, is the best solution for storing your secrets."
         - content: "Store them using Kubernetes secrets."
           isCorrect: false
-          explanation: "Incorrect. Kubernetes secrets is commonly used with Kubernetes, and isn't the less secure solution."
-    - content: "How can a Java application access secrets stored in Azure Key Vault?"
+          explanation: "Incorrect. Kubernetes secrets are commonly used with Kubernetes, and aren't the less secure solution."
+    - content: "How can a Java application access secret stored in Azure Key Vault?"
       choices:
         - content: "The application needs to store a login/password to Azure Key Vault in its source code"
           isCorrect: false
           explanation: "Incorrect. Storing secrets in the application source is a bad practice."
         - content: "All applications have automatic access to the Azure Key Vault instances stored in their resource group"
           isCorrect: false
-          explanation: "Incorrect. Applications don't have access to any Azure Key Vault instance, unless they have specifically been granted that access."
-        - content: "An IT Operator needs to grant the application an access to Azure Key Vault"
+          explanation: "Incorrect. Applications don't have access to any Azure Key Vault instance, unless they've been granted that access."
+        - content: "An IT Operator needs to grant the application access to Azure Key Vault"
           isCorrect: true
-          explanation: "You are correct. An IT Operator needs to grant access permission, before the Java application can access the secrets."
+          explanation: "You're correct. An IT Operator needs to grant access permission, before the Java application can access the secrets."
         - content: "Azure Key Vault secrets are automatically exposed as environment variables to the application"
           isCorrect: false
-          explanation: "Incorrect. You need a specific SDK to access the secrets, and exposing them as environment variables wouldn't be very secure."
+          explanation: "Incorrect. You need a specific SDK to access the secrets, and exposing them as environment variables wouldn't be secure."
     - content: "What secrets can you store inside Azure Key Vault?"
       choices:
         - content: "Database passwords."
@@ -54,4 +54,4 @@ quiz:
           explanation: "Incorrect. You can store more than SSL/TLS certificates in Azure Key Vault."
         - content: "All of the above."
           isCorrect: true
-          explanation: "Correct. You can store your database passwords, secret access tokens and SSL/TLS certificates in Azure Key Vault."
+          explanation: "Correct. You can store your database passwords, secret access tokens, and SSL/TLS certificates in Azure Key Vault."
