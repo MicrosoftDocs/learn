@@ -16,34 +16,34 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
 - Configure Git locally
 - Deploy our Web API to our App Service instance
 
-1. Run the following git clone command in the Cloud Shell to clone the repo that contains the source for our app, as well as our setup script from GitHub.
+1. Run the following git command in the Cloud Shell to clone the GitHub repo that contains the source for our app.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-publish-manage-apis-with-azure-api-management.git
     ```
 
-1. Open your local repo folder and list the contents by running the following bascommands.
+1. After the operation has completed, open your local repo folder and list its contents by running the following commands.
 
     ```bash
     cd mslearn-publish-manage-apis-with-azure-api-management
     ls -l
     ```
 
-   One of the files is setup.sh. As its name suggests, it is the script we'll run to setup our test API. 
+   One of the files is setup.sh. As its name suggests, it is the script we'll run to set up our test API. 
 
 1. Enter the following command to run this script. It will generate a public web app that exposes an OpenAPI interface. 
     ```bash
     bash setup.sh
     ```
 
-    The script takes about a minute to run. During deployment, all dependencies needed for our app to run are automatically installed on the remote App Service. The output lists all the operations. When the script finishes, The ast two lines are two URLs. You can use these URLs to test the app deployment. 
+    The script takes about a minute to run. During deployment, all dependencies needed for our app to run are automatically installed on the remote App Service. The output lists all the operations. When the script finishes, the last two lines are URLs that you'll use to test the app deployment. 
 
 1. To test that our app deployed correctly, copy the first URL (Swagger URL) from Cloud Shell and paste it into a new tab of your browser. 
  
    The browser should display the swagger UI for our app and declare the following RESTful endpoints:
 
     - **api/inventory** generates a list of products and the number in stock
-    - **api/inventory/{productid}** returns the number in stock for the specified productid (an integer)
+    - **api/inventory/{productid}** returns the number in stock for the specified product ID (an integer)
     - **api/Products** generates a list of products
     - **api/Products/{productid}** returns the details for the specified productid
 
@@ -76,12 +76,10 @@ The final task in this exercise is to create an API gateway in the Azure portal.
     | Pricing Tier | `Consumption` |
 
    > [!NOTE]
-   > The consumption plan is much faster to generate output during the testing process. The overall experience is very similar to the other pricing tiers and the resources will be deleted automatically when the sandbox expires 
+   > The consumption plan is much faster to generate output during the testing process. The overall experience is very similar to the other pricing tiers and the resources will be deleted automatically when the sandbox expires. 
 
 1. Select **Review+create** to validate your settings.
 
 1. When validation has passed, select **Create**. Deployment may take several minutes to complete. When deployment has completed, you'll see the gateway listed in the Azure resources. You'll also receive an email message. It may take several minutes for deployment to complete.
 
-1. When deployment is complete, select **Go to resource group** to view the resource group. Your API Management service should display in the list of resources at the bottom of the resource group pane.. 
-
-
+1. When deployment is complete, select **Go to resource group** to view the resource group. Your API Management service should display in the list of resources at the bottom of the page. 
