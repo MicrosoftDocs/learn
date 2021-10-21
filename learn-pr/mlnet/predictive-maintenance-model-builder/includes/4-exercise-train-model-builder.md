@@ -67,19 +67,18 @@ After some time, a file with the name *ai4i2020.csv* should appear in the locati
 
 ### Prepare your data
 
-Open the *ai4i2020.csv* file in the text editor of your choice. 
+1. Open the *ai4i2020.csv* file in the text editor of your choice.
+1. The original column names contain special bracket characters. To prevent issues parsing the data, remove the special characters from the colum names.
 
-The original column names contain special bracket characters. To prevent issues parsing the data, remove the special characters from the colum names:
+    **Original header**
 
-**Original column names**
+    UDI,Product ID,Type,Air temperature [K],Process temperature [K],Rotational speed [rpm],Torque [Nm],Tool wear [min],Machine failure,TWF,HDF,PWF,OSF,RNF
 
-UDI,Product ID,Type,Air temperature [K],Process temperature [K],Rotational speed [rpm],Torque [Nm],Tool wear [min],Machine failure,TWF,HDF,PWF,OSF,RNF
+    **Updated header**
 
-**Updated column names**
+    UDI,Product ID,Type,Air temperature,Process temperature,Rotational speed,Torque,Tool wear,Machine failure,TWF,HDF,PWF,OSF,RNF
 
-UDI,Product ID,Type,Air temperature,Process temperature,Rotational speed,Torque,Tool wear,Machine failure,TWF,HDF,PWF,OSF,RNF
-
-Save the *ai4i2020.csv* file with your changes.
+1. Save the *ai4i2020.csv* file with your changes.
 
 ### Choose your data source type
 
