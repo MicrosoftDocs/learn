@@ -36,7 +36,9 @@ This phase should produce the following set of items:
      -  [SAP ASCS/SCS instance multi-SID high availability with Windows Server Failover Clustering and shared disk on Azure](/azure/virtual-machines/workloads/sap/sap-ascs-ha-multi-sid-wsfc-shared-disk)
      -  [SAP ASCS/SCS instance multi-SID high availability with Windows Server Failover Clustering and file share on Azure](/azure/virtual-machines/workloads/sap/sap-ascs-ha-multi-sid-wsfc-file-share)
 
-## 3. An inventory of all SAP interfaces (SAP and non-SAP).
+## 3. An inventory of all SAP interfaces.
+
+Include all SAP and non-SAP interfaces.
 
 ## 4. Design of foundational services, including:
 
