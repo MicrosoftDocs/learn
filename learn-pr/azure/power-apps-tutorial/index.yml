@@ -14,7 +14,7 @@ abstract: |
   By the end of this module you will be able to:
   - Understand about Power Apps and its use cases.
   - Learn about some of the Mixed Reality components included in Power Apps such as Measure in MR and View in MR
-  - How to configure, set up and build a "Sales" oriented Mixed reality application with Power Apps.
+  - Configure, set up and build a "Sales" oriented Mixed reality application with Power Apps.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
