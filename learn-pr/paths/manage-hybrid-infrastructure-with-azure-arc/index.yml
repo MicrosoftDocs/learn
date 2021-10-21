@@ -26,6 +26,7 @@ products:
 modules:
 - learn.azure.intro-to-azure-arc
 - learn.azure.intro-to-arc-for-servers
+- learn.azure.plan-deploy-azure-arc-enabled-servers
 - learn.azure.intro-to-arc-enabled-kubernetes
 - learn.azure.intro-to-arc-enabled-data-services
 trophy:

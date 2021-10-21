@@ -6,9 +6,9 @@ In AD DS, you must provide all users that  require access to network resources w
 
 In Windows Server, a user account is an object that contains all the information that defines a user. A user account includes:
 
-- The username
-- A user password
-- Group memberships
+- The username.
+- A user password.
+- Group memberships.
 
 A user account also contains settings that you can configure based on your organizational requirements.
 
@@ -16,11 +16,11 @@ A user account also contains settings that you can configure based on your organ
 
 The username and password of a user account serve as the user’s sign-in credentials. A user object also includes several other attributes that describe and manage the user. You can use the following to create and manage user objects in AD DS:
 
-- Active Directory Administrative Center
-- Active Directory Users and Computers
-- Windows Admin Center
-- Windows PowerShell
-- The `dsadd` command-line tool
+- Active Directory Administrative Center.
+- Active Directory Users and Computers.
+- Windows Admin Center.
+- Windows PowerShell.
+- The `dsadd` command-line tool.
 
 ### What are managed service accounts?
 
@@ -45,7 +45,7 @@ To support group managed service account functionality, your environment must me
 
 - You must create a KDS root key on a domain controller in the domain.
 
-To create the KDS root key, run the following command from the Active Directory Module for Windows PowerShell on a Windows Server domain controller:
+To create the KDS root key, run the following command from the Active Directory Module for Windows PowerShell on a Windows Server domain controller
 
 ```PowerShell
 Add-KdsRootKey –EffectiveImmediately

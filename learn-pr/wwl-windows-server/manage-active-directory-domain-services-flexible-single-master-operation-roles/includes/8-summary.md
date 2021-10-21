@@ -4,8 +4,7 @@ Using the knowledge acquired in this module, you deployed AD DS domain controlle
 
 You can learn more by reviewing the following documents.
 
-- [AD DS Deployment](https://docs.microsoft.com/windows-server/identity/ad-ds/deploy/ad-ds-deployment?azure-portal=true)
-- [Planning Operations Master Role Placement](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/planning-operations-master-role-placement?azure-portal=true)
-- [Planning Global Catalog Server Placement](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/planning-global-catalog-server-placement?azure-portal=true)
-- [How to Extend the Schema](https://docs.microsoft.com/windows/win32/ad/how-to-extend-the-schema?azure-portal=true)
-- [Course WS-011T00-A: Windows Server 2019 Administration](https://docs.microsoft.com/learn/certifications/courses/ws-011t00?azure-portal=true)
+- [AD DS Deployment](/windows-server/identity/ad-ds/deploy/ad-ds-deployment?azure-portal=true)
+- [Planning Operations Master Role Placement](/windows-server/identity/ad-ds/plan/planning-operations-master-role-placement?azure-portal=true)
+- [Planning Global Catalog Server Placement](/windows-server/identity/ad-ds/plan/planning-global-catalog-server-placement?azure-portal=true)
+- [How to Extend the Schema](/windows/win32/ad/how-to-extend-the-schema?azure-portal=true)
