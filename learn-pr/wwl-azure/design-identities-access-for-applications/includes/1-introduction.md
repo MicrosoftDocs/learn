@@ -6,7 +6,7 @@ Imagine that you work as an Architect at Tailwind Traders, a company that specia
 
 ### Learning objectives
 
-In this module, you’ll learn how to:
+In this module, you’ll learn how to:  
 
 - Identify application identity and access requirements 
 - Design managed Identities for applications 
