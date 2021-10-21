@@ -2,7 +2,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 ## Open a blank app
 
-1. Go to the Power Apps home page. Then, under **Make your own app**, select **Canvas app** from blank.
+1. Go to the Power Apps home page. Then, under **Make your own app**, select **Canvas app** from blank to create a canvas application.
 
     :::image type="content" source="../media/canvas-app.png" alt-text="Screenshot of select canvas app from blank." lightbox="../media/canvas-app.png":::
 

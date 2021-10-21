@@ -8,7 +8,7 @@ We will be using SharePoint as our primary data source for this application. You
 
 1. Sign in to the [SharePoint portal](https://netorg4603737.sharepoint.com/_layouts/15/sharepoint.aspx) with your Microsoft organization credentials.
 
-2. Select **+ Create site** on the SharePoint start page.
+2. Select **+ Create site** on the SharePoint start page to create a **SharePoint** site.
 
     :::image type="content" source="../media/create-site.png" alt-text="Screenshot showing to create site on the sharePoint start page." lightbox="../media/create-site.png":::
 
@@ -22,7 +22,7 @@ We will be using SharePoint as our primary data source for this application. You
 
     * Select **Language** of your choice from the dropdown.
 
-4. Select **Finish**.
+4. Select **Finish** to create a **SharePoint** site in which you can load your data.
 
     :::image type="content" source="../media/update-site-details.png" alt-text="Screenshot of updating site details." lightbox="../media/update-site-details.png":::
 
@@ -41,7 +41,7 @@ For our **Easy Sales** application, we will create separate lists for each produ
 
     :::image type="content" source="../media/select-list.png" alt-text="Screenshot of select list." lightbox="../media/select-list.png":::
 
-2. In the **Create a List** window, select **Blank list**.
+2. In the **Create a List** window, select **Blank list** to create a **SharePoint** list from scratch.
 
       :::image type="content" source="../media/select-blank-list.png" alt-text="Screenshot of select Blank List." lightbox="../media/select-blank-list.png":::
 
