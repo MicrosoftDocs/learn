@@ -13,9 +13,3 @@ The ability to recognize printed and handwritten text in images, is beneficial i
 - note taking
 - digitizing forms, such as medical records or historical documents
 - scanning printed or handwritten checks for bank deposits
-
-## Learning objectives 
-
-- Identify Azure services for OCR
-- Provision a Computer Vision resource
-- Use a Computer Vision resource to read text in an image

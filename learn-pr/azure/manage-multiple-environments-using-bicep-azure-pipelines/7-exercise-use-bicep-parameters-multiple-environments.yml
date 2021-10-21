@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.exercise-use-bicep-parameters-multiple-environments
+title: Exercise - Use Bicep parameters with multiple environments
+metadata:
+  unitType: exercise
+  title: Exercise - Use Bicep parameters with multiple environments
+  description: Update a deployment pipeline to use variable groups for each environment's settings.
+  ms.date: 10/18/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-exercise-use-bicep-parameters-multiple-environments.md)]
