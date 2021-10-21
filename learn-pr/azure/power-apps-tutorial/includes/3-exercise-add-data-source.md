@@ -1,4 +1,4 @@
-*Easy-Sales* is a sales oriented Mixed Reality application built to improvise the shopping experience. The salespeople using this application can inspect and measure the customer's surrounding to check which products are feasible in the space. They can also help cutomers visualize the product through Mixed Reality
+*Easy-Sales* is a sales oriented Mixed Reality application built to improvise the shopping experience. The salespeople using this application can inspect and measure the customer's surrounding to check which products are feasible in the space. They can also help customers visualize the product through Mixed Reality
 
 In Power Apps, you can connect your data with an already existing application or to an application that you're building from scratch. Your app can connect to SharePoint, Microsoft Dataverse, Salesforce, OneDrive, or any other data source.
 
