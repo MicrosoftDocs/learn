@@ -68,7 +68,7 @@ After some time, a file with the name *ai4i2020.csv* should appear in the locati
 ### Prepare your data
 
 1. Open the *ai4i2020.csv* file in the text editor of your choice.
-1. The original column names contain special bracket characters. To prevent issues parsing the data, remove the special characters from the colum names.
+1. The original column names contain special bracket characters. To prevent issues parsing the data, remove the special characters from the column names.
 
     **Original header**
 
