@@ -45,7 +45,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define *
         - **Name**: AdventureWorks Products
         - **Description**: Product list via HTTP
         - **Connect via integration runtime**: AutoResolveIntegrationRuntime
-        - **Base URL**: `https://raw.githubusercontent.com/GraemeMalcolm/data-stuff/main/data/products.csv` <!-- Replace with MicrosoftLearning repo when ready -->
+        - **Base URL**: `https://raw.githubusercontent.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/master/Azure-Synapse/products.csv`
         - **Server Certificate Validation**: Enable
         - **Authentication type**: Anonymous
 4. After creating the connection, on the **Source/Dataset** substep, ensure the following settings are selected, and then select **Next >**:
