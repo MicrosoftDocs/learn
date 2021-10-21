@@ -1,8 +1,8 @@
 PowerShell lets you write commands and execute them immediately. This is known as **interactive mode**.
 
-Recall that the overall goal in the Customer Relationship Management (CRM) example is to create three test environments containing Virtual Machines. You will use resource groups to ensure the VMs are organized into separate environments: one for unit testing, one for integration testing, and one for acceptance testing. You only need to create the resource groups once, which means using the interactive mode of PowerShell is a good choice.
+Recall that the overall goal in the Customer Relationship Management (CRM) example is to create three test environments containing Virtual Machines. You will use resource groups to ensure the VMs are organized into separate environments: one for unit testing, one for integration testing, and one for acceptance testing. You only need to create the resource groups once, so using the interactive mode of PowerShell in this use case is a good choice.
 
-When you enter a command into PowerShell, it matches it to a _cmdlet_ which then performs the requested action. We're going to look at some of the common commands you can use, and then look at installing the Azure support for PowerShell.
+When you enter a command into PowerShell, PowerShell matches the command to a _cmdlet_, and PowerShell then performs the requested action. We'll look at some common commands you can use, and then we'll look into installing the Azure support for PowerShell.
 
 ## What are PowerShell cmdlets?
 
@@ -12,7 +12,7 @@ The base PowerShell product ships with cmdlets that work with features such as s
 
 Cmdlets follow a verb-noun naming convention; for example, `Get-Process`, `Format-Table`, and `Start-Service`. There is also a convention for verb choice: "get" to retrieve data, "set" to insert or update data, "format" to format data, "out" to direct output to a destination, and so on.
 
-Cmdlet authors are encouraged to include a help file for each cmdlet. The `Get-Help` cmdlet displays the help file for any cmdlet. For example, we could get help on the `Get-ChildItem` cmdlet with the following statement:
+Cmdlet authors are encouraged to include a help file for each cmdlet. The `Get-Help` cmdlet displays the help file for any cmdlet. For example, to get help on the `Get-ChildItem` cmdlet, enter the following statement in a Windows PowerShell session:
 
 ```powershell
 Get-Help -Name Get-ChildItem -Detailed
@@ -40,7 +40,7 @@ Script     2.0.0      PSReadline                          {Get-PSReadLineKeyHand
 
 ## What is the Az PowerShell module?
 
-**Az** is the formal name for the Azure PowerShell module containing cmdlets to work with Azure features. It contains hundreds of cmdlets that let you control nearly every aspect of every Azure resource. You can work with resource groups, storage, virtual machines, Azure Active Directory, containers, machine learning, and so on. This module is an open source component [available on GitHub](https://github.com/Azure/azure-powershell).
+**Az** is the formal name for the Azure PowerShell module containing cmdlets to work with Azure features. It contains hundreds of cmdlets that let you control nearly every aspect of every Azure resource. You can work with resource groups, storage, virtual machines, Azure Active Directory, containers, machine learning, and so on. This module is an openosource component [available on GitHub](https://github.com/Azure/azure-powershell).
 
 > [!NOTE]
 > You may have seen or used Azure PowerShell commands that used a `-AzureRM` format. Because Az PowerShell modules now have all the capabilities of AzureRM PowerShell modules and more, we'll retire AzureRM PowerShell modules on 29 February 2024. To avoid service interruptions, [update your scripts](https://aka.ms/azpsmigrate) that use AzureRM PowerShell modules to use Az PowerShell modules by 29 February 2024. To automatically update your scripts, follow the [quickstart guide](/powershell/azure/quickstart-migrate-azurerm-to-az-automatically).
@@ -55,7 +55,7 @@ To install the latest Azure Az PowerShell module, run the following commands:
 
 1. Open the **Start** menu, and enter **PowerShell**.
 
-1. Click the **PowerShell** icon.
+1. Select the **PowerShell** icon.
 
 1. Enter the following command, and then press <kbd>Enter</kbd>.
 
@@ -65,7 +65,7 @@ To install the latest Azure Az PowerShell module, run the following commands:
 
 This installs the module for your current user (controlled by the `Scope` parameter).
 
-The command relies on NuGet to retrieve components, depending on the version of NuGet you have installed you might get a prompt to download and install the latest version of NuGet.
+The command relies on NuGet to retrieve components, so depending on the version of NuGet you have installed, you might be prompted to download and install the latest version of NuGet. 
 
 ```Output
 NuGet provider is required to continue
@@ -74,19 +74,25 @@ PowerShellGet requires NuGet provider version '2.8.5.201' or newer to interact w
 'C:\Users\<username>\AppData\Local\PackageManagement\ProviderAssemblies'. You can also install the NuGet provider by running
 'Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force'. Do you want PowerShellGet to install and import
  the NuGet provider now?
+ [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"):
 ```
 
-By default, the PowerShell Gallery isn't configured as a trusted repository for PowerShellGet. Each time you perform an installation from an untrusted repository, you'll see the following prompt:
+Enter **Y**, and then press <kbd>Enter</kbd>.
+
+By default, the PowerShell Gallery isn't configured as a trusted repository for PowerShellGet. Each time you perform an installation from an untrusted repository, you'll be prompted to confirm you want to install the module with following output:
 
 ```Output
 You are installing the modules from an untrusted repository. If you trust this repository, change its
 InstallationPolicy value by running the Set-PSRepository cmdlet. Are you sure you want to install the modules from
 'PSGallery'?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
 ```
+
+Enter **Y** or **A**, and then press <kbd>Enter</kbd>.
 
 #### Script execution failed
 
-Depending on your security configuration, `Import-Module` might fail with something like the following.
+Depending on your security configuration, `Import-Module` might fail with something like the following output:
 
 ```Output
 import-module : File C:\Program Files\PowerShell\Modules\az\6.3.0\Az.psm1 cannot be loaded
@@ -99,30 +105,36 @@ At line:1 char:1
     + FullyQualifiedErrorId : UnauthorizedAccess,Microsoft.PowerShell.Commands.ImportModuleCommand
 ```
 
-This normally indicates that the execution policy is "Restricted", meaning you can't execute modules you download from an external source - including the PowerShell Gallery. You can check whether this is the case by executing the cmdlet `Get-ExecutionPolicy`. If it returns "Restricted", then do the following:
+Or by hanging (not responding at all). In this case, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the program.
+
+Both behaviors typically indicate that the execution policy is "Restricted", meaning you can't run  modules that you download from an external source -- including the PowerShell Gallery. You can check whether this is the case by running the cmdlet `Get-ExecutionPolicy`. If it returns "Restricted", then do the following:
 
 1. Use the `SetExecutionPolicy` cmdlet to change the policy to "RemoteSigned":
 
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
+    ```powershell
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+    ```
 
-This will prompt you for permission:
+    This will prompt you for permission:
 
-```Output
-The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose
-you to the security risks described in the about_Execution_Policies help topic at
-https:/go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy?
-[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): Y
-```
+    ```Output
+    The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose
+    you to the security risks described in the about_Execution_Policies help topic at
+    https:/go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy?
+    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): Y
+    ```
 
-You should then be able to use `Import-Module` to load the cmdlets.
+1. Enter **Y** or **A**, and then press <kbd>Enter</kbd>.
+
+1. At the command prompt, use the up arrow on your keyboard and rerun the `Install-Module` command for Azure.
+
+You should be able to see the Az module loading. After it completes you will be able to use `Import-Module` to load the cmdlets.
 
 :::zone-end
 
 ::: zone pivot="linux,macos"
 
-We use the same commands to install the Azure PowerShell on either Linux or macOS.
+Installation of Azure PowerShell on either Linux or macOS uses the same commands.
 
 1. In a terminal, run the following command to launch PowerShell.
 
@@ -186,7 +198,7 @@ Connect-AzAccount
 
 If you are new to Azure, you probably only have a single subscription. But if you have been using Azure for a while, you may have created multiple Azure subscriptions. You can configure Azure PowerShell to execute commands against a particular subscription.
 
-You can only be in one subscription at a time. Use the `Get-AzContext` cmdlet to determine which subscription is active. If it's not the correct one, you can change it.
+You can only be in one subscription at a time. Use the `Get-AzContext` cmdlet to determine which subscription is active. If it's not the correct one, you can change subscriptions using another cmdlet.
 
 1. Get a list of all subscription names in your account with the `Get-AzSubscription` command.
 
@@ -225,18 +237,18 @@ ExerciseResources                  eastus         Succeeded                     
 
 As you know, when you are creating resources in Azure, you will always place them into a resource group for management purposes. A resource group is often one of the first things you will create when starting a new application.
 
-You can create resource groups with the `New-AzResourceGroup` cmdlet. You must specify a name and location. The name must be unique within your subscription. The location determines where the metadata for your resource group will be stored (which may be important to you for compliance reasons). You use strings like "West US", "North Europe", or "West India" to specify the location. As with most of the Azure cmdlets, `New-AzResourceGroup` has many optional parameters; however, the core syntax is:
+You can create resource groups by using the `New-AzResourceGroup` cmdlet. You must specify a name and location. The name must be unique within your subscription. The location determines where the metadata for your resource group will be stored (which may be important to you for compliance reasons). You use strings like "West US", "North Europe", or "West India" to specify the location. As with most of the Azure cmdlets, `New-AzResourceGroup` has many optional parameters; however, the core syntax is:
 
 ```powershell
 New-AzResourceGroup -Name <name> -Location <location>
 ```
 
 > [!NOTE]
-> Remember, we will be working in the Azure sandbox which creates the Resource Group for you. The above command would be used if you work in your own subscription.
+> Remember, we will be working in an active Azure sandbox, which creates the Resource Group for you. Use the command above if you prefer to work in your own subscription.
 
 ### Verify the resources
 
-The `Get-AzResource` lists your Azure resources. This is useful here to verify whether creation of the resource group was successful.
+The `Get-AzResource` lists your Azure resources, which is useful here to verify that creation of the resource group was successful.
 
 ```powershell
 Get-AzResource
@@ -264,7 +276,7 @@ Azure PowerShell provides the `New-AzVm` cmdlet to create a virtual machine. The
 - **Name**: The name of the VM in Azure.
 - **Location**: Geographic location where the VM will be provisioned.
 - **Credential**: An object containing the username and password for the VM admin account. We will use the `Get-Credential` cmdlet. This cmdlet will prompt for a username and password and package it into a credential object.
-- **Image**: The operating system image to use for the VM. This is often a Linux distribution, or Windows Server.
+- **Image**: The operating system image to use for the VM, which is typically a Linux distribution, or Windows Server.
 
 ```powershell
    New-AzVm
@@ -295,13 +307,13 @@ The `AzVM` suffix is specific to VM-based commands in PowerShell. There are seve
 
 #### Example: Getting information for a VM
 
-You can list the VMs in your subscription with the `Get-AzVM -Status` command. This can also specify a VM with the `-Name` property. Here we assign it to a PowerShell variable:
+You can list the VMs in your subscription by using the `Get-AzVM -Status` command. This command also supports entering a specific VM by including the `-Name` property. Here we assign it to a PowerShell variable:
 
 ```powershell
 $vm = Get-AzVM  -Name MyVM -ResourceGroupName ExerciseResources
 ```
 
-The interesting thing is this is an _object_ you can interact with. For example, you can take that object, make changes and then push changes back to Azure with the `Update-AzVM` command:
+The interesting thing is that  now your VM is an _object_ you can interact with. For example, you can make changes to that object, and then push changes back to Azure by using the `Update-AzVM` command:
 
 ```powershell
 $ResourceGroupName = "ExerciseResources"
@@ -311,4 +323,4 @@ $vm.HardwareProfile.vmSize = "Standard_DS3_v2"
 Update-AzVM -ResourceGroupName $ResourceGroupName  -VM $vm
 ```
 
-PowerShell's interactive mode is appropriate for one-off tasks. In our example, we'll likely use the same resource group for the lifetime of the project, which means creating it interactively is reasonable. Interactive mode is often quicker and easier for this task than writing a script and executing that script exactly once.
+The interactive mode in PowerShell is appropriate for one-off tasks. In our example, we'll likely use the same resource group for the lifetime of the project, so creating it interactively is reasonable. Interactive mode is often quicker and easier for this task than writing a script and executing that script exactly once.
