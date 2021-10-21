@@ -19,5 +19,3 @@ This includes:
     
      -  Availability Sets
      -  Availability Zones
-
-It is important to note that these two contexts complement each other, so your design should combine benefits provided by each of them.
