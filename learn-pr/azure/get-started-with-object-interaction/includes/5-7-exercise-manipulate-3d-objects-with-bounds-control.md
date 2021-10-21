@@ -16,7 +16,7 @@ The ObjectManipulator script makes an object movable, scalable, and rotatable us
 
     :::image type="content" source="../media/audio-folder-selected.png" alt-text="Screenshot of Unity Project window with Audio folder selected." lightbox="../media/audio-folder-selected.png":::
 
-4. In the Hierarchy pane, reselect all the **rover part objects**, then in the Inspector pane, selectd **Add Component** to add the **Audio Sources** component and configure it as follows:
+4. In the Hierarchy pane, reselect all the **rover part objects**, then in the Inspector pane, select **Add Component** to add the **Audio Sources** component and configure it as follows:
     * Assign the **MRTK_Scale_Start** audio clip to the **AudioClip** field
     * Uncheck the **Play On Awake** checkbox
     * Change **Spatial Blend** to **1**
@@ -80,6 +80,6 @@ The ObjectManipulator script makes an object movable, scalable, and rotatable us
 
     :::image type="content" source="../media/bounds-control-disable.png" alt-text="Screenshot of Unity with BoundsControl_Disable button object selected and Button Config Helper component configured." lightbox="../media/bounds-control-disable.png":::
 
-4. If you now enter Game mode and select **Enable** to enable Bounds Control, you can use near or far interaction to move, rotate, and scale  Bounds Control, and select ** Disabl** to disable the Bounds Control again:
+4. If you now enter Game mode and select **Enable** to enable Bounds Control, you can use near or far interaction to move, rotate, and scale  Bounds Control, and select ** Disable** to disable the Bounds Control again:
 
     :::image type="content" source="../media/bounds-control-manipulated.png" alt-text="Screenshot of Unity Play mode split view with Bounds Control being manipulated." lightbox="../media/bounds-control-manipulated.png":::

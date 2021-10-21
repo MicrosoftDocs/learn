@@ -9,7 +9,7 @@ There are several ways to provide inputs. Inputs trigger certain events and perf
 
     :::image type="content" source="../media/button-object-selected.png" alt-text="Screenshot of Unity with newly created Buttons object selected and positioned." lightbox="../media/button-object-selected.png":::
 
-2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder, click-and-drag the **PressableRoundButton** prefab onto the **Buttons** object, then right-click the PressableRoundButton and select **Duplicate** to create a copy, repeat until you've a total of three PressableRoundButton objects nnder **Buttons**:
+2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder, click-and-drag the **PressableRoundButton** prefab onto the **Buttons** object, then right-click the PressableRoundButton and select **Duplicate** to create a copy, repeat until you've a total of three PressableRoundButton objects under **Buttons**:
 
     :::image type="content" source="../media/pressable-round-button.png" alt-text="Screenshot of Unity with newly added PressableRoundButton prefabs." lightbox="../media/pressable-round-button.png":::
 
