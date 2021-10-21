@@ -13,7 +13,7 @@ Internally, managed identities are service principals of a special type, which a
 
 The table below highlights some of the key differences between the two types of managed identities.
 
-|  | System-assigned managed identity | User-assigned managed identity |
+| Characteristic | System-assigned managed identity | User-assigned managed identity |
 |--|--|--|
 | Creation | Created as part of an Azure resource (for example, an Azure virtual machine or Azure App Service) | Created as a stand-alone Azure resource |
 | Lifecycle | Shared lifecycle with the Azure resource that the managed identity is created with. When the parent resource is deleted, the managed identity is deleted as well. | Independent life-cycle.  Must be explicitly deleted. |
