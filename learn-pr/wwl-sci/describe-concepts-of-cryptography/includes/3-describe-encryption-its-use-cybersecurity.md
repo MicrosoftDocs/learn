@@ -25,7 +25,7 @@ Consider a group or organization where each individual needs the capability to c
 
 :::image type="content" source="../media/symmetric-encryption.png" alt-text="This diagram shows how a cryptographic key is needed by all recipients for the symmetric key encryption to work":::
 
-Now let’s consider an organization with only 100 employees where each person needs to communicate with every other person in a secure manner. In this case, 4950 keys need to be created and securely shared and managed. Lastly, imagine a government-based organization with 1000 employees where each individual need to communicate securely. The number of keys required is 450,000. This growth can be expressed with a formula: p x (p-1) /2, where p is the number of people that need to communicate.
+Now let’s consider an organization with only 100 employees where each person needs to communicate with every other person in a secure manner. In this case, 4,950 keys need to be created and securely shared and managed. Lastly, imagine a government-based organization with 1,000 employees where each individual need to communicate securely. The number of keys required is 450,000. This growth can be expressed with a formula: p x (p-1) /2, where p is the number of people that need to communicate.
 
 As the number of people in the organization grows the number of keys required grows significantly, making the secure management and distribution of the secret keys, used in symmetric encryption, difficult, and costly.
 
@@ -37,7 +37,7 @@ Asymmetric encryption changed the way cryptographic keys were shared. Rather tha
 
 :::image type="content" source="../media/key-pair-generation.png" alt-text="This diagram shows the creation of a key pair and how you can share the public key, but need to keep the private key safe.":::
 
-Asymmetric encryption, with its use of a public key and private key removes the burden of secure distribution of keys. This concept also addresses the proliferation of keys we saw in symmetric encryption. Consider the example of the government-based organization with 1000 employees where each individual must be able to communicate securely. With asymmetric encryption, each individual will generate a key pair, resulting in 2,000 keys. With symmetric encryption, this would have required 450,000 keys.
+Asymmetric encryption, with its use of a public key and private key removes the burden of secure distribution of keys. This concept also addresses the proliferation of keys we saw in symmetric encryption. Consider the example of the government-based organization with 1,000 employees where each individual must be able to communicate securely. With asymmetric encryption, each individual will generate a key pair, resulting in 2,000 keys. With symmetric encryption, this would have required 450,000 keys.
 
 ### How does asymmetric encryption work
 
@@ -62,7 +62,6 @@ Let's assume that Eve is interested in what Quincy and Monica are saying. Eve in
 Because Eve doesn’t know Monica’s private key, she has no way of decrypting the ciphertext. If Eve tries to decrypt the ciphertext with Monica’s public key, all she will get is gibberish.
 
 Given the nature of asymmetric encryption, even if you know the public key, it's impossible to discover the private key.
-
 
 In this short 2-minute video, we'll demonstrate how symmetric and asymmetric encryption work and how they protect your documents from being read by unauthorized people.
 
