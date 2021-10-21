@@ -15,7 +15,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     :::image type="content" source="../media/configure-property-measure.png" alt-text="Screenshot to configure the properties of Measure in MR" lightbox="../media/configure-property-measure.png":::
 
-3. On the **Insert** tab, expand the **Gallery** dropdown and select **Vertical**. Rename the **Gallery** to **Measure_gallery**.
+3. In the **Home page** add a **Gallery** by selecting the **Gallery** > **Vertical**. Rename the **Gallery** to **Measure_gallery**.
 
     :::image type="content" source="../media/add-gallery.png" alt-text="Screenshot to add gallery" lightbox="../media/add-gallery.png":::
 
@@ -112,11 +112,11 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
         ```
 
 >[!Note]
-> We're not going to spatially filter products in the **Carpets** page as we add a feature specific to the product. We'll be calculating the price of the carpet concerning the area calculated in the **Measure in MR** session.
+> Spatial Filtering is not included for **Carpets** page as another feature specific to the product is added. The area measured in **Measure in MR** session will be used to estimate the price of the selected carpet.
 
 ## Calculate price based on area
 
-1. Navigate to the **Details_carpets** page, configure the empty label beside **Area** in the following way to display the area calculated:
+1. Click on **Details_carpets** page, configure the empty label beside **Area** in the following way to display the area calculated:
 
     ```Power Apps
     Measure_gallery.Selected.Area&"cm²"
@@ -124,7 +124,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     :::image type="content" source="../media/configure-area.png" alt-text="Screenshot of Area calculation" lightbox="../media/configure-area.png":::
 
-2. Configure the label beside the **Price** label in the following way to display the calculated price:
+2. Configure the label next to the **Price** label in the following way to display the calculated price:
 
     ```Power Apps
     "$"&Measure_gallery.Selected.Area * content_carpets.'Price/cm2'
@@ -134,7 +134,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 ## Create order summary page
 
-1. Consider adding a **Button** to **Details_sofas**, **Details_chairs**, **Details_tables**, and **Details_carpets** screens. Rename the button to **Order** and change the display text of the button to **Order**.
+1. Add a **Button** to **Details_sofas**, **Details_chairs**, **Details_tables**, and **Details_carpets** screens. Rename the button to **Order** and change the display text of the button to **Order**.
 
     :::image type="content" source="../media/add-order-button.png" alt-text="Screenshot of adding order button" lightbox="../media/add-order-button.png":::
 
@@ -142,7 +142,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     :::image type="content" source="../media/create-order-screens.png" alt-text="Screenshot of adding new screens" lightbox="../media/create-order-screens.png":::
 
-3. Navigate to the **Details_sofas** screen and configure the **OnSelect** property of the **Order** button as seen below:
+3. Select **Details_sofas** screen and configure the **OnSelect** property of the **Order** button as seen below:
 
     ```Power Apps
     Navigate('Order_sofas',ScreenTransition.Cover)
@@ -156,7 +156,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     :::image type="content" source="../media/insert-order-labels.png" alt-text="Screenshot of labels in Order_sofas" lightbox="../media/insert-order-labels.png":::
 
-6. Insert empty label beside the **Product**, **Price**, **Color**, and **Notes** as shown in the figure.
+6. Insert empty labels next to the **Product**, **Price**, **Color**, and **Notes** as shown in the figure.
 
     :::image type="content" source="../media/create-empty-labels.png" alt-text="Screenshot of empty labels in Order_sofas" lightbox="../media/create-empty-labels.png":::
 
@@ -193,11 +193,11 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
         :::image type="content" source="../media/configure-notes-label.png" alt-text="Screenshot of configuring Notes text" lightbox="../media/configure-notes-label.png":::
 
-8. Consider adding another label at the top and change its display text to **Order Summary**. Change the font size and font according to your requirement.
+8. Add another label at the top and change its display text to **Order Summary**. Change the font size and font according to your requirement.
 
     :::image type="content" source="../media/add-page-heading.png" alt-text="Screenshot of adding Order Summary label" lightbox="../media/add-page-heading.png":::
 
-9. On the **Insert** tab, expand the **Gallery** dropdown and select **Horizontal**. Retain only the image and delete other components of the **Gallery**.
+9. Expand the **Gallery** dropdown and select **Horizontal**. Retain only the image and delete other components of the **Gallery**.
 
     :::image type="content" source="../media/add-horizontal-gallery-order.png" alt-text="Screenshot of adding gallery" lightbox="../media/add-horizontal-gallery-order.png":::
 
@@ -213,7 +213,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     :::image type="content" source="../media/add-extra-labels.png" alt-text="Screenshot of 3 labels" lightbox="../media/add-extra-labels.png":::
 
-12. On the **Insert** tab, expand the **Input** dropdown and select **Text input**. Add two **Text input** components to the screen and position them as shown in the figure. Rename them as **Input1** and **Input2** respectively
+12. Expand the **Input** dropdown and select **Text input**. Add two **Text input** components to the screen and position them as shown in the figure. Rename them as **Input1** and **Input2** respectively
 
     :::image type="content" source="../media/add-email-input.png" alt-text="Screenshot of 2 text input" lightbox="../media/add-email-input.png":::
 
@@ -221,11 +221,11 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     :::image type="content" source="../media/add-hint-text.png" alt-text="Screenshot of configuring hint text" lightbox="../media/add-hint-text.png":::
 
-14. Consider adding a button from the **Insert** tab and configure its **Text** property by adding **Confirm**.
+14. Add a button from the **Insert** tab and configure its **Text** property by adding **Confirm**.
 
     :::image type="content" source="../media/add-confirm-button.png" alt-text="Screenshot of adding confirm button" lightbox="../media/add-confirm-button.png":::
 
-15. On the **Insert** tab, expand the **Icons** dropdown and select **Back** and **Home** icon. Position them correctly, as shown in the figure.
+15. Expand the **Icons** dropdown and select **Back** and **Home** icon. Position them correctly, as shown in the figure.
 
     :::image type="content" source="../media/add-back-home-icon.png" alt-text="Screenshot of adding back and home icon" lightbox="../media/add-back-home-icon.png":::
 
@@ -256,7 +256,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     :::image type="content" source="../media/add-message-label.png" alt-text="Screenshot of adding label for Order Successfully Placed!" lightbox="../media/add-message-label.png":::
 
-3. Consider adding a **Button** at the bottom of the screen. Configure the **Text** property of the button by adding **Shop more**. Let's navigate the user to the home page by clicking the **Shop more** button by adding the following line in the **OnSelect** property.
+3. Add a **Button** at the bottom of the screen. Configure the **Text** property of the button by adding **Shop more**. Let's navigate the user to the home page by clicking the **Shop more** button by adding the following line in the **OnSelect** property.
 
     ```Power Apps
     Navigate('Home Page',ScreenTransition.Cover)

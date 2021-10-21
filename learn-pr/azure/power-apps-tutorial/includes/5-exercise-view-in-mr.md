@@ -305,7 +305,7 @@ Another unique property provided by the **View in MR** component is **Object sca
 
 ## Create notes page
 
-You are allowed to take pictures during the **View in MR** session and display them through a gallery. This is an additional feature included in the application to provide a good user experience. In the **Notes page** you'll be able to store some textual notes and store the images captured during **View in MR** session.
+It is allowed to take pictures during the **View in MR** session and display them through a gallery. This is an additional feature included in the application to provide a good user experience. In the **Notes page** you'll be able to store some textual notes and store the images captured during **View in MR** session.
 
 1. Create four new **Blank** screens and rename them as **Notes_sofas**, **Notes_chairs**, **Notes_tables**, and **Notes_carpets**.
 
@@ -333,7 +333,7 @@ You are allowed to take pictures during the **View in MR** session and display t
 
     By doing so, all the pictures taken in the **View in MR** session is stored in this gallery for future references.
 
-6. Let us now insert a label at the top of the screen. To do so, on the **Insert** tab, click on the **Label** option. Then, customize the position, color, and text display according to your needs.
+6. Let us now insert a label at the top of the screen. To do so, click on the **Label** option. Then, customize the position, color, and text display according to your needs.
 
     :::image type="content" source="../media/insert-label-notes.png" alt-text="Screenshot of inserting label" lightbox="../media/insert-label-notes.png":::
 
