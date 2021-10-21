@@ -12,9 +12,11 @@ Think about the parameters that your module accepts, and whether each parameter 
 
 When you create parameters for templates, it's a good practice to add default parameters where you can. In modules, it's not always as important to add default parameters because your module will be used by a parent template that might use its own default parameters. If you have similar parameters in both files, both with default values, it can be hard for your template's users to figure out which default value will be applied and to enforce consistency. It's often better to leave the default value on the parent template and remove it from the module.
 
-You should also think about how you manage parameters that control the SKUs for your resources and other important configurations. When you create a standalone Bicep template, it's common to embed business rules into your template. For example: "When I deploy a production environment, the storage account should use the GRS tier." Modules present different concerns, though. If a module is reused across multiple deployments, the business rules for each parent template might be different. So, it often doesn't make as much sense to embed business rules into modules. 
+You should also think about how you manage parameters that control the SKUs for your resources and other important configuration settings. When you create a standalone Bicep template, it's common to embed business rules into your template. For example: "When I deploy a production environment, the storage account should use the GRS tier." Modules sometimes present different concerns, though.
 
-Consider defining the business rules in your parent template. Then explicitly pass module configuration through parameters.
+If you're building a module that needs to be reusable and flexible, remember that the business rules for each parent template might be different. So, it might not make as much sense to embed business rules into generic modules. Consider defining the business rules in your parent template. Then explicitly pass module configuration through parameters.
+
+However, if you create a module that is intended to make it easy for your own organization to deploy resources that fit your specific needs, it makes sense to include business rules to simplify the parent templates.
 
 Whatever parameters you include in your module, ensure that you add a meaningful description by using the `@description` attribute:
 
