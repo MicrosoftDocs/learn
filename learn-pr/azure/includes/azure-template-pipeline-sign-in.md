@@ -59,25 +59,3 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 1. In the browser that opens, sign in to your Azure account.
 
 ::: zone-end
-
-## Create a resource group in Azure
-
-::: zone pivot="cli"
-
-To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
-
-```azurecli
-az group create --name ToyWebsiteTest --location westus
-```
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
-
-```azurepowershell
-New-AzResourceGroup -Name ToyWebsiteTest -Location westus
-```
-
-::: zone-end
