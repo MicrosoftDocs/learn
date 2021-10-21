@@ -178,6 +178,8 @@ New-AzResourceGroup -Name ToyWebsiteTest -Location westus
      --sdk-auth
    ```
 
+   [!INCLUDE [](../../includes/azure-template-bicep-exercise-cli-unique-display-name.md)]
+
 1. Select the JSON output from the previous command. It looks like this:
 
    ```json
