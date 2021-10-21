@@ -1,4 +1,4 @@
-Azure Backup for files and folders relies on the Microsoft Azure Recovery Services (MARS) agent to be installed on the Window client or server.
+Azure Backup for files and folders relies on the Microsoft Azure Recovery Services (MARS) agent to be installed on the Windows client or server.
 
 :::image type="content" source="../media/recovery-agent-354fbf08.png" alt-text="Screenshot of the MARS agent.":::
 
