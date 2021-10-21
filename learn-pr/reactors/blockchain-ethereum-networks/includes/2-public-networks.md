@@ -65,7 +65,6 @@ More details:
 - Supported client: [Geth](https://geth.ethereum.org/?azure-portal=true)
 - Block time: 15 seconds
 - Rinkeby-specific links:
-  - [Faucet](https://faucet.rinkeby.io/?azure-portal=true)
   - [Explorer](https://rinkeby.etherscan.io/?azure-portal=true)
   - [GitHub](https://github.com/ethereum/EIPs/issues/225/?azure-portal=true)
   - [Website](https://www.rinkeby.io/?azure-portal=true)
