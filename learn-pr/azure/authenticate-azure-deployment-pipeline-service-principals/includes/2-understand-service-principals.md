@@ -73,7 +73,7 @@ You might see a few different terms in use when you work with service principals
 
 Service principals are a feature of Azure AD. Azure AD is a global identity service. Many companies use Azure AD, and each company is called a _tenant_.
 
-Azure AD also has a concept of an _application_, which represents a system, piece of software, process, or some other non-human agent. You can think of a deployment pipeline as an application too. 
+Azure AD has a concept of an _application_, which represents a system, piece of software, process, or some other non-human agent. You can think of a deployment pipeline as an application too. 
 
 In Azure AD, applications can do many things that are beyond the scope of authentication and pipeline deployments. When you create an application and tell Azure AD about it, you create an object called an _application registration_. An application registration represents the application in Azure AD.
 
