@@ -5,7 +5,7 @@ To install the Azure Enhanced Monitoring Extension for SAP by using PowerShell:
 1.  Make sure that you have installed the latest version of the Az PowerShell module.
 2.  Run the following PowerShell cmdlet. For a list of available environments, run the commandlet `Get-AzEnvironment`. If you want to use global Azure, your environment is `AzureCloud`. For Azure in China, select `AzureChinaCloud`.
     
-    ```
+    ```powershell
     $env = Get-AzEnvironment -Name [name of the environment]
     
     Connect-AzAccount -Environment $env
@@ -35,19 +35,19 @@ To install the Azure Enhanced Monitoring Extension for SAP by using Azure CLI:
 1.  Install using Azure CLI 2.0.
 2.  Sign in with your Azure account:
     
-    ```
+    ```azurecli
     az login
     
     ```
 3.  Install Azure CLI AEM Extension:
     
-    ```
+    ```azurecli
     az extension add --name aem
     
     ```
 4.  Install the extension:
     
-    ```
+    ```azurecli
     az vm aem set -g [resource-group-name] -n [vm name]
     
     ```
@@ -68,56 +68,55 @@ If all readiness check results are positive and all relevant performance counter
     > [!NOTE]
     > If the Azure Enhanced Monitoring Extension is not installed, or the AzureEnhancedMonitoring service is not running, the extension has not been configured correctly.
 5.  Azperflib.exe output shows all populated Azure performance counters for SAP. At the bottom of the list of collected counters, a summary and health indicator show the status of Azure monitoring. Check the result returned for the **Counters total** output, which is reported as empty, and for **Health status**. Next, interpret the resulting values as follows:
-
-:::row:::
-  :::column:::
-    **Azperflib.exe result values**
-  :::column-end:::
-  :::column:::
-    **Azure Extension for SAP health status**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **API Calls - not available**
-  :::column-end:::
-  :::column:::
-    Counters that are not available might be either not applicable to the virtual machine configuration or are errors. See **Health status**.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Counters total - empty**
-  :::column-end:::
-  :::column:::
     
-
-The following two Azure storage counters can be empty:
-
- -  Storage Read Op Latency Server msec
- -  Storage Read Op Latency E2E msec
-
-All other counters must have values.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Health status**
-  :::column-end:::
-  :::column:::
-    Only OK if return status shows **OK**.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Diagnostics**
-  :::column-end:::
-  :::column:::
-    Detailed information about health status.
-  :::column-end:::
-:::row-end:::
-
-
+    :::row:::
+      :::column:::
+        **Azperflib.exe result values**
+      :::column-end:::
+      :::column:::
+        **Azure Extension for SAP health status**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        **API Calls - not available**
+      :::column-end:::
+      :::column:::
+        Counters that are not available might be either not applicable to the virtual machine configuration or are errors. See **Health status**.
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        **Counters total - empty**
+      :::column-end:::
+      :::column:::
+        
+    
+    The following two Azure storage counters can be empty:
+    
+     -  Storage Read Op Latency Server msec
+     -  Storage Read Op Latency E2E msec
+    
+    All other counters must have values.
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        **Health status**
+      :::column-end:::
+      :::column:::
+        Only OK if return status shows **OK**.
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        **Diagnostics**
+      :::column-end:::
+      :::column:::
+        Detailed information about health status.
+      :::column-end:::
+    :::row-end:::
+    
 6.  Make sure that every health check result is **OK**.
 
 ### Readiness check on a Linux VM
