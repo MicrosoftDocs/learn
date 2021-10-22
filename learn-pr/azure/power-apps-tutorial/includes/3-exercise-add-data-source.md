@@ -60,13 +60,7 @@ For our **Easy Sales** application, we will create separate lists for each produ
 
 Once the list is created, it's time to add the data to it. Here data means the details of a particular product. The product details include the following information: Name, Image, Price, Dimensions, Weight, Color, PrimaryMaterial, Area, Height, and a 3D model/image of the product to be viewed in Mixed Reality.
 
-1. In the created *Easy sales - Sofas* list, select **+ Add column**, and create the following columns with the specified column type using the dropdown and name the column.
-
-     :::image type="content" source="../media/add-column.png" alt-text="Screenshot of select Add Column." lightbox="../media/add-column.png":::
-
-    The below list shows the columns that need to be created with their name and type in this format *Name of the Column - Column type*.
-
-     :::image type="content" source="../media/column-type.png" alt-text="Screenshot of select Single line of text." lightbox="../media/column-type.png":::
+1. In the created *Easy sales - Sofas* list, select **+ Add column**, to add a column of specific type. The below list shows the columns that need to be created with their name and type in this format *Name of the Column - Column type*.
 
     * **Name** - Single line of text.
     * **ImageLink** - Single line of text.
@@ -78,23 +72,33 @@ Once the list is created, it's time to add the data to it. Here data means the d
     * **Area** - Number
     * **Height** - Number
 
+    Select the column type from the dropdown, for example, select **Single line of text** 
+
+    :::image type="content" source="../media/column-type.png" alt-text="Screenshot of select Single line of text." lightbox="../media/column-type.png":::
+
+    Enter the details of the column in the **Create the column** tab and click on **Save** 
+
     :::image type="content" source="../media/column-details.png" alt-text="Screenshot of Create a Column." lightbox="../media/column-details.png":::
 
-2. Once the columns are added, let's start adding the actual data under these columns. First, add an item to your list by either selecting **+ New** or **Edit in grid view**.
+    Repeat the same procedure for rest of the columns in the above list.
+
+2. Once the columns are added, let's start adding the actual data under these columns. To add data to the respective columns, download the custom package that includes all the product details for all four lists. 
+
+3. To add an item to your list, click on **+ New** and fill in the required details as provided in the **Excel** file. Click **Save** to save the entered details.
 
     :::image type="content" source="../media/edit-grid-view.png" alt-text="Screenshot of selecting New or Edit in grid view to add new item." lightbox="../media/edit-grid-view.png":::
 
     >[!Note]
     > Grid view lets you add information freely to different rows or columns.
 
-3. Start adding your data in their respective columns, as shown in the figure.
+4. Start adding your data in their respective columns, as shown in the figure.
 
     >[!Note]
     > Under the **ImageLink** column, add the image links of public images available on the internet. You can get the image links by right-clicking and selecting the **Copy image address** option.
 
-4. Follow the same procedure for the other three lists and add the product details accordingly.
+5. Follow the same procedure for the other three lists and add the product details accordingly.
 
-5. For the *Easy sales - Carpets* list, add the columns mentioned below and their types in the format: *Name of the column - Column type*. Later, start adding your data in their respective columns, as shown in the figure.
+6. For the *Easy sales - Carpets* list, add the columns mentioned below and their types in the format: *Name of the column - Column type*. Later, start adding your data in their respective columns, as shown in the figure.
 
     * **Name** - Single line of text.
     * **ImageLink** - Single line of text.
