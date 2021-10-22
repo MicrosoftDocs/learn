@@ -76,3 +76,8 @@ The following video demonstrates how to use the **Delegation of Control Wizard**
 6. Sign in as a member of the **Sales Managers** group and verify that the user can reset a password for users in the **Sales** OU but not in the **Research** OU.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4McI8]
+
+---
+
+
+---
