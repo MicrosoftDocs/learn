@@ -5,7 +5,7 @@ In this exercise, you'll create a Synapse Analytics workspace and use it to inge
 The exercise is designed to familiarize you with some key capabilities of Synapse Analytics, not as a comprehensive guide to performing advanced data analysis. The exercise should take around 30 minutes to complete.
 
 >[!NOTE]
-> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free](https://azure.microsoft.com/free?portal=true).
+> To complete this exercise, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free](https://azure.microsoft.com/free?portal=true).
 
 ### Provision a Synapse Analytics workspace
 
@@ -30,7 +30,7 @@ To use Synapse Analytics, you must provision a Synapse Analytics Workspace resou
 5. Wait for the workspace to be created - this may take five minutes or so.
 6. When deployment is complete, go to the resource group that was created and notice that it contains your Synapse Analytics workspace and a Data Lake storage account.
 7. Select your Synapse workspace, and in its **Overview** page, in **Open Synapse Studio** card, select **Open** to open Synapse Studio in a new browser tab. Synapse Studio is a web-based interface that you can use to work with your Synapse Analytics workspace.
-8. On the left side of Synapse Studio, use the **&rsaquo;&rsaquo;** icon to expand the menu - this reveals the different pages within Synapse Studio that you will use to manage resources and perform data analytics tasks, as shown here:
+8. On the left side of Synapse Studio, use the **&rsaquo;&rsaquo;** icon to expand the menu - this reveals the different pages within Synapse Studio that you'll use to manage resources and perform data analytics tasks, as shown here:
 
 > [!div class="mx-imgBorder"]
 > ![Image showing the elements of Azure Synapse Analytics](../media/synapse-studio.png)
@@ -134,7 +134,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     | 772 | Mountain-100 Silver, 42 | Mountain Bikes | 3399.9900 |
     | ... | ... | ... | ... |
 
-5. Note that the results consists of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROWS = TRUE parameters to the OPENROWSET function as shown here, and then re-run the query:
+5. Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROWS = TRUE parameters to the OPENROWSET function as shown here, and then rerun the query:
 
     ```
     SELECT
@@ -213,7 +213,7 @@ While SQL is a common language for querying structured datasets, many data analy
     - **Node size**: Small (4 vCores / 32 GB)
     - **Autoscale**: Enabled
     - **Number of nodes** 3----3
-3. Review and create the Spark pool, and then wait for it to be deployed (which may take a few minutes).
+3. Review and create the Spark pool, and then wait for it to deploy (which may take a few minutes).
 4. When the Spark pool has been deployed, in Synapse Studio, on the **Data** page, browse to the file system for your Synapse workspace. Then right-click **products.csv**, point to **New notebook**, and select **Load to DataFrame**.
 5. In the **Notebook 1** pane that opens, in the **Attach to** list, select the **spark** Spark pool to created previously and ensure that the **Language** is set to **PySpark (Python)**.
 6. Review the code in the first (and only) cell in the notebook, which should look like this:
@@ -228,7 +228,7 @@ While SQL is a common language for querying structured datasets, many data analy
     ```
 
 7.  Use the **&#9655;** icon to the left of the code cell to run it, and wait for the results. The first time you run a cell in a notebook, the Spark pool is started - so it may take a minute or so to return any results.
-8. Eventually, the results should appear below the cell, and they should be similar this this:
+8. Eventually, the results should appear below the cell, and they should be similar to this:
 
     | _c0_ | _c1_ | _c2_ | _c3_ |
     | -- | -- | -- | -- |
