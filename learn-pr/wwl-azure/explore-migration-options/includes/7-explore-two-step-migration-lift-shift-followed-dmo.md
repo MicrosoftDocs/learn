@@ -1,11 +1,11 @@
 Consider the following for the two-step migration:
 
  -  Ensure connectivity to Azure is available via Express Route (recommended) or VPN.
- -  Provision the target infrastructure on Azure which includes the cloned system and target SAP NetWeaver and SAP HANA database servers. The Azure infrastructure can be deployed using predefined ARM templates.
+ -  Allocate the target infrastructure on Azure, which includes the cloned system and target SAP NetWeaver and SAP HANA database servers. The Azure infrastructure can be deployed using predefined zure Resource Manager templates.
  -  The cloned system can be built with a homogeneous system copy (backup/restore) or via DBMS replication tools (e.g. Oracle Data Guard or SQL Always-On).
  -  Business and technical testing should be initiated (with functional, integration and acceptance testing to ensure the move of data has been successful).
  -  Following business and technical validation, the traditional DMO process can be followed to migrate and upgrade to SAP HANA.
- -  DMO can be leveraged with the memory pipe method (i.e. export/import occurs within the same application server and memory segment for accelerated migrations).
+ -  DMO can be leveraged with the memory pipe method (for example, export/import occurs within the same application server and memory segment for accelerated migrations).
  -  Following the migration to SAP HANA, business and technical validation should again be initiated.
  -  In this approach, two downtimes and two testing cycles are required.
 

@@ -1,6 +1,6 @@
 ## DMO processing
 
-Software Update Manager (SUM) creates the shadow repository (development components/target version for ABAP workbench) on the traditional database until the downtime phase. The target database is built up in parallel where the shadow repository is subsequently copied and the SAP database connection is switched to the target database and the downtime process starts.
+Software Update Manager (SUM) creates the shadow repository (development components/target version for ABAP workbench) on the traditional database until the downtime phase. The target database is built up in parallel where the shadow repository is then copied and the SAP database connection is switched to the target database and the downtime process starts.
 
 Following the migration of the application data (which includes data conversion), the upgrade is finalized and the SAP system is running on the target database. The source database retains the unmodified application data and therefore a fallback is always possible.
 
@@ -15,7 +15,7 @@ When migrating an existing SAP system running on anyDB to an SAP HANA database, 
 
 ## DMO for SAP BW and SAP Business Suite systems
 
-DMO can be used for AS-ABAP systems and with SUM 1.0 SP09 or higher. DMO can also be used for SAP HANA and ASE targets. Furthermore, DMO can also be leveraged for SQL Server, DB2 and MaxDB upon request. For more information, refer to the following SAP Notes:
+DMO can be used for AS-ABAP systems and with SUM 1.0 SP09 or higher. DMO can also be used for SAP HANA and ASE targets. Furthermore, DMO can also be used for SQL Server, DB2 and MaxDB upon request. For more information, see the following SAP Notes:
 
  -  [2426315 on Database Migration Option for SUM 1.0 SP 21](https://launchpad.support.sap.com/#/notes/2426315)
  -  [2472850 on Database Migration Option for SUM 2.0 SP 01](https://launchpad.support.sap.com/#/notes/2472850)
