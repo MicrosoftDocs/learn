@@ -70,9 +70,9 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
     This configuration file declares that the function runs when it receives an HTTP request. The output binding declares that the response will be sent as an HTTP response.
 
-   ::: zone-end
-
-   ::: zone pivot="powershell"
+    ::: zone-end
+    
+    ::: zone pivot="powershell"
 
 1. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and then select **Create** to create the function. The Overview pane for your *DriveGearTemperatureService* Function appears.
 
@@ -137,7 +137,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
     This configuration declares that the function runs when it receives an HTTP request. The output binding declares that the response will be sent as an HTTP response.
 
-   ::: zone-end
+    ::: zone-end
 
 ## Test the function
 
