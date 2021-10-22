@@ -28,7 +28,9 @@ It's also a good idea to perform *negative testing*. Negative testing helps you 
 
 ### Run tests from GitHub workflows
 
-There are many ways you can run tests in your workflow. In this module, we use Pester, which is an open-source tool that runs tests written through PowerShell. You might choose to use a different test framework or even choose to run your tests without a test tool. For example, another test tool to consider is PSRule for Azure, which includes prebuilt rules and tests for Azure. It can run validation on your templates and also run tests against your deployed Azure resources. We link to PSRule in the summary.
+There are many ways you can run tests in your workflow. In this module, we use Pester, which is an open-source tool that runs tests written through PowerShell. Pester is preinstalled on GitHub-hosted runners. You don't need to do anything special to use it in a script step.
+
+You might choose to use a different test framework or even choose to run your tests without a test tool. For example, another test tool to consider is PSRule for Azure, which includes prebuilt rules and tests for Azure. It can run validation on your templates and also run tests against your deployed Azure resources. We link to PSRule in the summary.
 
 When you run tests from a workflow, any test failures should stop the workflow from continuing. In the next exercise, you'll see how you can use workflows with infrastructure smoke tests.
 
