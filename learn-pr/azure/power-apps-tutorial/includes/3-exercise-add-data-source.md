@@ -22,7 +22,7 @@ We will be using SharePoint as our primary data source for this application. You
 
     * Select **Language** of your choice from the dropdown.
 
-4. Select **Finish** to create a **SharePoint** site in which you can load your data.
+4. Click **Finish** to create a **SharePoint** site in which you can load your data.
 
     :::image type="content" source="../media/update-site-details.png" alt-text="Screenshot of updating site details." lightbox="../media/update-site-details.png":::
 
@@ -45,7 +45,7 @@ For our **Easy Sales** application, we will create separate lists for each produ
 
       :::image type="content" source="../media/select-blank-list.png" alt-text="Screenshot of select Blank List." lightbox="../media/select-blank-list.png":::
 
-3. In the **Create** pane:
+3. In the **Create** pane configure as following:
 
     * Enter a suitable name for the list, for example, *Easy Sales-Sofas*
     * Fill in the description, if required. (Optional)
@@ -72,19 +72,19 @@ Once the list is created, it's time to add the data to it. Here data means the d
     * **Area** - Number
     * **Height** - Number
 
-    Select the column type from the dropdown, for example, select **Single line of text** 
+    Select the column type from the dropdown, for example, select **Single line of text**.
 
     :::image type="content" source="../media/column-type.png" alt-text="Screenshot of select Single line of text." lightbox="../media/column-type.png":::
 
-    Enter the details of the column in the **Create the column** tab and click on **Save** 
+    Enter the details of the column in the **Create the column** tab and click on **Save**.
 
     :::image type="content" source="../media/column-details.png" alt-text="Screenshot of Create a Column." lightbox="../media/column-details.png":::
 
     Repeat the same procedure for rest of the columns in the above list.
 
-2. Once the columns are added, let's start adding the actual data under these columns. To add data to the respective columns, download the custom package that includes all the product details for all four lists. 
+2. Once the columns are added, let's start adding the actual data under these columns. To add data to the respective columns, download the custom folder that includes all the product details for all four lists.
 
-3. To add an item to your list, click on **+ New** and fill in the required details as provided in the **Excel** file. Click **Save** to save the entered details.
+3. To add an item to your list, click on **+ New** and fill in the required details as provided in the downloaded **Excel** file. Click **Save** to save the entered details.
 
     :::image type="content" source="../media/edit-grid-view.png" alt-text="Screenshot of selecting New or Edit in grid view to add new item." lightbox="../media/edit-grid-view.png":::
 
@@ -96,7 +96,7 @@ Once the list is created, it's time to add the data to it. Here data means the d
     :::image type="content" source="../media/add-list-details.png" alt-text="Screenshot of sharepoint list with added details" lightbox="../media/add-list-details.png":::
 
     >[!Note]
-    > Under the **ImageLink** column, add the image links of public images available on the internet. You can get the image links by right-clicking and selecting the **Copy image address** option.
+    > Under the **ImageLink** column, you can add the image links of public images available on the internet. You can get the image links by right-clicking and selecting the **Copy image address** option.
 
 5. Follow the same procedure for the other three lists and add the product details accordingly.
 
@@ -120,7 +120,7 @@ Once the list is created, it's time to add the data to it. Here data means the d
 
 Now that all our data required for the application is stored in the SharePoint list respectively. We will move on to establish a connection in Power Apps. Once the connection is established, you can easily access the SharePoint data through an application.
 
-1. Sign in to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), select **Dataverse > Connections** in the left navigation bar, and then select **+ New connection** near the upper-left corner.
+1. To start creating a connection, sign in to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) and select **Dataverse > Connections** in the left navigation bar. Then select **+ New connection** near the upper-left corner.
 
 2. Select **SharePoint**. We are selecting **SharePoint**, as we have stored the required data in **SharePoint** lists.
 
