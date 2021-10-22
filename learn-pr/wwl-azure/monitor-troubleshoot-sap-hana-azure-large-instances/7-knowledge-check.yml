@@ -21,13 +21,13 @@ quiz:
     choices:
     - content: "SAP HANA Studio"
       isCorrect: false
-      explanation: "Incorrect. HANA Large Instances does not come with built-in monitoring tools. Instead, Microsoft offers resources to help you troubleshoot and monitor according to your organization’s requirements, and the Microsoft support team can assist you in troubleshooting technical issues. Monitor HANA Large Instances resources such as CPU, memory, network bandwidth, and storage space using SAP HANA Studio, SAP HANA Cockpit, SAP Solution Manager, and native Linux tools."
+      explanation: "Incorrect. HANA Large Instances do not come with built-in monitoring tools. Instead, Microsoft offers resources to help you troubleshoot and monitor according to your organization’s requirements, and the Microsoft support team can assist you in troubleshooting technical issues. Monitor HANA Large Instances resources such as CPU, memory, network bandwidth, and storage space using SAP HANA Studio, SAP HANA Cockpit, SAP Solution Manager, and native Linux tools."
     - content: "Log Analytics"
       isCorrect: false
-      explanation: "Incorrect. HANA Large Instances does not come with built-in monitoring tools. Instead, Microsoft offers resources to help you troubleshoot and monitor according to your organization’s requirements, and the Microsoft support team can assist you in troubleshooting technical issues. Monitor HANA Large Instances resources such as CPU, memory, network bandwidth, and storage space using SAP HANA Studio, SAP HANA Cockpit, SAP Solution Manager, and native Linux tools."
-    - content: "HANA Large Instances does not come with built-in monitoring tools"
+      explanation: "Incorrect. HANA Large Instances do not come with built-in monitoring tools. Instead, Microsoft offers resources to help you troubleshoot and monitor according to your organization’s requirements, and the Microsoft support team can assist you in troubleshooting technical issues. Monitor HANA Large Instances resources such as CPU, memory, network bandwidth, and storage space using SAP HANA Studio, SAP HANA Cockpit, SAP Solution Manager, and native Linux tools."
+    - content: "HANA Large Instances do not come with built-in monitoring tools"
       isCorrect: true
-      explanation: "Correct. HANA Large Instances does not come with built-in monitoring tools. Instead, Microsoft offers resources to help you troubleshoot and monitor according to your organization’s requirements, and the Microsoft support team can assist you in troubleshooting technical issues. Monitor HANA Large Instances resources such as CPU, memory, network bandwidth, and storage space using SAP HANA Studio, SAP HANA Cockpit, SAP Solution Manager, and native Linux tools."
+      explanation: "Correct. HANA Large Instances do not come with built-in monitoring tools. Instead, Microsoft offers resources to help you troubleshoot and monitor according to your organization’s requirements, and the Microsoft support team can assist you in troubleshooting technical issues. Monitor HANA Large Instances resources such as CPU, memory, network bandwidth, and storage space using SAP HANA Studio, SAP HANA Cockpit, SAP Solution Manager, and native Linux tools."
   - content: "SAP HANA Studio can display all SAP HANA alerts for specific values that fall outside their set minimum and maximum thresholds. How often are alerts checks performed?"
     choices:
     - content: "Every minute"
