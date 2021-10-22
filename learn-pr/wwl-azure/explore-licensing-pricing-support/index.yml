@@ -3,7 +3,7 @@ uid: learn.wwl.explore-licensing-pricing-support
 metadata:
   title: Explore licensing, pricing, and support for SAP on Azure virtual machines
   description: "This module explores Azure and SAP licensing requirements and licensing costs, and walks through the support request process for Azure virtual machines. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 10/21/2021
+  ms.date: 10/22/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
