@@ -13,3 +13,4 @@ You will:
  -  Explore one-step migration - DMO with system move option.
  -  Explore two-step migration - lift and shift followed by DMO.
  -  Explore downtime-optimized DMO.
+ 
