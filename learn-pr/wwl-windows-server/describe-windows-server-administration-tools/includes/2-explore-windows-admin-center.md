@@ -85,3 +85,8 @@ The following video demonstrates how to administer Windows Server by using Windo
 6. Review the following: Certificates, Performance Monitoring, Processes, Registry, Roles & Features, Scheduled Tasks, and PowerShell.
 
  >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4McI9]
+
+---
+
+
+---
