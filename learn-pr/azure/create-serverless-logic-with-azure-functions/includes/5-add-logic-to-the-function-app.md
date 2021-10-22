@@ -20,7 +20,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
 1. Under **Select a template**, select *HTTP trigger*.
 
-   ::: zone pivot="javascript"
+    ::: zone pivot="javascript"
 
 1. Select **Create**. The **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
 
@@ -237,7 +237,7 @@ Our function is expecting an array of temperature readings. The following JSON s
 
 Let's replace the default code in our function with the following code, to implement our business logic.
 
-::: zone pivot="javascript"
+    ::: zone pivot="javascript"
 
 In the **HttpTrigger1** function pane, open the **index.js** file, and replace it with the following code. On the top menu bar, select **Save** to save the file after updating it.
 
@@ -278,9 +278,9 @@ The logic we added is straightforward. We iterate over the array of readings and
 
 Notice the `Log` statements when you expand **Logs** at the bottom of the pane. When the function runs, these statements will add messages in the Logs window.
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="powershell"
+    ::: zone pivot="powershell"
 
 Open the **run.ps1** file, and replace the contents with the following code. Make sure to save the file after updating it.
 
@@ -325,7 +325,7 @@ The logic we added is straightforward. We iterate over the array of readings and
 
 Note the calls to the `Write-Host` cmdlet. When the function runs, these statements will add messages in the Logs window.
 
-::: zone-end
+    ::: zone-end
 
 ## Test our business logic
 
