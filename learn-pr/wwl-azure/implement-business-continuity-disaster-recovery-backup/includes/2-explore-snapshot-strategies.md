@@ -5,7 +5,7 @@ In the considerations and recommendations that follow, the assumption is that yo
  -  The recovery time for point-in-time recovery.
  -  The space used.
  -  The recovery point and recovery time objectives for potential recovery from a disaster.
- -  The eventual execution of HANA full-database backups against disks. Whenever a full-database backup against disks or the backint interface is performed, the execution of the storage snapshots fails. If you plan to run full-database backups on top of storage snapshots, make sure that the execution of the storage snapshots is disabled during this time.
+ -  The eventual execution of HANA full-database backups against disks. Whenever a full-database backup against disks or the Backint interface is performed, the execution of the storage snapshots fails. If you plan to run full-database backups on top of storage snapshots, make sure that the execution of the storage snapshots is disabled during this time.
  -  The number of snapshots per volume. Although the hardware can sustain 255 snapshots per volume, you should stay well below this number. The recommendation is 250 or less.
 
 If you don't use the disaster recovery functionality of HANA Large Instances, the snapshot period is less frequent. In such cases, perform the combined snapshots on **/hana/data** and **/hana/shared**, which includes **/usr/sap**, in 12-hour or 24-hour periods. Keep the snapshots for a month. The same is true for the snapshots of the log backup volume. The execution of SAP HANA transaction log backups against the log backup volume occurs in 5-minute to 15-minute periods.
@@ -115,7 +115,7 @@ If you run the script with this setting, the number of snapshots, which includes
 
 If you no longer want to maintain a set of snapshots with the backup prefix dailyhana in the syntax examples, run the script with 0 as the retention number. All snapshots that match that label are then removed. Removing all snapshots can affect the capabilities of HANA Large Instances disaster recovery functionality.
 
-A second option to delete specific snapshots is to use the script azure\_hana\_snapshot\_delete. This script is designed to delete a snapshot or set of snapshots either by using the HANA backup ID as found in HANA Studio or through the snapshot name itself. Currently, the backup ID is only tied to the snapshots created for the hana snapshot type. Snapshot backups of the type logs and boot don't perform an SAP HANA snapshot, so there's no backup ID to be found for those snapshots. If the snapshot name is entered, it looks for all snapshots on the different volumes that match the entered snapshot name. Run the script as user root.
+A second option to delete specific snapshots is to use the script azure\_hana\_snapshot\_delete. This script is designed to delete a snapshot or set of snapshots either by using the HANA backup ID as found in HANA Studio or through the snapshot name itself. Currently, the backup ID is only tied to the snapshots created for the HANA snapshot type. Snapshot backups of the type logs and boot don't perform an SAP HANA snapshot, so there's no backup ID to be found for those snapshots. If the snapshot name is entered, it looks for all snapshots on the different volumes that match the entered snapshot name. Run the script as user root.
 
 > [!IMPORTANT]
 > If there's data that exists only on the snapshot you plan to delete, after the snapshot is deleted, that data is lost forever.
