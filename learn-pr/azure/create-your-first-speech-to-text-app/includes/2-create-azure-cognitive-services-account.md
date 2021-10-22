@@ -4,7 +4,7 @@ For your company's transcription department, you'll focus on Azure Cognitive Ser
 
 However, before you can create an application that uses Azure Cognitive Services - such as Speech-to-Text - you need to create Azure Cognitive Services account.
 
-In the next exercise, you'll use the Azure Command Line Interface (CLI) to create an Azure Cognitive Services account. However, you can also use the Azure portal, which is described in the next section.
+In the next unit, you'll complete an exercise that use the Azure Command Line Interface (CLI) to create an Azure Cognitive Services account. However, you can also use the Azure portal, which is described in the following section.
 
 ## Create an Azure Cognitive Services account using the Azure portal
 
