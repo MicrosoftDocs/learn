@@ -1,6 +1,6 @@
 The Power Query feature within Azure Data Factory enables you to work with and wrangle data. It is an object that can be added to the canvas designer as an activity in an Azure Data Factory pipeline to perform code free data preparation.  It enables individuals who are not conversant with the traditional data preparation technologies such as Spark or SQL Server, and languages such as Python and T-SQL to prepare data at cloud scale iteratively.
 
-The Power Query feature uses a grid type interface for basic data preparation that is like the aesthetics of Excel, known as an Online Mashup Editor. The editor also enables more advanced users to perform more complex data preparation using formulas. You first have to create a linled service to a source of the data first before you are able to access the data
+The Power Query feature uses a grid type interface for basic data preparation that is like the aesthetics of Excel, known as an Online Mashup Editor. The editor also enables more advanced users to perform more complex data preparation using formulas. You first have to create a linked service to a source of the data first before you are able to access the data
 
 ![Online Mashup Editor](../media/online-mashup-editor.png)
 
