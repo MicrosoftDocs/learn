@@ -22,17 +22,17 @@ When you're deciding between template specs and Bicep modules, a good rule of th
 
 Microsoft maintains a publicly accessible registry for all Bicep users to use. The registry contains modules for many commonly deployed Azure services, and anyone in the community can contribute a module if they think it will be useful to others. Microsoft reviews each submitted module for quality control purposes. You can also inspect each module before you use it.
 
-TODO more info on how to find modules in the registry. Apparently will use Microsoft Container Registry, and will be searchable through Docker Hub (https://hub.docker.com/publishers/microsoftowner)
+TODO more info on how to find modules in MCR. Check if it's searchable through Docker Hub (https://hub.docker.com/publishers/microsoftowner)
 
 > [!TIP]
 > If you create a Bicep module that you think other people in the community might use, you can contribute it to the Bicep registry. We link to more information in the summary.
 
 ## Use a Bicep module
 
-When you've found a module you want to use, you create a *module definition* in your Bicep file like the following example:
+When you've found a module you want to use, you create a *module definition* in your Bicep file:
 
 ```bicep
-module myModule 'br:mcr.microsoft.com/modulerepo/modulename:moduleversion' = {
+module myModule 'br:mcr.microsoft.com/modulepath/modulename:moduleversion' = {
   name: 'my-module'
   params: {
     moduleParameter1: 'value'
@@ -48,8 +48,8 @@ The identifier contains four segments:
 
 - **Scheme**: Bicep supports several types of module, which are called *schemes*. When you work with Bicep registries, the scheme is `br`.
 - **Registry**: The name of the registry that contains the module you want to use.
-- **Module identifier**: The full name of the specific module within the registry.
-- **Tag**: Tags typically represent versions of modules, because a single module can have multiple versions published. You'll learn more about versions later in this module.
+- **Module identifier**: The full path to the module within the registry.
+- **Tag**: Tags typically represent versions of modules, because a single module can have multiple versions published. You'll learn more about tags and versions later in this module.
 
 After you've added a reference to the module, Visual Studio Code attempts to automatically download the module from the registry. When the module is downloaded, the Bicep extension for Visual Studio Code gives you IntelliSense and other code authoring assistance as you work.
 

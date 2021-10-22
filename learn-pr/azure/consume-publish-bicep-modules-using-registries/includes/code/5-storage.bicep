@@ -1,13 +1,13 @@
-@description('TODO')
+@description('The Azure region into which the resources should be deployed.')
 param location string
 
-@description('TODO')
+@description('The name of the storage account. This name must be globally unique.')
 param storageAccountName string
 
-@description('TODO')
+@description('The SKU of the storage account.')
 param storageAccountSkuName string
 
-@description('TODO')
+@description('The list of blob container names.')
 param storageAccountContainerNames array = []
 
 resource storageAccount 'Microsoft.Storage/storageAccounts@2021-02-01' = {
@@ -32,5 +32,5 @@ resource blobContainers 'Microsoft.Storage/storageAccounts/blobServices/containe
   name: storageAccountContainerName
 }]
 
-@description('TODO')
+@description('The name of the storage account.')
 output storageAccountName string = storageAccount.name

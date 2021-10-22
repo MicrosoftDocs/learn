@@ -23,7 +23,7 @@ In this exercise, you create a Bicep file that includes a module from the public
 
 1. Copy the following Bicep code into the file:
 
-   ::: code language="bicep" source="code/3-main-1.bicep" range="1-9, 11-31" :::
+   ::: code language="bicep" source="code/3-main.bicep" range="1-9, 11-31" :::
 
    This creates a storage account and blob container.
 
@@ -123,3 +123,27 @@ Use the Azure portal to inspect the resources that you deploy and to inspect the
 1. In the **Overview** section, you can see that two deployments have succeeded.
 
    Notice that the name of one of the deployments is *main*. This represents the deployment you initiated for your template. The other deployment is named *managed-identity*, and it represents the deployment of the resources defined in the module you included in the template.
+
+## Clean up the resources
+
+Now that you've completed the exercise, you can remove the resources so you aren't billed for them.
+
+In the Visual Studio Code terminal, run the following commands:
+
+::: zone pivot="cli"
+
+```azurecli
+az group delete --resource-group ToyModules --yes --no-wait
+```
+
+The resource group is deleted in the background.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+```azurepowershell
+Remove-AzResourceGroup -Name ToyModules -Force
+```
+
+::: zone-end

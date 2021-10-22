@@ -32,9 +32,32 @@ When you publish your own module identifier, use a meaningful name that indicate
 > In Azure Container Registry, the module identifier is called a *repository*.
 
 ### Aliases 
-TODO more here
 
-You can use a *registry alias* to define the registry in the *bicepconfig.json* file, and then use the alias in your Bicep code. You'll see how this works in the next exercise.
+You can use a *registry alias* to simplify your module definitions. Instead of specifying the registry name every time you define a module, you use its alias.
+
+To define an alias, you need to create a *bicepconfig.json* file in the same folder as your Bicep file. Within the *bicepconfig.json* file, you define aliases as in this example:
+
+::: code language="json" source="code/4-bicepconfig-aliases.json" range="1-5, 10-13" :::
+
+When you define a module in a Bicep file, you include the alias in the module path:
+
+```bicep
+module myModule 'br/MyRegistry:bicep/my-module:v1' = {
+  // ...
+}
+```
+
+An alias can also include the path to your modules within the registry. This is helpful if you use a common prefix for your modules:
+
+::: code language="json" source="code/4-bicepconfig-aliases.json" range="1-3, 7-13" :::
+
+Then, you can omit the path when you define the module in your Bicep file:
+
+```bicep
+module myModule 'br/MyRegistryWithPath:my-module:v1' = {
+  // ...
+}
+```
 
 ## Tags and versions
 

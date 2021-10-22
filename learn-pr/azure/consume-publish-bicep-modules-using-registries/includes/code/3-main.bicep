@@ -1,7 +1,7 @@
-@description('TODO')
+@description('The Azure region into which the resources should be deployed.')
 param location string = resourceGroup().location
 
-@description('TODO')
+@description('The name of the storage account. This name must be globally unique.')
 param storageAccountName string = 'stor2${uniqueString(resourceGroup().id)}'
 
 var storageAccountSkuName = 'Standard_LRS'

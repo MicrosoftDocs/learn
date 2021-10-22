@@ -1,19 +1,19 @@
-@description('TODO')
+@description('The Azure region into which the resources should be deployed.')
 param location string
 
-@description('TODO')
+@description('The name of the App Service plan.')
 param appServicePlanName string
 
-@description('TODO')
+@description('The SKU of the App Service plan.')
 param appServicePlanSku object
 
-@description('TODO')
+@description('The name of the App Service app. This name must be globally unique.')
 param appServiceAppName string
 
-@description('TODO')
+@description('The settings to configure on the App Service app.')
 param appServiceAppSettings array
 
-@description('TODO')
+@description('The fully qualified resource ID of the user-assigned managed identity that should be assigned to the App Service app.')
 param managedIdentityResourceId string
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
@@ -39,3 +39,5 @@ resource appServiceApp 'Microsoft.Web/sites@2018-11-01' = {
     }
   }
 }
+
+output appServiceAppDefaultHostName string = appServiceApp.properties.defaultHostName
