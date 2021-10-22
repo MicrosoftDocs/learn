@@ -24,7 +24,10 @@ You need an SAP S-user or other user, which allows you to access the SAP Marketp
 
 1.  Sign in, and go to SAP Service Marketplace. Select **Download Software** &gt; **Installations and Upgrade** &gt; **By Alphabetical Index**. Then select Under H – **SAP HANA Platform Edition** &gt; **SAP HANA Platform Edition 2.0** &gt; **Installatio**n.
 2.  From the Azure jumpbox VM, download SAP HANA 2.0 installation packages and expand the self-extracting archives into a local directory.
-3.  As the archives are extracted, copy the directory created by the extraction to **/hana/shared** volume of HANA Large Instance unit. **Important:** Don't copy the installation packages into the root or boot LUN, because space is limited and needs to be used by other processes as well.
+3.  As the archives are extracted, copy the directory created by the extraction to **/hana/shared** volume of HANA Large Instance unit.
+
+> [!IMPORTANT]
+> Don't copy the installation packages into the root or boot LUN, because space is limited and needs to be used by other processes as well.<br>
 
 ## Install SAP HANA on the HANA Large Instance unit
 
