@@ -69,6 +69,7 @@ You'll use this WAVE file for the application in this exercise, and the applicat
             FileInfo fileInfo = new FileInfo(waveFile);
             if (fileInfo.Exists)
             {
+                Console.WriteLine("Speech recognition started.");
                 var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
                 using var audioConfig = AudioConfig.FromWavFileInput(fileInfo.FullName);
                 using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
@@ -78,6 +79,7 @@ You'll use this WAVE file for the application in this exercise, and the applicat
                 StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
                 streamWriter.WriteLine(result.Text);
                 streamWriter.Close();
+                Console.WriteLine("Speech recognition stopped.");
             }
         }
         catch (Exception ex)
@@ -116,6 +118,7 @@ You'll use this WAVE file for the application in this exercise, and the applicat
                     FileInfo fileInfo = new FileInfo(waveFile);
                     if (fileInfo.Exists)
                     {
+                        Console.WriteLine("Speech recognition started.");
                         var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
                         using var audioConfig = AudioConfig.FromWavFileInput(fileInfo.FullName);
                         using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
@@ -125,6 +128,7 @@ You'll use this WAVE file for the application in this exercise, and the applicat
                         StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
                         streamWriter.WriteLine(result.Text);
                         streamWriter.Close();
+                        Console.WriteLine("Speech recognition stopped.");
                     }
                 }
                 catch (Exception ex)
