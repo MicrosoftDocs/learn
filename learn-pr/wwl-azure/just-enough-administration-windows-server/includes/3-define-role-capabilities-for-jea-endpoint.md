@@ -14,7 +14,7 @@ When you create a role capability file, you can define the following limitations
 
 - VisibleProviders. This setting lists Windows PowerShell providers that are visible to the session.
 
-You can also configure other settings such as which modules to import, which assemblies are loaded, and data types that are available. For a list of all the options when creating a role capabilities file, refer to the [New-PSRoleCapabilityFile](/powershell/module/microsoft.powershell.core/new-psrolecapabilityfile?view=powershell-7.1) documentation page on docs.microsoft.com.
+You can also configure other settings such as which modules to import, which assemblies are loaded, and data types that are available. For a list of all the options when creating a role capabilities file, refer to the [New-PSRoleCapabilityFile](/powershell/module/microsoft.powershell.core/new-psrolecapabilityfile?view=powershell-7.1&preserve-view=true) documentation page on docs.microsoft.com.
 
 ## Which commands should you allow?
 
@@ -34,13 +34,3 @@ Using the following process can help you decide how to configure your role capab
 
 1. Test and monitor the list of allowed commands over time and modify as needed.
 
-## Check your knowledge
-
-
-Choose the best response for each of the questions below. Then select **Check your answers**.
-
-## Multiple Choice
-Which of the following settings should be configured in a role capability file to specify the exact PowerShell cmdlets that are available in a JEA session?
-()VisibleProviders{{Incorrect. Use this section of a role capability file to specify which PowerShell providers can be used in a JEA session.}}
-(x)VisibleCmdlets{{Correct. Use this section of a role capability file to specify which PowerShell cmdlets can be used in a JEA session.}}
-()VisibleFunctions{{Incorrect. Use this section of a role capability file to specify which PowerShell functions, rather than cmdlets, can be used in a JEA session.}}

@@ -50,14 +50,8 @@ You can register JEA on multiple machines by using Desired State Configuration (
 
 You can apply the DSC configuration using the Local Configuration Manager or by updating the pull server configuration.
 
-For more information about Registering JEA on multiple machines, refer to the GitHub page [JEA/DSC Resource/](/powershell/scripting/learn/remoting/jea/register-jea?view=powershell-7.1).
+For more information about Registering JEA on multiple machines, refer to the GitHub page [JEA/DSC Resource/](/powershell/scripting/learn/remoting/jea/register-jea?view=powershell-7.1&preserve-view=true).
 
 ## Check your knowledge
 
 Choose the best response for each of the questions below. Then select **Check your answers**.
-
-## Multiple Choice
-Which of the following PowerShell cmdlets can be used to determine which built in JEA endpoints are available on a Windows Server computer?
-()**Register-PSSessionConfiguration**{{Incorrect: Use the Register-PSSessionConfiguration cmdlet to register a new JEA endpoint.}}
-(x)**Get-PSSessionConfiguration**{{Correct: You can use the Get-PSSessionConfiguration cmdlet to view existing JEA endpoints.}}
-()**Set-PSSessionConfiguration**{{Incorrect: Use the Set-PSSessionConfiguration cmdlet to modify the properties of a registered session configuration.}}

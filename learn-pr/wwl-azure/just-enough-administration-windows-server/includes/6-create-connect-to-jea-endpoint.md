@@ -17,7 +17,7 @@ Enter-PSSession -<ComputerName> localhost -ConfigurationName DNSOps
 
 ```
 
-After you are connected, your command prompt will change to `[locahost]: PS`>. If you're not sure what commands are available, you can us the **Get-Command** cmdlet to review which ones are available.
+After you are connected, your command prompt will change to `[locahost]: PS`>. If you're not sure what commands are available, you can use the **Get-Command** cmdlet to review which ones are available.
 
 One limitation of interactive JEA sessions is that they operate in **NoLanguage** mode. This means you cant use variables to store data. For example, the following commands to start a virtual machine will not work because of the user of variables:
 
@@ -54,14 +54,5 @@ For more information about connecting to JEA endpoints programmatically, refer t
 
 PowerShell Direct allows Hyper-V administrators to connect to VMs from the Hyper-V host. By doing this, they can ignore any network or remote management settings on the VM.
 
-The Hyper-V administrator connects to the VM the same way they would connect to any other server using PSRemoting, only specifying the -VMName or -VMId parameter. Whenever using JEA to manage VMs, you should create a dedicated JEA user account for the Hyper-V administrator, and the accounts ability to sign-in locally to the VM.
+The Hyper-V administrator connects to the VM the same way they would connect to any other server using PSRemoting, only specifying the -VMName parameter or the -VMId parameter. Whenever using JEA to manage VMs, you should create a dedicated JEA user account for the Hyper-V administrator, and the accounts ability to sign-in locally to the VM.
 
-## Check your knowledge
-
-Choose the best response for each of the questions below. Then select **Check your answers**.
-
-## Multiple Choice
-In addition to the name of the remote computer being connected to, which of the following must be specified when connecting to a JEA endpoint using remote PowerShell?
-(x)Endpoint configuration name{{Correct: You must specify both the computername and the endpoint configuration name when making a remote PowerShell connection using JEA.}}
-()Session configuration file name{{Incorrect: You need to have a session configuration file to configure a JEA endpoint, but do not need to specify the file name when remotely connecting to that endpoint.}}
-()Role capability file name{{Incorrect: You need to have a role capability file to configure a JEA endpoint, but do not need to specify the file name when remotely connecting to that endpoint.}}

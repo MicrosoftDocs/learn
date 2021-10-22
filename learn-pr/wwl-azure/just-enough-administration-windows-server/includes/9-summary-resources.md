@@ -12,11 +12,11 @@ Now that you have reviewed this module, you should be able to:
 
 Use these resources to discover more.
 
-- [Overview of Just Enough Administration](/powershell/scripting/learn/remoting/jea/overview?view=powershell-7.1)
+- [Overview of Just Enough Administration](/powershell/scripting/learn/remoting/jea/overview?view=powershell-7.1&preserve-view=true)
 
-- [Role Capabilities](/powershell/scripting/learn/remoting/jea/role-capabilities?view=powershell-7.1)
+- [Role Capabilities](/powershell/scripting/learn/remoting/jea/role-capabilities?view=powershell-7.1&preserve-view=true)
 
-- [Session Configurations](/powershell/scripting/learn/remoting/jea/session-configurations?view=powershell-7.1)
+- [Session Configurations](/powershell/scripting/learn/remoting/jea/session-configurations?view=powershell-7.1&preserve-view=true)
 
-- [Using JEA](/powershell/scripting/learn/remoting/jea/using-jea?view=powershell-7.1)
+- [Using JEA](/powershell/scripting/learn/remoting/jea/using-jea?view=powershell-7.1&preserve-view=true)
 
