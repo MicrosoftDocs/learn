@@ -93,6 +93,8 @@ Once the list is created, it's time to add the data to it. Here data means the d
 
 4. Start adding your data in their respective columns, as shown in the figure.
 
+    :::image type="content" source="../media/add-list-details.png" alt-text="Screenshot of sharepoint list with added details" lightbox="../media/add-list-details.png":::
+
     >[!Note]
     > Under the **ImageLink** column, add the image links of public images available on the internet. You can get the image links by right-clicking and selecting the **Copy image address** option.
 
