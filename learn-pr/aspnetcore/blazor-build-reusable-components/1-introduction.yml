@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.blazor-build-reusable-components.introduction
+title: Introduction to Razor Class Libraries
+metadata:
+  unitType: introduction
+  title: introduction to razor class libraries
+  description: "Razor Class Libraries are a way for developers to share user-interface components between ASP.NET Core and Blazor applications.  The components are packaged using NuGet and can be easily referenced by another application."
+  ms.date: 10/13/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

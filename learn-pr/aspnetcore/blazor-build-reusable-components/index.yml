@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.blazor-build-reusable-components
+metadata:
+  moduleType: standard
+  title: blazor-build-reusable-components
+  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  ms.date: 10/13/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: blazor-build-reusable-components
+summary: "Blazor components allow us to reuse sections of HTML in our applications.  Let's build a component, package it, and share it with a Blazor application"
+abstract: |
+  By the end of this module, you'll be able to:
+    - Build a Razor Class Library containing Blazor components
+    - Package a Razor Class Library for use in other Blazor applications
+    - Reference a Razor Class Library in a Blazor application and use its components
+prerequisites: |
+  - Familiarity with HTML
+  - Knowledge of Blazor components and application
+  - Experience working with .NET Core and more recent projects
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
+  - intermediate
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
+  - developer
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
+  - blazor-server
+  - blazor-webassembly
+units:
+- learn.blazor-build-reusable-components.introduction
+- learn.blazor-build-reusable-components.concept-what-is-razor-class-library
+- learn.blazor-build-reusable-components.create-a-razor-class-library
+- learn.blazor-build-reusable-components.concept-packaging-a-razor-class-library
+- learn.blazor-build-reusable-components.create-a-nuget-package
+- learn.blazor-build-reusable-components.summary
+badge:
+  uid: learn.blazor-build-reusable-components.badge

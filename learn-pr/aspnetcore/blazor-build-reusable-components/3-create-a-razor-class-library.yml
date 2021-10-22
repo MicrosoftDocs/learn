@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.blazor-build-reusable-components.create-a-razor-class-library
+title: Create a Razor Class Library
+metadata:
+  unitType: exercise
+  title: exercise
+  description: "In this exercise, you will create your first Razor Class Library with a component that can be used in Blazor and ASP.NET Core applications.  Your library will be ready to send to NuGet for use by developers everywhere"
+  ms.date: 10/13/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-create-a-razor-class-library.md)]
