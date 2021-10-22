@@ -2,7 +2,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 ## Open a blank app
 
-1. Go to the Power Apps home page. Then, under **Make your own app**, select **Canvas app** from blank to create a canvas application.
+1. Go to the **Power Apps** home page. Then, under **Make your own app**, select **Canvas app from blank** to create a canvas application.
 
     :::image type="content" source="../media/canvas-app.png" alt-text="Screenshot of select canvas app from blank." lightbox="../media/canvas-app.png":::
 
@@ -19,6 +19,8 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
     :::image type="content" source="../media/click-skip.png" alt-text="Screenshot of select skip option." lightbox="../media/click-skip.png":::
 
 ## Connect to data
+
+To include data to your **Power Apps**, you must connect to the data via the connectors in your application. Since we have stored all of the data in the **SharePoint** lists, we will select **SharePoint** as one of the connectors.
 
 1. To the **Power Apps Studio**'s left, click the **Data** option.
 
@@ -40,7 +42,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 ## Create the splash screen
 
-1. You should already have a blank screen in the Power Apps Studio. If not, on the **Home** tab, select the down-arrow next to **New screen** to open a list of screen types, and then select **Blank**.
+1. You should already have a blank screen in the Power Apps Studio. If not, on the **Home** tab, select the down-arrow next to **New screen** to open a list of screen types, and then select **Blank** to create a blank screen.
 
     :::image type="content" source="../media/new-screen.png" alt-text="Screenshot of creating new screen." lightbox="../media/new-screen.png":::
 
@@ -48,11 +50,11 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
     :::image type="content" source="../media/rename-splash-screen.png" alt-text="Screenshot of renaming the screen." lightbox="../media/rename-splash-screen.png":::
 
-3. Click on the newly created screen to change its properties in the **Properties** tab at the right side of the screen.
+3. Click the newly created screen to change its properties in the **Properties** tab at the right side of the screen.
 
-4. Click the dropdown present beside the **Background image** property to add an image to the screen. We will add the logo of our application **Easy Sales** to the splash screen.
+4. Click the dropdown present beside the **Background image** property to add an image to the screen. Now, we will add the logo of our application **Easy Sales** to the splash screen.
 
-5. Set the image position to **Fit**.
+5. Set the image position to **Fit** to have the entire image into the specified size. The **Fit** option scales the image proportionally and doesn't crop the image.
 
     :::image type="content" source="../media/add-easy-sales-logo.png" alt-text="Screenshot of adding Easy Sales logo to the splash screen." lightbox="../media/add-easy-sales-logo.png":::
 
@@ -101,7 +103,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
     :::image type="content" source="../media/navigate-sofas-page.png" alt-text="Screenshot of navigation of sofas page" lightbox="../media/navigate-sofas-page.png":::
 
-5. Repeat the same procedure for the other three buttons. Again, make sure to provide proper screen names in the **Navigate** function; for example, for configuring the **OnSelect** property of the **Chairs** button, use the following navigate function:
+5. Repeat the same procedure for the other three buttons. Again, make sure to provide proper screen names in the **Navigate** function; for example, for configuring the **OnSelect** property of the **Chairs**, **Tables**, and **Carpets** button, use the following navigate function:
 
     ```Power Apps
     Navigate(Chairs,ScreenTransition.Cover)
@@ -116,7 +118,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
     ```
 
 >[!Note]
-> The default syntax of the **Navigate** function is: **Navigate**( *Screen* [, *Transition* [, *UpdateContextRecord* ] ] )
+> The default syntax of the **Navigate** function is: **Navigate**( *Screen* [, *Transition* [, *UpdateContextRecord*]])
 >
 >* **Screen** - Required. The screen to display.
 >* **Transition** - Optional. The visual transition to use between the current screen and the next screen. The default value is None.
@@ -126,7 +128,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 Now that we have added the product categories, we will display the list of products under each category. In Power Apps, we use **Gallery control** to display a record of data.
 
-1. In the **Sofas** screen; on the Insert tab, select **More** dropdown, and then navigate to **Gallery** > **Vertical**. Rename it to **Gallery_sofas**.
+1. In the **Sofas** screen; on the Insert tab, select **More** dropdown, and then select **Gallery** > **Vertical**. Rename it to **Gallery_sofas**.
 
     :::image type="content" source="../media/select-vertical-gallery.png" alt-text="Screenshot of adding gallery" lightbox="../media/select-vertical-gallery.png":::
 
@@ -186,7 +188,7 @@ The details page includes all the details and information concerning the selecte
     ```
 
     > [!Note]
-    > Customize the **Navigate** function by providing different destination pages, for example, **Navigate(Details_chairs,ScreenTransition.Cover,{content : ThisItem})**.
+    > Customize the **Navigate** function by providing different destination pages, for example, **Navigate(Details_chairs,ScreenTransition.Cover,{content : ThisItem})** to navigate to the **Details_chairs** page.
 
     :::image type="content" source="../media/navigate-next-details.png" alt-text="Screenshot of navigation to next details" lightbox="../media/navigate-next-details.png":::
 
@@ -266,15 +268,15 @@ The details page includes all the details and information concerning the selecte
 
 **View in MR** is a mixed reality feature provided by Power Apps which enables users to place **3D objects** or **Images** in their real world.
 
-1. In the created **SharePoint** list named **Easy Sales-Sofas**, select the **+ Add column** and select Show/hide columns.
+1. In the created **SharePoint** list named **Easy Sales-Sofas**, select the **+ Add column** and select **Show/hide columns**.
 
     :::image type="content" source="../media/select-add-column.png" alt-text="Screenshot to add column" lightbox="../media/select-add-column.png":::
 
-2. Make sure **Attachments** be selected and press **Apply** at the top. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file).
+2. Make sure **Attachments** is selected and press **Apply** at the top. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file).
 
     :::image type="content" source="../media/add-attachments.png" alt-text="Screenshot to add attachments" lightbox="../media/add-attachments.png":::
 
-3. Click the dropdown present beside the **Attachments** column and select **Show attachments first**
+3. Click the dropdown present beside the **Attachments** column and select **Show attachments first**. We want the attachments to be placed at first for easy access.
 
     :::image type="content" source="../media/select-Show-attachments.png" alt-text="Screenshot to select Show attachments first" lightbox="../media/select-Show-attachments.png":::
 
@@ -282,7 +284,7 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/add-view-in-mr-button.png" alt-text="Screenshot of adding View in MR button" lightbox="../media/add-view-in-mr-button.png":::
 
-5. In the **Properties** tab for the **View in MR** component, select the **Source** field and enter:
+5. In the **Properties** tab for the **View in MR** component, select the **Source** field and enter to access the 3D models stored in your **SharePoint** list:
 
     ```Power Apps
     First(Gallery_sofas.Selected.Attachments).Value
@@ -295,6 +297,9 @@ The details page includes all the details and information concerning the selecte
     ```Power Apps
     First(Gallery_chairs.Selected.Attachments).Value
     ```
+
+>[!Note]
+> We do not include the **View in MR** feature for the **Carpets** category. Instead, we will be estimating the **Price** of the carpet depending upon the area calculated in the **Measure in MR** session.
 
 Another unique property provided by the **View in MR** component is **Object scaling**. You can edit the sizes of your 3D models externally by changing the **Object width**, **Object height**, and **Object depth** properties.
 
@@ -315,7 +320,7 @@ It is allowed to take pictures during the **View in MR** session and display the
 
     :::image type="content" source="../media/add-text-input.png" alt-text="Screenshot of adding Text input" lightbox="../media/add-text-input.png":::
 
-3. Click the dropdown at the right side of the studio and select **Gallery**. Choose **Horizontal** type of gallery.
+3. Click the dropdown at the right side of the studio and select **Gallery**. Choose **Horizontal** type of gallery. You will be storing photos taken during the **View in MR** session in this gallery.
 
     :::image type="content" source="../media/horizontal-gallery.png" alt-text="Screenshot of adding horizontal gallery" lightbox="../media/horizontal-gallery.png":::
 
