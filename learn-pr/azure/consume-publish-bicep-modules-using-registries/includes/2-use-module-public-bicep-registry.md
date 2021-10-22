@@ -6,10 +6,7 @@ When you work with Bicep, you often use similar resources repeatedly. Also, it's
 
 One of the benefits of using modules is that you can share them with others, and you can benefit from the modules that others share with you. For example, you might invest time in building and testing a Bicep file to deploy a set of resources that you often use together. When you share your file as a Bicep module, your colleagues can use the module to quickly deploy the same resources.
 
-A Bicep *registry* is the place that modules are stored and shared. Anyone can create their own registry. Additionally, Microsoft runs a public registry that the Bicep community uses to share modules.
-
-> [!NOTE]
-> In future, registries will support more types of Bicep content in addition to modules.
+A Bicep *registry* is the place that modules are stored and shared. Anyone can create their own registry. Additionally, Microsoft runs a public registry that the Bicep community uses to share modules. In future, registries will support more types of Bicep content in addition to modules.
 
 ## How do registries compare to template specs?
 

@@ -26,13 +26,15 @@ Module paths for private registries have the same structure as paths for the pub
 
 Just like you've previously seen, you use the `br` scheme for Bicep registries. In the example above, the registry name is `toycompany.azurecr.io`, which is the name of the Azure container registry.
 
-> [!NOTE]
-> It's generally easiest to include the registry name in the module path, like in the example above. However, you might want to use different registries in different environments, or specify the registry URL externally for another reason. You can use a *registry alias* to define the registry in the *bicepconfig.json* file, and then use the alias in your Bicep code. We don't use aliases in this Microsoft Learn module, but we link to further information in the summary.
-
 When you publish your own module identifier, use a meaningful name that indicates the purpose of the module. You can optionally use a *namespaces*, where you use slashes (`/`) to distinguish between parts of a name. However, Azure Container Registry and Bicep don't understand a hierarchy and they treat the module identifier as a single value.
 
 > [!TIP]
 > In Azure Container Registry, the module identifier is called a *repository*.
+
+### Aliases 
+TODO more here
+
+You can use a *registry alias* to define the registry in the *bicepconfig.json* file, and then use the alias in your Bicep code. You'll see how this works in the next exercise.
 
 ## Tags and versions
 

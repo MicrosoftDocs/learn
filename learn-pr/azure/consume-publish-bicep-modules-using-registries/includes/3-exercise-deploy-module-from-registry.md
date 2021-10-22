@@ -1,6 +1,6 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-You've already helped team building the toy car to build the first part of their template, which includes an Azure Cosmos DB database. Now, you need to add an Azure Machine Learning workspace to the template. Azure Machine Learning workspaces require multiple components to be deployed, so you decide to use a module from public Bicep registry to simplify your template.
+TODO
 
 In this exercise, you create a Bicep file that includes a module from the public registry. During the process, you'll:
 
@@ -23,17 +23,19 @@ In this exercise, you create a Bicep file that includes a module from the public
 
 1. Copy the following Bicep code into the file:
 
-   TODO
+   ::: code language="bicep" source="code/3-main-1.bicep" range="1-9, 11-31" :::
 
-   This creates an Azure Cosmos DB account, a database, and a container for the trial data.
-
-1. Save the changes to the file.
+   This creates a storage account and blob container.
 
 ## Add a module
 
-1. Add the following module definition to the *main.bicep* file:
+1. Below the `storageAccountContainerName` variable definition, add a variable to define the name of a user-assigned managed identity:
 
-   TODO
+   ::: code language="bicep" source="code/3-main.bicep" range="10" :::
+
+1. Below the storage account definition, add the following module definition:
+
+   ::: code language="bicep" source="code/3-main.bicep" range="33-41" :::
 
    Notice that this imports a module from the public Bicep module registry.
 
@@ -69,7 +71,7 @@ In this exercise, you create a Bicep file that includes a module from the public
 
 ::: zone-end
 
-   Scroll to the TODO part of the file. Notice that there are multiple resources defined, including a key vault, a storage account, an Application Insights instance, and an Azure Machine Learning workspace. These are all defined in the module you added.
+   Notice that in the `resources` section of the JSON ARM template, there's a resource with the type `Microsoft.Resources/deployments`. This resource represents the module deployment. Within that deployment, there's a user assigned managed identity and some role assignments. These are all defined in the module you added.
 
 ## Deploy the Bicep template to Azure
 
@@ -120,4 +122,4 @@ Use the Azure portal to inspect the resources that you deploy and to inspect the
 
 1. In the **Overview** section, you can see that two deployments have succeeded.
 
-   Notice that the name of one of the deployments is *main*. This represents the deployment you initiated for your template. The other deployment is named *machine-learning-workspace*, and it represents the deployment of the resources defined in the module you included in the template.
+   Notice that the name of one of the deployments is *main*. This represents the deployment you initiated for your template. The other deployment is named *managed-identity*, and it represents the deployment of the resources defined in the module you included in the template.

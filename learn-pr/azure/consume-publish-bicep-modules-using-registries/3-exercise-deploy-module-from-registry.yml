@@ -1,12 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.consume-publish-bicep-modules-using-registries.exercise-deploy-module-from-registry
 title: Exercise - Deploy a module from a registry
-sandbox: true
 metadata:
   unitType: exercise
   title: Exercise - Deploy a module from a registry
   description: Create a Bicep file that uses a module from the public Bicep registry.
-  ms.date: 10/14/2021
+  ms.date: 10/21/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
