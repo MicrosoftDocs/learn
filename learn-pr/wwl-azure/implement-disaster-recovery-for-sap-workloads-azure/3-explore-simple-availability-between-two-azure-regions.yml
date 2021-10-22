@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-disaster-recovery-for-sap-workloads-azure.explore-simple-availability-between-two-azure-regions
+title: Explore simple availability between two Azure regions
+metadata:
+  title: Explore simple availability between two Azure regions
+  description: "Explore simple availability between two Azure regions"
+  ms.date: 10/21/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-explore-simple-availability-between-two-azure-regions.md)]
