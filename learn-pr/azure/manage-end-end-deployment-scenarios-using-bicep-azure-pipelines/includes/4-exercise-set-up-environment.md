@@ -58,7 +58,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Create a folder to use for the repository, and then choose **Select Repository Location**.
 
-1. You're using this repository for the first time, so you're prompted to sign in.
+1. You're using this repository for the first time, so you might be prompted to sign in.
 
     If you're using Windows, enter the same credentials you used to sign in to Azure DevOps earlier in this exercise.
 

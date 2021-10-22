@@ -69,7 +69,7 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
    :::code language="yaml" source="code/5-deploy.yml" range="55-64" highlight="6-7" :::
 
-   Some of the steps you'll add to the job require the Windows operating system to run. You can use different agent pools for different jobs in your pipeline, so the other jobs continue to use the Ubuntu Linux pipeline agent pool.
+   Some of the pipeline steps that you'll add later to work with your database require the Windows operating system to run. You can use different agent pools for different jobs in your pipeline, so the other jobs continue to use the Ubuntu Linux pipeline agent pool.
 
 1. In the *Deploy* job's *DeployBicepFile* step, add a new pipeline variable with the value of the app name from the Bicep output:
 
