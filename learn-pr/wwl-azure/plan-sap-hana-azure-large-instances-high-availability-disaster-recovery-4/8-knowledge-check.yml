@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/21/2021
+  ms.date: 10/22/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -28,17 +28,17 @@ quiz:
     - content: "Either of the above"
       isCorrect: false
       explanation: "Incorrect. Storage replication enables you to perform point-in-time recovery. Multi-tier HSR with a third replica in the DR region supports a faster recovery time, but does not support a point-in-time recovery."
-  - content: "\"A separate set of disk volumes are attached to each node. Only disk volumes of secondary replica in the production site get replicated to the disaster recovery location. One set of volumes is required at the disaster recovery site.\" Which HANA Large Instances-supported high availability and disaster recovery scenario does this describe?"
+  - content: "\"A separate set of disk volumes is attached to each node. Only disk volumes of secondary replica in the production site get replicated to the disaster recovery location. One set of volumes is required at the disaster recovery site.\" Which HANA Large Instances-supported high availability and disaster recovery scenario does this describe?"
     choices:
     - content: "Single node"
       isCorrect: false
-      explanation: "Incorrect. With host auto-failover, HANA volume sets are attached to all the nodes, and the DR site must have the same number of nodes. With HANA system replication, a separate set of disk volumes are attached to each node."
+      explanation: "Incorrect. With host auto-failover, HANA volume sets are attached to all the nodes, and the DR site must have the same number of nodes. With HANA system replication, a separate set of disk volumes is attached to each node."
     - content: "Host auto-failover: Scale-out (with or without standby) including 1+1"
       isCorrect: false
-      explanation: "Incorrect. With host auto-failover, HANA volume sets are attached to all the nodes, and the DR site must have the same number of nodes. With HANA system replication, a separate set of disk volumes are attached to each node."
+      explanation: "Incorrect. With host auto-failover, HANA volume sets are attached to all the nodes, and the DR site must have the same number of nodes. With HANA system replication, a separate set of disk volumes is attached to each node."
     - content: "HANA system replication"
       isCorrect: true
-      explanation: "Correct. With host auto-failover, HANA volume sets are attached to all the nodes, and the DR site must have the same number of nodes. With HANA system replication, a separate set of disk volumes are attached to each node."
+      explanation: "Correct. With host auto-failover, HANA volume sets are attached to all the nodes, and the DR site must have the same number of nodes. With HANA system replication, a separate set of disk volumes is attached to each node."
   - content: "Which script should be run to monitor the status of the storage replication progress when carrying out storage replication in a HANA Large Instances environment?"
     choices:
     - content: "azure_hana_storage_replication"

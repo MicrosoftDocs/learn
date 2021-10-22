@@ -70,7 +70,7 @@ The following table shows the currently supported high availability and disaster
     Dedicated DR setup. Multipurpose DR setup. DR synchronization by using storage replication. DR by using HANA system replication is not yet possible without third-party components.
   :::column-end:::
   :::column:::
-    Separate set of disk volumes are attached to each node. Only disk volumes of secondary replica in the production site get replicated to the DR location. One set of volumes is required at the DR site.
+    Separate set of disk volumes is attached to each node. Only disk volumes of secondary replica in the production site get replicated to the DR location. One set of volumes is required at the DR site.
   :::column-end:::
 :::row-end:::
 
