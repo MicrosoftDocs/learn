@@ -6,6 +6,8 @@ Now, your website's deployment pipeline creates a working website for your team 
 
 ## Learn more
 
+- Azure Resource Manager deployment scripts
+    - [Extend ARM templates by using deployment scripts](xref:learn.azure.extend-resource-manager-template-deployment-scripts).
 - [Azure Pipelines variables](/azure/devops/pipelines/process/variables)
     - [Use outputs in a different job](/azure/devops/pipelines/process/variables#use-outputs-in-a-different-job)
     - [Use outputs in a different stage](/azure/devops/pipelines/process/variables#use-outputs-in-a-different-stage)

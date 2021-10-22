@@ -6,7 +6,7 @@ Many types of applications need to be *compiled* or *built* before they can be u
 
 The build process compiles the source code into binary files or executables. Typically a build process also includes other activities, including compressing the image files that will be served to your website's users, *linting* your code to verify it follows good coding practices, and running *unit tests* that verify the behavior of individual pieces of your application. You might also perform steps like digitally signing the files to ensure they can't be modified.
 
-Whatever the series of steps might be, the output of the build process is a deployable *artifact* that's saved to the pipeline agent's file system. Later stages of your pipeline need to work with the artifact to deploy it through your environments, and test it as it progresses through the quality gates you define in your pipeline definition.
+Whatever the series of steps might be, the output of the build process is a deployable *artifact*. Typically the artifact is saved to the pipeline agent's file system. Later stages of your pipeline need to work with the artifact to deploy it through your environments, and test it as it progresses through the quality gates you define in your pipeline definition.
 
 > [!NOTE]
 > You might have heard of the terms *continuous integration* and *continuous deployment*, or *CI* and *CD*. A build process sits within the continuous integration part of your pipeline.
@@ -23,10 +23,9 @@ The artifacts generated in your pipeline aren't stored in your Git repository. T
   inputs:
     artifactName: my-artifact-name
     pathToPublish: '$(Build.ArtifactStagingDirectory)/my-folder'
-    publishLocation: Container # This ensures that Azure Pipelines stores the pipeline artifact for you.
 ```
 
-The `pathToPublish` property is the location on the pipeline agent's file system. The contents at this location will be published to the artifact. You can specify a single file or a folder.
+The `pathToPublish` property is the location that contains your compiled code or output files on the pipeline agent's file system. The contents at this location will be published to the artifact. You can specify a single file or a folder.
 
 Each artifact has a name, which you specify by using the `artifactName` task property. You use the artifact name to refer to it later in the pipeline. Later jobs and stages in the pipeline can download the artifact so that they can work with them, such as to deploy the website to the server that hosts it:
 
@@ -78,9 +77,9 @@ Azure provides many other options for hosting your applications, each of which h
 
 Azure Functions is built on App Service, and uses a similar deployment process to the one described above.
 
-If you deploy to a virtual machines, you typically need to connect to the virtual machine instance to install your application. You often need to use specialized tooling, like Chef, Puppet, or Ansible, to orchestrate deployment to virtual machines. You can also configure your pipeline to deploy directly to the virtual machines if they have an Azure Pipelines agent installed and configured.
+If you deploy to a virtual machines, you typically need to connect to the virtual machine instance to install your application. You often need to use specialized tooling, like Chef, Puppet, or Ansible, to orchestrate deployment to virtual machines.
 
-If you use Kubernetes or AKS, you typically use a slightly different approach to build and deploy your solution. After your application is built, your pipeline creates a *container image* and publishes it to a *container registry*, which your Kubernetes cluster then reads from.
+If you use Kubernetes or AKS, you typically use a slightly different approach to build and deploy your solution. After your application is built, your pipeline creates a *container image* and publishes it to a *container registry*, which your Kubernetes cluster then reads from. Because your container registry keeps the compiled application, you don't generally use a pipeline artifact.
 
 In this module, we focus on Azure App Service to illustrate the pipeline concepts involved. We provide links to more information about deploying to other hosting services in the summary.
 

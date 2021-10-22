@@ -11,6 +11,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
-durationInMinutes: 7
+durationInMinutes: 14
 content: |
   [!include[](includes/7-exercise-seed-storage-account-database.md)]
