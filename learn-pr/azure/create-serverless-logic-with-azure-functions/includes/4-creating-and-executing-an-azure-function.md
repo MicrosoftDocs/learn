@@ -19,9 +19,9 @@ Azure supports triggers for the following services.
 
 ### Bindings
 
-A binding is a declarative way to connect data and services to your function. Bindings know how to interact with different services, which means you don't have to write code in your function to connect to data sources and manage connections. The platform takes care of that complexity for you as part of the binding code. Each binding has a direction - your code reads data from *input* bindings, and writes data to *output* bindings. Each function can have zero or more bindings to manage the input and output data processed by the function.
+A binding is a declarative way to connect data and services to your function. Bindings interact with various data sources, which means you don't have to write the code in your function to connect to data sources and manage connections--the platform takes care of that complexity for you as part of the binding code. Each binding has a direction--your code reads data from *input* bindings, and writes data to *output* bindings. Each function can have zero or more bindings to manage the input and output data processed by the function.
 
-A trigger is a special type of input binding that has the additional capability of initiating execution.
+A trigger is a type of input binding that has the ability to initiate execution of some code.
 
 Azure provides a [large number of bindings](/azure/azure-functions/functions-triggers-bindings#supported-bindings) to connect to different storage and messaging services.
 
@@ -68,21 +68,21 @@ Azure provides several predefined function templates for common scenarios:
 
 ### Function templates
 
-When you create your first function in the Azure **Create function** pane, you can select a predefined trigger for your function. Based on your selections, Azure generates function code and configuration, which includes default code and configurations, such logging events for when input data is received.
+When you create your first function in the Azure **Create function** pane, you can select a predefined trigger for your function. Based on your selections, Azure generates default code and configuration information, such creating an event log entry when input data is received.
 
 Selecting a template from the **Add function** pane provides easy access to the most common development environments, triggers, dependencies. When you create a function in the Azure portal, you can choose from more than 20 templates. Once created you can further customize the code.
 
 ## Navigate to your function and its files
 
-When you create a function from a template, several files are created, including a configuration file, **function.json**, and a source code file, **index.js**.
+When you create a function from a template, several files are created, including a configuration file, *function.json*, and a source code file, *index.js*.
 
 You can create or edit functions for your function app by selecting **Functions** under the **Functions** category from the Function App menu.
 
-When you select a function that you created in your function app, the Function pane appears, where you can disable, delete, or edit the json code. You can display, test, and edit code for your function by selecting **Code + Test** from the Function menu. The function's path above displays above the code box. You can , select *function.json* dor *index.js* from the dropdown list, and then select **Test/Run** from the command bar to view, edit, or test the Input and Output response. See the following screenshot.
+When you select a function that you created in your function app, the Function pane opens. By selecting **Code + Test** from the Function menu, you have access to actions in the command bar test and run the code, to save or discard changes you make, or to obtain the published URL. By selecting **Test/Run** from the command bar, you can run use cases for requests that include query strings and values.  The function's path above the code box displays the name of the file that is open. You can select a specific file from the dropdown to test or edit, for example, *function.json*. 
 
 :::image type="content" source="../media/4-file-navigation.png" alt-text="Screenshot of the function code and test editor showing the expanded Test/Run view, with menu options highlighted." lightbox="../media/4-file-navigation.png":::
 
-As you can see, the pane on the right has **Input** and **Output** tabs. Selecting the **Input** tab enables you to build and test the function by adding query parameters and supplying values for your query string.
+In the image above, the pane on the right has **Input** and **Output** tabs. Selecting the **Input** tab enables you to build and test the function by adding query parameters and supplying values for your query string. The **Output** tab displays the results of the request.
 
 ## Test your Azure function
 
@@ -97,7 +97,7 @@ You can start a function by manually triggering the configured trigger. For inst
 
 ### Test in the Azure portal
 
-The portal also provides a convenient way to test your functions. As previously described, in the screenshot above. When you select **Run** in this pane, the results appear in the **Output** tab, along with a status code in the **Logs** pane.
+The portal also provides a convenient way to test your functions. As previously described, in the screenshot above. When you select **Run** in this pane, the results automatically appear in the **Output** tab, and the **Logs** pane opens to display the status.
 
 ## Monitoring and Application Insights dashboard
 
@@ -131,4 +131,4 @@ The following code snippets show how to create a log message:
 
 ### Errors, failures, warnings, and anomalies
 
-You can use Metrics or additional options from the Investigate category in the function menu to monitor performance, diagnose failures, or configure dozens of predefined workbooks to manage your function app, everything from compilation errors and warnings in the code, to usage statistics by role.
+You can use Metrics or options from the Investigate category in the Function menu to monitor performance, diagnose failures, or configure dozens of predefined workbooks to manage your function app, everything from compilation errors and warnings in the code, to usage statistics by role.
