@@ -105,7 +105,7 @@ At line:1 char:1
     + FullyQualifiedErrorId : UnauthorizedAccess,Microsoft.PowerShell.Commands.ImportModuleCommand
 ```
 
-Or by hanging (not responding at all). In this case, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the program.
+Or by not responding at all. In this case, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the program.
 
 Both behaviors typically indicate that the execution policy is "Restricted", meaning you can't run  modules that you download from an external source -- including the PowerShell Gallery. You can check whether this is the case by running the cmdlet `Get-ExecutionPolicy`. If it returns "Restricted", then do the following:
 
