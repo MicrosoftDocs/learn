@@ -76,7 +76,7 @@ For deployment cases of HANA System Replication or HANA scale-out, a blade confi
 
 ## Storage
 
-The storage layout for SAP HANA on Azure (Large Instances) is configured by SAP HANA on Azure service management through SAP recommended guidelines. The naming conventions of the storage volumes are listed in the following table (where SID is the HANA instance System ID and Tenant is an internal enumeration of operations when deploying a tenant):
+The storage layout for SAP HANA on Azure (Large Instances) is configured by SAP HANA on Azure Service Management through SAP recommended guidelines. The naming conventions of the storage volumes are listed in the following table (where SID is the HANA instance System ID and Tenant is an internal enumeration of operations when deploying a tenant):
 
 :::row:::
   :::column:::
@@ -156,14 +156,14 @@ The HANA/log/backup volume is not supposed to be the volume for database backups
 
 In addition to the storage that's provided, you can purchase additional storage capacity in 1 TB increments. This additional storage can be added as new volumes to a HANA Large Instance.
 
-During onboarding with SAP HANA on Azure service management, the customer specifies a user ID (UID) and group ID (GID) for the sidadm user and sapsys group (for example: 1000,500). During installation of the SAP HANA system, you must use these same values. Because you want to deploy multiple HANA instances on a unit, you get multiple sets of volumes (one set for each instance). As a result, at deployment time you need to define the following:
+During onboarding with SAP HANA on Azure Service Management, the customer specifies a user ID (UID) and group ID (GID) for the sidadm user and sapsys group (for example: 1000,500). During installation of the SAP HANA system, you must use these same values. Because you want to deploy multiple HANA instances on a unit, you get multiple sets of volumes (one set for each instance). As a result, at deployment time you need to define the following:
 
  -  The SID of the different HANA instances (sidadm is derived from it).
  -  The memory sizes of the different HANA instances. The memory size per instance defines the size of the volumes in each individual volume set.
 
 Based on storage provider recommendations, the following mount options are configured for all mounted volumes (excludes boot LUN):
 
-nfs rw, vers=4, hard, timeo=600, rsize=1048576, wsize=1048576, intr, noatime, lock 0 0
+`nfs rw, vers=4, hard, timeo=600, rsize=1048576, wsize=1048576, intr, noatime, lock 0 0`
 
 These mount points are configured in /etc/fstab
 
