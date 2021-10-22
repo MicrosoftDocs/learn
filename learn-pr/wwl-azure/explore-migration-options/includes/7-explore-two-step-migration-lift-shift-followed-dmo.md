@@ -111,42 +111,41 @@ The infrastructure/hardware reduction lever consists of the following:
 
 ## Key considerations for downtime optimization for DMO
 
- -  Source database optimization (index rebuild, DB statistics, DB parameters, DB file system). A useful reference can be found in the table below.
-
-:::row:::
-  :::column:::
-    **Database**
-  :::column-end:::
-  :::column:::
-    **Reference**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Oracle
-  :::column-end:::
-  :::column:::
-    [SAP Note \#936441](https://launchpad.support.sap.com/#/notes/936441)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    DB2
-  :::column-end:::
-  :::column:::
-    [DB2 Optimization Techniques for SAP Database Migration And Unicode Conversion](http://www.redbooks.ibm.com/abstracts/sg247774.html)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    SQL Server
-  :::column-end:::
-  :::column:::
-    [SAP OS/DB Migration to SQL Server–FAQ v6.2 April 2017](/archive/blogs/saponsqlserver/sap-osdb-migration-to-sql-server-faq-v6-2-april-2017)
-  :::column-end:::
-:::row-end:::
-
-
+ -  Source database optimization (index rebuild, DB statistics, DB parameters, DB file system). A useful reference can be found in the table below.<br>
+    
+    :::row:::
+      :::column:::
+        **Database**
+      :::column-end:::
+      :::column:::
+        **Reference**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Oracle
+      :::column-end:::
+      :::column:::
+        [SAP Note \#936441](https://launchpad.support.sap.com/#/notes/936441)
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        DB2
+      :::column-end:::
+      :::column:::
+        [DB2 Optimization Techniques for SAP Database Migration And Unicode Conversion](http://www.redbooks.ibm.com/abstracts/sg247774.html)
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        SQL Server
+      :::column-end:::
+      :::column:::
+        [SAP OS/DB Migration to SQL Server–FAQ v6.2 April 2017](/archive/blogs/saponsqlserver/sap-osdb-migration-to-sql-server-faq-v6-2-april-2017)
+      :::column-end:::
+    :::row-end:::
+    
  -  Use the latest version of migration tools, R3\*, kernel, etc.
  -  Network parameterization (e.g. MTU settings, reset counters)
  -  OS-related parameterization (e.g. Q depth)
