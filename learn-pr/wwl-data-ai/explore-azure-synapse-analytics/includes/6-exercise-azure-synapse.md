@@ -4,7 +4,8 @@ In this exercise, you'll create a Synapse Analytics workspace and use it to inge
 
 The exercise is designed to familiarize you with some key capabilities of Synapse Analytics, not as a comprehensive guide to performing advanced data analysis. The exercise should take around 30 minutes to complete.
 
-> **Note**: To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free](https://azure.microsoft.com/free?portal=true).
+>[!NOTE]
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free](https://azure.microsoft.com/free?portal=true).
 
 ### Provision a Synapse Analytics workspace
 
@@ -22,7 +23,8 @@ To use Synapse Analytics, you must provision a Synapse Analytics Workspace resou
         - **Account name**: *Create a new account with a unique name, for example "datalake<your_name>"*.
         - **File system name**: *Create a new file system with a unique name, for example "fs<your_name>"*.
 
-    > **Note**: A Synapse Analytics workspace requires two resource groups in your Azure subscription; one for resources you explicitly create, and another for managed resources used by the service. It also requires a Data Lake storage account in which to store data, scripts, and other artifacts.
+>[!NOTE]
+> A Synapse Analytics workspace requires two resource groups in your Azure subscription; one for resources you explicitly create, and another for managed resources used by the service. It also requires a Data Lake storage account in which to store data, scripts, and other artifacts.
 
 4. When you've entered these details, select **Review + create**, and then select **Create** to create the workspace.
 5. Wait for the workspace to be created - this may take five minutes or so.

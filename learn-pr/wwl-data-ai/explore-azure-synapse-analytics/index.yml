@@ -3,13 +3,13 @@ uid: learn.wwl.explore-azure-synapse-analytics
 metadata:
   title: Explore Azure Synapse Analytics
   description: "Explore the different data ingestion options available when you are building a data warehouse with Azure. See how to use Azure Data Factory to ingest data into a data warehouse. Explore Azure services for performing data analytics, and explore the features of Azure Synapse Analytics."
-  ms.date: 10/21/2021
+  ms.date: 10/22/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore Azure Synapse Analytics
-summary: Explore the different data ingestion options available when you are building a data warehouse with Azure. See how to use Azure Data Factory to ingest data into a data warehouse. Explore Azure services for performing data analytics, and explore the features of Azure Synapse Analytics.
+summary: Explore data ingestion options available when you’re building a data warehouse with Azure, services for performing data analytics, and features of Azure Synapse Analytics. Create a Synapse Analytics workspace and use it to ingest and analyze data.
 abstract: |
   In this module, you will:
   * Describe data ingestion in Azure
