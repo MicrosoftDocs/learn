@@ -20,7 +20,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
 1. Under **Select a template**, select *HTTP trigger*.
 
-::: zone pivot="javascript"
+   ::: zone pivot="javascript"
 
 1. Select **Create**. The **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
 
@@ -357,7 +357,7 @@ In this case, we're going to use the **Test** pane in the portal to test our fun
 
 1. Select **Run** and view the response under the **Output** tab. To see log messages, open the **Logs** tab in the bottom flyout of the pane. The following image shows an example response in the output pane and messages in the **Logs** pane.
 
- :::image type="content" source="../media/5-portal-testing.png" alt-text="Screenshot of the Azure function editor, with the Test and Logs tabs showing." lightbox="../media/5-portal-testing.png":::   
+   :::image type="content" source="../media/5-portal-testing.png" alt-text="Screenshot of the Azure function editor, with the Test and Logs tabs showing." lightbox="../media/5-portal-testing.png":::   
 
     The **Output** tab shows that a status field has been correctly added to each of the readings.
 
