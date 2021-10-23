@@ -1,24 +1,26 @@
-Now that we have installed the NVIDIA DeepStream dependencies and SDK, we can begin working with the included DeepStream reference applications.
+Now that you've installed the NVIDIA DeepStream dependencies and SDK, you can start working with the included DeepStream sample applications.
 
-1. Navigate to `/opt/nvidia/deepstream/deepstream/samples`. Here you will find many sample applications and configurations.  Let's navigate to the deepstream-app samples and launch one of the reference applications.  
+1. Go to /opt/nvidia/deepstream/deepstream/samples. You'll see many sample applications and configurations. We'll go to the deepstream-app samples and start one of the sample applications.  
 
-    The commands below will launch the deepstream-app using the configuration present in `source4_1080p_dec_infer-resnet_tracker_sgie_tiled_display_int8.txt`
+    The following commands will start deepstream-app by using the configuration in source4_1080p_dec_infer-resnet_tracker_sgie_tiled_display_int8.txt.
 
     ```
     cd /opt/nvidia/deepstream/deepstream/samples/configs/deepstream-app
     deepstream-app -c source4_1080p_dec_infer-resnet_tracker_sgie_tiled_display_int8.txt
     ```
 
-    The deepstream-app should begin building the execution engine using the model metadata defined in the supplied configuration.  This process may take a few minutes depending on the available hardware, and will run  faster on consecutive executions due to caching of the resulting engine output.
+    The deepstream-app should start building the execution engine. It will use the model metadata defined in the supplied configuration.  This process might take a few minutes, depending on the available hardware. It will run faster on consecutive runs because of the caching of the resulting engine output.
 
-    It is important to note that the name of the configuration file tells us a bit of information about what to expect from the sample.  The `source4_1080p_dec_infer-resnet_tracker_sgie_tiled_display_int8.txt` sample will decode four 1080-p video sources and apply inference using Resnet as the primary GPU inference engine (to detect people, bicycles, vehicles, and road signs), employ object tracking, and use a Secondary GPU inference engine (for make / color / model of vehicle) that will render results on a tiled display using int8 precision (to speed up inference processing time).  
+    The name of the configuration file tells us a bit about what to expect from the sample. The source4_1080p_dec_infer-resnet_tracker_sgie_tiled_display_int8.txt sample will: 
+    - Decode four 1080p video sources and apply inference by using ResNet as the primary GPU inference engine (to detect people, bicycles, vehicles, and road signs). 
+    - Employ object tracking and use a secondary GPU inference engine (for make/color/model of the vehicle). This engine will render results in a tiled display by using int8 precision (to speed up inference processing time).  
 
-    The application should display as shown below:
+    The display should look like this one:
 
-    ![DeepStream SGIE configuration running](../media/deepstream-sgie-config.png)
+    ![Screenshot that shows the running DeepStream SGIE configuration.](../media/deepstream-sgie-config.png)
 
-    You may view the labels assigned to detected object by left-clicking on any of the sources within the tiled display, this action will show a bit more information regarding detections (to return the tiled display, right-click anywhere in the application window):
+    You can view the labels assigned to detected objects by selecting any of the sources in the tiled display. When you do, you'll see a bit more information about the objects. To return to the tiled display, right-click anywhere in the application window.
 
-    ![DeepStream SGIE configuration running with labels](../media/deepstream-sgie-config-labels.png)
+    ![Screenshot that shows the DeepStream SGIE configuration with labels.](../media/deepstream-sgie-config-labels.png)
 
-Now that we can successfully run a DeepStream reference application, we can begin to look at making modifications to customize the behavior of these examples.
+Now that you've seen a DeepStream sample application, you can make some changes to customize its behavior.
