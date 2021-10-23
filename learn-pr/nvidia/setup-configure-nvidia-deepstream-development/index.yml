@@ -15,7 +15,7 @@ abstract: |
   - Describe the components of Intelligent Video Applications
   - Install the NVIDIA DeepStream SDK and dependencies onto an x86 host
   - Run NVIDIA DeepStream applications
-  - Modify and customize NVIDIA DeepStream application configurations
+  - Modify NVIDIA DeepStream application configurations
 prerequisites: |
   - x86-based system running Ubuntu 18.04
   - RTX 2080, RTX 3080, T4, or A100 NVIDIA graphics card
