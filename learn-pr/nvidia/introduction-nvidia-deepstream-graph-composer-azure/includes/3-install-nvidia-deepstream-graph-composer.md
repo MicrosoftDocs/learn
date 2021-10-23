@@ -1,15 +1,15 @@
-In this unit, we'll install the prerequisites and dependencies necessary to install and run the DeepStream Graph Composer.
+In this unit, you'll install the prerequisites and dependencies necessary to install and run the DeepStream Graph Composer.
 
-1. To begin, we'll install the Docker Runtime to support the `container-builder` portion of the Graph Composer. Docker will allow us to build and push container images produced by using `container-builder`.
+1. To begin, install the Docker runtime to support the `container-builder` portion of the Graph Composer. Docker allows us to build and push container images produced by using `container-builder`.
 
-    The following instructions assume we're running in a terminal on an x86-based host running Ubuntu 18.04.
+    The following instructions assume you're running in a terminal on an x86-based host running Ubuntu 18.04.
 
     ```Bash
     curl -fsSL https://get.docker.com -o get-docker.sh
     sudo sh get-docker.sh
     ```
 
-1. Next, we'll install some of the base dependencies used by the Graph Composer application at runtime. These packages assist in drawing the user interface of the application. They also provide the ability to interact with available hardware acceleration on the host machine.
+1. Next, install some of the base dependencies used by the Graph Composer application at runtime. These packages assist in drawing the user interface of the application. They also provide the ability to interact with available hardware acceleration on the host machine.
 
     ```Bash
     sudo apt install \
@@ -18,7 +18,7 @@ In this unit, we'll install the prerequisites and dependencies necessary to inst
     mesa-vulkan-drivers
     ```
 
-1. We're now ready to install the Graph Composer package. This package contains the `composer` application and associated `registry`, `graph execution engine`, and `container-builder` tooling.
+1. You're now ready to install the Graph Composer package. This package contains the `composer` application and associated `registry`, `graph execution engine`, and `container-builder` tooling.
 
     Open a browser on the host machine, and go to the [x86 release of the DeepStream 6.0 Graph Composer](https://developer.nvidia.com/assets/deepstream/secure/deepstream_6.0_ea/graph-composer-0.5.0_x86_64.deb).
 
@@ -29,7 +29,7 @@ In this unit, we'll install the prerequisites and dependencies necessary to inst
     sudo dpkg -i <name of downloaded package>
     ```
 
-1. Finally, we'll install a collection of reference graphs that we'll use in the next unit of this module.
+1. Finally, install a collection of reference graphs for use in the next unit of this module.
 
     Open a browser on the host machine, and go to the [Graph Composer reference examples](https://developer.nvidia.com/assets/deepstream/secure/deepstream_6.0_ea/deepstream-reference-graphs-6.0.deb).
 
@@ -40,4 +40,4 @@ In this unit, we'll install the prerequisites and dependencies necessary to inst
     sudo dpkg -i <name of downloaded package>
     ```
 
-Now that we've installed the DeepStream Graph Composer and associated reference graphs, we can look at running one of the included DeepStream Graph Composer reference applications.
+Now that you've installed the DeepStream Graph Composer and associated reference graphs, we can look at running one of the included DeepStream Graph Composer reference applications.

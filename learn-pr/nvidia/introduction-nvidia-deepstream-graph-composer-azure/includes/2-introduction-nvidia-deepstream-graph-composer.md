@@ -8,7 +8,7 @@ The available components might seem familiar to you because of the Configuration
 
 After a graph is ready for production, an included `container-builder` tool allows developers to package Composer Graphs into container workloads capable of running on X86 or ARM64 devices. You can use this feature with the Graph Composer to build containerized IVA pipelines that can be deployed to server-class or edge-capable devices.
 
-The full process for this workflow is shown here:
+The full process for this workflow is shown here.
 
 ![Diagram that shows an NVIDIA DeepStream Graph Composer workflow.](../media/composer-workflow.png)
 
@@ -24,11 +24,11 @@ By packaging DeepStream Graph Composer workloads into containers, IVA applicatio
 
 With this service offering, you can instrument a capable device with a runtime that provides orchestration of containerized workloads and secure connectivity into an ingestion point known as an IoT hub.
 
-The IoT Edge runtime runs on the physical device where containerized workloads are referred to as *modules*. These modules can communicate with each other by using message routing. For example, one module could produce telemetry and another module would aggregate messages from the first messages by using Azure Stream Analytics at the edge. Messages from this module could then be published directly to the cloud through a connection to an IoT hub.
+The IoT Edge runtime runs on the physical device where containerized workloads are called *modules*. These modules can communicate with each other by using message routing. For example, one module can produce telemetry and another module can aggregate messages from the first messages by using Azure Stream Analytics at the edge. Messages from this module can then be published directly to the cloud through a connection to an IoT hub.
 
-![Diagram that shows an Azure IoT runtime.](../media/runtime.png)
+![Diagram that shows an Azure IoT Edge runtime.](../media/runtime.png)
 
-With devices registered and managed securely from an IoT hub, it's possible to seamlessly deploy updated workloads to devices and also monitor the connectivity status of an entire fleet. As a result, we can put our DeepStream Graph Composer applications into production with support for all stages of the software development lifecycle. These areas include plug-in support for Azure DevOps, the ability to modify running workloads by using "Module twins," and targeted deployments based on device metadata.
+With devices registered and managed securely from an IoT hub, it's possible to seamlessly deploy updated workloads to devices and also monitor the connectivity status of an entire fleet. As a result, you can put your DeepStream Graph Composer applications into production with support for all stages of the software development lifecycle. These areas include plug-in support for Azure DevOps, the ability to modify running workloads by using *module twins*, and targeted deployments based on device metadata.
 
 ![Diagram that shows an Azure IoT Hub cloud interface.](../media/cloud-interface.png)
 
