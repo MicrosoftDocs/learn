@@ -1,4 +1,4 @@
-Cryptography has many applications in today's modern world. So far, you've seen how it can maintain the confidentiality and authenticity of ciphertext messages. Through hashing, crytography also verifies that a plaintext message hasn't changed.
+Cryptography has many applications in today's modern world. So far, you've seen how it can maintain the confidentiality and authenticity of ciphertext messages. Through hashing, cryptography also verifies that a plaintext message hasn't changed.
 
 Essentially, a digital certificate is a key pair that's been issued by a **certificate authority**. A certificate authority guarantees that the key pair being used has come from a trusted source, who has vetted and verified the identity of the person requesting it. A good example is when you want to get a passport. The government passport agency must verify that you're who you say you are before they issue the new document.
 
