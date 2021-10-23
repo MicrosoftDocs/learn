@@ -52,6 +52,7 @@ Let's create a function app in the Azure portal.
 
 ::: zone-end
 
+
 ::: zone pivot="powershell"
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
