@@ -47,7 +47,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
 
    ```console
    CONTAINER ID   IMAGE                                             COMMAND                  CREATED          STATUS          PORTS                  NAMES
-96c851831ade   mcr.microsoft.com/dotnet/core/samples:aspnetapp   "dotnet aspnetapp.dll"   22 minutes ago   Up 22 minutes   0.0.0.0:8080->80/tcp   eager_montalcini
+   96c851831ade   mcr.microsoft.com/dotnet/core/samples:aspnetapp   "dotnet aspnetapp.dll"   22 minutes ago   Up 22 minutes   0.0.0.0:8080->80/tcp   eager_montalcini
    ```
 
    The **COMMAND** field shows the container started by running the command *dotnet aspnetapp.dll*. This command invokes the .NET Core runtime to start the code in the aspnetapp.dll (the code for the sample web app). The *PORTS* field indicates that port 80 in the image was mapped to port 8080 on your computer. The *STATUS* field shows the application is still running. Make a note of the container's *NAME*.
