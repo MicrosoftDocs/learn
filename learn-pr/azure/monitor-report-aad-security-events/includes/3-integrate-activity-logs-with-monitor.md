@@ -62,7 +62,7 @@ To stream the audit and sign-in logs to your Log Analytics workspace, you need t
 1. Select the **Send to Log Analytics** option, and then specify or create a Log Analytics workspace. In our scenario, you select the Log Analytics workspace you've just created, and then do the following:  
 
    a. Select the **Configure** option, and then select the Log Analytics workspace you created earlier.  
-   b. Decide which of the log files you want to stream to the workspace. You can select **Audit log**, **Sign-up log**, or both.
+   b. Decide which of the log files you want to stream to the workspace. You can select **Audit log**, **Sign-in log**, or both.
 
 1. Select **Save**.  
 
