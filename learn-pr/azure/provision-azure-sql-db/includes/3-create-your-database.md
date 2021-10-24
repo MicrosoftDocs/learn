@@ -26,7 +26,7 @@ Azure SQL Database has two purchasing models: _DTU_ and _vCore_.
 
     DTU stands for _Database Transaction Unit_, and is a combined measure of compute, storage, and IO resources. Think of the DTU model as a simple, preconfigured purchase option.
 
-    Because your logical server can hold more than one database, there's also the idea of eDTUs, or _elastic Database Transaction Units_. This option enables you to choose one price, but allows each database in the pool to consume fewer or more resources depending on current load.
+    Because your logical server can hold more than one database, you might also consider eDTUs, or _elastic Database Transaction Units_. This option enables you to choose one price, but allows each database in the pool to consume fewer or more resources depending on current load.
 
 - **What are vCores?**
 
@@ -34,7 +34,7 @@ Azure SQL Database has two purchasing models: _DTU_ and _vCore_.
 
     Unlike the DTU model, which provides fixed configurations for compute, storage, and IO resources, the vCore model enables you to configure each of these resources independently. For example, with the vCore model, you can increase storage capacity but keep the existing amount of compute and IO throughput.
 
-Your transportation and logistics prototype needs only one Azure SQL Database instance. You decide on the DTU option because it provides a good balance of compute, storage, and IO performance and is less expensive to get started.
+Your transportation and logistics prototype needs only one Azure SQL Database instance. You decide to use the DTU option because it provides the best balance of compute, storage, and IO performance, and it is also less expensive to use while you build your prototype.
 
 ## What are SQL elastic pools?
 
@@ -139,9 +139,7 @@ While deployment is in progress, **Deployment details** displays the resources t
 
 ## Set the server firewall
 
-Your Azure SQL database is now up and running. You have many options that you can use to configure, secure, monitor, and troubleshoot your database. You can also specify which systems can access your database through the firewall. Initially, the firewall prevents all access to your database server from outside of Azure.
-
-For your prototype, you only need to access the database from your laptop. Later, you can add more systems, such as your mobile app. For now, let's enable your computer to access the database through the firewall.
+Your Azure SQL database is now up and running. There are many options that you can use to configure, secure, monitor, and troubleshoot your database. You can specify which systems are allowed to access your database through the firewall. Initially, the firewall prevents all access to your database server from outside of Azure. For the prototype, you only need access to the database from your local computer. Later, you can add more systems, such as your mobile app. For now, let's enable your computer to access the database through the firewall.
 
 1. On the command bar, select **Set server firewall**. The **Firewall settings** pane appears.
 
