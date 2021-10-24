@@ -24,7 +24,7 @@ quiz:
       explanation: "That's incorrect. These are not the three goals of cybersecurity."
     - content: "Confidentiality, integrity, and availability."
       isCorrect: true
-      explanation: "That's correct. The Confidentiality, integrity, and availability (CIA) model is at the heart of good cybersecurity."
+      explanation: "That's correct. The confidentiality, integrity, and availability (CIA) model is at the heart of good cybersecurity."
     - content: "Confidentiality, identity, authorization."
       isCorrect: false
       explanation: "That's incorrect. These are not the three goals of cybersecurity."
@@ -32,21 +32,21 @@ quiz:
     choices:
     - content: "Social Engineering."
       isCorrect: false
-      explanation: "That's incorrect. In a social engineering attack, the attacker aims to gain the trust of an authorized user to obtain access to a system for some nefarious activity."
+      explanation: "That's incorrect. In a social engineering attack, a criminal aims to gain the trust of an authorized user to obtain access to a system for some nefarious activity."
     - content: "Browser."
       isCorrect: true
-      explanation: "That's correct. If a website asks the user to make changes to their browser settings or to install an add-on, and the user carries them out. The attacker can compromise the browser and steal information."
+      explanation: "That's correct. When a website asks the user to make changes to their browser settings, or to install an add-on. If the user carries them out, the attacker can compromise the browser and steal information."
     - content: "Password."
       isCorrect: false
-      explanation: "That's incorrect. A password attack is when an attacker attempts to authenticate into password-protected accounts to gain unauthorized access into a device or system."
-  - content: "Which mitigation strategy uses the principle of something the user knows and something the user has?"
+      explanation: "That's incorrect. A password attack occurs when someone attempts to gain authentication for password-protected accounts to get unauthorized access into a device or system."
+  - content: "Which mitigation strategy uses the principle of something the user knows and has?"
     choices:
     - content: "Threat intelligence."
       isCorrect: false
-      explanation: "That's incorrect. Threat intelligence enables an organization to collect information about its systems, details about vulnerabilities, and  information about attacks. The organization use that to implement policies to defend against cyberattacks."
+      explanation: "That's incorrect. Threat intelligence enables an organization to collect information about its systems, vulnerabilities, and  attacks. The organization uses that information to implement policies to defend against cyberattacks."
     - content: "Browser security."
       isCorrect: false
       explanation: "That's incorrect. Browser security is based on the application of security policies to prevent cyberattacks."
     - content: "Multifactor authentication"
       isCorrect: true
-      explanation: "That's correct. Multifactor authentication works by requiring a user to provide multiple forms of identification to verify that they are, in fact, who they claim to be."
+      explanation: "That's correct. Multifactor authentication works by requiring a user to provide multiple forms of identification to verify that they are who they claim to be."
