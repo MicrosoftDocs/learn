@@ -20,7 +20,7 @@ prerequisites: |
   * You should be familiar with developer concepts and terminology.
   * An understanding of cloud computing and some experience with the Azure portal.
   * To complete the exercise in this module you will need an Azure account with an active subscription. [Create an account for free.](https://azure.microsoft.com/free/dotnet)
-iconUrl: /learn/achievements/azure-app-service-introduction.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
