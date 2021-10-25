@@ -60,9 +60,8 @@ In this task, we will test the app registration.
 	* After reviewing the banner, click **Yes**
 1. Switch back to postman, copy the **access_token** value from the previous query
 	* Click on the left pane **Get https.... .../users**
-	* Validate the **Get** URL is set to **https://graph.microsoft.com/v1.0/users**
+	* Validate the **Get** URL is set to **`https://graph.microsoft.com/v1.0/users`**
 	* In the **Headers** tab, under **Authorization**, replace everything in value column except for Bearer value. 
 	* Click **Send** in to the right of the window
 	* Validate a Status of green **200 OK** is displayed in middle right of the window
 1. Review the **Body** of the token that was provided
-

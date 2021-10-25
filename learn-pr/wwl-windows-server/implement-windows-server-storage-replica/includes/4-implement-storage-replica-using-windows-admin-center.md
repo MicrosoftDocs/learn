@@ -59,3 +59,9 @@ The main steps in the process are:
 1. Use **Windows Admin Center** to validate the **Storage Replica** configuration.
 
  >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Myb3]
+
+---
+
+
+
+---
