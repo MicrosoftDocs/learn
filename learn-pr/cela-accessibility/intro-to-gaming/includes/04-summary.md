@@ -1,12 +1,10 @@
 ## Summary
 
-In this module, you&#39;ve learned about core visual, hearing, mobility, and cognitive elements present in game experiences and the wide spectrum of disabilities that players may have that can influence gaming experiences. Additionally, this module introduced approaches to help identify potential barriers to access that game titles, platforms, or hardware devices may pose to players with various types of disabilities. Here are some of the things covered:
+In this module, you’ve learned about core visual, hearing, mobility, and cognitive elements present in game experiences and the wide array of experiences that players with disabilities can encounter while gaming.
 
-What are the core aspects of gaming experiences that influence accessibility?
-
-- Gaming experiences largely rely on a player&#39;s ability to perceive visual and auditory information, use cognitive processes to make decisions, and physically interact with input devices to carry out desired actions.
-- Players may have a wide range of visual, auditory, cognitive, and mobility abilities. When game experiences require abilities that are mismatched with a player&#39;s abilities, these players may be excluded from gameplay.
-- Assessing the visual, hearing, mobility, and cognitive abilities required to successfully engage in the game experiences you are creating as they compare to the wide array of disabilities that players may have early in the development process can help you identify potential barriers to access that should be further explored.
+- Game experiences are played through a series of feedback loops. These loops involve visual and audio information that is provided by the game. The player’s ability to perceive that information, determine next steps through cognitive reasoning, and provide physical input to act can impact their gaming success. When any aspect of this loop is interrupted, players may experience accessibility barriers.
+- Many game elements commonly introduce visual, hearing, cognitive, and mobility demands that players with disabilities cannot perform. Developers should become aware of these common elements and make intentional efforts minimize barriers and their impact on players with disabilities.
+- Game accessibility cannot be approached through a “one size fits all” mentality. Instead, it is important to break down unique barriers that game elements can introduce to different players and considered them individually.
 
 ## Learn more
 

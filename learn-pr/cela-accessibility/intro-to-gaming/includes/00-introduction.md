@@ -1,9 +1,17 @@
-Video games are a primary staple of modern-day culture. They can provide enjoyable experiences, connect communities, and foster shared experiences by all. When accessibility efforts are not intentionally included in the development phases of game titles, platforms, and gaming hardware, players can easily be excluded from play.
+Video games are a staple of modern-day culture. They provide entertainment, connect communities, and foster shared experiences. When accessibility efforts are intentionally included throughout the development process, gaming experiences can be enjoyed by more inclusive audiences.
 
-Consider the following scenario: A 10-year-old with low vision learns of a new game that their classmates and peers are playing online. Eager to play, their parent purchases the game. Shortly after booting the game, the family realizes that the game&#39;s visual elements like text and icons are very small and the game does not provide any options to enlarge them. As a result, this player finds themselves unable to interpret these elements and is unable to independently navigate game menus, read in-game instructions, or communicate with classmates and friends using the text-based chat box to discuss strategy. As a player who requires slightly larger text to play, they are blocked from playing this game.
+Consider the following scenario: Your team is developing a new game title. They want to ensure that as many players as possible can enjoy it. The goal is to create a multiplayer combat game with puzzle-based elements, rich visuals, and audio. The team is new to the accessibility space and are not sure where to begin.
 
-Inaccessible experiences can span across all types of game mechanics and components. Players may also be excluded when audio affordances, input demands, cognitive tasks, and more do not provide adequate settings or features that account for diverse player abilities. As developers, advocates, or students interested in game accessibility, you want to familiarize yourself with the primary gaming mechanics and elements required to play as they relate to diverse player abilities to ensure future gaming experiences are created with inclusion and accessibility in mind.
+Specifically, they’re unsure of things like:
+- How to understand gameplay through the lens of accessibility
+- How common design elements can introduce inaccessible experiences
+- How gameplay experiences differ for players with different types of disabilities
 
-In this module, you will learn about common gaming elements and mechanics often required by games that impact accessibility, the diverse types of disabilities that players may have, and how to identify potential barriers to access for players with disabilities.
+In this module, you’ll learn about how games are played. You’ll learn about the common elements and mechanics within gaming experiences that influence accessibility. You’ll also learn about the impact that these elements can have on the experiences of players with specific types of disabilities.  
 
-By the end of this module, you will be able to identify basic core game experience elements and mechanics that commonly introduce accessibility barriers for players with visual, hearing, mobility, and cognitive disabilities.
+By the end of this module, you will be able to identify core game experiences that commonly introduce accessibility barriers for players with visual, hearing, mobility, and cognitive disabilities.
+
+After completing this module, the learner will be able to:
+1. Describe the process of how games are played through the lens of accessibility.
+2. Identify common elements and game mechanics that may introduce accessibility barriers for players with visual, hearing, cognitive, or mobility disabilities.
+3. Identify appropriate methods to address inaccessible game elements for each sub-category of vision, hearing, cognitive, and mobility disabilities discussed in this module.
