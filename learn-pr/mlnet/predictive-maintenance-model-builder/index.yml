@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Train a predictive maintenance machine learning model with ML.NET Model Builder
   description: "In this module, you'll learn how use the ML.NET Model Builder to train and consume a machine learning model for predictive maintenance."
-  ms.date: 10/19/2021
+  ms.date: 10/25/2021
   author: luisquintanilla
   ms.author: luquinta
   ms.topic: interactive-tutorial
@@ -33,7 +33,9 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
 units:
 - learn.predictive-maintenance-model-builder.introduction
 - learn.predictive-maintenance-model-builder.what-is-model-builder
-- learn.predictive-maintenance-model-builder.knowledge-check
+- learn.predictive-maintenance-model-builder.knowledge-check-model-builder
+- learn.predictive-maintenance-model-builder.choose-scenario-data
+- learn.predictive-maintenance-model-builder.knowledge-check-scenario-data
 - learn.predictive-maintenance-model-builder.train-model-builder
 - learn.predictive-maintenance-model-builder.exercise-train-model-builder
 - learn.predictive-maintenance-model-builder.consume-model-builder

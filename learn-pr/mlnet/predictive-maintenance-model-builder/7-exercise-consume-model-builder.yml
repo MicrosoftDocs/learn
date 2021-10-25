@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: "Exercise: Consume model in .NET console app"
   description: "Use a machine learning model trained with Model Builder in a .NET console application"
-  ms.date: 10/19/2021
+  ms.date: 10/25/2021
   author: luisquintanilla
   ms.author: luquinta
   ms.topic: interactive-tutorial
