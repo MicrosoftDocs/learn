@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.predictive-maintenance-model-builder.knowledge-check-scenario-data
-title: Knowledge check
+title: Knowledge check - Scenario & Data
 metadata:
   unitType: knowledge_check
-  title: "Knowledge check"
+  title: "Knowledge check - Scenario & Data"
   description: "Review your knowledge of scenarios and data preparation"
   ms.date: 10/25/2021
   author: luisquintanilla

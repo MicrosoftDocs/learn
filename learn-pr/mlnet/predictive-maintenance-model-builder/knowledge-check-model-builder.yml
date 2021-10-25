@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.predictive-maintenance-model-builder.knowledge-check-model-builder
-title: Knowledge check
+title: Knowledge check - Model Builder
 metadata:
   unitType: knowledge_check
-  title: "Knowledge check"
+  title: "Knowledge check - Model Builder"
   description: "Review your knowledge of Model Builder"
   ms.date: 10/25/2021
   author: luisquintanilla
