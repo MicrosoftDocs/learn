@@ -275,19 +275,22 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/select-add-column.png" alt-text="Screenshot to add column" lightbox="../media/select-add-column.png":::
 
-2. Make sure **Attachments** is selected and press **Apply** at the top. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file).
+2. Make sure **Attachments** is selected and press **Apply** at the top. 
+    
+    :::image type="content" source="../media/apply-attachments.png" alt-text="Screenshot to add attachments" lightbox="../media/apply-attachments.png":::
+
+3. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file). Follow the same procedure for all the items on the list.
 
     :::image type="content" source="../media/add-attachments.png" alt-text="Screenshot to add attachments" lightbox="../media/add-attachments.png":::
 
-3. Click the dropdown present beside the **Attachments** column and select **Show attachments first**. We want the attachments to be placed at first for easy access.
+4. Click the dropdown present beside the **Attachments** column and select **Show attachments first**. We want the attachments to be placed at first for easy access.
 
-    :::image type="content" source="../media/select-Show-attachments.png" alt-text="Screenshot to select Show attachments first" lightbox="../media/select-Show-attachments.png":::
+    :::image type="content" source="../media/select-show-attachments.png" alt-text="Screenshot to select Show attachments first" lightbox="../media/select-show-attachments.png":::
 
-4. Switch to **Power Apps Studio**, add the **View in MR** component to the **Details_sofas** screen, Open the **Insert** tab, expand the **Mixed Reality**. Then, select the component **View in MR** to place it in the center of the app screen, or drag and drop it to position it anywhere on the screen.
-
+5. Switch to **Power Apps Studio**, add the **View in MR** component to the **Details_sofas** screen, Open the **Insert** tab, expand the **Mixed Reality**. Then, select the component **View in MR**.
     :::image type="content" source="../media/add-view-in-mr-button.png" alt-text="Screenshot of adding View in MR button" lightbox="../media/add-view-in-mr-button.png":::
 
-5. In the **Properties** tab for the **View in MR** component, select the **Source** field and enter to access the 3D models stored in your **SharePoint** list:
+6. In the **Properties** tab for the **View in MR** component, select the **Source** field and enter to access the 3D models stored in your **SharePoint** list:
 
     ```Power Apps
     First(Gallery_sofas.Selected.Attachments).Value
@@ -295,7 +298,7 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/add-source.png" alt-text="Screenshot to add source for view in MR" lightbox="../media/add-source.png":::
 
-6. Repeat the same procedure in the **Details_chairs** and **Details_tables** screen. While duplicating the procedure, make sure to change the **Gallery** names accordingly, for example,
+7. Repeat the same procedure in the **Details_chairs** and **Details_tables** screen. While duplicating the procedure, make sure to change the **Gallery** names accordingly, for example,
 
     ```Power Apps
     First(Gallery_chairs.Selected.Attachments).Value
