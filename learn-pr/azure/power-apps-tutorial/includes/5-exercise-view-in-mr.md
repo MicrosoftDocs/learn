@@ -86,7 +86,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
 ## Create the home page
 
-1. Click the **Home Page** which was created previously. To insert four buttons, navigate to the **Insert tab** and click the **Button** option to add buttons to the screen. Adjust the size and position of these buttons as required.
+1. Click the **Home Page** which was created previously. To insert four buttons, navigate to the **Insert tab** and click the **Button** option to add buttons to the screen. Adjust the size and position of these buttons as required. Rename them as **Sofas_button**, **Chairs_button**, **Tables_button**, and **Carpets_button** respectively.
 
     :::image type="content" source="../media/add-buttons.png" alt-text="Screenshot of adding buttons." lightbox="../media/add-buttons.png":::
 
@@ -98,7 +98,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
     :::image type="content" source="../media/edit-display-text-2.png" alt-text="Screenshot of adding new screens." lightbox="../media/edit-display-text-2.png":::
 
-4. Click the newly created **Sofas** button and configure the **OnSelect** property. On clicking the button, it must navigate us to the product list page created in the previous step. Replace the *false* by the below-given code:
+4. Click the newly created **Sofas_button** button and configure the **OnSelect** property. On clicking the button, it must navigate us to the product list page created in the previous step. Replace the *false* by the below-given code:
 
     ```Power Apps
     Navigate(Sofas,ScreenTransition.Cover)
@@ -131,42 +131,39 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
 Now that we have added the product categories, we will display the list of products under each category. In Power Apps, we use **Gallery control** to display a record of data.
 
-1. In the **Sofas** screen; on the Insert tab, select **Gallery** > **Vertical**. Rename it to **Gallery_sofas**.
+1. In the **Sofas** screen; on the Insert tab, select **Gallery** > **Vertical** to add **Gallery control** to your screen.
 
     :::image type="content" source="../media/select-vertical-gallery.png" alt-text="Screenshot of adding gallery" lightbox="../media/select-vertical-gallery.png":::
 
-2. On the **Properties** tab of the right-hand pane, configure the **Data source** property. Click the dropdown next to it and expand the **Connectors** section to select **SharePoint** as the connection.
+2. Rename it to **Gallery_sofas**. On the **Properties** tab of the right-hand pane, configure the **Data source** property. Click the dropdown next to it and select the appropriate **SharePoint List**, for example, *Easy sales - Sofas*.
 
     :::image type="content" source="../media/configure-data-source.png" alt-text="Screenshot of connecting sharepoint" lightbox="../media/configure-data-source.png":::
 
-3. Select the previously created connection and choose the site of your choice. In your case, it is the *Easy Sales* site.
-
-    :::image type="content" source="../media/select-connection.png" alt-text="Screenshot of connection to Easy Sales" lightbox="../media/select-connection.png":::
-
-4. On selecting the right site, a catalog of **SharePoint list** created in the site is seen. Now, select the *Easy Sales - Sofas* list and click on **Connect** to connect the data to your **Gallery**.
-
-    :::image type="content" source="../media/select-sofas-list.png" alt-text="Screenshot of selecting Easy Sales - Sofas" lightbox="../media/select-sofas-list.png":::
-
-5. Configure the **Gallery** > **Fields** property by clicking on **Edit**:
-    * Assign the **ImageLink** to the **Image1** heading.
+3. Configure the **Gallery** > **Fields** property by clicking on **Edit**:
     * Assign the **Price** to the **Subtitle1** heading.
     * Assign the **Name(Title)** to the **Title1** heading.
 
     :::image type="content" source="../media/configure-gallery-fields.png" alt-text="Screenshot of configuring fields - Sofas" lightbox="../media/configure-gallery-fields.png":::
 
     On assigning the above fields, you'll observe data getting reflected in your **Gallery**
-    >[!Tip]
-    > If you find it challenging to add the **ImageLink** to the **Image1** heading, click the **Image** in the gallery and configure the **Image** property on the **Property** tab by adding this line of code: *ThisItem.ImageLink*
 
-6. Let us now insert a label at the top of the screen. To do so, click on the **Label** option. Then, customize the position, color, and text display according to your needs.
+4. Adjust the size of the **Gallery_sofas** as required. To add the **ImageLink** to the **Image1** heading, click the **Image** in the gallery and configure the **Image** property on the **Property** tab by adding this line of code: 
+
+    ```PowerApps
+    ThisItem.ImageLink
+    ```
+
+    :::image type="content" source="../media/configure-image-property.png" alt-text="Screenshot of configuring image property - Sofas" lightbox="../media/configure-image-property.png":::
+
+5. Let us now insert a label at the top of the screen. To do so, click on the **Label** option. Then, customize the position, color, and text display as shown in the figure:
 
     :::image type="content" source="../media/insert-label.png" alt-text="Screenshot of adding label - Sofas" lightbox="../media/insert-label.png":::
 
-7. Add a **Back** icon over the previously added **Label** to help the user navigate to the **Home Page** when required. To add the **Back** icon, expand the **Icons** dropdown and select the **Back** icon.
+6. Add a **Back** icon over the previously added **Label** to help the user navigate to the **Home Page** when required. To add the **Back** icon, expand the **Icons** dropdown and select the **Back** icon.
 
     :::image type="content" source="../media/insert-back-icon.png" alt-text="Screenshot of adding back icon - home page" lightbox="../media/insert-back-icon.png":::
 
-8. Position the **Back** icon correctly and configure its **OnSelect** property by adding the following
+7. Position the **Back** icon correctly and change its display color if required. Configure its **OnSelect** property by adding the following
 
     ```Power Apps
     Navigate('Home Page',ScreenTransition.Cover)
@@ -174,7 +171,7 @@ Now that we have added the product categories, we will display the list of produ
 
     :::image type="content" source="../media/configure-back-icon.png" alt-text="Screenshot of configuring OnSelect property " lightbox="../media/configure-back-icon.png":::
 
-9. Follow the same procedure for the **Chairs**, **Tables**, and **Carpets** pages.
+8. Follow the same procedure for the **Chairs**, **Tables**, and **Carpets** pages.
 
 ## Create details page
 
