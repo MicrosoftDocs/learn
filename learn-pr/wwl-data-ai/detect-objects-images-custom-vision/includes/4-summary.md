@@ -1,8 +1,3 @@
-- **Problem**: Detecting objects manually is time consuming and difficult to scale. Training an effective machine learning model to detect objects in images is a complex task that requires considerable expertise in data science and machine learning.
-- **Solution**: You can use the Custom Vision service to train image detection models and deploy as AI solutions in applications.
-- **Advantages**: The Custom Vision service simplifies the process for creating custom image classification models. You can use the service with minimal knowledge of deep learning techniques. 
-- **Impact**: You can automate and accelerate processes especially as projects scale in size. 
-
 Detecting objects in images has proven a key element in many applications that help improve safety, provide better medical imaging diagnostics, manage stock levels for inventory management, and even help preserve wildlife. The object detection capabilities in the Custom Vision service make is easy to develop models to support these kinds of scenario.
 
 You can find out more about the Custom Vision service in the [service documentation](/azure/cognitive-services/custom-vision-service?azure-portal=true).
