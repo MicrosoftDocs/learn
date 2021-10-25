@@ -26,7 +26,7 @@ Azure SQL Database has two purchasing models: _DTU_ and _vCore_.
 
     DTU stands for _Database Transaction Unit_, and is a combined measure of compute, storage, and IO resources. Think of the DTU model as a simple, preconfigured purchase option.
 
-    Because your logical server can hold more than one database, there's also the idea of eDTUs, or _elastic Database Transaction Units_. This option enables you to choose one price, but allows each database in the pool to consume fewer or more resources depending on current load.
+    Because your logical server can hold more than one database, you might also consider eDTUs, or _elastic Database Transaction Units_. This option enables you to choose one price, but allows each database in the pool to consume fewer or more resources depending on current load.
 
 - **What are vCores?**
 
@@ -34,7 +34,7 @@ Azure SQL Database has two purchasing models: _DTU_ and _vCore_.
 
     Unlike the DTU model, which provides fixed configurations for compute, storage, and IO resources, the vCore model enables you to configure each of these resources independently. For example, with the vCore model, you can increase storage capacity but keep the existing amount of compute and IO throughput.
 
-Your transportation and logistics prototype needs only one Azure SQL Database instance. You decide on the DTU option because it provides a good balance of compute, storage, and IO performance and is less expensive to get started.
+Your transportation and logistics prototype needs only one Azure SQL Database instance. You decide to use the DTU option because it provides the best balance of compute, storage, and IO performance, and it is also less expensive to use while you build your prototype.
 
 ## What are SQL elastic pools?
 
@@ -63,9 +63,9 @@ Here you'll set up your database, which includes creating your logical server. Y
 
 Over time, if you realize you need more compute power to keep up with demand, you can adjust performance options or even switch between the DTU and vCore performance models.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. On the **Home** page, under **Azure Services**, select **Create a resource**. The **Create a resource** pane appears.
+1. From **Home**, or in **Azure Services**, select **Create a resource**. The **Create a resource** pane appears.
 
    :::image type="content" source="../media/3-create-db.png" alt-text="Screenshot showing Create a resource pane with Databases in menu and SQL Database resource service highlighted.":::
 
@@ -92,11 +92,11 @@ Over time, if you realize you need more compute power to keep up with demand, yo
 
       | Setting | Value |
       | --- | --- |
-      | Server name | Accept default. Value must be globally unique [server name](/azure/architecture/best-practices/naming-conventions). |
+      | Server name | Enter a globally unique [server name](/azure/architecture/best-practices/naming-conventions). |
       | Location | Accept default. |
       | Authentication Method | Use SQL Authentication. (default) |
-      | Server admin login | Accept default (from previous steps). A [database identifier](/sql/relational-databases/databases/database-identifiers) serves as your primary administrator login ID. |
-      | Password | Any valid password that has at least eight characters and contains characters from three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. |
+      | Server admin login | Choose a unique admin login serves as your primary administrator login ID. |
+      | Password | The password of your choice must have eight or more characters from three of these categories: uppercase, lowercase, numbers, and non-alphanumeric. |
       | Location | Select one of the regions from the list below. |
 
      [!INCLUDE [regions](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
@@ -131,19 +131,17 @@ Over time, if you realize you need more compute power to keep up with demand, yo
     > [!IMPORTANT]
     > Remember your server name, admin login, and password for later.
 
-**Deployment details** displays notifications of resources that are created throughout the deployment process. When deployment completes, select **Go to resource** or optionally, select pin to dashboard. The **Essentials** of your SQL database server appears.
+While deployment is in progress, **Deployment details** displays the resources that are created. When deployment completes, optionally, select **Pin to dashboard**, and then select **Go to resource**. The **Overview** pane for your SQL database server appears.
 
-   :::image type="content" source="../media/3-notifications-complete.png" alt-text="Screenshot of the Azure portal showing the Overview pane of a newly created SQL database.":::
+   :::image type="content" source="../media/3-notifications-complete.png" alt-text="Screenshot of the Azure portal showing the Overview pane of a newly created SQL database." lightbox="../media/3-notifications-complete.png":::
 
    Your **Logistics** SQL database has a unique name based on your server name and login credentials.
 
 ## Set the server firewall
 
-Your Azure SQL database is now up and running. You have many options to further configure, secure, monitor, and troubleshoot your new database. You can also specify which systems can access your database through the firewall. Initially, the firewall prevents all access to your database server from outside of Azure.
+Your Azure SQL database is now up and running. There are many options that you can use to configure, secure, monitor, and troubleshoot your database. You can specify which systems are allowed to access your database through the firewall. Initially, the firewall prevents all access to your database server from outside of Azure. For the prototype, you only need access to the database from your local computer. Later, you can add more systems, such as your mobile app. For now, let's enable your computer to access the database through the firewall.
 
-For your prototype, you only need to access the database from your laptop. Later, you can add more systems, such as your mobile app. For now, let's enable your development computer to access the database through the firewall.
-
-1. In the command bar, select **Set server firewall**. The **Firewall settings** pane appears.
+1. On the command bar, select **Set server firewall**. The **Firewall settings** pane appears.
 
     :::image type="content" source="../media/3-set-server-firewall.png" alt-text="Screenshot showing command bar with Set server firewall highlighted.":::
 
@@ -151,6 +149,6 @@ For your prototype, you only need to access the database from your laptop. Later
 
     :::image type="content" source="../media/3-add-client-ip.png" alt-text="Screenshot of the Azure portal showing a SQL database Firewall settings pane with the Add client IP highlighted.":::
 
-1. On the command bar, select **Save**. When the firewall rules are updated, select **OK** when prompted.
+1. On the command bar, select **Save**. When the firewall rules are updated, select **OK**.
 
 In the next unit, you'll get some hands-on practice with your new database and with Azure Cloud Shell. You'll connect to the database, create a table, add some sample data, and execute a few SQL statements.
