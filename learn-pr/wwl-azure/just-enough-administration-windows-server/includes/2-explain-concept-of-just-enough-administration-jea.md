@@ -1,12 +1,12 @@
-Just Enough Administration (JEA) provides Windows Server and Windows client operating systems with RBAC functionality built on Windows PowerShell remoting. Windows PowerShell remoting is when a Windows PowerShell remote session is initiated on one computer and the activities are performed on another computer.
+Just Enough Administration (JEA) provides Windows Server and Windows client operating systems with RBAC functionality built on Windows PowerShell remoting. Windows PowerShell remoting is when a Windows PowerShell remote session is started on one computer and the tasks are performed on another computer.
 
-When you configure JEA, an authorized user connects to a specially configured endpoint and uses a specific set of Windows PowerShell cmdlets, parameters, and parameter values. You can also configure a JEA endpoint to allow certain scripts and commands to be run, providing these run from within a Windows PowerShell session. For example, you can configure a JEA endpoint to allow an authorized user to restart specific services, such as the Domain Name System (DNS) service, but not restart any other service or perform any other tasks on the system on which the endpoint is configured. You can also configure JEA endpoint to enable an authorized user to run a command such as whoami.exe to determine which account is being used with the session.
+When you configure JEA, an authorized user connects to a specially configured endpoint and uses a specific set of Windows PowerShell cmdlets, parameters, and parameter values. You can also configure a JEA endpoint to allow certain scripts and commands to be run, providing these commands run from within a Windows PowerShell session. For example, you can configure a JEA endpoint to allow an authorized user to only restart specific services, such as the Domain Name System (DNS) service. The user cannot restart any other service or perform any other tasks on the system on which the endpoint is configured. You can also configure a JEA endpoint to enable an authorized user to run a command such as whoami.exe to determine which account is being used with the session.
 
 When connected to the endpoint, JEA uses a special, privileged, virtual account rather than the user’s account to perform tasks. The advantages of this approach include:
 
 - The user’s credentials are not stored on the remote system. If the remote system is compromised, the user’s credentials are not subject to credential theft and cannot be used to traverse the network and gain access to other hosts.
 
-- The user account that's used to connect to the endpoint doesn't need to be privileged. The endpoint simply needs to be configured to allow connections from specified user accounts.
+- The user account that's used to connect to the endpoint doesn't need to be privileged. You simply need to configure the endpoint to allow connections from specified user accounts.
 
 - The virtual account is limited to the system on which it is hosted. The virtual account cannot be used to connect to remote systems. This means that attackers cannot use a compromised virtual account to access other protected servers.
 
@@ -14,7 +14,7 @@ When connected to the endpoint, JEA uses a special, privileged, virtual account 
 
 ## JEA limitations
 
-Configuring JEA can be a complicated process. The person who's configuring the capabilities for JEA roles must understand precisely which cmdlets, parameters, aliases, and values are needed to perform administrative tasks. Because of this, JEA is suitable for routine configuration tasks such as restarting a service or deploying a container or virtual machine (VM).
+Configuring JEA can be a complicated process. The person who's configuring JEA role capabilities must understand which cmdlets, parameters, aliases, and values they need to perform administrative tasks. Therefore JEA is most suited for routine configuration tasks such as restarting a service or deploying a container or virtual machine (VM).
 
 JEA is not suitable for tasks where the problem and solution are not clearly defined, and therefore you don’t know which tools you might need to solve the problem. If you don’t know which tools are needed, you can’t configure JEA with the necessary tools.
 

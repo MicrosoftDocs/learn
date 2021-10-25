@@ -1,8 +1,8 @@
 Session configuration files are used to register a JEA (Just Enough Administration) endpoint. The session configuration file is responsible for naming the JEA endpoint. It also controls:
 
-- Who can access the JEA endpoint.
+- Who can access the JEA endpoint
 
-- What roles the user is assigned.
+- What roles the user is assigned
 
 - Which identity is used by JEA's virtual account.
 
