@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.gaming-assistive-technologies.gaming-software
-title: Gaming software assistive technology
+uid: learn.gaming-assistive-technologies.summary
+title: Summary and resources
 metadata:
-  title: Gaming software assistive technology
+  title: Summary and resources
   description: This content is part of the Gaming Assistive Technologies module.
   ms.date: 08/10/2021
   author: erzelman
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-gaming-accessibility
 durationInMinutes: 18
 content: |
-  [!include[](includes/03-gaming-software.md)]
+  [!include[](includes/03-summary.md)]

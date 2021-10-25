@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.gaming-assistive-technologies.assistive-technology-considerations
-title: Assistive technology considerations for accessible design
+uid: learn.gaming-assistive-technologies.gaming-hardware
+title: Gaming hardware assistive technology
 metadata:
-  title: Assistive technology considerations for accessible design
+  title: Gaming hardware assistive technology
   description: This content is part of the Gaming Assistive Technologies module.
   ms.date: 08/10/2021
   author: erzelman
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-gaming-accessibility
 durationInMinutes: 18
 content: |
-  [!include[](includes/01-assistive-technology-considerations.md)]
+  [!include[](includes/01-gaming-hardware.md)]
