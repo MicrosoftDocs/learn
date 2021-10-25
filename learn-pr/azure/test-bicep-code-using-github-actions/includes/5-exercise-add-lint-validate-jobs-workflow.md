@@ -86,7 +86,7 @@ When you use custom linter configuration, Bicep writes log data that GitHub Acti
    git push
    ```
 
-   Immediately after you push, GitHub Action workflows starts a new workflow run.
+   Immediately after you push, GitHub Actions starts a new workflow run.
 
 ## View the workflow run
 

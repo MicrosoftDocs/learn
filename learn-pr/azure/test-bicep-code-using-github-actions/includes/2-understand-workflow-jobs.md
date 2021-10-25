@@ -35,7 +35,7 @@ You can even add validation well before your deployment begins. When you work wi
 
 ## Define a workflow job
 
-Every workflow contains at least one job, and you can define additional jobs to suit your requirements. Jobs run in parallel by default. With a free GitHub account your workflows can run up to twenty jobs at the same time.
+Every workflow contains at least one job, and you can define additional jobs to suit your requirements. Jobs run in parallel by default. The type of GitHub account you have determines the number of jobs you can run simultaneously when you use GitHub-hosted runners.
 
 Imagine that you've built a Bicep file that you need to deploy twice: once to infrastructure in the United States and once to infrastructure in Europe. You also want to validate your Bicep code in your workflow. Here's an illustration of a multijob workflow that defines a similar process:
 

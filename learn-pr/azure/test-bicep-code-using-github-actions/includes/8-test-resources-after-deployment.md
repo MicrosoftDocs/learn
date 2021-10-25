@@ -60,7 +60,7 @@ It's also possible to run other types of tests from a deployment workflow, inclu
 
 Suppose your workflow deploys your resources successfully, but your tests fail. What should you do then?
 
-Earlier in this module, you learned that GitHub Action workflows enables you to create *rollback jobs* that run when a previous job fails. You can use this approach to create a rollback job when your test job reports an unexpected result. You also can manually roll back your changes, or rerun your entire workflow, if you think the failure was due to a temporary problem that has since been resolved.
+Earlier in this module, you learned that GitHub Actions enables you to create *rollback jobs* that run when a previous job fails. You can use this approach to create a rollback job when your test job reports an unexpected result. You also can manually roll back your changes, or rerun your entire workflow, if you think the failure was due to a temporary problem that has since been resolved.
 
 > [!NOTE]
 > When you submit a deployment to Azure Resource Manager, you can request that Resource Manager automatically rerun your last successful deployment if it fails. To do this, use the `--rollback-on-error` parameter when you submit the deployment by using the Azure CLI `az deployment group create` command.
