@@ -26,4 +26,3 @@ jobs:
     inputs:
       pathToPublish: '$(Build.ArtifactStagingDirectory)/website'
       artifactName: 'website'
-      publishLocation: Container

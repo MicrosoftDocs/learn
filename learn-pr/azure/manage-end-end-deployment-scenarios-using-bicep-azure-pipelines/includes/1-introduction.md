@@ -1,4 +1,4 @@
-When you use pipelines, you can automate the validation, testing, and deployment of your Bicep code. Many of the benefits of using Bicep come from deploying your Azure infrastructure alongside the other components of your solution, such as applications and database configuration. In this module, you'll learn about how to extend a pipeline that already deploys Bicep code to deploy an entire solution.
+When you use pipelines, you can automate the validation, testing, and deployment of your Bicep code. Many of the benefits of using Bicep come from deploying your Azure infrastructure alongside the other components of your solution, such as applications and the database configuration. In this module, you'll learn how to extend a pipeline that already deploys Bicep code to deploy an entire solution.
 
 ## Example scenario
 
@@ -27,7 +27,7 @@ You should be familiar with using:
 
 - Bicep, including child resources, and how to deploy Bicep files to Azure.
 - Azure, including the Azure portal, subscriptions, resource groups, and resources.
-- Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
+- Basic Git commands, including cloning, committing files, and pushing changes to Azure repos.
 - YAML pipelines through Azure Pipelines, including multistage pipelines, environments, and service connections.
 
 To work through the exercises in the module, you'll need:
