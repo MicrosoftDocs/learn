@@ -10,7 +10,7 @@ Now that you've run a DeepStream sample application, you can modify the samples 
 
     >[!NOTE]
     >
-    > Here are some tips for using vi when you edit the source4_1080p_dec_infer-resnet_tracker_sgie_tiled_display_int8_modified.txt file:
+    > Here are some tips for using vi when you edit the *source4_1080p_dec_infer-resnet_tracker_sgie_tiled_display_int8_modified.txt* file:
     >
     >- Select the **i** key to put the editor into Insert mode. Then you'll be able to make changes.
     >- Select **Esc** to go exit Insert mode and return to Normal mode.
