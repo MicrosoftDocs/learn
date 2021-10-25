@@ -1,10 +1,10 @@
-It's common to build apps and other custom code for your Azure solution. Custom apps might include websites, APIs, and background apps that run without any human interaction. In this unit, you'll learn about how to design a pipeline to build and deploy an app alongside its infrastructure.
+It's common to build apps and other custom code for your Azure solution. Custom apps might include websites, APIs, and background apps that run without any human interaction. In this unit, you'll learn how to design a pipeline to build and deploy an app alongside its infrastructure.
 
 ## Build apps
 
 Many types of apps need to be *compiled* or *built* before they can be used. The build process takes the source code for the app, performs a sequence of activities on it, and then creates a set of deployable files.
 
-The build process compiles the source code into binary files or executables. A build process ordinarily includes additional activities, including compressing the image files that will be served to your website's users, *linting* your code to verify that it follows good coding practices, and running *unit tests* that verify the behavior of individual pieces of your app. You might also perform steps such as digitally signing the files to ensure that they can't be modified.
+The build process compiles the source code into binary files or executables. A build process ordinarily includes additional activities, including compressing the image files that will be served to your website's users, *linting* your code to verify that it follows good coding practices, and running *unit tests* that verify the behavior of individual pieces of your app. You might also perform steps such as digitally signing the files to help ensure that they can't be modified.
 
 Whatever the series of steps might be, the output of the build process is a deployable *artifact*. The artifact is ordinarily saved to the pipeline agent's file system. Later stages of your pipeline need to work with the artifact to deploy it through your environments, and test it as it progresses through the quality gates you define in your pipeline definition.
 
@@ -27,7 +27,7 @@ The artifacts that are generated in your pipeline aren't stored in your Git repo
 
 The `pathToPublish` property is the location that contains your compiled code or output files on the pipeline agent's file system. The contents at this location will be published to the artifact. You can specify a single file or a folder.
 
-Each artifact has a name, which you specify by using the `artifactName` task property. You use the artifact name to refer to it later in the pipeline. Later jobs and stages in the pipeline can download the artifact so that they can work with it, such as to deploy the website to the server that hosts it:
+Each artifact has a name, which you specify by using the `artifactName` task property. You use the artifact name to refer to it later in the pipeline. Subsequent pipeline jobs and stages can download the artifact so that they can work with it to, for example, deploy the website to the server that hosts it:
 
 :::image type="content" source="../media/3-website-pipeline-artifact.png" alt-text="Diagram showing a pipeline publishing and then referring to an artifact named 'Website'." border="false":::
 
@@ -67,7 +67,7 @@ App Service has its own data plane authentication system that it uses for deploy
 
 :::image type="content" source="../media/3-credential-exchange.png" alt-text="Diagram illustrating the credential exchange process." border="false":::
 
-The `AzureRmWebAppDeployment` task uses the service principal that's associated with your service connection (:::image type="icon" source="../media/callout-01.png":::) to automatically create and download the necessary credentials for deployment (:::image type="icon" source="../media/callout-02.png":::). It then uses the deployment credentials when it communicates with the App Service data plane API (:::image type="icon" source="../media/callout-03.png":::).
+The `AzureRmWebAppDeployment` task uses the service principal that's associated with your service connection:::image type="icon" source="../media/callout-01.png"::: to automatically create and download the necessary credentials for deployment:::image type="icon" source="../media/callout-02.png":::. It then uses the deployment credentials when it communicates with the App Service data plane API:::image type="icon" source="../media/callout-03.png":::.
 
 App Service also provides a few other deployment-related features, including *deployment slots*. Slots help you safely deploy new versions of your apps. They also help you prepare the new version to receive production traffic so that you have no downtime. We don't use slots in this module, but we provide a link to more information about them on the Summary page at the end of the module.
 
@@ -81,7 +81,7 @@ If you deploy to a virtual machine, you ordinarily need to connect to the virtua
 
 If you use Kubernetes or Azure Kubernetes Service (AKS), you would ordinarily use a slightly different approach to build and deploy your solution. After your app is built, your pipeline creates a *container image* and publishes it to a *container registry*, which your Kubernetes cluster then reads from. Because your container registry keeps the compiled application, you don't generally use a pipeline artifact.
 
-In this module, we focus on Azure App Service to illustrate the pipeline concepts involved. In the final unit, we provide links to more information about deploying to other hosting services.
+In this module, we focus on Azure App Service to illustrate the pipeline concepts involved. On the Summary page at the end of the module, we provide links to more information about deploying to other hosting services.
 
 ## Test apps in your pipeline
 
