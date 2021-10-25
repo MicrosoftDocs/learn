@@ -2,7 +2,7 @@ Organizations generate data throughout their business. For analysis purposes, th
 
 The most common options for processing data in Azure include Azure Databricks, Azure Data Factory, Azure Synapse Analytics, and Azure Data Lake. In this unit, you'll explore these options in more detail.
 
-## What is Azure Synapse Analytics?
+## Process data using Azure Synapse Analytics
 
 Azure Synapse Analytics is a generalized analytics service. You can use it to read data from many sources, process this data, generate various analyses and models, and save the results.
 
@@ -21,7 +21,7 @@ The next unit describes the components of Azure Synapse Analytics in more detail
 
 For further information, read [What is Azure Synapse Analytics?](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is)
 
-## What is Azure Databricks?
+## Process data using Azure Databricks
 
 Azure Databricks is an analytics platform optimized for the Microsoft Azure cloud services platform. Designed with the founders of Apache Spark, Databricks is integrated with Azure to provide one-click setup, streamlined workflows, and an interactive workspace that enables collaboration between data scientists, data engineers, and business analysts.
 
@@ -41,7 +41,7 @@ You write Databricks applications using a *Notebook*. A notebook contains a seri
 
 For more information, read [What is Azure Databricks?](/azure/azure-databricks/what-is-azure-databricks)
 
-### What is Azure HDInsight? 
+### Process data using Azure HDInsight
 
 Azure HDInsight is a managed analytics service in the cloud. It's based on Apache Hadoop, a collection of open-source tools and utilities that enable you to run processing tasks over large amounts of data. HDInsight uses a clustered model, similar to that of Synapse Analytics. HDInsight stores data using Azure Data Lake storage. You can use HDInsight to analyze data using frameworks such as Hadoop Map/Reduce, Apache Spark, Apache Hive, Apache Kafka, Apache Storm, R, and more.
 
@@ -60,7 +60,7 @@ Apache Storm is a scalable, fault tolerant platform for running real-time data p
 
 For more information, read [What is Azure HDInsight?](/azure/hdinsight/hdinsight-overview).
 
-## What is Azure Data Factory?
+## Process data using Azure Data Factory
 
 Azure Data Factory is a service that can ingest large amounts of raw, unorganized data from relational and non-relational systems, and convert this data into meaningful information. Data Factory provides a scalable and programmable ingestion engine that you can use to implement complex hybrid extract-transform-load (ETL), extract-load-transform (ELT), and data integration projects.
 
@@ -78,7 +78,7 @@ A pipeline is a logical grouping of activities that performs a unit of work. Tog
 > ![Image showing a Data Factory pipeline](../media/2-data-factory-pipeline.png)
 
 
-## What is Azure Data Lake?
+## Process data using Azure Data Lake
 
 Azure Data Lake is a collection of analytics and storage services that you can combine to implement a big data solution. It comprises three main elements:
 

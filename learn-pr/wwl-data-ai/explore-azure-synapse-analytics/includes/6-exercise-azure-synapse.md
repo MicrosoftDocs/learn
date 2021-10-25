@@ -18,6 +18,7 @@ To use Synapse Analytics, you must provision a Synapse Analytics Workspace resou
         - **Resource group**: *Create a new resource group with a suitable name, like "synapse-rg"*
         - **Managed resource group**: *Enter an appropriate name, for example "synapse-managed-rg"*.
     - **Workspace name**: *Enter a unique workspace name, for example "synapse-ws-<your_name>*.
+    - **Use Spark on Cosmos**: *Leave unselected.*
     - **Region**: *Select any available region*.
     - **Select Data Lake Storage Gen 2**: From subscription
         - **Account name**: *Create a new account with a unique name, for example "datalake<your_name>"*.
@@ -39,7 +40,7 @@ To use Synapse Analytics, you must provision a Synapse Analytics Workspace resou
 
 One of the key tasks you can perform with Azure Synapse Analytics is to define *pipelines* that transfer (and if necessary, transform) data from a wide range of sources into your workspace for analysis.
 
-1. In Synapse Studio, on the **Home** page, select **Ingest** top one the **Copy Data** tool
+1. In Synapse Studio, on the **Home** page, select **Ingest** to open the **Copy Data** tool
 2. In the Copy Data tool, on the **Properties** step, ensure that **Built-in copy task** and **Run once now** are selected, and click **Next >**.
 3. On the **Source** step, in the **Dataset** substep, select the following settings:
     - **Source type**: HTTP
@@ -110,7 +111,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 1. In Synapse Studio, right-click the **products.csv** file in the file storage for your Synapse workspace, point to **New SQL script**, and select **Select TOP 100 rows**.
 2. In the **SQL Script 1** pane that opens, review the SQL code that has been generated, which should be similar to this:
 
-    ```
+    ```SQL
     -- This is auto-generated code
     SELECT
         TOP 100 *
@@ -136,7 +137,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 
 5. Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROWS = TRUE parameters to the OPENROWSET function as shown here, and then rerun the query:
 
-    ```
+    ```SQL
     SELECT
         TOP 100 *
     FROM
@@ -158,7 +159,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 
 6. Modify the query as follows (replacing *datalakexx* and *fsxx* with the names of your data lake storage account and file system):
 
-    ```
+    ```SQL
     SELECT
         Category, COUNT(*) AS ProductCount
     FROM
