@@ -39,7 +39,7 @@ Here, you add a new job definition that contains the steps required to build the
 
 ## Update the smoke test file
 
-The website developers have added a health endpoint to the website. This endpoint checks to ensure that the website is online and that it can reach the database. Here, you add a new smoke test to invoke the health check from your deployment pipeline.
+The website developers have added a health endpoint to the website. This endpoint checks that the website is online and that it can reach the database. Here, you add a new smoke test to invoke the health check from your deployment pipeline.
 
 1. Open the *Website.Tests.ps1* file in the *deploy* folder.
 
