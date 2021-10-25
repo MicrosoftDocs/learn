@@ -55,7 +55,7 @@ sh loadTest.sh
 
 You'll see the output of the customers-service load test that will send 100 requests to your instance.
 
-## Optionally trigger the scale-out action manually via a web browser
+## Trigger the scale-out action manually via a web browser (Optional)
 
 To manually trigger the scale-out condition in the autoscale setting created, the customer-service microservice must have more than 10 requests in less than 1 minute.
 
@@ -84,3 +84,6 @@ The scale-in condition in the autoscale setting triggers if there are fewer than
 1. Ensure no requests are being sent to your customer-service and the browser window to your app/service is closed.
 
 1. In a few minutes, the instance count should fall from 2, to 1.
+
+> [!IMPORTANT]
+> If the scale-in action does not occur, you may need to edit the customers-service autoscale setting to set the scale-in condition to trigger the scale-in action.
