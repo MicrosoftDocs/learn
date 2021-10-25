@@ -42,7 +42,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
 ## Create the splash screen
 
-1. You should already have a blank screen in the Power Apps Studio. If not, on the **Home** tab, select the down-arrow next to **New screen** to open a list of screen types, and then select **Blank** to create a blank screen.
+1. Click the **Tree view** option at the left of **Power Apps Studio**, you should already have a blank screen in the Power Apps Studio. If not, on the **Home** tab, select the down-arrow next to **New screen** to open a list of screen types, and then select **Blank** to create a blank screen.
 
     :::image type="content" source="../media/new-screen.png" alt-text="Screenshot of creating new screen." lightbox="../media/new-screen.png":::
 
@@ -53,6 +53,9 @@ To include data to your **Power Apps**, you must connect to the data via the con
 3. Click the newly created screen to change its properties in the **Properties** tab at the right side of the screen.
 
 4. Click the dropdown present beside the **Background image** property to add an image to the screen. Now, we will add the logo of our application **Easy Sales** to the splash screen.
+
+:::image type="content" source="../media/add-logo.png" alt-text="Screenshot of adding the easy sales logo." lightbox="../media/add-logo.png":::
+
 
 5. Set the image position to **Fit** to have the entire image into the specified size. The **Fit** option scales the image proportionally and doesn't crop the image.
 
