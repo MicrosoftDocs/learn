@@ -10,7 +10,7 @@ To meet these objectives, you'll:
 
 ## Get the Azure DevOps project
 
-Here you make sure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
+In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
 
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated Azure DevOps project.
 
@@ -28,13 +28,13 @@ On the Azure DevOps Demo Generator site, do the following:
 
 1. Select **Sign In**, and then agree to the site usage terms by selecting **Accept**.
 
-1. On the **Create New Project** page, select your Azure DevOps organization, and then enter a project name, such as *toy-website-end-to-end*.
+1. On the **Create New Project** page, select your Azure DevOps organization and then, in the **New Project Name** box, enter a project name, such as *toy-website-end-to-end*.
 
     :::image type="content" source="../media/4-create-new-project.png" alt-text="Screenshot of the Azure DevOps Demo Generator pane for creating a new project.":::
 
 1. Select **Create Project**.
 
-    The template takes a few moments to run. It automatically creates a pipeline and Bicep file for you to work with in the subsequent exercises.
+    The template takes a few moments to run. It automatically creates a pipeline and Bicep file for you to work with in the next few exercises.
 
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
