@@ -192,14 +192,17 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/navigate-next-details.png" alt-text="Screenshot of navigation to next details" lightbox="../media/navigate-next-details.png":::
 
-3. Let's start building the **Details_sofas** page by adding a few labels, namely: **Price**, **Dimensions**, **Weight**, **Color**, and **Material**. You can edit the text inside the label by inserting the desired text beside the **Text** property of the **Label**.
+3. Let's start building the **Details_sofas** page by adding a few labels, namely: **Price**, **Dimensions**, **Weight**, **Color**, and **Material**. You can edit the text inside the label by inserting the desired text beside the **Text** property of the **Label**. Rename the **Labels** accordingly.
 
     :::image type="content" source="../media/add-labels.png" alt-text="Screenshot of adding labels" lightbox="../media/add-labels.png":::
 
-4. Insert another label to display the name of the product at the top and configure the **Text** property of the label by adding the following line:
+    >[!Note]
+    > You may customize the theme, font, and color palette of your application as required to improve user experience and appearance.
+
+4. Insert another label named **Product name** to display the name of the product at the top and **Center align** it. Configure the **Text** property of the label by adding the following line:
 
     ```Power Apps
-    content.'Name (Title)'
+    content_sofas.'Name (Title)'
     ```
 
     :::image type="content" source="../media/add-title-label.png" alt-text="Screenshot of adding title label" lightbox="../media/add-title-label.png":::
@@ -207,7 +210,7 @@ The details page includes all the details and information concerning the selecte
 5. Click the **Media** dropdown and select **Image** to insert an image in the **Details_sofas** screen. Configure the **Image** property in the following way:
 
     ```Power Apps
-    content.ImageLink
+    content_sofas.ImageLink
     ```
 
     :::image type="content" source="../media/add-image.png" alt-text="Screenshot of adding image" lightbox="../media/add-image.png":::
@@ -217,7 +220,7 @@ The details page includes all the details and information concerning the selecte
     * **Price** :
 
         ``` Power Apps
-        content.Price
+        content_sofas.Price
         ```
 
         :::image type="content" source="../media/blank-label-price.png" alt-text="Screenshot of blank label for price" lightbox="../media/blank-label-price.png":::
@@ -225,7 +228,7 @@ The details page includes all the details and information concerning the selecte
     * **Dimensions** :
 
         ``` Power Apps
-        content.Dimensions
+        content_sofas.Dimensions
         ```
 
         :::image type="content" source="../media/blank-label-dimensions.png" alt-text="Screenshot of blank label for dimension" lightbox="../media/blank-label-dimensions.png":::
@@ -233,7 +236,7 @@ The details page includes all the details and information concerning the selecte
     * **Weight** :
 
         ``` Power Apps
-        content.Weight
+        content_sofas.Weight
         ```
 
         :::image type="content" source="../media/blank-label-weight.png" alt-text="Screenshot of blank label for weight" lightbox="../media/blank-label-weight.png":::
@@ -241,7 +244,7 @@ The details page includes all the details and information concerning the selecte
     * **Color** :
 
         ``` Power Apps
-        content.Color
+        content_sofas.Color
         ```
 
         :::image type="content" source="../media/blank-label-color.png" alt-text="Screenshot of blank label for color" lightbox="../media/blank-label-color.png":::
@@ -249,7 +252,7 @@ The details page includes all the details and information concerning the selecte
     * **Material** :
 
         ``` Power Apps
-        content.PrimaryMaterial
+        content_sofas.PrimaryMaterial
         ```
 
         :::image type="content" source="../media/blank-label-material.png" alt-text="Screenshot of blank label for material" lightbox="../media/blank-label-material.png":::
