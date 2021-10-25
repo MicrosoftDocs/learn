@@ -10,7 +10,7 @@ Identity is the new control plane of IT security, so authentication is an organi
 ### Authentication methods
 
 **Cloud Authentication** - When you choose this authentication method, Azure AD handles users' sign-in process. Coupled with seamless single sign-on (SSO), users can sign in to cloud apps without having to reenter their credentials. With cloud authentication, you can choose from two options:
-- Azure AD password has Synchronization
+- Azure AD password hash Synchronization
 - Azure AD Pass-through Authentication
 
 **Federated Authentication** - When you choose this authentication method, Azure AD hands off the authentication process to a separate trusted authentication system, such as on-premises Active Directory Federation Services (AD FS), to validate the user’s password. The authentication system can provide additional advanced authentication requirements. Examples are smartcard-based authentication or third-party multifactor authentication.
@@ -24,7 +24,7 @@ Details on decision questions:
 
 * Azure AD can handle sign-in for users without relying on on-premises components to verify passwords.
 * Azure AD can hand off user sign-in to a trusted authentication provider such as Microsoft’s AD FS.
-* If you need to apply, user-level Active Directory security policies such as account expired, disabled account, password expired, account locked out, and sign-in hours on each user sign-in, Azure AD requires some on-premises components.
+* If you need to apply user-level Active Directory security policies such as account expired, disabled account, password expired, account locked out, and sign-in hours on each user sign-in, Azure AD requires some on-premises components.
 * Sign-in features not natively supported by Azure AD:
    - Sign-in using smartcards or certificates.
    - Sign-in using on-premises MFA Server.
