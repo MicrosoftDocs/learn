@@ -172,7 +172,7 @@ New-AzResourceGroup -Name ToyWebsiteTest -Location westus
 
    ```azurecli
    az ad sp create-for-rbac \
-     --name ToyWebsiteWorkflow \
+     --name ToyWebsiteTest \
      --role Contributor \
      --scopes RESOURCE_GROUP_ID \
      --sdk-auth
@@ -210,7 +210,7 @@ New-AzResourceGroup -Name ToyWebsiteTest -Location westus
 
    $azureContext = Get-AzContext
    $servicePrincipal = New-AzADServicePrincipal `
-   -DisplayName ToyWebsiteWorkflow `
+   -DisplayName ToyWebsiteTest `
    -Role Contributor `
    -Scope $resourceGroupId
 

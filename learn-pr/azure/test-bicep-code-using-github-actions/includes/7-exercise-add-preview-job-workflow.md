@@ -21,7 +21,7 @@ Here, you add a new job to your workflow that runs the what-if operation.
 
    Notice that the **preview** job depends on the successful completion of the **validate** and **lint** jobs.
 
-   The **preview** job uses the `azure/cli` action because the what-if operation is not supported on the `azure/arm-deploy` action that the pipeline uses elsewhere. 
+   The **preview** job uses the `azure/cli` action. Currently, the what-if operation is not supported by the `azure/arm-deploy` action.
 
 1. Update the **deploy** job to make it depend on the **preview** job:
 
@@ -45,7 +45,9 @@ Here, you add a new job to your workflow that runs the what-if operation.
 
 ## Add required reviewer protection rule to the environment
 
-1. Select the **Required reviewers** box. Add your own GitHub username to the reviewer list.
+1. Select the **Required reviewers** box.
+
+1. Add your own GitHub username to the reviewer list.
 
    :::image type="content" source="../media/7-add-reviewers.png" alt-text="Screenshot of the GitHub interface that shows the Website environment, with the required reviewers checkbox and textbox highlighted.":::
 

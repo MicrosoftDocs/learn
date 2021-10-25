@@ -24,13 +24,13 @@ During the process, you'll:
    This job defines a step to check out the code and a step that runs the `az bicep build` command to lint the Bicep file.
 
    > [!TIP]
-   > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. In the next section, you'll see the complete YAML workflow definition so that you can verify that your file matches.
+   > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
 
 1. Below the lines that you just added, and above the deploy job, add a validation job:
 
    :::code language="yaml" source="code/5-workflow.yml" range="20-35" :::
 
-   This job defines steps to check out the code, sign in to your Azure environment, and use the `azure/arm-deploy@v1` action with the `Validate` deployment mode.
+   This job defines steps to check out the code, sign in to your Azure environment, and use the `azure/arm-deploy` action with the `Validate` deployment mode.
 
    Your workflow definition now has three jobs. The first lints your Bicep file, the second performs a preflight validation, and the third performs the deployment to Azure.
 
@@ -60,13 +60,15 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 ## Configure the deploy job to work with the linter
 
-When you use custom linter configuration, Bicep writes log data that GitHub Actions interprets as an error. To disable this behavior, you configure the `arm-deploy` task to ignore the standard error stream.
+When you use custom linter configuration, Bicep writes log data that GitHub Actions interprets as an error. To disable this behavior, you configure the `arm-deploy` task to ignore the standard error (stderr) log stream.
 
 1. Open the *workflow.yml* file.
 
 1. In the `deploy` job's *Deploy website* test step, set the `failWithStdError` property to `false`:
 
    :::code language="yaml" source="code/5-workflow.yml" range="37-53" highlight="13" :::
+
+1. Save the file.
 
 ## Verify and commit your workflow definition
 

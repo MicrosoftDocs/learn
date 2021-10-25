@@ -48,7 +48,7 @@ Now, you can add a smoke test job that runs your tests.
 
    This code defines the job. The job contains a step to check out the code, and a step to run tests by using Pester.
    
-   We also indicate in this job that is dependent on the **deploy** job by using the `needs` property. In addition to controlling the sequence of the job execution, this also allows you to use the output of this job when you run the test script.
+   The job definition uses the `needs` property to define a dependency on the **deploy** job. This ensures that the jobs run in the sequence you want. It also enables you to use the outputs of the **deploy** job when you run the smoke tests.
 
    > [!NOTE]
    > PowerShell and Pester are both preinstalled on GitHub-hosted runners. You don't need to do anything special to use them in a script step.

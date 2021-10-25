@@ -1,4 +1,4 @@
-Now that you know what workflow jobs are for, let's consider the first set of validation steps that you can add to your Bicep deployment workflow. In this unit, you'll learn about validating Bicep templates. You'll also learn about the two activities that a validation job typically performs: linting and preflight validation.
+Now that you know what workflow jobs are for, let's consider the first set of validation steps that you can add to your Bicep deployment workflow. In this unit, you'll learn about validating Bicep templates. You'll also learn about the two validation activities that are commonly used: linting and preflight validation.
 
 ## What is a valid Bicep file?
 
