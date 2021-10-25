@@ -38,7 +38,7 @@ The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk throu
 
     1. Select **TensorRT 8,0 GA Update 1**. Install the **TensorRT 8.0 GA Update 1 for Linux and CUDA 11.3, CUDA 11.2, CUDA 11.1, CUDA 11.0**.
 
-    1. The installation package should download to your local user's Downloads folder. Go to the download location and install the package by using these commands:
+    1. The installation package should download to your local user's *Downloads* folder. Go to the download location and install the package by using these commands:
 
        ```bash
        cd ~/Downloads
@@ -65,7 +65,7 @@ The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk throu
 
     1. Install both the runtime package and the development package. Select **Download cuDNN v8.2.2 (July 6th, 2021), for CUDA 11.4**. Install **cuDNN Runtime Library for Ubuntu18.04 x86_64 (Deb)** and **cuDNN Developer Library for Ubuntu18.04 x86_64 (Deb)**.
 
-    1. These packages should download to your local user's Downloads folder.  Go to the download location and install *both* packages by using these commands:
+    1. These packages should download to your local user's *Downloads* folder.  Go to the download location and install *both* packages by using these commands:
 
     ```bash
     cd ~/Downloads
@@ -76,7 +76,7 @@ The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk throu
 
     1. Open a browser on the host machine. Go to the [NVIDIA DeepStream SDK 6.0 - Downloads page](https://developer.nvidia.com/deepstream-sdk-6.0-early-access).
 
-    1. Select the **DeepStream on x86 Core - Debian** package. It should download to your local user's Downloads folder. Go to the download location and install the package by using these commands:
+    1. Select the **DeepStream on x86 Core - Debian** package. It should download to your local user's *Downloads* folder. Go to the download location and install the package by using these commands:
 
     ```bash
     cd ~/Downloads
