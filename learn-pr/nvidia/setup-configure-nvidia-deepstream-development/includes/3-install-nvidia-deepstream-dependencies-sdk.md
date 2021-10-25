@@ -83,4 +83,4 @@ The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk throu
     sudo dpkg -i <name of downloaded package>
     ```
 
-You're now ready to start exploring how to build Intelligent Video Applications by using the NVIDIA DeepStream SDK. We'll examine and run a sample application.
+You're now ready to start exploring how to build Intelligent Video Analytics applications by using the NVIDIA DeepStream SDK. We'll examine and run a sample application.
