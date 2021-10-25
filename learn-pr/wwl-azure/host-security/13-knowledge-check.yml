@@ -41,7 +41,7 @@ quiz:
       explanation: "FireVault is for encrypting Mac machines."
   - content: "A company, with both Azure (cloud based) and on-premises virtual machines, needs to ensure their virtual machines are kept up to date with security patches. Update Management is the Azure tool they will use, hopefully at limited cost.  Will Update management monitor their on-premises VMs for updates?"
     choices:
-    - content: "The Microsoft Monitoring Agent must be installed for both Windows and Linux virtual machines on-premises."
+    - content: "The Microsoft Monitoring Agent must be installed for both Windows and Linux virtual machines on premises."
       isCorrect: false
       explanation: "The monitoring agent is required to see what updates are deployed on cloud-based machines, but does not apply to on-premises VMs."
     - content: "Both the Update Management feature and the log data storage are free for the customer."
