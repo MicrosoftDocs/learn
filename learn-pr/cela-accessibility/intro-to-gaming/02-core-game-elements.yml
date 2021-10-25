@@ -37,7 +37,7 @@ quiz:
     - content: "Providing tutorials of new mechanics introduced in gameplay."
       isCorrect: false
       explanation: "Incorrect. Providing an opportunity for players to try out and get familiarize themselves with new mechanics in a trial space removes barriers."
-    - content: "Which of the following examples to remove barriers for players with physical disabilities?"
+  - content: "Which of the following examples to remove barriers for players with physical disabilities?"
     choices:
     - content: "Provide different options for input devices, documented in accessible support articles."
       isCorrect: true
