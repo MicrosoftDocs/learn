@@ -3,23 +3,23 @@
 uid: learn.intro-to-gaming
 metadata:
   title: Introduction to gaming and disability
-  description: This module introduces foundational gaming accessibility concepts for game titles, gaming platforms, and gaming hardware. You will learn about the core elements in gaming experiences that influence accessibility and how those elements impact the experiences of gamers with visual, hearing, mobility, and cognitive disabilities.
-  ms.date: 08/10/2021
+  description: This module introduces foundational gaming accessibility concepts for game titles, gaming platforms, and gaming hardware. You will learn about the core elements in gaming experiences that influence accessibility and how those elements can impact the experiences of gamers with visual, hearing, mobility, and cognitive disabilities. 
+  ms.date: 10/22/2021
   author: erzelman
   ms.author: erzelman
   ms.topic: interactive-tutorial
   ms.prod: learning-gaming-accessibility
   showCreativeCommonsFooter: true
 title: Introduction to gaming and disability
-summary: This module introduces foundational gaming accessibility concepts for game titles, gaming platforms, and gaming hardware. You will learn about the core elements in gaming experiences that influence accessibility and how those elements impact the experiences of gamers with visual, hearing, mobility, and cognitive disabilities.
+summary: This module introduces foundational gaming accessibility concepts for game titles, gaming platforms, and gaming hardware. You will learn about the core elements in gaming experiences that influence accessibility and how those elements can impact the experiences of gamers with visual, hearing, mobility, and cognitive disabilities.
 abstract: |
   In this module you will:
   - Identify core elements within gaming title, platform, and hardware experiences that commonly impact game accessibility.
   - Describe the diverse range of abilities that players in the gaming and disability community may have across visual, hearing, mobility, and cognitive functions.
   - Assess the cognitive, hearing, mobility, and cognitive abilities required to successfully interact with core elements as they compare to the diverse range of player abilities to identify potential barriers to access.
 prerequisites: |
- - You should have basic familiarity with playing video games, navigating game platforms (Xbox, PlayStation, Nintendo Switch, Windows, etc. and using standard gaming hardware controllers and inputs.
- - A basic understanding of foundational disability and accessibility principles terms and concepts is encouraged.
+ - Basic familiarity with playing video games, navigating game platforms (Xbox, PlayStation, Nintendo Switch, Windows), and using standard gaming hardware controllers and inputs are required.
+ - Basic understanding of foundational disability and accessibility principles terms and concepts are highly encouraged.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -30,9 +30,9 @@ products:
 - xbox
 units:
 - learn.intro-to-gaming.introduction
+- learn.intro-to-gaming.approach-gameplay
 - learn.intro-to-gaming.core-game-elements
 - learn.intro-to-gaming.player-experiences
-- learn.intro-to-gaming.access-barriers
 - learn.intro-to-gaming.summary
 badge:
   uid: learn.intro-to-gaming.badge

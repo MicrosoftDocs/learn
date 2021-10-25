@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-gaming.player-experiences
+title: Gaming and disability player experiences
+metadata:
+  title: Gaming and disability player experiences
+  description: This content is part of the Introduction to Gaming and Disability module.
+  ms.date: 08/10/2021
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 18
+content: |
+  [!include[](includes/03-player-experiences.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why is an awareness of the wide range of player experiences important when addressing visual, audio, input, and cognitive accessibility?"
+    choices:
+    - content: "A single approach to assist players with one type of disability will not address the barriers that all players with similar disabilities face."
+      isCorrect: true
+      explanation: "Correct. Understanding the needs across a wide range of players is necessary to create a game that can be enjoyable and playable by everyone."
+    - content: "Understanding the different disability personas allows developers to decide which disability persona to focus on."
+      isCorrect: false
+      explanation: "Incorrect. Developers should not focus on a single disability, instead on creating a game experience that can be enjoyed by the greatest number of players possible."
+    - content: "Allows for developers to create many customized experiences specifically for players with disabilities."
+      isCorrect: false
+      explanation: "Incorrect. Players with disabilities should not be redirected to a different gameplay experience in order to enjoy the game."
+  - content: "Which of the following is not approach that can be used to support players with disabilities?"
+    choices:
+    - content: "Allow players to pause a game or initiate game saves at any point in time."
+      isCorrect: false
+      explanation: "Incorrect. Developers should provide the option to pause a game to support players who may experience fatigue from input demands like quick, repetitive motions."
+    - content: "Representing audio cues like enemy footsteps through visual cues within the UI or within captions."
+      isCorrect: false
+      explanation: "Incorrect. Developers should provide audio based options to visual elements in the game to meet the needs of players with visual disabilities."
+    - content: "Allow players to remap up to 4 controls in a game."
+      isCorrect: true
+      explanation: "Correct. Developers should enable players to remap all controls in a game to meet the needs of players with specific dexterity and fine motor disabilities."
+  - content: "Which of the following is would not typically be considered a barrier for a player with cognitive disabilities?"
+    choices:
+    - content: "Attention"
+      isCorrect: false
+      explanation: "Incorrect. Attention is one of the primary aspects of cognition that players with cognitive disabilities may experience challenges to."
+    - content: "Memory"
+      isCorrect: false
+      explanation: "Incorrect. Memory is one of the primary aspects of cognition that players with cognitive disabilities may experience challenges to."
+    - content: "Dexterity"
+      isCorrect: true
+      explanation: "Correct. Dexterity in the context of gaming refers to the rapid movement of a player’s fingers to activate controls within a specific time frame, and is most often associated was a barrier for individuals with mobility disabilities."
