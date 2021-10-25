@@ -6,7 +6,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
     :::image type="content" source="../media/canvas-app.png" alt-text="Screenshot of select canvas app from blank." lightbox="../media/canvas-app.png":::
 
-2. Specify a name for your app, for example *Easy-Sales*. Select **Phone**, and then select **Create**.
+2. Specify a name for your app, for example *Easy-Sales*. Select **Phone**, and then click **Create**.
 
     :::image type="content" source="../media/select-phone.png" alt-text="Screenshot of specifying app name and selecting create." lightbox="../media/select-phone.png":::
 
@@ -14,7 +14,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
     >[!Note]
     > You can design an app from scratch for phones or other devices (such as tablets). This topic focuses on designing an app for phones.
 
-3. If the **Welcome to Power Apps Studio** dialog box opens, select **Skip.**
+3. If the **Welcome to Power Apps Studio** dialog box opens, select **Skip**.
 
     :::image type="content" source="../media/click-skip.png" alt-text="Screenshot of select skip option." lightbox="../media/click-skip.png":::
 
@@ -34,7 +34,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
     :::image type="content" source="../media/select-easy-sales.png" alt-text="Screenshot of select Easy Sales." lightbox="../media/select-easy-sales.png":::
 
-5. On selecting the **Easy Sales** SharePoint site, all the lists created on that site are displayed. Next, select all the SharePoint lists created concerning the application and click on **Connect**.
+5. On selecting the **Easy Sales** SharePoint site, all the lists created on that site are displayed. Next, select all the SharePoint lists created concerning the application and click **Connect**.
 
     :::image type="content" source="../media/select-lists.png" alt-text="Screenshot of selecting lists." lightbox="../media/select-lists.png":::
 
@@ -103,7 +103,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
     :::image type="content" source="../media/navigate-sofas-page.png" alt-text="Screenshot of navigation of sofas page" lightbox="../media/navigate-sofas-page.png":::
 
-5. Repeat the same procedure for the other three buttons. Again, make sure to provide proper screen names in the **Navigate** function; for example, for configuring the **OnSelect** property of the **Chairs**, **Tables**, and **Carpets** button, use the following navigate function:
+5. Repeat the same procedure for the other three buttons. Again, make sure to provide proper screen names in the **Navigate** function; for example, for configuring the **OnSelect** property of the **Chairs**, **Tables**, and **Carpets** button, use the following navigate function respectively:
 
     ```Power Apps
     Navigate(Chairs,ScreenTransition.Cover)
@@ -118,7 +118,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
     ```
 
 >[!Note]
-> The default syntax of the **Navigate** function is: **Navigate**( *Screen* [, *Transition* [, *UpdateContextRecord*]])
+> The default syntax of the **Navigate** function is: **Navigate**(*Screen* [, *Transition* [, *UpdateContextRecord*]])
 >
 >* **Screen** - Required. The screen to display.
 >* **Transition** - Optional. The visual transition to use between the current screen and the next screen. The default value is None.
@@ -128,7 +128,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
 Now that we have added the product categories, we will display the list of products under each category. In Power Apps, we use **Gallery control** to display a record of data.
 
-1. In the **Sofas** screen; on the Insert tab, select **More** dropdown, and then select **Gallery** > **Vertical**. Rename it to **Gallery_sofas**.
+1. In the **Sofas** screen; on the Insert tab, select **Gallery** > **Vertical**. Rename it to **Gallery_sofas**.
 
     :::image type="content" source="../media/select-vertical-gallery.png" alt-text="Screenshot of adding gallery" lightbox="../media/select-vertical-gallery.png":::
 
@@ -159,7 +159,7 @@ Now that we have added the product categories, we will display the list of produ
 
     :::image type="content" source="../media/insert-label.png" alt-text="Screenshot of adding label - Sofas" lightbox="../media/insert-label.png":::
 
-7. Add a **Back** icon over the previously added **Label** to help the user navigate to the **Home Page** when required. To add the **Back** icon, expand the **Icons** dropdown and select the **Back icon**.
+7. Add a **Back** icon over the previously added **Label** to help the user navigate to the **Home Page** when required. To add the **Back** icon, expand the **Icons** dropdown and select the **Back** icon.
 
     :::image type="content" source="../media/insert-back-icon.png" alt-text="Screenshot of adding back icon - home page" lightbox="../media/insert-back-icon.png":::
 
@@ -184,11 +184,11 @@ The details page includes all the details and information concerning the selecte
 2. Click on the **>** icon in the gallery control included in the **Sofas** page and all other similar pages. Then, configure the **OnSelect** property by adding the following line in the **Functions** tab.
 
     ```Power Apps
-    Navigate(Details_sofas,ScreenTransition.Cover,{content : ThisItem})
+    Navigate(Details_sofas,ScreenTransition.Cover,{content_sofas : ThisItem})
     ```
 
     > [!Note]
-    > Customize the **Navigate** function by providing different destination pages, for example, **Navigate(Details_chairs,ScreenTransition.Cover,{content : ThisItem})** to navigate to the **Details_chairs** page.
+    > Customize the **Navigate** function by providing different destination pages and UpdateContextRecord, for example, **Navigate(Details_chairs,ScreenTransition.Cover,{content_chairs : ThisItem})** to navigate to the **Details_chairs** page with **content_chairs** as the **UpdateContextRecord**.
 
     :::image type="content" source="../media/navigate-next-details.png" alt-text="Screenshot of navigation to next details" lightbox="../media/navigate-next-details.png":::
 
