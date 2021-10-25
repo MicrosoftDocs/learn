@@ -44,7 +44,7 @@ quiz:
     choices:
     - content: "Block a user if stolen password is suspected."
       isCorrect: false
-      explanation: "Although it is possible to block a user, it is a not valid choice here, beceause authentiction cannot flag that a password was stolen."
+      explanation: "Although it is possible to block a user, it is not a valid choice here, because authentication cannot flag that a password was stolen."
     - content: "Configure IP addresses outside the company intranet that should be blocked."
       isCorrect: false
       explanation: "Configuring an IP addresses outside the company intranet that should be blocked is not correct. Trusted IPs is a feature to *allow* federated users or IP address ranges to bypass two-step authentication.  The Trusted IPs bypass works only from inside of the company intranet. Azure Conditional Access provides extra options if needed."
