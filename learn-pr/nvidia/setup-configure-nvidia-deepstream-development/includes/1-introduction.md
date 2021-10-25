@@ -1,25 +1,25 @@
-In this module, you will learn how to set up and configure an X86 based Ubuntu 18.04 System to host an NVIDIA DeepStream development environment.
+In this module, you'll learn how to set up and configure an x86-based Ubuntu 18.04 system to host an NVIDIA DeepStream development environment.
 
 ## Prerequisites
 
-- X86 Based System running Ubuntu 18.04 OS
-- RTX2080, RTX3080, T4, or A100 NVIDIA Graphics Card
+- x86-based system running Ubuntu 18.04
+- RTX 2080, RTX 3080, T4, or A100 NVIDIA graphics card
 
-![DeepStream Application running](../media/deepstream-sgie-config-labels.png)
+![Screenshot that shows a DeepStream Application running.](../media/deepstream-sgie-config-labels.png)
 
-## Scenario: develop an application that counts people and vehicles within an area of business
+## Scenario: Develop an application that counts people and vehicles in a specific area
 
-Your boss has mentioned an interest in adopting Artificial Intelligence, specifically Computer Vision, to aid the automation of gathering metrics regarding customer traffic in designated areas.  The task seems like a difficult one at first, rife with various complexities and areas in need of never-ending optimization.  However, you've noticed that there may be a way to simplify this task by employing the NVIDIA DeepStream SDK and pairing it with Azure services to create a production-grade solution that could lend itself to other use cases with minimal modification.  You've decided to get started by exploring what is possible by setting up a development environment to evaluate the NVIDIA DeepStream SDK.  
+Your boss wants to adopt AI, specifically computer vision, to aid the automation of gathering metrics about customer traffic in specific areas. The task seems like a difficult one at first, rife with complexities and areas in need of never-ending optimization. But you're aware that there might be a way to simplify this task. By using the NVIDIA DeepStream SDK together with Azure services, you can create a production-grade solution that could lend itself to other use cases with minimal modification. You decide to explore the possibilities by setting up a development environment to evaluate the NVIDIA DeepStream SDK.  
 
 ## What will you learn?
 
-When you finish this module, you'll be able to:
+After you finish this module, you'll be able to:
 
-- Describe the components of Intelligent Video Applications
-- Install the NVIDIA DeepStream SDK and Dependencies onto an x86 host
+- Describe the components of Intelligent Video Analytics applications
+- Install the NVIDIA DeepStream SDK and dependencies onto an x86 host
 - Run NVIDIA DeepStream applications
 - Modify and customize NVIDIA DeepStream application configurations
 
 ## What is the main goal?
 
-This module will show you how to get started developing Intelligent Video Applications using the NVIDIA DeepStream SDK.
+This module will demonstrate how to get started with developing Intelligent Video Analytics applications by using the NVIDIA DeepStream SDK.

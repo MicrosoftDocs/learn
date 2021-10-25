@@ -3,7 +3,7 @@ uid: learn.nvidia.setup-configure-nvidia-deepstream-development.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to setup and configuration of a NVIDIA DeepStream development environment.
+  description: Introduction to setup and configuration of an NVIDIA DeepStream development environment.
   author: toolboc
   ms.author: pdecarlo
   ms.date: 10/01/2021
