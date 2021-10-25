@@ -1,6 +1,6 @@
 The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk through the installation of these dependencies and explain their roles.
 
-1. Install the `build-essential` meta-package that will provide tooling to compile C and C++ applications from source. We'll also install a few helper programs that are required to compile certain sources that will be referenced after this step. To start, run these commands on the host terminal:
+1. Install the `build-essential` meta-package that will provide tools to compile C and C++ applications from source. We'll also install a few helper programs that are required to compile certain sources that will be referenced after this step. To start, run these commands on the host terminal:
 
     ```bash
     sudo apt install \
@@ -9,7 +9,7 @@ The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk throu
     libglvnd-dev
     ```
 
-1. Install extra packages that might be referenced at runtime when a DeepStream application is run. Notice that multiple `gstreamer`-based plug-ins are included. They're needed because NVIDIA DeepStream uses the [GStreamer](https://gstreamer.freedesktop.org/) library for media handling and graph composition in DeepStream applications. Use the following commands to install these requirements on the host terminal:
+1. Install the extra packages that might be referenced at runtime when a DeepStream application is run. Notice that multiple `gstreamer`-based plug-ins are included. They're needed because NVIDIA DeepStream uses the [GStreamer](https://gstreamer.freedesktop.org/) library for media handling and graph composition in DeepStream applications. Use the following commands to install these requirements on the host terminal:
 
     ```bash
     sudo apt install \
