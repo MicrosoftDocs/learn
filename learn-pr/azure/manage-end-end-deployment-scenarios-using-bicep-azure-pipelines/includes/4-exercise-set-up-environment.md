@@ -1,4 +1,4 @@
-Before you start to work on your toy company's website pipeline, you need to configure your environment. In this unit, you make sure that your Azure and Azure DevOps environments are set up to complete the rest of this module.
+Before you start to work on your toy company's website pipeline, you need to configure your environment. In this unit, you'll make sure that your Azure and Azure DevOps environments are set up to complete the rest of this module.
 
 To meet these objectives, you'll:
 
@@ -15,7 +15,7 @@ Here you make sure that your Azure DevOps organization is set up to complete the
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated Azure DevOps project.
 
 > [!TIP]
-> Even if you completed the previous module in the learning path, please follow these instructions to create a new project and ensure you give it a new name.
+> Even if you completed the preceding module in the learning path, follow these instructions to create a new project. Be sure to give the project a new name.
 
 ### Run the template
 
@@ -24,13 +24,13 @@ Run a template that sets up your Azure DevOps project.
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicependtoend&azure-portal=true)
 
-On the Azure DevOps Demo Generator site, follow these steps to run the template:
+On the Azure DevOps Demo Generator site, do the following:
 
-1. Select **Sign In** and accept the usage terms.
+1. Select **Sign In**, and then agree to the site usage terms by selecting **Accept**.
 
-1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *toy-website-end-to-end*.
+1. On the **Create New Project** page, select your Azure DevOps organization, and then enter a project name, such as *toy-website-end-to-end*.
 
-    :::image type="content" source="../media/4-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::
+    :::image type="content" source="../media/4-create-new-project.png" alt-text="Screenshot of the Azure DevOps Demo Generator pane for creating a new project.":::
 
 1. Select **Create Project**.
 
@@ -50,13 +50,13 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
    :::image type="content" source="../media/4-clone.png" alt-text="Screenshot of Azure DevOps showing the repository, with the Clone button highlighted.":::
 
-1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the username and password displayed to somewhere safe.
+1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials**, and then copy the displayed username and password to somewhere safe.
 
 1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
-    :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the Clone in VS Code button highlighted.":::
+    :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the 'Clone in VS Code' button highlighted.":::
 
-1. Create a folder to use for the repository, and then choose **Select Repository Location**.
+1. Create a folder to use for the repository, and then select **Select Repository Location**.
 
 1. You're using this repository for the first time, so you're prompted to sign in.
 
@@ -96,7 +96,7 @@ New-AzResourceGroup -Name ToyWebsiteProduction -Location westus
 
 ## Create service connections in Azure Pipelines
 
-Next, create two service connections in Azure Pipelines - one for your test environment and another for your production environment. This process automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy to the resource group.
+Next, create two service connections in Azure Pipelines, one for your test environment and another for your production environment. This process automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to be deployed to the resource group.
 
 1. In your browser, select **Project settings**.
 
@@ -104,36 +104,36 @@ Next, create two service connections in Azure Pipelines - one for your test envi
 
 1. Select **Service connections** > **Create service connection**.
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the 'Create service connection' button highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows the Service connections' pane, with the 'Create service connection' button highlighted.":::
 
 1. Select **Azure Resource Manager** > **Next**.
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Azure Resource Manager service connection type highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Service connections' pane, with the 'Azure Resource Manager' service connection type highlighted.":::
 
 1. Select **Service principal (automatic)** > **Next**.
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Service principal (automatic) option highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the 'New Azure service connection' pane, with the 'Service principal (automatic)' option highlighted.":::
 
-1. In the **Subscription** drop-down, select your Azure subscription.
+1. In the **Subscription** dropdown list, select your Azure subscription.
 
-   A popup window might appear, asking you to sign in to Azure. If it does, enter your credentials and sign in.
+   If a popup window appears with a message asking you to sign in to Azure, enter your credentials and sign in.
 
-1. In the **Resource group** drop-down, select **ToyWebsiteTest**.
+1. In the **Resource group** dropdown list, select **ToyWebsiteTest**.
 
-1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
+1. In the **Service connection name** box, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
 
-   :::image type="content" source="../media/4-create-service-connection-principal-details-test.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page for the test environment, with the details completed and the Next button highlighted.":::
+   :::image type="content" source="../media/4-create-service-connection-principal-details-test.png" alt-text="Screenshot of Azure DevOps that shows the 'New Azure service connection' pane for the test environment, with the details completed and the 'Save' button highlighted.":::
 
    > [!TIP]
-   > For simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.
+   > In this exercise, for simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.
 
 1. Select **Save**.
 
-1. Repeat the above process to create another new service connection named **ToyWebsiteProduction**, which deploys to the resource group named **ToyWebsiteProduction**:
+1. Repeat steps 1 through 8 to create another new service connection named **ToyWebsiteProduction**, which is deployed to the resource group named **ToyWebsiteProduction**:
 
-   :::image type="content" source="../media/4-create-service-connection-principal-details-production.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page for the production environment, with the details completed and the Next button highlighted.":::
+   :::image type="content" source="../media/4-create-service-connection-principal-details-production.png" alt-text="Screenshot of Azure DevOps that shows the 'New Azure service connection' pane for the production environment, with the details completed and the 'Save' button highlighted.":::
 
-   If the resource group list doesn't update, refresh the page in your browser and try again.
+   If the resource group list isn't updated when you save your changes, refresh the page in your browser and try again.
 
 > [!NOTE]
-> In previous modules in this learning path, you added an approval check to your production environment. For simplicity, we skip the approval check in this module. However, you can add the approval check yourself if you'd like.
+> In previous modules in this learning path, you added an approval check to your production environment. In this module, for simplicity, you're skipping the approval check. However, you can add the approval check yourself if you'd like.
