@@ -2,21 +2,21 @@ Often, part of your deployment process requires that you connect to databases or
 
 ## Configure your databases from a pipeline
 
-Many databases have *schemas*, which represent the structure of the data contained in the database. It's often a good practice to apply a schema to your database from your deployment pipeline. This helps to ensure that everything your solution needs is deployed together. It also ensures that, if there's a problem when the schema is applied, your pipeline will show you an error, so you can quickly fix the issue and redeploy.
+Many databases have *schemas*, which represent the structure of the data contained in the database. It's often a good practice to apply a schema to your database from your deployment pipeline. This helps to ensure that everything your solution needs is deployed together. It also ensures that, if there's a problem when the schema is applied, your pipeline will show you an error, so that you can quickly fix the issue and redeploy.
 
 When you work with Azure SQL, you need to apply database schemas by connecting to the database server and executing commands by using SQL scripts. These are data plane operations. Your pipeline needs to authenticate to the database server and then execute the scripts. Azure Pipelines provides the `SqlAzureDacpacDeployment` task that can connect to an Azure SQL database server and execute commands.
 
-Some other data and storage services don't need to be configured using a data plane API. For example, when you work with Azure Cosmos DB, you store your data in a *container*. You can configure your containers using the control plane - right from within your Bicep file. Similarly, you can deploy and manage most aspects of Azure Storage blob containers within Bicep, too. In the next exercise, you'll see an example of how to create a blob container from Bicep.
+Some other data and storage services don't need to be configured by using a data plane API. For example, when you work with Azure Cosmos DB, you store your data in a *container*. You can configure your containers by using the control plane, right from within your Bicep file. Similarly, you can deploy and manage most aspects of Azure Storage blob containers within Bicep, too. In the next exercise, you'll see an example of how to create a blob container from Bicep.
 
 ## Add data
 
 Many solutions require reference data to be added to their databases or storage accounts before they work. Pipelines can be a good place to add this data. This means that, after the pipeline runs, your environment is fully configured and ready to use.
 
-It's also helpful to have sample data in your databases, especially for non-production environments. This helps testers and other people who use those environments to be able to immediately be able to test your solution. This data might include sample products as well as things like fake user accounts. Generally, you don't want to add this data to your production environment.
+It's also helpful to have sample data in your databases, especially for non-production environments. This helps testers and other people who use those environments to be able to test your solution immediately. This data might include sample products as well as things like fake user accounts. Generally, you don't want to add this data to your production environment.
 
-The approach you use to add data depends on the service you use:
+The approach you use to add data depends on the service you use. For example:
 
-- To add data to an Azure SQL database, you need to execute a script - similar to configuring a schema.
+- To add data to an Azure SQL database, you need to execute a script, much like configuring a schema.
 - When you need to insert data to Azure Cosmos DB, you need to access its data plane API, which might require you to write some custom script code.
 - To upload blobs to an Azure Storage blob container, you can use a variety of tools from pipeline scripts, including the AzCopy command-line application, Azure PowerShell, or the Azure CLI. Each of these tools understands how to authenticate to Azure Storage on your behalf, and how to connect to the data plane API to upload blobs.
 
@@ -32,7 +32,7 @@ When you apply schemas to an Azure SQL database, you can use a data package, als
 
 When a DACPAC file is deployed, it behaves in an idempotent way by comparing the target state of your database to the state defined in the package. In many situations, this means you don't need to write scripts that follow the principle of idempotence, because the tooling handles it for you. Some of the tooling for Azure Cosmos DB and Azure Storage also behaves correctly.
 
-But when you create sample data in an Azure SQL database, or another storage service that doesn't automatically work in an idempotent way, it's a good practice to write your script so that it only creates the data if it doesn't already exist.
+But when you create sample data in an Azure SQL database, or another storage service that doesn't automatically work in an idempotent way, it's a good practice to write your script so that it creates the data only if it doesn't already exist.
 
 It's also important to consider whether you might need to roll back deployments, such as by re-running an older version of a deployment pipeline. Rollback of changes to your data can become complicated, so carefully consider how your solution will work if this is something you need to allow for.
 
@@ -40,8 +40,8 @@ It's also important to consider whether you might need to roll back deployments,
 
 Sometimes, you might apply network restrictions to some of your Azure resources. These restrictions can enforce rules about requests made to the data plane of a resource, such as:
 
-- This database server is only accessible from a specified list of IP addresses.
-- This storage account is only accessible from resources deployed within a specific virtual network.
+- This database server is accessible only from a specified list of IP addresses.
+- This storage account is accessible only from resources that are deployed within a specific virtual network.
 
 Network restrictions are particularly common with databases, because it might seem like there's no need for anything on the internet to connect to a database server.
 
@@ -51,6 +51,6 @@ Some of the Azure Pipelines tasks that help you to perform data plane operations
 
 :::image type="content" source="../media/6-firewall.png" alt-text="Diagram illustrating the firewall update process." border="false":::
 
-When you use the `SqlAzureDacpacDeployment` task to work with an Azure SQL logical server or database, it uses your pipeline's service principal (:::image type="icon" source="../media/callout-01.png":::) to connect to the control plane for the Azure SQL logical server. It updates the firewall to allow the pipeline agent to access the server from its IP address (:::image type="icon" source="../media/callout-02.png":::). Then, it can successfully submit the DACPAC file or script for execution (:::image type="icon" source="../media/callout-03.png":::). The task then automatically removes the firewall rule when it's done.
+When you use the `SqlAzureDacpacDeployment` task to work with an Azure SQL logical server or database, it uses your pipeline's service principal:::image type="icon" source="../media/callout-01.png"::: to connect to the control plane for the Azure SQL logical server. It updates the firewall to allow the pipeline agent to access the server from its IP address:::image type="icon" source="../media/callout-02.png":::. Then, it can successfully submit the DACPAC file or script for execution:::image type="icon" source="../media/callout-03.png":::. The task then automatically removes the firewall rule when it's done.
 
-In other situations, it's not possible to create exceptions like this. In these circumstances, consider using a *self-hosted pipeline agent*, which runs on a virtual machine or other compute resource that you control. Then, you can configure this however you need - it can use a known IP address, or it can be connected to your own virtual network. We don't discuss self-hosted agents in this module, but we provide links to more information in the summary.
+In other situations, it's not possible to create exceptions like this. In these circumstances, consider using a *self-hosted pipeline agent*, which runs on a virtual machine or other compute resource that you control. You can then configure this agent however you need. It can use a known IP address, or it can be connected to your own virtual network. We don't discuss self-hosted agents in this module, but we provide links to more information on the Summary page at the end of the module.
