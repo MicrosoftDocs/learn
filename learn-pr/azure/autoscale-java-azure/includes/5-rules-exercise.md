@@ -83,7 +83,7 @@ The scale-in condition in the autoscale setting triggers if there are fewer than
 
 1. Ensure no requests are being sent to your customer-service and the browser window to your app/service is closed.
 
-1. In a few minutes, the instance count should fall from 2, to 1.
+1. In a few minutes, the instance count could fall from 2, to 1 (see below point).
 
 > [!IMPORTANT]
-> If the scale-in action does not occur, you may need to edit the customers-service autoscale setting to set the scale-in condition to trigger the scale-in action.
+> Your Azure Spring Cloud might not scale down as before scaling down, autoscale tries to estimate what the final state will be if it scaled in. This means autoscale would have to immediately scale out again even after it scaled in, if the average tomcat request count remains the same or even falls only a small amount.
