@@ -231,21 +231,21 @@
 
 1. After Unity has finished importing the package, **MRTK Project Configurator** should appear. If it doesn't, you can manually open it by going to **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**:
 
-    :::image type="content" source="../../media/configure-unity-project-menu-path-1.png" alt-text= "Screenshot of Unity Configure Unity Project menu path." lightbox="../../media/configure-unity-project-menu-path-1.png":::
+    :::image type="content" source="../../media/configure-unity-project-menu-path-1.png" alt-text= "Screenshot of Configure Unity Project menu path for MRTK." lightbox="../../media/configure-unity-project-menu-path-1.png":::
 
 1. Select **Legacy XR** to enable it and add its required packages to your project.
 
-    :::image type="content" source="../../media/legacy-xr.png" alt-text= "Screenshot of Select Legacy XR for the Project." lightbox="../../media/legacy-xr.png":::
+    :::image type="content" source="../../media/legacy-xr.png" alt-text= "Screenshot of Select Legacy XR for the project." lightbox="../../media/legacy-xr.png":::
 
 1. Select **Next** to enable XR pipeline settings.
 
-    :::image type="content" source="../../media/project-menu-path-2.png" alt-text= "Screenshot of Unity Configure Unity Project menu path." lightbox="../../media/project-menu-path-2.png":::
+    :::image type="content" source="../../media/project-menu-path-2.png" alt-text= "Screenshot of Unity Configure Unity Project menu path for XR pipeline." lightbox="../../media/project-menu-path-2.png":::
 
 1. In **MRTK Project Configurator**, ensure all options are checked.
  
 1. In **Audio spatializer**, select **MS HRTF Spatializer**, and then select **Apply**:
 
-    :::image type="content" source="../../media/mrtk-configuration-window.png" alt-text= "Screenshot of MRTK configuration window." lightbox="../../media/mrtk-configuration-window.png":::
+    :::image type="content" source="../../media/mrtk-configuration-window.png" alt-text= "Screenshot of MRTK MS HRTF configuration." lightbox="../../media/mrtk-configuration-window.png":::
 
 1. Select **Next**, and then select **Done** to complete project configuration.
 
