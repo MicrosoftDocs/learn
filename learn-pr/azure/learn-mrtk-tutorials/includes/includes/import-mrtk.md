@@ -5,11 +5,11 @@
     :::image type="content" source="../../media/mixed-reality-feature-tool.png" alt-text="Screenshot of MixedRealityFeatureTool." lightbox="../../media/mixed-reality-feature-tool.png":::
 
 1. Select the **ellipsis** icon next to **Project path** and browse to your project folder; for example, _D:\MixedRealityLearning\MRTK Tutorials_, and then select **Open**.
- 
-    The Mixed Reality Feature Tool performs validation to ensure that it has been directed to a Unity project folder. The folder must contain Assets, Packages and Project Settings folders.
-
+     
     > [!NOTE]
-    > When browsing for the Unity project folder, you must provide a value for the file name in order to select the folder. A backslash '\_' as the file name is not a valid selection.
+    > When browsing for the Unity project folder, by default, the dialog contains a backslash '\_' for the file name. You must provide a value in this field in order to select the folder.
+
+    The **Mixed Reality Feature Tool** performs validation to ensure that it has been directed to a Unity project folder. The folder must contain Assets, Packages, and Project Settings folders. 
 
     :::image type="content" source="../../media/path.png" alt-text="Screenshot of Adding Unity Path for MixedRealityFeatureTool." lightbox="../../media/path.png":::
   
@@ -79,15 +79,16 @@
 
     :::image type="content" source="../../media/mrtk-project-configurator-2.png" alt-text="Screenshot of MRTK Project Configurator 2." lightbox="../../media/mrtk-project-configurator-2.png":::
 
-1. When Unity restarts, from the Unity menu, open **MRTK Project Configurator** and select **Next** and **Done** to complete the configuration for OpenXR.
+1. When Unity restarts, from the Unity menu, open **MRTK Project Configurator**, and then select **Next** and **Done** to complete the configuration for OpenXR.
 
-## Configure additional project settings
+## Configure project settings for OpenXR
+
 
 1. In the Unity menu, select **Edit** > **Project Settings...** to open **Project Settings**.
 
 1. In **Project Settings**, select **Player** > **Publishing Settings**, and then in the **Package name** field, enter a suitable name; for example, _MRTKTutorials-GettingStarted_:
 
-    :::image type="content" source="../../media/package-name-configured.png" alt-text="Screenshot of Unity Publishing Settings. Package name configured." lightbox="../../media/package-name-configured.png":::
+    :::image type="content" source="../../media/package-name-configured.png" alt-text="Screenshot of Unity Publishing Settings with package name configured." lightbox="../../media/package-name-configured.png":::
 
     > [!NOTE]
     > 'Package name' is the unique identifier for the app. You should change this identifier before deploying the app to avoid overwriting previously installed apps.
@@ -97,7 +98,9 @@
 
 ## [Unity 2019/2020 + windows xr plugin](#tab/winxr)
 
-1. Once **MixedRealityFeatureTool** is opened, select **Settings**, and in the **Feature** tab, enable **Show preview releases**. and then select  **OK** to save the settings.
+1. Once **MixedRealityFeatureTool** is opened, select **Settings**, and in the **Feature** tab, enable **Show preview releases**.
+ 
+1. Select **OK** to save the settings.
 
     :::image type="content" source="../../media/mixed-reality-feature-tool-preview.png" alt-text="Screenshot of MixedRealityFeatureTool for preview." lightbox="../../media/mixed-reality-feature-tool-preview.png":::
 
@@ -112,9 +115,9 @@
 1. When you have located your project folder, select **Open**.
 
     > [!NOTE]
-    > By default, the dialog contains a backslash '\_' for the file name. You must provide a value in this field in order to select the folder.
+    > When browsing for the Unity project folder, by default, the dialog contains a backslash '\_' for the file name. You must provide a value in this field in order to select the folder.
 
-    The Mixed Reality Feature Tool performs validation to ensure that it has been directed to a Unity project folder. The folder must contain Assets, Packages and Project Settings folders.
+    The **Mixed Reality Feature Tool** performs validation to ensure that it has been directed to a Unity project folder. The folder must contain Assets, Packages, and Project Settings folders. 
 
 1. In the Mixed Reality Feature Tool, select **Discover Features**. Features are grouped by category. 
  
@@ -128,7 +131,9 @@
 
     :::image type="content" source="../../media/open-mixed-reality.png" alt-text="Screenshot of MixedRealityFeatureTool Open MixedReality." lightbox="../../media/open-mixed-reality.png":::
 
-1. Select **Validate** to validate the selected package. The system should display **No validation issues were detected**. Select **OK** to close the dialog box, and then select **Import**.
+1. Select **Validate** to validate the selected package. The system should display **No validation issues were detected**. 
+ 
+1. Select **OK** to close the dialog box, and then select **Import**.
 
     :::image type="content" source="../../media/select-required-package-validate.png" alt-text="Screenshot of MixedRealityFeatureTool Select required package." lightbox="../../media/select-required-package-validate.png":::
 
@@ -138,7 +143,7 @@
 
 ## Configure the Unity project
 
-1. When the package has been imported,  **MRTK Project Configurator** appears. If it doesn't, you can manually open it from **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**.
+1. When the package has been imported, **MRTK Project Configurator** appears. If it doesn't, you can manually open it from **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**.
 
     :::image type="content" source="../../media/mrtk-configurator-tool.png" alt-text="Screenshot of opening MRTK configurator tool." lightbox="../../media/mrtk-configurator-tool.png":::
 
@@ -159,7 +164,7 @@
 
 1. When Unity has imported the Windows Mixed Reality SDK, **MRTK Project Configurator** should appear again. If it doesn't, use the Unity menu to open it.
 
-1. In **MRTK Project Configurator**, select **Next**, and then in **Audio spatializer** dropdown, select **MS HRTF Spatializer**.
+1. In **MRTK Project Configurator**, select **Next**, and then in **Audio spatializer** dropdown list, select **MS HRTF Spatializer**.
     
  1. Select  **Apply**.
 
@@ -167,17 +172,17 @@
 
 1. In **MRTK Project Configurator**, select **Next**, and then select **Done** to complete the configuration for XRSDK.
 
-## Configure additional project settings
+## Configure project settings for XR SDK
 
 1. In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
 
-1. In the Project Settings window, select **XR Plug-in Management** > **Windows Mixed Reality** > **Runtime Settings**, and then in the **Depth Buffer Format** dropdown, select **16-bit depth**:
+1. In the Project Settings window, select **XR Plug-in Management** > **Windows Mixed Reality** > **Runtime Settings**, and then in the **Depth Buffer Format** dropdown list, select **16-bit depth**:
 
     :::image type="content" source="../../media/enable-16-depth.png" alt-text= "Screenshot of Unity Enable 16 Depth." lightbox="../../media/enable-16-depth.png":::
 
 1. In the Project Settings window, select **Player** > **Publishing Settings**, and then, in the **Package name** field, enter a suitable name, for example, _MRTKTutorials-GettingStarted_.
 
-    :::image type="content" source="../../media/package-name-configured.png" alt-text= "Screenshot of Unity Publishing Settings. Package name configured." lightbox="../../media/package-name-configured.png":::
+    :::image type="content" source="../../media/package-name-configured.png" alt-text= "Screenshot of Unity Publishing Settings with Package name configured." lightbox="../../media/package-name-configured.png":::
 
 ## [Legacy wsa](#tab/wsa)
 
@@ -194,9 +199,11 @@
     :::image type="content" source="../../media/path.png" alt-text= "Screenshot of Adding Unity Path for MixedRealityFeatureTool." lightbox="../../media/path.png":::
 
 1. Select **Open**. 
-
+  
     > [!NOTE]
-    > By default, the search dialog contains a backslash '\_' as the file name. You must provide a value for the file name to enable the folder to be selected.
+    > When browsing for the Unity project folder, by default, the dialog contains a backslash '\_' for the file name. You must provide a value in this field in order to select the folder.
+
+    The **Mixed Reality Feature Tool** performs validation to ensure that it has been directed to a Unity project folder. The folder must contain Assets, Packages, and Project Settings folders. 
 
 1. In the Mixed Reality Feature Tool, select **Discover Features**. Features are grouped by category.
     
@@ -204,7 +211,7 @@
 
     :::image type="content" source="../../media/discover-feature.png" alt-text= "Screenshot of MixedRealityFeatureTool Discover Features." lightbox="../../media/discover-feature.png":::
 
-1. Ensure **Mixed Reality Toolkit Foundation** is checked, and in the dropdown field, select **MRTK 2.7.0**.
+1. Ensure **Mixed Reality Toolkit Foundation** is checked, and in the dropdown list, select **MRTK 2.7.0**.
  
 1. Select **Get features** to download the selected packages.
 
@@ -224,7 +231,7 @@
 
 1. After Unity has finished importing the package, **MRTK Project Configurator** should appear. If it doesn't, you can manually open it by going to **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**:
 
-    :::image type="content" source="../../media/configure-unity-project-menu-path-1.png" alt-text= "Screenshot of Unity Configure Unity Project menu path 1." lightbox="../../media/configure-unity-project-menu-path-1.png":::
+    :::image type="content" source="../../media/configure-unity-project-menu-path-1.png" alt-text= "Screenshot of Unity Configure Unity Project menu path." lightbox="../../media/configure-unity-project-menu-path-1.png":::
 
 1. Select **Legacy XR** to enable it and add its required packages to your project.
 
@@ -232,7 +239,7 @@
 
 1. Select **Next** to enable XR pipeline settings.
 
-    :::image type="content" source="../../media/project-menu-path-2.png" alt-text= "Screenshot of Unity Configure Unity Project menu path 2." lightbox="../../media/project-menu-path-2.png":::
+    :::image type="content" source="../../media/project-menu-path-2.png" alt-text= "Screenshot of Unity Configure Unity Project menu path." lightbox="../../media/project-menu-path-2.png":::
 
 1. In **MRTK Project Configurator**, ensure all options are checked.
  
@@ -242,14 +249,14 @@
 
 1. Select **Next**, and then select **Done** to complete project configuration.
 
-## Configure additional project settings
+## Configure project settings for XR
 
 1. In the Unity menu, select **Edit** > **Project Settings...** to open Project Settings.
 
-1. In **Project Settings**, select **Player** > **XR Settings**, and then in the **Depth Format** dropdown, select **16-bit depth**.
+1. In **Project Settings**, select **Player** > **XR Settings**, and then in the **Depth Format** dropdown list, select **16-bit depth**.
 
     :::image type="content" source="../../media/unity-enable-16-depth.png" alt-text= "Screenshot of Unity Enable 16 Depth." lightbox="../../media/unity-enable-16-depth.png":::
 
 1. In **Project Settings**, select **Player** > **Publishing Settings**, then in the **Package name** field, enter a suitable name; for example, _MRTKTutorials-GettingStarted_:
 
-    :::image type="content" source="../../media/package-name-configured.png" alt-text= "Screenshot of Unity Publishing Settings. Package name configured." lightbox="../../media/package-name-configured.png":::
+    :::image type="content" source="../../media/package-name-configured.png" alt-text= "Screenshot of Unity Publishing Settings with Package name configured." lightbox="../../media/package-name-configured.png":::
