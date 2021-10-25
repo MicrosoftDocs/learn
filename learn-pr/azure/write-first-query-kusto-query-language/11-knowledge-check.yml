@@ -3,8 +3,8 @@ uid: learn.write-first-query-kusto-query-language.knowledge-check
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
   unitType: knowledge_check
-  title: "TODO" # user input: module title for browser tab and search results
-  description: "TODO" # user input: a description for site search and SEO
+  title: Check your knowledge
+  description: Review what you've learned
   ms.date: 10/25/2021
   author: YaelSchuster
   ms.author: yaschust

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.write-first-query-kusto-query-language.exercise-build-queries-multiple-operators
-title: exercise-build-queries-multiple-operators 
+title: Exercise - Build queries using multiple operators 
 metadata:
-  unitType: {{patternType}} 
-  title: "TODO" # user input: module title for browser tab and search results
-  description: "TODO" # user input: a description for site search and SEO
+  unitType: exercise 
+  title: Exercise - Build queries using multiple operators 
+  description: Exercise - Build queries using multiple operators 
   ms.date: 10/25/2021 
   author: YaelSchuster
   ms.author: yaschust

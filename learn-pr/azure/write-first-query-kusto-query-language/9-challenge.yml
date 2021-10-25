@@ -2,13 +2,13 @@
 uid: learn.write-first-query-kusto-query-language.challenge
 title: Challenge
 metadata:
-  unitType: {{patternType}} 
-  title: "TODO" # user input: module title for browser tab and search results
-  description: "TODO" # user input: a description for site search and SEO
+  unitType: exercise
+  title: Challenge
+  description: Use what you just learned about Kusto Query Language to write a query that answers the challenge question. 
   ms.date: 10/25/2021 
   author: YaelSchuster
   ms.author: yaschust
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial 
 durationInMinutes: 1 # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/9-challenge.md)]
