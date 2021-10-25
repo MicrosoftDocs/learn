@@ -1,6 +1,6 @@
 The overall architecture of SAP HANA on Azure (Large Instances) provides an SAP TDI-certified hardware configuration, which is a non-virtualized, bare metal, high-performance server for the SAP HANA database. It also provides the ability and flexibility of Azure to scale resources for the SAP application layer to meet your needs.
 
-:::image type="content" source="../media/architectural-overview-hli-b3f3e226.png" alt-text="Architectural overview of SAP HANA on Azure (Large Instances)":::
+:::image type="content" source="../media/hli-architectural-overview-373f9bd5.png" alt-text="Architectural overview of SAP HANA on Azure (Large Instances)":::
 
 
 SAP HANA on Azure (Large Instances) represents an Azure-specific example of 3-tier architecture, with the SAP application layer hosted on Azure VMs and the database layer residing on SAP TDI-configured hardware located in a Microsoft-hosted Large Instance stamp in the same Azure region.
@@ -31,6 +31,4 @@ From the networking standpoint, it's possible to access a HANA Large Instance un
 
 Just as Azure VMs, SAP HANA on Azure (Large Instances) are offered in multiple Azure regions. This facilitates disaster recovery capabilities that customers can choose to implement. Different Large Instance stamps within one geo-political region are connected to each other. For example, HANA Large Instance stamps in US West and US East are connected through a dedicated network link for disaster recovery replication.
 
-Just as you can choose between different VM types with Azure Virtual Machines, you can choose from different SKUs of HANA Large Instance that are tailored for different workload types of SAP HANA. SAP applies memory-to-processor-socket ratios for varying workloads based on the Intel processor generations.
-
-:::image type="content" source="../media/sap-hana-architecture-using-azure-large-instances-1ab84882.png" alt-text="SAP HANA architecture using Azure Large Instances":::
+Just as you can choose between different VM types with Azure Virtual Machines, you can choose from different SKUs of HANA Large Instance that are tailored for different workload types of SAP HANA. SAP applies memory-to-processor-socket ratios for varying workloads based on the Intel processor generations. :::image type="content" source="../media/sap-hana-architecture-azure-large-instances-2c79e078.png" alt-text="SAP HANA architecture using Azure Large Instances":::
