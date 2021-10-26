@@ -1,6 +1,6 @@
 ## Classical migration
 
-With the Classical Migration option, SAP’s Software Provisioning Manager (SWPM) is used as the Software Logistics (SL) tool and is exclusively for database migrations. SWPM exports data from a source system and imports it to a target system where the target can be any DB (SQL server, Oracle, DB2, etc). This method in particular uses a file-based approach.
+With the Classical Migration option, SAP’s Software Provisioning Manager (SWPM) is used as the Software Logistics (SL) tool and is exclusively for database migrations. SWPM exports data from a source system and imports it to a target system where the target can be any DB (SQL server, Oracle, DB2, etc.). This method in particular uses a file-based approach.
 
 ## SAP database migration option (DMO)
 
