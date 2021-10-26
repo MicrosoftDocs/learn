@@ -1,6 +1,6 @@
-Now that we can run the DeepStream reference applications, we now look at how to modify these samples for different behavior.
+Now that you've run a DeepStream sample application, you can modify the samples to get different behavior.
 
-1. Let's start by viewing the structure of the sample configuration in a text editor.  We'll make a copy of the sample configuration used in the previous section and examine areas to modify using the commands below:
+1. Let's start by viewing the structure of the sample configuration in a text editor. We'll make a copy of the sample configuration used in the previous section and look at some settings we can change. Run these commands:
 
     ```
     cd /opt/nvidia/deepstream/deepstream-6.0/samples/configs/deepstream-app
@@ -10,17 +10,17 @@ Now that we can run the DeepStream reference applications, we now look at how to
 
     >[!NOTE]
     >
-    > Here are some tips for using **vi** when editing the `source4_1080p_dec_infer-resnet_tracker_sgie_tiled_display_int8_modified.txt` file:
+    > Here are some tips for using vi when you edit the *source4_1080p_dec_infer-resnet_tracker_sgie_tiled_display_int8_modified.txt* file:
     >
-    >- Press the `i` key to put the editor into Insert mode, then you will be able to make changes.
-    >- Press `Esc` to go stop Insert mode and return to Normal mode.
-    >- To Save and Quit, type `:x`, and press `Enter`.
-    >- Save the file, type `:w`, and press `Enter`.
-    >- To quit vi, type `:quit` and press `Enter`.
+    >- Select the **i** key to put the editor into Insert mode. Then you'll be able to make changes.
+    >- Select **Esc** to go exit Insert mode and return to Normal mode.
+    >- To save and quit, enter **:x**, and then select **Enter**.
+    >- Save the file, enter **:w**, and then select **Enter**.
+    >- To close vi, enter **:quit**, and then select **Enter**.
 
-2. Take note of the various configuration sections (denoted with brackets '[]', i.e. `[application]`, `[tiled-display]`, `[source0`], `[sink0]` etc.) and how they contribute to the overall application.  These sections are documented in detail within the [Configuration Groups section of the official DeepStream SDK Documentation](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_ref_app_deepstream.html#configuration-groups).
+2. Note the various configuration sections and how they contribute to the overall application. These sections are denoted with brackets (`[]`). For example, `[application]`, `[tiled-display]`, `[source0`], and `[sink0]`. These sections are explained in detail in the [Configuration Groups section of the DeepStream SDK documentation](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_ref_app_deepstream.html#configuration-groups).
 
-    For example, if you wanted to change the input from using a local video file to an RTSP video stream, you could modify `[tiled-display]` and `[source0]`:
+    For example, to change the input to use an RTSP video stream instead of a local video file, change `[tiled-display]` and `[source0]`:
 
     ```
     [tiled-display]
@@ -50,8 +50,7 @@ Now that we can run the DeepStream reference applications, we now look at how to
     # (2): memtype_unified  - Memory type Unified
     cudadec-memtype=0
     ```
-
-    Then we could make the following changes (Note the changes to the `rows`, `columns`, `type`, `uri`, and `num-sources fields`):
+   Then make the following changes. (Note the changes to the `rows`, `columns`, `type`, `uri`, and `num-sources` fields.)
 
     ```
     [tiled-display]
@@ -83,7 +82,7 @@ Now that we can run the DeepStream reference applications, we now look at how to
     
     ```
 
-3. Run the modified configuration with:
+3. Run the changed configuration by using these commands:
 
     ```Bash
     cd /opt/nvidia/deepstream/deepstream-6.0/samples/configs/deepstream-app
@@ -92,8 +91,8 @@ Now that we can run the DeepStream reference applications, we now look at how to
 
 ### Try this
 
-Take a look at the various sample configurations included in the DeepStream SDK.  How might you modify these samples to create a smart home security system?  Assume that you have multiple RTSP cameras that serve feeds over unique RTSP endpoints.  Could you create a DeepStream application that uses those live video streams as input and apply inference to detect people and vehicles?
+Look at the various sample configurations included in the DeepStream SDK. How might you change these samples to create a smart home security system? Assume you have multiple RTSP cameras that serve feeds over unique RTSP endpoints. Could you create a DeepStream application that uses those live video streams as input and apply inference to detect people and vehicles?
 
 ### Next steps
 
-To finish this module, and earn your rewards, complete a final knowledge check.
+To finish this module and earn your trophy, complete a final knowledge check.
