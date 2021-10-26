@@ -18,7 +18,7 @@ summary: |
 
   * Build a workflow that deploys your Bicep files.
   * Create a service principal that can securely connect your workflow to Azure.
-  * Ensure your Bicep code quality by validating and testing it within your workflow.=
+  * Ensure your Bicep code quality by validating and testing it within your workflow.
 
   To learn about Bicep, we recommend you take these two learning paths:
 
