@@ -1,36 +1,41 @@
-The development team in the introductory scenario has already established that their game will include rich visuals and audio as well as a puzzle-based theme. The game will ship on PC, console, and mobile devices; this means that players will also be required to use physical input devices to play.
+The team in the introductory scenario has already established that their game will include rich visuals and audio, and puzzle-based challenges. The game will ship on PC, console, and mobile devices; this means that players will also be required to use physical input devices to play.
 
 With this preliminary information, the team can begin to think about how:
-- The game presents important information to players
-- The portrayal of this information can impact a player’s ability to use this information
+
+- Their game presents important information to players
+- Players may experience barriers to accessing this information when it is not presented in an accessible way
 
 Additionally, the team can consider the cognitive and physical demands that their game poses as players attempt to:
 
-In this unit, we’ll explore core game elements and methods of information portrayal that you should consider in the preliminary stages of game development. An awareness of these common elements is an important first step in determining where players are being unintentionally excluded.
+- Problem-solve through puzzle-based challenges
+- Operate input devices over the course of their play session with the speed and accuracy needed to be successful
 
-NOTE: While vision, hearing, cognitive, and mobility-based elements are addressed in this introductory module, it’s important to note that there are many other game elements that impact accessibility. This includes elements related to:
-- Speech and communication
-- Sensory demands
-- Mental health and more
+In this unit, you'll learn about common game elements that can pose unintentional barriers to access for players with disabilities. An awareness of these common elements is an important first step in determining where players can be unintentionally excluded during the preliminary stages of development.
 
-Additional information about these player experiences can be found in the summary and resources unit of this module.
+>[!NOTE] While vision, hearing, cognitive, and mobility-based elements are addressed in this introductory module, it’s important to note that there are many other game elements that impact accessibility. This includes elements related to:
+>
+> - Speech and communication
+> - Sensory demands
+> - Mental health and more
+>
+>Additional information about these player experiences can be found in the summary and resources unit of this module.
 
 ## Identifying visual elements
 
-Gaming experiences are often reliant on information and cues portrayed visually. However, players visual disabilities can be excluded from play when information is represented through visual means alone. Let’s break down the common ways that games require vision to inform play.
+Many gaming experiences today use visual cues or indicators to guide player success. For example, consider the following scenario.
 
-Consider the following scenario:
+A player sees enemies approaching from the top left corner of their screen. Based on this visual information, they know to take the following measures:
 
-A player sees enemies approaching from the top left corner of their screen. Based on this visual information, they make the following decisions:
 - They check their current health meter status. They see their health bar is half-full.
 - They check the amount of ammunition they have. Their ammunition count is zero.
-- Based on these three visual elements (incoming enemies, their health bar status, and their ammunition count), they decide to flee in the opposite direction of the incoming enemies. They know they will not be successful in battle with low health and zero ammunition.
+
+Based on this information (the presence of incoming enemies, their health bar status, their ammunition count, and the location of the enemies), they decide to flee in the opposite direction and avoid battle. They've decided that their chance of success in battle under these circumstances is low.
 
 The visual information this player perceived on-screen prompted a set of actions and decisions that affected the outcome of their success in gameplay. If the player did not have access to all of this visual information, they may have experienced negative gameplay outcomes.
 
 Identifying these elements is an important first step in accessible game development. When these elements are identified early in development, initiatives can be taken to ensure that they provide is also represented through non-visual means.
 
-## Identifying hearing-based elements
+## Identifying audio elements
 
 Like visual elements, gaming experiences also use audio-based elements to portray information needed to navigate the experience. Think about the importance of audio-based information in the following scenario.
 
@@ -44,7 +49,7 @@ In contrast, audio outputs that are too loud or intense may also pose unintentio
 
 It is important to identify areas where audio plays a key role in gameplay. This is an important first step to ensure that the following players can customize their experience to meet their needs and preferences.
 
-## Identifying cognition-based elements
+## Identifying cognitive elements
 
 After players receive information provided by the game, they must then decide how they want to use this information to proceed. These decisions commonly require players to engage in cognitive processes like:
 
