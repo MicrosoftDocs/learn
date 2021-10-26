@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-app-services
 metadata:
   title: Configure Azure App Services
   description: "You will learn how to configure and monitor the Azure App Service including deployment slots."
-  ms.date: 10/20/2021
+  ms.date: 10/26/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
