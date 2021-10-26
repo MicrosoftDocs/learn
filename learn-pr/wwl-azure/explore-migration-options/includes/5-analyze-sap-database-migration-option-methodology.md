@@ -45,7 +45,7 @@ The following table provides an overview of the main DMO phases.
     Extraction
   :::column-end:::
   :::column:::
-    Phase that is part of the actual SUM process and where the tool checks all available software downloads for both source and target systems. The tool then unpacks SAR files which are part of the download directory.
+    Phase that is part of the actual SUM process and where the tool checks all available software downloads for both source and target systems. The tool then unpacks SAR files, which are part of the download directory.
   :::column-end:::
 :::row-end:::
 :::row:::
