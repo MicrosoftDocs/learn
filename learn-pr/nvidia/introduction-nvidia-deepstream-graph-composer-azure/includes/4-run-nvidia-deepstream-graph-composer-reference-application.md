@@ -1,6 +1,6 @@
 Let's take a closer look at the IVA application workflow that's enabled by the DeepStream Graph Composer. We mentioned previously that NVIDIA's Cloud Repository or another external registry can provide drag-and-drop components for use within the DeepStream Composer application.
 
-By using these extensions, you can add features and functionality to the Composer application. Ultimately, you can use this tool to package and distribute IVA workloads by using the bundled `container-builder`. The following diagram shows this process.
+By using these extensions, you can add features and functionality to the Composer application. Ultimately, you can use this tool to package and distribute IVA workloads by using the bundled *container-builder*. The following diagram shows this process.
 
 ![Diagram that shows the NVIDIA DeepStream workflow revisited.](../media/composer-workflow.png)
 
@@ -34,7 +34,7 @@ By using these extensions, you can add features and functionality to the Compose
     registry extn list
     ```
 
-    You might notice that many of these extensions begin with prefixes that map to the NVIDIA optimized GStreamer plug-ins included in the DeepStream SDK. For example, the `NvDsMuxDemuxExt` extension provides a visual component for interacting with [`Gst-nvstreamdemux`](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_plugin_gst-nvstreamdemux.html).
+    You might notice that many of these extensions begin with prefixes that map to the NVIDIA optimized GStreamer plug-ins included in the DeepStream SDK. For example, the *NvDsMuxDemuxExt* extension provides a visual component for interacting with [*Gst-nvstreamdemux*](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_plugin_gst-nvstreamdemux.html).
 
 1. Now open the Composer application with this command:
 
@@ -44,7 +44,7 @@ By using these extensions, you can add features and functionality to the Compose
 
     :::image type="content" source="../media/composer-launch.png" alt-text="Screenshot that shows NVIDIA DeepStream Graph Composer opening." lightbox="../media/composer-launch.png":::
 
-    Notice that a list of components populates on the right side of the application user interface. The components are grouped by extension name. If a list doesn't appear, you might need to resync to the `ncg-public` repo by using the steps done earlier. Select the extension name to view the components it provides, as shown here:
+    Notice that a list of components populates on the right side of the application user interface. The components are grouped by extension name. If a list doesn't appear, you might need to resync to the *ncg-public* repo by using the steps done earlier. Select the extension name to view the components it provides, as shown here:
 
     :::image type="content" source="../media/composer-components.png" alt-text="Screenshot that shows NVIDIA DeepStream Graph Composer components." lightbox="../media/composer-components.png":::
 
@@ -61,15 +61,15 @@ By using these extensions, you can add features and functionality to the Compose
     /opt/nvidia/deepstream/deepstream/reference_graphs/
     ```
 
-    1. In the Composer application, select **File** > **Open Graph** and go to the `/opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test1` path. Select the `deepstream-test1.yaml` file. Then select **Okay**.
+    1. In the Composer application, select **File** > **Open Graph** and go to the `/opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test1` path. Select the *deepstream-test1.yaml* file. Then select **Okay**.
 
         :::image type="content" source="../media/composer-open-test1.png" alt-text="NVIDIA DeepStream Graph Composer opening Test1 application." lightbox="../media/composer-open-test1.png":::
 
-    1. Select the `NvDsSingleSrcInput` component and notice the **Details** pane that opens on the right side of the application. Scroll down in the **Details** pane and notice the `uri` property where we set the video file that will be used as input in this IVA pipeline.
+    1. Select the *NvDsSingleSrcInput* component and notice the **Details** pane that opens on the right side of the application. Scroll down in the **Details** pane and notice the **uri** property where we set the video file that will be used as input in this IVA pipeline.
 
         :::image type="content" source="../media/composer-test1-properties.png" alt-text="Screenshot that shows NVIDIA DeepStream Graph Composer Test1 application properties." lightbox="../media/composer-test1-properties.png":::
 
-    1. If you want to modify the `uri` property to use an RTSP stream, set `type` equal to **4** and provide an RTSP path, `rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov`. This action has the same effect as the DeepStream [source0] configuration group entry shown here:
+    1. If you want to modify the **uri** property to use an RTSP stream, set **type** equal to **4** and provide an RTSP path, `rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov`. This action has the same effect as the DeepStream [source0] configuration group entry shown here:
 
         ```
         [source0]
@@ -104,4 +104,4 @@ By using these extensions, you can add features and functionality to the Compose
      ![Screenshot that shows NVIDIA DeepStream Graph Composer Test1 running.](../media/composer-execute-graph.png)
 
     >[!NOTE]
-    >If you intend to use a virtual machine to satisfy the host machine requirements, you might encounter issues when you attempt to run a DeepStream application that uses an EGL sink for visualized output. To work around this limitation, change the `type` of your `uri` source to **1** for **FakeSink**. Be aware that a FakeSink won't provide any visual output. It allows your workload to execute but without an associated on-screen display of processed results.
+    >If you intend to use a virtual machine to satisfy the host machine requirements, you might encounter issues when you attempt to run a DeepStream application that uses an EGL sink for visualized output. To work around this limitation, change the **type** of your **uri** source to **1** for **FakeSink**. Be aware that a FakeSink won't provide any visual output. It allows your workload to execute but without an associated on-screen display of processed results.
