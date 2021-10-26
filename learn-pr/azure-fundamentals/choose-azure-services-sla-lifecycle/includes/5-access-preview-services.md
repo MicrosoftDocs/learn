@@ -2,7 +2,7 @@ Now that the Tailwind Traders company has its applications up and running in Azu
 
 For Tailwind Traders, migration from the datacenter to Azure is more about operational efficiency. The research and development team is looking into new, cloud-based features that will keep them ahead of the competition.
 
-Tailwind Traders is experimenting with a drone delivery system for rural customers. The company needs real-time storm tracking in the drone guidance system, but the feature isn't ready yet. An AI Storm Analyzer service has recently become available in the public preview phase. Tailwind Traders R&D team has decided to incorporate the preview service into the early stages of application testing.
+Tailwind Traders is in the development stages of creating a drone delivery system for rural customers. The company needs real-time storm tracking in the drone guidance system, but the feature isn't available yet. An AI Storm Analyzer service has recently been released in the public preview phase. Tailwind Traders R&D team has decided to incorporate the preview service into the early stages of application testing.
 
 > [!NOTE]
 > AI Storm Analyzer is a fictitious Azure service, introduced here for illustrative purposes only.
@@ -40,7 +40,7 @@ Here's how to see what preview services are available. You can follow along if y
 
 Some preview features relate to a specific area of an existing Azure service. For example, a compute or database service that you use daily might provide enhanced functionality. These preview features are accessible when you deploy, configure, and manage the service.
 
-Although you can use an Azure preview feature in production, make sure you're aware of any limitations regarding its use before you deploy it to production.
+Although you can use an Azure preview feature in production, make sure you're aware of any limitations before you deploy it to a production environment.
 
 ## How can I access preview features for the Azure portal?
 
@@ -48,7 +48,7 @@ You can access preview features that are specific to the Azure portal from [Micr
 
 Typical portal preview features provide performance, navigation, and accessibility improvements to the Azure portal interface.
 
-When you are using the preview version of the Azure portal, **Microsoft Azure (Preview)** displays in the page header to remind you what version of the Azure portal you're using. Public preview features that are optionally available are also labeled with *(preview)* on Azure pages.
+When you're using the preview version of the Azure portal, **Microsoft Azure (Preview)** displays in the page header to remind you what version of the Azure portal you're using. Public preview features that are optionally available are also labeled with *(preview)* on Azure pages.
 
 :::image type="content" source="../media/5-azure-portal-preview.png" alt-text="Screenshot of Azure page header showing the global element Microsoft Azure (Preview) highlighted.":::
 
