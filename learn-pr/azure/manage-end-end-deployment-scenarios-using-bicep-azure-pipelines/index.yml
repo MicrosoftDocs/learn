@@ -14,10 +14,10 @@ summary: |
   Create a unified pipeline to deploy your entire environment. You'll add a build stage to your pipeline, and use pipeline artifacts and Bicep outputs to publish applications, databases, and blobs.
 abstract: |
   After completing this module, you'll be able to:
-    - Deploy Azure infrastructure, applications, database scripts, and storage blobs from a single pipeline.
-    - Use pipeline scripts and pipeline tasks to perform deployment steps.
-    - Use pipeline artifacts to publish compiled files for your deployment pipeline stages to use.
-    - Pass data from your Bicep files to other deployment steps by using outputs.
+    - Deploy Azure infrastructure, applications, database scripts, and storage blobs from a single pipeline
+    - Use pipeline scripts and pipeline tasks to perform deployment steps
+    - Use pipeline artifacts to publish compiled files for your deployment pipeline stages to use
+    - Pass data from your Bicep files to other deployment steps by using outputs
 prerequisites: |
   You should be familiar with using:
 
