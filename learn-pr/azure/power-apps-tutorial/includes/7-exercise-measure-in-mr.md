@@ -124,7 +124,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 1. Click on **Details_carpets** page, Add a **Label** and rename it as **Area_carpets**.
 
-    :::image type="content" source="../media/add-area-label.png" alt-text="Screenshot of Area calculation" lightbox="../media/add-area-label.png":::
+    :::image type="content" source="../media/add-area-label.png" alt-text="Screenshot of adding area label" lightbox="../media/add-area-label.png":::
 
 2. Add another empty **Label** beside the **Area_carpets** label and configure the **Text** property of the empty label following way to display the area calculated:
 
@@ -278,7 +278,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 4. Expand the **Media** dropdown and select **Image** to add an image component to the **End page**.
 
-    :::image type="content" source="../media/add-image-order.png" alt-text="Screenshot of show more button" lightbox="../media/add-image-order.png":::
+    :::image type="content" source="../media/add-image-order.png" alt-text="Screenshot of adding image component" lightbox="../media/add-image-order.png":::
 
 5. Position the image as shown in the figure. Select the **logo** file to display.
 

@@ -292,7 +292,7 @@ The details page includes all the details and information concerning the selecte
 
 2. Make sure **Attachments** is selected and press **Apply** at the top. 
     
-    :::image type="content" source="../media/apply-attachments.png" alt-text="Screenshot to add attachments" lightbox="../media/apply-attachments.png":::
+    :::image type="content" source="../media/apply-attachments.png" alt-text="Screenshot to apply attachments" lightbox="../media/apply-attachments.png":::
 
 3. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file). Follow the same procedure for all the items on the list.
 
@@ -326,7 +326,7 @@ Another unique property provided by the **View in MR** component is **Object sca
 
 * Set the  **Object width**, **Object height**, and **Object depth** along with the **Unit of measurement** in the **Properties** pane as shown in the figure.
 
-    :::image type="content" source="../media/object-scaling.png" alt-text="Screenshot to add source for view in MR" lightbox="../media/object-scaling.png":::
+    :::image type="content" source="../media/object-scaling.png" alt-text="Screenshot to scale object for view in MR" lightbox="../media/object-scaling.png":::
 
 >[!Note]
 > The values passed to the **Object width**, **Object height**, and **Object depth** are taken in the units specified in **Unit of measurement**. Choose an appropriate measure unit from the dropdown and later enter the values.
