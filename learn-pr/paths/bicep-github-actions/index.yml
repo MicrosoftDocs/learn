@@ -65,5 +65,6 @@ products:
 modules:
 - learn.azure.build-first-bicep-deployment-workflow-using-github-actions
 - learn.azure.authenticate-azure-deployment-pipeline-service-principals
+- learn.azure.test-bicep-code-using-github-actions
 trophy:
   uid: learn.bicep-pipelines-github-actions.trophy
