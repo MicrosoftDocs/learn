@@ -48,7 +48,7 @@ You now have a copy of the template repository in your own account. You will now
 
 1. Select **Code** and select the copy icon.
 
-   :::image type="content" source="../media/4-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface showing the new repository, with the repository URL copy button highlighted.":::
+   :::image type="content" source="../media/4-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface showing the new repository, with the repository U R L copy button highlighted.":::
 
 1. Open Visual Studio Code. 
 
