@@ -282,7 +282,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 5. Position the image as shown in the figure. Select the **logo** file to display.
 
-    :::image type="content" source="../media/add-logo-order.png" alt-text="Screenshot of show more button" lightbox="../media/add-logo-order.png":::
+    :::image type="content" source="../media/add-logo-order.png" alt-text="Screenshot of adding logo file to the image component" lightbox="../media/add-logo-order.png":::
 
 >[!Tip]
 > Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
