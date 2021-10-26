@@ -5,8 +5,6 @@ With this preliminary information, the team can begin to think about how:
 - The portrayal of this information can impact a player’s ability to use this information
 
 Additionally, the team can consider the cognitive and physical demands that their game poses as players attempt to:
-- Solve puzzle-based challenges
-- Activate input devices with the speed, precision, and endurance required for this game
 
 In this unit, we’ll explore core game elements and methods of information portrayal that you should consider in the preliminary stages of game development. An awareness of these common elements is an important first step in determining where players are being unintentionally excluded.
 
