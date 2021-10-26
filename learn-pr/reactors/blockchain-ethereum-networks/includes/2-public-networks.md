@@ -81,7 +81,6 @@ More details:
 - Block time: 15 seconds on average
 - Goerli-specific links:
   - [Faucet](https://faucet.goerli.mudit.blog/?azure-portal=true)
-  - Status dashboard
   - [Explorer](https://goerli.etherscan.io/?azure-portal=true)
   - [GitHub](https://github.com/goerli/testnet/?azure-portal=true)
   - [Website](http://www.goerli.net/?azure-portal=true)
