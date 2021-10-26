@@ -309,7 +309,9 @@ The details page includes all the details and information concerning the selecte
 
 Another unique property provided by the **View in MR** component is **Object scaling**. You can edit the sizes of your 3D models externally by changing the **Object width**, **Object height**, and **Object depth** properties.
 
-* Set the  **Object width**, **Object height**, and **Object depth** along with the **Unit of measurement**.
+* Set the  **Object width**, **Object height**, and **Object depth** along with the **Unit of measurement** in the **Properties** pane as shown in the figure.
+
+    :::image type="content" source="../media/object-scaling.png" alt-text="Screenshot to add source for view in MR" lightbox="../media/object-scaling.png":::
 
 >[!Note]
 > The values passed to the **Object width**, **Object height**, and **Object depth** are taken in the units specified in **Unit of measurement**. Choose an appropriate measure unit from the dropdown and later enter the values.
@@ -322,11 +324,11 @@ It is allowed to take pictures during the **View in MR** session and display the
 
     :::image type="content" source="../media/add-blank-notes-page.png" alt-text="Screenshot of new screens for notes" lightbox="../media/add-blank-notes-page.png":::
 
-2. Design the **Notes_sofas** page by, clicking the **Input** dropdown and selecting **Text input**. Enlarge the **Text input** component to cover half of the screen and rename it as **TextInput_sofas**.
+2. Design the **Notes_sofas** page by, clicking the **Input** dropdown and selecting **Text input**. Rename it as **TextInput_sofas**.
 
     :::image type="content" source="../media/add-text-input.png" alt-text="Screenshot of adding Text input" lightbox="../media/add-text-input.png":::
 
-3. Click the dropdown at the right side of the studio and select **Gallery**. Choose **Horizontal** type of gallery. You will be storing photos taken during the **View in MR** session in this gallery.
+3. Select **Gallery** > **Horizontal** to include a horizontal type of gallery. You will be storing photos taken during the **View in MR** session in this gallery. Rename it as **View_sofas**
 
     :::image type="content" source="../media/horizontal-gallery.png" alt-text="Screenshot of adding horizontal gallery" lightbox="../media/horizontal-gallery.png":::
 
@@ -337,14 +339,14 @@ It is allowed to take pictures during the **View in MR** session and display the
 5. Click the gallery added and configure the **Items** property by adding the following line:
 
     ```Power Apps
-    ViewInMR1.Photos
+    ViewInMR.Photos
     ```
 
     :::image type="content" source="../media/configure-items-property.png" alt-text="Screenshot of adding property to gallery" lightbox="../media/configure-items-property.png":::
 
     By doing so, all the pictures taken in the **View in MR** session is stored in this gallery for future references.
 
-6. Let us now insert a label at the top of the screen. To do so, click on the **Label** option. Then, customize the position, color, and text display according to your needs.
+6. Let us now insert a label at the top of the screen. To do so, click on the **Label** option and **Center align** it. Then, customize the position, color, and text display according to your needs. Rename it to **Notes_label**.
 
     :::image type="content" source="../media/insert-label-notes.png" alt-text="Screenshot of inserting label" lightbox="../media/insert-label-notes.png":::
 
@@ -373,3 +375,6 @@ It is allowed to take pictures during the **View in MR** session and display the
     :::image type="content" source="../media/configure_note_icon.png" alt-text="Screenshot of OnSelect for note" lightbox="../media/configure_note_icon.png":::
 
 11. Replicate the same procedure for **Notes_chairs**, **Notes_tables**, **Notes_carpets**, and its respective **Details** page.
+
+>[!Note]
+> For the **Notes_carpets** page, exclude adding the **Gallery control** to store photos taken during the **View in MR** session since we won't be including the **View in MR** feature for the **Carpets** category.
