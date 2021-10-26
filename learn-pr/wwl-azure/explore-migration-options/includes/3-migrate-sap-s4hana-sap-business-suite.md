@@ -10,4 +10,4 @@ The SAP Database Migration Option (DMO) with System Move option of SUM, used as 
 :::image type="content" source="../media/journey-to-azure-for-sap-workloads-0a433e12.jpeg" alt-text="Diagram of the journey to Azure for SAP workloads":::
 
 
-:::image type="content" source="../media/sap-bw-hana-and-bw-4hana-migrations-d71fdf6f.png" alt-text="SAP BW on HANA and BW 4HANA migrations":::
+:::image type="content" source="../media/sap-business-warehouse-hana-and-business-warehouse-4hana-migrations-981ec7de.png" alt-text="SAP BW on HANA and BW 4HANA migrations":::

@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-compare-classic-vs-sap-dmo.md)]
+  [!include[](includes/4-compare-classic-vs-sap-database-move-only.md)]

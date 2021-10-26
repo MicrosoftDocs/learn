@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/7-explore-two-step-migration-lift-shift-followed-dmo.md)]
+  [!include[](includes/7-explore-two-step-migration-lift-shift-followed-database-move-only.md)]
