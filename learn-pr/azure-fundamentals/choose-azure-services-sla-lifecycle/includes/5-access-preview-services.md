@@ -21,7 +21,7 @@ After a new Azure service has been validated and tested, it's released to all cu
 
 ## What terms and conditions can I expect?
 
-Each Azure preview defines its own terms and conditions. All [preview-specific terms and conditions are excluded from the serice level agreements and limited warranty](https://azure.microsoft.com/en-us/support/legal/preview-supplemental-terms/).
+Each Azure preview defines its own terms and conditions. All [preview-specific terms and conditions are excluded from the serice level agreements and limited warranty](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 Some previews may not be covered by customer support, and may be subject to reduced or different security, compliance, and privacy commitments. For these reasons, previews are not recommended for business-critical workloads.
 
