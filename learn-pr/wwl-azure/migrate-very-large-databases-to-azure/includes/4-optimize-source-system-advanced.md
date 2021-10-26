@@ -43,4 +43,4 @@ The steps to implement a multiple parallel export are as follows:
 
 The following diagram shows an existing Production DB server log shipping to “clone” databases. Each DB server has one or more Intel R3load servers.
 
-:::image type="content" source="../media/existing-production-db-server-shipping-to-clone-dbs-4a1ab9bb.png" alt-text="Diagram showing existing production DB server log shipping to clone databases. Each DB server has one or more Intel R3load servers.":::
+:::image type="content" source="../media/existing-production-database-server-shipping-to-clone-ef217099.png" alt-text="Diagram showing existing production DB server log shipping to clone databases. Each DB server has one or more Intel R3load servers.":::

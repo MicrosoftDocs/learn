@@ -28,4 +28,4 @@ A block diagram of a typical VLDB OS/DB migration and move to Azure is illustrat
  -  Import to SQL Server or Oracle is structured similarly to the export, using four import servers. These servers would be separate dedicated R3load servers with Accelerated Networking. It is recommended not to use the SAP application servers for this task.
  -  VLDB databases would typically use E64v3, m64, or m128 VMs with Premium Storage. The transaction log can be placed on the local SSD disk to speed up transaction log writes and remove the transaction log IOPS and IO bandwidth from the VM quota. After the migration, the transaction log should be placed onto a persisted disk.
 
-:::image type="content" source="../media/block-typical-vldb-os-db-migration-5511b38f.png" alt-text="Block diagram of a typical VLDB OS DB migration and move to Azure":::
+:::image type="content" source="../media/block-typical-very-large-database-os-database-migration-fd67f4cc.png" alt-text="Block diagram of a typical VLDB OS DB migration and move to Azure":::
