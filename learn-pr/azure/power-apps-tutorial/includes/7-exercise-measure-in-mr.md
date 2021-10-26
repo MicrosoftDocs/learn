@@ -117,6 +117,9 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 >[!Note]
 > Spatial Filtering is not included for **Carpets** page as another feature specific to the product is added. The area measured in **Measure in MR** session will be used to estimate the price of the selected carpet.
 
+>[!Tip]
+> Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
+
 ## Calculate price based on area
 
 1. Click on **Details_carpets** page, Add a **Label** and rename it as **Area_carpets**.
@@ -280,6 +283,9 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 5. Position the image as shown in the figure. Select the **logo** file to display.
 
     :::image type="content" source="../media/add-logo-order.png" alt-text="Screenshot of show more button" lightbox="../media/add-logo-order.png":::
+
+>[!Tip]
+> Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
 
 ## Send emails via Power Apps
 

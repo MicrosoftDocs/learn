@@ -41,7 +41,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 6. All the required data is connected and ready to use in the application. In the upper-right corner of the **Data** pane, close it by selecting the close icon **(X)**.
 
 >[!Tip]
-> Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next, select the **The cloud** option and click **Save**.
+> Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
 
 ## Create the splash screen
 
@@ -123,6 +123,9 @@ To include data to your **Power Apps**, you must connect to the data via the con
     Navigate(Carpets,ScreenTransition.Cover)
     ```
 
+>[!Tip]
+> Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
+
 >[!Note]
 > The default syntax of the **Navigate** function is: **Navigate**(*Screen* [, *Transition* [, *UpdateContextRecord*]])
 >
@@ -178,6 +181,9 @@ Now that we have added the product categories, we will display the list of produ
     :::image type="content" source="../media/configure-back-icon.png" alt-text="Screenshot of configuring OnSelect property " lightbox="../media/configure-back-icon.png":::
 
 8. Follow the same procedure for the **Chairs**, **Tables**, and **Carpets** pages.
+
+>[!Tip]
+> Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
 
 ## Create details page
 
@@ -273,6 +279,9 @@ The details page includes all the details and information concerning the selecte
 
     Likewise, follow the same procedure for **Details_chairs**, **Details_tables**, and **Details_carpets**. Customize the **Navigate** function accordingly.
 
+>[!Tip]
+> Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
+
 ## Insert and connect a 3D object to the View in MR component
 
 **View in MR** is a mixed reality feature provided by Power Apps which enables users to place **3D objects** or **Images** in their real world.
@@ -321,6 +330,9 @@ Another unique property provided by the **View in MR** component is **Object sca
 
 >[!Note]
 > The values passed to the **Object width**, **Object height**, and **Object depth** are taken in the units specified in **Unit of measurement**. Choose an appropriate measure unit from the dropdown and later enter the values.
+
+>[!Tip]
+> Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
 
 ## Create notes page
 
