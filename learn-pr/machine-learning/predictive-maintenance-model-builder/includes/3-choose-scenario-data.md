@@ -90,11 +90,11 @@ Model Builder supports the following environment options:
 
 | Scenario | Local CPU | Local GPU | Azure GPU |
 | --- | --- | --- | --- |
-| Data classification | :heavy_check_mark: | :X: | :X: |
-| Value prediction | :heavy_check_mark: | :X: | :X: |
-| Recommendation | :heavy_check_mark: | :X: | :X: |
+| Data classification | :heavy_check_mark: | :x: | :x: |
+| Value prediction | :heavy_check_mark: | :x: | :x: |
+| Recommendation | :heavy_check_mark: | :x: | :x: |
 | Image classification | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Object detection | :X: | :X: | :heavy_check_mark: |
+| Object detection | :x: | :x: | :heavy_check_mark: |
 
 Depending on your use case, there are various reasons why you might choose a local or Azure environment.
 

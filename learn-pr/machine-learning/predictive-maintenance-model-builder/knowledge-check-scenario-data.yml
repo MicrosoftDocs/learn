@@ -15,17 +15,17 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "What's one thing files with the .mbconfig extension allow you to do?"
+  - content: "What's one thing that files with the *.mbconfig* extension allow you to do?"
     choices:
     - content: "Save your Visual Studio settings."
       isCorrect: false
-      explanation: ".mbconfig files save Model Builder related settings and state, but not Visual Studio."
+      explanation: "*.mbconfig* files save Model Builder related settings and state, but not Visual Studio."
     - content: "Save your Model Builder state."
       isCorrect: true
-      explanation: "Correct! If you close Model Builder at any point, you can open the .mbconfig file and pick up where you left off."
+      explanation: "Correct! If you close Model Builder at any point, you can open the *.mbconfig* file and pick up where you left off."
     - content: "Provide a name for your .NET project you're adding a machine learning model to."
       isCorrect: false
-      explanation: "While the .mbconfig file allows you to provide a name for your model, it doesn't allow you to set the name of the .NET project you're adding a machine learning model to."
+      explanation: "While the *.mbconfig* file allows you to provide a name for your model, it doesn't allow you to set the name of the .NET project you're adding a machine learning model to."
   - content: "What is the value you're trying to predict commonly known as?"
     choices:
     - content: "Label"
@@ -41,10 +41,10 @@ quiz:
     choices:
     - content: "You can't train locally with Model Builder."
       isCorrect: false
-      explanation: "Using Model Builder you can train locally on your PC as well as in Azure depending on the scenario."
+      explanation: "Using Model Builder you can train locally on your PC and in Azure depending on the scenario."
     - content: "You want to use a GPU for training."
       isCorrect: false
       explanation: "Not all scenarios in Model Builder support or need GPUs for training. For image classification, training with GPUs is also available in local environments."
-    - content: "You don't have a GPU or a computer with enough CPU or RAM for resource intensive scenarios like image classification."
+    - content: "You don't have a GPU or a computer with enough CPU or RAM for resource-intensive scenarios like image classification."
       isCorrect: true
-      explanation: "Correct! By leveraging Azure compute resources, you can lighten the load on your local PC."
+      explanation: "Correct! By using Azure compute resources, you can lighten the load on your local PC."
