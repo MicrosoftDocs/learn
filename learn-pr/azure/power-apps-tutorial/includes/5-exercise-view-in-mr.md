@@ -40,6 +40,9 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
 6. All the required data is connected and ready to use in the application. In the upper-right corner of the **Data** pane, close it by selecting the close icon **(X)**.
 
+>[!Tip]
+> Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next, select the **The cloud** option and click **Save**.
+
 ## Create the splash screen
 
 1. Click the **Tree view** option at the left of **Power Apps Studio**, you should already have a blank screen in the Power Apps Studio. If not, on the **Home** tab, select the down-arrow next to **New screen** to open a list of screen types, and then select **Blank** to create a blank screen.
@@ -76,7 +79,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
     >[!Note]
     > By default, the unit taken to measure duration is in milliseconds. Since 1 second = 1000 milliseconds, we enter 2000 as the value for the duration.
 
-8. We want the splash screen to be visible for only 2 seconds and later navigate to the Home page. To do this, create a screen and rename it as **Home Page**. Later click on the timer button added to the **Splash** screen and configure the **OnTimerEnd** property. Replace *false* with the following content:
+8. We want the splash screen to be visible for only 2 seconds and later navigate to the Home page. To do this, create a **Blank** screen as we did in the previous step and rename it as **Home Page**. Later click on the timer button added to the **Splash** screen and configure the **OnTimerEnd** property. Replace *false* with the following content:
 
     ```PowerApps
     Navigate('Home Page',ScreenTransition.Fade)
@@ -127,6 +130,9 @@ To include data to your **Power Apps**, you must connect to the data via the con
 >* **Transition** - Optional. The visual transition to use between the current screen and the next screen. The default value is None.
 >* **UpdateContextRecord** - Optional. A record that contains the name of at least one column and a value for each column. This record updates the context variables of the new screen as if passed to the UpdateContext function.
 
+>[!Tip]
+>You can test your application by pressing the **F5** key on the keyboard or clicking the **Play** button at the top-right corner of Power Apps Studio.
+
 ## Use Gallery control
 
 Now that we have added the product categories, we will display the list of products under each category. In Power Apps, we use **Gallery control** to display a record of data.
@@ -139,7 +145,7 @@ Now that we have added the product categories, we will display the list of produ
 
     :::image type="content" source="../media/configure-data-source.png" alt-text="Screenshot of connecting sharepoint" lightbox="../media/configure-data-source.png":::
 
-3. Configure the **Gallery** > **Fields** property by clicking on **Edit**:
+3. Configure the **Gallery** > **Fields** property in the **Properties** pane by clicking on **Edit**:
     * Assign the **Price** to the **Subtitle1** heading.
     * Assign the **Name(Title)** to the **Title1** heading.
 
@@ -378,3 +384,6 @@ It is allowed to take pictures during the **View in MR** session and display the
 
 >[!Note]
 > For the **Notes_carpets** page, exclude adding the **Gallery control** to store photos taken during the **View in MR** session since we won't be including the **View in MR** feature for the **Carpets** category.
+
+>[!Tip]
+>You can test your application by pressing the **F5** key on the keyboard or clicking the **Play** button at the top-right corner of Power Apps Studio.
