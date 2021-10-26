@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.6-publish-deepstream-graph-composer-container-to-azure
-title: Exercise - Publish NVIDIA DeepStream Graph Composer container to  Azure Container Registry
+title: Exercise - Publish an NVIDIA DeepStream Graph Composer container to Azure Container Registry
 metadata:
-  title: Exercise - Publish NVIDIA DeepStream Graph Composer container to Azure Container Registry
-  description: Exercise - Publish NVIDIA DeepStream Graph Composer container to Azure Container Registry
+  title: Exercise - Publish an NVIDIA DeepStream Graph Composer container to Azure Container Registry
+  description: Exercise - Publish an NVIDIA DeepStream Graph Composer container to Azure Container Registry.
   author: toolboc
   ms.author: pdecarlo
   ms.date: 10/01/2021
