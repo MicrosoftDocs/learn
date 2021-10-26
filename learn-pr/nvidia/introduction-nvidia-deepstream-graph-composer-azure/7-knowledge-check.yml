@@ -25,7 +25,7 @@ quiz:
       explanation: This choice isn't a feature of the DeepStream Graph Composer.
     - content: 'A visual environment for developing IVA applications that make use of the NVIDIA DeepStream SDK, a registry tool that provides extensions and components for use in the visual environment, and tooling for packaging NVIDIA DeepStream Graphs into containerized applications'
       isCorrect: true
-      explanation: All of these features and functionalities are provided by the DeepStream Graph Composer.
+      explanation: Correct. All of these features and functionalities are provided by the DeepStream Graph Composer.
   - content: 'When you run a container application that requires access to the X11 environment for drawing a user interface, the following details must be accounted for:'
     choices: 
     - content: The container runtime will configure itself and just work.
@@ -33,7 +33,7 @@ quiz:
       explanation: "Unfortunately, this capability won't work without extra configuration prior to running and at runtime."
     - content: Before you run the workload in question, the host machine needs to enable access to the X11 environment, which can be accomplished with `sudo xhost +`. The container must also mount in the system X11 socket at runtime.
       isCorrect: true
-      explanation: These steps will enable access to the X11 environment from a container.
+      explanation: Correct. These steps will enable access to the X11 environment from a container.
     - content: 'Enable the option for X11 access when you build the container.'
       isCorrect: false
       explanation: "Access to the X11 environment requires system-level modification and configuration of the container at runtime. There's no such option available to accomplish this access during the building of the container."
@@ -44,7 +44,7 @@ quiz:
       explanation: Containers are capable of targeting multiple platform architectures but typically require a separate image for each platform target.
     - content: "Containerized workloads are guaranteed to exhibit similar runtime behavior when deployed to homogenous hardware. Time to deployment is potentially reduced because a full download of incremental image updates isn't required. Easy-to-understand required solution dependencies are created by inspecting the associated Docker file of a given container image."
       isCorrect: true
-      explanation: These features are all beneficial to running a GPU accelerated workload as a container.
+      explanation: Correct. These features are all beneficial to running a GPU accelerated workload as a container.
     - content: "GPU acceleration isn't possible because of access limitations when you run workloads as a container."
       isCorrect: false
       explanation: Containerized workloads can theoretically access any devices made accessible to the host kernel, which includes GPU acceleration hardware.

@@ -10,7 +10,7 @@ To achieve these benefits, you'll use the `container-builder` tool to package th
 
 1. Before you begin, you need to set up an account with the NVIDIA GPU Containers (NGC) service. This service is NVIDIA's official repository for distributing GPU-accelerated containers. Your workload requires access to this repository to pull in the DeepStream base container, which our containerized workload will use. To create an account or sign in with an existing account, see the [NVIDIA NGC sign-in page](https://ngc.nvidia.com/signin).
 
-    1. Sign in or create a new account by going to `https://ngc.nvidia.com/signin`. After you're signed in to NVIDIA NGC, select your username in the upper-right corner and select **Setup**. You'll see the following options:
+    1. Sign in or create a new account by going to the [NVIDIA sign-in page](https://ngc.nvidia.com/signin). After you're signed in to NVIDIA NGC, select your username in the upper-right corner and select **Setup**. You'll see the following options:
 
         ![Screenshot that shows the NGC setup process.](../media/ngc-setup.png)
 
@@ -36,7 +36,7 @@ To achieve these benefits, you'll use the `container-builder` tool to package th
         sudo container_builder -c ds_test1_container_builder_dgpu.yaml
         ```
 
-    1. Upon successful completion, you should see output that contains the message `Successfully tagged deepstream_test1_dgpu:latest`.
+    1. After successful completion, you should see output that contains the message `Successfully tagged deepstream_test1_dgpu:latest`.
 
     >[!NOTE]
     > If you receive a `docker.errors.DockerException` error when you run the preceding commands, it might indicate that you don't have the Docker runtime installed on the host machine. To proceed, review the instructions in the "Install NVIDIA DeepStream Graph Composer Dependencies" section of this module on how to install Docker.

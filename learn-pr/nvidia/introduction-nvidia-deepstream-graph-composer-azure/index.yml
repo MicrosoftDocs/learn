@@ -17,8 +17,8 @@ abstract: |
   - Package DeepStream Graph Composer applications into a container by using `container-builder`.
   - Publish DeepStream Graph Composer container workloads into an Azure Container Registry for secure redistribution.
 prerequisites: |
-  - X86-based system running an Ubuntu 18.04 OS
-  - RTX2080, RTX3080, T4, or A100 NVIDIA graphics card
+  - An X86-based system running an Ubuntu 18.04 OS
+  - An RTX2080, RTX3080, T4, or A100 NVIDIA graphics card
   - Familiarity with container workloads or Docker
   - Familiarity with Azure IoT Edge and Azure IoT Hub 
   - Completion of the prerequisite module: [Set up and configure an NVIDIA DeepStream development environment](/learn/modules/setup-configure-nvidia-deepstream-development/)

@@ -4,8 +4,8 @@ In this module, you'll learn how to set up and configure the NVIDIA DeepStream G
 
 To begin this module, you'll need to have:
 
-- X86-based system running an Ubuntu 18.04 OS
-- RTX2080, RTX3080, T4, or A100 NVIDIA graphics card
+- An X86-based system running an Ubuntu 18.04 OS
+- An RTX2080, RTX3080, T4, or A100 NVIDIA graphics card
 - Familiarity with container workloads or Docker
 - Familiarity with Azure IoT Edge and Azure IoT Hub
 - Completion of the prerequisite module: [NVIDIA DeepStream development with Microsoft Azure](/learn/modules/setup-configure-nvidia-deepstream-development/)
@@ -25,6 +25,6 @@ When you finish this module, you'll be able to:
 - Package DeepStream Graph Composer applications into a container by using `container-builder`.
 - Publish DeepStream Graph Composer container workloads into an Azure Container Registry for secure redistribution.
 
-## What is the main goal?
+## What's the main goal?
 
 This module will show you how to use the DeepStream Graph Composer with Azure services to create containerized IVA applications and publish them into an Azure Container Registry for secure distribution.
