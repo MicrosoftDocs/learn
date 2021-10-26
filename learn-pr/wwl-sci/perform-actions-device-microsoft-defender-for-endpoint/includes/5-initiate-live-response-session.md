@@ -1,10 +1,10 @@
-Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. Live response gives you the power to do in-depth investigative work and take immediate response actions to contain identified threats in real time.
+Live Response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. Live response gives you the power to do in-depth investigative work and take immediate response actions to contain identified threats in real time.
 
-Live response is designed to enhance investigations, and enables your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats.
+Live Response is designed to enhance investigations, and enables your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUW?rel=0]
 
-With live response, analysts can do all of the following tasks:
+With Live Response, analysts can do all of the following tasks:
 
 - Run basic and advanced commands to do investigative work on a device.
 - Download files such as malware samples and outcomes of PowerShell scripts.
@@ -18,9 +18,9 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
 **Verify that you're running a supported version of Windows 10**
 
-Enable live response from the Settings page.  You'll need to enable the live response capability in the Advanced features settings page.
+Enable Live Response from the Settings page.  You'll need to enable the Live Response capability in the Advanced features settings page.
 
-Only users with manage security or global admin roles can edit these settings.
+Only users with **manage security** or **global admin** roles can edit these settings.
 
 **Ensure that the device has an Automation Remediation level assigned to it**
 
@@ -57,14 +57,14 @@ Depending on the role that's been granted to you, you can run basic or advanced 
 
 The following commands are available for user roles that are granted the ability to run basic live response commands.
 
-| Command| Description|
+| Command | Description|
 | :--- | :--- |
-| `cd` | Changes the current directory.|
+| `cd` | Changes the current directory. |
 | `cls`| Clears the console screen.|
-| `connect`| Initiates a Live Response session on the device.|
-| `connections` | Shows all the active connections.|
-| `dir` | Lists files and subdirectories in a directory.|
-| `download <file_path> &` | Downloads a file in the background.|
+| `connect`| Initiates a Live Response session on the device. |
+| `connections` | Shows all the active connections. |
+| `dir` | Lists files and subdirectories in a directory. |
+| `download <file_path> &` | Downloads a file in the background. |
 | `drivers` | Shows all drivers installed on the device.|
 | `fg <command ID>` | Returns a file download to the foreground.|
 | `fileinfo` | Get information about a file.|
@@ -91,7 +91,7 @@ The following commands are available for user roles that are granted the ability
 | `remediate` | Remediates an entity on the device. The remediation action varies, depending on the entity type. This command has a prerequisite command. You can use the -auto command to automatically run the prerequisite command.|
 | `Undo` | Restores an entity that was remediated.|
 
-## Use live response commands
+## Use Live Response commands
 
 The commands that you can use in the console are similar to Windows Commands.  The advanced commands offer a more robust set of actions that enable you to take more powerful actions, such as download and upload a file, run scripts on the device, and take remediation actions on an entity.
 
@@ -146,7 +146,7 @@ Any time during a session, you can cancel a command by pressing <kbd>CTRL</kbd> 
 
 ### Automatically run prerequisite commands
 
-Some commands have prerequisite commands that must be run. If you don't run the prerequisite command, you'll get an error. For example, running the download command without *fileinfo* will return an error. You can use the `-auto` flag to automatically run prerequisite commands, for example:
+Some commands have prerequisite commands that must be run. If you don't run the prerequisite command, you'll get an error. For example, running the `download` command without *fileinfo* will return an error. You can use the `-auto` flag to automatically run prerequisite commands, for example:
 
 ```console
 getfile c:\Users\user\Desktop\work.txt -auto
@@ -158,13 +158,13 @@ Before you can run a PowerShell script, you must first upload it to the library.
 
 ### Apply command parameters
 
-View the console help to learn about command parameters. To learn about an individual command, run:
+View the console `help` to learn about command parameters. To learn about an individual command, run:
 
 ```PowerShell
 help <command name>
 ```
 
-When adding parameters to commands, parameters are handled based on a fixed order:
+When adding parameters to commands, parameters are handled in a fixed order:
 
 ```PowerShell
 <command name> param1 param2
@@ -176,7 +176,7 @@ When specifying parameters outside of the fixed order, specify the parameter nam
 <command name> -param2_name param2_val
 ```
 
-When using commands that have prerequisite commands, you can use flags:
+When using commands that have prerequisite commands, you can use a flag to automatically call the prerequisite command first:
 
 ```PowerShell
 <command name> -type file -id <file path> -auto 
@@ -185,14 +185,15 @@ remediate file <file path> -auto.
 
 ### Supported output types
 
-Live response supports table and JSON format output types. For each command, there's a default output behavior. You can specify your preferred output format using the following output flags:
+Live Response supports `table` and `JSON` format output types. For each command, there's a default output behavior. You can specify your preferred output format using the following output flags:
 
-- `-output json`
 - `-output table`
+- `-output json`
+
 
 ### Supported output pipes
 
-Live response supports output piping to CLI and file. CLI is the default output behavior. You can pipe the output to a file using the following command: 
+Live Response supports output piping to CLI and file. CLI is the default output. You can pipe output to a specified file using the following command: 
 
 ```PowerShell
 [command] > [filename].txt.
@@ -200,7 +201,7 @@ Live response supports output piping to CLI and file. CLI is the default output 
 
 ### View the command log
 
-Select the Command log tab to view the commands used during a session. Each command is tracked with full details, including:
+Select the Command log tab to view the commands used during a Live Response session. Each command is tracked with full details, including:
 
 - ID
 - Command line
