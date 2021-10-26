@@ -4,7 +4,7 @@ You've collected sensor data from your company's manufacturing devices that are 
 
 To start the training process, you need add a new Machine Learning Model (ML.NET) item to a new or existing .NET application.
 
-### Create C# Class Library
+### Create C# class library
 
 Since you're starting from scratch, create a new C# class library project to add a machine learning model to.
 
