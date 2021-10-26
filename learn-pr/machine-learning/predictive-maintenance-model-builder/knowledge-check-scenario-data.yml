@@ -42,9 +42,9 @@ quiz:
     - content: "You can't train locally with Model Builder."
       isCorrect: false
       explanation: "Using Model Builder you can train locally on your PC and in Azure depending on the scenario."
-    - content: "You want to use a GPU for training."
+    - content: "You want to use a GPU for consumption."
       isCorrect: false
-      explanation: "Not all scenarios in Model Builder support or need GPUs for training. For image classification, training with GPUs is also available in local environments."
+      explanation: "Model consumption happens after training."
     - content: "You don't have a GPU or a computer with enough CPU or RAM for resource-intensive scenarios like image classification."
       isCorrect: true
       explanation: "Correct! By using Azure compute resources, you can lighten the load on your local PC."
