@@ -66,7 +66,7 @@ The following commands are available for user roles that are granted the ability
 | dir | Shows a list of files and subdirectories in a directory.|
 | download <file_path> &| Downloads a file in the background.|
 | drivers| Shows all drivers installed on the device.|
-| fg <command ID>| Returns a file download to the foreground.|
+| fg `<command ID>` | Returns a file download to the foreground.|
 | fileinfo | Get information about a file.|
 | findfile | Locates files by a given name on the device.|
 | help | Provides help information for live response commands.|
@@ -86,9 +86,9 @@ The following commands are available for user roles that are granted the ability
 | analyze| Analyses the entity with various incrimination engines to reach a verdict.|
 | getfile| Gets a file from the device.  This command has a prerequisite command. You can use the -auto command with getfile to automatically run the prerequisite command.|
 | run| Runs a PowerShell script from the library on the device.|
-| library| Lists files that were uploaded to the live response library.|
-| putfile| Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.|
-| remediate| Remediates an entity on the device. The remediation action will vary depending on the entity type. This command has a prerequisite command. You can use the -auto command with remediate to automatically run the prerequisite command.|
+| library | Lists files that were uploaded to the live response library.|
+| putfile | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.|
+| remediate | Remediates an entity on the device. The remediation action varies, depending on the entity type. This command has a prerequisite command. You can use the -auto command to automatically run the prerequisite command.|
 | Undo| Restores an entity that was remediated.|
 
 ## Use live response commands
