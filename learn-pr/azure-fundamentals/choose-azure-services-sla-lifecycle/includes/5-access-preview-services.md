@@ -1,8 +1,8 @@
-Now that Tailwind Traders has its applications up and running in Azure, it wants to start looking into new Azure capabilities. One option is to look at preview services. In this module, you'll learn how Azure services go from the preview phase to being generally available product integrated into Azure.
+Now that the Tailwind Traders company has its applications up and running in Azure, it wants to start looking into new Azure capabilities. One option is to look at preview services. In this module, you'll learn how Azure services go from the preview phase to being generally available product integrated into Azure.
 
 For Tailwind Traders, migration from the datacenter to Azure is more about operational efficiency. The research and development team is looking into new, cloud-based features that will keep them ahead of the competition.
 
-Tailwind Traders is experimenting with a custom drone delivery system for customers in rural areas. The company needs the ability to use real-time storm tracking in the drone guidance system, but the feature isn't ready yet. There's a new AI Storm Analyzer service that has just entered the public preview phase. So, Tailwind Traders has decided to incorporate it into the early stages of application testing.
+Tailwind Traders is experimenting with a drone delivery system for rural customers. The company needs real-time storm tracking in the drone guidance system, but the feature isn't ready yet. An AI Storm Analyzer service has recently become available in the public preview phase. Tailwind Traders R&D team has decided to incorporate the preview service into the early stages of application testing.
 
 > [!NOTE]
 > AI Storm Analyzer is a fictitious Azure service, introduced here for illustrative purposes only.
@@ -21,9 +21,9 @@ After a new Azure service has been validated and tested, it's released to all cu
 
 ## What terms and conditions can I expect?
 
-Each Azure preview defines its own terms and conditions. All preview-specific terms and conditions supplement your existing Azure service level agreement (SLA).
+Each Azure preview defines its own terms and conditions. All [preview-specific terms and conditions are excluded from the serice level agreements and limited warranty](https://azure.microsoft.com/en-us/support/legal/preview-supplemental-terms/).
 
-Some previews aren't covered by customer support. Therefore, previews are not recommended for business-critical workloads.
+Some previews may not be covered by customer support, and may be subject to reduced or different security, compliance, and privacy commitments. For these reasons, previews are not recommended for business-critical workloads.
 
 ## How can I access preview services?
 
@@ -48,7 +48,7 @@ You can access preview features that are specific to the Azure portal from [Micr
 
 Typical portal preview features provide performance, navigation, and accessibility improvements to the Azure portal interface.
 
-When you are using the preview version of the Azure portal, **Microsoft Azure (Preview)** displays in the page header to remind you what version of the Azure portal you're using. Public preview features that are optionally available are also labeled on Azure pages.
+When you are using the preview version of the Azure portal, **Microsoft Azure (Preview)** displays in the page header to remind you what version of the Azure portal you're using. Public preview features that are optionally available are also labeled with *(preview)* on Azure pages.
 
 :::image type="content" source="../media/5-azure-portal-preview.png" alt-text="Screenshot of Azure page header showing the global element Microsoft Azure (Preview) highlighted.":::
 
