@@ -23,7 +23,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     :::image type="content" source="../media/configure-layout.png" alt-text="Screenshot to configure layout" lightbox="../media/configure-layout.png":::
 
-5. Configure the **Data source** property of the **Measure_gallery** by adding the following line:
+5. Configure the **Items** property of the **Measure_gallery** by adding the following line:
 
     ```Power Apps
     MeasureInMR1.Measurements
@@ -31,7 +31,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     :::image type="content" source="../media/gallery-data-source.png" alt-text="Screenshot of gallery data source" lightbox="../media/gallery-data-source.png":::
 
-6. Position the **Title**, **Subtitle**, and **Body** equidistant from each other as shown in the picture.
+6. Remove the **Separator** and **NextArrow**. Position the **Title**, **Subtitle**, and **Body** equidistant from each other as shown in the picture.
 
     :::image type="content" source="../media/equidistant.png" alt-text="Screenshot of equidistant" lightbox="../media/equidistant.png":::
 
@@ -71,9 +71,12 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     :::image type="content" source="../media/configure-on-select.png" alt-text="Screenshot of configuring OnSelect for reload icon" lightbox="../media/configure-on-select.png":::
 
-10. Once the **Measure in MR** component is fully configured, we move to the **Spatial filtering**. Navigate to the **Sofas** page and configure the **Items** property by adding the following:
+    >[!Tip]
+    > You may customize the font, font size, and font style to match the design of your application. However, make sure you maintain a harmonious font throughout the application for a better user experience.
 
-    ```Power Apps
+10. Once the **Measure in MR** component is fully configured, we move to the **Spatial filtering**. Navigate to the **Sofas** page and configure the **Items** property of the **Gallery_sofas** by adding the following:
+
+    ```PowerApps
     If (
     Measure_gallery.Selected.Height = 0,
     Filter('Easy Sales - Sofas', Area <= Measure_gallery.Selected.Area),
@@ -116,7 +119,11 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 ## Calculate price based on area
 
-1. Click on **Details_carpets** page, configure the empty label beside **Area** in the following way to display the area calculated:
+1. Click on **Details_carpets** page, Add a **Label** and rename it as **Area_carpets**.
+
+    :::image type="content" source="../media/add-area-label.png" alt-text="Screenshot of Area calculation" lightbox="../media/add-area-label.png":::
+
+2. Add another empty **Label** beside the **Area_carpets** label and configure the **Text** property of the empty label following way to display the area calculated:
 
     ```Power Apps
     Measure_gallery.Selected.Area&"cm²"
@@ -124,7 +131,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     :::image type="content" source="../media/configure-area.png" alt-text="Screenshot of Area calculation" lightbox="../media/configure-area.png":::
 
-2. Configure the label next to the **Price** label in the following way to display the calculated price:
+3. Configure the label next to the **Price** label in the following way to display the calculated price:
 
     ```Power Apps
     "$"&Measure_gallery.Selected.Area * content_carpets.'Price/cm2'
@@ -134,7 +141,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 ## Create order summary page
 
-1. Add a **Button** to **Details_sofas**, **Details_chairs**, **Details_tables**, and **Details_carpets** screens. Rename the button to **Order** and change the display text of the button to **Order**.
+1. Add a **Button** to **Details_sofas**, **Details_chairs**, **Details_tables**, and **Details_carpets** screens. Rename the button to **Order_button_(category_name)** and change the display text of the button to **Order**.
 
     :::image type="content" source="../media/add-order-button.png" alt-text="Screenshot of adding order button" lightbox="../media/add-order-button.png":::
 
@@ -142,7 +149,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     :::image type="content" source="../media/create-order-screens.png" alt-text="Screenshot of adding new screens" lightbox="../media/create-order-screens.png":::
 
-3. Select **Details_sofas** screen and configure the **OnSelect** property of the **Order** button as seen below:
+3. Select **Details_sofas** screen configure the **OnSelect** property of the **Order** button as seen below:
 
     ```Power Apps
     Navigate('Order_sofas',ScreenTransition.Cover)
@@ -197,14 +204,14 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     :::image type="content" source="../media/add-page-heading.png" alt-text="Screenshot of adding Order Summary label" lightbox="../media/add-page-heading.png":::
 
-9. Expand the **Gallery** dropdown and select **Horizontal**. Retain only the image and delete other components of the **Gallery**.
+9. Expand the **Gallery** dropdown and select **Horizontal**. Retain only the image and delete other components of the **Gallery**. Rename it as **Order_gallery_sofas**
 
     :::image type="content" source="../media/add-horizontal-gallery-order.png" alt-text="Screenshot of adding gallery" lightbox="../media/add-horizontal-gallery-order.png":::
 
 10. Configure the **Items** property of this gallery by adding the line given below:
 
     ```Power Apps
-    ViewInMR1.Photos
+    ViewInMR.Photos
     ```
 
     :::image type="content" source="../media/configure-items-property-order.png" alt-text="Screenshot of configure items in gallery" lightbox="../media/configure-items-property-order.png":::
@@ -213,7 +220,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     :::image type="content" source="../media/add-extra-labels.png" alt-text="Screenshot of 3 labels" lightbox="../media/add-extra-labels.png":::
 
-12. Expand the **Input** dropdown and select **Text input**. Add two **Text input** components to the screen and position them as shown in the figure. Rename them as **Input1** and **Input2** respectively
+12. Expand the **Input** dropdown and select **Text input**. Add two **Text input** components to the screen and position them as shown in the figure. Rename them as **Input1_sofas** and **Input2_sofas** respectively
 
     :::image type="content" source="../media/add-email-input.png" alt-text="Screenshot of 2 text input" lightbox="../media/add-email-input.png":::
 
@@ -246,13 +253,15 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
         :::image type="content" source="../media/configure-home-icon-order.png" alt-text="Screenshot of configuring OnSelect - Order" lightbox="../media/configure-home-icon-order.png":::
 
+17. Follow the same procedure for  **Order_chairs**, **Order_tables**, and **Order_carpets**.
+
 ## Create end page
 
 1. Create a **Blank** screen and rename it as **End page**.
 
     :::image type="content" source="../media/create-end-page.png" alt-text="Screenshot of end page" lightbox="../media/create-end-page.png":::
 
-2. Add a **Label** and change its display text to **Order Successfully Placed!**. Position the label as required on the screen.
+2. Add a **Label** and change its display text to **Order Successfully Submitted!**. Position the label as required on the screen.
 
     :::image type="content" source="../media/add-message-label.png" alt-text="Screenshot of adding label for Order Successfully Placed!" lightbox="../media/add-message-label.png":::
 
@@ -264,18 +273,26 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     :::image type="content" source="../media/configure-shop-more-button.png" alt-text="Screenshot of show more button" lightbox="../media/configure-shop-more-button.png":::
 
+4. Expand the **Media** dropdown and select **Image** to add an image component to the **End page**.
+
+    :::image type="content" source="../media/add-image-order.png" alt-text="Screenshot of show more button" lightbox="../media/add-image-order.png":::
+
+5. Position the image as shown in the figure. Select the **logo** file to display.
+
+    :::image type="content" source="../media/add-logo-order.png" alt-text="Screenshot of show more button" lightbox="../media/add-logo-order.png":::
+
 ## Send emails via Power Apps
 
 1. Click the **Data** tab and select **+ Add data**. Next, expand the **Connectors** to select **Office 365 Outlook** to add it as one of the connectors for this application.
 
     :::image type="content" source="../media/add-office-365-outlook.png" alt-text="Screenshot of add data connectors for mail" lightbox="../media/add-office-365-outlook.png":::
 
-2. Configure the **OnSelect** property of the **Confirm** button by adding the following lines:
+2. Open the **Order_sofas** and configure the **OnSelect** property of the **Confirm** button by adding the following lines:
 
     ```Power Apps
-    Office365Outlook.SendEmailV2(Input1 & ";"& Input2,"Order Summary","<b> Your order is successfully placed! </b> <br>
-    Order details are as follows: <ul> <li> Product: " & Name_sofa2 & "</li> <li> Price: " & Price_sofa2 & "</li> <li> Color: " & color_sofa2 & "</li> </ul>Notes: " & TextInput3 & "<br><b> Thank you for shopping with us! </b>");
-    Navigate('End Screen',ScreenTransition.Cover) 
+    Office365Outlook.SendEmailV2(Input1_sofas & ";"& Input2_sofas,"Order Summary","<b> Your order is successfully submitted! </b> <br>
+    Order details are as follows: <ul> <li> Product: " & Sofas_product_details & "</li> <li> Price: " & Sofas_price_details & "</li> <li> Color: " & Sofas_color_details & "</li> </ul>Notes: " & TextInput_sofas & "<br><b> Thank you for shopping with us! </b>");
+    Navigate('End page',ScreenTransition.Cover) 
     ```
 
     :::image type="content" source="../media/configure-confirm-email-button.png" alt-text="Screenshot of configuring confirm button" lightbox="../media/configure-confirm-email-button.png":::
