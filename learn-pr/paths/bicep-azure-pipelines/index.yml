@@ -4,7 +4,7 @@ metadata:
   title: Deploy Azure resources by using Bicep and Azure Pipelines
   description: Learn how to use Azure Pipelines to deploy your Bicep code in an automated way.
   brand: azure
-  ms.date: 10/25/2021
+  ms.date: 10/26/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
@@ -37,7 +37,7 @@ summary: |
   :::column-end:::
   :::row-end:::
 
-  After that, you might be interested in adding your Bicep code to a deployment pipeline:
+  After that, you might be interested in adding your Bicep code to a deployment pipeline. Take one of these two learning paths based on the tool you want to use:
 
   :::row:::
   :::column:::
@@ -45,7 +45,12 @@ summary: |
 
     Deploy Azure resources by using Bicep and Azure Pipelines
   :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/bicep/bicep-github-actions.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Bicep and GitHub Actions learning path." role="presentation"></img>
 
+    [Deploy Azure resources by using Bicep and GitHub Actions](xref:learn.bicep-github-actions)
+  :::column-end:::
+  :::row-end:::
 prerequisites: |
   This learning path assumes you have familiarity with deploying infrastructure using Bicep.
 iconUrl: /learn/achievements/bicep/bicep-azure-pipelines.svg
