@@ -1,0 +1,52 @@
+name: learn-github-actions
+
+on: 
+  push:
+    branches: 
+      - main
+    paths: 
+      - 'deploy/**'
+  workflow_dispatch:
+    
+env: 
+    AZURE_RESOURCEGROUP_NAME: ToyWebsiteTest
+    ENVIRONMENT_TYPE: Test
+
+jobs:
+  lint: 
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: actions/checkout@v2
+    - name: 'Lint Bicep template'
+      run: az bicep build --file deploy/main.bicep
+  
+  validate: 
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: actions/checkout@v2
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}    
+    - uses: azure/arm-deploy@v1
+      with:
+        deploymentName: ${{ github.run_number }}
+        resourceGroupName: ${{ env.AZURE_RESOURCEGROUP_NAME }}
+        template: ./deploy/main.bicep
+        parameters: environmentType=${{ env.ENVIRONMENT_TYPE }}
+        deploymentMode: Validate
+        
+  deploy:
+    runs-on: ubuntu-latest
+    environment: MyAzureEnvironment
+    needs: [lint, validate]
+    steps:
+    - uses: actions/checkout@v2
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - uses: azure/arm-deploy@v1
+      with:
+        deploymentName: ${{ github.run_number }}
+        resourceGroupName: ${{ env.AZURE_RESOURCEGROUP_NAME }}
+        template: ./deploy/main.bicep
+        parameters: environmentType=${{ env.ENVIRONMENT_TYPE }}
