@@ -21,7 +21,7 @@ After a new Azure service has been validated and tested, it's released to all cu
 
 ## What terms and conditions can I expect?
 
-Each Azure preview defines its own terms and conditions. All preview-specific terms and conditions supplement your existing Azure service agreement.
+Each Azure preview defines its own terms and conditions. All preview-specific terms and conditions supplement your existing Azure service level agreement (SLA).
 
 Some previews aren't covered by customer support. Therefore, previews are not recommended for business-critical workloads.
 
@@ -48,7 +48,7 @@ You can access preview features that are specific to the Azure portal from [Micr
 
 Typical portal preview features provide performance, navigation, and accessibility improvements to the Azure portal interface.
 
-When you are using the preview version of the Azure portal, **Microsoft Azure (Preview)** displays in the page header to remind you what version of the Azure portal you're using. Public preview releases of features that are optionally available are also prominantly labeled Azure pages.
+When you are using the preview version of the Azure portal, **Microsoft Azure (Preview)** displays in the page header to remind you what version of the Azure portal you're using. Public preview features that are optionally available are also labeled on Azure pages.
 
 :::image type="content" source="../media/5-azure-portal-preview.png" alt-text="Screenshot of Azure page header showing the global element Microsoft Azure (Preview) highlighted.":::
 
