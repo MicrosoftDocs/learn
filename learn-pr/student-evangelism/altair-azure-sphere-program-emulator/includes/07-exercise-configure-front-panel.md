@@ -4,7 +4,7 @@ In this exercise, you'll learn how to program the Altair emulator from the Altai
 
 To access the Virtual Front panel, you must be connected to the Altair emulator via the Web Terminal.
 
-1. From the Web Terminal, press <kbd>ctrl+M</kbd> to enter the CPU Monitor.
+1. From the Web Terminal, press **ctrl+M** to enter the CPU Monitor.
 1. You can enter binary strings to represent the switches on a real Altair front panel. For example, if you entered *0000000011110000* followed by Enter, then you're setting 12 switches off and 4 switches on.
 1. You can enter Altair control commands as follows:
     * **e** = EXAMINE
@@ -13,13 +13,13 @@ To access the Virtual Front panel, you must be connected to the Altair emulator 
     * **dn** = DEPOSIT
     * **s** = SINGLE STEP
 1. If you wanted to load the three byte [Intel 8080 Jmp](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/8080asm.pdf?azure-portal=true) at address 0x0100 then you would:
-    * Type **100000000** (0x0100) followed by Enter.
-    * Type **e** for EXAMINE, followed by Enter to set the CPU current instruction pointer to address 0x0100.
-    * Type **11000011** (The Intel 8080 opcode for Jmp) followed by Enter.
-    * Type **d** followed by Enter to DEPOSIT the instruction at address 0x0000.
-    * Type **0** followed by Enter to set the **low** order address for the Jump instruction.
-    * Type **dn** followed by Enter to DEPOSIT NEXT to increment the CPU instruction pointer to the next address location and deposit the high-order byte of the Jmp instruction.
-    * Type **dn** followed by Enter to DEPOSIT NEXT to increment the CPU instruction pointer to the next address location and deposit the **high** order byte of the Jmp instruction.
+    1. Type **100000000** (0x0100) followed by Enter.
+    1. Type **e** for EXAMINE, followed by Enter to set the CPU current instruction pointer to address 0x0100.
+    1. Type **11000011** (The Intel 8080 opcode for Jmp) followed by Enter.
+    1. Type **d** followed by Enter to DEPOSIT the instruction at address 0x0000.
+    1. Type **0** followed by Enter to set the **low** order address for the Jump instruction.
+    1. Type **dn** followed by Enter to DEPOSIT NEXT to increment the CPU instruction pointer to the next address location and deposit the high-order byte of the Jmp instruction.
+    1. Type **dn** followed by Enter to DEPOSIT NEXT to increment the CPU instruction pointer to the next address location and deposit the **high** order byte of the Jmp instruction.
 
 1. To execute the instructions you entered you would:
     1. Type **100000000** (0x0100) followed by Enter
@@ -31,7 +31,7 @@ To access the Virtual Front panel, you must be connected to the Altair emulator 
         Single step: Address bus: 00000000 00000000 (0x0000), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
         ```
 
-1. To exit CPU Monitor mode press <kbd>ctrl+M</kbd>
+1. To exit CPU Monitor mode press **ctrl+M**
 1. Note, you are directly setting memory addresses and you will likely overwrite something important and crash the Altair emulator, if this happens then just reset the Azure Sphere, and experiment again.
 
 ## The Avnet Click Front Panel with the MikroE 8800 Retro Click
@@ -88,17 +88,17 @@ Set the CPU Instruction pointer to 0x0100
 Execute the instruction
 
 1. Press **SINGLE STEP**
-1. Press **SINGLE STEP** again and note the address on the address bus will change to zero. All of the address bus LEDS will be turned off.
+1. Press **SINGLE STEP** again and note the address on the address bus will change to zero. All of the address bus LEDs will be turned off.
 
 1. Press **CPU START** to start the CPU running again.
 
-Note, you can observe the instruction being executed in the Web Terminal as well.
-
-```text
-    Examine: Address bus: 00000001 00000000 (0x0100), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
-Single step: Address bus: 00000001 00000000 (0x0100), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
-Single step: Address bus: 00000000 00000000 (0x0000), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
-```
+> [!NOTE]
+> You can observe the instruction being executed in the Web Terminal as well.
+> ```text
+>     Examine: Address bus: 00000001 00000000 (0x0100), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
+> Single step: Address bus: 00000001 00000000 (0x0100), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
+> Single step: Address bus: 00000000 00000000 (0x0000), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
+> ```
 
 ## Altair Front Panel
 

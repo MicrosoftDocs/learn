@@ -4,34 +4,36 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 08/18/2021
+  ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 durationInMinutes: 2 # dummy number at present
-content: |
+content: | 
+  Choose the best response for each of the questions below. Then select **Check your answers**.
 quiz:
   questions:
   - content: "Which of the following options is true about Altair BASIC?"
     choices:
-    - content: "From Altair BASIC you can run and save BASIC apps."
+    - content: "From Altair BASIC, you can run and save BASIC apps."
       isCorrect: false
-      explanation: "From Altair BASIC you can only run BASIC applications. You need to boot CP/M to access the B: read/write drive."
-    - content: "From Altair BASIC you can only run BASIC apps. You can't save changes you make."
+      explanation: "From Altair BASIC, you can only run BASIC applications. You need to boot CP/M to access the B: read/write drive."
+    - content: "From Altair BASIC, you can only run BASIC apps. You can't save changes you make."
       isCorrect: true
-      explanation: "From Altair BASIC you can only run BASIC applications. You need to boot CP/M to access the B: read/write drive."
+      explanation: "From Altair BASIC, you can only run BASIC applications. You need to boot CP/M to access the B: read/write drive."
     - content: "Altair BASIC runs on CP/M and you can run and save BASIC apps."
       isCorrect: false
       explanation: "Microsoft Basic runs on CP/M. It can run and save files to the B: drive."
   - content: "The Altair emulator can run Altair BASIC and CP/M. Which option is true?"
     choices:
-    - content: "When the Altair emulator starts it is running CP/M."
+    - content: "When the Altair emulator starts, it is running CP/M."
       isCorrect: true
-      explanation: "When the Altair emulator starts it is running Altair CP/M."
-    - content: "When the emulator starts it is running Altair BASIC"
+      explanation: "When the Altair emulator starts, it is running Altair CP/M."
+    - content: "When the emulator starts, it is running Altair BASIC"
       isCorrect: false
-      explanation: "When the Altair emulator starts it is running CP/M. You can config the Altair emulator to boot up Altair BASIC."
+      explanation: "When the Altair emulator starts, it is running CP/M. You can config the Altair emulator to boot up Altair BASIC."
     - content: "When the Altair emulator starts you can program in Altair BASIC, Microsoft Basic, C, and Assembler."
       isCorrect: false
       explanation: "The Altair emulator runs CP/M on startup. You can then program with Microsoft Basic, C, and Assembler."
