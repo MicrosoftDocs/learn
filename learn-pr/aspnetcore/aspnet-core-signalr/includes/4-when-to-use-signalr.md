@@ -19,6 +19,22 @@ SignalR is as durable as the underlying connection. In other words, if there's c
 
 Another consideration is the scalability of SignalR. Depending on the number of concurrently connected clients, your web server could experience contention when reaching its limits. In situations like this, you'd likely need to deploy the application to a server farm and use a backplane. Implementing this on your own can be tedious. Alternatively, you could leverage the [**Azure SignalR Service**](/azure/azure-signalr). In addition to having solved most of the networking challenges you might face when trying to implement this yourself, there are various [resiliency and disaster recovery](/azure/azure-signalr/signalr-concept-disaster-recovery) mechanisms in place to help alleviate problems.
 
+#### Example SignalR modalities
+
+SignalR can be used on-premises, in the cloud, or with Azure SignalR Service.
+
+##### On-premises
+
+:::image type="content" source="../media/on-prem-signalr.png" lightbox="./media/on-prem-signalr.svg" alt-text="ASP.NET Core SignalR On-prem":::
+
+##### Cloud
+
+:::image type="content" source="../media/cloud-signalr.png" lightbox="./media/cloud-signalr.svg" alt-text="ASP.NET Core SignalR Cloud":::
+
+##### Azure SignalR Service
+
+:::image type="content" source="../media/service-signalr.png" lightbox="./media/service-signalr.svg" alt-text="Azure SignalR Service":::
+
 ### Valid use cases
 
 SignalR is not a replacement for traditional HTTP requests. Applications could leverage SignalR to know when to make specific HTTP requests, in this way they complement each other. There are many valid use cases for SignalR.
