@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-secure-emulator.exercise-generate-certificates
-title: Secure the connection to an MQTT broker
+title: Exercise - Secure the connection to an MQTT broker
 metadata:
   title: Secure the connection to an MQTT broker
   description: In this exercise, you'll secure the connection to an MQTT broker.
-  ms.date: 08/18/2021
+  ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/05-exercise-generate-certificates.md)]

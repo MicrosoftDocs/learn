@@ -15,3 +15,4 @@ By default, the Altair emulator uses the public **test.mosquitto.org** MQTT brok
 You'll generate certificates the MQTT client will use to sign and encrypt the traffic between the Azure Sphere and the MQTT broker.
 
 Note, your MQTT messages are encrypted, but your data will be visible on the *test.mosquitto.org* broker. Later, you'll learn how to create and secure your own Mosquitto MQTT broker.
+
