@@ -1,4 +1,4 @@
-In Microsoft Power Apps, users can plan and build a business application using components rather than writing code in a traditional programming language like C#. Instead, users can design applications by dragging and dropping components into a canvas, just as they would design a slide in PowerPoint. Make Excel-like experience for indicating logic and working with data. Create apps that combine business data from several Microsoft and third-party sources. Share the app so that users can run it in a browser or on a mobile device, and embed your app so they can run it in SharePoint, Power BI, or Teams.
+In Microsoft Power Apps, users can plan and build a business application using components rather than writing code in a traditional programming language like C#. They can design applications by dragging and dropping components into a canvas, just as they would design a slide in PowerPoint. Indicating logic and working with data can be achieved through Excel-like experience. Users can create apps that combine business data from several Microsoft and third-party sources. They are allowed to share the app so that users can run it in a browser or on a mobile device, and embed the app so they can run it in SharePoint, Power BI, or Teams.
 
 ## Controls and properties in canvas apps
 
@@ -22,8 +22,6 @@ Each data field is displayed in a separate control within the Gallery control. A
 The View in MR is one of the chief features included in the application. It allows the user to view images and 3D models in the natural world environment. The user can access it by clicking on the button; it overlays a selected 3D model or image onto the device's live camera feed.
 
 3D content must be in the .glb file format and the image must be in .jpg or .png format. The MR components in Power Apps uses Babylon React Native.
-
-The View in MR allows the users to place any 3D object in the real world and can view, estimate, and verify the selected product before committing or purchasing.
 
 * **Properties**
 

@@ -2,7 +2,7 @@ In this module, you'll be using some of the key functional components of **Power
 
 ## Spatial filtering using Measure in MR
 
-We will leverage the power of **Measure in MR** in spatially filtering the products that can be easily placed in the real world according to the measurements received through the measuring session. We will also use some basic formulas to perform the filtering.
+**Measure in MR** feature is used to spatially filtering the products that can be easily placed in the real world according to the measurements received through the measuring session. Some basic formulas are used to perform the filtering.
 
 1. Navigate to the **Home page** and on the **Insert** tab, expand the **Mixed Reality** dropdown, and select **Measure in MR**.
 
@@ -25,7 +25,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 5. Configure the **Items** property of the **Measure_gallery** by adding the following line:
 
-    ```Power Apps
+    ```PowerApps
     MeasureInMR1.Measurements
     ```
 
@@ -38,7 +38,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 7. Configure the **Text** property of the three labels in the following way respectively:
     * **Title**:
 
-        ```Power Apps
+        ```PowerApps
         "Unit: "&ThisItem.Unit
         ```
 
@@ -46,7 +46,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     * **Subtitle**:
 
-        ```Power Apps
+        ```PowerApps
         "Area: "&ThisItem.Area&"cm²"
         ```
 
@@ -54,7 +54,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     * **Body**:
 
-        ```Power Apps
+        ```PowerApps
         "Height: "&ThisItem.Height&"cm"
         ```
 
@@ -65,7 +65,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 9. Position the icon as shown in the figure and configure the **OnSelect** property in the following way:
 
-    ```Power Apps
+    ```PowerApps
     UpdateContext({galleryvisible:false});
     ```
 
@@ -94,7 +94,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     * **Chairs**:
 
-        ```Power Apps
+        ```PowerApps
         If (
         Measure_gallery.Selected.Height = 0,
         Filter('Easy Sales - Chairs', Area <= Measure_gallery.Selected.Area),
@@ -105,7 +105,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     * **Tables**:
 
-        ```Power Apps
+        ```PowerApps
         If (
         Measure_gallery.Selected.Height = 0,
         Filter('Easy Sales - Tables', Area <= Measure_gallery.Selected.Area),
@@ -128,7 +128,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 2. Add another empty **Label** beside the **Area_carpets** label and configure the **Text** property of the empty label following way to display the area calculated:
 
-    ```Power Apps
+    ```PowerApps
     Measure_gallery.Selected.Area&"cm²"
     ```
 
@@ -136,7 +136,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 3. Configure the label next to the **Price** label in the following way to display the calculated price:
 
-    ```Power Apps
+    ```PowerApps
     "$"&Measure_gallery.Selected.Area * content_carpets.'Price/cm2'
     ```
 
@@ -154,7 +154,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 3. Select **Details_sofas** screen configure the **OnSelect** property of the **Order** button as seen below:
 
-    ```Power Apps
+    ```PowerApps
     Navigate('Order_sofas',ScreenTransition.Cover)
     ```
 
@@ -173,7 +173,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 7. Configure the **Text** property of these empty labels in the following way:
     * **Product**:
 
-        ```Power Apps
+        ```PowerApps
         Gallery_sofas.Selected.'Name (Title)'
         ```
 
@@ -181,7 +181,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     * **Price**:
 
-        ```Power Apps
+        ```PowerApps
         Gallery_sofas.Selected.Price
         ```
 
@@ -189,7 +189,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     * **Color**:
 
-        ```Power Apps
+        ```PowerApps
         Gallery_sofas.Selected.Color
         ```
 
@@ -197,7 +197,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     * **Notes**:
 
-        ```Power Apps
+        ```PowerApps
         TextInput_sofas.Text
         ```
 
@@ -213,7 +213,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 10. Configure the **Items** property of this gallery by adding the line given below:
 
-    ```Power Apps
+    ```PowerApps
     ViewInMR.Photos
     ```
 
@@ -242,7 +242,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 16. Configure the **OnSelect** property of these two icons in the following way:
     * **Back**:
 
-        ```Power Apps
+        ```PowerApps
         Navigate(Details_sofas,ScreenTransition.CoverRight)
         ```
 
@@ -250,7 +250,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
     * **Home**:
 
-        ```Power Apps
+        ```PowerApps
         Navigate('Home Page',ScreenTransition.CoverRight)
         ```
 
@@ -270,7 +270,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 3. Add a **Button** at the bottom of the screen. Configure the **Text** property of the button by adding **Shop more**. Let's navigate the user to the home page by clicking the **Shop more** button by adding the following line in the **OnSelect** property.
 
-    ```Power Apps
+    ```PowerApps
     Navigate('Home Page',ScreenTransition.Cover)
     ```
 
@@ -295,7 +295,7 @@ We will leverage the power of **Measure in MR** in spatially filtering the produ
 
 2. Open the **Order_sofas** and configure the **OnSelect** property of the **Confirm** button by adding the following lines:
 
-    ```Power Apps
+    ```PowerApps
     Office365Outlook.SendEmailV2(Input1_sofas & ";"& Input2_sofas,"Order Summary","<b> Your order is successfully submitted! </b> <br>
     Order details are as follows: <ul> <li> Product: " & Sofas_product_details & "</li> <li> Price: " & Sofas_price_details & "</li> <li> Color: " & Sofas_color_details & "</li> </ul>Notes: " & TextInput_sofas & "<br><b> Thank you for shopping with us! </b>");
     Navigate('End page',ScreenTransition.Cover) 

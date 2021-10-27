@@ -38,10 +38,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
     :::image type="content" source="../media/select-lists.png" alt-text="Screenshot of selecting lists." lightbox="../media/select-lists.png":::
 
-6. All the required data is connected and ready to use in the application. In the upper-right corner of the **Data** pane, close it by selecting the close icon **(X)**.
-
->[!Tip]
-> Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
+6. All the required data is connected and ready to use in the application. You can now start building the application.
 
 ## Create the splash screen
 
@@ -86,6 +83,8 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
     :::image type="content" source="../media/configure-on-timer-end.png" alt-text="Screenshot of configuring OnTimerEnd property." lightbox="../media/configure-on-timer-end.png":::
 
+9. Save your application by navigating to **File** > **Save**. Next, select the **The cloud** option and click **Save**.
+
 ## Create the home page
 
 1. Click the **Home Page** which was created previously. To insert four buttons, navigate to the **Insert tab** and click the **Button** option to add buttons to the screen. Adjust the size and position of these buttons as required. Rename them as **Sofas_button**, **Chairs_button**, **Tables_button**, and **Carpets_button** respectively.
@@ -102,7 +101,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
 4. Click the newly created **Sofas_button** button and configure the **OnSelect** property. On clicking the button, it must navigate us to the product list page created in the previous step. Replace the *false* by the below-given code:
 
-    ```Power Apps
+    ```PowerApps
     Navigate(Sofas,ScreenTransition.Cover)
     ```
 
@@ -110,20 +109,20 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
 5. Repeat the same procedure for the other three buttons. Again, make sure to provide proper screen names in the **Navigate** function; for example, for configuring the **OnSelect** property of the **Chairs**, **Tables**, and **Carpets** button, use the following navigate function respectively:
 
-    ```Power Apps
+    ```PowerApps
     Navigate(Chairs,ScreenTransition.Cover)
     ```
 
-    ```Power Apps
+    ```PowerApps
     Navigate(Tables,ScreenTransition.Cover)
     ```
 
-    ```Power Apps
+    ```PowerApps
     Navigate(Carpets,ScreenTransition.Cover)
     ```
 
 >[!Tip]
-> Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
+> To save your progress, click the **File** tab at the top and select the **Save** option.
 
 >[!Note]
 > The default syntax of the **Navigate** function is: **Navigate**(*Screen* [, *Transition* [, *UpdateContextRecord*]])
@@ -131,6 +130,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 >* **Screen** - Required. The screen to display.
 >* **Transition** - Optional. The visual transition to use between the current screen and the next screen. The default value is None.
 >* **UpdateContextRecord** - Optional. A record that contains the name of at least one column and a value for each column. This record updates the context variables of the new screen as if passed to the UpdateContext function.
+
 >[!Tip]
 >You can test your application by pressing the **F5** key on the keyboard or clicking the **Play** button at the top-right corner of Power Apps Studio.
 
@@ -172,7 +172,7 @@ Now that we have added the product categories, we will display the list of produ
 
 7. Position the **Back** icon correctly and change its display color if required. Configure its **OnSelect** property by adding the following
 
-    ```Power Apps
+    ```PowerApps
     Navigate('Home Page',ScreenTransition.Cover)
     ```
 
@@ -181,7 +181,7 @@ Now that we have added the product categories, we will display the list of produ
 8. Follow the same procedure for the **Chairs**, **Tables**, and **Carpets** pages.
 
 >[!Tip]
-> Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
+> To save your progress, click the **File** tab at the top and select the **Save** option.
 
 ## Create details page
 
@@ -193,7 +193,7 @@ The details page includes all the details and information concerning the selecte
 
 2. Click on the **>** icon in the gallery control included in the **Sofas** page and all other similar pages. Then, configure the **OnSelect** property by adding the following line in the **Functions** tab.
 
-    ```Power Apps
+    ```PowerApps
     Navigate(Details_sofas,ScreenTransition.Cover,{content_sofas : ThisItem})
     ```
 
@@ -211,7 +211,7 @@ The details page includes all the details and information concerning the selecte
 
 4. Insert another label named **Product name** to display the name of the product at the top and **Center align** it. Configure the **Text** property of the label by adding the following line:
 
-    ```Power Apps
+    ```PowerApps
     content_sofas.'Name (Title)'
     ```
 
@@ -219,7 +219,7 @@ The details page includes all the details and information concerning the selecte
 
 5. Click the **Media** dropdown and select **Image** to insert an image in the **Details_sofas** screen. Configure the **Image** property in the following way:
 
-    ```Power Apps
+    ```PowerApps
     content_sofas.ImageLink
     ```
 
@@ -229,7 +229,7 @@ The details page includes all the details and information concerning the selecte
 
     * **Price** :
 
-        ``` Power Apps
+        ``` PowerApps
         content_sofas.Price
         ```
 
@@ -237,7 +237,7 @@ The details page includes all the details and information concerning the selecte
 
     * **Dimensions** :
 
-        ``` Power Apps
+        ``` PowerApps
         content_sofas.Dimensions
         ```
 
@@ -245,7 +245,7 @@ The details page includes all the details and information concerning the selecte
 
     * **Weight** :
 
-        ``` Power Apps
+        ``` PowerApps
         content_sofas.Weight
         ```
 
@@ -253,7 +253,7 @@ The details page includes all the details and information concerning the selecte
 
     * **Color** :
 
-        ``` Power Apps
+        ``` PowerApps
         content_sofas.Color
         ```
 
@@ -261,7 +261,7 @@ The details page includes all the details and information concerning the selecte
 
     * **Material** :
 
-        ``` Power Apps
+        ``` PowerApps
         content_sofas.PrimaryMaterial
         ```
 
@@ -269,7 +269,7 @@ The details page includes all the details and information concerning the selecte
 
 7. We will add a **Back** icon to navigate to the previous screen. To add the **Back** icon, expand the **Icons** dropdown and select the **Back icon**. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following:
 
-    ```Power Apps
+    ```PowerApps
     Navigate('Sofas',ScreenTransition.Cover)
     ```
 
@@ -278,11 +278,11 @@ The details page includes all the details and information concerning the selecte
     Likewise, follow the same procedure for **Details_chairs**, **Details_tables**, and **Details_carpets**. Customize the **Navigate** function accordingly.
 
 >[!Tip]
-> Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
+> To save your progress, click the **File** tab at the top and select the **Save** option.
 
 ## Insert and connect a 3D object to the View in MR component
 
-**View in MR** is a mixed reality feature provided by Power Apps which enables users to place **3D objects** or **Images** in their real world.
+**View in MR** is a mixed reality feature provided by Power Apps which enables users to place **3D objects** or **Images** in their real world. The 3D models and images required for the application are stored in the **SharePoint** lists. So let's start by adding the required resources in the respective **SharePoint** lists.
 
 1. In the created **SharePoint** list named **Easy Sales-Sofas**, select the **+ Add column** and select **Show/hide columns**.
 
@@ -292,7 +292,7 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/apply-attachments.png" alt-text="Screenshot to apply attachments" lightbox="../media/apply-attachments.png":::
 
-3. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file). Follow the same procedure for all the items on the list.
+3. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file) given in the **Power Apps custom folder**. Follow the same procedure for all the items on the list.
 
     :::image type="content" source="../media/add-attachments.png" alt-text="Screenshot to add attachments" lightbox="../media/add-attachments.png":::
 
@@ -305,7 +305,7 @@ The details page includes all the details and information concerning the selecte
 
 6. In the **Properties** tab for the **View in MR** component, select the **Source** field and enter to access the 3D models stored in your **SharePoint** list:
 
-    ```Power Apps
+    ```PowerApps
     First(Gallery_sofas.Selected.Attachments).Value
     ```
 
@@ -313,7 +313,7 @@ The details page includes all the details and information concerning the selecte
 
 7. Repeat the same procedure in the **Details_chairs** and **Details_tables** screen. While duplicating the procedure, make sure to change the **Gallery** names accordingly, for example,
 
-    ```Power Apps
+    ```PowerApps
     First(Gallery_chairs.Selected.Attachments).Value
     ```
 
@@ -322,15 +322,22 @@ The details page includes all the details and information concerning the selecte
 
 Another unique property provided by the **View in MR** component is **Object scaling**. You can edit the sizes of your 3D models externally by changing the **Object width**, **Object height**, and **Object depth** properties.
 
-* Set the  **Object width**, **Object height**, and **Object depth** along with the **Unit of measurement** in the **Properties** pane as shown in the figure.
+* Set the  following properties in the **Property** pane as shown in figure:
+
+  * **Object width** = 1.5
+  * **Object height** = 1
+  * **Object depth** =  1
+  * **Unit of measurement** = Meters
+  
+  These values are set according to the 3D models included in this application.
 
     :::image type="content" source="../media/object-scaling.png" alt-text="Screenshot to scale object for view in MR" lightbox="../media/object-scaling.png":::
 
->[!Note]
-> The values passed to the **Object width**, **Object height**, and **Object depth** are taken in the units specified in **Unit of measurement**. Choose an appropriate measure unit from the dropdown and later enter the values.
+>[!Information]
+> You can also customise the values passed to **Object width**, **Object height**, and **Object depth** according to your needs. The values passed are taken in the units specified in **Unit of measurement**. Choose an appropriate measure unit from the dropdown and later enter the values.
 
 >[!Tip]
-> Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
+> To save your progress, click the **File** tab at the top and select the **Save** option.
 
 ## Create notes page
 
@@ -354,7 +361,7 @@ It is allowed to take pictures during the **View in MR** session and display the
 
 5. Click the gallery added and configure the **Items** property by adding the following line:
 
-    ```Power Apps
+    ```PowerApps
     ViewInMR.Photos
     ```
 
@@ -372,7 +379,7 @@ It is allowed to take pictures during the **View in MR** session and display the
 
 8. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following
 
-    ```Power Apps
+    ```PowerApps
     Navigate('Details_sofas',ScreenTransition.Cover)
     ```
 
@@ -384,7 +391,7 @@ It is allowed to take pictures during the **View in MR** session and display the
 
 10. Configure the **OnSelect** property of the **Note** icon by adding the following line:
 
-    ```Power Apps
+    ```PowerApps
     Navigate(Notes_sofas,ScreenTransition.CoverRight)
     ```
 
