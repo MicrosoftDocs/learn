@@ -4,11 +4,12 @@ title: Learn about the Altair emulator disk services
 metadata:
   title: Learn about the Altair emulator disk services
   description: Learn about the Altair emulator disk services.
-  ms.date: 08/18/2021
+  ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 durationInMinutes: 1 
 content: |
   [!include[](includes/02-app-deployment.md)]
