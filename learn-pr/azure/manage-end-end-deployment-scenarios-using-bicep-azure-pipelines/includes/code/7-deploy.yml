@@ -1,0 +1,185 @@
+parameters:
+- name: environmentType
+  type: string
+
+stages:
+
+- ${{ if ne(parameters.environmentType, 'Production') }}:
+  - stage: Validate_${{parameters.environmentType}}
+    displayName: Validate (${{parameters.environmentType}} Environment)
+    jobs:
+    - job: ValidateBicepCode
+      displayName: Validate Bicep code
+      variables:
+      - group: ToyWebsite${{parameters.environmentType}}
+      steps:
+        - task: AzureCLI@2
+          name: RunPreflightValidation
+          displayName: Run preflight validation
+          inputs:
+            azureSubscription: ToyWebsite${{parameters.environmentType}}
+            scriptType: 'bash'
+            scriptLocation: 'inlineScript'
+            inlineScript: |
+              az deployment group validate \
+                --resource-group $(ResourceGroupName) \
+                --template-file deploy/main.bicep \
+                --parameters environmentType=$(EnvironmentType) \
+                             reviewApiUrl=$(ReviewApiUrl) \
+                             reviewApiKey=$(ReviewApiKey) \
+                             sqlServerAdministratorLogin=$(SqlServerAdministratorLogin) \
+                             sqlServerAdministratorLoginPassword=$(SqlServerAdministratorLoginPassword)
+
+- ${{ if eq(parameters.environmentType, 'Production') }}:
+  - stage: Preview_${{parameters.environmentType}}
+    displayName: Preview (${{parameters.environmentType}} Environment)
+    jobs:
+    - job: PreviewAzureChanges
+      displayName: Preview Azure changes
+      variables:
+      - group: ToyWebsite${{parameters.environmentType}}
+      steps:
+        - task: AzureCLI@2
+          name: RunWhatIf
+          displayName: Run what-if
+          inputs:
+            azureSubscription: ToyWebsite${{parameters.environmentType}}
+            scriptType: 'bash'
+            scriptLocation: 'inlineScript'
+            inlineScript: |
+              az deployment group what-if \
+                --resource-group $(ResourceGroupName) \
+                --template-file deploy/main.bicep \
+                --parameters environmentType=$(EnvironmentType) \
+                             reviewApiUrl=$(ReviewApiUrl) \
+                             reviewApiKey=$(ReviewApiKey) \
+                             sqlServerAdministratorLogin=$(SqlServerAdministratorLogin) \
+                             sqlServerAdministratorLoginPassword=$(SqlServerAdministratorLoginPassword)
+
+- stage: Deploy_${{parameters.environmentType}}
+  displayName: Deploy (${{parameters.environmentType}} Environment)
+  jobs:
+  - deployment: DeployWebsite
+    displayName: Deploy website
+    pool:
+      vmImage: windows-latest
+    variables:
+    - group: ToyWebsite${{parameters.environmentType}}
+    environment: ${{parameters.environmentType}}
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+            - checkout: self
+
+            - task: AzureCLI@2
+              name: DeployBicepFile
+              displayName: Deploy Bicep file
+              inputs:
+                azureSubscription: ToyWebsite${{parameters.environmentType}}
+                scriptType: 'bash'
+                scriptLocation: 'inlineScript'
+                inlineScript: |
+                  set -e
+                  deploymentOutput=$(az deployment group create \
+                    --name $(Build.BuildNumber) \
+                    --resource-group $(ResourceGroupName) \
+                    --template-file deploy/main.bicep \
+                    --parameters environmentType=$(EnvironmentType) \
+                                 reviewApiUrl=$(ReviewApiUrl) \
+                                 reviewApiKey=$(ReviewApiKey) \
+                                 sqlServerAdministratorLogin=$(SqlServerAdministratorLogin) \
+                                 sqlServerAdministratorLoginPassword=$(SqlServerAdministratorLoginPassword))
+                  appServiceAppName=$(echo $deploymentOutput | jq -r '.properties.outputs.appServiceAppName.value')
+                  appServiceAppHostName=$(echo $deploymentOutput | jq -r '.properties.outputs.appServiceAppHostName.value')
+                  storageAccountName=$(echo $deploymentOutput | jq -r '.properties.outputs.storageAccountName.value')
+                  storageAccountImagesBlobContainerName=$(echo $deploymentOutput | jq -r '.properties.outputs.storageAccountImagesBlobContainerName.value')
+                  sqlServerFullyQualifiedDomainName=$(echo $deploymentOutput | jq -r '.properties.outputs.sqlServerFullyQualifiedDomainName.value')
+                  sqlDatabaseName=$(echo $deploymentOutput | jq -r '.properties.outputs.sqlDatabaseName.value')
+                  echo "##vso[task.setvariable variable=appServiceAppName]$appServiceAppName"
+                  echo "##vso[task.setvariable variable=appServiceAppHostName;isOutput=true]$appServiceAppHostName"
+                  echo "##vso[task.setvariable variable=storageAccountName]$storageAccountName"
+                  echo "##vso[task.setvariable variable=storageAccountImagesBlobContainerName]$storageAccountImagesBlobContainerName"
+                  echo "##vso[task.setvariable variable=sqlServerFullyQualifiedDomainName]$sqlServerFullyQualifiedDomainName"
+                  echo "##vso[task.setvariable variable=sqlDatabaseName]$sqlDatabaseName"
+
+            - task: AzureRmWebAppDeployment@4
+              name: DeployWebsiteApp
+              displayName: Deploy website
+              inputs:
+                appType: webApp
+                ConnectionType: AzureRM
+                azureSubscription: ToyWebsite${{parameters.environmentType}}
+                ResourceGroupName: $(ResourceGroupName)
+                WebAppName: $(appServiceAppName)
+                Package: '$(Pipeline.Workspace)/website/publish.zip'
+
+            - task: SqlAzureDacpacDeployment@1
+              name: DeploySqlDatabaseDacpac
+              displayName: Deploy DACPAC to database
+              inputs:
+                ConnectedServiceNameARM: ToyWebsite${{parameters.environmentType}}
+                authenticationType: 'server'
+                serverName: $(sqlServerFullyQualifiedDomainName)
+                databaseName: $(sqlDatabaseName)
+                sqlUsername: $(SqlServerAdministratorLogin)
+                sqlPassword: $(SqlServerAdministratorLoginPassword)
+                deployType: 'DacpacTask'
+                deploymentAction: 'Publish'
+                dacpacFile: '$(Pipeline.Workspace)/database/ToyCompany.Database.dacpac'
+
+            - ${{ if ne(parameters.environmentType, 'Production') }}:
+              - task: SqlAzureDacpacDeployment@1
+                name: AddTestDataToDatabase
+                displayName: Add test data to database
+                inputs:
+                  ConnectedServiceNameARM: ToyWebsite${{parameters.environmentType}}
+                  authenticationType: 'server'
+                  serverName: $(sqlServerFullyQualifiedDomainName)
+                  databaseName: $(sqlDatabaseName)
+                  sqlUsername: $(SqlServerAdministratorLogin)
+                  sqlPassword: $(SqlServerAdministratorLoginPassword)
+                  deployType: 'sqlTask'
+                  sqlFile: 'deploy/sample-data/Toys.sql'
+
+              - task: AzureCLI@2
+                name: UploadSampleImages
+                displayName: Upload sample images
+                inputs:
+                  azureSubscription: ToyWebsite${{parameters.environmentType}}
+                  scriptType: 'bash'
+                  scriptLocation: 'inlineScript'
+                  inlineScript: |
+                    az storage blob upload-batch \
+                      --account-name $(storageAccountName) \
+                      --destination $(storageAccountImagesBlobContainerName) \
+                      --source 'deploy/sample-data/toyimages'
+
+- stage: SmokeTest_${{parameters.environmentType}}
+  displayName: Smoke Test (${{parameters.environmentType}} Environment)
+  jobs:
+  - job: SmokeTest
+    displayName: Smoke test
+    variables:
+      appServiceAppHostName: $[ stageDependencies.Deploy_${{parameters.environmentType}}.DeployWebsite.outputs['DeployWebsite.DeployBicepFile.appServiceAppHostName'] ]
+    steps:
+      - task: PowerShell@2
+        name: RunSmokeTests
+        displayName: Run smoke tests
+        inputs:
+          targetType: inline
+          script: |
+            $container = New-PesterContainer `
+              -Path 'deploy/Website.Tests.ps1' `
+              -Data @{ HostName = '$(appServiceAppHostName)' }
+            Invoke-Pester `
+              -Container $container `
+              -CI
+
+      - task: PublishTestResults@2
+        name: PublishTestResults
+        displayName: Publish test results
+        condition: always()
+        inputs:
+          testResultsFormat: NUnit
+          testResultsFiles: 'testResults.xml'
