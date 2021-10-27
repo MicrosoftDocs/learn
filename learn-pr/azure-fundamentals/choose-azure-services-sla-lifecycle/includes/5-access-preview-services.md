@@ -56,9 +56,11 @@ When you're using the preview version of the Azure portal, **Microsoft Azure (Pr
 
 You can provide feedback:
 
-* From the **Feedback** tab in the Azure portal.
-    :::image type="content" source="../media/5-azure-portal-feedback.png" alt-text="Screenshot of the Azure portal showing the Feedback tab.":::
 * From any of the 124 forums for Azure services, go to the [Azure feedback community ideas page](https://feedback.azure.com/d365community)
+* From the **Feedback** tab in the Azure portal.
+
+   :::image type="content" source="../media/5-azure-portal-feedback.png" alt-text="Screenshot of the Azure portal showing the Feedback tab.":::
+
 
 ## How can I stay updated on the latest announcements?
 
