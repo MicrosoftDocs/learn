@@ -1,4 +1,4 @@
-In this unit, you will install the software required for Azure Sphere development.
+In this unit, you'll install the software required for Azure Sphere development.
 
 The following list outlines the steps you will need to complete. Be sure to follow the steps for your computer operating system.
 
@@ -158,6 +158,7 @@ The **Update_config**
 
     ```
 
+> [!NOTE]
 > For your information. The **update_config** updates the **cmake/azsphere_config.cmake** file for each high-level Azure Sphere project in the **Altair8800Emulator** folder you cloned.
 
 Test you can build the Altair 8800 projects.
