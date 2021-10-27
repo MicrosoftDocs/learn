@@ -29,7 +29,7 @@ prerequisites: |
   - Power Apps account.
   - Mixed reality supported iOS mobile device(iOS 13 or later) or Android mobile device(Android 7 or later).
   - A Windows 8.1 or later PC.
-  - A supported browser to run [canvas apps](/powerapps/maker/canvas-apps/limits-and-config#supported-browsers-for-running-canvas-apps)
+  - A supported browser to run [canvas apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config)
   - Familiarity with OneDrive, SharePoint, and Excel
   - Power Apps application installed in a mobile device.
   

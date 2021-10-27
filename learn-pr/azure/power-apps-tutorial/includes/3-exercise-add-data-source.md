@@ -83,9 +83,11 @@ Once the list is created, it's time to add the data to it. Here data means the d
     Repeat the same procedure for rest of the columns in the above list.
 
     >[!Note]
-    > On creating a **SharePoint** list, a default **Title** column gets created, which can be renamed as **Name** for your use. 
+    > On creating a **SharePoint** list, a default **Title** column gets created, which can be renamed as **Name** for your use.
 
-2. Once the columns are added, let's start adding the actual data under these columns. To add data to the respective columns, download the custom folder that includes all the product details for all four lists.
+2. Once the columns are added, we have to add the actual data under these columns. Start adding data to the respective column by downloading the custom folder that includes all the product details for all four lists.
+
+    [Power Apps custom folder](https://netorg4603737-my.sharepoint.com/:f:/g/personal/developer_onginnovations_com/EtbMYeDiiv1LvCtb3wBKTKUBzKrLW-IazsDrZShq-Js_OA?e=yHPxf3)
 
 3. To add an item to your list, click on **+ New** and fill in the required details as provided in the downloaded **Excel** file. Click **Save** to save the entered details.
 
@@ -99,9 +101,9 @@ Once the list is created, it's time to add the data to it. Here data means the d
     :::image type="content" source="../media/add-list-details.png" alt-text="Screenshot of sharepoint list with added details" lightbox="../media/add-list-details.png":::
 
     >[!Note]
-    > Under the **ImageLink** column, you can add the image links of public images available on the internet. You can get the image links by right-clicking and selecting the **Copy image address** option.
+    >If you wish to include images of your own, you can add the image links of public images available on the internet under the **ImageLink** column. You can get the image links by right-clicking and selecting the **Copy image address** option.
 
-5. Follow the same procedure for the other three lists and add the product details accordingly.
+5. Follow the same procedure for the *Easy sales - Chairs* and *Easy Sales - Tables* list to add the product details accordingly.
 
 6. For the *Easy sales - Carpets* list, add the columns mentioned below and their types in the format: *Name of the column - Column type*. Later, start adding your data in their respective columns, as shown in the figure.
 
@@ -136,4 +138,4 @@ Now that all our data required for the application is stored in the SharePoint l
 4. The connection is created, and you can build an app from scratch.
 
 >[!Note]
-> Even if the connection is created, you can still add, edit and delete data stored in your SharePoint list. All the changes will be reflected through the connection.
+> Even if the connection is created, you can still add, edit and delete data stored in your SharePoint list. All the changes will be reflected in the application through the connection.

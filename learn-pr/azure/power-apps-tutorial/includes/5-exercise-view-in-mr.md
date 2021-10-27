@@ -57,8 +57,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
 4. Click the dropdown present beside the **Background image** property to add an image to the screen. Now, we will add the logo of our application **Easy Sales** to the splash screen.
 
-:::image type="content" source="../media/add-logo.png" alt-text="Screenshot of adding the easy sales logo." lightbox="../media/add-logo.png":::
-
+    :::image type="content" source="../media/add-logo.png" alt-text="Screenshot of adding the easy sales logo." lightbox="../media/add-logo.png":::
 
 5. Set the image position to **Fit** to have the entire image into the specified size. The **Fit** option scales the image proportionally and doesn't crop the image.
 
@@ -132,7 +131,6 @@ To include data to your **Power Apps**, you must connect to the data via the con
 >* **Screen** - Required. The screen to display.
 >* **Transition** - Optional. The visual transition to use between the current screen and the next screen. The default value is None.
 >* **UpdateContextRecord** - Optional. A record that contains the name of at least one column and a value for each column. This record updates the context variables of the new screen as if passed to the UpdateContext function.
-
 >[!Tip]
 >You can test your application by pressing the **F5** key on the keyboard or clicking the **Play** button at the top-right corner of Power Apps Studio.
 
@@ -156,7 +154,7 @@ Now that we have added the product categories, we will display the list of produ
 
     On assigning the above fields, you'll observe data getting reflected in your **Gallery**
 
-4. Adjust the size of the **Gallery_sofas** as required. To add the **ImageLink** to the **Image1** heading, click the **Image** in the gallery and configure the **Image** property on the **Property** tab by adding this line of code: 
+4. Adjust the size of the **Gallery_sofas** as required. To add the **ImageLink** to the **Image1** heading, click the **Image** in the gallery and configure the **Image** property on the **Property** tab by adding this line of code:
 
     ```PowerApps
     ThisItem.ImageLink
@@ -290,8 +288,8 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/select-add-column.png" alt-text="Screenshot to add column" lightbox="../media/select-add-column.png":::
 
-2. Make sure **Attachments** is selected and press **Apply** at the top. 
-    
+2. Make sure **Attachments** be selected and press **Apply** at the top.
+
     :::image type="content" source="../media/apply-attachments.png" alt-text="Screenshot to apply attachments" lightbox="../media/apply-attachments.png":::
 
 3. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file). Follow the same procedure for all the items on the list.
