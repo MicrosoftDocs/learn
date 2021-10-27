@@ -55,7 +55,7 @@ To complete the component that sends messages about sales performance, follow th
 1. Replace that line of code with the following code.
 
     ```C#
-    string messageBody = $"Total sales for Brazil in August: $13m.";
+    string messageBody = "Total sales for Brazil in August: $13m.";
     var message = new ServiceBusMessage(messageBody);
     ```
 
@@ -100,7 +100,7 @@ To complete the component that sends messages about sales performance, follow th
     
                 try
                 {
-                    string messageBody = $"Total sales for Brazil in August: $13m.";
+                    string messageBody = "Total sales for Brazil in August: $13m.";
                     var message = new ServiceBusMessage(messageBody);
                     Console.WriteLine($"Sending message: {messageBody}");
                     await sender.SendMessageAsync(message);
