@@ -15,7 +15,7 @@ To achieve these benefits, you'll use the *container-builder* tool to package th
         ![Screenshot that shows the NGC setup process.](../media/ngc-setup.png)
 
 
-    1. Select **Get API Key**. On the screen that appears, in the upper-right, select **Generate API Key**. Then select **Confirm** on the resulting prompt:
+    1. Select **Get API Key**. On the screen that appears, in the upper-right select **Generate API Key**. Then select **Confirm** on the resulting prompt.
 
         ![Screenshot that shows the NGC Generate API Key screen.](../media/ngc-generate-api-key.png)
 
@@ -25,11 +25,11 @@ To achieve these benefits, you'll use the *container-builder* tool to package th
         sudo docker login nvcr.io
         ```
 
-    1. When prompted for **Username**, enter *$oauthtoken* exactly as shown. When prompted for **Password**, enter the value of your generated API Key. You should receive the message "Login Succeeded."
+    1. When you're prompted for **Username**, enter *$oauthtoken* exactly as shown. When you're prompted for **Password**, enter the value of your generated API key. You should receive the message "Login Succeeded."
 
-1. Now that you have access to nvcr.io, you can begin to build containers that use the base images provided through NVIDIA NGC. The `container-builder` tool can build images by supplying it with a configuration file. You'll use one of the examples provided in the reference graphs package.
+1. Now that you have access to nvcr.io, you can begin to build containers that use the base images provided through NVIDIA NGC. The *container-builder* tool can build images by supplying it with a configuration file. You'll use one of the examples provided in the reference graphs package.
 
-    1. To invoke the *container-builder* to package the deepstream-test1 application, execute the following commands on the host machine:
+    1. To invoke the *container-builder* to package the deepstream-test1 application, run the following commands on the host machine:
 
         ```
         cd /opt/nvidia/deepstream/deepstream-6.0/reference_graphs/deepstream-test1
@@ -46,13 +46,13 @@ To achieve these benefits, you'll use the *container-builder* tool to package th
 
 1. Before you run this containerized workload, you're required to grant access to the X11 display environment when it runs from a container because of the workload by using an output sink of type EGL (type = 2).
 
-    Execute the following commands from a terminal on the host machine to enable access to the X11 services:
+    Run the following commands from a terminal on the host machine to enable access to the X11 services:
 
     ```Bash
     sudo xhost +
     ```
 
-1. Confirm that the containerized workload runs as expected by executing the following code in a terminal on the host machine:
+1. Confirm that the containerized workload runs as expected by running the following code in a terminal on the host machine:
 
     ```
     sudo docker run -it --rm --gpus all -v /tmp/.X11-unix/:/tmp/.X11-unix/ -e DISPLAY=:0 

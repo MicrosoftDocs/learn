@@ -28,7 +28,7 @@ By using these extensions, you can add features and functionality to the Compose
     Repository synced
     ```
 
-1. Verify that the extensions are installed and available with this command:
+1. Verify that the extensions are installed and available by using this command:
 
     ```Bash
     registry extn list
@@ -36,7 +36,7 @@ By using these extensions, you can add features and functionality to the Compose
 
     You might notice that many of these extensions begin with prefixes that map to the NVIDIA optimized GStreamer plug-ins included in the DeepStream SDK. For example, the *NvDsMuxDemuxExt* extension provides a visual component for interacting with [*Gst-nvstreamdemux*](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_plugin_gst-nvstreamdemux.html).
 
-1. Now open the Composer application with this command:
+1. Now open the Composer application by using this command:
 
     ```Bash
     composer
@@ -48,7 +48,7 @@ By using these extensions, you can add features and functionality to the Compose
 
     :::image type="content" source="../media/composer-components.png" alt-text="Screenshot that shows NVIDIA DeepStream Graph Composer components." lightbox="../media/composer-components.png":::
 
-    The following guidelines help you understand how to interact with the composer application to develop custom applications:
+    The following guidelines help you understand how to interact with the Composer application to develop custom applications:
 
     * To add a new component instance, select and hold the name of a component. Then drag it into the graph editor space.
     * To display the name of a component, look at the *header* in the graph area. The component also might contain *handles* for input/output ports.
@@ -61,15 +61,15 @@ By using these extensions, you can add features and functionality to the Compose
     /opt/nvidia/deepstream/deepstream/reference_graphs/
     ```
 
-    1. In the Composer application, select **File** > **Open Graph** and go to the `/opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test1` path. Select the *deepstream-test1.yaml* file. Then select **Okay**.
+    1. In the Composer application, select **File** > **Open Graph** and go to the */opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test1* path. Select the *deepstream-test1.yaml* file. Then select **Okay**.
 
-        :::image type="content" source="../media/composer-open-test1.png" alt-text="NVIDIA DeepStream Graph Composer opening Test1 application." lightbox="../media/composer-open-test1.png":::
+        :::image type="content" source="../media/composer-open-test1.png" alt-text="Screenshot that shows NVIDIA DeepStream Graph Composer opening Test1 application." lightbox="../media/composer-open-test1.png":::
 
-    1. Select the *NvDsSingleSrcInput* component and notice the **Details** pane that opens on the right side of the application. Scroll down in the **Details** pane and notice the **uri** property where we set the video file that will be used as input in this IVA pipeline.
+    1. Select the *NvDsSingleSrcInput* component and the **Details** pane opens on the right side of the application. Scroll down in the **Details** pane and notice the **uri** property where we set the video file that will be used as input in this IVA pipeline.
 
         :::image type="content" source="../media/composer-test1-properties.png" alt-text="Screenshot that shows NVIDIA DeepStream Graph Composer Test1 application properties." lightbox="../media/composer-test1-properties.png":::
 
-    1. If you want to modify the **uri** property to use an RTSP stream, set **type** equal to **4** and provide an RTSP path, `rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov`. This action has the same effect as the DeepStream [source0] configuration group entry shown here:
+    1. If you want to modify the **uri** property to use an RTSP stream, set **type** equal to **4**. Provide the RTSP path *rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov*. This action has the same effect as the DeepStream [source0] configuration group entry shown here:
 
         ```
         [source0]
@@ -86,22 +86,22 @@ By using these extensions, you can add features and functionality to the Compose
         cudadec-memtype=0
         ```
 
-1. Next, let's look at the overall flow of the IVA pipeline presented in this example. After you understand the overall workflow and expected behavior of the graph, you'll then up this workload as a containerized workload for redistribution and execution.
+1. Next, look at the overall flow of the IVA pipeline presented in this example. After you understand the overall workflow and expected behavior of the graph, you'll then up this workload as a containerized workload for redistribution and execution.
 
     :::image type="content" source="../media/composer-test1.png" alt-text="Screenshot that shows NVIDIA DeepStream Graph Composer Test1 application full." lightbox="../media/composer-test1.png":::
 
     This application takes a video source as input by using `NvDsSingleSrcInput`, which is passed into `NvDsStreamMux` (which could technically process multiple video inputs). The output of `NvDsStreamMux` provides a frame from each video input, which is sent for processing in `NvDsInferVideo`. Inference is applied by using a ResNet 4 class object detector, such as bicycle, car, person, or road sign. The inference results of `NvDsInferVideo` are passed to both `NvDsPerClassObjectCounting`, to display a count for each detected class, and `NvsOSD`, which generates the on-screen detections with bounding boxes. The boxes are displayed by the final connection to `NvDsVideoRenderer`.
 
-1. To verify this behavior and see it in action, invoke the included `execute_graph.sh` script and pass in the necessary parameters in `parameters.yaml`. To execute the graph for `deepstream-test1.yaml` on our x86-based host, run the following commands in a terminal:
+1. To verify this behavior and see it in action, invoke the included `execute_graph.sh` script and pass in the necessary parameters in `parameters.yaml`. To execute the graph for *deepstream-test1.yaml* on the x86-based host, run the following commands in a terminal:
 
     ```Bash
     cd /opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test1
     /opt/nvidia/graph_composer/execute_graph.sh deepstream-test1.yaml parameters.yaml
     ```
 
-    You should see output similar to what's shown here:
+    You should see output similar to that shown here:
 
      ![Screenshot that shows NVIDIA DeepStream Graph Composer Test1 running.](../media/composer-execute-graph.png)
 
     >[!NOTE]
-    >If you intend to use a virtual machine to satisfy the host machine requirements, you might encounter issues when you attempt to run a DeepStream application that uses an EGL sink for visualized output. To work around this limitation, change the **type** of your **uri** source to **1** for **FakeSink**. Be aware that a FakeSink won't provide any visual output. It allows your workload to execute but without an associated on-screen display of processed results.
+    >If you intend to use a virtual machine to satisfy the host machine requirements, you might encounter issues when you attempt to run a DeepStream application that uses an EGL sink for visualized output. To work around this limitation, change the **type** of your **uri** source to **1** for **FakeSink**. Be aware that FakeSink won't provide any visual output. It allows your workload to execute but without an associated on-screen display of processed results.

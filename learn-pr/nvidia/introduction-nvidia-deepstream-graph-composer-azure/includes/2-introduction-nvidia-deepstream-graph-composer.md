@@ -6,7 +6,7 @@ We looked at developing applications with the NVIDIA DeepStream SDK by using a c
 
 The available components might seem familiar to you because of the Configuration Groups we used earlier. These components and the Configuration Groups both derive from functions provided in the DeepStream SDK C libraries. These components are made available to the Composer application by using a local registry that pulls and stores extensions provided by NVIDIA. The Composer application also allows for importing custom extensions to support components.
 
-After a graph is ready for production, an included *container-builder* tool allows developers to package Composer Graphs into container workloads capable of running on X86 or ARM64 devices. You can use this feature with the Graph Composer to build containerized IVA pipelines that can be deployed to server-class or edge-capable devices.
+After a graph is ready for production, an included *container-builder* tool allows developers to package Composer Graphs into container workloads capable of running on x86 or ARM64 devices. You can use this feature with the Graph Composer to build containerized IVA pipelines that can be deployed to server-class or edge-capable devices.
 
 The full process for this workflow is shown here.
 
