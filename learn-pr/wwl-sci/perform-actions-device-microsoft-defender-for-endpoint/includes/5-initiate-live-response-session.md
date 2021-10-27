@@ -57,9 +57,8 @@ Depending on the role that's been granted to you, you can run *basic* or *advanc
 
 The following commands are available for user roles that are granted the ability to run _basic_ Live Response commands.
 
-
 | Command | Description |
-| :--- | :--- |
+| ---- | ---- |
 | `cd` | Changes the current directory. |
 | `cls`| Clears the console screen.|
 | `connect`| Initiates a Live Response session on the device. |
