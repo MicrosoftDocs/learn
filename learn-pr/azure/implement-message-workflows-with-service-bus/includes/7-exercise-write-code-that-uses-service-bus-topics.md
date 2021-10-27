@@ -32,6 +32,8 @@ To complete the component that sends messages about sales performance, follow th
 1. Replace that line of code with the following code.
 
     ```C#
+    // By leveraging "await using", the DisposeAsync method will be called automatically once the client variable goes out of scope.
+    // In more realistic scenarios, you would want to store off a class reference to the client (rather than a local variable) so that it can be used throughout your program.
     await using var client = new ServiceBusClient(ServiceBusConnectionString);
     ```
 1. Within that method, locate the following line of code.
