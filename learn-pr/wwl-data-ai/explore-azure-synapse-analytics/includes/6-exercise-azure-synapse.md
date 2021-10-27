@@ -34,7 +34,7 @@ To use Synapse Analytics, you must provision a Synapse Analytics Workspace resou
 8. On the left side of Synapse Studio, use the **&rsaquo;&rsaquo;** icon to expand the menu - this reveals the different pages within Synapse Studio that you'll use to manage resources and perform data analytics tasks, as shown here:
 
 > [!div class="mx-imgBorder"]
-> ![Image showing the elements of Azure Synapse Analytics](../media/synapse-studio.png)
+> ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](../media/synapse-studio.png)
 
 ### Ingest data
 
@@ -102,7 +102,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define *
 14. On the **Data** page, select the **Linked** tab and expand the **Azure Data Lake Storage Gen 2** hierarchy until you see the file storage for your Synapse workspace. Then select the file storage to verify that a file named **products.csv** has been copied to this location, as shown here:
 
 > [!div class="mx-imgBorder"]
-> ![Image showing the elements of Azure Synapse Analytics](../media/synapse-storage.png)
+> ![Image showing Synapse Studio expanded Azure Data Lake Storage Gen 2 hierarchy with the file storage for your Synapse workspace](../media/synapse-storage.png)
 
 ### Use a SQL pool to analyze data
 
@@ -201,7 +201,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     The resulting chart should resemble this:
 
 > [!div class="mx-imgBorder"]
-> ![Image showing the elements of Azure Synapse Analytics](../media/column-chart.png)
+> ![Image showing the product count chart view](../media/column-chart.png)
 
 ### (If time permits) Use a Spark pool to analyze data
 
@@ -278,7 +278,7 @@ While SQL is a common language for querying structured datasets, many data analy
 14. In the results output for the cell, select the **Chart** view. The resulting chart should resemble this:
 
 > [!div class="mx-imgBorder"]
-> ![Image showing the elements of Azure Synapse Analytics](../media/bar-chart.png)
+> ![Image showing category count chart view](../media/bar-chart.png)
 
 15. Close the **Notebook 1** pane and discard your changes.
 

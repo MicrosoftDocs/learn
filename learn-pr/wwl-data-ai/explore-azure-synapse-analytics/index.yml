@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore large-scale data analytics
-summary: Explore data ingestion options available when you’re building a data warehouse with Azure, services for performing data analytics, and features of Azure Synapse Analytics. Create a Synapse Analytics workspace and use it to ingest and analyze data.
+summary: Explore data ingestion options to build a data warehouse with Azure, services to perfor data analytics, and features of Azure Synapse Analytics. Create a Synapse Analytics workspace and use it to ingest and analyze data.
 abstract: |
   In this module, you will:
   * Describe data ingestion in Azure
