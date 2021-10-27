@@ -3,11 +3,12 @@ uid: learn.student-evangelism.altair-azure-sphere-create-iot-central-application
 metadata:
   title: Create an Azure IoT Central application for Altair 8800 and Azure Sphere
   description: Learn how to create a cloud-based Azure IoT Central application for the Altair 8800 emulator and Azure Sphere.
-  ms.date: 08/30/2021
+  ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 title: Create an Azure IoT Central application
 summary: Learn how to create a cloud-based Azure IoT Central application for the Altair 8800 emulator and Azure Sphere.
 abstract:  |

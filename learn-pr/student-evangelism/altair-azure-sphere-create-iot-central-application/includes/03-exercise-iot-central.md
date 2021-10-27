@@ -22,3 +22,4 @@ In this exercise, you'll create an Azure Iot Central application and link it to 
 
 1. Select **Create**.
 
+
