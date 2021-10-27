@@ -21,21 +21,21 @@ quiz:
     choices:
     - content: "Three."
       isCorrect: false
-      explanation: "That's incorrect. Symmetric encryption does not need that many keys."
+      explanation: "That's incorrect. Symmetric encryption doesn't need that many keys."
     - content: "One."
       isCorrect: true
-      explanation: "That's correct. Symmetric encryption uses one secret encryption key which is shared with all parties."
+      explanation: "That's correct. Symmetric encryption uses one secret encryption key that's shared with all parties."
     - content: "Two."
       isCorrect: false
-      explanation: "That's incorrect. Asymmetric encryption uses two keys, a private key and a public key."
-  - content: "When using asymmetric encryption, which key should not be shared?"
+      explanation: "That's incorrect. Asymmetric encryption uses two keys, one private and one public."
+  - content: "When using asymmetric encryption, which key shouldn't not shared?"
     choices:
     - content: "Private key."
       isCorrect: true
       explanation: "That's correct. The private key should always be kept safe and never shared."
     - content: "Public key."
       isCorrect: false
-      explanation: "That's incorrect. Asymmetric encryption requires that you share the public key in order to turn a plaintext message into ciphertext."
+      explanation: "That's incorrect. Asymmetric encryption requires that you share the public key to turn a plaintext message into ciphertext."
     - content: "Key pair."
       isCorrect: false
       explanation: "That's incorrect. The key pair contains both the public and private keys."
@@ -43,10 +43,10 @@ quiz:
     choices:
     - content: "A hashing function is an algorithm that creates a new ciphertext message from the plaintext."
       isCorrect: false
-      explanation: "That's incorrect. A hashing function creates a value that represents the content of plaintext and can be used to verify that the source."
-    - content: "A hashing function is an algorithm that is used to decrypt ciphertext from the sender."
+      explanation: "That's incorrect. A hashing function creates a value that represents the content of plaintext and can be used to verify the source."
+    - content: "A hashing function is an algorithm that's used to decrypt ciphertext from the sender."
       isCorrect: false
-      explanation: "That's incorrect. A hashing function creates a value that represents the content of plaintext and can be used to verify that the source."
-    - content: "A hashing function is an algorithm that creates a fixed length hexadecimal value of the plaintext."
+      explanation: "That's incorrect. A hashing function creates a value that represents the content of plaintext and can be used to verify the source."
+    - content: "A hashing function is an algorithm that creates a fixed-length hexadecimal value of the plaintext."
       isCorrect: true
-      explanation: "That's correct. The hashing function creates a value that represents the content of plaintext and can be used to verify that the source document has not changed."
+      explanation: "That's correct. The hashing function creates a value that represents the content of plaintext and can be used to verify that the source document hasn't changed."
