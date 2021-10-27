@@ -16,25 +16,31 @@ With Live Response, analysts can do all of the following tasks:
 
 Before you can initiate a session on a device, make sure you fulfill the following requirements:
 
-**Verify that you're running a supported version of Windows 10**
+- **Verify that you're running a supported version of Windows 10**
 
-Enable Live Response from the Settings page.  You'll need to enable the Live Response capability in the Advanced features settings page.
+    Enable Live Response from the Settings page.  You'll need to enable the Live Response capability in the Advanced features settings page.
+    
+    Only users with **manage security** or **global admin** roles can edit these settings.
 
-Only users with **manage security** or **global admin** roles can edit these settings.
+- **Ensure that the device has an Automation Remediation level assigned to it**
+   
+    You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise, you won't be able to establish a Live Response session to a member of that group.
 
-**Ensure that the device has an Automation Remediation level assigned to it**
+- **Enable Live Response unsigned script execution (optional)**
+    
+    Signature verification can be disabled in the Advanced features page of Settings. Allowing the use of unsigned scripts may increase your exposure to threats.  
+    
+    Running unsigned scripts is not recommended; however, if you must use them, you'll need to enable the setting in the Advanced features settings page.
 
-You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise, you won't be able to establish a Live Response session to a member of that group.
+- **Ensure that you have the appropriate permissions**
 
-**Enable Live Response unsigned script execution (optional)**
+    Only users who have been provisioned with the appropriate permissions can initiate a Live Response session. 
+    
+    The option to upload a file to the library is only available to users with the appropriate RBAC permissions. Upload is unavailable for users with only delegated permissions.
+    
+    Depending on the role that's been granted to you, you can run basic or advanced Live Response commands. User permissions are controlled by RBAC custom role.
 
-Signature verification can be disabled in the Advanced features page of Settings. Allowing the use of unsigned scripts may increase your exposure to threats.  Running unsigned scripts is not recommended; however, if you must use them, you'll need to enable the setting in the Advanced features settings page.
-
-**Ensure that you have the appropriate permissions**
-
-Only users who have been provisioned with the appropriate permissions can initiate a Live Response session. The option to upload a file to the library is only available to users with the appropriate RBAC permissions. The Upload object is unavailable for users with only delegated permissions. Depending on the role that's been granted to you, you can run basic or advanced Live Response commands. User permissions are controlled by RBAC custom role.
-
-## Live Response dashboard overview
+## Live Response dashboard
 
 When you initiate a Live Response session on a device, a dashboard opens to provide information about the session, including:
 
@@ -51,14 +57,16 @@ The dashboard also gives you access to:
 
 ## Live Response commands
 
-Depending on the role that's been granted to you, you can run *basic* or *advanced* Live Response commands. User permissions are controlled by RBAC custom roles. Live Response is a cloud-based interactive shell; as such, specific command performance may vary in response time depending on network quality and system load between the end user and the target device.
+Depending on the role that's been granted to you, you can run *basic* or *advanced* Live Response commands. User permissions are controlled by RBAC custom role. 
+
+Live Response is a cloud-based interactive shell; as such, specific command performance may vary in response time depending on network quality and system load between the end user and the target device.
 
 ### Basic commands
 
 The following commands are available for user roles that are granted the ability to run _basic_ Live Response commands.
 
 | Command | Description |
-| ---- | ---- |
+| :---- | :---- |
 | `cd` | Changes the current directory. |
 | `cls`| Clears the console screen.|
 | `connect`| Initiates a Live Response session on the device. |
@@ -73,7 +81,7 @@ The following commands are available for user roles that are granted the ability
 | `persistence` | Shows all known persistence methods on the device.|
 | `processes` | Shows all processes running on the device.|
 | `registry` | Shows registry values.|
-| `scheduledtasks| Shows all scheduled tasks on the device.|
+| `scheduledtasks` | Shows all scheduled tasks on the device.|
 | `services` | Shows all services on the device.|
 | `trace` | Sets the terminal's logging mode to debug. |
 
