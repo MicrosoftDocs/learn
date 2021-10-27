@@ -255,7 +255,7 @@ To complete the component that retrieves messages about sales performance, follo
                     AutoCompleteMessages = false
                 };
 
-                await using ServiceBusProcessor processor = client.CreateProcessor(TopicName, SubscriptionName, processorOptions);
+                ServiceBusProcessor processor = client.CreateProcessor(TopicName, SubscriptionName, processorOptions);
 
                 processor.ProcessMessageAsync += MessageHandler;
                 processor.ProcessErrorAsync += ErrorHandler;
