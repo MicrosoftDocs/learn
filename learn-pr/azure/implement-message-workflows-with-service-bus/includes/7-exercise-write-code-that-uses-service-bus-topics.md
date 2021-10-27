@@ -182,6 +182,17 @@ To complete the component that retrieves messages about sales performance, follo
         AutoCompleteMessages = false
     };
     ```
+1. Locate the following line of code.
+
+    ```C#
+    // Create a processor that we can use to process the messages
+    ```
+
+1. To create a processor, replace that line with the following code.
+
+    ```C#
+    ServiceBusProcessor processor = client.CreateProcessor(TopicName, SubscriptionName, processorOptions);
+    ```
 
 1. Locate the following line of code.
 
