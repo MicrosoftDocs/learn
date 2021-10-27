@@ -133,7 +133,7 @@ You call events from an <xref:Microsoft.AspNetCore.SignalR.IClientProxy> instanc
 
 ##### Example scopes
 
-Consider the following figures which help to visualize the hub sending messages to targeted clients. Seel the images below to expand them for improved readability.
+Consider the following figures which help to visualize the hub sending messages to targeted clients. See the images below to expand them for improved readability.
 
 ###### Broadcast to all
 
