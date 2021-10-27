@@ -26,17 +26,17 @@ Only users with **manage security** or **global admin** roles can edit these set
 
 You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise, you won't be able to establish a Live Response session to a member of that group.
 
-**Enable live response unsigned script execution (optional)**
+**Enable Live Response unsigned script execution (optional)**
 
-Signature verification can be disabled in the Advanced features page of Settings. Allowing the use of unsigned scripts may increase your exposure to threats.  Running unsigned scripts is not recommended as it can increase your exposure to threats. However, if you must use them, you'll need to enable the setting in the Advanced features settings page.
+Signature verification can be disabled in the Advanced features page of Settings. Allowing the use of unsigned scripts may increase your exposure to threats.  Running unsigned scripts is not recommended; however, if you must use them, you'll need to enable the setting in the Advanced features settings page.
 
 **Ensure that you have the appropriate permissions**
 
-Only users who have been provisioned with the appropriate permissions can initiate a session. The option to upload a file to the library is only available to users with the appropriate RBAC permissions. The Upload object is unavailable for users with only delegated permissions. Depending on the role that's been granted to you, you can run basic or advanced Live Response commands. User permissions are controlled by RBAC custom role.
+Only users who have been provisioned with the appropriate permissions can initiate a Live Response session. The option to upload a file to the library is only available to users with the appropriate RBAC permissions. The Upload object is unavailable for users with only delegated permissions. Depending on the role that's been granted to you, you can run basic or advanced Live Response commands. User permissions are controlled by RBAC custom role.
 
-## Live response dashboard overview
+## Live Response dashboard overview
 
-When you initiate a Live Response session on a device, a dashboard opens. The dashboard provides information about the session, including:
+When you initiate a Live Response session on a device, a dashboard opens to provide information about the session, including:
 
 - Who created the session
 - When the session started
@@ -49,13 +49,14 @@ The dashboard also gives you access to:
 - Command console
 - Command log
 
-## Live response commands
+## Live Response commands
 
-Depending on the role that's been granted to you, you can run basic or advanced live response commands. User permissions are controlled by RBAC custom roles.   Live response is a cloud-based interactive shell; as such, specific command experience may vary in response time depending on network quality and system load between the end user and the target device.
+Depending on the role that's been granted to you, you can run *basic* or *advanced* Live Response commands. User permissions are controlled by RBAC custom roles. Live Response is a cloud-based interactive shell; as such, specific command performance may vary in response time depending on network quality and system load between the end user and the target device.
 
 ### Basic commands
 
-The following commands are available for user roles that are granted the ability to run basic live response commands.
+The following commands are available for user roles that are granted the ability to run _basic_ Live Response commands.
+
 
 | Command | Description |
 | :--- | :--- |
@@ -80,7 +81,7 @@ The following commands are available for user roles that are granted the ability
 
 ### Advanced commands
 
-The following commands are available for user roles that are granted the ability to run advanced live response.
+For user roles that are granted the ability to run _advanced_ Live Response commands, in addition to the _basic_ commands, the following commands are available.
 
 | Command| Description|
 | :--- | :--- |
