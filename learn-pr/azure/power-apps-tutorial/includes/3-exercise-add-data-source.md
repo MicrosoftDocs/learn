@@ -123,7 +123,7 @@ Once the list is created, it's time to add the data to it. Here data means the d
 
 ## Create a connection
 
-Now that all our data required for the application is stored in the SharePoint list respectively. We will move on to establish a connection in Power Apps. Once the connection is established, you can easily access the SharePoint data through an application.
+Now that all our data required for the application is stored in the SharePoint list, we will move on to establish a connection in Power Apps. Once the connection is established, you can easily access the SharePoint data through an application.
 
 1. To start creating a connection, sign in to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) and select **Dataverse > Connections** in the left navigation bar. Then select **+ New connection** near the upper-left corner.
 
