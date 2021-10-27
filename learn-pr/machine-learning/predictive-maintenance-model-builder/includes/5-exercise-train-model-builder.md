@@ -4,7 +4,7 @@ You've collected sensor data from your company's manufacturing devices that are 
 
 To start the training process, you need add a new Machine Learning Model (ML.NET) item to a new or existing .NET application.
 
-### Create C# class library
+### Create a C# class library
 
 Since you're starting from scratch, create a new C# class library project to add a machine learning model to.
 
@@ -138,7 +138,7 @@ Model Builder automatically sets how long you should train for based on the size
 1. In the Train step of the Model Builder screen, set the Time to train (seconds) to 30.
 1. Select **Train**
 
-### Tracking the training process
+### Track the training process
 
 :::image type="content" source="../media/train-machine-learning-model.png" alt-text="Train predictive maintenance classification model" lightbox="../media/train-machine-learning-model.png":::
 

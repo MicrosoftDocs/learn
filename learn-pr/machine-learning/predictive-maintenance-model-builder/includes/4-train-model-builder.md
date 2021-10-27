@@ -1,9 +1,9 @@
-In this unit you'll learn how to train and evaluate machine learning models in Model Builder.
+In this unit, you'll learn how to train and evaluate machine learning models in Model Builder.
 
 The next steps after preparing your data for training are:
 
-- **Train your model**
-- **Evaluate your model**
+1. Train your model.
+1. Evaluate your model.
 
 During training, Model Builder applies algorithms to your data and using evaluation metrics for the specific scenario, you measure how well your model performs.
 

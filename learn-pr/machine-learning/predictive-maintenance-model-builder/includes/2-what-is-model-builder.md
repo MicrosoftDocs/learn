@@ -1,68 +1,59 @@
-Model Builder is a graphical Visual Studio extension to train and deploy custom machine learning models with ML.NET.
+Machine learning is a technique that uses mathematics and statistics to identify patterns within data without being explicitly programmed. Model Builder is a graphical Visual Studio extension to train and deploy custom machine learning models by using ML.NET.
 
-:::image type="content" source="../media/model-builder-extension.png" alt-text="Model Builder Visual Studio extension for ML.NET" lightbox="../media/model-builder-extension.png":::
+:::image type="content" source="../media/model-builder-extension.png" alt-text="Screenshot that shows the Model Builder Visual Studio extension for M L dot NET." lightbox="../media/model-builder-extension.png":::
 
-Machine learning is a technique that uses mathematics and statistics to identify patterns within data without being explicitly programmed.
+For example, let's say you want to predict the price of a home. If you're using a single feature such as the size of a home in square feet to estimate its price, you could probably program a heuristic that correlates larger homes to a higher price.
 
-For example, let's say you wanted to predict the price of a home. If you were using a single feature such as the size of a home in square feet to estimate its price, you could probably program a heuristic that correlates larger homes to a higher price.
+:::image type="content" source="../media/linear-regression-model.svg" alt-text="Graph that shows a linear regression model for house price." lightbox="../media/linear-regression-model.svg":::
 
-:::image type="content" source="../media/linear-regression-model.svg" alt-text="House price linear regression model graph" lightbox="../media/linear-regression-model.svg":::
+The world isn't always that simple, though. Many variables influence the price of a home. In cases like this, coming up with a simple heuristic that captures edge cases becomes difficult, and machine learning might be a better solution. 
 
-The world isn't always that simple though and there are many variables that influence the price of a home. It's in those cases that coming up with a simple heuristic that captures edge cases becomes difficult and machine learning may be a better solution. With machine learning, instead of explicitly programming rules, you use historical data to identify these rules based on actual observations.
+With machine learning, instead of explicitly programming rules, you use historical data to identify these rules based on actual observations. The patterns found through machine learning are then used to create an artifact known as a model to make predictions by using new and previously unseen data.
 
-The patterns found using machine learning are then used to create an artifact known as a model to make predictions using new and previously unseen data.
+ML.NET is an open-source, cross-platform machine learning framework for .NET. So you can apply your existing .NET skills and use the tools you're familiar with (like Visual Studio) to train machine learning models.
 
-ML.NET is an open-source, cross-platform, machine learning framework for .NET. This means you can use apply your existing .NET skills and use the tools you're familiar with like Visual Studio to train machine learning models.
+## What types of problems can I solve by using Model Builder?
 
-## What types of problems can I solve with Model Builder?
+You can use Model Builder to solve many common machine learning problems, such as:
 
-Model Builder can be used to solve many common machine learning problems such as:
+- **Categorizing data**: Organize news articles by topic.
+- **Predicting a numerical value**: Estimate the price of a home.
+- **Recommending items**: Recommend movies.
+- **Grouping items with similar characteristics**: Segment customers.
+- **Classifying images**: Tag an image based on its contents.
+- **Detecting objects in an image**: Detect pedestrians and bicycles at an intersection.
 
-- Categorizing data (organize news articles by topic)
-- Predicting a numerical value (estimate the price of a home)
-- Recommending items (recommend movies)
-- Grouping items with similar characteristics (customer segmentation)
-- Classifying images (tag an image based on its contents)
-- Detecting objects in an image (detect pedestrians and bicycles at an intersection)
+## How can I build models by using Model Builder?
 
-## How can I build models with Model Builder?
-
-Generally the process of adding machine learning models to your applications consists of the following steps:
-
-- Training
-- Consumption
+Generally, the process of adding machine learning models to your applications consists of two steps: training and consumption.
 
 ### Training
 
-Training is the process by which you apply algorithms to historical data in order to create an artifact or model that captures underlying patterns and can be used to make predictions on new data.
+Training is the process of applying algorithms to historical data to create a model that captures underlying patterns. You can then use the model to make predictions on new data.
 
-Model Builder uses automated machine learning (AutoML) to find the "best" model for your data.
+Model Builder uses automated machine learning (AutoML) to find the best model for your data. AutoML automates the process of applying machine learning to data. You can run an AutoML experiment on a dataset to iterate over different data transformations, machine learning algorithms, and settings, and then select the best model.
 
-AutoML automates the process of applying machine learning to data. Given a dataset, you can run an AutoML experiment to iterate over different data transformations, machine learning algorithms, and settings to select the best model.
-
-As a result, you don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve.
+You don't need machine learning expertise to use Model Builder. All you need is some data and a problem to solve.
 
 The model training process can be further broken down into the following steps:
 
-- **Choose a scenario** - What problem am I trying to solve? The scenario you choose depends on your data and what you're trying to predict.
-- **Choose an environment** - Where do I want to train my model? Depending on available compute resources, cost, privacy requirements, and a series of other factors you may choose to train models locally on your computer or the cloud.
-- **Load your data** - Load the dataset to use for training, define the columns you want to predict, and choose the columns you want to use as inputs for your prediction.
-- **Train your model** - Let AutoML choose the best algorithm for your dataset based on the scenario you've chosen.
-- **Evaluate your model** - Use evaluation metrics to compare how well your model performs and makes predictions on new data.
+1. **Choose a scenario**: What problem are you trying to solve? The scenario that you choose depends on your data and what you're trying to predict.
+1. **Choose an environment**: Where do you want to train your model? Depending on available compute resources, cost, privacy requirements, and other factors, you might choose to train models locally on your computer or in the cloud.
+1. **Load your data**: Load the dataset to use for training. Define the columns that you want to predict, and then choose the columns that you want to use as inputs for your prediction.
+1. **Train your model**: Let AutoML choose the best algorithm for your dataset based on the scenario you've chosen.
+1. **Evaluate your model**: Use metrics to evaluate how well your model performs and makes predictions on new data.
 
 ### Consumption
 
-Model consumption is the process of using a trained machine learning model to make predictions on new and previously unseen data.
+After you train a machine learning model, it's time to use it to make predictions. Consumption is the process of using a trained machine learning model to make predictions on new and previously unseen data. With Model Builder, you can consume machine learning models from new and existing .NET projects.
 
-Once you train a machine learning model, it's time to use it to make predictions. With Model Builder, you can consume machine learning models from new and existing .NET projects.
-
-ML.NET, machine learning models are serialized and saved to a file. The model file can then be loaded into any .NET application and used to make predictions using ML.NET APIs. Some of these application types include:
+ML.NET-based machine learning models are serialized and saved to a file. The model file can then be loaded into any .NET application and used to make predictions through ML.NET APIs. These application types include:
 
 - ASP.NET Core Web API
 - Azure Functions
 - Blazor
-- WPF / WinForms
+- Windows Presentation Foundation (WPF) or Windows Forms (WinForms)
 - Console
 - Class library
 
-In the next unit, you'll learn about the machine learning model training process in Model Builder.
+In the next unit, you'll learn about the process of training a machine learning model in Model Builder.
