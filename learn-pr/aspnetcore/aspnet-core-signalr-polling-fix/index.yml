@@ -20,11 +20,10 @@ prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/
   - # prerequisite 2
   - # prerequisite 3
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
-  - # level
-roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
-  - # role 1
-  - # role 2
+levels:
+  - intermediate
+roles:
+  - developer
 products:
   {{products}}
 units:

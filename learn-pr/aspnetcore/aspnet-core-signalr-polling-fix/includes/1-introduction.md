@@ -1,62 +1,13 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+ASP.NET Core SignalR is an open-source library that simplifies adding real-time web functionality to apps. Real-time web functionality enables server-side code to push events to connected clients as they fire on the server. In addition to this, clients can also send messages to the server, thus exhibiting duplex communication.
 
-    Goal: orient the learner to the area covered in this module
-
-    Heading: none
-
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
-
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
-
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add a visual element
-
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
-
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
-
-    Heading: "## Example scenario"
-
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
-
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=master#images)
-
-    Optional: a "scenario video" that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
 ## Example scenario
-TODO: add your scenario
-TODO: add a visual element
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
+Imagine you're part of a development team that is hired to update an existing website's live map feature. The live map is part of an ordering system where customers of Contoso Pizza can track their order progress. The current solution is implemented using client-side polling for order status change updates. This method is less than ideal as it has the potential to flood the server with requests. Contoso Pizza has been getting reports of orders that fail to be processed, resulting in a loss of sales and potential repeat customers. The failures reported in the logs are around the peak hours of the sales day and are correlated to customers watching the live order map. Their clients are flooding the server with too many requests, and it fails. We'll use SignalR be used to address these concerns.
 
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: "## What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
 ## What will we be doing?
-TODO: add your activities
 
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
+In this module, you'll learn how to replace existing functionality in a client application. The application in question is a Blazor WebAssembly app and its implemented solution relies on polling. Instead, you'll refactor the code to use ASP.NET Core SignalR.
 
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
-
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
 
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+By the end of this session, you'll be familiar with the process of identifying opportunities to use ASP.NET Core SignalR. You'll understand the steps involved to evaluate what code needs to change as part of refactoring to ASP.NET Core SignalR. You'll realize the benefits associated with using ASP.NET Core SignalR as an alternative to client-side polling.
