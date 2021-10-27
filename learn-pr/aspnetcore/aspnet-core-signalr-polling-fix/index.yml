@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.aspnet-core-signalr-polling-fix
+metadata:
+  moduleType: standard
+  title: Replace client polling with ASP.NET Core SignalR
+  description: In this module you'll use ASP.NET Core SignalR to replace existing client-side polling functionality in a web app.
+  ms.date: 10/27/2021
+  author: IEvangelist
+  ms.author: dapine
+  ms.topic: interactive-tutorial # do we need ms.topic?
+title: Replace client polling with ASP.NET Core SignalR
+summary: In this module you'll use ASP.NET Core SignalR to replace existing client-side polling functionality in a web app.
+abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
+  By the end of this module, you'll be able to:
+    - # objective 1
+    - # objective 2
+    - # objective 3 (if needed)
+prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
+  - # prerequisite 1
+  - # prerequisite 2
+  - # prerequisite 3
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
+  - # level
+roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
+  - # role 1
+  - # role 2
+products:
+  {{products}}
+units:
+- learn.aspnet-core-signalr-polling-fix.introduction
+- learn.aspnet-core-signalr-polling-fix.learning-content
+- learn.aspnet-core-signalr-polling-fix.exercise
+- learn.aspnet-core-signalr-polling-fix.knowledge-check
+- learn.aspnet-core-signalr-polling-fix.summary
+badge:
+  uid: learn.aspnet-core-signalr-polling-fix.badge
