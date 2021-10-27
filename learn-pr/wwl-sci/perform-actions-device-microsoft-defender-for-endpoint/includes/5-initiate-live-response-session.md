@@ -57,7 +57,7 @@ Depending on the role that's been granted to you, you can run basic or advanced 
 
 The following commands are available for user roles that are granted the ability to run basic live response commands.
 
-| Command | Description|
+| Command | Description |
 | :--- | :--- |
 | `cd` | Changes the current directory. |
 | `cls`| Clears the console screen.|
@@ -76,6 +76,7 @@ The following commands are available for user roles that are granted the ability
 | `scheduledtasks| Shows all scheduled tasks on the device.|
 | `services` | Shows all services on the device.|
 | `trace` | Sets the terminal's logging mode to debug. |
+
 
 ### Advanced commands
 
