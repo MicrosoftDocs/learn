@@ -305,3 +305,22 @@ In this module, you'll be using some of the key functional components of **Power
 
     >[!Note]
     >The names used in the above function follow the namings used in this application at the time of development. You may customize the function concerning your application.
+
+## Test your application in mobile device
+
+1. Choose the download link for your device:
+    * For iOS (iPad or iPhone), go to the [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8).
+    * For Android, go to [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps).
+
+2. Open Power Apps on your mobile device, and sign in by using your Microsoft account credentials.
+
+3. The apps that you used recently will show on the default screen when you sign in to Power Apps mobile.
+
+    The Home is the default screen when you sign in. It shows the apps that you used recently and the apps that have marked as favorites.
+
+4. To run an app on a mobile device, select the app tile. If this is the first time you're running a canvas app by using Power Apps mobile, a screen shows the swipe gestures.
+
+5. Use your finger to swipe from the left edge of the app to the right to close an app. On Android devices, you can also press the Back button and then confirm that you intended to close the app.
+
+>[!Note]
+> If an app requires a connection to a data source or permission to use the device's capabilities (such as the camera or location services), you must give consent before you can use the app. Typically, you're prompted only the first time you run the app.
