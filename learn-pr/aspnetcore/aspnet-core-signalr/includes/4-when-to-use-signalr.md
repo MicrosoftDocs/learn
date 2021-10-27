@@ -25,15 +25,15 @@ SignalR can be used on-premises, in the cloud, or with Azure SignalR Service.
 
 ##### On-premises
 
-:::image type="content" source="../media/on-prem-signalr.png" lightbox="../media/on-prem-signalr.svg" alt-text="ASP.NET Core SignalR On-prem":::
+:::image type="content" source="../media/on-prem-signalr.png" lightbox="../media/on-prem-signalr-large.png" alt-text="ASP.NET Core SignalR On-prem":::
 
 ##### Cloud
 
-:::image type="content" source="../media/cloud-signalr.png" lightbox="../media/cloud-signalr.svg" alt-text="ASP.NET Core SignalR Cloud":::
+:::image type="content" source="../media/cloud-signalr.png" lightbox="../media/cloud-signalr-large.png" alt-text="ASP.NET Core SignalR Cloud":::
 
 ##### Azure SignalR Service
 
-:::image type="content" source="../media/service-signalr.png" lightbox="../media/service-signalr.svg" alt-text="Azure SignalR Service":::
+:::image type="content" source="../media/service-signalr.png" lightbox="../media/service-signalr-large.png" alt-text="Azure SignalR Service":::
 
 ### Valid use cases
 
