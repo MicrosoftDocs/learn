@@ -9394,6 +9394,11 @@
       "source_path": "learn-pr/azure/intro-to-cybersecurity/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/describe-basic-concepts-of-cybersecurity/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-architecture-fundamentals/exercise-create-website.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-architecture-fundamentals/",
+      "redirect_document_id": false
     }
   ]
 }
