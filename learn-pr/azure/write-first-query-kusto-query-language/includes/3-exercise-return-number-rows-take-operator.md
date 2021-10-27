@@ -1,108 +1,47 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+A Kusto query can be used to explore datasets and gain insights. 
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+Recall that we have a meterological dataset of which we are unfamiliar, and want to explore what we can learn from this data. 
 
-    Heading: none
+Here, we'll look at the structure of this data table using the `take` operator.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+## Connect to the data
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+In this example, we'll use the Azure Data Explorer web interface. However, Kusto Query Language can also be used in Log Analytics, Azure Sentinel, and other workspaces.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+1. Sign in to the [Azure Data Explorer Web UI](https://dataexplorer.azure.com/)
+1. In the left pane, select **Add Cluster**
+1. In the dialog box, under **Connection URI**, enter *help*.
+1. Select **Add**.
 
-    Goal: Describe the part of the scenario covered in this exercise
+:::image type="content" source="../media/3-add-cluster.png" alt-text="Screenshot of add help cluster in Azure Data Explorer Web UI.":::
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+### Select the database
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+Now you're connected to the help cluster. If you expand the help cluster in the left pane, you will see the **Samples** database. Under this database is a list of several tables. We're going to use the **StormEvents** table.
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+:::image type="content" source="../media/3-help-cluster.png" alt-text="Screenshot of help cluster organization.":::
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+1. Select the **Samples** database to complete the connection to the correct destination. Now you're ready to start exploring data.
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+## Write your first query
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+Let's take a look at a sample of the data in order to get to know the columns and types of data in the table. We don't need to see all rows for this, just a few examples.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+The `take` operator is perfect, as it returns a specified number of random rows. You can copy this query to your clipboard and run in your sample environment. Since the rows are selected at random, you will probably see different data than is displayed below.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+```kusto
+StormEvents
+| take 5
+```
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+:::image type="content" source="../media/3-take-5.png" alt-text="Screenshot of take 5 output.":::
 
-    Goal: List the steps they'll do to complete the exercise.
+## Explore the results
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+What do you notice about the results? Scroll all the way to the right of the dataset and see what you notice. Here are a few takeaways: 
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+* Each event has a start and end time, from the year 2007.
+* The **EventType** column shows different kinds of storms.
+* The **State** in which each storm occurred is written in all capital letters.
+* The damages associated with each storm are found in two separate columns: **DamageProperty** and **DamageCrops**.
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->

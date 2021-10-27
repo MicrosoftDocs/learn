@@ -10,35 +10,13 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
 -->
-Kusto Query Language (KQL) let's you construct read-only requests to process data and return results from large datasets in Azure. 
+Kusto Query Language (KQL) lets you explore your data and discover patterns, identify anomalies and outliers, and create statistical modeling. 
 
 TODO: add a visual element
-
 
 ## Example scenario
 
 Suppose you're a data analyst with a passion for meteorological data. You want to use KQL to explore and prepare a dataset that will enable you to answer basic questions about the kinds and locations of storms in the US.
-
-
-TODO: add a visual element
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
-
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
-
-    Heading: "## Example scenario"
-
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
-
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=master#images)
-
-    Optional: a "scenario video" that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
-
-
-
 
 ## What will we be doing?
 
@@ -50,20 +28,6 @@ You'll write simple queries in Kusto Query Language (KQL) to explore and gain in
 - Count instances by using the `count` operator
 - Reorder returned data by using the `sort` operator
 - Build a query by using those five operators
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
-
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: "## What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
-
 
 ## What is the main goal?
 
