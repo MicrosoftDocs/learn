@@ -18,7 +18,7 @@ In this unit, you'll learn about common game elements that can pose unintentiona
 > - Sensory demands
 > - Mental health and more
 >
->Additional information about these player experiences can be found in the summary and resources unit of this module.
+> Additional information about these player experiences can be found in the summary and resources unit of this module.
 
 ## Identifying visual elements
 
@@ -38,7 +38,7 @@ Identifying these elements is an important first step in accessible game develop
 ## Identifying audio elements
 
 Like visual elements, gaming experiences also use audio-based elements to portray information needed to navigate the experience. Think about the importance of audio-based information in the following scenario.
-
+ 
 A player is exploring a wooded area in the game. While the visual game environment remains the same, suddenly the game’s music becomes slow and ominous. The sound of footsteps rattles in the distance.
 
 Based on these audio cues, the player assumes impending danger. Before deciding to continue in the direction of the footsteps, they now know to first check their health and ammunition levels. The player makes the informed decision to avoid this area of the game until they collect more weapons and health potions.
