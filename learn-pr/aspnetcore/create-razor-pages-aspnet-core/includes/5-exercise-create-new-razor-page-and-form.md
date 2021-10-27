@@ -2,7 +2,7 @@ In this unit, you'll create a form in the *RazorPagesPizza* project using Razor 
 
 ## Create a page
 
-The *RazorPagesPizza* project directory is currently open in the Visual Studio Code. Run the following .NET Core CLI command in the command shell:
+The *RazorPagesPizza* project directory is currently open in the Visual Studio Code. Run the following .NET CLI command in the command shell:
 
 ```dotnetcli
 dotnet new page --name Pizza --namespace RazorPagesPizza.Pages --output Pages
@@ -47,7 +47,7 @@ A Razor page supports Razor syntax, which is HTML and C# combined. The C# code d
 
 ## Add Pizza and PizzaService classes
 
-Before we start to implement our form to manage pizzas, we need to have a data store that we can perform operations on.
+Before you start to implement the form to manage pizzas, you need to have a data store that you can perform operations on.
 
 A *model* class is needed to represent a pizza in inventory. The model contains properties that represent the characteristics of a pizza. The model is used to pass data in the web app and to persist pizza options in the data store. In this unit, that data store will be a simple local in-memory caching service. In a real-world application, you would consider using a database, such as SQL Server, with Entity Framework Core.
 
@@ -67,22 +67,22 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
 
     ```csharp
     using System.ComponentModel.DataAnnotations;
-    
+
     namespace RazorPagesPizza.Models;
-    
+
     public class Pizza
     {
         public int Id { get; set; }
-    
+
         [Required]
         public string? Name { get; set; }
         public PizzaSize Size { get; set; }
         public bool IsGlutenFree { get; set; }
-    
+
         [Range(0.01, 9999.99)]
         public decimal Price { get; set; }
     }
-    
+
     public enum PizzaSize { Small, Medium, Large }
     ```
 
@@ -96,13 +96,13 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
     mkdir Services
     ```
 
-    Select the folder in Visual Studio Code and add a new File called `PizzaService.cs`. 
+    Select the folder in Visual Studio Code and add a new File called `PizzaService.cs`.
 
 1. Add the following code to *Services/PizzaService.cs* to create an in-memory pizza data service. Save your changes.
 
     ```csharp
     using RazorPagesPizza.Models;
-    
+
     namespace RazorPagesPizza.Services;
     public static class PizzaService
     {
@@ -116,38 +116,38 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
                         new Pizza { Id = 2, Name = "Veggie", Price=15.00M, Size=PizzaSize.Small,     IsGlutenFree = true }
                     };
         }
-    
+
         public static List<Pizza> GetAll() => Pizzas;
-    
+
         public static Pizza? Get(int id) => Pizzas.FirstOrDefault(p => p.Id == id);
-    
+
         public static void Add(Pizza pizza)
         {
             pizza.Id = nextId++;
             Pizzas.Add(pizza);
         }
-    
+
         public static void Delete(int id)
         {
             var pizza = Get(id);
             if (pizza is null)
                 return;
-    
+
             Pizzas.Remove(pizza);
         }
-    
+
         public static void Update(Pizza pizza)
         {
             var index = Pizzas.FindIndex(p => p.Id == pizza.Id);
             if (index == -1)
                 return;
-    
+
             Pizzas[index] = pizza;
         }
                     }
     ```
 
-    This service provides a simple in-memory data caching service with two pizzas by default that our web app will use for demo purposes. When we stop and start the web app the in-memory data cache will be reset to the two default pizzas from the constructor of the `PizzaService`.
+    This service provides a simple in-memory data caching service with two pizzas by default that your web app will use for demo purposes. When you stop and start the web app, the in-memory data cache will be reset to the two default pizzas from the constructor of the `PizzaService`.
 
 ## Add form markup to the *Pizza* Razor page
 
@@ -290,4 +290,4 @@ The following HTML is rendered by the Validation Summary Tag Helper:
 
 The `type`, `data-val-range-min`, `data-val-range-max`, and error response are dynamically set by the model's data annotations for the model's `Product.Price` property.
 
-The product creation Razor page has been created. In order to process form interactions, we'll need to modify the `PageModel` class to handle the form's HTTP POST request. We'll explore `PageModel` interactions next.
+The product creation Razor page has been created. In order to process form interactions, you'll need to modify the `PageModel` class to handle the form's HTTP POST request. Let's explore `PageModel` interactions next.

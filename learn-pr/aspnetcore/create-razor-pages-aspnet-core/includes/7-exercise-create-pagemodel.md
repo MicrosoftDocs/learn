@@ -42,7 +42,7 @@ public List<Pizza> pizzas = new();
 
 When the `OnGet` method is called, it will assign the results of the `PizzaService.GetAll()` method to the `pizzas` variable. This variable will be accessible to the Razor page template, where it will be written to the table listing the available pizzas.
 
-These statements are referencing our `PizzaService` and `Pizza` classes, so we'll need to add the following using statements to the top of the `PizzaModel` class:
+These statements are referencing the `PizzaService` and `Pizza` classes, so you'll need to add the following using statements to the top of the `PizzaModel` class:
 
 ```csharp
 using RazorPagesPizza.Models;
@@ -51,7 +51,7 @@ using RazorPagesPizza.Services;
 
 ### Use a utility method to format the Gluten Free information in the list
 
-Our `IsGlutenFree` property is a boolean value. We can use a utility method to format the boolean value as a string. Add the following utility method to the `PizzaModel` class:
+The `IsGlutenFree` property is a boolean value. You can use a utility method to format the boolean value as a string. Add the following utility method to the `PizzaModel` class:
 
 ```csharp
 public string GlutenFreeText(Pizza pizza)
@@ -97,7 +97,7 @@ public Pizza NewPizza { get; set; } = new();
 
 ## Add an HTTP POST handler for the Delete buttons
 
-A Razor page can include multiple forms. Since the Delete buttons in our list of pizzas modifies data, an HTTP POST rather that an HTTP GET is required.
+A Razor page can include multiple forms. Since the Delete buttons in your list of pizzas modifies data, an HTTP POST rather that an HTTP GET is required.
 
 Add the following `OnPostDelete` method to the `PizzaModel` class:
 
@@ -136,7 +136,7 @@ The preceding highlighted code uses an Anchor Tag Helper. The Tag Helper:
 
 The `asp-page-handler` attribute is used to route to a specific page handler for the Razor page defined in the `asp-page` attribute. The `asp-page` attribute is used set an anchor tag's `href` attribute value to a specific Razor page.
 
-1. Run the following .NET Core CLI command in the command shell:
+1. Run the following .NET CLI command in the command shell:
 
     ```dotnetcli
     dotnet run
