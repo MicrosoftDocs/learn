@@ -4,7 +4,7 @@ The .NET CLI is the simplest way to create an ASP.NET Core web app. The CLI is p
 
 ## Create a web app project
 
-To set up a .NET project to work with a web app, we'll use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project easy. If you don't want to use another code editor, you can run the commands in this module in a terminal.
+To set up a .NET project to work with a web app, you'll use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project easy. If you don't want to use another code editor, you can run the commands in this module in a terminal.
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
