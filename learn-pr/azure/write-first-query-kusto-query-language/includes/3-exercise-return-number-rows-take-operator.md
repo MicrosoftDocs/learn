@@ -1,6 +1,6 @@
 A Kusto query can be used to explore datasets and gain insights. 
 
-Recall that we have a meterological dataset of which we are unfamiliar, and want to explore what we can learn from this data. 
+Recall that we have a meterological dataset of which we are unfamiliar, and want to explore what we can learn from this data.
 
 Here, we'll look at the structure of this data table using the `take` operator.
 
@@ -33,6 +33,8 @@ The `take` operator is perfect, as it returns a specified number of random rows.
 StormEvents
 | take 5
 ```
+
+To run the query, either select the **Run** button above the query window, or press **Shift+Enter**.
 
 :::image type="content" source="../media/3-take-5.png" alt-text="Screenshot of take 5 output.":::
 
