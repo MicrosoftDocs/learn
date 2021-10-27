@@ -9359,6 +9359,41 @@
       "source_path": "learn-pr/wwl-data-ai/deploy-mariadb-mysql-postgresql-azure/5-explain-database-migration-options.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-mariadb-mysql-postgresql-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-cybersecurity/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-basic-concepts-of-cybersecurity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-cybersecurity/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-basic-concepts-of-cybersecurity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-cybersecurity/2-what-is-cybersecurity.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-basic-concepts-of-cybersecurity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-cybersecurity/3-threat-landscape.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-basic-concepts-of-cybersecurity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-cybersecurity/4-mitigation-strategies.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-basic-concepts-of-cybersecurity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-cybersecurity/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-basic-concepts-of-cybersecurity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/learn-pr/azure/intro-to-cybersecurity/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-basic-concepts-of-cybersecurity/",
+      "redirect_document_id": false
     }
   ]
 }
