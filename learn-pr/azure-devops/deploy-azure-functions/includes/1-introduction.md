@@ -33,13 +33,13 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 
 :::row:::
 
-[!INCLUDE (../../shared/includes/meet-andy-short-col.md)]
+[!INCLUDE [](../../shared/includes/meet-andy-short-col.md)]
 
-[!INCLUDE (../../shared/includes/meet-irwin-short-col.md)]
+[!INCLUDE [](../../shared/includes/meet-irwin-short-col.md)]
 
-[!INCLUDE (../../shared/includes/meet-tim-short-col.md)]
+[!INCLUDE [](../../shared/includes/meet-tim-short-col.md)]
 
-[!INCLUDE (../../shared/includes/meet-mara-short-col.md)]
+[!INCLUDE [](../../shared/includes/meet-mara-short-col.md)]
 
 :::row-end:::
 
