@@ -41,6 +41,7 @@ roles:
 
 products:
 - azure
+- purview
 
 units:
 - learn.intro-to-azure-purview.introduction
