@@ -68,9 +68,6 @@ Follow along:
 1. Press **Button B** on the Avnet Stater kit to switch to **Input** mode.
 1. Press button **8** to turn off the address just entered.
 1. Press buttons **7**, **6**, **1**, and **0** to set the Intel 8080 Jmp instruction
-
-   <!-- :::image type="content" source="../media/altair-intel-8080-jmp-opcode.png" alt-text="Photo that show the LEDS 7,6,1,0 set for Intel opcode jmp." border="false"::: -->
-
 1. Press **Button B** on the Avnet Stater kit to switch to **Command** mode.
 1. Press **DEPOSIT** to deposit the first byte of the Jmp instruction at address 0x0100.
 1. Press **Button B** on the Avnet Stater kit to switch to **Input** mode.
