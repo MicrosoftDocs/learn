@@ -32,8 +32,8 @@ The modules in this learning path form a progression as you follow the Tailspin 
 
 1. Run a template that sets up your Azure DevOps organization:
 
-> [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=DeployAzureFunction&azure-portal=true)
+   > [!div class="nextstepaction"]
+   > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=DeployAzureFunction&azure-portal=true)
 
 1. From the Azure DevOps Demo Generator site, select **Sign In**. If prompted, accept the usage terms. The **Create New Project** page appears.
  
