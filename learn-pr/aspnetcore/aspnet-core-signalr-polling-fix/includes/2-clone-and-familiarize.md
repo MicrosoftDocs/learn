@@ -187,6 +187,118 @@ The primary focus for this module is refactoring the client-side polling to inst
 The preceding Razor markup:
 
 - Binds values from the `orderWithStatus` object as part of the component template.
+  - The created time, and status text values are bound in the order title markup.
+  - The order is passed as an argument to the `OrderReview` component.
+  - The map markers (which represent the markings on the live map) are passed to the `Map` component.
 - When the `OrderId` parameter is set, the `PollForUpdates` is started.
   - This method will make an HTTP request to the server every four seconds.
   - The latest order status details are re-assigned to the `orderWithStatus` variable.
+
+> [!NOTE]
+> The `PollForUpdates` method is `async void` which means it's fire-and-forget. This can cause unexpected behavior, and should be avoided if possible.
+
+Each time the order is received, it recalculates delivery status updates and corresponding map marker changes. This is achieved by calculated properties on the `OrderWithStatus` object. Consider the following _OrderWithStatus.cs_ C# file:
+
+```csharp
+using BlazingPizza.ComponentsLibrary.Map;
+using System;
+using System.Collections.Generic;
+
+namespace BlazingPizza
+{
+    public class OrderWithStatus
+    {
+        public readonly static TimeSpan PreparationDuration =
+            TimeSpan.FromSeconds(10);
+        public readonly static TimeSpan DeliveryDuration =
+            TimeSpan.FromMinutes(1); // Unrealistic, but more interesting to watch
+
+        public Order Order { get; set; }
+
+        public string StatusText { get; set; }
+
+        public bool IsDelivered => StatusText == "Delivered";
+
+        public List<Marker> MapMarkers { get; set; }
+
+        public static OrderWithStatus FromOrder(Order order)
+        {
+            // To simulate a real backend process, 
+            // we fake status updates based on the amount
+            // of time since the order was placed
+            string statusText;
+            List<Marker> mapMarkers;
+            var dispatchTime = order.CreatedTime.Add(PreparationDuration);
+
+            if (DateTime.Now < dispatchTime)
+            {
+                statusText = "Preparing";
+                mapMarkers = new List<Marker>
+                {
+                    ToMapMarker("You", order.DeliveryLocation, showPopup: true)
+                };
+            }
+            else if (DateTime.Now < dispatchTime + DeliveryDuration)
+            {
+                statusText = "Out for delivery";
+
+                var startPosition = ComputeStartPosition(order);
+                var difference = (DateTime.Now - dispatchTime).TotalMilliseconds;
+                var proportionOfDeliveryCompleted =
+                    Math.Min(1, difference / DeliveryDuration.TotalMilliseconds);
+
+                var driverPosition =
+                    LatLong.Interpolate(
+                        startPosition, order.DeliveryLocation, proportionOfDeliveryCompleted);
+                mapMarkers = new List<Marker>
+                {
+                    ToMapMarker("You", order.DeliveryLocation),
+                    ToMapMarker("Driver", driverPosition, showPopup: true),
+                };
+            }
+            else
+            {
+                statusText = "Delivered";
+                mapMarkers = new List<Marker>
+                {
+                    ToMapMarker(
+                        "Delivery location",
+                        order.DeliveryLocation, showPopup: true),
+                };
+            }
+
+            return new OrderWithStatus
+            {
+                Order = order,
+                StatusText = statusText,
+                MapMarkers = mapMarkers,
+            };
+        }
+
+        private static LatLong ComputeStartPosition(Order order)
+        {
+            // Random but deterministic based on order ID
+            var rng = new Random(order.OrderId);
+            var distance = 0.01 + rng.NextDouble() * 0.02;
+            var angle = rng.NextDouble() * Math.PI * 2;
+            var offset = (distance * Math.Cos(angle), distance * Math.Sin(angle));
+
+            return new LatLong(
+                order.DeliveryLocation.Latitude + offset.Item1,
+                order.DeliveryLocation.Longitude + offset.Item2);
+        }
+
+        static Marker ToMapMarker(
+            string description, LatLong coords, bool showPopup = false) =>
+            new Marker
+            {
+                Description = description,
+                X = coords.Longitude,
+                Y = coords.Latitude,
+                ShowPopup = showPopup
+            };
+    }
+}
+```
+
+In the preceding C# code, the `FromOrder` calculates a new order status based on the current time.

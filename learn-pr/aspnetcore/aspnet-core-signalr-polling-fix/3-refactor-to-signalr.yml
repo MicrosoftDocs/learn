@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.aspnet-core-signalr-polling-fix.refactor-to-signalr
-title: Enter exercise title
+title: Refactor using ASP.NET Core SignalR
 metadata:
   unitType: exercise
-  title: "TODO" # user input: module title for browser tab and search results
-  description: "TODO" # user input: a description for site search and SEO
-  ms.date: 10/27/2021
+  title: Refactor using ASP.NET Core SignalR
+  description: "Refactor the existing client-side polling to instead use ASP.NET Core SignalR."
+  ms.date: 10/28/2021
   author: IEvangelist
   ms.author: dapine
-  ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 1 # user input: the estimate time to complete the unit
+  ms.topic: interactive-tutorial
+durationInMinutes: 15
 content: |
   [!include[](includes/3-refactor-to-signalr.md)]
