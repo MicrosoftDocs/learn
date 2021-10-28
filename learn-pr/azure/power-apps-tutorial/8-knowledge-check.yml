@@ -28,39 +28,39 @@ quiz:
         - content: "All of the above"
           isCorrect: true
           explanation: Measure in MR measures distance, volume, and area.
-    - content: "Which power apps property can show a list of records that contain different sorts of data?"
+    - content: "In the following options, which one best defines Object Scaling?"
       choices:
-        - content: "Drop down"
-          isCorrect: false
-          explanation: Dropdowns are togglable, contextual overlays for displaying lists of links and more.
-        - content: "Image"
-          isCorrect: false
-          explanation: An artifact that shows visual perception.
-        - content: "Gallery"
+        - content: "Object scaling allows users to change the size of the models according to their needs using parameters like Object width, Object height, and Object depth."
           isCorrect: true
-          explanation: A control that contains other controls and shows a set of data.
-    - content: "What is the syntax for the If statement?"
+          explanation: Alternatively, you can specify some or all of the dimensions - these dimensions are labeled as the Object width, Object height, and Object depth properties.
+        - content: "Object scaling allows users to visualize 3D objects in their real world."
+          isCorrect: false
+          explanation: View in MR allows users to visualize the 3D object in their real world.
+        - content: "Object scaling helps in adjusting the screen resolution to the required standards."
+          isCorrect: false
+          explanation: Power Apps can automatically adjust the screen ratio.
+    - content: "Which measurement type allows users to measure distance, area, and volume at once?"
       choices:
-        - content: "If (Condition, ThenResult [, DefaultResult])"
+        - content: "Distance"
           isCorrect: false
-          explanation: Determines whether any condition in a set is true and then returns a result or executes an action.
-        - content: "If (Condition1, ThenResult1 [, Condition2, ThenResult2, ... [, DefaultResult]])"
-          isCorrect: false
-          explanation: Determines whether any condition in a set is true and then returns a result or executes an action.
-        - content: "All of the above"
+          explanation: Measures space between two points.
+        - content: "Freeform"
           isCorrect: true
-          explanation: Determines whether any condition in a set is true and then returns a result or executes an action.
-    - content: "What is the syntax for the Switch statement?"
+          explanation: Allows users to measure distance, area, and volume at once.
+        - content: "Volume"
+          isCorrect: false
+          explanation: The amount of space enclosed in a three-dimensional space.
+    - content: "Which is the best suited 3D content format to be included in Power Apps?"
       choices:
-        - content: "Switch (Formula, Match1, Result1 [, Match2, Result2, ... [, DefaultResult]])"
+        - content: ".obj"
+          isCorrect: false
+          explanation: The OBJ file format is a simple data-format that represents 3D geometry alone
+        - content: ".stl"
+          isCorrect: false
+          explanation: STL is a file format native to the stereolithography CAD software created by 3D Systems.
+        - content: ".glb"
           isCorrect: true
-          explanation: Determines whether the result of a formula matches any value in a set (Switch) and then returns a result or executes an action.
-        - content: "Switch (Formula, Result1 [, Match2, Result2, ... [, DefaultResult]])"
-          isCorrect: false
-          explanation: Determines whether the result of a formula matches any value in a set (Switch) and then returns a result or executes an action.
-        - content: "Switch (Condition, ThenResult [, DefaultResult])"
-          isCorrect: false
-          explanation: Determines whether the result of a formula matches any value in a set (Switch) and then returns a result or executes an action.
+          explanation: GLB is a 3D file format that's used in virtual reality (VR), augmented reality (AR), games, and web applications because it supports motion.
     - content: "Connect to a __________ site to instantly produce an app from a custom list, or create a connection before adding data to an existing app or creating a new one."
       choices:
         - content: "SharePoint"
