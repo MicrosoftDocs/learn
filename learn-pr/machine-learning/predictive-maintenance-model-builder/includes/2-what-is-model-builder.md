@@ -18,8 +18,8 @@ You can use Model Builder to solve many common machine learning problems, such a
 
 - **Categorizing data**: Organize news articles by topic.
 - **Predicting a numerical value**: Estimate the price of a home.
-- **Recommending items**: Recommend movies.
 - **Grouping items with similar characteristics**: Segment customers.
+- **Recommending items**: Recommend movies.
 - **Classifying images**: Tag an image based on its contents.
 - **Detecting objects in an image**: Detect pedestrians and bicycles at an intersection.
 
