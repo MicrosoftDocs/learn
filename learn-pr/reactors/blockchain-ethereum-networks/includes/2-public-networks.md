@@ -65,7 +65,6 @@ More details:
 - Supported client: [Geth](https://geth.ethereum.org/?azure-portal=true)
 - Block time: 15 seconds
 - Rinkeby-specific links:
-  - [Faucet](https://faucet.rinkeby.io/?azure-portal=true)
   - [Explorer](https://rinkeby.etherscan.io/?azure-portal=true)
   - [GitHub](https://github.com/ethereum/EIPs/issues/225/?azure-portal=true)
   - [Website](https://www.rinkeby.io/?azure-portal=true)
@@ -82,7 +81,6 @@ More details:
 - Block time: 15 seconds on average
 - Goerli-specific links:
   - [Faucet](https://faucet.goerli.mudit.blog/?azure-portal=true)
-  - [Status dashboard](https://stats.goerli.net/?azure-portal=true)
   - [Explorer](https://goerli.etherscan.io/?azure-portal=true)
   - [GitHub](https://github.com/goerli/testnet/?azure-portal=true)
   - [Website](http://www.goerli.net/?azure-portal=true)

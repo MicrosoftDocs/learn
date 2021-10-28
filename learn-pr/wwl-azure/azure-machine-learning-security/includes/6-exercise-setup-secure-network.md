@@ -187,7 +187,7 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
 We can make sure our workspace is inside the VNet now by testing if we still have access to its resources:
 
-1. Reload the Azure Machine Learning Studio window (you can select the following link to see the instructions again [here](https://docs.microsoft.com/learn-pr/azure/azure-machine-learning-security/includes/6-exercise-setup-secure-network.md#studio)):
+1. Reload the Azure Machine Learning Studio window (or [open the Studio](https://ml.azure.com/) again):
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot showing the workspace with warnings on the page.](../media/workspace-with-warnings.png)
