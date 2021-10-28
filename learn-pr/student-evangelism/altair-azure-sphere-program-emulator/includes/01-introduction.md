@@ -6,8 +6,8 @@ The Altair emulator is running an Open Source Intel 8080 emulator. Layered on th
 
 The Altair Emulator can be programmed in two ways:
 
-1. Entering Intel 8080 [Opcodes](https://en.wikipedia.org/wiki/Opcode?azure-portal=true) using the Altair front panel switches
-1. or, using a higher-level programming language such as C and BASIC.
+- Entering Intel 8080 [Opcodes](https://en.wikipedia.org/wiki/Opcode?azure-portal=true) using the Altair front panel switches or,
+- using a higher-level programming language such as C and BASIC.
 
 :::image type="content" source="../media/azure-sphere-app-architecture.png" alt-text="Diagram that shows the Altair on Azure Sphere application architecture." border="false":::
 

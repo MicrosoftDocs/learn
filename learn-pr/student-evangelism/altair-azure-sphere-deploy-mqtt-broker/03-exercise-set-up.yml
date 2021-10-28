@@ -4,11 +4,12 @@ title: Exercise - Deploy a private MQTT broker
 metadata:
   title: Exercise - Deploy a private MQTT broker
   description: In this exercise, deploy a private MQTT broker.
-  ms.date: 08/18/2021
+  ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 durationInMinutes: 15
 content: |
   [!include[](includes/03-exercise-set-up.md)]

@@ -2,6 +2,7 @@ In this unit, you'll learn how to start programming the Altair emulator from CP/
 
 When you start the Altair emulator, it boots up CP/M. From CP/M you can program the Altair emulator using Microsoft BASIC, BD Software C, and Microsoft MACRO-80 Assembler.
 
+> [!NOTE]
 > You can change the boot order so the Altair emulator boots into Altair BASIC. The boot order is set from the **Boot Config** section in the **cmake/altair_config.cmake** file.
 
 ## Saving files to disk

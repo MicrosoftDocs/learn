@@ -4,13 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 08/18/2021
+  ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 durationInMinutes: 2
 content: |
+  Choose the best response for each question. Then select **Check your answers**.
 quiz:
   questions:
   - content: "What role does Azure IoT Central play?"

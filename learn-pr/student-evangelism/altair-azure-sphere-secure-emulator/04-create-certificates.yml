@@ -4,11 +4,12 @@ title: Learn how to secure the connection to an MQTT broker
 metadata:
   title: Learn how to secure the connection to an MQTT broker
   description: Learn how to secure the connection to an MQTT broker.
-  ms.date: 08/18/2021
+  ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 durationInMinutes: 2 # dummy number at present
 content: |
   [!include[](includes/04-create-certificates.md)]

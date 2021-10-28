@@ -76,3 +76,4 @@ You can build and deploy the disk applications to the Azure Sphere from Visual S
 ### Compiling the virtual disk cache service
 
 If you choose to compile the virtual disk cache service, you **must** set the project to **Release** mode. Release mode tells the C compiler to optimize code generation for speed. Release mode is required so the real-time cache service responds to cache lookup requests from the high-level Altair emulator application within the expected time frame.
+

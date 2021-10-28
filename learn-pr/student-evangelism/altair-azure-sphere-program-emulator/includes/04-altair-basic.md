@@ -7,3 +7,4 @@ Bill Gates and Paul Allen wrote [Altair BASIC](https://en.wikipedia.org/wiki/Alt
 The [Altair 8800 BASIC Reference Manual](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/MITS_Altair8800Basic4.1Reference_April1977.pdf?azure-portal=true) is a great place to start to learn about the language.
 
 In the following exercise, you'll learn how to start Altair BASIC and write your first Altair BASIC application.
+

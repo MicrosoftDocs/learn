@@ -3,11 +3,12 @@ uid: learn.student-evangelism.altair-azure-sphere-program-emulator
 metadata:
   title: Program the Altair 8800 emulator
   description: Learn how to program the Altair 8800 emulator.
-  ms.date: 08/30/2021
+  ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 title: Program the Altair 8800 emulator
 summary: Learn how to program the Altair 8800 emulator.
 abstract:  |

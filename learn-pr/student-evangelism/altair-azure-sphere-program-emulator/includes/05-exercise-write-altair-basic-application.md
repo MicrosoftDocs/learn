@@ -16,7 +16,7 @@ By default, the Altair emulator boots CP/M. To change the boot order, and boot A
     ###################################################################################################################
     ```
 
-1. Redeploy the Altair emulator to your Azure Sphere. Press <kbd>ctrl+F5</kbd>
+1. Redeploy the Altair emulator to your Azure Sphere. Press **ctrl+F5**
 
 ## Connect to the Web Terminal
 
@@ -63,7 +63,7 @@ and press Enter, and your program will count to 1000.
 * list
 * new
 * load
-* <kbd>ctrl+c</kbd> to halt a program
+* **ctrl+c** to halt a program
 
 For more information about Altair BASIC, see the [Altair 8800 BASIC Reference Manual](https://altairclone.com/downloads/manuals/BASIC%20Manual%2075.pdf?azure-portal=true).
 

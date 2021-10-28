@@ -20,3 +20,4 @@ Follow these steps:
 1. Set up a trusted relationship between your Azure Sphere tenant and Azure IoT Central.
 
 In the next exercise, you'll create an Azure Iot Central application and link it to your Azure Sphere tenant.
+

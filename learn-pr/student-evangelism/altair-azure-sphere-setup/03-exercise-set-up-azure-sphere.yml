@@ -4,11 +4,12 @@ title: Exercise - Installing the Azure Sphere development software on your compu
 metadata:
   title: Exercise - Installing the Azure Sphere development software on your computer
   description: In this exercise, you'll install the Azure Sphere development software on your computer.
-  ms.date: 08/18/2021
+  ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 durationInMinutes: 10 # dummy number at present
 content: |
   [!include[](includes/03-exercise-set-up-azure-sphere.md)]

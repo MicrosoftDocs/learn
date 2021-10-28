@@ -15,3 +15,4 @@ In this module, you'll learn how to declare the network endpoints capabilities f
 ## What is the main goal?
 
 The module will focus on understanding how to declare the network endpoints the Altair emulator will be using.
+

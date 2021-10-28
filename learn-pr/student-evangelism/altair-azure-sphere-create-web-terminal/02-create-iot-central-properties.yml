@@ -4,11 +4,12 @@ title: Customize your IoT Central web application
 metadata:
   title: Customize your IoT Central web application
   description: Learn how to customize an Altair IoT Central application.
-  ms.date: 08/18/2021
+  ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 durationInMinutes: 1 
 content: |
   [!include[](includes/02-create-iot-central-properties.md)]

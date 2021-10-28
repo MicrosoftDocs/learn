@@ -3,11 +3,12 @@ uid: learn.student-evangelism.altair-azure-sphere-secure-emulator
 metadata:
   title: Secure the Altair emulator
   description: Learn how to secure the Altair emulator network communications.
-  ms.date: 08/30/2021
+  ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 title: Secure the Altair emulator
 summary: Learn how to secure the Altair emulator network communications.
 abstract:  |

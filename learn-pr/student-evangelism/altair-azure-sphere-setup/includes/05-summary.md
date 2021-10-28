@@ -1,4 +1,4 @@
-This unit summaries the main steps completed in this module.
+This unit summarizes the main steps completed in this module.
 
 In this module, you learned about the hardware and software requirements for the Altair emulator on the Azure Sphere.
 
