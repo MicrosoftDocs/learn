@@ -8,7 +8,7 @@ There are multiple container runtimes that are used to build both Windows contai
 
 The Docker runtime is used to build, pull, run, and push Docker images. The below image depicts these use cases followed by a description of each use case/Docker command.
 
-![Screenshot showing the running application.](../media/what-is-docker.png)
+![Screenshot showing Docker commands.](../media/what-is-docker.png)
 
 | Docker command | Description |
 |-|-|
@@ -66,7 +66,7 @@ With a Dockerfile, you can write the instructions (layers) needed to accomplish 
 
 The below image depicts the layers of a Docker image, you'll notice all the top layer is the read/write Flight Booking System Sample Application Layer that is built on top of the previous read only layers, all of which are resulting from the commands in the Dockerfile.
 
-![Screenshot showing the running application.](../media/docker-layers.png)
+![Screenshot showing the Docker layers.](../media/docker-layers.png)
 
 Docker also has the concept of multi-stage builds, a feature that enables you to create a smaller container image with better caching and a smaller security footprint allowing for increased optimization and maintenance of the Dockerfile over time. For example, instructions that can be used to accomplish both a compilation of the application, FlightBookingSystemSample-0.0.1-SNAPSHOT.war, as well as a build of the Docker image itself, leaving the remnants of the FlightBookingSystemSample-0.0.1-SNAPSHOT.war compilation behind, resulting in a smaller footprint in the long run, which pays dividends when you start thinking about these images traveling around the network.  With multi-stage builds, you use multiple FROM statements in your Dockerfile. Each FROM instruction can use a different base, and each of these statements begins with a clean slate, removing any unnecessary files in the caching layer that might normally be cached.
 
@@ -76,7 +76,7 @@ It is also worth noting, that with this multi-stage build, there is technically 
 
 The below image depicts the multi-stage build and what is occurring in each stage based on the commands specified in the Dockerfile. In Stage 0 (Build Stage) you'll notice this is where the Flight Booking System Sample Application gets compiled and FlightBookingSystemSample-0.0.1-SNAPSHOT.war is generated. This stage allows the for consistency of what versions of Maven and Java are used to compile this application. Once the FlightBookingSystemSample-0.0.1-SNAPSHOT.war is created, that's the only layer needed for the Stage 1 (Runtime Stage), all previous layers can be discarded. Docker will then use this FlightBookingSystemSample-0.0.1-SNAPSHOT.war layer from Stage 0 to construct the remaining layers needed for runtime, in this case, configuring the application server and starting the application.
 
-![Screenshot showing the running application.](../media/dockerfile-package-stage.png)
+![Screenshot showing the Docker multi-stage build.](../media/dockerfile-package-stage.png)
 
 Within the root of your project, Flight-Booking-System-JavaServlets_App/Project/TurkishAirlines, Create a file called Dockerfile:
 
