@@ -74,7 +74,7 @@ Consider the following series of screen captures that show the gradual progressi
 :::image type="content" source="../media/out-for-delivery-4.png" alt-text="Blazing Pizza: Order status, driver three quarters of the way there, out for delivery.":::
 :::image type="content" source="../media/out-for-delivery-5.png" alt-text="Blazing Pizza: Order status, driver arriving at destination, out for delivery.":::
 
-Finally, the order status page reflects the that order has been delivered:
+Finally, the order status page reflects the **Delivered** order status:
 
 :::image type="content" source="../media/delivered-order.png" alt-text="Blazing Pizza: Order status, driver delivered order.":::
 
@@ -195,9 +195,9 @@ The preceding Razor markup:
   - The latest order status details are re-assigned to the `orderWithStatus` variable.
 
 > [!NOTE]
-> The `PollForUpdates` method is `async void` which means it's fire-and-forget. This can cause unexpected behavior, and should be avoided if possible.
+> The `PollForUpdates` method is `async void` which means it's fire-and-forget. This can cause unexpected behavior and should be avoided if possible.
 
-Each time the order is received, it recalculates delivery status updates and corresponding map marker changes. This is achieved by calculated properties on the `OrderWithStatus` object. Consider the following _OrderWithStatus.cs_ C# file:
+Each time the order is received, it recalculates delivery status updates and corresponding map marker changes. This is achieved by calculating properties on the `OrderWithStatus` object. Consider the following _OrderWithStatus.cs_ C# file:
 
 ```csharp
 using BlazingPizza.ComponentsLibrary.Map;
@@ -275,7 +275,7 @@ namespace BlazingPizza
             };
         }
 
-        private static LatLong ComputeStartPosition(Order order)
+        static LatLong ComputeStartPosition(Order order)
         {
             // Random but deterministic based on order ID
             var rng = new Random(order.OrderId);
@@ -301,4 +301,50 @@ namespace BlazingPizza
 }
 ```
 
-In the preceding C# code, the `FromOrder` calculates a new order status based on the current time. Based on the understanding of how this was implemented, we'll be able to reuse the `OrderWithStatus` object, but we will refactor the client-side polling out.
+In the preceding C# code, the `FromOrder` calculates a new order status based on the current time. Based on the understanding of how this was implemented, we'll be able to reuse the `OrderWithStatus` object, but you'll learn how the app was refactored.
+
+## Fetch the refactored code
+
+The refactored code is in a separate branch named `signalr`.
+
+### [Linux](#tab/linux)
+
+Use the `git remote` command to determine the name of the `https://github.com/dotnet-presentations/blazor-workshop` repo:
+
+```bash
+git remote -v
+```
+
+The remote name that corresponds to the <https://github.com/dotnet-presentations/blazor-workshop> repo is the name you'll need to use. Next, use the `git fetch` command to fetch the `signalr` branch (assuming your remote is named `upstream`):
+
+```bash
+git fetch upstream signalr
+```
+
+Finally, use the `git checkout` command to context switch into the refactored source:
+
+```bash
+git checkout signalr
+```
+
+### [Windows](#tab/Windows)
+
+Use the `git remote` command to determine the name of the `https://github.com/dotnet-presentations/blazor-workshop` repo:
+
+```PowerShell
+git remote -v
+```
+
+The remote name that corresponds to the <https://github.com/dotnet-presentations/blazor-workshop> repo is the name you'll need to use. Next, use the `git fetch` command to fetch the `signalr` branch (assuming your remote is named `upstream`):
+
+```PowerShell
+git fetch upstream signalr
+```
+
+Finally, use the `git checkout` command to context switch into the refactored source:
+
+```PowerShell
+git checkout signalr
+```
+
+---
