@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-strategies-for-migrating-sql-databases-to-azure.understand-compatibility-level
+title: Understand compatibility level
+metadata:
+  title: Understand compatibility level
+  description: "Understand compatibility level"
+  ms.date: 10/28/2021
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-understand-compatibility-level.md)]
