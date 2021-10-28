@@ -4,11 +4,12 @@ title: Introduction to the cloud-connected Altair architecture
 metadata:
   title: Introduction to the cloud-connected Altair architecture
   description: Introduction to the cloud-connected Altair architecture.
-  ms.date: 08/18/2021
+  ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/04-introduction-architecture.md)]

@@ -4,13 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 08/18/2021
+  ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 durationInMinutes: 2 # dummy number at present
 content: |
+  Choose the best response for each question. Then select **Check your answers**.
 quiz:
   questions:
   - content: "What option best describes Azure Sphere?"
@@ -45,5 +47,5 @@ quiz:
       explanation: "The cloud enabled Altair 8800 project consists of two applications running on the Azure Sphere, cloud services consisting of IoT Central and an Azure Virtual Machine, along with a Web Terminal built with HTML/CSS/JavaScript."
     - content: "Azure IoT Central, an Azure Static Web App, and an Azure Virtual machine."
       isCorrect: false
-      explanation: "These cloud services certainly form part of the Altair solution. The Altair solutions consists of two applications running on the Azure Sphere, cloud services consisting of IoT Central, a static web app, and an Azure Virtual Machine, along with a Web Terminal built with HTML/CSS/JavaScript."
+      explanation: "These cloud services certainly form part of the Altair solution. The Altair solution consists of two applications running on the Azure Sphere, cloud services consisting of IoT Central, a static web app, and an Azure Virtual Machine, along with a Web Terminal built with HTML/CSS/JavaScript."
   
