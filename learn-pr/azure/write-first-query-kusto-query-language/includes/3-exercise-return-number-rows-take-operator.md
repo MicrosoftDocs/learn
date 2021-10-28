@@ -34,13 +34,15 @@ StormEvents
 | take 5
 ```
 
+Notice that the query begins with a reference to the data table, *StormEvents*. This data is piped into the first (and only) operator, which then selects five rows at random. 
+
 To run the query, either select the **Run** button above the query window, or press **Shift+Enter**.
 
 :::image type="content" source="../media/3-take-5.png" alt-text="Screenshot of take 5 output.":::
 
 ## Explore the results
 
-What do you notice about the results? Scroll all the way to the right of the dataset and see what you notice. Here are a few takeaways: 
+What do you notice about the results? Scroll all the way to the right of the dataset and take a look. Here are a few takeaways: 
 
 * Each event has a start and end time, from the year 2007.
 * The **EventType** column shows different kinds of storms.
