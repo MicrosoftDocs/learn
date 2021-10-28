@@ -2,35 +2,41 @@
 uid: learn.aspnet-core-signalr-polling-fix
 metadata:
   moduleType: standard
-  title: Replace client polling with ASP.NET Core SignalR
-  description: In this module you'll use ASP.NET Core SignalR to replace existing client-side polling functionality in a web app.
-  ms.date: 10/27/2021
+  title: Replace client-side polling with ASP.NET Core SignalR
+  description: In this module you'll use ASP.NET Core SignalR to replace existing client-side polling functionality in an existing web app.
+  ms.date: 10/28/2021
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial # do we need ms.topic?
-title: Replace client polling with ASP.NET Core SignalR
-summary: In this module you'll use ASP.NET Core SignalR to replace existing client-side polling functionality in a web app.
-abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
+title: Replace client-side polling with ASP.NET Core SignalR
+summary: In this module you'll use ASP.NET Core SignalR to replace existing client-side polling functionality in an existing web app.
+abstract: |
   By the end of this module, you'll be able to:
-    - # objective 1
-    - # objective 2
-    - # objective 3 (if needed)
-prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
-  - # prerequisite 1
-  - # prerequisite 2
-  - # prerequisite 3
+  - Identify opportunities to use ASP.NET Core SignalR.
+  - Evaluate code changes as part of refactoring to ASP.NET Core SignalR.
+    - Implement refactoring of existing code.
+    - Validate code changes are functionally equivalent.
+  - Realize the benefits associated with using ASP.NET Core SignalR as an alternative to client-side polling.
+prerequisites: |
+  - Ability to clone GitHub repository.
+  - Familiarity with ASP.NET Core Blazor web apps.
+  - .NET SDK 5 or later.
+    - Intermediate knowledge of .NET.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate
 roles:
   - developer
 products:
-  {{products}}
+  - aspnet-core
+  - blazor
+  - blazor-webassembly
+  - dotnet
 units:
 - learn.aspnet-core-signalr-polling-fix.introduction
-- learn.aspnet-core-signalr-polling-fix.learning-content
-- learn.aspnet-core-signalr-polling-fix.exercise
-- learn.aspnet-core-signalr-polling-fix.knowledge-check
+- learn.aspnet-core-signalr-polling-fix.clone-and-familiarize
+- learn.aspnet-core-signalr-polling-fix.refactor-to-signalr
+- learn.aspnet-core-signalr-polling-fix.validate-refactored-code
 - learn.aspnet-core-signalr-polling-fix.summary
 badge:
   uid: learn.aspnet-core-signalr-polling-fix.badge
