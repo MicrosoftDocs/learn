@@ -74,9 +74,9 @@ The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk throu
 
 1. Install the DeepStream SDK. The SDK includes all the libraries, development sources, and samples to get you started with building custom IVA pipelines.
 
-    1. Open a browser on the host machine. Go to the [NVIDIA DeepStream SDK 6.0 - Downloads page](https://developer.nvidia.com/deepstream-sdk-6.0-early-access).
+    1. Open a browser on the host machine. Go to the [NVIDIA DeepStream Getting Started - Downloads page](https://developer.nvidia.com/deepstream-getting-started).
 
-    1. Select the **DeepStream on x86 Core - Debian** package. It should download to your local user's *Downloads* folder. Go to the download location and install the package by using these commands:
+    1. Select the **DeepStream 6.0 for Servers and Workstations** package. It should download to your local user's *Downloads* folder. Go to the download location and install the package by using these commands:
 
     ```bash
     cd ~/Downloads
