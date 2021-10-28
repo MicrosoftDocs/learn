@@ -19,20 +19,44 @@ StormEvents
 
 :::image type="content" source="../media/5-where-1.png" alt-text="Screenshot of where operator.":::
 
-Notice that the all rows returned do, in fact, have DamageCrops values greater than zero. 
+Notice that the all rows returned do, in fact, have *DamageCrops* values greater than zero.
 
 ## Filter using string operators
 
-It looks like there are quite a few types of damage-causing storms, occurring all over the US. Let's narrow that down to storms that happened in a certain location. 
+It looks like there are quite a few types of damage-causing storms, occurring all over the US. Let's narrow that down to storms that happened in a certain location, like the state of Ohio. 
 
-- Filter based on a certain value in the column(s)
-- Used together with other operators, for example string operators
+Run the following query:
 
-- Filter to return certain kinds of storms (e.g. including the word "wind" or "flood")
+```kusto
+StormEvents
+| where DamageCrops > 0
+| where State == "OHIO"
+| project State, EventType, DamageCrops
+```
 
+:::image type="content" source="../media/5-where-2.png" alt-text="Screenshot of where operator.":::
 
-> [!NOTE]
-> Values can be defined as different data types, so you might need to cast them to a different data type in order to perform comparisons on the correct type.
+As you can see, there are 43 records returned from this query, all of them from Ohio and having crop damage greater than zero.
+
+## Filter on datetime values
+
+Maybe we only care about damage done in the first half of the calendar year. In fact, we often want to limit our search to a specific time range.
+
+Run the following query:
+
+```kusto
+StormEvents
+| where StartTime between (datetime(2007-01-01)..datetime(2007-06-01))
+| where DamageProperty > 0
+| where State == "FLORIDA"
+| project StartTime, EventType, DamageProperty
+| take 50
+```
+
+:::image type="content" source="../media/5-where-3.png" alt-text="Screenshot of where operator.":::
+
+> [!TIP]
+> You might need to cast either your input conditions or your data values to a different data type in order to perform comparisons between values.
 >
-> For example, the SecurityEvent Level column is of type String, so you must cast it to a numerical type, such as int or long, before you can use numerical operators on it, as shown here: SecurityEvent | where toint(Level) >= 10
-
+> For example, when we search on a datetime field, we have to input a datetime value as shown in the query above.
+    
