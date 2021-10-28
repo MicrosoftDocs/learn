@@ -208,6 +208,6 @@ Open up a browser and visit the Flight Booking System Sample landing page at [ht
 
 You should see the following:
 
-![Screenshot showing the running application.](../media/deploy-1.png)
+![Screenshot showing the running application.](../media/deploy.png)
 
 You can optionally log in with any user from tomcat-usrrs.xml for example someuser@azure.com:password

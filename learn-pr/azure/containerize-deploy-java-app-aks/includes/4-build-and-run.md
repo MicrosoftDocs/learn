@@ -173,7 +173,7 @@ Open up a browser and visit the Flight Booking System Sample landing page at [ht
 
 You should see the following
 
-![Screenshot showing the running application.](../media/build-and-run-1.png)
+![Screenshot showing the running application.](../media/build-and-run.png)
 
 You can optionally log in with any user from tomcat-users.xml for example someuser@azure.com:password
 
