@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-pybryt.2-annotations
+title: Annotations
+metadata:
+  title: Annotations
+  description: Describe unit
+  author: chrispyles
+  ms.author: v-chpyles
+  ms.date: 10/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+sandbox: true
+notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-pybryt/main/02-annotations.ipynb

@@ -23,9 +23,9 @@ products:
 prerequisites: None
 units:
   - learn.intro-to-pybryt.1-introduction
-  - learn.intro-to-pybryt.2-unit
-  - learn.intro-to-pybryt.3-exercise-unit
-  - learn.intro-to-pybryt.4-knowledge-check
+  - learn.intro-to-pybryt.2-annotations
+  - learn.intro-to-pybryt.3-reference-implementations
+  - learn.intro-to-pybryt.4-reference-exercise
   - learn.intro-to-pybryt.5-summary
 badge:
   uid: learn.intro-to-pybryt.badge

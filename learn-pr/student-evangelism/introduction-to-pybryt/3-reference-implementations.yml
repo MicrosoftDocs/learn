@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-pybryt.3-reference-implementations
+title: Reference Implementations
+metadata:
+  title: Reference Implementations
+  description: Describe Exercise
+  author: chrispyles
+  ms.author: v-chpyles
+  ms.date: 10/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+sandbox: true
+notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-pybryt/main/02-reference-implementations.ipynb
