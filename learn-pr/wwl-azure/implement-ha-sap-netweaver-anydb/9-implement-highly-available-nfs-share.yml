@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ha-sap-netweaver-anydb.implement-highly-available-nfs-share
+title: Implement a highly available NFS share
+metadata:
+  title: Implement a highly available NFS share
+  description: "Implement a highly available NFS share"
+  ms.date: 10/18/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-implement-highly-available-nfs-share.md)]

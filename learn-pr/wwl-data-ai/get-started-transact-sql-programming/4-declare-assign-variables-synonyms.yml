@@ -4,13 +4,12 @@ title: Declare and assign variables and synonyms
 metadata:
   title: Declare and assign variables and synonyms
   description: "Declare and assign variables and synonyms"
-  ms.date: 09/16/2021
+  ms.date: 10/25/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |

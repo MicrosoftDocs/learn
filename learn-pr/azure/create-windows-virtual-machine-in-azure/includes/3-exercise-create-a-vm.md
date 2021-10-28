@@ -61,18 +61,18 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
 
 ## Configure disks for the VM
 
-1. On the **Disks** tab, select the following values.
+1. On the **Disks** tab, enter or select the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
     | **Disk options** |
     | OS disk type | Accept the default **Premium SSD (locally redundant storage)**. |
-    | SSE encryption type | Accept the default **(Default) Encryption at-rest with a platform-managed key**. |
+    | Encryption type | Accept the default **(Default) Encryption at-rest with a platform-managed key**. |
     | Enable Ultra Disk compatibility | Accept default (unchecked) |
     | **Data disks** |
     | Select **Create and attach a new disk** link. The **Create a new disk** pane appears. | Accept all the default values for the following settings: *Name*; *Source type*; *Size*; *Encryption type*; and *Enable shared disk*. This is where you could use a snapshot, or Storage Blob, to create a VHD. |
 
-1. Select **OK** to save the settings and close the pane.
+1. Select **OK** to save the settings, and close the pane.
 
     :::image type="content" source="../media/3-configure-disks.png" alt-text="Screenshot showing the configure disks section for the VM.":::
 
@@ -91,9 +91,9 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
 
 1. On the **Networking** tab, let's change some of the settings. Under the input field for **Virtual network**, select **Create new**. The **Create virtual network** pane appears.
 
-1. On the **Create virtual network** pane, enter the following values.
+1. On the **Create virtual network** pane, enter the following values for each setting.
 
-    | Field | Value |
+    | Setting | Value |
     |---------|---------|
     | **Address space** |
     | *Address range* | Select the checkbox in the row below the heading, and enter `172.16.0.0/16` to give the address space a full range of addresses. If another address range row exists, select it to delete it. |
