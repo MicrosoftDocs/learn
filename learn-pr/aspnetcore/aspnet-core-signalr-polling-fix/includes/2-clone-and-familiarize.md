@@ -301,4 +301,4 @@ namespace BlazingPizza
 }
 ```
 
-In the preceding C# code, the `FromOrder` calculates a new order status based on the current time.
+In the preceding C# code, the `FromOrder` calculates a new order status based on the current time. Based on the understanding of how this was implemented, we'll be able to reuse the `OrderWithStatus` object, but we will refactor the client-side polling out.
