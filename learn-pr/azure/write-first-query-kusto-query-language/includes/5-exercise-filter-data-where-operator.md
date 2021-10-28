@@ -6,7 +6,7 @@ Here, you will use the `where` operator to filter on a condition.
 
 Up to this point, all the operators we've used have returned selected columns. Now, let's take a look at specific rows of the data.
 
-The `where` operator filters results that satisfy a certain condition.
+The `where` operator filters results that satisfy a certain condition. In this first example, we'll compare an integer column to a minimum value using the numerical operator *greater than* (>). Specifically, we only want to see storms that damaged crops. 
 
 Run the following query:
 
@@ -18,6 +18,12 @@ StormEvents
 ```
 
 :::image type="content" source="../media/5-where-1.png" alt-text="Screenshot of where operator.":::
+
+Notice that the all rows returned do, in fact, have DamageCrops values greater than zero. 
+
+## Filter using string operators
+
+It looks like there are quite a few types of damage-causing storms, occurring all over the US. Let's narrow that down to storms that happened in a certain location. 
 
 - Filter based on a certain value in the column(s)
 - Used together with other operators, for example string operators
