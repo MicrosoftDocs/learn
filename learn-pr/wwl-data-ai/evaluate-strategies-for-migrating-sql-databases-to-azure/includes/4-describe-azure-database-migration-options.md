@@ -77,4 +77,4 @@ The Data Migration Service has a few prerequisites that are common across migrat
 
 There are a number of traditional, more manual approaches to migrating databases to Azure including backup and restore, log shipping, replication, and adding an Availability Group replica in Azure. These solutions were not designed primarily for performing migrations, but they can be used for that purpose. The technique you use for physically migrating your data will depend on the amount of downtime you can sustain during the migration process.
 
-Learn more about the [tools used to migrate SQL databases to Azure](https://docs.microsoft.com/sql/tools/overview-sql-tools?#migration-and-other-tools).
+Learn more about the [tools used to migrate SQL databases to Azure](/sql/tools/overview-sql-tools?#migration-and-other-tools).
