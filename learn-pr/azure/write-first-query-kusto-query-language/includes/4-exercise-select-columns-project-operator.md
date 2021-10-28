@@ -3,7 +3,7 @@ Recall that the `take` operator returned a specified number of random rows. Here
 
 ## Use the `project` operator
 
-If you remember, the meterological data example has quite a few columns. Not all of these columns are meaningful for our exploration, or you might be using these results in a situation with limited space. We'll choose just a few columns to view. To do this, we'll use the `project` operator to define which columns we want to see in the output. Multiple column names are separated by commas.
+If you remember, the meterological data example has quite a few columns. Not all of these columns are meaningful for our exploration, or you want to view these results in a window with limited space. We'll choose just a few columns to view. To do this, we'll use the `project` operator to define which columns we want to see in the output. Multiple column names are separated by commas.
 
 Run the following query:
 
@@ -20,12 +20,11 @@ StormEvents
 
 ## Rename and define new columns with `project`
 
-You can also use project to rename columns and define new ones. Let's clean up the *InjuriesDirect* and *InjuriesIndirect* columns, and similarly the damage columns. Since all of these columns are integers, we can just add them together. We can also rename the *State* column to specify that these are US states.
+You can also use project to rename columns and define new ones. Let's clean up the *InjuriesDirect* and *InjuriesIndirect* columns, and similarly the damage columns. Since these columns are of type int (integer), we can use a numerical operator add the values. We'll also rename the *State* column to specify that these are US states.
 
 To rename or perform numerical operations on operators, we'll use the following syntax in our query:
 
 `project ColumnName=Expression`
-
 
 ```kusto
 StormEvents

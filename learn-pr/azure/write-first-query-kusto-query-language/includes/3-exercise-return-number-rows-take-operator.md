@@ -1,7 +1,4 @@
-A Kusto query can be used to explore datasets and gain insights. 
-
-Recall that we have a meterological dataset of which we are unfamiliar, and want to explore what we can learn from this data.
-
+A Kusto query can be used to explore datasets and gain insights. Recall that we have a meterological dataset of which we are unfamiliar, and want to explore what we can learn from this data. 
 Here, we'll look at the structure of this data table using the `take` operator.
 
 ## Connect to the data
