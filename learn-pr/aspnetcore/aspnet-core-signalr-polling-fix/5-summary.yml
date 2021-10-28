@@ -11,4 +11,4 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 1 # user input: the estimate time to complete the unit
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/5-summary.md)]
