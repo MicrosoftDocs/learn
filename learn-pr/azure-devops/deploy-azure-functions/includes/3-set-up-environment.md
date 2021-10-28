@@ -270,7 +270,7 @@ Let's add a variable group to your project.
 
 1. In the menu, select **Pipelines**, and then, under **Pipelines** select **Library**. The Library pane appears.
 
-    :::image type="content" source="../media/3-pipelines-library.png" alt-text="Screenshot of Azure DevOps menu highlighting the Libray option under Pipelines.":::
+    :::image type="content" source="../media/3-pipelines-library.png" alt-text="Screenshot of Azure DevOps menu highlighting the Library option under Pipelines.":::
 
 1. In the command bar or in the middle of the pane, select **Variable group**. The **New variable group** page appears.
 
@@ -301,7 +301,7 @@ In previous modules, you created environments for **dev**, **test**, and **stagi
 
     :::image type="content" source="../../shared/media/pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
 
-1. Select **Create environment**. The **New environment** pane apears.
+1. Select **Create environment**. The **New environment** pane appears.
 
 1. For **Name**, enter *spike*.
 
