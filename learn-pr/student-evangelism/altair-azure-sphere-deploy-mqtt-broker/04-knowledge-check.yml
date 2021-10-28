@@ -4,20 +4,22 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 08/18/2021
+  ms.date: 10/01/2021
   author: gloveboxes
-  ms.author: dglover
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
 durationInMinutes: 2
 content: |
+  Choose the best response for each question. Then select **Check your answers**.
 quiz:
   questions:
   - content: "The advantage of running a private MQTT broker include?"
     choices:
     - content: "It’s much simpler than using the public test.mosquitto.org public broker."
       isCorrect: false
-      explanation: "Setting up a MQTT broker is more complex than using the public broker, but a private MQTT broker is secure and performance is more predictable."
+      explanation: "Setting up an MQTT broker is more complex than using the public broker, but a private MQTT broker is secure and performance is more predictable."
     - content: "It is secure, private, and performance is predicable. The virtual disk server performs faster when running on the same server as the MQTT broker."
       isCorrect: true
       explanation: "The Altair emulator including the virtual disk server will perform better when connected to a private MQTT broker."

@@ -6,7 +6,7 @@ The following list outlines the steps to run a private MQTT broker.
 
 1. Create a Linux Ubuntu Azure Virtual Machine.
 1. Configure network ports to open.
-1. Install the mosquitto MQTT broker.
+1. Install the Mosquitto MQTT broker.
 1. Secure the Mosquitto MQTT broker.
 1. Install Lets Encrypt.
 1. Create the Web Terminal username and password.
