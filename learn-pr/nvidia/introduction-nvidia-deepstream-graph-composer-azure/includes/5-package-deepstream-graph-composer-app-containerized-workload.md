@@ -33,7 +33,7 @@ To achieve these benefits, you'll use the *container-builder* tool to package th
 
         ```
         cd /opt/nvidia/deepstream/deepstream-6.0/reference_graphs/deepstream-test1
-        sudo container_builder -c ds_test1_container_builder_dgpu.yaml
+        sudo container_builder -c ds_test1_container_builder_dgpu.yaml -d /opt/nvidia/graph-composer/config/target_x86_64_cuda_11_4.yaml
         ```
 
     1. After successful completion, you should see output that contains the message "Successfully tagged deepstream_test1_dgpu:latest."

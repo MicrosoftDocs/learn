@@ -96,7 +96,7 @@ By using these extensions, you can add features and functionality to the Compose
 
     ```Bash
     cd /opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test1
-    /opt/nvidia/graph_composer/execute_graph.sh deepstream-test1.yaml parameters.yaml
+    /opt/nvidia/graph-composer/execute_graph.sh deepstream-test1.yaml parameters.yaml -d /opt/nvidia/graph-composer/config/target_x86_64_cuda_11_4.yaml
     ```
 
     You should see output similar to that shown here:
