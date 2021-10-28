@@ -15,9 +15,10 @@ To accomplish these goals, you:
 
 To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
 
-You don't need an Azure subscription to work with Azure DevOps, but you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
+Although you don't need an Azure subscription to work with Azure DevOps, this exercise is using Azure DevOps to deploy to Azure resources in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 
-If you sign in with different accounts, then you should add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
+> [!IMPORTANT]
+> If you sign in with different accounts, then you should add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
 
 Then sign out of Azure DevOps and sign in with th new user account. Use the Microsoft account that you use to sign in to your Azure subscription.
 
@@ -56,7 +57,7 @@ The modules in this learning path form a progression as you follow the Tailspin 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/deploy-azure-functions/5-clean-up-environment?azure-portal=true) page in this module contains **important steps** that you must complete, even if you don't complete this module. Cleaning up helps ensure that you don't run out of free build minutes. 
 
-[!include[](../../shared/includes/project-visibility.md)]
+[!INCLUDE [](../../shared/includes/project-visibility.md)]
 
 ## Assign a work item and move it to the Doing state
 
@@ -101,7 +102,7 @@ In this module, you use the Azure CLI to bring up an App Service instance. You c
 
     A terminal opens and connects to the Azure Cloud Shell. 
     
-1. If, necessary, select **Bash** from the terminal menu.
+1. If necessary, select **Bash** from the terminal menu.
 
     > [!NOTE]
     > Cloud Shell requires an Azure storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
@@ -144,7 +145,7 @@ Here, create Bash variables to make the setup process more convenient and less e
     resourceSuffix=$RANDOM
     ```
 
-1. Create three globally unique names for your App Service, Azure Function, and storage accounts. Note that these commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
+1. Create three globally unique names for your App Service, Azure Function, and storage accounts. These commands use double quotes, which instructs Bash to resolve the variables using inline syntax.
 
     ```bash
     webName="tailspin-space-game-web-${resourceSuffix}"
@@ -316,7 +317,7 @@ Here you create a service connection that enables Azure Pipelines to access your
 > [!IMPORTANT]
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
-1. In Azure DevOps, **Space Game - web - Azure Functions** pipeline project, at the very bottom of the menu, select **Project settings**. The **Project details** pane appears.
+1. In Azure DevOps, **Space Game - web - Azure Functions** pipeline project, below the menu, select **Project settings**. The **Project details** pane appears.
 
 1. In the menu, under **Pipelines**, select **Service connections**.
 
@@ -339,4 +340,4 @@ Here you create a service connection that enables Azure Pipelines to access your
 
 1. Select **Save**.
 
-    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you have the chance to sign in a second time.
+Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you have the chance to sign in a second time.
