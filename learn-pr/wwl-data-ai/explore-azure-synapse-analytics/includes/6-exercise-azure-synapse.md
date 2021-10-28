@@ -24,8 +24,8 @@ To use Synapse Analytics, you must provision a Synapse Analytics Workspace resou
         - **Account name**: *Create a new account with a unique name, for example "datalake<your_name>"*.
         - **File system name**: *Create a new file system with a unique name, for example "fs<your_name>"*.
 
->[!NOTE]
-> A Synapse Analytics workspace requires two resource groups in your Azure subscription; one for resources you explicitly create, and another for managed resources used by the service. It also requires a Data Lake storage account in which to store data, scripts, and other artifacts.
+    >[!NOTE]
+    > A Synapse Analytics workspace requires two resource groups in your Azure subscription; one for resources you explicitly create, and another for managed resources used by the service. It also requires a Data Lake storage account in which to store data, scripts, and other artifacts.
 
 4. When you've entered these details, select **Review + create**, and then select **Create** to create the workspace.
 5. Wait for the workspace to be created - this may take five minutes or so.
@@ -200,8 +200,8 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 
     The resulting chart should resemble this:
 
-> [!div class="mx-imgBorder"]
-> ![Image showing the product count chart view](../media/column-chart.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image showing the product count chart view](../media/column-chart.png)
 
 ### (If time permits) Use a Spark pool to analyze data
 

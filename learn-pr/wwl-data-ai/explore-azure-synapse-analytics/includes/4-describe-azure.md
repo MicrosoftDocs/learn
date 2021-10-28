@@ -36,8 +36,6 @@ You can write the Spark application code using several languages, such as Python
 
 You write Databricks applications using a *Notebook*. A notebook contains a series of steps (*cells*), each of which contains a block of code. For example, one cell might contain the code that connects to a data source, the next cell reads the data from that source and converts it into a model in-memory, the next cell plots a graph, and a final cell saves the data from the in-memory model to a repository. The first line in the cell is %language. For example, %scala.
 
-> [!div class="mx-imgBorder"]
-> ![Image showing the elements of Azure Databricks](../media/2-databricks.png)
 
 For more information, read [What is Azure Databricks?](/azure/azure-databricks/what-is-azure-databricks)
 
@@ -55,8 +53,6 @@ Apache Kafka is a clustered streaming service that can ingest data in real time.
 
 Apache Storm is a scalable, fault tolerant platform for running real-time data processing applications. Storm can process high volumes of streaming data using comparatively modest computational requirements. Storm is designed for reliability, so that events shouldn't be lost. Storm solutions can also provide guaranteed processing of data, with the ability to replay data that wasn't successfully processed the first time. Storm can interoperate with a variety of event sources, including Azure Event Hubs, Azure IoT Hub, Apache Kafka, and RabbitMQ (a message queuing service). Storm can also write to data stores such as HDFS, Hive, HBase, Redis, and SQL databases. You write a Storm application using the APIs provided by Apache. 
 
-> [!div class="mx-imgBorder"]
-> ![Image showing the elements of HDInsight](../media/2-hdinsight.png)
 
 For more information, read [What is Azure HDInsight?](/azure/hdinsight/hdinsight-overview).
 
