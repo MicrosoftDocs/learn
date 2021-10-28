@@ -12,7 +12,7 @@ labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "A machine learning engineer wants to create an Azure Machine Learning workspace. Which CLI (v2) command should be used?"
+  - content: "A machine learning engineer wants to set up a new Azure Machine Learning workspace. Which CLI (v2) command should be used?"
     choices:
     - content: "`az ml workspace list`"
       isCorrect: false
@@ -23,7 +23,7 @@ quiz:
     - content: "`az ml workspace create`"
       isCorrect: true
       explanation: "That is correct. The `workspace create` command will create a workspace."
-  - content: "A data scientist wants to create an environment to run a Python script on a compute cluster. Using the `az ml environment create --file basic-env.yml` command, what should basic-env.yml contain?"
+  - content: "A data scientist wants to create an environment to run a Python script on a compute cluster. Using the `az ml environment create --file basic-env.yml` command, what should the file basic-env.yml contain?"
     choices:
     - content: "The environment name and version."
       isCorrect: true
