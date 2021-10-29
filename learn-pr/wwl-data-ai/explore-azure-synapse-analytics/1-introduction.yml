@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.deploy-mariadb-mysql-postgresql-azure.introduction
+uid: learn.wwl.explore-azure-synapse-analytics.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
   ms.date: 10/29/2021
   author: wwlpublish
-  ms.author: jupadrao
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
