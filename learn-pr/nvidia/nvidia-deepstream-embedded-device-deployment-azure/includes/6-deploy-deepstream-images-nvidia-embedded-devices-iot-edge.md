@@ -30,7 +30,7 @@ You've published a containerized DeepStream Graph Composer workload to your cont
 
    :::image type="content" source="../media/iot-hub-add-module.png" alt-text="Screenshot that shows adding an I o T Edge module.":::
 
-1. In **Add IoT Edge Module**, in **IoT Edge Module Name**, enter the module name **deepstream_test4_jetson**. In **Image URI**, enter **<Login Server>/deepstream_test4_jetson:v1**. For **<Login Server>**, use the URL of your container registry.
+1. In **Add IoT Edge Module**, in **IoT Edge Module Name**, enter the module name **deepstream_test4_jetson**. In **Image URI**, enter **\<Login Server\>/deepstream_test4_jetson:v1**. For **\<Login Server\>**, use the URL of your container registry.
 
    :::image type="content" source="../media/iot-hub-add-module-uri.png" alt-text="Screenshot that shows entering a name and image U R I for the I o T Edge module.":::
 
