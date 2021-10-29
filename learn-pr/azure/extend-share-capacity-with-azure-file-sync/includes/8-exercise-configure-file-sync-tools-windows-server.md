@@ -74,7 +74,7 @@ The following video shows you how set up your on-premises server to work with Az
    | Setting | Value  |
    |---------|---------|
    | Registered Server  | **FileServerLocal** |
-   | Path    | **D:\CADFolder** |
+   | Path    | **D:\\CADFolder** |
 
    ![Screenshot of the Add server endpoint window.](../media/8-add-server-endpoint.png)
 
