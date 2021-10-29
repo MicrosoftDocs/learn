@@ -64,7 +64,7 @@ The snippet assumes that response content is formatted as JSON and contains root
     <base />
     <choose>
       <when condition="@(context.Response.StatusCode == 200 && context.Product.Name.Equals("Starter"))">
-        <!-- NOTE that we are not using preserveContent=true when deserializing response body stream into a JSON object since we don't intend to access it again. See details on https://docs.microsoft.com/en-us/azure/api-management/api-management-transformation-policies#SetBody -->
+        <!-- NOTE that we are not using preserveContent=true when deserializing response body stream into a JSON object since we don't intend to access it again. See details on https://docs.microsoft.com/azure/api-management/api-management-transformation-policies#SetBody -->
         <set-body>
           @{
             var response = context.Response.Body.As<JObject>();
