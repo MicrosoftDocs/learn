@@ -34,7 +34,7 @@ units:
 - learn.wwl.protect-azure-for-sap-workloads.support-access-to-premises-networks
 - learn.wwl.protect-azure-for-sap-workloads.support-access-for-regional-roaming
 - learn.wwl.protect-azure-for-sap-workloads.access-azure-infrastructure
-- learn.wwl.protect-azure-for-sap-workloads
+- learn.wwl.protect-azure-for-sap-workloads.mechanisms-azure-sap-administration
 - learn.wwl.protect-azure-for-sap-workloads.knowledge-check
 - learn.wwl.protect-azure-for-sap-workloads.summary
 badge:
