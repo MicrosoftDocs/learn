@@ -17,6 +17,6 @@ In this module, you'll learn about:
 
 The Altair 8800 was invented well before the Internet as we know it today, and you'll learn techniques that you can apply to day-to-day IoT solutions.
 
-## What is the main goal?
+## What's the main goal?
 
-The module will focus on the end-to-end solution architecture of the Altair 8800 emulator running on Azure Sphere and how the Altair 8800 emulator is connected to Azure.
+This module will focus on the end-to-end solution architecture of the Altair 8800 emulator running on Azure Sphere and how the Altair 8800 emulator is connected to Azure.
