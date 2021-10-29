@@ -92,7 +92,7 @@ Complete the following steps on an x86-based host machine that has DeepStream 6.
     >- To save the file, select **w**, and then select **Enter**.
     >- To quit vi, enter **Quit**, and then select **Enter**.
 
-   This specification uses a base image from nvcr.io named nvcr.io/nvdeepstream/deepstream6_ea/deepstream-l4t:6.0-ea-21.06-samples. It copies in the *deepstream-test4.yaml* and *parameters.yaml* files. The image entrypoint starts the *deepstream-test4* graph and overrides it with the values in *parameters.yaml*. For this reason, you must update this file before you actually build the container.
+   This specification uses a base image from `nvcr.io` named `nvcr.io/nvdeepstream/deepstream6_ea/deepstream-l4t:6.0-ea-21.06-samples`. It copies in the *deepstream-test4.yaml* and *parameters.yaml* files. The image entrypoint starts the *deepstream-test4* graph and overrides it with the values in *parameters.yaml*. For this reason, you must update this file before you actually build the container.
 
 1. Return to the directory of the *deepstream-test4* reference and edit the *parameters.yaml* file:
 

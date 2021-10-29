@@ -16,7 +16,7 @@ NVIDIA offers various devices that are suited for AI at the edge in its [Jetson 
 
 The following chart shows specifications for these hardware offerings:
 
-:::image type="content" source="../media/jetson-hardware.png" alt-text="Diagram of a chart that shows an NVIDIA Jetson hardware overview and options.":::
+:::image type="content" source="../media/jetson-hardware.png" alt-text="Diagram of a chart that shows an NVIDIA Jetson hardware overview and options." border="false":::
 
 All devices in the NVIDIA Jetson family use ARM-based CPU hardware for processing. The Azure IoT Edge platform can target this architecture, so you can instrument NVIDIA embedded devices to work with the IoT Edge runtime and with related Azure IoT services.
 
@@ -39,7 +39,7 @@ An IoT Edge-based solution has three components:
 
 An IoT Edge solution optionally can incorporate an instance of Azure Container Registry to provide secure distribution of containerized modules. This approach is recommendation for production deployment scenarios. The following image shows how the three core components can work to use a container registry to achieve an end-to-end edge-to-cloud solution architecture:
 
-:::image type="content" source="../media/install-edge-full.png" alt-text="Diagram that depicts how to install Azure IoT Edge.":::
+:::image type="content" source="../media/install-edge-full.png" alt-text="Diagram that depicts how to install Azure IoT Edge." border="false":::
 
 In the preceding image, (1) Azure IoT Hub distributes a deployment specification that (2) defines the modules to run on **yourEdgeDevice**, which has been instrumented with the IoT Edge runtime and securely registered as an IoT Edge device in the hub. Then, (3) the IoT Edge runtime receives this specification, which (4) refers to a **sensor** module that'is stored in Azure Container Registry. This module is retrieved securely and run locally on the edge device, on which it then produces telemetry that flows from the device to the hub.
 
