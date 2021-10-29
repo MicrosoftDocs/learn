@@ -18,10 +18,10 @@ Complete the following steps on an [NVIDIA Jetson embedded device](https://www.n
 
     When the IoT Edge runtime is successfully started for the first time, this command's output should indicate that only the `edgeAgent` module is running.
 
-1. Before you run your containerized DeepStream Graph Composer workload from a container, because it uses an output sink of type EGL (`type`= 2), you must grant access to the X11 display environment. Execute the following commands from a terminal on the NVIDIA embedded device to enable access to the X11 services:
+1. Before you run your containerized DeepStream Graph Composer workload from a container, because it uses an output sink of type EGL (`type`= 2), you must grant access to the X11 display environment. Execute the following commands from a terminal on the NVIDIA embedded device for access to the X11 services:
 
     ```bash
     sudo xhost +
     ```
 
-When you've verified that IoT Edge has been appropriately installed and configured and you've enabled container access to X11 services on the device, you can proceed with steps to deploy the `deepstream_test4_jetson:v1` module that was published to your container registry in the previous section.
+When you've verified that IoT Edge has been appropriately installed and configured and you've given container access to X11 services on the device, you can proceed with steps to deploy the `deepstream_test4_jetson:v1` module that was published to your container registry in the previous section.

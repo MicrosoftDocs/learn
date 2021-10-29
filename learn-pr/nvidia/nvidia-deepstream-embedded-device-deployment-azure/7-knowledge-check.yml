@@ -36,7 +36,7 @@ quiz:
       explanation: Correct. Complete these steps to build cross-platform images by using `container-builder`.
     - content: 'Install the `qemu-user-static` and `binfmt-support` packages.'
       isCorrect: false
-      explanation: Incorrect. These packages provide the dependencies that are needed to enable cross-platform support in `container-builder`, but another step is required to configure support on the host.
+      explanation: Incorrect. These packages provide the dependencies that are needed for cross-platform support in `container-builder`, but another step is required to configure support on the host.
   - content: 'What steps were required to configure a deployment specification for your DeepStream Graph Composer workload in the Azure portal?'
     choices: 
     - content: 'Add the DeepStream module to the IoT hub, and then deploy.'
@@ -44,7 +44,7 @@ quiz:
       explanation: Incorrect. You can add modules to the deployment specification for a specific device that's stored by the IoT hub, but modules are never added to the hub itself.
     - content: 'Register an IoT Edge device in the IoT hub, provide access credentials to the container registry that stores your workload, create a new module entry for the DeepStream workload, and create the actual deployment.'
       isCorrect: true
-      explanation: Correct. Follow these steps to configure a deployment specification for your DeepStream Graph Composer workload.
+      explanation: Correct. Complete these steps to configure a deployment specification for your DeepStream Graph Composer workload.
     - content: 'Build the app in DeepStream Graph Composer, and then publish to an IoT hub by using `container-builder`.'
       isCorrect: false
       explanation: 'Incorrect. `container-builder` packages DeepStream Graph Composer graphs into an OCI-compatible container image. Then, you can publish the image to a container registry.'

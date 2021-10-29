@@ -1,4 +1,4 @@
-The DeepStream 6.0 `container-builder` can build cross-platform container images. You'll need to use this capability to build a container that's compatible with the ARM64 CPU on your target NVIDIA embedded device.
+The DeepStream 6.0 `container-builder` package can build cross-platform container images. You'll need to use this capability to build a container that's compatible with the ARM64 CPU on your target NVIDIA embedded device.
 
 Complete the following steps on an x86-based host machine that has DeepStream 6.0 Graph Composer with Docker installed. We assume you completed the steps described in the previous modules, [Set up and configure an NVIDIA DeepStream development environment](/learn/modules/setup-configure-nvidia-deepstream-development/?azure-portal=true) and [Introduction to NVIDIA DeepStream Graph Composer with Azure](/learn/modules/introduction-nvidia-deepstream-graph-composer-azure/?azure-portal=true).
 

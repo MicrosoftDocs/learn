@@ -9,7 +9,7 @@ In this module, you'll publish and deploy an ARM64-based DeepStream container wo
 - Be familiar with Azure IoT Edge and Azure IoT Hub.
 - Complete the prerequisite module [Introduction to NVIDIA DeepStream Graph Composer with Azure](/learn/modules/introduction-nvidia-deepstream-graph-composer-azure/?azure-portal=true).
 
-:::image type="content" source="../media/install-edge-full.png" alt-text="Diagram that depicts an overview of Azure I o T Edge.":::
+:::image type="content" source="../media/install-edge-full.png" alt-text="Diagram that depicts an overview of Azure IoT Edge.":::
 
 ## Scenario: Deploy a DeepStream Graph Composer workload to a real device at the edge
 

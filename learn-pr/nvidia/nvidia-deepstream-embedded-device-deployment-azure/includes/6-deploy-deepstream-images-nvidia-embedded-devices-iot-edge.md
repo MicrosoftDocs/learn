@@ -24,19 +24,19 @@ You've published a containerized DeepStream Graph Composer workload to your cont
 
 1. Return to the browser window that's open to **Set modules**. In **Container Registry Credentials**, enter the values from the container registry **Access keys** pane in the second browser window. By using these credentials, any device that applies this module specification can securely pull container workloads from your container registry in Azure.
 
-   :::image type="content" source="../media/iot-hub-credentials.png" alt-text="Screenshot that shows entering container registry credentials in I o T Hub.":::
+   :::image type="content" source="../media/iot-hub-credentials.png" alt-text="Screenshot that shows entering container registry credentials in Azure IoT Hub.":::
 
 1. Next, you'll configure a custom IoT Edge module as part of your deployment specification. In the *IoT Edge Modules* section of the **Modules** pane, select **Add** > **IoT Edge Module**:
 
-   :::image type="content" source="../media/iot-hub-add-module.png" alt-text="Screenshot that shows adding an I o T Edge module.":::
+   :::image type="content" source="../media/iot-hub-add-module.png" alt-text="Screenshot that shows adding an IoT Edge module.":::
 
 1. In **Add IoT Edge Module**, in **IoT Edge Module Name**, enter the module name **deepstream_test4_jetson**. In **Image URI**, enter **\<Login Server\>/deepstream_test4_jetson:v1**. For **\<Login Server\>**, use the URL of your container registry.
 
-   :::image type="content" source="../media/iot-hub-add-module-uri.png" alt-text="Screenshot that shows entering a name and image U R I for the I o T Edge module.":::
+   :::image type="content" source="../media/iot-hub-add-module-uri.png" alt-text="Screenshot that shows entering a name and image U R I for the IoT Edge module.":::
 
 1. When you're finished, select **Review + Create**:
 
-   :::image type="content" source="../media/iot-hub-module-review.png" alt-text="Screenshot that shows the Review + Create button highlighted on the Modules pane.":::
+   :::image type="content" source="../media/iot-hub-module-review.png" alt-text="Screenshot that shows the Review plus Create button highlighted on the Modules pane.":::
 
 1. The **Deployment** text box displays the deployment specification you're about to submit to your device. Verify that the contents look similar to this example:
 

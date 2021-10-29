@@ -39,7 +39,7 @@ An IoT Edge-based solution has three components:
 
 An IoT Edge solution optionally can incorporate an instance of Azure Container Registry to provide secure distribution of containerized modules. This approach is recommendation for production deployment scenarios. The following image shows how the three core components can work to use a container registry to achieve an end-to-end edge-to-cloud solution architecture:
 
-:::image type="content" source="../media/install-edge-full.png" alt-text="Diagram that depicts how to install I o T Edge.":::
+:::image type="content" source="../media/install-edge-full.png" alt-text="Diagram that depicts how to install Azure IoT Edge.":::
 
 In the preceding image, (1) Azure IoT Hub distributes a deployment specification that (2) defines the modules to run on **yourEdgeDevice**, which has been instrumented with the IoT Edge runtime and securely registered as an IoT Edge device in the hub. Then, (3) the IoT Edge runtime receives this specification, which (4) refers to a **sensor** module that'is stored in Azure Container Registry. This module is retrieved securely and executed locally on the edge device, on which it then produces telemetry that flows from the device to the hub.
 
