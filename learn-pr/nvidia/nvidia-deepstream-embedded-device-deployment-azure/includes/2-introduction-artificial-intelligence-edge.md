@@ -33,7 +33,7 @@ To follow along with this module, you'll need one of the following NVIDIA Jetson
 
 An IoT Edge-based solution has three components:
 
-* **IoT Edge modules**: Modules are containers that run Azure services, third-party services, or custom code. Containers are deployed by using a specification that's defined in a hub in Azure IoT Hub and they're executed locally on IoT Edge instrumented devices.
+* **IoT Edge modules**: Modules are containers that run Azure services, third-party services, or custom code. Containers are deployed by using a specification that's defined in a hub in Azure IoT Hub and they're run locally on IoT Edge instrumented devices.
 * **IoT Edge runtime**: The runtime is a service that runs on an IoT Edge device to manage module workloads, provide mechanisms for module-to-module and device-to-cloud/cloud-to-device messaging, and orchestrate workloads that are defined in a hub.
 * **Cloud-based interface**: The interface is a collection of Azure services that are included in an Azure IoT Hub resource instance. The services provide a mechanism for secure device registration, a high-throughput mechanism for data ingestion (via AMQP, MQTT, or HTTPS), an ability to define and apply deployment specifications, and an ability to remotely monitor and manage IoT Edge devices.
 
@@ -41,7 +41,7 @@ An IoT Edge solution optionally can incorporate an instance of Azure Container R
 
 :::image type="content" source="../media/install-edge-full.png" alt-text="Diagram that depicts how to install Azure IoT Edge.":::
 
-In the preceding image, (1) Azure IoT Hub distributes a deployment specification that (2) defines the modules to run on **yourEdgeDevice**, which has been instrumented with the IoT Edge runtime and securely registered as an IoT Edge device in the hub. Then, (3) the IoT Edge runtime receives this specification, which (4) refers to a **sensor** module that'is stored in Azure Container Registry. This module is retrieved securely and executed locally on the edge device, on which it then produces telemetry that flows from the device to the hub.
+In the preceding image, (1) Azure IoT Hub distributes a deployment specification that (2) defines the modules to run on **yourEdgeDevice**, which has been instrumented with the IoT Edge runtime and securely registered as an IoT Edge device in the hub. Then, (3) the IoT Edge runtime receives this specification, which (4) refers to a **sensor** module that'is stored in Azure Container Registry. This module is retrieved securely and run locally on the edge device, on which it then produces telemetry that flows from the device to the hub.
 
 In this module, you'll deploy a solution that has an architecture that's similar to the one shown here. The main difference is that you'll include a deployment specification that defines a DeepStream-based IoT Edge module to publish object detection results into an IoT hub. The deployment runs on an NVIDIA Jetson embedded device that natively supports the ARM64 distribution of the IoT Edge runtime.
 
