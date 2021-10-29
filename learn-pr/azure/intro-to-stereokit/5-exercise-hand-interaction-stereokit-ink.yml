@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-stereokit.4-exercise-understand-stereokit-ink-window-menus
-title: Understand StereoKit Ink application window menus
+uid: learn.azure.intro-to-stereokit.5-exercise-hand-interaction-stereokit-ink
+title: Hand interaction in StereoKit Ink 
 metadata:
-  title: Understand StereoKit Ink application window menus
+  title: Hand interaction in StereoKit Ink 
   description: You'll learn how to make a core application loop radial hand menus, easy window menus with automatic layout, object-based menus with more explicit layouts, and file pickers, among other things.
   ms.date: 10/05/2021
   author: "Sean-Kerawala"
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-exercise-understand-stereokit-ink-window-menus.md)]
+  [!include[](includes/5-exercise-hand-interaction-stereokit-ink.md)]

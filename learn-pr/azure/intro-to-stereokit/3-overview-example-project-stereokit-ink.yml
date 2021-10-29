@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-stereokit.3-overview-example-project-stereokit-ink
-title: Overview of example project StereoKit Ink
+uid: learn.azure.intro-to-stereokit.3-overview-stereokit-ink
+title: Overview of StereoKit Ink application
 metadata:
-  title: Overview of example project StereoKit Ink
+  title: Overview of StereoKit Ink application
   description: You'll have a basic understanding of 3D models, Hand Menus, and UI buttons before breaking into the StereoKit Ink.
   ms.date: 10/05/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 5
 content: |
-  [!include[](includes/3-overview-example-project-stereokit-ink.md)]
+  [!include[](includes/3-overview-stereokit-ink.md)]

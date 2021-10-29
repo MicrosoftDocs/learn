@@ -37,11 +37,12 @@ prerequisites: |
 units: 
 - learn.azure.intro-to-stereokit.1-introduction
 - learn.azure.intro-to-stereokit.2-get-started-stereokit-development
-- learn.azure.intro-to-stereokit.3-overview-example-project-stereokit-ink
-- learn.azure.intro-to-stereokit.4-exercise-understand-stereokit-ink-application-configurations
-- learn.azure.intro-to-stereokit.5-exercise-test-stereokit-ink-application-hololens-2-windows-pc
-- learn.azure.intro-to-stereokit.6-knowledge-check
-- learn.azure.intro-to-stereokit.7-summary
+- learn.azure.intro-to-stereokit.3-overview-stereokit-ink
+- learn.azure.intro-to-stereokit.4-exercise-understand-stereokit-ink-window-menus
+- learn.azure.intro-to-stereokit.5-exercise-hand-interaction-stereokit-ink
+- learn.azure.intro-to-stereokit.6-exercise-test-stereokit-ink-application-hololens-2-windows-pc
+- learn.azure.intro-to-stereokit.7-knowledge-check
+- learn.azure.intro-to-stereokit.8-summary
 
 badge:
   uid: learn.azure.intro-to-stereokit.badge

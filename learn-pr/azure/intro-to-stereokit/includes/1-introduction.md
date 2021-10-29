@@ -1,8 +1,8 @@
-Welcome to the StereoKit module! You'll learn how to set up StereoKit for Mixed Reality development and build Mixed Reality applications for different platforms. You'll also learn some of the key features of StereoKit.
+Welcome to the StereoKit module! You'll learn how to set up StereoKit for Mixed Reality development with its key features and build Mixed Reality applications for different platforms.
 
-StereoKit is a code-first library aimed primarily at engineers and others who work in similar environments. StereoKit concerns a large number of non-game C# developers. Visual Studio developers can continue working as they have in the past, using NuGet's extended functionality.
+StereoKit is a code-first library aimed initially at engineers and others who work on a similar platform. StereoKit concerns a large number of non-game C# developers. Visual Studio developers can continue working as they have in the past, using NuGet's extended functionality.
 
-Suppose you want to build an application without using any game engines such as unity and unreal. These game engines are vast, complex, and full of constraints; it is tedious for a regular user to build a small application. So in such a scenario, you can use StereoKit to develop your Mixed Reality applications.
+Suppose you want to build an application without using any game engines. Instead, you can use StereoKit to develop your Mixed Reality applications.
 
 You can develop custom applications using StereoKit as it focuses on non-game Mixed Reality use cases. You can also create high-quality Mixed Reality experiences using StereoKit. Furthermore, you can perform Mixed Reality operations natively using basic core APIs. Also, StereoKit helps You to overcome the complex game engine structures.
 
@@ -14,7 +14,7 @@ You can develop custom applications using StereoKit as it focuses on non-game Mi
 
 * The StereoKit image or texture format must be in ".jpg", ".png", ".tga", ".bmp", ".psd", ".gif", ".hdr", ".pic", "equirectangular cubemap", and "procedural".
 
-* StereoKit builds your application to a device in a matter of seconds.
+* StereoKit builds your application to a device in a matter of time.
 
 * StereoKit supports flat-screen mode with input emulation, powerful UI, and interactions for easy development.
 
@@ -22,4 +22,4 @@ You can develop custom applications using StereoKit as it focuses on non-game Mi
 
 * Physics enables the 3D object to function as a real-world object, along with all physical constraints.
 
-* StereoKit, by default, uses a flexible shader or material system with a built-in PBR.
+* By default Stereokit, uses a flexible shader or material system with a built-in PBR.
