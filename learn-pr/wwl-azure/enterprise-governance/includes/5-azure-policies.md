@@ -40,7 +40,7 @@ The approach to creating a custom policy follows these steps:
 
 ## Composing an Azure Policy
 
-The steps for composing an implementing a policy in Azure Policy begins with creating:
+The steps for composing and implementing a policy in Azure Policy begins with creating:
 * **Policy definition** - Every policy definition has conditions under which it's enforced. And, it has a defined effect that takes place if the conditions are met.
 * **Policy assignment** - A policy definition that has been assigned to take place within a specific scope. This scope could range from a management group to an individual resource. The term scope refers to all the resources, resource groups, subscriptions, or management groups that the policy definition is assigned to.
 * **Policy parameters** - They help simplify your policy management by reducing the number of policy definitions you must create. You can define parameters when creating a policy definition to make it more generic. 

@@ -25,9 +25,9 @@ Template specs are stored within Azure, so you don't need to maintain shared tem
 
 When you work with Bicep, you can create reusable _modules_ to define sets of resources in a single file. Template specs and Bicep modules are both ways of adding reusability to your templates, but they're optimized for different things:
 
-* Template specs are stored in Azure as a resource. You need to store Bicep modules somewhere that you control, like a version control system such as Git, or your file system.
-* Bicep modules are intended to be combined into a larger deployment. Template specs are designed to be deployable as a complete template, although you can use a template spec within a deployment if you want.
+* Template specs are designed to be deployable as a complete template. You can deploy template specs by using Azure portal as well as tooling like the Azure CLI and Azure PowerShell. Bicep modules are intended to be combined into a larger deployment. However, if you have created a template spec, Bicep also enables to use it as a module if you want.
 * Template specs provide versioning and access control capabilities. You need to manage the versions and security for your Bicep code yourself.
+* Template specs are stored in Azure as a resource. You need to store Bicep modules somewhere that you control, like a version control system such as Git, or your file system.
 * Bicep modules retain all of the original Bicep code, including comments, symbolic names, and whitespace. When you create a template spec by using Bicep, your Bicep code is converted to JSON and some of this information is lost. So you need to keep the source Bicep file somewhere else as well.
 
 When you're deciding between template specs and Bicep modules, a good rule of thumb is: if the template is going to be deployed as is throughout your organization, template specs are probably a good fit. But if you're likely to reuse this template within multiple parent templates, Bicep modules might serve your needs better.
