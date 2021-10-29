@@ -15,7 +15,7 @@ The back-end part of the application is deployed and now you need to deploy the 
 
 ## Before we start
 
-We'll assume an AKS cluster is already created and running. Before creating a new cluster, run the following commands to be sure there's no other clusters or resources already created:
+Let's assume an AKS cluster is already created and running. Before creating a new cluster, run the following commands to be sure there's no other clusters or resources already created:
 
 ```azurecli-interactive
 export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
