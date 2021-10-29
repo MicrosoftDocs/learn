@@ -4,9 +4,9 @@ title: Explain how to deploy PostgreSQL to Azure
 metadata:
   title: Explain how to deploy PostgreSQL to Azure
   description: "Explain how to deploy PostgreSQL to Azure"
-  ms.date: 10/28/2021
+  ms.date: 10/29/2021
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
