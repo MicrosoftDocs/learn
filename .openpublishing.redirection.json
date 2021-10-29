@@ -5026,6 +5026,36 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/student-evangelism/intro-to-git/4-exercise-start-a-project.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-git-project/2-exercise-start-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/intro-to-git/7a-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-git/4-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/intro-to-git/5-exercise-make-and-track-changes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-git-project/3-exercise-make-track-changes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/intro-to-git/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-git/5-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/intro-to-git/6-fix-simple-mistakes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-git-project/4-fix-simple-mistakes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/intro-to-git/7-exercise-fix-mistakes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-git-project/5-exercise-fix-mistakes",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/azure-fundamentals/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts",
       "redirect_document_id": false
@@ -9318,6 +9348,56 @@
     {
       "source_path": "learn-pr/data-ai-cert/import-data-into-asdw-with-polybase/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-sql-server-virtual-machine/7-describe-migration-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-sql-server-virtual-machine/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-mariadb-mysql-postgresql-azure/5-explain-database-migration-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-mariadb-mysql-postgresql-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-cybersecurity/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-basic-concepts-of-cybersecurity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-cybersecurity/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-basic-concepts-of-cybersecurity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-cybersecurity/2-what-is-cybersecurity.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-basic-concepts-of-cybersecurity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-cybersecurity/3-threat-landscape.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-basic-concepts-of-cybersecurity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-cybersecurity/4-mitigation-strategies.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-basic-concepts-of-cybersecurity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-cybersecurity/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-basic-concepts-of-cybersecurity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-cybersecurity/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-basic-concepts-of-cybersecurity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-architecture-fundamentals/exercise-create-website.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-architecture-fundamentals/",
       "redirect_document_id": false
     }
   ]
