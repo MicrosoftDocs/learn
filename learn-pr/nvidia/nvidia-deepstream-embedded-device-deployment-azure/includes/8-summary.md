@@ -1,6 +1,6 @@
 In this module, you learned how to:
 
-- Modify a DeepStream Graph Composer Application to Publish Data to an Azure IoT Hub
-- Build and Publish cross-platform DeepStream container images to an Azure Container Registry
-- Configure Azure IoT Edge to run on NVIDIA Embedded Hardware
-- Deploy cross-platform DeepStream images to NVIDIA embedded devices using Azure IoT Edge
+- Modify a DeepStream Graph Composer application to publish data to a hub in Azure IoT Hub.
+- Build and publish cross-platform DeepStream container images to a container registry in Azure.
+- Configure Azure IoT Edge to run on NVIDIA embedded hardware.
+- Deploy cross-platform DeepStream images to NVIDIA embedded devices by using Azure IoT Edge.

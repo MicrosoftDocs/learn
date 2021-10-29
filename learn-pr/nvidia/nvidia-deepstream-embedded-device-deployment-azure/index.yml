@@ -1,29 +1,29 @@
 ### YamlMime:Module
 uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure
 metadata:
-  title: NVIDIA DeepStream embedded device deployment with Microsoft Azure
-  description: Learn how to publish and deploy an ARM based DeepStream container workload to NVIDIA embedded hardware using Azure IoT Edge.
+  title: NVIDIA DeepStream embedded device deployment with Azure
+  description: Learn how to publish and deploy an ARM-based DeepStream container workload to NVIDIA embedded hardware using Azure IoT Edge.
   ms.date: 10/01/2021
   author: toolboc
   ms.author: pdecarlo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: NVIDIA DeepStream embedded device deployment with Microsoft Azure
-summary: In this module, we will publish and deploy an ARM based DeepStream container workload to NVIDIA embedded hardware using Azure IoT Edge.
+title: NVIDIA DeepStream embedded device deployment with Azure
+summary: In this module, you'll publish and deploy an ARM-based DeepStream container workload to NVIDIA embedded hardware by using Azure IoT Edge.
 abstract: |
   In this module, you will learn how to:
-  - Modify a DeepStream 6.0 Graph Composer Application to Publish Data to an Azure IoT Hub
-  - Build and Publish cross-platform DeepStream 6.0 container images to an Azure Container Registry
-  - Configure Azure IoT Edge to run on NVIDIA Embedded Hardware
-  - Deploy cross-platform DeepStream 6.0 images to NVIDIA embedded devices using Azure IoT Edge
+  - Modify a DeepStream Graph Composer application to publish data to a hub in Azure IoT Hub.
+  - Build and publish cross-platform DeepStream container images to a container registry in Azure.
+  - Configure Azure IoT Edge to run on NVIDIA embedded hardware.
+  - Deploy cross-platform DeepStream images to NVIDIA embedded devices by using Azure IoT Edge.
 
 prerequisites: |
-  - X86 Based System running Ubuntu 18.04 OS
-  - RTX2080, RTX3080, T4, or A100 NVIDIA Graphics Card
-  - [NVIDIA Jetson Embedded Device](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/) provisioned with [JetPack 4.5.1 GA](https://developer.nvidia.com/jetpack-sdk-451-archive)
-  - Familiarity with container workloads / Docker
-  - Familiarity with Azure IoT Edge / IoT Hub 
-  - Completion of the prerequisite module: [Introduction to NVIDIA DeepStream Graph Composer with Microsoft Azure](/learn/modules/introduction-nvidia-deepstream-graph-composer-azure/)
+  - x86-based system running Ubuntu 18.04.
+  - RTX 2080, RTX 3080, T4, or A100 NVIDIA graphics card.
+  - [NVIDIA Jetson embedded device](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/) provisioned with [JetPack 4.5.1 GA](https://developer.nvidia.com/jetpack-sdk-451-archive).
+  - Familiarity with container workloads and Docker.
+  - Familiarity with Azure IoT Edge and Azure IoT Hub. 
+  - Completing the prerequisite module: [Introduction to NVIDIA DeepStream Graph Composer with Microsoft Azure](/learn/modules/introduction-nvidia-deepstream-graph-composer-azure/)
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate

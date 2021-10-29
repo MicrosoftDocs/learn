@@ -3,7 +3,7 @@ uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.6-deploy-de
 title: Exercise - Deploy cross-platform DeepStream images to NVIDIA embedded devices with Azure IoT Edge
 metadata:
   title: Exercise - Deploy cross-platform DeepStream images to NVIDIA embedded devices with Azure IoT Edge
-  description: Exercise - Deploy cross-platform DeepStream images to NVIDIA embedded devices with Azure IoT Edge
+  description: Exercise - Deploy cross-platform DeepStream images to NVIDIA embedded devices with Azure IoT Edge.
   author: toolboc
   ms.author: pdecarlo
   ms.date: 10/01/2021
