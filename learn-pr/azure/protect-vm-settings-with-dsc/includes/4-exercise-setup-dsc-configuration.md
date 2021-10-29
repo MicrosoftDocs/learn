@@ -48,7 +48,7 @@ Start by deploying a new VM from a Windows Server 2019 image.
       --name myVM
     ```
 
-1. In your web browser, go to the public IP address of your VM `http://[public-ip]`. Although port 80 is open, your connection should time out with `This site can't be reached`. This is because IIS isn't deployed on your VM. We will fix that in a moment.
+1. In your web browser, go to the public IP address of your VM `http://[public-ip]`. Although port 80 is open, your connection should time out with `This site can't be reached`. This error occurrs because IIS isn't deployed on your VM. We'll fix that later in this exercise.
 
 ## Create an Azure Automation account
 
@@ -102,7 +102,7 @@ Start by deploying a new VM from a Windows Server 2019 image.
     }
     ```
 
-1. Select <kbd>Ctrl+S</kbd> to save the file. in your home directory, and then select <kbd>Ctrl+Q</kbd> to close the editor.
+1. Select <kbd>Ctrl+S</kbd> to save the file in your home directory, and then select <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. In your PowerShell session in Azure Cloud Shell, enter the following code, replacing `[your-automation-account-name]` with the name for your automation account resource, to upload the DSC script into your Azure Automation account.
 
@@ -149,7 +149,7 @@ After you upload your DSC configuration script, import any PowerShell modules th
 
 1. In the **Compile DSC Configuration** dialog box, select **Yes**.
 
-1. Check your notifications (notifications icon is in the global controls in the page header). Wait for the compilation job to to show **Status** of **Completed**. This may take several minutes.
+1. Check your notifications (notifications icon is in the global controls in the page header). Wait for the compilation job to show **Status** of **Completed**, which may take several minutes.
 
     >[!NOTE]
     >You may need to refresh to see the status change. To refresh, in the top left breadcrumb path of the Azure portal, select your automation account. The **State configuration (DSC)** pane appears. In the top menu bar, select **Refresh**. Then, select *MyDscConfiguration* configuration from the list to return to the **MyDscConfiguration** pane. Under the **Compilation jobs** tab, the **Status** should now appear as *Completed*.
@@ -166,7 +166,7 @@ After you upload your DSC configuration script, import any PowerShell modules th
 
 1. Select the VM you created in the first task of this exercise: **myVM**. It may take up to 10 minutes for the configuration and VM to propagate in the network. If the VM isn't listed, wait a few minutes, and then select **Refresh** in command bar until it appears.
 
-1. In the commnd bar, select **Connect**. The **Registration** pane appears.
+1. In the command bar, select **Connect**. The **Registration** pane appears.
 
     :::image type="content" source="../media/4-add-vm.png" alt-text="Screenshot of the Azure portal, showing the Virtual Machines pane.":::
 
