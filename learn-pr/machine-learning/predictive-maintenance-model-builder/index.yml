@@ -3,7 +3,7 @@ uid: learn.machine-learning.predictive-maintenance-model-builder
 metadata:
   moduleType: standard
   title: Train a machine learning model for predictive maintenance by using ML.NET Model Builder
-  description: "In this module, you'll learn how use ML.NET Model Builder to train and consume a machine learning model for predictive maintenance."
+  description: "In this module, you'll learn how to use ML.NET Model Builder to train and consume a machine learning model for predictive maintenance."
   ms.date: 10/25/2021
   author: luisquintanilla
   ms.author: chnoring

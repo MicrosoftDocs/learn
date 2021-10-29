@@ -52,7 +52,7 @@ For unsupervised tasks, the *label is unknown*. Examples of unsupervised machine
 
 ### Supported scenarios in Model Builder
 
-Model Builder supports the following scenarios that map to the respective machine learning tasks:
+Model Builder supports the following scenarios that map to machine learning tasks:
 
 | Scenario | Machine learning task | Use case |
 | --- | --- | --- |
@@ -109,7 +109,7 @@ Data is the most important component for building machine learning models. The p
 
 Depending on your scenario, Model Builder supports loading data from the following sources:
 
-- Delimited files (comma, semicolon, tab)
+- Delimited files (comma, semicolon, and tab)
 - Local and remote SQL Server databases
 - Images (*.jpg* and *.png*)
 - [Visual Object Tagging Tool (VOTT)](https://github.com/Microsoft/VoTT?azure-portal=true) for object detection scenarios
@@ -136,7 +136,7 @@ By default, all other columns that are not the label are used as features. Featu
 
 ### Advanced data options
 
-To customize how your data is loaded, Model Builder provides advanced data options. These advanced data options allow you to customize settings that pertain to your columns and dataset formatting.
+To customize how your data is loaded, Model Builder provides advanced data options. These options allow you to customize settings that pertain to your columns and dataset formatting.
 
 For columns, you can choose the following settings:
 
@@ -170,8 +170,8 @@ The columns are defined as follows:
 
 For this scenario, you won't use all of the columns in the dataset because they either don't inform the prediction or contain redundant information. 
 
-Because you want to be able to predict whether a machine has failed or not, the **Machine failure** column is the label. In Model Builder, for features, you can use data from the **Product ID**, **Type**, and various sensor columns.
+Because you want to be able to predict whether a machine will fail or not, the **Machine failure** column is the label. In Model Builder, for features, you can use data from the **Product ID**, **Type**, and various sensor columns.
 
-Although the failure modes are useful in diagnosing the root cause of the failure, they aren't useful for your use case. The reason is that you only want to know whether a machine has failed or not. Additionally, similar information is already captured by the **Machine failure** column. So, you can ignore these columns.
+Although the failure modes are useful in diagnosing the root cause of a failure, they aren't useful for your use case. The reason is that you only want to know whether a machine has failed or not. Additionally, similar information is already captured by the **Machine failure** column. So, you can ignore these columns.
 
 Proceed to the next unit to check your knowledge on scenarios, environments, and data preparation.

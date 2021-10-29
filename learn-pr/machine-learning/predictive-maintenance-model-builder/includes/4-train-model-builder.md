@@ -1,10 +1,5 @@
 In this unit, you'll learn how to train and evaluate machine learning models in Model Builder.
 
-The next steps after preparing your data for training are:
-
-1. Train your model.
-1. Evaluate your model.
-
 During training, Model Builder applies algorithms to your data. By using evaluation metrics for the specific scenario, you measure how well your model performs.
 
 ## Training in Model Builder
@@ -17,7 +12,7 @@ In most cases, to train machine learning models in Model Builder, you only have 
 
 Longer training periods allow Model Builder to explore more models with a wider range of settings.
 
-The following table summarizes the average time taken to get good performance for a suite of example datasets on a local machine, by using CPU.
+The following table summarizes the average time taken to get good performance for a suite of example datasets on a local machine, by using CPU:
 
 |Dataset size|Average time to train|
 |------------|---------------------|
@@ -53,7 +48,7 @@ After your model is done training, Model Builder generates the following files a
 
 ## Evaluate your model
 
-Now that you've found the best model for your data, it's time to test how well it makes predictions. One way to evaluate how well your model performs is by using evaluation metrics. 
+Now that you've found the best model for your data, it's time to test how well it makes predictions. One way to evaluate how well your model performs is by using metrics. 
 
 Evaluation metrics are specific to the type of machine learning task that a model performs. For each task, you can look at various metrics to determine the performance of your model. 
 
@@ -83,7 +78,7 @@ If you're not satisfied with the evaluation metrics of your model, you can try t
 
 - **Provide more representative data observations**: Experience is the best teacher. The concept also applies to machine learning. The more data observations you can provide, the broader the set of patterns that your model can recognize.
 - **Provide more context**: Adding columns that add context to your data helps your model identify patterns. For example, let's say you're trying to predict the price of a home and the only data point you have is number of rooms. That by itself might not tell you much. However, what if you knew that the home is located in a suburban neighborhood outside a major metropolitan area, where average household income is $80,000 and schools are in the top 20th percentile? Now you have more information that can help inform the model's decision.
-- **Use meaningful data and features**: Although more data samples and features can help improve the accuracy of the model, they can also introduce noise because not all data and features are meaningful. It's important to understand which features most heavily affect decisions that the algorithm makes.
+- **Use meaningful data and features**: Although more data samples and features can help improve the accuracy of the model, they can also introduce noise because not all data and features are meaningful. It's important to understand which features most heavily affect the algorithm's decisions.
 - **Explore more algorithms**: Providing Model Builder with more time to allow it to explore more algorithms and hyperparameters might help improve your model.
 
 In the next unit, you'll use Model Builder to train a machine learning model.

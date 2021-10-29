@@ -1,4 +1,4 @@
-You spent some time training a model and using evaluation metrics to select the best model for your data. Now it's time to put it to use in making predictions on your company's devices. In this unit, you'll create a console application that takes in new data and uses your model to predict whether the device has failed or not.
+You spent some time training a model and using evaluation metrics to select the best model for your data. Now it's time to put it to use in making predictions on your company's devices. In this unit, you'll create a console application that takes in new data and uses your model to predict whether the device will fail or not.
 
 ## Add the console application to the solution
 

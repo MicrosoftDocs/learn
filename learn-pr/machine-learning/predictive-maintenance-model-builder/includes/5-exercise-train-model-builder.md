@@ -1,4 +1,4 @@
-You've collected sensor data from manufacturing devices that are healthy and those that have failed. You now want to use Model Builder to train a machine learning model that predicts whether a machine has failed or not. By using machine learning to automate the monitoring of these devices, you can save your company money by providing more timely and reliable maintenance.
+You've collected sensor data from manufacturing devices that are healthy and those that have failed. You now want to use Model Builder to train a machine learning model that predicts whether a machine will fail or not. By using machine learning to automate the monitoring of these devices, you can save your company money by providing more timely and reliable maintenance.
 
 ## Add a new Machine Learning Model (ML.NET) item
 
@@ -140,7 +140,7 @@ Model Builder automatically sets how long you should train for based on the size
 
 :::image type="content" source="../media/train-machine-learning-model.png" alt-text="Screenshot that shows where to track training of the predictive maintenance classification model." lightbox="../media/train-machine-learning-model.png":::
 
-After the training process kicks off, Model Builder explores various models. Your training process is tracked in the training results and in the Visual Studio output window. The training results provide information about the best model that has been found throughout the training process. The output window provides detailed information like the name of the algorithm used, how long it took to train, and the performance metrics for that model. 
+After the training process starts, Model Builder explores various models. Your training process is tracked in the training results and in the Visual Studio output window. The training results provide information about the best model that has been found throughout the training process. The output window provides detailed information like the name of the algorithm used, how long it took to train, and the performance metrics for that model. 
 
 You might see the same algorithm name appear multiple times. This happens because in addition to trying different algorithms, Model Builder is trying different hyperparameter configurations for those algorithms. 
 
@@ -158,7 +158,7 @@ In the **Try your model** section of the **Evaluate** step, you can provide new 
 
 :::image type="content" source="../media/evaluate-machine-learning-model.png" alt-text="Screenshot that shows making predictions with your trained model." lightbox="../media/evaluate-machine-learning-model.png":::
 
-The sample data section is where you provide input data for your model to make predictions. Each field corresponds to the columns that are used to train your model. This is a convenient way to verify that the model behaves as expected. By default, Model Builder pre-populates sample data with the first row from your dataset.
+The **Sample data** section is where you provide input data for your model to make predictions. Each field corresponds to the columns that are used to train your model. This is a convenient way to verify that the model behaves as expected. By default, Model Builder pre-populates sample data with the first row from your dataset.
 
 Let's test out your model to see whether it produces the expected results.
 

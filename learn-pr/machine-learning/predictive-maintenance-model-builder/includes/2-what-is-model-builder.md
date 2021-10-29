@@ -1,4 +1,4 @@
-Machine learning is a technique that uses mathematics and statistics to identify patterns within data without being explicitly programmed. Model Builder is a graphical Visual Studio extension to train and deploy custom machine learning models by using ML.NET.
+Machine learning is a technique that uses mathematics and statistics to identify patterns in data without being explicitly programmed. Model Builder is a graphical Visual Studio extension to train and deploy custom machine learning models by using ML.NET.
 
 :::image type="content" source="../media/model-builder-extension.png" alt-text="Screenshot that shows the Model Builder Visual Studio extension for M L dot NET." lightbox="../media/model-builder-extension.png":::
 
@@ -8,7 +8,7 @@ For example, let's say you want to predict the price of a home. If you're using 
 
 The world isn't always that simple, though. Many variables influence the price of a home. In cases like this, coming up with a simple heuristic that captures edge cases becomes difficult, and machine learning might be a better solution. 
 
-With machine learning, instead of explicitly programming rules, you use historical data to identify these rules based on actual observations. The patterns found through machine learning are then used to create an artifact known as a model to make predictions by using new and previously unseen data.
+With machine learning, instead of explicitly programming rules, you use historical data to identify these rules based on actual observations. The patterns found through machine learning are then used to create an artifact called a model to make predictions by using new and previously unseen data.
 
 ML.NET is an open-source, cross-platform machine learning framework for .NET. So you can apply your existing .NET skills and use the tools you're familiar with (like Visual Studio) to train machine learning models.
 
@@ -35,7 +35,7 @@ Model Builder uses automated machine learning (AutoML) to find the best model fo
 
 You don't need machine learning expertise to use Model Builder. All you need is some data and a problem to solve.
 
-The model training process can be further broken down into the following steps:
+The model training process consists of the following steps:
 
 1. **Choose a scenario**: What problem are you trying to solve? The scenario that you choose depends on your data and what you're trying to predict.
 1. **Choose an environment**: Where do you want to train your model? Depending on available compute resources, cost, privacy requirements, and other factors, you might choose to train models locally on your computer or in the cloud.
