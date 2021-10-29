@@ -9,6 +9,14 @@ The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk throu
     libglvnd-dev
     ```
 
+1. Install the NVIDIA driver version 470.63.01 from the NVIDIA Unix drivers page at: https://www.nvidia.com/Download/driverResults.aspx/179599/en-us
+
+    1. The installation package should download to your local user's *Downloads* folder. Go to the download location and install the package by using these commands:
+    ```bash
+    chmod 755 NVIDIA-Linux-x86_64-470.63.01.run
+    sudo ./NVIDIA-Linux-x86_64-470.63.01.run 
+    ```
+
 1. Install the extra packages that might be referenced at runtime when a DeepStream application is run. Notice that multiple `gstreamer`-based plug-ins are included. They're needed because NVIDIA DeepStream uses the [GStreamer](https://gstreamer.freedesktop.org/) library for media handling and graph composition in DeepStream applications. Use the following commands to install these requirements on the host terminal:
 
     ```bash
@@ -63,9 +71,9 @@ The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk throu
 
        ```bash
        cd ~/Downloads
-       sudo dpkg -i nv-tensorrt-repo-ubuntu1804-cuda11.3-trt8.0.1.6-ga-20210626_1-1_amd64.deb
-       sudo apt-key add /var/nv-tensorrt-repo-ubuntu1804-cuda11.3-trt8.0.1.6-ga-20210626/7fa2af80.pub
-       sudo apt-get update
+       sudo dpkg -i nv-tensorrt-repo-ubuntu1804-cuda11.3-trt8.0.1.6-ga-20210626_1-1_amd64.deb 
+       sudo apt-key add /var/nv-tensorrt-repo-ubuntu1804-cuda11.3-trt8.0.1.6-ga-20210626/7fa2af80.pub 
+       sudo apt-get update 
        sudo apt-get install \
        libnvinfer8=8.0.1-1+cuda11.3 \
        libnvinfer-plugin8=8.0.1-1+cuda11.3 \
@@ -73,7 +81,7 @@ The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk throu
        libnvonnxparsers8=8.0.1-1+cuda11.3 \
        libnvinfer-bin=8.0.1-1+cuda11.3 \
        libnvinfer-dev=8.0.1-1+cuda11.3 \
-       libnvinfer-plugin-dev=8.0.1-1+cuda11.3 
+       libnvinfer-plugin-dev=8.0.1-1+cuda11.3 \
        libnvparsers-dev=8.0.1-1+cuda11.3 \
        libnvonnxparsers-dev=8.0.1-1+cuda11.3 \
        libnvinfer-samples=8.0.1-1+cuda11.3 \
@@ -84,12 +92,12 @@ The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk throu
 
     1. Open a browser on the host machine. Go to the [NVIDIA DeepStream Getting Started - Downloads page](https://developer.nvidia.com/deepstream-getting-started).
 
-    1. Select the **DeepStream 6.0 for Servers and Workstations** package. It should download to your local user's *Downloads* folder. Go to the download location and install the package by using these commands:
+    1. Select the **DeepStream 6.0 for Servers and Workstations** .deb package. It should download to your local user's *Downloads* folder. Go to the download location and install the package by using these commands:
 
     ```bash
     cd ~/Downloads
     sudo dpkg -i <name of downloaded package>
-    sudo apt --fix-broken install'
+    sudo apt --fix-broken install
     ```
 
 You're now ready to start exploring how to build Intelligent Video Analytics applications by using the NVIDIA DeepStream SDK. We'll examine and run a sample application.
