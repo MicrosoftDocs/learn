@@ -1,4 +1,4 @@
-| ![Andy](../media/andy.png) | Andy is the IT Administrator for the SAP S/4 HANA landscape running in Azure and needs secure access to monitor, manage, and remediate problems from any location. |
+| ![Cartoon image of Andy.](../media/andy.png) | Andy is the IT Administrator for the SAP S/4 HANA landscape running in Azure and needs secure access to monitor, manage, and remediate problems from any location. |
 | :--- | :--- |
 
 Andy's system access supports two key functions:

@@ -1,4 +1,4 @@
-| ![Tim](../media/tim.png) | A regional salesperson, Tim needs secure and reliable access into the Azure SAP S/4 HANA system from their laptop and smartphone when they travel. Tim often uses the SAP Fiori web front end and their company’s SAP applications. |
+| ![Cartoon image of Tim.](../media/tim.png) | A regional salesperson, Tim needs secure and reliable access into the Azure SAP S/4 HANA system from their laptop and smartphone when they travel. Tim often uses the SAP Fiori web front end and their company’s SAP applications. |
 | :--- | :--- |
 
 Because Tim spends time on the road in hotels and coffee shops, Tim sometimes uses the public internet to access SAP. Use of public internet is the major reason Tim's authentication and network access is different than Amita’s.
@@ -7,7 +7,7 @@ The numbered steps below show what’s happening to the network traffic that Tim
 
 1. Tim opens a browser on a laptop or smartphone that connects to the **Azure DNS service**. The service returns an IP Address that Tim can use to reach the SAP Fiori front-end web servers.
 
-2. Before the browser connects to the applications, it authenticates Tim’s identity. The browser request enters the edge of the Azure regional network and passes inspection by the **Azure Distributed Denial of Service (DDos) Protection services**. The DDos services help ensure the traffic isn't part of a larger attack.
+2. Before the browser connects to the applications, it authenticates Tim’s identity. The browser request enters the edge of the Azure regional network and passes inspection by the **Azure Distributed Denial of Service Protection services**. The Azure Distributed Denial of Service Protection services help ensure the traffic isn't part of a larger attack.
 
 3. The request moves to the **Azure Active Directory authentication service**, which adds multifactor authentication for extra security.
 

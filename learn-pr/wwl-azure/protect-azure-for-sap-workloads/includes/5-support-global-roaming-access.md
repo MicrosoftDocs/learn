@@ -1,4 +1,4 @@
-| ![Irwin](../media/irwin.png) | Irwin also travels as a global product manager and needs secure and reliable access into the Azure SAP S/4 HANA system from their laptop and smart phone. Irwin frequently uses the SAP Fiori web front end and the company’s SAP applications. |
+| ![Cartoon image of Irwin.](../media/irwin.png) | Irwin also travels as a global product manager and needs secure and reliable access into the Azure SAP S/4 HANA system from their laptop and smart phone. Irwin frequently uses the SAP Fiori web front end and the company’s SAP applications. |
 | :--- | :--- |
 
 Because Irwin uses the public internet to access SAP. Irwin's process for authentication and network access is different than Amita’s but similar to Tim’s. In addition, Irwin's access–and user experience–benefits from a service that caches frequently used content and distributes it closer to the users in a global architecture: Azure Front Door.
