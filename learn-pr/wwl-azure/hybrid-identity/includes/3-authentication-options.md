@@ -10,7 +10,7 @@ You can choose **cloud authentication** which includes: Azure AD password hash s
 
 * Do you need on-premises Active Directory integration? If the answer is No, then you would use Cloud-Only authentication.  
 
-* If you do need on-premises Active Directory integration, then do you need to use cloud authentication, password protection, and your authentication requirements are natively supported by Azure AD? If the answer is Yes, Then you would use **Password Hash Sync + Seamless SSO**.
+* If you do need on-premises Active Directory integration, then do you need to use cloud authentication, password protection, and your authentication requirements are natively supported by Azure AD? If the answer is Yes, then you would use **Password Hash Sync + Seamless SSO**.
 
 * If you do need on-premises Active Directory integration, but you do not need to use cloud authentication, password protection, and your authentication requirements are natively supported by Azure AD, then you would use **Pass-through Authentication Seamless SSO**.
 
