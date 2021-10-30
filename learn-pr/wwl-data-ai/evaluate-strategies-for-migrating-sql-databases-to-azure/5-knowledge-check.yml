@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/29/2021
+  ms.date: 10/30/2021
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -22,12 +22,12 @@ quiz:
     - content: "Microsoft needs to add your subscription to an allowlist for a given feature"
       isCorrect: true
       explanation: "That's correct. Private preview feature is available directly from Microsoft."
-    - content: "You need to select the private preview feature checkbox in the Azure Portal"
+    - content: "You need to select the private preview feature checkbox in the Azure portal"
       isCorrect: false
-      explanation: "That's incorrect. You cannot enable the private preview feature through Azure Portal."
-    - content: "Private preview features are automatically available through Azure Portal"
+      explanation: "That's incorrect. You cannot enable the private preview feature through Azure portal."
+    - content: "Private preview features are automatically available through Azure portal"
       isCorrect: false
-      explanation: "That's incorrect. Private preview features are not automatically available through Azure Portal."
+      explanation: "That's incorrect. Private preview features are not automatically available through Azure portal."
   - content: "Which tool would you use to assess and migrate your databases from an on-premises SQL Server to an Azure Virtual Machine?"
     choices:
     - content: "Microsoft Assessment and Planning Toolkit"

@@ -7,5 +7,5 @@
 At the end of this module, you will be able to:
 
 - Understand how compatibility level affects query optimizer behaviors.
-- Uderstand how Azure preview feature process works.
+- Understand how Azure preview feature process works.
 - Describe the various options when you are performing a migration.
