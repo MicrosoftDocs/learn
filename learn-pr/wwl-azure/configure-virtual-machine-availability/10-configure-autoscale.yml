@@ -4,13 +4,12 @@ title: Configure autoscale
 metadata:
   title: Configure autoscale
   description: "Configure autoscale"
-  ms.date: 09/24/2021
+  ms.date: 10/31/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
