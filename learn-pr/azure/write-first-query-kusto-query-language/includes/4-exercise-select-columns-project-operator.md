@@ -3,7 +3,7 @@ Recall that the we've returned a specified number of random rows. Here, you will
 
 ## Use the `project` operator
 
-If you remember, the meterological data example has quite a few columns. Not all of these columns are meaningful for our exploration, or you want to view these results in a window with limited space. We'll choose just a few columns to view. To do this, we'll use the `project` operator to define which columns we want to see in the output. Multiple column names are separated by commas.
+If you remember, the meteorological data example has quite a few columns. Not all of these columns are meaningful for our exploration, or you want to view these results in a window with limited space. We'll choose just a few columns to view. To do this, we'll use the `project` operator to define which columns we want to see in the output. Multiple column names are separated by commas.
 
 Run the following query:
 

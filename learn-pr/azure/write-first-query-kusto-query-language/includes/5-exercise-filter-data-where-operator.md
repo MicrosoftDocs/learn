@@ -59,4 +59,11 @@ StormEvents
 > You might need to cast either your input conditions or your data values to a different data type in order to perform comparisons between values.
 >
 > For example, when we search on a datetime field, we have to input a datetime value as shown in the query above.
+> 
+>If you hover on a column name in the query editor, you can see the type of data contained in this column. 
+>
+> :::image type="content" source="../media/5-where-4.png" alt-text="Screenshot of datatype in query editor.":::
+
+
+## Check your work
 

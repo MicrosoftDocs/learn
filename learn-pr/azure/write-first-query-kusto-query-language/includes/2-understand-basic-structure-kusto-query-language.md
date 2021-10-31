@@ -1,4 +1,4 @@
-Organizations in all sectors deal with a constant flow of data, and need to be able to turn this data into meaningful, actionable insights. In the meterological scenario, you've obtained a dataset with storm data from the US. In this unit, you'll learn about the basic structure Kusto Query Language (KQL) so that you can use KQL to analyze and interpret this data set.
+Organizations in all sectors deal with a constant flow of data, and need to be able to turn this data into meaningful, actionable insights. In the meteorological scenario, you've obtained a dataset with storm data from the US. In this unit, you'll learn about the basic structure Kusto Query Language (KQL) so that you can use KQL to analyze and interpret this data set.
 
 ## What is a Kusto query?
 
@@ -21,4 +21,4 @@ StormEvents
 
 This query has a single tabular expression statement. The statement begins with a reference to a table called *StormEvents* (the database that hosts this table is implicit, and part of the connection information) and contains several operators, each separated by a pipe. The data (rows) for the source table is filtered by the value of the StartTime column, and afterwards filtered by the value of the State column. The query then returns the count of "surviving" rows.
 
-In the next units, we'll learn about some of the most commonly used operators, and how to use them to answer questions about a sample dataset containing US meterological data.
+In the next units, we'll learn about some of the most commonly used operators, and how to use them to answer questions about a sample dataset containing US meteorological data.
