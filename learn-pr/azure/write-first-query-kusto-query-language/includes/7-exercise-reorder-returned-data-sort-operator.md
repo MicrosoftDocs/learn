@@ -1,13 +1,6 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Kusto queries can be used to filter data and return specific information.
+Recall that in the storm events example, we've been able to narrow down events by time range, keywords, and values in a particular column. Here, you'll learn how to count the sort the results of a query.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
-
-    Heading: none
-
-    Example: "A storage account represents a collection of settings that implement a business policy."
-
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
 TODO: add your topic sentences(s)
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------

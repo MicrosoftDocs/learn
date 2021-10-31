@@ -1,5 +1,5 @@
 Kusto queries can be used to filter data and return specific information.
-Recall that we've used the `project` operators to filter certain columns.
+Recall that we've used filter certain columns in or out of the displayed results.
 Here, you will use the `where` operator to filter on a condition.
 
 ## Use the `where` operator
@@ -34,7 +34,7 @@ StormEvents
 | project State, EventType, DamageCrops
 ```
 
-:::image type="content" source="../media/5-where-2.png" alt-text="Screenshot of where operator.":::
+:::image type="content" source="../media/5-where-2.png" alt-text="Screenshot of where operator example 2.":::
 
 As you can see, there are 200 records returned from this query, all of them from Florida, and having property damage greater than zero.
 
@@ -53,7 +53,7 @@ StormEvents
 | take 50
 ```
 
-:::image type="content" source="../media/5-where-3.png" alt-text="Screenshot of where operator.":::
+:::image type="content" source="../media/5-where-3.png" alt-text="Screenshot of where operator example 3.":::
 
 > [!TIP]
 > You might need to cast either your input conditions or your data values to a different data type in order to perform comparisons between values.

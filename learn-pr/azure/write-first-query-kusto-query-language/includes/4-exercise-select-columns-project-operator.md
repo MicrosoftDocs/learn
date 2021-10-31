@@ -1,5 +1,5 @@
 Kusto queries can be used to filter data and return specific information.
-Recall that the `take` operator returned a specified number of random rows. Here, you will use the `project` operator to return specified columns.
+Recall that the we've returned a specified number of random rows. Here, you will use the `project` operator to return specified columns.
 
 ## Use the `project` operator
 
