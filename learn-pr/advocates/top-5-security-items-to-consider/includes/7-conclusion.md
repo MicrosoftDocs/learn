@@ -1,6 +1,6 @@
 In this module, you learned how to safeguard your applications in Azure against common attacks. We looked at several key security tips:
 
-- Use Azure Security Center
+- Use Microsoft Defender for Cloud
 - Verify your application inputs and outputs
 - Store your secrets into Key Vault
 - Ensure you are using the latest version of your framework, and using its security features

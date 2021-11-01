@@ -21,10 +21,10 @@ Andy needs a secure connection into Azure to connect directly to the operating s
 
 ## Monitoring and analytics
 
-Two other tools help Andy secure and analyze the networking portion of the architecture: Azure Network Watcher and Azure Sentinel.
+Two other tools help Andy secure and analyze the networking portion of the architecture: Azure Network Watcher and Microsoft Sentinel.
 
 - Azure Network Watcher helps Andy monitor and automatically repair issues within the SAP S/4 HANA landscape in Azure. Network Watcher includes tools to monitor, diagnose, view metrics, and enable or disable logs for resources in an Azure virtual network. Andy uses Network Watcher to monitor and repair the network health of Infrastructure-as-a-Service (IaaS) products. These IaaS products include Azure Virtual Machines, Azure Virtual Networks, Azure Application Gateways, and Azure load balancing services. 
-- Azure Sentinel offers Andy a bird's-eye view across Azure and the company's SAP S/4 HANA landscape to help address increasingly sophisticated attacks and a growing volume of alerts. The service, a scalable, cloud-native, security information event management (SIEM), and security orchestration automated response (SOAR) solution, offers intelligent security analytics and threat intelligence. Azure Sentinel provides Andy a single solution for alert detection, threat visibility, proactive hunting, and threat response, and helps reduce resolution time frames. 
+- Microsoft Sentinel offers Andy a bird's-eye view across Azure and the company's SAP S/4 HANA landscape to help address increasingly sophisticated attacks and a growing volume of alerts. The service, a scalable, cloud-native, security information event management (SIEM), and security orchestration automated response (SOAR) solution, offers intelligent security analytics and threat intelligence. Microsoft Sentinel provides Andy a single solution for alert detection, threat visibility, proactive hunting, and threat response, and helps reduce resolution time frames. 
 
 > [!NOTE]
 > To install SAP S/4 HANA on Azure, Andy can choose to deploy SAP solutions from three major sources and in various ways, including:

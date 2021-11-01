@@ -8,14 +8,14 @@ metadata:
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Enable and manage Azure Security Center
-summary: Use Azure Security Center, Azure Defender, and Secure Score to track and improve your security posture in Azure.
+title: Enable and manage Microsoft Defender for Cloud
+summary: Use Microsoft Defender for Cloud, Microsoft Defender for Cloud, and Secure Score to track and improve your security posture in Azure.
 abstract: |
   By the end of this module, you will be able to:
   - Define the most common types of cyber-attacks
-  - Configure Azure Security Center based on your security posture
+  - Configure Microsoft Defender for Cloud based on your security posture
   - Review Secure Score and raise it
-  - Lock down your solutions using Security Center and Defender
+  - Lock down your solutions using Defender for Cloud and Defender for Cloud
   - Enable Just-in-Time access and other security features
 prerequisites: |
   - None

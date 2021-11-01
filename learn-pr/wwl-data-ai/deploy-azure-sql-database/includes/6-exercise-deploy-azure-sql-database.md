@@ -123,7 +123,7 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
 1. On the Additional Settings page, select the following options:
 
     - Set Use existing data to **Sample**
-    - Ensure **Enable Azure Defender for SQL** is set to **Not now**  
+    - Ensure **Enable Microsoft Defender for SQL** is set to **Not now**  
 ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-18.png" alt-text="Screenshot of the additional settings options.":::
 

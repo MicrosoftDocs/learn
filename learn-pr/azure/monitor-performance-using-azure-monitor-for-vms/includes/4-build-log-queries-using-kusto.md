@@ -1,5 +1,5 @@
 
-Several Azure services use Azure Monitor Logs to store data and use the Kusto Query Language (KQL) to extract data. Azure Security Center, Azure Sentinel, and Azure Monitor Application Insights all use Log Analytics workspaces to store and query logs. Azure Monitor Logs are based on Azure Data Explorer. A Log Analytics workspace is the equivalent of a database inside Azure Data Explorer.
+Several Azure services use Azure Monitor Logs to store data and use the Kusto Query Language (KQL) to extract data. Microsoft Defender for Cloud, Microsoft Sentinel, and Azure Monitor Application Insights all use Log Analytics workspaces to store and query logs. Azure Monitor Logs are based on Azure Data Explorer. A Log Analytics workspace is the equivalent of a database inside Azure Data Explorer.
 
 To unlock the full range of possibilities with Azure Monitor Logs, you'll need to use log queries. These queries help you obtain a deep understanding of data collected in Azure Monitor Logs. The underlying query language allows for complex operations with minimal code. Kusto is a rich language designed to be easy to read and author. All data generated in Azure Monitor Logs is available to collect and examine through log queries. Different Azure data sources write to different log tables.
 

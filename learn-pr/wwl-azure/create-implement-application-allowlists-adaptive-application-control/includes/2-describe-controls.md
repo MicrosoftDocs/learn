@@ -7,10 +7,10 @@ Adaptive application control can help Contoso IT operations staff determine whic
 
 ## What is adaptive application control?
 
-Adaptive application control uses machine learning to analyze the applications running on your VMs. You configure and manage adaptive application controls in Security Center. Once enabled, the Adaptive application controls feature creates an allow list from its machine-learning analysis.
+Adaptive application control uses machine learning to analyze the applications running on your VMs. You configure and manage adaptive application controls in Defender for Cloud. Once enabled, the Adaptive application controls feature creates an allow list from its machine-learning analysis.
 
 > [!NOTE]
-> Security Center requires at least two weeks of data to perform this analysis.
+> Defender for Cloud requires at least two weeks of data to perform this analysis.
 
 Using Adaptive application controls can help simplify the process of configuring and maintaining application policies. By using Adaptive application controls, you can:
 
@@ -27,18 +27,18 @@ Using Adaptive application controls can help simplify the process of configuring
 
 ## Enable adaptive application control
 
-To implement adaptive application control, you must use Security Center. Use the following procedure to begin the process of implementing adaptive application control:
+To implement adaptive application control, you must use Defender for Cloud. Use the following procedure to begin the process of implementing adaptive application control:
 
-1. In the Azure portal, open **Security Center**.
+1. In the Azure portal, open **Defender for Cloud**.
 2. In the navigation pane, in the **ADVANCED CLOUD DEFENSE** section, select **Adaptive application controls**.
 3. In the **Adaptive application controls** blade, expand **How does it work?**.
 
-![A screenshot of the Adaptive application controls blade. The administrator has selected the Recommended tab. Security Center has recommended two groups of machines for applying application controls.](../media/m5-enable-control.png)
+![A screenshot of the Adaptive application controls blade. The administrator has selected the Recommended tab. Defender for Cloud has recommended two groups of machines for applying application controls.](../media/m5-enable-control.png)
 
 Within *How does it work* are three tabs: **Configured**, **Recommended**, and **No recommendation**. These are described in the following table:
 
 |Tab|Description|
 |-----------------|------------------------------------------------------------|
 |Configured|This is a list of groups containing the VMs that are already configured with application control.|
-|Recommended|This tab offers a list of groups for which application control is recommended. Security Center uses machine learning to identify VMs that are good candidates for application control based on whether the VMs consistently run the same applications.|
+|Recommended|This tab offers a list of groups for which application control is recommended. Defender for Cloud uses machine learning to identify VMs that are good candidates for application control based on whether the VMs consistently run the same applications.|
 |No recommendation|This is a list of groups containing VMs without any application control recommendations—for example, VMs on which applications are always changing and haven’t reached a steady state.|

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-security-center.azure-defender
-title: Deploy Azure Defender
+title: Deploy Microsoft Defender for Cloud
 metadata:
   title: Deploy Azure Defender
   description: "Deploy Azure Defender"

@@ -27,6 +27,6 @@ products:
 modules:
 - learn.wwl.azure-monitor
 - learn.wwl.azure-security-center
-- learn.wwl.azure-sentinel
+- learn.wwl.azure-Sentinel
 trophy:
   uid: learn.wwl.manage-security-operation.trophy

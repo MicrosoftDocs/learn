@@ -1,6 +1,6 @@
 Now you are ready to start managing Azure resources for your customers, using your Contoso credentials. 
 
-With delegated access in place, Azure Lighthouse lets you use many of the Azure management capabilities you may already be familiar with, including Azure Backup, Azure Monitor, Azure Policy, Azure Security Center and more. You can query and perform tasks on your customer's delegated resources with the Azure portal, Azure PowerShell, Azure CLI, and the Azure REST API and with other tools like Ansible and Terraform.
+With delegated access in place, Azure Lighthouse lets you use many of the Azure management capabilities you may already be familiar with, including Azure Backup, Azure Monitor, Azure Policy, Microsoft Defender for Cloud and more. You can query and perform tasks on your customer's delegated resources with the Azure portal, Azure PowerShell, Azure CLI, and the Azure REST API and with other tools like Ansible and Terraform.
 
 Because you have visibility of all of your customer's resources at the same time, with your own credentials, you can apply actions at scale or detect which customer resources need attention or remediation, without having to switch context and control panes.
 
@@ -36,7 +36,7 @@ Manage hosted Kubernetes environments and deploy and manage containerized applic
 
 ### Security management
 
-Cross-tenant visibility in Azure Security Center lets you monitor compliance of security policies and triage and action security recommendations with secure score calculation. You can detect threats across tenants' resources, apply advanced threat protection controls, harden network security group configuration with adaptive hardening and monitor changes to important files and registry entries.  With Azure Sentinel, you can track attacks and view incidents and security alerts across multiple tenants.
+Cross-tenant visibility in Microsoft Defender for Cloud lets you monitor compliance of security policies and triage and action security recommendations with secure score calculation. You can detect threats across tenants' resources, apply advanced threat protection controls, harden network security group configuration with adaptive hardening and monitor changes to important files and registry entries.  With Microsoft Sentinel, you can track attacks and view incidents and security alerts across multiple tenants.
 
 ### Governance
 

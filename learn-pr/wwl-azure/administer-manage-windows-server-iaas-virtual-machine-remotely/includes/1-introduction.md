@@ -1,4 +1,4 @@
-Tools and techniques such as Cloud Shell, Azure Bastion, and the just-in-time (JIT) feature of Azure Security Center allow you to remotely administer and manage Windows Server virtual machines (VMs).
+Tools and techniques such as Cloud Shell, Azure Bastion, and the just-in-time (JIT) feature of Microsoft Defender for Cloud allow you to remotely administer and manage Windows Server virtual machines (VMs).
 
 ## Scenario
 

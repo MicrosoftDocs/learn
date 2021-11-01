@@ -20,7 +20,7 @@ Secure data and applications (20-25%)
    - configure Azure AD Domain Services authentication for Azure Files
    - create and manage Shared Access Signatures (SAS)
    - configure Storage Service Encryption
-   - configure Azure Defender for Storage
+   - configure Microsoft Defender for Storage
 
 ## Learning objectives
 

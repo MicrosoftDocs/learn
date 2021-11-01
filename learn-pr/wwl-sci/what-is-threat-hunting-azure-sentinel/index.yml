@@ -8,12 +8,12 @@ metadata:
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Explain threat hunting concepts in Azure Sentinel
-summary: Learn the threat hunting process in Azure Sentinel.
+title: Explain threat hunting concepts in Microsoft Sentinel
+summary: Learn the threat hunting process in Microsoft Sentinel.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Describe threat hunting concepts for use with Azure Sentinel
-  - Define a threat hunting hypothesis for use in Azure Sentinel
+  - Describe threat hunting concepts for use with Microsoft Sentinel
+  - Define a threat hunting hypothesis for use in Microsoft Sentinel
 prerequisites: |
   Basic knowledge of operational concepts such as monitoring, logging, and alerting
 iconUrl: /learn/achievements/what-is-threat-hunting-in-azure-sentinel.svg

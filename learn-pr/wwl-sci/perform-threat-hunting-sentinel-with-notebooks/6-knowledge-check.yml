@@ -27,7 +27,7 @@ quiz:
     - content: "Creating data"
       isCorrect: false
       explanation: "Incorrect. The msticpy package can acquire and enrich data, but it can not create data."
-  - content: "Which is a component of notebooks in Azure Sentinel?"
+  - content: "Which is a component of notebooks in Microsoft Sentinel?"
     choices:
     - content: "Telemetry analyzer"
       isCorrect: false
@@ -37,7 +37,7 @@ quiz:
       explanation: "Correct. Notebooks use the Kernel to parse and execute the code within the notebook"
     - content: "Workbook"
       isCorrect: false
-      explanation: "Incorrect. Workbooks are embedded in Azure Sentinel not in a notebook."
+      explanation: "Incorrect. Workbooks are embedded in Microsoft Sentinel not in a notebook."
   - content: "What coding language is most commonly used in the sample Notebooks?"
     choices:
     - content: "Python"

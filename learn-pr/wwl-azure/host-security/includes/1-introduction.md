@@ -1,5 +1,5 @@
 
-Once you have your network and perimeter secure, you need to lock down the host machines where your applications run.  Installing updates, using jump boxes to only access servers, and following Azure Security Center recommendations are great tools to keep your hosts secure.
+Once you have your network and perimeter secure, you need to lock down the host machines where your applications run.  Installing updates, using jump boxes to only access servers, and following Microsoft Defender for Cloud recommendations are great tools to keep your hosts secure.
 
 ## Scenario
 
@@ -27,9 +27,8 @@ In this module, you will:
 - Deploy a privileged access strategy for devices and privileged workstations
 - Secure your virtual machines and access to them
 - Deploy Windows Defender
-- Practice layered security by reviewing and implementing Security Center and Security Benchmarks
+- Practice layered security by reviewing and implementing Defender for Cloud and Security Benchmarks
 
 ## Prerequisites
 
 None
-

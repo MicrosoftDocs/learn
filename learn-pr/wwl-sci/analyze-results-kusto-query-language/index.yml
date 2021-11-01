@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Analyze query results using KQL
-summary: Learn how to summarize and visualize data with a KQL statement provides the foundation to build detections in Azure Sentinel.
+summary: Learn how to summarize and visualize data with a KQL statement provides the foundation to build detections in Microsoft Sentinel.
 abstract: |
   Upon completion of this module, the learner will be able to:
   - Summarize data using KQL statements

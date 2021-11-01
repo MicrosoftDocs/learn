@@ -7,7 +7,7 @@ Security is one of the biggest concerns for stakeholders at Contoso. There is so
 
 You can learn more by reviewing the following documents.
 
-- [File Integrity Monitoring in Azure Security Center](https://aka.ms/security-center-file-integrity-monitoring?azure-portal=true)
+- [File Integrity Monitoring in Microsoft Defender for Cloud](https://aka.ms/security-center-file-integrity-monitoring?azure-portal=true)
 - [Tutorial: Monitor changes and update a Windows virtual machine in Azure](https://aka.ms/tutorial-config-management?azure-portal=true)
 - [Change Tracking and Inventory overview](https://aka.ms/change-tracking?azure-portal=true)
 - [Enable Update Management from the Azure portal](https://docs.microsoft.com/azure/automation/update-management/enable-from-portal)

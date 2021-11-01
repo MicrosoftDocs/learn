@@ -16,7 +16,7 @@ SecurityAlert
 
 ## Let's take a look at a real-world example
 
-The following is an Azure Sentinel detection rule.  The essential concepts to review are;
+The following is a Microsoft Sentinel detection rule.  The essential concepts to review are;
 
 First, the use of **let** to define the timeframe variable enables maintenance and readability.
 
@@ -42,4 +42,3 @@ Syslog
 | where Domain has_any (DomainList)
 
 ```
-

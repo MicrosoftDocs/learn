@@ -3,7 +3,7 @@ Microsoft Defender for Endpoint, formerly Microsoft Defender Advanced Threat Pro
 This technology includes endpoint behavioral sensors that collect and process signals from the operating system, cloud security analytics that turn signals into insights, detections and recommendations, and threat intelligence to identify attacker tools, techniques, generate alerts.
 
 > [!div class="mx-imgBorder"]
-> ![Diagram showing the seven aspects of Microsoft Defender Endpoint: Threat and Vulnerability Management, Attack surface reduction, Next-generation protection, Endpoint detection and response, automated investigation and remediation, Microsoft Threat Experts, and Centralized configuration and administration.](../media/5-seven-aspects-microsoft-defender.png)
+> ![Diagram showing the seven aspects of Microsoft Defender for Cloud Endpoint: Threat and Vulnerability Management, Attack surface reduction, Next-generation protection, Endpoint detection and response, automated investigation and remediation, Microsoft Threat Experts, and Centralized configuration and administration.](../media/5-seven-aspects-microsoft-defender.png)
 
 Microsoft Defender for Endpoint includes:
 
@@ -15,6 +15,6 @@ Microsoft Defender for Endpoint includes:
 - **Microsoft Threat Experts**: A managed threat hunting service that provides Security Operation Centers (SOCs) with monitoring and analysis tools to ensure critical threats don’t get missed.
 - **Management and APIs**: Provides APIs to integrate with other solutions.
 
-Microsoft Defender for Endpoint includes Microsoft Secure Score for Devices to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve overall security. Microsoft Defender for Endpoint integrates with various components in the Microsoft Defender suite, and with other Microsoft solutions including Intune and Azure Security Center.
+Microsoft Defender for Endpoint includes Microsoft Secure Score for Devices to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve overall security. Microsoft Defender for Endpoint integrates with various components in the Microsoft Defender for Cloud suite, and with other Microsoft solutions including Intune and Microsoft Defender for Cloud.
 
 Use Microsoft Defender for Endpoint to protect your organization's endpoints and respond to advanced threats.

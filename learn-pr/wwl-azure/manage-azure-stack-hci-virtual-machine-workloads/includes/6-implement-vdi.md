@@ -13,7 +13,7 @@ VDI is one of the workloads that Azure Stack HCI is optimized for, with Microsof
 
 ## Implement VDI workloads on Azure Stack HCI VMs
 
-To evaluate VDI on Azure Stack HCI, you decide to use RDS. You conclude that this will help eliminate common support challenges associated with multi-vendor solutions and simplify most administrative tasks. To further enhance the core VDI-related features provided by Azure Stack HCI, you plan to leverage its integration with cloud-based solutions such as Azure Update Management and Azure Defender.
+To evaluate VDI on Azure Stack HCI, you decide to use RDS. You conclude that this will help eliminate common support challenges associated with multi-vendor solutions and simplify most administrative tasks. To further enhance the core VDI-related features provided by Azure Stack HCI, you plan to leverage its integration with cloud-based solutions such as Azure Update Management and Microsoft Defender for Cloud.
 
 At a high level, deployment of an RDS-based VDI environment on Azure Stack HCI involves the following steps:
 

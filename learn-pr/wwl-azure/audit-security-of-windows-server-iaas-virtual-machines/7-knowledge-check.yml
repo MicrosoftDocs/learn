@@ -14,14 +14,14 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "To use the advanced capabilities of Security Center with on-premises resources, which of the following steps must you complete?"
+  - content: "To use the advanced capabilities of Defender for Cloud with on-premises resources, which of the following steps must you complete?"
     choices:
     - content: "You must upgrade the subscription to Standard pricing tier."
       isCorrect: false
       explanation: "That's incorrect. You must also upgrade the **Log Analytics** workspace to Standard pricing tier."
     - content: "You must upgrade the subscription and the **Log Analytics** workspace to Standard pricing tier."
       isCorrect: true
-      explanation: "That's correct. You must upgrade the subscription, and also any additional **Log Analytics** workspaces you want to use with Security Center."
+      explanation: "That's correct. You must upgrade the subscription, and also any additional **Log Analytics** workspaces you want to use with Defender for Cloud."
     - content: "You must upgrade the **Log Analytics** workspace to Standard pricing tier."
       isCorrect: false
       explanation: "That's incorrect. You must also upgrade the subscription to Standard pricing tier."
@@ -36,11 +36,11 @@ quiz:
     - content: "Management ports of VMs should be protected with just-in-time network access control."
       isCorrect: true
       explanation: "That's correct. You can apply a quick fix to remediate this issue automatically."
-  - content: "You want to check for vulnerabilities in your deployed VMs. You have applied **Enable the built-in vulnerability assessment solution on virtual machines (powered by Qualys)** on your VMs. Where in Security Center can you review discovered vulnerabilities?"
+  - content: "You want to check for vulnerabilities in your deployed VMs. You have applied **Enable the built-in vulnerability assessment solution on virtual machines (powered by Qualys)** on your VMs. Where in Defender for Cloud can you review discovered vulnerabilities?"
     choices:
     - content: "Go to the **Recommendations** page, and under **Remediate vulnerabilities**, search for the **Vulnerabilities in your virtual machines should be remediated (powered by Qualys)** recommendation."
       isCorrect: true
-      explanation: "That's correct. Security Center lists vulnerabilities discovered by this assessment in this recommendation."
+      explanation: "That's correct. Defender for Cloud lists vulnerabilities discovered by this assessment in this recommendation."
     - content: "Go to the **Recommendations** page, and under **Remediate vulnerabilities**, search for the **Vulnerability assessment solution should be installed on your virtual machines** recommendation."
       isCorrect: false
       explanation: "That's incorrect. This vulnerability lists VMs that don't have the assessment installed."

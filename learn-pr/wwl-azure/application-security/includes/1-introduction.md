@@ -20,7 +20,7 @@ Secure data and applications (20-25%)
    - manage secrets
    - configure key rotation
    - backup and restore of Key Vault items
-   - configure Azure Defender for Key Vault
+   - configure Microsoft Defender for Key Vault
 
 ## Learning objectives
 

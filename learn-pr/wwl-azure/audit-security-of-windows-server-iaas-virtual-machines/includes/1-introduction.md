@@ -1,5 +1,5 @@
 
-You can use the Azure Security Center to assess the security configuration of your Azure VM resources and the Windows Server operating system (OS) that's running on the VM.
+You can use the Microsoft Defender for Cloud to assess the security configuration of your Azure VM resources and the Windows Server operating system (OS) that's running on the VM.
 
 ## Scenario
 
@@ -9,19 +9,19 @@ Contoso’s IT director realizes that Contoso has an outdated operational model 
 
 As part of the initial design, the Contoso IT team asked you, their lead system engineer and server administrator, to set up a proof of concept environment. This environment must verify whether Azure services can help to modernize the IT infrastructure and meet business goals.
 
-Securing VM resources both in Azure and on-premises is important to the IT staff at Contoso. In this module, you'll learn about Azure Security Center and how to enable it in hybrid environments. You'll learn how to onboard Windows Server computers to Security Center, and how to use it to protect your resources. You'll also learn about Azure Sentinel, security information and event management (SIEM), and security orchestration, automation and response (SOAR).
+Securing VM resources both in Azure and on-premises is important to the IT staff at Contoso. In this module, you'll learn about Microsoft Defender for Cloud and how to enable it in hybrid environments. You'll learn how to onboard Windows Server computers to Defender for Cloud, and how to use it to protect your resources. You'll also learn about Microsoft Sentinel, security information and event management (SIEM), and security orchestration, automation and response (SOAR).
 
 ## Learning objectives
 
 After completing this module, you will be able to:
 
-- Describe Azure Security Center.
-- Enable Azure Security Center in hybrid environments.
-- Onboard Windows Server computers to Azure Security Center.
+- Describe Microsoft Defender for Cloud.
+- Enable Microsoft Defender for Cloud in hybrid environments.
+- Onboard Windows Server computers to Microsoft Defender for Cloud.
 - Implement and assess security policies.
-- Describe Azure Sentinel.
+- Describe Microsoft Sentinel.
 - Implement SIEM and SOAR.
-- Protect your resources with Azure Security Center.
+- Protect your resources with Microsoft Defender for Cloud.
 
 ## Prerequisites
 

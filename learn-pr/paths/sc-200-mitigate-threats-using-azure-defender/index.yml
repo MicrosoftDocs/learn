@@ -8,7 +8,7 @@ metadata:
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'SC-200 part 3: Mitigate threats using Azure Defender'
+title: 'SC-200 part 3: Mitigate threats using Microsoft Defender for Cloud'
 prerequisites: |
   - Familiarity with Azure services, specifically Azure SQL Database and Azure Storage
   - Familiarity with Azure virtual machines and virtual networking
@@ -24,10 +24,10 @@ products:
 - azure
 - azure-security-center
 modules:
-- learn.wwl.what-is-azure-defender
+- learn.wwl.what-is-azure-Defender for Cloud
 - learn.wwl.understand-azure-defender-cloud-workload-protection
-- learn.wwl.connect-azure-assets-to-azure-defender
-- learn.wwl.connect-non-azure-machines-to-azure-defender
+- learn.wwl.connect-azure-assets-to-azure-Defender for Cloud
+- learn.wwl.connect-non-azure-machines-to-azure-Defender for Cloud
 - learn.wwl.remediate-azure-defender-security-alerts
 trophy:
   uid: learn.wwl.sc-200-mitigate-threats-using-azure-defender.trophy

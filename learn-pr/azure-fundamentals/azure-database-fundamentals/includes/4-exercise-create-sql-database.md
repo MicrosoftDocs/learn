@@ -57,7 +57,7 @@ In this task, you create a SQL database based on the *AdventureWorksLT* sample d
 
     :::image type="content" source="../media/tab-8a36cd61.png" alt-text="Screenshot of the Create SQL Database Networking tab with settings configured.":::
     
-1. Select **Next : Security**, and for **Enable Azure Defender for SQL**, choose **Not now**. Leave the remaining settings as default (not configured).
+1. Select **Next : Security**, and for **Enable Microsoft Defender for SQL**, choose **Not now**. Leave the remaining settings as default (not configured).
   
     :::image type="content" source="../media/security-tab-a15c3422.png" alt-text="Screenshot of the Create SQL Database Security tab showing the first configured setting.":::
     

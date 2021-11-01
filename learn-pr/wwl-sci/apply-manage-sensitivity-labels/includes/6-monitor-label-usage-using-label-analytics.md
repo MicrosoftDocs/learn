@@ -15,7 +15,7 @@ An existing sensitivity label report may be accessed with these steps:
 Organizational data provides an overview of the DLP matches that occurred in SharePoint, OneDrive for Business, Exchange Online or Microsoft Teams.
 
 > [!TIP]
-> The reports in the Reporting area are base on the organizational level. For reports in detail and on user level, please choose Microsoft Cloud App Security or the Data classification area with the Content explorer and the Activity explorer.
+> The reports in the Reporting area are base on the organizational level. For reports in detail and on user level, please choose Microsoft Defender for Cloud Apps or the Data classification area with the Content explorer and the Activity explorer.
 
 ## Planning label analytics
 
@@ -63,15 +63,15 @@ The amount of data collected and stored in your Azure Information Protection wor
 
 Azure Monitor Logs has a **Usage and estimated costs** feature to help you estimate and review the amount of data stored. You can also control the data retention period for your Log Analytics workspace.
 
-## Monitoring with Azure Sentinel
+## Monitoring with Microsoft Sentinel
 
-A Sensitivity Label monitoring and analyzing is also possible with Azure Sentinel workspace. The Log files will be collected at Azure Sentinel to get an overview of the entire environment with all signals.
+A Sensitivity Label monitoring and analyzing is also possible with Microsoft Sentinel workspace. The Log files will be collected at Microsoft Sentinel to get an overview of the entire environment with all signals.
 
 ## Learn more
 
-[Azure Sentinel documentation | Microsoft Docs](https://docs.microsoft.com/azure/sentinel/?azure-portal=true)
+[Microsoft Sentinel documentation | Microsoft Docs](https://docs.microsoft.com/azure/sentinel/?azure-portal=true)
 
-[Quickstart: Onboard in Azure Sentinel | Microsoft Docs](https://docs.microsoft.com/azure/sentinel/quickstart-onboard?azure-portal=true)
+[Quickstart: Onboard in Microsoft Sentinel | Microsoft Docs](https://docs.microsoft.com/azure/sentinel/quickstart-onboard?azure-portal=true)
 
 [Manage usage and costs with Azure Monitor Logs](https://docs.microsoft.com/azure/azure-monitor/platform/manage-cost-storage?azure-portal=true)
 
@@ -96,4 +96,3 @@ Assigning a label is also possible with the mobile versions of Word like Word mo
 ### Users apply the access rights
 
 It´s possible to create a label for files and emails that grants the user the opportunity to configure the permissions. Users can control the level of rights assigned to an element, which users and groups may access it, and whether the content will expire.
-

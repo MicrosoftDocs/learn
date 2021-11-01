@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-threat-hunting-sentinel-with-notebooks.access-azure-sentinel-data-with-external-tools
-title: Access Azure Sentinel data with external tools
+title: Access Microsoft Sentinel data with external tools
 metadata:
   title: Access Azure Sentinel data with external tools
   description: "Access Azure Sentinel data with external tools"

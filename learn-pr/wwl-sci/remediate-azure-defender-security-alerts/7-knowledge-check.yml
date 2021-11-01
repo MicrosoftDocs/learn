@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Security Center employs which advanced security analytics?"
+  - content: "Defender for Cloud employs which advanced security analytics?"
     choices:
     - content: "Biometric analytics"
       isCorrect: false

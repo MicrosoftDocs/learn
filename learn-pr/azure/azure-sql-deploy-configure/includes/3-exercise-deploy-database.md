@@ -44,9 +44,9 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
 
 1. Select **Next: Security**.
 
-1. When you deploy Azure SQL Database in the portal, you're prompted about whether you want to **Enable Azure Defender for SQL** in a free trial. Select **Start free trial**.
+1. When you deploy Azure SQL Database in the portal, you're prompted about whether you want to **Enable Microsoft Defender for SQL** in a free trial. Select **Start free trial**.
 
-    After the free trial, it's billed according to the Azure Security Center Standard Tier pricing. After you enable it, you get functionality related to identifying/mitigating potential database vulnerabilities and threat detection.
+    After the free trial, it's billed according to the Microsoft Defender for Cloud Standard Tier pricing. After you enable it, you get functionality related to identifying/mitigating potential database vulnerabilities and threat detection.
 
 1. Select **Next: Additional settings**.
 

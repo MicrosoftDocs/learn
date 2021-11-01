@@ -37,7 +37,7 @@ When the Conditional Access policy has been applied, an informed decision is rea
   - Require approved client app.
   - Require app protection policy.
   - Require password change.
-- Control user access based on session controls to enable limited experiences within specific cloud applications.  As an example, Conditional Access App Control uses signals from Microsoft Cloud App Security (MCAS) to block, download, cut, copy and print sensitive documents, or to require labeling of sensitive files.  Other session controls include sign-in frequency and application enforced restrictions that, for selected applications, use the device information to provide users with a limited or full experience, depending on the device state.
+- Control user access based on session controls to enable limited experiences within specific cloud applications.  As an example, Conditional Access App Control uses signals from Microsoft Defender for Cloud Apps to block, download, cut, copy and print sensitive documents, or to require labeling of sensitive files.  Other session controls include sign-in frequency and application enforced restrictions that, for selected applications, use the device information to provide users with a limited or full experience, depending on the device state.
 
 Conditional Access policies can be targeted to members of specific groups or guests. For example, you can create a policy to exclude all guest accounts from accessing sensitive resources.
 Conditional Access is a feature of paid Azure AD editions.

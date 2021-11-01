@@ -5,12 +5,12 @@ When you enable JIT VM Access for your VMs, you next create a policy that determ
 
 ### How JIT VM Access works
 
-To use Just-in-Time VM access, you must enable Azure Defender.
+To use Just-in-Time VM access, you must enable Microsoft Defender for Cloud.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Azure Defender features.](../media/az500-just-in-time.png)
+> ![Screenshot of Microsoft Defender for Cloud features.](../media/az500-just-in-time.png)
 
-After you enable Defender, you can view which virtual machines have JIT configured. Enable JIT on any virtual machine that is not Healthy.  
+After you enable Defender for Cloud, you can view which virtual machines have JIT configured. Enable JIT on any virtual machine that is not Healthy.  
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the recommended virtual machines page.](../media/az500-just-in-time-2.png)

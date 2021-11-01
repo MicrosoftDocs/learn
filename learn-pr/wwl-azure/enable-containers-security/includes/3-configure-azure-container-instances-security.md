@@ -9,7 +9,7 @@ A publicly available container image does not guarantee security. Container imag
 ### Monitor and scan container images continuously
 Take advantage of solutions to scan container images in a private registry and identify potential vulnerabilities. It’s important to understand the depth of threat detection that the different solutions provide.
 
-For example, Azure Container Registry optionally integrates with Azure Security Center to automatically scan all Linux images pushed to a registry. Azure Security Center's integrated Qualys scanner detects image vulnerabilities, classifies them, and provides remediation guidance.
+For example, Azure Container Registry optionally integrates with Microsoft Defender for Cloud to automatically scan all Linux images pushed to a registry. Microsoft Defender for Cloud's integrated Qualys scanner detects image vulnerabilities, classifies them, and provides remediation guidance.
 
 ### Protect credentials
 Containers can spread across several clusters and Azure regions. So, you must secure credentials required for logins or API access, such as passwords or tokens. Ensure that only privileged users can access those containers in transit and at rest. Inventory all credential secrets, and then require developers to use emerging secrets-management tools that are designed for container platforms. Make sure that your solution includes encrypted databases, TLS encryption for secrets data in transit, and least-privilege role-based access control. Azure Key Vault is a cloud service that safeguards encryption keys and secrets (such as certificates, connection strings, and passwords) for containerized applications. Because this data is sensitive and business critical, secure access to your key vaults so that only authorized applications and users can access them.
@@ -39,7 +39,6 @@ You can also minimize the potential attack surface by removing any unused or unn
 
 ### Log all container administrative user access for auditing
 Maintain an accurate audit trail of administrative access to your container ecosystem, including your Kubernetes cluster, container registry, and container images. These logs might be necessary for auditing purposes and will be useful as forensic evidence after any security incident. Azure solutions include:
-* Integration of Azure Kubernetes Service with Azure Security Center to monitor the security configuration of the cluster environment and generate security recommendations
+* Integration of Azure Kubernetes Service with Microsoft Defender for Cloud to monitor the security configuration of the cluster environment and generate security recommendations
 * Azure Container Monitoring solution
 * Resource logs for Azure Container Instances and Azure Container Registry
-

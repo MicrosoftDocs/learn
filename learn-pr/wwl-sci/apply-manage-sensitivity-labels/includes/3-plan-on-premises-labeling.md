@@ -43,7 +43,7 @@ The table below lists locations where it's possible to scan with the Unified Lab
 
 To classify and protect your files, the scanner uses sensitivity labels configured in any of the following Microsoft 365 labeling admin center including:
 
-- Microsoft 365 Security Center
+- Microsoft 365 Defender portal
 
 - Microsoft 365 Compliance Center
 

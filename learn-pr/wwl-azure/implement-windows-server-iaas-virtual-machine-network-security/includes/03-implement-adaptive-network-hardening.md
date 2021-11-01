@@ -22,9 +22,9 @@ For example, suppose that Contoso IT had an application that required TCP port 2
 ## Reviewing Adaptive Network Hardening alerts and rules
 
 
-You review the Adaptive Network Hardening recommendations in the **Adaptive Network Hardening** blade within the Azure portal. To review recommendations,  in **Adaptive Network Hardening**, select **Security Center**, and then beneath **RESOURCE SECURITY HYGIENE**, select **Networking**. In the **Networking** blade, on the **Overview** tab, you can review the recommendations.
+You review the Adaptive Network Hardening recommendations in the **Adaptive Network Hardening** blade within the Azure portal. To review recommendations,  in **Adaptive Network Hardening**, select **Defender for Cloud**, and then beneath **RESOURCE SECURITY HYGIENE**, select **Networking**. In the **Networking** blade, on the **Overview** tab, you can review the recommendations.
 
-[![A screenshot of the Azure portal. The administrator has selected the Networking node in Security Center, and a list of recommendations display.](../media/m19-traffic-hardening.png)](../media/m19-traffic-hardening.png#lightbox)
+[![A screenshot of the Azure portal. The administrator has selected the Networking node in Defender for Cloud, and a list of recommendations display.](../media/m19-traffic-hardening.png)](../media/m19-traffic-hardening.png#lightbox)
 
 When you select **Adaptive Network Hardening** in the Azure portal, VMs are displayed on one of three tabs, as depicted in the graphic.
 
@@ -32,11 +32,11 @@ When you select **Adaptive Network Hardening** in the Azure portal, VMs are disp
 - **Healthy resources**. These are VMs with no alerts or recommendations.
 - **Not applicable resources**. VMs that you cannot run Adaptive Network Hardening against display on this tab. Reasons VMs might not be able to run Adaptive Network Hardening are:
   - VMs are Classic VMs, and only Azure Resource Manager VMs are supported.
-  - Not enough data is available. To generate accurate traffic hardening recommendations, Security Center requires at least 30 days of traffic data.
-  - The VM is not protected by Azure Security Center standard: Only VMs that are set to Security Center's Standard pricing tier are eligible for this feature.
+  - Not enough data is available. To generate accurate traffic hardening recommendations, Defender for Cloud requires at least 30 days of traffic data.
+  - The VM is not protected by Microsoft Defender for Cloud standard: Only VMs that are set to Defender for Cloud's Standard pricing tier are eligible for this feature.
 
 > [!NOTE] 
-> You can review Security Center pricing at [Security Center pricing](https://aka.ms/pricing-details-security-center?azure-portal=true).
+> You can review Defender for Cloud pricing at [Defender for Cloud pricing](https://aka.ms/pricing-details-security-center?azure-portal=true).
 
 ![A screenshot of the Azure portal. The administrator has selected the Healthy resources tab and 6 healthy resources are displayed.](../media/m19-unhealthy-resources.png)
 
@@ -55,4 +55,4 @@ Having reviewed the recommended rules and alerts, you can choose whether to modi
 ![A screenshot of the Rules tab. The administrator has selected two rules to apply.](../media/m19-enforce-hard-rule-2.png)
 
 > [!NOTE] 
-> To modify a rule, use the instructions at [Adaptive Network Hardening in Azure Security Center, Modify a rule](https://aka.ms/modify-a-rule?azure-portal=true).
+> To modify a rule, use the instructions at [Adaptive Network Hardening in Microsoft Defender for Cloud, Modify a rule](https://aka.ms/modify-a-rule?azure-portal=true).

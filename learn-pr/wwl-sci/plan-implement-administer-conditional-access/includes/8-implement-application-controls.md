@@ -1,12 +1,12 @@
 
-Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies are used within the Cloud App Security portal to further refine filters and set actions to be taken on a user. 
+Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies are used within the Defender for Cloud Apps portal to further refine filters and set actions to be taken on a user. 
 
 ## Conditional Access App Control
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Azure AD Conditional Access policy wizard with the Use Conditional Access App Control highlighted.  The feature is under the SESSION section of the dialog.](../media/sc300-conditional-access-app-control.png)
 
-Conditional Access App Control uses a reverse proxy architecture and is uniquely integrated with Azure AD Conditional Access. Azure AD Conditional Access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define who (user or group of users) and what (which cloud apps) and where (which locations and networks) a Conditional Access policy is applied to. After you’ve determined the conditions, you can route users to Microsoft Cloud App Security where you can protect data with Conditional Access App Control by applying access and session controls.
+Conditional Access App Control uses a reverse proxy architecture and is uniquely integrated with Azure AD Conditional Access. Azure AD Conditional Access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define who (user or group of users) and what (which cloud apps) and where (which locations and networks) a Conditional Access policy is applied to. After you’ve determined the conditions, you can route users to Microsoft Defender for Cloud Apps where you can protect data with Conditional Access App Control by applying access and session controls.
 
 With the access and session policies, you can:
 
@@ -231,4 +231,3 @@ If you apply a MAM policy to the user without setting the device state, the user
 - Apply a less strict MAM policy to Intune managed devices, and apply a more restrictive MAM policy to non MDM-enrolled devices.
 
 - Apply a MAM policy to unenrolled devices only.
-

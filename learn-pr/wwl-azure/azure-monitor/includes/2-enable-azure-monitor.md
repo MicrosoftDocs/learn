@@ -13,23 +13,23 @@ For many Azure resources, you’ll find the data that Azure Monitor collects rig
 
 You can analyze log data that Azure Monitor collects by using queries to quickly retrieve, consolidate, and analyze the collected data. You can create and test queries by using log analytics in the Azure portal and then either directly analyze the data by using these tools or save queries for use with visualizations or alert rules.
 
-This module will discuss streaming the collected monitor data to external Security Information and Event Management (SIEM) solutions via Azure Security Center. The forwarding or streaming is typically done directly from monitored resources through Azure Event Hubs.
+This module will discuss streaming the collected monitor data to external Security Information and Event Management (SIEM) solutions via Microsoft Defender for Cloud. The forwarding or streaming is typically done directly from monitored resources through Azure Event Hubs.
 
 ### Exporting data to a SIEM
 
-Processed events that Azure Security Center produces are published to the Azure activity log, one of the log types available through Azure Monitor. Azure Monitor offers a consolidated pipeline for routing any of your monitoring data into a SIEM tool. This is done by streaming that data to an event hub, where it can then be pulled into a partner tool.
+Processed events that Microsoft Defender for Cloud produces are published to the Azure activity log, one of the log types available through Azure Monitor. Azure Monitor offers a consolidated pipeline for routing any of your monitoring data into a SIEM tool. This is done by streaming that data to an event hub, where it can then be pulled into a partner tool.
 
-This pipe uses the Azure Monitor single pipeline for getting access to the monitoring data from your Azure environment. This allows you to easily set up SIEMs and monitoring tools to consume the data. Currently, the exposed security data from Azure Security Center to a SIEM consists of security alerts.
+This pipe uses the Azure Monitor single pipeline for getting access to the monitoring data from your Azure environment. This allows you to easily set up SIEMs and monitoring tools to consume the data. Currently, the exposed security data from Microsoft Defender for Cloud to a SIEM consists of security alerts.
 
-### Azure Security Center security alerts
+### Microsoft Defender for Cloud security alerts
 
-Security Center automatically collects, analyzes, and integrates log data from your Azure resources; the network; and connected partner solutions, like firewall and endpoint protection solutions, to detect real threats and reduce false positives. Security Center displays a list of prioritized security alerts along with the information you need to quickly investigate the problem and recommendations for how to remediate an attack.
+Defender for Cloud automatically collects, analyzes, and integrates log data from your Azure resources; the network; and connected partner solutions, like firewall and endpoint protection solutions, to detect real threats and reduce false positives. Defender for Cloud displays a list of prioritized security alerts along with the information you need to quickly investigate the problem and recommendations for how to remediate an attack.
 
-The following sections describe how you can configure data to be streamed to an event hub. The steps assume that you already have Azure Security Center configured in your Azure subscription.
+The following sections describe how you can configure data to be streamed to an event hub. The steps assume that you already have Microsoft Defender for Cloud configured in your Azure subscription.
 
 ### Azure Event Hubs
 
-Azure Event Hubs is a streaming platform and event ingestion service that can transform and store data by using any real-time analytics provider or batching/storage adapters. Use Event Hubs to stream log data from Azure Monitor to a Azure Sentinel or a partner SIEM and monitoring tools.
+Azure Event Hubs is a streaming platform and event ingestion service that can transform and store data by using any real-time analytics provider or batching/storage adapters. Use Event Hubs to stream log data from Azure Monitor to a Microsoft Sentinel or a partner SIEM and monitoring tools.
 
 ### What data can be sent into a event hub?
 Within your Azure environment, there are several 'tiers' of monitoring data, and the method of accessing data from each tier varies slightly. Typically, these tiers can be described as:
@@ -44,18 +44,18 @@ Within your Azure environment, there are several 'tiers' of monitoring data, and
 
 Data from any tier can be sent into an event hub, where it can be pulled into a tool. Some sources can be configured to send data directly to an event hub while another process such as a Logic App may be required to retrieve the required data.
 
-### Connecting to Azure Sentinel
-Azure Sentinel is now generally available. With Azure Sentinel, enterprises worldwide can now keep pace with the exponential growth in security data, improve security outcomes without adding analyst resources, and reduce hardware and operational costs. Azure Sentinel brings together the power of Azure and AI to enable Security Operations Centers to achieve more. 
+### Connecting to Microsoft Sentinel
+Microsoft Sentinel is now generally available. With Microsoft Sentinel, enterprises worldwide can now keep pace with the exponential growth in security data, improve security outcomes without adding analyst resources, and reduce hardware and operational costs. Microsoft Sentinel brings together the power of Azure and AI to enable Security Operations Centers to achieve more. 
 
-Some of the features of Azure Sentinel are:
+Some of the features of Microsoft Sentinel are:
   * **More than 100 built-in alert rules**
      * Sentinel's alert rule wizard to create your own. 
      * Alerts can be triggered by a single event or based on a threshold, or by correlating different datasets or by using built-in machine learning algorithms.
   * **Jupyter Notebooks** that use a growing collection of hunting queries, exploratory queries, and python libraries.
   *  **Investigation graph** for visualizing and traversing the connections between entities like users, assets, applications, or URLs and related activities like logins, data transfers, or application usage to rapidly understand the scope and impact of an incident.
 
-The Azure Sentinel GitHub repository has grown to over 400 detection, exploratory, and hunting queries, plus Azure Notebooks samples and related Python libraries, playbooks samples, and parsers. The bulk of these were developed by Microsoft's security researchers based on their vast global security experience and threat intelligence.
+The Microsoft Sentinel GitHub repository has grown to over 400 detection, exploratory, and hunting queries, plus Azure Notebooks samples and related Python libraries, playbooks samples, and parsers. The bulk of these were developed by Microsoft's security researchers based on their vast global security experience and threat intelligence.
 
- To on-board Azure Sentinel, you first need to enable Azure Sentinel, and then connect your data sources. Azure Sentinel  comes with a number of connectors for Microsoft solutions, available out of the box and providing real-time integration, including **Microsoft Threat Protection solutions**, **Microsoft 365 sources**, including **Microsoft 365, Azure AD, Azure ATP**, and **Microsoft Cloud App Security**, and more. In addition, there are built-in connectors to the broader security ecosystem for non-Microsoft solutions. You can also use common event format, Syslog or REST-API to connect your data sources with Azure Sentinel.
+ To on-board Microsoft Sentinel, you first need to enable Microsoft Sentinel, and then connect your data sources. Microsoft Sentinel  comes with a number of connectors for Microsoft solutions, available out of the box and providing real-time integration, including **Microsoft Threat Protection solutions**, **Microsoft 365 sources**, including **Microsoft 365, Azure AD, Azure ATP**, and **Microsoft Defender for Cloud Apps**, and more. In addition, there are built-in connectors to the broader security ecosystem for non-Microsoft solutions. You can also use common event format, Syslog or REST-API to connect your data sources with Microsoft Sentinel.
 
 After you connect your data sources, choose from a gallery of expertly created dashboards that surface insights based on your data. These dashboards can be easily customized to your needs.

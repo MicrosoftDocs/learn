@@ -55,7 +55,7 @@ SecurityEvent
 
 ## Let's take a look at a real-world example
 
-The following statement is an Azure Sentinel Analytical rule to detect a password spray attempt.
+The following statement is a Microsoft Sentinel Analytical rule to detect a password spray attempt.
 
 The first three where operators will filter the result set to failed logins to disabled accounts.  Next, the statement "summarize" a distinct count of application name and group by User and IP Address.  Finally, there is a check against a variable created (threshold) to see if the number exceeds the allowed amount.
 
@@ -72,4 +72,3 @@ SigninLogs
 | where applicationCount >= threshold
 
 ```
-

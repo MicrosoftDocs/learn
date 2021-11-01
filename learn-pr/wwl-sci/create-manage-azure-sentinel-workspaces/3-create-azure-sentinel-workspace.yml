@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-manage-azure-sentinel-workspaces.create-workspace
-title: Create an Azure Sentinel workspace
+title: Create a Microsoft Sentinel workspace
 metadata:
   title: Create an Azure Sentinel workspace
   description: "Create an Azure Sentinel workspace"

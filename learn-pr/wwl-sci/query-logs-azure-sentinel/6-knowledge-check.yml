@@ -27,7 +27,7 @@ quiz:
     - content: "SigninLogs"
       isCorrect: false
       explanation: "Incorrect. This log is for signing into Azure Active Directory"
-  - content: "What table contains logs from Windows hosts collected directly to Azure Sentinel?"
+  - content: "What table contains logs from Windows hosts collected directly to Microsoft Sentinel?"
     choices:
     - content: "SecurityEvent"
       isCorrect: true

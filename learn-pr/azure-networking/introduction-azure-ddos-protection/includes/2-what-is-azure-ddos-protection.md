@@ -53,7 +53,7 @@ The following list describes the features and benefits of DDoS Protection Standa
 - Your network resources are under constant traffic monitoring for indications of a DDoS attack. Once detected, DDoS Standard will intervene and automatically mitigate the attack.
 - It helps secure layers 3 and 4 at the network layer and provide application (layer 7) protection with Azure Web Application Firewall, which is included with Azure Gateway. Because the Azure Gateway and Web Application Firewall are internet-facing, DDoS Protection Standard protects their network interfaces. This is an example of multilayered or defense-in-depth protection.
 - It provides detailed attack analytic reports during the attack in five-minute intervals and an after-action report for a complete summary of the event, when the attack ends.
-- It includes support for the integration of mitigation logs with Azure Security Center, Azure Sentinel, or an offline security information and event management (SIEM) system for near real-time monitoring during an attack.
+- It includes support for the integration of mitigation logs with Microsoft Defender for Cloud, Microsoft Sentinel, or an offline security information and event management (SIEM) system for near real-time monitoring during an attack.
 - Azure Monitor collects monitoring telemetry from DDoS Protection Standard for access to summarized attack metrics.
 
 Cost guarantee and DDoS rapid response support are two of the other important DDoS Standard Protection features.

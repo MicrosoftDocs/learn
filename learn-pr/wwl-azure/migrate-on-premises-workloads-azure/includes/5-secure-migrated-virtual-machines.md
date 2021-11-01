@@ -22,11 +22,11 @@ To further enhance your solution, set up Multi-Factor Authentication (MFA) so th
 
 With your workloads now in the cloud, Azure VMs can become vulnerable to security attacks through open management ports, like port 3389. Azure IP addresses are well-known, and hackers continually probe for them for attacks on open 3389 ports. If an attacker can gain access to a VM through an open management port, they can gain a foothold into your environment.
 
-To reduce the risk of attacks through open ports, you can limit inbound access to your VMs. Using Azure Security Center, enable just-in-time (JIT) virtual machine access. JIT uses network security groups (NSGs) and incoming rules to limit the amount of time that a specific port is open.
+To reduce the risk of attacks through open ports, you can limit inbound access to your VMs. Using Microsoft Defender for Cloud, enable just-in-time (JIT) virtual machine access. JIT uses network security groups (NSGs) and incoming rules to limit the amount of time that a specific port is open.
 
-You configure a JIT policy on an individual VM. You can do this from Security Center, from the VM directly, or programmatically. The policy specifies rules for how users can connect to VMs.
+You configure a JIT policy on an individual VM. You can do this from Defender for Cloud, from the VM directly, or programmatically. The policy specifies rules for how users can connect to VMs.
 
-If a user has permissions on the VM, an access request is approved, and Security Center configures NSGs to allow inbound traffic to the selected ports for the duration specified in the policy. After the time expires, Security Center restores the firewall and NSG rules to their previous state.
+If a user has permissions on the VM, an access request is approved, and Defender for Cloud configures NSGs to allow inbound traffic to the selected ports for the duration specified in the policy. After the time expires, Defender for Cloud restores the firewall and NSG rules to their previous state.
 
 ## Encrypt disks
 
@@ -38,6 +38,6 @@ To protect your Azure VMs, use Azure Disk Encryption to encrypt your Windows and
 
 You can use an encryption key created by Azure, or you can supply your own encryption key, safeguarded in Azure Key Vault. With Azure Disk Encryption, infrastructure as a service (IaaS) VM data is secured at rest (on disk) and during VM startup.
 
-Azure Security Center provides a set of tools for monitoring and managing the security of virtual machines and other cloud computing resources with the Azure public cloud. If you use Azure Security Center, it alerts you if you have VMs that aren't encrypted and recommends you encrypt them.
+Microsoft Defender for Cloud provides a set of tools for monitoring and managing the security of virtual machines and other cloud computing resources with the Azure public cloud. If you use Microsoft Defender for Cloud, it alerts you if you have VMs that aren't encrypted and recommends you encrypt them.
 
-![Screenshot of Azure Security Center, showing the apply disk encryption on your virtual machine blade. The screenshot shows two virtual machines that have a high severity warning because they are not currently encrypted. The recommendation is to encrypt those machines. ](../media/6654-azure-disk-encryption.png)
+![Screenshot of Microsoft Defender for Cloud, showing the apply disk encryption on your virtual machine blade. The screenshot shows two virtual machines that have a high severity warning because they are not currently encrypted. The recommendation is to encrypt those machines. ](../media/6654-azure-disk-encryption.png)

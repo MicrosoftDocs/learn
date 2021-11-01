@@ -8,7 +8,7 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Hunt for threats by using Azure Sentinel
+title: Exercise - Hunt for threats by using Microsoft Sentinel
 durationInMinutes: 20
 content: |
   [!include[](includes/6-exercise-hunt-for-threats.md)]

@@ -1,4 +1,4 @@
-After your Azure SQL Database instance or Azure SQL managed instance is secured on the networking, authentication, and data protection levels, the final step is to understand how you're going to manage security on an ongoing basis. Managing security includes auditing, monitoring, data classification, and, in the case of Azure SQL, Azure Defender.
+After your Azure SQL Database instance or Azure SQL managed instance is secured on the networking, authentication, and data protection levels, the final step is to understand how you're going to manage security on an ongoing basis. Managing security includes auditing, monitoring, data classification, and, in the case of Azure SQL, Microsoft Defender for Cloud.
 
 ## Auditing
 
@@ -19,7 +19,7 @@ There are two aspects to monitoring and managing security: the Azure level and t
 
 In your Azure SQL managed instance, you can configure SQL Server audit, and the engine can track the failed and successful logins. Failed logins for the Azure SQL managed instance are also tracked in the ERRORLOG. In your Azure SQL Database instance, you can configure Azure SQL auditing and apply dynamic management views, metrics, and alerts to monitor security-related events. For example, `sys.event_log` will allow you to track the number of failed and successful connections and the number of connections blocked by the firewall.  
 
-For both services, Microsoft recommends that you configure Azure Defender, including setting up alerts for Advanced Threat Protection. These security elements are discussed in the next section and exercise. Finally, you can use Azure Security Center to monitor, manage, and receive recommendations on all the resources in your Azure estate.
+For both services, Microsoft recommends that you configure Microsoft Defender for Cloud, including setting up alerts for Advanced Threat Protection. These security elements are discussed in the next section and exercise. Finally, you can use Microsoft Defender for Cloud to monitor, manage, and receive recommendations on all the resources in your Azure estate.
 
 ### Data Discovery & Classification
 
@@ -30,9 +30,9 @@ The Data Discovery & Classification service forms a new information-protection p
 
 The portal view is available only for Azure SQL, but SQL Server supports similar functionality through a wizard in SQL Server Management Studio.
 
-## Azure Defender
+## Microsoft Defender for Cloud
 
-Azure Defender is a unified package for advanced SQL security capabilities. It provides a single go-to location for enabling and managing two main capabilities:  
+Microsoft Defender for Cloud is a unified package for advanced SQL security capabilities. It provides a single go-to location for enabling and managing two main capabilities:  
 
 * Vulnerability Assessment
 * Advanced Threat Protection
@@ -53,4 +53,4 @@ With Advanced Threat Protection, you can detect and respond to potential threats
 * Brute force attempt
 * Anomalous client login
 
-In the next two exercises, you'll dive into the capabilities and scenarios that Azure Defender, and Azure SQL in general, enables and protects against.
+In the next two exercises, you'll dive into the capabilities and scenarios that Microsoft Defender for Cloud, and Azure SQL in general, enables and protects against.

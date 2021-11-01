@@ -2,7 +2,7 @@ System Monitor (Sysmon) is a Windows system service, and device driver that rema
 
 Installing and configuring Sysmon is out of the scope of this module.  Because Sysmon is a telemetry tool that many organizations use, it is essential to know how to configure the Log Analytics Agent and Workspace to collect the Sysmon events.
 
-After connecting the Sysmon agent to the windows machine perform the following to enable Azure Sentinel to query the logs:
+After connecting the Sysmon agent to the windows machine perform the following to enable Microsoft Sentinel to query the logs:
 
 1. Go to your Azure portal.
 
@@ -21,4 +21,3 @@ After connecting the Sysmon agent to the windows machine perform the following t
 This connection can also be made from within Sentinel under **Settings > Agents Configuration**.  Once configured, the Sysmon events will be available in the Event table.  
 
 :::image type="content" source="../media/sysmon.png" alt-text="Sysmon configuration" lightbox="../media/sysmon.png":::
-

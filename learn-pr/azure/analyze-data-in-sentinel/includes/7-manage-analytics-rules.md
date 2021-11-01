@@ -29,4 +29,4 @@ When you duplicate a rule, the rule contains all the configuration provided from
 
 ## Delete rules
 
-Deleting the rule prompts you for confirmation before Azure Sentinel Analytics removes it from the set of active rules. For example, you can delete a rule about a service or a resource that isn't in use, which eliminates the need for the rule. Be aware that deleting a rule is permanent, and there isn't an undo feature. Therefore, we recommend you first disable the rule for a period of time until you're sure you don't need it.
+Deleting the rule prompts you for confirmation before Microsoft Sentinel Analytics removes it from the set of active rules. For example, you can delete a rule about a service or a resource that isn't in use, which eliminates the need for the rule. Be aware that deleting a rule is permanent, and there isn't an undo feature. Therefore, we recommend you first disable the rule for a period of time until you're sure you don't need it.

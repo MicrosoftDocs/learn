@@ -38,11 +38,11 @@ quiz:
     - content: "Test alert"
       isCorrect: false
       explanation: "Incorrect. Test alert is not an option."
-  - content: "The Devices page shows information from which Defender product?"
+  - content: "The Devices page shows information from which Defender for Cloud product?"
     choices:
-    - content: "Microsoft Cloud App Security"
+    - content: "Microsoft Defender for Cloud Apps"
       isCorrect: false
-      explanation: "Incorrect. The Devices page is not surfaced from Cloud App Security."
+      explanation: "Incorrect. The Devices page is not surfaced from Defender for Cloud Apps."
     - content: "Microsoft Defender for Identity"
       isCorrect: false
       explanation: "Incorrect. The Devices page is not surfaced from Defender for Identity."

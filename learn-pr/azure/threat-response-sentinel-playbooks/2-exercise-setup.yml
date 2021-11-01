@@ -8,7 +8,7 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Create an Azure Sentinel playbook
+title: Exercise - Create a Microsoft Sentinel playbook
 durationInMinutes: 7
 content: |
   [!include[](includes/2-exercise-setup.md)]

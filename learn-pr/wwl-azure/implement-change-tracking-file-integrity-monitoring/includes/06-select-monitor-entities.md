@@ -7,9 +7,9 @@ Conversely, there are many files and registry keys that you might reasonably exp
 
 ## Which Windows objects should be monitored?
 
-Security Center makes recommendations of entities to monitor. These include files and Windows registry keys. All the registry keys are under HKEY_LOCAL_MACHINE. However, you can also define your own File Integrity Monitoring policies or entities to monitor.
+Defender for Cloud makes recommendations of entities to monitor. These include files and Windows registry keys. All the registry keys are under HKEY_LOCAL_MACHINE. However, you can also define your own File Integrity Monitoring policies or entities to monitor.
 
-To review the default monitored items, refer to [File Integrity Monitoring in Azure Security Center, Which files should I monitor?](https://aka.ms/which-files-should-i-monitor?azure-portal=true).
+To review the default monitored items, refer to [File Integrity Monitoring in Microsoft Defender for Cloud, Which files should I monitor?](https://aka.ms/which-files-should-i-monitor?azure-portal=true).
 
 ## Edit monitored entities
 
@@ -28,7 +28,7 @@ Workspace Configuration opens, displaying five tabs, each of which lists the ent
 - File Content
 - Windows Services
 
- For each listed entity, Security Center identifies whether File Integrity Monitoring is enabled (true) or not enabled (False). You can edit the entity, and then enable or disable File Integrity Monitoring for that entity.
+ For each listed entity, Defender for Cloud identifies whether File Integrity Monitoring is enabled (true) or not enabled (False). You can edit the entity, and then enable or disable File Integrity Monitoring for that entity.
 
 Next, you select an identity protection. In this example, the **autoexec.bat** is selected on the **Edit Windows Files for Change Tracking** blade.
 

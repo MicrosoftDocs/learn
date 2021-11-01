@@ -50,7 +50,7 @@ quiz:
     - content: "Azure Update Management pertains to cloud deployed virtual machines and on-premesis server patching."
       isCorrect: true
       explanation: "Update Management is a service included as part of an Azure Subscription that has a solution to manage updates on both Microsoft Azure and on-premises Windows and Linux computers."
-  - content: "Which of the following recommendations from Security Center is a medium-severity recommendation for virtual machines and servers?"
+  - content: "Which of the following recommendations from Defender for Cloud is a medium-severity recommendation for virtual machines and servers?"
     choices:
     - content: "Disk encryption should be applied on virtual machines"
       isCorrect: false

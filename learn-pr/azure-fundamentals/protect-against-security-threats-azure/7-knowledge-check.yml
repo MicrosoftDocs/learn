@@ -19,20 +19,20 @@ quiz:
   questions:
   - content: "How can Tailwind Traders enforce having only certain applications run on its VMs?"
     choices:
-    - content: "Connect your VMs to Azure Sentinel."
+    - content: "Connect your VMs to Microsoft Sentinel."
       isCorrect: false
-      explanation: "That's incorrect. Azure Sentinel enables you to aggregate security data from many different sources to provide additional capabilities for threat detection and responding to threats."
-    - content: "Create an application control rule in Azure Security Center."
+      explanation: "That's incorrect. Microsoft Sentinel enables you to aggregate security data from many different sources to provide additional capabilities for threat detection and responding to threats."
+    - content: "Create an application control rule in Microsoft Defender for Cloud."
       isCorrect: true
-      explanation: "That's correct. With Azure Security Center, you can define a list of allowed applications to ensure that only applications you allow can run. Azure Security Center can also detect and block malware from being installed on your VMs."
+      explanation: "That's correct. With Microsoft Defender for Cloud, you can define a list of allowed applications to ensure that only applications you allow can run. Microsoft Defender for Cloud can also detect and block malware from being installed on your VMs."
     - content: "Periodically run a script that lists the running processes on each VM. The IT manager can then shut down any applications that shouldn't be running."
       isCorrect: false
       explanation: "That's incorrect. Although you could follow this approach, it's tedious, time-consuming, and prone to errors. Is there a more automated approach that the company can take?"
   - content: "What's the easiest way for Tailwind Traders to combine security data from all of its monitoring tools into a single report that it can take action on?"
     choices:
-    - content: "Collect security data in Azure Sentinel."
+    - content: "Collect security data in Microsoft Sentinel."
       isCorrect: true
-      explanation: "That's correct. Azure Sentinel is Microsoft's cloud-based SIEM. A SIEM aggregates security data from many different sources to provide additional capabilities for threat detection and responding to threats."
+      explanation: "That's correct. Microsoft Sentinel is Microsoft's cloud-based SIEM. A SIEM aggregates security data from many different sources to provide additional capabilities for threat detection and responding to threats."
     - content: "Build a custom tool that collects security data, and displays a report through a web application."
       isCorrect: false
       explanation: "That's incorrect. Although you could take this approach, is there a fully featured service on Azure that provides this functionality?"

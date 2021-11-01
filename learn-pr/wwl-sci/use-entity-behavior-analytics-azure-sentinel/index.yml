@@ -8,12 +8,12 @@ metadata:
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Use entity behavior analytics in Azure Sentinel
-summary: Learn how to use entity behavior analytics in Azure Sentinel to identify threats inside your organization.
+title: Use entity behavior analytics in Microsoft Sentinel
+summary: Learn how to use entity behavior analytics in Microsoft Sentinel to identify threats inside your organization.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Explain User and Entity Behavior Analytics in Azure Sentinel
-  - Explore entities in Azure Sentinel
+  - Explain User and Entity Behavior Analytics in Microsoft Sentinel
+  - Explore entities in Microsoft Sentinel
 prerequisites: |
   Knowledge of security incident management in Azure Sentinel
 iconUrl: /learn/achievements/azure-sentinel-behavior-analytics.svg

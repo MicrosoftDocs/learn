@@ -1,11 +1,11 @@
-The Create an Azure Sentinel playbook exercise in this module is an optional unit. However, if you want to perform this exercise, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+The Create a Microsoft Sentinel playbook exercise in this module is an optional unit. However, if you want to perform this exercise, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 To deploy the prerequisites for the exercise, perform the following tasks.
 
 > [!NOTE]
-> If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/).
+> If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost, refer to [Microsoft Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/).
 
-## Task 1: Deploy Azure Sentinel
+## Task 1: Deploy Microsoft Sentinel
 
 1. Select the following link:
 
@@ -18,9 +18,9 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | Label | Description |
     | --- | --- |
     | Subscription | Select your Azure subscription. |
-    | Resource Group | Select Create new and provide a name for the resource group such as azure-sentinel-rg.|
-    | Region | From the drop-down menu, select the region where you want to deploy the Azure Sentinel. |
-    | Workspace name | Provide a unique name for the Azure Sentinel workspace such as *yourname*-sentinel. |
+    | Resource Group | Select Create new and provide a name for the resource group such as azure-Sentinel-rg.|
+    | Region | From the drop-down menu, select the region where you want to deploy the Microsoft Sentinel. |
+    | Workspace name | Provide a unique name for the Microsoft Sentinel workspace such as *yourname*-Sentinel. |
     | Location | Accept the default value of [resourceGroup().location]. |
     | Simplevm Name | Accept the default value of simple-vm.|
     | Simplevm Windows OS Version | Accept the default value of 2016-Datacenter.|
@@ -40,7 +40,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. Select **Home** and in **Azure services**, search for and select **Resource groups**.
 
-1. Select **azure-sentinel-rg**.
+1. Select **azure-Sentinel-rg**.
 
 1. Sort the list of resources by **Type**.
  
@@ -48,9 +48,9 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
     | Name|Type|Description |
     | --- | --- |
-    | *yourname*-sentinel|Log Analytics workspace|Log Analytics workspace used by Azure Sentinel. |
+    | *yourname*-Sentinel|Log Analytics workspace|Log Analytics workspace used by Microsoft Sentinel. |
     | simple-vmNetworkInterface|Network interface|Network interface for the VM. |
-    | SecurityInsights(*yourname*-sentinel)|Solution|Security insights for Azure Sentinel. |
+    | SecurityInsights(*yourname*-Sentinel)|Solution|Security insights for Microsoft Sentinel. |
     | st1*xxxxx*|Storage account|Storage account used by the virtual machine. |
     | simple-vm|Virtual machine|Virtual machine used in the demonstration. |
     | vnet1|Virtual network|Virtual network for the VM. |
@@ -58,11 +58,11 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 > [!Note]
 > The resources deployed and configuration steps completed in this exercise are required in the next exercise. If you intended completing the next exercise do not delete the resources from this exercise.
 
-## Task 3: Configure Azure Sentinel Connectors
+## Task 3: Configure Microsoft Sentinel Connectors
 
-1. In the Azure portal, search for **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
+1. In the Azure portal, search for **Microsoft Sentinel**, and then select the previously created Microsoft Sentinel workspace.
 
-1. On the **Azure Sentinel | Overview** pane, in the left menu, under **Configuration**, select **Data connectors**.
+1. On the **Microsoft Sentinel | Overview** pane, in the left menu, under **Configuration**, select **Data connectors**.
 
 1. In the **Data connectors** pane, search for and select **Azure Activity**. In the details pane, select **Open connector page**.
 
@@ -70,20 +70,20 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. Select your subscription, and then select **Connect**.
 
-1. When you receive a status of **Connected**, close all open panels to return to the **Azure Sentinel | Data connector** panel.
+1. When you receive a status of **Connected**, close all open panels to return to the **Microsoft Sentinel | Data connector** panel.
 
     :::image type="content" source="../media/02-azure-sentinel-connector.png" alt-text="Screenshot that displays the Azure Sentinel connector." border="true":::
 
     > [!Note]
-    > The connector for Azure Activity could take 15 minutes until Azure Sentinel displays a date. You can continue performing the rest of the steps in this unit and subsequent units in this module.
+    > The connector for Azure Activity could take 15 minutes until Microsoft Sentinel displays a date. You can continue performing the rest of the steps in this unit and subsequent units in this module.
 
 ## Task 4: Create an analytics rule
 
-1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
+1. In the Azure portal, search for and select **Microsoft Sentinel**, and then select the previously created Microsoft Sentinel workspace.
 
-1. On the **Azure Sentinel** page, on the menu bar, in the **Configuration** section, select **Analytics**.
+1. On the **Microsoft Sentinel** page, on the menu bar, in the **Configuration** section, select **Analytics**.
 
-1. On the **Azure Sentinel | Analytics** page, select **Create** and then select **Scheduled Query Rule**.
+1. On the **Microsoft Sentinel | Analytics** page, select **Create** and then select **Scheduled Query Rule**.
 
 1. On the **General** page, provide the inputs in the following table, and then select  **Next: Set rule logic >**.
 
@@ -111,11 +111,11 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. On the **Incident setting (preview)** tab, ensure that **Enabled** is selected for creation of incidents from alerts triggered by this analytics rule. And then select **Next: Automated response**.
 
-1. On the **Automated response** tab, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contain a Logic App Azure Sentinel connector are displayed.
+1. On the **Automated response** tab, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contain a Logic App Microsoft Sentinel connector are displayed.
 
 1. Select **Next: Review**.
 
 1. On the **Review and Create** page, verify that the validation passed, and then select **Create**.
 
 > [!NOTE]
-> You can learn more about Azure Sentinel analytics rules in the "Threat detection with Azure Sentinel analytics" module.
+> You can learn more about Microsoft Sentinel analytics rules in the "Threat detection with Microsoft Sentinel analytics" module.

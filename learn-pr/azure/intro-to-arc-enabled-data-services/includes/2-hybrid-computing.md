@@ -19,10 +19,10 @@ Microsoft provides several environments for working with hybrid computing enviro
 
  - [Azure hybrid cloud solutions](https://azure.microsoft.com/solutions/hybrid-cloud-app/#overview)
  - [Azure hybrid benefit](/azure/azure-sql/azure-hybrid-benefit?tabs=azure-powershell)
- - [Azure Defender](/azure/security-center/azure-defender)
+ - [Microsoft Defender for Cloud](/azure/security-center/azure-defender)
  - [Azure VMware solution](https://azure.microsoft.com/services/azure-vmware/#product-overview)
  - [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)
- - [Azure Sentinel](/azure/sentinel/overview)
+ - [Microsoft Sentinel](/azure/sentinel/overview)
  - [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways)
  - [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/#overview)
  - [Azure Arc](https://azure.microsoft.com/services/azure-arc/#product-overview)

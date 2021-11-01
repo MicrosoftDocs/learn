@@ -22,7 +22,7 @@ The Incidents queue shows a collection of flagged incidents from across devices,
 
 [ ![Incident Queue.](../media/incidents-queue.png) ](../media/incidents-queue.png#lightbox)
 
-By default, the queue in the Microsoft 365 security center displays incidents seen in the last 30 days. The most recent incident is at the top of the list so that you can see it first.
+By default, the queue in the Microsoft 365 Defender portal displays incidents seen in the last 30 days. The most recent incident is at the top of the list so that you can see it first.
 
 The incident queue exposes customizable columns that give you visibility into different characteristics of the incident or the contained entities. This helps you make an informed decision regarding the prioritization of incidents to handle.
 
@@ -60,7 +60,7 @@ You can choose to see only incidents that have mapped to multiple categories and
 
 **Multiple service sources**
 
-Filter to only see incidents that contain alerts from different sources (Microsoft Defender for Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Office 365).
+Filter to only see incidents that contain alerts from different sources (Microsoft Defender for Endpoint, Microsoft Defender for Cloud Apps, Microsoft Defender for Identity, Microsoft Defender for Office 365).
 
 **OS platform**
 
@@ -143,4 +143,3 @@ Added comments instantly appear on the pane.
 ### Add incident tags
 
 You can add custom tags to an incident, for example, to flag a group of incidents with common characteristics. You can later filter the incidents queue for all incidents that contain a specific tag.
-

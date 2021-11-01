@@ -13,7 +13,7 @@ summary: Learn about the security management capabilities of Microsoft 365.  Top
 abstract: |
   After completing this module, you will be able to:
   - Describe the security management capabilities of Microsoft 365
-  - Explore the security reports and dashboards in the Microsoft 365 Security Center
+  - Explore the security reports and dashboards in the Microsoft 365 Defender portal
   - Describe incident management capabilities of Microsoft 365
 prerequisites: |
   - General understanding of networking and cloud computing concepts.

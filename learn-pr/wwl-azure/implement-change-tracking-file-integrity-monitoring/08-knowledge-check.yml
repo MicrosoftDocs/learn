@@ -29,21 +29,21 @@ quiz:
     choices:
     - content: "From the home page of the Azure portal, select **Virtual machines**, and then select **ContosoVM1**. Under **Settings**, select **Security**, and then select **New alert rule**."
       isCorrect: false
-      explanation: "That's incorrect. She cannot access the File Integrity Monitoring alerts in this way. She must use Security Center from the home page, and then select File Integrity Monitoring."
-    - content: "Select **Security Center**, then select **File Integrity Monitoring**. On the dashboard, select the appropriate workspace, and then select **ContosoVM1**. Then on the toolbar, select **New alert rule**."
+      explanation: "That's incorrect. She cannot access the File Integrity Monitoring alerts in this way. She must use Defender for Cloud from the home page, and then select File Integrity Monitoring."
+    - content: "Select **Defender for Cloud**, then select **File Integrity Monitoring**. On the dashboard, select the appropriate workspace, and then select **ContosoVM1**. Then on the toolbar, select **New alert rule**."
       isCorrect: true
       explanation: "That's correct."
-    - content: "Select **Security Center**, then select **File Integrity Monitoring**. On the dashboard, select **ContosoVM1**. Then on the toolbar, select **New alert rule**."
+    - content: "Select **Defender for Cloud**, then select **File Integrity Monitoring**. On the dashboard, select **ContosoVM1**. Then on the toolbar, select **New alert rule**."
       isCorrect: false
       explanation: "That's incorrect. She must select the appropriate workspace before selecting the VM."
-  - content: "An administrator at Contoso reviews the **File Integrity Monitoring** blade in Security Center, which has the following returned output. There are five workspaces. One is marked with UPGRADE PLAN, two are marked ENABLE, and two have both servers and changes listed.To enable File Integrity Monitoring on **ContosoWorkspace**, which currently displays the status of UPGRADE PLAN, what must the administrator do?"
+  - content: "An administrator at Contoso reviews the **File Integrity Monitoring** blade in Defender for Cloud, which has the following returned output. There are five workspaces. One is marked with UPGRADE PLAN, two are marked ENABLE, and two have both servers and changes listed.To enable File Integrity Monitoring on **ContosoWorkspace**, which currently displays the status of UPGRADE PLAN, what must the administrator do?"
     choices:
-    - content: "They must upgrade the workspace to Security Center Standard tier."
+    - content: "They must upgrade the workspace to Defender for Cloud Standard tier."
       isCorrect: true
-      explanation: "That's correct. Workspaces that they intend to use for File Integrity Monitoring must be in Security Center's Standard tier."
+      explanation: "That's correct. Workspaces that they intend to use for File Integrity Monitoring must be in Defender for Cloud's Standard tier."
     - content: "Nothing. They can use the workspace as is."
       isCorrect: false
-      explanation: "That's incorrect. In this case, they must upgrade the workspace to Security Center's Standard tier"
+      explanation: "That's incorrect. In this case, they must upgrade the workspace to Defender for Cloud's Standard tier"
     - content: "It's not possible to use the specified workspace. They must choose one that's displaying the status ENABLE."
       isCorrect: false
-      explanation: "That's incorrect. They can use workspaces displaying UPGRADE PLAN status for File Integrity Monitoring after upgrade the workspace to use Security Center's Standard tier."
+      explanation: "That's incorrect. They can use workspaces displaying UPGRADE PLAN status for File Integrity Monitoring after upgrade the workspace to use Defender for Cloud's Standard tier."

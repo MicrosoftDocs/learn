@@ -8,9 +8,8 @@ To view the connector page do these steps:
 
 1. Then select the Open connector page on the preview pane.
 
-1. Under the section labeled Configuration, mark the Office 365 activity logs' checkboxes to connect to Azure Sentinel.
+1. Under the section labeled Configuration, mark the Office 365 activity logs' checkboxes to connect to Microsoft Sentinel.
 
 1. Select **Apply Changes**.
 
 :::image type="content" source="../media/office-365.png" alt-text="Office 365 Connector page":::
-

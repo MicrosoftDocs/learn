@@ -75,9 +75,8 @@ Classifications have two metadata attributes:
 
 SQL data discovery and classification comes with a built-in set of sensitivity labels and information types, and discovery logic. You can now customize this taxonomy and define a set and ranking of classification constructs specifically for your environment.
 
-Definition and customization of your classification taxonomy takes place in one central location for your entire Azure Tenant. That location is in Azure Security Center, as part of your Security Policy. Only a user with administrative rights on the Tenant root management group can perform this task.
+Definition and customization of your classification taxonomy takes place in one central location for your entire Azure Tenant. That location is in Microsoft Defender for Cloud, as part of your Security Policy. Only a user with administrative rights on the Tenant root management group can perform this task.
 
 As part of Azure Information Protection policy management, you can define custom labels, rank them, and associate them with a selected set of information types. You can also add your own custom information types and configure them with string patterns, which are added to the discovery logic for identifying this type of data in your databases. Learn more about customizing and managing your policy in the Information Protection policy how-to guide.
 
 After you’ve defined the tenant-wide policy, you can continue with classifying individual databases using your customized policy.
-

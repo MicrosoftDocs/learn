@@ -28,17 +28,17 @@ quiz:
     - content: "Azure Firewall"
       isCorrect: false
       explanation: "Incorrect. Azure Firewall does not enable high-speed connectivity from an on-premises network to SAP S/4 HANA running in Azure."
-  - content: "What is Azure Sentinel used for?"
+  - content: "What is Microsoft Sentinel used for?"
     choices:
     - content: "To stop denial of service attacks at the edge."
       isCorrect: false
-      explanation: "Incorrect. Azure Sentinel is not used for stopping denial of service attacks."
+      explanation: "Incorrect. Microsoft Sentinel is not used for stopping denial of service attacks."
     - content: "To apply analytics to telemetry and log files from various locations in the landscape to find security anomalies."
       isCorrect: true
-      explanation: "Correct. Azure Sentinel applies analytics to telemetry and log files from various locations in the landscape to find security anomalies."
+      explanation: "Correct. Microsoft Sentinel applies analytics to telemetry and log files from various locations in the landscape to find security anomalies."
     - content: "To connect VNets in the overall solution."
       isCorrect: false
-      explanation: "Incorrect. Azure Sentinel is not used to connect VNets."
+      explanation: "Incorrect. Microsoft Sentinel is not used to connect VNets."
   - content: "Which service provides connectivity between Virtual Networks in Azure?"
     choices:
     - content: "Azure Virtual Network Peering"

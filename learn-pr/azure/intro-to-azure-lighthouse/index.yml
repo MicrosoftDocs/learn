@@ -16,7 +16,7 @@ abstract: |
   - Understand the features of Azure Lighthouse
   - See how to use Azure Lighthouse for cross tenant management
   - See how to use Azure Resource Manager templates
-  - Set up Security Center with Alerting
+  - Set up Defender for Cloud with Alerting
   - Create a managed service offer on the Azure Marketplace
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

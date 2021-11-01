@@ -12,7 +12,7 @@ You log in to a registry using the Azure CLI or the standard docker login comman
 Azure Container Registry requires all secure connections from servers and applications to use TLS 1.2. Enable TLS 1.2 by using any recent docker client (version 18.03.0 or later).
 You control access to a container registry using an Azure identity, an Azure Active Directory-backed service principal, or a provided admin account. Use role-based access control (RBAC) to assign users or systems fine-grained permissions to a registry.
 
-Security features of the Premium SKU include content trust for image tag signing, and firewalls and virtual networks to restrict access to the registry. Azure Security Center optionally integrates with Azure Container Registry to scan images whenever an image is pushed to a registry.
+Security features of the Premium SKU include content trust for image tag signing, and firewalls and virtual networks to restrict access to the registry. Microsoft Defender for Cloud optionally integrates with Azure Container Registry to scan images whenever an image is pushed to a registry.
 
 ## Repository
 Container registries manage repositories, collections of container images or other artifacts with the same name, but different tags. For example, the following three images are in the "acr-helloworld" repository:
@@ -37,6 +37,3 @@ By using Log Analytics, you can:
 On computers running Windows, you can centralize and compare logs from Windows Server, Hyper-V, and Docker containers. The solution supports container orchestrators such as Docker Swarm, DC/OS, Kubernetes, Service Fabric, and Red Hat OpenShift.
 
 Container technology is causing a structural change in the cloud-computing world. Containers make it possible to run multiple instances of an application on a single instance of an operating system, thereby using resources more efficiently. Containers give organizations consistency and flexibility. They enable continuous deployment because the application can be developed on a desktop, tested in a virtual machine, and then deployed for production in the cloud. Containers provide agility, streamlined operations, scalability, and reduced costs due to resource optimization.
-
-
-

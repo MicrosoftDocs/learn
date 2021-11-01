@@ -8,7 +8,7 @@ For central teams to maintain operational visibility within a large-scale Azure 
 
 To provide a platform that meets application requirements for high availability (HA) and disaster recovery (DR), you must have a thorough understanding of the mechanisms that application teams use to achieve their goals. The platform team is responsible for connectivity and for guiding region selection for platform-replication capabilities.
 
-A secure Azure estate provides central teams with real-time visibility into changes in the environment. This visibility is critical to meeting governance and compliance requirements. To achieve this goal, use Azure Security Center and Azure Sentinel for real-time insights, and use Azure Policy to enforce approved resource configurations.
+A secure Azure estate provides central teams with real-time visibility into changes in the environment. This visibility is critical to meeting governance and compliance requirements. To achieve this goal, use Microsoft Defender for Cloud and Microsoft Sentinel for real-time insights, and use Azure Policy to enforce approved resource configurations.
 
 ## Learn more
 

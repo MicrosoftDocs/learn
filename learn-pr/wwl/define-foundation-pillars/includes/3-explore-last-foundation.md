@@ -81,7 +81,7 @@ Azure also supports third-party tools such as Terraform, Ansible, Chef, Puppet, 
 
 ### Ensure Continuous Security
 
-**Azure Security Center** provides organizations with full visibility and control of their cloud security state with a single, unified view. Its capabilities include:
+**Microsoft Defender for Cloud** provides organizations with full visibility and control of their cloud security state with a single, unified view. Its capabilities include:
 
 - Security data collection from multiple sources
 - Integration with existing security workflows
@@ -93,7 +93,7 @@ Azure also supports third-party tools such as Terraform, Ansible, Chef, Puppet, 
 
 Microsoft analyzes 300 billion user authentications and checks 200 billion emails for spam and malware every month. Microsoft also has unprecedented visibility into cloud infrastructure choices, platforms, and the activity therein. Such visibility has no precedent in the on-premises world.
 
-![Screenshot of Azure Security Center](../media/2-3-security-center.png)
+![Screenshot of Microsoft Defender for Cloud](../media/2-3-security-center.png)
 
 ### Get smarter insights, faster
 
@@ -121,12 +121,12 @@ Choose the tools that are right for you. Get support for infrastructure as a ser
 
 With end-to-end solutions in Azure, teams can implement DevOps practices in each of the application lifecycle phases:
 
-1. **Plan** in the cloud with Azure Boards, Azure Dashboard, Azure Repo & GitHub, and Azure Security Center.
+1. **Plan** in the cloud with Azure Boards, Azure Dashboard, Azure Repo & GitHub, and Microsoft Defender for Cloud.
 1. **Build** in the cloud with Azure Lab Services.
 1. **Integrate** in the cloud with Azure Test Plan, Security Code Scan, OSS Component Compliance, and Azure Dynamic Testing.
 1. **Deliver** in the cloud with Azure Boards, Azure Pipelines, Azure Repos, Azure Artifacts.
 1. **Collaborate** in the cloud with Azure Bots and Teams.
-1. **Operate** in the cloud with Azure Monitor, Azure Policy, Azure App Insights, and Azure Security Center.
+1. **Operate** in the cloud with Azure Monitor, Azure Policy, Azure App Insights, and Microsoft Defender for Cloud.
 
 ![Diagram maps DevOps technologies to the phases of the application lifecycle.](../media/2-3-bootstrap.png)
 

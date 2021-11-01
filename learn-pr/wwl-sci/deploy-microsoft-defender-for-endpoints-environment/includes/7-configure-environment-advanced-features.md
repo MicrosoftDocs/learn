@@ -6,7 +6,7 @@ The Advanced Features area in the General Settings area provides many on/off swi
 | Skype for business integration| Enables one-click communication with users.|
 | Microsoft Defender for Identity integration| Retrieves enriched user and device data from Microsoft Defender for Identity and forwards Microsoft Defender for Endpoint signals, resulting in better visibility, another detections, and efficient investigations across both services. Forwarded data is stored and processed in the same location as your MDI data.|
 | Office 365 Threat Intelligence connection| Connects to Office 365 Threat Intelligence to enable security investigations across Office 365 mailboxes and Windows devices.|
-| Microsoft Cloud App Security| Forwards Microsoft Defender for Endpoint signals to Cloud App Security, giving administrators deeper visibility into both sanctioned cloud apps and shadow IT. It also gives them the ability to block unauthorized applications when the custom network indicators setting is turned on. Forwarded data is stored and processed in the same location as your Cloud App Security data.|
+| Microsoft Defender for Cloud Apps| Forwards Microsoft Defender for Endpoint signals to Defender for Cloud Apps, giving administrators deeper visibility into both sanctioned cloud apps and shadow IT. It also gives them the ability to block unauthorized applications when the custom network indicators setting is turned on. Forwarded data is stored and processed in the same location as your Defender for Cloud Apps data.|
 | Enable EDR in block mode| When turned on, Microsoft Defender for Endpoint leverages behavioral blocking and containment capabilities by blocking malicious artifacts or behaviors observed through post-breach endpoint detection and response (EDR) capabilities. This feature does not change how Microsoft Defender for Endpoint performs detection, alert generation, and incident correlation. |
 | Microsoft Secure Score| Forwards Microsoft Defender for Endpoint signals, giving Microsoft Secure Score visibility into the device security posture. Forwarded data is stored and processed in the same location as your Microsoft Secure Score data.|
 | Microsoft Intune connection| Connects to Microsoft Intune to enable sharing of device information and enhanced policy enforcement.  Intune provides additional information about managed devices for secure score. It can use risk information to enforce Conditional Access and other security policies.|
@@ -33,15 +33,15 @@ The integration with Microsoft Defender for Identity allows you to pivot directl
 
 ### Microsoft Secure Score
 
-Forwards Defender for Endpoint signals to Microsoft Secure Score in the Microsoft 365 security center. Turning on this feature gives Microsoft Secure Score visibility into the devices security posture. Forwarded data is stored and processed in the same location as the Microsoft Secure Score data.
+Forwards Defender for Endpoint signals to Microsoft Secure Score in the Microsoft 365 Defender portal. Turning on this feature gives Microsoft Secure Score visibility into the devices security posture. Forwarded data is stored and processed in the same location as the Microsoft Secure Score data.
 
 ### Office 365 Threat Intelligence connection
 
 When you turn on this feature, you can incorporate data from Office 365 Advanced Threat Protection into Microsoft Defender Security Center to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices. To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Defender for Endpoint settings in the Security & Compliance dashboard.
 
-### Microsoft Cloud App Security
+### Microsoft Defender for Cloud Apps
 
-Enabling this setting forwards Defender for Endpoint signals to Microsoft Cloud App Security to provide deeper visibility into cloud application usage. Forwarded data is stored and processed in the same location as your Cloud App Security data.
+Enabling this setting forwards Defender for Endpoint signals to Microsoft Defender for Cloud Apps to provide deeper visibility into cloud application usage. Forwarded data is stored and processed in the same location as your Defender for Cloud Apps data.
 
 ### Microsoft Intune connection
 

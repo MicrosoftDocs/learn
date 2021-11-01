@@ -1,5 +1,5 @@
 
-The Microsoft 365 Defender portal (previously Microsoft 365 security center) combines protection, detection, investigation, and response to email, collaboration, identity, and device threats, in a central portal.
+The Microsoft 365 Defender portal (previously Microsoft 365 Defender portal) combines protection, detection, investigation, and response to email, collaboration, identity, and device threats, in a central portal.
 
 Here you can view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft 365 Defender portal helps security admins and security operations teams manage and protect their organization.
 
@@ -14,13 +14,13 @@ The Microsoft 365 Defender portal allows admins to tailor the navigation pane to
 The navigation pane in the Microsoft 365 Defender portal includes these options and many more:
 - **Home**: Get an at-a-glance view of the overall security health of your organization.
 - **Incidents**: See the broader story of an attack by connecting the dots seen on individual alerts on entities. You'll know exactly where an attack started, what devices are impacted, who was affected, and where the threat has gone.
-- **Alerts**: Have greater visibility into all the alerts across your Microsoft 365 environment. Includes alerts from Microsoft Cloud App Security, Microsoft Defender for Office 365, Azure Active Directory, Microsoft Defender for Identity, and Microsoft Defender for Endpoint.
+- **Alerts**: Have greater visibility into all the alerts across your Microsoft 365 environment. Includes alerts from Microsoft Defender for Cloud Apps, Microsoft Defender for Office 365, Azure Active Directory, Microsoft Defender for Identity, and Microsoft Defender for Endpoint.
 - **Hunting**: Proactively search for malware, suspicious files, and activities in your Microsoft 365 organization.
 - **Action** center: Reduce the volume of alerts your security team must address manually, allowing them to focus on more sophisticated threats and other high-value initiatives.
 - **Threat analytics** - Track and respond to emerging threats with an integrated Microsoft 365 Defender threat analytics experience
 - **Secure Score**: Improve your overall security posture with Microsoft Secure Score. This page provides an all up summary of the different security features and capabilities you've enabled and includes recommendations for areas to improve.
 - **Learning hub** - The Microsoft 365 Defender portal includes a learning hub that bubbles up official guidance from resources such as the Microsoft security blog, the Microsoft security community on YouTube, and the official documentation at docs.microsoft.com.
-- **Endpoints** – Microsoft Defender for Endpoints delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
+- **Endpoints** – Microsoft Defender for Endpoint delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
 - **Email & collaboration** - Microsoft Defender for Office 365 helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
 - **Reports**: Get the detail and information you need to better protect your users, devices, apps, and more.
 - **Permissions & roles**: Access to Microsoft 365 Defender is configured with Azure Active Directory global roles or by using custom roles.

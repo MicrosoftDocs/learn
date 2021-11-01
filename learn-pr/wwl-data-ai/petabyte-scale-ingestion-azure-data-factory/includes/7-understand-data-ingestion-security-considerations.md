@@ -9,7 +9,7 @@ Azure Data Factory may ingest data from an on-premises server, or a virtual mach
 When using Azure-SSIS Integration runtime, you are given the option to join a virtual network. Accepting this option enables Azure Data Factory to create network resources, an example of which is that a Network Security Group is automatically created by Azure Data Factory, and port 3389 is open to all traffic by default. Lock this down to ensure that only your administrators have access.
 
 ### Use services to detect and prevent intrusions
-You can deny communication with known IP addresses by enabling the distributed denial of service (DDoS) protection standard on the virtual networks on which the integration runtime in hosted. In addition, you can use the Azure Security Center Integrated Threat Intelligence to deny communications with known malicious or unused Internet IP addresses.
+You can deny communication with known IP addresses by enabling the distributed denial of service (DDoS) protection standard on the virtual networks on which the integration runtime in hosted. In addition, you can use the Microsoft Defender for Cloud Integrated Threat Intelligence to deny communications with known malicious or unused Internet IP addresses.
 Azure Firewall with Threat Intelligence can be used to control network access. If intrusion detection and/or prevention based on payload inspection is required, you can redirect traffic to a firewall appliance via Azure ExpressRoute force tunneling or to a Network Virtual Appliance that supports this capability
 
 ### Simplify the management of security rules using network service tags
@@ -59,8 +59,3 @@ Check your organizations standards for logging and monitoring and snap to the st
 - Security logs
 - Anti-malware logging
 - Log retention policies
-
-
-
-
-

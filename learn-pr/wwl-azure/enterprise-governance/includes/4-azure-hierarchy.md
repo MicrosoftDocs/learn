@@ -67,7 +67,7 @@ Management group hierarchies can be up to six levels deep. This provides you wit
 **Apply policies or access controls to any service**.
 
 * Create one RBAC assignment on the management group, which will inherit that access to all the subscriptions. 
-* Use Azure Resource Manager integrations that allow integrations with other Azure services: Azure Cost Management, Privileged Identity Management, and Azure Security Center. 
+* Use Azure Resource Manager integrations that allow integrations with other Azure services: Azure Cost Management, Privileged Identity Management, and Microsoft Defender for Cloud. 
 
 >[!IMPORTANT]
 >By using management groups, you can reduce your workload and reduce the risk of error by avoiding duplicate assignments. Instead of applying multiple assignments across numerous resources and subscriptions, you can apply the one assignment on the one management group that contains the target resources. This will save time in the application of assignments, creates one point for maintenance, and allows for better controls on who can control the assignment.

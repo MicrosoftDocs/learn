@@ -32,7 +32,7 @@ The permission options:
 
 - Alerts investigation - Manage alerts, start automated investigations, run scans, collect investigation packages, manage device tags, and download only portable executable (PE) files
 
-- Manage security settings in Security Center - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, and manage email notifications, manage evaluation lab
+- Manage security settings in Defender for Cloud - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, and manage email notifications, manage evaluation lab
 
 - Live response capabilities
 
@@ -53,4 +53,3 @@ The permission options:
     - View a script from the files library
 
     - Execute a script on the remote device from the files library
-

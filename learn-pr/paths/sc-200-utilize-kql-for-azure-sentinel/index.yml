@@ -8,7 +8,7 @@ metadata:
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'SC-200 part 4: Create queries for Azure Sentinel using Kusto Query Language (KQL)'
+title: 'SC-200 part 4: Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
 prerequisites: |
   Basic understanding of scripting concepts.
 summary: |

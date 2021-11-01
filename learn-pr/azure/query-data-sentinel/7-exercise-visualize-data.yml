@@ -8,7 +8,7 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Visualize data using Azure Sentinel Workbooks
+title: Exercise - Visualize data using Microsoft Sentinel Workbooks
 durationInMinutes: 8
 content: |
   [!include[](includes/7-exercise-visualize-data.md)]

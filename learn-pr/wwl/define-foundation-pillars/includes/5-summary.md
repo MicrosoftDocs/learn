@@ -16,4 +16,4 @@ Then we explored the solutions that will empower your team on their DevOps journ
 
 With Azure DevOps, you have choices that help maximize your existing investments. You can choose the tools that are right for you, target any cloud, on-premises environment, or both, and deploy to the servers you need.
 
-Azure DevOps allows you to manage self-service dev/test environments with Azure Lab Services. It enables faster deployment with infrastructure as code using Azure Resource Manager. It ensures Continuous Security with Azure Security Center, and provides smarter insights, faster with Azure Monitor, Log Analytics and Application Insights.
+Azure DevOps allows you to manage self-service dev/test environments with Azure Lab Services. It enables faster deployment with infrastructure as code using Azure Resource Manager. It ensures Continuous Security with Microsoft Defender for Cloud, and provides smarter insights, faster with Azure Monitor, Log Analytics and Application Insights.

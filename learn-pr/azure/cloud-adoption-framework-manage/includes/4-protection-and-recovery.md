@@ -3,7 +3,7 @@ Protection and recovery are the third and final discipline in a cloud-management
 | Tool | Description | Link to more information |
 | -----|-------------|--------------------------|
 | Azure Backup | Backup of data and virtual machines in Azure | [Azure Backup overview](/azure/backup/backup-overview) |
-| Azure Security Center | Strengthened security and advanced threat protection |  [Azure Security Center product page](https://azure.microsoft.com/services/security-center/) |
+| Microsoft Defender for Cloud | Strengthened security and advanced threat protection |  [Microsoft Defender for Cloud product page](https://azure.microsoft.com/services/security-center/) |
 
 Another essential tool is Azure Site Recovery. Azure Site Recovery replicates virtual machines and workloads between clouds, Azure regions, or local datacenters. When an outage occurs in your primary Azure region, your workload (for example, virtual machines) fails over to the copy running in the secondary Azure region. The workload will then be online in the secondary site or region. 
 

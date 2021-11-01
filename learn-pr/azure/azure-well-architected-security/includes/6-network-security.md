@@ -20,7 +20,7 @@ Let's look at how Azure can provide the tools for a layered approach to securing
 
 If you start on the perimeter of the network, you're focused on limiting and eliminating attacks from the internet. A great place to start is to assess the resources that are internet-facing, and allow inbound and outbound communication only where necessary. Identify all resources that are allowing inbound network traffic of any type. Ensure that they're necessary and restricted to only the required ports and protocols.
 
-You can look for this information in Azure Security Center. Security Center will identify internet-facing resources that don't have network security groups associated with them. It will also identify resources that aren't secured behind a firewall.
+You can look for this information in Microsoft Defender for Cloud. Defender for Cloud will identify internet-facing resources that don't have network security groups associated with them. It will also identify resources that aren't secured behind a firewall.
 
 There are a couple of ways to provide inbound protection at the perimeter. Azure Application Gateway is a Layer 7 load balancer that also includes a web application firewall (WAF) to provide advanced security for your HTTP-based services. The WAF is based on rules from the OWASP 3.0 or 2.2.9 core rule sets. It provides protection from commonly known vulnerabilities such as cross-site scripting and SQL injection.
 

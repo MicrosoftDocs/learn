@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-security-center.recommendations
-title: Manage and implement security center recommendations
+title: Manage and implement Defender for Cloud recommendations
 metadata:
   title: Manage and implement security center recommendations
   description: "Manage and implement security center recommendations"

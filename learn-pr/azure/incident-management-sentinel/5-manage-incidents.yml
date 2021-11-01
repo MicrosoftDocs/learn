@@ -29,7 +29,7 @@ quiz:
     - content: "Username"
       isCorrect: false
       explanation: "Username is an incident entity and can't be changed."
-  - content: "What Azure Sentinel interface enables someone to view timelines and relationships between incident resources?"
+  - content: "What Microsoft Sentinel interface enables someone to view timelines and relationships between incident resources?"
     choices:
     - content: "Investigation graph"
       isCorrect: true

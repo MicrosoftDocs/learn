@@ -53,5 +53,5 @@ Data in Azure Monitor Logs is retrieved using a log query written with the Kusto
 > ![Azure Logs retrieved using a log query](../media/az500-log-analytics-2.png)
 
 ### Security tools use of Monitor logs
-* **Azure Security Center** stores data that it collects in a Log Analytics workspace where it can be analyzed with other log data. 
-* **Azure Sentinel** stores data from data sources into a Log Analytics workspace.
+* **Microsoft Defender for Cloud** stores data that it collects in a Log Analytics workspace where it can be analyzed with other log data. 
+* **Microsoft Sentinel** stores data from data sources into a Log Analytics workspace.

@@ -33,7 +33,7 @@ Additionally, Azure Monitor enables you to archive collected data in Azure Stora
 - Trigger a remediation action implemented by Azure Logic Apps, Azure Functions, or a runbook in Azure Automation.
 - Raise an incident and work items by leveraging integration between Azure Monitor and your internal IT Service Management (ITSM) platform.
 
-You can also store and analyze near real-time and historical data by using Log Analytics. For on-premises computers and Azure VMs, this requires installing the Log Analytics agent, and in some cases the Dependency Agent as well. This agent-based approach enables you to monitor the operating system and its workloads using Azure Automation or Azure Monitor–based solutions such as Update Management or Change Tracking and Inventory. You can also leverage Azure Security Center to identify vulnerabilities and potential threats.
+You can also store and analyze near real-time and historical data by using Log Analytics. For on-premises computers and Azure VMs, this requires installing the Log Analytics agent, and in some cases the Dependency Agent as well. This agent-based approach enables you to monitor the operating system and its workloads using Azure Automation or Azure Monitor–based solutions such as Update Management or Change Tracking and Inventory. You can also leverage Microsoft Defender for Cloud to identify vulnerabilities and potential threats.
 
 To learn more, review this five minute tutorial video on Azure Monitoring:
 

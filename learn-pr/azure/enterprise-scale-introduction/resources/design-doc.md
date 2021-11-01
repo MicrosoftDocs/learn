@@ -22,7 +22,7 @@ Describe the vision, approach, and design principles behind the enterprise-scale
 - Basic knowledge of Azure Enterprise Agreements
 - Basic knowledge of management groups and subscriptions
 - Intermediate knowledge of Azure networking, including cross-region and on-premises connectivity
-- Basic knowledge of Azure Security Center and Azure Sentinel
+- Basic knowledge of Microsoft Defender for Cloud and Microsoft Sentinel
 - Basic knowledge of Azure Log Analytics
 
 ## Summary

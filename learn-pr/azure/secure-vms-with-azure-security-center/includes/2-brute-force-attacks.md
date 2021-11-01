@@ -38,7 +38,7 @@ To counteract brute-force attacks, you can take multiple measures such as:
 * Implement Captcha
 * Limit the amount of time that the ports are open
 
-This final approach is what Azure Security Center implements on your behalf. Management ports such as Remote Desktop and SSH only need to be open while you are connected to the VM (for example, to perform management or maintenance tasks). In the _standard tier_, Azure Security Center supports **Just-in-time (JIT) virtual machine (VM) access**. When JIT access is enabled, Security Center uses network security group (NSG) rules to restrict access to management ports when they aren't in use so they cannot be targeted by attackers.
+This final approach is what Microsoft Defender for Cloud implements on your behalf. Management ports such as Remote Desktop and SSH only need to be open while you are connected to the VM (for example, to perform management or maintenance tasks). In the _standard tier_, Microsoft Defender for Cloud supports **Just-in-time (JIT) virtual machine (VM) access**. When JIT access is enabled, Defender for Cloud uses network security group (NSG) rules to restrict access to management ports when they aren't in use so they cannot be targeted by attackers.
 
 ## Enable JIT VM Access
 

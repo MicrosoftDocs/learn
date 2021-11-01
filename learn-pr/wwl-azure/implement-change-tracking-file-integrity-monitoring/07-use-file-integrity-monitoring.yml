@@ -26,4 +26,4 @@ quiz:
       explanation: "That's incorrect. Although agents must be installed, that process begins with upgrading the pricing tier."
     - content: "The instructor selects **UPGRADE PLAN** on the workspace to change the workspace to Standard Tier pricing. Unless the workspace is on this pricing tier, it cannot be used for File Integrity Monitoring."
       isCorrect: true
-      explanation: "That's correct. Both the Security Center and the Log Analytics workspace must be on Standard Tier pricing."
+      explanation: "That's correct. Both the Defender for Cloud and the Log Analytics workspace must be on Standard Tier pricing."

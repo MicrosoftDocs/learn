@@ -44,7 +44,7 @@ The resulting functionality is referred to as *Azure Monitor for VMs* and, in ad
 > [!NOTE]
 > Despite its name, Azure Monitor for VMs supports virtual and physical servers.
 
-Azure Monitor supports a range of other solutions that provide additional functionality, beyond what is implemented by default during the Windows Admin Center-based onboarding. For example; Update Management, Inventory, and Change tracking use the capabilities of Azure Automation to automate patching of the Windows Server operating system and facilitate asset management. Azure Security Center facilitates monitoring for security vulnerabilities and cyber threats.
+Azure Monitor supports a range of other solutions that provide additional functionality, beyond what is implemented by default during the Windows Admin Center-based onboarding. For example; Update Management, Inventory, and Change tracking use the capabilities of Azure Automation to automate patching of the Windows Server operating system and facilitate asset management. Microsoft Defender for Cloud facilitates monitoring for security vulnerabilities and cyber threats.
 
 Cloud-based monitoring might eliminate the need for an on-premises monitoring system. If you have existing Azure resources, cloud-based monitoring will provide a uniform monitoring solution that uses cloud hyperscale and seamlessly integrates with other Azure services.
 

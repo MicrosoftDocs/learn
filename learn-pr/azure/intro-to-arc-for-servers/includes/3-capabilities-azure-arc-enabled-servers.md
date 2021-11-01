@@ -32,7 +32,7 @@ VM extensions are lightweight software components that automate post-operating s
 | Log Analytics agent | Installs the Log Analytics agent on the target Arc enabled server and configures it for log forwarding to a Log Analytics workspace. |
 | Dependency agent | Installs the Dependency agent on the target Arc enabled server to facilitate identifying internal and external dependencies of server workloads. |
 | Azure Key Vault agent | Synchronizes certificates from an Azure Key Vault instance to the Arc enabled server. |
-| Qualys extension | Azure Defender for servers vulnerability assessment scanning solution. |
+| Qualys extension | Microsoft Defender for servers vulnerability assessment scanning solution. |
 
 ### What is the role of Azure Policy in managing Arc enabled servers?
 

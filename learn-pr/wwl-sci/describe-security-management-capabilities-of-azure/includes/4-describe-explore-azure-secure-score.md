@@ -1,15 +1,15 @@
-Security Center continually assesses your resources, subscriptions, and organization for security issues. It then aggregates all the findings into a single score so you can quickly see your current security situation: the higher the score, the lower the identified risk level.
+Defender for Cloud continually assesses your resources, subscriptions, and organization for security issues. It then aggregates all the findings into a single score so you can quickly see your current security situation: the higher the score, the lower the identified risk level.
 
 The secure score is shown in the Azure portal pages as a percentage value. The underlying values are also clearly presented:
 
 > [!div class="mx-imgBorder"]
 > ![Section of the Azure portal showing the Overall Secure Score.](../media/4-overall-secuire-score.png)
 
-To increase your security and raise your score, review Security Center's recommendations page for the outstanding actions necessary. Each recommendation includes instructions to help you remediate the specific issue.
+To increase your security and raise your score, review Defender for Cloud's recommendations page for the outstanding actions necessary. Each recommendation includes instructions to help you remediate the specific issue.
 
 ### How is the security score calculated?
 
-Every control in the recommendations list shows the potential secure score increase if you address the underlying problem. To get every possible security control point, all your resources must follow each security recommendation within the security control. For example, Security Center has multiple recommendations for how to secure your management ports. You must remediate them all to make a difference to your secure score.
+Every control in the recommendations list shows the potential secure score increase if you address the underlying problem. To get every possible security control point, all your resources must follow each security recommendation within the security control. For example, Defender for Cloud has multiple recommendations for how to secure your management ports. You must remediate them all to make a difference to your secure score.
 
 For example, the security control called "Apply system updates" has a maximum score of six points. You can see it in the tooltip on the potential increase value of the control:
 

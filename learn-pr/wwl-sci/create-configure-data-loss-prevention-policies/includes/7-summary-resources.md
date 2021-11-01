@@ -2,7 +2,7 @@ Now that you have reviewed this module, you should be able to:
 
 - Configure Data loss prevention policies in PowerPlatform
 
-- Integrate DLP Policies into MCAS for advanced functionality
+- Integrate DLP Policies into Defender for Cloud Apps for advanced functionality
 
 ## Resources
 
@@ -12,5 +12,4 @@ Use these resources to discover more.
 
 - [Monitor and protect files in cloud apps | Microsoft Docs](https://docs.microsoft.com/cloud-app-security/data-protection-policies?azure-portal=true)
 
-- [Use the RegEx engine in Cloud App Security for content inspection policies | Microsoft Docs](https://docs.microsoft.com/cloud-app-security/working-with-the-regex-engine?azure-portal=true)
-
+- [Use the RegEx engine in Defender for Cloud Apps for content inspection policies | Microsoft Docs](https://docs.microsoft.com/cloud-app-security/working-with-the-regex-engine?azure-portal=true)

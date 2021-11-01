@@ -46,4 +46,4 @@ quiz:
       explanation: "That's incorrect. Commonly used management ports, including RDP/SSH are automatically configured."
     - content: "You can enable JIT access for a VM when you attempt to connect to the VM from the VM's **Connect** blade."
       isCorrect: true
-      explanation: "That's correct. In addition to using Security Center to enable JIT, you can select the link, **To improve security, enable just-in-time access on this VM**."
+      explanation: "That's correct. In addition to using Defender for Cloud to enable JIT, you can select the link, **To improve security, enable just-in-time access on this VM**."

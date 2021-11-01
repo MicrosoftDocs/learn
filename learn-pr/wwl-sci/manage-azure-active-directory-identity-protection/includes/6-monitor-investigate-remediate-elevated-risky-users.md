@@ -85,7 +85,7 @@ With the information provided by the risk detections report, administrators can 
 
 Administrators can then choose to return to the user's risk or sign-ins report to take actions based on information gathered.
 
-The risk detection report also provides a clickable link to the detection in the Microsoft Cloud App Security (MCAS) portal where you can view additional logs and alerts.
+The risk detection report also provides a clickable link to the detection in the Microsoft Defender for Cloud Apps portal where you can view additional logs and alerts.
 
 > [!NOTE]
 > Our system may detect that the risk event that contributed to the risk user risk score was a false positive or that the user risk was remediated with policy enforcement such as completing an MFA prompt or secure password change. Therefore, our system will dismiss the risk state, and a risk detail of “AI confirmed sign-in safe” will surface and no longer contribute to the user’s risk.

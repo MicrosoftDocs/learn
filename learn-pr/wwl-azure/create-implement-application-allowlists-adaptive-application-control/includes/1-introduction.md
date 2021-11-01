@@ -1,4 +1,4 @@
-You can limit the applications that can run on a Windows Server infrastructure as a service (IaaS) virtual machine (VM) to those on an approved list. You do this by using the **Adaptive application controls** feature of Azure Security Center.
+You can limit the applications that can run on a Windows Server infrastructure as a service (IaaS) virtual machine (VM) to those on an approved list. You do this by using the **Adaptive application controls** feature of Microsoft Defender for Cloud.
 
 ## Scenario
 
@@ -10,7 +10,7 @@ As part of the initial design, the Contoso IT team asked you, their lead system 
 
 For security, Contoso IT operations staff need to know if an unusual application or script is running on one of their Windows Server IaaS VMs. You have been tasked with investigating what they can use to control the applications that can run on their VMs.
 
-In this module, you'll learn what adaptive application control is, and how to configure this feature in Azure Security Center. You will also learn how to implement adaptive application control policies.
+In this module, you'll learn what adaptive application control is, and how to configure this feature in Microsoft Defender for Cloud. You will also learn how to implement adaptive application control policies.
 
 By the end of this module, you'll be able to implement Adaptive application controls within your organization to protect your Windows Server IaaS VMs.
 

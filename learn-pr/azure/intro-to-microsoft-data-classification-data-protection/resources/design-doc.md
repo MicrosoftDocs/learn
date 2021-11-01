@@ -18,7 +18,7 @@ Choose all roles that apply and delete the others:
 
 - Azure Information Protection
 - Microsoft Information Protection
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Office 365 Message Encryption
 
 # Prerequisites
@@ -30,7 +30,7 @@ To get the best learning experience from this module, you should have knowledge 
 
 # Module summary description
 
-Learn about Microsoft Information Protection, Azure Information Protection, and how to use sensitivity labels to classify and protect data. Describe technologies such as unified labeling scanners, Cloud App Security, service encryption, and Office 365 Message encryption.
+Learn about Microsoft Information Protection, Azure Information Protection, and how to use sensitivity labels to classify and protect data. Describe technologies such as unified labeling scanners, Defender for Cloud Apps, service encryption, and Office 365 Message encryption.
 
 # Exercise
 
@@ -44,7 +44,7 @@ Learn about Microsoft Information Protection, Azure Information Protection, and 
 
 - Describe Microsoft Information Protection and Azure Information Protection.
 - Describe and use sensitivity labels.
-- Describe Cloud App Security.
+- Describe Defender for Cloud Apps.
 - Describe Office 365 Message Encryption.
 
 # Estimate module duration
@@ -64,7 +64,7 @@ In this section, provide a summary list of the units for the module.
 3. What are sensitivity labels?
 4. How to use sensitivity labels to classify and protect data?
 5. What is a unified labeling scanner?
-6. What is Microsoft Cloud App Security?
+6. What is Microsoft Defender for Cloud Apps?
 7. What is service encryption with Customer Key?
 8. What is Office 365 Message Encryption?
 9. Exercise: Create sensitivity labels
@@ -134,7 +134,7 @@ As part of the initial design, the Contoso IT team asked you, their lead system 
 - Define unified labeling scanner.
 - Describe how to use a unified labeling scanner.
 
-### Unit 6: What is Microsoft Cloud App Security?
+### Unit 6: What is Microsoft Defender for Cloud Apps?
 
 **Type of unit:** Learning content unit
 
@@ -142,8 +142,8 @@ As part of the initial design, the Contoso IT team asked you, their lead system 
 
 **Key content per learning objective**
 
-- Define and describe the Microsoft Cloud App Security service.
-- Provide scenarios for using Microsoft Cloud App Security.
+- Define and describe the Microsoft Defender for Cloud Apps service.
+- Provide scenarios for using Microsoft Defender for Cloud Apps.
 
 ### Unit 7: What is service encryption with Customer Key?
 

@@ -25,7 +25,7 @@ Next, run the **MMASetup-AMD64.exe** file and use the following instructions to 
   3. On the **Ready to Install** page, review your choices, and then select **Install**.
   4. On the **Configuration completed successfully** page, select **Finish**.
 
-The Log Analytics agent is designed to facilitate monitoring and management integration in hybrid environments, including those managed by Operations Manager. The Log Analytics agent also delivers data consumed by other Azure services, including Azure Security Center and Azure Automation.
+The Log Analytics agent is designed to facilitate monitoring and management integration in hybrid environments, including those managed by Operations Manager. The Log Analytics agent also delivers data consumed by other Azure services, including Microsoft Defender for Cloud and Azure Automation.
 
 The agent manages:
 

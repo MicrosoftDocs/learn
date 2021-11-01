@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-sentinel.enable-azure-sentinel
-title: Enable Azure Sentinel
+title: Enable Microsoft Sentinel
 metadata:
   title: Enable Azure Sentinel
   description: "Enable Azure Sentinel"

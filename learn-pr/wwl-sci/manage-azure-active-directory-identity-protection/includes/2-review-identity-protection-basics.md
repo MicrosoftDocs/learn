@@ -118,7 +118,7 @@ New country
 :::column-end:::
 :::column:::
 
-This detection is discovered by Microsoft Cloud App Security (MCAS).
+This detection is discovered by Microsoft Defender for Cloud Apps.
 
 :::column-end:::
 :::row-end:::
@@ -130,7 +130,7 @@ Activity from anonymous IP address
 :::column-end:::
 :::column:::
 
-This detection is discovered by MCAS.
+This detection is discovered by Defender for Cloud Apps.
 
 :::column-end:::
 :::row-end:::
@@ -142,7 +142,7 @@ Suspicious inbox forwarding
 :::column-end:::
 :::column:::
 
-This detection is discovered by MCAS.
+This detection is discovered by Defender for Cloud Apps.
 
 :::column-end:::
 :::row-end:::
@@ -511,4 +511,3 @@ Yes
 
 :::column-end:::
 :::row-end:::
-

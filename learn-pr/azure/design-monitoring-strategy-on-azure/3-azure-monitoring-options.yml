@@ -20,20 +20,20 @@ quiz:
     - content: Azure Monitor
       isCorrect: false
       explanation: Azure monitor is the monitoring service used to track availability, health, and performance of applications and infrastructure.
-    - content: Azure Sentinel
+    - content: Microsoft Sentinel
       isCorrect: true
-      explanation: Azure Sentinel includes built-in threat intelligence for detection and investigation that can help reduce false positives.
+      explanation: Microsoft Sentinel includes built-in threat intelligence for detection and investigation that can help reduce false positives.
     - content: Azure Monitor Application Insights
       isCorrect: false
       explanation: Application Insights is a feature of Azure Monitor that focuses on application layer availability and performance of apps deployed on Azure on on-premises.
-  - content: What is the shared underlying logging data platform for Azure Sentinel and Azure Security Center?
+  - content: What is the shared underlying logging data platform for Microsoft Sentinel and Microsoft Defender for Cloud?
     choices:
     - content: Diagnostic Setting
       isCorrect: false
       explanation: Diagnostic settings are used to send platform metrics and platform logs to Azure Monitor Log Analytics, storage account or Event Hubs.
     - content: Azure Monitor Logs
       isCorrect: true
-      explanation: Several services in Azure including Sentinel and Security Center use Azure Monitor Logs as their underlying logging data platform.
+      explanation: Several services in Azure including Sentinel and Defender for Cloud use Azure Monitor Logs as their underlying logging data platform.
     - content: Activity Logs
       isCorrect: false
       explanation: The Activity log is an Azure platform log that provides insight into subscription-level events.

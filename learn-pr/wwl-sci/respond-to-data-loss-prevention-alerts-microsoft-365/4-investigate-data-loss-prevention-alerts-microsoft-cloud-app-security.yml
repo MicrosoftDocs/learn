@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.respond-to-data-loss-prevention-alerts-microsoft-365.investigate-dlp-cloud-app-security
-title: Investigate data loss prevention alerts in Microsoft Cloud App Security
+title: Investigate data loss prevention alerts in Microsoft Defender for Cloud Apps
 metadata:
   title: Investigate data loss prevention alerts in Microsoft Cloud App Security
   description: "Investigate data loss prevention alerts in Microsoft Cloud App Security"

@@ -27,7 +27,7 @@ quiz:
     - content: "Microsoft cybersecurity group."
       isCorrect: false
       explanation: "That's incorrect. The Microsoft cybersecurity group are responsible for developing best practices."
-  - content: "An organization is using Azure Security Center to assess its resources and subscriptions for security issues. The organization's overall secure score is low and needs to improve. How could a security admin try to improve the score?"
+  - content: "An organization is using Microsoft Defender for Cloud to assess its resources and subscriptions for security issues. The organization's overall secure score is low and needs to improve. How could a security admin try to improve the score?"
     choices:
     - content: "Close old security recommendations."
       isCorrect: false
@@ -38,7 +38,7 @@ quiz:
     - content: "Delete security recommendations."
       isCorrect: false
       explanation: "That's incorrect. Security recommendations cannot be deleted."
-  - content: "An organization needs to continuously monitor the security status of its network. What Security Center tool would they use?"
+  - content: "An organization needs to continuously monitor the security status of its network. What Defender for Cloud tool would they use?"
     choices:
     - content: "Continuous assessment."
       isCorrect: false

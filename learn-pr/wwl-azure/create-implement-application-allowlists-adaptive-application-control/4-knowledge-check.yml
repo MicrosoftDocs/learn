@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "In a Security Center application control policy, an administrator can move VMs from one group to another. When they do, what happens to the application control policy applied to the moved VM?"
+  - content: "In a Defender for Cloud application control policy, an administrator can move VMs from one group to another. When they do, what happens to the application control policy applied to the moved VM?"
     choices:
     - content: "It remains the same."
       isCorrect: false

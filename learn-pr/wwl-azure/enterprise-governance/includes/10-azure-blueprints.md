@@ -39,6 +39,6 @@ The following example illustrates the power of Azure Blueprints to deploy a comp
 
 * This Azure Security and Compliance Blueprint Automation automatically deploys a PaaS web application reference architecture with pre-configured security controls to help customers achieve compliance with PCI DSS 3.2 requirements. The solution consists of Azure Resource Manager templates and PowerShell scripts that guide resource deployment and configuration.
 
-* This Blueprint uses Azure Resource Manager, Bastion Host, App Service Environment, Azure Web App, Network Security Groups, Subnets, Azure DNS, Azure Load Balancer, Azure encryption, Azure Storage, Azure SQL DB, Identity Management, Azure Key Vault, Azure Security Center, Azure Application Gateway, Azure Monitor logs, Azure Monitor, Azure Automation, and Application Insights. 
+* This Blueprint uses Azure Resource Manager, Bastion Host, App Service Environment, Azure Web App, Network Security Groups, Subnets, Azure DNS, Azure Load Balancer, Azure encryption, Azure Storage, Azure SQL DB, Identity Management, Azure Key Vault, Microsoft Defender for Cloud, Azure Application Gateway, Azure Monitor logs, Azure Monitor, Azure Automation, and Application Insights. 
 
 * This Azure Security and Compliance Blueprint Automation is comprised of JSON configuration files and PowerShell scripts that are handled by Azure Resource Manager's API service to deploy resources within Azure.

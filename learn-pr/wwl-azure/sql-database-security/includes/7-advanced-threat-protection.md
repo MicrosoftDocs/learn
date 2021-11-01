@@ -1,10 +1,10 @@
 
-Azure Defender for SQL (formerly known as Advanced Threat Protection (ATP)) for single and pooled databases detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases. Advanced Threat Protection can identify **Potential SQL injection**, **Access from unusual location or data center, Access from unfamiliar principal or potentially harmful application**, and **Brute force SQL credentials**.
+Microsoft Defender for SQL (formerly known as Advanced Threat Protection (ATP)) for single and pooled databases detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases. Advanced Threat Protection can identify **Potential SQL injection**, **Access from unusual location or data center, Access from unfamiliar principal or potentially harmful application**, and **Brute force SQL credentials**.
 
-Azure Defender for SQL is part of the advanced data security (ADS) offering, which is a unified package for advanced SQL security capabilities. Advanced Threat Protection can be accessed and managed via the central SQL ADS portal.
+Microsoft Defender for SQL is part of the advanced data security (ADS) offering, which is a unified package for advanced SQL security capabilities. Advanced Threat Protection can be accessed and managed via the central SQL ADS portal.
 ATP provides a new layer of security, which enables customers to detect and respond to potential threats as they occur by providing security alerts on anomalous activities. 
 
-### Azure Defender for SQL alerts
+### Microsoft Defender for SQL alerts
 Advanced Threat Protection for Azure SQL Database detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases and it can trigger the following alerts:
 * **Vulnerability to SQL injection**: This alert is triggered when an application generates a faulty SQL statement in the database. This alert may indicate a possible vulnerability to SQL injection attacks. There are two possible reasons for the generation of a faulty statement:
 
@@ -25,4 +25,4 @@ Advanced Threat Protection for Azure SQL Database detects anomalous activities i
 > [!div class="mx-imgBorder"]
 > ![Advance Threat Protection threat scan results](../media/az500-sql-threat-protection.png)
 
-ATP is integrated with Azure Security Center to detect and respond to potential threats as they occur.
+ATP is integrated with Microsoft Defender for Cloud to detect and respond to potential threats as they occur.

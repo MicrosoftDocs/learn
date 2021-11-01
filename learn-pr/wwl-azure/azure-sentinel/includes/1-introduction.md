@@ -1,10 +1,10 @@
 
-In the world we live in today, there is always the chance that your system my be hacked.  What do you do at this point to find and evaluate a breach?  Azure Sentinel is a tool to help you locate a breach and track what the intruder did while on your systems.
+In the world we live in today, there is always the chance that your system my be hacked.  What do you do at this point to find and evaluate a breach?  Microsoft Sentinel is a tool to help you locate a breach and track what the intruder did while on your systems.
 
 ## Scenario
 
-A security engineer uses Azure Sentinel to discover and track a breach, you will work on such tasks as:
-- Configure Azure Sentinel.
+A security engineer uses Microsoft Sentinel to discover and track a breach, you will work on such tasks as:
+- Configure Microsoft Sentinel.
 - Build queries to find breaches.
 - Track incidents with investigation and hunting.
 
@@ -13,10 +13,10 @@ A security engineer uses Azure Sentinel to discover and track a breach, you will
 Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
 
 Manage Security Operations (25-30%)
-- Monitor security by using Azure Sentinel
+- Monitor security by using Microsoft Sentinel
    - create and customize alerts
-   - configure data sources to Azure Sentinel
-   - evaluate results from Azure Sentinel
+   - configure data sources to Microsoft Sentinel
+   - evaluate results from Microsoft Sentinel
    - configure a playbook
 
 
@@ -24,9 +24,9 @@ Manage Security Operations (25-30%)
 
 In this module, you will:
 
-- Explain what Azure Sentinel is and how it is used
-- Deploy Azure Sentinel
-- Connect data to Azure Sentinel, like Azure Logs, Azure AD, and others
+- Explain what Microsoft Sentinel is and how it is used
+- Deploy Microsoft Sentinel
+- Connect data to Microsoft Sentinel, like Azure Logs, Azure AD, and others
 - Track incidents using workbooks, playbooks, and hunting techniques
 
 ## Prerequisites

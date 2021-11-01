@@ -8,10 +8,10 @@ metadata:
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'SC-200 part 7: Create detections and perform investigations using Azure Sentinel'
+title: 'SC-200 part 7: Create detections and perform investigations using Microsoft Sentinel'
 prerequisites: |
-  - Understand how to use KQL in Azure Sentinel like you could learn from SC-200 part 4: Create queries for Azure Sentinel using Kusto Query Language (KQL)
-  - Understand how data is connected to Azure Sentinel like you could learn from SC-200 part 6: Connect logs to Azure Sentinel
+  - Understand how to use KQL in Microsoft Sentinel like you could learn from SC-200 part 4: Create queries for Microsoft Sentinel using Kusto Query Language (KQL)
+  - Understand how data is connected to Microsoft Sentinel like you could learn from SC-200 part 6: Connect logs to Microsoft Sentinel
 summary: |
   Detect previously uncovered threats and rapidly remediate threats with built-in orchestration and automation in Azure Sentinel. This learning path aligns with Exam SC-200: Security Operation Analyst.
 iconUrl: /learn/achievements/azure-sentinel-detection.svg
@@ -23,10 +23,10 @@ products:
 - azure
 - azure-sentinel
 modules:
-- learn.azure.analyze-data-in-sentinel
-- learn.azure.threat-response-sentinel-playbooks
-- learn.azure.incident-management-sentinel
-- learn.wwl.use-entity-behavior-analytics-azure-sentinel
-- azure.query-data-sentinel
+- learn.azure.analyze-data-in-Sentinel
+- learn.azure.threat-response-Sentinel-playbooks
+- learn.azure.incident-management-Sentinel
+- learn.wwl.use-entity-behavior-analytics-azure-Sentinel
+- azure.query-data-Sentinel
 trophy:
   uid: learn.wwl.sc-200-create-detections-perform-investigations-azure-sentinel.trophy

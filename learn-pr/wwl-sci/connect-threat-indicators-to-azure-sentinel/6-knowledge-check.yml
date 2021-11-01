@@ -38,7 +38,7 @@ quiz:
     - content: "2.1"
       isCorrect: true
       explanation: "Correct.  TAXII version 2.0 and 2.1 are supported."
-  - content: "Threat Intelligence Platform connector uses which technology to send data to Azure Sentinel?"
+  - content: "Threat Intelligence Platform connector uses which technology to send data to Microsoft Sentinel?"
     choices:
     - content: "Azure Functions"
       isCorrect: false

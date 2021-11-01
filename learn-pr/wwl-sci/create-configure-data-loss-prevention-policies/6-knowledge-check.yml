@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Microsoft Cloud App Security (MCAS) built-in DLP engine performs content inspection by extracting text from all common file types including which of these file types?"
+  - content: "Microsoft Defender for Cloud Apps built-in DLP engine performs content inspection by extracting text from all common file types including which of these file types?"
     choices:
     - content: "BTML"
       isCorrect: false
@@ -43,7 +43,7 @@ quiz:
     - content: "Policies may be created in the Microsoft Exchange Online portal."
       isCorrect: false
       explanation: "This answer is not correct. These policies may not be created in the Exchange Online portal."
-    - content: "Policies can be created in the Microsoft cloud app security portal."
+    - content: "Policies can be created in the Microsoft Defender for Cloud Apps portal."
       isCorrect: true
       explanation: "This answer is correct.  These policies are created in the Microsoft cloud app security portal."
     - content: "Policies can be created in the Microsoft 365 Security portal."

@@ -8,13 +8,13 @@ metadata:
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Plan for cloud workload protections using Azure Defender
-summary: Learn the purpose of Azure Defender, Azure Defender's relationship to Azure Security Center, and how to enable Azure Defender.
+title: Plan for cloud workload protections using Microsoft Defender for Cloud
+summary: Learn the purpose of Microsoft Defender for Cloud, Microsoft Defender for Cloud's relationship to Microsoft Defender for Cloud, and how to enable Microsoft Defender for Cloud.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Describe Azure Defender features
-  - Explain Azure Security Center features
-  - Enable Azure Defender
+  - Describe Microsoft Defender for Cloud features
+  - Explain Microsoft Defender for Cloud features
+  - Enable Microsoft Defender for Cloud
 prerequisites: |
   - Basic familiarity with Azure services, specifically Azure SQL Database and Azure Storage.
   - Familiarity with Azure virtual machines and virtual networking.

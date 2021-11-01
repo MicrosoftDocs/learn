@@ -1,7 +1,7 @@
 ## Data protection
 
  -  Use the Azure Resource Manager deployment model.
- -  Enable Azure Defender for all of your storage accounts.
+ -  Enable Microsoft Defender for all of your storage accounts.
  -  Turn on soft delete for blobs.
  -  Turn on soft delete for containers.
  -  Lock storage account to prevent accidental or malicious deletion or configuration changes.

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.remediate-azure-defender-security-alerts.suppress-alerts-from
-title: Suppress alerts from Azure Defender
+title: Suppress alerts from Microsoft Defender for Cloud
 metadata:
   title: Suppress alerts from Azure Defender
   description: "Suppress alerts from Azure Defender"

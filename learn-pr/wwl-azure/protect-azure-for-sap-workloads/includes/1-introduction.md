@@ -16,7 +16,7 @@ After completing this module, you’ll be able to:
 	- Azure Front Door 
 - Describe Azure services for monitoring and analyzing security signals, including:
 	- Azure Network Watcher 
-	- Azure Sentinel 
+	- Microsoft Sentinel 
 - Describe Azure services for authentication and multifactor authentication, including:
 	- Azure Active Directory 
 	- Azure Active Directory Multi-Factor Authentication 

@@ -56,7 +56,7 @@ There are also resource type-specific benefits, such as:
 
 - **Azure Arc enabled SQL Server**
 
-  - Support for Advanced data security using Azure Security Center and Azure Sentinel.
+  - Support for Advanced data security using Microsoft Defender for Cloud and Microsoft Sentinel.
   - The ability to perform SQL Environment health checks using the on-demand SQL Assessment feature, which also provides best practices recommendations.
 
 - **Azure Arc enabled Kubernetes Service (AKS) on Azure Stack HCI**

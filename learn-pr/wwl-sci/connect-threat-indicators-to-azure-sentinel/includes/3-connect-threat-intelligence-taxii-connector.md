@@ -1,6 +1,6 @@
-Azure Sentinel integrates with TAXII 2.0 and 2.1 data sources to enable monitoring, alerting, and hunting using your threat intelligence. Use this connector to send threat indicators from TAXII servers to Azure Sentinel. Threat indicators can include IP addresses, domains, URLs, and file hashes.
+Microsoft Sentinel integrates with TAXII 2.0 and 2.1 data sources to enable monitoring, alerting, and hunting using your threat intelligence. Use this connector to send threat indicators from TAXII servers to Microsoft Sentinel. Threat indicators can include IP addresses, domains, URLs, and file hashes.
 
-In the Azure portal, navigate to Azure Sentinel > Data connectors and then select the Threat Intelligence - TAXII (Preview) connector.
+In the Azure portal, navigate to Microsoft Sentinel > Data connectors and then select the Threat Intelligence - TAXII (Preview) connector.
 
 To view the connector page:
 

@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: Manage alerts and incidents in Microsoft Defender for Endpoint
-summary: Learn how to investigate incidents and alerts using Microsoft Defender for Endpoints.  Perform advanced hunting and consult with threat experts.
+summary: Learn how to investigate incidents and alerts using Microsoft Defender for Endpoint.  Perform advanced hunting and consult with threat experts.
 abstract: |
   Upon completion of this module, the learner will be able to:
   - Investigate incidents in Microsoft Defender for Endpoint

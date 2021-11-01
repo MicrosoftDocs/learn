@@ -8,11 +8,11 @@ metadata:
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Connect Common Event Format logs to Azure Sentinel
+title: Connect Common Event Format logs to Microsoft Sentinel
 summary: Most vendor-provided connectors utilize the CEF connector. Learn about the Common Event Format (CEF) connector's configuration options.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Explain the Common Event Format connector deployment options in Azure Sentinel
+  - Explain the Common Event Format connector deployment options in Microsoft Sentinel
   - Run the deployment script for the Common Event Format connector
 prerequisites: |
   - Basic knowledge of operational concepts such as monitoring, logging, and alerting

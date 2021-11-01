@@ -8,13 +8,13 @@ metadata:
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Connect non-Azure resources to Azure Defender
-summary: Learn how you can add Azure Defender capabilities to your hybrid environment.
+title: Connect non-Azure resources to Microsoft Defender for Cloud
+summary: Learn how you can add Microsoft Defender for Cloud capabilities to your hybrid environment.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Connect non-Azure machines to Azure Defender
-  - Connect AWS accounts to Azure Defender
-  - Connect GCP accounts to Azure Defender
+  - Connect non-Azure machines to Microsoft Defender for Cloud
+  - Connect AWS accounts to Microsoft Defender for Cloud
+  - Connect GCP accounts to Microsoft Defender for Cloud
 prerequisites: |
   - Fundamentals of computer networking.
   - Familiarity with virtual machines.

@@ -27,7 +27,7 @@ quiz:
     - content: "Sensitivity label"
       isCorrect: true
       explanation: "Correct. The Sensitivity label is applied to a document."
-  - content: "In Cloud App Security, which types of Policy is used for DLP?"
+  - content: "In Defender for Cloud Apps, which types of Policy is used for DLP?"
     choices:
     - content: "Access Policy"
       isCorrect: false

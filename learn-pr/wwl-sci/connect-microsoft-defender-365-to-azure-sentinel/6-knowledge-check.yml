@@ -29,9 +29,9 @@ quiz:
       explanation: "Correct. The connector can be configured to send the raw data from Defender for Endpoint."
   - content: "Which Microsoft security product is part of the Microsoft 365 Defender suite of products?"
     choices:
-    - content: "Microsoft Cloud App Security"
+    - content: "Microsoft Defender for Cloud Apps"
       isCorrect: true
-      explanation: "Correct. Microsoft Cloud App Security is part of the Microsoft 365 Defender suite of products."
+      explanation: "Correct. Microsoft Defender for Cloud Apps is part of the Microsoft 365 Defender suite of products."
     - content: "Azure Active Directory Identity Protection"
       isCorrect: false
       explanation: "Incorrect.  Azure Activate Directory Identity Protection is not considered as part of the Microsoft 365 Defender suite of products."

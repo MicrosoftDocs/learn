@@ -2,15 +2,15 @@ To start learning how to protect cloud apps, you first need to learn what Cloud 
 
 **CASB** - Cloud Access Security Broker - An on-premises or cloud-based security policy enforcement point, placed between cloud service consumers and cloud service providers to combine and interject enterprise security policies as the cloud-based resources are accessed.
 
-**MCAS** - Microsoft Cloud App Security - Microsoft implementation of a CASB service to protect data, services, and applications with enterprise policies.  It provides supplemental reporting and analytics services
+**Defender for Cloud Apps** - Microsoft Defender for Cloud Apps - Microsoft implementation of a CASB service to protect data, services, and applications with enterprise policies.  It provides supplemental reporting and analytics services
 
-## Microsoft Cloud App Security
+## Microsoft Defender for Cloud Apps
 
-Moving to the cloud increases flexibility for employees and IT alike. However, it also introduces new challenges and complexities for keeping your organization secure. To get the full benefit of cloud apps and services, an IT team must find the right balance of supporting access while maintaining control to protect critical data. Microsoft Cloud App Security is a Cloud Access Security Broker (CASB) that supports various deployment modes, including log collection, API connectors, and reverse proxy. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your Microsoft and third-party cloud services. Microsoft Cloud App Security natively integrates with leading Microsoft solutions and is designed with security professionals in mind. It provides simple deployment, centralized management, and innovative automation capabilities. Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. Cloud Discovery, a feature of Cloud App Security, enables you to gain visibility into Shadow IT by discovering cloud apps in use.
+Moving to the cloud increases flexibility for employees and IT alike. However, it also introduces new challenges and complexities for keeping your organization secure. To get the full benefit of cloud apps and services, an IT team must find the right balance of supporting access while maintaining control to protect critical data. Microsoft Defender for Cloud Apps is a Cloud Access Security Broker (CASB) that supports various deployment modes, including log collection, API connectors, and reverse proxy. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your Microsoft and third-party cloud services. Microsoft Defender for Cloud Apps natively integrates with leading Microsoft solutions and is designed with security professionals in mind. It provides simple deployment, centralized management, and innovative automation capabilities. Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. Cloud Discovery, a feature of Defender for Cloud Apps, enables you to gain visibility into Shadow IT by discovering cloud apps in use.
 
 ### Architecture
 
-Cloud App Security integrates visibility with your cloud by:
+Defender for Cloud Apps integrates visibility with your cloud by:
 
 - Using Cloud Discovery to map and identify your cloud environment and the cloud apps your organization is using.
 - Sanctioning and de-authorizing apps in your cloud.
@@ -19,14 +19,14 @@ Cloud App Security integrates visibility with your cloud by:
 - Helping you have continuous control by setting and continually fine-tuning policies.
 
 >[!div class="mx-imgBorder"]
->![Cloud App Security architecture diagram.](../media/proxy-architecture.png)
+>![Defender for Cloud Apps architecture diagram.](../media/proxy-architecture.png)
 
 ### Cloud Discovery
 
 >[!div class="mx-imgBorder"]
->[![Screenshot of the MCAS Cloud Discovery report in the Azure Portal.  This report is on the Dashboard tab showing how many apps have been discovered, how much data is being actively accessed by those apps, what apps were discovered, and information about common users.](../media/sc300-cloud-discovery-screenshot.png)](../media/sc300-cloud-discovery-screenshot.png#lightbox)
+>[![Screenshot of the Defender for Cloud Apps Cloud Discovery report in the Azure Portal.  This report is on the Dashboard tab showing how many apps have been discovered, how much data is being actively accessed by those apps, what apps were discovered, and information about common users.](../media/sc300-cloud-discovery-screenshot.png)](../media/sc300-cloud-discovery-screenshot.png#lightbox)
 
-Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps your organization is using. To create a snapshot report of your organization's cloud use, manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Cloud App Security log collectors to periodically forward your logs.
+Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps your organization is using. To create a snapshot report of your organization's cloud use, manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Defender for Cloud Apps log collectors to periodically forward your logs.
 
 **Review the Cloud Discovery Dashboard**
 
@@ -44,14 +44,14 @@ The first thing you should do to get a general picture of your Cloud Discovery a
 - **Categories** - The categories filter, located on the left of the page, enables you to search for types of apps according to app categories. Example categories include social network apps, cloud storage apps, and hosting services. You can select multiple categories at a time, or a single category, then apply the basic and advanced filters on top.
 - **Compliance risk factor** - Lets you search for a specific standards, certification, and compliance that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, and more.).
 - **General risk factor** - Lets you search for general risk factors such as consumer popularity, data center locale, and more.
-- **Risk score** - Lets you filter apps by risk score so that you can focus on, for example, reviewing only highly risky apps. You can also override the risk score set by Cloud App Security. For more information, see Working with the risk score.
+- **Risk score** - Lets you filter apps by risk score so that you can focus on, for example, reviewing only highly risky apps. You can also override the risk score set by Defender for Cloud Apps. For more information, see Working with the risk score.
 - **Security risk factor** - Enables you to filter based on specific security measures (such as Encryption at rest, multifactor authentication, etc.).
 - **Usage** - Lets you filter based on the usage statistics of this app. Usage such as apps with less than or more than a specified number of data uploads, apps with more than or less than a specified number of Users.
 - **Legal risk factor** - Lets you filter based on all the regulations and policies that are in-place to ensure data protection and privacy of the app's users. Examples include GDPR ready cloud apps, DMCA, and data retention policy.
 
 ### Sanctioning and unsanctioning an app
 
-You can use Cloud App Security to sanction or unsanction apps in your organization by using the *Cloud app catalog*. The Microsoft team of analysts has an extensive and continuously growing catalog of more than 16,000 cloud apps that are ranked and scored based on industry standards. Use the Cloud app catalog to rate the risk for your cloud apps based on regulatory certifications, industry standards, and best practices. Then, customize the scores and weights of various parameters to your organization's needs. Based on these scores, Cloud App Security lets you know how risky an app is. Scoring is based on more than 80 risk factors that might affect your environment.
+You can use Defender for Cloud Apps to sanction or unsanction apps in your organization by using the *Cloud app catalog*. The Microsoft team of analysts has an extensive and continuously growing catalog of more than 16,000 cloud apps that are ranked and scored based on industry standards. Use the Cloud app catalog to rate the risk for your cloud apps based on regulatory certifications, industry standards, and best practices. Then, customize the scores and weights of various parameters to your organization's needs. Based on these scores, Defender for Cloud Apps lets you know how risky an app is. Scoring is based on more than 80 risk factors that might affect your environment.
 
 
 
@@ -103,4 +103,3 @@ The AD FS application activity report is available in the Azure portal under Azu
     - **Needs review** means some of the application's settings can be migrated to Azure AD, but you'll need to review the settings that can't be migrated as-is.
 
     - **Additional steps required** means Azure AD doesn't support some of the application's settings, so the application can’t be migrated in its current state.
-

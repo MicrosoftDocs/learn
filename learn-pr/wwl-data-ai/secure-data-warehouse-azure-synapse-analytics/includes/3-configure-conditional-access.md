@@ -10,7 +10,7 @@ Conditional Access policies use signals as a basis to determine if Conditional A
 -	Device platforms or type
 -	Application access requests
 -	Real-time and calculated risk detection
--	Microsoft Cloud App Security (MCAS)
+-	Microsoft Defender for Cloud Apps
 
 Based on these signals, you can then choose to block access. The alternative is you can grant access, and at the same time request that the user perform an additional action including:
 -	Perform Multi-Factor authentication

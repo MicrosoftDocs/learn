@@ -8,13 +8,13 @@ metadata:
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create and manage Azure Sentinel workspaces
-summary: Learn about the architecture of Azure Sentinel workspaces to ensure you configure your system to meet your organization's security operations requirements.
+title: Create and manage Microsoft Sentinel workspaces
+summary: Learn about the architecture of Microsoft Sentinel workspaces to ensure you configure your system to meet your organization's security operations requirements.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Describe Azure Sentinel workspace architecture
-  - Install Azure Sentinel workspace
-  - Manage an Azure Sentinel workspace
+  - Describe Microsoft Sentinel workspace architecture
+  - Install Microsoft Sentinel workspace
+  - Manage a Microsoft Sentinel workspace
 prerequisites: |
   Basic experience with Azure services
 iconUrl: /learn/achievements/create-and-manage-azure-sentinel-workspaces.svg

@@ -8,10 +8,10 @@ metadata:
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'SC-200 part 6: Connect logs to Azure Sentinel'
+title: 'SC-200 part 6: Connect logs to Microsoft Sentinel'
 prerequisites: |
-  - Knowledge of using KQL in Azure Sentinel like you could learn from SC-200 part 4: Create queries for Azure Sentinel using Kusto Query Language (KQL)
-  - Knowledge of Azure Sentinel environment configuration like you could learn from SC-200 part 5: Configure your Azure Sentinel environment
+  - Knowledge of using KQL in Microsoft Sentinel like you could learn from SC-200 part 4: Create queries for Microsoft Sentinel using Kusto Query Language (KQL)
+  - Knowledge of Microsoft Sentinel environment configuration like you could learn from SC-200 part 5: Configure your Microsoft Sentinel environment
 summary: |
   Description:  Connect data at cloud scale across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds to Azure Sentinel. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
 iconUrl: /learn/achievements/connect-logs-to-azure-sentinel.svg
@@ -24,12 +24,12 @@ products:
 - azure-log-analytics
 - azure-sentinel
 modules:
-- learn.wwl.connect-data-to-azure-sentinel-with-data-connectors
-- learn.wwl.connect-microsoft-services-to-azure-sentinel
-- learn.wwl.connect-microsoft-defender-365-to-azure-sentinel
-- learn.wwl.connect-windows-hosts-to-azure-sentinel
-- learn.wwl.connect-common-event-format-cef-logs-to-azure-sentinel
-- learn.wwl.connect-syslog-data-sources-to-azure-sentinel
-- learn.wwl.connect-threat-indicators-to-azure-sentinel
+- learn.wwl.connect-data-to-azure-Sentinel-with-data-connectors
+- learn.wwl.connect-microsoft-services-to-azure-Sentinel
+- learn.wwl.connect-microsoft-defender-365-to-azure-Sentinel
+- learn.wwl.connect-windows-hosts-to-azure-Sentinel
+- learn.wwl.connect-common-event-format-cef-logs-to-azure-Sentinel
+- learn.wwl.connect-syslog-data-sources-to-azure-Sentinel
+- learn.wwl.connect-threat-indicators-to-azure-Sentinel
 trophy:
   uid: learn.wwl.sc-200-connect-logs-to-azure-sentinel.trophy

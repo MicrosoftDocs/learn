@@ -2,10 +2,10 @@ In addition to using built-in templates to create a customized workbook, you can
 
 ## Create a custom workbook
 
-You can create a custom workbook by selecting **+Add workbook** on the header bar from the **Workbooks** page in Azure Sentinel. The **New workbook** page opens, which contains a basic analytics query to get you started.
+You can create a custom workbook by selecting **+Add workbook** on the header bar from the **Workbooks** page in Microsoft Sentinel. The **New workbook** page opens, which contains a basic analytics query to get you started.
 
 > [!TIP]
-> Each workbook that you create is saved as a workbook resource in the Azure Sentinel resource group.
+> Each workbook that you create is saved as a workbook resource in the Microsoft Sentinel resource group.
 
 You can start building your workbook by selecting **Edit** on the **New Workbook** page, and then again select the **Edit** option to change the text that appears in the new workbook template.
 
@@ -43,7 +43,7 @@ You can create a different query from the logs and visualize the data as text, c
 - Time charts
 - Tiles
 
-When you create a query, Azure Sentinel adds a new Run Query step to the workbook as the following screenshot depicts:
+When you create a query, Microsoft Sentinel adds a new Run Query step to the workbook as the following screenshot depicts:
 
 :::image type="content" source="../media/06-query-visualization.png" alt-text="Screenshot of the Query visualization step, with the Done editing button called out." border="true":::
 

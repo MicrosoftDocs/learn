@@ -53,8 +53,8 @@ products:
 modules:
 - learn.wwl.describe-basic-security-capabilities-azure
 - learn.wwl.describe-security-management-capabilities-of-azure
-- learn.wwl.describe-security-capabilities-of-azure-sentinel
-- learn.wwl.describe-threat-protection-with-microsoft-365-defender
+- learn.wwl.describe-security-capabilities-of-azure-Sentinel
+- learn.wwl.describe-threat-protection-with-microsoft-365-Defender for Cloud
 - learn.wwl.describe-security-management-capabilities-of-microsoft-365
 - learn.wwl.describe-endpoint-security-with-microsoft-intune
 trophy:

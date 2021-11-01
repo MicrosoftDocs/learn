@@ -18,7 +18,7 @@ IoT Edge enables you to:
 
 **Reliably operate in offline or intermittent mode:** Often, IoT devices need to work in intermittent or offline connectivity to the cloud. IoT Edge device management functionality automatically synchronizes the latest state of your devices once they've reconnected to the cloud to ensure seamless operations.  
 
-**Provide security for edge deployments:** IoT Edge provides security in several ways. Working with the IoT Hub, we can ensure that only the right devices can communicate with each other and that they have the right software installed. IoT Edge can provide added security by integrating with Azure Security Center. Also, by IoT Edge can make use of any hardware security modules if available to provide strong authenticated connections for confidential computing.
+**Provide security for edge deployments:** IoT Edge provides security in several ways. Working with the IoT Hub, we can ensure that only the right devices can communicate with each other and that they have the right software installed. IoT Edge can provide added security by integrating with Microsoft Defender for Cloud. Also, by IoT Edge can make use of any hardware security modules if available to provide strong authenticated connections for confidential computing.
 
 **Ensure privacy for IoT deployments:** IoT Edge can protect person-related data. Person-related data can be cleansed before it's sent to the cloud, in that way providing better privacy protection. By storing data on-premises, you can comply better with security, confidentiality, and privacy regulations. 
 

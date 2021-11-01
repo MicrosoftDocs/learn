@@ -32,9 +32,9 @@ quiz:
     - content: "Yes, Azure supports exporting log data to several common third-party SIEM tools."
       isCorrect: true
       explanation: "Correct. Azure can export to many of the most popular SIEM tools. The most common are Splunk, IBM QRadar, and ArcSight."
-    - content: "No, Azure only supports the export to Azure Sentinel."
+    - content: "No, Azure only supports the export to Microsoft Sentinel."
       isCorrect: false
-      explanation: "Incorrect. Azure Sentinel is a Microsoft first-party SIEM tool, but we do support using other tools, such as Splunk, IBM QRadar, and ArcSight."
+      explanation: "Incorrect. Microsoft Sentinel is a Microsoft first-party SIEM tool, but we do support using other tools, such as Splunk, IBM QRadar, and ArcSight."
     - content: "Yes, Splunk is the 3rd Party SIEM Azure can export to."
       isCorrect: false
       explanation: "Incorrect. While Splunk is one of the third-party SIEM tools we can export data to, it is not the only one. We also support other third-party SIEM tools, such as IBM QRadar and ArcSight."

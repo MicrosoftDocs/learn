@@ -17,4 +17,4 @@ To address the demands from Contoso business leads for protection of their workl
     :::image type="content" source="../media/azs-hci-catalog-tev.png" alt-text="A screenshot of the Azure Stack HCI Catalog with **Trusted enterprise virtualization** selected as one of the search filtering criteria for integrated systems and validated nodes." border="false":::
 
 1. Enable HVCI. Although HVCI is available on Azure Stack HCI certified hardware, it's not automatically enabled. To enable it, use Group Policy or direct registry changes. 
-1. Optionally, integrate Azure Stack HCI with Azure Defender. Azure Defender provides cloud-based advanced security management and threat detection benefits for on-premises workloads, including workloads running on Azure Stack HCI VMs.
+1. Optionally, integrate Azure Stack HCI with Microsoft Defender for Cloud. Microsoft Defender for Cloud provides cloud-based advanced security management and threat detection benefits for on-premises workloads, including workloads running on Azure Stack HCI VMs.

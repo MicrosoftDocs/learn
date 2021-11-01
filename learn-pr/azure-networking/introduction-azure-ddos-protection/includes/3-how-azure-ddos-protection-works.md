@@ -29,7 +29,7 @@ If someone is trying to DDoS your application, the traffic would continue to gro
 
 ### DDoS Protection Standard metrics
 
-In the previous example, shortly after the detection of an attack, DDoS Protection Standard sends notifications by using Azure Monitor metrics and any DDoS protection alerts. You should analyze the attack by using the data that was logged during that attack. You can use Azure Sentinel, partner SIEM tools, Azure Monitor logs, and other diagnostic services for this purpose. The logged data is retained for 30 days.
+In the previous example, shortly after the detection of an attack, DDoS Protection Standard sends notifications by using Azure Monitor metrics and any DDoS protection alerts. You should analyze the attack by using the data that was logged during that attack. You can use Microsoft Sentinel, partner SIEM tools, Azure Monitor logs, and other diagnostic services for this purpose. The logged data is retained for 30 days.
 
 ### Test your DDoS protection
 

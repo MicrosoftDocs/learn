@@ -14,8 +14,8 @@ Design a holistic monitoring strategy on Azure
 
 - Azure Monitor
 - Application Insights
-- Security Center
-- Azure Sentinel (Preview)
+- Defender for Cloud
+- Microsoft Sentinel (Preview)
 
 ## Prerequisites
 
@@ -39,7 +39,7 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
 | ---- | ---- | ---- | ---- | ---- |
 | Introduce continuous monitoring | Provision of a monitoring strategy to encompass all solutions | N/A | 1 | Yes |
 | The technology options available | A monitoring strategy that encompasses all solutions | N/A| 1 | Yes |
-| Assess security center for monitoring your infrastructure | Provide monitoring, insights, and alerts | Knowledge Check| 1 | Yes |
+| Assess Defender for Cloud for monitoring your infrastructure | Provide monitoring, insights, and alerts | Knowledge Check| 1 | Yes |
 | Assess application insights for monitoring your applications | Provide monitoring, insights, and alerts  | Knowledge Check | 1 | Yes |
 | Use Azure Monitor to provide a unified monitoring strategy | Design of a monitoring strategy that encompasses all solutions | Knowledge Check & Exercise | 2 | Yes |
 
@@ -67,26 +67,26 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
 
     List the content that will enable the learner to *understand the monitoring technology options available in Azure*:
 
-    - What is security center?
+    - What is Defender for Cloud?
     - What are application insights?
-    - What is Azure sentinel?
+    - What is Microsoft Sentinel?
     - What is Azure monitor?
 
-1. **Analyze infrastructure security using Azure Security Center**
+1. **Analyze infrastructure security using Microsoft Defender for Cloud**
 
-    List the content that will enable the learner to *assess the usefulness of security center in their solution*:
+    List the content that will enable the learner to *assess the usefulness of Defender for Cloud in their solution*:
 
-    - Criteria for assessing security center
+    - Criteria for assessing Defender for Cloud
     - Understanding your architecture
     - Protecting against threats
     - Responding to threats
 
    **Knowledge check**
 
-    What types of questions will test *the understanding of security center as a monitoring solution*?
+    What types of questions will test *the understanding of Defender for Cloud as a monitoring solution*?
 
-    - Why would you use security center to monitor your infrastructure?
-    - How would you use security center to protect your infrastructure?
+    - Why would you use Defender for Cloud to monitor your infrastructure?
+    - How would you use Defender for Cloud to protect your infrastructure?
     - What is the key tool for providing continuous monitoring?
 
 1. **Analyze web applications using Azure Application Insights**
@@ -106,22 +106,22 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
     - How can you continuously monitor your applications from different geographic locations?
     - How would you continuously monitor your release pipelines?
    
-1. **Analyze enterprise security using Azure Sentinel**
+1. **Analyze enterprise security using Microsoft Sentinel**
 
-   List the content that will enable the learner to *access the viability of Azure Sentinel as a monitoring solution*:
+   List the content that will enable the learner to *access the viability of Microsoft Sentinel as a monitoring solution*:
 
-   - Criteria for assessing Azure Sentinel
+   - Criteria for assessing Microsoft Sentinel
    - Connect data sources
    - Use alerts to monitor your enterprise
    - Investigate incidents
-   - How to respond to threats with Azure Sentinel
+   - How to respond to threats with Microsoft Sentinel
 
    **Knowledge check**
 
-    What types of questions will test *how Azure Sentinel can improve enterprise security monitoring*?
+    What types of questions will test *how Microsoft Sentinel can improve enterprise security monitoring*?
 
-    - Why would you use Azure Sentinel?
-    - How do you set up Azure Sentinel on Azure?
+    - Why would you use Microsoft Sentinel?
+    - How do you set up Microsoft Sentinel on Azure?
     - Sentinel has raised an incident. How can you investigate which users have been affected?
 
 1. **Unifying monitoring solutions in Azure**
@@ -130,7 +130,7 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
 
     - Criteria for assessing Azure Monitor
     - The benefits of Azure Monitor
-    - Integration with Azure Security Center
+    - Integration with Microsoft Defender for Cloud
     - Integration with Application Insights
     **Knowledge check**
 
@@ -145,9 +145,9 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
 
     - You gained an awareness of the available monitoring options available in Azure as part of a unified monitoring solution.
-    - You accessed the merits of using security center to improve monitoring of your infrastructure and the tools available to respond to any incidents.
+    - You accessed the merits of using Defender for Cloud to improve monitoring of your infrastructure and the tools available to respond to any incidents.
     - You accessed the viability of using application insights to provide robust application monitoring during DevOps and in live situations.
-    - You explored Azure sentinel as a tool to improve security monitoring across your whole enterprise.
+    - You explored Microsoft Sentinel as a tool to improve security monitoring across your whole enterprise.
     - You saw how Azure monitor can consume data from other services to provide a single unified monitoring view of your enterprise and allow rapid response to any notifications and alerts.
 
 ## Notes
@@ -159,11 +159,11 @@ https://docs.microsoft.com/azure/azure-monitor/continuous-monitoring
 During design investigation, the following URLs were considered.
 
 - Azure Application Insights: https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview
-- Azure Sentinel: https://docs.microsoft.com/azure/sentinel/overview
-- Azure Security Center: https://docs.microsoft.com/azure/security-center/security-center-intro
-- Permission in Azure Security Center: https://docs.microsoft.com/azure/security-center/security-center-permissions
+- Microsoft Sentinel: https://docs.microsoft.com/azure/Sentinel/overview
+- Microsoft Defender for Cloud: https://docs.microsoft.com/azure/security-center/security-center-intro
+- Permission in Microsoft Defender for Cloud: https://docs.microsoft.com/azure/security-center/security-center-permissions
 
 During the design, the following considerations were made
 
 - Having reviewed the application insights service, this did not look suitable to include as an exercise, due to the need to have an application with which to add the insights code to.  If there is a standard Microsoft test application that can be used, please let me know.
-- Azure Sentinel requires a specific configuration and set of permissions to run.  The user may not have been granted these permissions.  So it was decided to make a knowledge check rather than a hands-on exercise.
+- Microsoft Sentinel requires a specific configuration and set of permissions to run.  The user may not have been granted these permissions.  So it was decided to make a knowledge check rather than a hands-on exercise.

@@ -27,25 +27,25 @@ quiz:
     - content: "From an Excel spreadsheet"
       isCorrect: false
       explanation: "Incorrect. This is not an option to connect."
-  - content: "Which resource can Azure Defender protect in a hybrid environment?"
+  - content: "Which resource can Microsoft Defender for Cloud protect in a hybrid environment?"
     choices:
     - content: "Word Documents"
       isCorrect: false
       explanation: "Incorrect. Word Documents are not a service."
     - content: "SQL Databases"
       isCorrect: true
-      explanation: "Correct. SQL Databases can be protected by Azure Defender."
+      explanation: "Correct. SQL Databases can be protected by Microsoft Defender for Cloud."
     - content: "Cosmos DB"
       isCorrect: false
       explanation: "Incorrect. Cosmos DB is not a protection option in a hybrid environment."
-  - content: "Which Cloud provider has a Cloud connector in Security Center?"
+  - content: "Which Cloud provider has a Cloud connector in Defender for Cloud?"
     choices:
     - content: "IBM Cloud"
       isCorrect: false
-      explanation: "Incorrect. Security Center doesn't have a cloud connector for the IBM Cloud."
+      explanation: "Incorrect. Defender for Cloud doesn't have a cloud connector for the IBM Cloud."
     - content: "GCP"
       isCorrect: true
       explanation: "Correct.  GCP has a cloud connector."
     - content: "Oracle"
       isCorrect: false
-      explanation: "Incorrect. Security Center doesn't have a cloud connector for Oracle."
+      explanation: "Incorrect. Defender for Cloud doesn't have a cloud connector for Oracle."

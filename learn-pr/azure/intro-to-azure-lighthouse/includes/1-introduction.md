@@ -19,7 +19,7 @@ After completing this module, you'll be able to:
 - Describe how Azure Lighthouse is used for managing multiple Microsoft Azure tenants
 - Configure Azure Resource Manager templates for deploying Azure Lighthouse
 - Deploy Azure Lighthouse with Azure Resource Manager templates
-- Set up Azure Security Center with Alerting
+- Set up Microsoft Defender for Cloud with Alerting
 - Create a managed service offer on the Azure Marketplace
 
 ## Prerequisites

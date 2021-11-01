@@ -2,4 +2,4 @@ Log Analytics provides a scalable, simple solution for storing and retrieving ev
 
 You can use Azure Monitor (including Log Analytics) to monitor Azure VMs hosting SAP workloads and any components of your SAP environment in Azure. Also, consider applying third-party SAP monitoring solutions available from Azure Marketplace that integrate with Azure Monitor, such as Blue Medora’s SAP Monitoring.
 
-In addition, Azure Security Center protects both Azure and non-Azure servers and virtual machines in the cloud or on-premises, for both Windows and Linux servers, by installing the Log Analytics agent on them.
+In addition, Microsoft Defender for Cloud protects both Azure and non-Azure servers and virtual machines in the cloud or on-premises, for both Windows and Linux servers, by installing the Log Analytics agent on them.

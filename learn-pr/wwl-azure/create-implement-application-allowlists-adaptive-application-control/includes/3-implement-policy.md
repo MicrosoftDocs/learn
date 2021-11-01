@@ -4,11 +4,11 @@ After the Contoso IT operations staff have enabled Adaptive application controls
 
 ## Configure a new application control policy
 
-To configure a new application control policy, in **Security Center**, use the following procedure:
+To configure a new application control policy, in **Defender for Cloud**, use the following procedure:
 
 1. Select the **Recommended** tab for a list of groups with application control recommendations:
 
-   ![A screenshot of the Adaptive application controls blade. The administrator has selected the Recommended tab. Security Center has recommended two groups of machines for applying application controls.](../media/m5-enable-control.png)
+   ![A screenshot of the Adaptive application controls blade. The administrator has selected the Recommended tab. Defender for Cloud has recommended two groups of machines for applying application controls.](../media/m5-enable-control.png)
 
    The list, sorted by Azure subscription, includes the following information.
 
@@ -29,7 +29,7 @@ To configure a new application control policy, in **Security Center**, use the f
 
    |Section name|Description|
    |---|---|
-   |Recommended applications|A list of applications that are frequent on the VMs within this group, and  that Security Center recommends that you allow to run.|
+   |Recommended applications|A list of applications that are frequent on the VMs within this group, and  that Defender for Cloud recommends that you allow to run.|
    |More applications|A list of applications that are either less frequent on the VMs within this group, or that are known as *Exploitable* and that you should review.|
 
     [![A screenshot of the Configure application control rules blade in the Azure portal. A number of applications are listed in the More applications section.](../media/m5-enable-control-3.png)](../media/m5-enable-control-3.png#lightbox)
@@ -46,22 +46,22 @@ To configure a new application control policy, in **Security Center**, use the f
 6. After you complete your selections, select **Audit**.
 
    > [!NOTE]
-   > After you select Audit, Security Center leverages the Windows AppLocker feature and automatically creates the appropriate rules on top of the built-in application allow list solution available on servers running the Windows Server operating system.
+   > After you select Audit, Defender for Cloud leverages the Windows AppLocker feature and automatically creates the appropriate rules on top of the built-in application allow list solution available on servers running the Windows Server operating system.
 
 Keep in mind the information in the following table when configuring your policy.
 
 |Consideration|Description|
 |-----------------------------------------|------------------------------------------------------------|
-|Two weeks of data required| Security Center relies on a minimum of two weeks of data to create a baseline and populate the unique recommendations per group of VMs. New customers of the Security Center standard tier should expect that, at first, their groups of VMs will appear under the *no recommendation* tab.|
-|No support for existing AppLocker policies|Adaptive application controls from Security Center doesn’t support VMs for which an AppLocker policy is already enabled by using either a Group Policy Object (GPO) or a local security policy.|
-|Publisher rules preferred|As a security best practice, Security Center will always try to create a publisher rule for applications that are selected to be allowed. If an application has no publisher information (that is, it's not signed), a path rule will be created for the full path of the specific application.|
+|Two weeks of data required| Defender for Cloud relies on a minimum of two weeks of data to create a baseline and populate the unique recommendations per group of VMs. New customers of the Defender for Cloud standard tier should expect that, at first, their groups of VMs will appear under the *no recommendation* tab.|
+|No support for existing AppLocker policies|Adaptive application controls from Defender for Cloud doesn’t support VMs for which an AppLocker policy is already enabled by using either a Group Policy Object (GPO) or a local security policy.|
+|Publisher rules preferred|As a security best practice, Defender for Cloud will always try to create a publisher rule for applications that are selected to be allowed. If an application has no publisher information (that is, it's not signed), a path rule will be created for the full path of the specific application.|
 
 > [!IMPORTANT]
 > At the time of writing (July 2020), only Audit mode is available.
 
 ### Edit and monitor a group configured with application control
 
-After you have configured the necessary groups, you can edit and monitor the group. To do this, complete the following procedure in Security Center.
+After you have configured the necessary groups, you can edit and monitor the group. To do this, complete the following procedure in Defender for Cloud.
 
 1. To edit and monitor a group configured with an application allow list policy, return to the **Adaptive application controls** blade and select **Configured**.
 
@@ -91,27 +91,27 @@ After you have configured the necessary groups, you can edit and monitor the gro
     > At the time of writing (July 2020), only Audit mode is available.
 
 5. In the **Add machines to group** section, you can also add VMs to the group. When you have made all your changes, select **Apply**.
-6. Back on the **Edit application control policy** blade, review the current violations listed in the **Recent alerts** section. Select each line to be redirected to the **Alerts** page within Security Center, and review all the alerts that were detected by Security Center on the associated VMs.
+6. Back on the **Edit application control policy** blade, review the current violations listed in the **Recent alerts** section. Select each line to be redirected to the **Alerts** page within Defender for Cloud, and review all the alerts that were detected by Defender for Cloud on the associated VMs.
 7. In the **Publisher allowlist rules**, **Path allowlist rules**, and **Hash allowlist  rules** sections, you can review which application allow rules are currently configured on the VMs within a group, according to the rule collection type. For each rule, you can review the **Rule**, **File types**, **Exceptions**, and **Users**.
 8. If you have made any changes, select **Save**.
 
 ### No recommendation list
 
-Security Center only recommends application allow policies for VMs running a stable set of applications. Recommendations aren't created if:
+Defender for Cloud only recommends application allow policies for VMs running a stable set of applications. Recommendations aren't created if:
 
 - The VM doesn't have the Azure Log Analytics agent installed.
 - The agent isn't sending events.
 - The VM isn't supported.
 
-Security Center lists the VMs and subscription information.
+Defender for Cloud lists the VMs and subscription information.
 
 > [!TIP]
-> You can install the Azure Log Analytics agent on your VMs. The agent then collects the data that Security Center needs for application controls.
+> You can install the Azure Log Analytics agent on your VMs. The agent then collects the data that Defender for Cloud needs for application controls.
 
 ![A screenshot of the Adaptive application controls blade. The administrator has selected the No recommendation tab. A single VM is listed and described as Missing agent or no collected events.](../media/m5-enable-control-6.png)
 
 > [!TIP]
-> Security Center enables you to define an application allow policy on the **No recommendation** groups of VMs. Follow the same principles as were previously described to configure an application allow policy on those groups as well.
+> Defender for Cloud enables you to define an application allow policy on the **No recommendation** groups of VMs. Follow the same principles as were previously described to configure an application allow policy on those groups as well.
 
 ## Move a VM from one group to another
 

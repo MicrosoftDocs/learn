@@ -40,8 +40,8 @@ In this exercise, you will create your resource group and an Azure SQL Database 
 
     | Setting      | Value |
     | ------------ | ----- |
-    | **Azure Defender for SQL** |
-    | Enable Azure Defender for SQL, verify **Start free trial** is selected. |
+    | **Microsoft Defender for SQL** |
+    | Enable Microsoft Defender for SQL, verify **Start free trial** is selected. |
 
 1. Select the **Additional settings** tab.
 
@@ -65,20 +65,20 @@ SQL IP brings a set of advanced services and SQL capabilities, forming a new inf
 * **Azure SQL Auditing** – Azure SQL Auditing tracks database events and writes them to an audit log in your Azure storage account, Log Analytics workspace or Event Hub.
 * **Data Discovery & Classifications** – Is built into Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics. It provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your databases.
 * **Dynamic data masking** – Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics support dynamic data masking. Dynamic data masking limits sensitive data exposure by masking it to non-privileged users.
-* **Security Center** – Scans your database and makes recommendations to improve security. Also allows you to set up and monitor **Security Alerts**.
+* **Defender for Cloud** – Scans your database and makes recommendations to improve security. Also allows you to set up and monitor **Security Alerts**.
 * **Transparent data encryption** – Transparent data encryption encrypts your databases, backups, and logs at rest without any changes to your application. To enable encryption, go to each database.
 
 ### Classify your SQL DB
 
 Let's classify the data in this sample Azure SQL database. On your SQL database pane:
 
-1. In the left menu pane, under **Security**, select **Security Center**. The **Security Center** pane appears for your SQL database.
+1. In the left menu pane, under **Security**, select **Defender for Cloud**. The **Defender for Cloud** pane appears for your SQL database.
 
-1. If *Azure Defender for SQL* isn't enabled, select the **Configure** link. The **Server settings** pane appears.
+1. If *Microsoft Defender for SQL* isn't enabled, select the **Configure** link. The **Server settings** pane appears.
 
-1. Ensure that *Azure Defender for SQL* is turned on, and then select **Save**. As noted in the previous instructions, you can turn this on as part of the DB creation. This will take a minute to activate.
+1. Ensure that *Microsoft Defender for SQL* is turned on, and then select **Save**. As noted in the previous instructions, you can turn this on as part of the DB creation. This will take a minute to activate.
 
-1. On the **Security Center**, in the left menu pane, under **Security**, select **Data Discovery & Classification**. The **Data Discovery & Classification** pane appears.
+1. On the **Defender for Cloud**, in the left menu pane, under **Security**, select **Data Discovery & Classification**. The **Data Discovery & Classification** pane appears.
 
 1. The initial state has 15 columns with classification recommendations. Select that link to review the recommendations.  If you have not yet run the check, do so now.
 

@@ -1,12 +1,12 @@
 
 [Azure Security Benchmark](/security/benchmark/azure/introduction) is the Microsoft-authored, Azure-specific set of guidelines for security and compliance best practices based on common compliance frameworks. This widely respected benchmark builds on the controls from the Center for Internet Security (CIS) and the National Institute of Standards and Technology (NIST) with a focus on cloud-centric security. Customers use the ASB as a comprehensive control framework to help meet all their security requirements. The Benchmark is implemented as an Azure Policy initiative implementing monitoring for all of these guidelines.
 
-Azure Security Benchmark is the foundation for Security Center’s recommendations and has been fully integrated as the default policy initiative. This means that ALL ASC customers automatically get the ASB as their default security policy, and the ASB is positioned as the singular set of security best practices in Azure, aligned with Secure Score.
+Azure Security Benchmark is the foundation for Defender for Cloud’s recommendations and has been fully integrated as the default policy initiative. This means that ALL Defender for Cloud customers automatically get the ASB as their default security policy, and the ASB is positioned as the singular set of security best practices in Azure, aligned with Secure Score.
 
-## Working with security policy in Azure Security Center
+## Working with security policy in Microsoft Defender for Cloud
 By default, all prevention policies are turned on. Prevention policies and recommendations are tied to each other. In other words, if you enable a prevention policy, such as OS vulnerabilities, that enables recommendations for that policy. In most situations, you want to enable all policies even though some might be more important to you than others, depending on the Azure resource you’ve deployed.
 
-Security Center automatically creates a default security policy for each of your Azure subscriptions. You can edit Azure policies:
+Defender for Cloud automatically creates a default security policy for each of your Azure subscriptions. You can edit Azure policies:
 
 - Create new policy definitions.
 - Assign policies across management groups and subscriptions, which can represent an entire organization or a business unit within the organization.
@@ -32,8 +32,8 @@ The following is a generated list of the types of recommendations. The recommend
 
 - **Network security groups**. Recommends that NSGs be configured to control inbound and outbound traffic to VMs that have public endpoints. In addition to checking that an NSG has been configured, this policy assesses inbound security rules.
 
-- **Web application firewall**. Extends network protections beyond NSGs, which are built in to Azure. Security Center will discover deployments for which a next generation firewall is recommended and allow you to provision a virtual appliance.
-- **Next Generation firewall**. Azure Security Center may recommend that you add a partner’s next generation firewall (NGFW) from a Microsoft partner to increase your security protections.
+- **Web application firewall**. Extends network protections beyond NSGs, which are built in to Azure. Defender for Cloud will discover deployments for which a next generation firewall is recommended and allow you to provision a virtual appliance.
+- **Next Generation firewall**. Microsoft Defender for Cloud may recommend that you add a partner’s next generation firewall (NGFW) from a Microsoft partner to increase your security protections.
 
 - **Vulnerability Assessment**. Recommends that you install a vulnerability assessment solution on your VM.
 
@@ -43,7 +43,7 @@ The following is a generated list of the types of recommendations. The recommend
 
 ### Who can edit security policies?
 
-Security Center uses Role-Based Access Control (RBAC), which provides built-in roles that can be assigned to users, groups, and services in Azure. When users open Security Center, they can only view information that's related to resources they have access to. Which means that users are assigned the role of owner, contributor, or reader to the subscription or resource group that a resource belongs to. In addition to these roles, there are two specific Security Center roles:
+Defender for Cloud uses Role-Based Access Control (RBAC), which provides built-in roles that can be assigned to users, groups, and services in Azure. When users open Defender for Cloud, they can only view information that's related to resources they have access to. Which means that users are assigned the role of owner, contributor, or reader to the subscription or resource group that a resource belongs to. In addition to these roles, there are two specific Defender for Cloud roles:
 
-- Security reader: Have view rights to Security Center, which includes recommendations, alerts, policy, and health, but they can't make changes.
+- Security reader: Have view rights to Defender for Cloud, which includes recommendations, alerts, policy, and health, but they can't make changes.
 - Security admin: Have the same view rights as security reader, and they can also update the security policy and dismiss recommendations and alerts.

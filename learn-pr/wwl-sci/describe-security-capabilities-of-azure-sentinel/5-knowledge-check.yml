@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "As the lead admin, it's important to convince your team to start using Azure Sentinel. You’ve put together a presentation. What are the four security operation areas of Azure Sentinel that cover this area?"
+  - content: "As the lead admin, it's important to convince your team to start using Microsoft Sentinel. You’ve put together a presentation. What are the four security operation areas of Microsoft Sentinel that cover this area?"
     choices:
     - content: "Collect, Detect, Investigate, and Redirect."
       isCorrect: false
@@ -27,11 +27,11 @@ quiz:
     - content: "Collect, Detect, Investigate, and Repair."
       isCorrect: false
       explanation: "That's incorrect. Repair is not one of the four key aspects of a SIEM/SOAR solution."
-  - content: "Your estate has many different data sources where data is stored. Which tool should be used with Azure Sentinel to quickly gain insights across your data as soon as a data source is connected?"
+  - content: "Your estate has many different data sources where data is stored. Which tool should be used with Microsoft Sentinel to quickly gain insights across your data as soon as a data source is connected?"
     choices:
     - content: "Azure Monitor Workbooks."
       isCorrect: true
-      explanation: "That's correct. Using the Azure Sentinel integration with Azure Monitor Workbooks allows you to monitor data and provides versatility in creating custom workbooks."
+      explanation: "That's correct. Using the Microsoft Sentinel integration with Azure Monitor Workbooks allows you to monitor data and provides versatility in creating custom workbooks."
     - content: "Playbooks."
       isCorrect: false
       explanation: "That's incorrect. Playbooks allow you to automate your common tasks and simplify security orchestration."

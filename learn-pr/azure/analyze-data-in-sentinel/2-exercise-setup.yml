@@ -8,7 +8,7 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Detect threats with Azure Sentinel analytics
+title: Exercise - Detect threats with Microsoft Sentinel analytics
 durationInMinutes: 20
 content: |
   [!include[](includes/2-exercise-setup.md)]

@@ -1,4 +1,4 @@
-Microsoft Cloud App Security (MCAS) built-in DLP engine performs content inspection by extracting text from all common file types (100+) including Office, Open Office, compressed files, various rich text formats, XML, HTML, and more.
+Microsoft Defender for Cloud Apps built-in DLP engine performs content inspection by extracting text from all common file types (100+) including Office, Open Office, compressed files, various rich text formats, XML, HTML, and more.
 
 The engine combines three aspects under each policy:
 
@@ -16,13 +16,13 @@ The other option is to leverage the Data Classification Service that is also emp
 
 To create a file policy, follow this procedure:
 
-1. In the **Cloud App Security** portal at [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/?azure-portal=true), select **Control** followed by **Policies**.
+1. In the **Defender for Cloud Apps** portal at [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/?azure-portal=true), select **Control** followed by **Policies**.
 
 1. Select **Create policy** and select **File** **policy**.
 
 1. Give your policy a name and description, if you want you can base it on a template.
 
-1. Give your policy a **Policy severity**. If you have set Cloud App Security to send you notifications on policy matches for a specific policy severity level, this level is used to determine whether the policy's matches trigger a notification.
+1. Give your policy a **Policy severity**. If you have set Defender for Cloud Apps to send you notifications on policy matches for a specific policy severity level, this level is used to determine whether the policy's matches trigger a notification.
 
 1. Within **Category**, link the policy to the most appropriate risk type. This field is informative only and helps you search for specific policies and alerts later, based on risk type. The risk may already be preselected according to the category for which you chose to create the policy. By default, File policies are set to DLP.
 
@@ -34,7 +34,7 @@ To create a file policy, follow this procedure:
 
 1. Select the content **Inspection method**. You can select either [Built-in DLP](https://docs.microsoft.com/cloud-app-security/content-inspection-built-in) or [Data Classification Services](https://docs.microsoft.com/cloud-app-security/content-inspection?azure-portal=true).
 
-1. Choose the **Governance** actions you want Cloud App Security to take when a match is detected and select Create Policy.
+1. Choose the **Governance** actions you want Defender for Cloud Apps to take when a match is detected and select Create Policy.
 
 Once you've created your policy, you can view it in the **File policy** tab. You can edit a policy, calibrate its filters, or change the automated actions.
 
@@ -56,4 +56,3 @@ If you want to view all files that are suspected to violate a policy, follow the
 1. Select the three dots (**…**) on the right-side of the policy and select **View all matches**.
 
 1. You will see a list of files that are currently recognized by the file policy to match the selected filters. You can use this view to see the impact your policy has before you change it to apply any Governance actions.
-

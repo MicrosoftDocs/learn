@@ -100,7 +100,7 @@ Describe the capabilities, benefits, and use cases of Azure Arc enabled servers.
 Describe the capabilities, benefits, and use cases of Azure Arc enabled servers.
 
 - Integrate Azure Arc enabled servers with Azure Monitor.
-- Integrate Azure Arc enabled servers with Azure Security Center.
+- Integrate Azure Arc enabled servers with Microsoft Defender for Cloud.
 - Integrate Azure Arc enabled servers with the Update Management feature of Azure Automation.
 - Integrate Azure Arc enabled servers with Azure Automation Desired State Configuration (DSC).
 
@@ -112,4 +112,4 @@ Describe the capabilities, benefits, and use cases of Azure Arc enabled servers.
 
 ### Resolution of module problem
 
-Contoso was looking for a way to build a consistent, unified management model across on-premises and multi-cloud environments for virtual and physical workloads running on Windows and Linux servers. By implementing Azure Arc enabled servers, Contoso was able to accomplish that objective. The core capabilities of Azure Arc enabled servers facilitated applying and maintaining desired configuration to all of their operating system and workload settings. By onboarding Azure Arc enabled servers onto other Azure services, including Azure Monitor, Azure Automation, and Azure Security Center, Contoso managed to further minimize operational complexity and the management overhead. 
+Contoso was looking for a way to build a consistent, unified management model across on-premises and multi-cloud environments for virtual and physical workloads running on Windows and Linux servers. By implementing Azure Arc enabled servers, Contoso was able to accomplish that objective. The core capabilities of Azure Arc enabled servers facilitated applying and maintaining desired configuration to all of their operating system and workload settings. By onboarding Azure Arc enabled servers onto other Azure services, including Azure Monitor, Azure Automation, and Microsoft Defender for Cloud, Contoso managed to further minimize operational complexity and the management overhead. 

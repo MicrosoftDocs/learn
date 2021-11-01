@@ -8,13 +8,13 @@ metadata:
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Hunt for threats using notebooks in Azure Sentinel
-summary: Learn how to use notebooks in Azure Sentinel for advanced hunting.
+title: Hunt for threats using notebooks in Microsoft Sentinel
+summary: Learn how to use notebooks in Microsoft Sentinel for advanced hunting.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Explore API libraries for advanced threat hunting in Azure Sentinel
-  - Describe notebooks in Azure Sentinel
-  - Create and use notebooks in Azure Sentinel
+  - Explore API libraries for advanced threat hunting in Microsoft Sentinel
+  - Describe notebooks in Microsoft Sentinel
+  - Create and use notebooks in Microsoft Sentinel
 prerequisites: |
   - Basic knowledge of operational concepts such as monitoring, logging, and alerting
   - Basic experience with Azure services

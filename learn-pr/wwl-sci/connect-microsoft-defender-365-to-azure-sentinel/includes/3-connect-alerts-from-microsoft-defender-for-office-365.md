@@ -1,4 +1,4 @@
-Microsoft Defender for Office 365 (formerly named Office 365 Advanced Threat Protection) safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. By ingesting Microsoft Defender for Office 365 alerts into Azure Sentinel, you can incorporate information about email-based and URL-based threats into your broader risk analysis and build response scenarios accordingly.
+Microsoft Defender for Office 365 (formerly named Office 365 Advanced Threat Protection) safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. By ingesting Microsoft Defender for Office 365 alerts into Microsoft Sentinel, you can incorporate information about email-based and URL-based threats into your broader risk analysis and build response scenarios accordingly.
 
 The following types of alerts are ingested:
 
@@ -27,4 +27,3 @@ To view the connector page do the following steps:
 1. Select **Connect** to start streaming the alerts.
 
 1. Select whether alerts from Microsoft Defender for Office 365 automatically generate incidents by selecting **Enable**.
-

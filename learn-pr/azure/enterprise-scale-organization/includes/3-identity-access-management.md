@@ -161,7 +161,7 @@ Integrate Azure AD logs with the platform-central Azure Monitor. Azure Monitor a
 
 If any data sovereignty requirements exist, custom user policies can be deployed to enforce them.
 
-Use Azure Security Center just-in-time access for all infrastructure as a service (IaaS) resources to enable network-level protection for ephemeral user access to IaaS virtual machines.
+Use Microsoft Defender for Cloud just-in-time access for all infrastructure as a service (IaaS) resources to enable network-level protection for ephemeral user access to IaaS virtual machines.
 
 Use Azure AD managed identities for Azure resources to avoid authentication based on user names and passwords. Because many security breaches of public cloud resources originate with credential theft embedded in code or other text sources, enforcing managed identities for programmatic access greatly reduces the risk of credential theft.
 

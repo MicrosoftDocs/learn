@@ -19,26 +19,26 @@ quiz:
   questions:
   - content: "Where can custom security alerts be created and managed?"
     choices:
-    - content: "Azure Security Center"
+    - content: "Microsoft Defender for Cloud"
       isCorrect: false
-      explanation: "Security Center lets provides the ability to monitor how your systems are doing in Azure."
-    - content: "Azure Sentinel"
+      explanation: "Defender for Cloud lets provides the ability to monitor how your systems are doing in Azure."
+    - content: "Microsoft Sentinel"
       isCorrect: true
-      explanation: "Azure Sentinel. Custom alert rules were retired from Azure Security Center on June 30, 2019 because its underlying infrastructure was retired. We recommend that enabling Azure Sentinel and re-creating your custom alerts there. Alternatively, alerts can be created with Azure Monitor log alerts."
+      explanation: "Microsoft Sentinel. Custom alert rules were retired from Microsoft Defender for Cloud on June 30, 2019 because its underlying infrastructure was retired. We recommend that enabling Microsoft Sentinel and re-creating your custom alerts there. Alternatively, alerts can be created with Azure Monitor log alerts."
     - content: "Azure Storage"
       isCorrect: false
       explanation: "Azure Storage is for storing data."
-  - content: "Which of the items below would exceed the capabilities of an Azure Sentinel playbook?"
+  - content: "Which of the items below would exceed the capabilities of a Microsoft Sentinel playbook?"
     choices:
     - content: "A Sentinel playbook can help automate and orchestrate an incident response."
       isCorrect: false
       explanation: "Sentinel provides the ability to automate and orchestrate responses."
     - content: "A Sentinel playbook be run manually or set to run automatically when specific alerts are triggered."
       isCorrect: false
-      explanation: "The fact that Sentinel runs when an trigger is fired is a good topic to share."
+      explanation: "The fact that Sentinel runs when a trigger is fired is a good topic to share."
     - content: "A Sentinel playbook be created to handle several subscriptions at once."
       isCorrect: true
-      explanation: "A security playbook is a collection of procedures that can be run from Azure Sentinel in response to an alert. A security playbook can help automate and orchestrate your response and can be run manually or set to run automatically when specific alerts are triggered. Each playbook is created for a specific subscription."
+      explanation: "A security playbook is a collection of procedures that can be run from Microsoft Sentinel in response to an alert. A security playbook can help automate and orchestrate your response and can be run manually or set to run automatically when specific alerts are triggered. Each playbook is created for a specific subscription."
   - content: "Sentinel is being used to investigate an incident. When viewing the incident detailed information, which value has to be assigned, instead of being included in the data?"
     choices:
     - content: "Incident ID"
@@ -50,18 +50,18 @@ quiz:
     - content: "Number of entities involved"
       isCorrect: false
       explanation: "The number of entities involved are listed in the incident."
-  - content: "When creating roles within a security operations team to grant appropriate access to Azure Sentinel. Which role below would have to be created versus being built-in?"
+  - content: "When creating roles within a security operations team to grant appropriate access to Microsoft Sentinel. Which role below would have to be created versus being built-in?"
     choices:
-    - content: "Azure Sentinel reader"
+    - content: "Microsoft Sentinel reader"
       isCorrect: false
       explanation: "Reader is a valid role in Sentinel."
-    - content: "Azure Sentinel responder"
+    - content: "Microsoft Sentinel responder"
       isCorrect: false
       explanation: "Responder is a valid role in Sentinel."
-    - content: "Azure Sentinel owner"
+    - content: "Microsoft Sentinel owner"
       isCorrect: true
       explanation: "The Sentinel built-in roles are reader, responder, and contributor."
-  - content: "An investigator wants to be proactive about looking for security threats. The security officer has read about Sentinel’s hunting capabilities and notebooks. What is an Azure Sentinel notebook?"
+  - content: "An investigator wants to be proactive about looking for security threats. The security officer has read about Sentinel’s hunting capabilities and notebooks. What is a Microsoft Sentinel notebook?"
     choices:
     - content: "A step-by-step playbook that provides the ability to walk through the steps of an investigation and hunt."
       isCorrect: true

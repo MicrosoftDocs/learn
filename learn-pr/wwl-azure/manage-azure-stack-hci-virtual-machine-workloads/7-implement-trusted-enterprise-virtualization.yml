@@ -18,7 +18,7 @@ quiz:
   questions:
   - content: "You're planning Azure Stack HCI-based deployment of Contoso's business critical workloads that must be protected from cyber threats even if there's a successful exploit of the operating system running on the cluster nodes. You already purchased Azure Stack HCI hardware that supports trusted enterprise virtualization. What should you do next?"
     choices:
-    - content: "Integrate Azure Stack HCI with Azure Defender."
+    - content: "Integrate Azure Stack HCI with Microsoft Defender for Cloud."
       isCorrect: false
       explanation: "Incorrect. This is an optional step. Although it provides cloud-based advanced security management and threat detection benefits for on-premises workloads, it's not sufficient to protect business critical workloads if there's a successful exploit of the operating system running on the cluster nodes."
     - content: "Enable Credential Guard."

@@ -26,9 +26,9 @@ Users who are assigned to the Global administrator role can read and modify ever
 * **Conditional Access Administrator** - Users with this role have the ability to manage Azure Active Directory Conditional Access settings
 * **Exchange Administrator** - Users with this role have global permissions within Microsoft Exchange Online, when the service is present.
 * **Directory Readers** - Users in this role can read basic directory information.
-* **Global Administrator / Company Administrator** - Users with this role have access to all administrative features in Azure Active Directory, as well as services that use Azure Active Directory identities like Microsoft 365 security center, Microsoft 365 compliance center, Exchange Online, SharePoint Online, and Skype for Business Online.
+* **Global Administrator / Company Administrator** - Users with this role have access to all administrative features in Azure Active Directory, as well as services that use Azure Active Directory identities like Microsoft 365 Defender portal, Microsoft 365 compliance center, Exchange Online, SharePoint Online, and Skype for Business Online.
 * **Groups Administrator** - Users in this role can create/manage groups and its settings like naming and expiration policies. 
-* **Security Administrator** - Users with this role have permissions to manage security-related features in the Microsoft 365 security center, Azure Active Directory Identity Protection, Azure Information Protection, and Microsoft 365 Security & Compliance Center. 
+* **Security Administrator** - Users with this role have permissions to manage security-related features in the Microsoft 365 Defender portal, Azure Active Directory Identity Protection, Azure Information Protection, and Microsoft 365 Security & Compliance Center. 
 
 For most organizations, the security of business assets depends on the integrity of the privileged accounts that administer and manage IT systems. Cyber-attackers focus on privileged access to infrastructure systems (such as Active Directory and Azure Active Directory) to gain access to an organization’s sensitive data.
 

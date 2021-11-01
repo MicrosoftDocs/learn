@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.audit-security-of-windows-server-iaas-vms.implement-azure-sentinel
-title: Implement Azure Sentinel
+title: Implement Microsoft Sentinel
 metadata:
   title: Implement Azure Sentinel
   description: "Implement Azure Sentinel"

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.host-security.security-center-recommendations
-title: Explore Azure Security Center recommendations
+title: Explore Microsoft Defender for Cloud recommendations
 metadata:
   title: Explore Azure Security Center recommendations
   description: "Explore Azure Security Center recommendations"

@@ -1,4 +1,4 @@
-Your security operations team receives an alert whenever Microsoft Defender detects a malicious or suspicious artifact for Endpoint. Security operations teams face challenges in addressing the multitude of alerts that arise from the seemingly never-ending flow of threats. Microsoft Defender for Endpoint includes automated investigation and remediation (AIR) capabilities that can help your security operations team address threats more efficiently and effectively.
+Your security operations team receives an alert whenever Microsoft Defender for Cloud detects a malicious or suspicious artifact for Endpoint. Security operations teams face challenges in addressing the multitude of alerts that arise from the seemingly never-ending flow of threats. Microsoft Defender for Endpoint includes automated investigation and remediation (AIR) capabilities that can help your security operations team address threats more efficiently and effectively.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bOeh?rel=0]
 
@@ -163,4 +163,3 @@ As with other sections, you can customize columns, select the number of items to
 ### Pending actions
 
 When you select the pending actions link, you'll be taken to the Action center. You can also access the page from the navigation page by going to automated investigation > Action center.
-

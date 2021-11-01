@@ -1,14 +1,14 @@
-Azure Security Center monitors the status of antimalware protection for your VMs. Security Center notes issues, such as detected threats and insufficient protection, that might make your VMs and computers vulnerable to malware threats. By using the information on **Endpoint protection issues**, you can make a plan to address any identified issues.
+Microsoft Defender for Cloud monitors the status of antimalware protection for your VMs. Defender for Cloud notes issues, such as detected threats and insufficient protection, that might make your VMs and computers vulnerable to malware threats. By using the information on **Endpoint protection issues**, you can make a plan to address any identified issues.
 
-1. Open the **Azure Security Center** overview page. Select the **Home** > **Azure Security Center** link in the upper left corner of the portal.
+1. Open the **Microsoft Defender for Cloud** overview page. Select the **Home** > **Microsoft Defender for Cloud** link in the upper left corner of the portal.
 
-1. In the menu pane, select **Product overview**. The **Overview** pane for the Security Center appears.
+1. In the menu pane, select **Product overview**. The **Overview** pane for the Defender for Cloud appears.
 
 1. Select the **Compute & apps** section under **RESOURCE SECURITY HYGIENE**.
 
 1. You can either find the **Install endpoint protection solution on virtual machines** entry in the Overview, or filter your view to **VMs and Computers** where you can see recommendations based on the virtual machines.
 
-Security Center reports the following endpoint protection issues:
+Defender for Cloud reports the following endpoint protection issues:
 
 - **Endpoint protection not installed on Azure VMs** - A supported antimalware solution isn't installed on these Azure VMs.
 
@@ -18,13 +18,13 @@ Security Center reports the following endpoint protection issues:
 
   - *Signature out of date*. An antimalware solution is installed on these VMs and computers, but the solution doesn't have the latest antimalware signatures.
 
-  - *No real-time protection*. An antimalware solution is installed on these VMs and computers, but it isn't configured for real-time protection. The service might be disabled, or Security Center might be unable to obtain the status because the solution isn't supported.
+  - *No real-time protection*. An antimalware solution is installed on these VMs and computers, but it isn't configured for real-time protection. The service might be disabled, or Defender for Cloud might be unable to obtain the status because the solution isn't supported.
 
   - *Not reporting*. An antimalware solution is installed but not reporting data.
 
   - *Unknown*. An antimalware solution is installed, but either its status is unknown, or it's reporting an unknown error.
 
-For VMs which are vulnerable, Security Center will offer to resolve the issue and install malware protection onto the unprotected VMs.
+For VMs which are vulnerable, Defender for Cloud will offer to resolve the issue and install malware protection onto the unprotected VMs.
 
 ![Screenshot showing the Install on VMs option from ASC.](../media/5-install-malware-from-asc.png)
 
@@ -70,7 +70,7 @@ Let's use the Azure portal to create a new VM, and install the extension.
 
     ![Screenshot showing the Advanced tab with Microsoft malware extension installed.](../media/7-install-ms-malware2.png)
 
-1. Next, select the **Management** tab. This is where you can configure the monitoring capabilities for Azure Security Center:
+1. Next, select the **Management** tab. This is where you can configure the monitoring capabilities for Microsoft Defender for Cloud:
     - Detailed monitoring which can be viewed in Azure Monitor.
     - Boot diagnostics
     - OS guest diagnostics

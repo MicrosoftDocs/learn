@@ -9,13 +9,13 @@ metadata:
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Identify security threats with Azure Security Center
-summary: In this module, you’ll discover how to detect and respond to threats with Azure Security Center.
+title: Identify security threats with Microsoft Defender for Cloud
+summary: In this module, you’ll discover how to detect and respond to threats with Microsoft Defender for Cloud.
 abstract: | 
   In this module, you will:
-  - Configure Azure Security Center to monitor your Azure resources
-  - Use the Azure Security Center dashboard to identify potential security issues
-  - Analyze the recommendations made by Security Center
+  - Configure Microsoft Defender for Cloud to monitor your Azure resources
+  - Use the workload protection dashboard to identify potential security issues
+  - Analyze the recommendations made by Defender for Cloud
 prerequisites: Basic familiarity with Azure services
 iconUrl: /learn/achievements/identify-threats-with-azure-security-center.svg
 levels:

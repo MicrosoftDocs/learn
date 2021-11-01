@@ -18,7 +18,7 @@ The Azure Security Benchmark includes a collection of high-impact security recom
 
 - Plan your Azure Security Benchmark implementation by reviewing the documentation for the enterprise controls and service-specific baselines to plan your control framework and how it maps to guidance like CIS (Controls v7.1) and NIST (SP 800-53) framework.
 
-- Monitor your compliance with Azure Security Benchmark status (and other control sets) using the Azure Security Center regulatory compliance dashboard.
+- Monitor your compliance with Azure Security Benchmark status (and other control sets) using the Microsoft Defender for Cloud regulatory compliance dashboard.
 
 - Establish guardrails to automate secure configurations and enforce compliance with Azure Security Benchmark (and other requirements in your organization) with Azure Blueprints and Azure Policy.
 
@@ -48,16 +48,16 @@ The terms "control", "benchmark", and "baseline" are used often in the Azure Sec
 
 
 
-## Using Azure Security Center for regulatory compliance
+## Using Microsoft Defender for Cloud for regulatory compliance
 
-Azure Security Center helps streamline the process for meeting regulatory compliance requirements, using the regulatory compliance dashboard. 
+Microsoft Defender for Cloud helps streamline the process for meeting regulatory compliance requirements, using the regulatory compliance dashboard. 
 
 The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
 
-### Security Center regulatory compliance dashboard 
+### Defender for Cloud regulatory compliance dashboard 
 
 > [!div class="mx-imgBorder"]
-> ![Security Center regulatory compliance dashboard ](../media/compliance-dashboard.png)
+> ![Defender for Cloud regulatory compliance dashboard ](../media/compliance-dashboard.png)
 
 The dashboard shows an overview of your compliance status with the set of supported compliance regulations. You will see your overall compliance score, and the number of passing vs. failing assessments associated with each standard.
 
@@ -78,7 +78,7 @@ The dashboard shows an overview of your compliance status with the set of suppor
 
 5. Number of affected resources. 
 
-Some controls are grayed out. These controls do not have any Security Center assessments associated with them. Check their requirements and assess them in your environment. Some of these might be process-related and not technical.
+Some controls are grayed out. These controls do not have any Defender for Cloud assessments associated with them. Check their requirements and assess them in your environment. Some of these might be process-related and not technical.
 
 ### Exploring the details of compliance with a specific standard
 
@@ -87,18 +87,18 @@ To generate a PDF report with a summary of your current compliance status for a 
 > [!div class="mx-imgBorder"]
 > ![Download regulatory compliance report.](../media/download-report.png)
 
-The report provides a high-level summary of your compliance status for the selected standard based on Security Center assessments data. The report is organized according to the controls of that standard. The report can be shared with relevant stakeholders and might provide evidence to internal and external auditors.
+The report provides a high-level summary of your compliance status for the selected standard based on Defender for Cloud assessments data. The report is organized according to the controls of that standard. The report can be shared with relevant stakeholders and might provide evidence to internal and external auditors.
 
-## Alerts in Security Center
+## Alerts in Defender for Cloud
 
-Security Center automatically collects, analyzes, and integrates log data from your Azure resources, the network, and connected partner solutions - like firewall and endpoint protection solutions - to detect real threats and reduce false positives. A list of prioritized security alerts is shown in Security Center along with the information you need to quickly investigate the problem and steps to take to remediate an attack.
+Defender for Cloud automatically collects, analyzes, and integrates log data from your Azure resources, the network, and connected partner solutions - like firewall and endpoint protection solutions - to detect real threats and reduce false positives. A list of prioritized security alerts is shown in Defender for Cloud along with the information you need to quickly investigate the problem and steps to take to remediate an attack.
 
 ### Manage your security alerts
 
-The Security Center overview page shows the Security alerts tile at the top of the page, and as a link from the sidebar.
+The Defender for Cloud overview page shows the Security alerts tile at the top of the page, and as a link from the sidebar.
 
 > [!div class="mx-imgBorder"]
-> ![Security Center overview page shows the Security alerts tile ](../media/overview-page-alerts-links.png)
+> ![Defender for Cloud overview page shows the Security alerts tile ](../media/overview-page-alerts-links.png)
 
 The security alerts page shows the active alerts. You can sort the list by Severity, Alert title, Affected resource, Activity start time. MITRE ATTACK tactics, and status.
 
@@ -145,15 +145,15 @@ Network Security covers controls to secure and protect Azure networks, including
 
 Segmentation and isolation of virtual networks should be applied based on business risks. Generally, "deny by default, permit by exception" approach should be followed.
 
-Azure Security Center is a unified infrastructure security management system that strengthens the security posture of your data centers and provides advanced threat protection across your hybrid workloads in the cloud as well as on premises. Use Azure Security Center to:
+Microsoft Defender for Cloud is a unified infrastructure security management system that strengthens the security posture of your data centers and provides advanced threat protection across your hybrid workloads in the cloud as well as on premises. Use Microsoft Defender for Cloud to:
 
-- **Strengthen security posture:** Security Center assesses your environment and enables you to understand the status of your resources, and whether they are secure.
+- **Strengthen security posture:** Defender for Cloud assesses your environment and enables you to understand the status of your resources, and whether they are secure.
 
-- **Protect against threats:** Security Center assesses your workloads and raises threat prevention recommendations and security alerts.
+- **Protect against threats:** Defender for Cloud assesses your workloads and raises threat prevention recommendations and security alerts.
 
-- **Get secure faster:** In Security Center, everything is done in cloud speed. Because it is natively integrated, deployment of Security Center is easy, providing you with auto-provisioning and protection with Azure services.
+- **Get secure faster:** In Defender for Cloud, everything is done in cloud speed. Because it is natively integrated, deployment of Defender for Cloud is easy, providing you with auto-provisioning and protection with Azure services.
 
-[Azure Security Center Adaptive Network Hardening](/azure/security-center/security-center-adaptive-network-hardening) is an agentless feature of Azure Security Center - nothing needs to be installed on your machines to benefit from this network hardening tool. [Azure Security Center Adaptive Network Hardening](/azure/security-center/security-center-adaptive-network-hardening) provides guidance about recommended network security group configurations like limiting ports and source IPs with reference to external network traffic rules. For more information on adaptive network hardening, see [Adaptive network hardening in Azure Security Center](/azure/security-center/security-center-adaptive-network-hardening).
+[Microsoft Defender for Cloud Adaptive Network Hardening](/azure/security-center/security-center-adaptive-network-hardening) is an agentless feature of Microsoft Defender for Cloud - nothing needs to be installed on your machines to benefit from this network hardening tool. [Microsoft Defender for Cloud Adaptive Network Hardening](/azure/security-center/security-center-adaptive-network-hardening) provides guidance about recommended network security group configurations like limiting ports and source IPs with reference to external network traffic rules. For more information on adaptive network hardening, see [Adaptive network hardening in Microsoft Defender for Cloud](/azure/security-center/security-center-adaptive-network-hardening).
 
 ### NS-2: Connect private networks together
 

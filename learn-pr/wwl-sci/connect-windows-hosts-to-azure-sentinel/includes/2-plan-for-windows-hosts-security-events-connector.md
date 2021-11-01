@@ -1,4 +1,4 @@
-The Security Events connector lets you stream all security events from your Windows systems (servers and workstations, physical and virtual) to your Azure Sentinel workspace. This enables you to view Windows security events in your dashboards, use them to create custom alerts, and rely on them to improve your investigations, giving you more insight into your organization's network and expanding your security operations capabilities. You can select which events to stream from among the following sets:
+The Security Events connector lets you stream all security events from your Windows systems (servers and workstations, physical and virtual) to your Microsoft Sentinel workspace. This enables you to view Windows security events in your dashboards, use them to create custom alerts, and rely on them to improve your investigations, giving you more insight into your organization's network and expanding your security operations capabilities. You can select which events to stream from among the following sets:
 
 - All events - All Windows security and AppLocker events.
 

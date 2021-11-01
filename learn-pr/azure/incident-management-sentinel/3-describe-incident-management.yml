@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which Azure Sentinel component is used to generate alerts?"
+  - content: "Which Microsoft Sentinel component is used to generate alerts?"
     choices:
     - content: "Incidents"
       isCorrect: false

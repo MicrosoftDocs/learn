@@ -3,10 +3,10 @@ Databases are the most common places to store and process data.  Security for yo
 
 ## Scenario
 
-A security engineer uses Azure features like Azure Defender for SQL to protect valuable data, you will work on such tasks as:
+A security engineer uses Azure features like Microsoft Defender for SQL to protect valuable data, you will work on such tasks as:
 - Architect a secure SQL database implementation including authentication, firewalls, and auditing.
 - Encrypt the data in your database and while it is in transit.
-- Use Azure Defender for SQL to keep your data safe.
+- Use Microsoft Defender for SQL to keep your data safe.
 
 ## Skills measured
 
@@ -16,7 +16,7 @@ Secure data and applications (20-25%)
 - Configure security for databases
    - enable database authentication
    - enable database auditing
-   - configure Azure Defender for SQL
+   - configure Microsoft Defender for SQL
    - implement database encryption
 
 ## Learning objectives

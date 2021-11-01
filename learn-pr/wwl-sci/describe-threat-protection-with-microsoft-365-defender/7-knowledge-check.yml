@@ -27,7 +27,7 @@ quiz:
     - content: "Microsoft Defender for Identity."
       isCorrect: false
       explanation: "That's incorrect. Microsoft Defender for Identity is a cloud-based security solution that uses on-premises Active Directory data to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at an organization."
-  - content: "A cloud access security broker (CASB) provides protection across 4 areas/pillars: visibility to detect all cloud services, data security, threat protection, and compliance. These pillars represent the basis of the Cloud App Security framework upon which MCAS is built. Which pillar is responsible for identifying and controlling sensitive information?"
+  - content: "A cloud access security broker (CASB) provides protection across 4 areas/pillars: visibility to detect all cloud services, data security, threat protection, and compliance. These pillars represent the basis of the Defender for Cloud Apps framework upon which Defender for Cloud Apps is built. Which pillar is responsible for identifying and controlling sensitive information?"
     choices:
     - content: "Threat protection."
       isCorrect: false
@@ -46,6 +46,6 @@ quiz:
     - content: "Microsoft Defender for Identity"
       isCorrect: true
       explanation: "That's correct. Microsoft Defender for Identity is a cloud-based security solution that identifies, detects, and helps you investigate advanced threats, compromised identities, and malicious insider actions directed at your organization."
-    - content: "Microsoft Cloud App Security"
+    - content: "Microsoft Defender for Cloud Apps"
       isCorrect: false
-      explanation: "That's incorrect. Microsoft Cloud App Security is a Cloud Access Security Broker that supports various deployment modes including log collection, API connectors, and reverse proxy."
+      explanation: "That's incorrect. Microsoft Defender for Cloud Apps is a Cloud Access Security Broker that supports various deployment modes including log collection, API connectors, and reverse proxy."

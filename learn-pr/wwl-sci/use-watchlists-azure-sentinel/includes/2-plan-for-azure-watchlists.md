@@ -1,4 +1,4 @@
-Azure Sentinel watchlists enable collecting data from external data sources for correlation with the events in your Azure Sentinel environment. Once created, you can use watchlists in your search, detection rules, threat hunting, and response playbooks. Watchlists are stored in your Azure Sentinel workspace as name-value pairs and are cached for optimal query performance and low latency.
+Microsoft Sentinel watchlists enable collecting data from external data sources for correlation with the events in your Microsoft Sentinel environment. Once created, you can use watchlists in your search, detection rules, threat hunting, and response playbooks. Watchlists are stored in your Microsoft Sentinel workspace as name-value pairs and are cached for optimal query performance and low latency.
 
 Common scenarios for using watchlists include:
 
@@ -12,4 +12,3 @@ Common scenarios for using watchlists include:
 
 > [!TIP]
 > You can create and delete Watchlists, but you can't update Watchlists. If you are working with more dynamic lists, use KQL external data operators to create temporary virtual tables.
-

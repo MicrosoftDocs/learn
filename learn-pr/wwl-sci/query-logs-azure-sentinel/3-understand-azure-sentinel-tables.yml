@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.query-logs-azure-sentinel.understand-tables
-title: Understand Azure Sentinel tables
+title: Understand Microsoft Sentinel tables
 metadata:
   title: Understand Azure Sentinel tables
   description: "Understand Azure Sentinel tables"

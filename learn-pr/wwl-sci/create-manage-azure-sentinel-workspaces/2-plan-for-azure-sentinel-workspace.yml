@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-manage-azure-sentinel-workspaces.plan-for-workspace
-title: Plan for the Azure Sentinel workspace
+title: Plan for the Microsoft Sentinel workspace
 metadata:
   title: Plan for the Azure Sentinel workspace
   description: "Plan for the Azure Sentinel workspace"

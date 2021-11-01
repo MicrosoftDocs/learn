@@ -9,7 +9,7 @@ File Integrity Monitoring enables you to leverage Change Tracking and Inventory 
 File Integrity Monitoring, also known as *change monitoring*, examines files and registries of operating system, application software, and others for changes that might indicate an attack.
 
 > [!NOTE] 
-> Change Tracking and Inventory uses Azure Security Center File Integrity Monitoring. 
+> Change Tracking and Inventory uses Microsoft Defender for Cloud File Integrity Monitoring. 
 
 When File Integrity Monitoring discovers changes, it uses a comparative method to help to determine whether the current state of the file differs from the last scan of the file. If File Integrity Monitoring discovers that there are differences, <!-- Verify -->a designated administrator is notified and can then take action to determine if these changes are legitimate, or if they indicate a possible security problem.
 
@@ -19,7 +19,7 @@ You can use File Integrity Monitoring to validate the integrity of the following
 - Windows registry values
 - Linux files
 
-You access File Integrity Monitoring from Azure Security Center. Security Center enables you to specify the object types that you want to monitor. Security Center monitors files with File Integrity Monitoring enabled for activity such as:
+You access File Integrity Monitoring from Microsoft Defender for Cloud. Defender for Cloud enables you to specify the object types that you want to monitor. Defender for Cloud monitors files with File Integrity Monitoring enabled for activity such as:
 
 - File and Registry creation and removal.
 - File modifications (changes in file size, access control lists (ACLs), and hash of the content).
@@ -27,12 +27,12 @@ You access File Integrity Monitoring from Azure Security Center. Security Center
 
 ## Enable File Integrity Monitoring
 
-To use a Log Analytics workspace for File Integrity Monitoring, the workspace must be running under the Security Center Standard tier. If it isn't, any workspaces that are on the File Integrity Monitoring node will have an **UPGRADE PLAN** link.
+To use a Log Analytics workspace for File Integrity Monitoring, the workspace must be running under the Defender for Cloud Standard tier. If it isn't, any workspaces that are on the File Integrity Monitoring node will have an **UPGRADE PLAN** link.
 
 > [!TIP] 
-> Those workspaces that are already in the Security Center Standard tier are indicated with an ENABLE link.
+> Those workspaces that are already in the Defender for Cloud Standard tier are indicated with an ENABLE link.
 
-To upgrade the workspace to Security Center Standard tier, use the following procedure:
+To upgrade the workspace to Defender for Cloud Standard tier, use the following procedure:
 
 1. Select the **UPGRADE PLAN** link, and on the **What is File Integrity Monitoring** page, select try **File Integrity Monitoring**.
 2. On the File Integrity Monitoring node, select the appropriate workspace, and then select **Upgrade**.
@@ -41,7 +41,7 @@ To upgrade the workspace to Security Center Standard tier, use the following pro
 > [!TIP] 
 > If you've already configured your VMs for Change Tracking and Inventory, you don't need to install the agent as it will already be present.
 
-[![A screenshot of the Azure portal, Security Center File Integrity Monitoring page. Several workspaces are listed. One is marked with UPGRADE PLAN, and two are marked ENABLE.](../media/m10-upgrade-plan-1.png)](../media/m10-upgrade-plan-1.png#lightbox)
+[![A screenshot of the Azure portal, Defender for Cloud File Integrity Monitoring page. Several workspaces are listed. One is marked with UPGRADE PLAN, and two are marked ENABLE.](../media/m10-upgrade-plan-1.png)](../media/m10-upgrade-plan-1.png#lightbox)
 
 After you have upgraded the required workspaces:
 
@@ -50,21 +50,21 @@ After you have upgraded the required workspaces:
 
    The Enable File Integrity Monitoring page opens, listing the number of Windows and Linux machines under the workspace.
 
-   ![A screenshot of the Azure portal, Enable File Integrity Monitoring page of the Security Center is displayed. Recommended settings are  Windows Files, Registry, and Linux Files.](../media/m10-enable-file-integrity-monitoring-1.png)
+   ![A screenshot of the Azure portal, Enable File Integrity Monitoring page of the Defender for Cloud is displayed. Recommended settings are  Windows Files, Registry, and Linux Files.](../media/m10-enable-file-integrity-monitoring-1.png)
 
 3. Review the Recommended settings: Windows Files, Registry, and (if applicable), Linux Files.
 4. Clear the check box for any items you don't want to track, and then select **Enable File Integrity Monitoring**.
 
 ## Configure File Integrity Monitoring
 
-After you have enabled File Integrity Monitoring, on the File Integrity Monitoring dashboard in Security Center, the following information is provided for each workspace:
+After you have enabled File Integrity Monitoring, on the File Integrity Monitoring dashboard in Defender for Cloud, the following information is provided for each workspace:
 
 - Total number of changes that occurred in the last week
 - Total number of computers and VMs reporting to the workspace
 - Geographic location of the workspace
 - Azure subscription that the workspace is under
 
-![A screenshot of the  Security Center's File Integrity Monitoring blade. Three servers display, with six changes.](../media/m10-file-integrity-monitoring-dashboard-1.png)
+![A screenshot of the  Defender for Cloud's File Integrity Monitoring blade. Three servers display, with six changes.](../media/m10-file-integrity-monitoring-dashboard-1.png)
 
 You can filter the returned summary to return results from the last:
 
@@ -89,4 +89,3 @@ If you no longer want to use File Integrity Monitoring, use the following proced
 4. Select **Remove** to disable.
 
 ![Screenshot of the File Integrity Monitoring dashboard with the Settings, Refresh, Filter, and Disable options. Three servers are reporting zero changes.](../media/m10-disable-file-integrity-monitoring.png)
-

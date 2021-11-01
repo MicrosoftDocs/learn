@@ -1,14 +1,14 @@
-Onboarding your GCP account into Security Center, integrates GCP Security Command and Azure Security Center. Security Center thus provides visibility and protection across both of these cloud environments to provide:
+Onboarding your GCP account into Defender for Cloud, integrates GCP Security Command and Microsoft Defender for Cloud. Defender for Cloud thus provides visibility and protection across both of these cloud environments to provide:
 
 - Detection of security misconfigurations
 
-- A single view showing Security Center recommendations and GCP Security Command Center findings
+- A single view showing Defender for Cloud recommendations and GCP Security Command Center findings
 
-- Incorporation of your GCP resources into Security Center's secure score calculations
+- Incorporation of your GCP resources into Defender for Cloud's secure score calculations
 
-- Integration of GCP Security Command Center recommendations based on the CIS standard into the Security Center's regulatory compliance dashboard
+- Integration of GCP Security Command Center recommendations based on the CIS standard into the Defender for Cloud's regulatory compliance dashboard
 
-In the screenshot below, you can see GCP projects displayed in Security Center's overview dashboard.
+In the screenshot below, you can see GCP projects displayed in Defender for Cloud's overview dashboard.
 
 >[!div class="mx-imgBorder"]
 >![gcp account in overview.](../media/gcp-account-overview.png)
@@ -31,7 +31,7 @@ When you first enable Security Health Analytics, it might take several hours for
 
 ### Enable GCP Security Command Center API
 
-1. From Google's Cloud Console API Library, select the project you want to connect to Azure Security Center.
+1. From Google's Cloud Console API Library, select the project you want to connect to Microsoft Defender for Cloud.
 
 1. In the API Library, find and select **Security Command Center API**.
 
@@ -39,7 +39,7 @@ When you first enable Security Health Analytics, it might take several hours for
 
 ### Create a dedicated service account for the security configuration integration
 
-1. In the GCP Console, select the project you want to connect to Security Center.
+1. In the GCP Console, select the project you want to connect to Defender for Cloud.
 
 1. In the Navigation menu, Under IAM & admin options, select **Service accounts**.
 
@@ -77,9 +77,9 @@ Switch to project level.
 
 1. Save this JSON file for later use.
 
-### Connect GCP to security center
+### Connect GCP to Defender for Cloud
 
-1. From Security Center's menu, select **Cloud connectors**.
+1. From Defender for Cloud's menu, select **Cloud connectors**.
 
 1. Select **add GCP account**.
 
@@ -97,10 +97,9 @@ Switch to project level.
 
 When the connector is successfully created and GCP Security Command Center has been configured properly:
 
-- The GCP CIS standard will be shown in the Security Center's regulatory compliance dashboard.
+- The GCP CIS standard will be shown in the Defender for Cloud's regulatory compliance dashboard.
 
-- Security recommendations for your GCP resources will appear in the Security Center portal and the regulatory compliance dashboard 5-10 minutes after onboard completes:
+- Security recommendations for your GCP resources will appear in the Defender for Cloud portal and the regulatory compliance dashboard 5-10 minutes after onboard completes:
 
 >[!div class="mx-imgBorder"]
 >![gcp resources in recommendations.](../media/gcp-resources-recommendations.png)
-

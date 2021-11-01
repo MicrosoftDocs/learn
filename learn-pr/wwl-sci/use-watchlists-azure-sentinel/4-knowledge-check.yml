@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following is a typical scenario for using an Azure Sentinel watchlist?"
+  - content: "Which of the following is a typical scenario for using a Microsoft Sentinel watchlist?"
     choices:
     - content: "Creating more alerts to help identify issues."
       isCorrect: false
@@ -26,7 +26,7 @@ quiz:
       explanation: "Incorrect. The opposite is true."
     - content: "Responding to incidents quickly with the rapid import of IP addresses."
       isCorrect: true
-      explanation: "Correct. This is a typical scenario for using Azure Sentinel watchlist."
+      explanation: "Correct. This is a typical scenario for using Microsoft Sentinel watchlist."
   - content: "How do you access a new watchlist named MyList in KQL?"
     choices:
     - content: "_Watchlist('MyList ')"

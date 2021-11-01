@@ -1,13 +1,13 @@
 
 In the information security lexicon, a kill chain describes the structure of an attack against an objective. The series of steps that describe the progression of a cyberattack from reconnaissance to data exfiltration.
 
-Understanding the intention of an attack can help you investigate and report the event more easily. Azure Security Center alerts include the 'intent' field to help with these efforts.
+Understanding the intention of an attack can help you investigate and report the event more easily. Microsoft Defender for Cloud alerts include the 'intent' field to help with these efforts.
 
 ### Protect against threats
-Security Center's threat protection enables you to detect and prevent threats at the Infrastructure as a Service (IaaS) layer, non-Azure servers as well as for Platforms as a Service (PaaS) in Azure.
+Defender for Cloud's threat protection enables you to detect and prevent threats at the Infrastructure as a Service (IaaS) layer, non-Azure servers as well as for Platforms as a Service (PaaS) in Azure.
 
-Security Center's threat protection includes fusion kill-chain analysis, which automatically correlates alerts in your environment based on cyber kill-chain analysis, to help you better understand the full story of an attack campaign, where it started and what kind of impact it had on your resources.
-Security Center's supported kill chain intents are based on the MITRE ATT&CK™ framework.
+Defender for Cloud's threat protection includes fusion kill-chain analysis, which automatically correlates alerts in your environment based on cyber kill-chain analysis, to help you better understand the full story of an attack campaign, where it started and what kind of impact it had on your resources.
+Defender for Cloud's supported kill chain intents are based on the MITRE ATT&CK™ framework.
 As illustrated below, the typical steps that trace the stages of a cyberattack.
 
 > [!div class="mx-imgBorder"]

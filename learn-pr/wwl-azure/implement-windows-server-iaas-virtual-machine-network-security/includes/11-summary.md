@@ -7,6 +7,6 @@ You can learn more by reviewing the following documents.
 
 - [Network security groups](https://aka.ms/security-overview?azure-portal=true)
 - [What is Azure Firewall?](https://aka.ms/azure-firewall-overview?azure-portal=true)
-- [Adaptive Network Hardening in Azure Security Center](https://aka.ms/security-center-adaptive-network-hardening?azure-portal=true)
+- [Adaptive Network Hardening in Microsoft Defender for Cloud](https://aka.ms/security-center-adaptive-network-hardening?azure-portal=true)
 - [What is Azure Network Watcher?](https://aka.ms/network-watcher-monitoring-overview?azure-portal=true)
 - [Secure and isolate access to Azure resources by using network security groups and service endpoints](https://aka.ms/secure-and-isolate-with-nsg-and-service-endpoints?azure-portal=true)

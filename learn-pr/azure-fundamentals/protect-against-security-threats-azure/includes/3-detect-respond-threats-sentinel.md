@@ -1,10 +1,10 @@
 Security management on a large scale can benefit from a dedicated security information and event management (SIEM) system. A SIEM system aggregates security data from many different sources (as long as those sources support an open-standard logging format). It also provides capabilities for threat detection and response.
 
-[Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/?azure-portal=true) is Microsoft's cloud-based SIEM system. It uses intelligent security analytics and threat analysis.
+[Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/?azure-portal=true) is Microsoft's cloud-based SIEM system. It uses intelligent security analytics and threat analysis.
 
-## Azure Sentinel capabilities
+## Microsoft Sentinel capabilities
 
-Azure Sentinel enables you to:
+Microsoft Sentinel enables you to:
 
  -  **Collect cloud data at scale** Collect data across all users, devices, applications, and infrastructure, both on-premises and from multiple clouds.
  -  **Detect previously undetected threats** Minimize false positives by using Microsoft's comprehensive analytics and threat intelligence.
@@ -13,13 +13,13 @@ Azure Sentinel enables you to:
 
 ## Connect your data sources
 
-Tailwind Traders decides to explore the capabilities of Azure Sentinel. First, the company identifies and connects its data sources.
+Tailwind Traders decides to explore the capabilities of Microsoft Sentinel. First, the company identifies and connects its data sources.
 
-Azure Sentinel supports a number of data sources, which it can analyze for security events. These connections are handled by built-in connectors or industry-standard log formats and APIs.
+Microsoft Sentinel supports a number of data sources, which it can analyze for security events. These connections are handled by built-in connectors or industry-standard log formats and APIs.
 
  -  **Connect Microsoft solutions** Connectors provide real-time integration for services like Microsoft Threat Protection solutions, Microsoft 365 sources (including Office 365), Azure Active Directory, and Windows Defender Firewall.
  -  **Connect other services and solutions** Connectors are available for common non-Microsoft services and solutions, including AWS CloudTrail, Citrix Analytics (Security), Sophos XG Firewall, VMware Carbon Black Cloud, and Okta SSO.
- -  **Connect industry-standard data sources** Azure Sentinel supports data from other sources that use the Common Event Format (CEF) messaging standard, Syslog, or REST API.
+ -  **Connect industry-standard data sources** Microsoft Sentinel supports data from other sources that use the Common Event Format (CEF) messaging standard, Syslog, or REST API.
 
 ## Detect threats
 
@@ -31,9 +31,9 @@ Tailwind Traders needs to be notified when something suspicious occurs. It decid
 
 ## Investigate and respond
 
-When Azure Sentinel detects suspicious events, Tailwind Traders can investigate specific alerts or *incidents* (a group of related alerts). With the investigation graph, the company can review information from entities directly connected to the alert, and see common exploration queries to help guide the investigation.
+When Microsoft Sentinel detects suspicious events, Tailwind Traders can investigate specific alerts or *incidents* (a group of related alerts). With the investigation graph, the company can review information from entities directly connected to the alert, and see common exploration queries to help guide the investigation.
 
-Here's an example that shows what an investigation graph looks like in Azure Sentinel.
+Here's an example that shows what an investigation graph looks like in Microsoft Sentinel.
 
 :::image type="content" source="../media/3-investigate-incidents-54765923.png" alt-text="An example incident investigation graph in Azure Sentinel.":::
 
@@ -44,7 +44,7 @@ The company will also use [Azure Monitor Workbooks](/azure/azure-monitor/platfor
 2.  Send a message to the security operations channel in Microsoft Teams or Slack to make sure the security analysts are aware of the incident.
 3.  Send all of the information in the alert to the senior network admin and to the security admin. The email message includes two user option buttons: **Block** or **Ignore**.
 
-When an admin chooses **Block**, the IP address is blocked in the firewall, and the user is disabled in Azure Active Directory. When an admin chooses **Ignore**, the alert is closed in Azure Sentinel, and the incident is closed in the IT ticketing system.
+When an admin chooses **Block**, the IP address is blocked in the firewall, and the user is disabled in Azure Active Directory. When an admin chooses **Ignore**, the alert is closed in Microsoft Sentinel, and the incident is closed in the IT ticketing system.
 
 The workbook continues to run after it receives a response from the admins.
 

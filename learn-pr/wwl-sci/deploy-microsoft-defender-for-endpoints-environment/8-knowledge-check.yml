@@ -41,7 +41,7 @@ quiz:
       explanation: "Incorrect. This is not a valid deployment option."
   - content: "Which security permission allows the configuration of storage settings?"
     choices:
-    - content: "Manage security settings in Security Center"
+    - content: "Manage security settings in Defender for Cloud"
       isCorrect: false
       explanation: "Incorrect.  This permission doesn't allow the configuration of storage settings."
     - content: "Manage portal system settings"

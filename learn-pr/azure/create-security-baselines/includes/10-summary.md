@@ -1,6 +1,6 @@
 We've covered a lot of ground in this module to create a baseline security checklist for commonly used Azure services. Let's quickly recap what we've gone through.
 
-1. **Turn on Azure Security Center - it's free** - Upgrade your Azure subscription to Azure Security Center Standard. Security Center's Standard tier helps you find and fix security vulnerabilities, apply access and application controls to block malicious activity, detect threats using analytics and intelligence, and respond quickly when under attack.
+1. **Turn on Microsoft Defender for Cloud - it's free** - Upgrade your Azure subscription to Microsoft Defender for Cloud Standard. Defender for Cloud's Standard tier helps you find and fix security vulnerabilities, apply access and application controls to block malicious activity, detect threats using analytics and intelligence, and respond quickly when under attack.
 
 1. **Adopt Center for Internet Security (CIS) Benchmarks** - Apply them to existing tenants.
 
@@ -24,7 +24,7 @@ Strong operational security practices to implement every day are:
 
 1. **Enable password management** and use appropriate security policies to prevent abuse.
 
-1. **Review your Security Center dashboard regularly** to get a central view of the security state of all of your Azure resources, and take action on the recommendations.
+1. **Review your workload protection dashboard regularly** to get a central view of the security state of all of your Azure resources, and take action on the recommendations.
 
 ## Further reading
 

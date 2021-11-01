@@ -6,7 +6,7 @@ Ensure machines are tagged and associated with Log Analytics workspaces to ensur
 
 As Azure resources, Arc-enabled servers can be tagged for organization. Evaluate and develop an IT-aligned tagging strategy that can help reduce the complexity of managing your Azure Arc-enabled servers and simplify making management decisions.
 
-Arc-enabled servers can be monitored through Azure Monitor or Log Analytics. Evaluate design and deployment considerations to determine if your organization should use an existing or implement another Log Analytics workspace to store collected log data from hybrid servers and machines. Consider setting up workspaces tied to Azure Sentinel for security and threat intelligence applications. 
+Arc-enabled servers can be monitored through Azure Monitor or Log Analytics. Evaluate design and deployment considerations to determine if your organization should use an existing or implement another Log Analytics workspace to store collected log data from hybrid servers and machines. Consider setting up workspaces tied to Microsoft Sentinel for security and threat intelligence applications. 
  
 Ensure Arc-enabled Server Connectivity
 
@@ -28,7 +28,7 @@ For the best experience and most recent security and bug fixes, we recommend kee
 
 ## Beginning using Azure services
 
-As a foundation for managing Azure Arc-enabled servers, we recommend organizing machines with tags, connecting to Log Analytics workspaces, and assigning Azure Policies. With the right observability and governance in place, you'll be able to more easily use other Azure services like Azure Security Center, Azure Defender, Azure Sentinel, and Azure Automanage.   
+As a foundation for managing Azure Arc-enabled servers, we recommend organizing machines with tags, connecting to Log Analytics workspaces, and assigning Azure Policies. With the right observability and governance in place, you'll be able to more easily use other Azure services like Microsoft Defender for Cloud, Microsoft Defender for Cloud, Microsoft Sentinel, and Azure Automanage.   
 
 | Recommendation | Description |
 |---|---|

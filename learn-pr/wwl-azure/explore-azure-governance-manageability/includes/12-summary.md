@@ -1,4 +1,4 @@
-You explored Azure Resource Manager and Azure Resource Manager templates, examined role-based access control, and organized Azure resources with tags. You also explored Azure Policy, management groups, and Azure Automation, and reviewed security and compliance services in the Azure Security Center.
+You explored Azure Resource Manager and Azure Resource Manager templates, examined role-based access control, and organized Azure resources with tags. You also explored Azure Policy, management groups, and Azure Automation, and reviewed security and compliance services in the Microsoft Defender for Cloud.
 
 ## Learn more
 
@@ -8,6 +8,6 @@ You explored Azure Resource Manager and Azure Resource Manager templates, examin
  -  [What is Azure Policy?](/azure/governance/policy/overview)
  -  [What are Azure management groups?](/azure/governance/management-groups/overview)
  -  [What are Azure Resource Manager templates?](/azure/azure-resource-manager/templates/overview)
- -  [What is Azure Security Center?](/azure/security-center/security-center-introduction)
+ -  [What is Microsoft Defender for Cloud?](/azure/security-center/security-center-introduction)
  -  [Azure Monitor overview](/azure/azure-monitor/overview)
  -  [Use tags to organize your Azure resources and management hierarchy](/azure/azure-resource-manager/management/tag-resources)

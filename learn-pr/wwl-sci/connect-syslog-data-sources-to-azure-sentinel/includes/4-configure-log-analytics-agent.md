@@ -6,7 +6,7 @@ To configure the Log Analytics agent for syslog facilities:
 
     - From the Syslog Data connector page, select Open your workspace advanced settings configuration.
 
-    - From the Azure Sentinel portal, select **Settings** in the Configuration area. Select **Workspace Settings** Tab. Select **Advanced settings** in the Settings area.
+    - From the Microsoft Sentinel portal, select **Settings** in the Configuration area. Select **Workspace Settings** Tab. Select **Advanced settings** in the Settings area.
 
 1. Select **Data**.
 
@@ -47,4 +47,3 @@ The following facilities are supported with the Syslog collector:
 - ftp
 
 - local0-local7
-

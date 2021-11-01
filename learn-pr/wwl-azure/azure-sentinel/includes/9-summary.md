@@ -1,11 +1,11 @@
 
-Azure Sentinel is your tool to hunt and investigate potential breaches in your Azure solutions.
+Microsoft Sentinel is your tool to hunt and investigate potential breaches in your Azure solutions.
 
 You should be able to:
 
-- Explain what Azure Sentinel is and how it is used
-- Deploy Azure Sentinel
-- Connect data to Azure Sentinel, like Azure Logs, Azure AD, and others
+- Explain what Microsoft Sentinel is and how it is used
+- Deploy Microsoft Sentinel
+- Connect data to Microsoft Sentinel, like Azure Logs, Azure AD, and others
 - Track incidents using workbooks, playbooks, and hunting techniques
 
 ## Learn more
@@ -17,4 +17,3 @@ Microsoft Learn provides a large number of self-paced learning paths. For this l
 + [Use a framework to identify threats and find ways to reduce or eliminate risk](/learn/modules/tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk/)
 
 + [Create a threat model using data-flow diagram elements](/learn/modules/tm-create-a-threat-model-using-foundational-data-flow-diagram-elements/)
-
