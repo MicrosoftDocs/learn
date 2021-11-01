@@ -11,4 +11,4 @@ metadata:
   ms.topic: interactive-tutorial 
 durationInMinutes: 1 # user input: the estimate time to complete the unit
 content: |
-  [!include[](includes/5-exercise-filter-data-where-operator.md)]
+  [!include[](includes/6-exercise-filter-data-where-operator.md)]
