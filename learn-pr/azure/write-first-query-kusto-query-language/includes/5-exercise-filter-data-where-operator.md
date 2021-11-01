@@ -90,4 +90,6 @@ StormEvents
 :::image type="content" source="../media/5-where-3.png" alt-text="Screenshot of where operator example 3.":::
 
 >[!TIP]
-> Notice that all the dates are within the first half of the year, months 1-6. You may also see that even though we've selected events from the state of Florida, we don't see the state as an output column, since it was not specified in the `project` operator.
+> Notice that all the dates are within the first half of the year, months 1-6. 
+>
+>You may also see that even though we've selected events from the state of Florida, we don't see the state as an output column, since it was not specified in the `project` operator.
