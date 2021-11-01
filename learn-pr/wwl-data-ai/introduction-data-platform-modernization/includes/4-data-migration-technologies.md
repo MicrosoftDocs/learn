@@ -67,18 +67,18 @@ Azure SQL Database managed instance is a SQL Server database engine. While it in
 - SQL Server Analysis Services (SSAS).
 - SQL Server Integration Services (SSIS).
 
-## Azure SQL Data Warehouse
+## Azure Synapse Analytics
 
-SQL Data Warehouse is a cloud-based Enterprise Data Warehouse (EDW) that takes advantage of Massively Parallel Processing (MPP) to quickly run complex queries across petabytes of data. It's a distributed system designed to provide analytics on large data. Migrating to SQL Data Warehouse requires some design changes to table schemas and code that aren't difficult to understand but might take some time to implement. If your business requires an enterprise-class data warehouse, the benefits are worth the effort. However, if you don't need the power of SQL Data Warehouse, it will be more cost-effective to use Azure SQL Database or SQL Server on Virtual Machines.
+Azure Synapse Analytics is a cloud-based Enterprise Data Warehouse (EDW) that takes advantage of Massively Parallel Processing (MPP) to quickly run complex queries across petabytes of data. It's a distributed system designed to provide analytics on large data. Migrating to Azure Synapse Analytics requires some design changes to table schemas and code that aren't difficult to understand but might take some time to implement. If your business requires an enterprise-class data warehouse, the benefits are worth the effort. However, if you don't need the power of Azure Synapse Analytics, it will be more cost-effective to use Azure SQL Database or SQL Server on Virtual Machines.
 
-Consider using SQL Data Warehouse when you:
+Consider using Azure Synapse Analytics when you:
 
 - Have one or more Terabytes of data
 - Plan to run analytics on large amounts of data
 - Need the ability to scale compute and storage
 - Want to save on costs by pausing compute resources when you don't need them.
 
-Don't use SQL Data Warehouse when your workloads have:
+Don't use Azure Synapse Analytics when your workloads have:
 
 - High frequency reads and writes
 - Large numbers of singleton select statements
