@@ -25,16 +25,13 @@ elements that impact accessibility.
 
 ## Identifying visual elements
 
-Many gaming experiences today use visual cues or indicators to guide player success. For example, consider the following scenario.
+Many gaming experiences today use visual cues or indicators to guide player success. In game accessibility, it's important to think about the following:
 
-A player sees enemies approaching from the top left corner of their screen. Based on this visual information, they know to take the following measures:
-
-- They check their current health meter status. They see their health bar is half-full.
-- They check the amount of ammunition they have. Their ammunition count is zero.
-
-Based on this information (the presence of incoming enemies, their health bar status, their ammunition count, and the location of the enemies), they decide to flee in the opposite direction and avoid battle. They've decided that their chance of success in battle under these circumstances is low.
-
-The visual information this player perceived on-screen prompted a set of actions and decisions that affected the outcome of their success in gameplay. If the player did not have access to all of this visual information, they may have experienced negative gameplay outcomes.
+ - Is important information represented through visual means? For example, text-based menus and instructions, on-screen icons, and more.
+ - Is the visual representation of this information accessible to players with visual disabilities?
+ - How can gameplay be impacted if a player cannot access visual information due to lack of accessible supports?
+ 
+In the following video, you'll learn how to identify common visual elements in games that should be considered in the context of these questions.
 
 Identifying these elements is an important first step in accessible game development. When these elements are identified early in development, initiatives can be taken to ensure that they provide is also represented through non-visual means.
 
