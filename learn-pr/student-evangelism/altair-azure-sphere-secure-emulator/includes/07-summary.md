@@ -1,5 +1,3 @@
-This unit summarizes the main concepts that were presented in this module.
-
 In this module, you learned that:
 
 * Azure Sphere is secure by design and by default.
