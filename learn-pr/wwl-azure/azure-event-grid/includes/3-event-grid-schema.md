@@ -31,7 +31,7 @@ All events have the same following top-level data:
 
 | Property | Type | Required | Description |
 |--|--|--|--|
-| topic | string | No. If not included, Event Grid will stamp onto the event. If included it must match the Event Grid topic Azure Resource Manager ID exactly. | Full resource path to the event source. This field isn't writeable. Event Grid provides this value. |
+| topic | string | No. If not included, Event Grid will stamp onto the event. If included it must match the event grid topic Azure Resource Manager ID exactly. | Full resource path to the event source. This field isn't writeable. Event Grid provides this value. |
 | subject | string | Yes | Publisher-defined path to the event subject. |
 | eventType | string | Yes | One of the registered event types for this event source. |
 | eventTime | string | Yes | The time the event is generated based on the provider's UTC time. |

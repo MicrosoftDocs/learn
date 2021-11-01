@@ -2,8 +2,8 @@
 uid: learn.wwl.azure-event-grid
 metadata:
   title: Explore Azure Event Grid
-  description: "Explore Azure Event Grid"
-  ms.date: 10/29/2021
+  description: "Learn how to integrate Azure Event Grid in to your solution, implement access control to events, and how to route custom events to web endpoint by using Azure CLI."
+  ms.date: 11/01/2021
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -17,8 +17,8 @@ abstract: |
   * Implement authentication and authorization.
   * Route custom events to web endpoint by using Azure CLI.
 prerequisites: |
-  * You should be familiar with developer concepts and terminology.
-  * An understanding of cloud computing and some experience with the Azure portal
+  *   You should be familiar with developer concepts and terminology.
+  *   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
