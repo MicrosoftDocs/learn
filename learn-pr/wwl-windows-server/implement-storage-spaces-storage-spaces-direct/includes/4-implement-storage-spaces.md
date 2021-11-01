@@ -31,3 +31,9 @@ The main steps in the process are:
 1. Examine disk properties in Windows Admin Center. Use Windows Admin Center to examine the properties of the provisioned virtual disk and its volume.
 
  >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MAkL]
+
+---
+
+
+
+---

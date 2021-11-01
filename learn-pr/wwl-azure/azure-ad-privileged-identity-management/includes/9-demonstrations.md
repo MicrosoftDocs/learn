@@ -110,7 +110,7 @@ In this task, we will add the subscription to PIM, then add the Virtual Machine 
 In this task, we will sign-in as a user and activate the role. 
 
 1. Sign in to the **Portal** and **AZUser1**.
-1. Dearch for and select **Azure AD Privileged Identity Management**.
+1. Search for and select **Azure AD Privileged Identity Management**.
 1. Under **Tasks** select **My roles**.
 1. Under **Activate** select **Azure resources**.
 1. On the **Active roles** tab notice you have no assigned roles.

@@ -29,5 +29,4 @@ This module is an open-source component [available on GitHub](https://github.com
 > [!NOTE]
 > You might have seen or used Azure PowerShell commands that used an **-AzureRM** format. In December 2018 Microsoft released for general availability the AzureRM module replacement with the Az module. This new module has several features, notably a shortened cmdlet noun prefix of **-Az**, which replaces **AzureRM**. The **Az** module ships with backwards compatibility for the AzureRM module, so the **-AzureRM** cmdlet format will work.
 
-> [!NOTE]
-> Bookmark the [Azure PowerShell Reference](/powershell/module/az.compute/get-azvm?view=azps-3.3.0)
+Bookmark the [Azure PowerShell Reference](/powershell/azure/?view=azps-6.5.0).

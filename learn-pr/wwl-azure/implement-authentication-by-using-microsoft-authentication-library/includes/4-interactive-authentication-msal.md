@@ -19,11 +19,11 @@ In this exercise you'll learn how to perform the following actions:
 
 1. When the **Register an application** page appears, enter your application's registration information:
 
-    Field | Value
-    - | -
-    **Name** | `az204appreg`
-    **Supported account types** | Select **Accounts in this organizational directory only**
-    **Redirect URI (optional)** | Select **Public client/native (mobile & desktop)** and enter `http://localhost` in the box to the right.
+    | Field | Value |
+    |--|--|
+    | **Name** | `az204appreg` |
+    | **Supported account types** | Select **Accounts in this organizational directory only** |
+    | **Redirect URI (optional)** | Select **Public client/native (mobile & desktop)** and enter `http://localhost` in the box to the right. |
 
     Below are more details on the **Supported account types**.
 

@@ -29,12 +29,12 @@ quiz:
       explanation: "A NoSQL database can grow to unlimited size."
   - content: "What should be optimized when you're designing a data model for a NoSQL database?"
     choices: 
-    - content: "Storage"
+    - content: "Storage efficiency"
       isCorrect: false
       explanation: "The cost of storage relative to compute is cheap. So optimizing for storage isn't the primary objective."
-    - content: "Compute"
+    - content: "Compute efficiency"
       isCorrect: true
       explanation: "Compute is expensive relative to storage. So optimizing for compute by reducing the number of requests is the primary objective."
-    - content: "Data size"
+    - content: "Network efficiency"
       isCorrect: false
-      explanation: "Optimizing for the amount of data isn't a primary objective when you're designing a data model."
+      explanation: "Optimizing for network throughput isn't a primary objective when you're designing a data model."

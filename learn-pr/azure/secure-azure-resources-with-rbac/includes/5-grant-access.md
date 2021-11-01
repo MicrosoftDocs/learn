@@ -18,19 +18,15 @@ Follow this procedure to assign the Virtual Machine Contributor role to a user a
 
    ![Screenshot showing Access control with the Add role assignment button highlighted.](../media/5-resource-group-add-role-assignment.png)
 
-    The **Add role assignment** pane opens.
+1. On the **Role** tab, search for and select **Virtual Machine Contributor**.
+1. Select **Next**.
+1. On the **Members** tab, select **+ Select members**.
 
-   ![Screenshot of the Add permissions pane.](../media/5-add-permissions.png)
+    :::image type="content" source="../media/5-select-members-option.png" alt-text="Screenshot of the add role assignment page that shows the select members option.":::
 
-1. In the **Role** drop-down list, select **Virtual Machine Contributor**.
-
-1. In the **Select** list, select **LabUser-_XXXXXXX_**.
-
-    You can find the username on the **Resources** tab next to the instructions.
-
-   ![Screenshot of the Add permissions pane with all the fields completed.](../media/5-add-permissions-save.png)
-
-1. Click **Save** to create the role assignment.
+1. Search for and select the appropriate **LabUser-_XXXXXXX_** name. Find the exact username to use on the **Resources** tab next to the instructions.
+1. Select **Next**.
+1. Select **Review + assign**.
 
    After a few moments, the **LabUser-_XXXXXXX_** user is assigned the Virtual Machine Contributor role at the **FirstUpConsultantsRG1-_XXXXXXX_** resource group scope. The user can now create and manage virtual machines just within this resource group.
 
