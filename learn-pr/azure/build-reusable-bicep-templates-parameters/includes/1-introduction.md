@@ -8,7 +8,7 @@ You've been asked to prepare infrastructure for three environments: dev, test, a
 
 ## What will we be doing?
 
-In this module, you'll build a reusable Bicep template with parameters. The Bicep will define an Azure App Service plan and an app. It will also define a SQL server and database. You'll create a parameter file to specify the values for your environments. Then you'll secure the parameter values by using Key Vault.
+In this module, you'll build a reusable Bicep template with parameters. The Bicep file will define an Azure App Service plan and an app. It will also define a SQL server and database. You'll create a parameter file to specify the values for your environments. Then you'll secure the parameter values by using Key Vault.
 
 ## What is the main goal?
 

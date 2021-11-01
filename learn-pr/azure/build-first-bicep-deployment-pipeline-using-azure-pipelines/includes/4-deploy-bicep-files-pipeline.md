@@ -8,6 +8,9 @@ When you deploy a Bicep file from your own computer, you use the Azure CLI or Az
 
 Deployment by pipeline requires authentication, too. Because pipelines run without human intervention, pipelines authenticate to Azure by using a service principal. A service principal's credentials consist of an *application ID* and a secret, which usually is a key or a certificate. In Azure Pipelines, you use a *service connection* to securely store these credentials so that your pipeline can use them. A service connection also includes some other information to help your pipeline identify the Azure environment that you want to deploy to.
 
+> [!TIP]
+> In this module, you'll use Azure DevOps to automatically create a service principal when it creates a service connection. The module [Authenticate your Azure deployment pipeline by using service principals](xref:learn.azure.authenticate-azure-deployment-pipeline-service-principals) provides a more detailed explanation of service principals including how they work, as well as how you create them, assign them roles, and manage them.
+
 When you create a service connection, you name the connection. Steps refer to the service connection by using this name, so your pipeline YAML code doesn't need to contain secret information.
 
 When your pipeline starts, the agent that's running your deployment steps has access to the service connection, including its credentials. A pipeline step uses the credentials to sign in to Azure, just like you sign in yourself. Then, the actions that are defined in the step use the service principal's *identity*.
@@ -22,9 +25,6 @@ You must ensure that your service principal has the permissions it needs to exec
 Service connections are created in your Azure DevOps project. A single service connection can be shared by multiple pipelines. However, it's usually a good idea to set up a service connection and the corresponding service principal for each pipeline and each environment you deploy to. This practice helps increase the security of your pipelines, and it reduces the likelihood of accidentally deploying or configuring resources in a different environment than the one you expect.
 
 You also can set up your service connection so that it can be used only in specific pipelines. For example, when you create a service connection that deploys to your website's production environment, it's a good idea to ensure that only your website's pipeline can use this service connection. Restricting a service connection to specific pipelines stops someone else from accidentally using the same service connection for a different project and potentially causing your production website to go down.
-
-> [!TIP]
-> You can put even more checks and approvals in place for a service connection to be used in a pipeline. You'll learn more about these capabilities in a future module.
 
 ## Deploy a Bicep file by using the Azure CLI task
 
@@ -75,8 +75,7 @@ The Azure Pipelines web interface has an editor you can use to create variables 
 
 You can set an Azure Pipelines variable value as secret. When you set a variable value as secret, you can't view the value after you've set it. Azure Pipelines is designed to not reveal secret values in your pipeline logs.
 
-> [!WARNING]
-> By default, Azure Pipelines obfuscates secret variable values in pipeline logs, but you need to follow good practices as well. Your pipeline steps have access to all variable values, including secrets. If your pipeline includes a step that doesn't handle a secure variable securely, there's a chance the secret variable might be shown in the pipeline logs.
+[!include[Best-effort protection for secrets](../../includes/azure-devops-secret-best-effort.md)]
 
 You can let users override a variable value when they run your pipeline manually. The value a user provides is used only for that specific pipeline run. Variable overrides can be useful when you're testing your pipeline.
 

@@ -131,7 +131,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     | Resource Group | <rng>[sandbox resource group]</rng> |
     | Storage account Name | Enter a unique name, such as your initials, the date (in numeric format), and the text *storage*. For example, *jpws01012020storage* |
     | Performance | Standard |
-    | Replication | Geo-redundant storage (GRS) |
+    | Redundancy | Geo-redundant storage (GRS) |
 
 4. Select **Advanced**. On the **Advanced** page, in the **Data Lake Storage Gen2** section, select **Enabled**, and then select **Review + create**.
 
@@ -158,9 +158,9 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
 4. When the container has been created, double-click the **productqualitydata** container.
 
-5. On the **productqualitydata** page, click **+ Add Directory**, and add a directory named **plantA**.
+5. On the **productqualitydata** page, click **+ Add Directory**, and add a directory named **plantA** and click **Save**.
 
-6. Add a second directory named **plantB**.
+6. Add a second directory named **plantB** and click **Save**.
 
     Contoso has two manufacturing plants named *Plant A* and *Plant B*. Other applications will upload manufacturing data from each of these plants to the appropriate directory for later analysis.
 

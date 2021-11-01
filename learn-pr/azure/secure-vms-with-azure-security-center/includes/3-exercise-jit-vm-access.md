@@ -1,4 +1,4 @@
-You need to be in the _Standard pricing tier_ of Azure Security Center to use this feature. Once you activate a trial or migrate a subscription to this tier, you can enable JIT VM Access for selected Azure VMs in the subscription. If you don't want to start a trial now, you can read through the following instructions to see the required steps.
+You need to be in the _Standard pricing tier_ of Azure Security Center to use this feature. After you activate a trial or migrate a subscription to this tier, you can enable JIT VM Access for selected Azure VMs in the subscription. If you don't want to start a trial now, you can read through the following instructions to see the required steps.
 
 ## Create a new VM
 
@@ -9,11 +9,11 @@ Let's start by creating a virtual machine using Azure Cloud Shell.
 
 1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using an account that has access to a subscription where Azure Security Center is set up for the standard tier.
 
-1. Select the Cloud Shell icon from the top right of the Azure portal toolbar. This will open Cloud Shell at the bottom of the portal.
+1. Select the Cloud Shell icon from the top right of the Azure portal toolbar. Cloud Shell appears at the bottom of the portal.
 
-1. Start by setting some default values, so you don't have to enter them multiple times.
+    Start by setting some default values, so you don't have to enter them multiple times.
 
-    Set a default location. Here we'll use **eastus**, but feel free to change that to a location closer to you.
+1. Set a default location. Here, we'll use **eastus**, but feel free to change that to a location closer to you.
 
     ```azurecli
     az configure --defaults location=eastus
@@ -28,7 +28,7 @@ Let's start by creating a virtual machine using Azure Cloud Shell.
     az group create --name mslearnDeleteMe --location eastus
     ```
 
-    Go ahead and set this as the default resource group.
+1. Go ahead and set this as the default resource group.
 
     ```azurecli
     az configure --defaults group="mslearnDeleteMe"
@@ -39,7 +39,8 @@ Let's start by creating a virtual machine using Azure Cloud Shell.
     ```azurecli
     az vm create \
         --name SRVDC01 \
-        --image win2016datacenter \
+        --image win2019datacenter \
+        --resource-group mslearnDeleteMe \
         --admin-username azureuser \
         --admin-password <your-password-here>
     ```
@@ -74,19 +75,19 @@ You should be able to connect and administer the VM. Let's fix that!
 
 1. Under **Virtual machines**, select the **Not Configured** tab.
 
-1. Select the virtual machine from the resource group, MSLEARNDELETEME.
+1. Select the virtual machine from the resource group, *MSLEARNDELETEME*.
 
-1. Select **Enable JIT on 1 VM** with your selected VM, as shown in the following screenshot. The **JIT VM access configuration** pane appears for your VM.
+1. Select **Enable JIT on 1 VM** with your selected VM, as shown in the following screenshot.
 
     ![Screenshot that depicts how you can enable JIT VM Access for a selected VM.](../media/M3-RDP02.png)
 
-Once you enable the JIT rules, you can examine the Network Security Group for the VM. It will have a new set of rules applied to block remote management access, as shown in the following image:
+    The **JIT VM access configuration** pane appears for your VM. After you enable the JIT rules, you can examine the Network Security Group for the VM. It will have a new set of rules applied to block remote management access, as shown in the following image:
 
-![Screenshot that depicts rules to block remote management access.](../media/M3-RDP03.png)
+    ![Screenshot that depicts rules to block remote management access.](../media/M3-RDP03.png)
 
-Notice that the rules are applied to the internal address, and all management ports are included - both Remote Desktop Protocol (3389) and SSH (22).
+    Notice that the rules are applied to the internal address, and all management ports are included - both Remote Desktop Protocol (3389) and SSH (22).
 
-1. On the upper menu bar, select **Save**. The **Just-in-time VM access** pane reappears.
+1. On the top menu bar, select **Save**. The **Just-in-time VM access** pane reappears.
 
 ## Request Remote Desktop Access
 
@@ -98,10 +99,12 @@ If you try to RDP into the Windows VM at this point, you will find that access i
 
     ![Screenshot that depicts how you can request access to a VM.](../media/M3-RDP04.png)
 
-1. Select the ports you want to open - in this case, the Remote Desktop port (3389).
+    The **Request access** pane appears for SRVD01.
+
+1. Select the ports you want to open; in this case, the Remote Desktop port (3389).
 
     ![Screenshot that depicts opening a port by selecting On for its toggle.](../media/M3-RDP05.png)
 
-1. Select **Open ports** to finalize the request. You can set the number of hours to keep the port open from this pane as well. Once the time has expired, the port(s) will be closed, and access will be denied.
+1. Select **Open ports** to finalize the request. You can set the number of hours to keep the port open from this pane as well. After the time has expired, the port(s) will be closed, and access will be denied.
 
 Now, your Remote Desktop client should be able to connect successfully - at least for the time period you've allotted through Security Center.

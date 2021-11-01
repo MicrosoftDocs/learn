@@ -2,8 +2,6 @@ Azure is a cloud computing platform with an ever-expanding set of services to he
 
 In this module, you'll take an entry-level, end-to-end look at Azure and its capabilities. You'll gain a solid foundation for completing the available learning paths for Azure fundamentals.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Ibng]
-
 ## What is Azure fundamentals?
 
 Azure fundamentals is a series of six learning paths that familiarize you to Azure and its many services and features.
@@ -25,7 +23,7 @@ No matter your goals, Azure fundamentals has something for you. Take Azure funda
 
 **Preparation for Exam AZ-900**
 
-The Azure fundamentals learning path series can help you prepare for [Exam AZ-900: Microsoft Azure Fundamentals](/learn/certifications/exams/az-900). This exam includes six knowledge domain areas:
+The Azure fundamentals learning path series can help you prepare for [Exam AZ-900: Microsoft Azure Fundamentals](/learn/certifications/exams/az-900?azure-portal=true). This exam includes six knowledge domain areas:
 
 :::row:::
   :::column:::

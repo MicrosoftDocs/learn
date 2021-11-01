@@ -35,7 +35,7 @@ Azure Security Center is a free service that's now enabled by default for all Az
 
 Identity validation is becoming the first line of defense for applications. Restricting access to a web application by authenticating and authorizing sessions can drastically reduce the attack surface area. 
 
-Azure Active Directory (Azure AD) and Azure Active Directory B2C (Azure AD B2C) offer an effective way to offload the responsibility of identity and access to a fully managed service. Azure AD conditional access policies, Privileged Identity Management, and identity protection controls further enhance your ability to prevent unauthorized access and audit changes.
+Azure Active Directory (Azure AD) and Azure Active Directory B2C (Azure AD B2C) offer an effective way to offload the responsibility of identity and access to a fully managed service. Azure AD Conditional Access policies, Privileged Identity Management, and identity protection controls further enhance your ability to prevent unauthorized access and audit changes.
 
 ## Data protection
 

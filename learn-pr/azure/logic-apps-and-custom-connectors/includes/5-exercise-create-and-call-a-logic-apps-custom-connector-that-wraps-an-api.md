@@ -148,4 +148,4 @@ The Logic App is now complete, and will call the Web API through the custom conn
 
 1. Try entering other heights and widths.
 
-Congratulations! You've created a Logic Apps workflow that can call your in-hour PrintFramerAPi through a custom connector!
+Congratulations! You've created a Logic Apps workflow that can call your in-house PrintFramerAPi through a custom connector!

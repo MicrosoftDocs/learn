@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-arc-enabled-data-services.1-introduction
+metadata:
+  title: Introduction
+  description: This unit will contain the summary of what the module provides, learning objectives, and pre-requisites.
+  ms.date: 06/28/2021
+  author: bobward
+  ms.author: bobward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+title: Introduction
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

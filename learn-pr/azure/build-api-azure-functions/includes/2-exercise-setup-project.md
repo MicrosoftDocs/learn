@@ -2,25 +2,25 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 ## Scaffold the project resources
 
-1. Sign into the Sandbox (also known as, "Tailwind Traders Production Environment") as indicated at the top of this page.
+1. Sign in to Azure Cloud Shell (also known as, "Tailwind Traders Production Environment") as indicated at the top of this page.
 
-1. Copy the following line, and paste it into the Sandbox terminal to the right.
+1. Copy the following line, and paste it into Cloud Shell terminal to the right.
 
    ```bash
    git clone https://github.com/MicrosoftDocs/mslearn-build-api-azure-functions && ./mslearn-build-api-azure-functions/DB_SETUP/CREATE_DATABASE.sh
    ```
 
-   This will create a new database with product data. This process can take up to 10 minutes. Feel free to continue on with the Learn Module. The process will continue to run even if you leave this page.
+   This will create a new database with product data. This process can take up to 10 minutes. Feel free to continue on with the module. The process will continue to run even if you leave this page.
 
 ## Clone the project in Visual Studio Code
 
 1. Open Visual Studio Code.
 
-1. To open the View > Command Palette in Visual Studio Code.
+1. In the top menu bar, select **View** > **Command Palette**.
 
 1. In the prompt, enter *clone*.
 
-1. From the Command Palette, select **Git: Clone**.
+1. In the Command Palette, select **Git: Clone**.
 
 1. Enter the following repo URL.
 
@@ -38,25 +38,25 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 Two projects will appear in Visual Studio Code: "frontend" and "api". The "frontend" project contains the web app. The "api" project is where you will be building the serverless API with Azure Functions.
 
-## Run the frontend project
+## Run the front-end project
 
 1. To open the integrated terminal in Visual Studio Code, press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>.
 
-1. Select "frontend".
+1. Select **frontend**.
 
-1. To run the frontend project in the browser, from the integrated terminal, run the `npm start` command.
+1. To run the front-end project in the browser, in Cloud Shell, run the `npm start` command.
 
    ```bash
    npm start
    ```
 
-   A small webserver called "serve" should be running in your terminal. It will output the URL where the front-end app is running.
+   A small webserver called *serve* should be running in Cloud Shell. It will output the URL where the front-end app is running.
 
    :::image type="content" source="../media/npm-start.png" alt-text="Screenshot of Visual Studio Code terminal with a callout highlighting the url and port of running application." loc-scope="vs-code":::
 
-1. To open the app in the browser, select that URL in the terminal.
+1. To open the app in the browser, select that URL in Cloud Shell.
 
-1. The app will load, but there will be no data present. This is because you have not yet created the API for this app.
+   The app will load, but there will be no data present. This is because you have not yet created the API for this app.
 
    :::image type="content" source="../media/products-manager-start.png" alt-text="Screenshot of the application running in a browser. No data is displayed and an error message explaining that the get operation failed." loc-scope="other"::: <!-- no-loc -->
 

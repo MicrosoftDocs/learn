@@ -4,8 +4,8 @@ metadata:
   title: Create a web UI with ASP.NET Core
   description: "In this module, you'll learn how to create web pages using Razor with ASP.NET Core."
   ms.date: 02/12/2021
-  author: wadepickett
-  ms.author: wpickett
+  author: jongalloway
+  ms.author: jogallow
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Create a web UI with ASP.NET Core
@@ -17,9 +17,7 @@ abstract: |
   - Create a form that supports the app's product data management requirements.
   - Add client-side form input validation using Razor's Input Tag Helper.
   - Add server-side model validation using data annotations.
-  - Consume a RESTful service in your app to manage product data.
-  - Examine the lifecycle of a sample HTTP request.
-  - Deploy and test the web app.
+  - Run and test the web app.
 prerequisites: |
   - Experience writing C# at the beginner level
   - Ability to write HTML at an intermediate level
@@ -36,11 +34,9 @@ units:
 - learn.create-razor-pages-aspnet-core.2-why-when-use-razor-pages
 - learn.create-razor-pages-aspnet-core.3-setup-environment
 - learn.create-razor-pages-aspnet-core.4-run-razor-pages-project
-- learn.create-razor-pages-aspnet-core.5-new-razor-page-create-form
+- learn.create-razor-pages-aspnet-core.5-create-new-razor-page-and-form
 - learn.create-razor-pages-aspnet-core.6-create-pagemodel
-- learn.create-razor-pages-aspnet-core.7-lifecycle-httpclient
-- learn.create-razor-pages-aspnet-core.8-deploy-test
-- learn.create-razor-pages-aspnet-core.9-knowledge-check
+- learn.create-razor-pages-aspnet-core.7-exercise-create-pagemodel
 - learn.create-razor-pages-aspnet-core.10-summary
 iconUrl: /learn/achievements/aspnetcore/create-a-web-ui-with-aspnet-core.svg
 badge:

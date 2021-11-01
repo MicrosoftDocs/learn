@@ -28,7 +28,9 @@ We welcome contributions and feedback. How you contribute depends on who you are
 
 ### Microsoft employees
 
-* **Minor updates**: If you are contributing minor updates out of the goodness of your heart, you can fork the repository and submit updates from your fork. See the [Docs contributor guide](https://review.docs.microsoft.com/help/contribute/) for more information.
+All updates and changes require using a fork of this repository.
+
+* **Minor updates**: See the [Docs contributor guide](https://review.docs.microsoft.com/help/contribute/) for more information.
 
 * **New content + major changes**: If you want to create a new module or submit major changes, please fill out the new content request form at https://aka.ms/docs/welcome. Once you've agreed to a plan, you'll work with the right employees across C&L to help get training, bring that content in, or write new content. For more information about Microsoft Learn, review the [Microsoft Learn Docs](https://review.docs.microsoft.com/help/learn/?branch=master).
 

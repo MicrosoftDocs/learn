@@ -1,14 +1,16 @@
 All programs usually consist of many steps where the program operates on data. As part of running all those steps, it's common to store the intermittent result, the data, in a named reference. Then you can read or manipulate the data later. Named references are commonly referred to as *variables*.
 
-## Variables
+## Variables, bind a value
 
-To declare a variable in F#, you use the `let` keyword, followed by the name of the variable. You can also assign a value to your variable at the moment of declaration, like in this example:
+Variables are named references bound to a value, that you want to keep referring to in your code. In F#, it's thought of as binding a value. So what you do is to assign, or _bind_, a value to a named reference, a variable. To bind a value, you use the `let` keyword, a name for your reference and assign a value to it, like in the below code:
 
 ```fsharp
 let name = "Chris"
 ```
 
-After a variable is assigned to a variable, it can't be changed, it's immutable. The following code wouldn't compile and produces an error saying something like "error FS0027: This value is not mutable."
+Above `name` is the named reference and "Chris" its bound value.
+
+After a value is assigned to a variable, it can't be changed, it's immutable. The following code wouldn't compile and produces an error saying something like "error FS0027: This value is not mutable."
 
 ```fsharp
 let name = "Chris"

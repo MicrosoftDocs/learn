@@ -31,14 +31,14 @@ Suppose you have to troubleshoot a virtual network created by your colleagues. U
 
 You use the Azure portal to view the topology of an Azure network. In the Azure portal:
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and select **All services**. Then, search for **Network Watcher**.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and then search for and select **Network Watcher**.
 
-1. Select **Topology**.
+1. In the Network Watcher menu, under **Monitoring**, select **Topology**.
 
 1. Select a subscription, the resource group of a virtual network, and then the virtual network itself.
 
     > [!NOTE]
-    > To generate the topology, you need a Network Watcher instance in the same region as the virtual network.
+    > To generate the topology, you need the Network Watcher instance in the same geographical region as the virtual network.
 
     Here's an example of a topology generated for a virtual network named MyVNet.
 
@@ -46,7 +46,7 @@ You use the Azure portal to view the topology of an Azure network. In the Azure 
 
 ### What is the Connection Monitor tool?
 
-The Connection Monitor tool provides a way to check that connections work between Azure resources. To check that two VMs can communicate if you want them to, use this tool.
+The Connection Monitor tool provides a way to check that connections work between Azure resources. Use this tool to verify that two VMs can communicate if you want them to.
 
 This tool also measures the latency between resources. It can catch changes that will affect connectivity, such as changes to the network configuration or changes to network security group (NSG) rules. It can probe VMs at regular intervals to look for failures or changes.
 
@@ -80,15 +80,15 @@ Let's examine each tool and find out how they can help you solve problems.
 
 ### What is the IP flow verify tool?
 
-The IP flow verify tool tells you if packets are allowed or denied for a specific virtual machine. If a network security group denies a packet, the tool tells you the name of that group so that you can fix the problem.
+The IP flow verify tool tells you whether packets are allowed or denied for a specific virtual machine. If a network security group denies a packet, the tool tells you the name of that group so that you can fix the problem.
 
 This tool uses a 5-tuple packet parameter-based verification mechanism to detect whether packets inbound or outbound are allowed or denied from a VM. Within the tool, you specify a local and remote port, the protocol (TCP or UDP), the local IP, the remote IP, the VM, and the VM's network adapter.
 
 ### What is the next hop tool?
 
-When a VM sends a packet to a destination, it might take multiple hops in its journey. For example, if the destination is a VM in a different virtual network, the next hop might be the virtual network gateway that routes the packet to the destination VM.
+When a VM sends a packet to a destination, it might take multiple hops in its journey. For example, if the destination is a VM in a different virtual network, the next hop might be to the virtual network gateway that routes the packet to the destination VM.
 
-With the next hop tool, you can determine how a packet gets from a VM to any destination. You specify the source VM, source network adapter, source IP address, and destination IP address. The tool then determines the packet's destination. You can use this tool to diagnose problems caused by incorrect routing tables.
+With the next hop tool, you can determine how a packet gets from a VM to any destination. You specify the source VM, source network adapter, source IP address, and destination IP address. The tool then determines the packet's route. You can use this tool to diagnose problems caused by incorrect routing tables.
 
 ### What is the effective security rules tool?
 
@@ -104,13 +104,13 @@ You can also use the tool to spot vulnerabilities for your VM caused by unnecess
 
 ### What is the packet capture tool?
 
-You use the packet capture tool to record all of the packets sent to and from a VM. You'll then review the capture to gather statistics about network traffic or diagnose anomalies, such as unexpected network traffic on a private virtual network.
+The packet capture tool records all of the packets sent to and from a VM. When enabled, you can review the capture to gather statistics about network traffic or diagnose anomalies, such as unexpected network traffic on a private virtual network.
 
-The packet capture tool is a virtual machine extension that is remotely started through Network Watcher and happens automatically when you start a packet capture session.
+The packet capture tool is a virtual machine extension that is started remotely through Network Watcher and happens automatically when you start a packet capture session.
 
 Keep in mind that there is a limit to the amount of packet capture sessions allowed per region. The default usage limit is 100 packet capture sessions per region, and the overall limit is 10,000. These limits are for the number of sessions only, not saved captures. You can save packets captured in Azure Storage or locally on your computer.
 
-Packet capture has a dependency on the *Network Watcher Agent VM Extension* installed on the VM. For links to instructions that detail the installation of the extension on both Windows and Linux VMs, see the "Learn more" section at the end of this module.
+Packet capture has a dependency on the *Network Watcher Agent VM Extension* installed on the VM. For links to instructions that detail the installation of the extension on Windows and Linux VMs, see the "Learn more" section at the end of this module.
 
 ### What is the connection troubleshoot tool?
 

@@ -15,7 +15,7 @@ quiz:
   questions:
   - content: "How does Microsoft Endpoint Manager allow you to manage all your endpoints?"
     choices:
-    - content: "Microsoft Endpoint Manager admin center a one-stop web site to create policies and manage your devices and apps. It plugs-in other key device management services, including groups, security, conditional access, and reporting. Endpoint manager also shows devices managed by Configuration Manager, as well as Intune."
+    - content: "Microsoft Endpoint Manager admin center a one-stop web site to create policies and manage your devices and apps. It plugs-in other key device management services, including groups, security, Conditional Access, and reporting. Endpoint manager also shows devices managed by Configuration Manager, as well as Intune."
       isCorrect: true
       explanation: ""
     - content: "Microsoft Endpoint Manager admin center is a series of interconnected consoles that require separate administrator rights to access each console."

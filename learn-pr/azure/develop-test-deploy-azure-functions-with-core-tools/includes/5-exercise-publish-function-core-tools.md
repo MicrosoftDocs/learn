@@ -1,15 +1,17 @@
 In this exercise, we'll create a function app in Azure and publish our project.
 
 ## Create a function app
+> [!IMPORTANT]
+> The procedures on this page depend upon work completed in Unit 3. Additionally, the sandbox for this module must be active. The sandbox gives you free, temporary access to Azure and the Azure CLI. The Azure Cloud Shell to the right should already be signed in to your account and configured. If the sandbox is not active, you've lost the necessary access, resources, and output you need. Please go back and complete Unit 3.
 
 Before you can publish your code to a function app using Core Tools, you need to create the app in Azure. Let's use the Azure CLI in Azure Cloud Shell to do that.
 
-This tutorial's sandbox gives you free, temporary access to Azure, and the Azure CLI in Cloud Shell to the right has already been signed in to your account and configured to use your free access.
+
 
 To create a function app in Azure, run the following commands in Azure Cloud Shell.
 
 ```azurecli
-RESOURCEGROUP=<rgn>[sandbox resource group]</rgn>
+RESOURCEGROUP="<rgn>[sandbox resource group]</rgn>"
 STORAGEACCT=learnstorage$(openssl rand -hex 5)
 FUNCTIONAPP=learnfunctions$(openssl rand -hex 5)
 
@@ -25,7 +27,7 @@ az functionapp create \
   --storage-account "$STORAGEACCT" \
   --runtime node \
   --consumption-plan-location centralus \
-  --functions-version 2
+  --functions-version 3
 ```
 
 Here's what these commands do:

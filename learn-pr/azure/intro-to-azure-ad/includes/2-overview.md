@@ -11,7 +11,7 @@ Azure AD is a cloud-based identity management solution. It helps your company's 
 
 - Access internal resources such as applications on your corporate network, and cloud-based applications that your company builds.
 
-Azure AD also helps you keep user identities and applications secure through features like conditional access and identity protection.
+Azure AD also helps you keep user identities and applications secure through features like Conditional Access and identity protection.
 
 ![Azure AD.](../media/2-azure-ad.svg)
 

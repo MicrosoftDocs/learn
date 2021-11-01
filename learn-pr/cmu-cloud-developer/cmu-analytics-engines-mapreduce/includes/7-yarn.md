@@ -1,15 +1,15 @@
 In this unit we look at Hadoop 2.0, known as **YARN**.
 
-Hadoop has undergone a major overhaul to address several inherent technical deficiencies, including the reliability and availability of the JobTracker (JT) and the static resource (map and reduce slots)<sup>**10**</sup> allocation at TaskTrackers (TTs). The redesigned framework addresses such problems in the JT, Hadoop's master node and, therefore, a single point of failure (SPOF). Another major objective for the new Hadoop is to support, in addition to MapReduce, other distributed analytics engines. This allows for increased utilization of Hadoop clusters and eliminates the need for a large cluster to be deployed for each framework. For Hadoop, the result is a new version named **Yet Another Resource Negotiator** (YARN). We next introduce YARN and point out how it differs from the previous version Hadoop MapReduce, which we call MapReduce 1.0.
+Hadoop has undergone a major overhaul to address several inherent technical deficiencies, including the reliability and availability of the JobTracker (JT) and the static resource (map and reduce slots)<sup>**10**</sup> allocation at TaskTrackers (TTs). The redesigned framework addresses such problems in the JT, Hadoop's primary node and, therefore, a single point of failure (SPOF). Another major objective for the new Hadoop is to support, in addition to MapReduce, other distributed analytics engines. This allows for increased utilization of Hadoop clusters and eliminates the need for a large cluster to be deployed for each framework. For Hadoop, the result is a new version named **Yet Another Resource Negotiator** (YARN). We next introduce YARN and point out how it differs from the previous version Hadoop MapReduce, which we call MapReduce 1.0.
 
 YARN is the second generation of Hadoop (version 2.0 and higher). The main advantage of YARN from the previous generation of Hadoop is that the resource allocation is no longer fixed, and YARN is not bound to any single programming framework. This allows YARN to function as an independent cluster scheduler, which is capable of scheduling different workloads and applications. YARN is a two-level scheduler. The responsibility of the Job Tracker in Hadoop v1 in YARN is separated into resource allocation and task management, which enables YARN clusters to easily scale up.
 
 ## Architecture and workflow
 
-The fundamental change pursued in redesigning MapReduce 1.0 was segregating JT functionalities into multiple, independent daemons, illustrated in the following figure. YARN still employs a master-subordinate (also called master-slave) topology, but adds these enhancements:
+The fundamental change pursued in redesigning MapReduce 1.0 was segregating JT functionalities into multiple, independent daemons, illustrated in the following figure. YARN still employs a primary-subordinate topology, but adds these enhancements:
 
 - To support other distributed analytics engines in addition to MapReduce, the resource management module has been entirely detached from the JT and defined as a separate entity, the **Resource Manager (RM)**. The RM has been further sliced into two main components, the **Scheduler (S)** and the **Applications Manager (ASM)**. 
-- Instead of using a single master, JT, for all applications, YARN appoints one master per application, an **Application Master (AM)**. AMs can be distributed across cluster nodes to avoid application SPOFs and potential performance degradations. 
+- Instead of using a single primary, JT, for all applications, YARN appoints one primary per application, an **Application Master (AM)**. AMs can be distributed across cluster nodes to avoid application SPOFs and potential performance degradations. 
 - TTs have remained effectively unchanged but are now called **Node Managers (NMs)**.
 
 ![Elements of the YARN architecture: one RM, one ASM, one S, many AMs, and many NMs](../media/yarn-architecture.png)
@@ -22,7 +22,7 @@ _Figure 8: Elements of the YARN architecture: one RM, one ASM, one S, many AMs, 
 
 _Figure 9: The architecture of a YARN cluster_
 
-A per-cluster Resource Manager resides in the master node (Figure 9). The RM accepts application/job submissions by a client, allocates resources to jobs, monitors the cluster state, and manages the access to resources. The RM has two components: the Scheduler, which schedules job, and the Applications Manager, which creates, manages, monitors, restarts, and kills jobs. 
+A per-cluster Resource Manager resides in the primary node (Figure 9). The RM accepts application/job submissions by a client, allocates resources to jobs, monitors the cluster state, and manages the access to resources. The RM has two components: the Scheduler, which schedules job, and the Applications Manager, which creates, manages, monitors, restarts, and kills jobs. 
 
 The RM is the central authority; it arbitrates resource allocations among various competing applications/jobs. The RM dynamically allocates resources as leases to applications in the form of **containers**. Containers are a logical representation of resources in the form of amount of memory or number of CPUs. Currently, the RM handles memory capacities and CPU resources but does not yet support disk or network resources. The RM interacts with Node Managers to assemble a global view of the cluster and to enforce resource assignments. The RM tracks resource usage and node liveness through a heartbeat mechanism.
 
@@ -123,7 +123,7 @@ Every five seconds, the job client checks the job status to see if the job has f
 
 ## An example: WordCount
 
-Here we present an example of running WordCount on a YARN cluster consisting of 1 master node and 4 subordinate nodes. We employ the m1.large instance (2 vCPU, 6.5 ECU, 7.5 GB memory) offered by Amazon Web Services (AWS). The input data is partitioned as 39 plain text files on the distributed file system, which are 2.32 GB in total. The number of map tasks is computed to be 39, and we manually configure the number of reduce tasks in the job configuration file to be 7.
+Here we present an example of running WordCount on a YARN cluster consisting of 1 primary node and 4 subordinate nodes. We employ the m1.large instance (2 vCPU, 6.5 ECU, 7.5 GB memory) offered by Amazon Web Services (AWS). The input data is partitioned as 39 plain text files on the distributed file system, which are 2.32 GB in total. The number of map tasks is computed to be 39, and we manually configure the number of reduce tasks in the job configuration file to be 7.
 
 We use snapshots to detail the execution process of this job on YARN:
 

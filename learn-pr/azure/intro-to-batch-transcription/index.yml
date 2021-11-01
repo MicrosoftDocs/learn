@@ -26,6 +26,7 @@ roles:
 - student
 products:
 - azure
+- azure-cognitive-services
 - azure-speech-text
 units:
 - learn.azure.intro-to-batch-stt.introduction

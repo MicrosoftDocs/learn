@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.test-bicep-code-using-azure-pipelines.understand-pipeline-stages
+title: Understand pipeline stages
+metadata:
+  unitType: learning-content
+  title: Understand pipeline stages
+  description: Learn about multistage pipelines in Azure Pipelines. Also, learn about the typical deployment stages for Bicep code.
+  ms.date: 09/15/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-understand-pipeline-stages.md)]

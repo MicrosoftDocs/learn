@@ -163,7 +163,7 @@ We recommend that group owners review membership, as they're best situated to kn
 
 ### Review membership of exclusion groups in CA policies
 
-There are times when Conditional Access (CA) policies designed to keep your network secure shouldn't apply to all users. For example, a CA policy that only allows users to sign in while on the corporate network may not apply to the sales team, which travels extensively. In that case, the sales team members would be put into a group and that group would be excluded from the CA policy.
+There are times when Conditional Access policies designed to keep your network secure shouldn't apply to all users. For example, a CA policy that only allows users to sign in while on the corporate network may not apply to the sales team, which travels extensively. In that case, the sales team members would be put into a group and that group would be excluded from the CA policy.
 
 ### Review external users' group memberships
 

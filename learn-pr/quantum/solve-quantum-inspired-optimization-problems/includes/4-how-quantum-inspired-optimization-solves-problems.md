@@ -12,7 +12,7 @@ Simulated annealing is similar to gradient descent. The algorithm simulates a wa
 
 In this graph, notice that this uphill move is described as a *thermal jump*. That's because simulated annealing is an algorithm from physics that mimics the behavior of materials as they are slowly cooled. The walker is like an atom in a metal that's driven by temperature to reconfigure itself. These changes are random, but moves to lower-energy configurations are more likely than moves to higher-energy configurations. That is why we say the walker follows a biased random walk.
 
-Simulated annealing isn't a QIO method, because it uses only thermal effects. However, it's a technique that's commonly used for solving combinatorial problems such as the ones we use QIO methods on, and the problems can be formulated in the same way.
+Simulated annealing isn't a quantum-inspired optimization method, because it uses only thermal effects. However, it's a technique that's commonly used for solving combinatorial problems such as the ones we use quantum-inspired optimization methods on, and the problems can be formulated in the same way.
 
 ## Quantum annealing
 
@@ -32,10 +32,14 @@ This parameter defines the radius of neighboring states we can move to. As time 
 
 ## Azure Quantum optimization techniques
 
-In Azure Quantum, we make available a range of physics-inspired and quantum-inspired techniques to solve discrete and combinatorial optimization problems:
+In Azure Quantum, we make available a range of physics-inspired and quantum-inspired techniques to solve discrete and combinatorial optimization problems. The Microsoft QIO provider makes the following targets available:
 
-* **Simulated annealing**: A classical stochastic [simulation method](https://doi.org/10.1126/science.220.4598.671?azure-portal=true) that mimics the slow cooling of a material (annealing) to remove imperfections. A temperature is reduced according to a schedule. Thermal hops assist in escaping from local minima in the search space.
-* **Parallel tempering**:  A related [classical optimization approach](https://doi.org/10.1143/JPSJ.65.1604?azure-portal=true), where copies of a system are kept at different temperatures, automating the repeated heating and cooling in tempering approaches. It can be used to accelerate both classical and (simulated) quantum annealing, as well as many other heuristics.
-* **Quantum Monte Carlo**: A quantum-inspired optimization that mimics the quantum annealing method by using [quantum Monte-Carlo](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.96.134305?azure-portal=true) simulations. Analogous to the temperature in simulated annealing, the quantum tunneling strength is reduced over time. Quantum tunneling effects assist in escaping from local minima in the search space.
+| Name | Description| 
+|------|------------|
+|**Parallel Tempering**| A related classical optimization approach, where copies of a system are kept at different temperatures, automating the repeated heating and cooling in tempering approaches. It can be used to accelerate both classical and (simulated) quantum annealing, as well as many other heuristics.|
+|**Simulated Annealing**| A classical stochastic simulation method that mimics the slow cooling of a material (annealing) to remove imperfections. A temperature is reduced according to a schedule. Thermal hops assist in escaping from local minima in the search space.| 
+|**Population Annealing**| Just as Simulated Annealing simulates a walker that, ideally, always moves downhill, Population Annealing simulates a population of *metropolis walkers*, which continuously consolidate search efforts around favorable states.|
+|**Quantum Monte Carlo**| A quantum-inspired optimization that mimics the quantum annealing method by using quantum Monte-Carlo simulations. Analogous to the temperature in simulated annealing, the quantum tunneling strength is reduced over time. Quantum tunneling effects assist in escaping from local minima in the search space.|
+|**Substochastic Monte Carlo**| Substochastic Monte Carlo is a diffusion Monte Carlo algorithm inspired by adiabatic quantum computation. It simulates the diffusion of a population of walkers in the search space, where walkers are removed or duplicated based on how they perform according to the cost function.|
+|**Tabu Search**| Tabu Search looks at neighboring configurations. It can accept worsening moves if no improving moves are available and prohibits moves to previously visited solutions.|
 
-Note that this is just a small subset of available techniques, and we continue to develop and add [new solvers to the service](https://doi.org/10.1103/PhysRevA.94.022337?azure-portal=true).

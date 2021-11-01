@@ -13,4 +13,4 @@ The Azure Synapse Analytics workspace is the central location where you can view
 
 With a serverless SQL on-demand endpoint available, and an Azure Data Lake Storage Gen2 (ADLS Gen2) account, you can immediately realize value from the product by uploading files to the data lake, and using the serverless SQL on-demand service to prepare and explore the files
 
-Furthermore, while you are able to manage some aspects of the service in the Azure portal, the best practices is to connect to the Azure Synapse Studio to perform your activities from with there.
+Furthermore, while you are able to manage some aspects of the service in the Azure portal, the best practices is to connect to the Azure Synapse Studio to perform your activity from with there.
