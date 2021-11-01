@@ -8,12 +8,10 @@ In this unit, you'll get some overview information about Azure IoT Central that 
 
 Azure IoT Central follows the [eight attributes of successful IoT solutions](https://azure.microsoft.com/resources/8-attributes-of-successful-iot-solutions?azure-portal=true).
 
-## Steps to follow
+## Main tasks
 
 The high-level steps that you'll follow in this module are:
 
 1. Create an Azure IoT Central application.
 1. Set up a trusted relationship between your Azure Sphere tenant and Azure IoT Central.
-
-In the next exercise, you'll create the application and link it to your Azure Sphere tenant.
 

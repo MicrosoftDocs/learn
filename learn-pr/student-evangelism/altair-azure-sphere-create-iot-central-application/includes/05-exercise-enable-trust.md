@@ -51,7 +51,7 @@ After you enable trust, any device claimed into your Azure Sphere tenant will au
 
 1. Return to the PowerShell command line or Linux terminal.
 
-2. Download a validation certificate that proves you own the Azure Sphere tenant's CA certificate. Replace `<code\>` in the following command with the verification code from the previous step:
+2. Download a validation certificate. Replace `<code\>` in the following command with the verification code from the previous step:
 
    ```azsphere
    azsphere ca-certificate download-proof --destination ValidationCertification.cer --verification-code <code>
