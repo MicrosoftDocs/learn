@@ -4,12 +4,12 @@ title: Approaching gameplay through the lens of accessibility
 metadata:
   title: Approaching gameplay through the lens of accessibility
   description: This content is part of the Introduction to Gaming and Disability module.
-  ms.date: 08/10/2021
-  author: erzelman
-  ms.author: erzelman
+  ms.date: 11/5/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
   ms.topic: interactive-tutorial
   ms.prod: learning-gaming-accessibility
-durationInMinutes: 18
+durationInMinutes: 8
 content: |
   [!include[](includes/01-approach-gameplay.md)]
 quiz:
@@ -31,7 +31,7 @@ quiz:
     - content: "Determining the difference between enemy and ally characters through color alone is an inherent component of the game’s overall difficulty."
       isCorrect: false
       explanation: "Incorrect. Games should provide multiple difficulty options so that players can enjoy and complete the game, not create barriers to players you are colorblind."
-    - content: "Using color alone to provide information to the player, in this case to help them determine enemy from ally, introduces unintentional barriers to players who are colorblind and should be avoided."
+    - content: "Using color alone to provide information to the player, in this case to help them determine enemy from ally, can introduce unintentional barriers to players with visual disabilities and should be avoided."
       isCorrect: true
       explanation: "Correct. Having elements in the game that are distinguishable only by color creates barriers to access."
     - content: "Distinguishing enemy and ally character by color alone is okay because players who are colorblind can seek out other assistive technologies to make it work."

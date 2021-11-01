@@ -4,40 +4,40 @@ title: Core game elements and accessibility
 metadata:
   title: Core game elements and accessibility
   description: This content is part of the Introduction to Gaming and Disability module.
-  ms.date: 08/10/2021
-  author: erzelman
-  ms.author: erzelman
+  ms.date: 11/5/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
   ms.topic: interactive-tutorial
   ms.prod: learning-gaming-accessibility
-durationInMinutes: 18
+durationInMinutes: 25
 content: |
   [!include[](includes/02-core-game-elements.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following examples can pose unintentional barriers for players with visual disabilities?"
+  - content: "Which of the following examples can introduce unintentional barriers related to visual information?"
     choices:
     - content: "An audio timer counting down amount of time left in a mission in addition to the visual countdown on the screen."
       isCorrect: false
       explanation: "Incorrect. A timer that announces the time left through audio provides an additional means to consume the information."
-    - content: "The status of a players health as visually shown on the health meter status."
+    - content: "The status of a players health is visually shown on the health meter status."
       isCorrect: true
       explanation: "Correct. Any information that is shows only through UI and not accessible by a screen reader makes that information inaccessible to players with visual disabilities."
-    - content: "Accessibility options presented at the start of the game."
+    - content: "The default text size in a game is fairly large, therefore, no additional text size settings are provided"
       isCorrect: false
-      explanation: "Incorrect. Providing accessibility options at the very start of the game experience provides players the ability easily find accessibility features."
-  - content: "Which of the following examples can pose unintentional barriers for players with cognitive disabilities?"
+      explanation: "Incorrect. A default size that is large to some players may be unreadable for others. Without customization options, unintentional barriers can occur."
+  - content: "Which of the following examples can introduce unintentional barriers related to performing cognitive tasks?"
     choices:
-    - content: "Providing reminders of which button to use on a jump sequence."
+    - content: "Providing players with an option to enable reminders of which button to use on a jump sequence."
       isCorrect: false
       explanation: "Incorrect. Providing in game reminders of what game mechanics to use for a particular action eliminates the need for a player to remember all combinations."
-    - content: "Limiting the number of items or sequences to remember to less than 10 or for an average time of less than 20 game play minutes."
+    - content: "Providing players with a list of objectives at the beginning of a level that cannot be referenced again until the level is complete."
       isCorrect: true
-      explanation: "Correct. There is no specific number to the amount of information developers should ask players to remember or a time period they should remember it over."
+      explanation: "Correct. This situation places a demand on players to memorize information critical to gameplay. Players who cannot recall the information can experience unintentional barriers that block progress."
     - content: "Providing tutorials of new mechanics introduced in gameplay."
       isCorrect: false
-      explanation: "Incorrect. Providing an opportunity for players to try out and get familiarize themselves with new mechanics in a trial space removes barriers."
-  - content: "Which of the following examples to remove barriers for players with physical disabilities?"
+      explanation: "Incorrect. Providing an opportunity for players to try out and familiarize themselves with new mechanics in a trial space removes barriers."
+  - content: "Which of the following examples can introduce unintentional barriers related to game input?"
     choices:
     - content: "Provide different options for input devices, documented in accessible support articles."
       isCorrect: true
