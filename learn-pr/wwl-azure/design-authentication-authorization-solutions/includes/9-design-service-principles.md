@@ -93,7 +93,7 @@ Service principals are what govern an application connecting to Azure AD and can
 
 :::image type="content" source="../media/application-service-principal.png" alt-text="The diagram shows how application objects and service principals are used in Azure subscriptions.":::
 - Useful when Managed Identities cannot be used
-- Often used to authenitcate external applications to Azure resources
+- Often used to authenticate external applications to Azure resources
 
 
 ## Design a user consent solution for applications
