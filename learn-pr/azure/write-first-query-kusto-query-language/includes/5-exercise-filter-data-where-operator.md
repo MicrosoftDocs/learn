@@ -19,7 +19,8 @@ The `where` operator filters results that satisfy a certain condition. In this f
     
     :::image type="content" source="../media/5-where-1.png" alt-text="Screenshot of where operator.":::
     
-    Notice that the all rows returned do, in fact, have *DamageProperty* values greater than zero.
+    > [!TIP]
+    > Notice that the all rows returned do, in fact, have *DamageProperty* values greater than zero.
     
 1. Similarly, you could filter where the time of an event occurred more than a number of days ago, for example in the following query:
 
@@ -30,7 +31,8 @@ The `where` operator filters results that satisfy a certain condition. In this f
     | project State, EventType, DamageProperty
     ```
     
-    This query returns no results. Since the data is from 2007, there are no records from the past year. 
+    > [!TIP]
+    >This query returns no results. Since the data is from 2007, there are no records from the past year. 
     
 ## Filter using string operators
 
@@ -47,7 +49,8 @@ StormEvents
 
 :::image type="content" source="../media/5-where-2.png" alt-text="Screenshot of where operator example 2.":::
 
-As you can see, there are 200 records returned from this query, all of them from Florida, and having property damage greater than zero.
+> [!TIP]
+> As you can see, there are 200 records returned from this query, all of them from Florida, and having property damage greater than zero.
 
 ### Filter using the `has` operator
 
@@ -65,7 +68,8 @@ StormEvents
 
 :::image type="content" source="../media/5-where-has.png" alt-text="Screenshot of where and has operators.":::
 
-Notice in the results that we no longer see events such as tornados, but we do see Thunderstorm Wind and Strong Wind event types.
+> [!TIP]
+>Notice in the results that we no longer see events such as tornados, but we do see Thunderstorm Wind and Strong Wind event types.
 
 ## Filter on datetime values
 
