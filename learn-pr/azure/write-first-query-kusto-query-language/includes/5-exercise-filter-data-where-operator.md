@@ -49,7 +49,7 @@ StormEvents
 
 As you can see, there are 200 records returned from this query, all of them from Florida, and having property damage greater than zero.
 
-### Filter using `has`
+### Filter using the `has` operator
 
 Looking at the results of the last query, we see that one of the Event Types is called "Thunderstorm Wind". Let's see if there are any other kinds of wind that caused property damage in Florida. We can do this by searching on a string match of "wind" using the `has` operator. The `has` operator is a case-insensitive search that matches on a full term.
 
@@ -71,6 +71,11 @@ Notice in the results that we no longer see events such as tornados, but we do s
 
 Maybe we only care about damage done in the first half of the calendar year. In fact, we often want to limit our search to see events within a specific time range. Some interfaces with KQL have a dropdown time picker, but others require you to incorporate the date into the query itself.
 
+> [!TIP]
+> Ever heard the phrase, "you can't compare apples to oranges?" The same is true of data types. In order to compare or combine two different data types, you may need to change the data type of one of those input fields.
+>
+> For example, when we search on a datetime field, we have to input a datetime value for our boundary reference value. To do this, we use the `datetime()` function, which converts the date within the parentheses to a datetime value.
+
 Run the following query:
 
 ```kusto
@@ -84,15 +89,5 @@ StormEvents
 
 :::image type="content" source="../media/5-where-3.png" alt-text="Screenshot of where operator example 3.":::
 
-> [!TIP]
-> You might need to cast either your input conditions or your data values to a different data type in order to perform comparisons between values.
->
-> For example, when we search on a datetime field, we have to input a datetime value as shown in the query above.
-> 
->If you hover on a column name in the query editor, you can see the type of data contained in this column. 
->
-> :::image type="content" source="../media/5-where-4.png" alt-text="Screenshot of datatype in query editor.":::
-
-
-## Check your work
-
+>[!TIP]
+> Notice that all the dates are within the first half of the year, months 1-6. You may also see that even though we've selected events from the state of Florida, we don't see the state as an output column, since it was not specified in the `project` operator.

@@ -18,9 +18,22 @@ StormEvents
 
 :::image type="content" source="../media/4-project-operator.png" alt-text="Screenshot of project operator results.":::
 
+> [!TIP]
+> You can see that only the columns mentioned in the `project` operator appear in the output.
+
 ## Rename and define new columns with `project`
 
-You can also use project to rename columns and define new ones. Let's clean up the *InjuriesDirect* and *InjuriesIndirect* columns, and similarly the damage columns. Since these columns are of type int (integer), we can use a numerical operator add the values. We'll also rename the *State* column to specify that these are US states.
+You can also use project to rename columns and define new ones. We don't really care about the distinction between *InjuriesDirect* and *InjuriesIndirect*. It would be more useful to just know the total number of injuries. Let's make a new column that shows this sum. We'll do the same for the two types of damage columns by adding together damages to crops and damages to property. 
+
+> [!NOTE]
+> You can also use the `extend` operator to create calculated columns.
+
+Since these columns are of type int (integer), we can use a numerical operator add the values. We'll also rename the *State* column to specify that these are US states.
+
+> [!TIP] 
+> If you hover on a column name in the query editor, you can see the type of data contained in this column. 
+>
+> :::image type="content" source="../media/4-data-type.png" alt-text="Screenshot of datatype in query editor.":::
 
 To rename or perform numerical operations on operators, we'll use the following syntax in our query:
 
@@ -34,11 +47,12 @@ StormEvents
 
 :::image type="content" source="../media/4-project-rename.png" alt-text="Screenshot of project operator used to rename columns.":::
 
-## Use the `project away` operator
+> [!TIP]
+> Notice that the *State* column has been renamed to *US_State*. The *Damage* column is new, and has been calculated as the sum of *DamageCrops* and *DamageProperty*.
 
-What if you wanted to just remove a few select columns? For our exploration, we don't have any use for the IDs assigned to each episode and event. Let's remove them using the `project-away` operator, which indicates which columns to *remove*.
+## Use the `project-away` operator
 
-Run the following query:
+What if you wanted to just remove a few select columns? For our exploration, we don't have any use for the IDs assigned to each episode and event. You can remove specific columns using the `project-away` operator, which indicates which columns to *remove*, while leaving all remaining columns.
 
 ```kusto
 StormEvents
@@ -46,11 +60,5 @@ StormEvents
 | take 10
 ```
 
-:::image type="content" source="../media/4-project-away-operator.png" alt-text="Screenshot of project away operator":::
-
-In this example, we've removed two columns; *EpisodeId* and *EventId*. This leaves the remaining 20 columns.
-
-## Check your work
-
-To check your results, try scrolling to the far right of the resulting table. Do you see the *StormSummary* column?
-
+> [!TIP]
+> To check your results, try scrolling to the far right of the resulting table. Do you see the *StormSummary* column?
