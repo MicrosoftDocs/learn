@@ -4,13 +4,13 @@ In this unit, you'll clone the existing applications' source code repository. Wi
 
 Regardless of whether you use Visual Studio, Visual Studio Code, or some other integrated development environment (IDE), you'll indirectly use git to clone the repo. This module builds upon the [Blazor Workshop](https://github.com/dotnet-presentations/blazor-workshop) which contains a pizza ordering application.
 
-### [Linux](#tab/linux)
+# [Linux](#tab/linux)
 
 ```bash
 git clone https://github.com/dotnet-presentations/blazor-workshop
 ```
 
-### [Windows](#tab/Windows)
+# [Windows](#tab/windows)
 
 ```PowerShell
 git clone https://github.com/dotnet-presentations/blazor-workshop
@@ -20,13 +20,13 @@ git clone https://github.com/dotnet-presentations/blazor-workshop
 
 After you've successfully cloned the repository, it's best to build and run the app. You'll need to change directories into the _src_ directory of the repo before using the .NET CLI.
 
-### [Linux](#tab/linux)
+# [Linux](#tab/linux)
 
 ```bash
 cd ./blazor-workshop/src
 ```
 
-### [Windows](#tab/Windows)
+# [Windows](#tab/windows)
 
 ```PowerShell
 cd .\blazor-workshop\src
@@ -38,13 +38,13 @@ cd .\blazor-workshop\src
 
 Again, you're free to use your IDE or the .NET CLI:
 
-### [Linux](#tab/linux)
+# [Linux](#tab/linux)
 
 ```dotnetcli
 dotnet run --project ./BlazingPizza.Server/BlazingPizza.Server.csproj
 ```
 
-### [Windows](#tab/Windows)
+# [Windows](#tab/windows)
 
 ```dotnetcli
 dotnet run --project .\BlazingPizza.Server\BlazingPizza.Server.csproj
@@ -56,7 +56,7 @@ This application is for learning purposes, and its authentication allows users t
 
 ### Place a pizza order
 
-Once you've logged in, you can place an order for pizza. Select a pizza, choose the toppings and add it to the order. As an example, consider the following screen capture:
+Once you've logged in, you can place an order for pizza. Select a pizza, choose the toppings, and add it to the order. As an example, consider the following screen capture:
 
 :::image type="content" source="../media/add-to-order.png" alt-text="Blazing Pizza: A pizza(s) to order.":::
 
@@ -64,7 +64,7 @@ After adding pizza(s) to the order, place the order by selecting the **Order >**
 
 :::image type="content" source="../media/place-order.png" alt-text="Blazing Pizza: Place order.":::
 
-Immediately following the order creation, the app redirects to the order status page. This displays the various order status details from **Preparing**, to **Out for delivery**, and finally **Delivered**. While the order is **Out for delivery** the live map will update incrementally emulating the delivery drivers location.
+Immediately following the order creation, the app redirects to the order status page. This displays the various order status details from **Preparing** to **Out for delivery**, and finally **Delivered**. While the order is **Out for delivery** the live map will update incrementally emulating the delivery driver's location.
 
 Consider the following series of screen captures that show the gradual progression from the starting location to the ending location:
 
@@ -307,7 +307,7 @@ In the preceding C# code, the `FromOrder` calculates a new order status based on
 
 The refactored code is in a separate branch named `signalr`.
 
-### [Linux](#tab/linux)
+# [Linux](#tab/linux)
 
 Use the `git remote` command to determine the name of the `https://github.com/dotnet-presentations/blazor-workshop` repo:
 
@@ -327,7 +327,7 @@ Finally, use the `git checkout` command to context switch into the refactored so
 git checkout signalr
 ```
 
-### [Windows](#tab/Windows)
+# [Windows](#tab/windows)
 
 Use the `git remote` command to determine the name of the `https://github.com/dotnet-presentations/blazor-workshop` repo:
 

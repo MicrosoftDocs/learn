@@ -29,15 +29,20 @@ The preceding interface defines a single method, which will act as an event that
 
 :::code source="../code/BlazingPizza.Server/Hubs/OrderStatusHub.cs":::
 
-The preceding hub implementation exposes two methods that are invokable from clients. A client can call `StartTrackingOrder` given an `order` instance, and its connection will be added to a group unique to the order. Likewise, when it's done it calls `StopTrackingOrder` to leave the group and no longer receive notifications.
+The preceding hub implementation exposes two methods that are invokable from clients. A client calls `StartTrackingOrder` given an `order` instance, and the client's unique connection will be added to a group where notifications will be sent. Likewise, it calls `StopTrackingOrder` to leave the group and no longer receive notifications.
 
-### SignalR added and the hub is mapped
+### Configure SignalR server
 
 The `Startup` class needed to be updated to add ASP.NET Core SignalR, and the MessagePack protocol. Additionally, the `"/orderstatus"` endpoint is mapped to the `OrderStatusHub` implementation. Consider the following _Startup.cs_ file:
 
 :::code source="../code/BlazingPizza.Server/Startup.cs" highlight="22-23,32":::
 
-## Refactor the client app
+The preceding highlighted changes:
+
+- Add SingalR and the MessagePack protocol.
+- Map the `OrderStatusHub` to the endpoint.
+
+## Refactored client app
 
 // TODO:
 
