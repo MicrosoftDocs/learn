@@ -4,7 +4,7 @@ title: Design for Azure policy
 metadata:
   title: Design for Azure policy
   description: "Design for Azure policy"
-  ms.date: 10/12/2021
+  ms.date: 11/01/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-design-for-azure-policy.md)]
+  [!include[](includes/7-design-for-azure-policy.md)]
