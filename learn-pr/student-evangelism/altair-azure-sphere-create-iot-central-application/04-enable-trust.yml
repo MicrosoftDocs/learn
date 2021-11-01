@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-create-iot-central-application.enable-trust-concept
-title: Prepare to enable trust between Azure IoT Central and an Azure Sphere tenant
+title: Prepare to enable trust between Azure IoT Central and your Azure Sphere tenant
 metadata:
   title: Prepare to enable trust between Azure IoT Central and your Azure Sphere tenant
   description: Learn about Azure IoT Central and Azure Sphere tenant trust.
