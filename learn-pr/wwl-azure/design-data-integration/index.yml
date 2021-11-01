@@ -3,7 +3,7 @@ uid: learn.wwl.design-data-integration
 metadata:
   title: Design data integration
   description: "Azure Architects design and recommend data integration solutions."
-  ms.date: 10/15/2021
+  ms.date: 11/01/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -40,12 +40,12 @@ products:
 units:
 - learn.wwl.design-data-integration.introduction
 - learn.wwl.design-data-integration.solution-azure-data-factory
-- learn.wwl.design-data-integration.solution-azure-data-brick
 - learn.wwl.design-data-integration.solution-azure-data-lake
 - learn.wwl.design-data-integration.solution-azure-blob-storage
+- learn.wwl.design-data-integration.solution-azure-data-brick
 - learn.wwl.design-data-integration.solution-azure-synapse-analytics
-- learn.wwl.design-data-integration.design-strategy-for-hot-warm-cold-data-path
 - learn.wwl.design-data-integration.design-azure-synapse-analytics-solution-for-data-analysis
+- learn.wwl.design-data-integration.design-strategy-for-hot-warm-cold-data-path
 - learn.wwl.design-data-integration.design-azure-stream-analytics-solution-for-data-analysis
 - learn.wwl.design-data-integration.knowledge-check
 - learn.wwl.design-data-integration.summary-resources
