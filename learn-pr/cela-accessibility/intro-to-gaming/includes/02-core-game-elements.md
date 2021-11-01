@@ -12,15 +12,15 @@ Additionally, the team can consider the cognitive and physical demands that thei
 
 In this unit, you'll learn about common game elements that can pose unintentional barriers to access for players with disabilities. An awareness of these common elements is an important first step in determining where players can be unintentionally excluded during the preliminary stages of development.
 
-> [!NOTE] 
+> [!NOTE]
 > While vision, hearing, cognitive, and mobility-based elements are addressed in this introductory module, it’s important to note that there are many other game
 elements that impact accessibility.
-> 
+>
 > This includes elements related to:
 > - Speech and communication
 > - Sensory demands
 > - Mental health and more
-> 
+>
 > Additional information about these player experiences can be found in the summary and resources unit of this module.
 
 ## Identifying visual elements
