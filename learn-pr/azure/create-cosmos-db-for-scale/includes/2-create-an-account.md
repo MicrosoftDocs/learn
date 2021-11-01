@@ -23,13 +23,13 @@ You can optionally set up virtual networks and geo-redundancy during account cre
 
 1. On the Azure portal menu, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-   ![Create a resource from Azure portal menu](../media/2-create-a-resource-azure-cosmos-db.png)
+   ![Create a resource from Azure portal menu.](../media/2-create-a-resource-azure-cosmos-db.png)
 
 1. In the left menu pane, select **Databases**, and then select **Azure Cosmos DB** under *Popular offers*. The **Select API option** pane appears.
 
 1. Select **Create** within the **Core (SQL) - Recommended** box. The **Create Azure Cosmos DB Account - Core (SQL)** pane appears.
 
-   ![Select Azure Cosmos DB](../media/2-select-database-azure-cosmos-db.png)
+   ![Select Azure Cosmos DB.](../media/2-select-database-azure-cosmos-db.png)
 
    If you do not see **Azure Cosmos DB** in the list of databases, you can use the search box to search for it.
 
@@ -38,13 +38,15 @@ You can optionally set up virtual networks and geo-redundancy during account cre
     | Setting | Value | Description |
     |---|---|---|
     | **Project Details** |
-    | **Subscription** | *Concierge Subscription* | Select the Concierge Subscription. If you do not see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). |
-    | **Resource Group** | *<rgn>[sandbox resource group name]</rgn>* | Here you would either create a new resource group, or select an existing one in your subscription. |
+    | Subscription | *Concierge Subscription* | Select the Concierge Subscription. If you do not see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). |
+    | Resource Group | *<rgn>[sandbox resource group name]</rgn>* | Here you would either create a new resource group, or select an existing one in your subscription. |
     | **Instance Details** |
-    | **Account Name** | *Enter a unique name* | Enter a unique name to identify this Azure Cosmos DB account. Because *documents.azure.com* is appended to the ID that you provide to create your URI, use a unique but identifiable ID. You will use this ID to complete the exercises later in this module.<br><br>The ID can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 31 characters. |
-    | **Location** | *Select the region closest to you from the following list* | Select the location where the database should be located. |
-    | **Capacity mode** | *Provisioned throughput* | This is the default, and there is no need to change it. |
-    | **Apply Free Tier Discount** | *Do Not Apply* | The free tier is not necessary for this module. |
+    | Account Name | *Enter a unique name* | Enter a unique name to identify this Azure Cosmos DB account. Because *documents.azure.com* is appended to the ID that you provide to create your URI, use a unique but identifiable ID. You will use this ID to complete the exercises later in this module.<br><br>The ID can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 31 characters. |
+    | Location | *Select the region closest to you from the following list* | Select the location where the database should be located. |
+    | Capacity mode | *Provisioned throughput* | This is the default, and there is no need to change it. |
+    | Apply Free Tier Discount | *Do Not Apply* | The free tier is not necessary for this module. |
+
+    [!INCLUDE[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Select **Next: Global Distribution**.
 
@@ -53,26 +55,24 @@ You can optionally set up virtual networks and geo-redundancy during account cre
     | Setting | Value | Description |
     |---|---|---|
     | **Global Distribution** |
-    | **Geo-Redundancy** | *Disable* | This setting creates a replicated version of your database in a second (paired) region. Leave this set to disabled for now, as the database can be replicated later. |
-    | **Multi-region Writes** | *Enable* | This setting enables you to write to multiple regions at the same time. |
-
-    [!INCLUDE[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+    | Geo-Redundancy | *Disable* | This setting creates a replicated version of your database in a second (paired) region. Leave this set to disabled for now, as the database can be replicated later. |
+    | Multi-region Writes | *Enable* | This setting enables you to write to multiple regions at the same time. |
 
 1. Select **Review + create**.
 
-1. After the settings are validated, select **Create** to create the account.
+1. After successfully validating your settings, select **Create** to create the account.
 
 1. The account creation takes a few minutes. Wait for the portal to display the notification that the deployment succeeded, and select the notification.
 
-    ![Notification alert](../media/2-azure-cosmos-db-notification.png)
+    ![Notification alert.](../media/2-azure-cosmos-db-notification.png)
 
 1. In the notification window, select **Go to resource**.
 
-    ![Go to resource](../media/2-azure-cosmos-db-go-to-resource.png)
+    ![Go to resource.](../media/2-azure-cosmos-db-go-to-resource.png)
 
     The **Quick start** pane for your Azure Cosmos DB account appears.
 
-    ![The Azure portal Notifications pane](../media/2-azure-cosmos-db-account-created.png)
+    ![The Azure portal Notifications pane.](../media/2-azure-cosmos-db-account-created.png)
 
 ## Summary
 

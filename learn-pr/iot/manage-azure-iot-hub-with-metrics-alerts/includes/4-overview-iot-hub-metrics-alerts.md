@@ -2,7 +2,7 @@ The focus of this module is on the **Monitoring** features of IoT Hub. This unit
 
 Locate the monitoring section in the left-hand menu.
 
-  [![Screenshot showing the left-hand menu in the portal, for an IoT Hub](../media/metrics-alerts-monitoring.png)](../media/metrics-alerts-monitoring.png#lightbox)
+  [![Screenshot showing the left-hand menu in the portal, for an IoT Hub.](../media/metrics-alerts-monitoring.png)](../media/metrics-alerts-monitoring.png#lightbox)
 
 ## Alerts
 
@@ -12,7 +12,7 @@ _Alerts_ are one of the more dynamic, and fun, features of an IoT Hub. An alert 
 
 When adding an action group to your hub, there are eight types of action you can consider.
 
-  [![Screenshot showing the range of action types available when creating an action group](../media/metrics-alerts-action-type.png)](../media/metrics-alerts-action-type.png#lightbox)
+  [![Screenshot showing the range of action types available when creating an action group.](../media/metrics-alerts-action-type.png)](../media/metrics-alerts-action-type.png#lightbox)
 
 ### Action types
 
@@ -105,11 +105,11 @@ There are various charting options available in the portal, such as line charts,
 
 The following image shows a metric being created, for the number of telemetry messages sent.
 
-   [![Screenshot showing how to set up a metric showing the number of telemetry messages sent](../media/metrics-alerts-telemetry-messages-sent.png)](../media/metrics-alerts-telemetry-messages-sent.png#lightbox)
+   [![Screenshot showing how to set up a metric showing the number of telemetry messages sent.](../media/metrics-alerts-telemetry-messages-sent.png)](../media/metrics-alerts-telemetry-messages-sent.png#lightbox)
 
 The following image shows the number of telemetry messages being sent, shown below a bar chart showing the data usage. A number of charts can be rendered this way, enabling an operator to correlate the values of multiple metrics.
 
-   [![Screenshot showing the current IoT Hub dashboard, with two charts rendered](../media/metrics-alerts-sum-data.png)](../media/metrics-alerts-sum-data.png#lightbox)
+   [![Screenshot showing the current IoT Hub dashboard, with two charts rendered.](../media/metrics-alerts-sum-data.png)](../media/metrics-alerts-sum-data.png#lightbox)
 
 In addition to charting, metrics can be used to trigger alerts.
 
@@ -119,7 +119,7 @@ _Diagnostic settings_ are used to send auditing, and diagnostic, information to 
 
 For example, to archive the data telemetry for a period of 50 days into a storage account, you might set up a Diagnostic setting as follows.
 
-  [![Screenshot showing how to set up a diagnostic setting, and send the results to a storage account](../media/metrics-alerts-diagnostic-settings.png)](../media/metrics-alerts-diagnostic-settings.png#lightbox)
+  [![Screenshot showing how to set up a diagnostic setting, and send the results to a storage account.](../media/metrics-alerts-diagnostic-settings.png)](../media/metrics-alerts-diagnostic-settings.png#lightbox)
 
 We'll not be taking this feature any further in this module. However, follow the link in the **Summary** page for more details, if interested.
 
@@ -127,7 +127,7 @@ We'll not be taking this feature any further in this module. However, follow the
 
 _Logs_ in Azure IoT Hub are formed from SQL queries that are run on the incoming messages. There are a number of sample queries that are available for immediate use.
 
-  [![Screenshot showing the range of predefined queries for activity logs](../media/metrics-alerts-activity-samples.png)](../media/metrics-alerts-activity-samples.png#lightbox)
+  [![Screenshot showing the range of predefined queries for activity logs.](../media/metrics-alerts-activity-samples.png)](../media/metrics-alerts-activity-samples.png#lightbox)
 
 For example, the following sample is named **Latest 50 logs**:
 
@@ -142,7 +142,7 @@ When the query is run, the output is presented in table or chart form, in the po
 
 A user must select **Pin to dashboard** for the query to be persisted. Columns of a table can be selected or removed, and the resulting output exported if needed.
 
-   [![Screenshot showing the export options available, after generating logging data](../media/metrics-alerts-log-export.png)](../media/metrics-alerts-log-export.png#lightbox)
+   [![Screenshot showing the export options available, after generating logging data.](../media/metrics-alerts-log-export.png)](../media/metrics-alerts-log-export.png#lightbox)
 
 We'll not be taking the logs feature any further in this module. Follow the link on the **Summary** page, for more details.
 

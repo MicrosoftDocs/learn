@@ -9,7 +9,7 @@ Just as traditional RDBMSs are designed to run on top of a local file system, HB
 
 Applications store data organized as rows and columns in a table, which loosely resemble tables in an RDBMS. To illustrate, we organize the webtable example as an HBase table:
 
-![A table in HBase](../media/hbase-table.png)
+![A table in HBase.](../media/hbase-table.png)
 
 _Figure 2: A table in HBase_
 
@@ -35,7 +35,7 @@ By default, Get, Scan, and Delete operations on an HBase table are performed on 
 
 HBase is organized as a cluster of HBase nodes. These nodes are of two types: a master node and one or more slave nodes (called **RegionServers**; see Figure 3). HBase uses Apache ZooKeeper as a distribution coordination service for the entire HBase cluster. For example, it handles master selection (choosing one of the nodes to be the master node), the lookup for the `-ROOT-` catalog table (explained shortly), and node registration (when new regionservers are added)<!-- , and so on -->. The master node that is chosen by ZooKeeper handles such functions as region allocation, failover, and load balancing<!-- , among others -->. 
 
-![HBase architecture](../media/hbase-architecture.png)
+![HBase architecture.](../media/hbase-architecture.png)
 
 _Figure 3: HBase architecture_
 
@@ -45,7 +45,7 @@ As with most databases, HBase is able to persist data using an underlying file s
 
 HBase is designed to scale tables to a large number of rows and columns (in the millions), with the size of each table running into terabytes or petabytes. At this scale, it is impossible to host the data on a single node. To distribute data stored in HBase across the nodes in a cluster, HBase automatically partitions (shards) tables into **regions**, which are groups of consecutive rows in a table:
 
-![Splitting a table into multiple regions in HBase](../media/hbase-regions.png)
+![Splitting a table into multiple regions in HBase.](../media/hbase-regions.png)
 
 _Figure 4: Splitting a table into multiple regions in HBase_
 

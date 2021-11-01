@@ -56,6 +56,6 @@ Learn more about [Setting up your project for healthy contributions](https://hel
 
 Once you have prepared your repository for upload, create a repository on GitHub. Once created, navigate to the **Code** tab of your GitHub repository. This view will provide you with several ways to get your project code uploaded.
 
-![Importing code to a GitHub repository](../media/2-upload-code.png)
+![Importing code to a GitHub repository.](../media/2-upload-code.png)
 
 It is recommended that you use the **git** client or a Git-friendly tool to upload your source. Alternatively, you can manually upload your files using the **creating a new file** link. Over the long run you will likely find that using a **git** client will be the best way to manage changes, branches, and more.

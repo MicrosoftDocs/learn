@@ -1,6 +1,6 @@
 :::row:::
   :::column:::
-       ![Product road map epics](../media/epics.png)
+       ![Product road map epics.](../media/epics.png)
   :::column-end:::
         :::column span="3":::
 

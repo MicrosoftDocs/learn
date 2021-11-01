@@ -3,7 +3,7 @@
 For classified workloads, customers can use Azure services to secure target workloads while reducing identified risks. Azure, with Azure Stack Hub and Azure Stack Edge, can support private and hybrid cloud deployment models, and it’s suitable for many different government workloads involving both unclassified and classified data. The following data classification taxonomy is used in this unit: **confidential**, **secret**, and **top secret**. Unclassified data lies outside of this taxonomy, as it doesn’t require further protection. Similar data classification schemes exist in many countries.
 :::column-end:::
 :::column span="2":::
-:::image type="complex" source="../media/azure-support-classification-levels.png" alt-text="Azure support for various data classifications":::
+:::image type="complex" source="../media/azure-support-classification-levels.png" alt-text="Azure support for various data classifications.":::
 The infographic shows a series of concentric rings, which correspond to Azure support classification levels. The hub of the graphic is labeled “Top Secret—Private/hybrid cloud”. The second ring from center is labeled “Secret”, the third ring from center is labeled “Confidential”, and the fourth ring from center is labeled “Unclassified”. Spanning the second, third, and fourth rings (labeled “Secret”, “Confidential”, and “Unclassified”, respectively) is an arrow labeled “Microsoft Azure”. Above the arrow is a Microsoft Azure icon.
 :::image-end:::
 :::column-end:::

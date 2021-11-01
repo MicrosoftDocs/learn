@@ -111,13 +111,13 @@ In this module, you'll use a sample database called `world` from the official My
 1. Download the database file:
 
    ```bash
-   curl -o world.sql.zip https://downloads.mysql.com/docs/world.sql.zip
+   curl -o world-db.zip https://downloads.mysql.com/docs/world-db.zip
    ```
 
 1. Unzip the database file:
 
    ```bash
-   unzip world.sql.zip
+   unzip world-db.zip
    ```
 
 1. Access the SQL file:

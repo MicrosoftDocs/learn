@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-vnet-peering.determine-gateway-transit-connectivity
+title: Determine gateway transit and connectivity
+metadata:
+  title: Determine gateway transit and connectivity
+  description: "Determine gateway transit and connectivity"
+  ms.date: 07/23/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-determine-gateway-transit-connectivity.md)]

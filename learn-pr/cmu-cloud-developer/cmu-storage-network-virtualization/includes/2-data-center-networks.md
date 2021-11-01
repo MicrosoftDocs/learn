@@ -40,7 +40,7 @@ Finally, the presence of multiple tenants and the overcommitting of the shared n
 
 As we have seen above, network virtualization is simply a sharing mechanism that allows multiple isolated virtual networks to use the same physical network infrastructure. This allows virtual networks to be dynamically allocated and deployed on demand, precisely like VMs in virtualized servers.<sup>[3][^3]</sup> 
 
-![Types of network virtualization](../media/network-virtualization-types.png)
+![Types of network virtualization.](../media/network-virtualization-types.png)
 
 _Figure 1: Types of network virtualization_
 

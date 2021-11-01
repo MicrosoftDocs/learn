@@ -20,7 +20,7 @@ prerequisites: |
   - Familiarity with database concepts such as stored procedures and querying
   - Familiarity with CI/CD concepts such as GitHub Actions
   - Familiarity with available Azure services
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/create-foundation-modern-apps.svg
 levels:
   - intermediate
   - beginner

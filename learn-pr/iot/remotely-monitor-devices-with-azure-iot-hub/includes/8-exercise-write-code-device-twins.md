@@ -247,11 +247,11 @@ Now for our final code test of this module.
 1. Start the back-end service app.
 1. Check the console window for the device app, confirming the device twin synchronized correctly.
 
-    [![Screenshot showing the output when the device twins are synchronized on the device app](../media/cheesecave-device-twin-received.png)](../media/cheesecave-device-twin-received.png#lightbox)
+    [![Screenshot showing the output when the device twins are synchronized on the device app.](../media/cheesecave-device-twin-received.png)](../media/cheesecave-device-twin-received.png#lightbox)
 
 1. If we let the fan do its work, we should eventually get rid of those red alerts!
 
-    [![Screenshot showing the output when the device twins are synchronized on the back-end service app](../media/cheesecave-device-twin-success.png)](../media/cheesecave-device-twin-success.png#lightbox)
+    [![Screenshot showing the output when the device twins are synchronized on the back-end service app.](../media/cheesecave-device-twin-success.png)](../media/cheesecave-device-twin-success.png#lightbox)
 
 The code given in this module isn't industrial quality. It does show how to use direct methods, and device twins. However, the messages are sent only when the back-end service app is first run. Typically, a back-end service app would require a browser interface, for an operator to send direct methods. Or set device twin properties, when required.
 

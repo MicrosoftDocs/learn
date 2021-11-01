@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-dns.plan-for-private-dns-zones
+title: Plan for private DNS zones
+metadata:
+  title: Plan for private DNS zones
+  description: "Plan for private DNS zones"
+  ms.date: 08/17/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-plan-for-private-dns-zones.md)]

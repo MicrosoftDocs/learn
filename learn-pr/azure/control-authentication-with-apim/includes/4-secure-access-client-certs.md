@@ -10,10 +10,10 @@ With TLS client authentication, the API Management gateway can inspect the certi
 
 | Property | Reason |
 | -------- | ------ |
-| **Certificate Authority (CA)** | Only allow certificates signed by a particular CA |
-| **Thumbprint** | Allow certificates containing a specified thumbprint |
-| **Subject** | Only allow certificates with a specified subject |
-| **Expiration Date** | Only allow certificates that have not expired |
+| **Certificate Authority (CA)** | Only allow certificates signed by a particular CA. |
+| **Thumbprint** | Allow certificates containing a specified thumbprint. |
+| **Subject** | Only allow certificates with a specified subject. |
+| **Expiration Date** | Only allow certificates that have not expired. |
 | | |
 
 These properties are not mutually exclusive and they can be mixed together to form your own policy requirements. For example, you can specify that the certificate passed in the request is signed by a certain certificate authority and hasn't expired.
@@ -25,15 +25,15 @@ Client certificates are signed to ensure that they are not tampered with. When a
 
 ## Accept client certificates in the Consumption tier
 
-The Consumption tier in API Management is designed to conform with serverless design principles. If you build your APIs from serverless technologies, such as Azure Functions, this tier is a good fit. In the Consumption tier, you must explicitly enable the use of client certificates, which you can do on the **Custom domains** page. This step is not necessary in other tiers.
+The Consumption tier in API Management is designed to conform with serverless design principles. If you build your APIs from serverless technologies, such as Azure Functions, this tier is a good fit. In the Consumption tier, you must explicitly enable the use of client certificates, which you can do on the **Custom domains** pane. This step is not necessary in other tiers.
 
-![Configure the gateway to request certificates](../media/5-config-request-certificates.png)
+![Configure the gateway to request certificates.](../media/5-config-request-certificates.png)
 
-## Certificate Authorization Policies
+## Create certificate authorization policies
 
-Create these policies in the inbound processing policy file within the API Management gateway:
+Create these policies in the inbound processing policy file within the API Management gateway.
 
-![Inbound processing policy button](../media/5-inbound-policy.png)
+![Inbound processing policy button.](../media/5-inbound-policy.png)
 
 ### Check the thumbprint of a client certificate
 
@@ -51,7 +51,7 @@ Every client certificate includes a thumbprint, which is a hash, calculated from
 
 ### Check the thumbprint against certificates uploaded to API Management
 
-In the previous example, only one thumbprint would work so only one certificate would be validated. Usually, each customer or partner company would pass a different certificate with a different thumbprint. To support this scenario, obtain the certificates from your partners and use the **Client certificates** page in the Azure portal to upload them to the API Management resource. Then add this code to your policy.
+In the previous example, only one thumbprint would work so only one certificate would be validated. Usually, each customer or partner company would pass a different certificate with a different thumbprint. To support this scenario, obtain the certificates from your partners, and use the **Client certificates** pane in the Azure portal to upload them to the API Management resource. Then, add this code to your policy.
 
 ```XML
 <choose>
@@ -65,7 +65,7 @@ In the previous example, only one thumbprint would work so only one certificate 
 
 ### Check the issuer and subject of a client certificate
 
-This example checks the issuer and subject of the certificate passed in the request.
+The following example checks the issuer and subject of the certificate passed in the request.
 
 ```XML
 <choose>

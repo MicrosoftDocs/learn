@@ -1,4 +1,4 @@
-So far, we've added some good functionality to our bot, however we need to revisit our **responsible conversational UI** principles. Let's make some improvements and learn about others we could make!
+So far, we've added some good functionality to our bot, however we need to revisit our **responsible conversational UI** principles. Let's make some improvements and learn about others we could make.
 
 ## Help your users
 
@@ -7,7 +7,7 @@ When a user first starts to work with a bot, they don't always know what to say.
 > [!TIP]
 > Design your bot so users can't _get lost_ in the functionality. Always provide a "last resort" option, so users can keep going. A good approach is to have a **help** feature with a **menu** of tasks and commands that the bot understands.
 
-Let's add a **help** feature to our bot! Because we're already using QnA Maker, all we need to do is add corresponding text to the knowledge base through the QnA Maker UI.
+Let's add a **help** feature to our bot Because we're already using QnA Maker, all we need to do is add corresponding text to the knowledge base through the QnA Maker UI.
 
 1. Go to the [QnA Maker portal][QnAPortal]. Sign in with your Microsoft account or work or school account.
 
@@ -15,33 +15,29 @@ Let's add a **help** feature to our bot! Because we're already using QnA Maker, 
 
 1. Select **+ Add QnA Pair**.
 
-   > [!div class="mx-imgBorder"]
-   > ![The QnA Maker knowledge base edit dialog.](../media/qna-maker-add-pair.png)
+1. Enter some **Question** phrases to trigger our **help** feature. Here are some examples:
 
-1. Enter phrases to trigger the **help** feature.
+   - *What can I say?*
+   - *Help*
+   - *I do not know what to do*
 
-    Here are some examples:
-    - What can I say?
-    - Help
-    - I do not know what to do
+1. Now provide the bot response message for the user's help request. Add the following message as the **Answer** for each **Question** you entered in the previous step. We'll use Markdown syntax to apply special formatting to make the message more readable. 
 
-1. Add the bot response message for the help request.
+   ```markdown
+   This bot can help you with **capitals** of countries.
+   For example, you can say:
 
-    Briefly describe the bot functionality. Give examples of phrases that the bot understands. Use Markdown syntax to make your message more readable. You can include URLs for some images, but don't overcomplicate!
+   * What is the capital of India?
+   * In which country is Paris located?
+   * What is the population of Beijing?
 
-    ```markdown
-    This bot can help you with **capitals** of countries.
-    For example, you can say:
+   You can also look up some **definitions**:
 
-    * What is the capital of India?
-    * In which country is Paris located?
-    * What is the population of Beijing?
+   * What is a capital?
+   * What is the definition of country?
+   ```
 
-    You can also look up some **definitions**:
-
-    * What is a capital?
-    * What is the definition of country?
-    ```
+   First, we briefly describe the bot functionality. Then we give examples of phrases that the bot understands. We could include URLs for images or links to external topics, but it's best to keep the help message brief and simple. Don't overcomplicate!
 
 1. After you add the help message, select **Save and Train**.
 
@@ -49,12 +45,15 @@ Let's add a **help** feature to our bot! Because we're already using QnA Maker, 
 
 Now come back to your bot code in Visual Studio and try it out in the Emulator!
 
+<!-- Revised code for previous unit fails with errors in VS. Not able to test bot. -->
+
 > [!TIP]
 > You can design a complex multi-turn help system with QnA Maker by using [follow-up prompts and multi-turn conversations][QnAFollowUp].
 
+
 ## Show a welcome message
 
-The **Echo Bot** template includes functionality to send the user a welcome message. The `OnMembersAddedAsync` function in the `Bots\EchoBot.cs` file monitors new users in a chat session. When a new user enters the chat session, the bot sends a welcome message to the user.
+The **Echo Bot** template includes functionality to send the user a welcome message. The `OnMembersAddedAsync` function in the *Bots\EchoBot.cs`* file monitors new users in a chat session. When a new user enters the chat session, the bot sends a welcome message to the user.
 
 A welcome message provides three important pieces of information:
 
@@ -64,9 +63,7 @@ A welcome message provides three important pieces of information:
 
 It's easy to add a meaningful welcome message to a bot. A good welcome helps to build trust with your users. The difficult task is to share all pieces of information in a single message that fits on a small screen.
 
-Try removing the existing `welcomeText` variable defined in the `OnMembersAddedAsync` method, and defining your own as a string constant, like the one below, at the beginning of the `EchoBot` class where you define your other local variables.
-
-Here's a sample welcome message for our bot:
+Right now, our bot has a very simple welcome message. It's defined in the `welcomeText` variable in the `OnMembersAddedAsync` method. Try replacing the simple welcome with a longer message. You can start with the following sample, where we declare `welcomeText` as a string constant. Update the `welcomeText` definition in the `OnMembersAddedAsync` method in the *Bots\EchoBot.cs* file.
 
 ```csharp
 readonly string welcomeText =
@@ -74,12 +71,13 @@ readonly string welcomeText =
     "I am a teaching assistant bot that will help you learn **Geography**. I will not be able to teach you, but I can definitely help! Feel free to ask me about different countries and their capitals. If not sure, start with **What can I say?**";
 ```
 
-The [sample code for this unit][GitFlag] also defines a better message to respond to the user with when the bot doesn't understand the user's input, along with other neat features. Feel free to check it out and try it yourself!
+The [sample code for this unit][GitFlag] also defines a better message to respond to the user with when the bot doesn't understand the user's input. The sample had some other neat features too. Feel free to check it out and try it yourself!
 
 Here's an example of an initial conversation between our bot and a user:
 
 > [!div class="mx-imgBorder"]
-> ![A sample welcome message and help feature for our bot.](../media/help-conversation.png)
+> ![Screenshot that shows a sample welcome message and help feature for our bot.](../media/help-conversation.png)
+
 
 ## Support language diversity
 
@@ -87,7 +85,7 @@ In the first unit, we learned that an ideal responsible bot supports diversity. 
 
 - Store multiple sets of output messages, so the bot can switch between different conversation styles.
 - Examine the emotional sentiment of the user's utterances to detect the appropriate style to use. Azure [Text Analytics][TextAnalytics] can detect user sentiment.
-- Offer chit-chat functionality with [Project Personality Chat][PersonalityChat].
+- Offer chit-chat functionality as described in [Add chit-chat to a knowledge base][AddChitChat].
 - Design your bot to support multiple languages. This implementation is helpful for users, but it requires significant development effort. Switching between output languages can be as simple as selecting different sets of output messages, but support for language understanding requires separate LUIS models.
 - Support multiple languages by using **automatic translation** with the Azure Cognitive Services [Translator Text API][TranslatorAPI]. The API offers automatic [language detection][LangDetection] of user input messages. The API [translates][Translation] output messages to the user's language.
 
@@ -102,6 +100,7 @@ In more complex scenarios, we can include language-switching logic. This logic c
 
 The code to use the translation middleware is available in the [Microsoft > BotBuilder-Samples > Multilingual bot][BotTranslateSample] GitHub repository.
 
+
 ## Support speech
 
 Bots should welcome diversity. A responsible conversational bot accepts user input as text or speech - from a keypad, mouse, or touch-screen, and also from a microphone.
@@ -111,24 +110,20 @@ Add a speech interface to your bot with the Azure [Speech Service][SpeechSDK]. T
 > [!NOTE]
 > To support more communication channels, you can receive speech as an attachment, and convert the attachment to text on the server side by using the [Speech SDK][SpeechSDK].
 
-In this unit, we reviewed several ways to improve our bot and provide a robust conversational UX for our users. Remember that Azure Bot Framework is just a tool to make bot development easy - making your bot responsible is still up to the developer!
+In this unit, we reviewed several ways to improve our bot and provide a robust conversational UX for our users. Remember that Azure Bot Framework is just a tool to make bot development easy. Making a bot responsible is still up to the developer!
+
 
 <!-- Links -->
+
+[AddChitChat]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/chit-chat-knowledge-base?tabs=v1?azure-portal=true
+[AddSpeech]: https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-connector-text-to-speech?view=azure-bot-service-4.0?azure-portal=true
+[BotTranslateSample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/17.multilingual-bot?azure-portal=true
+[GitFlag]: https://github.com/MicrosoftDocs/mslearn-responsible-bots/tree/t4.0-flags?azure-portal=true
+[LangDetection]: https://docs.microsoft.com/azure/cognitive-services/Face/quickstarts/csharp?azure-portal=true
+[MiddleWare]: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-middleware?view=azure-bot-service-4.0?azure-portal=true
 [QnAPortal]: https://qnamaker.ai?azure-portal=true
-[QnAFollowUp]: /azure/cognitive-services/qnamaker/how-to/multiturn-conversation
-[BotAttachments]: /azure/bot-service/bot-builder-howto-add-media-attachments?tabs=csharp&view=azure-bot-service-4.0
-[AdaptiveCards]: /adaptive-cards/getting-started/bots
-[WikiFlags]: https://en.wikipedia.org/wiki/National_flag
-[CountryFlagsFile]: https://github.com/#TODO
-[GitFlag]: https://github.com/MicrosoftDocs/mslearn-responsible-bots/tree/t4.0-flags
-[TextAnalytics]: /azure/cognitive-services/text-analytics/
-[PersonalityChat]: https://aischool.microsoft.com/conversational/learning-paths/advanced-conversational-ai/ttmb-implementing-project-personality-chat
-[TranslatorAPI]: https://azure.microsoft.com/services/cognitive-services/translator-text-api/
-[LangDetection]: /azure/cognitive-services/Face/quickstarts/csharp
-[Translation]: /azure/cognitive-services/translator/quickstart-translator
-[MiddleWare]: /azure/bot-service/bot-builder-concept-middleware?view=azure-bot-service-4.0
-[BotTranslateSample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/17.multilingual-bot
-[BotDialogs]: /azure/bot-service/bot-builder-concept-dialog?view=azure-bot-service-4.0
-[BotDialogsSample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/19.custom-dialogs
-[SpeechSDK]: /azure/cognitive-services/speech-service/
-[AddSpeech]: /azure/bot-service/rest-api/bot-framework-rest-connector-text-to-speech?view=azure-bot-service-4.0
+[QnAFollowUp]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/multiturn-conversation?azure-portal=true
+[TextAnalytics]: https://docs.microsoft.com/azure/cognitive-services/text-analytics/?azure-portal=true
+[Translation]: https://docs.microsoft.com/azure/cognitive-services/translator/quickstart-translator?azure-portal=true
+[TranslatorAPI]: https://azure.microsoft.com/services/cognitive-services/translator-text-api/?azure-portal=true
+[SpeechSDK]: https://docs.microsoft.com/azure/cognitive-services/speech-service/?azure-portal=true

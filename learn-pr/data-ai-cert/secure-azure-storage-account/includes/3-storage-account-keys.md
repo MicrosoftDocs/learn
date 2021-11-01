@@ -1,4 +1,4 @@
-Much of Contoso's data is generated or consumed by custom applications. The applications are written in various languages. 
+Much of Contoso's data is generated or consumed by custom applications. The applications are written in various languages.
 
 Azure Storage accounts can create authorized apps in Active Directory to control access to the data in blobs and queues. This authentication approach is the best solution for apps that use Blob storage or Queue storage.
 
@@ -20,11 +20,11 @@ Authorization: SharedKey myaccount:CY1OP3O3jGFpYFbTCBimLn0Xov0vt0khH/E5Gy0fXvg=
 
 ## Storage account keys
 
-In Azure Storage accounts, shared keys are called *storage account keys*. Azure creates two of these keys (primary and secondary) for each storage account you create. The keys give access to _everything_ in the account. 
+In Azure Storage accounts, shared keys are called *storage account keys*. Azure creates two of these keys (primary and secondary) for each storage account you create. The keys give access to _everything_ in the account.
 
-You'll find the storage account keys in the Azure portal view of the storage account. Just select **Settings** > **Access keys**. 
+You'll find the storage account keys in the Azure portal view of the storage account. In the left menu pane of your storage account, select **Security + networking** > **Access keys**.
 
-![Screenshot showing the access keys in the Azure portal](../media/3-storage-keys.png)
+![Screenshot showing the access keys in the Azure portal.](../media/3-storage-keys.png)
 
 ## Protect shared keys
 

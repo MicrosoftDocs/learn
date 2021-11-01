@@ -14,7 +14,7 @@ A notebook is a collection of cells. These cells are run to execute code, to ren
 1. Select **Create**.
 1. Select **Notebook**.
 
-    ![The menu option to create a new notebook](../media/create-notebook.png)
+    ![The menu option to create a new notebook.](../media/create-notebook.png)
 
 1. Name your notebook **First Notebook**.
 1. Set the **Language** to **Python**.
@@ -31,7 +31,7 @@ Now that you've created your notebook, let's use it to run some code.
 
 To use your notebook to run a code, you must attach it to a cluster. You can also detach your notebook from a cluster and attach it to another depending upon your organization's requirements.
 
-![The options that are available when a notebook is attached to a cluster](../media/attach-detach-cluster.png)
+![The options that are available when a notebook is attached to a cluster.](../media/attach-detach-cluster.png)
 
 If your notebook is attached to a cluster, you can:
 

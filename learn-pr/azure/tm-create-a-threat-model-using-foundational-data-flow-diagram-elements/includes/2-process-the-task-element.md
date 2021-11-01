@@ -1,4 +1,4 @@
-![Process Element](../media/process.png)
+![Process Element.](../media/process.png)
 
 Depicted by a circle, this element represents activities that can modify or redirect received input to their proper outputs.
 

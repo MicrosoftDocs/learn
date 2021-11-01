@@ -43,12 +43,12 @@ Next, let's create a new registration in the Azure AD tenant for the web app. By
     | **Redirect URI (optional)** |
     | **Web** | `https://localhost:5000/signin-oidc` |
 
-    ![Registering an application](../media/4-register-application.png)
+    ![Registering an application.](../media/4-register-application.png)
 
 1. Select **Register**. The URL `https://localhost:5000/signin-oidc` is a placeholder that you'll change after you've deployed your application. The **WebApp-OpenIDConnect-DotNet** pane appears.
 
 1. Copy the **Application (client) ID** and **Directory (tenant) ID** values, and record them for later. You'll need these to complete the configuration file for this project.
 
-    ![Recording the application (client) ID](../media/4-application-client-id.png)
+    ![Recording the application (client) ID.](../media/4-application-client-id.png)
 
 You've now configured the Azure AD tenant, and performed the initial application registration to enable your application to communicate with your Azure AD tenant.

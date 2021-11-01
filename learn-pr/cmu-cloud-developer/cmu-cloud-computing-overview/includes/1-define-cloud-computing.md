@@ -11,7 +11,7 @@ We'll start with a simple overview of cloud computing: its definition, motivatio
 
 Information technology (IT) has become an essential requirement for most organizations to function effectively. Typically, and depending on a specific organization's needs, IT has three components associated with it: application software, development platforms, and the underlying infrastructure. These components are shown in the following figure:
 
-![Typical components of information technology](../media/it-components.png)
+![Typical components of information technology.](../media/it-components.png)
 
 _Figure 1: Typical components of information technology_
 

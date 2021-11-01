@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-introduction.3-rust-features
+metadata:
+  title: Unique features of Rust
+  description: Learn about some of the unique features of the Rust programming language.
+  ms.date: 08/08/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Unique features of Rust
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-rust-features.md)]
+
+quiz:
+  questions:
+
+  - content: "How is Rust code executed?"
+    choices:
+    - content: "Scripts are interpreted by Rust."
+      isCorrect: false
+      explanation: "Rust programs aren't compiled into a script, but as an executable file."
+    - content: "Rust code must be included in a C/C++ source file."
+      isCorrect: false
+      explanation: "Rust code must be included in a Rust source file with the proper extension, and be compiled before it's run."
+    - content: "Through compilation followed by direct execution."
+      isCorrect: true
+      explanation: "Correct. Rust code is compiled into an executable file, and then the executable is run."
+
+  - content: "What's an example of something you can't do with Cargo?"
+    choices:
+    - content: "Build an existing Rust project."
+      isCorrect: false
+      explanation: "You can build a project with Cargo by using the command `cargo build`."
+    - content: "Update the installed Rust compiler version."
+      isCorrect: true
+      explanation: "Correct. You can't update the Rust compiler version by using Cargo. Use the `rustup` command to update the Rust compiler version."
+    - content: "Publish a library to *Crates.io*."
+      isCorrect: false
+      explanation: "You can publish a library with Cargo by using the command `cargo publish`."
+   
+  - content: "What Rust playground tool can you use to find mistakes in your code?"
+    choices:
+    - content: "rustfmt"
+      isCorrect: false
+      explanation: "Incorrect. You can use the rustfmt tool to format your Rust code to use official Rust styles."
+    - content: "Clippy"
+      isCorrect: true
+      explanation: "Correct. You can use the Clippy collection of lints to find mistakes in your code and see suggestions for how to improve your code."
+    - content: "Debug"
+      isCorrect: false
+      explanation: "Incorrect. Debug is a compile option."

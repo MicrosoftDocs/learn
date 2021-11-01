@@ -167,6 +167,6 @@ namespace ADInteractive5
 } // EONamespace.  End of entire program source code.
 ```
 
-To configure the Azure Active Directory to use this example, you can follow [this article]( https://docs.microsoft.com/azure/azure-sql/database/active-directory-interactive-connect-azure-sql-db).
+To configure the Azure Active Directory to use this example, you can follow [this article](/azure/azure-sql/database/active-directory-interactive-connect-azure-sql-db).
 
 

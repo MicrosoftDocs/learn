@@ -16,6 +16,6 @@ At a high level, there are four depth layers used in threat modeling:
 |2|Required for highly sensitive systems, and contains additional diagrams for system subparts.|
 |3|Required for critical or kernel level systems, and contains additional diagrams for every process.|
 
-![Depth layers](../media/DepthLayers.png)
+![Depth layers.](../media/DepthLayers.png)
 
 We'll review each depth layer in the next few units.

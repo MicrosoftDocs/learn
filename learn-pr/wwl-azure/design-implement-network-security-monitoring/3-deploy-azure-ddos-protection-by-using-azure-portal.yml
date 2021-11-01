@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-network-security-monitoring.deploy-azure-ddos-protection-by-using-azure-portal
+title: Deploy Azure DDoS Protection by using the Azure portal
+metadata:
+  title: Deploy Azure DDoS Protection by using the Azure portal
+  description: "Deploy Azure DDoS Protection by using the Azure portal"
+  ms.date: 07/16/2021
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-deploy-azure-ddos-protection-by-using-azure-portal.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which one of these is a symptom of a DDoS attack?"
+    choices:
+    - content: "An unexplained surge in requests."
+      isCorrect: true
+      explanation: "Correct. You are not expecting that many concurrent requests that they start to overwhelm your resources."
+    - content: "Application running slowly."
+      isCorrect: false
+      explanation: "Incorrect. This could just be other performance-related issues in your application/connectivity."
+    - content: "HTTP 400 Bad Request"
+      isCorrect: false
+      explanation: "Incorrect. HTTP 400 Bad Request response status code indicates that the server cannot or will not process the request due to something that is perceived to be a client error"
+  - content: "Which action shall we take when under DDoS attack?"
+    choices:
+    - content: "Monitor Alerts and review attack profile."
+      isCorrect: true
+      explanation: "Correct. You should look at any alerts sent out and review the attack profile (what type of attack, where is it originating, is it targeting a particular resource)."
+    - content: "Scale out your Azure resources to keep systems running."
+      isCorrect: false
+      explanation: "Incorrect. Adding more resources will only help temporarily make your services available. The attacker could just ramp up the attack to overwhelm new resources."
+    - content: "Email your IT team."
+      isCorrect: false
+      explanation: "Incorrect. Letting your IT team know is a good idea, but you need to monitor and protect your resources first."

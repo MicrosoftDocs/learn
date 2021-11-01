@@ -302,7 +302,7 @@ Query Store comes with a series of system catalog views to view performance data
 
 Let's use one other method to view the resource usage of our workload. Azure Monitor provides performance metrics that you can view in various ways, including the Azure portal.
 
-1. Go to the Azure portal for your deployment. Find the instance of Azure SQL Database deployed. On the **Overview** for a database, the default view in the **Monitoring** pane is called **Compute Utilization**:
+1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) for your deployment. Find the instance of Azure SQL Database deployed. On the **Overview** for a database, the default view in the **Monitoring** pane is called **Compute Utilization**:
 
     :::image type="content" source="../media/5-azure-portal-compute-slow-query.png" alt-text="Screenshot of the Azure portal with a slow query.":::
 

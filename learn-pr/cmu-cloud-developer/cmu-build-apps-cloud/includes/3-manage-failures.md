@@ -1,6 +1,6 @@
 A large part of datacenter and cloud service management involves designing and maintaining a reliable service based on unreliable parts. The following figure shows part of a training for new hires, and should provide an idea of the large number (and types) of failures that are experienced regularly at a large datacenter. 
 
-![Reliability issues as shown in a training presentation](../media/reliability-slide.png)
+![Reliability issues as shown in a training presentation.](../media/reliability-slide.png)
 
 _Figure 2: Reliability issues as shown in a training presentation_
 
@@ -43,7 +43,7 @@ Critical system components can be duplicated by using additional hardware and so
 
 There is also a hybrid strategy, called **semi-active**, which is very similar to the active strategy. The difference is that only the output of the primary resource is exposed to the client. The outputs of the secondary resources are suppressed and logged, and are ready to switch over as soon as a failure of the primary resource occurs. The following figure shows the differences between the replication strategies.
 
-![Replication strategies](../media/fault-tolerance.png)
+![Replication strategies.](../media/fault-tolerance.png)
 
 _Figure 3: Replication strategies_
 

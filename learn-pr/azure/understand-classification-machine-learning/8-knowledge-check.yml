@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.understand-classification-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Multiple-choice questions
+  ms.date: 05/25/2021
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'What is the difference between classical regression and classification models?'
+    choices:
+    - content: "Regression models provide labels such as ‘cherry’/’banana’ but classification models calculate continuous numbers"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Classification models and linear regression models are two names for the same thing"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Classification models provide labels such as ‘cherry’/’banana’ but regression models calculate continuous numbers"
+      isCorrect: true
+      explanation: "Correct."
+  - content: 'How can we improve real-world model performance?'
+    choices:
+    - content: "By adding features"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Both adding and removing features can be useful, depending on the situation"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "By removing features"
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: 'What is one reason why logistic regression uses log-loss rather than a more intuitive cost function?'
+    choices:
+    - content: "Log-loss is stricter about model errors, even if they're close to correct"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "It is the only way to calculate error for categorical labels"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Log-loss is more permissive to model error if that error is close to correct"
+      isCorrect: false
+      explanation: "Incorrect."

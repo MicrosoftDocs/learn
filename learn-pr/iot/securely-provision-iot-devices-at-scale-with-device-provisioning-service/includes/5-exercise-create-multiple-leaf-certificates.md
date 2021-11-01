@@ -11,7 +11,7 @@ In this unit, we need to create one leaf certificate for each device that we wan
 
 1. Verify the leaf certificate was created correctly. You should see numerous console messages, ending in something like the following image.
 
-    [![Console output showing the correct creation of a leaf certificate](../media/iot-hub-provisioning-cert-create1.png)](../media/iot-hub-provisioning-cert-create1.png#lightbox)
+    [![Console output showing the correct creation of a leaf certificate.](../media/iot-hub-provisioning-cert-create1.png)](../media/iot-hub-provisioning-cert-create1.png#lightbox)
 
 1. To download the created certificate to your local machine, enter:
 
@@ -37,7 +37,7 @@ In this unit, we need to create one leaf certificate for each device that we wan
 
 1. If you get a `Permission denied` response, similar to the following, verify you've deleted the earlier certificates correctly.
 
-    [![Console output showing a leaf certificate was not created](../media/iot-hub-provisioning-cert-denied.png)](../media/iot-hub-provisioning-cert-denied.png#lightbox)
+    [![Console output showing a leaf certificate was not created.](../media/iot-hub-provisioning-cert-denied.png)](../media/iot-hub-provisioning-cert-denied.png#lightbox)
 
 1. Download the second certificate to your local machine, enter:
 

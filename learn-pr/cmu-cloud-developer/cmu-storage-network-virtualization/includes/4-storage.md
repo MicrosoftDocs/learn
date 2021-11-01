@@ -1,6 +1,6 @@
 In previous units, we discussed the various types of online storage devices that are in use—primarily **magnetic** and **solid-state drives**. We also looked at how these devices can be deployed in a number of ways in a datacenter. They are reproduced here for your convenience:
 
-![Individual server storage versus shared or enterprise storage](../media/storage.png)
+![Individual server storage versus shared or enterprise storage.](../media/storage.png)
 
 _Figure 6: Individual server storage versus shared or enterprise storage_
 

@@ -18,7 +18,7 @@ However, if you would rather create an Azure Cosmos DB database and container pr
     
     The **Add Container** area is displayed on the far right. You may need to scroll right to see it.
 
-    ![The Azure portal Data Explorer, Add Container pane](../media/5-azure-cosmosdb-data-explorer.png)
+    ![The Azure portal Data Explorer, Add Container pane.](../media/5-azure-cosmosdb-data-explorer.png)
 
 1. In the **Add Container** page, enter the following settings for the new container.
 
@@ -31,7 +31,7 @@ However, if you would rather create an Azure Cosmos DB database and container pr
     
 1. Accept the defaults for any remaining options, and then click **OK**. The Data Explorer displays the new database **Products** and the container **Clothing**.
 
-    ![The Azure portal Data Explorer, showing the new database and container](../media/5-azure-cosmos-db-new-collection.png)
+    ![The Azure portal Data Explorer, showing the new database and container.](../media/5-azure-cosmos-db-new-collection.png)
 
 ## Summary
 

@@ -6,7 +6,7 @@ Visit [Azure security benchmark](/azure/security/benchmarks/overview) to learn a
 
 ## Access control
 
-![Access Control domain](../media/policies/access-control-small.png)
+![Access Control domain.](../media/policies/access-control-small.png)
 
 |Issue|Solution|
 |-----|--------|
@@ -19,7 +19,7 @@ Visit [Azure security benchmark](/azure/security/benchmarks/overview) to learn a
 
 ## Secure development
 
-![Secure Development domain](../media/policies/secure-development-small.png)
+![Secure Development domain.](../media/policies/secure-development-small.png)
 
 |Issue|Solution|
 |-----|--------|
@@ -27,7 +27,7 @@ Visit [Azure security benchmark](/azure/security/benchmarks/overview) to learn a
 
 ## Business continuity
 
-![Business Continuity domain](../media/policies/business-continuity-small.png)
+![Business Continuity domain.](../media/policies/business-continuity-small.png)
 
 |Issue|Solution|
 |-----|--------|
@@ -38,7 +38,7 @@ Visit [Azure security benchmark](/azure/security/benchmarks/overview) to learn a
 
 ## Cryptography
 
-![Cryptography domain](../media/policies/cryptography-small.png)
+![Cryptography domain.](../media/policies/cryptography-small.png)
 
 |Issue|Solution|
 |-----|--------|
@@ -47,7 +47,7 @@ Visit [Azure security benchmark](/azure/security/benchmarks/overview) to learn a
 
 ## Asset management
 
-![Asset Management domain](../media/policies/asset-small.png)
+![Asset Management domain.](../media/policies/asset-small.png)
 
 |Issue|Solution|
 |-----|--------|
@@ -64,13 +64,13 @@ Visit [Azure security benchmark](/azure/security/benchmarks/overview) to learn a
 
 ## Legal
 
-![Legal domain](../media/policies/legal-small.png)
+![Legal domain.](../media/policies/legal-small.png)
 
 No other action needed.
 
 ## Incident response
 
-![Incident Response domain](../media/policies/incident-response-small.png)
+![Incident Response domain.](../media/policies/incident-response-small.png)
 
 |Issue|Solution|
 |-----|--------|
@@ -78,7 +78,7 @@ No other action needed.
 
 ## Network
 
-![Network domain](../media/policies/network-small.png)
+![Network domain.](../media/policies/network-small.png)
 
 |Issue|Solution|
 |-----|--------|
@@ -89,7 +89,7 @@ No other action needed.
 
 ## Operations
 
-![Operations domain](../media/policies/operations-small.png)
+![Operations domain.](../media/policies/operations-small.png)
 
 |Issue|Solution|
 |-----|--------|
@@ -103,7 +103,7 @@ No other action needed.
 
 ## Physical and environmental
 
-![Physical and environmental domain](../media/policies/physical-small.png)
+![Physical and environmental domain.](../media/policies/physical-small.png)
 
 |Issue|Solution|
 |-----|--------|
@@ -115,7 +115,7 @@ No other action needed.
 
 ## Governance
 
-![Governance domain](../media/policies/governance-small.png)
+![Governance domain.](../media/policies/governance-small.png)
 
 |Issue|Solution|
 |-----|--------|
@@ -125,7 +125,7 @@ No other action needed.
 
 ## Security architecture
 
-![Security architecture domain](../media/policies/security-architecture-small.png)
+![Security architecture domain.](../media/policies/security-architecture-small.png)
 
 |Issue|Solution|
 |-----|--------|
@@ -136,7 +136,7 @@ No other action needed.
 
 ## Supplier
 
-![Supplier risk domain](../media/policies/supplier-small.png)
+![Supplier risk domain.](../media/policies/supplier-small.png)
 
 |Issue|Solution|
 |-----|--------|

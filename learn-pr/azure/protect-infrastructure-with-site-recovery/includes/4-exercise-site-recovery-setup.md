@@ -2,7 +2,7 @@ Azure Site Recovery automates the setup of recovery from one region to another. 
 
 Currently, two VMs are running the company's patient and employee systems. These systems are running in the West US region. You've been asked to protect the infrastructure by enabling it to be recovered to the East US region. Using Azure Site Recovery, you'll enable a Recovery Services vault to replicate the current workloads.
 
-![Image showing the current Azure infrastructure and what will be set up by Azure Site Recovery](../media/4-environment.svg)
+![Image showing the current Azure infrastructure and what will be set up by Azure Site Recovery.](../media/4-environment.svg)
 
 In this exercise, you'll complete the setup of Azure Site Recovery using the Azure portal.
 
@@ -50,7 +50,7 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
     | Target location | **East US 2**. |
     | Target subscription | Select the **Customize** link. The **Customize target subscription** pane appears. In the **Target subscription** field, select your Azure subscription, and select **OK**. The **Enable replication** pane reappears. |
 
-    ![Screenshot showing the source options for replication](../media/4-enable-replication-source.png)
+    ![Screenshot showing the source options for replication.](../media/4-enable-replication-source.png)
 
 1. Select **Enable replication**. When deployment succeeds, select **Go to resource group**. The **Recovery Services vault** pane named *asr-vault* appears.
 
@@ -66,10 +66,10 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
 
 1. In the jobs list, select the **In progress** link to view how the replication setup is progressing.
 
-    ![Screenshot of all the Site Recovery jobs](../media/4-site-recovery-jobs.png)
+    ![Screenshot of all the Site Recovery jobs.](../media/4-site-recovery-jobs.png)
 
 1. You can select any of the listed jobs to view more details.
 
-    ![Screenshot of the Enable replication job's progress](../media/4-replication-job.png)
+    ![Screenshot of the Enable replication job's progress.](../media/4-replication-job.png)
 
 Two of these jobs will take the most time to complete. If you select either of the **Enable replication** jobs, you'll see that the **Installing Mobility Service and preparing target** step can take between five to 10 minutes to finish.

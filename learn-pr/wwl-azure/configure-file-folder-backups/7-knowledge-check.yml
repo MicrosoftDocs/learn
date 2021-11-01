@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-file-folder-backups.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/27/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "It is time to backup files and folders to Azure. Which of these steps should be completed first?"
+    choices:
+    - content: "Download the agent and credential file."
+      isCorrect: false
+      explanation: "That's incorrect. Download the agent and credential file would be the second step."
+    - content: "Configure the backup."
+      isCorrect: false
+      explanation: "That's incorrect.  Configure the backup would be the last step."
+    - content: "Create the recovery services vault."
+      isCorrect: true
+      explanation: "That's correct. The first step is to create a recovery services vault."
+  - content: "Azure Backup requires which of the following?"
+    choices:
+    - content: "A dedicated backup server."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Backup does not require a dedicated backup server."
+    - content: "A recovery service vault."
+      isCorrect: true
+      explanation: "That's correct. Azure Backup requires a recovery services vault."
+    - content: "An Azure blob storage container."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Backup does not require a blob storage container."
+  - content: "The infrastructure manager wants to know more about Azure Backup. Which of the following most accurately describes Azure Backup?"
+    choices:
+    - content: "Azure backup has unlimited data transfer."
+      isCorrect: true
+      explanation: "That's correct. Azure Backup doesn't limit the amount of inbound or outbound data that is transferred. Azure Backup also does not charge for the data that's transferred."
+    - content: "Azure Backup doesn't provide data encryption."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Backup provides solutions for securing data in transit and at rest."
+    - content: "Azure Backup is only for virtual machines in the cloud."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Backup offers a simple solution for backing up on-premises resources to the cloud."

@@ -269,7 +269,7 @@ Run the following command to redeploy the updated charts:
 
 The updated pods each have two containers now (`0/2`). One is the service container and the other is `linkerd-proxy`:
 
-:::image type="content" source="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png" alt-text="updated pods with two containers" border="true" lightbox="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png":::
+:::image type="content" source="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png" alt-text="updated pods with two containers." border="true" lightbox="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png":::
 
 ## Test the app again
 
@@ -289,7 +289,7 @@ After the redeployed containers are healthy, use the following steps to test the
     The correct response is received immediately. An error indicating that this coupon has already been redeemed is displayed.
 1. Check the log traces for the following messages:
 
-    :::image type="content" source="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png" alt-text="log traces with Linkerd" border="true" lightbox="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png":::
+    :::image type="content" source="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png" alt-text="log traces with Linkerd." border="true" lightbox="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png":::
 
 Linkerd follows a different approach to resiliency than what you saw with Polly. Linkerd transparently retried the operation multiple times in quick succession. The user didn't notice any failure.
 

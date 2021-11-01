@@ -54,7 +54,7 @@ In this exercise, you'll create an instance of the Azure Cache for Redis service
 
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the **NuGet Package Manager** window. The user is installing the **Microsoft.Web.RedisSessionStateProvider** package](..\media\4-install-package.png)
+    > ![Image of the **NuGet Package Manager** window. The user is installing the **Microsoft.Web.RedisSessionStateProvider** package.](..\media\4-install-package.png)
 
 1. If the **Preview Changes** window appears, select **OK**.
 

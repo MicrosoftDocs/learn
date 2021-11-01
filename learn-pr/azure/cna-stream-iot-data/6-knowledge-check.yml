@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cna-stream-iot-data.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Multiple-choice questions
+  ms.date: 04/24/2021
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Which Azure service serves as the basis for the built-in analytics functionality of Azure IoT Central?'
+    choices:
+    - content: "Azure Stream Analytics"
+      isCorrect: false
+      explanation: "Incorrect. Azure Stream Analytics isn't part of Azure IoT Central. You have the option of implementing it in scenarios where you need to address advanced stream processing requirements that exceed the capabilities of Time Series Insights that are built into the Azure IoT Central platform."
+    - content: "Azure Time Series Insights"
+      isCorrect: true
+      explanation: "Correct. The Azure IoT Central analytics service, which allows you to visualize historical trends, correlate distinct telemetries, and detect anomalies in collected data based on built-in and custom reports uses Azure Time Series Insights for telemetry processing."
+    - content: "Azure Synapse Analytics"
+      isCorrect: false
+      explanation: "Incorrect. Azure Synapse Analytics isn't part of Azure IoT Central. This is a dedicated data analytics service that's intended for data warehousing scenarios."
+  - content: 'Which Azure service supports interval-based export of telemetry data from Azure IoT Central?'
+    choices:
+    - content: "Azure Service Bus"
+      isCorrect: false
+      explanation: "Incorrect. Azure IoT Central applications support continuous data export to Azure Event Hub, Azure Service Bus, and custom webhooks."
+    - content: "Azure Event Hub"
+      isCorrect: false
+      explanation: "Incorrect. Azure IoT Central applications support continuous data export to Azure Event Hub, Azure Service Bus, and custom webhooks."
+    - content: "Azure Blob Storage"
+      isCorrect: true
+      explanation: "Correct. It's possible to configure interval-based data export from Azure IoT Central to Azure Blob storage."
+  - content: 'A developer onboarded an IoT device into their Azure IoT Central application and verified that they can review raw data representing telemetry that the device generates. However, they notice the default dashboards they created to display the data are empty. Which component of the Azure IoT Central application should they modify to ensure that the dashboards display the telemetry data?'
+    choices:
+    - content: "Rules"
+      isCorrect: false
+      explanation: "Incorrect. Rules evaluate conditions based on data coming from a device to determine when to trigger an action. They have no impact on visualization."
+    - content: "Device cloud properties"
+      isCorrect: false
+      explanation: "Incorrect. You can use cloud properties to assign other metadata to the virtual representation of individual devices in the cloud, regardless of the supported physical capabilities. They have no impact on visualization."
+    - content: "Device template"
+      isCorrect: true
+      explanation: "Correct. IoT Central accepts any syntactically valid JSON-formatted telemetry and displays it as raw data. However, telemetry characteristics, including the metrics names, must match their definition in the device model that's included in the device template. This is required for the telemetry data to display in the default and custom dashboards."

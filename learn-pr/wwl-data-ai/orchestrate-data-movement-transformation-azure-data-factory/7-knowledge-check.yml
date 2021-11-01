@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/31/2021
+  ms.date: 07/22/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -27,9 +27,9 @@ quiz:
       explanation: "Incorrect. Azure Synapse Analytics is a supported connector for built-in parameterization for Linked Services in Azure Data Factory."
   - content: "What is an example of a branching activity used in control flows?"
     choices:
-    - content: "TheIf-condition."
+    - content: "The If-condition."
       isCorrect: true
-      explanation: "Correct. An example of a branching activity is *TheIf-condition* activity which is similar to an if-statement provided in programming languages."
+      explanation: "Correct. An example of a branching activity is *The If-condition* activity which is similar to an if-statement provided in programming languages."
     - content: "Until-condition."
       isCorrect: false
       explanation: "Incorrect. The until activity functionality is similar to a do-until loop used in programming. What it does is running a set of activities (do) in a loop until the condition (until) is met. Therefore it is not an example of a branching activity."

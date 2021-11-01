@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-container-instances.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/12/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which of the following describes container groups?"
+    choices:
+    - content: "Container groups have three containers."
+      isCorrect: false
+      explanation: "That's incorrect. Container groups have two containers. One container listens on port 80, while the other listens on port 1433."
+    - content: "Container groups expose a single private IP address, with one exposed port."
+      isCorrect: false
+      explanation: "That's incorrect. Container groups exposes a single public IP address, with one exposed port."
+    - content: "Container groups are scheduled on a single host machine."
+      isCorrect: true
+      explanation: "That's correct. Container groups are scheduled on a single host machine."
+  - content: "Which of the following is a reason to select virtual machines over containers?"
+    choices:
+    - content: "Virtual machines provide complete isolation from the host operating system and other VMs."
+      isCorrect: true
+      explanation: "That's correct. Containers only provide lightweight isolation from the host and other containers, but don't provide as strong a security boundary as a virtual machine."
+    - content: "Virtual machines run the user mode portion of an operating system and can be tailored to contain just the needed services for the app."
+      isCorrect: false
+      explanation: "That's incorrect. Virtual machines run a complete operating system including the kernel."
+    - content: "Virtual machines use Azure Disks for local storage for a single node."
+      isCorrect: false
+      explanation: "That's incorrect. Virtual machines use a virtual hard disk (VHD) for local storage for a single VM."
+  - content: "Which of the following is a feature of Azure Container Instances?"
+    choices:
+    - content: "Billing occurs when the container is in use."
+      isCorrect: true
+      explanation: "That's correct. Organizations are only billed when the container is in use."
+    - content: "Containers require several minutes to load."
+      isCorrect: false
+      explanation: "That's incorrect. Containers launch in seconds and that is an advantage over virtual machines."
+    - content: "Containers use Azure blobs for retrieve and persist state."
+      isCorrect: false
+      explanation: "That's incorrect. Containers use Azure file shares to retrieve and persist state."

@@ -136,7 +136,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
 
-    :::image type="content" source="../media/6-3-docker-login.png" alt-text="Screenshot showing the search results listing Docker Login":::
+    :::image type="content" source="../media/6-3-docker-login.png" alt-text="Screenshot showing the search results listing Docker Login.":::
 
     > [!NOTE]
     > Docker action prior to version 2 had the login flow built-in, however, on versions 2 and above, these actions were separated. This is why we need two actions to set the entire workflow correctly.

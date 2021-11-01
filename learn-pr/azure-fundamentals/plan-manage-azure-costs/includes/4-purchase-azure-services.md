@@ -131,6 +131,8 @@ A zone is a geographical grouping of Azure regions for billing purposes. The fol
 
 ## How can I estimate the total cost?
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWGNx4]
+
 As you've learned, an accurate cost estimate takes all of the preceding factors into account. Fortunately, the Azure Pricing calculator helps you with that process.
 
 The Pricing calculator displays Azure products in categories. You add these categories to your estimate and configure according to your specific requirements. You then receive a consolidated estimated price, with a detailed breakdown of the costs associated with each resource you added to your solution. You can export or share that estimate or save it for later. You can load a saved estimate and modify it to match updated requirements.

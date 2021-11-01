@@ -1,0 +1,51 @@
+﻿### YamlMime:Module
+uid: learn.azure.cna-build-iot-service
+metadata:
+  title: Build an IoT service for your cloud-native apps by using IoT Central
+  description: This module describes how to extend your cloud-native application to provide IoT functionality by integrating its components with Azure IoT services and using Cosmos DB to provide a persistent data store.
+  ms.date: 04/29/2021
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build an IoT service for your cloud-native apps by using IoT Central
+summary: This module describes how to extend your cloud-native application to provide IoT functionality by integrating its components with Azure IoT services and using Cosmos DB to provide a persistent data store.
+abstract: |
+  In this module, you'll:
+  - Describe the architecture and components of IoT services
+  - Describe the characteristics and functionality of Azure Cosmos DB
+  - Integrate Azure data stores with IoT pipelines
+  - Implement Azure Cosmos DB for processing telemetry data
+  - Analyze and manage telemetry data
+  - Configure and manage IoT pipelines
+prerequisites: | 
+  - Basic understanding of cloud computing
+  - Basic familiarity with Azure
+  - Basic familiarity with programming concepts
+  - Basic familiarity with Azure Functions helpful but not required
+iconUrl: /learn/achievements/cna-build-iot-service.svg
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- azure
+- azure-pipelines
+- azure-cosmos-db
+- azure-iot-central
+units:
+- learn.azure.cna-build-iot-service.1-introduction
+- learn.azure.cna-build-iot-service.2-define-iot-service-architecture
+- learn.azure.cna-build-iot-service.3-describe-azure-cosmos-db
+- learn.azure.cna-build-iot-service.4-exercise-set-up-azure-cosmos-db
+- learn.azure.cna-build-iot-service.5-integrate-data-stores-iot-pipelines
+- learn.azure.cna-build-iot-service.6-exercise-integrate-azure-cosmos-db-iot-data-pipelines
+- learn.azure.cna-build-iot-service.7-analyze-telemetry-data
+- learn.azure.cna-build-iot-service.8-exercise-integrate-next-js-web-app-iot-pipeline
+- learn.azure.cna-build-iot-service.9-knowledge-check
+- learn.azure.cna-build-iot-service.10-summary
+badge:
+  uid: learn.azure.cna-build-iot-service.badge

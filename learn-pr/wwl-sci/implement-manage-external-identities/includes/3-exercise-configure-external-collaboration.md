@@ -20,7 +20,7 @@
 1. Under **Guest invite settings**, mark **Only user assigned to specific admin roles can invite guest users**.
 
     > [!NOTE]
-    > Inviting guests to collaborate moves the least restrictive option, where anyone can invite guests, to the least restrictive where no one can invite guests.
+    > Inviting guests to collaborate moves the least restrictive option, where anyone can invite guests, to the most restrictive where no one can invite guests.
     >- Anyone in the organization can invite guests: Set to allow anyone to invite guest users, including users, admins, and even other guest users.
     >- Member users and users assigned to specific admin roles: Set to allow only full members of the organization or members of admin groups to invite guests.
     >- Only users assigned specific admin roles: Set to allow only those people included in specific admin roles to invite guests.

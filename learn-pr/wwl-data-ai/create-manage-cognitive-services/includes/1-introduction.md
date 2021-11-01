@@ -5,15 +5,21 @@ Cognitive services offer a wide range of prebuilt AI capabilities across multipl
 | Language | Speech | Vision | Decision |
 | -------- | ------ | ------ | -------- |
 | Text Analytics | Speech to Text | Computer Vision |  Anomaly Detector |
-| Translator | Text to Speech | Video Indexer | Content Moderator |
-| QnA Maker | Speech Translation | Custom Vision | Personalizer |
-| Language Understanding | Speaker Recognition | Face | |
+| Translator | Text to Speech | Custom Vision | Content Moderator |
+| QnA Maker | Speech Translation | Face API | Personalizer |
+| Language Understanding | Speaker Recognition |  | |
 | | | | |
 
-While the details of each cognitive service can vary, the approach to provisioning and consuming them is generally the same.
+You can use Cognitive Services to build your own AI solutions, and they also underpin *Azure Applied AI Services* that provide out-of-the-box solutions for common AI scenarios. Applied AI Services include:
 
-> [!NOTE]
-> For more information about Azure Cognitive Services, see the [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) web page.
+- **Azure Form Recognizer** - an optical character recognition (OCR) solution that can extract semantic meaning from forms, such as invoices, receipts, and others.
+- **Azure Metrics Advisor** - A service built on the Anomaly Detector cognitive service that simplifies real-time monitoring and response to critical metrics.
+- **Azure Video Analyzer for Media** - A comprehensive video analysts solution build on the Video Indexer cognitive service.
+- **Azure Immersive Reader** - A reading solution that supports people of all ages and abilities.
+- **Azure Bot Service** - A cloud service for delivering conversational AI solutions, or *bots*.
+- **Azure Cognitive Search** - A cloud-scale search solution that uses cognitive services to extract insights from data and documents.
+
+While the details of each cognitive service can vary, the approach to provisioning and consuming them is generally the same.
 
 In this module, you will learn how to:
 

@@ -2,7 +2,7 @@ As the solution architect, you're planning to move sensitive engineering diagram
 
 In this unit, you'll create a service endpoint, and use network rules to restrict access to Azure Storage. You'll create a virtual network service endpoint for Azure Storage on the **Databases** subnet. You'll then verify that your **DataServer** VM can access Azure Storage. Lastly, you'll check that the **AppServer** VM, which is on a different subnet, can't access storage.
 
-![Diagram of exercise scenario service endpoint and rules](../media/5-exercise-task.svg)
+![Diagram of exercise scenario service endpoint and rules.](../media/5-exercise-task.svg)
 
 ## Add rules to the network security group
 

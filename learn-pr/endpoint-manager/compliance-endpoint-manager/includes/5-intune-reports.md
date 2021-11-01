@@ -18,7 +18,7 @@ Available reports include the following:
 - Device compliance trend report (Historical)
 - Azure Monitor integration reports (Specialist)
 
-Additionally, there is a device compliance report is available as the summary report.
+Additionally, there is a device compliance report that is available as the summary report.
 
 The reporting framework provides a consistent and more comprehensive reporting experience. The available reports provide the following functionality:
 - **Search and sort** – You can search and sort across every column, no matter how large the dataset.

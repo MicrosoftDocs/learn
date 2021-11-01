@@ -8,7 +8,7 @@ Resource Manager templates are JSON files used to define a set of resources to d
 
 To automate all sorts of administrative tasks, there are [example templates available in docs](https://azure.microsoft.com/resources/templates). In fact, you could have used one of these templates to encrypt your VM that you just did manually!
 
-![Screenshot showing the Azure templates](../media/5-browse-templates.png)
+![Screenshot showing the Azure templates.](../media/5-browse-templates.png)
 
 ## Use GitHub templates
 
@@ -18,7 +18,7 @@ The actual template source is stored in GitHub. You can browse to a template in 
 
 When the template is deployed, Azure will display a list of required input fields.
 
-![Screenshot showing template in Azure portal](../media/5-fill-in-template.png)
+![Screenshot showing template in Azure portal.](../media/5-fill-in-template.png)
 
 You can then execute the template to create, modify, or remove resources.
 

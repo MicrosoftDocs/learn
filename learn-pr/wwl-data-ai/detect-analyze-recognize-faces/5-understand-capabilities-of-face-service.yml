@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-analyze-recognize-faces.understand-capabilities-of-face-service
+title: Understand capabilities of the face service
+metadata:
+  title: Understand capabilities of the face service
+  description: "Understand capabilities of the face service"
+  ms.date: 07/09/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-understand-capabilities-of-face-service.md)]

@@ -28,4 +28,4 @@ Intune can help you to secure your managed computers in a number of ways, includ
 ### Configuration Manager software updates
 Software updates in Configuration Manager provides a set of tools and resources that can help manage the complex task of tracking and applying software updates to client computers in the enterprise. 
 
-[ ![Configuration Manager software updates](../media/intro-to-endpoint-manager-17.png) ](../media/intro-to-endpoint-manager-17.png#lightbox)
+[ ![Configuration Manager software updates.](../media/intro-to-endpoint-manager-17.png) ](../media/intro-to-endpoint-manager-17.png#lightbox)

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cna-orchestrate-containers.6-connecting-components
+title: Connecting cloud-native components
+metadata:
+  title: Connecting cloud-native components
+  description: Connecting cloud-native components
+  ms.date: 10/23/2020
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-connect-components.md)]

@@ -16,21 +16,21 @@ Using the Azure portal, you can view container and blob properties, and any meta
 
 1. Under **Blob service**, click **Blobs** and select a container.
 
-   ![Select container](../media/2-select-container.png)
+   ![Select container.](../media/2-select-container.png)
 
 1. On the left, click **Properties**.
 
-   ![Select properties](../media/2-container-select-properties-metadata.png)
+   ![Select properties.](../media/2-container-select-properties-metadata.png)
 
 1. You can now view the properties of the container.
 
-   ![Container properties](../media/2-container-properties.png)
+   ![Container properties.](../media/2-container-properties.png)
 
 1. On the left, click **Metadata**.
 
 1. You can now view any metadata for the container.
 
-   ![Container metadata](../media/2-container-metadata.png)
+   ![Container metadata.](../media/2-container-metadata.png)
 
 1. On the left, click **Overview**.
 
@@ -38,7 +38,7 @@ Using the Azure portal, you can view container and blob properties, and any meta
 
 1. You can now view the properties and metadata for that blob.
 
-   ![Blob properties and metadata](../media/2-blob-properties-metadata.png)
+   ![Blob properties and metadata.](../media/2-blob-properties-metadata.png)
 
 ## Azure Powershell
 

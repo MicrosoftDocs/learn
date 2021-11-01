@@ -20,7 +20,7 @@ High availability clustering helps you ensure your workloads remain available an
 
 An active-active architecture lets you distribute and load balance demand between multiple nodes, such as two identical Azure virtual machines. You can have these Azure virtual machines running together and sharing the demand. You can also distribute demand to these nodes based on different routing methods.
 
-![Active-active example](../media/4-active-active-cluster.png)
+![Active-active example.](../media/4-active-active-cluster.png)
 
 The previous diagram is a high-level example of an active-active cluster in action.
 
@@ -42,4 +42,4 @@ Traffic Manager gives you the ability to set the frequency of probing to monitor
 
 After a failover is completed, clients are directed transparently to the new endpoint in Azure. When you've addressed the issue that caused the failover, you can use Azure Site Recovery to fail back again to your on-premises environment. Traffic Manager continues to probe for the health of your on-premises endpoint. When Traffic Manager identifies that the endpoint is healthy again, it directs traffic back to your on-premises environment.
 
-![Hybrid network](../media/4-hybrid-network.png)
+![Hybrid network.](../media/4-hybrid-network.png)

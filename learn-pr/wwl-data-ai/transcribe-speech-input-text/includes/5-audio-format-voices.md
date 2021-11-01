@@ -1,4 +1,4 @@
-When synthesizing speech, you can use an **SpeechConfig** object to customize the audio that is returned by the Speech service.
+When synthesizing speech, you can use a **SpeechConfig** object to customize the audio that is returned by the Speech service.
 
 ## Audio format
 

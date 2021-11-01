@@ -2,7 +2,7 @@ Applications, sensors, monitoring devices, and gateways broadcast continuous eve
 
 Data engineers use Azure Stream Analytics to process streaming data and respond to data anomalies in real time. You can use Stream Analytics for Internet of Things (IoT) monitoring, web logs, remote patient monitoring, and point of sale (POS) systems.
 
-![Diagram showing how to apply Stream Analytics in a system](../media/8-streaming-analytics-framework.png)
+![Diagram showing how to apply Stream Analytics in a system.](../media/8-streaming-analytics-framework.png)
 
 ## When to use Stream Analytics
 
@@ -24,7 +24,7 @@ Azure Event Hubs provides big-data streaming services. It's designed for high da
 
 You can use Azure Storage to store data before you process it in batches.
 
-![Table comparing streaming IoT capabilities](../media/8-streaming-comparison.png)
+![Table comparing streaming IoT capabilities.](../media/8-streaming-comparison.png)
 
 ## Data processing
 

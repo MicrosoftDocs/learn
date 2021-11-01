@@ -16,8 +16,8 @@ Monitor CPU activity and memory availability to see if you need to scale up your
 
 To respond to a high load, you can create an alert rule for the virtual machine with a condition for the CPU metric. For example, you might monitor to see if the average value over any 15 minutes is higher than 85 percent.
 
-![Screenshot that shows adding an alert rule](../media/7-condition.png)
+![Screenshot that shows adding an alert rule.](../media/7-condition.png)
 
 Then add an action and create an action group. The action group sends you an email and can then scale up your virtual machine.
 
-![Screenshot that shows adding an action group](../media/7-runbook.png)
+![Screenshot that shows adding an action group.](../media/7-runbook.png)

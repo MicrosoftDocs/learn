@@ -8,17 +8,17 @@ Learn more about [Publishing sources for GitHub Pages sites](https://help.github
 
 The first step in using GitHub Pages is to enable it from your repository's **Settings** tab. You can opt to use the `master` branch, or specify the `docs` folder within it. If you ever want to disable GitHub Pages, you can do so here.
 
-![Enabling GitHub Pages](../media/2-enabling-github-pages.png)
+![Enabling GitHub Pages.](../media/2-enabling-github-pages.png)
 
 ## Choosing a theme with Jekyll
 
 **Jekyll** is the static site generator used by GitHub to build your web site from the contents of your repository. In addition to providing great content convenience, it also conforms to a standard design convention. This style standardization allows for swappable themes, which you can select from the **GitHub Pages** configuration.
 
-![Choosing a Jekyll theme](../media/2-choosing-jekyll-theme.png)
+![Choosing a Jekyll theme.](../media/2-choosing-jekyll-theme.png)
 
 There are a variety of themes provided by GitHub. There is also an array of commercial and open source themes available from the Jekyll community.
 
-![Built-in Jekyll themes](../media/2-jekyll-themes.png)
+![Built-in Jekyll themes.](../media/2-jekyll-themes.png)
 
 Learn more about [Jekyll Themes](https://jekyllrb.com/docs/themes/?azure-portal=true).
 

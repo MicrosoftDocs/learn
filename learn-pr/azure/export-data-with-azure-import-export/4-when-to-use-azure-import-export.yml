@@ -28,7 +28,7 @@ quiz:
       explanation: Use Azure Import/Export to export large amounts of data offline. For import, use Azure Import/Export in regions where Azure Data Box devices aren't supported.
     - content: To transfer data from Azure Storage to on-premises storage while you are offline
       isCorrect: false
-      explanation: AzCopy requires an active connection to your storage account in Azure. To do an offline transfer, use the Import/Export service or Data Box Family.
+      explanation: AzCopy requires an active connection to your storage account in Azure. To do an offline transfer, use the Import/Export service or Data Box family.
   - content: When should you use Azure Import/Export service instead of Data Box Family?
     choices:
     - content: To transfer data using an online connection
@@ -36,7 +36,7 @@ quiz:
       explanation: The Import/Export service is an offline solution. You can transfer data over a network connection using Data Box Edge or Data Box Gateway.
     - content: To use a Microsoft-supplied device instead of disks you supply
       isCorrect: false
-      explanation: Data Box Family uses Microsoft-supplied devices to transfer data from your on-premises location to Azure Storage. 
-    - content: To export data from Azure Blob storage while you're offline
+      explanation: Data Box family uses Microsoft-supplied devices to transfer data from your on-premises location to Azure Storage. 
+    - content: You're in a region not supported by Data Box family.
       isCorrect: true
-      explanation: Data Box Family doesn't support exporting data from Azure Storage. 
+      explanation: Data Box family is the recommended solution for handling very large import or export jobs when the organization is located in a region where it's supported. 

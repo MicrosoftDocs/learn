@@ -18,7 +18,7 @@ To add a heading style:  
 
 Note: Be attentive to which heading style you use and make sure they're properly nested in your document. The order of headings (Heading 1, Heading 2, Heading 3, etc.) is critical to informing screen reader users how to navigate.
 
-:::image type="content" source="../media/heading-1-heading-2.png" alt-text="Heading 1 and Heading 2 highlighted in Word Home ribbon":::
+:::image type="content" source="../media/heading-1-heading-2.png" alt-text="Heading 1 and Heading 2 highlighted in Word Home ribbon.":::
 
 ## Images
 
@@ -32,7 +32,7 @@ Information about non-decorative images needs to be communicated to screen reade
 
 Decorative images should be marked as such to tell screen readers to skip them. For example, a border or small icon intended only as a design element can be marked as decorative. To mark an element as decorative, select the "Mark as decorative" option instead of entering alt text.
 
-:::image type="content" source="../media/alt-text-decorative.png" alt-text="Mark as decorative option selected in the Alt Text window":::
+:::image type="content" source="../media/alt-text-decorative.png" alt-text="Mark as decorative option selected in the Alt Text window.":::
 
 To add alt text to an image:
 
@@ -40,7 +40,7 @@ To add alt text to an image:
 2. Enter a description of the image in the **Alt Text** field or select "Generate a description for me" to enable AI to create alternative text.
 3. Alternatively, the Accessibility Checker can generate a list of images that require alt text for you.
 
-:::image type="content" source="../media/picture-word.png" alt-text="A picture in Word with the accompanying Alt Text description displayed":::
+:::image type="content" source="../media/picture-word.png" alt-text="A picture in Word with the accompanying Alt Text description displayed.":::
 
 ## Links
 
@@ -66,4 +66,4 @@ To create accessible lists:
 1. Select the **Home** tab.
 2. In the **Paragraph** section, select **Bullets** to create a bulleted list or **Numbering** to create a numbered list.
 
-:::image type="content" source="../media/bullets-and-numbering.png" alt-text="Bullets and Numbering list options highlighted in the Paragraph section of the Word Home tab":::
+:::image type="content" source="../media/bullets-and-numbering.png" alt-text="Bullets and Numbering list options highlighted in the Paragraph section of the Word Home tab.":::

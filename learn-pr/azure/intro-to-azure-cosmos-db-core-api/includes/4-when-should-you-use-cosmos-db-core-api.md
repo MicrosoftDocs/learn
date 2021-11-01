@@ -10,7 +10,7 @@ As a fast NoSQL database with a flexible API, Azure Cosmos DB SQL API is well-su
 
 IoT sensor workloads can be diverse and unpredictable. These workloads require a database platform that is responsive and capable of elastic scale to meet the needs of as many, or as few, data collection devices deployed at any point in time. In many cases, IoT workloads can also write massive volumes of data and would benefit from a write-optimized database platform. Azure Cosmos DB SQL API is optimized for write-heavy workloads. Operations on a single document are atomic with fast and predictable indexed write speeds. Azure Cosmos DB SQL API is also globally distributed and elastic to meet the needs of various IoT workloads.
 
-:::image type="complex" source="../media/4-iot-case.svg" alt-text="IoT workload diagram" border="false":::
+:::image type="complex" source="../media/4-iot-case.svg" alt-text="IoT workload diagram." border="false":::
 Architectural diagram for an IoT workload showing increasing numbers of IoT device sensors sending data to an Azure IoT Hub. Azure Databricks then ingests and aggregates the real-time data in JSON format for storage in Azure Cosmos DB. Finally, Azure Synapse Analytics is used to perform a deeper analysis of the data stored in Azure Cosmos DB.
 :::image-end:::
 
@@ -20,7 +20,7 @@ In this example, a growing number of IoT devices are sending sensor data to an A
 
 Azure Cosmos DB SQL API is a great fit for retail and marketing workloads that can experience dramatic and unexpected swings in usage at any point throughout the year. The elastic scale of Azure Cosmos DB SQL API ensures that the database platform can handle requests during peak usage, and save money during non-peak times.
 
-:::image type="complex" source="../media/4-retail-case.svg" alt-text="Retail workload diagram" border="false":::
+:::image type="complex" source="../media/4-retail-case.svg" alt-text="Retail workload diagram." border="false":::
 Architectural diagram for a retail workload showing a user browser connecting to the website on Azure App Service supported by an Azure Blob Storage account containing static site data. Behind the scenes, an Azure Cosmos DB SQL API account with a container for inventory data and a container for shopping cart data is used by the App Service Web App and an Azure Search instance that builds a searchable catalog by indexing the Azure Cosmos DB SQL API account with inventory data.
 :::image-end:::
 
@@ -30,7 +30,7 @@ In this example, a JavaScript web application, built on content stored in Azure 
 
 Many modern social applications generate a plethora of user-generated content that is diverse in quantity, shape, and volume. Azure Cosmos DB SQL API is a great candidate for this workload as this API can store data of varying schemas. Consider the SQL API for data that may have schemas that change or evolve over time as the company's initiatives expand into new areas.
 
-:::image type="complex" source="../media/4-web-case.svg" alt-text="Web workload diagram" border="false":::
+:::image type="complex" source="../media/4-web-case.svg" alt-text="Web workload diagram." border="false":::
 Architectural diagram for a web workload showing a user browser connecting to a URL that is connected to  Azure Traffic Manager to determine the correct redirect destination. Then three Azure App Service instances in three Azure regions (North Europe, West US, East US) are connected to a globally distributed Azure Cosmos DB SQL API account.
 :::image-end:::
 
@@ -44,7 +44,7 @@ Consider the scenario from the beginning of this module:
 
 One key part of your store's success is the ability for company to notify users of shipping updates regardless of what device they place the order on or are currently using. Your team has worked hard on a sophisticated system to manage tracking the status of an order in detail. With Azure Cosmos DB's tight integration with other Azure services, you can consider building solutions that use order data in Azure Cosmos DB SQL API to send notification to your user's mobile devices when their package ships, or is out for delivery.
 
-:::image type="complex" source="../media/4-retail-scenario.svg" alt-text="Retail scenario diagram" border="false":::
+:::image type="complex" source="../media/4-retail-scenario.svg" alt-text="Retail scenario diagram." border="false":::
 Architectural diagram for a retail workload showing a growing number of users ordering products and a collection of compute resources handling requests from the storefront instances. Behind the compute resources, Azure Cosmos DB stores purchase data. Then, Azure Synapse Link connects Azure Cosmos DB to Azure Synapse Analytics for deeper analytics. Finally, Azure Functions, triggered off of change feed, processing data events which then trigger an Azure Logic Apps workflow to perform business operations such as notifying the user on their mobile device of new events.
 :::image-end:::
 

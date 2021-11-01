@@ -228,4 +228,3 @@ The software upgrade may be automated using standard MSI procedures, such as `ms
 You may omit the `/norestart` flag if you prefer to have the installer automatically reboot the machine.
 
 The `Get-AzureADPasswordProtectionDCAgent` cmdlet may be used to query the software version of all currently installed Azure AD Password Protection DC agents in a forest.
-

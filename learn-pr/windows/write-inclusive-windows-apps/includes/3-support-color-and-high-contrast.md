@@ -18,18 +18,18 @@ Let's start by using readily available Windows accessibility options on our unad
 
 1. Windows features built-in color themes, which allow you to change the appearance of your app without making any adjustments to the code itself. In the Search bar at the lower left corner of your screen, type "color settings" then select **Enter.** In the settings windows that appears, scroll down a bit until you can see the **Light** and **Dark** radio buttons. By default, the **Light** option should be set. For now, try setting the **Dark** mode.
 
-![Setting color modes](../media/color-settings.png)
+![Setting color modes.](../media/color-settings.png)
 
 2. The calculator will now look like the second image. Try entering a simple calculation. It's not a clear experience, is it?
 
 | Color Schemes|  |
 |:--:|:--:|
-| ![Setting the light color mode](../media/non-light-50.png) | ![Setting the dark color mode](../media/non-dark-50.png) |
+| ![Setting the light color mode.](../media/non-light-50.png) | ![Setting the dark color mode](../media/non-dark-50.png) |
 | *Light*| *Dark* |
 
 3. Turn the color setting back to **Light**, and minimize the color settings window. Type "high contrast" into the Windows search bar, and select **Turn high contrast on or off**. The high contrast settings screen should appear.
 
-![Exposing the high contrast settings](../media/high-contrast-settings.png)
+![Exposing the high contrast settings.](../media/high-contrast-settings.png)
 
 4. Select **Turn on high contrast**. You might notice that it takes some seconds for the high contrast settings to take effect.
 
@@ -37,9 +37,9 @@ Let's start by using readily available Windows accessibility options on our unad
 
 | High Contrast Color Schemes|  |
 |:--:|:--:|
-| ![Setting High Contrast #1](../media/non-highcontrast1-50.png) | ![Setting High Contrast #2](../media/non-highcontrast2-50.png) |
+| ![Setting High Contrast #1.](../media/non-highcontrast1-50.png) | ![Setting High Contrast #2](../media/non-highcontrast2-50.png) |
 | *High Contrast #1*| *High Contrast #2* |
-| ![Setting High Contrast Black](../media/non-highcontrast-black-50.png) | ![Setting High Contrast White](../media/non-highcontrast-white-50.png) |
+| ![Setting High Contrast Black.](../media/non-highcontrast-black-50.png) | ![Setting High Contrast White](../media/non-highcontrast-white-50.png) |
 | *High Contrast Black*| *High Contrast White* |
 
 6. The #1 and #2 settings use high contrast yellow and green on black respectively. Notice how the use of black in our calculator keys renders the border lines invisible in several settings. The white setting is probably the most usable of these four default options, but the calculator still isn't visually pleasing in that theme.
@@ -48,7 +48,7 @@ Let's start by using readily available Windows accessibility options on our unad
 
 8. Finally, type "magnifier" into the Windows search bar. Notice the result: a small magnified screen, and a short tool bar that presents magnification controls.
 
-![Turning on the magnifier](../media/magnifier.png)
+![Turning on the magnifier.](../media/magnifier.png)
 
 9. Try entering the following simple equation into the calculator using the magnifier. Select **Show constants**, locate the constant **Speed of light in miles/sec**, select division (**/**), enter **100**, enter **=**. Now, still using the magnifier, check the result. So, one-hundredth of the speed of light is about 1863 miles/sec. Close the magnifier by going over its own toolbar and select the **X**.
 

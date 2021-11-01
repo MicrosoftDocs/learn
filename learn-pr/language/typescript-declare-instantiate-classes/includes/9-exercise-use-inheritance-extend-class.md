@@ -75,7 +75,7 @@ In this exercise, you'll extend the `Car` class to create a new class called `El
     ```typescript
     // Overrides the brake method of the Car class
     brake(): string {
-        return console.log(this.worker() + ' is braking with the regenerative braking system.')
+        return `${this.worker()}  is braking with the regenerative braking system.`
     }
     ```
 

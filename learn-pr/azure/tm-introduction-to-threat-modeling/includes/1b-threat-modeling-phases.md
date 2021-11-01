@@ -2,7 +2,7 @@ Threat modeling is a technique used by anyone who knows how their system works a
 
 The technique is broken down into four different phases, each containing important steps to help you create a data-flow diagram and analyze it for potential threats.
 
-![Threat Modeling Phases](../media/threat-modeling-steps.png)
+![Threat Modeling Phases.](../media/threat-modeling-steps.png)
 
 |Phase|Title|Description|
 |-----|-----|-----------|

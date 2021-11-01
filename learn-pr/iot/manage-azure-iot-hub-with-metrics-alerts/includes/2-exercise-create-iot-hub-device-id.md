@@ -25,7 +25,7 @@ Now we need to create a single device identity, the sensor monitoring the convey
 1. Click **+ New**.
 1. In the **Create a device** screen that follows, enter a **Device ID**, such as "VibrationSensorID". Ensure **Auto-generate keys** is enabled, as is **Connect this device to an IoT Hub**, and click **Save**.
 
-    [![Screenshot showing the creation of an IoT Hub device identity](../media/vibrations-device-create.png)](../media/vibrations-device-create.png#lightbox)
+    [![Screenshot showing the creation of an IoT Hub device identity.](../media/vibrations-device-create.png)](../media/vibrations-device-create.png#lightbox)
 
 1. You should now see your device in the list of devices for the IoT Hub. Click on the device name. Copy the **Primary Connection String** to a text file (using Notepad, or similar text editor).
 

@@ -1,5 +1,8 @@
 In this exercise, you'll create an Azure Active Directory (Azure AD) group to manage the developer team's access. You'll also add a rule for the group to manage the membership automatically.
 
+> [!NOTE]
+> This exercise depends on having completed prior exercises in this module. If you have not done so, please complete [exercise 3](../3-exercise-add-delete-users-azure-ad.yml) before you begin.
+
 ## Add a new group
 
 1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>).

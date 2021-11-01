@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-virtual-machine-backups.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/26/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "A company has several Azure VMs that are currently running production workloads. There is a mix of production Windows Server and Linux servers. Which of the following is the best choice for production backups?"
+    choices:
+    - content: "Managed snapshots"
+      isCorrect: false
+      explanation: "That's incorrect. An Azure Snapshot is a read-only copy of the existing disk in the Microsoft Azure Cloud. This snapshot can be used as a backup or to create a virtual machine. However, the snapshot is only for a single point in time and is not the best choice for production environments."
+    - content: "Azure Backup"
+      isCorrect: true
+      explanation: "That's correct. Azure Backup is the best option for production workloads."
+    - content: "Azure Site Recovery"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Site Recovery would be better for scenarios involving replication, failover, and fallback."
+  - content: "Which of these options is recommended to backup a database disk used for development?"
+    choices:
+    - content: "Virtual machine backup"
+      isCorrect: false
+      explanation: "That's incorrect. Is there a better choice for just the database backup?"
+    - content: "Azure Site Recovery"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Site Recovery would be better for scenarios involving replication, failover, and fallback."
+    - content: "Disk snapshot"
+      isCorrect: true
+      explanation: "That's correct. Snapshots can be taken at any time and used to quickly restore the database data disk."
+  - content: "A malware attack has deleted several virtual machine backups. How long are items available in the soft delete state?"
+    choices:
+    - content: "7 days"
+      isCorrect: false
+      explanation: "That's incorrect. Soft delete provides for longer backup recovery."
+    - content: "14 days"
+      isCorrect: true
+      explanation: "That's correct. Backup data is retained for 14 additional days, allowing the recovery of that backup item with no data loss."
+    - content: "30 days"
+      isCorrect: false
+      explanation: "That's incorrect. Soft delete does not provide for a 30 day recovery period."

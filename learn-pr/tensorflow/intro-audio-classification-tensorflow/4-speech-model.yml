@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-audio-classification-tensorflow.speech-model
+title: Build the model
+metadata:
+  title: Build the model
+  description: Build the model
+  author: cassiebreviu
+  ms.author: cassieb
+  ms.date: 08/03/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.product: learning-tensorflow
+durationInMinutes: 15
+sandbox: true
+notebook: notebooks/4-speech-model.ipynb

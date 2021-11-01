@@ -1,6 +1,6 @@
 Software as a Service (SaaS) is cloud-based software that’s centrally hosted and managed by software vendors for their users. SaaS has become a popular software licensing and delivery method because of its ease of use and the efficiencies it unlocks for software providers and their customers. Users access SaaS applications over a network connection and, in most cases, pay to use the software on a subscription basis. Software providers develop, host, manage, and support the applications on their cloud infrastructure. Examples of SaaS range from web-based email services such as Outlook to sophisticated business applications like Microsoft 365 apps.
 
-:::image type="content" source="../media/1-what-is-saas.png" alt-text="Graphic showing the concept that SaaS applications are ready-to-use hosted applications":::
+:::image type="content" source="../media/1-what-is-saas.png" alt-text="Graphic showing the concept that SaaS applications are ready-to-use hosted applications.":::
 
 ## SaaS benefits for customers
 

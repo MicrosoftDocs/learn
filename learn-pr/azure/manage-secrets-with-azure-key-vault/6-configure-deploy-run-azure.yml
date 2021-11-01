@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-secrets-with-azure-key-vault.6-configure-deploy-run-azure
-title: Exercise - Configure, deploy, and run in Azure
+title: Exercise - Configure, deploy, and run your app in Azure
 metadata:
-  title: Exercise - Configure, deploy, and run in Azure
-  description: Exercise - Configure, deploy, and run in Azure
+  title: Exercise - Configure, deploy, and run your app in Azure
+  description: Exercise - Configure, deploy, and run your app in Azure
   ms.date: 09/24/2018
   author: nickwalkmsft
   ms.author: nickwalk

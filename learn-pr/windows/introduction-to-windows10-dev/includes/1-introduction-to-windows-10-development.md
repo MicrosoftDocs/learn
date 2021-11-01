@@ -10,7 +10,7 @@ Windows 10 can run all kinds of apps, including games, enterprise applications, 
 
 That's where this module comes in. It will help set the scene and get you comfortable with the tools and platforms at your disposal. You won't be an expert at the end, but you'll at least have an idea about your next steps.
 
-![Three different Windows devices](../media/windows-devices.png)
+![Three different Windows devices.](../media/windows-devices.png)
 
 ## Windows development tools and platforms
 

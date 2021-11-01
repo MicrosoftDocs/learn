@@ -23,7 +23,7 @@ Before attempting to navigate through our page using a screen reader, we'll find
 1. Toggle the **Show tab stops** switch in **FastPass**.
 1. Switch to the web application and begin using the tab key to navigate through the page. You will see that the navigation flows from the top of the page, through the form and page links, to the links in the footer.
 
-   :::image type="content" source="../media/tab-stop-display.png" alt-text="Screenshot of the pizza app showing tab stops from top to bottom":::
+   :::image type="content" source="../media/tab-stop-display.png" alt-text="Screenshot of the pizza app showing tab stops from top to bottom.":::
 
 The first step before implementing accessible features in the app is to turn on the screen reader. Let's walk through how to turn on the screen reader for each operating system to test accessibility in the app.
 
@@ -39,7 +39,7 @@ Narrator is a screen reader built directly into Windows to enable users to compl
 
 - Press the **Windows logo key** + **Ctrl** + **N** to open Narrator settings, and then turn on the toggle under Use Narrator.
 
-:::image type="content" source="../media/windows-narrator.png" alt-text="Windows screenshots to enable Narrator":::
+:::image type="content" source="../media/windows-narrator.png" alt-text="Windows screenshots to enable Narrator.":::
 
 It is suggested to go through the Narrator tutorial, which can be found in the Narrator settings screen.
  

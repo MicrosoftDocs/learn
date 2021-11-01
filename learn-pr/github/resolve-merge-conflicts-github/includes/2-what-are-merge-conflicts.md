@@ -14,23 +14,23 @@ Although `feature-branch` was created from `master`, it wasn't actually based on
 
 If it turns out that the `feature-branch` commits don't overlap with parallel commits made to `master` since the branch was created, then there will be no problems. New files can be added. Untouched files can be deleted. Lines of code that were changed in `master` can be changed in `feature-branch` as long as the parallel work didn't change them since `feature-branch` was created.
 
-![A pull request with no merge conflicts](../media/2-no-merge-conflicts.png)
+![A pull request with no merge conflicts.](../media/2-no-merge-conflicts.png)
 
 But what if both sets of commits include changes to the same lines of code? This merge attempt would fail due to a **merge conflict**.
 
-![A merge conflict](../media/2-merge-conflict.png)
+![A merge conflict.](../media/2-merge-conflict.png)
 
 ## What are merge conflicts?
 
 Merge conflicts are raised when a developer attempts to merge changes that would inadvertently overwrite parallel changes. It doesn't matter how those other changes were merged into the base branch. Git won't automatically overwrite one set of changes in favor of another. Instead, it will point them out to the person trying to merge so that they can resolve them on their compare branch before trying to merge again.
 
-![A pull request with merge conflicts](../media/2-yes-merge-conflicts.png)
+![A pull request with merge conflicts.](../media/2-yes-merge-conflicts.png)
 
 ### Resolving merge conflicts
 
 To help you resolve merge conflicts, GitHub generates a temporary hybrid file that includes the differences from each branch. The convention is that the text from compare branch is shown above the base branch, separated by a line of equal signs (`=======`). 
 
-![Resolving a merge conflict](../media/2-resolving-merge-conflict.png)
+![Resolving a merge conflict.](../media/2-resolving-merge-conflict.png)
 
 You can use this view to directly edit the file if the changes are minor. If you decide to keep the final result, it will be committed to the compare branch. Alternatively, if the merge is more involved, you may prefer to work on it using other development tools. **Either way, don't forget to remove any branch markers from your code before committing**. If you forget to remove these markers when you commit your conflict resolution, they will remain in the file and will not be commented out.
 

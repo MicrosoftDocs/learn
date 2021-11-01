@@ -1,8 +1,8 @@
-A well-designed user experience in Unity for the HoloLens requires careful design and creation of a Unity Scene.  A Scene is like a blank canvas, which you'll develop into an experience for your end user. Provide context for your user as they navigate the Scene by adding supportive information like satellite imagery or lower fidelity supportive information (for example, surrounding warehouse infrastructure).  Once context has been established for the Scene, you need to create and add the 3D assets or models for your Digital Twin.  These will be the showcase of your experience.
+A well-designed user experience in Unity for the mixed reality requires careful design and creation of a Unity Scene.  A Scene is like a blank canvas, which you'll develop into an experience for your end user. Provide context for your user as they navigate the Scene by adding supportive information like satellite imagery or lower fidelity supportive information (for example, surrounding warehouse infrastructure).  Once context has been established for the Scene, you need to create and add the 3D assets or models for your Digital Twin.  These will be the showcase of your experience.
 
 ## Example scenario  
 
-You'll continue to build out the example windfarm scenario from previous modules, except this time you're looking to add in reusable wind turbine objects to the project's terrain.
+You'll continue to build out the example windfarm scenario from previous modules, except this time you're looking to add reusable wind turbine objects to the project's terrain.
 
 ## What will we be doing?
 

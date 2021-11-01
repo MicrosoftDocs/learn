@@ -6,6 +6,8 @@ Because you'll also be deploying multiple storage accounts in your Azure environ
 
 In this unit, you learn how to use loops with variables and outputs.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Variable loops
 
 By using variable loops, you can create an array, which you can then use through your Bicep file. As you do with other loops, you use the `for` keyword to create a variable loop:

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.introduction-to-data-for-machine-learning.evaluate-image-language-data
+title: One-hot vectors
+metadata:
+  title: One-hot vectors
+  description: Conceptual unit about one-hot vectors in machine learning
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-evaluate-image-language-data.md)] 

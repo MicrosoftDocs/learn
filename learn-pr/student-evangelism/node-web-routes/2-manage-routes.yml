@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.node-web-routes.manage-routes
+title: Understand URLs and routes
+metadata:
+  title: Understand URLs and routes
+  description: Divide your application into sections for the different resources.
+  author: clarkio
+  ms.author: brcl
+  ms.date: 07/12/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-manage-routes.md)]

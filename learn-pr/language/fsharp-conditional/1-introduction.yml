@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-conditional.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to F# conditional logic.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/23/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -19,14 +19,14 @@ In this course, we'll develop a simple bot to help students learn geography. We'
 
 - Learn the basic building blocks to create conversational UI for users
 - Understand the principles to develop responsible bots
-- Create a simple educational bot using Azure Bot Service
+- Create a simple educational bot by using Azure Bot Services
 - Improve upon your bot's ability to understand by adding LUIS
 - Give your bot personality with Azure QnA Maker
-- Explore how your bot could become more culturally sensitive
+- Explore how your bot can be more culturally sensitive
 
 ## Prerequisites
 
-In this course, we'll use the [Azure Bot Service][BotService] and [C# programming language][CSharp] to build a bot.
+In this course, we'll use [Azure Bot Services][BotServices] and [C# programming language][CSharp] to build a bot.
 
 Here's what you'll need to complete this course:
 
@@ -34,10 +34,11 @@ Here's what you'll need to complete this course:
 - An Azure account. See [this module][AzAccount] to learn how to get an account. Try [Azure for Students](https://azure.microsoft.com/free/students/?azure-portal=true) for a free account if you are a current student!
 - We recommend [Visual Studio 2019][VS] as a source code editor. You can download and install Visual Studio on your computer and select **Azure Development**. If necessary, you can use Visual Studio Online, but it's not recommended.
 
+
 <!-- Links -->
 
-[BotService]: https://azure.microsoft.com/services/bot-service/
-[CSharp]: https://dotnet.microsoft.com/learn/csharp
-[CSCourse]: /dotnet/csharp/tutorials/?azure-portal=true
-[AzAccount]: /learn/modules/create-an-azure-account/?azure-portal=true
+[AzAccount]: https://docs.microsoft.com/learn/modules/create-an-azure-account/?azure-portal=true
+[BotServices]: https://azure.microsoft.com/services/bot-service/?azure-portal=true
+[CSCourse]: https://docs.microsoft.com/dotnet/csharp/tutorials/?azure-portal=true
+[CSharp]: https://dotnet.microsoft.com/learn/csharp?azure-portal=true
 [VS]: https://www.visualstudio.com/downloads/?azure-portal=true

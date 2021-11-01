@@ -12,7 +12,7 @@ Azure SQL Database uses SQL Server technology to make these types of backups:
 
 - **Full backups**: In a full backup, everything in the database and the transaction logs is backed up. SQL Database makes a full backup once a week.
 - **Differential backups**: In a differential backup, everything that changed since the last full backup is backed up. SQL Database makes a differential backup every 12 hours.
-- **Transactional backups**: In a transactional backup, the contents of the transaction logs are backed up. SQL Database makes a transaction log backup every 5 to 10 minutes. Transactional backups enable administrators to restore up to a specific time, which includes the moment before data was mistakenly deleted.
+- **Transactional backups**: In a transactional backup, the contents of the transaction logs are backed up. If the latest transaction log has failed or is corrupted, the option is to fall back to the previous transaction log backup, assuming retention is following the guidelines here: [Automated backups - Azure SQL Database & SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database). Transactional backups enable administrators to restore up to a specific time, which includes the moment before data was mistakenly deleted.
 
 You can use these backups to:
 
@@ -29,7 +29,7 @@ The default backup retention period is set to 7 days when you create a database
 
 | Service tier  | Default retention period  |
 |---------------|---------------------------|
-| Basic         | 1 week                  |
+| Basic         | 1 week                 |
 | Standard      | 5 weeks                |
 | Premium       | 5 weeks                |
 

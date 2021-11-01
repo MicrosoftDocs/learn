@@ -15,7 +15,7 @@ One of the cool things about Azure Notebooks — and Python in general — is th
 
 1. Run the code cell to produce a scatter chart with a regression line *and* a visual representation of the range in which the data points are expected to fall.
 
-    ![Comparison of actual values and predicted values generated with Seaborn](../media/5-seaborn-regression.png)
+    ![Comparison of actual values and predicted values generated with Seaborn.](../media/5-seaborn-regression.png)
 
     _Comparison of actual values and predicted values generated with Seaborn_
 

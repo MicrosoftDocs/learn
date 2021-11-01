@@ -63,4 +63,4 @@ The application consists of two components: the API and the front end. Both comp
 | An API `ratings-api`     | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api?azure-portal=true)             |
 | A front end `ratings-web` | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web?azure-portal=true)             |
 
-![Application diagram](../media/01-app-overview.svg)
+![Application diagram.](../media/01-app-overview.svg)

@@ -4,7 +4,7 @@ In the shipment tracking portal, we chose to use Azure Front Door to send all re
 
 Here, we'll learn how to replicate data between regions, and how to ensure that failover can occur quickly, if necessary.
 
-![A diagram showing multi-region architecture databases](../media/5-multi-region-web-app-data.png)
+![A diagram showing multi-region architecture databases.](../media/5-multi-region-web-app-data.png)
 
 ## Azure SQL Database
 

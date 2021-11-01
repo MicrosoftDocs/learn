@@ -8,7 +8,7 @@ All of these virtual machines are instances of *system VMs*, which virtualize an
 
 A process VM (Figure 1) is a VM capable of supporting an individual process as long as the process is alive. A process VM terminates when the process that it hosts ends. From a process VM perspective, a machine consists of a virtual memory address space, user-level registers, and instructions for executing a program. According to this definition, a process in a general-purpose operating system can also be called a "machine." However, a regular process can only support program binaries compiled for the processor architecture or *instruction-set architecture* (ISA) of the host machine. Executing binaries compiled for an ISA different than that of the host machine -- for example, running programs compiled for ARM processors on machines equipped with Intel CPUs -- is not supported by regular processes. However, a process VM allows that to happen.
 
-![Figure 1: Process VM](../media/fig4-1.png)
+![Figure 1: Process VM.](../media/fig4-1.png)
 
 _Figure 1: Process VM._
 
@@ -22,13 +22,13 @@ In summary, a process VM is similar to a regular process running on an OS. Howev
 
 Unlike process VMs, a system VM virtualizes an entire machine by virtualizing a complete set of hardware resources including processors, memory, and I/O devices. The virtualization software, or *hypervisor*, which is also known as a *virtual-machine monitor* (VMM), sits between the hardware and the operating system and creates the illusion that the operating system and the applications it hosts are running on stand-alone machines (Figure 2).
 
-![Figure 2: System VM](../media/fig4-2.png)
+![Figure 2: System VM.](../media/fig4-2.png)
 
 _Figure 2: System VM._
 
 The hypervisor manages the allocation of and access to underlying hardware resources. It allows multiple VMs to run side by side and gives each VM the illusion of owning all of those resources. The physical machine is called the *host*, and an operating system running in a VM on a host is called a *guest operating system*, or guest OS (Figure 3). Every VM can be booted, shut down, and rebooted just like a regular host. A VM can only run on one host at a time, but it can be shut down, moved to another host, and started there. Thus, while a VM can only be running on one host at a given point in time, it can be migrated to different hosts over a span of time.
 
-![Figure 3: Single system hosting multiple VMs](../media/fig4-3.png)
+![Figure 3: Single system hosting multiple VMs.](../media/fig4-3.png)
 
 _Figure 3: Single system hosting multiple VMs._
 

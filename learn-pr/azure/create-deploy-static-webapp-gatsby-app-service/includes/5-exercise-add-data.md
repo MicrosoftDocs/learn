@@ -37,7 +37,7 @@ You should now have two routes up and running:
 
 Go to `http://localhost:8000/___graphql` in your browser so you can get help creating the query.
 
-:::image type="content" source="../media/query.png" alt-text="Gatsby query":::
+:::image type="content" source="../media/query.png" alt-text="Gatsby query.":::
 
 In the above image, you can see the `Explorer` section on the left. You can use the Explorer to drill down into our Graph until you find the data we need. In the middle section, you can see how the query is written for you as you perform selections on the left. On the right, you see the result of running the query. You can run the query by clicking the *play* button in the middle section.
 
@@ -88,6 +88,6 @@ During build time Gatsby will input the query result into the component's `data`
 
 Save the file and browse to `http://localhost:8000/about` and you'll see the following:
 
-:::image type="content" source="../media/component-with-data.png" alt-text="Page component with data":::
+:::image type="content" source="../media/component-with-data.png" alt-text="Page component with data.":::
 
 You've added data to your component with a GraphQL query! You also got to use the GraphiQL querying tool and Gatsby development server in the process.

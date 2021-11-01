@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-video.exercise-video-indexer
+title: Exercise - Analyze video
+metadata:
+  title: Exercise - Analyze video
+  description: "Exercise - Analyze video"
+  ms.date: 07/12/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 100991
+labModal: true
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-video-indexer.md)]

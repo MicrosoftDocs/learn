@@ -1,40 +1,40 @@
 ## Create a Twilio account
 
-To be able to send SMS messages from an Azure Functions, you'll need a Twilio account. The free account is more than enough to get started.
+To be able to send SMS messages from an Azure Function, you'll need a Twilio account. The free account is more than enough to get started.
 
 1. Head to [twilio.com](https://www.twilio.com?azure-portal=true).
 
-1. Click the red **Sign Up** button in the top-right corner.
+1. Click the **Sign Up** button in the top-right corner.
 
 1. Fill in your details and click **Get Started**.
 
-1. Enter you phone number to verify. Twilio free accounts let you send messages only to verified phone numbers to stop them from being used for spam. Twilio will send you a verification code that you need to enter to verify your phone.
+1. Enter your email address, and respond to the email by providing your phone number to verify. Twilio free accounts let you send messages only to verified phone numbers to stop them from being used for spam. Twilio will send you a verification code that you need to enter to verify your phone.
 
-    ![Screenshot of phone verification step in Twilio sign up](../media/twilio-verify-phone.png)
-1. Log onto your Twilio account and click **Get a Trial Number** button in you account dashboard. Twilio assigns you a phone number that is used to send messages.
+    ![Screenshot of phone verification step in Twilio sign up.](../media/twilio-verify-phone.png)
+1. Log onto your Twilio account and click **Get a trial phone number** on your account dashboard. Twilio assigns you a phone number that is used to send messages.
 
     > [!NOTE]
     > These assigned numbers may not be able to send messages in some countries. The Twilio documentation lists [which countries have restrictions](https://support.twilio.com/hc/articles/223183068-Twilio-international-phone-number-availability-and-their-capabilities?azure-portal=true), and shows ways to send SMS messages using an [international number or AlphaNumeric sender Id](https://support.twilio.com/hc/articles/226690868-Using-Twilio-when-SMS-numbers-are-unavailable-in-your-country?azure-portal=true).
 
-1. Take a note of your new Twilio Trial Number; you will need it later in this module. You can also get this number anytime by clicking the ellipses at the bottom of the left-hand menu and navigating to _SUPER NETWORK_ > _Phone Numbers_ > _Manage Numbers_ > _Active Numbers_.
+1. Take a note of your new Twilio Trial Number; you will need it later in this module. You can also get this number anytime by clicking the ellipsis at the bottom of the left-hand menu and navigating to _SUPER NETWORK_ > _Phone Numbers_ > _Manage Numbers_ > _Active Numbers_.
 
 ## Create a new Twilio project
 
-Before you start using Twilio to send messages to your verified number, you create a project to send programable SMS.
+Before you start using Twilio to send messages to your verified number, create a project to send programmable SMS.
 
 1. Select the drop-down at the top-left corner of the screen and select **Create New Project**.
 
-    ![Create new project](../media/twilio-new-project.png)
+1. Provide an account name and select **Verify**.
 
-1. Select the **Products** tab, and click **Programmable SMS**, then click **Continue**.
-
-1. Provide a name for your first project, such as "I'm here", then click **Continue**.
+1. Enter your phone number again.
+ 
+1. Enter a name for your first project, such as "I'm here", then click **Continue**.
 
 1. Skip the step to invite a team mate.
 
 1. From the Twilio messaging dashboard, expand the **Project Info** panel.
 
-    ![Screenshot of the expanded Project Info panel](../media/project-info.png)
+    ![Screenshot of the expanded Project Info panel.](../media/project-info.png)
 
 1. Note your **ACCOUNT SID** and **AUTH TOKEN** because you will need these values later.
 

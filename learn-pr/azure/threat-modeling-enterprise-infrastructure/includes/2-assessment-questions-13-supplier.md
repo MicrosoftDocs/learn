@@ -1,6 +1,6 @@
 ## Supplier
 
-![Supplier category](../media/policies/supplier.png)
+![Supplier category.](../media/policies/supplier.png)
 
 ### Why ask these questions
 

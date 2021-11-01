@@ -8,7 +8,7 @@ GitHub provides a [robust API](https://developer.github.com/v3/?azure-portal=tru
 
 One of the most important considerations for allowing an app to access a GitHub repository is the permissions it requires to operate. Some apps are easy to trust, but others may be suspect. Always be sure that you're comfortable with the permissions you grant an app.
 
-![Reviewing requested permissions and repository access](../media/2-install-permissions.png)
+![Reviewing requested permissions and repository access.](../media/2-install-permissions.png)
 
 > [!NOTE]
 > Every app uses a unique API key to make requests for the data in your repository. When you authorize access, it's the key you're authorizing. You may revoke access to an app's key at any time from your repository settings.
@@ -23,7 +23,7 @@ There are many subtle [differences between GitHub Apps and OAuth Apps](https://d
 
 The main difference you'll notice is that GitHub Apps are *installed*, whereas OAuth apps are *authorized*. Installing a GitHub App grants it the requested permissions so that it can interact with GitHub and create or modify content like any other user. For example, it can post comments like this one:
 
-![GitHub App comment](../media/2-github-app-comment.png)
+![GitHub App comment.](../media/2-github-app-comment.png)
 
 If this app was instead an OAuth App, then it would need to first be authorized to post by a GitHub user. The comment would also appear as though the authorizing user themselves had posted it.
 

@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-hybrid-networking.connect-devices-to-networks-point-to-site-vpn-connections
+title: Connect devices to networks with Point-to-site VPN connections
+metadata:
+  title: Connect devices to networks with Point-to-site VPN connections
+  description: "Connect devices to networks with Point-to-site VPN connections"
+  ms.date: 07/15/2021
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-connect-devices-to-networks-point-to-site-vpn-connections.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a site-to-site VPN Gateway connection?"
+    choices:
+    - content: "A site-to-site VPN Gateway connection securely connects two networks."
+      isCorrect: true
+      explanation: "Correct, A site-to-site (S2S)VPN gateway connection lets you create a secure connection to your virtual network from another virtual network or a physical network."
+    - content: "A site-to-site VPN Gateway connection securely connects an individual client computer to a network."
+      isCorrect: false
+      explanation: "Incorrect, A **point-to-site** (P2S) VPN gateway connection lets you create a secure connection to your virtual network from an individual client computer."
+    - content: "A site-to-site VPN Gateway connection securely connects two individual computers."
+      isCorrect: false
+      explanation: "Incorrect, A site-to-site (S2S)VPN gateway connection does not connect two individual computers."
+  - content: "To authenticate a user connecting through a point-to-site connection using Active Directory Domain Server, what type of server is required?"
+    choices:
+    - content: "RADIUS"
+      isCorrect: true
+      explanation: "Correct, AD Domain authentication allows users to connect to Azure using their organization domain credentials. It requires a RADIUS server that integrates with the AD server."
+    - content: "Active Directory Domain Controller only"
+      isCorrect: false
+      explanation: "Incorrect, An Active Directory Domain Controller alone is not sufficient. Another type of server is required."
+    - content: "DNS server"
+      isCorrect: false
+      explanation: "Incorrect, A DNS server may be required for name resolution, but it is not sufficient for authentication."

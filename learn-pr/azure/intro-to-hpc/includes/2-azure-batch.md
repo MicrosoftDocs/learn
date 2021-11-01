@@ -30,7 +30,7 @@ Batch has several components that act together. An *Azure Batch Account* forms a
 
 This diagram shows a client application or hosted service interacting with Batch to upload input, create jobs, monitor tasks, and download output.
 
-![Diagram of the components of Batch](../media/2-components-of-azure-batch.svg)
+![Diagram of the components of Batch.](../media/2-components-of-azure-batch.svg)
 
 ## Azure Batch in action
 

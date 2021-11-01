@@ -27,7 +27,7 @@ az group create --name IoTEdgeResources --location eastus2
 
 The resulting output should be similar to this:
 
-[![An illustration showing the creation of a resource group](../media/resource-group.png)](../media/resource-group.png)
+[![An illustration showing the creation of a resource group.](../media/resource-group.png)](../media/resource-group.png)
 
 ## Create an IoT hub
 

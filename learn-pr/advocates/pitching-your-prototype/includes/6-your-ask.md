@@ -7,7 +7,7 @@ In some regards, the "ask" is the easiest part of the pitch. You only need to ar
 
 In Fabrikam's case, they're looking for 2 million dollars in seed funding.
 
-![Fabrikam's ask](../media/pitch-proto-010.png)
+![Fabrikam's ask.](../media/pitch-proto-010.png)
 
 They're going to spend it on customer acquisition and growing their team.
 

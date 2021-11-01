@@ -6,7 +6,7 @@ In this unit, you'll explore the hub-spoke architecture, the topology, the compo
 
 ## Hub-spoke architecture foundations
 
-![Diagram of a hub-spoke architecture](../media/2-hub-and-spoke.png)
+![Diagram of a hub-spoke architecture.](../media/2-hub-and-spoke.png)
 
 A hub and spoke consists of a centralized architecture (a hub) connecting to multiple points (spokes). When drawn, it looks similar to a wheel, with a hub at the center and spokes connected to it. This model in Azure organizes your network infrastructure into multiple connected virtual networks. This architecture provides an efficient way to manage common communication, security requirements, and potential subscription limitations.
 
@@ -31,7 +31,7 @@ Hub-spoke topologies offer several business benefits:
 
 Let's take a look at a reference architecture for a hub-spoke topology. The following image shows the proposed architecture of a pattern to extend your on-premises environment to Azure.
 
-![Diagram of hub-spoke shared services architecture](../media/2-hub-shared-services.svg)
+![Diagram of hub-spoke shared services architecture.](../media/2-hub-shared-services.svg)
 
 The hub is a virtual network in Azure that's the center point for your business connectivity. Shared services are hosted in their own subnets for sharing with the spokes, and a perimeter subnet acts as a security appliance.
 

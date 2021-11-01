@@ -3,7 +3,7 @@ uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search
 metadata:
   title: Create a knowledge store with Azure Cognitive Search
   description: "Create a knowledge store with Azure Cognitive Search"
-  ms.date: 04/01/2021
+  ms.date: 07/30/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ prerequisites: |
   - Familiarity with with Microsoft Azure
   - Application development experience with C# or Python
   - Experience of creating an enrichment pipeline with Azure Cognitive Search
-  If you have not completed the [Create an Azure Cognitive Search solution](https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/) module, do so before starting this module.
+  If you have not completed the [Create an Azure Cognitive Search solution](/learn/modules/create-azure-cognitive-search-solution/) module, do so before starting this module.
 iconUrl: /learn/achievements/implementing-a-knowledge-store.svg
 levels:
 - intermediate

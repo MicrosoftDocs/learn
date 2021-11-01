@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-functions.function
+title: Explore functions
+metadata:
+  title: Explore functions
+  description: In this unit, you'll learn what functions are, how to declare and call them, and how to annotate them with types.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/26/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-function.md)]

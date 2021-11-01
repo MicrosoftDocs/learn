@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-language-understanding.2-language-understanding-luis
+title: Language Understanding (LUIS)
+metadata:
+  title: Language Understanding (LUIS)
+  description: Learn about concepts related to Language Understanding Intelligent Service (LUIS) like utterances, intents, and entities.
+  author: nrd26
+  ms.author: chnoring
+  ms.date: 07/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-language-understanding-luis.md)]

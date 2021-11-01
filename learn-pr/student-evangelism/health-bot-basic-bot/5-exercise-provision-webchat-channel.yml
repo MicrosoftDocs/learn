@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-basic-bot.5-exercise-provision-webchat-channel
+title: Exercise - Provision the web chat channel
+metadata:
+  title: Exercise - Provision the web chat channel
+  description: Learn how to create a web chat channel, which allows users to communicate with your Azure Health Bot instance.
+  author: Dwitrisha
+  ms.author: chnoring
+  ms.date: 07/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-provision-webchat-channel.md)]

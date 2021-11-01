@@ -52,7 +52,7 @@ Documents in a Cosmos DB database are organized into containers. The documents i
 > [!div class="mx-imgBorder"]
 > ![Image illustrating documents containing the details and orders made by customers. The documents are partitioned by customer ID](../media/2-partitioned-data.png)
 
-Cosmos DB is a foundational service in Azure. Cosmos DB is used by many of Microsoft's products for mission critical applications running at global scale, including Skype, Xbox, Microsoft 365, and Azure. Cosmos DB is highly suitable for IoT and telematics, Retail and marketing, Gaming, and Web and mobile applications. For additional information about uses for Cosmos DB, read [Common Azure Cosmos DB use cases](https://docs.microsoft.com/azure/cosmos-db/use-cases).
+Cosmos DB is a foundational service in Azure. Cosmos DB is used by many of Microsoft's products for mission critical applications running at global scale, including Skype, Xbox, Microsoft 365, and Azure. Cosmos DB is highly suitable for IoT and telematics, Retail and marketing, Gaming, and Web and mobile applications. For additional information about uses for Cosmos DB, read [Common Azure Cosmos DB use cases](/azure/cosmos-db/use-cases).
 
 ## What are Cosmos DB APIs?
 
@@ -84,10 +84,10 @@ The principal use of the Table, MongoDB, and Cassandra APIs is to support existi
 Cosmos DB provides several options for uploading data to a Cosmos DB database, and querying that data. You can:
 
 - Use **Data Explorer** in the Azure portal to run ad-hoc queries. You can also use this tool to load data, but you can only load one document at a time. The data load functionality is primarily aimed at uploading a small number of documents (up to 2 MB in total size) for test purposes, rather than importing large quantities of data.
-- Use the [Cosmos DB Data Migration tool](https://docs.microsoft.com/azure/cosmos-db/import-data) to perform a bulk-load or transfer of data from another data source.
-- Use [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/connector-azure-cosmos-db) to import data from another source.
-- Write a custom application that imports data using the Cosmos DB [BulkExecutor](https://docs.microsoft.com/azure/cosmos-db/tutorial-sql-api-dotnet-bulk-import) library. This strategy is beyond the scope of this module.
-- Create your own application that uses the functions available through the [Cosmos DB SQL API client library](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet-v4) to store data. This approach is also beyond the scope of this module.
+- Use the [Cosmos DB Data Migration tool](/azure/cosmos-db/import-data) to perform a bulk-load or transfer of data from another data source.
+- Use [Azure Data Factory](/azure/data-factory/connector-azure-cosmos-db) to import data from another source.
+- Write a custom application that imports data using the Cosmos DB [BulkExecutor](/azure/cosmos-db/tutorial-sql-api-dotnet-bulk-import) library. This strategy is beyond the scope of this module.
+- Create your own application that uses the functions available through the [Cosmos DB SQL API client library](/azure/cosmos-db/create-sql-api-dotnet-v4) to store data. This approach is also beyond the scope of this module.
 
 ### Load data using the Cosmos DB Data Migration tool
 
@@ -102,7 +102,7 @@ You can use the Data Migration tool to import data to Azure Cosmos DB from a var
 - HBase
 - Azure Cosmos containers
 
-The Data Migration tool is available as a [download from GitHub](https://aka.ms/csdmtool). The tool guides you through the process of migrating data into a Cosmos DB database. You're prompted for the source of the data (one of the items listed above), and the destination (the Cosmos DB database and container). The tool can either populate an existing container, or create a new one if the specified container doesn't already exist.
+The Data Migration tool is available as a [download from GitHub](https://github.com/Azure/azure-documentdb-datamigrationtool	). The tool guides you through the process of migrating data into a Cosmos DB database. You're prompted for the source of the data (one of the items listed above), and the destination (the Cosmos DB database and container). The tool can either populate an existing container, or create a new one if the specified container doesn't already exist.
 
 > [!NOTE]
 > You can also use the Data Migration tool to export data from a Cosmos DB container to a JSON file, either held locally or in Azure Blob storage
@@ -126,7 +126,3 @@ If you've already created the container, use the **Scale** settings of the datab
 > ![Image showing the **Scale** page for a Cosmos DB database in the Azure portal](../media/2-cosmosdb-scale.png)
 
 Once the data has been loaded, you may be able to reduce the throughput resources to lower the costs of the database.
-
-
-
-

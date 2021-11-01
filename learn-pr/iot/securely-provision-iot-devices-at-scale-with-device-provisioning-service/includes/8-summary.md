@@ -2,7 +2,7 @@ Completing this module should have shed valuable light into the dark world of cr
 
 In short, you've learnt how to keep your cheese maturing practices a secret!
 
-[![Photograph of mature blue cheese](../media/cheese-rect3.png)](../media/cheese-rect3.png#lightbox)
+[![Photograph of mature blue cheese.](../media/cheese-rect3.png)](../media/cheese-rect3.png#lightbox)
 
 In this module, you learned how to:
 

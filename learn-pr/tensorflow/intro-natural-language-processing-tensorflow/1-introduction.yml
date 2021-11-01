@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-natural-language-processing.introduction
+title: Introduction to natural language processing with TensorFlow
+metadata:
+  title: Introduction to natural language processing with TensorFlow
+  description: Introduction to natural language processing with TensorFlow
+  author: shwars
+  ms.author: dmitryso
+  ms.date: 07/07/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

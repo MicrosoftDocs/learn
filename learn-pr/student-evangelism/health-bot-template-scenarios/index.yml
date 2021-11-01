@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.health-bot-template-scenarios
+metadata:
+  title: Azure Health Bot scenario templates
+  description: Learn how to enrich the capabilities of your bot by using the prebuilt scenario templates.
+  ms.date: 07/27/2021
+  author: sfoteini
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Health Bot scenario templates
+summary: Learn how to enrich the capabilities of your bot by using the prebuilt scenario templates.
+abstract: |
+  In this module, you will:
+  - Learn what scenario templates are.
+  - Recognize use cases for scenario templates.
+  - Build a health bot by using a scenario template.
+iconUrl: /learn/achievements/student-evangelism/health-bot-template-scenarios.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs
+prerequisites: |
+  - Introduction to Azure Health Bot
+  - Basic Azure Health Bot
+  - Language understanding in Azure Health Bot
+  - Azure Health Bot built-in scenarios
+units:
+  - learn.health-bot-template-scenarios.1-introduction
+  - learn.health-bot-template-scenarios.2-introduction-scenario-templates
+  - learn.health-bot-template-scenarios.3-exercise-template-scenario
+  - learn.health-bot-template-scenarios.4-knowledge-check
+  - learn.health-bot-template-scenarios.5-summary
+badge:
+  uid: learn.student-evangelism.health-bot-template-scenarios.badge

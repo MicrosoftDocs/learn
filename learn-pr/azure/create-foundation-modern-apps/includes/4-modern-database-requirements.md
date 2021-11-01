@@ -10,7 +10,7 @@ To support development and developers, you can use [Azure SQL Serverless](https:
 
 ## Support development workflows with GitHub Actions
 
-As the DevOps practice is now ubiquitous, it is important for a modern solution to properly support and have a healthy CI/CD pipeline. Azure SQL natively supports GitHub Actions, which you can use to deploy changes to your development database to test and production databases when ready. Azure SQL actions use a state-based approach. DevOps for data is an interesting topic, and you can learn more about it in the Data Exposed episodes referenced at the end of the module.
+As the DevOps practice is now ubiquitous, it is important for a modern solution to properly support and have a healthy continuous integration and continuous delivery/continuous deployment (CI/CD) pipeline. Azure SQL natively supports GitHub Actions, which you can use to deploy changes to your development database to test and production databases when ready. Azure SQL actions use a state-based approach. DevOps for data is an interesting topic, and you can learn more about it in the Data Exposed episodes referenced at the end of the module.
 
 Another key requirement of a modern database is the ability to handle and support the latest development trends and innovations. Azure SQL provides many features so you can use the best technology or model for a given use case. An overview of all the available features is provided in a blog post at the end of the module.
 

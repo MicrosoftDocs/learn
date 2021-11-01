@@ -29,7 +29,7 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 1. On the **Review** tab, note the initial build configuration.
 
-    :::image type="content" source="../media/6-initial-pipeline-yml.png" alt-text="Azure Pipelines showing the initial build configuration":::
+    :::image type="content" source="../media/6-initial-pipeline-yml.png" alt-text="Azure Pipelines showing the initial build configuration.":::
 
     This is a very basic configuration that Azure DevOps provides for you based on your app type, ASP.NET Core.
 

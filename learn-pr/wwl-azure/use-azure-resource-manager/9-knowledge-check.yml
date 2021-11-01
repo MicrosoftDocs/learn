@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-resource-manager.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/16/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which one of these resource types can be moved across resource groups?"
+    choices:
+    - content: "Azure Backup Vault"
+      isCorrect: false
+      explanation: "That's incorrect. An Azure Backup vault cannot be moved across resource groups."
+    - content: "Azure Application Gateway"
+      isCorrect: false
+      explanation: "That's incorrect. The Azure Application Gateway cannot be moved across resource groups."
+    - content: "Azure Virtual Networks"
+      isCorrect: true
+      explanation: "That's correct. Azure virtual network can be moved across resource groups."
+  - content: "Which of the following would be good example of when to use a resource lock?"
+    choices:
+    - content: "A ExpressRoute circuit with connectivity back to the on-premises network."
+      isCorrect: true
+      explanation: "That's correct. This is a critical resources Resource locks prevent other users in the organization from accidentally deleting or modifying critical resources."
+    - content: "A non-production virtual machine used to test occasional application builds."
+      isCorrect: false
+      explanation: "That's incorrect. This non-production resource would not need to be protected from accidental deletion or modification."
+    - content: "A storage account used to temporarily store images processed in a development environment."
+      isCorrect: false
+      explanation: "That's incorrect. This temporary resource would not need to be protected from accidental deletion or modification."
+  - content: "Which of the following features doesn't apply to resource groups?"
+    choices:
+    - content: "Resources can only be in one resource group"
+      isCorrect: false
+      explanation: "That's incorrect. It does apply, as resources can be in only one resource group."
+    - content: "Role-based access control can be applied to a resource group"
+      isCorrect: false
+      explanation: "That's incorrect. It does apply, as role-based access control can be applied to the resource group."
+    - content: "Resource groups can be nested."
+      isCorrect: true
+      explanation: "That's correct. It does not apply, as resource groups can't be nested."

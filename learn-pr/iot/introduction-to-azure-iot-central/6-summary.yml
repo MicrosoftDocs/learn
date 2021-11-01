@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-iot-central.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: A summary review of what you've learned in this module.
+  ms.date: 07/21/2021
+  author: whitneylampkin
+  ms.author: wlampkin
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

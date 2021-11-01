@@ -8,11 +8,11 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
 
 1. On the Azure portal home page, select **Create a resource**. The **Create a resource** pane appears.
 
-   ![Create a resource from Azure portal menu](../media/4-create-a-resource-azure-cosmos-db.png)
+   ![Create a resource from Azure portal menu.](../media/4-create-a-resource-azure-cosmos-db.png)
 
 1. In the left menu pane, select **Databases**, and then select **Azure Cosmos DB**.
 
-   ![Select Azure Cosmos DB](../media/4-select-database-azure-cosmos-db.png)
+   ![Select Azure Cosmos DB.](../media/4-select-database-azure-cosmos-db.png)
 
     The **Create Azure Cosmos DB Account** pane appears.
 
@@ -48,7 +48,7 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
 
 1. In the left menu pane, select **Overview**, copy the value for the **Gremlin Endpoint**; you'll use this value when you create your application in the next section.
 
-   ![Screenshot showing how to copy the Gremlin Endpoint](../media/5-copy-gremlin-endpoint.png)
+   ![Screenshot showing how to copy the Gremlin Endpoint.](../media/5-copy-gremlin-endpoint.png)
 
 1. In the left menu pane, select **Data Explorer**, and then select **New Graph** in the top menu bar. The **New Graph** pane appears.
 
@@ -65,7 +65,7 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
 
 1. In the left menu pane, under **Settings**, select **Keys**, then copy the value for the **PRIMARY KEY**. You'll use this value when you create your application in the next section.
 
-   ![Screenshot showing how to copy the access key](../media/5-copy-gremlin-key.png)
+   ![Screenshot showing how to copy the access key.](../media/5-copy-gremlin-key.png)
 
 ::: zone pivot="csharp"
 
@@ -494,6 +494,6 @@ You can now use the Data Explorer in the Azure portal to browse and query your n
 
 1. Select **Execute Gremlin Query** to use the default query to view all the vertices in the graph.
 
-    ![Screenshot showing the data model of the products added and their relationships to other vertices](../media/5-cosmos-db-data-explorer.png)
+    ![Screenshot showing the data model of the products added and their relationships to other vertices.](../media/5-cosmos-db-data-explorer.png)
 
 The data you entered using your app appears in the Graph pane. You can zoom in and out of the graph, you can expand the graph display, add additional vertices, and move vertices on the display surface.

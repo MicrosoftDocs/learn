@@ -6,11 +6,11 @@ In this exercise, you create a migration project by using Data Migration Assista
 
 1. Open Data Migration Assistant.
 
-1. On the left menu, select **+**.
+1. In the left menu bar, select **+**.
 
 1. In the pane that appears, for **Project type**, select **Migration**.
 
-1. In **Project name**, enter **Social Database Migration**.
+1. In **Project name**, enter *Social Database Migration*.
 
 1. Leave **Source server type** set to **SQL Server**, and leave **Target server type** set to **Azure SQL Database**.
 
@@ -18,7 +18,7 @@ In this exercise, you create a migration project by using Data Migration Assista
 
 ## Select the source database
 
-1. In the **Connect to source server** area, for **Server name**, enter **admsdemovm**. Leave the other settings at their default values, and select **Connect**.
+1. In the **Connect to source server** area, for **Server name**, enter *admsdemovm*. Accept the other settings at their default values, and select **Connect**.
 
 1. After you're connected, you'll see a list of databases. In the list, you can select only one database to migrate. In this case, you have only the **Social** database.
 
@@ -30,11 +30,13 @@ In this exercise, you create a migration project by using Data Migration Assista
 
 1. Get the name of your SQL Server instance that was created earlier. Open the [Azure portal](https://portal.azure.com?azure-portal=true) if you don't already have it open.
 
-1. Open the **admsdemorg** resource group, and locate the SQL Server instance. To open the **Overview** pane, select the server name.
+1. Open the **admsdemorg** resource group, and select the SQL Server instance.
 
     :::image type="content" source="../media/06-azure-sql-server.png" alt-text="Items in the resource group, with the SQL Server instance selected." loc-scope="azure":::
 
-1. Move the mouse to the end of the **Server name** line, and select **Copy to clipboard**.
+    The **SQL server** Overview pane appears.
+
+1. In the **Essentials** section, at the end of **Server name**, select **Copy to clipboard**.
 
     :::image type="content" source="../media/06-azure-sql-server-copy.png" alt-text="Selection for copying the server name." loc-scope="azure-database-migration":::
 
@@ -46,7 +48,7 @@ In this exercise, you create a migration project by using Data Migration Assista
 
 1. Select **Connect**.
 
-1. The screen is updated to show a list of databases on the target server. From here, you can select a database that will be the target of the migration.
+    The screen is updated to show a list of databases on the target server. From here, you can select a database that will be the target of the migration.
 
 1. You should see the **Social** database that you created during the setup exercise, and it should be selected by default. To proceed to the next step, select **Next**.
 
@@ -54,7 +56,7 @@ In this exercise, you create a migration project by using Data Migration Assista
 
 ## Select objects to migrate and deploy the schema
 
-In this step, you can select the database objects that you want to migrate, and clear the ones you don't. In this exercise, you only have one object, the table `dbo.Twitters`.
+In this procedure, you can select the database objects that you want to migrate, and clear the ones you don't. In this exercise, you only have one object, the table `dbo.Twitters`.
 
 1. Select the **dbo.Twitters** line, and you'll see there are no issues found for this object. This is in part because you fixed any issues during the assessment phase of the migration.
 

@@ -1,12 +1,12 @@
 We need to ensure that only authorized devices can publish data into the IoT Edge Gateway.  Certificate-based authentication will allow us to keep out unauthorized devices and secure the transmission channel back to our IoT Hub.
 
-[![Security Guard at Entrance](../media/security.png)](../media/security.png#lightbox)
+[![Security Guard at Entrance.](../media/security.png)](../media/security.png#lightbox)
 
 The process is similar to how we gain access into the physical manufacturing building.  
 
 We present credentials to a guard (the IoT Edge Gateway), who validates that we are who we say we are.  If the credentials check out, then we can pass into our destination (the Azure IoT Hub).
 
-[![Transparent Gateway Devices Diagram](../media/transparent-gateway-devices.png)](../media/transparent-gateway-devices.png#lightbox)
+[![Transparent Gateway Devices Diagram.](../media/transparent-gateway-devices.png)](../media/transparent-gateway-devices.png#lightbox)
 
 In this unit, you'll generate test certificates using tooling on Linux. The certs will ensure that only securely authenticated downstream devices can communicate with the IoT Edge Gateway.
 
@@ -21,12 +21,12 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
     If you are using a sandbox account, you may receive the following error message when creating the Cloud Shell instance. If you receive this message, scroll down and select **Show advanced settings**:
 
     >[!div class="mx-imgBorder"]
-    >[![Azure Cloud Shell Storage Creation Failed](../media/storage-creation-failed.png)](../media/storage-creation-failed.png#lightbox)
+    >[![Azure Cloud Shell Storage Creation Failed.](../media/storage-creation-failed.png)](../media/storage-creation-failed.png#lightbox)
 
     Next, supply appropriate names to create a new **Storage account** and **File share** then select **Create storage**:
 
    >[!div class="mx-imgBorder"]
-    >[![Azure Cloud Shell Storage Creation Advanced Settings Named](../media/storage-creation-advanced-settings-named.png)](../media/storage-creation-advanced-settings-named.png#lightbox)
+    >[![Azure Cloud Shell Storage Creation Advanced Settings Named.](../media/storage-creation-advanced-settings-named.png)](../media/storage-creation-advanced-settings-named.png#lightbox)
 
     >[!NOTE]
     > The **Storage Account** and **File Share** resources must be given globally unique names.  If you receive an error that a given name is already in use, try to name the resource again with a unique value.

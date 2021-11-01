@@ -4,7 +4,7 @@ OpenStack consists of multiple layers that can be used to configure, provision, 
 
 A high-level view of the various services involved in the OpenStack middleware suite is represented in the following figure:
 
-![OpenStack service architecture](../media/openstack.png)
+![OpenStack service architecture.](../media/openstack.png)
 
 _Figure 6: OpenStack service architecture_
 

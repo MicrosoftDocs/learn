@@ -6,13 +6,13 @@ In this exercise, you'll provision a web server to meet the requirements.
 
 ## Provision a web server
 
-You'll use a couple of tools together. With Azure Resource Manager templates, you can create a template that outlines the environment for your web server. Your Resource Manager template can also help you define a state that you apply to your web server at the point of provisioning. Apply your desired state by linking to a Desired State Configuration (DSC) extension handler inside your Resource Manager template. The DSC handler helps you enforce a state that you define in a DSC configuration.
+You need to use several tools to provision a web server. Using an Azure Resource Manager template, you can define the environment for your web server. The Resource Manager template can also help you define a desired state configuration (DSC) for your web server. By linking to a Desired State Configuration (DSC) extension handler in the Resource Manager template, both the environment and the desired state are applied when you provision the web server. The DSC extension handler helps enforce the DSC state that you defined.
 
 In the following exercise, you'll use a Resource Manager template to provision a virtual machine. The DSC extension handler that's included in the template enforces your state on the virtual machine. You use an Azure storage account to host your DSC configuration file.
 
 ## Clone the configuration and template
 
-Let's start by obtaining a configuration file and Resource Manager template from GitHub.
+Let's start by obtaining a configuration file and an Azure Resource Manager template from GitHub.
 
 1. In Azure Cloud Shell instance on the right, run the following command to clone the GitHub repository.
 
@@ -71,11 +71,11 @@ The State Configuration is defined in the *Webserver.ps1* file, which includes t
     ls -al
     ```
 
-    Notice that the repository contains both the *Webserver.ps1* file, and the *Webserver.zip* compressed file. You use the zipped file later in this exercise.
+    Notice that the repository contains both the *Webserver.ps1* file, and the *Webserver.zip* compressed file. You will use the zipped file later in this exercise.
 
 ## Configure the template
 
-The GitHub repository that you cloned also contains a Resource Manager template. Let's add the location of the zipped configuration file to it.
+The GitHub repository that you cloned also contains a Resource Manager template. Let's edit the template to add the location of the zipped configuration file to it.
 
 1. In Cloud Shell, run this command to open the template:
 
@@ -83,9 +83,9 @@ The GitHub repository that you cloned also contains a Resource Manager template.
     code template.json
     ```
 
-1. In the *template.json* code file, in the `<parameters>` section, notice that some properties, such as `vmName`, don't include default values. When you use the template, you're prompted to enter values for those properties.
+1. In the *template.json* file, look for the `<parameters>` element. Notice that some members, such as `vmName`, don't have default values. When you use the template, you're prompted to enter values for those properties.
 
-1. To provide a default value for the configuration file URL, in the *template.json* code file, locate this code:
+1. You can also provide a default value for the configuration file URL. In the *template.json* code file, locate this code:
 
     ```json
     "modulesUrl": {
@@ -96,7 +96,7 @@ The GitHub repository that you cloned also contains a Resource Manager template.
     },
     ```
 
-1. Replace that code with this code:
+1. Add the default value as shown below so that it looks like this code:
 
     ```json
     "modulesUrl": {
@@ -108,17 +108,17 @@ The GitHub repository that you cloned also contains a Resource Manager template.
     },
     ```
 
-1. To save the template, press <kbd>Ctrl+S</kbd>.
+1. Save the template by pressing <kbd>Ctrl+S</kbd>.
 
-1. In the `<variables>` section of the *template.json* code file, notice that values are stored to configure networking for the virtual machine.
+1. In the `<variables>` section of the *template.json* file, notice that values are stored to configure networking for a virtual machine.
 
-1. In the `<resources>` section, notice that the template creates an IP address, a virtual network, the virtual machine, and other related resources.
+1. In the `<resources>` section, notice that the template defines an IP address, a virtual network, a virtual machine, and other related resources.
 
-1. To close the code editor, press <kbd>Ctrl+Q</kbd>.
+1. Close the code editor by pressing <kbd>Ctrl+Q</kbd>.
 
 ## Validate your template
 
-Now that you have a completed template and zipped configuration file, you can use the Azure CLI to perform a deployment. Before you deploy, validate your files to see if the deployment will be successful.
+Now that you have a completed template and zipped configuration file, you can use the Azure CLI to deploy them. Before you deploy, validate your files to see if the deployment will be successful.
 
 1. In Cloud Shell, run this command to validate your deployment. When prompted for a password, enter a complex password of your choice.
 
@@ -129,7 +129,7 @@ Now that you have a completed template and zipped configuration file, you can us
         --parameters vmName=hostVM1 adminUsername=serveradmin
     ```
 
-1. If your deployment is validated, you'll see information about your deployment. Pay special attention to the `error` property, which can be found by scrolling back through the output text. It should be `null`.
+1. If your deployment is validated, you'll see information about your deployment. Pay special attention to the `error` property, which is near the beginning of the output and can be found by scrolling back through the output text. It should be `null`.
 
     :::image type="content" source="../media/5-error-null.png" alt-text="Screenshot of Cloud Shell showing a successful template validation with a callout highlighting the error property set to null." loc-scope="other"::: <!-- no-loc -->
 
@@ -137,9 +137,9 @@ Now that you have a completed template and zipped configuration file, you can us
 
 ## Deploy your template
 
-Now that we know the template is valid, we can perform the deployment.
+Now that you know the template is valid, you can deploy it.
 
-1. To deploy the template, run the following command. When prompted for a password, enter a complex password of your choice.
+1. To deploy the template, run the following command. When prompted for a password, enter the password you defined in the previous task.
 
     ```azurecli
     az deployment group create \
@@ -148,9 +148,9 @@ Now that we know the template is valid, we can perform the deployment.
         --parameters vmName=hostVM1 adminUsername=serveradmin
     ```
 
-    The template takes several minutes to deploy.
+    It may take several minutes for deployment to complete.
 
-1. When the deployment is finished, you'll have a virtual machine configured as an IIS web server. To list all of the resources in the resource group and confirm that everything has been set up, run this command:
+1. When the deployment is completed, you should have a virtual machine configured as an IIS web server. To confirm it has been set up, run the following command to list all of the resources in the resource group.
 
     ```azurecli
     az resource list \
@@ -159,9 +159,9 @@ Now that we know the template is valid, we can perform the deployment.
         --query "[*].{Name:name, Type:type}"
     ```
 
-    You'll see all of your resources listed, which means your deployment was successful.
+    The output should show your host, extension, network interface, public address, virtual network, and storage account. If you see all of these resources listed, your deployment was successful.
 
-1. Run this command to generate the URL for your web server so that you can confirm IIS was successfully installed:
+1. Run the following command to generate the URL for your web server. The output IP address confirms that IIS was successfully installed.
 
     ```azurecli
     echo http://$(az vm show \
@@ -174,6 +174,6 @@ Now that we know the template is valid, we can perform the deployment.
 
 1. Select the URL, or copy and paste it into a new browser window. You should see the default IIS page.
 
-    :::image type="content" source="../media/5-iis-server-runs.png" alt-text="Screenshot of the default IIS page on the virtual machine that was deployed." loc-scope="other":::
+    :::image type="content" source="../media/5-iis-server-runs.png" alt-text="Screenshot of the default IIS page on the virtual machine that was deployed." loc-scope="other" lightbox="../media/5-iis-server-runs.png" :::
 
-You provisioned a web server by using Resource Manager templates and enforced a desired State Configuration on your machine through a DSC extension handler.
+Congratulations! You have successfully provisioned a web server using a Resource Manager template, and enforced a Desired State Configuration (DSC) on your virtual machine using a DSC extension handler.

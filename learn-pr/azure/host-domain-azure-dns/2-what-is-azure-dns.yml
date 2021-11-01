@@ -41,7 +41,7 @@ quiz:
     choices:
     - content: CNAME
       isCorrect: false
-      explanation: The CNAME record maps multiple domain names or hosts to a single IP address.
+      explanation: The CNAME record maps a domain name to another domain name.
     - content: A or AAAA
       isCorrect: true
       explanation: The A or AAAA record maps an IP address to a domain. Multiple IP addresses are known as a record set.

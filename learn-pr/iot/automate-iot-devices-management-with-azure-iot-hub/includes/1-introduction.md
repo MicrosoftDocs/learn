@@ -24,7 +24,7 @@ In this module you will:
 
 Suppose you manage a company that offers a solution to maintain and monitor cheese caves' temperature and humidity at optimal levels. You have been working with gourmet cheese making companies for a long time and established long-term trust with these customers who value the quality of your product.
 
-:::image type="content" source="../media/cheese-cave-hor.jpg" alt-text="Cheese Cave":::
+:::image type="content" source="../media/cheese-cave-hor.jpg" alt-text="Cheese Cave.":::
 
 Your solution consists in sensors and a climate system installed in the customer's cave that report in real time on the temperature and humidity. It also has an online portal that customers can use to monitor and remotely operate their devices to adapt the temperature and humidity to the type of cheese they stored in their cave or to fine-tune the environment for perfectly aging their cheese.
 

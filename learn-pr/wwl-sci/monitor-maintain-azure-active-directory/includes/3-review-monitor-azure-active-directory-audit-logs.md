@@ -1,24 +1,3 @@
-With Azure AD reports, you can get the information you need to determine how your environment is doing.
-
-The reporting architecture consists of the following components:
-
-- **Activity**
-
-  - **Sign-ins** - The sign-ins report provides information about the usage of managed applications and user sign-in activities.
-
-  - **Audit logs** - Provides traceability through logs for all changes made by various features within Azure AD. Examples of audit logs include changes made to any resources within Azure AD, such as adding or removing users, apps, groups, roles and policies.
-
-  - **Provisioning logs** - Provisioning logs allow customers to monitor activity by the provisioning service, such as creating a group in ServiceNow or a user imported from Workday.
-
-- **Security**
-
-  - **Risky sign-ins** - A risky sign-in is an indicator for a sign-in attempt that might have been performed by someone who is not the legitimate owner of a user account.
-
-  - **Users flagged for risk** - A risky user is an indicator for a user account that might have been compromised.
-
-## Who can access the data?
-
-Users in the **Security Administrator**, **Security Reader**, **Report Reader** , **Global Reader,** or **Global Administrator** roles
 
 ## Audit logs
 

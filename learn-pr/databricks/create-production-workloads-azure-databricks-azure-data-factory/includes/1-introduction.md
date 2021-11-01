@@ -42,7 +42,7 @@ To complete this module, you will need to deploy an Azure Data Factory instance 
 1. In the **Search the Marketplace** box, enter **data factory** and press Enter.
 1. Select **Data Factory** from the search results, and then select **Create**.
 
-   ![Screenshot of Azure portal with option to add new Azure Data Factory shown](../media/add-resource-data-factory.png)
+   ![Screenshot of Azure portal with option to add new Azure Data Factory shown.](../media/add-resource-data-factory.png)
 
 1. In the **New data factory** pane, use the following settings:
 
@@ -84,7 +84,7 @@ To complete this module, you will need to deploy an Azure Data Factory instance 
 
 1. Select **Create Cluster** to add a new cluster.
 
-    ![The create cluster page](../media/create-cluster.png)
+    ![The create cluster page.](../media/create-cluster.png)
 
 1. Enter a name for your cluster. Use your name or initials to easily differentiate your cluster from your coworkers.
 

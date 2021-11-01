@@ -19,7 +19,7 @@ Scheduling a job under either FIFO, Fair, or Capacity implies scheduling all its
 
 When scheduling reduce tasks, however, the JT ignores that principle, mainly because a reduce task's input (partition(s)) usually comprises the output of many map tasks generated at multiple TTs. When a TT asks, the JT assigns a reduce task, $R$, irrespective of TT's network distance locality from $R$'s feeding TTs.<sup>**7**</sup> This strategy makes Hadoop's reduce task scheduler locality unaware. 
 
-![The nodes at which native Hadoop scheduled each map task and reduce task of the WordCount benchmark](../media/nodes.png)
+![The nodes at which native Hadoop scheduled each map task and reduce task of the WordCount benchmark.](../media/nodes.png)
 
 _Figure 5: The nodes at which native Hadoop scheduled each map task and reduce task of the WordCount benchmark_
 
@@ -27,7 +27,7 @@ To illustrate this locality unawareness and its implications, we deﬁne a total
 
 Hadoop's current reduce task scheduler is not only locality unaware but also partitioning-skew unaware. Partitioning skew refers to a signiﬁcant variance in intermediate key frequencies and their distribution across different data nodes.<sup>[1][^1], [3][^3]</sup> Figure 6 demonstrates the partitioning-skew phenomenon. It shows partition sizes that each feeding map task delivers to each reduce task in two variants of the Sort benchmark, Sort1 and Sort2 (each with a different dataset), in WordCount and in K-means.<sup>**8**</sup> Partitioning skew causes shufﬂe skew, in which some reduce tasks receive more data than others. The shufﬂe-skew problem can degrade performance because a job can get delayed while a reduce task fetches large input data, but the node at which a reduce task is scheduled can mitigate shufﬂe-skew effects. In general, the reduce task scheduler's impact can extend to determining the network communication pattern, affecting the quantity of shufﬂed data, and influencing MapReduce job runtimes. 
 
-![The sizes of partitions produced by each feeding map task to each reduce task in Sort1, Sort2, WordCount, and K-means](../media/partitioning.png)
+![The sizes of partitions produced by each feeding map task to each reduce task in Sort1, Sort2, WordCount, and K-means.](../media/partitioning.png)
 
 _Figure 6: The sizes of partitions produced by each feeding map task to each reduce task in Sort1, Sort2, WordCount, and K-means_
 
@@ -35,7 +35,7 @@ To make Hadoop MapReduce's reduce task scheduler more effective, it should addre
 
 Numerous research papers have addressed the need for a task scheduler aware of both data locality and partitioning skew.<sup>[1][^1], [2][^2], [3][^3], [10][^10], [11][^11], [12][^12]</sup> The center-of-gravity reduce scheduler (CoGRS),<sup>[3][^3]</sup> for example, represents a locality- and skew-aware reduce task scheduler. To minimize network traffic, it attempts to schedule every reduce task, $R$, at its center-of-gravity node, determined by the network locations of $R$'s feeding nodes and the skew in $R$'s partition sizes. Specifically, CoGRS introduces a new metric called weighted total network distance ($WTND$) and deﬁnes it for each $R$* as $WTND_{R}$ = $\Sigma_{i=0}^n ND_{iR} \times w_{i}$, where $n$ is the number of partitions needed by $R$, $ND$ is the network distance required to shufﬂe a partition, $i$, to $R$, and $w_{i}$ is the weight of a partition, $i$. In principle, the center of gravity of $R$ is always one of $R$'s feeding nodes because it is less expensive to access data locally than to shufﬂe data over the network. Therefore, CoGRS designates the center of gravity of $R$ to be the feeding node of $R$ that provides the minimum $WTND$. 
 
-![Options for scheduling a reduce task, R, with feeding nodes TT1 and TT2 in a cluster with two racks (CS = core switch, RS = rack switch, TT = TaskTracker, and JT = JobTracker)](../media/options-scheduling-reduce-task.png)
+![Options for scheduling a reduce task, R, with feeding nodes TT1 and TT2 in a cluster with two racks (CS = core switch, RS = rack switch, TT = TaskTracker, and JT = JobTracker).](../media/options-scheduling-reduce-task.png)
 
 _Figure 7: Options for scheduling a reduce task, $R$, with feeding nodes TT1 and TT2 in a cluster with two racks (CS = core switch, RS = rack switch, TT = TaskTracker, and JT = JobTracker)_
 <br>

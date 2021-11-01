@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.serverless-go.web-api
+title: Web app
+metadata:
+  title: Web app
+  description: Build a web app by using Go.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/12/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-web-api.md)]

@@ -382,3 +382,19 @@ groups:
       title: JSON + CLI
     - id: jsonpowershell
       title: JSON + PowerShell
+- id: webxr-vr-ar
+  title: WebXR for Virtual Reality or Augmented Reality
+  prompt: Choose your WebXR session type
+  pivots:
+    - id: vr
+      title: Virtual reality
+    - id: ar
+      title: Augmented reality
+- id: repository-hosting-platform
+  title: Choose a repository hosting platform
+  prompt: Choose a repository hosting platform
+  pivots:
+    - id: github
+      title: GitHub
+    - id: azurerepos
+      title: Azure Repos

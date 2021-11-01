@@ -1,6 +1,6 @@
 With PIM, you can view activity, activations, and audit history for Azure privileged access group members and owners within your Azure AD organization.
 
-If your organization has outsourced management functions to a service provider who uses [Azure delegated resource management](https://docs.microsoft.com/azure/lighthouse/concepts/azure-delegated-resource-management), role assignments authorized by that service provider won't be shown here.
+If your organization has outsourced management functions to a service provider who uses [Azure delegated resource management](/azure/lighthouse/concepts/azure-delegated-resource-management), role assignments authorized by that service provider won't be shown here.
 
 Follow these steps to view the audit history for privileged access groups.
 

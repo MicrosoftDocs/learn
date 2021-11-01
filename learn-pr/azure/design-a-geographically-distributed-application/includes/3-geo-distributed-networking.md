@@ -4,7 +4,7 @@ We've decided to rearchitect our shipping portal in Azure to reduce its vulnerab
 
 Here, we'll learn how Azure DNS, Traffic Manager, Front Door, and Azure CDN support our shipping company's app architecture.
 
-![A diagram showing multi-region distributed application networking components](../media/3-multi-region-web-app-networking.png)
+![A diagram showing multi-region distributed application networking components.](../media/3-multi-region-web-app-networking.png)
 
 ## Azure DNS
 
@@ -37,7 +37,7 @@ Because Traffic Manager uses the DNS system to route traffic, it routes any prot
 
 Traffic Manager uses highly configurable endpoint monitoring. For example, we can define the protocol, port, path, custom header settings, expected status code ranges, tolerated number of failures, and so on. Endpoint monitoring gives us a continuous idea of the overall health of all parts of our application.
 
-![Azure Traffic Manager priority mode](../media/3-traffic-manager-priority-mode.png)
+![Azure Traffic Manager priority mode.](../media/3-traffic-manager-priority-mode.png)
 
 ### What is Azure Front Door?
 

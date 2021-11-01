@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-azure-expressroute.explore
+title: Explore Azure ExpressRoute
+metadata:
+  title: Explore Azure ExpressRoute
+  description: "Explore Azure ExpressRoute"
+  ms.date: 08/02/2021
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 22
+content: |
+  [!include[](includes/2-explore.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which one of the following is the most effective use of ExpressRoute?"
+    choices:
+    - content: "Provide reliable and secure connectivity to Azure services."
+      isCorrect: true
+      explanation: "Correct. Azure ExpressRoute is used to create private connections between Azure data centers, Azure services, and infrastructure on your premises or in a colocation environment."
+    - content: "Connect your network to the public internet."
+      isCorrect: false
+      explanation: "Incorrect. Azure ExpressRoute isn't the most effective way to connect your network to the public internet."
+    - content: "Connect data center services internal to an organization."
+      isCorrect: false
+      explanation: "Incorrect. Azure ExpressRoute isn't used to connect data center services internal to an organization."
+  - content: "What is the benefit of Bidirectional forwarding?"
+    choices:
+    - content: "Bidirectional forwarding reduces the failure deduction time."
+      isCorrect: true
+      explanation: "Correct. Enabling BFD over an ExpressRoute circuit can reduce the failure deduction time from a few tens of seconds to less than a second."
+    - content: "Bidirectional forwarding allows traffic to flow in both directions."
+      isCorrect: false
+      explanation: "Incorrect. Bidirectional forwarding isn't concerned with normal traffic flow."
+    - content: "Bidirectional forwarding enables you to configure BGP keep-alive times of less than 3 seconds."
+      isCorrect: false
+      explanation: "Incorrect. The BGP keep-alive can be set as low as three seconds, but this aggressive schedule isn't recommended."

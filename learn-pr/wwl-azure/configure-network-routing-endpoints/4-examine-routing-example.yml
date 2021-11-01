@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-network-routing-endpoints.examine-routing-example
+title: Examine a routing example
+metadata:
+  title: Examine a routing example
+  description: "Examine a routing example"
+  ms.date: 07/23/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-examine-routing-example.md)]

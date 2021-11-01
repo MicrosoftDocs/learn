@@ -24,7 +24,7 @@ source <(curl -Ls https://aka.ms/install-node-lts)
    git clone https://github.com/MicrosoftDocs/node-essentials && cd node-essentials/nodejs-files
    ```
 
-1. Open the Cloud Shell editor by typing the following command in Cloud Shell and selecting the Enter key.
+1. Open the Cloud Shell editor by running the following command in Cloud Shell.
 
    ```bash
    code .
@@ -190,6 +190,8 @@ You need to find all the files in only the topmost location: the *stores* folder
      console.log(salesFiles);
    }
    ```
+
+1. Press <kbd>Ctrl-S</kbd> to save the file, and press <kbd>Ctrl-Q</kbd> to close the editor.
 
 ## Run the program
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-network-routing-endpoints.identify-user-defined-routes
+title: Identify user-defined routes
+metadata:
+  title: Identify user-defined routes
+  description: "Identify user-defined routes"
+  ms.date: 07/23/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-identify-user-defined-routes.md)]

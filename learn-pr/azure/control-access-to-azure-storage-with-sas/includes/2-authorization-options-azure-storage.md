@@ -13,7 +13,7 @@ Files stored in Azure Storage are accessed by clients over HTTP/HTTPS. Azure nee
 - Shared key
 - Shared access signature
 
-![Diagram showing the four methods of authentication, public access, Azure AD, shared key, and SAS](../media/2-access-options.png)
+![Diagram showing the four methods of authentication, public access, Azure AD, shared key, and SAS.](../media/2-access-options.png)
 
 ### Public access
 

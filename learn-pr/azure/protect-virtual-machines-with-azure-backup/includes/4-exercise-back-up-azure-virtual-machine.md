@@ -1,8 +1,8 @@
-Your company is running a combination of Windows and Linux workloads. You've been asked to prove that Azure Backup is a good fit for both kinds of virtual machines. By using a combination of the Azure CLI and the Azure portal, you'll help protect both kinds of virtual machines with Azure Backup.
+Your company is running a combination of Windows and Linux workloads. You've been asked to prove that Azure Backup is a good fit for both kinds of virtual machines (VMs). By using a combination of the Azure CLI and the Azure portal, you'll help protect both kinds of VMs with Azure Backup.
 
-Azure Backup can be quickly enabled for virtual machines in Azure. You can enable Azure Backup from the portal, from the Azure CLI, or by using PowerShell commands.
+Azure Backup can be quickly enabled for VMs in Azure. You can enable Azure Backup from the portal, from the Azure CLI, or by using PowerShell commands.
 
-In this exercise, you'll create a virtual machine, set up a backup, and start a backup.
+In this exercise, you'll create a VM, set up a backup, and start a backup.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to back up virtual machines by using Azure Backup.
@@ -14,7 +14,7 @@ In this exercise, you'll create a virtual machine, set up a backup, and start a 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and open Azure Cloud Shell.
 
-    ![Open Cloud Shell](../media/4-azure-portal-cloudshell.png)
+    ![Open Cloud Shell.](../media/4-azure-portal-cloudshell.png)
 
 1. Create a resource group to contain all the resources for this exercise.
 
@@ -42,6 +42,7 @@ az vm create \
     --resource-group $RGROUP \
     --name NW-APP01 \
     --size Standard_DS1_v2 \
+    --public-ip-sku Standard
     --vnet-name NorthwindInternal \
     --subnet NorthwindInternal1 \
     --image Win2016Datacenter \
@@ -72,28 +73,26 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. In the Azure portal, search for and select **Virtual machines**.
 
-    ![Screenshot that shows searching for virtual machines](../media/4-portal-vms.png)
+    ![Screenshot that shows searching for virtual machines.](../media/4-portal-vms.png)
 
 1. From the list, select the **NW-RHEL01** virtual machine that you created.
 
-    ![Screenshot that shows selecting a virtual machine](../media/4-portal-select-linux-vm.png)
+    ![Screenshot that shows selecting a virtual machine.](../media/4-portal-select-linux-vm.png)
 
-1. In the left menu pane, scroll down to **Operations**, select **Backup**. The **NW-RHEL01 | Backup** pane appears.
+1. In the menu pane, scroll down to **Operations**, and select **Backup**. The **Backup** pane for NW-RHEL01 appears.
 
-1. Under the **Summary** section, enter the following information to create a backup.
+1. Under the **Summary** section, ensure the following information exists for creating a backup.
 
-    | | |
-    |-|-|
-    | **Recovery services vault** | Enter **azure-backup** for the name. |
-    | **Backup policy** | Select **DailyPolicy**, which is a daily backup at 12:00 PM UTC, and a retention range of 180 days. |
+    - **Recovery services vault**: **azure-backup** for the name.
+    - **Backup policy**: **DailyPolicy-xxxxxxxx**, which creates a daily backup at 12:00 PM UTC with a retention range of 180 days.
 
-    ![Screenshot that shows the backup options](../media/4-portal-azure-backup.png)
+    ![Screenshot that shows the backup options.](../media/4-portal-azure-backup.png)
 
 1. To perform the first backup for this server, in the top menu bar, select **Backup now**.
 
-    ![Screenshot that shows "Backup now"](../media/4-portal-backup-now.png)
+    ![Screenshot that shows "Backup now."](../media/4-portal-backup-now.png)
 
-    The **Backup Now** pane appears.
+    The **Backup Now** pane for NW-RHEL01 appears.
 
 1. Select **OK**.
 
@@ -109,7 +108,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
         --policy-name DefaultPolicy
     ```
 
-1. Monitor the progress of the setup by using the Azure CLI.
+1. Monitor the progress of the setup using the Azure CLI.
 
     ```azurecli
     az backup job list \
@@ -146,26 +145,24 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 ### View the status of a backup for a single virtual machine
 
-1. Sign in to the [Azure portal](https://portal.azure.com/).
-
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
+
+1. If the list is long, select **Add filter**. For Filter, selectTtype, for **Value**, select **Select all** to clear all selections, then select  **Virtual machine**, and select **Apply**.
 
 1. Select the **NW-APP01** virtual machine.
 
-1. In the left menu pane, under **Operations**, select **Backup**.
+1. In the menu pane, scroll to **Operations**, and select **Backup**.
 
-    ![Screenshot of the Backup page after it has been set up](../media/4-portal-backup-setup.png)
+    Under **Backup status**, **Last backup status** displays the current status of the backup.
 
-    **Last backup status** displays the current status of the backup.
+    ![Screenshot of the Backup page after it has been set up.](../media/4-portal-backup-setup.png)
 
 ### View the status of backups in the Recovery Services vault
 
-1. Sign in to the [Azure portal](https://portal.azure.com/).
+1. In the top left corner of the Azure portal where is shows **Home > All resources >  NW-APP01**, select **All resources**.
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**.
+1. Sort the list by *Type*, and then select the **azure-backup** Recovery Services vault.
 
-1. Select the **azure-backup** Recovery Services vault.
+1. On the **Overview** pane, select the **Backup** tab to display a summary of all the backup items, the storage being used, and the current status of any backup jobs.
 
-1. Select the **Backup** tab on the **Overview** page to see a summary of all the backup items, the storage being used, and the current status of any backup jobs.
-
-    ![Screenshot of the Backup dashboard](../media/4-recovery-services-vault.png)
+    ![Screenshot of the Backup dashboard.](../media/4-recovery-services-vault.png)

@@ -4,7 +4,7 @@ title: Decide when to use Azure Container Instances or Azure Kubernetes Service
 metadata:
   title: Decide when to use Azure Container Instances or Azure Kubernetes Service
   description: "In this unit, you'll learn about Azure Container Instances and Azure Kubernetes Service."
-  ms.date: 06/10/2021
+  ms.date: 07/02/2021
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial

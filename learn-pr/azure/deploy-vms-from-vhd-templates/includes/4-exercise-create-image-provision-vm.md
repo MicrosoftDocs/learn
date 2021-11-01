@@ -110,13 +110,13 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 1. In the **Connect to virtual machine** window, select **Download RDP File**.
 
-    ![Screenshot of the Windows virtual machine page, highlighting the Connect button and RDP download](../media/4-connect-to-windows-vm.png)
+    ![Screenshot of the Windows virtual machine page, highlighting the Connect button and RDP download.](../media/4-connect-to-windows-vm.png)
 
 1. When the RDP file is downloaded, select it to open an RDP connection to the virtual machine.
 
 1. In the **Remote Desktop Connection** dialog box, select **Connect**.
 
-    ![Screenshot of the Remote Desktop Connection dialog box](../media/4-rdp-dialog.png)
+    ![Screenshot of the Remote Desktop Connection dialog box.](../media/4-rdp-dialog.png)
 
 1. In the **Windows Security** dialog box, select **More choices**, and then select **Use a different account**.
 
@@ -124,17 +124,17 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 1. In the **Remote Desktop Connection** dialog box, select **Yes** to proceed.
 
-    ![Screenshot of the Remote Desktop Connection dialog box](../media/4-rdp-proceed.png)
+    ![Screenshot of the Remote Desktop Connection dialog box.](../media/4-rdp-proceed.png)
 
 1. On the virtual machine, select the **Search** button in the lower-left corner of the screen.
 
-    ![The Search button in the Windows taskbar](../media/4-windows-taskbar.png)
+    ![The Search button in the Windows taskbar.](../media/4-windows-taskbar.png)
 
 1. In the **Type here to search** box, type **Command Prompt**, but *don't* select the Enter key.
 
 1. In the **Best match** window, right-click the **Command Prompt** app, and then select **Run as administrator**.
 
-    ![Opening the Windows command prompt as an administrator](../media/4-open-command-prompt.png)
+    ![Opening the Windows command prompt as an administrator.](../media/4-open-command-prompt.png)
 
 1. In the Command Prompt window, use the following command to run the Sysprep tool.
 
@@ -150,11 +150,11 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
     | **Generalize** | Select  |
     | **Shutdown Options** | **Shutdown** |
 
-    ![Screenshot of the Sysprep dialog box](../media/4-sysprep.png)
+    ![Screenshot of the Sysprep dialog box.](../media/4-sysprep.png)
 
 1. Wait for the Sysprep tool to finish and the connection to the virtual machine to end. Then, in the **Remote Desktop Connection** message box, select **OK**.
 
-    ![Screenshot of the Session Ended dialog box](../media/4-session-ended.png)
+    ![Screenshot of the Session Ended dialog box.](../media/4-session-ended.png)
 
 1. In the Cloud Shell window, run the following command to deallocate the virtual machine.
 

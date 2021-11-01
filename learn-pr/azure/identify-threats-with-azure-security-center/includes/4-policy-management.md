@@ -25,17 +25,17 @@ Policies are inherited from the subscription down to the resource groups. Howeve
 
 You can view the active security policies through the Security Center dashboard and the Security policy view.
 
-![Screenshot of the Security policy pane in the Azure Security Center product](../media/3-security-center-policy-mgt.png)
+![Screenshot of the Security policy pane in the Azure Security Center product.](../media/3-security-center-policy-mgt.png)
 
 Two organizational groups are shown in the previous image: management groups and subscriptions. These are taken directly from Azure Policy. Selecting one of these elements enables you to drill into the details for that group or subscription.
 
-![Screenshot of the security policy details for a management group](../media/3-policy-screen.png)
+![Screenshot of the security policy details for a management group.](../media/3-policy-screen.png)
 
 In the previous image, you can see that **System updates** is set to **AuditIfNotExists**. In this subscription, under the free tier, that means all virtual machines (VMs) will be audited to ensure they have the latest security updates applied. Any VMs that fail this check will generate an audit event.
 
 You can collapse each group to see other policy areas.
 
-![Screenshot of the security policy details for a management group again](../media/3-policy-screen2.png)
+![Screenshot of the security policy details for a management group again.](../media/3-policy-screen2.png)
 
 In the previous image, you can see that the security policy **Virtual machines should be associated with a Network Security Group** is **Disabled**.
 

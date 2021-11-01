@@ -19,9 +19,6 @@ quiz:
     - content: A combination of JavaScript and XML
       isCorrect: true
       explanation: Correct. JSX is a blend of JavaScript and XML.
-    - content: A combination of JavaScript and HTML
-      isCorrect: false
-      explanation: Incorrect. You can use HTML in JSX, but the HTML must follow XML rules. JSX combines JavaScript with XML.
     - content: A new version of JavaScript
       isCorrect: false
       explanation: Incorrect. JSX is a hybrid of JavaScript and XML.

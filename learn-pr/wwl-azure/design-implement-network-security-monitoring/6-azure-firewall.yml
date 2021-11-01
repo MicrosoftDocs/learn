@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-network-security-monitoring.azure-firewall
+title: Design and implement Azure Firewall
+metadata:
+  title: Design and implement Azure Firewall
+  description: "Design and implement Azure Firewall"
+  ms.date: 07/16/2021
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-azure-firewall.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Filtering of which direction of traffic does Azure Firewall support?"
+    choices:
+    - content: "Inbound and Outbound."
+      isCorrect: true
+      explanation: "Correct. Azure Firewall supports inbound and outbound filtering. Inbound protection is typically used for non-HTTP/S protocols. For example RDP, SSH, and FTP protocols."
+    - content: "Outbound only."
+      isCorrect: false
+      explanation: "Incorrect. Azure Firewall supports inbound and outbound filtering."
+    - content: "Inbound only."
+      isCorrect: false
+      explanation: "Incorrect. Azure Firewall supports inbound and outbound filtering."
+  - content: "Which one of the following priority levels is considered to be highest for a security rule?"
+    choices:
+    - content: "0"
+      isCorrect: false
+      explanation: "Incorrect. Priority settings must use a number between 100 and 65000."
+    - content: "100"
+      isCorrect: true
+      explanation: "Correct. Priority settings can be any number between 100 and 65000. With 100 being the highest priority."
+    - content: "110"
+      isCorrect: false
+      explanation: "Incorrect. 110 will be considered lower priority than 100. The smaller the number, the higher the priority."

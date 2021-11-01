@@ -1,13 +1,19 @@
-The Python programming language lets you build many types of programs like:
+The reason to use Python are many, you can build many different types of programs with it, it's relatively simple to use, it has a rich ecosystem and more.
 
-- Business apps to capture, analyze, and process data.
-- Dynamic web apps that a web browser can access.
-- Games in both 2D and 3D.
-- Financial and scientific apps.
-- Cloud-based apps.
-- Mobile apps.
+- **You can build many types of programs**. The Python programming language lets you build many types of programs like:
 
-As programming languages go, Python is relatively simple yet powerful. This combination likely has contributed to its enormous popularity. Beyond the programming language itself, Python boasts a wealth of libraries that can reduce complex tasks into a few lines of code.
+    - Business apps to capture, analyze, and process data.
+    - Dynamic web apps that a web browser can access.
+    - Games in both 2D and 3D.
+    - Financial and scientific apps.
+    - Cloud-based apps.
+    - Mobile apps.
+
+- **Simple to use**. As programming languages go, Python is relatively simple to use yet powerful. This combination likely has contributed to its enormous popularity. 
+
+- **Has many libraries**. Beyond the programming language itself, Python boasts a wealth of libraries that can reduce complex tasks into a few lines of code.
+
+## What you'll learn
 
 This module starts by explaining the most basic concepts to make sure you have a firm grasp on how programming works. We'll discuss:
 

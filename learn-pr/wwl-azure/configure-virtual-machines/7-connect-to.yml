@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-virtual-machines.connect-to
+title: Connect to virtual machines
+metadata:
+  title: Connect to virtual machines
+  description: "Connect to virtual machines"
+  ms.date: 07/28/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-connect-to.md)]

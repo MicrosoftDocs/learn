@@ -8,13 +8,13 @@ In this unit, first you create an Azure Maps account. Then, navigate the Azure p
 
 1. Click **Create**.
 
-    [![Screenshot showing the opening screen of Azure Maps](../media/azure-maps-create-account-1.png)](../media/azure-maps-create-account-1.png#lightbox)
+    [![Screenshot showing the opening screen of Azure Maps.](../media/azure-maps-create-account-1.png)](../media/azure-maps-create-account-1.png#lightbox)
 
 1. In the **Create Azure Maps Account** screen, select the **Concierge Subscription** and the resource group for the sandbox, which begins with **learn-**.
 
 1. For the **Name**, enter something appropriate, "MyAzureMaps", or similar.
 
-    [![Screenshot showing the dialog to create an app in Azure](../media/azure-maps-create-account-2.png)](../media/azure-maps-create-account-2.png#lightbox)
+    [![Screenshot showing the dialog to create an app in Azure.](../media/azure-maps-create-account-2.png)](../media/azure-maps-create-account-2.png#lightbox)
 
 1. Leave **Pricing tier** at its default value. It's free anyway! Read, and select the checkbox covering the Licence and Privacy Statement.
 
@@ -32,7 +32,7 @@ In this unit, first you create an Azure Maps account. Then, navigate the Azure p
 
 1. You will notice some strings, including the **Primary Key**, are displayed. Use the icon to the far right of the string to copy the key to the clipboard.
 
-    [![Screenshot showing the authentication keys](../media/azure-maps-create-account-3.png)](../media/azure-maps-create-account-3.png#lightbox)
+    [![Screenshot showing the authentication keys.](../media/azure-maps-create-account-3.png)](../media/azure-maps-create-account-3.png#lightbox)
 
 1. Paste the string into a text file. This key is the only authentication you need to connect an app to your Maps resource.
 

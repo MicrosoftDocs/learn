@@ -6,9 +6,9 @@ In this unit, you'll explore the managed identity feature. You'll see how it wor
 
 ## What are managed identities in Azure?
 
-You use managed identities to authenticate any Azure service that supports the feature. To use managed identities, you don't need to provide authentication credentials in code. The managed identity feature solves the credential problem by granting an automatically managed identity. You use this service principal to authenticate to Azure services. 
+You use managed identities to authenticate any Azure service that supports a feature. To use managed identities, you don't need to provide authentication credentials in your code. The managed identity feature solves the credential problem by granting an automatically managed identity. You use this service principal to authenticate to Azure services.
 
-A managed identity combines Azure AD authentication and Azure role-based access control (RBAC). For system-assigned identities, setting up a managed identity is as easy as switching on a toggle.
+A managed identity combines Azure AD authentication and Azure role-based access control (RBAC). For system-assigned identities, setting up a managed identity is as easy as toggling a switch.
 
 When you use managed identities, you don't need to rotate credentials or worry about expiring certifications. Azure handles credential rotation and expiration in the background. To configure an application to use a managed identity, you use the provided token to call the service.
 
@@ -16,31 +16,31 @@ The term *Managed Service Identity* (MSI), which is still used in some client li
 
 ## How managed identities work
 
-When you work with managed identities, you should know some common terms:
+When you work with managed identities, you should be familiar some common terms:
 
 - **Client ID**: A unique ID that's linked to the Azure AD application and service principal that was created when you provisioned the identity.
 - **Object ID**: The service principal object of the managed identity.
 - **Azure Instance Metadata Service**: A REST API that's enabled when Azure Resource Manager provisions a VM. The endpoint is accessible only from within the VM.
 
-You can create two types of managed identity: system-assigned identity and user-assigned managed identity. These types are similar, but they're used differently.
+You can create two types of managed identity: *system-assigned managed identity* and *user-assigned managed identity*. These types are similar, but they're used differently.
 
 ### System-assigned managed identity
 
-You enable system-assigned identity directly on an Azure service instance, such as a VM. When you enable that identity, Azure creates a service principal through Azure Resource Manager. 
+You enable system-assigned managed identity directly on an Azure service instance, such as a VM. When you enable that identity, Azure creates a service principal through Azure Resource Manager.
 
-The service principal is for the resource that's connected to the information about the managed identity on the Azure AD tenant. For example, if you have two VMs, managed identity has to be enabled on each VM. 
+The service principal is for the resource that's connected to the information about the managed identity on the Azure AD tenant. For example, if you have two VMs, managed identity has to be enabled on each VM.
 
 The status of the managed identity is directly linked to the status of the resource. If the resource is deleted, so is the managed identity. A resource can have only one system-assigned managed identity.
 
 ### User-assigned managed identity
 
-User-assigned managed identity is created as a standalone Azure resource. It's independent of any app. When user-assigned identity is provisioned, Azure creates a service principal just as it does for a system-assigned identity.
+User-assigned managed identity is created as a standalone Azure resource. It's independent of any app. When user-assigned managed identity is provisioned, Azure creates a service principal just as it does for a system-assigned managed identity.
 
-However, a user-assigned identity isn't tied to a specific resource, so you can assign it to more than one application. For example, if your web app is deployed on 10 front-end VMs, you create a user-assigned managed identity for the app, and then associate it with all 10 VMs. If you used system-assigned identity, you would need 10 identities, and then you would have to manage the access for each one.
+However, a user-assigned managed identity isn't tied to a specific resource, so you can assign it to more than one application. For example, if your web app is deployed on 10 front-end VMs, you create a user-assigned managed identity for the app, and then associate it with all 10 VMs. If you used system-assigned managed identity, you would need 10 identities, and then you would have to manage access for each one.
 
 ## Use managed identities with Azure resources
 
-Your stock-tracking application retrieves database credentials from an Azure Key Vault. When the application ran on-premises, it used a service principal and certificates to access credentials in the vault. Now that you host the VM on Azure, you can use a system-assigned identity instead.
+Your stock-tracking application retrieves database credentials from an Azure Key Vault. When the application ran on-premises, it used a service principal and certificates to access credentials in the vault. Now that you host the VM on Azure, you can use a system-assigned managed identity instead.
 
 To set up a managed identity:
 

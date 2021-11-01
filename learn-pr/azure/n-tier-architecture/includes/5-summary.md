@@ -12,6 +12,6 @@ Take a look through the [N-tier architecture style](/azure/architecture/guide/ar
 
 The source code for the application is available in the [MicrosoftDocs/mslearn-n-tier-architecture](https://github.com/MicrosoftDocs/mslearn-n-tier-architecture) GitHub repository if you'd like to see more or use it in your own environment.
 
-One item we didn't cover in much detail is the mechanics of the deployment through the Azure Resource Manager template. For more information about how these work, review the [Build Azure Resource Manager templates](/learn/modules/build-azure-vm-templates/) module. Templates are a fantastic way to automate your infrastructure, and this module can help you get started.
+One item we didn't cover in much detail is the mechanics of the deployment through the Azure Resource Manager template. For more information about how these work, review the [Deploy Azure infrastructure by using JSON ARM templates](/learn/modules/create-azure-resource-manager-template-vs-code/) module. Templates are a fantastic way to automate your infrastructure, and this module can help you get started.
 
 The [Build great solutions with the Microsoft Azure Well-Architected Framework](../../../paths/azure-well-architected-framework/index.yml) learning path has guidance about how to build a solid foundation for any architecture on Azure.

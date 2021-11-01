@@ -27,7 +27,7 @@ In the current index.js code, you're passing the static location of the *stores*
    }
    ```
 
-1. Select the <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> keys to save the file.
+1. Press <kbd>Ctrl+S</kbd> or <kbd>Cmd+S</kbd> to save the file.
 
 1. Run the program from the command line.
 
@@ -57,7 +57,7 @@ Instead of concatenating folder names to make a new path to search, you'll chang
    await findFiles(path.join(folderName, item.name));
    ```
 
-1. Select the <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> keys to save the file.
+1. Press <kbd>Ctrl+S</kbd> or <kbd>Cmd+S</kbd> to save the file.
 
 1. Run the program from the command line.
 
@@ -69,7 +69,7 @@ Instead of concatenating folder names to make a new path to search, you'll chang
 
 ## Find all .json files
 
-Instead of looking for just *sales.json* files, the program needs to search for any file with an extension of .json. To do that, use the `path.extname` method to check the file name extension.
+Instead of looking for just *sales.json* files, the program needs to search for any file with an extension of .json. To do that, use the `path.extname` method to check the filename extension.
 
 1. Run the following command in the terminal to rename the *stores/201/sales.json* file to *stores/sales/totals.json*.
 
@@ -77,7 +77,7 @@ Instead of looking for just *sales.json* files, the program needs to search for 
    mv stores/201/sales.json stores/201/totals.json
    ```
 
-1. In the `findFiles` method, change the `if` statement to check just the file name extension. Use the `path.join` method to compose the full path to the file.
+1. In the `findFiles` method, change the `if` statement to check just the filename extension. Use the `path.join` method to compose the full path to the file.
 
    ```javascript
    if (path.extname(item.name) === ".json") {
@@ -86,7 +86,7 @@ Instead of looking for just *sales.json* files, the program needs to search for 
    }
    ```
 
-1. Select the <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> keys to save the file.
+1. Press <kbd>Ctrl+S</kbd> or <kbd>Cmd+S</kbd> to save the file.
 
 1. Run the program from the command line.
 

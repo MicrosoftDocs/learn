@@ -11,10 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Publish libraries of reusable infrastructure code by using template specs
 summary: |
-  ARM template specs enable you to reuse and share your ARM templates across your organization.
-  As a template author, you can use template specs to publish a library of templates that deploy your organization's Azure resources, configured according to your requirements.
-  In this module, you'll learn about the benefits of template specs. You'll find out how to create and publish template specs, and how to deploy them.
-  You'll also learn how to manage template specs, including how to control access and how to safely update them by using versions.
+  Reuse and share your ARM templates across your organization. Publish template specs that deploy resources pre-configured for your organization's requirements. Control access and safely update template specs by using versions.
 abstract: |
   After completing this module, you'll be able to:
     - Create and deploy template specs
@@ -24,15 +21,15 @@ prerequisites: |
   - Creating and deploying basic ARM templates, using either Bicep or JSON.
   - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
-  To follow along with the exercises in the module, you'll need:
-  - [Visual Studio Code](https://code.visualstudio.com) installed locally.
+  To follow along with the exercises in the module, you'll need the following items installed locally:
+  - [Visual Studio Code](https://code.visualstudio.com)
   - Either:
-    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
-    - The latest [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
+    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools
+    - The latest [Azure PowerShell](/powershell/azure/install-az-ps) version
   - Either:
-    - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed.
-    - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
-iconUrl: /learn/achievements/generic-badge.svg
+    - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
+    - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension
+iconUrl: /learn/achievements/bicep/arm-template-specs.svg
 levels:
   - advanced
 roles:

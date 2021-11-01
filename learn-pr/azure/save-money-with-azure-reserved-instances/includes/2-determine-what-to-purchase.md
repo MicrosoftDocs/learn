@@ -48,7 +48,7 @@ Enterprise Agreement and Microsoft Customer Agreement customers can use the VM R
 
 1. View the coverage and recommendations for a region, instance size family, and size level. Make sure you select the following drill-down filter before you interact with the visuals.
 
-    ![Example showing the Cost Management app you can view VM RI coverage](../media/2-ri-drill-down2.png)
+    ![Example showing the Cost Management app you can view VM RI coverage.](../media/2-ri-drill-down2.png)
 
 To view details, select the drill-down filter highlighted in red as shown in the preceding image.
 

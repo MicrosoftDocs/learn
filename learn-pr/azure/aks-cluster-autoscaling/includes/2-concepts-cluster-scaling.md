@@ -12,7 +12,7 @@ A single node is a single VM, which means it has a limited amount of resources l
 
 To remedy that problem, the operator needs to scale out the cluster itself, adding more VMs to the NodePool. This can be done either via the Azure CLI with the `az aks scale` command or in the Azure portal inside the **Node Pools** menu item inside your AKS cluster object.
 
-:::image type="content" source="../media/2-portal-scale.png" alt-text="Screen that shows the Azure portal scalability button on node pools menu":::
+:::image type="content" source="../media/2-portal-scale.png" alt-text="Screen that shows the Azure portal scalability button on node pools menu.":::
 
 This process can be a little overwhelming especially for a cluster with variable demand, when the number of pods fluctuates a lot, this would require the operator to constantly monitor for unscheduled pods to make tweaks in real time.
 
@@ -20,7 +20,7 @@ This process can be a little overwhelming especially for a cluster with variable
 
 The cluster autoscaler AKS module is a tool that automatizes the process of scaling the cluster manually. It is installed within your AKS cluster and watches for unscheduled pods with resource constraints, then it automatically increases the number of nodes in a cluster to meet these requirements.
 
-:::image type="content" source="../media/2-cluster-autoscaler.png" alt-text="Diagram that shows how the cluster autoscaler works":::
+:::image type="content" source="../media/2-cluster-autoscaler.png" alt-text="Diagram that shows how the cluster autoscaler works.":::
 
 The cluster autoscaler can not only increase but decrease the number of nodes in a cluster if there's unused cluster capacity for some time. When this condition is met, the autoscaler cordons and drains the node so all the pods that are scheduled in that node are safely moved to other nodes and no other pods are scheduled during the process. Then it removes the node from the pool.
 

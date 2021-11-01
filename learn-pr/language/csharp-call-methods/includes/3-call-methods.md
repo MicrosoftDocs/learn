@@ -7,8 +7,8 @@ From your previous experience with the `Console.WriteLine()` method, you should 
 - Start by typing the class name, `Console`
 - Add the member access operator, the `.` symbol
 - Add the method's name, `WriteLine`
-- Add the method invocation operator, which is a set of parenthesis `()`
-- Finally, add the value you want the `Console.WriteLine()` method to print as an input parameter between the opening and closing parenthesis (for example, `"Hello World!"`)
+- Add the method invocation operator, which is a set of parentheses `()`
+- Finally, add the value you want the `Console.WriteLine()` method to print as an input parameter between the opening and closing parentheses (for example, `"Hello World!"`)
 
 Optionally, depending on how the developers designed and implemented the given method, you may also need to:
 

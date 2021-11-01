@@ -4,7 +4,7 @@ After you resolve any incompatibility issues, you're ready for the *migration* p
 
 The last step in your workflow is the *post-migration* phase. During this phase, you do any required testing. Then you update apps, reports, and other tools that will need to use the new database for their data.
 
-![Migration workflow](../media/3-01-azure-sql-migration-sql-db.png)
+![Migration workflow.](../media/3-01-azure-sql-migration-sql-db.png)
 
 ## Pre-migration
 
@@ -39,13 +39,13 @@ The post-migration phase is critical because it ensures that your data is both a
 
 ## Data migration tools in Azure
 
-The core of data migration in Azure is the Azure Database Migration Service. You can use this service to move bulk amounts of data in a timely way. As part of Database Migration Service, Microsoft provides Data Migration Assistant. Just as its name implies, Data Migration Assistant *assists* the service by preparing the target database.
+The core of data migration in Azure is Azure Database Migration Service. You can use this service to move bulk amounts of data in a timely way. As part of Database Migration Service, Microsoft provides Data Migration Assistant. Just as its name implies, Data Migration Assistant *assists* the service by preparing the target database.
 
 ### Data Migration Assistant
 
 Data Migration Assistant is a client-side tool that you can install on a Windows-compatible workstation or server. It has two major functions in the migration of the social database to the Azure SQL Database platform in this module.
 
-![Fixed issues](../media/4-09-fixed-issues.png)
+![Fixed issues.](../media/4-09-fixed-issues.png)
 
 First, it assesses your existing database and identifies any incompatibilities between that database and Azure SQL Database. It then generates a report of the things you need to fix before you can migrate. As you make changes, you can rerun Data Migration Assistant to generate an updated report of changes that you need to make. This capability helps you to not only track your progress, but also catch any new issues that might have been introduced during your coding phase.
 
@@ -61,7 +61,7 @@ After you've migrated your database schema by using Data Migration Assistant, or
 
 Azure Database Migration Service is a fully-managed Azure service that provides automated, seamless data migrations from multiple sources into the Azure data platforms.
 
-![Migration Workflow](../media/3-03-adms.png)
+![Migration Workflow.](../media/3-03-adms.png)
 
 Database Migration Service runs on the Azure platform, as opposed to being a client application like Data Migration Assistant. It's capable of moving large amounts of data quickly and is not dependent upon installation of a client application. Database Migration Service can operate in two modes, offline and online.
 

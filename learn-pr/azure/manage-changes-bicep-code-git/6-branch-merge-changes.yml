@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-changes-bicep-code-git.branch-merge-changes
+title: Branch and merge your changes
+metadata:
+  unitType: learning-content
+  title: Branch and merge your changes
+  description: Learn how Git enables you to maintain multiple versions of files by using branches, and how to merge branches together.
+  ms.date: 07/08/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-branch-merge-changes.md)]

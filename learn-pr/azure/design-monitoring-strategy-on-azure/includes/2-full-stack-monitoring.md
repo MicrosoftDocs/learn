@@ -8,7 +8,7 @@ Full stack monitoring is a complete approach to the monitoring, triage, and diag
 
 Your applications and the infrastructure might face different kinds of potentially damaging issues. You might have to deal with issues such as poor response times, changing usage rates, exceptions, and security risks.
 
-Your response must be appropriate to the kind of issue. You might respond with scaling up capacity to meet increases load. You might also respond with changes in the configuration and code of your application or infrastructure to improve performance and reduce errors.
+Your response must be appropriate to the kind of issue. You might respond with scaling up capacity to meet increased load. You might also respond with changes in the configuration and code of your application or infrastructure to improve performance and reduce errors.
 
 With the right tools, you can monitor the performance of your infrastructure and applications. You may also monitor for security risks and suspicious activity. Finally, you can collect information on issues as soon as they arise, analyze the information you've collected, and respond.
 

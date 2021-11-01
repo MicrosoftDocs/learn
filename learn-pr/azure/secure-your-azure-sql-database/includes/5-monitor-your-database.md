@@ -62,7 +62,7 @@ Now let's generate some audit records and take a look at what you can expect.
 
 1. You should see one or more audit records with **PRINCIPAL NAME** of _ApplicationUser_ and **EVENT TYPE** of **BATCH COMPLETED**. One of them should contain the details of the query you just executed. You might also see other events such as authentication failures and success. Select any record to see the full details of the event.
 
-![An example showing an event in the audit log](../media/5-audit-log.png)
+![An example showing an event in the audit log.](../media/5-audit-log.png)
 
 These actions configure the audits at the database server level, and will apply to all databases on the server. You can also configure auditing at a database level.
 
@@ -105,7 +105,7 @@ After ADS is enabled, you'll initiate vulnerability scans and view details and r
 
 You'll receive email notifications as vulnerabilities are detected. The email will outline what occurred and the actions to take.
 
-![An example notification warning from Advanced Threat Protection](../media/5-email-with-warning.png)
+![An example notification warning from Advanced Threat Protection.](../media/5-email-with-warning.png)
 
 ### Data discovery & classification
 
@@ -117,7 +117,7 @@ You'll receive email notifications as vulnerabilities are detected. The email wi
 
 The Data Discovery & Classification pane shows columns within your tables that need to be protected. Some of the columns may have sensitive information or may be considered classified in different countries or regions.
 
-![Data Discovery & Classification](../media/5-data-discovery-and-classification.png)
+![Data Discovery & Classification.](../media/5-data-discovery-and-classification.png)
 
 A message appears if any columns need protection configured. This message will be formatted like *"We have found 10 columns with classification recommendations"*. You can select the text to view the recommendations.
 
@@ -131,7 +131,7 @@ No active recommendations should be listed once you've managed the recommendatio
 
 Select the **Vulnerability Assessment** pane.
 
-![Vulnerability Assessment Dashboard](../media/5-vulnerability-assessment-dashboard.png)
+![Vulnerability Assessment Dashboard.](../media/5-vulnerability-assessment-dashboard.png)
 
 The Vulnerability Assessment lists configuration issues on your database and the associated risk. For example, in the image above, you can see the server-level firewall needs to be set up.
 
@@ -145,6 +145,6 @@ Select the **Threat Detection** pane.
 
 This displays a list of detected threats. For example, here you can see one potential SQL injection attack listed.
 
-![Threat Detection](../media/5-threat-detection-dashboard.png)
+![Threat Detection.](../media/5-threat-detection-dashboard.png)
 
  Address any issues by following the recommendations. For issues such as the SQL injection warnings, you'll be able to look at the query and work backward to where the query is being executed in code. Once found, you should rewrite the code so it will no longer have the issue.

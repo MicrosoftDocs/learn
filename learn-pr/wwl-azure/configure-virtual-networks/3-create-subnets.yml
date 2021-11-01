@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-virtual-networks.create-subnets
+title: Create subnets
+metadata:
+  title: Create subnets
+  description: "Create subnets"
+  ms.date: 08/19/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-create-subnets.md)]

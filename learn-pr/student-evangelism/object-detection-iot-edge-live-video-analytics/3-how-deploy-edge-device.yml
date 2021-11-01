@@ -9,6 +9,6 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
-durationInMinutes: 7 # dummy number at present
+durationInMinutes: 7
 content: |
   [!include[](includes/3-how-deploy-edge-device.md)]

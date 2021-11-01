@@ -3,7 +3,7 @@ uid: learn.azure.intro-azure-vmware-solution.when-azure-vmware-solution
 title: When to use Azure VMware Solution
 metadata:
   title: When to use Azure VMware Solution
-  description: When to use Azure VMware Solution
+  description: Learn which scenarios are best suited for Azure VMware Solution.
   ms.date: 06/17/2021
   author: exchangegoddess
   ms.author: phschmit
@@ -15,25 +15,25 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which business need is best suited for the Azure VMware Solution?"
+  - content: "Which business need is best suited for Azure VMware Solution?"
     choices:
-    - content: "Enterprises that want to reduce their datacenter footprint."
+    - content: "Enterprises that want to reduce their datacenter footprint"
       isCorrect: true
-      explanation: "Enterprises looking to get out of the datacenter business can use Azure as a way to enable decommissioning legacy infrastructure."
-    - content: "Organizations that don't want to use cloud services."
+      explanation: "Enterprises that want to get out of the datacenter business can use Azure as a way to enable decommissioning of legacy infrastructure."
+    - content: "Organizations that don't want to use cloud services"
       isCorrect: false
-      explanation: "Azure VMware Solution isn't for customers that don't want to cloud services."
-    - content: "Customers that don't want a fast path to the cloud by Migrating existing assets “as is”."
+      explanation: "Azure VMware Solution isn't for customers who don't want to use cloud services."
+    - content: "Customers who don't want a fast path to the cloud by migrating existing assets 'as is'"
       isCorrect: false
-      explanation: "Azure VMware Solution is well suited for customers that want a fast path to the cloud by migrating existing assets “as is”."
-  - content: "Which scenario isn't a good option for the Azure VMware Solution?"
+      explanation: "Azure VMware Solution is well suited for customers who want a fast path to the cloud by migrating existing assets 'as is'."
+  - content: "Which scenario isn't a good option for Azure VMware Solution?"
     choices:
-    - content: "Customers that can't move to cloud services. "
+    - content: "Customers who can't move to cloud services"
       isCorrect: true
-      explanation: "Azure VMware Solution isn't suited for customers that can't move to the cloud."
-    - content: "Customers looking to modernize with native Azure services. "
+      explanation: "Azure VMware Solution isn't suited for customers who can't move to the cloud."
+    - content: "Customers who want to modernize with native Azure services"
       isCorrect: false
       explanation: "Native Azure services aren't suited for customers who can't move to cloud services."
-    - content: "Customers looking for more disaster recovery and business continuity options with Azure."
+    - content: "Customers who want more disaster recovery and business continuity options with Azure"
       isCorrect: false
       explanation: "Azure services aren't suited for customers who can't move to cloud services."

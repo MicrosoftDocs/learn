@@ -9,7 +9,7 @@ metadata:
   ms.date: 4/30/2021
   author: gerryaobrien
   ms.author: gerryo
-  ms.topic: interactive-tutorial
+  ms.topic: interactive-tutorial 
 durationInMinutes: 3
 content: |
   [!include[](includes/2-what-is-azure-backup.md)]

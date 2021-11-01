@@ -121,7 +121,7 @@ Here you'll see how to monitor CPU and memory usage on your container.
       --output table
     ```
 
-    Note the `--metric` argument. Here, **CPUUsage** specifies to retrieve CPU usage.
+    Note the `--metrics` argument. Here, **CPUUsage** specifies to retrieve CPU usage.
 
     You see output similar to this.
 
@@ -154,7 +154,7 @@ Here you'll see how to monitor CPU and memory usage on your container.
       --output table
     ```
 
-    Here, you specify **MemoryUsage** for the `--metric` argument to retrieve memory usage information.
+    Here, you specify **MemoryUsage** for the `--metrics` argument to retrieve memory usage information.
 
     You see output similar to this.
 

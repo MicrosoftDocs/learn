@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.create-voice-activated-webxr-app-with-babylonjs.exercise-create-azure-speech-resource
+title: Exercise - Create an Azure Speech Resource
+azureSandbox: true
+metadata:
+  unitType: exercise
+  title: Exercise - Create an Azure Speech Resource
+  description: Create an Azure Speech Resource and retrieve the subscription key
+  ms.date: 07/20/2021
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-create-azure-speech-resource.md)]

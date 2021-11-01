@@ -14,7 +14,7 @@ summary: Plan, deploy, and configure VMware HCX on-premises to connect with Azur
 abstract: | 
   By the end of this module, you will be able to:
     - Configure VMware HCX to support on-premises VMware migrations.
-    - Migrate VMware workloads on-premises to Azure VMware Solution using VMware HCX.
+    - Migrate VMware workloads on-premises to Azure VMware Solution by using VMware HCX.
 prerequisites: | 
   - Experience using the Azure portal for accessing and creating resources.
   - Experience managing VMware infrastructure, such as vSphere, vCenter, NSX-T, and HCX.

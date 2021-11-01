@@ -61,7 +61,7 @@ The other properties can be used to affect your app layouts, even if you choose 
 
 We have identified five common user interface design patterns
 
-![Stylized representations of five user-interface patterns for dual-screens](../media/2-dual-screen-app-patterns.png)
+![Stylized representations of five user-interface patterns for dual-screens.](../media/2-dual-screen-app-patterns.png)
 
 - Extended canvas - useful for maps or a drawing canvas.
 - List-detail - hierarchical navigation through data.

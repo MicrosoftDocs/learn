@@ -31,7 +31,7 @@ Azure metrics complement boot diagnostics. Boot diagnostics can display a screen
 
 You don't need to build metric graphs for your VM manually. The Azure portal displays four graphs for your VM on the **Monitoring** tab of the **Overview** page.
 
-![Screenshot of the four graphs available from the Overview page](../media/4-default-graphs.png)
+![Screenshot of the four graphs available from the Overview page.](../media/4-default-graphs.png)
 
 On the **Overview** page, you can also change the range of all the graphs.
 
@@ -42,7 +42,7 @@ You can have greater control, with more options, by creating a custom key perfor
 - How hot is the VM or how much CPU is being used?
 - How busy is the VM or how much network traffic is the VM processing?
 
-![Screenshot of an example KPI dashboard, showing CPU maximum and network total graphs](../media/4-kpi-dashboard.png)
+![Screenshot of an example KPI dashboard, showing CPU maximum and network total graphs.](../media/4-kpi-dashboard.png)
 
 You can reuse the prebuilt graph for network traffic. However, the average CPU usage isn't the most useful metric. The maximum CPU usage is a better metric to use.
 
@@ -50,6 +50,6 @@ In the **Monitor** > **Metrics** section of the VM, you'll create a new maximum 
 
 The dashboard also allows you to change the time range shown on both graphs at the same time. It has many more options than what's on the **Overview** page **Monitoring** tab.
 
-![Screenshot that shows the dashboard range options](../media/4-dashboard-range-options.png)
+![Screenshot that shows the dashboard range options.](../media/4-dashboard-range-options.png)
 
 A custom dashboard is especially helpful when you have to monitor more than one VM's performance. You can add a graph for each VM, or use splitting to draw the same metric on one graph.

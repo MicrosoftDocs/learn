@@ -3,7 +3,7 @@ uid: learn.wwl.serve-data-from-azure-synapse-serverless-sql-pool
 metadata:
   title: Serve the data from Azure Synapse serverless SQL pool
   description: "Serve the data from Azure Synapse serverless SQL pool"
-  ms.date: 03/23/2021
+  ms.date: 07/12/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial

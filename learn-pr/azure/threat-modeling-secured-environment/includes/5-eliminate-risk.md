@@ -5,8 +5,8 @@ Use the completed data-flow diagram and answers from the security assessment to 
 
 ## Functionality & Integration
 
-![Functionality category](../media/supporting-icons/functionality.png)
-![Integration category](../media/supporting-icons/integration.png)
+![Functionality category.](../media/supporting-icons/functionality.png)
+![Integration category.](../media/supporting-icons/integration.png)
 
 |Risk|Solution|
 |----|--------|

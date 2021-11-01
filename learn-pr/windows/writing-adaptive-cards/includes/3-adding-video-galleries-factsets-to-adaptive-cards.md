@@ -254,7 +254,7 @@ In this unit, we'll write code and learn about these features of the Adaptive Ca
 
 1. Run the completed app. Select the *Show Card* action, and play the video. Click the image set to see some simple text responses.
 
-    ![Test of the video action](../media/wpf-cards-test-video.png)
+    ![Test of the video action.](../media/wpf-cards-test-video.png)
 
 You've completed the WPF version of this module and should now have a good understanding of the range of options that Adaptive Cards offer.
 
@@ -485,7 +485,7 @@ You've completed the WPF version of this module and should now have a good under
 
 1. Run the completed app.
 
-    ![Test of the video action](../media/uwp-cards-test-video.png)
+    ![Test of the video action.](../media/uwp-cards-test-video.png)
 
 You've completed the Universal Windows Platform (UWP) version of this module and should now have a good understanding of the range of options that Adaptive Cards offer.
 

@@ -44,7 +44,7 @@ View GraphiQL, an in-browser IDE, to explore your site's data and schema
 
 Now open up a browser and navigate to `http://localhost:8000`.
 
-:::image type="content" source="../media/browser.png" alt-text="Gatsby app":::
+:::image type="content" source="../media/browser.png" alt-text="Gatsby app.":::
 
 If you see the above, you successfully created your first Gatsby app. Congrats!
 
@@ -70,6 +70,6 @@ The code above creates a *presentation component* that is only able to show data
 
 Once you've pasted in the code above and saved it in the file `about.js`, the development server will recompile the application automatically. If you now visit `http://localhost:8000/about` you should see the following content rendered:
 
-:::image type="content" source="../media/page-component.png" alt-text="Page component":::
+:::image type="content" source="../media/page-component.png" alt-text="Page component.":::
 
 You've got your first page! Now you can see how any component placed in the `/pages` directory can be navigated to.

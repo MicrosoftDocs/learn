@@ -39,13 +39,13 @@ The high-level steps to configure and run a performance test by using the Azure 
 
 Open your web app in the Azure portal, and then open the performance test page:
 
-![Configuring a new performance test](../media/2-azure-portal-new-performance-test.png)
+![Configuring a new performance test.](../media/2-azure-portal-new-performance-test.png)
 
 ### 2. Link to your Azure DevOps account
 
 If you're running the first test for the web app, set up a link to your Azure DevOps organization:
 
-![Set your Azure DevOps organization](../media/2-set-organization.png)
+![Set your Azure DevOps organization.](../media/2-set-organization.png)
 
 If you don't have an organization, select **Create new** and then select your Azure subscription:
 
@@ -55,7 +55,7 @@ If you don't have an organization, select **Create new** and then select your Az
 
 Now you can configure your test parameters.
 
-![Configure basic performance test](../media/2-configure-test.png)
+![Configure basic performance test.](../media/2-configure-test.png)
 
 - **URL**. By default, the app's default URL is selected, but you can change this to test other pages as long as the URL is for HTTP GET requests.
 - **Name**. Give your test a meaningful name.
@@ -70,7 +70,7 @@ Now you can configure your test parameters.
 
 After you've configured your test, simply select **Run test**. Your test is placed in a queue. It might remain in a queued state for 10 or 15 minutes before the test run starts.
 
-![Queued performance test](../media/2-queued-test.png)
+![Queued performance test.](../media/2-queued-test.png)
 
 ### 5. Run the test again
 

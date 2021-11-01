@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-monitor.identify-data-types
+title: Identify data types
+metadata:
+  title: Identify data types
+  description: "Identify data types"
+  ms.date: 07/26/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-identify-data-types.md)]

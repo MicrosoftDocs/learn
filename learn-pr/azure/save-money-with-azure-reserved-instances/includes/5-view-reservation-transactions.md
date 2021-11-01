@@ -10,7 +10,7 @@ Enterprise Agreement and Microsoft Customer Agreement billing administrators can
 
 1. Select **Reservation transactions**.
 
-    [![Example showing reservation transactions](../media/5-reservation-transactions.png)](../media/5-reservation-transactions.png#lightbox)
+    [![Example showing reservation transactions.](../media/5-reservation-transactions.png)](../media/5-reservation-transactions.png#lightbox)
 
 You can also get reservation transactions using the [Transactions API](/rest/api/consumption/reservationtransactions/list).
 

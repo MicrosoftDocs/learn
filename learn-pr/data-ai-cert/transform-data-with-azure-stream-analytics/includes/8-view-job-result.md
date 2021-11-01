@@ -10,7 +10,7 @@ To see the job's results, perform the following steps.
 
 1. Go to the **output** folder, and select **Download**.
 
-    ![Screenshot showing query output results](../media/8-query-result.png)
+    ![Screenshot showing query output results.](../media/8-query-result.png)
 
 When you open the file, you should see something like this.
 

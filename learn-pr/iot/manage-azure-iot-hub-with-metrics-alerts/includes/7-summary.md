@@ -8,7 +8,7 @@ In this module, you learned how to:
 - Create an Azure Function, using the IoT Hub portal
 - Create an action to trigger the Azure Function, using the IoT Hub portal
 
-[![Artwork showing vibrations](../media/metrics-alerts-vibrations.png)](../media/metrics-alerts-vibrations.png#lightbox)
+[![Artwork showing vibrations.](../media/metrics-alerts-vibrations.png)](../media/metrics-alerts-vibrations.png#lightbox)
 
 ## Clean up
 

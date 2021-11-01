@@ -261,4 +261,4 @@ The variables are used in the [calls to the Face API](https://github.com/Microso
 
     You've written an Azure function in TypeScript to mojify an image! 👏👏👏
 
-    ![Mojified Image](../media/4.mojified-image.png)
+    ![Mojified Image.](../media/4.mojified-image.png)

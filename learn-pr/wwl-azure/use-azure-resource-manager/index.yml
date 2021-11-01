@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.use-azure-resource-manager
+metadata:
+  title: Use Azure Resource Manager
+  description: "You will learn to use resource groups to organization your organization’s Azure resources."
+  ms.date: 08/16/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use Azure Resource Manager
+summary: You will learn to use resource groups to organization your organization’s Azure resources.
+abstract: |
+  After completing this module, you will be able to:
+  - Identify the features and usage cases for Azure Resource Manager.
+  - Describe each Azure Resource Manager component and its usage.
+  - Organize your Azure resources with resource groups.
+  - Apply Azure Resource Manager locks.
+  - Move Azure resources between groups, subscriptions, and regions.
+  - Remove resources and resource groups.
+  - Apply and track resource limits.
+prerequisites: |
+  None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.use-azure-resource-manager.introduction
+- learn.wwl.use-azure-resource-manager.review-benefits
+- learn.wwl.use-azure-resource-manager.review-terminology
+- learn.wwl.use-azure-resource-manager.create-resource-groups
+- learn.wwl.use-azure-resource-manager.create-locks
+- learn.wwl.use-azure-resource-manager.reorganize-azure-resources
+- learn.wwl.use-azure-resource-manager.remove-resources-resource-groups
+- learn.wwl.use-azure-resource-manager.determine-resource-limits
+- learn.wwl.use-azure-resource-manager.knowledge-check
+- learn.wwl.use-azure-resource-manager.summary-resources
+badge:
+  uid: learn.wwl.use-azure-resource-manager.badge

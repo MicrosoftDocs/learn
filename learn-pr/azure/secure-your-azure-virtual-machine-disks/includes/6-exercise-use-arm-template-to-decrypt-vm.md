@@ -12,11 +12,9 @@ You're going to use a template Microsoft has published on GitHub that is specifi
 
 1. From the resulting list, select **Template deployment (deploy using custom templates)**. The **Template deployment (deploy using custom templates)** appears.
 
-1. Select **Create**.
+    :::image type="content" source="../media/6-create-template.png" alt-text="Screenshot showing the Template Deployment item selected with the Create button highlighted.":::
 
-    ![Screenshot showing the Template Deployment item selected with the Create button highlighted](../media/6-create-template.png)
-
-    The **Custom deployment** pane appears.
+1. Select **Create**.  The **Custom deployment** pane appears.
 
 1. On the **Select a template** tab, enter the following values for each setting.
 
@@ -24,9 +22,9 @@ You're going to use a template Microsoft has published on GitHub that is specifi
     |---------|---------|
     | **Start with a quickstart template or template spec** |
     | Template source | Quickstart template |
-    | Quickstart template (disclaimer) | Enter *201-decrypt*, and select the *201-decrypt-running-windows-vm-without-aad* template |
+    | Quickstart template (disclaimer) | Select the field, then enter *decrypt-running-windows-vm-without-aad*, and select the *decrypt-running-windows-vm-without-aad* template |
 
-    ![Screenshot showing the Select a Template search box with auto-completion.](../media/6-custom-deployment.png)
+    :::image type="content" source="../media/6-custom-deployment.png" alt-text="Screenshot showing the Select a Template search box with auto-completion.":::
 
 1. To launch the template runner, select **Select template**. The **Disable encryption on Windows VM encrypted without AAD** pane appears.
 
@@ -38,9 +36,11 @@ You're going to use a template Microsoft has published on GitHub that is specifi
     | Subscription |  Concierge Subscription |
     | Resource group | Select sandbox resource group <rgn>Sandbox RG</rgn>. This will auto-select the region as well. |
     | **Instance details** |
-    | Region | Auto-selected from *Resource group** selection |
+    | Region | Auto-selected from *Resource group* selection |
     | Vm Name | Enter *fmdata-vm01* |
-    | Volume Type | Leave default *All* |
+    | Volume Type | Accept default *All* |
+    | Force Update Tag | Accept default |
+    | Location | Accept default |
 
 1. Select **Review + create**.
 

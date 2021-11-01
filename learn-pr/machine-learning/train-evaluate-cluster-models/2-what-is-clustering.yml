@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-evaluate-cluster-models.what-is-clustering
+title: What is clustering?
+metadata:
+  title: What is clustering?
+  description: Review what clustering is and different examples of it
+  ms.date: 01/04/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-what-is-clustering.md)]

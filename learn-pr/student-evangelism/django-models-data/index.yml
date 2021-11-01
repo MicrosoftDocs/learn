@@ -2,7 +2,7 @@
 uid: learn.django.models-data
 metadata:
   title: Work with models and data in Django
-  description: Explore models and data in Django. Learn about the object-relational mapper, create your own models, and set up a database.
+  description: Explore models and data in the Python framework Django. Learn about the object-relational mapper, create your own models, and set up a database.
   ms.date: 02/25/2021
   author: GeekTrainer
   ms.author: chnoring

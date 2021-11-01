@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.machinelearning.introduction-to-machine-learning
+metadata:
+  title: Introduction to machine learning
+  description: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You’ll be introduced to some essential concepts, explore data, and interactively go through the machine learning life-cycle - using Python to train, save, and use a machine learning model like we would in the real world.
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to machine learning
+summary: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You’ll be introduced to some essential concepts, explore data, and interactively go through the machine learning life-cycle - using Python to train, save, and use a machine learning model like we would in the real world.
+abstract: | 
+  In this module, you will:
+  - Explore how machine learning differs from traditional software
+  - Create and test a machine learning model
+  - Load a model and use it with new data
+prerequisites: None
+iconUrl: /learn/achievements/machine-learning/introduction-to-machine-learning.svg
+levels: 
+- beginner
+roles: 
+- ai-engineer
+- data-scientist
+- student
+products: 
+- azure
+units:
+- learn.machinelearning.introduction-to-machine-learning.introduction
+- learn.machinelearning.introduction-to-machine-learning.creating-ml-models
+- learn.machinelearning.introduction-to-machine-learning.exercise-create-ml-model
+- learn.machinelearning.introduction-to-machine-learning.understand-training
+- learn.machinelearning.introduction-to-machine-learning.exercise-improve-models
+- learn.machinelearning.introduction-to-machine-learning.test-models
+- learn.machinelearning.introduction-to-machine-learning.exercise-test-ml-models
+- learn.machinelearning.introduction-to-machine-learning.knowledge-check
+- learn.machinelearning.introduction-to-machine-learning.summary
+badge: 
+  uid: learn.machinelearning.introduction-to-machine-learning.badge #add the uid for your achievement badge.

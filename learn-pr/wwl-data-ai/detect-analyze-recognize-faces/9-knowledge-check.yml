@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-analyze-recognize-faces.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/09/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following facial features can the Computer Vision service predict?"
+    choices:
+    - content: "Age."
+      isCorrect: true
+      explanation: "That's correct. The Computer Vision service predicts Age and Gender for a detected face."
+    - content: "Type of eye-glasses."
+      isCorrect: false
+      explanation: "That's incorrect. The Computer Vision service predicts Age and Gender for a detected face."
+    - content: "Hair color."
+      isCorrect: false
+      explanation: "That's incorrect. The Computer Vision service predicts Age and Gender for a detected face."
+  - content: "You need to create a facial recognition solution to identify named employees. Which service should you use?"
+    choices:
+    - content: "Computer Vision."
+      isCorrect: false
+      explanation: "That's incorrect. Use the Face service to create a facial recognition solution."
+    - content: "Custom Vision."
+      isCorrect: false
+      explanation: "That's incorrect. Use the Face service to create a facial recognition solution."
+    - content: "Face."
+      isCorrect: true
+      explanation: "That's correct. Use the Face service to create a facial recognition solution."
+  - content: "You need to verify that the person in a photo taken at hospital reception is the same person in a photo taken at a ward entrance 10 minutes later. What should you do?"
+    choices:
+    - content: "Create a People Group and add a person for every hospital visitor with multiple photographs to train a model."
+      isCorrect: false
+      explanation: "That's incorrect. The most efficient approach is to compare the two faces using the detected face ID within 24 hours."
+    - content: "Verify the face in the ward photo by comparing it to the detected face ID from the reception photo."
+      isCorrect: true
+      explanation: "That's correct. The most efficient approach is to compare the two faces using the detected face ID within 24 hours."
+    - content: "Compare the Age, head pose, and hair color for the faces in the reception and ward photo's."
+      isCorrect: false
+      explanation: "That's incorrect. The most efficient approach is to compare the two faces using the detected face ID within 24 hours."

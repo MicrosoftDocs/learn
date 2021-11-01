@@ -82,7 +82,7 @@ The `script` parameter can be virtually any JavaScript that will use the octokit
 
 After the workflow is run, GitHub Script will log the code it executed for review on the **Actions** tab.
 
-![A completed workflow using GitHub Script](../media/2-completed-workflow.png)
+![A completed workflow using GitHub Script.](../media/2-completed-workflow.png)
 
 ### Running from a separate file
 

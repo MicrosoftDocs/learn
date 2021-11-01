@@ -17,7 +17,7 @@ To register for the program:
 
 If you've already registered for the Windows Insider Program, you still need to sign in to the registered Microsoft account to receive prerelease builds of Windows on a new computer.
 
-![Choose your account for the Windows Insider Program](../media/insider-program-account.png)
+![Choose your account for the Windows Insider Program.](../media/insider-program-account.png)
 
 ## Install preview builds
 
@@ -25,11 +25,11 @@ After your registration and sign-in are complete, you're prompted to choose the 
 
 We recommend that developers select **Active development of Windows** as their content type.
 
-![Choose your content type](../media/insider-program-content-choice.png)
+![Choose your content type.](../media/insider-program-content-choice.png)
 
 If you're unfamiliar with working on prerelease builds, we recommend that you choose **Windows Insider Slow** as the pace. This will ensure access to prerelease features with minimal disruption to your computer.
 
-![Choose your build pace](../media/insider-program-pace.png)
+![Choose your build pace.](../media/insider-program-pace.png)
 
 After you've chosen your content type and pace, read and accept the privacy statement and the program agreement. Microsoft collects information from computers that run the Windows Insider Program. The company uses this information to help identify issues and improve the user experience of prerelease Windows builds before they're released to the general public.
 

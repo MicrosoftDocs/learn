@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-video.understand-video-indexer-capabilities
+title: Understand Video Analyzer for Media capabilities
+metadata:
+  title: Understand Video Analyzer for Media capabilities
+  description: "Understand Video Analyzer for Media capabilities"
+  ms.date: 07/12/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-video-indexer-capabilities.md)]

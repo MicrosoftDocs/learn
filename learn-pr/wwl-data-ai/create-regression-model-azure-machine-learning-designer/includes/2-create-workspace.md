@@ -5,7 +5,7 @@ Azure Machine Learning is a cloud-based platform for building and operating mach
 To use Azure Machine Learning, you create a *workspace* in your Azure subscription. You can then use this workspace to manage data, compute resources, code, models, and other artifacts related to your machine learning workloads.
 
 > [!NOTE]
-> This module is one of many that make use of an Azure Machine Learning workspace, including the other modules in the [Create no-code predictive models with Azure Machine Learning](https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/) learning path. If you are using your own Azure subscription, you may consider creating the workspace once and reusing it in other modules. Your Azure subscription will be charged a small amount for data storage as long as the Azure Machine Learning workspace exists in your subscription, so we recommend you delete the Azure Machine Learning workspace when it is no longer required.  
+> This module is one of many that make use of an Azure Machine Learning workspace, including the other modules in the [Create no-code predictive models with Azure Machine Learning](/learn/paths/create-no-code-predictive-models-azure-machine-learning/) learning path. If you are using your own Azure subscription, you may consider creating the workspace once and reusing it in other modules. Your Azure subscription will be charged a small amount for data storage as long as the Azure Machine Learning workspace exists in your subscription, so we recommend you delete the Azure Machine Learning workspace when it is no longer required.  
 
 If you do not already have one, follow these steps to create a workspace:
 

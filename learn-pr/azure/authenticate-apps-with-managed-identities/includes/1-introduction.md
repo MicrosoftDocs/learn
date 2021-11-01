@@ -4,7 +4,7 @@ Storing credentials, tokens, or secret keys in configuration files that your app
 
 Azure provides a better solution using authentication tools. These tools include *service principals* and *managed identities*.
 
-Imagine that you're a developer at a furniture company. Your company is migrating a stock-tracking application to Azure VMs. The application needs access to secrets in Azure Key Vault. The application's deployment and management tasks should be as streamlined as possible. The processes should avoid handling credentials in configuration files. You want to use a managed identity for Azure resources to authenticate the application that's running in Azure.
+Imagine that you're a developer at a furniture company. Your company is migrating a stock-tracking application to Azure virtual machines (VMs). The application needs access to secrets in Azure Key Vault. The application's deployment and management tasks should be as streamlined as possible. The processes should avoid handling credentials in configuration files. You want to use a managed identity for Azure resources to authenticate the application that's running in Azure.
 
 This module explores the available service principals, introduces you to managed identities, and examines some usage scenarios.
 
@@ -19,6 +19,6 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Familiarity with Azure Active Directory concepts
+- Familiarity with Azure Active Directory (Azure AD) concepts
 - Familiarity with general concepts of authorization and authentication
 - Experience with developing and deploying infrastructure as a service (IaaS) applications

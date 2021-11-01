@@ -34,6 +34,8 @@ The computer's CPU runs each instruction in the program line by line. The CPU:
 - Displays information on a screen.
 - Communicates with other programs via a network connection.
 
+### Performing tasks
+
 Even the most basic program will do one or more of the following tasks:
 
 - **Input** - Input includes information:
@@ -49,7 +51,7 @@ Even the most basic program will do one or more of the following tasks:
   - Saved to a file.
   - Sent to another program via a network connection.
 
-A program can be:
+### Types of programs
 
 - A fully self-enclosed app like a game, a text editor, or billing software.
 - A script like a sophisticated macro that executes inside another program to automate some functionality.

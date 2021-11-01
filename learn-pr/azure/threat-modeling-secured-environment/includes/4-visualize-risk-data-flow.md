@@ -1,6 +1,6 @@
 ### Data-flow
 
-![Data-flow Element Image](../media/elements/data-flow-50.png)
+![Data-flow Element Image.](../media/elements/data-flow-50.png)
 
 #### What is data-flow?
 

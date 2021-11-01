@@ -1,125 +1,209 @@
 Our bot can now handle a few specific requests, but it would be nice to give the bot the ability to answer general questions about geography terminology, like a simple encyclopedia. We could use LUIS to create this functionality by creating separate intents, but there's an easier way. We'll use a separate service in Azure Cognitive Services, **[QnA Maker][QAMaker]**, to handle this scenario.
 
+
 ## Train your QnA Maker model
 
 As we did with LUIS, when we add the QnA Maker service to our bot, the first thing we do is train the service by using our specific data. To begin training QnA Maker, go to [https://qnamaker.ai](https://qnamaker.ai?azure-portal=true) and sign in by using your Microsoft account.
 
-Our first step is to create a new knowledge base. Select **Create a new knowledge base** in the top menu.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the QnA Maker My knowledge bases pane, with the Create a new knowledge base link in the top menu selected.](../media/qna-maker-create-knowledge-base.png)
+### Create a QnA service in Microsoft Azure
 
-For **step 1**, select the **Create a QnA service** button. A new browser window opens in the Azure portal.
+The first step is to create a new QnA service to serve as our knowledge base.
 
-In the portal, select or enter the following information for the new QnA Maker service:
+1. To get started, select **Create a knowledge base** at the top.
 
-1. Enter a name for the service. Our example is **myquestionservice**.
-1. For this module, you can select the **F0 (free)** pricing tier.
-1. Select the same resource group we have been using for the bot.
-1. For the Azure Search pricing tier, select **F (3 indexes)**.
-1. Select relevant locations for Azure Search and Azure Web App. Preferably, select the same location you used when you created other bot components.
-1. Enter an app name. Our example is **myquestionservice**.
-1. For **App insights**, select **Disable**.
+1. Under **STEP 1**, select the **Create a QnA service** button. A new browser window opens in the Azure portal.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the QnA Maker Create pane that shows information to select or enter.](../media/qna-maker-create-service.png)  
+   ![Screenshot that shows how to create a new Q N A service.](../media/qna-maker-create-service.png)
 
-For **step 2**, return to the browser window that displays QnA Maker and continue to create your QnA Maker service:
+1. Configure the following settings for the new QnA service:
 
-1. Select **Refresh** to view your newly created service.
-1. Select your existing tenant (Azure Active Directory directory ID), subscription, and Azure QnA Maker service names.
-1. For the language to use for information extraction, select **English**.
+   1. Enter a name for the service. For our example, we use **GeoFriendQnAService**.
 
-    > [!NOTE]
-    > Some languages that are available in **Language**  support *chit-chat* functionality, which refers to general conversation functionality. For other languages, only information extraction and basic QnA functionality is available. For the purpose of this module, let's select English as the most supported language.
+   1. Select the **F0 (free)** pricing tier.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the QnA Maker Connect your QnA service to your KB pane that shows options to select](../media/qna-maker-create-2.png)
+   1. Select the same resource group that used for the Web App bot.
 
-For **step 3**, enter a name for your database. Our example is **qnadb**.
+   1. For the Azure Search pricing tier, select **F (3 indexes)**.
 
-For **step 4**, you can provide data sources. If you have an FAQ available, either in the form of an electronic document or a page on the web, you can enter the information here and the service can automatically index it. In our case, let's skip this step; we'll manually provide questions and answers later through a web interface.
+   1. Select relevant locations for Azure Search and Azure Web App. Preferably, select the same location you used when you created the other bot components.
+
+   1. Enter an app name. We use the same as our service, **GeoFriendQnAService**.
+
+   1. For **App insights**, select **Disable**.
+   
+   1. You can ignore the **Managed (preview)** setting.
+
+   ![Screenshot that shows how to configure settings for your new Q N A service.](../media/qna-maker-configure-service.png)  
+
+   When the settings are configured, select **Review + create**, and then select **Create**.
+
+   The system validates your configuration settings and deploys your new service. The view changes to show your new service in the Azure portal.
+
+
+### Connect your QnA service to a knowledge base
+
+After the new QnA service is deployed, return to the browser window where you signed into QnA Maker.
+Now we need to connect the QnA service to a knowledge base.
+
+1. Under **STEP 2**, select the **Refresh** button to view your new service.
+
+1. Under **Microsoft Azure Directory ID**, choose **Select tenant**. Then select your tenant ID for Azure Active Directory.
+
+1. Select your **Azure Subscription**, and the **Azure QnA service** that you created.
+
+1. For the language, select **English**. The selected language will be used for information extraction.
+
+   Some of the languages shown for the **Language** setting support *chit-chat* functionality, which refers to general conversation functionality.
+   For other languages, only information extraction and basic QnA functionality is available. For the purpose of this module, let's select English as the most supported language.
+
+
+### Specify your database
+
+The next step is to provide a name for the database where you'll store your knowledge base data.
+
+- Under **STEP 3**, enter a name for your database. Our example is **GeoFriendQnADB**.
+
+
+### Provide data sources
+
+Under **STEP 4**, you can provide data sources. If you have an FAQ available, either in the form of an electronic document or a page on the web, you would enter the information here and the service can automatically index it.
+
+For now, we won't add any files or URLs, and we can ignore the **Enable multi-turn extraction** setting. We'll manually provide questions and answers later through a web interface.
 
 *Chit-chat*
 
-You can enable chit-chat functionality for your service. However, even without adding chit-chat, the bot supports some general conversation, such as greeting the user and saying goodbye.
-
-> [!NOTE]
-> General conversation capability plays an important role in responsible conversational UI because it helps build trust with the user and helps maintain a degree of emotional connection with the user.
+You can enable chit-chat functionality for your service. However, even without adding chit-chat, the bot supports some general conversation, such as greeting the user and saying goodbye. General conversation capability plays an important role in responsible conversational UI because it helps build trust with the user and helps maintain a degree of emotional connection with the user.
 
 *Personality*
 
-We can select among different **personalities** for our general chat. We'll select **enthusiastic** because it corresponds well with our goal and target audience.
+We can select among different personalities for our general chat.
 
-In QnA Maker, chit-chat prepopulates our knowledge base with a set of potential common questions and possible answers. Thus, the personality we select affects our initial set of phrases. You can change the personality and the phrases later, if you want to.
+- Select the **Enthusiastic** personality. This style corresponds well with our goal and target audience.
 
-> [!NOTE]
-> Choosing a bot's personality is an important step. In selecting the personality, we need to keep in mind potential diversity in the target audience. In QnA Maker, the bot can't easily switch personalities during a conversation. If you anticipate that your bot will talk to different audiences and different personalities are required, we recommend that you take a look at [Project Personality Chat][ProjectPersonalityChat].
+In QnA Maker, chit-chat prepopulates our knowledge base with a set of potential common questions and possible answers. The personalities that we select affect our initial set of phrases. You can change the personalities and phrases later, if you want to.
 
-Select **Create**. The knowledge base editing page opens.
+> [!Note]
+> Choosing a bot's personality is an important step. When you select the personality, you need to keep in mind potential diversity in the target audience. In QnA Maker, the bot can't easily switch personalities during a conversation. If you anticipate that your bot will talk to different audiences and different personalities are required, we recommend that you take a look at how to [Add chit-chat to a knowledge base][AddChitChat].
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the QnA Maker knowledge base editor.](../media/qna-maker-knowledge-base.png)
 
-In the **Knowledge base** pane, you can see a chit-chat knowledge base that's prepopulated by using information from the *qna_chitchat_Enthusiastic.tsv* file. In the UI, you can edit all questions and answers. You can even provide a question (or a set of possible questions) and a corresponding answer.
+### Create your knowledge base
 
-Let's add some geography terminology to this knowledge base. In the task bar, select **+**:
+Now we're ready for our knowledge base to be created with our configuration settings.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the QnA Maker knowledge base editor, showing how to edit questions and answers, with the plus button highlighted.](../media/qna-maker-add-knowledge-base-host.png)
+- Under **STEP 5**, select **Create your KB**.
 
-Let's add questions about definitions of the terms *country* and *capital*. You can provide more specific question-and-answer functionality for the problem domain of geography, but to demonstrate the UI, we'll use just two examples (shown in the following image).
+The system reviews your data and extracts the question-and-answer pairs. When the knowledge base is ready, an editing page opens.
 
-When you've added some data, select **Save and train**. Then, select **Test** to see your model in action. A chat dialog opens, and you can enjoy the conversation right in QnA Maker. To see the detailed QnA Maker response to your query, including the probability of the selected answer, in the dialog pane on the left, select **Inspect**. You also can provide feedback to improve the accuracy of the model.
+![Screenshot of the Q N A Maker knowledge base editor.](../media/qna-maker-knowledge-base.png)
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the QnA Maker Edit pane, with a question and answer about the meaning of the word "capital" and the Inspect button highlighted.](../media/qna-maker-test.png)
 
-When you're finished adding data and training the model, select **Publish**. The model is published in the cloud.
+## Add and modify question-and-answer pairs
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the QnA Maker Publish tab, with the Publish button highlighted.](../media/qna-maker-publish.png)
+In the **Knowledge base** editor, you can see a chit-chat knowledge base that's prepopulated with information from the *qna_chitchat_Enthusiastic.tsv* file. One column shows the existing questions and another column shows the corresponding answers. You can edit the existing questions and answers, and you can add new questions and answers.
 
-When publishing (deployment) is successful, QnA Maker displays details about how to access the service.
+Let's add some geography terminology to this knowledge base. We'll add two questions and answers to support the terms *country* and *capital*. Later on, you can provide more specific QnA functionality about geography, but to demonstrate the UI, we'll use these two examples.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the QnA Maker Success pane, with details about the deployment and how to access it.](../media/qna-maker-published.png)
+1. On the right, select **+ Add QnA pair**.
 
-> [!NOTE]
-> The **Create a Bot** button on this final pane begins the process of creating a bot that is tied to the QnA Maker service. In fact, using QnA Maker probably is the easiest way to get a bot up and running in the cloud. Even a bot without sophisticated functionality can implement responsible UI!
+1. On the left, under the **Question** column, select **+ Add alternate phrasing**.
 
-## Add the QnA Maker model to your bot
+1. In the **Question** edit box, enter the following question:
 
-In our case, we already have a working bot; we just want to add QnA Maker functionality to handle chit-chat and question answering in the bot we already created. This process is  similar to adding a LUIS recognizer.
+   > What is a country?
 
-In the final pane, after publishing your QnA Maker model, QnA Maker displayed these details of the deployed service:
+   To complete the entry, click outside the box. If you use the Enter key, a newline is added to your entry.
 
-```output
-POST /knowledgebases/<knowledge_base_id>/generateAnswer
-Host: https://<your_service_name>.azurewebsites.net/qnamaker
-Authorization: EndpointKey <endpoint_key>
+1. On the right, under the **Answer** column, select **Enter an answer**. 
+
+1. In the **Answer** edit box, enter the following answer. To complete the entry, click outside the box.
+
+   > The term country refers to a political state, nation, or geographic territory. It is often used to mean the place of a person's birth, their residence, or where they are a citizen.
+
+1. Repeat the steps to add another question and answer pair:
+
+   **Question**
+   > What is a capital?
+
+   **Answer**
+   > The term capital refers to a city or town where the official seat of government for a state, country, or region is located.
+
+![Screenshot that shows how to edit questions and answers in the Q N A Maker knowledge base editor.](../media/qna-maker-knowledge-base-add-pairs.png)
+
+
+## Train and test your model
+
+After you add the new question-and-answer pairs, save and train your model.
+Then check the accuracy of the model by chatting with your bot from within QnA Maker.
+
+1. At the top right, select **Save and train**.
+
+1. After training completes, select **Test**. A chat pane opens on the right. 
+
+1. In the chat pane, enter a phrase or question to start a conversation with your bot. For example, *I want to know what a capital is*.
+
+1. To see the detailed QnA Maker response to your input, select **Inspect**.
+
+   ![Screenshot that shows how to test your model and chat with your bot in Q N A Maker.](../media/qna-maker-test.png)
+
+   The details show the probability of the selected answer. You can provide alternate phrases to improve the accuracy of the model.
+
+
+## Publish your model
+
+After you train and test your model, it's time to make it available for use.
+
+- At the top, choose the **PUBLISH** view, and then select **Publish**. The model is published in the cloud.
+
+![Screenshot that shows how to publish your Q N A service and knowledge base model.](../media/qna-maker-publish.png)
+
+
+### Save the access data for your service
+
+After the publish completes and the service is deployed, QnA Maker displays details about how to access your service.
+
+![Screenshot of the QnA Maker success pane with details about how to access the deployed service.](../media/qna-maker-deployed.png)
+
+Under the **Postman** tab, you'll see the access parameters for your service:
+
+```console
+POST /knowledgebases/< Knowledge Base ID >/generateAnswer
+Host: < Service Host URL >
+Authorization: EndpointKey < Service Endpoint Key >
 Content-Type: application/json
 {"question":"<Your question>"}
 ```
 
-From this text, you need the following three parameters:
+We need to save some of the Postman parameter values to access your service from your bot source code. We'll store the values in the *appSettings.json* file for your bot project like we did for the LUIS recognizer settings.
 
-- **Knowledge base ID**: The sequence of numbers that follow `POST /knowledgebases/`.
-- **Endpoint key**: The sequence of numbers after `Authorization: EndpointKey`.
-- **Host name**: The URL that follows `Host:`.
+1. Return to your bot project in Visual Studio. Open the *appSettings.json* file.
 
-You add this information to the *appSettings.json* file. Anywhere in that file, paste the following code, using the values provided on the final pane in QnA Maker:
+1. Add the following statements to the end of your *appsettings.json* file. Update the \<placeholders> with the access values for your service model.
 
-```json
-"QnAKbId": "<your knowledge base id>",
-"QnAEndpointKey": "<your qna maker endpoint key>",
-"QnAHostname": "<your qna maker url>"
-```
+   ```json
+   "QnAKbId": "< Knowledge Base ID >",
+   "QnAEndpointKey": "< Service Endpoint Key >",
+   "QnAHostname": "< Service Host URL >"
+   ```
 
-Next, we need to make some changes to the application code:
+   - `QnAKbId`: The QnA Maker knowledge base identifier, which is the sequence of numbers after `POST /knowledgebases/`, such as 1a23456b-c1d2-3456-7e8a-b1c2d34e5ab6.
+   - `QnAEndpointKey`: The QnA Maker service endpoint key, which is the sequence of numbers after `Authorization: EndpointKey`, such as 987e654d-321c-098b-765a-98e76d543ca2.
+   - `QnAHostname`: The QnA Maker service host URL that follows `Host:`, such as https:\/\/my-region.api.cognitive.microsoft.com/.
+   
+> [!NOTE]
+> Notice the **Create Bot** action on this page. By using this action, you can create a bot for your QnA service from within QnA Maker. In fact, creating a bot from within QnA Maker probably is the easiest way to get a bot up and running in the cloud. Even a bot without sophisticated functionality can implement responsible UI!
 
-1. In the bot project in Visual Studio, use NuGet to add `Microsoft.Bot.Builder.AI.QnA` to the project, similar to how we added LUIS in the previous unit.
-1. Open `Startup.cs`, locate the `ConfigureServices` function, and then insert the following code below the code that adds the LUIS recognizer:
+
+## Integrate the QnA Maker model into your bot
+
+Now we want to add QnA Maker functionality to handle chit-chat and question answering in our bot. This process is similar to how we added a LUIS recognizer in the previous exercise.
+
+1. Return to your bot project in Visual Studio. To interact with the QnA Maker model from your code, add the Microsoft.Bot.Builder.AI.QnA NuGet package to the bot project.
+
+   > [!Tip]
+   > For the steps to install the NuGet package, see the [Install the LUIS NuGet package][InstallNuGet] section in the previous exercise.
+
+1. Open the *Startup.cs* file, and locate the `ConfigureServices` function. In the function, find the `AddSingleton` statement for the LUIS recognizer. Add the following `AddSingleton` statement for the QnA service after the `AddSingleton` statement for the LUIS recognizer:
 
    ```csharp
    services.AddSingleton(sp =>
@@ -139,20 +223,36 @@ Next, we need to make some changes to the application code:
        });
    ```
 
-   To make the code compile, add `using Microsoft.Bot.Builder.AI.QnA;` to the top of the file. The easiest way to make this change to the file is to go to parts of code that show errors (`QnAMaker` or `QnAMakerEndpoint`). Select the light bulb icon that appears next to it.
-1. Open `Bots\EchoBot.cs` and add the following line to the class to define the local variable for the QnA Maker instance:
+   To support the `QnAMaker` class, we need to add another `using` statement.
+   Add the following statement near the top of the file where the other `using` statements are located:
+
+   ```csharp
+   using Microsoft.Bot.Builder.AI.QnA;
+   ```
+
+   > [!Tip]
+   > Remember when Visual Studio finds an error in the code like missing information, it displays the light bulb icon near the code with the issue. The easiest way to fix the issue is to select the light bulb icon. Visual Studio will try to resolve the issue by using the best-match solution.
+
+1. Open the *Bots\EchoBot.cs* file, and locate the `rec` variable for the LUIS recognizer. Add the following declaration for a `QnA` variable after the recognizer variable:
 
    ```csharp
    QnAMaker QnA;
    ```
 
-1. To add the `QnAMaker QnA` parameter to the `EchoBot` constructor, add the following line inside the constructor:
+1. Now we need to add the `QnA` parameter to the `EchoBot` constructor in the same file. Look for the `this.rec` statement for the LUIS parameter in the constructor. Add the `QnA` parameter statement after the LUIS statement:
 
    ```csharp
    this.QnA = QnA;
    ```
 
-1. Finally, let's change our message processing code to use our QnA Maker model if the LUIS recognizer probability isn't high enough:
+   To support the `QnAMaker` class, we need to add another `using` statement.
+   Add the following statement near the top of the file where the other `using` statements are located:
+
+   ```csharp
+   using Microsoft.Bot.Builder.AI.QnA;
+   ```
+
+1. Finally, let's change our message processing code to use our QnA Maker model if the LUIS recognizer probability isn't high enough. Replace the code for the `OnMessageActivityAsync` function with this new definition:
 
    ```csharp
    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
@@ -179,33 +279,39 @@ Next, we need to make some changes to the application code:
    }
    ```
 
-   The logic here is clever because we need to understand subtle differences between phrases. For example, the phrase *What is a capital?* should be answered via QnA Maker. The phrase *What is a capital or France?* is answered via LUIS and our bot code. In our code, we call both LUIS and QnA Maker, and then select the service that gives us the higher score. We display the corresponding result.
+   The logic in this code is clever. We need to understand subtle differences between phrases. A phrase like *What is a capital?* should be answered by QnA Maker. A phrase like *What is a capital of France?* should be answered by LUIS and our bot code. In our code, we call both LUIS and QnA Maker, and we select the service that returns the higher score. We display the corresponding result.
 
 > [!TIP]
-> For help putting the code in the right place in the *appSettings.json* file, you can [view the complete project code][CodeQnA].
+> You can check if you made the code changes correctly by reviewing the complete version of the bot code [on GitHub][CodeQnA]. If you want to use the GitHub project code with your bot, you need to copy the *appsettings.json* file from your project directory (*C:\bot-demo* or similar) to the root of the GitHub project.
 
-At this point, you can run the project and test it by using Bot Emulator.
 
 ## Try the bot
 
-The bot we have created so far already seems quite intelligent. Here's a sample conversation I had with the bot I created:
+Rebuild your `EchoBot` solution, and then run your updated bot in the Bot Framework Emulator. Have a conversation to test the new logic features.
 
-What is a capital?
+<!-- Revised code fails with errors in VS. Not able to test bot. -->
 
-*A capital is the city or town that functions as the seat of government and administrative center of a country or region.*
+The bot we've created so far already seems fairly intelligent. Here's a sample conversation:
 
-What is a capital of Russia?
+| Bot response | User input |
+|---|---|
+| | *What is a capital?* | 
+| The term capital refers to a city or town <br> where the official seat of government for <br> a state, country, or region is located. | |
+| | *What is a capital of Russia?* | 
+| The capital of Russia is Moscow. | |
+| | *How are you?* |
+| Awesome! Thanks for asking. | |
+| | | 
 
-*The capital of Russia is Moscow.*
-
-How are you?
-
-*Awesome! Thanks for asking.*
 
 ## What's next?
 
-We've got a pretty useful, fun bot now! As our final step, let's reexamine some of the responsible conversational AI principles to make sure we're creating a responsible bot!
+We've got a simple, useful, and fun bot! As our final step in this lesson, let's reexamine some of the responsible conversational AI principles to make sure we're creating a responsible bot.
 
-[QAMaker]: /azure/cognitive-services/qnamaker/
-[ProjectPersonalityChat]: https://azure.microsoft.com/resources/videos/build-2019-microsoft-research-apis---project-personality-chat-in-action/
+
+<!-- Links -->
+
+[AddChitChat]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/chit-chat-knowledge-base?tabs=v1?azure-portal=true
 [CodeQnA]: https://github.com/MicrosoftDocs/mslearn-responsible-bots/blob/t3-qna/src/Bots/EchoBot.cs?azure-portal=true
+[InstallNuGet]: https://docs.microsoft.com/learn/modules/responsible-bots/5b-connect-luis-bot-code?azure-portal=true
+[QAMaker]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/?azure-portal=true

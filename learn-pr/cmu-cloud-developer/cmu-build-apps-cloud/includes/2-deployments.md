@@ -6,7 +6,7 @@ Before you deploy a cloud application into production, it is useful to have a ch
 
 The deployment of a cloud application is an iterative process that starts from the end of development and continues right through to the release of the application on the production resources: 
 
-![Code deployment process](../media/deployment.png)
+![Code deployment process.](../media/deployment.png)
 
 _Figure 1: Code deployment process_
 

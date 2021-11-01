@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.detect-analyze-recognize-faces
+metadata:
+  title: Detect, analyze, and recognize faces
+  description: "Detect, analyze, and recognize faces"
+  ms.date: 07/09/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Detect, analyze, and recognize faces
+summary: The ability for applications to detect human faces, analyze facial features and emotions, and identify individuals is a key artificial intelligence capability.
+abstract: |
+  After completing this module, you rill be able to:
+  - Identify options for face detection, analysis, and identification
+  - Understand considerations for face analysis
+  - Detect faces with the Computer Vision service
+  - Understand capabilities of the Face service
+  - Compare and match detected faces
+  - Implement facial recognition
+prerequisites: |
+  Before starting this module, you should already have:
+  - Familiarity with Azure and the Azure portal.
+  - Experience programming with C# or Python.
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/learn/paths/csharp-first-steps/) or [Take your first steps with Python](/learn/paths/python-first-steps/) learning path first.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- azure-cognitive-services
+- azure-computer-vision
+- azure-face
+units:
+- learn.wwl.detect-analyze-recognize-faces.introduction
+- learn.wwl.detect-analyze-recognize-faces.identify-options-for-face-detection-analysis-identification
+- learn.wwl.detect-analyze-recognize-faces.understand-considerations-for-face-analysis
+- learn.wwl.detect-analyze-recognize-faces.detect-faces-computer-vision-service
+- learn.wwl.detect-analyze-recognize-faces.understand-capabilities-of-face-service
+- learn.wwl.detect-analyze-recognize-faces.compare-match-detected-faces
+- learn.wwl.detect-analyze-recognize-faces.implement-facial-recognition
+- learn.wwl.detect-analyze-recognize-faces.exercise-identify-faces
+- learn.wwl.detect-analyze-recognize-faces.knowledge-check
+- learn.wwl.detect-analyze-recognize-faces.summary
+badge:
+  uid: learn.wwl.detect-analyze-recognize-faces.badge

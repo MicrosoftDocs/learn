@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-evaluate-cluster-models.exercise-model
+title: Exercise - Train and evaluate a clustering model
+metadata:
+  title: Exercise - Train and evaluate a clustering model
+  description: "Exercise - Train and evaluate a clustering model"
+  ms.date: 01/04/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/01-clustering-introduction.ipynb

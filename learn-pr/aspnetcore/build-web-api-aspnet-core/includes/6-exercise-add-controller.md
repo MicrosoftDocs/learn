@@ -4,7 +4,7 @@ A *controller* is a public class with one or more public methods known as *actio
 
 1. Select the `Controllers` folder in Visual Studio Code and add a new File called `PizzaController.cs`.
 
-    ![Image of Visual Studio Code adding a new file to the Controllers folder](../media/add-pizza-controller-file.png)
+    ![Image of Visual Studio Code adding a new file to the Controllers folder.](../media/add-pizza-controller-file.png)
 
     An empty class file named *PizzaController.cs* is created in the *Controllers* directory. The directory name *Controllers* is a convention. The directory name comes from the Model-View-**Controller** architecture used by the web API.
 

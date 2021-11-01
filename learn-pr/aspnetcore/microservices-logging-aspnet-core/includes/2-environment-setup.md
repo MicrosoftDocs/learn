@@ -25,7 +25,7 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 
 The script deploys a modified version of the *:::no-loc text="eShopOnContainers":::* [reference app](https://github.com/dotnet-architecture/eshoponcontainers). The solution architecture of the app is pictured in the following diagram:
 
-:::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram" border="true" lightbox="../../media/microservices/eshop-architecture.png":::
+:::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram." border="true" lightbox="../../media/microservices/eshop-architecture.png":::
 
 This module focuses on gathering telemetry for services depicted in the preceding diagram. The components to be instrumented are the HTTP aggregator and the catalog, coupon, and ordering services. The deployment script takes several minutes to complete. While the script is running, continue to the next unit to review logging and monitoring concepts.
 

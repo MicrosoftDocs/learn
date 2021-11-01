@@ -37,7 +37,7 @@ Now let's modify the read region for your database.
 5. Click the left portion of the **Japan East** row, and then drag and drop to the second position.
 6. Click **OK**.
 
-    ![Change read regions in the portal](../media/4-change-priorities/change-read-priorities.gif)
+    ![Change read regions in the portal.](../media/4-change-priorities/change-read-priorities.gif)
 
 ## Summary
 

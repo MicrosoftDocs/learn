@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-language-understanding-speech.exercise-use-speech-services
+title: Exercise - Use the Speech and Language Understanding services
+metadata:
+  title: Exercise - Use the Speech and Language Understanding services
+  description: "Exercise - Use the Speech and Language Understanding services"
+  ms.date: 08/20/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 100988
+labModal: true
+durationInMinutes: 30
+content: |
+  [!include[](includes/4-exercise-use-speech-services.md)]

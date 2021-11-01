@@ -4,7 +4,7 @@ In this section, we define IT equipment as anything that is mounted in a rack (c
 
 A **rack-mounted server** is similar to a tower PC, except turned horizontally and made to fit into a thinner, deeper chassis (see Figure 1). The height is measured in multiples of rack units, where 1U = 1.75 inches (4.45 cm). A 1U server can be CPU and RAM dense but leaves little room for I/O expansion cards (usually two). A server that is 2U or 3U can have six to eight I/O card slots. Smaller chassis must also have smaller fans and therefore make considerable noise compared to your average desktop computer. (This is acceptable because most server rooms are not occupied by humans.) Systems that have 4U, 5U, or larger chassis usually have a specialized function. One example is an 80-core Intel server, which has CPU sockets and RAM on vertically mounted daughter cards. Another example is a quad-GPU accelerator server. A third example is a server chassis with a 24, 36, or 48 internal hard drives.
 
-![Servers mounted in standard 19-inch rack, and a look inside a 1U rack-mounted server](../media/standard19-inches-rack.png)
+![Servers mounted in standard 19-inch rack, and a look inside a 1U rack-mounted server.](../media/standard19-inches-rack.png)
 
 _Figure 1: (a) Servers mounted in standard 19-inch rack. (b) A look inside a 1U rack-mounted server._ ([Source](http://en.wikipedia.org/wiki/file:rack001.jpg))
 
@@ -73,7 +73,7 @@ Solid-state storage cards are now available, such as those from Fusion-io. They 
 
 When most people hear the word "storage," it is likely that they will envision an HDD (see Figure 2a). Inside an HDD, the rotating platters and moving read/write head have been similar for decades. What have evolved are higher areal density, new recording techniques, faster interfaces, and overall lower power. The two most common form factors of HDDs are 3.5 inches and 2.5 inches. Rotational speeds can vary, but common RPM values are 5,400, 5,900, 7,200, 10,000, and 15,000. The higher the RPM, the lower the latency between random seeks.
 
-![Internal view of hard disk showing rotating platters and read/write head, and SSD with circuitry exposed](../media/traditional-hard-disk.png)
+![Internal view of hard disk showing rotating platters and read/write head, and SSD with circuitry exposed.](../media/traditional-hard-disk.png)
 
 _Figure 2: (a) Internal view of a hard disk showing the rotating platters and read/write head. (b) SSD with circuitry exposed._ ([Source](http://www.flickr.com/photos/auxo/6901630801/))
 
@@ -107,7 +107,7 @@ In addition to servers, a datacenter houses all of the network equipment that is
 
 One popular design is the **multitier** topology (as shown in Figure 3), in which servers connect directly to switches. Those switches link to aggregation switches, which, in turn, connect to the rest of the organization's network (such as core switches) and eventually to the upstream ISP.
 
-![Stack of network switches mounted in rack](../media/network-switches-mounted.png)
+![Stack of network switches mounted in rack.](../media/network-switches-mounted.png)
 
 _Figure 3: A stack of network switches mounted in a rack._ ([Source](http://www.flickr.com/photos/kenfagerdotcom/7536249106/in/photostream/))
 
@@ -121,7 +121,7 @@ A **fatter** (higher bandwidth) connection typically links the bottom-tier and a
 
 Ethernet can also travel over fiber-optic cable (as shown in Figure 4b). Fiber is unidirectional, so in a cable, you will see two strands, one send and one receive. The electrical signals are converted to photons, which stay inside the fiber due to the differences in indexes of refraction between the core (thin center) and cladding (thicker outside layer). The cladding is covered by a layer of fireproofing material. Fiber cables are thinner and lighter than copper cables, but care has to be taken in routing to maintain a minimum bend radius. Otherwise, some photons escape, causing loss. Multimode fiber is most commonly used inside datacenters because the cables and transceivers are much less expensive than single-mode fiber. Single-mode fiber is generally reserved for long-distance (100 m to 40 km) connections. Higher-speed Ethernet of 40 Gbps is actually 4x 10-Gbps links that work in unison (similar to PCIe lanes); similarly, 100 Gbps is 10x 10 Gbps (copper, fiber) or 4x 25 Gbps (fiber only).
 
-![Unshielded twisted pair (UTP) cable showing four pairs of cables, and fiber-optic network cables with LC connectors on top and ST connectors on bottom](../media/utp-fiber-optic-network.png)
+![Unshielded twisted pair (UTP) cable showing four pairs of cables, and fiber-optic network cables with LC connectors on top and ST connectors on bottom.](../media/utp-fiber-optic-network.png)
 
 _Figure 4: (a) Cutout of an unshielded twisted pair (UTP) cable, showing four pairs of cables. (b) Fiber-optic network cable. LC connectors on top and ST connectors on bottom._ ([Source](https://en.wikipedia.org/wiki/File:UTP_cable.jpg))
 
@@ -137,7 +137,7 @@ _Figure 4: (a) Cutout of an unshielded twisted pair (UTP) cable, showing four pa
 
 InfiniBand and 40-Gbit Ethernet are also being deployed as a **converged network**, or **virtual fabric**, which, along with virtualization of the OS, allows many virtual adapters (Ethernet, FC-HBAs) to run over fewer high-speed links. The connections can be configured dynamically through software and allow for fewer cables and easier maintenance and management.
 
-![InfiniBand switch](../media/infiniband-switch.png)
+![InfiniBand switch.](../media/infiniband-switch.png)
 
 _Figure 5: An InfiniBand switch._ ([Source](https://en.wikipedia.org/wiki/File:UTP_cable.jpg))
 

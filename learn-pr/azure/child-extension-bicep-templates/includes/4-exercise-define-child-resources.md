@@ -20,10 +20,10 @@ First, you create a new Bicep template with an Azure Cosmos DB account. To do so
 1. Create a new file called *main.bicep*.
 
 1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
- 
-   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
-1. Add the following content to the file. It's a good idea to type it manually rather than copy and paste it. That way, you can see how the tooling helps you write your Bicep files.
+   You can either select **File** > **Save As** or press <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
+
+1. Add the following content to the file. It's a good idea to enter it manually rather than copy and paste it. That way, you can see how the tooling helps you write your Bicep files.
 
    ```bicep
    param cosmosDBAccountName string = 'toyrnd-${uniqueString(resourceGroup().id)}'
@@ -98,7 +98,7 @@ Now you add another child resource. This time, you add it as a nested resource r
    var cosmosDBContainerPartitionKey = '/droneId'
    ```
 
-1. Near the bottom of the file, within the database resource definition and before its closing brace (`}`), add the following nested resource definition: 
+1. Near the bottom of the file, within the database resource definition and before its closing brace (`}`), add the following nested resource definition:
 
    ```bicep
    resource container 'containers' = {
@@ -150,7 +150,7 @@ You'll see `Running...` in the terminal.
 
 ### Deploy the template to Azure
 
-Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take a minute or two to complete, and then you'll see a successful deployment. 
+Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take a minute or two to complete, and then you'll see a successful deployment.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep
@@ -162,10 +162,11 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
 
-   1. Select your avatar in the upper-right corner of the page. 
+   1. Select your avatar in the upper-right corner of the page.
+
    1. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 
-1. On the left-side panel, select **Resource groups**.
+1. On the home page, select **Resource groups**. The **Resource groups** pane appears.
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 

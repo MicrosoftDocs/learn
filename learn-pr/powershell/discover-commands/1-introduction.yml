@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.discover-commands.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to discover commands in PowerShell.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/09/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

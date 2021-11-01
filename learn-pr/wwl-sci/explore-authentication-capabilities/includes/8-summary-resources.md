@@ -11,7 +11,7 @@ Now you've completed this module, you can:
 
 - [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 - [Licensing requirements for Azure Active Directory self-service password reset](/azure/active-directory/authentication/concept-sspr-licensing)
-- [FIDO2 security keys](/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys)
+- [FIDO2 security keys](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys)
 - [Windows Hello biometrics in the enterprise](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise)
 - [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-overview)
 - [Windows Hello for Business Group Policy](/windows/security/identity-protection/hello-for-business/hello-manage-in-organization)

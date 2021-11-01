@@ -5,7 +5,7 @@ In this exercise, you'll use a `Try/Catch` block to ensure the script stops resp
 Say you've noticed that you sometimes specify an erroneous path, which causes backup of files that shouldn't be backed up. You decide to add some error management.
 
 > [!NOTE]
-> Run the following commands only if you haven't completed any of the previous exercises in this module. We're assuming you've completed the previous exercises. If you haven't done so, you need a few files.
+> Run the following commands *only* if you haven't completed any of the previous exercises in this module. We're assuming you've completed the previous exercises. If you haven't done so, you need a few files.
 
 1. If you haven't completed the previous exercises in this module, run the following commands:
 
@@ -60,7 +60,7 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
    pwsh
    ```
 
-1. Open _Backup.ps1_. In the `Param` section, add the following parameter:
+1. Open _Backup.ps1_. In the `Param` section, add a comma after the last parameter, and then add the following parameter:
 
    ```powershell
    [switch]$PathIsWebApp

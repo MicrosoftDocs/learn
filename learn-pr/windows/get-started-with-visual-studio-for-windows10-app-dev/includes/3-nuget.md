@@ -9,10 +9,10 @@ NuGet is the *package manager* for .NET (including Windows Forms and WPF) and UW
 Let's use NuGet to install some features from the Windows Community Toolkit. Specifically, let's install some new XAML animation features.
 
 1. On the menu, select **Project** > **Manage NuGet Packages**, and then select **Browse**.
- ![NuGet showing a list of packages](../media/nuget1.png)
+ ![NuGet showing a list of packages.](../media/nuget1.png)
 
 1. In the search box, enter **microsoft.toolkit.uwp** to get a list of the available toolkit packages. The Windows Community Toolkit is split into several packages, and we'll install only the one we need.
- ![NuGet showing the toolkit packages](../media/nuget2.png)
+ ![NuGet showing the toolkit packages.](../media/nuget2.png)
 
 1. Scroll down and select **Microsoft.Toolkit.Uwp.UI.Animations** from the list, and then select the arrow or **Install** button. During the installation process, you'll need to select **OK** and **Accept**.
 
@@ -55,4 +55,4 @@ Let's use NuGet to install some features from the Windows Community Toolkit. Spe
 
 1. This XAML includes a reference to the toolkit package. It then creates a red rectangle to which it applies the new rotation behavior. When you run the program, you'll see what happens!
 
- ![NuGet at work](../media/nuget3.png)
+ ![NuGet at work.](../media/nuget3.png)

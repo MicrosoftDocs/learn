@@ -2,14 +2,16 @@
 uid: learn.languages.python-install-vscode
 metadata:
   title: Set up your Python beginner development environment with Visual Studio Code
-  description: Get started with learning Python by installing and configuring the tools you'll need to build real applications.
-  ms.date: 3/2/2020
+  description: Get started with learning Python by installing and configuring the
+    tools you'll need to build real applications.
+  ms.date: 07/06/2021
   author: bobtabor-msft
-  ms.author: rotabor
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Set up your Python beginner development environment with Visual Studio Code
-summary: Get started with learning Python by installing and configuring the tools you'll need to build real applications.
+summary: Get started with learning Python by installing and configuring the
+  tools you'll need to build real applications.
 abstract: |
   By the end of this module, you'll be able to:
   - Install Python 3 if needed.
@@ -21,19 +23,20 @@ prerequisites: |
 ratingEnabled: true
 iconUrl: /learn/achievements/python-install-vscode.svg
 levels:
-- beginner
+  - beginner
 roles:
-- developer
+  - developer
+  - student
 products:
-- vs-code
+  - vs-code
 units:
-- learn.languages.python-install-vscode.introduction
-- learn.languages.python-install-vscode.python-programming-language
-- learn.languages.python-install-vscode.exercise-install-python3
-- learn.languages.python-install-vscode.exercise-setup-visual-studio-code
-- learn.languages.python-install-vscode.exercise-write-execute-first-script
-- learn.languages.python-install-vscode.exercise-write-first-application
-- learn.languages.python-install-vscode.knowledge-check
-- learn.languages.python-install-vscode.summary
+  - learn.languages.python-install-vscode.introduction
+  - learn.languages.python-install-vscode.python-programming-language
+  - learn.languages.python-install-vscode.exercise-install-python3
+  - learn.languages.python-install-vscode.exercise-setup-visual-studio-code
+  - learn.languages.python-install-vscode.exercise-write-execute-first-script
+  - learn.languages.python-install-vscode.exercise-write-first-application
+  - learn.languages.python-install-vscode.knowledge-check
+  - learn.languages.python-install-vscode.summary
 badge:
   uid: learn.languages.python-install-vscode.badge

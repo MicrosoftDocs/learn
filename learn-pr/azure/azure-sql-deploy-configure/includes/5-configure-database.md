@@ -50,7 +50,7 @@ The Azure SQL Managed Instance and Azure SQL Database services restrict the foll
   * Error reporting and customer feedback.
   * `ALTER SERVER CONFIGURATION`.
   * `ERRORLOG` configuration.
-* "Mixed Mode" security is forced.
+* "Mixed Mode" security is forced, though Azure Active Directory only authentication is in preview
 * Logon audit is done through SQL audit.
 * Server proxy account is not applicable.
 

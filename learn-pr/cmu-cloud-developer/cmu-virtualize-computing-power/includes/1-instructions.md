@@ -4,7 +4,7 @@ The key to virtualizing a CPU lies in the execution of both privileged and unpri
 
  Special privileges to system resources are permitted by defining modes of operations (or rings) in the ISA. Each CPU ISA usually specifies two modes of operations, system (or supervisor/kernel/privileged) mode and user mode (see Figure 1a). System mode allows a wide accessibility to system components, while user mode restricts such accessibility. In an attempt to provide security and resource isolations, OSs in traditional systems are executed in system mode, while associated applications are run in user mode. Some ISAs, however, support more than two rings. For instance, the Intel IA-32 ISA supports four rings (see Figure 1b). In traditional systems, when Linux is implemented on an IA-32 ISA, the OS is executed in Ring 0 and application processes are executed in Ring 3.
 
-![System modes of operations (or rings)](../media/rings.png)
+![System modes of operations (or rings).](../media/rings.png)
 
 _Figure 1: System modes of operations (or rings)_
 
@@ -12,13 +12,13 @@ A **privileged instruction** is defined as an instruction that traps in user mod
 
 According to Popek and Goldberg (1974), a hypervisor can be constructed if it satisfies three properties: **efficiency**, **resource control**, and **equivalence**. Efficiency entails executing all innocuous instructions directly on hardware without any interference by the hypervisor. Resource control suggests that it is not possible for any guest software to change the configuration of resources in a system. Equivalence requires identical behavior of a program running on a VM or on a traditional OS with no virtualization. One exception is a difference in performance. Popek and Goldberg's proposal (or theorem) implies that a hypervisor can be constructed only if the set of sensitive instructions is a subset of the set of privileged instructions. That is to say, instructions that interfere with the correct functioning of the system (i.e., sensitive instructions, such as LPSW) should always trap in user mode. Figure 2 illustrates Popek and Goldberg's theorem.<sup>[1][^1]</sup>
 
-![Popek and Goldberg's theorem](../media/theorem.png)
+![Popek and Goldberg's theorem.](../media/theorem.png)
 
 _Figure 2: Popek and Goldberg's theorem_
 
 Finally, let us discuss how a trap can be handled in a system. Specifically, we describe traps in the context of CPU virtualization. Figure 3 demonstrates how a hypervisor can handle an instruction trap. The hypervisor's trap-handling functions can be divided into three main parts: dispatcher, allocator, and a set of interpreter routines. First, a privileged instruction traps to the hypervisor's dispatcher. If the hypervisor recognizes that the instruction is attempting to alter system resources, it directs it to the allocator; otherwise, it sends it to a corresponding interpreter routine. The allocator decides how system resources are to be allocated in a nonconflicting manner and satisfies the instruction's request accordingly. The interpreter routines emulate (more on emulation shortly) the effects of the instruction when operating on virtual resources. When the instruction is handled fully (i.e., done), control is passed back to the guest software at the instruction that comes immediately after the one that caused the trap.
 
-![Demonstration of a trap to a hypervisor. The hypervisor includes three main components: the dispatcher, the allocator, and the interpreter routines](../media/trap-to-hypervisor.png)
+![Demonstration of a trap to a hypervisor. The hypervisor includes three main components: the dispatcher, the allocator, and the interpreter routines.](../media/trap-to-hypervisor.png)
 
 _Figure 3: Demonstration of a trap to a hypervisor. The hypervisor includes three main components: the dispatcher, the allocator, and the interpreter routines_
 <br>

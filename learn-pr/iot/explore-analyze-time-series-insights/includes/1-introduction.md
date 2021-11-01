@@ -31,7 +31,7 @@ In this module, you will:
 
 Suppose you work for Contoso. It offers a solution to maintain and monitor cheese cave temperature and humidity at optimal levels. You have been working with gourmet cheese-making companies for a long time. You've rolled out their *Asset Condition Tracking System* that monitors the environmental conditions of cheese containers during shipment.
 
-![A cheese cave](../media/cheese-cave-hor.jpg)
+![A cheese cave.](../media/cheese-cave-hor.jpg)
 
 Your team decides that further improvements to the monitoring system will require near real-time data exploration and root-cause analysis.
 

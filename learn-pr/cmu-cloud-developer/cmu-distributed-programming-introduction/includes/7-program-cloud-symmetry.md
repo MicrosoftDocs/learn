@@ -4,7 +4,7 @@ The third design consideration is one of organizational structure. An applicatio
 
 In a master-subordinate organization, a central process, called the _master_, handles all the logic and controls, and all other processes are denoted as subordinate processes. Thus, interaction between processes is asymmetrical: bidirectional connections enable the master to communicate with each subordinate, and no interconnection is permitted between any two subordinates (see Figure 12 (a)). This situation requires the master to keep track of each subordinate's network location in what is called a _metadata structure_, and, further, that each subordinate can always identify and locate the master. 
 
-![(a) A master-subordinate organization. (b) A peer-to-peer organization. The master in such an organization is optional (usually employed for monitoring the system and/or injecting administrative commands)](../media/master-subordinate-architecture.png)
+![(a) A master-subordinate organization. (b) A peer-to-peer organization. The master in such an organization is optional (usually employed for monitoring the system and/or injecting administrative commands).](../media/master-subordinate-architecture.png)
 
 _Figure 12: (a) A master-subordinate organization. (b) A peer-to-peer organization. The master in such an organization is optional (usually employed for monitoring the system and/or injecting administrative commands)._
 

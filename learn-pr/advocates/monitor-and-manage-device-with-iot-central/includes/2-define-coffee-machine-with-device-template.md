@@ -230,7 +230,7 @@ To create a device template, you can either build it from scratch in the IoT Cen
 
 IoT Central displays the **Connected Coffee Maker** capability model with the **Coffee Maker** interface that defines the telemetry, properties, and commands that the device supports.
 
-![Imported Connected Coffee Machine template](../media/2-imported-template.png)
+![Imported Connected Coffee Machine template.](../media/2-imported-template.png)
 
 ## Add cloud properties
 
@@ -247,7 +247,7 @@ To add the cloud properties that store the ideal water temperature range for cof
 
 1. Save your changes.
 
-    ![Connected Coffee Machine cloud properties](../media/2-cloud-properties.png)
+    ![Connected Coffee Machine cloud properties.](../media/2-cloud-properties.png)
 
 ## Customize your template
 
@@ -271,7 +271,7 @@ To add the customizations that control how IoT Central displays information abou
 
 1. Save your changes.
 
-    ![Connected Coffee Machine template customizations](../media/2-template-customizations.png)
+    ![Connected Coffee Machine template customizations.](../media/2-template-customizations.png)
 
 ## Add views to your template
 
@@ -293,7 +293,7 @@ To create a view that lets you visualize the telemetry from your coffee machine:
 
 1. Save your changes.
 
-    ![Connected Coffee Machine telemetry view](../media/2-telemetry-view.png)
+    ![Connected Coffee Machine telemetry view.](../media/2-telemetry-view.png)
 
 To create a view that lets you manage the properties of your coffee machine:
 
@@ -305,7 +305,7 @@ To create a view that lets you manage the properties of your coffee machine:
 
 1. Save your changes.
 
-    ![Connected Coffee Machine telemetry view](../media/2-properties-form.png)
+    ![Connected Coffee Machine telemetry view.](../media/2-properties-form.png)
 
 ## Publish the Coffee Machine template
 
@@ -321,4 +321,4 @@ To verify that the device template was published and is ready to use:
 
 1. Check that the **Connected Coffee Machine** device is in the list of available device types:
 
-    ![Connected Coffee Machine published device template](../media/2-published-template.png)
+    ![Connected Coffee Machine published device template.](../media/2-published-template.png)

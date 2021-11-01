@@ -8,7 +8,7 @@ To illustrate the scenario, we are going to return to our spaceship, where a dis
 
 Back onboard the spaceship, warning lights are flashing and alarms are blaring. You have been hit by the electromagnetic fallout from a coronal mass ejection event of a nearby star and are experiencing multiple failures across different critical systems!
 
-![Image showing a failure in the life support system](../media/life-support-room-alert.png) | ![Image showing the cockpit, where the navigation system needs recalibration](../media/cockpit-room-alert.png) | ![Image showing a blown transformer in the reactor room](../media/reactor-room-alert.png)
+![Image showing a failure in the life support system.](../media/life-support-room-alert.png) | ![Image showing the cockpit, where the navigation system needs recalibration](../media/cockpit-room-alert.png) | ![Image showing a blown transformer in the reactor room](../media/reactor-room-alert.png)
 
 Fortunately, you have the tools, team, and expertise on board to fix all the issues, however it's important that you follow procedure to ensure the repairs are successful. Below is the list of repair tasks that you must complete:
 

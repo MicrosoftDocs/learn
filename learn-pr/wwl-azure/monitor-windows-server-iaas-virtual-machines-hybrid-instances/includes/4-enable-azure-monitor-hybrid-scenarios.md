@@ -82,4 +82,3 @@ You use Windows Admin Center to enable Azure Update Management. From Windows Adm
 You can learn more by reviewing the following documents.
 
 - [Connect Windows computers to Azure Monitor](https://aka.ms/agent-windows?azure-portal=true)
-- [Collect data from a Windows computer in a hybrid environment with Azure Monitor](https://aka.ms/quick-collect-windows-computer?azure-portal=true)

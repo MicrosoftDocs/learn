@@ -1,6 +1,6 @@
 On a fundamental level, data is stored in binary encoding on some medium (such as magnetic or solid-state media). The challenge is to systematically organize the data in ways that are accessible to users and applications. These systems of organization provide abstractions to users and applications in the form of either files in a file system or entities in a database.
 
-![Various layers of abstraction of data](../media/layers-abstraction-data.png)
+![Various layers of abstraction of data.](../media/layers-abstraction-data.png)
 
 _Figure 6: Various layers of abstraction of data_
 
@@ -35,7 +35,7 @@ One basic abstraction of storage is the concept of **files** and **file systems*
 
 File systems can be categorized into many types. Figure 7 illustrates the hierarchical taxonomy of file systems as defined by the Storage Networking Industry Association (SNIA).
 
-![File system taxonomy](../media/fs-taxonomy.png)
+![File system taxonomy.](../media/fs-taxonomy.png)
 
 _Figure 7: File system taxonomy_<sup>[1][^1]</sup>
 

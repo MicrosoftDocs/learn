@@ -1,4 +1,11 @@
 
+## What are terms of use for Entitlement Management
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of terms of use settings.  You can set Name, Display Name, link to a PDF document with the terms, and some settings to ensure the user actually sees the terms of use.](../media/sc300-terms-of-use-entitlement.png)
+
+Azure AD terms of use policies use the PDF format to present content. The PDF file can be any content, such as existing contract documents, allowing you to collect end-user agreements during user sign-in. To support users on mobile devices, the recommended font size in the PDF is 24 point.  Remember that terms of use PDF documents can contain a End User License Agreement (EULA), which the user has to commit to before access resources based on their entitlement settings.
+
 ## Add terms of use
 
 Once you have finalized your terms of use document, use the following procedure to add it.
@@ -76,7 +83,7 @@ Once you have finalized your terms of use document, use the following procedure 
     > [!IMPORTANT]
     > Conditional Access policy controls (including terms of use) do not support enforcement on service accounts. We recommend excluding all service accounts from the Conditional Access policy.
 
-    Custom Conditional Access policies enable granular terms of use, down to a specific cloud application or group of users. For more information, see [Quickstart: Require terms of use to be accepted before accessing cloud apps](https://docs.microsoft.com/azure/active-directory/conditional-access/require-tou).
+    Custom Conditional Access policies enable granular terms of use, down to a specific cloud application or group of users. For more information, see [Quickstart: Require terms of use to be accepted before accessing cloud apps](/azure/active-directory/conditional-access/require-tou).
 
 15. When complete, select **Create**.
 

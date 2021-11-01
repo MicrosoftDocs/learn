@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.node-web-routes.exercise-read-write
+title: Exercise - Read and write
+metadata:
+  title: Exercise - Read and write
+  description: Exercise in how to configure routes for your API by using HTTP verbs.
+  author: clarkio
+  ms.author: brcl
+  ms.date: 07/12/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-read-write.md)]

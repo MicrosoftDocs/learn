@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Azure role-based access control can be applied to all but which of the following scopes?'
+  - content: 'Which of the following scopes cannot be secured with Azure role-based access control?'
     choices:
     - content: 'Subscription'
       isCorrect: false

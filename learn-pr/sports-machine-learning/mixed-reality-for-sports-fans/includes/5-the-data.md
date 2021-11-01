@@ -114,7 +114,7 @@ This JSON file hasn't been completed yet. That's because you had an outlier in y
 
 ## Add the missing player back in the data
 
-In the first module of this learning path inspired by *Space Jam: A New Legacy*, you realized you had some outliers in your data. If you completed this module, you might remember that in [Unit 5: Check for outliers](/learn/sports-machine-learning/predict-basketball-player-efficiency-ratings/5-check-for-outliers?azure-portal=true) there was an outlier who had a very low value for points and possessions. This was row 35, ID 40. It turns out that player was Yosemite Sam!
+In the first module of this learning path inspired by *Space Jam: A New Legacy*, you realized you had some outliers in your data. If you completed this module, you might remember that in [Unit 5: Check for outliers](/learn/modules/predict-basketball-player-efficiency-ratings/5-check-for-outliers?azure-portal=true) there was an outlier who had a very low value for points and possessions. This was row 35, ID 40. It turns out that player was Yosemite Sam!
 
 You want to make sure he's added back into your JSON data so that he can show up in your Mixed Reality experience. You'll have to write a bit more code.
 

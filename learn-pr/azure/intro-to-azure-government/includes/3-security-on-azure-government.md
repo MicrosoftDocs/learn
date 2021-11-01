@@ -13,7 +13,7 @@ Azure Government covers over 72 compliance regimes – the broadest and most com
 
 Azure Government's defense-in-depth approach to physical security provides multiple levels of protection, as shown in the following diagram. 
 
-![Summary of layered datacenter security approach](../media/layered-datacenter-security.png)
+![Summary of layered datacenter security approach.](../media/layered-datacenter-security.png)
 
 - **Access approval** is comprehensive, ensuring that only individuals on a pre-authorized list can enter Azure Government datacenters. Personnel are granted access to discrete areas only as it’s truly needed, following a “least privileged access” principle. We also have clear separation of duties between datacenter management and security personnel; which provides additional operational assurance.
 - **Perimeter** security starts with fencing, front entrance gates, and camera monitory. Every datacenter has one defined access point as well as on-going roaming patrols. 

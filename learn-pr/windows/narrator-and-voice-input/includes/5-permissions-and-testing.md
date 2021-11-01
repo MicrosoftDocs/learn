@@ -7,13 +7,13 @@ Our app needs to respond to the situation where the user turns off a necessary p
 
 2. Now turn off the **Allow apps to access your microphone** permission. To find this setting, type "privacy settings" into the Windows search bar, then select **Microphone** from the settings to the left.
 
-![Turning off microphone input](../media/speech-microphone-off.png)
+![Turning off microphone input.](../media/speech-microphone-off.png)
 
 3. Now press **L** and try to say something. You should get the error message **"Permission to use the audio capture device is denied.""**. If so, turn the permission back on and try again. Your spoken text should be accepted.
 
 4. Leaving this permission on, go back to the privacy settings and turn off speech recognition (access this by selecting **Speech**). Then press **L** and try to enter speech.
 
-![Turning off speech input](../media/speech-privacy-off.png)
+![Turning off speech input.](../media/speech-privacy-off.png)
 
 5. You should get the error message **"The speech privacy policy was not accepted prior to attempting a speech recognition"**.
 
@@ -33,7 +33,7 @@ Let's consider this regular pyramid.
 
 | Regular pyramid | Surface area equation |
 |:--:|:--:|
-| ![A regular pyramid](../media/pyramid.svg) |![Surface area of a regular pyramid](../media/surface-area-equation.svg) |
+| ![A regular pyramid.](../media/pyramid.svg) |![Surface area of a regular pyramid](../media/surface-area-equation.svg) |
 
 The surface area of a regular pyramid is calculated using the scary equation shown - this is our challenge.
 

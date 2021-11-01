@@ -2,11 +2,11 @@ In this module, we demonstrate Windows 10 Timeline and show you how you can impr
 
 Before we start, examine your current Timeline. Select the **Task View** icon to the right of the search bar in the Windows 10 taskbar.
 
-![Task View icon](../media/timeline-task-view.png)
+![Task View icon.](../media/timeline-task-view.png)
 
 Your timeline for the past 30 days appears. The items you are currently working on appear with large icons at the top of the screen. Older items appear with smaller images at the bottom of the screen. The Timeline slider is on the right edge of the screen. Notice how some Timeline images don't have much detail and could be more interesting.
 
-![Timeline displayed](../media/timeline-display.png)
+![Timeline displayed.](../media/timeline-display.png)
 
 Many of the apps you run in Windows 10 appear in Timeline, but unless the apps contain an adaptive card, they use a default image. In this module, we look at how you can define your own adaptive card to create something more interesting.
 

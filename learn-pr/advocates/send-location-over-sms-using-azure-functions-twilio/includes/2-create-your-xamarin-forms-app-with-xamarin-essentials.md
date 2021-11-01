@@ -14,7 +14,7 @@ To complete the steps in this unit, you need Xamarin.Forms cross-platform UI too
 
 1. Click **OK**.
 
-    ![The New Solution dialog](../media/2-new-solution-dialog.png)
+    ![The New Solution dialog.](../media/2-new-solution-dialog.png)
 
 1. From the **New Cross Platform App** dialog, select the *Blank App* template.
 
@@ -24,7 +24,7 @@ To complete the steps in this unit, you need Xamarin.Forms cross-platform UI too
 
 1. Click **OK**.
 
-    ![The configure new solution dialog](../media/2-configure-solution-dialog.png)
+    ![The configure new solution dialog.](../media/2-configure-solution-dialog.png)
 
 Visual Studio will create two projects for you
 
@@ -54,7 +54,7 @@ The UWP, Android, and iOS platforms provide numerous similar capabilities that t
 
 1. Click the **Install** button to install the NuGet package. You'll need to accept the license to continue.
 
-    ![Adding the Xamarin.Essentials NuGet package to all projects in the solution](../media/2-add-essentials-nuget.png)
+    ![Adding the Xamarin.Essentials NuGet package to all projects in the solution.](../media/2-add-essentials-nuget.png)
 
 ## Building and running the app
 
@@ -62,11 +62,11 @@ The UWP, Android, and iOS platforms provide numerous similar capabilities that t
 
 1. Set the build configuration to **Debug**, the platform to **x86**, and the device to run on to **Local Machine**.
 
-    ![Setting the Debug x86 configuration to run on the local device](../media/2-debug-configuration.png)
+    ![Setting the Debug x86 configuration to run on the local device.](../media/2-debug-configuration.png)
 
 1. Start debugging the app.
 
-    ![The app running](../media/2-debuging-app.png)
+    ![The app running.](../media/2-debuging-app.png)
 
 ## Summary
 

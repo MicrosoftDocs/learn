@@ -2,7 +2,7 @@ Azure Synapse Analytics separates the computation from the underlying storage wh
 
 A SQL pool represents an abstract, normalized measure of compute resources and performance. By changing the service level, you alter the number of Data Warehouse Units (DWUs) that are allocated to the system, which in turn adjusts the performance, and thus the cost, of the system. To achieve higher performance, one can increase the number of DWUs, which also increases the associated costs. To achieve a lower cost and thereby less performance, you can reduce the DWUs. Storage and compute costs are billed separately, so changing the DWUs does not affect the storage costs.
 
-![Architecture of the massively parallel processing (MPP) engine](../media/4-mpp-engine.png)
+![Architecture of the massively parallel processing (MPP) engine.](../media/4-mpp-engine.png)
 
 Azure Synapse Analytics uses a node-based architecture. Applications connect and issue T-SQL commands to a control node, which is the single point of entry for the data warehouse. The control node runs the Massively Parallel Processing (MPP) engine which optimizes queries for parallel processing, and then passes operations to compute nodes to do their work in parallel. The compute nodes store all user data in Azure Storage and run the parallel queries. The Data Movement Service (DMS) is a system-level internal service that moves data across the nodes as necessary to run queries in parallel and return accurate results.
 

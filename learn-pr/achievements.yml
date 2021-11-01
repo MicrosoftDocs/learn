@@ -552,3 +552,143 @@ achievements:
   title: Describe Microsoft security and compliance principles
   summary: Describe Microsoft security and compliance principles
   iconUrl: /learn/achievements/describe-microsoft-security-and-compliance-principles.svg
+- uid: learn.azdo.recommend-system-feedback-mechanisms
+  type: badge
+  title: Recommend and design system feedback mechanisms
+  summary: Learn how surveys and application analytics create a feedback loop that helps you understand the voice of the customer.
+  iconUrl: /learn/achievements/azure-devops/recommend-system-feedback-mechanisms.svg
+- uid: learn.azdo.manage-database-changes-in-azure-pipelines
+  type: badge
+  title: Manage database changes in Azure Pipelines
+  summary: Use a release approval in Azure Pipelines to help coordinate database schema changes between developers and database administrators.
+  iconUrl: /learn/achievements/azure-devops/manage-database-changes-in-azure-pipelines.svg
+- uid: learn.azdo.provision-databases-azure-pipelines
+  type: badge
+  title: Provision databases in Azure Pipelines
+  summary: Learn how to automatically provision Azure SQL Database in Azure Pipelines by using an Azure Resource Manager template.
+  iconUrl: /learn/achievements/azure-devops/provision-database-azure-pipelines.svg
+- uid: learn.azdo.provision-infrastructure-azure-pipelines
+  type: badge
+  title: Provision infrastructure in Azure Pipelines
+  summary: Learn how infrastructure as code enables you to describe and automatically provision the infrastructure that you need for your application.
+  iconUrl: /learn/achievements/azure-devops/provision-infrastructure-azure-pipelines.svg
+- uid: learn.azdo.configure-infrastructure-azure-pipelines
+  type: badge
+  title: Configure infrastructure in Azure Pipelines
+  summary: Run configuration management tools in Azure Pipelines to help keep your infrastructure configured as you need.
+  iconUrl: /learn/achievements/azure-devops/configure-infrastructure-azure-pipelines.svg
+- uid: learn.azdo.scan-for-vulnerabilities
+  type: badge
+  title: Scan code for vulnerabilities in Azure Pipelines
+  summary: Scan for potential vulnerabilities in your source code during the build process.
+  iconUrl: /learn/achievements/azure-devops/scan-code-for-vulnerabilities-in-your-build-pipeline.svg
+- uid: learn.azdo.scan-open-source
+  type: badge
+  title: Scan open source components for vulnerabilities and license ratings in Azure Pipelines
+  summary: Scan open-source components for security vulnerabilities and assess their license ratings when your application builds in Azure Pipelines.
+  iconUrl: /learn/achievements/azure-devops/manage-security-and-compliance-in-your-build-pipeline.svg
+- uid: learn.azdo.automate-deployments-azure-devops
+  type: trophy
+  title: Automate your deployments with Azure DevOps
+  summary: Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to combine automation techniques such as infrastructure as code with automated pipelines to provision and configure the infrastructure you need to run your applications and services.
+  iconUrl: /learn/achievements/azure-devops/automate-deployments-azure-devops.svg
+- uid: learn.azdo.capture-feedback-monitoring
+  type: trophy
+  title: Capture feedback and monitoring data to continuously improve your software
+  summary: Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to recommend and design system feedback mechanisms, implement a process for routing system feedback to development teams, and optimize feedback mechanisms.
+  iconUrl: /learn/achievements/azure-devops/capture-feedback-monitoring.svg
+- uid: learn.build-azure-vm-templates
+  type: badge
+  title: Build Azure Resource Manager templates
+  summary: Learn how Resource Manager templates express your deployments as code, enabling you to deploy faster and more reliably. 
+  iconUrl: /learn/achievements/build-azure-vm-templates.svg
+- uid: learn.wwl.process-natural-language-azure-cognitive-language-services.trophy
+  type: trophy
+  title: Process natural language with Azure Cognitive Language Services
+  summary: Process natural language with Azure Cognitive Language Services
+  iconUrl: /learn/achievements/process-natural-language-with-azure-cognitive-language-services.svg
+- uid: learn.classify-user-feedback-with-the-text-analytics-api.badge
+  type: badge
+  title: Discover sentiment in text with the Text Analytics API
+  summary: Discover sentiment in text with the Text Analytics API
+  iconUrl: /learn/achievements/classify-user-feedback-with-the-text-analytics-api.svg
+- uid: learn.wwl.add-conversational-intelligence-luis.badge
+  type: badge
+  title: Add basic conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
+  summary: Add basic conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
+  iconUrl: /learn/achievements/add-conversational-intelligence-with-luis.svg
+- uid: learn.wwl.detect-language-text-analytics-api.badge
+  type: badge
+  title: Detect language with the text analytics API
+  summary: Detect language with the text analytics API
+  iconUrl: /learn/achievements/detect-language-with-the-text-analytics-api.svg
+- uid: learn.wwl.extract-key-phrases-text-analytics-api.badge
+  type: badge
+  title: Extract key phrases from text with the text analytics API
+  summary: Extract key phrases from text with the text analytics API
+  iconUrl: /learn/achievements/extract-key-phrases-from-text-with-the-text-analytics-api.svg
+- uid: learn.wwl.manage-language-understanding-intelligent-service-apps.badge
+  type: badge
+  title: Manage your Language Understanding Intelligent Service (LUIS) Apps
+  summary: Manage your Language Understanding Intelligent Service (LUIS) Apps
+  iconUrl: /learn/achievements/manage-your-language-understanding-intelligent-service-luis-apps.svg
+- uid: learn.wwl.recognize-entities-text-analytics-api.badge
+  type: badge
+  title: Recognize entities in text with the text analytics API
+  summary: Recognize entities in text with the text analytics API
+  iconUrl: /learn/achievements/recognize-entities-in-text-with-the-text-analytics-api.svg
+- uid: learn.wwl.use-containers-language-understanding-intelligent-service-apps.badge
+  type: badge
+  title: Use containers for your Language Understanding Intelligent Service (LUIS) Apps
+  summary: Use containers for your Language Understanding Intelligent Service (LUIS) Apps
+  iconUrl: /learn/achievements/use-containers-for-your-language-understanding-intelligent-service-luis-apps.svg
+- uid: learn.wwl.process-classify-images-with-azure-cognitive-vision-services.trophy
+  type: trophy
+  title: Process and classify images with the Azure cognitive vision services
+  summary: Process and classify images with the Azure cognitive vision services
+  iconUrl: /learn/achievements/process-and-classify-images-with-the-azure-cognitive-vision-services.svg
+- uid: learn.classify-images-with-custom-vision-services.badge
+  type: badge
+  title: Classify images with the Microsoft Custom Vision Service
+  summary: Classify images with the Microsoft Custom Vision Service
+  iconUrl: /learn/achievements/classify-images-with-custom-vision-service.svg
+- uid: learn.create-computer-vision-service.badge
+  type: badge
+  title: Process images with the Computer Vision service
+  summary: Process images with the Computer Vision service
+  iconUrl: /learn/achievements/create-computer-vision-service-to-classify-images.svg
+- uid: learn.data-ai.identify-faces-with-computer-vision.badge
+  type: badge
+  title: Identify faces and expressions by using the Computer Vision API in Azure Cognitive Services
+  summary: Identify faces and expressions by using the Computer Vision API in Azure Cognitive Services
+  iconUrl: /learn/achievements/data-ai/identify-faces-with-computer-vision.svg
+- uid: learn.wwl.evaluate-requirements-for-custom-computer-vision-api.badge
+  type: badge
+  title: Evaluate the requirements for implementing the Custom Vision APIs
+  summary: Evaluate the requirements for implementing the Custom Vision APIs
+  iconUrl: /learn/achievements/data-ai/evaluate-the-custom-computer-vision-apis.svg
+- uid: learn.wwl.extract-insights-from-videos-with-video-indexer-service.badge
+  type: badge
+  title: Extract insights from videos with the Video Indexer service
+  summary: Extract insights from videos with the Video Indexer service
+  iconUrl: /learn/achievements/extract-insights-from-videos-with-the-video-indexer-service.svg
+- uid: learn.data-ai.evaluate-text-with-language-services.trophy
+  type: trophy
+  title: Evaluate text with Azure Cognitive Language Services
+  summary: Learn how to use Cognitive Language Services to analyze text, determine intent, detect adult themes, and process natural language input.
+  iconUrl: /learn/achievements/data-ai/evaluate-text-with-language-services.svg
+- uid: learn.data-ai.create-bots-with-the-azure-bot-service.trophy
+  type: trophy
+  title: Create Intelligent Bots with the Azure Bot Service
+  summary: Allowing customers to interact with computer applications in a conversational way using text, graphics, or speech, can be realized using Bots. It may be a simple question and answer dialog, or a sophisticated bot that allows people to interact with services in an intelligent manner using pattern matching, state tracking and artificial intelligence techniques well integrated with existing business services. Learn how to build a chat bot and add intelligence to the Bot by integrating QnA Maker and LUIS.
+  iconUrl: /learn/achievements/data-ai/create-bots-with-the-azure-bot-service.svg
+- uid: learn.data-ai.create-and-publish-a-luis-model.badge
+  type: badge
+  title: Add conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
+  summary: In this module, we'll introduce you to Language Understanding Intelligent Service (LUIS) and show how to create a LUIS application.
+  iconUrl: /learn/achievements/data-ai/create-and-publish-a-luis-model.svg
+- uid: learn.wwl.build-chat-bot-with-azure-portal.badge
+  type: badge
+  title: Build a chat bot with the Azure portal
+  summary: Build a chat bot with the Azure portal
+  iconUrl: /learn/achievements/build-a-chat-bot-with-the-azure-portal.svg

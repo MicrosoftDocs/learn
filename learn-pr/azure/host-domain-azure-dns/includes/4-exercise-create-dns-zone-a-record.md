@@ -20,7 +20,7 @@ To create your DNS zone:
 
 1. Select **Create**.
 
-    ![Screenshot of DNS zone, with Create highlighted](../media/4-dnszonecreate.png)
+    ![Screenshot of DNS zone, with Create highlighted.](../media/4-dnszonecreate.png)
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -32,7 +32,7 @@ To create your DNS zone:
     | **Instance details** |
     |Name  |   The name needs to be unique in the sandbox. Use `wideworldimportsXXXX.com` where you replace the Xs with letters or numbers. |
 
-    ![Screenshot of Create DNS zone page](../media/4-creatednszone.png)
+    ![Screenshot of Create DNS zone page.](../media/4-creatednszone.png)
 
 1. Select **Review + create**.
 
@@ -54,7 +54,7 @@ The primary record to create is the A record. This record contains the pairing b
 
 1. On the **wideworldimportsXXXX.com - DNS zone** pane, in the upper menu bar, select **Record set**.
 
-    ![Screenshot of the DNS zone page, with + Record set highlighted](../media/4-add-a-record.png)
+    ![Screenshot of the DNS zone page, with + Record set highlighted.](../media/4-add-a-record.png)
 
 1. The **Add record set** pane appears. Enter the following values for each setting.
 
@@ -67,7 +67,7 @@ The primary record to create is the A record. This record contains the pairing b
     |TTL unit     |    Hours     |  This value can be seconds, minutes, hours, days, or weeks. Here, you're selecting hours.  |
     |IP Address    |    10.10.10.10     |  The IP address the record name resolves to. In a real-world scenario, you would enter the public IP address for your web server. |
 
-    ![Screenshot of Add record set](../media/4-arecord.png)
+    ![Screenshot of Add record set.](../media/4-arecord.png)
 
 1. Select **OK** to add the record to your zone.
 
@@ -97,6 +97,6 @@ Here's how to use `nslookup` to verify the DNS zone configuration.
 
 1. You should see that your host name `www.wideworldimportsXXXX.com` resolves to 10.10.10.10.
 
-   ![Screenshot of Cloud Shell, showing the nslookup results](../media/4-nslookup.png)
+   ![Screenshot of Cloud Shell, showing the nslookup results.](../media/4-nslookup.png)
 
 You have successfully set up a DNS zone and created an A record.

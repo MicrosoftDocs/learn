@@ -1,4 +1,4 @@
-![Polling-based web application](../media/serverless-app-polling-concept.png)
+![Polling-based web application.](../media/serverless-app-polling-concept.png)
 
 The application’s current architecture reports stock information by fetching changes from the server based on a timer. This design is often called a polling-based design.  
 

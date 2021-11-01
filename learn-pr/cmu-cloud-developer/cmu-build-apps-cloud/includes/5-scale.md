@@ -14,7 +14,7 @@ Horizontal scaling is a strategy where additional resources can be added to the 
 
 A few considerations that make this a challenging task are the spin-up time of an instance, the pricing model of the cloud service provider, and the potential loss in revenue from degrading quality of service (QoS) by not scaling out in time. As an example, let's consider the following load pattern: 
 
-![Sample request load pattern](../media/scale.png)
+![Sample request load pattern.](../media/scale.png)
 
 _Figure 6: Sample request load pattern_
 

@@ -17,7 +17,7 @@ You'll make an HTTP call to the Azure IoT Edge device that has the Azure Cogniti
 
     1. Click the **Add button**
 
-        ![The configured inbound port](../media/port-config.png)
+        ![The configured inbound port.](../media/port-config.png)
 
 1. Copy the public IP address of your edge device.
 

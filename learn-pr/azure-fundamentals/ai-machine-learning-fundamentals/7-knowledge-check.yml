@@ -26,7 +26,7 @@ quiz:
       explanation: "That's incorrect. Azure Bot Service will not help with prediction. It should be eliminated as a candidate."
     - content: "Azure Cognitive Services"
       isCorrect: false
-      explanation: "That's incorrect. The Personalizer service is part of Azure Cognitive Services and allows you to build recommendations to predict what a user might want.  It should not be eliminated as a candidate."
+      explanation: "That's incorrect. The Personalizer service is part of Azure Cognitive Services and allows you to build recommendations to predict what a user might want.  It should be eliminated as a candidate."
   - content: "You need to create a human-computer interface that uses natural language to answer customer questions. Which product option should you select as a candidate?"
     choices:
     - content: "Azure Machine Learning"

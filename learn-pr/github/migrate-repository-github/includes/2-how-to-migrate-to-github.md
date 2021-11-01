@@ -60,8 +60,8 @@ Learn more about [Setting up your project for healthy contributions](https://hel
 
 Once you have prepared your repository for migration, navigate to the **Code** tab of your GitHub repository. Use the **Import code** option to specify the source repository. 
 
-![Importing code to a GitHub repository](../media/2-import-code.png)
+![Importing code to a GitHub repository.](../media/2-import-code.png)
 
 The **GitHub Migrator tool** will take care of the rest.
 
-![GitHub Migrator tool](../media/2-github-migrator.png)
+![GitHub Migrator tool.](../media/2-github-migrator.png)

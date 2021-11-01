@@ -127,7 +127,7 @@ An empty Stream Analytics job is displayed as a skeleton query, with no inputs o
 
 1. Select **Save query**, and return to your job.
 
-    [![Screenshot showing the completed SQL logging query](../media/continuous-data-job-overview.png)](../media/continuous-data-job-overview.png#lightbox)
+    [![Screenshot showing the completed SQL logging query.](../media/continuous-data-job-overview.png)](../media/continuous-data-job-overview.png#lightbox)
 
 1. Select **Start**, and run your job.
 
@@ -139,7 +139,7 @@ An empty Stream Analytics job is displayed as a skeleton query, with no inputs o
 
 1. In the drop-down list, select **All apps**, and then select **Power BI**.
 
-    [![Screenshot showing the Power BI icon in the Office 365 portal](../media/continuous-outlook-power-bi.png)](../media/continuous-outlook-power-bi.png#lightbox)
+    [![Screenshot showing the Power BI icon in the Office 365 portal.](../media/continuous-outlook-power-bi.png)](../media/continuous-outlook-power-bi.png#lightbox)
 
 1. Open the workspace where you created the dataset. The workspace might be **My workspace** or one that you selected earlier and stored in your text file.
 
@@ -153,7 +153,7 @@ An empty Stream Analytics job is displayed as a skeleton query, with no inputs o
 
 1. Select **Custom Streaming Data** > **Next** and then, in the list of datasets, select **continuousDataset**.
 
-    [![Screenshot showing the selection of the Power BI dataset, for a tile](../media/continuous-power-bi-dataset.png)](../media/continuous-power-bi-dataset.png#lightbox)
+    [![Screenshot showing the selection of the Power BI dataset, for a tile.](../media/continuous-power-bi-dataset.png)](../media/continuous-power-bi-dataset.png#lightbox)
 
 1. For the first card, do the following:
 
@@ -184,7 +184,7 @@ An empty Stream Analytics job is displayed as a skeleton query, with no inputs o
 
     Are you able to correlate the contents temperatures from the app, shown in the console window, with the gauge in Power BI?
 
-    [![Image of a Power BI dashboard on a mobile phone](../media/continuous-data-phone-view-2.png)](../media/continuous-data-phone-view-2.png#lightbox)
+    [![Image of a Power BI dashboard on a mobile phone.](../media/continuous-data-phone-view-2.png)](../media/continuous-data-phone-view-2.png#lightbox)
 
 If you're seeing an active Power BI dashboard, similar to the one in the image, you've nearly completed this module. Great work.
 

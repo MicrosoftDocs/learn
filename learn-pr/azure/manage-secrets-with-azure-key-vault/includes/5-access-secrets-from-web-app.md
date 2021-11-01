@@ -4,7 +4,7 @@ Now that you know how enabling-managed identities for Azure resources creates an
 
 ## Read secrets in an ASP.NET Core app
 
-The Azure Key Vault API is a REST API that handles all management and usage of keys and vaults. Each secret in a vault has a unique URL, and secret values are retrieved with HTTP GET requests.
+Azure Key Vault API is a REST API that handles all management and usage of keys and vaults. Each secret in a vault has a unique URL, and secret values are retrieved with HTTP GET requests.
 
 The official Key Vault client for .NET Core is the `SecretClient` class in the Azure.Security.KeyVault.Secrets NuGet package; however, you don't need to use it directly. With ASP.NET Core's `AddAzureKeyVault` method, you can load all the secrets from a vault into the Configuration API at startup. This technique enables you to access all of your secrets by name using the same `IConfiguration` interface you use for the rest of your configuration. Apps that use `AddAzureKeyVault` require both **Get** and **List** permissions to the vault.
 
@@ -19,7 +19,7 @@ The official Key Vault client for .NET Core is the `SecretClient` class in the A
 
 ## Read secrets in a Node.js app
 
-The Azure Key Vault API is a REST API that handles all management and usage of keys and vaults. Each secret in a vault has a unique URL, and secret values are retrieved with HTTP GET requests.
+Azure Key Vault API is a REST API that handles all management and usage of keys and vaults. Each secret in a vault has a unique URL, and secret values are retrieved with HTTP GET requests.
 
 The official Key Vault client for Node.js apps is the `SecretClient` class in the `@azure/keyvault-secrets` npm package. Apps that include secret names in their configuration or code will generally only need to use its `getSecret` method, which loads a secret value given its name. `getSecret` requires your app's identity to have the **Get** permission on the vault. Apps designed to load all secrets from a vault will also use the `listPropertiesOfSecrets` method, which loads a list of secrets and requires the **List** permission.
 
@@ -52,7 +52,7 @@ To load the secret from our vault, you'll create a new ASP.NET Core web API, and
 
 ### Create the app
 
-In the Azure Cloud Shell, to create a new ASP.NET Core web API app and open it in the editor, run the following command.
+In Azure Cloud Shell, to create a new ASP.NET Core web API app and open it in the editor, run the following command.
 
 ```console
 dotnet new webapi -o KeyVaultDemoApp
@@ -60,7 +60,7 @@ cd KeyVaultDemoApp
 code .
 ```
 
-After the editor loads, to add the NuGet package containing `AddAzureKeyVault` and restore all of the app's dependencies, in the Azure Cloud Shell, run the following commands.
+After the editor loads, to add the NuGet package containing `AddAzureKeyVault` and restore all of the app's dependencies, in Azure Cloud Shell, run the following commands.
 
 ```console
 dotnet add package Azure.Identity
@@ -126,7 +126,7 @@ The only change from the starter code is the addition of `ConfigureAppConfigurat
 Next, the controller: Create a new file in the `Controllers` folder called `SecretTestController.cs` and paste the following code into it.
 
 > [!TIP]
-> To create a new file, use the `touch` command in the shell. In this case, use `touch Controllers/SecretTestController.cs`. To see it there, in the Files pane of the editor, click the refresh button.
+> To create a new file, use the `touch` command in Cloud Shell. In this case, run the `touch Controllers/SecretTestController.cs` command. To see it there, in the top right corner of the *Files* pane of the editor, select the Refresh icon.
 
 ```csharp
 using System;
@@ -172,7 +172,7 @@ namespace KeyVaultDemoApp.Controllers
 }
 ```
 
-Run `dotnet build` in the shell to make sure everything compiles. The app is ready to run &mdash; now let's get it into Azure!
+Run `dotnet build` in Cloud Shell to make sure everything compiles. The app is ready to run &mdash; now let's get it into Azure!
 
 ::: zone-end
 
@@ -182,7 +182,7 @@ We'll create a new web API with Express.js and use the `@azure/keyvault-secrets`
 
 ### Create the app
 
-In the Azure Cloud Shell terminal, to initialize a new Node.js app, install the needed packages, and open a new file in the editor, run the following code.
+In Azure Cloud Shell, to initialize a new Node.js app, install the needed packages, and open a new file in the editor, run the following code.
 
 ```console
 mkdir KeyVaultDemoApp

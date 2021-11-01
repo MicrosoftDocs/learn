@@ -19,7 +19,10 @@ iconUrl: /learn/achievements/use-watchlists-in-azure-sentinel.svg
 levels:
 - intermediate
 roles:
+- security-engineer
 - security-operations-analyst
+- identity-access-admin
+- ip-admin
 products:
 - azure
 - azure-sentinel

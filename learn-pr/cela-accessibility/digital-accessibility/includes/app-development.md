@@ -22,7 +22,7 @@ When designing keyboard navigation, examine your UI and think about these questi
 - If yes, do those groups contain another level of groups? For example, do menu items have sub-lists nested within them?
 - Among peer controls, will a user be able to navigate by tabbing around, or does your UI require special navigation, such as arrow keys?
 
-:::image type="content" source="../media/horizontal-app-navigation.png" alt-text="Horizontal app navigation icons":::
+:::image type="content" source="../media/horizontal-app-navigation.png" alt-text="Horizontal app navigation icons.":::
 
 Group of app menu elements/controls
 
@@ -37,7 +37,7 @@ The [Engineering Software for Accessibility](https://www.microsoft.com/download
 One of the built-in accessibility features in Windows is high contrast mode, which heightens the color contrast of text and images on the computer screen. For some people, increasing the contrast in colors
 reduces eyestrain, and makes it easier to read.
 
-:::image type="content" source="../media/calculator-light-and-dark.png" alt-text="Two calculator applications with high contrast color schemes":::
+:::image type="content" source="../media/calculator-light-and-dark.png" alt-text="Two calculator applications with high contrast color schemes.":::
 
 Calculators shown in light theme and high-contrast black theme
 
@@ -57,7 +57,7 @@ The ratios for large text do not have to be as great. For large text, the requir
 
 **Color combinations**: About 7 percent of males (and less than 1 percent of females) have some form of color deficiency. Users with colorblindness have problems distinguishing between certain colors, so color alone should never be used to convey status or meaning in an application. In other words, do not refer to the "red dot" on a screen. Instead, you can include an icon with a distinctive marking or shape that can be easily identified by a person with colorblindness. As for decorative images such as icons or backgrounds, color combinations should be chosen in a manner that maximizes the perception of the image by colorblind users.
 
-:::image type="content" source="../media/house-light-and-dark.png" alt-text="Examples of home icons with high color contrast and low color contrast":::
+:::image type="content" source="../media/house-light-and-dark.png" alt-text="Examples of home icons with high color contrast and low color contrast.":::
 
 Examples of an icon with high color contrast (21:1 ratio) and an icon with low color contrast (1:5 ratio)
 

@@ -4,25 +4,25 @@ What if you wanted to take a notebook you've created and use it in a presentatio
 
 1. Scroll up to the top of the notebook. Then select **View** -> **Cell Toolbar** -> **Slideshow**. This will display a **Slide Type** drop-down in each cell for specifying how individual cells behave during a slide show.
 
-    ![Toggling the Slide Type display](../media/6-slideshow-1.png)
+    ![Toggling the Slide Type display.](../media/6-slideshow-1.png)
 
     _Toggling the Slide Type display_
 
 1. Set the **Slide Type** for each markdown slide in the notebook to **Slide**. Set the **Slide Type** for each code cell to **Fragment**.
 
-    ![Specifying the slide type for individual cells](../media/6-slideshow-2.png)
+    ![Specifying the slide type for individual cells.](../media/6-slideshow-2.png)
 
     _Specifying the slide type for individual cells_
 
 1. Click the **Slideshow** button to play the slide show.
 
-    ![Starting the slide show](../media/6-slideshow-3.png)
+    ![Starting the slide show.](../media/6-slideshow-3.png)
 
     _Starting the slide show_
 
 1. Maximize the browser window (or switch the browser to full-screen mode if your browser supports it). Then use the arrow buttons in the lower-right corner of the page (or the left and right arrows keys on the keyboard) to navigate backward and forward in the slide show.
 
-    ![Viewing the slide show](../media/6-slideshow-4.png)
+    ![Viewing the slide show.](../media/6-slideshow-4.png)
 
     _Viewing the slide show_
 

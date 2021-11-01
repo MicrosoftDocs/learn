@@ -18,5 +18,5 @@ In this module, you'll:
 ## Prerequisites:
 
 - Experience using data types like `string`, `int`, `decimal`, `float`, and so on
-- Experience using arrays and the `for each` iteration statement
+- Experience using arrays and the `foreach` iteration statement
 - Experience using string interpolation to combine variable and literal values for output

@@ -6,7 +6,7 @@ In this unit, you'll learn how to use Azure Data Box Disk and the other devices 
 
 The following diagram shows the high-level steps for ordering a device from the Azure Data Box family:
 
-![Diagram that shows the high-level Azure Data Box workflow](../media/3-import-azure-data-box-process.png)
+![Diagram that shows the high-level Azure Data Box workflow.](../media/3-import-azure-data-box-process.png)
 
 For clarity, let's break out these workflow stages into discrete steps:
 

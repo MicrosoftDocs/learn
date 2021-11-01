@@ -44,7 +44,7 @@ Sometimes text contains profanities, which you might want to obscure or omit alt
 
 - **NoAction**: Profanities are translated along with the rest of the text.
 - **Deleted**: Profanities are omitted in the translation.
-- **Marked**: Profanities are indicated using the technique indicated in the **profanityMarker** parameter (if supplied). The default value for this parameter is **Asterisk**, which replaces characters in profanities with "*". As an alternative, you can specify a **profanityMarker** value of **Tag**, which cases profanities to be enclosed in XML tags.
+- **Marked**: Profanities are indicated using the technique indicated in the **profanityMarker** parameter (if supplied). The default value for this parameter is **Asterisk**, which replaces characters in profanities with "*". As an alternative, you can specify a **profanityMarker** value of **Tag**, which causes profanities to be enclosed in XML tags.
 
 For example, translating the English (**en**) text "JSON is &#x2587;&#x2587;&#x2587;&#x2587; great!" (where the blocked out word is a profanity) to French (**fr**) with a **profanityAction** of **Marked** and a **profanityMarker** of **Asterisk** produces the following result:
 

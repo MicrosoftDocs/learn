@@ -1,6 +1,5 @@
 ### YamlMime:LearningPath
 uid: learn.researcher-introduction-to-cloud-computing
-hidden: true
 metadata:
   title: "Azure for Researchers part 1: Introduction to Cloud Computing"
   description: When you're working on research projects, it is helpful to have a basic understanding of cloud computing concepts. In this learning path, you'll study the general terminology and services that of cloud computing, which should be useful to you when you're working on research tasks. You'll learn how to create virtual machine and how to use it, and how to pick the best storage solution to persist your data.

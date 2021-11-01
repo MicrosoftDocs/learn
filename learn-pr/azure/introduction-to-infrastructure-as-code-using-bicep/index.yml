@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to infrastructure as code using Bicep
-summary: Describe the benefits of using infrastructure as code, Azure Resource Manager, and Bicep to quickly and confidently scale your cloud deployments. Determine the types of deployments for which Bicep is a good imperative deployment tool.
+summary: Describe the benefits of using infrastructure as code, Azure Resource Manager, and Bicep to quickly and confidently scale your cloud deployments. Determine the types of deployments for which Bicep is a good declarative deployment tool.
 abstract: |
   After completing this module, you'll be able to:
     - Describe the benefits of infrastructure as code

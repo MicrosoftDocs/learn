@@ -12,6 +12,6 @@ To delete the resource group:
 
 1. Select **Delete resource group**.
 
-    ![Screenshot showing the Delete resource group menu](../media/7-cleanup.png)
+    ![Screenshot showing the Delete resource group menu.](../media/7-cleanup.png)
 
 1. Enter the name of the resource group, and then select **Delete**. Azure deprovisions all related resources for you.

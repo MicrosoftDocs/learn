@@ -18,7 +18,7 @@ The name should give away the idea. You drag and drop components onto a _canvas_
 
 Power Apps gives you the option of specifying **Tablet** or **Phone** for your canvas app. You then get a powerful, but slightly intimidating, user interface. You have lots of options, as shown here:
 
-[![Screenshot showing the Power Apps user interface for creating a canvas app](../media/continuous-data-power-apps-canvas.png)](../media/continuous-data-power-apps-canvas.png#lightbox)
+[![Screenshot showing the Power Apps user interface for creating a canvas app.](../media/continuous-data-power-apps-canvas.png)](../media/continuous-data-power-apps-canvas.png#lightbox)
 
 The key to canvas apps is they are user-interface driven. Canvas apps start with your user experience, letting you select a target of phone, tablet, or web. You can then select and connect to data from over 200 different sources.
 
@@ -38,11 +38,11 @@ Power BI is an easy-to-use dashboard-building technology. You create dashboards 
 
 Power BI has a built-in conversion feature that lets any dashboard display content in a format that's suitable for a mobile phone.
 
-[![Image showing desktop, tablet, and mobile examples of a Power BI dashboard](../media/continuous-data-power-bi-layout.png)](../media/continuous-data-power-bi-layout.png#lightbox)
+[![Image showing desktop, tablet, and mobile examples of a Power BI dashboard.](../media/continuous-data-power-bi-layout.png)](../media/continuous-data-power-bi-layout.png#lightbox)
 
 A fifth type of tile, to accommodate custom streaming data, is the one we're most interested in for our scenario. This tile is the most powerful, because it accepts data from any available _dataset_. Power BI datasets take input from many sources, which can range from, for example, a simple Excel spreadsheet to more a complex Azure Stream Analytics job.
 
-[![Screenshot showing the five types of Power BI dashboard tiles](../media/continuous-data-power-bi-tiles.png)](../media/continuous-data-power-bi-tiles.png#lightbox)
+[![Screenshot showing the five types of Power BI dashboard tiles.](../media/continuous-data-power-bi-tiles.png)](../media/continuous-data-power-bi-tiles.png#lightbox)
 
 It takes only minutes to build a functioning Power BI dashboard, as you'll see in the next unit.
 

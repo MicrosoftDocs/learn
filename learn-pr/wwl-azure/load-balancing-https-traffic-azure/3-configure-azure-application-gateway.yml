@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.load-balancing-https-traffic-azure.configure-azure-application-gateway
+title: Configure Azure Application Gateway
+metadata:
+  title: Configure Azure Application Gateway
+  description: "Configure Azure Application Gateway"
+  ms.date: 08/09/2021
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 25
+content: |
+  [!include[](includes/3-configure-azure-application-gateway.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You are configuring Azure Application Gateway for your organization and you want to ensure that users don't experience performance degradation during peak times. Which setting should you configure?"
+    choices:
+    - content: "Autoscaling"
+      isCorrect: true
+      explanation: "Correct,  With autoscaling enabled, the Application Gateway scales up or down based on application traffic requirements."
+    - content: "Manual scaling"
+      isCorrect: false
+      explanation: "Incorrect, With Manual scaling enabled, the gateway won't autoscale. If there is more traffic than the Application Gateway can handle, it could result in traffic loss."
+    - content: "Health probes"
+      isCorrect: false
+      explanation: "Incorrect, Health probes monitor the health of all resources in the back-end pool and automatically removes any resource considered unhealthy from the pool."
+  - content: "What is a listener?"
+    choices:
+    - content: "A listener is an entity that checks for incoming connection requests."
+      isCorrect: true
+      explanation: "Correct,  A listener is a logical entity that checks for incoming connection requests by using the port, protocol, host, and IP address."
+    - content: "A listener is an entity that routes traffic based on basic or path-based rules."
+      isCorrect: false
+      explanation: "Incorrect, A routing rule is an entity that routes traffic based on basic or path-based rules."
+    - content: "A listener is a collection of servers that respond to requests."
+      isCorrect: false
+      explanation: "Incorrect, A backend pool"

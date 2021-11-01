@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-application-gateway.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/27/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which criteria does Application Gateway use to route requests to a web server?"
+    choices:
+    - content: "The hostname, port, and path in the URL of the request."
+      isCorrect: true
+      explanation: "That's correct. An Application Gateway uses the hostname, port and URL path."
+    - content: "The region in which the servers hosting the web application are located."
+      isCorrect: false
+      explanation: "That's incorrect. The Application Gateway does not directly use the region to route requests."
+    - content: "The users authentication information."
+      isCorrect: false
+      explanation: "That's incorrect. The Application Gateway does not consider user authentication information when routing requests."
+  - content: "Which load balancing strategy does the Application Gateway implement?"
+    choices:
+    - content: "Distributes requests to each available server in a backend pool in turn, round-robin."
+      isCorrect: true
+      explanation: "That's correct. The Application Gateway distributes requests using round-robin."
+    - content: "Distributes requests to the server in the backend pool with the lightest load."
+      isCorrect: false
+      explanation: "That's incorrect. The Application gateway does not consider workloads."
+    - content: "Polls each server in the backend pool in turn, and sends the request to the first server that responds."
+      isCorrect: false
+      explanation: "That's incorrect. The Application Gateway does not use polling."
+  - content: "The web team is installing the Application Gateway. They want to ensure incoming requests are checked for common security threats like cross-site scripting and crawlers. To address the concerns what should be done?"
+    choices:
+    - content: "Install an internal load balancer"
+      isCorrect: false
+      explanation: "That's incorrect. An internal load balancer would not be the best choice in this scenario."
+    - content: "Install Azure Firewall"
+      isCorrect: false
+      explanation: "That's incorrect. An Azure Firewall would not be the best choice in this scenario."
+    - content: "Install the Web Application Firewall"
+      isCorrect: true
+      explanation: "That's correct. The Web Application Firewall is an optional component that handles incoming requests before they reach a listener. The Web Application Firewall checks each request for many common threats, based on the Open Web Application Security Project."

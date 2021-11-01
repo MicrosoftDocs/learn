@@ -79,7 +79,11 @@ The second version of the `Next()` method specifies the maximum value as an uppe
 
 The third version of the `Next()` method specifies both the minimum and maximum values, so in this case, we can expect a random value between `50` and `100`.
 
-Learn what a method can do, whether it has overloaded versions, which data types it accepts as input parameters, and what it returns?
+Here, we've described:
+- What a method can do
+- Whether it has overloaded versions
+- Which data types it accepts as input parameters
+- Whether it has a return value, and if so, what it returns.
 
 ### Use Intellisense
 

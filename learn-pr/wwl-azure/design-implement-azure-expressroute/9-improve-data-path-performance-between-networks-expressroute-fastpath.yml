@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-azure-expressroute.improve-data-path-performance-between-networks-expressroute-fastpath
+title: Improve data path performance between networks with ExpressRoute FastPath
+metadata:
+  title: Improve data path performance between networks with ExpressRoute FastPath
+  description: "Improve data path performance between networks with ExpressRoute FastPath"
+  ms.date: 08/02/2021
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-improve-data-path-performance-between-networks-expressroute-fastpath.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How does ExpressRoute FastPath send network traffic?"
+    choices:
+    - content: "Directly to virtual machines in the virtual network."
+      isCorrect: true
+      explanation: "Correct. FastPath sends network traffic directly to virtual machines in the virtual network, bypassing the gateway."
+    - content: "Through the gateway to Virtual machines."
+      isCorrect: false
+      explanation: "Incorrect. ExpressRoute FastPath does not send traffic through the gateway to virtual machines."
+    - content: "Through the public internet."
+      isCorrect: false
+      explanation: "Incorrect. ExpressRoute FastPath does not send traffic through the public internet."
+  - content: "A network has multiple VNets peered with the VNet that is connected to ExpressRoute. How should the ExpressRoute FastPath deployment be modified?"
+    choices:
+    - content: "Connect all the virtual networks to the ExpressRoute FastPath circuit directly."
+      isCorrect: true
+      explanation: "Correct. To avoid traffic being routed through the VNet gateways, connect all the VNets to ExpressRoute FastPath circuit directly."
+    - content: "Connect the VNet gateways to ExpressRoute FastPath."
+      isCorrect: false
+      explanation: "Incorrect. The VNet gateways still support VNet-to-Vnet peering and should not be connected directly to FastPath."
+    - content: "Modify the VNet peering configuration."
+      isCorrect: false
+      explanation: "Incorrect. The VNet gateways can still support VNet-to-Vnet peering and do not have to be modified."

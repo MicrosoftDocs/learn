@@ -43,13 +43,13 @@ After you've specified the *VPN type* for the virtual network gateway, it can't 
 
 All site-to-site gateway connections use an IPsec/IKE VPN tunnel to create a connection between Azure and your on-premises network. For a site-to-site connection to work, you'll need an on-premises VPN device with a publicly accessible IP address.
 
-![Diagram of a VPN Site-to-Site connection between the on-premises network and the Azure virtual network](../media/4-s2s-connection.svg)
+![Diagram of a VPN Site-to-Site connection between the on-premises network and the Azure virtual network.](../media/4-s2s-connection.svg)
 
 ### Point-to-site
 
 A point-to-site gateway connection creates a secured connection between an individual device and your Azure virtual network. This gateway type is suited to remote workers; for example, users attending a conference or working from home. A point-to-site connection doesn't require a dedicated on-premises VPN device.
 
-![Diagram of a VPN point-to-site connection between the on-premises network and the Azure virtual network](../media/4-p2s-connection.svg)
+![Diagram of a VPN point-to-site connection between the on-premises network and the Azure virtual network.](../media/4-p2s-connection.svg)
 
 ### Benefits
 
@@ -78,7 +78,7 @@ The merging of the VPN connection and ExpressRoute improves the resiliency of yo
 
 The following diagram illustrates how to connect your on-premises network to Azure by using ExpressRoute with a VPN failover. The chosen topology in this solution is a VPN-based, site-to-site connection with high traffic flow.
 
-![Diagram of ExpressRoute reference architecture](../media/4-expressroute-vpn-failover-architecture.svg)
+![Diagram of ExpressRoute reference architecture.](../media/4-expressroute-vpn-failover-architecture.svg)
 
 In this model, all network traffic routes through the ExpressRoute private connection. When connectivity is lost on the ExpressRoute circuit, the gateway subnet automatically fails over to the site-to-site VPN gateway circuit. This scenario is indicated by the dotted line from the gateway to the VPN gateway in the Azure virtual network.
 
@@ -107,7 +107,7 @@ When you implement an ExpressRoute with VPN failover architecture, consider the 
 
 The hub-spoke network topology allows you to structure the workloads that are carried out by your servers. It uses a single virtual network as the hub, which is also connected to your on-premises network through either VPN or ExpressRoute. The spokes are other virtual networks that are peered with the hub. Each spoke can be assigned specific workloads, and the hub is used for shared services.
 
-![Diagram of hub-spoke architecture](../media/4-hub-spoke-architecture.svg)
+![Diagram of hub-spoke architecture.](../media/4-hub-spoke-architecture.svg)
 
 You can implement the hub and each spoke in separate subscriptions or resource groups and then peer them together.
 

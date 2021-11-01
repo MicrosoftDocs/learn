@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-java-azure.logging-exercise
+title: Exercise - logging
+metadata:
+  unitType: exercise
+  title: Exercise - logging
+  description: We look at exercises for logging and Log Analytics
+  ms.date: 07/07/2021
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-logging-exercise.md)]

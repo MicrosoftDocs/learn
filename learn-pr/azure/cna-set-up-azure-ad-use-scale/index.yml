@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azure.cna-set-up-apps-use-scale
+metadata:
+  title: Authenticate and authorize multi-tenant apps using Azure Active Directory (Azure AD)
+  description: Azure AD enables you to improve the functionality of cloud-native apps in multitenant scenarios.
+  ms.date: 05/19/2021
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Authenticate and authorize multi-tenant apps using Azure Active Directory (Azure AD)
+summary: Azure AD enables you to improve the functionality of cloud-native apps in multitenant scenarios.
+abstract: |
+  In this module, you'll:
+  - Describe the characteristics and functionality of Azure Active Directory (Azure AD)
+  - Implement Azure AD authentication for cloud-native applications
+prerequisites: | 
+  Before working on this module, it's helpful but not required that you have:
+  - A basic understanding of cloud computing
+  - Basic familiarity with Azure
+  - Basic familiarity with Azure AD
+  - Basic familiarity with programming concepts
+iconUrl: /learn/achievements/cna-set-up-azure-ad-use-scale.svg
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- azure
+- azure-active-directory
+units:
+- learn.azure.cna-set-up-apps-use-scale.1-introduction
+- learn.azure.cna-set-up-apps-use-scale.2-define-azure-ad
+- learn.azure.cna-set-up-apps-use-scale.3-exercise-set-up-azure-ad
+- learn.azure.cna-set-up-apps-use-scale.4-azure-ad-app-development
+- learn.azure.cna-set-up-apps-use-scale.5-exercise-implement-multitenant-data
+- learn.azure.cna-set-up-apps-use-scale.6-manage-monitor-azure-ad-apps
+- learn.azure.cna-set-up-apps-use-scale.7-exercise-integrate-next-js-web-app-azure-ad
+- learn.azure.cna-set-up-apps-use-scale.8-knowledge-check
+- learn.azure.cna-set-up-apps-use-scale.9-summary
+badge:
+  uid: learn.azure.cna-set-up-apps-use-scale.badge

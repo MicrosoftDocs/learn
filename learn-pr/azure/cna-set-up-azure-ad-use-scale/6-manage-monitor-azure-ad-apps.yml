@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.cna-set-up-apps-use-scale.6-manage-monitor-azure-ad-apps
+title: Manage and monitor Azure AD apps 
+metadata:
+  title: Manage and monitor Azure AD apps
+  description: Manage and monitor Azure AD apps
+  ms.date: 05/19/2021
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-manage-monitor-azure-ad-apps.md)]

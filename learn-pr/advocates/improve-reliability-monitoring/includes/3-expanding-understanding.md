@@ -5,7 +5,7 @@ possibilities that may expand your understanding of reliability.
 
 Let's look at some aspects of reliability now:
 
-:::image type="content" source="../media/diagram-empty.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to empty circles at the end of each spoke":::
+:::image type="content" source="../media/diagram-empty.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to empty circles at the end of each spoke.":::
 
 ## Availability
 

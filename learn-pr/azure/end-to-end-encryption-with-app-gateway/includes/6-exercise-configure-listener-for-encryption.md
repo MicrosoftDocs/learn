@@ -2,7 +2,7 @@ Now that you've configured the certificates for Azure Application Gateway and th
 
 In this unit, you'll set up the listener with port 443 and with the SSL certificate that you created in the first exercise. The following image highlights the elements you'll set up in this exercise.
 
-![Diagram that highlights the elements (frontend port, SSL certificate for Application Gateway, listener, and rule) created in this exercise](../media/6-exercise-elements.svg)
+![Diagram that highlights the elements (frontend port, SSL certificate for Application Gateway, listener, and rule) created in this exercise.](../media/6-exercise-elements.svg)
 
 ## Configure the listener
 

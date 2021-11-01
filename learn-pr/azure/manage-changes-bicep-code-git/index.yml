@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azure.manage-changes-bicep-code-git
+metadata:
+  moduleType: standard
+  title: Manage changes to your Bicep code by using Git
+  description: Learn how to use Git version control with your Bicep files and infrastructure as code.
+  ms.date: 07/08/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage changes to your Bicep code by using Git
+summary: |
+  Track of changes to your Bicep code and view the history of the files you've changed. Use branches to develop multiple versions of your code at the same time. Publish your repository to support collaboration.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain the benefits of version control and Git
+    - Commit Bicep templates to a Git repository and view the history of your changes
+    - Create and merge a branch
+    - Publish a Git repository to GitHub or Azure Repos so that you can collaborate with others
+prerequisites: |
+  You should be familiar with creating basic Bicep templates, including modules.
+  
+  To follow along with the exercises in the module, you'll need [Visual Studio Code](https://code.visualstudio.com), installed locally.
+iconUrl: /learn/achievements/manage-changes-bicep-code-git.svg
+levels:
+  - intermediate
+roles:
+  - developer
+products:
+- azure
+units:
+- learn.azure.manage-changes-bicep-code-git.introduction
+- learn.azure.manage-changes-bicep-code-git.understand-git
+- learn.azure.manage-changes-bicep-code-git.exercise-initialize-git-repository
+- learn.azure.manage-changes-bicep-code-git.commit-files-view-history
+- learn.azure.manage-changes-bicep-code-git.exercise-commit-files-view-history
+- learn.azure.manage-changes-bicep-code-git.branch-merge-changes
+- learn.azure.manage-changes-bicep-code-git.exercise-branch-merge-changes
+- learn.azure.manage-changes-bicep-code-git.publish-repository-enable-collaboration
+- learn.azure.manage-changes-bicep-code-git.exercise-publish-repository
+- learn.azure.manage-changes-bicep-code-git.knowledge-check
+- learn.azure.manage-changes-bicep-code-git.summary
+badge:
+  uid: learn.azure.manage-changes-bicep-code-git.badge

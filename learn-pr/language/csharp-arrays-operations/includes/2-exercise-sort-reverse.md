@@ -18,6 +18,7 @@ foreach (var pallet in pallets)
     Console.WriteLine($"-- {pallet}");
 }
 ```
+
 Focus on the line of code `Array.Sort(pallets);`.  Here we're using the `Sort()` method of the `Array` class to sort the items in the array alphanumerically.
 
 Now, run the code and view the following output.
@@ -47,12 +48,13 @@ foreach (var pallet in pallets)
 Console.WriteLine("");
 Console.WriteLine("Reversed...");
 Array.Reverse(pallets);
-foreach (var pallete in pallets)
+foreach (var pallet in pallets)
 {
-    Console.WriteLine($"-- {pallete}");
+    Console.WriteLine($"-- {pallet}");
 }
 ```
-Focus on the line of code `Array.Reverse(pallets);`.  Here we're using the `Reverse()` method of the `Array` class to reverse the order of items.
+
+Focus on the line of code `Array.Reverse(pallets);`. Here, we're using the `Reverse()` method of the `Array` class to reverse the order of items.
 
 Now, run the code and compare the reversed list against the sorted list.
 

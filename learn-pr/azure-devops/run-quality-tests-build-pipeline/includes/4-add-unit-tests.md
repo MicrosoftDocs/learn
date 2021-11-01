@@ -136,7 +136,7 @@ It's a good idea to run all tests locally before you submit any tests to the pip
 
     You see from the output that a TRX file is created in the **TestResults** directory.
 
-    A TRX file is an XML document that contains the results of a test run. It's a popular format for NUnit tests because Visual Studio and other tools can help you visualize the results.
+    A TRX file is an XML document that contains the results of a test run. It's a popular format for test results because Visual Studio and other tools can help you visualize the results.
 
     Later, you'll see how Azure Pipelines can help you visualize and track your tests' results as they run through the pipeline.
 

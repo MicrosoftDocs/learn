@@ -31,7 +31,7 @@ Vue.createApp({
             names: ['Susan', 'Peter', 'Bill' ]
         }
     }
-}).mount('demo');
+}).mount('#demo');
 ```
 
 If you want to display the items, you could use the following code:

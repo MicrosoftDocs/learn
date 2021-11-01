@@ -28,7 +28,7 @@ When a database is replicated, the throughput and storage are replicated equally
 
 1. Click **Create a resource** > **Databases** > **Azure Cosmos DB**.
 
-   ![The Azure portal Databases pane](../media/2-global-distribution/2-create-nosql-db-databases-json-tutorial.png)
+   ![The Azure portal Databases pane.](../media/2-global-distribution/2-create-nosql-db-databases-json-tutorial.png)
 
 1. On the **Create Azure Cosmos DB Account** page, enter the settings for the new Azure Cosmos DB account, including the location.
 
@@ -47,21 +47,21 @@ When a database is replicated, the throughput and storage are replicated equally
 
 1. Click **Review + Create**.
 
-    ![The new account page for Azure Cosmos DB](../media/2-global-distribution/2-azure-cosmos-db-create-new-account.png)
+    ![The new account page for Azure Cosmos DB.](../media/2-global-distribution/2-azure-cosmos-db-create-new-account.png)
 
 1. After the settings are validated, click **Create** to create the account.
 
 1. The account creation takes a few minutes. Wait for the portal to display the notification that the deployment succeeded and click the notification.
 
-    ![Notification alert](../media/2-global-distribution/2-azure-cosmos-db-notification.png)
+    ![Notification alert.](../media/2-global-distribution/2-azure-cosmos-db-notification.png)
 
 1. In the notification window, click **Go to resource**.
 
-    ![Go to resource](../media/2-global-distribution/2-azure-cosmos-db-go-to-resource.png)
+    ![Go to resource.](../media/2-global-distribution/2-azure-cosmos-db-go-to-resource.png)
 
     The portal displays the **Congratulations! Your Azure Cosmos DB account was created** page.
 
-    ![The Azure portal Notifications pane](../media/2-global-distribution/2-azure-cosmos-db-account-created.png)
+    ![The Azure portal Notifications pane.](../media/2-global-distribution/2-azure-cosmos-db-account-created.png)
 
 ## Replicate data in multiple regions
 
@@ -74,7 +74,7 @@ Let's now replicate your database closest to your global users in Los Angeles, N
 
     The page will display an **Updating** message while the data is written to the new regions. Data in the new regions will be available within 30 minutes.
 
-    ![Click the regions in the map to add them](../media/2-global-distribution/2-global-replication.gif)
+    ![Click the regions in the map to add them.](../media/2-global-distribution/2-global-replication.gif)
 
 ## Summary
 

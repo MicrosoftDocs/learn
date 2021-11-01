@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Multiple-choice questions
+  ms.date: 05/25/2021
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Decision trees are classification models that…'
+    choices:
+    - content: "Typically have excellent generalizability to test sets"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Can only make binary (true/false) predictions"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Typically overfit their training data"
+      isCorrect: true
+      explanation: "Correct."
+  - content: 'What does selecting model architectures mean?'
+    choices:
+    - content: "Picking a model’s parameter values before training"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Deciding how a model will be structured"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Selecting a 32-bit or 64-bit compilation option"
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: 'Hyperparameter selection can help give optimal models and…'
+    choices:
+    - content: "Refers to selecting values that change how the learning process works"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Often requires experimentation to get right"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct."

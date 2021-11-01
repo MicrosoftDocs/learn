@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.configure-azure-policy
+metadata:
+  title: Configure Azure policy
+  description: "You will learn how to configure Azure Policy to implement compliance requirements."
+  ms.date: 07/26/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure Azure policy
+summary: You will learn how to configure Azure Policy to implement compliance requirements.
+abstract: |
+  After completing this module, you will be able to:
+  - Create management groups to target policies and spend budgets.
+  - Implement Azure policy with policy and initiative definitions.
+  - Scope Azure policies and determine compliance.
+prerequisites: |
+  None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.configure-azure-policy.introduction
+- learn.wwl.configure-azure-policy.create-management-groups
+- learn.wwl.configure-azure-policy.implement-azure-policies
+- learn.wwl.configure-azure-policy.create-azure-policies
+- learn.wwl.configure-azure-policy.create-policy-definitions
+- learn.wwl.configure-azure-policy.create-initiative-definitions
+- learn.wwl.configure-azure-policy.scope-initiative-definition
+- learn.wwl.configure-azure-policy.determine-compliance
+- learn.wwl.configure-azure-policy.knowledge-check
+- learn.wwl.configure-azure-policy.summary-resources
+badge:
+  uid: learn.wwl.configure-azure-policy.badge

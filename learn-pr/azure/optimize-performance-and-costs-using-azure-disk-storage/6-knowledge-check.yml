@@ -16,38 +16,38 @@ quiz:
  
   - content: "An administrator must select the disk type that provides the highest IOPS for a new VM. Which disk type should they use, assuming their region supports all disk types?"
     choices:
-    - content: "Ultra Disks"
+    - content: "Ultra Disk Storage"
       isCorrect: true
-      explanation: "Ultra SSDs offer the best performance of disk types on Azure."
+      explanation: "Ultra Disk Storage disks offer the best performance of disk types on Azure."
     - content: "Standard HDD"
       isCorrect: false
-      explanation: "Standard HDDs are a cost-effective solution, but they don't perform as well as Premium SSDs or Ultra Disks."
+      explanation: "Standard HDD disks are a cost-effective solution, but they don't perform as well as Premium SSD disks or Ultra Disk Storage."
     - content: "Premium SSD"
       isCorrect: false
-      explanation: "Premium SSDs provide high performance, but don't offer the best performance of all the available disk types in Azure."
+      explanation: "Premium SSD disks provide high performance, but they don't offer the best performance of all the available disk types in Azure."
  
-  - content: "You’re running an application that requires 15,000 IOPS on an Azure VM. You’ve provisioned one with the Standard_D8s_v3 tier. It provides 12,800 IOPS; a P30 operating-system disk with 5,000 IOPS; and two P30 data disks with 5,000 IOPS each. Which of the following is true?"
+  - content: "You’re running an application that requires 15,000 IOPS on an Azure VM. You’ve provisioned one VM with the Standard_D8s_v3 tier. It provides 12,800 IOPS, a P30 operating system disk with 5,000 IOPS, and two P30 data disks with 5,000 IOPS each. Which of the following statements is true?"
     choices:
     - content: "You’ve met the application’s demands."
       isCorrect: false
-      explanation: "The maximum IOPS that application will get is limited by the virtual machine limits and is 12,800 IOPS."
-    - content: "VM IO capping prevents the application from receiving the demanding IOPS."
+      explanation: "The maximum IOPS the application will get is limited by the VM limits and is 12,800 IOPS."
+    - content: "VM I/O capping prevents the application from receiving the demanding IOPS."
       isCorrect: true
-      explanation: "The application is capped by the virtual machine limits and must allocate the allotted 12,800 IOPS."
-    - content: "Disk IO capping prevents the application from receiving the demanding IOPS."
+      explanation: "The application is capped by the VM limits and must allocate the allotted 12,800 IOPS."
+    - content: "Disk I/O capping prevents the application from receiving the demanding IOPS."
       isCorrect: false
-      explanation: "All attached disks are P30 disks that can handle 5,000 IOPS. So, they respond back with their requested amounts, but in this case VM IO capping prevent application to achieve demanding IOPS."
+      explanation: "All attached disks are P30 disks, which can handle 5,000 IOPS. So, they respond back with their requested amounts, but in this case, VM I/O capping prevents the application from achieving demanding IOPS."
  
-  - content: "An administrator is creating an Azure VM using Premium SSDs to run a marketing application. You’ve scheduled a planned marketing event for which you require a sustained increase in disk performance. Which of the performance-scaling options should the administrator use to meet the application requirements?"
+  - content: "An administrator is creating an Azure VM by using Premium SSD disks to run a marketing application. You’ve scheduled a planned marketing event, for which you require a sustained increase in disk performance. Which of the performance-scaling options should the administrator choose to meet the application requirements?"
     choices:
     - content: "Use disk bursting."
       isCorrect: false
-      explanation: "Although the administrator can use disk bursting to improve the application performance, this is usually used for unplanned scenarios."
+      explanation: "Although the administrator can use disk bursting to improve the application's performance, this option usually is used for unplanned scenarios."
     - content: "Change the performance tiers."
       isCorrect: true
-      explanation: "An administrator can change the performance tier on Ultra and Premium SSD disks when they need to meet a higher performance demand."
+      explanation: "An administrator can change the performance tier on Ultra Disk Storage and Premium SSD disks when they need to meet a higher performance demand."
     - content: "Use read/write caching on the disk."
       isCorrect: false
-      explanation: "Although caching generally improves the IOPS performance, it can't be used in scenarios when you need to change the performance tier for the disk."
+      explanation: "Although caching generally improves IOPS performance, it can't be used in scenarios in which you need to change the performance tier for the disk."
 content: |
   [!include[](includes/6-knowledge-check.md)]

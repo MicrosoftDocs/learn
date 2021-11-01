@@ -88,7 +88,7 @@ coupon-86b5766658-qbb6h            0/1     Terminating         2          38m
 
 When all the health checks return to a healthy status, sign out of run the app, then refresh your browser. Test the application as before to validate your changes were successful. When checking out, apply a coupon code `DISC-15` and observe a $15 USD discount is applied, and then place the order.
 
-:::image type="content" source="../media/coupon.png" alt-text="Shopping basket with discount coupon DISC-15 entered" lightbox="../media/coupon.png" border="true":::
+:::image type="content" source="../media/coupon.png" alt-text="Shopping basket with discount coupon DISC-15 entered." lightbox="../media/coupon.png" border="true":::
 
 ## Use the Azure Cosmos DB Data Explorer from the Azure portal
 

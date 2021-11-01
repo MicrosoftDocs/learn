@@ -2,11 +2,11 @@ After you have generalized the virtual machine, you can create an image. The ima
 
 To create an image in the Azure portal, go to the page for the virtual machine and select **Capture**:
 
-![Image of the virtual machine page in the Azure portal](../media/3-virtual-machine.png)
+![Image of the virtual machine page in the Azure portal.](../media/3-virtual-machine.png)
 
 On the **Create image** page that follows, give your image a name and specify a resource group in which to store the image. You can optionally remove the virtual machine after the image is created. Additionally, you can create resilient images that are backed by zone-redundant storage. This feature provides increased availability for your images. To enable this feature, select **On** for **Zone resiliency**.
 
-![Screenshot of the Create image page in the Azure portal](../media/3-create-image.png)
+![Screenshot of the Create image page in the Azure portal.](../media/3-create-image.png)
 
 > [!IMPORTANT]
 > When you create a virtual machine image in this way, the original virtual machine becomes unusable. You can't restart it. Instead, you must create a new virtual machine from the image, as described later in this unit.
@@ -68,6 +68,6 @@ Rebuilding a virtual machine from a set of VHD snapshots is a two-step process:
 
 1. For each snapshot, create a new managed disk. Specify the snapshot as the source of the managed disk. The simplest way is to use the Azure portal, as shown in the following image:
 
-   ![Screenshot of the Create Manage Disk page in the Azure portal](../media/3-managed-disk.png)
+   ![Screenshot of the Create Manage Disk page in the Azure portal.](../media/3-managed-disk.png)
 
 1. Create the new virtual machine by using the managed disk. You can do this through PowerShell, the Azure CLI, or the portal.

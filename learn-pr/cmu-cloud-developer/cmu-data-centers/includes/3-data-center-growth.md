@@ -2,7 +2,7 @@ Over the past few decades, datacenters have grown both in size (in terms of the 
 
 The following figure shows a view of a datacenter owned by Google.
 
-![Google datacenter](../media/google-data-center.png)
+![Google datacenter.](../media/google-data-center.png)
 
 _Figure 17: Google datacenter_ ([Source](http://www.google.com/about/datacenters/))
 
@@ -18,7 +18,7 @@ Hence, although the power efficiency of individual components has improved over 
 
 A large datacenter now consumes several megawatts of power, which is roughly the same power requirements of a small town.
 
-![Trends in power density](../media/trends-power-density.png)
+![Trends in power density.](../media/trends-power-density.png)
 
 _Figure 18: Trends in power density_
 

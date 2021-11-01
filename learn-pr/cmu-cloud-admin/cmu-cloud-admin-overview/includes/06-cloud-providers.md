@@ -6,7 +6,7 @@ AWS is a market leader in several cloud-computing segments, particularly in the 
 
 AWS has data centers all over the world. It divides the world into 69 availability zones and 22 geographic regions (Figure 1.10). Each region provides full redundancy and connectivity to the network. Each availability zone constitutes a fully isolated partition of the AWS infrastructure consisting of discrete data centers with redundant power, networking, and connectivity.
 
-![Figure 1.10: Amazon Web Services regions](../media/aws-regions.png)
+![Figure 1.10: Amazon Web Services regions.](../media/aws-regions.png)
 
 _Figure 1.10: Amazon Web Services regions<sup>[2][^2]</sup>._
 
@@ -26,7 +26,7 @@ AWS comprises more than 100 services spread between IaaS, PaaS, and SaaS. Some o
 
 Microsoft Azure is the fastest growing cloud platform in the market, with impressive revenue numbers and an ever-expanding portfolio of services. As of this writing, Azure is available in 140 countries and has data centers in more than 50 locations around the world (Figure 1.11). Subsets of Azure are available through Azure Stack, which allows an organization to build a private cloud that can seamlessly connect to and interact with the Azure public cloud. These allow internal data centers to be highly automated, using shared resources that can respond to sudden spurts in demand.
 
-![Figure 1.11: Microsoft Azure regions](../media/azure-regions.png)
+![Figure 1.11: Microsoft Azure regions.](../media/azure-regions.png)
 
 _Figure 1.11: Microsoft Azure regions<sup>[3][^3]</sup>._
 
@@ -53,7 +53,7 @@ Azure also offers managed relational database services through Azure SQL Databas
 
 Google's Cloud Platform initially offered only PaaS products and APIs into Google's most powerful products such as the Translate API. GCP has since diversified into multiple services in response to the offerings of its competitors. It has approximately 60 data centers around the world grouped into 20 regions (Figure 1.12).
 
-![Figure 1.12: Google Cloud Platform regions](../media/gcp-regions.png)
+![Figure 1.12: Google Cloud Platform regions.](../media/gcp-regions.png)
 
 _Figure 1.12: Google Cloud Platform regions<sup>[4][^4]</sup>._
 

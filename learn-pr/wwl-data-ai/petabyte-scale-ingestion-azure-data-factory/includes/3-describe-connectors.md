@@ -19,4 +19,4 @@ There are too many data stores to list, but the following table lists the catego
 | Generic protocols | REST, ODBC | 
 | Services & Apps | Dynamics, SalesForce |
 
-The list of connectors is constantly evolving. You can keep up to date with the latest list, and the activity support by looking at the [connectors overview page]( https://docs.microsoft.com/azure/data-factory/connector-overview)
+The list of connectors is constantly evolving. You can keep up to date with the latest list, and the activity support by looking at the [connectors overview page](/azure/data-factory/connector-overview)

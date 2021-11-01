@@ -20,7 +20,6 @@ If you run that code from the *sales* folder in the following folder structure, 
         📂 sales
 ```
 
-
 ## Work with paths
 
 Paths are a subject that comes up so frequently that Node.js includes a module called *path* specifically for working with paths.
@@ -41,9 +40,9 @@ console.log(path.join("stores", "201")); // stores/201
 
 The reason why you would use the *path* module instead of concatenating strings is that your program might run on Windows or Linux. The *path* module will always format paths correctly for whatever operating system it's running on. In the preceding example, `path.join` would return `stores\201` on Windows, with a backslash instead of a slash.
 
-### Determine file name extensions
+### Determine filename extensions
 
-The *path* module can also tell you what the extension of a file name is. If you have a file and you want to identify if it's a JSON file or not, you can use the `path.extname` method.
+The *path* module can also identify the extension of a filename. If you have a file and you want to identify if it's a JSON file, you can use the `path.extname` method.
 
 ```javascript
 console.log(path.extname("sales.json"));
@@ -54,7 +53,7 @@ console.log(path.extname("sales.json"));
 
 ### Get everything you need to know about a file or path
 
-The *path* module contains many different methods that do various things. However, you can get most of the information that you need about a path or file by using the `parse` method. This method returns an object that contains the current directory you're in, the name of the file, the file name extension, and even the name of the file without the extension.
+The *path* module contains many different methods that do various things. However, you can get most of the information that you need about a path or file by using the `parse` method. This method returns an object that contains the current directory you're in, the name of the file, the filename extension, and even the name of the file without the extension.
 
 ```javascript
 console.log(path.parse("stores/201/sales.json"));

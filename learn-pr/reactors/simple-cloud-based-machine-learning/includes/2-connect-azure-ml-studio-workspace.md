@@ -4,15 +4,15 @@ To use Azure Machine Learning, you need an active Azure subscription and a Machi
 
 1. After the Machine Learning resource is created, go to the resource and select **Launch Now** in Azure Machine Learning Studio.
 
-   :::image type="content" alt-text="Open Azure Machine Learning Studio" source="../media/launch-azure-ml-studio.png" loc-scope="azure":::
+   :::image type="content" alt-text="Open Azure Machine Learning Studio." source="../media/launch-azure-ml-studio.png" loc-scope="azure":::
 
 1. From the home page, go to **Datasets**. Locate the bank-full.csv file in the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Bank%2BMarketing?azure-portal=true). Select **From local files**, and upload the file to Azure Machine Learning Studio.
 
-   :::image type="content" alt-text="Select the .csv file to upload to Azure Machine Learning Studio" source="../media/upload-data-set.png" loc-scope="azure":::
+   :::image type="content" alt-text="Select the .csv file to upload to Azure Machine Learning Studio." source="../media/upload-data-set.png" loc-scope="azure":::
 
 1. Name the dataset **bank-marketing**. Select **tabular** as the form. Choose the datastore that was created when you created the Machine Learning service in Azure. Upload the .csv file. Make sure you use the header from the file.
 
-   :::image type="content" alt-text="Specify the settings for the uploaded .csv file" source="../media/configure-data-store.png" loc-scope="azure":::
+   :::image type="content" alt-text="Specify the settings for the uploaded .csv file." source="../media/configure-data-store.png" loc-scope="azure":::
 
 ## Explore bank-marketing data
 

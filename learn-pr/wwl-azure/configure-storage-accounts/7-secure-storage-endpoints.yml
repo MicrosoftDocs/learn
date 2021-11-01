@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-storage-accounts.secure-storage-endpoints
+title: Secure storage endpoints
+metadata:
+  title: Secure storage endpoints
+  description: "Secure storage endpoints"
+  ms.date: 08/12/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-secure-storage-endpoints.md)]

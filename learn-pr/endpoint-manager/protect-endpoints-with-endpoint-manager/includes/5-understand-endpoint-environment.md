@@ -1,6 +1,6 @@
 Microsoft Endpoint Manager is used to manage your organization's endpoints. As we've mentioned, Endpoints include the mobile devices, desktop computers, virtual machines, embedded devices, and servers that your organization uses. Additionally, endpoints also include the apps used by your organization. These endpoints are managed in different environments based on where these endpoints are located. Microsoft Endpoint Manager manages multiple endpoint environments, including cloud endpoints, on-premises endpoints, and co-managed endpoints.
 
-[ ![Diagram of cloud and on-premises endpoints](../media/intro-to-endpoint-manager-04.png) ](../media/intro-to-endpoint-manager-04.png#lightbox)
+[ ![Diagram of cloud and on-premises endpoints.](../media/intro-to-endpoint-manager-04.png) ](../media/intro-to-endpoint-manager-04.png#lightbox)
 
 ## Cloud endpoint management
 

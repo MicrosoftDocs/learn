@@ -7,3 +7,9 @@ Imagine how difficult it would be to implement a schema to support all the diffe
 Azure Cosmos DB SQL API eases many of these pain points by offering an elastic and globally distributed database platform. Azure Cosmos DB SQL API will scale up-and-down to meet your real-world usage. The SQL API for Azure Cosmos DB SQL API is the built-in native API with the widest variety of SDK options for developers in your organization. The SQL API also natively uses JSON documents enabling your team to store a wide variety of data formats in your database.
 
 Now, your team can move forward and create a new Azure Cosmos DB SQL API account for your storefront.
+
+To learn more about the topics discussed in this module, please check out our documentation:
+
+- Read about the [Azure Cosmos DB resource model](/azure/cosmos-db/account-databases-containers-items) and different entities in the resource model hierarchy.
+
+- If you need help choosing an API to select for your Azure Cosmos DB deployment, [this article discusses the different APIs](/azure/cosmos-db/choose-api) and how your workload and requirements will influence your choice.

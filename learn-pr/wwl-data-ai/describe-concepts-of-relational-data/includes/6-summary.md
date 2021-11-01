@@ -8,8 +8,8 @@ In this module you have learned:
 
 ## Learn more
 
-- [Description of the database normalization basics](https://docs.microsoft.com/office/troubleshoot/access/database-normalization-description)
-- [Structured Query Language (SQL)](https://docs.microsoft.com/sql/odbc/reference/structured-query-language-sql)
-- [Technical overview of SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)
-- [SQL Server Technical Documentation](https://docs.microsoft.com/sql/sql-server/?view=sql-server-ver15)
-- [SQL Database PaaS vs IaaS Offerings](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)
+- [Description of the database normalization basics](/office/troubleshoot/access/database-normalization-description)
+- [Structured Query Language (SQL)](/sql/odbc/reference/structured-query-language-sql)
+- [Technical overview of SQL Database](/azure/sql-database/sql-database-technical-overview)
+- [SQL Server Technical Documentation](/sql/sql-server/)
+- [SQL Database PaaS vs IaaS Offerings](/azure/sql-database/sql-database-paas-vs-sql-server-iaas)

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-data-azure-databricks.understand-dataframes
+title: Understand dataframes
+metadata:
+  title: Understand dataframes
+  description: "Understand dataframes"
+  ms.date: 08/20/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-dataframes.md)]

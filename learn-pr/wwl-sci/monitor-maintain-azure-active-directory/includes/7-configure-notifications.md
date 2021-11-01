@@ -1,4 +1,4 @@
-The health of an Azure Active Directory Domain Services (Azure AD DS) managed domain is monitored by the Azure platform. The health status page in the Azure portal shows any alerts for the managed domain. To ensure issues are responded to in a timely manner, email notifications can be configured to report on health alerts as soon as they're detected in the Azure AD DS managed domain.
+The health of an Azure Active Directory is monitored by the Azure platform. The health status page in the Azure portal shows any alerts for the managed domain. To ensure issues are responded to in a timely manner, email notifications can be configured to report on health alerts as soon as they're detected.
 
 ## Email notification overview
 
@@ -14,13 +14,13 @@ The following example email notification indicates a critical warning or alert w
 
 ### Why would I receive email notifications?
 
-Azure AD DS sends email notifications for important updates about the managed domain. These notifications are only for urgent issues that impact the service and should be addressed immediately. Each email notification is triggered by an alert on the managed domain. The alerts also appear in the Azure portal and can be viewed on the [Azure AD DS health page](https://docs.microsoft.com/azure/active-directory-domain-services/check-health).
+Azure AD DS sends email notifications for important updates about the managed domain. These notifications are only for urgent issues that impact the service and should be addressed immediately. Each email notification is triggered by an alert on the managed domain. The alerts also appear in the Azure portal and can be viewed on the [Azure AD DS health page](/azure/active-directory-domain-services/check-health).
 
 Azure AD DS doesn't send emails for advertisement, updates, or sales purposes.
 
 ### When will I receive email notifications?
 
-A notification is sent immediately when a [new alert](https://docs.microsoft.com/azure/active-directory-domain-services/troubleshoot-alerts) is found on a managed domain. If the alert isn't resolved, additional email notifications are sent as a reminder every four days.
+A notification is sent immediately when a [new alert](/azure/active-directory-domain-services/troubleshoot-alerts) is found on a managed domain. If the alert isn't resolved, additional email notifications are sent as a reminder every four days.
 
 ### Who should receive the email notifications?
 

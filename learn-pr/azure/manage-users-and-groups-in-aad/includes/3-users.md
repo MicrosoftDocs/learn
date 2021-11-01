@@ -35,17 +35,17 @@ You can manually add new users through the Azure portal. This is the easiest way
 
 1. To add a new user with the Azure portal, in the top menu bar, select **New user**.
 
-    ![Screenshot showing the New User button highlighted in the Azure AD portal](../media/2-new-user-all-users-pane.png)
+    ![Screenshot showing the New User button highlighted in the Azure AD portal.](../media/2-new-user-all-users-pane.png)
 
 1. In addition to **Name** and **User name**, you can add profile information, like **Job Title** and **Department**.
 
-    ![Screenshot showing the New user dialog](../media/2-new-user-user-pane.png)
+    ![Screenshot showing the New user dialog.](../media/2-new-user-user-pane.png)
 
     The default behavior is to create a new user in the organization. The user will have a username with the default domain name assigned to the directory such as alice@staracoustics.onmicrosoft.com.
 
 1. You can also _invite_ a user into the directory. In this case, an email is sent to a known email address and an account is created and associated with that email address if they accept the invitation.
 
-    ![Screenshot showing the invite screen](../media/3-new-user-invite.png)
+    ![Screenshot showing the invite screen.](../media/3-new-user-invite.png)
 
     The invited user will need to create an associated Microsoft account (MSA) if that specific email address isn't associated with one and the account will be added to the Azure AD as a guest user.
 

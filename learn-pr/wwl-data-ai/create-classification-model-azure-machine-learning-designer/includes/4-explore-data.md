@@ -5,12 +5,14 @@ To train a classification model, you need a dataset that includes historical *fe
 In Azure Machine Learning, data for model training and other operations is usually encapsulated in an object called a *dataset*.
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Datasets** page. Datasets represent specific data files or tables that you plan to work with in Azure ML.
-2. Create a dataset from web files, using the following settings:
+
+2. Create a dataset **from web files**, using the following settings:
     * **Basic Info**:
         * **Web URL**: https://aka.ms/diabetes-data
         * **Name**: diabetes-data
         * **Dataset type**: Tabular
         * **Description**: Diabetes data
+        * **Skip data validation**: _Do not select_
     * **Settings and preview**:
         * **File format**: Delimited
         * **Delimiter**: Comma
@@ -29,10 +31,10 @@ In Azure Machine Learning, data for model training and other operations is usual
 To get started with Azure Machine Learning designer, first you must create a pipeline and add the dataset you want to work with.
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true) for your workspace, view the **Designer** page and select **+** to create a new pipeline.
-2. In the **Settings** pane, change the default pipeline name (**Pipeline-Created-on-*date***) to **Diabetes Training** (if the **Settings** pane is not visible, click the **&#9881;** icon next to the pipeline name at the top).
-3. Note that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, click **Select compute target** and select the compute cluster you created previously.
-4. On the left side of the designer, expand the **Datasets** section, and drag the **diabetes-data** dataset you created in the previous exercise onto the canvas.
-5. Right-click (Ctrl+click on a Mac) the **diabetes-data** dataset on the canvas, and on the **Visualize** menu, select **Dataset output**.
+2. At the top left-hand side of the screen, click on the  default pipeline name (**Pipeline-Created-on-*date***) and change it to **Diabetes Training**.
+3. You need to specify a compute target on which to run the pipeline. In the **Settings** pane, click on **Select compute target** to select the compute cluster you created previously (if the **Settings** pane is not visible, select the **&#9881;** icon next to the pipeline name at the top).
+4. Next to the pipeline name on the left, select the button **>>** to expand the panel. Drag the **diabetes-data** dataset you created in the previous exercise onto the canvas.
+5. Right-click (Ctrl+click on a Mac) the **diabetes-data** dataset on the canvas, and on the **Outputs** menu, select **Dataset output** by clicking on the *Preview data* graph icon.
 6. Review the schema of the data, noting that you can see the distributions of the various columns as histograms.
 7. Scroll to the right and select the column heading for the **Diabetic** column, and note that it contains two values **0** and **1**. These values represent the two possible classes for the *label* that your model will predict, with a value of **0** meaning that the patient does not have diabetes, and a value of **1** meaning that the patient is diabetic.
 8. Scroll back to the left and review the other columns, which represent the *features* that will be used to predict the label. Note that most of these columns are numeric, but each feature is on its own scale. For example, **Age** values range from 21 to 77, while **DiabetesPedigree** values range from 0.078 to 2.3016. When training a machine learning model, it is sometimes possible for larger values to dominate the resulting predictive function, reducing the influence of features that on a smaller scale. Typically, data scientists mitigate this possible bias by *normalizing* the numeric columns so they're on the similar scales.

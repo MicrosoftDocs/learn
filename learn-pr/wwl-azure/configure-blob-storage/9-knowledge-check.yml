@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-blob-storage.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/23/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which of the following best describes Azure blob storage access tiers?"
+    choices:
+    - content: "The cool access tier is for frequent access of objects in the storage account."
+      isCorrect: false
+      explanation: "That's incorrect. The cool access tier is for infrequently used storage objects."
+    - content: "The hot access tier is for storing large amounts of data that is infrequently accessed."
+      isCorrect: false
+      explanation: "That's incorrect. The hot access tier is for frequently accessed storage objects."
+    - content: "The administrator can switch between hot and cool performance tiers at any time."
+      isCorrect: true
+      explanation: "That's correct. The administrator can switch between hot and cool performance tiers at any time."
+  - content: "Which of these changes between access tiers will happen immediately?"
+    choices:
+    - content: "Hot to Cool"
+      isCorrect: true
+      explanation: "That's correct. Changes between hot and cool, and to archive, happen immediately."
+    - content: "Archive to Cool"
+      isCorrect: false
+      explanation: "That's incorrect. Changes from the archive tier do not happen immediately."
+    - content: "Archive to Hot"
+      isCorrect: false
+      explanation: "That's incorrect. Changes from the archive tier do not happen immediately."
+  - content: "Which of the following best describes blob object replication?"
+    choices:
+    - content: "Object replication doesn't require versioning to be enabled."
+      isCorrect: false
+      explanation: "That's incorrect. Object replication requires that blob versioning be enabled on both the source and destination accounts."
+    - content: "Object replication doesn't support blob snapshots."
+      isCorrect: true
+      explanation: "That's correct. Any snapshots on a blob in the source account are not replicated to the destination account."
+    - content: "Object replication is supported in the archive tier."
+      isCorrect: false
+      explanation: "That's incorrect. Object replication is supported when the source and the destination accounts are in the hot or cool tier."

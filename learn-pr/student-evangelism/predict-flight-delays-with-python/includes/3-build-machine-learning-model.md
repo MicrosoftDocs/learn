@@ -42,7 +42,7 @@ One of the benefits of using scikit-learn is that you don't have to build these 
 
     The output shows the parameters used in the classifier, including `n_estimators`, which specifies the number of trees in each decision-tree forest, and `max_depth`, which specifies the maximum depth of the decision trees. The values shown are the defaults, but you can override any of them when creating the `RandomForestClassifier` object.
 
-    ![Training the model](../media/3-fit-model.png)
+    ![Training the model.](../media/3-fit-model.png)
 
     _Training the model_
 
@@ -55,7 +55,7 @@ One of the benefits of using scikit-learn is that you don't have to build these 
 
     Confirm that you see the following output:
 
-    ![Testing the model](../media/3-score-model.png)
+    ![Testing the model.](../media/3-score-model.png)
 
     _Testing the model_
 
@@ -80,7 +80,7 @@ There are several ways to measure the accuracy of a classification model. One of
 
     Confirm that the output shows a score of 67%:
 
-    ![Generating an AUC score](../media/3-auc-score.png)
+    ![Generating an AUC score.](../media/3-auc-score.png)
 
     _Generating an AUC score_
 
@@ -101,7 +101,7 @@ There are several ways to measure the accuracy of a classification model. One of
 
    The first row in the output represents flights that were on time. The first column in that row shows how many flights were correctly predicted to be on time, while the second column reveals how many flights were predicted as delayed but weren't. From this, the model appears to be adept at predicting that a flight will be on time.
 
-   ![Generating a confusion matrix](../media/3-confusion-matrix.png)
+   ![Generating a confusion matrix.](../media/3-confusion-matrix.png)
 
    _Generating a confusion matrix_
 
@@ -120,7 +120,7 @@ There are several ways to measure the accuracy of a classification model. One of
 
     Examine the output. What is your model's precision?
 
-    ![Measuring precision](../media/3-precision.png)
+    ![Measuring precision.](../media/3-precision.png)
 
     _Measuring precision_
 
@@ -134,7 +134,7 @@ There are several ways to measure the accuracy of a classification model. One of
 
     What is the model's recall?
 
-    ![Measuring recall](../media/3-recall.png)
+    ![Measuring recall.](../media/3-recall.png)
 
     _Measuring recall_
 

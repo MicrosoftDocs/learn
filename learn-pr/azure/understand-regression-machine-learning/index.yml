@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.machinelearning.understand-regression-machine-learning
+metadata:
+  title: Train and understand regression models in machine learning  
+  description: Regression is arguably the most widely used machine learning technique, commonly underlying scientific discoveries, business planning, and stock market analytics. This learning material takes a dive into some common regression analyses, both simple and more complex, and provides some insight on how to assess model performance.
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Train and understand regression models in machine learning
+summary: Regression is arguably the most widely used machine learning technique, commonly underlying scientific discoveries, business planning, and stock market analytics. This learning material takes a dive into some common regression analyses, both simple and more complex, and provides some insight on how to assess model performance.
+abstract: | 
+  In this module, you will:
+  - Understand how regression works
+  - Work with new algorithms: Linear regression, multiple linear regression, and polynomial regression
+  - Understand the strengths and limitations of regression models
+  - Visualize error and cost functions in linear regression
+  - Understand basic evaluation metrics for regression
+prerequisites: Familiarity with machine learning models
+iconUrl: /learn/achievements/machine-learning/understand-regression-machine-learning.svg
+levels: 
+- beginner
+roles: 
+- ai-engineer
+- data-scientist
+- student
+products: 
+- azure
+units: 
+- learn.machinelearning.understand-regression-machine-learning.introduction
+- learn.machinelearning.understand-regression-machine-learning.what-is-regression
+- learn.machinelearning.understand-regression-machine-learning.exercise-train-linear-regression
+- learn.machinelearning.understand-regression-machine-learning.multiple-linear-regression
+- learn.machinelearning.understand-regression-machine-learning.exercise-multiple-linear-regression
+- learn.machinelearning.understand-regression-machine-learning.polynomial-regression
+- learn.machinelearning.understand-regression-machine-learning.exercise-polynomial-regression
+- learn.machinelearning.understand-regression-machine-learning.knowledge-check
+- learn.machinelearning.understand-regression-machine-learning.summary
+badge: 
+  uid: learn.machinelearning.understand-regression-machine-learning.badge #add the uid for your achievement badge.

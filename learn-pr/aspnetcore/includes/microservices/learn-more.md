@@ -5,7 +5,7 @@
 * Video: [Implement microservices patterns with .NET Core and Docker containers](https://aka.ms/microservices-video?azure-portal=true)
 
 > [!NOTE]
-> The above video doesn't reflect current .NET Core tooling. However, the architectural concepts and design patterns remain valid.
+> The video in this list doesn't reflect current .NET Core tooling. However, the architectural concepts and design patterns remain valid.
 
 ## Learn more about .NET
 

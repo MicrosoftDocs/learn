@@ -17,7 +17,7 @@ prerequisites: |
   - Familiarity with available Azure services
   - Familiarity with Visual Studio Code
   - Familiarity with CI/CD concepts
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/build-serverless-full-stack-apps-azure.svg
 levels: 
 - intermediate
 roles: 

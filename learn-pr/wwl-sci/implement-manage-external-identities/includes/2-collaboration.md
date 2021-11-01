@@ -1,6 +1,17 @@
 
 Azure AD External Identities is a feature that makes it possible for you to allow people outside your organization to access your apps and resources, while letting them sign in using whatever identity they prefer. Your partners, distributors, suppliers, vendors, and other guest users can "bring their own identities." Whether they have a corporate or government-issued digital identity, or an unmanaged social identity like Google or Facebook, they can use their own credentials to sign in. The external user’s identity provider manages their identity, and you manage access to your apps with Azure AD to keep your resources protected.
 
+> [!div class="mx-imgBorder"]
+> ![Diagram of the different ways an external user account can be generated and verified, as they are invited to you Azure AD.](../media/sc300-external-user-state-diagram.png)
+
+Depending on the inviting organization's needs, an Azure AD B2B collaboration user can be in one of the following account states:
+
+- State 1: Homed in an external instance of Azure AD and represented as a guest user in the inviting organization. In this case, the B2B user signs in by using an Azure AD account that belongs to the invited tenant. If the partner organization doesn't use Azure AD, the guest user in Azure AD is still created. The requirements are that they redeem their invitation and Azure AD verifies their email address. This arrangement is also called a just-in-time (JIT) tenancy or a "viral" tenancy.
+- State 2: Homed in a Microsoft or other account and represented as a guest user in the host organization. In this case, the guest user signs in with a Microsoft account or a social account. The invited user's identity is created as a Microsoft account in the inviting organization’s directory during offer redemption.
+- State 3: Homed in the host organization's on-premises Active Directory and synced with the host organization's Azure AD. You can use Azure AD Connect to sync the partner accounts to the cloud as Azure AD B2B users with UserType = Guest. See Grant locally-managed partner accounts access to cloud resources.
+- State 4: Homed in the host organization's Azure AD with UserType = Guest and credentials that the host organization manages.
+
+
 ## External identities scenarios
 
 Azure AD External Identities focuses less on a user's relationship to your organization and more on how the user wants to sign in to your apps and resources. Within this framework, Azure AD supports a variety of scenarios.
@@ -29,7 +40,7 @@ This unit describes how to enable Azure Active Directory (Azure AD) B2B collabor
 
 By default, all users and guests in your directory can invite guests even if they're not assigned to an admin role. External collaboration settings let you turn guest invitations on or off for different types of users in your organization. You can also delegate invitations to individual users by assigning roles that allow them to invite guests.
 
-Azure AD allows you to restrict what external guest users can see in your Azure AD directory. By default, guest users are set to a limited permission level that blocks them from enumerating users, groups, or other directory resources, but lets them see membership of non-hidden groups. A new preview setting lets you restrict guest access even further, so that guests can only view their own profile information. For details, see [Restrict guest access permissions (preview)](https://docs.microsoft.com/azure/active-directory/enterprise-users/users-restrict-guest-permissions).
+Azure AD allows you to restrict what external guest users can see in your Azure AD directory. By default, guest users are set to a limited permission level that blocks them from enumerating users, groups, or other directory resources, but lets them see membership of non-hidden groups. A new preview setting lets you restrict guest access even further, so that guests can only view their own profile information. For details, see [Restrict guest access permissions (preview)](/azure/active-directory/enterprise-users/users-restrict-guest-permissions).
 
 ## Configure business-to-business external collaboration settings
 

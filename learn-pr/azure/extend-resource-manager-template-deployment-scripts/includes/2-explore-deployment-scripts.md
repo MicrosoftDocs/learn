@@ -120,4 +120,16 @@ Our full template would look something like:
 
   ::: zone-end
 
+::: zone pivot="bicepcli,biceppowershell"
+
+## Include script files
+
+Embedding scripts inline in templates can be cumbersome, hard to read and understand, and difficult to change. Bicep uses the `loadTextContent()` function to embed an external text file in your deployment. When Bicep transpiles your template into JSON, it embeds the external file into the template it emits.
+
+Let's say you have a PowerShell file named *myscript.ps1* in the same folder as your Bicep template. You can tell Bicep to embed the file like this:
+
+:::code language="bicep" source="code/2-example-template-external.bicep" range="11-15" highlight="3" :::
+
+::: zone-end
+
 You can find all the properties for the `deploymentScripts` resource in the [ARM template reference documentation](/azure/templates/microsoft.resources/deploymentscripts).

@@ -1,6 +1,6 @@
 ## Secure development
 
-![Secure Development category](../media/policies/secure-development.png)
+![Secure Development category.](../media/policies/secure-development.png)
 
 ### Why ask these questions
 

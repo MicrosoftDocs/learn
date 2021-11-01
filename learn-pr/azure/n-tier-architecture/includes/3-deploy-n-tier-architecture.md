@@ -35,7 +35,7 @@ az deployment group show \
 
 Open a web browser, and visit the site. You see a box where you can add food choices. After an option is added, selecting it adds a vote.
 
-![Screenshot of the sample voting application](../media/3-lunch.png)
+![Screenshot of the sample voting application.](../media/3-lunch.png)
 
 ## Three tiers of "What's For Lunch?"
 

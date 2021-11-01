@@ -4,7 +4,7 @@ In this unit, you'll learn how to validate that a move would be successful. You'
 
 ## Prepare to test your move
 
-Before attempting to move a resource, you can test whether it will be successful by calling the `validate move` operation from the Azure REST API. This test is especially useful if you're trying to move resources by using, for example, Azure PowerShell or the Azure CLI. You can use these tools to script moves, with minimal human interaction. Testing a move doesn't affect your resources. The operation only tests whether your move operation would succeed, based on the options you provide.
+Before attempting to move a resource, you can test whether it will be successful by calling the `validate move` operation from the Azure REST API. This test is especially useful if you're trying to move resources by using, (for example, Azure PowerShell or the Azure CLI). You can use these tools to script moves, with minimal human interaction. Testing a move doesn't affect your resources. The operation only tests whether your move operation would succeed, based on the options you provide.
 
 If you're trying to move resources through the Azure portal, you don't need to validate the move before attempting it. The Azure portal does an automatic validation before allowing you to move resources.
 

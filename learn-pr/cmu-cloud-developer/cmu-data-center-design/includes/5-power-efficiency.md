@@ -28,7 +28,7 @@ If a datacenter's PUE is 3.0, then the datacenter facilities (for example, power
 
 In 2007, the Lawrence Berkeley National Labs (LBNL) ran an energy study for 25 datacenters (see Figure 20). The best PUE, 1.14, resulted in about 87% of the site energy reaching the IT equipment. In the worst case (PUE 3.0), only 33% made it to the IT equipment.
 
-![PUE of 25 datacenters studied by Lawrence Berkeley National Labs, 2007](../media/pue-25-data-centers.png)
+![PUE of 25 datacenters studied by Lawrence Berkeley National Labs, 2007.](../media/pue-25-data-centers.png)
 
 _Figure 20: PUE of 25 datacenters studied by LBNL_ (Lawrence Berkeley National Labs, 2007)
 
@@ -42,7 +42,7 @@ In an earlier module, you were introduced to a PDU, or power distribution unit. 
 
 There are several types of power distribution: rack level, row level, and room level. All of them have an input electrical feed and provide one or more branch circuits, with each branch protected by a circuit breaker (a safety device that will "trip" if there is an overload, stopping the flow of electricity). The difference with row-level PDUs is that they typically take a higher voltage and output to a lower voltage using a transformer. (Transformers generate heat, so you will also find cooling fans inside a row-level PDU.)
 
-![Row-level and rack-level PDUs](../media/pdus-chart.png)
+![Row-level and rack-level PDUs.](../media/pdus-chart.png)
 
 _Figure 22: Row-level and rack-level PDUs_
 

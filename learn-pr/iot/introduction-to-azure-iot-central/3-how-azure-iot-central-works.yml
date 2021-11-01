@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-iot-central.how-azure-iot-central-works
+title: How Azure IoT Central works
+metadata:
+  unitType: learning-content
+  title: How Azure IoT Central works
+  description: Learn how Azure IoT Central works.
+  ms.date: 07/21/2021
+  author: whitneylampkin
+  ms.author: wlampkin
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-how-azure-iot-central-works.md)]

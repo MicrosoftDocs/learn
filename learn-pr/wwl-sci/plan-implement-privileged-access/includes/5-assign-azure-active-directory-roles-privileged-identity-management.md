@@ -78,7 +78,7 @@ For certain roles, the scope of the granted permissions can be restricted to a s
 4. Select the **Scope type** menu and review the available options. For now, you will use the **Directory** scope type.
 
    > [!TIP]
-   > Go to [Manage administrative units in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/roles/admin-units-manage) to find more information about the administrative unit scope type.
+   > Go to [Manage administrative units in Azure Active Directory](/azure/active-directory/roles/admin-units-manage) to find more information about the administrative unit scope type.
 
 5. As you did when assigning a role without a restricted scope, you would add members and complete the settings options. For now, select **Cancel**.
 

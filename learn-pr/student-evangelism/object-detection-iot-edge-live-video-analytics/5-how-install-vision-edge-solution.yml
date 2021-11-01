@@ -9,6 +9,6 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
-durationInMinutes: 2 # dummy number at present
+durationInMinutes: 8
 content: |
   [!include[](includes/5-how-install-vision-edge-solution.md)]

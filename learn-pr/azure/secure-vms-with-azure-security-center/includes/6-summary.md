@@ -16,7 +16,7 @@ We created two VM resources in this module. To ensure you don't continue to get 
 
 1. Select **Delete resource group** from the menu.
 
-    ![Screenshot of the Azure portal showing the Delete resource group entry](../media/6-summary-cleanup.png)
+    ![Screenshot of the Azure portal showing the Delete resource group entry.](../media/6-summary-cleanup.png)
 
 1. Enter the resource group name (**mslearnDeleteMe**) into the entry, and select **Delete**.
 

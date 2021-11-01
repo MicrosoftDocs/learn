@@ -1,23 +1,32 @@
-In this exercise, we'll manage the SQL elastic pool and add an additional databases to the pool for another location.
+In this exercise, we'll manage the SQL elastic pool, and add an additional databases to the pool for another location.
 
 ## Adjust elastic pool settings
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. Search for and select the SQL elastic pool you created in the previous exercise. Search for and select **All resources** to browse for your SQL elastic pool.
 
-1. Click on **Configure** in the **Settings** section.
+1. In the left menu pane, under **Settings**, select **Configure**. The **Configure** pane appears.
 
-1. Here you can select either a *DTU-based* or *vCore-based* pricing model by selecting the service tier for the elastic pool; select **Basic** and click **Save**.
+1. Here, you can select either a *DTU-based* or *vCore-based* pricing model by selecting the service tier for the elastic pool. Under the **Service and compute tier** section, for **Service tier**, select **Basic**, and in the top menu bar, select **Save**.
 
-1. Within each tier, you can change the number of eDTUs for the pool; change the eDTUs to **200** and click **Save**.
+1. Within each tier, you can change the number of eDTUs for the pool. Change the eDTUs to **200** and in the top menu bar, select **Save**.
 
 1. Observe the **Cost summary** on the right, which shows the estimated monthly cost of your elastic pool.
 
 ## Create a new database in the pool
 
-1. Go to the  **Overview** section.
+1. In the left menu pane, select **Overview** for your SQL elastic pool.
 
-1. Click **+ Create database**.
+1. In the top menu bar, select **Create database**. The **Create SQL Database** pane appears.
 
-1. Give your new database a meaningful name such as **FitnessLondonDB** and press **Review + Create**. 
+1. On the **Basics** tab, enter the following value for the setting.
+
+    | Setting | Value |
+    |---|---|
+    | **Database details** |
+    | Database name | Provide your new database a meaningful name, such as *FitnessLondonDB*. |
+
+1. Select **Review + create**, and then select **Create**.
+
+1. Wait for deployment to complete, and then select **Go to resource**. Your new SQL database Overview pane appears.

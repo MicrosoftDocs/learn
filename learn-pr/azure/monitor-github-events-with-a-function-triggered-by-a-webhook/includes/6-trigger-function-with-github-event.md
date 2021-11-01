@@ -1,7 +1,8 @@
-The GitHub *Gollum* event enables you to listen for wiki updates. When this event occurs, and our Azure Functions function is triggered, you can parse the payload to retrieve and process the data sent.
+The GitHub *Gollum* event enables you to listen for wiki updates. When this event occurs, your Azure HttpTrigger function is triggered, and you can parse the payload to retrieve and process the data that was sent.
 
-You've shown the IT department that you can listen for *Gollum* events on your company's GitHub repository, by setting up a webhook in GitHub. You've also demonstrated how Azure Functions enables you to run code when the function receives a webhook request. 
-In this unit, we'll examine the payload from the Gollum event so we can update our function to parse it correctly.
+You've shown your IT department that you can listen for *Gollum* events on your company's GitHub repository by setting up a webhook. You've also demonstrated how Azure Function apps enable you to run code when a function receives a webhook request. 
+
+In this unit, we'll examine the payload from the *Gollum* event so we can update our function to parse it correctly.
 
 ## Gollum event payload
 
@@ -43,10 +44,9 @@ For example, a payload might look like the following code.
     "login": "..."
     ...
 }
-
 ```
 
-This information is passed as the body of an HTTP POST request. We'll need to update our function logic to be able to parse and process this information correctly.
+This information is passed as the body of an HTTP POST request. We'll need to update our function logic to parse and process this information correctly.
 
 ## Parse information from the Gollum event
 
@@ -62,4 +62,4 @@ if (req.body.repository.name){
 }
 ```
 
-In the next exercise, we'll update our function code to be able to handle incoming **Gollum** event correctly.
+In the next exercise, we'll update your function code to be able to handle incoming **Gollum** event correctly.

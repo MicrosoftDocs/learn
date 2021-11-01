@@ -21,7 +21,7 @@ Users authenticate in two stages:
 
 Let’s consider a basic scenario where identity is required: a user in a web browser needs to authenticate to a web application. Consider the following diagram for this scenario:
 
-![Screenshot that shows a basic scenario where identity is required](../media/2-azure-ad-open-id-connect.svg)
+![Screenshot that shows a basic scenario where identity is required.](../media/2-azure-ad-open-id-connect.svg)
 
 1. The user requests a secured resource, in this case a web application.
 1. The web application redirects the request to the identity provider that requests and checks the user's authentication credentials. 
@@ -49,7 +49,7 @@ The ID token is a JSON Web Token (JWT) and contains information about the authen
 
 JSON Web Token is an open international standard that defines how applications can exchange data securely as digitally signed messages. The content of each token is not encrypted, but the message is signed with the private key of the identity provider. By checking the signature with the corresponding public key, applications can prove that the token is issued by the identity provider and has not been tampered with.
 
-![OpenID authentication](../media/2-openid-connect-auth-flow.svg)
+![OpenID authentication.](../media/2-openid-connect-auth-flow.svg)
 
 This diagram shows how the client application, the application server, and the identity provider communicate in an OpenID Connect authentication request. The client might be a mobile app or a desktop application. In this case, it's a web browser. The application server is usually a web server that hosts webpages or a web API. The identity provider in the middle is Azure AD. 
 

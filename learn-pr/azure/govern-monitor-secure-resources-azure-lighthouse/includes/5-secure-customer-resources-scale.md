@@ -8,7 +8,7 @@ You can then run queries through multiple customer workspaces, or provide insigh
 
 Here’s an overview of how to use Azure Lighthouse with Azure Sentinel.
 
-:::image type="content" source="../media/5-azure-sentinel-lighthouse.png" alt-text="Azure Sentinel with Azure Lighthouse":::
+:::image type="content" source="../media/5-azure-sentinel-lighthouse.png" alt-text="Azure Sentinel with Azure Lighthouse.":::
 
 ### Centralized deployment model
 
@@ -37,7 +37,7 @@ After customers have been onboarded, users sign in to your tenant to directly ac
 
 As a managing user, you open Azure Sentinel in the Azure portal to view a list of all the customer workspaces you can access.   You can choose to look at a single workspace, or expand your focus to multiple workspaces. Alternatively, you could investigate any incidents that have been detected across all your customers’ workspaces:
 
-:::image type="content" source="../media/5-incidents-multiple-customers-inline.png" alt-text="Incidents across multiple workspaces"  lightbox="../media/../media/5-incidents-multiple-customers-expanded.png":::
+:::image type="content" source="../media/5-incidents-multiple-customers-inline.png" alt-text="Incidents across multiple workspaces."  lightbox="../media/../media/5-incidents-multiple-customers-expanded.png":::
 
 You can create a single Log Analytics query to run across all customer workspaces. This way, you'll investigate and correlate information from your customers in a single query. Use this query to gain a detailed understanding of your customers' tenants.
 
@@ -63,7 +63,7 @@ You create playbooks to mitigate alerts detected by Azure Sentinel. Playbooks he
 
 You use Azure Sentinel with Azure Monitor workbooks to monitor and analyze data in customer Azure Sentinel workspaces. With Azure Monitor workbooks, you can create your own custom workbooks, but also use prebuilt templates:
 
-:::image type="content" source="../media/5-prebuilt-workbooks-inline.png" alt-text="Prebuilt workspaces" lightbox="../media/5-prebuilt-workbooks-expanded.png":::
+:::image type="content" source="../media/5-prebuilt-workbooks-inline.png" alt-text="Prebuilt workspaces." lightbox="../media/5-prebuilt-workbooks-expanded.png":::
 
 You deploy workbooks in your tenant to query and monitor data in customer tenants through [cross-workspace monitoring](/azure/sentinel/extend-sentinel-across-workspaces-tenants#using-cross-workspace-workbooks). You can also deploy a workbook directly in a tenant that you manage for a customer.
 

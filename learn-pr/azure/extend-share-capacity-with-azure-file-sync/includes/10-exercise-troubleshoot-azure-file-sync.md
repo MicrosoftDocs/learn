@@ -10,9 +10,9 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). 
 1. Go to the storage account. Select **All resources** > **extendcadfiles**.
-1. Under **Settings**, select **Access keys**.
+1. Under **Security + networking**, select **Access keys**.
 
-   ![Screenshot of the Access keys option under settings.](../media/10-access-keys-option.png)
+   ![Screenshot of the Access keys option under Security + settings.](../media/10-access-keys-option.png)
 
 1. Under **key1**, copy the **Key** value. You'll use this key to set up the mapped drive.
 

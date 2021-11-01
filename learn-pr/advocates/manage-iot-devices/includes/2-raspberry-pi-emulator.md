@@ -4,7 +4,7 @@ Microsoft has built an online [Raspberry Pi Azure IoT simulator](https://azure-s
 
 By default, the simulator operates a sample temperature-capture program, which is displayed via the command line. The same sample application can also be run on a real Pi device, because the simulator is designed to allow people to test code before transferring it to a real device.
 
-[![Raspberry Pi simulator](../media/iot-admin-raspberry-pi-simulator.png)](../media/iot-admin-raspberry-pi-simulator.png#lightbox)
+[![Raspberry Pi simulator.](../media/iot-admin-raspberry-pi-simulator.png)](../media/iot-admin-raspberry-pi-simulator.png#lightbox)
 
 The web simulator has three screen areas:
 

@@ -12,7 +12,7 @@ More recently, mobile devices have become the primary way that people interact w
 
 As your organization evaluates the capabilities of its architecture around identity, it's looking at ways to bring the following capabilities into the application:
 
-- Provide single-sign on to application users.
+- Provide single sign-on to application users.
 - Enhance the application to use modern authentication with minimal effort.
 - Enforce multifactor authentication for all sign-ins outside the company's network.
 - Develop an application to allow patients to enroll and securely manage their account data.

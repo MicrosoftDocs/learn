@@ -8,7 +8,7 @@ By creating an API, we put a layer that we control in between the website and th
 
 Right now, these are the parts of the Product Manager application:
 
-:::image type="content" source="../media/product-manager-parts.svg" alt-text="A diagram showing the product manager application and database with no api":::
+:::image type="content" source="../media/product-manager-parts.svg" alt-text="A diagram showing the product manager application and database with no api.":::
 
 In this module, you'll be building the layer that sits in between the frontend and the database, safely storing the connection string. This layer is the API. You'll be using Azure Functions, so it will be serverless. This means that instead of paying for a full server or virtual machine, you deploy just your code and only pay when it is executed.
 

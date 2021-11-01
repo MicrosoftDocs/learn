@@ -1,6 +1,6 @@
 Visual Studio provides an excellent environment for creating and testing an Azure Function App. You can develop an Azure Function locally, and verify that it operates correctly, before deploying it to the cloud.
 
-In the luxury watch online website scenario, there's a requirement for a function that returns information about a type of watch when given the model number of the watch. The information includes data such as the manufacturer, the type of case back (solid, transparent, engraved), the bezel, the style of the dial, the finishing of the case, the number of jewels, and so on.
+In the luxury watch online website scenario, there's a requirement for a function that returns information about a type of watch when given the model number of the watch. The information includes data, such as the manufacturer, the type of case back (solid, transparent, engraved), the bezel, the style of the dial, the finishing of the case, the number of jewels, and so on.
 
 In this exercise, you'll implement a version of this function locally, and test it using Visual Studio.
 
@@ -12,13 +12,13 @@ Create an Azure Function App using the **Azure Functions** template.
 
     :::image type="content" source="../media/3-create-project.png" alt-text="Screenshot of the Visual Studio 2019 with Create a new project link." loc-scope="vs":::
 
-1. The **Configure your new project** page appears. In the **Project name** field, enter **WatchPortalFunction**. For the **Location** field, select a convenient location on your computer to store the project. The **Solution name** field should default to **WatchPortalFunction**. Make sure **Place solution and project in the same directory** is NOT selected (unchecked). This will result in the proper folder structure throughout the learning module.
+1. The **Configure your new project** page appears. In the **Project name** field, enter *WatchPortalFunction*. For the **Location** field, select a convenient location on your computer to store the project. The **Solution name** field should default to *WatchPortalFunction*. Make sure **Place solution and project in the same directory** is NOT selected (unchecked). This will result in the proper folder structure throughout the learning module.
 
 1. Select **Create**.
 
     :::image type="content" source="../media/3-configure-project.png" alt-text="Screenshot of the Visual Studio 2019 with Configure your new project link." loc-scope="vs":::
 
-1. The **Create a new Azure Functions application** page appears. From the dropdown, select **Azure Functions v2 (.NET Core)**, and then select **Http Trigger**. Leave the **Storage Account** dropdown set to **Storage emulator** because you'll be running the Azure Function App locally to start with. Under the **Authorization level**, select **Anonymous**, and then select **Create**.
+1. The **Create a new Azure Functions application** page appears. From the dropdown list, select **Azure Functions v2 (.NET Core)**, and then select **Http Trigger**. Leave the **Storage Account** field set to **Storage emulator** because you'll be running the Azure Function App locally to start with. In the **Authorization level** dropdown list, select **Anonymous**, and then select **Create**.
 
     :::image type="content" source="../media/3-function-triggers.png" alt-text="Screenshot showing the Azure Function triggers available, with HTTP Trigger highlighted." loc-scope="vs":::
 
@@ -56,11 +56,11 @@ Create an Azure Function App using the **Azure Functions** template.
 
     :::image type="content" source="../media/3-new-azure-function.png" alt-text="Screenshot of the Solution Explorer window. The user has selected Add -> New Azure Function." loc-scope="vs":::
 
-1. In the **Add New Item - WatchPortalFunction** window, select **Azure Function**. In the **Name** box, enter **WatchInfo.cs**, and then select **Add**.
+1. In the **Add New Item - WatchPortalFunction** window, select **Azure Function**. In the **Name** field, enter *WatchInfo.cs*, and then select **Add**.
 
     :::image type="content" source="../media/3-new-item.png" alt-text="Screenshot of the Add New Item window. The user has selected the Azure Function template, and named the new function WatchInfo.cs." loc-scope="vs":::
 
-1. In the **New Azure Function - WatchInfo** window, select **Http trigger**. Under **Authorization level**, select **Anonymous**, and then select **Add**.
+1. In the **New Azure Function - WatchInfo** window, select **Http trigger**. In the **Authorization level** dropdown list, select **Anonymous**, and then select **Add**.
 
     :::image type="content" source="../media/3-new-azure-function-trigger.png" alt-text="Screenshot of the New Azure Function window. The user has selected the Http Trigger with Anonymous access rights." loc-scope="vs":::
 
@@ -84,7 +84,7 @@ Create an Azure Function App using the **Azure Functions** template.
     }
     ```
 
-1. Add the following code to the body of the method, after the statement that writes to the trace log. This code reads the `model` parameter from the query string from the URL of the HTTP request. The code then retrieves the details for this model of watch; in this example, the function simply returns some dummy data. Lastly, the function returns a response that contains these details. If the initial request doesn't include a query string with the `model` parameter, the function returns an error message.
+1. Add the following code to the body of the method, after the statement that writes to the trace log. This code reads the `model` parameter from the query string from the URL of the HTTP request. The code then retrieves the details for this model of watch. In this example, the function simply returns some dummy data. Lastly, the function returns a response that contains these details. If the initial request doesn't include a query string with the `model` parameter, the function returns an error message.
 
     ```csharp
     // Retrieve the model id from the query string
@@ -103,7 +103,7 @@ Create an Azure Function App using the **Azure Functions** template.
 
 ## Test the Azure Function locally
 
-1. On the **Debug** menu, select **Start Debugging**.
+1. On the top menu bar, under **Debug**, select **Start Debugging**.
 
     Visual Studio builds the Azure Function App and starts the Azure Functions runtime. You'll see a window appear displaying messages as the runtime starts up. When the runtime is ready, you'll see a list of the HTTP functions available, and the URL that you can use to trigger each function.
 
@@ -119,7 +119,7 @@ Create an Azure Function App using the **Azure Functions** template.
 
 1. In Visual Studio, set a breakpoint on the line of code that retrieves the model from the query string.
 
-    ![Screenshot of Visual Studio. The user has set a breakpoint on the statement that reads the model from the query string](../media/3-visual-studio-breakpoint.png)
+    ![Screenshot of Visual Studio. The user has set a breakpoint on the statement that reads the model from the query string.](../media/3-visual-studio-breakpoint.png)
 
 1. Restart the web browser, and enter the URL without the query string again, `http://localhost:7071/api/WatchInfo`.
 
@@ -137,6 +137,6 @@ Create an Azure Function App using the **Azure Functions** template.
 
 1. In the web browser, enter the URL with a query string and a model parameter. Step through the Azure Function in the debugger, and verify that the model is retrieved correctly. The `model` variable should be populated with the value of the parameter, and the details of the model returned as an `OkObjectResult` object.
 
-1. On the *Debug* menu, select **Stop Debugging**.
+1. On the top menu bar, under **Debug**, select **Stop Debugging**.
 
 You've now seen how the Azure Functions Tools extension simplifies the experience of creating an Azure Function App, and enables you to use familiar tools to build and debug your code.

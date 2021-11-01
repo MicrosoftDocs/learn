@@ -10,7 +10,7 @@ Network security groups are assigned to a network interface or a subnet. When yo
 
 When you apply network security groups to both a subnet and a network interface, each network security group is evaluated independently. Inbound traffic is first evaluated by the network security group applied to the subnet, and then by the network security group applied to the network interface. Conversely, outbound traffic from a VM is first evaluated by the network security group applied to the network interface, and then by the network security group applied to the subnet.
 
-![Diagram of network security groups](../media/2-nsg1.svg)
+![Diagram of network security groups.](../media/2-nsg1.png)
 
 Applying a network security group to a subnet instead of individual network interfaces can reduce administration and management efforts. This approach also ensures that all VMs within the specified subnet are secured with the same set of rules.
 
@@ -100,7 +100,7 @@ An app security group enables you to group network interfaces together. You can 
 
 For example, your company has a number of front-end servers in a virtual network. The web servers must be accessible over ports 80 and 8080. Database servers must be accessible over port 1433. You assign the network interfaces for the web servers to one app security group, and the network interfaces for the database servers to another app security group. You then create two inbound rules in your network security group. One rule allows HTTP traffic to all servers in the web server app security group. The other rule allows SQL traffic to all servers in the database server app security group.
 
-![Diagram of app security groups](../media/2-asg-nsg.svg)
+![Diagram of app security groups.](../media/2-asg-nsg.svg)
 
  Without app security groups, you'd need to create a separate rule for each VM.
 

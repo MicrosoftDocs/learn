@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.connect-commands.2-select-data
+title: Selecting data
+metadata:
+  title: Selecting data
+  description: How to select the data that you want
+  author: softchris
+  ms.author: chnoring
+  ms.date: 02/16/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-select-data.md)]

@@ -27,7 +27,7 @@ quiz:
     - content: "cloudadmin"
       isCorrect: false
       explanation: "cloudadmin is the account used to access the Azure VMware Solution vCenter and HCX environment in Azure."
-  - content: "If Dragan can't activate the HCX Advanced Key on-premises, what might be the issue?"
+  - content: "If Juan can't activate the HCX Advanced Key on-premises, what might be the issue?"
     choices:
     - content: "The on-premises environment doesn't have open internet access or a proxy configured for activation."
       isCorrect: true

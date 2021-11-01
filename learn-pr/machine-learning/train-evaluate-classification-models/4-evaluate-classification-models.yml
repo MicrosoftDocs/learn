@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-evaluate-classification-models.evaluate-classification-models
+title: Evaluate classification models
+metadata:
+  title: Evaluate classification models
+  description: Evaluate classification models
+  ms.date: 01/04/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-evaluate-classification-models.md)]

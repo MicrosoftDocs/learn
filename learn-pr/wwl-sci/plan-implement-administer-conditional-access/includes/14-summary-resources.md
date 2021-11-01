@@ -30,11 +30,11 @@ To learn more about some of the topics we've examined in this module, check out 
 
 - [Conditional Access in Enterprise Mobility + Security](https://youtu.be/A7IrxAH87wc)
 
-- [Using the location condition in a Conditional Access policy](https://docs.microsoft.com/azure/active-directory/conditional-access/location-condition)
+- [Using the location condition in a Conditional Access policy](/azure/active-directory/conditional-access/location-condition)
 
-- [Use compliance policies to set rules for devices you manage with Intune](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started)
+- [Use compliance policies to set rules for devices you manage with Intune](/mem/intune/protect/device-compliance-get-started)
 
 - [Introducing security defaults](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/introducing-security-defaults/ba-p/1061414)
 
-- [Plan a Conditional Access deployment](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access)
+- [Plan a Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access)
 

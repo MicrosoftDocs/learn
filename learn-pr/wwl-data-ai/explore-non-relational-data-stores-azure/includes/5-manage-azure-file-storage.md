@@ -3,7 +3,7 @@ You can use Azure File storage to store shared files. Users can connect to a sha
 In this unit, you'll learn how to create and manage file shares, and upload and download files in Azure File storage.
 
 > [!NOTE]
-> Files in a file share tend to be handled in a different manner from blobs. In many cases, users simply read and write files as though they were local objects. For this reason, although the Azure CLI and Azure PowerShell both provide programmatic access to Azure File storage, this unit concentrates on the the tools available in the Azure portal, and the [AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy-v10) command.
+> Files in a file share tend to be handled in a different manner from blobs. In many cases, users simply read and write files as though they were local objects. For this reason, although the Azure CLI and Azure PowerShell both provide programmatic access to Azure File storage, this unit concentrates on the the tools available in the Azure portal, and the [AzCopy](/azure/storage/common/storage-use-azcopy-v10) command.
 
 ## Create a file share
 
@@ -11,7 +11,7 @@ Microsoft provides two graphical tools you can use to create and manage file sha
 
 ### Use the Azure portal
 
-Select **File shares** in the main pane of the **Overview** page for an Azure Storage account (this is also available in the **File service** section of the command bar):
+Select **File shares** in the main pane of the **Overview** page for an Azure Storage account, and also available in the **File service** section of the command bar:
 
 > [!div class="mx-imgBorder"]
 > ![Image of the **Overview** page for a storage account in the Azure portal. The user has selected the **File shares** command](../media/5-file-shares.png)

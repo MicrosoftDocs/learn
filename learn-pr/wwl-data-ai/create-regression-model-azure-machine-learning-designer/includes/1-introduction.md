@@ -1,4 +1,4 @@
-*Regression* is a form of machine learning that is used to predict a numeric *label* based on an item's *features*. For example, an automobile sales company might use the characteristics of car (such as engine size, number of seats, mileage, and so on) to predict its likely selling price. In this case, the characteristics of the car are the features, and the selling price is the label.
+*Regression* is a form of machine learning that is used to predict a numeric *label* based on an item's *features*. For example, an automobile sales company might use the characteristics of a car (such as engine size, number of seats, mileage, and so on) to predict its likely selling price. In this case, the characteristics of the car are the features, and the selling price is the label.
 
 > [!div class="centered"]
 > ![A car priced at $9,999](../media/automobile.png)

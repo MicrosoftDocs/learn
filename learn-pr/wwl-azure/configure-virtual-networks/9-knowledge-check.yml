@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-virtual-networks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/19/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "When assigning private IPv4 addresses in a subnet with the address range 10.3.0.0/16, which of the following addresses are available for assignment dynamically?"
+    choices:
+    - content: "10.3.0.2"
+      isCorrect: false
+      explanation: "That's incorrect. Azure reserves the first four addresses in each subnet address range. These four addresses cannot be assigned to resources: 10.3.0.0-10.3.0.3."
+    - content: "10.3.255.255"
+      isCorrect: false
+      explanation: "That's incorrect. This is the subnet broadcast address, which is unavailable."
+    - content: "10.3.255.254"
+      isCorrect: true
+      explanation: "That's correct. Any address in the range 10.3.0.4 through 10.3.255.254 is available for assignment."
+  - content: "The infrastructure team has implemented firewall rules to deny traffic based on IP address ranges. Which of the following should be used to meet the requirement?"
+    choices:
+    - content: "Dynamically assigned IP addresses."
+      isCorrect: false
+      explanation: "That's incorrect. Dynamically assigned IP addresses will require the Firewall rules to be changed."
+    - content: "Statically assigned IP addresses."
+      isCorrect: true
+      explanation: "That's correct. In this situation, use statically assigned IP addresses to avoid having to change the Firewall rules."
+    - content: "IP addresses in the reserved range."
+      isCorrect: false
+      explanation: "That's incorrect. IP addresses in the reserved range cannot be used."
+  - content: "Which of the following resources could have a public IP address?"
+    choices:
+    - content: "Virtual Machine"
+      isCorrect: true
+      explanation: "That's correct. Public IP addresses can be assigned to virtual machines."
+    - content: "Azure Data Lake"
+      isCorrect: false
+      explanation: "That's incorrect. Although Azure Data Lake is accessible over the internet, a public IP address is not assigned to the service."
+    - content: "Azure Key Vault"
+      isCorrect: false
+      explanation: "That's incorrect. Although Azure Key Vault is accessible over the internet, a public IP address is not assigned to the service."

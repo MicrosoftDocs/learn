@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-set-up-environment.4-install-rust
+metadata:
+  title: Install Rust
+  description: Install Rust so you can start programming.
+  ms.date: 07/26/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Install Rust
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-install-rust.md)]
+
+quiz:
+  questions:
+
+  - content: "What's the recommended command to use to install Rust?"
+    choices:
+    - content: "`rinstall`"
+      isCorrect: false
+      explanation: "Incorrect. The command `rinstall` isn't recognized in Rust."
+    - content: "`rustup`"
+      isCorrect: true
+      explanation: "Correct! The `rustup` command is a toolchain installer for Rust. You can update your environment to the latest stable version of Rust by running the command `rustup update`."
+    - content: "`rupdate`"
+      isCorrect: false
+      explanation: "Incorrect. The command `rupdate` isn't recognized in Rust."
+
+  - content: "How frequently are the Rust libraries updated?"
+    choices:
+    - content: "Every six months"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Every three months"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Every six weeks"
+      isCorrect: true
+      explanation: "Correct. Rust has a six-week, rapid release process. There are many builds of Rust available at any time."

@@ -2,6 +2,8 @@ By using the powerful copy loops feature, you can create dynamic and flexible te
 
 In this unit, you learn how to control the execution of copy loops, and how to use resource property loops and nested loops in Bicep.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Control loop execution
 
 By default, Azure Resource Manager creates resources from loops in parallel, and in a non-deterministic order. When you created loops in the previous exercises, both of the Azure SQL logical servers were created at the same time. This helps to reduce the overall deployment time, because all of the resources within the loop are deployed at once. 

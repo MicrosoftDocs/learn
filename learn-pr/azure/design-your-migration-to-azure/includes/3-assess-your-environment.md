@@ -27,11 +27,11 @@ When the data collection is complete, it's pushed to your Azure Migrate project.
 
 For VMware environments, the process can be visualized as follows:
 
-![Azure Migrate Architecture](../media/3-azure-migrate-architecture.svg)
+![Azure Migrate Architecture.](../media/3-azure-migrate-architecture.svg)
 
 If your company wants details about how the VMs are related to each other (via a visualization of dependencies), you can install agents to collect that data. Azure Migrate will prompt you to install the Microsoft Monitoring Agent and Dependency Agent on each VM. The agents are available for both Windows and Linux.
 
-![Screenshot of the Azure Migrate assessment showing missing agents](../media/3-machines-no-agent.png)
+![Screenshot of the Azure Migrate assessment showing missing agents.](../media/3-machines-no-agent.png)
 
 After these agents are installed and configured, they collect data like fully qualified domain name (FQDN), OS, IP addresses, MAC addresses, running processes, and incoming and outgoing TCP connections.
 
@@ -39,4 +39,4 @@ After these agents are installed and configured, they collect data like fully qu
 
 Azure Migrate can now assess your environment's readiness to be migrated to Azure. In the portal, select the **Assessments** section, and then select **Create assessment**. An assessment is created with default settings. You can change these settings later by editing the properties of the assessment.
 
-![Azure Migrate Assessment Overview screen](../media/3-assessment-overview.png)
+![Azure Migrate Assessment Overview screen.](../media/3-assessment-overview.png)

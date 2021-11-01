@@ -14,11 +14,11 @@ summary: Describe the caching features and configurations of Azure HPC Cache tha
 abstract: |
   By the end of this module, you'll be able to:
   
-  - Evaluate whether Azure HPC Cache is appropriate for improving the productivity of your high-performance computing applications.
-  - Describe how Azure HPC Cache enables you to accelerate, scale, and manage your file-based high performance computing workloads in Azure.
+  - Evaluate whether HPC Cache is appropriate for improving the productivity of your high-performance computing applications.
+  - Describe how HPC Cache enables you to accelerate, scale, and manage your file-based high performance computing workloads in Azure.
 prerequisites: |
   - Understanding of basic NFS storage concepts like read and write operations.
-  - Basic understanding of networking concepts like bandwidth and leased lines like ExpressRoute.
+  - Basic understanding of networking concepts like bandwidth and leased lines like Azure ExpressRoute.
   - Knowledge of how basic caching works like saving data on fast media for future requests.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

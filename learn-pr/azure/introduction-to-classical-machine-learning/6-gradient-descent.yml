@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.introduction-to-classical-machine-learning.gradient-descent
+title: Optimize models using gradient descent
+metadata:
+  title: Optimize models using gradient descent
+  description: Conceptual unit about optimizing models using gradient descent
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-gradient-descent.md)] 

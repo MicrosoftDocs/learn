@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cna-set-up-apps-use-scale.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to setting up apps for use and scale
+  ms.date: 05/19/2021
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

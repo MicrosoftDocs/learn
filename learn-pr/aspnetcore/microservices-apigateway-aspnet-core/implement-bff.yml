@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-apigateway-aspnet-core.implement-bff
+metadata:
+  title: Implement a new Backend for Frontend
+  description: Implement a new Backend for Frontend.
+  author: camsoper
+  ms.author: casoper
+  ms.date: 05/12/2021
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Implement a new Backend for Frontend
+durationInMinutes: 15
+content: |
+  [!include[](includes/implement-bff.md)]

@@ -22,7 +22,7 @@ In the Azure portal, you create an Azure AD application to represent your app. Y
 
 If all of the resources are in the same tenant, then you need to associate only one service principal. If your app needs access to Azure resources in a different tenant, then you need a service principal for each tenant.
 
-![Diagram showing the relationship between service principals and tenants](../media/2-service-principal-overview.svg)
+![Diagram showing the relationship between service principals and tenants.](../media/2-service-principal-overview.svg)
 
 You create your service principal:
 
@@ -43,7 +43,7 @@ You can provision an application for Microsoft identity platform in several ways
 
 1. In the upper-left corner, select **New registration**.
 
-    ![Screenshot showing how to add an application to Azure AD](../media/2-adding-an-app.png)
+    ![Screenshot showing how to add an application to Azure AD.](../media/2-adding-an-app.png)
 
 1. Enter a display name for the app.
 
@@ -62,7 +62,7 @@ Azure AD applications must be assigned roles so that they can work with other se
 
 RBAC permissions are inherited from the level of the scope set. For example, if you assign the reader role to a resource group, read permissions are assigned to all resources within that group.
 
-![Screenshot showing how to add a role to an application](../media/2-adding-a-role.png)
+![Screenshot showing how to add a role to an application.](../media/2-adding-a-role.png)
 
 Use the Azure portal to assign the roles that your app needs to access the key vault:
 
@@ -81,7 +81,7 @@ To access Azure resources by using service principals, you need two parameters:
 - **Directory (tenant) ID**: Unique ID that identifies the Azure AD tenant.
 - **Application (client) ID**: Unique ID that identifies your Azure AD application.
 
-![Screenshot showing how to add a client secret](../media/2-adding-a-secret.png)
+![Screenshot showing how to add a client secret.](../media/2-adding-a-secret.png)
 
 To authenticate requests, the application needs credentials. The credentials allow the application to identify itself. Choose from two forms of credentials:
 

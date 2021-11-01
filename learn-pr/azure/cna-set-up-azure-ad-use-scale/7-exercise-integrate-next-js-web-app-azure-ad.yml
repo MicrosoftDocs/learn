@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cna-set-up-apps-use-scale.7-exercise-integrate-next-js-web-app-azure-ad
+title: Exercise - Integrate Next.js web app with Azure AD
+metadata:
+  title: Exercise - Integrate Next.js web app with Azure AD
+  description: Exercise - Integrate Next.js web app with Azure AD
+  ms.date: 05/19/2021
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 25
+content: |
+  [!include[](includes/7-exercise-integrate-next-js-web-app-azure-ad.md)]

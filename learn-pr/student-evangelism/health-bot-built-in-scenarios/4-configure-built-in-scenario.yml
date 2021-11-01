@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-built-in-scenarios.4-configure-built-in-scenario
+title: Configure built-in scenarios
+metadata:
+  title: Configure built-in scenarios
+  description: Learn how to configure the built-in scenarios and control every aspect of the Azure Health Bot instance functionality.
+  author: Dwitrisha
+  ms.author: chnoring
+  ms.date: 07/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-configure-built-in-scenario.md)]

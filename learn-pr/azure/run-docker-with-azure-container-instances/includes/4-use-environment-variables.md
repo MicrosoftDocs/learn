@@ -46,7 +46,7 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
     az container create \
       --resource-group learn-deploy-aci-rg \
       --name aci-demo \
-      --image microsoft/azure-vote-front:cosmosdb \
+      --image mcr.microsoft.com/azuredocs/azure-vote-front:cosmosdb \
       --ip-address Public \
       --location eastus \
       --environment-variables \
@@ -54,7 +54,7 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
         COSMOS_DB_MASTERKEY=$COSMOS_DB_MASTERKEY
     ```
 
-    **microsoft/azure-vote-front:cosmosdb** refers to a Docker image that runs a fictitious voting app.
+    **azuredocs/azure-vote-front:cosmosdb** refers to a Docker image that runs a fictitious voting app.
 
     Note the `--environment-variables` argument. This argument specifies environment variables that are passed to the container when the container starts. The container image is configured to look for these environment variables. Here, you pass the name of the Azure Cosmos DB endpoint and its connection key.
 
@@ -121,7 +121,7 @@ In this part, you'll learn how to prevent sensitive information, such as connect
     az container create \
       --resource-group learn-deploy-aci-rg \
       --name aci-demo-secure \
-      --image microsoft/azure-vote-front:cosmosdb \
+      --image mcr.microsoft.com/azuredocs/azure-vote-front:cosmosdb \
       --ip-address Public \
       --location eastus \
       --secure-environment-variables \

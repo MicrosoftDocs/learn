@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters.exercise-decision-trees
+title: Exercise - Decision trees and model architecture
+metadata:
+  title: Exercise - Decision trees and model architecture
+  description: Learn how to build a simple model.
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+sandbox: true
+notebook: notebooks/7-3-exercise-decision-trees.ipynb

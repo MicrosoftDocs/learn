@@ -8,7 +8,7 @@ In this unit, you'll explore on-premises hybrid connectivity by using ExpressRou
 
 Azure ExpressRoute is an Azure service that allows you to extend on-premises networks over a private connection. A connectivity provider helps make this connection. ExpressRoute extends beyond Azure and lets you establish connections to other Microsoft cloud services, such as Office 365.
 
- ![Diagram of an ExpressRoute connection](../media/3-expressroute.svg)
+ ![Diagram of an ExpressRoute connection.](../media/3-expressroute.svg)
 
 ExpressRoute connections don't use the public internet. By using a dedicated connection between your on-premises network and Azure, you achieve greater resilience, faster speeds, higher security, and lower latency.
 
@@ -16,7 +16,7 @@ ExpressRoute connections don't use the public internet. By using a dedicated con
 
 There are three ExpressRoute connectivity types, each serving a different need, as shown in the following diagram:
 
-![Diagram of ExpressRoute connectivity models](../media/3-expressroute-connectivity-models.svg)
+![Diagram of ExpressRoute connectivity models.](../media/3-expressroute-connectivity-models.svg)
 
 - **CloudExchange**: With the CloudExchange method, you cross-connect to Azure by using the Ethernet exchange that's provided by your colocation facility.
 - **Any-to-any**: With the any-to-any network method, you integrate your WAN with Azure by using an IP virtual private network (VPN) provider. This connection type offers links between branch offices and datacenters. When it's enabled, the connection to Azure is similar to any other branch office that's connected via the WAN.
@@ -60,7 +60,7 @@ To use ExpressRoute, you must have a private connection, which is provided by a 
 
 The reference architecture that's illustrated in the following diagram shows how to connect your on-premises network to your Azure virtual networks.
 
-![Diagram of ExpressRoute reference architecture](../media/3-expressroute-architecture.svg)
+![Diagram of ExpressRoute reference architecture.](../media/3-expressroute-architecture.svg)
 
 The architecture model includes several components:
 

@@ -28,7 +28,7 @@ We're gathering tools and building a foundation as a web developer. Remember, yo
 
 #### CSS3
 
-- [MDN web docs - CSS3](https://developer.mozilla.org/docs/Archive/CSS3)
+- [MDN web docs - CSS3](https://developer.mozilla.org/docs/Web/CSS)
 - [W3Schools CSS Reference](https://www.w3schools.com/cssref/)
 
 

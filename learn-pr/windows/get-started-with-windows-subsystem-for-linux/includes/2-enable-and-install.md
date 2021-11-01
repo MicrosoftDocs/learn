@@ -32,7 +32,7 @@ In general, you want to choose a distribution that offers the software packages 
 
 For alternative installation methods or troubleshooting, see [Windows Subsystem for Linux Installation Guide for Windows 10](/windows/wsl/install-win10).
 
-![View of Linux distributions in Microsoft Store](../media/store.png)
+![View of Linux distributions in Microsoft Store.](../media/store.png)
 
 
 3. After the Linux distribution has installed, open it. If you miss the prompt after the install, type the name of your distro in the **Start** menu - for example *ubuntu*. You'll be prompted to create an account name and password when you run a distribution for the first time. After this first time, when you start the distribution, you'll be signed in as this normal (non-admin) user by default.

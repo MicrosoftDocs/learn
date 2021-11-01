@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-bot-service-bot-framework-composer.2-what-is-azure-bot-service
+title: What are bot service and bot framework?
+metadata:
+  unitType: learning-content
+  title: What are bot service and bot framework?
+  description: What is Azure Bot Service?
+  ms.date: 6/15/2021
+  author: jasonkellingtonwaypoint
+  ms.author: v-jaske
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-what-is-azure-bot-service.md)]

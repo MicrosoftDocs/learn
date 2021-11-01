@@ -1,6 +1,6 @@
 The security operations team has informed us that we need to conform to the company policy of only allowing authorized services to communicate on production devices.  This team watches everything that happens on the company network and could potentially block our access to the network if we do not adhere to their policies.
 
-[![Operations](../media/ops.png)](../media/ops.png#lightbox)
+[![Operations.](../media/ops.png)](../media/ops.png#lightbox)
 
 To meet this requirement, we can employ firewall settings that explicitly authorize pre-determined ports for data transmission then block everything else.  This strategy will ensure that our IoT Edge Gateway is locked down and running only the services that we have granted permission to.  
 

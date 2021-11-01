@@ -32,7 +32,7 @@ Site Recovery can be used alongside SQL-specific high-availability technologies,
 
 ### SharePoint
 
-![Diagram showing the complexity of a high-demand SharePoint farm architecture, which includes web servers, app servers, and database servers](../media/3-sharepointarch.svg)
+![Diagram showing the complexity of a high-demand SharePoint farm architecture, which includes web servers, app servers, and database servers.](../media/3-sharepointarch.svg)
 
 Protecting SharePoint with Site Recovery allows for all the servers that make up the solution to be failed over at the same time. In the previous example, a high-demand server farm can include web, app, and database server groups. The constant replication to Azure allows any updates deployed to the live environment to be automatically deployed to the replica to allow for patch consistency during a failover.
 

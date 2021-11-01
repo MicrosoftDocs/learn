@@ -6,7 +6,7 @@ In this unit, you'll look at how to use virtual network service endpoints for se
 
 Use virtual network service endpoints to extend your private address space in Azure by providing a direct connection to your Azure services. Service endpoints let you secure your Azure resources to only your virtual network. Service traffic will remain on the Azure backbone, and doesn't go out to the internet.
 
-![Diagram of a service endpoint on a private network](../media/4-service-endpoint.svg)
+![Diagram of a service endpoint on a private network.](../media/4-service-endpoint.svg)
 
 By default, Azure services are all designed for direct internet access. All Azure resources have public IP addresses, including PaaS services, such as Azure SQL Database and Azure Storage. Because these services are exposed to the internet, anyone can potentially access your Azure services.
 
@@ -62,4 +62,4 @@ Service resources that you've secured by using virtual network service endpoints
 
 The following diagram shows how you can use a service endpoint and firewall configuration to enable on-premises devices to access Azure Storage resources.
 
-![Diagram of a service endpoint for on-premises access to Azure resources](../media/4-service-endpoint-flow.svg)
+![Diagram of a service endpoint for on-premises access to Azure resources.](../media/4-service-endpoint-flow.svg)

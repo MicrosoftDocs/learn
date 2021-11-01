@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-basic-bot.2-get-started-with-custom-scenario
+title: Get started with a custom scenario
+metadata:
+  title: Get started with a custom scenario
+  description: In this unit, you'll learn how to get started with creating a new scenario.
+  author: Meghana-ch
+  ms.author: chnoring
+  ms.date: 07/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-get-started-with-custom-scenario.md)]

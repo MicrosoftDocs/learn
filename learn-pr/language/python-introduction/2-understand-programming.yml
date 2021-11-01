@@ -3,10 +3,11 @@ uid: learn.languages.python-introduction.understand-programming
 title: What is programming?
 metadata:
   title: What is programming?
-  description: Learn about source code, the process of programming, and the end goal of programming.
-  ms.date: 12/04/2019
+  description: Learn about source code, the process of programming, and the end
+    goal of programming.
+  ms.date: 07/02/2021
   author: bobtabor-msft
-  ms.author: rotabor
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

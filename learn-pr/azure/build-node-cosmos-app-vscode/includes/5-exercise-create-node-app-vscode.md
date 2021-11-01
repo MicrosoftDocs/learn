@@ -162,7 +162,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 ## Test the studentgrades app
 
-You'll now run the app and verify that the **Student** class creates student objects and can assign grades correctly. You'll use the test harness to prompt the user for the details of two students. The details of the students and the course grades assigned by the test harness will be displayed.
+You'll now run the app and verify that the **Student** class creates student objects and can assign grades correctly. You'll use the test harness to prompt the user for the details of two students. The details of the students and the course grades assigned by the test harness will appear.
 
 The application doesn't store student information in the Azure Databases extension. You'll see how to do that in the next exercise.
 
@@ -181,7 +181,7 @@ The application doesn't store student information in the Azure Databases extensi
     | Enter the student's forename: | EEE |
     | Enter the student's lastname: | FFF |
 
-    The following messages should be displayed, output by the statements `process.stdout.write(student1.toString());` and `process.stdout.write(student1.getGrades());` in the `test` function.
+    The following messages should appear, output by the statements `process.stdout.write(student1.toString());` and `process.stdout.write(student1.getGrades());` in the `test` function.
 
     ```text
     001: EEE, FFF

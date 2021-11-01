@@ -23,4 +23,4 @@ Azure Cognitive Search supports these scenarios by enabling you to define a *kno
 In this module, you'll implement a knowledge store for *Margie's Travel*, a fictitious travel agency that uses information in brochures and hotel reviews to help customers plan trips.
 
 > [!NOTE]
-> This module assumes you already know how to create and use an Azure Cognitive Search solution that includes built-in skills. If not, complete the [Create an Azure Cognitive Search solution](https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/) module first.
+> This module assumes you already know how to create and use an Azure Cognitive Search solution that includes built-in skills. If not, complete the [Create an Azure Cognitive Search solution](/learn/modules/create-azure-cognitive-search-solution/) module first.

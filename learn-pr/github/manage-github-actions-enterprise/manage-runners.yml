@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.manage-github-actions-enterprise.manage-runners
+title: Manage runners
+metadata:
+  title: Manage runners
+  description: Discover the different tools and strategies available to you in GitHub Enterprise Cloud and GitHub Enterprise Server in order to manage the use of GitHub Actions runners in your enterprise.
+  ms.date: 06/09/2021
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/manage-runners.md)]

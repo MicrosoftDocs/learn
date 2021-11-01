@@ -22,4 +22,4 @@ The Batch service will then handle bringing the nodes online and scheduling task
 
 <!-- TODO: Graphic similar to the one here, but please replace 'Application or service' with 'Azure CLI' and an image of a terminal window https://docs.microsoft.com/azure/batch/batch-technical-overview> -->
 
-![Azure Batch workflow](../media/2-azure-batch-workflow.png)
+![Azure Batch workflow.](../media/2-azure-batch-workflow.png)

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.accelerate-migration-journey.7-azure-migration-programs
-title: Azure Migration Program
+title: Azure Migration and Modernization Program
 metadata:
-  title: Azure Migration Program
-  description: This unit examines the programs provided by Microsoft to provide expert help for successful migrations to Azure. 
+  title: Azure Migration and Modernization Program
+  description: This unit examines the programs provided by Microsoft to provide expert help for successful migrations and modernizations to Azure. 
   ms.date: 02/12/2021
   author: jamcneil
   ms.author: jumcn

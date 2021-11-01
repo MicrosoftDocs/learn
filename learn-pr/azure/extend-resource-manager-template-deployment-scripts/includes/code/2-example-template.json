@@ -20,7 +20,12 @@
       },
       "properties": {
         "azPowerShellVersion": "3.0",
-        "scriptContent": "$output = 'Hello Learner! 'Write-Output $output$DeploymentScriptOutputs = @{}$DeploymentScriptOutputs['text'] = $output",
+        "scriptContent": "
+            $output = 'Hello Learner!'
+            Write-Output $output
+            $DeploymentScriptOutputs = @{}
+            $DeploymentScriptOutputs['text'] = $output
+        ",
         "retentionInterval": "P1D"
       }
     }

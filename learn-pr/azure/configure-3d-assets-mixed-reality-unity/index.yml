@@ -41,7 +41,7 @@ prerequisites: |
   - Introduction to Mixed Reality, Azure Digital Twin and Unity Module
   - Build a 3D Scene in Unity with Maps SDK Module
   - Fundamental working knowledge of Unity
-  - Understanding of how to build for and deploy to the HoloLens
+  - Understanding of how to build for and deploy to mixed reality devices
   - Understanding of MRTK 
   - Fundamental understanding of Level Of Detail (LOD) concepts
 units:

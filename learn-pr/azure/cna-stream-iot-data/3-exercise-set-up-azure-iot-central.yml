@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.cna-stream-iot-data.3-exercise-set-up-azure-iot-central
+title: Exercise - Set up Azure IoT Central
+metadata:
+  title: Exercise - Set up Azure IoT Central
+  description: Setup of Azure IoT Central
+  ms.date: 04/24/2021
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-set-up-azure-iot-central.md)]

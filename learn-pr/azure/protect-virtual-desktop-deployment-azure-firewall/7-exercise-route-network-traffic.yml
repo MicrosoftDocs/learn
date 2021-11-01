@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-virtual-desktop-deployment-azure-firewall.exercise-route-network-traffic
+title: Exercise - Route network traffic through Azure Firewall
+metadata:
+  unitType: exercise
+  title: Exercise - Route network traffic through Azure Firewall
+  description: Exercise - Route network traffic through Azure Firewall
+  ms.date: 07/05/2021 
+  author: cwatson-cat 
+  ms.author: cwatson 
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-exercise-route-network-traffic.md)]

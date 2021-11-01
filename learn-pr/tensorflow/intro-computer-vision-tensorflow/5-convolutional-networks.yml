@@ -1,0 +1,67 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-computer-vision.convolutional-networks
+title: Convolutional neural networks
+metadata:
+  title: Convolutional neural networks
+  description: Learn special convolutional architecture of neural networks for image recognition tasks
+  ms.date: 07/07/2021
+  author: shwars
+  ms.author: dmitryso
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+sandbox: true
+notebook: notebooks/5-convolutional-networks.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "How do the number of parameters in a convolutional layer and dense layer correlate?"
+      choices:
+        - content: "A convolutional layer contains more parameters"
+          isCorrect: false
+          explanation: "A convolutional layer contains small filters that have the same weights for the whole image"
+        - content: "A convolutional layer contains less parameters"
+          isCorrect: true
+          explanation: "Correct, a convolutional layer contains small filters that have the same weights for the whole image"
+    - content: "If the size of an input image is **320x200x3**, what would be the size of the tensor after applying a 5x5 convolutional layer with 16 filters?"
+      choices:
+        - content: "316x196x16"
+          isCorrect: true
+          explanation: "This is correct"
+        - content: "316x196x3"
+          isCorrect: false
+          explanation: "First dimension should correspond to the number of filters"
+        - content: "320x200x3x16"
+          isCorrect: false
+          explanation: "Color dimension goes away after applying filters. Also, do not forget that sliding window reduces the spatial dimension."
+        - content: "320x200x48"
+          isCorrect: false
+          explanation: "Color dimension goes away after applying filters. Also, do not forget that sliding window reduces the spatial dimension."
+        - content: "The size of input image is 3x320x200, what would be the size of the tensor after applying 5x5 convolutional layer with 16 filters?"
+          isCorrect: false
+          explanation: "Incorrect."
+    - content: "Which layers do we apply to significantly reduce spatial dimension in multi-layered CNN?"
+      choices:
+        - content: "Convolution"
+          isCorrect: false
+          explanation: "Convolution layer only slightly reduces the dimension of the image"
+        - content: "Flatten"
+          isCorrect: false
+          explanation: "Flatten is used to reshape spatial tensor into a linear vector"
+        - content: "MaxPooling"
+          isCorrect: true
+          explanation: "Pooling layers (such as MaxPooling or AveragePooling) are used to decrease the dimension, usually by a factor of 2"
+    - content: "Which layer is used between convolutional base of the network and final linear classifier?"
+      choices:
+        - content: "Convolution"
+          isCorrect: false
+          explanation: "Convolution layers are used in convolutional base"
+        - content: "Flatten"
+          isCorrect: true
+          explanation: "Flatten is used to reshape spatial tensor into a linear vector"
+        - content: "MaxPooling"
+          isCorrect: false
+          explanation: "Pooling layers are often used to reduce the dimension in between convolutional layers"
+        - content: "Sigmoid"
+          isCorrect: false
+          explanation: "Sigmoid is usually used after the final layer to get the probability output"

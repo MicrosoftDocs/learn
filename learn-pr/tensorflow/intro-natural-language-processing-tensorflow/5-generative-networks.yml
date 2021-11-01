@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-natural-language-processing.generative-networks
+title: Generate text with recurrent networks
+metadata:
+  title: Generate text with recurrent networks
+  description: In this unit, we learn how to use recurrent networks to generate text, by using the output at each network layer.
+  author: shwars
+  ms.author: dmitryso
+  ms.date: 07/07/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+sandbox: true
+notebook: notebooks/5-generative-networks.ipynb

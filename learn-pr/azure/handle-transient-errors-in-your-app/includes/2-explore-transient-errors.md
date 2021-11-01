@@ -1,4 +1,4 @@
-![Overview of all four transient error types](../media/2-transient-errors.png)
+![Overview of all four transient error types.](../media/2-transient-errors.png)
 
 Transient errors (or transient faults) are an error or loss of service that quickly resolves itself.
 
@@ -15,13 +15,13 @@ In this unit, we'll examine the categories of transient errors your app can face
 
 ### Connectivity
 
-![A plug and socket icon, representing a network connection](../media/2-connectivity.png)
+![A plug and socket icon, representing a network connection.](../media/2-connectivity.png)
 
 The loss of network connectivity is the most obvious error an app connecting to a cloud-based service can face. The connection can be broken locally when, for example, the device the app is running loses Wi-Fi connectivity. The connection can be lost because of DNS or routing errors. Perhaps the data center in which the service is running has gone offline. While a database server is being upgraded, or is under heavy load, the app's connection to it can be lost. In many instances, these problems are self-healing, and the connection will be back online without any external intervention. Build your app to check a connection is available before you start to use it. If the connection becomes unavailable, the app should try to connect again after an amount of time.
 
 ### Timeouts
 
-![A stopwatch icon, representing time passing](../media/2-timeouts.png)
+![A stopwatch icon, representing time passing.](../media/2-timeouts.png)
 
 A web-based service can have an active connection, but be unable to respond to calls quickly. How long should your app wait? If you aren't getting a response from a service, should you make the request again? If everyone who is using the service repeatedly makes requests again and again, can the service ever respond? If you retry the operation, is your data going to be duplicated if both the requests are eventually processed?
 
@@ -29,18 +29,18 @@ All apps need to decide when to give up on a request. An app should only retry a
 
 ### Throughput
 
-![A speed gauge icon, showing the needle in red representing slow speed](../media/2-throughput.png)
+![A speed gauge icon, showing the needle in red representing slow speed.](../media/2-throughput.png)
 
 Successful cloud-based services need to have a policy of throttling requests when the service is struggling under load to respond in an appropriate time. By reducing the throughput the service gives to clients, it's able to remain online and useful, rather than crashing and becoming permanently unavailable. Additionally, services should clearly communicate to clients when requests are rejected due to throttling, and clients should be able to respond to those communications by adjusting the rate at which they make requests. This ability to create *backpressure* helps to ensure that all the components in a processing pipeline remain healthy.
 
 ### Service unavailability
-![A cloud with a power button symbol icon, representing a cloud-based service being unavailable](../media/2-unavailable.png)
+![A cloud with a power button symbol icon, representing a cloud-based service being unavailable.](../media/2-unavailable.png)
 
 Perhaps the service you use is currently unavailable. Some APIs may return a time when the app should retry the request. How will your app handle the missing functionality? Apps should *gracefully degrade* and strive to be of use to an end user even if microservices, online storage, or hosted databases the app uses become unreachable. If the service is provided by a third party, you may not have visibility as to when it will become available again. One approach to handling a service outage is to store a cache of the data returned by services. Your app can then fall back to using the data stored in the cache, and refresh it when the service comes back online.
 
 ## An approach to transient errors
 
-![A pie chart showing the workflow of detect, retry, and back-off. An arrow rotates round the outside showing these steps are repeated](../media/2-approach.png)
+![A pie chart showing the workflow of detect, retry, and back-off. An arrow rotates round the outside showing these steps are repeated.](../media/2-approach.png)
 
 With the different transient faults defined, let's look at an approach that can be used to handle all of them. In the following units, you'll implement this approach in your team's chat app.
 

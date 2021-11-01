@@ -1,8 +1,8 @@
-The HoloLens 2 is Microsoft's flagship Mixed Reality device for hosting unique and immersive experiences that connect users to data, processes, and actions. 
+Microsoft Mixed Reality enables developers to create unique and immersive experiences. Connecting users to data, processes, and actions designed for HoloLens 2 and VR.
 
 ## Example scenario
 
-For this learning path, you'll be working on a simulated industry scenario for a windmill farm by pulling in real-time turbine data using the Azure Digital Twins service. The end goal is to give you a foundation in practical ways of visualizing and experiencing data in a 3D augmented reality environment.
+For this learning path, you'll be working on a simulated industry scenario for a windmill farm by pulling in real-time turbine data using the Azure Digital Twins service. The end goal is to give you a foundation in practical ways of visualizing and experiencing data in a mixed reality environment.
 
 ## What will we be doing?
 

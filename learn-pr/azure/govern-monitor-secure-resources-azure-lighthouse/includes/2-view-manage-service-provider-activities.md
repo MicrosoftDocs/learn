@@ -12,21 +12,21 @@ You use controls within Azure Lighthouse to understand if your service providers
 
 To consolidate the management experience, you can view all of the service providers that have access to your subscriptions or resource groups through Azure delegated resource management. You do this in the Azure portal, by searching for "Azure Lighthouse", and selecting "Manage service provider offers".
 
-:::image type="content" source="../media/2-search-azure-lighthouse.png" alt-text="Search for Azure Lighthouse ":::
+:::image type="content" source="../media/2-search-azure-lighthouse.png" alt-text="Search for Azure Lighthouse .":::
 
 The Service providers pane in the Azure portal is where you’ll view information about your company’s service providers. From the same location, you can also shop for new service provider offers, and delegate specific resources to service providers.
 
-:::image type="content" source="../media/2-service-provider-overview.png" alt-text="View service providers":::
+:::image type="content" source="../media/2-service-provider-overview.png" alt-text="View service providers.":::
 
 To find information about service providers, select **Service provider offers**. You can add new public or private offers from service providers here:
 
 Public offers:
 
-:::image type="content" source="../media/2-public-offers.png" alt-text="Public offers":::
+:::image type="content" source="../media/2-public-offers.png" alt-text="Public offers.":::
 
 Private offers:
 
-:::image type="content" source="../media/2-private-offers.png" alt-text="Private offers":::
+:::image type="content" source="../media/2-private-offers.png" alt-text="Private offers.":::
 
 For each service provider offer, you'll see the service provider's name and the offer associated with it, along with the name that Lamna Healthcare entered during the onboarding process.
 
@@ -36,7 +36,7 @@ When you’ve added service provider offers, you’ll see a list of all the offe
 
 Sometimes, service providers might want to update an offer. In your case, Relecloud say they might want to make changes to include a new role definition for the offer. Azure Lighthouse lets you know when this happens because, whenever an offer is updated by the service provider, the **Service provider offers** pane shows an icon next to the offer in the list.
 
-:::image type="content" source="../media/2-offer-updated.png" alt-text="Offer updated":::
+:::image type="content" source="../media/2-offer-updated.png" alt-text="Offer updated.":::
 
 You then select the notification to review the changes and decide whether you want to update to the new version.
 
@@ -83,7 +83,7 @@ In the following video, you’ll see how to use the activity log to monitor for 
 
 You use activity log alerts to monitor critical operations done by service providers. You can set alerts to be triggered if a virtual machine is removed in a certain resource group, or if any administrative actions are done on a subscription.
 
-:::image type="content" source="../media/2-set-alerts.png" alt-text="Alerts":::
+:::image type="content" source="../media/2-set-alerts.png" alt-text="Alerts.":::
 
 ### Query logs for analysis
 
@@ -99,6 +99,6 @@ Heartbeat
 
 Write the query into the Log Analytic query editor, and select **Run**.
 
-:::image type="content" source="../media/2-query-log-analytics.png" alt-text=" Run a query":::
+:::image type="content" source="../media/2-query-log-analytics.png" alt-text=" Run a query.":::
 
 When the query stops running, you see the results of it in the table, under your query. The results include details like the IP addresses of each computer, the computer name, and more.

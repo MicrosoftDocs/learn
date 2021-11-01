@@ -1,4 +1,4 @@
-![UWP and WPF logos](../media/tech-all.png)
+![UWP and WPF logos.](../media/tech-all.png)
 
 In this module, you learned how to enhance the UIs of your Universal Windows Platform (UWP) or Windows Presentation Foundation (WPF) apps by:
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-strategy.7a-create-a-business-case
+metadata:
+  title: Create a business case
+  description: Understand how to create a business case.
+  ms.date: 06/14/2021
+  author: BrianBlanchard
+  ms.author: bblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a business case
+durationInMinutes: 10
+content: |
+  [!include[](includes/7a-create-a-business-case.md)]

@@ -87,7 +87,7 @@ Let's use the built-in OS module to get some information about your computer's o
    > [!NOTE]
    > Windows might display a firewall warning the first time you launch the web server. This warning is expected.
 
-   ![Screenshot of Express app running in a browser](../media/express-app.png)
+   ![Screenshot of Express app running in a browser.](../media/express-app.png)
 
    > [!NOTE]
    > You can start the app by using just `npm start`, but specifying the `DEBUG` variable enables console logging/debugging.

@@ -17,11 +17,11 @@ The device model section of a device template specifies the capabilities of a de
 - Properties, such as target temperature, that IoT Central will set on your device.
 - Commands, such as reboot, that IoT Central will send to your device.
 
-![An example device template for a temperature controller device in the IoT Central UI](../media/4-device-template.png)
+![An example device template for a temperature controller device in the IoT Central UI.](../media/4-device-template.png)
 
 The capabilities in a device model are grouped into interfaces. Interfaces enable you to share groups of related capabilities across templates. For example, the common *Device Information* interface defines device properties such as the manufacturer, model, and software version.
 
-![The Device Information interface in the example device template in the IoT Central UI](../media/4-device-information.png)
+![The Device Information interface in the example device template in the IoT Central UI.](../media/4-device-information.png)
 
 You create and manage device templates using the IoT Central web UI or the REST API. In the IoT Central web UI, you can:
 

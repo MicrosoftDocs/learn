@@ -6,13 +6,13 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 ::: zone pivot="csharp"
 
-1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Marketplace** pane appears.
+1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Create a resource** pane appears.
 
     Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
 
 1. In the left menu pane, select **Web**.
 
-1. In the Search box, search for and select **Web App**. The **Create Web App** resource pane appears. Select **Create**.
+1. In the search box, search for and select **Web App**. The **Create Web App** resource pane appears. Select **Create**.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -20,7 +20,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     |---|---|---|
     | **Project Details** |
     | Subscription | Concierge Subscription | The web app you are creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you are creating it within the wizard). |
-    | Resource Group | From the dropdown, select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
+    | Resource Group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Instance Details** |
     | Name | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
     | Publish | Code | The method you will use to publish your application. When publishing your application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
@@ -28,8 +28,8 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Operating System | Linux | The operating system used on the virtual servers that run your app. |
     | Region | Central US | The geographical region from which your app will be hosted. |
     | **App Service Plan** |
-    | Linux Plan | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
-    | Sku and size | F1 | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** from the list, then select Apply. |
+    | Linux Plan | Accept default | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
+    | Sku and size | F1 | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** from the list, then select **Apply**. |
 
     :::image type="content" source="../media/3-create-web-app-dotnet.png" alt-text="Screenshot showing web app creation details.":::
 
@@ -37,13 +37,13 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 ::: zone pivot="java"
 
-1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Marketplace** pane appears.
+1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Create a resource** pane appears.
 
     Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
 
 1. In the left menu pane, select **Web**.
 
-1. In the Search box, search for and select **Web App**. The **Create Web App** resource pane appears. Select **Create**.
+1. In the search box, search for and select **Web App**. The **Create Web App** resource pane appears. Select **Create**.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -51,7 +51,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     |---|---|---|
     | **Project Details** |
     | Subscription | Concierge Subscription | The web app you are creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you are creating it within the wizard). |
-    | Resource Group | From the dropdown, select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
+    | Resource Group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Instance Details** |
     | Name | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
     | Publish | Code | The method you will use to publish your application. When publishing your application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
@@ -60,8 +60,8 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Operating System | Linux | The operating system used on the virtual servers that run your app. |
     | Region | Central US | The geographical region from which your app will be hosted. |
     | **App Service Plan** |
-    | Linux Plan | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
-    | Sku and size | F1 | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** from the list, then select Apply. |
+    | Linux Plan | Accept default | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
+    | Sku and size | F1 | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** from the list, then select **Apply**. |
 
     :::image type="content" source="../media/3-create-web-app-java.png" alt-text="Screenshot showing web app creation details.":::
 
@@ -69,13 +69,13 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 ::: zone pivot="node"
 
-1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Marketplace** pane appears.
+1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Create a resource** pane appears.
 
     Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
 
 1. In the left menu pane, select **Web**.
 
-1. In the Search box, search for and select **Web App**. The **Create Web App** resource pane appears. Select **Create**.
+1. In the search box, search for and select **Web App**. The **Create Web App** resource pane appears. Select **Create**.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -83,7 +83,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     |---|---|---|
     | **Project Details** |
     | Subscription | Concierge Subscription | The web app you are creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you are creating it within the wizard). |
-    | Resource Group | From the dropdown, select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
+    | Resource Group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Instance Details** |
     | Name | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
     | Publish | Code | The method you will use to publish your application. When publishing your application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
@@ -91,8 +91,8 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Operating System | Linux | The operating system used on the virtual servers that run your app. |
     | Region | Select *West US* or *Central US* | The geographical region from which your app will be hosted. |
     | **App Service Plan** |
-    | Linux Plan | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
-    | Sku and size | F1 | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** from the list, then select Apply. |
+    | Linux Plan | Accept default | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
+    | Sku and size | F1 | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** from the list, then select **Apply**. |
 
     :::image type="content" source="../media/3-create-web-app-node.png" alt-text="Screenshot showing web app creation details.":::
 
@@ -100,13 +100,13 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 ::: zone pivot="python"
 
-1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Marketplace** pane appears.
+1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Create a resource** pane appears.
 
     Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
 
 1. In the left menu pane, select **Web**.
 
-1. In the Search box, search for and select **Web App**. The **Create Web App** resource pane appears. Select **Create**.
+1. In the search box, search for and select **Web App**. The **Create Web App** resource pane appears. Select **Create**.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -114,7 +114,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     |---|---|---|
     | **Project Details** |
     | Subscription | Concierge Subscription | The web app you are creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you are creating it within the wizard). |
-    | Resource Group | From the dropdown, select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
+    | Resource Group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Instance Details** |
     | Name | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
     | Publish | Code | The method you will use to publish your application. When publishing your application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
@@ -122,8 +122,8 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Operating System | Linux | The operating system used on the virtual servers that run your app. |
     | Region | Select *West US* or *Central US* | The geographical region from which your app will be hosted. |
     | **App Service Plan** |
-    | Linux Plan | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
-    | Sku and size | F1 | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** from the list, then select Apply. |
+    | Linux Plan | Accept default | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
+    | Sku and size | F1 | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** from the list, then select **Apply**. |
 
     :::image type="content" source="../media/3-create-web-app-python.png" alt-text="Screenshot showing web app creation details.":::
 

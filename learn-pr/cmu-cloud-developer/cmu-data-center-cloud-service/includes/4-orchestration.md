@@ -27,7 +27,7 @@ A variety of tools provide orchestration. Puppet and Chef are popular examples.
 
 Puppet is a tool that can be used to issue service commands to multiple client machines from a master machine. This allows developers and systems administrators to manage client machines from a single master machine, providing commands to individual clients based on code that describes the configuration actions that will be performed on each machine: 
 
-![Puppet tool](../media/puppet.png)
+![Puppet tool.](../media/puppet.png)
 
 _Figure 5: Puppet tool_
 

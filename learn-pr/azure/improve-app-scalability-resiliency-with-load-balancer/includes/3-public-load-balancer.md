@@ -8,11 +8,11 @@ By default, Azure Load Balancer distributes network traffic equally among virtua
 
 - **Five-tuple hash**. The default distribution mode for Load Balancer is a five-tuple hash. The tuple is composed of the source IP, source port, destination IP, destination port, and protocol type. Because the source port is included in the hash and the source port changes for each session, clients might be directed to a different virtual machine for each session.
   
-    ![A diagram that shows how hash-based distribution works](../media/3-load-balancer-distribution.svg)
+    ![A diagram that shows how hash-based distribution works.](../media/3-load-balancer-distribution.svg)
 
 - **Source IP affinity**. This distribution mode is also known as *session affinity* or *client IP affinity*. To map traffic to the available servers, the mode uses a two-tuple hash (from the source IP address and destination IP address) or three-tuple hash (from the source IP address, destination IP address, and protocol type). The hash ensures that requests from a specific client are always sent to the same virtual machine behind the load balancer.
 
-    ![A diagram that shows how session affinity works](../media/3-load-balancer-session-affinity.svg)
+    ![A diagram that shows how session affinity works.](../media/3-load-balancer-session-affinity.svg)
 
 ## Choose a distribution mode
 
@@ -32,7 +32,7 @@ To add session persistence through the Azure portal:
 1. Edit the relevant line of the **Load-balancing rules**.
 1. Change the value for **Session persistence** to **Client IP**.
 
-![Screenshot that shows how to set IP affinity in the Azure portal](../media/3-screenshot-session-persistence.png)
+![Screenshot that shows how to set IP affinity in the Azure portal.](../media/3-screenshot-session-persistence.png)
 
 ## Load Balancer and Remote Desktop Gateway
 

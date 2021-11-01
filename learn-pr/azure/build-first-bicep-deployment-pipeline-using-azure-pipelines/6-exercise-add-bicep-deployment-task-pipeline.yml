@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.exercise-add-bicep-deployment-task-pipeline
+title: Exercise - Add a Bicep deployment task to the pipeline
+metadata:
+  unitType: exercise
+  title: Exercise - Add a Bicep deployment task to the pipeline
+  description: Deploy a Bicep infrastructure as code template by using Azure Pipelines and create variables to make your pipeline code reusable.
+  ms.date: 07/20/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-exercise-add-bicep-deployment-task-pipeline.md)]

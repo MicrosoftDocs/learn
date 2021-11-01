@@ -21,7 +21,7 @@ To make the coupon service resilient, you'll implement a Retry and a Circuit Bre
 
 The following sequence diagram shows the flow of events from an `HttpClient` instance to Polly's Retry and Circuit Breaker policies:
 
-:::image type="content" source="../media/5-implement-polly-resiliency/policy-http-message-handlers.png" alt-text="An HttpClient call through multiple PolicyHttpMessageHandlers" border="true" lightbox="../media/5-implement-polly-resiliency/policy-http-message-handlers.png":::
+:::image type="content" source="../media/5-implement-polly-resiliency/policy-http-message-handlers.png" alt-text="An HttpClient call through multiple PolicyHttpMessageHandlers." border="true" lightbox="../media/5-implement-polly-resiliency/policy-http-message-handlers.png":::
 
 Complete the following steps to implement failure handling for the coupon service as described above:
 
@@ -225,7 +225,7 @@ Complete the following steps to test the Retry policy:
 
 1. Check the log traces. You'll see a variation of the following output:
 
-    :::image type="content" source="../media/5-implement-polly-resiliency/configure-and-retry-logs.png" alt-text="log traces" border="true" lightbox="../media/5-implement-polly-resiliency/configure-and-retry-logs.png":::
+    :::image type="content" source="../media/5-implement-polly-resiliency/configure-and-retry-logs.png" alt-text="log traces." border="true" lightbox="../media/5-implement-polly-resiliency/configure-and-retry-logs.png":::
 
     In the preceding image, you can see:
 
@@ -237,7 +237,7 @@ Complete the following steps to test the Retry policy:
 
 To test the Circuit Breaker policy, you'll configure the code for 20 failures. Accordingly, you'll use the discount code *:::no-loc text="FAIL 20 DISC-10":::*:
 
-:::image type="content" source="../media/5-implement-polly-resiliency/configure-severe-failure.png" alt-text="configure a severe failure" border="true" lightbox="../media/5-implement-polly-resiliency/configure-severe-failure.png":::
+:::image type="content" source="../media/5-implement-polly-resiliency/configure-severe-failure.png" alt-text="configure a severe failure." border="true" lightbox="../media/5-implement-polly-resiliency/configure-severe-failure.png":::
 
 1. Place an item in the shopping bag and begin the checkout procedure.
 1. Enter the discount code *:::no-loc text="FAIL 20 DISC-10":::* and select **:::no-loc text="APPLY":::**.
@@ -251,7 +251,7 @@ To test the Circuit Breaker policy, you'll configure the code for 20 failures. A
 
     The error message is received immediately. You can see this error clearly in the log traces:
 
-    :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-logs.png" alt-text="severe failures in log traces" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-logs.png":::
+    :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-logs.png" alt-text="severe failures in log traces." border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-logs.png":::
 
     In the preceding image, notice that:
 
@@ -259,7 +259,7 @@ To test the Circuit Breaker policy, you'll configure the code for 20 failures. A
     * On the next try, you validate the code. You receive the HTTP 500 error message after waiting only 3.4 seconds, labeled as ":::no-loc text="3":::". You don't see the ":::no-loc text="Get coupon...":::" trace, meaning it failed without going to the server.
     * If you check the details on this last trace, you should see a variation of the following output:
 
-        :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-log-detail.png" alt-text="severe failure log detail" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-log-detail.png":::
+        :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-log-detail.png" alt-text="severe failure log detail." border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-log-detail.png":::
 
         Notice that the last trace has the ":::no-loc text="The circuit is now open...":::" message.
 

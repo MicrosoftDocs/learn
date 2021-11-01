@@ -1,3 +1,16 @@
+
+## What is Azure Sentinel
+
+> [!div class="mx-imgBorder"]
+> ![Azure Sentinel screenshot showing the initial configuration screen that allows you to create a new event review, manage views, and open to open KQL queries.](../media/sc300-azure-sentinel.png)
+
+Microsoft Azure Sentinel is a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution. Azure Sentinel is your birds-eye view across the enterprise alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
+- Collect data at cloud scale across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds
+- Detect previously undetected threats, and minimize false positives using Microsoft's analytics and unparalleled threat intelligence
+- Investigate threats with artificial intelligence, and hunt for suspicious activities at scale, tapping into years of cyber security work at Microsoft
+- Respond to incidents rapidly with built-in orchestration and automation of common tasks
+
+
 ## Prerequisites
 
 - Any Azure AD license (Free/O365/P1/P2) is sufficient to ingest sign-in logs into Azure Sentinel. Additional per-gigabyte charges may apply for Azure Monitor (Log Analytics) and Azure Sentinel.
@@ -35,7 +48,7 @@ Use these instructions if you do not already have a workspace available to Azure
 
 ## Connect to Azure Active Directory
 
-You can use Azure Sentinel's built-in connector to collect data from [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) and stream it into Azure Sentinel. The connector allows you to stream [sign-in logs](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-sign-ins) and [audit logs](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs).
+You can use Azure Sentinel's built-in connector to collect data from [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) and stream it into Azure Sentinel. The connector allows you to stream [sign-in logs](/azure/active-directory/reports-monitoring/concept-sign-ins) and [audit logs](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
 1. In Azure Sentinel, in the navigation menu on the left, under **Configuration**, select **Data connectors**.
 

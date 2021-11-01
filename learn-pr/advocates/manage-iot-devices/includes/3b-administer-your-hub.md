@@ -12,11 +12,11 @@ Start by selecting the **Overview** menu entry.
 
 The overview contains some useful data. If you scroll to the bottom of the page, you'll see two charts. By default, the **Telemetry messages sent** and **Successful twin reads from back end** metrics are displayed here. These charts are a good place to go to when you're verifying that the telemetry from a device is being received.
 
-[![Screenshot showing the default charts in the IoT hub overview](../media/iot-admin-overview.png)](../media/iot-admin-overview.png#lightbox)
+[![Screenshot showing the default charts in the IoT hub overview.](../media/iot-admin-overview.png)](../media/iot-admin-overview.png#lightbox)
 
 The overview, however, isn't the most useful of the menu entries, as we'll see as we explore the menu. You can select **Activity log**, though you might not understand why the entries are there. Logs often contain too much information! Also, select **Diagnose and solve problems**. This page is a resource to go to if problems arise. There's no guarantee that it will have all the information you need, but it's a good place to start.
 
-[![Screenshot showing the troubleshooting options for an IoT hub](../media/iot-admin-common-problems.png)](../media/iot-admin-common-problems.png#lightbox)
+[![Screenshot showing the troubleshooting options for an IoT hub.](../media/iot-admin-common-problems.png)](../media/iot-admin-common-problems.png#lightbox)
 
 Next, find the **Settings** section.
 
@@ -26,11 +26,11 @@ The important entry here is **Shared access policies**. You have already used th
 
 The default list of policies is shown in the following image. Each policy has its own set of keys.
 
-[![Screenshot showing the default list of hub access policies](../media/iot-admin-policies.png)](../media/iot-admin-policies.png#lightbox)
+[![Screenshot showing the default list of hub access policies.](../media/iot-admin-policies.png)](../media/iot-admin-policies.png#lightbox)
 
 Another useful entry is **Properties**. Select this entry to bring up a range of strings that apply to your hub, including name, region, and subscription. This entry is a good point of reference. It's something to check if you get an unexpected error, for example. Also note that you can copy any of the strings by using the icon to the right.
 
-[![Screenshot showing the hub properties page](../media/iot-admin-properties.png)](../media/iot-admin-properties.png#lightbox)
+[![Screenshot showing the hub properties page.](../media/iot-admin-properties.png)](../media/iot-admin-properties.png#lightbox)
 
 Now, find the **Explorers** section.
 
@@ -48,7 +48,7 @@ Next, find the **Security** section.
 
 Select the **Overview** menu entry for this section. There will be nothing dramatic in this example, but you can see where to go for security recommendations when you have a production hub running.
 
-[![Screenshot showing the hub security overview](../media/iot-admin-security.png)](../media/iot-admin-security.png#lightbox)
+[![Screenshot showing the hub security overview.](../media/iot-admin-security.png)](../media/iot-admin-security.png#lightbox)
 
 If securing devices is important to your scenarios, add the following module to your to-do list: 
 [Automatically provision IoT devices securely and at scale with the Device Provisioning Service](/learn/modules/securely-provision-iot-devices-at-scale-with-device-provisioning-service/).

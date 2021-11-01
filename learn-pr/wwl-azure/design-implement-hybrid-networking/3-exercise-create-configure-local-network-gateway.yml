@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-hybrid-networking.exercise-create-configure-local-network-gateway
+title: 'Exercise: Create and configure a virtual network gateway'
+metadata:
+  title: 'Exercise: Create and configure a virtual network gateway'
+  description: "Exercise: Create and configure a virtual network gateway"
+  ms.date: 07/15/2021
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-create-configure-local-network-gateway.md)]

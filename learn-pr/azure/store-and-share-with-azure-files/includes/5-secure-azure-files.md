@@ -68,7 +68,7 @@ The benefits of Azure AD DS are that you can manage access with role-based acces
 
 The first step in setting up Azure AD DS is to enable Azure AD Domain Services for the tenant and have the VM reside in the same virtual network. With these things in place, you'll enable Azure AD DS authentication on the storage account. You can then grant access permissions to a share in the storage account. These permissions can be at the user, group, or service principal level.
 
-![A diagram showing the steps in order required to set up Azure AD DS](../media/5-azure-active-directory-over-smb-workflow.svg)
+![A diagram showing the steps in order required to set up Azure AD DS.](../media/5-azure-active-directory-over-smb-workflow.svg)
 
 Microsoft has created three new roles for permissions levels of access to SMB file shares for users:
 

@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-introduction.3-how-azure-health-bot-works
+title: How does Azure Health Bot work?
+metadata:
+  title: How does Azure Health Bot work?
+  description: In this unit, you'll learn how Azure Health Bot works.
+  author: RuchaYagnik
+  ms.author: chnoring
+  ms.date: 07/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-how-azure-health-bot-works.md)]
+
+
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which of the following statements is *not* true about Health Bot?"
+      choices:
+        - content: "It offers an extensible management portal."
+          isCorrect: false
+          explanation: "In the Interactions tab, you configure built-in scenarios that interact with the user."
+        - content: "It meets the regulatory requirements of the healthcare industry."
+          isCorrect: false
+          explanation: "The information handled by each instance of the Health Bot is privacy protected to HIPAA standards and secured to the highest standards for privacy and security by Microsoft."
+        - content: "It doesn't allow handoff to humans when a negative sentiment is detected."
+          isCorrect: true
+          explanation: "It allows handoff to humans when a negative sentiment is detected."

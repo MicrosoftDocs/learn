@@ -6,7 +6,7 @@ Azure DevOps Projects creates a CI/CD pipeline in Azure DevOps. First, you'll ne
 
 1. Select the following **Deploy to Azure** button. The **Custom deployment** panel appears.
 
-   [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-oxford-implement-cicd-iot-edge%2Fmaster%2Fazuredeploy.json)
+   [![Deploy to Azure.](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-oxford-implement-cicd-iot-edge%2Fmaster%2Fazuredeploy.json)
 
 1. On the **Basics** tab, fill in the following values for each setting.
 

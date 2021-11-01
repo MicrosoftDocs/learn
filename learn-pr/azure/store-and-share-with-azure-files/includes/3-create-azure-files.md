@@ -53,7 +53,7 @@ With the Azure file share created, you connect to it from a Windows, Linux, or m
 
 The Azure portal makes it easy to connect to your new share by providing the PowerShell commands to run.
 
-![Screenshot of the Azure portal showing the file share connection commands](../media/3-connect-share.png)
+![Screenshot of the Azure portal showing the file share connection commands.](../media/3-connect-share.png)
 
 ### Authenticate with Azure Active Directory
 

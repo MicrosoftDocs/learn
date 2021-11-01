@@ -1,3 +1,22 @@
+
+Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies are used within the Cloud App Security portal to further refine filters and set actions to be taken on a user. 
+
+## Conditional Access App Control
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Azure AD Conditional Access policy wizard with the Use Conditional Access App Control highlighted.  The feature is under the SESSION section of the dialog.](../media/sc300-conditional-access-app-control.png)
+
+Conditional Access App Control uses a reverse proxy architecture and is uniquely integrated with Azure AD Conditional Access. Azure AD Conditional Access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define who (user or group of users) and what (which cloud apps) and where (which locations and networks) a Conditional Access policy is applied to. After you’ve determined the conditions, you can route users to Microsoft Cloud App Security where you can protect data with Conditional Access App Control by applying access and session controls.
+
+With the access and session policies, you can:
+
+- **Prevent data exfiltration:** You can block the download, cut, copy, and print of sensitive documents on, for example, unmanaged devices.
+- **Protect on download:** Instead of blocking the download of sensitive documents, you can require documents to be labeled and protected with Azure Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.
+- **Prevent upload of unlabeled files:** Before a sensitive file is uploaded, distributed, and used by others, it’s important to make sure that the file has the right label and protection. You can ensure that unlabeled files with sensitive content are blocked from being uploaded until the user classifies the content.
+- **Monitor user sessions for compliance:** Risky users are monitored when they sign into apps and their actions are logged from within the session. You can investigate and analyze user behavior to understand where, and under what conditions, session policies should be applied in the future.
+- **Block access:** You can granularly block access for specific apps and users depending on several risk factors. For example, you can block them if they are using client certificates as a form of device management.
+- **Block custom activities:** Some apps have unique scenarios that carry risk, for example, sending messages with sensitive content in apps like Microsoft Teams or Slack. In these kinds of scenarios, you can scan messages for sensitive content and block them in real time.
+
 ## How to: Require app protection policy and an approved client app for cloud app access with Conditional Access
 
 People regularly use their mobile devices for both personal and work tasks. While making sure staff can be productive, organizations also want to prevent data loss from potentially unsecure applications. With Conditional Access, organizations can restrict access to approved (modern authentication-capable) client apps.
@@ -81,7 +100,7 @@ Organizations must complete the following three steps in order to require the us
 
 **Step 3: Configure Intune app protection policy for iOS and Android client applications.**
 
-Review the article [How to create and assign app protection policies](https://docs.microsoft.com/intune/apps/app-protection-policies) for steps to create app protection policies for Android and iOS.
+Review the article [How to create and assign app protection policies](/intune/apps/app-protection-policies) for steps to create app protection policies for Android and iOS.
 
 ### Scenario 2: Exchange Online and SharePoint Online require an approved client app
 
@@ -157,7 +176,7 @@ Organizations must complete the following three steps in order to require the us
 
 **Step 3: Configure Intune app protection policy for iOS and Android client applications.**
 
-Review the article [How to create and assign app protection policies](https://docs.microsoft.com/intune/apps/app-protection-policies) for steps to create app protection policies for Android and iOS.
+Review the article [How to create and assign app protection policies](/intune/apps/app-protection-policies) for steps to create app protection policies for Android and iOS.
 
 ## App protection policies overview
 

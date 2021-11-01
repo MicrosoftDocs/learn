@@ -1,6 +1,6 @@
 Middleware is software that serves to "glue together" separate, often complex and already existing, programs. The term "middleware" is used in many contexts. For example, in the context of a single computer, middleware exists between the operating system kernel and application programs in the form of APIs, which manage access to system resources such as hardware devices. 
 
-![Cloud middleware features](../media/middleware.png)
+![Cloud middleware features.](../media/middleware.png)
 
 _Figure 1: Cloud middleware features_
 

@@ -4,7 +4,7 @@ Now that you've enabled WSL and installed a Linux distribution, we'll try a few 
 
 Open the Ubuntu command line. *This is sometimes referred to as Bash shell, Terminal, Console, Command-line interface (CLI), or, more frequently for Windows, command prompt. These terms are all commonly used interchangeably.*
 
-![Start Ubuntu screenshot](../media/launch-ubuntu.png)
+![Start Ubuntu screenshot.](../media/launch-ubuntu.png)
 
 Let's try a few basic Linux commands.
 
@@ -56,7 +56,7 @@ Running a Linux distribution on WSL shows how the file systems integrate for a s
 
 Let's begin by opening the Windows command prompt (search for **cmd** in Windows search):
 
-![Command prompt screenshot](../media/launch-commandprompt.png)
+![Command prompt screenshot.](../media/launch-commandprompt.png)
 
 1. Enter `dir` to to see the files in the directory of your current path. Note that if you try the Linux equivalent of this command, `ls`, it won't work.
 
@@ -113,4 +113,4 @@ The Python programming language is quickly growing in popularity, especially for
    > [!NOTE]
    > Windows might display a firewall warning the first time you launch the web server. This warning is expected. Just select **Allow access**.
 
-   ![Screenshot of HTML file running on a local server](../media/python-website.png)
+   ![Screenshot of HTML file running on a local server.](../media/python-website.png)

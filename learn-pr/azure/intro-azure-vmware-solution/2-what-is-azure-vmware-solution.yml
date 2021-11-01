@@ -3,7 +3,7 @@ uid: learn.azure.intro-azure-vmware-solution.what-is-azure-vmware-solution
 title: What is Azure VMware Solution?
 metadata:
   title: What is Azure VMware Solution?
-  description: What is Azure VMware Solution?
+  description: Learn about what Azure VMware Solution is and what it does.
   ms.date: 06/17/2021
   author: exchangegoddess
   ms.author: phschmit
@@ -15,17 +15,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following features is key to the Azure VMware Solution?"
+  - content: "Which of the following features is key to Azure VMware Solution?"
     choices:
-    - content: "Seamlessly modernize apps over time with Azure services."
+    - content: "Customers can seamlessly modernize apps over time with Azure services."
       isCorrect: true
-      explanation: "Modernize applications running on VMware overtime through integration to Azure native management, security, and services."
+      explanation: "Customers can modernize applications running on VMware over time through integration with Azure native management, security, and services."
     - content: "Customers manage all components of Azure VMware Solution."
       isCorrect: false
       explanation: "Microsoft manages the platform for the customer."
-    - content: "Azure VMware Solution is the fastest way to force a move off of Azure-centric operational processes."
+    - content: "Azure VMware Solution is the fastest way to force a move off Azure-centric operational processes."
       isCorrect: false
-      explanation: "Azure VMware Solutions provide a fast path to cloud."
+      explanation: "Azure VMware Solution provides a fast path to cloud."
   - content: "Which native Azure service can be integrated with Azure VMware Solution to provide VMware vCenter SSO identity?"
     choices:
     - content: "Azure Databricks"
@@ -33,7 +33,7 @@ quiz:
       explanation: "Azure Databricks is a data solution available to integrate with Azure VMware Solution."
     - content: "Azure Monitor"
       isCorrect: false
-      explanation: "Azure Monitor can be integrated to monitor VMs on Azure and the Azure VMware Solution."
+      explanation: "Azure Monitor can be integrated to monitor VMs on Azure and on Azure VMware Solution."
     - content: "Azure Active Directory"
       isCorrect: true
       explanation: "Azure Active Directory can be used as the VMware vCenter SSO identity source."

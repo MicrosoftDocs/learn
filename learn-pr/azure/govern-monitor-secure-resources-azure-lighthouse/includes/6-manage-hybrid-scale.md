@@ -1,6 +1,6 @@
 You’ve seen how Relecloud can secure customer resources at scale with Azure Lighthouse. Lamna Healthcare is about to refocus their efforts on growing the business. The company is impressed with the way that Relecloud manages their existing Azure resources and assets. To free up resources, Lamna Healthcare want Relecloud to take over the management of their on-premises operation. This would be in addition to management of their existing Azure resources. You're aware of a service called Azure Arc. You’ll need to explore the capabilities of Azure Arc to see how it might be used to meet Lamna Healthcare’s new requirements. Finally, you’ll see how to use Azure Arc within your existing Azure Lighthouse service offering.
 
-:::image type="content" source="../media/6-azure-arc-range.png" alt-text="Diagram showing the range and extent of Microsoft Azure Arc":::
+:::image type="content" source="../media/6-azure-arc-range.png" alt-text="Diagram showing the range and extent of Microsoft Azure Arc.":::
 
 ## Understand Azure Arc
 
@@ -16,7 +16,7 @@ By using Azure Arc, Lamna Healthcare can:
 
 By creating a single control plane, Lamna Healthcare can extend its current Azure native operations and governance to resources that exist outside of Azure.
 
-:::image type="content" source="../media/6-azure-arc-governance.png" alt-text="Screenshot showing Azure Arc connected machines":::
+:::image type="content" source="../media/6-azure-arc-governance.png" alt-text="Screenshot showing Azure Arc connected machines.":::
 
 ### Use the Azure Connected Machine agent
 
@@ -89,13 +89,13 @@ After installing the agent, you need to configure it to communicate with the Azu
 
 At Lamna Healthcare, after you install the agent, and configure it to connect to Azure Arc for servers (preview), go to the Azure portal to verify that the server has been successfully connected. View your machines in the [Azure portal](https://aka.ms/hybridmachineportal).
 
-:::image type="content" source="../media/6-azure-arc-non-azure-machines.png" alt-text="Screen shot from Azure portal showing the non-azure connected machines":::
+:::image type="content" source="../media/6-azure-arc-non-azure-machines.png" alt-text="Screen shot from Azure portal showing the non-azure connected machines.":::
 
 ## Use Azure Lighthouse with Azure Arc Connected Machines
 
 Now that Lamna Healthcare has added all their non-Azure machines to Azure Resource Manager in the tenant, Relecloud can manage them. Relecloud will create a service offer to Lamna Healthcare to manage the non-Azure resource groups. As soon as Lamna Healthcare approves the service, Relecloud will manage them in the same way that they manage Azure virtual machines.
 
-:::image type="content" source="../media/6-azure-portal-connected-machines.png" alt-text="Screenshot showing Azure and Azure Arc resources":::
+:::image type="content" source="../media/6-azure-portal-connected-machines.png" alt-text="Screenshot showing Azure and Azure Arc resources.":::
 
 It's easy to identify each non-Azure device from the available resources, as their type is suffixed with Azure Arc, for example, Machine – Azure Arc.
 

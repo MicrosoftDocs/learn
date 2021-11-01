@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.structure-bicep-code-collaboration.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Learn how to create modular, reusable, and documented infrastructure as code by using Bicep, and enable team collaboration in the process.
+  ms.date: 08/06/2021
+  author: pazdedav
+  ms.author: dapazd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

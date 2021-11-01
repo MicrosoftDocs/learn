@@ -8,7 +8,7 @@ Kudu is a troubleshooting and analysis tool for Microsoft Azure App Service. Kud
 
 You can access Kudu Console through the Azure Portal by navigating to the **Development Tools** category of your web app's overview page and clicking the **Advanced Tools** option and the **Go** button in the advanced tools page.
 
-![Advanced Tools](../media/AdvancedTools.png)
+![Advanced Tools.](../media/AdvancedTools.png)
 
 You can also access the Kudu console of a web app, go to the `{yourwebapp}.scm.azurewebsites.net` URL and click on **Debug Console**.
 

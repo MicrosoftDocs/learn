@@ -77,7 +77,7 @@ To mount an Azure file share as a volume in a container, you specify the share a
     az container create \
       --resource-group learn-deploy-aci-rg \
       --name aci-demo-files \
-      --image microsoft/aci-hellofiles \
+      --image mcr.microsoft.com/azuredocs/aci-hellofiles \
       --location eastus \
       --ports 80 \
       --ip-address Public \

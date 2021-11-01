@@ -21,7 +21,7 @@ Generally, reserved instances should be used to meet the base requirements of th
 
 To use the cloud in a cost-effective manner, enterprises must develop a mature process for choosing the resources to deploy, monitor, and visualize usage, as well as a clear mechanism to identify waste and optimize utilization. 
 
-![Cost optimization process](../media/cost-reductions-2.png)
+![Cost optimization process.](../media/cost-reductions-2.png)
 
 _Figure 11: Cost optimization process_
 

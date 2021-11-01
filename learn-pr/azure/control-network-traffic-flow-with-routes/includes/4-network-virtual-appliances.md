@@ -30,7 +30,7 @@ An NVA often includes various protection layers like:
 - proxies
 - an SD-WAN edge
 
-![Visualization of a network architecture with a network virtual appliance](../media/4-nva.svg)
+![Visualization of a network architecture with a network virtual appliance.](../media/4-nva.svg)
 
 You can deploy firewall appliances into a virtual network in different configurations. You can put a firewall appliance in a perimeter-network subnet in the virtual network. Or if you want more control of security, implement a microsegmentation approach.
 

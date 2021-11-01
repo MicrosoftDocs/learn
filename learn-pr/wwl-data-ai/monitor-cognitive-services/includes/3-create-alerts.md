@@ -1,4 +1,4 @@
-Microsoft Azure provides alerting support for resources though the creation of *alert rules*. You use alert rules to configure notifications and alerts for your resources based on events or metric thresholds. These alerts will ensure that the correct team knows when a problem arises.
+Microsoft Azure provides alerting support for resources through the creation of *alert rules*. You use alert rules to configure notifications and alerts for your resources based on events or metric thresholds. These alerts will ensure that the correct team knows when a problem arises.
 
 ![An alert in the Azure portal and an email](../media/alert.png)
 

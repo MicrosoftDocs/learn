@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/23/2021
+  ms.date: 08/24/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -34,10 +34,10 @@ quiz:
       explanation: "That's incorrect. Windows Hello is an authentication feature built into Windows 10."
     - content: "Windows Hello is an alternative to multifactor authentication."
       isCorrect: false
-      explanation: "That's incorrect. Windows Hello uses multifactor authentication, such as a PIN and biometric data, to authenticate users."
-    - content: "Windows Hello for Business is more secure because it uses PINs and biometric data to authenticate users."
+      explanation: "That's incorrect. Windows Hello uses multifactor authentication, such as a PIN or biometric data, to authenticate users."
+    - content: "Windows Hello for Business is more secure because it uses a PIN or biometric data to authenticate users and always uses key-based or certificate-based authentication."
       isCorrect: true
-      explanation: "That's correct. Windows Hello for Business uses a PIN and biometric data to authenticate users and doesn't transmit data to an external server."
+      explanation: "That's correct. Windows Hello for Business uses a PIN or biometric data which is more secure than a password and always uses key-based or certificate-based authentication."
   - content: "A company's IT organization has been asked to find ways to reduce IT costs, without compromising security. Which feature should they consider implementing?"
     choices:
     - content: "Self-service password reset."

@@ -14,7 +14,7 @@ And (optionally):
 * Whether you want a new database server, or to restore an existing one
 * Whether you require an older version of PostgreSQL
 
-![Azure portal showing the Azure Database for PostgreSQL deployment options, with the create button for Single server highlighted](../media/4b-portal.png)
+![Azure portal showing the Azure Database for PostgreSQL deployment options, with the create button for Single server highlighted.](../media/4b-portal.png)
 
 ![Form for creating single server, where you can input the server name, username, and password.](../media/4c-form.png)
 

@@ -41,7 +41,7 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 1. Select **Create Cluster** to add a new cluster.
 
-    ![The create cluster page](../media/create-cluster.png)
+    ![The create cluster page.](../media/create-cluster.png)
 
 1. Enter a name for your cluster. Use your name or initials to easily differentiate your cluster from your coworkers.
 
@@ -61,7 +61,7 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 1. In the left pane, select **Workspace** > **Users**, and select your username (the entry with the house icon).
 1. In the pane that appears, select the arrow next to your name, and select **Import**.
 
-    ![The menu option to import the archive](../media/import-archive.png)
+    ![The menu option to import the archive.](../media/import-archive.png)
 
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 

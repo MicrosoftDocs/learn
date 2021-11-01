@@ -87,7 +87,7 @@ The cloud is continually evolving, and with that evolution comes new types of se
 
 All of the aforementioned services work independently, but cloud architects frequently combine these services to form end-to-end solutions designed to solve specific business problems. Figure 2.1 shows one such solution, one that combines several services provided by Microsoft Azure to provide a near-real-time analysis of polar-bear sightings in a region of the Arctic.
 
-![Figure 2.1: Combining services to build end-to-end solutions](../media/architecture-diagram-example.png)
+![Figure 2.1: Combining services to build end-to-end solutions.](../media/architecture-diagram-example.png)
 
 _Figure 2.1: Combining services to build end-to-end solutions._
 

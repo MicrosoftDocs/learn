@@ -17,10 +17,10 @@ quiz:
   questions:
   - content: "For the administrative web interface server, suppose you want to use Azure Backup to protect the content of the virtual machine's disks. How would this requirement change the disk type you choose?"
     choices:
-    - content: "Use standard SSDs instead of standard HDDs."
+    - content: "Use Standard SSDs instead of Standard HDDs."
       isCorrect: false
       explanation: "You can use Azure Backup with standard HDDs, so you don't need to change them to standard SSDs."
-    - content: "Use premium SSDs instead of standard HDDs."
+    - content: "Use Premium SSDs instead of Standard HDDs."
       isCorrect: false
       explanation: "You can use Azure Backup with standard HDDs, so you don't need to change them to premium SSDs."
     - content: "No change is needed."
@@ -28,10 +28,10 @@ quiz:
       explanation: "Azure Backup supports managed disks, so no change is needed."
   - content: "For the standby database servers, suppose that your requirements change. You decide that a minimum IOPS of 1,100 is absolutely required at all times. How would this requirement change the disk type you choose?"
     choices:
-    - content: "Use premium SSDs instead of standard SSDs."
+    - content: "Use Premium SSDs instead of Standard SSDs."
       isCorrect: true
-      explanation: "Although larger standard SSD sizes support this IOPS, it's not guaranteed and might occasionally drop below 1,100. Premium SSDs do have a guaranteed performance level."
-    - content: "Use standard HDDs instead of standard SSDs."
+      explanation: "Although larger Standard SSD sizes support this IOPS, it's not guaranteed and might occasionally drop below 1,100. Premium SSDs do have a guaranteed performance level."
+    - content: "Use Standard HDDs instead of Standard SSDs."
       isCorrect: false
       explanation: "Standard SSDs and standard HDDs don't guarantee an IOPS value."
     - content: "Use unmanaged disks instead of managed disks."

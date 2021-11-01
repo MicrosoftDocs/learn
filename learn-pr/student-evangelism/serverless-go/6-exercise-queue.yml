@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.serverless-go.exercise-queue
+title: Exercise - Handle a queue message
+metadata:
+  title: Exercise - Handle a queue message
+  description: Build an Azure function that's triggered by a queue message.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/12/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-exercise-queue.md)]

@@ -10,7 +10,7 @@ Transparent Data Encryption (TDE) provides encryption for data at rest and is on
 
 At the server or instance level, you can also choose to use a service-managed key or use Bring Your Own Key (BYOK). The default is to let the Azure service manage your key. Azure will automatically generate a key to encrypt your databases, and it will manage the key rotations. You've seen how to do this with the Azure portal, but you can also use Azure PowerShell, the Azure CLI, Transact-SQL (T-SQL), or REST APIs.
 
-:::image type="content" source="../media/6-transparent-data-encryption-key.png" alt-text="Server view of TDE options":::  
+:::image type="content" source="../media/6-transparent-data-encryption-key.png" alt-text="Server view of TDE options.":::  
 
 You can, alternately, use BYOK and take advantage of an Azure key vault. In this scenario, you are responsible for and in full control of a key lifecycle management (key creation, rotation, and deletion), key usage permissions, and auditing of operations on keys.
 

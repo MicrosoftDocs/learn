@@ -19,12 +19,12 @@ Follow these steps to register your application on the Azure portal.
 
    - In the **Redirect URI** section, select **Web** in the combo-box and enter the  redirect URI of your web application. This is the URI where your application wants to handle the authentication response after the user signs in. For this exercise, enter the following redirect URI of the sample application: `http://localhost:8080/msal4j-servlet-graph/auth/redirect`.
 
-   :::image type="content" source="../media/app-registration-new.png" alt-text="Screenshot showing registration of a new app with Azure Active Directory on Azure portal":::
+   :::image type="content" source="../media/app-registration-new.png" alt-text="Screenshot showing registration of a new app with Azure Active Directory on Azure portal.":::
 
 1. Select **Register** to create the application.
 1. In the app's registration screen, find and note the **Application (client) ID**. You use this value in your app's configuration file(s) later in your code.
 
-   :::image type="content" source="../media/app-registration-blade.png" alt-text="Screenshot highlighting the App ID of an app registered with Azure Active Directory on Azure portal":::
+   :::image type="content" source="../media/app-registration-blade.png" alt-text="Screenshot highlighting the App ID of an app registered with Azure Active Directory on Azure portal.":::
 
 1. In the app's registration screen, click on the **Certificates & secrets** blade in the left to open the page to generate secrets and upload certificates. In the **Client secrets** section, click on **New client secret**:
    - Type a key description (for instance `app secret`),

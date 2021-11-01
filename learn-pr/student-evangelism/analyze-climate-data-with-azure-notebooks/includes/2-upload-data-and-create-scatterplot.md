@@ -10,7 +10,7 @@ The notebook editor currently shows an empty cell. In this exercise, you will ad
 
 1. In the first cell, set the cell type to **Markdown** and enter the "Azure Notebook Climate Change Analysis" into the cell itself:
 
-    ![Defining a markdown cell](../media/2-jupyter-1.png)
+    ![Defining a markdown cell.](../media/2-jupyter-1.png)
 
     _Defining a markdown cell_
 
@@ -23,7 +23,7 @@ The notebook editor currently shows an empty cell. In this exercise, you will ad
     import seaborn as sns; sns.set()
     ```
 
-    ![Adding a code cell](../media/2-jupyter-2.png)
+    ![Adding a code cell.](../media/2-jupyter-2.png)
 
     _Adding a code cell_
 
@@ -31,19 +31,19 @@ The notebook editor currently shows an empty cell. In this exercise, you will ad
 
     > You can remove the warnings by selecting the code cell and running it again.
 
-    ![Running a code cell](../media/2-jupyter-3.png)
+    ![Running a code cell.](../media/2-jupyter-3.png)
 
     _Running a code cell_
 
 1. Click **File** in the menu at the top of the page, and select **Upload** from the drop-down menu. Then upload the files named **5-year-mean-1951-1980.csv** and **5-year-mean-1882-2014.csv** from [this link](https://a4r.blob.core.windows.net/public/notebook-resources.zip).
 
-    ![Uploading data to the notebook](../media/2-upload-data.png)
+    ![Uploading data to the notebook.](../media/2-upload-data.png)
 
     _Uploading data to the notebook_
 
 1. Select **/project** as your **Destination Folder** to ensure your files persist. Click **Start Upload** to upload the files, and **OK** once they successfully upload.
 
-    ![Selecting destination folder for data](../media/2-destination-folder.png)
+    ![Selecting destination folder for data.](../media/2-destination-folder.png)
 
     _Selecting destination folder for data_
 
@@ -58,7 +58,7 @@ The notebook editor currently shows an empty cell. In this exercise, you will ad
 
 1. Click the **Run** button to run the cell and use NumPy's `loadtxt` function to load the data that you uploaded. The data is now in memory and can be used by the application.
 
-    ![Loading the data](../media/2-jupyter-4.png)
+    ![Loading the data.](../media/2-jupyter-4.png)
 
     _Loading the data_
 
@@ -76,7 +76,7 @@ The notebook editor currently shows an empty cell. In this exercise, you will ad
 
 1. Click **Run** to run the cell and create a scatter plot.
 
-    ![Scatter plot produced by Matplotlib](../media/2-scatter-plot.png)
+    ![Scatter plot produced by Matplotlib.](../media/2-scatter-plot.png)
 
     _Scatter plot produced by Matplotlib_
 

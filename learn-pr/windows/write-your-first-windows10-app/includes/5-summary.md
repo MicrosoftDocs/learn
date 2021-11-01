@@ -1,4 +1,4 @@
-![UWP, WPF, and Windows Forms logo](../media/tech-all.png)
+![UWP, WPF, and Windows Forms logo.](../media/tech-all.png)
 
 In this module, you learned how to create an app by using UWP, WPF, and Windows Forms.
 

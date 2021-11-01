@@ -12,7 +12,7 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
 
     Select the `Models` folder in Visual Studio Code and add a new File called `Pizza.cs`. 
 
-    ![Image of Visual Studio Code adding a new file to the Models folder](../media/add-pizza-file.png)
+    ![Image of Visual Studio Code adding a new file to the Models folder.](../media/add-pizza-file.png)
 
     The project root now contains a *:::no-loc text="Models":::* directory with an empty *:::no-loc text="Pizza.cs":::* file. The directory name *:::no-loc text="Models":::* is a convention. The directory name comes from the **Model**-View-Controller architecture used by the web API.
 
@@ -42,7 +42,7 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
 
     Select the folder in Visual Studio Code and add a new File called `PizzaService.cs`. 
 
-    ![Image of Visual Studio Code adding a new file to the Services folder](../media/add-pizza-service-file.png)
+    ![Image of Visual Studio Code adding a new file to the Services folder.](../media/add-pizza-service-file.png)
 
 
 1. Add the following code to *:::no-loc text="Services/PizzaService.cs":::* to create an in-memory pizza data service. Save your changes.

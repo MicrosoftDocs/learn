@@ -58,10 +58,10 @@ HTML provides content headings, such as the `<h1>` tag. In Markdown, this is sup
 Image and site links use a very similar syntax.
 
 ```markdown
-![Link an image](/learn/azure-devops/shared/media/mara.png)
+![Link an image.](/learn/azure-devops/shared/media/mara.png)
 ```
 
-> ![Link an image](/learn/azure-devops/shared/media/mara.png)
+> ![Link an image.](/learn/azure-devops/shared/media/mara.png)
 
 ```markdown
 [Link to Microsoft Learn](/learn)
@@ -218,4 +218,4 @@ You can create task lists within issues or pull requests using the syntax illust
 - [ ] Third task
 ```
 
-![A GitHub task list](../media/2-task-list.png)
+![A GitHub task list.](../media/2-task-list.png)

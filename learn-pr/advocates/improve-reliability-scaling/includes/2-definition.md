@@ -101,7 +101,7 @@ This is fairly complex at first glance, so let's walk through it.
 The website has a front end, that’s what you’ll be talking to if you go to
 tailwindtraders.com.
 
-:::image type="content" source="../media/application-diagram-frontend.png" alt-text="Full architecture diagram of application with frontend component highlighted":::
+:::image type="content" source="../media/application-diagram-frontend.png" alt-text="Full architecture diagram of application with frontend component highlighted.":::
 
 The front end talks to a set of back end services. These back end services
 include the common items such as a coupon service, a shopping cart service, an inventory service,
@@ -110,7 +110,7 @@ are other parts and technologies at play with this application.
 All you need to focus on is the front end and the back end services running
 on Kubernetes.
 
-:::image type="content" source="../media/application-diagram-backend.png" alt-text="Full architecture diagram of application with backend component highlighted":::
+:::image type="content" source="../media/application-diagram-backend.png" alt-text="Full architecture diagram of application with backend component highlighted.":::
 
 ### Single points of failure
 
@@ -118,7 +118,7 @@ Now that you have seen the whole architecture, let's take a moment to
 examine the single points of failure and the places we might put our
 attention when thinking about scaling.
 
-:::image type="content" source="../media/application-diagram-failure-points.png" alt-text="Full architecture diagram of application with backend components and SQL DB highlighted":::
+:::image type="content" source="../media/application-diagram-failure-points.png" alt-text="Full architecture diagram of application with backend components and SQL DB highlighted.":::
 
 All of these services are a single point of failure - they’re not built for
 resiliency, or for scale. If one of them gets overloaded, it’s likely to
@@ -149,7 +149,7 @@ review later in this module.
 Even when we do things right, we still need to plan for growth. Here are
 the pay-per-use services:
 
-:::image type="content" source="../media/application-diagram-costs.png" alt-text="Full architecture diagram of application with Azure Logic Apps and Azure Functions highlighted":::
+:::image type="content" source="../media/application-diagram-costs.png" alt-text="Full architecture diagram of application with Azure Logic Apps and Azure Functions highlighted.":::
 
 Here, we’re using Azure Logic Apps and Azure Functions, which are both
 examples of serverless technology. This means these services scale

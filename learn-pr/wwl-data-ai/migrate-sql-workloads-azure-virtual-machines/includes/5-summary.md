@@ -6,6 +6,6 @@ You have many options when migrating database workloads into the cloud. By choos
 
 ### Learn more
 
-- If you need to continue using SQL Server 2008 on-premises, see [Extend support for SQL Server 2008 and 2008 R2 with Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-2008-eos-extend-support)
-- [Extend on-premises Always On Availability Groups to Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sqlclassic/virtual-machines-windows-classic-sql-onprem-availability)
-- [Transactional Replication](https://docs.microsoft.com/sql/relational-databases/replication/transactional/transactional-replication)
+- If you need to continue using SQL Server 2008 on-premises, see [Extend support for SQL Server 2008 and 2008 R2 with Azure](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-2008-eos-extend-support)
+- [Extend on-premises Always On Availability Groups to Azure](/azure/virtual-machines/windows/sqlclassic/virtual-machines-windows-classic-sql-onprem-availability)
+- [Transactional Replication](/sql/relational-databases/replication/transactional/transactional-replication)

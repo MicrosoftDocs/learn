@@ -6,7 +6,7 @@ As an example, the integration of Azure Databricks with ADF allows you to add Da
 
 Data ingestion and transformation using the collective capabilities of ADF and Azure Databricks essentially involves the following steps:
 
-1. **Create Azure storage account** - The fist step is to create an Azure storage account to store your ingested and transformed data.
+1. **Create Azure storage account** - The first step is to create an Azure storage account to store your ingested and transformed data.
 
 1. **Create an Azure Data Factory** - Once you have your storage account setup, you need to create your Azure Data Factory using Azure portal.
 

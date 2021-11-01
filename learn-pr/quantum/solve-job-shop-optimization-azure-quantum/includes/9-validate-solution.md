@@ -29,7 +29,7 @@ Makespan (time taken to complete all operations): 6
 
 In this instance, it is possible to visually verify that the solution does not have any constraint violations. The Gantt chart shown below demonstrates this:
 
-![Gantt chart showing the start times for all operations and their assigned machines](../media/gantt-chart.png)
+![Gantt chart showing the start times for all operations and their assigned machines.](../media/gantt-chart.png)
 
 As you can see from the visual above:
 

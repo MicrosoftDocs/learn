@@ -25,7 +25,7 @@ To generalize a Windows VM, follow these steps:
     | **Generalize** | Select  |
     | **Shutdown Options** | **Shutdown** |
 
-    ![Image of the Sysprep dialog box](../media/3-sysprep.png)
+    ![Image of the Sysprep dialog box.](../media/3-sysprep.png)
 
 After the virtual machine has been shut down, you must deallocate it while it's in this clean state. If you're using PowerShell, run the following command:
 

@@ -35,7 +35,7 @@ After you have deployed your web app to a new deployment slot, the deployment sl
 You can easily switch the new version of your web app with the original. Once you have made the switch, the new version will be available through the URL **http:\//contosocurrencylister.azurewebsites.net/**. To make the switch, in the **Azure Explorer** window, expand your web app and then expand **Deployment Slots**. Right-click the new deployment slot, and then click **Swap with production**.
 
 > [!div class="mx-imgBorder"]
-> ![The **Azure Explorer** window. The user is swapping the web app in the version 2 deployment slot with the production slot](../media/6-swap-slots.png)
+> ![The **Azure Explorer** window. The user is swapping the web app in the version 2 deployment slot with the production slot.](../media/6-swap-slots.png)
 
 > [!NOTE]
 > In the Azure Explorer, you can manage web apps running in a deployment slot as you would any web app. For example: you can start, stop, and reconfigure the properties of a web app that is running in a deployment slot.
@@ -47,14 +47,14 @@ Web apps (and deployment slots) can have developer-defined properties. A propert
 You create and modify properties by using the **Show Properties** command in the **Azure Explorer** window.
 
 > [!div class="mx-imgBorder"]
-> ![The **Azure Explorer** window. The user has selected the **Show Properties** command](../media/6-show-properties.png)
+> ![The **Azure Explorer** window. The user has selected the **Show Properties** command.](../media/6-show-properties.png)
 
 The properties window contains a list of properties. This list is initially empty, but you can add, remove, and change property values using the **New**, **Delete**, and **Edit** buttons. You make the changes permanent with the **Save** button.
 
 The example below defines a property named **MaxNumberToDisplay**, with the value **50**.
 
 > [!div class="mx-imgBorder"]
-> ![The **Properties** window. The user has created a new property named **MaxNumberToDisplay**](../media/6-properties-window.png)
+> ![The **Properties** window. The user has created a new property named **MaxNumberToDisplay**.](../media/6-properties-window.png)
 
 For example, you could modify the currency listing example from earlier in this module to read the value of the **MaxNumberToDisplay** property and use that property to limit the number of currencies that will be displayed, as shown in the following code:
 

@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-basic-bot.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Three multiple-choice questions
+  ms.date: 07/27/2021
+  author: Meghana-ch
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  
+  questions:
+    
+    - content: "Which of the following is used for text display and taking input?"
+      choices:
+        - content: "Prompt"
+          isCorrect: true
+          explanation: We use a prompt block for this process. It's used to get input from the user.
+        - content: "Statement"
+          isCorrect: false
+          explanation: A statement triggers an output from the Health Bot instance with no expectation of a response.
+        - content: "Block"
+          isCorrect: false
+          explanation: There is no block element in the scenario steps.
+    
+    - content: "If you want to use a two-way decision split, which scenario will you use?"
+      choices:
+        - content: "Yes/no prompt"
+          isCorrect: false
+          explanation: "This is a two-way split in the flow based on user input."
+        - content: "Branch"
+          isCorrect: true
+          explanation: "A branch is a two-way decision split that's based on code and not on user input."
+        - content: "Switch"
+          isCorrect: false
+          explanation: "This is a multi-optional split in the flow based on code."
+
+    - content: "Which of the following helps you to test and run your scenario?"
+      choices:
+        - content: "Test block"
+          isCorrect: false
+          explanation: "This isn't where you test the bot."
+        - content: "Chat"
+          isCorrect: false
+          explanation: "Chat is only the name of the window where you do the testing. You use the Web Chat v4 to test the bot."
+        - content: "Web Chat v4"
+          isCorrect: true
+          explanation: "You run and test scenarios in the Web Chat v4 in the upper right of the scenario editor."

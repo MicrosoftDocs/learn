@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-resource-manager.remove-resources-resource-groups
+title: Remove resources and resource groups
+metadata:
+  title: Remove resources and resource groups
+  description: "Remove resources and resource groups"
+  ms.date: 08/16/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-remove-resources-groups.md)]

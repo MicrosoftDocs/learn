@@ -76,7 +76,7 @@ To complete this lab, you will need to deploy two Azure Databricks workspaces in
 
 1. Select **Create Cluster** to add a new cluster.
 
-    ![The create cluster page](../media/create-cluster.png)
+    ![The create cluster page.](../media/create-cluster.png)
 
 1. Enter a name for your cluster. Use your name or initials to easily differentiate your cluster from your coworkers.
 
@@ -98,7 +98,7 @@ To complete this lab, you will need to deploy two Azure Databricks workspaces in
 1. In the left pane, select **Workspace** > **Users**, and select your username (the entry with the house icon).
 1. In the pane that appears, select the arrow next to your name, and select **Import**.
 
-    ![The menu option to import the archive](../media/import-archive.png)
+    ![The menu option to import the archive.](../media/import-archive.png)
 
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
@@ -162,7 +162,7 @@ Go to DEV Azure Databricks workspace and setup your Git integration provider to 
 
 1. Select **Save** to finish linking your notebook. You should see that the Git repo is now synced.
 
-    ![Git: Synced](../media/git-synced.png)
+    ![Git: Synced.](../media/git-synced.png)
 
 1. Close the Revision History sidebar, then scroll down to the bottom of the notebook. Uncomment cell #9 so it looks like the following:
 
@@ -186,7 +186,7 @@ Go to PROD Azure Databricks workspace and generate a user access token for the A
 
 1. When you launch and sign in to the workspace, take note of the URL. It is in the form of `https://<location>.azuredatabricks.net`. Copy the `location` portion of the URL (for example, westus2) and save it to a text editor for later reference.
 
-    ![Databricks URL](../media/databricks-url.png)
+    ![Databricks URL.](../media/databricks-url.png)
 
 1. Select the user icon on the top-right of the workspace, then select **User Settings**.
 

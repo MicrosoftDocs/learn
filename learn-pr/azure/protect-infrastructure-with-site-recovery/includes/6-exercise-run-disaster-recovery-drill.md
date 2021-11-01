@@ -32,7 +32,7 @@ In this exercise, you'll complete the steps needed to run a DR drill using a rec
 
 1. Select your company's two VMs, and then select **OK**. The **Create recovery plan** reappears.
 
-    ![Screenshot showing the create recovery plan panes, including the selection screen for virtual machines](../media/6-create-recovery-plan.png)
+    ![Screenshot showing the create recovery plan panes, including the selection screen for virtual machines.](../media/6-create-recovery-plan.png)
 
 1. Select **Create**. The **Recovery Plans (Site Recovery)** pane reappears.
 
@@ -43,13 +43,13 @@ In this exercise, you'll complete the steps needed to run a DR drill using a rec
 
 1. View the details of the recovery plan you previously created by selecting **asr-dr-drill**.
 
-    ![Screenshot showing the created disaster recovery plan](../media/6-view-dr-plans.png)
+    ![Screenshot showing the created disaster recovery plan.](../media/6-view-dr-plans.png)
 
     The **Recovery Services vault** pane named *asr-dr-drill* appears.
 
 1. In the top menu bar, select **Test failover**.
 
-    ![Screenshot showing the recovery plan details, highlighting the Test failover button](../media/6-recovery-plan-details.png)
+    ![Screenshot showing the recovery plan details, highlighting the Test failover button.](../media/6-recovery-plan-details.png)
 
     The **Test failover** pane appears.
 
@@ -69,7 +69,7 @@ In this exercise, you'll complete the steps needed to run a DR drill using a rec
 
 1. To begin the failover, select **OK**.
 
-    ![Screenshot of the test failover options](../media/6-starting-dr-drill.png)
+    ![Screenshot of the test failover options.](../media/6-starting-dr-drill.png)
 
     The **Recovery Plans (Site Recovery)** pane for the **Recovery Services vault** named *asr-vault* reappears.
 
@@ -77,33 +77,33 @@ In this exercise, you'll complete the steps needed to run a DR drill using a rec
 
 1. In the left menu pane, under **Monitoring**, select **Site Recovery jobs**.
 
-    ![Screenshot showing the list of recovery plans created](../media/6-site-recovery-monitoring.png)
+    ![Screenshot showing the list of recovery plans created.](../media/6-site-recovery-monitoring.png)
 
 1. From the list, select **Test failover**.
 
-    ![Screenshot of the list of Site Recovery jobs](../media/6-dr-drill-job-list.png)
+    ![Screenshot of the list of Site Recovery jobs.](../media/6-dr-drill-job-list.png)
 
 1. The **Test failover** pane appears where you can view the status of the jobs.
 
-    ![Screenshot of the test failover jobs showing their status](../media/6-dr-drill-results.png)
+    ![Screenshot of the test failover jobs showing their status.](../media/6-dr-drill-results.png)
 
     You'll use the information on this pane to report back to the Ops manager that an Azure failover for your company's current infrastructure will take less than three minutes to complete. These jobs are running in parallel, (rather than a simple sum of all of jobs), to work out the total of time taken.
 
 1. After all the jobs have completed successfully, on the far left, select **Virtual machines**.
 
-    ![Screenshot showing all the current VMs, the original patient-records, and hr-records. Also the newly created patient-records-test and hr-records-test](../media/6-listing-all-vms.png)
+    ![Screenshot showing all the current VMs, the original patient-records, and hr-records. Also the newly created patient-records-test and hr-records-test.](../media/6-listing-all-vms.png)
 
 1. Select one of the new test VMs.
 
 1. In the left menu pane, under **Settings**, select **Networking**, and then select **Topology**.
 
-    ![Screenshot showing the network topology of the new failed over VMs](../media/6-dr-infrastructure.svg)
+    ![Screenshot showing the network topology of the new failed over VMs.](../media/6-dr-infrastructure.svg)
 
     > [!NOTE]
     > Both the patient-records and hr-records VMs have been failed over by Site Recovery. The VMs are running in their own disaster recovery virtual network.
 
 1. After you're satisfied with the test results, make sure to capture any notes about the test outcome. You'll now switch back to your **asr-dr-drill** site recovery plan, and in the top menu bar, select **Cleanup test failover** to delete the replicated VMs.
 
-    ![text](../media/5-test-success.png)
+    ![text.](../media/5-test-success.png)
 
 1. To complete the cleanup process, select the **Testing is complete** checkbox, and then select **OK**. This step can take up to three minutes to complete.

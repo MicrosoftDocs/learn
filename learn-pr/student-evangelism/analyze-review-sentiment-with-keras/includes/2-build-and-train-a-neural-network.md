@@ -14,7 +14,7 @@ In this unit, you'll use Keras to build and train a neural network that analyzes
 
 1. Confirm that you see the message "Using TensorFlow backend" indicating that Keras is using TensorFlow as its back end.
 
-    ![Loading the IMDB dataset](../media/2-using-tensorflow.png)
+    ![Loading the IMDB dataset.](../media/2-using-tensorflow.png)
 
     _Loading the IMDB dataset_
 
@@ -22,7 +22,7 @@ In this unit, you'll use Keras to build and train a neural network that analyzes
 
 1. So what exactly did the `load_data` function load? The variable named `x_train` is a list of 25,000 lists, each of which represents one movie review. (`x_test` is also a list of 25,000 lists representing 25,000 reviews. `x_train` will be used for training, while `x_test` will be used for testing.) But the inner lists — the ones representing movie reviews — don't contain words; they contain integers. Here's how it's described in the Keras documentation:
 
-    ![Keras documentation](../media/2-keras-docs.png)
+    ![Keras documentation.](../media/2-keras-docs.png)
 
     The reason the inner lists contain numbers rather than text is that you don't train a neural network with text; you train it with numbers. Specifically, you train it with [tensors](https://en.wikipedia.org/wiki/Tensor). In this case, each review is a 1-dimensional tensor (think of a 1-dimensional array) containing integers identifying the words contained in the review. To demonstrate, type the following Python statement into an empty cell and execute it to see the integers representing the first review in the training set:
 
@@ -30,7 +30,7 @@ In this unit, you'll use Keras to build and train a neural network that analyzes
     x_train[0]
     ```
 
-    ![Integers comprising the first review in the IMDB training set](../media/2-review-indices.png)
+    ![Integers comprising the first review in the IMDB training set.](../media/2-review-indices.png)
 
     _Integers comprising the first review in the IMDB training set_
 
@@ -44,7 +44,7 @@ In this unit, you'll use Keras to build and train a neural network that analyzes
 
     Only a subset of the dictionary entries is shown, but in all, the dictionary contains more than 88,000 words and the integers that correspond to them. The output you see will probably not match the output in the screenshot because the dictionary is generated anew each time `load_data` is called.
 
-    ![Dictionary mapping words to integers](../media/2-word-index.png)
+    ![Dictionary mapping words to integers.](../media/2-word-index.png)
 
     _Dictionary mapping words to integers_
 
@@ -62,7 +62,7 @@ In this unit, you'll use Keras to build and train a neural network that analyzes
 
     In the output, ">" marks the beginning of the review, while "?" marks words that aren't among the most common 10,000 words in the dataset. These "unknown" words are represented by 2s in the list of integers representing a review. Remember the `num_words` parameter you passed to `load_data`? This is where it comes into play. It doesn't reduce the size of the dictionary, but it restricts the range of integers used to encode the reviews.
 
-    ![The first review in textual format](../media/2-review-text.png)
+    ![The first review in textual format.](../media/2-review-text.png)
 
     _The first review in textual format_
 
@@ -98,7 +98,7 @@ In this unit, you'll use Keras to build and train a neural network that analyzes
 
     Confirm that the output looks like this:
 
-    ![Creating a neural network with Keras](../media/2-build-model.png)
+    ![Creating a neural network with Keras.](../media/2-build-model.png)
 
     _Creating a neural network with Keras_
 
@@ -110,7 +110,7 @@ In this unit, you'll use Keras to build and train a neural network that analyzes
 
     The result is the neural network pictured below. The network contains an input layer, an output layer, and two hidden layers (the dense layers containing 16 neurons each). For comparison, some of today's more sophisticated neural networks have more than 100 layers. One example is [ResNet-152](https://blogs.microsoft.com/ai/microsoft-researchers-win-imagenet-computer-vision-challenge/) from Microsoft Research, whose accuracy at identifying objects in photographs sometimes exceeds that of a human. You could build ResNet-152 with Keras, but you would need a cluster of GPU-equipped computers to train it from scratch.
 
-    ![Visualizing the neural network](../media/2-neural-network.png)
+    ![Visualizing the neural network.](../media/2-neural-network.png)
 
     _Visualizing the neural network_
 
@@ -126,7 +126,7 @@ In this unit, you'll use Keras to build and train a neural network that analyzes
 
     `batch_size=128` tells Keras to use 128 training samples at a time to train the network. Larger batch sizes speed the training time (fewer passes are required in each epoch to consume all of the training data), but smaller batch sizes sometimes increase accuracy. Once you've completed this lab, you might want to go back and retrain the model with a batch size of 32 to see what effect, if any, it has on the model's accuracy. It roughly doubles the training time.
 
-    ![Training the model](../media/2-train-model.png)
+    ![Training the model.](../media/2-train-model.png)
 
     _Training the model_
 
@@ -157,7 +157,7 @@ In this unit, you'll use Keras to build and train a neural network that analyzes
 
 1. Another way to check for overfitting is to compare training loss to validation loss as training proceeds. Optimization problems such as this seek to minimize a loss function. You can read more [here](https://en.wikipedia.org/wiki/Loss_function). For a given epoch, training loss, much greater than validation loss, can be evidence of overfitting. In the previous step, you used the `acc` and `val_acc` properties of the `history` object's `history` property to plot training and validation accuracy. The same property also contains values named `loss` and `val_loss` representing training and validation loss, respectively. If you wanted to plot these values to produce a chart like the one below, how would you modify the code above to do it?
 
-    ![Training and validation loss](../media/2-loss-chart.png)
+    ![Training and validation loss.](../media/2-loss-chart.png)
 
     _Training and validation loss_
 
