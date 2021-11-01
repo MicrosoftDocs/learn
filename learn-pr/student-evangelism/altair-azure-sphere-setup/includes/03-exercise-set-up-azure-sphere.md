@@ -1,6 +1,6 @@
 In this unit, you'll install the software required for Azure Sphere development.
 
-The following list outlines the steps you will need to complete. Be sure to follow the steps for your computer operating system.
+The following list outlines the steps you'll need to complete. Be sure to follow the steps for your computer operating system.
 
 1. Install Visual Studio Code.
 1. Install the Azure Sphere SDK.
@@ -13,7 +13,7 @@ The following list outlines the steps you will need to complete. Be sure to foll
 
 ## Windows 10 users
 
-This module uses Visual Studio Code. However, if you're a Windows user who's comfortable with Visual Studio, you can still complete the exercises. Just be aware that the IDE screenshots included in this module will be different from your experience.
+This module uses Visual Studio Code. If you're a Windows user who's comfortable with Visual Studio, you can still complete the exercises. Just be aware that the IDE screenshots included in this module will be different from your experience.
 
 Complete the following steps:
 
@@ -74,7 +74,7 @@ sudo apt install git
 ### Install the real-time core GNU Arm Embedded Toolchain for Linux
 
 1. Download the latest [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads?azure-portal=true) for Linux.
-2. Install the downloaded package. The following code installs the toolchain in the */opt* folder.
+2. Install the downloaded package. The following code installs the toolchain in the */opt* folder:
 
     ```bash
     sudo tar -xjvf gcc-arm-none-eabi-<version-number>-major-x86_64-linux.tar.bz2 -C /opt
@@ -130,7 +130,7 @@ azsphere device enable-development -r
 Use the following command to clone the AzureSphereAltair8800 GitHub repository.
 
 > [!NOTE]
-> Clone the *Altair project* to a folder close to the root folder on your computer. For example, clone it to *c:\lab* or *~/*. The reason is that the Azure Sphere build process uses CMake, which can struggle with long path and folder names.
+> Clone the *Altair project* to a folder that's close to the root folder on your computer. For example, clone it to *c:\lab* or *~/*. The reason is that the Azure Sphere build process uses CMake, which can struggle with long path and folder names.
 
 ```
 git clone --recurse-submodules https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.git
@@ -140,7 +140,7 @@ git clone --recurse-submodules https://github.com/AzureSphereCloudEnabledAltair8
 
 When the Altair emulator project was released, it targeted version 10 of the Azure Sphere APIs and version 21.07 of the Azure Sphere SDK. It's likely that you installed a more recent version of the Azure Sphere SDK.
 
-Follow these steps to update the configuration files for all high-level Azure Sphere projects in the *Altair8800Emulator* folder.
+Follow these steps to update the configuration files for all high-level Azure Sphere projects in the *Altair8800Emulator* folder:
 
 1. Open a command prompt.
 1. Go to the *Altair8800Emulator* folder that you cloned to your computer.
