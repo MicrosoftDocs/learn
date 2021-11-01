@@ -8,7 +8,7 @@ A [**public load balancer**](/azure/load-balancer/components) can provide outbou
 
 An [**internal load balancer**](/azure/load-balancer/components) is used where private IPs are needed at the frontend only. Internal load balancers are used to load balance traffic from internal Azure resources to other Azure resources inside a virtual network. A load balancer frontend can also be accessed from an on-premises network in a hybrid scenario.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/load-balancer-3cfca04c.png" alt-text="Diagram illustrating Internal and Public load balancers in Azure":::
+:::image type="content" source="../media/load-balancer-3cfca04c.png" alt-text="Diagram illustrating Internal and Public load balancers in Azure":::
 
 
 ## Azure load balancer and availability zones
@@ -25,7 +25,7 @@ A Load Balancer can either be zone redundant, zonal, or non-zonal. To configure 
 
 ### Zone redundant
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/zone-redundant-019f3528.png" alt-text="Diagram illustrating Zone redundant load balancers in Azure":::
+:::image type="content" source="../media/zone-redundant-019f3528.png" alt-text="Diagram illustrating Zone redundant load balancers in Azure":::
 
 
 In a region with Availability Zones, a Standard Load Balancer can be zone-redundant. This traffic is served by a single IP address.
@@ -40,7 +40,7 @@ You can choose to have a frontend guaranteed to a single zone, which is known as
 
 Additionally, the use of zonal frontends directly for load balanced endpoints within each zone is supported. You can use this configuration to expose per zone load-balanced endpoints to individually monitor each zone. For public endpoints, you can integrate them with a DNS load-balancing product like Traffic Manager and use a single DNS name.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/zonal-load-balancer-3933c0be.png" alt-text="Diagram illustrating Zonal load balancers in Azure":::
+:::image type="content" source="../media/zonal-load-balancer-3933c0be.png" alt-text="Diagram illustrating Zonal load balancers in Azure":::
 
 
 For a public load balancer frontend, you add a zones parameter to the public IP. This public IP is referenced by the frontend IP configuration used by the respective rule.
@@ -221,16 +221,24 @@ There are several tasks you need to perform to successfully create and configure
 
 In this example, we are looking at the tasks required to create and configure a **Public** (external) **load balancer** in a **Basic SKU**. The first task is to create the load balancer itself.
 
-From the Azure portal home page, select **Create a resource**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-load-balancer-1-95c6e720.png" alt-text="Start to create a load balancer resource":::
+From the Azure portal home page, select **Create a resource**. 
+
+:::image type="content" source="../media/create-load-balancer-1-95c6e720.png" alt-text="Start to create a load balancer resource":::
 
 
-On the Create a resource page, you can either browse to try and find the resource type you want to create or enter your search criteria in the search box and press ENTER. For example, type **Load Balancer**. To narrow down the search results, you can use the filters to the right of the search box. For example, select **Publisher Type**, and then choose **Microsoft**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-load-balancer-2-552e3f8a.png" alt-text="Filter resource type by Publisher Type to create a load balancer resource":::
+On the Create a resource page, you can either browse to try and find the resource type you want to create or enter your search criteria in the search box and press ENTER. For example, type **Load Balancer**. To narrow down the search results, you can use the filters to the right of the search box. For example, select **Publisher Type**, and then choose **Microsoft**.
+
+:::image type="content" source="../media/create-load-balancer-2-552e3f8a.png" alt-text="Filter resource type by Publisher Type to create a load balancer resource":::
 
 
-Then choose the **Load Balancer** resource from Microsoft. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-load-balancer-3-b735193c.png" alt-text="Select the Microsoft load balancer resource type to create":::
+Then choose the **Load Balancer** resource from Microsoft.
+
+:::image type="content" source="../media/create-load-balancer-3-b735193c.png" alt-text="Select the Microsoft load balancer resource type to create":::
 
 
-On the Load balancer page, choose **Create** to start the process. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-load-balancer-4-4a82194d.png" alt-text="Selecting Create for a Load Balancer":::
+On the Load balancer page, choose **Create** to start the process.
+
+:::image type="content" source="../media/create-load-balancer-4-4a82194d.png" alt-text="Selecting Create for a Load Balancer":::
 
 
 On the **Create load balancer** page, you must supply the following required information:
@@ -244,22 +252,24 @@ On the **Create load balancer** page, you must supply the following required inf
  -  **Tier** \- this is where you select whether your load balancer is balancing within a region (**Regional**) or across regions (**Global**) - If you select the **Basic** SKU above, this setting is greyed out.
  -  **Public IP address** \- here you specify whether to create a new public IP address for your public-facing front-end, or use an existing one, and you also specify a name for your public IP address, and whether to use a dynamic or statically assigned IP address. You can optionally also assign an IPv6 address to your load balancer in addition to the default IPv4 one.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-load-balancer-5-0425ac23.png" alt-text="Create load balancer - Basics tab":::
+:::image type="content" source="../media/create-load-balancer-5-0425ac23.png" alt-text="Create load balancer - Basics tab":::
 
 
 After you click **Review + Create**, the configuration settings for the new load balancer resource will be validated, and then you can click **Create** to start creating it. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-load-balancer-6-0581f2dc.png":::
 
 
-The resource will start to be deployed. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-load-balancer-7-2d31db87.png" alt-text="Create load balancer - deployment in progress":::
+The resource will start to be deployed.
+
+:::image type="content" source="../media/create-load-balancer-7-2d31db87.png" alt-text="Create load balancer - deployment in progress":::
 
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-load-balancer-8-218b0ebc.png" alt-text="Create load balancer - deployment complete":::
+:::image type="content" source="../media/create-load-balancer-8-218b0ebc.png" alt-text="Create load balancer - deployment complete":::
 
 
 When it completes, you can click **Go to resource** to view the new load balancer resource in the portal.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-load-balancer-9-e1f265ef.png" alt-text="View load balancer resource Overview page in Azure portal":::
-.
+:::image type="content" source="../media/create-load-balancer-9-e1f265ef.png" alt-text="View load balancer resource Overview page in Azure portal":::
+
 
 ### Add a backend pool
 
@@ -267,17 +277,17 @@ The next task is to create a backend pool in the load balancer and then add your
 
 From the Azure portal home page, select **All resources**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-backend-pool-1-2abb10ab.png" alt-text="Select All resources":::
+:::image type="content" source="../media/create-backend-pool-1-2abb10ab.png" alt-text="Select All resources":::
 
 
 Select your load balancer from the list.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-backend-pool-2-af9160aa.png" alt-text="Select the load balancer in the All resources list":::
+:::image type="content" source="../media/create-backend-pool-2-af9160aa.png" alt-text="Select the load balancer in the All resources list":::
 
 
 Under the **Settings** section choose **Backend pools**, and then **Add** to add a pool.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-backend-pool-3-fa100624.png" alt-text="Add backend pool":::
+:::image type="content" source="../media/create-backend-pool-3-fa100624.png" alt-text="Add backend pool":::
 
 
 You need to enter the following information on the **Add backend pool** page.
@@ -289,7 +299,7 @@ You need to enter the following information on the **Add backend pool** page.
 
 You could add existing virtual machines to the backend pool at this point, or you can create and add them later. You then click **Add** to add the backend pool.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-backend-pool-4-60c75c37.png" alt-text="Add backend pool - Add":::
+:::image type="content" source="../media/create-backend-pool-4-60c75c37.png" alt-text="Add backend pool - Add":::
 
 
 ### Add virtual machines to the backend pool
@@ -298,7 +308,7 @@ The next task is to add the virtual machines to the existing back-end pool.
 
 On the **Backend pools** page, select the backend pool from the list.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-vm-backend-pool-1-45ac6ce7.png" alt-text="View backend pool in the load balancer":::
+:::image type="content" source="../media/add-vm-backend-pool-1-45ac6ce7.png" alt-text="View backend pool in the load balancer":::
 
 
 You need to enter the following information to add the virtual machine to the backend pool.
@@ -309,20 +319,20 @@ You need to enter the following information to add the virtual machine to the ba
 
 Then under the **Virtual machines** section, click **Add**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-vm-backend-pool-2-eb71b178.png" alt-text="Add VM to backend pool":::
+:::image type="content" source="../media/add-vm-backend-pool-2-eb71b178.png" alt-text="Add VM to backend pool":::
 
 
 Select the virtual machines you want to add to the backend pool and click **Add**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-vm-backend-pool-3-c6a69d39.png" alt-text="View list of VMs added to backend pool":::
+:::image type="content" source="../media/add-vm-backend-pool-3-c6a69d39.png" alt-text="View list of VMs added to backend pool":::
 
 
 Then click **Save** to add them to the backend pool.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-vm-backend-pool-4-956bad09.png" alt-text="Save backend pool with VMs added":::
+:::image type="content" source="../media/add-vm-backend-pool-4-956bad09.png" alt-text="Save backend pool with VMs added":::
 
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-vm-backend-pool-5-baabc018.png" alt-text="View list of backend pools running in load balancer":::
+:::image type="content" source="../media/add-vm-backend-pool-5-baabc018.png" alt-text="View list of backend pools running in load balancer":::
 
 
 ### Add health probes
@@ -331,7 +341,7 @@ The next task is to create a health probe to monitor the virtual machines in the
 
 On the **Backend pools** page of the load balancer, under **Settings**, select **Health probes**, and then click **Add**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-health-probe-1-aba00e8f.png" alt-text="Add health probes":::
+:::image type="content" source="../media/create-health-probe-1-aba00e8f.png" alt-text="Add health probes":::
 
 
 You need to enter the following information on the **Add health probe** page.
@@ -344,10 +354,10 @@ You need to enter the following information on the **Add health probe** page.
 
 You then click **Add** to add the health probe.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-health-probe-2-0a34ee7f.png" alt-text="configure health probe settings":::
+:::image type="content" source="../media/create-health-probe-2-0a34ee7f.png" alt-text="configure health probe settings":::
 
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-health-probe-3-b1f594b7.png" alt-text="View list of added health probes in load balancer":::
+:::image type="content" source="../media/create-health-probe-3-b1f594b7.png" alt-text="View list of added health probes in load balancer":::
 
 
 ### Add a load balancer rule
@@ -356,7 +366,7 @@ The last task is to create a load balancing rule for the load balancer. A load b
 
 On the **Health probes** page of the load balancer, under **Settings**, select **Load balancing rules**, and then click **Add**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-load-balancing-rule-1-7a88cf13.png" alt-text="Add load balancing rule":::
+:::image type="content" source="../media/create-load-balancing-rule-1-7a88cf13.png" alt-text="Add load balancing rule":::
 
 
 You need to enter the following information on the **Add load balancing rule** page.
@@ -375,10 +385,10 @@ You need to enter the following information on the **Add load balancing rule** p
 
 You then click **Add** to add the load balancing rule.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-load-balancing-rule-2-cd857974.png" alt-text="Add load balancing rule - Add":::
+:::image type="content" source="../media/create-load-balancing-rule-2-cd857974.png" alt-text="Add load balancing rule - Add":::
 
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-load-balancing-rule-3-04f47848.png" alt-text="View list of added load balancing rules":::
+:::image type="content" source="../media/create-load-balancing-rule-3-04f47848.png" alt-text="View list of added load balancing rules":::
 
 
 ### Test the load balancer

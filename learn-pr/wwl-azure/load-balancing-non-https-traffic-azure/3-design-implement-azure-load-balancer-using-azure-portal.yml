@@ -4,7 +4,7 @@ title: Design and implement Azure load balancer using the Azure portal
 metadata:
   title: Design and implement Azure load balancer using the Azure portal
   description: "Design and implement Azure load balancer using the Azure portal"
-  ms.date: 10/19/2021
+  ms.date: 11/01/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -19,23 +19,23 @@ quiz:
   questions:
   - content: "Which of the following statement about external load balancers is correct?"
     choices:
-    - content: "They have a public IP address.\\{\\{Correct, External load balancers have public IP addresses.\\}\\}"
+    - content: "They have a public IP address."
       isCorrect: true
-      explanation: "correct choice"
-    - content: "They don't have a listener IP address.\\{\\{Incorrect, External load balancers have public IP addresses.\\}\\}"
+      explanation: "Correct, External load balancers have public IP addresses."
+    - content: "They don't have a listener IP address."
       isCorrect: false
-      explanation: "incorrect choice"
-    - content: "They have a private, front-facing IP address.\\{\\{Incorrect, External load balancers have public IP addresses.\\}\\}"
+      explanation: "Incorrect, External load balancers have public IP addresses."
+    - content: "They have a private, front-facing IP address."
       isCorrect: false
-      explanation: "incorrect choice"
+      explanation: "Incorrect, External load balancers have public IP addresses."
   - content: "When deploying a new Azure Load Balancer that must support outbound traffic rules. Which SKU should be selected?"
     choices:
-    - content: "Standard\\{\\{Correct, Standard SKU supports outbound rules through declarative outbound NAT configuration.\\}\\}"
+    - content: "Standard"
       isCorrect: true
-      explanation: "correct choice"
-    - content: "Basic\\{\\{Incorrect, Basic SKU does not support outbound rules.\\}\\}"
+      explanation: "Correct, Standard SKU supports outbound rules through declarative outbound NAT configuration."
+    - content: "Basic"
       isCorrect: false
-      explanation: "incorrect choice"
-    - content: "Either Standard or Basic\\{\\{Incorrect, Basic SKU does not support outbound rules.\\}\\}"
+      explanation: "Incorrect, Basic SKU does not support outbound rules."
+    - content: "Either Standard or Basic"
       isCorrect: false
-      explanation: "incorrect choice"
+      explanation: "Incorrect, Basic SKU does not support outbound rules."
