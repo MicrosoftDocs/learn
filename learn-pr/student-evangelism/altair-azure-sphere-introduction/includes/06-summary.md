@@ -1,14 +1,17 @@
-This unit summarizes the main steps completed in this module.
+
 
 In this module, you learned:
 
-* About the history of the Altair 8800 and that was built on the Intel 8080 8-bit CPU.
-* Azure Sphere is a secure IoT platform that you can build IoT Applications. Azure Sphere looks after security, you get to focus on the solution you are building.
-* There are three components to Azure Sphere. The Azure Sphere "certified" microcontroller, the Azure Sphere Operating System, and the Azure Sphere Security Service.
-* The cloud-connected Altair 8800 emulator running on Azure Sphere is made up of three tiers. The Altair emulator runs on the Azure Sphere, there are a set of supporting cloud services, and you interact with the Altair emulator using the Web Terminal.
+* About the history of the Altair 8800 and that it was built on the Intel 8080 8-bit CPU.
+* That Azure Sphere is an improved-security IoT platform, on which you can build IoT applications. Azure Sphere helps to secure your apps, so you can focus on the solution you're building.
+* That there are three components to Azure Sphere: the Azure Sphere certified microcontroller, the Azure Sphere operating system, and the Azure Sphere security service.
+* That the cloud-connected Altair 8800 emulator that runs on Azure Sphere is made up of three tiers: 
+   * The Altair emulator, which runs on Azure Sphere.
+   * A set of supporting cloud services.
+   * The Web Terminal, which lets you interact with the Altair emulator.
 
 ## Resources
 
 * [Introduction to Azure Sphere](/learn/modules/intro-azure-sphere?azure-portal=true)
-* [Azure Sphere Documentation](/azure-sphere?azure-portal=true)
-* [Altair 8800](https://en.wikipedia.org/wiki/Altair_8800?azure-portal=true)
+* [Azure Sphere documentation](/azure-sphere?azure-portal=true)
+* [Altair 8800 on Wikipedia](https://en.wikipedia.org/wiki/Altair_8800?azure-portal=true)
