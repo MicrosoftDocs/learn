@@ -36,7 +36,7 @@ cd .\blazor-workshop\src
 
 ### Run the application
 
-Again, you're free to use your IDE or the .NET CLI:
+You're free to use your IDE or the .NET CLI, from the CLI use the `dotnet run` command:
 
 # [Linux](#tab/linux)
 
@@ -80,7 +80,7 @@ Finally, the order status page reflects the **Delivered** order status:
 
 ### Stop the application
 
-The console should output various logs, letting you know that the app has successfully built and that it's serving content at <https://localhost:5001/>. Open your favorite browser, and navigate to <https://localhost:5001/> to see the running application. Close the browser, and from the command line session press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the application.
+The console should output various logs, letting you know that the app has successfully built and that it's serving content at <https://localhost:5001/>. To stop the application, close the browser, and from the command line session press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the application.
 
 ## Familiarize yourself with the code
 
