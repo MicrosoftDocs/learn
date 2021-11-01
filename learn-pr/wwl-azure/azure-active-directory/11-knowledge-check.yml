@@ -44,22 +44,22 @@ quiz:
     choices:
     - content: "Block a user if stolen password is suspected."
       isCorrect: false
-      explanation: "Blocking user is a valid choice, but you cannot know if a password is stolen or not."
+      explanation: "Although it is possible to block a user, it is not a valid choice here, because authentication cannot flag that a password was stolen."
     - content: "Configure IP addresses outside the company intranet that should be blocked."
       isCorrect: false
-      explanation: "Configuring an IP addresses outside the company intranet that should be blocked is correct. Trusted IPs is a feature to allow federated users or IP address ranges to bypass two-step authentication.  The Trusted IPs bypass works only from inside of the company intranet. Azure Conditional Access provides extra options if needed."
+      explanation: "Configuring an IP addresses outside the company intranet that should be blocked is not correct. Trusted IPs is a feature to *allow* federated users or IP address ranges to bypass two-step authentication.  The Trusted IPs bypass works only from inside of the company intranet. Azure Conditional Access provides extra options if needed."
     - content: "One time bypass for a user that is locked out."
       isCorrect: true
       explanation: "Allowing one-time access is an available option."
-  - content: "​When configuring Azure AD roles, which of the following roles would allow the user to manage all the groups in a tenant and would be able to assign other admin roles?"
+  - content: "When configuring Azure AD roles, which of the following roles would allow the user to manage all the groups in a tenant and would be able to assign other admin roles?"
     choices:
-    - content: "Global administrator​"
+    - content: "Global administrator"
       isCorrect: true
       explanation: "Global administrator. Only the global administrator can manage groups across tenants and assign other administrator roles."
-    - content: "Password administrator​"
+    - content: "Password administrator"
       isCorrect: false
       explanation: "The password administrator role cannot assign admin roles."
-    - content: "Security administrator​"
+    - content: "Security administrator"
       isCorrect: false
       explanation: "Good try, but the security administrator role is about configuring security settings."
   - content: "Which of the following methods could be used to create an Azure AD security group?"
@@ -72,4 +72,4 @@ quiz:
       explanation: "Dynamic user uses rules to automatically add and remove members."
     - content: "Microsoft 365 user"
       isCorrect: false
-      explanation: "Microsoft 365 User. When you create an Azure AD group you can select: Assigned, Dynamic device, or Dynamic user. Assigned lets you add members directly to the group. Dynamic device uses rules to automatically add and remove devices. Dynamic user uses rules to automatically add and remove members."
+      explanation: "When you create an Azure AD group you can select: Assigned, Dynamic device, or Dynamic user. Assigned lets you add members directly to the group. Dynamic device uses rules to automatically add and remove devices. Dynamic user uses rules to automatically add and remove members."

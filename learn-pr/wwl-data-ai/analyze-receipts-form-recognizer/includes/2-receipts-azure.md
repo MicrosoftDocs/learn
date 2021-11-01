@@ -2,7 +2,7 @@ The **Form Recognizer** in Azure provides intelligent form processing capabiliti
 
 - Matching field names to values.
 - Processing tables of data.
-- Identifying specific types of fields, such as dates, telephone numbers, addresses, totals, and others.
+- Identifying specific types of field, such as dates, telephone numbers, addresses, totals, and others.
 
 Form Recognizer supports automated document processing through:
 
