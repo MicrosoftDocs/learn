@@ -4,11 +4,11 @@ You are going to create an Azure Function that will return a JSON object contain
 
 ## Generating Shared Access Signatures
 
-Shared Access Signatures need to be configured with several parameters that specify things from what kind of access you are granting to users, to when that access will expire. 
+Shared Access Signatures need to be configured with several parameters that specify things from what kind of access you are granting to users, to when that access will expire.
 
-Also your SAS token needs to carry information that will let Azure authenticate and authorize requests made with the token. This information is extracted from your own storage account credentials. In this case your function will use your storage account `Connection String` and extract the `accountKey`, `accountName`, and storage `URL` from there. The first two values are going to be used to build the shared key credentials, while the URL is going to be sent directly to the browser.
+Also your SAS token needs to carry information that will let Azure authenticate and authorize requests made with the token. This information is extracted from your own storage account credentials. In this case your function will use your storage account `Connection String` and extract the `accountKey`, `accountName`, and storage `URL` from there. The first two values are going to be used to build the shared key credentials. The URL is going to be sent directly to user's browser, so it knows where to upload the image to.
 
-To limit how long the SAS token is going to be valid, you are going to specify an `expiresOn` value of two hours. After that time has passed the SAS token will no longer be valid. Be sure to adapt this time-frame to meet the security requirements of your application. We advice to always give as restricted access as possible.
+To limit how long the SAS token is going to be valid, you are going to specify an `expiresOn` value of two hours. After that time has passed the SAS token will no longer work. Be sure to adapt this time-frame to meet the security requirements of your application. We advice to always give as restricted access as possible.
 
 SAS tokens can be generated for different kind of resources on Azure, and with various permission levels. In this case your SAS token will grant access to your `images` container, and will allow creating blobs in that container.
 
