@@ -4,12 +4,12 @@ title: Gaming and disability player experiences
 metadata:
   title: Gaming and disability player experiences
   description: This content is part of the Introduction to Gaming and Disability module.
-  ms.date: 08/10/2021
-  author: erzelman
-  ms.author: erzelman
+  ms.date: 11/5/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
   ms.topic: interactive-tutorial
   ms.prod: learning-gaming-accessibility
-durationInMinutes: 18
+durationInMinutes: 12
 content: |
   [!include[](includes/03-player-experiences.md)]
 quiz:
