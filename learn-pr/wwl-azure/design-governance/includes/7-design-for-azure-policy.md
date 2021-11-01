@@ -53,3 +53,10 @@ Tailwind Traders is now ready to consider applying Azure policy to their apps. S
 	- You use Azure Policy to ensure that the resource state is compliant to your organization’s business rules. Compliance doesn’t depend on who made the change or who has permission to make changes. Azure Policy will evaluate the state of a resource, and act to ensure the resource stays compliant.
 
 	- You use Azure RBAC to focus on user actions at different scopes. Azure RBAC manages who has access to Azure resources, what they can do with those resources, and what areas they can access. If actions need to be controlled, then use Azure RBAC. If an individual has access to complete an action, but the result is a non-compliant resource, Azure Policy still blocks the action.
+
+Once you have determined your identity management solution, it’s time to think about resource access. What resources should these identities be able to access? How will you enforce that access? How will you monitor and review the access?
+
+A user’s identity goes through several phases. Initially, the user will have no access. Access can then be granted through role-based access control and verified with Azure AD conditional access. Azure AD Identify Protection can be used to monitor the user’s access. And then periodically Azure AD access reviews will confirm the access is still required. 
+
+:::image type="content" source="../media/identities-resources.png" alt-text="Identities are allowed access to resources.":::
+
