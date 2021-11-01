@@ -80,7 +80,7 @@ sudo apt install git
     sudo tar -xjvf gcc-arm-none-eabi-<version-number>-major-x86_64-linux.tar.bz2 -C /opt
     ```
 
-3. Update your path. Open *~/.bashrc* and add the followig code to the end:
+3. Update your path. Open *~/.bashrc* and add the following code to the end:
 
     ```bash
     export PATH=$PATH:/opt/gcc-arm-none-eabi-<version-number>-major/bin
@@ -119,7 +119,7 @@ azsphere device enable-development
 
 ### Enable real-time core development
 
-From the Windows PowerShell command line or Linux Terminal, run the following command to enable real-time app development on the device:
+From the Windows PowerShell command line or Linux terminal, run the following command to enable real-time app development on the device:
 
 ```azsphere
 azsphere device enable-development -r

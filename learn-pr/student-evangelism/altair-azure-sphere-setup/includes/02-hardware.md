@@ -2,7 +2,7 @@ Three hardware configurations are supported for the Altair emulator on Azure Sph
 
 ## Standalone Azure Sphere
 
-You can use a standalone Azure Sphere instance with either an Avnet or Seeed Studio device.
+You can use a standalone Azure Sphere instance with either an Avnet device or a Seeed Studio device.
 
 | Seeed Studio Azure Sphere Developer Kit     | Avnet Azure Sphere Starter Kit Rev 1 or Rev 2    |
 |----------------|---------------|

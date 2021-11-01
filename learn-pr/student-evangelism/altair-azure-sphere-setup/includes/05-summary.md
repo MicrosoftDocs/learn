@@ -1,4 +1,4 @@
-In this module, you learned about the hardware and software requirements for the Altair emulator on Azure Sphere, based on whether you're using a Windows 10 or Ubuntu computer. You did these tasks:
+In this module, you learned about the hardware and software requirements for the Altair emulator on Azure Sphere, based on whether you're using a Windows 10 or Ubuntu computer. You finished these tasks:
 
 * You installed the developer tools and the Azure Sphere SDK.
 * You claimed your Azure Sphere instance in your Azure Sphere tenant.

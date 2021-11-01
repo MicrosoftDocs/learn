@@ -1,4 +1,4 @@
-Welcome to the learning path about cloud-connected Altair 8800 on Azure Sphere. In this module, you'll learn about the hardware requirements for the Altair emulator and how to install the required software on your computer.
+Welcome to the learning path about the cloud-connected Altair 8800 on Azure Sphere. In this module, you'll learn about the hardware requirements for the Altair emulator and how to install the required software on your computer.
 
 ## Scenario: Hardware and software setup
 
@@ -10,4 +10,4 @@ In this module, you'll learn about the Azure Sphere hardware options for the Alt
 
 ## What is the main goal?
 
-This module will focus on the hardware options and setting up your computer to build and deploy the Altair emulator to Azure Sphere.
+This module will focus on hardware options and setting up your computer to build and deploy the Altair emulator to Azure Sphere.
