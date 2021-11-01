@@ -1,4 +1,4 @@
-IoT is so much more than blinking lights and reading sensors. IoT also is a mechanism for delivering AI workloads to the masses. Traditionally, it's typical to think of IoT as specialized hardware with physical sensors that report readings up to a cloud service for processing.
+The Internet of Things (IoT) is so much more than blinking lights and reading sensors. IoT also is a mechanism for delivering AI workloads to the masses. Traditionally, it's typical to think of IoT as specialized hardware with physical sensors that report readings up to a cloud service for processing.
 
 With the advent of small form factor GPU-enabled and field programmable gate array (FPGA)-enabled devices, it has become common to see heavier AI applications running directly on embedded hardware. With this paradigm, you can reduce data outflow, but also focus on the important results that come from processing data on the edge.
 
