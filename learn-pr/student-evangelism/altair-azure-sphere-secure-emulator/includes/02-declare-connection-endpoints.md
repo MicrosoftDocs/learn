@@ -28,4 +28,4 @@ The Altair emulator will be connecting to IoT Central. You need to declare the g
 
 ## The MQTT broker network endpoint
 
-The Altair emulator will also be connecting to a public MQTT broker at the [test.mosquitto.org website](test.mosquitto.org). You declare the network endpoint in the "AllowedConnections" section of the application manifest file.
+The Altair emulator will also be connecting to a public MQTT broker at the [test.mosquitto.org website](https://test.mosquitto.org/). You declare the network endpoint in the "AllowedConnections" section of the application manifest file.
