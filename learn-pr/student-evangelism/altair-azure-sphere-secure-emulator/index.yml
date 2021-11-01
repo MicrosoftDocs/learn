@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.altair-azure-sphere-secure-emulator
 metadata:
   title: Secure the Altair emulator
-  description: Learn how to secure the Altair emulator network communications.
+  description: Learn how to help secure the Altair emulator network communications.
   ms.date: 10/01/2021
   author: gloveboxes
   ms.author: chnoring
@@ -10,19 +10,19 @@ metadata:
   ms.prod: learning-azure-iot-central
   ms.custom: nextgen
 title: Secure the Altair emulator
-summary: Learn how to secure the Altair emulator network communications.
+summary: Learn how to help secure the Altair emulator network communications.
 abstract:  |
   In this module, you will:
   - Declare the network endpoints for the Altair emulator.
   - Get connection information for Azure IoT Central. 
-  - Secure communications to the test.mosquitto.org MQTT broker. 
+  - Help secure communications to the test.mosquitto.org MQTT broker. 
 prerequisites: |
   - A computer with an x86-64-based processor running one of the following operating systems:
-    - Windows 10 Anniversary Update or later
-    - 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
+    - Windows 10 Anniversary Update or later.
+    - 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS.
   - An Azure Sphere developer board that has one of the following kits:
-    - Avnet Azure Sphere Starter Kit Rev 1 or 2
-    - Seeed Studio Azure Sphere MT3620 Development Kit
+    - Avnet Azure Sphere Starter Kit Rev 1 or 2.
+    - Seeed Studio Azure Sphere MT3620 Development Kit.
   - A GitHub account.
   - An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
 iconUrl: /learn/achievements/generic-badge.svg
