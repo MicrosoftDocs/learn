@@ -1,4 +1,4 @@
-In the traditional approach to IoT microcontroller (MCU) development, you're responsible for integrating and maintaining all the bits of a solution. 
+In the traditional approach to IoT microcontroller development, you're responsible for integrating and maintaining all the bits of a solution. 
 
 This approach includes:
 - The communications stack.
@@ -12,7 +12,7 @@ This approach includes:
 
 You're a solution domain expert. But you're now also responsible for tracking new and emerging security threats, mitigating them, and updating the platform to protect IoT devices.
 
-Azure Sphere is a unique, highly secure IoT platform. You focus on your solution. 
+Azure Sphere is a unique, highly secure IoT platform. It allows you to focus on your solution. 
 
 Azure Sphere manages: 
 - Security.

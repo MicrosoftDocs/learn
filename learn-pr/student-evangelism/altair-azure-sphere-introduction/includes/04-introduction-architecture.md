@@ -7,9 +7,9 @@ The solution integrates several Azure cloud services, including:
 
 :::image type="content" source="../media/altair-azure-sphere-architecture.png" alt-text="Diagram that shows the Azure Sphere architecture." border="false":::
 
-The Altair emulator running on the Azure Sphere is accessible via a browser-based terminal.
+The Altair emulator running on Azure Sphere is accessible via a browser-based terminal.
 
-The Altair emulator runs on the Azure Sphere Cortex-A7. Depending on your hardware configuration, a virtual disk cache or SD card server runs on one of the real-time Cortex-M4 cores.
+The Altair emulator runs on the Azure Sphere Cortex-A7. Depending on your hardware configuration, either a virtual disk cache or an SD card server runs on one of the real-time Cortex-M4 cores.
 
 ## The Altair emulator application architecture
 
@@ -27,7 +27,7 @@ The Altair emulator consists of two applications: one high-level application and
 
 - The **Altair SD Card service** real-time application.
 
-  - This application provides SD card support for the Altair emulator for the Avnet Azure Sphere Starter Kits with the MikroE microSD Click. The MikroE microSD Click must be plugged into socket 1 on the Avnet Azure Sphere Starter Kit.
+  - This application provides SD card support for the Altair emulator for the Avnet Azure Sphere Starter Kits with MikroE microSD Click. MikroE microSD Click must be plugged into socket 1 on the Avnet Azure Sphere Starter Kit.
 
 ## Altair Web Terminal
 
@@ -37,7 +37,7 @@ The Web Terminal is an HTML/CSS/JavaScript application built on the [MQTT](https
 
 :::image type="content" source="../media/altair-web-terminal.png" alt-text="Diagram that shows the architecture of the MQTT-based Altair Web Terminal." border="false":::
 
-## Altair Web Terminal Azure Static Web Apps
+## Altair Web Terminal Azure static web apps
 
 The Altair Web Terminal is implemented as an [Azure static web app](/azure/static-web-apps?azure-portal=true).
 

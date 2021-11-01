@@ -1,4 +1,5 @@
-Welcome to the cloud-connected Altair 8800 on Azure Sphere learning path. You’ve come to the right place if you're interested in improved-security IoT devices and cloud computing. While learning about device and cloud computing, and you'll also get a taste of retro computing. You'll gain an understanding of the Altair 8800 personal computer, invented in the 1970s.
+Welcome to the Learn computing fundamentals with Altair 8800 and Azure Sphere
+ learning path. You’ve come to the right place if you're interested in improved-security IoT devices and cloud computing. While you learn about device and cloud computing, you'll also get a taste of retro computing. You'll gain an understanding of the Altair 8800 personal computer, invented in the 1970s.
 
 ## Scenario: Curiosity
 
@@ -6,7 +7,7 @@ You're reading an article on the internet about the Altair 8800 personal compute
 
 The Altair 8800 emulator running on Azure Sphere brings together retro computing, the modern world of IoT and cloud computing, and the chance to step back in time and program one of the first personal computers invented.
 
-The Altair 8800 emulator provides the perfect platform to learn about the Altair 8800, how it works, and how it can be programmed. You'll get to program apps and games in Basic and C. If you're more adventurous, you can code applications in Assembly language. Or you can go deeper and program the Altair 8800 with Intel 8080 machine code.
+The Altair 8800 emulator provides the perfect platform to learn about the Altair 8800, how it works, and how it can be programmed. You'll be able to program apps and games in Basic and C. If you're more adventurous, you can code applications in Assembly language. Or you can go deeper and program the Altair 8800 with Intel 8080 machine code.
 
 ## What will you learn?
 
@@ -15,7 +16,7 @@ In this module, you'll learn about:
 - The history of the Altair 8800
 - The open-source Altair 8800 emulator
 
-The Altair 8800 was invented well before the Internet as we know it today, and you'll learn techniques that you can apply to day-to-day IoT solutions.
+The Altair 8800 was invented well before the Internet as we know it today. You'll learn techniques that you can apply to day-to-day IoT solutions.
 
 ## What's the main goal?
 
