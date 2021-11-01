@@ -10,7 +10,7 @@ A security engineer uses perimeter security features to block network traffic aw
 
 ## Skills measured
 
-Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
+Securing the Azure platofrm your cloud solutions run on is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
 
 Implement platform protection (15-20%)
 - Implement advanced network security
