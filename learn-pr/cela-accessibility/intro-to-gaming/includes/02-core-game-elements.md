@@ -17,6 +17,7 @@ In this unit, you'll learn about common game elements that can pose unintentiona
 elements that impact accessibility.
 >
 > This includes elements related to:
+>
 > - Speech and communication
 > - Sensory demands
 > - Mental health and more
@@ -27,9 +28,9 @@ elements that impact accessibility.
 
 Many gaming experiences today use visual cues or indicators to guide player success. In game accessibility, it's important to think about the following:
 
- - Is important information represented through visual means? For example, text-based menus and instructions, on-screen icons, and more.
- - Is the visual representation of this information accessible to players with visual disabilities?
- - How can gameplay be impacted if a player cannot access visual information due to lack of accessible supports?
+- Is important information represented through visual means? For example, text-based menus and instructions, on-screen icons, and more.
+- Is the visual representation of this information accessible to players with visual disabilities?
+- How can gameplay be impacted if a player cannot access visual information due to lack of accessible supports?
  
 In the following video, you'll learn how to identify common visual elements in games that should be considered in the context of these questions.
 
@@ -38,7 +39,7 @@ Identifying these elements is an important first step in accessible game develop
 ## Identifying audio elements
 
 Like visual elements, gaming experiences also use audio-based elements to portray information needed to navigate the experience. Think about the importance of audio-based information in the following scenario.
- 
+
 A player is exploring a wooded area in the game. While the visual game environment remains the same, suddenly the game’s music becomes slow and ominous. The sound of footsteps rattles in the distance.
 
 Based on these audio cues, the player assumes impending danger. Before deciding to continue in the direction of the footsteps, they now know to first check their health and ammunition levels. The player makes the informed decision to avoid this area of the game until they collect more weapons and health potions.
