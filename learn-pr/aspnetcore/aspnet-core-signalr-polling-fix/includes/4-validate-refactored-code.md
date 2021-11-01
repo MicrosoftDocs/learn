@@ -25,27 +25,25 @@ This application is for learning purposes, and its authentication allows users t
 
 ## Place a pizza order
 
-Once you've logged in, you can place an order for pizza. Select a pizza, choose the toppings, and add them to the order. As an example, consider the following screen capture:
-
-:::image type="content" source="../media/add-to-order.png" alt-text="Blazing Pizza: A pizza(s) to order.":::
+:::image type="content" source="../media/add-to-order.png" lightbox="../media/add-to-order.png" alt-text="Blazing Pizza: A pizza(s) to order.":::
 
 After adding pizza(s) to the order, place the order by selecting the **Order >** button.
 
-:::image type="content" source="../media/place-order.png" alt-text="Blazing Pizza: Place order.":::
+:::image type="content" source="../media/place-order.png" lightbox="../media/place-order.png" alt-text="Blazing Pizza: Place order.":::
 
 Immediately following the order creation, the app redirects to the order status page. This displays the various order status details from **Preparing** to **Out for delivery**, and finally **Delivered**. While the order is **Out for delivery** the live map will update incrementally emulating the delivery driver's location.
 
 Consider the following series of screen captures that show the gradual progression from the starting location to the ending location:
 
-:::image type="content" source="../media/out-for-delivery-1.png" alt-text="Blazing Pizza: Order status, driver just leaving, out for delivery.":::
-:::image type="content" source="../media/out-for-delivery-2.png" alt-text="Blazing Pizza: Order status, driver a quarter of the way there, out for delivery.":::
-:::image type="content" source="../media/out-for-delivery-3.png" alt-text="Blazing Pizza: Order status, driver halfway there, out for delivery.":::
-:::image type="content" source="../media/out-for-delivery-4.png" alt-text="Blazing Pizza: Order status, driver three quarters of the way there, out for delivery.":::
-:::image type="content" source="../media/out-for-delivery-5.png" alt-text="Blazing Pizza: Order status, driver arriving at destination, out for delivery.":::
+:::image type="content" source="../media/out-for-delivery-1.png" lightbox="../media/out-for-delivery-1.png" alt-text="Blazing Pizza: Order status, driver just leaving, out for delivery.":::
+:::image type="content" source="../media/out-for-delivery-2.png" lightbox="../media/out-for-delivery-2.png" alt-text="Blazing Pizza: Order status, driver a quarter of the way there, out for delivery.":::
+:::image type="content" source="../media/out-for-delivery-3.png" lightbox="../media/out-for-delivery-3.png" alt-text="Blazing Pizza: Order status, driver halfway there, out for delivery.":::
+:::image type="content" source="../media/out-for-delivery-4.png" lightbox="../media/out-for-delivery-4.png" alt-text="Blazing Pizza: Order status, driver three quarters of the way there, out for delivery.":::
+:::image type="content" source="../media/out-for-delivery-5.png" lightbox="../media/out-for-delivery-5.png" alt-text="Blazing Pizza: Order status, driver arriving at destination, out for delivery.":::
 
 Finally, the order status page reflects the **Delivered** order status:
 
-:::image type="content" source="../media/delivered-order.png" alt-text="Blazing Pizza: Order status, driver delivered order.":::
+:::image type="content" source="../media/delivered-order.png" lightbox="../media/delivered-order.png" alt-text="Blazing Pizza: Order status, driver delivered order.":::
 
 ## Stop the application
 
