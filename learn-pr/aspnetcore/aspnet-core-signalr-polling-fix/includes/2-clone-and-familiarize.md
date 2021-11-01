@@ -56,7 +56,7 @@ This application is for learning purposes, and its authentication allows users t
 
 ### Place a pizza order
 
-Once you've logged in, you can place an order for pizza. Select a pizza, choose the toppings, and add it to the order. As an example, consider the following screen capture:
+Once you've logged in, you can place an order for pizza. Select a pizza, choose the toppings, and add them to the order. As an example, consider the following screen capture:
 
 :::image type="content" source="../media/add-to-order.png" alt-text="Blazing Pizza: A pizza(s) to order.":::
 

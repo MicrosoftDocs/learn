@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Refactor using ASP.NET Core SignalR
   description: "Refactor the existing client-side polling to instead use ASP.NET Core SignalR."
-  ms.date: 10/28/2021
+  ms.date: 11/01/2021
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial

@@ -5,7 +5,7 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Learn how to replace client polling with real-time web functionality from ASP.NET Core SignalR.
-  ms.date: 10/27/2021
+  ms.date: 11/01/2021
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial # do we need ms.topic?

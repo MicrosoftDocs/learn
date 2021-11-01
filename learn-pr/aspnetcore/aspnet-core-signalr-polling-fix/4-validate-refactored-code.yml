@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Validate ASP.NET Core SignalR refactoring
   description: "Validate ASP.NET Core SignalR refactoring to ensure the source if functionally equivalent."
-  ms.date: 10/28/2021
+  ms.date: 11/01/2021
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial

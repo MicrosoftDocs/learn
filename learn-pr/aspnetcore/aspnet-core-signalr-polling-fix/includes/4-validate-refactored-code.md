@@ -1,108 +1,52 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+In this unit, you'll validate that the refactoring was a success by running the code with the applied changes. Now that you're on the `signalr` branch and you've learned what the various refactorings included, you should expect the app to function as it did before.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+> [!IMPORTANT]
+> You may have noticed that there were additional changes introduced in the `signalr` branch. These changes are beyond the scope of the module, and they're to help further emulate an ordering system.
 
-    Heading: none
+## Run the application
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+Now that you're familiar with what code was refactored, and you're on the `signalr` branch &mdash; you'll build and run the application again to verify that it's functionally equivalent.
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+# [Linux](#tab/linux)
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+```dotnetcli
+dotnet run --project ./BlazingPizza.Server/BlazingPizza.Server.csproj
+```
 
-    Goal: Describe the part of the scenario covered in this exercise
+# [Windows](#tab/windows)
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+```dotnetcli
+dotnet run --project .\BlazingPizza.Server\BlazingPizza.Server.csproj
+```
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+---
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+This application is for learning purposes, and its authentication allows users to register any email address. When actively developing the app, you can complete the registration process by clicking a link to confirm your account - without actually validating the email address. For more information, see [Blazor Workshop: register a user and log in](https://github.com/dotnet-presentations/blazor-workshop/blob/4c8cb74dedb7a42eda534a03493ab9fd6b198131/docs/06-authentication-and-authorization.md#register-a-user-and-log-in).
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+## Place a pizza order
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+Once you've logged in, you can place an order for pizza. Select a pizza, choose the toppings, and add them to the order. As an example, consider the following screen capture:
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+:::image type="content" source="../media/add-to-order.png" alt-text="Blazing Pizza: A pizza(s) to order.":::
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+After adding pizza(s) to the order, place the order by selecting the **Order >** button.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+:::image type="content" source="../media/place-order.png" alt-text="Blazing Pizza: Place order.":::
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+Immediately following the order creation, the app redirects to the order status page. This displays the various order status details from **Preparing** to **Out for delivery**, and finally **Delivered**. While the order is **Out for delivery** the live map will update incrementally emulating the delivery driver's location.
 
-    Goal: List the steps they'll do to complete the exercise.
+Consider the following series of screen captures that show the gradual progression from the starting location to the ending location:
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+:::image type="content" source="../media/out-for-delivery-1.png" alt-text="Blazing Pizza: Order status, driver just leaving, out for delivery.":::
+:::image type="content" source="../media/out-for-delivery-2.png" alt-text="Blazing Pizza: Order status, driver a quarter of the way there, out for delivery.":::
+:::image type="content" source="../media/out-for-delivery-3.png" alt-text="Blazing Pizza: Order status, driver halfway there, out for delivery.":::
+:::image type="content" source="../media/out-for-delivery-4.png" alt-text="Blazing Pizza: Order status, driver three quarters of the way there, out for delivery.":::
+:::image type="content" source="../media/out-for-delivery-5.png" alt-text="Blazing Pizza: Order status, driver arriving at destination, out for delivery.":::
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+Finally, the order status page reflects the **Delivered** order status:
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+:::image type="content" source="../media/delivered-order.png" alt-text="Blazing Pizza: Order status, driver delivered order.":::
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Stop the application
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+The console should output various logs, letting you know that the app has successfully built and that it's serving content at <https://localhost:5001/>. Open your favorite browser, and navigate to <https://localhost:5001/> to see the running application. Close the browser, and from the command line session press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the application.
