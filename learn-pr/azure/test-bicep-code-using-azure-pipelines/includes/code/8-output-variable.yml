@@ -1,0 +1,15 @@
+stages:
+
+- stage: DeployStage
+  jobs: 
+  - job: DeployJob
+    steps:
+      - script: |
+          echo "##vso[task.setvariable variable=myVariable;isOutput=true]myValue"
+        name: DeployStep
+
+- stage: SmokeTest
+  jobs:
+  - job: SmokeTest
+    variables:
+      myVariable: $[ stageDependencies.DeployStage.DeployJob.outputs['DeployJob.DeployStep.myVariable'] ]

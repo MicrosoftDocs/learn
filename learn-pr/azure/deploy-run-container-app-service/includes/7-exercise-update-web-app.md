@@ -37,7 +37,7 @@ In this unit, you'll configure continuous deployment for the web app and create 
     az acr build --registry <container_registry_name> --image webimage .
     ```
 
-1. Return to the Azure portal **hone page**, and under **Recent resources**, select your container registry. Your **Container registry** pane appears.
+1. Return to the Azure portal **home page**, and under **Recent resources**, select your container registry. Your **Container registry** pane appears.
 
 1. In the left menu pane, under **Services**, select **Webhooks**. The **Webhooks** pane appears for your container registry.
 

@@ -10,7 +10,7 @@ The nature of your app and the data that it stores should drive your strategy fo
 
 Apps using blobs as part of a storage scheme that includes a database often don't need to rely heavily on organization, naming, or metadata to indicate anything about their data. Such apps commonly use identifiers like GUIDs as blob names and reference these identifiers in database records. The app will use the database to determine where blobs are stored and the kind of data they contain.
 
-Other apps may use Azure Blob storage more like a personal file system, where container and blob names are used to indicate meaning and structure. Blob names in these kinds of apps will often look like traditional file names and include file name extensions like `.jpg` to indicate what kind of data they contain. They'll use virtual directories (see below) to organize blobs and will frequently use metadata tags to store information about blobs and containers.
+Other apps may use Azure Blob Storage more like a personal file system, where container and blob names are used to indicate meaning and structure. Blob names in these kinds of apps will often look like traditional file names and include file name extensions like `.jpg` to indicate what kind of data they contain. They'll use virtual directories (see below) to organize blobs and will frequently use metadata tags to store information about blobs and containers.
 
 There are a few key things to consider when deciding how to organize and store blobs and containers.
 
@@ -22,7 +22,7 @@ Container and blob names must conform to a set of rules, including length limita
 
 By default, all blobs require authentication to access. However, individual containers can be configured to allow public downloading of their blobs without authentication. This feature supports many use cases, such as hosting static website assets and sharing files. This is because downloading blob contents works the same way as reading any other kind of data over the web: you just point a browser or anything that can make a GET request at the blob URL.
 
-Enabling public access is important for scalability because data downloaded directly from Blob storage doesn't generate any traffic in your server-side app. Even if you don't immediately take advantage of public access or if you will use a database to control data access via your app, plan on using separate containers for data you want to be publicly available.
+Enabling public access is important for scalability because data downloaded directly from Blob Storage doesn't generate any traffic in your server-side app. Even if you don't immediately take advantage of public access or if you will use a database to control data access via your app, plan on using separate containers for data you want to be publicly available.
 
 > [!CAUTION]
 > Blobs in a container configured for public access can be downloaded without any kind of authentication or auditing by anyone who knows their storage URLs. Never put blob data in a public container that you don't intend to share publicly.
@@ -33,7 +33,7 @@ In addition to public access, Azure has a shared access signature feature that a
 
 Technically, containers are "flat" and do not support any kind of nesting or hierarchy. But if you give your blobs hierarchical names that look like file paths (such as `finance/budgets/2017/q1.xls`), the API's listing operation can filter results to specific prefixes. This enables you to navigate the list as if it was a hierarchical system of files and folders.
 
-This feature is often called *virtual directories* because some tools and client libraries use it to visualize and navigate Blob storage as if it was a file system. Each folder navigation triggers a separate call to list the blobs in that folder.
+This feature is often called *virtual directories* because some tools and client libraries use it to visualize and navigate Blob Storage as if it was a file system. Each folder navigation triggers a separate call to list the blobs in that folder.
 
 Using names that are like filenames for blobs is a common technique for organizing and navigating complex blob data.
 

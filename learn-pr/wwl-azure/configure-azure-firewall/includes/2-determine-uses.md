@@ -13,4 +13,4 @@ Azure Firewall uses a static public IP address for your virtual network resource
  -  **Application FQDN filtering rules**. You can limit outbound HTTP/S traffic or Azure SQL traffic to a specified list of fully qualified domain names (FQDN) including wild cards.
  -  **Network traffic filtering rules**. You can centrally create allow or deny network filtering rules by source and destination IP address, port, and protocol. Azure Firewall is fully stateful, so it can distinguish legitimate packets for different types of connections. Rules are enforced and logged across multiple subscriptions and virtual networks.
  -  **Threat intelligence**. Threat intelligence-based filtering can be enabled for your firewall to alert and deny traffic from/to known malicious IP addresses and domains. The IP addresses and domains are sourced from the Microsoft Threat Intelligence feed.
- -  **Multiple public IP addresses**. You can associate multiple public IP addresses (up to 100) with your firewall.
+ -  **Multiple public IP addresses**. You can associate multiple public IP addresses with your firewall.

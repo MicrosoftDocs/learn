@@ -18,7 +18,7 @@ You pushed your **api** branch to GitHub. Now you want the GitHub Action to publ
 1. Open a browser
 1. Navigate to your repository
 
-   `https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app`
+   `https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app-and-api`
 
 1. Click on the **Pull requests** link
 1. Click the **New pull request** button

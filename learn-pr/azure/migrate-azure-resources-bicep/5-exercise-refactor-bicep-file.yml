@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-azure-resources-bicep.exercise-refactor-bicep-file
+title: Exercise - Refactor the Bicep file
+metadata:
+  unitType: exercise
+  title: Exercise - Refactor the Bicep file
+  description: Learn how to refactor your migrated Bicep files to meet Bicep best practices.
+  ms.date: 08/17/2021
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-refactor-bicep-file.md)]

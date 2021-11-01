@@ -14,6 +14,7 @@ We'll begin by learning the small, foundational concepts of the language. Then w
 
 In this module, you'll learn:
 
-  - Some of the unique features of Rust
-  - Why developers choose Rust over other programming languages
-  - The basic components and tools to build, compile, and run Rust programs
+- Some of the unique features of Rust
+- Why developers choose Rust over other programming languages
+- The basic components and tools to build, compile, and run Rust programs
+- Try the Rust playground

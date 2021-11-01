@@ -12,7 +12,7 @@ In this unit, you'll use the Azure portal to create a new registry in Container 
 
 1. On the Azure portal **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Containers**, and under *Popular offers*, select **Container Registry**.
+1. In the left menu pane, select **Containers**, and under *Popular products*, select **Container Registry**.
 
    ![Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace.](../media/3-search-container-registry-annotated.png)
 
@@ -24,7 +24,7 @@ In this unit, you'll use the Azure portal to create a new registry in Container 
     |---|---|
     | **Project details** |
     | Subscription | Select your Azure subscription. |
-    | Resource group | Select **Create new**, and enter a new resource group with the name *learn-deploy-container-acr-rg*. This approach may make it easier to clean up these resources when you're finished with the module. If you choose a different resource group name, make note of it for the rest of the exercises in this module. |
+    | Resource group | Select **Create new**, and enter *learn-deploy-container-acr-rg*, and select **OK**. This approach may make it easier to clean up these resources when you're finished with the module. If you choose a different resource group name, make note of it for the rest of the exercises in this module. |
     | **Instance details** |
     | Registry name | Enter a unique name and make a note of it for later. |
     | Location | Select a location that is close to you. |

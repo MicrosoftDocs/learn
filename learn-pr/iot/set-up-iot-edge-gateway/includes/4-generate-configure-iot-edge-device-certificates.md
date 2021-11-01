@@ -1,12 +1,12 @@
 We need to ensure that only authorized devices can publish data into the IoT Edge Gateway.  Certificate-based authentication will allow us to keep out unauthorized devices and secure the transmission channel back to our IoT Hub.
 
-[![Security Guard at Entrance.](../media/security.png)](../media/security.png#lightbox)
+:::image type="content" source="../media/security.png" border="false" alt-text="Security Guard at Entrance.":::
 
 The process is similar to how we gain access into the physical manufacturing building.  
 
 We present credentials to a guard (the IoT Edge Gateway), who validates that we are who we say we are.  If the credentials check out, then we can pass into our destination (the Azure IoT Hub).
 
-[![Transparent Gateway Devices Diagram.](../media/transparent-gateway-devices.png)](../media/transparent-gateway-devices.png#lightbox)
+:::image type="content" source="../media/transparent-gateway-devices.png" border="false" alt-text="Transparent Gateway Devices Diagram." lightbox="../media/transparent-gateway-devices.png":::
 
 In this unit, you'll generate test certificates using tooling on Linux. The certs will ensure that only securely authenticated downstream devices can communicate with the IoT Edge Gateway.
 
@@ -18,36 +18,32 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
 
 1. Follow the instructions to create the necessary storage accounts for use in the **Cloud Shell**.
 
-    If you are using a sandbox account, you may receive the following error message when creating the Cloud Shell instance. If you receive this message, scroll down and select **Show advanced settings**:
+    If you're using a sandbox account, you may receive the following error message when creating the Cloud Shell instance. If you receive this message, scroll down and select **Show advanced settings**:
 
-    >[!div class="mx-imgBorder"]
-    >[![Azure Cloud Shell Storage Creation Failed.](../media/storage-creation-failed.png)](../media/storage-creation-failed.png#lightbox)
+    :::image type="content" source="../media/storage-creation-failed.png" alt-text="Screenshot of Azure Cloud Shell Storage Creation Failed." lightbox="../media/storage-creation-failed.png":::
 
     Next, supply appropriate names to create a new **Storage account** and **File share** then select **Create storage**:
 
-   >[!div class="mx-imgBorder"]
-    >[![Azure Cloud Shell Storage Creation Advanced Settings Named.](../media/storage-creation-advanced-settings-named.png)](../media/storage-creation-advanced-settings-named.png#lightbox)
+   :::image type="content" source="../media/storage-creation-advanced-settings-named.png" alt-text="Screenshot of Azure Cloud Shell Storage Creation Advanced Settings Named." lightbox="../media/storage-creation-advanced-settings-named.png":::
 
     >[!NOTE]
-    > The **Storage Account** and **File Share** resources must be given globally unique names.  If you receive an error that a given name is already in use, try to name the resource again with a unique value.
+    > The **Storage Account** and **File Share** resources must be given globally unique names. If you receive an error that a given name is already in use, try to name the resource again with a unique value.
 
-1. Navigate to the Azure IoT Edge Gateway Virtual Machine within the Azure portal.  It should be named according to the following format:
- `vm-0000000000000`
+1. Navigate to the Azure IoT Edge Gateway Virtual Machine within the Azure portal.  It should be named according to the following format: `vm-0000000000000`
 
-1. On the **Overview** pane of the **Virtual machine** blade, click the **Connect** button at the top.
+1. On the **Overview** pane of the **Virtual machine** blade, select  **Connect** in the top toolbar.
 
-1. Within the **Connect to virtual machine pane**, select the **SSH** option, then look for the section "**Run the example command below to connect to your VM.**".
+1. Within the **Connect to virtual machine pane**, select the **SSH** option, then look for the section **Run the example command below to connect to your VM.**.
 
     This section should contain an entry that looks similar to the text below:
     
-    `ssh -i <private key path> usernam@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com
-    `
+    `ssh -i <private key path> usernam@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com`
 
     This entry is a sample SSH command that will be used to connect to the virtual machine.  It contains the hostname for the VM and the Administrator username. Modify this command so that it is formatted similar to `ssh username@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com`.
 
 1. Within the Cloud Shell, paste in the modified `ssh` command, and press **Enter**.
 
-1. When prompted with "**Are you sure, you want to continue connecting?**", type `yes` and press Enter. This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed.
+1. When prompted with "**Are you sure, you want to continue connecting?**", type `yes` and press <kbd>Enter</kbd>. This prompt is a security confirmation because the certificate used to secure the connection to the VM is self-signed.
 
 1. When prompted to enter the password, enter the Administrator password that was entered when the VM was provisioned.
 
@@ -57,13 +53,13 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
     username@az-220-vm-edgegw-{YOUR-ID}:~$
     ```
 
-1. The `Azure/IoTEdge` GitHub project contains scripts to generate non-production certificates. These scripts will help you create the necessary scripts to set up a Transparent IoT Edge Gateway. Run the following command:
+1. The `Azure/iotedge` GitHub project contains scripts to generate non-production certificates. These scripts will help you create the necessary scripts to set up a Transparent IoT Edge Gateway. Run the following command:
 
     ```bash
      git clone https://github.com/Azure/iotedge.git
     ```
     >[!NOTE]
-    >The Azure/iotedge open source project is the official open source project for Azure IoT Edge. This project contains source code for the Edge Agent, Edge Hub, and IoT Edge Security Daemon; in addition to the helper script used in this unit.
+    >The Azure/IoTedge open source project is the official open source project for Azure IoT Edge. This project contains source code for the Edge Agent, Edge Hub, and IoT Edge Security Daemon; in addition to the helper script used in this unit.
 
 1. Run the following commands to create a working directory named ~/certificates that will be used for generating the certificates, then move to that directory:
 
@@ -77,7 +73,7 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
      cp ../iotedge/tools/CACertificates/*.cnf .
      cp ../iotedge/tools/CACertificates/certGen.sh .
     ```
-    These commands will copy just the necessary files for running the helper script for generating test CA certificates. The rest of the source files within the Azure/iotedge repository are not needed for this unit.
+    These commands will copy just the necessary files for running the helper script for generating test CA certificates. The rest of the source files within the Azure/IoTedge repository are not needed for this unit.
 
 1. Within the working directory, run the following command to verify the helper script files have been copied correctly.
 
@@ -178,7 +174,7 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
     | `trusted_ca_certs` | This setting is for the Root CA Certificate. This certificate must contain all the trusted CA certificates required for Edge module communications.
 
     >[!NOTE]
-    > Here are some tips for using **vi** when editing the `config.yaml file`: 
+    > Here are some tips for using the **vi** when editing the `config.yaml file`: 
     >- Press the `i` key to put the editor into Insert mode, then you will be able to make changes.
     >- Press `Esc` to go stop Insert mode and return to Normal mode.
     >- To Save and Quit, type `:x`, and press `Enter`.

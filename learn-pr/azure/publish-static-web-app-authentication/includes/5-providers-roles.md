@@ -29,7 +29,7 @@ For example, to disable login through the GitHub provider, you can add a routing
   "routes": [
     {
       "route": "/.auth/login/github",
-      "statusCode": "404"
+      "statusCode": 404
     }
   ]
 }

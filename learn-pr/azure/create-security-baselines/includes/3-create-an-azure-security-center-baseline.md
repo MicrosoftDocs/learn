@@ -10,11 +10,9 @@ Here are the recommendations for setting up Azure Security Center. Included with
 
 Azure Security Center is offered in two pricing tiers, **Free** and **Standard**. The Standard tier extends the capabilities of the Free tier to workloads running in private and other public clouds, providing unified security management and threat protection across your hybrid cloud workloads. The Standard tier also adds advanced threat detection capabilities, which uses built-in behavioral analytics and machine learning to identify attacks and zero-day exploits, access and application controls to reduce exposure to network attacks and malware, and more. Azure Security Center Standard supports Azure resources including virtual machines (VMs), virtual machine scale sets, App Service, SQL servers, threat detection provided with Microsoft Security Response Center, and Storage accounts.
 
-1. Sign in to the Azure portal.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the Azure **home** page, in the top search bar, search for and select *Security Center*. The **Security Center - Overview** pane appears.
-
-1. In the left menu pane, under **Management**, select **Pricing & settings**. The **Pricing & settings** pane appears for **Security Center**.
+1. In resource menu, select **Security Center**. The **Security Center** Overview pane appears.
 
 1. Select the subscription that will be upgraded to Standard.
 
@@ -41,11 +39,11 @@ The enabled policies define the Azure Security Center recommendations. Currently
 
 When automatic provisioning is enabled, Security Center installs the Microsoft Monitoring Agent on all supported Azure VMs and any new ones that are created. **Automatic provisioning is strongly recommended**.
 
-1. Sign in to the Azure portal.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the **Security Center Overview** pane, in the left menu pane, under **Management**, select **Security policy**. The **Security policy** pane appears for the **Security Center**.
+1. In the **Security Center** Overview menu, under **Management**, select **Security policy**. The **Security Center** Security Policy pane appears.
 
-1. Under **Policy Management**, on the row of the subscription, select the subscription on which agents will be installed.
+1. In the list of management groups and subscription, select the subscription on which agents will be installed.
 
 1. Select **Install agents**.
 
@@ -55,7 +53,7 @@ When automatic provisioning is enabled, Security Center installs the Microsoft M
 
 Azure Security Center monitors daily Windows and Linux VMs and computers for missing operating system updates. Security Center retrieves a list of available security and critical updates from *Windows Update* or *Windows Server Update Services (WSUS)*, depending on which service is configured on a Windows computer. Security Center also checks for the latest updates in Linux systems. If your VM or computer is missing a system update, Security Center will recommend that you apply system updates.
 
-1. Sign in to the Azure portal.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
 1. On the **Security Center Overview** pane, in the left menu pane, under **Management**, select **Security policy**. The **Security policy** pane appears for the **Security Center**.
 
@@ -79,7 +77,7 @@ Azure Security Center monitors daily Windows and Linux VMs and computers for mis
 
 Azure Security Center monitors security configurations by applying a set of over 150 recommended rules for hardening the OS, including rules related to firewalls, auditing, password policies, and more. If a machine is found to have a vulnerable configuration, Security Center generates a security recommendation.
 
-1. Sign in to the Azure portal.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
 1. On the **Security Center Overview** pane, in the left menu pane, under **Management**, select **Security policy**. The **Security policy** pane appears for the **Security Center**.
 
@@ -120,7 +118,7 @@ Just-in-time (JIT) VM access can be used to lock down inbound traffic to your Az
 
 ### Enable Adaptive Application Controls (\*) - Level 1
 
-Adaptive application control is an intelligent, automated end-to-end application whitelisting solution from Azure Security Center. It helps you control which applications can run on your Azure and non-Azure VMs (Windows and Linux), which, among other benefits, helps harden your VMs against malware. Security Center uses machine learning to analyze the applications running on your VMs, and helps you apply the specific whitelisting rules using this intelligence. This capability greatly simplifies the process of configuring and maintaining application whitelisting policies.
+Adaptive application control is an intelligent, automated end-to-end approved application listing solution from Azure Security Center. It helps you control which applications can run on your Azure and non-Azure VMs (Windows and Linux), which, among other benefits, helps harden your VMs against malware. Security Center uses machine learning to analyze the applications running on your VMs, and helps you apply the specific approval rules using this intelligence. This capability greatly simplifies the process of configuring and maintaining approved application policies.
 
 ### Enable SQL Auditing & Threat Detection (\*) - Level 1
 
@@ -134,9 +132,9 @@ Azure Security Center will recommend that you enable Transparent Data Encryption
 
 Azure Security Center will recommend that you provide security contact details for your Azure subscription if you haven't already. This information will be used by Microsoft to contact you if the Microsoft Security Response Center (MSRC) discovers that your customer data has been accessed by an unlawful or unauthorized party. MSRC performs select security monitoring of the Azure network and infrastructure and receives threat intelligence and abuse complaints from third parties.
 
-1. Sign in to the Azure portal.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the Azure **home** page, in the top search bar, search for and select *Cost Management + Billing*. The **Billing scopes** pane appears for **Cost Management + Billing**.
+1. On the Azure **Home** page, in the top search bar, search for and select *Cost Management + Billing*. The **Billing scopes** pane appears for **Cost Management + Billing**.
 
 1. Enter or validate the contact information that appears.
 
@@ -146,9 +144,9 @@ Azure Security Center will recommend that you provide security contact details f
 
 Azure Security Center will recommend that you provide security contact details for your Azure subscription if you haven't already.
 
-1. Sign in to the Azure portal.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the Azure **home** page, in the top search bar, search for and select *Security Center*. The **Security Center - Overview** pane appears.
+1. On the Azure **Home** page, in the top search bar, search for and select *Security Center*. The **Security Center - Overview** pane appears.
 
 1. In the left menu pane, under **Management**, select **Pricing & settings**. The **Pricing & settings** pane appears for **Security Center**.
 

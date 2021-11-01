@@ -67,5 +67,3 @@ Once the token is generated, leave that tab open until the end of this section.
 ## Review
 
 We have now created a private configuration repository. We have enabled Azure Spring Cloud to create a configuration server with the configuration files from this repository.
-
-In the next section, we will create an application that consumes this configuration, specifically the custom message we defined in `application.yml`.

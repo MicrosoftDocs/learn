@@ -75,10 +75,15 @@ Next, you will configure the lenses app with the connection string of the storag
    cd lensesapp/dotnet
    ```
 
-1. Add the necessary packages to your app for Microsoft.Azure.KeyVault.
+1. Verify the ***Azure.Data.Tables*** SDK package has been added to the project. This package enables a .NET application to access Azure Storage Tables or the Azure Cosmos DB Table API.
 
    ```bash
-   dotnet add package Microsoft.Azure.KeyVault.Core
+   dotnet list package   
+   ```
+
+1. Restore the packages for the project to use.
+
+   ```bash
    dotnet restore
    ```
 
@@ -94,12 +99,6 @@ Next, you will configure the lenses app with the connection string of the storag
 
 1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file.
 
-1. In the **Files** list, double-click **LensesApp.csproj**.
-
-1. Replace the value of the **TargetFramework** element with `netcoreapp3.1`.
-
-1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
-
 ## Run the lenses app to populate the lenses table
 
 We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's use it to populate a table with lenses, and then add our own lens entry.
@@ -108,6 +107,22 @@ We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's
 
    ```bash
    dotnet run PopulateTable
+   ```
+
+1. Validate that data was loaded to the table by running the following command.
+
+   ```bash
+   dotnet run DisplayTable
+   ```
+
+   You should see a display that is similar to the following.
+
+   ```
+   Reading the contents of the Lenses table...
+   | Lens Type | Part Number | Focal Length | Aperture |
+   |     Macro |      X10028 |        100mm |     f2.8 |
+   |     Prime |       X5018 |         50mm |     f1.8 |
+   |      Zoom |     X357035 |      35-70mm |     f3.5 |
    ```
 
 1. To add your own lens to the table, run a command like the following example.
@@ -190,6 +205,21 @@ Let's use the app to populate a table with lenses and then add our own lens entr
    node app.js PopulateTable
    ```
 
+1. To display the contents of the Azure Storage table, run this command.
+
+   ```bash
+   node app.js DisplayTable
+   ```
+
+   You should see a display that is similar to the following.
+
+   ```
+   Reading the contents of the Lenses table...
+   1: Lens Type (PartitionKey): Macro  Part Number (RowKey): X10028  Focal Length: 100mm  Aperture: f2.8
+   2: Lens Type (PartitionKey): Prime  Part Number (RowKey): X5018  Focal Length: 50mm  Aperture: f1.8
+   3: Lens Type (PartitionKey): Zoom  Part Number (RowKey): X357035  Focal Length: 35-70mm  Aperture: f3.5
+   ```
+
 1. To add your own lens to the table, run a command like the following example.
 
    ```bash
@@ -207,11 +237,10 @@ Let's use the app to populate a table with lenses and then add our own lens entr
    ```
    DisplayTable
    Reading the contents of the Lenses table...
-   | Lens Type | Part Number | Focal Length | Aperture |
-   |     Macro |      X10028 |        100mm |     f2.8 |
-   |     Prime |       X5018 |         50mm |     f1.8 |
-   | Telephoto |      X15035 |        150mm |     f3.5 |
-   |      Zoom |     X357035 |      35-70mm |     f3.5 |
+   1: Lens Type (PartitionKey): Macro  Part Number (RowKey): X10028  Focal Length: 100mm  Aperture: f2.8
+   2: Lens Type (PartitionKey): Prime  Part Number (RowKey): X5018  Focal Length: 50mm  Aperture: f1.8
+   3: Lens Type (PartitionKey): Telephoto  Part Number (RowKey): X15035  Focal Length: 100-300mm  Aperture: f3.5
+   4: Lens Type (PartitionKey): Zoom  Part Number (RowKey): X357035  Focal Length: 35-70mm  Aperture: f3.5
    ```
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**, and then select the storage account you created.
@@ -290,7 +319,6 @@ Now that you have changed the app to use the Azure Cosmos DB database, let's see
    There should be no entries in the table, because you have not yet migrated the data.
    
    ```
-   DisplayTable
    Reading the contents of the Lenses table...
    | Lens Type | Part Number | Focal Length | Aperture |
    ```
@@ -357,7 +385,7 @@ To change the lenses app to use the new Azure Cosmos DB database, you must chang
 
 1. In the code editor, in the **Files** list, double-click **.env**.
 
-1. Replace the existing value of the **AZURE_STORAGE_CONNECTION_STRING** variable with the new Cosmos DB connection string that you just copied.
+1. Replace the existing value of the **AZURE_TABLES_CONNECTION_STRING** variable with the new Cosmos DB connection string that you just copied.
 
 1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
 
@@ -372,12 +400,6 @@ Now that you have changed the app to use the Azure Cosmos DB database, let's see
    ```
 
    The app will display an error: you have not created the table in Cosmos DB yet, so there is nothing there to query.
-
-   ````
-   Reading the contents of the Lenses table...
-   Error: The specified resource does not exist.
-   RequestID:a45f5e70-d387-11e9-9fe4-7d2558c62514
-   ```
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**, and then select the Cosmos database you created.
 

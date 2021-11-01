@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-tables-views-temporary-objects.write-queries-that-use-derived-tables
+title: Write queries that use derived tables
+metadata:
+  title: Write queries that use derived tables
+  description: "Write queries that use derived tables"
+  ms.date: 10/09/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-write-queries-that-use-derived-tables.md)]

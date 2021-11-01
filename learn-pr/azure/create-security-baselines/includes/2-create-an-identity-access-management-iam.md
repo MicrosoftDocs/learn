@@ -13,7 +13,7 @@ All non-administrators should not have access due to the sensitive data and the 
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the Azure portal **home** page, in the top search box, search for and select *Azure Active Directory*. The **Azure Active Directory Overview** pane appears.
+1. On the Azure portal **Home** page, in the top search box, search for and select *Azure Active Directory*. The **Azure Active Directory Overview** pane appears.
 
 1. In the left menu pane, under **Manage**, select **Users**. The **Users | All users** pane appears.
 
@@ -29,7 +29,7 @@ Enable MFA for privileged and non-privileged users.
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the Azure portal **home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
+1. On the Azure portal **Home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
 
 1. In the left menu pane, under **Manage**, select **Users**. The **Users | All users** pane appears.
 
@@ -48,7 +48,7 @@ Remember that the MFA feature for devices and browsers that are trusted by the u
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the Azure portal **home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
+1. On the Azure portal **Home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
 
 1. In the left menu pane, under **Manage**, select **Users**. The **Users | All users** pane appears.
 
@@ -66,7 +66,7 @@ Ensure that no guest users exist, or alternatively, if the business requires gue
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the Azure portal **home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
+1. On the Azure portal **Home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
 
 1. In the left menu pane, under **Manage**, select **Users**. The **Users | All users** pane appears.
 
@@ -84,7 +84,7 @@ With MFA set, an attacker would require compromising both the identity forms bef
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the Azure portal **home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
+1. On the Azure portal **Home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
 
 1. In the left menu pane, under **Manage**, select **Users**. The **Users | All users** pane appears.
 
@@ -102,7 +102,7 @@ If authentication reconfirmation is set to disabled, registered users will never
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the Azure portal **home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
+1. On the Azure portal **Home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
 
 1. In the left menu pane, under **Manage**, select **Users**. The **Users | All users** pane appears.
 
@@ -120,7 +120,7 @@ This should be set to **No**. Restricting invitations through administrators onl
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the Azure portal **home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
+1. On the Azure portal **Home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
 
 1. In the left menu pane, under **Manage**, select **Users**. The **Users | All users** pane appears.
 
@@ -136,7 +136,7 @@ When this feature is enabled, all users in AAD are allowed to create new securit
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the Azure portal **home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
+1. On the Azure portal **Home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
 
 1. In the left menu pane, under **Manage**, select **Groups**. The **Groups | All groups** pane appears.
 
@@ -152,7 +152,7 @@ Until your business requires this delegation to various users it is a best pract
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the Azure portal **home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
+1. On the Azure portal **Home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
 
 1. In the left menu pane, under **Manage**, select **Groups**. The **Groups | All groups** pane appears.
 
@@ -168,7 +168,7 @@ Require administrators to register custom applications.
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the Azure portal **home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
+1. On the Azure portal **Home** page, in the top search box, search for and select *Azure Active Directory*. The **Overview** pane appears for **Azure Active Directory**.
 
 1. In the left menu pane, under **Manage**, select **Users**. The **Users | All users** pane appears.
 

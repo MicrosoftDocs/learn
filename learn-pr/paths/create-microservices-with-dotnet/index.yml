@@ -32,6 +32,7 @@ products:
 - azure-kubernetes-service
 modules:
 - learn.languages.dotnet-microservices
+- learn.languages.dotnet-deploy-microservices-kubernetes
 - learn.microservices-aspnet-core
 - learn.microservices-resiliency-aspnet-core
 - learn.microservices-logging-aspnet-core

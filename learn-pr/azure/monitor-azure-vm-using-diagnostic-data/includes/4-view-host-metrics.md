@@ -8,7 +8,7 @@ Azure metrics are numerical values available from the Azure portal that help you
 
 The following table lists a few of the Virtual Machine Host metrics that are available.
 
-|Kind  |  metric  | Description  |
+|Kind  |  Metric  | Description  |
 |---------|---------|---------|
 | CPU     | CPU Credits Consumed [or Remaining]  | Number of credits consumed, or number of credits available to burst       |
 |      | Percentage CPU        | Percentage of allocated compute units that are currently in use        |
@@ -22,6 +22,7 @@ The following table lists a few of the Virtual Machine Host metrics that are ava
 |      | Premium Data Disk Cache Read Hit [or Miss]      | Frequency that data is read from the cache versus the data disk        |
 | Network     | Inbound [or Outbound] Flows        | Number of current flows in the inbound [or outbound] direction        |
 |      | Network In [or Out] Total        |  Number of bytes received [or sent] on all network interfaces       |
+
 
 You can choose multiple metrics and plot them on the graph to better understand the traffic that's hitting your web server. Azure also offers flexible time ranges. You can choose the last 30 minutes to the last 30 days, or specify a custom range with any start and end date. You can specify a granularity from one minute to one month. This data enables you to see trends or patterns.
 
@@ -46,7 +47,7 @@ You can have greater control, with more options, by creating a custom key perfor
 
 You can reuse the prebuilt graph for network traffic. However, the average CPU usage isn't the most useful metric. The maximum CPU usage is a better metric to use.
 
-In the **Monitor** > **Metrics** section of the VM, you'll create a new maximum CPU graph and pin it to a new shared dashboard. Now that you have a KPI dashboard, you pin the network (total) graph to that dashboard. You can add more, but with these two graphs you have a quick way to view the performance of your VM. 
+In the **Monitor** > **Metrics** section of the VM, you'll create a new maximum CPU graph, and pin it to a new shared dashboard. Now that you have a KPI dashboard, you pin the network (total) graph to that dashboard. You can add more, but with these two graphs you have a quick way to view the performance of your VM.
 
 The dashboard also allows you to change the time range shown on both graphs at the same time. It has many more options than what's on the **Overview** page **Monitoring** tab.
 

@@ -101,7 +101,7 @@ You can also declare a generic interface and implement it in a class.
 
 ## Define a generic class
 
-You can also declare a generic class without an interface. This example declares `processIdentity` as a generic class without implementing the `ProcessIdentity` class.
+You can also declare a generic class without an interface. This example declares `processIdentity` as a generic class without implementing the `ProcessIdentity` interface.
 
 ```typescript
 class processIdentity<T, U> {

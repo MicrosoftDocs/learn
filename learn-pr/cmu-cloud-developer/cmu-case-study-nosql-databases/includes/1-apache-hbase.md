@@ -1,4 +1,4 @@
-Apache HBase is an open-source non-relational database modeled after of Google's BigTable distributed storage system and is supported by the Apache Software Foundation. HBase is a distributed, scalable, high-performance, versioned database. HBase's infrastructure is designed to store billions of rows an columns of data in loosely defined tables, such as the webtable described earlier. The following video contains an overview of HBase. 
+Apache HBase is an open-source non-relational database modeled after of Google's BigTable distributed storage system and is supported by the Apache Software Foundation. HBase is a distributed, scalable, high-performance, versioned database. HBase's infrastructure is designed to store billions of rows in columns of data in loosely defined tables, such as the webtable described earlier. The following video contains an overview of HBase. 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pSFl]
@@ -17,11 +17,11 @@ A row in HBase is referenced using a row key, which can be considered to be the 
 
 Columns in HBase have a column name, which can be used to refer to a column. Columns can be further grouped into column families. All column family members have a common prefix, so, in the webtable example, the columns `Metadata:Type` and `Metadata:Language` are both members of the `Metadata` column family, whereas `Content:Data` belongs to the `Content` family. By default, the colon character (:)<!-- ':' --> delimits the column prefix from the family member. The column family prefix must be composed of printable characters. The qualifying tail can be made of any arbitrary bytes. 
 
-HBase differs from an RDBMS because the columns do not need to be typed; they are simply interpreted as raw byte strings. This interpretation enables<!-- lends the flexibility for --> HBase to store any kind of data in the table but also prevents it from being able to automatically validate data values when they are loaded into the table. 
+HBase differs from an RDBMS because the columns do not need to be typed; they are interpreted as raw byte strings. This interpretation enables<!-- lends the flexibility for --> HBase to store any kind of data in the table but also prevents it from being able to automatically validate data values when they are loaded into the table. 
 
 Although a table's column families must be defined up front when creating the table, the family members can be added on demand. HBase stores all of the column's family members together on the underlying file system. Thus, HBase is a **columnar database**. 
 
-Table cells, the intersection of row and column coordinates, are versioned (i.e., HBase stores multiple versions [default being 3] of the values stored in its tables). The version of a table cell value is <!-- a -->timestamped and automatically assigned by HBase at the time of cell insertion or update. Thus, the tuple {row,column,version} fully describes a unique value stored in an HBase table. 
+Table cells, the intersection of row and column coordinates, are versioned (that is, HBase stores multiple versions [default being 3] of the values stored in its tables). The version of a table cell value is <!-- a -->timestamped and automatically assigned by HBase at the time of cell insertion or update. Thus, the tuple {row,column,version} fully describes a unique value stored in an HBase table. 
 
 ### HBase operations
 
@@ -33,7 +33,7 @@ By default, Get, Scan, and Delete operations on an HBase table are performed on 
 
 ### HBase architecture
 
-HBase is organized as a cluster of HBase nodes. These nodes are of two types: a master node and one or more slave nodes (called **RegionServers**; see Figure 3). HBase uses Apache ZooKeeper as a distribution coordination service for the entire HBase cluster. For example, it handles master selection (choosing one of the nodes to be the master node), the lookup for the `-ROOT-` catalog table (explained shortly), and node registration (when new regionservers are added)<!-- , and so on -->. The master node that is chosen by ZooKeeper handles such functions as region allocation, failover, and load balancing<!-- , among others -->. 
+HBase is organized as a cluster of HBase nodes. These nodes are of two types: a primary node and one or more secondary nodes (called **RegionServers**; see Figure 3). HBase uses Apache ZooKeeper as a distribution coordination service for the entire HBase cluster. For example, it handles primary selection (choosing one of the nodes to be the primary node), the lookup for the `-ROOT-` catalog table (explained shortly), and node registration (when new regionservers are added)<!-- , and so on -->. The primary node that is chosen by ZooKeeper handles such functions as region allocation, failover, and load balancing<!-- , among others -->. 
 
 ![HBase architecture.](../media/hbase-architecture.png)
 
@@ -55,13 +55,13 @@ Each region is defined by the base row (inclusive) and the last row (exclusive) 
 
 HBase clients can connect to HBase to perform the operations on HBase tables, as described in the data model. However, the clients<!-- they --> must locate the appropriate node in the HBase cluster that stores<!-- has --> the region of the table that needs to be accessed. To keep track of all of the regions and their location in the HBase cluster, HBase has two **catalog tables**, called `-ROOT-` and `.META.` in HBase parlance. These tables are also treated as HBase tables and can be stored anywhere in the HBase cluster for fault-tolerance purposes. The `-ROOT-` table is always self-contained in a single region, while the `.META.` table may be split into multiple regions. A client first connects to the cluster to learn the location of the `-ROOT-` table (via ZooKeeper) and then queries the `-ROOT-` table to elicit the location of the `.META.` table. The `.META.` table then returns the location of the actual row requested by the client. Once the regionserver is resolved by the client, the client directly interacts with that regionserver and performs the required row operations. 
 
-The client also caches the `-ROOT-` and `.META.` tables after the first access so that consecutive client operations do not require additional lookups to these tables. The client will continue to use its cached copy of the catalog tables until it encounters a fault, which typically means that the catalog tables have been updated after the location of a table region has moved. The client updates its cached copy of the catalog tables and continues with the operation.
+The client also caches the `-ROOT-` and `.META.` tables after the first access so that consecutive client operations do not require more lookups to these tables. The client will continue to use its cached copy of the catalog tables until it encounters a fault, which typically means that the catalog tables have been updated after the location of a table region has moved. The client updates its cached copy of the catalog tables and continues with the operation.
 
 #### Write operations
 
 A regionserver handles write operations in the following manner: the write operation is appended to a commit log on HDFS (which is triple replicated by default), after which the write operation is added to an in-memory cache. When this in-memory cache of the regionserver becomes full, its content is flushed to the file system. 
 
-Because the commit log is stored on HDFS, it remains available through a regionserver crash. When the master notices that a regionserver is no longer reachable, it retrieves the commit log and splits the changes across regions. Each regionserver gets a portion of the commit log and replays the edits to bring the file system to its prefailure, consistent state. 
+Because the commit log is stored on HDFS, it remains available through a regionserver crash. When the primary notices that a regionserver is no longer reachable, it retrieves the commit log and splits the changes across regions. Each regionserver gets a portion of the commit log and replays the edits to bring the file system to its prefailure, consistent state. 
 
 #### Read operations
 
@@ -69,7 +69,7 @@ For read operations, HBase always consults the in-memory cache of a region. If s
 
 ### ACID properties in HBase
 
-HBase, like many NoSQL databases, is not fully ACID compliant by design. HBase does guarantee ACID compliancy for a row but not on operations that span rows. ACID properties in HBase are as follows:<!-- To elaborate: -->
+HBase, like many NoSQL databases, is not fully ACID-compliant by design. HBase does guarantee ACID compliancy for a row but not on operations that span rows. ACID properties in HBase are as follows:<!-- To elaborate: -->
 
 - **Atomicity**: HBase offers atomicity for operations that update individual rows. Any Put operation will either succeed in its entirety or fail. Operations that update multiple rows can either succeed or fail on individual rows, and HBase will return the status per row.
 - **Consistency**: HBase offers a consistent view of a database for Get operations on a single row. The data returned will be data that existed at some point in the table's history. In addition, any edits done to the table will be seen in the order they were completed. However, the HBase Scan operation is not strictly consistent. For example, if a Scan operation runs simultaneously with an operation that updates one or more rows that are part of the scan, the Scan operation may return rows that have been updated or that have not been updated. It is important to note that a row is always updated in its entirety and never partially updated.

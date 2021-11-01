@@ -1,4 +1,4 @@
-When loading data into Azure Synapse Analytics on a scheduled basis, it’s important to try to reduce the time taken to not perform the data load, and minimize the resources needed as much as possible to maintain good performance cost-effectively.
+When loading data into Azure Synapse Analytics on a scheduled basis, it’s important to try to reduce the time taken to perform the data load, and minimize the resources needed as much as possible to maintain good performance cost-effectively.
 
 Strategies for managing source data files include:
 

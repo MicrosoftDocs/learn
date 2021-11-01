@@ -4,12 +4,14 @@ title: Understand capabilities of the face service
 metadata:
   title: Understand capabilities of the face service
   description: "Understand capabilities of the face service"
-  ms.date: 07/09/2021
+  ms.date: 09/17/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/5-understand-capabilities-of-face-service.md)]

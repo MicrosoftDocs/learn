@@ -53,7 +53,7 @@ We'll update the routing configuration of our app to disable Azure Active Direct
    "routes": [
      {
        "route": "/.auth/login/aad",
-       "statusCode": "404"
+       "statusCode": 404
      }
    ]
    ```
@@ -84,7 +84,7 @@ Next, we want to secure the product list so that only authenticated are able to 
        },
        {
          "route": "/.auth/login/aad",
-         "statusCode": "404"
+         "statusCode": 404
        }
      ],
      "navigationFallback": {

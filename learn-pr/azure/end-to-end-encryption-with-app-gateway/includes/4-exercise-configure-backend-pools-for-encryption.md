@@ -4,7 +4,7 @@ In this unit, you'll set up the web application and the application gateway. Nex
 
 The following image highlights the elements you'll configure in this exercise. You'll be setting up an application gateway by using Azure Application Gateway v2.
 
-![Diagram that highlights the elements (backend pool, SSL certificate, and HTTP settings) created in this exercise.](../media/4-exercise-elements.svg)
+:::image type="content" source="../media/4-exercise-elements.svg" alt-text="Diagram that highlights the elements (backend pool, SSL certificate, and HTTP settings) created in this exercise.":::
 
 ## Deploy a virtual machine and an application gateway
 
@@ -37,7 +37,7 @@ The following image highlights the elements you'll configure in this exercise. Y
     ```
 
     > [!NOTE]
-    > This script will take several minutes to finish.
+    > This script takes several minutes to finish. Allow it to work through multiple processes to unpack and configure the gateway and resources. You should see that the process succeeded with zero warnings and zero errors.
 
 ## Verify that the web server is configured correctly
 
@@ -52,13 +52,13 @@ The following image highlights the elements you'll configure in this exercise. Y
       --output tsv)"
     ```
 
-1. In your web browser, go to the URL.
+1. Copy and paste the URL into your web browser, and go to the URL.
   
-   You'll likely receive a warning message from your browser, similar to the example in the following image. This warning occurs because the web server is configured through a self-signed certificate that can't be authenticated.
+   Your browser will most likely display a warning message similar to the following image. The exact content in the warning message can vary, depending on your browser. The example image is from Microsoft Edge. 
 
    ![Warning about an unauthenticated server in Microsoft Edge.](../media/4-warning.png)
 
-    The warning message can vary, depending on your browser. The example image shows Microsoft Edge. Proceed to the website by selecting **Go on to the webpage** or the equivalent. You should see the home page for the shipping portal. This is a sample app to test that the server is configured correctly.
+    This warning occurs because the web server is configured through a self-signed certificate that can't be authenticated. On this warning page, look for and select the link to proceed to the website; for example select **Go on to the webpage** or  select **Advanced** and then **Proceed**, or the equivalent. The result will take you to the home page for the shipping portal, as shown below. This is a sample app to test that the server is configured correctly.
 
     :::image type="content" source="../media/4-shippingportal.png" alt-text="Home page for the shipping portal in Microsoft Edge." loc-scope="other"::: <!-- no-loc -->
 
@@ -73,7 +73,6 @@ The following image highlights the elements you'll configure in this exercise. Y
       --query "[0].virtualMachine.network.privateIpAddresses[0]" \
       --output tsv)"
     ```
-
 1. Set up the backend pool for Application Gateway by using the private IP address of the virtual machine.
 
     ```azurecli

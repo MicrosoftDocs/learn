@@ -83,7 +83,7 @@ During later exercises, we'll use a couple of other libraries, including **reque
 
     ```bash
        code .
-       ```
+    ```
 
 2. In Visual Studio Code, in the **Explorer** window, select **New File**
 

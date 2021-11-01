@@ -1,4 +1,4 @@
-The last time your band went on tour, your website went down while your fans were trying to buy tickets. You're not sure if the web server ran out of memory, or if the VM wasn't the right size. For your new tour, you'd like a dashboard to keep track of the VM's traffic, memory, and CPU usage.
+The last time your band went on tour, your website went down while your fans were trying to buy tickets. You're not sure if the web server ran out of memory, or if the virtual machine (VM) wasn't the right size. For your new tour, you'd like a dashboard to keep track of the VM's traffic, memory, and CPU usage.
 
 In this exercise, you'll install the Azure Monitor Agent on your new VM to collect near real-time metrics at the guest OS level. After you install the agent, you'll create a KPI dashboard to view the new metrics being captured.
 
@@ -23,6 +23,7 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
 1. Set the data source type to **Performance Counters**, leave the default for the **Basic** performance counters and Sample rate.
 
+
     ![Screenshot of the Data Collection Rules Performance Counters](../media/6-add-data-sources.png)
 
 1. Click the Destination tab to view the default destination for Performance Counters, Azure Monitor Metrics. **Click on Add data source**.
@@ -32,6 +33,7 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
     Confirm your settings include a Destination Type of Azure Monitor Metrics for the Collect and deliver step of the wizard.
 
 1. **Review and create** your new data collection rule. This will install the Azure Monitor Agent on the selected VM, and start data collection using the parameters defined in the rule created above.
+
 
 ## Confirm that the agent is installed on the VM
 
@@ -45,11 +47,12 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
 1. Select the following values:
 
-   |Field     |Value |
+   | Setting     | Value |
    |---------|---------|
    |Metric Namespace    |   azure.vm.linux.guestmetrics |
    |Metric    |   net/bytes_total  |
    |Aggregation    |    Max     |
+
 
 1. Select the **Finish editing metric** check mark.
 
@@ -57,9 +60,9 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
 1. Select the **Create new** tab.
 
-1. Select **Private**. If you're using your own subscription, you can create a shared dashboard.
+1. For **Type**, select **Private**. If you're using your own subscription, you can create a shared dashboard.
 
-1. In the **Dashboard name** field, enter **KPI Dashboard**.
+1. In the **Dashboard name** field, enter *KPI Dashboard*.
 
     ![Screenshot that shows the "Pin to another dashboard" pane filled out](../media/6-create-dashboard.png)
 
@@ -67,11 +70,11 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
 ### Add a free memory percentage graph
 
-1. In the upper menu bar, select **New chart**.
+1. In the top menu bar, select **New chart**.
 
 1. Select the following values:
 
-   |Field     |Value |
+   | Setting     | Value |
    |---------|---------|
    |Metric Namespace    |   azure.vm.linux.guestmetrics      |
    |Metric     |   mem/available_percent  |
@@ -83,7 +86,7 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
 1. In the **Dashboard** dropdown field, select **KPI Dashboard**.
 
-1. Select **Pin**. The **Metrics** pane for your VM appears.
+1. Select **Pin**. The **Metrics** pane for your VM reappears.
 
 ### Add a CPU usage graph
 
@@ -91,11 +94,12 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
 1. Select the following values:
 
-   |Field     |Value |
+   | Setting     | Value |
    |---------|---------|
    |Metric Namespace    |   azure.vm.linux.guestmetrics  |
    |Metric     |   cpu/usage_active  |
    |Aggregation    |    Max     |
+
 
 1. Select the **Finish editing metric** check mark.
 
@@ -103,15 +107,15 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
 1. In the **Dashboard** dropdown field, select **KPI Dashboard**.
 
-1. Select **Pin**. The The **Metrics** pane for your VM appears.
+1. Select **Pin**. The The **Metrics** pane for your VM reappears.
 
 ### View the new dashboard
 
-1. At the top of the portal, select **Dashboard**, and then select **KPI Dashboard**.
+1. At the top left of the portal, select the **&#9776;** icon, and then select **Dashboard**. The **KPI Dashboard** appears.
 
-    ![Screenshot that shows the dashboard selection drop-down list.](../media/6-view-dashboard.png)
+    ![Screenshot that shows the dashboard selection dropdown list.](../media/6-view-dashboard.png)
 
-1. Explore the dashboard. Try changing the **UTC Time** range to **Past 30 minutes**.
+1. Explore the dashboard. Try changing the **UTC Time** range to **Past 30 minutes**, and select **Apply**.
 
     ![Screenshot that shows the new KPI dashboard with the three graphs created earlier](../media/6-kpi-dashboard.png)
 

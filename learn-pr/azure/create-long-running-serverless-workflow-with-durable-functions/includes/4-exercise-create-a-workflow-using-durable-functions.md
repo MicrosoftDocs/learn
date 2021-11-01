@@ -6,7 +6,7 @@ In this exercise, you'll use the example scenario from the previous unit to lear
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and then select **Function App**. The **Create Function App** pane appears.
+1. In the left menu pane, select **Compute**, and under *Popular offers*, select **Function App**. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -36,6 +36,8 @@ In this exercise, you'll use the example scenario from the previous unit to lear
     | Operating System | _Windows_ | Specifies the operating system that hosts the function app. |
     | **Plan** |
     | Plan type | _Consumption (Serverless)_ | Specifies the hosting plan that defines how resources are allocated to your function app. In the default **Consumption** plan, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run. |
+
+1. Select **Next : Networking (preview)**.
 
 1. Select **Next : Monitoring**.
 
@@ -271,7 +273,7 @@ JavaScript Durable Functions currently require Azure Functions version 2 compati
 
     You'll use this URL to run your functions.
 
-1. Open a new browser window, and navigate to the URL that you copied. In the URL, replace the **{functionName}** placeholder with **OrchFunction**, which should resemble the following example.
+1. Open a new browser window, and go to the URL that you copied. In the URL, replace the **{functionName}** placeholder with **OrchFunction**, which should resemble the following example.
 
     ```
     https://example.azurewebsites.net/api/orchestrators/OrchFunction?code=AbCdEfGhIjKlMnOpQrStUvWxYz==
@@ -290,7 +292,7 @@ JavaScript Durable Functions currently require Azure Functions version 2 compati
     }
     ```
 
-1. Copy the **statusQueryGetUri** value, and use your web browser to navigate to this URL. You should see a response message that resembles the following example.
+1. Copy the **statusQueryGetUri** value, and use your web browser to go to this URL. You should see a response message that resembles the following example.
 
     ```json
     {

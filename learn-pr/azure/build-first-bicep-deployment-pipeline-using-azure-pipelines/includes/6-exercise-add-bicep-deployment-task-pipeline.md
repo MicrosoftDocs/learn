@@ -42,20 +42,14 @@ Next, update your pipeline definition to deploy your Bicep file to Azure by usin
    > [!TIP]
    > When you work in Visual Studio Code and have installed the Azure Pipelines extension, try using the <kbd>Ctrl+Space</kbd> key combination. It shows a context menu with suggested elements to add at your current cursor position.
 
-1. Because Bicep is still new, it's updated regularly. It's a good idea to update the version of Bicep on the agent before you begin to use it, to ensure you can use all the latest features. Add a new task at the bottom of the file to run the `az bicep upgrade` command:
+1. At the bottom of the file, add a task that uses the `az deployment group create` command to deploy your Bicep file:
 
-   :::code language="yaml" source="code/6-pipeline.yml" range="6-14" highlight="4-9":::
+   :::code language="yaml" source="code/6-pipeline.yml" range="6-20" highlight="5-15":::
 
-   The task includes a variable named `$(ServiceConnectionName)`. You haven't defined this variable yet. You'll add it soon.
+   This step uses a system variable, `$(Build.BuildNumber)`, to name the deployment. The variable can help you easily see which pipeline run a deployment corresponds to.
 
    > [!NOTE]
    > It's a good idea to type this code yourself instead of copying and pasting it from this module. Pay attention to the file's indentation. If your indentation isn't correct, your YAML file won't be valid. Visual Studio Code indicates errors by displaying squiggly lines.
-
-1. Below the task you just added, use the `az deployment group create` command to add another Azure CLI task to deploy your Bicep file:
-
-   :::code language="yaml" source="code/6-pipeline.yml" range="6-26" highlight="11-21":::
-
-   This step uses a system variable, `$(Build.BuildNumber)`, to name the deployment. The variable can help you easily see which pipeline run a deployment corresponds to.
 
 1. Save your changes to the file. Your file should look like this example:
 

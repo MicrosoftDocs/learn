@@ -74,4 +74,4 @@ Containers are becoming the preferred way to package, deploy, and manage cloud a
   :::column:::
     Container instances can be deployed into an Azure virtual network.
   :::column-end:::
-:::row-end::: 
+:::row-end:::
