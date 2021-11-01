@@ -22,7 +22,7 @@ abstract: |
 prerequisites: | 
   - [Node.js](https://nodejs.org/?azure-portal=true)
   - [Visual Studio Code](https://aka.ms/LearnOnVSCode?azure-portal=true)
-iconUrl: /learn/achievements/build-mixed-reality-with-babylonjs.svg
+iconUrl: /learn/achievements/build-mixed-reality-with-babylonjs.png
 levels:
 - beginner
 roles:
