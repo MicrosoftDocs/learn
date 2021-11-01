@@ -15,19 +15,22 @@ In this module, you’ll learn how to:
 
 - Design for identity and access management.
 
+- Design for Azure Active Directory. 
+
 - Design for Azure AD B2B.
 
 - Design for Azure AD B2C.
-
-- Compare external identity solutions.
-
-- Design for role-based access control.
 
 - Design for conditional access.
 
 - Design for identity protection.
 
 - Design for access reviews.
+
+- Design for service principals for applications
+
+- Design for Azure Key Vault
+
 
 ### Skills measured
 
@@ -40,6 +43,16 @@ Design authentication and authorization solutions.
 - Recommend an access control solution for identities.
 
 - Recommend an authorization solution.
+
+Design Identities and Access for Applications
+
+- Recommend a solution that securely stores passwords and secrets
+
+- Recommend solutions to allow applications to access Azure resources
+
+- Recommend a solution for integrating applications into Azure AD
+
+- Recommend a user consent solution for applications
 
 ### Prerequisites
 
