@@ -1,7 +1,7 @@
 The ObjectManipulator script makes an object movable, scalable, and rotatable using one or two hands. This script supports the direct manipulation input model because it enables the user to touch holograms directly with their hands. Here, use ObjectManipulator to enable hand interactions so that you can move, scale, and rotate the rover explorer.
 
 1. Additionally, you'll configure the Rover Explorer so that you can place the rover parts onto the Rover to make it a complete rover assembly. In the Hierarchy pane, expand the RoverExplorer > **RoverParts** object and select all its child rover part objects and the **RoverAssembly** object, then in the Inspector pane, use the **Add Component** button to add the following components to all the selected objects:
-    * **Object Manipulator (Script)** component
+    * **Object Mafnipulator (Script)** component
     * **NearInteractionGrabbable** component
     * **Part Assembly Controller (Script)** component
 
@@ -23,7 +23,7 @@ The ObjectManipulator script makes an object movable, scalable, and rotatable us
 
     :::image type="content" source="../media/rover-parts-selected.png" alt-text="Screenshot of Unity with all rover parts selected and Audio Source component added and configured." lightbox="../media/rover-parts-selected.png":::
 
-5. In the Hierarchy pane, expand the RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** object to reveal all of the placement hint objects, then select the first rover part, RoverParts > **amera_Part**, and configure the **Part Assembly Controller (Script)** component as follows:
+5. In the Hierarchy pane, expand the RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** object to reveal all of the placement hint objects, then select the first rover part, RoverParts > **Camera_Part**, and configure the **Part Assembly Controller (Script)** component as follows:
     * Assign the **Camera_PlacementHint** object to the **Location To Place** field
 
     :::image type="content" source="../media/camera-part.png" alt-text="Screenshot of Unity with Camera_Part PartAssemblyController component configured." lightbox="../media/camera-part.png":::
