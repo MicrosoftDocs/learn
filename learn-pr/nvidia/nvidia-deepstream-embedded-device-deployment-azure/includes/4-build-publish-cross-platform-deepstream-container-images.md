@@ -1,42 +1,42 @@
-The DeepStream 6.0 `container-builder` is capable of building cross-platform container images.  We will need to use this capability in order to build a container that is compatible with the ARM64 CPU present on our target NVIDIA Embedded device.
+The DeepStream 6.0 `container-builder` package can build cross-platform container images. You'll need to use this capability to build a container that's compatible with the ARM64 CPU on your target NVIDIA embedded device.
 
-The following steps are to be completed on an X86 based host machine that has the DeepStream 6.0 Graph Composer / Docker installed and assumes that you have completed the steps described in the previous modules `Setup and Configuration of an NVIDIA DeepStream Development Environment` and `Introduction to DeepStream 6.0 Graph Composer with Microsoft Azure`.
+Complete the following steps on an x86-based host machine that has DeepStream 6.0 Graph Composer with Docker installed. The steps assume that you completed the steps described in [Set up and configure an NVIDIA DeepStream development environment](/learn/modules/setup-configure-nvidia-deepstream-development/?azure-portal=true) and [Introduction to NVIDIA DeepStream Graph Composer with Azure](/learn/modules/introduction-nvidia-deepstream-graph-composer-azure/?azure-portal=true).
 
-1. To begin, we must install dependencies needed to enable cross-platform support in Docker by installing the `qemu-user-static` and `binfmt-support` packages.  To perform this step, execute the following commands in a terminal on the host:
+1. To begin, you must install the `qemu-user-static` and `binfmt-support` packages. The packages are dependencies that are needed for cross-platform support in Docker. To perform this step, run the following commands in a terminal on the host:
 
-    ```Bash
+    ```bash
     sudo apt install qemu-user-static binfmt-support
     ```
 
-1. Once installation has completed, execute the following commands on the host to configure cross-platform support in Docker:
+1. When installation is finished, run the following commands on the host to configure cross-platform support in Docker:
 
-    ```Bash
+    ```bash
     sudo docker run --rm --privileged multiarch/qemu-user-static --reset --persistent yes --credential yes 
     ```
 
-1. Next, we will create a `container-builder` configuration that will produce an ARM64 based container to support the deepstream-test4 graph.  To begin, navigate to `/opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test4` and create a new file with in this directory with:
+1. Next, you'll create a `container-builder` configuration that produces an ARM64-based container to support the *deepstream-test4* graph. To begin, go to */opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test4* and create a new file in this directory:
 
-    ```Bash
+    ```bash
     cd /opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test4
     sudo vi ds_test4_container_builder_jetson.yaml
     ```
 
-    Then paste in the configuration specified below and save the `ds_test4_container_builder_jetson.yaml` file:
+    Then, paste the following configuration and save the *ds_test4_container_builder_jetson.yaml* file:
 
-    ```
+    ```bash
     %YAML 1.2
     ################################################################################
     # Copyright (c) 2021, NVIDIA CORPORATION. All rights reserved.
     #
     # NVIDIA Corporation and its licensors retain all intellectual property
     # and proprietary rights in and to this software, related documentation
-    # and any modifications thereto.  Any use, reproduction, disclosure or
+    # and any modifications thereto. Any use, reproduction, disclosure or
     # distribution of this software and related documentation without an express
     # license agreement from NVIDIA Corporation is strictly prohibited.
     #
     ################################################################################
     ---
-    # final stage
+    # Final stage
     unique_stage: final_image
     base_image: "nvcr.io/nvdeepstream/deepstream6_ea/deepstream-l4t:6.0-ea-21.06-samples"
     stage_model: clean_stage
@@ -60,7 +60,7 @@ The following steps are to be completed on an X86 based host machine that has th
       LD_LIBRARY_PATH: "/opt/nvidia/graph-composer/:$LD_LIBRARY_PATH"
       DISPLAY: ":0"
     
-    # Setup entrypoint
+    # Set up entrypoint
     entrypoint:
     - "gxe"
     - "--manifest"
@@ -68,7 +68,7 @@ The following steps are to be completed on an X86 based host machine that has th
     - "--app"
     - "deepstream-test4.yaml,parameters.yaml"
     ---
-    # Container Builder Config
+    # Container builder config
     container_builder: main # required
     graph:
       graph_files: [ deepstream-test4.yaml ]
@@ -84,36 +84,36 @@ The following steps are to be completed on an X86 based host machine that has th
 
     >[!NOTE]
     >
-    > Here are some tips for using **vi** when editing the `ds_test4_container_builder_jetson.yaml` file:
+    > Here are some tips for using the vi editor when you edit the *ds_test4_container_builder_jetson.yaml* file:
     >
-    >- Press the `i` key to put the editor into Insert mode, then you will be able to make changes.
-    >- Press `Esc` to go stop Insert mode and return to Normal mode.
-    >- To Save and Quit, type `:x`, and press `Enter`.
-    >- Save the file, type `:w`, and press `Enter`.
-    >- To quit vi, type `:quit` and press `Enter`.
+    >- To enter insert mode, select **i**. Then, you can make changes.
+    >- To exit insert mode and return to normal mode, select **Esc**.
+    >- To save the file and quit, select **x**, and then select **Enter**.
+    >- To save the file, select **w**, and then select **Enter**.
+    >- To quit vi, enter **Quit**, and then select **Enter**.
 
-    Take note that this specification uses a base image from nvcr.io named `nvcr.io/nvdeepstream/deepstream6_ea/deepstream-l4t:6.0-ea-21.06-samples`, and copies in the `deepstream-test4.yaml` and `parameters.yaml` files. The image entrypoint starts the deepstream-test4 graph and overrides it with the values present in `parameters.yaml`.  For this reason, we also need to update this file before we actually build the container.
+   This specification uses a base image from `nvcr.io` named `nvcr.io/nvdeepstream/deepstream6_ea/deepstream-l4t:6.0-ea-21.06-samples`. It copies in the *deepstream-test4.yaml* and *parameters.yaml* files. The image entrypoint starts the *deepstream-test4* graph and overrides it with the values in *parameters.yaml*. For this reason, you must update this file before you actually build the container.
 
-1. Navigate back to the directory of the deepstream-test4 reference and edit the `parameters.yaml` with:
+1. Return to the directory of the *deepstream-test4* reference and edit the *parameters.yaml* file:
 
-    ```
+    ```bash
     cd /opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test4
     sudo vi parameters.yaml
     ```
 
-    Modify the value of `msg-broker-proto-lib` to `/opt/nvidia/deepstream/deepstream/lib/libnvds_azure_edge_proto.so`
+    Change the value of `msg-broker-proto-lib` to `/opt/nvidia/deepstream/deepstream/lib/libnvds_azure_edge_proto.so`.
 
-    Also, modify the value of `msg-conv-payload-type` to `1`.  This parameter will control how the resulting message output is formatted. If you do not change this parameter, the output will use a hard-coded format provided in the NVIDIA samples that may not represent your object detection classes should you update the model used in `NvDsInferVideo`.  
+    Also, change the value of `msg-conv-payload-type` to `1`. This parameter controls how the resulting message output is formatted. If you don't change this parameter, the output uses a hard-coded format that's provided in the NVIDIA samples. The format might not represent your object detection classes if you update the model used in `NvDsInferVideo`.
 
-    The final contents of `parameters.yaml` should look like the following:
+    The final contents of *parameters.yaml* should look like the following example:
 
-    ```
+    ```Output
     ################################################################################
     # Copyright (c) 2021, NVIDIA CORPORATION. All rights reserved.
     #
     # NVIDIA Corporation and its licensors retain all intellectual property
     # and proprietary rights in and to this software, related documentation
-    # and any modifications thereto.  Any use, reproduction, disclosure or
+    # and any modifications thereto. Any use, reproduction, disclosure or
     # distribution of this software and related documentation without an express
     # license agreement from NVIDIA Corporation is strictly prohibited.
     #
@@ -144,27 +144,25 @@ The following steps are to be completed on an X86 based host machine that has th
         name: NvDsMsgConvBroker..bb00
     ```
 
-1. You can now build the cross-platform image on the host machine by running the following in a terminal:
+1. Build the cross-platform image on the host machine by running the following command in a terminal:
 
-    ```
+    ```bash
     cd /opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test4
     sudo container_builder -c ds_test4_container_builder_jetson.yaml
     ```
 
-    Upon successful completion, you should see output that contains the message `Successfully tagged deepstream-test4-jetson:latest`
+    After the code runs successfully, output that contains the message `Successfully tagged deepstream-test4-jetson:latest` appears.
 
-1. We are now ready to publish this image into the Azure Container Registry that was created in the previous module.  
+1. Now, you're ready to publish this image to the container registry you created in the previous module. Run the following code in a terminal on the host to tag the image with a name that follows the format you used earlier. For \<Login Server\>, use the URL of your container registry.
 
-    First, we will tag the image to have a name that follows our previous format by executing the following in a terminal on the host (where `<Login Server>` is the url of your Azure Container Registry):
-
-    ```
+    ```bash
     sudo docker tag deepstream-test4-jetson <Login Server>/deepstream_test4_jetson:v1
     ```
 
-1. With our image now properly tagged, we now push the image into our Azure Container registry by executing the following in a terminal on the host (where `<Login Server>` is the url of your Azure Container Registry):
+1. With your image now properly tagged, push the image to your container registry in Azure by executing the following code in a terminal on the host. For \<Login Server\>, use the URL of your container registry.
 
-    ```
+    ```bash
     sudo docker push <Login Server>/deepstream_test4_jetson:v1
     ```
 
-With our cross-platform image now published into the Azure Container Registry, we are now ready to provision our NVIDIA Embedded hardware for the IoT Edge Runtime to prepare for deployment of this workload as an IoT Edge module.
+With your cross-platform image now published to the Azure container registry, you're ready to provision your NVIDIA embedded hardware for the IoT Edge runtime to deploy this workload as an IoT Edge module.

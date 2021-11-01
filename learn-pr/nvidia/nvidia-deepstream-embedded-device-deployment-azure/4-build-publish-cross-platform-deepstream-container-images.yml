@@ -3,7 +3,7 @@ uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.4-build-pub
 title: Exercise - Build and publish cross-platform DeepStream container images
 metadata:
   title: Exercise - Build and publish cross-platform DeepStream container images
-  description: Exercise - Build and publish cross-platform DeepStream container images
+  description: Exercise - Build and publish cross-platform DeepStream container images.
   author: toolboc
   ms.author: pdecarlo
   ms.date: 10/01/2021
