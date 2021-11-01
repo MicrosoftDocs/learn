@@ -4,26 +4,48 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Test your knowledge
-  ms.date: 13/08/2021
+  ms.date: 08/13/2021
   author: videlalvaro
   ms.author: alvidela
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4
-content: |
-  [!include[](includes/8-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
+  title: Choose the best response for each question. Then select **Check your answers**.
   questions:
-    - content: First question
-      choices:
-        - content: first choice
-          isCorrect: true
-          explanation: Correct. because reasons
-        - content: second choice
-          isCorrect: false
-        - content: third choice
-          isCorrect: false
-        - content: fourth choice
-          isCorrect: false
-          explanation: Incorrect. because reasons
+
+  - content: "The `expiresOn` Shared Access Signature (SAS Key) property specifies:"
+    choices:
+    - content: "When the SAS key becomes invalid."
+      isCorrect: true
+      explanation: "Use the `expiresOn` to specify when the Shared Access Signature becomes invalid."
+    - content: "When the uploaded will be deleted from the server."
+      isCorrect: false
+      explanation: ""
+    - content: "When the user's browser authentication cookies will be deleted."
+      isCorrect: false
+      explanation: "Shared Access Signatures are unrelated to browser cookies."
+
+  - content: "For a web application living in domain example.org to access resources in domain contoso.com you need to enable:"
+    choices:
+    - content: "HTTPS"
+      isCorrect: false
+      explanation: "HTTPS is used to encrypt and secure HTTP connections. To access resources across domains use CORS."
+    - content: "CORS"
+      isCorrect: true
+      explanation: "CORS or Cross-Origin Resource Sharing is an HTTP feature that enables a web application running under one domain to access resources in another domain."
+    - content: "Shared Access Signatures"
+      isCorrect: false
+      explanation: "Shared Access Signatures are used to delegate access to Azure resources like Blob Storage. To access resources across domains use CORS."
+
+  - content: "If you want your web app users to upload images to your Azure Blob Storage account you will:"
+    choices:
+    - content: "Grant them access by sharing your Azure Blob Storage account key."
+      isCorrect: false
+      explanation: "You should never share your Azure Blog Storage account key with third parties."
+    - content: "There is no way to grant third parties access to your Azure Blob Storage account"
+      isCorrect: false
+      explanation: "You can use Shared Access Signatures to grant restricted access to your Blob Storage Account to third parties."
+    - content: "Create a Shared Access Signature that grants restricted access to your Blob Storage Account"
+      isCorrect: true
+      explanation: "Use Shared Access Signatures to grant restricted access to your Blob Storage Account to third parties."
