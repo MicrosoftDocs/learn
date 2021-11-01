@@ -14,10 +14,10 @@ Securing the Azure platform your cloud solutions run on is a part of [Exam AZ-50
 
 Implement platform protection (15-20%)
 - Implement advanced network security
-   - create and configure Azure Firewall
-   - implement Azure Firewall Manager
-   - configure a firewall on a storage account, Azure SQL, Key Vault, or App Service
-   - implement DDoS protection
+   - Create and configure Azure Firewall
+   - Implement Azure Firewall Manager
+   - Configure a firewall on a storage account, Azure SQL, Key Vault, or App Service
+   - Implement DDoS protection
 
 ## Learning objectives
 
