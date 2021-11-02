@@ -1,25 +1,5 @@
 A Kusto query can be used to explore datasets and gain insights. Recall that we have a meteorological dataset of which we are unfamiliar, and want to explore what we can learn from this data. 
-Here, we'll look at the structure of this data table using the `take` operator.
-
-## Connect to the data
-
-In this example, we'll use the Azure Data Explorer web interface. However, Kusto Query Language can also be used in Log Analytics, Azure Sentinel, and other workspaces.
-
-1. Sign in to the [Azure Data Explorer Web UI](https://dataexplorer.azure.com/)
-1. In the left pane, select **Add Cluster**
-1. In the dialog box, under **Connection URI**, enter *help*.
-1. Select **Add**.
-
-:::image type="content" source="../media/3-add-cluster.png" alt-text="Screenshot of add help cluster in Azure Data Explorer Web UI.":::
-
-### Select the database
-
-Now you're connected to the help cluster. 
-
-1. Expand the help cluster in the left pane.
-1. Select the **Samples** database to complete the connection to the correct destination. You may notice the list of tables below the database; we'll be using the *StormEvents* table.
-
-:::image type="content" source="../media/3-help-cluster.png" alt-text="Screenshot of help cluster organization.":::
+Here, we'll look at the structure of this data to understand what kinds of questions we can ask about storm events that happened in the US in 2007.
 
 ## Write your first query
 
