@@ -14,28 +14,33 @@ In this example, we'll use the Azure Data Explorer web interface. However, Kusto
 
 ### Select the database
 
-Now you're connected to the help cluster. If you expand the help cluster in the left pane, you will see the **Samples** database. Under this database is a list of several tables. We're going to use the **StormEvents** table.
+Now you're connected to the help cluster. 
+
+1. Expand the help cluster in the left pane.
+1. Select the **Samples** database to complete the connection to the correct destination. You may notice the list of tables below the database; we'll be using the *StormEvents* table.
 
 :::image type="content" source="../media/3-help-cluster.png" alt-text="Screenshot of help cluster organization.":::
-
-1. Select the **Samples** database to complete the connection to the correct destination. Now you're ready to start exploring data.
 
 ## Write your first query
 
 Let's take a look at a sample of the data in order to get to know the columns and types of data in the table. We don't need to see all rows for this, just a few examples.
 
-The `take` operator is perfect, as it returns a specified number of random rows. You can copy this query to your clipboard and run in your sample environment. Since the rows are selected at random, you will probably see different data than is displayed below.
+The `take` operator is perfect, as it returns a specified number of random rows. 
 
-```kusto
-StormEvents
-| take 5
-```
+1. Copy this query to your clipboard and run in your sample environment. Since the rows are selected at random, you will probably see different data than is displayed below.
 
-Notice that the query begins with a reference to the data table, *StormEvents*. This data is piped into the first (and only) operator, which then selects five rows at random. 
+    ```kusto
+    StormEvents
+    | take 5
+    ```
+    
+1. Notice that the query begins with a reference to the data table, *StormEvents*. This data is piped into the first and only operator, which then selects five rows at random.
 
-To run the query, either select the **Run** button above the query window, or press **Shift+Enter**.
+1. To run the query, either select the **Run** button above the query window, or press **Shift+Enter**.
 
-:::image type="content" source="../media/3-take-5.png" alt-text="Screenshot of take 5 output.":::
+1. You should get results that look like the following image: 
+
+    :::image type="content" source="../media/3-take-5.png" alt-text="Screenshot of take 5 output.":::
 
 ## Explore the results
 

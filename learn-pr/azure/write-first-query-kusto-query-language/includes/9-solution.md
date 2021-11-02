@@ -1,6 +1,8 @@
-You've been asked to solve the following question: 
+You've been asked to write a query that answers the following question: 
 
-In the month of April 2007, what were the top 5 damage-causing storms in the state of Virginia?
+> In the month of April 2007, what were the top 5 damage-causing storms in the state of Virginia?
+
+## Solution
 
 Here is one possible way to construct a query that answers the above question.
 
@@ -10,6 +12,8 @@ Here is one possible way to construct a query that answers the above question.
 1. Now, we need to create a column that sums damage from *DamageProperty* and *DamageCrops*. We can do this using either the `extend` or `project` operators. 
 1. In order to figure out which kind of storm caused this damage, we need to make sure to see the *EventType* column. We can do this using the `project` operator.
 1. Lastly, we want to arrange the data by the highest damage first. We can use the `sort` operator for this, with the default mode being descending.
+
+## Solution query
 
 These steps are all included in the following query:
 
@@ -23,5 +27,6 @@ StormEvents
 
 :::image type="content" source="../media/9-solution.png" alt-text="Screenshot of solution.":::
 
->[!TIP]
-> From the above results, we can see that all top five damage-causing events in the month of April in the state of Virginia were Frost/Freeze events. This makes sense, since April is the end of the wintry season.
+## Insights
+
+From the above results, we can see that all top five damage-causing events in the month of April in the state of Virginia were Frost/Freeze events. 
