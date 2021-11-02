@@ -14,72 +14,66 @@ Complete the following steps on an x86-based host machine that has DeepStream 6.
     sudo docker run --rm --privileged multiarch/qemu-user-static --reset --persistent yes --credential yes 
     ```
 
-1. Next, you'll create a `container-builder` configuration that produces an ARM64-based container to support the *deepstream-test4* graph. To begin, go to */opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test4* and create a new file in this directory:
+1. Next, you'll create a `container-builder` configuration that will produce an ARM64 based container to support the deepstream-test4 graph.  To begin, go to */opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test4* and open the `ds_test4_container_builder_jetson.yaml` file with:
 
-    ```bash
-    cd /opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test4
-    sudo vi ds_test4_container_builder_jetson.yaml
+    ```Bash
+        cd /opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test4
+        sudo vi ds_test4_container_builder_jetson.yaml
     ```
-
-    Then, paste the following configuration and save the *ds_test4_container_builder_jetson.yaml* file:
-
-    ```bash
-    %YAML 1.2
-    ################################################################################
-    # Copyright (c) 2021, NVIDIA CORPORATION. All rights reserved.
-    #
-    # NVIDIA Corporation and its licensors retain all intellectual property
-    # and proprietary rights in and to this software, related documentation
-    # and any modifications thereto. Any use, reproduction, disclosure or
-    # distribution of this software and related documentation without an express
-    # license agreement from NVIDIA Corporation is strictly prohibited.
-    #
-    ################################################################################
-    ---
-    # Final stage
-    unique_stage: final_image
-    base_image: "nvcr.io/nvdeepstream/deepstream6_ea/deepstream-l4t:6.0-ea-21.06-samples"
-    stage_model: clean_stage
-    apt_deps:
-    - curl
-    - ca-certificates
-    - unzip
-    local_copy_files:
-    - src: "/opt/nvidia/graph-composer/graph-composer-0.5.0_arm64.deb"
-      dst: "/tmp/"
-    - src: "parameters.yaml"
-      dst: "/workspace/test4/" # ends with '/' is folder
     
-    custom_runs:
-     - "dpkg -i /tmp/graph-composer-0.5.0_arm64.deb && rm -rf /tmp/graph-composer-0.5.0_arm64.deb"
+    The contents of the unmodified `ds_test4_container_builder_jetson.yaml` file are shown below:
     
-    work_folder: /workspace/test4/
-    
-    env_list:
-      PATH: "/opt/nvidia/graph-composer/:$PATH"
-      LD_LIBRARY_PATH: "/opt/nvidia/graph-composer/:$LD_LIBRARY_PATH"
-      DISPLAY: ":0"
-    
-    # Set up entrypoint
-    entrypoint:
-    - "gxe"
-    - "--manifest"
-    - "deepstream-test4_manifest.yaml"
-    - "--app"
-    - "deepstream-test4.yaml,parameters.yaml"
-    ---
-    # Container builder config
-    container_builder: main # required
-    graph:
-      graph_files: [ deepstream-test4.yaml ]
-      graph_dst: /workspace/test4/
-      manifest_dst: /workspace/test4/deepstream-test4_manifest.yaml
-      ext_install_root: /workspace/test4/
-      registry_arch: aarch64
-      registry_distro: ubuntu_18.04
-      registry_cuda: cuda-10.2
-    docker_build:
-        image_name: deepstream-test4-jetson
+    ```YAML
+        %YAML 1.2
+        ################################################################################
+        # Copyright (c) 2021, NVIDIA CORPORATION. All rights reserved.
+        #
+        # NVIDIA Corporation and its licensors retain all intellectual property
+        # and proprietary rights in and to this software, related documentation
+        # and any modifications thereto.  Any use, reproduction, disclosure or
+        # distribution of this software and related documentation without an express
+        # license agreement from NVIDIA Corporation is strictly prohibited.
+        #
+        ################################################################################
+        ---
+        # final stage
+        unique_stage: final_image
+        base_image: auto
+        stage_model: clean_stage
+        
+        local_copy_files:
+        - src: "/opt/nvidia/graph-composer/graph_composer-1.0.0_arm64.deb"
+          dst: "/tmp/"
+        - src: "parameters.yaml"
+          dst: "/workspace/deepstream-test4/" # ends with '/' is folder
+        
+        custom_runs:
+         - "apt install -y /tmp/graph_composer-1.0.0_arm64.deb && rm -rf /tmp/graph-composer-1.0.0_arm64.deb"
+        
+        work_folder: /workspace/deepstream-test4/
+        
+        env_list:
+          PATH: "/opt/nvidia/graph-composer/:$PATH"
+          LD_LIBRARY_PATH: "/opt/nvidia/graph-composer/:$LD_LIBRARY_PATH"
+          DISPLAY: ":0"
+        
+        # Setup entrypoint
+        entrypoint:
+        - "gxe"
+        - "--manifest"
+        - "deepstream-test4_manifest.yaml"
+        - "--app"
+        - "deepstream-test4.yaml,parameters.yaml"
+        ---
+        # Container Builder Config
+        container_builder: main # required
+        graph:
+          graph_files: [ deepstream-test4.yaml ]
+          graph_dst: /workspace/deepstream-test4/
+          manifest_dst: /workspace/deepstream-test4/deepstream-test4_manifest.yaml
+          ext_install_root: /workspace/deepstream-test4/
+        docker_build:
+            image_name: <docker-container-registry>:deepstream-test4-jetson
     ```
 
     >[!NOTE]
@@ -92,9 +86,23 @@ Complete the following steps on an x86-based host machine that has DeepStream 6.
     >- To save the file, select **w**, and then select **Enter**.
     >- To quit vi, enter **Quit**, and then select **Enter**.
 
-   This specification uses a base image from `nvcr.io` named `nvcr.io/nvdeepstream/deepstream6_ea/deepstream-l4t:6.0-ea-21.06-samples`. It copies in the *deepstream-test4.yaml* and *parameters.yaml* files. The image entrypoint starts the *deepstream-test4* graph and overrides it with the values in *parameters.yaml*. For this reason, you must update this file before you actually build the container.
+    Take note of the very last line of this file as it will require a modification:
+    ```
+    image_name: <docker-container-registry>:deepstream-test4-jetson
+    ```
 
-1. Return to the directory of the *deepstream-test4* reference and edit the *parameters.yaml* file:
+    Update this section to look like the following:
+    ```
+    image_name: deepstream-test4-jetson
+    ```
+
+    >[!NOTE]
+    >
+    > If you do not modify this section, attempts to build the cross-platform image in later steps will produce the following error: `ConnectionResetError: [Errno 104] Connection reset by peer`
+
+    Take note that this specification uses a base image from nvcr.io and copies in the `deepstream-test4.yaml` and `parameters.yaml` files. The image entrypoint starts the deepstream-test4 graph and overrides it with the values present in `parameters.yaml`.  For this reason, we also need to update this file before we actually build the container.
+
+1. Return to the directory of the *deepstream-test4* reference graphs and edit the *parameters.yaml* file:
 
     ```bash
     cd /opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test4
@@ -148,7 +156,7 @@ Complete the following steps on an x86-based host machine that has DeepStream 6.
 
     ```bash
     cd /opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test4
-    sudo container_builder -c ds_test4_container_builder_jetson.yaml
+    sudo container_builder -c ds_test4_container_builder_jetson.yaml -d /opt/nvidia/graph-composer/config/target_aarch64.yaml
     ```
 
     After the code runs successfully, output that contains the message `Successfully tagged deepstream-test4-jetson:latest` appears.
@@ -159,10 +167,10 @@ Complete the following steps on an x86-based host machine that has DeepStream 6.
     sudo docker tag deepstream-test4-jetson <Login Server>/deepstream_test4_jetson:v1
     ```
 
-1. With your image now properly tagged, push the image to your container registry in Azure by executing the following code in a terminal on the host. For \<Login Server\>, use the URL of your container registry.
+1. With your image now properly tagged, push the image to your container registry in Azure by executing the following command in a terminal on the host. For \<Login Server\>, use the URL of your container registry.
 
     ```bash
     sudo docker push <Login Server>/deepstream_test4_jetson:v1
     ```
 
-With your cross-platform image now published to the Azure container registry, you're ready to provision your NVIDIA embedded hardware for the IoT Edge runtime to deploy this workload as an IoT Edge module.
+With your cross-platform image now published to the Azure container registry, you're ready to provision your NVIDIA embedded hardware for the IoT Edge runtime and deploy this workload as an IoT Edge module.
