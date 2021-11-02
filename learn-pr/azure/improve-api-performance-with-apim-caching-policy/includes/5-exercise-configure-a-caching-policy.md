@@ -77,7 +77,7 @@ When the Web API has been set up and successfully deployed in the Cloud Shell, l
 
 1. In a third browser tab, paste the Swagger JSON URL that you previously copied. The browser displays the OpenAPI specification in JSON format.
 
-Leave these tabs open; they'll be handy later in our 
+Leave these tabs open; they'll be handy later.
 
 ## Create a new Azure API Management instance
 
