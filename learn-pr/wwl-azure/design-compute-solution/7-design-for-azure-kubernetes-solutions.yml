@@ -4,7 +4,7 @@ title: Design for Azure Kubernetes solutions
 metadata:
   title: Design for Azure Kubernetes solutions
   description: "Design for Azure Kubernetes solutions"
-  ms.date: 10/11/2021
+  ms.date: 11/02/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/9-design-for-azure-kubernetes-solutions.md)]
+  [!include[](includes/7-design-for-azure-kubernetes-solutions.md)]
