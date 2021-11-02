@@ -1,4 +1,4 @@
-While most of your requests are fine, there are some scenarios where a request
+While most of your requests are fine, there are some scenarios where a request can fail for a temporary reason. In these scenarios, it's both normal and expected for you to retry your request after a resonable amount of time.
 
 ## Built-in retry
 

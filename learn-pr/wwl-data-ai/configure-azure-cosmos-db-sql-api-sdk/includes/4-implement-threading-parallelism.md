@@ -38,11 +38,11 @@ In this example, the **MaxItemCount** property is set to a value of **500**.
 
 :::code language="csharp" source="../media/4-script.cs" range="15-18" highlight="3":::
 
-> &#128161; If you use a **MaxItemCount** of -1, you should ensure the total response doesn't exceed the service limit for response size.
+> &#128161; If you use a **MaxItemCount** of -1, you should ensure the total response doesn't exceed the service limit for response size. For instance, the max response size is 4 MB.
 
 ### Max concurrency
 
-**MaxConcurrency** specifies the number of concurrent operations ran client side during parallel query execution. If set to **1**, parallelism is effectively disabled. If set to **-1**, the SDK manages this setting. Ideally, you would set this value to the number of partitions for your container.
+**MaxConcurrency** specifies the number of concurrent operations ran client side during parallel query execution. If set to **1**, parallelism is effectively disabled. If set to **-1**, the SDK manages this setting. Ideally, you would set this value to the number of physical partitions for your container.
 
 In this example, the **MaxConcurrency** property is set to a value of **5**.
 
