@@ -1,4 +1,4 @@
-For the frontend we are going to build an image upload form that will load a file from the user's computer, and then upload that file to your Azure Blob Storage account.
+For the frontend, we are going to build an image upload form that will load a file from the user's computer, and then upload that file to your Azure Blob Storage account.
 
 ## Building image upload URLs for your users
 
@@ -29,7 +29,7 @@ Your code will listen to the form's file `change` event to detect when the user 
 
 ## Bundling your JavaScript with Webpack
 
-Since the upload function uses code from the `@azure/storage-blob` package which runs on node.js, you will use `webpack` to extract the required functionality and make it ready to be used browser side.
+Since the upload function uses code from the `@azure/storage-blob` package, which runs on node.js, you'll use `webpack` to extract the required functionality and make it ready to be used browser side.
 
 Once the frontend is ready, you'll be able to test it locally using the Azure Functions Core Tools package.
 

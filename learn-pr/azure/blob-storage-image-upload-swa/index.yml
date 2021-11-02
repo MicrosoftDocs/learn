@@ -9,11 +9,11 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Upload images to Azure Blob Storage from a Static Web App
-summary: Learn how to securely upload images to Azure Blob Storage from a Static Web App by using an Azure Function to generate on demand Shared Access Signatures.
+summary: Learn how to securely upload images to Azure Blob Storage from a Static Web App by using an Azure Function to generate on-demand Shared Access Signatures.
 abstract: >
   In this module you will: 
   - Evaluate when to use Shared Access Signatures (SAS) to grant access to Azure Blob Storage.
-  - Generate SAS tokens on demand to authenticate image uploads request.
+  - Generate SAS tokens on-demand to authenticate image uploads request.
   - Use the SAS token to upload an image to Azure Blob Storage.
   - Implement file uploads in a Static Web App by following Security Best Practices.
 iconUrl: /learn/achievements/blob-storage-image-upload-swa.svg
