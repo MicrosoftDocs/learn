@@ -6,6 +6,8 @@ Before you can deploy your toy company's website by using a pipeline, you need t
 
 This exercise requires that you have permissions to create applications and service principals in your Azure AD directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
 
+[!include[](../../includes/cleanup-steps.md)]
+
 ## Sign in to Azure
 
 ::: zone pivot="cli"

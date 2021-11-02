@@ -7,6 +7,8 @@ Before you can deploy your toy company's website by using a workflow, you need t
 
 This exercise requires that you have permissions to create applications and service principals in your Azure AD directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
 
+[!include[](../../includes/cleanup-steps.md)]
+
 ## Sign in to Azure
 
 ::: zone pivot="cli"
@@ -113,6 +115,8 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
      --sdk-auth
    ```
 
+   [!INCLUDE [](../../includes/azure-template-bicep-exercise-cli-unique-display-name.md)]
+
 1. Select the JSON output from the previous command. It looks like this:
 
    ```json
@@ -181,7 +185,7 @@ You've created a resource group and a service principal. Next, create a secret i
 
 1. Select **New repository secret**.
 
-   :::image type="content" source="../media/5-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
+   :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
 
 1. Name the secret *AZURE_CREDENTIALS*.
 
@@ -189,4 +193,4 @@ You've created a resource group and a service principal. Next, create a secret i
 
 1. Select **Add secret**. 
 
-   :::image type="content" source="../media/5-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
+   :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::

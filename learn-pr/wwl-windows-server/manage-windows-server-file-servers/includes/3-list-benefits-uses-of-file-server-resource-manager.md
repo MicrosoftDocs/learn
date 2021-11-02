@@ -34,3 +34,9 @@ The main steps in the process are:
 1. Validate quota management. Try creating a file with the extension .png and verify the operation failed.
 
  >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Mfsg]
+
+---
+
+
+
+---

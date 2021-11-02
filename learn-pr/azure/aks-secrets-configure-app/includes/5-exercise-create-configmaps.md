@@ -1,5 +1,7 @@
 The back-end part of the application is deployed and now you need to deploy the front-end portion. You already know you're going to need a ConfigMap. So let's start by creating one.
 
+<!--
+
 ## Activate the Azure sandbox
 
 >[!NOTE]
@@ -9,9 +11,11 @@ The back-end part of the application is deployed and now you need to deploy the 
 
 1. Once it's activated, sign in to the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
 
+-->
+
 ## Before we start
 
-We'll assume an AKS cluster is already created and running. Before creating a new cluster, run the following commands to be sure there's no other clusters or resources already created:
+Let's assume an AKS cluster is already created and running. Before creating a new cluster, run the following commands to be sure there's no other clusters or resources already created:
 
 ```azurecli-interactive
 export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
@@ -171,7 +175,11 @@ The complete cluster creation can take up to five minutes.
 
 1. Save and close the file.
 
-1. Deploy the application by running `kubectl apply -f frontend.yaml`.
+1. Deploy the application by running the following command:
+
+    ```bash
+    kubectl apply -f frontend.yaml`.
+    ```
 
 1. Check your work by querying the Kubernetes API:
 

@@ -80,15 +80,14 @@ Now you know how to deploy many different resources at a variety of scopes, and 
 > [!NOTE]
 > When you create a subscription alias, you also specify some other properties like a billing scope. We have omitted them for clarity.
 
-You can then associate the subscription with a management group, which requires you deploy a resource type called `Microsoft.Management/managementGroups/subscriptions`. Because of the way this resource works, you would declare it in a module:
+You can then associate the subscription with a management group, which requires you deploy a resource type called `Microsoft.Management/managementGroups/subscriptions`. Because of the way this resource works, you would declare it in a module. For example, here's a file named *modules/mg-subscription-association.bicep*:
 
-:::code language="bicep" source="code/5-mg-subscription-association.bicep" highlight="9-12" :::
+:::code language="bicep" source="code/5-mg-subscription-association.bicep" highlight="9-16" :::
 
-> [!NOTE]
-> Notice that the association is a child resource of the management group, and therefore it uses a two-part name, with the management group name concatenated with a `/` and then the subscription ID. Normally you use the `parent` property to create child resources, but due to a Bicep limitation we deploy it this way. This will be updated in a future Bicep version.
+Notice that the management group is referenced through the `existing` keyword.
 
 The main Bicep file can then create the association by including the module. Here's the whole Bicep file:
 
-:::code language="bicep" source="code/5-create-mg-hierarchy.bicep" highlight="35-41" :::
+:::code language="bicep" source="code/5-create-mg-hierarchy.bicep" highlight="35-42" :::
 		
 As you've seen, you can use all of the scopes and Bicep language features together to create sophisticated deployments of your entire Azure infrastructure.

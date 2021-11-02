@@ -4,13 +4,12 @@ title: Backup an app service
 metadata:
   title: Backup an app service
   description: "Backup an app service"
-  ms.date: 09/08/2021
+  ms.date: 10/26/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
