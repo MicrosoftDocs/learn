@@ -27,12 +27,12 @@ To access a Service Bus namespace and use a queue within that namespace, you mus
 * Endpoint for your namespace
 * Shared access key for authentication
 
-Both of these values can be obtained from an Azure command that will return the complete connection string.
+Both of these values can be obtained from an Azure command that will return the complete connection string based on the namespace you created in the previous excercise.
 
 > [!NOTE]
 > For simplicity, you will hard-code the connection string in the **Program.cs** file of both console applications. In a production application, you might use a configuration file or Azure Key Vault to store the connection string.
 
-1. Run the following command in Cloud Shell to obtain the connection string for your Service Bus namespace. Replace `<namespace-name>` with the name of your Service Bus Namespace.
+1. Run the following command in Cloud Shell to obtain the connection string for your Service Bus namespace. Replace `<namespace-name>` with the Service Bus Namespace that you created in Unit 3 of this module.
 
     ```azurecli
     az servicebus namespace authorization-rule keys list \
