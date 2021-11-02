@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.github.authenticate-and-authorize-user-identities-github.3-authentication
+title: User authentication
 metadata:
   title: User authentication
   description: Learn the different ways to authenticate a user in GitHub.
