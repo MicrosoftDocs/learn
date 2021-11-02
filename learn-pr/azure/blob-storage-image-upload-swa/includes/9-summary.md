@@ -13,6 +13,6 @@ Shared Access Signatures are the way to go when you need to provide secure and o
 
 Here you can learn more about some of the concepts presented in this module
 
-* [Develop Azure Functions by using Visual Studio Code](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs-code?tabs=nodejs)
+* [Develop Azure Functions by using Visual Studio Code](/azure/azure-functions/functions-develop-vs-code?tabs=nodejs)
 * [Same-origin Policy](https://www.w3.org/Security/wiki/Same_Origin_Policy)
-* [Cross-Origin Resource Sharing](https://docs.microsoft.com/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services)
+* [Cross-Origin Resource Sharing](/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services)
