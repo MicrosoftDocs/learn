@@ -12,6 +12,8 @@ In this module, you’ll be introduced to foundational concepts about game acces
 
 By the end of this module, you will be able to identify core game experiences that commonly introduce accessibility barriers for players with visual, hearing, mobility, and cognitive disabilities.
 
+## Learning Objectives
+
 After completing this module, you'll be able to:
 
 1. Describe the process of how games are played through the lens of accessibility.
