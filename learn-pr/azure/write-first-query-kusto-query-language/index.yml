@@ -30,6 +30,7 @@ products:
 units:
 - learn.write-first-query-kusto-query-language.introduction
 - learn.write-first-query-kusto-query-language.understand-basic-structure-kusto-query-language
+- learn.write-first-query-kusto-query-language.exercise-connect-to-resources
 - learn.write-first-query-kusto-query-language.exercise-return-number-rows-take-operator
 - learn.write-first-query-kusto-query-language.exercise-select-columns-project-operator
 - learn.write-first-query-kusto-query-language.exercise-filter-data-where-operator
