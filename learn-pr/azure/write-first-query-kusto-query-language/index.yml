@@ -34,7 +34,6 @@ units:
 - learn.write-first-query-kusto-query-language.exercise-select-columns-project-operator
 - learn.write-first-query-kusto-query-language.exercise-filter-data-where-operator
 - learn.write-first-query-kusto-query-language.exercise-reorder-returned-data-sort-operator
-- learn.write-first-query-kusto-query-language.exercise-build-queries-multiple-operators
 - learn.write-first-query-kusto-query-language.challenge
 - learn.write-first-query-kusto-query-language.solution
 - learn.write-first-query-kusto-query-language.knowledge-check
