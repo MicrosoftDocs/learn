@@ -3,7 +3,7 @@ uid: learn.student-evangelism.altair-azure-sphere-deploy-emulator.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to how to deploy an Altair emulator to Azure Sphere.
+  description: Introduction to deploying an Altair emulator to Azure Sphere.
   ms.date: 10/01/2021
   author: gloveboxes
   ms.author: chnoring

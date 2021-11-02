@@ -1,16 +1,16 @@
-In the following exercise, you'll config and deploy the Altair emulator to your Azure Sphere.
+In this exercise, you'll configure the Altair emulator and deploy it to Azure Sphere.
 
 ## Get your Azure Sphere tenant ID
 
-You'll need your Azure Sphere tenant ID for the next step. Follow these steps to show your tenant ID and copy it to Notepad.
+You'll need your Azure Sphere tenant ID for the next step. To get the ID:
 
-1. From the  Windows **PowerShell command line** or Linux **Terminal**, run the following command.
+1. From the  Windows PowerShell command line or Linux terminal, run the following command:
 
    ```azsphere
    azsphere tenant show-selected
    ```
 
-   The output of this command will look similar to the following.
+   The output of this command will look similar to the following:
 
     ```Output
     ------------------------------------ -------------------
@@ -20,31 +20,31 @@ You'll need your Azure Sphere tenant ID for the next step. Follow these steps to
     ------------------------------------ -------------------
     ```
 
-2. Copy the Azure Sphere tenant ID to Notepad, as you'll need it soon.
+2. Copy the Azure Sphere tenant ID to Notepad.
 
 
 ## Open the Altair emulator with Visual Studio Code
 
 1. Start Visual Studio Code.
 1. Select **Open folder**.
-1. Open the **Altair8800Emulator** folder you cloned to your computer.
+1. Open the *Altair8800Emulator* folder that you cloned to your computer.
 
 ## Configure the Azure Sphere application
 
-1. From Visual Studio Code, open the **app_manifest.json** file. The resources this application requires must be declared in the **Capabilities** section.
+1. From Visual Studio Code, open the *app_manifest.json* file. The resources that this application requires must be declared in the **Capabilities** section.
 
-1. Update the connection properties for the Azure IoT Central application.
+1. Update the connection properties for the Azure IoT Central application:
 
     * Update **CmdArgs** with your Azure IoT Central ID scope.
-    * Update **DeviceAuthentication** with your Azure Sphere Tenant ID. Remember, the Tenant ID was the numeric value returned from running the **azsphere tenant show-selected** command.
+    * Update **DeviceAuthentication** with the Azure Sphere tenant ID. The tenant ID is the numeric value that you got from running the `azsphere tenant show-selected` command.
 
-1. Update the **AllowedConnections** with the Azure IoT Central application endpoints you copied to Notepad.
+1. Update **AllowedConnections** with the Azure IoT Central application endpoints that you copied to Notepad.
 
-1. You **MUST** include network endpoint for *test.mosquitto.org* in the **AllowedAllowedConnections** list.
+1. Include a network endpoint for *test.mosquitto.org* in the **AllowedAllowedConnections** list.
 
-1. You can format the app_manifest.json document by right mouse clicking on the document and selecting **Format Document** from the context menu.
+1. If you want, format *app_manifest.json* by right-clicking it and selecting **Format Document** from the shortcut menu.
 
-1. Review your updated **app_manifest.json** file. It should look similar to the following.
+1. Review your updated *app_manifest.json* file. It should look similar to the following:
 
     ```json
     {
@@ -54,7 +54,7 @@ You'll need your Azure Sphere tenant ID for the next step. Follow these steps to
       "EntryPoint": "/bin/app",
       "CmdArgs": [ "--ScopeID", "0ne0099999D" ],
       "Capabilities": {
-        //  Uncomment the following line to enable SPI on ISU1 for the Altair Front Panel
+        //  Uncomment the following line to enable SPI on ISU1 for the Altair front panel
         //  "SpiMaster": [ "$MT3620_ISU1_SPI" ],
         "MutableStorage": { "SizeKB": 8 },
         "Gpio": [
@@ -101,19 +101,19 @@ You'll need your Azure Sphere tenant ID for the next step. Follow these steps to
     }
     ```
 
-1. Save the updated app_manifest.json file.
+1. Save the updated *app_manifest.json* file.
 
 ## Set your developer board configuration
 
-The Altair project works on Azure Sphere developer boards from Avnet and Seeed Studio. The default developer board configuration is the Avnet Azure Sphere Starter Kit Revision 1 with **no** front panel.
+The Altair project works on Azure Sphere developer boards from Avnet and Seeed Studio. The default developer board configuration is the Avnet Azure Sphere Starter Kit Revision 1 with *no* front panel.
 
-1. Still in Visual Studio Code, navigate to the **cmake** folder.
+1. In Visual Studio Code, go to the *cmake* folder.
 
-1. Open the **altair_config.cmake** file.
+1. Open the *altair_config.cmake* file.
 
-1. Add **#** at the beginning of the **set AVNET** line to disable it.
+1. Add `#` at the beginning of the `set AVNET` line to disable it.
 
-1. Uncomment the **set** command that corresponds to your Azure Sphere developer board. Ensure only one developer board is enabled.
+1. Uncomment the `set` command that corresponds to your Azure Sphere developer board. Ensure that only one developer board is enabled.
 
     ```text
     # SELECT DEVELOPER BOARD ##########################################################################################
@@ -125,7 +125,7 @@ The Altair project works on Azure Sphere developer boards from Avnet and Seeed S
     ###################################################################################################################
     ```
 
-1. Select your front panel configuration. Uncomment the **set** command that corresponds to your front panel configuration.  Ensure only one front panel configuration is enabled.
+1. Select your front panel configuration. Uncomment the `set` command that corresponds to your front panel configuration. Ensure that only one front panel configuration is enabled.
 
     ```text
     # SELECT FRONT PANEL CONFIG #######################################################################################
@@ -137,7 +137,7 @@ The Altair project works on Azure Sphere developer boards from Avnet and Seeed S
     ###################################################################################################################
     ```
 
-1. Enable SD Card support. This is only for the Avnet Azure Sphere Starter Kit with the MikroE microSD Click. Uncomment the **set** command to enable SD Card support.
+1. Enable SD card support by uncommenting the `set` command. This step is only for the Avnet Azure Sphere Starter Kit with the MikroE microSD Click. 
 
     ```text
     # ENABLE SD CARD ##################################################################################################
@@ -150,7 +150,10 @@ The Altair project works on Azure Sphere developer boards from Avnet and Seeed S
     ###################################################################################################################
     ```
 
-1. By default, the Altair emulator boots CP/M on startup. If you would like to boot up Altair BASIC, then comment out the **add_compile_definitions(BOOT_CPM)** command. Note, you cannot save files to the SD Card or the Virtual disk server from Altair BASIC.
+1. By default, the Altair emulator boots CP/M on startup. If you want to boot Altair BASIC, comment out the `add_compile_definitions(BOOT_CPM)` command. 
+
+   > [!NOTE]
+   > You can't save files to the SD card or the virtual disk server from Altair BASIC.
 
     ```text
     # BOOT CONFIG #####################################################################################################
@@ -162,38 +165,38 @@ The Altair project works on Azure Sphere developer boards from Avnet and Seeed S
     ###################################################################################################################
     ```
 
-1. Save the **altair_config.cmake** file. Saving the file will autogenerate the CMake cache.
+1. Save the *altair_config.cmake* file. Saving the file will autogenerate the CMake cache.
 
-## Enable support the Altair front panel
+## Enable support for the Altair front panel
 
-Ignore this step unless you have built the Altair front panel kit.
+Ignore this step if you haven't built the Altair front panel kit.
 
-1. Open the app_manifest.json file.
-1. Uncomment the line `//  "SpiMaster": [ "$MT3620_ISU1_SPI" ],` line by removing the **//** characters.
+1. Open the *app_manifest.json* file.
+1. Uncomment the line `//  "SpiMaster": [ "$MT3620_ISU1_SPI" ],` by removing the `//` characters.
 
 ## Deploy the application to Azure Sphere
 
 ### Start the app build and deployment process
 
-1. Open **main.c**.
+1. Open *main.c*.
 
 1. Select **CMake: [Release]: Ready** from the Visual Studio Code status bar.
 
-   :::image type="content" source="../media/visual-studio-code-start-application.png" alt-text="The illustration shows CMake status." lightbox="../media/visual-studio-code-start-application.png":::
+   :::image type="content" source="../media/visual-studio-code-start-application.png" alt-text="Screenshot that shows CMake status." lightbox="../media/visual-studio-code-start-application.png":::
 
-1. From Visual Studio Code, press **ctrl+F5** to build, deploy, and start the application on  the Azure Sphere device.
+1. From Visual Studio Code, select **Ctrl+F5** to build, deploy, and start the application on the Azure Sphere device.
 
 ### View debugger output
 
-1. Select the Visual Studio Code **Output** tab to view the output from **Log_Debug** statements in the code. You'll see the device negotiating security with IoT Central.
+Select the Visual Studio Code **Output** tab to view the output from **Log_Debug** statements in the code. You'll see the device negotiating security with Azure IoT Central.
 
-   > [!TIP]
-   > You can open the output tab by using the Visual Studio Code **Ctrl+Shift+U** shortcut or clicking the **Output** tab.
+> [!TIP]
+> You can also open the **Output** tab by using the Visual Studio Code **Ctrl+Shift+U** shortcut.
 
-## Expected device behavior
+## Observe device behavior
 
-Observe the WLAN status LED on your developer board while the device establishes a secure connection to IoT Central and the MQTT broker
+Observe the WLAN status LED on your developer board while the device establishes a secure connection to Azure IoT Central and the MQTT broker:
 
-1. While establishing a WiFi connection the WLAN LED will blink on for 700 ms, then off for 700 ms.
-1. While establishing a connection to IoT Central and the MQTT broker the WLAN LED will blink on for 100 ms, then off for 1300 ms.
-1. When the connection has been established with IoT Central the WLAN LED will blink on for 1400 ms, then off for 100 ms.
+- While the device is establishing a Wi-Fi connection, the WLAN LED will blink on for 700 ms and then off for 700 ms.
+- While the device is establishing a connection to Azure IoT Central and the MQTT broker, the WLAN LED will blink on for 100 ms and then off for 1,300 ms.
+- When the connection has been established with Azure IoT Central, the WLAN LED will blink on for 1,400 ms and then off for 100 ms.
