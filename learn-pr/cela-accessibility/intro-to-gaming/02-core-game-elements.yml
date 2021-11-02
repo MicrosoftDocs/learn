@@ -15,18 +15,18 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following examples can introduce unintentional barriers related to visual information?"
+  - content: "Which of the following examples is most likely to introduce unintentional barriers related to visual information?"
     choices:
-    - content: "An audio timer counting down amount of time left in a mission in addition to the visual countdown on the screen."
+    - content: "An on-screen countdown clock graphic that also announces the number of seconds left aloud through audio channels."
       isCorrect: false
       explanation: "Incorrect. A timer that announces the time left through audio provides an additional means to consume the information."
-    - content: "The status of a players health is visually shown on the health meter status."
+    - content: "The player's current health status is represented by an on-screen meter graphic."
       isCorrect: true
-      explanation: "Correct. Any information that is shows only through UI and not accessible by a screen reader makes that information inaccessible to players with visual disabilities."
-    - content: "The default text size in a game is fairly large, therefore, no additional text size settings are provided"
+      explanation: "Correct. Any information that is shown only through UI, and not accessible by a screen reader makes that information inaccessible to players with visual disabilities."
+    - content: "A game that uses large text sizes by default, therefore other customization options are not provided."
       isCorrect: false
       explanation: "Incorrect. A default size that is large to some players may be unreadable for others. Without customization options, unintentional barriers can occur."
-  - content: "Which of the following examples can introduce unintentional barriers related to performing cognitive tasks?"
+  - content: "Which of the following examples is most likely to introduce unintentional barriers related to performing cognitive tasks?"
     choices:
     - content: "Providing players with an option to enable reminders of which button to use on a jump sequence."
       isCorrect: false
@@ -37,7 +37,7 @@ quiz:
     - content: "Providing tutorials of new mechanics introduced in gameplay."
       isCorrect: false
       explanation: "Incorrect. Providing an opportunity for players to try out and familiarize themselves with new mechanics in a trial space removes barriers."
-  - content: "Which of the following examples can introduce unintentional barriers related to game input?"
+  - content: "Which of the following approaches can help eliminate unintentional barriers related to input?"
     choices:
     - content: "Provide different options for input devices, documented in accessible support articles."
       isCorrect: true
@@ -45,7 +45,7 @@ quiz:
     - content: "Provide options to skip specific portions of the game that require challenging mechanics."
       isCorrect: false
       explanation: "Incorrect. Removing portions of the game is not an appropriate way to create a more accessible experience. Doing so would change the nature of the game and eliminate the intentional challenges that make the game unique."
-    - content: "Provide additional tutorials in the game for players to practice challenging."
+    - content: "Provide additional tutorials in the game for players to practice challenging button press combinations."
       isCorrect: false
       explanation: "Incorrect. Providing additional tutorials is a good practice for all players, but should assumed that practice alone will remove the barrier to play."
 
