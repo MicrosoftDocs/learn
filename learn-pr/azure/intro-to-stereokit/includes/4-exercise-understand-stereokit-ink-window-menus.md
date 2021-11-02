@@ -32,7 +32,7 @@ Ink tools window contains all the drawing features such as brush properties, col
 
 :::image type="content" source="../media/ink-tools-window.png" alt-text="Screenshot of Ink tools window.” " lightbox="../media/ink-tools-window.png":::
 
-The Ink window is a standard window that carries all ink brush settings, and the Ink window function is invoked from the palette script. **Step()** is the method from **program.cs** script :
+The Ink window is a standard window that carries all ink brush settings, and the Ink window function is invoked from the palette script. **Step()** is the method from **program.cs** script:
 
 ``` c#
 UI.WindowBegin("Menu", ref menuPose, UIWin.Body);
@@ -63,7 +63,7 @@ UI.Model(_model, V.XY(0, UI.LineHeight*2));
 
 :::image type="content" source="../media/inkpot.png" alt-text="Screenshot of inkpot model in Ink tools window.” " lightbox="../media/inkpot.png":::
 
-* UI.Model - Creates a single mesh subset Model using the indicated Mesh and Material. To highlight the area's purpose, display an ink bottle. The x-axis will auto-fill to center the Model, and we'll make it two lines tall using the size specified here. **V.VY** Creates a Vec2. This is a straight alternative to **new Vec2(x, y)**.
+* UI.Model - Creates a single mesh subset Model using the indicated Mesh and Material. To highlight the area's purpose, display an ink bottle. The x-axis will autofill to center the Model, and we'll make it two lines tall using the size specified here. **V.VY** Creates a Vec2. This is a straight alternative to **new Vec2(x, y)**.
 
 The bottom of the INK window has an INK model that shows a list of colors swatches that are pre-selected and displayed in the window.
 
@@ -115,13 +115,13 @@ void SwatchColor(string id, float hue, float saturation, float value)
 
   * With pseudo rotation, we will position all swatches in the same line as in the swatch function.
 
-  * To keep UI in the same line we use :
+  * To keep UI in the same line, we use:
 
   ```c#
   UI.SameLine();
   ```
 
-* **Slider insatiate** - swatches are not limited. Hence there is some slider to adjust HSV the color manually. Then we can have a fixed-size label and add a fixed-size slider to the same line. Fixing the sizes are aligned in the column using :
+* **Slider insatiate** - swatches are not limited. Hence there is some slider to adjust HSV the color manually. Then we can have a fixed-size label and add a fixed-size slider to the same line. Fixing the sizes are aligned in the column using:
 
     ```c#
     UI.Label("Hue", V.XY(8*U.cm, UI.LineHeight));
@@ -187,7 +187,7 @@ void SwatchColor(string id, float hue, float saturation, float value)
   UI.HSlider("Size", ref _size, 0.001f, 0.05f, 0, 22 * U.cm, UIConfirm.Pinch);
   ```
 
-* In final we always call end window function
+* In final, we always call end window function
 
   ```c#
   UI.WindowEnd();
@@ -206,14 +206,14 @@ void SwatchColor(string id, float hue, float saturation, float value)
 
 ## Ink functional window
 
-Ink functional window contains of functional buttons such as Undo, Redo, Clear, Quit, Save and Load.
+Ink functional window contains of functional buttons such as Undo, Redo, Clear, Quit, Save, and Load.
 
 :::image type="content" source="../media/ink-functional-window.png" alt-text="Screenshot of On the toggle button to enable “Developer Mode.” " lightbox="../media/ink-functional-window.png":::
 
-The function **StepMenuWindow()** in the main program(**program.cs**) script is used to initialzation **INK Functional Window**.
+The function **StepMenuWindow()** in the main program(**program.cs**) script is used to initialization **INK Functional Window**.
 
 ```c#
-static Pose        menuPose       = new Pose(0.4f, 0, -0.4f, Quat.LookDir(-1,0,1));
+static Pose menuPose = new Pose(0.4f, 0, -0.4f, Quat.LookDir(-1,0,1));
 
 UI.WindowBegin("Menu", ref menuPose, UIWin.Body);
 ```

@@ -40,7 +40,7 @@ You may encounter errors when opening the Solution Explorer and the C# program f
 
 ## Test StereoKit Ink application
 
-Once the solution is deployed, you can see the StereoKit Ink application window pop up on your target device, such as hololens 2 or desktop. You can see a simple UI with three operable components. The components present on the screen are the painting menu, palette menu, handle, and operating hand.
+Once the solution is deployed, you can see the StereoKit Ink application window pop-up on your target device, such as HoloLens 2 or desktop. You can see a UI with three operable components. The components present on the screen are the painting menu, palette menu, handle, and operating hand.
 
 You may start interacting with the application using the fingertip of your right hand. Choose a color of your choice from the available six colors and can customize these colors by altering the Hue, Saturation, and Value properties. You can modify the size of brushstrokes using the slider. You may move around your painting using the handle.
 

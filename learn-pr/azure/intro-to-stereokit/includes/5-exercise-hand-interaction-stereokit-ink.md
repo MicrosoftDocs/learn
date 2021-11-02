@@ -2,7 +2,7 @@ From the previous chapter, you have a basic understanding of how the main progra
 
 ## Radial menu
 
-The StereoKit Ink application uses a basic radial hand menu to keep some quick actions! It's activated by a grip motion and is ideal for quick gesture-like menu item activation. It can also be combined with several sub-menus.
+The StereoKit Ink application uses a basic radial hand menu to keep some quick actions! It's activated by a grip motion and is ideal for quick gesture-like menu item activation. It can also be combined with several submenus.
 
 :::image type="content" source="../media/radial-menu.png" alt-text="Screenshot of radial menu.” " lightbox="../media/radial-menu.png":::
 
