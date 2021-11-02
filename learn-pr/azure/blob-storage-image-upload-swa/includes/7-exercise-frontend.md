@@ -124,7 +124,7 @@ Then it's time to run the frontend side of the project. For that you are going t
 
 4. Select an image for uploading.
 
-5. Go to your storage account in Azure Portal. Click on `Storage Explorer`, then select `Blob Storage` and click on the `images` container. Your image will be there like in the following screenshot.
+5. Go to your storage account in Azure portal. Click on `Storage Explorer`, then select `Blob Storage` and click on the `images` container. Your image will be there like in the following screenshot.
 
 :::image type="content" source="../media/container_image.png" alt-text="Storage Explorer listing the uploaded image":::
 
