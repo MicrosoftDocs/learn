@@ -6,7 +6,7 @@ The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores
 
 :::image type="content" source="../media/azure-sphere-architecture.png" alt-text="Diagram that shows the Azure Sphere architecture." border="false":::
 
-The Altair emulator consists of two applications: one high-level Linux application and one real-time core application. The applications communicate with each other by passing messages over the inter-core bridge.
+The Altair emulator consists of two applications: one high-level Linux application and one real-time core application. The applications communicate with each other by passing messages over the intercore bridge.
 
 The following diagram shows what applications run on the Azure Sphere MCU. The blue color indicates the A7 high-level core running the Altair emulator. The red color indicates the real-time cores running the cache and SD card services.
 

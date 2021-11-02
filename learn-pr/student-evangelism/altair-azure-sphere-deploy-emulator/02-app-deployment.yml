@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-deploy-emulator.app-deployment
-title: Altair emulator disk services
+title: Prepare to deploy Altair emulator disk services
 metadata:
-  title: Altair emulator disk services
-  description: Learn about the Altair emulator disk services.
+  title: Prepare to deploy Altair emulator disk services
+  description: Learn about the Altair emulator disk services that you'll soon deploy.
   ms.date: 10/01/2021
   author: gloveboxes
   ms.author: chnoring

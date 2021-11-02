@@ -1,4 +1,4 @@
-In this exercise, you'll deploy Altair emulator disk services to Azure Sphere.
+Use the following procedures to deploy Altair emulator disk services to Azure Sphere.
 
 ## Deploy the prebuilt real-time packages (recommended)
 

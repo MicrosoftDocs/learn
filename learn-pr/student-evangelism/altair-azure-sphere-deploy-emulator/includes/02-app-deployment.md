@@ -1,11 +1,11 @@
-In this unit, you'll learn about the real-time Altair emulator disk services.
+In this unit, you'll learn about the real-time Altair emulator disk services so that you can deploy them.
 
 The file system for the Altair emulator can read and write files to an SD card or the virtual disk server. The file system uses disks for storage. Disk drive A contains the operating system, utilities, and programming languages. Disk drive B is empty and can be used for the applications that you write.
 
 To deploy the Altair emulator, you need:
 
 - The SD card service running on Azure Sphere (recommended). 
-  - The SD card service requires an Avnet Azure Sphere Starter Kit Rev 1 or Rev 2, plus the MikroE microSD Card Click.  
+  - The SD card service requires an Avnet Azure Sphere Starter Kit Rev 1 or Rev 2, plus the MikroE microSD Click.  
   - The SD card provides file read/write support for both disk drive A and disk drive B.
 - The virtual disk server running on your computer or cloud-based virtual machine.
   - Install the virtual disk cache service on Azure Sphere to improve the performance of the file system.
