@@ -31,7 +31,7 @@ The preceding interface defines a single method, which will act as an event that
 
 :::code source="../code/BlazingPizza.Server/Hubs/OrderStatusHub.cs":::
 
-The preceding hub implementation exposes two methods that are invokable from clients. A client calls `StartTrackingOrder` given an `order` instance, and the client's unique connection will be added to a group where notifications will be sent. Likewise, it calls `StopTrackingOrder` to leave the group and no longer receive notifications.
+The preceding hub implementation exposes two methods that are invokable from clients. A client calls `StartTrackingOrder` given an `order` instance, and the client's unique connection will be added to a group where notifications will be sent. Likewise, a call to `StopTrackingOrder` will have the connection leave the group and no longer receive notifications.
 
 ### SignalR server configuration
 
@@ -42,7 +42,7 @@ The `Startup` class needed to be updated to add ASP.NET Core SignalR, and the Me
 The preceding highlighted changes:
 
 - Add SingalR and the MessagePack protocol.
-- Map the `OrderStatusHub` to the endpoint.
+- Map the `OrderStatusHub` to the `"/orderstatus"` endpoint.
 
 ## Refactored client app
 
@@ -70,13 +70,13 @@ Consider the _OrderDetails.razor.cs_ file:
 
 :::code source="../code/BlazingPizza.Client/Pages/OrderDetails.razor.cs":::
 
-The preceding C# component represents the code-behind for the `OrderDetails` component and this is possible due to the class being defined as `partial`. It's an implementation of `IAsyncDisposable` to clean up the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnection> instance. This component defines several class-scoped fields, each with various intent:
+The preceding C# component represents the code-behind for the `OrderDetails` component and this is possible due to the class being defined as `partial`. It's an implementation of `IAsyncDisposable` to clean up the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnection> instance. This component defines several class-scoped fields, each with various intents:
 
 - `_hubConnection`: A connection used to invoke methods on the SignalR Server.
 - `_orderWithStatus`: The contextual order and its current status.
-- `_invalidOrder`: A value indicating whether order is invalid.
+- `_invalidOrder`: A value indicating whether the order is invalid.
 
-With this refactoring, a lot of the code that was in the original `@code { ... }` directive is now in the code-behind:
+With this refactoring, all required code that was in the original `@code { ... }` directive is now in the code-behind:
 
 - The `[Parameter] public int OrderId { get; set; }` is the exact same.
 - The attribute-decorated property `[Inject] public OrdersClient OrdersClient { get; set; }`, replaces the `@inject OrdersClient OrdersClient` directive.
@@ -86,8 +86,8 @@ There are a few additional injected properties that the configuration of the Sig
 - The `[Inject] public NavigationManager Nav { get; set; }` property is used to resolve the hub's endpoint.
 - The `[Inject] public IAccessTokenProvider AccessTokenProvider { get; set; }` property is used to assign the `AccessTokenProvider` to the hub connection's options object. This ensures that all communications correctly provide the authenticated user's access token.
 
-The `OnInitializedAsync` override method uses the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionBuilder> object to build the `_hubConnection` instance. It's configured to automatically reconnect, and specifies the MessagePack protocol. With the `_hubConnection` instance the page subscribes to the `"OrderStatusChanged"` hub event, and sets the `OnOrderStatusChangedAsync` as its corresponding event handler. The hub connection is then stated.
+The `OnInitializedAsync` override method uses the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionBuilder> object to build the `_hubConnection` instance. It's configured to automatically reconnect and specifies the MessagePack protocol. With the `_hubConnection` instance the page subscribes to the `"OrderStatusChanged"` hub event and sets the `OnOrderStatusChangedAsync` as its corresponding event handler. The hub connection is then started using <xref:Microsoft.AspNetCore.SignalR.Client.HubConnection.StartAsync%2A?displayProperty=nameWithType>.
 
-The `OnOrderStatusChangedAsync` event handler method accepts the `OrderWithStatus` instance as its parameter and returns a <xref:System.Threading.Tasks.Task>. It reassigns the `_orderWithStatus_ class variable and calls <xref:Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged>.
+The `OnOrderStatusChangedAsync` event handler method accepts the `OrderWithStatus` instance as its parameter and returns a <xref:System.Threading.Tasks.Task>. It reassigns the `_orderWithStatus` class variable and calls <xref:Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged>.
 
-The `OnParametersSetAsync` override method is called when the `OrderId` is assigned. The initial state of the `_orderWithStatus` object is assigned from the `OrdersClient.GetOrder` call. If the order has been delivered, the order is no longer tracked, and hub connection is stopped. If the order has not yet been delivered, the order is tracked.
+The `OnParametersSetAsync` override method is called when the `OrderId` is assigned. The initial state of the `_orderWithStatus` object is assigned from the `OrdersClient.GetOrder` call. If the order has been delivered, the order is no longer tracked, and the hub connection is stopped using <xref:Microsoft.AspNetCore.SignalR.Client.HubConnection.StopAsync%2A?displayProperty=nameWithType>. If the order has not yet been delivered, the order is tracked.

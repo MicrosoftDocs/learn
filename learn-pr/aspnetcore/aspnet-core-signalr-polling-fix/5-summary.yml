@@ -9,6 +9,6 @@ metadata:
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
-durationInMinutes: 3
+durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]

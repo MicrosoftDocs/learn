@@ -1,4 +1,4 @@
-In this unit, you'll clone the existing applications' source code repository. With a local clone of the source, you'll then familize yourself with the existing client-side polling functionality and evaluate how best to refactor the code.
+In this unit, you'll clone the existing applications' source code repository. With a local clone of the source, you'll then familiarize yourself with the existing client-side polling functionality and evaluate how best to refactor the code.
 
 ## Clone the repository
 
@@ -84,7 +84,7 @@ The console should output various logs, letting you know that the app has succes
 
 ## Familiarize yourself with the code
 
-The primary focus for this module is refactoring the client-side polling to instead use ASP.NET Core SignalR. Consider the _OrderDetails.razor_ file:
+The primary focus for this module is refactoring the client-side polling to instead use ASP.NET Core SignalR. The ordering of a pizza redirects the user to the order details page, this page performs the client-side polling. Let's make sure that we understand how this is currently implemented so that we know what needs to be refactored. Consider the _OrderDetails.razor_ file:
 
 ```razor
 @page "/myorders/{orderId:int}"
@@ -188,14 +188,14 @@ The preceding Razor markup:
 
 - Binds values from the `orderWithStatus` object as part of the component template.
   - The created time, and status text values are bound in the order title markup.
-  - The order is passed as an argument to the `OrderReview` component.
+  - The `orderWithStatus.Order` is passed as an argument to the `OrderReview` component.
   - The map markers (which represent the markings on the live map) are passed to the `Map` component.
 - When the `OrderId` parameter is set, the `PollForUpdates` is started.
   - This method will make an HTTP request to the server every four seconds.
-  - The latest order status details are re-assigned to the `orderWithStatus` variable.
+  - The latest order status details are reassigned to the `orderWithStatus` variable.
 
 > [!NOTE]
-> The `PollForUpdates` method is `async void` which means it's fire-and-forget. This can cause unexpected behavior and should be avoided if possible.
+> The `PollForUpdates` method is `async void` which means it's fire-and-forget. This can cause unexpected behavior and should be avoided if possible. It will be refactored as part the changes.
 
 Each time the order is received, it recalculates delivery status updates and corresponding map marker changes. This is achieved by calculating properties on the `OrderWithStatus` object. Consider the following _OrderWithStatus.cs_ C# file:
 
@@ -305,7 +305,7 @@ In the preceding C# code, the `FromOrder` calculates a new order status based on
 
 ## Fetch the refactored code
 
-The refactored code is in a separate branch named `signalr`.
+The refactored code is in a separate branch [named `signalr`](https://github.com/dotnet-presentations/blazor-workshop/tree/signalr).
 
 # [Linux](#tab/linux)
 
