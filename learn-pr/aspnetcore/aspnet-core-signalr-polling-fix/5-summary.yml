@@ -4,11 +4,12 @@ title: Summary
 metadata:
   unitType: summary
   title: Summary
-  description: "TODO" # user input: a description for site search and SEO
+  description: ASP.NET Core SignalR refactoring summary with links to resources and additional references.
   ms.date: 11/01/2021
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
 durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]

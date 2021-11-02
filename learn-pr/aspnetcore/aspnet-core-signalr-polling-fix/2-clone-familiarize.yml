@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.aspnet-core-signalr-polling-fix.clone-and-familiarize
+uid: learn.aspnet-core-signalr-polling-fix.clone-familiarize
 title: Clone and familiarize yourself with the code
 metadata:
   unitType: exercise
@@ -11,4 +11,4 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-clone-and-familiarize.md)]
+  [!include[](includes/2-clone-familiarize.md)]

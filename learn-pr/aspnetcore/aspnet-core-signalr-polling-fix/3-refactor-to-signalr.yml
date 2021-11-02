@@ -9,6 +9,7 @@ metadata:
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
 durationInMinutes: 15
 content: |
   [!include[](includes/3-refactor-to-signalr.md)]

@@ -34,7 +34,7 @@ products:
   - dotnet
 units:
 - learn.aspnet-core-signalr-polling-fix.introduction
-- learn.aspnet-core-signalr-polling-fix.clone-and-familiarize
+- learn.aspnet-core-signalr-polling-fix.clone-familiarize
 - learn.aspnet-core-signalr-polling-fix.refactor-to-signalr
 - learn.aspnet-core-signalr-polling-fix.validate-refactored-code
 - learn.aspnet-core-signalr-polling-fix.summary
