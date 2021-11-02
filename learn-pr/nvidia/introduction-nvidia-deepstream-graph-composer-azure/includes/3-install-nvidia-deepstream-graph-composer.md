@@ -9,7 +9,7 @@ In this unit, you'll install the prerequisites and dependencies necessary to ins
     sudo sh get-docker.sh
     ```
 
-1. Install some of the base dependencies used by the Graph Composer application at runtime. These packages assist in drawing the user interface of the application. They also provide the ability to interact with available hardware acceleration on the host machine.
+1. Install some of the base dependencies used by the Graph Composer application at runtime. These packages are need to render the user interface of the application. They also enable interaction with available hardware acceleration on the host machine.
 
     ```Bash
     sudo apt install \
