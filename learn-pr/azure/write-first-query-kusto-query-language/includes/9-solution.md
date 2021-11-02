@@ -2,20 +2,20 @@ You've been asked to write a query that answers the following question:
 
 > In the month of April 2007, what were the top 5 damage-causing storms in the state of Virginia?
 
+This solution provides one possible way to construct a query that answers the above question.
+
 ## Solution
 
-Here is one possible way to construct a query that answers the above question.
-
 1. The first thing we want to do is filter out as much information as possible. 
-    * The time window should be between April 1st and April 30th, 2007. We can filter this using the `where` operator.
+    * The time window should be between April 1 and April 30, 2007. We can filter this using the `where` operator.
     * We only want to return results from the state of Virginia. We can filter this using the `where` operator.
-1. Now, we need to create a column that sums damage from *DamageProperty* and *DamageCrops*. We can do this using either the `extend` or `project` operators. 
-1. In order to figure out which kind of storm caused this damage, we need to make sure to see the *EventType* column. We can do this using the `project` operator.
-1. Lastly, we want to arrange the data by the highest damage first. We can use the `sort` operator for this, with the default mode being descending.
+1. Now, we need to create a column that sums damage from *DamageProperty* and *DamageCrops*. We can use either the `extend` or `project` operators. 
+1. To figure out which kind of storm caused this damage, we need to make sure to see the *EventType* column. We'll use the `project` operator.
+1. Lastly, we want to arrange the data by the highest damage first. We can use the `sort` operator, with the default mode being descending.
 
 ## Solution query
 
-These steps are all included in the following query:
+The above steps are all included in the following query:
 
 ```kusto
 StormEvents
@@ -29,4 +29,4 @@ StormEvents
 
 ## Insights
 
-From the above results, we can see that all top five damage-causing events in the month of April in the state of Virginia were Frost/Freeze events. 
+From the above results, we can see that all top five damage-causing events in the month of April and in the state of Virginia were Frost/Freeze events.

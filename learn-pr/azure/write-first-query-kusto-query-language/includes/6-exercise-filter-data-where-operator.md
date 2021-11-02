@@ -1,5 +1,5 @@
 Kusto queries can be used to filter data and return specific information.
-Recall that we've used filter certain columns in or out of the displayed results. In this unit, you want to narrow down the results to answer questions about what kind of meterological events took place in different regions or timespans, and which types of events caused damage.
+Recall that we've filtered certain columns in or out of the displayed results. In this unit, you want to narrow down the results to answer questions about what kind of meteorological events took place in different regions or timespans, and which types of events caused damage.
 
 ## Use the `where` operator
 
@@ -21,7 +21,7 @@ The `where` operator filters results that satisfy a certain condition. In this f
     
 1. Notice that the all rows returned do, in fact, have *DamageProperty* values greater than zero.
     
-1. Similarly, you could filter where the time of an event occurred more than a number of days ago, for example in the following query:
+1. Similarly, you could filter where the time of an event occurred more than a certain number of days ago, for example in the following query:
 
     ```kusto
     StormEvents
@@ -53,7 +53,7 @@ It looks like there are quite a few types of damage-causing storms, occurring al
 
 ### Filter using the `has` operator
 
-Looking at the results of the last query, we see that one of the Event Types is called "Thunderstorm Wind". Let's see if there are any other kinds of wind that caused property damage in Florida. We can do this by searching on a string match of "wind" using the `has` operator. The `has` operator is a case-insensitive search that matches on a full term.
+Looking at the results of the last query, we see that one of the Event Types is called "Thunderstorm Wind". Let's see if there are any other kinds of wind that caused property damage in Florida. We'll search on a string match of "wind" using the `has` operator. The `has` operator is a case-insensitive search that matches on a full term.
 
 1. Run the following query:
 
@@ -75,7 +75,7 @@ Looking at the results of the last query, we see that one of the Event Types is 
 
 Maybe we only care about damage done in the first half of the calendar year. In fact, we often want to limit our search to see events within a specific time range. Some interfaces with KQL have a dropdown time picker, but others require you to incorporate the date into the query itself.
 
-In order to compare or combine two different data types, you may need to change the data type of one of those input fields.
+To compare or combine two different data types, you may need to change the data type of one of those input fields.
 
 For example, when we search on a datetime field, we have to input a datetime value for our boundary reference value. To do this, we use the `datetime()` function, which converts the date within the parentheses to a datetime value.
 
@@ -94,4 +94,4 @@ For example, when we search on a datetime field, we have to input a datetime val
 
     :::image type="content" source="../media/5-where-3.png" alt-text="Screenshot of where operator example 3.":::
 
-1. Notice that all the dates are within the first half of the year, months 1-6. You may also see that even though we've selected events from the state of Florida, we don't see the state as an output column, since it was not specified in the `project` operator.
+1. Notice that all the dates are within the first half of the year, months 1-6. You may also see that even though we've selected events from the state of Florida, we don't see the state as an output column, since it wasn't specified in the `project` operator.

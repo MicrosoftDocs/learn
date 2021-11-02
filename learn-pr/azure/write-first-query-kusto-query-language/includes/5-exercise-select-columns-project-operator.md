@@ -1,9 +1,9 @@
 Kusto queries can be used to filter data and return specific information.
-Recall that the we've returned a specified number of random rows to see what kind information you have for each storm event. In this unit, you want to see specific columns relating to storm events, locations, and their damaging effects.
+Recall that we've looked at random rows of data to get a sense of its structure. In this unit, you want to narrow down the data columns relating to storm events, locations, and their damaging effects.
 
 ## Use the `project` operator
 
-If you remember, the meteorological data example has quite a few columns. Not all of these columns are meaningful for our exploration, or you want to view these results in a window with limited space. We'll choose just a few columns to view. To do this, we'll use the `project` operator to define which columns we want to see in the output. Multiple column names are separated by commas.
+If you remember, the meteorological data example has quite a few columns. Not all of these columns are meaningful for our exploration. We'll choose just a few columns to view. We'll use the `project` operator to define which columns we want to see in the output. Multiple column names are separated by commas.
 
 1. Run the following query:
     
@@ -23,11 +23,11 @@ If you remember, the meteorological data example has quite a few columns. Not al
 
 You can also use project to rename columns and define new ones. We don't really care about the distinction between *InjuriesDirect* and *InjuriesIndirect*. It would be more useful to just know the total number of injuries. Let's make a new column that shows this sum. We'll do the same for the two types of damage columns by adding together damages to crops and damages to property.
 
-Since these columns are of type int (integer), we can use a numerical operator add the values. We'll also rename the *State* column to specify that these are US states.
-
 If you hover on a column name in the query editor, you can see the type of data contained in this column. 
 
-:::image type="content" source="../media/4-data-type.png" alt-text="Screenshot of datatype in query editor.":::
+    :::image type="content" source="../media/4-data-type.png" alt-text="Screenshot of datatype in query editor.":::
+
+Since these columns are of type int (integer), we can use a numerical operator add the values. We'll also rename the *State* column.
 
 To rename or perform numerical operations on operators, we'll use the following syntax in our query:
 
@@ -48,7 +48,7 @@ To rename or perform numerical operations on operators, we'll use the following 
 
     :::image type="content" source="../media/4-project-rename.png" alt-text="Screenshot of project operator used to rename columns.":::
 
-1. Notice that the *State* column has been renamed to *US_State*. The *Damage* column is new, and has been calculated as the sum of *DamageCrops* and *DamageProperty*.
+1. Notice that the *State* column has been renamed to *US_State*. The *Injuries* column is new, and has been calculated as the sum of *InjuriesDirect* and *InjuriesIndirect*. The *Damage* column is also new, and has been calculated as the sum of *DamageCrops* and *DamageProperty*.
 
 ## Use the `project-away` operator
 
@@ -62,4 +62,4 @@ What if you wanted to just remove a few select columns? For our exploration, we 
     | take 10
     ```
 
-1. To check your results, try scrolling to the far right of the resulting table. Do you see the *StormSummary* column?
+1. Check your results. Recall that the *EpisodeID* and *EventID* columns were between the *EndTime* and *State* columns. Which of these columns do you see in the output?

@@ -1,4 +1,4 @@
-Organizations in all sectors deal with a constant flow of data, and need to be able to turn this data into meaningful, actionable insights. In the meteorological scenario, you've obtained a dataset with storm data from the US. In this unit, you'll learn about the basic structure Kusto Query Language (KQL) so that you can use KQL to analyze and interpret this data set.
+Organizations in all sectors deal with a constant flow of data, and need to turn this data into meaningful, actionable insights. In the meteorological scenario, you've obtained a dataset with storm data from the US. In this unit, you'll learn about the basic structure Kusto Query Language (KQL) so that you can use KQL to analyze and interpret this data set.
 
 ## What is a Kusto query?
 
@@ -6,7 +6,7 @@ A Kusto query is a read-only request to process data and return results. The req
 
 ## What is a query statement?
 
-The most common kind of query statement is a tabular expression **statement**, which means both its input and output consist of tables or tabular data sets. Tabular statements contain one more **operator**, each of which starts with a tabular input, and returns a tabular output. Operators are sequenced by a | (pipe). Data flows, or is piped, from one operator to the next. The data is filtered or manipulated at each step, and then fed into the following step. It's like a funnel, where you start out with an entire data table. Each time you pass through another operator, the data is filtered, rearranged, or summarized. At the end of the funnel, you're left with a refined output.
+The most common kind of query statement is a tabular expression **statement**, which means both its input and output consist of tables or tabular data sets. Tabular statements contain one more **operator**, each of which starts with a tabular input, and returns a tabular output. Operators are sequenced by a | (pipe). Data flows, or is piped, from one operator to the next. The data is filtered or manipulated at each step, and then fed into the following step. It's like a funnel, where you start out with an entire data table. Each time you pass through another operator, the data is filtered, rearranged, or summarized. Because the piping of information from one operator to another is sequential, the query operator order is important. At the end of the funnel, you're left with a refined output.
 
 These operators are KQL-specific, although often have parallels to SQL or other languages.
 
@@ -20,7 +20,5 @@ StormEvents
 ```
 
 This query has a single tabular expression statement. The statement begins with a reference to a table called *StormEvents* and contains several operators, each separated by a pipe. The data rows for the source table are filtered by the value of the StartTime column, and afterwards filtered by the value of the State column. The query then returns the count of "surviving" rows.
-
-Because the piping of information from one operator to another is sequential, the query operator order is important.
 
 In the next units, we'll learn about some of the most commonly used operators, and how to use them to answer questions about a sample dataset containing US meteorological data.

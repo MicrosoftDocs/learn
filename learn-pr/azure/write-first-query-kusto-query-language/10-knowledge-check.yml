@@ -5,81 +5,56 @@ metadata:
   unitType: knowledge_check
   title: Check your knowledge
   description: Review what you've learned
-  ms.date: 10/25/2021
+  ms.date: 11/02/2021
   author: YaelSchuster
   ms.author: yaschust
   ms.topic: interactive-tutorial
   ms.prod: "TODO"
-durationInMinutes: 1 # user input: the estimate time to complete the unit
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
+durationInMinutes: 5 
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "What is the input and output data format of each operator in a Kusto query?"
     choices:
-    - content: ""
+    - content: "String"
+      isCorrect: false
+      explanation: "False. String datatype is just one of many data types that can be included in the tabular data."
+    - content: "Tabular"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "True. Each operator starts with a tabular input, and returns a tabular output."
+    - content: "JSON"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "False. JSON datatype is just one of many data types that can be included in the tabular data."
+  - content: "Which operator will return a specific number of random rows of data?"
     choices:
-    - content: ""
+    - content: "take"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "True. The take operator returns up to the specified number of random data rows."
+    - content: "between"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "False. The between operator filters a record set for data matching the values in an inclusive range."
+    - content: "contain"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "False. The contain operator filters a record set for data containing a case-insensitive string."
+  - content: "Which operator can be used to insert new computed columns?"
     choices:
-    - content: ""
+    - content: "print"
+      isCorrect: false
+      explanation: "False. The print operator outputs a single row with one or more scalar expressions."
+    - content: "render"
+      isCorrect: false
+      explanation: "False. The render operator instructs the user agent to render the results of the query in a particular way."
+    - content: "project"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "True. The project operator can be used to include, rename, or insert new computed columns."
+  - content: "Which of the following queries best answers the following question: Which types of storms caused the most property damage in the state of Texas?"
     choices:
-    - content: ""
+    - content: "StormEvents | where DamageProperty > 0 | where State == "TEXAS" | project State, EventType, DamageProperty | sort by DamageProperty" 
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "True."
+    - content: "StormEvents | where DamageCrops > 0 | where State == "TEXAS" | project State, EventType, DamageCrops | sort by DamageCrops"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "False. This query sorts on DamageCrops, not DamageProperty"
+    - content: "StormEvents | where DamageProperty > 0 | where State == "FLORIDA" | where EventType contains "thunder" | project StartTime, EventType, DamageProperty" 
       isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "False. This query looks at thunder-containing events in the state of Florida."

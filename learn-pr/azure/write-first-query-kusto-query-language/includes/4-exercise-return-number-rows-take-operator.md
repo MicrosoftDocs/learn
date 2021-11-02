@@ -1,13 +1,13 @@
-A Kusto query can be used to explore datasets and gain insights. Recall that we have a meteorological dataset of which we are unfamiliar, and want to explore what we can learn from this data. 
-Here, we'll look at the structure of this data to understand what kinds of questions we can ask about storm events that happened in the US in 2007.
+A Kusto query can be used to explore datasets and gain insights. Recall that we have an unfamiliar meteorological dataset, and want to explore what we can learn from this data. 
+Here, we'll look at the structure of this data to understand what kinds of questions we can ask about these storm events.
 
 ## Write your first query
 
-Let's take a look at a sample of the data in order to get to know the columns and types of data in the table. We don't need to see all rows for this, just a few examples.
+Let's take a look at a sample of the data to get to know the columns and types of data in the table. We don't need to see all rows, just a few examples.
 
 The `take` operator is perfect, as it returns a specified number of random rows. 
 
-1. Copy this query to your clipboard and run in your sample environment. Since the rows are selected at random, you will probably see different data than is displayed below.
+1. Copy this query to your clipboard and run in your sample environment. 
 
     ```kusto
     StormEvents
@@ -18,9 +18,9 @@ The `take` operator is perfect, as it returns a specified number of random rows.
 
 1. To run the query, either select the **Run** button above the query window, or press **Shift+Enter**.
 
-1. You should get results that look like the following image: 
+1. You should get results that look like the following image. However, since the rows are selected at random, you will probably see different data than is displayed below.
 
-    :::image type="content" source="../media/3-take-5.png" alt-text="Screenshot of take 5 output.":::
+    :::image type="content" source="../media/3-take-5.png" alt-text="Screenshot of take five outputs.":::
 
 ## Explore the results
 
