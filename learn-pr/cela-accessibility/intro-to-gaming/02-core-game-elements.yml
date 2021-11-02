@@ -47,5 +47,5 @@ quiz:
       explanation: "Incorrect. Removing portions of the game is not an appropriate way to create a more accessible experience. Doing so would change the nature of the game and eliminate the intentional challenges that make the game unique."
     - content: "Provide additional tutorials in the game for players to practice challenging button press combinations."
       isCorrect: false
-      explanation: "Incorrect. Providing additional tutorials is a good practice for all players, but should assumed that practice alone will remove the barrier to play."
+      explanation: "Incorrect. Providing additional tutorials is a good practice for all players, but developers should not assume that practice alone will remove the barrier to play."
 
