@@ -1,8 +1,8 @@
 So far, you've learned how to install and configure your visual studio, enabling the developer mode. In this module, you'll have a basic understanding of the components that make **StereoKit Ink Application**. StereoKit Ink is a demo application perfect for understanding the core components provided by StereoKit.
 
-This StereoKit demo project aims to introduce people to the basics of how to draw and interact with the **Mixed Reality** content. You'll learn about a core application loop, radial hand menus, easy window menus with automatic layout, object-based menus with more explicit layouts, and file pickers. Through the **StereoKit Ink** application, you'll also see how easy it is to draw models, lines, and interact directly with your fingers!
+This StereoKit demo project aims to introduce people to the basics of how to draw and interact with the **Mixed Reality** content. You'll learn about a core application loop, radial hand menus, easy window menus with automatic layout, object-based menus with more explicit layouts, and file pickers. Through the **StereoKit Ink** application, you'll also see how easy it is to draw models, lines, and interact directly with your fingers.
 
-:::image type="content" source="../media/desktop-stereokit-ink-application.png" alt-text="Screenshot of the stereo kit application on desktop" lightbox="../media/desktop-stereokit-ink-application.png":::
+    :::image type="content" source="../media/desktop-stereokit-ink-application.png" alt-text="Screenshot of the stereo kit application on desktop" lightbox="../media/desktop-stereokit-ink-application.png":::
 
 ## Window menus
 
@@ -16,7 +16,7 @@ There are two window menus used in the **StereoKit Ink** application: the **Ink 
 
 * **Ink Functional Window** - The **Ink Functional Window** has some functional options like *Undo*, *Redo*, *Save*, *Load*, *Clear*, and *Quit*. UI buttons allow you to take **actions** and make **choices**. If you want to perform specific actions after any interaction with the objects on the scene, you can use UI buttons.
 
-## Accessing hands
+## Accessing hand interaction
 
 Fully articulated hands are always available to work with as StereoKit uses a hands-first approach. Even when the hand sensors aren't available, the existing devices simulate the hand data.
 

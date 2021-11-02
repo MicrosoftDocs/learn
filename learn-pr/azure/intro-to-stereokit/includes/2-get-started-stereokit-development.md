@@ -4,26 +4,26 @@ Now that we have seen some of the key features in StereoKit let's understand how
 
 Visual Studio 2019 Community version is used in the StereoKit application. Here we focus on two workloads such as:
 
-* NET Desktop development
+* .NET Desktop development
 * Universal Windows Platform development (for HoloLens)
 
 ### Install Visual Studio 2019
 
 1. Download the free edition of **[Visual Studio Community](https://developer.microsoft.com/windows/downloads)**.
 
-    :::image type="content" source="../media/visual-studio-community.png" alt-text="The screenshot shows how to begin your download, by clicking the “Free download” button from Visual Studio Community." lightbox="../media/visual-studio-community.png":::
+        :::image type="content" source="../media/visual-studio-community.png" alt-text="The screenshot shows how to begin your download, by clicking the “Free download” button from Visual Studio Community." lightbox="../media/visual-studio-community.png":::
 
 2. Save the Visual Studio installer to your device path. Once the download is complete, you can start the installation process by running the Visual Studio installer.
 
-    :::image type="content" source="../media/run-visual-studio-installer.png" alt-text="Screenshot shows how to run the Visual Studio installer to your PC." lightbox="../media/run-visual-studio-installer.png":::
+        :::image type="content" source="../media/run-visual-studio-installer.png" alt-text="Screenshot shows how to run the Visual Studio installer to your PC." lightbox="../media/run-visual-studio-installer.png":::
 
 3. Once your Visual Studio starts to install. You'll see a few seconds of initialization followed by a feature selection option. First, select the **.NET Desktop development** and **Universal Windows Platform development (for HoloLens)** checkbox in Visual Studio 2019's features list. Then, after making the required selections, click the **Modify** button.
 
-    :::image type="content" source="../media/select-workloads.png" alt-text="Screenshot of how to select .NET Desktop development and Universal Windows Platform development (for HoloLens) in Visual Studio 2019." lightbox="../media/select-workloads.png":::
+        :::image type="content" source="../media/select-workloads.png" alt-text="Screenshot of how to select .NET Desktop development and Universal Windows Platform development (for HoloLens) in Visual Studio 2019." lightbox="../media/select-workloads.png":::
 
 4. After you click **Modify**, Visual Studio proceeds to download and install the features you've specified. Later, You'll be asked to **Restart** your computer when the installation process is complete. Next, launch your Visual Studio to verify the installation was successful.
 
-    :::image type="content" source="../media/test-visual-studio.png" alt-text="Screenshot of testing the visual studio launcher." lightbox="../media/test-visual-studio.png":::
+        :::image type="content" source="../media/test-visual-studio.png" alt-text="Screenshot of testing the visual studio launcher." lightbox="../media/test-visual-studio.png":::
 
 ## StereoKit's Visual Studio template
 
@@ -34,7 +34,7 @@ There are two templates provided:
 1. **Universal Windows Platform** for deploying on HoloLens 2 platform.
 2. **.NET Core** for desktop Windows or Linux environment.
 
-    :::image type="content" source="../media/stereokit-templates-visual-studio.png" alt-text="Screenshot of downloaded stereoKit templates in Visual Studio." lightbox="../media/stereokit-templates-visual-studio.png":::
+        :::image type="content" source="../media/stereokit-templates-visual-studio.png" alt-text="Screenshot of downloaded stereoKit templates in Visual Studio." lightbox="../media/stereokit-templates-visual-studio.png":::
 
 > [!Note]
 >Iteration is slower with Universal Windows Platform because it builds apps, so use it only if HoloLens is essential to you.
@@ -44,15 +44,15 @@ There are two templates provided:
 
 1. Download the StereoKit templates from [StereoKit Templates - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=NickKlingensmith.StereoKitTemplates).
 
-    :::image type="content" source="../media/download-stereokit-templates.png" alt-text="Screenshot of StereoKit Templates - Visual Studio Marketplace.” " lightbox="../media/download-stereokit-templates.png":::
+        :::image type="content" source="../media/download-stereokit-templates.png" alt-text="Screenshot of StereoKit Templates - Visual Studio Marketplace.” " lightbox="../media/download-stereokit-templates.png":::
 
 2. Open the downloaded file & click the **Install** button.
 
-    :::image type="content" source="../media/install-stereokit-templates.png" alt-text="Screenshot of VSIX installer dialogue box.” " lightbox="../media/install-stereokit-templates.png":::
+        :::image type="content" source="../media/install-stereokit-templates.png" alt-text="Screenshot of VSIX installer dialogue box.” " lightbox="../media/install-stereokit-templates.png":::
 
 3. Click **close** in the pop-up once the installation is complete.
 
-    :::image type="content" source="../media/close-stereokit-templates-installation.png" alt-text="Screenshot of VSIX installer close button.” " lightbox="../media/close-stereokit-templates-installation.png":::
+        :::image type="content" source="../media/close-stereokit-templates-installation.png" alt-text="Screenshot of VSIX installer close button.” " lightbox="../media/close-stereokit-templates-installation.png":::
 
 ## Enable Developer Mode
 
@@ -84,12 +84,12 @@ If you're using a Windows Mixed Reality headset with your PC then, you have to e
 
 2. Select **Update and Security**.
 
-    :::image type="content" source="../media/update-security.png" alt-text="Screenshot of Select “Update and Security” menu item." lightbox="../media/update-security.png":::
+        :::image type="content" source="../media/update-security.png" alt-text="Screenshot of Select “Update and Security” menu item." lightbox="../media/update-security.png":::
 
 3. Next, select **For developers**.
 
-    :::image type="content" source="../media/for-developers-option.png" alt-text="Screenshot of Select “For developers” option." lightbox="../media/for-developers-option.png":::
+        :::image type="content" source="../media/for-developers-option.png" alt-text="Screenshot of Select “For developers” option." lightbox="../media/for-developers-option.png":::
 
 4. Enable **Developer Mode**, read the disclaimer for the selected setting, and then accept the change by selecting **Yes**.
 
-    :::image type="content" source="../media/enable-developer-mode.png" alt-text="Screenshot of On the toggle button to enable “Developer Mode.” " lightbox="../media/enable-developer-mode.png":::
+        :::image type="content" source="../media/enable-developer-mode.png" alt-text="Screenshot of On the toggle button to enable “Developer Mode.” " lightbox="../media/enable-developer-mode.png":::
