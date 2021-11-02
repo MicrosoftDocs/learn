@@ -1,5 +1,7 @@
 The best way to learn about image classification with the Custom Vision service is to explore it for yourself.
 
+[!INCLUDE [](../../includes/ai-fundamentals-lab.md)]
+
 > [!NOTE]
 >A limited number of concurrent sessions are available - if the hosted environment is unavailable, try again later.
 >

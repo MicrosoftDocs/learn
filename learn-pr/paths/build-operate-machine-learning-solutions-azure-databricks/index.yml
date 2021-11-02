@@ -3,7 +3,7 @@ uid: learn.wwl.build-operate-machine-learning-solutions-azure-databricks
 metadata:
   title: Build and operate machine learning solutions with Azure Databricks
   description: Build and operate machine learning solutions with Azure Databricks
-  ms.date: 09/17/2021
+  ms.date: 10/15/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -31,5 +31,7 @@ modules:
 - learn.wwl.manage-machine-learning-models-azure-databricks
 - learn.wwl.track-azure-databricks-experiments-azure-machine-learning
 - learn.wwl.deploy-azure-databricks-models-azure-machine-learning
+- learn.wwl.tune-hyperparameters-azure-databricks
+- learn.wwl.distributed-deep-learning-horovod-azure-databricks
 trophy:
   uid: learn.wwl.build-operate-machine-learning-solutions-azure-databricks.trophy

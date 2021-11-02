@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.test-bicep-code-using-github-actions.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 10/19/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  questions:
+  - content: |
+      What could you do to minimize the chance of this error happening again?
+    choices:
+    - content: Add a required reviewer protection rule to an environment that you use in the workflow.
+      isCorrect: false
+      explanation: Incorrect. A required reviewer protection rule enables you to manually verify the status of your environment or workflow, but it doesn't help to reduce the chance of an invalid template being submitted to Azure.
+    - content: Run preflight validation within your workflow.
+      isCorrect: true
+      explanation: Correct. The preflight validation process performs validation of your template. It reports errors that prevent the template deployment from being submitted to Azure.
+    - content: Add a rollback job to your workflow.
+      isCorrect: false
+      explanation: Incorrect. You can add a rollback job to reverse the effects of a job that's failed, but it doesn't help to validate the Bicep file you submit.
+  - content: Which of these is an example of negative testing?
+    choices:
+    - content: Manually approving a workflow run.
+      isCorrect: false
+      explanation: Incorrect. However, you might choose to manually run tests and then approve the workflow run.
+    - content: Rolling back your deployment if something fails.
+      isCorrect: false
+      explanation: Incorrect. However, you might choose to roll back a deployment if your negative tests fail.
+    - content: Verifying that a website is only accessible by using HTTPS, and not by HTTP.
+      isCorrect: true
+      explanation: Correct. Negative tests verify that your resource doesn't exhibit unwanted behavior, like responding on insecure protocols.
+  - content: Which of these statements is true?
+    choices:
+    - content: The Bicep linter needs to be installed separately to Bicep.
+      isCorrect: false
+      explanation: Incorrect. The Bicep linter is part of the Bicep tooling, and it runs automatically when you build or deploy a Bicep file.
+    - content: A template with no linting warnings or errors is guaranteed to deploy successfully.
+      isCorrect: false
+      explanation: Incorrect. The linter runs some basic code style checks. Your template might lint successfully but not deploy.
+    - content: Linting ensures that your Bicep file meets a minimum code style quality level.
+      isCorrect: true
+      explanation: Correct. The linter doesn't verify that your file will deploy successfully, but it checks that your Bicep file follows some basic code style rules.

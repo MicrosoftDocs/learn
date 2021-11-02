@@ -131,6 +131,28 @@ You call events from an <xref:Microsoft.AspNetCore.SignalR.IClientProxy> instanc
 [user]: xref:Microsoft.AspNetCore.SignalR.IHubClients%601.User%2A
 [users]: xref:Microsoft.AspNetCore.SignalR.IHubClients%601.Users%2A
 
+##### Example scopes
+
+Consider the following figures which help to visualize the hub sending messages to targeted clients. See the images below to expand them for improved readability.
+
+###### Broadcast to all
+
+:::image type="content" source="../media/signalr-all.png" lightbox="../media/signalr-all-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.All syntax.":::
+
+All connected clients will receive this message, regardless of the group they may or may not belong to.
+
+###### Isolated user
+
+:::image type="content" source="../media/signalr-user.png" lightbox="../media/signalr-user-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.User syntax.":::
+
+A single user will receive this message, regardless of how many devices they're currently using.
+
+###### Isolated group
+
+:::image type="content" source="../media/signalr-group.png" lightbox="../media/signalr-group-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.Group syntax.":::
+
+All clients that belong to the given group name will receive this message, but no clients outside this group.
+
 ## Clients and the `HubConnection` class
 
 The `HubConnection` class is a SignalR client concept, which represents the client's connection to the [server `Hub`](#servers-and-the-hub-class). It's defined within the `Microsoft.AspNetCore.SignalR.Client` namespace, and is part of the [Microsoft.AspNetCore.SignalR.Client](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Client) NuGet package.

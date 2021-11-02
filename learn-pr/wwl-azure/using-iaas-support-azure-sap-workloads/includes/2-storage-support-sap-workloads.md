@@ -74,4 +74,4 @@ Azure also offers Azure Files, which deliver managed SMB file sharing. However, 
 ## SAP HANA on Azure (Large Instance) storage
 The storage layout for SAP HANA on Azure (Large Instances) is configured according to SAP recommended guidelines. 
 
-The guidelines are documented in the SAP HANA storage requirements white paper available at [https://blogs.saphana.com/wp-content/uploads/2015/02/Storage-Whitepaper-2-54.pdf](https://blogs.saphana.com/wp-content/uploads/2015/02/Storage-Whitepaper-2-54.pdf) 
+The guidelines are documented in the SAP HANA storage requirements white paper available at [https://ashwinitpro.blogspot.com/2021/08/sap-hana-on-azure-large-instances.html](https://ashwinitpro.blogspot.com/2021/08/sap-hana-on-azure-large-instances.html) 
