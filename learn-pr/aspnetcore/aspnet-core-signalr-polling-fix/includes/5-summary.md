@@ -7,3 +7,4 @@ In this module, you learned about refactoring out client-side polling and replac
 - [Send messages from outside hub](/aspnet/core/signalr/hubcontext)
 - [Manage users and groups in SignalR](/aspnet/core/signalr/groups)
 - [ASP.NET Core SignalR clients](/aspnet/core/signalr/client-features)
+- [Use SignalR instead of client-side polling pull request](https://github.com/dotnet-presentations/blazor-workshop/pull/322)
