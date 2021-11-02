@@ -57,7 +57,7 @@ static Painting    activePainting = new Painting();
 activePainting.Step(Handed.Right, paletteMenu.PaintColor, paletteMenu.PaintSize);
 ```
 
-### 1. Handle
+### 1. Use draw anchor
 
 By making the whole painting as a child of the handle, we can move it around while working with it! Both handles and windows push a transform onto the hierarchy stack, making all subsequent locations relative to it.
 
@@ -85,7 +85,7 @@ UI.HandleEnd();
 
 **UpdateInput()** : this method takes the fingertip of the hand, translates it to local space, smooths it out to reduce any jagged noise, and converts the fingertip's coordinates into hierarchy local coordinates.
 
-### 2. Hand interaction
+### 2. Hand interaction in StereoKit Ink
 
 The hand's position data is always provided in world space. However, since we'll be inside of an Affordance that uses the Hierarchy stack, we need to convert the fingertip's coordinates into Hierarchy local coordinates before we can deal with it.
 

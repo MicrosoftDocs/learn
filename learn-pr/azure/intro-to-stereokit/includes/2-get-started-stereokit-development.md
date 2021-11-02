@@ -1,11 +1,13 @@
 Now that we have seen some of the key features in StereoKit let's understand how to initiate working in it. In this chapter, you'll learn how to install StereoKit with its template and enable Developer Mode on your device, PC, and HoloLens 2.
 
-## Install Visual Studio 2019 for StereoKit
+## Visual Studio 2019 for StereoKit
 
 Visual Studio 2019 Community version is used in the StereoKit application. Here we focus on two workloads such as:
 
 * NET Desktop development
 * Universal Windows Platform development (for HoloLens)
+
+### Install Visual Studio 2019
 
 1. Download the free edition of **[Visual Studio Community](https://developer.microsoft.com/windows/downloads)**.
 

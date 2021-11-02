@@ -107,9 +107,9 @@ void SwatchColor(string id, float hue, float saturation, float value)
 
 * **Bounds** - Bounds is a type of axis-aligned bounding box that can store item sizes, calculate confinement, intersections, and more.
 
-* **U. cm** - Converts centimeters to meters.
+* **U.cm** - Converts centimeters to meters.
 
-* **Matrix. TR** - In StereoKit, a matrix is a 4x4 grid. Numbers in the matrix represent a transformation for every position or vector. Here Matrix. TR is used for the rotation of the swatch.
+* **Matrix.TR** - In StereoKit, a matrix is a 4x4 grid. Numbers in the matrix represent a transformation for every position or vector. Here Matrix. TR is used for the rotation of the swatch.
 
 * **BtnState** - A bit-flag represents the current state of a button input.
 

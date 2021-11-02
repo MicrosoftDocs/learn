@@ -4,7 +4,7 @@ StereoKit is a code-first library aimed initially at engineers and others who wo
 
 Suppose you want to build an application without using any game engines. Instead, you can use StereoKit to develop your Mixed Reality applications.
 
-You can develop custom applications using StereoKit as it focuses on non-game Mixed Reality use cases. You can also create high-quality Mixed Reality experiences using StereoKit. Furthermore, you can perform Mixed Reality operations natively using basic core APIs. Also, StereoKit helps You to overcome the complex game engine structures.
+You can develop custom applications using StereoKit as it focuses on non-game Mixed Reality use cases. You can also create high-quality Mixed Reality experiences using StereoKit. Furthermore, you can perform Mixed Reality operations natively using basic core APIs. Also, StereoKit helps you to overcome the complex game engine structures.
 
 ## StereoKit key features
 
@@ -22,4 +22,4 @@ You can develop custom applications using StereoKit as it focuses on non-game Mi
 
 * Physics enables the 3D object to function as a real-world object, along with all physical constraints.
 
-* By default Stereokit, uses a flexible shader or material system with a built-in PBR.
+* By default StereoKit, uses a flexible shader or material system with a built-in PBR.

@@ -14,7 +14,7 @@ content: Choose the best response for each question. Then select Check your answ
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Choose the platform on which the StereoKit app locations are built?"
+    - content: "Choose the correct platform for which StereoKit app locations are built."
       choices:
         - content: "Windows MR"
           isCorrect: false
@@ -25,7 +25,7 @@ quiz:
         - content: "All of the above"
           isCorrect: true
           explanation: StereoKit supports all OpenXR platforms.
-    - content: "Which of the following StereoKit features is incorrect?"
+    - content: "Which of the following is not a feature of StereoKit?"
       choices:
         - content: "Assets are loaded at compilation time."
           isCorrect: true
@@ -36,7 +36,7 @@ quiz:
         - content: "StereoKit allows computation to proceed faster."
           isCorrect: false
           explanation: Because StereoKit enables computation to be performed more quickly.
-    - content: "Select the correct format to store the 3D model."
+    - content: "Select the correct format to store a given StereoKit 3D model."
       choices:
         - content: .tga
           isCorrect: false
@@ -49,7 +49,7 @@ quiz:
           explanation: As it supports the Model format.
     - content: "Which workload is not required to set up a StereoKit Ink application?"
       choices:
-        - content: .NET Desktop development.
+        - content: .NET Desktop development
           isCorrect: false
           explanation: .NET is a software development framework and ecosystem designed and supported by Microsoft to allow for easy desktop and web application engineering.
         - content: Universal Window Platform Development
