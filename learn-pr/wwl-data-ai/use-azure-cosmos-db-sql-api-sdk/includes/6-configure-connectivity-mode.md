@@ -16,7 +16,11 @@ When connecting to an Azure Cosmos DB account using the **CosmosClient** class, 
 
 To configure the client, you will need to create an instance of the **CosmosClientOptions** class and pass in that instance as the last parameter to the **CosmosClient** constructor. Here are two examples using the constructors discussed earlier in this module.
 
+You can either use the constructor that takes in an endpoint and key:
+
 :::code language="csharp" source="../media/6-script.cs" range="26-28" highlight="3":::
+
+Or, use the constructor that takes in a connection string:
 
 :::code language="csharp" source="../media/6-script.cs" range="26-27,30" highlight="3":::
 
@@ -51,7 +55,7 @@ The **ConsistencyLevel** enumeration has multiple potential values including:
 - Session
 - Strong
 
-> &#128161; The **ConsistencyLevel** setting is only used to only **weaken* the consistency level, not strengthen it.
+> &#128161; The **ConsistencyLevel** setting is only used to only *weaken* the consistency level for reads. It cannot be strengthened or applied to writes.
 
 ### Setting the preferred application region\[s\]
 
