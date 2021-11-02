@@ -91,7 +91,7 @@ Application objects describe the application to Azure AD and can be considered t
 
 Service principals are what govern an application connecting to Azure AD and can be considered the instance of the application in your directory. For any given application, it can have at most one application object (which is registered in a "home" directory) and one or more service principal objects representing instances of the application in every directory in which it acts.
 
-:::image type="content" source="../media/application-service-principal.png" alt-text="The diagram shows how application objects and service principals are used in Azure subscriptions.":::
+:::image type="content" source="../media/application-service-principals.png" alt-text="The diagram shows how application objects and service principals are used in Azure subscriptions.":::
 - Useful when Managed Identities cannot be used
 - Often used to authenticate external applications to Azure resources
 
