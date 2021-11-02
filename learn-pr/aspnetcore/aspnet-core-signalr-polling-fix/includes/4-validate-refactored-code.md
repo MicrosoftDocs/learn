@@ -25,7 +25,7 @@ This application is for learning purposes, and its authentication allows users t
 
 ## Place a pizza order
 
-:::image type="content" source="../media/add-to-order.png" lightbox="../media/add-to-order.png" alt-text="Blazing Pizza: A pizza(s) to order.":::
+:::image type="content" source="../media/add-to-order.png" lightbox="../media/add-to-order.png" alt-text="Blazing Pizza: Add pizza(s) to order.":::
 
 After adding pizza(s) to the order, place the order by selecting the **Order >** button.
 
