@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore.build-web-api-minimal.exercise-minimal-api
+title: Exercise - Minimal API
+metadata:
+  title: Exercise - Minimal API
+  description: Build an API by using the minimal API template.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 10/26/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-exercise-minimal-api.md)]

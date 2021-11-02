@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore.build-web-api-minimal.exercise-advanced
+title: Exercise - Add routes
+metadata:
+  title: Exercise - Add routes
+  description: Build out API to support different HTTP verbs.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 10/26/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-exercise-advanced.md)]

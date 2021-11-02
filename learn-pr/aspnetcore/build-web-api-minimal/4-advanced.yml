@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore.build-web-api-minimal.advanced
+title: Add routes
+metadata:
+  title: Add routes
+  description: Add more route handlers to support different HTTP verbs per the RESTful convention.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 10/26/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-advanced.md)]

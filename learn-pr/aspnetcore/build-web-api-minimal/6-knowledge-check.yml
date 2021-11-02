@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore.build-web-api-minimal.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 10/26/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What's not a difference between controller based APIs and minimal APIs?
+      choices:
+        - content: All startup code happens in *Program.cs*
+          isCorrect: true
+          explanation: Correct. That happens in both types of API.
+        - content: Requests are primarily mapped to controllers and decorators, for controller based APIs.
+          isCorrect: false
+          explanation: Incorrect. That is a difference between the two approaches.
+        - content: Model binding uses decorators to get body data.
+          isCorrect: false
+          explanation: Incorrect. That's is a difference between the two approaches, no need for decorators for getting body data for minimal API.
+    - content: What is the correct way to create a minimal API?
+      choices:
+        - content: dotnet new webapi
+          isCorrect: false
+          explanation: Incorrect. That's for controller based API.
+        - content: dotnet new web
+          isCorrect: true
+          explanation: Correct. That's how you do it.
+        - content: dotnet new minimalapi
+          explanation: Incorrect. No template with that name.
+          isCorrect: false
+    - content: What's the correct way to setup a roue in minimal API?
+      choices:
+        - content: Type `ActionResult Get() {}`
+          isCorrect: false
+          explanation: Incorrect. That's how you could type in a controller based API if this method is in a controller class.
+        - content: Type `app.Get("/pizza", () => /**/)`
+          isCorrect: false
+          explanation: Incorrect. That's not how you do it. It should be a method preceded with Map plus the name of the verb, for example `MapGet()`.
+        - content: Type `app.MapGet("/pizza", () => /**/)`
+          isCorrect: true
+          explanation: Correct.
