@@ -24,6 +24,7 @@ You have three options to scope a reservation, depending on your needs:
   - For individual subscriptions with pay-as-you-go rates, the billing scope includes all eligible subscriptions created by the account administrator.
 - Single subscription scope - Applies the reservation discount to the matching resources in the selected subscription.
 - Single resource group scope - Applies the reservation discount to the matching resources in the selected resource group only.
+- Management group - Applies the reservation discount to the matching resource in the list of subscriptions that are a part of both the management group and billing scope. To buy a reservation for a management group, you must have at least read permission on the management group and be a reservation owner or reservation purchaser on the billing subscription.
 
 ## Purchase a reservation
 

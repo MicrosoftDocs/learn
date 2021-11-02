@@ -70,3 +70,9 @@ The following video demonstrates how to manage objects in AD DS by using Active 
 7. Review the Windows PowerShell history and examine the `New-ADComputer` command.
 
  >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MjvF]
+
+---
+
+
+
+---
