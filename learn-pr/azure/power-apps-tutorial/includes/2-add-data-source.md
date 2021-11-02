@@ -16,10 +16,8 @@ To create an app that reads and writes from a data source, you must use either o
 
 These controls are used when Power Apps creates an app from data. Behind the scenes, the application stores and manipulates data from the data source using an internal table.
 
-## Popular connectors
+## SharePoint
 
-* **SharePoint** - Connect to a SharePoint site to instantly produce an app from a custom list, or create a connection before adding data to an existing app or creating a new one.
-* **Office 365 outlook** - User can view, send, delete, and reply to email messages and perform other actions when you connect to Office 365 Outlook.
-* **SQL server** - Connect to SQL Server, whether in Azure or on-premises, to manage your data using operations including creating, reading, updating, and deleting.
-* **Oracle** - After you make a connection and develop an app in Power Apps, you may list tables and create, read, update, and delete table rows in an Oracle database. Filtering, sorting, and other functions can be fully delegated using the Oracle Database connection, but triggers and stored procedures are not supported.
-* **Office 365 users** - Using your Office 365 account, you can access user profiles inside your organization. For example, you can receive your profile, a user's profile, a user's manager, or direct reports, among other things.
+There are many features on SharePoint that enables users to create specific projects and establish standard business processes for information sharing, document publishing, and recording data. These features help business users be more productive, but SharePoint outperforms previous document collaboration systems in terms of displaying information about what information/documents are stored and why.
+
+It's straightforward to demand **metadata**, or information about data (such modified time, created by, etc., but also custom **tags** on documents or objects) in SharePoint. Workers can better understand why a document exists and why it's important without having to read it. SharePoint also allows users to create custom databases in an easy-to-use structure, allowing them to store thousands of bits of data that may be incorporated into the workflows or other business processes discussed above.

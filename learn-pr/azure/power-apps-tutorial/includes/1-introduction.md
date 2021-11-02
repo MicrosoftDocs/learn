@@ -2,11 +2,9 @@ Power Apps are organizational-specific applications or tools that allow you to c
 
 Power Apps provides an extensible platform for users with minimal coding experience to develop applications with rich business logic. In addition, creators find interacting with data and metadata easy while using Power Apps.
 
-Through Power Apps, you can create canvas applications and model-driven applications.
+Through Power Apps, you can create canvas applications.
 
 * **Canvas apps**: Microsoft Power Apps allows you to build business apps from a canvas with minimal coding. Creating a canvas app in Power Apps is as easy as dragging and dropping components onto the canvas, just as designing a PowerPoint presentation. You can also integrate business logic through various data sources.
-
-* **Model-driven apps**: In scenarios where you don't need a custom application, you can automatically generate model-driven apps from the data and processes stored in [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). You can model forms, views, and other components. The default UI adjusts to phones, laptops, and other devices automatically. Unlike canvas app development, where the user has complete control over the app layout, in model-driven apps, the layout is determined for you and primarily designated by the components you add to the app.
 
 Technology has paved the way and made our lives easier, faster, and better in this modern era of living. Power Apps enables people who seek to enrich their business logic and workflow capabilities through automation - transforming business operations into seamless digital experiences. One such budding area is Sales, wherein consumer expectations for on-demand mobile purchasing have forced businesses to adapt towards less in-person experiences. For those who wish to build an application that enables the users to virtually view various products in the comfort of their home before actually buying them, Power Apps can be used by sellers to provide on-demand visualizations - effectively increasing sales. By doing so, the users can understand the risks and constraints of the products before committing to them.
 
