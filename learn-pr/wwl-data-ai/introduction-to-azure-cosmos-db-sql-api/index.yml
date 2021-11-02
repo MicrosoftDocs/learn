@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-azure-cosmos-db-sql-api
 metadata:
   title: Introduction to Azure Cosmos DB SQL API
   description: "Learn about the Azure Cosmos DB SQL API and determine if it is a good fit for your application."
-  ms.date: 10/13/2021
+  ms.date: 11/02/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
