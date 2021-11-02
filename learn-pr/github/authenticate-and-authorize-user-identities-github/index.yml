@@ -20,14 +20,14 @@ abstract: |
   - Describe how users access private information in a GitHub organization
   - Evaluate the benefits of enabling Team Synchronization to manage team membership
 levels:
-  - intermediate
+- intermediate
 roles:
-  - devops-engineer
-  - administrator
-  - developer
-  - solution-architect
+- devops-engineer
+- administrator
+- developer
+- solution-architect
 products:
-  - github
+- github
 prerequisites: |
   - Administrative access to your GitHub organization or GitHub Enterprise
 units:
@@ -40,4 +40,4 @@ units:
 - learn.authenticate-and-authorize-user-identities-github.7-summary
 iconUrl: /learn/achievements/github/authenticate-and-authorize-user-identities-github.svg
 badge:
-  uid: learn.authenticate-and-authorize-user-identities-github.badge
+  uid: learn.github.authenticate-and-authorize-user-identities-github.badge
