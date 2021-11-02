@@ -23,7 +23,7 @@ Complete the following steps on an x86-based host machine that has DeepStream 6.
     
     The contents of the unmodified `ds_test4_container_builder_jetson.yaml` file are shown below:
     
-    ```Bash
+    ```YAML
         %YAML 1.2
         ################################################################################
         # Copyright (c) 2021, NVIDIA CORPORATION. All rights reserved.
