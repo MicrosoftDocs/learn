@@ -13,5 +13,4 @@ By using the `targetScope` keyword and `scope` property on modules, you can easi
   - [Subscription](/azure/azure-resource-manager/bicep/deploy-to-subscription)
   - [Resource group](/azure/azure-resource-manager/bicep/deploy-to-resource-group)
 - [Create Azure subscriptions programmatically](/azure/cost-management-billing/manage/programmatically-create-subscription)
-- [Language specification for resource scopes](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/resources-and-scopes.md)
 - [Enterprise-scale landing zones](/azure/cloud-adoption-framework/ready/enterprise-scale/implementation)
