@@ -16,6 +16,6 @@ By the end of this module, you will be able to identify core game experiences th
 
 After completing this module, you'll be able to:
 
-1. Describe the process of how games are played through the lens of accessibility.
-2. Identify common elements and game mechanics that may introduce accessibility barriers for players with visual, hearing, cognitive, or mobility disabilities.
-3. Identify appropriate methods to address inaccessible game elements for each sub-category of vision, hearing, cognitive, and mobility disabilities discussed in this module.
+1. Assess gaming experiences through the lens of accessibility.
+2. Identify common visual, hearing, cognitive, and input-based elements within gaming experiences that can impact accessibility.
+3. Describe the importance of considering diverse player experiences when exploring accessible features and solutions.

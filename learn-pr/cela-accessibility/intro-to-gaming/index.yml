@@ -15,7 +15,7 @@ summary: This module introduces foundational gaming accessibility concepts for g
 abstract: |
   After completing this module, you'll be able to:
   - Assess gaming experiences through the lens of accessibility
-  - Identify core elements within gaming title, platform, and hardware experiences that commonly impact game accessibility.
+  - Identify common visual, hearing, cognitive, and input-based elements within gaming experiences that can impact accessibility.
   - Describe the importance of considering diverse player experiences when exploring accessible features and solutions. 
 prerequisites: |
  - You should be familiar with basic video game play, navigating game platforms (Xbox, PlayStation, Nintendo Switch, Windows), and using standard gaming hardware controllers and inputs.
