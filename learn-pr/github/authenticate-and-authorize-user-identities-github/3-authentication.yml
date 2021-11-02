@@ -1,0 +1,13 @@
+### YamlMime:Module
+uid: learn.github.authenticate-and-authorize-user-identities-github.3-authentication
+metadata:
+  title: Authenticate and authorize user identities on GitHub 
+  description: Learn how to manage the authentication and authorization of user identities on GitHub.
+  ms.date: 11/01/2021
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-authentication.md)]
