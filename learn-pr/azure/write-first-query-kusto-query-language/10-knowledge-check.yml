@@ -47,14 +47,3 @@ quiz:
     - content: "project"
       isCorrect: true
       explanation: "True. The project operator can be used to include, rename, or insert new computed columns."
-  - content: "Which of the following queries best answers the following question: Which types of storms caused the most property damage in the state of Texas?"
-    choices:
-    - content: "StormEvents /| where DamageProperty > 0 /| where State == "TEXAS" /| project State, EventType, DamageProperty /| sort by DamageProperty" 
-      isCorrect: true
-      explanation: "True."
-    - content: "StormEvents /| where DamageCrops > 0 /| where State == "TEXAS" /| project State, EventType, DamageCrops /| sort by DamageCrops"
-      isCorrect: false
-      explanation: "False. This query sorts on DamageCrops, not DamageProperty"
-    - content: "StormEvents /| where DamageProperty > 0 /| where State == "FLORIDA" /| where EventType contains "thunder" /| project StartTime, EventType, DamageProperty" 
-      isCorrect: false
-      explanation: "False. This query looks at thunder-containing events in the state of Florida."
