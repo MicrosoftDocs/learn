@@ -23,7 +23,7 @@ quiz:
           explanation: "Two-Factor authentication is an additional level of security available to GitHub Enterprise accounts."
         - content: "Time-based One-time Password (TOTP)"
           isCorrect: false
-          explanation: "GitHub recommends using a cloud based TOTP app to configure 2FA."
+          explanation: "GitHub recommends using a cloud-based TOTP app to configure 2FA."
         - content: "Short Message Service (SMS)"
           isCorrect: false
           explanation: "If your users are not able to authenticate using a TOTP mobile app, they can authenticate using SMS messages."

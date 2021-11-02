@@ -1,4 +1,4 @@
-If your company is using Azure AD or Okta as your IdP for your enterprise in GitHub's cloud, you can use team synchronization to manage team membership within each organization through IdP groups. With team synchronization enabled, changes made in an IdP group are automatically reflected on GitHub. This reduces the need for manual updates and custom scripts. You can centrally manage users' identities, allowing authorization, review, and revocation of permissions. 
+If your company is using Azure AD or Okta as your IdP for your enterprise in GitHub's cloud, you can use team synchronization to manage team membership within each organization through IdP groups. With team synchronization enabled, changes made in an IdP group are automatically reflected on GitHub. This feature reduces the need for manual updates and custom scripts. You can centrally manage users' identities, allowing authorization, review, and revocation of permissions. 
 
 When you synchronize a GitHub team with an IdP group, changes to the IdP group are reflected on GitHub automatically, reducing the need for manual updates and custom scripts. You can use an IdP with team synchronization to manage administrative tasks such as onboarding new members, granting new permissions for movements within an organization, and removing member access to the organization.
 
@@ -16,7 +16,7 @@ Managing a team via your service provider allows you to save time and resources 
 
 ## Usage limits
 
-When using the team synchronization feature, be aware that that are specific usage limits. Exceeding these limits can lead to unexpected performance and may cause synchronization failures.
+When using the team synchronization feature, there are specific usage limits you need to know about. Exceeding these limits can lead to unexpected performance and may cause synchronization failures.
 
 - Maximum number of members in a GitHub team: 5,000
 - Maximum number of members in a GitHub organization: 10,000
@@ -33,7 +33,7 @@ You can enable and use team synchronization but only with the following supporte
 
 The steps to enable team synchronization depend on the IdP you want to use. There are prerequisites to enable team synchronization that apply to each IdP. To enable team synchronization with your IdP, you must obtain administrative access or work with your IdP administrator to configure the IdP integration and groups. After you enable team synchronization, team maintainers and organization owners can connect a team to an IdP group on GitHub or through the API.
 
-**Azure AD**: The GitHub System Admin for the GitHub organization will need to identify and work with the Azure AD Administrator to configure Team Synchronization. On the Azure AD side the service is called “automatic user account provisioning.” To enable team synchronization for Azure AD, the installation needs the following permissions.
+**Azure AD**: The GitHub System Admin for the GitHub organization will need to identify and work with the Azure AD Administrator to configure Team Synchronization. On the Azure AD side, the service is called “automatic user account provisioning.” To enable team synchronization for Azure AD, the installation needs the following permissions.
 
 - Read all users’ full profiles
 - Sign in and read user profile
@@ -47,6 +47,6 @@ The steps to enable team synchronization depend on the IdP you want to use. Ther
 
 ## Disable team synchronization
 
-When you disable team synchronization, any team members that were assigned to a GitHub team through the IdP group are removed from the team and may lose access to your organizations repositories. This is done through the organization settings by clicking on **Your organization**, and then selecting **Settings**. Next, click on **Organization security** and then choose **Disable team synchronization**.
+When you disable team synchronization, any team members that were assigned to a GitHub team through the IdP group are removed from the team and may lose access to your organizations repositories. Disabling this feature is done through the organization settings by clicking on **Your organization**, and then selecting **Settings**. Next, click on **Organization security** and then choose **Disable team synchronization**.
 
-:::image type="content" source="../media/disable-team-synchronization.png" alt-text="screenshot of the organziation setting to disable team synchronization." :::
+:::image type="content" source="../media/disable-team-synchronization.png" alt-text="screenshot of the organization setting to disable team synchronization." :::
