@@ -31,13 +31,13 @@ products:
 prerequisites: |
   - Administrative access to your GitHub organization or GitHub Enterprise
 units:
-- learn.authenticate-and-authorize-user-identities-github.1-introduction
-- learn.authenticate-and-authorize-user-identities-github.2-user-identity-access-management
-- learn.authenticate-and-authorize-user-identities-github.3-authentication
-- learn.authenticate-and-authorize-user-identities-github.4-authorization
-- learn.authenticate-and-authorize-user-identities-github.5-team-synchronization
-- learn.authenticate-and-authorize-user-identities-github.6-knowledge-check
-- learn.authenticate-and-authorize-user-identities-github.7-summary
+- learn.github.authenticate-and-authorize-user-identities-github.1-introduction
+- learn.github.authenticate-and-authorize-user-identities-github.2-user-identity-access-management
+- learn.github.authenticate-and-authorize-user-identities-github.3-authentication
+- learn.github.authenticate-and-authorize-user-identities-github.4-authorization
+- learn.github.authenticate-and-authorize-user-identities-github.5-team-synchronization
+- learn.github.authenticate-and-authorize-user-identities-github.6-knowledge-check
+- learn.github.authenticate-and-authorize-user-identities-github.7-summary
 iconUrl: /learn/achievements/github/authenticate-and-authorize-user-identities-github.svg
 badge:
   uid: learn.github.authenticate-and-authorize-user-identities-github.badge

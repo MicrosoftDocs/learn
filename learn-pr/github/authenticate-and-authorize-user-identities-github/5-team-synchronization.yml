@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.github.authenticate-and-authorize-user-identities-github.5-team-synchronization
 metadata:
-  title: Authenticate and authorize user identities on GitHub 
-  description: Learn how to manage the authentication and authorization of user identities on GitHub.
+  title: Team synchronization
+  description: Learn about the team synchronization feature within GitHub.
   ms.date: 11/01/2021
   author: a-a-ron
   ms.author: aastewar
