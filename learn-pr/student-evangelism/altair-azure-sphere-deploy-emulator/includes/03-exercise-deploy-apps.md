@@ -38,7 +38,7 @@ For this procedure, you'll need a microSD card that has a capacity of at least 1
         azsphere device sideload deploy --image-package AltairHL_sd_card_format_a.imagepackage
         ```
 
-     1. Press **Button A** on the Avnet Azure Sphere device. The status LED will turn green while formatting. The status LED will turn off when formatting is complete. 
+     1. Press **Button A** on the Avnet Azure Sphere device. The status LED will turn green during formatting. The status LED will turn off when formatting is complete. 
      
         If formatting fails, the status LED will turn red. Try another SD card.
 
@@ -49,7 +49,7 @@ For this procedure, you'll need a microSD card that has a capacity of at least 1
         azsphere device sideload deploy --image-package AltairHL_sd_card_format_b.imagepackage
         ```
 
-    1. Press **Button A** on the Avnet Azure Sphere device. The status LED will turn green while formatting. The status LED will turn off when formatting is complete. 
+    1. Press **Button A** on the Avnet Azure Sphere device. The status LED will turn green during formatting. The status LED will turn off when formatting is complete. 
     
        If formatting fails, the status LED will turn red. Try another SD card.
 
@@ -57,7 +57,7 @@ For this procedure, you'll need a microSD card that has a capacity of at least 1
 
 Skip this step if you have the Avnet Azure Sphere Starter Kit and the MikroE microSD Click.
 
-The virtual disk cache service improves the performance of the virtual disk server. To deploy it, use the following code to deploy the *AltairRT_disk_cache_service.imagepackage* package to Azure Sphere:
+The virtual disk cache service improves the performance of the virtual disk server. To deploy it, use the following command to deploy the *AltairRT_disk_cache_service.imagepackage* package to Azure Sphere:
 
 ```bash
 azsphere device sideload deploy --image-package AltairRT_disk_cache_service.imagepackage

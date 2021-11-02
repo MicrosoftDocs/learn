@@ -20,15 +20,15 @@ quiz:
     - content: "Three developer-accessible cores, two high-level cores, and one real-time core"
       isCorrect: false
       explanation: "That answer is only partially correct."
-    - content: "Two developer-accessible cores, one high-level core, and one real-time core."
+    - content: "Two developer-accessible cores, one high-level core, and one real-time core"
       isCorrect: false
       explanation: "That answer is only partially correct."
-    - content: "Three developer-accessible cores, one high-level core, and two real-time cores."
+    - content: "Three developer-accessible cores, one high-level core, and two real-time cores"
       isCorrect: true
       explanation: "That's the correct breakdown of cores for the Azure Sphere microcontroller."
   - content: "The Altair emulator configuration requires which of the following?"
     choices:
-    - content: "The ID scope of the Azure IoT Central application, the declaration of the Azure IoT Central and test.mosquitto.org network endpoints, and the Azure Sphere tenant ID."
+    - content: "You must declare the ID scope of the Azure IoT Central application, the declaration of the Azure IoT Central and test.mosquitto.org network endpoints, and the Azure Sphere tenant ID."
       isCorrect: true
       explanation: "Correct. The ID scope, network endpoints, and Azure Sphere tenant ID are all needed."
     - content: "Azure Sphere is secure by default, and you only need to declare the Azure IoT Central ID scope."

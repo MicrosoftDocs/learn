@@ -10,7 +10,7 @@ You'll need your Azure Sphere tenant ID for the next step. To get the ID:
    azsphere tenant show-selected
    ```
 
-   The output of this command will look similar to the following:
+   The output of this command should look similar to the following code:
 
     ```Output
     ------------------------------------ -------------------
@@ -44,7 +44,7 @@ You'll need your Azure Sphere tenant ID for the next step. To get the ID:
 
 1. If you want, format *app_manifest.json* by right-clicking it and selecting **Format Document** from the shortcut menu.
 
-1. Review your updated *app_manifest.json* file. It should look similar to the following:
+1. Review your updated *app_manifest.json* file. It should look similar to the following code:
 
     ```json
     {
