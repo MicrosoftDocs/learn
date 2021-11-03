@@ -8,8 +8,6 @@ If you want to create Azure subscriptions under your organization's Enterprise A
 
 If you need to transfer billing ownership of your Azure subscription if you're leaving your organization, or you want your subscription to be billed to another account. Transferring billing ownership to another account provides the administrators in the new account permission for billing tasks. They can change the payment method, view charges, and cancel the subscription.
 
-An Azure Active Directory (AD) tenant is created for you when you sign up for Azure. The tenant represents your account. You use the tenant to manage access to your subscriptions and resources.
-
 
 ## Manage API access to Azure subscriptions and resources
 
