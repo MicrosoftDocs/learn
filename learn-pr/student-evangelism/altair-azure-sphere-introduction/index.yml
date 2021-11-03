@@ -16,7 +16,6 @@ abstract:  |
   - Learn about the history of the Altair 8800, the computer that kick-started the personal computer revolution.
   - Learn about the three components of Azure Sphere and how they provide a platform for improved-security IoT.
   - Apply the Azure IoT services that are used to connect the Altair 8800 to the cloud.
-  - Write Basic, C, or Assembler applications and games that run on the Altair 8800 emulator.
 prerequisites: |
   - A computer that has an x86-64-based processor and that runs one of these operating systems:
     - Windows 10 Anniversary Update or later

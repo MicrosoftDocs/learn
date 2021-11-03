@@ -41,8 +41,6 @@ The Web Terminal is an HTML/CSS/JavaScript application built on the [MQTT](https
 
 The Altair Web Terminal is implemented as an [Azure static web app](/azure/static-web-apps?azure-portal=true).
 
-In the following exercise, you'll learn how to deploy the Altair Web Terminal Static Web App.
-
 ## Altair virtual disk cache
 
 Applications that run on CP/M will have read/write access to drive B. This access enables you to save files when the virtual disk server is running. The virtual disk server can run on your desktop or in a cloud-based Azure virtual machine.
