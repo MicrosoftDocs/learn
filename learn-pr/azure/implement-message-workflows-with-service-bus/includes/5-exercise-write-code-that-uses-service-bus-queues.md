@@ -49,19 +49,25 @@ Both of these values can be obtained from an Azure command that will return the 
     Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==
     ```
 
-1. Copy the connection string from Cloud Shell and save it. You'll need this connection string several times throughout this module, so you might want to paste it somewhere handy.
-
-## Write code that sends a message to the queue
-
-To complete the component that sends messages about sales:
-
-1. In the editor, open **privatemessagesender/Program.cs** and locate the following line of code:
+1. Copy the connection string from Cloud Shell. In the editor, open **privatemessagesender/Program.cs** and locate the following line of code.
 
     ```C#
     const string ServiceBusConnectionString = "";
     ```
 
-    Paste the connection string that you saved earlier between the quotation marks.
+1. Paste the connection string between the quotation marks. 
+
+1. Repeat the previous step for **privatemessagereceiver/Program.cs**, pasting in the same connection string value. 
+ 
+1. Save the changes to the files using the accelerator key (Ctrl+S on Windows and Linux, Cmd+S on macOS).
+
+1. You'll need this connection string several times throughout this module, so you might want to paste it somewhere handy.
+
+## Write code that sends a message to the queue
+
+To complete the component that sends messages about sales:
+
+1. Open **privatemessagesender/Program.cs** in the editor.
 
 1. Locate the `SendSalesMessageAsync()` method. (Hint: it should be at or near line 23, `static async Task SendSalesMessageAsync()`.)
 
