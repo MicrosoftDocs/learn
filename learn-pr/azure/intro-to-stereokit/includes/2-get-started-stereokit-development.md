@@ -31,8 +31,8 @@ StereoKit's visual studio template is the quickest method for you to start a Ste
 
 There are two templates provided:
 
-1. **Universal Windows Platform** for deploying on HoloLens 2 platform.
-2. **.NET Core** for desktop Windows or Linux environment.
+1. **Universal Windows Platform** - is for HoloLens 2, and it can also run on Windows desktop. However, UWP can be slower to compile, and it'll not receive updates from the .Net team.
+2. **.NET Core** - is used for desktop XR on Windows and Linux. It is simple to use, compiles quickly, and is the best option for most developers.
 
    :::image type="content" source="../media/stereokit-templates-visual-studio.png" alt-text="Screenshot of downloaded stereoKit templates in Visual Studio." lightbox="../media/stereokit-templates-visual-studio.png":::
 
@@ -93,3 +93,5 @@ If you're using a Windows Mixed Reality headset with your PC then, you have to e
 4. Enable **Developer Mode**, read the disclaimer for the selected setting, and then accept the change by selecting **Yes**.
 
    :::image type="content" source="../media/enable-developer-mode.png" alt-text="Screenshot of On the toggle button to enable “Developer Mode.” " lightbox="../media/enable-developer-mode.png":::
+
+By following this chapter, you have understood the prerequisites required for developing a Mixed Reality application using StereoKit. Next, you'll implement the StereoKit Ink application by following the procedures outlined in the further chapters.
