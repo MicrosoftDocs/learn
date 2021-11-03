@@ -24,10 +24,10 @@ products:
 - azure
 - azure-security-center
 modules:
-- learn.wwl.what-is-azure-Defender for Cloud
+- learn.wwl.what-is-azure-defender
 - learn.wwl.understand-azure-defender-cloud-workload-protection
-- learn.wwl.connect-azure-assets-to-azure-Defender for Cloud
-- learn.wwl.connect-non-azure-machines-to-azure-Defender for Cloud
+- learn.wwl.connect-azure-assets-to-azure-defender
+- learn.wwl.connect-non-azure-machines-to-azure-defender
 - learn.wwl.remediate-azure-defender-security-alerts
 trophy:
   uid: learn.wwl.sc-200-mitigate-threats-using-azure-defender.trophy

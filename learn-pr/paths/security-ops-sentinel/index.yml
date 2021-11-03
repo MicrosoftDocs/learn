@@ -29,12 +29,12 @@ products:
   - azure
   - azure-sentinel
 modules:
-- learn.intro-to-azure-Sentinel
-- learn.azure.azure-Sentinel-deploy-connect
-- learn.azure.analyze-data-in-Sentinel
-- learn.azure.incident-management-Sentinel
-- learn.azure.hunt-threats-Sentinel
-- learn.azure.threat-response-Sentinel-playbooks
+- learn.intro-to-azure-sentinel
+- learn.azure.azure-sentinel-deploy-connect
+- learn.azure.analyze-data-in-sentinel
+- learn.azure.incident-management-sentinel
+- learn.azure.hunt-threats-sentinel
+- learn.azure.threat-response-sentinel-playbooks
 - azure.query-data-Sentinel
 trophy:
   uid: learn.security-ops-sentinel.trophy

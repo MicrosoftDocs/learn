@@ -24,12 +24,12 @@ products:
 - azure-log-analytics
 - azure-sentinel
 modules:
-- learn.wwl.connect-data-to-azure-Sentinel-with-data-connectors
-- learn.wwl.connect-microsoft-services-to-azure-Sentinel
-- learn.wwl.connect-microsoft-defender-365-to-azure-Sentinel
-- learn.wwl.connect-windows-hosts-to-azure-Sentinel
-- learn.wwl.connect-common-event-format-cef-logs-to-azure-Sentinel
-- learn.wwl.connect-syslog-data-sources-to-azure-Sentinel
-- learn.wwl.connect-threat-indicators-to-azure-Sentinel
+- learn.wwl.connect-data-to-azure-sentinel-with-data-connectors
+- learn.wwl.connect-microsoft-services-to-azure-sentinel
+- learn.wwl.connect-microsoft-defender-365-to-azure-sentinel
+- learn.wwl.connect-windows-hosts-to-azure-sentinel
+- learn.wwl.connect-common-event-format-cef-logs-to-azure-sentinel
+- learn.wwl.connect-syslog-data-sources-to-azure-sentinel
+- learn.wwl.connect-threat-indicators-to-azure-sentinel
 trophy:
   uid: learn.wwl.sc-200-connect-logs-to-azure-sentinel.trophy

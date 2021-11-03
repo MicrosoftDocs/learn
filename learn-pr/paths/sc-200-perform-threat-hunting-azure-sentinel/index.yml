@@ -23,8 +23,8 @@ products:
 - azure
 - azure-sentinel
 modules:
-- learn.wwl.what-is-threat-hunting-azure-Sentinel
-- learn.azure.hunt-threats-Sentinel
-- learn.wwl.perform-threat-hunting-Sentinel-with-notebooks
+- learn.wwl.what-is-threat-hunting-azure-sentinel
+- learn.azure.hunt-threats-sentinel
+- learn.wwl.perform-threat-hunting-sentinel-with-notebooks
 trophy:
   uid: learn.wwl.sc-200-perform-threat-hunting-azure-sentinel.trophy

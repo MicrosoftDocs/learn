@@ -23,7 +23,7 @@ products:
 - m365
 modules:
 - learn-m365.m365-security-threat-define
-- learn.wwl.mitigate-incidents-microsoft-365-Defender for Cloud
+- learn.wwl.mitigate-incidents-microsoft-365-defender
 - learn.protect-identities-with-aad-idp
 - learn-m365.m365-threat-remediate
 - learn-m365.m365-threat-safeguard

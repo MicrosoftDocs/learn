@@ -23,10 +23,10 @@ products:
 - azure
 - azure-sentinel
 modules:
-- learn.intro-to-azure-Sentinel
-- learn.wwl.create-manage-azure-Sentinel-workspaces
-- learn.wwl.query-logs-azure-Sentinel
-- learn.wwl.use-watchlists-azure-Sentinel
-- learn.wwl.utilize-threat-intelligence-azure-Sentinel
+- learn.intro-to-azure-sentinel
+- learn.wwl.create-manage-azure-sentinel-workspaces
+- learn.wwl.query-logs-azure-sentinel
+- learn.wwl.use-watchlists-azure-sentinel
+- learn.wwl.utilize-threat-intelligence-azure-sentinel
 trophy:
   uid: learn.wwl.sc-200-configure-your-azure-sentinel-environment.trophy
