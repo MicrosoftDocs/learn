@@ -7,18 +7,18 @@ Let's take a look at a sample of the data to get to know the columns and types o
 
 The `take` operator is perfect, as it returns a specified number of random rows. 
 
-1. Copy this query to your clipboard and run in your sample environment. 
+1. Copy this query to your clipboard and paste in the query editor of your sample environment. 
 
     ```kusto
     StormEvents
     | take 5
     ```
     
-1. Notice that the query begins with a reference to the data table, *StormEvents*. This data is piped into the first and only operator, which then selects five rows at random.
+1. Notice that the query begins with a reference to the data table, *StormEvents*. This data is piped into the first and only operator, which then selects five arbitrary rows.
 
-1. To run the query, either select the **Run** button above the query window, or press **Shift+Enter**.
+1. Run the query by either selecting the **Run** button above the query window, or pressing **Shift+Enter**.
 
-1. You should get results that look like the following image. However, since the rows are selected at random, you will probably see different data than is displayed below.
+1. Check that your results look like the following image. However, since the rows are selected arbitrarily, you may see different data than is displayed below.
 
     :::image type="content" source="../media/3-take-5.png" alt-text="Screenshot of take five outputs.":::
 
