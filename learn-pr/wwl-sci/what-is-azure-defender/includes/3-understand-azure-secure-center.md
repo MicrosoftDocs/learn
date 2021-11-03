@@ -1,5 +1,3 @@
-To start with Microsoft Defender for Cloud, you need to start with Microsoft Defender for Cloud.
-
 Microsoft Defender for Cloud is a unified infrastructure security management system that strengthens the security posture of your data centers and provides advanced threat protection across your hybrid workloads in the cloud - whether they're in Azure or not - and on-premises.
 
 Keeping your resources safe is a joint effort between your cloud provider, Azure, and you, the customer. You have to make sure your workloads are secure as you move to the cloud. At the same time, when you move to IaaS (infrastructure as a service), there is more customer responsibility than there was in PaaS (platform as a service) and SaaS (software as a service). Microsoft Defender for Cloud provides you the tools needed to harden your network, secure your services, and make sure you're on top of your security posture.

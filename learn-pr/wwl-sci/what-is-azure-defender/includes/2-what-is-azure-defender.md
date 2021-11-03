@@ -1,4 +1,4 @@
-Microsoft Defender for Cloud is the Cloud workload protection feature of Microsoft Defender for Cloud.  Microsoft Defender for Cloud's features cover the two broad pillars of cloud security:
+Microsoft Defender for Cloud's features cover the two broad pillars of cloud security:
 
 **Cloud Security Posture Management (CSPM)** - Defender for Cloud is available for free to all Azure users. The free experience includes CSPM features such as secure score, detection of security misconfigurations in your Azure machines, asset inventory, and more. Use these CSPM features to strengthen your hybrid cloud posture and track compliance with built-in policies.
 
@@ -12,7 +12,7 @@ The workload protection dashboard in Defender for Cloud provides visibility and 
 
 Microsoft Defender for Cloud provides security alerts and advanced threat protection for virtual machines, SQL databases, containers, web applications, your network, and more.
 
-When you enable Microsoft Defender for Cloud from the Pricing and settings area of Microsoft Defender for Cloud, the following Defender plans are all enabled simultaneously and provide comprehensive defenses for the compute, data, and service layers of your environment:
+When you enable Microsoft Defender for Cloud from **Pricing and settings**, the following Defender plans are all enabled simultaneously and provide comprehensive defenses for the compute, data, and service layers of your environment:
 
 - Microsoft Defender for servers
 
