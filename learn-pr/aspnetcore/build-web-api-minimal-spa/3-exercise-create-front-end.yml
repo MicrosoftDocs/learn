@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.aspnetcore.build-web-api-minimal-spa.exercise-front-end
+uid: learn.aspnetcore.build-web-api-minimal-spa.exercise-create-front-end
 title: Execise - Frontend
 metadata:
   title: Exercise - Frontend
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-exercise-front-end.md)]
+  [!include[](includes/3-exercise-create-front-end.md)]

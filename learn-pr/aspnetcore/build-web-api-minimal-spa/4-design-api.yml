@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.aspnetcore.build-web-api-minimal-spa.front-end
-title: Unit
+uid: learn.aspnetcore.build-web-api-minimal-spa.design-api
+title: Build the API
 metadata:
-  title: Unit
+  title: Build the API
   description: Describe unit
   author: softchris
   ms.author: chnoring
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-front-end.md)]
+  [!include[](includes/4-design-api.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.aspnetcore.build-web-api-minimal-database.use-sqlite-database
+uid: learn.aspnetcore.build-web-api-minimal-database.add-sqlite-database-provider
 title: Use SQLite database provider with EF Core
 metadata:
   title: Use SQLite database provider with EF Core
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-use-sqlite-database.md)]
+  [!include[](includes/4-add-sqlite-database-provider.md)]

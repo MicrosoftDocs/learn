@@ -2,7 +2,7 @@
 uid: learn.aspnetcore.build-web-api-minimal-api
 metadata:
   title: Build a Web API  with minimal API and .NET 6 
-  description: In this module, you will learn how to build a Web API using .NET 6. Additionally you will learn to set up different routes to handle both reading and writing.
+  description: Learn how to build a Web API by using .NET 6. You'll also learn how to set up different routes to handle both reading and writing.
   ms.date: 10/26/2021
   author: softchris
   ms.author: chnoring
@@ -30,10 +30,10 @@ prerequisites: |
   - Having a basic understanding what an API is.
 units:
   - learn.aspnetcore.build-web-api-minimal-api.introduction
-  - learn.aspnetcore.build-web-api-minimal-api.minimal-api
-  - learn.aspnetcore.build-web-api-minimal-api.exercise-minimal-api
-  - learn.aspnetcore.build-web-api-minimal-api.advanced
-  - learn.aspnetcore.build-web-api-minimal-api.exercise-advanced
+  - learn.aspnetcore.build-web-api-minimal-api.what-is-minimal-api
+  - learn.aspnetcore.build-web-api-minimal-api.exercise-create-minimal-api
+  - learn.aspnetcore.build-web-api-minimal-api.advanced-commands
+  - learn.aspnetcore.build-web-api-minimal-api.exercise-advanced-commands
   - learn.aspnetcore.build-web-api-minimal-api.knowledge-check
   - learn.aspnetcore.build-web-api-minimal-api.summary
 badge:

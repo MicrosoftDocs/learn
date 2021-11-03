@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.aspnetcore.build-web-api-minimal-api.exercise-advanced
+uid: learn.aspnetcore.build-web-api-minimal-api.exercise-advanced-commands
 title: Exercise - Add routes
 metadata:
   title: Exercise - Add routes
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/5-exercise-advanced.md)]
+  [!include[](includes/5-exercise-advanced-commands.md)]

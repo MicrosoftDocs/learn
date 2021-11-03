@@ -28,9 +28,9 @@ prerequisites: |
   - Having a basic understanding what an API is.
 units:
   - learn.aspnetcore.build-web-api-minimal-database.introduction
-  - learn.aspnetcore.build-web-api-minimal-database.add-entity-framework-core
+  - learn.aspnetcore.build-web-api-minimal-database.what-is-entity-framework-core
   - learn.aspnetcore.build-web-api-minimal-database.exercise-add-entity-framework-core
-  - learn.aspnetcore.build-web-api-minimal-database.use-sqlite-database
+  - learn.aspnetcore.build-web-api-minimal-database.add-sqlite-database-provider
   - learn.aspnetcore.build-web-api-minimal-database.exercise-use-sqlite-database
   - learn.aspnetcore.build-web-api-minimal-database.knowledge-check
   - learn.aspnetcore.build-web-api-minimal-database.summary

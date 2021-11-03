@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.aspnetcore.build-web-api-minimal-spa.exercise-api
+uid: learn.aspnetcore.build-web-api-minimal-spa.exercise-create-api
 title: Unit
 metadata:
   title: Unit
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-exercise-api.md)]
+  [!include[](includes/5-exercise-create-api.md)]

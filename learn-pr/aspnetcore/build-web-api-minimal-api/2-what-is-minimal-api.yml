@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.aspnetcore.build-web-api-minimal-database.add-entity-framework-core
+uid: learn.aspnetcore.build-web-api-minimal-api.what-is-minimal-api
 title: Minimal API
 metadata:
   title: Minimal API
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-add-entity-framework-core.md)]
+  [!include[](includes/2-what-is-minimal-api.md)]
