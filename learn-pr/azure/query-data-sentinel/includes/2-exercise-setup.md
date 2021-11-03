@@ -15,12 +15,12 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     |Name|Description|
     |---|---|
     |Subscription|Select your Azure subscription.|
-    |Resource Group|Select **Create new** and provide a name for the resource group such as **azure-Sentinel-rg**.|
+    |Resource Group|Select **Create new** and provide a name for the resource group such as `azure-sentinel-rg`.|
     |Locations|From the drop-down menu, select the location where you want to deploy Microsoft Sentinel.|
-    |Workspace name|Provide a unique name for the Microsoft Sentinel Workspace such as ***yourname*-Sentinel**. |
-    |Location|Accept the default value of **[resourceGroup().location]**.|
-    |Simplevm Name|Accept the default value of **simple-vm**.|
-    |Simplevm Windows OS Version|Accept the default value of **2016-Datacenter**.|
+    |Workspace name|Provide a unique name for the Microsoft Sentinel Workspace such as `<yourName>-sentinel`. |
+    |Location|Accept the default value of `[resourceGroup().location]`.|
+    |Simplevm Name|Accept the default value of `simple-vm`.|
+    |Simplevm Windows OS Version|Accept the default value of `2016-Datacenter`.|
 
 1. Select **Review + create**, and then select **Create**.
 
@@ -32,7 +32,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 ## Task 2: Check the resources created
 
 1. In the Azure portal, search for **Resource groups**.
-2. Select **azure-Sentinel-rg**.
+2. Select `azure-sentinel-rg`.
 3. Sort the list of resources by **Type**.
 4. The resource group should contain the resources listed in the following table.
 

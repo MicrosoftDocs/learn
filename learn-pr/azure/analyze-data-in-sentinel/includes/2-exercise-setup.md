@@ -19,13 +19,13 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     |---|---|
     | **Project details** |
     | Subscription | Select your Azure subscription. |
-    | Resource group | Select **Create new**, and provide a name for the resource group, such as **azure-Sentinel-rg**.|
+    | Resource group | Select **Create new**, and provide a name for the resource group, such as `azure-sentinel-rg`.|
     | **Instance details** |
     | Region | From the dropdown list, select the location where you want to deploy the Microsoft Sentinel. |
-    | Workspace Name  | Provide a unique name for the Microsoft Sentinel Workspace such as ***yourname*-Sentinel**. |
-    | Location | Accept the default value of **[resourceGroup().location]**. |
-    | Simplevm Name | Accept the default value of **simple-vm**. |
-    | Simplevm Windows OS Version | Accept the default value of **2016-Datacenter**. |
+    | Workspace Name  | Provide a unique name for the Microsoft Sentinel Workspace such as `<yourName>-sentinel`, where *\<yourName>* represents the workspace name that you chose in the previous task. |
+    | Location | Accept the default value of `[resourceGroup().location]`. |
+    | Simplevm Name | Accept the default value of `simple-vm`. |
+    | Simplevm Windows OS Version | Accept the default value of `2016-Datacenter`. |
 
 1. Select the **Review + create**. When validation passes, select **Create**.
 
@@ -38,7 +38,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. In the Azure portal, search for **Resource groups**.
 
-1. Select **azure-Sentinel-rg**.
+1. Select `azure-sentinel-rg`.
 
 1. Sort the list of resources by **Type**.
 
@@ -46,15 +46,15 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
     | Name  | Type  | Description |
     |---|---|---|
-    | ***yourname*-Sentinel** | Log Analytics workspace | Log Analytics workspace used by Microsoft Sentinel. |
-    | **simple-vmNetworkInterface** | Network interface | Network interface for the  VM. |
-    | **SecurityInsights(*yourname)*-Sentinel** | Solution | Security insights for Microsoft Sentinel. |
-    | **simple-vm**| Virtual machine | Virtual machine used in the demonstration. |
-    | **st1*xxxxx*** | Storage account | Storage account used by the virtual machine. |
-    | **simple-vm** | Virtual Machine | Virtual machine. |
-    | **vnet1** | Virtual network | Virtual network for the VM. |
+    | `<yourName>-sentinel` | Log Analytics workspace | Log Analytics workspace used by Microsoft Sentinel, where *\<yourName>* represents the workspace name that you chose in the previous task. |
+    | `simple-vmNetworkInterface` | Network interface | Network interface for the  VM. |
+    | `SecurityInsights(<yourName>-sentinel)` | Solution | Security insights for Microsoft Sentinel. |
+    | `simple-vm` | Virtual machine | Virtual machine used in the demonstration. |
+    | `st1<xxxxx>` | Storage account | Storage account used by the virtual machine, where *\<xxxxx>* represents a random string generated to create a unique storage account name. |
+    | `simple-vm` | Virtual Machine | Virtual machine. |
+    | `vnet1` | Virtual network | Virtual network for the VM. |
 
-> [!Note]
+> [!NOTE]
 > The resources deployed and configuration steps completed in this exercise are required in the next exercise. If you intended completing the next exercise, do not delete the resources from this exercise.
 
 ## Task 3: Configure Microsoft Sentinel connectors

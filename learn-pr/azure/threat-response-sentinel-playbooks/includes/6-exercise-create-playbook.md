@@ -115,6 +115,6 @@ In this exercise, you will explore the Microsoft Sentinel playbooks by performin
 ### Clean up the resources
 
 1. In the Azure portal, search for **Resource groups**.
-2. Select **azure-Sentinel-rg**.
+2. Select `azure-sentinel-rg`.
 3. On the header bar, select **Delete resource group**.
-4. In the **TYPE THE RESOURCE GROUP NAME:** field, enter the name of the resource group **azure-Sentinel-rg** and select **Delete**. 
+4. In the **TYPE THE RESOURCE GROUP NAME:** field, enter the name of the resource group `azure-sentinel-rg` and select **Delete**. 

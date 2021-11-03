@@ -53,11 +53,11 @@ In this task, you'll create an analytics rule that will create an incident when 
 In this task, you'll delete a VM to test rule detection and incident creation.
 
 1. In the Azure portal, search for and select **Virtual machines**.
-2. On the **Virtual machines** page, select the check box beside the virtual machine labeled **simple-vm**, and then select **Delete** from the toolbar.
+2. On the **Virtual machines** page, select the check box beside the virtual machine labeled `simple-vm`, and then select **Delete** from the toolbar.
 3. On the **Delete Resources** pane, enter **yes** in the **Confirm delete** field, and then select **Delete**.
 
-  > [!NOTE] 
-  >  Please give the operation several minutes to complete before the next step! 
+  > [!NOTE]
+  > Be sure to give the operation several minutes to complete before proceeding to the next step!
 
 ## Task 3: Investigate an incident
 
@@ -92,6 +92,6 @@ After you complete this exercise, you'll have created a Microsoft Sentinel analy
 To avoid incurring costs, delete the Azure resources that you created in this exercise when you're finished with them. To do this, complete the following steps:
 
 1. In the Azure portal, search for **Resource groups**.
-2. Select **azure-Sentinel-rg**.
+2. Select `azure-sentinel-rg`.
 3. On the header bar, select **Delete resource group**.
-4. In the **TYPE THE RESOURCE GROUP NAME** field, enter **azure-Sentinel-rg** and select **Delete**.
+4. In the **TYPE THE RESOURCE GROUP NAME** field, enter `azure-sentinel-rg` and select **Delete**.
