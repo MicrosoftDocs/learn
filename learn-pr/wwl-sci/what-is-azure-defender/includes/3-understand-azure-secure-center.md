@@ -38,7 +38,7 @@ Microsoft Defender for Cloud enables you to strengthen your security posture. Th
 
 It's a security basic to know and make sure your workloads are secure, and it starts with having tailored security policies in place. Because all the Defender for Cloud policies are built on top of Azure Policy controls, you're getting the full range and flexibility of a world-class policy solution. In Defender for Cloud, you can set your policies to run on management groups, across subscriptions, and even for a whole tenant.
 
-:::image type="content" source="../media/security-center-dashboard.png" alt-text="workload protection dashboard":::
+:::image type="content" source="../media/security-center-dashboard.png" alt-text="Screenshot of the workload protection dashboard.":::
 
 Defender for Cloud helps you identify Shadow IT subscriptions. By looking at subscriptions labeled not covered in your dashboard, you can immediately know when there are newly created subscriptions and make sure they are covered by your policies and protected by Microsoft Defender for Cloud.
 

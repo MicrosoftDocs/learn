@@ -35,6 +35,6 @@ modules:
 - learn.azure.incident-management-sentinel
 - learn.azure.hunt-threats-sentinel
 - learn.azure.threat-response-sentinel-playbooks
-- azure.query-data-Sentinel
+- azure.query-data-sentinel
 trophy:
   uid: learn.security-ops-sentinel.trophy

@@ -27,6 +27,6 @@ modules:
 - learn.azure.threat-response-sentinel-playbooks
 - learn.azure.incident-management-sentinel
 - learn.wwl.use-entity-behavior-analytics-azure-sentinel
-- azure.query-data-Sentinel
+- azure.query-data-sentinel
 trophy:
   uid: learn.wwl.sc-200-create-detections-perform-investigations-azure-sentinel.trophy
