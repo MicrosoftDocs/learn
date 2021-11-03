@@ -81,7 +81,7 @@ If you deploy to a virtual machines, you typically need to connect to the virtua
 
 If you use Kubernetes or AKS, you typically use a slightly different approach to build and deploy your solution. After your application is built, your workflow creates a *container image* and publishes it to a *container registry*, which your Kubernetes cluster then reads from.
 
-In this module, we focus on Azure App Service to illustrate the workflow concepts involved. We provide links to more information about deploying to other hosting services in the summary.
+In this module, we focus on Azure App Service to illustrate the workflow concepts involved.
 
 ## Test applications in your workflow
 
