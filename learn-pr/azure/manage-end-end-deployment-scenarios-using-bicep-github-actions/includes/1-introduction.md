@@ -1,4 +1,4 @@
-When you use workflows, you can automate the validation, testing, and deployment of your Bicep code. Many of the benefits of using Bicep come from deploying your Azure infrastructure alongside the other components of your solution, such as applications and database configuration. In this module, you'll learn about how to extend a workflow that already deploys Bicep code to deploy an entire solution.
+When you use workflows, you can automate the validation, testing, and deployment of your Bicep code. Many of the benefits of using Bicep come from deploying your Azure infrastructure alongside the other components of your solution, such as applications and database configuration. In this module, you'll learn how to extend a workflow that already deploys Bicep code to deploy an entire solution.
 
 ## Example scenario
 
