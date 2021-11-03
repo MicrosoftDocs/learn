@@ -5,7 +5,7 @@ The solution integrates several Azure cloud services, including:
   - An Azure static web app for the Altair Web Terminal.
   - An Azure virtual machine. The virtual machine runs the virtual disk and MQTT broker services.
 
-:::image type="content" source="../media/altair-azure-sphere-architecture.png" alt-text="Diagram that shows the Azure Sphere architecture." border="false":::
+:::image type="content" source="../media/altair-azure-sphere-architecture.jpg" alt-text="Diagram that shows the Azure Sphere architecture." border="false":::
 
 The Altair emulator running on Azure Sphere is accessible via a browser-based terminal.
 
@@ -15,7 +15,7 @@ The Altair emulator runs on the Azure Sphere Cortex-A7. Depending on your hardwa
 
 The Altair emulator consists of two applications: one high-level application and one real-time core application.
 
-:::image type="content" source="../media/azure-sphere-app-architecture.png" alt-text="Diagram that shows the application architecture of Altair on Azure Sphere." border="false":::
+:::image type="content" source="../media/azure-sphere-app-architecture.jpg" alt-text="Diagram that shows the application architecture of Altair on Azure Sphere." border="false":::
 
 - The **Altair emulator** high-level application. 
 
