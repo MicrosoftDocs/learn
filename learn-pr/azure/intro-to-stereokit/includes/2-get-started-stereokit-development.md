@@ -31,7 +31,7 @@ StereoKit's visual studio template is the quickest method for you to start a Ste
 
 There are two templates provided:
 
-1. **Universal Windows Platform** - is for HoloLens 2, and it can also run on Windows desktop. However, UWP can be slower to compile, and it'll not receive updates from the .Net team.
+1. **Universal Windows Platform** - is for HoloLens 2, and it can also run on Windows desktop. However, UWP can be slower to compile, and it will not receive updates from the .NET team.
 2. **.NET Core** - is used for desktop XR on Windows and Linux. It is simple to use, compiles quickly, and is the best option for most developers.
 
    :::image type="content" source="../media/stereokit-templates-visual-studio.png" alt-text="Screenshot of downloaded stereoKit templates in Visual Studio." lightbox="../media/stereokit-templates-visual-studio.png":::
@@ -56,7 +56,7 @@ There are two templates provided:
 
 ## Enable Developer Mode
 
-Enabling Developer Mode in HoloLens 2 & Windows PC makes it easier to test the ready applications. In addition to that, you can install Universal Windows Platform & Windows apps from outside the Windows Store, even if it is a valid certificate without the sign. That is an essential feature for app developers who want to test their apps on their PCs while still developing.
+Enabling Developer Mode in HoloLens 2 & Windows PC makes it easier to test the ready applications. In addition to this, you can install Universal Windows Platform & Windows apps from outside the Windows Store, even if it is a valid certificate without the sign. That is an essential feature for app developers who want to test their apps on their PCs while still developing.
 
 ### Enable developer mode for HoloLens 2
 
