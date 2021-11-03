@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore.build-web-api-minimal-spa.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 01/27/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What isn't an important property when selecting a SPA framework?
+      choices:
+        - content: Well documented
+          isCorrect: false
+          explanation: Incorrect. It will definitely help development speed if there's good documentation.
+        - content: Actively developed framework.
+          isCorrect: false
+          explanation: Incorrect. This is one of the most important properties. If a framework isn't developed it can lead to bug not being fixed.
+        - content: It's old.
+          isCorrect: true
+          explanation: Correct. Some SPA frameworks have been around for a few years. The age of the framework has nothing to do with whether you should choose it. It's more important that it's popular, well tested and maintained.
+
+    - content: How would you as a frontend team tackle that the backend API isn't built yet?
+      choices:
+        - content: Wait for the backend team to finish.
+          isCorrect: false
+          explanation: Incorrect. You are recommended to a either work with the backend team to build a vertical or mock the response that you need.
+        - content: Negotiate a contract with the backend team and then mock the response.
+          isCorrect: true
+          explanation: Correct. Mocking the response can make you move faster as a frontend team, don't forget to switch to the actual backend API, when available.
+        - content: Negotiate a contract with the backend team and then mock the response.
+          isCorrect: false
+          explanation: Incorrect. If you go ahead with mocking without negotiating, you might end up with mocked responses that doesn't quite match the reality once the backend API is built.
+    - content: What CORS policy should I have if I only want "http://example.com" to be allowed?
+      choices:
+        - content: You should allow *
+          isCorrect: false
+          explanation: Incorrect.That would allow "http://example.com", but it also allows all other domains.
+        - content: You should allow "http://example.com"
+          isCorrect: true
+          explanation: Correct. This only allows "http://example.com" and is what you want.
+        - content: You should allow * and "http://example.com""
+          isCorrect: false
+          explanation: Incorrect. It allows too much. You only want to allow "http://example.com"

@@ -2,7 +2,7 @@
 uid: learn.aspnetcore-minimal-api
 metadata:
   title: Create web applications with .NET 6 and minimal API and ASP .NET Core
-  description: With minimal API, you can create an API in just 4 lines of code while leveragingg the latest features of .NET 6.
+  description: With minimal API, you can create an API in just 4 lines of code while leveraging the latest features of .NET 6.
   ms.date: 10/26/2021
   author: softchris
   ms.author: chnoring
@@ -24,6 +24,8 @@ products:
   - dotnet
   - vs-code
 modules:
-- learn.aspnetcore.build-web-api-minimal
+- learn.aspnetcore.build-web-api-minimal-api
+- learn.aspnetcore.build-web-api-minimal-spa
+- learn.aspnetcore.build-web-api-minimal-database
 trophy:
   uid: learn.aspnetcore-minimal-api.trophy

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore.build-web-api-minimal-database.exercise-add-entity-framework-core
+title: Exercise - Add EF Core to Minimal API
+metadata:
+  title: Exercise - Add EF Core to Minimal API
+  description: In this exercise, we will build an API using the minimal API template.
+  author: jongalloway
+  ms.author: jogallow
+  ms.date: 10/26/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-add-entity-framework-core.md)]

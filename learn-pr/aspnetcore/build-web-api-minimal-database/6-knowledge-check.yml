@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore.build-web-api-minimal-database.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 10/26/2021
+  author: jongalloway
+  ms.author: jogallow
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: Which of the following is true about Entity Framework (EF) Core?
+      choices:
+        - content: It is the only way to access data from Minimal API applications.
+          isCorrect: false
+          explanation: EF Core is a popular and easy-to-use ORM for .NET Core, but is not the only way to access data from Minimal API applications.
+        - content: It is guaranteed to allow switching databases with no code changes.
+          isCorrect: false
+          explanation: While EF Core will abstract and localize your database-specific code, you should expect some development effort to switch databases.
+        - content: It stores data in-memory, which is only appropriate in development.
+          isCorrect: false
+          explanation: EF Core supports a variety of database providers. In addition to the in-memory database, it supports over 20 persistent databases.
+        - content: It is a lightweight, extensible, cross-platform data access technology for .NET applications.
+          isCorrect: true
+          explanation: This is correct - EF Core is an easy way to get started with database access in .NET, and is a great fit for many .NET applications.
+          

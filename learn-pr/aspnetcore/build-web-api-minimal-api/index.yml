@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.aspnetcore.build-web-api-minimal
+uid: learn.aspnetcore.build-web-api-minimal-api
 metadata:
   title: Build a Web API  with minimal API and .NET 6 
   description: In this module, you will learn how to build a Web API using .NET 6. Additionally you will learn to set up different routes to handle both reading and writing.
@@ -29,12 +29,12 @@ prerequisites: |
   - Recommended familiarity with .NET 6.
   - Having a basic understanding what an API is.
 units:
-  - learn.aspnetcore.build-web-api-minimal.introduction
-  - learn.aspnetcore.build-web-api-minimal.minimal-api
-  - learn.aspnetcore.build-web-api-minimal.exercise-minimal-api
-  - learn.aspnetcore.build-web-api-minimal.advanced
-  - learn.aspnetcore.build-web-api-minimal.exercise-advanced
-  - learn.aspnetcore.build-web-api-minimal.knowledge-check
-  - learn.aspnetcore.build-web-api-minimal.summary
+  - learn.aspnetcore.build-web-api-minimal-api.introduction
+  - learn.aspnetcore.build-web-api-minimal-api.minimal-api
+  - learn.aspnetcore.build-web-api-minimal-api.exercise-minimal-api
+  - learn.aspnetcore.build-web-api-minimal-api.advanced
+  - learn.aspnetcore.build-web-api-minimal-api.exercise-advanced
+  - learn.aspnetcore.build-web-api-minimal-api.knowledge-check
+  - learn.aspnetcore.build-web-api-minimal-api.summary
 badge:
-  uid: learn.aspnetcore.build-web-api-minimal.badge
+  uid: learn.aspnetcore.build-web-api-minimal-api.badge
