@@ -9446,8 +9446,8 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/wwl-azure/design-data-integration/7-design-strategy-for-hot-warm-cold-data-path.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration/8-design-strategy-for-hot-warm-cold-data-path",
+      "source_path": "learn-pr/wwl-azure/design-data-integration/8-design-azure-synapse-analytics-solution-for-data-analysis.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration/7-design-azure-synapse-analytics-solution-for-data-analysis",
       "redirect_document_id": true
     }
   ]
