@@ -1,0 +1,33 @@
+name: variables
+
+on:
+  workflow_dispatch:
+
+runs-on: ubuntu-latest
+
+jobs:
+  job1:
+    outputs:
+      appServiceAppName: ${{ steps.deploy.outputs.appServiceAppName }}
+    steps:
+    - uses: actions/checkout@v2
+    - uses: azure/login@v1
+      name: Sign in to Azure
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - uses: azure/arm-deploy@v1
+      id: deploy
+      name: Deploy Bicep file
+      with:
+        failOnStdErr: false
+        deploymentName: ${{ github.run_number }}
+        resourceGroupName: ${{ inputs.resourceGroupName }}
+        template: ./deploy/main.bicep
+
+  job2:
+    needs: job1
+    steps: 
+    - run: |
+        echo "${{needs.job1.outputs.appServiceAppName}}"
+
+# TODO verify the above file is all valid - actually run it in GHA
