@@ -1,10 +1,10 @@
-In this exercise, you'll learn how to program the Altair emulator from the Altair front panel.
+In this exercise, you'll use the virtual front panel, the MikroE 8800 Retro Click, and Altair front panel board to program the Altair emulator.
 
-## The Virtual Front Panel
+## Virtual front panel
 
-To access the Virtual Front panel, you must be connected to the Altair emulator via the Web Terminal.
+To access the Virtual Front panel, you must be connected to the Altair emulator via the web terminal.
 
-1. From the Web Terminal, press **ctrl+M** to enter the CPU Monitor.
+1. From the web terminal, press **ctrl+M** to enter the CPU Monitor.
 1. You can enter binary strings to represent the switches on a real Altair front panel. For example, if you entered *0000000011110000* followed by Enter, then you're setting 12 switches off and 4 switches on.
 1. You can enter Altair control commands as follows:
     * **e** = EXAMINE
@@ -34,7 +34,7 @@ To access the Virtual Front panel, you must be connected to the Altair emulator 
 1. To exit CPU Monitor mode press **ctrl+M**
 1. Note, you are directly setting memory addresses and you will likely overwrite something important and crash the Altair emulator, if this happens then just reset the Azure Sphere, and experiment again.
 
-## The Avnet Click Front Panel with the MikroE 8800 Retro Click
+## Avnet Click Front Panel with the MikroE 8800 Retro Click
 
 The MikroE 8800 Retro Click has two modes of operation, command mode, and input mode. The modes are selected by pressing **Button B** on the Avnet Azure Sphere starter kit. When you change modes the MikroE 8800 Retro 8x8 LED panel will briefly display **C** or **I**.
 
@@ -54,7 +54,7 @@ In **Input Mode**, the buttons take on the role of the 16 address/data switches 
 
 The top row of LEDs are the Altair status indicators. In **CPU STOP** mode, the middle row of LEDs displays the 8 bits on the Data Bus, the bottom two rows display the 16 bits set on the Address Bus. In **CPU RUN** mode, the Data and Address bus LEDs are sampled every 20 milliseconds and are an indicator of activity.
 
-### Loading an Intel 8080 opcode using the Click front panel
+### Loading an Intel 8080 opcode by using the Click front panel
 
 Taking the same example as the virtual front panel. We are going to load the 3 byte [Intel 8080 Jmp](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/8080asm.pdf?azure-portal=true) at address 0x0100.
 
@@ -90,14 +90,14 @@ Execute the instruction
 1. Press **CPU START** to start the CPU running again.
 
 > [!NOTE]
-> You can observe the instruction being executed in the Web Terminal as well.
+> You can observe the instruction being executed in the web terminal as well.
 > ```text
 >     Examine: Address bus: 00000001 00000000 (0x0100), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
 > Single step: Address bus: 00000001 00000000 (0x0100), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
 > Single step: Address bus: 00000000 00000000 (0x0000), Data bus 11000011 (0xc3), JMP adr          (3 byte instruction)
 > ```
 
-## Altair Front Panel
+## Altair front panel
 
 The Altair front panel board can be used with the Avnet Starter Kit and the Seeed Studio Reference Design Board.
 

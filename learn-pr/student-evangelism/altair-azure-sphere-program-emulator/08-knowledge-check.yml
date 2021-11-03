@@ -12,28 +12,28 @@ metadata:
   ms.custom: nextgen
 durationInMinutes: 2 # dummy number at present
 content: | 
-  Choose the best response for each of the questions below. Then select **Check your answers**.
+  Choose the best response for each of the following questions. Then select **Check your answers**.
 quiz:
   questions:
   - content: "Which of the following options is true about Altair BASIC?"
     choices:
     - content: "From Altair BASIC, you can run and save BASIC apps."
       isCorrect: false
-      explanation: "From Altair BASIC, you can only run BASIC applications. You need to boot CP/M to access the B: read/write drive."
+      explanation: "That answer is only partially correct."
     - content: "From Altair BASIC, you can only run BASIC apps. You can't save changes you make."
       isCorrect: true
-      explanation: "From Altair BASIC, you can only run BASIC applications. You need to boot CP/M to access the B: read/write drive."
+      explanation: "From Altair BASIC, you can only run BASIC applications. You need to boot CP/M to access the read/write drive B."
     - content: "Altair BASIC runs on CP/M and you can run and save BASIC apps."
       isCorrect: false
-      explanation: "Microsoft Basic runs on CP/M. It can run and save files to the B: drive."
+      explanation: "Microsoft BASIC runs on CP/M. It can run and save files to drive B."
   - content: "The Altair emulator can run Altair BASIC and CP/M. Which option is true?"
     choices:
-    - content: "When the Altair emulator starts, it is running CP/M."
+    - content: "When the Altair emulator starts, it's running CP/M."
       isCorrect: true
-      explanation: "When the Altair emulator starts, it is running Altair CP/M."
-    - content: "When the emulator starts, it is running Altair BASIC"
+      explanation: "The Altair emulator is running Altair CP/M when it starts."
+    - content: "When the emulator starts, it's running Altair BASIC."
       isCorrect: false
-      explanation: "When the Altair emulator starts, it is running CP/M. You can config the Altair emulator to boot up Altair BASIC."
-    - content: "When the Altair emulator starts you can program in Altair BASIC, Microsoft Basic, C, and Assembler."
+      explanation: "You can configure the Altair emulator to boot Altair BASIC, but that's not how the emulator starts."
+    - content: "When the Altair emulator starts, you can program in Altair BASIC, Microsoft BASIC, C, and Assembler."
       isCorrect: false
-      explanation: "The Altair emulator runs CP/M on startup. You can then program with Microsoft Basic, C, and Assembler."
+      explanation: "You can program with Microsoft BASIC, C, and Assembler, but that's not how the emulator starts."
