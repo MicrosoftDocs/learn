@@ -21,7 +21,7 @@ abstract:  |
 
 prerequisites: | 
   - [Visual Studio Code, with the Python extension installed](https://aka.ms/LearnOnVSCode)
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/mixed-reality-for-sports-fans.png
 levels:
 - beginner
 roles:
