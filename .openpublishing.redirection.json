@@ -4176,6 +4176,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/data-ai-cert/upload-data-to-azure-data-lake-storage/includes/5-copy-data-from-gen1-to-gen2.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/upload-data-to-azure-data-lake-storage/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/explore-monitoring-reporting/5-explore-azure-service-health.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features",
       "redirect_document_id": false
