@@ -2,7 +2,7 @@ So far, you've learned how to install and configure your visual studio, enabling
 
 This StereoKit demo project aims to introduce people to the basics of how to draw and interact with the **Mixed Reality** content. You'll learn about a core application loop, radial hand menus, easy window menus with automatic layout, object-based menus with more explicit layouts, and file pickers. Through the **StereoKit Ink** application, you'll also see how easy it is to draw models, lines, and interact directly with your fingers.
 
-    :::image type="content" source="../media/desktop-stereokit-ink-application.png" alt-text="Screenshot of the stereo kit application on desktop" lightbox="../media/desktop-stereokit-ink-application.png":::
+:::image type="content" source="../media/desktop-stereokit-ink-application.png" alt-text="Screenshot of the stereo kit application on desktop" lightbox="../media/desktop-stereokit-ink-application.png":::
 
 ## Window menus
 

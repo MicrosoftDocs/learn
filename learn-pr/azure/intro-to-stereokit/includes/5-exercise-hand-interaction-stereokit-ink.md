@@ -4,7 +4,7 @@ From the previous chapter, you have a basic understanding of how the main progra
 
 The StereoKit Ink application uses a basic radial hand menu to keep some quick actions! It's activated by a grip motion and is ideal for quick gesture-like menu item activation. It can also be combined with several submenus.
 
-    :::image type="content" source="../media/radial-menu.png" alt-text="Screenshot of radial menu.” " lightbox="../media/radial-menu.png":::
+:::image type="content" source="../media/radial-menu.png" alt-text="Screenshot of radial menu.” " lightbox="../media/radial-menu.png":::
 
 The below function shows the simple radial menu with undo and redo buttons used in the application.
 
@@ -23,7 +23,7 @@ new HandRadialLayer("Root", -90,new HandMenuItem("Undo", null, ()=>activePaintin
 
 ### Undo and Redo buttons
 
-    :::image type="content" source="../media/undo-redo-buttons.png" alt-text="Screenshot of Undo and Redo buttons.” " lightbox="../media/undo-redo-buttons.png":::
+:::image type="content" source="../media/undo-redo-buttons.png" alt-text="Screenshot of Undo and Redo buttons.” " lightbox="../media/undo-redo-buttons.png":::
 
 * **Undo button** -  Undo method removes the last stroke from the painting by pushing it into the undo stack.
 
@@ -61,7 +61,7 @@ activePainting.Step(Handed.Right, paletteMenu.PaintColor, paletteMenu.PaintSize)
 
 By making the whole painting as a child of the handle, we can move it around while working with it. Both handles and windows push a transform onto the hierarchy stack, making all subsequent locations relative to it.
 
-    :::image type="content" source="../media/handle.png" alt-text="Screenshot of handle.” " lightbox="../media/handle.png":::
+:::image type="content" source="../media/handle.png" alt-text="Screenshot of handle.” " lightbox="../media/handle.png":::
 
 ```c#
 Pose _pose  = new Pose(0, 0, -0.8f, Quat.Identity);
@@ -89,7 +89,7 @@ UI.HandleEnd();
 
 The hand's position data is always provided in world space. However, since we'll be inside of an Affordance that uses the Hierarchy stack, we need to convert the fingertip's coordinates into Hierarchy local coordinates before we can deal with it.
 
-    :::image type="content" source="../media/hand.png" alt-text="Screenshot of hand.” " lightbox="../media/hand.png":::
+:::image type="content" source="../media/hand.png" alt-text="Screenshot of hand.” " lightbox="../media/hand.png":::
 
 ```c#
 Hand hand      = Input.Hand(handed);

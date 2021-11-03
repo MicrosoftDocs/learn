@@ -34,7 +34,7 @@ There are two templates provided:
 1. **Universal Windows Platform** for deploying on HoloLens 2 platform.
 2. **.NET Core** for desktop Windows or Linux environment.
 
-        :::image type="content" source="../media/stereokit-templates-visual-studio.png" alt-text="Screenshot of downloaded stereoKit templates in Visual Studio." lightbox="../media/stereokit-templates-visual-studio.png":::
+   :::image type="content" source="../media/stereokit-templates-visual-studio.png" alt-text="Screenshot of downloaded stereoKit templates in Visual Studio." lightbox="../media/stereokit-templates-visual-studio.png":::
 
 > [!Note]
 >Iteration is slower with Universal Windows Platform because it builds apps, so use it only if HoloLens is essential to you.
@@ -44,15 +44,15 @@ There are two templates provided:
 
 1. Download the StereoKit templates from [StereoKit Templates - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=NickKlingensmith.StereoKitTemplates).
 
-        :::image type="content" source="../media/download-stereokit-templates.png" alt-text="Screenshot of StereoKit Templates - Visual Studio Marketplace.” " lightbox="../media/download-stereokit-templates.png":::
+   :::image type="content" source="../media/download-stereokit-templates.png" alt-text="Screenshot of StereoKit Templates - Visual Studio Marketplace.” " lightbox="../media/download-stereokit-templates.png":::
 
 2. Open the downloaded file & click the **Install** button.
 
-        :::image type="content" source="../media/install-stereokit-templates.png" alt-text="Screenshot of VSIX installer dialogue box.” " lightbox="../media/install-stereokit-templates.png":::
+   :::image type="content" source="../media/install-stereokit-templates.png" alt-text="Screenshot of VSIX installer dialogue box.” " lightbox="../media/install-stereokit-templates.png":::
 
 3. Click **close** in the pop-up once the installation is complete.
 
-        :::image type="content" source="../media/close-stereokit-templates-installation.png" alt-text="Screenshot of VSIX installer close button.” " lightbox="../media/close-stereokit-templates-installation.png":::
+   :::image type="content" source="../media/close-stereokit-templates-installation.png" alt-text="Screenshot of VSIX installer close button.” " lightbox="../media/close-stereokit-templates-installation.png":::
 
 ## Enable Developer Mode
 
@@ -66,7 +66,7 @@ Enabling Developer Mode in HoloLens 2 & Windows PC makes it easier to test the r
 
 3. Select the **Update and Security** option from the menu.
 
-    :::image type="content" source="../media/hololens-update-security.png" alt-text=" The screenshot of Update & Security menu item." lightbox="../media/hololens-update-security.png":::
+   :::image type="content" source="../media/hololens-update-security.png" alt-text=" The screenshot of Update & Security menu item." lightbox="../media/hololens-update-security.png":::
 
 4. Select the menu item **For developers**.
 
@@ -74,7 +74,7 @@ Enabling Developer Mode in HoloLens 2 & Windows PC makes it easier to test the r
 
 6. Optional: Scroll down and enable Device Portal, which allows you to connect to your HoloLens Windows **Device Portal** from a web browser.
 
-    :::image type="content" source="../media/enable-developer-mode-hololens.png" alt-text="Screenshot shows enabling the developer mode." lightbox="../media/enable-developer-mode-hololens.png":::
+   :::image type="content" source="../media/enable-developer-mode-hololens.png" alt-text="Screenshot shows enabling the developer mode." lightbox="../media/enable-developer-mode-hololens.png":::
 
 ### Enable Developer Mode for Windows PC
 
@@ -84,12 +84,12 @@ If you're using a Windows Mixed Reality headset with your PC then, you have to e
 
 2. Select **Update and Security**.
 
-        :::image type="content" source="../media/update-security.png" alt-text="Screenshot of Select “Update and Security” menu item." lightbox="../media/update-security.png":::
+   :::image type="content" source="../media/update-security.png" alt-text="Screenshot of Select “Update and Security” menu item." lightbox="../media/update-security.png":::
 
 3. Next, select **For developers**.
 
-        :::image type="content" source="../media/for-developers-option.png" alt-text="Screenshot of Select “For developers” option." lightbox="../media/for-developers-option.png":::
+   :::image type="content" source="../media/for-developers-option.png" alt-text="Screenshot of Select “For developers” option." lightbox="../media/for-developers-option.png":::
 
 4. Enable **Developer Mode**, read the disclaimer for the selected setting, and then accept the change by selecting **Yes**.
 
-        :::image type="content" source="../media/enable-developer-mode.png" alt-text="Screenshot of On the toggle button to enable “Developer Mode.” " lightbox="../media/enable-developer-mode.png":::
+   :::image type="content" source="../media/enable-developer-mode.png" alt-text="Screenshot of On the toggle button to enable “Developer Mode.” " lightbox="../media/enable-developer-mode.png":::
