@@ -5,7 +5,7 @@ Here, we'll look at the structure of this data to understand what kinds of quest
 
 Let's take a look at a sample of the data to get to know the columns and types of data in the table. We don't need to see all rows, just a few examples.
 
-The `take` operator is perfect, as it returns a specified number of random rows. 
+The `take` operator is perfect, as it returns a specified number of arbitrary rows. 
 
 1. Copy this query to your clipboard and paste in the query editor of your sample environment. 
 
