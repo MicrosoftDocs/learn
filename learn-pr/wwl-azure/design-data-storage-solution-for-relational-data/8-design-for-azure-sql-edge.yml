@@ -4,7 +4,7 @@ title: Design for Azure SQL Edge
 metadata:
   title: Design for Azure SQL Edge
   description: "Design for Azure SQL Edge"
-  ms.date: 10/19/2021
+  ms.date: 11/03/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/7-design-for-azure-sql-edge.md)]
+  [!include[](includes/8-design-for-azure-sql-edge.md)]
