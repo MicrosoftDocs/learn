@@ -1,6 +1,6 @@
 As a security engineer working for Contoso, you recently noticed that a significant number of VMs were deleted from your Azure subscription. You want to analyze this occurrence and be alerted when a similar activity occurs in the future. You decide to implement an analytics rule to create an incident when someone deletes an existing VM. You can then investigate the incident to determine the details, and close the incident when you're finished.
 
-In this exercise, you'll create a Microsoft Sentinel analytics rule, delete a VM, and investigate the incident created by the rule. 
+In this exercise, you'll create a Microsoft Sentinel analytics rule, delete a VM, and investigate the incident created by the rule.
 
 > [!NOTE]
 > To complete this exercise, you need to have completed the setup exercise earlier in the module. If you haven't done that, please do it now.
@@ -53,7 +53,7 @@ In this task, you'll create an analytics rule that will create an incident when 
 In this task, you'll delete a VM to test rule detection and incident creation.
 
 1. In the Azure portal, search for and select **Virtual machines**.
-2. On the **Virtual machines** page, select the check box beside the virtual machine labeled `simple-vm`, and then select **Delete** from the toolbar.
+2. On the **Virtual machines** page, select the check box beside the virtual machine named **simple-vm**, and then select **Delete** from the toolbar.
 3. On the **Delete Resources** pane, enter **yes** in the **Confirm delete** field, and then select **Delete**.
 
   > [!NOTE]
@@ -67,7 +67,7 @@ In this task, you'll investigate the incident created when you deleted the VM in
 2. In the **Threat management** section, select **Incidents**.
 3. On the **Incidents** page, select the incident with the title **Deleted VMs**.
 4. On the details pane, observe the details of the incident, including **Owner**, **Status**, and **Severity**. Then:
-   
+
    1. Select **Owner** > **Assign to me** > **Apply**.
    1. Select **Status** > **Active** > **Apply**.
    1. Select **View full details**.
@@ -92,6 +92,6 @@ After you complete this exercise, you'll have created a Microsoft Sentinel analy
 To avoid incurring costs, delete the Azure resources that you created in this exercise when you're finished with them. To do this, complete the following steps:
 
 1. In the Azure portal, search for **Resource groups**.
-2. Select `azure-sentinel-rg`.
+2. Select **azure-sentinel-rg**.
 3. On the header bar, select **Delete resource group**.
 4. In the **TYPE THE RESOURCE GROUP NAME** field, enter `azure-sentinel-rg` and select **Delete**.

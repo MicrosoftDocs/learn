@@ -9,7 +9,7 @@ In this exercise, you will explore logs and Microsoft Sentinel Workbooks. You wi
 - Interact with logs data in the Microsoft Sentinel **Logs** page.
 - Create and edit a custom workbook to visualize important data.
 
-> [!NOTE] 
+> [!NOTE]
 > You must have completed the Exercise Setup unit before you can complete this exercise. If you have not done so, complete it now, and then continue with the exercise steps.
 
 ### Task 1: Work with Logs in Microsoft Sentinel
@@ -96,6 +96,6 @@ In this exercise, you will explore logs and Microsoft Sentinel Workbooks. You wi
 ### Clean up the resources
 
 1. In the Azure portal, search for **Resource groups**.
-2. Select `azure-sentinel-rg`.
+2. Select **azure-sentinel-rg**.
 3. On the header bar, select **Delete resource group**.
-4. In the **TYPE THE RESOURCE GROUP NAME:** field, enter the name of the resource group `azure-sentinel-rg` and select **Delete**. 
+4. In the **TYPE THE RESOURCE GROUP NAME:** field, enter the name of the resource group **azure-sentinel-rg** and select **Delete**.

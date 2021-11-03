@@ -10,7 +10,7 @@ In this exercise, you'll delete a VM, manage threat-hunting queries, and save ke
 In this task, you'll delete a VM to test rule detection and incident creation.
 
 1. In the Azure portal, search for and select **Virtual machines**.
-2. On the **Virtual machines** page, select the check box beside the virtual machine labeled `simple-vm`, and then select **Delete** from the toolbar.
+2. On the **Virtual machines** page, select the check box beside the virtual machine labeled **simple-vm**, and then select **Delete** from the toolbar.
 3. In the **Delete Resources** pane, enter **yes** in the **Confirm delete** field and select **Delete**.
 
 ## Manage Microsoft Sentinel threat-hunting queries
@@ -44,7 +44,7 @@ In this task, you'll create and manage threat-hunting queries to review events r
    >It might take up to 15 minutes for the deleted VM event to be sent to Microsoft Sentinel. You can periodically choose to run the query on the **Results** tab if the VM deletion event is not appearing.
 
 8. On the **Logs** page, in the **Results** section, select the listed event. It should have **{ "action": "Microsoft.Compute/virtualMachines/delete"** in the **Authorization** column. This is the event from the Azure Activity log that indicates that the VM was deleted.
-9.  Remain on this page for the next task.
+9. Remain on this page for the next task.
 
 ## Save key findings with bookmarks
 
@@ -68,6 +68,6 @@ In this exercise, you deleted a VM, managed threat-hunting queries, and saved ke
 When you're finished with the Azure resources that you created in this exercise, delete them to avoid incurring costs:
 
 1. In the Azure portal, search for **Resource groups**.
-2. Select `azure-sentinel-rg`.
+2. Select **azure-sentinel-rg**.
 3. In the header bar, select **Delete resource group**.
 4. In the **TYPE THE RESOURCE GROUP NAME** field, enter the name of the resource group `azure-sentinel-rg` and select **Delete**.

@@ -23,9 +23,9 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | **Instance details** |
     | Region | From the dropdown list, select the location where you want to deploy the Microsoft Sentinel. |
     | Workspace Name  | Provide a unique name for the Microsoft Sentinel Workspace such as `<yourName>-sentinel`, where *\<yourName>* represents the workspace name that you chose in the previous task. |
-    | Location | Accept the default value of `[resourceGroup().location]`. |
-    | Simplevm Name | Accept the default value of `simple-vm`. |
-    | Simplevm Windows OS Version | Accept the default value of `2016-Datacenter`. |
+    | Location | Accept the default value of **[resourceGroup().location]**. |
+    | Simplevm Name | Accept the default value of **simple-vm**. |
+    | Simplevm Windows OS Version | Accept the default value of **2016-Datacenter**. |
 
 1. Select the **Review + create**. When validation passes, select **Create**.
 
@@ -38,7 +38,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. In the Azure portal, search for **Resource groups**.
 
-1. Select `azure-sentinel-rg`.
+1. Select **azure-sentinel-rg**.
 
 1. Sort the list of resources by **Type**.
 
@@ -47,11 +47,10 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | Name  | Type  | Description |
     |---|---|---|
     | `<yourName>-sentinel` | Log Analytics workspace | Log Analytics workspace used by Microsoft Sentinel, where *\<yourName>* represents the workspace name that you chose in the previous task. |
-    | `simple-vmNetworkInterface` | Network interface | Network interface for the  VM. |
+    | `simple-vmNetworkInterface` | Network interface | Network interface for the VM. |
     | `SecurityInsights(<yourName>-sentinel)` | Solution | Security insights for Microsoft Sentinel. |
-    | `simple-vm` | Virtual machine | Virtual machine used in the demonstration. |
-    | `st1<xxxxx>` | Storage account | Storage account used by the virtual machine, where *\<xxxxx>* represents a random string generated to create a unique storage account name. |
-    | `simple-vm` | Virtual Machine | Virtual machine. |
+    | `simple-vm` | Virtual machine | Virtual machine (VM) used in the demonstration. |
+    | `st1<xxxxx>` | Storage account | Storage account used by the VM, where *\<xxxxx>* represents a random string generated to create a unique storage account name. |
     | `vnet1` | Virtual network | Virtual network for the VM. |
 
 > [!NOTE]

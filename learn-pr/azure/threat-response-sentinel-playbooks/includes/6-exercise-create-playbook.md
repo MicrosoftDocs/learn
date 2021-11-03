@@ -9,7 +9,7 @@ In this exercise, you will explore the Microsoft Sentinel playbooks by performin
 - Create a playbook to automate an action to respond to incidents.
 - Create a playbook from the Microsoft Sentinel repository on GitHub.
 
-> [!NOTE] 
+> [!NOTE]
 > You need to complete the Exercise Setup unit, in order to be able to complete this exercise. If you have not done so, complete it now, and then continue with the exercise steps.
 
 ### Task 1: Work with Microsoft Sentinel playbooks
@@ -87,7 +87,7 @@ In this exercise, you will explore the Microsoft Sentinel playbooks by performin
 3. In the **Delete virtual machine** prompt, select **Yes** to delete the virtual machine.
 
 > [!NOTE]
-> This task creates an incident based on the analytics rule that you created earlier in the exercise setup unit. Incident creation can take up to 15 minutes. Wait for it to complete before proceeding to the next step. 
+> This task creates an incident based on the analytics rule that you created earlier in the exercise setup unit. Incident creation can take up to 15 minutes. Wait for it to complete before proceeding to the next step.
 
 ### Task 3: Assign the playbook to an existing incident
 
@@ -115,6 +115,6 @@ In this exercise, you will explore the Microsoft Sentinel playbooks by performin
 ### Clean up the resources
 
 1. In the Azure portal, search for **Resource groups**.
-2. Select `azure-sentinel-rg`.
+2. Select **azure-sentinel-rg**.
 3. On the header bar, select **Delete resource group**.
-4. In the **TYPE THE RESOURCE GROUP NAME:** field, enter the name of the resource group `azure-sentinel-rg` and select **Delete**. 
+4. In the **TYPE THE RESOURCE GROUP NAME:** field, enter the name of the resource group **azure-sentinel-rg** and select **Delete**.

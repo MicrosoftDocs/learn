@@ -21,9 +21,9 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | **Resource Group** | Select **Create new** and provide a name for the resource group: `azure-sentinel-rg`. |
     | **Locations** | From the drop-down menu, select the location where you're deploying Microsoft Sentinel. |
     | **Workspace name**  | Provide a unique name for the Microsoft Sentinel workspace: `<yourName>-Sentinel`. |
-    | **Location** | Accept the default value, `[resourceGroup().location]`. |
-    | **Simplevm Name** | Accept the default value, `simple-vm`. |
-    | **Simplevm Windows OS Version** | Accept the default value, `2016-Datacenter`.|
+    | **Location** | Accept the default value, **[resourceGroup().location]**. |
+    | **Simplevm Name** | Accept the default value, **simple-vm**. |
+    | **Simplevm Windows OS Version** | Accept the default value, **2016-Datacenter**.|
 
 1. Select **Review + create**, and then select **Create**.
 
@@ -33,17 +33,17 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 ## Task 2: Check created resources
 
 1. In the Azure portal, search for **Resource groups**.
-2. Select `azure-sentinel-rg`.
+2. Select **azure-sentinel-rg**.
 3. Sort the list of resources by **Type**.
 4. The resource group should contain the resources displayed in this table.
 
     | Name  | Type  | Description |
     |---|---|---|
     | `<yourName>-Sentinel` | Log Analytics workspace | Log Analytics workspace that Microsoft Sentinel uses, where *\<yourName>* represents the workspace name that you chose in Task 1. |
+    | `simple-vmNetworkInterface` | Network interface | Network interface for the VM. |
     | `SecurityInsights(<yourName>-Sentinel)` | Solution | Security insights for Microsoft Sentinel. |
     | `simple-vm` | Virtual machine | Virtual machine (VM) used in the demonstration. |
-    | `simple-vmNetworkInterface` | Network interface | Network interface for the VM. |
-    | `st1<xxxxx>` | Storage account | Storage account that the VM uses, where *\<xxxxx>* represents a random string that's generated to create a unique storage account name. |
+    | `st1<xxxxx>` | Storage account | Storage account used by the VM, where *\<xxxxx>* represents a random string that's generated to create a unique storage account name. |
     | `vnet1` | Virtual network | Virtual network for the VM. |
 
 ## Task 3: Configure Microsoft Sentinel connectors

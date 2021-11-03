@@ -18,9 +18,9 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     |Resource Group|Select **Create new** and provide a name for the resource group such as `azure-sentinel-rg`.|
     |Locations|From the drop-down menu, select the location where you want to deploy Microsoft Sentinel.|
     |Workspace name|Provide a unique name for the Microsoft Sentinel Workspace such as `<yourName>-sentinel`. |
-    |Location|Accept the default value of `[resourceGroup().location]`.|
-    |Simplevm Name|Accept the default value of `simple-vm`.|
-    |Simplevm Windows OS Version|Accept the default value of `2016-Datacenter`.|
+    |Location|Accept the default value of **[resourceGroup().location]**.|
+    |Simplevm Name|Accept the default value of **simple-vm**.|
+    |Simplevm Windows OS Version|Accept the default value of **2016-Datacenter**.|
 
 1. Select **Review + create**, and then select **Create**.
 
@@ -32,19 +32,19 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 ## Task 2: Check the resources created
 
 1. In the Azure portal, search for **Resource groups**.
-2. Select `azure-sentinel-rg`.
+2. Select **azure-sentinel-rg**.
 3. Sort the list of resources by **Type**.
 4. The resource group should contain the resources listed in the following table.
 
     |Name|Type|Description|
     |---|---|---|
-    |*yourname*-Sentinel|Log Analytics workspace|Log Analytics workspace used by Microsoft Sentinel.|
-    |simple-vmNetworkInterface|Network interface|Network interface for the VM.|
-    |SecurityInsights(*yourname*-Sentinel)|Solution|Security insights for Microsoft Sentinel.|
-    |st1*xxxxx*|Storage account|Storage account used by the virtual machine.|
-    |simple-vm|Virtual machine|Virtual machine used in the demonstration.|
-    |vnet1|Virtual network|Virtual network for the VM.|
-    
+    | `<yourName>-sentinel` |Log Analytics workspace|Log Analytics workspace used by Microsoft Sentinel, where *\<yourName>* represents the workspace name that you chose in the previous task.|
+    | `simple-vmNetworkInterface` |Network interface|Network interface for the VM.|
+    | `SecurityInsights(<yourName>-sentinel)` |Solution|Security insights for Microsoft Sentinel.|
+    | `st1*xxxxx*` |Storage account|Storage account used by the virtual machine, where *\<xxxxx>* represents a random string generated to create a unique storage account name.|
+    | `simple-vm` | Virtual machine | Virtual machine (VM) used in the demonstration. |
+    | `vnet1` |Virtual network|Virtual network for the VM.|
+
 > [!NOTE]
 > The resources deployed and configuration steps completed in this exercise are required in the next exercise. If you intended completing the next exercise do not delete the resources from this exercise.
 
@@ -54,7 +54,7 @@ In this task, you will deploy a Microsoft Sentinel connector to Azure Activity.
 
 1. In the Azure portal, search for and select **Microsoft Sentinel**, and then select the previously created Microsoft Sentinel workspace.
 2. On the **Microsoft Sentinel** page, on the menu bar, in the **Configuration** section, select **Data connectors**.
-3. In the **Data connectors** pane, search and select **Azure Activity**. 
+3. In the **Data connectors** pane, search and select **Azure Activity**.
 4. In the details pane, select **Open connector page**.
 5. In the **Azure Activity** pane, select the **Configure Azure Activity logs** link.
 6. Select your subscription, and then select **Connect**.

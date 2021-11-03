@@ -12,7 +12,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     [![Deploy To Azure.](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-security-ops-sentinel%2Fmain%2Fmslearn-threat-response-sentinel-playbooks%2Fsentinel-template.json?azure-portal=true)
 
     You're prompted to sign in to Azure.
-    
+
 1. On the **Custom deployment** page, provide the following information:
 
     | Label | Description |
@@ -20,16 +20,16 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | Subscription | Select your Azure subscription. |
     | Resource Group | Select Create new and provide a name for the resource group such as `azure-sentinel-rg`.|
     | Region | From the drop-down menu, select the region where you want to deploy the Microsoft Sentinel. |
-    | Workspace name | Provide a unique name for the Microsoft Sentinel workspace such as *yourname*-Sentinel. |
-    | Location | Accept the default value of [resourceGroup().location]. |
-    | Simplevm Name | Accept the default value of simple-vm.|
-    | Simplevm Windows OS Version | Accept the default value of 2016-Datacenter.|
-        
+    | Workspace name | Provide a unique name for the Microsoft Sentinel workspace such as `<yourName>-Sentinel`, where *\<yourName>* represents the workspace name that you chose in the previous task. |
+    | Location | Accept the default value of **[resourceGroup().location]**. |
+    | Simplevm Name | Accept the default value of **simple-vm**.|
+    | Simplevm Windows OS Version | Accept the default value of **2016-Datacenter**.|
+
     :::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the custom deployment inputs for a Microsoft template." border="true":::
 
 1. Select **Review + create**, and then, when the data has been validated select **Create**.
- 
-     > [!Note]
+
+     > [!NOTE]
      > Wait for the deployment to complete. The deployment should take less than five minutes.
 
     :::image type="content" source="../media/02-custom-deployment-success.png" alt-text="Screenshot of the successful custom deployment." border="true":::
@@ -40,22 +40,22 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. Select **Home** and in **Azure services**, search for and select **Resource groups**.
 
-1. Select `azure-sentinel-rg`.
+1. Select **azure-sentinel-rg**.
 
 1. Sort the list of resources by **Type**.
- 
+
 1. The resource group should contain the resources displayed in the following table.
 
-    | Name|Type|Description |
+    | Name | Type | Description |
     | --- | --- |
-    | *yourname*-Sentinel|Log Analytics workspace|Log Analytics workspace used by Microsoft Sentinel. |
-    | simple-vmNetworkInterface|Network interface|Network interface for the VM. |
-    | SecurityInsights(*yourname*-Sentinel)|Solution|Security insights for Microsoft Sentinel. |
-    | st1*xxxxx*|Storage account|Storage account used by the virtual machine. |
-    | simple-vm|Virtual machine|Virtual machine used in the demonstration. |
-    | vnet1|Virtual network|Virtual network for the VM. |
+    | `<yourName>-Sentinel` |Log Analytics workspace|Log Analytics workspace used by Microsoft Sentinel, where *\<yourName>* represents the workspace name that you chose in the previous task. |
+    | `simple-vmNetworkInterface` |Network interface|Network interface for the VM. |
+    | `SecurityInsights(<yourName>-Sentinel)` |Solution|Security insights for Microsoft Sentinel. |
+    | `st1<xxxxx>` |Storage account|Storage account used by the virtual machine. |
+    | `simple-vm` |Virtual machine|Virtual machine (VM) used in the demonstration. |
+    | `vnet1` |Virtual network|Virtual network for the VM. |
 
-> [!Note]
+> [!NOTE]
 > The resources deployed and configuration steps completed in this exercise are required in the next exercise. If you intended completing the next exercise do not delete the resources from this exercise.
 
 ## Task 3: Configure Microsoft Sentinel Connectors
@@ -94,7 +94,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | Tactics | From the **Tactics** drop-down menu, choose **Initial Access** category to classify the rule following the MITRE tactics. |
     | Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, or Informational. |
     | Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generates a large number of false positives. |
-    
+
 1. On the **Set rule logic** page, in the **Rule query** section, enter the following query:
 
     ```kusto
