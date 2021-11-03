@@ -30,5 +30,3 @@ More access management can be accomplished when using multiple organizations. Yo
 
 When an organization member creates a repository, they can choose to make the repository public or private. In addition, when creating the repository in an organization that is owned by an enterprise account, they can choose to make the repository internal.
 Public repositories are accessible to everyone on the internet. Private repositories are only accessible to the user that created the repository and the people they explicitly share access with. Keep in mind that certain organization members have access to organization internal repositories.
-
-Detailed information about internal repositories is available here: [About internal repositories](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repository-visibility#about-internal-repositories)[About repository visibility](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repository-visibility#about-repository-visibility) 

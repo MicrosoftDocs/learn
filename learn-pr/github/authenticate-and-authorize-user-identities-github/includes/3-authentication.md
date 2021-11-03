@@ -1,5 +1,3 @@
-# User Authentication
-
 Here, you'll learn about two recommended authentication systems employed by GitHub Enterprises, and how to do a basic but important 2FA audit for user compliance.
 
 When it comes to user authentication, security should be the number one thing that comes to mind. Strong security is essential. It seems like every month or so a company reports a data breach. Credentials being stolen because of inefficient security processes or simply because a lack of up-to-date security features within the company. Establishing secure user authentication can be a difficult task if user adoption requires long and frustrating steps to authenticate. Ask any security professional and they'll mention several ways that companies authenticate their users.
