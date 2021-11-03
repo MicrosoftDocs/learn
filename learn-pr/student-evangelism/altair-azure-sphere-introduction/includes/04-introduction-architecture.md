@@ -35,7 +35,7 @@ The cloud-connected Altair on Azure Sphere project connects to the Web Terminal 
 
 The Web Terminal is an HTML/CSS/JavaScript application built on the [MQTT](https://www.eclipse.org/paho/index.php?page=clients/js/index.php&azure-portal=true) and [Xterm](https://xtermjs.org?azure-portal=true) JavaScript libraries.
 
-:::image type="content" source="../media/altair-web-terminal.png" alt-text="Diagram that shows the architecture of the MQTT-based Altair Web Terminal." border="false":::
+:::image type="content" source="../media/altair-web-terminal.jpg" alt-text="Diagram that shows the architecture of the MQTT-based Altair Web Terminal." border="false":::
 
 ## Altair Web Terminal Azure static web apps
 
