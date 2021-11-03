@@ -66,3 +66,16 @@ Now we will consider whether Azure Data Lake Storage is the right choice for you
 | When you need a Data warehouse on the cloud for managing large volumes of data| Azure Data Lake Storage runs on virtual hardware on the Azure platform, making storage scalable, fast, and reliable without incurring massive charges. It separates storage costs from compute costs. As your data volume grows, only your storage requirements change. |
 | When you need to manage a diverse collection of data types such as JSON files, CSV, log files or other diverse formats| Azure Data Lake Storage enables data democratization for your organization by storing all your data formats (including raw data) in a single location. Eliminating data silos enables users to use a tool such as Azure Data Explorer to access and work with every data item in their storage account. |
 | When you need real time data ingestion and storage| Azure Data Lake Storage can ingest real-time data directly from an instance of Apache Storm on Azure HDInsight, Azure IoT Hub, Azure Event Hubs, or Azure Stream Analytics. It also works with semi-structured data and lets you ingest all your real-time data into your storage account. |
+
+
+**When would you choose Azure Blob Storage over Azure Data Lake?**
+
+Let us look at some criteria that will help you decide when to pick one storage solution over the other. In the following table, the two storage solutions are compared against a set of criteria.
+
+| **Criteria**| **Azure Data Lake**| **Azure Blob Storage** |
+| - | -| - |
+| Data type| Good for storing large volumes of text data| Good for storing unstructured non-text based data such as photos, videos, backup etc. |
+| Geographic redundancy| Need to set up replication of data| By default, provides geo redundant storage |
+| Namespaces support| Supports hierarchical namespaces| Supports flat namespaces |
+| Hadoop compatibility| Hadoop services can use data stored in Data Lake| Is not Hadoop compatible |
+| Security| Allows for more granular access| Granular access not supported |
