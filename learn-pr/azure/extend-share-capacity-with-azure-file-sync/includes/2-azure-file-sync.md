@@ -6,7 +6,7 @@ In this unit, you'll explore what Azure File Sync is, how it works, and what you
 
 ## Extend storage capacity
 
-Azure File Sync uses your on-premises file server as a local cache for your Azure file share. With cloud tiering, you can cache the files your organization uses the most locally on your file serve. The files that are used less frequently are accessible from the same local share, but only a pointer to the data is stored there. When a user goes to open the file, the rest of the file data is pulled from Azure Files.
+Azure File Sync uses your on-premises file server as a local cache for your Azure file share. With cloud tiering, you can cache the files your organization uses the most locally on your file server. The files that are used less frequently are accessible from the same local share, but only a pointer to the data is stored there. When a user goes to open the file, the rest of the file data is pulled from Azure Files.
 
 The following diagram shows what happens when a user requests two files. File A is used frequently, so the entire file is available on the local file share. File B isn't used often, so the file is retrieved from the Azure file share.
 
