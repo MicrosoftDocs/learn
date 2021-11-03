@@ -42,7 +42,7 @@ Only users who legitimately need access to your organization's data should have 
 
 The codes used for 2FA expire in a short amount of time. Once expired, the login attempt is no longer valid and the access request is canceled. By enabling 2FA, your user's accounts will be better protected from malicious attacks and data breaches. In your GitHub enterprise, your users have three ways that they can authenticate with 2FA; security keys, TOTP, and SMS.
 
-#### Security Keys
+#### Security keys
 
 With security keys, your enterprise can achieve a higher level of user security and protection. With two-factor authentication enabled, security keys provide a strong, convenient, and phishing-proof option for 2FA. Authentication with a security key requires that TOTP or SMS authentication has already been completed. On most devices, you can use a physical security key over USB or NFC. A user can register a new security key through accessing their profile setting following the security key’s documentation. Using these keys is the most secure form of 2FA, because they're nearly impossible for a malicious party to replicate. When using a security key, none of the sensitive information ever leaves the physical security key device. Authentication with a security key is the most secure way to authenticate, but your users will need to complete one of the following authentication methods to configure the key.
 
