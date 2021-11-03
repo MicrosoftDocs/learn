@@ -1,31 +1,31 @@
 The **Publish** wizard in the Azure Functions template provides the most straightforward way to deploy Azure Functions, especially for testing purposes.
 
-In the luxury watch online website scenario, you've decided to use Visual Studio to deploy your functions to an Azure Function App in the cloud. First, you'll create an Azure Function App, and to deploy your functions, in Visual Studio, you'll use the **Publish** wizard.
+In the luxury watch online website scenario, you've decided to use Visual Studio to deploy functions to an Azure Function App in the cloud. First, you'll create an Azure Function App, and then use the Visual Studio **Publish** wizard to deploy the functions you create.
 
-In this exercise, you'll see how to use the Azure portal to create an Azure Function App. Then, you'll deploy the **WatchInfo** function. Lastly, you'll test the function to verify that it has been deployed correctly.
+In this exercise, you'll use the Azure portal to create an Azure Function App. Then, you'll deploy the **WatchInfo** function using the Visual Studio project that you created in a previous exercise. Lastly, you'll test the function to verify that it has been deployed correctly.
 
 ## Create an Azure Function App using the Azure portal
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. From the Azure portal home page, under **Azure services**, select **Create a resource**.
+1. From the resource menu or the Home page, select **Create a resource**.
 
     ![Screenshot of Azure portal menu and Create a resource option.](../media/5-create-a-resource.png)
 
     The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and under *Popular services*, select **Function App**.
+1. In the **Create a resource** menu, select **Compute**, and then, in the results list, select **Function App**.
 
-    ![Screenshot of the Compute and Function App options.](../media/5-compute-function-app.png)
+    ![Screenshot of Compute category and Function App service option.](../media/5-compute-function-app.png)
 
-    <!-- [!include[](../../includes/functions-classic-workaround.md)] -->
+    <!-- [!INCLUDE [](../../includes/functions-classic-workaround.md)] -->
 
     The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
     > [!NOTE]
-    > The function app must have a unique name. We suggest using something like **\<*your name or initials*\>watchfunctions**. In this exercise, use this name wherever you see *\<your-function-app-name\>*.
+    > Your function app must have a name unique to Azure. We suggest using something like **\<*your initials*\>watchfunctions**. Use this name wherever you see *\<your-function-app-name\>* in the remainder of the exercise.
 
     | Setting | Value |
     | --- | --- |
@@ -43,18 +43,18 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 1. On the **Hosting** tab, enter the following values for each setting.
 
-    | Setting  | Value |
-    | --------- | --------- |
+    | Setting | Value |
+    | ------- | ----- |
     | **Storage** |
-    | Storage account | *Accept the default name* |
+    | Storage account | *Accept the default value* |
     | **Operating system** |
     | Operating System | Windows |
     | **Plan** |
     | Plan type | Consumption (Serverless) |
 
-1. Select **Review + create**, and then select **Create**. Wait while the Function App is created before continuing.
+1. Select **Review + create**, and then select **Create**. The deployment shows the resources that are creatd for the Function App.
 
-1. After deployment completes, select **Go to resource**. Your Function App pane appears.
+1. When deployment completes, select **Go to resource**. The Function App pane for *\<your-function-app-name\>* appears.
 
 ## Deploy the WatchInfo function to the Azure Function App
 
