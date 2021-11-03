@@ -21,15 +21,15 @@ new HandRadialLayer("Root", -90,new HandMenuItem("Undo", null, ()=>activePaintin
 
 **HandMenuItem** : this is a collection of data about how a single hand menu item appears and behaves.
 
-### Undo and Redo buttons
+### 1. Undo and Redo buttons
 
 :::image type="content" source="../media/undo-redo-buttons.png" alt-text="Screenshot of Undo and Redo buttons.” " lightbox="../media/undo-redo-buttons.png":::
 
 * **Undo button** -  Undo method removes the last stroke from the painting by pushing it into the undo stack.
 
 ```c#
-List<LinePoint[]>  _strokeList   = new List<LinePoint[]>();
-Stack<LinePoint[]> _undoStack    = new Stack<LinePoint[]>();
+List<LinePoint[]> _strokeList = new List<LinePoint[]>();
+Stack<LinePoint[]> _undoStack = new Stack<LinePoint[]>();
 ```
 
 ```c#
@@ -50,7 +50,7 @@ _strokeList.Add(_undoStack.Pop());
 The **Painting.cs** class is used to create the drawing functionality in painting. The information for this painting will be provided from the main program to produce brush strokes in the drawing.
 
 ```c#
-static Painting    activePainting = new Painting();
+static Painting activePainting = new Painting();
 ```
 
 ```c#
@@ -64,7 +64,7 @@ By making the whole painting as a child of the handle, we can move it around whi
 :::image type="content" source="../media/handle.png" alt-text="Screenshot of handle.” " lightbox="../media/handle.png":::
 
 ```c#
-Pose _pose  = new Pose(0, 0, -0.8f, Quat.Identity);
+Pose _pose = new Pose(0, 0, -0.8f, Quat.Identity);
 ```
 
 ```c#
@@ -92,7 +92,7 @@ The hand's position data is always provided in world space. However, since we'll
 :::image type="content" source="../media/hand.png" alt-text="Screenshot of hand.” " lightbox="../media/hand.png":::
 
 ```c#
-Hand hand      = Input.Hand(handed);
+Hand hand = Input.Hand(handed);
 Vec3 fingertip = hand[FingerId.Index, JointId.Tip].position;
 fingertip = Hierarchy.ToLocal(fingertip);
 fingertip = Vec3.Lerp(_prevFingertip, fingertip, 0.3f);
@@ -102,7 +102,7 @@ fingertip = Vec3.Lerp(_prevFingertip, fingertip, 0.3f);
 
 **FingerId.Index** : Finger 1 is the primary index or pointer finger.
 
-**JoinId.Tip** - Each finger's end or tip.
+**JoinId.Tip** : Each finger's end or tip.
 
 If the user made a pinching gesture and isn't interacting with the UI, the application starts with a paint stroke.
 

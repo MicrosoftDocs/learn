@@ -1,4 +1,4 @@
-From the previous chapter, you have a basic understanding of StereoKit Ink Application. In this module, how the StereoKit Ink application was developed will be covered along with its scripts.
+From the previous chapter, you have a basic understanding of StereoKit Ink application. In this module, how the StereoKit Ink application was developed will be covered along with its scripts.
 
 > [!Important]
 > Make sure you have installed **StereoKit's Visual Studio template**.
@@ -10,21 +10,21 @@ First, download the StereoKit Ink sample application from [GitHub repository](ht
 > [!Note]
 > The program will contain errors, which will clear at a later time during debugging.
 
-The Main Program - **program.cs**. This program integrates the hand menu, the application menu, and the application logic, and it is the main program that binds everything together.
+The Main Program is created using **program.cs** class. This program integrates the hand menu, the application menu, and the application logic, and it is the main program that binds everything together.
 
 The project starts with a few initializations. First, we can prepare a few settings, such as the **assets folder** and **appName**. Then, with the help of initialization, basic needs like getting hands, environment, and lighting will be present right away.
 
 ``` c#
 SKSettings settings = new SKSettings
   {
-   appName      = "StereoKit Ink",
+   appName = "StereoKit Ink",
    assetsFolder = "Assets",
   };
   if (!SK.Initialize(settings))
   Environment.Exit(1);
 ```
 
-**AssetsFolder** is the folder that StereoKit will look for assets when provided with a relative folder name. In this project, 3D models are in **.glb** extensions and image with **.png** extensions are stored.
+**assetsFolder** : Is the folder that StereoKit will look for assets when provided with a relative folder name. In this project, 3D models are in **.glb** extensions and image with **.png** extensions are stored.
 
 ## Ink tools window
 
@@ -38,24 +38,24 @@ The Ink window is a standard window that carries all ink brush settings, and the
 UI.WindowBegin("Menu", ref menuPose, UIWin.Body);
 ```
 
-* UI.WindowBegin function creates a new window, where the **INK** text can be added on top of the window.
+**UI.WindowBegin** : Function creates a new window, where the **ink** text can be added on top of the window.
 
 ``` c#
-Pose        menuPose       = new Pose(0.4f, 0, -0.4f, Quat.LookDir(-1,0,1));
+Pose menuPose = new Pose(0.4f, 0, -0.4f, Quat.LookDir(-1,0,1));
 ```
 
-* This will add a new pose to the transform. The window's top-center is the location of the pose.
+**Pose** : This will add a new pose to the transform. The window's top-center is the location of the pose.
 
 > Pose represents a location and orientation in space, excluding scale
+
+For opened window, we will be loading InkBottle and InkSplat models from the asset folder.
 
 ```c#
 Model _model       = Model.FromFile("InkBottle.glb");
 Model _swatchModel = Model.FromFile("InkSplat.glb");
 ```
 
-* For opened window, we will be loading INKBOTTLE and iNKSPLAT models from the asset folder.
-
-> Model Class - A model is a visual element made up of meshes, materials, and transforms. It is an excellent technique to put together large things with several sections, and most of the model formats are constructed in this way.
+**Model Class** : A model is a visual element made up of meshes, materials, and transforms. It is an excellent technique to put together large things with several sections, and most of the model formats are constructed in this way.
 
 ```c#
 UI.Model(_model, V.XY(0, UI.LineHeight*2));
@@ -63,9 +63,11 @@ UI.Model(_model, V.XY(0, UI.LineHeight*2));
 
   :::image type="content" source="../media/inkpot.png" alt-text="Screenshot of inkpot model in Ink tools window.” " lightbox="../media/inkpot.png":::
 
-* UI.Model - Creates a single mesh subset Model using the indicated Mesh and Material. To highlight the area's purpose, display an ink bottle. The x-axis will autofill to center the Model, and we'll make it two lines tall using the size specified here. **V.VY** Creates a Vec2. This is a straight alternative to **new Vec2(x, y)**.
+**UI.Model** : Creates a single mesh subset Model using the indicated Mesh and Material. To highlight the area's purpose, display an ink bottle. The x-axis will autofill to center the Model, and we'll make it two lines tall using the size specified here. **V.VY** Creates a Vec2. This is a straight alternative to **new Vec2(x, y)**.
 
-The bottom of the INK window has an INK model that shows a list of colors swatches that are pre-selected and displayed in the window.
+### 1. Swatches
+
+ The bottom of the ink window has an ink model that shows a list of colors swatches that are pre-selected and displayed in the window.
 
   :::image type="content" source="../media/inkcolor.png" alt-text="Screenshot of ink colors in ink tools window.” " lightbox="../media/inkcolor.png":::
 
@@ -100,16 +102,17 @@ void SwatchColor(string id, float hue, float saturation, float value)
  }
 ```
 
-* SwitchColor() method - using bound reserves the swatch and using color represents to draw the swatch model. Pseudo-random rotation keeps it shuffled.
-* When a user interacts with the swatch model's volume, the vibrant color will change and add some sound effects.
+**Matrix.TR** - In StereoKit, a matrix is a 4x4 grid. Numbers in the matrix represent a transformation for every position or vector. Here Matrix. TR is used for the rotation of the swatch.
 
-## Keywords
+**SwitchColor() method** : using bound reserves the swatch and using color represents to draw the swatch model. Pseudo-random rotation keeps it shuffled.
 
-* **Bounds** - Bounds is a type of axis-aligned bounding box that can store item sizes, calculate confinement, intersections, and more.
+**Bounds** : Bounds is a type of axis-aligned bounding box that can store item sizes, calculate confinement, intersections, and more.
+
+When a user interacts with the swatch model's volume, the vibrant color will change and add some sound effects.
+
+#### Keywords
 
 * **U.cm** - Converts centimeters to meters.
-
-* **Matrix.TR** - In StereoKit, a matrix is a 4x4 grid. Numbers in the matrix represent a transformation for every position or vector. Here Matrix. TR is used for the rotation of the swatch.
 
 * **BtnState** - A bit-flag represents the current state of a button input.
 
@@ -121,30 +124,34 @@ void SwatchColor(string id, float hue, float saturation, float value)
   UI.SameLine();
   ```
 
-* **Slider insatiate** - swatches are not limited. Hence there is some slider to adjust HSV the color manually. Then we can have a fixed-size label and add a fixed-size slider to the same line. Fixing the sizes are aligned in the column using:
+### 2. Slider instantiate
 
-    ```c#
-    UI.Label("Hue", V.XY(8*U.cm, UI.LineHeight));
-        UI.SameLine();
-        if (UI.HSlider("Hue", ref _hue, 0, 1, 0, 22*U.cm, UIConfirm.Pinch))
-            SetColor(_hue, _saturation, _value);
-    ```
+swatches are not limited. Hence there is some slider to adjust HSV the color manually. Then we can have a fixed-size label and add a fixed-size slider to the same line. Fixing the sizes are aligned in the column using:
 
-  * UI.Lable - Adds some text to the layout
-  * UI.Hslider - Make a horizontal slider element called Hue. You can slide the value up and down.
-  * Set color() - This method updates the INK model and hand color by creating a Red/Green/Blue gamma space color from Hue/Saturation/Value information.
+```c#
+UI.Label("Hue", V.XY(8*U.cm, UI.LineHeight));
+    UI.SameLine();
+    if (UI.HSlider("Hue", ref _hue, 0, 1, 0, 22*U.cm, UIConfirm.Pinch))
+        SetColor(_hue, _saturation, _value);
+```
 
-  * Using the same methods, we can create sliders for saturation and value.
+**UI.Lable** : Adds some text to the layout.
 
-* Within the UI window, we can add on the separation by using the below method that adds the line between UI elements
+**UI.Hslider** : Make a horizontal slider element called Hue. You can slide the value up and down.
 
-    ```c#
-    UI.HSeparator();
-    ```
+**Set color()** : This method updates the ink model and hand color by creating a Red/Green/Blue gamma space color from Hue/Saturation/Value information. Using the same methods, we can create sliders for saturation and value.
 
-* **Brush size** - There are four different size swatch models in the window, similar to color swatches but more control over brush size.
+Within the UI window, we can add on the separation by using the below method that adds the line between UI elements
 
-    :::image type="content" source="../media/brush-size.png" alt-text="Screenshot of brush size slider.” " lightbox="../media/brush-size.png":::
+```c#
+UI.HSeparator();
+```
+
+### 3. Brush size
+
+There are four different size swatch models in the window, similar to color swatches but more control over brush size.
+
+  :::image type="content" source="../media/brush-size.png" alt-text="Screenshot of brush size slider.” " lightbox="../media/brush-size.png":::
 
  ```c#
  float _size  = 2 * U.cm;
@@ -193,16 +200,16 @@ void SwatchColor(string id, float hue, float saturation, float value)
   UI.WindowEnd();
   ```
 
-  * There will be a preview of the brush size. Then, with the box to handle the brush stroke's size, preview the stroke with a cube scaled to the brush's size.
-  
+* There will be a preview of the brush size. Then, with the box to handle the brush stroke's size, preview the stroke with a cube scaled to the brush's size.
+
   ```c#
   Bounds linePreview = UI.LayoutReserve(V.XY(0, 0.05f));
   linePreview.dimensions.y = _size;
   linePreview.dimensions.z = U.cm;
   Mesh.Cube.Draw(Material.Unlit, Matrix.TS(linePreview.center, linePreview.dimensions), _color);
   ```
-  
-  * **Matrix.TS** - Translate, Scale that creates a transform Matrix using both these components.
+
+**Matrix.TS** : Translate, Scale that creates a transform Matrix using both these components.
 
 ## Ink functional window
 
@@ -210,7 +217,10 @@ Ink functional window contains of functional buttons such as Undo, Redo, Clear, 
 
   :::image type="content" source="../media/ink-functional-window.png" alt-text="Screenshot of On the toggle button to enable “Developer Mode.” " lightbox="../media/ink-functional-window.png":::
 
-The function **StepMenuWindow()** in the main program(**program.cs**) script is used to initialization **INK Functional Window**.
+The function **StepMenuWindow()** in the main program(**program.cs**) script is used to initialization **Ink Functional Window**.
+
+**Ink functional window** is started using **UI.WindowBegin** function.
+This window is only with body form without the headboard since StereoKitInkLight is an excellent application picture that can be used.
 
 ```c#
 static Pose menuPose = new Pose(0.4f, 0, -0.4f, Quat.LookDir(-1,0,1));
@@ -218,14 +228,13 @@ static Pose menuPose = new Pose(0.4f, 0, -0.4f, Quat.LookDir(-1,0,1));
 UI.WindowBegin("Menu", ref menuPose, UIWin.Body);
 ```
 
-**Ink functional window** is started using **UI.WindowBegin** function.
-This window is only with body form without the headboard since StereoKitInkLight is an excellent application picture that can be used.
+The below code adds the application logo on the window top. **V.XY** instructs StereoKit to auto-size both axes, causing this to stretch to the window's width.
 
 ```c#
 UI.Image(appLogo, V.XY(UI.LayoutRemaining.x, 0));
 ```
 
-The above code adds the application logo on the window top. **V.XY** instructs StereoKit to auto-size both axes, causing this to stretch to the window's width.
+Undo and redo functional button is added using **UI.Button**.
 
 ```c#
 if (UI.Button("Undo")) activePainting?.Undo();
@@ -233,8 +242,6 @@ UI.SameLine();
 if (UI.Button("Redo")) activePainting?.Redo();
 ```
 
-Undo and redo functional button is added using **UI.Button**.
+On the same basis, all other buttons can be added, such as Save, Load, Clear, and Quit.
 
-* On the same basis, all other buttons can be added, such as Save, Load, Clear, and Quit.
-
-> **UI.Button**  - A button that can be clicked and can extend vertically and horizontally to suit the text provided to the button.
+**UI.Button**  : A button that can be clicked and can extend vertically and horizontally to suit the text provided to the button.
