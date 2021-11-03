@@ -9424,6 +9424,31 @@
       "source_path": "learn-pr/wwl-azure/design-compute-solution/9-design-for-azure-kubernetes-solutions.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-compute-solution/7-design-for-azure-kubernetes-solutions",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-integration/3-solution-azure-data-brick.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration/5-solution-azure-data-brick",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-integration/4-solution-azure-data-lake.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration/3-solution-azure-data-lake",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-integration/5-solution-azure-blob-storage.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration/4-solution-azure-blob-storage",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-integration/7-design-strategy-for-hot-warm-cold-data-path.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration/8-design-strategy-for-hot-warm-cold-data-path",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-integration/7-design-strategy-for-hot-warm-cold-data-path.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration/8-design-strategy-for-hot-warm-cold-data-path",
+      "redirect_document_id": true
     }
   ]
 }
