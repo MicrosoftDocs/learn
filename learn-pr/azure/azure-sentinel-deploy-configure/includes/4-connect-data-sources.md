@@ -55,17 +55,17 @@ In this example, we'll connect to Azure AD from Microsoft Sentinel:
 1. On the Azure portal, under the **All service** option, select **Microsoft Sentinel**.
 1. From the **navigation** menu, select **Data Connectors**. This page lists all the connectors that Microsoft Sentinel provides and their status.
 
-    :::image type="content" source="../media/sentinel-azure-ad-connector-page.png" alt-text="Screenshot of the Azure Sentinel connector page with the list of connectors." border="true":::
+    :::image type="content" source="../media/sentinel-azure-ad-connector-page.png" alt-text="Screenshot of the Microsoft Sentinel connector page with the list of connectors." border="true":::
 
 1. On the **Data Connectors** page, select the **Azure Active Directory** tile. The Microsoft Sentinel **Azure Active Directory** connector page opens.
 
-    :::image type="content" source="../media/sentinel-azure-ad-connector-2.png" alt-text="Screenshot of the Azure Sentinel Azure Active Directory connector page." border="true":::
+    :::image type="content" source="../media/sentinel-azure-ad-connector-2.png" alt-text="Screenshot of the Microsoft Sentinel Azure Active Directory connector page." border="true":::
 
 1. Read the prerequisites and make sure you've fulfilled them. Then follow the instructions to connect the data source.
 
 1. Select both **Azure Active Directory Sign-in logs** and **Azure Active Directory Audit logs**.
 
-    :::image type="content" source="../media/sentinel-azure-ad-connector-3.png" alt-text="Screenshot of the Azure Sentinel connector configuration options." border="true":::
+    :::image type="content" source="../media/sentinel-azure-ad-connector-3.png" alt-text="Screenshot of the Microsoft Sentinel connector configuration options." border="true":::
 
 ### Validate your data source connection
 
@@ -73,7 +73,7 @@ After you connect your data sources to Microsoft Sentinel, you get data visualiz
 
 To confirm that your connectors work, go to the Azure portal. In the Azure portal, select **Microsoft Sentinel**, and then select the workspace that you used when you enabled Microsoft Sentinel.
 
-:::image type="content" source="../media/sentinel-analytics.png" alt-text="Screenshot of the Azure Sentinel - Analytics overview page." border="false":::
+:::image type="content" source="../media/sentinel-analytics.png" alt-text="Screenshot of the Microsoft Sentinel - Analytics overview page." border="false":::
 
 The main body of the overview page provides insight into the security status of your workspace. The following screenshot shows the events and alerts over time section.
 

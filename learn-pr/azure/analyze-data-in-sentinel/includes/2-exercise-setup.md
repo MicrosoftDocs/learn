@@ -77,7 +77,7 @@ In this task, you'll deploy a Microsoft Sentinel connector to Azure Activity.
 
 1. When you receive a status of **Connected**, close all open panels to return to **Microsoft Sentinel | Data connector**.
 
-:::image type="content" source="../media/07-azure-sentinel-connector.png" alt-text="Screenshot of the Azure Sentinel connector." border="true":::
+:::image type="content" source="../media/07-azure-sentinel-connector.png" alt-text="Screenshot of the Microsoft Sentinel connector." border="true":::
 
 > [!Note]
 > The connector for Azure Activity could take 20 minutes to send data in Microsoft Sentinel. You can proceed with rest of the steps and with other units of this module.

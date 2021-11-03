@@ -24,7 +24,7 @@ SIEM solutions store and analyze log data and event telemetry that they ingest f
 
 The following image shows a Sentinel hybrid architecture.
 
-:::image type="content" source="../media/image16.png" alt-text=" Log telemetry for on-premises workloads and workloads in third-party clouds is forwarded to Azure Security Center and Azure Sentinel." lightbox="../media/image16.png":::
+:::image type="content" source="../media/image16.png" alt-text=" Log telemetry for on-premises workloads and workloads in third-party clouds is forwarded to Microsoft Defender for Cloud and Microsoft Sentinel." lightbox="../media/image16.png":::
 
 Microsoft Sentinel can perform the following tasks when it's supporting hybrid environments:
 

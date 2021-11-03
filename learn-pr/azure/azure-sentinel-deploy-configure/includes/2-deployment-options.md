@@ -28,7 +28,7 @@ Microsoft Sentinel comes with a number of connectors for Microsoft and other sol
 
 Additionally, there are built-in connectors to the broader security ecosystem for non-Microsoft solutions. You can also use Common Event Format (CEF), Syslog, or a REST API to connect your data sources with Microsoft Sentinel. The following image shows this connectivity capability.
 
-:::image type="content" source="../media/sentinel-connections.png" alt-text="Diagram showing multiple data connections to Azure Sentinel." border="false":::
+:::image type="content" source="../media/sentinel-connections.png" alt-text="Diagram showing multiple data connections to Microsoft Sentinel." border="false":::
 
 ### Key factors for Microsoft Sentinel deployment
 
@@ -113,4 +113,4 @@ Let's look at the basic structure of this Sentinel workspace. Sentinel is a clou
 
 The following screenshot shows the **Microsoft Sentinel - Overview** pane. Microsoft Sentinel can display real time charts and graphs to help you understand events, alerts, and incidents for security operations.
 
-:::image type="content" source="../media/azure-sentinel-dashboard.png" alt-text="Screenshot of Azure Sentinel - Overview pane with several graphs and charts, including events and alerts over time, recent incidents, potential malicious events, and the total number of events, alerts, and incidents." lightbox="../media/azure-sentinel-dashboard.png"border="false":::
+:::image type="content" source="../media/azure-sentinel-dashboard.png" alt-text="Screenshot of Microsoft Sentinel - Overview pane with several graphs and charts, including events and alerts over time, recent incidents, potential malicious events, and the total number of events, alerts, and incidents." lightbox="../media/azure-sentinel-dashboard.png"border="false":::

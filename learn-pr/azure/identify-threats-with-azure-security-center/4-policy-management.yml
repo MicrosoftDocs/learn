@@ -2,8 +2,8 @@
 uid: learn.azure-security.identify-threats-with-azure-security-center.policy-management
 title: Centralized policy management with Microsoft Defender for Cloud
 metadata:
-  title: Centralized policy management with Azure Security Center
-  description: Centralized policy management with Azure Security Center
+  title: Centralized policy management with Microsoft Defender for Cloud
+  description: Centralized policy management with Microsoft Defender for Cloud
   ms.date: 09/30/2019
   author: adrianstevens
   ms.author: adsteven

@@ -72,7 +72,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. When you receive a status of **Connected**, close all open panels to return to the **Microsoft Sentinel | Data connector** panel.
 
-    :::image type="content" source="../media/02-azure-sentinel-connector.png" alt-text="Screenshot that displays the Azure Sentinel connector." border="true":::
+    :::image type="content" source="../media/02-azure-sentinel-connector.png" alt-text="Screenshot that displays the Microsoft Sentinel connector." border="true":::
 
     > [!Note]
     > The connector for Azure Activity could take 15 minutes until Microsoft Sentinel displays a date. You can continue performing the rest of the steps in this unit and subsequent units in this module.

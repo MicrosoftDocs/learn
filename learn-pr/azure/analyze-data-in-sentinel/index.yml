@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.analyze-data-in-sentinel
 metadata:
-  title: Threat detection with Azure Sentinel analytics
-  description: Threat detection with Azure Sentinel analytics
+  title: Threat detection with Microsoft Sentinel analytics
+  description: Threat detection with Microsoft Sentinel analytics
   ms.date: 12/15/2020
   author: micrum
   ms.author: micrum

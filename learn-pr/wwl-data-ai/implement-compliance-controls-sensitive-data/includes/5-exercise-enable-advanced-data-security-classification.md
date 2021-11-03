@@ -26,11 +26,11 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. From the main blade of your Azure SQL server, navigate to the **Security** section, and select **Defender for Cloud**.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-24.png" alt-text="Screenshot of selecting the Security Center.":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-24.png" alt-text="Screenshot of selecting the Defender for Cloud.":::
 
 1. Select the toggle switch under **Microsoft Defender for SQL** to **ON**, and then select **Storage account**.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-21.png" alt-text="Screenshot of switching on AZURE DEFENDER FOR SQL.":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-21.png" alt-text="Screenshot of switching on Microsoft Defender for SQL.":::
 
     On the **Choose storage account** page, select **+ Create new**.
 

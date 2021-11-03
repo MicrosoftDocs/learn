@@ -14,7 +14,7 @@ To start Microsoft Defender for Cloud:
 
 The Defender for Cloud's overview page opens.
 
-:::image type="content" source="../media/overview.png" alt-text="Security Center Overview." lightbox="../media/overview.png":::
+:::image type="content" source="../media/overview.png" alt-text="Defender for Cloud Overview." lightbox="../media/overview.png":::
 
 Defender for Cloud – Overview provides a unified view into the security posture of your hybrid cloud workloads, enabling you to discover and assess the security of your workloads and identify and mitigate risk. Defender for Cloud automatically, at no cost, enables any of your Azure subscriptions not previously onboarded by you or another subscription user.
 
@@ -32,7 +32,7 @@ To take full advantage of Defender for Cloud, you need to complete the steps bel
 
 From Defender for Cloud's sidebar, select Getting started:
 
-:::image type="content" source="../media/get-started-upgrade-tab.png" alt-text="Security Center Getting Started page.":::
+:::image type="content" source="../media/get-started-upgrade-tab.png" alt-text="Defender for Cloud Getting Started page.":::
 
 The Upgrade tab lists subscriptions and workspaces eligible for onboarding. To upgrade a workspace do the following:
 
@@ -48,4 +48,4 @@ You can protect an entire Azure subscription with Microsoft Defender for Cloud, 
 
 Below is the pricing page for an example subscription. You'll notice that each plan in Microsoft Defender for Cloud is priced separately and can be individually set to on or off.
 
-:::image type="content" source="../media/defender-plans.png" alt-text="Azure Defender Plans." lightbox="../media/defender-plans.png":::
+:::image type="content" source="../media/defender-plans.png" alt-text="Microsoft Defender plans." lightbox="../media/defender-plans.png":::

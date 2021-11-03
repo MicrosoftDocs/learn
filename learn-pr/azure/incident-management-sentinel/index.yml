@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.incident-management-sentinel
 metadata:
-  title: Security incident management in Azure Sentinel
-  description: Security incident management in Azure Sentinel
+  title: Security incident management in Microsoft Sentinel
+  description: Security incident management in Microsoft Sentinel
   ms.date: 12/15/2020
   author: micrum
   ms.author: micrum

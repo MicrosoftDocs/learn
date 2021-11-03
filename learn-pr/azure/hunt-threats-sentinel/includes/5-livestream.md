@@ -15,7 +15,7 @@ To create a livestream from the **Hunting** page in Microsoft Sentinel, select t
 >[!NOTE]
 >Livestream queries run continuously against your live environment, so you can't use time parameters in a livestream query.
 
-:::image type="content" source="../media/5-new-livestream.png" alt-text="Screenshot that shows the livestream creation page in Azure Sentinel." :::
+:::image type="content" source="../media/5-new-livestream.png" alt-text="Screenshot that shows the livestream creation page in Microsoft Sentinel." :::
 
 ## View a livestream
 

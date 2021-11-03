@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.query-data-sentinel.6-create-new-workbook
 metadata:
-  title: Create a new Azure Sentinel Workbook
-  description: Create a new Azure Sentinel Workbook.
+  title: Create a new Microsoft Sentinel Workbook
+  description: Create a new Microsoft Sentinel Workbook.
   ms.date: 12/17/2020
   author: micrum
   ms.author: micrum

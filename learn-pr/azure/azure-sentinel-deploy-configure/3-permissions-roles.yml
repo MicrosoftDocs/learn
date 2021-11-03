@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-sentinel-deploy-connect.3-permissions-roles
 metadata:
-  title: Describe Azure Sentinel permissions and roles
-  description: Describe Azure Sentinel permissions and roles
+  title: Describe Microsoft Sentinel permissions and roles
+  description: Describe Microsoft Sentinel permissions and roles
   ms.date: 09/21/2020
   author: jboeshart
   ms.author: jaboes

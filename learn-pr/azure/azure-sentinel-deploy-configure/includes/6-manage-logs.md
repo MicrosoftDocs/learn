@@ -36,7 +36,7 @@ There are cases where multiple Microsoft Sentinel workspaces, potentially across
 
 To address this requirement, Microsoft Sentinel offers multiple-workspace capabilities that enable central monitoring, configuration, and management. It provides a single management display console across everything that the security operations center covers.
 
-:::image type="content" source="../media/cross-workspace-architecture.png" alt-text="Diagram showing a multiple-workspace configuration for Azure Sentinel." border="false":::
+:::image type="content" source="../media/cross-workspace-architecture.png" alt-text="Diagram showing a multiple-workspace configuration for Microsoft Sentinel." border="false":::
 
 This multiple-workspace model offers significant advantages over a fully centralized model in which all data copies to a single workspace, such as:
 

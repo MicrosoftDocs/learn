@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.threat-response-sentinel-playbooks
 metadata:
-  title: Threat response with Azure Sentinel playbooks
-  description: Provide an introduction to implementing threat response with Azure Sentinel playbooks.
+  title: Threat response with Microsoft Sentinel playbooks
+  description: Provide an introduction to implementing threat response with Microsoft Sentinel playbooks.
   ms.date: 12/17/2020
   author: micrum
   ms.author: micrum

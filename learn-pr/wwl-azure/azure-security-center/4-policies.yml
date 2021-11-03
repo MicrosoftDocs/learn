@@ -2,8 +2,8 @@
 uid: learn.wwl.azure-security-center.policies
 title: Configure Defender for Cloud policies
 metadata:
-  title: Configure security center policies
-  description: "Configure security center policies"
+  title: Configure Defender for Cloud policies
+  description: "Configure Defender for Cloud policies"
   ms.date: 10/14/2021
   author: wwlpublish
   ms.author: roberts

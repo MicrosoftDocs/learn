@@ -1,4 +1,4 @@
-Microsoft Microsoft Sentinel Workbooks provide interactive reports that help you visualize important signals by combining text, table, charts, and tiles.
+Microsoft Sentinel Workbooks provide interactive reports that help you visualize important signals by combining text, table, charts, and tiles.
 
 Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses several Microsoft products and services to implement data security and threat protection for its resources. These products are:
 

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.4-security-center
 metadata:
-  title: Analyze infrastructure security by using Azure Security Center
-  description: Analyze infrastructure security by using Azure Security Center
+  title: Analyze infrastructure security by using Microsoft Defender for Cloud
+  description: Analyze infrastructure security by using Microsoft Defender for Cloud
   ms.date: 12/03/2019
   author: jboeshart
   ms.author: jaboes

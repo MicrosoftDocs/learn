@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.query-data-sentinel.5-workbooks
 metadata:
-  title: Use default Azure Sentinel Workbooks
-  description: Use default Azure Sentinel Workbooks.
+  title: Use default Microsoft Sentinel Workbooks
+  description: Use default Microsoft Sentinel Workbooks.
   ms.date: 12/17/2020
   author: micrum
   ms.author: micrum

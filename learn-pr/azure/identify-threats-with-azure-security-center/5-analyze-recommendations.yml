@@ -2,8 +2,8 @@
 uid: learn.azure-security.identify-threats-with-azure-security-center.analyze-recommendations
 title: Monitor your security status with Defender for Cloud recommendations
 metadata:
-  title: Monitor your security status with Security Center recommendations
-  description: Monitor your security status with Security Center recommendations
+  title: Monitor your security status with Defender for Cloud recommendations
+  description: Monitor your security status with Defender for Cloud recommendations
   ms.date: 09/30/2019
   author: adrianstevens
   ms.author: adsteven

@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.hunt-threats-sentinel
 metadata:
-  title: Threat hunting with Azure Sentinel
-  description: Threat hunting with Azure Sentinel
+  title: Threat hunting with Microsoft Sentinel
+  description: Threat hunting with Microsoft Sentinel
   ms.date: 12/15/2020
   author: micrum
   ms.author: micrum

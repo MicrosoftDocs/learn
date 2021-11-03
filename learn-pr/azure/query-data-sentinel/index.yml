@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: azure.query-data-sentinel
 metadata:
-  title: Query, visualize, and monitor data in Azure Sentinel
-  description: Describe how to query, visualize, and monitor data in Azure Sentinel.
+  title: Query, visualize, and monitor data in Microsoft Sentinel
+  description: Describe how to query, visualize, and monitor data in Microsoft Sentinel.
   ms.date: 12/17/2020
   author: micrum
   ms.author: micrum

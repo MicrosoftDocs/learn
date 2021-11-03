@@ -2,8 +2,8 @@
 uid: learn.wwl.create-manage-azure-sentinel-workspaces.create-workspace
 title: Create a Microsoft Sentinel workspace
 metadata:
-  title: Create an Azure Sentinel workspace
-  description: "Create an Azure Sentinel workspace"
+  title: Create a Microsoft Sentinel workspace
+  description: "Create a Microsoft Sentinel workspace"
   ms.date: 10/20/2021
   author: wwlpublish
   ms.author: bneeb

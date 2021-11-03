@@ -1,4 +1,4 @@
-# Module: Hunt for threats using Microsoft Sentinel
+# Module: Hunt for threats using Azure Sentinel
 
 ## Learner roles
 
@@ -16,7 +16,7 @@
 
 ## Products taught
 
-- Microsoft Microsoft Sentinel
+- Microsoft Azure Sentinel
 - Azure Log Analytics workspace
 - Azure Data Explorer
 
@@ -27,11 +27,11 @@ To get the best learning experience from this module, you should have:
 - Familiarity with security operations in an organization.
 - Basic experience with Azure services.
 - Basic knowledge of operational concepts such as monitoring, logging, and alerting.
-- Completed the introductory Microsoft Sentinel modules.
+- Completed the introductory Azure Sentinel modules.
 
 ## Module summary description
 
-In this module, you’ll learn how to perform threat hunting using Microsoft Sentinel tools.
+In this module, you’ll learn how to perform threat hunting using Azure Sentinel tools.
 
 ## Subtasks in this module
 
@@ -58,7 +58,7 @@ After completing this module, you'll be able to:
 ## Module outline of units
 
 1. Introduction
-2. Explore Microsoft Sentinel hunting query creation and management
+2. Explore Azure Sentinel hunting query creation and management
 3. Save key findings with bookmarks
 4. Observe threats over time with livestream
 5. Exercise unit
@@ -72,11 +72,11 @@ After completing this module, you'll be able to:
 
 ### Module scenario
 
-Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Defender for Cloud Apps, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Endpoint Protection, and Microsoft Azure Information Protection.<
+Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Endpoint Protection, and Microsoft Azure Information Protection.<
 
-As part of the Security Operations (SecOps) team, you've been tasked with using Microsoft Sentinel to identify specific activity within Contoso's Azure environment.
+As part of the Security Operations (SecOps) team, you've been tasked with using Azure Sentinel to identify specific activity within Contoso's Azure environment.
 
-## Second unit: Explore Microsoft Sentinel hunting query creation and management
+## Second unit: Explore Azure Sentinel hunting query creation and management
 
 **Type of unit:** Learning content unit
 
@@ -84,11 +84,11 @@ As part of the Security Operations (SecOps) team, you've been tasked with using 
 
 ### Key content per learning objective
 
-After you complete this unit, you'll be able to describe Microsoft Sentinel hunting query creation and management. Unit topics include:
+After you complete this unit, you'll be able to describe Azure Sentinel hunting query creation and management. Unit topics include:
 
-- Microsoft Sentinel queries and their purpose, including MITRE ATT&CK tactics
+- Azure Sentinel queries and their purpose, including MITRE ATT&CK tactics
 - Use built-in queries to hunt for threats
-- Microsoft Sentinel community on GitHub
+- Azure Sentinel community on GitHub
 - Create queries to refine threat hunting
 
 ## Third unit: Save key findings with bookmarks
@@ -101,7 +101,7 @@ After you complete this unit, you'll be able to describe Microsoft Sentinel hunt
 
 After you complete this unit, you&#39;ll be able to save key findings with bookmarks. Unit topics include:
 
-- Bookmark Microsoft Sentinel events
+- Bookmark Azure Sentinel events
 - Integrate bookmarks with incidents
 - Observe bookmarks using the investigation graph
 
@@ -119,7 +119,7 @@ After you complete this unit, you&#39;ll be able to observe threats over time wi
 - View livestream sessions
 - Manage livestream events and alerts
 
-## Fifth unit: Exercise&mdash;Hunt for threats using Microsoft Sentinel
+## Fifth unit: Exercise&mdash;Hunt for threats using Azure Sentinel
 
 **Type of unit:** Exercise unit
 
@@ -131,7 +131,7 @@ After you complete this unit, you&#39;ll be able to observe threats over time wi
 
 In this exercise, you&#39;ll learn to:
 
-- Manage Microsoft Sentinel queries.
+- Manage Azure Sentinel queries.
 - Save key findings with bookmarks.
 - Observe threats over time with livestream.
 
@@ -143,4 +143,4 @@ In this exercise, you&#39;ll learn to:
 
 ### Resolution of module problem
 
-In this module you’ve learned how to perform threat hunting using the tools available in Microsoft Sentinel, including proactively identifying threat behaviors using Microsoft Sentinel queries. You've also continued the hunt using bookmarks and livestream to identify specific account usage patterns for Contoso's Azure environment.
+In this module you’ve learned how to perform threat hunting using the tools available in Azure Sentinel, including proactively identifying threat behaviors using Azure Sentinel queries. You've also continued the hunt using bookmarks and livestream to identify specific account usage patterns for Contoso's Azure environment.

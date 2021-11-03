@@ -2,8 +2,8 @@
 uid: learn.wwl.audit-security-of-windows-server-iaas-vms.protect-your-resources-with-azure-security-center
 title: Protect your resources with Microsoft Defender for Cloud
 metadata:
-  title: Protect your resources with Azure Security Center
-  description: "Protect your resources with Azure Security Center"
+  title: Protect your resources with Microsoft Defender for Cloud
+  description: "Protect your resources with Microsoft Defender for Cloud"
   ms.date: 09/24/2020
   author: wwlpublish
   ms.author: tonyj

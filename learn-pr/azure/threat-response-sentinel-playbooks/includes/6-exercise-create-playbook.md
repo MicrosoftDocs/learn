@@ -38,7 +38,7 @@ In this exercise, you will explore the Microsoft Sentinel playbooks by performin
 8. In the search field, enter and select **Microsoft Sentinel**.
 9. On the **Triggers** tab, select **When a response to a Microsoft Sentinel alert is triggered (preview)**.
 
-    :::image type="content" source="../media/06-azure-sentinel-trigger.png" alt-text="Screenshot of the Azure Sentinel trigger." border="true":::
+    :::image type="content" source="../media/06-azure-sentinel-trigger.png" alt-text="Screenshot of the Microsoft Sentinel trigger." border="true":::
 
 10. On the **Microsoft Sentinel** page, set the drop-down menu to **Default Directory**, and then select **Sign in**.
 

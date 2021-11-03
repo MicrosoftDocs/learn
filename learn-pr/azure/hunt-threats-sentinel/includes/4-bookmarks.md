@@ -13,7 +13,7 @@ You can revisit your bookmarked data at any time on the **Bookmarks** tab of the
 
 You can use bookmarks to create a new incident or add bookmarked query results to existing incidents. The **Incident actions** button on the toolbar enables you to perform either of these tasks when a bookmark is selected.
 
-:::image type="content" source="../media/4-incident-actions.png" alt-text="The drop-down menu for incident actions in Azure Sentinel, with the options to create a new incident or add to an existing incident." :::
+:::image type="content" source="../media/4-incident-actions.png" alt-text="The drop-down menu for incident actions in Microsoft Sentinel, with the options to create a new incident or add to an existing incident." :::
 
 Incidents that you create from bookmarks can be managed from the **Incidents** page alongside other incidents created in Microsoft Sentinel.
 

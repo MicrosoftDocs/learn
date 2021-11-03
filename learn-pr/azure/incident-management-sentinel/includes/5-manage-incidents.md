@@ -5,7 +5,7 @@ After you start using Microsoft Sentinel to generate incidents, you and the IT t
 
 To identify and resolve security issues at Contoso, you'll first want to investigate any incidents. The **Overview** page in Microsoft Sentinel provides a list of the most recent incidents for quick reference. For more details and a complete overview of the incidents at Contoso, you'll use the **Incidents** page, which displays all incidents in the current workspace and details about those incidents.
 
-:::image type="content" source="../media/5-incidents-page.png" alt-text="The screenshot displays a list of incidents in Azure Sentinel.":::
+:::image type="content" source="../media/5-incidents-page.png" alt-text="The screenshot displays a list of incidents in Microsoft Sentinel.":::
 
 From this page, you can take various steps to investigate incidents.
 

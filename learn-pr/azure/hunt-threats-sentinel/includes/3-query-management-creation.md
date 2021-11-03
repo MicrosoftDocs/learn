@@ -6,7 +6,7 @@ You can use the search and query tools in Microsoft Sentinel to hunt for securit
 
 The **Hunting** page in Microsoft Sentinel has built-in queries. These queries can guide your hunting process and help you pursue the appropriate hunting paths to uncover issues in your environment. Hunting queries can expose issues that aren't significant enough on their own to generate an alert but have happened often enough over time to warrant investigation.
 
-:::image type="content" source="../media/3-hunting-page.png" alt-text="Screenshot that shows the Hunting page in Azure Sentinel." :::
+:::image type="content" source="../media/3-hunting-page.png" alt-text="Screenshot that shows the Hunting page in Microsoft Sentinel." :::
 
 The **Hunting** page provides a list all hunting queries. You can filter and sort queries by name, provider, data source, results, and tactics. You can save queries by selecting the **Favorites** star icon for the query in the list.
 
@@ -24,7 +24,7 @@ Microsoft Sentinel uses the MITRE ATT&CK framework to categorize and order queri
 >[!NOTE]
 >You can select individual MITRE ATT&CK tactics from the timeline on the **Hunting** page.
 
-:::image type="content" source="../media/3-attack-timeline.png" alt-text="Screenshot of the tactics timeline on the Hunting page in Azure Sentinel." :::
+:::image type="content" source="../media/3-attack-timeline.png" alt-text="Screenshot of the tactics timeline on the Hunting page in Microsoft Sentinel." :::
 
 Selecting any tactic will filter the available queries by the selected tactic. Tactics include:
 
@@ -47,7 +47,7 @@ All Microsoft Sentinel hunting queries use Kusto Query Language (KQL) syntax use
 
 You can also create your own custom queries by using KQL code to hunt for threats.
 
-:::image type="content" source="../media/3-create-custom-query-page.png" alt-text="The page for creating a custom query in Azure Sentinel." :::
+:::image type="content" source="../media/3-create-custom-query-page.png" alt-text="The page for creating a custom query in Microsoft Sentinel." :::
 
 Custom queries enable you to define the following:
 

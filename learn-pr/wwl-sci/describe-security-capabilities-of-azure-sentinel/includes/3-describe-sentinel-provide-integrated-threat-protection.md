@@ -1,4 +1,4 @@
-Effective management of an organization’s network security perimeter requires the right combination of tools and systems. Microsoft Microsoft Sentinel is a scalable, cloud-native SIEM/SOAR solution that delivers intelligent security analytics and threat intelligence across the enterprise. It provides a single solution for alert detection, threat visibility, proactive hunting, and threat response.
+Effective management of an organization’s network security perimeter requires the right combination of tools and systems. Microsoft Sentinel is a scalable, cloud-native SIEM/SOAR solution that delivers intelligent security analytics and threat intelligence across the enterprise. It provides a single solution for alert detection, threat visibility, proactive hunting, and threat response.
 
 > [!div class="mx-imgBorder"]
 > ![Diagram showing the four aspects of Microsoft Sentinel: collect, detect, investigate, and respond.](../media/3-four-aspects-azure-sentinel.png)

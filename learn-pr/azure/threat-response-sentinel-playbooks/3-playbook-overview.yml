@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.threat-response-sentinel-playbooks.3-playbook-overview
 metadata:
-  title: What are Azure Sentinel playbooks?
-  description: Explore Azure Sentinel playbooks.
+  title: What are Microsoft Sentinel playbooks?
+  description: Explore Microsoft Sentinel playbooks.
   ms.date: 12/17/2020
   author: micrum
   ms.author: micrum

@@ -26,14 +26,14 @@ Tailwind Traders can use Defender for Cloud to get a detailed analysis of differ
 
 See the following example of what you might see in Microsoft Defender for Cloud.
 
-:::image type="content" source="../media/2-security-center-compliance-32866f57.png" alt-text="Azure Security Center dashboard showing policy compliance, resource security hygiene, and threat protection.":::
+:::image type="content" source="../media/2-security-center-compliance-32866f57.png" alt-text="workload protection dashboard showing policy compliance, resource security hygiene, and threat protection.":::
 
 
 Let's say that Tailwind Traders must comply with the Payment Card Industry's Data Security Standard (PCI DSS). This report shows that the company has resources that it needs to remediate.
 
 In the **Resource security hygiene** section, Tailwind Traders can see the health of its resources from a security perspective. To help prioritize remediation actions, recommendations are categorized as low, medium, and high. Here's an example.
 
-:::image type="content" source="../media/2-security-center-dashboard-4d9c56a4.png" alt-text="Azure Security Center dashboard showing the resource security hygiene section. Recommendations are categorized as low, medium, and high.":::
+:::image type="content" source="../media/2-security-center-dashboard-4d9c56a4.png" alt-text="workload protection dashboard showing the resource security hygiene section. Recommendations are categorized as low, medium, and high.":::
 
 
 ### What's secure score?

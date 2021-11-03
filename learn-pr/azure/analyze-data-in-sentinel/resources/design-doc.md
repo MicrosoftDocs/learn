@@ -1,4 +1,4 @@
-# Module: Threat Detection with Microsoft Sentinel Analytics
+# Module: Threat Detection with Azure Sentinel Analytics
 
 ## Learner roles
 
@@ -16,7 +16,7 @@
 
 ## Products taught
 
-- Microsoft Microsoft Sentinel
+- Microsoft Azure Sentinel
 - Azure Monitor Logs
 
 ## Prerequisites
@@ -26,7 +26,7 @@
 
 ## Module summary description
 <!--LM: Global comment: The document contains variations on "Azure Sentinel Analytics" (often abbreviated to Analytics) and analytics rules, with varying capitalization and plural forms. This term is not available in our resources but based on similar terms, it might be Microsoft Azure Sentinel Analytics, with Azure Sentinel Analytics as the abbreviated form. It's not clear if you can use Sentinel Analytics or Analytics when referring to the service but I recommend including "Azure" for branding. When referring generically to analytics, please don't capitalize it and do use the plural form.-->
-This module introduces you to Microsoft Sentinel Analytics and describes the various types of rules. You can create rules for detecting suspicious events either by using predefined templates or writing custom queries using Azure Data Explorer. There are a range of predefined analytics rules based on Machine Learning, Fusion, derived from the security products and you can also pull a community written rules from Security Community in GitHub.
+This module introduces you to Azure Sentinel Analytics and describes the various types of rules. You can create rules for detecting suspicious events either by using predefined templates or writing custom queries using Azure Data Explorer. There are a range of predefined analytics rules based on Machine Learning, Fusion, derived from the security products and you can also pull a community written rules from Security Community in GitHub.
 <!--LM: Kusto Query Language and KQL are not approved terms. I replaced the term instances with Azure Data Explorer. Please update all instances of KQL.-->
 ## Subtasks in this module
 
@@ -36,13 +36,13 @@ This module introduces you to Microsoft Sentinel Analytics and describes the var
 
 ## Lab exercise
 
-- Draft lab exercise title: Threat detection with Microsoft Sentinel Analytics <!--LM: I suggest "Detect threats with..."-->
+- Draft lab exercise title: Threat detection with Azure Sentinel Analytics <!--LM: I suggest "Detect threats with..."-->
   - Task 1: Create an incident analytics rule from existing template
   - Task 2: Create a scheduled query rule
 
 ## Module learning objectives
 
-- Explain the importance of Microsoft Sentinel Analytics
+- Explain the importance of Azure Sentinel Analytics
 - Explain different types of analytics rules
 - Create rules from templates
 - Create new rules and queries using the wizard
@@ -55,7 +55,7 @@ This module introduces you to Microsoft Sentinel Analytics and describes the var
 ## Module outline of units
 <!--LM: Note the capitalization differences in "analytics". Please resolve, referring to my previous comments.-->
 1. Introduction
-2. What is Microsoft Sentinel Analytics?
+2. What is Azure Sentinel Analytics?
 3. Exercise Setup
 4. Types of Analytic rules
 5. Create an Analytics rule from templates
@@ -72,7 +72,7 @@ This module introduces you to Microsoft Sentinel Analytics and describes the var
 
 ### Module scenario
 
-Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Defender for Cloud Apps, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, System Center Endpoint Protection, and Microsoft Azure Information Protection. Contoso provides threat protection for its Azure-based and on-premises resources by using the paid version of Microsoft Defender for Cloud. The company also monitors and protects other non-Microsoft assets.
+Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, System Center Endpoint Protection, and Microsoft Azure Information Protection. Contoso provides threat protection for its Azure-based and on-premises resources by using the paid version of Azure Security Center. The company also monitors and protects other non-Microsoft assets.
 Security analysts at Contoso face a huge triage burden. They deal with a high volume of alerts from multiple products. They correlate alerts in the following ways:
 
 - Manually from different project dashboards
@@ -80,9 +80,9 @@ Security analysts at Contoso face a huge triage burden. They deal with a high vo
 
 Additionally, the time spent to set up and maintain IT infrastructure takes the security options (SecOps) team away from its security tasks.
 
-The IT director believes that Microsoft Sentinel Analytics will help the security analysts perform complex investigations faster and improve their SecOps.
+The IT director believes that Azure Sentinel Analytics will help the security analysts perform complex investigations faster and improve their SecOps.
 
-As Contoso's lead system engineer and Azure administrator, you've been asked to set up analytics rules in Microsoft Sentinel so that the SecOps team can identify and stop cyberattacks.
+As Contoso's lead system engineer and Azure administrator, you've been asked to set up analytics rules in Azure Sentinel so that the SecOps team can identify and stop cyberattacks.
 
 ## Second unit: Exercise unit - Prepare the environment for exercise unit
 
@@ -96,10 +96,10 @@ As Contoso's lead system engineer and Azure administrator, you've been asked to 
 
 In this exercise, you'll setup:
 
-- Create a Microsoft Sentinel instance
+- Create an Azure Sentinel instance
 - Create resources needed for exercise units.
 
-## Thirth unit: What is Microsoft Sentinel Analytics?
+## Thirth unit: What is Azure Sentinel Analytics?
 
 **Type of unit:** Learning content unit
 
@@ -107,7 +107,7 @@ In this exercise, you'll setup:
 
 ### Key content per learning objective
 
-After you complete this unit, you&#39;ll be able to explain the importance of Microsoft Sentinel Analytics. Topics include:
+After you complete this unit, you&#39;ll be able to explain the importance of Azure Sentinel Analytics. Topics include:
 
 - Understand the importance of Analytics for security
 - Understand Analytics rules
@@ -170,7 +170,7 @@ After you complete this unit, you&#39;ll be able to manage rules with modificati
 - Disable the rule
 - Delete the rule
 
-## Eight unit: Detect threats with Microsoft Sentinel Analytics
+## Eight unit: Detect threats with Azure Sentinel Analytics
 
 **Type of unit:** Exercise unit
 
@@ -200,6 +200,6 @@ After you complete the steps, delete any resource groups you created.
 
 ### Resolution of module problem
 
-Contoso wanted to improve the operation of their SecOps team's investigation of the security incidents. With Microsoft Sentinel Analytics, the SecOps team was able to find potential threats more effectively.
+Contoso wanted to improve the operation of their SecOps team's investigation of the security incidents. With Azure Sentinel Analytics, the SecOps team was able to find potential threats more effectively.
 
-In this module, you learned about analytic rules in Microsoft Sentinel. You also learned how to create an analytics rule from templates and with your own KQL code.
+In this module, you learned about analytic rules in Azure Sentinel. You also learned how to create an analytics rule from templates and with your own KQL code.

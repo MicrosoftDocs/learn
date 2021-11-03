@@ -1,4 +1,4 @@
-# Module: Respond to threats using Microsoft Sentinel playbooks
+# Module: Respond to threats using Azure Sentinel playbooks
 
 ## Learner roles
 
@@ -16,7 +16,7 @@
 
 ## Products taught
 
-- Microsoft Microsoft Sentinel
+- Microsoft Azure Sentinel
 - Azure Log Analytics workspace
 - Azure Logic Apps
 
@@ -30,7 +30,7 @@ To get the best learning experience from this module, you should have knowledge 
 
 ## Module summary description
 
-In this module, you'll learn about the Security Orchestration, Automation, and Response (SOAR) capabilities within Microsoft Sentinel.
+In this module, you'll learn about the Security Orchestration, Automation, and Response (SOAR) capabilities within Azure Sentinel.
 
 ## Subtasks in this module
 
@@ -40,21 +40,21 @@ In this module, you'll learn about the Security Orchestration, Automation, and R
 
 ## Lab exercise
 
-- Draft lab exercise title: Create a Microsoft Sentinel playbook<!-- This isn't in Term Studio or MS Style. When I search the internet, it's mostly "Azure Sentinel Playbook." If you agree to change it, please s/r. -->
+- Draft lab exercise title: Create an Azure Sentinel playbook<!-- This isn't in Term Studio or MS Style. When I search the internet, it's mostly "Azure Sentinel Playbook." If you agree to change it, please s/r. -->
   - Task 1. Add a playbook from Logic Apps
-  - Task 2. Add a Microsoft Sentinel connector<!-- Same comment about not being able to find this term in TS or MS Style. On the internet, capitalization varies. Please review. --> in Logic Apps
-  - Task 3. Add a trigger to Microsoft Sentinel Connection<!-- I cannot find a product named "Azure Sentinel Connection." Should this be "Azure Sentinel connector?"-->
+  - Task 2. Add an Azure Sentinel connector<!-- Same comment about not being able to find this term in TS or MS Style. On the internet, capitalization varies. Please review. --> in Logic Apps
+  - Task 3. Add a trigger to Azure Sentinel Connection<!-- I cannot find a product named "Azure Sentinel Connection." Should this be "Azure Sentinel connector?"-->
   - Task 4. Add an action
   - Task 5. Test the playbook result
-- The lab demonstrates how to create a Microsoft Sentinel playbook to automatically respond to a security threat.
+- The lab demonstrates how to create an Azure Sentinel playbook to automatically respond to a security threat.
 - Feasibility questions or concerns?
 
 ## Module learning objectives
 
 After completing this module, you&#39;ll be able to:
 
-- Explain Microsoft Sentinel SOAR capabilities.
-- Explore the Microsoft Sentinel Logic Apps connector.<!-- We also have an Azure Sentinel connector. Are they two different things? If so, perhaps we can use just "Logic Apps connector". If you agree, please s/r. -->
+- Explain Azure Sentinel SOAR capabilities.
+- Explore the Azure Sentinel Logic Apps connector.<!-- We also have an Azure Sentinel connector. Are they two different things? If so, perhaps we can use just "Logic Apps connector". If you agree, please s/r. -->
 - Create a playbook to automate an incident response.
 - Run a playbook on demand in response to an incident.
 
@@ -66,10 +66,10 @@ After completing this module, you&#39;ll be able to:
 
 1. Introduction
 2. Exercise Setup
-3. What are Microsoft Sentinel playbooks?
+3. What are Azure Sentinel playbooks?
 4. Trigger playbooks in real time
 5. Run playbooks on demand
-6. Exercise unit Create a Microsoft Sentinel playbook
+6. Exercise unit Create an Azure Sentinel playbook
 7. Summary
 
 ## First unit: Introduction
@@ -80,13 +80,13 @@ After completing this module, you&#39;ll be able to:
 
 ### Module scenario
 
-Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Defender for Cloud Apps, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Endpoint Protection, and Microsoft Azure Information Protection. Contoso uses the paid version of Microsoft Defender for Cloud as threat protection for resources that run on Azure and on-premises. The company also monitors and protects other non-Microsoft assets.
+Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Endpoint Protection, and Microsoft Azure Information Protection. Contoso uses the paid version of Azure Security Center as threat protection for resources that run on Azure and on-premises. The company also monitors and protects other non-Microsoft assets.
 
-The Contoso Security Operations (SecOps) team didn't respond quickly enough to the organization's latest security incident. Contoso's IT director wants them to implement Microsoft Sentinel playbooks to help them more quickly identify and stop potential security threats.
+The Contoso Security Operations (SecOps) team didn't respond quickly enough to the organization's latest security incident. Contoso's IT director wants them to implement Azure Sentinel playbooks to help them more quickly identify and stop potential security threats.
 
-As Contoso's lead security engineer and Azure administrator, you've been tasked with setting up a Microsoft Sentinel playbook to respond to security incidents.
+As Contoso's lead security engineer and Azure administrator, you've been tasked with setting up an Azure Sentinel playbook to respond to security incidents.
 
-In this module, you will learn about Microsoft Sentinel playbooks, including how to write and edit them, configure their workflow, and manage them.
+In this module, you will learn about Azure Sentinel playbooks, including how to write and edit them, configure their workflow, and manage them.
 
 ## Second unit: Prepare the environment for exercise unit
 
@@ -100,10 +100,10 @@ In this module, you will learn about Microsoft Sentinel playbooks, including how
 
 In this exercise, you'll set up:
 
-- Create a Microsoft Sentinel instance
+- Create an Azure Sentinel instance
 - Create resources needed for exercise units.
 
-## Third unit: What are Microsoft Sentinel playbooks?
+## Third unit: What are Azure Sentinel playbooks?
 
 **Type of unit:** Learning content unit
 
@@ -113,9 +113,9 @@ In this exercise, you'll set up:
 
 After you complete this unit, you&#39;ll be able to use SOAR for incidents by leveraging playbooks. Unit topics include:
 
-- Understand Microsoft Sentinel playbooks
+- Understand Azure Sentinel playbooks
 - Describe Azure Logic Apps
-- Explain the Microsoft Sentinel Logic Apps connector
+- Explain the Azure Sentinel Logic Apps connector
 - Use playbooks to orchestrate or automate actions
 
 ## Fourth unit: Trigger playbooks in near real time <!-- On line 69, we have "3. Trigger a playbook in real-time." Can we make these consistent? -->
@@ -129,7 +129,7 @@ After you complete this unit, you&#39;ll be able to use SOAR for incidents by le
 After you complete this unit, you&#39;ll be able to create an incident response automation playbook. Unit topics include:
 
 - Create a playbook to respond to an incident in near real time
-- Work with Microsoft Sentinel connections in Logic Apps
+- Work with Azure Sentinel connections in Logic Apps
 - Automate a response to an analytic<!-- To a Log Analytics rule? --> rule with playbooks
 
 ## Fifth unit: Run playbooks on demand
@@ -145,7 +145,7 @@ After completing this unit, you&#39;ll be able to run a playbook on demand from 
 - Explore the incident page<!-- If the name of the page is "Incident." it should be capitalized and bold. Otherwise, in what app/program is this page located? Should it be the Incident page in Logic Apps? -->
 - Run a playbook on demand
 
-## Sixth unit: Create a Microsoft Sentinel playbook
+## Sixth unit: Create an Azure Sentinel playbook
 
 **Type of unit:** Exercise unit
 
@@ -155,10 +155,10 @@ After completing this unit, you&#39;ll be able to run a playbook on demand from 
 
 ### Key content per learning objective
 
-- Draft lab exercise title: Create a Microsoft Sentinel playbook
+- Draft lab exercise title: Create an Azure Sentinel playbook
   - Task 1. Add a playbook from Logic Apps
-  - Task 2. Add a Microsoft Sentinel connector in Logic Apps<!-- See previous comment about Azure Sentinel connector vs. Logic Apps connector. -->
-  - Task 3. Add a trigger to Microsoft Sentinel Connection<!-- Suggest changing to "Add a trigger to a playbook? or "to an Azure Sentinel connector." -->
+  - Task 2. Add an Azure Sentinel connector in Logic Apps<!-- See previous comment about Azure Sentinel connector vs. Logic Apps connector. -->
+  - Task 3. Add a trigger to Azure Sentinel Connection<!-- Suggest changing to "Add a trigger to a playbook? or "to an Azure Sentinel connector." -->
   - Task 4. Add an action
   - Task 5. Test the playbook result
   
@@ -166,9 +166,9 @@ In this exercise, you'll learn to:
 
 - Create a new playbook.
 - Use the Logic Apps Designer.
-- Use the Microsoft Sentinel Logic Apps connector.
+- Use the Azure Sentinel Logic Apps connector.
 
-Review the steps for this exercise, Create a Microsoft Sentinel playbook using the portal<!-- "using the Azure portal?" If not, then which portal? Also, online 142, the lab title is just "Create an Azure Sentinel playbook."-->.
+Review the steps for this exercise, Create an Azure Sentinel playbook using the portal<!-- "using the Azure portal?" If not, then which portal? Also, online 142, the lab title is just "Create an Azure Sentinel playbook."-->.
 
 To repeat these steps, sign up for a free trial Azure subscription.
 
@@ -182,4 +182,4 @@ After completing the steps, delete any resource groups you created.
 
 ### Resolution of module problem
 
-Contoso SecOps can now react more quickly to security incidents by using Microsoft Sentinel SOAR capabilities and Sentinel playbooks based on Logic Apps with a Microsoft Sentinel connector<!-- "based on Azure Sentinel connector with/and Logic Apps?" -->, and provide near real-time responses.
+Contoso SecOps can now react more quickly to security incidents by using Azure Sentinel SOAR capabilities and Sentinel playbooks based on Logic Apps with an Azure Sentinel connector<!-- "based on Azure Sentinel connector with/and Logic Apps?" -->, and provide near real-time responses.

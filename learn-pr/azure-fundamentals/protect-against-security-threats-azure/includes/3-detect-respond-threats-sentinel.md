@@ -35,7 +35,7 @@ When Microsoft Sentinel detects suspicious events, Tailwind Traders can investig
 
 Here's an example that shows what an investigation graph looks like in Microsoft Sentinel.
 
-:::image type="content" source="../media/3-investigate-incidents-54765923.png" alt-text="An example incident investigation graph in Azure Sentinel.":::
+:::image type="content" source="../media/3-investigate-incidents-54765923.png" alt-text="An example incident investigation graph in Microsoft Sentinel.":::
 
 
 The company will also use [Azure Monitor Workbooks](/azure/azure-monitor/platform/workbooks-overview/?azure-portal=true) to automate responses to threats. For example, it can set an alert that looks for malicious IP addresses that access the network and create a workbook that does the following steps:

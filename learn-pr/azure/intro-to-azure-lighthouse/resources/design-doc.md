@@ -15,7 +15,7 @@ Deploying and using Azure Lighthouse
 ## Product(s)
 
 - Azure Lighthouse
-- Microsoft Defender for Cloud
+- Azure Security Center
 - Azure Resource Manager
 
 ## Prerequisites
@@ -32,7 +32,7 @@ Learn about and adopt Azure Lighthouse for your managed service business to mana
 1. Features of Azure Lighthouse
 1. Using Azure Lighthouse for cross tenant management
 1. Using Azure Resource Manager templates
-1. Set up Defender for Cloud with Alerting
+1. Set up Security Center with Alerting
 1. Creating a managed service offer on the Azure Marketplace
 
 ## Outline the units
@@ -59,19 +59,19 @@ Learn about and adopt Azure Lighthouse for your managed service business to mana
    A knowledge check is a short multiple-choice quiz of two or three questions to assess if the reader has understood the content of the unit.  The questions presented here test the reader's awareness of Azure Lighthouse.
 
    - How much does Azure Lighthouse cost to run and deploy?
-     - Correct: Azure Lighthouse is free to use; however, costs may be incurred by using underlying Azure services, like Defender for Cloud and Log Analytics.
+     - Correct: Azure Lighthouse is free to use; however, costs may be incurred by using underlying Azure services, like Security Center and Log Analytics.
      - Wrong: Azure Lighthouse uses the customers Azure Subscription for billing for it and any underlying Azure services.
      - Wrong: Azure Lighthouse uses the partners Azure Subscription for billing for it and any underlying Azure services.
    - What Azure feature lets you onboard and manage customer resources securely from your tenant without switching context?
      - Correct: Azure delegated resource management
      - Wrong: Azure Resource Manager
-     - Wrong: Microsoft Defender for Cloud
+     - Wrong: Azure Security Center
 
 1. **Preparing for Azure Lighthouse**
 
    In this unit, we want to cover preparing your organization to use Azure Lighthouse, highlighting the roles of users, groups, and tenants. Also, the security considerations when implementing Azure Lighthouse.  This unit will cover these subjects in more detail.
 
-   Note: The unit scenario should indicate you want to admin their Defender for Cloud so this how you'd onboard for a specific scenario.  
+   Note: The unit scenario should indicate you want to admin their security center so this how you'd onboard for a specific scenario.  
 
    - **Getting started**
 
@@ -147,7 +147,7 @@ Learn about and adopt Azure Lighthouse for your managed service business to mana
    - **Managing Azure Resources**
      - Taking over management tasks
    - **Enhanced services and scenarios**
-     - Using Defender for Cloud to set up alerts/notifications
+     - Using security center to set up alerts/notifications
 
    **Knowledge Check**
 

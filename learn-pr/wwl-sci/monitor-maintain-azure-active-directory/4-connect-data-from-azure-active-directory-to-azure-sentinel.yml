@@ -2,8 +2,8 @@
 uid: learn.wwl.monitor-maintain-azure-active-directory.connect-data-from-azure-ad-to-azure-sentinel
 title: Exercise connect data from Azure Active Directory to Microsoft Sentinel
 metadata:
-  title: Exercise connect data from Azure Active Directory to Azure Sentinel
-  description: "Exercise connect data from Azure Active Directory to Azure Sentinel"
+  title: Exercise connect data from Azure Active Directory to Microsoft Sentinel
+  description: "Exercise connect data from Azure Active Directory to Microsoft Sentinel"
   ms.date: 08/13/2021
   author: wwlpublish
   ms.author: roberts

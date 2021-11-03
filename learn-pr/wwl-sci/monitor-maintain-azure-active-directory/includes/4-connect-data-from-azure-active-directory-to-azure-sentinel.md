@@ -4,7 +4,7 @@
 > [!div class="mx-imgBorder"]
 > ![Microsoft Sentinel screenshot showing the initial configuration screen that allows you to create a new event review, manage views, and open to open KQL queries.](../media/sc300-azure-sentinel.png)
 
-Microsoft Microsoft Sentinel is a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution. Microsoft Sentinel is your birds-eye view across the enterprise alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
+Microsoft Sentinel is a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution. Microsoft Sentinel is your birds-eye view across the enterprise alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
 - Collect data at cloud scale across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds
 - Detect previously undetected threats, and minimize false positives using Microsoft's analytics and unparalleled threat intelligence
 - Investigate threats with artificial intelligence, and hunt for suspicious activities at scale, tapping into years of cyber security work at Microsoft

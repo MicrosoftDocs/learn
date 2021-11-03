@@ -25,7 +25,7 @@ Defender for Cloud Apps integrates visibility with your cloud by:
 - Using Conditional Access App Control protection to get real-time visibility and control over access and activities within your cloud apps.
 - Helping you have continuous control by setting, and then continually fine-tuning, policies.
 
-:::image type="content" source="../media/6-proxy-architecture.png" alt-text="Image displays Cloud App Security architecture.":::
+:::image type="content" source="../media/6-proxy-architecture.png" alt-text="Image displays Defender for Cloud Apps architecture.":::
 
 Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps that your organization is using. To create a snapshot report of your organization's cloud use, you can manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Defender for Cloud Apps log collectors to periodically forward your logs. You can use Defender for Cloud Apps to sanction or unsanction apps in your organization by using the Cloud app catalog. The Microsoft team of analysts has an extensive and continuously growing catalog of over 16,000 cloud apps that are ranked and scored based on industry standards. You can use the Cloud app catalog to rate the risk for your cloud apps based on regulatory certifications, industry standards, and best practices. Then, customize the scores and weights of various parameters to your organization's needs. Based on these scores, Defender for Cloud Apps lets you know how risky an app is. Scoring is based on over 80 risk factors that might affect your environment.
 

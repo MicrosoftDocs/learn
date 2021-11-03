@@ -8,7 +8,7 @@ You can then run queries through multiple customer workspaces, or provide insigh
 
 Here’s an overview of how to use Azure Lighthouse with Microsoft Sentinel.
 
-:::image type="content" source="../media/5-azure-sentinel-lighthouse.png" alt-text="Azure Sentinel with Azure Lighthouse.":::
+:::image type="content" source="../media/5-azure-sentinel-lighthouse.png" alt-text="Microsoft Sentinel with Azure Lighthouse.":::
 
 ### Centralized deployment model
 

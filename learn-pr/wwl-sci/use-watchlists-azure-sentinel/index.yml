@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.use-watchlists-azure-sentinel
 metadata:
-  title: Use watchlists in Azure Sentinel
-  description: "Use watchlists in Azure Sentinel"
+  title: Use watchlists in Microsoft Sentinel
+  description: "Use watchlists in Microsoft Sentinel"
   ms.date: 03/05/2021
   author: wwlpublish
   ms.author: bneeb

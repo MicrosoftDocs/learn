@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.what-is-azure-defender
 metadata:
-  title: Plan for cloud workload protections using Azure Defender
+  title: Plan for cloud workload protections using Microsoft Defender for Cloud
   description: "Plan for cloud workload protections using Azure Defender"
   ms.date: 03/12/2021
   author: wwlpublish

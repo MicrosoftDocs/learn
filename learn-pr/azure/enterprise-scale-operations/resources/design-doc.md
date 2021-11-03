@@ -24,7 +24,7 @@ Evaluate options for the following Enterprise-scale architecture design principl
 ## Prerequisites
 
 - Intermediate knowledge of Azure Log Analytics
-- Intermediate knowledge of Microsoft Defender for Cloud and Sentinel
+- Intermediate knowledge of Azure Security Center and Sentinel
 - Advanced knowledge of Azure Policy
 - Advanced knowledge of DevOps processes
 

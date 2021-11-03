@@ -1,5 +1,5 @@
 
-Deploy Microsoft Microsoft Sentinel and connect it to data sources to provide real-time analysis for security alerts throughout an enterprise.
+Deploy Microsoft Sentinel and connect it to data sources to provide real-time analysis for security alerts throughout an enterprise.
 
 Contoso, Ltd. is a midsize financial services company in London with a branch office in New York City. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Defender for Cloud Apps, Azure Advanced Threat Protection (Azure ATP), Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP), Microsoft Office 365 Advanced Threat Protection, Intune, and Microsoft Azure Information Protection.
 

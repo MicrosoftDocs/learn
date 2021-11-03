@@ -2,8 +2,8 @@
 uid: learn.wwl.azure-security-center.recommendations
 title: Manage and implement Defender for Cloud recommendations
 metadata:
-  title: Manage and implement security center recommendations
-  description: "Manage and implement security center recommendations"
+  title: Manage and implement Defender for Cloud recommendations
+  description: "Manage and implement Defender for Cloud recommendations"
   ms.date: 10/14/2021
   author: wwlpublish
   ms.author: roberts

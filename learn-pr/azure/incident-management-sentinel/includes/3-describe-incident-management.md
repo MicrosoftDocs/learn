@@ -18,7 +18,7 @@ Incident management is the complete process of incident investigation, from crea
 
 Incident management in Microsoft Sentinel begins on the overview page, where you can review the current Microsoft Sentinel environment.
 
-:::image type="content" source="../media/3-sentinel-overview.png" alt-text="A screen capture of the Azure Sentinel overview page." border="false":::
+:::image type="content" source="../media/3-sentinel-overview.png" alt-text="A screen capture of the Microsoft Sentinel overview page." border="false":::
 
 The overview page contains a list of the most recent incidents, along with other important Microsoft Sentinel information. Use this page to understand the general security situation before investigating incidents.
 

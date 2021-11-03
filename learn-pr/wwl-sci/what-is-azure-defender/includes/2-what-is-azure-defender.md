@@ -6,7 +6,7 @@ Microsoft Defender for Cloud is the Cloud workload protection feature of Microso
 
 The workload protection dashboard in Defender for Cloud provides visibility and control of the CWP features for your environment:
 
-:::image type="content" source="../media/sample-defender-dashboard.png" alt-text="Azure Defender Dashboard.":::
+:::image type="content" source="../media/sample-defender-dashboard.png" alt-text="workload protection dashboard.":::
 
 ## What resource types can Microsoft Defender for Cloud secure?
 

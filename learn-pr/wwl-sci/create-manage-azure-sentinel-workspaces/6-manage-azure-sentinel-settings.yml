@@ -2,8 +2,8 @@
 uid: learn.wwl.create-manage-azure-sentinel-workspaces.settings
 title: Manage Microsoft Sentinel settings
 metadata:
-  title: Manage Azure Sentinel settings
-  description: "Manage Azure Sentinel settings"
+  title: Manage Microsoft Sentinel settings
+  description: "Manage Microsoft Sentinel settings"
   ms.date: 10/20/2021
   author: wwlpublish
   ms.author: bneeb

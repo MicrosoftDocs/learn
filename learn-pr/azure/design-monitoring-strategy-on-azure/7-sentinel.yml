@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.6-sentinel
 metadata:
-  title: Analyze enterprise security by using Azure Sentinel
-  description: Analyze enterprise security by using Azure Sentinel
+  title: Analyze enterprise security by using Microsoft Sentinel
+  description: Analyze enterprise security by using Microsoft Sentinel
   ms.date: 12/03/2019
   author: jboeshart
   ms.author: jaboes

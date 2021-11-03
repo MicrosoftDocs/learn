@@ -1,4 +1,4 @@
-A Microsoft Microsoft Sentinel playbook is a collection of security procedures that you can run in response to alerts.
+A Microsoft Sentinel playbook is a collection of security procedures that you can run in response to alerts.
 
 Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses several Microsoft products and services to implement data security and threat protection for its resources. These products are:
 

@@ -2,8 +2,8 @@
 uid: learn.azure-security.create-security-baselines.create-an-azure-security-center-baseline
 title: Create a Microsoft Defender for Cloud baseline
 metadata:
-  title: Create an Azure Security Center baseline
-  description: Create an Azure Security Center baseline
+  title: Create a Microsoft Defender for Cloud baseline
+  description: Create a Microsoft Defender for Cloud baseline
   ms.date: 09/9/2019
   author: adrianstevens
   ms.author: adsteven
