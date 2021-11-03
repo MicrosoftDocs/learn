@@ -25,11 +25,11 @@ quiz:
     - content: "JSON"
       isCorrect: false
       explanation: "False. JSON datatype is just one of many data types that can be included in the tabular data."
-  - content: "Which operator will return a specific number of random rows of data?"
+  - content: "Which operator will return a specific number of arbitrary rows of data?"
     choices:
     - content: "take"
       isCorrect: true
-      explanation: "True. The take operator returns up to the specified number of random data rows."
+      explanation: "True. The take operator returns up to the specified number of arbitrary data rows."
     - content: "between"
       isCorrect: false
       explanation: "False. The between operator filters a record set for data matching the values in an inclusive range."
