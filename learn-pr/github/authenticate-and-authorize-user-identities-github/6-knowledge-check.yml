@@ -27,7 +27,7 @@ quiz:
         - content: "Short Message Service (SMS)"
           isCorrect: false
           explanation: "If your users are not able to authenticate using a TOTP mobile app, they can authenticate using SMS messages."
-    - content: "You are an admin and want to enable Team Synchronization for your organization. What installation permissions do you need to configure team synchronization for Azure AD?"
+    - content: "You are an admin and want to enable team synchronization for your organization. What installation permissions do you need to configure team synchronization for Azure AD?"
       choices:
         - content: "Read all users’ full profiles"
           isCorrect: true
