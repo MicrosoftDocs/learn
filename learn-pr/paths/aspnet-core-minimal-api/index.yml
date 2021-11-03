@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.aspnetcore-minimal-api
+uid: learn.aspnet-core-minimal-api
 metadata:
   title: Create web applications with .NET 6 and minimal API and ASP .NET Core
   description: With minimal API, you can create an API in just 4 lines of code while leveraging the latest features of .NET 6.
@@ -28,4 +28,4 @@ modules:
 - learn.aspnetcore.build-web-api-minimal-spa
 - learn.aspnetcore.build-web-api-minimal-database
 trophy:
-  uid: learn.aspnetcore-minimal-api.trophy
+  uid: learn.aspnet-core-minimal-api.trophy
