@@ -80,6 +80,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
    ```azurecli
    az ad sp create-for-rbac \
      --name ToyWebsitePipeline \
+     --role Contributor \
      --skip-assignment
    ```
 
