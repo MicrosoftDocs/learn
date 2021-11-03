@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/29/2021
+  ms.date: 11/03/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -39,17 +39,17 @@ quiz:
     - content: "FileVault"
       isCorrect: false
       explanation: "FireVault is for encrypting Mac machines."
-  - content: "A company, with both Azure (cloud based) and on-premises virtual machines, needs to ensure their virtual machines are kept up to date with security patches. Update Management is the Azure tool they will use, hopefully at limited cost.  Will Update management monitor their on-premises VMs for updates?"
+  - content: "A company, with both Azure and on-premises virtual machines, needs to ensure your virtual machines are kept up to date with security patches. Update Management is the Azure tool they will use, hopefully at limited cost.  Will Update management monitor their virtual machines for updates?"
     choices:
-    - content: "The Microsoft Monitoring Agent must be installed for both Windows and Linux virtual machines on premises."
+    - content: "The Microsoft Monitoring Agent must be installed for both Windows and Linux virtual machines on-premises."
       isCorrect: false
-      explanation: "The monitoring agent is required to see what updates are deployed on cloud-based machines, but does not apply to on-premises VMs."
+      explanation: "The monitoring agent is required to see what updates are deployed on cloud based machines."
     - content: "Both the Update Management feature and the log data storage are free for the customer."
       isCorrect: false
-      explanation: "Update management is a free service, but log data storage is a separate expense."
-    - content: "Azure Update Management pertains to cloud deployed virtual machines and on-premesis server patching."
+      explanation: "Update management is a free service.  But log data storage is a separate expense."
+    - content: "Update Management only pertains to cloud deployed virtual machines."
       isCorrect: true
-      explanation: "Update Management is a service included as part of an Azure Subscription that has a solution to manage updates on both Microsoft Azure and on-premises Windows and Linux computers."
+      explanation: "Update Management only pertains to cloud deployed virtual machines. Update Management pertains to virtual machines in on-premises environments, and in other cloud environments."
   - content: "Which of the following recommendations from Defender for Cloud is a medium-severity recommendation for virtual machines and servers?"
     choices:
     - content: "Disk encryption should be applied on virtual machines"
