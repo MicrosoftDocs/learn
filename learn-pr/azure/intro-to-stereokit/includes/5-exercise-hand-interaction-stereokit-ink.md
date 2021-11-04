@@ -1,4 +1,4 @@
-From the previous chapter, you understood how the StereoKit Ink application is built using the scripts. This module will explain how the application is developed to configure radial menus and hand interaction.
+From the previous chapter, you understood how the StereoKit Ink application is built using the scripts. This module will explain how the application is developed to configure radial menus and painting using hand interaction.
 
 ## Radial menu
 
@@ -13,13 +13,13 @@ SK.AddStepper(new HandMenuRadial(
 new HandRadialLayer("Root", -90,new HandMenuItem("Undo", null, ()=>activePainting?.Undo()),new HandMenuItem("Redo", null, ()=>activePainting?.Redo()))));
 ```
 
-**Steppers** : These are the classes that implement the IStepper interface and will have their Step function called every frame after being added to StereoKit's stepper list. This is an excellent approach to add items or systems that need to be updated every frame.
+**Steppers** : Steppers is a class that implements the IStepper interface will have their Step function called every frame after being added to StereoKit's stepper list. It's an excellent approach to add items or systems that need to be updated every frame.
 
 **HandMenuRadial** : Creates a hand menu from the provided array of menu layers.
 
 **HandRadialLayer** : This class represents a single layer in the HandRadialMenu. Each item in the layer is displayed around the radial menu in the application.
 
-**HandMenuItem** : This is a collection of data about how a single hand menu item appears and behaves.
+**HandMenuItem**: HandMenuItem is a collection of data about how a single hand menu item appears and behaves.
 
 ### Undo and Redo buttons
 
@@ -77,7 +77,7 @@ UI.HandleEnd();
 }
 ```
 
-**Handed** : Is an enum that indicates which hand to use in the project. In this project, we're using the right hand.
+**Handed**: This is an enum that indicates which hand to use in the project. In this project, we're using the right hand.
 
 **HandleBegin**: It starts a new UI group with its layout. It appears like a window, but it has a more flexible handle and no header. It returns true for every frame when a user is grabbing the handle by drawing the handle.
 

@@ -3,7 +3,7 @@ From the previous chapter, you have a basic understanding of StereoKit Ink appli
 > [!Important]
 > Make sure you have installed **StereoKit's Visual Studio template**.
 
-First, download the StereoKit Ink sample application from [GitHub repository](https://github.com/maluoi/StereoKit-PaintTutorial/tree/feature/sk_ink). Then click on the **Code** button & select **Download ZIP**. Once the file download is done, click on the folder & select the **StereoKitInk.sln** file. Then **solution file** will open in Visual Studio. On the right corner of the Visual Studio, you can find **Solution Explorer**, which contains the **assets folder** and three other **program files** such as the painting menu, palette menu, and main program, which operates the main logic.
+First, download the StereoKit Ink sample application from [GitHub repository](https://github.com/maluoi/StereoKit-PaintTutorial/). Then click on the **Code** button & select **Download ZIP**. Once the file download is done, click on the folder & select the **StereoKitInk.sln** file. Then **solution file** will open in Visual Studio. On the right corner of the Visual Studio, you can find **Solution Explorer**, which contains the **assets folder** and three other **program files** such as the painting menu, palette menu, and main program, which operates the main logic.
 
 :::image type="content" source="../media/scripts.png" alt-text="Screenshot of solution explorer with script list.” " lightbox="../media/scripts.png":::
 
@@ -60,8 +60,6 @@ Model _swatchModel = Model.FromFile("InkSplat.glb");
 ```c#
 UI.Model(_model, V.XY(0, UI.LineHeight*2));
 ```
-
-  :::image type="content" source="../media/inkpot.png" alt-text="Screenshot of inkpot model in Ink tools window.” " lightbox="../media/inkpot.png":::
 
 **UI.Model** : Creates a single mesh subset Model using the indicated Mesh and Material. To highlight the area's purpose, display an ink bottle. The x-axis will autofill to center the Model, and we'll make it two lines tall using the size specified here. **V.VY** Creates a Vec2. This is a straight alternative to **new Vec2(x, y)**.
 

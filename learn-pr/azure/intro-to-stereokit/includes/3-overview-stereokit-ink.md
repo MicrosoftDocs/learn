@@ -8,7 +8,7 @@ This StereoKit demo project aims to introduce people to the basics of how to dra
 
 Making windows using StereoKit is straightforward. You have the liberty to convert any object into an interface by adding required UI elements. In addition, instead of using the old "window" pattern, users can customize the look and feel of their window through StereoKit.
 
-Since StereoKit doesn't store state, you can add, remove, and change your UI components with minor and standard code structures. The main reason behind this is to accelerate working with UI and avoid compromising the design outcome. All the visual elements added to the window are relative to it.
+Since StereoKit doesn't store state, you can add, remove, and change your UI components with minor and standard code structures. The main reason behind it is to accelerate working with UI and avoid compromising the design outcome. All the visual elements added to the window are relative to it.
 
 There are two window menus used in the **StereoKit Ink** application: the **Ink Tools** window and the **Ink Functional** window. Both of these windows have a series of functionalities attached to them through various forms of UI components.
 
