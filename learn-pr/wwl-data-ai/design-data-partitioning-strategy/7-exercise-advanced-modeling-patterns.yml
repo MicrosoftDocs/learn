@@ -6,6 +6,7 @@ metadata:
   description: "Exercise advanced modeling patterns"
   ms.date: 11/04/2021
   author: wwlpublish
+  ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
