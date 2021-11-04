@@ -28,7 +28,7 @@ You can view and filter the list of subscriptions by selecting the Subscriptions
 
 To take full advantage of Defender for Cloud, you need to complete the steps below to enable Microsoft Defender for Cloud and install the Log Analytics agent.
 
-## Microsoft Defender for Cloud
+## Onboard subscriptions or workspaces to Defender for Cloud
 
 From Defender for Cloud's sidebar, select Getting started:
 
