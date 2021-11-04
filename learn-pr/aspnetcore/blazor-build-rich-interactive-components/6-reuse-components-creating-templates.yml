@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.build-interactive-components-blazor-web-apps.reuse-components-creating-templates
+title: Reuse components by creating templates
+metadata:
+  unitType: learning-content 
+  title: "Reuse components by creating templates"
+  description: "Learn how to create templated components that can be easily reused throughout applications"
+  ms.date: 08/18/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-blazor
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-reuse-components-creating-templates.md)]
