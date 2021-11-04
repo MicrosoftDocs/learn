@@ -1,4 +1,4 @@
-Microsoft Defender for Cloud is a built-in tool that provides threat protection for workloads running in Azure, on-premises, and other clouds. Microsoft Defender for Cloud is the leading Microsoft extended detection and response (XDR) solution for threat protection. Integrated with Microsoft Defender for Cloud, Microsoft Defender for Cloud protects your hybrid data, cloud-native services and servers, and integrates with your existing security workflows.
+Microsoft Defender for Cloud is a built-in tool that provides threat protection for workloads running in Azure, on-premises, and other clouds. Microsoft Defender for Cloud is the leading Microsoft extended detection and response (XDR) solution for threat protection. Microsoft Defender for Cloud protects your hybrid data, cloud-native services and servers, and integrates with your existing security workflows.
 
 Built-in policies come with Microsoft Defender plans, and you can add custom policies and initiatives. Also, you can add regulatory standards, such as NIST and Azure CIS, and the Azure Security Benchmark for a truly customized view of your compliance.
 
