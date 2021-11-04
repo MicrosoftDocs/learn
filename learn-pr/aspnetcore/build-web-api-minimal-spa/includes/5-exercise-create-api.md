@@ -75,9 +75,9 @@ At this point, you have a front-end app with static data inside of the app. You 
    import React, { useState, useEffect } from "react";
    ```
 
-   The method `fetchData()` has been added, and it's being invoked which triggers a GET request to "http://localhost:5000/pizzas". Next, we need to ensure the mock server is up and running.
+   The method `fetchData()` has been added, and it's being invoked which triggers a GET request to `http://localhost:5000/pizzas`. Next, we need to ensure the mock server is up and running.
 
-1. Run `npx json-server --watch --port 5000 db.json` in a separate terminal. Running this codeshould bring up the mock server and you should see an output looking like so:
+1. Run `npx json-server --watch --port 5000 db.json` in a separate terminal. Running this code should bring up the mock server and you should see an output looking like so:
 
    ```output
    \{^_^}/ hi!
@@ -134,78 +134,9 @@ At this point, the back-end team has finished building the server. To use the se
    dotnet ef database update
    ```
 
-1. Open up _Program.cs_ and add the following code to enable CORS (code you need to add is in bold):
+1. Open up _Program.cs_ and add the following code to enable CORS (the code you need to add is highlighted):
 
-   <pre>
-   using Microsoft.EntityFrameworkCore;
-   using PizzaStore.Data;
-   using Microsoft.OpenApi.Models;
-   using PizzaStore.Models;
-
-   <b>readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";</b>
-   var builder = WebApplication.CreateBuilder(args);
-   var connectionString = builder.Configuration.GetConnectionString("pizzas") ?? "Data Source=pizzas.db";
-
-   builder.Services.AddDbContext<PizzaDb>(options => options.UseSqlite(connectionString));
-   builder.Services.AddEndpointsApiExplorer();
-   builder.Services.AddSwaggerGen(c =>
-   {
-      c.SwaggerDoc("v1", new OpenApiInfo { Title = "Pizzas API", Description = "Pizza pizza", Version = "v1" });
-   });
-
-   <b>
-   builder.Services.AddCors(options =>
-   {
-     options.AddPolicy(name: MyAllowSpecificOrigins,
-       builder =>
-       {
-            builder.WithOrigins("*");
-       });
-   });
-   </b>
-
-   var app = builder.Build();
-   app.UseSwagger();
-   app.UseSwaggerUI(c =>
-   {
-   &nbsp;&nbsp;c.SwaggerEndpoint("/swagger/v1/swagger.json", "Pizza API V1");
-   });
-
-   <b>app.UseCors(MyAllowSpecificOrigins);</b>
-
-   app.MapGet("/", () => "Hello World!");
-
-   app.MapGet("/pizza", async(PizzaDb db) => await db.Pizzas.ToListAsync());
-
-   app.MapPost("/pizza", async(PizzaDb db, Pizza pizza) => {
-   &nbsp;&nbsp;await db.Pizzas.AddAsync(pizza);
-   &nbsp;&nbsp;await db.SaveChangesAsync();
-   &nbsp;&nbsp;return Results.Created($"/pizza/{pizza.Id}", pizza);
-   });
-
-   app.MapPut("/pizza/{id}", async (PizzaDb db, Pizza updatePizza, int id) =>
-   {
-   &nbsp;&nbsp;var pizzaItem = await db.Pizzas.FindAsync(id);
-   &nbsp;&nbsp;if (pizzaItem is null) return Results.NotFound();
-   &nbsp;&nbsp;pizzaItem.Name = updatePizza.Name;
-   &nbsp;&nbsp;pizzaItem.Description = updatePizza.Name;
-   &nbsp;&nbsp;await db.SaveChangesAsync();
-   &nbsp;&nbsp;return Results.NoContent();
-   });
-
-   app.MapDelete("/pizza/{id}", async (PizzaDb db, int id) =>
-   {
-   &nbsp;&nbsp;var todo = await db.Pizzas.FindAsync(id);
-   &nbsp;&nbsp;if (todo is null)
-   &nbsp;&nbsp;{
-   &nbsp;&nbsp;&nbsp;&nbsp;return Results.NotFound();
-   &nbsp;&nbsp;}
-   &nbsp;&nbsp;db.Pizzas.Remove(todo);
-   &nbsp;&nbsp;await db.SaveChangesAsync();
-   &nbsp;&nbsp;return Results.Ok();
-    });
-   app.Run();
-   </pre>
+   :::code language="csharp" source="../code/ef-core-use-server-api.cs" highlight="5, 17-24, 33":::
 
    The changes will configure CORS, so that you will be able to read and write toward the API, despite the front end and back end running on different ports.
 
@@ -213,6 +144,6 @@ At this point, the back-end team has finished building the server. To use the se
 
    The server runs on port 5059. You will need to adjust the proxy in _package.json_ for the front-end app to match the port the server assumes.
 
-   Your front end should show one item with the title, "Pepperoni.".
+   Your front end should show one item with the title, "Pepperoni."
 
 Congratulations, you've managed to create a full stack application with a front-end and back-end part.
