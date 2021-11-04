@@ -9489,6 +9489,21 @@
       "source_path": "learn-pr/wwl-azure/design-data-integration/11-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration/9-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-storage-solution-for-relational-data/6-design-encryption-for-data-at-rest-data-transmission-data-use.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-storage-solution-for-relational-data/7-design-security-for-data-at-rest-data-transmission-data-use",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-storage-solution-for-relational-data/7-design-for-azure-sql-edge.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-storage-solution-for-relational-data/8-design-for-azure-sql-edge",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-storage-solution-for-relational-data/8-design-for-azure-table-storage.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-storage-solution-for-relational-data/6-recommend-database-availability",
+      "redirect_document_id": true
     }
   ]
 }
