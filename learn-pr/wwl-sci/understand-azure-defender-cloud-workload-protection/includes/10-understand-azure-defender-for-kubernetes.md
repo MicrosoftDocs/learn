@@ -30,4 +30,4 @@ You can see that the items received and analyzed by Defender for Cloud include:
 
 - workload configuration from Azure Policy (via the Azure Policy add-on for Kubernetes)
 
-![Microsoft Defender for Cloud Kubernetes](../media/kubernetes-service-security-center-integration-detailed.png)
+![Microsoft Defender for Kubernetes](../media/kubernetes-service-security-center-integration-detailed.png)
