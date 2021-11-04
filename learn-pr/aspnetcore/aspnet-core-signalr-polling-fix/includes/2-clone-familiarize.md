@@ -2,34 +2,34 @@ In this unit, you'll clone the existing applications' source code repository. Wi
 
 ## Clone the repository
 
-Regardless of whether you use Visual Studio, Visual Studio Code, or some other integrated development environment (IDE), you'll indirectly use git to clone the repo. This module builds upon the [Blazor Workshop](https://github.com/dotnet-presentations/blazor-workshop) which contains a pizza ordering application.
+Regardless of whether you use Visual Studio, Visual Studio Code, or some other integrated development environment (IDE), you'll indirectly use git to clone the repo. This module builds upon the [Blazor Workshop](https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr) which contains a pizza ordering application.
 
 # [Linux](#tab/linux)
 
 ```bash
-git clone https://github.com/dotnet-presentations/blazor-workshop
+git clone https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr
 ```
 
 # [Windows](#tab/windows)
 
 ```PowerShell
-git clone https://github.com/dotnet-presentations/blazor-workshop
+git clone https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr
 ```
 
 ---
 
-After you've successfully cloned the repository, it's best to build and run the app. You'll need to change directories into the _src_ directory of the repo before using the .NET CLI.
+After you've successfully cloned the repository, it's best to build and run the app. You'll need to change directories into the _blazor-workshop/src_ directory of the repo before using the .NET CLI.
 
 # [Linux](#tab/linux)
 
 ```bash
-cd ./blazor-workshop/src
+cd ./mslearn-blazing-pizza-signalr/blazor-workshop/src
 ```
 
 # [Windows](#tab/windows)
 
 ```PowerShell
-cd .\blazor-workshop\src
+cd .\mslearn-blazing-pizza-signalr\blazor-workshop\src
 ```
 
 ---
@@ -52,7 +52,7 @@ dotnet run --project .\BlazingPizza.Server\BlazingPizza.Server.csproj
 
 ---
 
-This application is for learning purposes, and its authentication allows users to register any email address. When actively developing the app, you can complete the registration process by clicking a link to confirm your account - without actually validating the email address. For more information, see [Blazor Workshop: register a user and log in](https://github.com/dotnet-presentations/blazor-workshop/blob/4c8cb74dedb7a42eda534a03493ab9fd6b198131/docs/06-authentication-and-authorization.md#register-a-user-and-log-in).
+This application is for learning purposes, and its authentication allows users to register any email address. When actively developing the app, you can complete the registration process by clicking a link to confirm your account - without actually validating the email address. For more information, see [Blazor Workshop: register a user and log in](https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr/blob/4c8cb74dedb7a42eda534a03493ab9fd6b198131/docs/06-authentication-and-authorization.md#register-a-user-and-log-in).
 
 ### Place a pizza order
 
@@ -86,103 +86,7 @@ The console should output various logs, letting you know that the app has succes
 
 The primary focus for this module is refactoring the client-side polling to instead use ASP.NET Core SignalR. The ordering of a pizza redirects the user to the order details page, this page performs the client-side polling. Let's make sure that we understand how this is currently implemented so that we know what needs to be refactored. Consider the _OrderDetails.razor_ file:
 
-```razor
-@page "/myorders/{orderId:int}"
-@attribute [Authorize]
-@using System.Threading
-@inject OrdersClient OrdersClient
-@implements IDisposable
-
-<div class="main">
-    @if (invalidOrder)
-    {
-        <h2>Nope</h2>
-        <p>Sorry, this order could not be loaded.</p>
-    }
-    else if (orderWithStatus == null)
-    {
-        <text>Loading...</text>
-    }
-    else
-    {
-        <div class="track-order">
-            <div class="track-order-title">
-                <h2>
-                    Order placed @orderWithStatus.Order.CreatedTime.ToLongDateString()
-                </h2>
-                <p class="ml-auto mb-0">
-                    Status: <strong>@orderWithStatus.StatusText</strong>
-                </p>
-            </div>
-            <div class="track-order-body">
-                <div class="track-order-details">
-                    <OrderReview Order="orderWithStatus.Order" />
-                </div>
-                <div class="track-order-map">
-                    <Map Zoom="13" Markers="orderWithStatus.MapMarkers" />
-                </div>
-            </div>
-        </div>
-    }
-</div>
-
-@code {
-    [Parameter] public int OrderId { get; set; }
-
-    OrderWithStatus orderWithStatus;
-    bool invalidOrder;
-    CancellationTokenSource pollingCancellationToken;
-
-    protected override void OnParametersSet()
-    {
-        // If we were already polling for a different order, stop doing so
-        pollingCancellationToken?.Cancel();
-
-        // Start a new poll loop
-        PollForUpdates();
-    }
-
-    private async void PollForUpdates()
-    {
-        invalidOrder = false;
-        pollingCancellationToken = new CancellationTokenSource();
-        while (!pollingCancellationToken.IsCancellationRequested)
-        {
-            try
-            {
-                orderWithStatus = await OrdersClient.GetOrder(OrderId);
-                StateHasChanged();
-
-                if (orderWithStatus.IsDelivered)
-                {
-                    pollingCancellationToken.Cancel();
-                }
-                else
-                {
-                    await Task.Delay(4000);
-                }
-            }
-            catch (AccessTokenNotAvailableException ex)
-            {
-                pollingCancellationToken.Cancel();
-                ex.Redirect();
-            }
-            catch (Exception ex)
-            {
-                invalidOrder = true;
-                pollingCancellationToken.Cancel();
-                Console.Error.WriteLine(ex);
-                StateHasChanged();
-            }
-        }
-    }
-
-    void IDisposable.Dispose()
-    {
-        pollingCancellationToken?.Cancel();
-    }
-}
-```
+:::code language="razor" source="~/blazor-workshop/src/BlazingPizza.Client/Pages/OrderDetails.razor":::
 
 The preceding Razor markup:
 
@@ -195,127 +99,27 @@ The preceding Razor markup:
   - The latest order status details are reassigned to the `orderWithStatus` variable.
 
 > [!NOTE]
-> The `PollForUpdates` method is `async void` which means it's fire-and-forget. This can cause unexpected behavior and should be avoided if possible. It will be refactored as part the changes.
+> The `PollForUpdates` method is `async void` which means it's fire-and-forget. This can cause unexpected behavior and should be avoided if possible. It will be refactored as part of the changes.
 
 Each time the order is received, it recalculates delivery status updates and corresponding map marker changes. This is achieved by calculating properties on the `OrderWithStatus` object. Consider the following _OrderWithStatus.cs_ C# file:
 
-```csharp
-using BlazingPizza.ComponentsLibrary.Map;
-using System;
-using System.Collections.Generic;
-
-namespace BlazingPizza
-{
-    public class OrderWithStatus
-    {
-        public readonly static TimeSpan PreparationDuration =
-            TimeSpan.FromSeconds(10);
-        public readonly static TimeSpan DeliveryDuration =
-            TimeSpan.FromMinutes(1); // Unrealistic, but more interesting to watch
-
-        public Order Order { get; set; }
-
-        public string StatusText { get; set; }
-
-        public bool IsDelivered => StatusText == "Delivered";
-
-        public List<Marker> MapMarkers { get; set; }
-
-        public static OrderWithStatus FromOrder(Order order)
-        {
-            // To simulate a real backend process, 
-            // we fake status updates based on the amount
-            // of time since the order was placed
-            string statusText;
-            List<Marker> mapMarkers;
-            var dispatchTime = order.CreatedTime.Add(PreparationDuration);
-
-            if (DateTime.Now < dispatchTime)
-            {
-                statusText = "Preparing";
-                mapMarkers = new List<Marker>
-                {
-                    ToMapMarker("You", order.DeliveryLocation, showPopup: true)
-                };
-            }
-            else if (DateTime.Now < dispatchTime + DeliveryDuration)
-            {
-                statusText = "Out for delivery";
-
-                var startPosition = ComputeStartPosition(order);
-                var difference = (DateTime.Now - dispatchTime).TotalMilliseconds;
-                var proportionOfDeliveryCompleted =
-                    Math.Min(1, difference / DeliveryDuration.TotalMilliseconds);
-
-                var driverPosition =
-                    LatLong.Interpolate(
-                        startPosition, order.DeliveryLocation, proportionOfDeliveryCompleted);
-                mapMarkers = new List<Marker>
-                {
-                    ToMapMarker("You", order.DeliveryLocation),
-                    ToMapMarker("Driver", driverPosition, showPopup: true),
-                };
-            }
-            else
-            {
-                statusText = "Delivered";
-                mapMarkers = new List<Marker>
-                {
-                    ToMapMarker(
-                        "Delivery location",
-                        order.DeliveryLocation, showPopup: true),
-                };
-            }
-
-            return new OrderWithStatus
-            {
-                Order = order,
-                StatusText = statusText,
-                MapMarkers = mapMarkers,
-            };
-        }
-
-        static LatLong ComputeStartPosition(Order order)
-        {
-            // Random but deterministic based on order ID
-            var rng = new Random(order.OrderId);
-            var distance = 0.01 + rng.NextDouble() * 0.02;
-            var angle = rng.NextDouble() * Math.PI * 2;
-            var offset = (distance * Math.Cos(angle), distance * Math.Sin(angle));
-
-            return new LatLong(
-                order.DeliveryLocation.Latitude + offset.Item1,
-                order.DeliveryLocation.Longitude + offset.Item2);
-        }
-
-        static Marker ToMapMarker(
-            string description, LatLong coords, bool showPopup = false) =>
-            new Marker
-            {
-                Description = description,
-                X = coords.Longitude,
-                Y = coords.Latitude,
-                ShowPopup = showPopup
-            };
-    }
-}
-```
+:::code language="csharp" source="~/blazor-workshop/src/BlazingPizza.Shared/OrderWithStatus.cs":::
 
 In the preceding C# code, the `FromOrder` calculates a new order status based on the current time. Based on the understanding of how this was implemented, we'll be able to reuse the `OrderWithStatus` object, but you'll learn how the app was refactored.
 
 ## Fetch the refactored code
 
-The refactored code is in a separate branch [named `signalr`](https://github.com/dotnet-presentations/blazor-workshop/tree/signalr).
+The refactored code is in a separate branch [named `signalr`](https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr/tree/signalr).
 
 # [Linux](#tab/linux)
 
-Use the `git remote` command to determine the name of the `https://github.com/dotnet-presentations/blazor-workshop` repo:
+Use the `git remote` command to determine the name of the `https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr` repo:
 
 ```bash
 git remote -v
 ```
 
-The remote name that corresponds to the <https://github.com/dotnet-presentations/blazor-workshop> repo is the name you'll need to use. Next, use the `git fetch` command to fetch the `signalr` branch (assuming your remote is named `upstream`):
+The remote name that corresponds to the <https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr> repo is the name you'll need to use. Next, use the `git fetch` command to fetch the `signalr` branch (assuming your remote is named `upstream` but it might be `origin`):
 
 ```bash
 git fetch upstream signalr
@@ -329,13 +133,13 @@ git checkout signalr
 
 # [Windows](#tab/windows)
 
-Use the `git remote` command to determine the name of the `https://github.com/dotnet-presentations/blazor-workshop` repo:
+Use the `git remote` command to determine the name of the `https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr` repo:
 
 ```PowerShell
 git remote -v
 ```
 
-The remote name that corresponds to the <https://github.com/dotnet-presentations/blazor-workshop> repo is the name you'll need to use. Next, use the `git fetch` command to fetch the `signalr` branch (assuming your remote is named `upstream`):
+The remote name that corresponds to the <https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr> repo is the name you'll need to use. Next, use the `git fetch` command to fetch the `signalr` branch (assuming your remote is named `upstream`):
 
 ```PowerShell
 git fetch upstream signalr
