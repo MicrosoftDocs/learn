@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: "Which answer best describes how the Altair IoT Central application is used?"
     choices:
-    - content: "You can chart data sent from the Altair emulator running on the Azure Sphere."
+    - content: "You can chart data that is sent from the Altair emulator that's running on the Azure Sphere."
       isCorrect: false
       explanation: "You can set the Altair emulator configuration and chart data."
     - content: "You can configure the Altair emulator startup settings and chart data."
