@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan for cloud workload protections using Microsoft Defender for Cloud
-summary: Learn the purpose of Microsoft Defender for Cloud, Microsoft Defender for Cloud's relationship to Microsoft Defender for Cloud, and how to enable Microsoft Defender for Cloud.
+summary: Learn the purpose of Microsoft Defender for Cloud and how to enable it
 abstract: |
   Upon completion of this module, the learner will be able to:
   - Describe Microsoft Defender for Cloud features
