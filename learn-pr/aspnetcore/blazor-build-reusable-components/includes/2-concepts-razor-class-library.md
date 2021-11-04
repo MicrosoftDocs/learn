@@ -1,61 +1,18 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: briefly summarize the key skill this unit will teach
-
-    Heading: none
-
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
-
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
--->
-
 Components in web applications give developers the freedom to reuse portions of the user-interface throughout their application. Razor Class Libraries allow those components to be shared and reused in many applications.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Here, you will learn how to create a Razor class library and how to use it to share rendered and static content for Blazor applications to customize and present.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
-
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-
-Here, you will learn how to create a Razor Class Library and how to use it to share rendered and static content for Blazor applications to customize and present.
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
 ## Defining Razor Class Libraries
 
-A Razor Class Library is a .NET project type that contains Razor Components, Pages, HTML, CSS, JavaScript, images, and other static web content that can be referenced by a Blazor application.  Just like other .NET Class Library projects, they can be bundled as a NuGet package and shared on NuGet package repositories like NuGet.org
+A Razor class library is a .NET project type that contains Razor Components, Pages, HTML, CSS, JavaScript, images, and other static web content that can be referenced by a Blazor application.  Just like other .NET Class Library projects, they can be bundled as a NuGet package and shared on NuGet package repositories like NuGet.org
 
 Let's look at the default template for creating a Razor Class library.
 
-<!-- Pattern for complex chunks (repeat as needed) -->
 ## Create a project with the default template
 
-You can create a Razor Class Library in Visual Studio through the typical File - New Project dialog
+You can create a Razor class library in Visual Studio through the typical File - New Project dialog
 
-![Visual Studio - New Project Dialog and the Razor Component Library Template](../media/visualstudio-create.png)
+![Visual Studio screenshot of New Project Dialog and the Razor Component Library Template](../media/visual-studio-create.png)
 
 Projects can also be created at the command line with this command:
 
@@ -69,11 +26,11 @@ This template delivers an initial component called `Component1` that demonstrate
 - Static content like images and JavaScript files that are available to a Blazor application at runtime and referenced inside of `Component1`.  This content is delivered in a `wwwroot` folder that behaves the same as a `wwwroot` folder in an ASP.NET Core or Blazor application.
 - .NET code that executes functions residing in the included JavaScript file
 
-![Default Project Contents](../media/solution-structure.png)
+![Screenshot of Visual Studio Solution Explorer showing Default Project Contents](../media/solution-structure.png)
 
-### Differences between Class Library and Razor Class Library
+### Differences between Class Library and Razor class library
 
-A Class Library is a common package delivery structure in .NET applications, and the Razor Class Library is similar in structure with a few other features configured in the project file.
+A Class Library is a common package delivery structure in .NET applications, and the Razor class library is similar in structure with a few other features configured in the project file.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Razor">
@@ -96,7 +53,7 @@ A Class Library is a common package delivery structure in .NET applications, and
 </Project>
 ```
 
-- The project file contains an SDK reference to `Microsoft.NET.Sdk.Razor` to declare it contains and creates razor content as a Razor Class Library
+- The project file contains an SDK reference to `Microsoft.NET.Sdk.Razor` to declare it contains and creates razor content as a Razor class library
 - The `SupportedPlatform` entry declares that this library can be used in a `browser` platform - namely WebAssembly.
 - The `PackageReference` to the `Microsoft.AspNetCore.Components.Web` library gives access to the base Blazor components that are shipped with the framework.  This allows developers to use those simple components to help them build more complex components.
 
@@ -128,9 +85,9 @@ The contents of the `wwwroot` folder are available to be referenced by hosted Bl
 /_content/{PACKAGE_ID}/{PATH_AND_FILENAME_INSIDE_WWWROOT}
 ```
 
-### Referencing a Razor Class Library
+### Referencing a Razor class library
 
-In a .NET solution, where our Razor Class Library resides on disk next to a Blazor application that will reference the library, we can update the Blazor application to reference the Razor Class Library using the standard Visual Studio `Add Reference` dialog and using the .NET CLI add reference command.
+In a .NET solution, where our Razor class library resides on disk next to a Blazor application that will reference the library, we can update the Blazor application to reference the Razor class library using the standard Visual Studio `Add Reference` dialog and using the .NET CLI add reference command.
 
 ```dotnetcli
 dotnet add reference ../MyClassLibrary
