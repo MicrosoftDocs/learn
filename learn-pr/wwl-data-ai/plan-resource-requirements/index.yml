@@ -2,8 +2,7 @@
 uid: learn.wwl.plan-resource-requirements
 metadata:
   title: Plan Resource Requirements
-  description: "Familiarize yourself with the various configuration options
-for a new Azure Cosmos DB SQL API account."
+  description: "Familiarize yourself with the various configuration options for a new Azure Cosmos DB SQL API account."
   ms.date: 11/04/2021
   author: wwlpublish
   ms.author: calopez
