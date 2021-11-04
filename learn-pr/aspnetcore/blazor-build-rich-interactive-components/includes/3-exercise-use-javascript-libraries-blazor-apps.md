@@ -11,6 +11,8 @@ In this exercise, you'll extend an existing app created for the pizza delivery c
 
 If you haven't created a Blazor app before, follow the [setup instructions for Blazor](https://aka.ms/blazor-getting-started) to install the correct version of .NET and check your machine is set up correctly. Stop at the **Create your app** step.
 
+[!include[](../../../includes/dotnet6-sdk-version.md)]
+
 1. Open **Visual Studio Code**.
 1. Open the integrated terminal from Visual Studio Code by selecting **View**, then select **Terminal** from the main menu.
 1. In the terminal, go to where you'd like the project to be created.
