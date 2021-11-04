@@ -41,13 +41,14 @@
       "branch_mapping": {}
     },
     {
-      "path_to_root": "blazor-workshop",
+      "path_to_root": "blazing-pizza-main",
       "url": "https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr",
-      "branch": "main",
-      "branch_mapping": {
-        "main": "main",
-        "signalr": "signalr"
-      }
+      "branch": "main"
+    },
+    {
+      "path_to_root": "blazing-pizza-signalr",
+      "url": "https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr",
+      "branch": "signalr"
     }
   ],
   "dependent_packages": [

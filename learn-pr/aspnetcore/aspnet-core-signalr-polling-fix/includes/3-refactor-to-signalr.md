@@ -6,14 +6,14 @@ The _BlazingPizza.Server.csproj_ added the following NuGet package reference:
 
 - [Microsoft.AspNetCore.SignalR.Protocols.MessagePack](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Protocols.MessagePack)
 
-:::code language="xml" source="~/blazor-workshop/src/BlazingPizza.Server/BlazingPizza.Server.csproj" highlight="14":::
+:::code language="xml" source="~/blazing-pizza-signalr/src/BlazingPizza.Server/BlazingPizza.Server.csproj" highlight="14":::
 
 The _BlazingPizza.Client.csproj_ added the following NuGet package references:
 
 - [Microsoft.AspNetCore.SignalR.Client](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Client)
 - [Microsoft.AspNetCore.SignalR.Protocols.MessagePack](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Protocols.MessagePack)
 
-:::code language="xml" source="~/blazor-workshop/src/BlazingPizza.Client/BlazingPizza.Client.csproj" highlight="11-12":::
+:::code language="xml" source="~/blazing-pizza-signalr/src/BlazingPizza.Client/BlazingPizza.Client.csproj" highlight="11-12":::
 
 The MessagePack NuGet package was added to make messages sent between the client and server smaller.
 
@@ -25,11 +25,11 @@ The server is responsible for exposing a SignalR endpoint. The endpoint maps to 
 
 ASP.NET Core SignalR supports strongly-typed hub implementations, <xref:Microsoft.AspNetCore.SignalR.Hub%601> where `T` is the client type. Consider the following _IOrderStatusHubs.cs_ file:
 
-:::code source="~/blazor-workshop/src/BlazingPizza.Server/Hubs/IOrderStatusHub.cs":::
+:::code source="~/blazing-pizza-signalr/src/BlazingPizza.Server/Hubs/IOrderStatusHub.cs":::
 
 The preceding interface defines a single method, which will act as an event that clients can subscribe to. Consider the following _OrderStatusHub.cs_ file:
 
-:::code source="~/blazor-workshop/src/BlazingPizza.Server/Hubs/OrderStatusHub.cs":::
+:::code source="~/blazing-pizza-signalr/src/BlazingPizza.Server/Hubs/OrderStatusHub.cs":::
 
 The preceding hub implementation exposes two methods that are invokable from clients. A client calls `StartTrackingOrder` given an `order` instance, and the client's unique connection will be added to a group where notifications will be sent. Likewise, a call to `StopTrackingOrder` will have the connection leave the group and no longer receive notifications.
 
@@ -37,7 +37,7 @@ The preceding hub implementation exposes two methods that are invokable from cli
 
 The `Startup` class needed to be updated to add ASP.NET Core SignalR, and the MessagePack protocol. Additionally, the `"/orderstatus"` endpoint is mapped to the `OrderStatusHub` implementation. Consider the following _Startup.cs_ file:
 
-:::code source="~/blazor-workshop/src/BlazingPizza.Server/Startup.cs" highlight="22-23,32":::
+:::code source="~/blazing-pizza-signalr/src/BlazingPizza.Server/Startup.cs" highlight="22-23,32":::
 
 The preceding highlighted changes:
 
@@ -48,7 +48,7 @@ The preceding highlighted changes:
 
 The client application needed to refactor the _OrderDetails.razor_ file:
 
-:::code source="~/blazor-workshop/src/BlazingPizza.Client/Pages/OrderDetails.razor":::
+:::code source="~/blazing-pizza-signalr/src/BlazingPizza.Client/Pages/OrderDetails.razor":::
 
 You'll notice that several directives have been removed:
 
@@ -68,7 +68,7 @@ As more logic is introduced into Blazor components, it's common for them to evol
 
 Consider the _OrderDetails.razor.cs_ file:
 
-:::code source="~/blazor-workshop/src/BlazingPizza.Client/Pages/OrderDetails.razor.cs":::
+:::code source="~/blazing-pizza-signalr/src/BlazingPizza.Client/Pages/OrderDetails.razor.cs":::
 
 The preceding C# component represents the code-behind for the `OrderDetails` component and this is possible due to the class being defined as `partial`. It's an implementation of `IAsyncDisposable` to clean up the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnection> instance. This component defines several class-scoped fields, each with various intents:
 

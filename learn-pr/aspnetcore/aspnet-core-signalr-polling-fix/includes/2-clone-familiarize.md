@@ -23,7 +23,7 @@ After you've successfully cloned the repository, it's best to build and run the 
 # [Linux](#tab/linux)
 
 ```bash
-cd ./mslearn-blazing-pizza-signalr/blazor-workshop/src
+cd ./mslearn-blazing-pizza-signalr/blazing-pizza-main/src
 ```
 
 # [Windows](#tab/windows)
@@ -86,7 +86,7 @@ The console should output various logs, letting you know that the app has succes
 
 The primary focus for this module is refactoring the client-side polling to instead use ASP.NET Core SignalR. The ordering of a pizza redirects the user to the order details page, this page performs the client-side polling. Let's make sure that we understand how this is currently implemented so that we know what needs to be refactored. Consider the _OrderDetails.razor_ file:
 
-:::code language="razor" source="~/blazor-workshop/src/BlazingPizza.Client/Pages/OrderDetails.razor":::
+:::code language="razor" source="~/blazing-pizza-main/src/BlazingPizza.Client/Pages/OrderDetails.razor":::
 
 The preceding Razor markup:
 
@@ -103,7 +103,7 @@ The preceding Razor markup:
 
 Each time the order is received, it recalculates delivery status updates and corresponding map marker changes. This is achieved by calculating properties on the `OrderWithStatus` object. Consider the following _OrderWithStatus.cs_ C# file:
 
-:::code language="csharp" source="~/blazor-workshop/src/BlazingPizza.Shared/OrderWithStatus.cs":::
+:::code language="csharp" source="~/blazing-pizza-main/src/BlazingPizza.Shared/OrderWithStatus.cs":::
 
 In the preceding C# code, the `FromOrder` calculates a new order status based on the current time. Based on the understanding of how this was implemented, we'll be able to reuse the `OrderWithStatus` object, but you'll learn how the app was refactored.
 
