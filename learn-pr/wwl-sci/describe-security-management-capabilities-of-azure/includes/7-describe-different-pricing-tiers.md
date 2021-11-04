@@ -4,7 +4,7 @@ Defender for Cloud is offered in two modes:
 
 #### Microsoft Defender for Cloud off
 
-Defender for Cloud without Microsoft Defender for Cloud is enabled free of charge on all your Azure subscriptions when you visit the workload protection dashboard in the Azure portal for the first time, or if enabled programmatically via API.
+Defender for Cloud is enabled free of charge on all your Azure subscriptions when you visit the workload protection dashboard in the Azure portal for the first time, or if enabled programmatically via API.
 
 #### Microsoft Defender for Cloud on
 
