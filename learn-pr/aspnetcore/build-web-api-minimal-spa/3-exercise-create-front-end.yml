@@ -9,6 +9,6 @@ metadata:
   ms.date: 11/04/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-create-front-end.md)]
