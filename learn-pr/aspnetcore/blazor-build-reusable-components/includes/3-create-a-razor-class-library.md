@@ -50,7 +50,7 @@ Our outcome of this exercise will be a reusable modal dialog in a Razor Class Li
 Let's first create the Razor Class library project for a modal dialog component.  You can use Visual Studio to create a new project or you can create the project in a new folder with the .NET Command-line tool as follows:
 
 ```dotnetcli
-dotnet new razorclasslib -o FirstClassLibrary
+dotnet new razorclasslib -o FirstClassLibrary -f net6.0
 ```
 
 ## Build the Modal Dialog Component
@@ -196,7 +196,7 @@ With the `Modal` component residing in the `FirstClassLibrary` project, let's ad
 1. Create a new Blazor Server project called `MyBlazorServer` in a folder next to the `FirstClassLibrary` project by either using the Visual Studio Add New Project feature or executing the following at the command line:
 
     ```dotnetcli
-    dotnet new blazorserver -o MyBlazorServer
+    dotnet new blazorserver -o MyBlazorServer -f net6.0
     ```
 
 1. In the `MyBlazorServer` project, let's add reference to the `FirstClassLibrary` project by using the Visual Studio Add Reference feature or we can execute the following command from the `MyBlazorServer` folder:
