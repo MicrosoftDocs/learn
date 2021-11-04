@@ -102,7 +102,7 @@ void SwatchColor(string id, float hue, float saturation, float value)
  }
 ```
 
-**Matrix.TR** - In StereoKit, a matrix is a 4x4 grid. Numbers in the matrix represent a transformation for every position or vector. Here Matrix. TR is used for the rotation of the swatch.
+**Matrix . TR** - In StereoKit, a matrix is a 4x4 grid. Numbers in the matrix represent a transformation for every position or vector. Here Matrix. TR is used for the rotation of the swatch.
 
 **SwitchColor() method** : Using bound reserves the swatch and using color represents to draw the swatch model. Pseudo-random rotation keeps it shuffled.
 
@@ -112,7 +112,7 @@ When a user interacts with the swatch model's volume, the vibrant color will cha
 
 #### Keywords
 
-* **U.cm** : Converts centimeters to meters.
+* **U . cm** : Converts centimeters to meters.
 
 * **BtnState** : A bit-flag represents the current state of a button input.
 
@@ -124,7 +124,7 @@ When a user interacts with the swatch model's volume, the vibrant color will cha
   UI.SameLine();
   ```
 
-### Slider instantiate
+### Slider instantiation
 
 Swatches are not limited. Hence there is some slider to adjust HSV the color manually. Then we can have a fixed-size label and add a fixed-size slider to the same line. Fixing the sizes are aligned in the column using:
 
@@ -243,8 +243,7 @@ if (UI.Button("Undo")) activePainting?.Undo();
 UI.SameLine();
 if (UI.Button("Redo")) activePainting?.Redo();
 ```
+
 **UI.Button**  : A button that can be clicked and can extend vertically and horizontally to suit the text provided to the button.
 
 On the same basis, all other buttons can be added, such as Save, Load, Clear, and Quit.
-
-
