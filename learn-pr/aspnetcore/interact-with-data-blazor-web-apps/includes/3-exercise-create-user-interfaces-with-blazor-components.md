@@ -7,6 +7,8 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
 ## Create a new Blazor app
 
+[!include[](../../../includes/dotnet6-sdk-version.md)]
+
 .NET lets you create new projects with any version of Visual Studio or terminal commands. The following exercises will show you the steps using the terminal and Visual Studio Code.
 
 1. Open **Visual Studio code**.
