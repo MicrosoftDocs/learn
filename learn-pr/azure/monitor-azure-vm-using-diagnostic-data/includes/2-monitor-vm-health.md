@@ -31,7 +31,7 @@ Using Virtual Machine host metrics, you can:
 
 ## Get more metrics
 
-To collect Guest OS metrics, you need to install the *Azure Monitor Agent* and select the metrics to be collected using *Data Collection Rules*. The *Azure Monitor Agent* is available for Windows and Linux.
+To collect Guest OS metrics, you need to install the Azure Monitor Agent and select the metrics to be collected by using Data Collection Rules. The Azure Monitor Agent  is available for Windows and Linux.
 
 After you've installed the Azure Monitor Agent, you can:
 
