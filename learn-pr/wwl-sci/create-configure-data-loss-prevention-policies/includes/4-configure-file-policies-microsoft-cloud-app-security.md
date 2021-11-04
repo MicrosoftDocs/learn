@@ -32,7 +32,7 @@ To create a file policy, follow this procedure:
 
 1. Under the second Apply to filter, select either **all file owners, file owners from selected user groups** or **all file owners excluding selected groups**. Then select the relevant user groups to determine which users and groups should be included in the policy.
 
-1. Select the content **Inspection method**. You can select either [Built-in DLP](https://docs.microsoft.com/cloud-app-security/content-inspection-built-in) or [Data Classification Services](https://docs.microsoft.com/cloud-app-security/content-inspection?azure-portal=true).
+1. Select the content **Inspection method**. You can select either [Built-in DLP](/cloud-app-security/content-inspection-built-in) or [Data Classification Services](/cloud-app-security/content-inspection?azure-portal=true).
 
 1. Choose the **Governance** actions you want Defender for Cloud Apps to take when a match is detected and select Create Policy.
 

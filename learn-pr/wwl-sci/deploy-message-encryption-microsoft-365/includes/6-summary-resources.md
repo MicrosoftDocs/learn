@@ -8,11 +8,10 @@ Now that you have reviewed this module, you should be able to:
 
 Use these resources to discover more background details of the described topics from this module:
 
-- [Preparing for TLS 1.2 in Office 365 and Office 365 GCC - Microsoft 365 Compliance | Microsoft Docs](/microsoft-365/compliance/prepare-tls-1.2-in-office-365)
+- [Preparing for TLS 1.2 in Office 365 and Office 365 GCC - Microsoft 365 Compliance](/microsoft-365/compliance/prepare-tls-1.2-in-office-365)
 
-- [Customer Key for Microsoft 365 at the tenant level (public preview) - Microsoft 365 Compliance | Microsoft Docs](/microsoft-365/compliance/customer-key-tenant-level)
+- [Customer Key for Microsoft 365 at the tenant level (public preview) - Microsoft 365 Compliance](/microsoft-365/compliance/customer-key-tenant-level)
 
-- [Bring Your Own Key (BYOK) details - Azure Information Protection | Microsoft Docs](/azure/information-protection/byok-price-restrictions)
+- [Bring Your Own Key (BYOK) details - Azure Information Protection](/azure/information-protection/byok-price-restrictions)
 
-- [Office 365 Advanced Message Encryption | Microsoft Docs](/microsoft-365/compliance/ome-advanced-message-encryption)
-
+- [Office 365 Advanced Message Encryption](/microsoft-365/compliance/ome-advanced-message-encryption)

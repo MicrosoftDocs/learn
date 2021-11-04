@@ -7,10 +7,9 @@ Now you’ve completed this module, you should be able to:
 - Explore the Microsoft compliance center.
 - Describe the benefits of Compliance Manager.
 
-
 ## Learn more
 
 - [Microsoft 365 compliance center](/microsoft-365/compliance/microsoft-365-compliance-center)
-- [Microsoft Compliance Manager](https://docs.microsoft.com/microsoft-365/compliance/compliance-score?view=o365-worldwide#relationship-to-compliance-manager)
+- [Microsoft Compliance Manager](/microsoft-365/compliance/compliance-score?view=o365-worldwide#relationship-to-compliance-manager)
 - [Compliance score calculation](/microsoft-365/compliance/compliance-score-calculation)
-- [Compliance Manager frequently asked questions](https://docs.microsoft.com/microsoft-365/compliance/compliance-score-faq?view=o365-worldwide#what-is-the-difference-between-compliance-score-and-compliance-manager)
+- [Compliance Manager frequently asked questions](/microsoft-365/compliance/compliance-score-faq?view=o365-worldwide#what-is-the-difference-between-compliance-score-and-compliance-manager)

@@ -17,4 +17,4 @@ Now that you have reviewed this module, you should be able to:
 Use these resources to discover more.
 
 [ClaimsXRay in Azure AD with Directory Extension](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/claimsxray-in-azuread-with-directory-extension/ba-p/1505737)
-[Configure authentication session management](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime#:~:text=%20Configure%20authentication%20session%20management%20with%20Conditional%20Access,session%20controls.%20Conditional%20Access%20is%20an...%20More)
+[Configure authentication session management](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime#:~:text=%20Configure%20authentication%20session%20management%20with%20Conditional%20Access,session%20controls.%20Conditional%20Access%20is%20an...%20More)

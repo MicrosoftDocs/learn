@@ -12,7 +12,7 @@ Retention settings work with the following different workloads:
 - [Yammer](/microsoft-365/compliance/retention-policies-yammer)
 - [Exchange](/microsoft-365/compliance/retention-policies-exchange)
 
-When using retention policies and retention labels to assign retention settings to content, there are some points to understand about each.  Listed below are just a few of the key points. For a more complete list visit [Compare capabilities for retention policies and retention labels](https://docs.microsoft.com/microsoft-365/compliance/retention?view=o365-worldwide#compare-capabilities-for-retention-policies-and-retention-labels).
+When using retention policies and retention labels to assign retention settings to content, there are some points to understand about each.  Listed below are just a few of the key points. For a more complete list visit [Compare capabilities for retention policies and retention labels](/microsoft-365/compliance/retention?view=o365-worldwide#compare-capabilities-for-retention-policies-and-retention-labels).
 
 **Retention policies**
 

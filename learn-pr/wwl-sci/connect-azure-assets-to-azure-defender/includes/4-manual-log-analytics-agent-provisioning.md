@@ -14,14 +14,14 @@ To manually install the Log Analytics agent:
 
 - To deploy agents on new VMs using a Resource Manager template, install the Log Analytics agent:
 
-  - [Install the Log Analytics agent for Windows](https://docs.microsoft.com/azure/virtual-machines/extensions/oms-windows?azure-portal=true)
+  - [Install the Log Analytics agent for Windows](/azure/virtual-machines/extensions/oms-windows?azure-portal=true)
 
-  - [Install the Log Analytics agent for Linux](https://docs.microsoft.com/azure/virtual-machines/extensions/oms-linux?azure-portal=true)
+  - [Install the Log Analytics agent for Linux](/azure/virtual-machines/extensions/oms-linux?azure-portal=true)
 
-- To deploy agents on your existing VMs, follow the instructions in [Collect data about Azure Virtual Machines](https://docs.microsoft.com/azure/azure-monitor/learn/quick-collect-azurevm?azure-portal=true).
+- To deploy agents on your existing VMs, follow the instructions in [Collect data about Azure Virtual Machines](/azure/azure-monitor/learn/quick-collect-azurevm?azure-portal=true).
 
 - To use PowerShell to deploy the agents, use the instructions from the virtual machines documentation:
 
-  - [For Windows machines](https://docs.microsoft.com/azure/virtual-machines/extensions/oms-windows?toc=/azure/azure-monitor/toc.json?azure-portal=true)
+  - [For Windows machines](/azure/virtual-machines/extensions/oms-windows?toc=/azure/azure-monitor/toc.json?azure-portal=true)
 
-  - [For Linux machines](https://docs.microsoft.com/azure/virtual-machines/extensions/oms-linux?toc=/azure/azure-monitor/toc.json?azure-portal=true)
+  - [For Linux machines](/azure/virtual-machines/extensions/oms-linux?toc=/azure/azure-monitor/toc.json?azure-portal=true)

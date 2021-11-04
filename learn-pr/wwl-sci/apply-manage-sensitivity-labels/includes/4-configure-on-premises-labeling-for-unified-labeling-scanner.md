@@ -39,7 +39,7 @@ Perform the following steps to fetch an Azure AD Token for the Unified Labeling 
 
 1. Select the **Supported account type** (or leave as default).
 
-1. Set the **Redirect url** to: https://localhost
+1. Set the **Redirect url** to: `https://localhost`.
 
 1. Select **Register.**
 
@@ -115,7 +115,7 @@ The configuration for the scanner is done in the Azure portal. Follow these step
 Moreover, it´s also possible to restart the scan and rescan all the files.
 
 > [!WARNING]
-> The Unified Labeling scanner does not scan and protect in real time. The crawler runs a cycle and repeat. 
+> The Unified Labeling scanner does not scan and protect in real time. The crawler runs a cycle and repeat.
 
 ## Operational scenarios for the unified labeling scanner
 
@@ -130,6 +130,4 @@ The Unified labeling scanner can be used for different operational scenarios, so
 
 ## Learn more
 
-[Install and configure the Azure Information Protection (AIP) unified labeling scanner | Microsoft Docs](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install?azure-portal=true)
-
-
+[Install and configure the Azure Information Protection (AIP) unified labeling scanner](/azure/information-protection/deploy-aip-scanner-configure-install?azure-portal=true)

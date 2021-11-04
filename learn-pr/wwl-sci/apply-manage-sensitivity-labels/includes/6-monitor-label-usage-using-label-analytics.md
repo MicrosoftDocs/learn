@@ -69,13 +69,13 @@ A Sensitivity Label monitoring and analyzing is also possible with Microsoft Sen
 
 ## Learn more
 
-[Microsoft Sentinel documentation | Microsoft Docs](https://docs.microsoft.com/azure/sentinel/?azure-portal=true)
+[Microsoft Sentinel documentation](/azure/sentinel/?azure-portal=true)
 
-[Quickstart: Onboard in Microsoft Sentinel | Microsoft Docs](https://docs.microsoft.com/azure/sentinel/quickstart-onboard?azure-portal=true)
+[Quickstart: Onboard in Microsoft Sentinel](/azure/sentinel/quickstart-onboard?azure-portal=true)
 
-[Manage usage and costs with Azure Monitor Logs](https://docs.microsoft.com/azure/azure-monitor/platform/manage-cost-storage?azure-portal=true)
+[Manage usage and costs with Azure Monitor Logs](/azure/azure-monitor/platform/manage-cost-storage?azure-portal=true)
 
-[Central reporting for Azure Information Protection | Microsoft Docs](https://docs.microsoft.com/azure/information-protection/reports-aip?azure-portal=true)
+[Central reporting for Azure Information Protection](/azure/information-protection/reports-aip?azure-portal=true)
 
 ### Applying manually
 

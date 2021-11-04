@@ -13,7 +13,6 @@ You should now be able to:
 
 You can learn more by reviewing the following.
 
-- [Retention tags and retention policies | Microsoft Docs](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
+- [Retention tags and retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 
-- [Enable archive mailboxes in the Security & Compliance Center - Microsoft 365 Compliance | Microsoft Docs](/microsoft-365/compliance/enable-archive-mailboxes)
-
+- [Enable archive mailboxes in the Security & Compliance Center - Microsoft 365 Compliance](/microsoft-365/compliance/enable-archive-mailboxes)

@@ -16,4 +16,4 @@ Now that you’ve completed this lesson, you should be able to:
 - [Search the audit log in the compliance center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 - [Advanced Audit in Microsoft 365](/microsoft-365/compliance/advanced-audit)
 - [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off)
-- [API Throttling](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling)
+- [API Throttling](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling)

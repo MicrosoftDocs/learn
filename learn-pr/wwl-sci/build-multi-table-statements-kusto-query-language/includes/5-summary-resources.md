@@ -6,12 +6,11 @@ You should now be able to:
 
 - Merge two tables with the join operator using KQL
 
-
 ## Learn more
 
 You can learn more by reviewing the following.
 
-[KQL quick reference | Microsoft Docs](https://docs.microsoft.com/azure/data-explorer/kql-quick-reference?azure-portal=true)
+[KQL quick reference](/azure/data-explorer/kql-quick-reference?azure-portal=true)
 
 [Microsoft Tech Community Security Webinars](https://techcommunity.microsoft.com/t5/microsoft-security-and/security-community-webinars/ba-p/927888?azure-portal=true)
 

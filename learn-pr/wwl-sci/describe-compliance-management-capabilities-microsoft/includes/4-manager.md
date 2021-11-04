@@ -41,7 +41,7 @@ Assessments have several components:
 - **Shared controls**: responsibility for implementing these controls is shared by the organization and Microsoft.
 - **Assessment score**: shows the progress in achieving total possible points from actions within the assessment that are managed by the organization and by Microsoft.
 
-When creating assessments, an admin will assign them to a group. The admin can configure groups in whatever way is most logical for the organization. For example, they might group assessments by audit year, region, solution, teams within the organization, or some other way. Once the admin has created groups, the admin can [filter the Compliance Manager dashboard](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-setup?view=o365-worldwide#filtering-your-dashboard-view) to view the score by one or more groups.
+When creating assessments, an admin will assign them to a group. The admin can configure groups in whatever way is most logical for the organization. For example, they might group assessments by audit year, region, solution, teams within the organization, or some other way. Once the admin has created groups, the admin can [filter the Compliance Manager dashboard](/microsoft-365/compliance/compliance-manager-setup?view=o365-worldwide#filtering-your-dashboard-view) to view the score by one or more groups.
 
 ## Templates
 

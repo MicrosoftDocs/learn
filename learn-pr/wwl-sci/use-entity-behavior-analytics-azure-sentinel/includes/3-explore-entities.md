@@ -68,7 +68,7 @@ You can choose the **time range** from among several preset options (such as *la
 
 The following types of items are included in the timeline:
 
-Alerts - any alerts in which the entity is defined as a **mapped entity**. Note that if your organization has created [custom alerts using analytics rules](https://docs.microsoft.com/azure/sentinel/tutorial-detect-threats-custom?azure-portal=true), you should make sure that the rules' entity mapping is done properly.
+Alerts - any alerts in which the entity is defined as a **mapped entity**. Note that if your organization has created [custom alerts using analytics rules](/azure/sentinel/tutorial-detect-threats-custom?azure-portal=true), you should make sure that the rules' entity mapping is done properly.
 
 Bookmarks - any bookmarks that include the specific entity shown on the page.
 

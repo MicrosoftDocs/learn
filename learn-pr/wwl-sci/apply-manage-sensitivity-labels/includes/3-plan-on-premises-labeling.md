@@ -79,4 +79,4 @@ For the installation and to run the scanner the following service accounts are n
 
 ## Learn more
 
-[Understanding the Azure Information Protection unified labeling scanner - AIP | Microsoft Docs](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner?azure-portal=true)
+[Understanding the Azure Information Protection unified labeling scanner - AIP](/azure/information-protection/deploy-aip-scanner?azure-portal=true)
