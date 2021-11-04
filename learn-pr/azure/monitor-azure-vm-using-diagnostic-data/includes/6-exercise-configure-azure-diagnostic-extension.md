@@ -12,7 +12,8 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
     :::image type="content" source="../media/6-dcr-name-and-location.png" alt-text="Screenshot of the data collection rules basics":::
 
-1. Next, you add the resource(s) to be monitored. Click on **Add resources** Find and select the your VM, the monitored-linux-vm.
+1. Next, you add the resource(s) to be monitored. Select **Add resources**.
+1. Select your VM monitored-linux-vm.
 
      :::image type="content" source="../media/6-dcr-add-resources.png" alt-text="Screenshot of the data collection rules resources" lightbox="../media/6-dcr-add-resources.png":::
 
@@ -29,7 +30,6 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 1. Select the Destination tab to view the default destination for Performance Counters, Azure Monitor Metrics. 
 1. Select on **Add data source**.
 
-    ![Screenshot of the Data Collection Rules Performance Counters Destination](../media/6-add-dcr-destinations.png)
     :::image type="content" source="../media/6-add-dcr-destinations.png" alt-text="Screenshot of the data collection rules performance counters destination":::
 
     Confirm your settings include a destination type of Azure Monitor metrics for the collect and deliver step of the wizard.
@@ -121,5 +121,5 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
 1. Explore the dashboard. Try changing the **UTC Time** range to **Past 30 minutes**, and select **Apply**.
 
-       :::image type="content" source="../media/6-kpi-dashboard.png" alt-text="Screenshot that shows the new KPI dashboard with the three graphs created earlier." lightbox="../media/6-kpi-dashboard.png":::
+    :::image type="content" source="../media/6-kpi-dashboard.png" alt-text="Screenshot that shows the new KPI dashboard with the three graphs created earlier." lightbox="../media/6-kpi-dashboard.png":::
 
