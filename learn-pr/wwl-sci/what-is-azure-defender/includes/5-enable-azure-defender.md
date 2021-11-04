@@ -4,7 +4,7 @@ To enable Microsoft Defender for Cloud, you first enable Microsoft Defender for 
 
 To get started with Defender for Cloud, you must have a subscription to Microsoft Azure. If you do not have a subscription, you can sign up for a free account.   To enable Microsoft Defender for Cloud on a subscription, you must be assigned the role of Subscription Owner, Subscription Contributor, or Security Admin.
 
-## Microsoft Defender for Cloud
+## Enable Microsoft Defender for Cloud
 
 To start Microsoft Defender for Cloud:
 
