@@ -21,11 +21,11 @@ Public access is also known as anonymous public read access for containers and b
 
 There are two separate settings that affect public access:
 
-- Configure the storage account to allow public access by setting the *AllowBlobPublicAccess* property. When set to true, Blob data is available for public access only if the container's public access setting is also set.
+- **The Storage Account.** Configure the storage account to allow public access by setting the *AllowBlobPublicAccess* property. When set to true, Blob data is available for public access only if the container's public access setting is also set.
 
-- Configure the container's public access setting. You can configure a container's public access setting to enable anonymous access only if anonymous access is allowed for the storage account. There are two possible settings for a container: *Public read access for blobs*, or *public read access for a container and its blobs*.  Anonymous access is controlled at the container level, not for individual blobs. This means that if you want to secure some of the files, you need to put them in a container that does not permit public read access.
+- **The Container.** You can enable anonymous access only if anonymous access has been allowed for the storage account. A container has two possible settings public access: *Public read access for blobs*, or *public read access for a container and its blobs*.  Anonymous access is controlled at the container level, not for individual blobs. This means that if you want to secure some of the files, you need to put them in a separate container that does not permit public read access.
 
- Both settings are required to enable anonymous public access. The advantages of this approach are that you don't need to share keys with clients who require access to your files. You also don't need to manage a SAS.
+ Both storage account and container settings are required to enable anonymous public access. The advantages of this approach are that you don't need to share keys with clients who need access to your files. You also don't need to manage a SAS.
 
  ### Azure Active Directory
 
@@ -37,7 +37,7 @@ Use this form of authentication if you're running an app with managed identities
 
 Azure Storage creates two 512-bit access keys for every storage account that's created. You share these keys to grant clients access to the storage account. These keys grant anyone with access the equivalent of root access to your storage.
 
-We recommend that you manage your storage keys with Azure Key Vault. It's then easy to rotate keys on a regular schedule to keep your storage account secure.
+We recommend that you manage storage keys with Azure Key Vault because it is easy to rotate keys on a regular schedule to keep your storage account secure.
 
 ### Shared access signature
 
