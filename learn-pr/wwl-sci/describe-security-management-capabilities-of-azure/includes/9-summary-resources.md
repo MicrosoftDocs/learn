@@ -14,6 +14,5 @@ To find out more about any of the topics covered in this module, go to:
 
 - [Microsoft Defender for Cloud](/azure/security-center/security-center-introduction)  
 - [Azure secure score](/azure/security-center/secure-score-security-controls)
-- [Microsoft Defender for Cloud](/azure/security-center/azure-defender)  
 - [Security baselines](/azure/security/benchmarks/security-baselines-overview)  
 - [Microsoft Defender for Cloud pricing](https://azure.microsoft.com/pricing/details/azure-defender/)
