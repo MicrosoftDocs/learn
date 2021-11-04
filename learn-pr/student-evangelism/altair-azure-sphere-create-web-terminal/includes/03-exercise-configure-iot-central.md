@@ -1,14 +1,14 @@
-In this exercise, you'll configure your Altair IoT Central application.
+In this exercise, you'll customize your Altair IoT Central application.
 
-## Open IoT Central device explorer
+## Open the IoT Central device explorer
 
-1. Switch back to the **IoT Central** [web portal](https://azure.microsoft.com/services/iot-central?azure-portal=true).
+1. Go to [Azure IoT Central](https://azure.microsoft.com/services/iot-central?azure-portal=true).
 
-1. From the sidebar menu, select **Devices**, then the **Altair on Azure Sphere** template, then your **device**.
+1. On the left pane, select **Devices**, select the **Altair on Azure Sphere** template, and then select your device.
 
-    It may take a minute or two from when your device started to it appearing in the devices section of IoT Central.
+    It might take a minute or two for your device to be displayed in the devices section of IoT Central.
 
-    The device name is your Azure Sphere Device ID. You can display your Device ID by running the following command from the Windows **PowerShell command line** or Linux **Terminal**.
+    The device name is your Azure Sphere Device ID. You can display your Device ID by running the following command at the Windows PowerShell command prompt or Linux terminal:
 
    ```azsphere
    azsphere device show-attached
@@ -16,9 +16,9 @@ In this exercise, you'll configure your Altair IoT Central application.
 
 ## Rename your device
 
-Rename your device in IoT Central ensuring that the name is unique. The Web Terminal uses this name to retrieve the Channel ID property from IoT Central. The Channel ID is used to create unique MQTT topic names used by the Altair emulator and the Web Terminal.
+Rename your device in IoT Central, ensuring that the name is unique. The web terminal uses this name to retrieve the channel ID property from IoT Central. The channel ID is used to create the unique MQTT topic names that are used by the Altair emulator and the web terminal.
 
-From the Device menu bar, select **Manage device**, then **Rename**.
+To rename your device, on the left pane, select **Device**, select **Manage device**, and then select **Rename**.
 
 :::image type="content" source="../media/iot-central-device-rename.png" alt-text="Screenshot that shows how to rename a device.":::
 
@@ -26,110 +26,114 @@ From the Device menu bar, select **Manage device**, then **Rename**.
 
 ### Customize properties
 
-From the Device menu bar, select **Manage template**, then select **Edit template**.
+1. On the left pane, select **Device**, select **Manage template**, then select **Edit template**.
 
-1. Select **Customize**, and expand the **Desired temperature** property. Update the property using the information from the table below and select **Save**.
+1. Select **Customize**, and then expand the **Desired temperature** property. 
 
-    :::image type="content" source="../media/iot-central-template-customize.png" alt-text="Screenshot that shows how to customize a device template.":::
+   Update the property by using the information from the following table:
 
-    | Display name     | Initial value      | Min value | Max value | True name | False name |
-    |----------------|---------------|----------------|---------------|----------------|---------------|
-    | Desired Temperature | 20 | -20 | 80 | n/a | n/a |
+    :::image type="content" source="../media/iot-central-template-customize.png" alt-text="Screenshot of the Altair on Azure Sphere pane for customizing a device template.":::
+
+    | Display&nbsp;name | Initial&nbsp;value | Min.&nbsp;value | Max.&nbsp;value | True&nbsp;name | False&nbsp;name |
+    | --- |--- | --- |--- | --- |--- |
+    | Desired temperature | 20 | -20 | 80 | n/a | n/a |
     | LED brightness | 2 | 0 | 15 | n/a | n/a |
-    | CPU State | On | n/a | n/a | Running | Stopped |
-    | Local Serial Port | Enabled | n/a | n/a | Enabled | Disabled |
+    | CPU state | On | n/a | n/a | Running | Stopped |
+    | Local serial port | Enabled | n/a | n/a | Enabled | Disabled |
+    | | |
 
-1. Repeat for the **LED brightness**, **CPU State**, and **Local Serial Port** properties, be sure to **Save** your updates.
+1. Select **Save**.
 
-### Add Properties view
+1. Repeat the preceding steps for the **LED brightness**, **CPU state**, and **Local serial port** properties.
 
-1. Select **Views** and then select **Editing device and cloud data**.
+### Add the Properties view
 
-    :::image type="content" source="../media/iot-central-view-properties-create.png" alt-text="Screenshot that shows how to view and create properties.":::
+1. On the left pane, select **Views**, and then select the **Editing device and cloud data** tile.
+
+    :::image type="content" source="../media/iot-central-view-properties-create.png" alt-text="Screenshot that highlights the 'Editing device and cloud data' tile.":::
 
 1. Name the properties form **Properties**.
+
 1. Expand **Properties**
 
-    :::image type="content" source="../media/iot-central-template-properties-select-properties.png" alt-text="Screenshot that shows selecting the Properties button.":::
+    :::image type="content" source="../media/iot-central-template-properties-select-properties.png" alt-text="Screenshot that shows the controls for expanding and viewing the Properties list.":::
 
-1. Select the following properties.
-    * Channel ID
-    * CPU State
-    * Desired temperature
-    * LED Brightness
-    * Local serial output
+1. Select the checkboxes next to the following properties:
+
+    * **Channel ID**
+    * **CPU state**
+    * **Desired temperature**
+    * **LED brightness**
+    * **Local serial output**
+
+    :::image type="content" source="../media/iot-central-template-properties.png" alt-text="Screenshot that shows a list of properties that are available for selection.":::
+    
 1. Select **Add section**.
 1. Select **Save**.
 1. Select **Back**.
 
-    :::image type="content" source="../media/iot-central-template-properties.png" alt-text="Screenshot that shows setting properties.":::
-    
+
 ### Add an environment data visualization view
 
-1. Select **Views** and then select **Visualizing the device**.
+1. On the left pane, select **Views**, and then select the **Visualizing the device** tile.
 
-    :::image type="content" source="../media/iot-central-visualize-create.png" alt-text="Screenshot that shows how to select visualizing the device.":::
+    :::image type="content" source="../media/iot-central-visualize-create.png" alt-text="Screenshot that highlights the 'Visualizing the device' tile.":::
     
 1. Name the view **Environment**.
-1. From the **Start with a visual** list, select **Line chart**, scroll to the end of the list, and select **Add tile**.
+1. In the **Start with a visual** list, select **Line chart**, and then select **Add tile**.
 1. Select the **Configure** icon on the tile.
-1. Select **+ Capability**.
-1. From the capability list, select **Temperature**.
-1. Select **+ Capability**.
-1. From the capability list, select **Pressure**.
+1. Select **Capability**.
+1. In the capability list, select **Temperature**.
+1. Select **Capability**.
+1. In the capability list, select **Pressure**.
 
-    :::image type="content" source="../media/iot-central-visualize-tile-capabilities.png" alt-text="Screenshot that shows how to expand properties.":::
+    :::image type="content" source="../media/iot-central-visualize-tile-capabilities.png" alt-text="Screenshot that the Telemetry section for selecting capabilities.":::
     
 1. Select **Update**.
 1. Select **Save**.
-1. 1. Select **Back**.
+1. Select **Back**.
 
-### Publish template
+### Publish the template
 
-1. Finally, select **Publish** to publish the template into the IoT Central application.
-1. Select **Publish**.
+1. Finally, to publish the template to the IoT Central application, select the **Publish** button.
 
-    :::image type="content" source="../media/iot-central-template-publish.png" alt-text="Screenshot that shows selecting the Publish button.":::
+    :::image type="content" source="../media/iot-central-template-publish.png" alt-text="Screenshot of the 'Customize your interface' pane, with the Publish button highlighted.":::
 
 ## View your Altair on Azure Sphere device
 
-1. From the sidebar menu, select **Devices**, then the **Altair on Azure Sphere** template, and finally your device.
+1. On the left pane, select **Devices**, select the **Altair on Azure Sphere** template, and then select your device.
 
-1. Navigate the tabs to explore the device views.
+1. To explore the device views, select the various tabs.
 
-    :::image type="content" source="../media/iot-central-device-tabs.png" alt-text="Screenshot that shows how to display measurements.":::
+    :::image type="content" source="../media/iot-central-device-tabs.png" alt-text="Screenshot that highlights the available tabs for customizing your device properties.":::
 
-## Update the Device properties tab
+## Update the device properties
 
-1. Select **Properties** tab.
-1. Set the initial state for the Altair emulator:
+1. Select the **Properties** tab.
+1. For the Altair emulator initial state, enter the following values:
 
     * CPU state: **Running**
-    * Desired Temperature (Celsius): **30**
-    * LED Brightness (Avnet with LED Click): **2**
     * Local serial output: **Disabled**
-    * The Channel ID is for information only.
+    * LED brightness (Avnet with LED click): **2**
+    * Desired temperature (Celsius): **30**
+    * The channel ID is for information only.
 
-## Create an IoT Central API Token
+## Create an IoT Central API token
 
-The Web Terminal uses the IoT Central device name to connect to the Altair emulator. The Web Terminal needs an IoT Central API Token to access and set the Channel ID property for the device name. The Web Terminal and the Altair emulator use the Channel ID to form unique MQTT topics. Messages flow between the Altair emulator and the Web Terminal using these MQTT topics.
+The web terminal uses the IoT Central device name to connect to the Altair emulator. The web terminal needs an IoT Central API Token to access and set the channel ID property for the device name. The web terminal and the Altair emulator use the channel ID to form unique MQTT topics. Messages flow between the Altair emulator and the web terminal by using these MQTT topics.
 
-1. From the IoT Central sidebar menu, navigate to **Administration**, then **API Token**.
-1. Select **+ New**.
+1. On the IoT Central left pane, select **Administration**, and then select **API tokens**.
+1. Select **New**.
 1. Name your token **Altair-Web-Terminal**.
-1. Select **Generate**
-1. **Copy** the generated token to Notepad as you'll need for the next step.
+1. Select **Generate**.
+1. Copy the generated token to use in the next unit.
 
-    :::image type="content" source="../media/iot-central-api-token-generate.png" alt-text="Screenshot that shows the API Tokens tab.":::
+    :::image type="content" source="../media/iot-central-api-token-generate.png" alt-text="Screenshot of the 'API tokens' pane with the 'Generate token' button highlighted.":::
 
 ## Generate the IoT Central URL
 
-You need the IoT Central URL for the Altair Web Terminal.
+In the next unit, when you create the Altair web terminal, you'll need to add the IoT Central URL to it.
 
-1. From your browser address bar, **copy** the base address of your IoT Central application to Notepad as you'll need for the next step.
-1. Ensure you **remove** the trailing '**/**' from the URL.
+In your browser address bar, copy the base address of your IoT Central application to use in the next unit, as shown in the following screenshot. Be sure to remove the trailing slash (/) character from the URL.
 
     :::image type="content" source="../media/iot-central-application-url.png" alt-text="Screenshot that shows how to copy the IoT Central URL.":::
-
-In the next unit, you will create the Altair Web Terminal.
-

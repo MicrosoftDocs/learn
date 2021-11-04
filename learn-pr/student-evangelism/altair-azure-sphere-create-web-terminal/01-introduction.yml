@@ -3,7 +3,7 @@ uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal.introducti
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to how to create an Altair Web Terminal and run an Altair Python virtual disk server.
+  description: This unit introduces you to creating an Altair web terminal and runnin an Altair Python virtual disk server.
   ms.date: 10/01/2021
   author: gloveboxes
   ms.author: chnoring

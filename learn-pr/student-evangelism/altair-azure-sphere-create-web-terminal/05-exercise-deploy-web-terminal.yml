@@ -3,7 +3,7 @@ uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal.exercise-d
 title: Exercise - Deploy an Altair web terminal
 metadata:
   title: Exercise - Deploy an Altair web terminal
-  description: In this exercise, deploy the Web Terminal Azure Static Web App.
+  description: In this exercise, you'll deploy an Altair web terminal static web app.
   ms.date: 10/01/2021
   author: gloveboxes
   ms.author: chnoring
