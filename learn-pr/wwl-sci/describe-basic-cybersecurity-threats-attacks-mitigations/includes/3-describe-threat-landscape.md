@@ -54,6 +54,6 @@ The attacker then tries a vast number of possible password combinations to acces
 
 A data breach is when an attacker successfully gains access or control of data. Using the intruder example, this would be similar to that person getting access to, or stealing, vital documents and information inside the building:
 
-:::image type="content" source="../media/data-breach-v2.png" alt-text="Image showing a thief running from an office building.":::
+:::image type="content" source="../media/data-breach-v3.png" alt-text="Image showing a thief running from an office building.":::
 
 When an attacker achieves a security breach, they'll often want to target data, because it represents vital information. Poor data security can lead to an attacker gaining access and control of data. This can lead to serious consequences for the victim, whether that is a person, organization, or even a government. This is because the victim's data could be abused in many ways. For example, it can be held as ransom or used to cause financial or reputational harm.
