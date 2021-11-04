@@ -21,7 +21,7 @@ quiz:
       explanation: "False. String datatype is just one of many data types that can be included in the tabular data."
     - content: "Tabular"
       isCorrect: true
-      explanation: "True. Each operator starts with a tabular input, and returns a tabular output."
+      explanation: 'True. Each operator starts with a | tabular input, and returns a tabular output.'
     - content: "JSON"
       isCorrect: false
       explanation: "False. JSON datatype is just one of many data types that can be included in the tabular data."
