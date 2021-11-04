@@ -40,7 +40,7 @@ quiz:
       explanation: "Incorrect. While Splunk is one of the third-party SIEM tools we can export data to, it is not the only one. We also support other third-party SIEM tools, such as IBM QRadar and ArcSight."
   - content: "John wants to configure email notifications to be sent from Azure AD Domain Services when issues are detected. In Azure, where this would be configured?"
     choices:
-    - content: "Microsoft Portal > Azure Active Directory > Monitoring > Notifications > Add email recipient."
+    - content: "Azure portal > Azure Active Directory > Monitoring > Notifications > Add email recipient."
       isCorrect: false
       explanation: "Incorrect. Azure Active Directory Domain Services is a standalone blade in Azure that allows you to configure notifications and other services."
     - content: "Microsoft Portal > Azure AD Domain Services > Notification settings > Add email recipient."
