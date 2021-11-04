@@ -1,8 +1,8 @@
-In the previous unit, you learned how to persist data to an in-memory database. This is useful in development, but since all data is lost when the application is restarted, it is not at all suitable for production. In production, you should persist data to a database like SQL Server, MySQL, PostgreSQL, SQLite, etc.
+In the previous unit, you learned how to persist data to an in-memory database. Persisting data to an in-memory database is useful in development. But, because all data is lost when the application is restarted, it is not at all suitable for production. In production, you should persist data to a database like SQL Server, MySQL, PostgreSQL, SQLite, etc.
 
 ## Database providers abstract database access from the application code
 
-One of the benefits of performing database access through an abstraction layer like EF Core is that it decouples your application from the database provider. This means that you can change the database provider without rewriting your database access code. You shouldn't expect to be able to switch database providers without any impact to you application code, but the changes will be minimized and localized.
+One of the benefits of performing database access through an abstraction layer like EF Core is that it decouples your application from the database provider. You can change the database provider without rewriting your database access code. You shouldn't expect to be able to switch database providers without any effect to your application code, but the changes will be minimized and localized.
 
 A related advantage of using EF Core is that you can reuse your code, experience, and data access libraries to work with any other EF Core database provider.
 
