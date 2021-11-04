@@ -230,6 +230,6 @@ mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encry
 
 2. From the *Overview* pane of your Azure Static Web App in the Azure portal, select the **URL**.
 
-3. To view results for the specific bus route and geofence configured, add **`?rid=100113&gid=1`** to the end of the URL in the browser and refresh the page.
+3. To view results for the specific bus route and geofence configured, add **`?rid=100113&gid=2`** to the end of the URL in the browser and refresh the page.
 
 4. You should now see a geofence and bus points. You may need to use the **+** or **-** buttons create a zoom fit.
