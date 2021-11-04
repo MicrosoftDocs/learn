@@ -4,7 +4,7 @@ Planning for a new Azure Cosmos DB account is composed of two components; throug
 
 The Azure Cosmos DB Capacity Calculator is an online tool that is a real-time aid. The calculator is surfaced as an online form to plug in details about your existing data workload to help estimate your current application's storage and throughput requirements and translate it to a cost estimate in terms of Azure Cosmos DB.
 
-![Screenshot of the Azure Cosmos DB Capacity Calculator](..\media\4-calculator.png)
+![Screenshot of the Azure Cosmos DB Capacity Calculator](../media/4-calculator.png)
 
 > &#128221; The costs detailed in this example may not accurately reflect current storage costs or your current region.
 
