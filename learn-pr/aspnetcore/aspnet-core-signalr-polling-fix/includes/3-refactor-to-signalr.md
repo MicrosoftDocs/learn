@@ -37,7 +37,7 @@ The preceding hub implementation exposes two methods that are invokable from cli
 
 The `Startup` class needed to be updated to add ASP.NET Core SignalR, and the MessagePack protocol. Additionally, the `"/orderstatus"` endpoint is mapped to the `OrderStatusHub` implementation. Consider the following _Startup.cs_ file:
 
-:::code source="~/../blazing-pizza-signalr/blazor-workshop/src/BlazingPizza.Server/Startup.cs" highlight="22-23,32":::
+:::code source="~/../blazing-pizza-signalr/blazor-workshop/src/BlazingPizza.Server/Startup.cs" highlight="39-40,72":::
 
 The preceding highlighted changes:
 
