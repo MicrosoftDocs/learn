@@ -78,7 +78,7 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
     >You may receive an error response from a daemon that your application is not registered with AAD (Azure Active Directory). As noted earlier in this exercise, you've enabled **Admin user** access key to test our deployment.
 
 
-1. Enter the following command, replacing <registry-name> with your own registry name to upload the image to your registry in Azure Container Registry.
+1. Enter the following command, replacing `<registry-name>` with your own registry name to upload the image to your registry in Azure Container Registry.
 
     ```bash
     docker push <registry-name>.azurecr.io/reservationsystem:latest
