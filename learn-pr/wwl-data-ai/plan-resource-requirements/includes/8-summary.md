@@ -10,4 +10,4 @@ For more information about the topics discussed in this module, see:
 
 - [Estimate RU/s using the Azure Cosmos DB capacity planner - SQL API][docs.microsoft.com/azure/cosmos-db/sql/estimate-ru-with-capacity-planner]
 
-[docs.microsoft.com/azure/cosmos-db/sql/estimate-ru-with-capacity-planner]: https://docs.microsoft.com/azure/cosmos-db/sql/estimate-ru-with-capacity-planner
+[docs.microsoft.com/azure/cosmos-db/sql/estimate-ru-with-capacity-planner]: /azure/cosmos-db/sql/estimate-ru-with-capacity-planner
