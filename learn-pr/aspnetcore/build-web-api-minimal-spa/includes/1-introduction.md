@@ -1,6 +1,6 @@
-When you build a program meant for a web audience, that program can just be a static web page with HTML with JavaScript, CSS, and HTML, but more often than not, it's more complicated. With more complicated, we mean that it talks to a backend. You refer to these kinds of programs as being multi layered, a front-end layer in HTML, CSS and JavaScript, and another layer, a backend written in some other runtime. 
+When you build a program meant for a web audience, that program can just be a static web page with HTML with JavaScript, CSS, and HTML, but more often than not, it's more complicated. With more complicated, we mean that it talks to a back end. You refer to these kinds of programs as being multi layered, a front-end layer in HTML, CSS and JavaScript, and another layer, a back end written in some other runtime. 
 
-In this module, we focus on building a front end using the framework React and a backend written in .NET 6 and the minimal API.
+In this module, we focus on building a front end using the framework React and a back end written in .NET 6 and the minimal API.
 
 ## Scenario: Let's build a full stack app
 

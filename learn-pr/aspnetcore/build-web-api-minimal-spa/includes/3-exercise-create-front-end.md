@@ -23,11 +23,11 @@ To scaffold an app, you will use the `create-react-app` scaffolder. By using `np
 
    You should see the page render like this example:
 
-   :::image type="content" source="../media/react.png" alt-text="rendered SPA app":::
+   :::image type="content" source="../media/react.png" alt-text="Screenshot that shows a rendered SPA app.":::
 
 ## Build the master view
 
-Next, we will build a component capable of handling a list of Pizzas.
+Next, you'll build a component that's capable of handling a list of pizzas.
 
 1. Create a file _Main.js_ and give it the following content:
 
@@ -83,10 +83,10 @@ Next, we will build a component capable of handling a list of Pizzas.
 
    What you have at this point are two components:
 
-   - **Pizza**: this component is capable on rendering on Pizza object. It also listens to changes from input and runs the `update()` function, if either text field changes. 
-   - **Main**: this component renders the initial data, a list of pizzas.
+   - **Pizza**: This component is capable on rendering on the `Pizza` object. It also listens to changes from input and runs the `update()` function, if either text field changes. 
+   - **Main**: This component renders the initial data, a list of pizzas.
 
-Worth noting is the use of `dirty` a variable that keeps track of whether a user has attempted to change the input. If the input in either field has been changed, `dirty` is set to `true` and the "Save" button is being rendered. Should the "Save" button be invoked, the `onSave()` method will be invoked. Ideally, this place in the code, is the place where we want to make any calls to a backend, to notify the backend that a Pizza item has been changed.
+Worth noting is the use of `dirty`, a variable that keeps track of whether a user has attempted to change the input. If the input in either field has been changed, `dirty` is set to `true` and the **Save** button is being rendered. If the **Save** button is invoked, the `onSave()` method will be invoked. Ideally, this place in the code, is the place where we want to make any calls to a back end, to notify the back end that a Pizza item has been changed.
 
 ## Add some CSS
 
@@ -211,16 +211,16 @@ It's always great if we can make the UI better looking. There's more than one wa
     
    ```
 
-1. Run `yarn start`, to run the app:
+1. Run `yarn start` to run the app:
 
    ```bash
    yarn start
    ```
 
-   You should see the following:
+   You should see the following image:
 
-   :::image type="content" source="../media/ui.png" alt-text="The rendered Pizza app":::
+   :::image type="content" source="../media/ui.png" alt-text="Screenshot of the rendered Pizza app.":::
 
-1. Type in an input field, it should mark it as *dirty* and the "Save" button for that item should appear.
+1. Type in an input field, it should mark it as *dirty* and the **Save** button for that item should appear.
 
-   :::image type="content" source="../media/ui-changed.png" alt-text="edit item, Pizza app":::
+   :::image type="content" source="../media/ui-changed.png" alt-text="Screenshot that shows editing an item in the Pizza app.":::

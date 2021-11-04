@@ -2,7 +2,7 @@ You are a developer on a company, you and the company have heard all this hype a
 
 ## Set up the project
 
-First, you need to create a project. You've installed .NET 6 and you are ready to go. In this module, we will adding data persistance to a Pizza management API.
+First, you need to create a project. You've installed .NET 6 and you are ready to go. In this module, we will add data persistence to a pizza management API.
 
 1. Create a web api by running `dotnet new`:
 
@@ -10,7 +10,7 @@ First, you need to create a project. You've installed .NET 6 and you are ready t
    dotnet new web -o PizzaStore -f net6.0
    ```
 
-   You should see a directory _PizzaStore_.
+   You should see the directory _PizzaStore_.
 
 1. Go to the _PizzaStore_ directory by typing the following command:
 
@@ -38,7 +38,7 @@ First, you need to create a project. You've installed .NET 6 and you are ready t
     }
     ```
 
-   The above `Pizza` class is a simple object that represents a pizza. This is our data model, and later on you will use EF Core to map this data model to a database table.
+   The above `Pizza` class is a simple object that represents a pizza. This code is our data model, and later, you will use EF Core to map this data model to a database table.
 
 1. Open  _Program.cs_ and add the following code (in bold):
 
@@ -78,7 +78,7 @@ First, you need to create a project. You've installed .NET 6 and you are ready t
 
 ## Add EF Core to the project
 
-To store the items in the to do list we are going need to install  the `EntityFrameworkCore.InMemory` package.
+To store the items in the to-do list, install  the `EntityFrameworkCore.InMemory` package.
 
 1. In your terminal window, type the following to add the EF Core InMemory package:
 
@@ -88,12 +88,12 @@ To store the items in the to do list we are going need to install  the `EntityFr
 
 1. Add `using Microsoft.EntityFrameworkCore;` to the top of your `Program.cs` file.
 
-Now that we have EntityFramework added to the project, we can now wire up our code to the data we want save and query it. To do this we are going to create a `PizzaDb` class. The `PizzaDb` class is going to do the following:
+Now that we have EntityFramework added to the project, we can now wire up our code to the data we want to save and query it. To do this, we are going to create a `PizzaDb` class. The `PizzaDb` class is going to do the following tasks:
 
 - Expose our `Pizzas` property from our list of `Pizza` in the database.
-- `UseInMemoryDatabase` wires the in memory database storage.This will store data as long the app is running.
+- `UseInMemoryDatabase` wires the in-memory database storage. Your data is stored here as long the app is running.
 
-1. To set up your in memory database, add the following to the bottom of the `Pizza.cs` class:
+1. To set up your in-memory database, add the following to the bottom of the `Pizza.cs` class:
 
    ```csharp
    class PizzaDb : DbContext
@@ -108,7 +108,7 @@ Now that we have EntityFramework added to the project, we can now wire up our co
    }
    ```
 
-`DbContext` represents a connection/session which is used to query and save instances of entities in a database.
+`DbContext` represents a connection/session that is used to query and save instances of entities in a database.
 
 1. In `Program.cs`, before the call to `AddSwaggerGen`, add the following code:
 
@@ -124,7 +124,7 @@ Now that we have EntityFramework added to the project, we can now wire up our co
     app.MapGet("/pizzas", async (PizzaDb db) => await db.pizzas.ToListAsync());
     ```
 
-1. In your browser, go to `https://localhost:{PORT}/swagger`. Select the **GET**`/pizzas` button and you will see that the list is empty under `Response body`.
+1. In your browser, go to `https://localhost:{PORT}/swagger`. Select the `GET /pizzas` button and you will see that the list is empty under `Response body`.
 
 ## Create new items
 

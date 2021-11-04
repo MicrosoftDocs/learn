@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: Which of the following is true about Entity Framework (EF) Core?
+    - content: Which of the following statements is true about Entity Framework (EF) Core?
       choices:
         - content: It is the only way to access data from minimal API applications.
           isCorrect: false
@@ -25,8 +25,8 @@ quiz:
           explanation: Although EF Core will abstract and localize your database-specific code, you should expect some development effort to switch databases.
         - content: It stores data in-memory, which is appropriate only in development.
           isCorrect: false
-          explanation: EF Core supports a variety of database providers. In addition to the in-memory database, it supports more than 20 persistent databases.
+          explanation: EF Core supports various database providers. In addition to the in-memory database, it supports more than 20 persistent databases.
         - content: It is a lightweight, extensible, and cross-platform data access technology for .NET applications.
           isCorrect: true
-          explanation: This is correct. EF Core is an easy way to get started with database access in .NET and is a great fit for many .NET applications.
+          explanation: Correct. EF Core is an easy way to get started with database access in .NET and is a great fit for many .NET applications.
           

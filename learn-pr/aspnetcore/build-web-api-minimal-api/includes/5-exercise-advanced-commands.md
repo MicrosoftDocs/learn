@@ -1,4 +1,4 @@
-Your first project with minimal API was well received, now, they want to see an application that does a little more like managing a resource, what resource is up to you. You are feeling hungry, so maybe Pizza?
+Your first project with minimal API was well received, now, they want to see an application that does a little more like managing a resource, what resource is up to you. You are feeling hungry, so maybe pizza?
 
 ## Add data
 
@@ -66,9 +66,11 @@ Great, now you have your data store, let's have the API use it next.
 
 To connect your in-memory store to the API, do the following steps:
 
-- **Add the namespace**. This addition is as simple as adding the proper `using`.
-- **Setup the routes**. Here, you need to make sure you add all the needed route mappings for creating, reading, updating, and deleting.
-- **Invoke it in the routes**. Finally, you need to call the in-memory store per each route and pass in any parameters or body from the request, if applicable.
+1. **Add the namespace**. This addition is as simple as adding the proper `using`.
+1. **Set up the routes**. Here, you need to make sure you add all the needed route mappings for creating, reading, updating, and deleting.
+1. **Invoke it in the routes**. Finally, you need to call the in-memory store per each route and pass in any parameters or body from the request, if applicable.
+
+Now, connect data in your API:
 
 1. At the top of _Program.cs_ file, add the following line of code:
 

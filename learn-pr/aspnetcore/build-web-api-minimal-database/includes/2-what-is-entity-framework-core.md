@@ -1,4 +1,4 @@
-Most non-trivial web applications will need to reliably perform create, read, update, and delete (CRUD) operations on data, and persist these changes between application restarts. While there are a variety of options for persisting data in .NET applications, Entity Framework (EF) Core is a user-friendly solution and a great fit for many .NET applications.
+Most non-trivial web applications will need to reliably do create, read, update, and delete (CRUD) operations on data, and persist these changes between application restarts. While there are various options for persisting data in .NET applications, Entity Framework (EF) Core is a user-friendly solution and a great fit for many .NET applications.
 
 ## Understand Entity Framework (EF) Core
 
@@ -17,7 +17,7 @@ With EF Core, data access is performed using a model. A model is made up of enti
 
 ## The entity class
 
-In this scenario, you are implementing a pizza store management API, so you will use a `Pizza` entity class. The pizzas in your store will have a name and a description, and will also need an ID to allow the API and database to identify them. This is the `Pizza` entity class you will be using in your application:
+In this scenario, you are implementing a pizza store management API, so you will use a `Pizza` entity class. The pizzas in your store will have a name and a description, and will also need an ID to allow the API and database to identify them. The `Pizza` entity class you will be using in your application identifies pizzas:
 
 ```csharp
 namespace PizzaStore.Models 
@@ -37,7 +37,7 @@ While this application only has one entity class, most applications will have mu
 
 ## Perform CRUD operations with EF Core
 
-Once configured, you can use EF Core to perform CRUD operations on your entity classes. This allows you to develop against C# classes, delegating the database operations to the context class. Database providers in turn translate it to database-specific query language (for example, SQL for a relational database). Queries are always executed against the database, even if the entities returned in the result already exist in the context.
+Once configured, you can use EF Core to perform CRUD operations on your entity classes. Then, you can develop against C# classes, delegating the database operations to the context class. Database providers in turn translate it to database-specific query language (for example, SQL for a relational database). Queries are always executed against the database, even if the entities returned in the result already exist in the context.
 
 ### Query data
 
@@ -58,7 +58,7 @@ await db.pizzas.AddAsync(
 
 ### Delete data
 
-Delete operations are pretty simple. They require only an ID of the item to be deleted:
+Delete operations are simple. They require only an ID of the item to be deleted:
 
 ```csharp
 var pizza = await db.pizzas.FindAsync(id);
@@ -88,4 +88,4 @@ await db.SaveChangesAsync();
 
 ## Use the EF Core in-memory database
 
-EF Core includes an in-memory database provider that can be used to test your application. This is useful for testing and development, but should not be used in production. In the next exercise, you will use the in-memory database provider to create a database and perform CRUD operations on it.
+EF Core includes an in-memory database provider that can be used to test your application. The in-memory database provider is useful for testing and development, but it should not be used in production. In the next exercise, you will use the in-memory database provider to create a database and perform CRUD operations on it.

@@ -22,10 +22,10 @@ quiz:
           explanation: Correct. That happens in both types of API.
         - content: Requests are primarily mapped to controllers and decorators for controller-based APIs.
           isCorrect: false
-          explanation: Incorrect. That is a difference between the two approaches.
+          explanation: Incorrect. This request mapping is a difference between the two approaches.
         - content: Model binding uses decorators to get body data.
           isCorrect: false
-          explanation: Incorrect. That is a difference between the two approaches. There's no need for decorators to get body data for minimal API.
+          explanation: Incorrect. This model binding detail is a difference between the two approaches. There's no need for decorators to get body data for minimal API.
     - content: What is the correct way to create a minimal API?
       choices:
         - content: Type `dotnet new webapi`.

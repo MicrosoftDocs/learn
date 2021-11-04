@@ -77,9 +77,7 @@ At this point, you have a front-end app with static data inside of the app. You 
 
    The method `fetchData()` has been added, and it's being invoked which triggers a GET request to "http://localhost:5000/pizzas". Next, we need to ensure the mock server is up and running.
 
-1. Run `npx json-server --watch --port 5000 db.json` in a separate terminal:
-
-   This should bring up the mock server and you should see an output looking like so:
+1. Run `npx json-server --watch --port 5000 db.json` in a separate terminal. Running this codeshould bring up the mock server and you should see an output looking like so:
 
    ```output
    \{^_^}/ hi!
@@ -99,7 +97,7 @@ At this point, you have a front-end app with static data inside of the app. You 
    yarn start
    ```
 
-   Your app should render like normal at "http://localhost:3000". Great, let's add a proxy next.
+   Your app should render like normal at `http://localhost:3000`. Great, let's add a proxy next.
 
 1. Add a proxy by opening up _package.json_ and the following entry:
 
@@ -107,7 +105,7 @@ At this point, you have a front-end app with static data inside of the app. You 
    "proxy": "http://localhost:5000"    
    ```
 
-   Any calls to "/api/" will be translated as calling "http://localhost:5000".
+   Any calls to "/api/" will be translated as calling `http://localhost:5000`.
 
 1. Restart your app with `yarn start`:
 
@@ -115,7 +113,7 @@ At this point, you have a front-end app with static data inside of the app. You 
    yarn start
    ```
 
-   Your app should start as normal on "http://localhost:5000".
+   Your app should start as normal on `http://localhost:5000`.
 
 ## Use the server API
 
@@ -130,13 +128,13 @@ At this point, the back-end team has finished building the server. To use the se
    cd PizzaStore
    ```
 
-1. In a terminal run `dotnet ef database` to apply the migrations that will create a database with tables.
+1. In a terminal, run `dotnet ef database` to apply the migrations that will create a database with tables.
 
    ```bash
    dotnet ef database update
    ```
 
-1. Open up _Program.cs_ and add the following code to enable CORS, (code you need to add is in bold):
+1. Open up _Program.cs_ and add the following code to enable CORS (code you need to add is in bold):
 
    <pre>
    using Microsoft.EntityFrameworkCore;
@@ -209,12 +207,12 @@ At this point, the back-end team has finished building the server. To use the se
    app.Run();
    </pre>
 
-   The changes will configure CORS, so that you will be able to read and write towards the API, despite the front end and back end running on different ports.
+   The changes will configure CORS, so that you will be able to read and write toward the API, despite the front end and back end running on different ports.
 
 1. Start your API with `dotnet run` (Ensure you quit JSON server first)
 
    The server runs on port 5059. You will need to adjust the proxy in _package.json_ for the front-end app to match the port the server assumes.
 
-   Your front end should show one item with the title, "Pepperoni" .
+   Your front end should show one item with the title, "Pepperoni.".
 
 Congratulations, you've managed to create a full stack application with a front-end and back-end part.

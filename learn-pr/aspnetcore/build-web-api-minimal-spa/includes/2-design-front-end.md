@@ -1,6 +1,6 @@
 Say you have sat down with two development teams, a front-end team that knows HTML, CSS and JavaScript and a front-end framework. The other team knows ASP.NET Core. You have all agreed on what features you want this full stack app should have. 
 
-You as a front-end developer have different concerns than the backend team. You need to think about the user's experience, how will they use these features, what layout do I need, what's the users interaction flow and so on. Also, what if you are working faster than the backend team, can you progress, or do you have to wait for the backend team to deliver?
+You as a front-end developer have different concerns than the back-end team. You need to think about the user's experience, how will they use these features, what layout do I need, what's the users interaction flow, and so on. Also, what if you are working faster than the back-end team, can you progress, or do you have to wait for the back-end team to deliver?
 
 You sit down with your team consisting of a user experience person, a JavaScript specialist, and a designer, and start planning out the app.
 
@@ -10,7 +10,7 @@ The first thing you want to know is what capabilities your front-end app should 
 
 ### Select a framework
 
-Users today are used to apps on the web that reacts fast to user's interactions. If the user clicks a button or moves between pages, the app needs to respond quickly, just like in a client app like Microsoft Excel or Microsoft Word for example. A whole category of JavaScript frameworks was invented for this very reason, SPA frameworks, or Single Page Application frameworks.
+Users today are used to apps on the web that reacts fast to user's interactions. If the user selects a button or moves between pages, the app needs to respond quickly, just like in a client app like Microsoft Excel or Microsoft Word for example. A whole category of JavaScript frameworks was invented for this very reason, SPA frameworks, or Single Page Application frameworks.
 
 ### SPA framework
 
@@ -24,8 +24,8 @@ As everything in IT, it depends. Usually a good measurement is it depend on how 
 
 There's more than one SPA framework out there, and you want to select a framework that supports what you need to do. Additionally you want to make sure the framework you select is popular, has much documentation, many people using it (for future hiring and support). There are four major frameworks that each fulfills the criteria:
 
-- **Angular**. This framework has been around for many years and uses Typescript heavily. If you have a team of C# developers, Typescript resembles C# and the tooling is good for Angular.
-- **React**. React is popular and you can use ES6 and Typescript. Like Angular, it has great tooling.
+- **Angular**. This framework has been around for many years and uses TypeScript heavily. If you have a team of C# developers, TypeScript resembles C# and the tooling is good for Angular.
+- **React**. React is popular and you can use ES6 and TypeScript. Like Angular, it has great tooling.
 - **Vue.js**. Vue.js is also a good choice, and many people are using it.
 - **Svelte**. Svelte is relatively new in this context but does a great job of looking like you are only working in HTML, JavaScript, and CSS as its compiler is powerful and able to _hide_ the framework parts to high degree.
 
@@ -56,7 +56,7 @@ Here, you are passing in a JavaScript object that has properties `title` and `de
 
 ## Plan your front-end app
 
-At high level, your user will manage resources, regardless of whether those resources are nuts and bolts, orders or Pizzas, the user will need to do things like:
+At high level, your user will manage resources, regardless of whether those resources are nuts and bolts, orders, or pizzas, the user will need to do things like:
 
 - **Create a resource**. Creating a resource means the user will type in information on a resource and at some point look to send that to a server app.
 - **Read resource**. You will need to read the resource information from the server app and present that to the user.

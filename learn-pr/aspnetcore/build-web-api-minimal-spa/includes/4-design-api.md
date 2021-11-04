@@ -46,7 +46,7 @@ PATCH  /pizza/1
 DELETE /pizza/1
 ```
 
-What happens *under the hood* is that were you make any requests towards this mocked API and change data, the static file _db.json_ would change and the server would rebuild and relaunch to reflect the changes.
+What happens *under the hood* is that were you make any requests toward this mocked API and change data, the static file _db.json_ would change and the server would rebuild and relaunch to reflect the changes.
 
 ### What about the front-end app?
 
@@ -60,19 +60,19 @@ fetch("http://localhost:5000/pizza")
 
 ### Use a proxy
 
-A proxy is something you can define in your front-end app. What it does for you is that it save you a few keystrokes. Imagine you are doing requests towards "http://localhost:5000/pizza". If you don't want to type out the full domain, can create a proxy, an alias. To set up a proxy, you go to _package.json_ and add an entry like so:
+A proxy is something you can define in your front-end app. What it does for you is that it save you a few keystrokes. Imagine you are doing requests toward `http://localhost:5000/pizza`. If you don't want to type out the full domain, can create a proxy, an alias. To set up a proxy, you go to _package.json_ and add an entry like so:
 
 ```json
 "proxy": "http://localhost:5000"
 ```
 
-Instead of making requests towards "http://localhost:5000/pizza" can now make request towards "/api/pizza". "api" is then being resolved to "http://localhost:5000" when you make requests. It's not a thing you must use, but it makes typing requests a bit more convenient.
+Instead of making requests toward `http://localhost:5000/pizza` can now make request toward "/api/pizza". "api" is then being resolved to `http://localhost:5000` when you make requests. It's not a thing you must use, but it makes typing requests a bit more convenient.
 
 ## Talk to a real API
 
-Once the real API is finished, you should have the front-end app make requests towards that API, instead of the mocked API, to ensure everything is working as it should.
+Once the real API is finished, you should have the front-end app make requests toward that API, instead of the mocked API, to ensure everything is working as it should.
 
-However, when you first try to talk to your real back end, you might get an error as the front end makes requests towards the back end. You see an error looking something like so:
+However, when you first try to talk to your real back end, you might get an error as the front end makes requests toward the back end. You see an error looking something like so:
 
 ```output
 Access to fetch at http://localhost:5000 from origin 'http://localhost:3000' has been blocked by CORS policy...
@@ -87,7 +87,7 @@ The good news is that you can fix it, by implementing CORS on the back end.
 
 ## CORS
 
-CORS is short for cross-origin resource sharing, it's a protocol that allows a back end to accept requests from other domains than it's currently running on. This is a security feature. The idea is that the calling client makes a request towards a back end and start by sending a preflight request using the OPTIONS verb, that essentially is a question towards the back end asking what it can perform towards a resource. At this point, the back end can answer back to the calling client and either approve or deny the request at which point the actual request, being a GET, or POST, for example,  goes through. Imagine the following flow below:
+CORS is short for cross-origin resource sharing, it's a protocol that allows a back end to accept requests from other domains than it's currently running on. This is a security feature. The idea is that the calling client makes a request toward a back end and start by sending a preflight request using the OPTIONS verb, that essentially is a question toward the back end asking what it can perform toward a resource. At this point, the back end can answer back to the calling client and either approve or deny the request at which point the actual request, being a GET, or POST, for example,  goes through. Imagine the following flow below:
 
 ```output
 client> OPTIONS, can I do POST on /pizzas?
@@ -124,4 +124,4 @@ builder.Services.AddCors(options =>
 app.UseCors(MyAllowSpecificOrigins);
 ```
 
-What's going on above is that a policy is added. As part of the policy, you allowlist the domains that is allowed to talk with the API. In this case, you allowlist "http://example.com" and "*". Essentially "*" means all possible domains would be allowed. If you only want specific domains to be allowed, specify only the ones you want. Lastly the `UseCors()` method is called with applies the policy. You can offer more fine grained control than the above. You can decide that only certain HTTP Verbs should be allowed for certain routes for example.
+What's going on here is that a policy is added. As part of the policy, you allowlist the domains that are allowed to talk with the API. In this case, you allowlist `http://example.com` and `*`. Essentially, `*` means all possible domains would be allowed. If you only want specific domains to be allowed, specify only the ones you want. Lastly the `UseCors()` method is called with applies the policy. You can offer more fine grained control than the above. You can decide that only certain HTTP Verbs should be allowed for certain routes for example.
