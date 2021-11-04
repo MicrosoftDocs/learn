@@ -8,7 +8,7 @@ In this exercise, you'll customize your Altair IoT Central application.
 
     It might take a minute or two for your device to be displayed in the devices section of IoT Central.
 
-    The device name is your Azure Sphere Device ID. You can display your Device ID by running the following command at the Windows PowerShell command prompt or Linux terminal:
+    The device name is your Azure Sphere device ID. You can display your device ID by running the following command at the Windows PowerShell command prompt or Linux terminal:
 
    ```azsphere
    azsphere device show-attached
@@ -52,7 +52,7 @@ To rename your device, on the left pane, select **Device**, select **Manage devi
 
     :::image type="content" source="../media/iot-central-view-properties-create.png" alt-text="Screenshot that highlights the 'Editing device and cloud data' tile.":::
 
-1. Name the properties form **Properties**.
+1. For **Form name**, enter **Properties**.
 
 1. Expand **Properties**
 
@@ -136,4 +136,4 @@ In the next unit, when you create the Altair web terminal, you'll need to add th
 
 In your browser address bar, copy the base address of your IoT Central application to use in the next unit, as shown in the following screenshot. Be sure to remove the trailing slash (/) character from the URL.
 
-    :::image type="content" source="../media/iot-central-application-url.png" alt-text="Screenshot that shows how to copy the IoT Central URL.":::
+:::image type="content" source="../media/iot-central-application-url.png" alt-text="Screenshot that shows how to copy the IoT Central URL.":::
