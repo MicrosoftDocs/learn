@@ -1,4 +1,4 @@
-Microsoft Defender for Cloud, integrated with Microsoft Defender for Cloud, provides Azure and hybrid cloud workload protection and security.
+Microsoft Defender for Cloud provides Azure and hybrid cloud workload protection and security.
 
 You are a Security Operations Analyst working at a company that uses Microsoft Defender for Cloud for Cloud Security Posture Management.  You are responsible for implementing cloud workload protections provided by Microsoft Defender for Cloud.  
 
