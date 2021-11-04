@@ -4,7 +4,7 @@ Your band is on tour next month, and you have identified specific metrics that w
 
 In this unit, you'll see how to install the Azure Monitor Agent to monitor the health of a VM. You'll learn how to enable the agent for an existing VM.
 
-## Install the Azure Monitor Agent using Data Collection Rules
+## Install the Azure Monitor Agent by using Data Collection Rules
 
 The Azure Monitor Agent allows you to collect near real-time performance metrics from the guest operating system, along with log events, and store the results in Azure Monitor Metrics and Azure Monitor Logs.
 
