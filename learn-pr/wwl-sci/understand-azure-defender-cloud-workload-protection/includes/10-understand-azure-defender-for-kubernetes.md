@@ -16,7 +16,7 @@ Defender for Cloud provides threat protection at different levels:
 
 - **AKS cluster level (provided by Microsoft Defender for Kubernetes)** - At the cluster level, the threat protection is based on analyzing Kubernetes' audit logs. To enable this agentless monitoring, enable Microsoft Defender for Cloud. To generate alerts at this level, Defender for Cloud monitors your AKS-managed services using the logs retrieved by AKS. Examples of events at this level include exposed Kubernetes dashboards, creation of high privileged roles, and creation of sensitive mounts.
 
-## How does Defender for Cloud's Kubernetes protection work?
+## How does Defender for Kubernetes protection work?
 
 Below is a high-level diagram of the interaction between Microsoft Defender for Cloud, Azure Kubernetes Service, and Azure Policy.
 
