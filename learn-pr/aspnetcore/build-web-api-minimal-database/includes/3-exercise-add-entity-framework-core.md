@@ -42,7 +42,7 @@ First, you need to create a project. You've installed .NET 6 and you are ready t
 
 1. Open  _Program.cs_ and add the following code (in bold):
 
-   :::code language="csharp" source="/code/ef-core-one.cs" highlight="1, 5-12, 15-19"::: 
+   :::code language="csharp" source="../code/ef-core-one.cs" highlight="1, 5-12, 15-19"::: 
 
    <pre>
    <b>using Microsoft.OpenApi.Models;</b>
