@@ -1,6 +1,6 @@
 Use the following procedures to deploy Altair emulator disk services to Azure Sphere.
 
-## Deploy the prebuilt real-time packages (recommended)
+## Open the folder for prebuilt real-time packages
 
 1. If you're using Windows, open a Windows PowerShell command line. If you're using Linux, open a terminal.
 1. Go to the folder where you cloned the *Altair8800Emulator* repository.

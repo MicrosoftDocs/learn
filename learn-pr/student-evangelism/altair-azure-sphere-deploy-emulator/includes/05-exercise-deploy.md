@@ -38,7 +38,7 @@ You'll need your Azure Sphere tenant ID for the next step. To get the ID:
     * Update **CmdArgs** with your Azure IoT Central ID scope.
     * Update **DeviceAuthentication** with the Azure Sphere tenant ID. The tenant ID is the numeric value that you got from running the `azsphere tenant show-selected` command.
 
-1. Update **AllowedConnections** with the Azure IoT Central application endpoints that you copied to Notepad.
+1. Update **AllowedConnections** with the Azure IoT Central application endpoints that you copied to Notepad in an earlier module.
 
 1. Include a network endpoint for *test.mosquitto.org* in the **AllowedAllowedConnections** list.
 
