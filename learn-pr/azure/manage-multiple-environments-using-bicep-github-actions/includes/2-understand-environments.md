@@ -1,6 +1,6 @@
-Deployment pipelines enable you to automate the steps in your deployment process. Often, you need to run the steps in multiple separate environments. In your toy company, you want to review the changes to your code before you deploy the changes to your production environment.
+Deployment workflows enable you to automate the steps in your deployment process. Often, you need to run the steps in multiple separate environments. In your toy company, you want to review the changes to your code before you deploy the changes to your production environment.
 
-In this unit, you'll learn about how environments in Azure Pipelines help you support your own workflow.
+In this unit, you'll learn about how environments in GitHub Actions help you support your own process.
 
 ## Why do you have multiple environments?
 
@@ -48,23 +48,23 @@ Common environments include:
 
 You might see variations of these environments. Some organizations use only a few environments, and some use many more. The number and type of environments that you use depend on the solution you're deploying, the size of the team that's building the solution, and the importance of the workload. 
 
-Sometimes, a single environment takes the role of several of the environments listed earlier. Other times, you might have a very complex pipeline that deploys to multiple environments, some in parallel and some in sequence. Some organizations even automatically delete or deprovision environments when they're no longer used, and then redeploy them when they're needed in the future.
+Sometimes, a single environment takes the role of several of the environments listed earlier. Other times, you might have a very complex workflow that deploys to multiple environments, some in parallel and some in sequence. Some organizations even automatically delete or deprovision environments when they're no longer used, and then redeploy them when they're needed in the future.
 
-Whatever your organization chooses as its list of environments, the goal is to improve your confidence in a change as it progresses through your deployment pipeline. When a change doesn't meet your quality requirements, you want to be able to stop the deployment of that change to any subsequent environments in the chain.
+Whatever your organization chooses as its list of environments, the goal is to improve your confidence in a change as it progresses through your deployment workflow. When a change doesn't meet your quality requirements, you want to be able to stop the deployment of that change to any subsequent environments in the chain.
 
 In your toy company, you decide to start with a basic set of environments for your website. In addition to your production environment, you'll create one non-production environment named *Test*:
 
 :::image type="content" source="../media/2-environments.png" alt-text="Diagram that shows two environments: test and production." border="false":::
 
-You'll update your pipeline to deploy your Bicep code to your test environment and run some basic tests against it. If that effort succeeds, you'll deploy to your production environment.
+You'll update your workflow to deploy your Bicep code to your test environment and run some basic tests against it. If that effort succeeds, you'll deploy to your production environment.
 
-## Pipeline environments
+## Workflow environments
 
-Azure Pipelines also has the concept of an environment. You create an Azure Pipelines environment to represent the environment that you have in Azure. When you define your pipeline in a YAML file, you link your deployment jobs to a specific environment. By using environments, you get some additional features in your pipeline.
+GitHub Actions also has the concept of an environment. You create a GitHub Actions environment to represent the environment that you have in Azure. When you define your workflow in a YAML file, you link your deployment jobs to a specific environment. By using environments, you get some additional features in your workflow.
 
 ### Checks and approvals
 
-An environment in Azure DevOps can have checks and approvals configured. Each time the environment is used in a job in your pipeline, Azure DevOps will make sure these checks and approvals succeed before the job starts running.
+An environment in GitHub Actions can have checks and approvals configured. Each time the environment is used in a job in your workflow, GitHub Actions will make sure these checks and approvals succeed before the job starts running.
 
 For example, you can configure manual approvals on your production environment. Before a production deployment starts, the designated approver will receive an email notification. That person can manually verify that your policies and procedures are met before the deployment begins. For example, the approver might check that everything is working as they expect in the pre-production environment before they approve the deployment.
 
@@ -72,22 +72,22 @@ Additionally, you could run an automated check to review the logs and error rate
 
 ### Deployment history
 
-Azure Pipelines tracks the history of the deployments to an environment. This history gives you an easy way to track what happens in the environment over time. It even allows you to trace a deployment to a specific feature request in your Azure Boards work items, or to a commit in your repository. This feature can be useful if you have a problem with a deployment and need to identify the change that led to the problem.
+GitHub Actions tracks the history of the deployments to an environment. <!-- TODO check if this is true --> This history gives you an easy way to track what happens in the environment over time. It even allows you to trace a deployment to a specific feature request in your GitHub issues <!-- TODO check this -->, or to a commit in your repository. This feature can be useful if you have a problem with a deployment and need to identify the change that led to the problem.
 
 ### Security
 
-You can apply additional security controls to environments. You can restrict the pipelines that are allowed to use a specific environment, to prevent someone from accidentally creating a secondary pipeline that interacts with your production environment.
+You can apply additional security controls to environments. You can restrict the workflows that are allowed to use a specific environment, to prevent someone from accidentally creating a secondary workflow that interacts with your production environment. <!-- TODO check if this is true -->
 
 You can also apply user permissions to control the users who can manage environments. Specific permissions can allow users to create new environments, to modify environments, and to view environments and the history of deployments to them.
 
 > [!NOTE]
-> When your pipeline refers to an environment that doesn't exist yet, Azure Pipelines automatically creates it for you. This feature can affect the security of your Azure DevOps project because you'll automatically get administrative permissions to the environment. It's best to create an environment yourself through the Azure DevOps web interface, so that you have full control over its security and you don't accidentally get permissions that you don't need.
+> When your workflow refers to an environment that doesn't exist yet, GitHub Actions automatically creates it for you. <!-- TODO check that this is true--> This feature can affect the security of your GitHub repository because you'll automatically get administrative permissions to the environment. <!-- TODO check this --> It's best to create an environment yourself through the GitHub web interface, so that you have full control over its security and you don't accidentally get permissions that you don't need.
 
 ## Environments and service connections
 
 When you use multiple environments, you should make each environment independent from the others. For example, your development environment's website shouldn't be able to access a database within your production environment. 
 
-The same principle also applies to the deployment pipeline. The service connection that you use to deploy to your development environment shouldn't be able to access your production environment. Following this principle adds another layer of protection to ensure that your non-production deployments don't affect your production environment.
+The same principle also applies to the deployment workflow. The service connection that you use to deploy to your development environment shouldn't be able to access your production environment. Following this principle adds another layer of protection to ensure that your non-production deployments don't affect your production environment.
 
 You should create separate service connections for each environment. Each service connection should use its own dedicated service principal, with specific permissions to only deploy to the subscription and resource group used by that environment:
 
