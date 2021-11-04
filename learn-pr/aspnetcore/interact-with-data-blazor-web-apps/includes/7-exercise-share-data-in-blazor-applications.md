@@ -210,11 +210,11 @@ At the moment, the app shows the configuration dialog but doesn't allow you to c
     You'll see that there's a lot of code currently in the **index.razor** component that we can move into the new class. The next step is to make this service available in the app.
 
 1. Press <kbd>CTRL+S</kbd>. In the **Save As** dialog, for **File name** enter **OrderState.cs**, then select **Save**.
-1. In the explorer, select **Startup.cs**.
-1. In the `ConfigureServices` method, add this line at the bottom.
+1. In the explorer, select **Program.cs**.
+1. In the `Add services to the container` segment, add this line at the bottom.
 
     ```csharp
-    services.AddScoped<OrderState>();
+    builder.services.AddScoped<OrderState>();
     ```
 
     From the previous exercise, we added our database context here. This code adds the new `OrderState` service. With this in place, we can now use it in the `index.razor` component.

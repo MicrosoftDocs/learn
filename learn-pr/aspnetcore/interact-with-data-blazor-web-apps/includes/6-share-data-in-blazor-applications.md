@@ -111,17 +111,17 @@ public class PizzaSalesState
 }
 ```
 
-Now, add the class as a scoped service, in the Startup.cs file:
+Now, add the class as a scoped service, in the Program.cs file:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-	services.AddRazorPages();
-	services.AddServerSideBlazor();
-	
-	// Add the AppState class
-	services.AddScoped<PizzaSalesState>();
-} 
+...
+// Add services to the container
+builder.services.AddRazorPages();
+builder.services.AddServerSideBlazor();
+
+// Add the AppState class
+builder.services.AddScoped<PizzaSalesState>();
+...
 ```
 
 Now, in any component where you want to set or retrieve AppState values, inject the class and then access properties:

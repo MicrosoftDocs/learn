@@ -17,9 +17,9 @@ In this exercise, you'll add packages to support our database functionality, con
 
     ```xml
       <ItemGroup>
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.9" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.9" />
-        <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.0" />
+        <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
       </ItemGroup>
     ```
 
@@ -178,39 +178,33 @@ The app will check to see if there's an existing SQLite database, and create one
 
     This statement allows the app to use dependency injection to register new services.
 
-1. Replace the whole **Main** method with this code:
+1. Insert this segment just above the `app.Run();` method:
 
     ```csharp
-    public static void Main(string[] args)
+    ...
+    // Initialize the database
+    var scopeFactory = app.Services.GetRequiredService<IServiceScopeFactory>();
+    using (var scope = scopeFactory.CreateScope())
     {
-        var host = CreateHostBuilder(args).Build();
-    
-        // Initialize the database
-        var scopeFactory = host.Services.GetRequiredService<IServiceScopeFactory>();
-        using (var scope = scopeFactory.CreateScope())
+        var db = scope.ServiceProvider.GetRequiredService<PizzaStoreContext>();
+        if (db.Database.EnsureCreated())
         {
-            var db = scope.ServiceProvider.GetRequiredService<PizzaStoreContext>();
-            if (db.Database.EnsureCreated())
-            {
-                SeedData.Initialize(db);
-            }
+            SeedData.Initialize(db);
         }
-    
-        host.Run();
-    
     }
+
+    app.Run();
     ```
 
     This change creates a database scope with the `PizzaStoreContext` and, if there isn't a database already created, calls the `SeedData` static class to create one.
 
     At the moment, the app won't work, as we haven't initialized the `PizzaStoreContext`. This code should be added to **Startup.cs**.
 
-1. In the explorer, select **Startup.cs**.
-1. In the `ConfigureServices` method, add this code under the current services:
+1. In the `Add Services to the container` section higher in the `Program.cs` file, add this code under the current services:
 
     ```csharp
-      services.AddHttpClient();
-      services.AddDbContext<PizzaStoreContext>(options => 
+      builder.services.AddHttpClient();
+      builder.services.AddDbContext<PizzaStoreContext>(options => 
           options.UseSqlite("Data Source=pizza.db"));
     ```
 
@@ -260,23 +254,22 @@ We can now replace the hard-coded pizza in the **index.razor** page.
 1. Remember that the app should be creating JSON at [http://localhost:5000/specials](http://localhost:5000/specials). Navigate to that URL.
 1. The app doesn't know how to route this request. You will learn about routing in the module on Blazor routing. Let's fix the error now.
 1. Press <kbd>Shift</kbd> + <kbd>F5</kbd>, or select **Stop Debugging**.
-1. In the explorer, select **Startup.cs**.
-1. In the `Configure` method, in the `app.UseEndpoints` block add this endpoint:
+1. In the explorer, select **Program.cs**.
+1. Near the bottom of the file, after the `Configure the HTTP request pipeline` comment and the `app.UseEndpoints` block add this endpoint:
 
     ```csharp
-    endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
+    app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
     ```
 
     The code should now be:
 
     ```csharp
-    app.UseEndpoints(endpoints =>
-    {
-        endpoints.MapRazorPages();
-        endpoints.MapBlazorHub();
-        endpoints.MapFallbackToPage("/_Host");
-        endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
-    });
+    ...
+    app.MapRazorPages();
+    app.MapBlazorHub();
+    app.MapFallbackToPage("/_Host");
+    app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
+    ...
     ```
 1. Press <kbd>F5</kbd> or select **Run** and then **Start Debugging**.
 1. The app should now work, but let's check that the JSON is being created correctly. 

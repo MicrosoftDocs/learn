@@ -39,7 +39,7 @@ In this example, the code sets the value of a string variable, named `welcomeMes
 When you create a Blazor app, using the **blazorserver** template in the **dotnet** Command Line Interface (CLI), several components are included by default:
 
 ```bash
-dotnet new blazorserver -o BlazingPizzaSite
+dotnet new blazorserver -o BlazingPizzaSite -f net6.0
 ```
 
 The default components include the **Index.razor** homepage and the **Counter.razor** demo component, both of which are placed in the **Pages** folder. You can either modify these views to fit your needs or delete them and replace them with new components.
@@ -47,14 +47,15 @@ The default components include the **Index.razor** homepage and the **Counter.ra
 To add a new component to an existing web app, use this command:
 
 ```bash
-dotnet new razorcomponent -n PizzaBrowser -o Pages
+dotnet new razorcomponent -n PizzaBrowser -o Pages -f net6.0
 ```
 
 - The `-n` option specifies the name of the component to add. This example adds a new file named **PizzaBrowser.razor**.
 - The `-o` option specifies the folder that will contain the new component.
+- The `-f` option forces the application to be built with the framework version .NET 6
 
 > [!IMPORTANT]
-> The name of a Blazor component must begin with an uppercase character. 
+> The name of a Blazor component must begin with an uppercase character.
 
 Once you've created the component, you can open it for edited with Visual Studio Code:
 

@@ -6,7 +6,7 @@ In this unit, you'll learn how to access data and render it within HTML markup f
 
 ## Create a registered data service
 
-If you want to create a dynamic website that shows changing information to users, you must write code to get that data from somewhere. For example, suppose you have a database that stores all the pizzas your company sells. Because the pizzas are always changing, it's a bad idea to hardcode them into the website HTML. Instead, use C# code and Blazor to query the database and then format the details as HTML so that the user can pick their favorite. 
+If you want to create a dynamic website that shows changing information to users, you must write code to get that data from somewhere. For example, suppose you have a database that stores all the pizzas your company sells. Because the pizzas are always changing, it's a bad idea to hardcode them into the website HTML. Instead, use C# code and Blazor to query the database and then format the details as HTML so that the user can pick their favorite.
 
 In a Blazor Server app, you can create a registered service to represent a data source and obtain data from it.
 
@@ -20,20 +20,20 @@ using System;
 
 namespace BlazingPizza.Data
 {
-	public class Pizza
-	{
-		public int PizzaId { get; set; }
-	
-		public string Name { get; set; }
-		
-		public string Description { get; set; }
-		
-		public decimal Price { get; set; }
-		
-		public bool Vegetarian { get; set; }
-		
-		public bool Vegan { get; set; }
-	}
+ public class Pizza
+ {
+  public int PizzaId { get; set; }
+ 
+  public string Name { get; set; }
+  
+  public string Description { get; set; }
+  
+  public decimal Price { get; set; }
+  
+  public bool Vegetarian { get; set; }
+  
+  public bool Vegan { get; set; }
+ }
 }
 ```
 
@@ -47,29 +47,28 @@ using System.Threading.Tasks;
 
 namespace BlazingPizza.Data
 {
-	public class PizzaService
-	{
-		public Task<Pizza[]> GetPizzasAsync()
-		{
-			// Call your data access technology here
-		}
-	}
+ public class PizzaService
+ {
+  public Task<Pizza[]> GetPizzasAsync()
+  {
+   // Call your data access technology here
+  }
+ }
 }
 ```
 
 Notice that the service uses an asynchronous call to access data and return a collection of Pizza objects. Because the data source may be remote from the server where the Blazor code is running, it's good practice to use an asynchronous call to ensure that, if the data source responds slowly, other code can continue to run as you await the response.
 
-You must also register the service by adding a line to the `ConfigureServices` method in the **Startup.cs** file:
+You must also register the service by adding a line to the `Add Services to the container` section in the **Program.cs** file:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-	services.AddRazorPages();
-	services.AddServerSideBlazor();
-	
-	// Register the pizzas service
-	services.AddSingleton<PizzaService>();
-}
+...
+// Add services to the container.
+builder.Services.AddRazorPages();
+builder.Services.AddServerSideBlazor();
+// Register the pizzas service
+builder.services.AddSingleton<PizzaService>();
+...
 ```
 
 ## Use a service to obtain data
@@ -93,7 +92,7 @@ Before you can call the service from the component, you must use dependency inje
 @inject PizzaService PizzaSvc
 ```
 
-Usually, the component and the service will be in different namespace members, so you must include the `@using` directive. This directive works in the same way as a `using` statement at the top of a C# code file. The `@inject` directive adds the service to the current component and initiates an instance of it. In the directive, specify the name of the service class, followed by the name you want to use for the instance of the service in this component. 
+Usually, the component and the service will be in different namespace members, so you must include the `@using` directive. This directive works in the same way as a `using` statement at the top of a C# code file. The `@inject` directive adds the service to the current component and initiates an instance of it. In the directive, specify the name of the service class, followed by the name you want to use for the instance of the service in this component.
 
 ### Override the OnInitializedAsync method
 
@@ -102,7 +101,7 @@ A good place to call the service and obtain data is in the `OnInitializedAsync` 
 ```csharp
 protected override async Task OnInitializedAsync()
 {
-	\\ Call the service here
+ \\ Call the service here
 }
 ```
 
@@ -115,7 +114,7 @@ private Pizza[] todaysPizzas;
 
 protected override async Task OnInitializedAsync()
 {
-	todaysPizzas = await PizzaSvc.GetPizzasAsync();
+ todaysPizzas = await PizzaSvc.GetPizzasAsync();
 }
 ```
 
@@ -130,11 +129,11 @@ First, let's determine what the page displays before the pizzas are loaded. We c
 ```razor
 @if (todaysPizzas == null)
 {
-	<p>We're finding out what pizzas are available today...</p>
+ <p>We're finding out what pizzas are available today...</p>
 }
 else
 {
-	<!-- This markup will be rendered once the pizzas are loaded -->
+ <!-- This markup will be rendered once the pizzas are loaded -->
 }
 ```
 
@@ -145,33 +144,33 @@ The `@if` directive renders the markup in its first code block only if the C# ex
 
 ### Render a collection of objects
 
-If Blazor executes the `else` statement in the above code, then you know that some pizzas have been obtained from the service. Your next task is to display these to the user. Let's construct a simple HTML table to display them. 
+If Blazor executes the `else` statement in the above code, then you know that some pizzas have been obtained from the service. Your next task is to display these to the user. Let's construct a simple HTML table to display them.
 
 We don't know how many pizzas will be available when we code this page, but we can use the `@foreach` directive to loop through all the objects in the `todaysPizzas` collection and render a row for each one:
 
 ```razor
 <table>
-	<thead>
-		<tr>
-			<th>Pizza Name</th>
-			<th>Description</th>
-			<th>Vegetarian?</th>
-			<th>Vegan?</th>
-			<th>Price</th>
-		</tr>
-	</thead>
-	<tbody>
-		@foreach (var pizza in todaysPizzas)
-		{
-			<tr>
-				<td>@pizza.Name</td>
-				<td>@pizza.Description</td>
-				<td>@pizza.Vegetarian</td>
-				<td>@pizza.Vegan</td>
-				<td>@pizza.Price</td>
-			</tr>
-		}
-	</tbody>
+ <thead>
+  <tr>
+   <th>Pizza Name</th>
+   <th>Description</th>
+   <th>Vegetarian?</th>
+   <th>Vegan?</th>
+   <th>Price</th>
+  </tr>
+ </thead>
+ <tbody>
+  @foreach (var pizza in todaysPizzas)
+  {
+   <tr>
+    <td>@pizza.Name</td>
+    <td>@pizza.Description</td>
+    <td>@pizza.Vegetarian</td>
+    <td>@pizza.Vegan</td>
+    <td>@pizza.Price</td>
+   </tr>
+  }
+ </tbody>
 </table>
 ```
 

@@ -15,7 +15,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 1. Run the dotnet terminal command:
 
     ```dotnetcli
-    dotnet new blazorserver -o BlazingPizza --no-https true
+    dotnet new blazorserver -o BlazingPizza --no-https true -f net6.0
     ```
 
     This command creates a new Blazor server project, in a folder named **BlazingPizza** and tells the project to disable https.
@@ -35,7 +35,7 @@ You can choose to use the terminal, or Visual Studio Code to run your app.
 1. In the terminal window, you can start the Blazor app with:
     
     ```dotnetcli
-    dotnet watch run
+    dotnet watch
     ```
 
     This command will build and then start the app. The **watch** command tells dotnet to watch all your project files. Any changes you make to projects files will automatically trigger a rebuild and then restart your app.
