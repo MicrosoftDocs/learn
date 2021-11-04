@@ -61,14 +61,14 @@ quiz:
         - content: ".glb"
           isCorrect: true
           explanation: GLB is a 3D file format that's used in virtual reality (VR), augmented reality (AR), games, and web applications because it supports motion.
-    - content: "Connect to a __________ site to instantly produce an app from a custom list, or create a connection before adding data to an existing app or creating a new one."
+    - content: "View in 3D allows users to ____________"
       choices:
-        - content: "SharePoint"
+        - content: "Visualize 3D objects in the real-world environment"
+          isCorrect: false
+          explanation: View in MR allows users to visualize 3D objects in the real-world environment.
+        - content: "Measure objects in real-world"
+          isCorrect: false
+          explanation: Measure in MR allows users to measure objects in real-world.
+        - content: "Rotate and zoom into the model with simple gestures."
           isCorrect: true
-          explanation: SharePoint is a web-based collaborative platform that integrates with Microsoft Office.
-        - content: " Office 365 outlook"
-          isCorrect: false
-          explanation: Microsoft 365 is provided by Microsoft and uses cloud-based technology to offer access and updates to Office applications like Word, Excel, PowerPoint, and Outlook.
-        - content: "SQL server"
-          isCorrect: false
-          explanation: Microsoft SQL Server is a relational database management system developed by Microsoft. 
+          explanation: View in MR allows users to rotate and zoom into the model with simple gestures.
