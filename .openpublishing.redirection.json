@@ -4176,7 +4176,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/data-ai-cert/upload-data-to-azure-data-lake-storage/includes/5-copy-data-from-gen1-to-gen2.md",
+      "source_path": "learn-pr/data-ai-cert/upload-data-to-azure-data-lake-storage/5-copy-data-from-gen1-to-gen2.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/upload-data-to-azure-data-lake-storage/",
       "redirect_document_id": false
     },
