@@ -53,14 +53,9 @@ You can use Azure Data Factory diagnostic settings to configure diagnostic logs 
 ### Enable alerts on activities
 Diagnostic setting for Azure Data Factory that send logs to Log Analytics can have alerts configured for a set of pre-defined set of conditions that can alert an administrator to activities
 
-### Follow standard logging and monitoring standard within your organization
+### Follow logging and monitoring standards within your organization
 Check your organizations standards for logging and monitoring and snap to the standard including:
 - Audit logging 
 - Security logs
 - Anti-malware logging
 - Log retention policies
-
-
-
-
-

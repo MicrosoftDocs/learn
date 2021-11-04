@@ -73,7 +73,7 @@ In an AD DS environment where you distribute operations master roles among domai
 You can transfer operations master roles by using the AD DS snap-ins that the following table lists.
 
 |Role|Snap-in|
-||--|
+|---------|--------------|
 |Schema master|Active Directory Schema|
 |Domain-naming master|Active Directory Domains and Trusts|
 |Infrastructure master|Active Directory Users and Computers|
@@ -114,3 +114,9 @@ The main steps in the process are:
 1. Transfer operations master roles between domain controllers by using command-line tools. Use the command-line tools to transfer the operations masters roles back to the first domain controller.
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4McId]
+
+---
+
+
+
+---
