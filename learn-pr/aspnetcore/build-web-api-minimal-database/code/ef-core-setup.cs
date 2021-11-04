@@ -12,11 +12,11 @@
    });
 
    var app = builder.Build();
-   <b>app.UseSwagger();
+   app.UseSwagger();
    app.UseSwaggerUI(c =>
    {
       c.SwaggerEndpoint("/swagger/v1/swagger.json", "PizzaStore API V1");
-   });</b>
+   });
 
    app.MapGet("/", () => "Hello World!");
 

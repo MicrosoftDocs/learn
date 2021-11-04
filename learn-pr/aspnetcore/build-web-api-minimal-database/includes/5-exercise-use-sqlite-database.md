@@ -10,7 +10,7 @@ Do the following tasks to set up the SQLite database.
 
 1. Using .NET CLI / Visual Studio package manager UI, install the following packages:
 
-   [SQLite EF Core Database Provider](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/6.0.0-rc.2.21480.5?azure-portal=true) : can access many different databases through plug-in libraries called [database providers](/ef/core/providers/?tabs=dotnet-core-cli). The package below is the SQLite database provider for EF Core.
+   [SQLite EF Core Database Provider](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/6.0.0-rc.2.21480.5?azure-portal=true) : can access many different databases through plug-in libraries called [database providers](/ef/core/providers/?tabs=dotnet-core-cli?azure-portal=true). The package below is the SQLite database provider for EF Core.
 
    ```console
    dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 6.0.0-rc.*

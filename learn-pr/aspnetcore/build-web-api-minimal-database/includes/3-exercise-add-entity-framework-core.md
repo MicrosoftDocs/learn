@@ -40,35 +40,9 @@ First, you need to create a project. You've installed .NET 6 and you are ready t
 
    The above `Pizza` class is a simple object that represents a pizza. This code is our data model, and later, you will use EF Core to map this data model to a database table.
 
-1. Open  _Program.cs_ and add the following code (in bold):
+1. Open  _Program.cs_ and add the following code (highlighted):
 
-   :::code language="csharp" source="../code/ef-core-one.cs" highlight="1, 5-12, 15-19"::: 
-
-   <pre>
-   <b>using Microsoft.OpenApi.Models;</b>
-
-   var builder = WebApplication.CreateBuilder(args);
-
-   <b>builder.Services.AddEndpointsApiExplorer();
-   builder.Services.AddSwaggerGen(c =>
-   {
-        c.SwaggerDoc("v1", new OpenApiInfo {
-            Title = "PizzaStore API",
-            Description = "Making the Pizzas you love",
-            Version = "v1" });
-   });</b>
-
-   var app = builder.Build();
-   <b>app.UseSwagger();
-   app.UseSwaggerUI(c =>
-   {
-      c.SwaggerEndpoint("/swagger/v1/swagger.json", "PizzaStore API V1");
-   });</b>
-
-   app.MapGet("/", () => "Hello World!");
-
-   app.Run();
-   </pre>
+   :::code language="csharp" source="../code/ef-core-setup.cs" highlight="1, 5-12, 15-19":::
 
 1. At the top of _Program.cs_ file, add the following line of code:
 

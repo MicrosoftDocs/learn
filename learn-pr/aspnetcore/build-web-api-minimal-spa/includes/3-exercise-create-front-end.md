@@ -110,7 +110,7 @@ It's always great if we can make the UI better looking. There's more than one wa
 
 1. Make the following changes to _Main.js_:
 
-   <pre>
+   ```javascript
    import React, { useState } from "react";
    <b>import styled from "styled-components";</b>
 
@@ -164,7 +164,7 @@ It's always great if we can make the UI better looking. There's more than one wa
       &nbsp;// make rest call
       }
 
-      return (<React.Fragment>
+      return (\<React.Fragment\>
         &nbsp;<b>&lt;PizzaFrame></b>
         &nbsp;&lt;h3>
           &nbsp;<b><Title onChange={(evt) => update(evt.target.value, 'name', data)} value={data.name} /></b> 
@@ -180,15 +180,15 @@ It's always great if we can make the UI better looking. There's more than one wa
     }
 
     const Main = () => {
-      const data = pizzas.map(pizza => <Pizza pizza={pizza} />)
+      const data = pizzas.map(pizza => \<Pizza pizza={pizza} /\>)
 
-      return (<React.Fragment>
+      return (\<React.Fragment\>
         {data}
       </React.Fragment>)
     }
 
     export default Main;
-   </pre>
+   ```
 
   Now, you have components that render with a decent appearance. Next, ensure your program is using this component.
 
