@@ -26,13 +26,14 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
     ![Screenshot of the Data Collection Rules Performance Counters](../media/6-add-data-sources.png)
 
-1. Click the Destination tab to view the default destination for Performance Counters, Azure Monitor Metrics. **Click on Add data source**.
+1. Select the Destination tab to view the default destination for Performance Counters, Azure Monitor Metrics. 
+1. Select on **Add data source**.
 
     ![Screenshot of the Data Collection Rules Performance Counters Destination](../media/6-add-dcr-destinations.png)
 
     Confirm your settings include a Destination Type of Azure Monitor Metrics for the Collect and deliver step of the wizard.
 
-1. **Review and create** your new data collection rule. This will install the Azure Monitor Agent on the selected VM, and start data collection using the parameters defined in the rule created above.
+1. Select **Review and create**. This installs the Azure Monitor Agent on the selected VM, and start data collection with the parameters defined in the rule created above.
 
 
 ## Confirm that the agent is installed on the VM

@@ -23,7 +23,7 @@ You can choose multiple metrics and plot them on a graph to see how much traffic
 
 ![CPU percentage usage and inbound flow chart.](../media/2-vm-metrics-screenshot.png)
 
-Using Virtual Machine host metrics, you can:
+By using Virtual Machine host metrics, you can:
 
 - Know when your VMs are reaching their disk and CPU limits.
 - Detect trends.
