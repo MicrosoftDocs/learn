@@ -27,7 +27,7 @@ To access a Service Bus namespace and use a queue within that namespace, you mus
 * Endpoint for your namespace
 * Shared access key for authentication
 
-Both of these values can be obtained from an Azure command that will return the complete connection string based on the namespace you created in the previous excercise.
+Both of these values can be obtained from an Azure command that will return the complete connection string based on the namespace you created in the previous exercise.
 
 > [!NOTE]
 > For simplicity, you will hard-code the connection string in the **Program.cs** file of both console applications. In a production application, you might use a configuration file or Azure Key Vault to store the connection string.
@@ -84,7 +84,7 @@ To complete the component that sends messages about sales:
     // In more realistic scenarios, you would want to store off a class reference to the client (rather than a local variable) so that it can be used throughout your program.
     await using var client = new ServiceBusClient(ServiceBusConnectionString);
     ```
-    Note that the editor automatically prepended **new** to the line of code you pasted.
+    The editor automatically prepended **new** to the line of code you pasted.
 
 1. Within that method, locate the following line of code.
 
@@ -189,7 +189,7 @@ To complete the component that sends messages about sales:
         --query messageCount \
         --namespace-name <namespace-name>
     ```
-    Run the dotnet command again, and then run the servicebus queue show command again. You'll see the messageCount increase each time you run the dotnet command.
+    Run the dotnet command again, and then run the `servicebus queue show` command again. You'll see the `messageCount` increase each time you run the dotnet command.
     
 ## Write code that receives a message from the queue
 
@@ -279,7 +279,7 @@ To complete the component that sends messages about sales:
     await processor.CloseAsync();
     ```
 
-1. Locate the `ProcessMessagesAsync()` method. You have registered this method as the one that handles incoming messages.
+1. Locate the `ProcessMessagesAsync()` method. You've registered this method as the one that handles incoming messages.
 
 1. To display incoming messages in the console, replace all the code within that method with the following code.
 
@@ -384,6 +384,6 @@ To complete the component that sends messages about sales:
 
     The output will be `0` if all the messages have been removed.
 
-You have written code that sends a message about individual sales to a Service Bus queue. In the sales force distributed application, you should write this code in the mobile app that sales personnel use on devices.
+You've written code that sends a message about individual sales to a Service Bus queue. In the sales force distributed application, you should write this code in the mobile app that sales personnel use on devices.
 
-You have also written code that receives a message from the Service Bus queue. In the sales force distributed application, you should write this code in the web service that runs in Azure and processes received messages.
+You've also written code that receives a message from the Service Bus queue. In the sales force distributed application, you should write this code in the web service that runs in Azure and processes received messages.
