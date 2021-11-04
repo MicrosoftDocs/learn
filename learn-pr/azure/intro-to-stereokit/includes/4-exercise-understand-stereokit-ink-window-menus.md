@@ -24,7 +24,7 @@ SKSettings settings = new SKSettings
   Environment.Exit(1);
 ```
 
-**assetsFolder** : Is the folder that StereoKit will look for assets when provided with a relative folder name. In this project, 3D models are in **.glb** extensions and image with **.png** extensions are stored.
+**assetsFolder** : When StereoKit is given a relative folder name, it will look in this folder for assets. In this project, 3D models are in **.glb** extensions and image with **.png** extensions are stored.
 
 ## Ink tools window
 
@@ -65,7 +65,7 @@ UI.Model(_model, V.XY(0, UI.LineHeight*2));
 
 **UI.Model** : Creates a single mesh subset Model using the indicated Mesh and Material. To highlight the area's purpose, display an ink bottle. The x-axis will autofill to center the Model, and we'll make it two lines tall using the size specified here. **V.VY** Creates a Vec2. This is a straight alternative to **new Vec2(x, y)**.
 
-### 1. Swatches
+### Swatches
 
  The bottom of the ink window has an ink model that shows a list of colors swatches that are pre-selected and displayed in the window.
 
@@ -104,17 +104,17 @@ void SwatchColor(string id, float hue, float saturation, float value)
 
 **Matrix.TR** - In StereoKit, a matrix is a 4x4 grid. Numbers in the matrix represent a transformation for every position or vector. Here Matrix. TR is used for the rotation of the swatch.
 
-**SwitchColor() method** : using bound reserves the swatch and using color represents to draw the swatch model. Pseudo-random rotation keeps it shuffled.
+**SwitchColor() method** : Using bound reserves the swatch and using color represents to draw the swatch model. Pseudo-random rotation keeps it shuffled.
 
-**Bounds** : Bounds is a type of axis-aligned bounding box that can store item sizes, calculate confinement, intersections, and more.
+**Bounds** : Bounds are a type of axis-aligned bounding box that can store item sizes, calculate confinement, intersections, and more.
 
 When a user interacts with the swatch model's volume, the vibrant color will change and add some sound effects.
 
 #### Keywords
 
-* **U.cm** - Converts centimeters to meters.
+* **U.cm** : Converts centimeters to meters.
 
-* **BtnState** - A bit-flag represents the current state of a button input.
+* **BtnState** : A bit-flag represents the current state of a button input.
 
   * With pseudo rotation, we will position all swatches in the same line as in the swatch function.
 
@@ -124,9 +124,11 @@ When a user interacts with the swatch model's volume, the vibrant color will cha
   UI.SameLine();
   ```
 
-### 2. Slider instantiate
+### Slider instantiate
 
-swatches are not limited. Hence there is some slider to adjust HSV the color manually. Then we can have a fixed-size label and add a fixed-size slider to the same line. Fixing the sizes are aligned in the column using:
+Swatches are not limited. Hence there is some slider to adjust HSV the color manually. Then we can have a fixed-size label and add a fixed-size slider to the same line. Fixing the sizes are aligned in the column using:
+
+  :::image type="content" source="../media/slider.png" alt-text="Screenshot of slider in ink tools window.” " lightbox="../media/slider.png":::
 
 ```c#
 UI.Label("Hue", V.XY(8*U.cm, UI.LineHeight));
@@ -141,13 +143,13 @@ UI.Label("Hue", V.XY(8*U.cm, UI.LineHeight));
 
 **Set color()** : This method updates the ink model and hand color by creating a Red/Green/Blue gamma space color from Hue/Saturation/Value information. Using the same methods, we can create sliders for saturation and value.
 
-Within the UI window, we can add on the separation by using the below method that adds the line between UI elements
+Within the UI window, we can add on the separation by using the below method that adds the line between UI elements.
 
 ```c#
 UI.HSeparator();
 ```
 
-### 3. Brush size
+### Brush size
 
 There are four different size swatch models in the window, similar to color swatches but more control over brush size.
 
@@ -194,7 +196,7 @@ There are four different size swatch models in the window, similar to color swat
   UI.HSlider("Size", ref _size, 0.001f, 0.05f, 0, 22 * U.cm, UIConfirm.Pinch);
   ```
 
-* In final, we always call end window function
+* In final, we always call end window function.
 
   ```c#
   UI.WindowEnd();
@@ -234,14 +236,15 @@ The below code adds the application logo on the window top. **V.XY** instructs S
 UI.Image(appLogo, V.XY(UI.LayoutRemaining.x, 0));
 ```
 
-Undo and redo functional button is added using **UI.Button**.
+Undo and Redo functional button is added using **UI.Button**.
 
 ```c#
 if (UI.Button("Undo")) activePainting?.Undo();
 UI.SameLine();
 if (UI.Button("Redo")) activePainting?.Redo();
 ```
+**UI.Button**  : A button that can be clicked and can extend vertically and horizontally to suit the text provided to the button.
 
 On the same basis, all other buttons can be added, such as Save, Load, Clear, and Quit.
 
-**UI.Button**  : A button that can be clicked and can extend vertically and horizontally to suit the text provided to the button.
+

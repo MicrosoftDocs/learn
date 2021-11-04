@@ -4,12 +4,12 @@ You may encounter errors when opening the Solution Explorer and the C# program f
 
 ## Build StereoKit Ink application on HoloLens 2
 
-1. To build StereoKit Ink application to HoloLens 2, configure Visual Studio for HoloLens 2 by selecting the **Release** configuration on the "Solution Platform," the **ARM64** architecture, and set **Device** as target:
+1. To build StereoKit Ink application to HoloLens 2, configure Visual Studio for HoloLens 2 by selecting the **Release** configuration on the "Solution Platform," the **ARM64** architecture, and set **StereoKitPaintTutorial** as target:
   
    :::image type="content" source="../media/configuration-solution-platform.png" alt-text="Screenshot shows configuration of solution platform." lightbox="../media/configuration-solution-platform.png":::
 
 2. Connect your HoloLens 2 to your computer, then in the menu bar, click on the **Debug** > **Start Debugging**.
-  Start Debugging automatically starts the application on your device with the Visual Studio debugger attached.
+Start Debugging automatically starts the application on your device with the Visual Studio debugger attached.
   
    :::image type="content" source="../media/start-debug.png" alt-text="Screenshot shows selectings of Start Debugging." lightbox="../media/start-debug.png":::
 
@@ -22,7 +22,7 @@ You may encounter errors when opening the Solution Explorer and the C# program f
 
 ## Build StereoKit Ink application on Desktop
 
-1. To build StereoKit Ink application to Desktop, configure Visual Studio for Desktop by clicking on "Solution Configuration" to ensure the **Debug** and **Any device** is selected.
+1. To build StereoKit Ink application to Desktop, configure Visual Studio for Desktop by clicking on "Solution Configuration" to ensure the **Debug** and **Any CPU** is selected.
   
    :::image type="content" source="../media/change-solution-configuration.png" alt-text="Screenshot shows changing of Solution configuration." lightbox="../media/change-solution-configuration.png":::
 
