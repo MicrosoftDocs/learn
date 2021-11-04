@@ -9449,6 +9449,61 @@
       "source_path": "learn-pr/wwl-azure/design-data-integration/8-design-azure-synapse-analytics-solution-for-data-analysis.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration/7-design-azure-synapse-analytics-solution-for-data-analysis",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-integration/4-solution-azure-blob-storage.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-integration/5-solution-azure-data-brick.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration/4-solution-azure-data-brick",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-integration/6-solution-azure-synapse-analytics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration/5-solution-azure-synapse-analytics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-integration/7-design-azure-synapse-analytics-solution-for-data-analysis.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-integration/8-design-strategy-for-hot-warm-cold-data-path.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration/6-design-strategy-for-hot-warm-cold-data-path",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-integration/9-design-azure-stream-analytics-solution-for-data-analysis.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration/7-design-azure-stream-analytics-solution-for-data-analysis",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-integration/10-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-integration/11-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration/9-summary-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-storage-solution-for-relational-data/6-design-encryption-for-data-at-rest-data-transmission-data-use.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-storage-solution-for-relational-data/7-design-security-for-data-at-rest-data-transmission-data-use",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-storage-solution-for-relational-data/7-design-for-azure-sql-edge.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-storage-solution-for-relational-data/8-design-for-azure-sql-edge",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-data-storage-solution-for-relational-data/8-design-for-azure-table-storage.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-storage-solution-for-relational-data/6-recommend-database-availability",
+      "redirect_document_id": true
     }
   ]
 }
