@@ -12,7 +12,7 @@ To help protect against these challenges, Microsoft Defender for Cloud provides 
 
 - **Protect against threats**: Defender for Cloud assesses your workloads and raises threat prevention recommendations and security alerts.
 
-- **Get secure faster**: In Defender for Cloud, everything is done in cloud speed. Because it's natively integrated, Defender for Cloud deployment is easy, giving you autoprovisioning and protection with Azure services.
+- **Get secure faster**: In Defender for Cloud, everything is done in cloud speed. Defender for Cloud deployment is easy, giving you automated provisioning and protection with Azure services.
 
 Also, Defender for Cloud protects non-Azure servers and virtual machines in the cloud or on-premises, for both Windows and Linux servers, by installing the Log Analytics agent. Azure virtual machines are automatically provisioned in Defender for Cloud.
 
