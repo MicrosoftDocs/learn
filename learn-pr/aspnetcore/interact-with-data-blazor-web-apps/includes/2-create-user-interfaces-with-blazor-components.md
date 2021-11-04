@@ -57,7 +57,7 @@ dotnet new razorcomponent -n PizzaBrowser -o Pages -f net6.0
 > [!IMPORTANT]
 > The name of a Blazor component must begin with an uppercase character.
 
-Once you've created the component, you can open it for edited with Visual Studio Code:
+Once you've created the component, you can open it to be edited with Visual Studio Code:
 
 ```bash
 code Pages/PizzaBrowser
