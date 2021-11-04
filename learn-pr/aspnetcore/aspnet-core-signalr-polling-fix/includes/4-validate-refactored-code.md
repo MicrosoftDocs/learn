@@ -35,10 +35,22 @@ Immediately following the order creation, the app redirects to the order status 
 
 Consider the following series of screen captures that show the gradual progression from the starting location to the ending location:
 
+**Preparing order**
+:::image type="content" source="../media/preparing-order.png" lightbox="../media/preparing-order.png" alt-text="Blazing Pizza: Order status, preparing order.":::
+
+**Out for delivery 1**
 :::image type="content" source="../media/out-for-delivery-1.png" lightbox="../media/out-for-delivery-1.png" alt-text="Blazing Pizza: Order status, driver just leaving, out for delivery.":::
+
+**Out for delivery 2**
 :::image type="content" source="../media/out-for-delivery-2.png" lightbox="../media/out-for-delivery-2.png" alt-text="Blazing Pizza: Order status, driver a quarter of the way there, out for delivery.":::
+
+**Out for delivery 3**
 :::image type="content" source="../media/out-for-delivery-3.png" lightbox="../media/out-for-delivery-3.png" alt-text="Blazing Pizza: Order status, driver halfway there, out for delivery.":::
+
+**Out for delivery 4**
 :::image type="content" source="../media/out-for-delivery-4.png" lightbox="../media/out-for-delivery-4.png" alt-text="Blazing Pizza: Order status, driver three quarters of the way there, out for delivery.":::
+
+**Out for delivery 5**
 :::image type="content" source="../media/out-for-delivery-5.png" lightbox="../media/out-for-delivery-5.png" alt-text="Blazing Pizza: Order status, driver arriving at destination, out for delivery.":::
 
 Finally, the order status page reflects the **Delivered** order status:
