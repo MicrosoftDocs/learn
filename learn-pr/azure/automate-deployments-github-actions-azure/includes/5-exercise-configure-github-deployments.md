@@ -186,25 +186,25 @@ In order for your Azure Static Web App to access your Azure SQL Database, you mu
 
 ::: zone pivot="python"
 
-    ```cmd
-    Driver={ODBC Driver 17 for SQL Server};Server=[serverName].database.windows.net,1433;Database=bus-db;UID=cloudadmin;PWD=[yourPassword];Connection Timeout=30;
-    ```
+```cmd
+Driver={ODBC Driver 17 for SQL Server};Server=[serverName].database.windows.net,1433;Database=bus-db;UID=cloudadmin;PWD=[yourPassword];Connection Timeout=30;
+```
 
 ::: zone-end
 
 ::: zone pivot="csharp"
 
-    ```cmd
-    Server=tcp:[serverName].database.windows.net,1433;Database=bus-db;User ID=cloudadmin;Password=[yourPassword];Encrypt=true;Connection Timeout=30;
-    ```
+```cmd
+Server=tcp:[serverName].database.windows.net,1433;Database=bus-db;User ID=cloudadmin;Password=[yourPassword];Encrypt=true;Connection Timeout=30;
+```
 
 ::: zone-end
 
 ::: zone pivot="node"
 
-    ```cmd
-    mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encrypt=true
-    ```
+```cmd
+mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encrypt=true
+```
 
 ::: zone-end
 
