@@ -168,7 +168,7 @@ When the customer is taken to the checkout page, the first thing they do is ente
     <input @ref="startName" @bind="Address.Name" />
     ```
 
-    The Blazor directive `@ref="startName"` let's the code block create an `ElementReference` to reference the input element. You can then use this element reference to call `FocusAsync` after a page has been rendered.
+    The Blazor directive `@ref="startName"` lets the code block create an `ElementReference` to reference the input element. You can then use this element reference to call `FocusAsync` after a page has been rendered.
 
 1. Add code to call `FocusAsync` after a page has loaded under the `[Parameter] public Order Order { get; set; }` declaration.
 
