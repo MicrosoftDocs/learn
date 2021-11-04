@@ -9,7 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
-  ms.custom: nextgen
+  ms.custom: team=nextgen
 title: Train a predictive maintenance machine learning model with ML.NET Model Builder
 summary: "Train a machine learning model in Visual Studio with ML.NET using Model Builder that uses sensor data to detect whether a manufacturing device is broken."
 abstract: |

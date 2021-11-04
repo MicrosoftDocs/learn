@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: nextgen
+  ms.custom: team=nextgen
 title: Virtualize computing power
 summary: Learn about how computing power is virtualized to create cloud resources. Covers different types of CPU virtualization.
 abstract: | 

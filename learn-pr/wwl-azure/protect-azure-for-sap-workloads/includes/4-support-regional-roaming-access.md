@@ -11,7 +11,7 @@ The numbered steps below show what’s happening to the network traffic that Tim
 
 3. The request moves to the **Azure Active Directory authentication service**, which adds multifactor authentication for extra security.
 
-4. Once authenticated, Tim’s request proceeds through an **Azure Firewall**. The firewall ensures Tim is asking for the right ports and confirms Tim's IP address is whitelisted to allow access to the web servers. Like Amita's request, Tim's request is still in the hub Azure Virtual Network and the Azure network security group.
+4. Once authenticated, Tim’s request proceeds through an **Azure Firewall**. The firewall ensures Tim is asking for the right ports and confirms Tim's IP address is an approved list to allow access to the web servers. Like Amita's request, Tim's request is still in the hub Azure Virtual Network and the Azure network security group.
 
 5. Tim’s request attempts to access the SAP Fiori front-end web services cluster in the spoke VNet through **Azure virtual network peering**.
 
