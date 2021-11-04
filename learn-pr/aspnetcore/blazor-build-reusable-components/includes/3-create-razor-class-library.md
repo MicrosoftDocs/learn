@@ -6,6 +6,8 @@ Our outcome of this exercise will be a reusable modal dialog in a Razor class li
 
 ## Create the Razor class library Project
 
+[!include[](../../../includes/dotnet6-sdk-version.md)]
+
 Let's first create the Razor Class library project for a modal dialog component.  You can use Visual Studio to create a new project or you can create the project in a new folder with the .NET Command-line tool as follows:
 
 ```dotnetcli
@@ -15,6 +17,7 @@ dotnet new razorclasslib -o FirstClassLibrary -f net6.0
 ## Build the Modal Dialog Component
 
 Next, we will build the `Modal` component in our project with an appropriate CSS file to go with it and provide an initial format.
+
 
 1. Rename the `Component1.razor` file to `Modal.razor` and the `Component1.razor.css` file to `Modal.razor.css`.  This file contains the component we will create and in the future you can add blank text files to your project and format them with content for razor or CSS appropriately.
 1. Add the following razor content to the Modal.razor file
