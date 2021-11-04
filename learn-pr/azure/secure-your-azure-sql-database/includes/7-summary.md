@@ -14,4 +14,4 @@ All of the aspects work together to secure your database. Your customers are imp
 To learn more about the concepts we've covered in this module, check out these other resources.
 
 - [Manage IP firewall rules for Azure SQL Server](/azure/sql-database/sql-database-firewall-configure)
-- [Manage Azure Defender settings for a SQL database](/azure/sql-database/sql-database-advanced-data-security)
+- [Manage Microsoft Defender for SQL settings](/azure/azure-sql/database/azure-defender-for-sql)
