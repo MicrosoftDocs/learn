@@ -12,7 +12,7 @@ title: Build a web API  with minimal API and .NET 6
 summary: Learn how to
 abstract: |
   In this module you will:
-  - Distinguish between using a controller-based API and using the minimal API.
+  - Distinguish between using a controller-based API and using a minimal API.
   - Create routes to handle both reading and writing.
   - Use features from .NET 6 to make your code as succinct as possible.
 iconUrl: /learn/achievements/generic-badge.svg

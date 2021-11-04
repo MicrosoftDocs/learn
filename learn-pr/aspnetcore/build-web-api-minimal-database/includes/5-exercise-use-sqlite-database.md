@@ -4,25 +4,25 @@ In this exercise, you will upgrade your application to use a relational database
 
 ## Set up the SQLite database
 
-Do the following tasks to set up the SQLite database.
+Complete the following sections to set up the SQLite database.
 
 ### Install the following tools and packages
 
 1. Using .NET CLI / Visual Studio package manager UI, install the following packages:
 
-   [SQLite EF Core Database Provider](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/6.0.0-rc.2.21480.5?azure-portal=true) : can access many different databases through plug-in libraries called [database providers](/ef/core/providers/?tabs=dotnet-core-cli?azure-portal=true). The package below is the SQLite database provider for EF Core.
+   [SQLite EF Core Database Provider](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/6.0.0-rc.2.21480.5?azure-portal=true): Can access many different databases through plug-in libraries called [database providers](/ef/core/providers/?tabs=dotnet-core-cli?azure-portal=true). The package below is the SQLite database provider for EF Core.
 
    ```console
    dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 6.0.0-rc.*
    ```
 
-   [Entity Framework Core tools](/ef/core/cli/dotnet?azure-portal=true): tools for Entity Framework Core perform design-time development tasks. For example, they create migrations, apply migrations, and generate code for a model based on an existing database.
+   [Entity Framework Core tools](/ef/core/cli/dotnet?azure-portal=true): Tools for Entity Framework Core perform design-time development tasks. For example, they create migrations, apply migrations, and generate code for a model based on an existing database.
 
    ```console
    dotnet tool install --global dotnet-ef
    ```
 
-   [Microsoft.EntityFrameworkCore.Design](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/6.0.0-rc.2.21480.5?azure-portal=true) : contains all the design-time logic for EF core to create your database.
+   [Microsoft.EntityFrameworkCore.Design](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/6.0.0-rc.2.21480.5?azure-portal=true): Contains all the design-time logic for EF core to create your database.
 
    ```console
    dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.0-rc.*

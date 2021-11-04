@@ -19,7 +19,7 @@ quiz:
       choices:
         - content: All startup code happens in *Program.cs*.
           isCorrect: true
-          explanation: Correct. That happens in both types of API.
+          explanation: Correct. Startup code is in *Program.cs* in both types of API.
         - content: Requests are primarily mapped to controllers and decorators for controller-based APIs.
           isCorrect: false
           explanation: Incorrect. This request mapping is a difference between the two approaches.
@@ -30,10 +30,10 @@ quiz:
       choices:
         - content: Type `dotnet new webapi`.
           isCorrect: false
-          explanation: Incorrect. That's for controller-based API.
+          explanation: Incorrect. That code is to create a controller-based API.
         - content: Type `dotnet new web`.
           isCorrect: true
-          explanation: Correct. That's how you do it.
+          explanation: Correct. That's the correct code to use to create a minimal API.
         - content: Type `dotnet new minimalapi`.
           explanation: Incorrect. There's no template with that name.
           isCorrect: false
@@ -41,10 +41,10 @@ quiz:
       choices:
         - content: Type `ActionResult Get() {}`.
           isCorrect: false
-          explanation: Incorrect. That's how you could type in a controller-based API if this method is in a controller class.
+          explanation: Incorrect. That code is how you can type in a controller-based API if this method is in a controller class.
         - content: Type `app.Get("/pizza", () => /**/)`.
           isCorrect: false
-          explanation: Incorrect. That's not how you do it. It should be a method preceded with `Map` plus the name of the verb, for example, `MapGet()`.
+          explanation: Incorrect. You should use a method preceded with `Map` plus the name of the verb, for example, `MapGet()`.
         - content: Type `app.MapGet("/pizza", () => /**/)`.
           isCorrect: true
-          explanation: Correct.
+          explanation: Correct. Using this code is the correct way to set up a route in minimal API.

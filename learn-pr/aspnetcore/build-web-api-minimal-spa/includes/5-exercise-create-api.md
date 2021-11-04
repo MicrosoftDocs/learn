@@ -136,11 +136,11 @@ At this point, the back-end team has finished building the server. To use the se
 
 1. Open up _Program.cs_ and add the following code to enable CORS (the code you need to add is highlighted):
 
-   :::code language="csharp" source="../code/ef-core-use-server-api.cs" highlight="5, 17-24, 33":::
+   :::code language="csharp" source="../code/ef-core-use-server-api.cs" highlight="6, 17-24, 33":::
 
    The changes will configure CORS, so that you will be able to read and write toward the API, despite the front end and back end running on different ports.
 
-1. Start your API with `dotnet run` (Ensure you quit JSON server first)
+1. Start your API with `dotnet run` (ensure you quit JSON server first).
 
    The server runs on port 5059. You will need to adjust the proxy in _package.json_ for the front-end app to match the port the server assumes.
 

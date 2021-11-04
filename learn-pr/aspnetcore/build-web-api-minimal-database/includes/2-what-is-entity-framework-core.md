@@ -1,10 +1,10 @@
-Most non-trivial web applications will need to reliably do create, read, update, and delete (CRUD) operations on data, and persist these changes between application restarts. While there are various options for persisting data in .NET applications, Entity Framework (EF) Core is a user-friendly solution and a great fit for many .NET applications.
+Most non-trivial web applications will need to reliably run create, read, update, and delete (CRUD) operations on data, and persist these changes between application restarts. Although there are various options for persisting data in .NET applications, Entity Framework (EF) Core is a user-friendly solution and a great fit for many .NET applications.
 
-## Understand Entity Framework (EF) Core
+## Understand EF Core
 
-Entity Framework Core is a lightweight, extensible, open source, and cross-platform data access technology for .NET applications.
+EF Core is a lightweight, extensible, open source, and cross-platform data access technology for .NET applications.
 
-EF Core can serve as an object-relational mapper (O/RM), which:
+EF Core can serve as an object-relational mapper (ORM), which:
 
 - Enables .NET developers to work with a database using .NET objects.
 - Eliminates the need for most of the data-access code that typically needs to be written.

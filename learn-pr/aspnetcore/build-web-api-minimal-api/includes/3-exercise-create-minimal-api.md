@@ -59,37 +59,9 @@ Next, use Swagger to ensure that you have a self-documenting API, where the docs
 
    Next, configure your project to use Swagger. 
 
-1. Open _Program.cs_ and add the following code (in bold):
+1. Open _Program.cs_ and add the following code (highlighted):
 
-   <pre>
-   <b>using Microsoft.OpenApi.Models;</b>
-
-   var builder = WebApplication.CreateBuilder(args);
-    
-   <b>builder.Services.AddEndpointsApiExplorer();
-   builder.Services.AddSwaggerGen(c =>
-   {
-        c.SwaggerDoc("v1", new OpenApiInfo { Title = "PizzaStore API", Description = "Making the Pizzas you love", Version = "v1" });
-   });</b>
-    
-   var app = builder.Build();
-    
-   if (app.Environment.IsDevelopment())
-   {
-        app.UseDeveloperExceptionPage();
-   }
-    
-   <b>app.UseSwagger();
-   app.UseSwaggerUI(c =>
-   {
-      c.SwaggerEndpoint("/swagger/v1/swagger.json", "PizzaStore API V1");
-   });</b>
-    
-   app.MapGet("/", () => "Hello World!");
-    
-   app.Run();
-
-   </pre>
+   :::code language="csharp" source="../code/create-minimal-api-add-swagger.cs" highlight="1, 5-9, 18-22":::
 
 1. Rerun the project and go to the app's address, `http://localhost:5100/swagger`. 
 

@@ -16,9 +16,9 @@ Users today are used to apps on the web that reacts fast to user's interactions.
 
 An application using a SPA framework is called a SPA application. So why is it called single-page? Well, in order for the app to be fast like a client app, it needs to stay in the same page. But does that mean that the app will have only one view? Single page doesn't mean there's only one view but it's more about how you go from one page to another. Instead of typing a new URL in the browser address field, you stay on the same page but replace the content using your SPA framework, which under the hood relies heavily on JavaScript to manipulate the DOM tree (the Document Object Model, a tree representing your app as different nodes, like leaves on a tree).
 
-**So do I need a framework?**
+**Do I need a framework?**
 
-As everything in IT, it depends. Usually a good measurement is it depend on how fast you need to get the app done and what features it needs. If you are in a hurry, and your app need to do things like moving between pages, collect user input data, and it needs to act like a client - it's a good candidate to use a SPA framework for.
+As everything in IT, it depends. Usually a good measurement is it depend on how fast you need to get the app done and what features it needs. If you are in a hurry, and your app need to do things like moving between pages, collect user input data, and it needs to act like a client. It's a good candidate for using a SPA framework.
 
 **Which SPA framework do I choose?**
 

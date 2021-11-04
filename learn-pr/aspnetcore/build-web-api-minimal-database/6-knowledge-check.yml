@@ -19,7 +19,7 @@ quiz:
       choices:
         - content: It is the only way to access data from minimal API applications.
           isCorrect: false
-          explanation: EF Core is a popular and easy-to-use object-relational mapping (ORM) framework for .NET Core, but it's not the only way to access data from minimal API applications.
+          explanation: EF Core is a popular and easy-to-use ORM framework for .NET Core, but it's not the only way to access data from minimal API applications.
         - content: It is guaranteed to allow switching databases with no code changes.
           isCorrect: false
           explanation: Although EF Core will abstract and localize your database-specific code, you should expect some development effort to switch databases.
