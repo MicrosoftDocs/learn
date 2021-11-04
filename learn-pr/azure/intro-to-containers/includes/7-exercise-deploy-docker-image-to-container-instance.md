@@ -4,7 +4,7 @@ In the previous exercise, you packaged and tested your web app as a local Docker
 
 In this exercise, you'll learn how to rebuild the image for the web app and upload it to Azure Container Registry. You'll use the Azure Container Instance service to run the image.
 
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
+[!INCLUDE [](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Create a container registry
 
@@ -84,11 +84,11 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
     docker push <registry-name>.azurecr.io/reservationsystem:latest
     ```
 
-    Wait until the upload completes. This process will take a several minutes to push all the objects of the image to your repository. You should be able to oserve the progress of each object advancing from *Waiting* to *Preparing* to *Pushing* to *Pushed*.
+    Wait until the upload completes. This process will take several minutes to push all the objects of the image to your repository. You are able to observe the progress as each object advances from *Waiting* to *Preparing* to *Pushing* to *Pushed*.
 
 ## Verify the contents of the registry
 
-For the rest of the exercise, you'll return to the Azure portal.
+For the remainder of the exercise, you'll return to the Azure portal.
 
 1. In the Azure portal, return to your container registry.
 
@@ -100,7 +100,7 @@ For the rest of the exercise, you'll return to the Azure portal.
 
 ## Load and run an image using Azure Container Instance
 
-1. In the Azure portal Home page, select **Create a resource**. The **Create a resource** pane appears.
+1. In the Azure portal, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the resource menu, select **Containers**, and then select **Container Instances**.
 
