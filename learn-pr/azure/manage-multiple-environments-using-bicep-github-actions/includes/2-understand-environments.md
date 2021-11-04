@@ -84,11 +84,11 @@ When your workflow refers to an environment that doesn't exist, GitHub Actions a
 
 When you use multiple environments, you should make each environment independent from the others. For example, your development environment's website shouldn't be able to access a database within your production environment. 
 
-The same principle also applies to the deployment workflow. The service connection that you use to deploy to your development environment shouldn't be able to access your production environment. Following this principle adds another layer of protection to ensure that your non-production deployments don't affect your production environment.
+The same principle also applies to the deployment workflow. You should create separate service principals for each environment, and use separate secrets for each environment with the credentials for that environment's service principal. Following this practice adds another layer of protection to ensure that your non-production deployments don't affect your production environment.
 
-You should create separate service principals for each environment, and use separate secrets for each environment with the credentials for that environment's service principal. Service principals should be assigned specific permissions to only deploy to the subscription and resource group used by that environment:
+Service principals should be assigned specific permissions to only deploy to the subscription and resource group used by that environment:
 
-:::image type="content" source="../media/2-service-connections.png" alt-text="Diagram that shows a service connection, service principal, and Azure resource group for non-production and another set for production." border="false":::
+:::image type="content" source="../media/2-secrets.png" alt-text="Diagram that shows a secret, service principal, and Azure resource group for non-production and another set for production." border="false":::
 
 > [!IMPORTANT]
 > Use a separate service principal and service connection for each environment that you plan to deploy to. Grant the service principal the minimum permissions that it needs to deploy to its environment, and no others.
