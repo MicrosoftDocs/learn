@@ -9458,7 +9458,7 @@
     {
       "source_path": "learn-pr/wwl-azure/design-data-integration/4-solution-azure-blob-storage.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/design-data-integration/5-solution-azure-data-brick.md",
@@ -9473,7 +9473,7 @@
     {
       "source_path": "learn-pr/wwl-azure/design-data-integration/7-design-azure-synapse-analytics-solution-for-data-analysis.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/design-data-integration/8-design-strategy-for-hot-warm-cold-data-path.md",
