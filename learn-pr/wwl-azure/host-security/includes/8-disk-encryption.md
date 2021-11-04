@@ -14,11 +14,12 @@ Windows VMs are available in a range of sizes. Azure Disk Encryption is not avai
 
 Azure Disk Encryption is also available for VMs with premium storage.
 
-Azure Disk Encryption is not available on Generation 2 VMs and Lsv2-series VMs. 
+Azure Disk Encryption is now available on Generation 2 VMs and Lsv2-series VMs. 
 
 **Supported operating systems**
 * Windows client: Windows 8 and later.
 * Windows Server: Windows Server 2008 R2 and later.
+* Windows 10 Enterprise multi-session.
 
 ### Networking requirements
 

@@ -8,29 +8,30 @@ metadata:
   ms.author: ludossan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-interactive: bash
-sandbox: true
-tasks:
-  - action: exists
-    environment: azure
-    azure:
-      resource:
-        type: Microsoft.DocumentDB/databaseAccounts
-        kind: MongoDB
-        properties:
-          provisioningState: "Succeeded"
-  - action: exists
-    environment: azure
-    azure:
-      resource:
-        type: Microsoft.ContainerService/managedClusters
-        name: ship-manager-cluster
-        properties:
-          provisioningState: "Succeeded"
-          addonProfiles:
-            httpApplicationRouting:
-              enabled: true
+sandbox: false
+# interactive: bash
+# sandbox: true
 title: Exercise - Enhance the application with configmaps
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-create-configmaps.md)]
+# tasks:
+#   - action: exists
+#     environment: azure
+#     azure:
+#       resource:
+#         type: Microsoft.DocumentDB/databaseAccounts
+#         kind: MongoDB
+#         properties:
+#           provisioningState: "Succeeded"
+#   - action: exists
+#     environment: azure
+#     azure:
+#       resource:
+#         type: Microsoft.ContainerService/managedClusters
+#         name: ship-manager-cluster
+#         properties:
+#           provisioningState: "Succeeded"
+#           addonProfiles:
+#             httpApplicationRouting:
+#               enabled: true
