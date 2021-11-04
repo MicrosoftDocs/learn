@@ -4,7 +4,7 @@ A challenge you may face in your organization is how to balance the ease of use 
 
 Configuring authentication is the first step in ensuring secure software development in your enterprise. The good news is that leveraging the tools available with your IdP is critical to getting the most value from GitHub.
 
-## Organization Management through SAML SSO
+## Organization management through SAML SSO
 
 An important component of an enterprise security strategy is SAML SSO. It provides a link between the IdP authorization, and access to service providers (SaaS). This form of authentication allows users to sign in to all their applications with one set of credentials. Through SAML, the IdP authenticates users and grants authorization to services like GitHub. When a user logs into GitHub, they can view what enterprises they're members of, but if the user tries to access repository data, it will prompt for enterprise credentials (Enterprise ID).
 
@@ -26,7 +26,7 @@ SAML SSO for a GitHub organization needs to be configured with the IdP you're us
 
 More access management can be accomplished when using multiple organizations. You can use organizations to create distinct groups of users within your company, such as divisions or groups working on similar projects. Public and internal repositories that belong to an organization are accessible to members of other organizations in the enterprise. Private repositories are inaccessible to anyone that isn't a member of the organization.
 
-## Organization Private Information
+## Organization private information
 
 When an organization member creates a repository, they can choose to make the repository public or private. In addition, when creating the repository in an organization that is owned by an enterprise account, they can choose to make the repository internal.
 Public repositories are accessible to everyone on the internet. Private repositories are only accessible to the user that created the repository and the people they explicitly share access with. Keep in mind that certain organization members have access to organization internal repositories.

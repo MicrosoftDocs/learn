@@ -58,7 +58,7 @@ If your users aren't able to authenticate using a TOTP mobile app, they can auth
 
 :::image type="content" source="../media/two-factor-authentication-sms-six-digit-code-example.png" alt-text="screenshot of the sms code." :::
 
-### Audit 2FA for User Compliance
+### Audit 2FA for user compliance
 
 You can review which organization owners, members, and outside collaborators have enabled two-factor authentication by navigating to the right corner of GitHub.com, click your profile photo, click **Your organizations**, then select the name of the chosen organization. Under the organization name, click on the **People** tab and then select the **2FA** option. From here, you can see which members in the organization have enabled two-factor authentication and which outside contributors have it enabled.
 
