@@ -100,18 +100,18 @@ The Altair web terminal setting is uploaded.
 
 ## Step 9: Invite users to the Altair web terminal
 
-To maintain security, the Altair web terminal requires authenticated users. This means that you'll need to invite users, including yourself, to the Altair web terminal static web app.
+To keep its security protected, the Altair web terminal requires authenticated users. This means that you'll need to invite users, including yourself, to the Altair web terminal static web app.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 1. On the left pane, select **All resources**.
 
    :::image type="content" source="../media/azure-portal-all-resources.png" alt-text="Screenshot of the Azure portal 'All resources' command on the left pane.":::
 
-1. In the resource filter box at top left, type **altairwebterminal**.
+1. In the resource filter box at the top left, type **altairwebterminal**.
 
    :::image type="content" source="../media/static-web-app-select.png" alt-text="Screenshot of the Azure portal resource filter box and results list, displaying the AltairWebTerminal static web app.":::
 
-1. Under **Name**, select **AltairWebTerminal**.
+1. In the filter results list, under **Name**, select **AltairWebTerminal**.
 1. On the left pane, select **Role management**, and then select **Invite**.
 
    :::image type="content" source="../media/static-web-app-invite.png" alt-text="Screenshot that shows how to copy the invite link.":::
