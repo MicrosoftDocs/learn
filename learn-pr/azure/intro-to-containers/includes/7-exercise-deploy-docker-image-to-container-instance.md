@@ -161,6 +161,12 @@ For the rest of the exercise, you'll return to the Azure portal.
 
     :::image type="content" source="../media/7-container-fqdn.png" alt-text="Screenshot that shows the New pane in Azure portal showing the Container properties with the FQDN highlighted.":::
 
-1. Using a web browser, navigate to the URL `http://FQDN/api/reservations/1`, replacing  *FQDN* with the fully qualified domain name of your container instance. The web app should respond with a JSON document containing the details for reservation 1, as in the previous exercise.
+1. Using a web browser, navigate to the URL `http://FQDN/api/reservations/1`, replacing  *FQDN* with the fully qualified domain name of your container instance. For example, using the visible FQDN in the screenshot above would look like:
+
+    ```output
+    http://hotel.southcentralus.azurecontainer.io/api/reservations/1
+    ```
+    
+    The web app should respond with a JSON object containing the details for reservation 1.
 
 Congratulations! You uploaded the Docker image to Azure Container Registry, and you ran the image using the Azure Container Instance service.
