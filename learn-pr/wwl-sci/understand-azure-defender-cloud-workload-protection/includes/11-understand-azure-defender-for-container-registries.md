@@ -8,7 +8,7 @@ Defender for Cloud identifies Azure Resource Manager based ACR registries in you
 
 Microsoft Defender for container registries includes a vulnerability scanner to scan the images in your Azure Resource Manager-based Azure Container Registry registries and provide deeper visibility into your images' vulnerabilities. The integrated scanner is powered by Qualys, the industry-leading vulnerability scanning vendor.
 
-When issues are found by Qualys or Defender for Cloud, you'll get notified in the workload protection dashboard. Defender for Cloud provides actionable recommendations for every vulnerability, along with a severity classification and guidance for how to remediate the issue. For details of Defender for Cloud's recommendations for containers,
+When issues are found by Qualys or Defender for Cloud, you'll get notified in the workload protection dashboard. Defender for Cloud provides actionable recommendations for every vulnerability, along with a severity classification and guidance for how to remediate the issue.
 
 Defender for Cloud filters and classifies findings from the scanner. When an image is healthy, Defender for Cloud marks it as such. Defender for Cloud generates security recommendations only for images that have issues to be resolved. Defender for Cloud provides details of each reported vulnerability and a severity classification. Additionally, it gives guidance on how to remediate the specific vulnerabilities found in each image.
 
