@@ -3,7 +3,7 @@ Azure Cosmos DB only bills for storage you directly consume in real time, and yo
 Consider solutions such to aggregate and migrate data such as:
 
 - Change feed
-- Azure data warehouse
-- Azure blob storage
+- Azure Data Warehouse
+- Azure Blob Storage
 
 When designing your solution, game plan how long your data will need to be retained in Azure Cosmos DB before being migrated across your entire Azure solution space to minimize storage costs.
