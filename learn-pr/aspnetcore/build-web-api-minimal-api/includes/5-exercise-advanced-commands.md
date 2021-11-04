@@ -64,7 +64,7 @@ Great, now you have your data store, let's have the API use it next.
 
 ## Connect data to routes
 
-To connect your in-memory store to the API, you need to do the following steps:
+To connect your in-memory store to the API, do the following steps:
 
 - **Add the namespace**. This addition is as simple as adding the proper `using`.
 - **Setup the routes**. Here, you need to make sure you add all the needed route mappings for creating, reading, updating, and deleting.
@@ -92,7 +92,7 @@ To connect your in-memory store to the API, you need to do the following steps:
    dotnet run
    ```
 
-1. Navigate, in your browser, to "http://localhost:5000/swagger"
+1. In your browser, go to `http://localhost:5000/swagger`.
 
    You should see the following page rendering:
 

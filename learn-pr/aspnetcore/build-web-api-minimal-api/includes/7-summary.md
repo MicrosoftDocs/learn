@@ -4,7 +4,7 @@ Minimal API enables you to create an API with just a few lines of code. It has a
 
 There's many benefits to this approach:
 
-- **Easier to get started**. With four lines of code, you have an aPI up and running.
+- **Easier to get started**. With four lines of code, you have an API up and running.
 - **Progressive enhancement**. Add the features when you need it, and until then your program code stays small.
 - **.NET 6 latest features**. Using all the latest features from .NET 6 like top-level statements, records and more.
 

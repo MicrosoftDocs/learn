@@ -2,7 +2,7 @@ In this exercise, we will do two things. First we will move out the static data 
 
 ## Use a mock server
 
-At this point, you have a frontend app with static data inside of the app. You want to move out the static data into a mock server, while waiting for the backend team to finish building the API. Performing this step will set you up nicely for using the actual API, once it's done.
+At this point, you have a front-end app with static data inside of the app. You want to move out the static data into a mock server, while waiting for the back-end team to finish building the API. Performing this step will set you up nicely for using the actual API, once it's done.
 
 1. In _Main.js_, locate this part of the code and cut it out:
 
@@ -119,9 +119,9 @@ At this point, you have a frontend app with static data inside of the app. You w
 
 ## Use the server API
 
-At this point, the backend team has finished building the server. To use the server, you just need to fetch the code from GitHub and run it. You might need to configure CORS as well.
+At this point, the back-end team has finished building the server. To use the server, you just need to fetch the code from GitHub and run it. You might need to configure CORS as well.
 
-1. Clone the backend project by running `git clone`:
+1. Clone the back-end project by running `git clone`:
 
    ```bash
    cd ..
@@ -209,12 +209,12 @@ At this point, the backend team has finished building the server. To use the ser
    app.Run();
    </pre>
 
-   The changes will configure CORS, so that you will be able to read and write towards the API, despite the frontend and backend running on different ports.
+   The changes will configure CORS, so that you will be able to read and write towards the API, despite the front end and back end running on different ports.
 
 1. Start your API with `dotnet run` (Ensure you quit JSON server first)
 
-   The server runs on port 5059. You will need to adjust the proxy in _package.json_ for the frontend app to match the port the server assumes.
+   The server runs on port 5059. You will need to adjust the proxy in _package.json_ for the front-end app to match the port the server assumes.
 
-   Your frontend should show one item with the title, "Pepperoni" .
+   Your front end should show one item with the title, "Pepperoni" .
 
-Congratulations, you've managed to create a full stack application with a frontend and backend part.
+Congratulations, you've managed to create a full stack application with a front-end and back-end part.

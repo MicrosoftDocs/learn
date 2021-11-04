@@ -1,4 +1,4 @@
-In this exercise, you are looking to build the frontend app. You will do so by taking a series of steps, from scaffolding, to building out the view you need to adding data to the app.
+In this exercise, you are looking to build the front-end app. You will do so by taking a series of steps, from scaffolding, to building out the view you need to adding data to the app.
 
 ## Scaffold an app
 
@@ -19,13 +19,13 @@ To scaffold an app, you will use the `create-react-app` scaffolder. By using `np
    yarn start
    ```
 
-1. Navigate to "http://localhost:3000" in your browser.
+1. In your browser, go to `http://localhost:3000`.
 
-   You should see the page render like so:
+   You should see the page render like this example:
 
    :::image type="content" source="../media/react.png" alt-text="rendered SPA app":::
 
-## Building the master view
+## Build the master view
 
 Next, we will build a component capable of handling a list of Pizzas.
 
@@ -88,7 +88,7 @@ Next, we will build a component capable of handling a list of Pizzas.
 
 Worth noting is the use of `dirty` a variable that keeps track of whether a user has attempted to change the input. If the input in either field has been changed, `dirty` is set to `true` and the "Save" button is being rendered. Should the "Save" button be invoked, the `onSave()` method will be invoked. Ideally, this place in the code, is the place where we want to make any calls to a backend, to notify the backend that a Pizza item has been changed.
 
-## Adding some CSS
+## Add some CSS
 
 It's always great if we can make the UI better looking. There's more than one way to do so for React. In this case, we will use the `styled-components` library.
 

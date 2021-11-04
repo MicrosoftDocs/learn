@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.aspnetcore.build-web-api-minimal-spa.exercise-create-api
-title: Unit
+title: Exercise - Create an API
 metadata:
-  title: Unit
-  description: Describe unit
+  title: Exercise - Create an API
+  description: Create an API.
   author: softchris
   ms.author: chnoring
-  ms.date: 01/27/2021
+  ms.date: 11/04/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

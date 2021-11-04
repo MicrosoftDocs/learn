@@ -6,3 +6,4 @@ You can continue to learn about Minimal APIs in .NET 6 by following the links be
 
 - [Getting Started with Minimal APIs](https://minimal-apis.github.io/)
 - [Minimal API Playground](https://github.com/DamianEdwards/MinimalApiPlayground)
+- 

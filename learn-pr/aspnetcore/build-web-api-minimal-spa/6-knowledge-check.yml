@@ -3,8 +3,8 @@ uid: learn.aspnetcore.build-web-api-minimal-spa.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Four multiple-choice questions
-  ms.date: 01/27/2021
+  description: Check your knowledge.
+  ms.date: 11/04/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -17,35 +17,35 @@ quiz:
   questions:
     - content: What isn't an important property when selecting a SPA framework?
       choices:
-        - content: Well documented
+        - content: The framework is well documented.
           isCorrect: false
           explanation: Incorrect. It will definitely help development speed if there's good documentation.
-        - content: Actively developed framework.
+        - content: The framework is built by using an actively developed framework.
           isCorrect: false
-          explanation: Incorrect. This is one of the most important properties. If a framework isn't developed it can lead to bug not being fixed.
-        - content: It's old.
+          explanation: Incorrect. This is one of the most important properties. If a framework isn't developed, it can lead to bug not being fixed.
+        - content: The framework is old.
           isCorrect: true
-          explanation: Correct. Some SPA frameworks have been around for a few years. The age of the framework has nothing to do with whether you should choose it. It's more important that it's popular, well tested and maintained.
+          explanation: Correct. Some SPA frameworks have been around for a few years. The age of the framework has nothing to do with whether you should choose it. It's more important that it's popular, well tested, and maintained.
 
-    - content: How would you as a frontend team tackle that the backend API isn't built yet?
+    - content: How would you as a front-end team tackle that the back-end API isn't built yet?
       choices:
-        - content: Wait for the backend team to finish.
+        - content: Wait for the back-end team to finish.
           isCorrect: false
-          explanation: Incorrect. You are recommended to a either work with the backend team to build a vertical or mock the response that you need.
-        - content: Negotiate a contract with the backend team and then mock the response.
+          explanation: Incorrect. You are recommended to a either work with the back-end team to build a vertical or mock the response that you need.
+        - content: Negotiate a contract with the back-end team and then mock the response.
           isCorrect: true
-          explanation: Correct. Mocking the response can make you move faster as a frontend team, don't forget to switch to the actual backend API, when available.
-        - content: Negotiate a contract with the backend team and then mock the response.
+          explanation: Correct. Mocking the response can make you move faster as a front-end team, don't forget to switch to the actual back-end API, when available.
+        - content: Negotiate a contract with the back-end team and then mock the response.
           isCorrect: false
-          explanation: Incorrect. If you go ahead with mocking without negotiating, you might end up with mocked responses that doesn't quite match the reality once the backend API is built.
-    - content: What CORS policy should I have if I only want "http://example.com" to be allowed?
+          explanation: Incorrect. If you go ahead with mocking without negotiating, you might end up with mocked responses that doesn't quite match the reality once the back-end API is built.
+    - content: What CORS policy should I have if I want only `http://example.com` to be allowed?
       choices:
-        - content: You should allow *
+        - content: You should allow \*
           isCorrect: false
-          explanation: Incorrect.That would allow "http://example.com", but it also allows all other domains.
-        - content: You should allow "http://example.com"
+          explanation: Incorrect.That would allow `http://example.com`, but it also allows all other domains.
+        - content: You should allow `http://example.com`.
           isCorrect: true
-          explanation: Correct. This only allows "http://example.com" and is what you want.
-        - content: You should allow * and "http://example.com""
+          explanation: Correct. This allows only `http://example.com`, and that is what you want.
+        - content: You should allow \* and `http://example.com`.
           isCorrect: false
-          explanation: Incorrect. It allows too much. You only want to allow "http://example.com"
+          explanation: Incorrect. It allows too much. You want to allow only `http://example.com`.

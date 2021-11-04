@@ -2,9 +2,9 @@ Building an API can be complex as it needs to support many features like routing
 
 What do I need to get started with minimal API? There's only one major requirement, at least use .NET 6. After that you need a text editor like for example, Visual Studio, Visual Studio Code or any text editor of your choice. For operating system, you can be on either Windows, macOS or Linux.
 
-## What is minimal API
+## What is minimal API?
 
-If you've developed a .NET Core Web API, you've been using an approach using controllers. The idea is to have a controller class which methods represent various an HTTP verb and a specific task, for example `GetProducts()` would return products using GET as HTTP Verb.
+If you've developed a .NET Core web API, you've been using an approach using controllers. The idea is to have a controller class which methods represent various an HTTP verb and a specific task, for example `GetProducts()` would return products using GET as HTTP Verb.
 
 So what's the difference between this controller-based approach and the minimal API?
 
@@ -43,7 +43,7 @@ So what's the difference between this controller-based approach and the minimal 
 
    There's no `usings`, no `Main()` method, no class, just four lines of code.
 
-- **Routing looks a little different**. You may have noticed from the above that routing looks slightly different, compare to a controller-based Web API. In a Web API, you would write code like so, for routing:
+- **Routing looks a little different**. You may have noticed from the above that routing looks slightly different, compare to a controller-based web API. In a web API, you would write code like so, for routing:
 
    ```csharp
    app.UseRouting();
@@ -77,7 +77,7 @@ dotnet new web -o PizzaStore -f net6.0
 
 It will create a folder _PizzaStore_ containing your API project.
 
-### Inspecting the files
+### Inspect the files
 
 You get much the same files as you would a controller-based API like:
 
@@ -103,7 +103,7 @@ This code tells us that we are using .NET 6.
 
 _Program.cs_ is what holds your API, lets look at the content of this file next.
 
-### Understanding the code
+### Understand the code
 
 _Program.cs_ contains your API code, let's have a closer look at a program example:
 
@@ -114,7 +114,7 @@ app.MapGet("/", () => "Hello World!");
 app.Run();
 ```
 
-If you have used previous versions of .NET, you will note the lack of using statements. With .NET 6, the compiler will figure this out for you; it's not something you need to care about.
+If you have used earlier versions of .NET, you will note the lack of using statements. With .NET 6, the compiler figures this out for you; it's not something you need to care about.
 
 > [!NOTE]
 > As you add more features, like Entity Framework for example, you will need to add `using` statements, but for a simple API like the above, you don't need them yet.
@@ -192,6 +192,6 @@ To use Swagger and Swagger UI in your API, you need to do two things:
     });
    ```
 
-At this point, you are set up and you are able to start your project and navigate to "http://localhost:5000/swagger" and you should see something like this:
+At this point, you are set up and you are able to start your project and go to `http://localhost:5000/swagger` and you should see something like this:
 
 ![Swagger UI](https://user-images.githubusercontent.com/2546640/125180553-49eee080-e1c9-11eb-99f5-0b093210f13a.png)

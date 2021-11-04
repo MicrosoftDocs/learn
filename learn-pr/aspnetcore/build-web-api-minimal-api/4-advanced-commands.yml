@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.aspnetcore.build-web-api-minimal-api.advanced-commands
-title: Add routes
+title: Learn how to add routes and use other advanced commands
 metadata:
-  title: Add routes
-  description: Add more route handlers to support different HTTP verbs per the RESTful convention.
+  title: Learn how to add routes and use other advanced commands
+  description: Learn how to add more route handlers to support different HTTP verbs per the RESTful convention.
   author: softchris
   ms.author: chnoring
   ms.date: 10/26/2021

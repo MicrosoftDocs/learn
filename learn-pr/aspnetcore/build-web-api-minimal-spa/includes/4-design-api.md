@@ -1,18 +1,18 @@
-Having a frontend is an important part. That's what the user will see and interact with. For the app to work all the way, it's going to need a backend. If your backend and frontend live in two different places, you need to configure something called CORS, cross origin resource sharing. 
+Having a front end is an important part. That's what the user will see and interact with. For the app to work all the way, it's going to need a back end. If your back end and front end live in two different places, you need to configure something called CORS, cross origin resource sharing. 
 
-## Connect to a backend
+## Connect to a back end
 
-You have a frontend app, so what are the things you need to think about for the backend application. Well, you are in one of two phases:
+You have a front-end app, so what are the things you need to think about for the back-end application. Well, you are in one of two phases:
 
 - **Working against mocked data**. During development, you are at a point where you can work as a standalone team abut you still want to build out the application and at least emulate that you are working with an API.
-- **Talking to a real API**. At this point, the backend team has built the API, now, you want to connect it to your frontend.
+- **Talking to a real API**. At this point, the back-end team has built the API, now, you want to connect it to your front end.
 
 ## Mock an API
 
-As you build your frontend app, you know that a backend team sooner or later going to be done building the API. What do you do in the meantime though, do you wait for the backend team to finish, before you build the corresponding view? The answer is that there are different approaches you can take here:
+As you build your front-end app, you know that a back-end team sooner or later going to be done building the API. What do you do in the meantime though, do you wait for the back-end team to finish, before you build the corresponding view? The answer is that there are different approaches you can take here:
 
-- **Build a vertical**. In this approach, you work tightly with the person building the backend. You build your frontend part, then the backend developer build their part. Once both parts work, you have a _full vertical_ and you can continue to the next feature. This approach is definitely a viable one but it does force the teams to be very in sync.
-- **Mock the data**. Mocking is another approach, that has fewer requirements on syncing with a team to the same extent. In this scenario, the frontend developer negotiates with the backend team, what the response from the backend will look like. Once you are in agreement, you start creating mock data, static files that the frontend team uses instead. The frontend team can now move at any desired development speed. At some point you do need to synchronize with the backend team, to ensure the backend was built according to what you agreed on.
+- **Build a vertical**. In this approach, you work tightly with the person building the back end. You build your front-end part, then the back-end developer build their part. Once both parts work, you have a _full vertical_ and you can continue to the next feature. This approach is definitely a viable one but it does force the teams to be very in sync.
+- **Mock the data**. Mocking is another approach, that has fewer requirements on syncing with a team to the same extent. In this scenario, the front-end developer negotiates with the back-end team, what the response from the back end will look like. Once you are in agreement, you start creating mock data, static files that the front-end team uses instead. The front-end team can now move at any desired development speed. At some point you do need to synchronize with the back-end team, to ensure the back end was built according to what you agreed on.
 
 ### Use json-server
 
@@ -48,9 +48,9 @@ DELETE /pizza/1
 
 What happens *under the hood* is that were you make any requests towards this mocked API and change data, the static file _db.json_ would change and the server would rebuild and relaunch to reflect the changes.
 
-### What about the frontend app?
+### What about the front-end app?
 
-Because this mocked API works exactly like a real API, you would be able to make request to it in your frontend code, like so for example:
+Because this mocked API works exactly like a real API, you would be able to make request to it in your front-end code, like so for example:
 
 ```javascript
 fetch("http://localhost:5000/pizza")
@@ -58,9 +58,9 @@ fetch("http://localhost:5000/pizza")
   .then(data => console.log(data)) // outputs mocked data 
 ```
 
-### Using a proxy
+### Use a proxy
 
-A proxy is something you can define in your frontend app. What it does for you is that it save you a few keystrokes. Imagine you are doing requests towards "http://localhost:5000/pizza". If you don't want to type out the full domain, can create a proxy, an alias. To set up a proxy, you go to _package.json_ and add an entry like so:
+A proxy is something you can define in your front-end app. What it does for you is that it save you a few keystrokes. Imagine you are doing requests towards "http://localhost:5000/pizza". If you don't want to type out the full domain, can create a proxy, an alias. To set up a proxy, you go to _package.json_ and add an entry like so:
 
 ```json
 "proxy": "http://localhost:5000"
@@ -68,25 +68,26 @@ A proxy is something you can define in your frontend app. What it does for you i
 
 Instead of making requests towards "http://localhost:5000/pizza" can now make request towards "/api/pizza". "api" is then being resolved to "http://localhost:5000" when you make requests. It's not a thing you must use, but it makes typing requests a bit more convenient.
 
-## Talking to a real API
+## Talk to a real API
 
-Once the real API is finished, you should have the frontend app make requests towards that API, instead of the mocked API, to ensure everything is working as it should.
+Once the real API is finished, you should have the front-end app make requests towards that API, instead of the mocked API, to ensure everything is working as it should.
 
-However, when you first try to talk to your real backend, you might get an error as the frontend makes requests towards the backend. You see an error looking something like so:
+However, when you first try to talk to your real back end, you might get an error as the front end makes requests towards the back end. You see an error looking something like so:
 
 ```output
 Access to fetch at http://localhost:5000 from origin 'http://localhost:3000' has been blocked by CORS policy...
 ```
 
-What it tells you, is that the frontend app isn't allowed to call the backend, because it sees the frontend as coming from a different place than the backend is residing in. Remember how that frontend is running on port 3000 and the backend on 5000, that's enough of a difference for it to complain.
+What it tells you, is that the front-end app isn't allowed to call the back end, because it sees the front end as coming from a different place than the back end is residing in. Remember how that front end is running on port 3000 and the back end on 5000, that's enough of a difference for it to complain.
 
-The good news is that you can fix it, by implementing CORS on the backend.  
+The good news is that you can fix it, by implementing CORS on the back end.  
 
 > [!NOTE]
-> When your frontend and backend runs on the same domain and port, you won't get CORS issues. Configuring CORS is only needed if the frontend and backend runs on different places.
+> When your front end and back end run on the same domain and port, you won't get CORS issues. Configuring CORS is only needed if the front end and back end run on different places.
+
 ## CORS
 
-CORS is short for Cross origin resource sharing, it's a protocol that allows a backend to accept requests from other domains than it's currently running on. This is a security feature. The idea is that the calling client makes a request towards a backend and start by sending a preflight request using the OPTIONS verb, that essentially is a question towards the backend asking what it can perform towards a resource. At this point, the backend can answer back to the calling client and either approve or deny the request at which point the actual request, being a GET, or POST, for example,  goes through. Imagine the following flow below:
+CORS is short for cross-origin resource sharing, it's a protocol that allows a back end to accept requests from other domains than it's currently running on. This is a security feature. The idea is that the calling client makes a request towards a back end and start by sending a preflight request using the OPTIONS verb, that essentially is a question towards the back end asking what it can perform towards a resource. At this point, the back end can answer back to the calling client and either approve or deny the request at which point the actual request, being a GET, or POST, for example,  goes through. Imagine the following flow below:
 
 ```output
 client> OPTIONS, can I do POST on /pizzas?
@@ -99,7 +100,7 @@ Another more successful attempt can look like so:
 ```output
 client> OPTIONS, can I do GET on /pizzas
 server> you can do GET on /pizzas
-client> receives data from backend
+client> receives data from back end
 ```
 
 ### Configure CORS on the server

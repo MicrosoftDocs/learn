@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.aspnetcore.build-web-api-minimal-spa.design-api
-title: Build the API
+title: Design the API
 metadata:
-  title: Build the API
-  description: Describe unit
+  title: Design the API
+  description: Learn how to design the API and what to consider.
   author: softchris
   ms.author: chnoring
-  ms.date: 01/27/2021
+  ms.date: 11/04/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

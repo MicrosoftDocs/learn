@@ -6,7 +6,7 @@ One of the benefits of performing database access through an abstraction layer l
 
 A related advantage of using EF Core is that you can reuse your code, experience, and data access libraries to work with any other EF Core database provider.
 
-For this tutorial you will be using [SQLite database](https://www.sqlite.org/index.html) but, you may use one that works better for you. EF Core currently supports over 20 database providers, listed in the [documentation](/ef/core/providers/?tabs=dotnet-core-cli).
+For this tutorial, you will be using [SQLite database](https://www.sqlite.org/index.html?azure-portal=true) but, you may use one that works better for you. EF Core currently supports over 20 database providers, listed in the [documentation](/ef/core/providers/?tabs=dotnet-core-cli).
 
 ## Steps to add a new database provider
 

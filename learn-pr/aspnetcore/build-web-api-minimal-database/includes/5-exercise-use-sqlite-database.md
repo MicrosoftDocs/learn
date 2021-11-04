@@ -2,25 +2,25 @@ Until this point, you have been saving your data in an in-memory database. This 
 
 In this exercise, you will upgrade your application to use a relational database to store your data. You will use SQLite to store your data.
 
-## Setup SQLite database
+## Set up SQLite database
 
 ### Install the following tools and packages
 
 1. Using .NET CLI / Visual Studio package manager UI, install the following packages:
 
-   **[SQLite EF Core Database Provider](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/6.0.0-rc.2.21480.5)** : can access many different databases through plug-in libraries called [database providers](/ef/core/providers/?tabs=dotnet-core-cli). The package below is the SQLite database provider for EF Core.
+   [SQLite EF Core Database Provider](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/6.0.0-rc.2.21480.5) : can access many different databases through plug-in libraries called [database providers](/ef/core/providers/?tabs=dotnet-core-cli). The package below is the SQLite database provider for EF Core.
 
    ```console
    dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 6.0.0-rc.*
    ```
 
-   **[Entity Framework Core tools ](/ef/core/cli/dotnet)**: tools for Entity Framework Core perform design-time development tasks. For example, they create migrations, apply migrations, and generate code for a model based on an existing database.
+   [Entity Framework Core tools ](/ef/core/cli/dotnet): tools for Entity Framework Core perform design-time development tasks. For example, they create migrations, apply migrations, and generate code for a model based on an existing database.
 
    ```console
    dotnet tool install --global dotnet-ef
    ```
 
-   **[`Microsoft.EntityFrameworkCore.Design`](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/6.0.0-rc.2.21480.5)** : contains all the design-time logic for EF core to create your database.
+   [`Microsoft.EntityFrameworkCore.Design`](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/6.0.0-rc.2.21480.5) : contains all the design-time logic for EF core to create your database.
 
    ```console
    dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.0-rc.*
@@ -35,17 +35,17 @@ In order to enable database creation they are couple of steps you need to comple
 
 ## Set database connection string
 
-   1. In `Program.cs` below your app builder `var builder = WebApplication.CreateBuilder(args);` add a connection string.
+1. In `Program.cs` below your app builder `var builder = WebApplication.CreateBuilder(args);` add a connection string.
 
-   ```cs
-   var connectionString = builder.Configuration.GetConnectionString("Pizzas") ?? "Data Source=Pizzas.db";
-   ```
+    ```cs
+    var connectionString = builder.Configuration.GetConnectionString("Pizzas") ?? "Data Source=Pizzas.db";
+    ```
 
 ## Add your context to your services
 
 In the CRUD portion of this tutorial, you used an in-memory database. Now you are going to replace the in-memory database with a persistent database.
 
-1. Replace your current in-memory database implementation `builder.Services.AddDbContext<PizzaDb>(options => options.UseInMemoryDatabase("items"));` in your build services with the SQLite one below:
+- Replace your current in-memory database implementation `builder.Services.AddDbContext<PizzaDb>(options => options.UseInMemoryDatabase("items"));` in your build services with the SQLite one below:
 
    ```cs
    builder.Services.AddSqlite<PizzaDb>(connectionString);
@@ -53,11 +53,11 @@ In the CRUD portion of this tutorial, you used an in-memory database. Now you ar
 
 ## Migrate data model
 
-1. With EF Core migration tool, you can now start your first migration `InitialCreate`.  In a terminal window, run the `migrations` command below:
+With EF Core migration tool, you can now start your first migration `InitialCreate`.  In a terminal window, run the `migrations` command below:
 
-   ```console
-    dotnet ef migrations add InitialCreate
-   ```
+```console
+   dotnet ef migrations add InitialCreate
+```
 
 EF Core will create a folder called Migrations in your project directory containing two files with the code that represents the database migrations.
 
@@ -65,7 +65,7 @@ EF Core will create a folder called Migrations in your project directory contain
 
 Now that you have completed the migration, you can use it to create your database and schema.
 
-1. In a terminal window, run the `database update` command below to apply migrations to a database:
+- In a terminal window, run the `database update` command below to apply migrations to a database:
 
    ```console
     dotnet ef database update
@@ -77,5 +77,4 @@ You should see a newly created `Pizzas.db` file in your project directory.
 
 Now that you have a backing database, your changes will be persisted. 
 
-1. To test your application, run the `dotnet run` command in your terminal window and interact with the API in the Swagger UI. You can stop the application using the `ctrl-c` command (`cmd-c` on macOS), then run it again and verify that your changes are still persisted.
-1. 
+To test your application, run the `dotnet run` command in your terminal window and interact with the API in the Swagger UI. You can stop the application using the `ctrl-c` command (`cmd-c` on macOS), then run it again and verify that your changes are still persisted.

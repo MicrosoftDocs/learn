@@ -12,7 +12,7 @@ First, you need to create a project. You've installed .NET 6 and you are ready t
 
    You should see a directory _PizzaStore_.
 
-1. Navigate into the _PizzaStore_ directory by typing the following command:
+1. Go to the _PizzaStore_ directory by typing the following command:
 
    ```bash
    cd PizzaStore
@@ -40,7 +40,9 @@ First, you need to create a project. You've installed .NET 6 and you are ready t
 
    The above `Pizza` class is a simple object that represents a pizza. This is our data model, and later on you will use EF Core to map this data model to a database table.
 
-1. Open up _Program.cs_ and add the following code (in bold):
+1. Open  _Program.cs_ and add the following code (in bold):
+
+   :::code language="csharp" source="/code/ef-core-one.cs" highlight="1, 5-12, 15-19"::: 
 
    <pre>
    <b>using Microsoft.OpenApi.Models;</b>
@@ -91,9 +93,9 @@ Now that we have EntityFramework added to the project, we can now wire up our co
 - Expose our `Pizzas` property from our list of `Pizza` in the database.
 - `UseInMemoryDatabase` wires the in memory database storage.This will store data as long the app is running.
 
-1. To setup your in memory database, add the following to the bottom of the `Pizza.cs` class:
+1. To set up your in memory database, add the following to the bottom of the `Pizza.cs` class:
 
-   ```cs
+   ```csharp
    class PizzaDb : DbContext
    {
        public PizzaDb(DbContextOptions options) : base(options) { }
@@ -110,25 +112,25 @@ Now that we have EntityFramework added to the project, we can now wire up our co
 
 1. In `Program.cs`, before the call to `AddSwaggerGen`, add the following code:
 
-   ``` cs
-   builder.Services.AddDbContext<PizzaDb>(options => options.UseInMemoryDatabase("items"));
-   ```
+    ```csharp
+    builder.Services.AddDbContext<PizzaDb>(options => options.UseInMemoryDatabase("items"));
+    ```
 
 ## Return a list of items
 
-1. To read from a list of items in the pizza list replace  the "/pizza" route with the "/pizzas" route below.
+1. To read from a list of items in the pizza list, replace  the "/pizza" route with the "/pizzas" route:
 
-    ``` cs
+    ```csharp
     app.MapGet("/pizzas", async (PizzaDb db) => await db.pizzas.ToListAsync());
     ```
 
-1. Go back your browser and navigate to `https://localhost:{PORT}/swagger` click on the **GET**`/pizzas` button and you will see the list is empty under `Response body`.
+1. In your browser, go to `https://localhost:{PORT}/swagger`. Select the **GET**`/pizzas` button and you will see that the list is empty under `Response body`.
 
 ## Create new items
 
-1. Let's `POST` new tasks to the pizzas list. Below `app.MapGet` you create earlier.
+1. Let's `POST` new tasks to the pizzas list below `app.MapGet` you create earlier.
 
-   ```cs
+   ```csharp
    app.MapPost("/pizza", async (PizzaDb db, pizzaItem pizza) =>
    {
        await db.pizzas.AddAsync(pizza);
@@ -139,21 +141,23 @@ Now that we have EntityFramework added to the project, we can now wire up our co
 
 ## Test the API
 
-Go back to `Swagger` and now you should see  **`POST`**`/pizza`. To add new items to the pizza list:
+Go back to `Swagger` and now you should see  `POST/pizza`. To add new items to the pizza list:
 
-- Click on **`POST`** `/pizza`
-- Click on `Try it out`
-- Update `id`, `item`, and `isComplete`
-- Click `Execute`
+1. Select `POST /pizza`.
+1. Select `Try it out`.
+1. Update `id`, `item`, and `isComplete`.
+1. Select `Execute`.
 
 ## Read the items in the list
 
 To read the items in the list:
 
-- Click on **`GET`**`/pizza`
-- Click on `Try it out`
-- Click `Execute
+1. Select `GET /pizza`.
+1. Select `Try it out`.
+1. Select `Execute`.
+
 The `Response body` will include the items just added.
+
 ```json
 [
   {
@@ -167,19 +171,19 @@ The `Response body` will include the items just added.
 ]
 ```
 
-To `GET` an item by `id` add the code below `app.MapPost` route created earlier.
+To `GET` an item by `id`, add the code below the `app.MapPost` route you created earlier.
 
-```cs
+```csharp
 app.MapGet("/pizza/{id}", async (PizzaDb db, int id) => await db.pizzas.FindAsync(id));
 ```
 
-To check this out you can either browse to `https://localhost:{PORT}/pizza/1` or use the Swagger UI.
+To check this out, you can either go to `https://localhost:{PORT}/pizza/1` or use the Swagger UI.
 
 ## Update an item
 
-1. To update an existing item add the code below `GET /pizza/{id}` route we created above.
+1. To update an existing item, add the code below `GET /pizza/{id}` route you created:
 
-   ```cs
+   ```csharp
    app.MapPut("/pizza/{id}", async ( PizzaDb db, pizzaItem updatepizza ,int id) =>
    {
        var pizza = await db.pizzas.FindAsync(id);
@@ -195,10 +199,10 @@ To check this out you can either browse to `https://localhost:{PORT}/pizza/1` or
    });
    ```
 
-1. Click on **`PUT`**`/pizza/{id}`
-1. Click on `Try it out`
-1. In the **`id`** text box enter 2
-1. Update `Request body` paste the JSON below and update `name` to `Pineapple`.
+1. Select `PUT /pizza/{id}`.
+1. Select `Try it out`.
+1. In the `id` text box, enter 2.
+1. Finally, update `Request body`. Paste the following JSON and change `name` to `Pineapple`.
 
    ``` json
     {
@@ -208,15 +212,15 @@ To check this out you can either browse to `https://localhost:{PORT}/pizza/1` or
    
    ```
 
-1. Click `Execute`
+1. Select `Execute`.
 
-To test this out scroll back to **`GET`**`/pizza/{id}` and the second pizza now has the name `Pineapple` (an affront to many pizza fans).
+To test the code, scroll back to `GET /pizza/{id}`. The second pizza now has the name `Pineapple` (an affront to many pizza fans).
 
 ## Delete an item
 
-1. To delete an existing item add the code below **`PUT`**`/pizza/{id}` we created above.
+1. To delete an existing item, add the code below the `PUT /pizza/{id}` you created earlier:
 
-   ```cs
+   ```csharp
    app.MapDelete("/pizza/{id}", async (PizzaDb db, int id) =>
    {
        var pizza = await db.pizzas.FindAsync(id);
@@ -233,4 +237,4 @@ To test this out scroll back to **`GET`**`/pizza/{id}` and the second pizza now 
 
 1. Now, try deleting an item using the Swagger interface.
 
-In this exercise, you have added EF Core to an existing Minimal API application and used an in-memory database to store the data. Next, you will learn how to use a real database to store the data so that it persists between application shutdowns.
+In this exercise, you added EF Core to an existing Minimal API application and used an in-memory database to store the data. Next, you will learn how to use a real database to store the data so that it persists between application shutdowns.
