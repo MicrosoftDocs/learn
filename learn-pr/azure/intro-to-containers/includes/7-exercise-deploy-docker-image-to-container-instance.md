@@ -74,7 +74,7 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
     docker login <login-server>
     ```
    
-    >!NOTE
+    >[!NOTE]
     >You may receive an error response from a daemon that your application is not registered with AAD (Azure Active Directory). As noted earlier in this exercise, you've enabled **Admin user** access key to test our deployment.
 
 
