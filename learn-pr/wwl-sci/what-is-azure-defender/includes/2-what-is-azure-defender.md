@@ -2,7 +2,7 @@ Microsoft Defender for Cloud's features cover the two broad pillars of cloud sec
 
 **Cloud Security Posture Management (CSPM)** - Defender for Cloud is available for free to all Azure users. The free experience includes CSPM features such as secure score, detection of security misconfigurations in your Azure machines, asset inventory, and more. Use these CSPM features to strengthen your hybrid cloud posture and track compliance with built-in policies.
 
-**Cloud Workload Protection (CWP)** - Defender for Cloud's integrated cloud workload protection platform (CWPP), Microsoft Defender for Cloud, brings advanced, intelligent protection to your Azure and hybrid resources and workloads. Enabling Microsoft Defender for Cloud brings a range of extra security features. In addition to the built-in policies, when you've enabled any Microsoft Defender plans, you can also add custom policies and initiatives.
+**Cloud Workload Protection (CWP)** - Defender for Cloud's integrated cloud workload protection platform (CWPP) brings advanced, intelligent protection to your Azure and hybrid resources and workloads. Enabling Microsoft Defender for Cloud brings a range of extra security features. In addition to the built-in policies, when you've enabled any Microsoft Defender plans, you can also add custom policies and initiatives.
 
 The workload protection dashboard in Defender for Cloud provides visibility and control of the CWP features for your environment:
 
