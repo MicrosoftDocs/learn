@@ -9,6 +9,8 @@ In this exercise, you'll clone an existing app and create a new address componen
 > [!NOTE]
 > This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
 
+[!include[](../../../includes/dotnet6-sdk-version.md)]
+
 If you haven't created a Blazor app before, follow the [setup instructions for Blazor](https://aka.ms/blazor-getting-started) to install the correct version of .NET and check your machine is set up correctly. Stop at the **Create your app** step.
 
 1. Open **Visual Studio Code**.
