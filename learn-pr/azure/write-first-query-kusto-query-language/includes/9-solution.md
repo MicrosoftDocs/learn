@@ -4,7 +4,7 @@ You've been asked to write a query that answers the following question:
 
 This solution provides one possible way to construct a query that answers the above question.
 
-## Solution
+## Solution process
 
 1. The first thing we want to do is filter out as much information as possible. 
     * The time window should be between April 1 and April 30, 2007. We can filter this using the `where` operator.
