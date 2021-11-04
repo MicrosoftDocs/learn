@@ -72,24 +72,21 @@ Additionally, you could run an automated check to review the logs and error rate
 
 ### Deployment history
 
-GitHub Actions tracks the history of the deployments to an environment. <!-- TODO check if this is true --> This history gives you an easy way to track what happens in the environment over time. It even allows you to trace a deployment to a specific feature request in your GitHub issues <!-- TODO check this -->, or to a commit in your repository. This feature can be useful if you have a problem with a deployment and need to identify the change that led to the problem.
+GitHub Actions tracks the history of the deployments to an environment. This history gives you an easy way to track what happens in the environment over time. It even allows you to trace a deployment to a specific feature request in your GitHub issues <!-- TODO check this -->, or to a commit in your repository. This feature can be useful if you have a problem with a deployment and need to identify the change that led to the problem.
 
-### Security
+### Create environments
 
-You can apply additional security controls to environments. You can restrict the workflows that are allowed to use a specific environment, to prevent someone from accidentally creating a secondary workflow that interacts with your production environment. <!-- TODO check if this is true -->
+You create an environment by using the GitHub web interface.
 
-You can also apply user permissions to control the users who can manage environments. Specific permissions can allow users to create new environments, to modify environments, and to view environments and the history of deployments to them.
+When your workflow refers to an environment that doesn't exist, GitHub Actions automatically creates it for you. This feature can affect the security of your GitHub repository because the new environment won't have any protection rules configured. It's best to create an environment yourself through the GitHub web interface, so that you have full control over its security and you don't accidentally get permissions that you don't need.
 
-> [!NOTE]
-> When your workflow refers to an environment that doesn't exist yet, GitHub Actions automatically creates it for you. <!-- TODO check that this is true--> This feature can affect the security of your GitHub repository because you'll automatically get administrative permissions to the environment. <!-- TODO check this --> It's best to create an environment yourself through the GitHub web interface, so that you have full control over its security and you don't accidentally get permissions that you don't need.
-
-## Environments and service connections
+## Environments and connections to Azure
 
 When you use multiple environments, you should make each environment independent from the others. For example, your development environment's website shouldn't be able to access a database within your production environment. 
 
 The same principle also applies to the deployment workflow. The service connection that you use to deploy to your development environment shouldn't be able to access your production environment. Following this principle adds another layer of protection to ensure that your non-production deployments don't affect your production environment.
 
-You should create separate service connections for each environment. Each service connection should use its own dedicated service principal, with specific permissions to only deploy to the subscription and resource group used by that environment:
+You should create separate service principals for each environment, and use separate secrets for each environment with the credentials for that environment's service principal. Service principals should be assigned specific permissions to only deploy to the subscription and resource group used by that environment:
 
 :::image type="content" source="../media/2-service-connections.png" alt-text="Diagram that shows a service connection, service principal, and Azure resource group for non-production and another set for production." border="false":::
 

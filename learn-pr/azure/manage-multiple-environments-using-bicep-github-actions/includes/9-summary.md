@@ -6,15 +6,13 @@ Now that your workflow deploys to multiple environments, you have higher confide
     
 ## Learn more
 
-<!-- TODO update the below -->
-- [Azure Pipelines environments](/azure/devops/pipelines/process/environments)
-- [Approvals and checks](/azure/devops/pipelines/process/approvals)
-- [Pipeline templates](/azure/devops/pipelines/process/templates)
-    - [Use other repositories](/azure/devops/pipelines/process/templates#use-other-repositories)
-    - [Security through templates](/azure/devops/pipelines/security/templates)
-- [Conditions](/azure/devops/pipelines/process/conditions)
-- [Expressions](/azure/devops/pipelines/process/expressions)
-- [Variables](/azure/devops/pipelines/process/variables?tabs=yaml)
-    - [Variable groups](/azure/devops/pipelines/library/variable-groups?tabs=yaml)
-    - [Link secrets from an Azure key vault](/azure/devops/pipelines/library/variable-groups?tabs=yaml#link-secrets-from-an-azure-key-vault)
-    - [How to securely use variables and parameters in your pipeline](/azure/devops/pipelines/security/inputs)
+- [GitHub Actions environments](https://docs.github.com/actions/deployment/targeting-different-environments/using-environments-for-deployment)
+    - [Environment protection rules](https://docs.github.com/actions/deployment/targeting-different-environments/using-environments-for-deployment#environment-protection-rules)
+    - [Viewing deployment history](https://docs.github.com/actions/deployment/managing-your-deployments/viewing-deployment-history)
+- [Reusing workflows](https://docs.github.com/actions/learn-github-actions/reusing-workflows)
+- Conditions
+   - [Jobs](https://docs.github.com/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idif)
+   - [Steps](https://docs.github.com/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idstepsif)
+- [Expressions](https://docs.github.com/actions/learn-github-actions/expressions)
+- [Environment variables](https://docs.github.com/actions/learn-github-actions/environment-variables)
+- [Secrets](https://docs.github.com/actions/security-guides/encrypted-secrets)
