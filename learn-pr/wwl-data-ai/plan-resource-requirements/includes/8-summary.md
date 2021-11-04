@@ -9,5 +9,9 @@ Now that you have completed this module, you can:
 For more information about the topics discussed in this module, see:
 
 - [Estimate RU/s using the Azure Cosmos DB capacity planner - SQL API][docs.microsoft.com/azure/cosmos-db/sql/estimate-ru-with-capacity-planner]
+- [Request Units in Azure Cosmos DB][docs.microsoft.com/azure/cosmos-db/request-units]
+- [Introduction to provisioned throughput in Azure Cosmos DB][docs.microsoft.com/azure/cosmos-db/set-throughput]
 
 [docs.microsoft.com/azure/cosmos-db/sql/estimate-ru-with-capacity-planner]: /azure/cosmos-db/sql/estimate-ru-with-capacity-planner
+[docs.microsoft.com/azure/cosmos-db/request-units]: /azure/cosmos-db/request-units
+[docs.microsoft.com/azure/cosmos-db/set-throughput]: /azure/cosmos-db/set-throughput
