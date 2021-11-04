@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe security management capabilities of Azure
-summary: Learn about the capabilities and benefits of Azure’s security management functionality, including Microsoft Defender for Cloud, Microsoft Defender for Cloud, security baselines and more.
+summary: Learn about the capabilities and benefits of Azure’s security management functionality, including Microsoft Defender for Cloud, security baselines, and more.
 abstract: |
   After completing this module, you will be able to:
   - Describe the security management capabilities of Azure
