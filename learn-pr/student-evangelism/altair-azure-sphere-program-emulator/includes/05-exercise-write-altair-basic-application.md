@@ -1,8 +1,8 @@
-Altair BASIC was the first high-level programing language for the Altair 8800. For this exercise, imagine you're a games developer in the 1970s who wants to build a game on the Altair 8800. This exercise is an introduction to Altair BASIC. The rest is up to your imagination.
+Altair BASIC was the first high-level programing language for the Altair 8800. For this exercise, imagine you're a game developer in the 1970s who wants to build a game on the Altair 8800. This exercise is an introduction to Altair BASIC. The rest is up to your imagination.
 
 ## Change the boot order
 
-By default, the Altair emulator runs CP/M. To change the boot order and run Altair BASIC, follow these instructions.
+By default, the Altair emulator runs CP/M. To change the boot order and run Altair BASIC, follow these instructions:
 
 1. From Visual studio code, open the Altair emulator *CMakeList.txt* file. Update `BOOT CONFIG` as follows:
 
@@ -20,15 +20,15 @@ By default, the Altair emulator runs CP/M. To change the boot order and run Alta
 
 ## Connect to the web terminal
 
-To program the Altair, you first need to connect the web terminal to the Altair 8800 emulator running on the Azure Sphere. After you make the connection, you can load or write and then run Altair BASIC apps.
+To program the Altair, you first need to connect the web terminal to the Altair 8800 emulator running on Azure Sphere. After you make the connection, you can load or write and then run Altair BASIC apps.
 
 1. Switch back the web terminal in your web browser.
 1. If necessary, authenticate the web terminal.
-1. The Altair emulator might have started running before you connected to the web terminal. If so, press the **RESET** button on Azure Sphere to restart the Altair emulator. When the Azure Sphere restarts, Altair BASIC prompts you for the following information:
+1. The Altair emulator might have started running before you connected to the web terminal. If so, press the **RESET** button on Azure Sphere to restart the Altair emulator. When Azure Sphere restarts, Altair BASIC prompts you for the following information:
 
-    * **MEMORY SIZE?** Select the Enter key to accept the default.
-    * **TERMINAL  WIDTH?** Select the Enter key to accept the default.
-    * **WANT SIN-COS-TAN-ATN?** Enter `Y` or `N`.
+    * **MEMORY SIZE?**: Select the Enter key to accept the default.
+    * **TERMINAL  WIDTH?**: Select the Enter key to accept the default.
+    * **WANT SIN-COS-TAN-ATN?**: Enter `Y` or `N`.
 
 Altair BASIC responds with the amount of memory and version information.
 
@@ -45,7 +45,7 @@ Altair BASIC responds with the amount of memory and version information.
    30 next i
    ```
 
-   Your Web Terminal should look similar to the following image.
+   Your web terminal should look similar to the following image.
 
    > [!div class="mx-imgBorder"]
    > ![The illustration shows Altair BASIC with your first program.](../media/altair-basic-first-program.png)

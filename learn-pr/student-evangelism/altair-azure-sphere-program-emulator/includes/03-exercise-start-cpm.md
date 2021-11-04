@@ -96,7 +96,7 @@ You can learn more about BASIC from the following BASIC applications included wi
 
 ## Use ports to read temperature and air pressure
 
-The BASIC language has extensibility mechanism called ports. The Altair emulator includes support for ports that the *IOT.BAS* application uses. The *IOT.BAS* application calls *in* port 43 to read the temperature and port 44 to read the air pressure. These calls are routed to the C `sphere_port_in` value in *main.c* of the Altair emulator.
+The BASIC language has an extensibility mechanism called ports. The Altair emulator includes support for ports that the *IOT.BAS* application uses. The *IOT.BAS* application calls *in* port 43 to read the temperature and port 44 to read the air pressure. These calls are routed to the C `sphere_port_in` value in *main.c* of the Altair emulator.
 
 If you have an Avnet Azure Sphere Starter Kit, the temperature and pressure data is read from the onboard sensors. If you have an Azure Sphere device from Seeed Studio, random temperature and pressure data is used.
 
@@ -172,13 +172,13 @@ static uint8_t sphere_port_in(uint8_t port) {
 
     After Microsoft BASIC starts, it opens the *IOT.BAS* application.
 
-1. Run the IoT application:
+1. Run the application:
 
     ```basic
     run
     ```
 
-When you run this application, temperature and pressure data will be published to Azure IoT Central. You can view the data in the Azure IoT Central web portal, under the **Environment** tab for your device.
+When you run this application, temperature and pressure data is published to Azure IoT Central. You can view the data in the Azure IoT Central web portal, under the **Environment** tab for your device.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot that shows an I o T Central chart.](../media/iot-central-environment-chart.png)
@@ -187,17 +187,17 @@ When you run this application, temperature and pressure data will be published t
 
 Make the *IOT.BAS* application read the temperature and pressure every five seconds. When the temperature and pressure are read, the data is sent to Azure IoT Central and plotted on the **Environment** chart.
 
-To pause the app for approximately 5 seconds, add a loop:
+1. To pause the app for approximately 5 seconds, add a loop:
 
-```basic
-250 FOR J = 0 TO 30000: NEXT J
-```
+   ```basic
+   250 FOR J = 0 TO 30000: NEXT J
+   ```
 
-Save your changes by using the BASIC `save` command:
+1. Save your changes by using the BASIC `save` command:
 
-```basic
-save "B:IOT.BAS"
-```
+   ```basic
+   save "B:IOT.BAS"
+   ```
 
 ## Get started with the Word-Master text editor
 
@@ -291,7 +291,7 @@ The CP/M disk image includes a demo assembler application. Follow these steps to
 
 ## Compile C applications
 
-The CP/M disk image includes a simple C application. Follow these steps to edit, compile, and link the *hw.c* (helloworld) file.
+The CP/M disk image includes a simple C application. Follow these steps to edit, compile, and link the *hw.c* (helloworld) file:
 
 1. Copy the *hw.c* source code to read/write drive B by using the `pip` command:
 

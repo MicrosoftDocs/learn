@@ -3,7 +3,7 @@ In this unit, you'll learn background information about programming the Altair e
 When you start the Altair emulator, it runs CP/M by default. From CP/M, you can program the Altair emulator by using Microsoft BASIC, BD Software C, and Microsoft MACRO-80 Assembler.
 
 > [!NOTE]
-> You can change the boot order so that the Altair emulator starts by running Altair BASIC. You set the boot from the **Boot Config** section in the *cmake/altair_config.cmake* file.
+> You can change the boot order so that the Altair emulator starts by running Altair BASIC. You set the boot order from the **Boot Config** section in the *cmake/altair_config.cmake* file.
 
 ## Saving files to disk
 
@@ -11,7 +11,7 @@ Files can be saved to disk when the Altair emulator is running CP/M. To save fil
 
 ## Introduction to CP/M
 
-For more information about CP/M, see [CP/M Wikipedia article](https://en.wikipedia.org/wiki/CP/M?azure-portal=true).
+For more information about CP/M, see the [CP/M Wikipedia article](https://en.wikipedia.org/wiki/CP/M?azure-portal=true).
 
 CP/M originally stood for Control Program/Monitor. Later, CP/M became known as Control Program for Microcomputers. It was a mass-market operating system created in 1974 for Intel 8080/85-based microcomputers by Gary Kildall of Digital Research, Inc. 
 
