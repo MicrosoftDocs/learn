@@ -52,7 +52,7 @@ When you encounter any entity (currently limited to users and hosts) in a search
 
 Entity pages consist of three parts:
 
-- The left-side panel contains the entity's identifying information, collected from data sources like Azure Active Directory, Azure Monitor, Microsoft Defender for Cloud, and Microsoft Defender for Cloud.
+- The left-side panel contains the entity's identifying information, collected from data sources like Azure Active Directory, Azure Monitor, and Microsoft Defender for Cloud.
 
 - The center panel shows a graphical and textual timeline of notable events related to the entity, such as alerts, bookmarks, and activities. Activities are aggregations of notable events from Log Analytics. The queries that detect those activities are developed by Microsoft security research teams.
 
