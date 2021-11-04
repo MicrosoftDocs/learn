@@ -46,4 +46,4 @@ quiz:
       explanation: "False. The render operator instructs the user agent to render the results of the query in a particular way."
     - content: "project"
       isCorrect: true
-      explanation: "True. '|\-*-/|' The project operator can be used to include, rename, or insert new computed columns."
+      explanation: "True. The project operator can be used to include, rename, or insert new computed columns."
