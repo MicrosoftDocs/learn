@@ -34,7 +34,7 @@ Create an Azure Function App using an **Azure Functions** template.
     | **Solution name** | Accept *WatchPortalFunction* (default). |
     | **Place solution and project in the same directory** | Unchecked (NOT selected). This ensures the correct folder structure for this module. |
   
-    :::image type="content" source="../media/3-configure-project.png" alt-text="Screenshot of Configure your new project page with create highilighted." loc-scope="vs":::
+    :::image type="content" source="../media/3-configure-project.png" alt-text="Screenshot of Configure your new project page with create highlighted." loc-scope="vs":::
 
 1. Select **Create**.
 
@@ -87,7 +87,7 @@ Create an Azure Function App using an **Azure Functions** template.
 
 ## Create the WatchInfo Azure Function
 
-1. In the Veiw menu, select **Solution Explorer**, and in the **Solution Explorer** window, right-click the **WatchPortalFunction** Azure Functions project, and in the context menu select **Add** > **New Azure Function**.
+1. In the View menu, select **Solution Explorer**, and in the **Solution Explorer** window, right-click the **WatchPortalFunction** Azure Functions project, and in the context menu select **Add** > **New Azure Function**.
 
     :::image type="content" source="../media/3-new-azure-function.png" alt-text="Screenshot of the Solution Explorer window. The user has selected Add -> New Azure Function." loc-scope="vs":::
 
@@ -136,13 +136,13 @@ Create an Azure Function App using an **Azure Functions** template.
     return new BadRequestObjectResult("Please provide a watch model in the query string");
     ```
 
-    This code reads the `model` parameter from the query string in the HTTP request and returns the details for that model of watch. In this example code, we'eve created dummy 'watchinfo' data. The function returns a response that contains these details, or, if the HTTP request doesn't include a query string, the function returns an error message.
+    This code reads the `model` parameter from the query string in the HTTP request and returns the details for that model of watch. In this example code, we'eve created dummy `watchinfo` data. The function returns a response that contains these details, or, if the HTTP request doesn't include a query string, the function returns an error message.
 
 ## Test the Azure Function locally
 
 1. On the command bar, select **Debug** > **Start Debugging**.
 
-    Visual Studio builds the Azure Function App and starts the Azure Functions runtime. An Ouptut window opens to display messages as the runtime starts up. When the runtime is ready, a list of the HTTP functions and the URL that you can use to trigger each function display.
+    Visual Studio builds the Azure Function App and starts the Azure Functions runtime. An Output window opens to display messages as the runtime starts up. When the runtime is ready, a list of the HTTP functions and the URL that you can use to trigger each function display.
 
     :::image type="content" source="../media/3-azure-functions-runtime.png" alt-text="Screenshot of the Azure Functions runtime window. The runtime has started the Azure Function App, and is displaying the URLs for the Function1 and WatchInfo Azure Functions." loc-scope="vs":::
 
@@ -156,7 +156,7 @@ Create an Azure Function App using an **Azure Functions** template.
 
 1. In Visual Studio, set a breakpoint on the line of code that retrieves the model from the query string.
 
-    :::image type="content" source="../media/3-visual-studio-breakpoint.png" alt-text="Screenshot of Visual Studio showing a breakpoint on the statement that reads the model from the query string."::
+    :::image type="content" source="../media/3-visual-studio-breakpoint.png" alt-text="Screenshot of Visual Studio showing a breakpoint on the statement that reads the model from the query string.":::
 
 1. Restart the web browser, and enter the URL without the query string `http://localhost:7071/api/WatchInfo`.
 
@@ -164,7 +164,7 @@ Create an Azure Function App using an **Azure Functions** template.
 
 1. In Visual Studio, to step over the statement at the breakpoint, press <kbd>F10</kbd>.
 
-1. In the `Autos` window, verify that the `model` variable is `null`. This is because the query string doesn't contain a model parameter.
+1. In the `Debugger` window, verify that the `model` variable is `null`. This is because the query string doesn't contain a model parameter.
 
     :::image type="content" source="../media/3-visual-studio-debug.png" alt-text="Screenshot of Visual Studio debugger showing the value of the model variable." loc-scope="vs":::
 
