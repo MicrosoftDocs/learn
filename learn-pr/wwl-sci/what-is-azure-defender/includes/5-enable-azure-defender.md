@@ -1,4 +1,4 @@
-To enable Microsoft Defender for Cloud, you first enable Microsoft Defender for Cloud, then Microsoft Defender for Cloud, and finally configure your coverage type.
+Enable Microsoft Defender for Cloud in the Azure portal and onboard subscriptions and workspaces.
 
 ## Prerequisites
 
