@@ -2,7 +2,7 @@ Altair BASIC was the first high-level programing language for the Altair 8800. F
 
 ## Change the boot order
 
-By default, the Altair emulator boots CP/M. To change the boot order and boot Altair BASIC, follow these instructions.
+By default, the Altair emulator runs CP/M. To change the boot order and run Altair BASIC, follow these instructions.
 
 1. From Visual studio code, open the Altair emulator *CMakeList.txt* file. Update `BOOT CONFIG` as follows:
 

@@ -55,7 +55,7 @@ In **Input** mode, the buttons take on the role of the 16 address/data switches 
 
 ### Status LEDs for CPU STOP and CPU RUN
 
-The top row of LEDs are the Altair status indicators. In **CPU STOP** mode, the middle row of LEDs displays the 8 bits on the data bus. The bottom two rows display the 16 bits set on the address bus. In **CPU RUN** mode, the LEDs for the data bus and address bus are sampled every 20 milliseconds and are an indicator of activity.
+The top row of LEDs consists of the Altair status indicators. In **CPU STOP** mode, the middle row of LEDs displays the 8 bits on the data bus. The bottom two rows display the 16 bits set on the address bus. In **CPU RUN** mode, the LEDs for the data bus and address bus are sampled every 20 milliseconds and are an indicator of activity.
 
 ### Loading an Intel 8080 opcode by using the Click front panel
 
