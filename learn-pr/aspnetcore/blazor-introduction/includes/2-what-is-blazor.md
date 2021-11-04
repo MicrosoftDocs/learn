@@ -1,34 +1,4 @@
-<!-- 1. Topic sentence(s) ---------------------------------------------------------------
-
-    Goal: briefly state that this unit will define the product.
-
-    Heading: none
-
-    Example: "Let's start with a few definitions and a quick tour of the core features of Logic Apps. This overview should help you see whether Logic Apps might be a good fit for your work."
--->
-
 Blazor is a user interface framework for .NET that you can use to build applications.  Let's take a tour of the capabilities of Blazor along with the pros and cons of how it can be configured to help you decide if Blazor should be used in your next application.
-
-<!-- 2. Background-concept definitions (optional) ----------------------------------------
-
-    Goal:
-        Define any needed underlying concepts or terms the learner must know to understand the product.
-        Repeat this pattern multiple times if multiple concepts are needed.
-
-    Heading:
-        "## What is (concept)?"
-
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that gives a definition "(concept) is..." (ensure this is a definition, do not give use cases like "(concept) lets you...").
-        3. Additional text as needed (typically 1-3 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    Example:
-        (Note: the product "Logic Apps" implements business processes in the cloud; therefore, "business process" is a background concept.)
-        Heading: "What is a business process?
-        Lead sentence: "A business process or _workflow_ is a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification...."
--->
 
 ## What is .NET?
 
@@ -57,26 +27,6 @@ Blazor Web Assembly, sometimes shortened to Blazor WASM, is an implementation of
 Since Web Assembly is a technology that runs entirely in the browser, it is possible to deploy this model of Blazor application using files that a web server does not parse or interact with.  This type of "static" approach reduces the requirements for a web server and shifts all processing for the application to the user's machine.
 
 Advanced processing and logic can take place in the browser.  When the application needs data or to interact with other services they can use standard web technologies to communicate with HTTP services.
-
-<!-- 4. Solve the scenario -------------------------------------------------------------
-
-    Goal:
-        At a high level, describe how the (product) solves one of the customer tasks in your (scenario).
-        Avoid teaching how to actually do the work (you're not teaching how-to-use in this module).
-
-    Heading:
-        "## How to (solve scenario)"
-
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that summarizes how the (product) solved the (scenario).
-        3. Additional text as needed (typically 1-2 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    Example:
-        Heading: "How to implement a Twitter monitor"
-        Lead sentence: "To implement a Twitter monitor, you map each task to a Logic Apps component and connect them with conditional logic."
--->
 
 ## How to build an application with Blazor
 
