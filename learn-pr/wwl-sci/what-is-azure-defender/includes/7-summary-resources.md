@@ -1,4 +1,4 @@
-You learned how Microsoft Defender for Cloud, integrated with Microsoft Defender for Cloud, provides Azure and hybrid cloud workload protection and security.
+You learned how Microsoft Defender for Cloud provides Azure and hybrid cloud workload protection and security.
 
 You should now be able to:
 
