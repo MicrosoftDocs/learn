@@ -10,13 +10,13 @@ In this exercise, you'll use the Azure portal to create an Azure Function App. T
 
 1. From the resource menu or the Home page, select **Create a resource**.
 
-    :::image type="content" source="../media/5-create-a-resource.png" alt-text="Screenshot of Azure portal menu and Create a resource option.:::
+    :::image type="content" source="../media/5-create-a-resource.png" alt-text="Screenshot of Azure portal menu and Create a resource option.":::
 
     The **Create a resource** pane appears.
 
 1. In the **Create a resource** menu, select **Compute**, and then, in the results list, select **Function App**.
 
-    :::image type="content" source="../media/5-compute-function-app.png" alt-text="Screenshot of Compute category and Function App service option.:::
+    :::image type="content" source="../media/5-compute-function-app.png" alt-text="Screenshot of Compute category and Function App service option.":::
 
     <!-- [!INCLUDE [](../../includes/functions-classic-workaround.md)] -->
 
@@ -26,7 +26,7 @@ In this exercise, you'll use the Azure portal to create an Azure Function App. T
 
     > [!NOTE]
     > Your function app must have a name unique to Azure. We suggest using something like **\<*your initials*\>watchfunctions**. Use this name wherever you see *\<your-function-app-name\>* in the remainder of the exercise.
-
+"
     | Setting | Value |
     | --- | --- |
     | **Project Details** |
