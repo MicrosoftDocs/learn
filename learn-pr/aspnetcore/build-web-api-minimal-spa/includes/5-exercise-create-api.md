@@ -134,9 +134,9 @@ At this point, the back-end team has finished building the server. To use the se
    dotnet ef database update
    ```
 
-1. Open up _Program.cs_ and add the following code to enable CORS (the code you need to add is highlighted):
+1. Open _Program.cs_ and add the following code to enable CORS (the code you need to add is highlighted):
 
-   :::code language="csharp" source="../code/ef-core-use-server-api.cs" highlight="6, 17-24, 33":::
+   :::code language="csharp" source="../code/minimal-spa-use-server-api.cs" highlight="6, 17-24, 33":::
 
    The changes will configure CORS, so that you will be able to read and write toward the API, despite the front end and back end running on different ports.
 
