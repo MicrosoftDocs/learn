@@ -1,6 +1,5 @@
 In this module, you learned how to:
 
-* Declare the network endpoints for the public Eclipse Mosquitto MQTT broker and your Azure IoT Central application.
 * Deploy the high-level Altair emulator from Visual Studio Code.
 * Deploy the real-time application image packages by using the Azure Sphere CLI.
 
