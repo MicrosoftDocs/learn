@@ -14,7 +14,3 @@ The Altair emulator can be programmed in two ways:
 ## What will you learn?
 
 In this module, you'll learn about the CP/M operating system and Altair BASIC so that you can program the Altair emulator.
-
-## What is the main goal?
-
-This module will focus on programming the Altair emulator.
