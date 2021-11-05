@@ -23,7 +23,7 @@ The ObjectManipulator script makes an object movable, scalable, and rotatable us
 
     :::image type="content" source="../media/rover-parts-selected.png" alt-text="Screenshot of Unity with all rover parts selected and Audio Source component added and configured." lightbox="../media/rover-parts-selected.png":::
 
-5. In the Hierarchy pane, expand the RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** object to reveal all of the placement hint objects, then select the first rover part, RoverParts > **amera_Part**, and configure the **Part Assembly Controller (Script)** component as follows:
+5. In the Hierarchy pane, expand the RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** object to reveal all of the placement hint objects, then select the first rover part, RoverParts > **Camera_Part**, and configure the **Part Assembly Controller (Script)** component as follows:
     * Assign the **Camera_PlacementHint** object to the **Location To Place** field
 
     :::image type="content" source="../media/camera-part.png" alt-text="Screenshot of Unity with Camera_Part PartAssemblyController component configured." lightbox="../media/camera-part.png":::
@@ -57,11 +57,11 @@ The ObjectManipulator script makes an object movable, scalable, and rotatable us
 2. In the Hierarchy pane, expand the Menu > **ButtonCollection** object to reveal the four buttons, rename the third button to **BoundsControl_Enable**, and then in the Inspector pane, configure the **Button Config Helper (Script)** component as follows:
     * Change the **Main Label Text** to **Enable**
     * Assign the **RoverExplorer** object to the **None (Object)** field
-    * From the **No Function** dropdown, select **BoundsControl** > **bool Enabled** to update this property value when the event is triggered
+    * From the **No Function** dropdown list, select **BoundsControl** > **bool Enabled** to update this property value when the event is triggered
     * Verify that the argument checkbox is **checked**
-    * Click the small **+** icon to add another event
+    * Select the small **+** icon to add another event
     * Assign the **RoverExplorer** object to the **None (Object)** field
-    * From the **No Function** dropdown, select **ObjectManipulator** > **bool Enabled** to update this property value when the event is triggered
+    * From the **No Function** dropdown list, select **ObjectManipulator** > **bool Enabled** to update this property value when the event is triggered
     * Verify that the argument checkbox is **checked**
     * Leave the **Icon** as the 'cube with bounds control' icon
 
@@ -70,16 +70,16 @@ The ObjectManipulator script makes an object movable, scalable, and rotatable us
 3. Rename the forth and last button to **BoundsControl_Disable**, and then in the Inspector pane, configure the **Button Config Helper (Script)** component as follows:
     * Change the **Main Label Text** to **Disable**
     * Assign the **RoverExplorer** object to the **None (Object)** field
-    * From the **No Function** dropdown, select **BoundsControl** > **bool Enabled** to update this property value when the event is triggered
+    * From the **No Function** dropdown list, select **BoundsControl** > **bool Enabled** to update this property value when the event is triggered
     * Verify that the argument checkbox is **unchecked**
-    * Click the small **+** icon to add another event
+    * Select the small **+** icon to add another event
     * Assign the **RoverExplorer** object to the **None (Object)** field
-    * From the **No Function** dropdown, select **ObjectManipulator** > **bool Enabled** to update this property value when the event is triggered
+    * From the **No Function** dropdown list, select **ObjectManipulator** > **bool Enabled** to update this property value when the event is triggered
     * Verify that the argument checkbox is **unchecked**
     * Change the **Icon** to the 'cube with bounds control" icon
 
     :::image type="content" source="../media/bounds-control-disable.png" alt-text="Screenshot of Unity with BoundsControl_Disable button object selected and Button Config Helper component configured." lightbox="../media/bounds-control-disable.png":::
 
-4. If you now enter Game mode and select **Enable** to enable Bounds Control, you can use near or far interaction to move, rotate, and scale  Bounds Control, and select ** Disable** to disable the Bounds Control again:
+4. If you now enter Game mode and select **Enable** to enable Bounds Control, you can use near or far interaction to move, rotate, and scale Bounds Control, and select **Disable** to disable the Bounds Control again:
 
     :::image type="content" source="../media/bounds-control-manipulated.png" alt-text="Screenshot of Unity Play mode split view with Bounds Control being manipulated." lightbox="../media/bounds-control-manipulated.png":::

@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: 'Exercise - Data exploration part 3 - Discover data that represents more than one population'
 durationInMinutes: 8
 content: |
