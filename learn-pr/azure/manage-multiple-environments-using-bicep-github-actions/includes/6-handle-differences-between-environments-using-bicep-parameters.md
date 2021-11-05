@@ -38,21 +38,32 @@ A parameter file keeps the parameter values together in a single JSON file. The 
 ## Workflow variables
 
 GitHub Actions enables you to store *workflow variables*, which are useful for values that might be different between environments. They're also useful for values that you want to define only once and then reuse throughout your workflow.
+
 ### Variables defined in a YAML file
 
-You can define variables and set their values within a YAML file. This is useful when you need to reuse the same value multiple times. But, like Bicep parameter files, YAML files aren't suitable for secrets.
+You can define variables and set their values within a YAML file. This is useful when you need to reuse the same value multiple times. You can define a variable for a whole workflow, or for a job or a single step:
+
+:::code language="yaml" source="code/6-define-variables.yml" highlight="1-2, 7-8. 11-12" :::
 
 ### Secrets defined in the web interface
 
-You can define secrets by using the GitHub web interface. You can change the variable values at any time, and the workflow will read the updated values the next time it runs. GitHub Actions tries to hide the secrets' values in the workflow logs. This means you can store values that your Bicep file then accepts as parameters with the `@secure()` decorator.
+Like Bicep parameter files, YAML files aren't suitable for secrets. Instead, you can define secrets by using the GitHub web interface. You can change the variable values at any time, and the workflow will read the updated values the next time it runs. GitHub Actions tries to hide the secrets' values in the workflow logs. This means you can store values that your Bicep file then accepts as parameters with the `@secure()` decorator.
 
 [!include[Best-effort protection for secrets](../../includes/github-actions-secret-best-effort.md)]
 
 ### Use variables in your workflow
 
-Regardless of how you define a variable, you access its value in your workflow by using the `$(VariableName)` syntax <!-- TODO -->. For example, when you run a Bicep deployment, you can use a variable to specify the value of a parameter:
+The way that you access a variable's value in your workflow depends on the type of variable.
 
-:::code language="yaml" source="code/6-parameter-variables.yml" highlight="20, 22" :::
+| Type | Syntax |
+|-|-|
+| Variables defined in the same file | `${{ env.VARIABLE_NAME }}` |
+| Inputs to a called workflow | `${{ inputs.INPUT_NAME }}` |
+| Secrets | `${{ inputs.SECRET_NAME }}` |
+
+For example, when you run a Bicep deployment, you might use a secret to specify the Azure credentials to use, a called workflow input to specify the resource group name, and a variable to specify the value of a parameter:
+
+:::code language="yaml" source="code/6-use-variables.yml" range="11-26" highlight="10, 14, 16" :::
 
 ## What's the best approach?
 

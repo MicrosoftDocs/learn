@@ -72,7 +72,7 @@ Additionally, you could run an automated check to review the logs and error rate
 
 ### Deployment history
 
-GitHub Actions tracks the history of the deployments to an environment. This history gives you an easy way to track what happens in the environment over time. It even allows you to trace a deployment to a specific feature request in your GitHub issues <!-- TODO check this -->, or to a commit in your repository. This feature can be useful if you have a problem with a deployment and need to identify the change that led to the problem.
+GitHub Actions tracks the history of the deployments to an environment. This history gives you an easy way to track what happens in the environment over time. It even allows you to trace a deployment to a commit in your repository. This feature can be useful if you have a problem with a deployment and need to identify the change that led to the problem.
 
 ### Create environments
 

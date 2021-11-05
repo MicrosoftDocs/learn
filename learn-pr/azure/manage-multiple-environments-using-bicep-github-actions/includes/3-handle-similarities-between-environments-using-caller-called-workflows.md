@@ -80,7 +80,7 @@ You can use workflow *conditions* to specify whether a step or a job should run 
 
 For example, imagine you define a workflow that runs script steps. You plan to reuse the template for each of your environments. When you deploy your production environment, you want to run an additional step. Here's how you can achieve that by using the `if` condition on the step:
 
-:::code language="yaml" source="code/3-script-conditions.yml" range="11-20" highlight="20" :::
+:::code language="yaml" source="code/3-script-conditions.yml" range="11-20" highlight="10" :::
 
 The condition here translates to: *if the environmentType parameter's value is equal to 'Production', then run the step*.
 
