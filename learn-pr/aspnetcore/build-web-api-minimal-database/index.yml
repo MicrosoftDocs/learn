@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.aspnetcore.build-web-api-minimal-database
+metadata:
+  title: Use a database with minimal API
+  description: Learn how to add a database to a minimal API application.
+  ms.date: 10/26/2021
+  author: jongalloway
+  ms.author: jogallow
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use a database with minimal API
+summary: Learn how to add a database to a minimal API application.
+abstract: |
+  In this module you will:
+  - Learn how to add EF Core to a minimal API application.
+  - Persist data to an in-memory datastore.
+  - Persist data to a SQLite database.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs
+prerequisites: |
+  - Recommended familiarity with .NET 6.
+  - Having a basic understanding what an API is.
+units:
+  - learn.aspnetcore.build-web-api-minimal-database.introduction
+  - learn.aspnetcore.build-web-api-minimal-database.what-is-entity-framework-core
+  - learn.aspnetcore.build-web-api-minimal-database.exercise-add-entity-framework-core
+  - learn.aspnetcore.build-web-api-minimal-database.add-sqlite-database-provider
+  - learn.aspnetcore.build-web-api-minimal-database.exercise-use-sqlite-database
+  - learn.aspnetcore.build-web-api-minimal-database.knowledge-check
+  - learn.aspnetcore.build-web-api-minimal-database.summary
+badge:
+  uid: learn.aspnetcore.build-web-api-minimal-database.badge
+  
