@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Exercise - Determine the accuracy of a neural network in classifying space rocks
 durationInMinutes: 4
 content: |
