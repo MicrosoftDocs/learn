@@ -23,7 +23,6 @@ products:
 modules:
 - learn.wwl.design-governance
 - learn.wwl.design-authentication-authorization-solutions
-- learn.wwl.design-identities-access-for-applications
 - learn.wwl.design-solution-to-log-monitor-azure-resources
 trophy:
   uid: learn.wwl.design-identity-governance-monitor-solutions.trophy

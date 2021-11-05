@@ -1,0 +1,29 @@
+stages:
+- stage: Stage2
+  jobs:
+  - job: Job2
+    steps:
+      # Set the variable's value.
+      - script: |
+          echo "##vso[task.setvariable variable=myVariableName;isOutput=true]VariableValue"
+        name: Step1
+
+  - job: Job3
+    dependsOn: Job2
+    variables: # Map the variable to this job.
+      myVariableName: $[ dependencies.Job2.outputs['Step1.myVariableName'] ]
+    steps:
+      # Read the variable's value.
+      - script: |
+          echo $(myVariableName)
+
+- stage: Stage3
+  dependsOn: Stage2
+  jobs:
+  - job: Job4
+    variables: # Map the variable to this stage.
+      myVariableName: $[ stageDependencies.Stage2.Job2.outputs['Step1.myVariableName'] ]
+    steps:
+      # Read the variable's value.
+    - script: |
+        echo $(myVariableName)

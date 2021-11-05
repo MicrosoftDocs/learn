@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.test-bicep-code-using-github-actions.exercise-add-preview-job-workflow
+title: Exercise - Add a preview job to your workflow
+metadata:
+  unitType: exercise
+  title: Exercise - Add a preview job to your workflow
+  description: Add a what-if preview job to your Bicep deployment workflow.
+  ms.date: 10/19/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-exercise-add-preview-job-workflow.md)]

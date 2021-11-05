@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction
   title: Introduction to ASP.NET Core SignalR
   description: In this introduction module to ASP.NET Core SignalR, you'll learn what SignalR is, how it works, and when to use it.
-  ms.date: 09/28/2021
+  ms.date: 10/27/2021
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial

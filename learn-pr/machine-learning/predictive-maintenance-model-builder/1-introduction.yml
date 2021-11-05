@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.predictive-maintenance-model-builder.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: "Learn about using ML.NET Model Builder to train a machine learning model for predictive maintenance."
+  ms.date: 10/25/2021
+  author: luisquintanilla
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+  ms.custom: team=nextgen
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
