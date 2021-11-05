@@ -1,23 +1,27 @@
 Three hardware configurations are supported for the Altair emulator on Azure Sphere.
 
-## Standalone Azure Sphere
+## Standard Altair 8800 experience on Azure Sphere
 
-You can use a standalone Azure Sphere instance with either an Avnet device or a Seeed Studio device.
+For the standard Altair 8800 experience on Azure Sphere, the emulator supports the following Azure Sphere boards:
 
-| Seeed Studio Azure Sphere Developer Kit     | Avnet Azure Sphere Starter Kit Rev 1 or Rev 2    |
-|----------------|---------------|
-| :::image type="content" source="../media/seeed-studio-azure-sphere-rdb.png" alt-text="Photo of Seeed Studio Azure Sphere Developer Kit." border = "false"::: | :::image type="content" source="../media/avnet-azure-sphere.png" alt-text="Photo of Avnet Azure Sphere Starter Kit." border = "false"::: |
+* [Avnet Azure Sphere MT3620 Starter Kit Rev 1](https://www.avnet.com/shop/us/products/avnet-engineering-services/aes-ms-mt3620-sk-g-3074457345636825680?azure-portal=true) or [Avnet Azure Sphere MT3620 Starter Kit Rev 2](https://www.avnet.com/wps/portal/us/products/new-product-introductions/npi/azure-sphere-mt3620-starter-kit-2-0?azure-portal=true)
+* [Seeed Studio Azure Sphere MT3620 Development Kit](https://www.seeedstudio.com/Azure-Sphere-MT3620-Development-Kit-US-Version-p-3052.html?azure-portal=true)
 
-## Avnet Azure Sphere Starter Kit plus MikroE 8800 Retro Click and microSD Click
+## Enhanced Altair 8800 experience on Azure Sphere
 
-Another option is an Avnet Azure Sphere Starter Kit with the [MikroE 8800 Retro Click](https://www.mikroe.com/8800-retro-click?azure-portal=true) panel and the [MikroE microSD Click](https://www.mikroe.com/microsd-click?azure-portal=true) card.
+For an enhanced Altair 8800 experience on Azure Sphere, the emulator supports the following configuration. We recommend this configuration.
 
-![Photo of Avnet Azure Sphere Starter Kit plus Mikro E Retro Click panel and Mikro E micro S D Click card.](../media/avnet-azure-sphere-revision-2-microsd-click.png)
+* Avnet Azure Sphere MT3620 Starter Kit Rev 1 or Avnet Azure Sphere MT3620 Starter Kit Rev 2
+* [MikroE 8800 Retro Click](https://www.mikroe.com/8800-retro-click?azure-portal=true)
+* [MikroE microSD Click](https://www.mikroe.com/microsd-click?azure-portal=true)
 
-### Altair front panel
+## Ultimate Altair 8800 experience on Altair Sphere
 
-You can use the Seeed Studio or Avnet device with an Altair front panel. For full details about building and wiring the Altair front panel, see the [Altair 8800 Hardware repo](https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.Hardware?azure-portal=true).
+For the ultimate Altair 8800 experience on Azure Sphere, build your own Altair front panel. You can get full details for building and wiring the Altair front panel on the [Altair 8800 Hardware repository](https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.Hardware?azure-portal=true).
 
-:::image type="content" source="../media/avnet-front-panel.png" alt-text="Photo of an Avnet Azure Sphere device with the Altair front panel." border = "false":::
+The front panel supports the following Azure Sphere boards:
 
-:::image type="content" source="../media/altair-front-panel.png" alt-text="Photo of Seeed Studio Azure Sphere hardware with the Altair front panel." border = "false":::
+* Avnet Azure Sphere MT3620 Starter Kit Rev 1 or Avnet Azure Sphere MT3620 Starter Kit Rev 2
+* Seeed Studio Azure Sphere MT3620 Development Kit
+
+:::image type="content" source="../media/altair-front-panel.jpg" alt-text="Photo that shows the Altair front panel." border = "false":::
