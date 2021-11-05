@@ -22,7 +22,7 @@ By default, the Altair emulator runs CP/M. To change the boot order and run Alta
 
 To program the Altair, you first need to connect the web terminal to the Altair 8800 emulator running on Azure Sphere. After you make the connection, you can load or write and then run Altair BASIC apps.
 
-1. Switch back the web terminal in your web browser.
+1. Switch back to the web terminal in your web browser.
 1. If necessary, authenticate the web terminal.
 1. The Altair emulator might have started running before you connected to the web terminal. If so, press the **RESET** button on Azure Sphere to restart the Altair emulator. When Azure Sphere restarts, Altair BASIC prompts you for the following information:
 
