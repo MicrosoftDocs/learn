@@ -2,7 +2,7 @@ In this exercise, you'll learn how to start programming the Altair emulator.
 
 ## Connect to the web terminal
 
-1. Switch back the web terminal in your web browser.
+1. Switch back to the web terminal in your web browser.
 1. If required, authenticate the web terminal.
 1. The Altair emulator might have started running before you connected to the web terminal. If so, press the **RESET** button on Azure Sphere to restart the Altair emulator. When Azure Sphere restarts, the CP/M `>` prompt will appear in the web terminal.
 
