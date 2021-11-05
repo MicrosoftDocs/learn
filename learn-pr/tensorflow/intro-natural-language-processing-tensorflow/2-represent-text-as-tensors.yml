@@ -9,6 +9,7 @@ metadata:
   ms.date: 07/07/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 10
 sandbox: true
 notebook: notebooks/2-represent-text-as-tensors.ipynb

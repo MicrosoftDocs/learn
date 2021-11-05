@@ -3,7 +3,7 @@ uid: learn.wwl.design-application-architecture
 metadata:
   title: Design an application architecture
   description: "Design an application architecture"
-  ms.date: 10/13/2021
+  ms.date: 11/05/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -40,10 +40,10 @@ units:
 - learn.wwl.design-application-architecture.design-messaging-solution
 - learn.wwl.design-application-architecture.design-event-hub-messaging-solution
 - learn.wwl.design-application-architecture.design-event-driven-solution
-- learn.wwl.design-application-architecture.design-automated-app-deployment-solution
-- learn.wwl.design-application-architecture.design-api-integration
-- learn.wwl.design-application-architecture.configuration-management-solution
 - learn.wwl.design-application-architecture.design-caching-solution
+- learn.wwl.design-application-architecture.design-api-integration
+- learn.wwl.design-application-architecture.design-automated-app-deployment-solution
+- learn.wwl.design-application-architecture.configuration-management-solution
 - learn.wwl.design-application-architecture.knowledge-check
 - learn.wwl.design-application-architecture.summary-resources
 badge:
