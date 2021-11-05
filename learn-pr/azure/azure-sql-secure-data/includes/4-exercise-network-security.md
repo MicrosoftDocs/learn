@@ -20,7 +20,7 @@ In this exercise, you'll see how to view and edit firewall rules. Setting up fir
 
 1. On the command bar, **Save** to save your changes. In the SQL database menu, select **Overview** to return to Essentials view of your database.  
 
-1. To confirm that you still have access from your local machine, go to SQL Server Management Studio (SSMS) and in Object Explorer, right-click your database name and from the context menu, select **Refresj** to refresh your connection to the Azure SQL Database logical server. If no error occurs, you have successfully configured secure access to your Azure SQL Database logical server for your IP address.  
+1. To confirm that you still have access from your local machine, go to SQL Server Management Studio (SSMS) and in Object Explorer, right-click your database name and from the context menu, select **Refresh** to refresh your connection to the Azure SQL Database logical server. If no error occurs, you have successfully configured secure access to your Azure SQL Database logical server for your IP address.  
 
     :::image type="content" source="../media/4-db-refresh.png" alt-text="Screenshot of how to refresh the database connection.":::  
 
