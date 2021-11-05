@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.3-configure-deepstream-graph-publish-data-azure-iot-hub
+title: Exercise - Configure DeepStream Graph Composer to publish data to Azure IoT Hub
+metadata:
+  title: Exercise - Configure DeepStream Graph Composer to publish data to Azure IoT Hub
+  description: Exercise - Configure DeepStream Graph Composer to publish data to Azure IoT Hub.
+  author: toolboc
+  ms.author: pdecarlo
+  ms.date: 10/01/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-configure-deepstream-graph-publish-data-azure-iot-hub.md)]
