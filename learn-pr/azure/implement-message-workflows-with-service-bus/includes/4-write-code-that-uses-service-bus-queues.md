@@ -8,11 +8,9 @@ In the mobile app and website, Contoso needs to write code that adds a message t
 
 Here, you will learn how to write that code.
 
-## Microsoft.Azure.ServiceBus NuGet package
+## Azure.Messaging.ServiceBus NuGet package
 
-To make it easy to write code that sends and receives messages through Service Bus, Microsoft provides a library of .NET classes, which you can use in any .NET Framework language to interact with a Service Bus queue, topic, or relay. You can include this library in your application by adding the **Microsoft.Azure.ServiceBus** NuGet package.
-
-For queues, the most important class in this library is the `QueueClient` class. You start by instantiating this class in both sending and receiving components.
+To make it easy to write code that sends and receives messages through Service Bus, Microsoft provides a library of .NET classes, which you can use in any .NET language to interact with a Service Bus queue, topic, or relay. You can include this library in your application by adding the **Azure.Messaging.ServiceBus** NuGet package.
 
 ## Connection strings and keys
 
@@ -21,13 +19,13 @@ Source components and destination components both need two pieces of information
 - The location of the Service Bus namespace, also known as an **endpoint**. The location is specified as a fully qualified domain name within the **servicebus.windows.net** domain. For example: **pizzaService.servicebus.windows.net**.
 - An access key. Service Bus restricts access to queues, topics, and relays by requiring a valid access key.
 
-Both of these pieces of information are provided to the `QueueClient` object in the form of a connection string. You can obtain the correct connection string for your namespace from the Azure portal.
+Both of these pieces of information are provided to the `ServiceBusClient` object in the form of a connection string. You can obtain the correct connection string for your namespace from the Azure portal.
 
 ## Call methods asynchronously
 
 The queue in Azure may be located thousands of miles away from sending and receiving components. Even if it is physically close, slow connections and bandwidth contention may cause delays when a component calls a method on the queue. For this reason, the Service Bus client library makes `async` methods available for interacting with queues. We'll use these methods to avoid blocking a thread while waiting for calls to complete.
 
-When sending a message to a queue, for example, use the `QueueClient.SendAsync()` method with the `await` keyword.
+When sending a message to a queue, for example, use the `SendMessageAsync()` method with the `await` keyword.
 
 ## Write code that sends to queues
 
@@ -36,21 +34,22 @@ In any sending or receiving component, add the following `using` statements to a
 ```C#
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.Azure.ServiceBus;
+using Azure.Messaging.ServiceBus;
 ```
 
 Next, create a new `QueueClient` object, and pass it the connection string and the name of the queue.
 
 ```C#
-queueClient = new QueueClient(TextAppConnectionString, "PrivateMessageQueue");
+await using var client = new ServiceBusClient(connectionString);
+ServiceBusSender sender = client.CreateSender(queueName);
 ```
 
-You can send a message to the queue by calling the `QueueClient.SendAsync()` method, and passing the message in the form of a UTF-8 encoded string.
+You can send a message to the queue by calling the `ServiceBusSender.SendMessageAsync()` method, and passing a `ServiceBusMessage`.
 
 ```C#
 string message = "Sure would like a large pepperoni!";
-var encodedMessage = new Message(Encoding.UTF8.GetBytes(message));
-await queueClient.SendAsync(encodedMessage);
+var message = new ServiceBusMessage(message);
+await sender.SendMessageAsync(message);
 ```
 
 ## Receive messages from the queue
@@ -58,11 +57,15 @@ await queueClient.SendAsync(encodedMessage);
 To receive messages, you must first register a message handler - this is the method in your code that will be invoked when a message is available on the queue.
 
 ```C#
-queueClient.RegisterMessageHandler(MessageHandler, messageHandlerOptions);
+await using ServiceBusProcessor processor = client.CreateProcessor(queueName, options);
+// configure the message and error handler to use
+processor.ProcessMessageAsync += MessageHandler;
+processor.ProcessErrorAsync += ErrorHandler;
 ```
 
-Do your processing work. Then, within the message handler, call the `QueueClient.CompleteAsync()` method to remove the message from the queue.
+Do your processing work. Then, within the message handler, call the `ProcessMessageEventArgs.CompleteMessageAsync()` method to remove the message from the queue.
 
 ```C#
-await queueClient.CompleteAsync(message.SystemProperties.LockToken);
+await args.CompleteMessageAsync(args.Message);
 ```
+

@@ -62,17 +62,16 @@ Azure AD applications must be assigned roles so that they can work with other se
 
 RBAC permissions are inherited from the level of the scope set. For example, if you assign the reader role to a resource group, read permissions are assigned to all resources within that group.
 
-![Screenshot showing how to add a role to an application.](../media/2-adding-a-role.png)
-
 Use the Azure portal to assign the roles that your app needs to access the key vault:
 
 1. In the portal, select your key vault.
 1. On the left, select **Access Control (IAM)**.
-1. In the **Add a role** assignment pane, select **Add**.
+1. Select **Add role assignment**.
 1. Choose the role that you need.
-1. Accept the default **assign access to** option: Azure AD user, group, or service principal.
-1. Search for your application. It doesn't appear in the dropdown list.
-1. Select the application, and then select **Save**.
+1. On the **Members** tab, accept the default **assign access to** option: Azure AD user, group, or service principal.
+1. Select **+ Select members**.
+1. Search for and select your application.
+1. Select **Review + assign**.
 
 ## Manage keys and permissions
 
