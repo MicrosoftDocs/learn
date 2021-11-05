@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content  
   title: Secure your parameters
   description: Learn about providing secure parameters by using decorators and Azure Key Vault references.
-  ms.date: 05/25/2021
+  ms.date: 10/29/2021
   author: wviriya
   ms.author: wviriya
   ms.topic: interactive-tutorial

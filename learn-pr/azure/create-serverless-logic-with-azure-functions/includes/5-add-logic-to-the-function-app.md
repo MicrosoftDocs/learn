@@ -278,9 +278,9 @@ The logic we added is straightforward. We iterate over the array of readings and
 
 Notice the `Log` statements when you expand **Logs** at the bottom of the pane. When the function runs, these statements will add messages in the Logs window.
 
-    ::: zone-end
+::: zone-end
 
-    ::: zone pivot="powershell"
+::: zone pivot="powershell"
 
 Open the **run.ps1** file, and replace the contents with the following code. Make sure to save the file after updating it.
 

@@ -38,7 +38,7 @@ In the code snippets using application builders, a number of `.With` methods can
         .Build();
     ```
 
-* `.WithRedirectUri` modifier: The `.WithRedirectUri` modifier overrides the default redirect URI. In the case of public client applications, this will be useful for scenarios involving the broker.
+* `.WithRedirectUri` modifier: The `.WithRedirectUri` modifier overrides the default redirect URI. In the case of public client applications, this will be useful for scenarios which require a broker.
 
     ```csharp
     var clientApp = PublicClientApplicationBuilder.Create(client_id)
@@ -56,7 +56,7 @@ Modifier | Description
 `.WithAuthority()` 7 overrides | Sets the application default authority to an Azure Active Directory authority, with the possibility of choosing the Azure Cloud, the audience, the tenant (tenant ID or domain name), or providing directly the authority URI.
 `.WithTenantId(string tenantId)` | Overrides the tenant ID, or the tenant description. 
 `.WithClientId(string)` | Overrides the client ID.
-`.WithRedirectUri(string redirectUri)` | Overrides the default redirect URI. In the case of public client applications, this will be useful for scenarios involving the broker.
+`.WithRedirectUri(string redirectUri)` | Overrides the default redirect URI. In the case of public client applications, this will be useful for scenarios requiring a broker.
 `.WithComponent(string)` | Sets the name of the library using MSAL.NET (for telemetry reasons).
 `.WithDebugLoggingCallback()` | If called, the application will call `Debug.Write` simply enabling debugging traces. 
 `.WithLogging()` | If called, the application will call a callback with debugging traces. 
@@ -67,7 +67,7 @@ Modifier | Description
 
 The modifiers you can set on a confidential client application builder are:
 
-Modifier  | Description
-- | -
-`.WithCertificate(X509Certificate2 certificate)` | Sets the certificate identifying the application with Azure Active Directory.                 
-`.WithClientSecret(string clientSecret)`         | Sets the client secret (app password) identifying the application with Azure Active Directory.
+| Modifier | Description |
+|--|--|
+| `.WithCertificate(X509Certificate2 certificate)` | Sets the certificate identifying the application with Azure Active Directory. |
+| `.WithClientSecret(string clientSecret)` | Sets the client secret (app password) identifying the application with Azure Active Directory. |
