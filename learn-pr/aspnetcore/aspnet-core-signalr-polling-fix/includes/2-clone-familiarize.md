@@ -52,7 +52,7 @@ dotnet run --project .\BlazingPizza.Server\BlazingPizza.Server.csproj
 
 ---
 
-This application is for learning purposes, and its authentication allows users to register any email address. When actively developing the app, you can complete the registration process by clicking a link to confirm your account - without actually validating the email address. For more information, see [Blazor Workshop: register a user and log in](https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr/blob/4c8cb74dedb7a42eda534a03493ab9fd6b198131/docs/06-authentication-and-authorization.md#register-a-user-and-log-in).
+This application is for learning purposes, and its authentication allows users to register any email address. When actively developing the app, you can complete the registration process by clicking a link to confirm your account - without actually validating the email address. For more information, see [Blazor Workshop: register a user and log in](https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr/blob/07b51750ac733cee3976a54b3316050849d38a0a/blazor-workshop/docs/06-authentication-and-authorization.md#register-a-user-and-log-in).
 
 ### Place a pizza order
 
@@ -92,7 +92,7 @@ Finally, the order status page reflects the **Delivered** order status:
 
 ### Stop the application
 
-The console should output various logs, letting you know that the app has successfully built and that it's serving content at <https://localhost:5001/>. To stop the application, close the browser, and from the command line session press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the application.
+The console should output various logs, letting you know that the app has successfully built and that it's serving content at `https://localhost:5001/`. To stop the application, close the browser, and from the command line session press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the application.
 
 ## Familiarize yourself with the code
 
