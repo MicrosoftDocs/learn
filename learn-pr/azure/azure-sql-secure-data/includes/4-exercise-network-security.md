@@ -8,15 +8,15 @@ In this exercise, you'll see how to view and edit firewall rules. Setting up fir
 
 ### Manage firewall rules in the Azure portal
 
-1. In the Azure portal, select SQL databases and then select your Azure SQL Database logical server (AdventureWorks).
+1. In the Azure portal resource menu, select **SQL databases** and then select your Azure SQL Database logical server (AdventureWorks).
 
-1. In the SQL database menu, under **Security**, select **Firewalls and virtual networks**.  
+1. In the command bar of your SQL database, select **Set server firewall**.  
 
     :::image type="content" source="../media/4-firewall-virtual-network.png" alt-text="Screenshot of how to go to firewalls and virtual networks.":::  
 
 1. For **Allow Azure services and resources to access this server**, select **No**. 
 
-1. You should have added your Client IP address during deployment, but if one of the rules doesn't match your Client IP, select **Add Client IP**.  
+1. You should have added your Client IP address during deployment, but if one of the rules doesn't match your Client IP, under **Rule name** add the   
 
 1. Select **Save** from the command bar. In the SQL database menu, select **Overview** to return to Essentials view of your database.  
 
