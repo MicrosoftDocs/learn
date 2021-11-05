@@ -46,6 +46,19 @@ In the image, we can see that Azure Synapse Analytics is composed of the followi
 
 When management needs real-time analytics, you can use features like Azure Synapse Link to analyze in real-time and offer insights.
 
+**What kind of analytics can you do with Azure Synapse Analytics?**
+
+Following table shows the range of analytical types that Azure Synapse Analytics supports:
+
+| **Analytics type**| **Description** |
+| - | - |
+| Descriptive analytics - "What is happening?"| Azure Synapse Analytics leverages the dedicated SQL pool capability that enables you to create a persisted data warehouse to perform this type of analysis. You can also make use of the serverless SQL pool to prepare data from files stored in a data lake to create a data warehouse interactively. |
+| Diagnostic analytics - "Why is it happening?"| You can use the serverless SQL pool capability within Azure Synapse Analytics that enables you to interactively explore data within a data lake. Serverless SQL pools can quickly enable a user to search for additional data that may help them to understand why questions. |
+| Predictive analytics - "What is likely to happen?"| Azure Synapse Analytics uses its integrated Apache Spark engine and Azure Synapse Spark pools for predictive analytics with other services such as Azure Machine Learning Services, or Azure Databricks. |
+| Prescriptive analytics - "What needs to be done?"| This type of analytics looks at executing actions based on real-time or near real-time analysis of data, using predictive analytics. Azure Synapse Analytics provides this capability through both Apache Spark, Azure Synapse Link, and by integrating streaming technologies such as Azure Stream Analytics. |
+
+
+
 **When would you choose** **Azure Data Factory** **over** **Azure Synapse Analytics?**
 
 Let us look at some criteria that will help you decide when to pick Azure Data Factory solution over Azure Synapse Analytics. In the following table, the two solutions are compared against a set of criteria. 
