@@ -108,7 +108,7 @@ It's always great if we can make the UI better looking. There's more than one wa
 
    This entry will remove loads of warnings you would otherwise get.
 
-1. Make the following changes to _Main.js_:
+1. Make the following changes to _Main.js_ (the changes are highlighted):
 
    :::code language="javascript" source="../code/minimal-spa-add-some-css.js" highlight="2, 4-31, 55, 57, 60, 63, 65":::
 
