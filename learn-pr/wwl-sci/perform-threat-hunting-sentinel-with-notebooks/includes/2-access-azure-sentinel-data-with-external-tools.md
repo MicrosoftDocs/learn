@@ -1,4 +1,4 @@
-Before hunting with notebooks, it is essential to understand the foundation of Azure Sentinel is the Log Analytics data store, which combines high-performance querying, dynamic schema, and scales to massive data volumes.  The Azure portal and all Azure Sentinel tools use a standard API to access this data store. The same API is also available for external tools such as Python and PowerShell. There are two libraries that you can use to simplify API access:
+Before hunting with notebooks, it is essential to understand the foundation of Microsoft Sentinel is the Log Analytics data store, which combines high-performance querying, dynamic schema, and scales to massive data volumes.  The Azure portal and all Microsoft Sentinel tools use a standard API to access this data store. The same API is also available for external tools such as Python and PowerShell. There are two libraries that you can use to simplify API access:
 
 - Kqlmagic
 
@@ -20,5 +20,5 @@ The package addresses three central needs for security investigators and hunters
 
 - Visualizing data
 
-msticpy can query using KQL; the library also provides predefined queries for Azure Sentinel, Microsoft 365 Defender for Endpoint, and the Microsoft  Security Graph.  An example of a function is the list_logons_by_account, which retrieves the logon events for an account.  For details about msticpy visit: [https://msticpy.readthedocs.io/](https://msticpy.readthedocs.io/?azure-portal=true)
+msticpy can query using KQL; the library also provides predefined queries for Microsoft Sentinel, Microsoft 365 Defender for Endpoint, and the Microsoft  Security Graph.  An example of a function is the list_logons_by_account, which retrieves the logon events for an account.  For details about msticpy visit: [https://msticpy.readthedocs.io/](https://msticpy.readthedocs.io/?azure-portal=true)
 

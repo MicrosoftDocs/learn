@@ -10,13 +10,13 @@ A security engineer uses host security tools like privilege access workstation a
 
 ## Skills measured
 
-Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
+Securing the Azure platform your cloud solutions run on is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
 
 Implement platform protection (15-20%)
 - Configure advanced security for compute
-   - configure endpoint protection
-   - configure and monitor system updates for VMs
-   - implement Azure Disk Encryption
+   - Configure endpoint protection
+   - Configure and monitor system updates for VMs
+   - Implement Azure Disk Encryption
 
 
 ## Learning objectives

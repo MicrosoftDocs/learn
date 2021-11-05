@@ -9,7 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-advocates
-  ms.custom: nextgen
+  ms.custom: team=nextgen
 title: Create a chat bot to help students learn with Azure Bot Services
 summary: Learn how to build a simple bot called **GeoFriend**, to help students learn the basics of geography. This module covers the principles of responsible conversational AI and how to make bots that a user can trust and enjoy speaking to. Our bot will help school children to learn more about geography and answer some questions, and learn some study techniques!
 abstract: |

@@ -1,0 +1,13 @@
+stages:
+- stage: Stage1
+  jobs:
+  - job: Job1
+    steps:
+      # Set the variable's value.
+      - script: |
+          echo "##vso[task.setvariable variable=myVariableName;isOutput=true]VariableValue"
+        name: Step1
+
+      # Read the variable's value.
+      - script:
+          echo $(myVariableName)
