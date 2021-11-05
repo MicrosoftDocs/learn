@@ -25,7 +25,3 @@ The following diagram shows what applications run on the Azure Sphere MCU. The b
 ## What will you learn?
 
 In this module, you'll learn about disk drive services and how to deploy the Altair emulator and services to Azure Sphere.
-
-## What is the main goal?
-
-This module will focus on configuring and deploying the Altair emulator and services to Azure Sphere.
