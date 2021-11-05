@@ -3,7 +3,7 @@ uid: learn.intro-to-pybryt.2-annotations
 title: Annotations
 metadata:
   title: Annotations
-  description: Describe unit
+  description: How to annotate a solution to allow PyBryt to assess student implementations
   author: chrispyles
   ms.author: v-chpyles
   ms.date: 10/27/2021
@@ -12,3 +12,36 @@ metadata:
 durationInMinutes: 10
 sandbox: true
 notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-pybryt/main/02-annotations.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which type of annotation checks that a specific value is present in the student's memory footprint?"
+      choices:
+        - content: "value annotation"
+          isCorrect: true
+          explanation: "Correct! Value annotations check for the presence of specific annotations"
+        - content: "relational annotation"
+          isCorrect: false
+          explanation: "Not quite. Relational annotations assert conditions between other annotations."
+        - content: "complexity annotation"
+          isCorrect: false
+          explanation: "Not quite. Complexity annotations check the time complexity of a block of code."
+    - content: "Which of the following creates a value annotation for a list of values, ignoring the ordering of the list?"
+      choices:
+        - content: "`pybryt.Value(lst)`"
+          isCorrect: false
+          explanation: "Not quite. This will only work if the list is in the same order as in the reference implementation, and doesn't ignore the ordering."
+        - content: "`pybryt.Value(sorted(lst))`"
+          isCorrect: false
+          explanation: "Not quite. This will sort the list before creating the annotation, but if the list in the memory footprint isn't also sorted, it will fail."
+        - content: "`pybryt.Value(lst, equivalence_fn=lambda l1, l2: sorted(l1) == sorted(l2))`"
+          isCorrect: true
+          explanation: "Correct! This uses a custom equivalence function to compare the sorted versions of two lists, ignoring the original ordering."
+    - content: "Select the annotation below that gives students a message if their value of $\\pi$ is not precise enough."
+      choices:
+        - content: "`pybryt.Value(np.pi, atol=1e-5, success_message=\"Your value of pi should be significant to at least 5 places after the decimal.\")"
+          isCorrect: false
+          explanation: "Not quite. This will only display the message if the annotation is satisfied (i.e. if the value of pi is correct)."
+        - content: "`pybryt.Value(np.pi, atol=1e-5, failure_message=\"Your value of pi should be significant to at least 5 places after the decimal.\")"
+          isCorrect: true
+          explanation: "Correct! This sets an absolute tolerance and displays a message when that tolerance is not met."
