@@ -186,25 +186,25 @@ In order for your Azure Static Web App to access your Azure SQL Database, you mu
 
 ::: zone pivot="python"
 
-    ```cmd
-    Driver={ODBC Driver 17 for SQL Server};Server=[serverName].database.windows.net,1433;Database=bus-db;UID=cloudadmin;PWD=[yourPassword];Connection Timeout=30;
-    ```
+```cmd
+Driver={ODBC Driver 17 for SQL Server};Server=[serverName].database.windows.net,1433;Database=bus-db;UID=cloudadmin;PWD=[yourPassword];Connection Timeout=30;
+```
 
 ::: zone-end
 
 ::: zone pivot="csharp"
 
-    ```cmd
-    Server=tcp:[serverName].database.windows.net,1433;Database=bus-db;User ID=cloudadmin;Password=[yourPassword];Encrypt=true;Connection Timeout=30;
-    ```
+```cmd
+Server=tcp:[serverName].database.windows.net,1433;Database=bus-db;User ID=cloudadmin;Password=[yourPassword];Encrypt=true;Connection Timeout=30;
+```
 
 ::: zone-end
 
 ::: zone pivot="node"
 
-    ```cmd
-    mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encrypt=true
-    ```
+```cmd
+mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encrypt=true
+```
 
 ::: zone-end
 
@@ -230,6 +230,6 @@ In order for your Azure Static Web App to access your Azure SQL Database, you mu
 
 2. From the *Overview* pane of your Azure Static Web App in the Azure portal, select the **URL**.
 
-3. To view results for the specific bus route and geofence configured, add **`?rid=100113&gid=1`** to the end of the URL in the browser and refresh the page.
+3. To view results for the specific bus route and geofence configured, add **`?rid=100113&gid=2`** to the end of the URL in the browser and refresh the page.
 
 4. You should now see a geofence and bus points. You may need to use the **+** or **-** buttons create a zoom fit.

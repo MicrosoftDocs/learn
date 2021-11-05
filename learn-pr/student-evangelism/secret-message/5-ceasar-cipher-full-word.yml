@@ -9,6 +9,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 8
 content: |
   [!include[](includes/5-ceasar-cipher-full-word.md)]

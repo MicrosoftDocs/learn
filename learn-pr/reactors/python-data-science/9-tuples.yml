@@ -9,6 +9,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
+  ms.custom: team=nextgen
 durationInMinutes: 4
 content: |
   [!include[](includes/9-tuples.md)] 

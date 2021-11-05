@@ -1,4 +1,6 @@
-You’ve learned that a key part of cybersecurity is authorization. You're aware of the security levels of different authentication techniques and how time-consuming each technique is to use. Now you also understand how authorization gives people rights to resources. You should always limit the rights that anyone has to the resources they absolutely need.
+Secure authentication and authorization are a cornerstone of protecting against cybersecurity threats at home and work.  When implemented correctly, authentication and authorization can help keep out bad actors, while maintaining the confidentiality of your data and assets.
+
+As you've seen in this module, authentication is about correctly identifying a user. You've seen how multifactor authentication uses the concepts of something they have, something they are, and something they know to provide a robust means of proving a user is who they say they are. You've seen how cybercriminals will exploit any opportunity to gain information that might let them impersonate you, from keylogging to social engineering. Lastly, you saw how authorization controls and limits where users can go and what data and assets they can see. Together authentication and authorization greatly improve the confidentiality of your data and reduce the likelihood that the data will fall into the wrong hands.
 
 Now that you've completed this module, you should be able to:
 
