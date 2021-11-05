@@ -1,22 +1,17 @@
-Welcome to the cloud-connected Altair 8800 on Azure Sphere learning path. In this module, you'll learn how to deploy your own private MQTT broker.
+Welcome to the learning path about the cloud-connected Altair 8800 on Azure Sphere. In this module, you'll learn how to deploy your own private MQTT broker.
 
 ## Scenario: Privacy
 
-So far, you have been using the public **test.mosquitto.org** MQTT broker for the Altair emulator. The disadvantages of using the public broker include:
+So far, you've been using the public *test.mosquitto.org* MQTT broker for the Altair emulator. The disadvantages of using the public broker include:
 
-* All data from the Altair emulator, Web Terminal, and Virtual Disk Server is publicly viewable on the MQTT broker.
-* The MQTT broker performance varies depending on the number of devices that are connected and the volume of MQTT messages being routed. These factors will affect the performance and reliability of the Altair emulator
+* All data from the Altair emulator, web terminal, and virtual disk server is publicly viewable on the MQTT broker.
+* The MQTT broker's performance varies depending on the number of connected devices and the volume of routed MQTT messages. These factors will affect the performance and reliability of the Altair emulator.
 
-The advantages of running an MQTT broker in a virtual machine include:
+The advantages of running an MQTT broker on a virtual machine include:
 
-* Private, secure, reliable, and predictable performance.
-* You can run the virtual disk server on the same virtual machine. The Altair virtual disk drive B: will be faster when the virtual disk server is installed on the same computer as the MQTT broker as it eliminates a network round trip.
+* It offers enhanced privacy, security, and reliability, along with predictable performance.
+* You can run the virtual disk server on the same virtual machine. Altair virtual disk drive B is faster when the virtual disk server is installed on the same computer as the MQTT broker, because it eliminates a network round trip.
 
 ## What will you learn?
 
-In this module, you'll learn how to install and secure your own MQTT broker running in an Azure Virtual Machine.
-
-## What is the main goal?
-
-This module will focus on installing and securing an MQTT broker running in a cloud based Azure Virtual Machine.
-
+In this module, you'll learn how to install and help secure an MQTT broker running on a cloud-based Azure virtual machine.

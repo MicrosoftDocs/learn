@@ -9,16 +9,16 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
   ms.custom: nextgen
-title: Deploy your own private MQTT broker
+title: Deploy a private MQTT broker
 summary: Learn how to deploy your own private MQTT broker.
 abstract:  |
   In this module, you will:
   - Create an Ubuntu virtual server. 
-  - Install and secure Mosquitto MQTT broker.
+  - Install and help secure a Mosquitto MQTT broker.
   - Install Let's Encrypt to provide CA certificate authentication. 
-  - Run the Python virtual disk server in the virtual machine. 
+  - Run the Python virtual disk server on the virtual machine. 
 prerequisites: |
-  - A computer with an x86-64-based processor running one of the following operating systems:
+  - A computer with an x86-based or 64-based processor running one of the following operating systems:
     - Windows 10 Anniversary Update or later
     - 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
   - An Azure Sphere developer board that has one of the following kits:
