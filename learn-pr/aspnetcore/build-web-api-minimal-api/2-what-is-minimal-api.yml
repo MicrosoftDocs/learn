@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore.build-web-api-minimal-api.what-is-minimal-api
+title: What is minimal API?
+metadata:
+  title: What is minimal API?
+  description: Learn what minimal API is and how to create a project with it.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 10/26/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-what-is-minimal-api.md)]
+    

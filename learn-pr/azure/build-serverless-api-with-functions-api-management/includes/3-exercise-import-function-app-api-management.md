@@ -114,11 +114,11 @@ This exercise shows that you were able to define your API, all from within the A
 
 ## Test the OnlineStore products endpoint
 
-You now have a functional product details API in the API Management instance that you created. Let's test that API with the API Management tools in Azure.
+You now have a `ProductDetails` API in the API Management instance that you created. Let's test that API with the API Management tools in Azure.
 
-1. In the **API Management** pane, select the **Test** tab from the command bar. The available operations for your API appear in the left column.
+1. In the **API Management** pane of your function app, select the **Test** tab. The available operations for your API appear in the left column.
 
-1. In the left column, select **GET ProductDetails** operation. The ProductDetails Console appears in the right pane.
+1.Select **GET ProductDetails**. The ProductDetails Console pane appears.
 
 1. Under **Query parameters**, select **Add parameter**.
 

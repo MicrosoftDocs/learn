@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.predictive-maintenance-model-builder.choose-scenario-data
+title: Choose your scenario and prepare data
+metadata:
+  unitType: learning-content
+  title: Choose your scenario and prepare data
+  description: "Learn how to choose a scenario, select a training environment, and prepare your data for training."
+  ms.date: 10/25/2021
+  author: luisquintanilla
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+  ms.custom: team=nextgen
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-choose-scenario-data.md)]

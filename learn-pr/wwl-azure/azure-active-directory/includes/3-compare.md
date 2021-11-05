@@ -23,7 +23,7 @@ The following table summarizes the differences:
 | Designed for HTTP & HTTPS | Query via LDAP |
 | Queried via REST API's | Used Kerberos for Authentication |
 | Uses SAML, WS-Federation, or OpenID for authentication | No Federated Services|
-| Uses OAuth for authentication | Organizational Units (OU's) |
+| Uses OAuth for authorization | Organizational Units (OU's) |
 | Includes federation services| Group Policy (GPO's) |
 | Flat Structure |   |
 
