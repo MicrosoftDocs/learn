@@ -6,7 +6,7 @@ metadata:
   description: Introduction to NVIDIA DeepStream Graph Composer with Microsoft Azure.
   author: toolboc
   ms.author: pdecarlo
-  ms.date: 10/01/2021
+  ms.date: 11/09/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

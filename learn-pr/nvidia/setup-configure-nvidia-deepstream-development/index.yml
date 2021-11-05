@@ -3,7 +3,7 @@ uid: learn.nvidia.setup-configure-nvidia-deepstream-development
 metadata:
   title: Set up and configure an NVIDIA DeepStream development environment
   description: Learn how to set up and configure an x86-based Ubuntu 18.04 system to host an NVIDIA DeepStream development environment.
-  ms.date: 10/01/2021
+  ms.date: 11/09/2021
   author: toolboc
   ms.author: pdecarlo
   ms.topic: interactive-tutorial

@@ -12,7 +12,7 @@ In this module, you'll explore developing GPU-accelerated workloads that target 
 
 GPU-accelerated workloads on small form factor embedded devices that are ideal for edge environments can run on the [NVIDIA Jetson platform](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/?azure-portal=true). NVIDIA Jetson hardware is a complete system on module (SOM) that has all the CPU, GPU, and memory needed to run computer vision workloads on a device about the size of a modern cell phone.
 
-NVIDIA offers various devices that are suited for AI at the edge in its [Jetson line of device offerings](https://developer.nvidia.com/buy-jetson?azure-portal=true). Offerings include the robust [512-core Jetson AGX Xavier](https://amzn.to/2XMaSIL?azure-portal=true) and [Jetson Xavier NX](https://amzn.to/3i1Iuuj?azure-portal=true), mid-range 256-core [Jetson TX2](https://amzn.to/2IMGmDV?azure-portal=true), and the entry-level 128-core [Jetson Nano](https://amzn.to/2WFE5zF?azure-portal=true).
+NVIDIA offers various devices that are suited for AI at the edge in its [Jetson line of device offerings](https://developer.nvidia.com/buy-jetson?azure-portal=true). Offerings include the robust [512-core Jetson AGX Xavier](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-agx-xavier?azure-portal=true) and [Jetson Xavier NX](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-xavier-nx/?azure-portal=true), mid-range 256-core [Jetson TX2](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-tx2/?azure-portal=true), and the entry-level 128-core [Jetson Nano](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/?azure-portal=true).
 
 The following chart shows specifications for these hardware offerings:
 
@@ -22,10 +22,10 @@ All devices in the NVIDIA Jetson family use ARM-based CPU hardware for processin
 
 To follow along with this module, you'll need one of the following NVIDIA Jetson embedded devices provisioned with [JetPack 4.5.1 GA](https://developer.nvidia.com/jetpack-sdk-451-archive?azure-portal=true):
 
-* [Jetson Xavier NX](https://amzn.to/3i1Iuuj?azure-portal=true)
-* [Jetson AGX Xavier](https://amzn.to/2XMaSIL?azure-portal=true)
-* [Jetson TX2](https://amzn.to/2IMGmDV?azure-portal=true)
-* [Jetson Nano](https://amzn.to/2WFE5zF?azure-portal=true)
+* [Jetson Xavier NX](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-xavier-nx/?azure-portal=true)
+* [Jetson AGX Xavier](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-agx-xavier?azure-portal=true)
+* [Jetson TX2](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-tx2/?azure-portal=true)
+* [Jetson Nano](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano//2WFE5zF?azure-portal=true)
 
 ## Azure IoT Edge
 
