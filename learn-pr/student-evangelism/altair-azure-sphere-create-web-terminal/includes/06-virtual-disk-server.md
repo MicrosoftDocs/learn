@@ -10,17 +10,14 @@ Drive B: disk sector reads and writes are redirected over MQTT to an MQTT-enable
 
 :::image type="content" source="../media/altair-azure-sphere-disk-cache-server.png" alt-text="Diagram of the Altair virtual disk architecture." border="false" lightbox="../media/altair-azure-sphere-disk-cache-server.png":::
 
-The disk reads work as follows:
+The disk *reads* work as follows:
 
-**1** &nbsp;The Altair emulator first checks to see whether the disk sector is available from the disk sector cache.
+1. The Altair emulator first checks to see whether the disk sector is available from the disk sector cache.
+1. If the disk sector is found in the cache, it's returned to the Altair emulator. Getting sectors from the cache is much faster than requesting the sector from the virtual disk server.
+1. If the disk sector isn't found in the cache, the sector is requested from the virtual disk server.
+1. When the virtual disk server returns the disk sector, it's added to the disk sector cache. The sector is then returned to the Altair emulator for processing.
 
-**2** &nbsp;If the disk sector is found in the cache, it's returned to the Altair emulator. Getting sectors from the cache is much faster than requesting the sector from the virtual disk server.
-
-**3** &nbsp;If the disk sector isn't found in the cache, the sector is requested from the virtual disk server.
-
-**4** &nbsp;When the virtual disk server returns the disk sector, it's added to the disk sector cache. The sector is then returned to the Altair emulator for processing.
-
-The disk writes work as follows:
+The disk *writes* work as follows:
 
 1. The Altair emulator disk driver sends the disk sector to the cache manager.
 1. The disk sector is then sent to the cloud-based virtual disk manager.
