@@ -79,17 +79,23 @@ To consume your language model from a client, we'll use a simple command-line ap
 
 To test the capabilities of the Language Understanding service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
 
-1. In the Azure portal, select the **[>_]** (*Cloud Shell*) button at the top of the page to the left of the search box. This opens a Cloud Shell pane at the bottom of the portal, as shown here.
+1. In the Azure portal, select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal. 
 
-    ![Azure cloud shell pane](./media/cloud-shell.png)
+    ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/powershell-portal-guide-1.png)
 
-2. The first time you open the cloud shell, you will be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**.
+2. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
 
-3. If you are prompted to create storage for your cloud shell, ensure your subscription is specified and select **Create storage**. Then wait a minute or so for the storage to be created. Eventually, the cloud shell pane will display a command prompt like this:
+3. If you are prompted to create storage for your Cloud Shell, ensure your subscription is specified and select **Create storage**. Then wait a minute or so for the storage to be created. 
 
-    ![Azure cloud shell PowerShell prompt](./media/powershell-prompt.png)
+    ![Create storage by clicking confirm.](../media/powershell-portal-guide-2.png)       
 
-    > **Note**: If you selected *Bash*, or you had previously opened a Bash cloud shell, you can switch to PowerShell by using the drop-down menu at the top left of the cloud shell pane.
+4. Make sure the the type of shell indicated on the top left of the cloud shell pane is switched to *Powershell*. If it is *Bash*, switch to *Powershell* by using the drop-down menu. 
+    
+    ![How to find the left hand drop down menu to switch to Powershell](../media/powershell-portal-guide-3.png) 
+
+5. Wait for Powershell to start. You should see the following screen in the Azure portal:  
+
+    ![Wait for Powershell to start.](../media/powershell-prompt.png) 
 
 
 ## Configure and run a client application
@@ -108,7 +114,9 @@ Now that you have a custom model, you can run a simple client application that u
     code .
     ```
 
-    Notice how this opens up an editor. 
+    Notice how this opens up an editor like the one in the image below: 
+ 
+    ![The code editor.](../media/powershell-portal-guide-4.png)
 
 3. In the **Files** pane on the left, expand **ai-900** and select **understand.ps1**. This file contains some code that uses your Language Understanding model, as shown here:
 
