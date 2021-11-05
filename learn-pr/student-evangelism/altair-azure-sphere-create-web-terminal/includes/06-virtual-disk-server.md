@@ -33,6 +33,4 @@ Applications that run on CP/M have read/write access to drive B:. This lets you 
 
 Drive B: disk sector reads and writes are sent over MQTT to the Python-based virtual disk server. The disk sector *Cache-aside* cache is used to improve the performance of the virtual drive.
 
-:::image type="content" source="../media/altair-azure-sphere-disk-cache-server.png" alt-text="Diagram that shows the Altair Web Terminal architecture." border="false" lightbox="../media/altair-azure-sphere-disk-cache-server.png":::
-
 In the next unit, you'll install and run the Altair emulator virtual disk server.
