@@ -39,3 +39,9 @@ The main steps in the process are:
 1. Configure CSV. Use Failover Cluster Manager to configure CSV.
 
  >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MBcx]
+
+---
+
+
+
+---

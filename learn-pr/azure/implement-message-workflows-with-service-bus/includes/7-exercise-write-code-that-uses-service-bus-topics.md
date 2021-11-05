@@ -26,13 +26,26 @@ To complete the component that sends messages about sales performance, follow th
 1. Within that method, locate the following line of code.
 
     ```C#
-    // Create a Topic Client here
+    // Create a Service Bus client here
     ```
 
 1. Replace that line of code with the following code.
 
     ```C#
-    topicClient = new TopicClient(ServiceBusConnectionString, TopicName);
+    // By leveraging "await using", the DisposeAsync method will be called automatically once the client variable goes out of scope.
+    // In more realistic scenarios, you would want to store off a class reference to the client (rather than a local variable) so that it can be used throughout your program.
+    await using var client = new ServiceBusClient(ServiceBusConnectionString);
+    ```
+1. Within that method, locate the following line of code.
+
+    ```C#
+    // Create a sender here
+    ```
+
+1. Replace that line of code with the following code.
+
+    ```C#
+    await using ServiceBusSender sender = client.CreateSender(TopicName);
     ```
 
 1. Within the `try...catch` block, locate the following line of code.
@@ -44,8 +57,8 @@ To complete the component that sends messages about sales performance, follow th
 1. Replace that line of code with the following code.
 
     ```C#
-    string messageBody = $"Total sales for Brazil in August: $13m.";
-    var message = new Message(Encoding.UTF8.GetBytes(messageBody));
+    string messageBody = "Total sales for Brazil in August: $13m.";
+    var message = new ServiceBusMessage(messageBody);
     ```
 
 1. To display the message in the console, insert the following code on the next line.
@@ -54,32 +67,18 @@ To complete the component that sends messages about sales performance, follow th
     Console.WriteLine($"Sending message: {messageBody}");
     ```
 
-1. To send the message to the queue, insert the following code on the next line.
+1. To send the message to the topic, insert the following code on the next line.
 
     ```C#
-    await topicClient.SendAsync(message);
-    ```
-
-1. Locate the following line of code.
-
-    ```C#
-    // Close the connection to the topic here
-    ```
-
-1. Replace that line of code with the following code.
-
-    ```C#
-    await topicClient.CloseAsync();
+    await sender.SendMessageAsync(message);
     ```
 
 1. Your final code should resemble the following example:
 
     ```C#
     using System;
-    using System.Text;
-    using System.Threading;
     using System.Threading.Tasks;
-    using Microsoft.Azure.ServiceBus;
+    using Azure.Messaging.ServiceBus;
     
     namespace performancemessagesender
     {
@@ -87,7 +86,6 @@ To complete the component that sends messages about sales performance, follow th
         {
             const string ServiceBusConnectionString = "Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==";
             const string TopicName = "salesperformancemessages";
-            static ITopicClient topicClient;
     
             static void Main(string[] args)
             {
@@ -98,21 +96,23 @@ To complete the component that sends messages about sales performance, follow th
     
             static async Task SendPerformanceMessageAsync()
             {
-                topicClient = new TopicClient(ServiceBusConnectionString, TopicName);
+                // By leveraging "await using", the DisposeAsync method will be called automatically once the client variable goes out of scope.
+                // In more realistic scenarios, you would want to store off a class reference to the client (rather than a local variable) so that it can be used throughout your program.
+                await using var client = new ServiceBusClient(ServiceBusConnectionString);
+
+                await using ServiceBusSender sender = client.CreateSender(TopicName);
     
                 try
                 {
-                    string messageBody = $"Total sales for Brazil in August: $13m.";
-                    var message = new Message(Encoding.UTF8.GetBytes(messageBody));
+                    string messageBody = "Total sales for Brazil in August: $13m.";
+                    var message = new ServiceBusMessage(messageBody);
                     Console.WriteLine($"Sending message: {messageBody}");
-                    await topicClient.SendAsync(message);
+                    await sender.SendMessageAsync(message);
                 }
                 catch (Exception exception)
                 {
                     Console.WriteLine($"{DateTime.Now} :: Exception: {exception.Message}");
                 }
-    
-                await topicClient.CloseAsync();
             }
         }
     }
@@ -160,57 +160,78 @@ To complete the component that retrieves messages about sales performance, follo
 1. Within that method, locate the following line of code.
 
     ```C#
-    // Create a subscription client here
+    // Create a Service Bus client that will authenticate using a connection string
     ```
 
-1. To create a subscription client, replace that line with the following code.
+1. To create a Service Bus client, replace that line with the following code.
 
     ```C#
-    subscriptionClient = new SubscriptionClient(ServiceBusConnectionString, TopicName, SubscriptionName);
+    var client = new ServiceBusClient(ServiceBusConnectionString);
     ```
 
 1. Locate the following line of code:
 
     ```C#
-    // Close the subscription here
+    // Create the options to use for configuring the processor
     ```
 
-1. To close the connection to Service Bus, replace that code with the following code:
+1. To configure message handling options, replace that line with the following code.
 
     ```C#
-    await subscriptionClient.CloseAsync();
-    ```
-
-1. Locate the `RegisterMessageHandler()` method.
-
-1. To configure message handling options, replace all the code within that method with the following code.
-
-    ```C#
-    var messageHandlerOptions = new MessageHandlerOptions(ExceptionReceivedHandler)
+    var processorOptions = new ServiceBusProcessorOptions
     {
         MaxConcurrentCalls = 1,
-        AutoComplete = false
+        AutoCompleteMessages = false
     };
     ```
-
-1. To register the message handler, on the next line, add the following code.
+1. Locate the following line of code.
 
     ```C#
-    subscriptionClient.RegisterMessageHandler(ProcessMessagesAsync, messageHandlerOptions);
+    // Create a processor that we can use to process the messages
     ```
 
-1. Locate the `ProcessMessagesAsync()` method. You have registered this method to handle incoming messages.
+1. To create a processor, replace that line with the following code.
+
+    ```C#
+    ServiceBusProcessor processor = client.CreateProcessor(TopicName, SubscriptionName, processorOptions);
+    ```
+
+1. Locate the following line of code.
+
+    ```C#
+    // Configure the message and error handler to use
+    ```
+
+1. To configure the handler, replace that line with the following code.
+
+    ```C#
+    processor.ProcessMessageAsync += MessageHandler;
+    processor.ProcessErrorAsync += ErrorHandler;
+    ```
+
+1. Locate the following line of code.
+    ```C#
+    // Start processing
+    ```
+
+1. To start processing, replace that line with the following code.
+
+    ```C#
+    await processor.StartProcessingAsync();
+    ```
+
+1. Locate the `MessageHandler()` method. You have registered this method to handle incoming messages.
 
 1. To display incoming messages in the console, replace all the code within that method with the following code.
 
     ```C#
-    Console.WriteLine($"Received sale performance message: SequenceNumber:{message.SystemProperties.SequenceNumber} Body:{Encoding.UTF8.GetString(message.Body)}");
+    Console.WriteLine($"Received message: SequenceNumber:{args.Message.SequenceNumber} Body:{args.Message.Body}");
     ```
 
 1. To remove the received message from the subscription, on the next line, add the following code.
 
     ```C#
-    await subscriptionClient.CompleteAsync(message.SystemProperties.LockToken);
+    await args.CompleteMessageAsync(args.Message);
     ```
 
 1. Your final code should resemble the following example.
@@ -220,7 +241,7 @@ To complete the component that retrieves messages about sales performance, follo
     using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
-    using Microsoft.Azure.ServiceBus;
+    using Azure.Messaging.ServiceBus;
     
     namespace performancemessagereceiver
     {
@@ -229,7 +250,6 @@ To complete the component that retrieves messages about sales performance, follo
             const string ServiceBusConnectionString = "Endpoint=sb://alexgeddyneil.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=LIWIyxs8baqQ0bRf5zJLef6OTfrv0kBEDxFM/ML37Zs=";
             const string TopicName = "salesperformancemessages";
             const string SubscriptionName = "Americas";
-            static ISubscriptionClient subscriptionClient;
     
             static void Main(string[] args)
             {
@@ -238,45 +258,47 @@ To complete the component that retrieves messages about sales performance, follo
     
             static async Task MainAsync()
             {
-                subscriptionClient = new SubscriptionClient(ServiceBusConnectionString, TopicName, SubscriptionName);
+                var client = new ServiceBusClient(ServiceBusConnectionString);
     
                 Console.WriteLine("======================================================");
                 Console.WriteLine("Press ENTER key to exit after receiving all the messages.");
                 Console.WriteLine("======================================================");
     
-                RegisterMessageHandler();
-    
-                Console.Read();
-    
-                await subscriptionClient.CloseAsync();
-            }
-    
-            static void RegisterMessageHandler()
-            {
-                var messageHandlerOptions = new MessageHandlerOptions(ExceptionReceivedHandler)
+                var processorOptions = new ServiceBusProcessorOptions
                 {
                     MaxConcurrentCalls = 1,
-                    AutoComplete = false
+                    AutoCompleteMessages = false
                 };
-                subscriptionClient.RegisterMessageHandler(ProcessMessagesAsync, messageHandlerOptions);
+
+                ServiceBusProcessor processor = client.CreateProcessor(TopicName, SubscriptionName, processorOptions);
+
+                processor.ProcessMessageAsync += MessageHandler;
+                processor.ProcessErrorAsync += ErrorHandler;
+
+                await processor.StartProcessingAsync();
+                
+                Console.Read();
+
+                // Since we didn't use the "await using" syntax here, we need to explicitly dispose the processor and client
+                await processor.DisposeAsync();
+                await client.DisposeAsync();
             }
     
-            static async Task ProcessMessagesAsync(Message message, CancellationToken token)
+            static async Task MessageHandler(ProcessMessageEventArgs args)
             {
-                Console.WriteLine($"Received sale performance message: SequenceNumber:{message.SystemProperties.SequenceNumber} Body:{Encoding.UTF8.GetString(message.Body)}");
-                await subscriptionClient.CompleteAsync(message.SystemProperties.LockToken);
+                Console.WriteLine($"Received message: SequenceNumber:{args.Message.SequenceNumber} Body:{args.Message.Body}");
+                await args.CompleteMessageAsync(args.Message);
             }
-    
-            static Task ExceptionReceivedHandler(ExceptionReceivedEventArgs exceptionReceivedEventArgs)
+
+            static Task ErrorHandler(ProcessErrorEventArgs args)
             {
-                Console.WriteLine($"Message handler encountered an exception {exceptionReceivedEventArgs.Exception}.");
-                var context = exceptionReceivedEventArgs.ExceptionReceivedContext;
+                Console.WriteLine($"Message handler encountered an exception {args.Exception}.");
                 Console.WriteLine("Exception context for troubleshooting:");
-                Console.WriteLine($"- Endpoint: {context.Endpoint}");
-                Console.WriteLine($"- Entity Path: {context.EntityPath}");
-                Console.WriteLine($"- Executing Action: {context.Action}");
+                Console.WriteLine($"- Endpoint: {args.FullyQualifiedNamespace}");
+                Console.WriteLine($"- Entity Path: {args.EntityPath}");
+                Console.WriteLine($"- Executing Action: {args.ErrorSource}");
                 return Task.CompletedTask;
-            }  
+            }
         }
     }
     ```
