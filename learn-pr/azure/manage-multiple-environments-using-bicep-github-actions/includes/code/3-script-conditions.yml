@@ -14,3 +14,7 @@ jobs:
     steps:
     - run: |
         echo Hello ${{ inputs.environmentType }}!
+
+    - run: |
+        echo This step only runs for production deployments.
+      if: inputs.environmentType == 'Production'

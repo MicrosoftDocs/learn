@@ -54,7 +54,7 @@ You can use *inputs* and *secrets* to make your called workflows easier to reuse
 
 When you create a called workflow, you can indicate its inputs and secrets at the top of the file:
 
-:::code language="yaml" source="code/3-called-workflow-inputs.yml" :::
+:::code language="yaml" source="code/3-called-workflow-inputs.yml" range="1-9" :::
 
 You can define as many inputs and secrets as you need. But just like Bicep parameters, try not to overuse workflow inputs. You should make it easy for someone else to reuse your workflow without having to specify too many settings.
 
@@ -64,34 +64,25 @@ Inputs can have several properties, including:
 - The *type* of the input. Inputs support several different types of data, including *string*, *number*, and *Boolean*. You can also define more complex workflows that accept structured objects.
 - The *default value* of the input. This is optional. If you don't specify a default value, then a value must be provided when the workflow is used in caller workflow.
 
-Secrets have names, but they don't have types or default values. <!-- TODO verify that -->
+Secrets have names, but they don't have types or default values.
 
-In your pipeline template, you use a special syntax to refer to the value of the parameter. Use the `${{parameters.YOUR_PARAMETER_NAME}}` macro, like in this example: 
+In your pipeline template, you use a special syntax to refer to the value of the parameter. Use the `${{ inputs.YOUR_INPUT_NAME }}` macro, like in this example: 
 
-:::code language="yaml" source="code/3-called-workflow-inputs.yml" :::
+:::code language="yaml" source="code/3-called-workflow-inputs.yml" range="11-16" highlight="6" :::
 
-You pass the value for inputs to a called workflow by using the `with` keyword, like in this example:
+You pass the value for inputs to a called workflow by using the `with` keyword, and secrets by using the `secrets` keyword, like in this example:
 
-:::code language="yaml" source="code/3-caller-workflow-inputs.yml" :::
-
-<!-- TODO here down -->
+:::code language="yaml" source="code/3-caller-workflow-inputs.yml" highlight="7-10, 14-17" :::
 
 ## Conditions
 
-You can use workflow *conditions* to specify whether a step, a job, or even a stage should run depending on a rule that you specify. You can combine template parameters and workflow conditions to customize your deployment process for many different situations.
+You can use workflow *conditions* to specify whether a step or a job should run depending on a rule that you specify. You can combine inputs and workflow conditions to customize your deployment process for many different situations.
 
-For example, imagine you define a workflow template that runs script steps. You plan to reuse the template for each of your environments. When you deploy your production environment, you want to run an additional step. Here's how you can achieve that by using the `if` macro and the `eq` (*equals*) operator: <!-- TODO redo this -->
+For example, imagine you define a workflow that runs script steps. You plan to reuse the template for each of your environments. When you deploy your production environment, you want to run an additional step. Here's how you can achieve that by using the `if` condition on the step:
 
-:::code language="yaml" source="code/3-script-conditions.yml" range="1-12" highlight="10" :::
+:::code language="yaml" source="code/3-script-conditions.yml" range="11-20" highlight="20" :::
 
-The condition here translates to: *if the environmentType parameter's value is equal to 'Production', then run the following steps*.
-
-> [!TIP]
-> Pay attention to the YAML file's indentation when you use conditions like in the example above. The steps that the condition applies to need to be indented by one extra level.
-
-You can also specify the `condition` property on a stage, job, or step. Here's an example that shows how you can use the `ne` (*not equals*) operator to specify a condition like *if the environmentType parameter's value is not equal to 'Production', then run the following steps*: <!-- TODO redo this -->
-
-:::code language="yaml" source="code/3-script-conditions.yml" range="14-16" highlight="3" :::
+The condition here translates to: *if the environmentType parameter's value is equal to 'Production', then run the step*.
 
 Although conditions are a way to add flexibility to your workflow, try not to use too many of them. They complicate your workflow and make it harder to understand its flow. If you see a lot of conditions in a called workflow, then a called workflow might not be the best solution for the workflow that you plan to run, and you might need to redesign your overall workflow.
 
