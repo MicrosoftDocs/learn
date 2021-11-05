@@ -702,3 +702,8 @@ achievements:
   title: Introduction to cybersecurity
   summary: Knowing the fundamentals of cybersecurity is a first step toward countering increasing cyberthreats. Examine key terminology and discover common cyberthreats and how to defend against them.
   iconUrl: /learn/achievements/intro-to-cybersecurity.svg
+- uid: learn.wwl.design-identities-access-for-applications.badge
+  type: badge
+  title: Design identities and access for applications
+  summary: Design identities and access for applications
+  iconUrl: /learn/achievements/generic-badge.svg

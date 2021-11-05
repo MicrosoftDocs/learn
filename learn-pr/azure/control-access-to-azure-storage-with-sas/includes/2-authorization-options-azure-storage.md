@@ -13,8 +13,6 @@ Files stored in Azure Storage are accessed by clients over HTTP/HTTPS. Azure che
 - Shared key
 - Shared access signature (SAS)
 
-![Diagram showing the four methods of authentication; public access, Azure AD, shared key, and SAS.](../media/2-access-options.png)
-
 ### Public access
 
 Public access is also known as anonymous public read access for containers and blobs. 
