@@ -12,3 +12,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-create-front-end.md)]
+  

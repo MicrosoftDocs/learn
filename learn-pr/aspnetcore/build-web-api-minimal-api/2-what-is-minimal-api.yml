@@ -12,3 +12,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-what-is-minimal-api.md)]
+  

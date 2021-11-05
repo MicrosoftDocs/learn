@@ -37,7 +37,7 @@ First, you need to scaffold a project. You've installed .NET 6 and you are ready
           Content root path: /<path>/PizzaStore
    ```
 
-1. In your browser, navigate to the indicated port according to the terminal `http://localhost:5100`, you should see the text "Hello World!"
+1. In your browser, go to the indicated port according to the terminal `http://localhost:{PORT}`, you should see the text "Hello World!"
 
 Congrats, you've managed to create an API using minimal API template.
 

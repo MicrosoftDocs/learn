@@ -78,7 +78,7 @@ app.MapPut("/products", (Product product) => /* update the data store using the 
 
 ### DELETE: Remove a resource
 
-To support the HTTP verb DELETE, you can use `MapDelete()`. The idea is for the client to send across a unique identifier that would help the server identify which record to delete. A typical usage of this method could look like so:
+To support the HTTP verb DELETE, you can use `MapDelete()`. The idea is for the client to send across a unique identifier that would help the server identify which record to delete. Here's a typical usage of this method:
 
 ```csharp
 app.MapDelete("/products/{id}", (int id) => /* Remove the record who's unique identifier matches `id` */);

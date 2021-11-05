@@ -94,7 +94,7 @@ Now, connect data in your API:
    dotnet run
    ```
 
-1. In your browser, go to `http://localhost:5000/swagger`.
+1. In your browser, go to `http://localhost:{PORT}/swagger`.
 
    You should see the following page rendering:
 

@@ -12,3 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-use-sqlite-database.md)]
+  

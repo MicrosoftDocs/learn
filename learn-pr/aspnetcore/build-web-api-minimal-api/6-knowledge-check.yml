@@ -48,3 +48,4 @@ quiz:
         - content: Type `app.MapGet("/pizza", () => /**/)`.
           isCorrect: true
           explanation: Correct. Using this code is the correct way to set up a route in minimal API.
+          

@@ -12,3 +12,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-create-api.md)]
+  

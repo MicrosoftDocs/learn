@@ -12,3 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-add-entity-framework-core.md)]
+  
