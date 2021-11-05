@@ -24,9 +24,9 @@ Here's an example parameter file:
 
 Parameter files can be committed to your Git repository alongside your Bicep file. You can then refer to the parameter file in your workflow template where you execute your deployment.
 
-It's a good idea to establish a consistent environment-naming strategy for parameter files. For example, you might name your parameter files *parameters.ENVIRONMENT_NAME.json*, like *parameters.Production.json*. Then, you can use a workflow template parameter to automatically select the correct parameter file.
+It's a good idea to establish a consistent environment-naming strategy for parameter files. For example, you might name your parameter files *parameters.ENVIRONMENT_NAME.json*, like *parameters.Production.json*. Then, you can use a workflow template input to automatically select the correct parameter file based on an input value.
 
-:::code language="yaml" source="code/6-parameter-file.yml" highlight="30" :::
+:::code language="yaml" source="code/6-parameter-file.yml" highlight="4, 19" :::
 
 When you use parameter files, your workflow YAML files don't need to contain a list of parameters that need to be passed to your deployment steps individually. This is especially helpful when you have a large number of parameters. 
 
@@ -101,4 +101,4 @@ For secure parameters, remember to explicitly pass each parameter into your depl
 
 It's common to combine multiple approaches to handle your parameters. For example, you can store the majority of your parameter values in parameter files, and then just set secure values by using a secret. The following example illustrates the combination:
 
-:::code language="yaml" source="code/6-multiple.yml" highlight="1-2, 27-28" :::
+:::code language="yaml" source="code/6-multiple.yml" highlight="13-14, 29" :::
