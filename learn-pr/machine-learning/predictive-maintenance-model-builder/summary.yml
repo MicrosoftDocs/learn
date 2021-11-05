@@ -10,7 +10,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
-  ms.custom: team=nextgen 
+  ms.custom: team=nextgen
 durationInMinutes: 1
 content: |
   [!include[](includes/summary.md)]
