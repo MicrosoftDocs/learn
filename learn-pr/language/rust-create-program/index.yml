@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: nextgen
+  ms.custom: team=nextgen
 title: Create your first Rust program
 summary: Learn about Rust concepts, including variables, data types, and functions.
 abstract:  |

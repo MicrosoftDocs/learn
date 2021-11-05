@@ -10,6 +10,7 @@ metadata:
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 11
 content: |
   [!include[](includes/7-bind-the-azure-function-to-twilio.md)]

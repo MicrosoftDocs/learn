@@ -25,7 +25,7 @@ quiz:
       explanation: "That's incorrect. This will give the new employee the ability to modify all of the virtual machines in the resource group."
     - content: "Assign the user to the Contributor role on VM3."
       isCorrect: true
-      explanation: "That's correct. The Contributor role will allow the user to change the settings on VM1."
+      explanation: "That's correct. The Contributor role will allow the user to change the settings on VM3."
     - content: "Move VM3 to a new resource group and assign the user to the Owner role on VM3."
       isCorrect: false
       explanation: "That's incorrect. The Owner role will give more permissions that what is needed."
