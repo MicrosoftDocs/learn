@@ -54,13 +54,13 @@ const Pizza = ({ pizza }) => {
    return (<React.Fragment>
      <PizzaFrame>
      <h3>
-       <b><Title onChange={(evt) => update(evt.target.value, 'name', data)} value={data.name} /></b> 
+       <Title onChange={(evt) => update(evt.target.value, 'name', data)} value={data.name} /> 
      </h3>
      <div>
-       <b><Input onChange={(evt) => update(evt.target.value, 'description', data)} value={data.description} /></b>
+       <Input onChange={(evt) => update(evt.target.value, 'description', data)} value={data.description} />
      </div>
      {dirty ? 
-      <div><b><Save onClick={onSave}>Save</Save></b></div> : null
+      <div><Save onClick={onSave}>Save</Save></div> : null
      }
      </PizzaFrame>
      </React.Fragment>)

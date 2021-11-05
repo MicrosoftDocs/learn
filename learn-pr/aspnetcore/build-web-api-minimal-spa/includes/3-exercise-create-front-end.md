@@ -38,7 +38,7 @@ Next, you'll build a component that's capable of handling a list of pizzas.
       id: 1, name: 'Cheese pizza', description: 'very cheesy'
     },
     {
-      id: 2, name: 'Al Tonno pizza', description: 'lots of tuna'
+      id: 2, name: 'Al Tono pizza', description: 'lots of tuna'
    }];
 
    const Pizza = ({ pizza }) => {
@@ -110,7 +110,7 @@ It's always great if we can make the UI better looking. There's more than one wa
 
 1. Make the following changes to _Main.js_:
 
-   :::code language="javascript" source="../code/minimal-spa-add-some-css.js" highlight="2, 4-31":::
+   :::code language="javascript" source="../code/minimal-spa-add-some-css.js" highlight="2, 4-31, 55, 57, 60, 63, 65":::
 
    Now, you have components that render with a decent appearance. Next, ensure your program is using this component.
 
