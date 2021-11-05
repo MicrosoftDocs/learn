@@ -9539,6 +9539,21 @@
       "source_path": "learn-pr/wwl-azure/design-identities-access-for-applications/6-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/design-identity-governance-monitor-solutions/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-application-architecture/6-design-automated-app-deployment-solution.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-application-architecture/8-design-automated-app-deployment-solution",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-application-architecture/8-configuration-management-solution.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-application-architecture/9-configuration-management-solution",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-application-architecture/9-design-caching-solution.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-application-architecture/6-design-caching-solution",
+      "redirect_document_id": true
     }
   ]
 }
