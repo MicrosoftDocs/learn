@@ -201,6 +201,7 @@ Here you fetch the `release-pipeline` branch from GitHub and check out, or switc
 This branch contains the _Space Game_ project that you worked with in the previous modules and an Azure Pipelines configuration to start with.
 
 1. In Visual Studio Code, open the integrated terminal.
+
 1. Run the following `git` commands to fetch a branch named `release-pipeline` from the Microsoft repository, and then switch to that branch.
 
     ```bash
@@ -211,13 +212,14 @@ This branch contains the _Space Game_ project that you worked with in the previo
     The format of this command enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch to your GitHub repository, known as `origin`.
 
 1. As an optional step, in Visual Studio Code, open the *azure-pipelines.yml* file and familiarize yourself with the initial configuration.
+
     The configuration resembles the basic one you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's Release configuration.
 
     [!include[](../../shared/includes/pipeline-branches-note.md)]
 
 ## Run the pipeline
 
-This this point, you have:
+At this point, you have:
 
 * A fork of the **mslearn-tailspin-spacegame-web-deploy** repository in your GitHub account.
 * The **mslearn-tailspin-spacegame-web-deploy** repository cloned locally.
@@ -226,12 +228,15 @@ This this point, you have:
 Next, you'll manually trigger the pipeline to run. This step ensures that your project is set up to build from your GitHub repository. The initial pipeline configuration builds the application and produces a builds artifact. Shortly, you'll add a stage that deploys the build artifact to Azure App Service.
 
 1. In Azure DevOps, go to your project.
-1. Select **Pipelines** from the menu on the side of the page.
+
+1. Select **Pipelines** from the resource menu.
+
 1. You see that your pipeline has not yet been run.
 
     :::image type="content" source="../media/4-pipeline-no-runs.png" alt-text="A screnshot of Azure Pipelines showing the pipeline for this project. The pipeline has no runs.":::
 
 1. Select your pipeline, **mslearn-tailspin-spacegame-web-deploy**.
+
 1. Select **Run pipeline**.
 
     :::image type="content" source="../media/4-pipeline-run-first.png" alt-text="A screnshot of Azure Pipelines showing the location of the Run pipeline button.":::

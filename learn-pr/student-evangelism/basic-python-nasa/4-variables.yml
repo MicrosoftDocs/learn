@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Exercise - Create variables in Python Notebooks for future data analysis
 durationInMinutes: 6
 sandbox: true
