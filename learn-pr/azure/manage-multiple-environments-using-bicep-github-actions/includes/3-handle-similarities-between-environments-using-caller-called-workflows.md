@@ -36,47 +36,45 @@ When you need to repeat steps in your workflow, you might try to copy and paste 
 
 ## Called workflows
 
-<!-- TODO redo this section -->
+GitHub Actions enables you to create reusable sections of workflow definitions by creating a separate workflow YAML file that defines steps or jobs. You can create YAML files to reuse parts of a workflow multiple times within a single workflow, or even in multiple workflow. The workflow that you reuse is a *called workflow*, and the workflow that includes it is a *caller workflow*. Conceptually, you can think of them as being similar to Bicep modules.
 
-*Pipeline templates* enable you to create reusable sections of pipeline definitions. Templates can define steps, jobs, or even entire stages. You can use templates to reuse parts of a pipeline multiple times within a single pipeline, or even in multiple pipelines. You can also create a template for a set of variables that you want to reuse in multiple pipelines.
+When you create a reusable workflow, you use the `workflow_call` trigger to tell GitHub Actions that the workflow can be called by other workflows. Here's a basic example of a reusable workflow, saved in a file named *script.yml*:
 
-A template is simply a YAML file that contains your reusable content. A simple template for a step definition might look like this and be saved in a file named *script.yml*:
+:::code language="yaml" source="code/3-called-workflow.yml" highlight="2" :::
 
-:::code language="yaml" source="code/3-script.yml" :::
+In the caller workflow, you refer to the called workflow by including the `uses:` keyword and specifying the path to the called workflow:
 
-You can use a template in your pipeline by using the `template` keyword in the place where you'd normally define the individual step:
+:::code language="yaml" source="code/3-caller-workflow.yml" highlight="6" :::
 
-:::code language="yaml" source="code/3-jobs.yml" highlight="6, 12" :::
+Ensure the path includes your GitHub username, the repository name, and the path to the workflow file you're using.
 
-## Called workflow parameters
+## Called workflow inputs and secrets
 
-<!-- TODO -->
+You can use *inputs* and *secrets* to make your called workflows easier to reuse, because you can allow for small differences in your workflows whenever you use them.
 
-*Pipeline template parameters* make your template files easier to reuse, because you can allow for small differences in your templates whenever you use them.
+When you create a called workflow, you can indicate its inputs and secrets at the top of the file:
 
-When you create a pipeline template, you can indicate its parameters at the top of the file:
+:::code language="yaml" source="code/3-called-workflow-inputs.yml" :::
 
-:::code language="yaml" source="code/3-script-parameters.yml" range="1-6" :::
+You can define as many inputs and secrets as you need. But just like Bicep parameters, try not to overuse workflow inputs. You should make it easy for someone else to reuse your workflow without having to specify too many settings.
 
-You can define as many parameters as you need. But just like Bicep parameters, try not to overuse pipeline template parameters. You should make it easy for someone else to reuse your template without having to specify too many settings.
+Inputs can have several properties, including:
 
-Each pipeline template parameter has three properties:
+- The *name* of the input, which you use to refer to the input in your workflow definitions.
+- The *type* of the input. Inputs support several different types of data, including *string*, *number*, and *Boolean*. You can also define more complex workflows that accept structured objects.
+- The *default value* of the input. This is optional. If you don't specify a default value, then a value must be provided when the workflow is used in caller workflow.
 
-- The *name* of the parameter, which you use to refer to the parameter in your template files.
-- The *type* of the parameter. Parameters support several different types of data, including *string*, *number*, and *Boolean*. You can also define more complex templates that accept structured objects.
-- The *default value* of the parameter. This is optional. If you don't specify a default value, then a value must be provided when the pipeline template is used.
+Secrets have names, but they don't have types or default values. <!-- TODO verify that -->
 
 In your pipeline template, you use a special syntax to refer to the value of the parameter. Use the `${{parameters.YOUR_PARAMETER_NAME}}` macro, like in this example: 
 
-:::code language="yaml" source="code/3-script-parameters.yml" range="8-10" highlight="3" :::
+:::code language="yaml" source="code/3-called-workflow-inputs.yml" :::
 
-You pass the value for parameters to a pipeline template by using the `parameters` keyword, like in this example:
+You pass the value for inputs to a called workflow by using the `with` keyword, like in this example:
 
-:::code language="yaml" source="code/3-parameters.yml" highlight="3-4, 7-8" :::
+:::code language="yaml" source="code/3-caller-workflow-inputs.yml" :::
 
-You can also use parameters when you assign identifiers to your jobs and stages in pipeline templates. This technique helps when you need to reuse the same template multiple times in your pipeline, like this:
-
-:::code language="yaml" source="code/3-jobs-parameters.yml" highlight="7, 13" :::
+<!-- TODO here down -->
 
 ## Conditions
 
