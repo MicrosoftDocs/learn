@@ -45,6 +45,6 @@ The Altair Web Terminal is implemented as an [Azure static web app](/azure/stati
 
 Applications that run on CP/M will have read/write access to drive B. This access enables you to save files when the virtual disk server is running. The virtual disk server can run on your desktop or in a cloud-based Azure virtual machine.
 
-:::image type="content" source="../media/altair-azure-sphere-disk-cache-server.png" alt-text="Diagram that shows the Altair Web Terminal architecture." border="false":::
+:::image type="content" source="../media/altair-azure-sphere-disk-cache-server.jpg" alt-text="Diagram that shows the Altair Web Terminal architecture." border="false":::
 
 Drive B disk-sector reads and writes are sent over MQTT to the Python-based virtual disk server. The disk sector Cache-Aside cache is used to improve the performance of the virtual drive.
