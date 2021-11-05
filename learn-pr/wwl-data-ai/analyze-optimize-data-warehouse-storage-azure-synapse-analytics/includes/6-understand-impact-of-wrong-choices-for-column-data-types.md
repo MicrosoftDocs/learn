@@ -25,6 +25,6 @@ The following list shows the data types that dedicated SQL pool doesn't support 
 | sql_variant | Split column into several strongly typed columns. |
 | table |Convert to temporary tables. |
 | timestamp |Rework code to use datetime2 and the CURRENT_TIMESTAMP function. Only constants are supported as defaults, so current_timestamp can't be defined as a default constraint. If you need to migrate row version values from a timestamp typed column, use BINARY(8) or VARBINARY(8) for NOT NULL or NULL row version values. |
-| xml] | varchar |
+| xml | varchar |
 | user-defined type | Convert back to the native data type when possible. |
 | default values | Default values support literals and constants only. |

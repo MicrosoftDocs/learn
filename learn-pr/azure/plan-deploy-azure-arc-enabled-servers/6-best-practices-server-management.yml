@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.plan-deploy-azure-arc-enabled-servers.best-practices-server-management
+title: Best practices for Azure Arc-enabled servers management and services in Azure
+metadata:
+  title: Best practices for Azure Arc-enabled servers management and services in Azure
+  description: Overview of how to best leverage Azure services for security, governance, and observability of Azure Arc-enabled servers.
+  ms.date: 09/21/2021
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-best-practices-server-management.md)]
