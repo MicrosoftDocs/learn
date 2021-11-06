@@ -6,9 +6,9 @@ In this scenario, we'll receive requests to add bookmarks to our collection. The
 
 If the key that was passed to us is *not* found, we'll add the new bookmark to our database. We could stop there, but let's do a little more.
 
-Notice another step in the flowchart? So far, we haven't done much with the data that we receive in terms of processing. We move what we receive into a database. However, in a real solution, it is possible that we'd probably process the data in some fashion. We can decide to do all processing in the same function, but in this exercise, we'll show a pattern that offloads further processing to another component or piece of business logic.
+Notice another step in the flowchart? So far, we haven't done much with the data that we receive in terms of processing. We move what we receive into a database. However, in a real solution, it is possible that we'd probably process the data in some fashion. We can do all processing in the same function, but in this exercise, we'll show a pattern that offloads further processing to another component or piece of business logic.
 
-What might be a good example of this offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would, in turn, generate a QR code for the URL, store the image in Blob Storage, and add the address of the QR image into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming so, rather than wait for the result, we hand it off to a function and let it take care of this asynchronously.
+What might be a good example of offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would, in turn, generate a QR code for the URL, store the image in Blob Storage, and add the address of the QR image into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming so, rather than wait for the result, we hand it off to a function and let it take care of this asynchronously.
 
 Just as Azure Functions supports input bindings for various integration sources, it also has a set of output bindings templates to make it easy for you to write data to data sources. Output bindings are also configured in the *function.json* file. As you'll see in this exercise, we can configure our function to work with multiple data sources and services.
 
@@ -121,7 +121,7 @@ For example, here you can see that a function named **add-bookmark** adds messag
 
     If a message appears prompting you to install the Microsoft.Azure.WebJobs.Extensions.Storage extension, select **install** and wait for it to finish.
 
-    Next, we'll set up a storage account connection., where our queue will be hosted.
+    Next, we'll set up a storage account connection, where our queue will be hosted.
 
 1. Under **Storage account connection**, select **New**. The **New Storage Account connection** dialog box appears.
 
@@ -129,7 +129,7 @@ For example, here you can see that a function named **add-bookmark** adds messag
 
     The Storage account connection setting is populated with the name of a connection.
 
-1. Although we could keep the default values, let's change some settings to lend more meaning to the properties. In the **Create Output** pane, replace the old values with the new valude, as follows:
+1. Although we could keep the default values, let's change some settings to lend more meaning to the properties. In the **Create Output** pane, replace the old values with the new values, as follows:
 
     | Setting | Old value | New value | Description |
     |---|---|---|---|
@@ -173,7 +173,7 @@ So, that's it. Let's see our work in action in the next section.
 
 1. To open the **run.ps1** file in the code editor, select your function, **HttpTrigger3**.
 
-1. In the menu, under **Developer**, select **Code + Test**. The **Code + Test** pane for your function appears .
+1. In the menu, under **Developer**, select **Code + Test**. The **Code + Test** pane for your function appears.
 
 1. Replace all the code in the *run.ps1* file with the code from the following snippet, and in the command bar, select **Save**.
 
@@ -225,7 +225,7 @@ So, that's it. Let's see our work in action in the next section.
 
 Now that we have multiple output bindings, testing becomes a little trickier. In previous units, we were content to test by sending an HTTP request with a query string, but we'll want to perform an HTTP post this time. We also need to check to see whether messages are making it into a queue.
 
-1. In command bar of the **Code + Test** pane for your HTTP-triggered function, select **Test/Run**. The test pane appears, as shwon in this image:
+1. In command bar of the **Code + Test** pane for your HTTP-triggered function, select **Test/Run**. The test pane appears, as shown in this image:
 
     ![Screenshot showing the function Test Panel expanded.](../media/7-test-panel-open-small.png)
 
@@ -287,4 +287,4 @@ Azure Queue Storage queues are hosted in a storage account. You already selected
 
 1. You can test the function further by changing the request body in the test pane with new id/url sets, and running the function. Watch this queue to see more messages arrive. You can also look at the database to verify that new entries have been added.
 
-In this exercise, we expanded your knowledge of bindings to output bindings, writing data to your Azure Cosmos DB. We added another output binding to post messages to an Azure queue. This demonstrates the true power of bindings to help you shape and move data from incoming sources to a variety of destinations. We haven't written any database code or had to manage connection strings ourselves. Instead, we configured bindings declaratively, and let the platform take care of securing connections, scaling our function, and scaling our connections.
+In this exercise, we expanded your knowledge of bindings to output bindings, writing data to your Azure Cosmos DB. We added another output binding to post messages to an Azure queue. This demonstrates the true power of bindings to help you shape and move data from incoming sources to various destinations. We haven't written any database code or had to manage connection strings ourselves. Instead, we configured bindings declaratively, and let the platform take care of securing connections, scaling our function, and scaling our connections.
