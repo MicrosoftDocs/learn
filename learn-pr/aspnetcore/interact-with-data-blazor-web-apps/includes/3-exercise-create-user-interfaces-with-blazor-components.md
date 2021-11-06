@@ -57,18 +57,15 @@ You can also run and debug your project with Visual Studio Code.
 
 ## Download the Blazing Pizza assets and starter files
 
-You'll now clone your teams existing Blazor app project files from the GitHub repository [https://github.com/PhilStollery/blazing-pizza-for-learn.git](https://github.com/PhilStollery/blazing-pizza-for-learn.git).
+You'll now clone your teams existing Blazor app project files from the GitHub repository [https://github.com/MicrosoftDocs/mslearn-interact-with-data-blazor-web-apps.git](https://github.com/MicrosoftDocs/mslearn-interact-with-data-blazor-web-apps.git).
 
 1. Delete your BlazingPizza folder, with file explorer or in Visual Studio Code. 
 
 1. In the terminal, clone the current working files into a new **BlazingPizza** folder.
 
     ```powershell
-    git clone https://github.com/PhilStollery/blazing-pizza-for-learn.git BlazingPizza
+    git clone https://github.com/MicrosoftDocs/mslearn-interact-with-data-blazor-web-apps.git BlazingPizza
     ```
-
-> [!IMPORTANT]
->     TODO: REPLACE PERSONAL REPO WITH MS REPO
 
 1. Run the current version of the app, press <kbd>F5</kbd>.
 
