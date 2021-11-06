@@ -162,7 +162,7 @@ Let's break down what this code does:
 > [!NOTE]
 > The only task you performed was to create a queue binding. You never created the queue explicitly. You are witnessing the power of bindings! As the following notification declares, the queue is automatically created for you if it doesn't exist.
 > 
-> :::image type="content" source="./media/7-q-auto-create-small.png" alt-text="Screenshot showing message that the queue will be auto-created.":::.
+> :::image type="content" source="../media/7-q-auto-create-small.png" alt-text="Screenshot showing message that the queue will be auto-created.":::.
 > 
 
 So, that's it. Let's see our work in action in the next section.
@@ -261,7 +261,7 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
 
 1. Verify that the **Output** tab displays "bookmark added!" in the **HTTP response content** setting, as shown in the following screenshot.
 
-    :::image type="content" source="../media/7-test-success-small.png" alt-text=Screenshot showing Test pane and result of a successful test.":::
+    :::image type="content" source="../media/7-test-success-small.png" alt-text="Screenshot showing Test pane and result of a successful test.":::
 
 Congratulations! Your function works as designed! But, what about that queue operation we had in the code? Well, let's go see whether something was written to a queue.
 
