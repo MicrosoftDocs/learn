@@ -34,7 +34,7 @@ Some of these stages are repeated between your test and production environments,
 
 When you need to repeat steps in your workflow, you might try to copy and paste your step definitions. However, this isn't a good practice. It's easy to accidentally make subtle mistakes or for things to get out of sync when you duplicate your workflow's code. And in the future, when you need to make a change to the steps, you have to remember to apply the change in multiple places.
 
-## Called workflows
+## Reusable workflows
 
 GitHub Actions enables you to create reusable sections of workflow definitions by creating a separate workflow YAML file that defines steps or jobs. You can create YAML files to reuse parts of a workflow multiple times within a single workflow, or even in multiple workflow. The workflow that you reuse is a *called workflow*, and the workflow that includes it is a *caller workflow*. Conceptually, you can think of them as being similar to Bicep modules.
 

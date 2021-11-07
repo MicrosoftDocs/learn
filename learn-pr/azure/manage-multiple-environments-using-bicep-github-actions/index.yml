@@ -3,7 +3,7 @@ uid: learn.azure.manage-multiple-environments-using-bicep-github-actions
 metadata:
   moduleType: standard
   title: Manage multiple environments by using Bicep and GitHub Actions
-  description: Build a deployment workflow for Bicep IaC templates. Deploy to multiple environments by using caller and called workflows. Learn how to provide environment-specific parameters from your workflow.
+  description: Build a deployment workflow for Bicep IaC templates. Deploy to multiple environments by using reusable workflows. Learn how to provide environment-specific parameters from your workflow.
   ms.date: 10/18/2021
   author: vermegi
   ms.author: givermei
@@ -11,11 +11,11 @@ metadata:
   ms.prod: learning-azure
 title: Manage multiple environments by using Bicep and GitHub Actions
 summary: |
-  Deploy your Bicep code to multiple environments to improve the quality of your deployments. Use caller and called workflows to reduce code duplication, and set parameter values for each environment.
+  Deploy your Bicep code to multiple environments to improve the quality of your deployments. Use reusable workflows to reduce code duplication, and set parameter values for each environment.
 abstract: |
   After completing this module, you'll be able to:
     - Deploy Bicep files to multiple Azure environments from a workflow
-    - Use caller and called workflows to avoid repetition
+    - Use reusable workflows to avoid repetition
     - Use and secure parameters for each environment
 prerequisites: |
   You should be familiar with using:
@@ -46,7 +46,7 @@ products:
 units:
 - learn.azure.manage-multiple-environments-using-bicep-github-actions.introduction
 - learn.azure.manage-multiple-environments-using-bicep-github-actions.understand-environments
-- learn.azure.manage-multiple-environments-using-bicep-github-actions.handle-similarities-between-environments-using-caller-called-workflows
+- learn.azure.manage-multiple-environments-using-bicep-github-actions.handle-similarities-between-environments-using-reusable-workflows
 - learn.azure.manage-multiple-environments-using-bicep-github-actions.exercise-set-up-environment
 - learn.azure.manage-multiple-environments-using-bicep-github-actions.exercise-add-multiple-environments-your-workflow
 - learn.azure.manage-multiple-environments-using-bicep-github-actions.handle-differences-between-environments-using-bicep-parameters
