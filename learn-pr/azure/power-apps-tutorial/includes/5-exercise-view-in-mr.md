@@ -20,7 +20,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 ## Connect to data
 
-To include data to your **Power Apps**, you must connect to the data via the connectors in your application. Since we have stored all of the data in the **SharePoint** lists, we will select **SharePoint** as one of the connectors.
+To include data to your **Power Apps**, you must connect to the data via the connectors in your application. Since we have stored all of the data in a **SharePoint** list, we will select **SharePoint** as one of the connectors.
 
 1. To the **Power Apps Studio**'s left, click the **Data** option.
 
@@ -34,7 +34,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
     :::image type="content" source="../media/select-easy-sales.png" alt-text="Screenshot of select Easy Sales." lightbox="../media/select-easy-sales.png":::
 
-5. On selecting the **Easy Sales** SharePoint site, all the lists created on that site are displayed. Next, select all the SharePoint lists created concerning the application and click **Connect**.
+5. On selecting the **Easy Sales** SharePoint site, all the lists created on that site are displayed. Next, select the SharePoint list= created concerning the application and click **Connect**.
 
     :::image type="content" source="../media/select-lists.png" alt-text="Screenshot of selecting lists." lightbox="../media/select-lists.png":::
 
@@ -95,26 +95,29 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
     :::image type="content" source="../media/edit-display-text-1.png" alt-text="Screenshot of editing display text." lightbox="../media/edit-display-text-1.png":::
 
-3. We will use these buttons to navigate to the list of products under various categories. To do so, we need to create separate screens for each category. So, first, create four new **Blank** screens and rename it with your product categories, i.e., **Sofas**, **Chairs**, **Tables**, and **Carpets**.
+3. We will use these buttons to navigate to the list of products under various categories. To do so, we need to filter out the products from the SharePoint list. So, first, create two new **Blank** screen and rename it as **Products** and **Carpets**.
 
     :::image type="content" source="../media/edit-display-text-2.png" alt-text="Screenshot of adding new screens." lightbox="../media/edit-display-text-2.png":::
 
 4. Click the newly created **Sofas_button** button and configure the **OnSelect** property. On clicking the button, it must navigate us to the product list page created in the previous step. Replace the *false* by the below-given code:
 
     ```PowerApps
-    Navigate(Sofas,ScreenTransition.Cover)
+    Navigate(Products,ScreenTransition.Cover, {ID:1});
     ```
 
     :::image type="content" source="../media/navigate-sofas-page.png" alt-text="Screenshot of navigation of sofas page" lightbox="../media/navigate-sofas-page.png":::
 
+    >[!Note]
+    > The **ID** is a context variable with some assigned value. This value is passed on to the destination page mentioned in the **Navigate** function.
+
 5. Repeat the same procedure for the other three buttons. Again, make sure to provide proper screen names in the **Navigate** function; for example, for configuring the **OnSelect** property of the **Chairs**, **Tables**, and **Carpets** button, use the following navigate function respectively:
 
     ```PowerApps
-    Navigate(Chairs,ScreenTransition.Cover)
+    Navigate(Products,ScreenTransition.Cover, {ID:2});
     ```
 
     ```PowerApps
-    Navigate(Tables,ScreenTransition.Cover)
+    Navigate(Products,ScreenTransition.Cover, {ID:3});
     ```
 
     ```PowerApps
@@ -138,13 +141,27 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
 Now that we have added the product categories, we will display the list of products under each category. In Power Apps, we use **Gallery control** to display a record of data.
 
-1. In the **Sofas** screen; on the Insert tab, select **Gallery** > **Vertical** to add **Gallery control** to your screen.
+1. In the **Products** screen; on the Insert tab, select **Gallery** > **Vertical** to add **Gallery control** to your screen.
 
     :::image type="content" source="../media/select-vertical-gallery.png" alt-text="Screenshot of adding gallery" lightbox="../media/select-vertical-gallery.png":::
 
-2. Rename it to **Gallery_sofas**. On the **Properties** tab of the right-hand pane, configure the **Data source** property. Click the dropdown next to it and select the appropriate **SharePoint List**, for example, *Easy sales - Sofas*.
+2. Rename it to **Gallery_products**. On the **Properties** tab of the left-hand pane, configure the **Items** property as given below:
+
+    ```PowerApps
+    If(
+   ID = 1,
+   Filter('Easy Sales',(ProductCategory = "Sofa")),
+   ID = 2,
+   Filter('Easy Sales',(ProductCategory = "Chair")),
+   ID = 3,
+   Filter('Easy Sales',(ProductCategory = "Table")),
+   ID = 4,
+   Filter('Easy Sales',(ProductCategory = "Carpet")))
+   ```
 
     :::image type="content" source="../media/configure-data-source.png" alt-text="Screenshot of connecting sharepoint" lightbox="../media/configure-data-source.png":::
+
+    We filter the **Products** stored in the **SharePoint** list based on the **Product Category**. The context variables are used for the filtering process.
 
 3. Configure the **Gallery** > **Fields** property in the **Properties** pane by clicking on **Edit**:
     * Assign the **Price** to the **Subtitle1** heading.
@@ -154,7 +171,7 @@ Now that we have added the product categories, we will display the list of produ
 
     On assigning the above fields, you'll observe data getting reflected in your **Gallery**
 
-4. Adjust the size of the **Gallery_sofas** as required. To add the **ImageLink** to the **Image1** heading, click the **Image** in the gallery and configure the **Image** property on the **Property** tab by adding this line of code:
+4. Adjust the size of the **Gallery_products** as required. To add the **ImageLink** to the **Image1** heading, click the **Image** in the gallery and configure the **Image** property on the **Property** tab by adding this line of code:
 
     ```PowerApps
     ThisItem.ImageLink
@@ -178,7 +195,11 @@ Now that we have added the product categories, we will display the list of produ
 
     :::image type="content" source="../media/configure-back-icon.png" alt-text="Screenshot of configuring OnSelect property " lightbox="../media/configure-back-icon.png":::
 
-8. Follow the same procedure for the **Chairs**, **Tables**, and **Carpets** pages.
+8. Follow the same procedure for the **Carpets** page. Configure the **Items** property of the gallery added to **Carpets** page in the following way:
+
+    ```PowerApps
+    Filter('Easy Sales',ProductCategory = "Carpet")
+    ```
 
 >[!Tip]
 > To save your progress, click the **File** tab at the top and select the **Save** option.
@@ -187,22 +208,23 @@ Now that we have added the product categories, we will display the list of produ
 
 The details page includes all the details and information concerning the selected product. It gives you an understanding of certain features of the product. You have to connect the product page designed in the previous section and the details page created in this section.
 
-1. Create four new pages and rename them respectively as **Details_sofas**, **Details_chairs**, **Details_tables**, and **Details_carpets**.
+1. Create two new pages and rename them respectively as **Product_details** and **Carpet_details**.
 
     :::image type="content" source="../media/create-detail-page.png" alt-text="Screenshot of creating detailed pages" lightbox="../media/create-detail-page.png":::
 
-2. Click on the **>** icon in the gallery control included in the **Sofas** page and all other similar pages. Then, configure the **OnSelect** property by adding the following line in the **Functions** tab.
+2. Click on the **>** icon in the gallery control included in the **Products** page and **Carpets** page. Then, configure the **OnSelect** property by adding the following line in the **Functions** tab respectively.
 
     ```PowerApps
-    Navigate(Details_sofas,ScreenTransition.Cover,{content_sofas : ThisItem})
+    Navigate(Product_details,ScreenTransition.Cover,{content : ThisItem})
     ```
 
-    > [!Note]
-    > Customize the **Navigate** function by providing different destination pages and UpdateContextRecord, for example, **Navigate(Details_chairs,ScreenTransition.Cover,{content_chairs : ThisItem})** to navigate to the **Details_chairs** page with **content_chairs** as the **UpdateContextRecord**.
+    ```PowerApps
+    Navigate(Carpet_details,ScreenTransition.Cover,{content_carpets : ThisItem})
+    ```
 
     :::image type="content" source="../media/navigate-next-details.png" alt-text="Screenshot of navigation to next details" lightbox="../media/navigate-next-details.png":::
 
-3. Let's start building the **Details_sofas** page by adding a few labels, namely: **Price**, **Dimensions**, **Weight**, **Color**, and **Material**. You can edit the text inside the label by inserting the desired text beside the **Text** property of the **Label**. Rename the **Labels** accordingly.
+3. Let's start building the **Product_details** page by adding a few labels, namely: **Price**, **Dimensions**, **Weight**, **Color**, and **Material**. You can edit the text inside the label by inserting the desired text beside the **Text** property of the **Label**. Rename the **Labels** accordingly.
 
     :::image type="content" source="../media/add-labels.png" alt-text="Screenshot of adding labels" lightbox="../media/add-labels.png":::
 
@@ -212,15 +234,15 @@ The details page includes all the details and information concerning the selecte
 4. Insert another label named **Product name** to display the name of the product at the top and **Center align** it. Configure the **Text** property of the label by adding the following line:
 
     ```PowerApps
-    content_sofas.'Name (Title)'
+    content.'{Name}'
     ```
 
     :::image type="content" source="../media/add-title-label.png" alt-text="Screenshot of adding title label" lightbox="../media/add-title-label.png":::
 
-5. Click the **Media** dropdown and select **Image** to insert an image in the **Details_sofas** screen. Configure the **Image** property in the following way:
+5. Click the **Media** dropdown and select **Image** to insert an image in the **Product_details** screen. Configure the **Image** property in the following way:
 
     ```PowerApps
-    content_sofas.ImageLink
+    content.ImageLink
     ```
 
     :::image type="content" source="../media/add-image.png" alt-text="Screenshot of adding image" lightbox="../media/add-image.png":::
@@ -230,7 +252,7 @@ The details page includes all the details and information concerning the selecte
     * **Price** :
 
         ``` PowerApps
-        content_sofas.Price
+        content.Price
         ```
 
         :::image type="content" source="../media/blank-label-price.png" alt-text="Screenshot of blank label for price" lightbox="../media/blank-label-price.png":::
@@ -238,7 +260,7 @@ The details page includes all the details and information concerning the selecte
     * **Dimensions** :
 
         ``` PowerApps
-        content_sofas.Dimensions
+        content.Dimensions
         ```
 
         :::image type="content" source="../media/blank-label-dimensions.png" alt-text="Screenshot of blank label for dimension" lightbox="../media/blank-label-dimensions.png":::
@@ -246,7 +268,7 @@ The details page includes all the details and information concerning the selecte
     * **Weight** :
 
         ``` PowerApps
-        content_sofas.Weight
+        content.Weight
         ```
 
         :::image type="content" source="../media/blank-label-weight.png" alt-text="Screenshot of blank label for weight" lightbox="../media/blank-label-weight.png":::
@@ -254,7 +276,7 @@ The details page includes all the details and information concerning the selecte
     * **Color** :
 
         ``` PowerApps
-        content_sofas.Color
+        content.Color
         ```
 
         :::image type="content" source="../media/blank-label-color.png" alt-text="Screenshot of blank label for color" lightbox="../media/blank-label-color.png":::
@@ -262,7 +284,7 @@ The details page includes all the details and information concerning the selecte
     * **Material** :
 
         ``` PowerApps
-        content_sofas.PrimaryMaterial
+        content.PrimaryMaterial
         ```
 
         :::image type="content" source="../media/blank-label-material.png" alt-text="Screenshot of blank label for material" lightbox="../media/blank-label-material.png":::
@@ -270,21 +292,21 @@ The details page includes all the details and information concerning the selecte
 7. We will add a **Back** icon to navigate to the previous screen. To add the **Back** icon, expand the **Icons** dropdown and select the **Back icon**. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following:
 
     ```PowerApps
-    Navigate('Sofas',ScreenTransition.Cover)
+    Navigate('Products',ScreenTransition.Cover)
     ```
 
     :::image type="content" source="../media/add-back-icon.png" alt-text="Screenshot of adding back icon and OnSelect" lightbox="../media/add-back-icon.png":::
 
-    Likewise, follow the same procedure for **Details_chairs**, **Details_tables**, and **Details_carpets**. Customize the **Navigate** function accordingly.
+    Likewise, follow the same procedure for **Carpet_details**. Customize the **Navigate** function accordingly.
 
 >[!Tip]
 > To save your progress, click the **File** tab at the top and select the **Save** option.
 
 ## Insert and connect a 3D object to the View in MR component
 
-**View in MR** is a mixed reality feature provided by Power Apps which enables users to place **3D objects** or **Images** in their real world. The 3D models and images required for the application are stored in the **SharePoint** lists. So let's start by adding the required resources in the respective **SharePoint** lists.
+**View in MR** is a mixed reality feature provided by Power Apps which enables users to place **3D objects** or **Images** in their real world. The 3D models and images required for the application are stored in the **SharePoint** list. So let's start by adding the required resources in the **SharePoint** list.
 
-1. In the created **SharePoint** list named **Easy Sales-Sofas**, select the **+ Add column** and select **Show/hide columns**.
+1. In the created **SharePoint** list named **Easy Sales**, select the **+ Add column** and select **Show/hide columns**.
 
     :::image type="content" source="../media/select-add-column.png" alt-text="Screenshot to add column" lightbox="../media/select-add-column.png":::
 
@@ -300,29 +322,24 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/select-show-attachments.png" alt-text="Screenshot to select Show attachments first" lightbox="../media/select-show-attachments.png":::
 
-5. Switch to **Power Apps Studio**, add the **View in MR** component to the **Details_sofas** screen, Open the **Insert** tab, expand the **Mixed Reality**. Then, select the component **View in MR**.
+5. Switch to **Power Apps Studio**, add the **View in MR** component to the **Product_details** screen, Open the **Insert** tab, expand the **Mixed Reality**. Then, select the component **View in MR**.
+
     :::image type="content" source="../media/add-view-in-mr-button.png" alt-text="Screenshot of adding View in MR button" lightbox="../media/add-view-in-mr-button.png":::
 
 6. In the **Properties** tab for the **View in MR** component, select the **Source** field and enter to access the 3D models stored in your **SharePoint** list:
 
     ```PowerApps
-    First(Gallery_sofas.Selected.Attachments).Value
+    First(Gallery_products.Selected.Attachments).Value
     ```
 
     :::image type="content" source="../media/add-source.png" alt-text="Screenshot to add source for view in MR" lightbox="../media/add-source.png":::
-
-7. Repeat the same procedure in the **Details_chairs** and **Details_tables** screen. While duplicating the procedure, make sure to change the **Gallery** names accordingly, for example,
-
-    ```PowerApps
-    First(Gallery_chairs.Selected.Attachments).Value
-    ```
 
 >[!Note]
 > We do not include the **View in MR** feature for the **Carpets** category. Instead, we will be estimating the **Price** of the carpet depending upon the area calculated in the **Measure in MR** session.
 
 Another unique property provided by the **View in MR** component is **Object scaling**. You can edit the sizes of your 3D models externally by changing the **Object width**, **Object height**, and **Object depth** properties.
 
-* Set the  following properties in the **Property** pane as shown in figure:
+* Set the following properties in the **Property** pane as shown in figure:
 
   * **Object width** = 1.5
   * **Object height** = 1
@@ -343,11 +360,11 @@ Another unique property provided by the **View in MR** component is **Object sca
 
 It is allowed to take pictures during the **View in MR** session and display them through a gallery. This is an additional feature included in the application to provide a good user experience. In the **Notes page** you'll be able to store some textual notes and store the images captured during **View in MR** session.
 
-1. Create four new **Blank** screens and rename them as **Notes_sofas**, **Notes_chairs**, **Notes_tables**, and **Notes_carpets**.
+1. Create two new **Blank** screens and rename them as **Product_notes** and **Notes_carpets**.
 
     :::image type="content" source="../media/add-blank-notes-page.png" alt-text="Screenshot of new screens for notes" lightbox="../media/add-blank-notes-page.png":::
 
-2. Design the **Notes_sofas** page by, clicking the **Input** dropdown and selecting **Text input**. Rename it as **TextInput_sofas**.
+2. Design the **Product_notes** page by, clicking the **Input** dropdown and selecting **Text input**. Rename it as **TextInput_sofas**.
 
     :::image type="content" source="../media/add-text-input.png" alt-text="Screenshot of adding Text input" lightbox="../media/add-text-input.png":::
 
@@ -362,7 +379,7 @@ It is allowed to take pictures during the **View in MR** session and display the
 5. Click the gallery added and configure the **Items** property by adding the following line:
 
     ```PowerApps
-    ViewInMR.Photos
+    ViewInMR1.Photos
     ```
 
     :::image type="content" source="../media/configure-items-property.png" alt-text="Screenshot of adding property to gallery" lightbox="../media/configure-items-property.png":::
@@ -380,24 +397,24 @@ It is allowed to take pictures during the **View in MR** session and display the
 8. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following
 
     ```PowerApps
-    Navigate('Details_sofas',ScreenTransition.Cover)
+    Navigate(Product_details,ScreenTransition.Cover)
     ```
 
     :::image type="content" source="../media/configure-back-icon-notes.png" alt-text="Screenshot of positioned and OnSelect" lightbox="../media/configure-back-icon-notes.png":::
 
-9. Switch to the **Details_sofas** screen and add a **Note** icon from the **Icons** dropdown on the **Insert** tab.
+9. Switch to the **Product_details** screen and add a **Note** icon from the **Icons** dropdown on the **Insert** tab.
 
     :::image type="content" source="../media/add-note-icon.png" alt-text="Screenshot of adding note icon" lightbox="../media/add-note-icon.png":::
 
 10. Configure the **OnSelect** property of the **Note** icon by adding the following line:
 
     ```PowerApps
-    Navigate(Notes_sofas,ScreenTransition.CoverRight)
+    Navigate(Product_notes,ScreenTransition.CoverRight)
     ```
 
     :::image type="content" source="../media/configure_note_icon.png" alt-text="Screenshot of OnSelect for note" lightbox="../media/configure_note_icon.png":::
 
-11. Replicate the same procedure for **Notes_chairs**, **Notes_tables**, **Notes_carpets**, and its respective **Details** page.
+11. Replicate the same procedure for **Notes_carpets**.
 
 >[!Note]
 > For the **Notes_carpets** page, exclude adding the **Gallery control** to store photos taken during the **View in MR** session since we won't be including the **View in MR** feature for the **Carpets** category.
