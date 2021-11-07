@@ -22,7 +22,7 @@ The modules in this learning path are part of a progression. For learning purpos
 Run a template that sets up your GitHub repository.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://github.com/MicrosoftDocs/mslearn-manage-multiple-environments-using-github-actions?azure-portal=true)
+> [Run the template](https://github.com/MicrosoftDocs/mslearn-manage-multiple-environments-using-bicep-github-actions?azure-portal=true)
 
 On the GitHub site, follow these steps to create a repository from the template:
 
@@ -30,7 +30,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
    :::image type="content" source="../media/4-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
 
-1. Enter a name for your new project, such as *toy-website-test*.
+1. Enter a name for your new project, such as *toy-website-environments*.
 
 1. Select the **Public** checkbox.
 
@@ -77,7 +77,7 @@ You now have a copy of the template repository in your own account. You will now
 1. Reopen Visual Studio Code in the repository folder by running the following command in the Visual Studio Code terminal:
 
    ```bash
-   code -r toy-website-test
+   code -r toy-website-environments
    ```
 
 ## Sign in to Azure
@@ -294,84 +294,42 @@ You've created two resource group and the service principals that can deploy to 
 
 1. Repeat the process for a new secret named *AZURE_CREDENTIALS_Production*, and paste the value for the production environment's service principal from the previous section.
 
-1. Verify that your list of secrets shows both secrets:
+1. Verify that your list of secrets now shows both secrets.
 
-   TODO
+   :::image type="content" source="../../includes/media/github-create-repository-secrets.png" alt-text="Screenshot of the GitHub interface showing the list of secrets, including both the test and production secrets." border="true":::
 
-<!-- TODO here down -->
 ## Create environments in Azure Pipelines
 
-1. In your browser, go to **Pipelines** > **Environments**.
+1. In your browser, go to **Settings** > **Environments**.
 
-   :::image type="content" source="../media/4-environments.png" alt-text="Screenshot of the Azure DevOps interface that shows the Pipelines menu and the Environments item.":::
+   :::image type="content" source="../media/4-environments.png" alt-text="Screenshot of the GitHub interface that shows the Settings menu and the Environments item.":::
 
 1. Select **New environment**.
 
-   :::image type="content" source="../media/4-environments-new.png" alt-text="Screenshot of the Azure DevOps interface that shows the Environments page and the button for creating an environment.":::
+   :::image type="content" source="../media/4-environments-new.png" alt-text="Screenshot of the GitHub interface that shows the Environments page and the button for creating an environment.":::
 
 1. Enter **Test** as the environment name.
 
-   Leave the description blank. For **Resource**, select **None**. Then select **Create**.
+   :::image type="content" source="../media/4-environments-new-details-test.png" alt-text="Screenshot of the GitHub page for a new environment named Test, with the Configure environment button.":::
 
-   > [!NOTE]
-   > In Azure Pipelines, environments are used to enable deployment features. Some of these features apply only when you're deploying to Kubernetes or to virtual machines. In this module, we don't use these features and you can ignore them.
+1. Select **Configure environment**.
 
-   :::image type="content" source="../media/4-environments-new-details-test.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Test, with completed details and the Create button.":::
+1. Select **Environments** to return to the environments list.
 
-1. Select the arrow to return to the environments list.
+1. Repeat the process to create another environment named **Production**.
 
-   Before a pipeline can use the environment, you must grant it permission. For simplicity, you'll allow all pipelines to access the environment. In your own pipelines, you should restrict access to environments to just the pipelines that require it.
-
-1. Select the button with three dots and select **Security**.
-
-   :::image type="content" source="../media/4-environment-security.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, with the More Actions menu displayed and the Security item highlighted.":::
-
-1. In the section named **Pipeline permissions**, select the button with three dots. Select **Open access**.
-
-   :::image type="content" source="../media/4-environment-security-open.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, with the More Actions menu displayed and the Open access item highlighted.":::
-
-1. Select the left arrow twice to return to the environments list.
-
-   :::image type="content" source="../media/4-environment-back.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, including the arrow button..":::
-
-1. Repeat the process to create another environment named **Production**. Remember to set it to open access.
-
-   :::image type="content" source="../media/4-environments-new-details-production.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Production, with completed details.":::
+   :::image type="content" source="../media/4-environments-new-details-production.png" alt-text="Screenshot of the GitHub page for a new environment named Production.":::
 
    Leave the production environment page open.
 
-## Add an approval check to the production environment
+## Add a protection rule to the production environment
 
-1. Near the upper right of the page, select the button with three dots and select **Approvals and checks** from the pop-up menu.
+1. Select **Required reviewers**.
 
-   :::image type="content" source="../media/4-add-check.png" alt-text="Screenshot of the Azure DevOps interface that shows the Website environment and the button with three dots.":::
+   :::image type="content" source="../media/4-add-check-approval.png" alt-text="Screenshot of the GitHub interface that shows the page for configuring an environment and adding a required reviewer.":::
 
-1. Select **Approvals**.
+1. In the **Search for people or teams** text box, type your own GitHub username and select yourself.
 
-   :::image type="content" source="../media/4-add-check-approval.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding a check and the Approvals item.":::
+   :::image type="content" source="../media/4-add-check-approval-details.png" alt-text="Screenshot of the GitHub interface that shows the page for adding an required reviewer, with completed details and the Save protection rules button.":::
 
-1. In the **Approvers** text box, type your own name and select yourself.
-
-1. Select the arrow button next to **Advanced**.
-
-   Notice that, by default, approvers are allowed to approve the runs that they've triggered. Because you're the only person who will work with this pipeline, leave this checkbox selected. In other organizations, you might need to specify a different approver to meet compliance requirements.
-
-1. Select **Create**.
-
-   :::image type="content" source="../media/4-add-check-approval-details.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding an approval check, with completed details and the Create button.":::
-
-## Delete the old environment
-
-In the previous versions of the pipeline, you used a single environment named *Website*. Now that you've created pipeline environments that represent your new environments, you'll delete the old pipeline environment.
-
-1. Go to **Pipelines** > **Environments**.
-
-1. Select the **Website** environment.
-
-   :::image type="content" source="../media/4-environments-website.png" alt-text="Screenshot of the Azure DevOps interface that shows the list of environments and the Website environment.":::
-
-1. Near the upper right of the page, select the button with three dots and select **Delete** from the pop-up menu.
-
-   :::image type="content" source="../media/4-environment-delete.png" alt-text="Screenshot of the Azure DevOps interface that shows the test environment, with the More Actions menu and the Delete button highlighted.":::
-
-1. Select **Delete** to confirm the deletion.
+1. Select **Save protection rules**.
