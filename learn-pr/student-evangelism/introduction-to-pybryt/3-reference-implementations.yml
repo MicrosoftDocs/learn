@@ -17,15 +17,15 @@ quiz:
   questions:
     - content: "To create a reference implementation, what must be passed to the constructor?"
       choices:
-        - content: "the name of the reference"
+        - content: "The name of the reference"
           isCorrect: false
           explanation: "Not quite. The constructor also requires a list of annotations."
-        - content: "a list of annotations"
+        - content: "A list of annotations"
           isCorrect: false
           explanation: "Not quite. The constructor also requires the name of the reference."
-        - content: "the name of the reference and a list of annotations"
+        - content: "The name of the reference and a list of annotations"
           isCorrect: true
-          explanation: "Correct! The constructor requires both as positional arguents."
+          explanation: "Correct! The constructor requires both as positional arguments."
     - content: "How many reference implementations can you use with PyBryt?"
       choices:
         - content: "One"
