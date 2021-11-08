@@ -1,6 +1,6 @@
 ## Azure Policy concepts
 
-There are some concepts you need to understand in advance to work with Azure Policy and here we'll be covering them.
+The following are some concepts you need to understand in advance to work with Azure Policy:
 
 **Policy:** A policy is the business rule to be applied within your organization.
 
