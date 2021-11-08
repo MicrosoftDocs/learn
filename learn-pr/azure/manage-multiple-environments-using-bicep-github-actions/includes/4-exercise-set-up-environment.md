@@ -316,17 +316,15 @@ You've created two resource group and the service principals that can deploy to 
 
 1. Select **Environments** to return to the environments list.
 
+   :::image type="content" source="../media/4-environments-new-configure-test.png" alt-text="Screenshot of the GitHub page for a new environment named Test, with the Environment link.":::
+
 1. Repeat the process to create another environment named **Production**.
 
-   :::image type="content" source="../media/4-environments-new-details-production.png" alt-text="Screenshot of the GitHub page for a new environment named Production.":::
-
-   Leave the production environment page open.
+   Leave the production environment configuration page open.
 
 ## Add a protection rule to the production environment
 
 1. Select **Required reviewers**.
-
-   :::image type="content" source="../media/4-add-check-approval.png" alt-text="Screenshot of the GitHub interface that shows the page for configuring an environment and adding a required reviewer.":::
 
 1. In the **Search for people or teams** text box, type your own GitHub username and select yourself.
 
