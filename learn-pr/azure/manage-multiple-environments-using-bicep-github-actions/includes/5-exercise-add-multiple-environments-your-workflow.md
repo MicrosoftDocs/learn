@@ -53,7 +53,8 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    Notice that a condition is applied to the jobs. The preflight validation runs only for non-production environments. The what-if operation runs only for the production environment.
 
-<!-- TODO watch indentation -->
+   > [!TIP]
+   > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
 
 1. Below the validation job, paste the definition of the deploy job:
 

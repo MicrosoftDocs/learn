@@ -20,8 +20,6 @@ You decide to store the API keys in GitHub secrets, to ensure they're protected 
 
 1. Select the **New repository secret** button.
 
-   :::image type="content" source="../media/7-secrets-new.png" alt-text="Screenshot of GitHub and the button for adding a secret.":::
-
 1. Enter *REVIEW_API_KEY_TEST* as the secret name, and *sandboxsecretkey* as the value.
 
    :::image type="content" source="../media/7-secrets-new-test.png" alt-text="Screenshot of GitHub showing a new secret.":::
