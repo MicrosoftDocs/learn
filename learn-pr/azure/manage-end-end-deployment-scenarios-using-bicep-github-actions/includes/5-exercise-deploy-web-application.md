@@ -65,7 +65,7 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
 1. Save your changes to the file.
 
-## Update deployment stage
+## Update deployment job
 
 1. Open the *deploy.yml* file in the *.github/workflows* folder.
 
@@ -124,7 +124,7 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
 1. The workflow then runs the *deploy-test / smoke-test* job, but the smoke test fails:
 
-   :::image type="content" source="../media/5-smoke-test-failure.png" alt-text="Screenshot of GitHub that shows the workflow run's smoke test job for the test environment. The status shows that the stage has failed.":::
+   :::image type="content" source="../media/5-smoke-test-failure.png" alt-text="Screenshot of GitHub that shows the workflow run's smoke test job for the test environment. The status shows that the job has failed.":::
 
 1. Select the **deploy-test / smoke-test** job to open the workflow log.
 

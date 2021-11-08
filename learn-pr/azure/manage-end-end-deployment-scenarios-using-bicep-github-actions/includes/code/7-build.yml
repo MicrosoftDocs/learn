@@ -30,3 +30,22 @@ jobs:
       with:
         name: website
         path: ./src/ToyCompany/ToyCompany.Website/bin/Release/netcoreapp3.1/publish/publish.zip
+
+  build-database:
+    name: Build database
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Prepare MSBuild
+      uses: microsoft/setup-msbuild@v1.0.3
+
+    - name: Build database project
+      working-directory: ./src/ToyCompany/ToyCompany.Database
+      run: MSBuild.exe ToyCompany.Database.sqlproj -property:Configuration=Release
+
+    - name: Publish website as workflow artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: database
+        path: ./src/ToyCompany/ToyCompany.Database/bin/Release/ToyCompany.Database.dacpac

@@ -1,4 +1,4 @@
-You updated your pipeline to build and deploy your website's application to the Azure App Service app defined in your Bicep file. But the smoke test stage is failing because the database isn't working yet. In this unit, you'll deploy a new Azure SQL logical server and database, and you'll configure your pipeline to build and deploy the database's schema. You'll also update your pipeline to add some sample product data for your test environment so that your team can try out the website.
+You updated your workflow to build and deploy your website's application to the Azure App Service app defined in your Bicep file. But the smoke test job is failing because the database isn't working yet. In this unit, you'll deploy a new Azure SQL logical server and database, and you'll configure your workflow to build and deploy the database's schema. You'll also update your workflow to add some sample product data for your test environment so that your team can try out the website.
 
 In the process, you'll:
 
@@ -6,10 +6,10 @@ In the process, you'll:
 > * Add a blob container to the Azure storage account.
 > * Add an Azure SQL logical server and database.
 > * Update the build stage to build the database project into a DACPAC file.
-> * Add new variables to your variable group for the Azure SQL logical server and database.
-> * Update your deployment stages to use the new variables as parameter values.
-> * Add new pipeline steps to deploy your DACPAC file.
-> * Run the pipeline and view the website.
+> * Add new variables and secrets for the Azure SQL logical server and database.
+> * Update your workflow to use the new variables and secrets.
+> * Add new workflow steps to deploy your DACPAC file.
+> * Run the workflow and view the website.
 
 ## Add a storage container
 
@@ -59,7 +59,7 @@ Your Bicep file doesn't currently deploy an Azure SQL logical server or database
    :::code language="bicep" source="code/7-main.bicep" range="38-39" :::
 
    > [!NOTE]
-   > For simplicity, the application uses the administrator login and password to access the database. This isn't good practice for a production solution, though. It's better to use an App Service managed identity to access the database, and grant the managed identity the minimum permissions needed by the application. We link to more information in the summary.
+   > For simplicity, the application uses the administrator login and password to access the database. This isn't good practice for a production solution, though. It's better to use an App Service managed identity to access the database, and grant the managed identity the minimum permissions needed by the application. We link to more information in the summary. <!-- TODO check we do -->
 
 1. Near the end of the file contents, above the outputs, add the Azure SQL logical server and database resources:
 
@@ -81,25 +81,19 @@ Your Bicep file doesn't currently deploy an Azure SQL logical server or database
 
 ## Add new build steps for the database project
 
-Your website developers have prepared a Visual Studio database project that deploys and configures your website database table. Here, you update your pipeline *Build* stage to build the database project into a DACPAC file and publish it as a pipeline artifact.
+Your website developers have prepared a Visual Studio database project that deploys and configures your website database table. Here, you update your workflow *build* called workflow to build the database project into a DACPAC file and upload it as a workflow artifact.
 
-1. Open the *build.yml* file in the *deploy/pipeline-templates* folder.
+1. Open the *build.yml* file in the *.github/workflows* folder.
 
-1. To build the Visual Studio database project, copy the generated DACPAC file to a staging folder, and publish it as a pipeline artifact, add the following steps:
+1. To build the Visual Studio database project and upload the generated DACPAC file as a workflow artifact, add the following job:
 
-   :::code language="yaml" source="code/7-build.yml" highlight="31-50" :::
+   :::code language="yaml" source="code/7-build.yml" highlight="34-51" :::
 
 1. Save your changes to the file.
 
-## Add values to the variable groups
+## Add secrets
 
-1. In your browser, go to **Pipelines** > **Library**.
-
-1. Select the **ToyWebsiteProduction** variable group.
-
-   :::image type="content" source="../media/7-variable-groups.png" alt-text="Screenshot of Azure DevOps showing the list of variable groups, with the ToyWebsiteProduction variable group highlighted.":::
-
-1. Add the following variables to the variable group:
+<!-- TODO add secrets -->
 
    | Name | Value |
    |-|-|
@@ -107,29 +101,21 @@ Your website developers have prepared a Visual Studio database project that depl
    | SqlServerAdministratorLoginPassword | SecurePassword!111 |
    | | |
 
-1. Select the padlock icon next to the **SqlServerAdministratorLoginPassword** variable. This tells Azure Pipelines to treat the variable's value securely.
-
-   :::image type="content" source="../media/7-variable-group-secure.png" alt-text="Screenshot of the production variable group, with the secret variable button highlighted.":::
-
-1. Save the variable group.
-
-   :::image type="content" source="../media/7-variable-group-edit.png" alt-text="Screenshot of the production variable group, with the Save button highlighted.":::
-
-1. Repeat the process to add the following variables to the **ToyWebsiteTest** variable group:
-
    | Name | Value |
    |-|-|
    | SqlServerAdministratorLogin | TestToyCompanyAdmin |
    | SqlServerAdministratorLoginPassword | SecurePassword!999 |
    | | |
 
-   Remember to select the padlock icon next to the **SqlServerAdministratorLoginPassword** variable and save the variable group.
+## Add inputs
 
-## Add parameter values to the Validate and Preview stages
+<!-- TODO define in workflow.yml and deploy.yml -->
 
-The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword`. Here, you propagate those parameter values from your variable group, for both the *Validate* and *Preview* stages.
+## Add parameter values to the validate and preview steps
 
-1. In Visual Studio Code, open the *deploy.yml* file in the *deploy/pipeline-templates* folder.
+The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword`. Here, you propagate those parameter values from your workflow inputs and secrets, for both the *validate* and *preview* steps.
+
+1. In Visual Studio Code, open the *deploy.yml* file in the *.github/workflows* folder.
 
 1. Update the *Validate* stage's *RunPreflightValidation* step to add the new parameters:
 
