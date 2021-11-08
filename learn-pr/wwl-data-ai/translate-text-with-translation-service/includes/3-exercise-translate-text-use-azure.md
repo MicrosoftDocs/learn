@@ -24,15 +24,13 @@ If you haven't already done so, create a **Cognitive Services** resource in your
 
 ### Get the Key and Location for your Cognitive Services resource
 
-To use your cognitive services resource, client applications need its authentication key and location:
+1. Wait for deployment to complete. Then go to your Cognitive Services resource, and on the **Overview** page, click the link to manage the keys for the service. You will need the endpoint and keys to connect to your Cognitive Services resource from client applications.
 
-1. Wait for deployment to complete. Then go to your cognitive services resource, and on the **Overview** page, click the link to manage the keys for the service. You will need the endpoint and keys to connect to your cognitive services resource from client applications.
-2. View the **Keys and Endpoint** page for your Speech resource. You will need the **location/region** and keys to connect from client applications.
+2. View the **Keys and Endpoint** page for your resource. You will need the **location/region** and **key** to connect from client applications.
 
 > [!NOTE] 
 > To use the Translator service you do not need to use the Cognitive Service endpoint. A global endpoint just for the Translator service is provided. 
 
-## Configure and run a client application
 ## Run Cloud Shell 
 
 To test the capabilities of the Translation service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
@@ -85,11 +83,11 @@ Now that you have a custom model, you can run a simple client application that u
     > [!TIP]
     > You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
 
-    After pasting the endpoint and key values, the first two lines of code should look similar to this:
+    After pasting the key and location values, the first lines of code should look similar to this:
 
     ```PowerShell
-    $endpoint="https://resource.cognitiveservices.azure.com/"
     $key="1a2b3c4d5e6f7g8h9i0j...."
+    $location="somelocation"
     ```
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
