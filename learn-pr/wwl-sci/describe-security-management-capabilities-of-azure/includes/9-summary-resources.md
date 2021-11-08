@@ -12,8 +12,7 @@ Now you've completed this module, you should be able to: 
 
 To find out more about any of the topics covered in this module, go to:
 
-- [Azure Security Center](/azure/security-center/security-center-introduction)  
-- [Azure secure score](/azure/security-center/secure-score-security-controls)
-- [Azure Defender](/azure/security-center/azure-defender)  
-- [Security baselines](/azure/security/benchmarks/security-baselines-overview)  
-- [Azure Defender pricing](https://azure.microsoft.com/pricing/details/azure-defender/)
+- [What is Microsoft Defender for Cloud?](/azure/security-center/azure-defender)
+- [Secure score in Microsoft Defender for Cloud](/azure/security-center/secure-score-security-controls)
+- [Security baselines](/azure/security/benchmarks/security-baselines-overview)
+- [Microsoft Defender for Cloud pricing](https://azure.microsoft.com/pricing/details/azure-defender/)

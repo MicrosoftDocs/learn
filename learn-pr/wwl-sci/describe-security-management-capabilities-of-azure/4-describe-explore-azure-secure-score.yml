@@ -4,12 +4,13 @@ title: Describe and explore Azure Secure score
 metadata:
   title: Describe and explore Azure Secure score
   description: "Describe and explore Azure Secure score"
-  ms.date: 06/21/2021
+  ms.date: 11/08/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/4-describe-explore-azure-secure-score.md)]

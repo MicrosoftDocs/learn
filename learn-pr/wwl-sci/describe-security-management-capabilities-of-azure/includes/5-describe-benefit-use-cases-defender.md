@@ -1,38 +1,23 @@
-Azure Defender is a built-in tool that provides threat protection for workloads running in Azure, on-premises, and other clouds. Azure Defender is the leading Microsoft extended detection and response (XDR) solution for threat protection. Integrated with Azure Security Center, Azure Defender protects your hybrid data, cloud-native services and servers, and integrates with your existing security workflows.
+Microsoft Defender for Cloud is offered in two modes:
 
-Built-in policies come with each Azure Defender plan, and you can add custom policies and initiatives. Also, you can add regulatory standards, such as NIST and Azure CIS, and the Azure Security Benchmark for a truly customized view of your compliance.
+- Without enhanced security features (Free) - Microsoft Defender for Cloud is enabled for free on all your Azure subscriptions. Using this free mode provides the secure score and its related features: security policy, continuous security assessment, and actionable security recommendations to help you protect your Azure resources.
 
-You'll find the Azure Defender dashboard in Azure Security Center. It provides visibility and control of your organization's cloud workload protection (CWP) features across the network.
+- Microsoft Defender for Cloud with all enhanced security features - Enabling enhanced security extends the capabilities of the free mode to workloads running in private and other public clouds, providing unified security management and threat protection across your hybrid cloud workloads. Some of the major benefits of enhanced security features are listed below.
 
-### Scope of Azure Defender
+#### Enhanced security features
 
-Azure Defender comes with several different plans that can be enabled separately and will run simultaneously to provide a comprehensive defense for compute, data, and service layers in your environment. The Azure Defender plans you can select from are:
+- Microsoft Defender for Endpoint - Microsoft Defender for servers includes Microsoft Defender for Endpoint for comprehensive endpoint detection and response (EDR).
 
-- **Azure Defender for servers** adds threat detection and advanced defenses for your Windows and Linux machines.
-- **Azure Defender for App Service** uses the cloud scale to identify attacks targeting applications running over App Service.
-- **Azure Defender for Storage** detects potentially harmful activity on your Azure Storage accounts. Data can be protected, whether stored as blob containers, file shares, or data lakes.
-- **Azure Defender for SQL** extends Azure Security Center's data security package to secure your databases and their data wherever they're located.
-- **Azure Defender for Kubernetes** provides the best cloud-native Kubernetes security environment hardening, workload protection, and run-time protection.
-- **Azure Defender for container registries** protects all the Azure Resource Manager based registries in your subscription. Azure Defender scans all images pushed to the registry, or imported into the registry, or any images pulled within the last 30 days.
-- **Azure Defender for Key Vault** is Azure-native, advanced threat protection for Azure Key Vault, providing an extra layer of security intelligence.
+- Vulnerability scanning for virtual machines and container registries - Easily deploy a scanner to all of your virtual machines. View, investigate, and remediate the findings directly within Microsoft Defender for Cloud.
 
-### Hybrid cloud protection
+- Multi-cloud security - Connect your accounts from Amazon Web Services (AWS) and Google Cloud Platform (GCP) to protect resources and workloads on those platforms with a range of Microsoft Defender for Cloud security features.
 
-You can defend your Azure environment, and add Azure Defender capabilities to the hybrid cloud environment:
+- Hybrid security – Get a unified view of security across all of your on-premises and cloud workloads. Apply security policies and continuously assess the security of your hybrid cloud workloads to ensure compliance with security standards. Collect, search, and analyze security data from multiple sources, including firewalls and other partner solutions.
 
-- Protect your non-Azure servers.
-- Protect your virtual machines in other clouds (such as AWS and GCP).
+- Threat protection alerts - Monitor networks, machines, and cloud services for incoming attacks and post-breach activity. Streamline investigation with interactive tools and contextual threat intelligence.
 
-To focus on what matters most, you can customize threat intelligence and prioritize alerts according to your specific environment.
+- Track compliance with a range of standards - Microsoft Defender for Cloud continuously assesses your hybrid cloud environment to analyze the risk factors according to the controls and best practices in Azure Security Benchmark. When you enable the enhanced security features, you can apply a range of other industry standards, regulatory standards, and benchmarks according to your organization's needs. Add standards and track your compliance with them from the regulatory compliance dashboard.
 
-### Azure Defender alerts
+- Access and application controls - Block malware and other unwanted applications by applying machine learning powered recommendations adapted to your specific workloads to create allow and deny lists. Reduce the network attack surface with just-in-time, controlled access to management ports on Azure VMs. Access and application controls drastically reduce exposure to brute force and other network attacks.
 
-When Azure Defender detects a threat in any area of your environment, it generates an alert. These alerts describe details of the affected resources, suggested remediation steps, and in some cases, an option to trigger a logic app in response. The alerts can also be exported into Azure Sentinel.
-
-### Advanced protection
-
-Azure Defender uses advanced analytics for tailored recommendations as they relate to your resources. These analytics might include securing the management ports of your VMs with just-in-time access and adaptive application controls to create allow lists for what apps should and shouldn't run on your machines.
-
-### Vulnerability assessment
-
-Azure Defender includes vulnerability scanning for your virtual machines and container registries. Review the findings from these vulnerability scanners and respond to them all from within Security Center.
+Additional benefits include threat protection for the resources connected to the Azure environment and container security features, among others.

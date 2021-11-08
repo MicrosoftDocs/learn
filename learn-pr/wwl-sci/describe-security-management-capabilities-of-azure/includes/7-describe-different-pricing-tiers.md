@@ -1,13 +1,9 @@
 Cloud security posture management is essential for every organization. Microsoft Azure lets you decide how much you need to meet your regulatory, compliance, and corporate security needs.
 
-Security Center is offered in two modes:
+Defender for Cloud is offered in two modes:
 
-#### Azure Defender off
+- Without enhanced security features (Free) - Defender for Cloud is enabled for free on all your Azure subscriptions when you visit the Microsoft Defender for Cloud dashboard in the Azure portal for the first time, or if enabled programmatically via API. Using this free mode provides the secure score and its related features: security policy, continuous security assessment, and actionable security recommendations to help you protect your Azure resources.
 
-Security Center without Azure Defender is enabled free of charge on all your Azure subscriptions when you visit the Azure Security Center dashboard in the Azure portal for the first time, or if enabled programmatically via API.
+- Defender for Cloud with all enhanced security features - Enabling enhanced security extends the capabilities of the free mode to workloads running in private and other public clouds, providing unified security management and threat protection across your hybrid cloud workloads. 
 
-#### Azure Defender on
-
-Enabling Azure Defender extends the free mode capabilities to workloads running in private and other public clouds, providing unified security management and threat protection across your hybrid cloud workloads.
-
-For more information visit [Azure Defender pricing](https://azure.microsoft.com/pricing/details/azure-defender/).
+For more information visit [Microsoft Defender for Cloud pricing](https://azure.microsoft.com/pricing/details/azure-defender/).
