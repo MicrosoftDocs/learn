@@ -91,23 +91,39 @@ Your website developers have prepared a Visual Studio database project that depl
 
 1. Save your changes to the file.
 
-## Add secrets
+## Define the secrets
 
-<!-- TODO add secrets -->
+<!-- TODO explain -->
 
-   | Name | Value |
-   |-|-|
-   | SqlServerAdministratorLogin | ToyCompanyAdmin |
-   | SqlServerAdministratorLoginPassword | SecurePassword!111 |
-   | | |
+1. In your browser, go to **Settings** > **Secrets**.
 
-   | Name | Value |
-   |-|-|
-   | SqlServerAdministratorLogin | TestToyCompanyAdmin |
-   | SqlServerAdministratorLoginPassword | SecurePassword!999 |
-   | | |
+   :::image type="content" source="../media/7-secrets.png" alt-text="Screenshot of GitHub that shows the Secrets menu item under the Settings category.":::
 
-## Add inputs
+1. Select the **New repository secret** button.
+
+1. Enter *SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_TEST* as the secret name, and *SecurePassword!111* as the value.
+
+   :::image type="content" source="../media/7-secrets-new-test.png" alt-text="Screenshot of GitHub showing a new secret.":::
+
+1. Select **Add secret**.
+
+1. Repeat the process to add another secret named *SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_PRODUCTION* as the secret name, and *SecurePassword!999* as the value. Select **Add secret**.
+
+## Add the secrets and inputs to your workflow
+
+1. In Visual Studio Code, open the *deploy.yml* file in the *.github/workflows* folder.
+
+TODO
+
+1. Open the *workflow.yml* file.
+
+1. In the *deploy-test* definition, define a value for the `sqlServerAdministratorLogin` input, and propagate the value for the `sqlServerAdministratorLoginPassword` secret:
+
+   :::code language="yaml" source="code/7-workflow.yml" range="18-29" highlight="8, 12" :::
+
+1. Repeat the process in the *deploy-production* definition, with the production environment's values:
+
+   :::code language="yaml" source="code/7-workflow.yml" range="31-42" highlight="8, 12" :::
 
 <!-- TODO define in workflow.yml and deploy.yml -->
 
