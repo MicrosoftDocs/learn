@@ -33,6 +33,7 @@ Since the upload function uses code from the `@azure/storage-blob` package, whic
 
 Once the frontend is ready, you'll be able to test it locally using the Azure Functions Core Tools package.
 
+> [!TIP]
 >To run your project locally make sure the Live Server VS Code extension is installed. You can obtain it from here: [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). Also you will need [Azure Functions Core Tools](/azure/azure-functions/functions-run-local?tabs=linux%2Ccsharp%2Cbash) installed. Finally, your node.js version should be 12.0.0.
 
 Let's move onto the exercise to build the frontend.
